@@ -1,0 +1,309 @@
+{
+ "id": "table.video-games.console-makers",
+ "kind": "table",
+ "title": "Game consoles and the company that made them",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "consoles",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?mkrLabel WHERE { { SELECT ?item (SAMPLE(?m) AS ?mkr) (COUNT(DISTINCT ?m) AS ?nC) WHERE { { SELECT ?item WHERE { ?game wdt:P400 ?item } GROUP BY ?item HAVING(COUNT(DISTINCT ?game) > 25) LIMIT 400 } hint:Prior hint:runFirst true . ?item wdt:P176 ?m . } GROUP BY ?item LIMIT 300 } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-01T04:47:40.121Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-01T04:47:40.121Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "maker",
+   "label": "Manufacturer",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "console",
+  "many": "consoles",
+  "columns": {
+   "maker": {
+    "role": "link",
+    "pick": "Which company made the {label}?",
+    "statement": "The {label} was made by {value}.",
+    "match": "Match each console to the company that made it.",
+    "odd": "Three of these consoles were made by {value}. Which one was not?",
+    "all": "Tap all {n} consoles made by {value}.",
+    "reverse": "Which console was made by {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "PlayStation 2",
+   "qid": "Q10680",
+   "fame": 0.631,
+   "maker": "Sony Interactive Entertainment",
+   "description": "Sony's second home video game console, part of the sixth generation of consoles",
+   "hook": "became the best-selling home console of all time and doubled as an affordable DVD player",
+   "known": 0.8,
+   "kind": "home console"
+  },
+  {
+   "label": "PlayStation 4",
+   "qid": "Q5014725",
+   "fame": 0.628,
+   "maker": "Sony Interactive Entertainment",
+   "description": "Sony's fourth home video game console, part of the eighth generation of consoles",
+   "hook": "launched with a share button on its controller and went head to head with a rival black box",
+   "known": 0.8,
+   "kind": "home console"
+  },
+  {
+   "label": "PlayStation 3",
+   "qid": "Q10683",
+   "fame": 0.616,
+   "maker": "Sony Interactive Entertainment",
+   "description": "video game console developed Sony Interactive Entertainment",
+   "hook": "packed a Blu-ray drive and a pricey launch tag, with a famously powerful but tricky Cell chip",
+   "known": 0.6,
+   "kind": "home console"
+  },
+  {
+   "label": "PlayStation",
+   "qid": "Q10677",
+   "fame": 0.612,
+   "maker": "Sony Interactive Entertainment",
+   "description": "1994 5th generation video game console by Sony Interactive Entertainment",
+   "hook": "made CD-based games mainstream and introduced Crash Bandicoot and Final Fantasy VII to a huge audience",
+   "known": 0.8,
+   "kind": "home console"
+  },
+  {
+   "label": "Xbox Series X and Series S",
+   "qid": "Q98973368",
+   "fame": 0.607,
+   "maker": "Microsoft",
+   "description": "home video game consoles developed by Microsoft",
+   "hook": "is a pair of sibling consoles, one powerful and one smaller and cheaper, sold side by side",
+   "known": 0.6,
+   "kind": "home console"
+  },
+  {
+   "label": "Nintendo Entertainment System",
+   "qid": "Q172742",
+   "fame": 0.597,
+   "maker": "Nintendo",
+   "description": "third generation home video game console",
+   "hook": "revived home gaming after the crash, bringing Mario and Zelda to living rooms in a gray box",
+   "known": 0.95,
+   "kind": "home console"
+  },
+  {
+   "label": "PlayStation Portable",
+   "qid": "Q170325",
+   "fame": 0.597,
+   "maker": "Sony Interactive Entertainment",
+   "description": "handheld game console by Sony",
+   "hook": "let players take near-console-quality 3D games on the go, using small optical discs",
+   "known": 0.4,
+   "kind": "handheld console"
+  },
+  {
+   "label": "Nintendo DS",
+   "qid": "Q170323",
+   "fame": 0.589,
+   "maker": "Nintendo",
+   "description": "Nintendo handheld game console",
+   "hook": "flipped open like a clamshell with two screens, one of them touch-sensitive and used with a stylus",
+   "known": 0.8,
+   "kind": "handheld console"
+  },
+  {
+   "label": "Nintendo 3DS",
+   "qid": "Q203597",
+   "fame": 0.586,
+   "maker": "Nintendo",
+   "description": "portable 3D dual-screen handheld by Nintendo",
+   "hook": "showed 3D images on its top screen without needing any special glasses",
+   "known": 0.6,
+   "kind": "handheld console"
+  },
+  {
+   "label": "Nintendo GameCube",
+   "qid": "Q182172",
+   "fame": 0.583,
+   "maker": "Nintendo",
+   "description": "sixth-generation home video game console by Nintendo",
+   "hook": "was a purple cube-shaped console with a carrying handle and tiny discs, home to Luigi's Mansion and Melee",
+   "known": 0.6,
+   "kind": "home console"
+  },
+  {
+   "label": "Nintendo 64",
+   "qid": "Q184839",
+   "fame": 0.58,
+   "maker": "Nintendo",
+   "description": "fifth-generation home video game console by Nintendo",
+   "hook": "had a three-pronged controller with an analog stick and ran Mario's first 3D adventure",
+   "known": 0.8,
+   "kind": "home console"
+  },
+  {
+   "label": "Game Boy",
+   "qid": "Q186437",
+   "fame": 0.573,
+   "maker": "Nintendo",
+   "description": "1989 portable video game console",
+   "hook": "was a gray handheld with a green-tinted screen that made Tetris a worldwide obsession",
+   "known": 0.95,
+   "kind": "handheld console"
+  },
+  {
+   "label": "Super Nintendo Entertainment System",
+   "qid": "Q183259",
+   "fame": 0.573,
+   "maker": "Nintendo",
+   "description": "fourth-generation home video game console by Nintendo",
+   "hook": "gave players a four-button controller with shoulder triggers and hosted Mario World and Donkey Kong Country",
+   "known": 0.95,
+   "kind": "home console"
+  },
+  {
+   "label": "Sega Genesis",
+   "qid": "Q10676",
+   "fame": 0.569,
+   "maker": "Sega",
+   "description": "fourth-generation home video game console developed by Sega",
+   "hook": "was the rival console whose speedy blue hedgehog mascot took on the plumber in the early 1990s",
+   "known": 0.8,
+   "kind": "home console"
+  },
+  {
+   "label": "Dreamcast",
+   "qid": "Q184198",
+   "fame": 0.566,
+   "maker": "Sega",
+   "description": "sixth-generation home video game console developed by Sega",
+   "hook": "was the last console from its maker and was the first to come with a built-in modem for online play",
+   "known": 0.4,
+   "kind": "home console"
+  },
+  {
+   "label": "Game Boy Advance",
+   "qid": "Q188642",
+   "fame": 0.566,
+   "maker": "Nintendo",
+   "description": "handheld game console by Nintendo",
+   "hook": "was a wider handheld with a landscape layout and shoulder buttons that played Pokemon Ruby and Sapphire",
+   "known": 0.6,
+   "kind": "handheld console"
+  },
+  {
+   "label": "PlayStation Vita",
+   "qid": "Q188808",
+   "fame": 0.559,
+   "maker": "Sony Interactive Entertainment",
+   "description": "portable game console developed by Sony Computer Entertainment",
+   "hook": "offered a handheld with a big OLED screen and a rear touch panel, but needed pricey proprietary memory cards",
+   "known": 0.2,
+   "kind": "handheld console"
+  },
+  {
+   "label": "Wii U",
+   "qid": "Q56942",
+   "fame": 0.556,
+   "maker": "Nintendo",
+   "description": "eighth-generation home video game console by Nintendo",
+   "hook": "packed a controller with a built-in touchscreen in the middle, as a follow-up to a motion-controlled hit",
+   "known": 0.6,
+   "kind": "home console"
+  },
+  {
+   "label": "Sega Saturn",
+   "qid": "Q200912",
+   "fame": 0.551,
+   "maker": "Sega",
+   "description": "home video game console",
+   "hook": "was a 32-bit machine that lost the console race against a gray rival despite a strong arcade lineup",
+   "known": 0.4,
+   "kind": "home console"
+  },
+  {
+   "label": "Atari 2600",
+   "qid": "Q206261",
+   "fame": 0.536,
+   "maker": "Atari, Inc.",
+   "description": "home video game console by Atari",
+   "hook": "popularized home gaming with wood-grain paneling, a joystick and cartridges like Pitfall and Space Invaders",
+   "known": 0.95,
+   "kind": "home console"
+  },
+  {
+   "label": "Game Boy Color",
+   "qid": "Q203992",
+   "fame": 0.521,
+   "maker": "Nintendo",
+   "description": "handheld Nintendo video game console introduced in 1998",
+   "hook": "brought a full palette of hues to a pocket-sized handheld, still playing the older monochrome games",
+   "known": 0.6,
+   "kind": "handheld console"
+  },
+  {
+   "label": "TurboGrafx-16",
+   "qid": "Q1057377",
+   "fame": 0.483,
+   "maker": "NEC",
+   "description": "fourth-generation home video game console",
+   "hook": "was a rival to the big-name 8-bit and 16-bit machines that squeezed games onto credit-card-sized cards",
+   "known": 0.2,
+   "kind": "home console"
+  },
+  {
+   "label": "Neo Geo",
+   "qid": "Q1054350",
+   "fame": 0.467,
+   "maker": "SNK",
+   "description": "cartridge-based arcade system board and home video game console developed by SNK",
+   "hook": "brought arcade-perfect fighting games like Metal Slug and King of Fighters home at a luxury price",
+   "known": 0.2,
+   "kind": "arcade cabinet / home console"
+  },
+  {
+   "label": "Virtual Boy",
+   "qid": "Q164651",
+   "fame": 0.466,
+   "maker": "Nintendo",
+   "description": "table-top video game console developed by Nintendo",
+   "hook": "was a red-and-black headset-style system showing only red graphics and was a quick commercial flop",
+   "known": 0.4,
+   "kind": "handheld console"
+  },
+  {
+   "label": "Game Gear",
+   "qid": "Q751719",
+   "fame": 0.46,
+   "maker": "Sega",
+   "description": "handheld game console developed by Sega",
+   "hook": "was a full-color handheld rival to a gray brick that guzzled batteries and could become a TV tuner",
+   "known": 0.2,
+   "kind": "handheld console"
+  }
+ ]
+}

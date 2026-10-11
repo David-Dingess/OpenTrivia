@@ -1,0 +1,199 @@
+{
+ "id": "table.wordplay.everyday-acronyms",
+ "kind": "table",
+ "title": "Everyday things known by their initials",
+ "genre": "general",
+ "category": "wordplay",
+ "topic": "acronyms",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?acronym WHERE { VALUES ?item { wd:Q18822 wd:Q5294 wd:Q25504 wd:Q83341 wd:Q7430 wd:Q421 wd:Q5300 wd:Q5295 wd:Q103177 wd:Q181923 wd:Q202387 wd:Q8777 wd:Q170963 wd:Q161238 wd:Q32566 wd:Q79785 wd:Q26384 wd:Q674050 wd:Q11660 wd:Q55648452 wd:Q12638 wd:Q192152 wd:Q652965 wd:Q23118 wd:Q208376 wd:Q146368 wd:Q33057 wd:Q603908 wd:Q189325 wd:Q5607 wd:Q1049294 wd:Q230110 wd:Q484598 wd:Q42591 wd:Q29643 wd:Q8811 wd:Q42378 wd:Q42332 wd:Q2192 wd:Q47607 wd:Q42253 wd:Q131140 wd:Q42979 } ?item wdt:P1813 ?acronym . FILTER(LANG(?acronym) = 'en') OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T16:29:55.727Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T16:29:55.727Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "acronym",
+   "label": "Acronym",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "everyday thing",
+  "many": "everyday things",
+  "capitalise": true,
+  "exclude": [],
+  "columns": {
+   "acronym": {
+    "role": "code",
+    "pick": "What are the initials for {label}?",
+    "statement": "{label} is commonly known by the initials {value}.",
+    "match": "Match each everyday thing to its initials.",
+    "reverse": "Which of these do the initials {value} stand for?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "artificial intelligence",
+   "qid": "Q11660",
+   "fame": 0.825,
+   "acronym": "AI",
+   "description": "field that develops and studies software enabling machines to exhibit intelligent behavior",
+   "hook": "is the tech behind chatbots and image generators that can write, draw and answer questions",
+   "known": 0.95,
+   "kind": "technology"
+  },
+  {
+   "label": "attention deficit hyperactivity disorder",
+   "qid": "Q181923",
+   "fame": 0.688,
+   "acronym": "ADHD",
+   "description": "neurodevelopmental disorder",
+   "hook": "is a condition that makes it hard for people to focus or sit still, often diagnosed in childhood",
+   "known": 0.8,
+   "kind": "medical"
+  },
+  {
+   "label": "Hypertext Transfer Protocol",
+   "qid": "Q8777",
+   "fame": 0.641,
+   "acronym": "HTTP",
+   "description": "application-layer protocol for transferring web resources",
+   "hook": "is the set of rules that web browsers and servers use to swap pages, shown at the start of many web addresses",
+   "known": 0.6,
+   "kind": "technology"
+  },
+  {
+   "label": "deoxyribonucleic acid",
+   "qid": "Q7430",
+   "fame": 0.601,
+   "acronym": "DNA",
+   "description": "molecule that encodes the genetic instructions used in the development and functioning of all known living organisms and many viruses",
+   "hook": "is the twisted double-helix molecule that carries the genetic code of living things",
+   "known": 0.95,
+   "kind": "science"
+  },
+  {
+   "label": "magnetic resonance imaging",
+   "qid": "Q161238",
+   "fame": 0.569,
+   "acronym": "MRI",
+   "description": "non-destructive technique for imaging internal structures of objects or organisms",
+   "hook": "is a hospital scan that uses powerful magnets and radio waves to picture the inside of the body",
+   "known": 0.8,
+   "kind": "medical"
+  },
+  {
+   "label": "virtual private network",
+   "qid": "Q170963",
+   "fame": 0.562,
+   "acronym": "VPN",
+   "description": "virtual network extending a single private network across a public network like the Internet, appearing to users as a private network",
+   "hook": "is a tool that encrypts your connection and masks your location while you browse online",
+   "known": 0.6,
+   "kind": "technology"
+  },
+  {
+   "label": "non-fungible token",
+   "qid": "Q55648452",
+   "fame": 0.544,
+   "acronym": "NFT",
+   "description": "unique digital asset recorded on a blockchain that cannot be replicated or exchanged on a like-for-like basis",
+   "hook": "is a one-of-a-kind digital collectible, such as cartoon apes, whose ownership is recorded on a blockchain",
+   "known": 0.4,
+   "kind": "technology"
+  },
+  {
+   "label": "unidentified flying object",
+   "qid": "Q421",
+   "fame": 0.542,
+   "acronym": "UFO",
+   "description": "unusual apparent anomaly in the sky that is not readily identifiable",
+   "hook": "is what a mysterious light or saucer seen in the sky is called when nobody can explain it",
+   "known": 0.95,
+   "kind": "cultural"
+  },
+  {
+   "label": "electrocardiography",
+   "qid": "Q79785",
+   "fame": 0.524,
+   "acronym": "ECG",
+   "description": "method to record the electrical activity of the heart through passive electrodes placed over the skin.",
+   "hook": "is a heart test that traces beats as a wavy line on paper or a screen, using sticky sensors on the chest",
+   "known": 0.8,
+   "kind": "medical"
+  },
+  {
+   "label": "sport utility vehicle",
+   "qid": "Q192152",
+   "fame": 0.51,
+   "acronym": "SUV",
+   "description": "type of automobile",
+   "hook": "is a tall, roomy family car with all-wheel drive that has become hugely popular on roads worldwide",
+   "known": 0.95,
+   "kind": "automotive"
+  },
+  {
+   "label": "polyvinyl chloride",
+   "qid": "Q146368",
+   "fame": 0.509,
+   "acronym": "PVC",
+   "description": "synthetic plastic polymer - A thermoplastic resin produced by the polymerization of vinyl chloride gas.",
+   "hook": "is the tough, cheap plastic used for drain pipes and window frames",
+   "known": 0.4,
+   "kind": "materials"
+  },
+  {
+   "label": "International Standard Book Number",
+   "qid": "Q33057",
+   "fame": 0.506,
+   "acronym": "ISBN",
+   "description": "unique numeric book identifier",
+   "hook": "is the thirteen-digit code printed above a barcode on the back of a paperback",
+   "known": 0.6,
+   "kind": "publishing"
+  },
+  {
+   "label": "Jet Propulsion Laboratory",
+   "qid": "Q189325",
+   "fame": 0.482,
+   "acronym": "JPL",
+   "description": "research and development center and NASA field center in California, United States",
+   "hook": "is the California lab that builds and runs robotic Mars rovers and deep-space probes for NASA",
+   "known": 0.2,
+   "kind": "science"
+  },
+  {
+   "label": "severe acute respiratory syndrome",
+   "qid": "Q103177",
+   "fame": 0.456,
+   "acronym": "SARS",
+   "description": "viral respiratory disease",
+   "hook": "is the coronavirus illness that caused a global scare early this century, cousin of COVID-19",
+   "known": 0.6,
+   "kind": "medical"
+  }
+ ]
+}

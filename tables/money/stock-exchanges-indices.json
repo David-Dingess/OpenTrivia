@@ -1,0 +1,221 @@
+{
+ "id": "table.money.stock-exchanges-indices",
+ "kind": "table",
+ "title": "Stock exchanges and indices",
+ "genre": "daily-life",
+ "category": "money",
+ "topic": "markets",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) WHERE { { ?item wdt:P31 wd:Q223371 } UNION { ?item wdt:P31 wd:Q11691 } ?item wdt:P17 ?c } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T08:13:11.867Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T08:13:11.867Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "stock exchange or index",
+  "many": "stock exchanges and indices",
+  "minFame": 0.45,
+  "hookAsk": "Which one {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is the home of {label}?",
+    "statement": "{label} belongs to {value}.",
+    "match": "Match each exchange or index to its country.",
+    "odd": "Three of these exchanges and indices belong to {value}. Which one doesn't?",
+    "all": "Tap all {n} exchanges and indices that belong to {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Dow Jones Industrial Average",
+   "qid": "Q180816",
+   "fame": 0.655,
+   "country": "United States",
+   "kind": "stock-index",
+   "description": "stock market index",
+   "hook": "tracks thirty giant companies and is Wall Street's oldest, most quoted gauge, weighted by share price",
+   "known": 0.95
+  },
+  {
+   "label": "S&P 500",
+   "qid": "Q242345",
+   "fame": 0.615,
+   "country": "United States",
+   "kind": "stock-index",
+   "description": "American stock market index",
+   "hook": "tracks about five hundred big companies and is the benchmark most investors measure themselves against",
+   "known": 0.8
+  },
+  {
+   "label": "FTSE 100 Index",
+   "qid": "Q466496",
+   "fame": 0.598,
+   "country": "United Kingdom",
+   "kind": "stock-index",
+   "description": "British stock market index",
+   "hook": "tracks the hundred biggest blue chips traded in the City and is nicknamed the Footsie",
+   "known": 0.6
+  },
+  {
+   "label": "Nasdaq",
+   "qid": "Q82059",
+   "fame": 0.588,
+   "country": "United States",
+   "kind": "stock-exchange",
+   "description": "American fully electronic stock exchange",
+   "hook": "was the first fully electronic trading venue and is the main home of big tech companies",
+   "known": 0.8
+  },
+  {
+   "label": "National Stock Exchange of India",
+   "qid": "Q638740",
+   "fame": 0.565,
+   "country": "India",
+   "kind": "stock-exchange",
+   "description": "stock exchange in Mumbai, India",
+   "hook": null,
+   "known": 0.05
+  },
+  {
+   "label": "DAX",
+   "qid": "Q155718",
+   "fame": 0.563,
+   "country": "Germany",
+   "kind": "stock-index",
+   "description": "Blue-chip index consisting of the 40 major German companies trading on the Frankfurt Stock Exchange",
+   "hook": "tracks forty blue-chip firms listed in Frankfurt, such as carmakers and chemical giants",
+   "known": 0.4
+  },
+  {
+   "label": "New York Stock Exchange",
+   "qid": "Q13677",
+   "fame": 0.563,
+   "country": "United States",
+   "kind": "stock-exchange",
+   "description": "American stock exchange",
+   "hook": "is nicknamed the Big Board and is the largest trading floor on Earth by total value of its companies",
+   "known": 0.8
+  },
+  {
+   "label": "NIFTY 50",
+   "qid": "Q1853402",
+   "fame": 0.545,
+   "country": "India",
+   "kind": "stock-index",
+   "description": "Indian stock market and benchmark index",
+   "hook": null,
+   "known": 0.05
+  },
+  {
+   "label": "CAC 40",
+   "qid": "Q648828",
+   "fame": 0.524,
+   "country": "France",
+   "kind": "stock-index",
+   "description": "blue-chip index consisting of the 40 major companies trading on Euronext Paris",
+   "hook": "tracks forty leading firms on the Paris bourse, and its name comes from an old continuous-quotation system",
+   "known": 0.4
+  },
+  {
+   "label": "Hang Seng Index",
+   "qid": "Q424846",
+   "fame": 0.506,
+   "country": "Hong Kong",
+   "kind": "stock-index",
+   "description": "Stock market index in Hong Kong",
+   "hook": "is the main gauge of the big companies listed in a major Asian financial hub, run by a local bank",
+   "known": 0.6
+  },
+  {
+   "label": "Bombay Stock Exchange",
+   "qid": "Q638398",
+   "fame": 0.493,
+   "country": "India",
+   "kind": "stock-exchange",
+   "description": "Indian stock exchange in Mumbai",
+   "hook": null,
+   "known": 0.05
+  },
+  {
+   "label": "Nikkei 225",
+   "qid": "Q507338",
+   "fame": 0.488,
+   "country": "Japan",
+   "kind": "stock-index",
+   "description": "Japanese stock market index",
+   "hook": "tracks 225 top companies on the Tokyo bourse and is the most quoted measure of that market",
+   "known": 0.6
+  },
+  {
+   "label": "IBEX 35",
+   "qid": "Q938032",
+   "fame": 0.464,
+   "country": "Spain",
+   "kind": "stock-index",
+   "description": "blue-chip index consisting of the 35 major companies trading on Bolsa de Madrid",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "London Stock Exchange",
+   "qid": "Q171240",
+   "fame": 0.464,
+   "country": "United Kingdom",
+   "kind": "stock-exchange",
+   "description": "stock exchange in the City of London",
+   "hook": "is among the oldest trading venues still running, based in Paternoster Square",
+   "known": 0.8
+  },
+  {
+   "label": "S&P BSE Sensex",
+   "qid": "Q796994",
+   "fame": 0.463,
+   "country": "India",
+   "kind": "stock-index",
+   "description": "stock market index used by Bombay Stock Exchange (BSE)",
+   "hook": null,
+   "known": 0.05
+  },
+  {
+   "label": "Swiss Market Index",
+   "qid": "Q666714",
+   "fame": 0.459,
+   "country": "Switzerland",
+   "kind": "stock-index",
+   "description": "Blue-chip index consisting of the 20 major companies trading on the SIX Swiss Exchange",
+   "hook": "tracks twenty of the biggest and most liquid companies in the Alpine banking nation",
+   "known": 0.4
+  }
+ ]
+}

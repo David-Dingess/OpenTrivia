@@ -1,0 +1,155 @@
+{
+ "id": "table.art.fashion-houses",
+ "kind": "table",
+ "title": "Famous fashion houses and their founders",
+ "genre": "arts-entertainment",
+ "category": "art",
+ "topic": "fashion",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?founderLabel WHERE { { SELECT ?item (SAMPLE(?f) AS ?founder) WHERE { { ?item wdt:P31 wd:Q1941779 . } UNION { VALUES ?item { wd:Q218115 wd:Q542767 wd:Q2282172 wd:Q966905 wd:Q895795 wd:Q55600894 wd:Q53472173 wd:Q1641437 wd:Q1068628 wd:Q634881 wd:Q127962 wd:Q727697 wd:Q926575 wd:Q1530892 wd:Q659863 } } ?item wdt:P112 ?f . } GROUP BY ?item HAVING(COUNT(DISTINCT ?f) = 1) } hint:Prior hint:runFirst true . ?founder rdfs:label ?founderLabel . FILTER(LANG(?founderLabel)=\"en\") OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T10:54:01.210Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T10:54:01.210Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "founder",
+   "label": "Founder",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "fashion house",
+  "many": "fashion houses",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Louis Vuitton",
+   "qid": "Q191485",
+   "fame": 0.57,
+   "founder": "Louis Vuitton",
+   "description": "French fashion house and luxury retail company"
+  },
+  {
+   "label": "Gucci",
+   "qid": "Q178516",
+   "fame": 0.556,
+   "founder": "Guccio Gucci",
+   "description": "Italian luxury fashion house based in Florence, Italy"
+  },
+  {
+   "label": "Hugo Boss",
+   "qid": "Q491627",
+   "fame": 0.554,
+   "founder": "Hugo Boss",
+   "description": "Germany fashion company"
+  },
+  {
+   "label": "Chanel",
+   "qid": "Q218115",
+   "fame": 0.533,
+   "founder": "Coco Chanel",
+   "description": "French fashion house"
+  },
+  {
+   "label": "Christian Dior",
+   "qid": "Q542767",
+   "fame": 0.529,
+   "founder": "Christian Dior",
+   "description": "French multinational luxury fashion house"
+  },
+  {
+   "label": "Hermès",
+   "qid": "Q843887",
+   "fame": 0.527,
+   "founder": "Thierry Hermès",
+   "description": "French luxury goods manufacturer"
+  },
+  {
+   "label": "Balenciaga",
+   "qid": "Q1530892",
+   "fame": 0.512,
+   "founder": "Cristóbal Balenciaga",
+   "description": "French fashion house and company"
+  },
+  {
+   "label": "Levi Strauss & Co.",
+   "qid": "Q127962",
+   "fame": 0.509,
+   "founder": "Levi Strauss",
+   "description": "privately held American clothing company"
+  },
+  {
+   "label": "Prada",
+   "qid": "Q193136",
+   "fame": 0.502,
+   "founder": "Mario Prada",
+   "description": "Italian luxury fashion house"
+  },
+  {
+   "label": "Versace",
+   "qid": "Q696376",
+   "fame": 0.494,
+   "founder": "Gianni Versace",
+   "description": "Italian luxury fashion company"
+  },
+  {
+   "label": "Maison Margiela",
+   "qid": "Q1726925",
+   "fame": 0.492,
+   "founder": "Martin Margiela",
+   "description": "French fashion house"
+  },
+  {
+   "label": "Miu Miu",
+   "qid": "Q552230",
+   "fame": 0.481,
+   "founder": "Miuccia Prada",
+   "description": "Italian fashion house"
+  },
+  {
+   "label": "Ralph Lauren Corporation",
+   "qid": "Q1641437",
+   "fame": 0.479,
+   "founder": "Ralph Lauren",
+   "description": "American fashion and lifestyle company"
+  },
+  {
+   "label": "Giorgio Armani",
+   "qid": "Q635484",
+   "fame": 0.476,
+   "founder": "Giorgio Armani",
+   "description": "Italy-based international luxury fashion house"
+  },
+  {
+   "label": "Burberry",
+   "qid": "Q390107",
+   "fame": 0.471,
+   "founder": "Thomas Burberry",
+   "description": "English fashion company"
+  },
+  {
+   "label": "Bulgari",
+   "qid": "Q752515",
+   "fame": 0.458,
+   "founder": "Sotirios Voulgaris",
+   "description": "Italian luxury fashion house"
+  }
+ ]
+}

@@ -1,0 +1,215 @@
+{
+ "id": "table.history.medieval-castles",
+ "kind": "table",
+ "title": "Famous castles by country",
+ "genre": "society",
+ "category": "history",
+ "topic": "middle-ages",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { ?item wdt:P31/wdt:P279* wd:Q23413 ; wdt:P17 ?c ; wikibase:sitelinks ?sl . FILTER(?sl >= 10) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T00:44:08.508Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T00:44:08.508Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "castle",
+  "many": "castles",
+  "wildcard": "place",
+  "hookAsk": "Which castle {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "theLabels": [
+   "Tower of London",
+   "Bastille"
+  ],
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each castle to its country.",
+    "odd": "Three of these castles are in {value}. Which one isn't?",
+    "all": "Tap all {n} castles in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Tower of London",
+   "qid": "Q62378",
+   "fame": 0.603,
+   "country": "United Kingdom",
+   "description": "castle in central London, United Kingdom",
+   "hook": "has housed the Crown Jewels and a famous flock of ravens beside the Thames",
+   "known": 0.8,
+   "kind": "fortress"
+  },
+  {
+   "label": "Windsor Castle",
+   "qid": "Q42646",
+   "fame": 0.587,
+   "country": "United Kingdom",
+   "description": "historic castle, royal residence at Windsor in Berkshire, England, UK",
+   "hook": "is the oldest and largest inhabited fortress in the world, a weekend home of the monarch",
+   "known": 0.8,
+   "kind": "royal castle"
+  },
+  {
+   "label": "Eltz Castle",
+   "qid": "Q153426",
+   "fame": 0.527,
+   "country": "Germany",
+   "description": "Castle in Germany",
+   "hook": "perches on a rock above a forested river valley and has stayed in one family for centuries",
+   "known": 0.4,
+   "kind": "historic castle"
+  },
+  {
+   "label": "Bamburgh Castle",
+   "qid": "Q2026185",
+   "fame": 0.521,
+   "country": "United Kingdom",
+   "description": "Grade I listed historic house museum in Bamburgh, United Kingdom",
+   "hook": "stands on a basalt crag above the North Sea and was once a seat of Anglo-Saxon kings",
+   "known": 0.2,
+   "kind": "fortress"
+  },
+  {
+   "label": "Edinburgh Castle",
+   "qid": "Q212065",
+   "fame": 0.517,
+   "country": "United Kingdom",
+   "description": "castle in Edinburgh, Scotland, UK",
+   "hook": "sits on an extinct volcanic rock and fires a one o'clock gun every day but Sunday",
+   "known": 0.8,
+   "kind": "fortress"
+  },
+  {
+   "label": "Akershus Fortress",
+   "qid": "Q644464",
+   "fame": 0.515,
+   "country": "Norway",
+   "description": "former medieval castle in Oslo, Norway",
+   "hook": "guards a capital's harbour and has served as a stronghold, a prison and a royal burial site",
+   "known": 0.2,
+   "kind": "fortress"
+  },
+  {
+   "label": "Arundel Castle",
+   "qid": "Q716667",
+   "fame": 0.5,
+   "country": "United Kingdom",
+   "description": "castle in West Sussex, England, UK",
+   "hook": "looks like a storybook fortress and is the family seat of the Duke of Norfolk",
+   "known": 0.2,
+   "kind": "royal castle"
+  },
+  {
+   "label": "Bran Castle",
+   "qid": "Q390275",
+   "fame": 0.498,
+   "country": "Romania",
+   "description": "Medieval castle in Braşov county, Romania",
+   "hook": "is popularly linked with Dracula and perches on a rock in Transylvania",
+   "known": 0.6,
+   "kind": "historic castle"
+  },
+  {
+   "label": "Prague Castle",
+   "qid": "Q193369",
+   "fame": 0.496,
+   "country": "Czech Republic",
+   "description": "castle complex in Prague, Czech Republic, dating from the 9th century",
+   "hook": "is recognised as the largest ancient fortified complex in the world, with a great cathedral inside",
+   "known": 0.6,
+   "kind": "fortress"
+  },
+  {
+   "label": "Malbork Castle",
+   "qid": "Q71279",
+   "fame": 0.487,
+   "country": "Poland",
+   "description": "castle built in Prussia (now Poland) by the Teutonic Knights",
+   "hook": "was the headquarters of the Teutonic Knights and is among the largest brick fortresses in the world",
+   "known": 0.05,
+   "kind": "fortress"
+  },
+  {
+   "label": "Bastille",
+   "qid": "Q1865480",
+   "fame": 0.485,
+   "country": "France",
+   "description": "former fortress in Paris, France",
+   "hook": "was a fortress-prison whose fall became the symbol of a revolution",
+   "known": 0.6,
+   "kind": "fortress"
+  },
+  {
+   "label": "Alnwick Castle",
+   "qid": "Q1320427",
+   "fame": 0.475,
+   "country": "United Kingdom",
+   "description": "castle and stately home in Alnwick, Northumberland, England, UK; seat of the Duke of Northumberland, England, UK",
+   "hook": "stood in for Hogwarts in the early Harry Potter films",
+   "known": 0.4,
+   "kind": "historic castle"
+  },
+  {
+   "label": "Stirling Castle",
+   "qid": "Q756268",
+   "fame": 0.475,
+   "country": "United Kingdom",
+   "description": "castle in Stirling, Scotland, UK",
+   "hook": "crowns a volcanic crag and was a favourite home of the Stuart monarchs",
+   "known": 0.4,
+   "kind": "royal castle"
+  },
+  {
+   "label": "Hever Castle",
+   "qid": "Q1132683",
+   "fame": 0.464,
+   "country": "United Kingdom",
+   "description": "Grade I listed country house in Hever, Kent, England, UK",
+   "hook": "was the childhood home of Anne Boleyn, second wife of Henry VIII",
+   "known": 0.4,
+   "kind": "royal castle"
+  },
+  {
+   "label": "Reales Alcázares",
+   "qid": "Q498261",
+   "fame": 0.461,
+   "country": "Spain",
+   "description": "royal palace in Seville, Spain",
+   "hook": "is the oldest palace still in royal use in Europe and doubled as Dorne in Game of Thrones",
+   "known": 0.2,
+   "kind": "royal castle"
+  }
+ ]
+}

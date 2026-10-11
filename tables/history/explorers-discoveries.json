@@ -1,0 +1,341 @@
+{
+ "id": "table.history.explorers-discoveries",
+ "kind": "table",
+ "title": "Explorers",
+ "genre": "society",
+ "category": "history",
+ "topic": "explorers",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Hand-built, checked row by row against English Wikipedia",
+  "method": "enwiki: each explorer's own article plus the articles for what they found (Strait of Magellan, Hawaii, Victoria Falls, Roanoke Colony...)",
+  "attribution": null,
+  "fetchedAt": "2026-10-05T20:00:00.000Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-05T19:55:18.455Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "found",
+   "label": "Famous for finding",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "sailed_for",
+   "label": "Backed by (country)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "explorer",
+  "many": "explorers",
+  "wildcard": "person",
+  "hookAsk": "Which explorer {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "found": {
+    "role": "code",
+    "pick": "What is {label} famous for finding or reaching?",
+    "statement": "{label} is famous for this: {value}.",
+    "match": "Match each explorer to what they are famous for.",
+    "reverse": "Which explorer is famous for this: {value}?"
+   },
+   "sailed_for": {
+    "role": "link",
+    "pick": "Which country backed the voyages of {label}?",
+    "statement": "{label} was backed by {value}.",
+    "match": "Match each explorer to the country that backed them.",
+    "odd": "Three of these explorers were backed by {value}. Which one wasn't?",
+    "all": "Tap all {n} explorers backed by {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Christopher Columbus",
+   "qid": null,
+   "fame": 0.73,
+   "found": "The Caribbean islands and the Americas, for Europe",
+   "sailed_for": "Spain",
+   "kind": "explorer",
+   "known": 0.95
+  },
+  {
+   "label": "Vasco da Gama",
+   "qid": null,
+   "fame": 0.62,
+   "found": "The sea route from Europe to India",
+   "sailed_for": "Portugal",
+   "kind": "explorer",
+   "known": 0.5
+  },
+  {
+   "label": "Ferdinand Magellan",
+   "qid": null,
+   "fame": 0.62,
+   "found": "A strait at the tip of South America joining two oceans",
+   "sailed_for": "Spain",
+   "kind": "explorer",
+   "known": 0.7
+  },
+  {
+   "label": "James Cook",
+   "qid": null,
+   "fame": 0.63,
+   "found": "The Hawaiian Islands, for Europeans",
+   "sailed_for": "Britain",
+   "kind": "explorer",
+   "known": 0.7
+  },
+  {
+   "label": "Marco Polo",
+   "qid": null,
+   "fame": 0.63,
+   "found": "The court of Kublai Khan in Yuan-dynasty China",
+   "sailed_for": null,
+   "kind": "explorer",
+   "known": 0.85
+  },
+  {
+   "label": "Leif Erikson",
+   "qid": null,
+   "fame": 0.6,
+   "found": "Vinland, on the coast of North America",
+   "sailed_for": null,
+   "kind": "explorer",
+   "known": 0.6
+  },
+  {
+   "label": "Erik the Red",
+   "qid": null,
+   "fame": 0.51,
+   "found": "The first European settlement in Greenland",
+   "sailed_for": null,
+   "kind": "explorer",
+   "known": 0.4
+  },
+  {
+   "label": "Roald Amundsen",
+   "qid": null,
+   "fame": 0.53,
+   "found": "The South Pole",
+   "sailed_for": "Norway",
+   "kind": "explorer",
+   "known": 0.55
+  },
+  {
+   "label": "Ernest Shackleton",
+   "qid": null,
+   "fame": 0.6,
+   "found": "A glacier route up toward the South Pole",
+   "sailed_for": "Britain",
+   "kind": "explorer",
+   "known": 0.5
+  },
+  {
+   "label": "Lewis and Clark",
+   "qid": null,
+   "fame": 0.6,
+   "found": "An overland route to the Pacific Northwest",
+   "sailed_for": "United States",
+   "kind": "explorer",
+   "known": 0.7
+  },
+  {
+   "label": "Hernán Cortés",
+   "qid": null,
+   "fame": 0.63,
+   "found": "The Aztec Empire",
+   "sailed_for": "Spain",
+   "kind": "explorer",
+   "known": 0.65
+  },
+  {
+   "label": "Francisco Pizarro",
+   "qid": null,
+   "fame": 0.53,
+   "found": "The Inca Empire",
+   "sailed_for": "Spain",
+   "kind": "explorer",
+   "known": 0.6
+  },
+  {
+   "label": "Juan Ponce de León",
+   "qid": null,
+   "fame": 0.55,
+   "found": "Florida",
+   "sailed_for": "Spain",
+   "kind": "explorer",
+   "known": 0.5
+  },
+  {
+   "label": "Hernando de Soto",
+   "qid": null,
+   "fame": 0.48,
+   "found": "The Mississippi River, for Europeans",
+   "sailed_for": "Spain",
+   "kind": "explorer",
+   "known": 0.35
+  },
+  {
+   "label": "Vasco Núñez de Balboa",
+   "qid": null,
+   "fame": 0.46,
+   "found": "The Pacific Ocean, seen from the Americas",
+   "sailed_for": "Spain",
+   "kind": "explorer",
+   "known": 0.45
+  },
+  {
+   "label": "Jacques Cartier",
+   "qid": null,
+   "fame": 0.53,
+   "found": "The St. Lawrence River and the name Canada",
+   "sailed_for": "France",
+   "kind": "explorer",
+   "known": 0.45
+  },
+  {
+   "label": "Samuel de Champlain",
+   "qid": null,
+   "fame": 0.49,
+   "found": "Quebec City",
+   "sailed_for": "France",
+   "kind": "explorer",
+   "known": 0.4
+  },
+  {
+   "label": "Abel Tasman",
+   "qid": null,
+   "fame": 0.45,
+   "found": "New Zealand, for Europeans",
+   "sailed_for": "Netherlands",
+   "kind": "explorer",
+   "known": 0.4
+  },
+  {
+   "label": "Bartolomeu Dias",
+   "qid": null,
+   "fame": 0.45,
+   "found": "The southern tip of Africa",
+   "sailed_for": "Portugal",
+   "kind": "explorer",
+   "known": 0.3
+  },
+  {
+   "label": "Amerigo Vespucci",
+   "qid": null,
+   "fame": 0.6,
+   "found": "A new continent that ended up carrying his name",
+   "sailed_for": null,
+   "kind": "explorer",
+   "known": 0.5
+  },
+  {
+   "label": "John Cabot",
+   "qid": null,
+   "fame": 0.53,
+   "found": "The North American coast, for England",
+   "sailed_for": "England",
+   "kind": "explorer",
+   "known": 0.4
+  },
+  {
+   "label": "Zheng He",
+   "qid": null,
+   "fame": 0.55,
+   "found": "Treasure-fleet routes across the Indian Ocean to East Africa",
+   "sailed_for": "China",
+   "kind": "explorer",
+   "known": 0.3
+  },
+  {
+   "label": "David Livingstone",
+   "qid": null,
+   "fame": 0.56,
+   "found": "Victoria Falls",
+   "sailed_for": "Britain",
+   "kind": "explorer",
+   "known": 0.55
+  },
+  {
+   "label": "Henry Morton Stanley",
+   "qid": null,
+   "fame": 0.49,
+   "found": "The lost missionary David Livingstone",
+   "sailed_for": null,
+   "kind": "explorer",
+   "known": 0.45
+  },
+  {
+   "label": "Francis Drake",
+   "qid": null,
+   "fame": 0.6,
+   "found": "A round-the-world voyage",
+   "sailed_for": "England",
+   "kind": "explorer",
+   "known": 0.65
+  },
+  {
+   "label": "Walter Raleigh",
+   "qid": null,
+   "fame": 0.57,
+   "found": "The Roanoke Colony in what is now North Carolina",
+   "sailed_for": "England",
+   "kind": "explorer",
+   "known": 0.6
+  },
+  {
+   "label": "Thor Heyerdahl",
+   "qid": null,
+   "fame": 0.47,
+   "found": "A Pacific crossing on a balsa raft called Kon-Tiki",
+   "sailed_for": "Norway",
+   "kind": "explorer",
+   "known": 0.55
+  },
+  {
+   "label": "Robert Ballard",
+   "qid": null,
+   "fame": 0.47,
+   "found": "The wreck of the Titanic",
+   "sailed_for": "United States",
+   "kind": "explorer",
+   "known": 0.6
+  },
+  {
+   "label": "Francisco Vázquez de Coronado",
+   "qid": null,
+   "fame": 0.45,
+   "found": "The US Southwest, searching for the Seven Cities of Gold",
+   "sailed_for": "Spain",
+   "kind": "explorer",
+   "known": 0.35
+  },
+  {
+   "label": "Daniel Boone",
+   "qid": null,
+   "fame": 0.59,
+   "found": "The Wilderness Road into Kentucky",
+   "sailed_for": "United States",
+   "kind": "explorer",
+   "known": 0.65
+  },
+  {
+   "label": "John Smith",
+   "qid": null,
+   "fame": 0.56,
+   "found": "Jamestown, the first lasting English colony in America",
+   "sailed_for": "England",
+   "kind": "explorer",
+   "known": 0.65
+  }
+ ]
+}

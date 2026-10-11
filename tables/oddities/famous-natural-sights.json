@@ -1,0 +1,434 @@
+{
+ "id": "table.oddities.famous-natural-sights",
+ "kind": "table",
+ "title": "Famous natural sights: the country",
+ "genre": "general",
+ "category": "oddities",
+ "topic": "natural-wonders",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { VALUES ?item { wd:Q1996389 wd:Q39231 wd:Q7296 wd:Q38095 wd:Q205325 wd:Q219562 wd:Q223969 wd:Q273195 wd:Q217265 wd:Q239477 wd:Q754785 wd:Q187197 wd:Q16990 wd:Q524 wd:Q1283 wd:Q5513 wd:Q4991540 wd:Q41858 wd:Q130018 wd:Q213360 wd:Q194057 wd:Q4675 wd:Q159762 wd:Q274131 wd:Q735202 wd:Q152660 wd:Q222695 wd:Q777183 wd:Q1646461 wd:Q5059 wd:Q202845 wd:Q29151 wd:Q80344 wd:Q746223 wd:Q193989 wd:Q1130718 wd:Q210280 wd:Q39651 wd:Q183113 wd:Q901646 wd:Q231620 wd:Q775138 wd:Q4111 wd:Q216059 wd:Q134927 wd:Q128841 wd:Q679590 wd:Q4520 wd:Q189657 wd:Q40729 wd:Q131377 wd:Q1420196 wd:Q183295 wd:Q275662 wd:Q235539 wd:Q1013311 wd:Q1068812 wd:Q211778 wd:Q104674 wd:Q49650 wd:Q867913 wd:Q38954 wd:Q15523 wd:Q204658 wd:Q43105 wd:Q44889 } { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { VALUES ?item { wd:Q1996389 wd:Q39231 wd:Q7296 wd:Q38095 wd:Q205325 wd:Q219562 wd:Q223969 wd:Q273195 wd:Q217265 wd:Q239477 wd:Q754785 wd:Q187197 wd:Q16990 wd:Q524 wd:Q1283 wd:Q5513 wd:Q4991540 wd:Q41858 wd:Q130018 wd:Q213360 wd:Q194057 wd:Q4675 wd:Q159762 wd:Q274131 wd:Q735202 wd:Q152660 wd:Q222695 wd:Q777183 wd:Q1646461 wd:Q5059 wd:Q202845 wd:Q29151 wd:Q80344 wd:Q746223 wd:Q193989 wd:Q1130718 wd:Q210280 wd:Q39651 wd:Q183113 wd:Q901646 wd:Q231620 wd:Q775138 wd:Q4111 wd:Q216059 wd:Q134927 wd:Q128841 wd:Q679590 wd:Q4520 wd:Q189657 wd:Q40729 wd:Q131377 wd:Q1420196 wd:Q183295 wd:Q275662 wd:Q235539 wd:Q1013311 wd:Q1068812 wd:Q211778 wd:Q104674 wd:Q49650 wd:Q867913 wd:Q38954 wd:Q15523 wd:Q204658 wd:Q43105 wd:Q44889 } ?item wdt:P17 ?c . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T09:17:55.482Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T09:17:55.482Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "natural sight",
+  "many": "natural sights",
+  "wildcard": "place",
+  "hookAsk": "Which natural sight {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "theLabels": [
+   "Dolomites",
+   "Galapagos Islands",
+   "Lake District",
+   "Cliffs of Moher",
+   "White Cliffs of Dover"
+  ],
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each natural sight to its country.",
+    "odd": "Three of these natural sights are in {value}. Which one isn't?",
+    "all": "Tap all {n} natural sights in {value}."
+   }
+  },
+  "exclude": [
+   {
+    "qid": "Q4991540",
+    "why": "Bora Bora: Wikidata country is France; players think of French Polynesia"
+   }
+  ]
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Lake Baikal",
+   "qid": "Q5513",
+   "fame": 0.679,
+   "country": "Russia",
+   "description": "freshwater rift lake in southern Siberia, Russia; the greatest mountain lake in Asia and the most voluminous freshwater lake in the world",
+   "hook": "holds more fresh water than any other body of water on Earth and is the deepest in the world",
+   "known": 0.4,
+   "kind": "lake"
+  },
+  {
+   "label": "Mount Kilimanjaro",
+   "qid": "Q7296",
+   "fame": 0.634,
+   "country": "Tanzania",
+   "description": "mountain massif in Kilimanjaro National Park in Tanzania",
+   "hook": "is the tallest peak in Africa and the tallest free-standing one in the world",
+   "known": 0.6,
+   "kind": "mountain"
+  },
+  {
+   "label": "Dolomites",
+   "qid": "Q1283",
+   "fame": 0.628,
+   "country": "Italy",
+   "description": "mountain range in the Alps",
+   "hook": null,
+   "known": 0.2,
+   "kind": "mountain range"
+  },
+  {
+   "label": "Mount Whitney",
+   "qid": "Q235539",
+   "fame": 0.624,
+   "country": "United States",
+   "description": "highest mountain in California and the contiguous United States",
+   "hook": "is the tallest peak in the lower 48 states",
+   "known": 0.4,
+   "kind": "mountain"
+  },
+  {
+   "label": "Mount St. Helens",
+   "qid": "Q4675",
+   "fame": 0.622,
+   "country": "United States",
+   "description": "volcano in Washington state",
+   "hook": "blew its top in a catastrophic eruption that sent ash across the Pacific Northwest",
+   "known": 0.4,
+   "kind": "volcano"
+  },
+  {
+   "label": "Denali",
+   "qid": "Q130018",
+   "fame": 0.62,
+   "country": "United States",
+   "description": "highest mountain in North America, located in Alaska",
+   "hook": "is the tallest peak in North America and was long known by the name of a US president",
+   "known": 0.6,
+   "kind": "mountain"
+  },
+  {
+   "label": "Mount Vesuvius",
+   "qid": "Q524",
+   "fame": 0.62,
+   "country": "Italy",
+   "description": "active stratovolcano in the Gulf of Naples, Italy",
+   "hook": "buried Pompeii and Herculaneum in ash when it erupted in ancient Roman times",
+   "known": 0.6,
+   "kind": "volcano"
+  },
+  {
+   "label": "Mount Fuji",
+   "qid": "Q39231",
+   "fame": 0.618,
+   "country": "Japan",
+   "description": "volcano in Yamanashi and Shizuoka Prefectures, Japan",
+   "hook": "is a snow-capped, perfectly symmetrical volcano that serves as a cultural icon seen from Tokyo",
+   "known": 0.6,
+   "kind": "volcano"
+  },
+  {
+   "label": "Galapagos Islands",
+   "qid": "Q38095",
+   "fame": 0.601,
+   "country": "Ecuador",
+   "description": "Archipelago in the Pacific Ocean, part of Ecuador since 1832",
+   "hook": "inspired Charles Darwin's thinking on evolution and are famous for giant tortoises and unique wildlife",
+   "known": 0.6,
+   "kind": "island"
+  },
+  {
+   "label": "Mount Rainier",
+   "qid": "Q194057",
+   "fame": 0.594,
+   "country": "United States",
+   "description": "stratovolcano in the U.S. state of Washington",
+   "hook": null,
+   "known": 0.2,
+   "kind": "volcano"
+  },
+  {
+   "label": "Mount Etna",
+   "qid": "Q16990",
+   "fame": 0.592,
+   "country": "Italy",
+   "description": "active stratovolcano on the east coast of Sicily, Italy",
+   "hook": "is one of the world's most active volcanoes and one of the tallest in Europe",
+   "known": 0.4,
+   "kind": "volcano"
+  },
+  {
+   "label": "Mount Olympus",
+   "qid": "Q80344",
+   "fame": 0.57,
+   "country": "Greece",
+   "description": "mountain in Elassona municipality, Greece",
+   "hook": "was the legendary home of the twelve Greek gods",
+   "known": 0.4,
+   "kind": "mountain"
+  },
+  {
+   "label": "Cappadocia",
+   "qid": "Q217265",
+   "fame": 0.561,
+   "country": "Turkey",
+   "description": "historical region of Anatolia in Turkey",
+   "hook": null,
+   "known": 0.2,
+   "kind": "landscape"
+  },
+  {
+   "label": "Lake Como",
+   "qid": "Q15523",
+   "fame": 0.561,
+   "country": "Italy",
+   "description": "lake in Lombardy, Italy",
+   "hook": null,
+   "known": 0.2,
+   "kind": "lake"
+  },
+  {
+   "label": "Bora Bora",
+   "qid": "Q183113",
+   "fame": 0.557,
+   "country": "France",
+   "description": "island in French Polynesia",
+   "hook": "is a honeymoon paradise with overwater bungalows in a lagoon around an extinct volcano",
+   "known": 0.4,
+   "kind": "island"
+  },
+  {
+   "label": "Jeju Island",
+   "qid": "Q29151",
+   "fame": 0.552,
+   "country": "South Korea",
+   "description": "island south of the Korean peninsula, part of the Jeju Special Autonomous Province of South Korea",
+   "hook": null,
+   "known": 0.2,
+   "kind": "island"
+  },
+  {
+   "label": "Mount Elbrus",
+   "qid": "Q43105",
+   "fame": 0.546,
+   "country": "Russia",
+   "description": "highest mountain of the Caucasus and highest mountain in Europe",
+   "hook": "is the tallest peak in Europe, a dormant volcano in the Caucasus",
+   "known": 0.4,
+   "kind": "mountain"
+  },
+  {
+   "label": "Ben Nevis",
+   "qid": "Q104674",
+   "fame": 0.54,
+   "country": "United Kingdom",
+   "description": "highest mountain of Great Britain",
+   "hook": "is the tallest peak in the British Isles, with a footrace up it each year",
+   "known": 0.4,
+   "kind": "mountain"
+  },
+  {
+   "label": "Loch Ness",
+   "qid": "Q49650",
+   "fame": 0.53,
+   "country": "United Kingdom",
+   "description": "lake in Highland, Scotland, UK, outflows via Loch Dochfour to the River Ness and Caledonian Canal",
+   "hook": "is the deep, dark home of a legendary monster called Nessie",
+   "known": 0.4,
+   "kind": "lake"
+  },
+  {
+   "label": "Mauna Loa",
+   "qid": "Q159762",
+   "fame": 0.512,
+   "country": "United States",
+   "description": "volcano on the island of Hawaii in Hawaii, United States",
+   "hook": null,
+   "known": 0.2,
+   "kind": "volcano"
+  },
+  {
+   "label": "Lake District",
+   "qid": "Q211778",
+   "fame": 0.509,
+   "country": "United Kingdom",
+   "description": "mountainous region in North West England, UK",
+   "hook": "is a famous region of hills and waterways tied to Beatrix Potter and the Romantic poets",
+   "known": 0.4,
+   "kind": "landscape"
+  },
+  {
+   "label": "Grand Teton National Park",
+   "qid": "Q222695",
+   "fame": 0.498,
+   "country": "United States",
+   "description": "United States National Park in northwestern Wyoming",
+   "hook": null,
+   "known": 0.2,
+   "kind": "national park"
+  },
+  {
+   "label": "Cliffs of Moher",
+   "qid": "Q239477",
+   "fame": 0.492,
+   "country": "Ireland",
+   "description": "cliffs in Western Ireland, on the Atlantic shore",
+   "hook": "are towering sea walls rising from the Atlantic, a top tourist draw and movie backdrop",
+   "known": 0.4,
+   "kind": "cliff"
+  },
+  {
+   "label": "Sequoia National Park",
+   "qid": "Q152660",
+   "fame": 0.492,
+   "country": "United States",
+   "description": "national park in the Sierra Nevada mountains, California, U.S.",
+   "hook": null,
+   "known": 0.2,
+   "kind": "national park"
+  },
+  {
+   "label": "Mount Hood",
+   "qid": "Q275662",
+   "fame": 0.489,
+   "country": "United States",
+   "description": "stratovolcano in the Cascade Volcanic Arc in Oregon, United States",
+   "hook": null,
+   "known": 0.2,
+   "kind": "volcano"
+  },
+  {
+   "label": "Zion National Park",
+   "qid": "Q205325",
+   "fame": 0.489,
+   "country": "United States",
+   "description": "national park in Washington, Iron, and Kane counties in Utah, United States",
+   "hook": "is a canyon of towering red sandstone walls, famed for the Narrows and Angels Landing hikes",
+   "known": 0.4,
+   "kind": "national park"
+  },
+  {
+   "label": "Joshua Tree National Park",
+   "qid": "Q735202",
+   "fame": 0.487,
+   "country": "United States",
+   "description": "national park of the United States",
+   "hook": null,
+   "known": 0.2,
+   "kind": "national park"
+  },
+  {
+   "label": "White Cliffs of Dover",
+   "qid": "Q754785",
+   "fame": 0.487,
+   "country": "United Kingdom",
+   "description": "chalk cliff coastline in Kent, UK",
+   "hook": "are a gleaming chalk wall facing France across the Channel, a symbol of coming home",
+   "known": 0.6,
+   "kind": "cliff"
+  },
+  {
+   "label": "Teide",
+   "qid": "Q38954",
+   "fame": 0.485,
+   "country": "Spain",
+   "description": "volcano on Tenerife in the Canary Islands",
+   "hook": null,
+   "known": 0.2,
+   "kind": "volcano"
+  },
+  {
+   "label": "Banff National Park",
+   "qid": "Q41858",
+   "fame": 0.475,
+   "country": "Canada",
+   "description": "national park in Alberta, Canada",
+   "hook": "is a Rocky Mountains resort area with turquoise glacial waters, including Lake Louise",
+   "known": 0.4,
+   "kind": "national park"
+  },
+  {
+   "label": "Arches National Park",
+   "qid": "Q223969",
+   "fame": 0.465,
+   "country": "United States",
+   "description": "national park in Grand County, Utah, United States",
+   "hook": null,
+   "known": 0.2,
+   "kind": "national park"
+  },
+  {
+   "label": "Eyjafjallajökull",
+   "qid": "Q39651",
+   "fame": 0.465,
+   "country": "Iceland",
+   "description": "ice cap in Iceland covering the caldera of a volcano",
+   "hook": null,
+   "known": 0.05,
+   "kind": "volcano"
+  },
+  {
+   "label": "Mount Tai",
+   "qid": "Q216059",
+   "fame": 0.459,
+   "country": "China",
+   "description": "mountain in Shandong, China",
+   "hook": null,
+   "known": 0.05,
+   "kind": "mountain"
+  },
+  {
+   "label": "Table Mountain",
+   "qid": "Q213360",
+   "fame": 0.458,
+   "country": "South Africa",
+   "description": "mountain in Cape Town, South Africa",
+   "hook": "is a flat-topped peak overlooking Cape Town, reached by a rotating cable car",
+   "known": 0.4,
+   "kind": "mountain"
+  },
+  {
+   "label": "Snowdonia",
+   "qid": "Q867913",
+   "fame": 0.455,
+   "country": "United Kingdom",
+   "description": "mountainous area in Wales",
+   "hook": null,
+   "known": 0.2,
+   "kind": "landscape"
+  },
+  {
+   "label": "Bryce Canyon National Park",
+   "qid": "Q219562",
+   "fame": 0.45,
+   "country": "United States",
+   "description": "national park in Garfield and Kane counties in Utah, United States",
+   "hook": null,
+   "known": 0.2,
+   "kind": "national park"
+  }
+ ]
+}

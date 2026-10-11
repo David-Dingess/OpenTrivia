@@ -1,0 +1,244 @@
+{
+ "id": "table.stage.shakespeare-plays",
+ "kind": "table",
+ "title": "Shakespeare's plays by year",
+ "genre": "arts-entertainment",
+ "category": "stage",
+ "topic": "theater",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?year WHERE { { SELECT ?item (MIN(?d) AS ?year) WHERE { ?item wdt:P50 wd:Q692 ; wdt:P31 wd:Q116476516 ; (wdt:P571|wdt:P577) ?d . } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T04:43:08.058Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T04:43:08.058Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "year",
+   "label": "Written / first published",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "play",
+  "many": "plays",
+  "columns": {
+   "year": {
+    "role": "date",
+    "era": "Drop each play into the century it was written."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Romeo and Juliet",
+   "qid": "Q83186",
+   "fame": 0.649,
+   "year": 1590,
+   "description": "tragedy by William Shakespeare",
+   "hook": "follows two young lovers from feuding families whose secret marriage ends in a double tragedy",
+   "known": 0.95,
+   "kind": "tragedy"
+  },
+  {
+   "label": "Macbeth",
+   "qid": "Q130283",
+   "fame": 0.628,
+   "year": 1606,
+   "description": "tragic play by William Shakespeare from the early 1600s",
+   "hook": "follows a Scottish lord driven by prophecy and ambition to murder his king",
+   "known": 0.95,
+   "kind": "tragedy"
+  },
+  {
+   "label": "A Midsummer Night's Dream",
+   "qid": "Q104871",
+   "fame": 0.602,
+   "year": 1595,
+   "description": "play by William Shakespeare",
+   "hook": "follows lovers and fairies whose romance is thrown into chaos by a mischievous sprite in an enchanted forest",
+   "known": 0.95,
+   "kind": "comedy"
+  },
+  {
+   "label": "The Taming of the Shrew",
+   "qid": "Q332387",
+   "fame": 0.602,
+   "year": 1591,
+   "description": "play by Shakespeare",
+   "hook": "follows a fortune-hunter who woos a sharp-tongued woman to win a bet with her father",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Othello",
+   "qid": "Q26833",
+   "fame": 0.59,
+   "year": 1604,
+   "description": "theatrical play by William Shakespeare",
+   "hook": "follows a general manipulated by a jealous subordinate into believing his wife is unfaithful",
+   "known": 0.8,
+   "kind": "tragedy"
+  },
+  {
+   "label": "Much Ado About Nothing",
+   "qid": "Q130851",
+   "fame": 0.587,
+   "year": 1599,
+   "description": "comedy play by William Shakespeare",
+   "hook": "follows a witty couple tricked by friends into falling in love through overheard conversations",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "King Lear",
+   "qid": "Q181598",
+   "fame": 0.583,
+   "year": 1606,
+   "description": "tragedy by William Shakespeare",
+   "hook": "follows an aging ruler who divides his realm based on flattery and is betrayed by two of his daughters",
+   "known": 0.8,
+   "kind": "tragedy"
+  },
+  {
+   "label": "The Tempest",
+   "qid": "Q86440",
+   "fame": 0.569,
+   "year": 1611,
+   "description": "play by William Shakespeare",
+   "hook": "follows an exiled sorcerer who conjures a storm to strand his enemies on his island",
+   "known": 0.8,
+   "kind": "romance"
+  },
+  {
+   "label": "Twelfth Night",
+   "qid": "Q221211",
+   "fame": 0.561,
+   "year": 1601,
+   "description": "comedy by William Shakespeare",
+   "hook": "follows a shipwrecked woman who disguises herself as a man and becomes tangled in a love triangle",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "The Merchant of Venice",
+   "qid": "Q206400",
+   "fame": 0.55,
+   "year": 1596,
+   "description": "play by Shakespeare set in the Republic of Venice",
+   "hook": "follows a moneylender who demands a pound of flesh as collateral when a loan goes unpaid",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "As You Like It",
+   "qid": "Q237572",
+   "fame": 0.537,
+   "year": 1599,
+   "description": "pastoral comedy by William Shakespeare",
+   "hook": "follows a young woman who flees to a forest disguised as a boy after her uncle seizes power",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Julius Caesar",
+   "qid": "Q215750",
+   "fame": 0.508,
+   "year": 1599,
+   "description": "play by William Shakespeare",
+   "hook": "follows Roman senators who assassinate their leader to stop him becoming a tyrant",
+   "known": 0.6,
+   "kind": "history"
+  },
+  {
+   "label": "Titus Andronicus",
+   "qid": "Q272169",
+   "fame": 0.494,
+   "year": 1592,
+   "description": "play by William Shakespeare",
+   "hook": "follows a Roman general drawn into a spiral of revenge after his family is wronged",
+   "known": 0.4,
+   "kind": "tragedy"
+  },
+  {
+   "label": "Richard III",
+   "qid": "Q652011",
+   "fame": 0.489,
+   "year": 1593,
+   "description": "Shakespearean history play",
+   "hook": "follows a scheming duke who manipulates his way to the English throne through betrayal and murder",
+   "known": 0.6,
+   "kind": "history"
+  },
+  {
+   "label": "The Comedy of Errors",
+   "qid": "Q506505",
+   "fame": 0.466,
+   "year": 1594,
+   "description": "early play by William Shakespeare",
+   "hook": "follows two sets of separated twins whose reunion in one city causes a day of mistaken identities",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "Antony and Cleopatra",
+   "qid": "Q606830",
+   "fame": 0.465,
+   "year": 1606,
+   "description": "tragedy by William Shakespeare",
+   "hook": "follows a Roman general whose love for an Egyptian queen leads both to their downfall",
+   "known": 0.6,
+   "kind": "tragedy"
+  },
+  {
+   "label": "Love's Labour's Lost",
+   "qid": "Q128610",
+   "fame": 0.461,
+   "year": 1595,
+   "description": "comedy play by William Shakespeare",
+   "hook": "follows a king and his lords who swear off romance for a year and then fall for a group of visiting noblewomen",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "Coriolanus",
+   "qid": "Q463126",
+   "fame": 0.458,
+   "year": 1608,
+   "description": "play by William Shakespeare",
+   "hook": "follows a proud Roman general banished by his own city who then leads an enemy army against it",
+   "known": 0.4,
+   "kind": "tragedy"
+  },
+  {
+   "label": "The Winter's Tale",
+   "qid": "Q743194",
+   "fame": 0.454,
+   "year": 1611,
+   "description": "play by Shakespeare",
+   "hook": "follows a jealous ruler whose false accusation shatters his family for years before an unlikely reunion",
+   "known": 0.4,
+   "kind": "romance"
+  }
+ ]
+}

@@ -1,0 +1,366 @@
+{
+ "id": "table.sports.nba-mvps",
+ "kind": "table",
+ "title": "NBA Most Valuable Player winners",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "basketball",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?year WHERE { { SELECT ?item (MIN(?d) AS ?year) WHERE { ?item p:P166 ?st . ?st ps:P166 wd:Q222047 ; pq:P585 ?d . } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T04:53:59.112Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T04:53:59.112Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "first_win",
+   "label": "First MVP season",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "MVP",
+  "many": "MVPs",
+  "columns": {
+   "first_win": {
+    "role": "date",
+    "era": "Drop each MVP into the decade of their first MVP season.",
+    "eraSize": "decade",
+    "shot": "In what year was {label} first named the NBA's Most Valuable Player?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Michael Jordan",
+   "qid": "Q41421",
+   "fame": 0.762,
+   "first_win": 1988,
+   "description": "American basketball player and businessman (born 1963)",
+   "hook": "won six championships with the Bulls and became one of the most recognized athletes on the planet",
+   "known": 0.95,
+   "kind": "player"
+  },
+  {
+   "label": "LeBron James",
+   "qid": "Q36159",
+   "fame": 0.759,
+   "first_win": 2009,
+   "description": "American basketball player (born 1984)",
+   "hook": "climbed to the top of the league's all-time scoring list over an unusually long career",
+   "known": 0.95,
+   "kind": "player"
+  },
+  {
+   "label": "Shaquille O'Neal",
+   "qid": "Q169452",
+   "fame": 0.74,
+   "first_win": 2000,
+   "description": "American basketball player (born 1972)",
+   "hook": "used massive size and power to become one of the most dominant centers ever to play",
+   "known": 0.8,
+   "kind": "player"
+  },
+  {
+   "label": "Kobe Bryant",
+   "qid": "Q25369",
+   "fame": 0.723,
+   "first_win": 2006,
+   "description": "American basketball player (1978–2020)",
+   "hook": "won five championships with the Lakers and once scored eighty-one points in a single game",
+   "known": 0.95,
+   "kind": "player"
+  },
+  {
+   "label": "Stephen Curry",
+   "qid": "Q352159",
+   "fame": 0.697,
+   "first_win": 2015,
+   "description": "American basketball player (born 1988)",
+   "hook": "reshaped how the game is played by making long-range three-pointers a routine weapon",
+   "known": 0.8,
+   "kind": "player"
+  },
+  {
+   "label": "Magic Johnson",
+   "qid": "Q134183",
+   "fame": 0.67,
+   "first_win": 1987,
+   "description": "American basketball player and entrepreneur (born 1959)",
+   "hook": "ran a fast, flashy Lakers offense and later built a successful business empire",
+   "known": 0.8,
+   "kind": "player"
+  },
+  {
+   "label": "Kevin Durant",
+   "qid": "Q29545",
+   "fame": 0.668,
+   "first_win": 2014,
+   "description": "American basketball player (born 1988)",
+   "hook": "combined smooth outside shooting with unusual height to become nearly impossible to guard",
+   "known": 0.8,
+   "kind": "player"
+  },
+  {
+   "label": "Kareem Abdul-Jabbar",
+   "qid": "Q179051",
+   "fame": 0.659,
+   "first_win": 1971,
+   "description": "American basketball player (born 1947)",
+   "hook": "used an unblockable skyhook shot to dominate the league for two decades",
+   "known": 0.8,
+   "kind": "player"
+  },
+  {
+   "label": "Allen Iverson",
+   "qid": "Q190094",
+   "fame": 0.65,
+   "first_win": 2001,
+   "description": "American basketball player (born 1975)",
+   "hook": "thrilled crowds with a lightning crossover despite being undersized for his position",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "Larry Bird",
+   "qid": "Q190152",
+   "fame": 0.648,
+   "first_win": 1984,
+   "description": "American basketball player and coach (born 1956)",
+   "hook": "led a fierce rivalry with the Lakers for years as a sharp-shooting forward",
+   "known": 0.8,
+   "kind": "player"
+  },
+  {
+   "label": "Wilt Chamberlain",
+   "qid": "Q182455",
+   "fame": 0.643,
+   "first_win": 1960,
+   "description": "American basketball player (1936–1999)",
+   "hook": "scored one hundred points in a single game, a record that still stands",
+   "known": 0.8,
+   "kind": "player"
+  },
+  {
+   "label": "Giannis Antetokounmpo",
+   "qid": "Q8991894",
+   "fame": 0.638,
+   "first_win": 2019,
+   "description": "Nigerian-Greek basketball player (born 1994)",
+   "hook": "became famous for freakishly athletic dunks, shot-blocking, and rare speed for his size",
+   "known": 0.8,
+   "kind": "player"
+  },
+  {
+   "label": "Bob Pettit",
+   "qid": "Q368561",
+   "fame": 0.635,
+   "first_win": 1956,
+   "description": "American basketball player and coach (1932–2026)",
+   "hook": "starred for the Hawks as one of the earliest great power forwards in league history",
+   "known": 0.4,
+   "kind": "player"
+  },
+  {
+   "label": "Charles Barkley",
+   "qid": "Q192707",
+   "fame": 0.62,
+   "first_win": 1993,
+   "description": "American basketball player (born 1963)",
+   "hook": "out-rebounded much taller opponents throughout a Hall of Fame career",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "Karl Malone",
+   "qid": "Q199896",
+   "fame": 0.62,
+   "first_win": 1997,
+   "description": "American basketball player (born 1963)",
+   "hook": "formed one of basketball's most productive pick-and-roll duos and piled up huge scoring totals",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "Russell Westbrook",
+   "qid": "Q196185",
+   "fame": 0.614,
+   "first_win": 2017,
+   "description": "American basketball player (born 1988)",
+   "hook": "racked up more triple-doubles in a season than any player in modern history",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "Shai Gilgeous-Alexander",
+   "qid": "Q32860369",
+   "fame": 0.61,
+   "first_win": 2025,
+   "description": "Canadian basketball player (born 1998)",
+   "hook": "became known for a smooth, deceptive scoring style built on footwork and pace changes",
+   "known": 0.2,
+   "kind": "player"
+  },
+  {
+   "label": "Derrick Rose",
+   "qid": "Q205326",
+   "fame": 0.603,
+   "first_win": 2011,
+   "description": "American basketball player (born 1988)",
+   "hook": "became the youngest player ever to win the league's top individual honor",
+   "known": 0.4,
+   "kind": "player"
+  },
+  {
+   "label": "Nikola Jokić",
+   "qid": "Q17281073",
+   "fame": 0.594,
+   "first_win": 2021,
+   "description": "Serbian basketball player (born 1995)",
+   "hook": "passes like a point guard despite playing center, redefining the position",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "Dirk Nowitzki",
+   "qid": "Q44068",
+   "fame": 0.591,
+   "first_win": 2007,
+   "description": "German basketball player (born 1978)",
+   "hook": "brought an unstoppable one-legged fadeaway jump shot that defenders couldn't solve",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "Hakeem Olajuwon",
+   "qid": "Q273256",
+   "fame": 0.588,
+   "first_win": 1994,
+   "description": "Nigerian-American basketball player",
+   "hook": "used a dazzling footwork combo known as the Dream Shake to torment defenders",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "Tim Duncan",
+   "qid": "Q193020",
+   "fame": 0.588,
+   "first_win": 2002,
+   "description": "American basketball player (born 1976)",
+   "hook": "quietly anchored a championship dynasty with fundamentally sound, unflashy play",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "James Harden",
+   "qid": "Q136678",
+   "fame": 0.586,
+   "first_win": 2018,
+   "description": "American basketball player (born 1989)",
+   "hook": "drew fouls with a signature stepback three and led the league in scoring for years",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "Steve Nash",
+   "qid": "Q192955",
+   "fame": 0.583,
+   "first_win": 2005,
+   "description": "Canadian basketball player and coach",
+   "hook": "ran a high-scoring, up-tempo offense as one of the game's best passing point guards",
+   "known": 0.4,
+   "kind": "player"
+  },
+  {
+   "label": "Bill Russell",
+   "qid": "Q242185",
+   "fame": 0.582,
+   "first_win": 1958,
+   "description": "American basketball player (1934–2022)",
+   "hook": "anchored a dynasty that won eleven championships in thirteen seasons",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "Kevin Garnett",
+   "qid": "Q189240",
+   "fame": 0.575,
+   "first_win": 2004,
+   "description": "American basketball player (born 1976)",
+   "hook": "brought relentless intensity and versatile defense to every team he played for",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "Julius Erving",
+   "qid": "Q209921",
+   "fame": 0.549,
+   "first_win": 1981,
+   "description": "American basketball player (born 1950)",
+   "hook": "popularized above-the-rim dunking and helped make the slam dunk contest famous",
+   "known": 0.4,
+   "kind": "player"
+  },
+  {
+   "label": "Moses Malone",
+   "qid": "Q316179",
+   "fame": 0.534,
+   "first_win": 1979,
+   "description": "American basketball player (1955–2015)",
+   "hook": "dominated the offensive glass better than almost anyone who ever played center",
+   "known": 0.4,
+   "kind": "player"
+  },
+  {
+   "label": "David Robinson",
+   "qid": "Q211876",
+   "fame": 0.514,
+   "first_win": 1995,
+   "description": "American basketball player (born 1965)",
+   "hook": "combined shot-blocking and scoring as one of the most complete centers of his era",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "Bob Cousy",
+   "qid": "Q312643",
+   "fame": 0.505,
+   "first_win": 1957,
+   "description": "American basketball player and coach (born 1928)",
+   "hook": "pioneered flashy ball-handling and set the mold for the modern point guard",
+   "known": 0.2,
+   "kind": "player"
+  },
+  {
+   "label": "Oscar Robertson",
+   "qid": "Q17717",
+   "fame": 0.488,
+   "first_win": 1964,
+   "description": "American basketball player (born 1938)",
+   "hook": "averaged a triple-double for an entire season, a feat considered impossible for decades",
+   "known": 0.4,
+   "kind": "player"
+  }
+ ]
+}

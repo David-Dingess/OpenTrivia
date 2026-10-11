@@ -1,0 +1,627 @@
+{
+ "id": "table.business.company-slogans",
+ "kind": "table",
+ "title": "Famous companies and their slogan",
+ "genre": "daily-life",
+ "category": "business",
+ "topic": "slogans",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?motto WHERE { { SELECT ?item (SAMPLE(?m) AS ?motto) (COUNT(DISTINCT ?m) AS ?nM) WHERE { VALUES ?cls { wd:Q4830453 wd:Q6881511 wd:Q783794 wd:Q891723 wd:Q167037 wd:Q778575 wd:Q786820 wd:Q210167 wd:Q18509232 wd:Q2085381 wd:Q1331793 } ?item wdt:P31 ?cls ; wdt:P1451 ?mRaw ; wikibase:sitelinks ?sl . FILTER(LANG(?mRaw) = \"en\") BIND(STR(?mRaw) AS ?m) FILTER(?sl >= 15) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nM = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T13:57:03.563Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T13:57:03.563Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "slogan",
+   "label": "Slogan",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "company",
+  "many": "companies",
+  "columns": {
+   "slogan": {
+    "role": "code",
+    "pick": "What is {label}'s slogan?",
+    "statement": "{label}'s slogan is \"{value}\".",
+    "match": "Match each company to its slogan.",
+    "reverse": "Which company uses the slogan \"{value}\"?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Google",
+   "qid": "Q95",
+   "fame": 0.83,
+   "slogan": "Do the right thing",
+   "description": "American multinational technology company, a subsidiary of Alphabet Inc.",
+   "hook": "is a search engine used by billions of people every day to find information online",
+   "known": 0.95,
+   "kind": "tech"
+  },
+  {
+   "label": "McDonald's",
+   "qid": "Q38076",
+   "fame": 0.677,
+   "slogan": "I'm loving it",
+   "description": "American fast food restaurant chain",
+   "hook": "serves the Big Mac and is instantly recognized by its golden arches sign",
+   "known": 0.95,
+   "kind": "food"
+  },
+  {
+   "label": "Walmart",
+   "qid": "Q483551",
+   "fame": 0.671,
+   "slogan": "Save money. Live better.",
+   "description": "U.S. discount retailer based in Arkansas",
+   "hook": "runs thousands of supercenters selling groceries and general goods across the US",
+   "known": 0.8,
+   "kind": "retail"
+  },
+  {
+   "label": "BMW",
+   "qid": "Q26678",
+   "fame": 0.651,
+   "slogan": "The Ultimate Driving Machine",
+   "description": "German automobile manufacturer, and conglomerate",
+   "hook": "makes luxury cars recognized worldwide by their blue-and-white roundel badge",
+   "known": 0.8,
+   "kind": "automotive"
+  },
+  {
+   "label": "Nike, Inc.",
+   "qid": "Q483915",
+   "fame": 0.65,
+   "slogan": "Just do it",
+   "description": "American athletic equipment company",
+   "hook": "puts its swoosh logo on shoes and gear worn by elite athletes worldwide",
+   "known": 0.8,
+   "kind": "fashion"
+  },
+  {
+   "label": "Airbus",
+   "qid": "Q2311",
+   "fame": 0.638,
+   "slogan": "We make it fly",
+   "description": "pan-European aerospace and defence group",
+   "hook": "builds passenger jets that rival Boeing for airline orders around the globe",
+   "known": 0.4,
+   "kind": "aerospace"
+  },
+  {
+   "label": "Nestlé",
+   "qid": "Q160746",
+   "fame": 0.63,
+   "slogan": "Good food, Good life",
+   "description": "Swiss multi-national food and beverage company",
+   "hook": "makes chocolate, coffee and baby formula sold in nearly every country",
+   "known": 0.6,
+   "kind": "food"
+  },
+  {
+   "label": "Boeing",
+   "qid": "Q66",
+   "fame": 0.627,
+   "slogan": "Connect, Protect, Explore and Inspire the World through Aerospace Innovation",
+   "description": "American global aerospace and defense corporation",
+   "hook": "built the 747 jumbo jet and other airliners flown by carriers around the globe",
+   "known": 0.8,
+   "kind": "aerospace"
+  },
+  {
+   "label": "Ryanair",
+   "qid": "Q170614",
+   "fame": 0.627,
+   "slogan": "Low fares, Great care.",
+   "description": "low-cost airline of Ireland",
+   "hook": "flies passengers across Europe for famously rock-bottom ticket prices",
+   "known": 0.6,
+   "kind": "airline"
+  },
+  {
+   "label": "Nokia",
+   "qid": "Q1418",
+   "fame": 0.618,
+   "slogan": "We create the technology to connect the world",
+   "description": "Finnish multinational telecommunications and information technology company",
+   "hook": "once dominated mobile phones with famously tough, hard-to-break handsets",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "eBay",
+   "qid": "Q58024",
+   "fame": 0.617,
+   "slogan": "Buy it, sell it, love it",
+   "description": "American multinational internet corporation that manages eBay.com",
+   "hook": "lets people list, bid on and purchase almost anything through online auctions",
+   "known": 0.8,
+   "kind": "retail"
+  },
+  {
+   "label": "Lufthansa",
+   "qid": "Q9325",
+   "fame": 0.614,
+   "slogan": "There's no better way to fly.",
+   "description": "Flag-carrier and largest airline of Germany",
+   "hook": "is Germany's flag carrier airline, recognized by its yellow crane logo",
+   "known": 0.6,
+   "kind": "airline"
+  },
+  {
+   "label": "Bitly",
+   "qid": "Q21079",
+   "fame": 0.609,
+   "slogan": "♥ your bitmarks",
+   "description": "link management platform",
+   "hook": "shortens long web addresses into compact links people can share easily",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "KFC",
+   "qid": "Q524757",
+   "fame": 0.603,
+   "slogan": "Finger Lickin' Good",
+   "description": "American fast food restaurant chain specializing in fried chicken",
+   "hook": "is known worldwide for its fried chicken served in a red-and-white bucket",
+   "known": 0.6,
+   "kind": "food"
+  },
+  {
+   "label": "Honda",
+   "qid": "Q9584",
+   "fame": 0.597,
+   "slogan": "The Power of Dreams",
+   "description": "manufacturer of automobiles, motorcycles, and power equipment",
+   "hook": "builds motorcycles, cars and a famous line of small engines",
+   "known": 0.95,
+   "kind": "automotive"
+  },
+  {
+   "label": "Škoda Auto",
+   "qid": "Q29637",
+   "fame": 0.59,
+   "slogan": "simply clever",
+   "description": "automotive manufacturing subsidiary of Volkswagen Group",
+   "hook": "is a Czech carmaker under the Volkswagen umbrella, prized for roomy, practical design",
+   "known": 0.2,
+   "kind": "automotive"
+  },
+  {
+   "label": "Chery",
+   "qid": "Q591001",
+   "fame": 0.588,
+   "slogan": "Fun to drive",
+   "description": "Chinese automobile manufacturing company",
+   "hook": "is one of China's biggest car exporters, selling vehicles across the globe",
+   "known": 0.2,
+   "kind": "automotive"
+  },
+  {
+   "label": "Southwest Airlines",
+   "qid": "Q503308",
+   "fame": 0.576,
+   "slogan": "Low fares. Nothing to hide",
+   "description": "airline of the United States",
+   "hook": "pioneered open seating and free checked bags among US carriers",
+   "known": 0.4,
+   "kind": "airline"
+  },
+  {
+   "label": "Siemens",
+   "qid": "Q81230",
+   "fame": 0.574,
+   "slogan": "Ingenuity for life",
+   "description": "German multinational conglomerate company",
+   "hook": "makes industrial equipment, trains and electronics across dozens of countries",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "AOL",
+   "qid": "Q27585",
+   "fame": 0.564,
+   "slogan": "It's on!",
+   "description": "American web portal and online service provider",
+   "hook": "once connected millions of Americans to the internet through dial-up modems",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "LG Group",
+   "qid": "Q136778",
+   "fame": 0.559,
+   "slogan": "Life’s Good",
+   "description": "South Korean multinational conglomerate",
+   "hook": "makes televisions, home appliances and smartphones sold around the world",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "Tesco",
+   "qid": "Q487494",
+   "fame": 0.558,
+   "slogan": "Every little helps",
+   "description": "British multinational retailer",
+   "hook": "is Britain's largest supermarket chain, with stores in most UK towns",
+   "known": 0.2,
+   "kind": "retail"
+  },
+  {
+   "label": "All Nippon Airways",
+   "qid": "Q204284",
+   "fame": 0.557,
+   "slogan": "inspiration of JAPAN",
+   "description": "Japanese airline",
+   "hook": "is one of Asia's largest airlines, carrying passengers to destinations across the region",
+   "known": 0.2,
+   "kind": "airline"
+  },
+  {
+   "label": "JetBlue Airways",
+   "qid": "Q161086",
+   "fame": 0.556,
+   "slogan": "You Above All",
+   "description": "airline from the United States",
+   "hook": "is a US airline known for roomy legroom and free in-flight snacks",
+   "known": 0.2,
+   "kind": "airline"
+  },
+  {
+   "label": "miHoYo",
+   "qid": "Q28686397",
+   "fame": 0.554,
+   "slogan": "Tech Otakus Save the World",
+   "description": "Chinese video game developer",
+   "hook": "created the hit game Genshin Impact, played by millions of fans everywhere",
+   "known": 0.05,
+   "kind": "media"
+  },
+  {
+   "label": "Alstom",
+   "qid": "Q309084",
+   "fame": 0.55,
+   "slogan": "Mobility by nature",
+   "description": "French rolling stock manufacturer",
+   "hook": "builds high-speed trains including France's famous TGV",
+   "known": 0.2,
+   "kind": "aerospace"
+  },
+  {
+   "label": "SkyTeam",
+   "qid": "Q212282",
+   "fame": 0.55,
+   "slogan": "Caring more about you",
+   "description": "global airline alliance",
+   "hook": "links major airlines together so passengers can earn miles across carriers",
+   "known": 0.05,
+   "kind": "airline"
+  },
+  {
+   "label": "Kodak",
+   "qid": "Q486269",
+   "fame": 0.547,
+   "slogan": "You press the button – we do the rest",
+   "description": "American company",
+   "hook": "once dominated photographic film before digital cameras took over",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "Zeekr",
+   "qid": "Q106621124",
+   "fame": 0.547,
+   "slogan": "Stay Zero, Stay Cool",
+   "description": "Chinese high-end EV brand",
+   "hook": "is a Chinese electric vehicle brand aimed at premium buyers",
+   "known": 0.05,
+   "kind": "automotive"
+  },
+  {
+   "label": "OnePlus",
+   "qid": "Q16499972",
+   "fame": 0.546,
+   "slogan": "Never Settle",
+   "description": "Chinese consumer electronics manufacturer, a subsidiary of Oppo",
+   "hook": "makes smartphones known for high performance at lower prices than rivals",
+   "known": 0.05,
+   "kind": "tech"
+  },
+  {
+   "label": "Suzuki Motor Corporation",
+   "qid": "Q181642",
+   "fame": 0.544,
+   "slogan": "Way of Life!",
+   "description": "Japanese multinational automotive corporation",
+   "hook": "makes compact cars and scooters popular across Asia",
+   "known": 0.2,
+   "kind": "automotive"
+  },
+  {
+   "label": "Kering",
+   "qid": "Q931207",
+   "fame": 0.54,
+   "slogan": "Empowering Imagination",
+   "description": "French business (1962-)",
+   "hook": "owns luxury fashion houses including Gucci and Saint Laurent",
+   "known": 0.2,
+   "kind": "fashion"
+  },
+  {
+   "label": "Vodafone",
+   "qid": "Q122141",
+   "fame": 0.528,
+   "slogan": "The future is exciting. Ready?",
+   "description": "British multinational telecommunications company",
+   "hook": "is one of the world's biggest mobile phone network operators",
+   "known": 0.4,
+   "kind": "telecom"
+  },
+  {
+   "label": "Robert Bosch",
+   "qid": "Q234021",
+   "fame": 0.526,
+   "slogan": "Invented for Life",
+   "description": "German manufacturing company",
+   "hook": "makes car parts, power tools and home appliances sold worldwide",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Hitachi",
+   "qid": "Q53238",
+   "fame": 0.525,
+   "slogan": "Inspire the Next",
+   "description": "Japanese multinational engineering and electronics company",
+   "hook": "makes trains, elevators and industrial machinery used across the globe",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Michelin",
+   "qid": "Q151107",
+   "fame": 0.525,
+   "slogan": "Motion for life",
+   "description": "French multinational tyre manufacturing company",
+   "hook": "grades restaurants with stars while also making tires for cars",
+   "known": 0.4,
+   "kind": "fashion"
+  },
+  {
+   "label": "MSC Cruises",
+   "qid": "Q663626",
+   "fame": 0.525,
+   "slogan": "Not just any Cruise",
+   "description": "cruise line",
+   "hook": "carries millions of holidaymakers across the seas on giant ocean liners",
+   "known": 0.2,
+   "kind": "media"
+  },
+  {
+   "label": "GoPro",
+   "qid": "Q733482",
+   "fame": 0.522,
+   "slogan": "Be a Hero",
+   "description": "American technology company",
+   "hook": "makes rugged cameras that action-sports athletes strap to their helmets",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "3M",
+   "qid": "Q159433",
+   "fame": 0.521,
+   "slogan": "Science. Applied to Life.",
+   "description": "American multinational corporation",
+   "hook": "invented sticky notes and a wide range of adhesive products",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Atari",
+   "qid": "Q207922",
+   "fame": 0.518,
+   "slogan": "Revolution, Entertainment and Technology",
+   "description": "brand name owned by Atari Interactive",
+   "hook": "made the arcade hit Pong and early home video consoles",
+   "known": 0.4,
+   "kind": "media"
+  },
+  {
+   "label": "Blue Origin",
+   "qid": "Q885836",
+   "fame": 0.515,
+   "slogan": "Step by Step, Ferociously",
+   "description": "American aerospace developer and manufacturer",
+   "hook": "builds rockets aiming to carry tourists and cargo into space",
+   "known": 0.2,
+   "kind": "aerospace"
+  },
+  {
+   "label": "Vespa",
+   "qid": "Q217673",
+   "fame": 0.515,
+   "slogan": "Not just a scooter, a way of life",
+   "description": "Italian scooter",
+   "hook": "makes a classic round-bodied ride that defined Italian street style for generations",
+   "known": 0.2,
+   "kind": "automotive"
+  },
+  {
+   "label": "Yamaha Corporation",
+   "qid": "Q188454",
+   "fame": 0.514,
+   "slogan": "Make Waves",
+   "description": "Japanese music and audio equipment maker",
+   "hook": "produces pianos, guitars and other musical instruments played worldwide",
+   "known": 0.2,
+   "kind": "media"
+  },
+  {
+   "label": "Yamaha Motor Company",
+   "qid": "Q158888",
+   "fame": 0.508,
+   "slogan": "Revs Your Heart",
+   "description": "Japanese motorcycle manufacturer",
+   "hook": "builds off-road bikes and personal watercraft ridden around the world",
+   "known": 0.2,
+   "kind": "automotive"
+  },
+  {
+   "label": "Deutsche Bank",
+   "qid": "Q66048",
+   "fame": 0.506,
+   "slogan": "#PositiveImpact",
+   "description": "German global banking and financial services company",
+   "hook": "is one of Germany's largest lenders, serving clients around the world",
+   "known": 0.2,
+   "kind": "finance"
+  },
+  {
+   "label": "XPeng",
+   "qid": "Q63035278",
+   "fame": 0.503,
+   "slogan": "We strive to build smart electric vehicles with technology and data and design the mobility experience of the future.",
+   "description": "Chinese automobile manufacturer",
+   "hook": "is a fast-growing Chinese automaker competing for buyers worldwide",
+   "known": 0.05,
+   "kind": "automotive"
+  },
+  {
+   "label": "Jetour",
+   "qid": "Q98145436",
+   "fame": 0.499,
+   "slogan": "Drive Your Future",
+   "description": "Chinese automotive brand owned by Chery",
+   "hook": "is a Chinese SUV brand aimed at outdoor and adventure buyers",
+   "known": 0.05,
+   "kind": "automotive"
+  },
+  {
+   "label": "BASF",
+   "qid": "Q9401",
+   "fame": 0.497,
+   "slogan": "We create chemistry",
+   "description": "German chemical company with worldwide reach",
+   "hook": "makes plastics, coatings and industrial materials used worldwide",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Amul",
+   "qid": "Q2721482",
+   "fame": 0.496,
+   "slogan": "The Taste Of India",
+   "description": "Indian cooperative dairy company",
+   "hook": "is a dairy cooperative famous across South Asia for its butter and milk",
+   "known": 0.05,
+   "kind": "food"
+  },
+  {
+   "label": "GameStop",
+   "qid": "Q202210",
+   "fame": 0.494,
+   "slogan": "Power to the Players",
+   "description": "American video game retailer",
+   "hook": "sells consoles, controllers and discs from stores in shopping malls",
+   "known": 0.2,
+   "kind": "retail"
+  },
+  {
+   "label": "ArcelorMittal",
+   "qid": "Q27893",
+   "fame": 0.491,
+   "slogan": "transforming tomorrow",
+   "description": "multinational steel manufacturing corporation",
+   "hook": "produces more steel than any other company, supplying builders and carmakers",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Supreme",
+   "qid": "Q1659229",
+   "fame": 0.484,
+   "slogan": "World Famous",
+   "description": "American clothing brand and skateboarding shop",
+   "hook": "is a streetwear brand known for long lines forming outside its stores",
+   "known": 0.4,
+   "kind": "brand"
+  },
+  {
+   "label": "Accor",
+   "qid": "Q212599",
+   "fame": 0.482,
+   "slogan": "Feel Welcome",
+   "description": "French hotel group",
+   "hook": "operates hotel brands found in cities across the world",
+   "known": 0.2,
+   "kind": "brand"
+  },
+  {
+   "label": "HTC",
+   "qid": "Q186012",
+   "fame": 0.478,
+   "slogan": "Quietly Brilliant",
+   "description": "Taiwanese electronics company",
+   "hook": "once led the smartphone market before rivals overtook it",
+   "known": 0.2,
+   "kind": "brand"
+  },
+  {
+   "label": "STMicroelectronics",
+   "qid": "Q661845",
+   "fame": 0.471,
+   "slogan": "life.augmented",
+   "description": "multinational electronics and semiconductors manufacturer",
+   "hook": "makes chips found inside countless devices, from phones to cars",
+   "known": 0.05,
+   "kind": "brand"
+  },
+  {
+   "label": "Longines",
+   "qid": "Q603698",
+   "fame": 0.454,
+   "slogan": "Elegance is an Attitude",
+   "description": "Swiss watchmaker",
+   "hook": "is a Swiss watchmaker that has timed the Olympics for decades",
+   "known": 0.4,
+   "kind": "brand"
+  },
+  {
+   "label": "AT&T Corporation",
+   "qid": "Q2843047",
+   "fame": 0.45,
+   "slogan": "One Policy, One System, Universal Service",
+   "description": "subsidiary of AT&T that provides voice, video, data, and Internet telecommunications",
+   "hook": "once held a monopoly over almost all American telephone calls",
+   "known": 0.6,
+   "kind": "brand"
+  }
+ ]
+}

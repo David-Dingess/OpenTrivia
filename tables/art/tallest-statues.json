@@ -1,0 +1,149 @@
+{
+ "id": "table.art.tallest-statues",
+ "kind": "table",
+ "title": "Tallest statues",
+ "genre": "arts-entertainment",
+ "category": "art",
+ "topic": "landmarks",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?height ?countryLabel WHERE { { SELECT ?item (MAX(?h) AS ?height) (SAMPLE(?c) AS ?country) WHERE { ?item wdt:P31/wdt:P279* wd:Q179700 ; p:P2048/psn:P2048/wikibase:quantityAmount ?h . FILTER(?h >= 30) OPTIONAL { ?item wdt:P17 ?c } } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T00:54:27.981Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T00:54:27.981Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "height_m",
+   "label": "Height",
+   "unit": "m",
+   "type": "number",
+   "scale": "height-m"
+  },
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "statue",
+  "many": "statues",
+  "hookAsk": "Which statue {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "theLabels": [
+   "Statue of Liberty",
+   "Statue of Unity",
+   "Colossus of Rhodes",
+   "Motherland Calls",
+   "Leshan Giant Buddha",
+   "Spring Temple Buddha",
+   "Buddhas of Bamiyan"
+  ],
+  "columns": {
+   "height_m": {
+    "role": "measure",
+    "display": "m"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Statue of Liberty",
+   "qid": "Q9202",
+   "fame": 0.681,
+   "height_m": 47,
+   "country": "United States",
+   "description": "monument in New York",
+   "hook": "shows a robed woman lifting a torch as a beacon of welcome to arriving immigrants",
+   "known": 0.95,
+   "kind": "monument"
+  },
+  {
+   "label": "Christ the Redeemer",
+   "qid": "Q79961",
+   "fame": 0.605,
+   "height_m": 30,
+   "country": "Brazil",
+   "description": "colossal statue of Jesus in Rio de Janeiro, Brazil",
+   "hook": "shows a giant figure of a religious icon with arms spread wide overlooking a coastal city from a mountaintop",
+   "known": 0.95,
+   "kind": "religious"
+  },
+  {
+   "label": "Colossus of Rhodes",
+   "qid": "Q41553",
+   "fame": 0.605,
+   "height_m": 33,
+   "country": "Greece",
+   "description": "statue of the Greek Titan Helios; one of the seven wonders of the ancient world",
+   "hook": "was a bronze giant of a sun god that once stood guard over a harbor entrance in the ancient world",
+   "known": 0.8,
+   "kind": "ancient"
+  },
+  {
+   "label": "The Motherland Calls",
+   "qid": "Q1601986",
+   "fame": 0.596,
+   "height_m": 85,
+   "country": "Russia",
+   "description": "Volgograd monumental sculpture for heroes of the Battle of Stalingrad",
+   "hook": "shows a woman raising a sword overhead, built to honor soldiers who died defending a besieged city",
+   "known": 0.6,
+   "kind": "monument"
+  },
+  {
+   "label": "Statue of Unity",
+   "qid": "Q7604504",
+   "fame": 0.595,
+   "height_m": 182,
+   "country": "India",
+   "description": "statue of Vallabhbhai Patel at the bank of Narmada river, Gujarat, India",
+   "hook": "honors an independence-era leader who unified hundreds of small princely territories into one nation",
+   "known": 0.4,
+   "kind": "monument"
+  },
+  {
+   "label": "Buddhas of Bamiyan",
+   "qid": "Q484458",
+   "fame": 0.544,
+   "height_m": 53,
+   "country": "Afghanistan",
+   "description": "sculptures in Afghanistan before 2001",
+   "hook": "were giant figures of an enlightened teacher carved into a cliffside before being destroyed by militants",
+   "known": 0.6,
+   "kind": "religious"
+  },
+  {
+   "label": "Leshan Giant Buddha",
+   "qid": "Q205131",
+   "fame": 0.464,
+   "height_m": 71,
+   "country": "China",
+   "description": "monumental sculpture",
+   "hook": "is carved into a cliff face overlooking the meeting point of three rivers",
+   "known": 0.4,
+   "kind": "religious"
+  }
+ ]
+}

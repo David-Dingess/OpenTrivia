@@ -1,0 +1,191 @@
+{
+ "id": "table.art.palaces-castles-country",
+ "kind": "table",
+ "title": "Famous Palaces & Castles: their country",
+ "genre": "arts-entertainment",
+ "category": "art",
+ "topic": "famous-homes",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { VALUES ?cls { wd:Q16560 wd:Q23413 wd:Q751876 wd:Q1802963 wd:Q879050 } ?item wdt:P31 ?cls ; wdt:P17 ?c ; wikibase:sitelinks ?sl . FILTER(?sl >= 35) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T06:56:19.476Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T06:56:19.476Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "palace or castle",
+  "many": "palaces and castles",
+  "wildcard": "place",
+  "hookAsk": "Which palace or castle {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each palace or castle to its country.",
+    "odd": "Three of these palaces and castles are in {value}. Which one isn't?",
+    "all": "Tap all {n} palaces and castles in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Tower of London",
+   "qid": "Q62378",
+   "fame": 0.603,
+   "country": "United Kingdom",
+   "description": "castle in central London, United Kingdom",
+   "hook": "is guarded by Beefeaters and home to ravens said to protect the realm",
+   "known": 0.95,
+   "kind": "uk castle"
+  },
+  {
+   "label": "Balmoral Castle",
+   "qid": "Q42049",
+   "fame": 0.557,
+   "country": "United Kingdom",
+   "description": "estate house in Royal Deeside, Aberdeenshire, Scotland, UK",
+   "hook": "is a royal Highland retreat where Queen Elizabeth II spent her summers and died",
+   "known": 0.7,
+   "kind": "uk castle"
+  },
+  {
+   "label": "Eltz Castle",
+   "qid": "Q153426",
+   "fame": 0.527,
+   "country": "Germany",
+   "description": "Castle in Germany",
+   "hook": "sits in a forested Moselle valley and has stayed in one family for centuries",
+   "known": 0.4,
+   "kind": "european castle"
+  },
+  {
+   "label": "Edinburgh Castle",
+   "qid": "Q212065",
+   "fame": 0.517,
+   "country": "United Kingdom",
+   "description": "castle in Edinburgh, Scotland, UK",
+   "hook": "stands on an extinct volcano and fires a gun every day at one o'clock",
+   "known": 0.85,
+   "kind": "uk castle"
+  },
+  {
+   "label": "Akershus Fortress",
+   "qid": "Q644464",
+   "fame": 0.515,
+   "country": "Norway",
+   "description": "former medieval castle in Oslo, Norway",
+   "hook": null,
+   "known": 0.2,
+   "kind": "european castle"
+  },
+  {
+   "label": "Amber Fort",
+   "qid": "Q456817",
+   "fame": 0.511,
+   "country": "India",
+   "description": "fort and palace in Rajasthan, India",
+   "hook": "lets visitors ride elephants up a hill to a palace with a Hall of Mirrors",
+   "known": 0.45,
+   "kind": "south asian palace"
+  },
+  {
+   "label": "Schönbrunn Palace",
+   "qid": "Q131330",
+   "fame": 0.502,
+   "country": "Austria",
+   "description": "palace in Vienna, Austria",
+   "hook": "was the Habsburgs' yellow summer residence and has the world's oldest zoo",
+   "known": 0.65,
+   "kind": "european palace"
+  },
+  {
+   "label": "Bran Castle",
+   "qid": "Q390275",
+   "fame": 0.498,
+   "country": "Romania",
+   "description": "Medieval castle in Braşov county, Romania",
+   "hook": "is marketed as the home of Dracula, though the real Vlad barely stayed",
+   "known": 0.55,
+   "kind": "european castle"
+  },
+  {
+   "label": "Prague Castle",
+   "qid": "Q193369",
+   "fame": 0.496,
+   "country": "Czech Republic",
+   "description": "castle complex in Prague, Czech Republic, dating from the 9th century",
+   "hook": "is among the largest ancient fortified complexes, holding the Gothic St. Vitus Cathedral",
+   "known": 0.75,
+   "kind": "european castle"
+  },
+  {
+   "label": "Malbork Castle",
+   "qid": "Q71279",
+   "fame": 0.487,
+   "country": "Poland",
+   "description": "castle built in Prussia (now Poland) by the Teutonic Knights",
+   "hook": null,
+   "known": 0.2,
+   "kind": "european castle"
+  },
+  {
+   "label": "Hohenzollern Castle",
+   "qid": "Q156457",
+   "fame": 0.486,
+   "country": "Germany",
+   "description": "ancestral seat of the imperial House of Hohenzollern in the Swabian Alps of central Baden-Württemberg, Germany",
+   "hook": null,
+   "known": 0.35,
+   "kind": "european castle"
+  },
+  {
+   "label": "Stirling Castle",
+   "qid": "Q756268",
+   "fame": 0.475,
+   "country": "United Kingdom",
+   "description": "castle in Stirling, Scotland, UK",
+   "hook": "perches on a crag where Mary, Queen of Scots was crowned as a baby",
+   "known": 0.6,
+   "kind": "uk castle"
+  },
+  {
+   "label": "Château de Chambord",
+   "qid": "Q205367",
+   "fame": 0.456,
+   "country": "France",
+   "description": "castle in Chambord, Centre-Val de Loire, France",
+   "hook": "is a Renaissance giant with a double-spiral staircase linked to Leonardo da Vinci",
+   "known": 0.75,
+   "kind": "european palace"
+  }
+ ]
+}

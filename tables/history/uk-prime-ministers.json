@@ -1,0 +1,371 @@
+{
+ "id": "table.history.uk-prime-ministers",
+ "kind": "table",
+ "title": "UK prime ministers and their party",
+ "genre": "society",
+ "category": "history",
+ "topic": "rulers",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?pLabel WHERE { { SELECT ?item (SAMPLE(?p) AS ?p) (COUNT(DISTINCT ?p) AS ?n) WHERE { ?item wdt:P31 wd:Q5 ; wdt:P39 wd:Q14211 ; wdt:P102 ?p . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?n = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T20:50:17.716Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T20:50:17.716Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "party",
+   "label": "Political party",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "prime minister",
+  "many": "UK prime ministers",
+  "wildcard": "person",
+  "itemSub": "{hook}",
+  "hookAsk": "Which UK prime minister {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "party": {
+    "role": "link",
+    "pick": "Which party did {label} lead as UK prime minister?",
+    "statement": "{label} led the {value} as prime minister.",
+    "match": "Match each prime minister to the party they led.",
+    "reverse": "Which of these prime ministers led the {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Keir Starmer",
+   "qid": "Q6383803",
+   "fame": 0.743,
+   "party": "Labour Party",
+   "description": "Prime Minister of the United Kingdom from 2024 to 2026",
+   "hook": "was a human-rights barrister and the head of public prosecutions before entering politics",
+   "known": 0.9,
+   "kind": "modern pm"
+  },
+  {
+   "label": "Margaret Thatcher",
+   "qid": "Q7416",
+   "fame": 0.723,
+   "party": "Conservative Party",
+   "description": "Prime Minister of the United Kingdom from 1979 to 1990",
+   "hook": "became the first woman to hold the office and earned the nickname the Iron Lady",
+   "known": 0.95,
+   "kind": "modern pm"
+  },
+  {
+   "label": "Rishi Sunak",
+   "qid": "Q20055561",
+   "fame": 0.685,
+   "party": "Conservative Party",
+   "description": "Prime Minister of the United Kingdom from 2022 to 2024",
+   "hook": "worked in finance for an investment bank and hedge funds before entering politics",
+   "known": 0.85,
+   "kind": "modern pm"
+  },
+  {
+   "label": "Boris Johnson",
+   "qid": "Q180589",
+   "fame": 0.683,
+   "party": "Conservative Party",
+   "description": "Prime Minister of the United Kingdom from 2019 to 2022",
+   "hook": "served as mayor of London before taking the top job",
+   "known": 0.9,
+   "kind": "modern pm"
+  },
+  {
+   "label": "Tony Blair",
+   "qid": "Q9545",
+   "fame": 0.679,
+   "party": "Labour Party",
+   "description": "Prime Minister of the United Kingdom from 1997 to 2007",
+   "hook": "won three general elections in a row, a feat no other leader on his side has matched",
+   "known": 0.95,
+   "kind": "modern pm"
+  },
+  {
+   "label": "Liz Truss",
+   "qid": "Q272201",
+   "fame": 0.664,
+   "party": "Conservative Party",
+   "description": "Prime Minister of the United Kingdom in 2022",
+   "hook": "holds the record for the shortest time in the job, lasting under two months",
+   "known": 0.75,
+   "kind": "modern pm"
+  },
+  {
+   "label": "Harold Wilson",
+   "qid": "Q128956",
+   "fame": 0.639,
+   "party": "Labour Party",
+   "description": "Prime Minister of the United Kingdom from 1964-1970 and 1974-1976 (1916–1995)",
+   "hook": "won four general elections, more than any other leader on his side",
+   "known": 0.6,
+   "kind": "post-war pm"
+  },
+  {
+   "label": "David Cameron",
+   "qid": "Q192",
+   "fame": 0.629,
+   "party": "Conservative Party",
+   "description": "Prime Minister of the United Kingdom from 2010 to 2016",
+   "hook": "returned to government as foreign secretary after being made a life peer",
+   "known": 0.85,
+   "kind": "modern pm"
+  },
+  {
+   "label": "Gordon Brown",
+   "qid": "Q10648",
+   "fame": 0.625,
+   "party": "Labour Party",
+   "description": "Prime Minister of the United Kingdom from 2007 to 2010",
+   "hook": "spent a decade as chancellor of the exchequer before taking the top job",
+   "known": 0.75,
+   "kind": "post-war pm"
+  },
+  {
+   "label": "Anthony Eden",
+   "qid": "Q128995",
+   "fame": 0.618,
+   "party": "Conservative Party",
+   "description": "British soldier, diplomat and politician (1897–1977)",
+   "hook": "was Churchill's long-time deputy and was in office during the Suez Crisis",
+   "known": 0.4,
+   "kind": "post-war pm"
+  },
+  {
+   "label": "John Major",
+   "qid": "Q9559",
+   "fame": 0.615,
+   "party": "Conservative Party",
+   "description": "Prime Minister of the United Kingdom from 1990 to 1997",
+   "hook": "left school at sixteen and worked as an insurance clerk before rising to the top job",
+   "known": 0.8,
+   "kind": "modern pm"
+  },
+  {
+   "label": "Theresa May",
+   "qid": "Q264766",
+   "fame": 0.605,
+   "party": "Conservative Party",
+   "description": "Prime Minister of the United Kingdom from 2016 to 2019",
+   "hook": "became the second woman to lead the country, after serving as home secretary",
+   "known": 0.75,
+   "kind": "modern pm"
+  },
+  {
+   "label": "Neville Chamberlain",
+   "qid": "Q10664",
+   "fame": 0.601,
+   "party": "Conservative Party",
+   "description": "Prime Minister of the United Kingdom from 1937 to 1940",
+   "hook": "signed the Munich Agreement, then announced that Britain was at war with Germany",
+   "known": 0.45,
+   "kind": "post-war pm"
+  },
+  {
+   "label": "Clement Attlee",
+   "qid": "Q129006",
+   "fame": 0.597,
+   "party": "Labour Party",
+   "description": "Prime Minister of the United Kingdom from 1945 to 1951 (1883–1967)",
+   "hook": "was Churchill's deputy in the wartime coalition and later won a landslide election",
+   "known": 0.55,
+   "kind": "post-war pm"
+  },
+  {
+   "label": "Edward Heath",
+   "qid": "Q128967",
+   "fame": 0.597,
+   "party": "Conservative Party",
+   "description": "Prime Minister of the United Kingdom from 1970 to 1974 (1916–2005)",
+   "hook": "was a keen yachtsman who won the Sydney to Hobart race, and an orchestra conductor",
+   "known": 0.5,
+   "kind": "post-war pm"
+  },
+  {
+   "label": "Harold Macmillan",
+   "qid": "Q128985",
+   "fame": 0.594,
+   "party": "Conservative Party",
+   "description": "Prime Minister of the United Kingdom from 1957 to 1963",
+   "hook": null,
+   "known": 0.35,
+   "kind": "post-war pm"
+  },
+  {
+   "label": "Benjamin Disraeli",
+   "qid": "Q82006",
+   "fame": 0.584,
+   "party": "Conservative Party",
+   "description": "British statesman (1804–1881)",
+   "hook": null,
+   "known": 0.3,
+   "kind": "classic pm"
+  },
+  {
+   "label": "James Callaghan",
+   "qid": "Q9576",
+   "fame": 0.569,
+   "party": "Labour Party",
+   "description": "former prime minister of the United Kingdom (1912–2005)",
+   "hook": "is the only person to have held all four Great Offices of State",
+   "known": 0.6,
+   "kind": "post-war pm"
+  },
+  {
+   "label": "David Lloyd George",
+   "qid": "Q134982",
+   "fame": 0.568,
+   "party": "Liberal Party",
+   "description": "Prime Minister of the United Kingdom from 1916 to 1922",
+   "hook": null,
+   "known": 0.35,
+   "kind": "classic pm"
+  },
+  {
+   "label": "William Pitt the Younger",
+   "qid": "Q128902",
+   "fame": 0.541,
+   "party": "Tories",
+   "description": "British statesman (1759–1806)",
+   "hook": null,
+   "known": 0.25,
+   "kind": "classic pm"
+  },
+  {
+   "label": "H. H. Asquith",
+   "qid": "Q166714",
+   "fame": 0.535,
+   "party": "Liberal Party",
+   "description": "British politician; Prime Minister of the United Kingdom from 1908 to 1916 (1852–1928)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "classic pm"
+  },
+  {
+   "label": "Robert Walpole",
+   "qid": "Q104190",
+   "fame": 0.53,
+   "party": "Whigs",
+   "description": "British statesman and art collector, 1st Earl of Orford (1676–1745)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "historic pm"
+  },
+  {
+   "label": "William Lamb, 2nd Viscount Melbourne",
+   "qid": "Q312567",
+   "fame": 0.525,
+   "party": "Whigs",
+   "description": "British politician (1779–1848)",
+   "hook": null,
+   "known": 0.08,
+   "kind": "historic pm"
+  },
+  {
+   "label": "Robert Peel",
+   "qid": "Q181875",
+   "fame": 0.522,
+   "party": "Conservative Party",
+   "description": "Former Prime Minister of the United Kingdom (1788–1850)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "classic pm"
+  },
+  {
+   "label": "Stanley Baldwin",
+   "qid": "Q166635",
+   "fame": 0.521,
+   "party": "Conservative Party",
+   "description": "British statesman (1867–1947)",
+   "hook": null,
+   "known": 0.15,
+   "kind": "classic pm"
+  },
+  {
+   "label": "Arthur Balfour",
+   "qid": "Q19008",
+   "fame": 0.491,
+   "party": "Conservative Party",
+   "description": "British Prime Minister, Conservative politician, and statesman (1848-1930)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "classic pm"
+  },
+  {
+   "label": "Charles Grey, 2nd Earl Grey",
+   "qid": "Q294662",
+   "fame": 0.48,
+   "party": "Whigs",
+   "description": "Prime Minister of the United Kingdom from 1830 to 1834 (1764–1845)",
+   "hook": null,
+   "known": 0.15,
+   "kind": "historic pm"
+  },
+  {
+   "label": "Robert Gascoyne-Cecil, 3rd Marquess of Salisbury",
+   "qid": "Q243705",
+   "fame": 0.478,
+   "party": "Conservative Party",
+   "description": "British politician and prime minister (1830-1903)",
+   "hook": null,
+   "known": 0.1,
+   "kind": "historic pm"
+  },
+  {
+   "label": "William Pitt, 1st Earl of Chatham",
+   "qid": "Q208663",
+   "fame": 0.466,
+   "party": "Whigs",
+   "description": "Prime Minister of Great Britain from 1766 to 1768 (1708–1778)",
+   "hook": null,
+   "known": 0.12,
+   "kind": "historic pm"
+  },
+  {
+   "label": "Bonar Law",
+   "qid": "Q166663",
+   "fame": 0.462,
+   "party": "Conservative Party",
+   "description": "Prime Minister of the United Kingdom from 1922 to 1923",
+   "hook": null,
+   "known": 0.1,
+   "kind": "classic pm"
+  },
+  {
+   "label": "Spencer Perceval",
+   "qid": "Q233992",
+   "fame": 0.461,
+   "party": "Tories",
+   "description": "19th-century prime minister of the United Kingdom (1762–1812)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "historic pm"
+  }
+ ]
+}

@@ -1,0 +1,500 @@
+{
+ "id": "table.religion.sacred-places-faith",
+ "kind": "table",
+ "title": "Famous sacred places and their faith",
+ "genre": "society",
+ "category": "religion",
+ "topic": "sacred-places",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?relLabel WHERE { { SELECT ?item (SAMPLE(?r) AS ?rel) (COUNT(DISTINCT ?r) AS ?nR) WHERE { ?item wdt:P31/wdt:P279* wd:Q24398318 ; wikibase:sitelinks ?sl ; wdt:P140 ?r . FILTER(?sl >= 40) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nR = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T06:25:38.297Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T06:25:38.297Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "faith",
+   "label": "Faith",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "sacred place",
+  "many": "sacred places",
+  "wildcard": "place",
+  "hookAsk": "Which sacred place {hook}?",
+  "hookStatement": "",
+  "columns": {
+   "faith": {
+    "role": "link",
+    "pick": "Which faith is {label} a sacred place of?",
+    "statement": "{label} is a sacred place of {value}.",
+    "match": "Match each sacred place to its faith.",
+    "odd": "Three of these sacred places belong to {value}. Which one doesn't?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Basilica and Expiatory Church of the Holy Family",
+   "qid": "Q48435",
+   "fame": 0.693,
+   "faith": "Catholicism",
+   "description": "basilica under construction since 1882 in Barcelona, Spain",
+   "hook": "has been under construction for well over a century, with spires designed by Antoni Gaudí",
+   "known": 0.6,
+   "kind": "basilica"
+  },
+  {
+   "label": "Pantheon",
+   "qid": "Q99309",
+   "fame": 0.646,
+   "faith": "Catholicism",
+   "description": "ancient Roman temple in Rome, Italy",
+   "hook": "is topped by a huge unreinforced concrete dome with a circular opening at the very top",
+   "known": 0.6,
+   "kind": "temple"
+  },
+  {
+   "label": "Cologne Cathedral",
+   "qid": "Q4176",
+   "fame": 0.612,
+   "faith": "Catholicism",
+   "description": "Roman-Catholic cathedral in Cologne, Germany",
+   "hook": "has twin Gothic spires and took centuries to finish, yet survived heavy WWII bombing",
+   "known": 0.4,
+   "kind": "cathedral"
+  },
+  {
+   "label": "St. Peter's Basilica",
+   "qid": "Q12512",
+   "fame": 0.605,
+   "faith": "Catholicism",
+   "description": "church in Vatican City",
+   "hook": "is topped by a dome designed by Michelangelo and is the largest church in Christendom",
+   "known": 0.8,
+   "kind": "basilica"
+  },
+  {
+   "label": "Leaning Tower of Pisa",
+   "qid": "Q39054",
+   "fame": 0.601,
+   "faith": "Catholicism",
+   "description": "cathedral bell tower in Pisa, Italy",
+   "hook": "famously tilts because the soft ground beneath it gave way while it was going up",
+   "known": 0.95,
+   "kind": "tower"
+  },
+  {
+   "label": "Notre-Dame de Paris",
+   "qid": "Q2981",
+   "fame": 0.598,
+   "faith": "Catholicism",
+   "description": "cathedral in Paris",
+   "hook": "is a Gothic landmark with gargoyles, made famous by a Victor Hugo novel about a bell-ringer",
+   "known": 0.95,
+   "kind": "cathedral"
+  },
+  {
+   "label": "St Paul's Cathedral",
+   "qid": "Q173882",
+   "fame": 0.597,
+   "faith": "Anglicanism",
+   "description": "cathedral in the City of London, England, UK",
+   "hook": "was rebuilt by Christopher Wren after the Great Fire and hosted Charles and Diana's wedding",
+   "known": 0.6,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Florence Cathedral",
+   "qid": "Q191739",
+   "fame": 0.559,
+   "faith": "Catholicism",
+   "description": "13th-century cathedral in Florence, Italy",
+   "hook": "is crowned by Brunelleschi's enormous red-tiled dome",
+   "known": 0.6,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Sistine Chapel",
+   "qid": "Q2943",
+   "fame": 0.557,
+   "faith": "Catholicism",
+   "description": "chapel in the Apostolic Palace, Vatican City",
+   "hook": "has a ceiling painted by Michelangelo and hosts the secret election of new popes",
+   "known": 0.8,
+   "kind": "chapel"
+  },
+  {
+   "label": "Harmandir Sahib",
+   "qid": "Q180422",
+   "fame": 0.556,
+   "faith": "Sikhism",
+   "description": "Sikh religious site in Amritsar, Punjab, India",
+   "hook": "is a gold-covered shrine floating in a sacred pool, known to outsiders as the Golden Temple",
+   "known": 0.4,
+   "kind": "shrine"
+  },
+  {
+   "label": "Al-Masjid Al-Haram",
+   "qid": "Q428858",
+   "fame": 0.551,
+   "faith": "Islam",
+   "description": "Islam's holiest mosque in Mecca, Saudi Arabia",
+   "hook": "surrounds the Kaaba, the black cube toward which Muslims worldwide face to pray",
+   "known": 0.6,
+   "kind": "mosque"
+  },
+  {
+   "label": "Milan Cathedral",
+   "qid": "Q18068",
+   "fame": 0.545,
+   "faith": "Catholicism",
+   "description": "cathedral church of Milan, Italy",
+   "hook": "is a huge Gothic marble landmark with thousands of statues and a rooftop you can walk on",
+   "known": 0.4,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Sacré-Cœur",
+   "qid": "Q28785",
+   "fame": 0.522,
+   "faith": "Catholicism",
+   "description": "Roman Catholic church in Paris, France",
+   "hook": "is a gleaming white-domed church perched on the summit of Montmartre",
+   "known": 0.6,
+   "kind": "church"
+  },
+  {
+   "label": "St. Basil's Cathedral",
+   "qid": "Q129846",
+   "fame": 0.517,
+   "faith": "Eastern Orthodoxy",
+   "description": "church in Moscow",
+   "hook": "has multicolored onion domes and stands at the edge of Red Square",
+   "known": 0.8,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Prophet's Mosque",
+   "qid": "Q486080",
+   "fame": 0.507,
+   "faith": "Islam",
+   "description": "mosque in Medina, Saudi Arabia",
+   "hook": "is where Muhammad is buried, beneath a famous green dome",
+   "known": 0.4,
+   "kind": "mosque"
+  },
+  {
+   "label": "Lincoln Cathedral",
+   "qid": "Q390169",
+   "fame": 0.505,
+   "faith": "Anglicanism",
+   "description": "cathedral located in Lincoln in England",
+   "hook": "was the tallest building in the world for centuries until its central spire toppled in a storm",
+   "known": 0.2,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Sultan Ahmed Mosque",
+   "qid": "Q80541",
+   "fame": 0.503,
+   "faith": "Islam",
+   "description": "historic mosque located in Istanbul, Turkey, also known as Blue Mosque",
+   "hook": "is nicknamed for the blue tiles lining its interior and has six slender minarets",
+   "known": 0.6,
+   "kind": "mosque"
+  },
+  {
+   "label": "Basilica of Our Lady of Peace of Yamoussoukro",
+   "qid": "Q815584",
+   "fame": 0.502,
+   "faith": "Catholicism",
+   "description": "Roman Catholic basilica minor in Yamoussoukro, Ivory Coast",
+   "hook": "claims to be among the largest churches on Earth, with a dome inspired by Rome's St. Peter's",
+   "known": 0.05,
+   "kind": "basilica"
+  },
+  {
+   "label": "Borobudur Temple",
+   "qid": "Q42798",
+   "fame": 0.502,
+   "faith": "Buddhism",
+   "description": "Buddhist temple in Java, Indonesia",
+   "hook": "is a giant stepped stone monument decorated with hundreds of Buddha statues and carved panels",
+   "known": 0.4,
+   "kind": "temple"
+  },
+  {
+   "label": "Canterbury Cathedral",
+   "qid": "Q29265",
+   "fame": 0.499,
+   "faith": "Anglicanism",
+   "description": "cathedral in Canterbury, Kent, England, founded in 597",
+   "hook": "is where Thomas Becket was murdered, drawing pilgrims like those in Chaucer's tales",
+   "known": 0.4,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Archbasilica of St. John Lateran",
+   "qid": "Q84090",
+   "fame": 0.489,
+   "faith": "Catholicism",
+   "description": "cathedral in Rome, Italy",
+   "hook": "is the pope's own cathedral as Bishop of Rome, technically outranking St. Peter's",
+   "known": 0.2,
+   "kind": "basilica"
+  },
+  {
+   "label": "Sainte Chapelle",
+   "qid": "Q193193",
+   "fame": 0.488,
+   "faith": "Catholicism",
+   "description": "chapel in Paris, in France",
+   "hook": "is famed for walls of medieval stained glass and was built to house a crown of thorns",
+   "known": 0.4,
+   "kind": "chapel"
+  },
+  {
+   "label": "Ulm Minster",
+   "qid": "Q44562",
+   "fame": 0.482,
+   "faith": "Lutheranism",
+   "description": "Gothic church in Germany",
+   "hook": "is topped by the tallest church spire in the world",
+   "known": 0.2,
+   "kind": "church"
+  },
+  {
+   "label": "Saint Catherine Monastery",
+   "qid": "Q185362",
+   "fame": 0.48,
+   "faith": "Eastern Orthodoxy",
+   "description": "Greek Orthodox monastery (the oldest) at the foot of Mount Sinai, Egypt",
+   "hook": "lies at the base of the mountain where Moses is said to have received the Ten Commandments",
+   "known": 0.2,
+   "kind": "monastery"
+  },
+  {
+   "label": "Salisbury Cathedral",
+   "qid": "Q390150",
+   "fame": 0.48,
+   "faith": "Anglicanism",
+   "description": "church of England cathedral in Salisbury, England, UK",
+   "hook": "has the tallest church spire in Britain and keeps an original copy of Magna Carta",
+   "known": 0.2,
+   "kind": "cathedral"
+  },
+  {
+   "label": "St. Stephen's Cathedral",
+   "qid": "Q5943",
+   "fame": 0.479,
+   "faith": "Catholicism",
+   "description": "church in Vienna, Austria",
+   "hook": "is topped by a steep roof of colorful zigzag tiles and a soaring Gothic spire",
+   "known": 0.4,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Royal Monastery of San Lorenzo de El Escorial",
+   "qid": "Q28471",
+   "fame": 0.478,
+   "faith": "Catholicism",
+   "description": "monastery and historical residence of the King of Spain",
+   "hook": "is a vast granite complex begun by Philip II, combining palace, library and a burial place for kings",
+   "known": 0.2,
+   "kind": "monastery"
+  },
+  {
+   "label": "Basilica of Saint-Denis",
+   "qid": "Q184407",
+   "fame": 0.477,
+   "faith": "Catholicism",
+   "description": "basilica located in Seine-Saint-Denis, in France",
+   "hook": "is the traditional burial place of kings and a birthplace of Gothic architecture",
+   "known": 0.2,
+   "kind": "basilica"
+  },
+  {
+   "label": "Basilica di Santa Maria Maggiore",
+   "qid": "Q186282",
+   "fame": 0.476,
+   "faith": "Catholicism",
+   "description": "largest Catholic Marian church in Rome",
+   "hook": "is said to stand where a miraculous August snowfall marked the site",
+   "known": 0.2,
+   "kind": "basilica"
+  },
+  {
+   "label": "York Minster",
+   "qid": "Q252575",
+   "fame": 0.476,
+   "faith": "Anglicanism",
+   "description": "cathedral of York, North Yorkshire, England, UK",
+   "hook": "houses the largest medieval stained glass window in Britain, the Great East Window",
+   "known": 0.2,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Cathedral of Our Lady of Strasbourg",
+   "qid": "Q745460",
+   "fame": 0.475,
+   "faith": "Catholicism",
+   "description": "cathedral located in Bas-Rhin, in France",
+   "hook": "has a single asymmetric spire and was once the tallest building in the world",
+   "known": 0.2,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Lotus Temple",
+   "qid": "Q940843",
+   "fame": 0.474,
+   "faith": "Baháʼí Faith",
+   "description": "Bahá'í House of Worship in Delhi, India",
+   "hook": "is a white building shaped like a blooming flower that welcomes people of every religion",
+   "known": 0.2,
+   "kind": "temple"
+  },
+  {
+   "label": "St Mark's Basilica",
+   "qid": "Q172988",
+   "fame": 0.474,
+   "faith": "Catholicism",
+   "description": "church in Venice, Italy",
+   "hook": "has glittering gold mosaics and faces a famous square often flooded by high tides",
+   "known": 0.6,
+   "kind": "basilica"
+  },
+  {
+   "label": "Washington National Cathedral",
+   "qid": "Q668710",
+   "fame": 0.474,
+   "faith": "Episcopal Church",
+   "description": "Neo-Gothic cathedral located in Washington, D.C.",
+   "hook": "is a Gothic-style landmark that hosts presidential funerals and has a Darth Vader gargoyle",
+   "known": 0.4,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Seville Cathedral",
+   "qid": "Q231606",
+   "fame": 0.466,
+   "faith": "Catholicism",
+   "description": "Catholic Cathedral in Seville (Formerly a Mosque), Spain",
+   "hook": "is among the biggest Gothic churches anywhere and holds the tomb of Christopher Columbus",
+   "known": 0.4,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Umayyad Mosque",
+   "qid": "Q183562",
+   "fame": 0.465,
+   "faith": "Islam",
+   "description": "mosque in Damascus, Syria",
+   "hook": "is one of history's oldest grand prayer halls and reputedly shelters the head of John the Baptist",
+   "known": 0.2,
+   "kind": "mosque"
+  },
+  {
+   "label": "Notre-Dame de Chartres",
+   "qid": "Q180274",
+   "fame": 0.461,
+   "faith": "Catholicism",
+   "description": "medieval Catholic cathedral in Chartres, France",
+   "hook": "is renowned for its exceptionally well-preserved medieval stained glass and a floor labyrinth",
+   "known": 0.4,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Basilica of Saint Paul outside the Walls",
+   "qid": "Q231699",
+   "fame": 0.46,
+   "faith": "Catholicism",
+   "description": "church in Rome, Italy",
+   "hook": "is built over the burial site of an apostle and displays portraits of every pope",
+   "known": 0.2,
+   "kind": "basilica"
+  },
+  {
+   "label": "Pashupatinath Temple",
+   "qid": "Q380384",
+   "fame": 0.46,
+   "faith": "Hinduism",
+   "description": "Hindu temple in Kathmandu",
+   "hook": "is a sacred riverside complex devoted to Shiva, where cremations take place on the banks",
+   "known": 0.2,
+   "kind": "temple"
+  },
+  {
+   "label": "Hallgrímskirkja",
+   "qid": "Q271466",
+   "fame": 0.456,
+   "faith": "Protestantism",
+   "description": "church in Reykjavík, Iceland",
+   "hook": "has a striking concrete tower inspired by columns of basalt lava",
+   "known": 0.2,
+   "kind": "church"
+  },
+  {
+   "label": "Winchester Cathedral",
+   "qid": "Q476529",
+   "fame": 0.454,
+   "faith": "Anglicanism",
+   "description": "cathedral in Winchester, Hampshire, England, UK",
+   "hook": "holds the grave of novelist Jane Austen and has one of the longest naves in Europe",
+   "known": 0.2,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Reims Cathedral",
+   "qid": "Q206823",
+   "fame": 0.453,
+   "faith": "Catholicism",
+   "description": "Roman Catholic cathedral of Reims in France",
+   "hook": "was the traditional site where the monarchs of its country were crowned for centuries",
+   "known": 0.4,
+   "kind": "cathedral"
+  },
+  {
+   "label": "St. Patrick's Cathedral",
+   "qid": "Q624556",
+   "fame": 0.452,
+   "faith": "Catholicism",
+   "description": "cathedral of the Catholic Archdiocese of New York",
+   "hook": "is a Gothic Revival landmark on Fifth Avenue facing Rockefeller Center",
+   "known": 0.6,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Rouen Cathedral",
+   "qid": "Q476516",
+   "fame": 0.451,
+   "faith": "Catholicism",
+   "description": "cathedral located in Seine-Maritime, in France",
+   "hook": "was painted repeatedly by Claude Monet to capture changing light",
+   "known": 0.4,
+   "kind": "cathedral"
+  }
+ ]
+}

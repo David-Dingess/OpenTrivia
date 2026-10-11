@@ -1,0 +1,176 @@
+{
+ "id": "list.food-and-drink.ice-cream-brands",
+ "title": "Ice cream brands",
+ "prompt": "Name an ice cream brand",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "sweets-and-snacks",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q124804323 . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1500",
+  "fetchedAt": "2026-10-04T04:54:15.727Z"
+ },
+ "rows": [
+  {
+   "label": "Viennetta",
+   "qid": "Q2348879",
+   "fame": 0.395,
+   "also": []
+  },
+  {
+   "label": "McFlurry",
+   "qid": "Q906754",
+   "fame": 0.348,
+   "also": []
+  },
+  {
+   "label": "Good Humor",
+   "qid": "Q7314518",
+   "fame": 0.323,
+   "also": []
+  },
+  {
+   "label": "Moose Tracks",
+   "qid": "Q25339122",
+   "fame": 0.299,
+   "also": []
+  },
+  {
+   "label": "Mr. Whippy",
+   "qid": "Q109562723",
+   "fame": 0.297,
+   "also": [
+    "Mister Whippy"
+   ]
+  },
+  {
+   "label": "Mövenpick Ice Cream",
+   "qid": "Q4115072",
+   "fame": 0.272,
+   "also": []
+  },
+  {
+   "label": "Streets",
+   "qid": "Q7623117",
+   "fame": 0.272,
+   "also": []
+  },
+  {
+   "label": "Maxibon",
+   "qid": "Q3853100",
+   "fame": 0.255,
+   "also": []
+  },
+  {
+   "label": "Paddle Pop",
+   "qid": "Q7123345",
+   "fame": 0.237,
+   "also": []
+  },
+  {
+   "label": "Heartbrand",
+   "qid": "Q2090221",
+   "fame": 0.214,
+   "also": [
+    "The Heart",
+    "Heart"
+   ]
+  },
+  {
+   "label": "Fab",
+   "qid": "Q5427570",
+   "fame": 0.211,
+   "also": []
+  },
+  {
+   "label": "Lyons Maid",
+   "qid": "Q6709799",
+   "fame": 0.207,
+   "also": []
+  },
+  {
+   "label": "Frigo",
+   "qid": "Q5893162",
+   "fame": 0.186,
+   "also": [
+    "Productos Frigo SA"
+   ]
+  },
+  {
+   "label": "D'Onofrio",
+   "qid": "Q5203166",
+   "fame": 0.16,
+   "also": []
+  },
+  {
+   "label": "Miko",
+   "qid": "Q16607516",
+   "fame": 0.159,
+   "also": []
+  },
+  {
+   "label": "Stroh's Ice Cream",
+   "qid": "Q7624248",
+   "fame": 0.14,
+   "also": []
+  },
+  {
+   "label": "Jelly Tip",
+   "qid": "Q124803471",
+   "fame": 0.081,
+   "also": []
+  },
+  {
+   "label": "Snelgrove's Ice Cream",
+   "qid": "Q7547606",
+   "fame": 0.055,
+   "also": []
+  },
+  {
+   "label": "Brave Robot",
+   "qid": "Q105038626",
+   "fame": 0.052,
+   "also": []
+  },
+  {
+   "label": "Frosty Boy",
+   "qid": "Q18392137",
+   "fame": 0.048,
+   "also": []
+  },
+  {
+   "label": "Bonnie Doon Ice Cream",
+   "qid": "Q16889407",
+   "fame": 0.046,
+   "also": []
+  },
+  {
+   "label": "Bambino",
+   "qid": "Q9164843",
+   "fame": 0.003,
+   "also": []
+  },
+  {
+   "label": "Choco Panda",
+   "qid": "Q5103572",
+   "fame": 0,
+   "also": [
+    "chocolito"
+   ]
+  },
+  {
+   "label": "Nobó",
+   "qid": "Q20642440",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Pappagallo",
+   "qid": "Q11886654",
+   "fame": 0,
+   "also": []
+  }
+ ]
+}

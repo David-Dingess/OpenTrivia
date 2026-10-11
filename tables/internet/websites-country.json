@@ -1,0 +1,313 @@
+{
+ "id": "table.internet.websites-country",
+ "kind": "table",
+ "title": "Websites and apps: where they come from",
+ "genre": "general",
+ "category": "internet",
+ "topic": "websites-and-apps",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel ?born WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (GROUP_CONCAT(DISTINCT CONCAT(STR(?bT), \"|\", STR(?bP)); separator=\";\") AS ?born) WHERE { { ?item wdt:P31/wdt:P279* wd:Q35127 } UNION { ?item wdt:P31/wdt:P279* wd:Q620615 } ?item wikibase:sitelinks ?sitelinks ; wdt:P495 ?c . FILTER(?sitelinks > 30) ?item p:P571 ?st . ?st a wikibase:BestRank ; psv:P571 [ wikibase:timeValue ?bT ; wikibase:timePrecision ?bP ] . } GROUP BY ?item ?sitelinks HAVING(COUNT(DISTINCT ?c)=1) ORDER BY DESC(?sitelinks) LIMIT 300 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T13:13:45.659Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T13:13:45.659Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country of origin",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "launched",
+   "label": "Launched",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "website or app",
+  "many": "websites and apps",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} from?",
+    "statement": "{label} comes from {value}, and launched in {launched}.",
+    "match": "Match each website or app to the country it comes from.",
+    "odd": "Which of these websites or apps does not come from {value}?",
+    "all": "Which of these websites or apps come from {value}?",
+    "reverse": "Which website or app comes from {value}?"
+   },
+   "launched": {
+    "role": "date",
+    "sort": "from the earliest launched to the most recent",
+    "era": "Drop each website or app into the decade it launched.",
+    "eraSize": "decade"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Wikipedia",
+   "qid": "Q52",
+   "fame": 0.881,
+   "country": "United States",
+   "launched": 2001,
+   "description": "free multilingual online encyclopedia",
+   "hook": "is a free online encyclopedia that anyone can edit",
+   "known": 0.95,
+   "kind": "reference-wiki"
+  },
+  {
+   "label": "Facebook",
+   "qid": "Q355",
+   "fame": 0.824,
+   "country": "United States",
+   "launched": 2004,
+   "description": "American online social media and social networking service",
+   "hook": "is the giant social network where people share status updates and photos with friends",
+   "known": 0.95,
+   "kind": "social-media"
+  },
+  {
+   "label": "Spotify",
+   "qid": "Q689141",
+   "fame": 0.646,
+   "country": "Sweden",
+   "launched": 2006,
+   "description": "Swedish audio streaming service",
+   "hook": "is a streaming service where listeners play millions of songs and podcasts",
+   "known": 0.95,
+   "kind": "streaming"
+  },
+  {
+   "label": "Rotten Tomatoes",
+   "qid": "Q105584",
+   "fame": 0.638,
+   "country": "United States",
+   "launched": 1998,
+   "description": "American review aggregator for film and television",
+   "hook": "rates movies with a splat or fresh-tomato percentage score from critics",
+   "known": 0.7,
+   "kind": "review"
+  },
+  {
+   "label": "Metacritic",
+   "qid": "Q150248",
+   "fame": 0.568,
+   "country": "United States",
+   "launched": 2001,
+   "description": "website that aggregates reviews of music albums, games, movies, TV shows, DVDs, and formerly, books",
+   "hook": "collects critics' reviews into a single weighted score for games, films and albums",
+   "known": 0.5,
+   "kind": "review"
+  },
+  {
+   "label": "Wikiquote",
+   "qid": "Q369",
+   "fame": 0.563,
+   "country": "United States",
+   "launched": 2003,
+   "description": "free multilingual online collection of quotes",
+   "hook": "is a free collection of famous sayings and what notable people said",
+   "known": 0.3,
+   "kind": "reference-wiki"
+  },
+  {
+   "label": "Proton Mail",
+   "qid": "Q17355735",
+   "fame": 0.55,
+   "country": "Switzerland",
+   "launched": 2013,
+   "description": "end-to-end encrypted e-mail service from Proton AG",
+   "hook": "is a privacy-focused email service that encrypts messages so only the sender and recipient can read them",
+   "known": 0.2,
+   "kind": "messaging"
+  },
+  {
+   "label": "VLC media player",
+   "qid": "Q171477",
+   "fame": 0.546,
+   "country": "France",
+   "launched": 1996,
+   "description": "media player, streaming client, streaming media server, and audio and video converter (transcoder), free/libre and open-source cross-platform software",
+   "hook": "is a free app with an orange traffic-cone icon that opens almost any video file",
+   "known": 0.6,
+   "kind": "utility"
+  },
+  {
+   "label": "Crunchyroll",
+   "qid": "Q1142035",
+   "fame": 0.532,
+   "country": "United States",
+   "launched": 2006,
+   "description": "American video streaming service",
+   "hook": "is a streaming site that is a go-to home for anime",
+   "known": 0.5,
+   "kind": "streaming"
+  },
+  {
+   "label": "Napster",
+   "qid": "Q275141",
+   "fame": 0.532,
+   "country": "United States",
+   "launched": 1999,
+   "description": "online music service",
+   "hook": "let people swap music files until lawsuits from the record industry shut it down",
+   "known": 0.3,
+   "kind": "specialty"
+  },
+  {
+   "label": "Threads",
+   "qid": "Q120281745",
+   "fame": 0.516,
+   "country": "United States",
+   "launched": 2023,
+   "description": "social networking site operated by Meta Platforms",
+   "hook": "is a text-based social app launched as a rival to Twitter by the owner of Facebook",
+   "known": 0.4,
+   "kind": "social-media"
+  },
+  {
+   "label": "Wiktionary",
+   "qid": "Q151",
+   "fame": 0.512,
+   "country": "United States",
+   "launched": 2002,
+   "description": "free online multilingual dictionary",
+   "hook": "is a free online dictionary written by volunteers",
+   "known": 0.4,
+   "kind": "reference-wiki"
+  },
+  {
+   "label": "WeChat",
+   "qid": "Q283233",
+   "fame": 0.51,
+   "country": "China",
+   "launched": 2011,
+   "description": "messaging, social media, and payment app developed by Tencent",
+   "hook": "is the all-in-one app used for chatting, social posts and paying at shops",
+   "known": 0.3,
+   "kind": "social-media"
+  },
+  {
+   "label": "OpenStreetMap",
+   "qid": "Q936",
+   "fame": 0.507,
+   "country": "United Kingdom",
+   "launched": 2004,
+   "description": "online collaborative project creating a world geographic database",
+   "hook": "is a free, volunteer-made map of the world, often called the Wikipedia of maps",
+   "known": 0.2,
+   "kind": "navigation"
+  },
+  {
+   "label": "VK",
+   "qid": "Q116933",
+   "fame": 0.5,
+   "country": "Russia",
+   "launched": 2006,
+   "description": "social networking service from Russia",
+   "hook": "is a social network often called the Facebook of its home region",
+   "known": 0.1,
+   "kind": "social-media"
+  },
+  {
+   "label": "Flightradar24",
+   "qid": "Q1164485",
+   "fame": 0.498,
+   "country": "Sweden",
+   "launched": 2006,
+   "description": "Swedish internet-based service that shows real-time aircraft flight tracking information on a map",
+   "hook": "is a site that lets anyone watch live planes moving across a world map",
+   "known": 0.1,
+   "kind": "specialty"
+  },
+  {
+   "label": "Wikimedia Commons",
+   "qid": "Q565",
+   "fame": 0.491,
+   "country": "United States",
+   "launched": 2004,
+   "description": "online repository of free-use image, audio, and other media files",
+   "hook": "is a free archive of photos, sounds and videos that supplies pictures for encyclopedia articles",
+   "known": 0.2,
+   "kind": "reference-wiki"
+  },
+  {
+   "label": "Tencent QQ",
+   "qid": "Q857640",
+   "fame": 0.479,
+   "country": "China",
+   "launched": 1999,
+   "description": "instant messaging software service",
+   "hook": "is a hugely popular instant messenger with a little penguin as its logo",
+   "known": 0.05,
+   "kind": "messaging"
+  },
+  {
+   "label": "YouTube Premium",
+   "qid": "Q18643737",
+   "fame": 0.477,
+   "country": "United States",
+   "launched": 2014,
+   "description": "paid streaming subscription service",
+   "hook": "is a paid upgrade that removes ads from videos and adds background playback",
+   "known": 0.7,
+   "kind": "streaming"
+  },
+  {
+   "label": "Wikisource",
+   "qid": "Q263",
+   "fame": 0.472,
+   "country": "United States",
+   "launched": 2003,
+   "description": "online multilingual library that collects open-content source material",
+   "hook": "is a free digital library of books, speeches and historical documents",
+   "known": 0.1,
+   "kind": "reference-wiki"
+  },
+  {
+   "label": "arXiv",
+   "qid": "Q118398",
+   "fame": 0.465,
+   "country": "United States",
+   "launched": 1991,
+   "description": "online digital archive for electronic preprints of scientific papers",
+   "hook": "is the free site where scientists post research papers before they are peer reviewed",
+   "known": 0.05,
+   "kind": "specialty"
+  },
+  {
+   "label": "xkcd",
+   "qid": "Q13915",
+   "fame": 0.459,
+   "country": "United States",
+   "launched": 2005,
+   "description": "webcomic created by Randall Munroe",
+   "hook": "is a webcomic of stick figures covering science, math and geek humor",
+   "known": 0.2,
+   "kind": "specialty"
+  }
+ ]
+}

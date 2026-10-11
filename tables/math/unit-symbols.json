@@ -1,0 +1,327 @@
+{
+ "id": "table.math.unit-symbols",
+ "kind": "table",
+ "title": "Units and their symbols",
+ "genre": "science-math-tech",
+ "category": "math",
+ "topic": "units",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?sym WHERE { VALUES ?item { wd:Q12438 wd:Q25236 wd:Q25269 wd:Q44395 wd:Q11579 wd:Q25272 wd:Q25250 wd:Q47083 wd:Q39369 wd:Q25406 wd:Q131255 wd:Q163354 wd:Q163343 wd:Q170804 wd:Q169893 wd:Q102573 wd:Q190095 wd:Q103246 wd:Q484092 wd:Q179836 wd:Q83216 wd:Q33680 wd:Q25267 wd:Q42289 wd:Q5329 wd:Q128822 wd:Q253276 wd:Q3710 wd:Q218593 wd:Q482798 wd:Q100995 wd:Q48013 wd:Q41803 wd:Q191118 wd:Q8799 wd:Q8805 wd:Q12129 wd:Q531 wd:Q83327 wd:Q483261 wd:Q178413 wd:Q81292 wd:Q11582 wd:Q35852 wd:Q11573 wd:Q11570 wd:Q11574 wd:Q7727 wd:Q25235 wd:Q828224 wd:Q11229 wd:Q182429 wd:Q25343 wd:Q11570 wd:Q79726 wd:Q79738 wd:Q1811 wd:Q4917 wd:Q12129 wd:Q47083 wd:Q182098 wd:Q4593291 wd:Q11648 wd:Q41509 } ?item wdt:P5061 ?sym . FILTER(LANG(?sym)=\"en\") OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T01:10:36.921Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T01:10:36.921Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "symbol",
+   "label": "Symbol",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "unit",
+  "many": "units",
+  "columns": {
+   "symbol": {
+    "role": "code",
+    "pick": "What is the standard symbol for the {label}?",
+    "statement": "The symbol for the {label} is {value}.",
+    "match": "Match each unit to its symbol.",
+    "reverse": "Which unit has the symbol {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "parsec",
+   "qid": "Q12129",
+   "fame": 0.556,
+   "symbol": "pc",
+   "description": "unit of length used in astronomy",
+   "hook": "measures the vast gaps between stars, equal to about 3.26 light-years",
+   "known": 0.2,
+   "kind": "distance"
+  },
+  {
+   "label": "joule",
+   "qid": "Q25269",
+   "fame": 0.553,
+   "symbol": "J",
+   "description": "SI unit of energy, work and amount of heat",
+   "hook": "measures energy and is named after an English brewer-turned-physicist",
+   "known": 0.6,
+   "kind": "physics"
+  },
+  {
+   "label": "degree Fahrenheit",
+   "qid": "Q42289",
+   "fame": 0.545,
+   "symbol": "°F",
+   "description": "unit of temperature",
+   "hook": "measures temperature on the scale where water freezes at 32 and boils at 212",
+   "known": 0.6,
+   "kind": "temperature"
+  },
+  {
+   "label": "degree Celsius",
+   "qid": "Q25267",
+   "fame": 0.533,
+   "symbol": "°C",
+   "description": "SI unit of Celsius temperature",
+   "hook": "measures temperature on the scale where water freezes at zero and boils at 100",
+   "known": 0.85,
+   "kind": "temperature"
+  },
+  {
+   "label": "kelvin",
+   "qid": "Q11579",
+   "fame": 0.529,
+   "symbol": "K",
+   "description": "SI unit of thermodynamic temperature",
+   "hook": "measures temperature on a scale that starts at absolute zero",
+   "known": 0.3,
+   "kind": "temperature"
+  },
+  {
+   "label": "decibel",
+   "qid": "Q5329",
+   "fame": 0.526,
+   "symbol": "dB",
+   "description": "logarithmic unit expressing the ratio of a physical quantity",
+   "hook": "measures how loud a sound is, on a logarithmic scale",
+   "known": 0.5,
+   "kind": "light-sound"
+  },
+  {
+   "label": "metre",
+   "qid": "Q11573",
+   "fame": 0.521,
+   "symbol": "m",
+   "description": "SI unit of length",
+   "hook": "is the base unit of length in the metric system, a little longer than a yard",
+   "known": 0.95,
+   "kind": "distance"
+  },
+  {
+   "label": "pascal",
+   "qid": "Q44395",
+   "fame": 0.521,
+   "symbol": "Pa",
+   "description": "SI unit of pressure and stress",
+   "hook": "measures pressure and is named after a French mathematician and philosopher",
+   "known": 0.2,
+   "kind": "physics"
+  },
+  {
+   "label": "hertz",
+   "qid": "Q39369",
+   "fame": 0.52,
+   "symbol": "Hz",
+   "description": "SI unit of frequency",
+   "hook": "counts cycles per second, used for radio stations and sound pitch",
+   "known": 0.4,
+   "kind": "physics"
+  },
+  {
+   "label": "watt",
+   "qid": "Q25236",
+   "fame": 0.518,
+   "symbol": "W",
+   "description": "SI unit of power",
+   "hook": "measures electrical power and is named after the Scottish inventor who improved the steam engine",
+   "known": 0.8,
+   "kind": "physics"
+  },
+  {
+   "label": "newton",
+   "qid": "Q12438",
+   "fame": 0.514,
+   "symbol": "N",
+   "description": "SI unit of force",
+   "hook": "measures force and is named after the scientist said to have been inspired by a falling apple",
+   "known": 0.3,
+   "kind": "physics"
+  },
+  {
+   "label": "astronomical unit",
+   "qid": "Q1811",
+   "fame": 0.511,
+   "symbol": "au",
+   "description": "mean distance between Earth and the Sun, common length reference in astronomy",
+   "hook": "is roughly the distance from our planet to its star, about 150 million kilometres",
+   "known": 0.15,
+   "kind": "distance"
+  },
+  {
+   "label": "byte",
+   "qid": "Q8799",
+   "fame": 0.506,
+   "symbol": "B",
+   "description": "unit of digital information equal to 8 bits",
+   "hook": "is the amount of computer storage needed to hold a single character, made of eight bits",
+   "known": 0.9,
+   "kind": "digital"
+  },
+  {
+   "label": "knot",
+   "qid": "Q128822",
+   "fame": 0.502,
+   "symbol": "kn",
+   "description": "unit of speed",
+   "hook": "measures how fast ships and aircraft travel, one nautical mile per hour",
+   "known": 0.5,
+   "kind": "measure"
+  },
+  {
+   "label": "ampere",
+   "qid": "Q25272",
+   "fame": 0.495,
+   "symbol": "A",
+   "description": "SI unit of electric current",
+   "hook": "measures the flow of electric current and is named after a French physicist",
+   "known": 0.3,
+   "kind": "electrical"
+  },
+  {
+   "label": "hectare",
+   "qid": "Q35852",
+   "fame": 0.489,
+   "symbol": "ha",
+   "description": "metric unit of area",
+   "hook": "measures land area, equal to a 100-metre by 100-metre square",
+   "known": 0.3,
+   "kind": "measure"
+  },
+  {
+   "label": "kilogram",
+   "qid": "Q11570",
+   "fame": 0.487,
+   "symbol": "kg",
+   "description": "metric unit of mass",
+   "hook": "is the base unit of weight in the metric system, defined for years by a platinum cylinder kept in France",
+   "known": 0.95,
+   "kind": "measure"
+  },
+  {
+   "label": "mile",
+   "qid": "Q253276",
+   "fame": 0.485,
+   "symbol": "mi",
+   "description": "unit of length (on ground)",
+   "hook": "is the imperial distance a runner covers in a four-lap race on a standard track",
+   "known": 0.9,
+   "kind": "distance"
+  },
+  {
+   "label": "coulomb",
+   "qid": "Q25406",
+   "fame": 0.482,
+   "symbol": "C",
+   "description": "SI unit of electric charge",
+   "hook": "measures electric charge and is named after a French physicist who studied static attraction",
+   "known": 0.1,
+   "kind": "electrical"
+  },
+  {
+   "label": "kilometre",
+   "qid": "Q828224",
+   "fame": 0.477,
+   "symbol": "km",
+   "description": "SI unit of length equal to one thousand metres",
+   "hook": "is a thousand of the base metric length, the way road distances are given in most countries",
+   "known": 0.95,
+   "kind": "distance"
+  },
+  {
+   "label": "electronvolt",
+   "qid": "Q83327",
+   "fame": 0.468,
+   "symbol": "eV",
+   "description": "unit of energy",
+   "hook": "measures the tiny energy an electron gains crossing one volt, used in particle physics",
+   "known": 0.05,
+   "kind": "physics"
+  },
+  {
+   "label": "gigabyte",
+   "qid": "Q79738",
+   "fame": 0.464,
+   "symbol": "GB",
+   "description": "unit of digital information equal to one billion bytes or 1,000 megabytes",
+   "hook": "is how phone and computer storage is commonly sold, a thousand million of the basic data unit",
+   "known": 0.95,
+   "kind": "digital"
+  },
+  {
+   "label": "volt",
+   "qid": "Q25250",
+   "fame": 0.461,
+   "symbol": "V",
+   "description": "SI unit of electric potential, of electric potential difference (voltage), and of electromotive force",
+   "hook": "measures electrical pressure and is named after an Italian who invented the battery",
+   "known": 0.5,
+   "kind": "electrical"
+  },
+  {
+   "label": "radian",
+   "qid": "Q33680",
+   "fame": 0.459,
+   "symbol": "rad",
+   "description": "SI unit of angular measure",
+   "hook": "measures angles using the radius of a circle, with pi times two around a full turn",
+   "known": 0.15,
+   "kind": "physics"
+  },
+  {
+   "label": "foot",
+   "qid": "Q3710",
+   "fame": 0.458,
+   "symbol": "ft",
+   "description": "unit of length",
+   "hook": "is the imperial length famously twelve inches long, and how airplane altitude is reported",
+   "known": 0.85,
+   "kind": "distance"
+  },
+  {
+   "label": "lumen",
+   "qid": "Q484092",
+   "fame": 0.454,
+   "symbol": "lm",
+   "description": "SI unit of luminous flux",
+   "hook": "measures how bright a light bulb is, the total visible light it puts out",
+   "known": 0.15,
+   "kind": "light-sound"
+  },
+  {
+   "label": "litre",
+   "qid": "Q11582",
+   "fame": 0.451,
+   "symbol": "L",
+   "description": "unit of volume accepted for use with the SI",
+   "hook": "is the metric measure for soft drink bottles and milk, about a quart",
+   "known": 0.95,
+   "kind": "measure"
+  }
+ ]
+}

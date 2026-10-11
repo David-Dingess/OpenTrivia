@@ -1,0 +1,762 @@
+{
+ "id": "table.sports.combat-sports-legends-country",
+ "kind": "table",
+ "title": "Famous boxers and fighters and the country they represent",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "combat-sports",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nCountry) WHERE { VALUES ?occ { wd:Q11338576 wd:Q11124885 wd:Q1008888 } ?item wdt:P31 wd:Q5 ; wdt:P106 ?occ ; wdt:P27 ?c ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 10) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 800 } hint:Prior hint:runFirst true . FILTER(?nCountry = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T01:21:42.413Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T01:21:42.413Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "fighter",
+  "many": "fighters",
+  "wildcard": "person",
+  "hookAsk": "Which fighter {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country does the fighter {label} represent?",
+    "statement": "{label} fights for {value}.",
+    "match": "Match each fighter to the country they represent.",
+    "odd": "Three of these fighters represent {value}. Which one doesn't?",
+    "all": "Tap all {n} fighters who represent {value}.",
+    "reverse": "Which of these fighters represents {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Katie Taylor",
+   "qid": "Q262699",
+   "fame": 0.808,
+   "country": "Ireland",
+   "description": "Irish association footballer and boxer",
+   "hook": "won Olympic lightweight gold and later became undisputed champion as a professional",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Muhammad Ali",
+   "qid": "Q36107",
+   "fame": 0.751,
+   "country": "United States",
+   "description": "American boxer (1942–2016)",
+   "hook": "called himself \"The Greatest\" and won the Rumble in the Jungle in Zaire",
+   "known": 0.95,
+   "kind": "boxer"
+  },
+  {
+   "label": "Mike Tyson",
+   "qid": "Q79031",
+   "fame": 0.737,
+   "country": "United States",
+   "description": "American boxer and media personality (born 1966)",
+   "hook": "became the youngest heavyweight champion ever and once bit an opponent's ear in a title fight",
+   "known": 0.9,
+   "kind": "boxer"
+  },
+  {
+   "label": "Wladimir Klitschko",
+   "qid": "Q18797",
+   "fame": 0.709,
+   "country": "Ukraine",
+   "description": "Ukrainian boxer (born 1976)",
+   "hook": "held heavyweight belts for about a decade as a tall, dominant champion with a doctorate",
+   "known": 0.7,
+   "kind": "boxer"
+  },
+  {
+   "label": "Anthony Joshua",
+   "qid": "Q573463",
+   "fame": 0.699,
+   "country": "United Kingdom",
+   "description": "British boxer (born 1989)",
+   "hook": "won Olympic super-heavyweight gold on home soil in London before taking heavyweight titles",
+   "known": 0.6,
+   "kind": "boxer"
+  },
+  {
+   "label": "Oleksandr Usyk",
+   "qid": "Q938027",
+   "fame": 0.689,
+   "country": "Ukraine",
+   "description": "Ukrainian boxer",
+   "hook": "won Olympic gold, then became undisputed champion at both cruiserweight and heavyweight",
+   "known": 0.5,
+   "kind": "boxer"
+  },
+  {
+   "label": "Mary Kom",
+   "qid": "Q328951",
+   "fame": 0.688,
+   "country": "India",
+   "description": "Indian amateur boxer",
+   "hook": "is a mother of four who won six world amateur titles and Olympic bronze, inspiring a biopic",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Tyson Fury",
+   "qid": "Q1000592",
+   "fame": 0.685,
+   "country": "United Kingdom",
+   "description": "British boxer (born 1988)",
+   "hook": "is a giant heavyweight nicknamed the Gypsy King who ended a long unbeaten reign by a Ukrainian great",
+   "known": 0.8,
+   "kind": "boxer"
+  },
+  {
+   "label": "George Foreman",
+   "qid": "Q213919",
+   "fame": 0.679,
+   "country": "United States",
+   "description": "American professional boxer (1949–2025)",
+   "hook": "regained the heavyweight crown at age 45 and later gave his name to a famous grilling machine",
+   "known": 0.7,
+   "kind": "boxer"
+  },
+  {
+   "label": "Canelo Álvarez",
+   "qid": "Q2117769",
+   "fame": 0.676,
+   "country": "Mexico",
+   "description": "Mexican boxer",
+   "hook": "is a red-haired star who became undisputed super middleweight champion",
+   "known": 0.6,
+   "kind": "boxer"
+  },
+  {
+   "label": "Conor McGregor",
+   "qid": "Q5162259",
+   "fame": 0.676,
+   "country": "Ireland",
+   "description": "Irish boxer and mixed martial arts fighter",
+   "hook": "became the first UFC fighter to hold titles in two weight classes at once, then crossed over to boxing",
+   "known": 0.8,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Jake Paul",
+   "qid": "Q25714026",
+   "fame": 0.671,
+   "country": "United States",
+   "description": "American YouTuber and boxer (born 1997)",
+   "hook": "rose from online videos to become a boxer who has fought former MMA stars and retired champions",
+   "known": 0.5,
+   "kind": "boxer"
+  },
+  {
+   "label": "Manny Pacquiao",
+   "qid": "Q486359",
+   "fame": 0.671,
+   "country": "Philippines",
+   "description": "Filipino boxer, basketball player, singer, actor, politician and philanthropist",
+   "hook": "won world titles in a record eight weight divisions and later became a senator",
+   "known": 0.7,
+   "kind": "boxer"
+  },
+  {
+   "label": "Terence Crawford",
+   "qid": "Q7701880",
+   "fame": 0.661,
+   "country": "United States",
+   "description": "American boxer",
+   "hook": "became undisputed champion in two weight classes, switching between orthodox and southpaw stances",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Floyd Mayweather",
+   "qid": "Q318204",
+   "fame": 0.656,
+   "country": "United States",
+   "description": "American boxer",
+   "hook": "retired unbeaten at 50-0 and cashed in on a huge boxing-versus-MMA megafight",
+   "known": 0.8,
+   "kind": "boxer"
+  },
+  {
+   "label": "Ricky Hatton",
+   "qid": "Q116516",
+   "fame": 0.63,
+   "country": "United Kingdom",
+   "description": "British professional boxer (1978–2025)",
+   "hook": "was a beloved light-welterweight nicknamed the Hitman who packed stadiums with fans",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Deontay Wilder",
+   "qid": "Q933423",
+   "fame": 0.618,
+   "country": "United States",
+   "description": "American boxer",
+   "hook": "is a hard-punching heavyweight nicknamed the Bronze Bomber who held the WBC belt for years",
+   "known": 0.6,
+   "kind": "boxer"
+  },
+  {
+   "label": "Evander Holyfield",
+   "qid": "Q313451",
+   "fame": 0.615,
+   "country": "United States",
+   "description": "American boxer",
+   "hook": "is the only man to be undisputed heavyweight champion four times and once lost an ear to a bite",
+   "known": 0.5,
+   "kind": "boxer"
+  },
+  {
+   "label": "Rocky Marciano",
+   "qid": "Q188362",
+   "fame": 0.615,
+   "country": "United States",
+   "description": "American heavyweight boxing champion (1923-1969)",
+   "hook": "retired as heavyweight champion with a perfect 49-0 record",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Sean O'Malley",
+   "qid": "Q45189135",
+   "fame": 0.613,
+   "country": "United States",
+   "description": "American mixed martial artist (born 1994)",
+   "hook": "is a colorful, rainbow-haired bantamweight nicknamed Sugar who won a UFC belt",
+   "known": 0.4,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Ronda Rousey",
+   "qid": "Q242201",
+   "fame": 0.609,
+   "country": "United States",
+   "description": "American former mixed martial arts (MMA) fighter, professional wrestler, and judoka",
+   "hook": "won Olympic judo bronze, became the first UFC women's bantamweight champion and later joined WWE",
+   "known": 0.7,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Tony Ferguson",
+   "qid": "Q7822327",
+   "fame": 0.606,
+   "country": "United States",
+   "description": "American mixed martial artist (born 1984)",
+   "hook": "is an MMA lightweight known for a long winning streak and the nickname El Cucuy",
+   "known": 0.3,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Laila Ali",
+   "qid": "Q255099",
+   "fame": 0.603,
+   "country": "United States",
+   "description": "American television personality and retired professional boxer",
+   "hook": "is a super-middleweight champion who retired unbeaten and whose father was the most famous boxer alive",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Gennady Golovkin",
+   "qid": "Q1009230",
+   "fame": 0.602,
+   "country": "Kazakhstan",
+   "description": "Kazakhstani boxer",
+   "hook": "is a middleweight nicknamed GGG who scored a long streak of knockouts",
+   "known": 0.5,
+   "kind": "boxer"
+  },
+  {
+   "label": "Tommy Morrison",
+   "qid": "Q467409",
+   "fame": 0.602,
+   "country": "United States",
+   "description": "boxer (1969-2013)",
+   "hook": "played a young fighter in a Rocky sequel, then held a heavyweight belt in real life",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Joe Frazier",
+   "qid": "Q102301",
+   "fame": 0.593,
+   "country": "United States",
+   "description": "American boxer (1944–2011)",
+   "hook": "was known as Smokin' Joe and handed a famous rival his first pro loss in the Fight of the Century",
+   "known": 0.6,
+   "kind": "boxer"
+  },
+  {
+   "label": "Quinton Jackson",
+   "qid": "Q437584",
+   "fame": 0.587,
+   "country": "United States",
+   "description": "American mixed martial artist, actor and professional wrestler",
+   "hook": "is an MMA light heavyweight nicknamed Rampage who also played B.A. Baracus in a movie remake",
+   "known": 0.4,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Sugar Ray Leonard",
+   "qid": "Q335798",
+   "fame": 0.584,
+   "country": "United States",
+   "description": "American boxer",
+   "hook": "won Olympic gold, then took world titles in five weight classes and stunned a middleweight great",
+   "known": 0.6,
+   "kind": "boxer"
+  },
+  {
+   "label": "Claressa Shields",
+   "qid": "Q452598",
+   "fame": 0.583,
+   "country": "United States",
+   "description": "American boxer",
+   "hook": "won Olympic gold twice and became undisputed champion in multiple weight classes",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Jake LaMotta",
+   "qid": "Q335855",
+   "fame": 0.575,
+   "country": "United States",
+   "description": "American boxer (1922–2017)",
+   "hook": "was the Bronx Bull whose rough career inspired a Martin Scorsese film starring Robert De Niro",
+   "known": 0.5,
+   "kind": "boxer"
+  },
+  {
+   "label": "Larry Holmes",
+   "qid": "Q370932",
+   "fame": 0.569,
+   "country": "United States",
+   "description": "American boxer",
+   "hook": "was heavyweight champion for years and is remembered as the Easton Assassin",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Vasyl Lomachenko",
+   "qid": "Q1402369",
+   "fame": 0.568,
+   "country": "Ukraine",
+   "description": "Ukrainian boxer",
+   "hook": "is a two-time Olympic gold medalist nicknamed Hi-Tech, famed for dizzying footwork",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Joe Louis",
+   "qid": "Q273206",
+   "fame": 0.565,
+   "country": "United States",
+   "description": "American boxer (1914-1981)",
+   "hook": "was the Brown Bomber who held the heavyweight title for a record 11 years",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Max Baer",
+   "qid": "Q448481",
+   "fame": 0.565,
+   "country": "United States",
+   "description": "American boxer (1909–1959)",
+   "hook": "was a heavyweight who beat a German champion before World War II and later acted in Hollywood",
+   "known": 0.2,
+   "kind": "boxer"
+  },
+  {
+   "label": "Roberto Durán",
+   "qid": "Q471571",
+   "fame": 0.564,
+   "country": "Panama",
+   "description": "Panamanian boxer",
+   "hook": "was nicknamed Hands of Stone and won titles in four weight classes",
+   "known": 0.5,
+   "kind": "boxer"
+  },
+  {
+   "label": "James J. Braddock",
+   "qid": "Q317017",
+   "fame": 0.562,
+   "country": "United States",
+   "description": "American boxer (1905-1974)",
+   "hook": "was nicknamed the Cinderella Man after a comeback from the Great Depression",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Sonny Liston",
+   "qid": "Q313684",
+   "fame": 0.562,
+   "country": "United States",
+   "description": "American boxer (c. 1930–1970)",
+   "hook": "was a menacing heavyweight champion beaten by a young Cassius Clay",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Sugar Ray Robinson",
+   "qid": "Q316706",
+   "fame": 0.561,
+   "country": "United States",
+   "description": "American boxer (1921–1989)",
+   "hook": "is widely considered the greatest pound-for-pound boxer ever, and gave his name to a style",
+   "known": 0.5,
+   "kind": "boxer"
+  },
+  {
+   "label": "Henry Cejudo",
+   "qid": "Q933481",
+   "fame": 0.555,
+   "country": "United States",
+   "description": "American mixed martial artist and wrestler (born 1987)",
+   "hook": "won Olympic wrestling gold, then became a two-division UFC champion",
+   "known": 0.5,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Joe Calzaghe",
+   "qid": "Q471383",
+   "fame": 0.549,
+   "country": "United Kingdom",
+   "description": "Welsh boxer",
+   "hook": "retired unbeaten as a super-middleweight champion with a 46-0 record",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Buster Douglas",
+   "qid": "Q536007",
+   "fame": 0.545,
+   "country": "United States",
+   "description": "American boxer",
+   "hook": "knocked out an unbeaten, feared heavyweight in one of the biggest upsets in sports history",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Julio César Chávez",
+   "qid": "Q471461",
+   "fame": 0.543,
+   "country": "Mexico",
+   "description": "Professional Mexican boxer",
+   "hook": "went unbeaten for 13 years and won world titles in three weight classes",
+   "known": 0.6,
+   "kind": "boxer"
+  },
+  {
+   "label": "Amir Khan",
+   "qid": "Q469870",
+   "fame": 0.54,
+   "country": "United Kingdom",
+   "description": "British boxer",
+   "hook": "won Olympic silver as a teenager and later became a light-welterweight champion",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Mirko Cro Cop",
+   "qid": "Q354790",
+   "fame": 0.54,
+   "country": "Croatia",
+   "description": "Croatian mixed martial artist, kickboxer and law enforcement officer",
+   "hook": "was a kickboxer and MMA heavyweight whose left high kick was legendary",
+   "known": 0.4,
+   "kind": "kickboxer"
+  },
+  {
+   "label": "Bernard Hopkins",
+   "qid": "Q531804",
+   "fame": 0.538,
+   "country": "United States",
+   "description": "American boxer",
+   "hook": "was nicknamed The Executioner and fought professionally into his late forties",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Jack Dempsey",
+   "qid": "Q313686",
+   "fame": 0.538,
+   "country": "United States",
+   "description": "American boxer (1895-1983)",
+   "hook": "was the Manassa Mauler, a heavyweight champion of the 1920s who drew the first million-dollar gates",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Jack Johnson",
+   "qid": "Q316689",
+   "fame": 0.537,
+   "country": "United States",
+   "description": "American boxer (1878–1946)",
+   "hook": "was the first Black world heavyweight champion and faced a hostile backlash for it",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Thomas Hearns",
+   "qid": "Q560409",
+   "fame": 0.531,
+   "country": "United States",
+   "description": "American boxer",
+   "hook": "was known as the Hitman and Motor City Cobra, with a long reach and hard right hand",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Marvelous Marvin Hagler",
+   "qid": "Q560421",
+   "fame": 0.528,
+   "country": "United States",
+   "description": "American boxer (1954–2021)",
+   "hook": "was a shaven-headed middleweight champion who ruled the division for seven years",
+   "known": 0.5,
+   "kind": "boxer"
+  },
+  {
+   "label": "Leon Spinks",
+   "qid": "Q471824",
+   "fame": 0.527,
+   "country": "United States",
+   "description": "American boxer (1953–2021)",
+   "hook": "beat a legendary champion to take the heavyweight title in just his eighth pro fight",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Riddick Bowe",
+   "qid": "Q708185",
+   "fame": 0.519,
+   "country": "United States",
+   "description": "American boxer (born 1967)",
+   "hook": "held heavyweight gold and won a famous trilogy against a four-time champion",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Andre Ward",
+   "qid": "Q493263",
+   "fame": 0.513,
+   "country": "United States",
+   "description": "American boxer",
+   "hook": "won Olympic gold and retired unbeaten as a super-middleweight and light-heavyweight champion",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Jorge Masvidal",
+   "qid": "Q6136509",
+   "fame": 0.511,
+   "country": "United States",
+   "description": "American mixed martial arts fighter",
+   "hook": "is a welterweight known for the fastest knockout in UFC history and a BMF title",
+   "known": 0.5,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Floyd Patterson",
+   "qid": "Q314051",
+   "fame": 0.51,
+   "country": "United States",
+   "description": "American heavyweight boxer (1935-2006)",
+   "hook": "became the youngest heavyweight champion at his time and later regained the belt after losing it",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Frank Bruno",
+   "qid": "Q530220",
+   "fame": 0.509,
+   "country": "United Kingdom",
+   "description": "British boxer",
+   "hook": "was a heavyweight challenger and a beloved figure on British TV and in pantomime",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Ken Norton",
+   "qid": "Q707814",
+   "fame": 0.509,
+   "country": "United States",
+   "description": "American boxer (1943-2013)",
+   "hook": "broke a legendary champion's jaw in a fight and beat him on points",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "David Haye",
+   "qid": "Q312649",
+   "fame": 0.501,
+   "country": "United Kingdom",
+   "description": "British boxer",
+   "hook": "moved up from cruiserweight to win a heavyweight belt against a 7-foot giant",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Nick Diaz",
+   "qid": "Q919177",
+   "fame": 0.499,
+   "country": "United States",
+   "description": "American mixed martial artist",
+   "hook": "is a Stockton MMA fighter known for boxing-style striking, trash talk and triathlon training",
+   "known": 0.3,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Andrew Golota",
+   "qid": "Q204899",
+   "fame": 0.496,
+   "country": "Poland",
+   "description": "Polish boxer",
+   "hook": "was disqualified for repeated low blows in a chaotic heavyweight fight that ended in a riot",
+   "known": 0.2,
+   "kind": "boxer"
+  },
+  {
+   "label": "Arturo Gatti",
+   "qid": "Q381484",
+   "fame": 0.487,
+   "country": "Canada",
+   "description": "Canadian boxer (1972–2009)",
+   "hook": "was nicknamed Thunder and known for three bloody, brutal wars with Micky Ward",
+   "known": 0.2,
+   "kind": "boxer"
+  },
+  {
+   "label": "Hasim Rahman",
+   "qid": "Q503972",
+   "fame": 0.487,
+   "country": "United States",
+   "description": "American boxer",
+   "hook": "shocked the boxing world by knocking out Lennox Lewis to win the heavyweight title",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Juan Manuel Márquez Méndez",
+   "qid": "Q557497",
+   "fame": 0.483,
+   "country": "Mexico",
+   "description": "Mexican boxer",
+   "hook": "fought Manny Pacquiao four times and ended the saga with a stunning knockout",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Nikolai Valuev",
+   "qid": "Q508929",
+   "fame": 0.483,
+   "country": "Russia",
+   "description": "Russian politician and former heavyweight boxer",
+   "hook": "stood over seven feet tall, the biggest man ever to win a heavyweight boxing title",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Holly Holm",
+   "qid": "Q2414305",
+   "fame": 0.48,
+   "country": "United States",
+   "description": "American boxer and mixed martial artist (born 1981)",
+   "hook": "won a UFC title by knocking out Ronda Rousey with a head kick",
+   "known": 0.4,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Shane Mosley",
+   "qid": "Q559462",
+   "fame": 0.475,
+   "country": "United States",
+   "description": "American boxer",
+   "hook": "was nicknamed Sugar and twice beat Oscar De La Hoya in big welterweight fights",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Antonio Tarver",
+   "qid": "Q580514",
+   "fame": 0.471,
+   "country": "United States",
+   "description": "American professional boxer",
+   "hook": "beat Roy Jones Jr. and played a boxing champ in the final Rocky film",
+   "known": 0.3,
+   "kind": "boxer"
+  },
+  {
+   "label": "Buakaw Banchamek",
+   "qid": "Q366494",
+   "fame": 0.471,
+   "country": "Thailand",
+   "description": "Thai kickboxer",
+   "hook": "is the best-known Muay Thai fighter in the world and a K-1 World MAX champion",
+   "known": 0.3,
+   "kind": "kickboxer"
+  },
+  {
+   "label": "Donald Cerrone",
+   "qid": "Q2057895",
+   "fame": 0.469,
+   "country": "United States",
+   "description": "American mixed martial artist",
+   "hook": "goes by Cowboy and holds the record for most fights and wins in UFC history",
+   "known": 0.4,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Vitor Belfort",
+   "qid": "Q458716",
+   "fame": 0.459,
+   "country": "Brazil",
+   "description": "Brazilian mixed martial artist",
+   "hook": "won a UFC tournament as a teenager and earned the nickname The Phenom",
+   "known": 0.3,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Henry Cooper",
+   "qid": "Q381694",
+   "fame": 0.451,
+   "country": "United Kingdom",
+   "description": "British boxer (1934–2011)",
+   "hook": "knocked down a young Muhammad Ali with a famous left hook",
+   "known": 0.3,
+   "kind": "boxer"
+  }
+ ]
+}

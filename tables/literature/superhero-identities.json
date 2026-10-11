@@ -1,0 +1,470 @@
+{
+ "id": "table.literature.superhero-identities",
+ "kind": "table",
+ "title": "Superhero identities: who is behind the mask",
+ "genre": "arts-entertainment",
+ "category": "literature",
+ "topic": "comics-and-manga",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?identityLabel WHERE { VALUES (?article ?itemLabel ?identityLabel) { (<https://en.wikipedia.org/wiki/Batman> \"Batman\" \"Bruce Wayne\") (<https://en.wikipedia.org/wiki/Superman> \"Superman\" \"Clark Kent\") (<https://en.wikipedia.org/wiki/Spider-Man> \"Spider-Man\" \"Peter Parker\") (<https://en.wikipedia.org/wiki/Iron_Man> \"Iron Man\" \"Tony Stark\") (<https://en.wikipedia.org/wiki/Hulk_(comics)> \"Hulk\" \"Bruce Banner\") (<https://en.wikipedia.org/wiki/Captain_America> \"Captain America\" \"Steve Rogers\") (<https://en.wikipedia.org/wiki/Wonder_Woman> \"Wonder Woman\" \"Diana Prince\") (<https://en.wikipedia.org/wiki/Aquaman> \"Aquaman\" \"Arthur Curry\") (<https://en.wikipedia.org/wiki/Daredevil_(Marvel_Comics_character)> \"Daredevil\" \"Matt Murdock\") (<https://en.wikipedia.org/wiki/Black_Panther_(character)> \"Black Panther\" \"T'Challa\") (<https://en.wikipedia.org/wiki/Green_Arrow> \"Green Arrow\" \"Oliver Queen\") (<https://en.wikipedia.org/wiki/Nightwing> \"Nightwing\" \"Dick Grayson\") (<https://en.wikipedia.org/wiki/Catwoman> \"Catwoman\" \"Selina Kyle\") (<https://en.wikipedia.org/wiki/Shazam_(character)> \"Shazam\" \"Billy Batson\") (<https://en.wikipedia.org/wiki/Cyborg_(DC_Comics)> \"Cyborg\" \"Victor Stone\") (<https://en.wikipedia.org/wiki/Martian_Manhunter> \"Martian Manhunter\" \"J'onn J'onzz\") (<https://en.wikipedia.org/wiki/Cyclops_(Marvel_Comics)> \"Cyclops\" \"Scott Summers\") (<https://en.wikipedia.org/wiki/Storm_(Marvel_Comics)> \"Storm\" \"Ororo Munroe\") (<https://en.wikipedia.org/wiki/Beast_(Marvel_Comics)> \"Beast\" \"Hank McCoy\") (<https://en.wikipedia.org/wiki/Nightcrawler_(comics)> \"Nightcrawler\" \"Kurt Wagner\") (<https://en.wikipedia.org/wiki/Gambit_(Marvel_Comics)> \"Gambit\" \"Remy LeBeau\") (<https://en.wikipedia.org/wiki/Mister_Fantastic> \"Mister Fantastic\" \"Reed Richards\") (<https://en.wikipedia.org/wiki/Invisible_Woman> \"Invisible Woman\" \"Sue Storm\") (<https://en.wikipedia.org/wiki/Human_Torch> \"Human Torch\" \"Johnny Storm\") (<https://en.wikipedia.org/wiki/Thing_(comics)> \"The Thing\" \"Ben Grimm\") (<https://en.wikipedia.org/wiki/Deadpool> \"Deadpool\" \"Wade Wilson\") (<https://en.wikipedia.org/wiki/Punisher> \"Punisher\" \"Frank Castle\") (<https://en.wikipedia.org/wiki/Silver_Surfer> \"Silver Surfer\" \"Norrin Radd\") (<https://en.wikipedia.org/wiki/Venom_(Marvel_Comics_character)> \"Venom\" \"Eddie Brock\") (<https://en.wikipedia.org/wiki/Green_Goblin> \"Green Goblin\" \"Norman Osborn\") (<https://en.wikipedia.org/wiki/Doctor_Octopus> \"Doctor Octopus\" \"Otto Octavius\") (<https://en.wikipedia.org/wiki/Scarlet_Witch> \"Scarlet Witch\" \"Wanda Maximoff\") (<https://en.wikipedia.org/wiki/Quicksilver_(Marvel_Comics)> \"Quicksilver\" \"Pietro Maximoff\") (<https://en.wikipedia.org/wiki/Falcon_(comics)> \"Falcon\" \"Sam Wilson\") (<https://en.wikipedia.org/wiki/Winter_Soldier> \"Winter Soldier\" \"Bucky Barnes\") (<https://en.wikipedia.org/wiki/War_Machine> \"War Machine\" \"James Rhodes\") (<https://en.wikipedia.org/wiki/Blade_(comics)> \"Blade\" \"Eric Brooks\") (<https://en.wikipedia.org/wiki/Spawn_(comics)> \"Spawn\" \"Al Simmons\") (<https://en.wikipedia.org/wiki/Zorro> \"Zorro\" \"Diego de la Vega\") (<https://en.wikipedia.org/wiki/The_Phantom> \"The Phantom\" \"Kit Walker\") (<https://en.wikipedia.org/wiki/The_Shadow> \"The Shadow\" \"Lamont Cranston\") (<https://en.wikipedia.org/wiki/Green_Hornet> \"Green Hornet\" \"Britt Reid\") (<https://en.wikipedia.org/wiki/Harley_Quinn> \"Harley Quinn\" \"Harleen Quinzel\") (<https://en.wikipedia.org/wiki/Poison_Ivy_(character)> \"Poison Ivy\" \"Pamela Isley\") (<https://en.wikipedia.org/wiki/Two-Face> \"Two-Face\" \"Harvey Dent\") (<https://en.wikipedia.org/wiki/Penguin_(character)> \"Penguin\" \"Oswald Cobblepot\") (<https://en.wikipedia.org/wiki/Riddler> \"Riddler\" \"Edward Nygma\") (<https://en.wikipedia.org/wiki/Doctor_Doom> \"Doctor Doom\" \"Victor von Doom\") (<https://en.wikipedia.org/wiki/Mr._Freeze> \"Mr. Freeze\" \"Victor Fries\") (<https://en.wikipedia.org/wiki/Kick-Ass_(character)> \"Kick-Ass\" \"Dave Lizewski\") (<https://en.wikipedia.org/wiki/Lone_Ranger> \"Lone Ranger\" \"John Reid\") (<https://en.wikipedia.org/wiki/Mr._Incredible> \"Mr. Incredible\" \"Bob Parr\") (<https://en.wikipedia.org/wiki/Elastigirl> \"Elastigirl\" \"Helen Parr\") (<https://en.wikipedia.org/wiki/Frozone> \"Frozone\" \"Lucius Best\") } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T04:47:25.022Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T04:47:25.022Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "identity",
+   "label": "Secret identity",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "hero",
+  "many": "heroes",
+  "theLabels": [
+   "Punisher",
+   "Riddler",
+   "Penguin",
+   "Lone Ranger",
+   "Falcon",
+   "Beast",
+   "Human Torch",
+   "Silver Surfer",
+   "Martian Manhunter"
+  ],
+  "hookAsk": "Which comic character {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "identity": {
+    "role": "code",
+    "pick": "What is the secret identity of {label}?",
+    "statement": "{label}'s secret identity is {value}.",
+    "match": "Match each hero to their secret identity.",
+    "reverse": "Which hero is secretly {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Spider-Man",
+   "qid": "Q79037",
+   "fame": 0.727,
+   "identity": "Peter Parker",
+   "description": "fictional character in Marvel Comics",
+   "hook": "was created by Stan Lee and Steve Ditko and is among the most popular superheroes ever",
+   "known": 0.95,
+   "kind": "hero"
+  },
+  {
+   "label": "Doctor Doom",
+   "qid": "Q430178",
+   "fame": 0.71,
+   "identity": "Victor von Doom",
+   "description": "fictional character in Marvel Comics",
+   "hook": "is a Marvel supervillain created by Stan Lee and Jack Kirby, one of the company's most used villains",
+   "known": 0.5,
+   "kind": "villain"
+  },
+  {
+   "label": "Batman",
+   "qid": "Q2695156",
+   "fame": 0.667,
+   "identity": "Bruce Wayne",
+   "description": "fictional character in DC Comics",
+   "hook": "is a DC hero created by Bill Finger and Bob Kane who is a wealthy industrialist in Gotham City",
+   "known": 0.95,
+   "kind": "hero"
+  },
+  {
+   "label": "Martian Manhunter",
+   "qid": "Q675179",
+   "fame": 0.66,
+   "identity": "J'onn J'onzz",
+   "description": "fictional superhero that appears in DC Comics' publications",
+   "hook": null,
+   "known": 0.2,
+   "kind": "hero"
+  },
+  {
+   "label": "Superman",
+   "qid": "Q79015",
+   "fame": 0.641,
+   "identity": "Clark Kent",
+   "description": "superhero appearing in DC Comics publications",
+   "hook": "is the archetypal superhero, created by Jerry Siegel and Joe Shuster for Action Comics",
+   "known": 0.95,
+   "kind": "hero"
+  },
+  {
+   "label": "Captain America",
+   "qid": "Q190679",
+   "fame": 0.611,
+   "identity": "Steve Rogers",
+   "description": "fictional character in Marvel Comics",
+   "hook": "was created by Joe Simon and Jack Kirby as a frail man rejected by the army who is enhanced to peak human form",
+   "known": 0.8,
+   "kind": "hero"
+  },
+  {
+   "label": "Scarlet Witch",
+   "qid": "Q929285",
+   "fame": 0.609,
+   "identity": "Wanda Maximoff",
+   "description": "fictional character in Marvel Comics",
+   "hook": "is a Marvel mutant who manipulates probability and later becomes a sorceress wielding chaos magic",
+   "known": 0.5,
+   "kind": "hero"
+  },
+  {
+   "label": "Deadpool",
+   "qid": "Q1631090",
+   "fame": 0.605,
+   "identity": "Wade Wilson",
+   "description": "fictional character in Marvel Comics",
+   "hook": "first appeared as a supervillain in The New Mutants before starring in his own solo comics",
+   "known": 0.6,
+   "kind": "hero"
+  },
+  {
+   "label": "Punisher",
+   "qid": "Q729150",
+   "fame": 0.605,
+   "identity": "Frank Castle",
+   "description": "fictional character in Marvel Comics",
+   "hook": null,
+   "known": 0.4,
+   "kind": "hero"
+  },
+  {
+   "label": "Iron Man",
+   "qid": "Q180704",
+   "fame": 0.604,
+   "identity": "Tony Stark",
+   "description": "fictional character in Marvel Comics",
+   "hook": "is a founding member of the Avengers, co-created by Stan Lee and Larry Lieber",
+   "known": 0.8,
+   "kind": "hero"
+  },
+  {
+   "label": "Wonder Woman",
+   "qid": "Q338430",
+   "fame": 0.604,
+   "identity": "Diana Prince",
+   "description": "superhero appearing in DC Comics publications and related media",
+   "hook": "is a DC heroine created by psychologist William Moulton Marston in All Star Comics",
+   "known": 0.8,
+   "kind": "hero"
+  },
+  {
+   "label": "Cyclops",
+   "qid": "Q857921",
+   "fame": 0.579,
+   "identity": "Scott Summers",
+   "description": "fictional character in Marvel Comics",
+   "hook": null,
+   "known": 0.3,
+   "kind": "hero"
+  },
+  {
+   "label": "Gambit",
+   "qid": "Q2639150",
+   "fame": 0.577,
+   "identity": "Remy LeBeau",
+   "description": "fictional character in Marvel Comics",
+   "hook": null,
+   "known": 0.2,
+   "kind": "hero"
+  },
+  {
+   "label": "Harley Quinn",
+   "qid": "Q849477",
+   "fame": 0.576,
+   "identity": "Harleen Quinzel",
+   "description": "fictional character in DC Comics",
+   "hook": "began as the Joker's henchwoman in an animated series before becoming a recurring favorite",
+   "known": 0.5,
+   "kind": "villain"
+  },
+  {
+   "label": "Catwoman",
+   "qid": "Q158952",
+   "fame": 0.562,
+   "identity": "Selina Kyle",
+   "description": "fictional character associated with DC Comics' Batman franchise",
+   "hook": "is Batman's best-known love interest and one of his most prominent enemies",
+   "known": 0.6,
+   "kind": "villain"
+  },
+  {
+   "label": "Storm",
+   "qid": "Q632212",
+   "fame": 0.557,
+   "identity": "Ororo Munroe",
+   "description": "fictional character in Marvel Comics",
+   "hook": "is a powerful X-Men mutant who can control the weather and atmosphere",
+   "known": 0.4,
+   "kind": "hero"
+  },
+  {
+   "label": "Zorro",
+   "qid": "Q226822",
+   "fame": 0.552,
+   "identity": "Diego de la Vega",
+   "description": "fictional character",
+   "hook": "is a dashing masked vigilante who defends the common people of old California",
+   "known": 0.6,
+   "kind": "hero"
+  },
+  {
+   "label": "Silver Surfer",
+   "qid": "Q95153",
+   "fame": 0.55,
+   "identity": "Norrin Radd",
+   "description": "fictional character in Marvel Comics",
+   "hook": null,
+   "known": 0.3,
+   "kind": "hero"
+  },
+  {
+   "label": "Daredevil",
+   "qid": "Q327553",
+   "fame": 0.549,
+   "identity": "Matt Murdock",
+   "description": "fictional character in Marvel Comics",
+   "hook": "is one of the best-known blind superheroes in American comics, with enhanced senses",
+   "known": 0.5,
+   "kind": "hero"
+  },
+  {
+   "label": "Riddler",
+   "qid": "Q836789",
+   "fame": 0.549,
+   "identity": "Edward Nygma",
+   "description": "fictional character, a comic book supervillain who appears in comic books published by DC Comics",
+   "hook": null,
+   "known": 0.3,
+   "kind": "villain"
+  },
+  {
+   "label": "Beast",
+   "qid": "Q302186",
+   "fame": 0.54,
+   "identity": "Hank McCoy",
+   "description": "fictional character in Marvel Comics",
+   "hook": null,
+   "known": 0.3,
+   "kind": "hero"
+  },
+  {
+   "label": "Two-Face",
+   "qid": "Q295599",
+   "fame": 0.537,
+   "identity": "Harvey Dent",
+   "description": "villain in the DC Comics universe",
+   "hook": "is one of Batman's most enduring enemies, a supervillain in his rogues gallery",
+   "known": 0.4,
+   "kind": "villain"
+  },
+  {
+   "label": "Quicksilver",
+   "qid": "Q929273",
+   "fame": 0.533,
+   "identity": "Pietro Maximoff",
+   "description": "fictional character in Marvel Comics",
+   "hook": null,
+   "known": 0.3,
+   "kind": "hero"
+  },
+  {
+   "label": "Aquaman",
+   "qid": "Q623059",
+   "fame": 0.532,
+   "identity": "Arthur Curry",
+   "description": "comic book superhero",
+   "hook": "is a DC hero and founding member of the Justice League who debuted in More Fun Comics",
+   "known": 0.6,
+   "kind": "hero"
+  },
+  {
+   "label": "Poison Ivy",
+   "qid": "Q375671",
+   "fame": 0.528,
+   "identity": "Pamela Isley",
+   "description": "fictional character throughout the DC Universe",
+   "hook": null,
+   "known": 0.3,
+   "kind": "villain"
+  },
+  {
+   "label": "Black Panther",
+   "qid": "Q998220",
+   "fame": 0.526,
+   "identity": "T'Challa",
+   "description": "fictional character in Marvel Comics",
+   "hook": "is the king and protector of Wakanda, a high-tech nation built on vibranium",
+   "known": 0.7,
+   "kind": "hero"
+  },
+  {
+   "label": "Penguin",
+   "qid": "Q384193",
+   "fame": 0.523,
+   "identity": "Oswald Cobblepot",
+   "description": "supervillain appearing in DC Comics publications and related media",
+   "hook": "is one of Batman's most enduring enemies and often named among his best villains",
+   "known": 0.4,
+   "kind": "villain"
+  },
+  {
+   "label": "Mister Fantastic",
+   "qid": "Q865017",
+   "fame": 0.516,
+   "identity": "Reed Richards",
+   "description": "fictional character in Marvel Comics",
+   "hook": null,
+   "known": 0.3,
+   "kind": "hero"
+  },
+  {
+   "label": "Doctor Octopus",
+   "qid": "Q578094",
+   "fame": 0.511,
+   "identity": "Otto Octavius",
+   "description": "fictional character in Marvel Comics",
+   "hook": "is a myopic, stocky mad scientist with four strong tentacle-like limbs, created by Stan Lee and Steve Ditko",
+   "known": 0.4,
+   "kind": "villain"
+  },
+  {
+   "label": "Green Goblin",
+   "qid": "Q735721",
+   "fame": 0.511,
+   "identity": "Norman Osborn",
+   "description": "name used by numerous fictional characters in Marvel Comics",
+   "hook": "is one of Spider-Man's principal archenemies, a persona born of chemically induced insanity",
+   "known": 0.4,
+   "kind": "villain"
+  },
+  {
+   "label": "Green Arrow",
+   "qid": "Q611993",
+   "fame": 0.509,
+   "identity": "Oliver Queen",
+   "description": "fictional character from DC Comics",
+   "hook": "is a DC archer hero who debuted in the same comic issue as Aquaman",
+   "known": 0.5,
+   "kind": "hero"
+  },
+  {
+   "label": "The Shadow",
+   "qid": "Q967116",
+   "fame": 0.507,
+   "identity": "Lamont Cranston",
+   "description": "fictional character",
+   "hook": null,
+   "known": 0.3,
+   "kind": "hero"
+  },
+  {
+   "label": "Lone Ranger",
+   "qid": "Q1588097",
+   "fame": 0.498,
+   "identity": "John Reid",
+   "description": "fictional character",
+   "hook": "is a masked lawman who fought outlaws in the Old West alongside his friend Tonto",
+   "known": 0.4,
+   "kind": "hero"
+  },
+  {
+   "label": "Mr. Freeze",
+   "qid": "Q557584",
+   "fame": 0.493,
+   "identity": "Victor Fries",
+   "description": "fictional character throughout the DC Universe",
+   "hook": "is an ice-themed Batman enemy who must live in sub-zero temperatures",
+   "known": 0.4,
+   "kind": "villain"
+  },
+  {
+   "label": "Human Torch",
+   "qid": "Q584585",
+   "fame": 0.48,
+   "identity": "Johnny Storm",
+   "description": "character in Marvel Comics",
+   "hook": null,
+   "known": 0.3,
+   "kind": "hero"
+  },
+  {
+   "label": "Cyborg",
+   "qid": "Q2466726",
+   "fame": 0.477,
+   "identity": "Victor Stone",
+   "description": "DC comics character",
+   "hook": null,
+   "known": 0.2,
+   "kind": "hero"
+  },
+  {
+   "label": "War Machine",
+   "qid": "Q616337",
+   "fame": 0.477,
+   "identity": "James Rhodes",
+   "description": "fictional character in Marvel Comics",
+   "hook": null,
+   "known": 0.2,
+   "kind": "hero"
+  },
+  {
+   "label": "Falcon",
+   "qid": "Q672591",
+   "fame": 0.474,
+   "identity": "Sam Wilson",
+   "description": "fictional character in Marvel Comics",
+   "hook": null,
+   "known": 0.3,
+   "kind": "hero"
+  },
+  {
+   "label": "Invisible Woman",
+   "qid": "Q510450",
+   "fame": 0.473,
+   "identity": "Sue Storm",
+   "description": "fictional character in Marvel Comics",
+   "hook": null,
+   "known": 0.3,
+   "kind": "hero"
+  },
+  {
+   "label": "Nightwing",
+   "qid": "Q686623",
+   "fame": 0.47,
+   "identity": "Dick Grayson",
+   "description": "DC Comics superhero",
+   "hook": "is the grown-up hero identity taken by Batman's first Robin, who went on to lead the Teen Titans",
+   "known": 0.4,
+   "kind": "hero"
+  }
+ ]
+}

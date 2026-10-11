@@ -1,0 +1,625 @@
+{
+ "id": "table.geography.currencies",
+ "kind": "table",
+ "title": "Countries and their currencies",
+ "genre": "society",
+ "category": "geography",
+ "topic": "flags-and-symbols",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Hand-built, checked row by row against English Wikipedia",
+  "method": null,
+  "attribution": null,
+  "fetchedAt": "2026-09-27T02:12:53.524Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-26T00:00:00.000Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "currency",
+   "label": "Currency",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "currency_short",
+   "label": "Currency (short)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "country",
+  "many": "countries",
+  "columns": {
+   "currency_short": {
+    "role": "link",
+    "pick": "What is the currency of {label}?",
+    "statement": "The currency of {label} is the {value}.",
+    "match": "Match each country to its currency.",
+    "all": "Tap all {n} countries that use the {value}.",
+    "capitalise": true
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "United States",
+   "qid": "Q30",
+   "fame": 0.929,
+   "currency": "US dollar",
+   "currency_short": "Dollar",
+   "description": "country located primarily in North America",
+   "hook": "is home to the Statue of Liberty and Hollywood's film industry",
+   "known": 0.95,
+   "kind": "dollar"
+  },
+  {
+   "label": "United Kingdom",
+   "qid": "Q145",
+   "fame": 0.829,
+   "currency": "Pound sterling",
+   "currency_short": "Pound",
+   "description": "island country in north-west Europe",
+   "hook": "is home to Big Ben and Buckingham Palace",
+   "known": 0.95,
+   "kind": "pound"
+  },
+  {
+   "label": "India",
+   "qid": "Q668",
+   "fame": 0.812,
+   "currency": "Indian rupee",
+   "currency_short": "Rupee",
+   "description": "country in South Asia",
+   "hook": "is home to the Taj Mahal",
+   "known": 0.6,
+   "kind": "rupee"
+  },
+  {
+   "label": "China",
+   "qid": "Q148",
+   "fame": 0.797,
+   "currency": "Renminbi (yuan)",
+   "currency_short": "Yuan",
+   "description": "country in East Asia",
+   "hook": "is home to the Great Wall",
+   "known": 0.8,
+   "kind": "other"
+  },
+  {
+   "label": "Canada",
+   "qid": "Q16",
+   "fame": 0.793,
+   "currency": "Canadian dollar",
+   "currency_short": "Dollar",
+   "description": "country in North America",
+   "hook": "is home to Niagara Falls and the Rocky Mountains",
+   "known": 0.8,
+   "kind": "dollar"
+  },
+  {
+   "label": "Russia",
+   "qid": "Q159",
+   "fame": 0.787,
+   "currency": "Russian ruble",
+   "currency_short": "Ruble",
+   "description": "country in Eastern Europe and Northern Asia, the largest in the world by area",
+   "hook": "is home to the Kremlin and Red Square",
+   "known": 0.8,
+   "kind": "other"
+  },
+  {
+   "label": "Australia",
+   "qid": "Q408",
+   "fame": 0.786,
+   "currency": "Australian dollar",
+   "currency_short": "Dollar",
+   "description": "country in Oceania",
+   "hook": "is home to the Sydney Opera House and the Great Barrier Reef",
+   "known": 0.8,
+   "kind": "dollar"
+  },
+  {
+   "label": "Germany",
+   "qid": "Q183",
+   "fame": 0.786,
+   "currency": "Euro",
+   "currency_short": "Euro",
+   "description": "country in Central Europe",
+   "hook": "is home to the Brandenburg Gate and Oktoberfest",
+   "known": 0.95,
+   "kind": "euro"
+  },
+  {
+   "label": "Israel",
+   "qid": "Q801",
+   "fame": 0.783,
+   "currency": "Israeli new shekel",
+   "currency_short": "Shekel",
+   "description": "country in West Asia",
+   "hook": "is home to the Western Wall in Jerusalem",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Japan",
+   "qid": "Q17",
+   "fame": 0.776,
+   "currency": "Japanese yen",
+   "currency_short": "Yen",
+   "description": "island country in East Asia",
+   "hook": "is home to Mount Fuji and Tokyo's neon skyline",
+   "known": 0.95,
+   "kind": "other"
+  },
+  {
+   "label": "Singapore",
+   "qid": "Q334",
+   "fame": 0.776,
+   "currency": "Singapore dollar",
+   "currency_short": "Dollar",
+   "description": "sovereign island country and city-state in maritime Southeast Asia",
+   "hook": "is known for the towering Marina Bay Sands and strict cleanliness laws",
+   "known": 0.4,
+   "kind": "dollar"
+  },
+  {
+   "label": "Norway",
+   "qid": "Q20",
+   "fame": 0.765,
+   "currency": "Norwegian krone",
+   "currency_short": "Krone",
+   "description": "country in Northern Europe",
+   "hook": "is known for its dramatic fjords and the midnight sun",
+   "known": 0.4,
+   "kind": "krone"
+  },
+  {
+   "label": "Turkey",
+   "qid": "Q43",
+   "fame": 0.757,
+   "currency": "Turkish lira",
+   "currency_short": "Lira",
+   "description": "country in West Asia and Southeast Europe",
+   "hook": "straddles two continents and is home to the Hagia Sophia",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Brazil",
+   "qid": "Q155",
+   "fame": 0.756,
+   "currency": "Brazilian real",
+   "currency_short": "Real",
+   "description": "country in South America",
+   "hook": "is home to the Amazon rainforest and Rio's Carnival",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "France",
+   "qid": "Q142",
+   "fame": 0.755,
+   "currency": "Euro",
+   "currency_short": "Euro",
+   "description": "country in Western Europe and other continents (through its overseas territories in America, Africa and Oceania)",
+   "hook": "is home to the Eiffel Tower and the Louvre",
+   "known": 0.95,
+   "kind": "euro"
+  },
+  {
+   "label": "Philippines",
+   "qid": "Q928",
+   "fame": 0.753,
+   "currency": "Philippine peso",
+   "currency_short": "Peso",
+   "description": "archipelagic country in Southeast Asia",
+   "hook": "is made up of more than seven thousand islands",
+   "known": 0.2,
+   "kind": "peso"
+  },
+  {
+   "label": "Saudi Arabia",
+   "qid": "Q851",
+   "fame": 0.752,
+   "currency": "Saudi riyal",
+   "currency_short": "Riyal",
+   "description": "country in West Asia",
+   "hook": "is home to the holy cities of Mecca and Medina",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Indonesia",
+   "qid": "Q252",
+   "fame": 0.752,
+   "currency": "Indonesian rupiah",
+   "currency_short": "Rupiah",
+   "description": "island country in Southeast Asia and Oceania",
+   "hook": "is the world's largest archipelago nation",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Mexico",
+   "qid": "Q96",
+   "fame": 0.75,
+   "currency": "Mexican peso",
+   "currency_short": "Peso",
+   "description": "country in North America",
+   "hook": "is home to ancient Mayan and Aztec pyramids",
+   "known": 0.6,
+   "kind": "peso"
+  },
+  {
+   "label": "Pakistan",
+   "qid": "Q843",
+   "fame": 0.743,
+   "currency": "Pakistani rupee",
+   "currency_short": "Rupee",
+   "description": "sovereign state in South Asia",
+   "hook": "is home to K2, the world's second-tallest mountain",
+   "known": 0.2,
+   "kind": "rupee"
+  },
+  {
+   "label": "Spain",
+   "qid": "Q29",
+   "fame": 0.742,
+   "currency": "Euro",
+   "currency_short": "Euro",
+   "description": "country in southwestern Europe with territories in Africa",
+   "hook": "is home to flamenco dancing and the running of the bulls",
+   "known": 0.95,
+   "kind": "euro"
+  },
+  {
+   "label": "Netherlands",
+   "qid": "Q55",
+   "fame": 0.74,
+   "currency": "Euro",
+   "currency_short": "Euro",
+   "description": "one of the four autonomous countries of the Kingdom of the Netherlands; with territories in the Caribbean",
+   "hook": "is famous for its windmills, tulip fields, and canals",
+   "known": 0.95,
+   "kind": "euro"
+  },
+  {
+   "label": "Italy",
+   "qid": "Q38",
+   "fame": 0.739,
+   "currency": "Euro",
+   "currency_short": "Euro",
+   "description": "country in southern Europe",
+   "hook": "is home to the Colosseum and the leaning tower of Pisa",
+   "known": 0.95,
+   "kind": "euro"
+  },
+  {
+   "label": "United Arab Emirates",
+   "qid": "Q878",
+   "fame": 0.738,
+   "currency": "UAE dirham",
+   "currency_short": "Dirham",
+   "description": "country in Western Asia",
+   "hook": "is home to the world's tallest building, the Burj Khalifa",
+   "known": 0.2,
+   "kind": "dirham"
+  },
+  {
+   "label": "New Zealand",
+   "qid": "Q664",
+   "fame": 0.736,
+   "currency": "New Zealand dollar",
+   "currency_short": "Dollar",
+   "description": "island country in the southwest Pacific Ocean",
+   "hook": "was the filming location for The Lord of the Rings trilogy",
+   "known": 0.6,
+   "kind": "dollar"
+  },
+  {
+   "label": "South Africa",
+   "qid": "Q258",
+   "fame": 0.736,
+   "currency": "South African rand",
+   "currency_short": "Rand",
+   "description": "country in southern Africa",
+   "hook": "is home to Table Mountain and Kruger National Park",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Malaysia",
+   "qid": "Q833",
+   "fame": 0.735,
+   "currency": "Malaysian ringgit",
+   "currency_short": "Ringgit",
+   "description": "country in Southeast Asia",
+   "hook": "is home to the twin Petronas Towers",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Iceland",
+   "qid": "Q189",
+   "fame": 0.734,
+   "currency": "Icelandic króna",
+   "currency_short": "Krona",
+   "description": "Nordic island country in the North Atlantic Ocean",
+   "hook": "is famous for its geysers, glaciers, and northern lights",
+   "known": 0.05,
+   "kind": "krone"
+  },
+  {
+   "label": "Sweden",
+   "qid": "Q34",
+   "fame": 0.733,
+   "currency": "Swedish krona",
+   "currency_short": "Krona",
+   "description": "country in Northern Europe",
+   "hook": "gave the world ABBA and IKEA",
+   "known": 0.4,
+   "kind": "krone"
+  },
+  {
+   "label": "Poland",
+   "qid": "Q36",
+   "fame": 0.733,
+   "currency": "Polish złoty",
+   "currency_short": "Zloty",
+   "description": "country in Central Europe",
+   "hook": "is home to the medieval old town of Krakow",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Vietnam",
+   "qid": "Q881",
+   "fame": 0.732,
+   "currency": "Vietnamese dong",
+   "currency_short": "Dong",
+   "description": "country in Southeast Asia",
+   "hook": "is home to the limestone islands of Ha Long Bay",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Portugal",
+   "qid": "Q45",
+   "fame": 0.73,
+   "currency": "Euro",
+   "currency_short": "Euro",
+   "description": "country in Southwestern Europe",
+   "hook": "is famous for its Port wine and the explorers who once sailed from its shores",
+   "known": 0.95,
+   "kind": "euro"
+  },
+  {
+   "label": "Czech Republic",
+   "qid": "Q213",
+   "fame": 0.73,
+   "currency": "Czech koruna",
+   "currency_short": "Koruna",
+   "description": "country in Central Europe",
+   "hook": "is home to the medieval castles and spires of Prague",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Argentina",
+   "qid": "Q414",
+   "fame": 0.729,
+   "currency": "Argentine peso",
+   "currency_short": "Peso",
+   "description": "country in South America",
+   "hook": "is famous for tango dancing and passionate football fandom",
+   "known": 0.4,
+   "kind": "peso"
+  },
+  {
+   "label": "Switzerland",
+   "qid": "Q39",
+   "fame": 0.726,
+   "currency": "Swiss franc",
+   "currency_short": "Franc",
+   "description": "country in Central Europe",
+   "hook": "is famous for its snow-capped Alps, cheese, and precision watches",
+   "known": 0.6,
+   "kind": "other"
+  },
+  {
+   "label": "South Korea",
+   "qid": "Q884",
+   "fame": 0.717,
+   "currency": "South Korean won",
+   "currency_short": "Won",
+   "description": "country in East Asia",
+   "hook": "is the birthplace of K-pop and hosted the Winter Olympics",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Thailand",
+   "qid": "Q869",
+   "fame": 0.713,
+   "currency": "Thai baht",
+   "currency_short": "Baht",
+   "description": "country in Southeast Asia",
+   "hook": "is home to golden temples and tropical beaches",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Egypt",
+   "qid": "Q79",
+   "fame": 0.711,
+   "currency": "Egyptian pound",
+   "currency_short": "Pound",
+   "description": "country in Northeast Africa and Southwest Asia",
+   "hook": "is home to the pyramids of Giza and the Sphinx",
+   "known": 0.2,
+   "kind": "pound"
+  },
+  {
+   "label": "Greece",
+   "qid": "Q41",
+   "fame": 0.709,
+   "currency": "Euro",
+   "currency_short": "Euro",
+   "description": "country in Southeast Europe",
+   "hook": "is the birthplace of the Olympic Games and ancient philosophy",
+   "known": 0.95,
+   "kind": "euro"
+  },
+  {
+   "label": "Nigeria",
+   "qid": "Q1033",
+   "fame": 0.707,
+   "currency": "Nigerian naira",
+   "currency_short": "Naira",
+   "description": "sovereign state in West Africa",
+   "hook": "has Africa's largest population and film industry, Nollywood",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Denmark",
+   "qid": "Q35",
+   "fame": 0.705,
+   "currency": "Danish krone",
+   "currency_short": "Krone",
+   "description": "country in Northern Europe",
+   "hook": "is the birthplace of Lego and Hans Christian Andersen's fairy tales",
+   "known": 0.4,
+   "kind": "krone"
+  },
+  {
+   "label": "Belgium",
+   "qid": "Q31",
+   "fame": 0.703,
+   "currency": "Euro",
+   "currency_short": "Euro",
+   "description": "country in western Europe",
+   "hook": "is famous for its chocolate, waffles, and medieval town squares",
+   "known": 0.95,
+   "kind": "euro"
+  },
+  {
+   "label": "Ireland",
+   "qid": "Q27",
+   "fame": 0.703,
+   "currency": "Euro",
+   "currency_short": "Euro",
+   "description": "country in Northwestern Europe",
+   "hook": "is famous for its green countryside and Guinness stout",
+   "known": 0.95,
+   "kind": "euro"
+  },
+  {
+   "label": "Morocco",
+   "qid": "Q1028",
+   "fame": 0.702,
+   "currency": "Moroccan dirham",
+   "currency_short": "Dirham",
+   "description": "sovereign state in North Africa",
+   "hook": "is home to the winding markets of Marrakesh and the Sahara desert",
+   "known": 0.05,
+   "kind": "dirham"
+  },
+  {
+   "label": "Finland",
+   "qid": "Q33",
+   "fame": 0.701,
+   "currency": "Euro",
+   "currency_short": "Euro",
+   "description": "country in Northern Europe",
+   "hook": "is home to Santa Claus's official village and the birthplace of the sauna",
+   "known": 0.95,
+   "kind": "euro"
+  },
+  {
+   "label": "Austria",
+   "qid": "Q40",
+   "fame": 0.7,
+   "currency": "Euro",
+   "currency_short": "Euro",
+   "description": "country in Central Europe",
+   "hook": "is the birthplace of Mozart and home to grand imperial palaces",
+   "known": 0.95,
+   "kind": "euro"
+  },
+  {
+   "label": "Colombia",
+   "qid": "Q739",
+   "fame": 0.69,
+   "currency": "Colombian peso",
+   "currency_short": "Peso",
+   "description": "country in South America",
+   "hook": "is famous for its coffee and colorful Caribbean coastline",
+   "known": 0.2,
+   "kind": "peso"
+  },
+  {
+   "label": "Hungary",
+   "qid": "Q28",
+   "fame": 0.683,
+   "currency": "Hungarian forint",
+   "currency_short": "Forint",
+   "description": "country in Central Europe",
+   "hook": "is home to the grand thermal baths of Budapest",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Chile",
+   "qid": "Q298",
+   "fame": 0.676,
+   "currency": "Chilean peso",
+   "currency_short": "Peso",
+   "description": "country in South America and Oceania, with a claim in Antarctica",
+   "hook": "stretches along the world's longest north-south coastline",
+   "known": 0.2,
+   "kind": "peso"
+  },
+  {
+   "label": "Jamaica",
+   "qid": "Q766",
+   "fame": 0.668,
+   "currency": "Jamaican dollar",
+   "currency_short": "Dollar",
+   "description": "island state in the Caribbean Sea",
+   "hook": "is the birthplace of reggae music and Bob Marley",
+   "known": 0.2,
+   "kind": "dollar"
+  },
+  {
+   "label": "Kenya",
+   "qid": "Q114",
+   "fame": 0.659,
+   "currency": "Kenyan shilling",
+   "currency_short": "Shilling",
+   "description": "country in Eastern Africa",
+   "hook": "is famous for its safaris and long-distance running champions",
+   "known": 0.2,
+   "kind": "other"
+  }
+ ]
+}

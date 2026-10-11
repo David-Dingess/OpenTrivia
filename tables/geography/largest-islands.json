@@ -1,0 +1,257 @@
+{
+ "id": "table.geography.largest-islands",
+ "kind": "table",
+ "title": "Largest islands",
+ "genre": "society",
+ "category": "geography",
+ "topic": "borders-and-maps",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?area WHERE { { SELECT ?item (MAX(?a) AS ?area) WHERE { ?item wdt:P31 wd:Q23442 ; p:P2046/psn:P2046/wikibase:quantityAmount ?a . FILTER(?a >= 10000000000) } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 329",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T00:57:35.046Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T00:57:35.046Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "area_km2",
+   "label": "Area",
+   "unit": "km²",
+   "type": "number"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "island",
+  "many": "islands",
+  "hookAsk": "Which island {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "area_km2": {
+    "role": "measure",
+    "compare": "Which is bigger",
+    "display": "km2"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Ireland",
+   "qid": "Q22890",
+   "fame": 0.718,
+   "area_km2": 84421,
+   "description": "island in the North Atlantic Ocean",
+   "hook": "is famous for lush green landscapes, castles and folklore about leprechauns",
+   "known": 0.95,
+   "kind": "island"
+  },
+  {
+   "label": "Great Britain",
+   "qid": "Q23666",
+   "fame": 0.64,
+   "area_km2": 228938,
+   "description": "island in the North Atlantic Ocean off the northwest coast of continental Europe",
+   "hook": "is home to Big Ben, Stonehenge and rolling green countryside",
+   "known": 0.95,
+   "kind": "island"
+  },
+  {
+   "label": "Borneo",
+   "qid": "Q36117",
+   "fame": 0.621,
+   "area_km2": 748168,
+   "description": "third largest island in the world by area, located in south-east Asia",
+   "hook": "is covered in ancient rainforest that's home to orangutans",
+   "known": 0.6,
+   "kind": "island"
+  },
+  {
+   "label": "New Guinea",
+   "qid": "Q40285",
+   "fame": 0.589,
+   "area_km2": 785753,
+   "description": "island in the Pacific Ocean",
+   "hook": "is home to more distinct languages than anywhere else on Earth",
+   "known": 0.4,
+   "kind": "island"
+  },
+  {
+   "label": "Java",
+   "qid": "Q3757",
+   "fame": 0.587,
+   "area_km2": 128297,
+   "description": "island of Indonesia",
+   "hook": "is one of the most densely populated places on Earth and holds a nation's capital",
+   "known": 0.6,
+   "kind": "island"
+  },
+  {
+   "label": "Hispaniola",
+   "qid": "Q25277",
+   "fame": 0.558,
+   "area_km2": 77900,
+   "description": "island in the Caribbean",
+   "hook": "is shared by two very different nations across a mountainous border",
+   "known": 0.4,
+   "kind": "island"
+  },
+  {
+   "label": "Sakhalin",
+   "qid": "Q7792",
+   "fame": 0.546,
+   "area_km2": 72492,
+   "description": "large Russian island in the North Pacific Ocean",
+   "hook": "lies just north of Japan and is rich in oil and natural gas",
+   "known": 0.2,
+   "kind": "island"
+  },
+  {
+   "label": "Sumatra",
+   "qid": "Q3492",
+   "fame": 0.546,
+   "area_km2": 473481,
+   "description": "island in western Indonesia, westernmost of the Sunda Islands",
+   "hook": "is home to endangered tigers and rows of active volcanoes",
+   "known": 0.4,
+   "kind": "island"
+  },
+  {
+   "label": "Newfoundland",
+   "qid": "Q48335",
+   "fame": 0.544,
+   "area_km2": 108860,
+   "description": "island portion of Newfoundland and Labrador, Canada",
+   "hook": "was one of the first parts of North America reached by Norse explorers",
+   "known": 0.6,
+   "kind": "island"
+  },
+  {
+   "label": "Kyushu",
+   "qid": "Q13987",
+   "fame": 0.522,
+   "area_km2": 36782,
+   "description": "third largest island of Japan",
+   "hook": "is dotted with active volcanoes and hot spring resorts",
+   "known": 0.4,
+   "kind": "island"
+  },
+  {
+   "label": "Vancouver Island",
+   "qid": "Q170479",
+   "fame": 0.521,
+   "area_km2": 32134,
+   "description": "island of British Columbia, Canada",
+   "hook": "is known for its rugged coastline, rainforests and whale watching",
+   "known": 0.4,
+   "kind": "island"
+  },
+  {
+   "label": "Mindanao",
+   "qid": "Q124873",
+   "fame": 0.511,
+   "area_km2": 97530,
+   "description": "second largest island of the Philippines",
+   "hook": "is home to indigenous highland tribes and rich biodiversity",
+   "known": 0.2,
+   "kind": "island"
+  },
+  {
+   "label": "Baffin Island",
+   "qid": "Q81178",
+   "fame": 0.497,
+   "area_km2": 507451,
+   "description": "largest Arctic island in Nunavut, Canada",
+   "hook": "is a vast, icy Arctic wilderness home to polar bears and narwhals",
+   "known": 0.4,
+   "kind": "island"
+  },
+  {
+   "label": "Sulawesi",
+   "qid": "Q3812",
+   "fame": 0.492,
+   "area_km2": 174600,
+   "description": "one of the four Greater Sunda Islands, governed by Indonesia",
+   "hook": "has a distinctive branching shape unlike any other island",
+   "known": 0.2,
+   "kind": "island"
+  },
+  {
+   "label": "Cape Breton Island",
+   "qid": "Q188489",
+   "fame": 0.484,
+   "area_km2": 10311,
+   "description": "island in Nova Scotia, Canada",
+   "hook": "is famous for its dramatic coastal highlands and Celtic music heritage",
+   "known": 0.2,
+   "kind": "island"
+  },
+  {
+   "label": "Shikoku",
+   "qid": "Q13991",
+   "fame": 0.483,
+   "area_km2": 18297,
+   "description": "fourth largest island of Japan",
+   "hook": "is famous for an ancient Buddhist pilgrimage route linking many temples",
+   "known": 0.2,
+   "kind": "island"
+  },
+  {
+   "label": "Luzon",
+   "qid": "Q125384",
+   "fame": 0.476,
+   "area_km2": 109965,
+   "description": "largest island of the Philippines",
+   "hook": "is the largest island of its archipelago and holds its bustling capital",
+   "known": 0.4,
+   "kind": "island"
+  },
+  {
+   "label": "Ellesmere Island",
+   "qid": "Q146841",
+   "fame": 0.46,
+   "area_km2": 196235,
+   "description": "part of the Qikiqtaaluk Region of the Canadian territory of Nunavut",
+   "hook": "is one of the most remote, ice-covered lands in the high Arctic",
+   "known": 0.2,
+   "kind": "island"
+  },
+  {
+   "label": "South Island",
+   "qid": "Q120755",
+   "fame": 0.458,
+   "area_km2": 150437,
+   "description": "one of the two main New Zealand islands",
+   "hook": "is famous for its snow-capped peaks, glaciers and fjords",
+   "known": 0.6,
+   "kind": "island"
+  },
+  {
+   "label": "Spitsbergen",
+   "qid": "Q21162",
+   "fame": 0.456,
+   "area_km2": 39044,
+   "description": "largest island of the Svalbard archipelago in northern Norway",
+   "hook": "is a remote Arctic archipelago home to more polar bears than people",
+   "known": 0.2,
+   "kind": "island"
+  }
+ ]
+}

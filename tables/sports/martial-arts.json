@@ -1,0 +1,238 @@
+{
+ "id": "table.sports.martial-arts",
+ "kind": "table",
+ "title": "Martial arts people know",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "combat-sports",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?originLabel WHERE { { ?item wdt:P31 wd:Q11417 } UNION { ?item wdt:P279 wd:Q11417 } OPTIONAL { ?item wdt:P495 ?origin . } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T18:03:39.717Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T18:03:39.717Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "origin",
+   "label": "Country of origin",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "martial art",
+  "many": "martial arts",
+  "capitalise": true,
+  "hookAsk": "Which martial art {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "origin": {
+    "role": "link",
+    "pick": "Which country does {label} come from?",
+    "statement": "{label} comes from {value}.",
+    "match": "Match each martial art to the country it comes from.",
+    "odd": "Three of these martial arts come from {value}. Which one doesn't?",
+    "all": "Tap all {n} martial arts from {value}.",
+    "reverse": "Which of these comes from {value}?"
+   }
+  },
+  "exclude": [
+   {
+    "qid": "Q184733",
+    "why": "Krav Maga: its origin is contested (Czechoslovakia by Wikidata, Israel by most players)"
+   }
+  ]
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Krav Maga",
+   "qid": "Q184733",
+   "fame": 0.625,
+   "origin": "Czechoslovakia",
+   "description": "Israeli martial art",
+   "hook": "was developed for hand-to-hand combat training in the Israeli military",
+   "known": 0.4,
+   "kind": "israeli"
+  },
+  {
+   "label": "Brazilian jiu-jitsu",
+   "qid": "Q189336",
+   "fame": 0.581,
+   "origin": "Brazil",
+   "description": "Brazilian martial art",
+   "hook": "focuses on ground fighting and submission holds, and became central to mixed martial arts",
+   "known": 0.8,
+   "kind": "brazilian"
+  },
+  {
+   "label": "Muay Thai",
+   "qid": "Q120931",
+   "fame": 0.577,
+   "origin": "Thailand",
+   "description": "combat sport and martial art that uses stand-up striking along with various clinching techniques",
+   "hook": "is known as the art of eight limbs for its use of fists, elbows, knees and shins in striking",
+   "known": 0.8,
+   "kind": "thai"
+  },
+  {
+   "label": "taekwondo",
+   "qid": "Q36389",
+   "fame": 0.576,
+   "origin": "Korean Empire",
+   "description": "Korean martial arts",
+   "hook": "is known for its fast, high kicks and is an Olympic sport",
+   "known": 0.8,
+   "kind": "korean"
+  },
+  {
+   "label": "jujutsu",
+   "qid": "Q163770",
+   "fame": 0.549,
+   "origin": "Japan",
+   "description": "Japanese martial art",
+   "hook": "teaches throws, joint locks and pins that turn an opponent's own force against them",
+   "known": 0.6,
+   "kind": "japanese"
+  },
+  {
+   "label": "judo",
+   "qid": "Q11420",
+   "fame": 0.545,
+   "origin": "Japan",
+   "description": "modern martial art, combat and Olympic/Paralympic sport",
+   "hook": "is an Olympic sport where a single perfect throw or pin can end a match instantly",
+   "known": 0.8,
+   "kind": "japanese"
+  },
+  {
+   "label": "karate",
+   "qid": "Q11419",
+   "fame": 0.542,
+   "origin": "Ryukyu Kingdom",
+   "description": "martial art",
+   "hook": "is famous for powerful punches and kicks, and for competitors breaking boards with a single strike",
+   "known": 0.8,
+   "kind": "japanese"
+  },
+  {
+   "label": "sumo",
+   "qid": "Q40561",
+   "fame": 0.536,
+   "origin": "Japan",
+   "description": "full-contact wrestling sport",
+   "hook": "pits two large wrestlers against each other, each trying to force the other out of a circular ring",
+   "known": 0.6,
+   "kind": "japanese"
+  },
+  {
+   "label": "sambo",
+   "qid": "Q106500",
+   "fame": 0.534,
+   "origin": "Soviet Union",
+   "description": "martial art sport developed in the USSR",
+   "hook": "blends wrestling and jacket grappling, and was originally developed to train soldiers in hand-to-hand combat",
+   "known": 0.4,
+   "kind": "soviet"
+  },
+  {
+   "label": "aikido",
+   "qid": "Q43114",
+   "fame": 0.524,
+   "origin": "Japan",
+   "description": "Japanese martial art developed by Morihei Ueshiba",
+   "hook": "redirects an attacker's momentum through circular, blending movements rather than striking back",
+   "known": 0.6,
+   "kind": "japanese"
+  },
+  {
+   "label": "Jeet Kune Do",
+   "qid": "Q188923",
+   "fame": 0.502,
+   "origin": null,
+   "description": "martial art",
+   "hook": "was created by Bruce Lee around the idea that a fighter should adapt freely instead of one fixed style",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Chinese martial arts",
+   "qid": "Q3705105",
+   "fame": 0.48,
+   "origin": null,
+   "description": "variety of fighting styles developed in China",
+   "hook": "is showcased worldwide through kung fu films and Shaolin monks demonstrating gravity-defying stunts",
+   "known": 0.4,
+   "kind": "chinese"
+  },
+  {
+   "label": "kendo",
+   "qid": "Q170931",
+   "fame": 0.474,
+   "origin": "Japan",
+   "description": "modern Japanese martial art",
+   "hook": "uses bamboo swords and protective armour in duels inspired by samurai swordsmanship",
+   "known": 0.6,
+   "kind": "japanese"
+  },
+  {
+   "label": "Kalaripayattu",
+   "qid": "Q841285",
+   "fame": 0.466,
+   "origin": null,
+   "description": "Indian martial art from Kerala",
+   "hook": "is considered one of the world's oldest fighting systems, blending strikes, weapons and healing massage",
+   "known": 0.2,
+   "kind": "indian"
+  },
+  {
+   "label": "pencak silat",
+   "qid": "Q2040849",
+   "fame": 0.458,
+   "origin": "Indonesia",
+   "description": "Indonesian martial arts",
+   "hook": "combines flowing, dance-like movements with strikes, and is sometimes performed to live music at festivals",
+   "known": 0.2,
+   "kind": "southeast-asian"
+  },
+  {
+   "label": "pankration",
+   "qid": "Q201252",
+   "fame": 0.455,
+   "origin": "Ancient Greece",
+   "description": "martial art in ancient Greek festivals",
+   "hook": "combined boxing and wrestling with almost no rules, and was a brutal event at the original Olympic Games",
+   "known": 0.2,
+   "kind": "greek"
+  },
+  {
+   "label": "hapkido",
+   "qid": "Q200333",
+   "fame": 0.45,
+   "origin": null,
+   "description": "hybrid Korean martial art",
+   "hook": "blends joint locks and throws with powerful kicks, drawing on both grappling and striking traditions",
+   "known": 0.4,
+   "kind": "korean"
+  }
+ ]
+}

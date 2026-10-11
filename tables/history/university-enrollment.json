@@ -1,0 +1,751 @@
+{
+ "id": "table.history.university-enrollment",
+ "kind": "table",
+ "title": "Famous universities and how many students they have",
+ "genre": "society",
+ "category": "history",
+ "topic": "universities",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?students WHERE { { SELECT ?item (MAX(?s) AS ?students) WHERE { ?item wdt:P31/wdt:P279* wd:Q3918 ; wdt:P2196 ?s ; wikibase:sitelinks ?sl . FILTER(?sl >= 35) } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T06:27:39.854Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T06:27:39.854Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "students",
+   "label": "Students",
+   "unit": null,
+   "type": "number",
+   "scale": "count-100k"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "university",
+  "many": "universities",
+  "hookAsk": "Which university {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "theLabels": [
+   "University of Oxford",
+   "University of Notre Dame",
+   "Massachusetts Institute of Technology",
+   "University of Pennsylvania",
+   "University of Cambridge",
+   "University of California, Berkeley",
+   "University of Texas at Austin",
+   "University of Southern California",
+   "University of Michigan",
+   "University of California, Los Angeles",
+   "California Institute of Technology",
+   "University of Washington",
+   "University of Florida",
+   "University of Chicago",
+   "London School of Economics and Political Science",
+   "University of St Andrews",
+   "University of Virginia",
+   "University of Bologna",
+   "University of North Carolina at Chapel Hill",
+   "University of Toronto",
+   "University of Edinburgh",
+   "University of Minnesota",
+   "University of Wisconsin–Madison",
+   "University of Pittsburgh",
+   "University of California, Davis",
+   "University of Arizona",
+   "University of British Columbia",
+   "University of California, San Diego",
+   "University of Birmingham",
+   "University of Sydney",
+   "University of Tokyo",
+   "University of Göttingen"
+  ],
+  "columns": {
+   "students": {
+    "role": "measure",
+    "compare": "Which has more students"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Harvard University",
+   "qid": "Q13371",
+   "fame": 0.687,
+   "students": 24555,
+   "description": "private university in Cambridge, Massachusetts",
+   "hook": "is the oldest higher-education institution in the United States and sits beside the Charles River",
+   "known": 0.95,
+   "kind": "ivy league"
+  },
+  {
+   "label": "Cornell University",
+   "qid": "Q49115",
+   "fame": 0.677,
+   "students": 24900,
+   "description": "private and statutory land-grant research university in Ithaca, New York, USA",
+   "hook": "is the Ivy League school known for its hotel management program and gorges near the Finger Lakes",
+   "known": 0.8,
+   "kind": "ivy league"
+  },
+  {
+   "label": "Stanford University",
+   "qid": "Q41506",
+   "fame": 0.647,
+   "students": 17246,
+   "description": "private research university in Stanford, California, USA",
+   "hook": "is the Silicon Valley school whose students went on to found Google and many other tech giants",
+   "known": 0.95,
+   "kind": "us private research"
+  },
+  {
+   "label": "University of Oxford",
+   "qid": "Q34433",
+   "fame": 0.647,
+   "students": 19791,
+   "description": "collegiate research university in Oxford, England",
+   "hook": "is the oldest school in the English-speaking world and takes part in an annual Boat Race rivalry",
+   "known": 0.95,
+   "kind": "uk university"
+  },
+  {
+   "label": "Columbia University",
+   "qid": "Q49088",
+   "fame": 0.63,
+   "students": 33413,
+   "description": "private university in New York City, New York, US",
+   "hook": "is the Ivy League school that administers the Pulitzer Prizes",
+   "known": 0.8,
+   "kind": "ivy league"
+  },
+  {
+   "label": "Yale University",
+   "qid": "Q49112",
+   "fame": 0.622,
+   "students": 14429,
+   "description": "private university in New Haven, Connecticut",
+   "hook": "is the Ivy League school famous for secret societies like Skull and Bones and a bulldog mascot",
+   "known": 0.95,
+   "kind": "ivy league"
+  },
+  {
+   "label": "University of Notre Dame",
+   "qid": "Q178848",
+   "fame": 0.62,
+   "students": 12946,
+   "description": "Catholic university located in Notre Dame, Indiana, United States",
+   "hook": "is the Catholic school whose football team is nicknamed the Fighting Irish",
+   "known": 0.6,
+   "kind": "us private research"
+  },
+  {
+   "label": "Massachusetts Institute of Technology",
+   "qid": "Q49108",
+   "fame": 0.615,
+   "students": 11836,
+   "description": "private university in Cambridge, Massachusetts, USA, founded 1861",
+   "hook": "is the science and engineering school famous for elaborate campus hacks and pranks",
+   "known": 0.95,
+   "kind": "us private research"
+  },
+  {
+   "label": "University of Pennsylvania",
+   "qid": "Q49117",
+   "fame": 0.615,
+   "students": 26552,
+   "description": "private research university in Philadelphia, Pennsylvania, United States",
+   "hook": "was founded by Benjamin Franklin and is home to the famous Wharton business school",
+   "known": 0.8,
+   "kind": "ivy league"
+  },
+  {
+   "label": "University of Cambridge",
+   "qid": "Q35794",
+   "fame": 0.611,
+   "students": 18977,
+   "description": "collegiate public research university in Cambridge, England, United Kingdom",
+   "hook": "counts Isaac Newton, Charles Darwin and Stephen Hawking among its famous alumni",
+   "known": 0.95,
+   "kind": "uk university"
+  },
+  {
+   "label": "Princeton University",
+   "qid": "Q21578",
+   "fame": 0.608,
+   "students": 8799,
+   "description": "private Ivy League research university in Princeton, New Jersey, United States",
+   "hook": "is the Ivy League school with a tiger mascot and a tradition of eating clubs",
+   "known": 0.95,
+   "kind": "ivy league"
+  },
+  {
+   "label": "University of California, Berkeley",
+   "qid": "Q168756",
+   "fame": 0.604,
+   "students": 45057,
+   "description": "public university in Berkeley, California, USA",
+   "hook": "is the flagship public school famed for 1960s student protests and its Golden Bears teams",
+   "known": 0.8,
+   "kind": "us public research"
+  },
+  {
+   "label": "Northwestern University",
+   "qid": "Q309350",
+   "fame": 0.601,
+   "students": 20360,
+   "description": "private university in Evanston, Illinois, U.S.",
+   "hook": "is the Big Ten private school with a renowned journalism program and Wildcats teams",
+   "known": 0.6,
+   "kind": "us private research"
+  },
+  {
+   "label": "University of Texas at Austin",
+   "qid": "Q49213",
+   "fame": 0.594,
+   "students": 40804,
+   "description": "public university in Austin, Texas, USA",
+   "hook": "is the school whose football team, the Longhorns, wears burnt orange",
+   "known": 0.8,
+   "kind": "us public research"
+  },
+  {
+   "label": "Brown University",
+   "qid": "Q49114",
+   "fame": 0.592,
+   "students": 10338,
+   "description": "private university in Providence, Rhode Island, United States",
+   "hook": "is the Ivy League school famous for an open curriculum with no required courses",
+   "known": 0.8,
+   "kind": "ivy league"
+  },
+  {
+   "label": "Dartmouth College",
+   "qid": "Q49116",
+   "fame": 0.592,
+   "students": 6761,
+   "description": "private university in Hanover, New Hampshire, US",
+   "hook": "is the smallest Ivy League school, famous for its outdoor culture and Big Green teams",
+   "known": 0.8,
+   "kind": "ivy league"
+  },
+  {
+   "label": "Rutgers University",
+   "qid": "Q499451",
+   "fame": 0.59,
+   "students": 61260,
+   "description": "multi-campus public research university in New Jersey, United States",
+   "hook": "is the school that played in the very first college football game, against Princeton",
+   "known": 0.4,
+   "kind": "us public research"
+  },
+  {
+   "label": "University of Southern California",
+   "qid": "Q4614",
+   "fame": 0.588,
+   "students": 48500,
+   "description": "private university in Los Angeles, California, United States",
+   "hook": "is the Trojans school known for a famed film program that counts George Lucas as an alumnus",
+   "known": 0.8,
+   "kind": "us private research"
+  },
+  {
+   "label": "University of Michigan",
+   "qid": "Q230492",
+   "fame": 0.585,
+   "students": 58910,
+   "description": "public research university in Ann Arbor, Michigan",
+   "hook": "is the Wolverines school whose football stadium, the Big House, is among the largest in the world",
+   "known": 0.6,
+   "kind": "us public research"
+  },
+  {
+   "label": "Rice University",
+   "qid": "Q842909",
+   "fame": 0.578,
+   "students": 7956,
+   "description": "private university in Houston, Texas, USA",
+   "hook": "is the school where President Kennedy gave his famous speech about going to the moon",
+   "known": 0.6,
+   "kind": "us private research"
+  },
+  {
+   "label": "New York University",
+   "qid": "Q49210",
+   "fame": 0.576,
+   "students": 57270,
+   "description": "private university in New York City",
+   "hook": "is the school whose campus is built around Washington Square Park",
+   "known": 0.6,
+   "kind": "us private research"
+  },
+  {
+   "label": "United States Military Academy",
+   "qid": "Q9219",
+   "fame": 0.574,
+   "students": 4487,
+   "description": "federal service academy in West Point, New York, United States",
+   "hook": "is the Army's officer-training school on the Hudson River whose graduates include Grant and Eisenhower",
+   "known": 0.4,
+   "kind": "us military academy"
+  },
+  {
+   "label": "Carnegie Mellon University",
+   "qid": "Q190080",
+   "fame": 0.572,
+   "students": 15136,
+   "description": "private research university in Pittsburgh, Pennsylvania, United States",
+   "hook": "is the school famed for robotics, computer science and a top drama program",
+   "known": 0.6,
+   "kind": "us private research"
+  },
+  {
+   "label": "Duke University",
+   "qid": "Q168751",
+   "fame": 0.571,
+   "students": 18003,
+   "description": "private university in Durham, North Carolina, USA",
+   "hook": "is the Blue Devils school whose basketball team was long coached by Mike Krzyzewski",
+   "known": 0.8,
+   "kind": "us private research"
+  },
+  {
+   "label": "University of California, Los Angeles",
+   "qid": "Q174710",
+   "fame": 0.568,
+   "students": 46000,
+   "description": "public university in Los Angeles, California, USA",
+   "hook": "is the Bruins school whose basketball team won ten titles under coach John Wooden",
+   "known": 0.8,
+   "kind": "us public research"
+  },
+  {
+   "label": "Purdue University",
+   "qid": "Q217741",
+   "fame": 0.564,
+   "students": 59034,
+   "description": "public research university in West Lafayette, Indiana, United States",
+   "hook": "is the Boilermakers school known as the cradle of astronauts, including Neil Armstrong",
+   "known": 0.4,
+   "kind": "us public research"
+  },
+  {
+   "label": "California Institute of Technology",
+   "qid": "Q161562",
+   "fame": 0.56,
+   "students": 2397,
+   "description": "private research university located in Pasadena, California, USA",
+   "hook": "is the tiny science school that manages NASA's Jet Propulsion Laboratory",
+   "known": 0.4,
+   "kind": "us private research"
+  },
+  {
+   "label": "University of Washington",
+   "qid": "Q219563",
+   "fame": 0.559,
+   "students": 47571,
+   "description": "public research university in Seattle, Washington, United States",
+   "hook": "is the Huskies school known for a cherry-blossom quad and a proud rowing tradition",
+   "known": 0.4,
+   "kind": "us public research"
+  },
+  {
+   "label": "University of Florida",
+   "qid": "Q501758",
+   "fame": 0.556,
+   "students": 49500,
+   "description": "public research university in Gainesville, Florida, United States",
+   "hook": "is the Gators school where the sports drink Gatorade was invented",
+   "known": 0.4,
+   "kind": "us public research"
+  },
+  {
+   "label": "Georgetown University",
+   "qid": "Q333886",
+   "fame": 0.549,
+   "students": 17500,
+   "description": "private university in Washington, D.C., United States",
+   "hook": "is the Jesuit school whose basketball team is called the Hoyas",
+   "known": 0.4,
+   "kind": "us private research"
+  },
+  {
+   "label": "University of Chicago",
+   "qid": "Q131252",
+   "fame": 0.549,
+   "students": 18504,
+   "description": "private university in Chicago, Illinois",
+   "hook": "is the school where Enrico Fermi's team achieved the first self-sustaining nuclear chain reaction",
+   "known": 0.6,
+   "kind": "us private research"
+  },
+  {
+   "label": "Syracuse University",
+   "qid": "Q617433",
+   "fame": 0.548,
+   "students": 22850,
+   "description": "private university in Syracuse, New York, United States",
+   "hook": "is the school whose sports teams are nicknamed the Orange, with a long-running basketball powerhouse",
+   "known": 0.2,
+   "kind": "us private research"
+  },
+  {
+   "label": "Johns Hopkins University",
+   "qid": "Q193727",
+   "fame": 0.547,
+   "students": 25151,
+   "description": "private university in Baltimore, Maryland, USA",
+   "hook": "is the research school renowned for its medical school and affiliated hospital",
+   "known": 0.4,
+   "kind": "us private research"
+  },
+  {
+   "label": "London School of Economics and Political Science",
+   "qid": "Q174570",
+   "fame": 0.544,
+   "students": 9218,
+   "description": "public university in London, United Kingdom",
+   "hook": "has alumni who include many world leaders and Nobel-winning thinkers of society and money",
+   "known": 0.6,
+   "kind": "uk university"
+  },
+  {
+   "label": "Ohio State University",
+   "qid": "Q309331",
+   "fame": 0.543,
+   "students": 61419,
+   "description": "public research university in Columbus, Ohio, United States",
+   "hook": "is the Buckeyes school whose football team plays in a huge stadium known as the Horseshoe",
+   "known": 0.4,
+   "kind": "us public research"
+  },
+  {
+   "label": "University of St Andrews",
+   "qid": "Q216273",
+   "fame": 0.528,
+   "students": 10425,
+   "description": "university in St Andrews, Fife, Scotland, UK",
+   "hook": "is the school where Prince William met Kate Middleton and the home of golf's Old Course",
+   "known": 0.2,
+   "kind": "uk university"
+  },
+  {
+   "label": "McGill University",
+   "qid": "Q201492",
+   "fame": 0.524,
+   "students": 40036,
+   "description": "English-language public research university in Montreal, Quebec, Canada",
+   "hook": "is the school often nicknamed the Harvard of the North",
+   "known": 0.4,
+   "kind": "canadian university"
+  },
+  {
+   "label": "Boston University",
+   "qid": "Q49110",
+   "fame": 0.52,
+   "students": 30009,
+   "description": "private research university in Boston, Massachusetts, United States",
+   "hook": "is the Terriers school where Martin Luther King Jr. earned his doctorate",
+   "known": 0.2,
+   "kind": "us private research"
+  },
+  {
+   "label": "King's College London",
+   "qid": "Q245247",
+   "fame": 0.519,
+   "students": 18630,
+   "description": "public research university in London, United Kingdom",
+   "hook": "was founded by George IV and the Duke of Wellington and houses a Florence Nightingale nursing school",
+   "known": 0.4,
+   "kind": "uk university"
+  },
+  {
+   "label": "University of Virginia",
+   "qid": "Q213439",
+   "fame": 0.518,
+   "students": 23994,
+   "description": "public university in Charlottesville, Virginia",
+   "hook": "was founded by Thomas Jefferson and is famed for its domed Rotunda",
+   "known": 0.4,
+   "kind": "us public research"
+  },
+  {
+   "label": "University of Bologna",
+   "qid": "Q131262",
+   "fame": 0.516,
+   "students": 96945,
+   "description": "university in Bologna, Italy",
+   "hook": "is widely considered the oldest continuously operating school of higher learning in the world",
+   "known": 0.2,
+   "kind": "european university"
+  },
+  {
+   "label": "George Washington University",
+   "qid": "Q432637",
+   "fame": 0.514,
+   "students": 24500,
+   "description": "private university in Washington, D.C., USA",
+   "hook": "is the Colonials school located a short walk from the White House",
+   "known": 0.2,
+   "kind": "us private research"
+  },
+  {
+   "label": "University of North Carolina at Chapel Hill",
+   "qid": "Q192334",
+   "fame": 0.51,
+   "students": 30092,
+   "description": "public research university in Chapel Hill, North Carolina, United States",
+   "hook": "is the Tar Heels school where Michael Jordan played college basketball",
+   "known": 0.4,
+   "kind": "us public research"
+  },
+  {
+   "label": "University of Toronto",
+   "qid": "Q180865",
+   "fame": 0.509,
+   "students": 102431,
+   "description": "public research university in the Greater Toronto Area of Ontario, Canada",
+   "hook": "is the school where insulin was co-discovered by Banting and Best",
+   "known": 0.4,
+   "kind": "canadian university"
+  },
+  {
+   "label": "University of Edinburgh",
+   "qid": "Q160302",
+   "fame": 0.508,
+   "students": 26138,
+   "description": "public university in Edinburgh, Scotland, United Kingdom",
+   "hook": "is linked to the research institute that cloned Dolly the sheep",
+   "known": 0.4,
+   "kind": "uk university"
+  },
+  {
+   "label": "Imperial College London",
+   "qid": "Q189022",
+   "fame": 0.505,
+   "students": 17565,
+   "description": "public research university located in London, United Kingdom",
+   "hook": "is the science, engineering and medicine specialist in South Kensington, close to major museums",
+   "known": 0.4,
+   "kind": "uk university"
+  },
+  {
+   "label": "University of Minnesota",
+   "qid": "Q238101",
+   "fame": 0.504,
+   "students": 67949,
+   "description": "public research university in Minneapolis and Saint Paul, Minnesota, United States",
+   "hook": "is the Golden Gophers school whose campus straddles the Twin Cities",
+   "known": 0.2,
+   "kind": "us public research"
+  },
+  {
+   "label": "University of Wisconsin–Madison",
+   "qid": "Q838330",
+   "fame": 0.504,
+   "students": 45540,
+   "description": "public research university in Madison, Wisconsin, USA",
+   "hook": "is the Badgers school with a lakeside campus and colourful chairs on its Union Terrace",
+   "known": 0.2,
+   "kind": "us public research"
+  },
+  {
+   "label": "ETH Zurich",
+   "qid": "Q11942",
+   "fame": 0.502,
+   "students": 23420,
+   "description": "public research university in Zurich",
+   "hook": "is the Swiss science and engineering school where Albert Einstein studied",
+   "known": 0.2,
+   "kind": "european university"
+  },
+  {
+   "label": "York University",
+   "qid": "Q849751",
+   "fame": 0.5,
+   "students": 53974,
+   "description": "public research university in Toronto, Ontario, Canada",
+   "hook": "is a huge school known for its Schulich School of Business",
+   "known": 0.05,
+   "kind": "canadian university"
+  },
+  {
+   "label": "Michigan State University",
+   "qid": "Q270222",
+   "fame": 0.499,
+   "students": 45314,
+   "description": "public research university in East Lansing, Michigan, United States",
+   "hook": "is the Spartans school where Magic Johnson led his team to a national basketball title",
+   "known": 0.2,
+   "kind": "us public research"
+  },
+  {
+   "label": "Indiana University Bloomington",
+   "qid": "Q1079140",
+   "fame": 0.493,
+   "students": 43064,
+   "description": "public research university located in Bloomington, Indiana, U.S. (flagship campus of the Indiana University system)",
+   "hook": "is the Hoosiers school famed for basketball coach Bobby Knight and five national titles",
+   "known": 0.2,
+   "kind": "us public research"
+  },
+  {
+   "label": "University of Pittsburgh",
+   "qid": "Q235034",
+   "fame": 0.489,
+   "students": 32277,
+   "description": "state-related research university located in Pittsburgh, Pennsylvania, United States",
+   "hook": "is the Panthers school where Jonas Salk developed the polio vaccine",
+   "known": 0.2,
+   "kind": "us private research"
+  },
+  {
+   "label": "University of California, Davis",
+   "qid": "Q129421",
+   "fame": 0.48,
+   "students": 39074,
+   "description": "public university in the Davis, California area; part of the University of California system",
+   "hook": "is the Aggies school famous for agriculture, veterinary medicine and wine science",
+   "known": 0.05,
+   "kind": "us public research"
+  },
+  {
+   "label": "Durham University",
+   "qid": "Q458393",
+   "fame": 0.479,
+   "students": 19520,
+   "description": "collegiate public research university in Durham, England, United Kingdom",
+   "hook": "is the school whose buildings include a Norman castle beside a famous cathedral",
+   "known": 0.2,
+   "kind": "uk university"
+  },
+  {
+   "label": "University of Arizona",
+   "qid": "Q503419",
+   "fame": 0.477,
+   "students": 45601,
+   "description": "public university in Tucson, Arizona, United States",
+   "hook": "is the Wildcats school famous for a lab that casts giant telescope mirrors",
+   "known": 0.05,
+   "kind": "us public research"
+  },
+  {
+   "label": "University of British Columbia",
+   "qid": "Q391028",
+   "fame": 0.472,
+   "students": 71201,
+   "description": "public research university in British Columbia, Canada",
+   "hook": "is the school on a peninsula whose museum displays many totem poles",
+   "known": 0.2,
+   "kind": "canadian university"
+  },
+  {
+   "label": "University of California, San Diego",
+   "qid": "Q622664",
+   "fame": 0.471,
+   "students": 42875,
+   "description": "public university in La Jolla, California, United States",
+   "hook": "is the Tritons school known for Scripps oceanography and a flying-saucer-like library",
+   "known": 0.05,
+   "kind": "us public research"
+  },
+  {
+   "label": "Paris Institute of Political Studies",
+   "qid": "Q859363",
+   "fame": 0.47,
+   "students": 11196,
+   "description": "higher-education institution in Paris, France",
+   "hook": "is the elite school nicknamed Sciences Po that has trained many presidents and prime ministers",
+   "known": 0.2,
+   "kind": "european university"
+  },
+  {
+   "label": "Lomonosov Moscow State University",
+   "qid": "Q13164",
+   "fame": 0.469,
+   "students": 38150,
+   "description": "public research university in Moscow, Russia",
+   "hook": "is the school housed in a huge Stalinist skyscraper on the Sparrow Hills",
+   "known": 0.4,
+   "kind": "international university"
+  },
+  {
+   "label": "Peking University",
+   "qid": "Q16952",
+   "fame": 0.467,
+   "students": 44730,
+   "description": "university in Beijing, China",
+   "hook": null,
+   "known": 0.2,
+   "kind": "international university"
+  },
+  {
+   "label": "University of Birmingham",
+   "qid": "Q223429",
+   "fame": 0.467,
+   "students": 30832,
+   "description": "university in Birmingham, England, United Kingdom",
+   "hook": null,
+   "known": 0.05,
+   "kind": "uk university"
+  },
+  {
+   "label": "Tel Aviv University",
+   "qid": "Q319239",
+   "fame": 0.462,
+   "students": 27173,
+   "description": "University in Tel Aviv, Israel",
+   "hook": null,
+   "known": 0.05,
+   "kind": "international university"
+  },
+  {
+   "label": "University of Sydney",
+   "qid": "Q487556",
+   "fame": 0.458,
+   "students": 63602,
+   "description": "Australian university founded in 1850",
+   "hook": null,
+   "known": 0.05,
+   "kind": "international university"
+  },
+  {
+   "label": "University of Tokyo",
+   "qid": "Q7842",
+   "fame": 0.457,
+   "students": 28918,
+   "description": "national university in Tokyo, Japan",
+   "hook": null,
+   "known": 0.2,
+   "kind": "international university"
+  },
+  {
+   "label": "University of Göttingen",
+   "qid": "Q152838",
+   "fame": 0.456,
+   "students": 31619,
+   "description": "university in the city of Göttingen, Germany",
+   "hook": null,
+   "known": 0.05,
+   "kind": "european university"
+  }
+ ]
+}

@@ -1,0 +1,292 @@
+{
+ "id": "table.history.site-cultures",
+ "kind": "table",
+ "title": "Famous archaeological sites and the ancient culture that built them",
+ "genre": "society",
+ "category": "history",
+ "topic": "archaeology",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?cultureLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?culture) (COUNT(DISTINCT ?c) AS ?n) WHERE { ?item wdt:P31/wdt:P279* wd:Q839954 ; wdt:P2596 ?c ; wikibase:sitelinks ?sl . FILTER(?sl >= 20) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?n = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T01:52:27.676Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T01:52:27.676Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "culture",
+   "label": "Culture",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "site",
+  "many": "sites",
+  "hookAsk": "Which site {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "culture": {
+    "role": "link",
+    "pick": "Which culture built {label}?",
+    "statement": "{label} was built by {value}.",
+    "match": "Match each site to the culture that built it.",
+    "odd": "Three of these sites were built by {value}. Which one wasn't?",
+    "all": "Tap all {n} sites built by {value}.",
+    "reverse": "Which of these sites was built by {value}?"
+   }
+  },
+  "theLabels": [
+   "Colosseum",
+   "Terracotta Army",
+   "Acropolis of Athens",
+   "Temple of Ephesian Artemis",
+   "Valley of the Kings",
+   "Circus Maximus",
+   "Roman Forum",
+   "Karnak Temple Complex",
+   "Panathenaic Stadium"
+  ]
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Colosseum",
+   "qid": "Q10285",
+   "fame": 0.666,
+   "culture": "Ancient Rome",
+   "description": "ancient Roman amphitheatre, a landmark of Rome, Italy",
+   "hook": "hosted gladiator fights and other bloody public spectacles before huge crowds",
+   "known": 0.8,
+   "kind": "roman"
+  },
+  {
+   "label": "Machu Picchu",
+   "qid": "Q676203",
+   "fame": 0.663,
+   "culture": "Inca culture",
+   "description": "15th-century Inca citadel in the Peruvian Andes and UNESCO World Heritage Site",
+   "hook": "is a mountaintop citadel nicknamed the lost city in the clouds",
+   "known": 0.8,
+   "kind": "americas"
+  },
+  {
+   "label": "Pompeii",
+   "qid": "Q43332",
+   "fame": 0.651,
+   "culture": "Ancient Rome",
+   "description": "ancient Roman city near modern Naples, Italy",
+   "hook": "was buried under volcanic ash when Mount Vesuvius erupted",
+   "known": 0.8,
+   "kind": "roman"
+  },
+  {
+   "label": "Petra",
+   "qid": "Q5788",
+   "fame": 0.626,
+   "culture": "Nabataean kingdom",
+   "description": "ancient rock-cut historical city in Jordan",
+   "hook": "is a city carved into rose-red cliffs and reached through a narrow canyon called the Siq",
+   "known": 0.6,
+   "kind": "other"
+  },
+  {
+   "label": "Terracotta Army",
+   "qid": "Q47672",
+   "fame": 0.617,
+   "culture": "Qin dynasty",
+   "description": "collection of ancient Chinese military statues",
+   "hook": "is a vast buried force of thousands of life-size clay soldiers guarding an emperor's tomb",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "Hadrian's Wall",
+   "qid": "Q57357",
+   "fame": 0.611,
+   "culture": "Ancient Rome",
+   "description": "defensive fortification in Roman Britain",
+   "hook": "is a long stone barrier that marked the northern frontier of an empire in Britain",
+   "known": 0.6,
+   "kind": "roman"
+  },
+  {
+   "label": "Acropolis of Athens",
+   "qid": "Q131013",
+   "fame": 0.61,
+   "culture": "Ancient Greece",
+   "description": "ancient citadel above the city of Athens",
+   "hook": "is a rocky hilltop citadel crowned by the Parthenon",
+   "known": 0.8,
+   "kind": "greek"
+  },
+  {
+   "label": "Chichen Itza",
+   "qid": "Q5859",
+   "fame": 0.59,
+   "culture": "Maya civilization",
+   "description": "pre-Columbian Maya city in Mexico",
+   "hook": "has a stepped pyramid where shadows form a slithering serpent at the equinox",
+   "known": 0.6,
+   "kind": "americas"
+  },
+  {
+   "label": "Ephesus",
+   "qid": "Q47611",
+   "fame": 0.579,
+   "culture": "Ancient Greece",
+   "description": "ancient Greek city in Anatolia",
+   "hook": "is a port city known for its grand library facade and huge theatre",
+   "known": 0.4,
+   "kind": "greek"
+  },
+  {
+   "label": "Temple of Ephesian Artemis",
+   "qid": "Q43018",
+   "fame": 0.566,
+   "culture": "Ancient Greece",
+   "description": "temple in Ephesus, one of the Seven Wonders of the Ancient World",
+   "hook": "was a colossal marble shrine counted among the original Seven Wonders of the world",
+   "known": 0.6,
+   "kind": "greek"
+  },
+  {
+   "label": "Cahokia",
+   "qid": "Q333661",
+   "fame": 0.559,
+   "culture": "Mississippian culture",
+   "description": "archaeological site near East St. Louis, Illinois, USA",
+   "hook": null,
+   "known": 0.2,
+   "kind": "americas"
+  },
+  {
+   "label": "Delphi",
+   "qid": "Q75459",
+   "fame": 0.545,
+   "culture": "Ancient Greece",
+   "description": "ancient town in Fokida, Greece",
+   "hook": "housed a famous oracle who gave cryptic prophecies to visitors seeking guidance",
+   "known": 0.4,
+   "kind": "greek"
+  },
+  {
+   "label": "Knossos",
+   "qid": "Q173527",
+   "fame": 0.54,
+   "culture": "Minoan civilization",
+   "description": "ancient Minoan through Roman administrative center and city",
+   "hook": "is the palace linked to the legend of the labyrinth and the Minotaur",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Valley of the Kings",
+   "qid": "Q133423",
+   "fame": 0.521,
+   "culture": "Ancient Egypt",
+   "description": "necropolis in ancient Egypt",
+   "hook": "is a desert gorge of burial tombs where Tutankhamun's resting place was discovered",
+   "known": 0.6,
+   "kind": "egyptian"
+  },
+  {
+   "label": "Circus Maximus",
+   "qid": "Q207808",
+   "fame": 0.506,
+   "culture": "Ancient Rome",
+   "description": "Ancient Roman circus in Rome",
+   "hook": "was a huge chariot-racing stadium that held hundreds of thousands of spectators",
+   "known": 0.4,
+   "kind": "roman"
+  },
+  {
+   "label": "Roman Forum",
+   "qid": "Q180212",
+   "fame": 0.503,
+   "culture": "Ancient Rome",
+   "description": "Ancient Roman center of the city, a landmark of Rome, Italy",
+   "hook": "was the bustling heart of public life, lined with temples and government halls",
+   "known": 0.4,
+   "kind": "roman"
+  },
+  {
+   "label": "Abu Simbel",
+   "qid": "Q134140",
+   "fame": 0.493,
+   "culture": "Ancient Egypt",
+   "description": "UNESCO World Heritage Site in southern Egypt",
+   "hook": "has giant rock-cut statues of a pharaoh that were moved to save them from a rising lake",
+   "known": 0.6,
+   "kind": "egyptian"
+  },
+  {
+   "label": "Tikal",
+   "qid": "Q181172",
+   "fame": 0.483,
+   "culture": "Maya civilization",
+   "description": "ruins of major ancient Maya city",
+   "hook": "is a jungle city whose towering temple-pyramids rise above the rainforest canopy",
+   "known": 0.4,
+   "kind": "americas"
+  },
+  {
+   "label": "Karnak Temple Complex",
+   "qid": "Q522862",
+   "fame": 0.481,
+   "culture": "Ancient Egypt",
+   "description": "ancient Egyptian temple complex",
+   "hook": "is a sprawling religious site famous for its forest of giant carved stone columns",
+   "known": 0.6,
+   "kind": "egyptian"
+  },
+  {
+   "label": "Olympia",
+   "qid": "Q38888",
+   "fame": 0.473,
+   "culture": "Ancient Greece",
+   "description": "town on the Peloponnese peninsula in Greece, site of the ancient Olympic Games",
+   "hook": "was the sanctuary where athletes competed in the original Olympic games",
+   "known": 0.6,
+   "kind": "greek"
+  },
+  {
+   "label": "Harappa",
+   "qid": "Q185562",
+   "fame": 0.463,
+   "culture": "Indus Valley Civilization",
+   "description": "archaeological site in Punjab, Pakistan",
+   "hook": null,
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Panathenaic Stadium",
+   "qid": "Q208811",
+   "fame": 0.456,
+   "culture": "Ancient Greece",
+   "description": "stadium in Athens, Greece",
+   "hook": "is an all-marble arena that hosted the first modern Olympics",
+   "known": 0.6,
+   "kind": "greek"
+  }
+ ]
+}

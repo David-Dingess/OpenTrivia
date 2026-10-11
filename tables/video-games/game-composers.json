@@ -1,0 +1,991 @@
+{
+ "id": "table.video-games.game-composers",
+ "kind": "table",
+ "title": "Video games and their composer",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "soundtracks",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?compLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?comp) (COUNT(DISTINCT ?c) AS ?nComp) WHERE { ?item wdt:P31 wd:Q7889 ; wdt:P86 ?c ; wikibase:sitelinks ?sl . FILTER(?sl >= 25) FILTER NOT EXISTS { ?item wdt:P852 ?esrb . VALUES ?esrb { wd:Q14864331 wd:Q14864332 wd:Q110488287 wd:Q124356066 } } FILTER NOT EXISTS { ?item wdt:P908 wd:Q14915517 } } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nComp = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T12:29:24.594Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T12:29:24.594Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "composer",
+   "label": "Composer",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "game",
+  "many": "games",
+  "hookAsk": "Which game {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "composer": {
+    "role": "link",
+    "pick": "Who composed the music for {label}?",
+    "statement": "The music for {label} was composed by {value}.",
+    "match": "Match each game to its composer.",
+    "odd": "Three of these have music composed by {value}. Which one wasn't?",
+    "all": "Tap all {n} games with music composed by {value}.",
+    "reverse": "Which of these did {value} compose the music for?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The Legend of Zelda: Ocarina of Time",
+   "qid": "Q213911",
+   "fame": 0.707,
+   "composer": "Koji Kondo",
+   "description": "1998 video game for the Nintendo 64",
+   "hook": "follows a young hero who journeys between two ages to stop a desert warlord from seizing a sacred power",
+   "known": 0.8,
+   "kind": "zelda"
+  },
+  {
+   "label": "Final Fantasy VII",
+   "qid": "Q214232",
+   "fame": 0.624,
+   "composer": "Nobuo Uematsu",
+   "description": "1997 video game",
+   "hook": "follows a band of rebels fighting a shadowy corporation and the silver-haired swordsman hunting them",
+   "known": 0.8,
+   "kind": "final fantasy"
+  },
+  {
+   "label": "Spider-Man",
+   "qid": "Q25340029",
+   "fame": 0.624,
+   "composer": "John Paesano",
+   "description": "2018 video game developed by Insomniac Games",
+   "hook": "lets players swing through a living city as a wall-crawling hero fighting off a gang of masked villains",
+   "known": 0.8,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Deltarune",
+   "qid": "Q58045522",
+   "fame": 0.621,
+   "composer": "Toby Fox",
+   "description": "2018 independent video game developed by Toby Fox",
+   "hook": "follows a human and a prince from another world exploring dark realms hidden behind sealed doors",
+   "known": 0.6,
+   "kind": "indie"
+  },
+  {
+   "label": "Undertale",
+   "qid": "Q21039924",
+   "fame": 0.621,
+   "composer": "Toby Fox",
+   "description": "2015 role-playing video game",
+   "hook": "follows a child who falls into a hidden realm of monsters and can choose mercy over combat",
+   "known": 0.8,
+   "kind": "indie"
+  },
+  {
+   "label": "PUBG: Battlegrounds",
+   "qid": "Q28937399",
+   "fame": 0.586,
+   "composer": "Tom Salta",
+   "description": "2017 video game",
+   "hook": "drops a hundred strangers onto an island where only the last person standing wins",
+   "known": 0.8,
+   "kind": "other"
+  },
+  {
+   "label": "Super Mario Bros.",
+   "qid": "Q11168",
+   "fame": 0.584,
+   "composer": "Koji Kondo",
+   "description": "1985 platform video game",
+   "hook": "sends a plumber through pipes and castles to rescue a kidnapped princess from a giant turtle king",
+   "known": 0.95,
+   "kind": "mario"
+  },
+  {
+   "label": "Among Us",
+   "qid": "Q96417649",
+   "fame": 0.582,
+   "composer": "Forest Willard",
+   "description": "2018 video game developed by InnerSloth",
+   "hook": "puts a crew of colorful astronauts aboard a spaceship where one hidden killer is picking them off",
+   "known": 0.95,
+   "kind": "other"
+  },
+  {
+   "label": "Tekken 3",
+   "qid": "Q1062106",
+   "fame": 0.581,
+   "composer": "Nobuyoshi Sano",
+   "description": "1997 fighting video game",
+   "hook": "pits fighters from around the globe against each other in a martial arts tournament for a family fortune",
+   "known": 0.6,
+   "kind": "fighting"
+  },
+  {
+   "label": "The Legend of Zelda",
+   "qid": "Q12395",
+   "fame": 0.579,
+   "composer": "Koji Kondo",
+   "description": "1986 action-adventure video game",
+   "hook": "sends an elf-eared boy through dungeons to gather scattered fragments of a golden triangle relic",
+   "known": 0.85,
+   "kind": "zelda"
+  },
+  {
+   "label": "Alan Wake",
+   "qid": "Q575505",
+   "fame": 0.578,
+   "composer": "Petri Alanko",
+   "description": "2010 video game",
+   "hook": "follows a novelist battling shadowy creatures in a foggy mountain town while searching for his missing wife",
+   "known": 0.4,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Hollow Knight",
+   "qid": "Q29300592",
+   "fame": 0.578,
+   "composer": "Christopher Larkin",
+   "description": "2017 video game",
+   "hook": "sends a small silent warrior exploring a ruined insect kingdom buried beneath a mountain",
+   "known": 0.4,
+   "kind": "indie"
+  },
+  {
+   "label": "The Legend of Zelda: Majora's Mask",
+   "qid": "Q732943",
+   "fame": 0.567,
+   "composer": "Koji Kondo",
+   "description": "2000 video game",
+   "hook": "traps a young hero in a repeating countdown trying to stop a cursed moon from crashing into a festival town",
+   "known": 0.7,
+   "kind": "zelda"
+  },
+  {
+   "label": "The Legend of Zelda: Twilight Princess",
+   "qid": "Q735613",
+   "fame": 0.566,
+   "composer": "Tōru Minegishi",
+   "description": "2006 action-adventure video game",
+   "hook": "has a farm boy transform into a wolf to lift a creeping darkness spreading across his homeland",
+   "known": 0.6,
+   "kind": "zelda"
+  },
+  {
+   "label": "Stardew Valley",
+   "qid": "Q23013817",
+   "fame": 0.565,
+   "composer": "Eric Barone",
+   "description": "2016 indie farming simulation role-playing video game",
+   "hook": "lets a burned-out office worker rebuild a rundown farm left by a grandparent into a thriving homestead",
+   "known": 0.6,
+   "kind": "indie"
+  },
+  {
+   "label": "Bully",
+   "qid": "Q822849",
+   "fame": 0.56,
+   "composer": "Shawn Lee",
+   "description": "2007 video game",
+   "hook": "follows a troublemaking teen navigating cliques and rivalries at a boarding school he was sent to",
+   "known": 0.3,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Kingdom Hearts",
+   "qid": "Q225912",
+   "fame": 0.558,
+   "composer": "Yoko Shimomura",
+   "description": "2002 video game",
+   "hook": "sends a boy wielding a giant key across worlds borrowed from classic films to fight shadow creatures",
+   "known": 0.6,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Uncharted 4: A Thief's End",
+   "qid": "Q16681843",
+   "fame": 0.558,
+   "composer": "Henry Jackman",
+   "description": "2016 video game",
+   "hook": "sends a retired treasure hunter chasing a long-lost pirate fortune to reunite with his estranged brother",
+   "known": 0.7,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Shadow of the Colossus",
+   "qid": "Q846051",
+   "fame": 0.553,
+   "composer": "Kow Otani",
+   "description": "2005 video game",
+   "hook": "sends a lone rider across a barren land to bring down a series of towering ancient giants",
+   "known": 0.6,
+   "kind": "action adventure"
+  },
+  {
+   "label": "The Legend of Zelda: A Link to the Past",
+   "qid": "Q370055",
+   "fame": 0.544,
+   "composer": "Koji Kondo",
+   "description": "1991 video game on the Super Nintendo Entertainment System",
+   "hook": "sends a boy into a parallel dark realm to rescue princesses and stop a wizard's return",
+   "known": 0.7,
+   "kind": "zelda"
+  },
+  {
+   "label": "Super Smash Bros. Ultimate",
+   "qid": "Q54093632",
+   "fame": 0.541,
+   "composer": "Hideki Sakamoto",
+   "description": "2018 fighting video game",
+   "hook": "gathers nearly every character from a beloved console maker's history into one giant brawl",
+   "known": 0.7,
+   "kind": "fighting"
+  },
+  {
+   "label": "Super Mario 64",
+   "qid": "Q216995",
+   "fame": 0.537,
+   "composer": "Koji Kondo",
+   "description": "1996 three-dimensional platform video game developed by Nintendo",
+   "hook": "lets a plumber leap through paintings into fully three-dimensional worlds to rescue a kidnapped princess",
+   "known": 0.8,
+   "kind": "mario"
+  },
+  {
+   "label": "The Binding of Isaac",
+   "qid": "Q1041427",
+   "fame": 0.537,
+   "composer": "Danny Baranowsky",
+   "description": "2011 roguelike video game",
+   "hook": "sends a boy fleeing his basement through randomly generated rooms of monsters after a disturbing request",
+   "known": 0.2,
+   "kind": "indie"
+  },
+  {
+   "label": "The Legend of Zelda: The Wind Waker",
+   "qid": "Q852563",
+   "fame": 0.534,
+   "composer": "Tōru Minegishi",
+   "description": "2002 video game",
+   "hook": "sends a boy sailing a vast flooded sea in search of his kidnapped sister",
+   "known": 0.7,
+   "kind": "zelda"
+  },
+  {
+   "label": "Hades",
+   "qid": "Q59756366",
+   "fame": 0.529,
+   "composer": "Darren Korb",
+   "description": "2020 action role-playing game developed by Supergiant Games",
+   "hook": "has the ruler of the underworld's son repeatedly fight his way up to the surface world",
+   "known": 0.4,
+   "kind": "indie"
+  },
+  {
+   "label": "Batman: Arkham Asylum",
+   "qid": "Q746228",
+   "fame": 0.528,
+   "composer": "Ron Fish",
+   "description": "2009 action-adventure game",
+   "hook": "traps a caped vigilante inside a sprawling prison-hospital taken over by his own rogues' gallery",
+   "known": 0.7,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Pokémon Go",
+   "qid": "Q20966579",
+   "fame": 0.528,
+   "composer": "Junichi Masuda",
+   "description": "augmented reality mobile game based on the Pokémon franchise",
+   "hook": "sends players walking around real streets and parks to catch creatures that appear through their phone camera",
+   "known": 0.95,
+   "kind": "other"
+  },
+  {
+   "label": "Street Fighter II",
+   "qid": "Q1133204",
+   "fame": 0.528,
+   "composer": "Yoko Shimomura",
+   "description": "1991 video game developed by Capcom",
+   "hook": "pits combatants from different countries against each other in a globe-spanning martial arts tournament",
+   "known": 0.6,
+   "kind": "fighting"
+  },
+  {
+   "label": "Call of Duty",
+   "qid": "Q211096",
+   "fame": 0.527,
+   "composer": "Michael Giacchino",
+   "description": "2003 video game",
+   "hook": "puts players into gritty historical battles from the perspective of ordinary front-line soldiers",
+   "known": 0.8,
+   "kind": "other"
+  },
+  {
+   "label": "The Legend of Zelda: Link's Awakening",
+   "qid": "Q1060323",
+   "fame": 0.525,
+   "composer": "Kazumi Totaka",
+   "description": "1993 video game released by Nintendo",
+   "hook": "washes a young hero onto a dreamlike island where waking a sleeping giant may erase everything around him",
+   "known": 0.5,
+   "kind": "zelda"
+  },
+  {
+   "label": "Batman: Arkham City",
+   "qid": "Q288811",
+   "fame": 0.523,
+   "composer": "Ron Fish",
+   "description": "2011 video game",
+   "hook": "lets a caped vigilante glide across a walled-off slice of a metropolis turned into a lawless prison",
+   "known": 0.7,
+   "kind": "action adventure"
+  },
+  {
+   "label": "StarCraft",
+   "qid": "Q165929",
+   "fame": 0.523,
+   "composer": "Tracy W. Bush",
+   "description": "1998 video game",
+   "hook": "pits humans, an insect-like swarm, and a psychic alien race against each other across the galaxy",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Myst",
+   "qid": "Q6497116",
+   "fame": 0.52,
+   "composer": "Robyn Miller",
+   "description": "1993 graphic adventure video game",
+   "hook": "drops a lone explorer on a mysterious island full of puzzle-filled books that lead to other worlds",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Metroid Prime",
+   "qid": "Q1765733",
+   "fame": 0.519,
+   "composer": "Kenji Yamamoto",
+   "description": "2002 video game",
+   "hook": "sends a bounty hunter in powered armor exploring an alien planet in a fully three-dimensional view",
+   "known": 0.5,
+   "kind": "platformer"
+  },
+  {
+   "label": "Portal 2",
+   "qid": "Q279446",
+   "fame": 0.514,
+   "composer": "Mike Morasky",
+   "description": "2011 first-person puzzle-platform video game",
+   "hook": "has a test subject solve puzzles with a device that creates linked doorways, guided by a sarcastic voice",
+   "known": 0.6,
+   "kind": "other"
+  },
+  {
+   "label": "Celeste",
+   "qid": "Q28451532",
+   "fame": 0.51,
+   "composer": "Lena Raine",
+   "description": "2018 video game",
+   "hook": "follows a young woman climbing a treacherous mountain while confronting a doubting version of herself",
+   "known": 0.2,
+   "kind": "indie"
+  },
+  {
+   "label": "Sonic the Hedgehog",
+   "qid": "Q37123",
+   "fame": 0.51,
+   "composer": "Masato Nakamura",
+   "description": "1991 video game",
+   "hook": "sends a super-fast blue creature racing to stop a mad scientist from turning small animals into machines",
+   "known": 0.8,
+   "kind": "platformer"
+  },
+  {
+   "label": "Batman: Arkham Origins",
+   "qid": "Q10826261",
+   "fame": 0.509,
+   "composer": "Christopher Drake",
+   "description": "2013 action-adventure video game",
+   "hook": "has a caped vigilante hunted by a citywide bounty of assassins early in his crime-fighting career",
+   "known": 0.6,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Cuphead",
+   "qid": "Q18149495",
+   "fame": 0.509,
+   "composer": "Kristofer Maddigan",
+   "description": "2017 video game",
+   "hook": "sends a boy with a cup for a head battling bosses across a hand-drawn world after losing a risky wager",
+   "known": 0.3,
+   "kind": "indie"
+  },
+  {
+   "label": "Super Mario World",
+   "qid": "Q853143",
+   "fame": 0.508,
+   "composer": "Koji Kondo",
+   "description": "1990 platform video game developed by Nintendo",
+   "hook": "sends a plumber riding a friendly dinosaur across an island to rescue a kidnapped princess",
+   "known": 0.8,
+   "kind": "mario"
+  },
+  {
+   "label": "The Elder Scrolls III: Morrowind",
+   "qid": "Q718448",
+   "fame": 0.506,
+   "composer": "Jeremy Soule",
+   "description": "2002 fantasy action role-playing video game",
+   "hook": "sets a freed prisoner loose on a volcanic island to uncover a prophecy tied to an ancient god-king",
+   "known": 0.5,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Ōkami",
+   "qid": "Q385184",
+   "fame": 0.505,
+   "composer": "Akari Kaida",
+   "description": "2006 action-adventure video game published by Capcom",
+   "hook": "has a wolf goddess repaint a withering land back to life using an ink-based brush",
+   "known": 0.3,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Super Metroid",
+   "qid": "Q1194825",
+   "fame": 0.504,
+   "composer": "Kenji Yamamoto",
+   "description": "1994 action-adventure video game developed by Nintendo",
+   "hook": "sends a bounty hunter back to a hostile planet to stop a stolen alien hatchling from being weaponized",
+   "known": 0.5,
+   "kind": "platformer"
+  },
+  {
+   "label": "Crash Bandicoot",
+   "qid": "Q719176",
+   "fame": 0.503,
+   "composer": "Josh Mancell",
+   "description": "1996 platform video game",
+   "hook": "sends a mutated marsupial spinning and jumping across islands to stop a mad scientist's evil plans",
+   "known": 0.7,
+   "kind": "platformer"
+  },
+  {
+   "label": "Crisis Core: Final Fantasy VII",
+   "qid": "Q833139",
+   "fame": 0.503,
+   "composer": "Takeharu Ishimoto",
+   "description": "2007 action role-playing video game by Square Enix",
+   "hook": "follows an ambitious young soldier's rise through an elite corporate army years before a famous rebellion",
+   "known": 0.2,
+   "kind": "final fantasy"
+  },
+  {
+   "label": "Half-Life: Alyx",
+   "qid": "Q75653574",
+   "fame": 0.503,
+   "composer": "Mike Morasky",
+   "description": "2020 VR video game developed by Valve Corporation",
+   "hook": "puts players in virtual reality fighting alien invaders alongside a scientist's daughter in an occupied city",
+   "known": 0.3,
+   "kind": "other"
+  },
+  {
+   "label": "Spyro the Dragon",
+   "qid": "Q858391",
+   "fame": 0.503,
+   "composer": "Stewart Copeland",
+   "description": "1998 video game developed by Insomniac Games",
+   "hook": "sends a small purple flyer freeing others of its kind from crystal curses cast by a jealous sorcerer",
+   "known": 0.5,
+   "kind": "platformer"
+  },
+  {
+   "label": "Tomb Raider",
+   "qid": "Q317620",
+   "fame": 0.503,
+   "composer": "Nathan McCree",
+   "description": "1996 action-adventure video game developed by Core Design",
+   "hook": "sends an athletic adventurer exploring ancient ruins full of traps and hidden artifacts around the world",
+   "known": 0.7,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Assassin's Creed Origins",
+   "qid": "Q30138024",
+   "fame": 0.502,
+   "composer": "Sarah Schachner",
+   "description": "2017 video game",
+   "hook": "follows a grieving protector uncovering the earliest roots of a secret order of hidden killers along the Nile",
+   "known": 0.6,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Command & Conquer: Red Alert",
+   "qid": "Q388225",
+   "fame": 0.502,
+   "composer": "Frank Klepacki",
+   "description": "1996 video game",
+   "hook": "reimagines a world war fought with time-travel and outlandish superweapons between two rival factions",
+   "known": 0.3,
+   "kind": "other"
+  },
+  {
+   "label": "Friday Night Funkin'",
+   "qid": "Q105731119",
+   "fame": 0.501,
+   "composer": "Kawai Sprite",
+   "description": "2020 rhythm game",
+   "hook": "has a boyfriend win rap battles against a girlfriend's disapproving father and other rivals to prove himself",
+   "known": 0.1,
+   "kind": "other"
+  },
+  {
+   "label": "The Sims 4",
+   "qid": "Q12579896",
+   "fame": 0.501,
+   "composer": "Ilan Eshkeri",
+   "description": "2014 video game",
+   "hook": "lets players build a household of virtual people and steer their careers, relationships, and daily lives",
+   "known": 0.8,
+   "kind": "other"
+  },
+  {
+   "label": "Prince of Persia: The Sands of Time",
+   "qid": "Q715292",
+   "fame": 0.499,
+   "composer": "Stuart Chatwood",
+   "description": "2003 action-adventure video game developed by Ubisoft Montreal",
+   "hook": "lets a royal heir rewind moments using a magic dagger while racing to undo a catastrophic wish",
+   "known": 0.6,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Mario Kart 8",
+   "qid": "Q13427106",
+   "fame": 0.493,
+   "composer": "Shiho Fujii",
+   "description": "2014 racing video game",
+   "hook": "sends a plumber and friends racing colorful vehicles across wild tracks flinging shells at rivals",
+   "known": 0.8,
+   "kind": "mario"
+  },
+  {
+   "label": "Phoenix Wright: Ace Attorney",
+   "qid": "Q1322480",
+   "fame": 0.486,
+   "composer": "Masakazu Sugimori",
+   "description": "2001 visual novel adventure video game by Capcom",
+   "hook": "has a rookie defense lawyer cross-examine witnesses in court to clear falsely accused clients",
+   "known": 0.3,
+   "kind": "other"
+  },
+  {
+   "label": "Luigi's Mansion",
+   "qid": "Q984029",
+   "fame": 0.485,
+   "composer": "Kazumi Totaka",
+   "description": "2001 video game",
+   "hook": "sends a timid plumber's brother vacuuming up ghosts through a haunted house to rescue his missing sibling",
+   "known": 0.6,
+   "kind": "mario"
+  },
+  {
+   "label": "Star Wars: The Old Republic",
+   "qid": "Q737308",
+   "fame": 0.484,
+   "composer": "Mark Griskey",
+   "description": "2011 video game",
+   "hook": "lets players join a galaxy-wide conflict between rival factions generations before well-known film events",
+   "known": 0.4,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Heroes of Might and Magic III: The Restoration of Erathia",
+   "qid": "Q220965",
+   "fame": 0.481,
+   "composer": "Paul Romero",
+   "description": "1999 video game",
+   "hook": "has rival lords recruit armies of fantasy creatures to conquer a war-torn kingdom on a turn-based map",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Star Wars: Knights of the Old Republic",
+   "qid": "Q725902",
+   "fame": 0.481,
+   "composer": "Jeremy Soule",
+   "description": "2003 video game",
+   "hook": "lets an amnesiac hero uncover a dark past while choosing between the light and dark sides of an ancient order",
+   "known": 0.5,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Uncharted: Drake's Fortune",
+   "qid": "Q17150",
+   "fame": 0.481,
+   "composer": "Greg Edmonson",
+   "description": "2007 video game published by Sony",
+   "hook": "sends a charming treasure hunter chasing a legendary lost stash across a deadly jungle island",
+   "known": 0.7,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Papers, Please",
+   "qid": "Q14565978",
+   "fame": 0.48,
+   "composer": "Lucas Pope",
+   "description": "2013 border inspector simulation adventure game",
+   "hook": "puts players behind a passport checkpoint desk deciding who may enter a bleak fictional country",
+   "known": 0.1,
+   "kind": "indie"
+  },
+  {
+   "label": "Sonic Adventure",
+   "qid": "Q1069059",
+   "fame": 0.479,
+   "composer": "Jun Senoue",
+   "description": "1998 3D platforming video game developed by Sonic Team",
+   "hook": "brought a blue speedster into full 3D, adding hub towns to explore between levels",
+   "known": 0.5,
+   "kind": "platformer"
+  },
+  {
+   "label": "Cities: Skylines",
+   "qid": "Q18149274",
+   "fame": 0.477,
+   "composer": "Jonne Valtonen",
+   "description": "2015 city-building video game",
+   "hook": "lets players design and manage a growing metropolis, balancing traffic, budgets and zoning",
+   "known": 0.3,
+   "kind": "other"
+  },
+  {
+   "label": "Sea of Thieves",
+   "qid": "Q20113718",
+   "fame": 0.477,
+   "composer": "Robin Beanland",
+   "description": "2018 video game developed by Rare",
+   "hook": "sends crews sailing the open ocean together to hunt buried treasure as pirates",
+   "known": 0.3,
+   "kind": "other"
+  },
+  {
+   "label": "Zelda II: The Adventure of Link",
+   "qid": "Q187339",
+   "fame": 0.477,
+   "composer": "Akito Nakatsuka",
+   "description": "1987 video game",
+   "hook": "sent a legendary hero on a side-scrolling quest to gather crystals and wake a sleeping princess",
+   "known": 0.4,
+   "kind": "zelda"
+  },
+  {
+   "label": "Lemmings",
+   "qid": "Q864177",
+   "fame": 0.476,
+   "composer": "Tim Wright",
+   "description": "1991 puzzle-platformer video game",
+   "hook": "challenges players to guide a stream of small waddling creatures safely to an exit",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Steins;Gate",
+   "qid": "Q482494",
+   "fame": 0.476,
+   "composer": "Takeshi Abo",
+   "description": "2009 visual novel game",
+   "hook": "follows a group of friends who build a device that sends text messages into the past",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "GoldenEye 007",
+   "qid": "Q369086",
+   "fame": 0.475,
+   "composer": "Graeme Norgate",
+   "description": "1997 video game",
+   "hook": "turned a Bond film into a landmark console shooter with a beloved multiplayer split-screen mode",
+   "known": 0.6,
+   "kind": "other"
+  },
+  {
+   "label": "Grim Fandango",
+   "qid": "Q592507",
+   "fame": 0.474,
+   "composer": "Peter McConnell",
+   "description": "1998 dark comedy neo-noir Windows adventure video game",
+   "hook": "follows a skeletal travel agent guiding souls through an afterlife modeled on Aztec myth",
+   "known": 0.1,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Dark Souls II",
+   "qid": "Q3702740",
+   "fame": 0.472,
+   "composer": "Motoi Sakuraba",
+   "description": "2014 action role-playing video game",
+   "hook": "punishes careless play in a grim fantasy world where death sends you back weaker than before",
+   "known": 0.6,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Age of Empires II: The Age of Kings",
+   "qid": "Q34852",
+   "fame": 0.47,
+   "composer": "Stephen Rippy",
+   "description": "1999 real-time strategy video game",
+   "hook": "lets players build a civilization in the medieval era, picking a culture to wage war and trade",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Need for Speed: Underground 2",
+   "qid": "Q726190",
+   "fame": 0.47,
+   "composer": "Tom Salta",
+   "description": "2004 video game",
+   "hook": "puts players behind the wheel of tuned import cars racing through a neon-lit city at night",
+   "known": 0.3,
+   "kind": "other"
+  },
+  {
+   "label": "Super Mario Sunshine",
+   "qid": "Q639955",
+   "fame": 0.469,
+   "composer": "Koji Kondo",
+   "description": "2002 platform video game developed by Nintendo",
+   "hook": "sends a mustachioed plumber to a tropical island armed with a water-spraying backpack",
+   "known": 0.7,
+   "kind": "mario"
+  },
+  {
+   "label": "Wii Sports",
+   "qid": "Q71936",
+   "fame": 0.469,
+   "composer": "Kazumi Totaka",
+   "description": "2006 sports video game",
+   "hook": "got players swinging a motion controller like a tennis racket or bowling ball",
+   "known": 0.95,
+   "kind": "mario"
+  },
+  {
+   "label": "The Legend of Zelda: The Minish Cap",
+   "qid": "Q474798",
+   "fame": 0.468,
+   "composer": "Mitsuhiko Takano",
+   "description": "2004 video game on the Game Boy Advance",
+   "hook": "lets a tiny hero shrink to miniature size to explore a kingdom from a bug's-eye view",
+   "known": 0.3,
+   "kind": "zelda"
+  },
+  {
+   "label": "Baldur's Gate",
+   "qid": "Q663583",
+   "fame": 0.467,
+   "composer": "Michael Hoenig",
+   "description": "1998 fantasy role-playing video game",
+   "hook": "launched a beloved fantasy role-playing series set in the Forgotten Realms",
+   "known": 0.3,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Ratchet & Clank",
+   "qid": "Q170003",
+   "fame": 0.465,
+   "composer": "David Bergeaud",
+   "description": "2002 video game",
+   "hook": "pairs a furry alien mechanic with his wisecracking robot sidekick and an arsenal of gadgets",
+   "known": 0.5,
+   "kind": "platformer"
+  },
+  {
+   "label": "Civilization VI",
+   "qid": "Q24050047",
+   "fame": 0.464,
+   "composer": "Geoff Knorr",
+   "description": "2016 turn-based strategy video game",
+   "hook": "challenges players to guide a society from the ancient world into the space age",
+   "known": 0.3,
+   "kind": "other"
+  },
+  {
+   "label": "Uncharted 2: Among Thieves",
+   "qid": "Q17146",
+   "fame": 0.464,
+   "composer": "Greg Edmonson",
+   "description": "2009 video game",
+   "hook": "follows a wisecracking treasure hunter to a hidden Himalayan city on a globe-spanning hunt",
+   "known": 0.7,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Angry Birds",
+   "qid": "Q4558721",
+   "fame": 0.462,
+   "composer": "Ari Pulkkinen",
+   "description": "puzzle video game by Rovio released in December 2009",
+   "hook": "has players fling round fowl with a slingshot to knock down egg-stealing green pigs",
+   "known": 0.85,
+   "kind": "other"
+  },
+  {
+   "label": "Planescape: Torment",
+   "qid": "Q847638",
+   "fame": 0.462,
+   "composer": "Mark Morgan",
+   "description": "1999 role-playing video game",
+   "hook": "follows an immortal amnesiac piecing together his many past lives across a strange realm",
+   "known": 0.05,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Rayman Legends",
+   "qid": "Q2255492",
+   "fame": 0.462,
+   "composer": "Christophe Héral",
+   "description": "2013 platform video game developed by Ubisoft",
+   "hook": "sends a limbless hero and friends through vibrant levels set to music-driven rhythm stages",
+   "known": 0.4,
+   "kind": "platformer"
+  },
+  {
+   "label": "Super Smash Bros. Brawl",
+   "qid": "Q843131",
+   "fame": 0.462,
+   "composer": "Nobuo Uematsu",
+   "description": "2008 crossover fighting video game by Nintendo",
+   "hook": "gathers rival gaming icons onto one battlefield to knock each other off the stage",
+   "known": 0.7,
+   "kind": "fighting"
+  },
+  {
+   "label": "Tomb Raider: Underworld",
+   "qid": "Q915860",
+   "fame": 0.461,
+   "composer": "Troels Brun Folmann",
+   "description": "2008 video game",
+   "hook": "sends a globe-trotting archaeologist descending into Norse myth to uncover family secrets",
+   "known": 0.5,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Journey",
+   "qid": "Q677274",
+   "fame": 0.456,
+   "composer": "Austin Wintory",
+   "description": "2012 video game",
+   "hook": "guides a robed traveler across shifting sands toward a distant mountain with silent strangers",
+   "known": 0.2,
+   "kind": "indie"
+  },
+  {
+   "label": "Mirror's Edge",
+   "qid": "Q526350",
+   "fame": 0.456,
+   "composer": "Solar Fields",
+   "description": "2008 first-person action-adventure platform video game",
+   "hook": "has players sprint and leap across rooftops as a courier fleeing a totalitarian city",
+   "known": 0.2,
+   "kind": "indie"
+  },
+  {
+   "label": "Pokémon Crystal",
+   "qid": "Q2351827",
+   "fame": 0.456,
+   "composer": "Junichi Masuda",
+   "description": "2000 role-playing video game",
+   "hook": "lets trainers catch and battle pocket monsters while chasing a beast said to travel through time",
+   "known": 0.6,
+   "kind": "other"
+  },
+  {
+   "label": "Super Mario RPG",
+   "qid": "Q1063119",
+   "fame": 0.456,
+   "composer": "Yoko Shimomura",
+   "description": "1996 action role-playing game",
+   "hook": "sent a mustachioed plumber into a turn-based adventure with a living clockwork doll",
+   "known": 0.3,
+   "kind": "mario"
+  },
+  {
+   "label": "Tomb Raider: Legend",
+   "qid": "Q665785",
+   "fame": 0.456,
+   "composer": "Troels Brun Folmann",
+   "description": "2006 action-adventure video game",
+   "hook": "sends a globe-trotting archaeologist searching for an artifact tied to her mother's disappearance",
+   "known": 0.4,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Uncharted 3: Drake's Deception",
+   "qid": "Q17138",
+   "fame": 0.455,
+   "composer": "Greg Edmonson",
+   "description": "2011 action-adventure third-person shooter platform video game",
+   "hook": "follows a wisecracking treasure hunter from a heist to a mirage-hidden city under desert sands",
+   "known": 0.7,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Plants vs. Zombies",
+   "qid": "Q379128",
+   "fame": 0.452,
+   "composer": "Laura Shigihara",
+   "description": "2009 video game",
+   "hook": "has players line up sun-powered flora to defend a lawn from waves of the shuffling undead",
+   "known": 0.6,
+   "kind": "other"
+  },
+  {
+   "label": "Need for Speed: Carbon",
+   "qid": "Q219795",
+   "fame": 0.45,
+   "composer": "Trevor Morris",
+   "description": "2006 video game",
+   "hook": "pits street racers against rival crews in canyon duels and turf battles across a night city",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Rayman Origins",
+   "qid": "Q606894",
+   "fame": 0.45,
+   "composer": "Christophe Héral",
+   "description": "2011 video game",
+   "hook": "returned a limbless hero's colorful universe to hand-painted side-scrolling platforming",
+   "known": 0.3,
+   "kind": "platformer"
+  }
+ ]
+}

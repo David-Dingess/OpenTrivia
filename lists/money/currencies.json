@@ -1,0 +1,4647 @@
+{
+ "id": "list.money.currencies",
+ "title": "Currencies",
+ "prompt": "Name a currency",
+ "genre": "daily-life",
+ "category": "money",
+ "topic": "coins",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q8142 . FILTER NOT EXISTS { ?item wdt:P576 [] } } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-10-02T06:34:13.198Z"
+ },
+ "rows": [
+  {
+   "label": "West African CFA franc",
+   "qid": "Q861690",
+   "fame": 0.711,
+   "also": [
+    "BCEAO franc",
+    "XOF"
+   ]
+  },
+  {
+   "label": "United States dollar",
+   "qid": "Q4917",
+   "fame": 0.643,
+   "also": [
+    "dollar",
+    "buck",
+    "dollars",
+    "American dollar",
+    "greenback",
+    "USD",
+    "American dollars",
+    "American money",
+    "U.S. Dollar",
+    "United States dollars",
+    "US dollars",
+    "USA dollar"
+   ]
+  },
+  {
+   "label": "euro",
+   "qid": "Q4916",
+   "fame": 0.631,
+   "also": [
+    "EUR",
+    "euros"
+   ]
+  },
+  {
+   "label": "pound sterling",
+   "qid": "Q25224",
+   "fame": 0.617,
+   "also": [
+    "pound",
+    "penny",
+    "sterling",
+    "pounds",
+    "quid",
+    "pence",
+    "GBP",
+    "British pound",
+    "Great British pound",
+    "livre sterling"
+   ]
+  },
+  {
+   "label": "renminbi",
+   "qid": "Q39099",
+   "fame": 0.592,
+   "also": [
+    "yuan",
+    "Chinese Yuan",
+    "yuan renminbi",
+    "yuan RMB",
+    "CNY",
+    "RMB"
+   ]
+  },
+  {
+   "label": "Indian rupee",
+   "qid": "Q80524",
+   "fame": 0.57,
+   "also": [
+    "INR",
+    "Rupee",
+    "Rupaya"
+   ]
+  },
+  {
+   "label": "yen",
+   "qid": "Q8146",
+   "fame": 0.547,
+   "also": [
+    "Japanese yen",
+    "JPY"
+   ]
+  },
+  {
+   "label": "Canadian dollar",
+   "qid": "Q1104069",
+   "fame": 0.534,
+   "also": [
+    "dollar",
+    "CAD"
+   ]
+  },
+  {
+   "label": "new shekel",
+   "qid": "Q131309",
+   "fame": 0.518,
+   "also": [
+    "Israeli new shekel",
+    "shekel",
+    "ILS",
+    "NIS",
+    "Israeli new sheqel",
+    "new Israeli shekel",
+    "new Israeli sheqel",
+    "new sheqel"
+   ]
+  },
+  {
+   "label": "Swiss franc",
+   "qid": "Q25344",
+   "fame": 0.516,
+   "also": [
+    "Franc",
+    "Chf",
+    "Confœderatio Helvetica Franc",
+    "Franc suisse",
+    "Franco svizzero",
+    "Schweizer Franken",
+    "Swiss franco",
+    "Swiss francs",
+    "Swiss Frank",
+    "Swiss Franken"
+   ]
+  },
+  {
+   "label": "Russian ruble",
+   "qid": "Q41044",
+   "fame": 0.514,
+   "also": [
+    "ruble",
+    "RUB"
+   ]
+  },
+  {
+   "label": "United Arab Emirates dirham",
+   "qid": "Q200294",
+   "fame": 0.506,
+   "also": [
+    "AED",
+    "Emirati dirham",
+    "U.A.E. dirham"
+   ]
+  },
+  {
+   "label": "won",
+   "qid": "Q202040",
+   "fame": 0.504,
+   "also": [
+    "South Korean won",
+    "KRW",
+    "south korea won",
+    "the won"
+   ]
+  },
+  {
+   "label": "złoty",
+   "qid": "Q123213",
+   "fame": 0.504,
+   "also": [
+    "Polish złoty",
+    "Polish zloty",
+    "PLN",
+    "zloty"
+   ]
+  },
+  {
+   "label": "Australian dollar",
+   "qid": "Q259502",
+   "fame": 0.501,
+   "also": [
+    "dollar",
+    "dollars",
+    "AUD",
+    "Aussie dollar",
+    "the Australian dollar"
+   ]
+  },
+  {
+   "label": "Turkish lira",
+   "qid": "Q172872",
+   "fame": 0.497,
+   "also": [
+    "TRL",
+    "TRY"
+   ]
+  },
+  {
+   "label": "Deutsche Mark",
+   "qid": "Q16068",
+   "fame": 0.492,
+   "also": [
+    "DEM",
+    "D-Mark",
+    "DE-Mark",
+    "Deutschmark",
+    "German mark"
+   ]
+  },
+  {
+   "label": "Brazilian real",
+   "qid": "Q173117",
+   "fame": 0.487,
+   "also": [
+    "BRL",
+    "reais",
+    "real"
+   ]
+  },
+  {
+   "label": "Iranian rial",
+   "qid": "Q188608",
+   "fame": 0.487,
+   "also": [
+    "IRR"
+   ]
+  },
+  {
+   "label": "guinea",
+   "qid": "Q918094",
+   "fame": 0.483,
+   "also": [
+    "Guineas"
+   ]
+  },
+  {
+   "label": "peso",
+   "qid": "Q4730",
+   "fame": 0.48,
+   "also": [
+    "Mexican peso",
+    "MXN",
+    "currency of Mexico",
+    "Mexican centavo",
+    "Mexican new peso",
+    "Mexican nuevo peso"
+   ]
+  },
+  {
+   "label": "rupiah",
+   "qid": "Q41588",
+   "fame": 0.48,
+   "also": [
+    "Indonesian rupiah",
+    "IDR"
+   ]
+  },
+  {
+   "label": "Saudi riyal",
+   "qid": "Q199857",
+   "fame": 0.479,
+   "also": [
+    "riyal",
+    "SAR"
+   ]
+  },
+  {
+   "label": "Swedish krona",
+   "qid": "Q122922",
+   "fame": 0.479,
+   "also": [
+    "SEK"
+   ]
+  },
+  {
+   "label": "baht",
+   "qid": "Q177882",
+   "fame": 0.475,
+   "also": [
+    "Thai baht",
+    "THB",
+    "Siamese tical",
+    "tical"
+   ]
+  },
+  {
+   "label": "rand",
+   "qid": "Q181907",
+   "fame": 0.473,
+   "also": [
+    "South African rand",
+    "ZAR"
+   ]
+  },
+  {
+   "label": "Singapore dollar",
+   "qid": "Q190951",
+   "fame": 0.473,
+   "also": [
+    "dollar",
+    "dollars",
+    "SGD",
+    "Ringgit Singapore"
+   ]
+  },
+  {
+   "label": "Malaysian ringgit",
+   "qid": "Q163712",
+   "fame": 0.471,
+   "also": [
+    "MYR",
+    "Ringgit Malaysia"
+   ]
+  },
+  {
+   "label": "Czech koruna",
+   "qid": "Q131016",
+   "fame": 0.468,
+   "also": [
+    "CZK"
+   ]
+  },
+  {
+   "label": "Spanish dollar",
+   "qid": "Q15039722",
+   "fame": 0.467,
+   "also": [
+    "piece of eight",
+    "Pillar dollar"
+   ]
+  },
+  {
+   "label": "Vietnamese đồng",
+   "qid": "Q192090",
+   "fame": 0.467,
+   "also": [
+    "VND",
+    "đồng"
+   ]
+  },
+  {
+   "label": "denarius",
+   "qid": "Q187776",
+   "fame": 0.463,
+   "also": []
+  },
+  {
+   "label": "Philippine peso",
+   "qid": "Q17193",
+   "fame": 0.456,
+   "also": [
+    "the Philippine peso",
+    "peso",
+    "PHP",
+    "Philippine piso",
+    "piso"
+   ]
+  },
+  {
+   "label": "Danish krone",
+   "qid": "Q25417",
+   "fame": 0.448,
+   "also": [
+    "DKK"
+   ]
+  },
+  {
+   "label": "naira",
+   "qid": "Q203567",
+   "fame": 0.446,
+   "also": [
+    "Nigerian naira",
+    "NGN"
+   ]
+  },
+  {
+   "label": "New Taiwan dollar",
+   "qid": "Q208526",
+   "fame": 0.446,
+   "also": [
+    "NTD",
+    "TWD"
+   ]
+  },
+  {
+   "label": "Egyptian pound",
+   "qid": "Q199462",
+   "fame": 0.445,
+   "also": [
+    "EGP"
+   ]
+  },
+  {
+   "label": "Kuwaiti dinar",
+   "qid": "Q193098",
+   "fame": 0.445,
+   "also": [
+    "KWD"
+   ]
+  },
+  {
+   "label": "Hong Kong dollar",
+   "qid": "Q31015",
+   "fame": 0.444,
+   "also": [
+    "HKD",
+    "dollar",
+    "dollars"
+   ]
+  },
+  {
+   "label": "Norwegian krone",
+   "qid": "Q132643",
+   "fame": 0.442,
+   "also": [
+    "krone",
+    "NOK"
+   ]
+  },
+  {
+   "label": "forint",
+   "qid": "Q47190",
+   "fame": 0.441,
+   "also": [
+    "Hungarian forint",
+    "HUF"
+   ]
+  },
+  {
+   "label": "Pakistani rupee",
+   "qid": "Q188289",
+   "fame": 0.44,
+   "also": [
+    "PKR"
+   ]
+  },
+  {
+   "label": "Romanian leu",
+   "qid": "Q131645",
+   "fame": 0.44,
+   "also": [
+    "RON",
+    "leu românesc"
+   ]
+  },
+  {
+   "label": "hryvnia",
+   "qid": "Q81893",
+   "fame": 0.438,
+   "also": [
+    "Ukrainian hryvnia",
+    "UAH",
+    "hryvnya"
+   ]
+  },
+  {
+   "label": "Argentine convertible peso",
+   "qid": "Q199578",
+   "fame": 0.437,
+   "also": [
+    "Argentine peso",
+    "ARS",
+    "peso convertible Argentina"
+   ]
+  },
+  {
+   "label": "Kazakhstani tenge",
+   "qid": "Q173751",
+   "fame": 0.429,
+   "also": [
+    "KZT"
+   ]
+  },
+  {
+   "label": "New Zealand dollar",
+   "qid": "Q1472704",
+   "fame": 0.423,
+   "also": [
+    "NZD",
+    "dollar",
+    "dollars"
+   ]
+  },
+  {
+   "label": "convertible mark",
+   "qid": "Q179620",
+   "fame": 0.419,
+   "also": [
+    "Bosnia and Herzegovina convertible mark",
+    "mark",
+    "BAM"
+   ]
+  },
+  {
+   "label": "Zimbabwe ZiG",
+   "qid": "Q125352135",
+   "fame": 0.419,
+   "also": [
+    "Zimbabwe Gold",
+    "ZiG",
+    "Zimbabwean gold"
+   ]
+  },
+  {
+   "label": "CFA franc",
+   "qid": "Q191511",
+   "fame": 0.416,
+   "also": []
+  },
+  {
+   "label": "CFP Franc",
+   "qid": "Q214393",
+   "fame": 0.413,
+   "also": [
+    "franc",
+    "XPF",
+    "Franc Pacifique",
+    "Pacific Franc"
+   ]
+  },
+  {
+   "label": "North Korean won",
+   "qid": "Q106720",
+   "fame": 0.411,
+   "also": [
+    "KPW"
+   ]
+  },
+  {
+   "label": "Central African CFA franc",
+   "qid": "Q847739",
+   "fame": 0.407,
+   "also": [
+    "franc CFA"
+   ]
+  },
+  {
+   "label": "Iraqi dinar",
+   "qid": "Q193094",
+   "fame": 0.407,
+   "also": []
+  },
+  {
+   "label": "afghani",
+   "qid": "Q199471",
+   "fame": 0.406,
+   "also": [
+    "Afghan afghani",
+    "AFN"
+   ]
+  },
+  {
+   "label": "Eastern Caribbean dollar",
+   "qid": "Q26365",
+   "fame": 0.404,
+   "also": [
+    "XCD"
+   ]
+  },
+  {
+   "label": "Nepalese rupee",
+   "qid": "Q202895",
+   "fame": 0.403,
+   "also": [
+    "NPR"
+   ]
+  },
+  {
+   "label": "Icelandic króna",
+   "qid": "Q131473",
+   "fame": 0.399,
+   "also": [
+    "ISK",
+    "króna"
+   ]
+  },
+  {
+   "label": "dinar",
+   "qid": "Q191830",
+   "fame": 0.398,
+   "also": [
+    "denar"
+   ]
+  },
+  {
+   "label": "Ghana cedi",
+   "qid": "Q183530",
+   "fame": 0.398,
+   "also": [
+    "Ghanaian cedi",
+    "GHS",
+    "cedi"
+   ]
+  },
+  {
+   "label": "Bangladeshi taka",
+   "qid": "Q194453",
+   "fame": 0.391,
+   "also": [
+    "BDT",
+    "taka 12272"
+   ]
+  },
+  {
+   "label": "Bulgarian lev",
+   "qid": "Q172540",
+   "fame": 0.391,
+   "also": [
+    "BGN",
+    "BGK",
+    "Lev",
+    "BGL",
+    "BGJ"
+   ]
+  },
+  {
+   "label": "Nuevo sol",
+   "qid": "Q204656",
+   "fame": 0.39,
+   "also": [
+    "Peruvian sol",
+    "PEN"
+   ]
+  },
+  {
+   "label": "Hungarian pengő",
+   "qid": "Q207669",
+   "fame": 0.389,
+   "also": [
+    "pengő"
+   ]
+  },
+  {
+   "label": "Syrian pound",
+   "qid": "Q240468",
+   "fame": 0.386,
+   "also": [
+    "SYP",
+    "Syrian lira"
+   ]
+  },
+  {
+   "label": "Moroccan dirham",
+   "qid": "Q200192",
+   "fame": 0.385,
+   "also": [
+    "MAD",
+    "Maza"
+   ]
+  },
+  {
+   "label": "Colombian peso",
+   "qid": "Q244819",
+   "fame": 0.384,
+   "also": [
+    "peso",
+    "COL$",
+    "Colomb peso"
+   ]
+  },
+  {
+   "label": "Serbian dinar",
+   "qid": "Q172524",
+   "fame": 0.384,
+   "also": [
+    "dinar",
+    "RSD",
+    "Serbia dinar"
+   ]
+  },
+  {
+   "label": "rai stone",
+   "qid": "Q917019",
+   "fame": 0.383,
+   "also": [
+    "Rai stones",
+    "fei stone",
+    "Yapese stone money"
+   ]
+  },
+  {
+   "label": "ancient drachma",
+   "qid": "Q15078648",
+   "fame": 0.382,
+   "also": [
+    "hellenic drachma"
+   ]
+  },
+  {
+   "label": "thaler",
+   "qid": "Q162528",
+   "fame": 0.381,
+   "also": []
+  },
+  {
+   "label": "Albanian lek",
+   "qid": "Q125999",
+   "fame": 0.379,
+   "also": [
+    "ALL",
+    "Lek"
+   ]
+  },
+  {
+   "label": "Georgian lari",
+   "qid": "Q4608",
+   "fame": 0.379,
+   "also": [
+    "Lari",
+    "GEL"
+   ]
+  },
+  {
+   "label": "Omani rial",
+   "qid": "Q272290",
+   "fame": 0.379,
+   "also": []
+  },
+  {
+   "label": "Macanese pataca",
+   "qid": "Q241214",
+   "fame": 0.378,
+   "also": [
+    "MOP"
+   ]
+  },
+  {
+   "label": "Belarusian ruble",
+   "qid": "Q21531507",
+   "fame": 0.377,
+   "also": [
+    "third Belarusian ruble",
+    "BYN"
+   ]
+  },
+  {
+   "label": "Chilean peso",
+   "qid": "Q200050",
+   "fame": 0.376,
+   "also": [
+    "CLP"
+   ]
+  },
+  {
+   "label": "Mongolian tögrög",
+   "qid": "Q183435",
+   "fame": 0.376,
+   "also": [
+    "Mongolian tughrik",
+    "Mongolian tugrik",
+    "MNT",
+    "togrog",
+    "tughrik",
+    "tugrik"
+   ]
+  },
+  {
+   "label": "Dirham",
+   "qid": "Q572664",
+   "fame": 0.374,
+   "also": [
+    "Dinar",
+    "Denar",
+    "Dirahm",
+    "Dirhem"
+   ]
+  },
+  {
+   "label": "Falkland Islands pound",
+   "qid": "Q330044",
+   "fame": 0.372,
+   "also": [
+    "FKP"
+   ]
+  },
+  {
+   "label": "Brunei dollar",
+   "qid": "Q206319",
+   "fame": 0.371,
+   "also": [
+    "BND"
+   ]
+  },
+  {
+   "label": "Armenian dram",
+   "qid": "Q130498",
+   "fame": 0.37,
+   "also": [
+    "dram",
+    "AMD"
+   ]
+  },
+  {
+   "label": "Iranian toman",
+   "qid": "Q1550199",
+   "fame": 0.37,
+   "also": []
+  },
+  {
+   "label": "Bahraini dinar",
+   "qid": "Q201871",
+   "fame": 0.368,
+   "also": [
+    "BHD"
+   ]
+  },
+  {
+   "label": "Azerbaijani manat",
+   "qid": "Q483725",
+   "fame": 0.367,
+   "also": [
+    "Azerbaijan manat",
+    "manat",
+    "AZN"
+   ]
+  },
+  {
+   "label": "Cuban peso",
+   "qid": "Q201505",
+   "fame": 0.367,
+   "also": [
+    "CUP"
+   ]
+  },
+  {
+   "label": "Kenyan shilling",
+   "qid": "Q202882",
+   "fame": 0.367,
+   "also": [
+    "Shilling",
+    "KES"
+   ]
+  },
+  {
+   "label": "Jordanian dinar",
+   "qid": "Q203722",
+   "fame": 0.365,
+   "also": [
+    "JOD"
+   ]
+  },
+  {
+   "label": "Panamanian balboa",
+   "qid": "Q210472",
+   "fame": 0.365,
+   "also": []
+  },
+  {
+   "label": "solidus",
+   "qid": "Q231455",
+   "fame": 0.365,
+   "also": []
+  },
+  {
+   "label": "riel",
+   "qid": "Q204737",
+   "fame": 0.364,
+   "also": [
+    "Cambodian riel",
+    "KHR"
+   ]
+  },
+  {
+   "label": "Sri Lankan rupee",
+   "qid": "Q4596",
+   "fame": 0.364,
+   "also": [
+    "LKR",
+    "SLRs",
+    "Sri Lanka Rupee",
+    "Sri Lankan rupees",
+    "Tamil rupee"
+   ]
+  },
+  {
+   "label": "Yugoslav dinar",
+   "qid": "Q373429",
+   "fame": 0.363,
+   "also": []
+  },
+  {
+   "label": "aureus",
+   "qid": "Q476078",
+   "fame": 0.36,
+   "also": []
+  },
+  {
+   "label": "Caribbean guilder",
+   "qid": "Q737779",
+   "fame": 0.36,
+   "also": []
+  },
+  {
+   "label": "Costa Rican colón",
+   "qid": "Q242915",
+   "fame": 0.36,
+   "also": [
+    "CRC"
+   ]
+  },
+  {
+   "label": "Confederate States dollar",
+   "qid": "Q686163",
+   "fame": 0.357,
+   "also": []
+  },
+  {
+   "label": "Qatari riyal",
+   "qid": "Q206386",
+   "fame": 0.357,
+   "also": [
+    "Qatar riyal"
+   ]
+  },
+  {
+   "label": "bir",
+   "qid": "Q206243",
+   "fame": 0.356,
+   "also": [
+    "Ethiopian birr",
+    "ETB",
+    "Ethiopian dollar"
+   ]
+  },
+  {
+   "label": "ngultrum",
+   "qid": "Q201799",
+   "fame": 0.354,
+   "also": [
+    "Bhutanese ngultrum",
+    "BTN",
+    "Bhutan currency"
+   ]
+  },
+  {
+   "label": "kyat",
+   "qid": "Q201875",
+   "fame": 0.351,
+   "also": [
+    "Myanmar kyat",
+    "MMK",
+    "Burmese kyat"
+   ]
+  },
+  {
+   "label": "Kyrgyz som",
+   "qid": "Q35881",
+   "fame": 0.351,
+   "also": [
+    "som"
+   ]
+  },
+  {
+   "label": "Lebanese pound",
+   "qid": "Q201880",
+   "fame": 0.344,
+   "also": [
+    "LBP",
+    "1000 lira"
+   ]
+  },
+  {
+   "label": "quetzal",
+   "qid": "Q207396",
+   "fame": 0.344,
+   "also": [
+    "Guatemalan quetzal",
+    "GTQ",
+    "Guatemala quetzal"
+   ]
+  },
+  {
+   "label": "Sycee",
+   "qid": "Q1364284",
+   "fame": 0.344,
+   "also": [
+    "yuanbao"
+   ]
+  },
+  {
+   "label": "Jamaican dollar",
+   "qid": "Q209792",
+   "fame": 0.343,
+   "also": [
+    "Jay",
+    "JMD"
+   ]
+  },
+  {
+   "label": "Ugandan shilling",
+   "qid": "Q4598",
+   "fame": 0.342,
+   "also": [
+    "Uganda shilling",
+    "UGX",
+    "USh"
+   ]
+  },
+  {
+   "label": "pfennig",
+   "qid": "Q165717",
+   "fame": 0.34,
+   "also": [
+    "penny"
+   ]
+  },
+  {
+   "label": "Macedonian denar",
+   "qid": "Q177875",
+   "fame": 0.339,
+   "also": [
+    "denar",
+    "MKD",
+    "North Macedonian denar"
+   ]
+  },
+  {
+   "label": "Bahamian dollar",
+   "qid": "Q194339",
+   "fame": 0.336,
+   "also": [
+    "BSD"
+   ]
+  },
+  {
+   "label": "Transnistrian ruble",
+   "qid": "Q200979",
+   "fame": 0.336,
+   "also": [
+    "Pridnestrovian ruble"
+   ]
+  },
+  {
+   "label": "Tunisian dinar",
+   "qid": "Q4602",
+   "fame": 0.336,
+   "also": [
+    "Tunis dinar",
+    "TND"
+   ]
+  },
+  {
+   "label": "Dominican peso",
+   "qid": "Q242922",
+   "fame": 0.333,
+   "also": [
+    "Dominican peso oro",
+    "peso oro"
+   ]
+  },
+  {
+   "label": "Uzbek som",
+   "qid": "Q487888",
+   "fame": 0.333,
+   "also": [
+    "Uzbekistani sum",
+    "soʻm",
+    "UZS",
+    "Uzbek sum"
+   ]
+  },
+  {
+   "label": "Aruban florin",
+   "qid": "Q232270",
+   "fame": 0.332,
+   "also": [
+    "AWG",
+    "Afl."
+   ]
+  },
+  {
+   "label": "Maldivian rufiyaa",
+   "qid": "Q206600",
+   "fame": 0.332,
+   "also": [
+    "rufiyaa"
+   ]
+  },
+  {
+   "label": "Algerian dinar",
+   "qid": "Q199674",
+   "fame": 0.33,
+   "also": [
+    "dinar",
+    "DZD"
+   ]
+  },
+  {
+   "label": "Yemeni Rial",
+   "qid": "Q240512",
+   "fame": 0.33,
+   "also": [
+    "rial",
+    "YER"
+   ]
+  },
+  {
+   "label": "Salvadoran colón",
+   "qid": "Q829043",
+   "fame": 0.329,
+   "also": [
+    "Colón",
+    "Salvadorean colon",
+    "SVC"
+   ]
+  },
+  {
+   "label": "Mauritian rupee",
+   "qid": "Q212967",
+   "fame": 0.326,
+   "also": [
+    "MUR",
+    "Mauritius rupee"
+   ]
+  },
+  {
+   "label": "tetradrachm",
+   "qid": "Q1083662",
+   "fame": 0.326,
+   "also": []
+  },
+  {
+   "label": "Tanzanian shilling",
+   "qid": "Q4589",
+   "fame": 0.325,
+   "also": [
+    "Shilingi",
+    "TZS",
+    "Tanzanian schilling",
+    "Tanzanian shilingi",
+    "TSh"
+   ]
+  },
+  {
+   "label": "Lao kip",
+   "qid": "Q200055",
+   "fame": 0.324,
+   "also": [
+    "kip",
+    "LAK"
+   ]
+  },
+  {
+   "label": "Bermudian dollar",
+   "qid": "Q210478",
+   "fame": 0.322,
+   "also": [
+    "BMD"
+   ]
+  },
+  {
+   "label": "groschen",
+   "qid": "Q159505",
+   "fame": 0.322,
+   "also": [
+    "groschen coin"
+   ]
+  },
+  {
+   "label": "obol",
+   "qid": "Q384102",
+   "fame": 0.322,
+   "also": [
+    "obolus",
+    "obelus"
+   ]
+  },
+  {
+   "label": "Botswana pula",
+   "qid": "Q186794",
+   "fame": 0.321,
+   "also": [
+    "BWP"
+   ]
+  },
+  {
+   "label": "gold dinar",
+   "qid": "Q11220294",
+   "fame": 0.321,
+   "also": []
+  },
+  {
+   "label": "boliviano",
+   "qid": "Q200737",
+   "fame": 0.32,
+   "also": [
+    "Bolivian boliviano",
+    "BOB",
+    "second boliviano"
+   ]
+  },
+  {
+   "label": "kopeck",
+   "qid": "Q1415602",
+   "fame": 0.319,
+   "also": [
+    "Kopek"
+   ]
+  },
+  {
+   "label": "Congolese franc",
+   "qid": "Q4734",
+   "fame": 0.318,
+   "also": [
+    "CDF",
+    "Belgian Congolese franc",
+    "Franc Congolais"
+   ]
+  },
+  {
+   "label": "Palestine pound",
+   "qid": "Q3973271",
+   "fame": 0.318,
+   "also": []
+  },
+  {
+   "label": "Rwandan franc",
+   "qid": "Q4741",
+   "fame": 0.318,
+   "also": [
+    "RWF",
+    "FRw"
+   ]
+  },
+  {
+   "label": "Fijian dollar",
+   "qid": "Q4592",
+   "fame": 0.316,
+   "also": [
+    "Fijan dollar",
+    "Fiji Dollar",
+    "FJD"
+   ]
+  },
+  {
+   "label": "Gibraltar pound",
+   "qid": "Q41429",
+   "fame": 0.315,
+   "also": [
+    "GIP"
+   ]
+  },
+  {
+   "label": "Honduran lempira",
+   "qid": "Q4719",
+   "fame": 0.313,
+   "also": [
+    "HNL"
+   ]
+  },
+  {
+   "label": "Paraguayan guaraní",
+   "qid": "Q207514",
+   "fame": 0.313,
+   "also": []
+  },
+  {
+   "label": "kina",
+   "qid": "Q200759",
+   "fame": 0.312,
+   "also": [
+    "Papua New Guinean kina",
+    "PGK"
+   ]
+  },
+  {
+   "label": "ariary",
+   "qid": "Q4584",
+   "fame": 0.309,
+   "also": [
+    "Malagasy ariary",
+    "Madagascan ariary"
+   ]
+  },
+  {
+   "label": "Moldovan leu",
+   "qid": "Q181129",
+   "fame": 0.308,
+   "also": [
+    "MDL",
+    "leu"
+   ]
+  },
+  {
+   "label": "Somali shilling",
+   "qid": "Q4603",
+   "fame": 0.308,
+   "also": [
+    "Currency of somalia",
+    "Sh.So."
+   ]
+  },
+  {
+   "label": "Zambian Kwacha",
+   "qid": "Q73408",
+   "fame": 0.308,
+   "also": [
+    "ZMW"
+   ]
+  },
+  {
+   "label": "kwanza",
+   "qid": "Q200337",
+   "fame": 0.307,
+   "also": [
+    "Angolan kwanza",
+    "AOA"
+   ]
+  },
+  {
+   "label": "gourde",
+   "qid": "Q203955",
+   "fame": 0.306,
+   "also": [
+    "Haitian gourde",
+    "HTG"
+   ]
+  },
+  {
+   "label": "Manx pound",
+   "qid": "Q27614",
+   "fame": 0.305,
+   "also": []
+  },
+  {
+   "label": "Saint Helena pound",
+   "qid": "Q374453",
+   "fame": 0.304,
+   "also": []
+  },
+  {
+   "label": "Nicaraguan córdoba",
+   "qid": "Q207312",
+   "fame": 0.302,
+   "also": [
+    "NIO",
+    "NIC",
+    "Cordoba Oro",
+    "Mariana Montserrat"
+   ]
+  },
+  {
+   "label": "Cape Verdean escudo",
+   "qid": "Q4591",
+   "fame": 0.3,
+   "also": [
+    "Cape Verde escudo",
+    "CVE"
+   ]
+  },
+  {
+   "label": "Cayman Islands dollar",
+   "qid": "Q319885",
+   "fame": 0.3,
+   "also": [
+    "KYD"
+   ]
+  },
+  {
+   "label": "Eco",
+   "qid": "Q761559",
+   "fame": 0.296,
+   "also": []
+  },
+  {
+   "label": "Barbadian dollar",
+   "qid": "Q194351",
+   "fame": 0.294,
+   "also": [
+    "BBD"
+   ]
+  },
+  {
+   "label": "Liberian dollar",
+   "qid": "Q242988",
+   "fame": 0.293,
+   "also": []
+  },
+  {
+   "label": "Namibian dollar",
+   "qid": "Q202462",
+   "fame": 0.293,
+   "also": [
+    "NAD"
+   ]
+  },
+  {
+   "label": "Belize dollar",
+   "qid": "Q275112",
+   "fame": 0.292,
+   "also": [
+    "BZD"
+   ]
+  },
+  {
+   "label": "nakfa",
+   "qid": "Q171503",
+   "fame": 0.292,
+   "also": [
+    "Eritrean nakfa",
+    "Nkf",
+    "ERN"
+   ]
+  },
+  {
+   "label": "Cook Islands dollar",
+   "qid": "Q507737",
+   "fame": 0.29,
+   "also": []
+  },
+  {
+   "label": "Uruguayan peso",
+   "qid": "Q209272",
+   "fame": 0.29,
+   "also": [
+    "UYU"
+   ]
+  },
+  {
+   "label": "German mark",
+   "qid": "Q560355",
+   "fame": 0.289,
+   "also": []
+  },
+  {
+   "label": "Mauritanian ouguiya",
+   "qid": "Q207024",
+   "fame": 0.289,
+   "also": [
+    "MRU",
+    "ouguiya"
+   ]
+  },
+  {
+   "label": "Rentenmark",
+   "qid": "Q260447",
+   "fame": 0.288,
+   "also": [
+    "German Rentenmark"
+   ]
+  },
+  {
+   "label": "Netherlands Antillean guilder",
+   "qid": "Q522701",
+   "fame": 0.287,
+   "also": [
+    "ANG",
+    "NAf"
+   ]
+  },
+  {
+   "label": "lilangeni",
+   "qid": "Q4823",
+   "fame": 0.286,
+   "also": [
+    "Swazi lilangeni",
+    "emalangeni",
+    "Eswatini lilangeni",
+    "Swaziland lilangeni"
+   ]
+  },
+  {
+   "label": "Trinidad and Tobago dollar",
+   "qid": "Q242890",
+   "fame": 0.284,
+   "also": []
+  },
+  {
+   "label": "Sudanese pound",
+   "qid": "Q271206",
+   "fame": 0.283,
+   "also": [
+    "SDG"
+   ]
+  },
+  {
+   "label": "Faroese króna",
+   "qid": "Q191068",
+   "fame": 0.282,
+   "also": []
+  },
+  {
+   "label": "Guyanese dollar",
+   "qid": "Q213005",
+   "fame": 0.282,
+   "also": [
+    "GYD",
+    "Money of Guyana"
+   ]
+  },
+  {
+   "label": "Libyan dinar",
+   "qid": "Q190699",
+   "fame": 0.281,
+   "also": [
+    "LYD",
+    "dinar"
+   ]
+  },
+  {
+   "label": "Maltese scudo",
+   "qid": "Q967990",
+   "fame": 0.28,
+   "also": [
+    "Coins of the Order of Saint John of Jerusalem"
+   ]
+  },
+  {
+   "label": "Guernsey pound",
+   "qid": "Q255792",
+   "fame": 0.279,
+   "also": []
+  },
+  {
+   "label": "Ottoman lira",
+   "qid": "Q5042194",
+   "fame": 0.278,
+   "also": []
+  },
+  {
+   "label": "Tajikistani somoni",
+   "qid": "Q199886",
+   "fame": 0.278,
+   "also": [
+    "TJS",
+    "currency of Tajikistan",
+    "Somoni",
+    "Tajik Somoni"
+   ]
+  },
+  {
+   "label": "leone",
+   "qid": "Q4587",
+   "fame": 0.277,
+   "also": [
+    "Sierra Leonean leone",
+    "SLE",
+    "SLL"
+   ]
+  },
+  {
+   "label": "Malawian kwacha",
+   "qid": "Q211694",
+   "fame": 0.276,
+   "also": [
+    "MWK",
+    "Malawi kwacha"
+   ]
+  },
+  {
+   "label": "Abkhazian apsar",
+   "qid": "Q1983857",
+   "fame": 0.275,
+   "also": [
+    "apsar",
+    "apsark"
+   ]
+  },
+  {
+   "label": "hyperpyron",
+   "qid": "Q127441",
+   "fame": 0.275,
+   "also": []
+  },
+  {
+   "label": "Austro-Hungarian krone",
+   "qid": "Q303713",
+   "fame": 0.274,
+   "also": [
+    "Austrian crown",
+    "Austrian korona",
+    "Austro-Hungarian coroana",
+    "Austro-Hungarian corona",
+    "Austro-Hungarian crown",
+    "Austro-Hungarian korona",
+    "Austro-Hungarian koruna",
+    "Austro-Hungarian krona",
+    "Austro-Hungarian krune"
+   ]
+  },
+  {
+   "label": "écu",
+   "qid": "Q273724",
+   "fame": 0.273,
+   "also": [
+    "Ecus",
+    "French ecu"
+   ]
+  },
+  {
+   "label": "dalasi",
+   "qid": "Q202885",
+   "fame": 0.272,
+   "also": [
+    "Gambian dalasi",
+    "GMD"
+   ]
+  },
+  {
+   "label": "Seychellois rupee",
+   "qid": "Q4595",
+   "fame": 0.272,
+   "also": [
+    "Seychelles Rupee",
+    "SRe",
+    "Rupee"
+   ]
+  },
+  {
+   "label": "Turkmenistan new manat",
+   "qid": "Q486637",
+   "fame": 0.268,
+   "also": [
+    "Turkmen manat",
+    "TMT",
+    "Turkmenistani new manat"
+   ]
+  },
+  {
+   "label": "South Sudanese pound",
+   "qid": "Q244366",
+   "fame": 0.267,
+   "also": []
+  },
+  {
+   "label": "Akçe",
+   "qid": "Q424754",
+   "fame": 0.266,
+   "also": [
+    "Akça"
+   ]
+  },
+  {
+   "label": "East Timor centavo coins",
+   "qid": "Q572213",
+   "fame": 0.266,
+   "also": [
+    "Timor-Leste centavo coins"
+   ]
+  },
+  {
+   "label": "Mozambican metical",
+   "qid": "Q200753",
+   "fame": 0.264,
+   "also": [
+    "Metical"
+   ]
+  },
+  {
+   "label": "Djiboutian franc",
+   "qid": "Q4594",
+   "fame": 0.263,
+   "also": [
+    "DJF",
+    "Djibouti Franc"
+   ]
+  },
+  {
+   "label": "Surinamese dollar",
+   "qid": "Q202036",
+   "fame": 0.263,
+   "also": [
+    "SRD"
+   ]
+  },
+  {
+   "label": "French denier",
+   "qid": "Q526050",
+   "fame": 0.26,
+   "also": []
+  },
+  {
+   "label": "East African shilling",
+   "qid": "Q1275499",
+   "fame": 0.258,
+   "also": []
+  },
+  {
+   "label": "Somaliland shilling",
+   "qid": "Q737384",
+   "fame": 0.257,
+   "also": []
+  },
+  {
+   "label": "Burundian franc",
+   "qid": "Q238007",
+   "fame": 0.256,
+   "also": [
+    "BIF"
+   ]
+  },
+  {
+   "label": "Tuvaluan dollar",
+   "qid": "Q4406",
+   "fame": 0.255,
+   "also": [
+    "TVD",
+    "Tuvalu dollar"
+   ]
+  },
+  {
+   "label": "French Indochinese piastre",
+   "qid": "Q1003344",
+   "fame": 0.254,
+   "also": []
+  },
+  {
+   "label": "Vanuatu vatus",
+   "qid": "Q207523",
+   "fame": 0.253,
+   "also": [
+    "Vanuatu vatu",
+    "Vatu"
+   ]
+  },
+  {
+   "label": "Czechoslovak koruna",
+   "qid": "Q103219993",
+   "fame": 0.251,
+   "also": [
+    "CSK"
+   ]
+  },
+  {
+   "label": "loti",
+   "qid": "Q208039",
+   "fame": 0.247,
+   "also": [
+    "Lesotho loti",
+    "LSL"
+   ]
+  },
+  {
+   "label": "Swedish riksdaler",
+   "qid": "Q2338813",
+   "fame": 0.246,
+   "also": [
+    "riksdaler"
+   ]
+  },
+  {
+   "label": "Vatican lira",
+   "qid": "Q183354",
+   "fame": 0.246,
+   "also": [
+    "VAL"
+   ]
+  },
+  {
+   "label": "Old Taiwan dollar",
+   "qid": "Q718954",
+   "fame": 0.245,
+   "also": []
+  },
+  {
+   "label": "São Tomé and Príncipe dobra",
+   "qid": "Q193712",
+   "fame": 0.244,
+   "also": []
+  },
+  {
+   "label": "pound Scots",
+   "qid": "Q35921",
+   "fame": 0.24,
+   "also": [
+    "pounds Scots",
+    "Scots pound",
+    "Scottish pound"
+   ]
+  },
+  {
+   "label": "Tongan paʻanga",
+   "qid": "Q4613",
+   "fame": 0.235,
+   "also": [
+    "Pa anga",
+    "Tonga pa`anga"
+   ]
+  },
+  {
+   "label": "Comorian franc",
+   "qid": "Q267264",
+   "fame": 0.234,
+   "also": [
+    "KMF"
+   ]
+  },
+  {
+   "label": "Solomon Islands dollar",
+   "qid": "Q4597",
+   "fame": 0.225,
+   "also": [
+    "Solomon Dollar"
+   ]
+  },
+  {
+   "label": "Straits dollar",
+   "qid": "Q261447",
+   "fame": 0.221,
+   "also": []
+  },
+  {
+   "label": "Spanish maravedí",
+   "qid": "Q1248202",
+   "fame": 0.22,
+   "also": [
+    "Maravedí",
+    "maravedí español"
+   ]
+  },
+  {
+   "label": "Austro-Hungarian gulden",
+   "qid": "Q306306",
+   "fame": 0.217,
+   "also": [
+    "Austrian florin",
+    "Austro-Hungarian florin",
+    "Austro-Hungarian forint"
+   ]
+  },
+  {
+   "label": "Samoan tālā",
+   "qid": "Q4588",
+   "fame": 0.217,
+   "also": [
+    "Tala",
+    "WST"
+   ]
+  },
+  {
+   "label": "Spanish escudo",
+   "qid": "Q1515398",
+   "fame": 0.217,
+   "also": [
+    "escudo"
+   ]
+  },
+  {
+   "label": "Sahrawi peseta",
+   "qid": "Q2094914",
+   "fame": 0.216,
+   "also": [
+    "Sahrawi dirham"
+   ]
+  },
+  {
+   "label": "Guinean franc",
+   "qid": "Q213311",
+   "fame": 0.214,
+   "also": []
+  },
+  {
+   "label": "convertible peso",
+   "qid": "Q731350",
+   "fame": 0.211,
+   "also": [
+    "Cuban convertible peso",
+    "CUC",
+    "chavito"
+   ]
+  },
+  {
+   "label": "Newfoundland dollar",
+   "qid": "Q2411666",
+   "fame": 0.201,
+   "also": [
+    "NFD"
+   ]
+  },
+  {
+   "label": "Tremissis",
+   "qid": "Q1449918",
+   "fame": 0.201,
+   "also": []
+  },
+  {
+   "label": "Aargau frank",
+   "qid": "Q2282987",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "aes grave",
+   "qid": "Q381816",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "aes rude",
+   "qid": "Q1231751",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "aes signatum",
+   "qid": "Q1225449",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "African hoe money",
+   "qid": "Q60760940",
+   "fame": 0.2,
+   "also": [
+    "Currency"
+   ]
+  },
+  {
+   "label": "agontano",
+   "qid": "Q3606693",
+   "fame": 0.2,
+   "also": [
+    "grosso agontano"
+   ]
+  },
+  {
+   "label": "Aksumite currency",
+   "qid": "Q2275454",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Alaskan parchment scrip",
+   "qid": "Q16930946",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "albus",
+   "qid": "Q836242",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Alderney pound",
+   "qid": "Q593880",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Algerian budju",
+   "qid": "Q1401950",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Almohad dinar",
+   "qid": "Q113835172",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Almoravid dinar",
+   "qid": "Q12212542",
+   "fame": 0.2,
+   "also": [
+    "currency"
+   ]
+  },
+  {
+   "label": "AM-Lira",
+   "qid": "Q3613515",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "angel",
+   "qid": "Q1062008",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Angolan angolar",
+   "qid": "Q542304",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Angolan escudo",
+   "qid": "Q542236",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Angolan real",
+   "qid": "Q542238",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "ant-nose coin",
+   "qid": "Q15931957",
+   "fame": 0.2,
+   "also": [
+    "ant-nose money",
+    "jibi coin",
+    "yibi coin",
+    "yibi cowry"
+   ]
+  },
+  {
+   "label": "Antigua dollar",
+   "qid": "Q3712663",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Appenzell frank",
+   "qid": "Q3751677",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Argentine argentino",
+   "qid": "Q79407110",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Argentine peso ley",
+   "qid": "Q3900745",
+   "fame": 0.2,
+   "also": [
+    "peso ley 18188",
+    "peso ley argentino"
+   ]
+  },
+  {
+   "label": "Argentine peso moneda corriente",
+   "qid": "Q3900747",
+   "fame": 0.2,
+   "also": [
+    "peso moneda corriente"
+   ]
+  },
+  {
+   "label": "Argentine real",
+   "qid": "Q3931072",
+   "fame": 0.2,
+   "also": [
+    "real",
+    "argentinian real"
+   ]
+  },
+  {
+   "label": "assignation ruble",
+   "qid": "Q3778763",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Austrian krone",
+   "qid": "Q2329625",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Austrian Netherlands kronenthaler",
+   "qid": "Q4825484",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Azerbaijani ruble",
+   "qid": "Q4058266",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Azorean real",
+   "qid": "Q3556033",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "B yen",
+   "qid": "Q845958",
+   "fame": 0.2,
+   "also": [
+    "B type military scrip"
+   ]
+  },
+  {
+   "label": "Baden gulden",
+   "qid": "Q4840770",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "baiocco",
+   "qid": "Q804170",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "banknotes of the Czechoslovak Koruna",
+   "qid": "Q4856405",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Basel frank",
+   "qid": "Q1144127",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Basel thaler",
+   "qid": "Q1133947",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "basilikon",
+   "qid": "Q4867434",
+   "fame": 0.2,
+   "also": [
+    "doukaton"
+   ]
+  },
+  {
+   "label": "Bavarian gulden",
+   "qid": "Q4873680",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bermudian pound",
+   "qid": "Q4085039",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Berne frank",
+   "qid": "Q1144098",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "bes",
+   "qid": "Q829397",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Biatec",
+   "qid": "Q2585995",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Boratynka",
+   "qid": "Q4093460",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "breadcoin",
+   "qid": "Q109237071",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "British Columbia dollar",
+   "qid": "Q3712660",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "British Iron Bar currency",
+   "qid": "Q124650713",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "British North Borneo dollar",
+   "qid": "Q2296365",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "British West Indies dollar",
+   "qid": "Q942092",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "broad",
+   "qid": "Q4097090",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bukharan tenga",
+   "qid": "Q970374",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Burmese rupee",
+   "qid": "Q2341354",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cambodian franc",
+   "qid": "Q2547191",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cambodian tical",
+   "qid": "Q2348843",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cape Verdean real",
+   "qid": "Q1373252",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Carthaginian currency",
+   "qid": "Q22907080",
+   "fame": 0.2,
+   "also": [
+    "Carthaginian coinage",
+    "Punic coinage",
+    "Punic currency"
+   ]
+  },
+  {
+   "label": "cash",
+   "qid": "Q6279611",
+   "fame": 0.2,
+   "also": [
+    "Chinese cash",
+    "wen"
+   ]
+  },
+  {
+   "label": "Catalan peseta",
+   "qid": "Q1620502",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "ceiniog",
+   "qid": "Q5057375",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chinese gold yuan",
+   "qid": "Q11646480",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chinese National Currency",
+   "qid": "Q11143517",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cochinchina Piastre",
+   "qid": "Q5139324",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "coinage of the Republic of Venice",
+   "qid": "Q3860756",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "coins and postage stamps of Sealand",
+   "qid": "Q4817670",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "coins of Turkey",
+   "qid": "Q3253195",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Colombian real",
+   "qid": "Q3053201",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "commemorative coins of the Soviet Union",
+   "qid": "Q4343734",
+   "fame": 0.2,
+   "also": [
+    "List of commemorative coins of the Soviet Union"
+   ]
+  },
+  {
+   "label": "Costa Rican peso",
+   "qid": "Q3900740",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Danish Indian rupee",
+   "qid": "Q3942822",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Danish rigsdaler",
+   "qid": "Q2296536",
+   "fame": 0.2,
+   "also": [
+    "rixdollar"
+   ]
+  },
+  {
+   "label": "Danish West Indian daler",
+   "qid": "Q1756761",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Danish West Indian rigsdaler",
+   "qid": "Q3935770",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Danzig mark",
+   "qid": "Q4154909",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Danzig thaler",
+   "qid": "Q1131140",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "denga",
+   "qid": "Q487060",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dólar MUC",
+   "qid": "Q5815969",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dominican franco",
+   "qid": "Q5290859",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "East African florin",
+   "qid": "Q951792",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "East African rupee",
+   "qid": "Q918294",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ecuadorian peso",
+   "qid": "Q2893932",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ecuadorian real",
+   "qid": "Q2881590",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Egyptian gold stater",
+   "qid": "Q1536121",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Equatorial Guinean peseta",
+   "qid": "Q255726",
+   "fame": 0.2,
+   "also": [
+    "Guinean peseta",
+    "Peseta guineana"
+   ]
+  },
+  {
+   "label": "Europa",
+   "qid": "Q3060693",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "falus",
+   "qid": "Q5432831",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Fatimid coinage",
+   "qid": "Q131743465",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Fiume krone",
+   "qid": "Q4241612",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "franga",
+   "qid": "Q4060587",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "French Camerounian franc",
+   "qid": "Q4352038",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "French Equatorial African franc",
+   "qid": "Q2348883",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "French Guianan franc",
+   "qid": "Q114784",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "French Indian rupee",
+   "qid": "Q2299665",
+   "fame": 0.2,
+   "also": [
+    "rupee",
+    "roupie"
+   ]
+  },
+  {
+   "label": "French Polynesian franc",
+   "qid": "Q2356178",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "French sol",
+   "qid": "Q16837804",
+   "fame": 0.2,
+   "also": [
+    "Spanish sueldo"
+   ]
+  },
+  {
+   "label": "Fribourg frank",
+   "qid": "Q2282897",
+   "fame": 0.2,
+   "also": [
+    "Frank"
+   ]
+  },
+  {
+   "label": "Friedrich d'or",
+   "qid": "Q455052",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Frizatik",
+   "qid": "Q1003985",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "gaucho",
+   "qid": "Q5527593",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Geneva franc",
+   "qid": "Q4117175",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Geneva genevoise",
+   "qid": "Q4409055",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Geneva thaler",
+   "qid": "Q1144104",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Genoese lira",
+   "qid": "Q3833305",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "German ostmark",
+   "qid": "Q2083869",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "German ostruble",
+   "qid": "Q2201731",
+   "fame": 0.2,
+   "also": [
+    "German ostrubel",
+    "Ostruble"
+   ]
+  },
+  {
+   "label": "German South West African mark",
+   "qid": "Q3849265",
+   "fame": 0.2,
+   "also": [
+    "mark"
+   ]
+  },
+  {
+   "label": "Gibraltar real",
+   "qid": "Q5559226",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "gigliato",
+   "qid": "Q1523704",
+   "fame": 0.2,
+   "also": [
+    "carlino",
+    "gillat"
+   ]
+  },
+  {
+   "label": "giulio",
+   "qid": "Q3769469",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Glarus frank",
+   "qid": "Q3751680",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gold Coast ackey",
+   "qid": "Q742694",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Goldback",
+   "qid": "Q112262542",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Graubünden frank",
+   "qid": "Q3751676",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Great Qing Treasure Note",
+   "qid": "Q9929178",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Greenlandic krone",
+   "qid": "Q2983011",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Greenlandic rigsdaler",
+   "qid": "Q5604244",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Grenadan dollar",
+   "qid": "Q3712664",
+   "fame": 0.2,
+   "also": [
+    "Grenadian dollar"
+   ]
+  },
+  {
+   "label": "grivna",
+   "qid": "Q23541018",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "groat",
+   "qid": "Q1547176",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "gros",
+   "qid": "Q3116971",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "grzywna",
+   "qid": "Q2468640",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Guadeloupe franc",
+   "qid": "Q63300",
+   "fame": 0.2,
+   "also": [
+    "franc"
+   ]
+  },
+  {
+   "label": "Guadeloupe livre",
+   "qid": "Q5613277",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Guatemalan peso",
+   "qid": "Q81772",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "hacksilver",
+   "qid": "Q980180",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Haitian livre",
+   "qid": "Q5639749",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hamburg mark",
+   "qid": "Q4133026",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hanoverian thaler",
+   "qid": "Q3980493",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hawaiian dollar",
+   "qid": "Q2328868",
+   "fame": 0.2,
+   "also": [
+    "dala"
+   ]
+  },
+  {
+   "label": "Hejaz riyal",
+   "qid": "Q4394287",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hesse-Kassel thaler",
+   "qid": "Q3980492",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hesse-Kassel vereinsthaler",
+   "qid": "Q5746166",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Honduran peso",
+   "qid": "Q276688",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hubu Guanpiao",
+   "qid": "Q17025285",
+   "fame": 0.2,
+   "also": [
+    "Dà Qīng Hù Bù Guān Piào"
+   ]
+  },
+  {
+   "label": "Hungarian korona",
+   "qid": "Q897424",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hyderabadi rupee",
+   "qid": "Q1139143",
+   "fame": 0.2,
+   "also": [
+    "Hali",
+    "Osmania sicca"
+   ]
+  },
+  {
+   "label": "Ichibuban",
+   "qid": "Q2090145",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Independent State of Croatia kuna",
+   "qid": "Q2342457",
+   "fame": 0.2,
+   "also": [
+    "kuna"
+   ]
+  },
+  {
+   "label": "Indian paisa",
+   "qid": "Q28004905",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Indo-Sasanian coinage",
+   "qid": "Q73004789",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ionian gazeta",
+   "qid": "Q3912951",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Iraimbilanja",
+   "qid": "Q15220615",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Iranian qiran",
+   "qid": "Q2399673",
+   "fame": 0.2,
+   "also": [
+    "kran",
+    "qerun"
+   ]
+  },
+  {
+   "label": "Iraqi Swiss dinar",
+   "qid": "Q1455593",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Islamic State Dinar",
+   "qid": "Q21660642",
+   "fame": 0.2,
+   "also": [
+    "IS dinar",
+    "ISIS currency",
+    "ISIS dinar"
+   ]
+  },
+  {
+   "label": "Italian East African lira",
+   "qid": "Q2273837",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Italian Somaliland lira",
+   "qid": "Q2297932",
+   "fame": 0.2,
+   "also": [
+    "Somali lira"
+   ]
+  },
+  {
+   "label": "Italian Somaliland rupia",
+   "qid": "Q2273855",
+   "fame": 0.2,
+   "also": [
+    "Somali rupia"
+   ]
+  },
+  {
+   "label": "Italian Somaliland somalo",
+   "qid": "Q2273865",
+   "fame": 0.2,
+   "also": [
+    "Somalo"
+   ]
+  },
+  {
+   "label": "Italian yuan",
+   "qid": "Q136499234",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jamaican pound",
+   "qid": "Q4248884",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Japanese government-issued dollar in South-East Asia",
+   "qid": "Q650834",
+   "fame": 0.2,
+   "also": [
+    "Japanese government–issued dollar in Malaya and Borneo"
+   ]
+  },
+  {
+   "label": "Japanese government-issued Philippine peso",
+   "qid": "Q4538447",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Japanese Government-Issued Rupee in Burma",
+   "qid": "Q6158177",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Japanese military yen",
+   "qid": "Q715852",
+   "fame": 0.2,
+   "also": [
+    "Japanese military currency",
+    "JMY"
+   ]
+  },
+  {
+   "label": "Japanese mon",
+   "qid": "Q2751502",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Joachimsthaler",
+   "qid": "Q1266877",
+   "fame": 0.2,
+   "also": [
+    "Tolar"
+   ]
+  },
+  {
+   "label": "Katangese franc",
+   "qid": "Q1345587",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kelantanese dinar",
+   "qid": "Q6385482",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kerenka",
+   "qid": "Q1979092",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Khwarazmi tenga",
+   "qid": "Q3983454",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kiautschou dollar",
+   "qid": "Q1607372",
+   "fame": 0.2,
+   "also": [
+    "Dollar"
+   ]
+  },
+  {
+   "label": "knife money",
+   "qid": "Q1069036",
+   "fame": 0.2,
+   "also": [
+    "jindao",
+    "kin tao",
+    "kin-tau",
+    "kine tao",
+    "tao-chien",
+    "tao-pi",
+    "chin-tao",
+    "daobi",
+    "daoqian"
+   ]
+  },
+  {
+   "label": "Korçë franc",
+   "qid": "Q4492365",
+   "fame": 0.2,
+   "also": [
+    "Korçë frange"
+   ]
+  },
+  {
+   "label": "Korçë Skënder",
+   "qid": "Q4421813",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Korean mun",
+   "qid": "Q3867091",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Korean yang",
+   "qid": "Q2741468",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Krajina dinar",
+   "qid": "Q2633868",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kronenthaler",
+   "qid": "Q470506",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kushan coinage",
+   "qid": "Q6447884",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kutch kori",
+   "qid": "Q1784415",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lebanese-Syrian pound",
+   "qid": "Q60965524",
+   "fame": 0.2,
+   "also": [
+    "Syrian pound",
+    "Syro-Lebanese pound"
+   ]
+  },
+  {
+   "label": "leprosy colony money",
+   "qid": "Q6527840",
+   "fame": 0.2,
+   "also": [
+    "Leper colony money"
+   ]
+  },
+  {
+   "label": "liard",
+   "qid": "Q732740",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Liechtenstein frank",
+   "qid": "Q172953",
+   "fame": 0.2,
+   "also": [
+    "Liechtenstein franc"
+   ]
+  },
+  {
+   "label": "Liechtenstein krone",
+   "qid": "Q2519099",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lithuanian long currency",
+   "qid": "Q4263937",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "livre parisis",
+   "qid": "Q286197",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "livre tournois",
+   "qid": "Q2670039",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lombardy-Venetia pound",
+   "qid": "Q4266153",
+   "fame": 0.2,
+   "also": [
+    "Lombardo-Venetian lira"
+   ]
+  },
+  {
+   "label": "Luccan pound",
+   "qid": "Q3833307",
+   "fame": 0.2,
+   "also": [
+    "Luccan lira"
+   ]
+  },
+  {
+   "label": "Luxembourgian livre",
+   "qid": "Q4272180",
+   "fame": 0.2,
+   "also": [
+    "Luxembourg livre"
+   ]
+  },
+  {
+   "label": "Luzern frank",
+   "qid": "Q1152192",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Made Beaver",
+   "qid": "Q6726680",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Madras fanam",
+   "qid": "Q3543447",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Makhno Ruble",
+   "qid": "Q18245915",
+   "fame": 0.2,
+   "also": [
+    "Makhnovist ruble"
+   ]
+  },
+  {
+   "label": "Malawian pound",
+   "qid": "Q2616615",
+   "fame": 0.2,
+   "also": [
+    "pound"
+   ]
+  },
+  {
+   "label": "Malayan dollar",
+   "qid": "Q2344772",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mangır",
+   "qid": "Q6075947",
+   "fame": 0.2,
+   "also": [
+    "Manghir",
+    "pūl",
+    "mankur"
+   ]
+  },
+  {
+   "label": "Marchuwa",
+   "qid": "Q100928009",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mariengroschen",
+   "qid": "Q836342",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Martinique franc",
+   "qid": "Q2855799",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mauritian dollar",
+   "qid": "Q3712677",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Meiji Tsuho",
+   "qid": "Q11512409",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Meißner Groschen",
+   "qid": "Q1555680",
+   "fame": 0.2,
+   "also": [
+    "Meissen groschen"
+   ]
+  },
+  {
+   "label": "Mengjiang yuan",
+   "qid": "Q4533482",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mexican real",
+   "qid": "Q6826087",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Milanese scudo",
+   "qid": "Q3072467",
+   "fame": 0.2,
+   "also": [
+    "scudo"
+   ]
+  },
+  {
+   "label": "Mogadishu currency",
+   "qid": "Q6890412",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "moidore",
+   "qid": "Q1474367",
+   "fame": 0.2,
+   "also": [
+    "moydore"
+   ]
+  },
+  {
+   "label": "Money of Litzmannstadt Ghetto",
+   "qid": "Q4281838",
+   "fame": 0.2,
+   "also": [
+    "Łódź Ghetto mark"
+   ]
+  },
+  {
+   "label": "Mongolian dollar",
+   "qid": "Q726666",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "mordovka",
+   "qid": "Q21641799",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Moroccan rial",
+   "qid": "Q3430025",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "MVDOL",
+   "qid": "Q5731551",
+   "fame": 0.2,
+   "also": [
+    "BOV"
+   ]
+  },
+  {
+   "label": "nasry",
+   "qid": "Q2396479",
+   "fame": 0.2,
+   "also": [
+    "Nasri"
+   ]
+  },
+  {
+   "label": "Nepalese mohar",
+   "qid": "Q6994502",
+   "fame": 0.2,
+   "also": [
+    "Nepalese mohur"
+   ]
+  },
+  {
+   "label": "Netherlands Indies guilder",
+   "qid": "Q845557",
+   "fame": 0.2,
+   "also": [
+    "Dutch East Indies guilder"
+   ]
+  },
+  {
+   "label": "New Brunswick dollar",
+   "qid": "Q1323382",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "New Caledonian franc",
+   "qid": "Q2356117",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "New Design series",
+   "qid": "Q7006964",
+   "fame": 0.2,
+   "also": [
+    "BSP Series"
+   ]
+  },
+  {
+   "label": "New France livre",
+   "qid": "Q7007692",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "New Generation Currency Series",
+   "qid": "Q55625026",
+   "fame": 0.2,
+   "also": [
+    "NGC"
+   ]
+  },
+  {
+   "label": "New Guinean mark",
+   "qid": "Q877963",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "New Hebrides franc",
+   "qid": "Q1852872",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "New Turkish lira",
+   "qid": "Q14961002",
+   "fame": 0.2,
+   "also": [
+    "Revaluation of the Turkish lira",
+    "Denemek",
+    "İkinci Türk Lirası",
+    "Türk lirası",
+    "YTL"
+   ]
+  },
+  {
+   "label": "Niue dollar",
+   "qid": "Q4165057",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "North German thaler",
+   "qid": "Q107017221",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "North Vietnamese đồng",
+   "qid": "Q7057126",
+   "fame": 0.2,
+   "also": [
+    "đồng"
+   ]
+  },
+  {
+   "label": "North Yemeni rial",
+   "qid": "Q618653",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Norwegian rigsdaler",
+   "qid": "Q3935769",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Norwegian speciedaler",
+   "qid": "Q581295",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nova Scotian dollar",
+   "qid": "Q1934986",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nova Scotian pound",
+   "qid": "Q7064297",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Offa's imitation dinar",
+   "qid": "Q135517324",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Orange Free State pound",
+   "qid": "Q7099621",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "örtug",
+   "qid": "Q2753547",
+   "fame": 0.2,
+   "also": [
+    "ortig"
+   ]
+  },
+  {
+   "label": "Palembang pitis",
+   "qid": "Q62390008",
+   "fame": 0.2,
+   "also": [
+    "Uang pitis Palembang"
+   ]
+  },
+  {
+   "label": "palladium as an investment",
+   "qid": "Q1669450",
+   "fame": 0.2,
+   "also": [
+    "palladium",
+    "XPD",
+    "palladium as currency"
+   ]
+  },
+  {
+   "label": "paolo",
+   "qid": "Q11802776",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "papal lira",
+   "qid": "Q2274312",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Paraguayan peso",
+   "qid": "Q2346646",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Paraguayan real",
+   "qid": "Q607532",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Parman lira",
+   "qid": "Q3833304",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Parthian coins",
+   "qid": "Q25570",
+   "fame": 0.2,
+   "also": [
+    "Parthian coinage",
+    "Parthian currency"
+   ]
+  },
+  {
+   "label": "penning",
+   "qid": "Q4348571",
+   "fame": 0.2,
+   "also": [
+    "Norwegian penning"
+   ]
+  },
+  {
+   "label": "Peruvian inca",
+   "qid": "Q3797549",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Peruvian libra",
+   "qid": "Q4359287",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Peruvian peseta",
+   "qid": "Q3900722",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Peruvian real",
+   "qid": "Q7171209",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "peso moneda nacional",
+   "qid": "Q961408",
+   "fame": 0.2,
+   "also": [
+    "Argentine peso moneda nacional"
+   ]
+  },
+  {
+   "label": "Piedmontese scudo",
+   "qid": "Q4385486",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "pim weight",
+   "qid": "Q2601873",
+   "fame": 0.2,
+   "also": [
+    "pim",
+    "payim"
+   ]
+  },
+  {
+   "label": "Pitcairn Islands dollar",
+   "qid": "Q4165058",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "plate money",
+   "qid": "Q1410856",
+   "fame": 0.2,
+   "also": [
+    "History of copper currency in Sweden"
+   ]
+  },
+  {
+   "label": "Poltura",
+   "qid": "Q377363",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Polushka",
+   "qid": "Q1967435",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Portuguese Guinean real",
+   "qid": "Q4134503",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Portuguese Indian escudo",
+   "qid": "Q2348127",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Portuguese Indian rupia",
+   "qid": "Q2348095",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Portuguese real",
+   "qid": "Q1678551",
+   "fame": 0.2,
+   "also": [
+    "real",
+    "reais",
+    "reis"
+   ]
+  },
+  {
+   "label": "Portuguese Timorese pataca",
+   "qid": "Q2032019",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Prince Edward Island dollar",
+   "qid": "Q3712661",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "prutah",
+   "qid": "Q1535807",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "pūl",
+   "qid": "Q28457486",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Qiang Tie",
+   "qid": "Q56272910",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "quantum money",
+   "qid": "Q137062",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "quattrino",
+   "qid": "Q2347864",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Reichsthaler",
+   "qid": "Q15944605",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Réunion franc",
+   "qid": "Q1343553",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rhodesia and Nyasaland pound",
+   "qid": "Q2616644",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Riau rupiah",
+   "qid": "Q844984",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "riffan mamoun",
+   "qid": "Q2245851",
+   "fame": 0.2,
+   "also": [
+    "Riffan"
+   ]
+  },
+  {
+   "label": "Roman scudo",
+   "qid": "Q1403484",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "romanat",
+   "qid": "Q110300791",
+   "fame": 0.2,
+   "also": [
+    "United Principalities romanat",
+    "român",
+    "romîn"
+   ]
+  },
+  {
+   "label": "Royal Canadian Mint Olympic coins",
+   "qid": "Q15928879",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rwanda and Burundi franc",
+   "qid": "Q1072248",
+   "fame": 0.2,
+   "also": [
+    "Ruanda-Urundi franc"
+   ]
+  },
+  {
+   "label": "ryō",
+   "qid": "Q3057942",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ryukyuan mon",
+   "qid": "Q70019827",
+   "fame": 0.2,
+   "also": [
+    "mon"
+   ]
+  },
+  {
+   "label": "Saint Kitts dollar",
+   "qid": "Q3712666",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Saint Lucia dollar",
+   "qid": "Q3712669",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Saint Lucia livre",
+   "qid": "Q3835656",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Saint Pierre and Miquelon franc",
+   "qid": "Q4140446",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Saint Vincent dollar",
+   "qid": "Q3712668",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Salvadoran peso",
+   "qid": "Q3900751",
+   "fame": 0.2,
+   "also": [
+    "peso",
+    "Peso salvadoreño",
+    "Pesos salvadoreños",
+    "Salvadoran Pesos",
+    "Salvadorean peso",
+    "Salvadorian peso"
+   ]
+  },
+  {
+   "label": "Salvadoran real",
+   "qid": "Q356550",
+   "fame": 0.2,
+   "also": [
+    "Real",
+    "Real salvadoreño",
+    "Reales Salvadoreños",
+    "Salvadorean real",
+    "Salvadorian real"
+   ]
+  },
+  {
+   "label": "São Tomé and Príncipe escudo",
+   "qid": "Q2616190",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "São Tomé and Príncipe real",
+   "qid": "Q4391496",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sarawak dollar",
+   "qid": "Q2414453",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sardinian lira",
+   "qid": "Q427347",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sardinian scudo",
+   "qid": "Q4408566",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sasanian coinage",
+   "qid": "Q5964637",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Saxon thaler",
+   "qid": "Q304122",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Schaffhausen frank",
+   "qid": "Q7430919",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Schwyz frank",
+   "qid": "Q931192",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Schwyz gulden",
+   "qid": "Q4117026",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "scyphate",
+   "qid": "Q2541777",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sechsling",
+   "qid": "Q328425",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Serbian perper",
+   "qid": "Q507464",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "sextans",
+   "qid": "Q548953",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sicilian piastra",
+   "qid": "Q3449658",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "silver as an investment",
+   "qid": "Q1584286",
+   "fame": 0.2,
+   "also": [
+    "silver",
+    "XAG",
+    "silver as currency"
+   ]
+  },
+  {
+   "label": "Single South American currency",
+   "qid": "Q5839958",
+   "fame": 0.2,
+   "also": [
+    "Sur"
+   ]
+  },
+  {
+   "label": "skilling",
+   "qid": "Q2441769",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Slovak koruna",
+   "qid": "Q329248",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "soldo",
+   "qid": "Q1431762",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Solothurn frank",
+   "qid": "Q1144293",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Solothurn thaler",
+   "qid": "Q1152205",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "som",
+   "qid": "Q2361916",
+   "fame": 0.2,
+   "also": [
+    "sum",
+    "soum"
+   ]
+  },
+  {
+   "label": "South German gulden",
+   "qid": "Q586290",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "South Korean hwan",
+   "qid": "Q489596",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "South Korean won",
+   "qid": "Q7567738",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "South Vietnamese đồng",
+   "qid": "Q240292",
+   "fame": 0.2,
+   "also": [
+    "VNCHD"
+   ]
+  },
+  {
+   "label": "South West African mark",
+   "qid": "Q4281836",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "sovereign bolivar",
+   "qid": "Q56349362",
+   "fame": 0.2,
+   "also": [
+    "bolivar",
+    "Bs.S",
+    "VES"
+   ]
+  },
+  {
+   "label": "Sovznak",
+   "qid": "Q2305152",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "spade money",
+   "qid": "Q949922",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "St. Gallen frank",
+   "qid": "Q4117165",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "St. Gallen thaler",
+   "qid": "Q1152169",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Stavraton",
+   "qid": "Q7604839",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "SUCRE",
+   "qid": "Q1148329",
+   "fame": 0.2,
+   "also": [
+    "Sistema Unico de Compensacion Regional",
+    "XSU"
+   ]
+  },
+  {
+   "label": "Sumatran dollar",
+   "qid": "Q1647239",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tanga",
+   "qid": "Q7682772",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "tarì",
+   "qid": "Q1542162",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "TEM",
+   "qid": "Q12058596",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tenpō Tsūhō",
+   "qid": "Q11442334",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Terra",
+   "qid": "Q766321",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Texas dollar",
+   "qid": "Q3712659",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Thurgau frank",
+   "qid": "Q6940794",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tibetan srang",
+   "qid": "Q1862803",
+   "fame": 0.2,
+   "also": [
+    "dngul srang"
+   ]
+  },
+  {
+   "label": "Tibetan tangka",
+   "qid": "Q2351198",
+   "fame": 0.2,
+   "also": [
+    "Tam",
+    "tangka",
+    "dngul Tam"
+   ]
+  },
+  {
+   "label": "Ticinese franco",
+   "qid": "Q213327",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "tiền",
+   "qid": "Q7810571",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "tin ingot",
+   "qid": "Q7807840",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Togolese franc",
+   "qid": "Q3556893",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tong Bei",
+   "qid": "Q7820913",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "trachy",
+   "qid": "Q1270227",
+   "fame": 0.2,
+   "also": [
+    "trachea"
+   ]
+  },
+  {
+   "label": "Transcaucasian ruble",
+   "qid": "Q1444800",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Travancore fanam",
+   "qid": "Q23940476",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "trifollaro",
+   "qid": "Q30692557",
+   "fame": 0.2,
+   "also": [
+    "trifollaris"
+   ]
+  },
+  {
+   "label": "Tripolitanian lira",
+   "qid": "Q68291",
+   "fame": 0.2,
+   "also": [
+    "MAL",
+    "Military Authority Lira"
+   ]
+  },
+  {
+   "label": "Tunisian franc",
+   "qid": "Q2501214",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tunisian rial",
+   "qid": "Q2478678",
+   "fame": 0.2,
+   "also": [
+    "rial"
+   ]
+  },
+  {
+   "label": "Tuscan florin",
+   "qid": "Q4461419",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tuscan pound",
+   "qid": "Q3833310",
+   "fame": 0.2,
+   "also": [
+    "Tuscan lira"
+   ]
+  },
+  {
+   "label": "Tyrian shekel",
+   "qid": "Q5761018",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ukrainian shah",
+   "qid": "Q2389783",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Unterwalden frank",
+   "qid": "Q7076240",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ural franc",
+   "qid": "Q1975732",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Uri frank",
+   "qid": "Q7200614",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vaud franc",
+   "qid": "Q15088832",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "venezolano",
+   "qid": "Q3596088",
+   "fame": 0.2,
+   "also": [
+    "Venezuelan venezolano"
+   ]
+  },
+  {
+   "label": "Venezuelan peso",
+   "qid": "Q3900753",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vereinsthaler",
+   "qid": "Q539959",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vermont copper",
+   "qid": "Q7921799",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "victoriatus",
+   "qid": "Q1228632",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vietnamese cash",
+   "qid": "Q4008482",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vietnamese mạch",
+   "qid": "Q67130268",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vlorë frank",
+   "qid": "Q4492363",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Westphalian frank",
+   "qid": "Q2039104",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Westphalian thaler",
+   "qid": "Q582812",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "won of the Red Army Command",
+   "qid": "Q4124886",
+   "fame": 0.2,
+   "also": [
+    "Red Army won"
+   ]
+  },
+  {
+   "label": "Wu Zhu",
+   "qid": "Q5368440",
+   "fame": 0.2,
+   "also": [
+    "Wu Chu coins",
+    "Wu Zhu cash coins",
+    "Wuzhu coins"
+   ]
+  },
+  {
+   "label": "Württemberg gulden",
+   "qid": "Q3779727",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Xin Dynasty coinage",
+   "qid": "Q15898865",
+   "fame": 0.2,
+   "also": [
+    "Wang Mang coinage",
+    "Wang Mang money"
+   ]
+  },
+  {
+   "label": "yarmaq",
+   "qid": "Q8049372",
+   "fame": 0.2,
+   "also": [
+    "Khazar coinage"
+   ]
+  },
+  {
+   "label": "yuan of the Red Army Command",
+   "qid": "Q48928933",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zanzibari rupee",
+   "qid": "Q2616640",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zanzibari ryal",
+   "qid": "Q3555541",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zimbabwean bonds",
+   "qid": "Q30637538",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zimbabwean dollar",
+   "qid": "Q65067684",
+   "fame": 0.2,
+   "also": [
+    "Zimdollar",
+    "ZWL",
+    "5th Zimbabwean dollar",
+    "fifth Zimbabwean dollar",
+    "Real Time Gross Settlement dollar",
+    "RTGS$"
+   ]
+  },
+  {
+   "label": "Zürich frank",
+   "qid": "Q5491288",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Manchukuo yuan",
+   "qid": "Q696612",
+   "fame": 0.195,
+   "also": []
+  },
+  {
+   "label": "Sammarinese lira",
+   "qid": "Q1063029",
+   "fame": 0.193,
+   "also": []
+  },
+  {
+   "label": "Ecuadorian centavo coins",
+   "qid": "Q522295",
+   "fame": 0.192,
+   "also": []
+  },
+  {
+   "label": "Korean yen",
+   "qid": "Q868106",
+   "fame": 0.192,
+   "also": []
+  },
+  {
+   "label": "Kiribati dollar",
+   "qid": "Q1049963",
+   "fame": 0.185,
+   "also": []
+  },
+  {
+   "label": "Polish marka",
+   "qid": "Q1779554",
+   "fame": 0.181,
+   "also": []
+  },
+  {
+   "label": "Monegasque franc",
+   "qid": "Q1047040",
+   "fame": 0.179,
+   "also": [
+    "MCF"
+   ]
+  },
+  {
+   "label": "African Monetary Union",
+   "qid": "Q388083",
+   "fame": 0.176,
+   "also": [
+    "afro",
+    "afriq"
+   ]
+  },
+  {
+   "label": "Korean won",
+   "qid": "Q8047970",
+   "fame": 0.168,
+   "also": [
+    "Korean Empire won"
+   ]
+  },
+  {
+   "label": "Taiwanese yen",
+   "qid": "Q715436",
+   "fame": 0.168,
+   "also": []
+  },
+  {
+   "label": "Conventionsthaler",
+   "qid": "Q570716",
+   "fame": 0.165,
+   "also": [
+    "Konventionstaler",
+    "Konventionsthaler"
+   ]
+  },
+  {
+   "label": "spesmilo",
+   "qid": "Q1193446",
+   "fame": 0.163,
+   "also": [
+    "10 spescentoj",
+    "100 spesdekoj",
+    "1000 spesoj"
+   ]
+  },
+  {
+   "label": "Afghan rupee",
+   "qid": "Q910712",
+   "fame": 0.162,
+   "also": []
+  },
+  {
+   "label": "Artsakh dram",
+   "qid": "Q94418",
+   "fame": 0.161,
+   "also": [
+    "Nagorno-Karabakh dram"
+   ]
+  },
+  {
+   "label": "siliqua",
+   "qid": "Q535476",
+   "fame": 0.157,
+   "also": []
+  },
+  {
+   "label": "Danzig gulden",
+   "qid": "Q700109",
+   "fame": 0.156,
+   "also": []
+  },
+  {
+   "label": "quadrans",
+   "qid": "Q1249076",
+   "fame": 0.156,
+   "also": [
+    "teruncius"
+   ]
+  },
+  {
+   "label": "Biafran pound",
+   "qid": "Q855244",
+   "fame": 0.152,
+   "also": []
+  },
+  {
+   "label": "Chechen naxar",
+   "qid": "Q1367145",
+   "fame": 0.149,
+   "also": []
+  },
+  {
+   "label": "argenteus",
+   "qid": "Q645246",
+   "fame": 0.146,
+   "also": []
+  },
+  {
+   "label": "Bohemian and Moravian koruna",
+   "qid": "Q700835",
+   "fame": 0.142,
+   "also": [
+    "Bohemian and Moravian crown"
+   ]
+  },
+  {
+   "label": "Yugoslav krone",
+   "qid": "Q2525711",
+   "fame": 0.136,
+   "also": [
+    "krone"
+   ]
+  },
+  {
+   "label": "Khaleeji",
+   "qid": "Q222753",
+   "fame": 0.135,
+   "also": []
+  },
+  {
+   "label": "sultani",
+   "qid": "Q188416",
+   "fame": 0.132,
+   "also": []
+  },
+  {
+   "label": "Angevin pound",
+   "qid": "Q4763148",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Barter rings",
+   "qid": "Q108933792",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "emergency circulating notes",
+   "qid": "Q5370679",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "European Composite Unit",
+   "qid": "Q115123957",
+   "fame": 0.131,
+   "also": [
+    "EURCO",
+    "XBA"
+   ]
+  },
+  {
+   "label": "European Monetary Unit",
+   "qid": "Q115124012",
+   "fame": 0.131,
+   "also": [
+    "E.M.U.-6",
+    "European Unit of Account currency fund 6",
+    "XBB"
+   ]
+  },
+  {
+   "label": "European Unit of Account 17",
+   "qid": "Q115124340",
+   "fame": 0.131,
+   "also": [
+    "E.U.A.-17",
+    "XBD"
+   ]
+  },
+  {
+   "label": "Japanese military currency",
+   "qid": "Q105571921",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Kabuli rupee",
+   "qid": "Q28223868",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Liang",
+   "qid": "Q136345067",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "neutral unit of construction",
+   "qid": "Q17071434",
+   "fame": 0.131,
+   "also": [
+    "NUC",
+    "neutral unit of currency"
+   ]
+  },
+  {
+   "label": "North Carolina Confederate currency",
+   "qid": "Q7054457",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Unidad Previsional",
+   "qid": "Q107631325",
+   "fame": 0.131,
+   "also": [
+    "UYW"
+   ]
+  },
+  {
+   "label": "Uruguay Peso en Unidades Indexadas",
+   "qid": "Q115124969",
+   "fame": 0.131,
+   "also": [
+    "UYI"
+   ]
+  },
+  {
+   "label": "Ven",
+   "qid": "Q7919510",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Zhuangpiao",
+   "qid": "Q75853193",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Chilean escudo",
+   "qid": "Q603071",
+   "fame": 0.129,
+   "also": []
+  },
+  {
+   "label": "quinarius",
+   "qid": "Q1249084",
+   "fame": 0.126,
+   "also": [
+    "quinarii"
+   ]
+  },
+  {
+   "label": "German East African rupie",
+   "qid": "Q480022",
+   "fame": 0.124,
+   "also": []
+  },
+  {
+   "label": "Republika Srpska dinar",
+   "qid": "Q2555236",
+   "fame": 0.124,
+   "also": []
+  },
+  {
+   "label": "Montenegrin perper",
+   "qid": "Q786009",
+   "fame": 0.122,
+   "also": []
+  },
+  {
+   "label": "fals",
+   "qid": "Q3064816",
+   "fame": 0.111,
+   "also": [
+    "felus"
+   ]
+  },
+  {
+   "label": "Algerian franc",
+   "qid": "Q2629090",
+   "fame": 0.11,
+   "also": []
+  },
+  {
+   "label": "semis",
+   "qid": "Q1249093",
+   "fame": 0.084,
+   "also": []
+  },
+  {
+   "label": "cistophorus",
+   "qid": "Q747909",
+   "fame": 0.053,
+   "also": [
+    "cistophor"
+   ]
+  },
+  {
+   "label": "Moldovan cupon",
+   "qid": "Q2713155",
+   "fame": 0.051,
+   "also": []
+  },
+  {
+   "label": "Armenian rouble",
+   "qid": "Q659043",
+   "fame": 0,
+   "also": [
+    "Armenian ruble"
+   ]
+  },
+  {
+   "label": "Kraków złoty",
+   "qid": "Q503370",
+   "fame": 0,
+   "also": []
+  }
+ ]
+}

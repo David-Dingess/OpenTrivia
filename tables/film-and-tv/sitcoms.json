@@ -1,0 +1,720 @@
+{
+ "id": "table.film-and-tv.sitcoms",
+ "kind": "table",
+ "title": "Sitcoms by first air date",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "sitcoms",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?start WHERE { { SELECT ?item ?sitelinks (MIN(?d) AS ?start) WHERE { ?item wdt:P31 wd:Q5398426 ; wdt:P136 wd:Q170238 ; wdt:P580 ?d ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 25) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 200 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T04:09:56.841Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T04:09:56.841Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "first_aired",
+   "label": "First aired",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "sitcom",
+  "many": "sitcoms",
+  "itemSub": "{hook}",
+  "hookAsk": "Which sitcom {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "first_aired": {
+    "role": "date",
+    "sort": "from the first to air to the most recent",
+    "era": "Drop each sitcom into the decade it first aired.",
+    "eraSize": "decade",
+    "shot": "In what year did the sitcom {label} first air?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The Big Bang Theory",
+   "qid": "Q8539",
+   "fame": 0.733,
+   "first_aired": 2007,
+   "description": "American television sitcom (2007–2019)",
+   "hook": "follows a group of nerdy scientists whose new neighbor upends their carefully ordered lives",
+   "known": 0.8,
+   "kind": "nerdy"
+  },
+  {
+   "label": "It's Always Sunny in Philadelphia",
+   "qid": "Q23670",
+   "fame": 0.723,
+   "first_aired": 2005,
+   "description": "American comedy television series",
+   "hook": "follows a group of friends who run a rowdy Irish bar and scheme against each other",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "The Office (US)",
+   "qid": "Q23831",
+   "fame": 0.713,
+   "first_aired": 2005,
+   "description": "American sitcom broadcast on NBC",
+   "hook": "is a mockumentary following the mundane daily grind of employees at a mid-sized paper company branch",
+   "known": 0.8,
+   "kind": "workplace"
+  },
+  {
+   "label": "Modern Family",
+   "qid": "Q16756",
+   "fame": 0.708,
+   "first_aired": 2009,
+   "description": "American television sitcom (2009–2020)",
+   "hook": "is a mockumentary following three related households and their everyday mishaps",
+   "known": 0.8,
+   "kind": "family"
+  },
+  {
+   "label": "Friends",
+   "qid": "Q79784",
+   "fame": 0.707,
+   "first_aired": 1994,
+   "description": "American sitcom (1994–2004)",
+   "hook": "follows six close pals navigating jobs, romance and coffeehouse hangouts in New York City",
+   "known": 0.95,
+   "kind": "buddy"
+  },
+  {
+   "label": "The Middle",
+   "qid": "Q1138000",
+   "fame": 0.692,
+   "first_aired": 2009,
+   "description": "American sitcom television series (2009–2018)",
+   "hook": "follows a stretched-thin, hardworking household just trying to get by in the heartland",
+   "known": 0.4,
+   "kind": "family"
+  },
+  {
+   "label": "Young Sheldon",
+   "qid": "Q30014613",
+   "fame": 0.689,
+   "first_aired": 2017,
+   "description": "American comedy series",
+   "hook": "is a prequel following a brilliant, awkward boy growing up too smart for his small Texas town",
+   "known": 0.4,
+   "kind": "nerdy"
+  },
+  {
+   "label": "Malcolm in the Middle",
+   "qid": "Q242596",
+   "fame": 0.68,
+   "first_aired": 2000,
+   "description": "American television sitcom (2000–2006)",
+   "hook": "follows a gifted kid navigating a chaotic household stuck between smarter and wilder siblings",
+   "known": 0.8,
+   "kind": "family"
+  },
+  {
+   "label": "Sex and the City",
+   "qid": "Q35791",
+   "fame": 0.675,
+   "first_aired": 1998,
+   "description": "American TV series (1998–2004)",
+   "hook": "follows four close friends navigating dating and careers in Manhattan",
+   "known": 0.8,
+   "kind": "buddy"
+  },
+  {
+   "label": "The Golden Girls",
+   "qid": "Q912467",
+   "fame": 0.669,
+   "first_aired": 1985,
+   "description": "American sitcom",
+   "hook": "follows four older women sharing a house and swapping wisecracks in Florida",
+   "known": 0.6,
+   "kind": "buddy"
+  },
+  {
+   "label": "Community",
+   "qid": "Q728553",
+   "fame": 0.659,
+   "first_aired": 2009,
+   "description": "American comedy television series",
+   "hook": "follows a mismatched study group of students at a struggling junior college",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Schitt’s Creek",
+   "qid": "Q17111973",
+   "fame": 0.659,
+   "first_aired": 2015,
+   "description": "Canadian television sitcom",
+   "hook": "follows a wealthy family forced to rebuild their lives in a tiny motel after losing everything",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Two and a Half Men",
+   "qid": "Q189267",
+   "fame": 0.659,
+   "first_aired": 2003,
+   "description": "American Television series, 2003-2015",
+   "hook": "follows a carefree bachelor whose life is upended when his brother and young nephew move in",
+   "known": 0.6,
+   "kind": "buddy"
+  },
+  {
+   "label": "Curb Your Enthusiasm",
+   "qid": "Q23722",
+   "fame": 0.658,
+   "first_aired": 2000,
+   "description": "American television series",
+   "hook": "follows a comedy writer playing an exaggerated version of himself stumbling into awkward situations",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Seinfeld",
+   "qid": "Q23733",
+   "fame": 0.655,
+   "first_aired": 1989,
+   "description": "American television sitcom (1989–1998)",
+   "hook": "follows a stand-up comedian and his eccentric friends obsessing over the tiny annoyances of daily life",
+   "known": 0.95,
+   "kind": "comedy"
+  },
+  {
+   "label": "Parks and Recreation",
+   "qid": "Q218035",
+   "fame": 0.651,
+   "first_aired": 2009,
+   "description": "American comedy television series",
+   "hook": "follows an endlessly upbeat local government employee trying to improve her small Indiana town",
+   "known": 0.6,
+   "kind": "workplace"
+  },
+  {
+   "label": "Derry Girls",
+   "qid": "Q47090557",
+   "fame": 0.646,
+   "first_aired": 2018,
+   "description": "Northern Irish sitcom",
+   "hook": "follows a group of teenage best friends coming of age in Northern Ireland during a tense era",
+   "known": 0.2,
+   "kind": "comedy"
+  },
+  {
+   "label": "Frasier",
+   "qid": "Q209282",
+   "fame": 0.644,
+   "first_aired": 1993,
+   "description": "American sitcom (1993–2004)",
+   "hook": "follows a pompous radio psychiatrist navigating family drama in Seattle",
+   "known": 0.8,
+   "kind": "workplace"
+  },
+  {
+   "label": "How I Met Your Mother",
+   "qid": "Q147235",
+   "fame": 0.643,
+   "first_aired": 2005,
+   "description": "American sitcom (2005–2014)",
+   "hook": "follows a man recounting to his kids the long story of how he fell in love, friends along for the ride",
+   "known": 0.8,
+   "kind": "buddy"
+  },
+  {
+   "label": "Brooklyn Nine-Nine",
+   "qid": "Q13417244",
+   "fame": 0.633,
+   "first_aired": 2013,
+   "description": "American television series (2013–2021)",
+   "hook": "follows a wacky squad of police detectives at a New York precinct",
+   "known": 0.6,
+   "kind": "workplace"
+  },
+  {
+   "label": "Everybody Loves Raymond",
+   "qid": "Q208568",
+   "fame": 0.632,
+   "first_aired": 1996,
+   "description": "American TV sitcom (1996–2005)",
+   "hook": "follows a sportswriter whose overbearing parents live right across the street",
+   "known": 0.8,
+   "kind": "family"
+  },
+  {
+   "label": "The Fresh Prince of Bel-Air",
+   "qid": "Q309063",
+   "fame": 0.619,
+   "first_aired": 1990,
+   "description": "American television series (1990–1996)",
+   "hook": "follows a street-smart teen adjusting to life with wealthy relatives in a Los Angeles mansion",
+   "known": 0.8,
+   "kind": "buddy"
+  },
+  {
+   "label": "30 Rock",
+   "qid": "Q189350",
+   "fame": 0.618,
+   "first_aired": 2006,
+   "description": "American television comedy series (2006–2013)",
+   "hook": "goes behind the scenes of a chaotic live sketch-comedy show at a New York TV network",
+   "known": 0.6,
+   "kind": "workplace"
+  },
+  {
+   "label": "Mom",
+   "qid": "Q13417213",
+   "fame": 0.616,
+   "first_aired": 2013,
+   "description": "American sitcom created by Chuck Lorre for CBS",
+   "hook": "follows a recovering addict trying to rebuild her relationship with her own grown daughter",
+   "known": 0.4,
+   "kind": "family"
+  },
+  {
+   "label": "The King of Queens",
+   "qid": "Q826594",
+   "fame": 0.616,
+   "first_aired": 1998,
+   "description": "American sitcom for CBS (1998–2007)",
+   "hook": "follows a working-class delivery driver and his wife navigating married life in New York",
+   "known": 0.6,
+   "kind": "family"
+  },
+  {
+   "label": "Mr. Bean",
+   "qid": "Q484020",
+   "fame": 0.614,
+   "first_aired": 1990,
+   "description": "British comedy television series (1990–1995)",
+   "hook": "follows a nearly silent, endlessly accident-prone man blundering through everyday situations",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "New Girl",
+   "qid": "Q844059",
+   "fame": 0.611,
+   "first_aired": 2011,
+   "description": "American sitcom",
+   "hook": "follows a quirky young woman who moves in with three male roommates after a bad breakup",
+   "known": 0.6,
+   "kind": "buddy"
+  },
+  {
+   "label": "Married... with Children",
+   "qid": "Q208647",
+   "fame": 0.608,
+   "first_aired": 1987,
+   "description": "American television sitcom (1987-1997)",
+   "hook": "follows a miserable shoe salesman stuck with his loud, dysfunctional household",
+   "known": 0.6,
+   "kind": "family"
+  },
+  {
+   "label": "Everybody Hates Chris",
+   "qid": "Q33323",
+   "fame": 0.606,
+   "first_aired": 2005,
+   "description": "American television series",
+   "hook": "follows a teenager navigating a rough Brooklyn high school, based on a comedian's own upbringing",
+   "known": 0.2,
+   "kind": "comedy"
+  },
+  {
+   "label": "The Office (UK)",
+   "qid": "Q23829",
+   "fame": 0.606,
+   "first_aired": 2001,
+   "description": "British sitcom television series",
+   "hook": "is the original mockumentary about a cringingly awkward branch manager at a small paper-supply business",
+   "known": 0.4,
+   "kind": "workplace"
+  },
+  {
+   "label": "2 Broke Girls",
+   "qid": "Q32488",
+   "fame": 0.604,
+   "first_aired": 2011,
+   "description": "American sitcom (2011-2017)",
+   "hook": "follows two waitresses scraping together tips to open their own bakery",
+   "known": 0.4,
+   "kind": "buddy"
+  },
+  {
+   "label": "Full House",
+   "qid": "Q465472",
+   "fame": 0.602,
+   "first_aired": 1987,
+   "description": "American television sitcom (1987–1995)",
+   "hook": "follows a widowed father raising his daughters with his brother-in-law and best friend crammed in to help",
+   "known": 0.6,
+   "kind": "family"
+  },
+  {
+   "label": "Sabrina the Teenage Witch",
+   "qid": "Q383104",
+   "fame": 0.602,
+   "first_aired": 1996,
+   "description": "American television sitcom (1996–2003)",
+   "hook": "follows a young girl who discovers on a milestone birthday that she has magical powers",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Fawlty Towers",
+   "qid": "Q212731",
+   "fame": 0.597,
+   "first_aired": 1975,
+   "description": "1970s BBC television sitcom",
+   "hook": "follows a rude, disaster-prone hotel owner clashing constantly with his beleaguered staff",
+   "known": 0.4,
+   "kind": "workplace"
+  },
+  {
+   "label": "Roseanne",
+   "qid": "Q575373",
+   "fame": 0.597,
+   "first_aired": 1988,
+   "description": "American sitcom",
+   "hook": "follows a sharp-tongued working-class mother holding her household together in the Midwest",
+   "known": 0.6,
+   "kind": "family"
+  },
+  {
+   "label": "Grace and Frankie",
+   "qid": "Q18150372",
+   "fame": 0.595,
+   "first_aired": 2015,
+   "description": "American comedy-drama web television series",
+   "hook": "follows two older women who become unlikely roommates after their husbands leave them for each other",
+   "known": 0.4,
+   "kind": "buddy"
+  },
+  {
+   "label": "The Thundermans",
+   "qid": "Q9197118",
+   "fame": 0.589,
+   "first_aired": 2013,
+   "description": "American comedy television series",
+   "hook": "follows a family of superheroes trying to pass as an ordinary suburban household",
+   "known": 0.2,
+   "kind": "family"
+  },
+  {
+   "label": "Superstore",
+   "qid": "Q19863018",
+   "fame": 0.588,
+   "first_aired": 2015,
+   "description": "American sitcom",
+   "hook": "follows employees navigating the daily chaos of working at a big-box retail store",
+   "known": 0.4,
+   "kind": "workplace"
+  },
+  {
+   "label": "Home Improvement",
+   "qid": "Q1337212",
+   "fame": 0.587,
+   "first_aired": 1991,
+   "description": "American television sitcom",
+   "hook": "follows a bumbling TV handyman host who is far less capable at fixing things than his show suggests",
+   "known": 0.6,
+   "kind": "family"
+  },
+  {
+   "label": "Only Fools and Horses",
+   "qid": "Q1247858",
+   "fame": 0.586,
+   "first_aired": 1981,
+   "description": "British television sitcom",
+   "hook": "follows two working-class brothers chasing one dodgy get-rich-quick scheme after another in London",
+   "known": 0.2,
+   "kind": "buddy"
+  },
+  {
+   "label": "Will & Grace",
+   "qid": "Q212135",
+   "fame": 0.585,
+   "first_aired": 1998,
+   "description": "American sitcom (1998-2006, 2017-2020)",
+   "hook": "follows a gay lawyer and his best friend sharing a New York apartment and constant witty banter",
+   "known": 0.6,
+   "kind": "buddy"
+  },
+  {
+   "label": "All in the Family",
+   "qid": "Q1048856",
+   "fame": 0.581,
+   "first_aired": 1971,
+   "description": "American television series (1971–1979)",
+   "hook": "follows a loudmouthed, bigoted patriarch clashing constantly with his more progressive household",
+   "known": 0.4,
+   "kind": "family"
+  },
+  {
+   "label": "The Last Man on Earth",
+   "qid": "Q17052281",
+   "fame": 0.581,
+   "first_aired": 2015,
+   "description": "American post-apocalyptic comedy television series",
+   "hook": "follows a man convinced he is the sole survivor of a global pandemic, until others start turning up",
+   "known": 0.2,
+   "kind": "comedy"
+  },
+  {
+   "label": "The IT Crowd",
+   "qid": "Q239672",
+   "fame": 0.576,
+   "first_aired": 2006,
+   "description": "British television sitcom",
+   "hook": "follows two mismatched tech-support workers and their painfully inept boss stuck in a basement office",
+   "known": 0.2,
+   "kind": "workplace"
+  },
+  {
+   "label": "The Nanny",
+   "qid": "Q464865",
+   "fame": 0.571,
+   "first_aired": 1993,
+   "description": "US 1990s television series",
+   "hook": "follows a brash New York woman who talks her way into caring for a wealthy widower's children",
+   "known": 0.6,
+   "kind": "family"
+  },
+  {
+   "label": "My Name Is Earl",
+   "qid": "Q34659",
+   "fame": 0.568,
+   "first_aired": 2005,
+   "description": "American television series",
+   "hook": "follows a small-time crook who makes a list to right every wrong he's ever done after a lottery win",
+   "known": 0.2,
+   "kind": "comedy"
+  },
+  {
+   "label": "I Love Lucy",
+   "qid": "Q181943",
+   "fame": 0.562,
+   "first_aired": 1951,
+   "description": "American television sitcom",
+   "hook": "follows a zany, scheming housewife forever trying to break into her husband's show-business world",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Jane the Virgin",
+   "qid": "Q16913682",
+   "fame": 0.553,
+   "first_aired": 2014,
+   "description": "American television series",
+   "hook": "follows a young woman whose life turns upside down after an accidental pregnancy from a doctor's mix-up",
+   "known": 0.4,
+   "kind": "family"
+  },
+  {
+   "label": "Nicky, Ricky, Dicky & Dawn",
+   "qid": "Q18152910",
+   "fame": 0.553,
+   "first_aired": 2014,
+   "description": "American comedy televisión series",
+   "hook": "follows four rival quadruplet siblings constantly competing and scheming against each other at home",
+   "known": 0.2,
+   "kind": "family"
+  },
+  {
+   "label": "Spin City",
+   "qid": "Q256527",
+   "fame": 0.549,
+   "first_aired": 1996,
+   "description": "television series",
+   "hook": "follows the harried staff keeping a chaotic New York mayor's office from falling apart",
+   "known": 0.2,
+   "kind": "workplace"
+  },
+  {
+   "label": "3rd Rock from the Sun",
+   "qid": "Q870490",
+   "fame": 0.545,
+   "first_aired": 1996,
+   "description": "American sitcom",
+   "hook": "follows a team of aliens on a research mission, disguised as an ordinary human family",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "Good Luck Charlie",
+   "qid": "Q366375",
+   "fame": 0.543,
+   "first_aired": 2010,
+   "description": "American sitcom",
+   "hook": "follows a teenager who records video diaries for her baby sister to explain their chaotic household",
+   "known": 0.4,
+   "kind": "family"
+  },
+  {
+   "label": "Henry Danger",
+   "qid": "Q17328326",
+   "fame": 0.543,
+   "first_aired": 2014,
+   "description": "American comedy televisión series",
+   "hook": "follows a teenage boy secretly moonlighting as a superhero's sidekick while hiding it from his parents",
+   "known": 0.2,
+   "kind": "family"
+  },
+  {
+   "label": "ALF",
+   "qid": "Q264221",
+   "fame": 0.542,
+   "first_aired": 1986,
+   "description": "American sitcom (1986-1990)",
+   "hook": "follows a wisecracking alien who crash-lands on Earth and hides out with a suburban family",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "Growing Pains",
+   "qid": "Q1061246",
+   "fame": 0.538,
+   "first_aired": 1985,
+   "description": "American television sitcom series",
+   "hook": "follows a psychiatrist father juggling his home office with raising a houseful of teenagers",
+   "known": 0.4,
+   "kind": "family"
+  },
+  {
+   "label": "Scrubs",
+   "qid": "Q485668",
+   "fame": 0.537,
+   "first_aired": 2001,
+   "description": "American medical comedy-drama television series (2001–2010)",
+   "hook": "follows a group of young doctors learning to cope with life and death at a teaching hospital",
+   "known": 0.6,
+   "kind": "workplace"
+  },
+  {
+   "label": "Mad About You",
+   "qid": "Q752365",
+   "fame": 0.536,
+   "first_aired": 1992,
+   "description": "1990s American TV sitcom",
+   "hook": "follows a newlywed New York couple navigating the awkward ups and downs of early marriage",
+   "known": 0.4,
+   "kind": "buddy"
+  },
+  {
+   "label": "Unbreakable Kimmy Schmidt",
+   "qid": "Q16889037",
+   "fame": 0.53,
+   "first_aired": 2015,
+   "description": "American comedy streaming television series",
+   "hook": "follows an upbeat woman rebuilding her life in New York after escaping an underground cult bunker",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "According to Jim",
+   "qid": "Q757318",
+   "fame": 0.506,
+   "first_aired": 2001,
+   "description": "American television series",
+   "hook": "follows a stubborn husband and father clashing constantly with his wife and live-in brother-in-law",
+   "known": 0.4,
+   "kind": "family"
+  },
+  {
+   "label": "Cougar Town",
+   "qid": "Q575696",
+   "fame": 0.506,
+   "first_aired": 2009,
+   "description": "American comedy series",
+   "hook": "follows a newly divorced woman navigating dating, wine and friendship in a small Florida community",
+   "known": 0.2,
+   "kind": "buddy"
+  },
+  {
+   "label": "K.C. Undercover",
+   "qid": "Q17635847",
+   "fame": 0.5,
+   "first_aired": 2015,
+   "description": "American television series",
+   "hook": "starred a pop star as a teenager secretly working as a spy for her family's agency",
+   "known": 0.2,
+   "kind": "family"
+  },
+  {
+   "label": "Dharma & Greg",
+   "qid": "Q672169",
+   "fame": 0.496,
+   "first_aired": 1997,
+   "description": "American television sitcom",
+   "hook": "followed two opposite personalities who married after their very first date together",
+   "known": 0.2,
+   "kind": "buddy"
+  },
+  {
+   "label": "What I Like About You",
+   "qid": "Q1160221",
+   "fame": 0.492,
+   "first_aired": 2002,
+   "description": "American television series from 2002",
+   "hook": "followed a teenage girl who moved in with her older sister in New York City",
+   "known": 0.2,
+   "kind": "family"
+  },
+  {
+   "label": "El Chavo del 8",
+   "qid": "Q1323981",
+   "fame": 0.479,
+   "first_aired": 1973,
+   "description": "Mexican television sitcom",
+   "hook": "followed a poor orphan boy living in a barrel in a Mexico City tenement courtyard",
+   "known": 0.2,
+   "kind": "comedy"
+  },
+  {
+   "label": "Big Time Rush",
+   "qid": "Q794761",
+   "fame": 0.472,
+   "first_aired": 2009,
+   "description": "American television series",
+   "hook": "followed four hockey-playing friends who are discovered and turned into a boy band",
+   "known": 0.2,
+   "kind": "buddy"
+  },
+  {
+   "label": "A.N.T. Farm",
+   "qid": "Q278375",
+   "fame": 0.469,
+   "first_aired": 2011,
+   "description": "American sitcom",
+   "hook": "followed gifted kids placed in an advanced talent program at a high school",
+   "known": 0.2,
+   "kind": "family"
+  }
+ ]
+}

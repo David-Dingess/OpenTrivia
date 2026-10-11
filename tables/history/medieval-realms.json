@@ -1,0 +1,340 @@
+{
+ "id": "table.history.medieval-realms",
+ "kind": "table",
+ "title": "Medieval kingdoms and empires and their capital",
+ "genre": "society",
+ "category": "history",
+ "topic": "middle-ages",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?capLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?cap) (COUNT(DISTINCT ?c) AS ?nC) WHERE { ?item wdt:P31 wd:Q3024240 ; wdt:P571 ?b ; wdt:P36 ?c ; wikibase:sitelinks ?sl . FILTER(?sl >= 25) FILTER(?b >= \"0476-01-01T00:00:00Z\"^^xsd:dateTime && ?b < \"1500-01-01T00:00:00Z\"^^xsd:dateTime) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T02:25:48.735Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T02:25:48.735Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "capital",
+   "label": "Capital",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "medieval realm",
+  "many": "medieval realms",
+  "wildcard": "place",
+  "hookAsk": "Which medieval realm {hook}?",
+  "hookStatement": "",
+  "columns": {
+   "capital": {
+    "role": "code",
+    "pick": "Which city was the capital of the medieval realm {label}?",
+    "statement": "The capital of {label} was {value}.",
+    "match": "Match each medieval realm to its capital.",
+    "reverse": "Which medieval realm had {value} as its capital?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Kingdom of Poland",
+   "qid": "Q577867",
+   "fame": 0.677,
+   "capital": "Kraków",
+   "description": "Polish state from the coronation of the first King Bolesław I the Brave in 1025 to the union with Lithuania and the rule of the Jagiellon dynasty in 1385",
+   "hook": "was ruled by the Piast line and was first crowned under a king nicknamed the Brave",
+   "known": 0.4,
+   "kind": "kingdom"
+  },
+  {
+   "label": "Kievan Rus'",
+   "qid": "Q1108445",
+   "fame": 0.605,
+   "capital": "Kyiv",
+   "description": "former federation of East Slavic tribes",
+   "hook": "was a medieval Slavic realm whose ruler adopted Orthodox Christianity",
+   "known": 0.4,
+   "kind": "city-state"
+  },
+  {
+   "label": "Joseon",
+   "qid": "Q28179",
+   "fame": 0.597,
+   "capital": "Hanseong",
+   "description": "Korean dynasty / kingdom (1392–1897)",
+   "hook": "was a long-lived realm that created the native alphabet Hangul",
+   "known": 0.4,
+   "kind": "kingdom"
+  },
+  {
+   "label": "Papal States",
+   "qid": "Q170174",
+   "fame": 0.592,
+   "capital": "Rome",
+   "description": "territories mostly in the Appenine Peninsula under the sovereign direct rule of the pope between 756–1870",
+   "hook": "were lands in the middle of the peninsula ruled directly by the head of the Catholic Church",
+   "known": 0.8,
+   "kind": "city-state"
+  },
+  {
+   "label": "Mamluk Sultanate of Egypt",
+   "qid": "Q282428",
+   "fame": 0.549,
+   "capital": "Cairo",
+   "description": "Egyptian state spanning in Hejaz and the Levant (1250–1517)",
+   "hook": "was ruled by a caste of slave-soldiers who beat back the Mongols at Ain Jalut",
+   "known": 0.4,
+   "kind": "sultanate"
+  },
+  {
+   "label": "Kingdom of Bohemia",
+   "qid": "Q42585",
+   "fame": 0.548,
+   "capital": "Prague",
+   "description": "monarchy in Central Europe, predecessor of modern Czech Republic",
+   "hook": "was a Central European realm within the Holy Roman Empire, ruled for a time by Luxembourg kings",
+   "known": 0.6,
+   "kind": "kingdom"
+  },
+  {
+   "label": "Kingdom of Wessex",
+   "qid": "Q105313",
+   "fame": 0.547,
+   "capital": "Winchester",
+   "description": "Anglo-Saxon kingdom in the south of Great Britain",
+   "hook": "was the Anglo-Saxon realm whose king Alfred the Great held off the Vikings",
+   "known": 0.6,
+   "kind": "kingdom"
+  },
+  {
+   "label": "Majapahit",
+   "qid": "Q49326",
+   "fame": 0.537,
+   "capital": "Trowulan",
+   "description": "Empire of Javanese, based in Majakarta (Mojokerto)",
+   "hook": "was the last great Hindu-Buddhist realm of the Malay Archipelago, remembered for its naval power",
+   "known": 0.2,
+   "kind": "empire"
+  },
+  {
+   "label": "Benin Empire",
+   "qid": "Q171203",
+   "fame": 0.532,
+   "capital": "Benin City",
+   "description": "West African kingdom (1180–1897)",
+   "hook": "was a West African realm famed for its brass and ivory plaques, many carried off by British troops",
+   "known": 0.6,
+   "kind": "empire"
+  },
+  {
+   "label": "Khmer Empire",
+   "qid": "Q201705",
+   "fame": 0.529,
+   "capital": "Yasodharapura",
+   "description": "802–1431 empire in Southeast Asia",
+   "hook": "built the vast temple complex of Angkor Wat",
+   "known": 0.6,
+   "kind": "empire"
+  },
+  {
+   "label": "Kingdom of Mercia",
+   "qid": "Q105092",
+   "fame": 0.527,
+   "capital": "Tamworth",
+   "description": "one of the kingdoms of the Anglo-Saxon Heptarchy",
+   "hook": "was the Anglo-Saxon realm that built Offa's Dyke along its border with Wales",
+   "known": 0.4,
+   "kind": "kingdom"
+  },
+  {
+   "label": "Grand Duchy of Lithuania",
+   "qid": "Q49683",
+   "fame": 0.515,
+   "capital": "Vilnius",
+   "description": "Eastern European monarchical state that existed from 1236 to 1795",
+   "hook": "grew into one of the largest states in medieval Europe before joining its western neighbour in a commonwealth",
+   "known": 0.4,
+   "kind": "duchy"
+  },
+  {
+   "label": "Kingdom of Navarre",
+   "qid": "Q200262",
+   "fame": 0.508,
+   "capital": "Pamplona",
+   "description": "Basque medieval kingdom that occupied lands on either side of the western Pyrenees, alongside the Atlantic Ocean (1162–1512)",
+   "hook": "was a small Basque-led realm in the Pyrenees that straddled the border of France and Spain",
+   "known": 0.2,
+   "kind": "kingdom"
+  },
+  {
+   "label": "Duchy of Normandy",
+   "qid": "Q842091",
+   "fame": 0.506,
+   "capital": "Rouen",
+   "description": "former European sovereign state, then dukedom of France",
+   "hook": "was the land granted to Viking chief Rollo, whose descendants later conquered England",
+   "known": 0.6,
+   "kind": "duchy"
+  },
+  {
+   "label": "Ryukyu Kingdom",
+   "qid": "Q28025",
+   "fame": 0.498,
+   "capital": "Shuri",
+   "description": "historical kingdom in parts of present-day Japan",
+   "hook": "was an island realm that grew rich as a trading hub between China and Southeast Asia",
+   "known": 0.2,
+   "kind": "kingdom"
+  },
+  {
+   "label": "Srivijaya",
+   "qid": "Q234197",
+   "fame": 0.498,
+   "capital": "Palembang",
+   "description": "Empire based on the island of Sumatra from 650 to around 1025",
+   "hook": "was a Buddhist maritime power that controlled the trade routes through the Strait of Malacca",
+   "known": 0.2,
+   "kind": "empire"
+  },
+  {
+   "label": "Songhai Empire",
+   "qid": "Q202687",
+   "fame": 0.497,
+   "capital": "Gao",
+   "description": "former state located in western Africa",
+   "hook": "was the largest West African realm of its time and was centred on the Niger River",
+   "known": 0.4,
+   "kind": "empire"
+  },
+  {
+   "label": "Grand Principality of Moscow",
+   "qid": "Q170770",
+   "fame": 0.495,
+   "capital": "Moscow",
+   "description": "Russian principality (1263–1547)",
+   "hook": "was the northern state that grew to become the core of the Russian tsars' realm",
+   "known": 0.6,
+   "kind": "principality"
+  },
+  {
+   "label": "Kingdom of Kongo",
+   "qid": "Q796583",
+   "fame": 0.491,
+   "capital": "M'banza-Kongo",
+   "description": "former African kingdom located in west central Africa",
+   "hook": "was a Central African realm that traded with Portugal and whose rulers converted to Christianity",
+   "known": 0.2,
+   "kind": "kingdom"
+  },
+  {
+   "label": "Latin Empire",
+   "qid": "Q178897",
+   "fame": 0.49,
+   "capital": "Constantinople",
+   "description": "feudal Crusader state founded by the leaders of the Fourth Crusade on lands captured from the Byzantine Empire",
+   "hook": "was a Crusader state set up after the Fourth Crusade seized lands from the Byzantines",
+   "known": 0.2,
+   "kind": "city-state"
+  },
+  {
+   "label": "Novgorod Republic",
+   "qid": "Q151536",
+   "fame": 0.484,
+   "capital": "Veliky Novgorod",
+   "description": "Russian city-state (1136–1478)",
+   "hook": "was a medieval city-state ruled by an assembly called the veche and famed for the hero Alexander Nevsky",
+   "known": 0.2,
+   "kind": "city-state"
+  },
+  {
+   "label": "Empire of Trebizond",
+   "qid": "Q178913",
+   "fame": 0.479,
+   "capital": "Trabzon",
+   "description": "Byzantine Greek state on Black Sea coast",
+   "hook": "was a Greek splinter state on the Black Sea that outlived the fall of the Byzantines' capital by decades",
+   "known": 0.05,
+   "kind": "empire"
+  },
+  {
+   "label": "Emirate of Granada",
+   "qid": "Q238445",
+   "fame": 0.477,
+   "capital": "Granada",
+   "description": "historic Iberian state (1238–1492)",
+   "hook": "was the last Muslim-ruled realm in Spain, home of the Alhambra palace",
+   "known": 0.6,
+   "kind": "emirate"
+  },
+  {
+   "label": "Republic of Ragusa",
+   "qid": "Q208169",
+   "fame": 0.469,
+   "capital": "Dubrovnik",
+   "description": "former maritime republic in southeast Europe (1358–1808)",
+   "hook": "was a wealthy Adriatic city-state that rivalled Venice in seafaring trade",
+   "known": 0.2,
+   "kind": "city-state"
+  },
+  {
+   "label": "Duchy of Burgundy",
+   "qid": "Q4712",
+   "fame": 0.466,
+   "capital": "Dijon",
+   "description": "vassal territory of France, 918–1482",
+   "hook": "was a rich and powerful realm famed for its wine and its rivalry with the French crown",
+   "known": 0.4,
+   "kind": "duchy"
+  },
+  {
+   "label": "Second Bulgarian Empire",
+   "qid": "Q420759",
+   "fame": 0.462,
+   "capital": "Veliko Tarnovo",
+   "description": "Medieval Bulgarian state (1185–1396)",
+   "hook": "was a medieval Balkan realm that regained independence from the Byzantines before falling to the Ottomans",
+   "known": 0.2,
+   "kind": "empire"
+  },
+  {
+   "label": "Kingdom of Leon",
+   "qid": "Q175276",
+   "fame": 0.456,
+   "capital": "León",
+   "description": "independent medieval kingdom in the northwest of the Iberian Peninsula (910–1230), capital León",
+   "hook": "was a medieval Iberian realm that repeatedly shared its king with its eastern neighbour",
+   "known": 0.2,
+   "kind": "kingdom"
+  },
+  {
+   "label": "Tibetan Empire",
+   "qid": "Q2431480",
+   "fame": 0.455,
+   "capital": "Lhasa",
+   "description": "former empire (618–842) centered on the Tibetan Plateau",
+   "hook": "was a powerful Central Asian realm that spread Buddhism and rivalled Tang China",
+   "known": 0.4,
+   "kind": "empire"
+  }
+ ]
+}

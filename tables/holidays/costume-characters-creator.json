@@ -1,0 +1,629 @@
+{
+ "id": "table.holidays.costume-characters-creator",
+ "kind": "table",
+ "title": "Costume characters: who created them",
+ "genre": "daily-life",
+ "category": "holidays",
+ "topic": "costumes",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?crLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?cr) (COUNT(DISTINCT ?c) AS ?n) WHERE { VALUES ?cls { wd:Q188784 wd:Q15773317 wd:Q1114461 wd:Q95074 wd:Q15632617 } ?item wdt:P31 ?cls ; wdt:P170 ?c . ?c wdt:P31 wd:Q5 . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?n=1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T21:40:43.173Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T21:40:43.173Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "creator",
+   "label": "Creator",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "character",
+  "many": "characters",
+  "hookAsk": "Which character {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "creator": {
+    "role": "code",
+    "pick": "Who created {label}?",
+    "statement": "{label} was created by {value}.",
+    "match": "Match each costume character to their creator.",
+    "reverse": "Which of these characters did {value} create?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Scrooge McDuck",
+   "qid": "Q11937",
+   "fame": 0.76,
+   "creator": "Carl Barks",
+   "description": "Disney character, uncle of Donald Duck",
+   "hook": "is a wealthy, penny-pinching duck who swims in a vault full of gold coins",
+   "known": 0.6,
+   "kind": "comic character"
+  },
+  {
+   "label": "Sherlock Holmes",
+   "qid": "Q4653",
+   "fame": 0.647,
+   "creator": "Arthur Conan Doyle",
+   "description": "fictional character (consulting detective) created by Sir Arthur Conan Doyle",
+   "hook": "is a pipe-smoking London detective in a deerstalker who solves cases by deduction",
+   "known": 0.95,
+   "kind": "literary character"
+  },
+  {
+   "label": "Hercule Poirot",
+   "qid": "Q170534",
+   "fame": 0.613,
+   "creator": "Agatha Christie",
+   "description": "fictional Belgian detective by Agatha Christie",
+   "hook": "is a fussy Belgian detective with a waxed moustache who relies on his little grey cells",
+   "known": 0.7,
+   "kind": "literary character"
+  },
+  {
+   "label": "Long John Silver",
+   "qid": "Q1428628",
+   "fame": 0.603,
+   "creator": "Robert Louis Stevenson",
+   "description": "fictional character from Treasure Island",
+   "hook": "is a peg-legged pirate cook with a parrot on his shoulder in a famous treasure-island tale",
+   "known": 0.6,
+   "kind": "literary character"
+  },
+  {
+   "label": "Aragorn",
+   "qid": "Q180322",
+   "fame": 0.6,
+   "creator": "J. R. R. Tolkien",
+   "description": "fictional character from J.R.R. Tolkien's legendarium",
+   "hook": "is a ranger who becomes king of Gondor after helping a fellowship destroy a magic ring",
+   "known": 0.7,
+   "kind": "literary character"
+  },
+  {
+   "label": "Darth Vader",
+   "qid": "Q12206942",
+   "fame": 0.598,
+   "creator": "George Lucas",
+   "description": "fictional character from the Star Wars media franchise",
+   "hook": "is a black-armoured, heavy-breathing villain who reveals he is a young hero's father",
+   "known": 0.95,
+   "kind": "film character"
+  },
+  {
+   "label": "Mario",
+   "qid": "Q12379",
+   "fame": 0.585,
+   "creator": "Shigeru Miyamoto",
+   "description": "fictional character in the Mario video game franchise",
+   "hook": "is a mustachioed plumber in red who stomps on mushroom-like enemies to rescue a princess",
+   "known": 0.95,
+   "kind": "video game character"
+  },
+  {
+   "label": "Snoopy",
+   "qid": "Q207369",
+   "fame": 0.585,
+   "creator": "Charles M. Schulz",
+   "description": "fictional dog from the comic strip ''Peanuts'' by Charles m. Schulz",
+   "hook": "is a beagle who sleeps on a doghouse roof and imagines himself a World War I flying ace",
+   "known": 0.85,
+   "kind": "comic character"
+  },
+  {
+   "label": "Count Dracula",
+   "qid": "Q3266236",
+   "fame": 0.581,
+   "creator": "Bram Stoker",
+   "description": "title character of Bram Stoker's 1897 gothic horror novel Dracula",
+   "hook": "is a caped Transylvanian vampire who sleeps in a coffin and fears sunlight",
+   "known": 0.85,
+   "kind": "literary character"
+  },
+  {
+   "label": "Popeye",
+   "qid": "Q199796",
+   "fame": 0.581,
+   "creator": "E. C. Segar",
+   "description": "cartoon fictional character",
+   "hook": "is a squinting sailor with huge forearms who gains strength by eating canned spinach",
+   "known": 0.8,
+   "kind": "comic character"
+  },
+  {
+   "label": "He-Man",
+   "qid": "Q550404",
+   "fame": 0.58,
+   "creator": "Roger Sweet",
+   "description": "fictional character from the Masters of the Universe universe",
+   "hook": "is a muscular blond hero who raises a sword and cries out 'I have the power!'",
+   "known": 0.6,
+   "kind": "television character"
+  },
+  {
+   "label": "James Bond",
+   "qid": "Q2009573",
+   "fame": 0.569,
+   "creator": "Ian Fleming",
+   "description": "secret agent, invented by novellist Ian Fleming",
+   "hook": "is a British spy with a licence to kill who likes his martini shaken, not stirred",
+   "known": 0.9,
+   "kind": "literary character"
+  },
+  {
+   "label": "SpongeBob SquarePants",
+   "qid": "Q935079",
+   "fame": 0.568,
+   "creator": "Stephen Hillenburg",
+   "description": "main character from the animated television show SpongeBob SquarePants",
+   "hook": "is a cheerful yellow sea sponge who lives in a pineapple and flips burgers",
+   "known": 0.9,
+   "kind": "television character"
+  },
+  {
+   "label": "Palpatine",
+   "qid": "Q51770",
+   "fame": 0.566,
+   "creator": "George Lucas",
+   "description": "fictional character from Star Wars",
+   "hook": "is a hooded Sith Lord who secretly rules as a galactic Emperor and shoots lightning from his fingers",
+   "known": 0.7,
+   "kind": "film character"
+  },
+  {
+   "label": "James T. Kirk",
+   "qid": "Q16311",
+   "fame": 0.562,
+   "creator": "Gene Roddenberry",
+   "description": "fictional character from Star Trek",
+   "hook": "is a starship captain famous for bold decisions, green-skinned romances and a first officer with pointed ears",
+   "known": 0.75,
+   "kind": "television character"
+  },
+  {
+   "label": "Professor Moriarty",
+   "qid": "Q283111",
+   "fame": 0.556,
+   "creator": "Arthur Conan Doyle",
+   "description": "fictional character from Sherlock Holmes",
+   "hook": "is a math-genius criminal mastermind and arch-enemy of a famous London detective",
+   "known": 0.5,
+   "kind": "literary character"
+  },
+  {
+   "label": "Zorro",
+   "qid": "Q226822",
+   "fame": 0.554,
+   "creator": "Johnston McCulley",
+   "description": "fictional character",
+   "hook": "is a masked swordsman in black who carves a letter with his blade to fight tyranny",
+   "known": 0.7,
+   "kind": "literary character"
+  },
+  {
+   "label": "Monkey D. Luffy",
+   "qid": "Q477948",
+   "fame": 0.549,
+   "creator": "Eiichiro Oda",
+   "description": "fictional character from One Piece",
+   "hook": "is a straw-hatted boy with a rubber body who sets out to become King of the Pirates",
+   "known": 0.5,
+   "kind": "manga character"
+  },
+  {
+   "label": "Pippi Longstocking",
+   "qid": "Q6668",
+   "fame": 0.548,
+   "creator": "Astrid Lindgren",
+   "description": "fictional character created by Astrid Lindgren",
+   "hook": "is a super-strong red-pigtailed girl who lives without parents with a horse and a monkey",
+   "known": 0.6,
+   "kind": "literary character"
+  },
+  {
+   "label": "Bart Simpson",
+   "qid": "Q5480",
+   "fame": 0.547,
+   "creator": "Matt Groening",
+   "description": "fictional character from The Simpsons",
+   "hook": "is a spiky-haired, skateboarding troublemaker who prank-calls a bartender and says 'Eat my shorts'",
+   "known": 0.9,
+   "kind": "television character"
+  },
+  {
+   "label": "Tarzan",
+   "qid": "Q170241",
+   "fame": 0.544,
+   "creator": "Edgar Rice Burroughs",
+   "description": "fictional character by Edgar Rice Burroughs",
+   "hook": "is a man raised by apes who swings through jungle vines and yells a famous call",
+   "known": 0.8,
+   "kind": "literary character"
+  },
+  {
+   "label": "Princess Leia",
+   "qid": "Q51797",
+   "fame": 0.543,
+   "creator": "George Lucas",
+   "description": "fictional character from Star Wars",
+   "hook": "is a rebel leader with side-buns who is rescued from a moon-sized battle station",
+   "known": 0.9,
+   "kind": "film character"
+  },
+  {
+   "label": "Homer Simpson",
+   "qid": "Q7810",
+   "fame": 0.542,
+   "creator": "Matt Groening",
+   "description": "character from The Simpsons franchise",
+   "hook": "is a doughnut-loving, beer-drinking nuclear plant worker who often shouts 'D'oh!'",
+   "known": 0.95,
+   "kind": "television character"
+  },
+  {
+   "label": "Galadriel",
+   "qid": "Q204274",
+   "fame": 0.538,
+   "creator": "J. R. R. Tolkien",
+   "description": "fictional character from J.R.R. Tolkien's legendarium",
+   "hook": "is a radiant elf queen who resists the temptation of a magic ring in a Middle-earth epic",
+   "known": 0.5,
+   "kind": "literary character"
+  },
+  {
+   "label": "Frankenstein's monster",
+   "qid": "Q2021531",
+   "fame": 0.535,
+   "creator": "Mary Shelley",
+   "description": "1818 fictional character by Mary Shelley",
+   "hook": "is a stitched-together creature brought to life with lightning, often shown with neck bolts",
+   "known": 0.9,
+   "kind": "literary character"
+  },
+  {
+   "label": "Hellboy",
+   "qid": "Q1150106",
+   "fame": 0.53,
+   "creator": "Mike Mignola",
+   "description": "comic book character created by Mike Mignola",
+   "hook": "is a red-skinned demon with filed-down horns who fights the paranormal for a secret agency",
+   "known": 0.4,
+   "kind": "comic character"
+  },
+  {
+   "label": "Jabba the Hutt",
+   "qid": "Q51794",
+   "fame": 0.527,
+   "creator": "George Lucas",
+   "description": "fictional character from Star Wars",
+   "hook": "is a gigantic slug-like gangster who keeps a frozen smuggler as wall decoration",
+   "known": 0.8,
+   "kind": "film character"
+  },
+  {
+   "label": "Miss Marple",
+   "qid": "Q193531",
+   "fame": 0.527,
+   "creator": "Agatha Christie",
+   "description": "fictional character appearing in Agatha Christie's crime novels",
+   "hook": "is a sharp-witted elderly spinster from a quiet English village who solves murders by knitting and gossip",
+   "known": 0.5,
+   "kind": "literary character"
+  },
+  {
+   "label": "Peter Griffin",
+   "qid": "Q28465",
+   "fame": 0.522,
+   "creator": "Seth MacFarlane",
+   "description": "fictional character from the Family Guy franchise",
+   "hook": "is a bumbling, chinless dad from Rhode Island with a distinctive belly laugh",
+   "known": 0.85,
+   "kind": "television character"
+  },
+  {
+   "label": "Lara Croft",
+   "qid": "Q223684",
+   "fame": 0.521,
+   "creator": "Toby Gard",
+   "description": "Tomb Raider protagonist character",
+   "hook": "is a dual-pistol-wielding British adventuress who explores ancient tombs in shorts and a braid",
+   "known": 0.8,
+   "kind": "video game character"
+  },
+  {
+   "label": "Obi-Wan Kenobi",
+   "qid": "Q51740",
+   "fame": 0.521,
+   "creator": "George Lucas",
+   "description": "fictional character from Star Wars",
+   "hook": "is a wise, bearded Jedi master who mentors a farm boy and famously says 'Hello there'",
+   "known": 0.8,
+   "kind": "film character"
+  },
+  {
+   "label": "Wednesday Addams",
+   "qid": "Q2575084",
+   "fame": 0.519,
+   "creator": "Charles Addams",
+   "description": "fictional character from The Addams Family",
+   "hook": "is a deadpan, braided girl in black who loves gloom and keeps a pet with a severed hand",
+   "known": 0.8,
+   "kind": "comic character"
+  },
+  {
+   "label": "Yoda",
+   "qid": "Q51730",
+   "fame": 0.519,
+   "creator": "George Lucas",
+   "description": "fictional character from Star Wars",
+   "hook": "is a tiny, green, big-eared Jedi master who speaks with backwards sentences",
+   "known": 0.9,
+   "kind": "film character"
+  },
+  {
+   "label": "Padmé Amidala",
+   "qid": "Q51789",
+   "fame": 0.518,
+   "creator": "George Lucas",
+   "description": "fictional character from Star Wars",
+   "hook": "is a queen of a peaceful planet who becomes a senator and secretly marries a Jedi",
+   "known": 0.6,
+   "kind": "film character"
+  },
+  {
+   "label": "Ash Ketchum",
+   "qid": "Q308950",
+   "fame": 0.517,
+   "creator": "Satoshi Tajiri",
+   "description": "Pokémon animated series main character",
+   "hook": "is a cap-wearing boy who travels with an electric yellow mouse and wants to catch them all",
+   "known": 0.8,
+   "kind": "television character"
+  },
+  {
+   "label": "Rocky Balboa",
+   "qid": "Q2289535",
+   "fame": 0.516,
+   "creator": "Sylvester Stallone",
+   "description": "fictional character in the Rocky film series",
+   "hook": "is a Philadelphia boxer who trains by punching meat and running up museum steps",
+   "known": 0.85,
+   "kind": "film character"
+  },
+  {
+   "label": "Luke Skywalker",
+   "qid": "Q51746",
+   "fame": 0.515,
+   "creator": "George Lucas",
+   "description": "fictional character from Star Wars",
+   "hook": "is a farm boy with a green lightsaber who destroys a moon-sized battle station",
+   "known": 0.95,
+   "kind": "film character"
+  },
+  {
+   "label": "Kermit the Frog",
+   "qid": "Q1107971",
+   "fame": 0.513,
+   "creator": "Jim Henson",
+   "description": "Muppet character",
+   "hook": "is a green puppet who sings about how it is not easy being green",
+   "known": 0.9,
+   "kind": "television character"
+  },
+  {
+   "label": "Charlie Brown",
+   "qid": "Q1168491",
+   "fame": 0.512,
+   "creator": "Charles M. Schulz",
+   "description": "character in the comic strip Peanuts by Charles M. Schulz",
+   "hook": "is a round-headed boy who always misses field-goal kicks and has a lucky-less baseball team",
+   "known": 0.85,
+   "kind": "comic character"
+  },
+  {
+   "label": "Peter Pan",
+   "qid": "Q107190",
+   "fame": 0.509,
+   "creator": "J. M. Barrie",
+   "description": "fictional character created by J. M. Barrie",
+   "hook": "is a boy who never grows up, flies with pixie dust and lives in Neverland",
+   "known": 0.85,
+   "kind": "literary character"
+  },
+  {
+   "label": "Boba Fett",
+   "qid": "Q51790",
+   "fame": 0.507,
+   "creator": "George Lucas",
+   "description": "fictional character from Star Wars",
+   "hook": "is a green-armoured bounty hunter with a jetpack who captures a frozen smuggler",
+   "known": 0.7,
+   "kind": "film character"
+  },
+  {
+   "label": "Darth Maul",
+   "qid": "Q51766",
+   "fame": 0.506,
+   "creator": "George Lucas",
+   "description": "fictional character from the Star Wars universe",
+   "hook": "is a horned, red-and-black-faced Sith warrior who wields a double-bladed lightsaber",
+   "known": 0.6,
+   "kind": "film character"
+  },
+  {
+   "label": "Flash Gordon",
+   "qid": "Q92566",
+   "fame": 0.505,
+   "creator": "Alex Raymond",
+   "description": "hero of a science fiction adventure comic strip",
+   "hook": "is a blond football star who battles the tyrant Ming on the planet Mongo",
+   "known": 0.5,
+   "kind": "comic character"
+  },
+  {
+   "label": "Victor Frankenstein",
+   "qid": "Q2320164",
+   "fame": 0.502,
+   "creator": "Mary Shelley",
+   "description": "character from Mary Shelley's 1818 novel \"Frankenstein\"",
+   "hook": "is a young scientist who builds a living creature from body parts and then abandons it",
+   "known": 0.7,
+   "kind": "literary character"
+  },
+  {
+   "label": "Indiana Jones",
+   "qid": "Q148659",
+   "fame": 0.499,
+   "creator": "George Lucas",
+   "description": "fictional archaeologist",
+   "hook": "is a whip-cracking, fedora-wearing archaeologist who fears snakes and chases lost arks",
+   "known": 0.95,
+   "kind": "film character"
+  },
+  {
+   "label": "Captain Hook",
+   "qid": "Q1035128",
+   "fame": 0.497,
+   "creator": "J. M. Barrie",
+   "description": "fictional pirate",
+   "hook": "is a pirate with a metal hand who is chased by a crocodile with a ticking clock",
+   "known": 0.8,
+   "kind": "literary character"
+  },
+  {
+   "label": "Jean-Luc Picard",
+   "qid": "Q16276",
+   "fame": 0.491,
+   "creator": "Gene Roddenberry",
+   "description": "fictional Star Trek character",
+   "hook": "is a bald, tea-drinking starship captain who orders 'Make it so' and 'Engage'",
+   "known": 0.65,
+   "kind": "television character"
+  },
+  {
+   "label": "Garfield",
+   "qid": "Q767120",
+   "fame": 0.484,
+   "creator": "Jim Davis",
+   "description": "fictional cartoon cat",
+   "hook": "is a lazy orange tabby who loves lasagna, hates Mondays and torments his dog housemate",
+   "known": 0.85,
+   "kind": "comic character"
+  },
+  {
+   "label": "Mowgli",
+   "qid": "Q1381592",
+   "fame": 0.479,
+   "creator": "Rudyard Kipling",
+   "description": "fictional human from Rudyard Kipling's The Jungle Book",
+   "hook": "is a boy raised by wolves who befriends a bear and a panther and fights a tiger",
+   "known": 0.6,
+   "kind": "literary character"
+  },
+  {
+   "label": "Han Solo",
+   "qid": "Q51802",
+   "fame": 0.478,
+   "creator": "George Lucas",
+   "description": "fictional character from Star Wars",
+   "hook": "is a smuggler with a fast ship and a wookiee co-pilot, who shoots first in a famous cantina scene",
+   "known": 0.95,
+   "kind": "film character"
+  },
+  {
+   "label": "Naruto Uzumaki",
+   "qid": "Q931",
+   "fame": 0.471,
+   "creator": "Masashi Kishimoto",
+   "description": "fictional character from Naruto",
+   "hook": "is an orange-jumpsuited ninja who dreams of becoming Hokage and has a fox spirit sealed inside",
+   "known": 0.45,
+   "kind": "manga character"
+  },
+  {
+   "label": "Roronoa Zoro",
+   "qid": "Q858432",
+   "fame": 0.471,
+   "creator": "Eiichiro Oda",
+   "description": "fictional character from One Piece",
+   "hook": "is a green-haired swordsman who fights with three blades, one held in his mouth",
+   "known": 0.4,
+   "kind": "manga character"
+  },
+  {
+   "label": "Dr. Watson",
+   "qid": "Q187349",
+   "fame": 0.47,
+   "creator": "Arthur Conan Doyle",
+   "description": "fictional character of Sherlock Holmes",
+   "hook": "is a doctor and former army man who chronicles the adventures of a famous London detective",
+   "known": 0.6,
+   "kind": "literary character"
+  },
+  {
+   "label": "Luigi",
+   "qid": "Q210593",
+   "fame": 0.47,
+   "creator": "Shigeru Miyamoto",
+   "description": "fictional video game character from the Mario franchise",
+   "hook": "is a taller, green-clad plumber sibling who lives in his brother's shadow",
+   "known": 0.85,
+   "kind": "video game character"
+  },
+  {
+   "label": "Mr. Bean",
+   "qid": "Q13471616",
+   "fame": 0.467,
+   "creator": "Rowan Atkinson",
+   "description": "character in British comedy TV programme",
+   "hook": "is a nearly silent, bumbling man in a tweed jacket who carries a teddy bear and causes chaos",
+   "known": 0.8,
+   "kind": "television character"
+  },
+  {
+   "label": "Tinker Bell",
+   "qid": "Q853847",
+   "fame": 0.467,
+   "creator": "J. M. Barrie",
+   "description": "fictional character created by J. M. Barrie",
+   "hook": "is a tiny winged fairy who sprinkles dust and is jealous of a girl who visits Neverland",
+   "known": 0.75,
+   "kind": "literary character"
+  },
+  {
+   "label": "Marge Simpson",
+   "qid": "Q7828",
+   "fame": 0.459,
+   "creator": "Matt Groening",
+   "description": "fictional character from The Simpsons franchise",
+   "hook": "is a mother with towering blue hair and a raspy voice who keeps her chaotic family together",
+   "known": 0.85,
+   "kind": "television character"
+  }
+ ]
+}

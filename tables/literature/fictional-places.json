@@ -1,0 +1,642 @@
+{
+ "id": "table.literature.fictional-places",
+ "kind": "table",
+ "title": "Fictional places: the story they come from",
+ "genre": "arts-entertainment",
+ "category": "literature",
+ "topic": "fictional-worlds",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?workLabel WHERE { VALUES (?item ?workLabel) { (wd:Q174097 \"Harry Potter\") (wd:Q1771915 \"Harry Potter\") (wd:Q715509 \"Harry Potter\") (wd:Q3290421 \"Harry Potter\") (wd:Q1951222 \"Harry Potter\") (wd:Q12324425 \"Harry Potter\") (wd:Q202886 \"The Lord of the Rings\") (wd:Q213586 \"The Lord of the Rings\") (wd:Q218728 \"The Lord of the Rings\") (wd:Q218562 \"The Lord of the Rings\") (wd:Q717079 \"The Lord of the Rings\") (wd:Q220110 \"The Lord of the Rings\") (wd:Q308657 \"The Lord of the Rings\") (wd:Q46854 \"The Lord of the Rings\") (wd:Q308659 \"The Lord of the Rings\") (wd:Q982944 \"The Lord of the Rings\") (wd:Q1641279 \"The Lord of the Rings\") (wd:Q79734 \"The Lord of the Rings\") (wd:Q26098 \"The Hobbit\") (wd:Q723764 \"Star Wars\") (wd:Q719329 \"Star Wars\") (wd:Q752192 \"Star Wars\") (wd:Q739771 \"Star Wars\") (wd:Q257155 \"Star Wars\") (wd:Q848609 \"Star Wars\") (wd:Q12180673 \"Star Wars\") (wd:Q837941 \"Star Wars\") (wd:Q732858 \"Batman\") (wd:Q1079391 \"Batman\") (wd:Q1433003 \"Batman\") (wd:Q1474926 \"Superman\") (wd:Q623138 \"Superman\") (wd:Q2809472 \"Wonder Woman\") (wd:Q766099 \"Black Panther\") (wd:Q1978842 \"The Simpsons\") (wd:Q1257618 \"The Simpsons\") (wd:Q2276331 \"SpongeBob SquarePants\") (wd:Q859531 \"SpongeBob SquarePants\") (wd:Q1646867 \"Peter Pan\") (wd:Q102424699 \"Gulliver's Travels\") (wd:Q923051 \"Gulliver's Travels\") (wd:Q543170 \"Gulliver's Travels\") (wd:Q934381 \"One Hundred Years of Solitude\") (wd:Q940030 \"Dune\") (wd:Q2328785 \"Super Mario\") (wd:Q8159988 \"Pokémon\") (wd:Q1992196 \"Sherlock Holmes\") (wd:Q1186638 \"Nineteen Eighty-Four\") (wd:Q954361 \"Back to the Future\") (wd:Q1310304 \"Winnie-the-Pooh\") (wd:Q13099569 \"The Legend of Zelda\") (wd:Q3313001 \"The Flintstones\") (wd:Q2484090 \"Pride and Prejudice\") (wd:Q1961610 \"The Wonderful Wizard of Oz\") (wd:Q898585 \"Jurassic Park\") (wd:Q1073876 \"King Kong\") (wd:Q7997680 \"How the Grinch Stole Christmas!\") (wd:Q367221 \"Doctor Who\") (wd:Q680733 \"Transformers\") (wd:Q73545452 \"The Nightmare Before Christmas\") (wd:Q64514006 \"The Lion King\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T05:29:55.735Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T05:29:55.735Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "work",
+   "label": "From",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "fictional place",
+  "many": "fictional places",
+  "itemText": "{label} — {work}",
+  "hookAsk": "Which fictional place {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "work": {
+    "role": "link",
+    "pick": "Which story, show or franchise is {label} from?",
+    "statement": "{label} is from {value}.",
+    "match": "Match each fictional place to the story it comes from.",
+    "odd": "Three of these fictional places are from {value}. Which one is not?",
+    "all": "Tap all {n} fictional places from {value}.",
+    "reverse": "Which of these fictional places is from {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Gotham City",
+   "qid": "Q732858",
+   "fame": 0.548,
+   "work": "Batman",
+   "description": "fictional city in the DC Universe, best known as the home of Batman",
+   "hook": "is a dark, crime-ridden metropolis protected by a caped vigilante",
+   "known": 0.95,
+   "kind": "dc comics"
+  },
+  {
+   "label": "Hogwarts",
+   "qid": "Q174097",
+   "fame": 0.516,
+   "work": "Harry Potter",
+   "description": "fictional Scottish school of magic from the Harry Potter universe",
+   "hook": "is a castle school where young students learn spells and are sorted into four houses",
+   "known": 0.95,
+   "kind": "harry potter"
+  },
+  {
+   "label": "Middle-earth",
+   "qid": "Q79734",
+   "fame": 0.51,
+   "work": "The Lord of the Rings",
+   "description": "fictional continent in Arda",
+   "hook": "is the fantasy world where hobbits, elves and dwarves face a rising dark power",
+   "known": 0.8,
+   "kind": "tolkien"
+  },
+  {
+   "label": "Wakanda",
+   "qid": "Q766099",
+   "fame": 0.493,
+   "work": "Black Panther",
+   "description": "fictional country from Marvel Comics",
+   "hook": "is a hidden, technologically advanced African nation powered by a rare metal called vibranium",
+   "known": 0.8,
+   "kind": "marvel"
+  },
+  {
+   "label": "Krypton",
+   "qid": "Q623138",
+   "fame": 0.467,
+   "work": "Superman",
+   "description": "fictional planet, native world of Superman",
+   "hook": "is a doomed alien world that sent its last son to Earth as a baby in a rocket",
+   "known": 0.6,
+   "kind": "dc comics"
+  },
+  {
+   "label": "Mordor",
+   "qid": "Q202886",
+   "fame": 0.456,
+   "work": "The Lord of the Rings",
+   "description": "fictional country in Middle-earth",
+   "hook": "is a volcanic wasteland ruled by a dark power with an all-seeing eye",
+   "known": 0.8,
+   "kind": "tolkien"
+  },
+  {
+   "label": "Arkham Asylum",
+   "qid": "Q1079391",
+   "fame": 0.429,
+   "work": "Batman",
+   "description": "fictional psychiatric hospital/prison by DC Comics",
+   "hook": "is a gloomy institution housing the clownish and criminally insane villains of a caped hero's city",
+   "known": 0.6,
+   "kind": "dc comics"
+  },
+  {
+   "label": "Gondor",
+   "qid": "Q213586",
+   "fame": 0.428,
+   "work": "The Lord of the Rings",
+   "description": "fictional country in Middle-earth",
+   "hook": "is the human kingdom whose white city lights beacons to call for help in war",
+   "known": 0.4,
+   "kind": "tolkien"
+  },
+  {
+   "label": "Metropolis",
+   "qid": "Q1474926",
+   "fame": 0.424,
+   "work": "Superman",
+   "description": "fictional city in the DC Universe, best known as the home of Superman",
+   "hook": "is the gleaming big city where a reporter works by day and a hero in a cape by night",
+   "known": 0.95,
+   "kind": "dc comics"
+  },
+  {
+   "label": "Minas Tirith",
+   "qid": "Q308657",
+   "fame": 0.421,
+   "work": "The Lord of the Rings",
+   "description": "fictional city in Middle-earth",
+   "hook": "is the white-walled, seven-tiered city of kings under siege by a dark army",
+   "known": 0.2,
+   "kind": "tolkien"
+  },
+  {
+   "label": "The Krusty Krab",
+   "qid": "Q859531",
+   "fame": 0.418,
+   "work": "SpongeBob SquarePants",
+   "description": "fictional restaurant in SpongeBob SquarePants",
+   "hook": "is an undersea fast-food joint where a fry cook flips Krabby Patties",
+   "known": 0.8,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Themyscira",
+   "qid": "Q2809472",
+   "fame": 0.416,
+   "work": "Wonder Woman",
+   "description": "fictional location from DC Comics",
+   "hook": "is a hidden island paradise of immortal warrior women",
+   "known": 0.2,
+   "kind": "dc comics"
+  },
+  {
+   "label": "Arrakis",
+   "qid": "Q940030",
+   "fame": 0.412,
+   "work": "Dune",
+   "description": "fictional desert planet featured in the Dune series",
+   "hook": "is a desert planet where giant sandworms guard the precious spice melange",
+   "known": 0.6,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Tatooine",
+   "qid": "Q723764",
+   "fame": 0.411,
+   "work": "Star Wars",
+   "description": "fictional planet in the Star Wars universe",
+   "hook": "is a twin-sunned desert planet where a farm boy dreams of leaving",
+   "known": 0.95,
+   "kind": "star wars"
+  },
+  {
+   "label": "Rivendell",
+   "qid": "Q218562",
+   "fame": 0.41,
+   "work": "The Lord of the Rings",
+   "description": "fictional city in Middle-earth",
+   "hook": "is the hidden elven valley where a council decides the fate of a dangerous ring",
+   "known": 0.2,
+   "kind": "tolkien"
+  },
+  {
+   "label": "The Shire",
+   "qid": "Q218728",
+   "fame": 0.409,
+   "work": "The Lord of the Rings",
+   "description": "fictional region in Middle-earth",
+   "hook": "is the green, peaceful countryside home of hobbits",
+   "known": 0.8,
+   "kind": "tolkien"
+  },
+  {
+   "label": "Coruscant",
+   "qid": "Q719329",
+   "fame": 0.408,
+   "work": "Star Wars",
+   "description": "planet in the Star Wars universe",
+   "hook": "is a galaxy-wide capital planet covered entirely by one giant city",
+   "known": 0.4,
+   "kind": "star wars"
+  },
+  {
+   "label": "221B Baker Street",
+   "qid": "Q1992196",
+   "fame": 0.403,
+   "work": "Sherlock Holmes",
+   "description": "London address of the fictional detective Sherlock Holmes, created by the writer of the famous 'Sherlock Holmes', Sir Arthur Ignatius Conan Doyle'",
+   "hook": "is the famous sitting-room address of a pipe-smoking consulting detective and his doctor friend",
+   "known": 0.6,
+   "kind": "literature"
+  },
+  {
+   "label": "Neverland",
+   "qid": "Q1646867",
+   "fame": 0.4,
+   "work": "Peter Pan",
+   "description": "fictional island in Peter Pan and other works of J. M. Barrie",
+   "hook": "is the island where boys never grow up, home to pirates and a ticking crocodile",
+   "known": 0.8,
+   "kind": "literature"
+  },
+  {
+   "label": "Moria",
+   "qid": "Q46854",
+   "fame": 0.391,
+   "work": "The Lord of the Rings",
+   "description": "fictional country in Middle-earth",
+   "hook": "is a vast abandoned dwarf mine where a fellowship meets a fiery demon on a bridge",
+   "known": 0.2,
+   "kind": "tolkien"
+  },
+  {
+   "label": "Skull Island",
+   "qid": "Q1073876",
+   "fame": 0.39,
+   "work": "King Kong",
+   "description": "fictional location",
+   "hook": "is a remote jungle island home to a giant ape",
+   "known": 0.6,
+   "kind": "movie"
+  },
+  {
+   "label": "Macondo",
+   "qid": "Q934381",
+   "fame": 0.388,
+   "work": "One Hundred Years of Solitude",
+   "description": "fictional town created by Gabriel García Márquez",
+   "hook": "is a fictional village where a family endures a plague of insomnia, yellow butterflies and magical realism",
+   "known": 0.05,
+   "kind": "literature"
+  },
+  {
+   "label": "Hundred Acre Wood",
+   "qid": "Q1310304",
+   "fame": 0.387,
+   "work": "Winnie-the-Pooh",
+   "description": "fictional forest",
+   "hook": "is a forest home to a honey-loving bear, a gloomy donkey and a bouncy tiger",
+   "known": 0.6,
+   "kind": "literature"
+  },
+  {
+   "label": "Rohan",
+   "qid": "Q220110",
+   "fame": 0.381,
+   "work": "The Lord of the Rings",
+   "description": "fictional country in Middle-earth",
+   "hook": "is the grassland kingdom of horse lords",
+   "known": 0.2,
+   "kind": "tolkien"
+  },
+  {
+   "label": "Lonely Mountain",
+   "qid": "Q26098",
+   "fame": 0.379,
+   "work": "The Hobbit",
+   "description": "fictional mountain",
+   "hook": "is the peak where a dragon sleeps atop a hoard of treasure",
+   "known": 0.4,
+   "kind": "tolkien"
+  },
+  {
+   "label": "Lavender Town",
+   "qid": "Q8159988",
+   "fame": 0.377,
+   "work": "Pokémon",
+   "description": "town in Pokémon universe",
+   "hook": "is a haunting settlement with a tower full of ghost-type creatures and a spooky tune",
+   "known": 0.4,
+   "kind": "video game"
+  },
+  {
+   "label": "Lothlórien",
+   "qid": "Q308659",
+   "fame": 0.371,
+   "work": "The Lord of the Rings",
+   "description": "fictional country in Middle-earth",
+   "hook": "is a golden forest of elves ruled by a lady with a mirror",
+   "known": 0.2,
+   "kind": "tolkien"
+  },
+  {
+   "label": "Isengard",
+   "qid": "Q717079",
+   "fame": 0.364,
+   "work": "The Lord of the Rings",
+   "description": "large fortress in J. R. R. Tolkien's legendarium",
+   "hook": "is the tower stronghold of a traitorous white wizard",
+   "known": 0.2,
+   "kind": "tolkien"
+  },
+  {
+   "label": "Wayne Manor",
+   "qid": "Q1433003",
+   "fame": 0.357,
+   "work": "Batman",
+   "description": "fictional building in DC Comics",
+   "hook": "is the sprawling mansion above a secret cave hiding a hero's vehicles and gadgets",
+   "known": 0.6,
+   "kind": "dc comics"
+  },
+  {
+   "label": "Whoville",
+   "qid": "Q7997680",
+   "fame": 0.355,
+   "work": "How the Grinch Stole Christmas!",
+   "description": "fictional location in works by Dr. Seuss",
+   "hook": "is a snowflake-sized town of tiny folk whose holiday spirit a green grump tries to steal",
+   "known": 0.6,
+   "kind": "literature"
+  },
+  {
+   "label": "Alderaan",
+   "qid": "Q752192",
+   "fame": 0.351,
+   "work": "Star Wars",
+   "description": "fictional planet in the Star Wars Universe",
+   "hook": "is a peaceful planet destroyed by a battle station's superlaser",
+   "known": 0.6,
+   "kind": "star wars"
+  },
+  {
+   "label": "Hill Valley",
+   "qid": "Q954361",
+   "fame": 0.351,
+   "work": "Back to the Future",
+   "description": "fictional city in California, USA in the \"Back to the Future\" movie franchise",
+   "hook": "is a small town whose clock tower is struck by lightning to send a teen through time",
+   "known": 0.4,
+   "kind": "movie"
+  },
+  {
+   "label": "Isla Nublar",
+   "qid": "Q898585",
+   "fame": 0.337,
+   "work": "Jurassic Park",
+   "description": "fictional island from Jurassic Park",
+   "hook": "is a tropical island where a billionaire's zoo of cloned dinosaurs goes wrong",
+   "known": 0.8,
+   "kind": "movie"
+  },
+  {
+   "label": "Room 101",
+   "qid": "Q1186638",
+   "fame": 0.337,
+   "work": "Nineteen Eighty-Four",
+   "description": "fictional location",
+   "hook": "is a dreaded torture chamber where each prisoner faces their worst fear",
+   "known": 0.4,
+   "kind": "literature"
+  },
+  {
+   "label": "Pemberley",
+   "qid": "Q2484090",
+   "fame": 0.336,
+   "work": "Pride and Prejudice",
+   "description": "fictional place in Jane Austen's Pride and Prejudice",
+   "hook": "is the grand country estate of a proud, wealthy Mr. Darcy",
+   "known": 0.4,
+   "kind": "literature"
+  },
+  {
+   "label": "Emerald City",
+   "qid": "Q1961610",
+   "fame": 0.327,
+   "work": "The Wonderful Wizard of Oz",
+   "description": "fictional town in the Oz series by L. Frank Baum",
+   "hook": "is the green-glittering city at the end of a yellow brick road",
+   "known": 0.8,
+   "kind": "literature"
+  },
+  {
+   "label": "Endor",
+   "qid": "Q12180673",
+   "fame": 0.327,
+   "work": "Star Wars",
+   "description": "fictional Star Wars natural satellite",
+   "hook": "is a forest moon home to small furry teddy-bear-like warriors",
+   "known": 0.6,
+   "kind": "star wars"
+  },
+  {
+   "label": "Kwik-E-Mart",
+   "qid": "Q1978842",
+   "fame": 0.308,
+   "work": "The Simpsons",
+   "description": "fictional shop in the television series The Simpsons",
+   "hook": "is a convenience store run by a man who says 'Thank you, come again'",
+   "known": 0.8,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Hoth",
+   "qid": "Q739771",
+   "fame": 0.271,
+   "work": "Star Wars",
+   "description": "fictional ice planet in the universe of Star Wars",
+   "hook": "is a frozen ice planet where rebels fight walking armored war machines",
+   "known": 0.6,
+   "kind": "star wars"
+  },
+  {
+   "label": "Dagobah",
+   "qid": "Q848609",
+   "fame": 0.269,
+   "work": "Star Wars",
+   "description": "fictional planet in the Star Wars universe",
+   "hook": "is a swampy world where a small green master trains a young hopeful",
+   "known": 0.6,
+   "kind": "star wars"
+  },
+  {
+   "label": "Naboo",
+   "qid": "Q257155",
+   "fame": 0.263,
+   "work": "Star Wars",
+   "description": "fictional planet in the Star Wars universe",
+   "hook": "is a lush planet of a young queen, home to the Gungans",
+   "known": 0.4,
+   "kind": "star wars"
+  },
+  {
+   "label": "Hyrule",
+   "qid": "Q13099569",
+   "fame": 0.262,
+   "work": "The Legend of Zelda",
+   "description": "fictional location from The Legend of Zelda video games and universe",
+   "hook": "is the kingdom a green-clad boy hero must save, guarded by a golden triforce",
+   "known": 0.6,
+   "kind": "video game"
+  },
+  {
+   "label": "Mount Doom",
+   "qid": "Q982944",
+   "fame": 0.255,
+   "work": "The Lord of the Rings",
+   "description": "fictional volcano in Middle-earth",
+   "hook": "is the fiery volcano where a ring must be destroyed",
+   "known": 0.8,
+   "kind": "tolkien"
+  },
+  {
+   "label": "Bedrock",
+   "qid": "Q3313001",
+   "fame": 0.246,
+   "work": "The Flintstones",
+   "description": "fictional town in The Flintstones",
+   "hook": "is a prehistoric town of stone-age neighbors who yell 'Yabba Dabba Doo!'",
+   "known": 0.8,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Helm's Deep",
+   "qid": "Q1641279",
+   "fame": 0.239,
+   "work": "The Lord of the Rings",
+   "description": "Middle-earth",
+   "hook": "is a stone fortress where a great battle is fought against an army of orcs",
+   "known": 0.8,
+   "kind": "tolkien"
+  },
+  {
+   "label": "Hogsmeade",
+   "qid": "Q1771915",
+   "fame": 0.226,
+   "work": "Harry Potter",
+   "description": "fictional village from Harry Potter series",
+   "hook": "is the only all-wizarding village in the land, famous for sweets and butterbeer",
+   "known": 0.4,
+   "kind": "harry potter"
+  },
+  {
+   "label": "Gallifrey",
+   "qid": "Q367221",
+   "fame": 0.225,
+   "work": "Doctor Who",
+   "description": "Fictional planet in Doctor Who series, inhabited by the Time Lords",
+   "hook": "is the home planet of a race of time-travelling lords",
+   "known": 0.2,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Mushroom Kingdom",
+   "qid": "Q2328785",
+   "fame": 0.218,
+   "work": "Super Mario",
+   "description": "primary setting of the Mario video game franchise",
+   "hook": "is a colorful realm ruled by a princess and invaded by a fire-breathing turtle king",
+   "known": 0.8,
+   "kind": "video game"
+  },
+  {
+   "label": "Azkaban",
+   "qid": "Q715509",
+   "fame": 0.212,
+   "work": "Harry Potter",
+   "description": "fictional prison in the Harry Potter book series",
+   "hook": "is a fortress prison guarded by soul-sucking Dementors",
+   "known": 0.8,
+   "kind": "harry potter"
+  },
+  {
+   "label": "Bikini Bottom",
+   "qid": "Q2276331",
+   "fame": 0.193,
+   "work": "SpongeBob SquarePants",
+   "description": "fictional city of the animated series SpongeBob SquarePants",
+   "hook": "is an underwater town home to a yellow sponge and a starfish neighbor",
+   "known": 0.95,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Moe's Tavern",
+   "qid": "Q1257618",
+   "fame": 0.147,
+   "work": "The Simpsons",
+   "description": "fictional location on The Simpsons",
+   "hook": "is the dive bar where Homer often drinks Duff beer",
+   "known": 0.6,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Gringotts",
+   "qid": "Q3290421",
+   "fame": 0.081,
+   "work": "Harry Potter",
+   "description": "fictional bank in the Harry Potter universe",
+   "hook": "is a wizarding bank run by goblins, with vaults deep underground",
+   "known": 0.8,
+   "kind": "harry potter"
+  },
+  {
+   "label": "Platform Nine and Three Quarters",
+   "qid": "Q1951222",
+   "fame": 0.078,
+   "work": "Harry Potter",
+   "description": "fictional place in the Harry Potter universe",
+   "hook": "is the hidden railway spot where a scarlet steam train departs for a magical school",
+   "known": 0.6,
+   "kind": "harry potter"
+  },
+  {
+   "label": "Cybertron",
+   "qid": "Q680733",
+   "fame": 0,
+   "work": "Transformers",
+   "description": "fictional planet of the Transformers",
+   "hook": "is the home world of shape-shifting robots in disguise",
+   "known": 0.2,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Halloween Town",
+   "qid": "Q73545452",
+   "fame": 0,
+   "work": "The Nightmare Before Christmas",
+   "description": "central location of The Nightmare Before Christmas",
+   "hook": "is a spooky holiday-themed land ruled by a skeleton known as the Pumpkin King",
+   "known": 0.4,
+   "kind": "movie"
+  },
+  {
+   "label": "Lilliput",
+   "qid": "Q102424699",
+   "fame": 0,
+   "work": "Gulliver's Travels",
+   "description": "fictional island state in Gulliver's Travels",
+   "hook": "is an island of tiny people, visited by a shipwrecked surgeon",
+   "known": 0.2,
+   "kind": "literature"
+  },
+  {
+   "label": "Pride Rock",
+   "qid": "Q64514006",
+   "fame": 0,
+   "work": "The Lion King",
+   "description": "fictional place at Africa from The Lion King",
+   "hook": "is a rocky outcrop where a cub is lifted up for the savanna to see",
+   "known": 0.8,
+   "kind": "movie"
+  },
+  {
+   "label": "Privet Drive",
+   "qid": "Q12324425",
+   "fame": 0,
+   "work": "Harry Potter",
+   "description": null,
+   "hook": "is the suburban street where a boy lived in a cupboard under the stairs",
+   "known": 0.4,
+   "kind": "harry potter"
+  }
+ ]
+}

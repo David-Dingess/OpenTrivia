@@ -1,0 +1,651 @@
+{
+ "id": "table.video-games.studio-countries",
+ "kind": "table",
+ "title": "Video game studios and the country they are based in",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "studios",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { ?item wdt:P31/wdt:P279* wd:Q210167 ; wdt:P17 ?c ; wikibase:sitelinks ?sl . FILTER(?sl >= 25) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T04:22:14.418Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T04:22:14.418Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "studio",
+  "many": "studios",
+  "hookAsk": "Which video game studio {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} based in?",
+    "statement": "{label} is a video game studio based in {value}.",
+    "match": "Match each video game studio to the country it is based in.",
+    "odd": "Three of these video game studios are based in {value}. Which one isn't?",
+    "all": "Tap all {n} video game studios based in {value}.",
+    "reverse": "Which of these video game studios is based in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Insomniac Games",
+   "qid": "Q1141245",
+   "fame": 0.713,
+   "country": "United States",
+   "description": "American video game developer",
+   "hook": "created the Ratchet & Clank series and the Spider-Man titles for PlayStation",
+   "known": 0.6,
+   "kind": "american aaa"
+  },
+  {
+   "label": "Nintendo",
+   "qid": "Q8093",
+   "fame": 0.67,
+   "country": "Japan",
+   "description": "Japanese multinational video game and consumer electronics company",
+   "hook": "created Mario, Zelda and Pokémon-publishing consoles like the Switch",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Remedy Entertainment",
+   "qid": "Q830947",
+   "fame": 0.637,
+   "country": "Finland",
+   "description": "Finnish video game developer",
+   "hook": "made Max Payne and Alan Wake, known for cinematic storytelling and bullet-time shootouts",
+   "known": 0.2,
+   "kind": "european"
+  },
+  {
+   "label": "Valve Corporation",
+   "qid": "Q193559",
+   "fame": 0.635,
+   "country": "United States",
+   "description": "American video game development and digital distribution company",
+   "hook": "makes Half-Life, Portal and Counter-Strike and runs the Steam storefront",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Capcom",
+   "qid": "Q14428",
+   "fame": 0.625,
+   "country": "Japan",
+   "description": "Japanese video game company",
+   "hook": "created Street Fighter, Resident Evil and Mega Man",
+   "known": 0.8,
+   "kind": "japanese"
+  },
+  {
+   "label": "Take-Two Interactive",
+   "qid": "Q94933",
+   "fame": 0.62,
+   "country": "United States",
+   "description": "American publisher, developer and distributor of video games",
+   "hook": "publishes Grand Theft Auto and Red Dead Redemption",
+   "known": 0.8,
+   "kind": "major"
+  },
+  {
+   "label": "FromSoftware",
+   "qid": "Q2414469",
+   "fame": 0.617,
+   "country": "Japan",
+   "description": "Japanese video game developer",
+   "hook": "is behind punishingly hard Dark Souls and Elden Ring",
+   "known": 0.6,
+   "kind": "japanese"
+  },
+  {
+   "label": "Sega",
+   "qid": "Q122741",
+   "fame": 0.607,
+   "country": "Japan",
+   "description": "Japanese video game developer and publisher and subsidiary of Sega Sammy Holdings",
+   "hook": "gave the world Sonic the Hedgehog and once made the Dreamcast console",
+   "known": 0.8,
+   "kind": "japanese"
+  },
+  {
+   "label": "Naughty Dog",
+   "qid": "Q720871",
+   "fame": 0.603,
+   "country": "United States",
+   "description": "American video game developer",
+   "hook": "made Crash Bandicoot, Uncharted and The Last of Us",
+   "known": 0.8,
+   "kind": "american aaa"
+  },
+  {
+   "label": "Blizzard Entertainment",
+   "qid": "Q178824",
+   "fame": 0.6,
+   "country": "United States",
+   "description": "American video game publisher and developer owned by Microsoft",
+   "hook": "is behind World of Warcraft, Diablo and StarCraft",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Activision",
+   "qid": "Q200491",
+   "fame": 0.594,
+   "country": "United States",
+   "description": "American video game publisher",
+   "hook": "publishes the Call of Duty shooters and merged with a famous rival's parent",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Electronic Arts",
+   "qid": "Q173941",
+   "fame": 0.589,
+   "country": "United States",
+   "description": "American video game company",
+   "hook": "publishes the FIFA and Madden football series plus The Sims",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Bungie",
+   "qid": "Q735267",
+   "fame": 0.581,
+   "country": "United States",
+   "description": "American video game developer based in Bellevue, Washington",
+   "hook": "made Halo before moving on to the shared-world shooter Destiny",
+   "known": 0.8,
+   "kind": "american aaa"
+  },
+  {
+   "label": "Rare Ltd.",
+   "qid": "Q642707",
+   "fame": 0.578,
+   "country": "United Kingdom",
+   "description": "British video game developer",
+   "hook": "made Banjo-Kazooie and Donkey Kong Country before joining a Windows and console giant",
+   "known": 0.4,
+   "kind": "specialist"
+  },
+  {
+   "label": "Konami",
+   "qid": "Q45700",
+   "fame": 0.576,
+   "country": "Japan",
+   "description": "Japanese entertainment and video game company",
+   "hook": "created Metal Gear, Castlevania and Silent Hill",
+   "known": 0.6,
+   "kind": "japanese"
+  },
+  {
+   "label": "Obsidian Entertainment",
+   "qid": "Q629821",
+   "fame": 0.574,
+   "country": "United States",
+   "description": "American video game company",
+   "hook": "made Fallout: New Vegas and The Outer Worlds, known for deep role-playing choices",
+   "known": 0.4,
+   "kind": "specialist"
+  },
+  {
+   "label": "Epic Games",
+   "qid": "Q739711",
+   "fame": 0.573,
+   "country": "United States",
+   "description": "American video game and software developer",
+   "hook": "created Fortnite and the Unreal Engine",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Ubisoft",
+   "qid": "Q188273",
+   "fame": 0.571,
+   "country": "France",
+   "description": "French video game company",
+   "hook": "publishes Assassin's Creed, Far Cry and Just Dance",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Square Enix",
+   "qid": "Q207784",
+   "fame": 0.564,
+   "country": "Japan",
+   "description": "Japanese video game developer, publisher, and distribution company",
+   "hook": "is behind Final Fantasy and Dragon Quest role-playing series",
+   "known": 0.8,
+   "kind": "japanese"
+  },
+  {
+   "label": "miHoYo",
+   "qid": "Q28686397",
+   "fame": 0.562,
+   "country": "China",
+   "description": "Chinese video game developer",
+   "hook": "made the hit open-world adventure Genshin Impact",
+   "known": 0.4,
+   "kind": "mobile casual"
+  },
+  {
+   "label": "Mojang Studios",
+   "qid": "Q1129295",
+   "fame": 0.555,
+   "country": "Sweden",
+   "description": "Swedish video game developer",
+   "hook": "created the blocky sandbox hit Minecraft",
+   "known": 0.8,
+   "kind": "american aaa"
+  },
+  {
+   "label": "Xbox Game Studios",
+   "qid": "Q73801",
+   "fame": 0.552,
+   "country": "United States",
+   "description": "American video game company",
+   "hook": "is the first-party publishing arm behind Halo, Forza and Gears of War",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Bandai Namco Entertainment",
+   "qid": "Q1194689",
+   "fame": 0.544,
+   "country": "Japan",
+   "description": "Japanese video game publisher",
+   "hook": "publishes Pac-Man, Tekken and Dark Souls in some regions",
+   "known": 0.6,
+   "kind": "japanese"
+  },
+  {
+   "label": "Game Freak",
+   "qid": "Q782028",
+   "fame": 0.544,
+   "country": "Japan",
+   "description": "Japanese video game developer",
+   "hook": "has developed the main-series Pokémon role-playing adventures since the beginning",
+   "known": 0.6,
+   "kind": "japanese"
+  },
+  {
+   "label": "Sucker Punch Productions",
+   "qid": "Q916714",
+   "fame": 0.54,
+   "country": "United States",
+   "description": "American video game developer",
+   "hook": "made Sly Cooper, inFamous and Ghost of Tsushima",
+   "known": 0.6,
+   "kind": "american aaa"
+  },
+  {
+   "label": "Bethesda Softworks",
+   "qid": "Q684425",
+   "fame": 0.537,
+   "country": "United States",
+   "description": "American video game publisher",
+   "hook": "publishes The Elder Scrolls and Fallout",
+   "known": 0.8,
+   "kind": "american aaa"
+  },
+  {
+   "label": "Roblox Corporation",
+   "qid": "Q67186598",
+   "fame": 0.534,
+   "country": "United States",
+   "description": "American video game developer",
+   "hook": "runs a hugely popular platform where players build and share their own worlds",
+   "known": 0.4,
+   "kind": "mobile casual"
+  },
+  {
+   "label": "Riot Games",
+   "qid": "Q1060165",
+   "fame": 0.533,
+   "country": "United States",
+   "description": "American video game developer",
+   "hook": "made the online arena hit League of Legends and the shooter Valorant",
+   "known": 0.6,
+   "kind": "specialist"
+  },
+  {
+   "label": "Arkane Studios",
+   "qid": "Q672642",
+   "fame": 0.528,
+   "country": "France",
+   "description": "French video game developer based in Lyon, France",
+   "hook": "made the immersive sim Dishonored and the vampire-hunting Prey",
+   "known": 0.2,
+   "kind": "specialist"
+  },
+  {
+   "label": "Telltale Games",
+   "qid": "Q1383563",
+   "fame": 0.528,
+   "country": "United States",
+   "description": "American video game developer and publisher",
+   "hook": "made choice-driven episodic adventures like The Walking Dead and The Wolf Among Us",
+   "known": 0.2,
+   "kind": "specialist"
+  },
+  {
+   "label": "id Software",
+   "qid": "Q204474",
+   "fame": 0.522,
+   "country": "United States",
+   "description": "American video game developer",
+   "hook": "pioneered the first-person shooter with Doom and Quake",
+   "known": 0.6,
+   "kind": "american aaa"
+  },
+  {
+   "label": "Nexon",
+   "qid": "Q562078",
+   "fame": 0.516,
+   "country": "Japan",
+   "description": "Japanese video game developer",
+   "hook": "runs the long-running online role-player MapleStory",
+   "known": 0.2,
+   "kind": "japanese"
+  },
+  {
+   "label": "Krafton",
+   "qid": "Q4035237",
+   "fame": 0.515,
+   "country": "South Korea",
+   "description": "South Korean video game developer and publisher",
+   "hook": "published the battle royale phenomenon PUBG",
+   "known": 0.4,
+   "kind": "specialist"
+  },
+  {
+   "label": "PlatinumGames",
+   "qid": "Q1576758",
+   "fame": 0.514,
+   "country": "Japan",
+   "description": "Japanese computer- and video game development company",
+   "hook": "made fast stylish action titles like Bayonetta and NieR: Automata",
+   "known": 0.2,
+   "kind": "japanese"
+  },
+  {
+   "label": "Atlus",
+   "qid": "Q780528",
+   "fame": 0.513,
+   "country": "Japan",
+   "description": "Japanese video game company",
+   "hook": "is known for the Persona and Shin Megami Tensei role-playing series",
+   "known": 0.2,
+   "kind": "japanese"
+  },
+  {
+   "label": "Quantic Dream",
+   "qid": "Q570081",
+   "fame": 0.509,
+   "country": "France",
+   "description": "French video game developer",
+   "hook": "made story-driven interactive dramas like Heavy Rain and Detroit: Become Human",
+   "known": 0.2,
+   "kind": "specialist"
+  },
+  {
+   "label": "HAL Laboratory",
+   "qid": "Q1068734",
+   "fame": 0.506,
+   "country": "Japan",
+   "description": "Japanese video game developer",
+   "hook": "created Kirby and helped make Super Smash Bros",
+   "known": 0.4,
+   "kind": "japanese"
+  },
+  {
+   "label": "BioWare",
+   "qid": "Q219758",
+   "fame": 0.504,
+   "country": "Canada",
+   "description": "Canadian video game developer",
+   "hook": "made Baldur's Gate, Mass Effect and Dragon Age",
+   "known": 0.6,
+   "kind": "specialist"
+  },
+  {
+   "label": "2K",
+   "qid": "Q94937",
+   "fame": 0.503,
+   "country": "United States",
+   "description": "American video game publisher",
+   "hook": "publishes the NBA basketball series plus Borderlands and BioShock",
+   "known": 0.8,
+   "kind": "major"
+  },
+  {
+   "label": "Paradox Interactive",
+   "qid": "Q217493",
+   "fame": 0.503,
+   "country": "Sweden",
+   "description": "Swedish video game publisher",
+   "hook": "publishes deep grand-strategy titles like Crusader Kings and Europa Universalis",
+   "known": 0.2,
+   "kind": "specialist"
+  },
+  {
+   "label": "Guerrilla Games",
+   "qid": "Q337910",
+   "fame": 0.502,
+   "country": "Netherlands",
+   "description": "Dutch video game development company",
+   "hook": "made the Horizon series about hunters battling robotic dinosaurs",
+   "known": 0.6,
+   "kind": "specialist"
+  },
+  {
+   "label": "Bethesda Game Studios",
+   "qid": "Q3300783",
+   "fame": 0.499,
+   "country": "United States",
+   "description": "American in-house development team at Bethesda Softworks",
+   "hook": "is the in-house team that develops Skyrim and Starfield",
+   "known": 0.8,
+   "kind": "american aaa"
+  },
+  {
+   "label": "Monolith Productions",
+   "qid": "Q907357",
+   "fame": 0.49,
+   "country": "United States",
+   "description": "former American video game development company",
+   "hook": "made the creepy shooter F.E.A.R. and Middle-earth: Shadow of Mordor",
+   "known": 0.4,
+   "kind": "american aaa"
+  },
+  {
+   "label": "Sierra Entertainment",
+   "qid": "Q494614",
+   "fame": 0.49,
+   "country": "United States",
+   "description": "American video game company",
+   "hook": "made King's Quest and Space Quest adventures and Leisure Suit Larry",
+   "known": 0.2,
+   "kind": "legacy arcade"
+  },
+  {
+   "label": "Respawn Entertainment",
+   "qid": "Q7884447",
+   "fame": 0.488,
+   "country": "United States",
+   "description": "American video game developer",
+   "hook": "made the free-to-play shooter Apex Legends and Titanfall",
+   "known": 0.6,
+   "kind": "american aaa"
+  },
+  {
+   "label": "IO Interactive",
+   "qid": "Q746059",
+   "fame": 0.487,
+   "country": "Denmark",
+   "description": "Danish video game developer",
+   "hook": "made the stealthy assassin series featuring Agent 47",
+   "known": 0.4,
+   "kind": "specialist"
+  },
+  {
+   "label": "Santa Monica Studio",
+   "qid": "Q656710",
+   "fame": 0.48,
+   "country": "United States",
+   "description": "American first-party video game developer",
+   "hook": "made the God of War series about a Spartan warrior fighting gods",
+   "known": 0.6,
+   "kind": "american aaa"
+  },
+  {
+   "label": "SNK",
+   "qid": "Q1044563",
+   "fame": 0.476,
+   "country": "Japan",
+   "description": "Japanese video game company",
+   "hook": "made Metal Slug and King of Fighters arcade classics",
+   "known": 0.2,
+   "kind": "legacy arcade"
+  },
+  {
+   "label": "Midway Games",
+   "qid": "Q149947",
+   "fame": 0.473,
+   "country": "United States",
+   "description": "former American video game developing and publishing company",
+   "hook": "made Mortal Kombat and NBA Jam before closing down",
+   "known": 0.2,
+   "kind": "legacy arcade"
+  },
+  {
+   "label": "Namco",
+   "qid": "Q309996",
+   "fame": 0.472,
+   "country": "Japan",
+   "description": "Japanese corporation, video game developer and publisher",
+   "hook": "created Pac-Man and Galaga before merging into a bigger publisher",
+   "known": 0.2,
+   "kind": "legacy arcade"
+  },
+  {
+   "label": "Zynga",
+   "qid": "Q245772",
+   "fame": 0.472,
+   "country": "United States",
+   "description": "American social game developer",
+   "hook": "made the hugely popular Facebook farming hit FarmVille",
+   "known": 0.2,
+   "kind": "mobile casual"
+  },
+  {
+   "label": "THQ",
+   "qid": "Q580866",
+   "fame": 0.469,
+   "country": "United States",
+   "description": "video game publisher",
+   "hook": "published WWE wrestling titles and Saints Row before going bankrupt",
+   "known": 0.05,
+   "kind": "specialist"
+  },
+  {
+   "label": "Codemasters",
+   "qid": "Q23901",
+   "fame": 0.467,
+   "country": "United Kingdom",
+   "description": "British video game developer and publisher",
+   "hook": "is known for Formula 1 racing titles and the Dirt rally series",
+   "known": 0.4,
+   "kind": "specialist"
+  },
+  {
+   "label": "Gameloft",
+   "qid": "Q689093",
+   "fame": 0.462,
+   "country": "France",
+   "description": "French video game publisher",
+   "hook": "makes mobile titles such as Asphalt racing and Order & Chaos",
+   "known": 0.05,
+   "kind": "mobile casual"
+  },
+  {
+   "label": "Crystal Dynamics",
+   "qid": "Q928122",
+   "fame": 0.456,
+   "country": "United States",
+   "description": "American video game developer",
+   "hook": "has been behind Tomb Raider's modern reboots since taking over Lara Croft",
+   "known": 0.6,
+   "kind": "american aaa"
+  },
+  {
+   "label": "Supercell",
+   "qid": "Q1438774",
+   "fame": 0.455,
+   "country": "Finland",
+   "description": "Finnish video game company",
+   "hook": "made Clash of Clans and Clash Royale for phones",
+   "known": 0.4,
+   "kind": "mobile casual"
+  },
+  {
+   "label": "Rovio Entertainment",
+   "qid": "Q870095",
+   "fame": 0.453,
+   "country": "Finland",
+   "description": "Finnish video game developer and entertainment company",
+   "hook": "made Angry Birds, the bird-flinging phone hit",
+   "known": 0.4,
+   "kind": "mobile casual"
+  },
+  {
+   "label": "Eidos Interactive",
+   "qid": "Q679933",
+   "fame": 0.45,
+   "country": "United Kingdom",
+   "description": "British video game publisher",
+   "hook": "first published Tomb Raider and Hitman",
+   "known": 0.2,
+   "kind": "specialist"
+  },
+  {
+   "label": "Gearbox Software",
+   "qid": "Q1046593",
+   "fame": 0.45,
+   "country": "United States",
+   "description": "American video game company",
+   "hook": "made Borderlands, the cel-shaded looter-shooter series",
+   "known": 0.4,
+   "kind": "specialist"
+  }
+ ]
+}

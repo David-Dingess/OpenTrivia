@@ -1,0 +1,249 @@
+{
+ "id": "table.myth-and-legend.egyptian-gods",
+ "kind": "table",
+ "title": "Egyptian gods and what they ruled over",
+ "genre": "society",
+ "category": "myth-and-legend",
+ "topic": "mythology",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?domain WHERE { VALUES (?item ?domain) { (wd:Q1252904 \"the sun\") (wd:Q79876 \"magic and motherhood\") (wd:Q46491 \"the afterlife and rebirth\") (wd:Q84122 \"the sky and kingship\") (wd:Q47534 \"embalming and guiding the dead\") (wd:Q131795 \"storms, chaos and the desert\") (wd:Q133343 \"love, music and joy\") (wd:Q146921 \"writing and wisdom\") (wd:Q129106 \"cats and the protection of the home\") (wd:Q146104 \"war and plague\") (wd:Q146321 \"craftsmen and builders\") (wd:Q165496 \"the night sky\") (wd:Q168444 \"the earth\") (wd:Q146313 \"crocodiles and the Nile\") (wd:Q170471 \"truth and justice\") (wd:Q58373 \"kingship over the gods\") (wd:Q183097 \"shaping people on a potter's wheel\") (wd:Q169040 \"mourning and the protection of the dead\") (wd:Q207435 \"childbirth and expectant mothers\") (wd:Q188931 \"household luck and protecting children\") (wd:Q190511 \"chaos and darkness\") (wd:Q116273 \"moisture and rain\") (wd:Q170138 \"the air\") (wd:Q191815 \"weaving and war\") (wd:Q32143 \"the yearly flooding of the Nile\") (wd:Q190521 \"the moon and time\") (wd:Q170569 \"creation and the evening sun\") (wd:Q131483 \"devouring the hearts of the unworthy\") (wd:Q29409 \"motherhood and the queen of the gods\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T03:03:40.323Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T03:03:40.323Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "domain",
+   "label": "Ruled over",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "Egyptian god",
+  "many": "Egyptian gods",
+  "hookAsk": "Which Egyptian god {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "domain": {
+    "role": "code",
+    "pick": "What did the Egyptian god {label} rule over?",
+    "statement": "The Egyptian god {label} ruled over {value}.",
+    "match": "Match each Egyptian god to what they ruled over.",
+    "reverse": "Which Egyptian god ruled over {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Osiris",
+   "qid": "Q46491",
+   "fame": 0.619,
+   "domain": "the afterlife and rebirth",
+   "description": "god of the afterlife in Egyptian mythology",
+   "hook": "was killed and dismembered by his brother, then put back together by his devoted wife",
+   "known": 0.6,
+   "kind": "underworld god"
+  },
+  {
+   "label": "Anubis",
+   "qid": "Q47534",
+   "fame": 0.597,
+   "domain": "embalming and guiding the dead",
+   "description": "Egyptian deity of mummification and the afterlife, usually depicted as a man with a canine head",
+   "hook": "is pictured with a jackal head and watched over mummies and tombs",
+   "known": 0.6,
+   "kind": "underworld god"
+  },
+  {
+   "label": "Ra",
+   "qid": "Q1252904",
+   "fame": 0.587,
+   "domain": "the sun",
+   "description": "ancient Egyptian solar deity",
+   "hook": "sailed across the heavens each day in a boat, ruling as king of the gods",
+   "known": 0.6,
+   "kind": "solar deity"
+  },
+  {
+   "label": "Isis",
+   "qid": "Q79876",
+   "fame": 0.583,
+   "domain": "magic and motherhood",
+   "description": "Egyptian deity",
+   "hook": "revived her slain husband and raised their falcon-headed son in hiding",
+   "known": 0.4,
+   "kind": "goddess"
+  },
+  {
+   "label": "Horus",
+   "qid": "Q84122",
+   "fame": 0.578,
+   "domain": "the sky and kingship",
+   "description": "Egyptian sky deity",
+   "hook": "is shown with a falcon head and fought his uncle for the throne of Egypt",
+   "known": 0.4,
+   "kind": "sky god"
+  },
+  {
+   "label": "Seth",
+   "qid": "Q131795",
+   "fame": 0.568,
+   "domain": "storms, chaos and the desert",
+   "description": "God of the desert, storms, and foreigners in ancient Egyptian religion",
+   "hook": "killed his own brother and was the rival of the falcon-headed sky god",
+   "known": 0.4,
+   "kind": "chaos god"
+  },
+  {
+   "label": "Thoth",
+   "qid": "Q146921",
+   "fame": 0.562,
+   "domain": "writing and wisdom",
+   "description": "Egyptian deity",
+   "hook": null,
+   "known": 0.2,
+   "kind": "wisdom god"
+  },
+  {
+   "label": "Amun",
+   "qid": "Q58373",
+   "fame": 0.553,
+   "domain": "kingship over the gods",
+   "description": "Egyptian and Berber deity",
+   "hook": null,
+   "known": 0.2,
+   "kind": "king of gods"
+  },
+  {
+   "label": "Bastet",
+   "qid": "Q129106",
+   "fame": 0.55,
+   "domain": "cats and the protection of the home",
+   "description": "Egyptian cat deity",
+   "hook": "is shown as a cat, or a woman with a cat head, and guarded homes",
+   "known": 0.4,
+   "kind": "goddess"
+  },
+  {
+   "label": "Sekhmet",
+   "qid": "Q146104",
+   "fame": 0.542,
+   "domain": "war and plague",
+   "description": "Egyptian deity",
+   "hook": null,
+   "known": 0.2,
+   "kind": "goddess"
+  },
+  {
+   "label": "Hathor",
+   "qid": "Q133343",
+   "fame": 0.534,
+   "domain": "love, music and joy",
+   "description": "major goddess in ancient Egyptian religion",
+   "hook": "is shown with cow horns holding a sun disk, and was the divine patron of dance and song",
+   "known": 0.4,
+   "kind": "goddess"
+  },
+  {
+   "label": "Maat",
+   "qid": "Q170471",
+   "fame": 0.512,
+   "domain": "truth and justice",
+   "description": "Egyptian deity",
+   "hook": null,
+   "known": 0.2,
+   "kind": "goddess"
+  },
+  {
+   "label": "Khonsu",
+   "qid": "Q190521",
+   "fame": 0.495,
+   "domain": "the moon and time",
+   "description": "Egyptian deity",
+   "hook": null,
+   "known": 0.05,
+   "kind": "moon god"
+  },
+  {
+   "label": "Apophis",
+   "qid": "Q190511",
+   "fame": 0.489,
+   "domain": "chaos and darkness",
+   "description": "snake god in ancient Egyptian religion",
+   "hook": null,
+   "known": 0.2,
+   "kind": "chaos god"
+  },
+  {
+   "label": "Sobek",
+   "qid": "Q146313",
+   "fame": 0.482,
+   "domain": "crocodiles and the Nile",
+   "description": "Egyptian crocodile deity",
+   "hook": null,
+   "known": 0.05,
+   "kind": "nature god"
+  },
+  {
+   "label": "Atum",
+   "qid": "Q170569",
+   "fame": 0.479,
+   "domain": "creation and the evening sun",
+   "description": "ancient Egyptian creator deity",
+   "hook": null,
+   "known": 0.05,
+   "kind": "creator god"
+  },
+  {
+   "label": "Ptah",
+   "qid": "Q146321",
+   "fame": 0.465,
+   "domain": "craftsmen and builders",
+   "description": "ancient Egyptian deity",
+   "hook": null,
+   "known": 0.05,
+   "kind": "creator god"
+  },
+  {
+   "label": "Nephthys",
+   "qid": "Q169040",
+   "fame": 0.459,
+   "domain": "mourning and the protection of the dead",
+   "description": "Egyptian deity",
+   "hook": null,
+   "known": 0.05,
+   "kind": "goddess"
+  },
+  {
+   "label": "Nut",
+   "qid": "Q165496",
+   "fame": 0.458,
+   "domain": "the night sky",
+   "description": "goddess of the sky in the Ennead of Egyptian mythology",
+   "hook": null,
+   "known": 0.2,
+   "kind": "sky goddess"
+  }
+ ]
+}

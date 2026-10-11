@@ -1,0 +1,822 @@
+{
+ "id": "table.sports.cricket-legends-country",
+ "kind": "table",
+ "title": "Famous cricketers and the country they represent",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "cricket",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nCountry) WHERE { ?item wdt:P106 wd:Q12299841 ; wdt:P1532 ?c ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 10) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 500 } hint:Prior hint:runFirst true . FILTER(?nCountry = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T14:39:54.391Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T14:39:54.391Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "cricketer",
+  "many": "cricketers",
+  "wildcard": "person",
+  "hookAsk": "Which cricketer {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country did {label} play cricket for?",
+    "statement": "{label} played cricket for {value}.",
+    "match": "Match each cricketer to the country they play for.",
+    "odd": "Three of these cricketers play for {value}. Which one doesn't?",
+    "all": "Tap all {n} cricketers who play for {value}.",
+    "reverse": "Which of these cricketers plays for {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Virat Kohli",
+   "qid": "Q213854",
+   "fame": 0.745,
+   "country": "India",
+   "description": "Indian cricket player (born 1988)",
+   "hook": "is a run-machine batter nicknamed \"Chase Master\" for his brilliance in pursuing big targets",
+   "known": 0.75,
+   "kind": "batter"
+  },
+  {
+   "label": "Sachin Tendulkar",
+   "qid": "Q9488",
+   "fame": 0.68,
+   "country": "India",
+   "description": "Indian cricket player (born 1973)",
+   "hook": "is the \"Little Master\" who scored a hundred international centuries and retired as the game's top run-scorer",
+   "known": 0.9,
+   "kind": "batter"
+  },
+  {
+   "label": "Smriti Mandhana",
+   "qid": "Q16224802",
+   "fame": 0.647,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "is a stylish left-handed opening batter and a leading star of the women's game",
+   "known": 0.4,
+   "kind": "women batter"
+  },
+  {
+   "label": "Shubman Gill",
+   "qid": "Q28840013",
+   "fame": 0.626,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "is an elegant young opening batter who has scored a double century in a one-day international",
+   "known": 0.3,
+   "kind": "batter"
+  },
+  {
+   "label": "Rohit Sharma",
+   "qid": "Q3520045",
+   "fame": 0.624,
+   "country": "India",
+   "description": "Indian cricketer (Captain)",
+   "hook": "is an opener nicknamed \"Hitman\" who has hit three double centuries in one-day internationals",
+   "known": 0.6,
+   "kind": "opener"
+  },
+  {
+   "label": "MS Dhoni",
+   "qid": "Q470774",
+   "fame": 0.62,
+   "country": "India",
+   "description": "Indian cricket player (born 1981)",
+   "hook": "is the cool-headed wicketkeeper-captain who won every major white-ball trophy, sealing a World Cup with a six",
+   "known": 0.8,
+   "kind": "wicketkeeper-batter"
+  },
+  {
+   "label": "Shane Warne",
+   "qid": "Q555240",
+   "fame": 0.602,
+   "country": "Australia",
+   "description": "Australian cricketer (1969–2022)",
+   "hook": "was a leg-spinner who bowled the \"Ball of the Century\" to bamboozle an English batter",
+   "known": 0.85,
+   "kind": "spinner"
+  },
+  {
+   "label": "Vinod Kambli",
+   "qid": "Q2723880",
+   "fame": 0.599,
+   "country": "India",
+   "description": "Indian cricket player (born 1972)",
+   "hook": "was a schoolboy prodigy who shared a world-record partnership with a childhood friend",
+   "known": 0.2,
+   "kind": "batter"
+  },
+  {
+   "label": "Mohammad Babar Azam",
+   "qid": "Q4837515",
+   "fame": 0.597,
+   "country": "Pakistan",
+   "description": "Pakistani cricketer",
+   "hook": "is a classy right-handed batter often ranked among the best in the world across all formats",
+   "known": 0.5,
+   "kind": "batter"
+  },
+  {
+   "label": "Harmanpreet Kaur",
+   "qid": "Q3525920",
+   "fame": 0.578,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "is a hard-hitting captain who smashed a famous unbeaten 171 in a women's World Cup semi-final",
+   "known": 0.3,
+   "kind": "women batter"
+  },
+  {
+   "label": "Mansoor Ali Khan Pataudi",
+   "qid": "Q983454",
+   "fame": 0.576,
+   "country": "India",
+   "description": "Indian cricket player. (1941-2011)",
+   "hook": "was a captain nicknamed \"Tiger\" who played Test cricket despite having lost sight in one eye",
+   "known": 0.3,
+   "kind": "batter"
+  },
+  {
+   "label": "Wasim Akram",
+   "qid": "Q982801",
+   "fame": 0.568,
+   "country": "Pakistan",
+   "description": "Pakistani cricketer",
+   "hook": "was a left-arm fast bowler called the \"Sultan of Swing\" and a master of reverse swing",
+   "known": 0.7,
+   "kind": "fast bowler"
+  },
+  {
+   "label": "Zaheer Khan",
+   "qid": "Q2508461",
+   "fame": 0.566,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "was a left-arm swing bowler and a key member of a World Cup-winning attack",
+   "known": 0.4,
+   "kind": "fast bowler"
+  },
+  {
+   "label": "Shoaib Akhtar",
+   "qid": "Q738330",
+   "fame": 0.562,
+   "country": "Pakistan",
+   "description": "Pakistani cricketer",
+   "hook": "was a fast bowler nicknamed the \"Rawalpindi Express\" for bowling at record-breaking pace",
+   "known": 0.4,
+   "kind": "fast bowler"
+  },
+  {
+   "label": "Javagal Srinath",
+   "qid": "Q2757591",
+   "fame": 0.559,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "was a lively fast bowler who spearheaded the attack through the 1990s",
+   "known": 0.3,
+   "kind": "fast bowler"
+  },
+  {
+   "label": "Jasprit Bumrah",
+   "qid": "Q16227998",
+   "fame": 0.554,
+   "country": "India",
+   "description": "Indian cricketer (born 1993)",
+   "hook": "is a fast bowler with a unique slingy action and deadly yorkers",
+   "known": 0.5,
+   "kind": "fast bowler"
+  },
+  {
+   "label": "Mithali Raj",
+   "qid": "Q3520476",
+   "fame": 0.547,
+   "country": "India",
+   "description": "Indian women's cricketer",
+   "hook": "is a former women's captain who became the leading run-scorer in women's one-day internationals",
+   "known": 0.4,
+   "kind": "women batter"
+  },
+  {
+   "label": "Sanju Samson",
+   "qid": "Q7418593",
+   "fame": 0.546,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "is a wicketkeeper-batter who captains a Rajasthan franchise in the IPL and hits big sixes",
+   "known": 0.25,
+   "kind": "wicketkeeper-batter"
+  },
+  {
+   "label": "Virender Sehwag",
+   "qid": "Q3345479",
+   "fame": 0.54,
+   "country": "India",
+   "description": "former Indian cricketer",
+   "hook": "was an attacking opener who scored two triple centuries in Test cricket",
+   "known": 0.45,
+   "kind": "opener"
+  },
+  {
+   "label": "Sourav Ganguly",
+   "qid": "Q561487",
+   "fame": 0.533,
+   "country": "India",
+   "description": "former Indian cricketer and former chairman of the Board of Control for Cricket in India (BCCI)",
+   "hook": "was the captain nicknamed \"Dada\" who turned his side into a fearless team, later leading the sport's board",
+   "known": 0.6,
+   "kind": "batter"
+  },
+  {
+   "label": "Don Bradman",
+   "qid": "Q313591",
+   "fame": 0.532,
+   "country": "Australia",
+   "description": "Australian cricketer (1908–2001)",
+   "hook": "was the greatest batter of all time, whose Test average of 99.94 has never been approached",
+   "known": 0.85,
+   "kind": "batter"
+  },
+  {
+   "label": "Kapil Dev",
+   "qid": "Q558189",
+   "fame": 0.531,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "was the all-rounder who captained his nation to its first World Cup triumph",
+   "known": 0.5,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "KL Rahul",
+   "qid": "Q6668646",
+   "fame": 0.529,
+   "country": "India",
+   "description": "Indian cricket player",
+   "hook": "is a stylish right-handed opener and wicketkeeper who has scored Test centuries in several countries",
+   "known": 0.3,
+   "kind": "opener"
+  },
+  {
+   "label": "Rahul Dravid",
+   "qid": "Q470772",
+   "fame": 0.524,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "was a technically sound number-three batter nicknamed \"The Wall\"",
+   "known": 0.7,
+   "kind": "batter"
+  },
+  {
+   "label": "Ravindra Jadeja",
+   "qid": "Q2721457",
+   "fame": 0.524,
+   "country": "India",
+   "description": "Indian cricketer (born 1988)",
+   "hook": "is a left-arm spinning all-rounder known for his sword-swinging celebration and sharp fielding",
+   "known": 0.5,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Steve Smith",
+   "qid": "Q7613970",
+   "fame": 0.524,
+   "country": "Australia",
+   "description": "Australian international cricketer",
+   "hook": "is an unorthodox batter with a quirky stance and a Test average above 55",
+   "known": 0.7,
+   "kind": "batter"
+  },
+  {
+   "label": "Yuvraj Singh",
+   "qid": "Q2723790",
+   "fame": 0.524,
+   "country": "India",
+   "description": "Indian cricketer (born 1981)",
+   "hook": "was the left-hander who hit six sixes in one over at the first T20 World Cup",
+   "known": 0.5,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Suryakumar Yadav",
+   "qid": "Q15864307",
+   "fame": 0.52,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "is a 360-degree T20 batter nicknamed \"SKY\" who plays shots all around the ground",
+   "known": 0.3,
+   "kind": "batter"
+  },
+  {
+   "label": "Hardik Pandya",
+   "qid": "Q19895060",
+   "fame": 0.518,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "is a pace-bowling all-rounder who captained a Gujarat franchise to an IPL title in its debut season",
+   "known": 0.35,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Ishan Kishan",
+   "qid": "Q21621705",
+   "fame": 0.518,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "is a left-handed wicketkeeper-batter who hit a double century in a one-day international",
+   "known": 0.25,
+   "kind": "wicketkeeper-batter"
+  },
+  {
+   "label": "Shreyas Iyer",
+   "qid": "Q18705305",
+   "fame": 0.517,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "is a middle-order batter who captained a Kolkata franchise to an IPL title",
+   "known": 0.25,
+   "kind": "batter"
+  },
+  {
+   "label": "Waqar Younis",
+   "qid": "Q1766640",
+   "fame": 0.515,
+   "country": "Pakistan",
+   "description": "Pakistani cricketer",
+   "hook": "was a fast bowler famed for toe-crushing yorkers and reverse swing, partner to a fellow left-armer",
+   "known": 0.45,
+   "kind": "fast bowler"
+  },
+  {
+   "label": "Sunil Gavaskar",
+   "qid": "Q558182",
+   "fame": 0.514,
+   "country": "India",
+   "description": "Indian cricket player",
+   "hook": "was the \"Little Master\" opener who was the first to score 10,000 Test runs",
+   "known": 0.6,
+   "kind": "opener"
+  },
+  {
+   "label": "Inzamam-ul-Haq",
+   "qid": "Q1393201",
+   "fame": 0.513,
+   "country": "Pakistan",
+   "description": "former Pakistani cricketer",
+   "hook": "was a heavyset batter famed for calm, match-winning innings and for captaining his side",
+   "known": 0.4,
+   "kind": "batter"
+  },
+  {
+   "label": "Ajay Jadeja",
+   "qid": "Q2722025",
+   "fame": 0.501,
+   "country": "India",
+   "description": "former Indian cricketer",
+   "hook": "was a dashing batter and fielder who starred in the 1990s and later acted in films",
+   "known": 0.2,
+   "kind": "batter"
+  },
+  {
+   "label": "Deepti Sharma",
+   "qid": "Q21622838",
+   "fame": 0.501,
+   "country": "India",
+   "description": "Indian woman cricketer",
+   "hook": "is a women's all-rounder who ran out a batter at the non-striker's end to win a match",
+   "known": 0.15,
+   "kind": "women all-rounder"
+  },
+  {
+   "label": "Mohammed Shami",
+   "qid": "Q7487531",
+   "fame": 0.493,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "is a seam bowler who took a record haul of wickets in a single men's World Cup",
+   "known": 0.35,
+   "kind": "fast bowler"
+  },
+  {
+   "label": "Andrew Symonds",
+   "qid": "Q2723418",
+   "fame": 0.491,
+   "country": "Australia",
+   "description": "Australian cricketer (1975–2022)",
+   "hook": "was a hard-hitting all-rounder famous for his zinc-painted nose and his fielding",
+   "known": 0.2,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Kumar Sangakkara",
+   "qid": "Q737645",
+   "fame": 0.491,
+   "country": "Sri Lanka",
+   "description": "Sri Lankan cricketer",
+   "hook": "was a left-handed wicketkeeper-batter who later became president of the game's most famous club",
+   "known": 0.6,
+   "kind": "wicketkeeper-batter"
+  },
+  {
+   "label": "Muttiah Muralitharan",
+   "qid": "Q379709",
+   "fame": 0.491,
+   "country": "Sri Lanka",
+   "description": "Sri Lankan cricketer",
+   "hook": "was an off-spinner with a wrist-twirling action who took over 800 Test wickets",
+   "known": 0.6,
+   "kind": "spinner"
+  },
+  {
+   "label": "Jemimah Rodrigues",
+   "qid": "Q42898219",
+   "fame": 0.489,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "is a young women's batter who played a match-winning World Cup semi-final innings",
+   "known": 0.15,
+   "kind": "women batter"
+  },
+  {
+   "label": "Jacques Kallis",
+   "qid": "Q982650",
+   "fame": 0.486,
+   "country": "South Africa",
+   "description": "South African cricketer",
+   "hook": "was a world-class all-rounder with over 10,000 runs and 250 wickets in Tests",
+   "known": 0.55,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Dinesh Karthik",
+   "qid": "Q3519679",
+   "fame": 0.485,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "is a wicketkeeper-batter who hit a last-ball six to win the Nidahas Trophy final",
+   "known": 0.2,
+   "kind": "wicketkeeper-batter"
+  },
+  {
+   "label": "Rashid Khan",
+   "qid": "Q21621685",
+   "fame": 0.485,
+   "country": "Afghanistan",
+   "description": "Afghan cricketer",
+   "hook": "is a wrist-spinner who became a global T20 star and a national icon",
+   "known": 0.45,
+   "kind": "spinner"
+  },
+  {
+   "label": "Anil Kumble",
+   "qid": "Q2849991",
+   "fame": 0.484,
+   "country": "India",
+   "description": "former Indian cricketer",
+   "hook": "was a leg-spinner who took all ten wickets in a single Test innings",
+   "known": 0.45,
+   "kind": "spinner"
+  },
+  {
+   "label": "Mitchell Starc",
+   "qid": "Q6881406",
+   "fame": 0.484,
+   "country": "Australia",
+   "description": "Australian international cricketer",
+   "hook": "is a left-arm fast bowler famous for fast yorkers and being a World Cup-winning spearhead",
+   "known": 0.5,
+   "kind": "fast bowler"
+  },
+  {
+   "label": "Ricky Ponting",
+   "qid": "Q472649",
+   "fame": 0.484,
+   "country": "Australia",
+   "description": "Australian cricketer",
+   "hook": "was a captain who led his side to two consecutive World Cup wins and was known for his pull shot",
+   "known": 0.8,
+   "kind": "batter"
+  },
+  {
+   "label": "Shahid Afridi",
+   "qid": "Q380445",
+   "fame": 0.484,
+   "country": "Pakistan",
+   "description": "Pakistani cricketer (born 1980)",
+   "hook": "is an explosive all-rounder nicknamed \"Boom Boom\" who once hit a hundred off 37 balls",
+   "known": 0.4,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Stephen Fleming",
+   "qid": "Q3352116",
+   "fame": 0.483,
+   "country": "New Zealand",
+   "description": "New Zealand cricketer",
+   "hook": "was a captain widely regarded as one of the shrewdest tacticians in the game",
+   "known": 0.3,
+   "kind": "batter"
+  },
+  {
+   "label": "Lasith Malinga",
+   "qid": "Q2312779",
+   "fame": 0.481,
+   "country": "Sri Lanka",
+   "description": "Sri Lankan cricketer",
+   "hook": "was a slinging fast bowler with a distinctive blond-tipped hairstyle, famous for four wickets in four balls",
+   "known": 0.35,
+   "kind": "fast bowler"
+  },
+  {
+   "label": "Mohammad Amir",
+   "qid": "Q3202252",
+   "fame": 0.481,
+   "country": "Pakistan",
+   "description": "Pakistani cricketer",
+   "hook": "is a left-arm fast bowler who returned to international cricket after a five-year ban",
+   "known": 0.25,
+   "kind": "fast bowler"
+  },
+  {
+   "label": "Mohammad Rizwan",
+   "qid": "Q19577671",
+   "fame": 0.481,
+   "country": "Pakistan",
+   "description": "Pakistani cricketer (born 1992)",
+   "hook": "is a wicketkeeper-opener who has been a top-ranked T20 batter",
+   "known": 0.25,
+   "kind": "wicketkeeper-opener"
+  },
+  {
+   "label": "Irfan Pathan",
+   "qid": "Q1746795",
+   "fame": 0.478,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "was a swing bowler who took a Test hat-trick in the first over of a match",
+   "known": 0.25,
+   "kind": "fast bowler"
+  },
+  {
+   "label": "Harbhajan Singh",
+   "qid": "Q9475",
+   "fame": 0.475,
+   "country": "India",
+   "description": "Indian cricketer and politician (born 1980)",
+   "hook": "was the first bowler from his nation to take a hat-trick in Test cricket",
+   "known": 0.3,
+   "kind": "spinner"
+  },
+  {
+   "label": "Ravichandran Ashwin",
+   "qid": "Q3007571",
+   "fame": 0.473,
+   "country": "India",
+   "description": "Indian cricket player",
+   "hook": "is a mystery off-spinner who reached 500 Test wickets and is a noted student of the game",
+   "known": 0.45,
+   "kind": "spinner"
+  },
+  {
+   "label": "Suresh Raina",
+   "qid": "Q3519505",
+   "fame": 0.473,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "was a left-handed middle-order batter and part-time spinner, a star of the IPL for a Chennai franchise",
+   "known": 0.35,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Shoaib Malik",
+   "qid": "Q3518507",
+   "fame": 0.472,
+   "country": "Pakistan",
+   "description": "Pakistani cricketer",
+   "hook": "was a veteran all-rounder who captained his national side and married a famous tennis star",
+   "known": 0.25,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "VVS Laxman",
+   "qid": "Q10233",
+   "fame": 0.472,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "was a graceful wristy batsman famed for a legendary match-winning innings against Australia at Kolkata",
+   "known": 0.35,
+   "kind": "batter"
+  },
+  {
+   "label": "Shikhar Dhawan",
+   "qid": "Q7487024",
+   "fame": 0.471,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "is a left-handed opener known for his moustache, thigh-slapping celebration and big-match centuries",
+   "known": 0.3,
+   "kind": "opener"
+  },
+  {
+   "label": "AB de Villiers",
+   "qid": "Q3011889",
+   "fame": 0.467,
+   "country": "South Africa",
+   "description": "South African cricketer",
+   "hook": "was nicknamed Mr. 360 for hitting shots to every corner of the ground",
+   "known": 0.6,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Mitchell Marsh",
+   "qid": "Q13579875",
+   "fame": 0.466,
+   "country": "Australia",
+   "description": "Australian cricketer",
+   "hook": "is a big-hitting all-rounder who was player of the match in a T20 World Cup final",
+   "known": 0.2,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Kuldeep Yadav",
+   "qid": "Q16225904",
+   "fame": 0.464,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "is a left-arm wrist-spinner known for his tricky chinaman deliveries",
+   "known": 0.2,
+   "kind": "spinner"
+  },
+  {
+   "label": "Sanath Jayasuriya",
+   "qid": "Q378810",
+   "fame": 0.463,
+   "country": "Sri Lanka",
+   "description": "cricketer",
+   "hook": "was an explosive opener who changed how teams attacked in the opening overs of one-day games",
+   "known": 0.3,
+   "kind": "opener"
+  },
+  {
+   "label": "David Warner",
+   "qid": "Q3018962",
+   "fame": 0.46,
+   "country": "Australia",
+   "description": "Australian international cricketer",
+   "hook": "is a left-handed opener who was among the most feared attacking batsmen in T20 cricket",
+   "known": 0.55,
+   "kind": "opener"
+  },
+  {
+   "label": "Brett Lee",
+   "qid": "Q422980",
+   "fame": 0.459,
+   "country": "Australia",
+   "description": "Australian cricketer",
+   "hook": "was a fast bowler renowned for pace near 100 mph and a singing side career",
+   "known": 0.4,
+   "kind": "fast bowler"
+  },
+  {
+   "label": "Younus Khan",
+   "qid": "Q3352654",
+   "fame": 0.459,
+   "country": "Pakistan",
+   "description": "Pakistani cricketer",
+   "hook": "was a long-serving batsman who captained his nation to a World T20 win",
+   "known": 0.25,
+   "kind": "batter"
+  },
+  {
+   "label": "Temba Bavuma",
+   "qid": "Q7698004",
+   "fame": 0.457,
+   "country": "South Africa",
+   "description": "South African cricketer",
+   "hook": "became the first Black African to captain his country's Test side",
+   "known": 0.2,
+   "kind": "batter"
+  },
+  {
+   "label": "Ravi Shastri",
+   "qid": "Q3518502",
+   "fame": 0.456,
+   "country": "India",
+   "description": "Indian cricket coach, former player and commentator",
+   "hook": "is a former all-rounder turned commentator and head coach famous for his booming voice",
+   "known": 0.25,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Rishabh Pant",
+   "qid": "Q21622311",
+   "fame": 0.456,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "is a fearless wicketkeeper-batsman who starred in a Test series win at the Gabba",
+   "known": 0.3,
+   "kind": "wicketkeeper-batter"
+  },
+  {
+   "label": "Travis Head",
+   "qid": "Q7836266",
+   "fame": 0.455,
+   "country": "Australia",
+   "description": "Australian cricketer",
+   "hook": "is a left-handed batsman who scored a match-winning century in a World Cup final",
+   "known": 0.3,
+   "kind": "batter"
+  },
+  {
+   "label": "Glenn McGrath",
+   "qid": "Q1392178",
+   "fame": 0.454,
+   "country": "Australia",
+   "description": "Australian cricketer",
+   "hook": "was a tall, relentlessly accurate fast bowler who took over 500 Test wickets",
+   "known": 0.6,
+   "kind": "fast bowler"
+  },
+  {
+   "label": "Martin Crowe",
+   "qid": "Q3527828",
+   "fame": 0.454,
+   "country": "New Zealand",
+   "description": "New Zealand cricketer (1962-2016)",
+   "hook": "was an elegant batsman regarded as the country's greatest, and inspired the Twenty20 idea of Cricket Max",
+   "known": 0.25,
+   "kind": "batter"
+  },
+  {
+   "label": "Steve Waugh",
+   "qid": "Q735048",
+   "fame": 0.454,
+   "country": "Australia",
+   "description": "Australian cricketer",
+   "hook": "captained a dominant Test team known for its ruthless mental toughness",
+   "known": 0.5,
+   "kind": "batter"
+  },
+  {
+   "label": "Adam Gilchrist",
+   "qid": "Q349516",
+   "fame": 0.452,
+   "country": "Australia",
+   "description": "Australian cricketer",
+   "hook": "was an attacking wicketkeeper-batsman who hit a famous World Cup final century",
+   "known": 0.65,
+   "kind": "wicketkeeper-batter"
+  },
+  {
+   "label": "Imran Tahir",
+   "qid": "Q3530644",
+   "fame": 0.45,
+   "country": "South Africa",
+   "description": "Cricket Player of South Africa",
+   "hook": "is a leg-spinner famous for celebrating each wicket by sprinting around the field",
+   "known": 0.15,
+   "kind": "spinner"
+  },
+  {
+   "label": "Yuzvendra Chahal",
+   "qid": "Q8062264",
+   "fame": 0.45,
+   "country": "India",
+   "description": "Indian cricketer",
+   "hook": "is a leg-spinner known for his chess-playing background and his long run in the IPL",
+   "known": 0.2,
+   "kind": "spinner"
+  }
+ ]
+}

@@ -1,0 +1,2976 @@
+{
+ "id": "list.business.supermarket-chains",
+ "title": "Supermarket chains",
+ "prompt": "Name a supermarket chain",
+ "genre": "daily-life",
+ "category": "business",
+ "topic": "big-companies",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q18043413 . FILTER NOT EXISTS { ?item wdt:P576 [] } } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-09-30T13:44:33.748Z"
+ },
+ "rows": [
+  {
+   "label": "Aldi",
+   "qid": "Q125054",
+   "fame": 0.615,
+   "also": [
+    "Aldi Stores"
+   ]
+  },
+  {
+   "label": "Trader Joe's",
+   "qid": "Q688825",
+   "fame": 0.576,
+   "also": []
+  },
+  {
+   "label": "Tesco",
+   "qid": "Q487494",
+   "fame": 0.559,
+   "also": [
+    "Tesco PLC"
+   ]
+  },
+  {
+   "label": "Lidl",
+   "qid": "Q151954",
+   "fame": 0.556,
+   "also": [
+    "Lidl Dienstleistung GmbH & Co. KG",
+    "Lidl Stiftung & Co. KG"
+   ]
+  },
+  {
+   "label": "Kroger",
+   "qid": "Q153417",
+   "fame": 0.552,
+   "also": [
+    "Kroger Co.",
+    "Kroger Grocery and Baking",
+    "The Kroger Co."
+   ]
+  },
+  {
+   "label": "Piggly Wiggly",
+   "qid": "Q3388303",
+   "fame": 0.53,
+   "also": []
+  },
+  {
+   "label": "Erewhon",
+   "qid": "Q105628552",
+   "fame": 0.521,
+   "also": [
+    "Erewhon Market"
+   ]
+  },
+  {
+   "label": "H-E-B",
+   "qid": "Q830621",
+   "fame": 0.512,
+   "also": [
+    "H-E-B Grocery Stores",
+    "justicia para papayita"
+   ]
+  },
+  {
+   "label": "Carrefour",
+   "qid": "Q217599",
+   "fame": 0.509,
+   "also": [
+    "Carrefour Group"
+   ]
+  },
+  {
+   "label": "Albertsons",
+   "qid": "Q2831861",
+   "fame": 0.492,
+   "also": []
+  },
+  {
+   "label": "Publix",
+   "qid": "Q672170",
+   "fame": 0.486,
+   "also": [
+    "Publix Super Markets Inc."
+   ]
+  },
+  {
+   "label": "Asda",
+   "qid": "Q297410",
+   "fame": 0.477,
+   "also": [
+    "ASDA Group",
+    "ASDA Group plc",
+    "Asda Living",
+    "ASDA Smart Price",
+    "Asda Stores Limited",
+    "Asda Stores Ltd.",
+    "ASDA Superstore",
+    "ASDA Wal-Mart Supercentre",
+    "Asda Walmart",
+    "George at Asda",
+    "Smart Price"
+   ]
+  },
+  {
+   "label": "Sainsbury's",
+   "qid": "Q152096",
+   "fame": 0.476,
+   "also": [
+    "J Sainsbury plc"
+   ]
+  },
+  {
+   "label": "Safeway",
+   "qid": "Q1508234",
+   "fame": 0.472,
+   "also": [
+    "Safeway Inc."
+   ]
+  },
+  {
+   "label": "Auchan",
+   "qid": "Q758603",
+   "fame": 0.471,
+   "also": [
+    "Groupe Auchan"
+   ]
+  },
+  {
+   "label": "Spar",
+   "qid": "Q610492",
+   "fame": 0.471,
+   "also": [
+    "De Spar"
+   ]
+  },
+  {
+   "label": "Meijer",
+   "qid": "Q1917753",
+   "fame": 0.47,
+   "also": [
+    "Meijer Inc."
+   ]
+  },
+  {
+   "label": "Wegmans",
+   "qid": "Q11288478",
+   "fame": 0.459,
+   "also": [
+    "Wegmans Food Market"
+   ]
+  },
+  {
+   "label": "Loblaw Companies",
+   "qid": "Q909856",
+   "fame": 0.449,
+   "also": [
+    "Loblaw Companies Limited"
+   ]
+  },
+  {
+   "label": "Food Lion",
+   "qid": "Q1435950",
+   "fame": 0.439,
+   "also": [
+    "Food Lion LLC"
+   ]
+  },
+  {
+   "label": "Jungle Jim's International Market",
+   "qid": "Q6312849",
+   "fame": 0.434,
+   "also": []
+  },
+  {
+   "label": "Morrisons",
+   "qid": "Q922344",
+   "fame": 0.429,
+   "also": [
+    "Wm Morrison Supermarkets",
+    "Wm Morrison Supermarkets plc"
+   ]
+  },
+  {
+   "label": "Sprouts Farmers Market",
+   "qid": "Q7581369",
+   "fame": 0.426,
+   "also": []
+  },
+  {
+   "label": "Waitrose & Partners",
+   "qid": "Q771734",
+   "fame": 0.42,
+   "also": [
+    "Waitrose",
+    "little Waitrose"
+   ]
+  },
+  {
+   "label": "WinCo Foods",
+   "qid": "Q8023592",
+   "fame": 0.418,
+   "also": [
+    "WinCo"
+   ]
+  },
+  {
+   "label": "Sobeys",
+   "qid": "Q1143340",
+   "fame": 0.414,
+   "also": [
+    "Sobeys Inc."
+   ]
+  },
+  {
+   "label": "Winn-Dixie",
+   "qid": "Q1264366",
+   "fame": 0.413,
+   "also": []
+  },
+  {
+   "label": "H Mart",
+   "qid": "Q5636306",
+   "fame": 0.412,
+   "also": [
+    "Super H Mart"
+   ]
+  },
+  {
+   "label": "T&T Supermarket",
+   "qid": "Q837893",
+   "fame": 0.412,
+   "also": [
+    "Osaka Supermarket"
+   ]
+  },
+  {
+   "label": "The Co-operative Group",
+   "qid": "Q117202",
+   "fame": 0.411,
+   "also": [
+    "The Group",
+    "Co-op",
+    "Co-op Group",
+    "Co-operative Group Limited"
+   ]
+  },
+  {
+   "label": "Hy-Vee",
+   "qid": "Q1639719",
+   "fame": 0.405,
+   "also": []
+  },
+  {
+   "label": "Stop & Shop",
+   "qid": "Q3658429",
+   "fame": 0.405,
+   "also": [
+    "Stop & Shop Supermarket Company",
+    "Stop and Shop"
+   ]
+  },
+  {
+   "label": "IGA",
+   "qid": "Q3146662",
+   "fame": 0.404,
+   "also": [
+    "Independent Grocers Alliance",
+    "Independent Grocers Alliance of America"
+   ]
+  },
+  {
+   "label": "Iceland",
+   "qid": "Q721810",
+   "fame": 0.401,
+   "also": [
+    "Iceland Foods",
+    "Iceland Foods Ltd",
+    "Iceland Grocery",
+    "Iceland ltd",
+    "Iceland Supermarket"
+   ]
+  },
+  {
+   "label": "Harris Teeter",
+   "qid": "Q5665067",
+   "fame": 0.397,
+   "also": []
+  },
+  {
+   "label": "Giant Food Stores",
+   "qid": "Q5558332",
+   "fame": 0.396,
+   "also": [
+    "The Giant Company",
+    "GIANT",
+    "GIANT Company",
+    "GIANT Company LLC",
+    "Giant Food Stores LLC",
+    "Giant-Carlisle",
+    "Giants Food Store",
+    "Martin's Food Markets",
+    "The GIANT Company LLC"
+   ]
+  },
+  {
+   "label": "ShopRite",
+   "qid": "Q7501097",
+   "fame": 0.396,
+   "also": []
+  },
+  {
+   "label": "Acme Markets",
+   "qid": "Q341975",
+   "fame": 0.395,
+   "also": []
+  },
+  {
+   "label": "Woolworths Supermarkets",
+   "qid": "Q3249145",
+   "fame": 0.388,
+   "also": [
+    "Woolworths",
+    "Woolies"
+   ]
+  },
+  {
+   "label": "Jewel-Osco",
+   "qid": "Q3178470",
+   "fame": 0.382,
+   "also": [
+    "Jewel Osco Supermarket",
+    "jewel supermarket"
+   ]
+  },
+  {
+   "label": "Market Basket",
+   "qid": "Q2079198",
+   "fame": 0.378,
+   "also": [
+    "DeMoulas Market Basket",
+    "DeMoulas Super Markets"
+   ]
+  },
+  {
+   "label": "Ralphs",
+   "qid": "Q3929820",
+   "fame": 0.377,
+   "also": [
+    "Ralphs Grocery",
+    "Ralphs Grocery Company",
+    "Ralphs Marketplace"
+   ]
+  },
+  {
+   "label": "Grocery Outlet",
+   "qid": "Q5609934",
+   "fame": 0.375,
+   "also": [
+    "Grocery Outlet Holding Corp."
+   ]
+  },
+  {
+   "label": "Albert Heijn",
+   "qid": "Q1653985",
+   "fame": 0.368,
+   "also": [
+    "Albert Heijn B.V."
+   ]
+  },
+  {
+   "label": "Coles Supermarkets",
+   "qid": "Q1108172",
+   "fame": 0.367,
+   "also": [
+    "Coles"
+   ]
+  },
+  {
+   "label": "Co-op Food",
+   "qid": "Q3277439",
+   "fame": 0.362,
+   "also": []
+  },
+  {
+   "label": "Coop Cooperative",
+   "qid": "Q432564",
+   "fame": 0.362,
+   "also": [
+    "Coop",
+    "Coop Genossenschaft",
+    "Coop Società Cooperativa",
+    "Coop Société Coopérative"
+   ]
+  },
+  {
+   "label": "99 Ranch Market",
+   "qid": "Q4646307",
+   "fame": 0.361,
+   "also": [
+    "Ranch 99",
+    "Tawa Supermarket Inc."
+   ]
+  },
+  {
+   "label": "Metro",
+   "qid": "Q1145669",
+   "fame": 0.361,
+   "also": [
+    "Metro Inc."
+   ]
+  },
+  {
+   "label": "Aldi Nord",
+   "qid": "Q41171373",
+   "fame": 0.359,
+   "also": []
+  },
+  {
+   "label": "E.Leclerc",
+   "qid": "Q1273376",
+   "fame": 0.357,
+   "also": [
+    "Leclerc"
+   ]
+  },
+  {
+   "label": "King Soopers",
+   "qid": "Q6412065",
+   "fame": 0.352,
+   "also": []
+  },
+  {
+   "label": "Mercadona",
+   "qid": "Q377705",
+   "fame": 0.35,
+   "also": [
+    "Mercadona SA"
+   ]
+  },
+  {
+   "label": "No Frills",
+   "qid": "Q3342407",
+   "fame": 0.35,
+   "also": []
+  },
+  {
+   "label": "Edeka",
+   "qid": "Q701755",
+   "fame": 0.349,
+   "also": []
+  },
+  {
+   "label": "Weis Markets",
+   "qid": "Q7980370",
+   "fame": 0.347,
+   "also": []
+  },
+  {
+   "label": "FreshCo",
+   "qid": "Q5502915",
+   "fame": 0.341,
+   "also": []
+  },
+  {
+   "label": "Sheng Siong",
+   "qid": "Q3481878",
+   "fame": 0.341,
+   "also": [
+    "Sheng Siong Group Limited"
+   ]
+  },
+  {
+   "label": "Tops Friendly Markets",
+   "qid": "Q7825137",
+   "fame": 0.34,
+   "also": []
+  },
+  {
+   "label": "Walmart Canada",
+   "qid": "Q1645718",
+   "fame": 0.339,
+   "also": [
+    "Walmart"
+   ]
+  },
+  {
+   "label": "Fry's Food and Drug",
+   "qid": "Q5506547",
+   "fame": 0.336,
+   "also": [
+    "Fry's",
+    "Fry's Food",
+    "Fry's Food & Drug Stores Inc",
+    "Fry's Food and Drug Stores Inc",
+    "Fry's Food Stores",
+    "Fry's Grocery"
+   ]
+  },
+  {
+   "label": "Aldi Süd",
+   "qid": "Q41171672",
+   "fame": 0.334,
+   "also": [
+    "Aldi Sued"
+   ]
+  },
+  {
+   "label": "Giant Food",
+   "qid": "Q5558336",
+   "fame": 0.333,
+   "also": [
+    "Giant",
+    "Giant Food Inc.",
+    "Giant Food LLC",
+    "Giant Food of Maryland",
+    "Giant-Landover"
+   ]
+  },
+  {
+   "label": "Biedronka",
+   "qid": "Q857182",
+   "fame": 0.328,
+   "also": [
+    "biedronka.pl"
+   ]
+  },
+  {
+   "label": "Ingles",
+   "qid": "Q6032595",
+   "fame": 0.327,
+   "also": [
+    "Ingles Markets"
+   ]
+  },
+  {
+   "label": "Vons",
+   "qid": "Q7941609",
+   "fame": 0.327,
+   "also": []
+  },
+  {
+   "label": "Intermarché",
+   "qid": "Q3153200",
+   "fame": 0.326,
+   "also": []
+  },
+  {
+   "label": "Wakefern Food Corporation",
+   "qid": "Q7961016",
+   "fame": 0.322,
+   "also": []
+  },
+  {
+   "label": "The Fresh Market",
+   "qid": "Q7735265",
+   "fame": 0.321,
+   "also": [
+    "Fresh Market"
+   ]
+  },
+  {
+   "label": "Farmfoods",
+   "qid": "Q5435841",
+   "fame": 0.319,
+   "also": []
+  },
+  {
+   "label": "Food 4 Less",
+   "qid": "Q5465282",
+   "fame": 0.319,
+   "also": []
+  },
+  {
+   "label": "Save-On-Foods",
+   "qid": "Q7427974",
+   "fame": 0.316,
+   "also": [
+    "Nesters Market"
+   ]
+  },
+  {
+   "label": "Pathmark",
+   "qid": "Q3368702",
+   "fame": 0.314,
+   "also": []
+  },
+  {
+   "label": "Dean & DeLuca",
+   "qid": "Q5245963",
+   "fame": 0.313,
+   "also": []
+  },
+  {
+   "label": "Dillons",
+   "qid": "Q5276954",
+   "fame": 0.311,
+   "also": []
+  },
+  {
+   "label": "Save-A-Lot",
+   "qid": "Q7427972",
+   "fame": 0.311,
+   "also": []
+  },
+  {
+   "label": "Kwik Save",
+   "qid": "Q769845",
+   "fame": 0.31,
+   "also": []
+  },
+  {
+   "label": "Big Y World Class Market",
+   "qid": "Q4906701",
+   "fame": 0.309,
+   "also": [
+    "Big Y"
+   ]
+  },
+  {
+   "label": "Farm Boy",
+   "qid": "Q5435469",
+   "fame": 0.307,
+   "also": []
+  },
+  {
+   "label": "Raley's Supermarkets",
+   "qid": "Q7286970",
+   "fame": 0.307,
+   "also": [
+    "The Raley's Companies",
+    "Raley's",
+    "Raley's Inc."
+   ]
+  },
+  {
+   "label": "Lucky Stores",
+   "qid": "Q6698032",
+   "fame": 0.306,
+   "also": [
+    "Lucky's",
+    "Lucky Supermarkets"
+   ]
+  },
+  {
+   "label": "SuperValu",
+   "qid": "Q682047",
+   "fame": 0.305,
+   "also": []
+  },
+  {
+   "label": "Shaw's and Star Market",
+   "qid": "Q578387",
+   "fame": 0.304,
+   "also": []
+  },
+  {
+   "label": "Cub Foods",
+   "qid": "Q5191916",
+   "fame": 0.303,
+   "also": [
+    "Cub"
+   ]
+  },
+  {
+   "label": "Jumbo",
+   "qid": "Q2262314",
+   "fame": 0.301,
+   "also": [
+    "Jumbo Supermarkten",
+    "Jumbo Supermarkten B.V."
+   ]
+  },
+  {
+   "label": "Booths",
+   "qid": "Q4943949",
+   "fame": 0.298,
+   "also": [
+    "Booths Grocery",
+    "Booths Supermarket",
+    "E.H.Booth & Co Ltd",
+    "E.H.Booth and Co Ltd",
+    "EH Booth & Co"
+   ]
+  },
+  {
+   "label": "Pingo Doce",
+   "qid": "Q1575057",
+   "fame": 0.296,
+   "also": []
+  },
+  {
+   "label": "Food Basics",
+   "qid": "Q5465300",
+   "fame": 0.295,
+   "also": []
+  },
+  {
+   "label": "Penny",
+   "qid": "Q284688",
+   "fame": 0.293,
+   "also": [
+    "Penny Market",
+    "Penny supermarket",
+    "Penny Markt"
+   ]
+  },
+  {
+   "label": "Coop",
+   "qid": "Q1129774",
+   "fame": 0.292,
+   "also": []
+  },
+  {
+   "label": "Eurospin",
+   "qid": "Q1374674",
+   "fame": 0.291,
+   "also": []
+  },
+  {
+   "label": "Conad",
+   "qid": "Q639075",
+   "fame": 0.29,
+   "also": []
+  },
+  {
+   "label": "REMA 1000",
+   "qid": "Q28459",
+   "fame": 0.29,
+   "also": []
+  },
+  {
+   "label": "REWE",
+   "qid": "Q16968817",
+   "fame": 0.289,
+   "also": [
+    "REWE Markt GmbH"
+   ]
+  },
+  {
+   "label": "Bashas'",
+   "qid": "Q4866786",
+   "fame": 0.28,
+   "also": []
+  },
+  {
+   "label": "SpartanNash",
+   "qid": "Q7573912",
+   "fame": 0.28,
+   "also": [
+    "Spartan Stores"
+   ]
+  },
+  {
+   "label": "Dominick's",
+   "qid": "Q5290899",
+   "fame": 0.279,
+   "also": []
+  },
+  {
+   "label": "Southeastern Grocers",
+   "qid": "Q20651225",
+   "fame": 0.279,
+   "also": [
+    "The Winn-Dixie Company"
+   ]
+  },
+  {
+   "label": "Save Mart Supermarkets",
+   "qid": "Q7428009",
+   "fame": 0.277,
+   "also": [
+    "Save Mart"
+   ]
+  },
+  {
+   "label": "ABC Stores",
+   "qid": "Q4650251",
+   "fame": 0.276,
+   "also": [
+    "ABC Store"
+   ]
+  },
+  {
+   "label": "Ito-Yokado",
+   "qid": "Q3088746",
+   "fame": 0.273,
+   "also": []
+  },
+  {
+   "label": "Pak'nSave",
+   "qid": "Q7125339",
+   "fame": 0.273,
+   "also": []
+  },
+  {
+   "label": "Grand Union",
+   "qid": "Q5595200",
+   "fame": 0.271,
+   "also": [
+    "Grand Union Family Markets",
+    "Grand Union Supermarkets"
+   ]
+  },
+  {
+   "label": "Netto Marken-Discount",
+   "qid": "Q879858",
+   "fame": 0.27,
+   "also": [
+    "Netto"
+   ]
+  },
+  {
+   "label": "Netto",
+   "qid": "Q552652",
+   "fame": 0.268,
+   "also": []
+  },
+  {
+   "label": "King Kullen",
+   "qid": "Q6411832",
+   "fame": 0.267,
+   "also": []
+  },
+  {
+   "label": "Woolworths New Zealand",
+   "qid": "Q5176845",
+   "fame": 0.264,
+   "also": [
+    "Countdown",
+    "Foodtown"
+   ]
+  },
+  {
+   "label": "Budgens",
+   "qid": "Q4985016",
+   "fame": 0.262,
+   "also": [
+    "Budgens Stores",
+    "Budgens Stores Ltd"
+   ]
+  },
+  {
+   "label": "Defense Commissary Agency",
+   "qid": "Q1182613",
+   "fame": 0.261,
+   "also": [
+    "DeCA",
+    "United States Defense Commissary Agency"
+   ]
+  },
+  {
+   "label": "Magnit",
+   "qid": "Q940518",
+   "fame": 0.261,
+   "also": [
+    "PJSC Magnit",
+    "Public Joint Stock Company Magnit"
+   ]
+  },
+  {
+   "label": "Maxi",
+   "qid": "Q3302441",
+   "fame": 0.258,
+   "also": []
+  },
+  {
+   "label": "Maxima Grupė, UAB",
+   "qid": "Q1881222",
+   "fame": 0.257,
+   "also": [
+    "Maxima Group",
+    "Maxima Grupė"
+   ]
+  },
+  {
+   "label": "Migros",
+   "qid": "Q1754510",
+   "fame": 0.254,
+   "also": []
+  },
+  {
+   "label": "BIM",
+   "qid": "Q1022075",
+   "fame": 0.253,
+   "also": [
+    "United Markets"
+   ]
+  },
+  {
+   "label": "Giant Hypermarket",
+   "qid": "Q4217013",
+   "fame": 0.251,
+   "also": [
+    "Giant"
+   ]
+  },
+  {
+   "label": "New World",
+   "qid": "Q7012488",
+   "fame": 0.251,
+   "also": []
+  },
+  {
+   "label": "Wellcome",
+   "qid": "Q706247",
+   "fame": 0.25,
+   "also": []
+  },
+  {
+   "label": "Fiesta Mart",
+   "qid": "Q5447326",
+   "fame": 0.246,
+   "also": [
+    "Fiesta Mart Inc."
+   ]
+  },
+  {
+   "label": "Haggen Food & Pharmacy",
+   "qid": "Q5638683",
+   "fame": 0.246,
+   "also": [
+    "Haggen"
+   ]
+  },
+  {
+   "label": "ICA AB",
+   "qid": "Q1663776",
+   "fame": 0.246,
+   "also": [
+    "ICA Gruppen",
+    "ICA Handlarna AB",
+    "ICA Maxi",
+    "Inköpscentralernas Aktiebolag"
+   ]
+  },
+  {
+   "label": "Continente",
+   "qid": "Q2995683",
+   "fame": 0.243,
+   "also": []
+  },
+  {
+   "label": "99 Speedmart",
+   "qid": "Q62075061",
+   "fame": 0.24,
+   "also": []
+  },
+  {
+   "label": "Dia",
+   "qid": "Q925132",
+   "fame": 0.239,
+   "also": [
+    "Dia Market",
+    "Dia supermercados",
+    "Distribuidora Internacional de Alimentación"
+   ]
+  },
+  {
+   "label": "Fairway Market",
+   "qid": "Q5430910",
+   "fame": 0.239,
+   "also": []
+  },
+  {
+   "label": "Lotte Mart",
+   "qid": "Q326715",
+   "fame": 0.237,
+   "also": []
+  },
+  {
+   "label": "Esselunga",
+   "qid": "Q1059636",
+   "fame": 0.236,
+   "also": [
+    "Esselunga S.p.A."
+   ]
+  },
+  {
+   "label": "Mega Image",
+   "qid": "Q6808085",
+   "fame": 0.236,
+   "also": []
+  },
+  {
+   "label": "Festival Foods",
+   "qid": "Q5445707",
+   "fame": 0.233,
+   "also": []
+  },
+  {
+   "label": "Dominion",
+   "qid": "Q5291028",
+   "fame": 0.231,
+   "also": []
+  },
+  {
+   "label": "Shufersal Ltd.",
+   "qid": "Q4523181",
+   "fame": 0.231,
+   "also": [
+    "Shufersal"
+   ]
+  },
+  {
+   "label": "Seiyu Group",
+   "qid": "Q3108542",
+   "fame": 0.23,
+   "also": []
+  },
+  {
+   "label": "Bónus",
+   "qid": "Q3480158",
+   "fame": 0.228,
+   "also": []
+  },
+  {
+   "label": "Fortinos",
+   "qid": "Q5472662",
+   "fame": 0.227,
+   "also": []
+  },
+  {
+   "label": "Fareway",
+   "qid": "Q5434998",
+   "fame": 0.224,
+   "also": []
+  },
+  {
+   "label": "Zehrs Markets",
+   "qid": "Q8068546",
+   "fame": 0.221,
+   "also": [
+    "Zehrs"
+   ]
+  },
+  {
+   "label": "Uwajimaya",
+   "qid": "Q3538218",
+   "fame": 0.22,
+   "also": []
+  },
+  {
+   "label": "Natural Grocers",
+   "qid": "Q17146520",
+   "fame": 0.219,
+   "also": [
+    "Vitamin Cottage Natural Grocers",
+    "Natural Grocers by Vitamin Cottage",
+    "Vitamin Cottage Inc"
+   ]
+  },
+  {
+   "label": "Harris Farm Markets",
+   "qid": "Q5664888",
+   "fame": 0.213,
+   "also": []
+  },
+  {
+   "label": "Profi",
+   "qid": "Q956664",
+   "fame": 0.212,
+   "also": []
+  },
+  {
+   "label": "Super C",
+   "qid": "Q3504127",
+   "fame": 0.212,
+   "also": []
+  },
+  {
+   "label": "Your Independent Grocer",
+   "qid": "Q8058833",
+   "fame": 0.207,
+   "also": []
+  },
+  {
+   "label": "Dino Polska",
+   "qid": "Q11694239",
+   "fame": 0.206,
+   "also": []
+  },
+  {
+   "label": "Foodtown",
+   "qid": "Q5465575",
+   "fame": 0.205,
+   "also": [
+    "Foodtown grocery stores",
+    "Foodtown supermarket",
+    "Foodtown USA"
+   ]
+  },
+  {
+   "label": "Provigo",
+   "qid": "Q3408306",
+   "fame": 0.205,
+   "also": []
+  },
+  {
+   "label": "Masoutis",
+   "qid": "Q6783887",
+   "fame": 0.203,
+   "also": []
+  },
+  {
+   "label": "Harmons",
+   "qid": "Q5659378",
+   "fame": 0.202,
+   "also": []
+  },
+  {
+   "label": "ATB-Market",
+   "qid": "Q4054103",
+   "fame": 0.201,
+   "also": [
+    "ATB"
+   ]
+  },
+  {
+   "label": "Acme Fresh Market",
+   "qid": "Q4674393",
+   "fame": 0.2,
+   "also": [
+    "Fred W. Albrecht Grocery Company",
+    "The Fred W. Albrecht Grocery Company"
+   ]
+  },
+  {
+   "label": "Arvanitidis Super Market",
+   "qid": "Q4802368",
+   "fame": 0.2,
+   "also": [
+    "Super-Markets Arvanitidis"
+   ]
+  },
+  {
+   "label": "Atlantic",
+   "qid": "Q4816265",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Atlantic Superstore",
+   "qid": "Q4816566",
+   "fame": 0.2,
+   "also": [
+    "Real Atlantic Superstore"
+   ]
+  },
+  {
+   "label": "Balducci's",
+   "qid": "Q4850482",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Big Market",
+   "qid": "Q28135235",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Brookshire Brothers",
+   "qid": "Q4975084",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Brookshire Grocery Company",
+   "qid": "Q4975085",
+   "fame": 0.2,
+   "also": [
+    "Brookshire's"
+   ]
+  },
+  {
+   "label": "Buehler Food Markets Inc.",
+   "qid": "Q4985358",
+   "fame": 0.2,
+   "also": [
+    "Buehler's Fresh Foods",
+    "Buehler's"
+   ]
+  },
+  {
+   "label": "Calgary Co-op",
+   "qid": "Q5019656",
+   "fame": 0.2,
+   "also": [
+    "Calgary Co-operative Association Limited"
+   ]
+  },
+  {
+   "label": "Central England Co-operative",
+   "qid": "Q16986583",
+   "fame": 0.2,
+   "also": [
+    "Central England",
+    "Central England Co-operative Limited"
+   ]
+  },
+  {
+   "label": "Central Market",
+   "qid": "Q5061401",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "CGC Japan",
+   "qid": "Q5010964",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chandarana Food Plus Supermarkets",
+   "qid": "Q55606958",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "City Market",
+   "qid": "Q65090778",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Coppa's Fresh Market",
+   "qid": "Q55138358",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "D&W Fresh Market",
+   "qid": "Q5203035",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Fantastico",
+   "qid": "Q61140834",
+   "fame": 0.2,
+   "also": [
+    "Fantastiko"
+   ]
+  },
+  {
+   "label": "Food Lover's Market",
+   "qid": "Q65071570",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gristedes",
+   "qid": "Q5609669",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hannaford Bros. Co.",
+   "qid": "Q5648760",
+   "fame": 0.2,
+   "also": [
+    "Hannaford",
+    "Hannaford Brothers Company"
+   ]
+  },
+  {
+   "label": "Harps Food Stores",
+   "qid": "Q16994839",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Heinen's Grocery Store",
+   "qid": "Q5699702",
+   "fame": 0.2,
+   "also": [
+    "Heinen's"
+   ]
+  },
+  {
+   "label": "Helgø Matsenter",
+   "qid": "Q11974841",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Highland Farms",
+   "qid": "Q24190152",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hipermart",
+   "qid": "Q16938074",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kings Food Markets",
+   "qid": "Q6412914",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "KTA Super Stores",
+   "qid": "Q44361030",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "La Michoacana Meat Market",
+   "qid": "Q6463872",
+   "fame": 0.2,
+   "also": [
+    "La Michoacana"
+   ]
+  },
+  {
+   "label": "Lowes Foods",
+   "qid": "Q6693991",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Market of Choice",
+   "qid": "Q6770822",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Melcom",
+   "qid": "Q6812065",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "METRO Foods Trading",
+   "qid": "Q6715491",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "New Seasons Market",
+   "qid": "Q7011463",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Patel Brothers",
+   "qid": "Q55641396",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Plaza Lama",
+   "qid": "Q16620069",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Price Chopper Supermarkets",
+   "qid": "Q7242574",
+   "fame": 0.2,
+   "also": [
+    "Price Chopper"
+   ]
+  },
+  {
+   "label": "Proudfoot Supermarkets",
+   "qid": "Q139997321",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "QFC",
+   "qid": "Q7265425",
+   "fame": 0.2,
+   "also": [
+    "Quality Food Centers"
+   ]
+  },
+  {
+   "label": "Ramayana Lestari Sentosa",
+   "qid": "Q19731380",
+   "fame": 0.2,
+   "also": [
+    "Robinson",
+    "Ramayana",
+    "Cahaya",
+    "Cahaya Department Store",
+    "RALS",
+    "Ramayana Department Store",
+    "Ramayana Lestari Sentosa Tbk",
+    "Ramayana Supermarket",
+    "Robinson Department Store",
+    "PT Ramayana Lestari Sentosa Tbk."
+   ]
+  },
+  {
+   "label": "Randall's Food Markets",
+   "qid": "Q7291489",
+   "fame": 0.2,
+   "also": [
+    "Randalls"
+   ]
+  },
+  {
+   "label": "Red Owl",
+   "qid": "Q7304694",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Refah Chain Stores Co.",
+   "qid": "Q7307085",
+   "fame": 0.2,
+   "also": [
+    "Refah",
+    "Refah Stores"
+   ]
+  },
+  {
+   "label": "Remke Markets",
+   "qid": "Q15265964",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rice Epicurean Markets",
+   "qid": "Q7323001",
+   "fame": 0.2,
+   "also": [
+    "Rice Boulevard Food Market"
+   ]
+  },
+  {
+   "label": "Ridley's Family Markets",
+   "qid": "Q7332999",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Robinsons Supermarket",
+   "qid": "Q7353143",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Roundy's Supermarkets, Inc.",
+   "qid": "Q7371288",
+   "fame": 0.2,
+   "also": [
+    "Roundy's"
+   ]
+  },
+  {
+   "label": "Sav-A-Center",
+   "qid": "Q7427652",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Schnucks",
+   "qid": "Q7431920",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sedano’s",
+   "qid": "Q17087869",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Shoppers Food & Pharmacy",
+   "qid": "Q7501183",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Smith's Food and Drug",
+   "qid": "Q7544856",
+   "fame": 0.2,
+   "also": [
+    "Smith's"
+   ]
+  },
+  {
+   "label": "Supabarn Supermarkets",
+   "qid": "Q7641883",
+   "fame": 0.2,
+   "also": [
+    "Supabarn Famer's Market"
+   ]
+  },
+  {
+   "label": "Supermercados Tu Alteza",
+   "qid": "Q109236576",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "SuperValue",
+   "qid": "Q7642080",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sustainable Produce Urban Delivery",
+   "qid": "Q17084082",
+   "fame": 0.2,
+   "also": [
+    "Spud",
+    "SPUD.ca"
+   ]
+  },
+  {
+   "label": "The Fresh Grocer",
+   "qid": "Q18389721",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Thrifty Foods",
+   "qid": "Q7798140",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "TM Supermarket",
+   "qid": "Q7670798",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tom Thumb Food & Pharmacy",
+   "qid": "Q7817826",
+   "fame": 0.2,
+   "also": [
+    "Tom Thumb",
+    "Tom Thumb food",
+    "Tom Thumb Grocery Store",
+    "Tom Thumb Pharmacy"
+   ]
+  },
+  {
+   "label": "United Grocery Outlet",
+   "qid": "Q23074318",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vallarta Supermarkets",
+   "qid": "Q7911833",
+   "fame": 0.2,
+   "also": [
+    "Vallarta",
+    "Vallarta Supermarkets Inc."
+   ]
+  },
+  {
+   "label": "Vivanda",
+   "qid": "Q7937539",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Weingarten's",
+   "qid": "Q7980248",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zupan's Markets",
+   "qid": "Q8075331",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Foodland",
+   "qid": "Q5465560",
+   "fame": 0.197,
+   "also": [
+    "Foodland Hawaii"
+   ]
+  },
+  {
+   "label": "Harveys Supermarkets",
+   "qid": "Q5677767",
+   "fame": 0.195,
+   "also": []
+  },
+  {
+   "label": "Scarlett Supermarket",
+   "qid": "Q108830012",
+   "fame": 0.19,
+   "also": []
+  },
+  {
+   "label": "CTown Supermarkets",
+   "qid": "Q5005929",
+   "fame": 0.188,
+   "also": []
+  },
+  {
+   "label": "Mix Markt",
+   "qid": "Q327854",
+   "fame": 0.188,
+   "also": []
+  },
+  {
+   "label": "Svetofor",
+   "qid": "Q61875920",
+   "fame": 0.188,
+   "also": [
+    "Traffic Light"
+   ]
+  },
+  {
+   "label": "Meny",
+   "qid": "Q10581720",
+   "fame": 0.187,
+   "also": []
+  },
+  {
+   "label": "Tops",
+   "qid": "Q7825140",
+   "fame": 0.186,
+   "also": []
+  },
+  {
+   "label": "Wing Yip",
+   "qid": "Q8025121",
+   "fame": 0.184,
+   "also": []
+  },
+  {
+   "label": "Carrefour Market",
+   "qid": "Q2689639",
+   "fame": 0.183,
+   "also": []
+  },
+  {
+   "label": "DinoSol",
+   "qid": "Q5278478",
+   "fame": 0.18,
+   "also": [
+    "HiperDino",
+    "HiperDino Express",
+    "SuperDino",
+    "DinoSol Supermercados SL"
+   ]
+  },
+  {
+   "label": "Colruyt",
+   "qid": "Q2363991",
+   "fame": 0.178,
+   "also": []
+  },
+  {
+   "label": "Four Square",
+   "qid": "Q5475558",
+   "fame": 0.177,
+   "also": []
+  },
+  {
+   "label": "MaxValu",
+   "qid": "Q11340427",
+   "fame": 0.175,
+   "also": [
+    "MavValu"
+   ]
+  },
+  {
+   "label": "CarrefourSA",
+   "qid": "Q28870164",
+   "fame": 0.171,
+   "also": [
+    "Carrefour"
+   ]
+  },
+  {
+   "label": "FoodWorks",
+   "qid": "Q5465579",
+   "fame": 0.171,
+   "also": []
+  },
+  {
+   "label": "Bilka",
+   "qid": "Q861880",
+   "fame": 0.166,
+   "also": []
+  },
+  {
+   "label": "Marché Adonis",
+   "qid": "Q20707426",
+   "fame": 0.166,
+   "also": []
+  },
+  {
+   "label": "IKI",
+   "qid": "Q1653981",
+   "fame": 0.158,
+   "also": [
+    "IKI Lietuva",
+    "Palink"
+   ]
+  },
+  {
+   "label": "Silpo",
+   "qid": "Q4419434",
+   "fame": 0.154,
+   "also": []
+  },
+  {
+   "label": "Tiv Taam Holdings 1 Ltd",
+   "qid": "Q2903718",
+   "fame": 0.154,
+   "also": [
+    "Tiv Ta'am",
+    "Tiv Tam"
+   ]
+  },
+  {
+   "label": "Supermercados Disco",
+   "qid": "Q6135978",
+   "fame": 0.153,
+   "also": [
+    "Disco",
+    "Disco supermarket"
+   ]
+  },
+  {
+   "label": "CBA",
+   "qid": "Q779845",
+   "fame": 0.152,
+   "also": []
+  },
+  {
+   "label": "Cactus",
+   "qid": "Q466918",
+   "fame": 0.147,
+   "also": []
+  },
+  {
+   "label": "Føtex",
+   "qid": "Q1480395",
+   "fame": 0.147,
+   "also": []
+  },
+  {
+   "label": "Coop Hungary",
+   "qid": "Q868980",
+   "fame": 0.146,
+   "also": [
+    "Coop"
+   ]
+  },
+  {
+   "label": "COOP Jednota Slovensko",
+   "qid": "Q41629254",
+   "fame": 0.144,
+   "also": [
+    "COOP Jednota",
+    "Coop",
+    "Jednota"
+   ]
+  },
+  {
+   "label": "Hong Kong Supermarket",
+   "qid": "Q15114423",
+   "fame": 0.139,
+   "also": []
+  },
+  {
+   "label": "PLUS",
+   "qid": "Q1978981",
+   "fame": 0.139,
+   "also": [
+    "PLUS Retail B.V."
+   ]
+  },
+  {
+   "label": "Ritchies Stores",
+   "qid": "Q7336696",
+   "fame": 0.139,
+   "also": [
+    "Ritchies IGA"
+   ]
+  },
+  {
+   "label": "Dirk",
+   "qid": "Q17502722",
+   "fame": 0.137,
+   "also": [
+    "Dirk van den Broek"
+   ]
+  },
+  {
+   "label": "Tang Frères",
+   "qid": "Q1005336",
+   "fame": 0.134,
+   "also": [
+    "Tang Frères S.A.",
+    "Frères Tang"
+   ]
+  },
+  {
+   "label": "Metro Cash & Carry Pakistan",
+   "qid": "Q85785068",
+   "fame": 0.133,
+   "also": [
+    "Metro Pakistan",
+    "Makro Habib Pakistan",
+    "Metro-Habib"
+   ]
+  },
+  {
+   "label": "3 Guys",
+   "qid": "Q110938225",
+   "fame": 0.131,
+   "also": [
+    "Gubays"
+   ]
+  },
+  {
+   "label": "A-Mart",
+   "qid": "Q16824248",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "ABCO Foods",
+   "qid": "Q4650099",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Action",
+   "qid": "Q4677071",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Andronico's",
+   "qid": "Q4759491",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Angeli Foods",
+   "qid": "Q111948353",
+   "fame": 0.131,
+   "also": [
+    "Angeli's Central Market",
+    "Angeli's Super Valu"
+   ]
+  },
+  {
+   "label": "Arpico Super Centre",
+   "qid": "Q60765315",
+   "fame": 0.131,
+   "also": [
+    "Arpico"
+   ]
+  },
+  {
+   "label": "Baker's Supermarkets",
+   "qid": "Q4849080",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Bhat-Bhateni Super Market",
+   "qid": "Q104847792",
+   "fame": 0.131,
+   "also": [
+    "BBSM"
+   ]
+  },
+  {
+   "label": "Boyer's Food Markets, Inc.",
+   "qid": "Q16985059",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Bravo",
+   "qid": "Q16985159",
+   "fame": 0.131,
+   "also": [
+    "Bravo Supermarkets"
+   ]
+  },
+  {
+   "label": "Butterfield Market",
+   "qid": "Q5002883",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Cardenas",
+   "qid": "Q64149543",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Choices Market",
+   "qid": "Q5104054",
+   "fame": 0.131,
+   "also": [
+    "Choices Markets"
+   ]
+  },
+  {
+   "label": "Clemens Markets",
+   "qid": "Q5131265",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Coles Local",
+   "qid": "Q104850818",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Commisso's Food Markets",
+   "qid": "Q5152885",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Coto supermarkets",
+   "qid": "Q5175411",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Dave's Markets",
+   "qid": "Q5228182",
+   "fame": 0.131,
+   "also": [
+    "Dave's"
+   ]
+  },
+  {
+   "label": "David's Supermarkets",
+   "qid": "Q5230392",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Delchamps",
+   "qid": "Q5253557",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Dierbergs Markets",
+   "qid": "Q5274978",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Dominion Stores",
+   "qid": "Q5291078",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Dorothy Lane Market",
+   "qid": "Q5298500",
+   "fame": 0.131,
+   "also": [
+    "DLM",
+    "DLM Business Gifting",
+    "DLM Culinary Center",
+    "DLM Love Cakes",
+    "DLM Mail Order",
+    "Killer Brownie",
+    "Shopdlm"
+   ]
+  },
+  {
+   "label": "Drakes Supermarkets",
+   "qid": "Q48988077",
+   "fame": 0.131,
+   "also": [
+    "Drake Supermarkets"
+   ]
+  },
+  {
+   "label": "Egyptian Distribution Group",
+   "qid": "Q19904031",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "El Ahorro Supermarket",
+   "qid": "Q5350704",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Extra Foods",
+   "qid": "Q5422144",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Family Fare",
+   "qid": "Q19868045",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Farm Fresh Food & Pharmacy",
+   "qid": "Q5435496",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Felpausch",
+   "qid": "Q5442607",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Fields Foods",
+   "qid": "Q121536475",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "File Market",
+   "qid": "Q112228237",
+   "fame": 0.131,
+   "also": [
+    "File"
+   ]
+  },
+  {
+   "label": "Food Rite",
+   "qid": "Q5465365",
+   "fame": 0.131,
+   "also": [
+    "Food Rite Grocery"
+   ]
+  },
+  {
+   "label": "Foodarama",
+   "qid": "Q5465543",
+   "fame": 0.131,
+   "also": [
+    "Cox's Foodarama"
+   ]
+  },
+  {
+   "label": "Foodex",
+   "qid": "Q5465545",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Fresh Thyme",
+   "qid": "Q64132791",
+   "fame": 0.131,
+   "also": [
+    "Fresh Thyme Farmers Market"
+   ]
+  },
+  {
+   "label": "Galati Brothers",
+   "qid": "Q5518042",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Galati Market Fresh",
+   "qid": "Q5518043",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Gerland Corporation",
+   "qid": "Q5550934",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Giant Open Air",
+   "qid": "Q5558396",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Gourmet Garage",
+   "qid": "Q16994340",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "H Williams",
+   "qid": "Q5636314",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Henry's Farmers Market",
+   "qid": "Q5716856",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Homeland",
+   "qid": "Q5889497",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Hornbacher's",
+   "qid": "Q5904043",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Houchens Industries",
+   "qid": "Q5912729",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Hugo's",
+   "qid": "Q5933656",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Inserra Supermarkets",
+   "qid": "Q6037354",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Jaya Grocer",
+   "qid": "Q116275052",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "JayC Food Stores",
+   "qid": "Q6166302",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Jitney Jungle",
+   "qid": "Q6203309",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Karns Quality Foods",
+   "qid": "Q6372994",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Katz Group of Companies",
+   "qid": "Q6378569",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Keells Super",
+   "qid": "Q48734890",
+   "fame": 0.131,
+   "also": [
+    "Keells"
+   ]
+  },
+  {
+   "label": "Kuhn's Quality Foods",
+   "qid": "Q6442158",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Lewis Food Town",
+   "qid": "Q6536554",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Lowe's Market",
+   "qid": "Q6693107",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Lund Food Holdings",
+   "qid": "Q6704067",
+   "fame": 0.131,
+   "also": [
+    "Lunds & Byerlys"
+   ]
+  },
+  {
+   "label": "Marc's",
+   "qid": "Q17080259",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Mariano's",
+   "qid": "Q55622168",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Market District",
+   "qid": "Q98550869",
+   "fame": 0.131,
+   "also": [
+    "Giant Eagle Market District",
+    "Market District Supermarket"
+   ]
+  },
+  {
+   "label": "Market Fresh",
+   "qid": "Q6770679",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Martin's Super Markets",
+   "qid": "Q6774803",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Más Club",
+   "qid": "Q6949810",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "McCaffrey's",
+   "qid": "Q104855638",
+   "fame": 0.131,
+   "also": [
+    "McCaffrey's Food Markets"
+   ]
+  },
+  {
+   "label": "Met Foods",
+   "qid": "Q6822231",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Minyard Food Stores",
+   "qid": "Q6871242",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Miracle Food Mart",
+   "qid": "Q6872400",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "More",
+   "qid": "Q6910891",
+   "fame": 0.131,
+   "also": [
+    "More Retail Private Limited"
+   ]
+  },
+  {
+   "label": "Morton Williams",
+   "qid": "Q28227933",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "National Supermarkets",
+   "qid": "Q6978769",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "National Tea",
+   "qid": "Q6978843",
+   "fame": 0.131,
+   "also": [
+    "National Tea Company"
+   ]
+  },
+  {
+   "label": "New Grand Mart",
+   "qid": "Q5594793",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Nugget Markets",
+   "qid": "Q7068755",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Overwaitea Foods",
+   "qid": "Q7114082",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Pavilions",
+   "qid": "Q7155886",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Pay Less Super Markets",
+   "qid": "Q7156587",
+   "fame": 0.131,
+   "also": [
+    "Pay Less Food Markets"
+   ]
+  },
+  {
+   "label": "Petrini's",
+   "qid": "Q7178826",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Pick-N-Pay Supermarkets",
+   "qid": "Q17085532",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Pink Dot",
+   "qid": "Q7195989",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Price Chopper",
+   "qid": "Q7242570",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "PriceRite",
+   "qid": "Q7242560",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Prime Supermarket",
+   "qid": "Q60744255",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Redner's Markets",
+   "qid": "Q7306166",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Riesbeck's Food Markets",
+   "qid": "Q28226114",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Rosauers Supermarkets",
+   "qid": "Q7367458",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Russ's Market",
+   "qid": "Q7381087",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "SaveRite",
+   "qid": "Q7427981",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Scolari's Food and Drug",
+   "qid": "Q7434273",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Selver",
+   "qid": "Q3771177",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Sendik's Food Market",
+   "qid": "Q23461945",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Shop 'n Save",
+   "qid": "Q7501107",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Shwapno",
+   "qid": "Q115664015",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Simon David",
+   "qid": "Q7518577",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Stanley Stores",
+   "qid": "Q7599974",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Star Bargains",
+   "qid": "Q55633891",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Star Market",
+   "qid": "Q7600795",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Stater Bros.",
+   "qid": "Q7604016",
+   "fame": 0.131,
+   "also": [
+    "Stater Bros. Markets",
+    "Stater Brothers"
+   ]
+  },
+  {
+   "label": "Stew Leonard's",
+   "qid": "Q7615653",
+   "fame": 0.131,
+   "also": [
+    "Stew's"
+   ]
+  },
+  {
+   "label": "Strack & Van Til",
+   "qid": "Q17108969",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Straub's Markets",
+   "qid": "Q7622303",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Sunflower Market",
+   "qid": "Q7640027",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Super Fresh",
+   "qid": "Q7642360",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Super One Foods",
+   "qid": "Q17108733",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Super Saver Foods",
+   "qid": "Q7642735",
+   "fame": 0.131,
+   "also": [
+    "Super Saver"
+   ]
+  },
+  {
+   "label": "Supermercados Llaneza",
+   "qid": "Q23461989",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Supermercados Teloloapan",
+   "qid": "Q7643965",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "The Market",
+   "qid": "Q7750373",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Times Supermarkets",
+   "qid": "Q7806566",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Triveni Supermarkets",
+   "qid": "Q7844639",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Ukrop's Food Group",
+   "qid": "Q7878596",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "United Supermarkets",
+   "qid": "Q17108901",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Urban Fare",
+   "qid": "Q17130741",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Wholesale Club",
+   "qid": "Q7997568",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Wild Oats Markets",
+   "qid": "Q8000739",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Woodman's Markets",
+   "qid": "Q8033073",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Woolworths",
+   "qid": "Q8033995",
+   "fame": 0.131,
+   "also": [
+    "Woolworth"
+   ]
+  },
+  {
+   "label": "Veganz",
+   "qid": "Q17086932",
+   "fame": 0.129,
+   "also": []
+  },
+  {
+   "label": "Pisiffik",
+   "qid": "Q4993348",
+   "fame": 0.128,
+   "also": []
+  },
+  {
+   "label": "Supermercados Wong",
+   "qid": "Q28604866",
+   "fame": 0.123,
+   "also": [
+    "Wong"
+   ]
+  },
+  {
+   "label": "Freshmart",
+   "qid": "Q5503071",
+   "fame": 0.121,
+   "also": []
+  },
+  {
+   "label": "Stokrotka",
+   "qid": "Q9345945",
+   "fame": 0.119,
+   "also": []
+  },
+  {
+   "label": "Co-op Atlantic",
+   "qid": "Q2981018",
+   "fame": 0.113,
+   "also": []
+  },
+  {
+   "label": "Lewiatan",
+   "qid": "Q11755396",
+   "fame": 0.112,
+   "also": []
+  },
+  {
+   "label": "Match",
+   "qid": "Q513977",
+   "fame": 0.11,
+   "also": [
+    "Smatch",
+    "Supermarché Match"
+   ]
+  },
+  {
+   "label": "Minipreço",
+   "qid": "Q3042224",
+   "fame": 0.11,
+   "also": []
+  },
+  {
+   "label": "Bennet",
+   "qid": "Q3638281",
+   "fame": 0.109,
+   "also": []
+  },
+  {
+   "label": "Kipa",
+   "qid": "Q218006",
+   "fame": 0.103,
+   "also": [
+    "Tesco Kipa"
+   ]
+  },
+  {
+   "label": "Alepa",
+   "qid": "Q4716167",
+   "fame": 0.101,
+   "also": []
+  },
+  {
+   "label": "Varus",
+   "qid": "Q114944216",
+   "fame": 0.098,
+   "also": []
+  },
+  {
+   "label": "3hreeSixty",
+   "qid": "Q7797310",
+   "fame": 0.096,
+   "also": [
+    "Three Sixty"
+   ]
+  },
+  {
+   "label": "BIG Bompreço",
+   "qid": "Q4940907",
+   "fame": 0.096,
+   "also": [
+    "Bompreço"
+   ]
+  },
+  {
+   "label": "Irma",
+   "qid": "Q797150",
+   "fame": 0.096,
+   "also": []
+  },
+  {
+   "label": "Magnum Cash & Carry",
+   "qid": "Q86666865",
+   "fame": 0.093,
+   "also": []
+  },
+  {
+   "label": "Aibė",
+   "qid": "Q1022952",
+   "fame": 0.092,
+   "also": []
+  },
+  {
+   "label": "Azbuka Vkusa",
+   "qid": "Q4058209",
+   "fame": 0.091,
+   "also": []
+  },
+  {
+   "label": "Fora",
+   "qid": "Q4491805",
+   "fame": 0.091,
+   "also": []
+  },
+  {
+   "label": "La Anónima",
+   "qid": "Q6135985",
+   "fame": 0.088,
+   "also": [
+    "Supermercados La Anonima"
+   ]
+  },
+  {
+   "label": "759 Store",
+   "qid": "Q10846179",
+   "fame": 0.086,
+   "also": []
+  },
+  {
+   "label": "Bazaar",
+   "qid": "Q4875086",
+   "fame": 0.086,
+   "also": []
+  },
+  {
+   "label": "Santa Isabel",
+   "qid": "Q7419620",
+   "fame": 0.085,
+   "also": []
+  },
+  {
+   "label": "Tottus",
+   "qid": "Q7828510",
+   "fame": 0.085,
+   "also": []
+  },
+  {
+   "label": "Froiz",
+   "qid": "Q17070775",
+   "fame": 0.075,
+   "also": []
+  },
+  {
+   "label": "Carrefour Argentina",
+   "qid": "Q135390032",
+   "fame": 0.07,
+   "also": []
+  },
+  {
+   "label": "Sale",
+   "qid": "Q11892046",
+   "fame": 0.07,
+   "also": []
+  },
+  {
+   "label": "Uchumi Supermarkets",
+   "qid": "Q7876767",
+   "fame": 0.069,
+   "also": []
+  },
+  {
+   "label": "VkusVill",
+   "qid": "Q57271676",
+   "fame": 0.065,
+   "also": []
+  },
+  {
+   "label": "DekaMarkt",
+   "qid": "Q2489350",
+   "fame": 0.062,
+   "also": [
+    "NL 5060 EU"
+   ]
+  },
+  {
+   "label": "Planet Organic",
+   "qid": "Q24298870",
+   "fame": 0.062,
+   "also": []
+  },
+  {
+   "label": "Hipermaxi",
+   "qid": "Q81968262",
+   "fame": 0.045,
+   "also": []
+  },
+  {
+   "label": "Krónan",
+   "qid": "Q16419327",
+   "fame": 0.044,
+   "also": []
+  },
+  {
+   "label": "Tinex",
+   "qid": "Q7808101",
+   "fame": 0.042,
+   "also": []
+  },
+  {
+   "label": "Yenot Bitan",
+   "qid": "Q6561327",
+   "fame": 0.038,
+   "also": [
+    "Yeinot Bitan",
+    "Bitan's Wines"
+   ]
+  },
+  {
+   "label": "Ekoplaza",
+   "qid": "Q47017915",
+   "fame": 0.035,
+   "also": []
+  },
+  {
+   "label": "Central Madeirense",
+   "qid": "Q2894459",
+   "fame": 0.032,
+   "also": []
+  },
+  {
+   "label": "Tavria V",
+   "qid": "Q7689159",
+   "fame": 0.013,
+   "also": []
+  },
+  {
+   "label": "Topaz",
+   "qid": "Q11837058",
+   "fame": 0.013,
+   "also": []
+  },
+  {
+   "label": "Velyka Kyshenia",
+   "qid": "Q7919440",
+   "fame": 0.011,
+   "also": []
+  },
+  {
+   "label": "Filco Foods",
+   "qid": "Q5448306",
+   "fame": 0.008,
+   "also": [
+    "Filco",
+    "Filco Supermarkets"
+   ]
+  },
+  {
+   "label": "SuperBest",
+   "qid": "Q7641975",
+   "fame": 0.006,
+   "also": []
+  },
+  {
+   "label": "BelMarket",
+   "qid": "Q4082116",
+   "fame": 0.004,
+   "also": []
+  },
+  {
+   "label": "Dagli'Brugsen",
+   "qid": "Q12307017",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Easy-Way Store",
+   "qid": "Q5331057",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Fakta",
+   "qid": "Q3172238",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Kvickly",
+   "qid": "Q7061148",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "LokalBrugsen",
+   "qid": "Q12324789",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Maxima LT",
+   "qid": "Q15834586",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Plaza Vea",
+   "qid": "Q7203672",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Proma Hypermarket",
+   "qid": "Q7249667",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Rahat Market",
+   "qid": "Q134300657",
+   "fame": 0,
+   "also": [
+    "Rahat"
+   ]
+  },
+  {
+   "label": "Rukavychka",
+   "qid": "Q20092568",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "SuperBrugsen",
+   "qid": "Q12337746",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Supermercados Disco del Uruguay",
+   "qid": "Q16636819",
+   "fame": 0,
+   "also": [
+    "Disco",
+    "Disco Uruguay"
+   ]
+  },
+  {
+   "label": "Supermercados El Dorado",
+   "qid": "Q123999790",
+   "fame": 0,
+   "also": [
+    "El Dorado"
+   ]
+  },
+  {
+   "label": "Ta-Ta",
+   "qid": "Q106902469",
+   "fame": 0,
+   "also": []
+  }
+ ]
+}

@@ -1,0 +1,282 @@
+{
+ "id": "table.sports.mlb-one-club-legends",
+ "kind": "table",
+ "title": "Baseball legends who spent their whole MLB career with one team",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "baseball",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?teamLabel WHERE { VALUES (?item ?team) { (wd:Q353511 wd:Q213417) (wd:Q382303 wd:Q213417) (wd:Q357444 wd:Q213417) (wd:Q297142 wd:Q213417) (wd:Q345004 wd:Q213417) (wd:Q1345775 wd:Q213417) (wd:Q679120 wd:Q213417) (wd:Q711840 wd:Q213417) (wd:Q731168 wd:Q650816) (wd:Q521270 wd:Q650816) (wd:Q956100 wd:Q213959) (wd:Q1056244 wd:Q213959) (wd:Q558490 wd:Q213959) (wd:Q1145222 wd:Q721134) (wd:Q1152442 wd:Q744530) (wd:Q1328142 wd:Q504309) (wd:Q2623942 wd:Q504309) (wd:Q202323 wd:Q650855) (wd:Q1588047 wd:Q650855) (wd:Q3051017 wd:Q246782) (wd:Q988487 wd:Q848117) (wd:Q1091432 wd:Q848117) (wd:Q948508 wd:Q461595) (wd:Q3437143 wd:Q848103) (wd:Q955278 wd:Q604879) (wd:Q739917 wd:Q604879) (wd:Q1147513 wd:Q650840) (wd:Q684849 wd:Q692417) (wd:Q684020 wd:Q653772) (wd:Q1054942 wd:Q653772) (wd:Q1053189 wd:Q826751) (wd:Q1131278 wd:Q388858) (wd:Q971912 wd:Q308966) (wd:Q1148022 wd:Q466586) (wd:Q3111424 wd:Q743309) (wd:Q1060917 wd:Q825838) (wd:Q520665 wd:Q334634) (wd:Q440256 wd:Q334634) (wd:Q327030 wd:Q335169) (wd:Q1206676 wd:Q642553) } ?team rdfs:label ?teamLabel . FILTER(LANG(?teamLabel)=\"en\") OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T14:29:20.113Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T14:29:20.113Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "team",
+   "label": "Team",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "baseball legend",
+  "many": "baseball legends",
+  "wildcard": "person",
+  "hookAsk": "Which baseball legend {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "team": {
+    "role": "link",
+    "pick": "Which MLB team did {label} play his whole career for?",
+    "statement": "{label} spent his entire MLB career with the {value}.",
+    "match": "Match each baseball legend to the one MLB team he played for.",
+    "odd": "Three of these legends spent their whole MLB career with the {value}. Which one didn't?",
+    "all": "Tap all {n} legends who spent their whole MLB career with the {value}.",
+    "reverse": "Which of these legends spent his whole MLB career with the {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Roberto Clemente",
+   "qid": "Q684020",
+   "fame": 0.686,
+   "team": "Pittsburgh Pirates",
+   "description": "Puerto Rican baseball player (1934–1972)",
+   "hook": "got his 3,000th hit in his final regular season and died in a plane crash delivering relief supplies",
+   "known": 0.6,
+   "kind": "outfielder"
+  },
+  {
+   "label": "Derek Jeter",
+   "qid": "Q353511",
+   "fame": 0.64,
+   "team": "New York Yankees",
+   "description": "American former professional baseball player, author, bussinessman and baseball broadcasters",
+   "hook": "was a longtime shortstop and captain known for the famous backhanded jump throw and his clutch October play",
+   "known": 0.95,
+   "kind": "shortstop"
+  },
+  {
+   "label": "Joe DiMaggio",
+   "qid": "Q297142",
+   "fame": 0.622,
+   "team": "New York Yankees",
+   "description": "American baseball player (1914–1999)",
+   "hook": "set the record 56-game hitting streak and was known as the Yankee Clipper",
+   "known": 0.8,
+   "kind": "outfielder"
+  },
+  {
+   "label": "Lou Gehrig",
+   "qid": "Q357444",
+   "fame": 0.618,
+   "team": "New York Yankees",
+   "description": "American baseball player (1903–1941)",
+   "hook": "was nicknamed the Iron Horse for playing 2,130 straight games before a disease that now bears his name",
+   "known": 0.8,
+   "kind": "first baseman"
+  },
+  {
+   "label": "Mickey Mantle",
+   "qid": "Q345004",
+   "fame": 0.61,
+   "team": "New York Yankees",
+   "description": "American baseball player (1931–1995)",
+   "hook": "was a switch-hitting center fielder famous for tape-measure home runs and a Triple Crown season",
+   "known": 0.8,
+   "kind": "outfielder"
+  },
+  {
+   "label": "Don Mattingly",
+   "qid": "Q679120",
+   "fame": 0.607,
+   "team": "New York Yankees",
+   "description": "American baseball player and coach (born 1961)",
+   "hook": "was a beloved first baseman nicknamed Donnie Baseball who won a batting title and MVP but never a World Series",
+   "known": 0.6,
+   "kind": "first baseman"
+  },
+  {
+   "label": "Carl Yastrzemski",
+   "qid": "Q956100",
+   "fame": 0.571,
+   "team": "Boston Red Sox",
+   "description": "American baseball player",
+   "hook": "won a Triple Crown in the Impossible Dream season and later took over left field's famous wall",
+   "known": 0.4,
+   "kind": "outfielder"
+  },
+  {
+   "label": "Sandy Koufax",
+   "qid": "Q440256",
+   "fame": 0.568,
+   "team": "Los Angeles Dodgers",
+   "description": "American baseball player (born 1935)",
+   "hook": "was a dominant lefty ace who threw a perfect game, then retired young because of arthritis",
+   "known": 0.7,
+   "kind": "pitcher"
+  },
+  {
+   "label": "Cal Ripken Jr.",
+   "qid": "Q731168",
+   "fame": 0.567,
+   "team": "Baltimore Orioles",
+   "description": "American retired baseball player (born 1960)",
+   "hook": "broke the record for consecutive games played, earning the nickname the Iron Man",
+   "known": 0.7,
+   "kind": "shortstop"
+  },
+  {
+   "label": "Tony Gwynn",
+   "qid": "Q1145222",
+   "fame": 0.561,
+   "team": "San Diego Padres",
+   "description": "American Hall of Fame baseball right fielder; 1960-2014",
+   "hook": "was a lefty hitter nicknamed Mr. Padre who won eight batting titles and hit over .300 in nearly every season",
+   "known": 0.5,
+   "kind": "outfielder"
+  },
+  {
+   "label": "Mariano Rivera",
+   "qid": "Q382303",
+   "fame": 0.554,
+   "team": "New York Yankees",
+   "description": "Panamanian Hall of Fame baseball player, relief pitcher",
+   "hook": "was the closer with the most saves ever, famous for his cut fastball, and the first unanimous Hall of Famer",
+   "known": 0.8,
+   "kind": "pitcher"
+  },
+  {
+   "label": "Clayton Kershaw",
+   "qid": "Q520665",
+   "fame": 0.537,
+   "team": "Los Angeles Dodgers",
+   "description": "American professional baseball player (born 1988)",
+   "hook": "is a left-handed ace with a devastating curveball who has won three Cy Young Awards and an MVP",
+   "known": 0.7,
+   "kind": "pitcher"
+  },
+  {
+   "label": "Chipper Jones",
+   "qid": "Q948508",
+   "fame": 0.501,
+   "team": "Atlanta Braves",
+   "description": "American Hall of Fame baseball player (born 1972)",
+   "hook": "was a switch-hitting third baseman who spent his entire career with one franchise and won an MVP",
+   "known": 0.6,
+   "kind": "third baseman"
+  },
+  {
+   "label": "Yadier Molina",
+   "qid": "Q2623942",
+   "fame": 0.494,
+   "team": "St. Louis Cardinals",
+   "description": "Puerto Rican baseball catcher",
+   "hook": "was a defensive-minded catcher famous for controlling the game behind the plate and winning two championships",
+   "known": 0.6,
+   "kind": "catcher"
+  },
+  {
+   "label": "Kirby Puckett",
+   "qid": "Q955278",
+   "fame": 0.486,
+   "team": "Minnesota Twins",
+   "description": "American baseball player (1960–2006)",
+   "hook": "was a stocky center fielder who hit a famous Game 6 walk-off homer to force a Game 7",
+   "known": 0.4,
+   "kind": "outfielder"
+  },
+  {
+   "label": "Stan Musial",
+   "qid": "Q1328142",
+   "fame": 0.484,
+   "team": "St. Louis Cardinals",
+   "description": "American baseball player (1920-2013)",
+   "hook": "was a smooth-swinging outfielder nicknamed The Man with 3,630 hits, split evenly between home and road",
+   "known": 0.4,
+   "kind": "outfielder"
+  },
+  {
+   "label": "Ernie Banks",
+   "qid": "Q3051017",
+   "fame": 0.475,
+   "team": "Chicago Cubs",
+   "description": "American baseball player and coach",
+   "hook": "was a slugging shortstop nicknamed Mr. Cub who famously said, Let's play two",
+   "known": 0.3,
+   "kind": "infielder"
+  },
+  {
+   "label": "Dustin Pedroia",
+   "qid": "Q558490",
+   "fame": 0.47,
+   "team": "Boston Red Sox",
+   "description": "American baseball player",
+   "hook": "was a scrappy second baseman nicknamed the Laser Show who won an MVP and two championships",
+   "known": 0.5,
+   "kind": "second baseman"
+  },
+  {
+   "label": "George Brett",
+   "qid": "Q1152442",
+   "fame": 0.462,
+   "team": "Kansas City Royals",
+   "description": "Major League Baseball third baseman",
+   "hook": "was a Hall of Fame third baseman with a batting title in three decades and a famous pine tar controversy",
+   "known": 0.7,
+   "kind": "third baseman"
+  },
+  {
+   "label": "Buster Posey",
+   "qid": "Q971912",
+   "fame": 0.456,
+   "team": "San Francisco Giants",
+   "description": "American baseball executive and former player (born 1987)",
+   "hook": "was a catcher who won three championships in five years and retired at a young age while still productive",
+   "known": 0.6,
+   "kind": "catcher"
+  },
+  {
+   "label": "Mike Schmidt",
+   "qid": "Q1147513",
+   "fame": 0.456,
+   "team": "Philadelphia Phillies",
+   "description": "American professional baseball player, third baseman",
+   "hook": "was a power-hitting third baseman who won multiple MVPs, hit 548 home runs and was a great fielder",
+   "known": 0.6,
+   "kind": "third baseman"
+  },
+  {
+   "label": "Robin Yount",
+   "qid": "Q3437143",
+   "fame": 0.45,
+   "team": "Milwaukee Brewers",
+   "description": "American baseball player/coach",
+   "hook": "was a shortstop who joined the big leagues as a teenager and later won MVPs at two positions",
+   "known": 0.4,
+   "kind": "shortstop"
+  }
+ ]
+}

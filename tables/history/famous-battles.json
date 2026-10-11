@@ -1,0 +1,479 @@
+{
+ "id": "table.history.famous-battles",
+ "kind": "table",
+ "title": "Famous battles, the war they belong to and where they were fought",
+ "genre": "society",
+ "category": "history",
+ "topic": "wars",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?warLabel ?countryLabel WHERE { { SELECT ?item (SAMPLE(?w) AS ?war) (COUNT(DISTINCT ?w) AS ?nW) (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { ?item wdt:P31/wdt:P279* wd:Q178561 ; wdt:P361|wdt:P607 ?w ; wdt:P17 ?c ; wikibase:sitelinks ?sl . ?w wdt:P31/wdt:P279* wd:Q350604 . FILTER(?sl >= 40) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nW = 1 && ?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T01:46:26.738Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T01:46:26.738Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "war",
+   "label": "Part of war",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "country",
+   "label": "Where fought",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "battle",
+  "many": "battles",
+  "hookAsk": "Which battle {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "In which country was {label} fought?",
+    "statement": "{label} was fought in {value}.",
+    "match": "Match each battle to the country where it was fought.",
+    "odd": "Three of these battles were fought in {value}. Which one wasn't?",
+    "all": "Tap all {n} battles fought in {value}.",
+    "reverse": "Which of these battles was fought in {value}?"
+   },
+   "war": {
+    "role": "link",
+    "pick": "Which war was {label} part of?",
+    "match": "Match each battle to the war it belonged to."
+   }
+  },
+  "theLabels": [
+   "Battle of Stalingrad",
+   "Battle of Midway",
+   "Battle of Thermopylae",
+   "Battle of the Little Bighorn",
+   "Battle of Gettysburg",
+   "Battle of the Alamo",
+   "Battle of the Somme",
+   "Battle of Berlin",
+   "Battle of the Teutoburg Forest",
+   "Battle of Britain",
+   "Siege of Yorktown",
+   "Battle of Borodino",
+   "Battle of Marathon",
+   "Battle of Dien Bien Phu",
+   "Battle of Sedan",
+   "Battle of Monte Cassino",
+   "Battle of Manzikert",
+   "Battle of Salamis",
+   "Battle of Tours",
+   "Battle of Crécy",
+   "Battle of Crete",
+   "Battle of Poitiers",
+   "Battle of Alesia",
+   "Dieppe Raid",
+   "Battle of Fort Sumter",
+   "Battle of the Nile",
+   "Battle of Carrhae",
+   "Battle of Tannenberg",
+   "Battle of Pharsalus",
+   "Battle of Issus",
+   "Battle of Kiev"
+  ]
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Battle of Stalingrad",
+   "qid": "Q38789",
+   "fame": 0.673,
+   "war": "Eastern Front",
+   "country": "Russia",
+   "description": "1942 major battle of World War II",
+   "hook": "ended with a whole German army trapped and captured in a ruined city on the Volga",
+   "known": 0.95,
+   "kind": "wwii"
+  },
+  {
+   "label": "Battle of Midway",
+   "qid": "Q173034",
+   "fame": 0.665,
+   "war": "Pacific War",
+   "country": "United States",
+   "description": "1942 World War II naval battle",
+   "hook": "turned the tide when American dive bombers sank four Japanese aircraft carriers",
+   "known": 0.95,
+   "kind": "wwii"
+  },
+  {
+   "label": "Battle of Thermopylae",
+   "qid": "Q131969",
+   "fame": 0.635,
+   "war": "Second Persian invasion of Greece",
+   "country": "Greece",
+   "description": "battle of 480 BCE during Persian invasion of Greece",
+   "hook": "saw 300 Spartans and their allies hold a narrow coastal pass against a vast invading army",
+   "known": 0.95,
+   "kind": "ancient"
+  },
+  {
+   "label": "Battle of the Little Bighorn",
+   "qid": "Q205422",
+   "fame": 0.625,
+   "war": "Great Sioux War of 1876",
+   "country": "United States",
+   "description": "June 1876 battle of the Great Sioux War",
+   "hook": "ended with Custer's cavalry wiped out by Lakota and Cheyenne warriors",
+   "known": 0.95,
+   "kind": "american"
+  },
+  {
+   "label": "Battle of Gettysburg",
+   "qid": "Q33132",
+   "fame": 0.62,
+   "war": "American Civil War",
+   "country": "United States",
+   "description": "1863 battle of the American Civil War",
+   "hook": "was the bloodiest of its conflict, ended with Pickett's Charge failing, and inspired a famous Lincoln speech",
+   "known": 0.95,
+   "kind": "american"
+  },
+  {
+   "label": "Battle of the Alamo",
+   "qid": "Q235344",
+   "fame": 0.612,
+   "war": "Texas Revolution",
+   "country": "United States",
+   "description": "1836 major battle of the Texas Revolution",
+   "hook": "saw defenders including Davy Crockett and Jim Bowie fall at an old mission",
+   "known": 0.95,
+   "kind": "american"
+  },
+  {
+   "label": "Battle of the Somme",
+   "qid": "Q132568",
+   "fame": 0.611,
+   "war": "Western Front",
+   "country": "France",
+   "description": "battle of the Western Front, World War I",
+   "hook": "cost the British army its bloodiest first day ever and saw tanks used for the first time",
+   "known": 0.95,
+   "kind": "wwi"
+  },
+  {
+   "label": "Battle of Berlin",
+   "qid": "Q154182",
+   "fame": 0.59,
+   "war": "Eastern Front",
+   "country": "Germany",
+   "description": "1945 last major offensive of the European theatre of World War Il",
+   "hook": "ended when Soviet troops reached Hitler's bunker and the fighting in Europe neared its end",
+   "known": 0.95,
+   "kind": "wwii"
+  },
+  {
+   "label": "Battle of the Teutoburg Forest",
+   "qid": "Q87779",
+   "fame": 0.585,
+   "war": "Early Imperial campaigns in Germania",
+   "country": "Germany",
+   "description": "battle between a coalition of Germanic peoples and an Imperial Roman army, 9 BCE",
+   "hook": "saw three Roman legions ambushed and destroyed in dense woodland",
+   "known": 0.6,
+   "kind": "ancient"
+  },
+  {
+   "label": "Battle of Britain",
+   "qid": "Q154720",
+   "fame": 0.578,
+   "war": "World War II",
+   "country": "United Kingdom",
+   "description": "air battle waged between German and British air forces in 1940",
+   "hook": "saw the RAF's Spitfires and Hurricanes fend off the Luftwaffe in the skies",
+   "known": 0.95,
+   "kind": "wwii"
+  },
+  {
+   "label": "Siege of Yorktown",
+   "qid": "Q459447",
+   "fame": 0.564,
+   "war": "American Revolutionary War",
+   "country": "United States",
+   "description": "siege, part of American Revolutionary War",
+   "hook": "ended with Cornwallis surrendering to Washington and effectively sealed independence",
+   "known": 0.8,
+   "kind": "american"
+  },
+  {
+   "label": "Battle of Borodino",
+   "qid": "Q184320",
+   "fame": 0.535,
+   "war": "French invasion of Russia",
+   "country": "Russia",
+   "description": "1812 battle during the French invasion of Russia",
+   "hook": "was the bloodiest single day of Napoleon's march toward Moscow",
+   "known": 0.8,
+   "kind": "napoleonic"
+  },
+  {
+   "label": "Battle of Marathon",
+   "qid": "Q31900",
+   "fame": 0.529,
+   "war": "First Persian invasion of Greece",
+   "country": "Greece",
+   "description": "490 BCE battle in the Greco-Persian wars",
+   "hook": "inspired the legend of a runner dashing to Athens with news of victory, and a modern long-distance race",
+   "known": 0.8,
+   "kind": "ancient"
+  },
+  {
+   "label": "Battle of Dien Bien Phu",
+   "qid": "Q604897",
+   "fame": 0.528,
+   "war": "First Indochina War",
+   "country": "Vietnam",
+   "description": "The decisive battle of the First Indochina War",
+   "hook": "ended colonial rule in Southeast Asia after a siege in a remote mountain valley",
+   "known": 0.6,
+   "kind": "colonial"
+  },
+  {
+   "label": "Battle of Sedan",
+   "qid": "Q156681",
+   "fame": 0.526,
+   "war": "Franco-Prussian War",
+   "country": "France",
+   "description": "1870 battle during the Franco-Prussian War",
+   "hook": "ended with the French emperor Napoleon III taken prisoner",
+   "known": 0.6,
+   "kind": "napoleonic"
+  },
+  {
+   "label": "Battle of Monte Cassino",
+   "qid": "Q335288",
+   "fame": 0.521,
+   "war": "Italian Campaign",
+   "country": "Italy",
+   "description": "1944 assaults by the Allies against the Winter Line in Italy held by Axis forces during the Italian Campaign of World War II",
+   "hook": "saw an ancient hilltop abbey founded by St. Benedict bombed by the Allies",
+   "known": 0.6,
+   "kind": "wwii"
+  },
+  {
+   "label": "First Battle of the Marne",
+   "qid": "Q190712",
+   "fame": 0.516,
+   "war": "Western Front",
+   "country": "France",
+   "description": "1914 First World War battle",
+   "hook": "saved Paris from capture when taxis ferried in reinforcements",
+   "known": 0.8,
+   "kind": "wwi"
+  },
+  {
+   "label": "Second Battle of El Alamein",
+   "qid": "Q153376",
+   "fame": 0.511,
+   "war": "Western Desert campaign",
+   "country": "Egypt",
+   "description": "1942 major turning point in the Western Desert Campaign of the Second World War",
+   "hook": "was Montgomery's victory over Rommel that turned the tide in North Africa",
+   "known": 0.8,
+   "kind": "wwii"
+  },
+  {
+   "label": "Battle of Manzikert",
+   "qid": "Q200032",
+   "fame": 0.51,
+   "war": "Byzantine–Seljuq Wars",
+   "country": "Turkey",
+   "description": "1071 battle between the Byzantine Empire and Seljuk Turks",
+   "hook": "left an Eastern Roman emperor captured and opened Anatolia to nomadic newcomers",
+   "known": 0.2,
+   "kind": "ancient"
+  },
+  {
+   "label": "Battle of Salamis",
+   "qid": "Q178850",
+   "fame": 0.503,
+   "war": "Second Persian invasion of Greece",
+   "country": "Greece",
+   "description": "480 BCE naval battle fought between an alliance of Greek city-states and the Persian Empire",
+   "hook": "saw Themistocles lure a huge fleet into narrow straits and sink it",
+   "known": 0.8,
+   "kind": "ancient"
+  },
+  {
+   "label": "Battle of Tours",
+   "qid": "Q173077",
+   "fame": 0.502,
+   "war": "Umayyad invasion of Gaul",
+   "country": "France",
+   "description": "battle fought in 732 by Merovingian Franks against the Umayyad Caliphate",
+   "hook": "stopped an Islamic army's push north under Charles Martel, the Hammer",
+   "known": 0.8,
+   "kind": "ancient"
+  },
+  {
+   "label": "Battle of Crécy",
+   "qid": "Q27759",
+   "fame": 0.498,
+   "war": "Hundred Years' War",
+   "country": "France",
+   "description": "1346 battle of the Hundred Years' War",
+   "hook": "showed longbowmen cutting down charging armoured knights",
+   "known": 0.4,
+   "kind": "medieval"
+  },
+  {
+   "label": "Battle of Crete",
+   "qid": "Q153316",
+   "fame": 0.494,
+   "war": "World War II in the Balkans",
+   "country": "Greece",
+   "description": "1941 battle during WWII on the Greek island of Crete",
+   "hook": "saw German paratroopers drop onto an island in the first large airborne invasion",
+   "known": 0.6,
+   "kind": "wwii"
+  },
+  {
+   "label": "Battle of Poitiers",
+   "qid": "Q201692",
+   "fame": 0.493,
+   "war": "Hundred Years' War",
+   "country": "France",
+   "description": "1356 battle of the Hundred Years' War",
+   "hook": "saw a king captured by England's Black Prince",
+   "known": 0.4,
+   "kind": "medieval"
+  },
+  {
+   "label": "Battle of Alesia",
+   "qid": "Q131386",
+   "fame": 0.492,
+   "war": "Gallic War",
+   "country": "France",
+   "description": "decisive Roman victory in which Rome secures the conquest of Gaul",
+   "hook": "trapped Vercingetorix in a fortress town inside Caesar's double siege lines",
+   "known": 0.6,
+   "kind": "ancient"
+  },
+  {
+   "label": "Dieppe Raid",
+   "qid": "Q270517",
+   "fame": 0.488,
+   "war": "North West Europe Campaign",
+   "country": "France",
+   "description": "1942 landing operation in World War II",
+   "hook": "cost many Canadian troops their lives in a failed seaside assault that taught lessons for D-Day",
+   "known": 0.4,
+   "kind": "wwii"
+  },
+  {
+   "label": "Iraqi invasion of Kuwait",
+   "qid": "Q856650",
+   "fame": 0.485,
+   "war": "Gulf War",
+   "country": "Kuwait",
+   "description": "1990 major conflict between the Ba'athist Iraq and the state of Kuwait",
+   "hook": "was Saddam Hussein's lightning takeover of a small oil-rich neighbour, leading to Desert Storm",
+   "known": 0.8,
+   "kind": "gulf war"
+  },
+  {
+   "label": "Battle of Fort Sumter",
+   "qid": "Q543165",
+   "fame": 0.479,
+   "war": "American Civil War",
+   "country": "United States",
+   "description": "bombardment of Fort Sumter, immediate cause and first battle of the American Civil War",
+   "hook": "began with cannon fire on a harbour fortress in Charleston",
+   "known": 0.4,
+   "kind": "american"
+  },
+  {
+   "label": "Battle of the Nile",
+   "qid": "Q243979",
+   "fame": 0.477,
+   "war": "French invasion of Egypt and Syria",
+   "country": "Egypt",
+   "description": "1798 naval battle during the French invasion of Egypt",
+   "hook": "saw Admiral Nelson wipe out Napoleon's fleet at anchor in a bay",
+   "known": 0.8,
+   "kind": "napoleonic"
+  },
+  {
+   "label": "Battle of Carrhae",
+   "qid": "Q205887",
+   "fame": 0.476,
+   "war": "Crassus' Parthian campaign",
+   "country": "Turkey",
+   "description": "ancient battle between Roman Republic and Parthian Empire in 53 BCE near modern Harran, Turkey",
+   "hook": "saw a wealthy Roman general killed by horse archers in the desert",
+   "known": 0.2,
+   "kind": "ancient"
+  },
+  {
+   "label": "Battle of Tannenberg",
+   "qid": "Q153858",
+   "fame": 0.474,
+   "war": "World War I",
+   "country": "Poland",
+   "description": "1914 battle between Russia and Germany",
+   "hook": "saw a German army encircle and crush an invading army, making Hindenburg famous",
+   "known": 0.6,
+   "kind": "wwi"
+  },
+  {
+   "label": "Battle of Pharsalus",
+   "qid": "Q203681",
+   "fame": 0.458,
+   "war": "Caesar's Civil War",
+   "country": "Greece",
+   "description": "48 BCE decisive battle of Caesar's Civil War",
+   "hook": "saw Pompey defeated and the Republic's last hopes end",
+   "known": 0.2,
+   "kind": "ancient"
+  },
+  {
+   "label": "Battle of Issus",
+   "qid": "Q201526",
+   "fame": 0.451,
+   "war": "Wars of Alexander the Great",
+   "country": "Turkey",
+   "description": "second great battle of Alexander's conquest of Asia",
+   "hook": "saw a young Macedonian king rout Darius III and send him fleeing",
+   "known": 0.4,
+   "kind": "ancient"
+  },
+  {
+   "label": "Battle of Kiev",
+   "qid": "Q162284",
+   "fame": 0.45,
+   "war": "Operation Barbarossa",
+   "country": "Ukraine",
+   "description": "1941 battle resulting in a large encirclement of Soviet troops in the vicinity of Kiev during World War II",
+   "hook": "was the largest encirclement in history, capturing hundreds of thousands of Soviet soldiers",
+   "known": 0.4,
+   "kind": "wwii"
+  }
+ ]
+}

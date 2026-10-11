@@ -1,0 +1,613 @@
+{
+ "id": "table.geography.regional-capitals",
+ "kind": "table",
+ "title": "Regional capitals: state or province and country",
+ "genre": "society",
+ "category": "geography",
+ "topic": "capitals",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?regionLabel ?countryLabel WHERE { { SELECT ?item (SAMPLE(?r) AS ?region) (SAMPLE(?c) AS ?country) WHERE { VALUES ?cls { wd:Q11828004 wd:Q5852411 wd:Q131541 wd:Q485258 wd:Q43233 wd:Q1221156 wd:Q1615742 wd:Q10864048 } ?r wdt:P31 ?cls ; wdt:P36 ?item ; wdt:P17 ?c . FILTER NOT EXISTS { ?r wdt:P576 ?e } FILTER(?c != wd:Q30) } GROUP BY ?item HAVING(COUNT(DISTINCT ?r) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T13:52:01.963Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T13:52:01.963Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "region",
+   "label": "State or province",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "regional capital",
+  "many": "regional capitals",
+  "wildcard": "place",
+  "hookAsk": "Which regional capital {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "region": {
+    "role": "code",
+    "pick": "Of which state or province is {label} the capital?",
+    "statement": "{label} is the capital of {value}.",
+    "match": "Match each city to the state or province it is the capital of.",
+    "reverse": "Which of these is the capital of {value}?"
+   },
+   "country": {
+    "role": "link",
+    "pick": "In which country is {label}, the capital of {region}?",
+    "statement": "{label}, the capital of {region}, is in {value}.",
+    "match": "Match each regional capital to its country.",
+    "odd": "Which of these is not a regional capital in {value}?",
+    "all": "Which of these are regional capitals in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Toronto",
+   "qid": "Q172",
+   "fame": 0.698,
+   "region": "Ontario",
+   "country": "Canada",
+   "description": "capital and largest city of the province of Ontario, Canada",
+   "hook": "is home to the CN Tower and the country's biggest hockey shrine",
+   "known": 0.8,
+   "kind": "canadian"
+  },
+  {
+   "label": "Melbourne",
+   "qid": "Q3141",
+   "fame": 0.671,
+   "region": "Victoria",
+   "country": "Australia",
+   "description": "capital city of Victoria, Australia",
+   "hook": "is known for its laneway coffee culture and hosts a major tennis Grand Slam every January",
+   "known": 0.8,
+   "kind": "australian"
+  },
+  {
+   "label": "Sydney",
+   "qid": "Q3130",
+   "fame": 0.657,
+   "region": "New South Wales",
+   "country": "Australia",
+   "description": "capital city of New South Wales, Australia",
+   "hook": "is famous for a harbour with a sail-shaped opera house and a steel arch bridge",
+   "known": 0.95,
+   "kind": "australian"
+  },
+  {
+   "label": "Guangzhou",
+   "qid": "Q16572",
+   "fame": 0.65,
+   "region": "Guangdong",
+   "country": "China",
+   "description": "capital city of Guangdong Province, China",
+   "hook": "is a huge southern port city once known to Westerners as Canton, famed for dim sum",
+   "known": 0.4,
+   "kind": "chinese"
+  },
+  {
+   "label": "Munich",
+   "qid": "Q1726",
+   "fame": 0.64,
+   "region": "Bavaria",
+   "country": "Germany",
+   "description": "capital and most populous city of Bavaria, Germany",
+   "hook": "hosts the world's biggest beer festival every autumn and is home to a famous football giant",
+   "known": 0.8,
+   "kind": "german"
+  },
+  {
+   "label": "Perth",
+   "qid": "Q3183",
+   "fame": 0.613,
+   "region": "Western Australia",
+   "country": "Australia",
+   "description": "capital city of Western Australia, Australia",
+   "hook": "is often called the most isolated major city on Earth, facing the Indian Ocean",
+   "known": 0.6,
+   "kind": "australian"
+  },
+  {
+   "label": "Halifax",
+   "qid": "Q2141",
+   "fame": 0.607,
+   "region": "Nova Scotia",
+   "country": "Canada",
+   "description": "municipality in the province of Nova Scotia, Canada",
+   "hook": "is an Atlantic port whose harbour received bodies and survivors from a famous ocean liner sinking",
+   "known": 0.4,
+   "kind": "canadian"
+  },
+  {
+   "label": "Brisbane",
+   "qid": "Q34932",
+   "fame": 0.606,
+   "region": "Queensland",
+   "country": "Australia",
+   "description": "capital city of Queensland, Australia",
+   "hook": "is a sunny river city just north of the Gold Coast, set to host a future Summer Olympics",
+   "known": 0.6,
+   "kind": "australian"
+  },
+  {
+   "label": "Magdeburg",
+   "qid": "Q1733",
+   "fame": 0.598,
+   "region": "Saxony-Anhalt",
+   "country": "Germany",
+   "description": "capital city of the German state of Saxony-Anhalt",
+   "hook": "is a river city on the Elbe that gave its name to a famous physics experiment with hemispheres",
+   "known": 0.4,
+   "kind": "german"
+  },
+  {
+   "label": "Edmonton",
+   "qid": "Q2096",
+   "fame": 0.596,
+   "region": "Alberta",
+   "country": "Canada",
+   "description": "capital city of the province of Alberta, Canada",
+   "hook": "is home to one of the world's largest shopping malls and a hockey team once led by Wayne Gretzky",
+   "known": 0.6,
+   "kind": "canadian"
+  },
+  {
+   "label": "Winnipeg",
+   "qid": "Q2135",
+   "fame": 0.592,
+   "region": "Manitoba",
+   "country": "Canada",
+   "description": "capital and largest city of the province of Manitoba, Canada",
+   "hook": "sits where two rivers meet at the very middle of the continent and shares a name with a famous cartoon bear",
+   "known": 0.4,
+   "kind": "canadian"
+  },
+  {
+   "label": "Quebec City",
+   "qid": "Q2145",
+   "fame": 0.591,
+   "region": "Quebec",
+   "country": "Canada",
+   "description": "capital city of the province of Quebec, Canada",
+   "hook": "is a walled, French-speaking city topped by a grand hotel that looks like a castle",
+   "known": 0.8,
+   "kind": "canadian"
+  },
+  {
+   "label": "Chengdu",
+   "qid": "Q30002",
+   "fame": 0.59,
+   "region": "Sichuan",
+   "country": "China",
+   "description": "capital of Sichuan Province, China",
+   "hook": "is the famously spicy-food capital and the home city of giant pandas",
+   "known": 0.4,
+   "kind": "chinese"
+  },
+  {
+   "label": "Dresden",
+   "qid": "Q1731",
+   "fame": 0.587,
+   "region": "Saxony",
+   "country": "Germany",
+   "description": "capital city of the Free State of Saxony in Germany",
+   "hook": "was nicknamed Florence on the Elbe before its baroque center was flattened in a wartime bombing raid",
+   "known": 0.6,
+   "kind": "german"
+  },
+  {
+   "label": "Adelaide",
+   "qid": "Q5112",
+   "fame": 0.586,
+   "region": "South Australia",
+   "country": "Australia",
+   "description": "capital city of South Australia",
+   "hook": "is a planned city known for its wine regions, festivals and lack of convict history",
+   "known": 0.4,
+   "kind": "australian"
+  },
+  {
+   "label": "Harbin",
+   "qid": "Q42956",
+   "fame": 0.585,
+   "region": "Heilongjiang",
+   "country": "China",
+   "description": "capital of Heilongjiang province, China",
+   "hook": "is famous for its huge winter festival of ice and snow sculptures",
+   "known": 0.2,
+   "kind": "chinese"
+  },
+  {
+   "label": "Hangzhou",
+   "qid": "Q4970",
+   "fame": 0.579,
+   "region": "Zhejiang",
+   "country": "China",
+   "description": "capital of Zhejiang Province, China",
+   "hook": "is a lakeside city beside the famous West Lake and home to a giant e-commerce company",
+   "known": 0.4,
+   "kind": "chinese"
+  },
+  {
+   "label": "Nanjing",
+   "qid": "Q16666",
+   "fame": 0.578,
+   "region": "Jiangsu",
+   "country": "China",
+   "description": "capital city of Jiangsu Province, China, former capital of the Republic of China and China's Ming dynasty",
+   "hook": "is a former imperial capital with an ancient city wall and a memorial to a horrific wartime massacre",
+   "known": 0.4,
+   "kind": "chinese"
+  },
+  {
+   "label": "Xi'an",
+   "qid": "Q5826",
+   "fame": 0.576,
+   "region": "Shaanxi",
+   "country": "China",
+   "description": "capital of Shaanxi Province, China",
+   "hook": "is the ancient starting point of the Silk Road and guardian of the Terracotta Army",
+   "known": 0.6,
+   "kind": "chinese"
+  },
+  {
+   "label": "Victoria",
+   "qid": "Q2132",
+   "fame": 0.57,
+   "region": "British Columbia",
+   "country": "Canada",
+   "description": "capital city of the province of British Columbia, Canada",
+   "hook": "is a mild-weather island city known for its Butchart Gardens and afternoon tea at a grand harbour hotel",
+   "known": 0.4,
+   "kind": "canadian"
+  },
+  {
+   "label": "Stuttgart",
+   "qid": "Q1022",
+   "fame": 0.569,
+   "region": "Baden-Württemberg",
+   "country": "Germany",
+   "description": "city on the Neckar river and capital of the federal state Baden-Württemberg, Germany",
+   "hook": "is the birthplace of two famous luxury car brands and their museums",
+   "known": 0.8,
+   "kind": "german"
+  },
+  {
+   "label": "St. John's",
+   "qid": "Q2082",
+   "fame": 0.564,
+   "region": "Newfoundland and Labrador",
+   "country": "Canada",
+   "description": "capital and largest city of the province of Newfoundland and Labrador, Canada",
+   "hook": "is one of North America's oldest cities, with colorful row houses and a hill tied to early wireless",
+   "known": 0.4,
+   "kind": "canadian"
+  },
+  {
+   "label": "Düsseldorf",
+   "qid": "Q1718",
+   "fame": 0.561,
+   "region": "North Rhine-Westphalia",
+   "country": "Germany",
+   "description": "capital city of the German federated state of North Rhine-Westphalia",
+   "hook": "is a fashion and advertising hub with a long riverside promenade and a famous old-town beer, Altbier",
+   "known": 0.6,
+   "kind": "german"
+  },
+  {
+   "label": "Hanover",
+   "qid": "Q1715",
+   "fame": 0.545,
+   "region": "Lower Saxony",
+   "country": "Germany",
+   "description": "capital city of the German federated state of Lower Saxony",
+   "hook": "hosts the world's largest computer trade fair, CeBIT, and an enormous trade exhibition ground",
+   "known": 0.4,
+   "kind": "german"
+  },
+  {
+   "label": "Wuhan",
+   "qid": "Q11746",
+   "fame": 0.538,
+   "region": "Hubei",
+   "country": "China",
+   "description": "capital city of Hubei Province, China",
+   "hook": "sits where the Yangtze meets the Han River and is where a global pandemic was first identified",
+   "known": 0.4,
+   "kind": "chinese"
+  },
+  {
+   "label": "Regina",
+   "qid": "Q2123",
+   "fame": 0.534,
+   "region": "Saskatchewan",
+   "country": "Canada",
+   "description": "capital and second-largest city of the province of Saskatchewan, Canada",
+   "hook": "is home to the training academy of the red-coated national police force",
+   "known": 0.2,
+   "kind": "canadian"
+  },
+  {
+   "label": "Hobart",
+   "qid": "Q40191",
+   "fame": 0.526,
+   "region": "Tasmania",
+   "country": "Australia",
+   "description": "capital city of Tasmania, Australia",
+   "hook": "is a harbour city below Mount Wellington, known for its Salamanca Market and a famous yacht race",
+   "known": 0.2,
+   "kind": "australian"
+  },
+  {
+   "label": "Shenyang",
+   "qid": "Q11720",
+   "fame": 0.524,
+   "region": "Liaoning",
+   "country": "China",
+   "description": "Prefecture-level and sub-provincial city in Liaoning, China",
+   "hook": "is a northeastern industrial hub that holds an imperial palace of the last dynasty's early rulers",
+   "known": 0.2,
+   "kind": "chinese"
+  },
+  {
+   "label": "Potsdam",
+   "qid": "Q1711",
+   "fame": 0.508,
+   "region": "Brandenburg",
+   "country": "Germany",
+   "description": "capital city of the German state of Brandenburg",
+   "hook": "is home to Sanssouci, the summer palace of Frederick the Great, and a famed Allied wartime conference",
+   "known": 0.6,
+   "kind": "german"
+  },
+  {
+   "label": "Saarbrücken",
+   "qid": "Q1724",
+   "fame": 0.507,
+   "region": "Saarland",
+   "country": "Germany",
+   "description": "capital of the German state of Saarland",
+   "hook": "is a small city on the French border in the country's smallest area-state",
+   "known": 0.2,
+   "kind": "german"
+  },
+  {
+   "label": "Manaus",
+   "qid": "Q40236",
+   "fame": 0.506,
+   "region": "Amazonas",
+   "country": "Brazil",
+   "description": "municipality of Amazonas state, Brazil",
+   "hook": "is a jungle metropolis on the Rio Negro with a grand opera house built from rubber wealth",
+   "known": 0.2,
+   "kind": "brazilian"
+  },
+  {
+   "label": "Belo Horizonte",
+   "qid": "Q42800",
+   "fame": 0.494,
+   "region": "Minas Gerais",
+   "country": "Brazil",
+   "description": "municipality of Minas Gerais state, Brazil",
+   "hook": "is a large inland city whose name means 'beautiful horizon' and hosted World Cup matches",
+   "known": 0.4,
+   "kind": "brazilian"
+  },
+  {
+   "label": "Mainz",
+   "qid": "Q1720",
+   "fame": 0.492,
+   "region": "Rhineland-Palatinate",
+   "country": "Germany",
+   "description": "capital of the federal state Rhineland-Palatinate, Germany",
+   "hook": "is the city where Johannes Gutenberg was born and lived, the inventor of the movable-type printing press",
+   "known": 0.4,
+   "kind": "german"
+  },
+  {
+   "label": "Kunming",
+   "qid": "Q182852",
+   "fame": 0.491,
+   "region": "Yunnan",
+   "country": "China",
+   "description": "capital of Yunnan province, China",
+   "hook": "is nicknamed the City of Eternal Spring for its mild climate",
+   "known": 0.2,
+   "kind": "chinese"
+  },
+  {
+   "label": "Kiel",
+   "qid": "Q1707",
+   "fame": 0.487,
+   "region": "Schleswig-Holstein",
+   "country": "Germany",
+   "description": "German city, capital of Schleswig-Holstein",
+   "hook": "is a Baltic port city hosting a major annual sailing regatta called Week",
+   "known": 0.2,
+   "kind": "german"
+  },
+  {
+   "label": "Salvador",
+   "qid": "Q36947",
+   "fame": 0.485,
+   "region": "Bahia",
+   "country": "Brazil",
+   "description": "municipality of Bahia state, Brazil",
+   "hook": "is a coastal city of colorful colonial buildings and the heart of Afro-Brazilian culture",
+   "known": 0.4,
+   "kind": "brazilian"
+  },
+  {
+   "label": "Florianópolis",
+   "qid": "Q132997",
+   "fame": 0.477,
+   "region": "Santa Catarina",
+   "country": "Brazil",
+   "description": "municipality of Santa Catarina state, Brazil",
+   "hook": "is an island city of beaches and surfing, often nicknamed Magic Island",
+   "known": 0.2,
+   "kind": "brazilian"
+  },
+  {
+   "label": "Porto Alegre",
+   "qid": "Q40269",
+   "fame": 0.477,
+   "region": "Rio Grande do Sul",
+   "country": "Brazil",
+   "description": "municipality of Rio Grande do Sul state, Brazil",
+   "hook": "is a southern city on the Guaíba lake known for its gaucho barbecue culture",
+   "known": 0.4,
+   "kind": "brazilian"
+  },
+  {
+   "label": "Zhengzhou",
+   "qid": "Q30340",
+   "fame": 0.474,
+   "region": "Henan",
+   "country": "China",
+   "description": "capital of Henan province, China",
+   "hook": "is a central railway crossroads city close to the famed Shaolin Temple",
+   "known": 0.2,
+   "kind": "chinese"
+  },
+  {
+   "label": "Changsha",
+   "qid": "Q174091",
+   "fame": 0.472,
+   "region": "Hunan",
+   "country": "China",
+   "description": "capital of Hunan province, China",
+   "hook": "is known for fiery cuisine, a riverside island and being an early home of Chairman Mao's youth",
+   "known": 0.2,
+   "kind": "chinese"
+  },
+  {
+   "label": "Changchun",
+   "qid": "Q92161",
+   "fame": 0.47,
+   "region": "Jilin",
+   "country": "China",
+   "description": "capital city of Jilin Province, China",
+   "hook": "is a northeastern city known as the birthplace of its nation's auto industry",
+   "known": 0.2,
+   "kind": "chinese"
+  },
+  {
+   "label": "Curitiba",
+   "qid": "Q4361",
+   "fame": 0.469,
+   "region": "Paraná",
+   "country": "Brazil",
+   "description": "municipality of Paraná state, Brazil",
+   "hook": "is celebrated for its bus rapid transit system and green, planned urbanism",
+   "known": 0.4,
+   "kind": "brazilian"
+  },
+  {
+   "label": "Wiesbaden",
+   "qid": "Q1721",
+   "fame": 0.469,
+   "region": "Hesse",
+   "country": "Germany",
+   "description": "capital of the German state of Hesse",
+   "hook": "is a spa town famous for its hot springs and elegant casino",
+   "known": 0.2,
+   "kind": "german"
+  },
+  {
+   "label": "Charlottetown",
+   "qid": "Q2127",
+   "fame": 0.465,
+   "region": "Prince Edward Island",
+   "country": "Canada",
+   "description": "capital city of the province of Prince Edward Island, Canada",
+   "hook": "is the birthplace of Confederation, host of the conference that led to a new nation",
+   "known": 0.2,
+   "kind": "canadian"
+  },
+  {
+   "label": "Erfurt",
+   "qid": "Q1729",
+   "fame": 0.465,
+   "region": "Thuringia",
+   "country": "Germany",
+   "description": "capital city of the German federal state of Thuringia",
+   "hook": "is a medieval city with a merchant-lined bridge and where Martin Luther studied",
+   "known": 0.2,
+   "kind": "german"
+  },
+  {
+   "label": "Schwerin",
+   "qid": "Q1709",
+   "fame": 0.465,
+   "region": "Mecklenburg-Vorpommern",
+   "country": "Germany",
+   "description": "capital city of Mecklenburg-Vorpommern, Germany",
+   "hook": "is a city on a lake with a fairytale castle on an island",
+   "known": 0.2,
+   "kind": "german"
+  },
+  {
+   "label": "Recife",
+   "qid": "Q48344",
+   "fame": 0.456,
+   "region": "Pernambuco",
+   "country": "Brazil",
+   "description": "municipality of Pernambuco state, Brazil",
+   "hook": "is nicknamed the Venice of its nation for its many rivers and bridges",
+   "known": 0.2,
+   "kind": "brazilian"
+  },
+  {
+   "label": "Fuzhou",
+   "qid": "Q68481",
+   "fame": 0.455,
+   "region": "Fujian",
+   "country": "China",
+   "description": "capital city of Fujian province, China",
+   "hook": "is a city known as the Banyan city for its many old trees and is a port city of the Min River",
+   "known": 0.2,
+   "kind": "chinese"
+  },
+  {
+   "label": "Fredericton",
+   "qid": "Q2138",
+   "fame": 0.45,
+   "region": "New Brunswick",
+   "country": "Canada",
+   "description": "capital city of the province of New Brunswick, Canada",
+   "hook": "is a quiet river city with a Gothic cathedral, and a university town on the Saint John River",
+   "known": 0.2,
+   "kind": "canadian"
+  }
+ ]
+}

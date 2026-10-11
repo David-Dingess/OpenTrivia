@@ -1,0 +1,810 @@
+{
+ "id": "table.biology.bird-types",
+ "kind": "table",
+ "title": "Famous birds and what kind of bird they are",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "wildlife",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?grpName WHERE { { SELECT ?item ?itemLabel (SAMPLE(?g) AS ?grpName) (COUNT(DISTINCT ?g) AS ?nG) WHERE { VALUES (?item ?itemLabel) { (wd:Q127216 \"Bald eagle\") (wd:Q41181 \"Golden eagle\") (wd:Q30535 \"Peregrine falcon\") (wd:Q457471 \"Red-tailed hawk\") (wd:Q25332 \"Osprey\") (wd:Q245181 \"Turkey vulture\") (wd:Q194314 \"California condor\") (wd:Q25317 \"Barn owl\") (wd:Q170177 \"Snowy owl\") (wd:Q81515 \"Great horned owl\") (wd:Q161829 \"Emperor penguin\") (wd:Q17592 \"Ostrich\") (wd:Q93208 \"Emu\") (wd:Q201231 \"Cassowary\") (wd:Q208714 \"Brown pelican\") (wd:Q179863 \"Greater flamingo\") (wd:Q55805 \"Albatross\") (wd:Q26685 \"Atlantic puffin\") (wd:Q25348 \"Mallard\") (wd:Q25402 \"Mute swan\") (wd:Q26733 \"Canada goose\") (wd:Q131044 \"Black swan\") (wd:Q61865 \"Indian peafowl\") (wd:Q26844 \"Wild turkey\") (wd:Q780 \"Chicken\") (wd:Q25432 \"Pheasant\") (wd:Q28358 \"Quail\") (wd:Q460967 \"American robin\") (wd:Q25334 \"European robin\") (wd:Q199758 \"Blue jay\") (wd:Q726389 \"Northern cardinal\") (wd:Q14683 \"House sparrow\") (wd:Q25307 \"Magpie\") (wd:Q25469 \"Starling\") (wd:Q25234 \"Blackbird\") (wd:Q720541 \"Mockingbird\") (wd:Q25439 \"Woodpecker\") (wd:Q43624 \"Hummingbird\") (wd:Q219035 \"Macaw\") (wd:Q31448 \"Cockatoo\") (wd:Q121221 \"Budgerigar\") (wd:Q514809 \"Cockatiel\") (wd:Q1325045 \"Toucan\") (wd:Q8154335 \"Kingfisher\") (wd:Q26773 \"Hornbill\") (wd:Q10856 \"Pigeon\") (wd:Q333796 \"Great blue heron\") (wd:Q28507 \"Stork\") (wd:Q457477 \"Whooping crane\") (wd:Q25440 \"Cormorant\") (wd:Q18845 \"Cuckoo\") (wd:Q340041 \"Kookaburra\") (wd:Q214096 \"Lyrebird\") (wd:Q179333 \"Bird-of-paradise\") (wd:Q25429 \"Barn swallow\") (wd:Q25740 \"Wren\") (wd:Q18700 \"Shoebill\") (wd:Q168748 \"Secretarybird\") (wd:Q53745 \"Harpy eagle\") (wd:Q179959 \"Kakapo\") (wd:Q189193 \"Great auk\") (wd:Q191968 \"Passenger pigeon\") (wd:Q25418 \"Goldfinch\") (wd:Q25357 \"Raven\") (wd:Q267735 \"American crow\") (wd:Q26800 \"Arctic tern\") (wd:Q188660 \"Hoatzin\") (wd:Q25485 \"Great tit\") (wd:Q750027 \"Mourning dove\") (wd:Q25247 \"Hoopoe\") (wd:Q459267 \"Resplendent quetzal\") (wd:Q503804 \"Sandhill crane\") (wd:Q26675 \"Gannet\") (wd:Q43502 \"Dodo\") (wd:Q199427 \"Great white pelican\") (wd:Q190342 \"Common loon\") (wd:Q634804 \"Roadrunner\") (wd:Q192524 \"Canary\") (wd:Q193337 \"Kea\") (wd:Q25393 \"Nightingale\") (wd:Q192044 \"Greater rhea\") (wd:Q243761 \"Scarlet macaw\") (wd:Q220328 \"African grey parrot\") (wd:Q630457 \"Barred owl\") (wd:Q203628 \"Little penguin\") (wd:Q207246 \"Magellanic penguin\") (wd:Q629204 \"Carolina parakeet\") (wd:Q25354 \"Eurasian jay\") (wd:Q25404 \"Blue tit\") (wd:Q25385 \"Common buzzard\") (wd:Q156250 \"Red kite\") (wd:Q25353 \"Northern goshawk\") (wd:Q26490 \"Kestrel\") (wd:Q33504 \"Egyptian vulture\") (wd:Q170598 \"Andean condor\") (wd:Q126167 \"Bearded vulture\") (wd:Q130730 \"Great egret\") (wd:Q208763 \"Sacred ibis\") (wd:Q467996 \"Scarlet ibis\") (wd:Q389664 \"Roseate spoonbill\") (wd:Q208682 \"Wandering albatross\") (wd:Q28236 \"Herring gull\") (wd:Q834843 \"Ruby-throated hummingbird\") (wd:Q213036 \"Bee hummingbird\") (wd:Q930712 \"Pileated woodpecker\") (wd:Q600880 \"Eastern bluebird\") (wd:Q19058 \"Ruffed grouse\") (wd:Q251842 \"Helmeted guineafowl\") (wd:Q242851 \"Muscovy duck\") (wd:Q322159 \"Wood duck\") (wd:Q26696 \"Common eider\") (wd:Q27589 \"Seagull\") (wd:Q15631713 \"Frigatebird\") (wd:Q205930 \"Ptarmigan\") (wd:Q142651 \"Bobwhite\") (wd:Q170718 \"Bee-eater\") (wd:Q213785 \"Oilbird\") (wd:Q207107 \"Sulphur-crested cockatoo\") (wd:Q79915 \"Common kingfisher\") } ?item wdt:P171+ ?o . VALUES (?o ?g) { (wd:Q21736 \"Day-hunting raptor\") (wd:Q25370 \"Fast-diving raptor\") (wd:Q25222 \"Night-hunting raptor\") (wd:Q840849 \"Flightless runner\") (wd:Q19173 \"Flightless runner\") (wd:Q1113470 \"Flightless runner\") (wd:Q12198609 \"Flightless swimmer\") (wd:Q25978 \"Shore and sea bird\") (wd:Q21651 \"Waterfowl\") (wd:Q21685 \"Ocean wanderer\") (wd:Q21728 \"Diving water bird\") (wd:Q2814783 \"Diving water bird\") (wd:Q19338 \"Wading and fishing bird\") (wd:Q21716 \"Wading and fishing bird\") (wd:Q7512165 \"Wading and fishing bird\") (wd:Q25557 \"Tall marsh bird\") (wd:Q21659 \"Game bird\") (wd:Q15731102 \"Game bird\") (wd:Q25341 \"Perching songbird\") (wd:Q25934 \"Cavity-nesting tree bird\") (wd:Q25950 \"Aerial acrobat\") (wd:Q3539809 \"Aerial acrobat\") (wd:Q31431 \"Colourful mimic bird\") (wd:Q20740 \"Curve-billed bird\") (wd:Q28078 \"Cooing bird\") (wd:Q484131 \"Brightly coloured perch-hunter\") (wd:Q183364 \"Long-tailed runner or parasite\") } } GROUP BY ?item ?itemLabel } hint:Prior hint:runFirst true . FILTER(?nG = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T17:36:55.475Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T17:36:55.475Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "group",
+   "label": "Kind of bird",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "bird",
+  "many": "birds",
+  "capitalise": true,
+  "columns": {
+   "group": {
+    "role": "link",
+    "pick": "What kind of bird is {label}?",
+    "statement": "The kind of bird {label} is: {value}.",
+    "match": "Match each bird to what kind of bird it is.",
+    "odd": "Three of these birds count as this kind: {value}. Which one doesn't?",
+    "all": "Tap all {n} birds of this kind: {value}.",
+    "reverse": "Which of these is this kind of bird: {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Passenger pigeon",
+   "qid": "Q191968",
+   "fame": 0.677,
+   "group": "Cooing bird",
+   "description": "extinct species of North American pigeon, most abundant bird on Earth before extinction",
+   "hook": "was once among the most numerous birds in North America before hunting wiped it out",
+   "known": 0.6,
+   "kind": "pigeon"
+  },
+  {
+   "label": "Chicken",
+   "qid": "Q780",
+   "fame": 0.63,
+   "group": "Game bird",
+   "description": "domesticated bird (specifically a red junglefowl) kept by humans primarily as a food source",
+   "hook": "is raised on farms around the world for its eggs and meat",
+   "known": 0.95,
+   "kind": "game bird"
+  },
+  {
+   "label": "Dodo",
+   "qid": "Q43502",
+   "fame": 0.629,
+   "group": "Cooing bird",
+   "description": "species of extinct bird native to Mauritius Island",
+   "hook": "was a flightless island native that vanished soon after sailors arrived",
+   "known": 0.6,
+   "kind": "pigeon"
+  },
+  {
+   "label": "Peregrine falcon",
+   "qid": "Q30535",
+   "fame": 0.608,
+   "group": "Fast-diving raptor",
+   "description": "species of bird of prey",
+   "hook": "is the fastest animal on Earth, reaching huge speeds in a hunting dive",
+   "known": 0.6,
+   "kind": "raptor"
+  },
+  {
+   "label": "Kakapo",
+   "qid": "Q179959",
+   "fame": 0.607,
+   "group": "Colourful mimic bird",
+   "description": "species of non-flying New Zealand parrot",
+   "hook": "is a heavy, nocturnal, flightless parrot that booms at night to attract mates",
+   "known": 0.2,
+   "kind": "parrot"
+  },
+  {
+   "label": "Bald eagle",
+   "qid": "Q127216",
+   "fame": 0.602,
+   "group": "Day-hunting raptor",
+   "description": "species of bird of prey found in North America",
+   "hook": "is the national emblem of the United States, with a white head and tail",
+   "known": 0.95,
+   "kind": "raptor"
+  },
+  {
+   "label": "Hummingbird",
+   "qid": "Q43624",
+   "fame": 0.594,
+   "group": "Aerial acrobat",
+   "description": "family of birds",
+   "hook": "hovers in mid-air and can even fly backwards while sipping nectar",
+   "known": 0.95,
+   "kind": "hummingbird"
+  },
+  {
+   "label": "Osprey",
+   "qid": "Q25332",
+   "fame": 0.593,
+   "group": "Day-hunting raptor",
+   "description": "species of bird",
+   "hook": "dives feet-first into water to snatch fish, often nesting on poles",
+   "known": 0.4,
+   "kind": "raptor"
+  },
+  {
+   "label": "Shoebill",
+   "qid": "Q18700",
+   "fame": 0.593,
+   "group": "Wading and fishing bird",
+   "description": "species of bird",
+   "hook": "is a giant swamp dweller with an enormous clog-shaped beak",
+   "known": 0.2,
+   "kind": "wading bird"
+  },
+  {
+   "label": "Golden eagle",
+   "qid": "Q41181",
+   "fame": 0.591,
+   "group": "Day-hunting raptor",
+   "description": "species of bird of prey",
+   "hook": "is a huge, dark-brown mountain hunter prized by falconers",
+   "known": 0.6,
+   "kind": "raptor"
+  },
+  {
+   "label": "Cassowary",
+   "qid": "Q201231",
+   "fame": 0.581,
+   "group": "Flightless runner",
+   "description": "genus of flightless birds including three species of cassowary. Native to the New Guinea forests, the Moluccas, and Northeastern Australia",
+   "hook": "has a bony crest and dagger-like claws that can seriously injure people",
+   "known": 0.2,
+   "kind": "flightless"
+  },
+  {
+   "label": "Harpy eagle",
+   "qid": "Q53745",
+   "fame": 0.577,
+   "group": "Day-hunting raptor",
+   "description": "species of eagle",
+   "hook": "is a huge rainforest hunter of Central and South America that plucks sloths and monkeys from trees",
+   "known": 0.2,
+   "kind": "raptor"
+  },
+  {
+   "label": "Emu",
+   "qid": "Q93208",
+   "fame": 0.565,
+   "group": "Flightless runner",
+   "description": "species of bird",
+   "hook": "is Australia's tallest native bird and appears on its coat of arms",
+   "known": 0.8,
+   "kind": "flightless"
+  },
+  {
+   "label": "Pigeon",
+   "qid": "Q10856",
+   "fame": 0.559,
+   "group": "Cooing bird",
+   "description": "family of birds (Aves)",
+   "hook": "is the city dweller once used to carry messages over long distances",
+   "known": 0.95,
+   "kind": "pigeon"
+  },
+  {
+   "label": "Blue jay",
+   "qid": "Q199758",
+   "fame": 0.558,
+   "group": "Perching songbird",
+   "description": "species of bird",
+   "hook": "is a noisy, crested bird of eastern North America that gave its name to a Toronto baseball team",
+   "known": 0.6,
+   "kind": "songbird"
+  },
+  {
+   "label": "Albatross",
+   "qid": "Q55805",
+   "fame": 0.557,
+   "group": "Ocean wanderer",
+   "description": "large seabirds allied to the procellariids, storm-petrels and diving-petrels in the order Procellariiformes",
+   "hook": "has the longest wingspan of any seabird and glides over open water for hours",
+   "known": 0.4,
+   "kind": "seabird"
+  },
+  {
+   "label": "Budgerigar",
+   "qid": "Q121221",
+   "fame": 0.551,
+   "group": "Colourful mimic bird",
+   "description": "species of bird",
+   "hook": "is a small, popular pet that can learn to repeat human speech",
+   "known": 0.4,
+   "kind": "parrot"
+  },
+  {
+   "label": "Canada goose",
+   "qid": "Q26733",
+   "fame": 0.549,
+   "group": "Waterfowl",
+   "description": "Species of wild goose",
+   "hook": "migrates in V-shaped flocks across North America and is common in city parks",
+   "known": 0.8,
+   "kind": "waterfowl"
+  },
+  {
+   "label": "Raven",
+   "qid": "Q25357",
+   "fame": 0.547,
+   "group": "Perching songbird",
+   "description": "species of bird",
+   "hook": "is a large, clever black bird of legend, kept at the Tower of London",
+   "known": 0.8,
+   "kind": "songbird"
+  },
+  {
+   "label": "Great auk",
+   "qid": "Q189193",
+   "fame": 0.543,
+   "group": "Shore and sea bird",
+   "description": "species of bird (extinct)",
+   "hook": "was a flightless North Atlantic seabird hunted to extinction",
+   "known": 0.4,
+   "kind": "seabird"
+  },
+  {
+   "label": "House sparrow",
+   "qid": "Q14683",
+   "fame": 0.54,
+   "group": "Perching songbird",
+   "description": "species of bird",
+   "hook": "is a small brown bird that lives alongside people in cities worldwide",
+   "known": 0.6,
+   "kind": "songbird"
+  },
+  {
+   "label": "Great horned owl",
+   "qid": "Q81515",
+   "fame": 0.538,
+   "group": "Night-hunting raptor",
+   "description": "species of bird",
+   "hook": "has feathery ear-like tufts and a deep hooting call across the Americas",
+   "known": 0.4,
+   "kind": "raptor"
+  },
+  {
+   "label": "Roadrunner",
+   "qid": "Q634804",
+   "fame": 0.534,
+   "group": "Long-tailed runner or parasite",
+   "description": "species of bird",
+   "hook": "is a fast-running desert cuckoo that outsmarts Wile E. Coyote in cartoons",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Secretarybird",
+   "qid": "Q168748",
+   "fame": 0.534,
+   "group": "Day-hunting raptor",
+   "description": "large, mostly terrestrial bird of prey",
+   "hook": "is a long-legged African hunter that stomps on snakes",
+   "known": 0.2,
+   "kind": "raptor"
+  },
+  {
+   "label": "Turkey vulture",
+   "qid": "Q245181",
+   "fame": 0.534,
+   "group": "Day-hunting raptor",
+   "description": "species of New World vulture",
+   "hook": "soars on warm air currents and finds its carrion meals by smell",
+   "known": 0.4,
+   "kind": "raptor"
+  },
+  {
+   "label": "Mallard",
+   "qid": "Q25348",
+   "fame": 0.533,
+   "group": "Waterfowl",
+   "description": "species of duck",
+   "hook": "is the most familiar wild duck, the male sporting a glossy green head",
+   "known": 0.6,
+   "kind": "waterfowl"
+  },
+  {
+   "label": "Emperor penguin",
+   "qid": "Q161829",
+   "fame": 0.532,
+   "group": "Flightless swimmer",
+   "description": "large flightless seabird endemic to Antarctica",
+   "hook": "huddles through the Antarctic winter while males balance the egg on their feet",
+   "known": 0.95,
+   "kind": "flightless"
+  },
+  {
+   "label": "Northern cardinal",
+   "qid": "Q726389",
+   "fame": 0.529,
+   "group": "Perching songbird",
+   "description": "species of bird",
+   "hook": "is a bright red crested singer that is the state symbol of several US states",
+   "known": 0.8,
+   "kind": "songbird"
+  },
+  {
+   "label": "Kookaburra",
+   "qid": "Q340041",
+   "fame": 0.528,
+   "group": "Brightly coloured perch-hunter",
+   "description": "genus of birds",
+   "hook": "is known for a loud call that sounds like human laughter",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Mourning dove",
+   "qid": "Q750027",
+   "fame": 0.527,
+   "group": "Cooing bird",
+   "description": "species of bird",
+   "hook": "has a soft, sad-sounding coo and is among North America's most common birds",
+   "known": 0.4,
+   "kind": "pigeon"
+  },
+  {
+   "label": "Red-tailed hawk",
+   "qid": "Q457471",
+   "fame": 0.526,
+   "group": "Day-hunting raptor",
+   "description": "species of bird",
+   "hook": "is the common soaring hunter seen perched along North American highways",
+   "known": 0.6,
+   "kind": "raptor"
+  },
+  {
+   "label": "Andean condor",
+   "qid": "Q170598",
+   "fame": 0.525,
+   "group": "Day-hunting raptor",
+   "description": "species of bird",
+   "hook": "is a huge South American scavenger that soars over mountains on enormous wings",
+   "known": 0.4,
+   "kind": "raptor"
+  },
+  {
+   "label": "Kingfisher",
+   "qid": "Q8154335",
+   "fame": 0.525,
+   "group": "Brightly coloured perch-hunter",
+   "description": "family of birds",
+   "hook": "is a small, vivid bird that dives headfirst into streams to catch fish",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Great blue heron",
+   "qid": "Q333796",
+   "fame": 0.518,
+   "group": "Wading and fishing bird",
+   "description": "species of bird",
+   "hook": "stands motionless in the shallows, then spears fish with a lightning strike",
+   "known": 0.4,
+   "kind": "wading bird"
+  },
+  {
+   "label": "Bearded vulture",
+   "qid": "Q126167",
+   "fame": 0.517,
+   "group": "Day-hunting raptor",
+   "description": "species of bird",
+   "hook": "drops bones from great heights to crack them open and eat the marrow",
+   "known": 0.2,
+   "kind": "raptor"
+  },
+  {
+   "label": "Barred owl",
+   "qid": "Q630457",
+   "fame": 0.515,
+   "group": "Night-hunting raptor",
+   "description": "species of bird",
+   "hook": "is famed for a hooting call that sounds like \"who cooks for you\"",
+   "known": 0.2,
+   "kind": "raptor"
+  },
+  {
+   "label": "Sandhill crane",
+   "qid": "Q503804",
+   "fame": 0.514,
+   "group": "Tall marsh bird",
+   "description": "species of bird",
+   "hook": "performs elaborate dancing displays and migrates in huge flocks",
+   "known": 0.2,
+   "kind": "wading bird"
+  },
+  {
+   "label": "Cockatiel",
+   "qid": "Q514809",
+   "fame": 0.512,
+   "group": "Colourful mimic bird",
+   "description": "species of Australian cockatoo",
+   "hook": "is a crested pet with orange cheek patches that whistles tunes",
+   "known": 0.4,
+   "kind": "parrot"
+  },
+  {
+   "label": "Woodpecker",
+   "qid": "Q25439",
+   "fame": 0.511,
+   "group": "Cavity-nesting tree bird",
+   "description": "family of birds",
+   "hook": "hammers on trunks with its beak to find insects and carve nests",
+   "known": 0.6,
+   "kind": "woodpecker"
+  },
+  {
+   "label": "Muscovy duck",
+   "qid": "Q242851",
+   "fame": 0.508,
+   "group": "Waterfowl",
+   "description": "species of bird",
+   "hook": "is a big, red-faced, waddling farm and pond bird native to Central and South America",
+   "known": 0.2,
+   "kind": "waterfowl"
+  },
+  {
+   "label": "California condor",
+   "qid": "Q194314",
+   "fame": 0.507,
+   "group": "Day-hunting raptor",
+   "description": "New World vulture",
+   "hook": "is North America's largest land bird, rescued from the brink of extinction by captive breeding",
+   "known": 0.2,
+   "kind": "raptor"
+  },
+  {
+   "label": "Indian peafowl",
+   "qid": "Q61865",
+   "fame": 0.505,
+   "group": "Game bird",
+   "description": "species of bird",
+   "hook": "is the showy one whose males fan out enormous eyespot-covered tail feathers",
+   "known": 0.8,
+   "kind": "game bird"
+  },
+  {
+   "label": "Toucan",
+   "qid": "Q1325045",
+   "fame": 0.505,
+   "group": "Cavity-nesting tree bird",
+   "description": "family of birds",
+   "hook": "has an enormous colorful beak and lives in tropical forests of Central and South America",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Great tit",
+   "qid": "Q25485",
+   "fame": 0.503,
+   "group": "Perching songbird",
+   "description": "species of bird",
+   "hook": "is a common European garden bird with a black stripe down its yellow chest",
+   "known": 0.2,
+   "kind": "songbird"
+  },
+  {
+   "label": "Bird-of-paradise",
+   "qid": "Q179333",
+   "fame": 0.501,
+   "group": "Perching songbird",
+   "description": "family of birds of the order Passeriformes",
+   "hook": "is a New Guinea forest dweller famed for dazzling plumes and elaborate courtship dances",
+   "known": 0.2,
+   "kind": "songbird"
+  },
+  {
+   "label": "Cockatoo",
+   "qid": "Q31448",
+   "fame": 0.501,
+   "group": "Colourful mimic bird",
+   "description": "family of parrots (Psittaciformes)",
+   "hook": "is a crested parrot relative that raises and lowers its head plume when excited",
+   "known": 0.4,
+   "kind": "parrot"
+  },
+  {
+   "label": "Atlantic puffin",
+   "qid": "Q26685",
+   "fame": 0.499,
+   "group": "Shore and sea bird",
+   "description": "species of seabird",
+   "hook": "has a bright orange beak and is nicknamed the clown of the sea",
+   "known": 0.4,
+   "kind": "seabird"
+  },
+  {
+   "label": "Hornbill",
+   "qid": "Q26773",
+   "fame": 0.499,
+   "group": "Curve-billed bird",
+   "description": "family of birds in the order Bucerotiformes",
+   "hook": "has a huge curved beak topped with a casque, found in Africa and Asia",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "European robin",
+   "qid": "Q25334",
+   "fame": 0.498,
+   "group": "Perching songbird",
+   "description": "species of bird",
+   "hook": "has an orange-red breast and is a classic symbol on Christmas cards",
+   "known": 0.6,
+   "kind": "songbird"
+  },
+  {
+   "label": "Frigatebird",
+   "qid": "Q15631713",
+   "fame": 0.498,
+   "group": "Diving water bird",
+   "description": "family of birds",
+   "hook": "inflates a huge red throat pouch to attract mates and steals food from other seabirds",
+   "known": 0.2,
+   "kind": "seabird"
+  },
+  {
+   "label": "Blackbird",
+   "qid": "Q25234",
+   "fame": 0.496,
+   "group": "Perching songbird",
+   "description": "species of thrush",
+   "hook": "sings at dusk in European gardens, the male having a bright orange beak",
+   "known": 0.4,
+   "kind": "songbird"
+  },
+  {
+   "label": "Great egret",
+   "qid": "Q130730",
+   "fame": 0.496,
+   "group": "Wading and fishing bird",
+   "description": "species of bird",
+   "hook": "is a tall white wader with long plumes once prized for hats",
+   "known": 0.4,
+   "kind": "wading bird"
+  },
+  {
+   "label": "Magpie",
+   "qid": "Q25307",
+   "fame": 0.496,
+   "group": "Perching songbird",
+   "description": "species of bird",
+   "hook": "is a black-and-white relative of crows, famous in folklore for stealing shiny things",
+   "known": 0.6,
+   "kind": "songbird"
+  },
+  {
+   "label": "Starling",
+   "qid": "Q25469",
+   "fame": 0.491,
+   "group": "Perching songbird",
+   "description": "species of bird",
+   "hook": "forms vast swirling flocks called murmurations and imitates other sounds",
+   "known": 0.4,
+   "kind": "songbird"
+  },
+  {
+   "label": "Ostrich",
+   "qid": "Q17592",
+   "fame": 0.486,
+   "group": "Flightless runner",
+   "description": "species of large flightless bird",
+   "hook": "is the world's largest and fastest-running bird and lays the biggest egg",
+   "known": 0.95,
+   "kind": "flightless"
+  },
+  {
+   "label": "Snowy owl",
+   "qid": "Q170177",
+   "fame": 0.485,
+   "group": "Night-hunting raptor",
+   "description": "species of bird",
+   "hook": "is the white Arctic hunter that plays Hedwig in Harry Potter",
+   "known": 0.6,
+   "kind": "raptor"
+  },
+  {
+   "label": "Wild turkey",
+   "qid": "Q26844",
+   "fame": 0.485,
+   "group": "Game bird",
+   "description": "species of turkey native to North America",
+   "hook": "is the native ancestor of the one served at American Thanksgiving dinners",
+   "known": 0.95,
+   "kind": "game bird"
+  },
+  {
+   "label": "Pileated woodpecker",
+   "qid": "Q930712",
+   "fame": 0.481,
+   "group": "Cavity-nesting tree bird",
+   "description": "species of bird",
+   "hook": "is a crow-sized forest hammerer with a flaming red crest said to inspire a cartoon character",
+   "known": 0.2,
+   "kind": "woodpecker"
+  },
+  {
+   "label": "African grey parrot",
+   "qid": "Q220328",
+   "fame": 0.48,
+   "group": "Colourful mimic bird",
+   "description": "species of parrot",
+   "hook": "is among the best talkers, able to copy human speech and understand words",
+   "known": 0.4,
+   "kind": "parrot"
+  },
+  {
+   "label": "Kea",
+   "qid": "Q193337",
+   "fame": 0.478,
+   "group": "Colourful mimic bird",
+   "description": "species of parrot",
+   "hook": "is a mischievous alpine parrot that rips rubber from parked cars in New Zealand",
+   "known": 0.2,
+   "kind": "parrot"
+  },
+  {
+   "label": "Mute swan",
+   "qid": "Q25402",
+   "fame": 0.474,
+   "group": "Waterfowl",
+   "description": "species of swan",
+   "hook": "is a big white bird with an orange bill and a knob on top, named for being quieter than its relatives",
+   "known": 0.6,
+   "kind": "waterfowl"
+  },
+  {
+   "label": "Little penguin",
+   "qid": "Q203628",
+   "fame": 0.473,
+   "group": "Flightless swimmer",
+   "description": "smallest species of penguin",
+   "hook": "is the smallest of its kind in the world, a blue-feathered bird from Australia and New Zealand",
+   "known": 0.4,
+   "kind": "flightless"
+  },
+  {
+   "label": "Common buzzard",
+   "qid": "Q25385",
+   "fame": 0.472,
+   "group": "Day-hunting raptor",
+   "description": "species of bird of prey",
+   "hook": null,
+   "known": 0.2,
+   "kind": "raptor"
+  },
+  {
+   "label": "Carolina parakeet",
+   "qid": "Q629204",
+   "fame": 0.47,
+   "group": "Colourful mimic bird",
+   "description": "extinct species of North American parrot",
+   "hook": null,
+   "known": 0.05,
+   "kind": "parrot"
+  },
+  {
+   "label": "American robin",
+   "qid": "Q460967",
+   "fame": 0.469,
+   "group": "Perching songbird",
+   "description": "species of bird",
+   "hook": "is a red-breasted thrush, named after a European look-alike, and the most abundant landbird in North America",
+   "known": 0.6,
+   "kind": "songbird"
+  },
+  {
+   "label": "Nightingale",
+   "qid": "Q25393",
+   "fame": 0.469,
+   "group": "Perching songbird",
+   "description": "species of bird",
+   "hook": null,
+   "known": 0.2,
+   "kind": "songbird"
+  },
+  {
+   "label": "Stork",
+   "qid": "Q28507",
+   "fame": 0.468,
+   "group": "Wading and fishing bird",
+   "description": "family of birds; type of bird with long neck, long legs and a big beak",
+   "hook": "is a long-legged wader with a stout bill, folklore's bringer of newborn babies",
+   "known": 0.4,
+   "kind": "wading bird"
+  },
+  {
+   "label": "Scarlet macaw",
+   "qid": "Q243761",
+   "fame": 0.465,
+   "group": "Colourful mimic bird",
+   "description": "species of bird",
+   "hook": null,
+   "known": 0.2,
+   "kind": "parrot"
+  },
+  {
+   "label": "Black swan",
+   "qid": "Q131044",
+   "fame": 0.463,
+   "group": "Waterfowl",
+   "description": "species of bird",
+   "hook": "is an all-dark bird with a red bill, native to Australia and a symbol of Western Australia",
+   "known": 0.4,
+   "kind": "waterfowl"
+  },
+  {
+   "label": "Common loon",
+   "qid": "Q190342",
+   "fame": 0.463,
+   "group": "Diving water bird",
+   "description": "bird species",
+   "hook": null,
+   "known": 0.2,
+   "kind": "seabird"
+  },
+  {
+   "label": "Eurasian jay",
+   "qid": "Q25354",
+   "fame": 0.463,
+   "group": "Perching songbird",
+   "description": "species of bird",
+   "hook": null,
+   "known": 0.2,
+   "kind": "songbird"
+  },
+  {
+   "label": "Bee hummingbird",
+   "qid": "Q213036",
+   "fame": 0.462,
+   "group": "Aerial acrobat",
+   "description": "species of bird",
+   "hook": null,
+   "known": 0.2,
+   "kind": "hummingbird"
+  },
+  {
+   "label": "Ptarmigan",
+   "qid": "Q205930",
+   "fame": 0.46,
+   "group": "Game bird",
+   "description": "species of bird",
+   "hook": null,
+   "known": 0.05,
+   "kind": "game bird"
+  },
+  {
+   "label": "Red kite",
+   "qid": "Q156250",
+   "fame": 0.458,
+   "group": "Day-hunting raptor",
+   "description": "species of bird",
+   "hook": null,
+   "known": 0.05,
+   "kind": "raptor"
+  },
+  {
+   "label": "American crow",
+   "qid": "Q267735",
+   "fame": 0.456,
+   "group": "Perching songbird",
+   "description": "species of bird",
+   "hook": "is a glossy all-dark, highly intelligent bird common across North America, easily confused with the raven",
+   "known": 0.4,
+   "kind": "songbird"
+  }
+ ]
+}

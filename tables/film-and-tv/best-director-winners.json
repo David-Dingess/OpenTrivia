@@ -1,0 +1,656 @@
+{
+ "id": "table.film-and-tv.best-director-winners",
+ "kind": "table",
+ "title": "Academy Award for Best Director winners",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "the-oscars",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?year WHERE { { SELECT ?item (MIN(?d) AS ?year) WHERE { ?item p:P166 ?st . ?st ps:P166 wd:Q103360 ; pq:P585 ?d . ?item wdt:P31 wd:Q5 . } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T09:14:53.154Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T09:14:53.154Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "first_win",
+   "label": "First win",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "director",
+  "many": "Best Director winners",
+  "wildcard": "person",
+  "columns": {
+   "first_win": {
+    "role": "date",
+    "era": "Drop each director into the decade of their first Best Director win.",
+    "eraSize": "decade"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Warren Beatty",
+   "qid": "Q95030",
+   "fame": 0.833,
+   "first_win": 1982,
+   "description": "American actor and filmmaker",
+   "hook": "directed and starred in an epic about a journalist swept up in the Russian Revolution",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Clint Eastwood",
+   "qid": "Q43203",
+   "fame": 0.81,
+   "first_win": 1993,
+   "description": "American actor and film director (born 1930)",
+   "hook": "directed a gritty western about an aging gunslinger drawn back for one last job",
+   "known": 0.95,
+   "kind": "established"
+  },
+  {
+   "label": "Christopher Nolan",
+   "qid": "Q25191",
+   "fame": 0.795,
+   "first_win": 2024,
+   "description": "English and American filmmaker (born 1970)",
+   "hook": "directed a biographical drama about the physicist who helped build the first atomic bomb",
+   "known": 0.95,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Mel Gibson",
+   "qid": "Q42229",
+   "fame": 0.758,
+   "first_win": 1996,
+   "description": "American actor, director, producer and screenwriter (born 1956)",
+   "hook": "directed and starred in an epic about a Scottish warrior leading a rebellion against English rule",
+   "known": 0.8,
+   "kind": "established"
+  },
+  {
+   "label": "Steven Spielberg",
+   "qid": "Q8877",
+   "fame": 0.756,
+   "first_win": 1994,
+   "description": "American filmmaker (born 1946)",
+   "hook": "directed a drama about a businessman who saved thousands of Jewish workers during the Holocaust",
+   "known": 0.95,
+   "kind": "modern"
+  },
+  {
+   "label": "Martin Scorsese",
+   "qid": "Q41148",
+   "fame": 0.75,
+   "first_win": 2007,
+   "description": "American filmmaker (born 1942)",
+   "hook": "directed a crime thriller about an undercover cop and a mob informant hunting each other in Boston",
+   "known": 0.95,
+   "kind": "modern"
+  },
+  {
+   "label": "Robert Redford",
+   "qid": "Q59215",
+   "fame": 0.738,
+   "first_win": 1981,
+   "description": "American actor and director (1936–2025)",
+   "hook": "directed a drama about a suburban family unraveling after the accidental death of a son",
+   "known": 0.6,
+   "kind": "established"
+  },
+  {
+   "label": "Roman Polanski",
+   "qid": "Q51552",
+   "fame": 0.738,
+   "first_win": 2003,
+   "description": "French-Polish filmmaker (born 1933)",
+   "hook": "directed a drama about a Jewish musician surviving alone in the ruins of wartime Warsaw",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Kevin Costner",
+   "qid": "Q11930",
+   "fame": 0.731,
+   "first_win": 1991,
+   "description": "American actor and filmmaker (born 1955)",
+   "hook": "directed and starred in an epic about a Civil War soldier who comes to live among a Sioux tribe",
+   "known": 0.8,
+   "kind": "established"
+  },
+  {
+   "label": "James Cameron",
+   "qid": "Q42574",
+   "fame": 0.713,
+   "first_win": 1998,
+   "description": "Canadian filmmaker and explorer (born 1954)",
+   "hook": "directed an epic romance set aboard a doomed ocean liner on its only voyage",
+   "known": 0.95,
+   "kind": "established"
+  },
+  {
+   "label": "Woody Allen",
+   "qid": "Q25089",
+   "fame": 0.711,
+   "first_win": 1978,
+   "description": "American filmmaker, actor and comedian (born 1935)",
+   "hook": "directed a comedy about a neurotic comedian looking back on a failed romance",
+   "known": 0.95,
+   "kind": "classic"
+  },
+  {
+   "label": "Ron Howard",
+   "qid": "Q103646",
+   "fame": 0.708,
+   "first_win": 2002,
+   "description": "American film director, producer, and actor",
+   "hook": "directed a drama about a brilliant mathematician battling schizophrenia",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Francis Ford Coppola",
+   "qid": "Q56094",
+   "fame": 0.706,
+   "first_win": 1975,
+   "description": "American filmmaker (born 1939)",
+   "hook": "directed a crime saga following a mafia family across two generations",
+   "known": 0.95,
+   "kind": "classic"
+  },
+  {
+   "label": "Paul Thomas Anderson",
+   "qid": "Q25132",
+   "fame": 0.7,
+   "first_win": 2026,
+   "description": "American filmmaker (born 1970)",
+   "hook": "directed a tale of ambition and greed among early California oil drillers",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Richard Attenborough",
+   "qid": "Q51506",
+   "fame": 0.676,
+   "first_win": 1983,
+   "description": "British actor (1923–2014)",
+   "hook": "played the eccentric founder of a dinosaur theme park that spirals out of control",
+   "known": 0.8,
+   "kind": "established"
+  },
+  {
+   "label": "Guillermo del Toro",
+   "qid": "Q219124",
+   "fame": 0.667,
+   "first_win": 2018,
+   "description": "Mexican filmmaker and author (born 1964)",
+   "hook": "directed a fantasy romance between a mute janitor and a captive amphibious creature",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Alejandro González Iñárritu",
+   "qid": "Q55215",
+   "fame": 0.645,
+   "first_win": 2015,
+   "description": "Mexican film director",
+   "hook": "directed a survival drama about a frontiersman left for dead after a brutal bear attack",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Peter Jackson",
+   "qid": "Q4465",
+   "fame": 0.645,
+   "first_win": 2004,
+   "description": "New Zealand film director, screenwriter, producer and actor (born 1961)",
+   "hook": "directed an epic trilogy about a hobbit's quest to destroy a powerful ring",
+   "known": 0.95,
+   "kind": "modern"
+  },
+  {
+   "label": "Sam Mendes",
+   "qid": "Q223233",
+   "fame": 0.642,
+   "first_win": 2000,
+   "description": "British stage and film director (born 1965)",
+   "hook": "directed a war drama filmed to look like one continuous shot as two soldiers race to deliver a message",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Bob Fosse",
+   "qid": "Q313256",
+   "fame": 0.639,
+   "first_win": 1973,
+   "description": "American choreographer, dancer, and director (1927–1987)",
+   "hook": "directed a musical set in a decadent Berlin nightclub as the Nazis rise to power",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Danny Boyle",
+   "qid": "Q134867",
+   "fame": 0.633,
+   "first_win": 2009,
+   "description": "English filmmaker",
+   "hook": "directed a rags-to-riches drama about a Mumbai teenager competing on a game show",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Robert Zemeckis",
+   "qid": "Q187364",
+   "fame": 0.629,
+   "first_win": 1995,
+   "description": "American screenwriter, film producer and director (born 1952)",
+   "hook": "directed a comedy about a teenager who accidentally travels back three decades in a modified car",
+   "known": 0.8,
+   "kind": "established"
+  },
+  {
+   "label": "Oliver Stone",
+   "qid": "Q179497",
+   "fame": 0.625,
+   "first_win": 1987,
+   "description": "American film director, screenwriter, and producer (born 1946)",
+   "hook": "directed a war drama following a young soldier caught between two sergeants during the Vietnam War",
+   "known": 0.6,
+   "kind": "established"
+  },
+  {
+   "label": "Steven Soderbergh",
+   "qid": "Q103917",
+   "fame": 0.616,
+   "first_win": 2001,
+   "description": "American filmmaker (born 1963)",
+   "hook": "directed a stylish heist comedy about a crew of con artists plotting to rob three Las Vegas casinos",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Alfonso Cuarón",
+   "qid": "Q28028",
+   "fame": 0.61,
+   "first_win": 2014,
+   "description": "Mexican filmmaker (born 1961)",
+   "hook": "directed a survival thriller about an astronaut stranded in orbit after her shuttle is destroyed",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Elia Kazan",
+   "qid": "Q72717",
+   "fame": 0.61,
+   "first_win": 1948,
+   "description": "American director and actor (1909–2003)",
+   "hook": "directed a drama about a former boxer torn between loyalty to the mob and his conscience on the docks",
+   "known": 0.6,
+   "kind": "golden"
+  },
+  {
+   "label": "John Huston",
+   "qid": "Q51575",
+   "fame": 0.61,
+   "first_win": 1949,
+   "description": "American film director, screenwriter, and actor (1906–1987)",
+   "hook": "directed a classic detective mystery centered on a valuable, elusive statuette",
+   "known": 0.8,
+   "kind": "golden"
+  },
+  {
+   "label": "Bong Joon-ho",
+   "qid": "Q495980",
+   "fame": 0.609,
+   "first_win": 2020,
+   "description": "South Korean filmmaker (born 1969)",
+   "hook": "directed a dark comedy about a poor family who infiltrates the household of a wealthy one",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Sydney Pollack",
+   "qid": "Q51522",
+   "fame": 0.606,
+   "first_win": 1986,
+   "description": "American film director, producer and actor (1934-2008)",
+   "hook": "directed a sweeping romance about a baroness who starts a coffee farm in colonial Kenya",
+   "known": 0.6,
+   "kind": "established"
+  },
+  {
+   "label": "Kathryn Bigelow",
+   "qid": "Q34816",
+   "fame": 0.605,
+   "first_win": 2010,
+   "description": "American filmmaker (born 1951)",
+   "hook": "directed a tense war drama following an American bomb disposal team in Iraq",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Ang Lee",
+   "qid": "Q160726",
+   "fame": 0.597,
+   "first_win": 2006,
+   "description": "Taiwanese film director, screenwriter and producer (born 1954)",
+   "hook": "directed a survival tale about a boy adrift at sea in a lifeboat with a tiger",
+   "known": 0.8,
+   "kind": "established"
+  },
+  {
+   "label": "Joel Coen",
+   "qid": "Q13595311",
+   "fame": 0.587,
+   "first_win": 2008,
+   "description": "American film director, screenwriter, producer, cinematographer and editor (born 1954)",
+   "hook": "co-directed a thriller about a hitman relentlessly pursuing stolen drug money across a desert",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Mike Nichols",
+   "qid": "Q51537",
+   "fame": 0.584,
+   "first_win": 1968,
+   "description": "American director and comedian (1931–2014)",
+   "hook": "directed a comedy about a directionless graduate drawn into an affair with an older family friend",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "William Friedkin",
+   "qid": "Q51582",
+   "fame": 0.584,
+   "first_win": 1972,
+   "description": "American director and producer (1935–2023)",
+   "hook": "directed a horror classic about a mother seeking help after her daughter becomes possessed",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "Damien Chazelle",
+   "qid": "Q18350026",
+   "fame": 0.583,
+   "first_win": 2017,
+   "description": "French-American filmmaker",
+   "hook": "directed a musical romance about a jazz pianist and an aspiring actress chasing their dreams",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Tony Richardson",
+   "qid": "Q52411",
+   "fame": 0.576,
+   "first_win": 1964,
+   "description": "English theatre and film director and producer (1928-1991)",
+   "hook": "directed a comic adaptation following a mischievous orphan's rise through 18th-century society",
+   "known": 0.4,
+   "kind": "classic"
+  },
+  {
+   "label": "Sean Baker",
+   "qid": "Q7441419",
+   "fame": 0.573,
+   "first_win": 2025,
+   "description": "American film director",
+   "hook": "directed a drama following a mischievous six-year-old growing up in a budget motel near a theme park",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Chloé Zhao",
+   "qid": "Q21078321",
+   "fame": 0.57,
+   "first_win": 2021,
+   "description": "Chinese filmmaker (born 1982)",
+   "hook": "directed a drama following a widow who takes up life on the road after her town's economy collapses",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Michael Cimino",
+   "qid": "Q59129",
+   "fame": 0.568,
+   "first_win": 1979,
+   "description": "American film director (1939–2016)",
+   "hook": "directed a war drama about three friends from a steel town changed by their time as war prisoners",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Billy Wilder",
+   "qid": "Q51547",
+   "fame": 0.567,
+   "first_win": 1946,
+   "description": "Austrian and American filmmaker (1906–2002)",
+   "hook": "directed a comedy about two musicians who disguise themselves as women to escape gangsters",
+   "known": 0.8,
+   "kind": "golden"
+  },
+  {
+   "label": "Barry Levinson",
+   "qid": "Q269692",
+   "fame": 0.56,
+   "first_win": 1989,
+   "description": "American screenwriter, film director, actor, and producer",
+   "hook": "directed a drama about a man who discovers his estranged brother is an autistic savant on a road trip",
+   "known": 0.6,
+   "kind": "established"
+  },
+  {
+   "label": "Vincente Minnelli",
+   "qid": "Q51535",
+   "fame": 0.56,
+   "first_win": 1959,
+   "description": "American stage and film director (1903-1986)",
+   "hook": "directed a nostalgic musical following a St. Louis family through the seasons before a world's fair",
+   "known": 0.6,
+   "kind": "golden"
+  },
+  {
+   "label": "John Ford",
+   "qid": "Q51114",
+   "fame": 0.559,
+   "first_win": 1936,
+   "description": "American film director (1894–1973)",
+   "hook": "directed a Depression-era drama following tenant farmers forced from their land and driven west",
+   "known": 0.6,
+   "kind": "golden"
+  },
+  {
+   "label": "James L. Brooks",
+   "qid": "Q95125",
+   "fame": 0.552,
+   "first_win": 1984,
+   "description": "American director, writer, and producer (born 1940)",
+   "hook": "created a long-running animated sitcom following a yellow-skinned family in a fictional town",
+   "known": 0.4,
+   "kind": "classic"
+  },
+  {
+   "label": "David Lean",
+   "qid": "Q55260",
+   "fame": 0.548,
+   "first_win": 1958,
+   "description": "British filmmaker and editor (1908–1991)",
+   "hook": "directed an epic following a British officer who unites Arab tribes during a desert campaign",
+   "known": 0.8,
+   "kind": "golden"
+  },
+  {
+   "label": "Jonathan Demme",
+   "qid": "Q48987",
+   "fame": 0.537,
+   "first_win": 1992,
+   "description": "American filmmaker (1944–2017)",
+   "hook": "directed a psychological thriller about an FBI trainee who seeks a killer's help to catch another murderer",
+   "known": 0.8,
+   "kind": "established"
+  },
+  {
+   "label": "Ethan Coen",
+   "qid": "Q13595531",
+   "fame": 0.533,
+   "first_win": 2008,
+   "description": "American film director, screenwriter, producer, cinematographer and editor (born 1957)",
+   "hook": "co-directed a dark comedy about a pregnant police chief investigating a ransom scheme gone wrong",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Miloš Forman",
+   "qid": "Q51525",
+   "fame": 0.527,
+   "first_win": 1976,
+   "description": "Czech American director, screenwriter, and professor (1932–2018)",
+   "hook": "directed a drama about a rebellious patient who shakes up a strict mental institution's ward",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "Anthony Minghella",
+   "qid": "Q188726",
+   "fame": 0.518,
+   "first_win": 1997,
+   "description": "British film director, playwright and screenwriter (1954-2008)",
+   "hook": "directed a wartime romance about a badly burned man recounting a desert affair to his nurse",
+   "known": 0.6,
+   "kind": "established"
+  },
+  {
+   "label": "Bernardo Bertolucci",
+   "qid": "Q53009",
+   "fame": 0.518,
+   "first_win": 1988,
+   "description": "Italian film director and screenwriter (1941–2018)",
+   "hook": "directed an epic biography following a deposed emperor from his childhood coronation to life as a commoner",
+   "known": 0.6,
+   "kind": "established"
+  },
+  {
+   "label": "Frank Capra",
+   "qid": "Q51492",
+   "fame": 0.504,
+   "first_win": 1935,
+   "description": "Italian-born American film director (1897–1991)",
+   "hook": "directed a beloved holiday classic about a despairing man shown what his town would be like without him",
+   "known": 0.8,
+   "kind": "golden"
+  },
+  {
+   "label": "Joseph L. Mankiewicz",
+   "qid": "Q51583",
+   "fame": 0.493,
+   "first_win": 1950,
+   "description": "American film director, screenwriter, and producer (1909-1993)",
+   "hook": "directed a drama about an ambitious fan who schemes her way into an aging stage star's inner circle",
+   "known": 0.4,
+   "kind": "golden"
+  },
+  {
+   "label": "Jane Campion",
+   "qid": "Q230448",
+   "fame": 0.484,
+   "first_win": 2022,
+   "description": "New Zealand film director, screenwriter and producer (born 1954)",
+   "hook": "directed a drama about a mute pianist who forms a bond with a rugged landowner in colonial New Zealand",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "William Wyler",
+   "qid": "Q51495",
+   "fame": 0.482,
+   "first_win": 1943,
+   "description": "Swiss-German-American director and producer (1902–1981)",
+   "hook": "directed an ancient epic famous for its thrilling chariot race between two former friends",
+   "known": 0.8,
+   "kind": "golden"
+  },
+  {
+   "label": "Robert Wise",
+   "qid": "Q59821",
+   "fame": 0.47,
+   "first_win": 1962,
+   "description": "American film director, film producer and film editor (1914–2005)",
+   "hook": "directed a musical retelling of Romeo and Juliet set among rival street gangs in New York",
+   "known": 0.6,
+   "kind": "golden"
+  },
+  {
+   "label": "Carol Reed",
+   "qid": "Q95143",
+   "fame": 0.467,
+   "first_win": 1969,
+   "description": "English film director (1906–1976)",
+   "hook": "directed a noir thriller set in postwar Vienna about a writer investigating a friend's mysterious death",
+   "known": 0.6,
+   "kind": "golden"
+  },
+  {
+   "label": "John G. Avildsen",
+   "qid": "Q260125",
+   "fame": 0.465,
+   "first_win": 1977,
+   "description": "American film director",
+   "hook": "directed an underdog sports drama about a struggling boxer who gets a shot at the heavyweight title",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "John Schlesinger",
+   "qid": "Q55303",
+   "fame": 0.46,
+   "first_win": 1970,
+   "description": "English film and stage director (1926–2003)",
+   "hook": "directed a drama about an unlikely friendship between a naive hustler and a sickly con man in New York",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Tom Hooper",
+   "qid": "Q295912",
+   "fame": 0.454,
+   "first_win": 2011,
+   "description": "British-Australian filmmaker",
+   "hook": "directed a drama about a stammering monarch preparing with a speech therapist for wartime broadcasts",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "George Cukor",
+   "qid": "Q56014",
+   "fame": 0.45,
+   "first_win": 1965,
+   "description": "American film director and producer (1899–1983)",
+   "hook": "directed a musical about a phonetics professor who transforms a flower seller into high society",
+   "known": 0.8,
+   "kind": "golden"
+  }
+ ]
+}

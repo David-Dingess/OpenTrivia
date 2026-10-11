@@ -1,0 +1,98 @@
+{
+ "id": "list.chemistry.elements-named-after-people",
+ "kind": "list",
+ "title": "Chemical elements named after people",
+ "genre": "science-math-tech",
+ "category": "chemistry",
+ "topic": "elements",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?personLabel WHERE { { SELECT ?item (SAMPLE(?p) AS ?person) WHERE { ?item wdt:P31 wd:Q11344 ; wdt:P138 ?p . ?p wdt:P31 wd:Q5 . } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T04:45:48.917Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T04:45:48.917Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "named_after",
+   "label": "Named after",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "element",
+  "many": "elements",
+  "columns": {}
+ },
+ "impostors": [
+  {
+   "label": "mercury",
+   "qid": "Q925",
+   "why": "not a member: named after a place, a myth or a property, not a person"
+  },
+  {
+   "label": "aluminium",
+   "qid": "Q663",
+   "why": "not a member: named after a place, a myth or a property, not a person"
+  },
+  {
+   "label": "silver",
+   "qid": "Q1090",
+   "why": "not a member: named after a place, a myth or a property, not a person"
+  },
+  {
+   "label": "hydrogen",
+   "qid": "Q556",
+   "why": "not a member: named after a place, a myth or a property, not a person"
+  },
+  {
+   "label": "copper",
+   "qid": "Q753",
+   "why": "not a member: named after a place, a myth or a property, not a person"
+  },
+  {
+   "label": "oxygen",
+   "qid": "Q629",
+   "why": "not a member: named after a place, a myth or a property, not a person"
+  },
+  {
+   "label": "carbon",
+   "qid": "Q623",
+   "why": "not a member: named after a place, a myth or a property, not a person"
+  },
+  {
+   "label": "nitrogen",
+   "qid": "Q627",
+   "why": "not a member: named after a place, a myth or a property, not a person"
+  }
+ ],
+ "rows": [
+  {
+   "label": "oganesson",
+   "qid": "Q1307",
+   "fame": 0.569,
+   "named_after": "Yuri Oganessian",
+   "description": "chemical element with symbol Og and atomic number 118"
+  },
+  {
+   "label": "einsteinium",
+   "qid": "Q1892",
+   "fame": 0.451,
+   "named_after": "Albert Einstein",
+   "description": "chemical element with symbol Es and atomic number 99"
+  }
+ ]
+}

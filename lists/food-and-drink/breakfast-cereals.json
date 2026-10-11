@@ -1,0 +1,511 @@
+{
+ "id": "list.food-and-drink.breakfast-cereals",
+ "title": "Breakfast cereals",
+ "prompt": "Name a breakfast cereal",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "sweets-and-snacks",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { { ?item wdt:P31 wd:Q768267 } UNION { ?item wdt:P279 wd:Q768267 } . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-10-02T11:31:51.861Z"
+ },
+ "rows": [
+  {
+   "label": "muesli",
+   "qid": "Q52406",
+   "fame": 0.504,
+   "also": [
+    "musli"
+   ]
+  },
+  {
+   "label": "corn flakes",
+   "qid": "Q327115",
+   "fame": 0.463,
+   "also": []
+  },
+  {
+   "label": "granola",
+   "qid": "Q119203",
+   "fame": 0.451,
+   "also": [
+    "crunchy muesli"
+   ]
+  },
+  {
+   "label": "Weetabix",
+   "qid": "Q1456721",
+   "fame": 0.446,
+   "also": []
+  },
+  {
+   "label": "Grape-Nuts",
+   "qid": "Q5596987",
+   "fame": 0.42,
+   "also": []
+  },
+  {
+   "label": "Cap'n Crunch",
+   "qid": "Q5034402",
+   "fame": 0.406,
+   "also": [
+    "Captain Crunch"
+   ]
+  },
+  {
+   "label": "Lucky Charms",
+   "qid": "Q3265931",
+   "fame": 0.398,
+   "also": [
+    "Lucky Charms cereal"
+   ]
+  },
+  {
+   "label": "Cheerios",
+   "qid": "Q2425291",
+   "fame": 0.397,
+   "also": []
+  },
+  {
+   "label": "Froot Loops",
+   "qid": "Q3310476",
+   "fame": 0.386,
+   "also": [
+    "Fruit Loops"
+   ]
+  },
+  {
+   "label": "Rice Krispies",
+   "qid": "Q1763921",
+   "fame": 0.383,
+   "also": [
+    "Rice Bubbles"
+   ]
+  },
+  {
+   "label": "Sugar Puffs",
+   "qid": "Q1140959",
+   "fame": 0.368,
+   "also": [
+    "Honey Monster Puffs"
+   ]
+  },
+  {
+   "label": "Frosted Flakes",
+   "qid": "Q2625790",
+   "fame": 0.365,
+   "also": [
+    "Frosted Flakes of Corn",
+    "Frosties",
+    "Sugar Frosted Flakes"
+   ]
+  },
+  {
+   "label": "Honey Smacks",
+   "qid": "Q3137793",
+   "fame": 0.364,
+   "also": []
+  },
+  {
+   "label": "Weet-Bix",
+   "qid": "Q7979629",
+   "fame": 0.359,
+   "also": []
+  },
+  {
+   "label": "Cinnamon Toast Crunch",
+   "qid": "Q3303481",
+   "fame": 0.35,
+   "also": [
+    "Curiously Cinnamon",
+    "Cini Minis",
+    "Cinnamon Grahams",
+    "Croque-Cannelle"
+   ]
+  },
+  {
+   "label": "Trix cereal",
+   "qid": "Q7844698",
+   "fame": 0.349,
+   "also": [
+    "Trix"
+   ]
+  },
+  {
+   "label": "Shredded Wheat",
+   "qid": "Q7503454",
+   "fame": 0.347,
+   "also": []
+  },
+  {
+   "label": "Cocoa Puffs",
+   "qid": "Q5139769",
+   "fame": 0.335,
+   "also": []
+  },
+  {
+   "label": "Pebbles cereal",
+   "qid": "Q16204375",
+   "fame": 0.333,
+   "also": [
+    "Pebbles",
+    "Fruity Pebbles"
+   ]
+  },
+  {
+   "label": "Honey Nut Cheerios",
+   "qid": "Q16995801",
+   "fame": 0.326,
+   "also": []
+  },
+  {
+   "label": "Wheaties",
+   "qid": "Q286455",
+   "fame": 0.32,
+   "also": []
+  },
+  {
+   "label": "Special K",
+   "qid": "Q3492829",
+   "fame": 0.315,
+   "also": [
+    "Kellogg Special K"
+   ]
+  },
+  {
+   "label": "Cocoa Krispies",
+   "qid": "Q2981339",
+   "fame": 0.314,
+   "also": [
+    "Coco Pops"
+   ]
+  },
+  {
+   "label": "Corn Pops",
+   "qid": "Q3308127",
+   "fame": 0.302,
+   "also": [
+    "Sugar Corn Pops",
+    "Sugar Pops"
+   ]
+  },
+  {
+   "label": "Chex",
+   "qid": "Q5094553",
+   "fame": 0.293,
+   "also": []
+  },
+  {
+   "label": "Cerelac",
+   "qid": "Q5064145",
+   "fame": 0.292,
+   "also": []
+  },
+  {
+   "label": "Frosted Mini-Wheats",
+   "qid": "Q5506199",
+   "fame": 0.291,
+   "also": [
+    "Frosted Wheats",
+    "Mini Max",
+    "Mini-Wheats",
+    "Toppas"
+   ]
+  },
+  {
+   "label": "Kix",
+   "qid": "Q16998475",
+   "fame": 0.29,
+   "also": []
+  },
+  {
+   "label": "Golden Crisp",
+   "qid": "Q5579292",
+   "fame": 0.289,
+   "also": [
+    "Happy Jax",
+    "Sugar Crisp",
+    "Super Golden Crisp",
+    "Super Sugar Crisp"
+   ]
+  },
+  {
+   "label": "raisin bran",
+   "qid": "Q7285132",
+   "fame": 0.285,
+   "also": [
+    "sultana bran"
+   ]
+  },
+  {
+   "label": "Alpha-Bits",
+   "qid": "Q4734898",
+   "fame": 0.281,
+   "also": []
+  },
+  {
+   "label": "Reese's Puffs",
+   "qid": "Q7306988",
+   "fame": 0.278,
+   "also": []
+  },
+  {
+   "label": "Life",
+   "qid": "Q6544682",
+   "fame": 0.275,
+   "also": [
+    "Life cereal"
+   ]
+  },
+  {
+   "label": "Golden Grahams",
+   "qid": "Q3110068",
+   "fame": 0.272,
+   "also": []
+  },
+  {
+   "label": "Honeycomb cereal",
+   "qid": "Q5893751",
+   "fame": 0.271,
+   "also": [
+    "Honeycomb"
+   ]
+  },
+  {
+   "label": "All-Bran",
+   "qid": "Q4727808",
+   "fame": 0.265,
+   "also": []
+  },
+  {
+   "label": "Quisp",
+   "qid": "Q7272623",
+   "fame": 0.264,
+   "also": []
+  },
+  {
+   "label": "bran flakes",
+   "qid": "Q55605867",
+   "fame": 0.253,
+   "also": []
+  },
+  {
+   "label": "Nesquik Cereal",
+   "qid": "Q16242783",
+   "fame": 0.237,
+   "also": [
+    "Nesquik",
+    "Nesquik cereals"
+   ]
+  },
+  {
+   "label": "Ready Brek",
+   "qid": "Q428126",
+   "fame": 0.233,
+   "also": []
+  },
+  {
+   "label": "Krave",
+   "qid": "Q25488759",
+   "fame": 0.23,
+   "also": [
+    "Kelloggs Krave"
+   ]
+  },
+  {
+   "label": "Chocapic",
+   "qid": "Q2964257",
+   "fame": 0.225,
+   "also": [
+    "Chocopic",
+    "Koko Krunch"
+   ]
+  },
+  {
+   "label": "Crunchy Nut",
+   "qid": "Q5190104",
+   "fame": 0.223,
+   "also": [
+    "Crunchy Nut Corn Flakes",
+    "Honey & Nut Corn Flakes",
+    "Nut & Honey Crunch"
+   ]
+  },
+  {
+   "label": "Honey Bunches of Oats",
+   "qid": "Q16252953",
+   "fame": 0.217,
+   "also": []
+  },
+  {
+   "label": "Post Toasties",
+   "qid": "Q7233723",
+   "fame": 0.204,
+   "also": [
+    "Elijah's Manna"
+   ]
+  },
+  {
+   "label": "Waffle Crisp",
+   "qid": "Q7959431",
+   "fame": 0.199,
+   "also": []
+  },
+  {
+   "label": "Maypo",
+   "qid": "Q6797913",
+   "fame": 0.186,
+   "also": []
+  },
+  {
+   "label": "Honey Loops",
+   "qid": "Q5893572",
+   "fame": 0.178,
+   "also": [
+    "Honey Pops"
+   ]
+  },
+  {
+   "label": "Oh's",
+   "qid": "Q16258109",
+   "fame": 0.171,
+   "also": [
+    "Honey Ohs!"
+   ]
+  },
+  {
+   "label": "CoCo Wheats",
+   "qid": "Q5137523",
+   "fame": 0.16,
+   "also": []
+  },
+  {
+   "label": "Nintendo Cereal System",
+   "qid": "Q7039139",
+   "fame": 0.153,
+   "also": []
+  },
+  {
+   "label": "Just Right",
+   "qid": "Q6316329",
+   "fame": 0.151,
+   "also": [
+    "Kellogg Just Right"
+   ]
+  },
+  {
+   "label": "Weetos",
+   "qid": "Q7979642",
+   "fame": 0.137,
+   "also": []
+  },
+  {
+   "label": "Buc Wheats cereal",
+   "qid": "Q4982336",
+   "fame": 0.136,
+   "also": [
+    "Buc Wheats"
+   ]
+  },
+  {
+   "label": "Fitness cereal",
+   "qid": "Q19604398",
+   "fame": 0.128,
+   "also": [
+    "Fitness",
+    "Fitnesse",
+    "Nestlé Fitness"
+   ]
+  },
+  {
+   "label": "Lion Cereal",
+   "qid": "Q16242511",
+   "fame": 0.097,
+   "also": []
+  },
+  {
+   "label": "Baron von Redberry",
+   "qid": "Q4862963",
+   "fame": 0.08,
+   "also": [
+    "Sir Grapefellow and Baron von Redberry"
+   ]
+  },
+  {
+   "label": "C.W. Post",
+   "qid": "Q5006238",
+   "fame": 0.07,
+   "also": []
+  },
+  {
+   "label": "Raisin Wheats",
+   "qid": "Q7285134",
+   "fame": 0.053,
+   "also": []
+  },
+  {
+   "label": "Fruit 'n Fibre",
+   "qid": "Q5506355",
+   "fame": 0.011,
+   "also": [
+    "Fruit and fibre"
+   ]
+  },
+  {
+   "label": "Country Store",
+   "qid": "Q5177432",
+   "fame": 0.009,
+   "also": []
+  },
+  {
+   "label": "Triples",
+   "qid": "Q7843581",
+   "fame": 0.009,
+   "also": []
+  },
+  {
+   "label": "Halfsies",
+   "qid": "Q5641912",
+   "fame": 0.007,
+   "also": []
+  },
+  {
+   "label": "Total",
+   "qid": "Q7827948",
+   "fame": 0.006,
+   "also": []
+  },
+  {
+   "label": "Green Onion Chex",
+   "qid": "Q99879443",
+   "fame": 0,
+   "also": [
+    "Chex Green Onion",
+    "Pa-mat Chex"
+   ]
+  },
+  {
+   "label": "Ice Cream Cones",
+   "qid": "Q16996497",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Plus",
+   "qid": "Q17022128",
+   "fame": 0,
+   "also": [
+    "Flakes Plus"
+   ]
+  },
+  {
+   "label": "S'mores Grahams",
+   "qid": "Q7387022",
+   "fame": 0,
+   "also": []
+  }
+ ]
+}

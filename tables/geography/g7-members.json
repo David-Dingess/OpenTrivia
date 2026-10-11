@@ -1,0 +1,105 @@
+{
+ "id": "list.geography.g7-members",
+ "kind": "list",
+ "title": "G7 member countries",
+ "genre": "society",
+ "category": "geography",
+ "topic": "borders-and-maps",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { ?item wdt:P31 wd:Q3624078 . FILTER NOT EXISTS { ?item wdt:P31 wd:Q3024240 } FILTER NOT EXISTS { ?item wdt:P576 [] } { ?item p:P463 ?st . ?st ps:P463 wd:Q1764511 . FILTER NOT EXISTS { ?st pq:P582 [] } } UNION { wd:Q1764511 wdt:P527 ?item } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T03:20:15.919Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T03:20:15.919Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "member",
+  "many": "G7 members",
+  "columns": {}
+ },
+ "impostors": [
+  {
+   "label": "India",
+   "qid": "Q668",
+   "why": "not a member: a G20 country that is not in the G7"
+  },
+  {
+   "label": "China",
+   "qid": "Q148",
+   "why": "not a member: a G20 country that is not in the G7"
+  },
+  {
+   "label": "Russia",
+   "qid": "Q159",
+   "why": "not a member: a G20 country that is not in the G7"
+  },
+  {
+   "label": "Turkey",
+   "qid": "Q43",
+   "why": "not a member: a G20 country that is not in the G7"
+  },
+  {
+   "label": "Mexico",
+   "qid": "Q96",
+   "why": "not a member: a G20 country that is not in the G7"
+  }
+ ],
+ "rows": [
+  {
+   "label": "United States",
+   "qid": "Q30",
+   "fame": 0.929,
+   "description": "country located primarily in North America"
+  },
+  {
+   "label": "United Kingdom",
+   "qid": "Q145",
+   "fame": 0.829,
+   "description": "island country in north-west Europe"
+  },
+  {
+   "label": "Canada",
+   "qid": "Q16",
+   "fame": 0.793,
+   "description": "country in North America"
+  },
+  {
+   "label": "Germany",
+   "qid": "Q183",
+   "fame": 0.786,
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Japan",
+   "qid": "Q17",
+   "fame": 0.776,
+   "description": "island country in East Asia"
+  },
+  {
+   "label": "France",
+   "qid": "Q142",
+   "fame": 0.755,
+   "description": "country in Western Europe and other continents (through its overseas territories in America, Africa and Oceania)"
+  },
+  {
+   "label": "Italy",
+   "qid": "Q38",
+   "fame": 0.739,
+   "description": "country in southern Europe"
+  }
+ ]
+}

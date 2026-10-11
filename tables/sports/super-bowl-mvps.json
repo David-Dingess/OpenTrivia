@@ -1,0 +1,399 @@
+{
+ "id": "table.sports.super-bowl-mvps",
+ "kind": "table",
+ "title": "Super Bowl MVPs and the team they won it with",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "football",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?teamLabel WHERE { VALUES (?item ?teamLabel) { (wd:Q809211 \"Green Bay Packers\") (wd:Q720558 \"New York Jets\") (wd:Q726229 \"Kansas City Chiefs\") (wd:Q736932 \"Dallas Cowboys\") (wd:Q322663 \"Miami Dolphins\") (wd:Q1333547 \"Pittsburgh Steelers\") (wd:Q441528 \"Pittsburgh Steelers\") (wd:Q633263 \"Pittsburgh Steelers\") (wd:Q726211 \"Oakland Raiders\") (wd:Q348011 \"San Francisco 49ers\") (wd:Q379491 \"Los Angeles Raiders\") (wd:Q3934792 \"Chicago Bears\") (wd:Q596953 \"New York Giants\") (wd:Q505423 \"San Francisco 49ers\") (wd:Q3357777 \"New York Giants\") (wd:Q525002 \"Dallas Cowboys\") (wd:Q1338802 \"Dallas Cowboys\") (wd:Q740086 \"San Francisco 49ers\") (wd:Q509646 \"Green Bay Packers\") (wd:Q732266 \"Denver Broncos\") (wd:Q432931 \"Denver Broncos\") (wd:Q945750 \"St. Louis Rams\") (wd:Q44428 \"Baltimore Ravens\") (wd:Q7539 \"Indianapolis Colts\") (wd:Q316187 \"New York Giants\") (wd:Q38952 \"New Orleans Saints\") (wd:Q302581 \"Green Bay Packers\") (wd:Q795406 \"Baltimore Ravens\") (wd:Q1823140 \"Denver Broncos\") (wd:Q3876006 \"Philadelphia Eagles\") (wd:Q448961 \"New England Patriots\") (wd:Q19667998 \"Kansas City Chiefs\") (wd:Q16235552 \"Los Angeles Rams\") (wd:Q26923572 \"Philadelphia Eagles\") (wd:Q108602387 \"Seattle Seahawks\") (wd:Q3752602 \"Oakland Raiders\") (wd:Q482838 \"Pittsburgh Steelers\") (wd:Q717908 \"Pittsburgh Steelers\") (wd:Q780333 \"New England Patriots\") (wd:Q3025619 \"Tampa Bay Buccaneers\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-10-03T01:40:12.161Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-03T01:40:12.161Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "team",
+   "label": "Team",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "Super Bowl MVP",
+  "many": "Super Bowl MVPs",
+  "wildcard": "person",
+  "columns": {
+   "team": {
+    "role": "link",
+    "pick": "Which team was {label} playing for when named Super Bowl MVP?",
+    "statement": "{label} was named Super Bowl MVP while playing for {value}.",
+    "match": "Match each Super Bowl MVP to the team they won it with.",
+    "odd": "Three of these Super Bowl MVPs won it with {value}. Which one didn't?",
+    "all": "Tap all {n} Super Bowl MVPs who won it with {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Aaron Rodgers",
+   "qid": "Q302581",
+   "fame": 0.818,
+   "team": "Green Bay Packers",
+   "description": "American football player (born 1983)",
+   "hook": "succeeded Brett Favre as a starting quarterback and won four league MVP awards",
+   "known": 0.8,
+   "kind": "qb"
+  },
+  {
+   "label": "Kenneth Walker III",
+   "qid": "Q108602387",
+   "fame": 0.807,
+   "team": "Seattle Seahawks",
+   "description": "American football player (born 2000)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "rb"
+  },
+  {
+   "label": "Patrick Mahomes",
+   "qid": "Q19667998",
+   "fame": 0.766,
+   "team": "Kansas City Chiefs",
+   "description": "American football player (born 1995)",
+   "hook": "is a quarterback famous for no-look passes and sidearm throws on the way to multiple championship rings",
+   "known": 0.95,
+   "kind": "qb"
+  },
+  {
+   "label": "Peyton Manning",
+   "qid": "Q7539",
+   "fame": 0.76,
+   "team": "Indianapolis Colts",
+   "description": "American football player (born 1976)",
+   "hook": "is a quarterback famous for loud pre-snap audibles, often shouting 'Omaha'",
+   "known": 0.95,
+   "kind": "qb"
+  },
+  {
+   "label": "Eli Manning",
+   "qid": "Q316187",
+   "fame": 0.733,
+   "team": "New York Giants",
+   "description": "American football player (born 1981)",
+   "hook": "is a quarterback who twice beat Tom Brady's team in the title game, including a famous helmet catch drive",
+   "known": 0.8,
+   "kind": "qb"
+  },
+  {
+   "label": "Jalen Hurts",
+   "qid": "Q26923572",
+   "fame": 0.704,
+   "team": "Philadelphia Eagles",
+   "description": "American football player (born 1998)",
+   "hook": "is a quarterback famous for a nearly unstoppable quarterback sneak play nicknamed the 'Brotherly Shove'",
+   "known": 0.4,
+   "kind": "qb"
+  },
+  {
+   "label": "Kurt Warner",
+   "qid": "Q945750",
+   "fame": 0.687,
+   "team": "St. Louis Rams",
+   "description": "American football player (born 1971)",
+   "hook": "is a Hall of Fame quarterback who went from stocking grocery shelves to league MVP",
+   "known": 0.6,
+   "kind": "qb"
+  },
+  {
+   "label": "Terry Bradshaw",
+   "qid": "Q633263",
+   "fame": 0.679,
+   "team": "Pittsburgh Steelers",
+   "description": "American football player and sports analyst (born 1948)",
+   "hook": "was a quarterback who won four championships in six seasons and later became a TV studio host",
+   "known": 0.8,
+   "kind": "qb"
+  },
+  {
+   "label": "Troy Aikman",
+   "qid": "Q525002",
+   "fame": 0.672,
+   "team": "Dallas Cowboys",
+   "description": "American professional football player",
+   "hook": "was a quarterback of a 1990s dynasty and teamed with Emmitt Smith and Michael Irvin",
+   "known": 0.95,
+   "kind": "qb"
+  },
+  {
+   "label": "Joe Flacco",
+   "qid": "Q795406",
+   "fame": 0.665,
+   "team": "Baltimore Ravens",
+   "description": "American football player (born 1985)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "qb"
+  },
+  {
+   "label": "Cooper Kupp",
+   "qid": "Q16235552",
+   "fame": 0.662,
+   "team": "Los Angeles Rams",
+   "description": "American football player (born 1993)",
+   "hook": "is a wide receiver who won the receiving triple crown in a record-setting season",
+   "known": 0.6,
+   "kind": "wr"
+  },
+  {
+   "label": "Drew Brees",
+   "qid": "Q38952",
+   "fame": 0.657,
+   "team": "New Orleans Saints",
+   "description": "American football player and television analyst (born 1979)",
+   "hook": "is a quarterback who rallied a Gulf Coast city after Hurricane Katrina and set a career passing yards record",
+   "known": 0.95,
+   "kind": "qb"
+  },
+  {
+   "label": "John Elway",
+   "qid": "Q432931",
+   "fame": 0.632,
+   "team": "Denver Broncos",
+   "description": "American football player and executive",
+   "hook": "was a quarterback who retired after back-to-back titles and later ran the front office of his old team",
+   "known": 0.95,
+   "kind": "qb"
+  },
+  {
+   "label": "Emmitt Smith",
+   "qid": "Q1338802",
+   "fame": 0.627,
+   "team": "Dallas Cowboys",
+   "description": "American football player (born 1969)",
+   "hook": "is the NFL's all-time leading rusher",
+   "known": 0.8,
+   "kind": "rb"
+  },
+  {
+   "label": "Jerry Rice",
+   "qid": "Q505423",
+   "fame": 0.627,
+   "team": "San Francisco 49ers",
+   "description": "American football player (born 1962)",
+   "hook": "is widely considered the greatest wide receiver ever, holding the career records for yards and touchdowns",
+   "known": 0.95,
+   "kind": "wr"
+  },
+  {
+   "label": "Von Miller",
+   "qid": "Q1823140",
+   "fame": 0.625,
+   "team": "Denver Broncos",
+   "description": "American football player (born 1989)",
+   "hook": "is a star pass rusher who earned the title-game MVP as a defender",
+   "known": 0.4,
+   "kind": "defense"
+  },
+  {
+   "label": "Joe Montana",
+   "qid": "Q348011",
+   "fame": 0.624,
+   "team": "San Francisco 49ers",
+   "description": "American football player (born 1956)",
+   "hook": "was a quarterback famed for calm late-game comebacks and four championship wins",
+   "known": 0.95,
+   "kind": "qb"
+  },
+  {
+   "label": "Nick Foles",
+   "qid": "Q3876006",
+   "fame": 0.621,
+   "team": "Philadelphia Eagles",
+   "description": "American football player (born 1989)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "qb"
+  },
+  {
+   "label": "Ray Lewis",
+   "qid": "Q44428",
+   "fame": 0.609,
+   "team": "Baltimore Ravens",
+   "description": "American football player (born 1975)",
+   "hook": "was a menacing linebacker famous for his energetic pregame dance",
+   "known": 0.6,
+   "kind": "defense"
+  },
+  {
+   "label": "Joe Namath",
+   "qid": "Q720558",
+   "fame": 0.598,
+   "team": "New York Jets",
+   "description": "American football player (born 1943)",
+   "hook": "famously guaranteed an upset win before the biggest game of his career",
+   "known": 0.8,
+   "kind": "qb"
+  },
+  {
+   "label": "Hines Ward",
+   "qid": "Q482838",
+   "fame": 0.589,
+   "team": "Pittsburgh Steelers",
+   "description": "American football player",
+   "hook": "was a receiver known for his constant smile and ferocious downfield blocking",
+   "known": 0.4,
+   "kind": "wr"
+  },
+  {
+   "label": "Steve Young",
+   "qid": "Q740086",
+   "fame": 0.581,
+   "team": "San Francisco 49ers",
+   "description": "American football player and analyst",
+   "hook": "was a left-handed quarterback who replaced a legend and threw six touchdowns in a title game",
+   "known": 0.8,
+   "kind": "qb"
+  },
+  {
+   "label": "Julian Edelman",
+   "qid": "Q448961",
+   "fame": 0.576,
+   "team": "New England Patriots",
+   "description": "American football player (born 1986)",
+   "hook": "was a receiver famed for a juggling catch just off the turf in a huge comeback win",
+   "known": 0.6,
+   "kind": "wr"
+  },
+  {
+   "label": "Desmond Howard",
+   "qid": "Q509646",
+   "fame": 0.565,
+   "team": "Green Bay Packers",
+   "description": "American football player (born 1970)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "defense"
+  },
+  {
+   "label": "Roger Staubach",
+   "qid": "Q736932",
+   "fame": 0.56,
+   "team": "Dallas Cowboys",
+   "description": "American football player and Navy officer (born 1942)",
+   "hook": "was a Navy graduate quarterback nicknamed 'Captain America' and known for his Hail Mary pass",
+   "known": 0.8,
+   "kind": "qb"
+  },
+  {
+   "label": "Marcus Allen",
+   "qid": "Q379491",
+   "fame": 0.528,
+   "team": "Los Angeles Raiders",
+   "description": "American football player and analyst (born 1960)",
+   "hook": "was a running back who set a long-standing record with a 74-yard touchdown run in a title game",
+   "known": 0.6,
+   "kind": "rb"
+  },
+  {
+   "label": "Phil Simms",
+   "qid": "Q596953",
+   "fame": 0.518,
+   "team": "New York Giants",
+   "description": "American football player and sportscaster (born 1955)",
+   "hook": "was a quarterback who completed nearly every pass in a title game, then became a TV analyst",
+   "known": 0.4,
+   "kind": "qb"
+  },
+  {
+   "label": "Jim Plunkett",
+   "qid": "Q726211",
+   "fame": 0.517,
+   "team": "Oakland Raiders",
+   "description": "American football player (born 1947)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "qb"
+  },
+  {
+   "label": "Terrell Davis",
+   "qid": "Q732266",
+   "fame": 0.497,
+   "team": "Denver Broncos",
+   "description": "former American football running back",
+   "hook": "was a running back who played through a migraine to help win a championship",
+   "known": 0.6,
+   "kind": "rb"
+  },
+  {
+   "label": "Bart Starr",
+   "qid": "Q809211",
+   "fame": 0.481,
+   "team": "Green Bay Packers",
+   "description": "American football player, coach, executive (1934-2019)",
+   "hook": "led a legendary coach's team to wins in the first two title games",
+   "known": 0.95,
+   "kind": "qb"
+  },
+  {
+   "label": "Franco Harris",
+   "qid": "Q1333547",
+   "fame": 0.479,
+   "team": "Pittsburgh Steelers",
+   "description": "American football player (1950–2022)",
+   "hook": "is remembered for the 'Immaculate Reception', one of the most famous plays ever",
+   "known": 0.6,
+   "kind": "rb"
+  },
+  {
+   "label": "Larry Csonka",
+   "qid": "Q322663",
+   "fame": 0.478,
+   "team": "Miami Dolphins",
+   "description": "player of American football",
+   "hook": null,
+   "known": 0.2,
+   "kind": "rb"
+  },
+  {
+   "label": "Lynn Swann",
+   "qid": "Q441528",
+   "fame": 0.468,
+   "team": "Pittsburgh Steelers",
+   "description": "American football player and politician (born 1952)",
+   "hook": "was a ballet-trained receiver famed for acrobatic catches",
+   "known": 0.6,
+   "kind": "wr"
+  },
+  {
+   "label": "Fred Biletnikoff",
+   "qid": "Q3752602",
+   "fame": 0.459,
+   "team": "Oakland Raiders",
+   "description": "American football player and coach",
+   "hook": null,
+   "known": 0.05,
+   "kind": "wr"
+  }
+ ]
+}

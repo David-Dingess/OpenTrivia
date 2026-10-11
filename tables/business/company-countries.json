@@ -1,0 +1,1500 @@
+{
+ "id": "table.business.company-countries",
+ "kind": "table",
+ "title": "Famous companies and their home country",
+ "genre": "daily-life",
+ "category": "business",
+ "topic": "big-companies",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { VALUES ?cls { wd:Q4830453 wd:Q6881511 wd:Q783794 wd:Q891723 wd:Q167037 wd:Q778575 wd:Q786820 wd:Q210167 wd:Q18509232 wd:Q2085381 wd:Q1331793 } ?item wdt:P31 ?cls ; wdt:P17 ?c ; wikibase:sitelinks ?sl . FILTER(?sl >= 30) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T11:43:25.698Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T11:43:25.698Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "company",
+  "many": "companies",
+  "hookAsk": "Which company {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} based in?",
+    "statement": "{label} is based in {value}.",
+    "match": "Match each company to its country.",
+    "odd": "Three of these companies are based in {value}. Which one isn't?",
+    "all": "Tap all {n} companies based in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Google",
+   "qid": "Q95",
+   "fame": 0.829,
+   "country": "United States",
+   "description": "American multinational technology company, a subsidiary of Alphabet Inc.",
+   "hook": "runs the world's most used search engine",
+   "known": 0.95,
+   "kind": "tech"
+  },
+  {
+   "label": "Apple Inc.",
+   "qid": "Q312",
+   "fame": 0.777,
+   "country": "United States",
+   "description": "American multinational technology company based in Cupertino, California",
+   "hook": "makes the iPhone and Mac computers",
+   "known": 0.95,
+   "kind": "tech"
+  },
+  {
+   "label": "OpenAI",
+   "qid": "Q21708200",
+   "fame": 0.77,
+   "country": "United States",
+   "description": "American artificial intelligence research organization",
+   "hook": "created the ChatGPT chatbot",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "Amazon",
+   "qid": "Q3884",
+   "fame": 0.749,
+   "country": "United States",
+   "description": "American multinational technology company",
+   "hook": "runs the world's largest online shopping marketplace",
+   "known": 0.95,
+   "kind": "retail"
+  },
+  {
+   "label": "Microsoft",
+   "qid": "Q2283",
+   "fame": 0.746,
+   "country": "United States",
+   "description": "American multinational technology corporation",
+   "hook": "makes the Windows operating system and Office software",
+   "known": 0.95,
+   "kind": "tech"
+  },
+  {
+   "label": "Netflix",
+   "qid": "Q907311",
+   "fame": 0.727,
+   "country": "United States",
+   "description": "American subscription video on-demand over-the-top streaming service",
+   "hook": "streams movies and TV shows to subscribers worldwide",
+   "known": 0.8,
+   "kind": "media"
+  },
+  {
+   "label": "Yandex",
+   "qid": "Q5281",
+   "fame": 0.723,
+   "country": "Russia",
+   "description": "Russian technology company",
+   "hook": "runs a search engine, maps and ride-hailing apps used by millions daily",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Nvidia",
+   "qid": "Q182477",
+   "fame": 0.722,
+   "country": "United States",
+   "description": "American multinational technology company",
+   "hook": "makes the graphics chips that power gaming and AI",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "Meta Platforms",
+   "qid": "Q380",
+   "fame": 0.681,
+   "country": "United States",
+   "description": "American technology company",
+   "hook": "owns Facebook and Instagram",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "McDonald's",
+   "qid": "Q38076",
+   "fame": 0.677,
+   "country": "United States",
+   "description": "American fast food restaurant chain",
+   "hook": "sells the Big Mac under its golden arches",
+   "known": 0.95,
+   "kind": "food"
+  },
+  {
+   "label": "The Walt Disney Company",
+   "qid": "Q7414",
+   "fame": 0.674,
+   "country": "United States",
+   "description": "American multinational mass media company",
+   "hook": "created Mickey Mouse and runs theme parks worldwide",
+   "known": 0.95,
+   "kind": "media"
+  },
+  {
+   "label": "Walmart",
+   "qid": "Q483551",
+   "fame": 0.671,
+   "country": "United States",
+   "description": "U.S. discount retailer based in Arkansas",
+   "hook": "runs the world's largest chain of discount superstores",
+   "known": 0.8,
+   "kind": "retail"
+  },
+  {
+   "label": "Nintendo",
+   "qid": "Q8093",
+   "fame": 0.67,
+   "country": "Japan",
+   "description": "Japanese multinational video game and consumer electronics company",
+   "hook": "created Mario and the Switch game console",
+   "known": 0.8,
+   "kind": "media"
+  },
+  {
+   "label": "Alphabet Inc.",
+   "qid": "Q20800404",
+   "fame": 0.66,
+   "country": "United States",
+   "description": "American multinational technology conglomerate",
+   "hook": "is the parent company that owns Google",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Pixar",
+   "qid": "Q127552",
+   "fame": 0.659,
+   "country": "United States",
+   "description": "American computer animation studio",
+   "hook": "made the Toy Story films",
+   "known": 0.6,
+   "kind": "media"
+  },
+  {
+   "label": "United Airlines",
+   "qid": "Q174769",
+   "fame": 0.659,
+   "country": "United States",
+   "description": "American airline",
+   "hook": "flies passengers using one of the largest fleets of planes in the world",
+   "known": 0.6,
+   "kind": "airline"
+  },
+  {
+   "label": "Oracle Corporation",
+   "qid": "Q19900",
+   "fame": 0.657,
+   "country": "United States",
+   "description": "American multinational computer corporation",
+   "hook": "makes widely used database software for businesses",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "SpaceX",
+   "qid": "Q193701",
+   "fame": 0.651,
+   "country": "United States",
+   "description": "American spaceflight and AI company",
+   "hook": "launches reusable rockets and built the Falcon 9",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "Tesla",
+   "qid": "Q478214",
+   "fame": 0.651,
+   "country": "United States",
+   "description": "American automotive, energy storage and solar power company",
+   "hook": "makes electric cars with names like Model 3 and Model S",
+   "known": 0.8,
+   "kind": "automotive"
+  },
+  {
+   "label": "BMW",
+   "qid": "Q26678",
+   "fame": 0.65,
+   "country": "Germany",
+   "description": "German automobile manufacturer, and conglomerate",
+   "hook": "makes luxury cars known for their blue-and-white roundel badge",
+   "known": 0.8,
+   "kind": "automotive"
+  },
+  {
+   "label": "Nike, Inc.",
+   "qid": "Q483915",
+   "fame": 0.649,
+   "country": "United States",
+   "description": "American athletic equipment company",
+   "hook": "makes sneakers behind the swoosh logo",
+   "known": 0.8,
+   "kind": "fashion"
+  },
+  {
+   "label": "Toyota",
+   "qid": "Q53268",
+   "fame": 0.64,
+   "country": "Japan",
+   "description": "Japanese multinational automotive manufacturer",
+   "hook": "makes the Corolla and Camry, among the world's best-selling cars",
+   "known": 0.95,
+   "kind": "automotive"
+  },
+  {
+   "label": "Sony Group",
+   "qid": "Q41187",
+   "fame": 0.639,
+   "country": "Japan",
+   "description": "Japanese multinational conglomerate corporation",
+   "hook": "makes the PlayStation game console",
+   "known": 0.8,
+   "kind": "media"
+  },
+  {
+   "label": "Ford Motor Company",
+   "qid": "Q44294",
+   "fame": 0.638,
+   "country": "United States",
+   "description": "American multinational automotive company",
+   "hook": "makes the Mustang and F-150 pickup truck",
+   "known": 0.8,
+   "kind": "automotive"
+  },
+  {
+   "label": "Rotten Tomatoes",
+   "qid": "Q105584",
+   "fame": 0.638,
+   "country": "United States",
+   "description": "American review aggregator for film and television",
+   "hook": "gives movies and TV shows a percentage score from critic reviews",
+   "known": 0.4,
+   "kind": "media"
+  },
+  {
+   "label": "Delta Air Lines",
+   "qid": "Q188920",
+   "fame": 0.637,
+   "country": "United States",
+   "description": "airline in the United States (1929–present)",
+   "hook": "flies passengers to hundreds of destinations from its Atlanta hub",
+   "known": 0.6,
+   "kind": "airline"
+  },
+  {
+   "label": "General Motors",
+   "qid": "Q81965",
+   "fame": 0.636,
+   "country": "United States",
+   "description": "American multinational automotive company",
+   "hook": "makes Chevrolet and Cadillac vehicles",
+   "known": 0.6,
+   "kind": "automotive"
+  },
+  {
+   "label": "Marvel Comics",
+   "qid": "Q173496",
+   "fame": 0.636,
+   "country": "United States",
+   "description": "company that publishes comic books and related media",
+   "hook": "created Spider-Man and the Avengers",
+   "known": 0.6,
+   "kind": "media"
+  },
+  {
+   "label": "Valve Corporation",
+   "qid": "Q193559",
+   "fame": 0.635,
+   "country": "United States",
+   "description": "American video game development and digital distribution company",
+   "hook": "runs the Steam digital game store",
+   "known": 0.8,
+   "kind": "media"
+  },
+  {
+   "label": "Adidas AG",
+   "qid": "Q3895",
+   "fame": 0.631,
+   "country": "Germany",
+   "description": "German multinational corporation",
+   "hook": "makes sportswear known for its three stripes",
+   "known": 0.8,
+   "kind": "fashion"
+  },
+  {
+   "label": "Boeing",
+   "qid": "Q66",
+   "fame": 0.63,
+   "country": "United States",
+   "description": "American global aerospace and defense corporation",
+   "hook": "builds the 747 jumbo jet and other passenger airliners",
+   "known": 0.8,
+   "kind": "aerospace"
+  },
+  {
+   "label": "Nestlé",
+   "qid": "Q160746",
+   "fame": 0.63,
+   "country": "Switzerland",
+   "description": "Swiss multi-national food and beverage company",
+   "hook": "makes KitKat and other chocolate and food brands",
+   "known": 0.6,
+   "kind": "food"
+  },
+  {
+   "label": "Ryanair",
+   "qid": "Q170614",
+   "fame": 0.627,
+   "country": "Ireland",
+   "description": "low-cost airline of Ireland",
+   "hook": "flies passengers on one of Europe's biggest low-cost airlines",
+   "known": 0.6,
+   "kind": "airline"
+  },
+  {
+   "label": "Mercedes-Benz",
+   "qid": "Q36008",
+   "fame": 0.622,
+   "country": "Germany",
+   "description": "German automobile brand owned by Mercedes-Benz AG",
+   "hook": "makes luxury cars marked with a three-pointed star badge",
+   "known": 0.8,
+   "kind": "automotive"
+  },
+  {
+   "label": "Volkswagen",
+   "qid": "Q246",
+   "fame": 0.622,
+   "country": "Germany",
+   "description": "German automotive brand; manufacturing subsidiary of Volkswagen Group",
+   "hook": "makes the Beetle and Golf hatchback",
+   "known": 0.8,
+   "kind": "automotive"
+  },
+  {
+   "label": "Metro-Goldwyn-Mayer",
+   "qid": "Q179200",
+   "fame": 0.619,
+   "country": "United States",
+   "description": "American film and television and distribution company",
+   "hook": "opens its films with a roaring lion logo",
+   "known": 0.4,
+   "kind": "media"
+  },
+  {
+   "label": "eBay",
+   "qid": "Q58024",
+   "fame": 0.618,
+   "country": "United States",
+   "description": "American multinational internet corporation that manages eBay.com",
+   "hook": "runs an online marketplace built around auctions and bidding",
+   "known": 0.8,
+   "kind": "retail"
+  },
+  {
+   "label": "Nokia",
+   "qid": "Q1418",
+   "fame": 0.618,
+   "country": "Finland",
+   "description": "Finnish multinational telecommunications and information technology company",
+   "hook": "once made the world's best-selling mobile phones",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "Lufthansa",
+   "qid": "Q9325",
+   "fame": 0.614,
+   "country": "Germany",
+   "description": "Flag-carrier and largest airline of Germany",
+   "hook": "flies passengers as one of Europe's biggest airlines",
+   "known": 0.6,
+   "kind": "airline"
+  },
+  {
+   "label": "IBM",
+   "qid": "Q37156",
+   "fame": 0.613,
+   "country": "United States",
+   "description": "American multinational technology company",
+   "hook": "built the Deep Blue computer that beat a chess world champion",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Lockheed Martin",
+   "qid": "Q7240",
+   "fame": 0.613,
+   "country": "United States",
+   "description": "US aerospace and defense manufacturer",
+   "hook": "built the F-16 and F-35 fighter jets",
+   "known": 0.4,
+   "kind": "aerospace"
+  },
+  {
+   "label": "Ferrari",
+   "qid": "Q27586",
+   "fame": 0.607,
+   "country": "Italy",
+   "description": "Italian luxury sports car manufacturer",
+   "hook": "builds sports cars with a prancing horse badge",
+   "known": 0.6,
+   "kind": "automotive"
+  },
+  {
+   "label": "Sega",
+   "qid": "Q122741",
+   "fame": 0.607,
+   "country": "Japan",
+   "description": "Japanese video game developer and publisher and subsidiary of Sega Sammy Holdings",
+   "hook": "created Sonic the Hedgehog",
+   "known": 0.4,
+   "kind": "media"
+  },
+  {
+   "label": "Porsche",
+   "qid": "Q40993",
+   "fame": 0.605,
+   "country": "Germany",
+   "description": "German automobile manufacturer specializing in high-performance sports cars, SUVs and sedans, owned by Volkswagen AG",
+   "hook": "makes the 911 sports car",
+   "known": 0.6,
+   "kind": "automotive"
+  },
+  {
+   "label": "Lamborghini",
+   "qid": "Q35886",
+   "fame": 0.604,
+   "country": "Italy",
+   "description": "Italian car manufacturer",
+   "hook": "builds supercars named after fighting bulls",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "KFC",
+   "qid": "Q524757",
+   "fame": 0.603,
+   "country": "United States",
+   "description": "American fast food restaurant chain specializing in fried chicken",
+   "hook": "sells fried chicken under a mustachioed colonel's face",
+   "known": 0.6,
+   "kind": "food"
+  },
+  {
+   "label": "Blizzard Entertainment",
+   "qid": "Q178824",
+   "fame": 0.599,
+   "country": "United States",
+   "description": "American video game publisher and developer owned by Microsoft",
+   "hook": "created World of Warcraft",
+   "known": 0.6,
+   "kind": "media"
+  },
+  {
+   "label": "Honda",
+   "qid": "Q9584",
+   "fame": 0.597,
+   "country": "Japan",
+   "description": "manufacturer of automobiles, motorcycles, and power equipment",
+   "hook": "makes the Civic and Accord, among the world's most popular cars",
+   "known": 0.95,
+   "kind": "automotive"
+  },
+  {
+   "label": "HSBC",
+   "qid": "Q190464",
+   "fame": 0.597,
+   "country": "United Kingdom",
+   "description": "British multinational bank",
+   "hook": "is one of the world's largest banks, known for its red-and-white hexagon logo",
+   "known": 0.4,
+   "kind": "finance"
+  },
+  {
+   "label": "IMDb",
+   "qid": "Q37312",
+   "fame": 0.594,
+   "country": "United Kingdom",
+   "description": "online database of information related to films, television series, and video games",
+   "hook": "lets people look up cast, crew and ratings for any film or show",
+   "known": 0.4,
+   "kind": "media"
+  },
+  {
+   "label": "Jaguar Cars",
+   "qid": "Q30055",
+   "fame": 0.594,
+   "country": "United Kingdom",
+   "description": "former British car company",
+   "hook": "made sports sedans and coupes known for elegant styling and smooth, powerful engines",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "Procter & Gamble",
+   "qid": "Q212405",
+   "fame": 0.594,
+   "country": "United States",
+   "description": "American multinational consumer goods corporation",
+   "hook": "makes household brands like Tide and Pampers",
+   "known": 0.4,
+   "kind": "retail"
+  },
+  {
+   "label": "Sun Microsystems",
+   "qid": "Q14647",
+   "fame": 0.593,
+   "country": "United States",
+   "description": "defunct American computer hardware and software company",
+   "hook": "created the Java programming language",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Electronic Arts",
+   "qid": "Q173941",
+   "fame": 0.591,
+   "country": "United States",
+   "description": "American video game company",
+   "hook": "publishes the Madden NFL and The Sims game franchises",
+   "known": 0.4,
+   "kind": "media"
+  },
+  {
+   "label": "The Coca-Cola Company",
+   "qid": "Q3295867",
+   "fame": 0.591,
+   "country": "United States",
+   "description": "American multinational beverage corporation",
+   "hook": "makes one of the world's most recognized soft drinks, sold in a red can",
+   "known": 0.95,
+   "kind": "food"
+  },
+  {
+   "label": "Škoda Auto",
+   "qid": "Q29637",
+   "fame": 0.59,
+   "country": "Czech Republic",
+   "description": "automotive manufacturing subsidiary of Volkswagen Group",
+   "hook": "makes affordable cars sold across Europe",
+   "known": 0.2,
+   "kind": "automotive"
+  },
+  {
+   "label": "Motorola",
+   "qid": "Q259011",
+   "fame": 0.588,
+   "country": "United States",
+   "description": "American telecommunications company (1928–2011)",
+   "hook": "made the first handheld mobile phone call ever placed",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "Burger King",
+   "qid": "Q177054",
+   "fame": 0.585,
+   "country": "United States",
+   "description": "global chain of hamburger fast food restaurants headquartered in Florida, United States",
+   "hook": "sells the flame-grilled Whopper sandwich",
+   "known": 0.6,
+   "kind": "food"
+  },
+  {
+   "label": "Audi AG",
+   "qid": "Q23317",
+   "fame": 0.583,
+   "country": "Germany",
+   "description": "German automotive manufacturing subsidiary of Volkswagen Group",
+   "hook": "makes cars marked with four interlocking rings",
+   "known": 0.6,
+   "kind": "automotive"
+  },
+  {
+   "label": "BP",
+   "qid": "Q152057",
+   "fame": 0.583,
+   "country": "United Kingdom",
+   "description": "British multinational oil and gas company",
+   "hook": "is one of the world's biggest oil and gas producers, known for its green-and-yellow sunflower logo",
+   "known": 0.4,
+   "kind": "energy"
+  },
+  {
+   "label": "AMD",
+   "qid": "Q128896",
+   "fame": 0.581,
+   "country": "United States",
+   "description": "American multinational semiconductor company",
+   "hook": "makes processor chips that power gaming PCs, going head-to-head with a much larger rival chipmaker",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "Guinness",
+   "qid": "Q194297",
+   "fame": 0.58,
+   "country": "Ireland",
+   "description": "Irish brand of beer",
+   "hook": "brews a dark stout famous for its thick creamy head and the harp on every glass",
+   "known": 0.4,
+   "kind": "food"
+  },
+  {
+   "label": "Kia",
+   "qid": "Q35349",
+   "fame": 0.58,
+   "country": "South Korea",
+   "description": "South Korean automobile manufacturer",
+   "hook": "makes affordable cars and SUVs known for surprisingly long warranties",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "Xiaomi",
+   "qid": "Q1636958",
+   "fame": 0.579,
+   "country": "China",
+   "description": "Chinese electronics company",
+   "hook": "sells budget smartphones and gadgets known for packing high-end specs at low prices",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "AT&T",
+   "qid": "Q35476",
+   "fame": 0.577,
+   "country": "United States",
+   "description": "American multinational conglomerate",
+   "hook": "provides phone and internet service and once held a government-granted telephone monopoly",
+   "known": 0.4,
+   "kind": "telecom"
+  },
+  {
+   "label": "Nissan",
+   "qid": "Q20165",
+   "fame": 0.577,
+   "country": "Japan",
+   "description": "Japanese automobile manufacturer",
+   "hook": "builds cars including an electric hatchback that was one of the first mass-market EVs",
+   "known": 0.6,
+   "kind": "automotive"
+  },
+  {
+   "label": "Koninklijke Philips NV",
+   "qid": "Q170416",
+   "fame": 0.576,
+   "country": "Netherlands",
+   "description": "Dutch multinational conglomerate corporation",
+   "hook": "makes electric shavers, light bulbs, and medical scanning equipment used in hospitals",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "Siemens",
+   "qid": "Q81230",
+   "fame": 0.575,
+   "country": "Germany",
+   "description": "German multinational conglomerate company",
+   "hook": "builds trains, power turbines, and factory automation equipment used worldwide",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "Intel",
+   "qid": "Q248",
+   "fame": 0.574,
+   "country": "United States",
+   "description": "American multinational technology company",
+   "hook": "makes the processor chips found inside most personal computers for decades",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Alibaba Group",
+   "qid": "Q1359568",
+   "fame": 0.573,
+   "country": "China",
+   "description": "Chinese multinational technology company",
+   "hook": "runs a massive online marketplace where small businesses sell wholesale to shoppers worldwide",
+   "known": 0.4,
+   "kind": "retail"
+  },
+  {
+   "label": "Aston Martin Lagonda",
+   "qid": "Q27074",
+   "fame": 0.573,
+   "country": "United Kingdom",
+   "description": "British luxury sports car manufacturer",
+   "hook": "builds glamorous sports cars long associated with a suave fictional secret agent",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "Mazda",
+   "qid": "Q35996",
+   "fame": 0.573,
+   "country": "Japan",
+   "description": "Japanese multinational automaker",
+   "hook": "makes cars known for a distinctive rotary engine once used in some sports models",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "Qantas Airways",
+   "qid": "Q32491",
+   "fame": 0.573,
+   "country": "Australia",
+   "description": "the flag carrier airline of Australia",
+   "hook": "flies as a national airline known for one of the best safety records of any carrier",
+   "known": 0.4,
+   "kind": "airline"
+  },
+  {
+   "label": "Land Rover",
+   "qid": "Q35907",
+   "fame": 0.572,
+   "country": "United Kingdom",
+   "description": "former British car company",
+   "hook": "makes boxy off-road SUVs popular with explorers and safari guides",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "Lenovo",
+   "qid": "Q14799",
+   "fame": 0.572,
+   "country": "China",
+   "description": "Chinese multinational technology company established in 1984",
+   "hook": "makes laptops and once bought a legendary computer maker's personal computer business",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Ubisoft",
+   "qid": "Q188273",
+   "fame": 0.572,
+   "country": "France",
+   "description": "French video game company",
+   "hook": "makes video games starring a hooded assassin who explores historical cities",
+   "known": 0.4,
+   "kind": "media"
+  },
+  {
+   "label": "Reuters",
+   "qid": "Q130879",
+   "fame": 0.571,
+   "country": "United Kingdom",
+   "description": "international news agency",
+   "hook": "runs a global news wire that other newspapers and broadcasters rely on for breaking stories",
+   "known": 0.2,
+   "kind": "media"
+  },
+  {
+   "label": "Panasonic Holdings Corporation",
+   "qid": "Q53247",
+   "fame": 0.57,
+   "country": "Japan",
+   "description": "Japanese multinational electronics corporation",
+   "hook": "makes televisions, batteries, and home appliances found in households worldwide",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Chevrolet",
+   "qid": "Q29570",
+   "fame": 0.568,
+   "country": "United States",
+   "description": "American automobile division of GM",
+   "hook": "makes pickup trucks and a sports car icon known for its fiberglass body and V8 growl",
+   "known": 0.6,
+   "kind": "automotive"
+  },
+  {
+   "label": "ExxonMobil",
+   "qid": "Q156238",
+   "fame": 0.568,
+   "country": "United States",
+   "description": "American multinational oil and gas corporation",
+   "hook": "drills for oil and refines it into gasoline sold at stations worldwide",
+   "known": 0.4,
+   "kind": "energy"
+  },
+  {
+   "label": "Subaru",
+   "qid": "Q172741",
+   "fame": 0.568,
+   "country": "Japan",
+   "description": "Japanese automobile manufacturing company",
+   "hook": "builds cars known for standard all-wheel drive and a loyal outdoorsy fan base",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "NASCAR",
+   "qid": "Q233929",
+   "fame": 0.567,
+   "country": "United States",
+   "description": "American automobile racing company",
+   "hook": "runs a stock car racing series famous for its speedways and passionate fan base",
+   "known": 0.4,
+   "kind": "media"
+  },
+  {
+   "label": "easyJet",
+   "qid": "Q191551",
+   "fame": 0.566,
+   "country": "United Kingdom",
+   "description": "British low-cost airline",
+   "hook": "flies budget short-haul routes across Europe with its signature orange livery",
+   "known": 0.4,
+   "kind": "airline"
+  },
+  {
+   "label": "Huawei",
+   "qid": "Q160120",
+   "fame": 0.566,
+   "country": "China",
+   "description": "Chinese multinational technology enterprise",
+   "hook": "makes smartphones and the network equipment that carries mobile signals worldwide",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Tata Motors Limited",
+   "qid": "Q188514",
+   "fame": 0.566,
+   "country": "India",
+   "description": "Indian multinational commercial vehicle manufacturer",
+   "hook": "makes trucks and cars, and once owned two storied luxury car brands known for off-roading",
+   "known": 0.2,
+   "kind": "automotive"
+  },
+  {
+   "label": "Renault",
+   "qid": "Q6686",
+   "fame": 0.565,
+   "country": "France",
+   "description": "automotive conglomerate",
+   "hook": "builds cars and has a long-running racing partnership in Formula One",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "Cadillac",
+   "qid": "Q27436",
+   "fame": 0.562,
+   "country": "United States",
+   "description": "division of General Motors",
+   "hook": "makes luxury cars whose name became slang for the very best of anything",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "Hewlett-Packard",
+   "qid": "Q80978",
+   "fame": 0.561,
+   "country": "United States",
+   "description": "American information technology company",
+   "hook": "got its start in a garage and grew into a major maker of computers and printers",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "Puma",
+   "qid": "Q157064",
+   "fame": 0.56,
+   "country": "Germany",
+   "description": "German multinational corporation",
+   "hook": "makes sportswear and sneakers with a leaping wildcat as its logo",
+   "known": 0.6,
+   "kind": "fashion"
+  },
+  {
+   "label": "LG Group",
+   "qid": "Q136778",
+   "fame": 0.559,
+   "country": "South Korea",
+   "description": "South Korean multinational conglomerate",
+   "hook": "makes televisions, smartphones, and home appliances sold in households worldwide",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "Rolex",
+   "qid": "Q62288",
+   "fame": 0.559,
+   "country": "Switzerland",
+   "description": "Swiss luxury watch designer and manufacturer",
+   "hook": "makes luxury wristwatches often worn as a symbol of success and status",
+   "known": 0.6,
+   "kind": "fashion"
+  },
+  {
+   "label": "SAP",
+   "qid": "Q552581",
+   "fame": 0.558,
+   "country": "Germany",
+   "description": "German software producer",
+   "hook": "makes business software that large companies use to manage finance and operations",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Tumblr",
+   "qid": "Q384060",
+   "fame": 0.558,
+   "country": "United States",
+   "description": "microblogging platform and social networking website",
+   "hook": "became known as a hub for fan communities, blogging in short posts and reaction GIFs",
+   "known": 0.2,
+   "kind": "media"
+  },
+  {
+   "label": "H&M",
+   "qid": "Q188326",
+   "fame": 0.557,
+   "country": "Sweden",
+   "description": "Swedish multinational clothing-retail company",
+   "hook": "sells trendy, affordable clothing through fast-turnaround fashion collections",
+   "known": 0.6,
+   "kind": "fashion"
+  },
+  {
+   "label": "Gucci",
+   "qid": "Q178516",
+   "fame": 0.556,
+   "country": "Italy",
+   "description": "Italian luxury fashion house based in Florence, Italy",
+   "hook": "makes luxury handbags and clothing known for interlocking-letter logos and bold prints",
+   "known": 0.6,
+   "kind": "fashion"
+  },
+  {
+   "label": "Jeep",
+   "qid": "Q30113",
+   "fame": 0.555,
+   "country": "United States",
+   "description": "US automotive company",
+   "hook": "makes rugged off-road SUVs that trace their design back to a World War II military vehicle",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "Uniqlo",
+   "qid": "Q26070",
+   "fame": 0.554,
+   "country": "Japan",
+   "description": "Japanese casual wear designer, manufacturer and retailer",
+   "hook": "sells simple, affordable everyday clothing known for lightweight down jackets",
+   "known": 0.4,
+   "kind": "fashion"
+  },
+  {
+   "label": "Embraer",
+   "qid": "Q105557",
+   "fame": 0.552,
+   "country": "Brazil",
+   "description": "aircraft manufacturer in Brazil",
+   "hook": "builds regional jets flown by airlines around the world for shorter routes",
+   "known": 0.2,
+   "kind": "aerospace"
+  },
+  {
+   "label": "Aeroflot",
+   "qid": "Q58707",
+   "fame": 0.551,
+   "country": "Russia",
+   "description": "flag carrier of Russia",
+   "hook": "operates as a flag carrier and ranks among the world's oldest continuously running airlines",
+   "known": 0.4,
+   "kind": "airline"
+  },
+  {
+   "label": "Cisco",
+   "qid": "Q173395",
+   "fame": 0.551,
+   "country": "United States",
+   "description": "American multinational technology company",
+   "hook": "makes the networking hardware that routes much of the world's internet traffic",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "Chevron Corporation",
+   "qid": "Q319642",
+   "fame": 0.55,
+   "country": "United States",
+   "description": "American multinational energy corporation",
+   "hook": "operates oil refineries and gas stations, and ranks among the largest energy companies by output",
+   "known": 0.4,
+   "kind": "energy"
+  },
+  {
+   "label": "Opel",
+   "qid": "Q40966",
+   "fame": 0.548,
+   "country": "Germany",
+   "description": "German automobile manufacturer, subsidiary of Stellantis",
+   "hook": "makes affordable cars and was once owned for decades by a major American automaker",
+   "known": 0.2,
+   "kind": "automotive"
+  },
+  {
+   "label": "Bentley",
+   "qid": "Q27224",
+   "fame": 0.547,
+   "country": "United Kingdom",
+   "description": "British automotive brand manufacturer",
+   "hook": "makes handcrafted luxury cars favored by royalty and old-money elite with hand-stitched interiors",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "Kodak",
+   "qid": "Q486269",
+   "fame": 0.547,
+   "country": "United States",
+   "description": "American company",
+   "hook": "pioneered consumer photography and once dominated camera film before digital cameras took over",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "Adobe",
+   "qid": "Q11463",
+   "fame": 0.546,
+   "country": "United States",
+   "description": "American multinational computer software company",
+   "hook": "makes creative software used to edit photos, design graphics, and create PDF documents",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Maserati",
+   "qid": "Q35962",
+   "fame": 0.546,
+   "country": "Italy",
+   "description": "Italian luxury car manufacturer",
+   "hook": "makes luxury sports cars known for their trident emblem and throaty V8 sound",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "Alfa Romeo",
+   "qid": "Q26921",
+   "fame": 0.545,
+   "country": "Italy",
+   "description": "Italian automotive manufacturer",
+   "hook": "makes sporty cars beloved by driving enthusiasts for their nimble handling",
+   "known": 0.2,
+   "kind": "automotive"
+  },
+  {
+   "label": "Suzuki Motor Corporation",
+   "qid": "Q181642",
+   "fame": 0.544,
+   "country": "Japan",
+   "description": "Japanese multinational automotive corporation",
+   "hook": "makes small, affordable cars and two-wheelers popular in markets favoring compact vehicles",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "Rolls-Royce Motor Cars",
+   "qid": "Q234803",
+   "fame": 0.543,
+   "country": "United Kingdom",
+   "description": "English car company (1998-present)",
+   "hook": "makes the ultimate in handcrafted luxury automobiles, with a silver flying lady ornament on the hood",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "AB Volvo",
+   "qid": "Q163810",
+   "fame": 0.539,
+   "country": "Sweden",
+   "description": "Swedish manufacturing company",
+   "hook": "builds trucks and heavy machinery renowned for safety engineering and durability",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "Billboard",
+   "qid": "Q485240",
+   "fame": 0.539,
+   "country": "United States",
+   "description": "American weekly music magazine",
+   "hook": "publishes the record charts that rank the most popular songs and albums each week",
+   "known": 0.2,
+   "kind": "media"
+  },
+  {
+   "label": "Dell",
+   "qid": "Q30873",
+   "fame": 0.537,
+   "country": "United States",
+   "description": "American multinational computer technology corporation",
+   "hook": "sells computers built to order, pioneering direct-to-consumer PC sales",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "Mitsubishi Motors",
+   "qid": "Q36033",
+   "fame": 0.536,
+   "country": "Japan",
+   "description": "Japanese automotive manufacturer",
+   "hook": "makes cars and SUVs, including rally-bred models built for tough terrain",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "Citroën",
+   "qid": "Q6746",
+   "fame": 0.534,
+   "country": "France",
+   "description": "French automotive manufacturer",
+   "hook": "makes cars famous for their unusual, cushiony hydraulic suspension systems",
+   "known": 0.2,
+   "kind": "automotive"
+  },
+  {
+   "label": "Chanel",
+   "qid": "Q218115",
+   "fame": 0.533,
+   "country": "France",
+   "description": "French fashion house",
+   "hook": "makes luxury fashion and a legendary perfume known simply by a number",
+   "known": 0.6,
+   "kind": "fashion"
+  },
+  {
+   "label": "Fiat",
+   "qid": "Q27597",
+   "fame": 0.533,
+   "country": "Italy",
+   "description": "Italian automotive company",
+   "hook": "makes small, city-friendly cars including one classic model shaped like an egg",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "Baidu",
+   "qid": "Q14772",
+   "fame": 0.532,
+   "country": "China",
+   "description": "Chinese web services company",
+   "hook": "runs the leading search engine and mapping service in its home market",
+   "known": 0.05,
+   "kind": "tech"
+  },
+  {
+   "label": "United Artists",
+   "qid": "Q219400",
+   "fame": 0.529,
+   "country": "United States",
+   "description": "American moving image production and distribution company (founded 1919)",
+   "hook": "was founded by film stars so they could control their own creative work and profits",
+   "known": 0.2,
+   "kind": "media"
+  },
+  {
+   "label": "Vodafone",
+   "qid": "Q122141",
+   "fame": 0.528,
+   "country": "United Kingdom",
+   "description": "British multinational telecommunications company",
+   "hook": "provides mobile phone service across many countries under one recognizable red logo",
+   "known": 0.4,
+   "kind": "telecom"
+  },
+  {
+   "label": "Hitachi",
+   "qid": "Q53238",
+   "fame": 0.526,
+   "country": "Japan",
+   "description": "Japanese multinational engineering and electronics company",
+   "hook": "makes trains, power tools, and heavy machinery used in construction worldwide",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Oppo",
+   "qid": "Q2084900",
+   "fame": 0.526,
+   "country": "China",
+   "description": "Chinese consumer electronics manufacturer",
+   "hook": "makes smartphones known worldwide for their camera technology and fast charging",
+   "known": 0.05,
+   "kind": "tech"
+  },
+  {
+   "label": "Bayer",
+   "qid": "Q152051",
+   "fame": 0.525,
+   "country": "Germany",
+   "description": "German multinational pharmaceutical, chemical, and agricultural biotechnology company",
+   "hook": "brought the first mass-marketed headache tablet to pharmacy shelves everywhere",
+   "known": 0.4,
+   "kind": "pharma"
+  },
+  {
+   "label": "Michelin",
+   "qid": "Q151107",
+   "fame": 0.525,
+   "country": "France",
+   "description": "French multinational tyre manufacturing company",
+   "hook": "rates restaurants with its famous stars, though it started out making tyres",
+   "known": 0.4,
+   "kind": "fashion"
+  },
+  {
+   "label": "Visa Inc.",
+   "qid": "Q328840",
+   "fame": 0.525,
+   "country": "United States",
+   "description": "American multinational financial services corporation",
+   "hook": "lets shoppers pay with a swipe of a plastic card almost anywhere in the world",
+   "known": 0.6,
+   "kind": "finance"
+  },
+  {
+   "label": "Bugatti Automobiles S.A.S.",
+   "qid": "Q2308012",
+   "fame": 0.524,
+   "country": "France",
+   "description": "French high-performance luxury automobile manufacturer",
+   "hook": "builds some of the fastest and most expensive sports cars ever sold",
+   "known": 0.2,
+   "kind": "automotive"
+  },
+  {
+   "label": "ASUS",
+   "qid": "Q152864",
+   "fame": 0.517,
+   "country": "Taiwan",
+   "description": "Taiwanese computers and electronics company",
+   "hook": "makes laptops and gaming gear beloved by PC enthusiasts everywhere",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Bank of England",
+   "qid": "Q183231",
+   "fame": 0.514,
+   "country": "United Kingdom",
+   "description": "central bank of the United Kingdom",
+   "hook": "decides interest rates and issues the paper money found in wallets nationwide",
+   "known": 0.2,
+   "kind": "finance"
+  },
+  {
+   "label": "Mastercard",
+   "qid": "Q489921",
+   "fame": 0.513,
+   "country": "United States",
+   "description": "American multinational financial services corporation",
+   "hook": "is known for its interlocking-circles logo and the priceless ad campaign",
+   "known": 0.4,
+   "kind": "finance"
+  },
+  {
+   "label": "Pfizer",
+   "qid": "Q206921",
+   "fame": 0.509,
+   "country": "United States",
+   "description": "American multinational pharmaceutical and biotechnology corporation",
+   "hook": "was one of the first drug makers to mass-produce the penicillin that transformed medicine",
+   "known": 0.4,
+   "kind": "pharma"
+  },
+  {
+   "label": "Yamaha Motor Company",
+   "qid": "Q158888",
+   "fame": 0.509,
+   "country": "Japan",
+   "description": "Japanese motorcycle manufacturer",
+   "hook": "makes off-road and racing bikes ridden by competitors on tracks worldwide",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "Prada",
+   "qid": "Q193136",
+   "fame": 0.502,
+   "country": "Italy",
+   "description": "Italian luxury fashion house",
+   "hook": "makes the designer handbags at the center of a hit film about a demanding magazine editor",
+   "known": 0.4,
+   "kind": "fashion"
+  },
+  {
+   "label": "Sony Music",
+   "qid": "Q56760250",
+   "fame": 0.501,
+   "country": "United States",
+   "description": "American multinational music recording company",
+   "hook": "is one of the three giant labels behind hit songs played on the radio every day",
+   "known": 0.2,
+   "kind": "media"
+  },
+  {
+   "label": "Red Hat",
+   "qid": "Q485593",
+   "fame": 0.491,
+   "country": "United States",
+   "description": "American multinational software company",
+   "hook": "turned a free open-source operating system into a business by selling enterprise support",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Toshiba",
+   "qid": "Q49125",
+   "fame": 0.49,
+   "country": "Japan",
+   "description": "Japanese multinational conglomerate corporation",
+   "hook": "invented the flash memory technology used inside phones and USB drives today",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Jack in the Box",
+   "qid": "Q1538507",
+   "fame": 0.489,
+   "country": "United States",
+   "description": "American fast-food restaurant chain",
+   "hook": "is a fast-food chain whose mascot is a grinning ball-headed clown",
+   "known": 0.2,
+   "kind": "food"
+  },
+  {
+   "label": "Acer",
+   "qid": "Q481778",
+   "fame": 0.488,
+   "country": "Taiwan",
+   "description": "Taiwanese multinational hardware and electronics corporation",
+   "hook": "makes affordable laptops found in homes, schools and offices everywhere",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Baskin-Robbins",
+   "qid": "Q584601",
+   "fame": 0.488,
+   "country": "United States",
+   "description": "American multinational ice cream parlor chain",
+   "hook": "promises a different flavor of ice cream for every day of the month",
+   "known": 0.4,
+   "kind": "food"
+  },
+  {
+   "label": "Lancia",
+   "qid": "Q35896",
+   "fame": 0.488,
+   "country": "Italy",
+   "description": "Italian automotive company",
+   "hook": "built the rally cars that dominated European rally racing for a generation",
+   "known": 0.05,
+   "kind": "automotive"
+  },
+  {
+   "label": "TotalEnergies",
+   "qid": "Q154037",
+   "fame": 0.488,
+   "country": "France",
+   "description": "French multinational energy and petroleum company",
+   "hook": "runs gas stations and oil rigs found across the globe",
+   "known": 0.2,
+   "kind": "energy"
+  },
+  {
+   "label": "Box Office Mojo",
+   "qid": "Q223142",
+   "fame": 0.483,
+   "country": "United States",
+   "description": "website that tracks box office revenue",
+   "hook": "is the site reporters cite for how much money a new movie made this weekend",
+   "known": 0.2,
+   "kind": "media"
+  },
+  {
+   "label": "Ericsson",
+   "qid": "Q52618",
+   "fame": 0.481,
+   "country": "Sweden",
+   "description": "Swedish provider of communications technology and services",
+   "hook": "invented the wireless technology behind Bluetooth",
+   "known": 0.2,
+   "kind": "telecom"
+  },
+  {
+   "label": "HTC",
+   "qid": "Q186012",
+   "fame": 0.477,
+   "country": "Taiwan",
+   "description": "Taiwanese electronics company",
+   "hook": "built some of the first Android smartphones and a popular virtual-reality headset",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Canon Inc.",
+   "qid": "Q62621",
+   "fame": 0.467,
+   "country": "Japan",
+   "description": "Japanese multinational imaging corporation",
+   "hook": "makes the cameras and lenses favored by many professional photographers",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "Korean Broadcasting System",
+   "qid": "Q498825",
+   "fame": 0.462,
+   "country": "South Korea",
+   "description": "South Korean public service broadcaster",
+   "hook": "airs many of the news shows and TV dramas watched by millions every night",
+   "known": 0.05,
+   "kind": "media"
+  }
+ ]
+}

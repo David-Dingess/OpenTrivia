@@ -1,0 +1,327 @@
+{
+ "id": "table.sports.ballon-dor-winners",
+ "kind": "table",
+ "title": "Ballon d'Or winners",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "soccer",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?year WHERE { { SELECT ?item (MIN(?d) AS ?year) WHERE { VALUES ?award { wd:Q166177 wd:Q2291862 } ?item p:P166 ?st . ?st ps:P166 ?award ; pq:P585 ?d . } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T04:55:11.443Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T04:55:11.443Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "first_win",
+   "label": "First win",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "footballer",
+  "many": "Ballon d'Or winners",
+  "wildcard": "person",
+  "columns": {
+   "first_win": {
+    "role": "date",
+    "era": "Drop each winner into the decade of their first Ballon d'Or win.",
+    "eraSize": "decade",
+    "shot": "In what year did {label} first win the Ballon d'Or?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Lionel Messi",
+   "qid": "Q615",
+   "fame": 0.85,
+   "first_win": 2009,
+   "description": "Argentine association football player (born 1987)",
+   "hook": "is often called the best player of his generation, weaving past defenders before finally lifting the World Cup",
+   "known": 0.95,
+   "kind": "player"
+  },
+  {
+   "label": "Cristiano Ronaldo",
+   "qid": "Q11571",
+   "fame": 0.849,
+   "first_win": 2008,
+   "description": "Portuguese association football player (born 1985)",
+   "hook": "is renowned for explosive speed, aerial power and a trademark leaping celebration after nearly every goal",
+   "known": 0.95,
+   "kind": "player"
+  },
+  {
+   "label": "Rodri",
+   "qid": "Q20994118",
+   "fame": 0.734,
+   "first_win": 2024,
+   "description": "Spanish association football player (born 1996)",
+   "hook": "anchored a treble-winning midfield with calm passing rather than flashy runs",
+   "known": 0.8,
+   "kind": "player"
+  },
+  {
+   "label": "Ronaldinho",
+   "qid": "Q39444",
+   "fame": 0.726,
+   "first_win": 2005,
+   "description": "Brazilian associaton fooball player (born 1980)",
+   "hook": "dazzled fans with no-look passes, flip flaps and a permanent smile on the pitch",
+   "known": 0.8,
+   "kind": "player"
+  },
+  {
+   "label": "Michael Owen",
+   "qid": "Q128829",
+   "fame": 0.725,
+   "first_win": 2001,
+   "description": "English association football player",
+   "hook": "shot to fame as a teenager with a blistering solo goal at a World Cup",
+   "known": 0.4,
+   "kind": "player"
+  },
+  {
+   "label": "Karim Benzema",
+   "qid": "Q1912",
+   "fame": 0.72,
+   "first_win": 2022,
+   "description": "French footballer (born 1987)",
+   "hook": "spent years finishing off moves for a star-studded club before finally being crowned the world's best",
+   "known": 0.8,
+   "kind": "player"
+  },
+  {
+   "label": "Ronaldo",
+   "qid": "Q529207",
+   "fame": 0.71,
+   "first_win": 1997,
+   "description": "Brazilian association football player (born 1976)",
+   "hook": "terrorized defenses with explosive pace before a serious knee injury nearly ended his career",
+   "known": 0.8,
+   "kind": "player"
+  },
+  {
+   "label": "Zinedine Zidane",
+   "qid": "Q1835",
+   "fame": 0.699,
+   "first_win": 1998,
+   "description": "French association football player and coach",
+   "hook": "is remembered for an outrageous volley in one final and a stunning headbutt in another",
+   "known": 0.8,
+   "kind": "player"
+  },
+  {
+   "label": "Luka Modrić",
+   "qid": "Q483837",
+   "fame": 0.683,
+   "first_win": 2018,
+   "description": "Croatian footballer (born 1985)",
+   "hook": "controls midfield with effortless passing for both his club and country deep into his thirties",
+   "known": 0.8,
+   "kind": "player"
+  },
+  {
+   "label": "Kevin Keegan",
+   "qid": "Q152832",
+   "fame": 0.66,
+   "first_win": 1978,
+   "description": "English association football player and manager (1951–2026)",
+   "hook": "brought flair and permed hair to the domestic top flight before managing the national team",
+   "known": 0.4,
+   "kind": "player"
+  },
+  {
+   "label": "Ousmane Dembélé",
+   "qid": "Q20851003",
+   "fame": 0.657,
+   "first_win": 2025,
+   "description": "French footballer (born 1997)",
+   "hook": "exploded onto the scene with blistering pace before helping his club win a historic treble",
+   "known": 0.2,
+   "kind": "player"
+  },
+  {
+   "label": "Johan Cruyff",
+   "qid": "Q17163",
+   "fame": 0.64,
+   "first_win": 1971,
+   "description": "Dutch footballer and manager (1947–2016)",
+   "hook": "revolutionized attacking play with a feinting turn that wrong-footed defenders for a decade",
+   "known": 0.8,
+   "kind": "player"
+  },
+  {
+   "label": "Kaká",
+   "qid": "Q531814",
+   "fame": 0.613,
+   "first_win": 2007,
+   "description": "Brazilian association football player (born 1982)",
+   "hook": "glided past opponents with long strides before a string of injuries slowed his career",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "Ruud Gullit",
+   "qid": "Q173972",
+   "fame": 0.596,
+   "first_win": 1987,
+   "description": "Dutch association football player and manager",
+   "hook": "wore his hair in dreadlocks and led a golden generation to their country's only major trophy",
+   "known": 0.4,
+   "kind": "player"
+  },
+  {
+   "label": "Luís Figo",
+   "qid": "Q483145",
+   "fame": 0.59,
+   "first_win": 2000,
+   "description": "Portuguese football player (born 1972)",
+   "hook": "sparked outrage by swapping one fierce rival club for another at the peak of his career",
+   "known": 0.4,
+   "kind": "player"
+  },
+  {
+   "label": "Marco van Basten",
+   "qid": "Q483629",
+   "fame": 0.589,
+   "first_win": 1988,
+   "description": "Dutch association football player and manager (born 1964)",
+   "hook": "scored a stunning volley from an impossible angle in a European final",
+   "known": 0.4,
+   "kind": "player"
+  },
+  {
+   "label": "Andriy Shevchenko",
+   "qid": "Q41244",
+   "fame": 0.57,
+   "first_win": 2004,
+   "description": "Ukrainian association football player",
+   "hook": "led the league in goals for years before a big-money move to England never quite clicked",
+   "known": 0.4,
+   "kind": "player"
+  },
+  {
+   "label": "Rivaldo",
+   "qid": "Q483577",
+   "fame": 0.566,
+   "first_win": 1999,
+   "description": "Brazilian association football player",
+   "hook": "scored spectacular overhead kicks and helped lift a fifth World Cup",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "Bobby Charlton",
+   "qid": "Q171583",
+   "fame": 0.565,
+   "first_win": 1966,
+   "description": "English association football player and manager (1937–2023)",
+   "hook": "survived a plane crash early in his career and went on to help win a World Cup at home",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "Alfredo Di Stéfano",
+   "qid": "Q164546",
+   "fame": 0.564,
+   "first_win": 1957,
+   "description": "Argentine-Spanish association football player (1926–2014)",
+   "hook": "dominated a golden era of European football, scoring in five straight continental finals",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "Roberto Baggio",
+   "qid": "Q67964",
+   "fame": 0.559,
+   "first_win": 1993,
+   "description": "Italian association football player (born 1967)",
+   "hook": "is remembered for a ponytail, a missed penalty in a World Cup final, and years of clutch goals",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "Fabio Cannavaro",
+   "qid": "Q102027",
+   "fame": 0.554,
+   "first_win": 2006,
+   "description": "Italian association football player and manager",
+   "hook": "anchored a rock-solid defense that lifted a World Cup without conceding in the knockout rounds",
+   "known": 0.4,
+   "kind": "player"
+  },
+  {
+   "label": "Karl-Heinz Rummenigge",
+   "qid": "Q152871",
+   "fame": 0.552,
+   "first_win": 1980,
+   "description": "German football executive and former football player",
+   "hook": "led a national team to back-to-back World Cup finals while playing through persistent knee problems",
+   "known": 0.4,
+   "kind": "player"
+  },
+  {
+   "label": "Pavel Nedvěd",
+   "qid": "Q171295",
+   "fame": 0.535,
+   "first_win": 2003,
+   "description": "Czech association football player",
+   "hook": "ran tirelessly up and down the wing and helped his club complete a treble in the same remarkable season",
+   "known": 0.2,
+   "kind": "player"
+  },
+  {
+   "label": "Michel Platini",
+   "qid": "Q4261",
+   "fame": 0.534,
+   "first_win": 1983,
+   "description": "French football player, manager and executive (born 1955)",
+   "hook": "scored freely from free kicks and open play to lead his country to a home continental championship",
+   "known": 0.6,
+   "kind": "player"
+  },
+  {
+   "label": "Hristo Stoichkov",
+   "qid": "Q187125",
+   "fame": 0.52,
+   "first_win": 1994,
+   "description": "Bulgarian footballer and manager (born 1966)",
+   "hook": "combined a fiery temper with a lethal left foot to lead his country to a World Cup semifinal",
+   "known": 0.2,
+   "kind": "player"
+  },
+  {
+   "label": "Matthias Sammer",
+   "qid": "Q57183",
+   "fame": 0.482,
+   "first_win": 1996,
+   "description": "German association football player, coach and executive (born 1967)",
+   "hook": "redefined the sweeper role by charging forward into attack and captaining his side to continental glory",
+   "known": 0.2,
+   "kind": "player"
+  }
+ ]
+}

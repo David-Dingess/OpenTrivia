@@ -1,0 +1,1267 @@
+{
+ "id": "table.film-and-tv.film-screenwriters",
+ "kind": "table",
+ "title": "Famous films and their screenwriter",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "screenwriters",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?wrLabel ?kindTag WHERE { { SELECT ?item (SAMPLE(?w) AS ?wr) (COUNT(DISTINCT ?w) AS ?nW) WHERE { VALUES ?cls { wd:Q11424 } ?item wdt:P31 ?cls ; wdt:P58 ?w ; wikibase:sitelinks ?sl . FILTER(?sl >= 50) FILTER(?w NOT IN (wd:Q51552, wd:Q25089, wd:Q42229, wd:Q220751, wd:Q298025)) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nW = 1) BIND(\"film\" AS ?kindTag) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T14:19:08.504Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T14:19:08.504Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "screenwriter",
+   "label": "Screenwriter",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "kind",
+   "label": "Type",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "film",
+  "many": "films",
+  "hookAsk": "Which film {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "screenwriter": {
+    "role": "link",
+    "pick": "Who wrote the screenplay for {label}?",
+    "statement": "{label} was written by {value}.",
+    "match": "Match each film to its screenwriter.",
+    "odd": "Three of these were written by {value}. Which one wasn't?",
+    "all": "Tap all {n} films written by {value}.",
+    "reverse": "Which of these did {value} write?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The Odyssey",
+   "qid": "Q131547207",
+   "fame": 0.956,
+   "screenwriter": "Christopher Nolan",
+   "kind": "film",
+   "description": "2026 film directed by Christopher Nolan",
+   "hook": "adapts Homer's ancient epic about a king's long journey back from war",
+   "known": 0.4
+  },
+  {
+   "label": "Once Upon a Time in Hollywood",
+   "qid": "Q47300912",
+   "fame": 0.756,
+   "screenwriter": "Quentin Tarantino",
+   "kind": "film",
+   "description": "2019 film directed by Quentin Tarantino",
+   "hook": "follows a fading TV western star and his stunt double as the film business changes around them",
+   "known": 0.8
+  },
+  {
+   "label": "Oppenheimer",
+   "qid": "Q108839994",
+   "fame": 0.739,
+   "screenwriter": "Christopher Nolan",
+   "kind": "film",
+   "description": "2023 film directed by Christopher Nolan",
+   "hook": "tells the story of the physicist who led the creation of the atomic bomb",
+   "known": 0.8
+  },
+  {
+   "label": "The Sixth Sense",
+   "qid": "Q183063",
+   "fame": 0.725,
+   "screenwriter": "M. Night Shyamalan",
+   "kind": "film",
+   "description": "1999 film directed by M. Night Shyamalan",
+   "hook": "features a frightened boy who says he sees dead people",
+   "known": 0.7
+  },
+  {
+   "label": "Titanic",
+   "qid": "Q44578",
+   "fame": 0.718,
+   "screenwriter": "James Cameron",
+   "kind": "film",
+   "description": "1997 film directed by James Cameron",
+   "hook": "follows a doomed ocean liner's maiden voyage and a romance across class lines",
+   "known": 0.95
+  },
+  {
+   "label": "The Shawshank Redemption",
+   "qid": "Q172241",
+   "fame": 0.717,
+   "screenwriter": "Frank Darabont",
+   "kind": "film",
+   "description": "1994 film directed by Frank Darabont",
+   "hook": "follows a banker wrongly jailed for murder who quietly plans his escape",
+   "known": 0.7
+  },
+  {
+   "label": "Forrest Gump",
+   "qid": "Q134773",
+   "fame": 0.713,
+   "screenwriter": "Eric Roth",
+   "kind": "film",
+   "description": "1994 film directed by Robert Zemeckis",
+   "hook": "follows a kind-hearted Alabama man who unwittingly witnesses decades of American history",
+   "known": 0.8
+  },
+  {
+   "label": "Avatar",
+   "qid": "Q24871",
+   "fame": 0.712,
+   "screenwriter": "James Cameron",
+   "kind": "film",
+   "description": "2009 film directed by James Cameron",
+   "hook": "sends a paralyzed marine to live among blue-skinned aliens on the moon Pandora",
+   "known": 0.95
+  },
+  {
+   "label": "The Truman Show",
+   "qid": "Q214801",
+   "fame": 0.711,
+   "screenwriter": "Andrew Niccol",
+   "kind": "film",
+   "description": "1998 film directed by Peter Weir",
+   "hook": "reveals that a man's entire life has secretly been a live TV broadcast",
+   "known": 0.6
+  },
+  {
+   "label": "The Matrix",
+   "qid": "Q83495",
+   "fame": 0.706,
+   "screenwriter": "the Wachowskis",
+   "kind": "film",
+   "description": "1999 American science fiction action thriller film",
+   "hook": "has a hacker learn the world is a simulation and choose the red pill",
+   "known": 0.95
+  },
+  {
+   "label": "Troy",
+   "qid": "Q186587",
+   "fame": 0.704,
+   "screenwriter": "David Benioff",
+   "kind": "film",
+   "description": "2004 film by Wolfgang Petersen",
+   "hook": "retells the legendary Greek siege of a walled city over a stolen queen",
+   "known": 0.5
+  },
+  {
+   "label": "Gone Girl",
+   "qid": "Q14920425",
+   "fame": 0.701,
+   "screenwriter": "Gillian Flynn",
+   "kind": "film",
+   "description": "2014 film directed by David Fincher",
+   "hook": "follows a husband under suspicion after his wife vanishes on their anniversary",
+   "known": 0.6
+  },
+  {
+   "label": "Inglourious Basterds",
+   "qid": "Q153723",
+   "fame": 0.699,
+   "screenwriter": "Quentin Tarantino",
+   "kind": "film",
+   "description": "2009 film directed by Quentin Tarantino",
+   "hook": "follows a band of soldiers hunting Nazis in occupied France",
+   "known": 0.7
+  },
+  {
+   "label": "Tenet",
+   "qid": "Q63985561",
+   "fame": 0.699,
+   "screenwriter": "Christopher Nolan",
+   "kind": "film",
+   "description": "2020 film directed by Christopher Nolan",
+   "hook": "has an agent manipulate time by moving backward through it to prevent a war",
+   "known": 0.6
+  },
+  {
+   "label": "The Silence of the Lambs",
+   "qid": "Q133654",
+   "fame": 0.697,
+   "screenwriter": "Ted Tally",
+   "kind": "film",
+   "description": "1991 film directed by Jonathan Demme",
+   "hook": "pairs a young FBI trainee with a jailed genius psychiatrist to catch another killer",
+   "known": 0.8
+  },
+  {
+   "label": "Inception",
+   "qid": "Q25188",
+   "fame": 0.694,
+   "screenwriter": "Christopher Nolan",
+   "kind": "film",
+   "description": "2010 film directed by Christopher Nolan",
+   "hook": "has thieves plant an idea inside a target's mind through shared dreams",
+   "known": 0.8
+  },
+  {
+   "label": "Kingdom of Heaven",
+   "qid": "Q207698",
+   "fame": 0.693,
+   "screenwriter": "William Monahan",
+   "kind": "film",
+   "description": "2005 film directed by Ridley Scott",
+   "hook": "follows a blacksmith who becomes a knight defending Jerusalem during the Crusades",
+   "known": 0.5
+  },
+  {
+   "label": "The Social Network",
+   "qid": "Q185888",
+   "fame": 0.687,
+   "screenwriter": "Aaron Sorkin",
+   "kind": "film",
+   "description": "2010 film by David Fincher",
+   "hook": "dramatizes how a Harvard student founded Facebook and the lawsuits that followed",
+   "known": 0.7
+  },
+  {
+   "label": "Star Wars: Episode IV – A New Hope",
+   "qid": "Q17738",
+   "fame": 0.686,
+   "screenwriter": "George Lucas",
+   "kind": "film",
+   "description": "1977 film directed by George Lucas",
+   "hook": "introduces a farm boy, a smuggler and a princess battling a planet-destroying space station",
+   "known": 0.95
+  },
+  {
+   "label": "Scarface",
+   "qid": "Q47075",
+   "fame": 0.685,
+   "screenwriter": "Oliver Stone",
+   "kind": "film",
+   "description": "1983 film directed by Brian De Palma",
+   "hook": "follows a Cuban immigrant's rise to power as a Miami drug kingpin",
+   "known": 0.8
+  },
+  {
+   "label": "Doctor Strange in the Multiverse of Madness",
+   "qid": "Q64211112",
+   "fame": 0.684,
+   "screenwriter": "Michael Waldron",
+   "kind": "film",
+   "description": "2022 film directed by Sam Raimi",
+   "hook": "has a sorcerer hero hop between parallel realities to protect a girl with a rare power",
+   "known": 0.6
+  },
+  {
+   "label": "Seven",
+   "qid": "Q190908",
+   "fame": 0.682,
+   "screenwriter": "Andrew Kevin Walker",
+   "kind": "film",
+   "description": "1995 film by David Fincher",
+   "hook": "has two detectives hunt a killer whose crimes are staged around the deadly sins",
+   "known": 0.7
+  },
+  {
+   "label": "Memento",
+   "qid": "Q190525",
+   "fame": 0.681,
+   "screenwriter": "Christopher Nolan",
+   "kind": "film",
+   "description": "2000 film by Christopher Nolan",
+   "hook": "follows a man with no short-term memory hunting his wife's killer using tattoos and notes",
+   "known": 0.7
+  },
+  {
+   "label": "Heat",
+   "qid": "Q42198",
+   "fame": 0.68,
+   "screenwriter": "Michael Mann",
+   "kind": "film",
+   "description": "1995 film directed by Michael Mann",
+   "hook": "pits a veteran thief against an obsessive detective in a Los Angeles crime saga",
+   "known": 0.6
+  },
+  {
+   "label": "Léon: The Professional",
+   "qid": "Q484675",
+   "fame": 0.679,
+   "screenwriter": "Luc Besson",
+   "kind": "film",
+   "description": "1994 film by Luc Besson",
+   "hook": "follows a lonely hitman who takes in a young neighbor after her family is killed",
+   "known": 0.5
+  },
+  {
+   "label": "12 Angry Men",
+   "qid": "Q2345",
+   "fame": 0.677,
+   "screenwriter": "Reginald Rose",
+   "kind": "film",
+   "description": "1957 film by Sidney Lumet",
+   "hook": "shows a jury deliberating a murder case in one sweltering room, with a lone holdout",
+   "known": 0.7
+  },
+  {
+   "label": "Dunkirk",
+   "qid": "Q21935651",
+   "fame": 0.676,
+   "screenwriter": "Christopher Nolan",
+   "kind": "film",
+   "description": "2017 film by Christopher Nolan",
+   "hook": "depicts the World War II evacuation of stranded Allied soldiers from a French beach",
+   "known": 0.7
+  },
+  {
+   "label": "The Help",
+   "qid": "Q204374",
+   "fame": 0.676,
+   "screenwriter": "Tate Taylor",
+   "kind": "film",
+   "description": "2011 US film directed by Tate Taylor",
+   "hook": "follows Black maids who share their stories with a young writer in the segregated American South",
+   "known": 0.6
+  },
+  {
+   "label": "Mulholland Drive",
+   "qid": "Q272608",
+   "fame": 0.675,
+   "screenwriter": "David Lynch",
+   "kind": "film",
+   "description": "2001 film by David Lynch",
+   "hook": "twists through a dreamlike tale of an amnesiac woman and an aspiring actress",
+   "known": 0.5
+  },
+  {
+   "label": "Life of Pi",
+   "qid": "Q152780",
+   "fame": 0.673,
+   "screenwriter": "David Magee",
+   "kind": "film",
+   "description": "2012 film directed by Ang Lee",
+   "hook": "follows a boy stranded at sea on a lifeboat with a Bengal tiger",
+   "known": 0.6
+  },
+  {
+   "label": "The Wolf of Wall Street",
+   "qid": "Q1392744",
+   "fame": 0.673,
+   "screenwriter": "Terence Winter",
+   "kind": "film",
+   "description": "2013 film by Martin Scorsese",
+   "hook": "chronicles a hedonistic stockbroker's rise and fall through fraud and excess",
+   "known": 0.7
+  },
+  {
+   "label": "Whiplash",
+   "qid": "Q15648198",
+   "fame": 0.673,
+   "screenwriter": "Damien Chazelle",
+   "kind": "film",
+   "description": "2014 film directed by Damien Chazelle",
+   "hook": "pits a young jazz drummer against a brutal, demanding music instructor",
+   "known": 0.6
+  },
+  {
+   "label": "Donnie Darko",
+   "qid": "Q426828",
+   "fame": 0.669,
+   "screenwriter": "Richard Kelly",
+   "kind": "film",
+   "description": "2001 film directed by Richard Kelly",
+   "hook": "follows a troubled teen haunted by a man in a sinister rabbit suit who predicts the world's end",
+   "known": 0.5
+  },
+  {
+   "label": "Taxi Driver",
+   "qid": "Q47221",
+   "fame": 0.669,
+   "screenwriter": "Paul Schrader",
+   "kind": "film",
+   "description": "1976 film directed by Martin Scorsese",
+   "hook": "follows a lonely, insomniac Vietnam veteran who works night shifts in a New York cab",
+   "known": 0.8
+  },
+  {
+   "label": "There Will Be Blood",
+   "qid": "Q244315",
+   "fame": 0.669,
+   "screenwriter": "Paul Thomas Anderson",
+   "kind": "film",
+   "description": "2007 film by Paul Thomas Anderson",
+   "hook": "follows a ruthless oil prospector whose greed consumes him",
+   "known": 0.6
+  },
+  {
+   "label": "Rocky",
+   "qid": "Q188652",
+   "fame": 0.668,
+   "screenwriter": "Sylvester Stallone",
+   "kind": "film",
+   "description": "1976 film directed by John Avildsen",
+   "hook": "follows a small-time Philadelphia boxer given a shot at the heavyweight title",
+   "known": 0.8
+  },
+  {
+   "label": "The Incredible Hulk",
+   "qid": "Q466611",
+   "fame": 0.668,
+   "screenwriter": "Zak Penn",
+   "kind": "film",
+   "description": "2008 film by Louis Leterrier",
+   "hook": "follows a scientist on the run who turns into a giant green monster when angry",
+   "known": 0.5
+  },
+  {
+   "label": "Dead Poets Society",
+   "qid": "Q106316",
+   "fame": 0.665,
+   "screenwriter": "Tom Schulman",
+   "kind": "film",
+   "description": "1989 film directed by Peter Weir",
+   "hook": "follows an English teacher who inspires prep-school boys to seize the day",
+   "known": 0.6
+  },
+  {
+   "label": "Schindler's List",
+   "qid": "Q483941",
+   "fame": 0.665,
+   "screenwriter": "Steven Zaillian",
+   "kind": "film",
+   "description": "1993 film directed by Steven Spielberg",
+   "hook": "tells of a German industrialist who saved Jewish workers from the Holocaust",
+   "known": 0.8
+  },
+  {
+   "label": "Catch Me If You Can",
+   "qid": "Q208108",
+   "fame": 0.664,
+   "screenwriter": "Jeff Nathanson",
+   "kind": "film",
+   "description": "2002 film by Steven Spielberg",
+   "hook": "follows a teenage con man forging checks while an FBI agent chases him",
+   "known": 0.5
+  },
+  {
+   "label": "Saving Private Ryan",
+   "qid": "Q165817",
+   "fame": 0.663,
+   "screenwriter": "Robert Rodat",
+   "kind": "film",
+   "description": "1998 film directed by Steven Spielberg",
+   "hook": "follows soldiers sent behind enemy lines after D-Day to bring one man home",
+   "known": 0.8
+  },
+  {
+   "label": "The Devil Wears Prada",
+   "qid": "Q223316",
+   "fame": 0.66,
+   "screenwriter": "Aline Brosh McKenna",
+   "kind": "film",
+   "description": "2006 film directed by David Frankel",
+   "hook": "follows an assistant to a formidable fashion magazine editor",
+   "known": 0.6
+  },
+  {
+   "label": "Django Unchained",
+   "qid": "Q571032",
+   "fame": 0.659,
+   "screenwriter": "Quentin Tarantino",
+   "kind": "film",
+   "description": "2012 film by Quentin Tarantino",
+   "hook": "follows a freed slave and a bounty hunter on a mission to rescue his wife",
+   "known": 0.7
+  },
+  {
+   "label": "La La Land",
+   "qid": "Q20856802",
+   "fame": 0.658,
+   "screenwriter": "Damien Chazelle",
+   "kind": "film",
+   "description": "2016 film directed by Damien Chazelle",
+   "hook": "follows a jazz pianist and an aspiring actress falling in love in Los Angeles",
+   "known": 0.7
+  },
+  {
+   "label": "The Sound of Music",
+   "qid": "Q60072",
+   "fame": 0.658,
+   "screenwriter": "Ernest Lehman",
+   "kind": "film",
+   "description": "1965 film by Robert Wise",
+   "hook": "follows a singing governess who brings joy to an Austrian family as Nazis loom",
+   "known": 0.8
+  },
+  {
+   "label": "American Beauty",
+   "qid": "Q25139",
+   "fame": 0.654,
+   "screenwriter": "Alan Ball",
+   "kind": "film",
+   "description": "1999 US film directed by Sam Mendes",
+   "hook": "dissects suburban family life through one man's midlife crisis",
+   "known": 0.7
+  },
+  {
+   "label": "The Usual Suspects",
+   "qid": "Q132351",
+   "fame": 0.654,
+   "screenwriter": "Christopher McQuarrie",
+   "kind": "film",
+   "description": "1995 film directed by Bryan Singer",
+   "hook": "follows a lineup of criminals tied to a mysterious mastermind named Keyser Soze",
+   "known": 0.6
+  },
+  {
+   "label": "Trainspotting",
+   "qid": "Q109135",
+   "fame": 0.652,
+   "screenwriter": "John Hodge",
+   "kind": "film",
+   "description": "1996 British film by Danny Boyle",
+   "hook": "follows rebellious young friends in Edinburgh whose lives revolve around addiction",
+   "known": 0.5
+  },
+  {
+   "label": "The Exorcist",
+   "qid": "Q274167",
+   "fame": 0.649,
+   "screenwriter": "William Peter Blatty",
+   "kind": "film",
+   "description": "1973 film directed by William Friedkin",
+   "hook": "follows two priests trying to save a possessed young girl",
+   "known": 0.8
+  },
+  {
+   "label": "The Green Mile",
+   "qid": "Q208263",
+   "fame": 0.649,
+   "screenwriter": "Frank Darabont",
+   "kind": "film",
+   "description": "1999 film directed by Frank Darabont",
+   "hook": "follows a death-row guard and a gentle inmate with miraculous healing powers",
+   "known": 0.7
+  },
+  {
+   "label": "Pirates of the Caribbean: Dead Men Tell no Tales",
+   "qid": "Q10350033",
+   "fame": 0.646,
+   "screenwriter": "Jeff Nathanson",
+   "kind": "film",
+   "description": "2017 film directed by Espen Sandberg and Joachim Rønning",
+   "hook": "has a scruffy sea captain hunted by ghostly foes as he seeks Poseidon's trident",
+   "known": 0.6
+  },
+  {
+   "label": "Barry Lyndon",
+   "qid": "Q471716",
+   "fame": 0.645,
+   "screenwriter": "Stanley Kubrick",
+   "kind": "film",
+   "description": "1975 film directed by Stanley Kubrick",
+   "hook": "follows an Irish rogue who schemes his way up into the English aristocracy",
+   "known": 0.4
+  },
+  {
+   "label": "Speed",
+   "qid": "Q108006",
+   "fame": 0.644,
+   "screenwriter": "Graham Yost",
+   "kind": "film",
+   "description": "1994 film directed by Jan de Bont",
+   "hook": "traps passengers on a bus that will explode if it drops below 50 miles per hour",
+   "known": 0.6
+  },
+  {
+   "label": "Mean Girls",
+   "qid": "Q631103",
+   "fame": 0.642,
+   "screenwriter": "Tina Fey",
+   "kind": "film",
+   "description": "2004 film by Mark Waters",
+   "hook": "follows a homeschooled teen who joins a clique of popular high-school Plastics",
+   "known": 0.7
+  },
+  {
+   "label": "Blue Velvet",
+   "qid": "Q660950",
+   "fame": 0.641,
+   "screenwriter": "David Lynch",
+   "kind": "film",
+   "description": "1986 film by David Lynch",
+   "hook": "uncovers a sinister underworld after a young man finds a severed ear in a field",
+   "known": 0.5
+  },
+  {
+   "label": "Furious 7",
+   "qid": "Q14650496",
+   "fame": 0.639,
+   "screenwriter": "Chris Morgan",
+   "kind": "film",
+   "description": "2015 film directed by James Wan",
+   "hook": "has a car-racing crew face a vengeful British assassin and honors a late star",
+   "known": 0.7
+  },
+  {
+   "label": "Iron Man 2",
+   "qid": "Q205028",
+   "fame": 0.638,
+   "screenwriter": "Justin Theroux",
+   "kind": "film",
+   "description": "2010 film directed by Jon Favreau",
+   "hook": "has a billionaire inventor in a high-tech armor suit battle a Russian rival wielding electric whips",
+   "known": 0.6
+  },
+  {
+   "label": "The Pursuit of Happyness",
+   "qid": "Q220515",
+   "fame": 0.638,
+   "screenwriter": "Steven Conrad",
+   "kind": "film",
+   "description": "2006 film by Gabriele Muccino",
+   "hook": "follows a struggling salesman who becomes homeless while chasing a brokerage internship with his son",
+   "known": 0.6
+  },
+  {
+   "label": "A Beautiful Mind",
+   "qid": "Q164103",
+   "fame": 0.637,
+   "screenwriter": "Akiva Goldsman",
+   "kind": "film",
+   "description": "2001 film by Ron Howard",
+   "hook": "dramatizes the life of a math genius who battles schizophrenia and wins a Nobel Prize",
+   "known": 0.7
+  },
+  {
+   "label": "Home Alone",
+   "qid": "Q105031",
+   "fame": 0.636,
+   "screenwriter": "John Hughes",
+   "kind": "film",
+   "description": "1990 film directed by Chris Columbus",
+   "hook": "has a young boy defend his house from burglars after his family leaves on vacation without him",
+   "known": 0.8
+  },
+  {
+   "label": "Slumdog Millionaire",
+   "qid": "Q125076",
+   "fame": 0.635,
+   "screenwriter": "Simon Beaufoy",
+   "kind": "film",
+   "description": "2008 film directed by Danny Boyle",
+   "hook": "follows an orphan from the Mumbai slums who wins big on a TV quiz show",
+   "known": 0.6
+  },
+  {
+   "label": "E.T. the Extra-Terrestrial",
+   "qid": "Q11621",
+   "fame": 0.634,
+   "screenwriter": "Melissa Mathison",
+   "kind": "film",
+   "description": "1982 film directed by Steven Spielberg",
+   "hook": "tells of a lonely boy who befriends a gentle alien stranded on Earth and helps it phone home",
+   "known": 0.95
+  },
+  {
+   "label": "Her",
+   "qid": "Q788822",
+   "fame": 0.634,
+   "screenwriter": "Spike Jonze",
+   "kind": "film",
+   "description": "2013 film by Spike Jonze",
+   "hook": "tells of a lonely writer who falls for a talking computer operating system",
+   "known": 0.6
+  },
+  {
+   "label": "Transformers: Dark of the Moon",
+   "qid": "Q232774",
+   "fame": 0.634,
+   "screenwriter": "Ehren Kruger",
+   "kind": "film",
+   "description": "2011 film directed by Michael Bay",
+   "hook": "has giant shape-shifting robots battling on Earth while a secret about a lunar landing is revealed",
+   "known": 0.6
+  },
+  {
+   "label": "Amadeus",
+   "qid": "Q190956",
+   "fame": 0.633,
+   "screenwriter": "Peter Shaffer",
+   "kind": "film",
+   "description": "1984 film directed by Miloš Forman",
+   "hook": "tells of a jealous court composer who plots against a young musical prodigy in Vienna",
+   "known": 0.7
+  },
+  {
+   "label": "Kramer vs. Kramer",
+   "qid": "Q193577",
+   "fame": 0.633,
+   "screenwriter": "Robert Benton",
+   "kind": "film",
+   "description": "1979 film by Robert Benton",
+   "hook": "shows a father and mother fighting over custody of their young son after she walks out",
+   "known": 0.6
+  },
+  {
+   "label": "The Imitation Game",
+   "qid": "Q14918344",
+   "fame": 0.633,
+   "screenwriter": "Graham Moore",
+   "kind": "film",
+   "description": "2014 film directed by Morten Tyldum",
+   "hook": "dramatizes the mathematician who cracked a wartime Nazi cipher machine",
+   "known": 0.6
+  },
+  {
+   "label": "Scream",
+   "qid": "Q27411",
+   "fame": 0.631,
+   "screenwriter": "Kevin Williamson",
+   "kind": "film",
+   "description": "1996 film directed by Wes Craven",
+   "hook": "has a masked killer with a ghost costume phoning teens and quizzing them on horror movies",
+   "known": 0.7
+  },
+  {
+   "label": "Braveheart",
+   "qid": "Q162729",
+   "fame": 0.63,
+   "screenwriter": "Randall Wallace",
+   "kind": "film",
+   "description": "1995 film directed by Mel Gibson",
+   "hook": "follows a kilted Scottish warrior who leads a rebellion against English rule and shouts for freedom",
+   "known": 0.7
+  },
+  {
+   "label": "Harry Potter and the Deathly Hallows – Part 2",
+   "qid": "Q232009",
+   "fame": 0.63,
+   "screenwriter": "Steve Kloves",
+   "kind": "film",
+   "description": "2011 film directed by David Yates",
+   "hook": "is the finale of the boy-wizard saga, ending with the last battle at Hogwarts",
+   "known": 0.8
+  },
+  {
+   "label": "Harry Potter and the Goblet of Fire",
+   "qid": "Q102225",
+   "fame": 0.626,
+   "screenwriter": "Steve Kloves",
+   "kind": "film",
+   "description": "2005 film directed by Mike Newell",
+   "hook": "sends a young wizard into a dangerous tournament between three magic schools",
+   "known": 0.8
+  },
+  {
+   "label": "12 Years a Slave",
+   "qid": "Q3023357",
+   "fame": 0.624,
+   "screenwriter": "John Ridley",
+   "kind": "film",
+   "description": "2013 film directed by Steve McQueen",
+   "hook": "tells the true story of a free Black man kidnapped and sold into bondage in the American South",
+   "known": 0.6
+  },
+  {
+   "label": "Reservoir Dogs",
+   "qid": "Q72962",
+   "fame": 0.624,
+   "screenwriter": "Quentin Tarantino",
+   "kind": "film",
+   "description": "1992 film by Quentin Tarantino",
+   "hook": "follows a jewel heist gone wrong, with criminals in black suits using color-coded aliases",
+   "known": 0.6
+  },
+  {
+   "label": "The Fast and the Furious: Tokyo Drift",
+   "qid": "Q213208",
+   "fame": 0.624,
+   "screenwriter": "Chris Morgan",
+   "kind": "film",
+   "description": "2006 film directed by Justin Lin",
+   "hook": "sends an American teen to Japan, where he gets caught up in illegal street racing",
+   "known": 0.5
+  },
+  {
+   "label": "The Lost World: Jurassic Park",
+   "qid": "Q200873",
+   "fame": 0.624,
+   "screenwriter": "David Koepp",
+   "kind": "film",
+   "description": "1997 film directed by Steven Spielberg",
+   "hook": "returns to a second island of cloned dinosaurs, where hunters try to capture them",
+   "known": 0.7
+  },
+  {
+   "label": "Basic Instinct",
+   "qid": "Q146673",
+   "fame": 0.623,
+   "screenwriter": "Joe Eszterhas",
+   "kind": "film",
+   "description": "1992 film directed by Paul Verhoeven",
+   "hook": "is an erotic thriller starring Sharon Stone as an ice-pick murder suspect with a famous interrogation scene",
+   "known": 0.5
+  },
+  {
+   "label": "Platoon",
+   "qid": "Q190643",
+   "fame": 0.623,
+   "screenwriter": "Oliver Stone",
+   "kind": "film",
+   "description": "1986 film directed by Oliver Stone",
+   "hook": "follows a young American soldier's harrowing tour of duty in Vietnam",
+   "known": 0.6
+  },
+  {
+   "label": "Pan's Labyrinth",
+   "qid": "Q216006",
+   "fame": 0.618,
+   "screenwriter": "Guillermo del Toro",
+   "kind": "film",
+   "description": "2006 film by Guillermo del Toro",
+   "hook": "follows a girl in 1940s Spain who enters a dark fantasy realm guarded by a faun",
+   "known": 0.5
+  },
+  {
+   "label": "American History X",
+   "qid": "Q208572",
+   "fame": 0.617,
+   "screenwriter": "David McKenna",
+   "kind": "film",
+   "description": "1998 film directed by Tony Kaye",
+   "hook": "tells of a former neo-Nazi skinhead trying to keep his younger brother from following his path",
+   "known": 0.5
+  },
+  {
+   "label": "Star Wars: Episode I – The Phantom Menace",
+   "qid": "Q165713",
+   "fame": 0.617,
+   "screenwriter": "George Lucas",
+   "kind": "film",
+   "description": "1999 film directed by George Lucas",
+   "hook": "introduces a young Anakin Skywalker and kicks off the prequel trilogy of a galaxy far, far away",
+   "known": 0.8
+  },
+  {
+   "label": "The Hateful Eight",
+   "qid": "Q18225084",
+   "fame": 0.617,
+   "screenwriter": "Quentin Tarantino",
+   "kind": "film",
+   "description": "2015 film directed by Quentin Tarantino",
+   "hook": "traps bounty hunters and strangers in a snowbound Wyoming cabin as a blizzard rages",
+   "known": 0.6
+  },
+  {
+   "label": "The Pianist",
+   "qid": "Q150804",
+   "fame": 0.617,
+   "screenwriter": "Ronald Harwood",
+   "kind": "film",
+   "description": "2002 film directed by Roman Polanski",
+   "hook": "follows a Jewish musician's struggle to survive the Warsaw ghetto in World War II",
+   "known": 0.6
+  },
+  {
+   "label": "American Pie",
+   "qid": "Q220713",
+   "fame": 0.616,
+   "screenwriter": "Adam Herz",
+   "kind": "film",
+   "description": "1999 film by Paul Weitz and Adam Herz",
+   "hook": "follows four teenage friends who make a pact to lose their virginity before graduation",
+   "known": 0.6
+  },
+  {
+   "label": "Guardians of the Galaxy Vol. 2",
+   "qid": "Q20001199",
+   "fame": 0.613,
+   "screenwriter": "James Gunn",
+   "kind": "film",
+   "description": "2017 film directed by James Gunn",
+   "hook": "sends a band of space misfits, with a talking raccoon, to meet the leader's father",
+   "known": 0.6
+  },
+  {
+   "label": "Love Actually",
+   "qid": "Q190588",
+   "fame": 0.613,
+   "screenwriter": "Richard Curtis",
+   "kind": "film",
+   "description": "2003 film directed by Richard Curtis",
+   "hook": "weaves together many British romance stories in the weeks leading up to Christmas",
+   "known": 0.6
+  },
+  {
+   "label": "My Neighbor Totoro",
+   "qid": "Q39571",
+   "fame": 0.613,
+   "screenwriter": "Hayao Miyazaki",
+   "kind": "film",
+   "description": "1988 film directed by Hayao Miyazaki",
+   "hook": "follows two sisters who meet a giant furry forest spirit and ride a catbus",
+   "known": 0.6
+  },
+  {
+   "label": "Pretty Woman",
+   "qid": "Q207954",
+   "fame": 0.611,
+   "screenwriter": "J. F. Lawton",
+   "kind": "film",
+   "description": "1990 film directed by Garry Marshall",
+   "hook": "has a wealthy businessman hire a Hollywood escort, who then wins his heart",
+   "known": 0.6
+  },
+  {
+   "label": "Cast Away",
+   "qid": "Q213411",
+   "fame": 0.61,
+   "screenwriter": "William Broyles, Jr.",
+   "kind": "film",
+   "description": "2000 film directed by Robert Zemeckis",
+   "hook": "stars Tom Hanks as a delivery-company employee stranded on a deserted island with a volleyball friend",
+   "known": 0.7
+  },
+  {
+   "label": "Doctor Zhivago",
+   "qid": "Q323827",
+   "fame": 0.61,
+   "screenwriter": "Robert Bolt",
+   "kind": "film",
+   "description": "1965 film directed by David Lean",
+   "hook": "is a sweeping Russian Revolution epic about a poet-physician torn between two women",
+   "known": 0.6
+  },
+  {
+   "label": "Fantastic Beasts and Where to Find Them",
+   "qid": "Q18199330",
+   "fame": 0.61,
+   "screenwriter": "J. K. Rowling",
+   "kind": "film",
+   "description": "2016 film directed by David Yates",
+   "hook": "follows a magizoologist arriving in 1920s New York with a suitcase of magical creatures",
+   "known": 0.5
+  },
+  {
+   "label": "Fast & Furious",
+   "qid": "Q380996",
+   "fame": 0.61,
+   "screenwriter": "Chris Morgan",
+   "kind": "film",
+   "description": "2009 film directed by Justin Lin",
+   "hook": "reunites the original street-racing crew as an undercover agent and a fugitive hunt a drug lord",
+   "known": 0.6
+  },
+  {
+   "label": "Harry Potter and the Order of the Phoenix",
+   "qid": "Q102235",
+   "fame": 0.61,
+   "screenwriter": "Michael Goldenberg",
+   "kind": "film",
+   "description": "2007 film directed by David Yates",
+   "hook": "sees a young wizard face a hostile ministry official who takes over his school",
+   "known": 0.7
+  },
+  {
+   "label": "Harry Potter and the Half-Blood Prince",
+   "qid": "Q161687",
+   "fame": 0.609,
+   "screenwriter": "Steve Kloves",
+   "kind": "film",
+   "description": "2009 film directed by David Yates",
+   "hook": "reveals a mysterious old textbook and ends with a shocking death at the top of a tower",
+   "known": 0.7
+  },
+  {
+   "label": "The Mask",
+   "qid": "Q219421",
+   "fame": 0.609,
+   "screenwriter": "Mike Werb",
+   "kind": "film",
+   "description": "1994 film directed by Chuck Russell",
+   "hook": "stars Jim Carrey as a meek bank clerk who finds a magical green-faced disguise",
+   "known": 0.6
+  },
+  {
+   "label": "The Aviator",
+   "qid": "Q201924",
+   "fame": 0.608,
+   "screenwriter": "John Logan",
+   "kind": "film",
+   "description": "2004 film directed by Martin Scorsese",
+   "hook": "stars Leonardo DiCaprio as the eccentric billionaire pilot and film mogul Howard Hughes",
+   "known": 0.7
+  },
+  {
+   "label": "Harry Potter and the Deathly Hallows – Part 1",
+   "qid": "Q161678",
+   "fame": 0.607,
+   "screenwriter": "Steve Kloves",
+   "kind": "film",
+   "description": "2010 film directed by David Yates",
+   "hook": "sends a trio of young heroes on the run to hunt for hidden dark-magic objects",
+   "known": 0.7
+  },
+  {
+   "label": "Men in Black",
+   "qid": "Q51416",
+   "fame": 0.606,
+   "screenwriter": "Ed Solomon",
+   "kind": "film",
+   "description": "1997 science fiction film directed by Barry Sonnenfeld",
+   "hook": "has secret agents in dark suits policing aliens living on Earth, using a memory-erasing flash device",
+   "known": 0.7
+  },
+  {
+   "label": "Minions",
+   "qid": "Q13619743",
+   "fame": 0.605,
+   "screenwriter": "Brian Lynch",
+   "kind": "film",
+   "description": "2015 animated film by Pierre Coffin and Kyle Balda",
+   "hook": "follows small yellow henchmen who set out to find a new villain boss to serve",
+   "known": 0.6
+  },
+  {
+   "label": "The Fate of the Furious",
+   "qid": "Q19829521",
+   "fame": 0.604,
+   "screenwriter": "Chris Morgan",
+   "kind": "film",
+   "description": "2017 film directed by F. Gary Gray",
+   "hook": "has a street-racing crew's leader turn against his own family, forcing former enemies to team up",
+   "known": 0.6
+  },
+  {
+   "label": "Bohemian Rhapsody",
+   "qid": "Q27894574",
+   "fame": 0.603,
+   "screenwriter": "Anthony McCarten",
+   "kind": "film",
+   "description": "2018 film directed by Bryan Singer",
+   "hook": "traces the story of a legendary British rock band and its flamboyant frontman Freddie Mercury",
+   "known": 0.7
+  },
+  {
+   "label": "Ghost",
+   "qid": "Q49003",
+   "fame": 0.603,
+   "screenwriter": "Bruce Joel Rubin",
+   "kind": "film",
+   "description": "1990 film directed by Jerry Zucker",
+   "hook": "has a murdered banker return as a spirit, with a psychic and a pottery wheel scene",
+   "known": 0.6
+  },
+  {
+   "label": "Space Jam",
+   "qid": "Q207659",
+   "fame": 0.603,
+   "screenwriter": "Timothy Harris",
+   "kind": "film",
+   "description": "1996 live-action and animated film directed by Joe Pytka",
+   "hook": "has Michael Jordan teaming up with Bugs Bunny and the Looney Tunes for an alien basketball match",
+   "known": 0.6
+  },
+  {
+   "label": "Chinatown",
+   "qid": "Q644987",
+   "fame": 0.602,
+   "screenwriter": "Robert Towne",
+   "kind": "film",
+   "description": "1974 film directed by Roman Polański",
+   "hook": "stars Jack Nicholson as a private eye uncovering a water and land scandal in 1930s Los Angeles",
+   "known": 0.7
+  },
+  {
+   "label": "Into the Wild",
+   "qid": "Q269912",
+   "fame": 0.6,
+   "screenwriter": "Sean Penn",
+   "kind": "film",
+   "description": "2007 film directed by Sean Penn",
+   "hook": "tells the true story of a graduate who gives away his money and heads alone to live off the land in Alaska",
+   "known": 0.5
+  },
+  {
+   "label": "Blood Diamond",
+   "qid": "Q74958",
+   "fame": 0.598,
+   "screenwriter": "Charles Leavitt",
+   "kind": "film",
+   "description": "2006 film by Edward Zwick",
+   "hook": "follows a smuggler and a fisherman hunting for a rare gem amid civil war in Sierra Leone",
+   "known": 0.5
+  },
+  {
+   "label": "Dances with Wolves",
+   "qid": "Q20456",
+   "fame": 0.597,
+   "screenwriter": "Michael Blake",
+   "kind": "film",
+   "description": "1990 film directed by Kevin Costner",
+   "hook": "follows a Civil War soldier who befriends the Lakota Sioux on the frontier",
+   "known": 0.7
+  },
+  {
+   "label": "The King's Speech",
+   "qid": "Q160060",
+   "fame": 0.595,
+   "screenwriter": "David Seidler",
+   "kind": "film",
+   "description": "2010 British film directed by Tom Hooper",
+   "hook": "follows a British monarch who overcomes a stammer with an unorthodox therapist",
+   "known": 0.6
+  },
+  {
+   "label": "3 Idiots",
+   "qid": "Q229633",
+   "fame": 0.593,
+   "screenwriter": "Abhijat Joshi",
+   "kind": "film",
+   "description": "2009 film directed by Rajkumar Hirani",
+   "hook": "follows three engineering-college friends and a hunt for their missing pal, with the catchphrase all is well",
+   "known": 0.4
+  },
+  {
+   "label": "The Da Vinci Code",
+   "qid": "Q160560",
+   "fame": 0.593,
+   "screenwriter": "Akiva Goldsman",
+   "kind": "film",
+   "description": "2006 film directed by Ron Howard",
+   "hook": "has Tom Hanks as a symbologist chasing clues through Paris and London to a religious secret",
+   "known": 0.6
+  },
+  {
+   "label": "Unforgiven",
+   "qid": "Q104137",
+   "fame": 0.593,
+   "screenwriter": "David Peoples",
+   "kind": "film",
+   "description": "1992 American Western film directed by Clint Eastwood",
+   "hook": "stars Clint Eastwood as a retired gunslinger who takes one last bounty job",
+   "known": 0.7
+  },
+  {
+   "label": "Star Wars: Episode VIII – The Last Jedi",
+   "qid": "Q18486021",
+   "fame": 0.592,
+   "screenwriter": "Rian Johnson",
+   "kind": "film",
+   "description": "2017 film directed by Rian Johnson",
+   "hook": "sees Luke Skywalker reluctantly train Rey while a resistance fleet is chased through space",
+   "known": 0.7
+  },
+  {
+   "label": "Downfall",
+   "qid": "Q152857",
+   "fame": 0.59,
+   "screenwriter": "Bernd Eichinger",
+   "kind": "film",
+   "description": "2004 film by Oliver Hirschbiegel",
+   "hook": "depicts the last days of Adolf Hitler in a Berlin bunker",
+   "known": 0.5
+  },
+  {
+   "label": "Lincoln",
+   "qid": "Q32433",
+   "fame": 0.589,
+   "screenwriter": "Tony Kushner",
+   "kind": "film",
+   "description": "2012 film directed by Steven Spielberg",
+   "hook": "stars Daniel Day-Lewis as the 16th US president fighting to abolish slavery in Congress",
+   "known": 0.7
+  },
+  {
+   "label": "Lucy",
+   "qid": "Q15624215",
+   "fame": 0.589,
+   "screenwriter": "Luc Besson",
+   "kind": "film",
+   "description": "2014 film directed by Luc Besson",
+   "hook": "has Scarlett Johansson as a woman whose brain capacity expands beyond human limits after a drug leak",
+   "known": 0.6
+  },
+  {
+   "label": "Chariots of Fire",
+   "qid": "Q207921",
+   "fame": 0.588,
+   "screenwriter": "Colin Welland",
+   "kind": "film",
+   "description": "1981 film by Hugh Hudson",
+   "hook": "follows two British runners at an early Olympics and features a famous slow-motion beach run",
+   "known": 0.6
+  },
+  {
+   "label": "Fast Five",
+   "qid": "Q401976",
+   "fame": 0.583,
+   "screenwriter": "Chris Morgan",
+   "kind": "film",
+   "description": "2011 film directed by Justin Lin",
+   "hook": "has a crew of drivers plan a heist in Rio against a corrupt businessman",
+   "known": 0.6
+  },
+  {
+   "label": "Indiana Jones and the Kingdom of the Crystal Skull",
+   "qid": "Q182373",
+   "fame": 0.581,
+   "screenwriter": "David Koepp",
+   "kind": "film",
+   "description": "2008 film directed by Steven Spielberg",
+   "hook": "sends an aging archaeologist hero against Soviet agents seeking a Cold War relic in a lost jungle city",
+   "known": 0.7
+  },
+  {
+   "label": "Maleficent",
+   "qid": "Q172271",
+   "fame": 0.579,
+   "screenwriter": "Linda Woolverton",
+   "kind": "film",
+   "description": "2014 film directed by Robert Stromberg",
+   "hook": "retells Sleeping Beauty from the perspective of the horned fairy who curses a princess",
+   "known": 0.6
+  },
+  {
+   "label": "The Bourne Supremacy",
+   "qid": "Q156608",
+   "fame": 0.579,
+   "screenwriter": "Tony Gilroy",
+   "kind": "film",
+   "description": "2004 film directed by Paul Greengrass",
+   "hook": "has a secret-agent amnesiac hunted across Europe, Russia and India after being framed for a killing",
+   "known": 0.6
+  },
+  {
+   "label": "Tomorrow Never Dies",
+   "qid": "Q207916",
+   "fame": 0.578,
+   "screenwriter": "Bruce Feirstein",
+   "kind": "film",
+   "description": "1997 film by Roger Spottiswoode",
+   "hook": "has a Bond-versus-media-mogul plot, with Pierce Brosnan and a remote-controlled BMW",
+   "known": 0.5
+  }
+ ]
+}

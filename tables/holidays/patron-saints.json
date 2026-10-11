@@ -1,0 +1,483 @@
+{
+ "id": "table.holidays.patron-saints",
+ "kind": "table",
+ "title": "Patron saints: what they protect",
+ "genre": "daily-life",
+ "category": "holidays",
+ "topic": "traditions",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?patronLabel WHERE { { SELECT ?item ?patron WHERE { { SELECT ?item (MAX(?psl) AS ?best) WHERE { VALUES ?c { wd:Q6256 wd:Q3624078 wd:Q28640 wd:Q12737077 wd:Q515 wd:Q1549591 wd:Q5119 wd:Q1637706 wd:Q5107 wd:Q1093829 wd:Q3957 wd:Q484170 wd:Q4830453 } ?p wdt:P31 ?c . ?p wdt:P417 ?item . ?item wdt:P411 [] . ?p wikibase:sitelinks ?psl . FILTER(?psl >= 30) } GROUP BY ?item } ?patron wdt:P417 ?item . ?patron wikibase:sitelinks ?best . } } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T14:12:44.919Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T14:12:44.919Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "patron_of",
+   "label": "Patron saint of",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "saint",
+  "many": "saints",
+  "wildcard": "person",
+  "minFame": 0.45,
+  "exclude": [
+   {
+    "qid": "Q9438",
+    "why": "Thomas Aquinas: patron of a trade, not a place; sentences ask about places"
+   },
+   {
+    "qid": "Q31877",
+    "why": "Our Lady of Guadalupe: title of Mary, not a saint; unsure"
+   },
+   {
+    "qid": "Q44248",
+    "why": "Jerome: patron of a trade, not a place; sentences ask about places"
+   },
+   {
+    "qid": "Q174880",
+    "why": "Teresa of Ávila: giveaway: name shares the place"
+   },
+   {
+    "qid": "Q43669",
+    "why": "Thomas the Apostle: patron of a trade, not a place; sentences ask about places"
+   },
+   {
+    "qid": "Q44265",
+    "why": "Benedict of Nursia: patron of a trade, not a place; sentences ask about places"
+   },
+   {
+    "qid": "Q43982",
+    "why": "Bartholomew the Apostle: patron of a trade, not a place; sentences ask about places"
+   },
+   {
+    "qid": "Q163900",
+    "why": "Francis Xavier: patron of a trade, not a place; sentences ask about places"
+   },
+   {
+    "qid": "Q128538",
+    "why": "Luke the Evangelist: patron of a trade, not a place; sentences ask about places"
+   },
+   {
+    "qid": "Q179718",
+    "why": "Catherine of Alexandria: patron of a trade, not a place; sentences ask about places"
+   },
+   {
+    "qid": "Q185117",
+    "why": "Justin Martyr: patron of a trade, not a place; sentences ask about places"
+   },
+   {
+    "qid": "Q174044",
+    "why": "Alexander Nevsky: Russia: war-adjacent"
+   },
+   {
+    "qid": "Q192816",
+    "why": "Saint Barbara: patron of a trade, not a place; sentences ask about places"
+   },
+   {
+    "qid": "Q80513",
+    "why": "Saint Cecilia: patron of a trade, not a place; sentences ask about places"
+   },
+   {
+    "qid": "Q60059",
+    "why": "Albertus Magnus: patron of a trade, not a place; sentences ask about places"
+   }
+  ],
+  "columns": {
+   "patron_of": {
+    "role": "link",
+    "pick": "{label} is the patron saint of which place?",
+    "statement": "{label} is the patron saint of {value}.",
+    "match": "Match each saint to the place they watch over.",
+    "odd": "Three of these saints are patrons of {value}. Which one isn't?",
+    "all": "Tap all {n} saints who are patrons of {value}.",
+    "reverse": "Which of these saints is a patron of {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Paul the Apostle",
+   "qid": "Q9200",
+   "fame": 0.676,
+   "patron_of": "Rome",
+   "description": "Early Christian apostle and missionary (c. AD 5 – c. 64/65)",
+   "hook": "wrote many New Testament letters and spread Christianity across the ancient Mediterranean",
+   "known": 0.8,
+   "kind": "apostle"
+  },
+  {
+   "label": "Saint Peter",
+   "qid": "Q33923",
+   "fame": 0.66,
+   "patron_of": "Rome",
+   "description": "apostle of Jesus Christ",
+   "hook": "was a fisherman who became a leading disciple of Jesus and is said to hold the keys to heaven",
+   "known": 0.8,
+   "kind": "apostle"
+  },
+  {
+   "label": "Michael",
+   "qid": "Q45581",
+   "fame": 0.653,
+   "patron_of": "Germany",
+   "description": "archangel in Jewish, Christian, and Islamic teachings",
+   "hook": "is the warrior archangel who leads heaven's armies against evil",
+   "known": 0.8,
+   "kind": "archangel"
+  },
+  {
+   "label": "Francis of Assisi",
+   "qid": "Q676555",
+   "fame": 0.65,
+   "patron_of": "Italy",
+   "description": "Italian Catholic saint, friar, deacon and preacher and founder of the Franciscan Order (1181/2–1226)",
+   "hook": "gave up a wealthy life to found an order of friars and is linked with animals and nature",
+   "known": 0.6,
+   "kind": "founder"
+  },
+  {
+   "label": "Thomas Aquinas",
+   "qid": "Q9438",
+   "fame": 0.642,
+   "patron_of": "philosopher",
+   "description": "Italian Dominican friar, philosopher, Catholic priest, and Doctor of the Church (1225–1274)",
+   "hook": "wrote the Summa Theologica, blending Aristotle's ideas with Catholic theology",
+   "known": 0.4,
+   "kind": "scholar"
+  },
+  {
+   "label": "John the Baptist",
+   "qid": "Q40662",
+   "fame": 0.622,
+   "patron_of": "Macau",
+   "description": "1st-century Jewish itinerant preacher (Bible)",
+   "hook": "preached in the wilderness and baptized Jesus in the Jordan River",
+   "known": 0.8,
+   "kind": "apostle"
+  },
+  {
+   "label": "Saint George",
+   "qid": "Q48438",
+   "fame": 0.599,
+   "patron_of": "Portugal",
+   "description": "Christian saint and martyr (died 303)",
+   "hook": "was a Roman soldier and martyr, famous in legend for slaying a dragon",
+   "known": 0.6,
+   "kind": "martyr"
+  },
+  {
+   "label": "Our Lady of Guadalupe",
+   "qid": "Q31877",
+   "fame": 0.595,
+   "patron_of": "Mexico",
+   "description": "title of the Virgin Mary as she appeared to an Indigenous man in Mexico in December 1531",
+   "hook": "is a title of the Virgin Mary tied to a miraculous image said to appear on a cloak",
+   "known": 0.6,
+   "kind": "virgin mary"
+  },
+  {
+   "label": "Jerome",
+   "qid": "Q44248",
+   "fame": 0.583,
+   "patron_of": "librarian",
+   "description": "4th and 5th-century Catholic and Eastern Orthodox saint and Doctor of the Church",
+   "hook": null,
+   "known": 0.2,
+   "kind": "scholar"
+  },
+  {
+   "label": "Saint Nicholas",
+   "qid": "Q44269",
+   "fame": 0.579,
+   "patron_of": "Amsterdam",
+   "description": "4th-century Christian bishop and saint",
+   "hook": "was a generous bishop who loved children and is the root of the Santa Claus legend",
+   "known": 0.95,
+   "kind": "bishop"
+  },
+  {
+   "label": "Saint Joseph",
+   "qid": "Q128267",
+   "fame": 0.57,
+   "patron_of": "Canada",
+   "description": "Christian saint; husband of Mary and father of Jesus",
+   "hook": "was a carpenter from Nazareth who raised Jesus as his legal son",
+   "known": 0.95,
+   "kind": "saint"
+  },
+  {
+   "label": "Matthew the Apostle",
+   "qid": "Q43600",
+   "fame": 0.567,
+   "patron_of": "Salerno",
+   "description": "Christian evangelist and apostle (10-74)",
+   "hook": "was a tax collector who became a disciple and is credited with a gospel including the Sermon on the Mount",
+   "known": 0.6,
+   "kind": "apostle"
+  },
+  {
+   "label": "Teresa of Ávila",
+   "qid": "Q174880",
+   "fame": 0.567,
+   "patron_of": "Ávila",
+   "description": "Roman Catholic saint (1515-1582)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "saint"
+  },
+  {
+   "label": "Saint Christopher",
+   "qid": "Q193507",
+   "fame": 0.565,
+   "patron_of": "Havana",
+   "description": "saint in the Catholic and Orthodox church",
+   "hook": "is the legendary giant said to have carried the child Christ across a river",
+   "known": 0.4,
+   "kind": "saint"
+  },
+  {
+   "label": "Saint Sebastian",
+   "qid": "Q183332",
+   "fame": 0.561,
+   "patron_of": "Rio de Janeiro",
+   "description": "Christian saint and martyr (256–288)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "martyr"
+  },
+  {
+   "label": "Anthony of Padua",
+   "qid": "Q167477",
+   "fame": 0.557,
+   "patron_of": "Padua",
+   "description": "Franciscan saint, Doctor of the Church (1195–1231)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "saint"
+  },
+  {
+   "label": "Thomas the Apostle",
+   "qid": "Q43669",
+   "fame": 0.552,
+   "patron_of": "architect",
+   "description": "one of the Twelve Apostles in the New Testament",
+   "hook": null,
+   "known": 0.2,
+   "kind": "apostle"
+  },
+  {
+   "label": "Benedict of Nursia",
+   "qid": "Q44265",
+   "fame": 0.536,
+   "patron_of": "farmer",
+   "description": "founder of Christian monasticism, founder of the Benedictine order (480–547)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "founder"
+  },
+  {
+   "label": "Catherine of Siena",
+   "qid": "Q229190",
+   "fame": 0.536,
+   "patron_of": "Italy",
+   "description": "Italian Dominican saint (1347-1380)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "saint"
+  },
+  {
+   "label": "Bartholomew the Apostle",
+   "qid": "Q43982",
+   "fame": 0.53,
+   "patron_of": "farmer",
+   "description": "Christian apostle and martyr",
+   "hook": null,
+   "known": 0.05,
+   "kind": "apostle"
+  },
+  {
+   "label": "Januarius",
+   "qid": "Q315312",
+   "fame": 0.53,
+   "patron_of": "Naples",
+   "description": "Bishop of Naples (232-305)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "bishop"
+  },
+  {
+   "label": "Saint Lucy",
+   "qid": "Q183240",
+   "fame": 0.528,
+   "patron_of": "Syracuse",
+   "description": "saint from Italy",
+   "hook": null,
+   "known": 0.2,
+   "kind": "martyr"
+  },
+  {
+   "label": "Andrew the Apostle",
+   "qid": "Q43399",
+   "fame": 0.525,
+   "patron_of": "Russia",
+   "description": "religious figure of the Christian faith",
+   "hook": null,
+   "known": 0.2,
+   "kind": "apostle"
+  },
+  {
+   "label": "Francis Xavier",
+   "qid": "Q163900",
+   "fame": 0.521,
+   "patron_of": "missionary",
+   "description": "Spanish Catholic saint and missionary (1506–1552)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "saint"
+  },
+  {
+   "label": "Luke the Evangelist",
+   "qid": "Q128538",
+   "fame": 0.518,
+   "patron_of": "painter",
+   "description": "one of the four evangelists",
+   "hook": "is credited with writing a gospel and the Book of Acts, and is traditionally called a physician",
+   "known": 0.6,
+   "kind": "apostle"
+  },
+  {
+   "label": "Catherine of Alexandria",
+   "qid": "Q179718",
+   "fame": 0.515,
+   "patron_of": "philosopher",
+   "description": "Egyptian missionary, saint depicted with a wheel",
+   "hook": null,
+   "known": 0.05,
+   "kind": "scholar"
+  },
+  {
+   "label": "Mark the Evangelist",
+   "qid": "Q31966",
+   "fame": 0.502,
+   "patron_of": "Venice",
+   "description": "credited author of the Gospel of Mark and Christian saint; traditionally identified with John Mark (20-68)",
+   "hook": "is traditionally credited with writing the shortest of the four gospels",
+   "known": 0.6,
+   "kind": "apostle"
+  },
+  {
+   "label": "Justin Martyr",
+   "qid": "Q185117",
+   "fame": 0.497,
+   "patron_of": "philosopher",
+   "description": "2nd century CE Christian apologist and martyr",
+   "hook": null,
+   "known": 0.05,
+   "kind": "scholar"
+  },
+  {
+   "label": "Saint Anne",
+   "qid": "Q164294",
+   "fame": 0.497,
+   "patron_of": "Canada",
+   "description": "mother of Virgin Mary in Christian and Islamic traditions; unnamed in the New Testament or Quran",
+   "hook": "is traditionally named as the mother of the Virgin Mary and grandmother of Jesus",
+   "known": 0.4,
+   "kind": "saint"
+  },
+  {
+   "label": "Alexander Nevsky",
+   "qid": "Q174044",
+   "fame": 0.487,
+   "patron_of": "Volgograd",
+   "description": "political and military figure of Kievan Rus' (1246–1263)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "saint"
+  },
+  {
+   "label": "Ambrose",
+   "qid": "Q43689",
+   "fame": 0.487,
+   "patron_of": "Milan",
+   "description": "Roman theologian and Bishop of Milan (c. 340–397)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "bishop"
+  },
+  {
+   "label": "John Bosco",
+   "qid": "Q146183",
+   "fame": 0.484,
+   "patron_of": "Brasília",
+   "description": "Italian Roman Catholic priest, educator, writer (1815–1888)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "saint"
+  },
+  {
+   "label": "Saint Barbara",
+   "qid": "Q192816",
+   "fame": 0.478,
+   "patron_of": "architect",
+   "description": "early Christian saint and martyr, from Nicomedia (273-306)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "martyr"
+  },
+  {
+   "label": "Agatha of Sicily",
+   "qid": "Q200895",
+   "fame": 0.474,
+   "patron_of": "Catania",
+   "description": "Christian saint and martyress (235–261)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "martyr"
+  },
+  {
+   "label": "Saint Cecilia",
+   "qid": "Q80513",
+   "fame": 0.46,
+   "patron_of": "composer",
+   "description": "Roman Catholic saint, martyr and patron saint of music",
+   "hook": "is a martyr said to have sung in her heart to God while musicians played at her wedding",
+   "known": 0.4,
+   "kind": "martyr"
+  },
+  {
+   "label": "Albertus Magnus",
+   "qid": "Q60059",
+   "fame": 0.455,
+   "patron_of": "philosopher",
+   "description": "German-Dominican friar and saint (c. 1200–1280)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "scholar"
+  }
+ ]
+}

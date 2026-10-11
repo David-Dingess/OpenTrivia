@@ -1,0 +1,312 @@
+{
+ "id": "table.food-and-drink.desserts-country",
+ "kind": "table",
+ "title": "Famous desserts and the country they come from",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "sweets-and-snacks",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { VALUES (?article ?countryLabel) { (<https://en.wikipedia.org/wiki/Tiramisu> \"Italy\") (<https://en.wikipedia.org/wiki/Panna_cotta> \"Italy\") (<https://en.wikipedia.org/wiki/Cannoli> \"Italy\") (<https://en.wikipedia.org/wiki/Gelato> \"Italy\") (<https://en.wikipedia.org/wiki/Zabaglione> \"Italy\") (<https://en.wikipedia.org/wiki/Cassata> \"Italy\") (<https://en.wikipedia.org/wiki/Affogato> \"Italy\") (<https://en.wikipedia.org/wiki/Sfogliatella> \"Italy\") (<https://en.wikipedia.org/wiki/Panettone> \"Italy\") (<https://en.wikipedia.org/wiki/Biscotti> \"Italy\") (<https://en.wikipedia.org/wiki/Zeppole> \"Italy\") (<https://en.wikipedia.org/wiki/Semifreddo> \"Italy\") (<https://en.wikipedia.org/wiki/Cantucci> \"Italy\") (<https://en.wikipedia.org/wiki/Pandoro> \"Italy\") (<https://en.wikipedia.org/wiki/Crème_brûlée> \"France\") (<https://en.wikipedia.org/wiki/Macaron> \"France\") (<https://en.wikipedia.org/wiki/Éclair> \"France\") (<https://en.wikipedia.org/wiki/Profiterole> \"France\") (<https://en.wikipedia.org/wiki/Mille-feuille> \"France\") (<https://en.wikipedia.org/wiki/Tarte_Tatin> \"France\") (<https://en.wikipedia.org/wiki/Crêpe> \"France\") (<https://en.wikipedia.org/wiki/Clafoutis> \"France\") (<https://en.wikipedia.org/wiki/Madeleine_(cake)> \"France\") (<https://en.wikipedia.org/wiki/Soufflé> \"France\") (<https://en.wikipedia.org/wiki/Opera_cake> \"France\") (<https://en.wikipedia.org/wiki/Paris–Brest> \"France\") (<https://en.wikipedia.org/wiki/Dacquoise> \"France\") (<https://en.wikipedia.org/wiki/Financier_(cake)> \"France\") (<https://en.wikipedia.org/wiki/Kouign-amann> \"France\") (<https://en.wikipedia.org/wiki/Canelé> \"France\") (<https://en.wikipedia.org/wiki/Île_flottante> \"France\") (<https://en.wikipedia.org/wiki/Religieuse_(pastry)> \"France\") (<https://en.wikipedia.org/wiki/Croquembouche> \"France\") (<https://en.wikipedia.org/wiki/Saint_Honoré_cake> \"France\") (<https://en.wikipedia.org/wiki/Brownie_(chocolate_confectionery)> \"United States\") (<https://en.wikipedia.org/wiki/Key_lime_pie> \"United States\") (<https://en.wikipedia.org/wiki/Banana_split> \"United States\") (<https://en.wikipedia.org/wiki/Baked_Alaska> \"United States\") (<https://en.wikipedia.org/wiki/Pecan_pie> \"United States\") (<https://en.wikipedia.org/wiki/S'more> \"United States\") (<https://en.wikipedia.org/wiki/Funnel_cake> \"United States\") (<https://en.wikipedia.org/wiki/Boston_cream_pie> \"United States\") (<https://en.wikipedia.org/wiki/Pumpkin_pie> \"United States\") (<https://en.wikipedia.org/wiki/Whoopie_pie> \"United States\") (<https://en.wikipedia.org/wiki/Snickerdoodle> \"United States\") (<https://en.wikipedia.org/wiki/Ice_cream_sundae> \"United States\") (<https://en.wikipedia.org/wiki/Chocolate_chip_cookie> \"United States\") (<https://en.wikipedia.org/wiki/Rice_Krispies_Treats> \"United States\") (<https://en.wikipedia.org/wiki/Peach_cobbler> \"United States\") (<https://en.wikipedia.org/wiki/Cherry_pie> \"United States\") (<https://en.wikipedia.org/wiki/Apple_pie> \"United States\") (<https://en.wikipedia.org/wiki/Banana_pudding> \"United States\") (<https://en.wikipedia.org/wiki/Sweet_potato_pie> \"United States\") (<https://en.wikipedia.org/wiki/Mud_pie> \"United States\") (<https://en.wikipedia.org/wiki/Mochi> \"Japan\") (<https://en.wikipedia.org/wiki/Dorayaki> \"Japan\") (<https://en.wikipedia.org/wiki/Taiyaki> \"Japan\") (<https://en.wikipedia.org/wiki/Daifuku> \"Japan\") (<https://en.wikipedia.org/wiki/Dango> \"Japan\") (<https://en.wikipedia.org/wiki/Anmitsu> \"Japan\") (<https://en.wikipedia.org/wiki/Castella> \"Japan\") (<https://en.wikipedia.org/wiki/Yokan> \"Japan\") (<https://en.wikipedia.org/wiki/Wagashi> \"Japan\") (<https://en.wikipedia.org/wiki/Kakigōri> \"Japan\") (<https://en.wikipedia.org/wiki/Gulab_jamun> \"India\") (<https://en.wikipedia.org/wiki/Rasgulla> \"India\") (<https://en.wikipedia.org/wiki/Kheer> \"India\") (<https://en.wikipedia.org/wiki/Kulfi> \"India\") (<https://en.wikipedia.org/wiki/Ladoo> \"India\") (<https://en.wikipedia.org/wiki/Barfi> \"India\") (<https://en.wikipedia.org/wiki/Gajar_ka_halwa> \"India\") (<https://en.wikipedia.org/wiki/Rasmalai> \"India\") (<https://en.wikipedia.org/wiki/Jalebi> \"India\") (<https://en.wikipedia.org/wiki/Mysore_pak> \"India\") (<https://en.wikipedia.org/wiki/Sachertorte> \"Austria\") (<https://en.wikipedia.org/wiki/Linzer_torte> \"Austria\") (<https://en.wikipedia.org/wiki/Kaiserschmarrn> \"Austria\") (<https://en.wikipedia.org/wiki/Apple_strudel> \"Austria\") (<https://en.wikipedia.org/wiki/Salzburger_Nockerl> \"Austria\") (<https://en.wikipedia.org/wiki/Black_Forest_gateau> \"Germany\") (<https://en.wikipedia.org/wiki/Stollen> \"Germany\") (<https://en.wikipedia.org/wiki/Lebkuchen> \"Germany\") (<https://en.wikipedia.org/wiki/Berliner_(doughnut)> \"Germany\") (<https://en.wikipedia.org/wiki/Baumkuchen> \"Germany\") (<https://en.wikipedia.org/wiki/Bakewell_tart> \"England\") (<https://en.wikipedia.org/wiki/Trifle> \"England\") (<https://en.wikipedia.org/wiki/Sticky_toffee_pudding> \"England\") (<https://en.wikipedia.org/wiki/Eton_mess> \"England\") (<https://en.wikipedia.org/wiki/Christmas_pudding> \"England\") (<https://en.wikipedia.org/wiki/Spotted_dick> \"England\") (<https://en.wikipedia.org/wiki/Banoffee_pie> \"England\") (<https://en.wikipedia.org/wiki/Treacle_tart> \"England\") (<https://en.wikipedia.org/wiki/Victoria_sponge> \"England\") (<https://en.wikipedia.org/wiki/Apple_crumble> \"England\") (<https://en.wikipedia.org/wiki/Bread_and_butter_pudding> \"England\") (<https://en.wikipedia.org/wiki/Jam_roly-poly> \"England\") (<https://en.wikipedia.org/wiki/Syllabub> \"England\") (<https://en.wikipedia.org/wiki/Fruit_crumble> \"England\") (<https://en.wikipedia.org/wiki/Shortbread> \"Scotland\") (<https://en.wikipedia.org/wiki/Cranachan> \"Scotland\") (<https://en.wikipedia.org/wiki/Tablet_(confection)> \"Scotland\") (<https://en.wikipedia.org/wiki/Clootie_dumpling> \"Scotland\") (<https://en.wikipedia.org/wiki/Dundee_cake> \"Scotland\") (<https://en.wikipedia.org/wiki/Welsh_cake> \"Wales\") (<https://en.wikipedia.org/wiki/Bara_brith> \"Wales\") (<https://en.wikipedia.org/wiki/Irish_coffee> \"Ireland\") (<https://en.wikipedia.org/wiki/Lamington> \"Australia\") (<https://en.wikipedia.org/wiki/Pavlova_(cake)> \"Australia\") (<https://en.wikipedia.org/wiki/Pastel_de_nata> \"Portugal\") (<https://en.wikipedia.org/wiki/Stroopwafel> \"Netherlands\") (<https://en.wikipedia.org/wiki/Poffertjes> \"Netherlands\") (<https://en.wikipedia.org/wiki/Belgian_waffle> \"Belgium\") (<https://en.wikipedia.org/wiki/Speculoos> \"Belgium\") (<https://en.wikipedia.org/wiki/Brigadeiro> \"Brazil\") (<https://en.wikipedia.org/wiki/Bolo_de_rolo> \"Brazil\") (<https://en.wikipedia.org/wiki/Quindim> \"Brazil\") (<https://en.wikipedia.org/wiki/Medovik> \"Russia\") (<https://en.wikipedia.org/wiki/Dobos_torte> \"Hungary\") (<https://en.wikipedia.org/wiki/Mango_sticky_rice> \"Thailand\") (<https://en.wikipedia.org/wiki/Halo-halo> \"Philippines\") (<https://en.wikipedia.org/wiki/Leche_flan> \"Philippines\") (<https://en.wikipedia.org/wiki/Turon_(food)> \"Philippines\") (<https://en.wikipedia.org/wiki/Bibingka> \"Philippines\") (<https://en.wikipedia.org/wiki/Bingsu> \"South Korea\") (<https://en.wikipedia.org/wiki/Hotteok> \"South Korea\") (<https://en.wikipedia.org/wiki/Yakgwa> \"South Korea\") (<https://en.wikipedia.org/wiki/Mooncake> \"China\") (<https://en.wikipedia.org/wiki/Tanghulu> \"China\") (<https://en.wikipedia.org/wiki/Tangyuan_(food)> \"China\") (<https://en.wikipedia.org/wiki/Egg_tart> \"China\") (<https://en.wikipedia.org/wiki/Tarta_de_Santiago> \"Spain\") (<https://en.wikipedia.org/wiki/Turrón> \"Spain\") (<https://en.wikipedia.org/wiki/Crema_catalana> \"Spain\") (<https://en.wikipedia.org/wiki/Kransekake> \"Norway\") (<https://en.wikipedia.org/wiki/Princess_cake> \"Sweden\") (<https://en.wikipedia.org/wiki/Kladdkaka> \"Sweden\") (<https://en.wikipedia.org/wiki/Æbleskiver> \"Denmark\") (<https://en.wikipedia.org/wiki/Turkish_delight> \"Turkey\") (<https://en.wikipedia.org/wiki/Kyiv_cake> \"Ukraine\") (<https://en.wikipedia.org/wiki/Churchkhela> \"Georgia\") (<https://en.wikipedia.org/wiki/Loukoumades> \"Greece\") (<https://en.wikipedia.org/wiki/Nanaimo_bar> \"Canada\") (<https://en.wikipedia.org/wiki/Butter_tart> \"Canada\") (<https://en.wikipedia.org/wiki/BeaverTails_(pastry)> \"Canada\") } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T10:58:15.520Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T12:17:59.173Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country of origin",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "dessert",
+  "many": "desserts",
+  "capitalise": true,
+  "wildcard": "food",
+  "hookAsk": "Which dessert {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country does {label} come from?",
+    "statement": "{label} comes from {value}.",
+    "match": "Match each dessert to the country it comes from.",
+    "odd": "Three of these desserts come from {value}. Which one doesn't?",
+    "all": "Tap all {n} desserts from {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "mooncake",
+   "qid": "Q197969",
+   "fame": 0.666,
+   "country": "China",
+   "description": "Chinese bakery product traditionally eaten during the Mid-Autumn Festival",
+   "hook": "is traditionally given and eaten at a harvest festival in early autumn",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "tiramisu",
+   "qid": "Q131582",
+   "fame": 0.619,
+   "country": "Italy",
+   "description": "Italian dessert",
+   "hook": "layers coffee-soaked ladyfingers with mascarpone cream and a cocoa dusting",
+   "known": 0.8,
+   "kind": "custard"
+  },
+  {
+   "label": "Turkish delight",
+   "qid": "Q182339",
+   "fame": 0.532,
+   "country": "Turkey",
+   "description": "Turkish gelatinous candy",
+   "hook": "is a chewy starch-and-sugar gel sweet, often rosewater-flavoured and dusted with powdered sugar",
+   "known": 0.6,
+   "kind": "candy"
+  },
+  {
+   "label": "pastel de nata",
+   "qid": "Q1421401",
+   "fame": 0.53,
+   "country": "Portugal",
+   "description": "Portuguese egg tart pastry dusted with cinnamon",
+   "hook": null,
+   "known": 0.2,
+   "kind": "pastry"
+  },
+  {
+   "label": "mochi",
+   "qid": "Q470519",
+   "fame": 0.525,
+   "country": "Japan",
+   "description": "Japanese rice cake made of mochigome",
+   "hook": "is a chewy treat pounded from steamed glutinous rice, traditional at New Year",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "cannoli",
+   "qid": "Q836151",
+   "fame": 0.517,
+   "country": "Italy",
+   "description": "Sicilian pastry",
+   "hook": "is a fried pastry tube stuffed with sweet ricotta cream",
+   "known": 0.6,
+   "kind": "pastry"
+  },
+  {
+   "label": "affogato",
+   "qid": "Q59059",
+   "fame": 0.512,
+   "country": "Italy",
+   "description": "Italian coffee-based dessert",
+   "hook": "is a scoop of ice cream drowned in a shot of hot espresso",
+   "known": 0.4,
+   "kind": "custard"
+  },
+  {
+   "label": "mille-feuille",
+   "qid": "Q12491",
+   "fame": 0.51,
+   "country": "France",
+   "description": "French pastry",
+   "hook": "layers puff pastry with pastry cream and is called a Napoleon in North America",
+   "known": 0.4,
+   "kind": "pastry"
+  },
+  {
+   "label": "panna cotta",
+   "qid": "Q504941",
+   "fame": 0.508,
+   "country": "Italy",
+   "description": "Italian dessert made by blending cream, sugar and gelatin",
+   "hook": "is sweetened cream set with gelatin into a wobbly moulded pudding",
+   "known": 0.6,
+   "kind": "custard"
+  },
+  {
+   "label": "Black Forest cake",
+   "qid": "Q19028",
+   "fame": 0.507,
+   "country": "Germany",
+   "description": "type of chocolate cake, traditionally made with \"kirschwasser\", a brandy made from double distillation of morello cherries",
+   "hook": "layers chocolate sponge with cherries, kirsch and whipped cream",
+   "known": 0.6,
+   "kind": "cake"
+  },
+  {
+   "label": "gelato",
+   "qid": "Q1362405",
+   "fame": 0.498,
+   "country": "Italy",
+   "description": "Italian style of ice cream",
+   "hook": "is dense, slow-churned ice cream with less air and butterfat than other styles",
+   "known": 0.8,
+   "kind": "custard"
+  },
+  {
+   "label": "kouign-amann",
+   "qid": "Q548319",
+   "fame": 0.492,
+   "country": "France",
+   "description": "cake from Brittany, France.",
+   "hook": null,
+   "known": 0.05,
+   "kind": "pastry"
+  },
+  {
+   "label": "stroopwafel",
+   "qid": "Q267877",
+   "fame": 0.491,
+   "country": "Netherlands",
+   "description": "two round waffle-like wafers with a caramel filling in the middle",
+   "hook": "sandwiches two thin baked wafers around gooey caramel syrup, often warmed over a hot drink",
+   "known": 0.4,
+   "kind": "candy"
+  },
+  {
+   "label": "speculoos biscuit",
+   "qid": "Q107064986",
+   "fame": 0.49,
+   "country": "Belgium",
+   "description": "Belgian caramel biscuit, with a different recipe than traditional speculaas",
+   "hook": "is a crunchy, spiced caramel-brown cookie often blended into a sweet spread",
+   "known": 0.4,
+   "kind": "candy"
+  },
+  {
+   "label": "Banoffee pie",
+   "qid": "Q2748774",
+   "fame": 0.489,
+   "country": "England",
+   "description": "English dessert pie",
+   "hook": "pairs bananas with thick toffee-like caramel and whipped cream on a crumbly base",
+   "known": 0.4,
+   "kind": "pudding"
+  },
+  {
+   "label": "tarte Tatin",
+   "qid": "Q1147946",
+   "fame": 0.479,
+   "country": "France",
+   "description": "pastry with caramelised fruit that originated in France",
+   "hook": "is baked with caramelised apples that end up on top once it is flipped over",
+   "known": 0.6,
+   "kind": "pastry"
+  },
+  {
+   "label": "Kaiserschmarrn",
+   "qid": "Q266540",
+   "fame": 0.478,
+   "country": "Austria",
+   "description": "sweet Austrian dish, similar to a shredded pancake",
+   "hook": null,
+   "known": 0.2,
+   "kind": "cake"
+  },
+  {
+   "label": "Sachertorte",
+   "qid": "Q131442",
+   "fame": 0.478,
+   "country": "Austria",
+   "description": "specific type of chocolate cake, or torte",
+   "hook": "is a chocolate sponge with apricot jam under a glossy glaze, long fought over by two Vienna rivals",
+   "known": 0.4,
+   "kind": "cake"
+  },
+  {
+   "label": "macaron",
+   "qid": "Q12478",
+   "fame": 0.471,
+   "country": "France",
+   "description": "sweet meringue-based confectionery",
+   "hook": "is a colourful almond-meringue sandwich cookie with a ruffled edge at the base",
+   "known": 0.8,
+   "kind": "pastry"
+  },
+  {
+   "label": "sfogliatelle",
+   "qid": "Q662189",
+   "fame": 0.467,
+   "country": "Italy",
+   "description": "Italian filled pastry",
+   "hook": null,
+   "known": 0.2,
+   "kind": "pastry"
+  },
+  {
+   "label": "madeleine",
+   "qid": "Q604408",
+   "fame": 0.463,
+   "country": "France",
+   "description": "type of cake traditional from France",
+   "hook": "is a small shell-shaped sponge cake that triggered a famous novelist's childhood memories",
+   "known": 0.4,
+   "kind": "pastry"
+  },
+  {
+   "label": "Nanaimo bar",
+   "qid": "Q2885517",
+   "fame": 0.459,
+   "country": "Canada",
+   "description": "dessert",
+   "hook": "is a no-bake three-layer treat of crumb base, custard icing and chocolate",
+   "known": 0.4,
+   "kind": "candy"
+  },
+  {
+   "label": "Halo-halo",
+   "qid": "Q1572040",
+   "fame": 0.456,
+   "country": "Philippines",
+   "description": "Filipino dessert",
+   "hook": null,
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "brigadeiro",
+   "qid": "Q2914862",
+   "fame": 0.454,
+   "country": "Brazil",
+   "description": "Brazilian chocolate truffle",
+   "hook": null,
+   "known": 0.2,
+   "kind": "candy"
+  },
+  {
+   "label": "dango",
+   "qid": "Q877913",
+   "fame": 0.453,
+   "country": "Japan",
+   "description": "Japanese rice flour dumpling",
+   "hook": "is a rice-flour dumpling served three to five to a skewer",
+   "known": 0.4,
+   "kind": "asian"
+  }
+ ]
+}

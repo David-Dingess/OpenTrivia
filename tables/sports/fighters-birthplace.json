@@ -1,0 +1,530 @@
+{
+ "id": "table.sports.fighters-birthplace",
+ "kind": "table",
+ "title": "Famous boxers and fighters and the city they were born in",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "combat-sports",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?birthLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?b) AS ?birth) (COUNT(DISTINCT ?b) AS ?nb) WHERE { VALUES ?occ { wd:Q11338576 wd:Q11124885 wd:Q1008888 } ?item wdt:P31 wd:Q5 ; wdt:P106 ?occ ; wdt:P19 ?b ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 10) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 800 } hint:Prior hint:runFirst true . FILTER(?nb = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-01T04:40:34.660Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-01T04:40:34.660Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "birthplace",
+   "label": "Born in",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "fighter",
+  "many": "fighters",
+  "wildcard": "person",
+  "hookAsk": "Which fighter {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "birthplace": {
+    "role": "code",
+    "pick": "Where was the fighter {label} born?",
+    "statement": "{label} was born in {value}.",
+    "match": "Match each fighter to the place where they were born.",
+    "reverse": "Which fighter was born in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Katie Taylor",
+   "qid": "Q262699",
+   "fame": 0.808,
+   "birthplace": "Bray",
+   "description": "Irish association footballer and boxer",
+   "hook": "became an undisputed lightweight champion after winning Olympic gold for her country",
+   "known": 0.2,
+   "kind": "boxer"
+  },
+  {
+   "label": "Muhammad Ali",
+   "qid": "Q36107",
+   "fame": 0.751,
+   "birthplace": "Louisville",
+   "description": "American boxer (1942–2016)",
+   "hook": "called himself The Greatest and joked he would float like a butterfly and sting like a bee",
+   "known": 0.95,
+   "kind": "boxer"
+  },
+  {
+   "label": "Mike Tyson",
+   "qid": "Q79031",
+   "fame": 0.737,
+   "birthplace": "Brooklyn",
+   "description": "American boxer and media personality (born 1966)",
+   "hook": "became the youngest heavyweight champion and is infamous for biting an opponent's ear",
+   "known": 0.95,
+   "kind": "boxer"
+  },
+  {
+   "label": "Wladimir Klitschko",
+   "qid": "Q18797",
+   "fame": 0.709,
+   "birthplace": "Semey",
+   "description": "Ukrainian boxer (born 1976)",
+   "hook": "dominated the heavyweight division for years alongside a champion brother, and holds a doctorate",
+   "known": 0.6,
+   "kind": "boxer"
+  },
+  {
+   "label": "Anthony Joshua",
+   "qid": "Q573463",
+   "fame": 0.699,
+   "birthplace": "Watford",
+   "description": "British boxer (born 1989)",
+   "hook": "won Olympic heavyweight gold at a home Games before becoming a unified world champion",
+   "known": 0.6,
+   "kind": "boxer"
+  },
+  {
+   "label": "Oleksandr Usyk",
+   "qid": "Q938027",
+   "fame": 0.689,
+   "birthplace": "Simferopol",
+   "description": "Ukrainian boxer",
+   "hook": "became undisputed champion at both cruiserweight and heavyweight",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Mary Kom",
+   "qid": "Q328951",
+   "fame": 0.688,
+   "birthplace": "Manipur",
+   "description": "Indian amateur boxer",
+   "hook": "is a mother of three who won Olympic bronze and many world titles in the lighter weights",
+   "known": 0.2,
+   "kind": "boxer"
+  },
+  {
+   "label": "Tyson Fury",
+   "qid": "Q1000592",
+   "fame": 0.685,
+   "birthplace": "Manchester",
+   "description": "British boxer (born 1988)",
+   "hook": "is a towering heavyweight nicknamed The Gypsy King who dances and clowns around the ring",
+   "known": 0.6,
+   "kind": "boxer"
+  },
+  {
+   "label": "Floyd Mayweather",
+   "qid": "Q318204",
+   "fame": 0.656,
+   "birthplace": "Grand Rapids",
+   "description": "American boxer",
+   "hook": "retired with a perfect record after earning huge paydays, including a mega-fight with Manny Pacquiao",
+   "known": 0.8,
+   "kind": "boxer"
+  },
+  {
+   "label": "Ricky Hatton",
+   "qid": "Q116516",
+   "fame": 0.63,
+   "birthplace": "Stockport",
+   "description": "British professional boxer (1978–2025)",
+   "hook": "was a popular light-welterweight champion called The Hitman who brought huge crowds of fans to Las Vegas",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Deontay Wilder",
+   "qid": "Q933423",
+   "fame": 0.618,
+   "birthplace": "Tuscaloosa",
+   "description": "American boxer",
+   "hook": "is a heavyweight champion nicknamed The Bronze Bomber for his devastating right hand",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Oscar De La Hoya",
+   "qid": "Q293534",
+   "fame": 0.617,
+   "birthplace": "East Los Angeles",
+   "description": "American boxer and boxing promoter",
+   "hook": "won Olympic gold at Barcelona and later promoted fights as The Golden Boy",
+   "known": 0.6,
+   "kind": "boxer"
+  },
+  {
+   "label": "Rocky Marciano",
+   "qid": "Q188362",
+   "fame": 0.615,
+   "birthplace": "Brockton",
+   "description": "American heavyweight boxing champion (1923-1969)",
+   "hook": "is the only heavyweight champion to retire without ever losing a professional bout",
+   "known": 0.8,
+   "kind": "boxer"
+  },
+  {
+   "label": "Israel Adesanya",
+   "qid": "Q27050195",
+   "fame": 0.609,
+   "birthplace": "Lagos",
+   "description": "Nigerian mixed martial artist",
+   "hook": "is a UFC middleweight champion nicknamed The Last Stylebender",
+   "known": 0.4,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Ronda Rousey",
+   "qid": "Q242201",
+   "fame": 0.609,
+   "birthplace": "Santa Monica",
+   "description": "American former mixed martial arts (MMA) fighter, professional wrestler, and judoka",
+   "hook": "went from Olympic judo bronze to the first women's bantamweight champion in the UFC",
+   "known": 0.6,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Tony Ferguson",
+   "qid": "Q7822327",
+   "fame": 0.606,
+   "birthplace": "Oxnard",
+   "description": "American mixed martial artist (born 1984)",
+   "hook": "is a chaotic, unorthodox UFC lightweight known for a long winning streak",
+   "known": 0.2,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Laila Ali",
+   "qid": "Q255099",
+   "fame": 0.603,
+   "birthplace": "Miami Beach",
+   "description": "American television personality and retired professional boxer",
+   "hook": "followed her legendary father into the ring and retired undefeated as a super middleweight champion",
+   "known": 0.2,
+   "kind": "boxer"
+  },
+  {
+   "label": "Gennady Golovkin",
+   "qid": "Q1009230",
+   "fame": 0.602,
+   "birthplace": "Karaganda",
+   "description": "Kazakhstani boxer",
+   "hook": "is a middleweight knockout artist nicknamed GGG, known for a trilogy of fights with Canelo Alvarez",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Valentina Shevchenko",
+   "qid": "Q4522047",
+   "fame": 0.597,
+   "birthplace": "Bishkek",
+   "description": "Kyrgyzstani- mixed martial arts (MMA) fighter and muay thai fighter",
+   "hook": "is a multilingual UFC women's flyweight champion who also trained in Muay Thai and taekwondo",
+   "known": 0.2,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Quinton Jackson",
+   "qid": "Q437584",
+   "fame": 0.587,
+   "birthplace": "Memphis",
+   "description": "American mixed martial artist, actor and professional wrestler",
+   "hook": "is a UFC light-heavyweight champion nicknamed Rampage who also played B.A. Baracus in an A-Team film",
+   "known": 0.2,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Sugar Ray Leonard",
+   "qid": "Q335798",
+   "fame": 0.584,
+   "birthplace": "Wilmington",
+   "description": "American boxer",
+   "hook": "won titles in five weight classes and beat Hagler and Duran in some of boxing's biggest fights",
+   "known": 0.6,
+   "kind": "boxer"
+  },
+  {
+   "label": "Claressa Shields",
+   "qid": "Q452598",
+   "fame": 0.583,
+   "birthplace": "Flint",
+   "description": "American boxer",
+   "hook": "is a two-time Olympic middleweight gold medalist who became undisputed in several weight classes",
+   "known": 0.2,
+   "kind": "boxer"
+  },
+  {
+   "label": "Jake LaMotta",
+   "qid": "Q335855",
+   "fame": 0.575,
+   "birthplace": "The Bronx",
+   "description": "American boxer (1922–2017)",
+   "hook": "was a middleweight nicknamed The Raging Bull, whose story was told in a Scorsese film",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Vasyl Lomachenko",
+   "qid": "Q1402369",
+   "fame": 0.568,
+   "birthplace": "Bilhorod-Dnistrovskyi",
+   "description": "Ukrainian boxer",
+   "hook": "is a two-time Olympic gold medalist nicknamed Matrix for his dazzling footwork",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Max Baer",
+   "qid": "Q448481",
+   "fame": 0.565,
+   "birthplace": "Omaha",
+   "description": "American boxer (1909–1959)",
+   "hook": "was a heavyweight champion whose son became famous playing Jethro on The Beverly Hillbillies",
+   "known": 0.2,
+   "kind": "boxer"
+  },
+  {
+   "label": "Roy Jones Jr.",
+   "qid": "Q955619",
+   "fame": 0.565,
+   "birthplace": "Pensacola",
+   "description": "American boxer, rapper and actor",
+   "hook": "was dominant across four weight classes and also recorded rap albums and acted in films",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Roberto Durán",
+   "qid": "Q471571",
+   "fame": 0.564,
+   "birthplace": "Panama City",
+   "description": "Panamanian boxer",
+   "hook": "was nicknamed Hands of Stone and is remembered for the infamous \"No mas\" fight",
+   "known": 0.6,
+   "kind": "boxer"
+  },
+  {
+   "label": "Ip Man",
+   "qid": "Q163830",
+   "fame": 0.562,
+   "birthplace": "Foshan",
+   "description": "Hong Kong martial artist (1893–1972)",
+   "hook": "was a Wing Chun grandmaster whose students included Bruce Lee",
+   "known": 0.2,
+   "kind": "martial artist"
+  },
+  {
+   "label": "Rubin Carter",
+   "qid": "Q452772",
+   "fame": 0.558,
+   "birthplace": "Clifton",
+   "description": "American boxer (1937–2014)",
+   "hook": "was nicknamed Hurricane and inspired a Bob Dylan song and a Denzel Washington film",
+   "known": 0.2,
+   "kind": "boxer"
+  },
+  {
+   "label": "Anderson Silva",
+   "qid": "Q356871",
+   "fame": 0.557,
+   "birthplace": "São Paulo",
+   "description": "Brazilian mixed martial artist",
+   "hook": "is a UFC middleweight nicknamed The Spider who held the title longer than anyone else",
+   "known": 0.4,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Buster Douglas",
+   "qid": "Q536007",
+   "fame": 0.545,
+   "birthplace": "Columbus",
+   "description": "American boxer",
+   "hook": "shocked the sports world by knocking out the undefeated Mike Tyson in Tokyo",
+   "known": 0.2,
+   "kind": "boxer"
+  },
+  {
+   "label": "Amir Khan",
+   "qid": "Q469870",
+   "fame": 0.54,
+   "birthplace": "Bolton",
+   "description": "British boxer",
+   "hook": "won Olympic silver as a teenager and later became a light-welterweight world champion",
+   "known": 0.2,
+   "kind": "boxer"
+  },
+  {
+   "label": "Mirko Cro Cop",
+   "qid": "Q354790",
+   "fame": 0.54,
+   "birthplace": "Vinkovci",
+   "description": "Croatian mixed martial artist, kickboxer and law enforcement officer",
+   "hook": "was a feared kickboxer famous for a devastating left high kick, in K-1 and Pride before the UFC",
+   "known": 0.2,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Bernard Hopkins",
+   "qid": "Q531804",
+   "fame": 0.538,
+   "birthplace": "Philadelphia",
+   "description": "American boxer",
+   "hook": "nicknamed The Executioner, won world titles into his late forties as the oldest champion in boxing",
+   "known": 0.2,
+   "kind": "boxer"
+  },
+  {
+   "label": "Jack Johnson",
+   "qid": "Q316689",
+   "fame": 0.537,
+   "birthplace": "Galveston",
+   "description": "American boxer (1878–1946)",
+   "hook": "was the first Black world heavyweight champion and a figure of huge controversy in his era",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Marvelous Marvin Hagler",
+   "qid": "Q560421",
+   "fame": 0.528,
+   "birthplace": "Newark",
+   "description": "American boxer (1954–2021)",
+   "hook": "was a shaven-headed undisputed middleweight king who fought a legendary war with Thomas Hearns",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Leon Spinks",
+   "qid": "Q471824",
+   "fame": 0.527,
+   "birthplace": "St. Louis",
+   "description": "American boxer (1953–2021)",
+   "hook": "stunned the boxing world by beating Muhammad Ali to win the heavyweight title in just his eighth pro fight",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Riddick Bowe",
+   "qid": "Q708185",
+   "fame": 0.519,
+   "birthplace": "Brooklyn",
+   "description": "American boxer (born 1967)",
+   "hook": "beat Evander Holyfield and is remembered for a fight halted by a parachutist crashing into the ring",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Andre Ward",
+   "qid": "Q493263",
+   "fame": 0.513,
+   "birthplace": "San Francisco",
+   "description": "American boxer",
+   "hook": "won Olympic gold and retired unbeaten as a super middleweight champion",
+   "known": 0.2,
+   "kind": "boxer"
+  },
+  {
+   "label": "Floyd Patterson",
+   "qid": "Q314051",
+   "fame": 0.51,
+   "birthplace": "Waco",
+   "description": "American heavyweight boxer (1935-2006)",
+   "hook": "was the youngest heavyweight champion of his time and the first to regain the title after losing it",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "Frank Bruno",
+   "qid": "Q530220",
+   "fame": 0.509,
+   "birthplace": "London",
+   "description": "British boxer",
+   "hook": "was a hugely popular heavyweight who finally won a world title and became a pantomime star",
+   "known": 0.2,
+   "kind": "boxer"
+  },
+  {
+   "label": "Ken Norton",
+   "qid": "Q707814",
+   "fame": 0.509,
+   "birthplace": "Jacksonville",
+   "description": "American boxer (1943-2013)",
+   "hook": "famously broke the jaw of Muhammad Ali in a fight and later became a heavyweight champion",
+   "known": 0.4,
+   "kind": "boxer"
+  },
+  {
+   "label": "David Haye",
+   "qid": "Q312649",
+   "fame": 0.501,
+   "birthplace": "London",
+   "description": "British boxer",
+   "hook": "was a cruiserweight champion who moved up to fight a giant heavyweight champion, Valuev",
+   "known": 0.2,
+   "kind": "boxer"
+  },
+  {
+   "label": "Nick Diaz",
+   "qid": "Q919177",
+   "fame": 0.499,
+   "birthplace": "Stockton",
+   "description": "American mixed martial artist",
+   "hook": "is a UFC welterweight famous for pressure boxing, triathlon training and a brother who also fights",
+   "known": 0.2,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Nikolai Valuev",
+   "qid": "Q508929",
+   "fame": 0.483,
+   "birthplace": "Saint Petersburg",
+   "description": "Russian politician and former heavyweight boxer",
+   "hook": "was a heavyweight champion standing over seven feet tall, nicknamed The Beast from the East",
+   "known": 0.2,
+   "kind": "boxer"
+  },
+  {
+   "label": "Holly Holm",
+   "qid": "Q2414305",
+   "fame": 0.48,
+   "birthplace": "Albuquerque",
+   "description": "American boxer and mixed martial artist (born 1981)",
+   "hook": "scored a stunning head-kick knockout of Ronda Rousey to win the UFC bantamweight title",
+   "known": 0.2,
+   "kind": "mma fighter"
+  },
+  {
+   "label": "Buakaw Banchamek",
+   "qid": "Q366494",
+   "fame": 0.471,
+   "birthplace": "Surin",
+   "description": "Thai kickboxer",
+   "hook": "is a Muay Thai superstar who won tournaments in K-1 and acted in action films",
+   "known": 0.2,
+   "kind": "martial artist"
+  }
+ ]
+}

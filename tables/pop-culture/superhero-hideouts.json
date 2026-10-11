@@ -1,0 +1,197 @@
+{
+ "id": "table.pop-culture.superhero-hideouts",
+ "kind": "table",
+ "title": "Superhero hideouts: which hero's base",
+ "genre": "general",
+ "category": "pop-culture",
+ "topic": "fictional-things",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?hideoutLabel WHERE { VALUES (?article ?itemLabel ?hideoutLabel) { (<https://en.wikipedia.org/wiki/Batman> \"Batman\" \"Batcave\") (<https://en.wikipedia.org/wiki/Superman> \"Superman\" \"Fortress of Solitude\") (<https://en.wikipedia.org/wiki/Fantastic_Four> \"Fantastic Four\" \"Baxter Building\") (<https://en.wikipedia.org/wiki/X-Men> \"X-Men\" \"Xavier's School for Gifted Youngsters\") (<https://en.wikipedia.org/wiki/Justice_League> \"Justice League\" \"Watchtower\") (<https://en.wikipedia.org/wiki/Avengers_(comics)> \"The Avengers\" \"Stark Tower\") (<https://en.wikipedia.org/wiki/Teenage_Mutant_Ninja_Turtles> \"Teenage Mutant Ninja Turtles\" \"The sewers of New York\") (<https://en.wikipedia.org/wiki/Power_Rangers> \"Power Rangers\" \"The Command Center\") (<https://en.wikipedia.org/wiki/Doctor_Strange> \"Doctor Strange\" \"Sanctum Sanctorum\") (<https://en.wikipedia.org/wiki/Shazam_(character)> \"Shazam\" \"Rock of Eternity\") (<https://en.wikipedia.org/wiki/Wonder_Woman> \"Wonder Woman\" \"Themyscira\") (<https://en.wikipedia.org/wiki/Aquaman> \"Aquaman\" \"Atlantis\") (<https://en.wikipedia.org/wiki/Black_Panther_(character)> \"Black Panther\" \"Wakanda\") (<https://en.wikipedia.org/wiki/Thor_(Marvel_Comics)> \"Thor\" \"Asgard\") (<https://en.wikipedia.org/wiki/Green_Lantern> \"Green Lantern\" \"Oa\") (<https://en.wikipedia.org/wiki/The_Phantom> \"The Phantom\" \"Skull Cave\") (<https://en.wikipedia.org/wiki/Captain_Planet_and_the_Planeteers> \"Captain Planet\" \"Hope Island\") (<https://en.wikipedia.org/wiki/Thunderbirds_(TV_series)> \"Thunderbirds\" \"Tracy Island\") (<https://en.wikipedia.org/wiki/Spider-Man> \"Spider-Man\" \"Aunt May's house in Queens\") (<https://en.wikipedia.org/wiki/Teen_Titans> \"Teen Titans\" \"The T-shaped tower\") (<https://en.wikipedia.org/wiki/The_Flash> \"The Flash\" \"S.T.A.R. Labs\") (<https://en.wikipedia.org/wiki/Hulk_(comics)> \"The Hulk\" \"Bruce Banner's lab\") (<https://en.wikipedia.org/wiki/Green_Hornet> \"The Green Hornet\" \"The Black Beauty garage\") (<https://en.wikipedia.org/wiki/Iron_Man> \"Iron Man\" \"Malibu mansion\") (<https://en.wikipedia.org/wiki/Daredevil_(Marvel_Comics_character)> \"Daredevil\" \"Hell's Kitchen\") (<https://en.wikipedia.org/wiki/Ghostbusters> \"Ghostbusters\" \"An old New York firehouse\") } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T08:54:33.511Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T13:09:26.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "hideout",
+   "label": "Hideout or base",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "hero or team",
+  "many": "heroes and teams",
+  "columns": {
+   "hideout": {
+    "role": "code",
+    "pick": "Where is the home base of {label}?",
+    "statement": "The home base of {label} is {value}.",
+    "match": "Match each hero or team to their home base.",
+    "reverse": "Which hero or team has {value} as their home base?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Green Lantern",
+   "qid": "Q32884",
+   "fame": 0.727,
+   "hideout": "Oa",
+   "description": "multiple superheroes from the DC universe",
+   "hook": null,
+   "known": 0.2,
+   "kind": "dc-character"
+  },
+  {
+   "label": "Batman",
+   "qid": "Q2695156",
+   "fame": 0.668,
+   "hideout": "Batcave",
+   "description": "fictional character in DC Comics",
+   "hook": "is a wealthy Gotham industrialist who fights crime in a cape and cowl after his parents were murdered",
+   "known": 0.95,
+   "kind": "dc-character"
+  },
+  {
+   "label": "Superman",
+   "qid": "Q79015",
+   "fame": 0.642,
+   "hideout": "Fortress of Solitude",
+   "description": "superhero appearing in DC Comics publications",
+   "hook": "is the archetypal caped hero from the planet Krypton, with powers of flight and super strength",
+   "known": 0.8,
+   "kind": "dc-character"
+  },
+  {
+   "label": "Power Rangers",
+   "qid": "Q333156",
+   "fame": 0.636,
+   "hideout": "The Command Center",
+   "description": "American entertainment and merchandising franchise",
+   "hook": "turns teenagers into color-coded costumed fighters, adapting footage from a Japanese action series",
+   "known": 0.4,
+   "kind": "other-franchise"
+  },
+  {
+   "label": "Teenage Mutant Ninja Turtles",
+   "qid": "Q1381762",
+   "fame": 0.629,
+   "hideout": "The sewers of New York",
+   "description": "fictional team of anthropomorphic turtles",
+   "hook": "follows four brothers named for Renaissance artists who train in martial arts to fight evil",
+   "known": 0.8,
+   "kind": "other-franchise"
+  },
+  {
+   "label": "X-Men",
+   "qid": "Q128452",
+   "fame": 0.614,
+   "hideout": "Xavier's School for Gifted Youngsters",
+   "description": "fictional superhero team in Marvel Comics",
+   "hook": "is a team of mutant heroes created by Stan Lee and Jack Kirby, led by a telepathic professor",
+   "known": 0.8,
+   "kind": "marvel-team"
+  },
+  {
+   "label": "Wonder Woman",
+   "qid": "Q338430",
+   "fame": 0.604,
+   "hideout": "Themyscira",
+   "description": "superhero appearing in DC Comics publications and related media",
+   "hook": "is an Amazon princess and daughter of Zeus who fights with a golden lasso",
+   "known": 0.6,
+   "kind": "dc-character"
+  },
+  {
+   "label": "Doctor Strange",
+   "qid": "Q907767",
+   "fame": 0.575,
+   "hideout": "Sanctum Sanctorum",
+   "description": "fictional character in Marvel Comics",
+   "hook": "stars an arrogant surgeon turned Sorcerer Supreme who guards the Earth against mystical threats",
+   "known": 0.4,
+   "kind": "marvel-character"
+  },
+  {
+   "label": "Fantastic Four",
+   "qid": "Q152098",
+   "fame": 0.561,
+   "hideout": "Baxter Building",
+   "description": "fictional superhero team",
+   "hook": "is Marvel's first superhero family, whose members gained powers from cosmic rays in space",
+   "known": 0.4,
+   "kind": "marvel-team"
+  },
+  {
+   "label": "Justice League",
+   "qid": "Q735744",
+   "fame": 0.561,
+   "hideout": "Watchtower",
+   "description": "group of fictional superheros of DC Comics",
+   "hook": "assembles DC's all-star heroes, such as Batman and Superman, into one team",
+   "known": 0.6,
+   "kind": "dc-team"
+  },
+  {
+   "label": "Aquaman",
+   "qid": "Q623059",
+   "fame": 0.532,
+   "hideout": "Atlantis",
+   "description": "comic book superhero",
+   "hook": "is the king of the seas who communicates with marine life and wields a golden trident",
+   "known": 0.8,
+   "kind": "dc-character"
+  },
+  {
+   "label": "Black Panther",
+   "qid": "Q998220",
+   "fame": 0.529,
+   "hideout": "Wakanda",
+   "description": "fictional character in Marvel Comics",
+   "hook": "is a king and protector of a technologically advanced African nation rich in vibranium",
+   "known": 0.8,
+   "kind": "marvel-character"
+  },
+  {
+   "label": "Thor",
+   "qid": "Q717588",
+   "fame": 0.521,
+   "hideout": "Asgard",
+   "description": "fictional character in Marvel Comics",
+   "hook": "is a hammer-wielding hero based on the Norse god of thunder",
+   "known": 0.8,
+   "kind": "marvel-character"
+  },
+  {
+   "label": "Captain Planet",
+   "qid": "Q463974",
+   "fame": 0.501,
+   "hideout": "Hope Island",
+   "description": "American animated television series",
+   "hook": null,
+   "known": 0.05,
+   "kind": "other-franchise"
+  }
+ ]
+}

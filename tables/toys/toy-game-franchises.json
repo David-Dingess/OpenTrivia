@@ -1,0 +1,181 @@
+{
+ "id": "table.toys.toy-game-franchises",
+ "kind": "table",
+ "title": "Toy and game franchises",
+ "genre": "games-sports",
+ "category": "toys",
+ "topic": "toy-lines",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { VALUES ?item { wd:Q1375 wd:Q17250 wd:Q3033529 wd:Q6926039 wd:Q2610927 wd:Q2303559 wd:Q5943523 wd:Q735544 wd:Q7168111 wd:Q953491 wd:Q813197 wd:Q5291486 wd:Q1052347 wd:Q1323565 wd:Q1071312 wd:Q519710 wd:Q585537 wd:Q1050690 wd:Q1866654 wd:Q788346 wd:Q1569886 wd:Q1659650 wd:Q12857833 wd:Q1573844 wd:Q4992093 wd:Q2734806 wd:Q64403106 wd:Q1931494 wd:Q1063109 wd:Q7354207 wd:Q1485203 wd:Q5149050 wd:Q4863337 wd:Q1891883 wd:Q1370972 wd:Q549344 wd:Q188057 wd:Q2091541 wd:Q1118802 wd:Q131689 wd:Q5087973 wd:Q241538 wd:Q2287999 wd:Q878160 wd:Q4781364 wd:Q16740954 wd:Q829265 wd:Q11701320 wd:Q1969196 wd:Q5292030 wd:Q10885857 wd:Q519930 wd:Q475456 wd:Q7540794 wd:Q7642783 wd:Q660975 wd:Q8034000 wd:Q15891834 wd:Q1645436 wd:Q1746937 wd:Q6647504 wd:Q65176045 wd:Q29279406 wd:Q36120 wd:Q3026802 } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T17:19:58.520Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T17:19:58.520Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "kind",
+   "label": "Kind",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "franchise",
+  "many": "franchises",
+  "capitalise": true,
+  "exclude": [
+   {
+    "qid": "Q878160",
+    "why": "bingo: a game of chance played on number cards, not a tile game and not a franchise"
+   }
+  ],
+  "columns": {
+   "kind": {
+    "role": "link",
+    "pick": "What kind of toy or game franchise is {label}?",
+    "statement": "{label} is a kind of {value} franchise.",
+    "match": "Match each franchise to its kind.",
+    "odd": "Three of these are {value} franchises. Which one isn't?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Dungeons & Dragons",
+   "qid": "Q1375",
+   "fame": 0.618,
+   "kind": "tabletop-rpg",
+   "description": "first fantasy tabletop role-playing game",
+   "hook": "sent players on epic quests where a dice roll decides whether their hero succeeds or fails",
+   "known": 0.8
+  },
+  {
+   "label": "Transformers",
+   "qid": "Q1323565",
+   "fame": 0.615,
+   "kind": "action-figure",
+   "description": "Japanese–American media franchise",
+   "hook": "stars robots that disguise themselves as cars, trucks, and other machines",
+   "known": 0.8
+  },
+  {
+   "label": "My Little Pony",
+   "qid": "Q1071312",
+   "fame": 0.553,
+   "kind": "toy-line",
+   "description": "Entertainment franchise developed by Hasbro",
+   "hook": "follows a group of small, colorful horses whose adventures center on friendship and magic",
+   "known": 0.8
+  },
+  {
+   "label": "Masters of the Universe",
+   "qid": "Q519710",
+   "fame": 0.54,
+   "kind": "action-figure",
+   "description": "American media franchise",
+   "hook": "follows the musclebound hero He-Man as he defends his planet with a magic sword",
+   "known": 0.6
+  },
+  {
+   "label": "Rummikub",
+   "qid": "Q829265",
+   "fame": 0.512,
+   "kind": "tile-game",
+   "description": "tile-based game for two to four players",
+   "hook": "challenges players to arrange numbered pieces into runs and sets before their opponents do",
+   "known": 0.4
+  },
+  {
+   "label": "Beyblade",
+   "qid": "Q1063109",
+   "fame": 0.507,
+   "kind": "spinning-top",
+   "description": "a line of spinning-top toys originally developed by a Japanese toy company",
+   "hook": "battles when players launch a whirling toy into an arena hoping to be the last one standing",
+   "known": 0.6
+  },
+  {
+   "label": "G.I. Joe",
+   "qid": "Q1052347",
+   "fame": 0.507,
+   "kind": "action-figure",
+   "description": "American line of action figures and media franchise",
+   "hook": "follows a team of elite soldiers who battle the terrorist organization Cobra",
+   "known": 0.8
+  },
+  {
+   "label": "Care Bears",
+   "qid": "Q1569886",
+   "fame": 0.504,
+   "kind": "plush",
+   "description": "fictional character group",
+   "hook": "gives each of its fuzzy, pastel-colored figures a special symbol on its tummy representing a feeling",
+   "known": 0.6
+  },
+  {
+   "label": "Monster High",
+   "qid": "Q36120",
+   "fame": 0.5,
+   "kind": "doll",
+   "description": "American fashion doll franchise",
+   "hook": "follows fashionable teenage children of famous movie monsters at their spooky school",
+   "known": 0.6
+  },
+  {
+   "label": "Hot Wheels",
+   "qid": "Q585537",
+   "fame": 0.497,
+   "kind": "die-cast-car",
+   "description": "brand of scale model cars",
+   "hook": "makes miniature vehicles built for speed, often raced down orange plastic tracks",
+   "known": 0.8
+  },
+  {
+   "label": "Sea-Monkeys",
+   "qid": "Q10885857",
+   "fame": 0.496,
+   "kind": "novelty-toy",
+   "description": "brine shrimp sold as pets",
+   "hook": "hatches from a powder added to water and grows into tiny swimming creatures kept in a tank",
+   "known": 0.4
+  },
+  {
+   "label": "bingo",
+   "qid": "Q878160",
+   "fame": 0.479,
+   "kind": "tile-game",
+   "description": "game of chance",
+   "hook": "calls out numbers that players mark on cards, racing to complete a row before anyone else",
+   "known": 0.6
+  },
+  {
+   "label": "Matchbox",
+   "qid": "Q1050690",
+   "fame": 0.45,
+   "kind": "die-cast-car",
+   "description": "brand of model vehicles",
+   "hook": "makes pocket-sized toy cars once famous for fitting in a shirt pocket, now collected by adults",
+   "known": 0.6
+  }
+ ]
+}

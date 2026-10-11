@@ -1,0 +1,342 @@
+{
+ "id": "table.chemistry.elements-discoverers",
+ "kind": "table",
+ "title": "Chemical elements: who discovered them",
+ "genre": "science-math-tech",
+ "category": "chemistry",
+ "topic": "elements",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?discovererLabel WHERE { { SELECT ?item (SAMPLE(?p) AS ?discoverer) WHERE { ?item wdt:P31 wd:Q11344 ; wdt:P61 ?p . ?p wdt:P31 wd:Q5 . } GROUP BY ?item HAVING(COUNT(DISTINCT ?p)=1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T19:09:54.240Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T19:09:54.240Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "discoverer",
+   "label": "Discovered by",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "element",
+  "many": "elements",
+  "capitalise": true,
+  "lowerInProse": true,
+  "hookAsk": "Which element {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "discoverer": {
+    "role": "link",
+    "pick": "Who discovered {label}?",
+    "statement": "{label} was discovered by {value}.",
+    "match": "Match each element to its discoverer.",
+    "odd": "Three of these elements were discovered by {value}. Which one wasn’t?",
+    "all": "Tap all {n} elements discovered by {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "hydrogen",
+   "qid": "Q556",
+   "fame": 0.599,
+   "discoverer": "Henry Cavendish",
+   "description": "chemical element with symbol H and atomic number 1",
+   "hook": "is the lightest and most abundant element in the universe, fueling the stars",
+   "known": 0.6,
+   "kind": "common element"
+  },
+  {
+   "label": "potassium",
+   "qid": "Q703",
+   "fame": 0.567,
+   "discoverer": "Humphry Davy",
+   "description": "chemical element with symbol K and atomic number 19",
+   "hook": "is an essential nutrient found in bananas and vital for nerve and muscle function",
+   "known": 0.4,
+   "kind": "alkali metal"
+  },
+  {
+   "label": "lithium",
+   "qid": "Q568",
+   "fame": 0.564,
+   "discoverer": "Johan August Arfwedson",
+   "description": "chemical element with symbol Li and atomic number 3",
+   "hook": "is a soft, light metal used in rechargeable batteries and mood-stabilizing medication",
+   "known": 0.2,
+   "kind": "alkali metal"
+  },
+  {
+   "label": "nitrogen",
+   "qid": "Q627",
+   "fame": 0.564,
+   "discoverer": "Daniel Rutherford",
+   "description": "chemical element, symbol N and atomic number 7; most abundant element in Earth atmosphere",
+   "hook": "makes up about four-fifths of the air we breathe",
+   "known": 0.4,
+   "kind": "common element"
+  },
+  {
+   "label": "silicon",
+   "qid": "Q670",
+   "fame": 0.564,
+   "discoverer": "Jöns Jacob Berzelius",
+   "description": "chemical element with symbol Si and atomic number 14",
+   "hook": "is the semiconductor at the heart of computer chips and is abundant in sand and rock",
+   "known": 0.2,
+   "kind": "other element"
+  },
+  {
+   "label": "sodium",
+   "qid": "Q658",
+   "fame": 0.561,
+   "discoverer": "Humphry Davy",
+   "description": "chemical element with symbol Na and atomic number 11",
+   "hook": "is a soft, highly reactive metal that combines with chlorine to make table salt",
+   "known": 0.4,
+   "kind": "alkali metal"
+  },
+  {
+   "label": "cobalt",
+   "qid": "Q740",
+   "fame": 0.555,
+   "discoverer": "Georg Brandt",
+   "description": "chemical element with symbol Co and atomic number 27",
+   "hook": "gives glass and ceramics a deep blue color and is used in rechargeable batteries",
+   "known": 0.2,
+   "kind": "transition metal"
+  },
+  {
+   "label": "phosphorus",
+   "qid": "Q674",
+   "fame": 0.55,
+   "discoverer": "Hennig Brand",
+   "description": "chemical element with symbol P and atomic number 15",
+   "hook": "was first isolated by an alchemist boiling down urine, and is used in matches and fertilizer",
+   "known": 0.2,
+   "kind": "other element"
+  },
+  {
+   "label": "chlorine",
+   "qid": "Q688",
+   "fame": 0.545,
+   "discoverer": "Carl Wilhelm Scheele",
+   "description": "chemical element with symbol Cl and atomic number 17",
+   "hook": "is a greenish gas used to disinfect swimming pools and drinking water",
+   "known": 0.2,
+   "kind": "halogen"
+  },
+  {
+   "label": "actinium",
+   "qid": "Q1121",
+   "fame": 0.541,
+   "discoverer": "André-Louis Debierne",
+   "description": "chemical element with symbol Ac and atomic number 89",
+   "hook": "is a rare radioactive metal that glows with a pale blue light in the dark",
+   "known": 0.05,
+   "kind": "rare earth"
+  },
+  {
+   "label": "iodine",
+   "qid": "Q1103",
+   "fame": 0.541,
+   "discoverer": "Bernard Courtois",
+   "description": "chemical element with symbol I and atomic number 53",
+   "hook": "is added to table salt to prevent thyroid problems and gives off purple vapor when heated",
+   "known": 0.2,
+   "kind": "halogen"
+  },
+  {
+   "label": "chromium",
+   "qid": "Q725",
+   "fame": 0.53,
+   "discoverer": "Louis Nicolas Vauquelin",
+   "description": "chemical element with symbol Cr and atomic number 24",
+   "hook": "gives stainless steel its shine and is used for mirror-finish plating on car bumpers",
+   "known": 0.2,
+   "kind": "transition metal"
+  },
+  {
+   "label": "manganese",
+   "qid": "Q731",
+   "fame": 0.53,
+   "discoverer": "Johan Gottlieb Gahn",
+   "description": "chemical element, symbol Mn and atomic number 25",
+   "hook": "is a hard, brittle metal that is essential for making steel",
+   "known": 0.2,
+   "kind": "transition metal"
+  },
+  {
+   "label": "nickel",
+   "qid": "Q744",
+   "fame": 0.53,
+   "discoverer": "Axel Fredrik Cronstedt",
+   "description": "chemical element with symbol Ni and atomic number 28",
+   "hook": "is a silvery metal used in coins, stainless steel and rechargeable batteries",
+   "known": 0.2,
+   "kind": "transition metal"
+  },
+  {
+   "label": "palladium",
+   "qid": "Q1089",
+   "fame": 0.528,
+   "discoverer": "William Hyde Wollaston",
+   "description": "chemical element with symbol Pd and atomic number 46",
+   "hook": "is a rare silvery-white metal used in car catalytic converters and named after an asteroid",
+   "known": 0.1,
+   "kind": "transition metal"
+  },
+  {
+   "label": "iridium",
+   "qid": "Q877",
+   "fame": 0.523,
+   "discoverer": "Smithson Tennant",
+   "description": "chemical element with symbol Ir and atomic number 77",
+   "hook": "is one of the densest metals, and a layer of it in rock is tied to the asteroid that ended the dinosaurs",
+   "known": 0.05,
+   "kind": "transition metal"
+  },
+  {
+   "label": "molybdenum",
+   "qid": "Q1053",
+   "fame": 0.52,
+   "discoverer": "Carl Wilhelm Scheele",
+   "description": "chemical element with symbol Mo and atomic number 42",
+   "hook": "is a metal added to steel alloys to make them strong and resistant to heat",
+   "known": 0.1,
+   "kind": "transition metal"
+  },
+  {
+   "label": "calcium",
+   "qid": "Q706",
+   "fame": 0.508,
+   "discoverer": "Humphry Davy",
+   "description": "chemical element with symbol Ca and atomic number 20",
+   "hook": "is the mineral that builds bones and teeth and is found in milk",
+   "known": 0.4,
+   "kind": "alkaline earth"
+  },
+  {
+   "label": "gallium",
+   "qid": "Q861",
+   "fame": 0.498,
+   "discoverer": "Paul-Émile Lecoq de Boisbaudran",
+   "description": "chemical element with symbol Ga and atomic number 31",
+   "hook": "is a soft metal that melts in your hand, and its existence was predicted before it was found",
+   "known": 0.05,
+   "kind": "other element"
+  },
+  {
+   "label": "thorium",
+   "qid": "Q1115",
+   "fame": 0.485,
+   "discoverer": "Jöns Jacob Berzelius",
+   "description": "chemical element with symbol Th and atomic number 90",
+   "hook": "is a weakly radioactive metal named after the Norse god of thunder",
+   "known": 0.1,
+   "kind": "rare earth"
+  },
+  {
+   "label": "tantalum",
+   "qid": "Q1123",
+   "fame": 0.481,
+   "discoverer": "Anders Gustaf Ekeberg",
+   "description": "chemical element with symbol Ta and atomic number 73",
+   "hook": "is a corrosion-resistant metal used in tiny capacitors inside phones and computers",
+   "known": 0.05,
+   "kind": "transition metal"
+  },
+  {
+   "label": "germanium",
+   "qid": "Q867",
+   "fame": 0.475,
+   "discoverer": "Clemens Winkler",
+   "description": "chemical element with symbol Ge and atomic number 32",
+   "hook": "is a brittle semiconductor used in early transistors and fiber-optic cables",
+   "known": 0.1,
+   "kind": "other element"
+  },
+  {
+   "label": "rhodium",
+   "qid": "Q1087",
+   "fame": 0.473,
+   "discoverer": "William Hyde Wollaston",
+   "description": "chemical element with symbol Rh and atomic number 45",
+   "hook": "is one of the most valuable metals, used in catalytic converters and to coat jewelry",
+   "known": 0.05,
+   "kind": "transition metal"
+  },
+  {
+   "label": "francium",
+   "qid": "Q671",
+   "fame": 0.472,
+   "discoverer": "Marguerite Perey",
+   "description": "chemical element with symbol Fr and atomic number 87",
+   "hook": "is an extremely rare, highly radioactive alkali metal found only in trace amounts in nature",
+   "known": 0.1,
+   "kind": "alkali metal"
+  },
+  {
+   "label": "niobium",
+   "qid": "Q1046",
+   "fame": 0.466,
+   "discoverer": "Charles Hatchett",
+   "description": "chemical element with symbol Nb and atomic number 41",
+   "hook": "is a metal used in superconducting magnets and jet engine alloys",
+   "known": 0.05,
+   "kind": "transition metal"
+  },
+  {
+   "label": "tellurium",
+   "qid": "Q1100",
+   "fame": 0.46,
+   "discoverer": "Franz-Joseph Müller von Reichenstein",
+   "description": "chemical element with symbol Te and atomic number 52",
+   "hook": "is a rare, brittle metalloid named for the Earth and used in solar panels",
+   "known": 0.05,
+   "kind": "other element"
+  },
+  {
+   "label": "neodymium",
+   "qid": "Q1388",
+   "fame": 0.458,
+   "discoverer": "Carl Auer von Welsbach",
+   "description": "chemical element with symbol Nd and atomic number 60",
+   "hook": "is a rare-earth metal used in the powerful magnets of headphones and wind turbines",
+   "known": 0.05,
+   "kind": "rare earth"
+  },
+  {
+   "label": "scandium",
+   "qid": "Q713",
+   "fame": 0.45,
+   "discoverer": "Lars Fredrik Nilson",
+   "description": "chemical element with symbol Sc and atomic number 21",
+   "hook": "is a light metal used in aluminum alloys for sports gear, and its existence was predicted before it was found",
+   "known": 0.05,
+   "kind": "transition metal"
+  }
+ ]
+}

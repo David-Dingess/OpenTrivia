@@ -1,0 +1,697 @@
+{
+ "id": "table.math.mathematicians",
+ "kind": "table",
+ "title": "Mathematicians by birth year",
+ "genre": "science-math-tech",
+ "category": "math",
+ "topic": "mathematicians",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?born WHERE { { SELECT ?item ?sitelinks (GROUP_CONCAT(CONCAT(STR(?bornT), \"|\", STR(?bornP)); separator=\";\") AS ?born) WHERE { ?item wdt:P106 wd:Q170790 ; wdt:P1563 [] ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 60) ?item p:P569 ?bornSt . ?bornSt a wikibase:BestRank ; psv:P569 [ wikibase:timeValue ?bornT ; wikibase:timePrecision ?bornP ] . } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 250 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-24T23:05:28.792Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-24T23:05:28.792Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "born",
+   "label": "Born",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "mathematician",
+  "many": "mathematicians",
+  "itemSub": "{hook}",
+  "hookAsk": "Which mathematician {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "born": {
+    "role": "date",
+    "sort": "from the earliest born to the latest"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Ada Lovelace",
+   "qid": "Q7259",
+   "fame": 0.665,
+   "born": 1815,
+   "description": "English mathematician (1815–1852)",
+   "hook": "wrote what is considered the first computer program, for a mechanical calculating engine",
+   "known": 0.4,
+   "kind": "computer-pioneer"
+  },
+  {
+   "label": "Grigori Perelman",
+   "qid": "Q117346",
+   "fame": 0.656,
+   "born": 1966,
+   "description": "Russian mathematician (born 1966)",
+   "hook": "solved a famous unsolved problem about shapes and then refused the million-dollar prize for it",
+   "known": 0.2,
+   "kind": "modern-specialist"
+  },
+  {
+   "label": "Galileo Galilei",
+   "qid": "Q307",
+   "fame": 0.654,
+   "born": 1564,
+   "description": "Italian polymath (1564–1642)",
+   "hook": "was placed under house arrest for supporting the idea that the earth orbits the sun",
+   "known": 0.6,
+   "kind": "polymath"
+  },
+  {
+   "label": "Srinivasa Ramanujan",
+   "qid": "Q83163",
+   "fame": 0.651,
+   "born": 1887,
+   "description": "Indian mathematician (1887–1920)",
+   "hook": "was a self-taught genius who mailed his groundbreaking formulas to a Cambridge professor",
+   "known": 0.2,
+   "kind": "number-theorist"
+  },
+  {
+   "label": "John Forbes Nash",
+   "qid": "Q128736",
+   "fame": 0.64,
+   "born": 1928,
+   "description": "American mathematician and economist (1928–2015)",
+   "hook": "won a Nobel Prize in economics for work on game theory despite struggling with schizophrenia",
+   "known": 0.6,
+   "kind": "game-theorist"
+  },
+  {
+   "label": "Bertrand Russell",
+   "qid": "Q33760",
+   "fame": 0.634,
+   "born": 1872,
+   "description": "British philosopher and logician (1872–1970)",
+   "hook": "was jailed for pacifist activism during a world war and later won a Nobel Prize in literature",
+   "known": 0.4,
+   "kind": "philosopher"
+  },
+  {
+   "label": "John von Neumann",
+   "qid": "Q17455",
+   "fame": 0.629,
+   "born": 1903,
+   "description": "Hungarian and American mathematician and physicist (1903–1957)",
+   "hook": "helped design the basic architecture used inside nearly every modern computer",
+   "known": 0.4,
+   "kind": "polymath"
+  },
+  {
+   "label": "René Descartes",
+   "qid": "Q9191",
+   "fame": 0.629,
+   "born": 1596,
+   "description": "French philosopher, mathematician, and scientist (1596–1650)",
+   "hook": "is famous for the phrase 'I think, therefore I am'",
+   "known": 0.8,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Katherine Johnson",
+   "qid": "Q11740",
+   "fame": 0.625,
+   "born": 1918,
+   "description": "African-American mathematician",
+   "hook": "calculated the trajectories that sent astronauts safely to the moon and back",
+   "known": 0.4,
+   "kind": "computer-pioneer"
+  },
+  {
+   "label": "Lewis Carroll",
+   "qid": "Q38082",
+   "fame": 0.615,
+   "born": 1832,
+   "description": "British author and scholar (1832–1898)",
+   "hook": "was a math lecturer who wrote a beloved story about a girl falling down a rabbit hole",
+   "known": 0.6,
+   "kind": "polymath"
+  },
+  {
+   "label": "Nicolaus Copernicus",
+   "qid": "Q619",
+   "fame": 0.614,
+   "born": 1473,
+   "description": "Polish mathematician and astronomer (1473-1543)",
+   "hook": "proposed that the sun, not the earth, sits at the center of the solar system",
+   "known": 0.8,
+   "kind": "astronomer"
+  },
+  {
+   "label": "Leonhard Euler",
+   "qid": "Q7604",
+   "fame": 0.604,
+   "born": 1707,
+   "description": "Swiss mathematician, physicist, and engineer (1707–1783)",
+   "hook": "introduced much of the math notation still used today, including the symbol for pi",
+   "known": 0.4,
+   "kind": "polymath"
+  },
+  {
+   "label": "Archimedes",
+   "qid": "Q8739",
+   "fame": 0.6,
+   "born": -286,
+   "description": "Greek mathematician and physicist (c. 287 – c. 212 BC)",
+   "hook": "is said to have shouted Eureka after making a discovery in his bath",
+   "known": 0.6,
+   "kind": "ancient"
+  },
+  {
+   "label": "Claude Shannon",
+   "qid": "Q92760",
+   "fame": 0.594,
+   "born": 1916,
+   "description": "American mathematician and information theorist (1916–2001)",
+   "hook": "founded the mathematical theory behind all modern digital communication",
+   "known": 0.4,
+   "kind": "computer-pioneer"
+  },
+  {
+   "label": "Charles Babbage",
+   "qid": "Q46633",
+   "fame": 0.574,
+   "born": 1791,
+   "description": "English mathematician, philosopher, and engineer (1791–1871)",
+   "hook": "designed an early mechanical computer that was never built in his lifetime",
+   "known": 0.4,
+   "kind": "computer-pioneer"
+  },
+  {
+   "label": "Avicenna",
+   "qid": "Q8011",
+   "fame": 0.573,
+   "born": 980,
+   "description": "Persian polymath, physician and philosopher (c. 980–1037)",
+   "hook": "wrote a medical encyclopedia used as a standard textbook for centuries",
+   "known": 0.2,
+   "kind": "ancient"
+  },
+  {
+   "label": "Francis Galton",
+   "qid": "Q191026",
+   "fame": 0.572,
+   "born": 1822,
+   "description": "British eugenist, polymath, and behavioural geneticist (1822–1911)",
+   "hook": "developed the system of classifying fingerprints still used by police today",
+   "known": 0.2,
+   "kind": "polymath"
+  },
+  {
+   "label": "Erwin Schrödinger",
+   "qid": "Q9130",
+   "fame": 0.569,
+   "born": 1887,
+   "description": "Austrian physicist (1887–1961)",
+   "hook": "devised a famous thought experiment involving a cat that is both alive and dead",
+   "known": 0.6,
+   "kind": "physicist"
+  },
+  {
+   "label": "Ptolemy",
+   "qid": "Q34943",
+   "fame": 0.563,
+   "born": 100,
+   "description": "2nd-century Roman mathematician, astronomer, geographer",
+   "hook": "created an influential model that placed the earth at the center of the universe",
+   "known": 0.4,
+   "kind": "ancient"
+  },
+  {
+   "label": "Blaise Pascal",
+   "qid": "Q1290",
+   "fame": 0.562,
+   "born": 1623,
+   "description": "French mathematician, physicist, inventor, writer, and Christian philosopher (1623-1662)",
+   "hook": "built an early mechanical calculator and has a computer programming language named after him",
+   "known": 0.4,
+   "kind": "polymath"
+  },
+  {
+   "label": "Gottfried Wilhelm Leibniz",
+   "qid": "Q9047",
+   "fame": 0.561,
+   "born": 1646,
+   "description": "German mathematician and philosopher (1646–1716)",
+   "hook": "invented a mechanical calculator and developed calculus using notation still used today",
+   "known": 0.4,
+   "kind": "polymath"
+  },
+  {
+   "label": "Roger Penrose",
+   "qid": "Q193803",
+   "fame": 0.561,
+   "born": 1931,
+   "description": "English mathematical physicist, recreational mathematician and philosopher",
+   "hook": "won a Nobel Prize in physics for showing black holes are an inevitable result of general relativity",
+   "known": 0.4,
+   "kind": "modern-specialist"
+  },
+  {
+   "label": "Hypatia",
+   "qid": "Q11903",
+   "fame": 0.559,
+   "born": 360,
+   "description": "Greek Neoplatonist philosopher",
+   "hook": "was a renowned woman scholar who taught mathematics and astronomy in ancient Alexandria",
+   "known": 0.2,
+   "kind": "ancient"
+  },
+  {
+   "label": "Carl Friedrich Gauss",
+   "qid": "Q6722",
+   "fame": 0.556,
+   "born": 1777,
+   "description": "German mathematician and physicist (1777–1855)",
+   "hook": "was nicknamed the Prince of Mathematicians",
+   "known": 0.6,
+   "kind": "polymath"
+  },
+  {
+   "label": "Ludwig Boltzmann",
+   "qid": "Q84296",
+   "fame": 0.553,
+   "born": 1844,
+   "description": "Austrian physicist and philosopher (1844–1906)",
+   "hook": "explained the behavior of gases using statistics at a time many doubted atoms existed",
+   "known": 0.2,
+   "kind": "physicist"
+  },
+  {
+   "label": "Kurt Gödel",
+   "qid": "Q41390",
+   "fame": 0.552,
+   "born": 1906,
+   "description": "Austrian-American logician, mathematician, and philosopher of mathematics (1906–1978)",
+   "hook": "proved that some mathematical truths can never be proved within their own system",
+   "known": 0.2,
+   "kind": "logician"
+  },
+  {
+   "label": "Grace Hopper",
+   "qid": "Q11641",
+   "fame": 0.55,
+   "born": 1906,
+   "description": "American computer scientist and United States Navy officer (1906–1992)",
+   "hook": "invented the first compiler and helped popularize the term computer bug",
+   "known": 0.4,
+   "kind": "computer-pioneer"
+  },
+  {
+   "label": "James Clerk Maxwell",
+   "qid": "Q9095",
+   "fame": 0.55,
+   "born": 1831,
+   "description": "Scottish physicist (1831–1879)",
+   "hook": "unified electricity, magnetism and light into a single set of equations",
+   "known": 0.4,
+   "kind": "physicist"
+  },
+  {
+   "label": "Muḥammad ibn Musa al-Khwarizmi",
+   "qid": "Q9038",
+   "fame": 0.541,
+   "born": 780,
+   "description": "9th-century Persian mathematician and astronomer",
+   "hook": "wrote a foundational textbook on algebra whose title gave the world that very word",
+   "known": 0.2,
+   "kind": "ancient"
+  },
+  {
+   "label": "Paul Erdős",
+   "qid": "Q173746",
+   "fame": 0.537,
+   "born": 1913,
+   "description": "Hungarian mathematician (1913–1996)",
+   "hook": "traveled the world with a suitcase, co-writing papers with hundreds of collaborators",
+   "known": 0.2,
+   "kind": "modern-specialist"
+  },
+  {
+   "label": "Johannes Kepler",
+   "qid": "Q8963",
+   "fame": 0.536,
+   "born": 1571,
+   "description": "German mathematician and astronomer (1571–1630)",
+   "hook": "discovered that planets orbit the sun in ellipses rather than perfect circles",
+   "known": 0.4,
+   "kind": "astronomer"
+  },
+  {
+   "label": "Andrew Wiles",
+   "qid": "Q184433",
+   "fame": 0.534,
+   "born": 1953,
+   "description": "English mathematician (1953–)",
+   "hook": "spent years working in secret to finally prove a centuries-old theorem about right triangles' cousin equation",
+   "known": 0.4,
+   "kind": "modern-specialist"
+  },
+  {
+   "label": "Paul Dirac",
+   "qid": "Q47480",
+   "fame": 0.532,
+   "born": 1902,
+   "description": "British theoretical physicist (1902–1984)",
+   "hook": "predicted the existence of antimatter through pure mathematics",
+   "known": 0.2,
+   "kind": "physicist"
+  },
+  {
+   "label": "Gerardus Mercator",
+   "qid": "Q6353",
+   "fame": 0.523,
+   "born": 1512,
+   "description": "Flemish geographer, cosmographer and cartographer (1512–1594)",
+   "hook": "created the map projection still used in most world maps today",
+   "known": 0.6,
+   "kind": "polymath"
+  },
+  {
+   "label": "Max Born",
+   "qid": "Q58978",
+   "fame": 0.523,
+   "born": 1882,
+   "description": "German-Jewish physicist and mathematician (1882–1970)",
+   "hook": "gave quantum mechanics its probability interpretation of the wave function",
+   "known": 0.2,
+   "kind": "physicist"
+  },
+  {
+   "label": "Eratosthenes",
+   "qid": "Q43182",
+   "fame": 0.519,
+   "born": -275,
+   "description": "Greek mathematician, geographer, poet, astronomer, librarian and music theorist",
+   "hook": "calculated the circumference of the earth using shadows and a well",
+   "known": 0.2,
+   "kind": "ancient"
+  },
+  {
+   "label": "Subrahmanyan Chandrasekhar",
+   "qid": "Q148109",
+   "fame": 0.513,
+   "born": 1910,
+   "description": "Indian-American astrophysicist",
+   "hook": "calculated the mass limit above which a dying star collapses into a black hole",
+   "known": 0.2,
+   "kind": "astrophysicist"
+  },
+  {
+   "label": "David Hilbert",
+   "qid": "Q41585",
+   "fame": 0.502,
+   "born": 1862,
+   "description": "German mathematician (1862–1943)",
+   "hook": "proposed a famous list of unsolved problems that shaped mathematics for a century",
+   "known": 0.2,
+   "kind": "logician"
+  },
+  {
+   "label": "Aryabhata",
+   "qid": "Q11359",
+   "fame": 0.501,
+   "born": 476,
+   "description": "Pioneer astronomer who formulated zero, quadratic rules, and earth's rotation.",
+   "hook": "was an ancient astronomer who calculated the value of pi and explained the earth's rotation",
+   "known": 0.2,
+   "kind": "ancient"
+  },
+  {
+   "label": "Alexander Grothendieck",
+   "qid": "Q77141",
+   "fame": 0.499,
+   "born": 1928,
+   "description": "French mathematician (1928–2014)",
+   "hook": "revolutionized algebraic geometry and later abandoned mathematics to live as a recluse",
+   "known": 0.2,
+   "kind": "modern-specialist"
+  },
+  {
+   "label": "Fibonacci",
+   "qid": "Q8763",
+   "fame": 0.497,
+   "born": 1170,
+   "description": "Italian mathematician (c.1170–c.1240/50)",
+   "hook": "introduced the Hindu-Arabic numeral system to Europe along with a famous number sequence",
+   "known": 0.4,
+   "kind": "ancient"
+  },
+  {
+   "label": "Alfred North Whitehead",
+   "qid": "Q183372",
+   "fame": 0.496,
+   "born": 1861,
+   "description": "English mathematician and philosopher (1861–1947)",
+   "hook": "co-wrote a landmark work attempting to derive all of mathematics from pure logic",
+   "known": 0.2,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Donald Knuth",
+   "qid": "Q17457",
+   "fame": 0.496,
+   "born": 1938,
+   "description": "American computer scientist and mathematician (born 1938)",
+   "hook": "wrote the definitive multi-volume reference on computer algorithms",
+   "known": 0.4,
+   "kind": "computer-pioneer"
+  },
+  {
+   "label": "Freeman Dyson",
+   "qid": "Q153717",
+   "fame": 0.492,
+   "born": 1923,
+   "description": "theoretical physicist and mathematician (1923–2020)",
+   "hook": "imagined a giant sphere built around a star to capture all of its energy",
+   "known": 0.2,
+   "kind": "modern-specialist"
+  },
+  {
+   "label": "Georges Lemaître",
+   "qid": "Q12998",
+   "fame": 0.489,
+   "born": 1894,
+   "description": "Belgian astrophysicist and Catholic priest (1894–1966)",
+   "hook": "was a priest who first proposed the theory that became known as the Big Bang",
+   "known": 0.2,
+   "kind": "astrophysicist"
+  },
+  {
+   "label": "Boethius",
+   "qid": "Q102851",
+   "fame": 0.487,
+   "born": 480,
+   "description": "Roman senator and philosopher of the early 6th century (480–524)",
+   "hook": "wrote a philosophical dialogue while awaiting execution that became a landmark work of the Middle Ages",
+   "known": 0.2,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Omar Khayyám",
+   "qid": "Q35900",
+   "fame": 0.487,
+   "born": 1048,
+   "description": "Persian mathematician and poet (1048–1131)",
+   "hook": "wrote a famous collection of poetry while also making major advances in algebra",
+   "known": 0.2,
+   "kind": "polymath"
+  },
+  {
+   "label": "Satyendra Nath Bose",
+   "qid": "Q45789",
+   "fame": 0.486,
+   "born": 1894,
+   "description": "Indian Bengali physicist and polymath (1894–1974)",
+   "hook": "has a class of subatomic particles named after his work on quantum statistics",
+   "known": 0.2,
+   "kind": "physicist"
+  },
+  {
+   "label": "Maryam Mirzakhani",
+   "qid": "Q1771279",
+   "fame": 0.484,
+   "born": 1977,
+   "description": "Iranian mathematician (1977–2017)",
+   "hook": "was the first woman to win mathematics' highest honor, the Fields Medal",
+   "known": 0.2,
+   "kind": "modern-specialist"
+  },
+  {
+   "label": "Pierre-Simon Laplace",
+   "qid": "Q44481",
+   "fame": 0.484,
+   "born": 1749,
+   "description": "French mathematician and astronomer (1749–1827)",
+   "hook": "helped develop the mathematics behind probability theory and celestial mechanics",
+   "known": 0.2,
+   "kind": "mathematician"
+  },
+  {
+   "label": "William Thomson, 1st Baron Kelvin",
+   "qid": "Q122701",
+   "fame": 0.482,
+   "born": 1825,
+   "description": "British physicist and engineer (1824–1907)",
+   "hook": "helped lay the first telegraph cable across the floor of the Atlantic Ocean",
+   "known": 0.4,
+   "kind": "mathematician"
+  },
+  {
+   "label": "Edsger W. Dijkstra",
+   "qid": "Q8556",
+   "fame": 0.48,
+   "born": 1930,
+   "description": "Dutch computer scientist (1930–2002)",
+   "hook": "designed the algorithm still used to find the shortest path between points on a map",
+   "known": 0.2,
+   "kind": "mathematician"
+  },
+  {
+   "label": "G.H. Hardy",
+   "qid": "Q184337",
+   "fame": 0.48,
+   "born": 1877,
+   "description": "British mathematician (1877–1947)",
+   "hook": "wrote a famous essay defending mathematics done purely for its own beauty",
+   "known": 0.05,
+   "kind": "mathematician"
+  },
+  {
+   "label": "Emmy Noether",
+   "qid": "Q7099",
+   "fame": 0.476,
+   "born": 1882,
+   "description": "German Jewish mathematician (1882–1935)",
+   "hook": "proved a fundamental theorem linking symmetry in physics to conservation laws",
+   "known": 0.05,
+   "kind": "mathematician"
+  },
+  {
+   "label": "Bernhard Riemann",
+   "qid": "Q42299",
+   "fame": 0.475,
+   "born": 1826,
+   "description": "German mathematician (1826–1866)",
+   "hook": "developed the geometry that later became essential to Einstein's theory of general relativity",
+   "known": 0.05,
+   "kind": "mathematician"
+  },
+  {
+   "label": "Henri Poincaré",
+   "qid": "Q81082",
+   "fame": 0.474,
+   "born": 1854,
+   "description": "French mathematician, physicist and engineer (1854–1912)",
+   "hook": "laid early groundwork for chaos theory while studying the orbits of three mutually orbiting bodies",
+   "known": 0.05,
+   "kind": "mathematician"
+  },
+  {
+   "label": "Al-Biruni",
+   "qid": "Q11826",
+   "fame": 0.471,
+   "born": 973,
+   "description": "11th-century Persian scholar and polymath (973–1048)",
+   "hook": "calculated the radius of the earth using mountain heights, with remarkable accuracy for his time",
+   "known": 0.05,
+   "kind": "mathematician"
+  },
+  {
+   "label": "Ibn al-Haytham",
+   "qid": "Q11104",
+   "fame": 0.471,
+   "born": 965,
+   "description": "Arab physicist, mathematician and astronomer (c. 965 – c. 1040)",
+   "hook": "pioneered the modern scientific method through experiments with light and vision",
+   "known": 0.05,
+   "kind": "mathematician"
+  },
+  {
+   "label": "Georg Cantor",
+   "qid": "Q76420",
+   "fame": 0.468,
+   "born": 1845,
+   "description": "German mathematician, inventor of set theory (1845–1918)",
+   "hook": "created set theory and proved that some infinities are larger than others",
+   "known": 0.05,
+   "kind": "mathematician"
+  },
+  {
+   "label": "Christopher Wren",
+   "qid": "Q170373",
+   "fame": 0.466,
+   "born": 1632,
+   "description": "English architect (1632–1723)",
+   "hook": "designed a great cathedral while rebuilding much of London after a great fire",
+   "known": 0.2,
+   "kind": "mathematician"
+  },
+  {
+   "label": "Évariste Galois",
+   "qid": "Q7091",
+   "fame": 0.466,
+   "born": 1811,
+   "description": "French mathematician (1811-1832)",
+   "hook": "died in a duel as a young man after laying the groundwork for a branch of algebra",
+   "known": 0.05,
+   "kind": "mathematician"
+  },
+  {
+   "label": "Christiaan Huygens",
+   "qid": "Q39599",
+   "fame": 0.458,
+   "born": 1629,
+   "description": "Dutch mathematician, physicist and astronomer (1629–1695)",
+   "hook": "invented the pendulum clock and discovered Saturn's largest moon",
+   "known": 0.2,
+   "kind": "mathematician"
+  },
+  {
+   "label": "Nasir al-Din al-Tusi",
+   "qid": "Q302835",
+   "fame": 0.457,
+   "born": 1201,
+   "description": "Persian astronomer (1201–1274)",
+   "hook": "invented a geometric device for planetary motion that later influenced Copernicus's model of the solar system",
+   "known": 0.05,
+   "kind": "mathematician"
+  },
+  {
+   "label": "Norbert Wiener",
+   "qid": "Q178577",
+   "fame": 0.454,
+   "born": 1894,
+   "description": "American mathematician, scientist in cybernetics and artificial intelligence (1894–1964)",
+   "hook": "founded the field studying control and communication in both machines and animals",
+   "known": 0.05,
+   "kind": "mathematician"
+  }
+ ]
+}

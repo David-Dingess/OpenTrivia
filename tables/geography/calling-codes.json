@@ -1,0 +1,1093 @@
+{
+ "id": "table.geography.calling-codes",
+ "kind": "table",
+ "title": "Countries by international calling code",
+ "genre": "society",
+ "category": "geography",
+ "topic": "flags-and-symbols",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?code WHERE { { SELECT ?item (SAMPLE(?c) AS ?code) (COUNT(DISTINCT ?c) AS ?n) WHERE { ?item wdt:P31 wd:Q3624078 . FILTER NOT EXISTS { ?item wdt:P31 wd:Q3024240 } FILTER NOT EXISTS { ?item wdt:P576 [] } ?item wdt:P474 ?c . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?n = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-25T03:48:18.650Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-25T03:48:18.650Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "code",
+   "label": "Calling code",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "item",
+  "many": "items",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "United States",
+   "qid": "Q30",
+   "fame": 0.931,
+   "code": "+1",
+   "description": "country located primarily in North America"
+  },
+  {
+   "label": "Nepal",
+   "qid": "Q837",
+   "fame": 0.839,
+   "code": "+977",
+   "description": "country in South Asia"
+  },
+  {
+   "label": "United Kingdom",
+   "qid": "Q145",
+   "fame": 0.83,
+   "code": "+44",
+   "description": "island country in north-west Europe"
+  },
+  {
+   "label": "India",
+   "qid": "Q668",
+   "fame": 0.817,
+   "code": "+91",
+   "description": "country in South Asia"
+  },
+  {
+   "label": "China",
+   "qid": "Q148",
+   "fame": 0.798,
+   "code": "+86",
+   "description": "country in East Asia"
+  },
+  {
+   "label": "Australia",
+   "qid": "Q408",
+   "fame": 0.79,
+   "code": "+61",
+   "description": "country in Oceania"
+  },
+  {
+   "label": "Germany",
+   "qid": "Q183",
+   "fame": 0.788,
+   "code": "+49",
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Russia",
+   "qid": "Q159",
+   "fame": 0.788,
+   "code": "+7",
+   "description": "country in Eastern Europe and Northern Asia, the largest in the world by area"
+  },
+  {
+   "label": "Israel",
+   "qid": "Q801",
+   "fame": 0.782,
+   "code": "+972",
+   "description": "country in West Asia"
+  },
+  {
+   "label": "Japan",
+   "qid": "Q17",
+   "fame": 0.779,
+   "code": "+81",
+   "description": "island country in East Asia"
+  },
+  {
+   "label": "Singapore",
+   "qid": "Q334",
+   "fame": 0.778,
+   "code": "+65",
+   "description": "sovereign island country and city-state in maritime Southeast Asia"
+  },
+  {
+   "label": "Yemen",
+   "qid": "Q805",
+   "fame": 0.774,
+   "code": "+967",
+   "description": "country in West Asia"
+  },
+  {
+   "label": "Norway",
+   "qid": "Q20",
+   "fame": 0.767,
+   "code": "+47",
+   "description": "country in Northern Europe"
+  },
+  {
+   "label": "Iran",
+   "qid": "Q794",
+   "fame": 0.757,
+   "code": "+98",
+   "description": "country in Western Asia"
+  },
+  {
+   "label": "Brazil",
+   "qid": "Q155",
+   "fame": 0.756,
+   "code": "+55",
+   "description": "country in South America"
+  },
+  {
+   "label": "France",
+   "qid": "Q142",
+   "fame": 0.756,
+   "code": "+33",
+   "description": "country in Western Europe and other continents (through its overseas territories in America, Africa and Oceania)"
+  },
+  {
+   "label": "Indonesia",
+   "qid": "Q252",
+   "fame": 0.756,
+   "code": "+62",
+   "description": "island country in Southeast Asia and Oceania"
+  },
+  {
+   "label": "Philippines",
+   "qid": "Q928",
+   "fame": 0.755,
+   "code": "+63",
+   "description": "archipelagic country in Southeast Asia"
+  },
+  {
+   "label": "Taiwan",
+   "qid": "Q865",
+   "fame": 0.753,
+   "code": "+886",
+   "description": "country in East Asia"
+  },
+  {
+   "label": "Palestine",
+   "qid": "Q219060",
+   "fame": 0.752,
+   "code": "+970",
+   "description": "political entity that enjoys incomplete recognition as a state, located in West Asia"
+  },
+  {
+   "label": "Saudi Arabia",
+   "qid": "Q851",
+   "fame": 0.75,
+   "code": "+966",
+   "description": "country in West Asia"
+  },
+  {
+   "label": "Mexico",
+   "qid": "Q96",
+   "fame": 0.749,
+   "code": "+52",
+   "description": "country in North America"
+  },
+  {
+   "label": "Pakistan",
+   "qid": "Q843",
+   "fame": 0.748,
+   "code": "+92",
+   "description": "sovereign state in South Asia"
+  },
+  {
+   "label": "Afghanistan",
+   "qid": "Q889",
+   "fame": 0.745,
+   "code": "+93",
+   "description": "country in Central and South Asia"
+  },
+  {
+   "label": "Spain",
+   "qid": "Q29",
+   "fame": 0.743,
+   "code": "+34",
+   "description": "country in southwestern Europe with territories in Africa"
+  },
+  {
+   "label": "Italy",
+   "qid": "Q38",
+   "fame": 0.74,
+   "code": "+39",
+   "description": "country in southern Europe"
+  },
+  {
+   "label": "United Arab Emirates",
+   "qid": "Q878",
+   "fame": 0.74,
+   "code": "+971",
+   "description": "country in Western Asia"
+  },
+  {
+   "label": "Malaysia",
+   "qid": "Q833",
+   "fame": 0.739,
+   "code": "+60",
+   "description": "country in Southeast Asia"
+  },
+  {
+   "label": "New Zealand",
+   "qid": "Q664",
+   "fame": 0.739,
+   "code": "+64",
+   "description": "island country in the southwest Pacific Ocean"
+  },
+  {
+   "label": "South Africa",
+   "qid": "Q258",
+   "fame": 0.739,
+   "code": "+27",
+   "description": "country in southern Africa"
+  },
+  {
+   "label": "Iceland",
+   "qid": "Q189",
+   "fame": 0.738,
+   "code": "+354",
+   "description": "Nordic island country in the North Atlantic Ocean"
+  },
+  {
+   "label": "Myanmar",
+   "qid": "Q836",
+   "fame": 0.737,
+   "code": "+95",
+   "description": "country in Southeast Asia"
+  },
+  {
+   "label": "Sweden",
+   "qid": "Q34",
+   "fame": 0.736,
+   "code": "+46",
+   "description": "country in Northern Europe"
+  },
+  {
+   "label": "Vietnam",
+   "qid": "Q881",
+   "fame": 0.736,
+   "code": "+84",
+   "description": "country in Southeast Asia"
+  },
+  {
+   "label": "Kyrgyzstan",
+   "qid": "Q813",
+   "fame": 0.735,
+   "code": "+996",
+   "description": "sovereign state in Central Asia"
+  },
+  {
+   "label": "Poland",
+   "qid": "Q36",
+   "fame": 0.735,
+   "code": "+48",
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Czech Republic",
+   "qid": "Q213",
+   "fame": 0.734,
+   "code": "+420",
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Malta",
+   "qid": "Q233",
+   "fame": 0.731,
+   "code": "+356",
+   "description": "country in Southern Europe situated on an archipelago in the Mediterranean Sea"
+  },
+  {
+   "label": "North Korea",
+   "qid": "Q423",
+   "fame": 0.731,
+   "code": "+850",
+   "description": "sovereign state in East Asia"
+  },
+  {
+   "label": "Belarus",
+   "qid": "Q184",
+   "fame": 0.729,
+   "code": "+375",
+   "description": "country in Eastern Europe"
+  },
+  {
+   "label": "Switzerland",
+   "qid": "Q39",
+   "fame": 0.729,
+   "code": "+41",
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Ukraine",
+   "qid": "Q212",
+   "fame": 0.729,
+   "code": "+380",
+   "description": "country in Eastern Europe"
+  },
+  {
+   "label": "Argentina",
+   "qid": "Q414",
+   "fame": 0.728,
+   "code": "+54",
+   "description": "country in South America"
+  },
+  {
+   "label": "Bangladesh",
+   "qid": "Q902",
+   "fame": 0.728,
+   "code": "+880",
+   "description": "country in South Asia"
+  },
+  {
+   "label": "Cyprus",
+   "qid": "Q229",
+   "fame": 0.727,
+   "code": "+357",
+   "description": "country in the Mediterranean Sea"
+  },
+  {
+   "label": "Mauritius",
+   "qid": "Q1027",
+   "fame": 0.727,
+   "code": "+230",
+   "description": "island sovereign state off of East Africa in the Indian Ocean"
+  },
+  {
+   "label": "Sri Lanka",
+   "qid": "Q854",
+   "fame": 0.727,
+   "code": "+94",
+   "description": "island country in South Asia"
+  },
+  {
+   "label": "Portugal",
+   "qid": "Q45",
+   "fame": 0.726,
+   "code": "+351",
+   "description": "country in Southwestern Europe"
+  },
+  {
+   "label": "Armenia",
+   "qid": "Q399",
+   "fame": 0.725,
+   "code": "+374",
+   "description": "sovereign state in the South Caucasus region of Eurasia"
+  },
+  {
+   "label": "Monaco",
+   "qid": "Q235",
+   "fame": 0.725,
+   "code": "+377",
+   "description": "microstate in Western Europe"
+  },
+  {
+   "label": "Georgia",
+   "qid": "Q230",
+   "fame": 0.723,
+   "code": "+995",
+   "description": "country in the Caucasus region of Europe and Asia"
+  },
+  {
+   "label": "Uzbekistan",
+   "qid": "Q265",
+   "fame": 0.722,
+   "code": "+998",
+   "description": "sovereign state in Central Asia"
+  },
+  {
+   "label": "South Korea",
+   "qid": "Q884",
+   "fame": 0.72,
+   "code": "+82",
+   "description": "country in East Asia"
+  },
+  {
+   "label": "Azerbaijan",
+   "qid": "Q227",
+   "fame": 0.719,
+   "code": "+994",
+   "description": "country in the Caucasus in Eastern Europe and Western Asia"
+  },
+  {
+   "label": "Kosovo",
+   "qid": "Q1246",
+   "fame": 0.719,
+   "code": "+383",
+   "description": "country in southeastern Europe"
+  },
+  {
+   "label": "Liechtenstein",
+   "qid": "Q347",
+   "fame": 0.719,
+   "code": "+423",
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Syria",
+   "qid": "Q858",
+   "fame": 0.719,
+   "code": "+963",
+   "description": "country in West Asia"
+  },
+  {
+   "label": "Albania",
+   "qid": "Q222",
+   "fame": 0.716,
+   "code": "+355",
+   "description": "country in southeastern Europe"
+  },
+  {
+   "label": "Thailand",
+   "qid": "Q869",
+   "fame": 0.716,
+   "code": "+66",
+   "description": "country in Southeast Asia"
+  },
+  {
+   "label": "Serbia",
+   "qid": "Q403",
+   "fame": 0.715,
+   "code": "+381",
+   "description": "country in Southeast Europe"
+  },
+  {
+   "label": "Bosnia and Herzegovina",
+   "qid": "Q225",
+   "fame": 0.714,
+   "code": "+387",
+   "description": "country in Southeast Europe"
+  },
+  {
+   "label": "Croatia",
+   "qid": "Q224",
+   "fame": 0.713,
+   "code": "+385",
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Egypt",
+   "qid": "Q79",
+   "fame": 0.713,
+   "code": "+20",
+   "description": "country in Northeast Africa and Southwest Asia"
+  },
+  {
+   "label": "Greece",
+   "qid": "Q41",
+   "fame": 0.712,
+   "code": "+30",
+   "description": "country in Southeast Europe"
+  },
+  {
+   "label": "Nigeria",
+   "qid": "Q1033",
+   "fame": 0.709,
+   "code": "+234",
+   "description": "sovereign state in West Africa"
+  },
+  {
+   "label": "Ethiopia",
+   "qid": "Q115",
+   "fame": 0.708,
+   "code": "+251",
+   "description": "country in the Horn of Africa"
+  },
+  {
+   "label": "Democratic Republic of the Congo",
+   "qid": "Q974",
+   "fame": 0.707,
+   "code": "+243",
+   "description": "country in Central Africa"
+  },
+  {
+   "label": "Belgium",
+   "qid": "Q31",
+   "fame": 0.706,
+   "code": "+32",
+   "description": "country in western Europe"
+  },
+  {
+   "label": "Finland",
+   "qid": "Q33",
+   "fame": 0.706,
+   "code": "+358",
+   "description": "country in Northern Europe"
+  },
+  {
+   "label": "Kiribati",
+   "qid": "Q710",
+   "fame": 0.706,
+   "code": "+686",
+   "description": "island sovereign state in the central Pacific Ocean"
+  },
+  {
+   "label": "Montenegro",
+   "qid": "Q236",
+   "fame": 0.706,
+   "code": "+382",
+   "description": "country in southeastern Europe"
+  },
+  {
+   "label": "Ireland",
+   "qid": "Q27",
+   "fame": 0.705,
+   "code": "+353",
+   "description": "country in Northwestern Europe"
+  },
+  {
+   "label": "Lithuania",
+   "qid": "Q37",
+   "fame": 0.704,
+   "code": "+370",
+   "description": "country in northeastern Europe"
+  },
+  {
+   "label": "Morocco",
+   "qid": "Q1028",
+   "fame": 0.704,
+   "code": "+212",
+   "description": "sovereign state in North Africa"
+  },
+  {
+   "label": "Romania",
+   "qid": "Q218",
+   "fame": 0.704,
+   "code": "+40",
+   "description": "country in Southeast Europe"
+  },
+  {
+   "label": "Austria",
+   "qid": "Q40",
+   "fame": 0.702,
+   "code": "+43",
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Mongolia",
+   "qid": "Q711",
+   "fame": 0.701,
+   "code": "+976",
+   "description": "country in East Asia"
+  },
+  {
+   "label": "Algeria",
+   "qid": "Q262",
+   "fame": 0.699,
+   "code": "+213",
+   "description": "country in North Africa"
+  },
+  {
+   "label": "Papua New Guinea",
+   "qid": "Q691",
+   "fame": 0.698,
+   "code": "+675",
+   "description": "country in Oceania"
+  },
+  {
+   "label": "Luxembourg",
+   "qid": "Q32",
+   "fame": 0.696,
+   "code": "+352",
+   "description": "country in Western Europe"
+  },
+  {
+   "label": "Slovenia",
+   "qid": "Q215",
+   "fame": 0.696,
+   "code": "+386",
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Nauru",
+   "qid": "Q697",
+   "fame": 0.695,
+   "code": "+674",
+   "description": "country in Oceania"
+  },
+  {
+   "label": "Guyana",
+   "qid": "Q734",
+   "fame": 0.694,
+   "code": "+592",
+   "description": "country in South America"
+  },
+  {
+   "label": "Andorra",
+   "qid": "Q228",
+   "fame": 0.692,
+   "code": "+376",
+   "description": "sovereign microstate between France and Spain, in Western Europe"
+  },
+  {
+   "label": "Colombia",
+   "qid": "Q739",
+   "fame": 0.692,
+   "code": "+57",
+   "description": "country in South America"
+  },
+  {
+   "label": "Uganda",
+   "qid": "Q1036",
+   "fame": 0.692,
+   "code": "+256",
+   "description": "country in East Africa"
+  },
+  {
+   "label": "Lebanon",
+   "qid": "Q822",
+   "fame": 0.691,
+   "code": "+961",
+   "description": "country in West Asia"
+  },
+  {
+   "label": "Bhutan",
+   "qid": "Q917",
+   "fame": 0.69,
+   "code": "+975",
+   "description": "sovereign state in South Asia"
+  },
+  {
+   "label": "Eritrea",
+   "qid": "Q986",
+   "fame": 0.69,
+   "code": "+291",
+   "description": "country in the Horn of Africa"
+  },
+  {
+   "label": "Maldives",
+   "qid": "Q826",
+   "fame": 0.69,
+   "code": "+960",
+   "description": "sovereign state in South Asia, situated on an archipelago in the Arabian Sea"
+  },
+  {
+   "label": "Bulgaria",
+   "qid": "Q219",
+   "fame": 0.689,
+   "code": "+359",
+   "description": "country in southeast Europe"
+  },
+  {
+   "label": "Zimbabwe",
+   "qid": "Q954",
+   "fame": 0.689,
+   "code": "+263",
+   "description": "sovereign state in southern Africa"
+  },
+  {
+   "label": "Turkmenistan",
+   "qid": "Q874",
+   "fame": 0.688,
+   "code": "+993",
+   "description": "country in Central Asia"
+  },
+  {
+   "label": "North Macedonia",
+   "qid": "Q221",
+   "fame": 0.687,
+   "code": "+389",
+   "description": "country in southeastern Europe"
+  },
+  {
+   "label": "Tanzania",
+   "qid": "Q924",
+   "fame": 0.687,
+   "code": "+255",
+   "description": "country in East Africa"
+  },
+  {
+   "label": "Hungary",
+   "qid": "Q28",
+   "fame": 0.686,
+   "code": "+36",
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Madagascar",
+   "qid": "Q1019",
+   "fame": 0.686,
+   "code": "+261",
+   "description": "island sovereign state off the coast of Southeast Africa, in the Indian Ocean"
+  },
+  {
+   "label": "Suriname",
+   "qid": "Q730",
+   "fame": 0.686,
+   "code": "+597",
+   "description": "country in South America"
+  },
+  {
+   "label": "Cape Verde",
+   "qid": "Q1011",
+   "fame": 0.685,
+   "code": "+238",
+   "description": "sovereign state comprising ten islands off the Western coast of Africa"
+  },
+  {
+   "label": "Cuba",
+   "qid": "Q241",
+   "fame": 0.685,
+   "code": "+53",
+   "description": "sovereign state situated on an island in the Caribbean Sea"
+  },
+  {
+   "label": "Estonia",
+   "qid": "Q191",
+   "fame": 0.685,
+   "code": "+372",
+   "description": "country in Northern Europe"
+  },
+  {
+   "label": "Slovakia",
+   "qid": "Q214",
+   "fame": 0.683,
+   "code": "+421",
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Latvia",
+   "qid": "Q211",
+   "fame": 0.682,
+   "code": "+371",
+   "description": "sovereign state in northeastern Europe"
+  },
+  {
+   "label": "Brunei",
+   "qid": "Q921",
+   "fame": 0.679,
+   "code": "+673",
+   "description": "sovereign country and sultanate on the island of Borneo in south-east Asia, member of the Commonwealth of Nations"
+  },
+  {
+   "label": "Eswatini",
+   "qid": "Q1050",
+   "fame": 0.679,
+   "code": "+268",
+   "description": "sovereign state in southern Africa"
+  },
+  {
+   "label": "Fiji",
+   "qid": "Q712",
+   "fame": 0.679,
+   "code": "+679",
+   "description": "island sovereign state in Oceania"
+  },
+  {
+   "label": "Jordan",
+   "qid": "Q810",
+   "fame": 0.679,
+   "code": "+962",
+   "description": "country in West Asia"
+  },
+  {
+   "label": "Burkina Faso",
+   "qid": "Q965",
+   "fame": 0.678,
+   "code": "+226",
+   "description": "sovereign state in Africa"
+  },
+  {
+   "label": "Venezuela",
+   "qid": "Q717",
+   "fame": 0.678,
+   "code": "+58",
+   "description": "country in South America"
+  },
+  {
+   "label": "Iraq",
+   "qid": "Q796",
+   "fame": 0.677,
+   "code": "+964",
+   "description": "sovereign state in Western Asia"
+  },
+  {
+   "label": "Seychelles",
+   "qid": "Q1042",
+   "fame": 0.676,
+   "code": "+248",
+   "description": "island sovereign state off the eastern coast of Africa"
+  },
+  {
+   "label": "Chile",
+   "qid": "Q298",
+   "fame": 0.675,
+   "code": "+56",
+   "description": "country in South America and Oceania, with a claim in Antarctica"
+  },
+  {
+   "label": "Ghana",
+   "qid": "Q117",
+   "fame": 0.675,
+   "code": "+233",
+   "description": "country in West Africa"
+  },
+  {
+   "label": "San Marino",
+   "qid": "Q238",
+   "fame": 0.675,
+   "code": "+378",
+   "description": "sovereign state in southern Europe, enclaved within Italy"
+  },
+  {
+   "label": "Oman",
+   "qid": "Q842",
+   "fame": 0.674,
+   "code": "+968",
+   "description": "sovereign state in western Asia"
+  },
+  {
+   "label": "Vatican City",
+   "qid": "Q237",
+   "fame": 0.674,
+   "code": "+379",
+   "description": "Holy See's independent state, an enclave within Rome, Italy"
+  },
+  {
+   "label": "Moldova",
+   "qid": "Q217",
+   "fame": 0.673,
+   "code": "+373",
+   "description": "country in Eastern Europe"
+  },
+  {
+   "label": "Haiti",
+   "qid": "Q790",
+   "fame": 0.672,
+   "code": "+509",
+   "description": "country in the Caribbean Sea"
+  },
+  {
+   "label": "Cambodia",
+   "qid": "Q424",
+   "fame": 0.671,
+   "code": "+855",
+   "description": "country in Southeast Asia"
+  },
+  {
+   "label": "Jamaica",
+   "qid": "Q766",
+   "fame": 0.671,
+   "code": "+1876",
+   "description": "island state in the Caribbean Sea"
+  },
+  {
+   "label": "Liberia",
+   "qid": "Q1014",
+   "fame": 0.67,
+   "code": "+231",
+   "description": "sovereign state in West Africa"
+  },
+  {
+   "label": "El Salvador",
+   "qid": "Q792",
+   "fame": 0.669,
+   "code": "+503",
+   "description": "sovereign state in Central America"
+  },
+  {
+   "label": "Somalia",
+   "qid": "Q1045",
+   "fame": 0.668,
+   "code": "+252",
+   "description": "sovereign state in Africa"
+  },
+  {
+   "label": "Equatorial Guinea",
+   "qid": "Q983",
+   "fame": 0.667,
+   "code": "+240",
+   "description": "sovereign state in Central Africa"
+  },
+  {
+   "label": "Libya",
+   "qid": "Q1016",
+   "fame": 0.667,
+   "code": "+218",
+   "description": "sovereign state in North Africa"
+  },
+  {
+   "label": "Sierra Leone",
+   "qid": "Q1044",
+   "fame": 0.666,
+   "code": "+232",
+   "description": "sovereign state in West Africa"
+  },
+  {
+   "label": "Sudan",
+   "qid": "Q1049",
+   "fame": 0.665,
+   "code": "+249",
+   "description": "country in Northeast Africa"
+  },
+  {
+   "label": "Belize",
+   "qid": "Q242",
+   "fame": 0.664,
+   "code": "+501",
+   "description": "sovereign state in Central America"
+  },
+  {
+   "label": "Namibia",
+   "qid": "Q1030",
+   "fame": 0.664,
+   "code": "+264",
+   "description": "country in Southern Africa"
+  },
+  {
+   "label": "Peru",
+   "qid": "Q419",
+   "fame": 0.664,
+   "code": "+51",
+   "description": "sovereign state in South America"
+  },
+  {
+   "label": "Bahrain",
+   "qid": "Q398",
+   "fame": 0.662,
+   "code": "+973",
+   "description": "country in the Persian Gulf"
+  },
+  {
+   "label": "Kenya",
+   "qid": "Q114",
+   "fame": 0.661,
+   "code": "+254",
+   "description": "country in Eastern Africa"
+  },
+  {
+   "label": "Laos",
+   "qid": "Q819",
+   "fame": 0.661,
+   "code": "+856",
+   "description": "country in Southeast Asia"
+  },
+  {
+   "label": "Qatar",
+   "qid": "Q846",
+   "fame": 0.661,
+   "code": "+974",
+   "description": "country in West Asia"
+  },
+  {
+   "label": "Rwanda",
+   "qid": "Q1037",
+   "fame": 0.661,
+   "code": "+250",
+   "description": "country in East Africa"
+  },
+  {
+   "label": "Bolivia",
+   "qid": "Q750",
+   "fame": 0.66,
+   "code": "+591",
+   "description": "sovereign state in South America"
+  },
+  {
+   "label": "Tajikistan",
+   "qid": "Q863",
+   "fame": 0.66,
+   "code": "+992",
+   "description": "sovereign state in Central Asia"
+  },
+  {
+   "label": "The Bahamas",
+   "qid": "Q778",
+   "fame": 0.66,
+   "code": "+1242",
+   "description": "island sovereign state in the West Indies"
+  },
+  {
+   "label": "Tunisia",
+   "qid": "Q948",
+   "fame": 0.66,
+   "code": "+216",
+   "description": "country in North Africa"
+  },
+  {
+   "label": "Djibouti",
+   "qid": "Q977",
+   "fame": 0.659,
+   "code": "+253",
+   "description": "sovereign state in Africa"
+  },
+  {
+   "label": "Kuwait",
+   "qid": "Q817",
+   "fame": 0.657,
+   "code": "+965",
+   "description": "sovereign state in Western Asia"
+  },
+  {
+   "label": "Uruguay",
+   "qid": "Q77",
+   "fame": 0.656,
+   "code": "+598",
+   "description": "sovereign state in South America"
+  },
+  {
+   "label": "Angola",
+   "qid": "Q916",
+   "fame": 0.655,
+   "code": "+244",
+   "description": "country on the west coast of Southern Africa"
+  },
+  {
+   "label": "Mauritania",
+   "qid": "Q1025",
+   "fame": 0.655,
+   "code": "+222",
+   "description": "sovereign state in West Africa and North Africa"
+  },
+  {
+   "label": "South Sudan",
+   "qid": "Q958",
+   "fame": 0.655,
+   "code": "+211",
+   "description": "country in East Africa"
+  },
+  {
+   "label": "Guatemala",
+   "qid": "Q774",
+   "fame": 0.653,
+   "code": "+502",
+   "description": "sovereign state in Central America"
+  },
+  {
+   "label": "Trinidad and Tobago",
+   "qid": "Q754",
+   "fame": 0.652,
+   "code": "+1868",
+   "description": "island sovereign state in the Caribbean"
+  },
+  {
+   "label": "Niger",
+   "qid": "Q1032",
+   "fame": 0.651,
+   "code": "+227",
+   "description": "sovereign state in western Africa"
+  },
+  {
+   "label": "Palau",
+   "qid": "Q695",
+   "fame": 0.65,
+   "code": "+680",
+   "description": "island sovereign state in Oceania"
+  },
+  {
+   "label": "Benin",
+   "qid": "Q962",
+   "fame": 0.648,
+   "code": "+229",
+   "description": "sovereign state in West Africa"
+  }
+ ]
+}

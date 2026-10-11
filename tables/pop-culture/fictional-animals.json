@@ -1,0 +1,459 @@
+{
+ "id": "table.pop-culture.fictional-animals",
+ "kind": "table",
+ "title": "Famous fictional animals: which show or story",
+ "genre": "general",
+ "category": "pop-culture",
+ "topic": "fictional-characters",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?originLabel WHERE { VALUES (?item ?originLabel) { (wd:Q941640 \"Eric Knight's story\") (wd:Q901323 \"Hanna-Barbera cartoons\") (wd:Q207369 \"Peanuts\") (wd:Q246867 \"Peanuts\") (wd:Q108732 \"Disney cartoons\") (wd:Q111135 \"Disney cartoons\") (wd:Q6550 \"Disney cartoons\") (wd:Q11934 \"Disney cartoons\") (wd:Q183102 \"Looney Tunes\") (wd:Q319918 \"Looney Tunes\") (wd:Q937186 \"Looney Tunes\") (wd:Q623553 \"Looney Tunes\") (wd:Q10990037 \"Looney Tunes\") (wd:Q912984 \"Looney Tunes\") (wd:Q1339544 \"Looney Tunes\") (wd:Q614094 \"Looney Tunes\") (wd:Q887525 \"Looney Tunes\") (wd:Q598503 \"Looney Tunes\") (wd:Q188574 \"A. A. Milne's books\") (wd:Q836719 \"A. A. Milne's books\") (wd:Q1799013 \"A. A. Milne's books\") (wd:Q4446039 \"A. A. Milne's books\") (wd:Q1107971 \"The Muppets\") (wd:Q2267970 \"The Muppets\") (wd:Q1839277 \"The Muppets\") (wd:Q1649583 \"The Lion King\") (wd:Q2287748 \"The Lion King\") (wd:Q1977325 \"The Lion King\") (wd:Q2691406 \"The Lion King\") (wd:Q2469812 \"The Lion King\") (wd:Q2365445 \"The Lion King\") (wd:Q2915850 \"Bambi\") (wd:Q2245378 \"The Jungle Book\") (wd:Q1860030 \"The Jungle Book\") (wd:Q2305638 \"The Jungle Book\") (wd:Q275475 \"The Jungle Book\") (wd:Q934013 \"Alice's Adventures in Wonderland\") (wd:Q178776 \"Alice's Adventures in Wonderland\") (wd:Q1261586 \"Beatrix Potter's tales\") (wd:Q767120 \"Jim Davis comic strip\") (wd:Q986209 \"Jim Davis comic strip\") (wd:Q191794 \"Sanrio\") (wd:Q191626 \"Sega\") (wd:Q1063506 \"PlayStation games\") (wd:Q12389 \"Nintendo\") (wd:Q762731 \"The Chronicles of Narnia\") (wd:Q2276476 \"The Chronicles of Narnia\") (wd:Q845210 \"Harry Potter\") (wd:Q3234008 \"Harry Potter\") (wd:Q2345138 \"Harry Potter\") (wd:Q3279123 \"Harry Potter\") (wd:Q845403 \"Harry Potter\") (wd:Q1640056 \"The Adventures of Tintin\") (wd:Q841812 \"Spirou comics\") (wd:Q632908 \"Michael Bond's books\") (wd:Q949916 \"Hanna-Barbera cartoons\") (wd:Q2394280 \"Hanna-Barbera cartoons\") (wd:Q55692981 \"Hanna-Barbera cartoons\") (wd:Q1090696 \"Hanna-Barbera cartoons\") (wd:Q1839152 \"Hanna-Barbera cartoons\") (wd:Q15012089 \"DePatie-Freleng cartoons\") (wd:Q741321 \"Walter Lantz cartoons\") (wd:Q692603 \"Silent-era cartoons\") (wd:Q1419509 \"Walt Disney's early cartoons\") (wd:Q1105407 \"H. A. Rey's books\") (wd:Q1260264 \"Tex Avery cartoons\") (wd:Q1088515 \"Ice Age\") (wd:Q49677 \"Terrytoons\") (wd:Q748427 \"Shrek\") (wd:Q2283527 \"Shrek\") (wd:Q908841 \"Family Guy\") (wd:Q1425114 \"The Simpsons\") (wd:Q2707949 \"The Lord of the Rings\") (wd:Q3307548 \"Kung Fu Panda\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T06:48:39.350Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T13:05:00.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "origin",
+   "label": "Which show or story",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "animal character",
+  "many": "animal characters",
+  "columns": {
+   "origin": {
+    "role": "link",
+    "pick": "Which show, story or franchise does {label} come from?",
+    "statement": "{label} comes from {value}.",
+    "match": "Match each animal character to where it comes from.",
+    "odd": "Three of these animal characters come from {value}. Which one does not?",
+    "all": "Tap all {n} animal characters that come from {value}.",
+    "reverse": "Which of these animal characters comes from {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Winnie the Pooh",
+   "qid": "Q188574",
+   "fame": 0.623,
+   "origin": "A. A. Milne's books",
+   "description": "fictional character created by A. A. Milne",
+   "hook": "is a honey-loving stuffed bear who lives in the Hundred Acre Wood with his friends",
+   "known": 0.95,
+   "kind": "book"
+  },
+  {
+   "label": "Foghorn Leghorn",
+   "qid": "Q1339544",
+   "fame": 0.619,
+   "origin": "Looney Tunes",
+   "description": "Warner Bros. theatrical cartoon character",
+   "hook": "is a loud, blustering rooster with a Southern drawl who torments a barnyard dog",
+   "known": 0.6,
+   "kind": "looney tunes"
+  },
+  {
+   "label": "Bugs Bunny",
+   "qid": "Q183102",
+   "fame": 0.618,
+   "origin": "Looney Tunes",
+   "description": "Warner Bros. cartoon character",
+   "hook": "is a wisecracking gray hare who munches carrots and asks 'What's up, Doc?'",
+   "known": 0.95,
+   "kind": "looney tunes"
+  },
+  {
+   "label": "Hello Kitty",
+   "qid": "Q191794",
+   "fame": 0.618,
+   "origin": "Sanrio",
+   "description": "fictional character by Sanrio",
+   "hook": "is a white cartoon cat with a red bow and no visible mouth",
+   "known": 0.8,
+   "kind": "brand"
+  },
+  {
+   "label": "Mickey Mouse",
+   "qid": "Q11934",
+   "fame": 0.612,
+   "origin": "Disney cartoons",
+   "description": "American cartoon character and mascot of The Walt Disney Company",
+   "hook": "is the cheerful round-eared mascot who debuted in Steamboat Willie",
+   "known": 0.95,
+   "kind": "disney"
+  },
+  {
+   "label": "Snoopy",
+   "qid": "Q207369",
+   "fame": 0.585,
+   "origin": "Peanuts",
+   "description": "fictional dog from the comic strip ''Peanuts'' by Charles m. Schulz",
+   "hook": "is a beagle who imagines himself a World War I flying ace atop his doghouse",
+   "known": 0.95,
+   "kind": "comic strip"
+  },
+  {
+   "label": "Daffy Duck",
+   "qid": "Q319918",
+   "fame": 0.56,
+   "origin": "Looney Tunes",
+   "description": "Fictional Warner Bros. character",
+   "hook": "is a lisping black waterfowl whose greed and bad luck make him a frustrated foil",
+   "known": 0.8,
+   "kind": "looney tunes"
+  },
+  {
+   "label": "Paddington Bear",
+   "qid": "Q632908",
+   "fame": 0.555,
+   "origin": "Michael Bond's books",
+   "description": "children's book character created by Michael Bond",
+   "hook": "is a polite traveler from darkest Peru who loves marmalade sandwiches and wears a red hat",
+   "known": 0.8,
+   "kind": "book"
+  },
+  {
+   "label": "Pepé Le Pew",
+   "qid": "Q614094",
+   "fame": 0.55,
+   "origin": "Looney Tunes",
+   "description": "fictional character",
+   "hook": "is a skunk who relentlessly romances unwilling cats with his French accent",
+   "known": 0.6,
+   "kind": "looney tunes"
+  },
+  {
+   "label": "Aslan",
+   "qid": "Q762731",
+   "fame": 0.548,
+   "origin": "The Chronicles of Narnia",
+   "description": "fictional lion, a deity in The Chronicles of Narnia",
+   "hook": "is the golden lion who rules a magical land reached through a wardrobe",
+   "known": 0.6,
+   "kind": "film"
+  },
+  {
+   "label": "Tweety",
+   "qid": "Q623553",
+   "fame": 0.542,
+   "origin": "Looney Tunes",
+   "description": "Warner Bros. theatrical cartoon character",
+   "hook": "is a tiny yellow canary who keeps escaping a persistent cat",
+   "known": 0.6,
+   "kind": "looney tunes"
+  },
+  {
+   "label": "Tasmanian Devil",
+   "qid": "Q887525",
+   "fame": 0.541,
+   "origin": "Looney Tunes",
+   "description": "Looney Tunes character",
+   "hook": "is a growling, ravenous brute who travels as a whirling tornado",
+   "known": 0.8,
+   "kind": "looney tunes"
+  },
+  {
+   "label": "Curious George",
+   "qid": "Q1105407",
+   "fame": 0.535,
+   "origin": "H. A. Rey's books",
+   "description": "protagonist of a series of popular children's books by the same name",
+   "hook": "is a mischievous monkey supervised by the Man in the Yellow Hat",
+   "known": 0.8,
+   "kind": "book"
+  },
+  {
+   "label": "Speedy Gonzales",
+   "qid": "Q912984",
+   "fame": 0.535,
+   "origin": "Looney Tunes",
+   "description": "fictional cartoon mouse",
+   "hook": "is the fastest mouse in Mexico, shouting 'Arriba!' as he runs",
+   "known": 0.6,
+   "kind": "looney tunes"
+  },
+  {
+   "label": "Sonic the Hedgehog",
+   "qid": "Q191626",
+   "fame": 0.531,
+   "origin": "Sega",
+   "description": "video game character from the eponymous video game franchise",
+   "hook": "is a blue, spiky speedster who collects golden rings and wears red sneakers",
+   "known": 0.95,
+   "kind": "video game"
+  },
+  {
+   "label": "Cheshire Cat",
+   "qid": "Q934013",
+   "fame": 0.527,
+   "origin": "Alice's Adventures in Wonderland",
+   "description": "character from Alice's Adventures in Wonderland",
+   "hook": "is a grinning feline who fades away until only his smile remains",
+   "known": 0.6,
+   "kind": "film"
+  },
+  {
+   "label": "Donald Duck",
+   "qid": "Q6550",
+   "fame": 0.525,
+   "origin": "Disney cartoons",
+   "description": "Disney cartoon character",
+   "hook": "is a short-tempered, sailor-suited waterfowl whose rants are hard to understand",
+   "known": 0.95,
+   "kind": "disney"
+  },
+  {
+   "label": "Goofy",
+   "qid": "Q111135",
+   "fame": 0.524,
+   "origin": "Disney cartoons",
+   "description": "Disney cartoon character",
+   "hook": "is a tall, clumsy dog in a tall hat known for a 'gawrsh' and a signature yell",
+   "known": 0.8,
+   "kind": "disney"
+  },
+  {
+   "label": "Oswald the Lucky Rabbit",
+   "qid": "Q1419509",
+   "fame": 0.524,
+   "origin": "Walt Disney's early cartoons",
+   "description": "animated cartoon character",
+   "hook": null,
+   "known": 0.2,
+   "kind": "disney"
+  },
+  {
+   "label": "Felix the Cat",
+   "qid": "Q692603",
+   "fame": 0.523,
+   "origin": "Silent-era cartoons",
+   "description": "fictional cat from cartoons",
+   "hook": "is a black feline with a wide grin who paces with his hands behind his back",
+   "known": 0.4,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Eeyore",
+   "qid": "Q1799013",
+   "fame": 0.521,
+   "origin": "A. A. Milne's books",
+   "description": "character from Milne's Winnie-the-Pooh-books",
+   "hook": "is a gloomy gray donkey who keeps losing his tail",
+   "known": 0.8,
+   "kind": "book"
+  },
+  {
+   "label": "Droopy",
+   "qid": "Q1260264",
+   "fame": 0.515,
+   "origin": "Tex Avery cartoons",
+   "description": "Fictional dog",
+   "hook": "is a sad-faced basset hound who calmly beats his foes in a slow drawl",
+   "known": 0.4,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Kermit the Frog",
+   "qid": "Q1107971",
+   "fame": 0.513,
+   "origin": "The Muppets",
+   "description": "Muppet character",
+   "hook": "is the green puppet who hosts a variety show and sings about how hard it is to be green",
+   "known": 0.95,
+   "kind": "muppet"
+  },
+  {
+   "label": "Scooby-Doo",
+   "qid": "Q901323",
+   "fame": 0.511,
+   "origin": "Hanna-Barbera cartoons",
+   "description": "animated television character",
+   "hook": "is a cowardly Great Dane who solves mysteries with teen friends and snack bribes",
+   "known": 0.95,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Porky Pig",
+   "qid": "Q937186",
+   "fame": 0.508,
+   "origin": "Looney Tunes",
+   "description": "Warner Bros. cartoon character",
+   "hook": "is a stuttering pink porker who ends cartoons with 'That's all, folks!'",
+   "known": 0.8,
+   "kind": "looney tunes"
+  },
+  {
+   "label": "Sylvester",
+   "qid": "Q10990037",
+   "fame": 0.504,
+   "origin": "Looney Tunes",
+   "description": "fictional anthropomorphic cat in the Looney Tunes and Merrie Melodies series of cartoons",
+   "hook": "is a lisping black-and-white cat who forever chases a canary",
+   "known": 0.8,
+   "kind": "looney tunes"
+  },
+  {
+   "label": "Woody Woodpecker",
+   "qid": "Q741321",
+   "fame": 0.501,
+   "origin": "Walter Lantz cartoons",
+   "description": "fictional bird",
+   "hook": "is a red-crested bird famous for a manic, high-pitched laugh",
+   "known": 0.6,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Garfield",
+   "qid": "Q767120",
+   "fame": 0.484,
+   "origin": "Jim Davis comic strip",
+   "description": "fictional cartoon cat",
+   "hook": "is a lasagna-loving orange tabby who hates Mondays",
+   "known": 0.95,
+   "kind": "comic strip"
+  },
+  {
+   "label": "Yogi Bear",
+   "qid": "Q949916",
+   "fame": 0.484,
+   "origin": "Hanna-Barbera cartoons",
+   "description": "fictional character, bear",
+   "hook": "is a necktie-wearing picnic-basket thief living in Jellystone Park",
+   "known": 0.8,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Miss Piggy",
+   "qid": "Q2267970",
+   "fame": 0.48,
+   "origin": "The Muppets",
+   "description": "Muppet character",
+   "hook": "is a glamorous diva who karate-chops anyone in the way of her romance with a frog",
+   "known": 0.8,
+   "kind": "muppet"
+  },
+  {
+   "label": "Pink Panther",
+   "qid": "Q15012089",
+   "fame": 0.475,
+   "origin": "DePatie-Freleng cartoons",
+   "description": "fictional animated character",
+   "hook": "is a smooth, wordless, rose-colored cat who first appeared in a film's opening credits",
+   "known": 0.8,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Mighty Mouse",
+   "qid": "Q49677",
+   "fame": 0.467,
+   "origin": "Terrytoons",
+   "description": "American animated anthropomorphic superhero mouse",
+   "hook": "is a caped rodent who swoops in to 'save the day' with an operatic song",
+   "known": 0.4,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Simba",
+   "qid": "Q1649583",
+   "fame": 0.465,
+   "origin": "The Lion King",
+   "description": "protagonist of The Lion King",
+   "hook": "is a young prince who runs away to a carefree life with a meerkat and a warthog",
+   "known": 0.95,
+   "kind": "film"
+  },
+  {
+   "label": "Woodstock",
+   "qid": "Q246867",
+   "fame": 0.464,
+   "origin": "Peanuts",
+   "description": "fictional bird from \"Peanuts\"",
+   "hook": "is a tiny yellow bird whose chirps show up as scratchy little lines",
+   "known": 0.6,
+   "kind": "comic strip"
+  },
+  {
+   "label": "Scar",
+   "qid": "Q1977325",
+   "fame": 0.461,
+   "origin": "The Lion King",
+   "description": "fictional character and main antagonist from The Lion King",
+   "hook": "is a scheming uncle who betrays his brother and rules alongside a pack of hyenas",
+   "known": 0.95,
+   "kind": "film"
+  },
+  {
+   "label": "Peter Rabbit",
+   "qid": "Q1261586",
+   "fame": 0.46,
+   "origin": "Beatrix Potter's tales",
+   "description": "fictional character in children's books by Beatrix Potter",
+   "hook": "is a naughty bunny in a blue jacket who sneaks into Mr. McGregor's garden",
+   "known": 0.8,
+   "kind": "book"
+  },
+  {
+   "label": "Donkey",
+   "qid": "Q748427",
+   "fame": 0.459,
+   "origin": "Shrek",
+   "description": "Shrek character",
+   "hook": "is a talkative sidekick who sticks with an ogre and loves waffles",
+   "known": 0.8,
+   "kind": "film"
+  },
+  {
+   "label": "Tom Cat",
+   "qid": "Q1839152",
+   "fame": 0.459,
+   "origin": "Hanna-Barbera cartoons",
+   "description": "fictional cat from the Tom & Jerry animation series",
+   "hook": "is a gray feline whose schemes to catch a clever mouse always backfire",
+   "known": 0.95,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Lassie",
+   "qid": "Q941640",
+   "fame": 0.454,
+   "origin": "Eric Knight's story",
+   "description": "fictional female collie dog",
+   "hook": "is a loyal collie who rescues people and fetches help for her young owner",
+   "known": 0.8,
+   "kind": "tv"
+  },
+  {
+   "label": "Brian Griffin",
+   "qid": "Q908841",
+   "fame": 0.452,
+   "origin": "Family Guy",
+   "description": "fictional character from the Family Guy franchise",
+   "hook": "is a martini-drinking talking dog who writes novels and lives with a bumbling suburban household",
+   "known": 0.6,
+   "kind": "tv"
+  }
+ ]
+}

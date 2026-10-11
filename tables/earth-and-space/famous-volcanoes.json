@@ -1,0 +1,236 @@
+{
+ "id": "table.earth-and-space.famous-volcanoes",
+ "kind": "table",
+ "title": "Famous volcanoes and their countries",
+ "genre": "science-math-tech",
+ "category": "earth-and-space",
+ "topic": "geology",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel ?elevation WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) (SAMPLE(?e) AS ?elevation) WHERE { ?item wdt:P31/wdt:P279* wd:Q8072 ; wdt:P17 ?c . OPTIONAL { ?item p:P2044/psn:P2044/wikibase:quantityAmount ?e } } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T01:16:58.992Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T01:16:58.992Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "elevation_m",
+   "label": "Elevation",
+   "unit": "m",
+   "type": "number",
+   "scale": "height-m"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "volcano",
+  "many": "volcanoes",
+  "hookAsk": "Which volcano {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each volcano to its country.",
+    "odd": "Three of these volcanoes are in {value}. Which one isn't?",
+    "all": "Tap all {n} volcanoes in {value}."
+   },
+   "elevation_m": {
+    "role": "measure",
+    "display": "m"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Mount Kilimanjaro",
+   "qid": "Q7296",
+   "fame": 0.629,
+   "country": "Tanzania",
+   "elevation_m": 5895,
+   "description": "mountain massif in Kilimanjaro National Park in Tanzania",
+   "hook": "is the tallest free-standing mountain in Africa, with snowy caps near the equator",
+   "known": 0.6,
+   "kind": "iconic peak"
+  },
+  {
+   "label": "Mount St. Helens",
+   "qid": "Q4675",
+   "fame": 0.623,
+   "country": "United States",
+   "elevation_m": 2549,
+   "description": "volcano in Washington state",
+   "hook": "blew off its own summit in a huge blast that flattened forests",
+   "known": 0.6,
+   "kind": "active volcano"
+  },
+  {
+   "label": "Mount Vesuvius",
+   "qid": "Q524",
+   "fame": 0.617,
+   "country": "Italy",
+   "elevation_m": 1281,
+   "description": "active stratovolcano in the Gulf of Naples, Italy",
+   "hook": "buried the Roman town of Pompeii under ash and pumice",
+   "known": 0.8,
+   "kind": "active volcano"
+  },
+  {
+   "label": "Mount Fuji",
+   "qid": "Q39231",
+   "fame": 0.614,
+   "country": "Japan",
+   "elevation_m": 3777,
+   "description": "volcano in Yamanashi and Shizuoka Prefectures, Japan",
+   "hook": "is a snow-capped, near-perfect cone and the country's most iconic and sacred peak",
+   "known": 0.8,
+   "kind": "iconic peak"
+  },
+  {
+   "label": "Mount Rainier",
+   "qid": "Q194057",
+   "fame": 0.591,
+   "country": "United States",
+   "elevation_m": 4389,
+   "description": "stratovolcano in the U.S. state of Washington",
+   "hook": "is a heavily glaciated giant that looms over Seattle and Tacoma",
+   "known": 0.4,
+   "kind": "iconic peak"
+  },
+  {
+   "label": "Mount Etna",
+   "qid": "Q16990",
+   "fame": 0.582,
+   "country": "Italy",
+   "elevation_m": 3290,
+   "description": "active stratovolcano on the east coast of Sicily, Italy",
+   "hook": "is Europe's tallest active volcano and erupts so often it is watched constantly",
+   "known": 0.6,
+   "kind": "active volcano"
+  },
+  {
+   "label": "Mount Ararat",
+   "qid": "Q72303",
+   "fame": 0.572,
+   "country": "Turkey",
+   "elevation_m": 5137,
+   "description": "highest peak in Turkey",
+   "hook": "is the traditional resting place of Noah's Ark in Biblical tradition",
+   "known": 0.4,
+   "kind": "iconic peak"
+  },
+  {
+   "label": "Mauna Kea",
+   "qid": "Q131230",
+   "fame": 0.563,
+   "country": "United States",
+   "elevation_m": 4207,
+   "description": "Hawaiian volcano",
+   "hook": "is a dormant giant whose summit hosts a famous cluster of astronomical observatories",
+   "known": 0.4,
+   "kind": "iconic peak"
+  },
+  {
+   "label": "Yellowstone volcano",
+   "qid": "Q650836",
+   "fame": 0.536,
+   "country": "United States",
+   "elevation_m": 2805,
+   "description": "volcanic caldera in Yellowstone National Park in the United states",
+   "hook": "is a supervolcano whose caldera lies beneath geysers and hot springs like Old Faithful",
+   "known": 0.4,
+   "kind": "active volcano"
+  },
+  {
+   "label": "Tambora",
+   "qid": "Q168714",
+   "fame": 0.527,
+   "country": "Indonesia",
+   "elevation_m": 2850,
+   "description": "stratovolcano on the island of Sumbawa in Indonesia",
+   "hook": "produced the most powerful eruption in recorded history, causing a year without a summer",
+   "known": 0.4,
+   "kind": "active volcano"
+  },
+  {
+   "label": "Mauna Loa",
+   "qid": "Q159762",
+   "fame": 0.511,
+   "country": "United States",
+   "elevation_m": 4169,
+   "description": "volcano on the island of Hawaii in Hawaii, United States",
+   "hook": "is the largest active volcano on Earth by volume",
+   "known": 0.4,
+   "kind": "iconic peak"
+  },
+  {
+   "label": "Chimborazo",
+   "qid": "Q14081",
+   "fame": 0.496,
+   "country": "Ecuador",
+   "elevation_m": 6263,
+   "description": "volcano and highest mountain in Ecuador",
+   "hook": "has a summit that is the farthest point from Earth's centre, thanks to the equatorial bulge",
+   "known": 0.2,
+   "kind": "iconic peak"
+  },
+  {
+   "label": "Kīlauea",
+   "qid": "Q188698",
+   "fame": 0.491,
+   "country": "United States",
+   "elevation_m": 1247,
+   "description": "active volcano in Hawaii",
+   "hook": "has erupted almost continuously for decades and is home to the lava goddess Pele in legend",
+   "known": 0.4,
+   "kind": "active volcano"
+  },
+  {
+   "label": "Pinatubo",
+   "qid": "Q1451",
+   "fame": 0.486,
+   "country": "Philippines",
+   "elevation_m": 1486,
+   "description": "active stratovolcano on the island of Luzon in the Philippines",
+   "hook": "erupted in one of the twentieth century's largest blasts, cooling the global climate",
+   "known": 0.4,
+   "kind": "active volcano"
+  },
+  {
+   "label": "Teide",
+   "qid": "Q38954",
+   "fame": 0.483,
+   "country": "Spain",
+   "elevation_m": 3715,
+   "description": "volcano on Tenerife in the Canary Islands",
+   "hook": "is the tallest peak on Spanish soil and rises above a national park of lava fields",
+   "known": 0.2,
+   "kind": "iconic peak"
+  }
+ ]
+}

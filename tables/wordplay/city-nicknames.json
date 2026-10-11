@@ -1,0 +1,432 @@
+{
+ "id": "table.wordplay.city-nicknames",
+ "kind": "table",
+ "title": "Cities and their nicknames",
+ "genre": "general",
+ "category": "wordplay",
+ "topic": "nicknames",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?nick WHERE { { SELECT ?item (SAMPLE(?a) AS ?nick) (COUNT(DISTINCT ?a) AS ?n) WHERE { ?item wdt:P31/wdt:P279* wd:Q515 ; wdt:P1449 ?a ; wikibase:sitelinks ?sl . FILTER(?sl >= 30) FILTER(LANG(?a)=\"en\") FILTER(STRLEN(?a) <= 24) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?n <= 2) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T05:37:45.868Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T05:37:45.868Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "nickname",
+   "label": "City nickname",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "city",
+  "many": "cities",
+  "wildcard": "place",
+  "exclude": [
+   {
+    "qid": "Q3141",
+    "why": "Garden City is shared by many cities, not distinctive"
+   },
+   {
+    "qid": "Q3130",
+    "why": "Emerald City is better known as Seattle's"
+   },
+   {
+    "qid": "Q1524",
+    "why": "The Classic City points to Athens, Georgia as much as Greece"
+   },
+   {
+    "qid": "Q34804",
+    "why": "Burque is too local"
+   },
+   {
+    "qid": "Q16565",
+    "why": "Hornet's Nest is too obscure"
+   },
+   {
+    "qid": "Q37320",
+    "why": "The Land is too obscure"
+   },
+   {
+    "qid": "Q35775",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q79638",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q184587",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q28271",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q1513",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q42053",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q10086",
+    "why": "too obscure"
+   }
+  ],
+  "columns": {
+   "nickname": {
+    "role": "code",
+    "pick": "Which nickname goes with {label}?",
+    "statement": "{label} is nicknamed \"{value}\".",
+    "match": "Match each city to its nickname.",
+    "reverse": "Which city is nicknamed \"{value}\"?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "New York City",
+   "qid": "Q60",
+   "fame": 0.794,
+   "nickname": "Big Apple",
+   "description": "most populous city in the United States",
+   "hook": "is the most populous in its country, made up of five boroughs including Manhattan and Brooklyn",
+   "known": 0.95,
+   "kind": "us city"
+  },
+  {
+   "label": "Singapore",
+   "qid": "Q334",
+   "fame": 0.777,
+   "nickname": "Lion City",
+   "description": "sovereign island country and city-state in maritime Southeast Asia",
+   "hook": "is an island nation just north of the equator, off the southern tip of the Malay Peninsula",
+   "known": 0.8,
+   "kind": "asian city"
+  },
+  {
+   "label": "Macau",
+   "qid": "Q14773",
+   "fame": 0.673,
+   "nickname": "Las Vegas of the East",
+   "description": "city and special administrative region of China",
+   "hook": "lies west of Hong Kong across the Pearl River estuary and is the world's most densely populated region",
+   "known": 0.4,
+   "kind": "asian city"
+  },
+  {
+   "label": "Melbourne",
+   "qid": "Q3141",
+   "fame": 0.671,
+   "nickname": "the Garden City",
+   "description": "capital city of Victoria, Australia",
+   "hook": "is the capital of Victoria and the second-most populous in its country",
+   "known": 0.6,
+   "kind": "international city"
+  },
+  {
+   "label": "Shanghai",
+   "qid": "Q8686",
+   "fame": 0.66,
+   "nickname": "Pearl of the Orient",
+   "description": "provincial-level municipality in China",
+   "hook": "is its country's most populous, on the Yangtze estuary and split by the Huangpu River",
+   "known": 0.6,
+   "kind": "asian city"
+  },
+  {
+   "label": "Sydney",
+   "qid": "Q3130",
+   "fame": 0.657,
+   "nickname": "the Emerald City",
+   "description": "capital city of New South Wales, Australia",
+   "hook": "wraps around a famous harbour and is the largest in its country and the capital of New South Wales",
+   "known": 0.8,
+   "kind": "international city"
+  },
+  {
+   "label": "Edinburgh",
+   "qid": "Q23436",
+   "fame": 0.656,
+   "nickname": "Athens of the North",
+   "description": "capital city of Scotland, UK",
+   "hook": "is a capital between the Firth of Forth and the Pentland Hills",
+   "known": 0.6,
+   "kind": "european city"
+  },
+  {
+   "label": "Amsterdam",
+   "qid": "Q727",
+   "fame": 0.655,
+   "nickname": "Venice of the north",
+   "description": "capital and most populous city of the Netherlands",
+   "hook": "is the capital and largest in its country, home to nearly a million residents",
+   "known": 0.8,
+   "kind": "european city"
+  },
+  {
+   "label": "Baltimore",
+   "qid": "Q5092",
+   "fame": 0.653,
+   "nickname": "Charm City",
+   "description": "city in Maryland, United States",
+   "hook": "is the most populous in Maryland and anchors a metro area of nearly three million people",
+   "known": 0.4,
+   "kind": "us city"
+  },
+  {
+   "label": "Venice",
+   "qid": "Q641",
+   "fame": 0.653,
+   "nickname": "Bride of the Sea",
+   "description": "capital city of Veneto, Italy",
+   "hook": "is built across 126 islands separated by canals and linked by hundreds of bridges",
+   "known": 0.8,
+   "kind": "european city"
+  },
+  {
+   "label": "Las Vegas",
+   "qid": "Q23768",
+   "fame": 0.649,
+   "nickname": "Sin City",
+   "description": "seat of Clark County, and largest city in state of Nevada, United States",
+   "hook": "is a renowned resort known for gambling, entertainment and nightlife",
+   "known": 0.95,
+   "kind": "us city"
+  },
+  {
+   "label": "Miami",
+   "qid": "Q8652",
+   "fame": 0.648,
+   "nickname": "The Magic City",
+   "description": "city in Miami-Dade County, Florida, United States",
+   "hook": "sits on Florida's southeast coast and has the third-largest skyline in the US",
+   "known": 0.8,
+   "kind": "us city"
+  },
+  {
+   "label": "Athens",
+   "qid": "Q1524",
+   "fame": 0.643,
+   "nickname": "The Classic City",
+   "description": "capital and largest city of Greece",
+   "hook": "is the southernmost capital on the European mainland",
+   "known": 0.8,
+   "kind": "european city"
+  },
+  {
+   "label": "Houston",
+   "qid": "Q16555",
+   "fame": 0.643,
+   "nickname": "Space City",
+   "description": "seat of Harris County, and largest city in State of Texas, United States",
+   "hook": "is the most populous in Texas and the fourth-most populous in the US, near Galveston Bay",
+   "known": 0.6,
+   "kind": "us city"
+  },
+  {
+   "label": "Austin",
+   "qid": "Q16559",
+   "fame": 0.642,
+   "nickname": "City of the Violet Crown",
+   "description": "capital city of the U.S. state of Texas and seat of Travis County",
+   "hook": "is the capital of Texas and one of the fastest-growing large places in the US",
+   "known": 0.6,
+   "kind": "us city"
+  },
+  {
+   "label": "Dublin",
+   "qid": "Q1761",
+   "fame": 0.642,
+   "nickname": "The Fair City",
+   "description": "capital and largest city of Ireland",
+   "hook": "sits at the mouth of the River Liffey and is the largest on its island",
+   "known": 0.8,
+   "kind": "european city"
+  },
+  {
+   "label": "Bangkok",
+   "qid": "Q1861",
+   "fame": 0.636,
+   "nickname": "City of Angels",
+   "description": "capital of Thailand",
+   "hook": "is a megacity in the Chao Phraya River delta that dwarfs every other urban centre in its country",
+   "known": 0.8,
+   "kind": "asian city"
+  },
+  {
+   "label": "Albuquerque",
+   "qid": "Q34804",
+   "fame": 0.625,
+   "nickname": "Burque",
+   "description": "city and county seat of Bernalillo County, New Mexico, United States and the largest city in the state",
+   "hook": "began as an outpost on El Camino Real and was named for a Spanish duke",
+   "known": 0.4,
+   "kind": "us city"
+  },
+  {
+   "label": "Dallas",
+   "qid": "Q16557",
+   "fame": 0.625,
+   "nickname": "Big D",
+   "description": "city in the state of Texas, United States",
+   "hook": "anchors a metroplex with Fort Worth, the fourth-most populous metro area in the US",
+   "known": 0.8,
+   "kind": "us city"
+  },
+  {
+   "label": "Charlotte",
+   "qid": "Q16565",
+   "fame": 0.62,
+   "nickname": "Hornet's Nest",
+   "description": "city in and county seat of Mecklenburg County, North Carolina, United States",
+   "hook": "is the most populous in North Carolina and the second-most populous in the Southeast",
+   "known": 0.4,
+   "kind": "us city"
+  },
+  {
+   "label": "Lisbon",
+   "qid": "Q597",
+   "fame": 0.62,
+   "nickname": "Queen of the Sea",
+   "description": "municipality and capital city of Portugal",
+   "hook": "stands on the north shore of the River Tagus, near the westernmost point of mainland Europe",
+   "known": 0.6,
+   "kind": "european city"
+  },
+  {
+   "label": "Cleveland",
+   "qid": "Q37320",
+   "fame": 0.618,
+   "nickname": "The Land",
+   "description": "city in and county seat of Cuyahoga County, Ohio, United States",
+   "hook": "lies on the southern shore of Lake Erie and is the most populous on that lake",
+   "known": 0.6,
+   "kind": "us city"
+  },
+  {
+   "label": "Denver",
+   "qid": "Q16554",
+   "fame": 0.618,
+   "nickname": "Mile High City",
+   "description": "consolidated city-county and capital of the U.S. state of Colorado",
+   "hook": "is the capital of Colorado, just east of the Front Range of the Rocky Mountains",
+   "known": 0.6,
+   "kind": "us city"
+  },
+  {
+   "label": "Orlando",
+   "qid": "Q49233",
+   "fame": 0.617,
+   "nickname": "The City Beautiful",
+   "description": "city in and county seat of Orange County, Florida, United States",
+   "hook": "is the most populous inland urban area in Florida, in the central part of the state",
+   "known": 0.6,
+   "kind": "us city"
+  },
+  {
+   "label": "Bucharest",
+   "qid": "Q19660",
+   "fame": 0.588,
+   "nickname": "Paris of the Balkans",
+   "description": "capital and largest city of Romania",
+   "hook": "is a capital on the Dâmbovița River and one of the largest in Europe",
+   "known": 0.4,
+   "kind": "european city"
+  },
+  {
+   "label": "Boise",
+   "qid": "Q35775",
+   "fame": 0.563,
+   "nickname": "City of Trees",
+   "description": "capital city of the U.S. state of Idaho and seat of Ada County",
+   "hook": null,
+   "known": 0.2,
+   "kind": "us city"
+  },
+  {
+   "label": "Fairbanks",
+   "qid": "Q79638",
+   "fame": 0.55,
+   "nickname": "The Golden Heart City",
+   "description": "city in Alaska, USA",
+   "hook": null,
+   "known": 0.2,
+   "kind": "us city"
+  },
+  {
+   "label": "Grand Rapids",
+   "qid": "Q184587",
+   "fame": 0.539,
+   "nickname": "Furniture City",
+   "description": "city in and seat of Kent County, Michigan, United States",
+   "hook": null,
+   "known": 0.2,
+   "kind": "us city"
+  },
+  {
+   "label": "Annapolis",
+   "qid": "Q28271",
+   "fame": 0.515,
+   "nickname": "Crabtown on the Bay",
+   "description": "capital city of the U.S. state of Maryland and seat of Anne Arundel County",
+   "hook": null,
+   "known": 0.2,
+   "kind": "us city"
+  },
+  {
+   "label": "Nagpur",
+   "qid": "Q1513",
+   "fame": 0.497,
+   "nickname": "Orange City",
+   "description": "city in Maharashtra, India",
+   "hook": null,
+   "known": 0.2,
+   "kind": "asian city"
+  },
+  {
+   "label": "Isfahan",
+   "qid": "Q42053",
+   "fame": 0.49,
+   "nickname": "Manchester of Persia",
+   "description": "city in Isfahan Province, Iran",
+   "hook": null,
+   "known": 0.2,
+   "kind": "asian city"
+  },
+  {
+   "label": "Mysore",
+   "qid": "Q10086",
+   "fame": 0.484,
+   "nickname": "City of Palaces",
+   "description": "city in Karnataka, India",
+   "hook": null,
+   "known": 0.2,
+   "kind": "asian city"
+  }
+ ]
+}

@@ -1,0 +1,261 @@
+{
+ "id": "table.religion.holy-books",
+ "kind": "table",
+ "title": "Holy books",
+ "genre": "society",
+ "category": "religion",
+ "topic": "world-religions",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?religionLabel WHERE { VALUES (?item ?religionLabel) { (wd:Q428 \"Islam\") (wd:Q1845 \"Christianity\") (wd:Q203249 \"Sikhism\") (wd:Q34990 \"Judaism\") (wd:Q43290 \"Judaism\") (wd:Q83367 \"Judaism\") (wd:Q39950 \"Hinduism\") (wd:Q46802 \"Hinduism\") (wd:Q459842 \"Mormonism\") (wd:Q6113985 \"Hinduism\") (wd:Q748878 \"Buddhism\") (wd:Q134425 \"Taoism\") (wd:Q727413 \"Hinduism\") (wd:Q861212 \"Buddhism\") (wd:Q494235 \"Buddhism\") (wd:Q622868 \"Buddhism\") (wd:Q215685 \"Buddhism\") (wd:Q188602 \"Hinduism\") (wd:Q191825 \"Judaism\") (wd:Q18813 \"Christianity\") (wd:Q19786 \"Christianity\") (wd:Q42040 \"Christianity\") (wd:Q234343 \"Islam\") (wd:Q8276 \"Hinduism\") (wd:Q37293 \"Hinduism\") (wd:Q181937 \"Taoism\") (wd:Q276015 \"Confucianism\") (wd:Q813031 \"Shinto\") (wd:Q813935 \"Shinto\") (wd:Q2413657 \"Sikhism\") (wd:Q220890 \"Christianity\") (wd:Q29334 \"Judaism\") (wd:Q462463 \"Mormonism\") (wd:Q459864 \"Mormonism\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T04:11:08.070Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T04:11:08.070Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "religion",
+   "label": "Religion",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "holy book",
+  "many": "holy books",
+  "hookAsk": "Which holy book {hook}?",
+  "hookStatement": "",
+  "columns": {
+   "religion": {
+    "role": "link",
+    "pick": "Which faith treats {label} as a sacred text?",
+    "statement": "{label} is a sacred text of {value}.",
+    "match": "Match each sacred text to its faith.",
+    "odd": "Three of these are sacred texts of {value}. Which one isn't?",
+    "all": "Tap all {n} sacred texts of {value}.",
+    "reverse": "Which of these is a sacred text of {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Ramayana",
+   "qid": "Q37293",
+   "fame": 0.634,
+   "religion": "Hinduism",
+   "description": "An ancient Hindu epic composed by Valmiki which narrates the life story of Lord Rama.",
+   "hook": "tells of a prince's exile, his kidnapped wife, and a rescue aided by an army of monkey warriors",
+   "known": 0.6,
+   "kind": "hindu text"
+  },
+  {
+   "label": "Qur’an",
+   "qid": "Q428",
+   "fame": 0.628,
+   "religion": "Islam",
+   "description": "foundational Islamic religious text",
+   "hook": "is divided into 114 chapters and is revered as a direct revelation to the Prophet Muhammad",
+   "known": 0.95,
+   "kind": "major scripture"
+  },
+  {
+   "label": "Bhagavad Gita",
+   "qid": "Q46802",
+   "fame": 0.622,
+   "religion": "Hinduism",
+   "description": "primary holy scripture for Hinduism",
+   "hook": "records a battlefield conversation between the warrior Arjuna and his charioteer Krishna",
+   "known": 0.6,
+   "kind": "hindu text"
+  },
+  {
+   "label": "Bible",
+   "qid": "Q1845",
+   "fame": 0.621,
+   "religion": "Christianity",
+   "description": "collection of sacred books in Judaism and Christianity",
+   "hook": "is the best-selling book of all time, a library of ancient scriptures in two main parts",
+   "known": 0.95,
+   "kind": "major scripture"
+  },
+  {
+   "label": "Mahabharata",
+   "qid": "Q8276",
+   "fame": 0.619,
+   "religion": "Hinduism",
+   "description": "ancient Sanskrit epic by Vyasa",
+   "hook": "is one of the longest epic poems ever written, built around a great war between two families of cousins",
+   "known": 0.6,
+   "kind": "hindu text"
+  },
+  {
+   "label": "Book of Revelation",
+   "qid": "Q42040",
+   "fame": 0.609,
+   "religion": "Christianity",
+   "description": "final book of the New Testament",
+   "hook": "closes the Bible with visions of seven-headed beasts, horsemen and the end of the world",
+   "known": 0.6,
+   "kind": "christian text"
+  },
+  {
+   "label": "Talmud",
+   "qid": "Q43290",
+   "fame": 0.608,
+   "religion": "Judaism",
+   "description": "central text of Rabbinic Judaism",
+   "hook": "gathers centuries of rabbis' debates and commentary on law, ethics and daily life",
+   "known": 0.6,
+   "kind": "jewish text"
+  },
+  {
+   "label": "Torah",
+   "qid": "Q34990",
+   "fame": 0.595,
+   "religion": "Judaism",
+   "description": "first five books of the Hebrew Bible",
+   "hook": "holds the five books from Genesis to Deuteronomy, traditionally credited to Moses",
+   "known": 0.95,
+   "kind": "major scripture"
+  },
+  {
+   "label": "Vedas",
+   "qid": "Q39950",
+   "fame": 0.571,
+   "religion": "Hinduism",
+   "description": "ancient sacred scriptures revealed in Sanskrit to Richi sages and on which Brahmanism, Hinduism, Buddhism and Jainism were based",
+   "hook": "are the oldest scriptures of ancient India, made up of four great collections",
+   "known": 0.8,
+   "kind": "major scripture"
+  },
+  {
+   "label": "Old Testament",
+   "qid": "Q19786",
+   "fame": 0.568,
+   "religion": "Christianity",
+   "description": "first division of the Christian biblical canon",
+   "hook": "is the part of the Bible that opens with Genesis and tells of Adam, Noah and Moses",
+   "known": 0.95,
+   "kind": "christian text"
+  },
+  {
+   "label": "New Testament",
+   "qid": "Q18813",
+   "fame": 0.56,
+   "religion": "Christianity",
+   "description": "second division of the Christian biblical canon",
+   "hook": "is the part of the Bible with four gospels about the life of Jesus and letters from Paul",
+   "known": 0.95,
+   "kind": "christian text"
+  },
+  {
+   "label": "Tao Te Ching",
+   "qid": "Q134425",
+   "fame": 0.549,
+   "religion": "Taoism",
+   "description": "Chinese classic text",
+   "hook": "is a short ancient book of poetic verses on living in harmony with the Way, credited to Laozi",
+   "known": 0.6,
+   "kind": "east asian classic"
+  },
+  {
+   "label": "Book of Mormon",
+   "qid": "Q459842",
+   "fame": 0.546,
+   "religion": "Mormonism",
+   "description": "sacred text of the Latter Day Saint movement",
+   "hook": "is said to be translated from golden plates by its founding prophet Joseph Smith",
+   "known": 0.4,
+   "kind": "modern scripture"
+  },
+  {
+   "label": "Rigveda",
+   "qid": "Q727413",
+   "fame": 0.542,
+   "religion": "Hinduism",
+   "description": "most ancient Veda of the Hindus",
+   "hook": "is a collection of ancient Sanskrit hymns praising gods such as Agni and Indra",
+   "known": 0.4,
+   "kind": "hindu text"
+  },
+  {
+   "label": "Upanishads",
+   "qid": "Q6113985",
+   "fame": 0.525,
+   "religion": "Hinduism",
+   "description": "ancient Sanskrit religious and philosophical texts of Hinduism",
+   "hook": "are ancient Sanskrit texts exploring meditation, consciousness and the nature of the self",
+   "known": 0.4,
+   "kind": "hindu text"
+  },
+  {
+   "label": "Guru Granth Sahib",
+   "qid": "Q203249",
+   "fame": 0.521,
+   "religion": "Sikhism",
+   "description": "The primary holy scripture of Sikhism",
+   "hook": "is revered as the final eternal guide and is kept in houses of worship called gurdwaras",
+   "known": 0.6,
+   "kind": "major scripture"
+  },
+  {
+   "label": "hadith",
+   "qid": "Q234343",
+   "fame": 0.52,
+   "religion": "Islam",
+   "description": "collections of sayings and teachings of Muhammad (and Ahl al-Bayt for Shia Muslims)",
+   "hook": "records the sayings and actions of the Prophet Muhammad, gathered by scholars like Bukhari",
+   "known": 0.4,
+   "kind": "islamic text"
+  },
+  {
+   "label": "Lotus Sutra",
+   "qid": "Q861212",
+   "fame": 0.461,
+   "religion": "Buddhism",
+   "description": "Mahayana sutra",
+   "hook": "uses parables such as a burning house to teach that everyone can reach enlightenment",
+   "known": 0.4,
+   "kind": "buddhist scripture"
+  },
+  {
+   "label": "Mishnah",
+   "qid": "Q191825",
+   "fame": 0.461,
+   "religion": "Judaism",
+   "description": "first major written collection of the Oral Torah",
+   "hook": "set down oral law in six orders, compiled by Judah the Prince",
+   "known": 0.4,
+   "kind": "jewish text"
+  },
+  {
+   "label": "Purana",
+   "qid": "Q188602",
+   "fame": 0.459,
+   "religion": "Hinduism",
+   "description": "Hindu scriptures",
+   "hook": "are vast collections of ancient legends about gods, creation and the history of the world",
+   "known": 0.4,
+   "kind": "hindu text"
+  }
+ ]
+}

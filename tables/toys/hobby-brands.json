@@ -1,0 +1,180 @@
+{
+ "id": "table.toys.hobby-brands",
+ "kind": "table",
+ "title": "Hobby brands and where they come from",
+ "genre": "games-sports",
+ "category": "toys",
+ "topic": "hobbies",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) WHERE { VALUES ?item { wd:Q164484 wd:Q408697 wd:Q1545421 wd:Q587270 wd:Q1988550 wd:Q9022829 wd:Q2050571 wd:Q5185100 wd:Q1330508 wd:Q455476 wd:Q8025993 wd:Q1139197 wd:Q1135204 wd:Q910541 wd:Q15085475 wd:Q1683328 wd:Q1183277 wd:Q1063455 wd:Q697136 wd:Q5509271 wd:Q507269 wd:Q585537 wd:Q1050690 wd:Q17155304 wd:Q501476 wd:Q596139 wd:Q160719 wd:Q151137 wd:Q1420671 wd:Q702845 wd:Q2605180 wd:Q7577375 wd:Q539548 wd:Q1156046 wd:Q1891883 wd:Q2547874 wd:Q207302 wd:Q1375 wd:Q209026 wd:Q1346099 } { ?item wdt:P495 ?c } UNION { ?item wdt:P17 ?c } } GROUP BY ?item HAVING(COUNT(DISTINCT ?c) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . ?country rdfs:label ?countryLabel . FILTER(LANG(?countryLabel) = \"en\") ?item rdfs:label ?itemLabel . FILTER(LANG(?itemLabel) IN (\"en\",\"mul\")) } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T02:35:54.543Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T02:35:54.543Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "hobby brand",
+  "many": "hobby brands",
+  "hookAsk": "Which hobby brand {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} from?",
+    "statement": "{label} is from {value}.",
+    "match": "Match each hobby brand to its country.",
+    "odd": "Three of these hobby brands are from {value}. Which one isn't?",
+    "all": "Tap all {n} hobby brands from {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Dungeons & Dragons",
+   "qid": "Q1375",
+   "fame": 0.617,
+   "country": "United States",
+   "description": "first fantasy tabletop role-playing game",
+   "hook": "pioneered tabletop role-playing, where players roll a twenty-sided die while a game master narrates",
+   "known": 0.7,
+   "kind": "game brand"
+  },
+  {
+   "label": "Magic: The Gathering",
+   "qid": "Q207302",
+   "fame": 0.581,
+   "country": "United States",
+   "description": "1993 collectible card game",
+   "hook": "is a trading card game where players duel as powerful planeswalkers casting spells from a deck",
+   "known": 0.6,
+   "kind": "game brand"
+  },
+  {
+   "label": "Hasbro",
+   "qid": "Q501476",
+   "fame": 0.568,
+   "country": "United States",
+   "description": "American multinational toy and entertainment company",
+   "hook": "makes Monopoly, Transformers and Nerf blasters",
+   "known": 0.6,
+   "kind": "company"
+  },
+  {
+   "label": "Mattel",
+   "qid": "Q596139",
+   "fame": 0.556,
+   "country": "United States",
+   "description": "American multinational toy and entertainment company",
+   "hook": "makes Barbie dolls, the Uno card game and Fisher-Price baby toys",
+   "known": 0.7,
+   "kind": "company"
+  },
+  {
+   "label": "The Pokémon Company",
+   "qid": "Q1156046",
+   "fame": 0.519,
+   "country": "Japan",
+   "description": "Japanese brand management, production, and marketing company responsible for marketing and licensing the Pokémon franchise",
+   "hook": "manages the franchise starring Pikachu, a yellow electric mouse, and its cards and games",
+   "known": 0.65,
+   "kind": "company"
+  },
+  {
+   "label": "Wizards of the Coast",
+   "qid": "Q1135204",
+   "fame": 0.516,
+   "country": "United States",
+   "description": "American publisher of games",
+   "hook": "publishes a famous planeswalker card game and the world's best-known fantasy role-playing game",
+   "known": 0.3,
+   "kind": "company"
+  },
+  {
+   "label": "The Lego Group",
+   "qid": "Q1063455",
+   "fame": 0.5,
+   "country": "Denmark",
+   "description": "Danish toy manufacturer best known for interlocking-brick construction toys",
+   "hook": "makes colorful plastic bricks that snap together, plus movies and theme parks",
+   "known": 0.85,
+   "kind": "company"
+  },
+  {
+   "label": "Hot Wheels",
+   "qid": "Q585537",
+   "fame": 0.498,
+   "country": "United States",
+   "description": "brand of scale model cars",
+   "hook": "makes tiny die-cast cars that race down orange plastic tracks with loops",
+   "known": 0.75,
+   "kind": "toy brand"
+  },
+  {
+   "label": "Games Workshop",
+   "qid": "Q587270",
+   "fame": 0.493,
+   "country": "United Kingdom",
+   "description": "British maker of miniature wargames",
+   "hook": "makes painted-miniature tabletop battles set in a grim far future, like Warhammer 40,000",
+   "known": 0.25,
+   "kind": "company"
+  },
+  {
+   "label": "Singer Corporation",
+   "qid": "Q1330508",
+   "fame": 0.462,
+   "country": "United States",
+   "description": "American manufacturer of sewing machines and Consumer Electronics",
+   "hook": "is a household name for machines that stitch fabric together at home",
+   "known": 0.05,
+   "kind": "company"
+  },
+  {
+   "label": "Bandai",
+   "qid": "Q507269",
+   "fame": 0.458,
+   "country": "Japan",
+   "description": "Japanese toy making and video game company",
+   "hook": "makes Gundam model kits and Tamagotchi virtual pets",
+   "known": 0.4,
+   "kind": "company"
+  },
+  {
+   "label": "Play-Doh",
+   "qid": "Q1346099",
+   "fame": 0.458,
+   "country": "United States",
+   "description": "modeling compound used by young children for art and craft projects",
+   "hook": "is a soft, colorful dough sold in little tubs for kids to squish and mold",
+   "known": 0.9,
+   "kind": "toy brand"
+  }
+ ]
+}

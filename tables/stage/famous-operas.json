@@ -1,0 +1,210 @@
+{
+ "id": "table.stage.famous-operas",
+ "kind": "table",
+ "title": "Famous operas and their composers",
+ "genre": "arts-entertainment",
+ "category": "stage",
+ "topic": "opera",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?composerLabel ?premiereLabel WHERE { { ?item wdt:P31/wdt:P279* wd:Q1344 } UNION { ?item wdt:P136 wd:Q1344 } ?item wdt:P86 ?composer . OPTIONAL { ?item wdt:P4647 ?premiere . } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T14:02:29.672Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T14:02:29.672Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "composer",
+   "label": "Composer",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "premiere",
+   "label": "Premiere theatre",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "opera",
+  "many": "operas",
+  "hookAsk": "Which opera {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "composer": {
+    "role": "link",
+    "pick": "Who composed {label}?",
+    "statement": "{label} was composed by {value}.",
+    "match": "Match each opera to its composer.",
+    "odd": "Three of these operas were composed by {value}. Which one wasn't?",
+    "all": "Tap all {n} operas composed by {value}.",
+    "reverse": "Which of these operas did {value} compose?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Carmen",
+   "qid": "Q185968",
+   "fame": 0.549,
+   "composer": "Georges Bizet",
+   "premiere": "Opéra-Comique",
+   "description": "opera in four acts by French composer Georges Bizet",
+   "hook": "centers on a fiery cigarette factory worker who seduces a soldier and features the Toreador Song",
+   "known": 0.95,
+   "kind": "bizet"
+  },
+  {
+   "label": "Turandot",
+   "qid": "Q207990",
+   "fame": 0.542,
+   "composer": "Giacomo Puccini",
+   "premiere": "La Scala",
+   "description": "opera by Giacomo Puccini",
+   "hook": "features a cold princess who sets deadly riddles for her suitors and the aria Nessun dorma",
+   "known": 0.8,
+   "kind": "puccini"
+  },
+  {
+   "label": "The Marriage of Figaro",
+   "qid": "Q201873",
+   "fame": 0.538,
+   "composer": "Wolfgang Amadeus Mozart",
+   "premiere": "Burgtheater",
+   "description": "opera by Wolfgang Amadeus Mozart",
+   "hook": "follows a clever servant and his fiancée outwitting a philandering count on their wedding day",
+   "known": 0.8,
+   "kind": "mozart"
+  },
+  {
+   "label": "Don Giovanni",
+   "qid": "Q192039",
+   "fame": 0.53,
+   "composer": "Wolfgang Amadeus Mozart",
+   "premiere": "Estates Theatre",
+   "description": "opera by Wolfgang Amadeus Mozart",
+   "hook": "follows a seductive nobleman dragged to hell by the statue of a man he killed",
+   "known": 0.8,
+   "kind": "mozart"
+  },
+  {
+   "label": "La bohème",
+   "qid": "Q188621",
+   "fame": 0.526,
+   "composer": "Giacomo Puccini",
+   "premiere": "Teatro Regio",
+   "description": "1896 opera by Giacomo Puccini",
+   "hook": "follows poor young artists in Paris and a frail seamstress whose candle blows out",
+   "known": 0.8,
+   "kind": "puccini"
+  },
+  {
+   "label": "La traviata",
+   "qid": "Q186162",
+   "fame": 0.524,
+   "composer": "Giuseppe Verdi",
+   "premiere": "Teatro La Fenice",
+   "description": "opera by Giuseppe Verdi",
+   "hook": "tells of a doomed Parisian courtesan who falls in love and dies of consumption",
+   "known": 0.8,
+   "kind": "verdi"
+  },
+  {
+   "label": "The Magic Flute",
+   "qid": "Q5064",
+   "fame": 0.522,
+   "composer": "Wolfgang Amadeus Mozart",
+   "premiere": "Theater auf der Wieden",
+   "description": "1791 opera by Wolfgang Amadeus Mozart",
+   "hook": "follows a prince and a bird-catcher on a quest, and includes the vengeful Queen of the Night",
+   "known": 0.8,
+   "kind": "mozart"
+  },
+  {
+   "label": "Madama Butterfly",
+   "qid": "Q19005",
+   "fame": 0.52,
+   "composer": "Giacomo Puccini",
+   "premiere": "La Scala",
+   "description": "opera by Giacomo Puccini",
+   "hook": "tells of a young geisha in Nagasaki abandoned by an American naval officer",
+   "known": 0.6,
+   "kind": "puccini"
+  },
+  {
+   "label": "The Barber of Seville",
+   "qid": "Q208659",
+   "fame": 0.508,
+   "composer": "Gioachino Rossini",
+   "premiere": "Teatro Argentina",
+   "description": "1816 opera by Gioachino Rossini",
+   "hook": "opens with a fast-talking Figaro who helps a count win a closely guarded young woman",
+   "known": 0.8,
+   "kind": "rossini"
+  },
+  {
+   "label": "Tosca",
+   "qid": "Q192941",
+   "fame": 0.493,
+   "composer": "Giacomo Puccini",
+   "premiere": "Teatro dell'Opera di Roma",
+   "description": "opera in three acts, composed by Giacomo Puccini",
+   "hook": "tells of a jealous singer, her painter lover and a ruthless police chief",
+   "known": 0.8,
+   "kind": "puccini"
+  },
+  {
+   "label": "Aida",
+   "qid": "Q171277",
+   "fame": 0.492,
+   "composer": "Giuseppe Verdi",
+   "premiere": "Egyptian Royal Opera House",
+   "description": "opera in four acts by Giuseppe Verdi",
+   "hook": "tells of an enslaved Ethiopian princess torn between a warrior she loves and her homeland",
+   "known": 0.8,
+   "kind": "verdi"
+  },
+  {
+   "label": "Götterdämmerung",
+   "qid": "Q272029",
+   "fame": 0.481,
+   "composer": "Richard Wagner",
+   "premiere": "Bayreuth Festival Theatre",
+   "description": "opera by Richard Wagner",
+   "hook": "ends the four-part Ring cycle with the fall of the gods and a burning funeral pyre",
+   "known": 0.6,
+   "kind": "wagner"
+  },
+  {
+   "label": "Tristan und Isolde",
+   "qid": "Q1324254",
+   "fame": 0.46,
+   "composer": "Richard Wagner",
+   "premiere": "National Theatre Munich",
+   "description": "opera by Richard Wagner",
+   "hook": "tells of doomed lovers bound by a love potion and ends with the famous Liebestod",
+   "known": 0.6,
+   "kind": "wagner"
+  }
+ ]
+}

@@ -1,0 +1,1391 @@
+{
+ "id": "table.film-and-tv.streaming-shows-creators",
+ "kind": "table",
+ "title": "Streaming original series and their creator",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "streaming-shows",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?cLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?c) WHERE { VALUES ?n { wd:Q907311 wd:Q1630304 wd:Q54958752 wd:Q62446736 wd:Q4740856 wd:Q65359104 wd:Q27903045 } ?item wdt:P449 ?n . ?item wikibase:sitelinks ?sl . FILTER(?sl >= 10) ?item wdt:P31 wd:Q5398426 . ?item wdt:P170 ?c } GROUP BY ?item HAVING(COUNT(DISTINCT ?c) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-01T04:21:11.713Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-01T04:21:11.713Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "creator",
+   "label": "Creator",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "streaming series",
+  "many": "streaming series",
+  "hookAsk": "Which streaming series {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "creator": {
+    "role": "link",
+    "pick": "Who created the streaming series {label}?",
+    "statement": "{label} was created by {value}.",
+    "match": "Match each streaming series to its creator.",
+    "odd": "Three of these streaming series were created by {value}. Which one wasn't?",
+    "all": "Tap all {n} streaming series created by {value}.",
+    "reverse": "Which of these streaming series did {value} create?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The Gentlemen",
+   "qid": "Q115860329",
+   "fame": 0.949,
+   "creator": "Guy Ritchie",
+   "description": "2024 American British TV series",
+   "hook": "follows an heir who inherits a duke's estate and finds a huge cannabis empire hidden on it",
+   "known": 0.3,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "Silo",
+   "qid": "Q108456738",
+   "fame": 0.885,
+   "creator": "Graham Yost",
+   "description": "science fiction television series",
+   "hook": "is set in a huge underground bunker whose residents are told the air outside is deadly",
+   "known": 0.4,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "MobLand",
+   "qid": "Q131324617",
+   "fame": 0.842,
+   "creator": "Ronan Bennett",
+   "description": "British television series",
+   "hook": "follows a fixer trying to stop a feud between two London crime families from boiling over",
+   "known": 0.2,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "Dark Matter",
+   "qid": "Q114554430",
+   "fame": 0.791,
+   "creator": "Blake Crouch",
+   "description": "2024 American television series",
+   "hook": "follows a physicist who is abducted and wakes up in an alternate version of his own life",
+   "known": 0.3,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Pluribus",
+   "qid": "Q122155720",
+   "fame": 0.786,
+   "creator": "Vince Gilligan",
+   "description": "2025 television series created by Vince Gilligan",
+   "hook": "stars Rhea Seehorn as one of the few people immune to a virus that turns humanity into a blissful hive mind",
+   "known": 0.05,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "The Pitt",
+   "qid": "Q131431817",
+   "fame": 0.784,
+   "creator": "R. Scott Gemmill",
+   "description": "2025 medical drama TV series",
+   "hook": "follows one 15-hour emergency room shift at a hospital, with each episode covering a single hour",
+   "known": 0.05,
+   "kind": "medical-drama"
+  },
+  {
+   "label": "Mirzapur",
+   "qid": "Q58815840",
+   "fame": 0.756,
+   "creator": "Karan Anshuman",
+   "description": "Indian web series",
+   "hook": null,
+   "known": 0.6,
+   "kind": "international-crime"
+  },
+  {
+   "label": "Paradise",
+   "qid": "Q126126253",
+   "fame": 0.752,
+   "creator": "Dan Fogelman",
+   "description": "2025 American television series",
+   "hook": "is a thriller about a bodyguard investigating a president's death inside a seemingly perfect community",
+   "known": 0.05,
+   "kind": "thriller"
+  },
+  {
+   "label": "Severance",
+   "qid": "Q101096725",
+   "fame": 0.749,
+   "creator": "Dan Erickson",
+   "description": "American television series (2022–)",
+   "hook": "follows office workers whose memories are surgically split between their jobs and their personal lives",
+   "known": 0.8,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "The Diplomat",
+   "qid": "Q117425241",
+   "fame": 0.728,
+   "creator": "Debora Cahn",
+   "description": "American television series created by Debora Cahn",
+   "hook": "stars Keri Russell as a career envoy thrust into a high-stakes posting in London",
+   "known": 0.4,
+   "kind": "political-drama"
+  },
+  {
+   "label": "The Handmaid's Tale",
+   "qid": "Q25207350",
+   "fame": 0.711,
+   "creator": "Bruce Miller",
+   "description": "American web television series",
+   "hook": "is a dystopian drama in which women in red cloaks live under a totalitarian regime",
+   "known": 0.9,
+   "kind": "dystopian-drama"
+  },
+  {
+   "label": "For All Mankind",
+   "qid": "Q54958409",
+   "fame": 0.703,
+   "creator": "Ronald D. Moore",
+   "description": "2019 American science fiction series",
+   "hook": "imagines an alternate history where the space race never ended after Russia reached the Moon first",
+   "known": 0.4,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Your Friends and Neighbors",
+   "qid": "Q125388657",
+   "fame": 0.684,
+   "creator": "Jonathan Tropper",
+   "description": "American television series",
+   "hook": "stars Jon Hamm as a fired finance executive who starts stealing from the homes of his rich suburban community",
+   "known": 0.05,
+   "kind": "comedy-drama"
+  },
+  {
+   "label": "Foundation",
+   "qid": "Q56281007",
+   "fame": 0.683,
+   "creator": "David S. Goyer",
+   "description": "2021 American television series",
+   "hook": "adapts Isaac Asimov's sci-fi saga about a mathematician who predicts the fall of a galactic empire",
+   "known": 0.5,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Black Mirror",
+   "qid": "Q558112",
+   "fame": 0.682,
+   "creator": "Charlie Brooker",
+   "description": "British television series",
+   "hook": "is an anthology of standalone stories about the dark side of technology",
+   "known": 0.85,
+   "kind": "sci-fi-anthology"
+  },
+  {
+   "label": "Tulsa King",
+   "qid": "Q111967146",
+   "fame": 0.682,
+   "creator": "Taylor Sheridan",
+   "description": "American crime drama television series",
+   "hook": "stars Sylvester Stallone as a mafia boss freed from prison and sent to build a new crew in Oklahoma",
+   "known": 0.6,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "1923",
+   "qid": "Q112862420",
+   "fame": 0.681,
+   "creator": "Taylor Sheridan",
+   "description": "American Western drama television series",
+   "hook": "is a Yellowstone prequel starring Harrison Ford and Helen Mirren as ranching patriarchs in Montana",
+   "known": 0.5,
+   "kind": "western-drama"
+  },
+  {
+   "label": "The Crown",
+   "qid": "Q20707362",
+   "fame": 0.677,
+   "creator": "Peter Morgan",
+   "description": "British–American television drama series",
+   "hook": "dramatizes the long reign of Queen Elizabeth II and the royal family around her",
+   "known": 0.9,
+   "kind": "historical-drama"
+  },
+  {
+   "label": "The Madison",
+   "qid": "Q131461120",
+   "fame": 0.677,
+   "creator": "Taylor Sheridan",
+   "description": "Upcoming television series",
+   "hook": null,
+   "known": 0.05,
+   "kind": "western-drama"
+  },
+  {
+   "label": "Bridgerton",
+   "qid": "Q85748936",
+   "fame": 0.675,
+   "creator": "Chris Van Dusen",
+   "description": "American television series",
+   "hook": "is a lavish Regency-era romance narrated by a mysterious gossip columnist, Lady Whistledown",
+   "known": 0.8,
+   "kind": "period-romance"
+  },
+  {
+   "label": "Mindhunter",
+   "qid": "Q25340152",
+   "fame": 0.671,
+   "creator": "Joe Penhall",
+   "description": "2017–2019 American television series",
+   "hook": "follows FBI agents who interview imprisoned serial killers to pioneer criminal profiling",
+   "known": 0.6,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "The Lincoln Lawyer",
+   "qid": "Q106536181",
+   "fame": 0.671,
+   "creator": "David E. Kelley",
+   "description": "American legal drama streaming television series",
+   "hook": "stars Manuel Garcia-Rulfo as a defense attorney who works from the back seat of a luxury car",
+   "known": 0.5,
+   "kind": "legal-drama"
+  },
+  {
+   "label": "The Witcher",
+   "qid": "Q47500433",
+   "fame": 0.67,
+   "creator": "Lauren Schmidt Hissrich",
+   "description": "2019 fantasy drama television series",
+   "hook": "follows a white-haired monster hunter, Geralt of Rivia, and a young princess with a mysterious destiny",
+   "known": 0.75,
+   "kind": "fantasy"
+  },
+  {
+   "label": "The Mandalorian",
+   "qid": "Q56876444",
+   "fame": 0.669,
+   "creator": "Jon Favreau",
+   "description": "American space opera streaming television series from 2019",
+   "hook": "follows a helmeted bounty hunter who protects a tiny green child of Yoda's species",
+   "known": 0.8,
+   "kind": "star-wars"
+  },
+  {
+   "label": "Andor",
+   "qid": "Q60462338",
+   "fame": 0.668,
+   "creator": "Tony Gilroy",
+   "description": "2022–2025 Star Wars television series",
+   "hook": "follows a thief turned rebel spy in the years before Rogue One",
+   "known": 0.6,
+   "kind": "star-wars"
+  },
+  {
+   "label": "Ozark",
+   "qid": "Q25205293",
+   "fame": 0.664,
+   "creator": "Bill Dubuque",
+   "description": "American crime drama television series (2017–2022)",
+   "hook": "follows a financial adviser who moves his family to Missouri lake country to launder money for a drug cartel",
+   "known": 0.85,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "1883",
+   "qid": "Q110124251",
+   "fame": 0.661,
+   "creator": "Taylor Sheridan",
+   "description": "American drama television series",
+   "hook": "is a Yellowstone prequel following a wagon train of settlers heading west across the Great Plains",
+   "known": 0.6,
+   "kind": "western-drama"
+  },
+  {
+   "label": "The Sex Lives of College Girls",
+   "qid": "Q104847703",
+   "fame": 0.661,
+   "creator": "Mindy Kaling",
+   "description": "American teen comedy-drama television series",
+   "hook": null,
+   "known": 0.4,
+   "kind": "teen-comedy"
+  },
+  {
+   "label": "Loki",
+   "qid": "Q64349029",
+   "fame": 0.655,
+   "creator": "Michael Waldron",
+   "description": "American streaming television series",
+   "hook": "follows the god of mischief after he is arrested by a time-policing bureaucracy",
+   "known": 0.6,
+   "kind": "superhero"
+  },
+  {
+   "label": "Dexter: Resurrection",
+   "qid": "Q127919404",
+   "fame": 0.653,
+   "creator": "Clyde Phillips",
+   "description": "2025 television series",
+   "hook": null,
+   "known": 0.05,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "Midnight Mass",
+   "qid": "Q98915688",
+   "fame": 0.65,
+   "creator": "Mike Flanagan",
+   "description": "2021 web television series",
+   "hook": "follows an isolated island community whose new priest brings miracles with a dark price",
+   "known": 0.6,
+   "kind": "horror"
+  },
+  {
+   "label": "The Night Agent",
+   "qid": "Q116909156",
+   "fame": 0.65,
+   "creator": "Shawn Ryan",
+   "description": "American action thriller television series",
+   "hook": "follows a low-level FBI staffer on a secret emergency phone line, pulled into a White House conspiracy",
+   "known": 0.6,
+   "kind": "thriller"
+  },
+  {
+   "label": "The Morning Show",
+   "qid": "Q54958411",
+   "fame": 0.648,
+   "creator": "Kerry Ehrin",
+   "description": "American drama television series",
+   "hook": "stars Jennifer Aniston and Reese Witherspoon as rival anchors at a network breakfast program rocked by scandal",
+   "known": 0.7,
+   "kind": "drama"
+  },
+  {
+   "label": "Agatha All Along",
+   "qid": "Q108837156",
+   "fame": 0.643,
+   "creator": "Jac Schaeffer",
+   "description": "2024 Marvel Studios television series",
+   "hook": "is a Marvel spinoff that sends a scheming witch and her coven down a magical road of trials",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "Why Women Kill",
+   "qid": "Q59697220",
+   "fame": 0.643,
+   "creator": "Marc Cherry",
+   "description": "American dark comedy-drama web television series",
+   "hook": "follows the troubled marriages of three households in three different decades",
+   "known": 0.3,
+   "kind": "dark-comedy"
+  },
+  {
+   "label": "Sex Education",
+   "qid": "Q55632932",
+   "fame": 0.64,
+   "creator": "Laurie Nunn",
+   "description": "2019 British television series",
+   "hook": null,
+   "known": 0.6,
+   "kind": "teen-drama"
+  },
+  {
+   "label": "Peacemaker",
+   "qid": "Q101089777",
+   "fame": 0.639,
+   "creator": "James Gunn",
+   "description": "American television series",
+   "hook": "stars John Cena as a flawed, helmeted antihero spun off from a DC team-up movie",
+   "known": 0.5,
+   "kind": "superhero"
+  },
+  {
+   "label": "The Punisher",
+   "qid": "Q27089570",
+   "fame": 0.636,
+   "creator": "Steve Lightfoot",
+   "description": "American superhero television series (2017-2019)",
+   "hook": null,
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "Nobody Wants This",
+   "qid": "Q117184121",
+   "fame": 0.633,
+   "creator": "Erin Foster",
+   "description": "American TV series",
+   "hook": "is a romantic comedy about a podcaster who falls for a rabbi",
+   "known": 0.3,
+   "kind": "romantic-comedy"
+  },
+  {
+   "label": "Sugar",
+   "qid": "Q113696648",
+   "fame": 0.633,
+   "creator": "Mark Protosevich",
+   "description": "American crime drama television series",
+   "hook": "follows a private detective searching for the missing granddaughter of a Hollywood producer",
+   "known": 0.3,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "13 Reasons Why",
+   "qid": "Q18464203",
+   "fame": 0.632,
+   "creator": "Brian Yorkey",
+   "description": "2017 American teen drama television series",
+   "hook": null,
+   "known": 0.7,
+   "kind": "teen-drama"
+  },
+  {
+   "label": "WandaVision",
+   "qid": "Q65980217",
+   "fame": 0.632,
+   "creator": "Jac Schaeffer",
+   "description": "2021 television miniseries",
+   "hook": "is a Marvel series styled after classic sitcoms from different eras of television",
+   "known": 0.7,
+   "kind": "superhero"
+  },
+  {
+   "label": "Orange Is the New Black",
+   "qid": "Q7099650",
+   "fame": 0.628,
+   "creator": "Jenji Kohan",
+   "description": "American comedy-drama series",
+   "hook": "follows a woman serving time in a federal prison for a past drug-smuggling crime",
+   "known": 0.85,
+   "kind": "comedy-drama"
+  },
+  {
+   "label": "Never Have I Ever",
+   "qid": "Q90138922",
+   "fame": 0.624,
+   "creator": "Mindy Kaling",
+   "description": "coming of age comedy television series",
+   "hook": "follows an Indian-American teenager in California, narrated by a tennis legend",
+   "known": 0.6,
+   "kind": "teen-comedy"
+  },
+  {
+   "label": "Squid Game",
+   "qid": "Q106582931",
+   "fame": 0.624,
+   "creator": "Hwang Dong-hyeok",
+   "description": "2021 South Korean television series",
+   "hook": "pits debt-ridden contestants against each other in deadly versions of children's games for a huge cash prize",
+   "known": 0.9,
+   "kind": "international-thriller"
+  },
+  {
+   "label": "Black Doves",
+   "qid": "Q123153922",
+   "fame": 0.622,
+   "creator": "Joe Barton",
+   "description": "British Television series",
+   "hook": "is a Christmas-season spy thriller starring Keira Knightley as an undercover operative in London",
+   "known": 0.4,
+   "kind": "spy-thriller"
+  },
+  {
+   "label": "The Sandman",
+   "qid": "Q92590789",
+   "fame": 0.616,
+   "creator": "Allan Heinberg",
+   "description": "2022 American fantasy drama television series",
+   "hook": "adapts a comic about the ruler of the realm of dreams, who escapes a long captivity",
+   "known": 0.6,
+   "kind": "fantasy"
+  },
+  {
+   "label": "The Marvelous Mrs. Maisel",
+   "qid": "Q30634329",
+   "fame": 0.614,
+   "creator": "Amy Sherman-Palladino",
+   "description": "American television series",
+   "hook": "follows a New York housewife who discovers a talent for stand-up comedy",
+   "known": 0.8,
+   "kind": "comedy-drama"
+  },
+  {
+   "label": "Normal People",
+   "qid": "Q81672757",
+   "fame": 0.612,
+   "creator": "Sally Rooney",
+   "description": "Hulu and BBC Three television series",
+   "hook": "follows an on-again, off-again romance between two Irish teenagers who grow into university students",
+   "known": 0.5,
+   "kind": "romance"
+  },
+  {
+   "label": "The Great",
+   "qid": "Q61782859",
+   "fame": 0.609,
+   "creator": "Tony McNamara",
+   "description": "2020 British-American comedy series on Hulu",
+   "hook": "is a darkly comic, loosely true tale of a young Prussian bride who plots to seize the Russian throne",
+   "known": 0.6,
+   "kind": "period-comedy"
+  },
+  {
+   "label": "Emily in Paris",
+   "qid": "Q64584978",
+   "fame": 0.608,
+   "creator": "Darren Star",
+   "description": "American comedy-drama television series",
+   "hook": "follows an American marketer who relocates to the French capital for work",
+   "known": 0.7,
+   "kind": "romantic-comedy"
+  },
+  {
+   "label": "House of Cards",
+   "qid": "Q3330940",
+   "fame": 0.603,
+   "creator": "Beau Willimon",
+   "description": "2010s political drama TV series",
+   "hook": "follows a ruthless Washington power broker who schemes his way to the top",
+   "known": 0.8,
+   "kind": "political-drama"
+  },
+  {
+   "label": "The Watcher",
+   "qid": "Q110885430",
+   "fame": 0.599,
+   "creator": "Ryan Murphy",
+   "description": "2022 TV series",
+   "hook": "follows a family terrorized by menacing letters from an anonymous stranger after buying their dream home",
+   "known": 0.5,
+   "kind": "horror"
+  },
+  {
+   "label": "Presumed Innocent",
+   "qid": "Q116736420",
+   "fame": 0.598,
+   "creator": "David E. Kelley",
+   "description": "American anthology series",
+   "hook": "stars Jake Gyllenhaal as a prosecutor who becomes the prime suspect in a colleague's killing",
+   "known": 0.4,
+   "kind": "legal-drama"
+  },
+  {
+   "label": "Bosch",
+   "qid": "Q16844915",
+   "fame": 0.594,
+   "creator": "Michael Connelly",
+   "description": "American drama television series (2014-2021)",
+   "hook": "follows a Los Angeles homicide detective, adapted from a bestselling crime-novel series",
+   "known": 0.6,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "Fool Me Once",
+   "qid": "Q117005456",
+   "fame": 0.591,
+   "creator": "Harlan Coben",
+   "description": "British television series",
+   "hook": "follows a widowed mother who spots her late husband on a hidden camera in her home",
+   "known": 0.4,
+   "kind": "thriller"
+  },
+  {
+   "label": "The Umbrella Academy",
+   "qid": "Q44535025",
+   "fame": 0.587,
+   "creator": "Steve Blackman",
+   "description": "American television series",
+   "hook": "follows a dysfunctional family of adopted, superpowered siblings reuniting after their father's death",
+   "known": 0.6,
+   "kind": "superhero"
+  },
+  {
+   "label": "Star Trek: Starfleet Academy",
+   "qid": "Q117350388",
+   "fame": 0.585,
+   "creator": "Gaia Violo",
+   "description": "American television series (2026-)",
+   "hook": "is a sci-fi franchise spinoff centered on young recruits training to become explorers of the galaxy",
+   "known": 0.3,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "The Wheel of Time",
+   "qid": "Q60746841",
+   "fame": 0.584,
+   "creator": "Rafe Judkins",
+   "description": "2021 American fantasy television series",
+   "hook": "adapts a sprawling epic-fantasy book series about a prophesied reborn hero called the Dragon",
+   "known": 0.5,
+   "kind": "fantasy"
+  },
+  {
+   "label": "House of Guinness",
+   "qid": "Q127416794",
+   "fame": 0.583,
+   "creator": "Steven Knight",
+   "description": "British television series",
+   "hook": "follows heirs of an Irish brewing dynasty wrangling over its future after their patriarch dies",
+   "known": 0.2,
+   "kind": "drama"
+  },
+  {
+   "label": "Narcos",
+   "qid": "Q20642206",
+   "fame": 0.582,
+   "creator": "Chris Brancato",
+   "description": "American crime drama television series",
+   "hook": "dramatizes the rise of a notorious Colombian cocaine kingpin and the agents hunting him",
+   "known": 0.85,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "Ironheart",
+   "qid": "Q108124282",
+   "fame": 0.581,
+   "creator": "Chinaka Hodge",
+   "description": "2025 American superhero television series",
+   "hook": "follows a young genius inventor from Chicago who builds her own powered suit",
+   "known": 0.2,
+   "kind": "superhero"
+  },
+  {
+   "label": "Ahsoka",
+   "qid": "Q104153367",
+   "fame": 0.579,
+   "creator": "Dave Filoni",
+   "description": "American television series",
+   "hook": "continues a Star Wars story about a former Jedi apprentice and her own young apprentice",
+   "known": 0.4,
+   "kind": "star-wars"
+  },
+  {
+   "label": "Grace and Frankie",
+   "qid": "Q18150372",
+   "fame": 0.577,
+   "creator": "Marta Kauffman",
+   "description": "American comedy-drama web television series",
+   "hook": "follows two older women who become housemates when their husbands reveal they are in love",
+   "known": 0.6,
+   "kind": "comedy-drama"
+  },
+  {
+   "label": "And Just Like That...",
+   "qid": "Q107272501",
+   "fame": 0.575,
+   "creator": "Darren Star",
+   "description": "American comedy-drama television series",
+   "hook": "revisits a group of New York women friends in their fifties, years after a hit HBO sitcom",
+   "known": 0.7,
+   "kind": "comedy-drama"
+  },
+  {
+   "label": "Hunters",
+   "qid": "Q55635302",
+   "fame": 0.575,
+   "creator": "David Weil",
+   "description": "2020 television series",
+   "hook": "follows a ragtag team tracking down hidden Nazis living in New York after the war",
+   "known": 0.3,
+   "kind": "historical-thriller"
+  },
+  {
+   "label": "Good Omens",
+   "qid": "Q43377320",
+   "fame": 0.574,
+   "creator": "Neil Gaiman",
+   "description": "2019 fantasy comedy TV series",
+   "hook": "pairs an angel and a demon who team up to stop the end of the world",
+   "known": 0.5,
+   "kind": "fantasy-comedy"
+  },
+  {
+   "label": "Castle Rock",
+   "qid": "Q28954025",
+   "fame": 0.573,
+   "creator": "Dustin Thomason",
+   "description": "American web television series",
+   "hook": "weaves characters from many Stephen King stories into one cursed Maine town",
+   "known": 0.4,
+   "kind": "horror-anthology"
+  },
+  {
+   "label": "Goliath",
+   "qid": "Q25205882",
+   "fame": 0.573,
+   "creator": "David E. Kelley",
+   "description": "American legal drama web television series",
+   "hook": "follows a washed-up lawyer who takes on giant corporations",
+   "known": 0.4,
+   "kind": "legal-drama"
+  },
+  {
+   "label": "Inventing Anna",
+   "qid": "Q82396632",
+   "fame": 0.573,
+   "creator": "Shonda Rhimes",
+   "description": "American miniseries",
+   "hook": "tells the story of a fake German heiress who conned New York's elite",
+   "known": 0.7,
+   "kind": "biographical-drama"
+  },
+  {
+   "label": "Moon Knight",
+   "qid": "Q84712802",
+   "fame": 0.573,
+   "creator": "Jeremy Slater",
+   "description": "2022 superhero television miniseries produced by Marvel Studios",
+   "hook": "follows a gift-shop worker with multiple identities bound to an ancient Egyptian deity",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "Servant",
+   "qid": "Q55636743",
+   "fame": 0.573,
+   "creator": "Tony Basgallop",
+   "description": "2019–2023 American web series",
+   "hook": "follows a grieving couple whose new nanny cares for a lifelike doll",
+   "known": 0.3,
+   "kind": "horror"
+  },
+  {
+   "label": "Secret Invasion",
+   "qid": "Q108441863",
+   "fame": 0.571,
+   "creator": "Kyle Bradstreet",
+   "description": "American superhero television miniseries",
+   "hook": "shows shape-shifting aliens quietly infiltrating Earth's governments as Nick Fury investigates",
+   "known": 0.3,
+   "kind": "superhero"
+  },
+  {
+   "label": "Atypical",
+   "qid": "Q28443618",
+   "fame": 0.569,
+   "creator": "Robia Rashid",
+   "description": "American comedy-drama television series from 2017–2021",
+   "hook": "follows a teenager on the autism spectrum who looks for love and independence",
+   "known": 0.5,
+   "kind": "comedy-drama"
+  },
+  {
+   "label": "Lessons in Chemistry",
+   "qid": "Q113630126",
+   "fame": 0.569,
+   "creator": "Lee Eisenberg",
+   "description": "2023 television miniseries based on the novel by Bonnie Garmus",
+   "hook": "follows a brilliant female scientist who becomes the host of a TV cooking show",
+   "known": 0.3,
+   "kind": "biographical-drama"
+  },
+  {
+   "label": "Tehran",
+   "qid": "Q90389788",
+   "fame": 0.567,
+   "creator": "Moshe Zonder",
+   "description": "Israeli spy drama television series",
+   "hook": "follows an Israeli agent on a covert mission to sabotage a nuclear program",
+   "known": 0.3,
+   "kind": "spy-thriller"
+  },
+  {
+   "label": "Heartstopper",
+   "qid": "Q106623586",
+   "fame": 0.564,
+   "creator": "Alice Oseman",
+   "description": "2022 British teen television series",
+   "hook": "follows two British schoolboys whose friendship blossoms into romance",
+   "known": 0.6,
+   "kind": "teen-romance"
+  },
+  {
+   "label": "The Falcon and the Winter Soldier",
+   "qid": "Q65979734",
+   "fame": 0.564,
+   "creator": "Malcolm Spellman",
+   "description": "American streaming television miniseries",
+   "hook": "pairs two sidekicks of a famous shield-wielding hero after he hands over his legacy",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "Bad Monkey",
+   "qid": "Q110864087",
+   "fame": 0.56,
+   "creator": "Bill Lawrence",
+   "description": "American television series",
+   "hook": "follows a demoted Florida detective turned restaurant inspector who finds a severed arm",
+   "known": 0.4,
+   "kind": "comedy-thriller"
+  },
+  {
+   "label": "Lupin",
+   "qid": "Q104082429",
+   "fame": 0.558,
+   "creator": "George Kay",
+   "description": "2021 French television series",
+   "hook": "follows a gentleman thief inspired by a novel's master burglar, out for revenge for his father",
+   "known": 0.5,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "Ripley",
+   "qid": "Q116769269",
+   "fame": 0.556,
+   "creator": "Steven Zaillian",
+   "description": "2024 television series",
+   "hook": "follows a charming con man who assumes a rich young man's identity in Italy",
+   "known": 0.3,
+   "kind": "thriller"
+  },
+  {
+   "label": "She-Hulk: Attorney at Law",
+   "qid": "Q84712806",
+   "fame": 0.553,
+   "creator": "Jessica Gao",
+   "description": "2022 American superhero television series",
+   "hook": "follows a lawyer who gets green superpowers from her cousin's blood",
+   "known": 0.3,
+   "kind": "superhero"
+  },
+  {
+   "label": "Nine Perfect Strangers",
+   "qid": "Q98315446",
+   "fame": 0.549,
+   "creator": "David E. Kelley",
+   "description": "American television series based on Liane Moriarty's book",
+   "hook": "follows guests at a luxury wellness retreat run by a mysterious director",
+   "known": 0.4,
+   "kind": "drama"
+  },
+  {
+   "label": "Jessica Jones",
+   "qid": "Q18605540",
+   "fame": 0.547,
+   "creator": "Melissa Rosenberg",
+   "description": "2015 American television series",
+   "hook": "follows a hard-drinking superpowered private investigator haunted by a mind-controlling villain",
+   "known": 0.6,
+   "kind": "superhero"
+  },
+  {
+   "label": "Altered Carbon",
+   "qid": "Q22906308",
+   "fame": 0.545,
+   "creator": "Laeta Kalogridis",
+   "description": "science-fiction television series",
+   "hook": "imagines a future where minds are stored in implants and swapped between bodies",
+   "known": 0.5,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Dead to Me",
+   "qid": "Q55609230",
+   "fame": 0.545,
+   "creator": "Liz Feldman",
+   "description": "American dark comedy television series",
+   "hook": "follows two women who meet in a grief group and share a hit-and-run secret",
+   "known": 0.7,
+   "kind": "dark-comedy"
+  },
+  {
+   "label": "Kaos",
+   "qid": "Q55615670",
+   "fame": 0.545,
+   "creator": "Charlie Covell",
+   "description": "2024 British television series",
+   "hook": "retells Greek myths in a darkly comic modern world where Zeus fears a prophecy",
+   "known": 0.4,
+   "kind": "fantasy-comedy"
+  },
+  {
+   "label": "After Life",
+   "qid": "Q55603316",
+   "fame": 0.544,
+   "creator": "Ricky Gervais",
+   "description": "British dark comedy web television series",
+   "hook": "follows a widower at a local newspaper who copes with grief through bitter honesty",
+   "known": 0.6,
+   "kind": "dark-comedy"
+  },
+  {
+   "label": "See",
+   "qid": "Q55632795",
+   "fame": 0.542,
+   "creator": "Steven Knight",
+   "description": "2019 TV series",
+   "hook": "follows a tribe of blind survivors protecting twin children in a far-future world",
+   "known": 0.4,
+   "kind": "fantasy"
+  },
+  {
+   "label": "Santa Clarita Diet",
+   "qid": "Q23680123",
+   "fame": 0.54,
+   "creator": "Victor Fresco",
+   "description": "2017 American horror-comedy web television series",
+   "hook": "follows a suburban mom who turns into a zombie with an appetite for people",
+   "known": 0.5,
+   "kind": "horror-comedy"
+  },
+  {
+   "label": "The Acolyte",
+   "qid": "Q104161310",
+   "fame": 0.54,
+   "creator": "Leslye Headland",
+   "description": "2024 American television series",
+   "hook": "is a Star Wars murder mystery set in the High Republic era with a former padawan",
+   "known": 0.3,
+   "kind": "star-wars"
+  },
+  {
+   "label": "Ms. Marvel",
+   "qid": "Q84712813",
+   "fame": 0.539,
+   "creator": "Bisha K. Ali",
+   "description": "2022 superhero television miniseries",
+   "hook": "follows a New Jersey teen superhero fan who gains shape-stretching powers",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "Upload",
+   "qid": "Q56275161",
+   "fame": 0.537,
+   "creator": "Greg Daniels",
+   "description": "American television series",
+   "hook": "imagines a future where the dying can move their minds into a luxury virtual afterlife",
+   "known": 0.5,
+   "kind": "sci-fi-comedy"
+  },
+  {
+   "label": "Guillermo del Toro's Cabinet of Curiosities",
+   "qid": "Q55012258",
+   "fame": 0.536,
+   "creator": "Guillermo del Toro",
+   "description": "American-Mexican horror anthology television show on Netflix",
+   "hook": "is an anthology of eight horror tales presented by a famed monster-loving filmmaker",
+   "known": 0.4,
+   "kind": "horror-anthology"
+  },
+  {
+   "label": "Shadow and Bone",
+   "qid": "Q85800564",
+   "fame": 0.536,
+   "creator": "Eric Heisserer",
+   "description": "2021 American fantasy television series",
+   "hook": "follows a mapmaker who discovers she can summon light in a fantasy world split by darkness",
+   "known": 0.4,
+   "kind": "fantasy"
+  },
+  {
+   "label": "Ramy",
+   "qid": "Q55631164",
+   "fame": 0.534,
+   "creator": "Ramy Youssef",
+   "description": "American comedy-drama web television series from Hulu",
+   "hook": "follows a Muslim American millennial in New Jersey navigating faith and modern life",
+   "known": 0.4,
+   "kind": "comedy-drama"
+  },
+  {
+   "label": "Kingdom",
+   "qid": "Q30947892",
+   "fame": 0.533,
+   "creator": "Kim Eun-hee",
+   "description": "2019 South Korean TV series",
+   "hook": "pits a prince against a plague of zombies in feudal Korea",
+   "known": 0.6,
+   "kind": "international-thriller"
+  },
+  {
+   "label": "Fuller House",
+   "qid": "Q20714712",
+   "fame": 0.53,
+   "creator": "Jeff Franklin",
+   "description": "American television sitcom",
+   "hook": "continues a beloved family sitcom with a grown-up daughter raising kids in the old San Francisco home",
+   "known": 0.5,
+   "kind": "sitcom"
+  },
+  {
+   "label": "The Book of Boba Fett",
+   "qid": "Q104396610",
+   "fame": 0.528,
+   "creator": "Jon Favreau",
+   "description": "American streaming television series from 2021–2022",
+   "hook": "follows a bounty hunter taking over the underworld of a desert planet in Star Wars",
+   "known": 0.4,
+   "kind": "star-wars"
+  },
+  {
+   "label": "Pieces of Her",
+   "qid": "Q62002493",
+   "fame": 0.526,
+   "creator": "Charlotte Stoudt",
+   "description": "American thriller drama web television series",
+   "hook": "follows a woman who learns her quiet mother has a secret past",
+   "known": 0.2,
+   "kind": "thriller"
+  },
+  {
+   "label": "The Midnight Club",
+   "qid": "Q105304384",
+   "fame": 0.525,
+   "creator": "Mike Flanagan",
+   "description": "American horror television series",
+   "hook": "follows terminally ill teens at a hospice who tell scary stories at night",
+   "known": 0.3,
+   "kind": "horror"
+  },
+  {
+   "label": "XO, Kitty",
+   "qid": "Q111951059",
+   "fame": 0.525,
+   "creator": "Jenny Han",
+   "description": "2023 American television series",
+   "hook": "follows a teen who moves to a Seoul boarding school, spun off from a teen romance film trilogy",
+   "known": 0.3,
+   "kind": "teen-romance"
+  },
+  {
+   "label": "The Flight Attendant",
+   "qid": "Q55635222",
+   "fame": 0.521,
+   "creator": "Kaley Cuoco",
+   "description": "American comedy-drama television series",
+   "hook": "follows a hard-partying cabin crew member who wakes beside a dead man in Bangkok",
+   "known": 0.5,
+   "kind": "comedy-thriller"
+  },
+  {
+   "label": "Tokyo Vice",
+   "qid": "Q85809934",
+   "fame": 0.521,
+   "creator": "J. T. Rogers",
+   "description": "2022-2024 American television series",
+   "hook": "follows an American reporter covering the yakuza for a Japanese newspaper",
+   "known": 0.3,
+   "kind": "international-drama"
+  },
+  {
+   "label": "GLOW",
+   "qid": "Q25208966",
+   "fame": 0.52,
+   "creator": "Carly Mensch",
+   "description": "American comedy-drama television series",
+   "hook": "follows women starring in a campy professional wrestling TV show",
+   "known": 0.5,
+   "kind": "comedy-drama"
+  },
+  {
+   "label": "Our Flag Means Death",
+   "qid": "Q107324490",
+   "fame": 0.519,
+   "creator": "David Jenkins",
+   "description": "2022 American television series",
+   "hook": "follows a wealthy gentleman who leaves his comfortable life to become a bumbling pirate",
+   "known": 0.4,
+   "kind": "adventure-comedy"
+  },
+  {
+   "label": "Iron Fist",
+   "qid": "Q21148896",
+   "fame": 0.518,
+   "creator": "Scott Buck",
+   "description": "American television series",
+   "hook": "follows a martial arts master returning to New York to reclaim his family's company",
+   "known": 0.3,
+   "kind": "superhero"
+  },
+  {
+   "label": "The Peripheral",
+   "qid": "Q106742665",
+   "fame": 0.516,
+   "creator": "Scott Smith",
+   "description": "American science-fiction thriller drama television series",
+   "hook": "follows a woman whose virtual reality game connects her to a future London",
+   "known": 0.3,
+   "kind": "sci-fi-thriller"
+  },
+  {
+   "label": "The Recruit",
+   "qid": "Q115039661",
+   "fame": 0.51,
+   "creator": "Alexi Hawley",
+   "description": "2022 spy-adventure drama series",
+   "hook": "follows a rookie CIA lawyer thrown into danger by a threatening former asset",
+   "known": 0.3,
+   "kind": "spy-thriller"
+  },
+  {
+   "label": "Runaways",
+   "qid": "Q28746336",
+   "fame": 0.509,
+   "creator": "Josh Schwartz",
+   "description": "American web television series",
+   "hook": "follows teenagers who discover their parents are secret supervillains",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "Luke Cage",
+   "qid": "Q20646602",
+   "fame": 0.495,
+   "creator": "Cheo Hodari Coker",
+   "description": "American television series",
+   "hook": "follows a bulletproof ex-convict who protects Harlem",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "Apple Cider Vinegar",
+   "qid": "Q131283460",
+   "fame": 0.494,
+   "creator": "Samantha Strauss",
+   "description": "2025 austraila TV series or program",
+   "hook": null,
+   "known": 0.05,
+   "kind": "international-comedy"
+  },
+  {
+   "label": "The Mindy Project",
+   "qid": "Q62564",
+   "fame": 0.493,
+   "creator": "Mindy Kaling",
+   "description": "American romantic comedy television series",
+   "hook": "follows a romantic-comedy-obsessed OB-GYN in New York",
+   "known": 0.6,
+   "kind": "romantic-comedy"
+  },
+  {
+   "label": "The Waterfront",
+   "qid": "Q134027670",
+   "fame": 0.49,
+   "creator": "Kevin Williamson",
+   "description": "2025 drama TV series",
+   "hook": "follows a struggling fishing family in a Carolina coastal town drawn into crime",
+   "known": 0.05,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "Sweet Tooth",
+   "qid": "Q104762388",
+   "fame": 0.486,
+   "creator": "Jim Mickle",
+   "description": "2021 TV series",
+   "hook": "follows a boy born part deer in a world after a pandemic",
+   "known": 0.4,
+   "kind": "fantasy"
+  },
+  {
+   "label": "Heartbreak High",
+   "qid": "Q110010433",
+   "fame": 0.484,
+   "creator": "Hannah Carroll Chapman",
+   "description": "Australian TV series from 2022",
+   "hook": "follows Sydney teens after a map of their classmates' hookups is exposed",
+   "known": 0.2,
+   "kind": "teen-drama"
+  },
+  {
+   "label": "Transparent",
+   "qid": "Q17014382",
+   "fame": 0.48,
+   "creator": "Joey Soloway",
+   "description": "American comedy-drama web video series",
+   "hook": "follows a Los Angeles family as a parent comes out as a transgender woman",
+   "known": 0.5,
+   "kind": "comedy-drama"
+  },
+  {
+   "label": "Britannia",
+   "qid": "Q30460060",
+   "fame": 0.476,
+   "creator": "Jez Butterworth",
+   "description": "British television series",
+   "hook": "retells the Roman conquest of Celtic tribes and their druids",
+   "known": 0.3,
+   "kind": "historical-fantasy"
+  },
+  {
+   "label": "Pam & Tommy",
+   "qid": "Q106609866",
+   "fame": 0.476,
+   "creator": "Seth Rogen",
+   "description": "American biographical drama television miniseries",
+   "hook": null,
+   "known": 0.3,
+   "kind": "biographical-drama"
+  },
+  {
+   "label": "Hometown Cha-Cha-Cha",
+   "qid": "Q106758556",
+   "fame": 0.475,
+   "creator": "Shin Ha-eun",
+   "description": "2021 South Korean television series",
+   "hook": "follows a big-city dentist who moves to a seaside village and falls for a jack-of-all-trades",
+   "known": 0.3,
+   "kind": "international-romance"
+  },
+  {
+   "label": "The Eternaut",
+   "qid": "Q114769724",
+   "fame": 0.475,
+   "creator": "Bruno Stagnaro",
+   "description": "2025 television series",
+   "hook": "adapts an Argentine comic about survivors of a deadly snowfall in Buenos Aires",
+   "known": 0.05,
+   "kind": "international-sci-fi"
+  },
+  {
+   "label": "Gyeongseong Creature",
+   "qid": "Q110614173",
+   "fame": 0.474,
+   "creator": "Kang Eun-kyung",
+   "description": "South Korean television series",
+   "hook": "follows a pawnbroker and a woman searching for her father amid human experiments in colonial Seoul",
+   "known": 0.2,
+   "kind": "international-thriller"
+  },
+  {
+   "label": "Maniac",
+   "qid": "Q24144688",
+   "fame": 0.468,
+   "creator": "Patrick Somerville",
+   "description": "American TV miniseries",
+   "hook": "follows two strangers in a drug trial that sends their minds through fantasy worlds",
+   "known": 0.3,
+   "kind": "sci-fi-thriller"
+  },
+  {
+   "label": "Tell Me a Story",
+   "qid": "Q55074622",
+   "fame": 0.468,
+   "creator": "Kevin Williamson",
+   "description": "2018 American psychological thriller web television series",
+   "hook": "reimagines classic fairy tales as modern crime thrillers",
+   "known": 0.2,
+   "kind": "thriller-anthology"
+  },
+  {
+   "label": "Ragnarok",
+   "qid": "Q83962233",
+   "fame": 0.465,
+   "creator": "Adam Price",
+   "description": "Dano-Norwegian television series",
+   "hook": "follows a teen in a Norwegian town who suspects a family of giants are Norse gods",
+   "known": 0.3,
+   "kind": "international-fantasy"
+  },
+  {
+   "label": "Dickinson",
+   "qid": "Q55609543",
+   "fame": 0.463,
+   "creator": "Alena Smith",
+   "description": "TV series",
+   "hook": "reimagines a famed reclusive American poet as a rebellious young woman",
+   "known": 0.4,
+   "kind": "historical-comedy"
+  },
+  {
+   "label": "The Kominsky Method",
+   "qid": "Q39058239",
+   "fame": 0.463,
+   "creator": "Chuck Lorre",
+   "description": "television series",
+   "hook": "follows an aging actor turned acting coach and his agent friend",
+   "known": 0.4,
+   "kind": "comedy-drama"
+  },
+  {
+   "label": "Alex Rider",
+   "qid": "Q84079001",
+   "fame": 0.461,
+   "creator": "Guy Burt",
+   "description": "2020 British spy thriller television series",
+   "hook": "follows a teenager recruited by MI6 as a spy after his uncle's death",
+   "known": 0.3,
+   "kind": "spy-thriller"
+  },
+  {
+   "label": "Hemlock Grove",
+   "qid": "Q5712285",
+   "fame": 0.461,
+   "creator": "Brian McGreevy",
+   "description": "2013 American horror thriller television series",
+   "hook": "is a gothic horror tale of werewolves and a wealthy family in a Pennsylvania town",
+   "known": 0.4,
+   "kind": "horror"
+  },
+  {
+   "label": "The Spy",
+   "qid": "Q30600557",
+   "fame": 0.455,
+   "creator": "Gideon Raff",
+   "description": "French espionage thriller miniseries",
+   "hook": "stars a comedian in a serious role as an Israeli agent infiltrating Syria's elite",
+   "known": 0.4,
+   "kind": "spy-thriller"
+  },
+  {
+   "label": "Our Blues",
+   "qid": "Q110627977",
+   "fame": 0.453,
+   "creator": "Noh Hee-kyung",
+   "description": "2022 South Korean television series",
+   "hook": "weaves interlinked stories of residents of Jeju Island",
+   "known": 0.2,
+   "kind": "international-drama"
+  },
+  {
+   "label": "Marco Polo",
+   "qid": "Q6757674",
+   "fame": 0.451,
+   "creator": "John Fusco",
+   "description": "American television drama series",
+   "hook": "follows a Venetian merchant's years in the court of Kublai Khan",
+   "known": 0.4,
+   "kind": "historical-drama"
+  },
+  {
+   "label": "Warrior Nun",
+   "qid": "Q65084266",
+   "fame": 0.45,
+   "creator": "Simon Barry",
+   "description": "American fantasy drama television series",
+   "hook": "follows a young woman revived with a divine halo and an order of sword-wielding sisters",
+   "known": 0.3,
+   "kind": "fantasy-action"
+  }
+ ]
+}

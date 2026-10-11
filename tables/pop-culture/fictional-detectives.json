@@ -1,0 +1,195 @@
+{
+ "id": "table.pop-culture.fictional-detectives",
+ "kind": "table",
+ "title": "Fictional detectives: who created them",
+ "genre": "general",
+ "category": "pop-culture",
+ "topic": "fictional-characters",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?creatorLabel WHERE { VALUES (?item ?creatorLabel) { (wd:Q4653 \"Arthur Conan Doyle\") (wd:Q170534 \"Agatha Christie\") (wd:Q193531 \"Agatha Christie\") (wd:Q1076932 \"Stratemeyer Syndicate\") (wd:Q2984579 \"Richard Levinson and William Link\") (wd:Q323637 \"Blake Edwards\") (wd:Q623732 \"Raymond Chandler\") (wd:Q2533737 \"Dashiell Hammett\") (wd:Q1545219 \"G. K. Chesterton\") (wd:Q6414261 \"Sue Grafton\") (wd:Q2283086 \"Rob Thomas\") (wd:Q2088981 \"Andy Breckman\") (wd:Q1538721 \"Dorothy L. Sayers\") (wd:Q1065888 \"Colin Dexter\") (wd:Q830561 \"Georges Simenon\") (wd:Q549047 \"Edgar Allan Poe\") (wd:Q2754997 \"Douglas Adams\") (wd:Q2607112 \"Michael Connelly\") (wd:Q854177 \"Patricia Cornwell\") (wd:Q2832931 \"James Patterson\") (wd:Q389624 \"Earl Derr Biggers\") (wd:Q371774 \"Rex Stout\") (wd:Q2632785 \"Mickey Spillane\") (wd:Q786846 \"Henning Mankell\") (wd:Q1756519 \"Robert van Gulik\") (wd:Q6209929 \"Jack Webb\") (wd:Q6197806 \"Roy Huggins\") (wd:Q2483726 \"Ellis Peters\") (wd:Q113129682 \"Donald J. Sobol\") (wd:Q22689379 \"Gosho Aoyama\") (wd:Q844697 \"Gosho Aoyama\") (wd:Q2629231 \"Mark Frost and David Lynch\") (wd:Q2669664 \"Dick Wolf\") (wd:Q1010452 \"Anthony E. Zuiker\") (wd:Q7188182 \"Kerry Greenwood\") (wd:Q114337913 \"Rian Johnson\") (wd:Q26257931 \"Dan Goor and Michael Schur\") (wd:Q23044715 \"Hans Rosenfeldt\") (wd:Q12334667 \"Soren Sveistrup\") (wd:Q3538234 \"John D. MacDonald\") (wd:Q2983578 \"Ross Macdonald\") (wd:Q868887 \"Lawrence Block\") (wd:Q3017233 \"James Lee Burke\") (wd:Q5169927 \"P. D. James\") (wd:Q10305209 \"Tess Gerritsen\") (wd:Q1067723 \"Arthur Conan Doyle\") (wd:Q11824990 \"Abby Mann\") (wd:Q102895651 \"Alexander McCall Smith\") (wd:Q2246369 \"Peter S. Fischer\") (wd:Q929855 \"Joe Ruby and Ken Spears\") (wd:Q1471089 \"Stratemeyer Syndicate\") (wd:Q55403199 \"Gary K. Wolf\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T06:58:55.754Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T13:05:00.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "creator",
+   "label": "Creator",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "detective",
+  "many": "detectives",
+  "hookAsk": "Which detective {hook}?",
+  "hookStatement": "",
+  "columns": {
+   "creator": {
+    "role": "link",
+    "pick": "Who created the detective {label}?",
+    "statement": "{label} was created by {value}.",
+    "match": "Match each detective to the person or team who created them.",
+    "reverse": "Which of these detectives was created by {value}?"
+   }
+  },
+  "exclude": [
+   {
+    "qid": "Q1471089",
+    "why": "a duo and a book series, not one detective"
+   }
+  ]
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Sherlock Holmes",
+   "qid": "Q4653",
+   "fame": 0.647,
+   "creator": "Arthur Conan Doyle",
+   "description": "fictional character (consulting detective) created by Sir Arthur Conan Doyle",
+   "hook": "is a consulting detective famed for astonishing observation and deduction, aided by his friend Dr. Watson",
+   "known": 0.8,
+   "kind": "classic literary"
+  },
+  {
+   "label": "Hercule Poirot",
+   "qid": "Q170534",
+   "fame": 0.613,
+   "creator": "Agatha Christie",
+   "description": "fictional Belgian detective by Agatha Christie",
+   "hook": "is a fastidious Belgian sleuth with a waxed moustache who trusts his little grey cells",
+   "known": 0.8,
+   "kind": "classic literary"
+  },
+  {
+   "label": "Mike Hammer",
+   "qid": "Q2632785",
+   "fame": 0.593,
+   "creator": "Mickey Spillane",
+   "description": "fictional private detective created by Mickey Spillane",
+   "hook": "is a tough, no-nonsense private eye whose bestselling pulp novels sold over a hundred million copies",
+   "known": 0.4,
+   "kind": "hardboiled"
+  },
+  {
+   "label": "Sam Spade",
+   "qid": "Q2533737",
+   "fame": 0.584,
+   "creator": "Dashiell Hammett",
+   "description": "fictional private detective",
+   "hook": "is the hard-boiled private eye who chases a priceless statuette in The Maltese Falcon",
+   "known": 0.5,
+   "kind": "hardboiled"
+  },
+  {
+   "label": "Olivia Benson",
+   "qid": "Q2669664",
+   "fame": 0.545,
+   "creator": "Dick Wolf",
+   "description": "fictional character on the NBC police procedural drama Law & Order: Special Victims Unit",
+   "hook": "is a New York police captain on a long-running NBC crime drama, played by Mariska Hargitay",
+   "known": 0.4,
+   "kind": "modern tv"
+  },
+  {
+   "label": "Miss Marple",
+   "qid": "Q193531",
+   "fame": 0.527,
+   "creator": "Agatha Christie",
+   "description": "fictional character appearing in Agatha Christie's crime novels",
+   "hook": "is an elderly spinster from the village of St Mary Mead who solves murders as an amateur sleuth",
+   "known": 0.8,
+   "kind": "classic literary"
+  },
+  {
+   "label": "Velma Dinkley",
+   "qid": "Q929855",
+   "fame": 0.511,
+   "creator": "Joe Ruby and Ken Spears",
+   "description": "fictional character from the Scooby-Doo universe",
+   "hook": null,
+   "known": 0.2,
+   "kind": "children's"
+  },
+  {
+   "label": "Nancy Drew",
+   "qid": "Q1076932",
+   "fame": 0.5,
+   "creator": "Stratemeyer Syndicate",
+   "description": "fictional character in a juvenile mystery series created by the Stratemeyer Syndicate publisher under the collective pseudonym Carolyn Keene",
+   "hook": "is a teenage amateur sleuth in a long-running mystery book series published under the pen name Carolyn Keene",
+   "known": 0.4,
+   "kind": "children's"
+  },
+  {
+   "label": "The Hardy Boys",
+   "qid": "Q1471089",
+   "fame": 0.486,
+   "creator": "Stratemeyer Syndicate",
+   "description": "fictional detectives and book series",
+   "hook": "are teenage brothers Frank and Joe who solve mysteries in a long-running series of novels for young readers",
+   "known": 0.4,
+   "kind": "children's"
+  },
+  {
+   "label": "Charlie Chan",
+   "qid": "Q389624",
+   "fame": 0.474,
+   "creator": "Earl Derr Biggers",
+   "description": "fictional character",
+   "hook": null,
+   "known": 0.2,
+   "kind": "classic literary"
+  },
+  {
+   "label": "Harry Bosch",
+   "qid": "Q2607112",
+   "fame": 0.467,
+   "creator": "Michael Connelly",
+   "description": "fictional detective created by author Michael Connelly",
+   "hook": "is an LAPD homicide detective named after a Dutch painter, played on TV by Titus Welliver",
+   "known": 0.4,
+   "kind": "modern tv"
+  },
+  {
+   "label": "Philip Marlowe",
+   "qid": "Q623732",
+   "fame": 0.466,
+   "creator": "Raymond Chandler",
+   "description": "fictional character created by Raymond Chandler",
+   "hook": "is the wisecracking hard-boiled private eye who first appeared in The Big Sleep",
+   "known": 0.5,
+   "kind": "hardboiled"
+  },
+  {
+   "label": "Inspector Clouseau",
+   "qid": "Q323637",
+   "fame": 0.461,
+   "creator": "Blake Edwards",
+   "description": "character in Pink Panther",
+   "hook": "is a bumbling, mustached French police detective famously played by Peter Sellers",
+   "known": 0.4,
+   "kind": "comedy"
+  }
+ ]
+}

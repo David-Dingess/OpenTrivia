@@ -1,0 +1,135 @@
+{
+ "id": "table.food-and-drink.spirits-made-from",
+ "kind": "table",
+ "title": "Spirits: what each is made from",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "wine-and-beer",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Hand-built, checked row by row against English Wikipedia",
+  "method": "enwiki: Distilled beverage, Tequila, Mezcal, Rum, Scotch whisky, Bourbon whiskey, Gin, Cognac, Brandy, Pisco, Grappa, Baijiu, Cachaça",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T14:49:49.620Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T14:51:20.467Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "made_from",
+   "label": "Made from",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "kind",
+   "label": "Kind",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "spirit",
+  "many": "spirits",
+  "capitalise": true,
+  "wildcard": "food",
+  "columns": {
+   "made_from": {
+    "role": "link",
+    "pick": "What is {label} made from?",
+    "statement": "{label} is made from {value}.",
+    "match": "Match each spirit to what it is made from.",
+    "odd": "Three of these spirits are made from {value}. Which one is not?",
+    "all": "Tap all {n} spirits made from {value}.",
+    "reverse": "Which spirit is made from {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Tequila",
+   "qid": null,
+   "fame": 0.517,
+   "made_from": "agave",
+   "kind": "spirit",
+   "known": 0.8
+  },
+  {
+   "label": "Mezcal",
+   "qid": null,
+   "fame": 0.512,
+   "made_from": "agave",
+   "kind": "spirit",
+   "known": 0.4
+  },
+  {
+   "label": "Rum",
+   "qid": null,
+   "fame": 0.518,
+   "made_from": "sugarcane",
+   "kind": "spirit",
+   "known": 0.8
+  },
+  {
+   "label": "Scotch whisky",
+   "qid": null,
+   "fame": 0.509,
+   "made_from": "barley",
+   "kind": "spirit",
+   "known": 0.8
+  },
+  {
+   "label": "Bourbon whiskey",
+   "qid": null,
+   "fame": 0.546,
+   "made_from": "corn",
+   "kind": "spirit",
+   "known": 0.8
+  },
+  {
+   "label": "Cognac",
+   "qid": null,
+   "fame": 0.538,
+   "made_from": "grapes",
+   "kind": "spirit",
+   "known": 0.6
+  },
+  {
+   "label": "Pisco",
+   "qid": null,
+   "fame": 0.471,
+   "made_from": "grapes",
+   "kind": "spirit",
+   "known": 0.2
+  },
+  {
+   "label": "Grappa",
+   "qid": null,
+   "fame": 0.495,
+   "made_from": "grape pomace",
+   "kind": "spirit",
+   "known": 0.2
+  },
+  {
+   "label": "Baijiu",
+   "qid": null,
+   "fame": 0.501,
+   "made_from": "sorghum",
+   "kind": "spirit",
+   "known": 0.05
+  },
+  {
+   "label": "Cachaça",
+   "qid": null,
+   "fame": 0.507,
+   "made_from": "sugarcane",
+   "kind": "spirit",
+   "known": 0.2
+  }
+ ]
+}

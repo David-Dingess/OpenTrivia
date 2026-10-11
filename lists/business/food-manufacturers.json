@@ -1,0 +1,938 @@
+{
+ "id": "list.business.food-manufacturers",
+ "title": "Food manufacturers",
+ "prompt": "Name a food company",
+ "genre": "daily-life",
+ "category": "business",
+ "topic": "big-companies",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q1252971 . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-10-04T07:31:29.227Z"
+ },
+ "rows": [
+  {
+   "label": "Nestlé",
+   "qid": "Q160746",
+   "fame": 0.629,
+   "also": [
+    "Nestlé S.A."
+   ]
+  },
+  {
+   "label": "Mars, Incorporated",
+   "qid": "Q695087",
+   "fame": 0.582,
+   "also": [
+    "Mars Inc.",
+    "Mars",
+    "Mars Candy Co",
+    "Mars Company"
+   ]
+  },
+  {
+   "label": "Mondelez International",
+   "qid": "Q12857502",
+   "fame": 0.571,
+   "also": [
+    "National Dairy Products",
+    "Mondelez"
+   ]
+  },
+  {
+   "label": "Kraft Foods Group",
+   "qid": "Q327751",
+   "fame": 0.568,
+   "also": [
+    "Kraft Foods",
+    "Kraft"
+   ]
+  },
+  {
+   "label": "Häagen-Dazs",
+   "qid": "Q1143333",
+   "fame": 0.54,
+   "also": []
+  },
+  {
+   "label": "H. J. Heinz Company",
+   "qid": "Q850324",
+   "fame": 0.523,
+   "also": [
+    "Heinz",
+    "Heinz Company"
+   ]
+  },
+  {
+   "label": "Ferrero SpA",
+   "qid": "Q269792",
+   "fame": 0.52,
+   "also": []
+  },
+  {
+   "label": "Huy Fong Foods",
+   "qid": "Q10769810",
+   "fame": 0.502,
+   "also": [
+    "David Tran"
+   ]
+  },
+  {
+   "label": "Chiquita Brands International",
+   "qid": "Q1074666",
+   "fame": 0.494,
+   "also": [
+    "Chiquita",
+    "Chiquita Brands International Inc."
+   ]
+  },
+  {
+   "label": "Danone",
+   "qid": "Q329426",
+   "fame": 0.471,
+   "also": [
+    "Groupe Danone",
+    "Dannon Group",
+    "The Dannon Company"
+   ]
+  },
+  {
+   "label": "Kewpie Corporation",
+   "qid": "Q11297548",
+   "fame": 0.467,
+   "also": [
+    "Kewpie",
+    "Q.P. Corporation"
+   ]
+  },
+  {
+   "label": "Associated British Foods",
+   "qid": "Q117059",
+   "fame": 0.435,
+   "also": [
+    "ABF",
+    "AB Foods",
+    "Associated British Foods plc"
+   ]
+  },
+  {
+   "label": "Rowntree's",
+   "qid": "Q695070",
+   "fame": 0.421,
+   "also": [
+    "Nestlé UK Limited",
+    "Nestlé UK Ltd."
+   ]
+  },
+  {
+   "label": "Barilla Group",
+   "qid": "Q762787",
+   "fame": 0.413,
+   "also": [
+    "Barilla"
+   ]
+  },
+  {
+   "label": "Quorn",
+   "qid": "Q2123676",
+   "fame": 0.413,
+   "also": []
+  },
+  {
+   "label": "Dole plc",
+   "qid": "Q492747",
+   "fame": 0.412,
+   "also": [
+    "Dole",
+    "Dole Food Company",
+    "Standard Fruit Company"
+   ]
+  },
+  {
+   "label": "Knorr",
+   "qid": "Q313882",
+   "fame": 0.394,
+   "also": []
+  },
+  {
+   "label": "McCain Foods",
+   "qid": "Q944414",
+   "fame": 0.394,
+   "also": [
+    "McCain Foods Limited"
+   ]
+  },
+  {
+   "label": "Nissin Food Products",
+   "qid": "Q53293",
+   "fame": 0.394,
+   "also": [
+    "Nissin Foods",
+    "Chuko Sosha"
+   ]
+  },
+  {
+   "label": "Twinings",
+   "qid": "Q1054692",
+   "fame": 0.388,
+   "also": []
+  },
+  {
+   "label": "Unternehmensgruppe Theo Müller",
+   "qid": "Q884605",
+   "fame": 0.37,
+   "also": [
+    "Müller",
+    "UTM",
+    "Theo Müller",
+    "Müller Milch",
+    "Unternehmensgruppe Theo Müller S.e.c.s."
+   ]
+  },
+  {
+   "label": "Tayto",
+   "qid": "Q2397955",
+   "fame": 0.368,
+   "also": []
+  },
+  {
+   "label": "Kikkoman",
+   "qid": "Q1321815",
+   "fame": 0.36,
+   "also": [
+    "KIKKOMAN CORPORATION",
+    "Kikkōman Kabushiki-gaisha"
+   ]
+  },
+  {
+   "label": "Nong Shim Ltd.",
+   "qid": "Q483018",
+   "fame": 0.348,
+   "also": [
+    "Nongshim",
+    "Lotte Industrial"
+   ]
+  },
+  {
+   "label": "Birds Eye",
+   "qid": "Q4916058",
+   "fame": 0.338,
+   "also": []
+  },
+  {
+   "label": "Master Kong",
+   "qid": "Q11063808",
+   "fame": 0.325,
+   "also": []
+  },
+  {
+   "label": "Bahlsen",
+   "qid": "Q315068",
+   "fame": 0.299,
+   "also": []
+  },
+  {
+   "label": "Flora Food Group",
+   "qid": "Q60741602",
+   "fame": 0.297,
+   "also": [
+    "Upfield Europe B.V."
+   ]
+  },
+  {
+   "label": "Ülker",
+   "qid": "Q334789",
+   "fame": 0.293,
+   "also": [
+    "Ülker Gıda",
+    "Ülker Gıda Sanayi ve Ticaret Anonim Şirketi"
+   ]
+  },
+  {
+   "label": "Wise Foods",
+   "qid": "Q8027447",
+   "fame": 0.287,
+   "also": []
+  },
+  {
+   "label": "Albanese Candy",
+   "qid": "Q85740517",
+   "fame": 0.286,
+   "also": []
+  },
+  {
+   "label": "Thrifty Ice Cream",
+   "qid": "Q131618955",
+   "fame": 0.282,
+   "also": [
+    "Thrifty"
+   ]
+  },
+  {
+   "label": "Stouffer's",
+   "qid": "Q7620543",
+   "fame": 0.281,
+   "also": []
+  },
+  {
+   "label": "Thorntons",
+   "qid": "Q683102",
+   "fame": 0.281,
+   "also": [
+    "Thorntons Limited",
+    "Thorntons Ltd"
+   ]
+  },
+  {
+   "label": "Nestlé India",
+   "qid": "Q104845552",
+   "fame": 0.275,
+   "also": []
+  },
+  {
+   "label": "Fox's Biscuits",
+   "qid": "Q5476491",
+   "fame": 0.271,
+   "also": []
+  },
+  {
+   "label": "Keiller's marmalade",
+   "qid": "Q6383736",
+   "fame": 0.271,
+   "also": [
+    "James Keiller & Son"
+   ]
+  },
+  {
+   "label": "Tombstone",
+   "qid": "Q3531195",
+   "fame": 0.271,
+   "also": []
+  },
+  {
+   "label": "Fyffes",
+   "qid": "Q3091339",
+   "fame": 0.265,
+   "also": []
+  },
+  {
+   "label": "Halo Top Creamery",
+   "qid": "Q29915196",
+   "fame": 0.263,
+   "also": [
+    "Halo Top"
+   ]
+  },
+  {
+   "label": "StarKist",
+   "qid": "Q23461978",
+   "fame": 0.26,
+   "also": []
+  },
+  {
+   "label": "Betty's Burgers",
+   "qid": "Q109406096",
+   "fame": 0.258,
+   "also": []
+  },
+  {
+   "label": "Pace Foods",
+   "qid": "Q7121899",
+   "fame": 0.251,
+   "also": []
+  },
+  {
+   "label": "United Dairy Farmers",
+   "qid": "Q7887677",
+   "fame": 0.25,
+   "also": [
+    "UDF"
+   ]
+  },
+  {
+   "label": "Droste",
+   "qid": "Q2119009",
+   "fame": 0.245,
+   "also": [
+    "Firma Droste",
+    "Droste's Cacao- en Chocoladefabrieken"
+   ]
+  },
+  {
+   "label": "Carr's",
+   "qid": "Q5045951",
+   "fame": 0.244,
+   "also": []
+  },
+  {
+   "label": "Cooke Inc.",
+   "qid": "Q118255683",
+   "fame": 0.24,
+   "also": []
+  },
+  {
+   "label": "A Twosome Place",
+   "qid": "Q12621301",
+   "fame": 0.235,
+   "also": []
+  },
+  {
+   "label": "Buitoni",
+   "qid": "Q1003155",
+   "fame": 0.232,
+   "also": []
+  },
+  {
+   "label": "Rowntree Mackintosh Confectionery",
+   "qid": "Q18162099",
+   "fame": 0.23,
+   "also": []
+  },
+  {
+   "label": "Stella D'oro Biscuit Company",
+   "qid": "Q7607050",
+   "fame": 0.227,
+   "also": [
+    "Stella D'oro"
+   ]
+  },
+  {
+   "label": "Delimondo",
+   "qid": "Q129642122",
+   "fame": 0.224,
+   "also": [
+    "Deli Mondo Food Specialities Inc."
+   ]
+  },
+  {
+   "label": "Organic Valley",
+   "qid": "Q7101824",
+   "fame": 0.221,
+   "also": []
+  },
+  {
+   "label": "Doutor Coffee",
+   "qid": "Q5302338",
+   "fame": 0.219,
+   "also": []
+  },
+  {
+   "label": "Nestlé Waters",
+   "qid": "Q3338446",
+   "fame": 0.217,
+   "also": [
+    "Peranel"
+   ]
+  },
+  {
+   "label": "Coca-Cola Beverages Africa",
+   "qid": "Q18636508",
+   "fame": 0.211,
+   "also": [
+    "Coca-Cola South African Bottling Company",
+    "Sabco"
+   ]
+  },
+  {
+   "label": "UCC Ueshima Coffee Co.",
+   "qid": "Q1185060",
+   "fame": 0.202,
+   "also": [
+    "Ueshima Coffee"
+   ]
+  },
+  {
+   "label": "Mado",
+   "qid": "Q17116336",
+   "fame": 0.199,
+   "also": []
+  },
+  {
+   "label": "ABC Heinz Indonesia",
+   "qid": "Q19871383",
+   "fame": 0.196,
+   "also": [
+    "ABC",
+    "Heinz ABC"
+   ]
+  },
+  {
+   "label": "Anglo-Swiss Condensed Milk Company",
+   "qid": "Q15263642",
+   "fame": 0.191,
+   "also": []
+  },
+  {
+   "label": "Grippos",
+   "qid": "Q5609594",
+   "fame": 0.191,
+   "also": []
+  },
+  {
+   "label": "Menier Chocolate",
+   "qid": "Q1581054",
+   "fame": 0.191,
+   "also": []
+  },
+  {
+   "label": "Toyo Suisan",
+   "qid": "Q7830633",
+   "fame": 0.19,
+   "also": []
+  },
+  {
+   "label": "Progresso",
+   "qid": "Q88900689",
+   "fame": 0.188,
+   "also": []
+  },
+  {
+   "label": "AJE Group",
+   "qid": "Q4699710",
+   "fame": 0.185,
+   "also": []
+  },
+  {
+   "label": "Calumet Baking Powder Company",
+   "qid": "Q5024066",
+   "fame": 0.183,
+   "also": []
+  },
+  {
+   "label": "Mega MGC Coffee",
+   "qid": "Q120998343",
+   "fame": 0.173,
+   "also": [
+    "MGC"
+   ]
+  },
+  {
+   "label": "Hijos de Rivera",
+   "qid": "Q2638082",
+   "fame": 0.167,
+   "also": [
+    "Hijos de Rivera Brewery",
+    "HdR",
+    "La Estrella de Galicia"
+   ]
+  },
+  {
+   "label": "Ediya Coffee",
+   "qid": "Q12611298",
+   "fame": 0.165,
+   "also": []
+  },
+  {
+   "label": "Chi Forest",
+   "qid": "Q98074329",
+   "fame": 0.163,
+   "also": [
+    "Genki Forest"
+   ]
+  },
+  {
+   "label": "Magic Spoon",
+   "qid": "Q113489440",
+   "fame": 0.161,
+   "also": []
+  },
+  {
+   "label": "Compose Coffee",
+   "qid": "Q120997937",
+   "fame": 0.155,
+   "also": []
+  },
+  {
+   "label": "Miyoko's Creamery",
+   "qid": "Q85846680",
+   "fame": 0.153,
+   "also": [
+    "Miyoko's Kitchen"
+   ]
+  },
+  {
+   "label": "Dairy Farmers",
+   "qid": "Q5209563",
+   "fame": 0.152,
+   "also": [
+    "Dairy Farmers Pty Ltd"
+   ]
+  },
+  {
+   "label": "Herta Foods",
+   "qid": "Q1614599",
+   "fame": 0.148,
+   "also": []
+  },
+  {
+   "label": "Coca-Cola İçecek",
+   "qid": "Q16988436",
+   "fame": 0.146,
+   "also": []
+  },
+  {
+   "label": "Peppes Pizza",
+   "qid": "Q911973",
+   "fame": 0.146,
+   "also": [
+    "Peppes"
+   ]
+  },
+  {
+   "label": "Hoadley's Chocolates",
+   "qid": "Q98861918",
+   "fame": 0.144,
+   "also": [
+    "Hoadley's Chocolates Ltd."
+   ]
+  },
+  {
+   "label": "Coolhaus",
+   "qid": "Q18149417",
+   "fame": 0.143,
+   "also": []
+  },
+  {
+   "label": "Fan Milk",
+   "qid": "Q5433556",
+   "fame": 0.143,
+   "also": []
+  },
+  {
+   "label": "Havanna Argentina",
+   "qid": "Q2900869",
+   "fame": 0.142,
+   "also": [
+    "Havanna",
+    "Alfajores Havanna",
+    "Havanna Holding",
+    "Havanna S.A."
+   ]
+  },
+  {
+   "label": "Unox",
+   "qid": "Q2800478",
+   "fame": 0.141,
+   "also": []
+  },
+  {
+   "label": "Hsu Fu Chi",
+   "qid": "Q11070875",
+   "fame": 0.132,
+   "also": [
+    "Hsu Fu Chi International Limited"
+   ]
+  },
+  {
+   "label": "Heide Candy Company",
+   "qid": "Q5698622",
+   "fame": 0.13,
+   "also": []
+  },
+  {
+   "label": "Colavita",
+   "qid": "Q25712512",
+   "fame": 0.127,
+   "also": []
+  },
+  {
+   "label": "Royal Greenland",
+   "qid": "Q473312",
+   "fame": 0.122,
+   "also": []
+  },
+  {
+   "label": "Peanut Butter & Co.",
+   "qid": "Q7157918",
+   "fame": 0.118,
+   "also": []
+  },
+  {
+   "label": "Gregory's",
+   "qid": "Q62273834",
+   "fame": 0.115,
+   "also": [
+    "Gregory's Micromeals",
+    "Gregory's Micromeals & Coffeeright"
+   ]
+  },
+  {
+   "label": "Cook Trading Ltd",
+   "qid": "Q5013417",
+   "fame": 0.11,
+   "also": [
+    "Cook Trading",
+    "Cook",
+    "Cook Food",
+    "Cook Food Limited",
+    "Cook Food Ltd",
+    "Cook Trading Limited"
+   ]
+  },
+  {
+   "label": "Yoplait Liberté Canada",
+   "qid": "Q3236427",
+   "fame": 0.107,
+   "also": [
+    "Liberté Inc.",
+    "Liberte Natural Foods"
+   ]
+  },
+  {
+   "label": "San Remo Macaroni Company",
+   "qid": "Q7415244",
+   "fame": 0.106,
+   "also": [
+    "San Remo",
+    "San Remo Macaroni Company Pty Ltd"
+   ]
+  },
+  {
+   "label": "Paik's Coffee",
+   "qid": "Q55730575",
+   "fame": 0.105,
+   "also": []
+  },
+  {
+   "label": "Tamek",
+   "qid": "Q20471647",
+   "fame": 0.103,
+   "also": [
+    "Tamek Holding"
+   ]
+  },
+  {
+   "label": "Yamamotoyama",
+   "qid": "Q11469017",
+   "fame": 0.103,
+   "also": []
+  },
+  {
+   "label": "Rip Van Wafels",
+   "qid": "Q109657185",
+   "fame": 0.097,
+   "also": []
+  },
+  {
+   "label": "Mellin's Food",
+   "qid": "Q25245340",
+   "fame": 0.091,
+   "also": []
+  },
+  {
+   "label": "Burrow Hill Cider Farm",
+   "qid": "Q5000495",
+   "fame": 0.081,
+   "also": []
+  },
+  {
+   "label": "Les Domaines Agricoles",
+   "qid": "Q16932540",
+   "fame": 0.077,
+   "also": []
+  },
+  {
+   "label": "Brown and Haley",
+   "qid": "Q4976356",
+   "fame": 0.07,
+   "also": []
+  },
+  {
+   "label": "Grupo Calvo",
+   "qid": "Q3392115",
+   "fame": 0.067,
+   "also": []
+  },
+  {
+   "label": "Continental",
+   "qid": "Q5165227",
+   "fame": 0.066,
+   "also": []
+  },
+  {
+   "label": "Aero Biscuits",
+   "qid": "Q16205435",
+   "fame": 0.064,
+   "also": []
+  },
+  {
+   "label": "Dardanel",
+   "qid": "Q17513065",
+   "fame": 0.049,
+   "also": []
+  },
+  {
+   "label": "Coca-Cola Bottlers Uzbekistan",
+   "qid": "Q104829814",
+   "fame": 0.035,
+   "also": []
+  },
+  {
+   "label": "Fix & Fogg",
+   "qid": "Q124327984",
+   "fame": 0.03,
+   "also": []
+  },
+  {
+   "label": "VBites",
+   "qid": "Q7906608",
+   "fame": 0.029,
+   "also": [
+    "VBites Foods Limited"
+   ]
+  },
+  {
+   "label": "Saarioinen",
+   "qid": "Q18689136",
+   "fame": 0.025,
+   "also": []
+  },
+  {
+   "label": "Acesur",
+   "qid": "Q2822972",
+   "fame": 0.024,
+   "also": []
+  },
+  {
+   "label": "Solo Foods",
+   "qid": "Q7558462",
+   "fame": 0.024,
+   "also": []
+  },
+  {
+   "label": "Ehrmann Commonwealth Dairy",
+   "qid": "Q28222491",
+   "fame": 0.018,
+   "also": []
+  },
+  {
+   "label": "Toro",
+   "qid": "Q4587645",
+   "fame": 0.016,
+   "also": []
+  },
+  {
+   "label": "Peter Kölln KGaA",
+   "qid": "Q2076516",
+   "fame": 0.015,
+   "also": [
+    "Peter Kölln"
+   ]
+  },
+  {
+   "label": "Tomorrow Farms",
+   "qid": "Q129162824",
+   "fame": 0.014,
+   "also": []
+  },
+  {
+   "label": "Stern's Pickle Works",
+   "qid": "Q17088980",
+   "fame": 0.007,
+   "also": [
+    "Stern Pickle Company",
+    "Stern's Products"
+   ]
+  },
+  {
+   "label": "Shurfine",
+   "qid": "Q7505391",
+   "fame": 0.004,
+   "also": []
+  },
+  {
+   "label": "African Food Network",
+   "qid": "Q108392016",
+   "fame": 0,
+   "also": [
+    "Afri Food Network"
+   ]
+  },
+  {
+   "label": "Alfred Ritter GmbH & Co. KG",
+   "qid": "Q5340109",
+   "fame": 0,
+   "also": [
+    "Alfred Ritter"
+   ]
+  },
+  {
+   "label": "Chelsea Milling Company",
+   "qid": "Q137102039",
+   "fame": 0,
+   "also": [
+    "Chelsea Roller Mill"
+   ]
+  },
+  {
+   "label": "Country Foods",
+   "qid": "Q39057725",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Damavand Mineral Water",
+   "qid": "Q5212063",
+   "fame": 0,
+   "also": [
+    "Damavand Mineral Water Co.",
+    "Damavand Company",
+    "Damavand Water"
+   ]
+  },
+  {
+   "label": "Fino Factories & California Soups",
+   "qid": "Q96656495",
+   "fame": 0,
+   "also": [
+    "Fino Factories"
+   ]
+  },
+  {
+   "label": "Hojicha Co.",
+   "qid": "Q113126722",
+   "fame": 0,
+   "also": [
+    "HOJICHA TRADING CO. LTD."
+   ]
+  },
+  {
+   "label": "Jimmy's Pies",
+   "qid": "Q104865134",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Lignell & Piispanen",
+   "qid": "Q11875761",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Macsween",
+   "qid": "Q124372790",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Maketū Pies",
+   "qid": "Q138673088",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Nancy's Fancy",
+   "qid": "Q29572807",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Norsk Soyamelfabrikk",
+   "qid": "Q7053451",
+   "fame": 0,
+   "also": []
+  }
+ ]
+}

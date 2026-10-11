@@ -1,0 +1,191 @@
+{
+ "id": "table.inventions.things-and-inventors",
+ "kind": "table",
+ "title": "Famous things and who invented them",
+ "genre": "science-math-tech",
+ "category": "inventions",
+ "topic": "inventors",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?invLabel WHERE { { SELECT ?item (SAMPLE(?i) AS ?inv) (COUNT(DISTINCT ?i) AS ?nC) WHERE { ?item wdt:P61 ?i . ?i wdt:P31 wd:Q5 . ?item wikibase:sitelinks ?s . FILTER(?s >= 40) MINUS { VALUES ?bad { wd:Q6256 wd:Q3624078 wd:Q82794 wd:Q486972 wd:Q9788 wd:Q33742 wd:Q3305213 wd:Q1656682 wd:Q34770 wd:Q8134 wd:Q5 wd:Q7278 wd:Q35120 } ?item wdt:P31/wdt:P279* ?bad } } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T01:35:15.468Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T01:35:15.468Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "inventor",
+   "label": "Inventor",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "invention",
+  "many": "inventions",
+  "capitalise": true,
+  "lowerInProse": true,
+  "hookAsk": "Which invention {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "inventor": {
+    "role": "code",
+    "pick": "Who invented {label}?",
+    "statement": "{label} was invented by {value}.",
+    "match": "Match each invention to its inventor.",
+    "reverse": "Which of these did {value} invent?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "HTTP cookie",
+   "qid": "Q178995",
+   "fame": 0.801,
+   "inventor": "Lou Montulli",
+   "description": "small piece of data sent from a website and stored on the user's computer by the user's web browser",
+   "hook": "lets websites remember who you are by leaving a small bit of data in your browser",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "regular expression",
+   "qid": "Q185612",
+   "fame": 0.658,
+   "inventor": "Stephen Cole Kleene",
+   "description": "sequence of characters that forms a search pattern",
+   "hook": "uses a compact pattern of symbols to find and match chunks of text",
+   "known": 0.05,
+   "kind": "tech"
+  },
+  {
+   "label": "bikini",
+   "qid": "Q14090",
+   "fame": 0.56,
+   "inventor": "Louis Réard",
+   "description": "two-piece women's swimwear",
+   "hook": "is a skimpy two-piece beach outfit named after a Pacific atoll used for nuclear tests",
+   "known": 0.4,
+   "kind": "clothing"
+  },
+  {
+   "label": "matryoshka doll",
+   "qid": "Q17297",
+   "fame": 0.539,
+   "inventor": "Vasily Zvyozdochkin",
+   "description": "Japanese-created Russian cultural icon: set of wooden dolls of decreasing size placed one inside another",
+   "hook": "is a set of hollow wooden figures that nest inside one another, each smaller than the last",
+   "known": 0.2,
+   "kind": "cultural"
+  },
+  {
+   "label": "radar",
+   "qid": "Q47528",
+   "fame": 0.521,
+   "inventor": "Christian Hülsmeyer",
+   "description": "object detection system based on radio waves",
+   "hook": "bounces radio waves off distant objects to reveal their position, first used to warn ships of collisions",
+   "known": 0.1,
+   "kind": "tech"
+  },
+  {
+   "label": "dynamite",
+   "qid": "Q80728",
+   "fame": 0.505,
+   "inventor": "Alfred Nobel",
+   "description": "explosive preparation of stabilized nitroglycerin",
+   "hook": "tamed a dangerously unstable liquid by soaking it into clay, making blasting safer for miners",
+   "known": 0.8,
+   "kind": "tool"
+  },
+  {
+   "label": "margarine",
+   "qid": "Q4287",
+   "fame": 0.502,
+   "inventor": "Hippolyte Mège-Mouriès",
+   "description": "semi-solid oily spread often used as a butter substitute",
+   "hook": "was developed as a cheaper spread for the army and the poor when butter ran short",
+   "known": 0.05,
+   "kind": "food"
+  },
+  {
+   "label": "nachos",
+   "qid": "Q466430",
+   "fame": 0.477,
+   "inventor": "Ignacio Anaya García",
+   "description": "Mexican dish",
+   "hook": "was whipped up at a border restaurant from tortilla chips and melted cheese for hungry guests",
+   "known": 0.05,
+   "kind": "food"
+  },
+  {
+   "label": "coaxial cable",
+   "qid": "Q183389",
+   "fame": 0.474,
+   "inventor": "Oliver Heaviside",
+   "description": "type of cable",
+   "hook": "carries signals through a central wire wrapped in insulation and a metal shield, as in TV antenna lines",
+   "known": 0.05,
+   "kind": "tech"
+  },
+  {
+   "label": "gyroscope",
+   "qid": "Q483400",
+   "fame": 0.474,
+   "inventor": "Léon Foucault",
+   "description": "device for measuring or maintaining orientation and direction",
+   "hook": "spins a heavy wheel to keep its direction, and was used to demonstrate that the Earth rotates",
+   "known": 0.2,
+   "kind": "device"
+  },
+  {
+   "label": "kaleidoscope",
+   "qid": "Q180049",
+   "fame": 0.473,
+   "inventor": "David Brewster",
+   "description": "cylinder with mirrors containing loose, colored objects such as beads or pebbles and bits of glass",
+   "hook": "turns bits of colored glass into endless symmetrical patterns using angled mirrors",
+   "known": 0.05,
+   "kind": "device"
+  },
+  {
+   "label": "ballpoint pen",
+   "qid": "Q160137",
+   "fame": 0.467,
+   "inventor": "Marcel Bich",
+   "description": "writing implement",
+   "hook": "writes using a tiny rolling metal tip and quick-drying ink, and became a cheap disposable staple",
+   "known": 0.1,
+   "kind": "tool"
+  },
+  {
+   "label": "hovercraft",
+   "qid": "Q185757",
+   "fame": 0.453,
+   "inventor": "Christopher Cockerell",
+   "description": "vehicle capable of movement within ground effect at speed or stationary over all surfaces without contact",
+   "hook": "rides on a cushion of air held under a flexible skirt, crossing both water and land",
+   "known": 0.1,
+   "kind": "device"
+  }
+ ]
+}

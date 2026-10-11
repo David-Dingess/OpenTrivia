@@ -1,0 +1,127 @@
+{
+ "id": "table.food-and-drink.chili-heat",
+ "kind": "table",
+ "title": "Chili peppers by heat (Scoville)",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "ingredients",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?shu WHERE { { SELECT ?item ?sitelinks (MAX(?s) AS ?shu) WHERE { ?item wdt:P2658 ?s ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 5) FILTER NOT EXISTS { ?item wdt:P274 [] } } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 200 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-24T23:06:04.741Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-24T23:06:04.741Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "scoville_max",
+   "label": "Heat (top of range)",
+   "unit": "SHU",
+   "type": "number"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "item",
+  "many": "items",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Pepper X",
+   "qid": "Q41081289",
+   "fame": 0.572,
+   "scoville_max": 3180000,
+   "description": "pepper bred by Ed Currie"
+  },
+  {
+   "label": "Carolina Reaper",
+   "qid": "Q15427475",
+   "fame": 0.557,
+   "scoville_max": 1569300,
+   "description": "exceptionally hot cultivar of the Capsicum chinense plant"
+  },
+  {
+   "label": "jalapeño",
+   "qid": "Q504133",
+   "fame": 0.52,
+   "scoville_max": 20000,
+   "description": "hot pepper"
+  },
+  {
+   "label": "bhut jolokia",
+   "qid": "Q426850",
+   "fame": 0.516,
+   "scoville_max": 1041427,
+   "description": "chili pepper cultivar cultivated in Northeast India"
+  },
+  {
+   "label": "habanero",
+   "qid": "Q764375",
+   "fame": 0.516,
+   "scoville_max": 577000,
+   "description": "strain of pepper (Capsicum)"
+  },
+  {
+   "label": "cayenne pepper",
+   "qid": "Q6598",
+   "fame": 0.511,
+   "scoville_max": 50000,
+   "description": "hot chili pepper used to flavor dishes"
+  },
+  {
+   "label": "bell pepper",
+   "qid": "Q1548030",
+   "fame": 0.509,
+   "scoville_max": 0,
+   "description": "group of fruits of Capsicum annuum"
+  },
+  {
+   "label": "chipotle",
+   "qid": "Q860808",
+   "fame": 0.49,
+   "scoville_max": 6500,
+   "description": "smoke-dried jalapeño"
+  },
+  {
+   "label": "bird's eye chili",
+   "qid": "Q432426",
+   "fame": 0.489,
+   "scoville_max": 100000,
+   "description": "variety of chili pepper"
+  },
+  {
+   "label": "Scotch bonnet",
+   "qid": "Q466854",
+   "fame": 0.481,
+   "scoville_max": 400000,
+   "description": "cultivar of chili pepper"
+  },
+  {
+   "label": "piri piri",
+   "qid": "Q512580",
+   "fame": 0.461,
+   "scoville_max": 112500,
+   "description": "cultivar of Capsicum frutescens"
+  },
+  {
+   "label": "Serrano pepper",
+   "qid": "Q617583",
+   "fame": 0.45,
+   "scoville_max": 23000,
+   "description": "Mexican variety of chili pepper"
+  }
+ ]
+}

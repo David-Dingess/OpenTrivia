@@ -1,0 +1,209 @@
+{
+ "id": "table.pop-culture.famous-robots",
+ "kind": "table",
+ "title": "Famous robots: where they come from",
+ "genre": "general",
+ "category": "pop-culture",
+ "topic": "robots",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?originLabel WHERE { VALUES (?item ?originLabel) { (wd:Q51788 \"Star Wars\") (wd:Q51787 \"Star Wars\") (wd:Q21541731 \"Star Wars\") (wd:Q28039487 \"Rogue One\") (wd:Q2339213 \"Star Wars\") (wd:Q151583 \"Transformers\") (wd:Q828473 \"Transformers\") (wd:Q305245 \"Transformers\") (wd:Q909028 \"Transformers\") (wd:Q2076468 \"Transformers\") (wd:Q750023 \"Futurama\") (wd:Q4392247 \"Futurama\") (wd:Q833933 \"2001: A Space Odyssey\") (wd:Q264685 \"The Hitchhiker's Guide to the Galaxy\") (wd:Q22983 \"Star Trek\") (wd:Q3182850 \"Short Circuit\") (wd:Q108657408 \"The Jetsons\") (wd:Q2277376 \"Forbidden Planet\") (wd:Q3267424 \"The Day the Earth Stood Still\") (wd:Q28019559 \"Big Hero 6\") (wd:Q605125 \"Portal\") (wd:Q2327890 \"Terminator 2: Judgment Day\") (wd:Q2037770 \"Aliens\") (wd:Q2985575 \"Doctor Who\") (wd:Q853715 \"Doctor Who\") (wd:Q3008212 \"Doctor Who\") (wd:Q6439846 \"Red Dwarf\") (wd:Q2475517 \"Mystery Science Theater 3000\") (wd:Q2185931 \"Mystery Science Theater 3000\") (wd:Q2552343 \"Ratchet & Clank\") (wd:Q125862784 \"A.I. Artificial Intelligence\") (wd:Q1168555 \"The Wonderful Wizard of Oz\") (wd:Q16868728 \"Borderlands\") (wd:Q65929400 \"Blade Runner\") (wd:Q113125187 \"Interstellar\") (wd:Q54161627 \"Westworld\") (wd:Q10327120 \"Metropolis\") (wd:Q2474195 \"Marvel Comics\") (wd:Q2307071 \"Marvel Comics\") (wd:Q65089566 \"Iron Man\") (wd:Q782181 \"X-Men\") (wd:Q3174269 \"Capcom\") (wd:Q7673732 \"Ghost in the Shell\") (wd:Q4540179 \"Lost in Space\") (wd:Q582567 \"Battlestar Galactica\") (wd:Q297769 \"Honda\") (wd:Q42330811 \"Hanson Robotics\") (wd:Q17190252 \"SoftBank Robotics\") (wd:Q403438 \"Sony\") (wd:Q1516542 \"General Motors\") (wd:Q74050 \"iRobot\") (wd:Q14248859 \"Boston Dynamics\") (wd:Q108167797 \"Tesla\") (wd:Q852268 \"NASA\") (wd:Q48485 \"NASA\") (wd:Q87749354 \"NASA\") (wd:Q193538 \"NASA\") (wd:Q176276 \"NASA\") (wd:Q1770537 \"NASA\") (wd:Q1156500 \"Nintendo\") (wd:Q1112027 \"Westinghouse\") (wd:Q1810639 \"SRI International\") (wd:Q932209 \"Hasbro\") (wd:Q953727 \"WowWee\") (wd:Q3094442 \"Japan\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T06:28:20.616Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T12:57:02.311Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "origin",
+   "label": "Where it comes from",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "robot",
+  "many": "robots",
+  "columns": {
+   "origin": {
+    "role": "link",
+    "pick": "Which story, franchise or organisation does {label} come from?",
+    "statement": "{label} comes from {value}.",
+    "match": "Match each robot to where it comes from.",
+    "odd": "Three of these robots come from {value}. Which one does not?",
+    "all": "Tap all {n} robots that come from {value}.",
+    "reverse": "Which of these robots comes from {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Optimus Prime",
+   "qid": "Q151583",
+   "fame": 0.635,
+   "origin": "Transformers",
+   "kind": "fictional-robot",
+   "description": "character from the Transformers franchise",
+   "hook": "is the noble truck-transforming leader of the heroic Autobots",
+   "known": 0.85
+  },
+  {
+   "label": "Ultron",
+   "qid": "Q2474195",
+   "fame": 0.572,
+   "origin": "Marvel Comics",
+   "kind": "fictional-robot",
+   "description": "Marvel Comics character",
+   "hook": "is a robot villain who turns on his creator and tries to wipe out humanity to bring peace",
+   "known": 0.7
+  },
+  {
+   "label": "HAL 9000",
+   "qid": "Q833933",
+   "fame": 0.561,
+   "origin": "Space Odyssey",
+   "kind": "fictional-robot",
+   "description": "fictional character in Arthur C. Clarke's Space Odyssey series",
+   "hook": "is the calm, red-eyed shipboard computer that turns on its crew and refuses to open the pod bay doors",
+   "known": 0.75
+  },
+  {
+   "label": "Vision",
+   "qid": "Q2307071",
+   "fame": 0.542,
+   "origin": "Marvel Comics",
+   "kind": "fictional-robot",
+   "description": "fictional character in Marvel Comics",
+   "hook": "is a synthetic android hero who joins the Avengers after being built by a villain",
+   "known": 0.65
+  },
+  {
+   "label": "J.A.R.V.I.S.",
+   "qid": "Q65089566",
+   "fame": 0.538,
+   "origin": "Marvel Comics",
+   "kind": "fictional-robot",
+   "description": "Fictional Artificial intelligence appearing in Marvel Comics",
+   "hook": "is Tony Stark's witty AI butler who helps run his Iron Man suits",
+   "known": 0.7
+  },
+  {
+   "label": "Megatron",
+   "qid": "Q828473",
+   "fame": 0.535,
+   "origin": "Transformers",
+   "kind": "fictional-robot",
+   "description": "character from the Transformers franchise",
+   "hook": "is the tyrannical leader of the villainous Decepticons and archenemy of the Autobots",
+   "known": 0.8
+  },
+  {
+   "label": "Curiosity",
+   "qid": "Q48485",
+   "fame": 0.523,
+   "origin": "NASA",
+   "kind": "real-robot",
+   "description": "American robotic rover exploring Gale Crater on Mars",
+   "hook": "is a car-sized rover that explores Gale Crater and a tall mountain at its center",
+   "known": 0.65
+  },
+  {
+   "label": "Perseverance",
+   "qid": "Q87749354",
+   "fame": 0.506,
+   "origin": "NASA",
+   "kind": "real-robot",
+   "description": "American robotic rover exploring Jezero Crater on Mars",
+   "hook": "is a car-sized rover hunting for signs of ancient life in an old river delta",
+   "known": 0.45
+  },
+  {
+   "label": "T-1000",
+   "qid": "Q2327890",
+   "fame": 0.494,
+   "origin": "Terminator 2: Judgment Day",
+   "kind": "fictional-robot",
+   "description": "robotic antagonist in the film \"Terminator 2: Judgment Day\"",
+   "hook": "is a shape-shifting liquid-metal killer sent back in time to hunt young John Connor",
+   "known": 0.85
+  },
+  {
+   "label": "Bumblebee",
+   "qid": "Q305245",
+   "fame": 0.471,
+   "origin": "Transformers",
+   "kind": "fictional-robot",
+   "description": "character from the Transformers franchise",
+   "hook": "is the small yellow Autobot who transforms into a Volkswagen Beetle or a Camaro",
+   "known": 0.75
+  },
+  {
+   "label": "Starscream",
+   "qid": "Q909028",
+   "fame": 0.462,
+   "origin": "Transformers",
+   "kind": "fictional-robot",
+   "description": "character from the Transformers franchise",
+   "hook": "is the treacherous, jet-transforming second-in-command of the Decepticons who schemes against his leader",
+   "known": 0.65
+  },
+  {
+   "label": "Opportunity",
+   "qid": "Q193538",
+   "fame": 0.452,
+   "origin": "NASA",
+   "kind": "real-robot",
+   "description": "former NASA Mars rover",
+   "hook": "is the long-lived rover nicknamed Oppy that kept driving for 14 years on a 90-day mission",
+   "known": 0.4
+  },
+  {
+   "label": "Furby",
+   "qid": "Q932209",
+   "fame": 0.451,
+   "origin": "Hasbro",
+   "kind": "real-robot",
+   "description": "electronic robotic toy",
+   "hook": "is a furry owl-like electronic toy that speaks its own language and was a must-have holiday gift",
+   "known": 0.65
+  },
+  {
+   "label": "Data",
+   "qid": "Q22983",
+   "fame": 0.45,
+   "origin": "Star Trek",
+   "kind": "fictional-robot",
+   "description": "fictional character in the fictional Star Trek universe",
+   "hook": "is the pale, curious android officer on the USS Enterprise who longs to be human",
+   "known": 0.75
+  },
+  {
+   "label": "GLaDOS",
+   "qid": "Q605125",
+   "fame": 0.45,
+   "origin": "Portal",
+   "kind": "fictional-robot",
+   "description": "fictional artificially intelligent computer system in the Portal series of video games",
+   "hook": null,
+   "known": 0.3
+  }
+ ]
+}

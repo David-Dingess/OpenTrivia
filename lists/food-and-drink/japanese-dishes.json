@@ -1,0 +1,180 @@
+{
+ "id": "list.food-and-drink.japanese-dishes",
+ "title": "Japanese dishes",
+ "prompt": "Name a Japanese dish",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "world-cuisine",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31/wdt:P279? wd:Q746549 ; wdt:P495 wd:Q17 . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-10-04T06:55:40.096Z"
+ },
+ "rows": [
+  {
+   "label": "takoyaki",
+   "qid": "Q905527",
+   "fame": 0.498,
+   "also": []
+  },
+  {
+   "label": "torikatsu",
+   "qid": "Q7825801",
+   "fame": 0.461,
+   "also": [
+    "Chicken katsu",
+    "chicken cutlet"
+   ]
+  },
+  {
+   "label": "tonkatsu",
+   "qid": "Q1142841",
+   "fame": 0.455,
+   "also": []
+  },
+  {
+   "label": "oyakodon",
+   "qid": "Q1304390",
+   "fame": 0.431,
+   "also": [
+    "chicken and egg bowl"
+   ]
+  },
+  {
+   "label": "yakiniku",
+   "qid": "Q2431975",
+   "fame": 0.425,
+   "also": []
+  },
+  {
+   "label": "robatayaki",
+   "qid": "Q5364840",
+   "fame": 0.348,
+   "also": []
+  },
+  {
+   "label": "chawanmushi",
+   "qid": "Q1068574",
+   "fame": 0.332,
+   "also": []
+  },
+  {
+   "label": "champon",
+   "qid": "Q703286",
+   "fame": 0.303,
+   "also": [
+    "chanpon"
+   ]
+  },
+  {
+   "label": "unadon",
+   "qid": "Q1352897",
+   "fame": 0.29,
+   "also": []
+  },
+  {
+   "label": "osechi",
+   "qid": "Q862557",
+   "fame": 0.288,
+   "also": [
+    "osechi ryōri"
+   ]
+  },
+  {
+   "label": "Onsen tamago",
+   "qid": "Q453174",
+   "fame": 0.271,
+   "also": []
+  },
+  {
+   "label": "Okinawa soba",
+   "qid": "Q1136876",
+   "fame": 0.251,
+   "also": []
+  },
+  {
+   "label": "Zosui",
+   "qid": "Q2625025",
+   "fame": 0.23,
+   "also": []
+  },
+  {
+   "label": "Chinmi",
+   "qid": "Q464545",
+   "fame": 0.214,
+   "also": []
+  },
+  {
+   "label": "Kyaraben",
+   "qid": "Q3272930",
+   "fame": 0.183,
+   "also": [
+    "charaben"
+   ]
+  },
+  {
+   "label": "honey toast",
+   "qid": "Q11326596",
+   "fame": 0.179,
+   "also": []
+  },
+  {
+   "label": "ohaw",
+   "qid": "Q7080639",
+   "fame": 0.13,
+   "also": [
+    "rur"
+   ]
+  },
+  {
+   "label": "Negimaki",
+   "qid": "Q3301336",
+   "fame": 0.114,
+   "also": []
+  },
+  {
+   "label": "Kagoshima ramen",
+   "qid": "Q11676485",
+   "fame": 0.107,
+   "also": []
+  },
+  {
+   "label": "Konowata",
+   "qid": "Q1781865",
+   "fame": 0.107,
+   "also": []
+  },
+  {
+   "label": "dobin mushi",
+   "qid": "Q5286620",
+   "fame": 0.101,
+   "also": []
+  },
+  {
+   "label": "Mefun",
+   "qid": "Q6807955",
+   "fame": 0.068,
+   "also": []
+  },
+  {
+   "label": "Kashiwameshi",
+   "qid": "Q134562216",
+   "fame": 0.057,
+   "also": []
+  },
+  {
+   "label": "shirokuma",
+   "qid": "Q7498930",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Shoyumame",
+   "qid": "Q11269155",
+   "fame": 0,
+   "also": []
+  }
+ ]
+}

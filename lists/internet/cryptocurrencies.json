@@ -1,0 +1,528 @@
+{
+ "id": "list.internet.cryptocurrencies",
+ "title": "Cryptocurrencies",
+ "prompt": "Name a cryptocurrency",
+ "genre": "general",
+ "category": "internet",
+ "topic": "websites-and-apps",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q13479982 . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-09-30T13:50:57.895Z"
+ },
+ "rows": [
+  {
+   "label": "Bitcoin",
+   "qid": "Q131723",
+   "fame": 0.667,
+   "also": [
+    "BTC",
+    "XBT",
+    "Bitcoins"
+   ]
+  },
+  {
+   "label": "Ethereum",
+   "qid": "Q16783523",
+   "fame": 0.512,
+   "also": [
+    "Ether",
+    "ETH",
+    "ethereum.org",
+    "Ethereum blockchain",
+    "Ethereum network",
+    "Ethereum platform",
+    "ETH blockchain",
+    "ETH Network",
+    "Ethereum Chain",
+    "ETH Mainnet"
+   ]
+  },
+  {
+   "label": "Tether",
+   "qid": "Q47528658",
+   "fame": 0.498,
+   "also": [
+    "USDT"
+   ]
+  },
+  {
+   "label": "USD Coin",
+   "qid": "Q100781882",
+   "fame": 0.473,
+   "also": [
+    "USDC"
+   ]
+  },
+  {
+   "label": "Dogecoin",
+   "qid": "Q15377916",
+   "fame": 0.468,
+   "also": [
+    "DOGE"
+   ]
+  },
+  {
+   "label": "Solana",
+   "qid": "Q108695872",
+   "fame": 0.44,
+   "also": [
+    "SOL"
+   ]
+  },
+  {
+   "label": "Zcash",
+   "qid": "Q27148141",
+   "fame": 0.437,
+   "also": [
+    "ZEC"
+   ]
+  },
+  {
+   "label": "Monero",
+   "qid": "Q19893485",
+   "fame": 0.416,
+   "also": [
+    "Monero Portable",
+    "XMR",
+    "Bitmonero"
+   ]
+  },
+  {
+   "label": "Tron",
+   "qid": "Q47134419",
+   "fame": 0.349,
+   "also": [
+    "TRX",
+    "Tronix"
+   ]
+  },
+  {
+   "label": "Litecoin",
+   "qid": "Q4043030",
+   "fame": 0.346,
+   "also": [
+    "LTC",
+    "Litecoins"
+   ]
+  },
+  {
+   "label": "Worldcoin",
+   "qid": "Q118868596",
+   "fame": 0.345,
+   "also": [
+    "World",
+    "WLD"
+   ]
+  },
+  {
+   "label": "SHIBA INU",
+   "qid": "Q106853490",
+   "fame": 0.334,
+   "also": [
+    "SHIB",
+    "Shib coin",
+    "Shib token",
+    "Shiba coin",
+    "Shiba Inu coin",
+    "shiba inu token",
+    "Shiba token"
+   ]
+  },
+  {
+   "label": "Bitconnect",
+   "qid": "Q47457131",
+   "fame": 0.33,
+   "also": []
+  },
+  {
+   "label": "Bitcoin Cash",
+   "qid": "Q34328146",
+   "fame": 0.314,
+   "also": [
+    "BCH",
+    "BCC",
+    "Bcash"
+   ]
+  },
+  {
+   "label": "Polygon",
+   "qid": "Q111446062",
+   "fame": 0.309,
+   "also": [
+    "Matic Network",
+    "Polygon blockchain"
+   ]
+  },
+  {
+   "label": "Cardano",
+   "qid": "Q47273538",
+   "fame": 0.299,
+   "also": [
+    "ADA"
+   ]
+  },
+  {
+   "label": "Near protocol",
+   "qid": "Q124436383",
+   "fame": 0.296,
+   "also": [
+    "NEAR"
+   ]
+  },
+  {
+   "label": "Avalanche",
+   "qid": "Q110233099",
+   "fame": 0.291,
+   "also": [
+    "AVAX"
+   ]
+  },
+  {
+   "label": "SafeMoon",
+   "qid": "Q107272578",
+   "fame": 0.291,
+   "also": [
+    "SFM"
+   ]
+  },
+  {
+   "label": "Chainlink",
+   "qid": "Q100804984",
+   "fame": 0.288,
+   "also": [
+    "LINK"
+   ]
+  },
+  {
+   "label": "Diem",
+   "qid": "Q64684932",
+   "fame": 0.287,
+   "also": [
+    "Libra",
+    "Diem Association",
+    "Diem Project",
+    "Facebook Coin",
+    "GlobalCoin",
+    "Libra Project"
+   ]
+  },
+  {
+   "label": "Filecoin",
+   "qid": "Q39048590",
+   "fame": 0.276,
+   "also": [
+    "FIL"
+   ]
+  },
+  {
+   "label": "Aave",
+   "qid": "Q125457725",
+   "fame": 0.268,
+   "also": [
+    "Aave Protocol",
+    "EthLend"
+   ]
+  },
+  {
+   "label": "Polkadot",
+   "qid": "Q46166265",
+   "fame": 0.26,
+   "also": []
+  },
+  {
+   "label": "Dai",
+   "qid": "Q102230654",
+   "fame": 0.25,
+   "also": []
+  },
+  {
+   "label": "Ethereum Classic",
+   "qid": "Q29583124",
+   "fame": 0.245,
+   "also": [
+    "ETC"
+   ]
+  },
+  {
+   "label": "Bitcoin SV",
+   "qid": "Q59285013",
+   "fame": 0.234,
+   "also": [
+    "Bitcoin Satoshi Vision",
+    "BSV",
+    "Bitcoin Satoshi's Vision",
+    "BSV Blockchain"
+   ]
+  },
+  {
+   "label": "Algorand",
+   "qid": "Q30938181",
+   "fame": 0.233,
+   "also": [
+    "ALGO"
+   ]
+  },
+  {
+   "label": "MobileCoin",
+   "qid": "Q106609131",
+   "fame": 0.22,
+   "also": [
+    "MOB"
+   ]
+  },
+  {
+   "label": "Dash",
+   "qid": "Q17155887",
+   "fame": 0.216,
+   "also": [
+    "Darkcoin"
+   ]
+  },
+  {
+   "label": "IOTA",
+   "qid": "Q30504331",
+   "fame": 0.209,
+   "also": [
+    "iotafoundation.eth"
+   ]
+  },
+  {
+   "label": "Tezos",
+   "qid": "Q55290870",
+   "fame": 0.199,
+   "also": [
+    "XTZ"
+   ]
+  },
+  {
+   "label": "Bitcoin Gold",
+   "qid": "Q42148852",
+   "fame": 0.198,
+   "also": []
+  },
+  {
+   "label": "Namecoin",
+   "qid": "Q2577141",
+   "fame": 0.188,
+   "also": [
+    "NMC"
+   ]
+  },
+  {
+   "label": "Coinye",
+   "qid": "Q15614087",
+   "fame": 0.181,
+   "also": []
+  },
+  {
+   "label": "Nano",
+   "qid": "Q47512046",
+   "fame": 0.181,
+   "also": [
+    "XRB",
+    "XNO"
+   ]
+  },
+  {
+   "label": "petro",
+   "qid": "Q44707302",
+   "fame": 0.177,
+   "also": [
+    "petromoneda"
+   ]
+  },
+  {
+   "label": "Nxt",
+   "qid": "Q15916990",
+   "fame": 0.176,
+   "also": [
+    "Nxtcoin"
+   ]
+  },
+  {
+   "label": "Firo",
+   "qid": "Q85817021",
+   "fame": 0.174,
+   "also": [
+    "Zcoin"
+   ]
+  },
+  {
+   "label": "Zerocoin",
+   "qid": "Q13479984",
+   "fame": 0.172,
+   "also": [
+    "Zerocoin protocol"
+   ]
+  },
+  {
+   "label": "Peercoin",
+   "qid": "Q15177466",
+   "fame": 0.156,
+   "also": [
+    "PPC",
+    "PPCoin"
+   ]
+  },
+  {
+   "label": "Verge",
+   "qid": "Q46600518",
+   "fame": 0.148,
+   "also": [
+    "XVG"
+   ]
+  },
+  {
+   "label": "Counterparty",
+   "qid": "Q17001970",
+   "fame": 0.134,
+   "also": []
+  },
+  {
+   "label": "Auroracoin",
+   "qid": "Q15981447",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "NEO",
+   "qid": "Q47461682",
+   "fame": 0.127,
+   "also": []
+  },
+  {
+   "label": "Gridcoin",
+   "qid": "Q18572818",
+   "fame": 0.12,
+   "also": [
+    "GRC"
+   ]
+  },
+  {
+   "label": "AmbaCoin",
+   "qid": "Q85741160",
+   "fame": 0.105,
+   "also": []
+  },
+  {
+   "label": "Primecoin",
+   "qid": "Q15179199",
+   "fame": 0.093,
+   "also": [
+    "XPM"
+   ]
+  },
+  {
+   "label": "Vertcoin",
+   "qid": "Q28130189",
+   "fame": 0.086,
+   "also": [
+    "VTC"
+   ]
+  },
+  {
+   "label": "KodakCoin",
+   "qid": "Q47488338",
+   "fame": 0.082,
+   "also": []
+  },
+  {
+   "label": "Chia",
+   "qid": "Q105508272",
+   "fame": 0.067,
+   "also": []
+  },
+  {
+   "label": "Basic Attention Token",
+   "qid": "Q53039605",
+   "fame": 0.066,
+   "also": [
+    "BAT"
+   ]
+  },
+  {
+   "label": "WhopperCoin",
+   "qid": "Q104845047",
+   "fame": 0.06,
+   "also": []
+  },
+  {
+   "label": "Bitnation",
+   "qid": "Q28127134",
+   "fame": 0.057,
+   "also": []
+  },
+  {
+   "label": "MazaCoin",
+   "qid": "Q15966458",
+   "fame": 0.057,
+   "also": []
+  },
+  {
+   "label": "Binance Coin",
+   "qid": "Q106007400",
+   "fame": 0.039,
+   "also": [
+    "Binance",
+    "BNB",
+    "BNB coin"
+   ]
+  },
+  {
+   "label": "$LIBRA",
+   "qid": "Q132460475",
+   "fame": 0.023,
+   "also": []
+  },
+  {
+   "label": "Gram",
+   "qid": "Q53263815",
+   "fame": 0.013,
+   "also": [
+    "Telegram coin"
+   ]
+  },
+  {
+   "label": "Ada",
+   "qid": "Q105585426",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Arweave",
+   "qid": "Q129196013",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "estcoin",
+   "qid": "Q49966719",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Kin",
+   "qid": "Q48743082",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Royal Mint Gold",
+   "qid": "Q48651476",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "UnikoinGold",
+   "qid": "Q47519842",
+   "fame": 0,
+   "also": [
+    "UKG",
+    "Unikrn"
+   ]
+  }
+ ]
+}

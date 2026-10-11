@@ -1,0 +1,349 @@
+{
+ "id": "table.geography.longest-rivers",
+ "kind": "table",
+ "title": "Longest rivers (1,000 km and above)",
+ "genre": "society",
+ "category": "geography",
+ "topic": "rivers-and-lakes",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?length WHERE { { SELECT ?item (MAX(?l) AS ?length) WHERE { ?item wdt:P31 wd:Q4022 ; p:P2043/psn:P2043/wikibase:quantityAmount ?l . FILTER(?l >= 1000000) } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 329",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T00:57:21.026Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T00:57:21.026Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "length_km",
+   "label": "Length",
+   "unit": "km",
+   "type": "number",
+   "scale": "length-km"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "river",
+  "many": "rivers",
+  "hookAsk": "Which river {hook}?",
+  "hookStatement": "The {label} {hook}.",
+  "columns": {
+   "length_km": {
+    "role": "measure",
+    "compare": "Which is longer",
+    "display": "km",
+    "minRatio": 1.5
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Danube",
+   "qid": "Q1653",
+   "fame": 0.63,
+   "length_km": 2850,
+   "description": "second-longest river in Europe",
+   "hook": "flows through more countries than any other river in the world",
+   "known": 0.6,
+   "kind": "river"
+  },
+  {
+   "label": "Nile",
+   "qid": "Q3392",
+   "fame": 0.617,
+   "length_km": 6650,
+   "description": "major river in northeastern Africa",
+   "hook": "was the lifeline of an ancient civilization famous for pyramids",
+   "known": 0.95,
+   "kind": "river"
+  },
+  {
+   "label": "Mississippi River",
+   "qid": "Q1497",
+   "fame": 0.615,
+   "length_km": 3766,
+   "description": "primary river of the largest drainage basin in the United States",
+   "hook": "was central to a legendary era of steamboats and blues music",
+   "known": 0.8,
+   "kind": "river"
+  },
+  {
+   "label": "Ganges",
+   "qid": "Q5089",
+   "fame": 0.586,
+   "length_km": 2525,
+   "description": "major river in India",
+   "hook": "is considered sacred and holy by hundreds of millions of people",
+   "known": 0.6,
+   "kind": "river"
+  },
+  {
+   "label": "Rhine",
+   "qid": "Q584",
+   "fame": 0.577,
+   "length_km": 1233,
+   "description": "river in Western Europe to the North Sea",
+   "hook": "is lined with medieval castles perched on dramatic cliffs",
+   "known": 0.6,
+   "kind": "river"
+  },
+  {
+   "label": "Colorado River",
+   "qid": "Q1265",
+   "fame": 0.56,
+   "length_km": 2334,
+   "description": "major river in the western United States and Mexico",
+   "hook": "carved out a famous mile-deep canyon over countless ages",
+   "known": 0.8,
+   "kind": "river"
+  },
+  {
+   "label": "River Congo",
+   "qid": "Q3503",
+   "fame": 0.56,
+   "length_km": 4700,
+   "description": "river in central Africa",
+   "hook": "flows through dense rainforest and is the deepest river in the world",
+   "known": 0.4,
+   "kind": "river"
+  },
+  {
+   "label": "Yangtze River",
+   "qid": "Q5413",
+   "fame": 0.554,
+   "length_km": 6300,
+   "description": "Longest river in Asia, and the third-longest in the world",
+   "hook": "is the longest river in Asia and home to a massive hydroelectric dam",
+   "known": 0.6,
+   "kind": "river"
+  },
+  {
+   "label": "Yellow River",
+   "qid": "Q7355",
+   "fame": 0.552,
+   "length_km": 5464,
+   "description": "major river in China",
+   "hook": "carries so much silt that it colors the sea where it empties",
+   "known": 0.4,
+   "kind": "river"
+  },
+  {
+   "label": "Rio Grande",
+   "qid": "Q160636",
+   "fame": 0.542,
+   "length_km": 3051,
+   "description": "river originating in Colorado, flowing south through New Mexico, and forming part of the US-Mexico border along Texas until emptying into the Gulf of Mexico",
+   "hook": "forms a long stretch of an international border in the desert southwest",
+   "known": 0.6,
+   "kind": "river"
+  },
+  {
+   "label": "Ohio River",
+   "qid": "Q4915",
+   "fame": 0.539,
+   "length_km": 1579,
+   "description": "river in the midwestern United States",
+   "hook": "was a major highway west for early American settlers",
+   "known": 0.4,
+   "kind": "river"
+  },
+  {
+   "label": "Indus River",
+   "qid": "Q7348",
+   "fame": 0.537,
+   "length_km": 3180,
+   "description": "river in Asia",
+   "hook": "gave its name to an entire subcontinent and an ancient civilization",
+   "known": 0.4,
+   "kind": "river"
+  },
+  {
+   "label": "Volga",
+   "qid": "Q626",
+   "fame": 0.537,
+   "length_km": 3530,
+   "description": "river in Russia; the longest river in Europe",
+   "hook": "is the longest river in Europe and a beloved subject of folk songs",
+   "known": 0.4,
+   "kind": "river"
+  },
+  {
+   "label": "Missouri River",
+   "qid": "Q5419",
+   "fame": 0.534,
+   "length_km": 3726,
+   "description": "major river in central United States",
+   "hook": "is the longest tributary river in its country, joining another mighty river near a major city",
+   "known": 0.4,
+   "kind": "river"
+  },
+  {
+   "label": "Euphrates",
+   "qid": "Q34589",
+   "fame": 0.529,
+   "length_km": 2800,
+   "description": "river in Asia",
+   "hook": "was central to the rise of some of the earliest known cities and writing",
+   "known": 0.4,
+   "kind": "river"
+  },
+  {
+   "label": "Brahmaputra River",
+   "qid": "Q45403",
+   "fame": 0.524,
+   "length_km": 2900,
+   "description": "river in China, India, and Bangladesh",
+   "hook": "begins high on a plateau and floods vast farmland every year",
+   "known": 0.2,
+   "kind": "river"
+  },
+  {
+   "label": "St. Lawrence River",
+   "qid": "Q134750",
+   "fame": 0.523,
+   "length_km": 3058,
+   "description": "major river in eastern Canada and the United States, flowing into the Gulf of St. Lawrence",
+   "hook": "connects a chain of great lakes to the open ocean",
+   "known": 0.4,
+   "kind": "river"
+  },
+  {
+   "label": "Columbia River",
+   "qid": "Q2251",
+   "fame": 0.519,
+   "length_km": 2000,
+   "description": "river in North America; flows from British Columbia, through Washington, and along the Washington-Oregon border to the Pacific Ocean",
+   "hook": "is dammed for hydroelectric power and famous for its salmon runs",
+   "known": 0.2,
+   "kind": "river"
+  },
+  {
+   "label": "Niger River",
+   "qid": "Q3542",
+   "fame": 0.488,
+   "length_km": 4180,
+   "description": "river in West Africa",
+   "hook": "loops in a wide curve through the edge of a great desert",
+   "known": 0.2,
+   "kind": "river"
+  },
+  {
+   "label": "Mekong River",
+   "qid": "Q41179",
+   "fame": 0.487,
+   "length_km": 4350,
+   "description": "major river in Southeast Asia",
+   "hook": "supports floating markets and vast rice-growing communities across several countries",
+   "known": 0.2,
+   "kind": "river"
+  },
+  {
+   "label": "Tigris",
+   "qid": "Q35591",
+   "fame": 0.48,
+   "length_km": 1850,
+   "description": "river flowing from Turkey through Iraq and Syria",
+   "hook": "flows beside its sister river through the cradle of ancient civilization",
+   "known": 0.4,
+   "kind": "river"
+  },
+  {
+   "label": "Elbe",
+   "qid": "Q1644",
+   "fame": 0.476,
+   "length_km": 1094,
+   "description": "major river in Central Europe",
+   "hook": "flows past historic cities and was once a key trade route to the sea",
+   "known": 0.2,
+   "kind": "river"
+  },
+  {
+   "label": "Narmada",
+   "qid": "Q234004",
+   "fame": 0.474,
+   "length_km": 1315,
+   "description": "5th longest river of India",
+   "hook": "is considered one of the holiest rivers, revered by pilgrims who circle its entire length",
+   "known": 0.05,
+   "kind": "river"
+  },
+  {
+   "label": "Godavari River",
+   "qid": "Q191314",
+   "fame": 0.47,
+   "length_km": 1465,
+   "description": "river in India",
+   "hook": "is considered sacred and flows across a plateau to the sea",
+   "known": 0.05,
+   "kind": "river"
+  },
+  {
+   "label": "Snake River",
+   "qid": "Q272074",
+   "fame": 0.47,
+   "length_km": 1735,
+   "description": "major tributary of the Columbia River in the northwestern United States",
+   "hook": "carved a canyon deeper than the Grand Canyon in places",
+   "known": 0.2,
+   "kind": "river"
+  },
+  {
+   "label": "Dnieper",
+   "qid": "Q40855",
+   "fame": 0.459,
+   "length_km": 2285,
+   "description": "river in Eastern Europe",
+   "hook": "flows south through the heart of Eastern Europe to a great sea",
+   "known": 0.2,
+   "kind": "river"
+  },
+  {
+   "label": "Red River",
+   "qid": "Q156032",
+   "fame": 0.455,
+   "length_km": 2189,
+   "description": "major river in the southern United States",
+   "hook": "winds through the southern plains, marking parts of state borders along the way",
+   "known": 0.2,
+   "kind": "river"
+  },
+  {
+   "label": "Vistula",
+   "qid": "Q548",
+   "fame": 0.454,
+   "length_km": 1047,
+   "description": "river in East-Central Europe",
+   "hook": "is the longest river in its country and flows past a historic old town",
+   "known": 0.05,
+   "kind": "river"
+  },
+  {
+   "label": "Amu Darya",
+   "qid": "Q8493",
+   "fame": 0.451,
+   "length_km": 2620,
+   "description": "major river in Central Asia",
+   "hook": "flows from towering mountains into a shrinking inland sea",
+   "known": 0.05,
+   "kind": "river"
+  }
+ ]
+}

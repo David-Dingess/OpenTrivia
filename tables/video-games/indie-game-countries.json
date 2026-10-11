@@ -1,0 +1,311 @@
+{
+ "id": "table.video-games.indie-game-countries",
+ "kind": "table",
+ "title": "Indie games and the country they come from",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "indie-games",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { VALUES ?item { wd:Q96417649 wd:Q29300592 wd:Q28451532 wd:Q897376 wd:Q2581523 wd:Q18149495 wd:Q59756366 wd:Q48078440 wd:Q1784048 wd:Q62061666 wd:Q59618073 wd:Q19631660 wd:Q21039915 wd:Q16972008 wd:Q2700296 wd:Q5766 wd:Q637312 wd:Q1471545 wd:Q13427374 wd:Q66035140 wd:Q1051853 wd:Q59769284 wd:Q16457556 wd:Q4830546 wd:Q1711359 wd:Q17513672 wd:Q110726215 wd:Q124357469 wd:Q108273566 wd:Q856950 wd:Q16267745 wd:Q42266752 wd:Q810662 wd:Q13417084 wd:Q23947160 wd:Q28232693 wd:Q16259390 wd:Q4308783 wd:Q12145459 wd:Q18385733 wd:Q17618314 wd:Q16190030 wd:Q15707420 wd:Q7200554 wd:Q96247255 wd:Q22344828 wd:Q21039924 wd:Q332697 wd:Q23013817 wd:Q30639210 wd:Q3208174 wd:Q677274 wd:Q20031743 wd:Q43541160 wd:Q7794906 wd:Q23759338 wd:Q62569141 wd:Q114995908 wd:Q123404756 wd:Q80533334 wd:Q63294487 wd:Q30325568 wd:Q26252727 wd:Q116590057 wd:Q106974937 wd:Q55636303 wd:Q105063670 wd:Q19383244 wd:Q248810 wd:Q105100327 wd:Q15553298 wd:Q19824579 wd:Q16267881 wd:Q18705872 wd:Q1987120 wd:Q1165270 wd:Q590836 wd:Q218568 wd:Q7766240 wd:Q105683340 wd:Q111045952 wd:Q97657833 wd:Q16648939 wd:Q41734090 wd:Q37536061 wd:Q85753234 } ?item wdt:P495 ?c . FILTER NOT EXISTS { ?item wdt:P852 ?esrb . VALUES ?esrb { wd:Q14864331 wd:Q14864332 wd:Q110488287 wd:Q124356066 } } FILTER NOT EXISTS { ?item wdt:P908 wd:Q14915517 } } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T02:37:07.105Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T02:37:07.105Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country of origin",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "indie game",
+  "many": "indie games",
+  "hookAsk": "Which indie game {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is the studio behind the indie game {label} from?",
+    "statement": "The indie game {label} comes from {value}.",
+    "match": "Match each indie game to the country its studio is from.",
+    "odd": "Three of these indie games come from {value}. Which one doesn't?",
+    "all": "Tap all {n} indie games that come from {value}.",
+    "reverse": "Which of these indie games comes from {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Valheim",
+   "qid": "Q105100327",
+   "fame": 0.631,
+   "country": "Sweden",
+   "description": "2026 video game",
+   "hook": "drops Viking warriors into a procedurally generated afterlife to build, explore and fight bosses",
+   "known": 0.4,
+   "kind": "sandbox"
+  },
+  {
+   "label": "Undertale",
+   "qid": "Q21039924",
+   "fame": 0.621,
+   "country": "United States",
+   "description": "2015 role-playing video game",
+   "hook": "lets players spare monsters instead of fighting them in a quirky underground world",
+   "known": 0.8,
+   "kind": "narrative"
+  },
+  {
+   "label": "Geometry Dash",
+   "qid": "Q16190030",
+   "fame": 0.612,
+   "country": "Sweden",
+   "description": "2013 music-based platform video game and video game series",
+   "hook": "has a sliding cube leaping over spikes in time with a pounding soundtrack",
+   "known": 0.6,
+   "kind": "platformer"
+  },
+  {
+   "label": "Outer Wilds",
+   "qid": "Q19631660",
+   "fame": 0.582,
+   "country": "United States",
+   "description": "2019 video game developed by Mobius Digital",
+   "hook": "traps an explorer in a repeating loop that ends when the sun explodes",
+   "known": 0.4,
+   "kind": "exploration"
+  },
+  {
+   "label": "Among Us",
+   "qid": "Q96417649",
+   "fame": 0.58,
+   "country": "United States",
+   "description": "2018 video game developed by InnerSloth",
+   "hook": "has crewmates doing tasks on a spaceship while hidden impostors sabotage and sneak around",
+   "known": 0.8,
+   "kind": "casual"
+  },
+  {
+   "label": "Hollow Knight",
+   "qid": "Q29300592",
+   "fame": 0.575,
+   "country": "Australia",
+   "description": "2017 video game",
+   "hook": "sends a tiny bug warrior through a ruined underground insect kingdom",
+   "known": 0.6,
+   "kind": "platformer"
+  },
+  {
+   "label": "Stardew Valley",
+   "qid": "Q23013817",
+   "fame": 0.565,
+   "country": "United States",
+   "description": "2016 indie farming simulation role-playing video game",
+   "hook": "has you inheriting a run-down farm and building a new life in a small town",
+   "known": 0.8,
+   "kind": "simulation"
+  },
+  {
+   "label": "Flappy Bird",
+   "qid": "Q15707420",
+   "fame": 0.563,
+   "country": "Vietnam",
+   "description": "2013 mobile video game by Dong Nguyen",
+   "hook": "had players tapping to keep a winged character between green pipes, and became famously frustrating",
+   "known": 0.8,
+   "kind": "casual"
+  },
+  {
+   "label": "Terraria",
+   "qid": "Q332697",
+   "fame": 0.535,
+   "country": "United States",
+   "description": "2011 action-adventure sandbox video game",
+   "hook": "lets players dig, build and fight bosses in a 2D sandbox world",
+   "known": 0.6,
+   "kind": "sandbox"
+  },
+  {
+   "label": "Hades",
+   "qid": "Q59756366",
+   "fame": 0.528,
+   "country": "United States",
+   "description": "2020 action role-playing game developed by Supergiant Games",
+   "hook": "has a rebellious prince repeatedly fighting his way out of the Greek underworld",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "Balatro",
+   "qid": "Q124357469",
+   "fame": 0.52,
+   "country": "Canada",
+   "description": "2024 video game developed by LocalThunk",
+   "hook": "turns poker hands into a roguelike where jokers multiply your score",
+   "known": 0.2,
+   "kind": "roguelike"
+  },
+  {
+   "label": "Five Nights at Freddy's",
+   "qid": "Q17618314",
+   "fame": 0.51,
+   "country": "United States",
+   "description": "2014 horror video game",
+   "hook": "has a night security guard surviving jump scares from haunted animatronic mascots at a pizzeria",
+   "known": 0.8,
+   "kind": "horror"
+  },
+  {
+   "label": "Celeste",
+   "qid": "Q28451532",
+   "fame": 0.507,
+   "country": "Canada",
+   "description": "2018 video game",
+   "hook": "follows a girl climbing a treacherous mountain while battling her own anxiety",
+   "known": 0.6,
+   "kind": "platformer"
+  },
+  {
+   "label": "The Stanley Parable",
+   "qid": "Q7766240",
+   "fame": 0.507,
+   "country": "United States",
+   "description": "2013 first-person interactive fiction video game",
+   "hook": "features a sarcastic narrator commenting on an office worker's every choice",
+   "known": 0.4,
+   "kind": "narrative"
+  },
+  {
+   "label": "Cuphead",
+   "qid": "Q18149495",
+   "fame": 0.506,
+   "country": "Canada",
+   "description": "2017 video game",
+   "hook": "pairs classic rubber-hose cartoon animation with brutally hard boss fights",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "Stray",
+   "qid": "Q96247255",
+   "fame": 0.499,
+   "country": "France",
+   "description": "2022 adventure video game developed by BlueTwelve Studio",
+   "hook": "puts you in the paws of a cat wandering a neon-lit city of robots",
+   "known": 0.4,
+   "kind": "exploration"
+  },
+  {
+   "label": "Dwarf Fortress",
+   "qid": "Q248810",
+   "fame": 0.481,
+   "country": "United States",
+   "description": "2006 roguelike management simulation video game",
+   "hook": "simulates a mountain colony of tiny bearded miners, famous for chaotic stories and a steep learning curve",
+   "known": 0.2,
+   "kind": "simulation"
+  },
+  {
+   "label": "Slay the Spire",
+   "qid": "Q48078440",
+   "fame": 0.476,
+   "country": "United States",
+   "description": "2019 video game",
+   "hook": "blends deck-building card battles with a roguelike climb up a tower",
+   "known": 0.4,
+   "kind": "roguelike"
+  },
+  {
+   "label": "Subnautica",
+   "qid": "Q21039915",
+   "fame": 0.474,
+   "country": "United States",
+   "description": "2018 survival action-adventure video game developed by Unknown Worlds Entertainment",
+   "hook": "strands you on an alien ocean planet to survive and explore underwater",
+   "known": 0.6,
+   "kind": "exploration"
+  },
+  {
+   "label": "Dead Cells",
+   "qid": "Q30639210",
+   "fame": 0.47,
+   "country": "France",
+   "description": "2018 video game",
+   "hook": "combines roguelike runs with fast Metroidvania exploration through a shifting castle",
+   "known": 0.4,
+   "kind": "roguelike"
+  },
+  {
+   "label": "Factorio",
+   "qid": "Q16972008",
+   "fame": 0.469,
+   "country": "Czech Republic",
+   "description": "2020 video game",
+   "hook": "has you building sprawling automated production lines on an alien planet",
+   "known": 0.4,
+   "kind": "simulation"
+  },
+  {
+   "label": "Dave the Diver",
+   "qid": "Q114995908",
+   "fame": 0.468,
+   "country": "South Korea",
+   "description": "2023 video game developed by Mintrocket",
+   "hook": "mixes ocean exploration by day with running a sushi restaurant by night",
+   "known": 0.6,
+   "kind": "exploration"
+  },
+  {
+   "label": "Human: Fall Flat",
+   "qid": "Q43541160",
+   "fame": 0.461,
+   "country": "Spain",
+   "description": "2016 video game",
+   "hook": "has wobbly, physics-driven characters stumbling through dreamlike puzzle worlds",
+   "known": 0.4,
+   "kind": "puzzle"
+  },
+  {
+   "label": "Journey",
+   "qid": "Q677274",
+   "fame": 0.454,
+   "country": "United States",
+   "description": "2012 video game",
+   "hook": "has a robed traveler crossing a desert toward a glowing mountain alongside anonymous partners",
+   "known": 0.6,
+   "kind": "exploration"
+  },
+  {
+   "label": "Untitled Goose Game",
+   "qid": "Q59618073",
+   "fame": 0.451,
+   "country": "Australia",
+   "description": "2019 video game",
+   "hook": "lets you play a mischievous honking pest tormenting the residents of a quiet village",
+   "known": 0.8,
+   "kind": "casual"
+  }
+ ]
+}

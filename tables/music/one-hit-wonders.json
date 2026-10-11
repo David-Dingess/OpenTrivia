@@ -1,0 +1,227 @@
+{
+ "id": "table.music.one-hit-wonders",
+ "kind": "table",
+ "title": "One-hit wonders and the act behind them",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "one-hit-wonders",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?artistLabel ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?a) AS ?artist) (COUNT(DISTINCT ?a) AS ?nA) WHERE { VALUES ?lab { \"Video Killed the Radio Star\"@en \"Take On Me\"@en \"Tainted Love\"@en \"Come On Eileen\"@en \"Macarena\"@en \"Ice Ice Baby\"@en \"Mickey\"@en \"99 Luftballons\"@en \"The Safety Dance\"@en \"I Ran (So Far Away)\"@en \"Who Let the Dogs Out?\"@en \"Blue (Da Ba Dee)\"@en \"Gangnam Style\"@en \"Harlem Shake\"@en \"Mambo No. 5\"@en \"Tubthumping\"@en \"Cotton Eye Joe\"@en \"Kung Fu Fighting\"@en \"Spirit in the Sky\"@en \"In the Year 2525\"@en \"Pass the Dutchie\"@en \"The Final Countdown\"@en \"Sunglasses at Night\"@en \"What Is Love\"@en \"Torn\"@en \"Steal My Sunshine\"@en \"Closing Time\"@en \"Teenage Dirtbag\"@en \"Somebody That I Used to Know\"@en \"Achy Breaky Heart\"@en \"Rock Me Amadeus\"@en \"Walking on Sunshine\"@en \"Dancing in the Moonlight\"@en \"Hooked on a Feeling\"@en \"I'm Too Sexy\"@en \"Funkytown\"@en \"Rapper's Delight\"@en \"Love Is Blue\"@en \"Popcorn\"@en \"Sugar, Sugar\"@en \"Seasons in the Sun\"@en \"Convoy\"@en \"Disco Duck\"@en \"Monster Mash\"@en \"Purple People Eater\"@en \"Louie Louie\"@en \"Wild Thing\"@en \"Incense and Peppermints\"@en \"96 Tears\"@en \"Tom's Diner\"@en \"Barbie Girl\"@en \"Bette Davis Eyes\"@en \"Mmm Mmm Mmm Mmm\"@en } ?item rdfs:label ?lab ; wdt:P31/wdt:P279* wd:Q2188189 ; wikibase:sitelinks ?sitelinks ; wdt:P175 ?a . FILTER(?sitelinks >= 8) } GROUP BY ?item ?sitelinks } hint:Prior hint:runFirst true . FILTER(?nA = 1) ?item wdt:P175 ?artist . ?artist wdt:P495|wdt:P17|wdt:P27 ?country . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T13:57:43.492Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T13:57:43.492Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "artist",
+   "label": "Artist",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "song",
+  "many": "songs",
+  "hookAsk": "Which song {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "artist": {
+    "role": "link",
+    "pick": "Which artist or band had the hit song {label}?",
+    "statement": "{label} is a hit song by {value}.",
+    "match": "Match each hit song to the act that made it.",
+    "reverse": "Which of these songs is by {value}?"
+   },
+   "country": {
+    "role": "link",
+    "pick": "Which country is the act behind the song {label} from?",
+    "statement": "The act behind {label} comes from {value}.",
+    "match": "Match each song to the country its act comes from.",
+    "odd": "Three of these songs come from acts based in {value}. Which one doesn't?",
+    "all": "Tap all {n} songs by acts from {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Sugar, Sugar",
+   "qid": "Q516203",
+   "fame": 0.548,
+   "artist": "The Archies",
+   "country": "United States",
+   "description": "original song written and composed by Jeff Barry and Andy Kim; performed by The Archies",
+   "hook": "was a bubblegum pop hit performed by a cartoon band from a Saturday-morning show",
+   "known": 0.6,
+   "kind": "70s"
+  },
+  {
+   "label": "99 Luftballons",
+   "qid": "Q277342",
+   "fame": 0.545,
+   "artist": "Nena",
+   "country": "Germany",
+   "description": "1983 song by Nena",
+   "hook": "was a Cold War anti-war pop hit about toys floating into the sky, sung in its native tongue",
+   "known": 0.8,
+   "kind": "80s"
+  },
+  {
+   "label": "Gangnam Style",
+   "qid": "Q890",
+   "fame": 0.54,
+   "artist": "Psy",
+   "country": "South Korea",
+   "description": "2012 single by Psy",
+   "hook": "sparked a worldwide viral dance craze with a horse-riding move and a hugely watched video",
+   "known": 0.95,
+   "kind": "10s"
+  },
+  {
+   "label": "Take On Me",
+   "qid": "Q145677",
+   "fame": 0.521,
+   "artist": "a-ha",
+   "country": "Norway",
+   "description": "song written and composed by Magne Furuholmen, Morten Harket and Pål Waaktaar, originally recorded by A-ha and released in 1984",
+   "hook": "came with a pencil-sketch animated music video where a woman is pulled into a comic book",
+   "known": 0.8,
+   "kind": "80s"
+  },
+  {
+   "label": "Macarena",
+   "qid": "Q1149738",
+   "fame": 0.52,
+   "artist": "Los del Río",
+   "country": "Spain",
+   "description": "song written and composed by Rafael Ruiz Perdigones and Antonio Romero Monge, originally recorded by Los del Río and released in 1993",
+   "hook": "is a dance-craze hit with a choreographed routine that became a staple of parties and weddings",
+   "known": 0.95,
+   "kind": "90s"
+  },
+  {
+   "label": "Funkytown",
+   "qid": "Q1474712",
+   "fame": 0.499,
+   "artist": "Lipps Inc.",
+   "country": "United States",
+   "description": "1980 single by Lipps Inc.",
+   "hook": "is a disco-era dance track about heading to a town whose name is also the title",
+   "known": 0.8,
+   "kind": "80s"
+  },
+  {
+   "label": "Mmm Mmm Mmm Mmm",
+   "qid": "Q628972",
+   "fame": 0.496,
+   "artist": "Crash Test Dummies",
+   "country": "Canada",
+   "description": "1993 single by Crash Test Dummies",
+   "hook": "is a quirky hit with a deep-voiced singer, a hummed-style title and verses about odd childhood kids",
+   "known": 0.6,
+   "kind": "90s"
+  },
+  {
+   "label": "Come On Eileen",
+   "qid": "Q1113842",
+   "fame": 0.494,
+   "artist": "Dexys Midnight Runners",
+   "country": "United Kingdom",
+   "description": "song by Dexys Midnight Runners",
+   "hook": "is a folky Celtic-flavoured chart-topper with a tempo change and a shouted plea to a girl",
+   "known": 0.8,
+   "kind": "80s"
+  },
+  {
+   "label": "Rapper's Delight",
+   "qid": "Q944039",
+   "fame": 0.487,
+   "artist": "The Sugarhill Gang",
+   "country": "United States",
+   "description": "1979 single by The Sugarhill Gang",
+   "hook": "was among the first rap records to hit the mainstream, with a long party-rhyme opening",
+   "known": 0.8,
+   "kind": "70s"
+  },
+  {
+   "label": "What Is Love",
+   "qid": "Q550158",
+   "fame": 0.483,
+   "artist": "Haddaway",
+   "country": "Trinidad and Tobago",
+   "description": "1993 song by Haddaway",
+   "hook": "is a Eurodance anthem whose chorus asks a question and adds a plea not to be hurt",
+   "known": 0.6,
+   "kind": "90s"
+  },
+  {
+   "label": "Tubthumping",
+   "qid": "Q2007661",
+   "fame": 0.47,
+   "artist": "Chumbawamba",
+   "country": "United Kingdom",
+   "description": "single by Chumbawamba",
+   "hook": "is an anthem about getting knocked down and getting up again, chanted by pub crowds",
+   "known": 0.8,
+   "kind": "90s"
+  },
+  {
+   "label": "Spirit in the Sky",
+   "qid": "Q1394529",
+   "fame": 0.462,
+   "artist": "Norman Greenbaum",
+   "country": "United States",
+   "description": "original song written and composed by Norman Greenbaum",
+   "hook": "is a fuzzy-guitar gospel-rock classic about going to heaven when you die",
+   "known": 0.6,
+   "kind": "70s"
+  },
+  {
+   "label": "Barbie Girl",
+   "qid": "Q790315",
+   "fame": 0.457,
+   "artist": "Aqua",
+   "country": "Denmark",
+   "description": "song written and composed by Søren Rasted, Claus Norreen, René Dif and Lene Nystrøm; originally recorded by Aqua and released in 1997",
+   "hook": "is a novelty dance-pop hit about life in plastic that drew a legal fight from a toy company",
+   "known": 0.8,
+   "kind": "90s"
+  },
+  {
+   "label": "Ice Ice Baby",
+   "qid": "Q2389029",
+   "fame": 0.456,
+   "artist": "Vanilla Ice",
+   "country": "United States",
+   "description": "1990 song by Vanilla Ice and DJ Earthquake",
+   "hook": "is a rap hit built on a bassline borrowed from a Queen and David Bowie collaboration",
+   "known": 0.95,
+   "kind": "90s"
+  }
+ ]
+}

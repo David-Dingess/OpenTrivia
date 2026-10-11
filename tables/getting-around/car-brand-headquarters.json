@@ -1,0 +1,498 @@
+{
+ "id": "table.getting-around.car-brand-headquarters",
+ "kind": "table",
+ "title": "Car brands and where their headquarters is",
+ "genre": "daily-life",
+ "category": "getting-around",
+ "topic": "cars",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?hqLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?h) AS ?hq) (COUNT(DISTINCT ?h) AS ?n) WHERE { ?item wdt:P31/wdt:P279* wd:Q786820 ; wdt:P159 ?h ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 30) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 250 } hint:Prior hint:runFirst true . FILTER(?n = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T21:25:16.394Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T21:25:16.394Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "hq",
+   "label": "Headquarters",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "car brand",
+  "many": "car brands",
+  "wildcard": "place",
+  "minFame": 0.45,
+  "exclude": [
+   {
+    "qid": "Q30113",
+    "why": "Jeep: Toledo is a plant, the brand is run from Auburn Hills"
+   },
+   {
+    "qid": "Q29281",
+    "why": "Holden: retired brand"
+   },
+   {
+    "qid": "Q275623",
+    "why": "Groupe PSA: merged into Stellantis"
+   },
+   {
+    "qid": "Q48957",
+    "why": "Saab Automobile: defunct"
+   }
+  ],
+  "columns": {
+   "hq": {
+    "role": "link",
+    "pick": "Which city is {label} headquartered in?",
+    "statement": "{label} is headquartered in {value}.",
+    "match": "Match each car brand to the city where it is headquartered.",
+    "odd": "Three of these car brands are headquartered in {value}. Which one isn't?",
+    "all": "Tap all {n} car brands headquartered in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Stellantis",
+   "qid": "Q97439162",
+   "fame": 0.672,
+   "hq": "Amsterdam",
+   "description": "Franco-Italian-American multinational automotive manufacturer",
+   "hook": "was formed by merging the makers of Chrysler and Peugeot into one giant multi-brand carmaker",
+   "known": 0.05,
+   "kind": "corporate entity"
+  },
+  {
+   "label": "BMW",
+   "qid": "Q26678",
+   "fame": 0.652,
+   "hq": "Munich",
+   "description": "German automobile manufacturer, and conglomerate",
+   "hook": "builds cars with a blue-and-white roundel and the slogan \"the ultimate driving machine\"",
+   "known": 0.6,
+   "kind": "luxury german"
+  },
+  {
+   "label": "Ford Motor Company",
+   "qid": "Q44294",
+   "fame": 0.638,
+   "hq": "Dearborn",
+   "description": "American multinational automotive company",
+   "hook": "pioneered the moving assembly line and built the Model T and the Mustang",
+   "known": 0.6,
+   "kind": "mass-market american"
+  },
+  {
+   "label": "General Motors",
+   "qid": "Q81965",
+   "fame": 0.636,
+   "hq": "Detroit",
+   "description": "American multinational automotive company",
+   "hook": "is the giant American automaker that owns Chevrolet, Buick and Cadillac",
+   "known": 0.6,
+   "kind": "mass-market american"
+  },
+  {
+   "label": "Volkswagen",
+   "qid": "Q246",
+   "fame": 0.622,
+   "hq": "Wolfsburg",
+   "description": "German automotive brand; manufacturing subsidiary of Volkswagen Group",
+   "hook": "makes the Beetle and the Golf, and is Europe's best-selling carmaker",
+   "known": 0.6,
+   "kind": "mass-market german"
+  },
+  {
+   "label": "Ferrari",
+   "qid": "Q27586",
+   "fame": 0.608,
+   "hq": "Maranello",
+   "description": "Italian luxury sports car manufacturer",
+   "hook": "builds red Italian supercars with a prancing horse badge and races in Formula One",
+   "known": 0.4,
+   "kind": "sports car italian"
+  },
+  {
+   "label": "Lamborghini",
+   "qid": "Q35886",
+   "fame": 0.604,
+   "hq": "Sant'Agata Bolognese",
+   "description": "Italian car manufacturer",
+   "hook": "builds wedge-shaped supercars with a raging bull on the badge, like the Countach",
+   "known": 0.4,
+   "kind": "sports car italian"
+  },
+  {
+   "label": "Porsche",
+   "qid": "Q40993",
+   "fame": 0.604,
+   "hq": "Stuttgart",
+   "description": "German automobile manufacturer specializing in high-performance sports cars, SUVs and sedans, owned by Volkswagen AG",
+   "hook": "makes the rear-engined 911 sports car, one of the most recognisable shapes on the road",
+   "known": 0.6,
+   "kind": "luxury german"
+  },
+  {
+   "label": "Geely",
+   "qid": "Q739000",
+   "fame": 0.6,
+   "hq": "Hangzhou",
+   "description": "Chinese automotive manufacturing company",
+   "hook": "is a fast-growing Chinese carmaker that owns Volvo and a stake in Lotus",
+   "known": 0.2,
+   "kind": "chinese mass-market"
+  },
+  {
+   "label": "Jaguar Cars",
+   "qid": "Q30055",
+   "fame": 0.593,
+   "hq": "Coventry",
+   "description": "former British car company",
+   "hook": "makes sleek British luxury saloons and sports models with a leaping cat mascot, like the E-Type",
+   "known": 0.4,
+   "kind": "british luxury"
+  },
+  {
+   "label": "Škoda Auto",
+   "qid": "Q29637",
+   "fame": 0.591,
+   "hq": "Mladá Boleslav",
+   "description": "automotive manufacturing subsidiary of Volkswagen Group",
+   "hook": "is a Czech carmaker known for practical, good-value cars like the Octavia and Fabia",
+   "known": 0.2,
+   "kind": "mass-market czech"
+  },
+  {
+   "label": "Volvo Cars",
+   "qid": "Q215293",
+   "fame": 0.584,
+   "hq": "Gothenburg",
+   "description": "Swedish automobile manufacturer",
+   "hook": "is known for safety innovations such as the three-point seatbelt",
+   "known": 0.6,
+   "kind": "mass-market swedish"
+  },
+  {
+   "label": "Audi AG",
+   "qid": "Q23317",
+   "fame": 0.583,
+   "hq": "Ingolstadt",
+   "description": "German automotive manufacturing subsidiary of Volkswagen Group",
+   "hook": "uses four interlocking rings as its badge and \"quattro\" for its all-wheel drive",
+   "known": 0.6,
+   "kind": "luxury german"
+  },
+  {
+   "label": "Hyundai Motor Company",
+   "qid": "Q55931",
+   "fame": 0.581,
+   "hq": "Seoul",
+   "description": "South Korean multinational automaker",
+   "hook": "makes the Sonata and Elantra and is one of the biggest carmakers in Asia",
+   "known": 0.4,
+   "kind": "mass-market korean"
+  },
+  {
+   "label": "Kia",
+   "qid": "Q35349",
+   "fame": 0.58,
+   "hq": "Seoul",
+   "description": "South Korean automobile manufacturer",
+   "hook": "sells the Sportage and Soul and is known for its long warranties",
+   "known": 0.4,
+   "kind": "mass-market korean"
+  },
+  {
+   "label": "Lexus",
+   "qid": "Q35919",
+   "fame": 0.574,
+   "hq": "Nagoya",
+   "description": "Japanese brand of luxury vehicle owned by Toyota Motor Corporation",
+   "hook": "is the luxury division of the world's best-selling automaker, Toyota",
+   "known": 0.6,
+   "kind": "luxury japanese"
+  },
+  {
+   "label": "Aston Martin Lagonda",
+   "qid": "Q27074",
+   "fame": 0.573,
+   "hq": "Gaydon",
+   "description": "British luxury sports car manufacturer",
+   "hook": "builds the elegant sports cars that James Bond drives",
+   "known": 0.4,
+   "kind": "british luxury"
+  },
+  {
+   "label": "Chevrolet",
+   "qid": "Q29570",
+   "fame": 0.568,
+   "hq": "Detroit",
+   "description": "American automobile division of GM",
+   "hook": "sells the Corvette sports car and the Silverado pickup with a golden bowtie badge",
+   "known": 0.6,
+   "kind": "mass-market american"
+  },
+  {
+   "label": "Renault",
+   "qid": "Q6686",
+   "fame": 0.565,
+   "hq": "Boulogne-Billancourt",
+   "description": "automotive conglomerate",
+   "hook": "is a French carmaker behind the Clio and the Twingo, with a diamond-shaped badge",
+   "known": 0.6,
+   "kind": "mass-market french"
+  },
+  {
+   "label": "Cadillac",
+   "qid": "Q27436",
+   "fame": 0.562,
+   "hq": "Detroit",
+   "description": "division of General Motors",
+   "hook": "is the American luxury brand behind the Escalade SUV and long-finned classics",
+   "known": 0.6,
+   "kind": "luxury american"
+  },
+  {
+   "label": "Saab Automobile",
+   "qid": "Q48957",
+   "fame": 0.559,
+   "hq": "Trollhättan",
+   "description": "defunct Swedish car manufacturer (1945-2016)",
+   "hook": "made quirky turbocharged cars and jet fighters before shutting down",
+   "known": 0.05,
+   "kind": "defunct swedish"
+  },
+  {
+   "label": "Jeep",
+   "qid": "Q30113",
+   "fame": 0.557,
+   "hq": "Toledo",
+   "description": "US automotive company",
+   "hook": "builds rugged off-road SUVs like the Wrangler, descended from a World War II military vehicle",
+   "known": 0.6,
+   "kind": "mass-market american"
+  },
+  {
+   "label": "Lotus Cars",
+   "qid": "Q35935",
+   "fame": 0.55,
+   "hq": "Hethel",
+   "description": "British manufacturer of sports and racing cars",
+   "hook": "builds lightweight British sports models and was once a Formula One powerhouse",
+   "known": 0.2,
+   "kind": "sports car british"
+  },
+  {
+   "label": "Alfa Romeo",
+   "qid": "Q26921",
+   "fame": 0.548,
+   "hq": "Turin",
+   "description": "Italian automotive manufacturer",
+   "hook": "is a sporty Italian brand with a serpent-and-cross badge",
+   "known": 0.4,
+   "kind": "sports car italian"
+  },
+  {
+   "label": "Opel",
+   "qid": "Q40966",
+   "fame": 0.548,
+   "hq": "Rüsselsheim am Main",
+   "description": "German automobile manufacturer, subsidiary of Stellantis",
+   "hook": "sells the Corsa and Astra hatchbacks and is now owned by Stellantis",
+   "known": 0.2,
+   "kind": "mass-market german"
+  },
+  {
+   "label": "Bentley",
+   "qid": "Q27224",
+   "fame": 0.547,
+   "hq": "Crewe",
+   "description": "British automotive brand manufacturer",
+   "hook": "hand-builds luxurious grand tourers like the Continental GT, with a winged \"B\" badge",
+   "known": 0.2,
+   "kind": "british luxury"
+  },
+  {
+   "label": "Koenigsegg",
+   "qid": "Q35594",
+   "fame": 0.545,
+   "hq": "Ängelholm",
+   "description": "Swedish manufacturer of high-performance sports cars",
+   "hook": "builds hypercars such as the Agera and Jesko, among the fastest road cars ever",
+   "known": 0.2,
+   "kind": "hypercar swedish"
+  },
+  {
+   "label": "Rolls-Royce Motor Cars",
+   "qid": "Q234803",
+   "fame": 0.545,
+   "hq": "Chichester",
+   "description": "English car company (1998-present)",
+   "hook": "makes ultra-luxury saloons topped with the Spirit of Ecstasy hood ornament",
+   "known": 0.2,
+   "kind": "british luxury"
+  },
+  {
+   "label": "Suzuki Motor Corporation",
+   "qid": "Q181642",
+   "fame": 0.544,
+   "hq": "Hamamatsu",
+   "description": "Japanese multinational automotive corporation",
+   "hook": "makes small cars and motorcycles, including the Swift and the Hayabusa",
+   "known": 0.2,
+   "kind": "mass-market japanese"
+  },
+  {
+   "label": "Mercedes-Benz Group",
+   "qid": "Q27530",
+   "fame": 0.54,
+   "hq": "Stuttgart",
+   "description": "German automotive manufacturer",
+   "hook": "builds luxury cars marked by a three-pointed star in a circle",
+   "known": 0.6,
+   "kind": "luxury german"
+  },
+  {
+   "label": "Buick",
+   "qid": "Q27415",
+   "fame": 0.535,
+   "hq": "Detroit",
+   "description": "luxury car brand of General Motors",
+   "hook": "is a mid-luxury General Motors brand with three \"ventiports\" on classic models",
+   "known": 0.6,
+   "kind": "luxury american"
+  },
+  {
+   "label": "Mahindra & Mahindra",
+   "qid": "Q848059",
+   "fame": 0.534,
+   "hq": "Mumbai",
+   "description": "Indian multinational automobile manufacturer",
+   "hook": "is an Indian maker of tractors and rugged SUVs like the Thar",
+   "known": 0.2,
+   "kind": "mass-market indian"
+  },
+  {
+   "label": "Fiat",
+   "qid": "Q27597",
+   "fame": 0.533,
+   "hq": "Turin",
+   "description": "Italian automotive company",
+   "hook": "makes the tiny 500 city car and the Panda",
+   "known": 0.4,
+   "kind": "mass-market italian"
+  },
+  {
+   "label": "Dacia",
+   "qid": "Q27460",
+   "fame": 0.529,
+   "hq": "Mioveni",
+   "description": "brand and romanian car manufacturer from Renault",
+   "hook": "sells low-priced cars like the Duster and Sandero and is owned by Renault",
+   "known": 0.2,
+   "kind": "mass-market romanian"
+  },
+  {
+   "label": "Pagani Automobili",
+   "qid": "Q749239",
+   "fame": 0.523,
+   "hq": "San Cesario sul Panaro",
+   "description": "Italian car manufacturer",
+   "hook": "hand-builds carbon-fibre hypercars like the Zonda and Huayra",
+   "known": 0.2,
+   "kind": "hypercar italian"
+  },
+  {
+   "label": "Isuzu",
+   "qid": "Q29803",
+   "fame": 0.512,
+   "hq": "Yokohama",
+   "description": "Japanese company manufacturing motor vehicles",
+   "hook": "is known for trucks and diesel engines, and once sold the Trooper SUV",
+   "known": 0.2,
+   "kind": "mass-market japanese"
+  },
+  {
+   "label": "Holden",
+   "qid": "Q29281",
+   "fame": 0.504,
+   "hq": "Port Melbourne",
+   "description": "Australian subsidiary of General Motors, an automaker",
+   "hook": "was the iconic Australian brand behind the Commodore and the Ute, now retired",
+   "known": 0.05,
+   "kind": "defunct australian"
+  },
+  {
+   "label": "Alpine",
+   "qid": "Q26944",
+   "fame": 0.492,
+   "hq": "Dieppe",
+   "description": "French car manufacturer",
+   "hook": "is the sporty brand behind the A110 coupe and an F1 team, owned by Renault",
+   "known": 0.2,
+   "kind": "sports car french"
+  },
+  {
+   "label": "Lancia",
+   "qid": "Q35896",
+   "fame": 0.488,
+   "hq": "Turin",
+   "description": "Italian automotive company",
+   "hook": "is a rally legend whose Delta Integrale dominated the World Rally Championship",
+   "known": 0.2,
+   "kind": "sports car italian"
+  },
+  {
+   "label": "Groupe PSA",
+   "qid": "Q275623",
+   "fame": 0.48,
+   "hq": "Rueil-Malmaison",
+   "description": "French automotive manufacturing corporation (1976-2021)",
+   "hook": "was the maker of Peugeot and Citroen cars before merging into Stellantis",
+   "known": 0.05,
+   "kind": "corporate entity"
+  },
+  {
+   "label": "Daihatsu",
+   "qid": "Q27511",
+   "fame": 0.467,
+   "hq": "Osaka",
+   "description": "Japanese automobile manufacturer",
+   "hook": "specialises in tiny \"kei\" cars and is owned by Toyota",
+   "known": 0.2,
+   "kind": "mass-market japanese"
+  },
+  {
+   "label": "DAF",
+   "qid": "Q27489",
+   "fame": 0.455,
+   "hq": "Eindhoven",
+   "description": "Netherlands branch of American manufacturer Paccar",
+   "hook": "builds heavy trucks seen across Europe and is owned by Paccar",
+   "known": 0.05,
+   "kind": "truck-maker dutch"
+  }
+ ]
+}

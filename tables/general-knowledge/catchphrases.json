@@ -1,0 +1,570 @@
+{
+ "id": "table.general-knowledge.catchphrases",
+ "kind": "table",
+ "title": "Famous catchphrases and who says them",
+ "genre": "general",
+ "category": "general-knowledge",
+ "topic": "catchphrases",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?phrase WHERE { VALUES ?item { curated famous qids } ?item wdt:P6251 ?phrase }",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T08:35:32.905Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T08:35:32.905Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "catchphrase",
+   "label": "Catchphrase",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "famous name",
+  "many": "famous names",
+  "minFame": 0.5,
+  "hookAsk": "Which famous name {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "catchphrase": {
+    "role": "code",
+    "pick": "Which catchphrase is {label} famous for?",
+    "statement": "The catchphrase \"{value}\" belongs to {label}.",
+    "match": "Match each famous name to its catchphrase.",
+    "typeIt": "Who is famous for saying {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Mr. T",
+   "qid": "Q295107",
+   "fame": 0.78,
+   "catchphrase": "I pity the fool.",
+   "kind": "person",
+   "description": "American actor and professional wrestler",
+   "hook": "is a mohawked tough guy draped in gold chains who drove a van in an action team series",
+   "known": 0.8
+  },
+  {
+   "label": "Owen Wilson",
+   "qid": "Q161916",
+   "fame": 0.725,
+   "catchphrase": "Wow!",
+   "kind": "person",
+   "description": "American actor (born 1968)",
+   "hook": "is a laid-back actor with a famously crooked nose who starred in Zoolander and Wedding Crashers",
+   "known": 0.8
+  },
+  {
+   "label": "Martha Stewart",
+   "qid": "Q234606",
+   "fame": 0.712,
+   "catchphrase": "It's a good thing.",
+   "kind": "person",
+   "description": "American businesswoman, writer, TV personality (born 1941)",
+   "hook": "built a lifestyle empire around cooking, crafts and home decorating",
+   "known": 0.8
+  },
+  {
+   "label": "Stan Lee",
+   "qid": "Q181900",
+   "fame": 0.709,
+   "catchphrase": "Excelsior!",
+   "kind": "person",
+   "description": "American comic book writer, editor, publisher, and producer (1922–2018)",
+   "hook": "co-created Spider-Man and the Hulk and made cameo appearances in Marvel movies",
+   "known": 0.8
+  },
+  {
+   "label": "The X-Files",
+   "qid": "Q2744",
+   "fame": 0.689,
+   "catchphrase": "The truth is out there",
+   "kind": "show",
+   "description": "1993–2002 American science fiction-drama television series",
+   "hook": "follows two FBI agents, Mulder and Scully, who investigate paranormal cases",
+   "known": 0.95
+  },
+  {
+   "label": "Survivor",
+   "qid": "Q28856068",
+   "fame": 0.642,
+   "catchphrase": "The Tribe has spoken",
+   "kind": "show",
+   "description": "American version of the international Survivor reality competition television franchise",
+   "hook": "strands contestants on a remote island where they vote one another out",
+   "known": 0.95
+  },
+  {
+   "label": "Wheel of Fortune",
+   "qid": "Q3567653",
+   "fame": 0.635,
+   "catchphrase": "I’d like to buy a vowel!",
+   "kind": "show",
+   "description": "American television game show",
+   "hook": "has contestants spin a giant prize carousel and guess letters to solve word puzzles",
+   "known": 0.95
+  },
+  {
+   "label": "Jerry Maguire",
+   "qid": "Q329131",
+   "fame": 0.632,
+   "catchphrase": "Show me the money!",
+   "kind": "film",
+   "description": "1996 sports film by Cameron Crowe",
+   "hook": "stars Tom Cruise as a sports agent who loses his job after writing a mission statement",
+   "known": 0.95
+  },
+  {
+   "label": "Teenage Mutant Ninja Turtles",
+   "qid": "Q1381762",
+   "fame": 0.629,
+   "catchphrase": "Cowabunga!",
+   "kind": "character",
+   "description": "fictional team of anthropomorphic turtles",
+   "hook": "are four sewer-dwelling brothers named after Renaissance artists who love pizza",
+   "known": 0.8
+  },
+  {
+   "label": "Bugs Bunny",
+   "qid": "Q183102",
+   "fame": 0.618,
+   "catchphrase": "What's up doc?",
+   "kind": "character",
+   "description": "Warner Bros. cartoon character",
+   "hook": "is a wisecracking cartoon rabbit who munches carrots and outwits Elmer Fudd",
+   "known": 0.95
+  },
+  {
+   "label": "Groucho Marx",
+   "qid": "Q103846",
+   "fame": 0.597,
+   "catchphrase": "Say the secret word and win $100!",
+   "kind": "person",
+   "description": "American comedian (1890–1977)",
+   "hook": "was a wisecracking comedian with a greasepaint mustache who hosted the quiz show You Bet Your Life",
+   "known": 0.6
+  },
+  {
+   "label": "Sheldon Cooper",
+   "qid": "Q629583",
+   "fame": 0.585,
+   "catchphrase": "Bazinga",
+   "kind": "character",
+   "description": "fictional character in The Big Bang Theory and Young Sheldon",
+   "hook": "is a genius physicist who knocks three times and guards his spot on the couch",
+   "known": 0.8
+  },
+  {
+   "label": "Santa Claus",
+   "qid": "Q315796",
+   "fame": 0.571,
+   "catchphrase": "Ho, ho, ho!",
+   "kind": "character",
+   "description": "legendary figure said to deliver gifts to people on Christmas Eve",
+   "hook": "rides a sleigh pulled by reindeer and slides down chimneys to deliver presents",
+   "known": 0.95
+  },
+  {
+   "label": "Vito Corleone",
+   "qid": "Q745077",
+   "fame": 0.57,
+   "catchphrase": "I'm going to make him an offer he can't refuse",
+   "kind": "character",
+   "description": "fictional character from Mario Puzo's 1969 novel The Godfather",
+   "hook": "is the soft-spoken mafia don played by Marlon Brando in a classic crime film",
+   "known": 0.8
+  },
+  {
+   "label": "Lightning McQueen",
+   "qid": "Q864418",
+   "fame": 0.569,
+   "catchphrase": "Ka-chow!",
+   "kind": "character",
+   "description": "fictional character from the Cars franchise",
+   "hook": "is a hotshot red race car who learns humility in Radiator Springs",
+   "known": 0.8
+  },
+  {
+   "label": "SpongeBob SquarePants",
+   "qid": "Q935079",
+   "fame": 0.568,
+   "catchphrase": "I'm ready!",
+   "kind": "character",
+   "description": "main character from the animated television show SpongeBob SquarePants",
+   "hook": "is a cheerful fry cook who lives in a pineapple under the sea",
+   "known": 0.95
+  },
+  {
+   "label": "Uncle Sam",
+   "qid": "Q184689",
+   "fame": 0.561,
+   "catchphrase": "I want you!",
+   "kind": "character",
+   "description": "personification of the United States of America and its government",
+   "hook": "is a bearded figure in a star-spangled top hat seen on recruiting posters",
+   "known": 0.95
+  },
+  {
+   "label": "Walter Cronkite",
+   "qid": "Q31073",
+   "fame": 0.559,
+   "catchphrase": "And that's the way it is.",
+   "kind": "person",
+   "description": "American broadcast journalist (1916-2009)",
+   "hook": "anchored the CBS Evening News and was once called the most trusted man in America",
+   "known": 0.6
+  },
+  {
+   "label": "Ed McMahon",
+   "qid": "Q555370",
+   "fame": 0.556,
+   "catchphrase": "Here's Johnny!",
+   "kind": "person",
+   "description": "American announcer, game show host, actor, and spokesman (1923-2009)",
+   "hook": "was the booming-voiced sidekick on a long-running late-night talk show",
+   "known": 0.4
+  },
+  {
+   "label": "Spock",
+   "qid": "Q16341",
+   "fame": 0.548,
+   "catchphrase": "Live long and prosper.",
+   "kind": "character",
+   "description": "fictional character in Star Trek",
+   "hook": "is the pointy-eared, logical half-Vulcan science officer of the starship Enterprise",
+   "known": 0.8
+  },
+  {
+   "label": "Bart Simpson",
+   "qid": "Q5480",
+   "fame": 0.547,
+   "catchphrase": "Don't have a cow, man!",
+   "kind": "character",
+   "description": "fictional character from The Simpsons",
+   "hook": "is a spiky-haired, skateboarding troublemaker who prank calls Moe's Tavern",
+   "known": 0.95
+  },
+  {
+   "label": "Homer Simpson",
+   "qid": "Q7810",
+   "fame": 0.542,
+   "catchphrase": "D'oh!",
+   "kind": "character",
+   "description": "character from The Simpsons franchise",
+   "hook": "is a donut-loving, beer-drinking safety inspector at a nuclear plant",
+   "known": 0.95
+  },
+  {
+   "label": "David Frost",
+   "qid": "Q380865",
+   "fame": 0.539,
+   "catchphrase": "Hello, good evening and welcome",
+   "kind": "person",
+   "description": "British television host, journalist, comedian and writer (1939–2013)",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Eric Cartman",
+   "qid": "Q47352",
+   "fame": 0.535,
+   "catchphrase": "Respect my authoritah!",
+   "kind": "character",
+   "description": "fictional character from South Park",
+   "hook": "is a bratty, hat-wearing fourth grader with a sharp tongue and a love of Cheesy Poofs",
+   "known": 0.6
+  },
+  {
+   "label": "Fonzie",
+   "qid": "Q1435927",
+   "fame": 0.532,
+   "catchphrase": "Ayyyy!",
+   "kind": "character",
+   "description": "fictional character on \"Happy Days\"",
+   "hook": "is a leather-jacketed greaser who can start a jukebox with a thump",
+   "known": 0.6
+  },
+  {
+   "label": "Sonic the Hedgehog",
+   "qid": "Q191626",
+   "fame": 0.531,
+   "catchphrase": "You're too slow!",
+   "kind": "character",
+   "description": "video game character from the eponymous video game franchise",
+   "hook": "is a blue speedster who collects golden rings and battles Doctor Eggman",
+   "known": 0.8
+  },
+  {
+   "label": "Tim Gunn",
+   "qid": "Q978646",
+   "fame": 0.528,
+   "catchphrase": "Make it work.",
+   "kind": "person",
+   "description": "American actor and fashion consultant",
+   "hook": "is the mentor on the fashion design competition show Project Runway",
+   "known": 0.6
+  },
+  {
+   "label": "Jessica Rabbit",
+   "qid": "Q1631670",
+   "fame": 0.526,
+   "catchphrase": "I'm not bad. I'm just drawn that way.",
+   "kind": "character",
+   "description": "fictional character from the novel Who Censored Roger Rabbit? and its film adaptation Who Framed Roger Rabbit",
+   "hook": "is a red-haired femme fatale singer in a film mixing live action and cartoons",
+   "known": 0.6
+  },
+  {
+   "label": "Alfred E. Neuman",
+   "qid": "Q552164",
+   "fame": 0.519,
+   "catchphrase": "What? Me Worry?",
+   "kind": "character",
+   "description": "The mascot for Mad magazine",
+   "hook": "is a gap-toothed, freckled boy whose face has graced a satirical humor magazine",
+   "known": 0.4
+  },
+  {
+   "label": "Terminator",
+   "qid": "Q1976616",
+   "fame": 0.516,
+   "catchphrase": "I'll be back",
+   "kind": "character",
+   "description": "fictional series of cyborgs portrayed by Arnold Schwarzenegger",
+   "hook": "is a relentless time-traveling killer robot sent from the future",
+   "known": 0.95
+  },
+  {
+   "label": "Scooby-Doo",
+   "qid": "Q901323",
+   "fame": 0.511,
+   "catchphrase": "Ruh-roh!",
+   "kind": "character",
+   "description": "animated television character",
+   "hook": "is a cowardly talking Great Dane who solves mysteries from a van full of teens",
+   "known": 0.95
+  },
+  {
+   "label": "Velma Dinkley",
+   "qid": "Q929855",
+   "fame": 0.511,
+   "catchphrase": "Jinkies!",
+   "kind": "character",
+   "description": "fictional character from the Scooby-Doo universe",
+   "hook": "is the bespectacled brains of a mystery-solving gang who wears an orange turtleneck",
+   "known": 0.6
+  },
+  {
+   "label": "Little Britain",
+   "qid": "Q637033",
+   "fame": 0.511,
+   "catchphrase": "Computer says no.",
+   "kind": "show",
+   "description": "British character-based comedy sketch show",
+   "hook": "is a sketch show packed with recurring characters like Vicky Pollard and Lou and Andy",
+   "known": 0.4
+  },
+  {
+   "label": "Who Wants to Be a Millionaire?",
+   "qid": "Q7997397",
+   "fame": 0.511,
+   "catchphrase": "Is that your final answer?",
+   "kind": "show",
+   "description": "British television quiz show",
+   "hook": "has contestants climb a money ladder using lifelines like phone a friend",
+   "known": 0.95
+  },
+  {
+   "label": "Buzz Lightyear",
+   "qid": "Q1986193",
+   "fame": 0.509,
+   "catchphrase": "To infinity, and beyond!",
+   "kind": "character",
+   "description": "fictional Toy Story character",
+   "hook": "is a space ranger action figure who believes he can really fly",
+   "known": 0.95
+  },
+  {
+   "label": "Porky Pig",
+   "qid": "Q937186",
+   "fame": 0.508,
+   "catchphrase": "That’s all, folks!",
+   "kind": "character",
+   "description": "Warner Bros. cartoon character",
+   "hook": "is a stuttering, bow-tied cartoon oinker who signs off Looney Tunes shorts",
+   "known": 0.8
+  },
+  {
+   "label": "Rick Sanchez",
+   "qid": "Q24207815",
+   "fame": 0.504,
+   "catchphrase": "Wubbalubbadubdub",
+   "kind": "character",
+   "description": "main version (C-137) of Rick in Rick and Morty",
+   "hook": "is a mad-scientist grandfather who drags his grandson on portal-gun adventures",
+   "known": 0.6
+  },
+  {
+   "label": "Borg",
+   "qid": "Q220652",
+   "fame": 0.497,
+   "catchphrase": "Resistance is futile",
+   "kind": "character",
+   "description": "fictional faction in Star Trek",
+   "hook": null,
+   "known": 0.6
+  },
+  {
+   "label": "Jean-Luc Picard",
+   "qid": "Q16276",
+   "fame": 0.491,
+   "catchphrase": "Make it so.",
+   "kind": "character",
+   "description": "fictional Star Trek character",
+   "hook": null,
+   "known": 0.6
+  },
+  {
+   "label": "Yogi Bear",
+   "qid": "Q949916",
+   "fame": 0.484,
+   "catchphrase": "Hey, Boo-Boo!",
+   "kind": "character",
+   "description": "fictional character, bear",
+   "hook": null,
+   "known": 0.6
+  },
+  {
+   "label": "Garfield",
+   "qid": "Q767120",
+   "fame": 0.484,
+   "catchphrase": "I hate Mondays.",
+   "kind": "character",
+   "description": "fictional cartoon cat",
+   "hook": null,
+   "known": 0.8
+  },
+  {
+   "label": "Daphne Blake",
+   "qid": "Q1923284",
+   "fame": 0.482,
+   "catchphrase": "Jeepers!",
+   "kind": "character",
+   "description": "fictional character on Scooby-Doo",
+   "hook": null,
+   "known": 0.4
+  },
+  {
+   "label": "Joey Tribbiani",
+   "qid": "Q746277",
+   "fame": 0.479,
+   "catchphrase": "How you doin'?",
+   "kind": "character",
+   "description": "fictional character from Friends",
+   "hook": null,
+   "known": 0.8
+  },
+  {
+   "label": "Leonard McCoy",
+   "qid": "Q16351",
+   "fame": 0.479,
+   "catchphrase": "He's Dead, Jim",
+   "kind": "character",
+   "description": "fictional character from Star Trek",
+   "hook": null,
+   "known": 0.4
+  },
+  {
+   "label": "Dalek",
+   "qid": "Q853715",
+   "fame": 0.474,
+   "catchphrase": "EXTERMINATE!",
+   "kind": "character",
+   "description": "fictional alien race featured in the Doctor Who universe",
+   "hook": null,
+   "known": 0.6
+  },
+  {
+   "label": "Pavel Chekov",
+   "qid": "Q385831",
+   "fame": 0.472,
+   "catchphrase": "It's a Russian invention.",
+   "kind": "character",
+   "description": "fictional character",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Edward R. Murrow",
+   "qid": "Q353935",
+   "fame": 0.471,
+   "catchphrase": "Good night, and good luck.",
+   "kind": "person",
+   "description": "American broadcast journalist (1908–1965)",
+   "hook": null,
+   "known": 0.4
+  },
+  {
+   "label": "Emmett Brown",
+   "qid": "Q2337004",
+   "fame": 0.465,
+   "catchphrase": "Great Scott!",
+   "kind": "character",
+   "description": "fictional character from the American sci-fi film trilogy Back to the Future",
+   "hook": null,
+   "known": 0.8
+  },
+  {
+   "label": "Eleventh Doctor",
+   "qid": "Q2667397",
+   "fame": 0.458,
+   "catchphrase": "Geronimo!",
+   "kind": "character",
+   "description": "fictional character from Doctor Who",
+   "hook": null,
+   "known": 0.4
+  },
+  {
+   "label": "Mr. Burns",
+   "qid": "Q716636",
+   "fame": 0.453,
+   "catchphrase": "Excellent.",
+   "kind": "character",
+   "description": "fictional character from The Simpsons franchise",
+   "hook": null,
+   "known": 0.8
+  },
+  {
+   "label": "Fred Flintstone",
+   "qid": "Q614889",
+   "fame": 0.45,
+   "catchphrase": "Yabba Dabba Doo!",
+   "kind": "character",
+   "description": "cartoon character",
+   "hook": null,
+   "known": 0.95
+  }
+ ]
+}

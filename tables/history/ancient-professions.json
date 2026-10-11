@@ -1,0 +1,303 @@
+{
+ "id": "table.history.ancient-professions",
+ "kind": "table",
+ "title": "Famous ancient thinkers and artists and what they were",
+ "genre": "society",
+ "category": "history",
+ "topic": "ancient-world",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?occLabel WHERE { { SELECT ?item (SAMPLE(?o) AS ?occ) (COUNT(DISTINCT ?o) AS ?nC) WHERE { VALUES ?o { wd:Q4964182 wd:Q170790 wd:Q49757 wd:Q214917 wd:Q201788 wd:Q39631 wd:Q11063 wd:Q1281618 wd:Q42973 wd:Q81096 } ?item wdt:P31 wd:Q5 ; wdt:P106 ?o ; wdt:P569 ?b ; wikibase:sitelinks ?sl . FILTER(YEAR(?b) < 450 && YEAR(?b) > -3000) FILTER(?sl >= 35) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T01:54:49.448Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T01:54:49.448Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "known_as",
+   "label": "Known as",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "ancient thinker or writer",
+  "many": "ancient thinkers and writers",
+  "wildcard": "person",
+  "itemSub": "{hook}",
+  "hookAsk": "Which ancient figure {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "known_as": {
+    "role": "link",
+    "pick": "What was {label} best known as?",
+    "statement": "{label} was best known as a {value}.",
+    "match": "Match each ancient figure to what they were best known as.",
+    "odd": "Three of these ancient figures were best known as a {value}. Which one was not?",
+    "all": "Tap all {n} ancient figures best known as a {value}.",
+    "reverse": "Which of these ancient figures was best known as a {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Aristotle",
+   "qid": "Q868",
+   "fame": 0.715,
+   "known_as": "philosopher",
+   "description": "Greek philosopher",
+   "hook": "tutored a famous young conqueror and wrote on logic, ethics and biology",
+   "known": 0.95,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Marcus Aurelius",
+   "qid": "Q1430",
+   "fame": 0.708,
+   "known_as": "philosopher",
+   "description": "16th Roman Emperor from 161 to 180 and Stoic philosopher",
+   "hook": "ruled an empire while keeping a private journal of Stoic reflections called Meditations",
+   "known": 0.8,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Socrates",
+   "qid": "Q913",
+   "fame": 0.673,
+   "known_as": "philosopher",
+   "description": "5th-century BCE Greek philosopher",
+   "hook": "was sentenced to drink hemlock after relentlessly questioning his fellow Athenians",
+   "known": 0.95,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Confucius",
+   "qid": "Q4604",
+   "fame": 0.633,
+   "known_as": "philosopher",
+   "description": "5th-century BCE Chinese philosopher and politician",
+   "hook": "inspired a school of thought built on family duty and respect, with sayings gathered by students",
+   "known": 0.8,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Diogenes of Sinope",
+   "qid": "Q59180",
+   "fame": 0.617,
+   "known_as": "philosopher",
+   "description": "4th-century BC Greek Cynic philosopher",
+   "hook": null,
+   "known": 0.2,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Virgil",
+   "qid": "Q1398",
+   "fame": 0.586,
+   "known_as": "poet",
+   "description": "Roman poet (1st century BC)",
+   "hook": "wrote the Aeneid, an epic about a Trojan refugee whose descendants found a great city",
+   "known": 0.6,
+   "kind": "poet"
+  },
+  {
+   "label": "Herodotus",
+   "qid": "Q26825",
+   "fame": 0.581,
+   "known_as": "historian",
+   "description": "Greek historian and geographer (c. 484–c. 425 BC)",
+   "hook": "was nicknamed the Father of History for chronicling the wars between Greeks and Persians",
+   "known": 0.6,
+   "kind": "historian"
+  },
+  {
+   "label": "Ovid",
+   "qid": "Q7198",
+   "fame": 0.581,
+   "known_as": "poet",
+   "description": "Roman poet (43 BC – 17/18 AD)",
+   "hook": "wrote the Metamorphoses, a long work retelling myths of transformation, and was exiled by Augustus",
+   "known": 0.6,
+   "kind": "poet"
+  },
+  {
+   "label": "Thucydides",
+   "qid": "Q41683",
+   "fame": 0.565,
+   "known_as": "historian",
+   "description": "5th-century BC Athenian historian and general",
+   "hook": "chronicled the long war between Athens and Sparta, in which he served as a commander",
+   "known": 0.4,
+   "kind": "historian"
+  },
+  {
+   "label": "Sappho",
+   "qid": "Q17892",
+   "fame": 0.563,
+   "known_as": "poet",
+   "description": "ancient Greek poet from Lesbos (c. 630-c. 570 BC)",
+   "hook": "wrote passionate lyric verse that survives mostly in fragments and was called the Tenth Muse",
+   "known": 0.6,
+   "kind": "poet"
+  },
+  {
+   "label": "Laozi",
+   "qid": "Q9333",
+   "fame": 0.558,
+   "known_as": "philosopher",
+   "description": "6th-century BC semi-legendary Chinese philosopher, founder of Taoism",
+   "hook": "is credited with the Tao Te Ching, the founding text of Taoism",
+   "known": 0.6,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Josephus",
+   "qid": "Q134461",
+   "fame": 0.554,
+   "known_as": "historian",
+   "description": "Roman–Jewish historian and military leader (c. 37–c. 100)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "historian"
+  },
+  {
+   "label": "Epictetus",
+   "qid": "Q183144",
+   "fame": 0.55,
+   "known_as": "philosopher",
+   "description": "Greek Stoic philosopher (c. 50–c. 138)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Aeschylus",
+   "qid": "Q40939",
+   "fame": 0.54,
+   "known_as": "playwright",
+   "description": "ancient Athenian playwright",
+   "hook": "is called the father of tragedy and wrote the Oresteia trilogy",
+   "known": 0.4,
+   "kind": "playwright"
+  },
+  {
+   "label": "Heraclitus",
+   "qid": "Q41155",
+   "fame": 0.54,
+   "known_as": "philosopher",
+   "description": "Greek philosopher (late 6th/early 5th-century BC)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Euclid",
+   "qid": "Q8747",
+   "fame": 0.539,
+   "known_as": "mathematician",
+   "description": "ancient Greek mathematician (fl. 300 BC)",
+   "hook": "wrote the Elements, a geometry textbook used for over two thousand years",
+   "known": 0.8,
+   "kind": "mathematician"
+  },
+  {
+   "label": "Martial",
+   "qid": "Q2098",
+   "fame": 0.522,
+   "known_as": "poet",
+   "description": "1st-century Latin poet from Hispania",
+   "hook": null,
+   "known": 0.2,
+   "kind": "poet"
+  },
+  {
+   "label": "Epicurus",
+   "qid": "Q43216",
+   "fame": 0.517,
+   "known_as": "philosopher",
+   "description": "ancient Greek philosopher",
+   "hook": "taught that calm and freedom from pain are the path to the highest good",
+   "known": 0.4,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Hesiod",
+   "qid": "Q44233",
+   "fame": 0.517,
+   "known_as": "poet",
+   "description": "ancient Greek poet of the archaic period",
+   "hook": null,
+   "known": 0.2,
+   "kind": "poet"
+  },
+  {
+   "label": "Thales",
+   "qid": "Q36303",
+   "fame": 0.499,
+   "known_as": "philosopher",
+   "description": "ancient Greek philosopher and mathematician",
+   "hook": null,
+   "known": 0.2,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Polybius",
+   "qid": "Q131169",
+   "fame": 0.475,
+   "known_as": "historian",
+   "description": "ancient Greek historian",
+   "hook": null,
+   "known": 0.2,
+   "kind": "historian"
+  },
+  {
+   "label": "Plotinus",
+   "qid": "Q134189",
+   "fame": 0.467,
+   "known_as": "philosopher",
+   "description": "Hellenistic Platonist philosopher and founder of Neoplatonism (c. 204/5–270)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Catullus",
+   "qid": "Q163079",
+   "fame": 0.455,
+   "known_as": "poet",
+   "description": "lyric Latin poet of the Roman Republic",
+   "hook": null,
+   "known": 0.2,
+   "kind": "poet"
+  },
+  {
+   "label": "Zeno of Citium",
+   "qid": "Q171303",
+   "fame": 0.454,
+   "known_as": "philosopher",
+   "description": "Greek philosopher, founder of Stoicism",
+   "hook": null,
+   "known": 0.2,
+   "kind": "philosopher"
+  }
+ ]
+}

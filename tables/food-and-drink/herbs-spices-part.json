@@ -1,0 +1,391 @@
+{
+ "id": "table.food-and-drink.herbs-spices-part",
+ "kind": "table",
+ "title": "Herbs and spices: the part of the plant we use",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "ingredients",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?part WHERE { VALUES (?article ?itemLabel ?part) { (<https://en.wikipedia.org/wiki/Basil> \"Basil\" \"Leaf\") (<https://en.wikipedia.org/wiki/Mint> \"Mint\" \"Leaf\") (<https://en.wikipedia.org/wiki/Oregano> \"Oregano\" \"Leaf\") (<https://en.wikipedia.org/wiki/Thyme> \"Thyme\" \"Leaf\") (<https://en.wikipedia.org/wiki/Rosemary> \"Rosemary\" \"Leaf\") (<https://en.wikipedia.org/wiki/Salvia_officinalis> \"Sage\" \"Leaf\") (<https://en.wikipedia.org/wiki/Parsley> \"Parsley\" \"Leaf\") (<https://en.wikipedia.org/wiki/Bay_leaf> \"Bay laurel\" \"Leaf\") (<https://en.wikipedia.org/wiki/Tarragon> \"Tarragon\" \"Leaf\") (<https://en.wikipedia.org/wiki/Chives> \"Chives\" \"Leaf\") (<https://en.wikipedia.org/wiki/Marjoram> \"Marjoram\" \"Leaf\") (<https://en.wikipedia.org/wiki/Peppermint> \"Peppermint\" \"Leaf\") (<https://en.wikipedia.org/wiki/Spearmint> \"Spearmint\" \"Leaf\") (<https://en.wikipedia.org/wiki/Melissa_officinalis> \"Lemon balm\" \"Leaf\") (<https://en.wikipedia.org/wiki/Stevia> \"Stevia\" \"Leaf\") (<https://en.wikipedia.org/wiki/Cymbopogon> \"Lemongrass\" \"Stem\") (<https://en.wikipedia.org/wiki/Cinnamon> \"Cinnamon\" \"Bark\") (<https://en.wikipedia.org/wiki/Clove> \"Cloves\" \"Flower bud\") (<https://en.wikipedia.org/wiki/Caper> \"Capers\" \"Flower bud\") (<https://en.wikipedia.org/wiki/Nutmeg> \"Nutmeg\" \"Seed\") (<https://en.wikipedia.org/wiki/Cumin> \"Cumin\" \"Seed\") (<https://en.wikipedia.org/wiki/Mustard_seed> \"Mustard\" \"Seed\") (<https://en.wikipedia.org/wiki/Cardamom> \"Cardamom\" \"Seed\") (<https://en.wikipedia.org/wiki/Fenugreek> \"Fenugreek\" \"Seed\") (<https://en.wikipedia.org/wiki/Poppy_seed> \"Poppy\" \"Seed\") (<https://en.wikipedia.org/wiki/Sesame> \"Sesame\" \"Seed\") (<https://en.wikipedia.org/wiki/Caraway> \"Caraway\" \"Seed\") (<https://en.wikipedia.org/wiki/Black_pepper> \"Black pepper\" \"Fruit\") (<https://en.wikipedia.org/wiki/Vanilla> \"Vanilla\" \"Fruit\") (<https://en.wikipedia.org/wiki/Illicium_verum> \"Star anise\" \"Fruit\") (<https://en.wikipedia.org/wiki/Chili_pepper> \"Chili pepper\" \"Fruit\") (<https://en.wikipedia.org/wiki/Allspice> \"Allspice\" \"Fruit\") (<https://en.wikipedia.org/wiki/Sumac> \"Sumac\" \"Fruit\") (<https://en.wikipedia.org/wiki/Saffron> \"Saffron\" \"Stigma\") (<https://en.wikipedia.org/wiki/Ginger> \"Ginger\" \"Rhizome\") (<https://en.wikipedia.org/wiki/Turmeric> \"Turmeric\" \"Rhizome\") (<https://en.wikipedia.org/wiki/Galangal> \"Galangal\" \"Rhizome\") (<https://en.wikipedia.org/wiki/Wasabi> \"Wasabi\" \"Rhizome\") (<https://en.wikipedia.org/wiki/Garlic> \"Garlic\" \"Bulb\") (<https://en.wikipedia.org/wiki/Horseradish> \"Horseradish\" \"Root\") (<https://en.wikipedia.org/wiki/Liquorice> \"Licorice\" \"Root\") (<https://en.wikipedia.org/wiki/Lavender> \"Lavender\" \"Flower\") (<https://en.wikipedia.org/wiki/Chamomile> \"Chamomile\" \"Flower\") (<https://en.wikipedia.org/wiki/Asafoetida> \"Asafoetida\" \"Resin\") } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T10:05:21.738Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T12:34:08.445Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "part",
+   "label": "Part of the plant used",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "herb or spice",
+  "many": "herbs and spices",
+  "capitalise": true,
+  "lowerInProse": true,
+  "wildcard": "food",
+  "columns": {
+   "part": {
+    "role": "link",
+    "pick": "Which part of the plant do we use for {label}?",
+    "statement": "The part of the plant we use for {label} is the {value}.",
+    "match": "Match each herb or spice to the part of the plant we use.",
+    "odd": "Three of these herbs and spices come from the {value} of the plant. Which one doesn't?",
+    "all": "Tap all {n} herbs and spices that come from the {value} of the plant."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Saffron",
+   "qid": "Q25434",
+   "fame": 0.578,
+   "part": "Stigma",
+   "kind": "spice",
+   "description": "spice derived from the flower of Crocus sativus",
+   "hook": "is the world's priciest spice by weight, hand-picked from a purple crocus",
+   "known": 0.95
+  },
+  {
+   "label": "Cinnamon",
+   "qid": "Q28165",
+   "fame": 0.572,
+   "part": "Bark",
+   "kind": "spice",
+   "description": "spice obtained from the inner bark of several tree species from the genus Cinnamomum",
+   "hook": "is rolled into curled quills and sprinkled on buttery morning pastries",
+   "known": 0.95
+  },
+  {
+   "label": "Licorice",
+   "qid": "Q257106",
+   "fame": 0.567,
+   "part": "Root",
+   "kind": "spice",
+   "description": "plant species",
+   "hook": "gives black candy its sweet, anise-like taste",
+   "known": 0.4
+  },
+  {
+   "label": "Cloves",
+   "qid": "Q26736",
+   "fame": 0.563,
+   "part": "Flower bud",
+   "kind": "spice",
+   "description": "species of plant",
+   "hook": "is a dark, nail-shaped spice pressed into holiday hams and oranges",
+   "known": 0.5
+  },
+  {
+   "label": "Black pepper",
+   "qid": "Q43084",
+   "fame": 0.561,
+   "part": "Fruit",
+   "kind": "spice",
+   "description": "species of plant",
+   "hook": "is the most common seasoning shaken beside salt on dining tables",
+   "known": 0.9
+  },
+  {
+   "label": "Cardamom",
+   "qid": "Q14625808",
+   "fame": 0.561,
+   "part": "Seed",
+   "kind": "spice",
+   "description": "spice used in the kitchen",
+   "hook": "is a fragrant pod spice stirred into chai and Scandinavian pastries",
+   "known": 0.5
+  },
+  {
+   "label": "Capers",
+   "qid": "Q156251",
+   "fame": 0.56,
+   "part": "Flower bud",
+   "kind": "spice",
+   "description": "species of plant, caper",
+   "hook": null,
+   "known": 0.3
+  },
+  {
+   "label": "Turmeric",
+   "qid": "Q42562",
+   "fame": 0.56,
+   "part": "Rhizome",
+   "kind": "spice",
+   "description": "plant used as spice",
+   "hook": "gives curry its golden-yellow color",
+   "known": 0.6
+  },
+  {
+   "label": "Nutmeg",
+   "qid": "Q83165",
+   "fame": 0.557,
+   "part": "Seed",
+   "kind": "spice",
+   "description": "spice from trees in the genus Myristica",
+   "hook": "is grated over eggnog and shares its tree with the spice mace",
+   "known": 0.7
+  },
+  {
+   "label": "Chili pepper",
+   "qid": "Q165199",
+   "fame": 0.546,
+   "part": "Fruit",
+   "kind": "spice",
+   "description": "fruit of plants from the genus Capsicum, members of the nightshade family, Solanaceae",
+   "hook": "packs fiery heat from capsaicin, measured on the Scoville scale",
+   "known": 0.7
+  },
+  {
+   "label": "Wasabi",
+   "qid": "Q49855",
+   "fame": 0.545,
+   "part": "Rhizome",
+   "kind": "spice",
+   "description": "species of edible plant",
+   "hook": "is the pungent green paste served alongside sushi",
+   "known": 0.5
+  },
+  {
+   "label": "Sumac",
+   "qid": "Q157649",
+   "fame": 0.541,
+   "part": "Fruit",
+   "kind": "spice",
+   "description": "genus of plants",
+   "hook": null,
+   "known": 0.3
+  },
+  {
+   "label": "Rosemary",
+   "qid": "Q102240169",
+   "fame": 0.535,
+   "part": "Leaf",
+   "kind": "herb",
+   "description": "species of plant, for the culinary or medicinal herb use Q68315046",
+   "hook": "is a piney-scented Mediterranean herb paired with roast lamb and potatoes",
+   "known": 0.75
+  },
+  {
+   "label": "Horseradish",
+   "qid": "Q26545",
+   "fame": 0.531,
+   "part": "Root",
+   "kind": "spice",
+   "description": "species of plant",
+   "hook": null,
+   "known": 0.3
+  },
+  {
+   "label": "Vanilla",
+   "qid": "Q13241",
+   "fame": 0.531,
+   "part": "Fruit",
+   "kind": "spice",
+   "description": "spice derived from the seed pods of the genus Vanilla",
+   "hook": "gives ice cream its classic flavor and comes from an orchid",
+   "known": 0.8
+  },
+  {
+   "label": "Ginger",
+   "qid": "Q35625",
+   "fame": 0.528,
+   "part": "Rhizome",
+   "kind": "spice",
+   "description": "plant species",
+   "hook": "is a zesty, knobby spice that is pickled for sushi and brewed into tea",
+   "known": 0.9
+  },
+  {
+   "label": "Sesame",
+   "qid": "Q2763698",
+   "fame": 0.527,
+   "part": "Seed",
+   "kind": "spice",
+   "description": "flowering plant cultivated for its edible seeds",
+   "hook": "tops hamburger buns and is ground into tahini",
+   "known": 0.5
+  },
+  {
+   "label": "Stevia",
+   "qid": "Q3644010",
+   "fame": 0.525,
+   "part": "Leaf",
+   "kind": "herb",
+   "description": "sweetener and sugar substitute",
+   "hook": null,
+   "known": 0.3
+  },
+  {
+   "label": "Cumin",
+   "qid": "Q132624",
+   "fame": 0.52,
+   "part": "Seed",
+   "kind": "spice",
+   "description": "species of plant",
+   "hook": "is the earthy spice that defines taco seasoning and chili powder",
+   "known": 0.7
+  },
+  {
+   "label": "Garlic",
+   "qid": "Q23400",
+   "fame": 0.52,
+   "part": "Bulb",
+   "kind": "spice",
+   "description": "species of plant (for the food, use Q21546392)",
+   "hook": "is the pungent kitchen staple folklore says repels vampires",
+   "known": 0.95
+  },
+  {
+   "label": "Allspice",
+   "qid": "Q1963621",
+   "fame": 0.515,
+   "part": "Fruit",
+   "kind": "spice",
+   "description": "spice; for the species, use Q158468",
+   "hook": "is a Jamaican berry that tastes like a mix of cinnamon, nutmeg and cloves",
+   "known": 0.5
+  },
+  {
+   "label": "Basil",
+   "qid": "Q38859",
+   "fame": 0.512,
+   "part": "Leaf",
+   "kind": "herb",
+   "description": "species of plant, herb",
+   "hook": "is the sweet herb blended into pesto and layered in caprese salad",
+   "known": 0.8
+  },
+  {
+   "label": "Chamomile",
+   "qid": "Q14169150",
+   "fame": 0.503,
+   "part": "Flower",
+   "kind": "herb",
+   "description": "common name, for several daisy-like plants",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Oregano",
+   "qid": "Q134283",
+   "fame": 0.494,
+   "part": "Leaf",
+   "kind": "herb",
+   "description": "species of flowering plant",
+   "hook": "is the herb sprinkled on pizza and used throughout Greek cooking",
+   "known": 0.8
+  },
+  {
+   "label": "Marjoram",
+   "qid": "Q22694",
+   "fame": 0.49,
+   "part": "Leaf",
+   "kind": "herb",
+   "description": "species of plant",
+   "hook": "is a sweet, mild herb often called oregano's gentler relative",
+   "known": 0.4
+  },
+  {
+   "label": "Bay laurel",
+   "qid": "Q2370943",
+   "fame": 0.486,
+   "part": "Leaf",
+   "kind": "herb",
+   "description": "aromatic leaf of Laurus nobilis",
+   "hook": "is the fragrant herb tossed whole into soups and stews, then fished out",
+   "known": 0.6
+  },
+  {
+   "label": "Parsley",
+   "qid": "Q25284",
+   "fame": 0.486,
+   "part": "Leaf",
+   "kind": "herb",
+   "description": "species of flowering plant in the celery family Apiaceae cultivated as an herb",
+   "hook": "is the curly green garnish found on many restaurant plates",
+   "known": 0.6
+  },
+  {
+   "label": "Thyme",
+   "qid": "Q3215980",
+   "fame": 0.484,
+   "part": "Leaf",
+   "kind": "herb",
+   "description": "herb with culinary, medicinal and ornamental uses",
+   "hook": "is a woody herb bundled into the French bouquet garni",
+   "known": 0.6
+  },
+  {
+   "label": "Poppy",
+   "qid": "Q2007388",
+   "fame": 0.481,
+   "part": "Seed",
+   "kind": "spice",
+   "description": "edible oilseed obtained from poppy",
+   "hook": "tops bagels and lemon muffins as tiny blue-gray specks",
+   "known": 0.5
+  },
+  {
+   "label": "Tarragon",
+   "qid": "Q155814",
+   "fame": 0.475,
+   "part": "Leaf",
+   "kind": "herb",
+   "description": "perennial herb with an aniseed scent",
+   "hook": "is the anise-flavored herb in classic bearnaise sauce",
+   "known": 0.5
+  },
+  {
+   "label": "Star anise",
+   "qid": "Q2878644",
+   "fame": 0.473,
+   "part": "Fruit",
+   "kind": "spice",
+   "description": "species of plant",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Chives",
+   "qid": "Q51148",
+   "fame": 0.462,
+   "part": "Leaf",
+   "kind": "herb",
+   "description": "edible species of plant",
+   "hook": "is the mild onion-flavored herb snipped over baked potatoes",
+   "known": 0.4
+  },
+  {
+   "label": "Galangal",
+   "qid": "Q734727",
+   "fame": 0.454,
+   "part": "Rhizome",
+   "kind": "spice",
+   "description": "rhizome of several plants from the ginger family (Zingiberaceae)",
+   "hook": null,
+   "known": 0.2
+  }
+ ]
+}

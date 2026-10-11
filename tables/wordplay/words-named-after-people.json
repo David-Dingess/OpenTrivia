@@ -1,0 +1,762 @@
+{
+ "id": "table.wordplay.words-named-after-people",
+ "kind": "table",
+ "title": "Words named after people",
+ "genre": "general",
+ "category": "wordplay",
+ "topic": "eponyms",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?personLabel WHERE { VALUES ?item { wd:Q28803 wd:Q58148 wd:Q79894 wd:Q9798 wd:Q128015 wd:Q226418 wd:Q174174 wd:Q202570 wd:Q191413 wd:Q221262 wd:Q81714 wd:Q146578 wd:Q272460 wd:Q207788 wd:Q898700 wd:Q1419824 wd:Q890356 wd:Q1129117 wd:Q1412680 wd:Q1820061 wd:Q885342 wd:Q5593383 wd:Q896083 wd:Q310041 wd:Q47043 wd:Q38358 wd:Q179366 wd:Q213477 wd:Q275508 wd:Q466430 wd:Q209974 wd:Q131442 wd:Q273027 wd:Q219407 wd:Q170765 wd:Q188908 wd:Q39531 wd:Q12379 wd:Q130918 wd:Q157017 wd:Q158617 wd:Q156996 wd:Q208253 wd:Q261903 wd:Q740887 wd:Q310654 wd:Q161066 wd:Q158622 wd:Q11579 wd:Q25272 wd:Q25250 wd:Q12438 wd:Q25236 wd:Q25267 wd:Q25269 wd:Q39369 wd:Q42289 wd:Q44395 wd:Q47083 wd:Q163343 wd:Q131255 wd:Q25406 wd:Q5329 wd:Q309372 wd:Q190763 wd:Q79897 wd:Q38768 wd:Q170464 wd:Q41472 wd:Q48171 wd:Q1892 wd:Q1876 wd:Q1901 wd:Q1896 wd:Q1898 wd:Q1258 wd:Q1249 } ?item wdt:P138 ?person . ?person wdt:P31 wd:Q5 . FILTER NOT EXISTS { ?item wdt:P138 ?p2 . ?p2 wdt:P31 wd:Q5 . FILTER(?p2 != ?person) } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T05:42:16.530Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T05:42:16.530Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "named_after",
+   "label": "Named after",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "word",
+  "many": "words",
+  "wildcard": "person",
+  "exclude": [
+   {
+    "qid": "Q309372",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q79897",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q39531",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q219407",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q128015",
+    "why": "violent at heart"
+   },
+   {
+    "qid": "Q275508",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q12379",
+    "why": "Mario Segale is too obscure to ask"
+   },
+   {
+    "qid": "Q188908",
+    "why": "Edward Murphy is too obscure"
+   },
+   {
+    "qid": "Q47043",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q156996",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q1412680",
+    "why": "label and answer share a word, too obscure"
+   },
+   {
+    "qid": "Q38358",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q170765",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q42289",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q273027",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q191413",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q25267",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q170464",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q310041",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q174174",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q130918",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q261903",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q207788",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q190763",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q146578",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q157017",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q41472",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q79894",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q158622",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q1129117",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q58148",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q209974",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q25406",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q38768",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q158617",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q131442",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q202570",
+    "why": "label and answer share a word"
+   },
+   {
+    "qid": "Q208253",
+    "why": "too obscure"
+   }
+  ],
+  "columns": {
+   "named_after": {
+    "role": "code",
+    "pick": "Who is {label} named after?",
+    "statement": "{label} is named after {value}.",
+    "match": "Match each word to the person it is named after.",
+    "reverse": "Which word is named after {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Mercator projection",
+   "qid": "Q309372",
+   "fame": 0.713,
+   "named_after": "Gerardus Mercator",
+   "description": "cylindrical map projection invented by Gerardus Mercator in 1569",
+   "hook": "flattens the globe onto a rectangle that makes Greenland look as big as Africa",
+   "known": 0.4,
+   "kind": "concept"
+  },
+  {
+   "label": "Morse code",
+   "qid": "Q79897",
+   "fame": 0.626,
+   "named_after": "Samuel Finley Breese Morse",
+   "description": "communication code with signals representing letters, punctuation marks and numbers",
+   "hook": "sends letters as short and long beeps, with three dots, three dashes, three dots meaning SOS",
+   "known": 0.6,
+   "kind": "device"
+  },
+  {
+   "label": "Bluetooth",
+   "qid": "Q39531",
+   "fame": 0.602,
+   "named_after": "Harald Bluetooth",
+   "description": "short-distance wireless communication protocol",
+   "hook": "lets phones pair wirelessly with headphones and speakers, with a logo made from two ancient runes",
+   "known": 0.8,
+   "kind": "device"
+  },
+  {
+   "label": "Ponzi scheme",
+   "qid": "Q219407",
+   "fame": 0.602,
+   "named_after": "Charles Ponzi",
+   "description": "fraudulent investment scheme that pays earlier investors with proceeds from later investors",
+   "hook": "pays old investors with money from new ones until the whole pyramid collapses",
+   "known": 0.6,
+   "kind": "concept"
+  },
+  {
+   "label": "guillotine",
+   "qid": "Q128015",
+   "fame": 0.599,
+   "named_after": "Joseph-Ignace Guillotin",
+   "description": "apparatus designed for carrying out executions by beheading",
+   "hook": "dropped a heavy angled blade to carry out executions in revolutionary France",
+   "known": 0.6,
+   "kind": "device"
+  },
+  {
+   "label": "Caesar salad",
+   "qid": "Q275508",
+   "fame": 0.585,
+   "named_after": "Caesar Cardini",
+   "description": "salad of romaine lettuce and croutons",
+   "hook": "mixes romaine, croutons and parmesan in a dressing, created at a Tijuana restaurant",
+   "known": 0.8,
+   "kind": "food"
+  },
+  {
+   "label": "Mario",
+   "qid": "Q12379",
+   "fame": 0.585,
+   "named_after": "Mario Segale",
+   "description": "fictional character in the Mario video game franchise",
+   "hook": "is a mustachioed plumber in red who stomps on Goombas and rescues a princess",
+   "known": 0.9,
+   "kind": "toy"
+  },
+  {
+   "label": "pilates",
+   "qid": "Q272460",
+   "fame": 0.583,
+   "named_after": "Joseph Pilates",
+   "description": "physical fitness system",
+   "hook": "is a core-strengthening exercise method done on a mat or a machine called the reformer",
+   "known": 0.6,
+   "kind": "concept"
+  },
+  {
+   "label": "Murphy's law",
+   "qid": "Q188908",
+   "fame": 0.582,
+   "named_after": "Edward A. Murphy, Jr.",
+   "description": "an adage or epigram that is typically stated as: \"Anything that can go wrong, will go wrong\".",
+   "hook": "is the gloomy saying that if something can go wrong, it will",
+   "known": 0.6,
+   "kind": "concept"
+  },
+  {
+   "label": "Rubik's Cube",
+   "qid": "Q47043",
+   "fame": 0.569,
+   "named_after": "Ernő Rubik",
+   "description": "3-D combination puzzle with many different permutations",
+   "hook": "is a six-colored twisting toy that has over 43 quintillion possible positions",
+   "known": 0.9,
+   "kind": "toy"
+  },
+  {
+   "label": "Bougainvillea",
+   "qid": "Q156996",
+   "fame": 0.567,
+   "named_after": "Louis-Antoine de Bougainville",
+   "description": "genus of plants",
+   "hook": "is a vine-like plant famous for its papery, brightly colored magenta bracts",
+   "known": 0.6,
+   "kind": "plant"
+  },
+  {
+   "label": "Beef Wellington",
+   "qid": "Q1412680",
+   "fame": 0.56,
+   "named_after": "Arthur Wellesley, 1st Duke of Wellington",
+   "description": "filet steak with pâté and duxelles in puff pastry",
+   "hook": "is a fancy dish of steak and pate wrapped in golden pastry, a favorite of celebrity chefs",
+   "known": 0.6,
+   "kind": "food"
+  },
+  {
+   "label": "Dobermann",
+   "qid": "Q38358",
+   "fame": 0.558,
+   "named_after": "Karl Friedrich Louis Dobermann",
+   "description": "German dog breed",
+   "hook": "is a sleek, muscular black-and-tan guard dog, bred by a German tax collector",
+   "known": 0.4,
+   "kind": "product"
+  },
+  {
+   "label": "joule",
+   "qid": "Q25269",
+   "fame": 0.553,
+   "named_after": "James Prescott Joule",
+   "description": "SI unit of energy, work and amount of heat",
+   "hook": "is the metric unit used to measure energy, equal to one watt for one second",
+   "known": 0.6,
+   "kind": "unit"
+  },
+  {
+   "label": "pavlova",
+   "qid": "Q1419824",
+   "fame": 0.551,
+   "named_after": "Anna Pavlova",
+   "description": "dessert",
+   "hook": "is a meringue dessert topped with cream and fruit, claimed by both Australia and New Zealand",
+   "known": 0.6,
+   "kind": "food"
+  },
+  {
+   "label": "Pyrrhic victory",
+   "qid": "Q170765",
+   "fame": 0.549,
+   "named_after": "Pyrrhus",
+   "description": "victory at an unsustainable cost",
+   "hook": "describes a win so costly that it feels like a loss",
+   "known": 0.2,
+   "kind": "concept"
+  },
+  {
+   "label": "degree Fahrenheit",
+   "qid": "Q42289",
+   "fame": 0.545,
+   "named_after": "Daniel Gabriel Fahrenheit",
+   "description": "unit of temperature",
+   "hook": "is the temperature scale used in the United States, where water freezes at 32 and boils at 212",
+   "known": 0.8,
+   "kind": "unit"
+  },
+  {
+   "label": "Martini",
+   "qid": "Q273027",
+   "fame": 0.544,
+   "named_after": "Alessandro Martini",
+   "description": "cocktail made with gin and vermouth",
+   "hook": "is a drink of gin and dry vermouth garnished with an olive, shaken or stirred by James Bond",
+   "known": 0.6,
+   "kind": "food"
+  },
+  {
+   "label": "sandwich",
+   "qid": "Q28803",
+   "fame": 0.536,
+   "named_after": "John Montagu, 4th Earl of Sandwich",
+   "description": "food made with bread and other ingredients",
+   "hook": "is a lunch staple of fillings between bread slices, said to be made for a gambler at the card table",
+   "known": 0.9,
+   "kind": "food"
+  },
+  {
+   "label": "Zeppelin",
+   "qid": "Q191413",
+   "fame": 0.535,
+   "named_after": "Ferdinand von Zeppelin",
+   "description": "rigid airship type",
+   "hook": "was a huge cigar-shaped airship, the type that burned in the Hindenburg disaster",
+   "known": 0.4,
+   "kind": "device"
+  },
+  {
+   "label": "degree Celsius",
+   "qid": "Q25267",
+   "fame": 0.533,
+   "named_after": "Anders Celsius",
+   "description": "SI unit of Celsius temperature",
+   "hook": "is the temperature scale where water freezes at 0 and boils at 100",
+   "known": 0.8,
+   "kind": "unit"
+  },
+  {
+   "label": "Beaufort Scale",
+   "qid": "Q170464",
+   "fame": 0.532,
+   "named_after": "Francis Beaufort",
+   "description": "empirical measure describing wind speed based on observed conditions",
+   "hook": "rates wind from calm to hurricane force from 0 to 12, long used by sailors",
+   "known": 0.4,
+   "kind": "scale"
+  },
+  {
+   "label": "kelvin",
+   "qid": "Q11579",
+   "fame": 0.529,
+   "named_after": "William Thomson, 1st Baron Kelvin",
+   "description": "SI unit of thermodynamic temperature",
+   "hook": "is the scientific temperature unit whose zero is absolute zero, the coldest possible point",
+   "known": 0.6,
+   "kind": "unit"
+  },
+  {
+   "label": "decibel",
+   "qid": "Q5329",
+   "fame": 0.526,
+   "named_after": "Alexander Graham Bell",
+   "description": "logarithmic unit expressing the ratio of a physical quantity",
+   "hook": "is the unit that measures how loud a sound is",
+   "known": 0.4,
+   "kind": "unit"
+  },
+  {
+   "label": "Macadamia",
+   "qid": "Q310041",
+   "fame": 0.526,
+   "named_after": "John Macadam",
+   "description": "genus of plants",
+   "hook": "is a tree bearing round, very hard-shelled, buttery nuts closely linked to Hawaii",
+   "known": 0.6,
+   "kind": "plant"
+  },
+  {
+   "label": "diesel engine",
+   "qid": "Q174174",
+   "fame": 0.523,
+   "named_after": "Rudolf Diesel",
+   "description": "internal combustion engine with quality rotational frequency governing, internal mixture formation, lean air-fuel-ratio, diffusion flame and compression ignition",
+   "hook": "powers trucks, trains and ships by igniting fuel with compressed hot air instead of spark plugs",
+   "known": 0.6,
+   "kind": "device"
+  },
+  {
+   "label": "pascal",
+   "qid": "Q44395",
+   "fame": 0.521,
+   "named_after": "Blaise Pascal",
+   "description": "SI unit of pressure and stress",
+   "hook": "is the metric unit of pressure, one newton per square meter",
+   "known": 0.2,
+   "kind": "unit"
+  },
+  {
+   "label": "saxophone",
+   "qid": "Q9798",
+   "fame": 0.521,
+   "named_after": "Adolphe Sax",
+   "description": "single-reed woodwind instrument",
+   "hook": "is the curved brass instrument with a single reed, central to jazz",
+   "known": 0.6,
+   "kind": "device"
+  },
+  {
+   "label": "hertz",
+   "qid": "Q39369",
+   "fame": 0.52,
+   "named_after": "Heinrich Hertz",
+   "description": "SI unit of frequency",
+   "hook": "is the unit counting cycles per second, used for radio frequencies and sound pitch",
+   "known": 0.2,
+   "kind": "unit"
+  },
+  {
+   "label": "Dahlia",
+   "qid": "Q130918",
+   "fame": 0.518,
+   "named_after": "Anders Dahl",
+   "description": "genus of plants",
+   "hook": "is a flower with layered petals, native to Mexico, and the national flower there",
+   "known": 0.6,
+   "kind": "plant"
+  },
+  {
+   "label": "watt",
+   "qid": "Q25236",
+   "fame": 0.518,
+   "named_after": "James Watt",
+   "description": "SI unit of power",
+   "hook": "is the unit of power printed on every light bulb",
+   "known": 0.8,
+   "kind": "unit"
+  },
+  {
+   "label": "newton",
+   "qid": "Q12438",
+   "fame": 0.514,
+   "named_after": "Isaac Newton",
+   "description": "SI unit of force",
+   "hook": "is the unit of force, said to be about the weight of a small apple",
+   "known": 0.2,
+   "kind": "unit"
+  },
+  {
+   "label": "Wisteria",
+   "qid": "Q261903",
+   "fame": 0.514,
+   "named_after": "Caspar Wistar",
+   "description": "genus of plants",
+   "hook": "is a climbing vine famous for hanging clusters of fragrant purple flowers",
+   "known": 0.6,
+   "kind": "plant"
+  },
+  {
+   "label": "Earl Grey tea",
+   "qid": "Q207788",
+   "fame": 0.513,
+   "named_after": "Charles Grey, 2nd Earl Grey",
+   "description": "black tea blend flavored with bergamot",
+   "hook": "is a black tea scented with citrusy bergamot oil",
+   "known": 0.6,
+   "kind": "food"
+  },
+  {
+   "label": "Venn diagram",
+   "qid": "Q190763",
+   "fame": 0.508,
+   "named_after": "John Venn",
+   "description": "diagram that shows all possible logical relations between a collection of sets",
+   "hook": "uses overlapping circles to show what different groups have in common",
+   "known": 0.6,
+   "kind": "concept"
+  },
+  {
+   "label": "Bakelite",
+   "qid": "Q146578",
+   "fame": 0.507,
+   "named_after": "Leo Baekeland",
+   "description": "early plastic",
+   "hook": "was the first fully synthetic plastic, used in old telephones and radios",
+   "known": 0.2,
+   "kind": "product"
+  },
+  {
+   "label": "Magnolia",
+   "qid": "Q157017",
+   "fame": 0.507,
+   "named_after": "Pierre Magnol",
+   "description": "genus of plants",
+   "hook": "is a tree or shrub with large, showy blooms, among the oldest flowering plants on Earth",
+   "known": 0.6,
+   "kind": "plant"
+  },
+  {
+   "label": "teddy bear",
+   "qid": "Q213477",
+   "fame": 0.501,
+   "named_after": "Theodore Roosevelt",
+   "description": "soft toy in the form of a bear",
+   "hook": "is a cuddly stuffed toy inspired by a president refusing to shoot a captured animal on a hunt",
+   "known": 0.9,
+   "kind": "toy"
+  },
+  {
+   "label": "Mohs scale of mineral hardness",
+   "qid": "Q41472",
+   "fame": 0.5,
+   "named_after": "Friedrich Mohs",
+   "description": "qualitative ordinal scale characterizing scratch resistance of various minerals",
+   "hook": "ranks minerals from 1 (talc) to 10 (diamond) by how easily they get scratched",
+   "known": 0.4,
+   "kind": "scale"
+  },
+  {
+   "label": "ampere",
+   "qid": "Q25272",
+   "fame": 0.495,
+   "named_after": "André-Marie Ampère",
+   "description": "SI unit of electric current",
+   "hook": "is the unit that measures the flow of electric current, often shortened to amp",
+   "known": 0.6,
+   "kind": "unit"
+  },
+  {
+   "label": "Braille script",
+   "qid": "Q79894",
+   "fame": 0.495,
+   "named_after": "Louis Braille",
+   "description": "tactile writing system for blind and visually impaired people",
+   "hook": "lets blind people read using raised dots felt with the fingertips",
+   "known": 0.6,
+   "kind": "device"
+  },
+  {
+   "label": "Rafflesia",
+   "qid": "Q158622",
+   "fame": 0.493,
+   "named_after": "Thomas Stamford Raffles",
+   "description": "genus of plants",
+   "hook": "is a parasitic plant that produces the largest single flower in the world, which smells like rotting meat",
+   "known": 0.2,
+   "kind": "plant"
+  },
+  {
+   "label": "Tupperware",
+   "qid": "Q1129117",
+   "fame": 0.488,
+   "named_after": "Earl Tupper",
+   "description": "name of a home products line",
+   "hook": "is a brand of plastic food storage containers famously sold at home parties",
+   "known": 0.6,
+   "kind": "product"
+  },
+  {
+   "label": "ohm",
+   "qid": "Q47083",
+   "fame": 0.487,
+   "named_after": "Georg Simon Ohm",
+   "description": "SI derived unit of electrical resistance",
+   "hook": "is the unit of electrical resistance, written with the Greek letter omega",
+   "known": 0.2,
+   "kind": "unit"
+  },
+  {
+   "label": "pasteurization",
+   "qid": "Q58148",
+   "fame": 0.486,
+   "named_after": "Louis Pasteur",
+   "description": "process in which certain foods are treated with mild heat in order to eliminate pathogens and extend shelf life",
+   "hook": "is the heat treatment that makes milk safe to drink by killing germs",
+   "known": 0.6,
+   "kind": "concept"
+  },
+  {
+   "label": "béchamel",
+   "qid": "Q209974",
+   "fame": 0.484,
+   "named_after": "Louis de Béchamel",
+   "description": "sauce of French cuisine",
+   "hook": "is a creamy white sauce of butter, flour and milk, one of French cooking's mother sauces",
+   "known": 0.4,
+   "kind": "food"
+  },
+  {
+   "label": "coulomb",
+   "qid": "Q25406",
+   "fame": 0.482,
+   "named_after": "Charles-Augustin de Coulomb",
+   "description": "SI unit of electric charge",
+   "hook": "is the unit of electric charge, equal to one ampere flowing for one second",
+   "known": 0.2,
+   "kind": "unit"
+  },
+  {
+   "label": "Richter scale",
+   "qid": "Q38768",
+   "fame": 0.48,
+   "named_after": "Charles Francis Richter",
+   "description": "measuring the strength (\"size\") of earthquakes",
+   "hook": "is the numbered system once used in the news to rate how powerful an earthquake is",
+   "known": 0.6,
+   "kind": "scale"
+  },
+  {
+   "label": "nachos",
+   "qid": "Q466430",
+   "fame": 0.477,
+   "named_after": "Ignacio Anaya García",
+   "description": "Mexican dish",
+   "hook": "are tortilla chips topped with melted cheese and jalapenos, invented in a Mexican border town",
+   "known": 0.6,
+   "kind": "food"
+  },
+  {
+   "label": "Begonia",
+   "qid": "Q158617",
+   "fame": 0.475,
+   "named_after": "Michel Bégon",
+   "description": "genus of plants",
+   "hook": "is a popular houseplant with lopsided leaves and waxy pink or red flowers",
+   "known": 0.6,
+   "kind": "plant"
+  },
+  {
+   "label": "Sachertorte",
+   "qid": "Q131442",
+   "fame": 0.474,
+   "named_after": "Franz Sacher",
+   "description": "specific type of chocolate cake, or torte",
+   "hook": "is a rich chocolate cake with apricot jam, a signature dessert of Vienna",
+   "known": 0.2,
+   "kind": "food"
+  },
+  {
+   "label": "graham cracker",
+   "qid": "Q5593383",
+   "fame": 0.466,
+   "named_after": "Sylvester Graham",
+   "description": "cracker confectionery usually sweetened with honey",
+   "hook": "is the sweet, crunchy honey-flavored snack used with chocolate and marshmallow in s'mores",
+   "known": 0.6,
+   "kind": "food"
+  },
+  {
+   "label": "Ferris wheel",
+   "qid": "Q202570",
+   "fame": 0.465,
+   "named_after": "George Washington Gale Ferris, Jr.",
+   "description": "amusement ride",
+   "hook": "is a giant rotating observation ride first built for the Chicago world's fair",
+   "known": 0.8,
+   "kind": "device"
+  },
+  {
+   "label": "volt",
+   "qid": "Q25250",
+   "fame": 0.461,
+   "named_after": "Alessandro Volta",
+   "description": "SI unit of electric potential, of electric potential difference (voltage), and of electromotive force",
+   "hook": "is the unit of electrical potential, measured across the two ends of a battery or wall outlet",
+   "known": 0.8,
+   "kind": "unit"
+  },
+  {
+   "label": "Euphorbia pulcherrima",
+   "qid": "Q208253",
+   "fame": 0.45,
+   "named_after": "Joel Roberts Poinsett",
+   "description": "species of plant, the poinsettia",
+   "hook": "is the red-leafed plant traditionally displayed at Christmas",
+   "known": 0.8,
+   "kind": "plant"
+  }
+ ]
+}

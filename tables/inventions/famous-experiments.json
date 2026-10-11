@@ -1,0 +1,168 @@
+{
+ "id": "table.inventions.famous-experiments",
+ "kind": "table",
+ "title": "Famous experiments and the scientists behind them",
+ "genre": "science-math-tech",
+ "category": "inventions",
+ "topic": "scientists",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Hand-built, checked row by row against English Wikipedia",
+  "method": "enwiki: Double-slit experiment, Stanford prison experiment, Milgram experiment, Schrödinger's cat, Stanford marshmallow experiment, Foucault pendulum, Michelson–Morley experiment, Classical conditioning, Little Albert experiment, Dolly (sheep), Pitch drop experiment, Chicago Pile-1, Eratosthenes, Ignaz Semmelweis, Smallpox vaccine and each scientist's article",
+  "attribution": null,
+  "fetchedAt": "2026-10-05"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-05T20:12:00.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "label": "Scientist",
+   "key": "scientist",
+   "type": "text",
+   "unit": null
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "experiment",
+  "many": "experiments",
+  "capitalise": true,
+  "hookAsk": "Which experiment {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "scientist": {
+    "role": "code",
+    "pick": "Which scientist ran this experiment: {label}?",
+    "statement": "{label} was carried out by {value}.",
+    "match": "Match each experiment to the scientist behind it.",
+    "reverse": "Which of these experiments did {value} carry out?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Double-slit light experiment",
+   "qid": null,
+   "fame": 0.584,
+   "scientist": "Thomas Young",
+   "known": 0.6,
+   "kind": "physics"
+  },
+  {
+   "label": "Mock prison guards and prisoners experiment",
+   "qid": null,
+   "fame": 0.681,
+   "scientist": "Philip Zimbardo",
+   "known": 0.6,
+   "kind": "psychology"
+  },
+  {
+   "label": "Electric-shock obedience experiment",
+   "qid": null,
+   "fame": 0.575,
+   "scientist": "Stanley Milgram",
+   "known": 0.6,
+   "kind": "psychology"
+  },
+  {
+   "label": "Cat-in-a-box thought experiment",
+   "qid": null,
+   "fame": 0.643,
+   "scientist": "Erwin Schrödinger",
+   "known": 0.6,
+   "kind": "physics"
+  },
+  {
+   "label": "Marshmallow test",
+   "qid": null,
+   "fame": 0.46,
+   "scientist": "Walter Mischel",
+   "known": 0.8,
+   "kind": "psychology"
+  },
+  {
+   "label": "Pendulum that shows Earth's rotation",
+   "qid": null,
+   "fame": 0.474,
+   "scientist": "Léon Foucault",
+   "known": 0.6,
+   "kind": "physics"
+  },
+  {
+   "label": "Luminiferous ether experiment",
+   "qid": null,
+   "fame": 0.455,
+   "scientist": "Albert Michelson and Edward Morley",
+   "known": 0.4,
+   "kind": "physics"
+  },
+  {
+   "label": "Salivating dogs and the bell",
+   "qid": null,
+   "fame": 0.509,
+   "scientist": "Ivan Pavlov",
+   "known": 0.8,
+   "kind": "psychology"
+  },
+  {
+   "label": "Fear-of-a-white-rat baby experiment",
+   "qid": null,
+   "fame": 0.491,
+   "scientist": "John B. Watson and Rosalie Rayner",
+   "known": 0.2,
+   "kind": "psychology"
+  },
+  {
+   "label": "Dolly the sheep",
+   "qid": null,
+   "fame": 0.547,
+   "scientist": "Ian Wilmut and Keith Campbell",
+   "known": 0.8,
+   "kind": "biology"
+  },
+  {
+   "label": "Pitch drop experiment",
+   "qid": null,
+   "fame": 0.51,
+   "scientist": "Thomas Parnell",
+   "known": 0.05,
+   "kind": "physics"
+  },
+  {
+   "label": "First self-sustaining nuclear chain reaction",
+   "qid": null,
+   "fame": 0.492,
+   "scientist": "Enrico Fermi",
+   "known": 0.4,
+   "kind": "physics"
+  },
+  {
+   "label": "Measuring Earth's circumference with shadows",
+   "qid": null,
+   "fame": 0.519,
+   "scientist": "Eratosthenes",
+   "known": 0.6,
+   "kind": "ancient"
+  },
+  {
+   "label": "Handwashing in maternity wards",
+   "qid": null,
+   "fame": 0.519,
+   "scientist": "Ignaz Semmelweis",
+   "known": 0.4,
+   "kind": "medical"
+  },
+  {
+   "label": "First smallpox vaccination",
+   "qid": null,
+   "fame": 0.465,
+   "scientist": "Edward Jenner",
+   "known": 0.8,
+   "kind": "medical"
+  }
+ ]
+}

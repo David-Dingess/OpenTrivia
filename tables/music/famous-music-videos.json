@@ -1,0 +1,281 @@
+{
+ "id": "table.music.famous-music-videos",
+ "kind": "table",
+ "title": "Famous music videos and the artist behind them",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "music-videos",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?artistLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?a) AS ?artist) (COUNT(DISTINCT ?a) AS ?nA) WHERE { VALUES ?item { wd:Q2040607 wd:Q485907 wd:Q890 wd:Q187745 wd:Q153064 wd:Q1025916 wd:Q189002 wd:Q605031 wd:Q219209 wd:Q147409 wd:Q21172725 wd:Q66057605 wd:Q155016 wd:Q18441355 wd:Q379751 wd:Q98073193 wd:Q1420378 wd:Q1647391 wd:Q37912621 wd:Q1407276 wd:Q17544624 wd:Q901333 wd:Q76566134 wd:Q1764379 wd:Q543058 wd:Q1142302 wd:Q542497 wd:Q529026 wd:Q15275920 wd:Q767632 wd:Q654228 wd:Q145677 wd:Q418833 wd:Q572144 wd:Q582091 wd:Q1137622 wd:Q943552 wd:Q1338452 wd:Q678516 wd:Q869706 wd:Q326835 wd:Q1750699 wd:Q1751357 wd:Q1999714 wd:Q970993 wd:Q2087371 wd:Q281085 wd:Q20992398 wd:Q965422 wd:Q1393546 wd:Q942781 wd:Q593978 wd:Q2457967 wd:Q2567858 wd:Q2467189 wd:Q931000 wd:Q857507 wd:Q1242392 wd:Q115945493 wd:Q119451063 wd:Q106830344 wd:Q29352319 wd:Q2083222 wd:Q3647850 wd:Q1569320 wd:Q1750952 } ?item wikibase:sitelinks ?sitelinks ; wdt:P175 ?a . } GROUP BY ?item ?sitelinks } hint:Prior hint:runFirst true . FILTER(?nA = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T07:22:49.830Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T07:22:49.830Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "artist",
+   "label": "Artist",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "music video",
+  "many": "music videos",
+  "hookAsk": "Which song {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "artist": {
+    "role": "link",
+    "pick": "Which artist or band made the music video for {label}?",
+    "statement": "{label} is a music video by {value}.",
+    "match": "Match each music video to the artist behind it.",
+    "odd": "Three of these music videos are by {value}. Which one isn't?",
+    "all": "Tap all {n} music videos by {value} that appear here.",
+    "reverse": "Which of these music videos is by {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Bohemian Rhapsody",
+   "qid": "Q187745",
+   "fame": 0.597,
+   "artist": "Queen",
+   "description": "1975 Queen song written and composed by Freddie Mercury",
+   "hook": "stitches a ballad, an opera section and hard rock into one grand suite",
+   "known": 0.8,
+   "kind": "70s-80s classic"
+  },
+  {
+   "label": "Mr. Brightside",
+   "qid": "Q1999714",
+   "fame": 0.581,
+   "artist": "The Killers",
+   "description": "2003 single by The Killers",
+   "hook": "holds the record for the longest run on the UK singles chart",
+   "known": 0.65,
+   "kind": "2000s classic"
+  },
+  {
+   "label": "Welcome to the Jungle",
+   "qid": "Q943552",
+   "fame": 0.573,
+   "artist": "Guns N' Roses",
+   "description": "1987 song by Guns N' Roses",
+   "hook": "opens the album Appetite for Destruction and was voted VH1's greatest hard rock song",
+   "known": 0.85,
+   "kind": "70s-80s classic"
+  },
+  {
+   "label": "Smells Like Teen Spirit",
+   "qid": "Q485907",
+   "fame": 0.562,
+   "artist": "Nirvana",
+   "description": "1991 original song written and composed by Nirvana; first recorded by Nirvana",
+   "hook": "pushed grunge into the mainstream as the lead single from Nevermind",
+   "known": 0.85,
+   "kind": "90s classic"
+  },
+  {
+   "label": "Bitter Sweet Symphony",
+   "qid": "Q1338452",
+   "fame": 0.544,
+   "artist": "The Verve",
+   "description": "1997 single by The Verve",
+   "hook": "has a video of its singer striding down a busy London pavement, bumping into passersby",
+   "known": 0.55,
+   "kind": "90s classic"
+  },
+  {
+   "label": "Gangnam Style",
+   "qid": "Q890",
+   "fame": 0.541,
+   "artist": "Psy",
+   "description": "2012 single by Psy",
+   "hook": "is a K-pop hit that went viral worldwide thanks to its funny dance video",
+   "known": 0.95,
+   "kind": "2010s hit"
+  },
+  {
+   "label": "Seven Nation Army",
+   "qid": "Q1420378",
+   "fame": 0.529,
+   "artist": "The White Stripes",
+   "description": "2003 song by The White Stripes",
+   "hook": "has a booming bass-like riff made by running a guitar through a pitch shift effect",
+   "known": 0.65,
+   "kind": "2000s classic"
+  },
+  {
+   "label": "...Baby One More Time",
+   "qid": "Q155016",
+   "fame": 0.521,
+   "artist": "Britney Spears",
+   "description": "song written and composed by Max Martin; originally recorded by Britney Spears and released in 1998",
+   "hook": "launched a teen pop star's career with a video set around a high school",
+   "known": 0.9,
+   "kind": "90s classic"
+  },
+  {
+   "label": "Take On Me",
+   "qid": "Q145677",
+   "fame": 0.521,
+   "artist": "a-ha",
+   "description": "song written and composed by Magne Furuholmen, Morten Harket and Pål Waaktaar, originally recorded by A-ha and released in 1984",
+   "hook": "has a music video mixing live action with pencil-sketch animation",
+   "known": 0.8,
+   "kind": "70s-80s classic"
+  },
+  {
+   "label": "Call Me Maybe",
+   "qid": "Q326835",
+   "fame": 0.504,
+   "artist": "Carly Rae Jepsen",
+   "description": "2011 single  by Carly Rae Jepsen",
+   "hook": "is a bubblegum pop hit about hoping a new crush will ring back, topping charts in over 15 countries",
+   "known": 0.85,
+   "kind": "2010s hit"
+  },
+  {
+   "label": "Virtual Insanity",
+   "qid": "Q2567858",
+   "fame": 0.503,
+   "artist": "Jamiroquai",
+   "description": "1996 single by Jamiroquai",
+   "hook": "has an award-winning music video that later became an internet meme",
+   "known": 0.45,
+   "kind": "90s classic"
+  },
+  {
+   "label": "Blinding Lights",
+   "qid": "Q76566134",
+   "fame": 0.496,
+   "artist": "The Weeknd",
+   "description": "2019 single by The Weeknd",
+   "hook": "is a retro synthwave track that topped the charts in over 40 countries",
+   "known": 0.85,
+   "kind": "2010s hit"
+  },
+  {
+   "label": "Nothing Compares 2 U",
+   "qid": "Q678516",
+   "fame": 0.496,
+   "artist": "Sinéad O'Connor",
+   "description": "song by Prince, popularized by a 1990 cover performed by Sinéad O'Connor",
+   "hook": "was written by Prince for another project, then became a signature hit in a cover",
+   "known": 0.8,
+   "kind": "90s classic"
+  },
+  {
+   "label": "Hey Ya!",
+   "qid": "Q281085",
+   "fame": 0.483,
+   "artist": "OutKast",
+   "description": "2003 song by OutKast",
+   "hook": "is a hip hop duo's chart-topping hit ranked in Rolling Stone's top ten songs of all time",
+   "known": 0.7,
+   "kind": "2000s classic"
+  },
+  {
+   "label": "Sk8er Boi",
+   "qid": "Q543058",
+   "fame": 0.482,
+   "artist": "Avril Lavigne",
+   "description": "2002 single by Avril Lavigne",
+   "hook": "is a pop-punk tale of a girl who rejects a boy for being a skateboarder",
+   "known": 0.8,
+   "kind": "2000s classic"
+  },
+  {
+   "label": "Enter Sandman",
+   "qid": "Q66057605",
+   "fame": 0.476,
+   "artist": "Metallica",
+   "description": "1991 single by Metallica",
+   "hook": "is a heavy metal song about a child's nightmares",
+   "known": 0.85,
+   "kind": "90s classic"
+  },
+  {
+   "label": "Wannabe",
+   "qid": "Q418833",
+   "fame": 0.475,
+   "artist": "Spice Girls",
+   "description": "song written and composed by Spice Girls, Matt Rowe and Richard Stannard; originally recorded by Spice Girls in 1995 and released in 1996",
+   "hook": "is a girl-power anthem about valuing friendship over romance",
+   "known": 0.9,
+   "kind": "90s classic"
+  },
+  {
+   "label": "November Rain",
+   "qid": "Q1142302",
+   "fame": 0.469,
+   "artist": "Guns N' Roses",
+   "description": "original song written, composed, and performed by Guns N’ Roses; first recorded by Guns N’ Roses and released in 1991",
+   "hook": "is a nearly nine-minute power ballad, the longest song to reach the US top ten at the time",
+   "known": 0.75,
+   "kind": "90s classic"
+  },
+  {
+   "label": "Losing My Religion",
+   "qid": "Q901333",
+   "fame": 0.463,
+   "artist": "R.E.M.",
+   "description": "1991 song by R.E.M.",
+   "hook": "grew from a mandolin riff and its video won the top prize at the MTV Video Music Awards",
+   "known": 0.75,
+   "kind": "90s classic"
+  },
+  {
+   "label": "Under the Bridge",
+   "qid": "Q970993",
+   "fame": 0.462,
+   "artist": "Red Hot Chili Peppers",
+   "description": "rock song",
+   "hook": "was written about loneliness and staying clean, and is its band's highest-charting single",
+   "known": 0.85,
+   "kind": "90s classic"
+  },
+  {
+   "label": "Hung Up",
+   "qid": "Q1407276",
+   "fame": 0.456,
+   "artist": "Madonna",
+   "description": "song written and composed by Madonna, Stuart Price, Benny Andersson and Björn Ulvaeus, originally recorded by Madonna in 2005",
+   "hook": "is a dance hit built on a sample of an ABBA song",
+   "known": 0.85,
+   "kind": "2000s classic"
+  },
+  {
+   "label": "Sledgehammer",
+   "qid": "Q593978",
+   "fame": 0.456,
+   "artist": "Peter Gabriel",
+   "description": "song by the English singer-songwriter and rock musician Peter Gabriel (1986)",
+   "hook": "has a video that won a record nine MTV Video Music Awards",
+   "known": 0.8,
+   "kind": "70s-80s classic"
+  }
+ ]
+}

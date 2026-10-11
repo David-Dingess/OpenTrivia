@@ -1,0 +1,272 @@
+{
+ "id": "table.oddities.famous-eccentrics",
+ "kind": "table",
+ "title": "Famous eccentrics and their country",
+ "genre": "general",
+ "category": "oddities",
+ "topic": "eccentrics",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { VALUES ?item { wd:Q9036 wd:Q5577 wd:Q189081 wd:Q59180 wd:Q187192 wd:Q5679 wd:Q259921 wd:Q231121 wd:Q561019 wd:Q44039 wd:Q275982 wd:Q36620 wd:Q41390 wd:Q173746 wd:Q43718 wd:Q446490 wd:Q347528 wd:Q42455 wd:Q216924 wd:Q173061 wd:Q117012 wd:Q5603 wd:Q920513 wd:Q369675 wd:Q345231 wd:Q158067 wd:Q299983 wd:Q201608 wd:Q299204 } ?item wdt:P27 ?c . } GROUP BY ?item HAVING(COUNT(DISTINCT ?c) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T05:10:12.602Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T05:10:12.602Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "eccentric",
+  "many": "eccentrics",
+  "wildcard": "person",
+  "hookAsk": "Which famous eccentric {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is the famously eccentric {label} from?",
+    "statement": "The famously eccentric {label} is from {value}.",
+    "match": "Match each eccentric to their home country.",
+    "odd": "Three of these eccentrics are from {value}. Which one isn't?",
+    "all": "Tap all {n} eccentrics from {value}.",
+    "reverse": "Which of these famous eccentrics is from {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Dennis Rodman",
+   "qid": "Q201608",
+   "fame": 0.741,
+   "country": "United States",
+   "description": "American basketball player (born 1961)",
+   "hook": "was a rebounding and defense star nicknamed the Worm, who won five NBA championships",
+   "known": 0.8,
+   "kind": "performer"
+  },
+  {
+   "label": "Howard Hughes",
+   "qid": "Q189081",
+   "fame": 0.72,
+   "country": "United States",
+   "description": "American aviator, engineer, industrialist, and film producer (1905–1976)",
+   "hook": "was a rich aviator and film producer who later became famously reclusive",
+   "known": 0.6,
+   "kind": "figure"
+  },
+  {
+   "label": "Yayoi Kusama",
+   "qid": "Q231121",
+   "fame": 0.708,
+   "country": "Japan",
+   "description": "Japanese artist (1929–2026)",
+   "hook": "became famous for polka dots and immersive installation art",
+   "known": 0.4,
+   "kind": "artist"
+  },
+  {
+   "label": "Andy Warhol",
+   "qid": "Q5603",
+   "fame": 0.705,
+   "country": "United States",
+   "description": "American artist, film director, and producer (1928–1987)",
+   "hook": "led the pop art movement with silkscreen paintings of soup cans and celebrities",
+   "known": 0.8,
+   "kind": "artist"
+  },
+  {
+   "label": "Björk",
+   "qid": "Q42455",
+   "fame": 0.671,
+   "country": "Iceland",
+   "description": "Icelandic singer (born 1965)",
+   "hook": "is known for a three-octave voice and a wildly eccentric, avant-garde style",
+   "known": 0.6,
+   "kind": "musician"
+  },
+  {
+   "label": "Salvador Dalí",
+   "qid": "Q5577",
+   "fame": 0.666,
+   "country": "Spain",
+   "description": "Spanish artist (1904–1989)",
+   "hook": "painted bizarre, dreamlike images as a leading figure of Surrealism",
+   "known": 0.8,
+   "kind": "artist"
+  },
+  {
+   "label": "Syd Barrett",
+   "qid": "Q173061",
+   "fame": 0.663,
+   "country": "United Kingdom",
+   "description": "British musician (1946–2006)",
+   "hook": "co-founded Pink Floyd and led its whimsical early psychedelic sound",
+   "known": 0.4,
+   "kind": "musician"
+  },
+  {
+   "label": "Liberace",
+   "qid": "Q347528",
+   "fame": 0.645,
+   "country": "United States",
+   "description": "American pianist (1919–1987)",
+   "hook": "dazzled crowds as a flashy piano showman in elaborate costumes",
+   "known": 0.6,
+   "kind": "musician"
+  },
+  {
+   "label": "Evel Knievel",
+   "qid": "Q345231",
+   "fame": 0.644,
+   "country": "United States",
+   "description": "American stunt performer and artist (1938–2007)",
+   "hook": "became a daredevil famed for ramp-to-ramp motorcycle jumps, like one over the fountains at Caesars Palace",
+   "known": 0.8,
+   "kind": "performer"
+  },
+  {
+   "label": "Andy Kaufman",
+   "qid": "Q299983",
+   "fame": 0.623,
+   "country": "United States",
+   "description": "American entertainer (1949–1984)",
+   "hook": "was an anti-comedian who played Latka Gravas on a hit sitcom",
+   "known": 0.4,
+   "kind": "performer"
+  },
+  {
+   "label": "Diogenes of Sinope",
+   "qid": "Q59180",
+   "fame": 0.617,
+   "country": "Sinope",
+   "description": "4th-century BC Greek Cynic philosopher",
+   "hook": null,
+   "known": 0.05,
+   "kind": "scholar"
+  },
+  {
+   "label": "Johnny Appleseed",
+   "qid": "Q369675",
+   "fame": 0.61,
+   "country": "United States",
+   "description": "American nurseryman and missionary (1774–1845)",
+   "hook": "wandered the frontier planting apple nurseries and became an American folk icon",
+   "known": 0.6,
+   "kind": "figure"
+  },
+  {
+   "label": "Ludwig II of Bavaria",
+   "qid": "Q44039",
+   "fame": 0.567,
+   "country": "Kingdom of Bavaria",
+   "description": "King of Bavaria (1845–1886)",
+   "hook": "was the Fairy Tale King who built castles like Neuschwanstein",
+   "known": 0.4,
+   "kind": "figure"
+  },
+  {
+   "label": "Vivienne Westwood",
+   "qid": "Q158067",
+   "fame": 0.556,
+   "country": "United Kingdom",
+   "description": "British fashion designer (1941–2022)",
+   "hook": "brought punk and new wave fashion into the mainstream",
+   "known": 0.4,
+   "kind": "designer"
+  },
+  {
+   "label": "Nikolai Gogol",
+   "qid": "Q43718",
+   "fame": 0.537,
+   "country": "Russian Empire",
+   "description": "Russian writer of Ukrainian origin (1809–1852)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "scholar"
+  },
+  {
+   "label": "Paul Erdős",
+   "qid": "Q173746",
+   "fame": 0.537,
+   "country": "Hungary",
+   "description": "Hungarian mathematician (1913–1996)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "scholar"
+  },
+  {
+   "label": "Tycho Brahe",
+   "qid": "Q36620",
+   "fame": 0.525,
+   "country": "Denmark",
+   "description": "Danish astronomer and alchemist, 1546–1601",
+   "hook": null,
+   "known": 0.2,
+   "kind": "scholar"
+  },
+  {
+   "label": "Erik Satie",
+   "qid": "Q187192",
+   "fame": 0.516,
+   "country": "France",
+   "description": "French composer and pianist (1866-1925)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "musician"
+  },
+  {
+   "label": "Emperor Norton",
+   "qid": "Q299204",
+   "fame": 0.501,
+   "country": "United States",
+   "description": "San Francisco eccentric and self-proclaimed Emperor of the United States",
+   "hook": null,
+   "known": 0.2,
+   "kind": "figure"
+  },
+  {
+   "label": "Glenn Gould",
+   "qid": "Q216924",
+   "fame": 0.497,
+   "country": "Canada",
+   "description": "Canadian composer and pianist (1932–1982)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "musician"
+  },
+  {
+   "label": "Beau Brummell",
+   "qid": "Q561019",
+   "fame": 0.468,
+   "country": "United Kingdom",
+   "description": "English man of fashion (1778–1840)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "designer"
+  }
+ ]
+}

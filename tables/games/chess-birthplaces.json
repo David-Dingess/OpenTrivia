@@ -1,0 +1,230 @@
+{
+ "id": "table.games.chess-birthplaces",
+ "kind": "table",
+ "title": "Chess players and their birthplace",
+ "genre": "games-sports",
+ "category": "games",
+ "topic": "chess",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?placeLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?p) AS ?place) (COUNT(DISTINCT ?p) AS ?nP) WHERE { ?item wdt:P106 wd:Q10873124 ; wikibase:sitelinks ?sitelinks ; wdt:P19 ?p . FILTER(?sitelinks > 25) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 250 } hint:Prior hint:runFirst true . FILTER(?nP = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T01:19:56.202Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T01:19:56.202Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "birthplace",
+   "label": "Birthplace",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "chess player",
+  "many": "chess players",
+  "wildcard": "person",
+  "hookAsk": "Which chess player {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "birthplace": {
+    "role": "code",
+    "pick": "Which city was chess player {label} born in?",
+    "statement": "{label} was born in {value}.",
+    "match": "Match each chess player to the city where they were born.",
+    "reverse": "Which chess player was born in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Magnus Carlsen",
+   "qid": "Q106807",
+   "fame": 0.663,
+   "birthplace": "Tønsberg",
+   "description": "Norwegian chess player (born 1990)",
+   "hook": "held the world title for a decade and reached the highest rating in chess history",
+   "known": 0.8,
+   "kind": "world champion"
+  },
+  {
+   "label": "Bobby Fischer",
+   "qid": "Q41314",
+   "fame": 0.64,
+   "birthplace": "Chicago",
+   "description": "American chess player (1943–2008)",
+   "hook": "beat the Soviet champion in a famous Cold War match to win the world title",
+   "known": 0.95,
+   "kind": "world champion"
+  },
+  {
+   "label": "Garry Kasparov",
+   "qid": "Q28614",
+   "fame": 0.604,
+   "birthplace": "Baku",
+   "description": "Russian chess grandmaster and activist",
+   "hook": "lost a celebrated match against the IBM computer Deep Blue",
+   "known": 0.95,
+   "kind": "world champion"
+  },
+  {
+   "label": "Gukesh D",
+   "qid": "Q56026072",
+   "fame": 0.569,
+   "birthplace": "Chennai",
+   "description": "Indian chess grandmaster",
+   "hook": null,
+   "known": 0.2,
+   "kind": "rising star"
+  },
+  {
+   "label": "Judit Polgár",
+   "qid": "Q183250",
+   "fame": 0.561,
+   "birthplace": "Budapest",
+   "description": "Hungarian chess player",
+   "hook": "is widely considered the strongest woman player ever, a grandmaster by age fifteen",
+   "known": 0.6,
+   "kind": "elite grandmaster"
+  },
+  {
+   "label": "Hikaru Nakamura",
+   "qid": "Q337223",
+   "fame": 0.548,
+   "birthplace": "Hirakata",
+   "description": "American chess player",
+   "hook": "is a many-time national champion who is hugely popular as an online speed-chess streamer",
+   "known": 0.4,
+   "kind": "elite grandmaster"
+  },
+  {
+   "label": "Javokhir Sindarov",
+   "qid": "Q27532037",
+   "fame": 0.548,
+   "birthplace": "Tashkent",
+   "description": "Uzbek chess grandmaster and 2026 Candidates Tournament winner",
+   "hook": null,
+   "known": 0.05,
+   "kind": "rising star"
+  },
+  {
+   "label": "Viswanathan Anand",
+   "qid": "Q45747",
+   "fame": 0.542,
+   "birthplace": "Chennai",
+   "description": "Indian chess grandmaster",
+   "hook": "became the first Indian world champion and won the title five times",
+   "known": 0.6,
+   "kind": "world champion"
+  },
+  {
+   "label": "Praggnanandhaa",
+   "qid": "Q26703041",
+   "fame": 0.507,
+   "birthplace": "Chennai",
+   "description": "Indian chess player",
+   "hook": null,
+   "known": 0.2,
+   "kind": "rising star"
+  },
+  {
+   "label": "Anatoly Karpov",
+   "qid": "Q131674",
+   "fame": 0.502,
+   "birthplace": "Zlatoust",
+   "description": "Russian chess player",
+   "hook": "became world champion when his American predecessor refused to defend the title",
+   "known": 0.8,
+   "kind": "world champion"
+  },
+  {
+   "label": "Divya Deshmukh",
+   "qid": "Q28479871",
+   "fame": 0.501,
+   "birthplace": "Nagpur",
+   "description": "Indian chess player",
+   "hook": null,
+   "known": 0.05,
+   "kind": "accomplished player"
+  },
+  {
+   "label": "Vladimir Kramnik",
+   "qid": "Q161092",
+   "fame": 0.501,
+   "birthplace": "Tuapse",
+   "description": "Russian chess grandmaster",
+   "hook": "ended a long reign at the top by beating the legendary Kasparov for the world title",
+   "known": 0.6,
+   "kind": "world champion"
+  },
+  {
+   "label": "Mikhail Tal",
+   "qid": "Q102664",
+   "fame": 0.494,
+   "birthplace": "Riga",
+   "description": "Soviet-Latvian chess player (1936-1992)",
+   "hook": "won the world title as a young man with wild, dazzling sacrificial attacks",
+   "known": 0.6,
+   "kind": "world champion"
+  },
+  {
+   "label": "Fabiano Caruana",
+   "qid": "Q367277",
+   "fame": 0.48,
+   "birthplace": "Miami",
+   "description": "Italian-American chess player",
+   "hook": "drew all twelve classical games in a world championship match against the Norwegian",
+   "known": 0.4,
+   "kind": "elite grandmaster"
+  },
+  {
+   "label": "Wesley So",
+   "qid": "Q147495",
+   "fame": 0.48,
+   "birthplace": "Bacoor",
+   "description": "Filipino-American chess player",
+   "hook": null,
+   "known": 0.2,
+   "kind": "accomplished player"
+  },
+  {
+   "label": "Anish Giri",
+   "qid": "Q548946",
+   "fame": 0.475,
+   "birthplace": "Saint Petersburg",
+   "description": "Dutch chess player",
+   "hook": "is a top grandmaster known for many draws and a witty, popular online presence",
+   "known": 0.4,
+   "kind": "elite grandmaster"
+  },
+  {
+   "label": "Ding Liren",
+   "qid": "Q1191198",
+   "fame": 0.451,
+   "birthplace": "Wenzhou",
+   "description": "Chinese grandmaster and former World Chess Champion",
+   "hook": "became world champion by beating a Russian rival, the first man from his country to do so",
+   "known": 0.6,
+   "kind": "world champion"
+  }
+ ]
+}

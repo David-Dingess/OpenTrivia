@@ -1,0 +1,719 @@
+{
+ "id": "table.sports.club-nicknames",
+ "kind": "table",
+ "title": "Soccer clubs and their nicknames",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "soccer",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?nick WHERE { VALUES (?item ?nick) { (wd:Q18656 \"the Red Devils\") (wd:Q9617 \"the Gunners\") (wd:Q50602 \"the Citizens\") (wd:Q18741 \"Spurs\") (wd:Q5794 \"the Toffees\") (wd:Q18716 \"the Magpies\") (wd:Q18747 \"the Hammers\") (wd:Q19481 \"the Foxes\") (wd:Q19467 \"the Eagles\") (wd:Q18732 \"the Saints\") (wd:Q18708 \"the Cottagers\") (wd:Q18739 \"the Black Cats\") (wd:Q19458 \"the Clarets\") (wd:Q18744 \"the Baggies\") (wd:Q19453 \"the Seagulls\") (wd:Q18659 \"the Swans\") (wd:Q19568 \"the Cherries\") (wd:Q19500 \"Wolves\") (wd:Q1422 \"the Old Lady\") (wd:Q1543 \"the Rossoneri\") (wd:Q631 \"the Nerazzurri\") (wd:Q2641 \"the Partenopei\") (wd:Q2739 \"the Giallorossi\") (wd:Q2609 \"the Biancocelesti\") (wd:Q2052 \"the Viola\") (wd:Q1886 \"La Dea\") (wd:Q2074 \"Il Grifone\") (wd:Q2768 \"Il Toro\") (wd:Q1457 \"the Blucerchiati\") (wd:Q2674 \"the Rosanero\") (wd:Q2798 \"the Zebrette\") (wd:Q8682 \"Los Blancos\") (wd:Q7156 \"the Blaugrana\") (wd:Q8701 \"Los Colchoneros\") (wd:Q8687 \"the Lions\") (wd:Q10333 \"Los Che\") (wd:Q12297 \"the Yellow Submarine\") (wd:Q8723 \"the Verdiblancos\") (wd:Q8780 \"the Periquitos\") (wd:Q15789 \"Die Roten\") (wd:Q41420 \"Die Schwarzgelben\") (wd:Q32494 \"Die Knappen\") (wd:Q104761 \"Die Werkself\") (wd:Q101959 \"Die Fohlen\") (wd:Q101859 \"Die Wölfe\") (wd:Q38245 \"Die Adler\") (wd:Q4512 \"Die Schwaben\") (wd:Q104770 \"Die Geißböcke\") (wd:Q81888 \"the Sons of the Gods\") (wd:Q11938 \"the Farmers\") (wd:Q483020 \"the Rouge-et-Bleu\") (wd:Q132885 \"the Phocéens\") (wd:Q704 \"Les Gones\") (wd:Q131499 \"the Eagles of Lisbon\") (wd:Q128446 \"the Dragons\") (wd:Q75729 \"the Lions of Lisbon\") (wd:Q19593 \"the Bhoys\") (wd:Q19597 \"the Gers\") (wd:Q172567 \"the Black Eagles\") (wd:Q495299 \"Cim Bom\") (wd:Q6601875 \"the Yellow Canaries\") (wd:Q17479 \"Mengão\") (wd:Q35933 \"Timão\") (wd:Q80964 \"Verdão\") (wd:Q15799 \"Los Millonarios\") (wd:Q170703 \"the Xeneizes\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-03T01:13:12.741Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-03T01:13:12.741Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "nickname",
+   "label": "Nickname",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "football club",
+  "many": "football clubs",
+  "hookAsk": "Which football club {hook}?",
+  "hookStatement": "",
+  "columns": {
+   "nickname": {
+    "role": "code",
+    "pick": "Which nickname belongs to {label}?",
+    "statement": "{label} are nicknamed {value}.",
+    "match": "Match each football club to its nickname.",
+    "reverse": "Which football club is known as {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Manchester City F.C.",
+   "qid": "Q50602",
+   "fame": 0.815,
+   "nickname": "the Citizens",
+   "description": "association football club in Manchester, England",
+   "hook": "is owned by an Abu Dhabi group and won a famous last-minute league title on the final day of the season",
+   "known": 0.8,
+   "kind": "english"
+  },
+  {
+   "label": "FC Barcelona",
+   "qid": "Q7156",
+   "fame": 0.774,
+   "nickname": "the Blaugrana",
+   "description": "football club in Barcelona, Catalonia, Spain",
+   "hook": "plays in blue and garnet stripes and boasts that it is \"more than a club\"",
+   "known": 0.95,
+   "kind": "spanish"
+  },
+  {
+   "label": "Manchester United F.C.",
+   "qid": "Q18656",
+   "fame": 0.772,
+   "nickname": "the Red Devils",
+   "description": "association football club in Manchester, England",
+   "hook": "was Sir Alex Ferguson's club and plays at a stadium nicknamed the Theatre of Dreams",
+   "known": 0.95,
+   "kind": "english"
+  },
+  {
+   "label": "Arsenal F.C.",
+   "qid": "Q9617",
+   "fame": 0.766,
+   "nickname": "the Gunners",
+   "description": "association football club in London, England",
+   "hook": "went a whole league season unbeaten with a team nicknamed the Invincibles",
+   "known": 0.8,
+   "kind": "english"
+  },
+  {
+   "label": "Real Madrid Club de Fútbol",
+   "qid": "Q8682",
+   "fame": 0.758,
+   "nickname": "Los Blancos",
+   "description": "association football club in Madrid, Spain",
+   "hook": "has won more European Cups than any other side and plays in all white",
+   "known": 0.95,
+   "kind": "spanish"
+  },
+  {
+   "label": "Tottenham Hotspur F.C.",
+   "qid": "Q18741",
+   "fame": 0.734,
+   "nickname": "Spurs",
+   "description": "association football club in London, England",
+   "hook": "has a cockerel on its badge and moved into a huge new stadium with a retractable pitch",
+   "known": 0.6,
+   "kind": "english"
+  },
+  {
+   "label": "Brighton & Hove Albion F.C.",
+   "qid": "Q19453",
+   "fame": 0.717,
+   "nickname": "the Seagulls",
+   "description": "football club in Brighton & Hove, England",
+   "hook": "is an English south-coast club that climbed from the lower leagues to European competition",
+   "known": 0.4,
+   "kind": "english"
+  },
+  {
+   "label": "Everton F.C.",
+   "qid": "Q5794",
+   "fame": 0.708,
+   "nickname": "the Toffees",
+   "description": "association football club in Liverpool, England",
+   "hook": "has spent more seasons in England's top flight than almost any other club and plays at Goodison Park",
+   "known": 0.6,
+   "kind": "english"
+  },
+  {
+   "label": "Inter Milan",
+   "qid": "Q631",
+   "fame": 0.697,
+   "nickname": "the Nerazzurri",
+   "description": "association football club based in Milan, Lombardy, Italy",
+   "hook": "is the black-and-blue striped side that won a continental treble under José Mourinho",
+   "known": 0.8,
+   "kind": "italian"
+  },
+  {
+   "label": "Juventus FC",
+   "qid": "Q1422",
+   "fame": 0.697,
+   "nickname": "the Old Lady",
+   "description": "association football club in Turin, Italy",
+   "hook": "wears black and white stripes and has won more Italian league titles than any other club",
+   "known": 0.95,
+   "kind": "italian"
+  },
+  {
+   "label": "Paris Saint-Germain FC",
+   "qid": "Q483020",
+   "fame": 0.691,
+   "nickname": "the Rouge-et-Bleu",
+   "description": "association football club in Paris, France having two UCL",
+   "hook": "is the French capital's big club, owned by Qatar and home to some of the world's most expensive signings",
+   "known": 0.8,
+   "kind": "french"
+  },
+  {
+   "label": "AC Milan",
+   "qid": "Q1543",
+   "fame": 0.687,
+   "nickname": "the Rossoneri",
+   "description": "football club in Milan, Italy",
+   "hook": "is the red-and-black striped side of Italy's fashion capital, a seven-time European champion",
+   "known": 0.95,
+   "kind": "italian"
+  },
+  {
+   "label": "Newcastle United F.C.",
+   "qid": "Q18716",
+   "fame": 0.687,
+   "nickname": "the Magpies",
+   "description": "association football club in Newcastle upon Tyne, England",
+   "hook": "plays in black and white stripes at St James' Park and is backed by a Saudi investment fund",
+   "known": 0.6,
+   "kind": "english"
+  },
+  {
+   "label": "West Ham United F.C.",
+   "qid": "Q18747",
+   "fame": 0.686,
+   "nickname": "the Hammers",
+   "description": "association football club in London, England",
+   "hook": "has a badge showing two crossed tools and was founded by workers at an ironworks",
+   "known": 0.4,
+   "kind": "english"
+  },
+  {
+   "label": "FC Bayern Munich",
+   "qid": "Q15789",
+   "fame": 0.685,
+   "nickname": "Die Roten",
+   "description": "association football club in Munich, Germany",
+   "hook": "is Germany's most successful club, which has won the national league title more than thirty times",
+   "known": 0.95,
+   "kind": "german"
+  },
+  {
+   "label": "Atlético Madrid",
+   "qid": "Q8701",
+   "fame": 0.682,
+   "nickname": "Los Colchoneros",
+   "description": "Spanish professional football club in Madrid",
+   "hook": "wears red and white stripes and is the capital's second club, long managed by Diego Simeone",
+   "known": 0.6,
+   "kind": "spanish"
+  },
+  {
+   "label": "Leicester City F.C.",
+   "qid": "Q19481",
+   "fame": 0.681,
+   "nickname": "the Foxes",
+   "description": "association football club in Leicester, England",
+   "hook": "pulled off a 5000-to-1 league title win in a fairytale season under Claudio Ranieri",
+   "known": 0.6,
+   "kind": "english"
+  },
+  {
+   "label": "Crystal Palace F.C.",
+   "qid": "Q19467",
+   "fame": 0.674,
+   "nickname": "the Eagles",
+   "description": "association football club in London, England",
+   "hook": "is a south London club known for loud ultras and wearing red and blue stripes at Selhurst Park",
+   "known": 0.4,
+   "kind": "english"
+  },
+  {
+   "label": "Real Betis Balompié",
+   "qid": "Q8723",
+   "fame": 0.672,
+   "nickname": "the Verdiblancos",
+   "description": "Spanish professional football club",
+   "hook": "plays in green and white stripes in Seville and is the city's second big football club",
+   "known": 0.2,
+   "kind": "spanish"
+  },
+  {
+   "label": "Rangers F.C.",
+   "qid": "Q19597",
+   "fame": 0.67,
+   "nickname": "the Gers",
+   "description": "association football club in Glasgow, Scotland",
+   "hook": "is the most decorated side in Scottish football and one half of the Old Firm",
+   "known": 0.4,
+   "kind": "other european"
+  },
+  {
+   "label": "Sunderland A.F.C.",
+   "qid": "Q18739",
+   "fame": 0.669,
+   "nickname": "the Black Cats",
+   "description": "association football club in Sunderland, England",
+   "hook": "plays at the Stadium of Light and was the subject of a hit Netflix documentary series",
+   "known": 0.4,
+   "kind": "english"
+  },
+  {
+   "label": "Celtic F.C.",
+   "qid": "Q19593",
+   "fame": 0.664,
+   "nickname": "the Bhoys",
+   "description": "association football club in Glasgow, Scotland",
+   "hook": "wears green and white hoops and was the first British side to win the European Cup",
+   "known": 0.4,
+   "kind": "other european"
+  },
+  {
+   "label": "Borussia Dortmund",
+   "qid": "Q41420",
+   "fame": 0.662,
+   "nickname": "Die Schwarzgelben",
+   "description": "German professional sports club based in Dortmund",
+   "hook": "plays in black and yellow in front of the famous \"Yellow Wall\" terrace",
+   "known": 0.6,
+   "kind": "german"
+  },
+  {
+   "label": "Fenerbahçe Istanbul",
+   "qid": "Q6601875",
+   "fame": 0.659,
+   "nickname": "the Yellow Canaries",
+   "description": "association football section of multi-sports club Fenerbahçe SK",
+   "hook": "is a navy-and-gold side from the Asian shore of a city that straddles two continents",
+   "known": 0.2,
+   "kind": "other european"
+  },
+  {
+   "label": "AS Roma",
+   "qid": "Q2739",
+   "fame": 0.657,
+   "nickname": "the Giallorossi",
+   "description": "association football club in Rome, Italy",
+   "hook": "plays in deep red and yellow and counts Francesco Totti as its greatest one-club legend",
+   "known": 0.6,
+   "kind": "italian"
+  },
+  {
+   "label": "Fulham F.C.",
+   "qid": "Q18708",
+   "fame": 0.655,
+   "nickname": "the Cottagers",
+   "description": "association football club in London, England",
+   "hook": "plays in white on the bank of the River Thames at Craven Cottage",
+   "known": 0.2,
+   "kind": "english"
+  },
+  {
+   "label": "AFC Bournemouth",
+   "qid": "Q19568",
+   "fame": 0.651,
+   "nickname": "the Cherries",
+   "description": "association football club in Bournemouth, England",
+   "hook": "is a small south-coast club that rose from near-bankruptcy in the lower leagues to the top flight",
+   "known": 0.2,
+   "kind": "english"
+  },
+  {
+   "label": "Burnley F.C.",
+   "qid": "Q19458",
+   "fame": 0.65,
+   "nickname": "the Clarets",
+   "description": "association football club in Burnley, England",
+   "hook": "wears claret and blue and is one of the smallest towns ever to host a top-flight English side",
+   "known": 0.2,
+   "kind": "english"
+  },
+  {
+   "label": "SSC Napoli",
+   "qid": "Q2641",
+   "fame": 0.647,
+   "nickname": "the Partenopei",
+   "description": "Italian professional football club based in Naples",
+   "hook": "is the southern Italian club that Diego Maradona led to its first league titles",
+   "known": 0.6,
+   "kind": "italian"
+  },
+  {
+   "label": "AFC Ajax",
+   "qid": "Q81888",
+   "fame": 0.64,
+   "nickname": "the Sons of the Gods",
+   "description": "Dutch association football team",
+   "hook": "is a team that revolutionised the sport with \"Total Football\" and produced Johan Cruyff",
+   "known": 0.6,
+   "kind": "other european"
+  },
+  {
+   "label": "Valencia CF",
+   "qid": "Q10333",
+   "fame": 0.629,
+   "nickname": "Los Che",
+   "description": "association football club in Valencia, Spain",
+   "hook": "is a Spanish side in white with a bat on its badge, with a home ground called Mestalla",
+   "known": 0.4,
+   "kind": "spanish"
+  },
+  {
+   "label": "Wolverhampton Wanderers F.C.",
+   "qid": "Q19500",
+   "fame": 0.629,
+   "nickname": "Wolves",
+   "description": "association football club in Wolverhampton, England",
+   "hook": "plays in old gold and black and has a wolf head on its badge",
+   "known": 0.2,
+   "kind": "english"
+  },
+  {
+   "label": "Sporting CP",
+   "qid": "Q75729",
+   "fame": 0.626,
+   "nickname": "the Lions of Lisbon",
+   "description": "sports club based in Lisbon, Portugal",
+   "hook": "is a green-and-white Portuguese club that was the early home of Cristiano Ronaldo",
+   "known": 0.2,
+   "kind": "other european"
+  },
+  {
+   "label": "Galatasaray S.K.",
+   "qid": "Q495299",
+   "fame": 0.625,
+   "nickname": "Cim Bom",
+   "description": "Turkish association football team",
+   "hook": "is a yellow-and-red club whose stadium is famed for earsplitting noise that rattles visiting teams",
+   "known": 0.2,
+   "kind": "other european"
+  },
+  {
+   "label": "S.L. Benfica",
+   "qid": "Q131499",
+   "fame": 0.624,
+   "nickname": "the Eagles of Lisbon",
+   "description": "professional association football club based in Lisbon, Portugal",
+   "hook": "is a red Portuguese club that releases a real eagle over the pitch before home games",
+   "known": 0.4,
+   "kind": "other european"
+  },
+  {
+   "label": "FC Porto",
+   "qid": "Q128446",
+   "fame": 0.618,
+   "nickname": "the Dragons",
+   "description": "professional association football club based in Porto, Portugal",
+   "hook": "is a blue-and-white Portuguese club that won the European Cup under José Mourinho",
+   "known": 0.4,
+   "kind": "other european"
+  },
+  {
+   "label": "ACF Fiorentina",
+   "qid": "Q2052",
+   "fame": 0.614,
+   "nickname": "the Viola",
+   "description": "association football club in Florence, Italy",
+   "hook": "is an Italian club in purple shirts whose badge shows a city's lily",
+   "known": 0.4,
+   "kind": "italian"
+  },
+  {
+   "label": "Southampton F.C.",
+   "qid": "Q18732",
+   "fame": 0.609,
+   "nickname": "the Saints",
+   "description": "association football club in Southampton, England",
+   "hook": "is an English south-coast club famed for producing young talent like Gareth Bale and Theo Walcott",
+   "known": 0.2,
+   "kind": "english"
+  },
+  {
+   "label": "Athletic Club",
+   "qid": "Q8687",
+   "fame": 0.608,
+   "nickname": "the Lions",
+   "description": "Spanish association football team from Bilbao, Spain",
+   "hook": "is a Basque side that fields only players from its own region, in red and white stripes",
+   "known": 0.4,
+   "kind": "spanish"
+  },
+  {
+   "label": "Schalke 04",
+   "qid": "Q32494",
+   "fame": 0.607,
+   "nickname": "Die Knappen",
+   "description": "German football club from the Schalke district of Gelsenkirchen",
+   "hook": "is a royal-blue German club named for a coal-mining district, bitter rival of Dortmund",
+   "known": 0.4,
+   "kind": "german"
+  },
+  {
+   "label": "Olympique de Marseille",
+   "qid": "Q132885",
+   "fame": 0.606,
+   "nickname": "the Phocéens",
+   "description": "association football club in Marseille, France",
+   "hook": "is the only French club to have won the Champions League and plays in sky blue and white",
+   "known": 0.4,
+   "kind": "french"
+  },
+  {
+   "label": "PSV Eindhoven",
+   "qid": "Q11938",
+   "fame": 0.605,
+   "nickname": "the Farmers",
+   "description": "sports club from Eindhoven, the Netherlands",
+   "hook": "is a Dutch club in red and white whose roots lie in the electronics company Philips",
+   "known": 0.2,
+   "kind": "other european"
+  },
+  {
+   "label": "Bayer 04 Leverkusen",
+   "qid": "Q104761",
+   "fame": 0.604,
+   "nickname": "Die Werkself",
+   "description": "association football club in Leverkusen, Germany",
+   "hook": "went a whole Bundesliga season unbeaten and was long mocked as \"Neverkusen\" for near misses",
+   "known": 0.2,
+   "kind": "german"
+  },
+  {
+   "label": "SS Lazio",
+   "qid": "Q2609",
+   "fame": 0.603,
+   "nickname": "the Biancocelesti",
+   "description": "football section of the sports club based in Rome, Lazio, Italy",
+   "hook": "plays in sky blue and shares the Stadio Olimpico with its fierce city rival and has an eagle as its symbol",
+   "known": 0.4,
+   "kind": "italian"
+  },
+  {
+   "label": "Swansea City A.F.C.",
+   "qid": "Q18659",
+   "fame": 0.603,
+   "nickname": "the Swans",
+   "description": "association football club in Swansea, Wales",
+   "hook": "is a Welsh club that has played in England's top divisions and has a bird on its badge",
+   "known": 0.2,
+   "kind": "english"
+  },
+  {
+   "label": "Olympique Lyonnais",
+   "qid": "Q704",
+   "fame": 0.602,
+   "nickname": "Les Gones",
+   "description": "association football club in Lyon, France",
+   "hook": "is a French club that won seven league titles in a row in the 2000s",
+   "known": 0.2,
+   "kind": "french"
+  },
+  {
+   "label": "Beşiktaş J.K.",
+   "qid": "Q172567",
+   "fame": 0.6,
+   "nickname": "the Black Eagles",
+   "description": "Turkish association football club based in Istanbul",
+   "hook": "is a monochrome-shirted side with a famed bird mascot and very vocal fans in a city on two continents",
+   "known": 0.2,
+   "kind": "other european"
+  },
+  {
+   "label": "Villarreal CF",
+   "qid": "Q12297",
+   "fame": 0.594,
+   "nickname": "the Yellow Submarine",
+   "description": "association football club in Villarreal, Spain",
+   "hook": "is a small-town Spanish side in a sunny colour that won the Europa League under Unai Emery",
+   "known": 0.4,
+   "kind": "spanish"
+  },
+  {
+   "label": "West Bromwich Albion F.C.",
+   "qid": "Q18744",
+   "fame": 0.589,
+   "nickname": "the Baggies",
+   "description": "association football club in West Bromwich, England",
+   "hook": "is a club in navy and white stripes that plays at The Hawthorns",
+   "known": 0.2,
+   "kind": "english"
+  },
+  {
+   "label": "Atalanta BC",
+   "qid": "Q1886",
+   "fame": 0.577,
+   "nickname": "La Dea",
+   "description": "association football club in Bergamo, Italy",
+   "hook": "is an Italian club from a northern city that surprised Europe by winning the Europa League",
+   "known": 0.2,
+   "kind": "italian"
+  },
+  {
+   "label": "Clube de Regatas do Flamengo",
+   "qid": "Q17479",
+   "fame": 0.564,
+   "nickname": "Mengão",
+   "description": "Brazilian sports club based in Rio de Janeiro",
+   "hook": "is Brazil's most popular club, with a red-and-black striped shirt and Zico as its legend",
+   "known": 0.6,
+   "kind": "south american"
+  },
+  {
+   "label": "Borussia Mönchengladbach",
+   "qid": "Q101959",
+   "fame": 0.562,
+   "nickname": "Die Fohlen",
+   "description": "professional association football club in Mönchengladbach, North Rhine-Westphalia, Germany",
+   "hook": "was the dominant German side of the 1970s, with a badge showing a diamond and a baby horse",
+   "known": 0.2,
+   "kind": "german"
+  },
+  {
+   "label": "Boca Juniors",
+   "qid": "Q170703",
+   "fame": 0.561,
+   "nickname": "the Xeneizes",
+   "description": "Argentine sports club",
+   "hook": "plays in blue and gold at the La Bombonera stadium in a fierce derby with its city rival",
+   "known": 0.6,
+   "kind": "south american"
+  },
+  {
+   "label": "VfB Stuttgart",
+   "qid": "Q4512",
+   "fame": 0.56,
+   "nickname": "Die Schwaben",
+   "description": "German football team based in the city of Stuttgart, founded in 1893",
+   "hook": "is a German club in white with a red chest stripe, from a car-making city",
+   "known": 0.2,
+   "kind": "german"
+  },
+  {
+   "label": "Udinese Calcio",
+   "qid": "Q2798",
+   "fame": 0.557,
+   "nickname": "the Zebrette",
+   "description": "Italian association football club based in Udine, Italy",
+   "hook": "is an Italian club in black and white stripes, owned by a family that also owned English and Spanish sides",
+   "known": 0.2,
+   "kind": "italian"
+  },
+  {
+   "label": "Club Atlético River Plate",
+   "qid": "Q15799",
+   "fame": 0.553,
+   "nickname": "Los Millonarios",
+   "description": "Argentine professional sports club based in Buenos Aires",
+   "hook": "is an Argentine side in white with a red diagonal sash and the great rival of Boca Juniors",
+   "known": 0.6,
+   "kind": "south american"
+  },
+  {
+   "label": "Genoa CFC",
+   "qid": "Q2074",
+   "fame": 0.548,
+   "nickname": "Il Grifone",
+   "description": "association football club in Genoa, Italy",
+   "hook": "is widely regarded as Italy's oldest football club and wears red and blue",
+   "known": 0.2,
+   "kind": "italian"
+  },
+  {
+   "label": "Eintracht Frankfurt",
+   "qid": "Q38245",
+   "fame": 0.547,
+   "nickname": "Die Adler",
+   "description": "sports club based in Frankfurt am Main, Hesse, Germany",
+   "hook": "is a German club with an eagle emblem that won the Europa League after a penalty shootout in Seville",
+   "known": 0.2,
+   "kind": "german"
+  },
+  {
+   "label": "RCD Espanyol de Barcelona",
+   "qid": "Q8780",
+   "fame": 0.545,
+   "nickname": "the Periquitos",
+   "description": "sports club in Spain",
+   "hook": "is a blue-and-white club that plays in the same city as a much bigger rival",
+   "known": 0.2,
+   "kind": "spanish"
+  },
+  {
+   "label": "VfL Wolfsburg",
+   "qid": "Q101859",
+   "fame": 0.534,
+   "nickname": "Die Wölfe",
+   "description": "association football club from Wolfsburg, Lower Saxony, Germany",
+   "hook": "is a green-and-white German club from a city built around a car factory",
+   "known": 0.2,
+   "kind": "german"
+  },
+  {
+   "label": "Palermo F.C.",
+   "qid": "Q2674",
+   "fame": 0.522,
+   "nickname": "the Rosanero",
+   "description": "association football club in Palermo, Sicily, Italy",
+   "hook": null,
+   "known": 0.2,
+   "kind": "italian"
+  },
+  {
+   "label": "Torino FC",
+   "qid": "Q2768",
+   "fame": 0.522,
+   "nickname": "Il Toro",
+   "description": "Italian football club based in Turin, Piedmont",
+   "hook": null,
+   "known": 0.2,
+   "kind": "italian"
+  },
+  {
+   "label": "U.C. Sampdoria",
+   "qid": "Q1457",
+   "fame": 0.522,
+   "nickname": "the Blucerchiati",
+   "description": "association football club based in Genoa, Italy",
+   "hook": null,
+   "known": 0.2,
+   "kind": "italian"
+  },
+  {
+   "label": "1. FC Köln",
+   "qid": "Q104770",
+   "fame": 0.519,
+   "nickname": "Die Geißböcke",
+   "description": "German football club based in Cologne, in North Rhine-Westphalia",
+   "hook": null,
+   "known": 0.2,
+   "kind": "german"
+  },
+  {
+   "label": "S.C. Corinthians Paulista",
+   "qid": "Q35933",
+   "fame": 0.513,
+   "nickname": "Timão",
+   "description": "multisport club based in São Paulo, Brazil",
+   "hook": "was founded by five railway workers and has one of the biggest fan bases in its country",
+   "known": 0.6,
+   "kind": "south american"
+  },
+  {
+   "label": "Sociedade Esportiva Palmeiras",
+   "qid": "Q80964",
+   "fame": 0.513,
+   "nickname": "Verdão",
+   "description": "Brazilian sports club",
+   "hook": "began as a club of Italian immigrants and holds the record for most top-flight league titles in its country",
+   "known": 0.6,
+   "kind": "south american"
+  }
+ ]
+}

@@ -1,0 +1,339 @@
+{
+ "id": "table.sports.mlb-team-ballparks",
+ "kind": "table",
+ "title": "MLB teams and their home ballparks",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "baseball",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?venueLabel WHERE { ?item wdt:P118 wd:Q1163715 . ?item wdt:P115 ?venue . ?venue rdfs:label ?venueLabel . FILTER(LANG(?venueLabel)=\"en\") OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T22:18:10.507Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T22:18:10.507Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "ballpark",
+   "label": "Home ballpark",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "MLB team",
+  "many": "MLB teams",
+  "hookAsk": "Which MLB team {hook}?",
+  "hookStatement": "",
+  "columns": {
+   "ballpark": {
+    "role": "code",
+    "pick": "Which ballpark do the {label} call home?",
+    "statement": "The {label} play their home games at {value}.",
+    "reverse": "Which MLB team plays its home games at {value}?",
+    "match": "Match each MLB team to its home ballpark."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "New York Yankees",
+   "qid": "Q213417",
+   "fame": 0.65,
+   "ballpark": "Yankee Stadium",
+   "description": "baseball team and Major League Baseball franchise in the Bronx, New York, United States",
+   "hook": "has won more World Series titles than any other franchise and wears famous pinstripes",
+   "known": 0.8,
+   "kind": "eastern"
+  },
+  {
+   "label": "Los Angeles Dodgers",
+   "qid": "Q334634",
+   "fame": 0.641,
+   "ballpark": "Dodger Stadium",
+   "description": "Major League Baseball franchise in Los Angeles, California",
+   "hook": "moved west from Brooklyn after Jackie Robinson broke baseball's color barrier with it",
+   "known": 0.8,
+   "kind": "western"
+  },
+  {
+   "label": "Los Angeles Angels",
+   "qid": "Q743309",
+   "fame": 0.631,
+   "ballpark": "Angel Stadium of Anaheim",
+   "description": "baseball team and Major League Baseball franchise in Anaheim, California, United States",
+   "hook": "was first owned by a famous singing cowboy actor and is home to slugger Mike Trout",
+   "known": 0.6,
+   "kind": "western"
+  },
+  {
+   "label": "Athletics",
+   "qid": "Q504339",
+   "fame": 0.618,
+   "ballpark": "Sutter Health Park",
+   "description": "baseball team and Major League Baseball franchise in Sacramento, California, United States",
+   "hook": "inspired the book and film Moneyball with its budget-minded way of building a roster",
+   "known": 0.4,
+   "kind": "western"
+  },
+  {
+   "label": "Boston Red Sox",
+   "qid": "Q213959",
+   "fame": 0.616,
+   "ballpark": "Fenway Park",
+   "description": "baseball team and Major League Baseball franchise in Boston, Massachusetts, United States",
+   "hook": "broke a long title drought that was blamed on a curse tied to Babe Ruth",
+   "known": 0.8,
+   "kind": "eastern"
+  },
+  {
+   "label": "Cleveland Guardians",
+   "qid": "Q642553",
+   "fame": 0.614,
+   "ballpark": "Progressive Field",
+   "description": "baseball team and Major League Baseball franchise in Cleveland, Ohio",
+   "hook": "took a new name inspired by stone statues on a local bridge after retiring its old nickname",
+   "known": 0.4,
+   "kind": "central"
+  },
+  {
+   "label": "Milwaukee Brewers",
+   "qid": "Q848103",
+   "fame": 0.608,
+   "ballpark": "American Family Field",
+   "description": "baseball team and Major League Baseball franchise in Milwaukee, Wisconsin, United States",
+   "hook": "has a slide-riding mascot and racing sausages at its games",
+   "known": 0.4,
+   "kind": "central"
+  },
+  {
+   "label": "New York Mets",
+   "qid": "Q692417",
+   "fame": 0.603,
+   "ballpark": "Citi Field",
+   "description": "baseball team and Major League Baseball franchise in Queens, New York, United States",
+   "hook": "shocked the sport with a famous \"Miracle\" championship as lovable underdogs",
+   "known": 0.6,
+   "kind": "eastern"
+  },
+  {
+   "label": "Toronto Blue Jays",
+   "qid": "Q650829",
+   "fame": 0.602,
+   "ballpark": "Rogers Centre",
+   "description": "baseball team and Major League Baseball franchise in Toronto, Ontario, Canada",
+   "hook": "became the first team based outside the United States to win the World Series",
+   "known": 0.6,
+   "kind": "eastern"
+  },
+  {
+   "label": "Chicago Cubs",
+   "qid": "Q246782",
+   "fame": 0.601,
+   "ballpark": "Wrigley Field",
+   "description": "baseball team and Major League Baseball franchise in Chicago, Illinois, United States",
+   "hook": "went more than a century without a championship before finally breaking a famous curse",
+   "known": 0.8,
+   "kind": "central"
+  },
+  {
+   "label": "Chicago White Sox",
+   "qid": "Q335169",
+   "fame": 0.598,
+   "ballpark": "Rate Field",
+   "description": "baseball team and Major League Baseball franchise in Chicago, Illinois, United States",
+   "hook": "swept the World Series to end a championship drought of nearly nine decades",
+   "known": 0.4,
+   "kind": "central"
+  },
+  {
+   "label": "Tampa Bay Rays",
+   "qid": "Q650865",
+   "fame": 0.591,
+   "ballpark": "Tropicana Field",
+   "description": "baseball team and Major League Baseball franchise in St. Petersburg, Florida, United States",
+   "hook": "plays under a fixed roof and has reached the World Series despite a tiny payroll",
+   "known": 0.2,
+   "kind": "eastern"
+  },
+  {
+   "label": "Atlanta Braves",
+   "qid": "Q461595",
+   "fame": 0.59,
+   "ballpark": "Truist Park",
+   "description": "Major League Baseball team in Cumberland, Georgia",
+   "hook": "was the team Hank Aaron played for when he broke Babe Ruth's career home run record",
+   "known": 0.4,
+   "kind": "eastern"
+  },
+  {
+   "label": "San Francisco Giants",
+   "qid": "Q308966",
+   "fame": 0.58,
+   "ballpark": "Oracle Park",
+   "description": "baseball team and Major League Baseball franchise in San Francisco, California, United States",
+   "hook": "sees home runs splash into a bay beyond right field and once employed Willie Mays",
+   "known": 0.6,
+   "kind": "western"
+  },
+  {
+   "label": "Philadelphia Phillies",
+   "qid": "Q650840",
+   "fame": 0.579,
+   "ballpark": "Citizens Bank Park",
+   "description": "Major League Baseball franchise in Philadelphia, Pennsylvania",
+   "hook": "has a big furry green mascot and is among the sport's oldest franchises",
+   "known": 0.4,
+   "kind": "eastern"
+  },
+  {
+   "label": "San Diego Padres",
+   "qid": "Q721134",
+   "fame": 0.575,
+   "ballpark": "Petco Park",
+   "description": "Major League Baseball franchise in San Diego, California, United States",
+   "hook": "is named for Spanish missionaries and is known for brown and yellow uniforms",
+   "known": 0.4,
+   "kind": "western"
+  },
+  {
+   "label": "Seattle Mariners",
+   "qid": "Q466586",
+   "fame": 0.574,
+   "ballpark": "T-Mobile Park",
+   "description": "baseball team and Major League Baseball franchise in Seattle, Washington, United States",
+   "hook": "employed Ichiro when he set the single-season record for hits",
+   "known": 0.4,
+   "kind": "western"
+  },
+  {
+   "label": "Detroit Tigers",
+   "qid": "Q650855",
+   "fame": 0.568,
+   "ballpark": "Comerica Park",
+   "description": "baseball team and Major League Baseball franchise in Detroit, Michigan, United States of America",
+   "hook": "wears a cap with an Old English D and has Ty Cobb in its history",
+   "known": 0.4,
+   "kind": "central"
+  },
+  {
+   "label": "Baltimore Orioles",
+   "qid": "Q650816",
+   "fame": 0.565,
+   "ballpark": "Oriole Park at Camden Yards",
+   "description": "baseball team and Major League Baseball franchise in Baltimore, Maryland, United States",
+   "hook": "was Cal Ripken Jr.'s only team when he broke Lou Gehrig's record for consecutive games",
+   "known": 0.6,
+   "kind": "eastern"
+  },
+  {
+   "label": "Houston Astros",
+   "qid": "Q848117",
+   "fame": 0.565,
+   "ballpark": "Daikin Park",
+   "description": "Major League Baseball franchise in Houston, Texas",
+   "hook": "played the first major-league games under a dome, in a building billed as the eighth wonder of the world",
+   "known": 0.6,
+   "kind": "western"
+  },
+  {
+   "label": "St. Louis Cardinals",
+   "qid": "Q504309",
+   "fame": 0.563,
+   "ballpark": "Busch Stadium",
+   "description": "Major League Baseball franchise in St. Louis, Missouri",
+   "hook": "has won more World Series titles than any other National League team",
+   "known": 0.6,
+   "kind": "central"
+  },
+  {
+   "label": "Cincinnati Reds",
+   "qid": "Q826751",
+   "fame": 0.559,
+   "ballpark": "Great American Ball Park",
+   "description": "professional baseball team in Cincinnati, Ohio, United States",
+   "hook": "was the first openly all-professional club, with Johnny Bench catching in its 1970s glory days",
+   "known": 0.4,
+   "kind": "central"
+  },
+  {
+   "label": "Miami Marlins",
+   "qid": "Q652879",
+   "fame": 0.544,
+   "ballpark": "LoanDepot Park",
+   "description": "baseball team and Major League Baseball franchise in Miami, Florida, United States",
+   "hook": "won two World Series as a wild card team without ever winning its division",
+   "known": 0.2,
+   "kind": "eastern"
+  },
+  {
+   "label": "Colorado Rockies",
+   "qid": "Q388858",
+   "fame": 0.543,
+   "ballpark": "Coors Field",
+   "description": "Major League Baseball franchise in Denver, Colorado, United States",
+   "hook": "plays a mile above sea level, where thin air helps fly balls travel farther",
+   "known": 0.6,
+   "kind": "western"
+  },
+  {
+   "label": "Pittsburgh Pirates",
+   "qid": "Q653772",
+   "fame": 0.54,
+   "ballpark": "PNC Park",
+   "description": "baseball team and Major League Baseball franchise in Pittsburgh, Pennsylvania, United States",
+   "hook": "won a World Series on a walk-off home run by Bill Mazeroski in game seven",
+   "known": 0.6,
+   "kind": "central"
+  },
+  {
+   "label": "Arizona Diamondbacks",
+   "qid": "Q670376",
+   "fame": 0.537,
+   "ballpark": "Chase Field",
+   "description": "baseball team and Major League Baseball franchise in Phoenix, Arizona, United States",
+   "hook": "won a World Series in only its fourth season, beating the Yankees",
+   "known": 0.2,
+   "kind": "western"
+  },
+  {
+   "label": "Minnesota Twins",
+   "qid": "Q604879",
+   "fame": 0.537,
+   "ballpark": "Target Field",
+   "description": "baseball team and Major League Baseball franchise in Minneapolis, Minnesota, United States",
+   "hook": "is named for a pair of neighbouring cities on the Mississippi River",
+   "known": 0.4,
+   "kind": "central"
+  },
+  {
+   "label": "Kansas City Royals",
+   "qid": "Q744530",
+   "fame": 0.524,
+   "ballpark": "Kauffman Stadium",
+   "description": "baseball team and Major League Baseball franchise in Kansas City, Missouri, United States",
+   "hook": "won the World Series after a long playoff absence, beating the Mets in five games",
+   "known": 0.4,
+   "kind": "central"
+  }
+ ]
+}

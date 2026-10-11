@@ -1,0 +1,431 @@
+{
+ "id": "table.chemistry.elements-melting-boiling",
+ "kind": "table",
+ "title": "Chemical elements: melting and boiling points",
+ "genre": "science-math-tech",
+ "category": "chemistry",
+ "topic": "elements",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?melt ?boil WHERE { { SELECT ?item (MIN(?m) AS ?melt) (MIN(?b) AS ?boil) WHERE { ?item wdt:P31 wd:Q11344 ; p:P2101/psn:P2101/wikibase:quantityAmount ?m ; p:P2102/psn:P2102/wikibase:quantityAmount ?b . } GROUP BY ?item HAVING(COUNT(DISTINCT ?m)=1 && COUNT(DISTINCT ?b)=1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T01:25:28.567Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T01:25:28.567Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "melting_c",
+   "label": "Melting point",
+   "unit": "°C",
+   "type": "number"
+  },
+  {
+   "key": "boiling_c",
+   "label": "Boiling point",
+   "unit": "°C",
+   "type": "number"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "element",
+  "many": "elements",
+  "capitalise": true,
+  "lowerInProse": true,
+  "columns": {
+   "melting_c": {
+    "role": "measure",
+    "compare": "Which has the higher melting point",
+    "display": "°C"
+   },
+   "boiling_c": {
+    "role": "measure",
+    "compare": "Which has the higher boiling point",
+    "display": "°C"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "plutonium",
+   "qid": "Q1102",
+   "fame": 0.594,
+   "melting_c": 640,
+   "boiling_c": 3236,
+   "description": "radioactive chemical element with symbol Pu and atomic number 94",
+   "hook": "powers spacecraft and nuclear reactors and is named after a former ninth planet",
+   "known": 0.5,
+   "kind": "actinide"
+  },
+  {
+   "label": "oxygen",
+   "qid": "Q629",
+   "fame": 0.592,
+   "melting_c": -218,
+   "boiling_c": -183,
+   "description": "chemical element with symbol O and atomic number 8",
+   "hook": "makes up about a fifth of the air we breathe and is needed for fire to burn",
+   "known": 0.95,
+   "kind": "nonmetal"
+  },
+  {
+   "label": "sulfur",
+   "qid": "Q682",
+   "fame": 0.589,
+   "melting_c": 115,
+   "boiling_c": 445,
+   "description": "chemical element with symbol S and atomic number 16",
+   "hook": "is a yellow solid famous for its rotten-egg smell and also called brimstone",
+   "known": 0.8,
+   "kind": "nonmetal"
+  },
+  {
+   "label": "uranium",
+   "qid": "Q1098",
+   "fame": 0.577,
+   "melting_c": 1134,
+   "boiling_c": 3930,
+   "description": "radioactive, metallic chemical element with symbol U and atomic number 92",
+   "hook": "fuels nuclear power plants and is named after a planet found shortly before it",
+   "known": 0.7,
+   "kind": "actinide"
+  },
+  {
+   "label": "potassium",
+   "qid": "Q703",
+   "fame": 0.567,
+   "melting_c": 63,
+   "boiling_c": 766,
+   "description": "chemical element with symbol K and atomic number 19",
+   "hook": "is a soft metal that fizzes violently in water and is found in bananas",
+   "known": 0.8,
+   "kind": "alkali metal"
+  },
+  {
+   "label": "nitrogen",
+   "qid": "Q627",
+   "fame": 0.564,
+   "melting_c": -210,
+   "boiling_c": -196,
+   "description": "chemical element, symbol N and atomic number 7; most abundant element in Earth atmosphere",
+   "hook": "makes up most of the air we breathe and, as a liquid, is used for flash freezing",
+   "known": 0.95,
+   "kind": "nonmetal"
+  },
+  {
+   "label": "platinum",
+   "qid": "Q880",
+   "fame": 0.562,
+   "melting_c": 1768,
+   "boiling_c": 3827,
+   "description": "chemical element with symbol Pt and atomic number 78",
+   "hook": "is a dense, silvery precious metal used in jewelry and car catalytic converters",
+   "known": 0.8,
+   "kind": "transition metal"
+  },
+  {
+   "label": "bismuth",
+   "qid": "Q942",
+   "fame": 0.561,
+   "melting_c": 271,
+   "boiling_c": 1560,
+   "description": "Diamagnetic chemical element with symbol Bi and atomic number 83",
+   "hook": null,
+   "known": 0.15,
+   "kind": "post-transition metal"
+  },
+  {
+   "label": "krypton",
+   "qid": "Q888",
+   "fame": 0.559,
+   "melting_c": -157,
+   "boiling_c": -152,
+   "description": "chemical element with symbol Kr and atomic number 36; rare gas",
+   "hook": "is a noble gas whose name means hidden, used in bright lighting",
+   "known": 0.6,
+   "kind": "noble gas"
+  },
+  {
+   "label": "cobalt",
+   "qid": "Q740",
+   "fame": 0.555,
+   "melting_c": 1495,
+   "boiling_c": 2927,
+   "description": "chemical element with symbol Co and atomic number 27",
+   "hook": null,
+   "known": 0.3,
+   "kind": "transition metal"
+  },
+  {
+   "label": "chlorine",
+   "qid": "Q688",
+   "fame": 0.545,
+   "melting_c": -102,
+   "boiling_c": -35,
+   "description": "chemical element with symbol Cl and atomic number 17",
+   "hook": "is a greenish-yellow gas used to disinfect swimming pools",
+   "known": 0.8,
+   "kind": "nonmetal"
+  },
+  {
+   "label": "xenon",
+   "qid": "Q1106",
+   "fame": 0.544,
+   "melting_c": -112,
+   "boiling_c": -108,
+   "description": "chemical element with atomic number of 54 and heaviest stable noble gas",
+   "hook": "is a heavy noble gas used in car headlights and camera flashes",
+   "known": 0.4,
+   "kind": "noble gas"
+  },
+  {
+   "label": "actinium",
+   "qid": "Q1121",
+   "fame": 0.541,
+   "melting_c": 1227,
+   "boiling_c": 3300,
+   "description": "chemical element with symbol Ac and atomic number 89",
+   "hook": null,
+   "known": 0.05,
+   "kind": "actinide"
+  },
+  {
+   "label": "astatine",
+   "qid": "Q999",
+   "fame": 0.539,
+   "melting_c": 302,
+   "boiling_c": 230,
+   "description": "chemical element with symbol At and atomic number 85",
+   "hook": null,
+   "known": 0.05,
+   "kind": "nonmetal"
+  },
+  {
+   "label": "nickel",
+   "qid": "Q744",
+   "fame": 0.53,
+   "melting_c": 1455,
+   "boiling_c": 2913,
+   "description": "chemical element with symbol Ni and atomic number 28",
+   "hook": "is a silvery metal used in stainless steel and, mixed with copper, in small coins",
+   "known": 0.7,
+   "kind": "transition metal"
+  },
+  {
+   "label": "osmium",
+   "qid": "Q751",
+   "fame": 0.528,
+   "melting_c": 3127,
+   "boiling_c": 5000,
+   "description": "chemical element with symbol Os and atomic number 76",
+   "hook": null,
+   "known": 0.2,
+   "kind": "transition metal"
+  },
+  {
+   "label": "palladium",
+   "qid": "Q1089",
+   "fame": 0.528,
+   "melting_c": 1555,
+   "boiling_c": 2960,
+   "description": "chemical element with symbol Pd and atomic number 46",
+   "hook": null,
+   "known": 0.2,
+   "kind": "transition metal"
+  },
+  {
+   "label": "radon",
+   "qid": "Q1133",
+   "fame": 0.525,
+   "melting_c": -71,
+   "boiling_c": -62,
+   "description": "chemical element with symbol Rn and atomic number 86; rare gas",
+   "hook": "is a radioactive gas that can seep up from the ground into basements",
+   "known": 0.5,
+   "kind": "noble gas"
+  },
+  {
+   "label": "iridium",
+   "qid": "Q877",
+   "fame": 0.523,
+   "melting_c": 2466,
+   "boiling_c": 4130,
+   "description": "chemical element with symbol Ir and atomic number 77",
+   "hook": null,
+   "known": 0.3,
+   "kind": "transition metal"
+  },
+  {
+   "label": "radium",
+   "qid": "Q1128",
+   "fame": 0.523,
+   "melting_c": 700,
+   "boiling_c": 1737,
+   "description": "chemical element with symbol Ra and atomic number 88",
+   "hook": "was discovered by Marie Curie and once made watch dials glow in the dark",
+   "known": 0.6,
+   "kind": "alkaline earth"
+  },
+  {
+   "label": "polonium",
+   "qid": "Q979",
+   "fame": 0.521,
+   "melting_c": 254,
+   "boiling_c": 962,
+   "description": "chemical element with symbol Po and atomic number 84",
+   "hook": null,
+   "known": 0.1,
+   "kind": "actinide"
+  },
+  {
+   "label": "bromine",
+   "qid": "Q879",
+   "fame": 0.514,
+   "melting_c": -7,
+   "boiling_c": 59,
+   "description": "chemical element with symbol Br and atomic number 35",
+   "hook": "is a fuming reddish-brown liquid, one of only two elements liquid at room temperature",
+   "known": 0.5,
+   "kind": "nonmetal"
+  },
+  {
+   "label": "gallium",
+   "qid": "Q861",
+   "fame": 0.498,
+   "melting_c": 30,
+   "boiling_c": 2400,
+   "description": "chemical element with symbol Ga and atomic number 31",
+   "hook": null,
+   "known": 0.1,
+   "kind": "post-transition metal"
+  },
+  {
+   "label": "caesium",
+   "qid": "Q1108",
+   "fame": 0.489,
+   "melting_c": 29,
+   "boiling_c": 668,
+   "description": "chemical element with symbol Cs and atomic number 55",
+   "hook": null,
+   "known": 0.2,
+   "kind": "alkali metal"
+  },
+  {
+   "label": "cadmium",
+   "qid": "Q1091",
+   "fame": 0.485,
+   "melting_c": 321,
+   "boiling_c": 765,
+   "description": "chemical element with symbol Cd and atomic number of 48",
+   "hook": null,
+   "known": 0.15,
+   "kind": "post-transition metal"
+  },
+  {
+   "label": "thorium",
+   "qid": "Q1115",
+   "fame": 0.485,
+   "melting_c": 1747,
+   "boiling_c": 4788,
+   "description": "chemical element with symbol Th and atomic number 90",
+   "hook": null,
+   "known": 0.15,
+   "kind": "actinide"
+  },
+  {
+   "label": "germanium",
+   "qid": "Q867",
+   "fame": 0.475,
+   "melting_c": 938,
+   "boiling_c": 2833,
+   "description": "chemical element with symbol Ge and atomic number 32",
+   "hook": null,
+   "known": 0.1,
+   "kind": "post-transition metal"
+  },
+  {
+   "label": "thallium",
+   "qid": "Q932",
+   "fame": 0.474,
+   "melting_c": 304,
+   "boiling_c": 1460,
+   "description": "chemical element with symbol Tl and atomic number 81",
+   "hook": null,
+   "known": 0.1,
+   "kind": "post-transition metal"
+  },
+  {
+   "label": "californium",
+   "qid": "Q1888",
+   "fame": 0.468,
+   "melting_c": 900,
+   "boiling_c": 1470,
+   "description": "chemical element with symbol Cf and atomic number 98",
+   "hook": null,
+   "known": 0.05,
+   "kind": "actinide"
+  },
+  {
+   "label": "niobium",
+   "qid": "Q1046",
+   "fame": 0.466,
+   "melting_c": 2477,
+   "boiling_c": 4744,
+   "description": "chemical element with symbol Nb and atomic number 41",
+   "hook": null,
+   "known": 0.2,
+   "kind": "transition metal"
+  },
+  {
+   "label": "neodymium",
+   "qid": "Q1388",
+   "fame": 0.458,
+   "melting_c": 1025,
+   "boiling_c": 3030,
+   "description": "chemical element with symbol Nd and atomic number 60",
+   "hook": null,
+   "known": 0.1,
+   "kind": "rare earth"
+  },
+  {
+   "label": "strontium",
+   "qid": "Q938",
+   "fame": 0.457,
+   "melting_c": 777,
+   "boiling_c": 1380,
+   "description": "chemical element with symbol Sr and atomic number 38",
+   "hook": null,
+   "known": 0.2,
+   "kind": "alkaline earth"
+  },
+  {
+   "label": "americium",
+   "qid": "Q1872",
+   "fame": 0.456,
+   "melting_c": 1176,
+   "boiling_c": 2607,
+   "description": "chemical element with symbol Am and atomic number 95",
+   "hook": null,
+   "known": 0.1,
+   "kind": "actinide"
+  }
+ ]
+}

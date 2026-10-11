@@ -1,0 +1,837 @@
+{
+ "id": "table.sports.soccer-club-stadiums",
+ "kind": "table",
+ "title": "Football clubs and their home stadiums",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "stadiums",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?venueLabel WHERE { ?item wdt:P31 wd:Q476028 . ?item wdt:P115 ?venue . ?venue rdfs:label ?venueLabel . FILTER(LANG(?venueLabel)=\"en\") FILTER NOT EXISTS { ?venue wdt:P576 ?end } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } FILTER(?sitelinks > 60) } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T03:01:27.679Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T03:01:27.679Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "stadium",
+   "label": "Home stadium",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "football club",
+  "many": "football clubs",
+  "hookAsk": "Which football club {hook}?",
+  "hookStatement": "",
+  "columns": {
+   "stadium": {
+    "role": "code",
+    "pick": "Which stadium is the home ground of {label}?",
+    "statement": "{label} play their home games at {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Manchester City F.C.",
+   "qid": "Q50602",
+   "fame": 0.814,
+   "stadium": "Etihad Stadium",
+   "description": "association football club in Manchester, England",
+   "hook": "rose to dominate English football after a Gulf takeover and a Catalan coach's arrival",
+   "known": 0.85,
+   "kind": "english club"
+  },
+  {
+   "label": "Manchester United F.C.",
+   "qid": "Q18656",
+   "fame": 0.783,
+   "stadium": "Old Trafford",
+   "description": "association football club in Manchester, England",
+   "hook": "is nicknamed the Red Devils and was long led by Sir Alex Ferguson",
+   "known": 0.95,
+   "kind": "english club"
+  },
+  {
+   "label": "Arsenal F.C.",
+   "qid": "Q9617",
+   "fame": 0.781,
+   "stadium": "Emirates Stadium",
+   "description": "association football club in London, England",
+   "hook": "is nicknamed the Gunners and once went a whole league season unbeaten",
+   "known": 0.8,
+   "kind": "english club"
+  },
+  {
+   "label": "Liverpool F.C.",
+   "qid": "Q1130849",
+   "fame": 0.772,
+   "stadium": "Anfield",
+   "description": "association football club in Liverpool, England",
+   "hook": "sings You'll Never Walk Alone and has lifted six European Cups",
+   "known": 0.9,
+   "kind": "english club"
+  },
+  {
+   "label": "Real Madrid Club de Fútbol",
+   "qid": "Q8682",
+   "fame": 0.767,
+   "stadium": "Bernabéu",
+   "description": "association football club in Madrid, Spain",
+   "hook": "is nicknamed Los Blancos and has won more European Cups than any other side",
+   "known": 0.95,
+   "kind": "spanish club"
+  },
+  {
+   "label": "Aston Villa F.C.",
+   "qid": "Q18711",
+   "fame": 0.726,
+   "stadium": "Villa Park",
+   "description": "association football club in Birmingham, England",
+   "hook": "plays in claret and blue and was once crowned champion of Europe",
+   "known": 0.6,
+   "kind": "english club"
+  },
+  {
+   "label": "Inter Milan",
+   "qid": "Q631",
+   "fame": 0.704,
+   "stadium": "Giuseppe Meazza Stadium",
+   "description": "association football club based in Milan, Lombardy, Italy",
+   "hook": "wears black and blue stripes and won a treble under José Mourinho",
+   "known": 0.8,
+   "kind": "italian club"
+  },
+  {
+   "label": "Newcastle United F.C.",
+   "qid": "Q18716",
+   "fame": 0.702,
+   "stadium": "St James’ Park",
+   "description": "association football club in Newcastle upon Tyne, England",
+   "hook": "is nicknamed the Magpies and wears black and white stripes",
+   "known": 0.65,
+   "kind": "english club"
+  },
+  {
+   "label": "Paris Saint-Germain FC",
+   "qid": "Q483020",
+   "fame": 0.701,
+   "stadium": "Parc des Princes",
+   "description": "association football club in Paris, France having two UCL",
+   "hook": "is owned by Qatari investors and once signed Neymar and Messi",
+   "known": 0.8,
+   "kind": "french club"
+  },
+  {
+   "label": "AC Milan",
+   "qid": "Q1543",
+   "fame": 0.698,
+   "stadium": "Giuseppe Meazza Stadium",
+   "description": "football club in Milan, Italy",
+   "hook": "wears red and black stripes and is known as the Rossoneri",
+   "known": 0.85,
+   "kind": "italian club"
+  },
+  {
+   "label": "Ipswich Town F.C.",
+   "qid": "Q9653",
+   "fame": 0.696,
+   "stadium": "Portman Road",
+   "description": "association football club in Ipswich, England",
+   "hook": "won the UEFA Cup under Sir Bobby Robson",
+   "known": 0.4,
+   "kind": "english club"
+  },
+  {
+   "label": "West Ham United F.C.",
+   "qid": "Q18747",
+   "fame": 0.696,
+   "stadium": "London Stadium",
+   "description": "association football club in London, England",
+   "hook": "is nicknamed the Hammers and produced three players of England's World Cup-winning side",
+   "known": 0.55,
+   "kind": "english club"
+  },
+  {
+   "label": "FC Bayern Munich",
+   "qid": "Q15789",
+   "fame": 0.692,
+   "stadium": "Allianz Arena",
+   "description": "association football club in Munich, Germany",
+   "hook": "is the dominant force of German football, winning the league title again and again",
+   "known": 0.9,
+   "kind": "german club"
+  },
+  {
+   "label": "Atlético Madrid",
+   "qid": "Q8701",
+   "fame": 0.691,
+   "stadium": "Metropolitano Stadium",
+   "description": "Spanish professional football club in Madrid",
+   "hook": "is nicknamed Los Colchoneros and is led by fiery coach Diego Simeone",
+   "known": 0.7,
+   "kind": "spanish club"
+  },
+  {
+   "label": "Crystal Palace F.C.",
+   "qid": "Q19467",
+   "fame": 0.684,
+   "stadium": "Selhurst Park",
+   "description": "association football club in London, England",
+   "hook": "is nicknamed the Eagles and plays in red and blue stripes",
+   "known": 0.5,
+   "kind": "english club"
+  },
+  {
+   "label": "Leeds United F.C.",
+   "qid": "Q1128631",
+   "fame": 0.683,
+   "stadium": "Elland Road",
+   "description": "association football club in Leeds, England",
+   "hook": "plays all in white and was built into a power by manager Don Revie",
+   "known": 0.65,
+   "kind": "english club"
+  },
+  {
+   "label": "Sunderland A.F.C.",
+   "qid": "Q18739",
+   "fame": 0.678,
+   "stadium": "Stadium of Light",
+   "description": "association football club in Sunderland, England",
+   "hook": "is nicknamed the Black Cats and starred in a Netflix documentary series",
+   "known": 0.5,
+   "kind": "english club"
+  },
+  {
+   "label": "Real Betis Balompié",
+   "qid": "Q8723",
+   "fame": 0.674,
+   "stadium": "Estadio Benito Villamarín",
+   "description": "Spanish professional football club",
+   "hook": "wears green and white stripes and is the other big side of its Andalusian city",
+   "known": 0.35,
+   "kind": "spanish club"
+  },
+  {
+   "label": "Rangers F.C.",
+   "qid": "Q19597",
+   "fame": 0.672,
+   "stadium": "Ibrox Stadium",
+   "description": "association football club in Glasgow, Scotland",
+   "hook": "is one half of the Old Firm rivalry and wears royal blue",
+   "known": 0.65,
+   "kind": "scottish club"
+  },
+  {
+   "label": "AS Roma",
+   "qid": "Q2739",
+   "fame": 0.67,
+   "stadium": "Stadio Olimpico",
+   "description": "association football club in Rome, Italy",
+   "hook": "is nicknamed the Giallorossi and was captained for decades by Francesco Totti",
+   "known": 0.75,
+   "kind": "italian club"
+  },
+  {
+   "label": "Fenerbahçe Istanbul",
+   "qid": "Q6601875",
+   "fame": 0.668,
+   "stadium": "Şükrü Saracoğlu Stadium",
+   "description": "association football section of multi-sports club Fenerbahçe SK",
+   "hook": "plays in yellow and navy and is one of Turkey's big three",
+   "known": 0.25,
+   "kind": "turkish club"
+  },
+  {
+   "label": "Fulham F.C.",
+   "qid": "Q18708",
+   "fame": 0.665,
+   "stadium": "Craven Cottage",
+   "description": "association football club in London, England",
+   "hook": "is one of London's oldest professional sides, with a ground beside the river",
+   "known": 0.4,
+   "kind": "english club"
+  },
+  {
+   "label": "Nottingham Forest F.C.",
+   "qid": "Q19490",
+   "fame": 0.664,
+   "stadium": "City Ground",
+   "description": "association football club in West Bridgford, England",
+   "hook": "won back-to-back European Cups under Brian Clough",
+   "known": 0.55,
+   "kind": "english club"
+  },
+  {
+   "label": "AFC Bournemouth",
+   "qid": "Q19568",
+   "fame": 0.657,
+   "stadium": "Dean Court",
+   "description": "association football club in Bournemouth, England",
+   "hook": "is nicknamed the Cherries and climbed from the lower leagues to the top flight",
+   "known": 0.35,
+   "kind": "english club"
+  },
+  {
+   "label": "SSC Napoli",
+   "qid": "Q2641",
+   "fame": 0.655,
+   "stadium": "Stadio Diego Armando Maradona",
+   "description": "Italian professional football club based in Naples",
+   "hook": "is the pride of southern Italy and wears sky blue",
+   "known": 0.65,
+   "kind": "italian club"
+  },
+  {
+   "label": "Burnley F.C.",
+   "qid": "Q19458",
+   "fame": 0.653,
+   "stadium": "Turf Moor",
+   "description": "association football club in Burnley, England",
+   "hook": "is a small-town side in claret and blue that has twice won the English league",
+   "known": 0.45,
+   "kind": "english club"
+  },
+  {
+   "label": "AFC Ajax",
+   "qid": "Q81888",
+   "fame": 0.652,
+   "stadium": "Johan Cruyff Arena",
+   "description": "Dutch association football team",
+   "hook": "popularised Total Football and is famed for its youth academy",
+   "known": 0.8,
+   "kind": "dutch club"
+  },
+  {
+   "label": "AS Monaco FC",
+   "qid": "Q180305",
+   "fame": 0.648,
+   "stadium": "Stade Louis II",
+   "description": "association football club in Monaco",
+   "hook": "is a side from a tiny principality that developed stars like Kylian Mbappé",
+   "known": 0.45,
+   "kind": "french club"
+  },
+  {
+   "label": "Feyenoord Rotterdam",
+   "qid": "Q134241",
+   "fame": 0.647,
+   "stadium": "De Kuip",
+   "description": "Dutch football club based in Rotterdam",
+   "hook": "is the Dutch giant of a big port city, with a fierce rivalry against Ajax",
+   "known": 0.6,
+   "kind": "dutch club"
+  },
+  {
+   "label": "Wolverhampton Wanderers F.C.",
+   "qid": "Q19500",
+   "fame": 0.644,
+   "stadium": "Molineux Stadium",
+   "description": "association football club in Wolverhampton, England",
+   "hook": "wears old gold and was a dominant force in English football in the post-war era",
+   "known": 0.45,
+   "kind": "english club"
+  },
+  {
+   "label": "Galatasaray S.K.",
+   "qid": "Q495299",
+   "fame": 0.642,
+   "stadium": "Rams Park",
+   "description": "Turkish association football team",
+   "hook": "is nicknamed the Lions and is Turkey's most decorated side",
+   "known": 0.4,
+   "kind": "turkish club"
+  },
+  {
+   "label": "Valencia CF",
+   "qid": "Q10333",
+   "fame": 0.637,
+   "stadium": "Mestalla Stadium",
+   "description": "association football club in Valencia, Spain",
+   "hook": "is nicknamed Los Che and wears white with a bat on its badge",
+   "known": 0.65,
+   "kind": "spanish club"
+  },
+  {
+   "label": "Blackburn Rovers F.C.",
+   "qid": "Q19446",
+   "fame": 0.636,
+   "stadium": "Ewood Park",
+   "description": "association football club in Blackburn, England",
+   "hook": "won the Premier League with Alan Shearer leading the attack",
+   "known": 0.5,
+   "kind": "english club"
+  },
+  {
+   "label": "S.L. Benfica",
+   "qid": "Q131499",
+   "fame": 0.633,
+   "stadium": "Estádio da Luz",
+   "description": "professional association football club based in Lisbon, Portugal",
+   "hook": "is Portugal's most successful side and wears red with an eagle crest",
+   "known": 0.7,
+   "kind": "portuguese club"
+  },
+  {
+   "label": "Sporting CP",
+   "qid": "Q75729",
+   "fame": 0.632,
+   "stadium": "Estádio José Alvalade",
+   "description": "sports club based in Lisbon, Portugal",
+   "hook": "wears green and white hoops and produced Cristiano Ronaldo",
+   "known": 0.6,
+   "kind": "portuguese club"
+  },
+  {
+   "label": "ACF Fiorentina",
+   "qid": "Q2052",
+   "fame": 0.625,
+   "stadium": "Stadio Artemio Franchi",
+   "description": "association football club in Florence, Italy",
+   "hook": "wears purple and is known as La Viola",
+   "known": 0.55,
+   "kind": "italian club"
+  },
+  {
+   "label": "Real Sociedad",
+   "qid": "Q10315",
+   "fame": 0.624,
+   "stadium": "Anoeta Stadium",
+   "description": "association football club in San Sebastián, Spain",
+   "hook": "is a Basque side known for developing homegrown talent",
+   "known": 0.5,
+   "kind": "spanish club"
+  },
+  {
+   "label": "FC Porto",
+   "qid": "Q128446",
+   "fame": 0.622,
+   "stadium": "Estádio do Dragão",
+   "description": "professional association football club based in Porto, Portugal",
+   "hook": "won the Champions League under José Mourinho",
+   "known": 0.65,
+   "kind": "portuguese club"
+  },
+  {
+   "label": "Southampton F.C.",
+   "qid": "Q18732",
+   "fame": 0.618,
+   "stadium": "St Mary's Stadium",
+   "description": "association football club in Southampton, England",
+   "hook": "is nicknamed the Saints and has produced a long line of stars from its academy",
+   "known": 0.4,
+   "kind": "english club"
+  },
+  {
+   "label": "Athletic Club",
+   "qid": "Q8687",
+   "fame": 0.616,
+   "stadium": "San Mamés Stadium",
+   "description": "Spanish association football team from Bilbao, Spain",
+   "hook": "has a policy of fielding only players from the Basque region",
+   "known": 0.55,
+   "kind": "spanish club"
+  },
+  {
+   "label": "Olympique de Marseille",
+   "qid": "Q132885",
+   "fame": 0.616,
+   "stadium": "Stade Vélodrome",
+   "description": "association football club in Marseille, France",
+   "hook": "is the only French side to have won the Champions League",
+   "known": 0.6,
+   "kind": "french club"
+  },
+  {
+   "label": "RB Leipzig",
+   "qid": "Q702455",
+   "fame": 0.615,
+   "stadium": "Red Bull Arena",
+   "description": "association football club in Leipzig, Saxony, Germany",
+   "hook": "is backed by an energy drink company and rose rapidly through the German leagues",
+   "known": 0.55,
+   "kind": "german club"
+  },
+  {
+   "label": "Bayer 04 Leverkusen",
+   "qid": "Q104761",
+   "fame": 0.614,
+   "stadium": "BayArena",
+   "description": "association football club in Leverkusen, Germany",
+   "hook": "went a whole season unbeaten to win the Bundesliga for the first time",
+   "known": 0.6,
+   "kind": "german club"
+  },
+  {
+   "label": "SS Lazio",
+   "qid": "Q2609",
+   "fame": 0.613,
+   "stadium": "Stadio Olimpico",
+   "description": "football section of the sports club based in Rome, Lazio, Italy",
+   "hook": "is nicknamed the Biancocelesti and has an eagle as its symbol",
+   "known": 0.65,
+   "kind": "italian club"
+  },
+  {
+   "label": "PSV Eindhoven",
+   "qid": "Q11938",
+   "fame": 0.612,
+   "stadium": "Philips Stadion",
+   "description": "sports club from Eindhoven, the Netherlands",
+   "hook": "is a Dutch giant historically backed by an electronics company",
+   "known": 0.65,
+   "kind": "dutch club"
+  },
+  {
+   "label": "Swansea City A.F.C.",
+   "qid": "Q18659",
+   "fame": 0.61,
+   "stadium": "Liberty Stadium",
+   "description": "association football club in Swansea, Wales",
+   "hook": "is nicknamed the Swans and is the leading Welsh side in the English league system",
+   "known": 0.35,
+   "kind": "english club"
+  },
+  {
+   "label": "Middlesbrough F.C.",
+   "qid": "Q18661",
+   "fame": 0.608,
+   "stadium": "Riverside Stadium",
+   "description": "association football club in Middlesbrough, England",
+   "hook": "is a northeastern side that reached a UEFA Cup final",
+   "known": 0.4,
+   "kind": "english club"
+  },
+  {
+   "label": "Sheffield United F.C.",
+   "qid": "Q19607",
+   "fame": 0.607,
+   "stadium": "Bramall Lane",
+   "description": "association football club in Sheffield, England",
+   "hook": "is nicknamed the Blades and wears red and white stripes",
+   "known": 0.4,
+   "kind": "english club"
+  },
+  {
+   "label": "Sevilla FC",
+   "qid": "Q10329",
+   "fame": 0.604,
+   "stadium": "Ramón Sánchez Pizjuán Stadium",
+   "description": "Spanish professional football club based in Seville",
+   "hook": "has won the Europa League more times than any other side",
+   "known": 0.75,
+   "kind": "spanish club"
+  },
+  {
+   "label": "Villarreal CF",
+   "qid": "Q12297",
+   "fame": 0.6,
+   "stadium": "Estadio de la Cerámica",
+   "description": "association football club in Villarreal, Spain",
+   "hook": "is a small-town side nicknamed the Yellow Submarine",
+   "known": 0.4,
+   "kind": "spanish club"
+  },
+  {
+   "label": "West Bromwich Albion F.C.",
+   "qid": "Q18744",
+   "fame": 0.597,
+   "stadium": "The Hawthorns",
+   "description": "association football club in West Bromwich, England",
+   "hook": "is nicknamed the Baggies and wears navy and white stripes",
+   "known": 0.35,
+   "kind": "english club"
+  },
+  {
+   "label": "Birmingham City F.C.",
+   "qid": "Q19444",
+   "fame": 0.59,
+   "stadium": "St Andrew's",
+   "description": "association football club in Birmingham, England",
+   "hook": "is nicknamed the Blues and has a fierce local derby with Aston Villa",
+   "known": 0.4,
+   "kind": "english club"
+  },
+  {
+   "label": "Derby County F.C.",
+   "qid": "Q19470",
+   "fame": 0.59,
+   "stadium": "Pride Park Stadium",
+   "description": "association football club in Derby, England",
+   "hook": "is nicknamed the Rams and was once managed by Brian Clough",
+   "known": 0.4,
+   "kind": "english club"
+  },
+  {
+   "label": "Norwich City F.C.",
+   "qid": "Q18721",
+   "fame": 0.587,
+   "stadium": "Carrow Road",
+   "description": "association football club in Norwich, England",
+   "hook": "is nicknamed the Canaries and wears yellow and green",
+   "known": 0.35,
+   "kind": "english club"
+  },
+  {
+   "label": "RC Celta de Vigo",
+   "qid": "Q8749",
+   "fame": 0.574,
+   "stadium": "Abanca Balaídos Stadium",
+   "description": "Spanish association football club",
+   "hook": "wears sky blue and is the biggest team in northwest Spain",
+   "known": 0.35,
+   "kind": "spanish club"
+  },
+  {
+   "label": "Hamburger SV",
+   "qid": "Q51974",
+   "fame": 0.572,
+   "stadium": "Volksparkstadion",
+   "description": "German sports club based in Hamburg, with its largest branch being its football department",
+   "hook": "once counted its unbroken top-flight stay on a famous stadium clock",
+   "known": 0.5,
+   "kind": "german club"
+  },
+  {
+   "label": "Watford F.C.",
+   "qid": "Q2714",
+   "fame": 0.572,
+   "stadium": "Vicarage Road",
+   "description": "association football club in Watford, England",
+   "hook": "is nicknamed the Hornets and was long chaired by Elton John",
+   "known": 0.35,
+   "kind": "english club"
+  },
+  {
+   "label": "VfB Stuttgart",
+   "qid": "Q4512",
+   "fame": 0.57,
+   "stadium": "MHPArena",
+   "description": "German football team based in the city of Stuttgart, founded in 1893",
+   "hook": "wears white with a red chest ring and is a German champion from the car-making south",
+   "known": 0.5,
+   "kind": "german club"
+  },
+  {
+   "label": "Clube de Regatas do Flamengo",
+   "qid": "Q17479",
+   "fame": 0.567,
+   "stadium": "Maracanã Stadium",
+   "description": "Brazilian sports club based in Rio de Janeiro",
+   "hook": "is Brazil's most widely supported side and wears red and black",
+   "known": 0.85,
+   "kind": "brazilian club"
+  },
+  {
+   "label": "LA Galaxy",
+   "qid": "Q204357",
+   "fame": 0.566,
+   "stadium": "Dignity Health Sports Park",
+   "description": "Major League Soccer club in Los Angeles, United States",
+   "hook": "has won more MLS Cups than any other side and once signed David Beckham",
+   "known": 0.55,
+   "kind": "other club"
+  },
+  {
+   "label": "Club Atlético River Plate",
+   "qid": "Q15799",
+   "fame": 0.563,
+   "stadium": "Monumental Stadium, Buenos Aires",
+   "description": "Argentine professional sports club based in Buenos Aires",
+   "hook": "is one of Argentina's most successful clubs and has a fierce rivalry with Boca Juniors in the Superclásico",
+   "known": 0.65,
+   "kind": "other club"
+  },
+  {
+   "label": "Portsmouth F.C.",
+   "qid": "Q19604",
+   "fame": 0.563,
+   "stadium": "Fratton Park",
+   "description": "association football club in Portsmouth, England",
+   "hook": "is an English south-coast club nicknamed Pompey, famous for its chiming fan song and an FA Cup win",
+   "known": 0.35,
+   "kind": "english club"
+  },
+  {
+   "label": "Genoa CFC",
+   "qid": "Q2074",
+   "fame": 0.554,
+   "stadium": "Stadio Luigi Ferraris",
+   "description": "association football club in Genoa, Italy",
+   "hook": "is often called the oldest active football club in Italy, founded by British expatriates in the 1890s",
+   "known": 0.35,
+   "kind": "italian club"
+  },
+  {
+   "label": "FC St. Pauli",
+   "qid": "Q6463",
+   "fame": 0.545,
+   "stadium": "Millerntor-Stadion",
+   "description": "sports club in Hamburg, Germany",
+   "hook": "is a cult club known for its skull-and-crossbones emblem and punk-rock, left-leaning fan culture",
+   "known": 0.4,
+   "kind": "german club"
+  },
+  {
+   "label": "VfL Wolfsburg",
+   "qid": "Q101859",
+   "fame": 0.545,
+   "stadium": "Volkswagen Arena",
+   "description": "association football club from Wolfsburg, Lower Saxony, Germany",
+   "hook": "is a German club owned by a famous carmaker and once won the Bundesliga title",
+   "known": 0.45,
+   "kind": "german club"
+  },
+  {
+   "label": "1. FC Union Berlin",
+   "qid": "Q141971",
+   "fame": 0.54,
+   "stadium": "Stadion An der Alten Försterei",
+   "description": "association football club in Berlin, Germany",
+   "hook": "is a German club whose fans famously helped build their own ground and sing carols there at Christmas",
+   "known": 0.35,
+   "kind": "german club"
+  },
+  {
+   "label": "SV Werder Bremen",
+   "qid": "Q51976",
+   "fame": 0.535,
+   "stadium": "Weserstadion",
+   "description": "association football club in Bremen, Germany",
+   "hook": "is a German club in green and white that has won the Bundesliga several times and the German Cup",
+   "known": 0.45,
+   "kind": "german club"
+  },
+  {
+   "label": "AS Saint-Étienne",
+   "qid": "Q19521",
+   "fame": 0.534,
+   "stadium": "Stade Geoffroy-Guichard",
+   "description": "association football club in Saint-Étienne, France",
+   "hook": "is a French club in green that holds a record haul of league titles and once reached a European Cup final",
+   "known": 0.5,
+   "kind": "french club"
+  },
+  {
+   "label": "Fluminense F.C.",
+   "qid": "Q80987",
+   "fame": 0.532,
+   "stadium": "Maracanã Stadium",
+   "description": "sports club in Rio de Janeiro, Brazil best known for its professional association football team",
+   "hook": "is a Brazilian club in maroon, green and white stripes that has won the Copa Libertadores",
+   "known": 0.6,
+   "kind": "brazilian club"
+  },
+  {
+   "label": "1. FC Köln",
+   "qid": "Q104770",
+   "fame": 0.531,
+   "stadium": "RheinEnergie Stadion",
+   "description": "German football club based in Cologne, in North Rhine-Westphalia",
+   "hook": "is a German club whose mascot is a goat named Hennes and is known for its carnival-loving fans",
+   "known": 0.35,
+   "kind": "german club"
+  },
+  {
+   "label": "Aberdeen F.C.",
+   "qid": "Q187326",
+   "fame": 0.528,
+   "stadium": "Pittodrie Stadium",
+   "description": "association football club in Aberdeen, Scotland",
+   "hook": "is a Scottish club nicknamed the Dons that once won a European trophy under Alex Ferguson",
+   "known": 0.4,
+   "kind": "scottish club"
+  },
+  {
+   "label": "Sociedade Esportiva Palmeiras",
+   "qid": "Q80964",
+   "fame": 0.526,
+   "stadium": "Allianz Parque",
+   "description": "Brazilian sports club",
+   "hook": "is a Brazilian club in green that has won the Copa Libertadores several times",
+   "known": 0.75,
+   "kind": "brazilian club"
+  },
+  {
+   "label": "U.C. Sampdoria",
+   "qid": "Q1457",
+   "fame": 0.524,
+   "stadium": "Stadio Luigi Ferraris",
+   "description": "association football club based in Genoa, Italy",
+   "hook": "is an Italian club in blue with a white, red and black band across the chest that once won Serie A",
+   "known": 0.45,
+   "kind": "italian club"
+  },
+  {
+   "label": "OGC Nice",
+   "qid": "Q185163",
+   "fame": 0.521,
+   "stadium": "Allianz Riviera",
+   "description": "association football club in France",
+   "hook": "is a French club in red and black that plays on the sunny Mediterranean coast",
+   "known": 0.4,
+   "kind": "french club"
+  },
+  {
+   "label": "F.C. Copenhagen",
+   "qid": "Q188430",
+   "fame": 0.52,
+   "stadium": "Parken Stadium",
+   "description": "association football club in Copenhagen, Denmark",
+   "hook": "is the most successful club in its country, a regular in Champions League qualifying",
+   "known": 0.5,
+   "kind": "other club"
+  },
+  {
+   "label": "S.C. Corinthians Paulista",
+   "qid": "Q35933",
+   "fame": 0.52,
+   "stadium": "Neo Química Arena",
+   "description": "multisport club based in São Paulo, Brazil",
+   "hook": "is a Brazilian club with a huge fan base, known for winning the Club World Cup twice",
+   "known": 0.7,
+   "kind": "brazilian club"
+  },
+  {
+   "label": "Hertha BSC",
+   "qid": "Q102720",
+   "fame": 0.511,
+   "stadium": "Berlin Olympic Stadium",
+   "description": "sports club of Berlin in Germany",
+   "hook": "is a capital-city club in blue and white, nicknamed the Old Lady",
+   "known": 0.35,
+   "kind": "german club"
+  },
+  {
+   "label": "São Paulo FC",
+   "qid": "Q38568",
+   "fame": 0.505,
+   "stadium": "Estádio do Morumbi",
+   "description": "Brazilian professional football club",
+   "hook": "is a Brazilian club in white, red and black that won three Copa Libertadores titles",
+   "known": 0.75,
+   "kind": "brazilian club"
+  }
+ ]
+}

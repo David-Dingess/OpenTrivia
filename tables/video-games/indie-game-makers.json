@@ -1,0 +1,221 @@
+{
+ "id": "table.video-games.indie-game-makers",
+ "kind": "table",
+ "title": "Indie games and the person or studio who made them",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "indie-games",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?devLabel WHERE { { SELECT ?item (SAMPLE(?d) AS ?dev) (COUNT(DISTINCT ?d) AS ?nDev) WHERE { VALUES ?item { wd:Q96417649 wd:Q29300592 wd:Q28451532 wd:Q897376 wd:Q2581523 wd:Q18149495 wd:Q59756366 wd:Q48078440 wd:Q1784048 wd:Q62061666 wd:Q59618073 wd:Q19631660 wd:Q21039915 wd:Q2700296 wd:Q5766 wd:Q637312 wd:Q1471545 wd:Q13427374 wd:Q66035140 wd:Q1051853 wd:Q59769284 wd:Q16457556 wd:Q4830546 wd:Q1711359 wd:Q17513672 wd:Q124357469 wd:Q108273566 wd:Q856950 wd:Q16267745 wd:Q42266752 wd:Q810662 wd:Q13417084 wd:Q23947160 wd:Q28232693 wd:Q16259390 wd:Q4308783 wd:Q12145459 wd:Q18385733 wd:Q17618314 wd:Q16190030 wd:Q15707420 wd:Q7200554 wd:Q96247255 wd:Q22344828 } ?item wdt:P178 ?d . FILTER NOT EXISTS { ?item wdt:P852 ?esrb . VALUES ?esrb { wd:Q14864331 wd:Q14864332 wd:Q110488287 wd:Q124356066 } } FILTER NOT EXISTS { ?item wdt:P908 wd:Q14915517 } } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nDev = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T15:25:54.614Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T15:25:54.614Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "developer",
+   "label": "Developer",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "game",
+  "many": "games",
+  "hookAsk": "Which game {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "developer": {
+    "role": "link",
+    "pick": "Which indie developer made {label}?",
+    "statement": "{label} was made by {value}.",
+    "match": "Match each indie game to the developer that made it.",
+    "odd": "Three of these indie games were made by {value}. Which one wasn't?",
+    "all": "Tap all {n} indie games made by {value}.",
+    "reverse": "Which of these indie games did {value} make?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Geometry Dash",
+   "qid": "Q16190030",
+   "fame": 0.616,
+   "developer": "RobTop Games",
+   "description": "2013 music-based platform video game and video game series",
+   "hook": "has you tap to make a cube jump over spikes in time with a pounding electronic soundtrack",
+   "known": 0.4,
+   "kind": "platformer"
+  },
+  {
+   "label": "Outer Wilds",
+   "qid": "Q19631660",
+   "fame": 0.584,
+   "developer": "Mobius Digital",
+   "description": "2019 video game developed by Mobius Digital",
+   "hook": "sends a space explorer through a solar system stuck in a 22-minute time loop before its sun explodes",
+   "known": 0.2,
+   "kind": "exploration"
+  },
+  {
+   "label": "Among Us",
+   "qid": "Q96417649",
+   "fame": 0.581,
+   "developer": "InnerSloth",
+   "description": "2018 video game developed by InnerSloth",
+   "hook": "has a crew on a spaceship trying to work out which of them is a secret saboteur",
+   "known": 0.7,
+   "kind": "social"
+  },
+  {
+   "label": "Hollow Knight",
+   "qid": "Q29300592",
+   "fame": 0.578,
+   "developer": "Team Cherry",
+   "description": "2017 video game",
+   "hook": "follows a tiny armored bug exploring a ruined underground insect kingdom",
+   "known": 0.3,
+   "kind": "platformer"
+  },
+  {
+   "label": "Flappy Bird",
+   "qid": "Q15707420",
+   "fame": 0.561,
+   "developer": "DotGEARS",
+   "description": "2013 mobile video game by Dong Nguyen",
+   "hook": "had players tapping to keep a small flyer between green pipes until it was pulled from app stores",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "Hades",
+   "qid": "Q59756366",
+   "fame": 0.53,
+   "developer": "Supergiant Games",
+   "description": "2020 action role-playing game developed by Supergiant Games",
+   "hook": "follows the son of the king of the underworld as he fights his way out again and again",
+   "known": 0.5,
+   "kind": "roguelike"
+  },
+  {
+   "label": "Balatro",
+   "qid": "Q124357469",
+   "fame": 0.523,
+   "developer": "LocalThunk",
+   "description": "2024 video game developed by LocalThunk",
+   "hook": "turns poker hands into a roguelike deckbuilder where wild joker cards multiply your score",
+   "known": 0.15,
+   "kind": "strategy"
+  },
+  {
+   "label": "Celeste",
+   "qid": "Q28451532",
+   "fame": 0.51,
+   "developer": "Maddy Makes Games",
+   "description": "2018 video game",
+   "hook": "follows a young woman with red hair climbing a treacherous mountain while battling her own self-doubt",
+   "known": 0.3,
+   "kind": "platformer"
+  },
+  {
+   "label": "Five Nights at Freddy's",
+   "qid": "Q17618314",
+   "fame": 0.51,
+   "developer": "Scott Cawthon",
+   "description": "2014 horror video game",
+   "hook": "has a night guard watching security cameras as animatronic animal mascots creep closer",
+   "known": 0.8,
+   "kind": "horror"
+  },
+  {
+   "label": "Cuphead",
+   "qid": "Q18149495",
+   "fame": 0.509,
+   "developer": "Studio MDHR",
+   "description": "2017 video game",
+   "hook": "is a run-and-gun platformer with hand-drawn visuals inspired by 1930s rubber-hose cartoons",
+   "known": 0.4,
+   "kind": "platformer"
+  },
+  {
+   "label": "Stray",
+   "qid": "Q96247255",
+   "fame": 0.501,
+   "developer": "BlueTwelve Studio",
+   "description": "2022 adventure video game developed by BlueTwelve Studio",
+   "hook": "lets you play as an orange cat exploring a neon-lit ruined city full of robots",
+   "known": 0.4,
+   "kind": "exploration"
+  },
+  {
+   "label": "Slay the Spire",
+   "qid": "Q48078440",
+   "fame": 0.479,
+   "developer": "Mega Crit",
+   "description": "2019 video game",
+   "hook": "combines card battles with roguelike runs as you climb a tower picking cards and relics",
+   "known": 0.25,
+   "kind": "roguelike"
+  },
+  {
+   "label": "Subnautica",
+   "qid": "Q21039915",
+   "fame": 0.477,
+   "developer": "Unknown Worlds Entertainment",
+   "description": "2018 survival action-adventure video game developed by Unknown Worlds Entertainment",
+   "hook": "strands you on an alien ocean planet where you gather resources and dive to ever deeper depths",
+   "known": 0.35,
+   "kind": "exploration"
+  },
+  {
+   "label": "Ori and the Blind Forest",
+   "qid": "Q17513672",
+   "fame": 0.47,
+   "developer": "Moon Studios",
+   "description": "2015 platform-adventure Metroidvania video game",
+   "hook": "follows a small white guardian spirit through a dying woodland in a gorgeous platform adventure",
+   "known": 0.3,
+   "kind": "platformer"
+  },
+  {
+   "label": "Cult of the Lamb",
+   "qid": "Q108273566",
+   "fame": 0.455,
+   "developer": "Massive Monster",
+   "description": "2022 video game",
+   "hook": "has you play a rescued sacrificial animal who founds a following and builds a village of woodland worshippers",
+   "known": 0.25,
+   "kind": "strategy"
+  },
+  {
+   "label": "Untitled Goose Game",
+   "qid": "Q59618073",
+   "fame": 0.452,
+   "developer": "House House",
+   "description": "2019 video game",
+   "hook": "lets you play a mischievous waterfowl who honks and steals things to annoy villagers",
+   "known": 0.6,
+   "kind": "puzzle"
+  }
+ ]
+}

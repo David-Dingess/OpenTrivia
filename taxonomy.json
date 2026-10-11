@@ -1,0 +1,3060 @@
+{
+ "schemaVersion": 1,
+ "about": "Genre > Category > Topic. Every table sits under exactly one topic. 'wants' are tables asked for and not yet built. A 'barred' topic is never asked.",
+ "genres": [
+  {
+   "slug": "arts-entertainment",
+   "name": "Art & Entertainment",
+   "icon": "masks",
+   "color": "#b8325e",
+   "examples": [
+    "movies and TV",
+    "music",
+    "books",
+    "famous paintings",
+    "Broadway"
+   ],
+   "categories": [
+    {
+     "slug": "literature",
+     "name": "Literature",
+     "topics": [
+      {
+       "slug": "poetry",
+       "name": "Poetry"
+      },
+      {
+       "slug": "classic-novels",
+       "name": "Classic Novels"
+      },
+      {
+       "slug": "modern-fiction",
+       "name": "Modern Fiction"
+      },
+      {
+       "slug": "comics-and-manga",
+       "name": "Comics & Manga",
+       "wants": [
+        {
+         "slug": "superhero-identities",
+         "name": "Superhero identities",
+         "ask": "superheroes → their secret identity",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "memoirs",
+       "name": "Memoirs",
+       "wants": [
+        {
+         "slug": "memoirs-author",
+         "name": "Memoirs",
+         "ask": "famous memoirs → their author",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "literary-devices",
+       "name": "Literary Devices"
+      },
+      {
+       "slug": "fictional-worlds",
+       "name": "Fictional Worlds",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "fictional-places",
+         "name": "Fictional places",
+         "ask": "fictional places (Hogwarts) → the book or film",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Ink-Stained Cap",
+       "Bard's Feathered Cap",
+       "Tweed Jacket",
+       "Leather-Bound Tome",
+       "Reading Lamp",
+       "Scholar's Gown",
+       "Fluttering Book",
+       "Inching Bookworm",
+       "Parchment"
+      ],
+      "title": "Bookworm",
+      "grandTitle": "Laureate",
+      "shader": "Parchment"
+     }
+    },
+    {
+     "slug": "art",
+     "name": "Art",
+     "topics": [
+      {
+       "slug": "renaissance-art",
+       "name": "Renaissance Art"
+      },
+      {
+       "slug": "painters",
+       "name": "Painters"
+      },
+      {
+       "slug": "sculpture",
+       "name": "Sculpture"
+      },
+      {
+       "slug": "landmarks",
+       "name": "Landmarks",
+       "wants": [
+        {
+         "slug": "world-landmarks-city",
+         "name": "World landmarks and their city",
+         "ask": "the world's most famous landmarks (the Eiffel Tower, the Golden Gate Bridge, Big Ben, Christ the Redeemer) → the city and country they are in",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "photography",
+       "name": "Photography",
+       "wants": [
+        {
+         "slug": "famous-photos",
+         "name": "Famous photos",
+         "ask": "famous photographs → who took them",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "fashion",
+       "name": "Fashion"
+      },
+      {
+       "slug": "famous-homes",
+       "name": "Famous Homes"
+      },
+      {
+       "slug": "typography",
+       "name": "Typography",
+       "addedBy": "engine, 2026-10-02"
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Paint-Splattered Cap",
+       "Artist's Bandana",
+       "Smock",
+       "Chisel",
+       "Giant Crayon",
+       "Gallery Turtleneck",
+       "Dripping Brush",
+       "Easel",
+       "Watercolour"
+      ],
+      "title": "Artisan",
+      "grandTitle": "Masterpiece",
+      "shader": "Watercolour"
+     }
+    },
+    {
+     "slug": "stage",
+     "name": "Stage",
+     "topics": [
+      {
+       "slug": "theater",
+       "name": "Theater",
+       "wants": [
+        {
+         "slug": "broadway-musicals",
+         "name": "Broadway musicals",
+         "ask": "Broadway musicals → their composer",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "musicals-songs",
+         "name": "Musicals and their songs",
+         "ask": "musicals → their best-known song",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "opera",
+       "name": "Opera"
+      },
+      {
+       "slug": "ballet",
+       "name": "Ballet",
+       "wants": [
+        {
+         "slug": "famous-ballets",
+         "name": "Famous ballets",
+         "ask": "famous ballets → their composer",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "dance",
+       "name": "Dance"
+      },
+      {
+       "slug": "magic",
+       "name": "Magic"
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Pollster's Visor",
+       "Host's Pompadour",
+       "Contestant Sweater",
+       "Top-Answer Card",
+       "Applause Sign",
+       "Host's Sparkly Suit",
+       "Flipping Answer Card",
+       "Clapping Hands",
+       "Game-Show Gold"
+      ],
+      "title": "Crowd-Pleaser",
+      "grandTitle": "Voice of the People",
+      "shader": "Game-Show Gold"
+     }
+    },
+    {
+     "slug": "film-and-tv",
+     "name": "Film & TV",
+     "topics": [
+      {
+       "slug": "the-oscars",
+       "name": "The Oscars"
+      },
+      {
+       "slug": "box-office",
+       "name": "Box Office",
+       "wants": [
+        {
+         "slug": "bond-films",
+         "name": "Bond films",
+         "ask": "James Bond films → their Bond actor",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "famous-villains",
+         "name": "Famous villains",
+         "ask": "famous film villains → their film",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "franchise-first-films",
+         "name": "Film franchises",
+         "ask": "film franchises → their first film",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "directors",
+       "name": "Directors"
+      },
+      {
+       "slug": "indie-film",
+       "name": "Indie Film"
+      },
+      {
+       "slug": "screenwriters",
+       "name": "Screenwriters"
+      },
+      {
+       "slug": "animated-films",
+       "name": "Animated Films",
+       "wants": [
+        {
+         "slug": "pixar-disney-films",
+         "name": "Pixar and Disney films",
+         "ask": "Pixar and Disney animated films → their year",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "cartoons-and-anime",
+       "name": "Cartoons & Anime"
+      },
+      {
+       "slug": "sitcoms",
+       "name": "Sitcoms"
+      },
+      {
+       "slug": "tv-dramas",
+       "name": "TV Dramas"
+      },
+      {
+       "slug": "classic-tv",
+       "name": "Classic TV"
+      },
+      {
+       "slug": "reality-tv",
+       "name": "Reality TV"
+      },
+      {
+       "slug": "streaming-shows",
+       "name": "Streaming Shows"
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Director's Beret",
+       "Usher's Cap",
+       "Red-Carpet Tux/Gown",
+       "Clapperboard",
+       "Popcorn Bucket",
+       "Star Trench Coat",
+       "Rolling Film Reel",
+       "Film Camera on a Dolly",
+       "Silver Screen"
+      ],
+      "title": "Cinephile",
+      "grandTitle": "Auteur",
+      "shader": "Silver Screen"
+     }
+    },
+    {
+     "slug": "music",
+     "name": "Music",
+     "topics": [
+      {
+       "slug": "chart-toppers",
+       "name": "Chart-Toppers"
+      },
+      {
+       "slug": "bands",
+       "name": "Bands",
+       "wants": [
+        {
+         "slug": "band-frontmen",
+         "name": "Band frontmen",
+         "ask": "bands → their frontman or frontwoman",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "band-hometowns",
+         "name": "Band hometowns",
+         "ask": "bands → their hometown",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "pop-group-members",
+         "name": "Boy bands and girl groups",
+         "ask": "boy bands and girl groups → their members",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "grammys",
+       "name": "Grammys"
+      },
+      {
+       "slug": "composers",
+       "name": "Composers",
+       "wants": [
+        {
+         "slug": "film-soundtracks",
+         "name": "Movie soundtracks",
+         "ask": "famous movie soundtracks → their composer",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "instruments",
+       "name": "Instruments"
+      },
+      {
+       "slug": "music-videos",
+       "name": "Music Videos",
+       "wants": [
+        {
+         "slug": "famous-music-videos",
+         "name": "Famous music videos",
+         "ask": "famous music videos → the artist",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "one-hit-wonders",
+       "name": "One-Hit Wonders"
+      },
+      {
+       "slug": "festivals-and-scenes",
+       "name": "Festivals & Scenes"
+      },
+      {
+       "slug": "record-labels",
+       "name": "Record labels",
+       "addedBy": "engine, 2026-10-02"
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Beanie",
+       "Marching-Band Hat",
+       "Band Tee",
+       "Microphone",
+       "Guitar",
+       "Stage Jacket",
+       "Floating Notes",
+       "Boombox",
+       "Vinyl Black"
+      ],
+      "title": "Virtuoso",
+      "grandTitle": "Maestro",
+      "shader": "Vinyl Black"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "daily-life",
+   "name": "Daily Life",
+   "icon": "human",
+   "color": "#c26a12",
+   "examples": [
+    "food and drink",
+    "shops and money",
+    "getting around",
+    "holidays"
+   ],
+   "categories": [
+    {
+     "slug": "food-and-drink",
+     "name": "Food & Drink",
+     "topics": [
+      {
+       "slug": "world-cuisine",
+       "name": "World Cuisine",
+       "wants": [
+        {
+         "slug": "street-foods-city",
+         "name": "Street foods",
+         "ask": "famous street foods → their city",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "sushi-dim-sum",
+         "name": "Sushi and dim sum",
+         "ask": "sushi and dim sum → what they are",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "pizza-styles",
+         "name": "Pizza styles",
+         "ask": "pizza styles (Neapolitan, Chicago deep-dish) → their city",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "fast-food",
+       "name": "Fast Food"
+      },
+      {
+       "slug": "wine-and-beer",
+       "name": "Wine & Beer",
+       "wants": [
+        {
+         "slug": "spirits-made-from",
+         "name": "Spirits",
+         "ask": "spirits → what they are made from (tequila → agave)",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "wine-grapes-region",
+         "name": "Wine grapes",
+         "ask": "wine grapes → their region",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "ingredients",
+       "name": "Ingredients",
+       "wants": [
+        {
+         "slug": "cheeses-country",
+         "name": "Cheeses",
+         "ask": "famous cheeses → the country they come from",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "fruit-origin",
+         "name": "Fruit",
+         "ask": "fruits → where they first grew",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "herbs-spices-part",
+         "name": "Herbs and spices",
+         "ask": "herbs and spices → what part of the plant they are",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "food-history",
+       "name": "Food History"
+      },
+      {
+       "slug": "sweets-and-snacks",
+       "name": "Sweets & Snacks",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "candy-bars-maker",
+         "name": "Candy bars",
+         "ask": "candy bars → their maker",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "cereal-mascots",
+         "name": "Breakfast cereals",
+         "ask": "breakfast cereals → their mascot",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "snack-brands-maker",
+         "name": "Snack brands",
+         "ask": "snack brands → their maker",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "desserts-country",
+         "name": "Desserts",
+         "ask": "famous desserts → the country they come from",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "coffee-and-tea",
+       "name": "Coffee & Tea",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "coffee-drinks",
+         "name": "Coffee drinks",
+         "ask": "coffee drinks → what is in them",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "teas-country",
+         "name": "Teas",
+         "ask": "famous teas → their country",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "cooking",
+       "name": "Cooking",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "cooking-terms",
+         "name": "Cooking terms",
+         "ask": "cooking terms (julienne, braise) → what they mean",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "pasta-shapes",
+         "name": "Pasta shapes",
+         "ask": "pasta shapes → what the shape is or what its name means",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "sauces-origin",
+         "name": "Sauces",
+         "ask": "famous sauces → where they come from",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "breads-of-the-world",
+         "name": "Breads of the world",
+         "ask": "famous breads → the country they come from",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "kitchen-tools",
+         "name": "Kitchen tools",
+         "ask": "kitchen tools → what they do",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "chefs",
+       "name": "Chefs",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "famous-chefs",
+         "name": "Famous chefs",
+         "ask": "famous chefs → their cuisine or show",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Paper Chef Hat",
+       "Toque",
+       "Apron",
+       "Whisk",
+       "Giant Fork",
+       "Chef's Whites",
+       "Sizzling Pan",
+       "Waddling Pizza Slice",
+       "Ketchup & Mustard"
+      ],
+      "title": "Sous-chef",
+      "grandTitle": "Five-Star Chef",
+      "shader": "Ketchup & Mustard"
+     }
+    },
+    {
+     "slug": "business",
+     "name": "Business",
+     "topics": [
+      {
+       "slug": "big-companies",
+       "name": "Big Companies"
+      },
+      {
+       "slug": "slogans",
+       "name": "Slogans"
+      },
+      {
+       "slug": "logos",
+       "name": "Logos"
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Bowler Hat",
+       "Hard Hat",
+       "Power Blazer",
+       "Briefcase",
+       "Stock Ticker Tape",
+       "Three-Piece Suit",
+       "Rising Bar Chart",
+       "Piggy Bank",
+       "Corporate Grey"
+      ],
+      "title": "Entrepreneur",
+      "grandTitle": "Tycoon",
+      "shader": "Corporate Grey"
+     }
+    },
+    {
+     "slug": "getting-around",
+     "name": "Getting Around",
+     "topics": [
+      {
+       "slug": "cars",
+       "name": "Cars",
+       "wants": [
+        {
+         "slug": "motorcycle-brands-country",
+         "name": "Motorcycle brands",
+         "ask": "motorcycle brands → their country",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "car-codes",
+         "name": "International car codes",
+         "ask": "international car codes (GB, D) → the country",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "iconic-vehicles",
+         "name": "Iconic vehicles",
+         "ask": "iconic everyday vehicles (black cab, tuk-tuk) → their country",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "airports",
+       "name": "Airports",
+       "wants": [
+        {
+         "slug": "airlines-country",
+         "name": "Airlines",
+         "ask": "airlines → their country",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "airliners-maker",
+         "name": "Airliners",
+         "ask": "famous aircraft (Concorde, the 747) → their maker",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "trains",
+       "name": "Trains",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "famous-trains",
+         "name": "Famous trains",
+         "ask": "famous trains (the Orient Express) → their route or country",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "high-speed-trains",
+         "name": "High-speed trains",
+         "ask": "high-speed trains (Shinkansen, TGV) → their country",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "metro-systems",
+         "name": "Metro systems",
+         "ask": "metro systems and their nicknames (the Tube) → the city",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "ships",
+       "name": "Ships",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "famous-ships",
+         "name": "Famous ships",
+         "ask": "famous ships (Titanic, Mayflower) → what they are famous for",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "roads",
+       "name": "Roads",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "famous-roads",
+         "name": "Famous roads",
+         "ask": "famous roads (Route 66, the Autobahn) → their country",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "canals-and-routes",
+       "name": "Canals & Routes",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "famous-canals",
+         "name": "Famous canals",
+         "ask": "famous canals → what they join",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "famous-journeys",
+         "name": "Famous journeys",
+         "ask": "famous journeys (the Silk Road, the Trans-Siberian) → where they run",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Racing Helmet",
+       "Conductor's Cap",
+       "Pit-Crew Shirt",
+       "Steering Wheel",
+       "Giant Wrench",
+       "Pilot's Uniform",
+       "Revving Toy Car",
+       "Toy Train",
+       "Racing Stripes"
+      ],
+      "title": "Navigator",
+      "grandTitle": "Captain",
+      "shader": "Racing Stripes"
+     }
+    },
+    {
+     "slug": "holidays",
+     "name": "Holidays",
+     "topics": [
+      {
+       "slug": "festivals",
+       "name": "Festivals",
+       "wants": [
+        {
+         "slug": "holiday-foods",
+         "name": "Holiday foods",
+         "ask": "famous holiday foods → their holiday",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "national-days",
+         "name": "National days",
+         "ask": "a country's national day → its date",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "halloween-origins",
+         "name": "Halloween origins",
+         "ask": "Halloween customs → where they come from",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "traditions",
+       "name": "Traditions",
+       "wants": [
+        {
+         "slug": "chinese-zodiac",
+         "name": "Chinese zodiac",
+         "ask": "the Chinese zodiac animals → their years and traits",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "patron-saints",
+         "name": "Patron saints",
+         "ask": "patron saints → what or where they protect",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "birth-flowers",
+         "name": "Birth flowers",
+         "ask": "each month → its birth flower",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "easter-traditions",
+         "name": "Easter traditions",
+         "ask": "Easter traditions → their country",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "new-year-traditions",
+         "name": "New Year traditions",
+         "ask": "New Year traditions → their country",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "wedding-traditions",
+         "name": "Wedding traditions",
+         "ask": "wedding traditions → their country",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "flower-meanings",
+         "name": "Flower meanings",
+         "ask": "flowers → what they symbolise",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "costumes",
+       "name": "Costumes"
+      },
+      {
+       "slug": "christmas",
+       "name": "Christmas",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "christmas-traditions",
+         "name": "Christmas traditions",
+         "ask": "Christmas traditions → the country they come from",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "gift-bringers",
+         "name": "Gift-bringers",
+         "ask": "holiday gift-bringers and figures (Krampus, La Befana) → their country",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "holiday-songs",
+         "name": "Holiday songs",
+         "ask": "famous holiday songs → who sang them",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "holiday-films",
+         "name": "Holiday films",
+         "ask": "famous holiday films → their year or star",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Flower Crown",
+       "Carnival Mask",
+       "Embroidered Folk Shirt",
+       "Lantern",
+       "Parade Flag",
+       "Festival Robe",
+       "Swinging Lantern",
+       "Bongo Drum",
+       "Fiesta"
+      ],
+      "title": "Folklorist",
+      "grandTitle": "Ambassador",
+      "shader": "Fiesta"
+     }
+    },
+    {
+     "slug": "money",
+     "name": "Money",
+     "topics": [
+      {
+       "slug": "banknotes",
+       "name": "Banknotes",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "banknote-faces",
+         "name": "Faces on banknotes",
+         "ask": "famous banknotes → who is on them",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "coins",
+       "name": "Coins",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "famous-coins",
+         "name": "Famous coins",
+         "ask": "famous coins → their country",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "department-stores",
+       "name": "Department Stores",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "department-stores",
+         "name": "Department stores",
+         "ask": "famous department stores → their city",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "markets",
+       "name": "Markets",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "stock-market-crashes",
+         "name": "Stock market crashes",
+         "ask": "famous stock market crashes → their year",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      }
+     ],
+     "floorPerHour": 1
+    }
+   ]
+  },
+  {
+   "slug": "games-sports",
+   "name": "Games & Sports",
+   "icon": "basketball",
+   "color": "#d2541b",
+   "examples": [
+    "teams and athletes",
+    "video games",
+    "board games",
+    "toys"
+   ],
+   "categories": [
+    {
+     "slug": "sports",
+     "name": "Sports",
+     "topics": [
+      {
+       "slug": "soccer",
+       "name": "Soccer",
+       "wants": [
+        {
+         "slug": "club-nicknames",
+         "name": "Club nicknames",
+         "ask": "soccer club nicknames (the Red Devils) → the club",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "golden-boot",
+         "name": "World Cup Golden Boot",
+         "ask": "World Cup Golden Boot winners → their country",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "football",
+       "name": "Football",
+       "wants": [
+        {
+         "slug": "nfl-team-nicknames",
+         "name": "NFL team nicknames",
+         "ask": "NFL team nicknames → the team",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "heisman-winners",
+         "name": "Heisman winners",
+         "ask": "Heisman Trophy winners → their college",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "super-bowl-mvps",
+         "name": "Super Bowl MVPs",
+         "ask": "Super Bowl MVPs → their team",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "basketball",
+       "name": "Basketball"
+      },
+      {
+       "slug": "baseball",
+       "name": "Baseball"
+      },
+      {
+       "slug": "hockey",
+       "name": "Hockey"
+      },
+      {
+       "slug": "tennis",
+       "name": "Tennis"
+      },
+      {
+       "slug": "golf",
+       "name": "Golf"
+      },
+      {
+       "slug": "cricket",
+       "name": "Cricket"
+      },
+      {
+       "slug": "rugby",
+       "name": "Rugby"
+      },
+      {
+       "slug": "cycling",
+       "name": "Cycling",
+       "wants": [
+        {
+         "slug": "grand-tours",
+         "name": "Grand Tours",
+         "ask": "cycling's Grand Tours → their country",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "racing",
+       "name": "Racing",
+       "wants": [
+        {
+         "slug": "famous-circuits",
+         "name": "Famous circuits",
+         "ask": "famous racing circuits → their country",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "combat-sports",
+       "name": "Combat Sports"
+      },
+      {
+       "slug": "extreme-sports",
+       "name": "Extreme Sports"
+      },
+      {
+       "slug": "olympics",
+       "name": "Olympics",
+       "wants": [
+        {
+         "slug": "olympic-mascots",
+         "name": "Olympic mascots",
+         "ask": "Olympic mascots → their Games",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "stadiums",
+       "name": "Stadiums"
+      },
+      {
+       "slug": "sports-lore",
+       "name": "Sports Lore",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "sporting-firsts",
+         "name": "Sporting firsts",
+         "ask": "sporting firsts (the first four-minute mile) → who",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "athlete-nicknames",
+         "name": "Athlete nicknames",
+         "ask": "athlete nicknames (the Greatest) → who",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "trophies-sport",
+         "name": "Trophies",
+         "ask": "famous trophies (the Stanley Cup) → their sport",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "sports-terms",
+         "name": "Sports terms",
+         "ask": "sports terms (hat-trick, birdie) → their sport",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "famous-coaches",
+         "name": "Famous coaches",
+         "ask": "famous coaches → their team",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "jersey-numbers",
+         "name": "Famous jersey numbers",
+         "ask": "famous jersey numbers (Jordan's 23) → the athlete",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "sports-rivalries",
+         "name": "Great rivalries",
+         "ask": "great sports rivalries → their sport",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "horse-racing",
+       "name": "Horse Racing",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "famous-racehorses",
+         "name": "Famous racehorses",
+         "ask": "famous racehorses → their big race",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "fictional-horses",
+         "name": "Famous fictional horses",
+         "ask": "famous fictional horses → their story",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "wrestling",
+       "name": "Wrestling",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "wrestling-finishers",
+         "name": "Wrestling legends",
+         "ask": "wrestling legends → their finishing move",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "darts-and-snooker",
+       "name": "Darts & Snooker",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "darts-snooker-legends",
+         "name": "Darts and snooker legends",
+         "ask": "darts and snooker legends → their country",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Baseball Cap",
+       "Football Helmet",
+       "Basketball Jersey",
+       "Hockey Stick",
+       "Skateboard",
+       "Tennis Polo",
+       "Spinning Basketball",
+       "Rolling Soccer Ball",
+       "Varsity"
+      ],
+      "title": "Athlete",
+      "grandTitle": "Sports Legend",
+      "shader": "Varsity"
+     }
+    },
+    {
+     "slug": "video-games",
+     "name": "Video Games",
+     "topics": [
+      {
+       "slug": "consoles",
+       "name": "Consoles"
+      },
+      {
+       "slug": "best-sellers",
+       "name": "Best-Sellers",
+       "wants": [
+        {
+         "slug": "game-characters-franchise",
+         "name": "Game characters",
+         "ask": "famous game characters → their franchise",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "studios",
+       "name": "Studios",
+       "wants": [
+        {
+         "slug": "game-mascots",
+         "name": "Game mascots",
+         "ask": "game mascots → their company",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "indie-games",
+       "name": "Indie Games"
+      },
+      {
+       "slug": "arcade",
+       "name": "Arcade"
+      },
+      {
+       "slug": "esports",
+       "name": "Esports"
+      },
+      {
+       "slug": "soundtracks",
+       "name": "Soundtracks"
+      },
+      {
+       "slug": "game-mechanics",
+       "name": "Game Mechanics"
+      },
+      {
+       "slug": "pokemon",
+       "name": "Pokémon",
+       "addedBy": "engine, 2026-10-02"
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Headset",
+       "Retro Helmet",
+       "Esports Jersey",
+       "Controller",
+       "Arcade Stick",
+       "Speedrunner Tracksuit",
+       "Spinning Power Star",
+       "Bouncing Slime",
+       "8-bit (dither)"
+      ],
+      "title": "Player One",
+      "grandTitle": "High Score",
+      "shader": "8-bit (dither)"
+     }
+    },
+    {
+     "slug": "games",
+     "name": "Games",
+     "topics": [
+      {
+       "slug": "chess",
+       "name": "Chess"
+      },
+      {
+       "slug": "board-games",
+       "name": "Board Games",
+       "wants": [
+        {
+         "slug": "board-game-inventors",
+         "name": "Board game makers",
+         "ask": "board games → who made them, or when",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "puzzle-inventors",
+         "name": "Puzzles",
+         "ask": "famous puzzles (Rubik's Cube) → who invented them",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "card-games",
+       "name": "Card Games"
+      },
+      {
+       "slug": "trading-cards",
+       "name": "Trading Cards"
+      },
+      {
+       "slug": "tabletop-rpgs",
+       "name": "Tabletop RPGs"
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Paper Crown",
+       "Building-Block Helmet",
+       "Hobby Vest",
+       "Yo-Yo",
+       "Kite",
+       "Teddy Bear Onesie",
+       "Spinning Top",
+       "Wind-Up Toy Robot",
+       "Toy Box"
+      ],
+      "title": "Hobbyist",
+      "grandTitle": "Game Master",
+      "shader": "Toy Box"
+     }
+    },
+    {
+     "slug": "toys",
+     "name": "Toys",
+     "topics": [
+      {
+       "slug": "toy-lines",
+       "name": "Toy Lines",
+       "wants": [
+        {
+         "slug": "toy-of-the-year",
+         "name": "Toys of the year",
+         "ask": "famous toys of the year → their year",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "lego-themes",
+         "name": "LEGO themes",
+         "ask": "famous LEGO themes → what they are about",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "famous-dolls",
+         "name": "Famous dolls",
+         "ask": "famous dolls → their maker or year",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "hobbies",
+       "name": "Hobbies"
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Bunny Ears",
+       "Dinosaur Hood",
+       "Rainbow Tee",
+       "Lollipop",
+       "Bubble Wand",
+       "Dino Onesie",
+       "Bubbling Wand",
+       "Rubber Duck",
+       "Crayon Box"
+      ],
+      "title": "Big Kid",
+      "grandTitle": "Storyteller",
+      "shader": "Crayon Box"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "general",
+   "name": "General",
+   "icon": "question",
+   "color": "#7a4a1e",
+   "examples": [
+    "wordplay",
+    "world records",
+    "the internet",
+    "oddities"
+   ],
+   "categories": [
+    {
+     "slug": "oddities",
+     "name": "Oddities",
+     "topics": [
+      {
+       "slug": "mysteries",
+       "name": "Mysteries",
+       "full": "David 2026-09-29: full — Wikidata has no further famous angle (eponymous-laws / mysteries + mysteries-ancient)",
+       "wants": [
+        {
+         "slug": "famous-hoaxes",
+         "name": "Famous hoaxes",
+         "ask": "famous hoaxes → what was faked and when",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "ghost-ships",
+         "name": "Ghost ships",
+         "ask": "famous ghost ships and vanished crews → where and when",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "lost-treasures",
+         "name": "Lost treasures",
+         "ask": "famous lost treasures → where they were lost",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "famous-disappearances",
+         "name": "Famous disappearances",
+         "ask": "famous people who vanished (Amelia Earhart) → where they vanished",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "unexplained-phenomena",
+         "name": "Unexplained phenomena",
+         "ask": "unexplained phenomena (ball lightning, crop circles) → what they are",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "lost-cities",
+         "name": "Lost cities",
+         "ask": "lost cities (Atlantis, El Dorado) → where they are said to be",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "strange-laws",
+       "name": "Strange Laws",
+       "full": "David 2026-09-29: full — Wikidata has no further famous angle (eponymous-laws / mysteries + mysteries-ancient)"
+      },
+      {
+       "slug": "eccentrics",
+       "name": "Eccentrics",
+       "wants": [
+        {
+         "slug": "famous-eccentrics",
+         "name": "Famous eccentrics",
+         "ask": "famous eccentric people → what they were known for",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "odd-sports",
+       "name": "Odd Sports",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "odd-sports-country",
+         "name": "Odd sports",
+         "ask": "odd sports → the country they come from",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "odd-championships",
+         "name": "Odd world championships",
+         "ask": "odd world championships (cheese rolling, wife carrying) → where they are held",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "heists",
+       "name": "Heists",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "famous-heists",
+         "name": "Famous heists",
+         "ask": "famous heists → what was stolen",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "odd-traditions",
+       "name": "Odd Traditions",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "odd-foods",
+         "name": "Odd foods",
+         "ask": "odd foods (haggis, surströmming) → their country",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "odd-festivals",
+         "name": "Odd festivals",
+         "ask": "odd festivals (La Tomatina) → their country",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "natural-wonders",
+       "name": "Natural Wonders",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "strange-natural-wonders",
+         "name": "Strange natural wonders",
+         "ask": "strange natural wonders (the Door to Hell, pink lakes) → their country",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "odd-place-names",
+       "name": "Odd Place Names",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "odd-place-names",
+         "name": "Odd place names",
+         "ask": "odd place names → their country",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "optical-illusions",
+       "name": "Optical Illusions",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "optical-illusions",
+         "name": "Optical illusions",
+         "ask": "famous optical illusions → what they show",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "paradoxes-and-biases",
+       "name": "Paradoxes and Biases",
+       "addedBy": "engine, 2026-10-03"
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Powdered Wig",
+       "Campaign Boater",
+       "Pinstripe Suit Top",
+       "Rolled Charter",
+       "Law Book Stack",
+       "Judge's Robe",
+       "Tipping Scales",
+       "Ballot Box",
+       "Statesman"
+      ],
+      "title": "Counsel",
+      "grandTitle": "Chief Justice",
+      "shader": "Statesman"
+     }
+    },
+    {
+     "slug": "wordplay",
+     "name": "Wordplay",
+     "topics": [
+      {
+       "slug": "acronyms",
+       "name": "Acronyms"
+      },
+      {
+       "slug": "phobias",
+       "name": "Phobias",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "phobias",
+         "name": "Phobias",
+         "ask": "a phobia → what it is the fear of",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "eponyms",
+       "name": "Eponyms",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "words-named-after-people",
+         "name": "Words named after people",
+         "ask": "everyday words (sandwich, cardigan) → the person they are named after",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "words-named-after-places",
+         "name": "Words named after places",
+         "ask": "everyday words (denim, jeans) → the place they are named after",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "nicknames",
+       "name": "Nicknames",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "city-nicknames",
+         "name": "City nicknames",
+         "ask": "a city's nickname (the Big Apple) → the city",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "country-nicknames",
+         "name": "Country nicknames",
+         "ask": "a country's nickname (Land of the Rising Sun) → the country",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "celebrity-nicknames",
+         "name": "Celebrity nicknames",
+         "ask": "a famous person's nickname (the King) → who",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Raised-Eyebrow Cap",
+       "Truth-Seeker Helm",
+       "Debunked Tee",
+       "Red X Sign",
+       "Giant Fact Book",
+       "Liecracker Coveralls",
+       "Popping Myth Balloon",
+       "Ostrich",
+       "Red Pen"
+      ],
+      "title": "Skeptic",
+      "grandTitle": "Arch-Skeptic",
+      "shader": "Red Pen"
+     }
+    },
+    {
+     "slug": "records",
+     "name": "Records",
+     "topics": [
+      {
+       "slug": "world-records",
+       "name": "World Records",
+       "barred": "David, 2026-10-01: world records are not good trivia, as a record is almost never re-verified as still standing"
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Sticky-Note Crown",
+       "Top-Ten Headband",
+       "Enumerated Tee",
+       "Grocery List",
+       "Giant Checkmark",
+       "Archivist's Coat",
+       "Unrolling Scroll",
+       "Filing Cabinet",
+       "Ruled Paper"
+      ],
+      "title": "List-Maker",
+      "grandTitle": "Completionist",
+      "shader": "Ruled Paper"
+     }
+    },
+    {
+     "slug": "internet",
+     "name": "Internet",
+     "topics": [
+      {
+       "slug": "social-media",
+       "name": "Social Media",
+       "addedBy": "Claude, category rewrite 2026-09-27"
+      },
+      {
+       "slug": "websites-and-apps",
+       "name": "Websites and Apps",
+       "addedBy": "engine, 2026-09-30"
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Paparazzi Cap",
+       "Diva Wig",
+       "Fan-Club Tee",
+       "Autograph Book",
+       "Selfie Stick",
+       "Sequin Jumpsuit",
+       "Flashing Camera",
+       "Walk-of-Fame Star",
+       "Red Carpet"
+      ],
+      "title": "Superfan",
+      "grandTitle": "Icon",
+      "shader": "Red Carpet"
+     }
+    },
+    {
+     "slug": "pop-culture",
+     "name": "Pop Culture",
+     "topics": [
+      {
+       "slug": "astrology",
+       "name": "Astrology",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "zodiac-signs",
+         "name": "Zodiac signs",
+         "ask": "each zodiac sign → its dates, its typical traits, its symbol and what the symbol shows",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "famous-duos",
+       "name": "Famous Duos",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "famous-duos",
+         "name": "Famous duos",
+         "ask": "famous duos and partners → the other half",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "famous-quotes",
+       "name": "Famous Quotes",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "historical-quotes",
+         "name": "Historical quotes",
+         "ask": "famous historical quotes → who said them",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "fads-and-crazes",
+       "name": "Fads & Crazes",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "fads-by-decade",
+         "name": "Fads and crazes",
+         "ask": "famous fads and crazes → their decade",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "dance-crazes",
+         "name": "Dance crazes",
+         "ask": "dance crazes (the Macarena) → their decade",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "robots",
+       "name": "Robots",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "famous-robots",
+         "name": "Famous robots",
+         "ask": "famous robots of film, TV and real life → where they come from",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "tv",
+       "name": "TV",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "tv-theme-songs",
+         "name": "TV theme songs",
+         "ask": "TV theme songs → who performed them",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "tv-hangouts",
+         "name": "TV hangouts",
+         "ask": "famous TV hangouts (Central Perk, Cheers) → their show",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "talk-show-hosts",
+         "name": "Talk-show hosts",
+         "ask": "talk-show hosts → their show",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "tv-spin-offs",
+         "name": "TV spin-offs",
+         "ask": "TV spin-offs → the show they came from",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "awards",
+       "name": "Awards",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "award-shows",
+         "name": "Award shows",
+         "ask": "award shows (the Emmys, the Tonys) → what they honour",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "fictional-things",
+       "name": "Fictional Things",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "fictional-companies",
+         "name": "Fictional companies",
+         "ask": "fictional companies (Wayne Enterprises, Acme) → their story",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "fictional-vehicles",
+         "name": "Fictional vehicles",
+         "ask": "fictional vehicles (the Batmobile, the DeLorean) → their film",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "fictional-spaceships",
+         "name": "Fictional spaceships",
+         "ask": "fictional spaceships (the Millennium Falcon) → their franchise",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "famous-swords",
+         "name": "Famous swords",
+         "ask": "famous swords (Excalibur, the lightsaber) → their owner",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "fictional-sports",
+         "name": "Fictional sports",
+         "ask": "fictional sports (Quidditch, podracing) → their story",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "fictional-foods",
+         "name": "Fictional foods and drinks",
+         "ask": "fictional foods and drinks (Butterbeer, Duff beer) → their story",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "superhero-hideouts",
+         "name": "Superhero hideouts",
+         "ask": "superhero hideouts (the Batcave, the Fortress of Solitude) → the hero",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "fictional-countries",
+         "name": "Fictional countries",
+         "ask": "fictional countries (Wakanda, Genovia) → their story",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "fictional-characters",
+       "name": "Fictional Characters",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "fictional-animals",
+         "name": "Famous fictional animals",
+         "ask": "famous fictional animals (Lassie, Scooby-Doo) → their show",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "fictional-detectives",
+         "name": "Fictional detectives",
+         "ask": "fictional detectives → their creator",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "puppets-and-muppets",
+         "name": "Puppets and Muppets",
+         "ask": "puppets and Muppets → their show",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "horror-icons",
+         "name": "Horror icons",
+         "ask": "horror icons → their film",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "fictional-bands",
+         "name": "Fictional bands",
+         "ask": "fictional bands (Spinal Tap, the Blues Brothers) → their story",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "comic-strips",
+       "name": "Comic Strips",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "comic-strips",
+         "name": "Comic strips",
+         "ask": "comic strips (Peanuts) → their creator",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "thrill-rides",
+       "name": "Thrill Rides",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "famous-roller-coasters",
+         "name": "Famous roller coasters",
+         "ask": "famous roller coasters → their park",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "famous-jewels",
+       "name": "Famous Jewels",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "famous-jewels",
+         "name": "Famous rings and jewels",
+         "ask": "famous rings and jewels (the Hope Diamond) → their story",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "newspapers-and-magazines",
+       "name": "Newspapers and magazines",
+       "addedBy": "engine, 2026-10-02"
+      }
+     ],
+     "floorPerHour": 1
+    },
+    {
+     "slug": "general-knowledge",
+     "name": "General Knowledge",
+     "topics": [
+      {
+       "slug": "how-many",
+       "name": "How Many",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "how-many-nature-body",
+         "name": "How many: nature and the body",
+         "ask": "things in nature and the body (legs on a spider, bones in the body) → how many",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "how-many-games-sport",
+         "name": "How many: games and sport",
+         "ask": "things in games and sport (players on a team, keys on a piano) → how many",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "how-many-geography-space",
+         "name": "How many: geography and space",
+         "ask": "things in geography and space (stars on the US flag, moons of Mars) → how many",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "what-colour",
+       "name": "What Colour",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "what-colour",
+         "name": "What colour?",
+         "ask": "famous things → their colour",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "symbols",
+       "name": "Symbols",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "famous-symbols",
+         "name": "Famous symbols",
+         "ask": "famous symbols (the caduceus, the peace sign) → what they mean",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "original-uses",
+       "name": "Original Uses",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "original-uses",
+         "name": "Original uses",
+         "ask": "famous inventions → what they were first made for (bubble wrap began as wallpaper)",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "catchphrases",
+       "name": "Catchphrases",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "catchphrases",
+         "name": "Catchphrases",
+         "ask": "famous catchphrases → their character",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "what-shape",
+       "name": "What Shape",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "what-shape",
+         "name": "What shape?",
+         "ask": "famous things → their shape (a stop sign → octagon)",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "numbered-sets",
+       "name": "Numbered Sets",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "numbered-sets",
+         "name": "Famous numbered sets",
+         "ask": "famous numbered sets (the Seven Dwarfs, the Twelve Labours) → their members",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "patterns",
+       "name": "Patterns",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "famous-patterns",
+         "name": "Famous patterns",
+         "ask": "famous patterns (tartan, paisley, houndstooth) → where they come from",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "made-of",
+       "name": "Made Of",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "made-of",
+         "name": "What it's made of",
+         "ask": "famous things → what they are made of (the Statue of Liberty → copper)",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      }
+     ],
+     "floorPerHour": 1
+    }
+   ]
+  },
+  {
+   "slug": "science-math-tech",
+   "name": "Science, Math, Technology",
+   "icon": "microscope",
+   "color": "#2f8a3c",
+   "examples": [
+    "the planets",
+    "the elements",
+    "who invented it",
+    "the human body"
+   ],
+   "categories": [
+    {
+     "slug": "biology",
+     "name": "Biology",
+     "topics": [
+      {
+       "slug": "wildlife",
+       "name": "Wildlife",
+       "wants": [
+        {
+         "slug": "baby-animal-names",
+         "name": "Baby animal names",
+         "ask": "animals → what their babies are called",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "national-animals",
+         "name": "National animals",
+         "ask": "countries → their national animal",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "bird-types",
+         "name": "Birds",
+         "ask": "famous birds → what kind of bird they are",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "animal-classes",
+         "name": "Animal classes",
+         "ask": "animals → their class (mammal, reptile, fish …)",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "venomous-animals",
+         "name": "Venomous animals",
+         "ask": "venomous animals → where they live",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "animal-migrations",
+         "name": "Great migrations",
+         "ask": "great animal migrations → their route",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "sea-life",
+       "name": "Sea Life"
+      },
+      {
+       "slug": "insects",
+       "name": "Insects"
+      },
+      {
+       "slug": "genetics",
+       "name": "Genetics"
+      },
+      {
+       "slug": "plants",
+       "name": "Plants",
+       "wants": [
+        {
+         "slug": "trees",
+         "name": "Trees",
+         "ask": "trees → their leaf or fruit",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "pets",
+       "name": "Pets"
+      },
+      {
+       "slug": "cat-and-dog-breeds",
+       "name": "Cat & Dog Breeds"
+      },
+      {
+       "slug": "dinosaurs",
+       "name": "Dinosaurs",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "dinosaurs-period",
+         "name": "Dinosaurs by period",
+         "ask": "dinosaurs → the period they lived in",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "dinosaurs-diet",
+         "name": "Dinosaur diets",
+         "ask": "dinosaurs → what they ate",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "human-body",
+       "name": "Human Body",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "bones",
+         "name": "Bones",
+         "ask": "bones → where they are in the body",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "organs",
+         "name": "Organs",
+         "ask": "organs → what they do",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "body-systems",
+         "name": "Body systems",
+         "ask": "body parts → the system they belong to",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "medicine",
+       "name": "Medicine",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "diseases-cause",
+         "name": "Diseases",
+         "ask": "diseases → what causes them",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "medical-firsts",
+         "name": "Medical firsts",
+         "ask": "medical firsts (the first vaccine) → who",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "famous-doctors",
+         "name": "Famous doctors",
+         "ask": "famous doctors and medical scientists → what they are known for",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Mushroom Cap",
+       "Frog Hat",
+       "Frog Onesie",
+       "Butterfly Net",
+       "Specimen Jar",
+       "Naturalist's Coat",
+       "Fluttering Butterfly",
+       "Axolotl",
+       "Chlorophyll"
+      ],
+      "title": "Naturalist",
+      "grandTitle": "Master Naturalist",
+      "shader": "Chlorophyll"
+     }
+    },
+    {
+     "slug": "earth-and-space",
+     "name": "Earth & Space",
+     "topics": [
+      {
+       "slug": "space",
+       "name": "Space",
+       "wants": [
+        {
+         "slug": "constellations",
+         "name": "Constellations",
+         "ask": "constellations → what they represent",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "space-firsts",
+         "name": "Firsts in space",
+         "ask": "firsts in space (first person in orbit) → who",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "space-missions-agency",
+         "name": "Space missions",
+         "ask": "famous space missions → their agency",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "moons-planet",
+         "name": "Moons",
+         "ask": "famous moons → their planet",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "famous-telescopes",
+         "name": "Famous telescopes",
+         "ask": "famous telescopes → where they are or what they found",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "moon-phases",
+         "name": "Moon phases",
+         "ask": "the moon's phases → what they look like",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "weather",
+       "name": "Weather",
+       "wants": [
+        {
+         "slug": "famous-hurricanes",
+         "name": "Famous hurricanes",
+         "ask": "famous hurricanes → where and when they struck",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "cloud-types",
+         "name": "Cloud types",
+         "ask": "cloud types → what they look like",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "geology",
+       "name": "Geology",
+       "wants": [
+        {
+         "slug": "famous-earthquakes",
+         "name": "Famous earthquakes",
+         "ask": "famous earthquakes → where and when",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "gemstones",
+         "name": "Gemstones",
+         "ask": "gemstones → their colour or hardness",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "oceans-and-seas",
+         "name": "Oceans and seas",
+         "ask": "oceans and seas → where they are",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "rock-types",
+         "name": "Rock types",
+         "ask": "rock types → how they form",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Cat-Ear Headband",
+       "Mecha Helmet",
+       "Sailor Collar Top",
+       "Manga Volume",
+       "Oversized Mallet",
+       "Magical Girl Outfit",
+       "Zap Star",
+       "Chibi Sidekick",
+       "Cel-Shade"
+      ],
+      "title": "Otaku",
+      "grandTitle": "Sensei",
+      "shader": "Cel-Shade"
+     }
+    },
+    {
+     "slug": "chemistry",
+     "name": "Chemistry",
+     "topics": [
+      {
+       "slug": "elements",
+       "name": "Elements"
+      },
+      {
+       "slug": "everyday-chemistry",
+       "name": "Everyday Chemistry",
+       "addedBy": "Claude, category rewrite 2026-09-27"
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Safety Goggles",
+       "Lab Cap",
+       "Lab Coat",
+       "Beaker",
+       "Telescope",
+       "Space Suit",
+       "Bubbling Flask",
+       "Orbiting Atom",
+       "Neon"
+      ],
+      "title": "Scientist",
+      "grandTitle": "Nobel",
+      "shader": "Neon"
+     }
+    },
+    {
+     "slug": "tech",
+     "name": "Tech",
+     "topics": [
+      {
+       "slug": "hardware",
+       "name": "Hardware",
+       "wants": [
+        {
+         "slug": "ai-assistants-company",
+         "name": "AI assistants",
+         "ask": "AI assistants (Siri, Alexa) → their company",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "coding",
+       "name": "Coding"
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Propeller Cap",
+       "VR Visor",
+       "Circuit Hoodie",
+       "Soldering Iron",
+       "Giant Floppy Disk",
+       "Server-Room Jumpsuit",
+       "Spinning Loading Wheel",
+       "Hovering Drone",
+       "Circuit Board"
+      ],
+      "title": "Technician",
+      "grandTitle": "Architect",
+      "shader": "Circuit Board"
+     }
+    },
+    {
+     "slug": "math",
+     "name": "Math",
+     "topics": [
+      {
+       "slug": "geometry",
+       "name": "Geometry",
+       "wants": [
+        {
+         "slug": "shapes-sides",
+         "name": "Shapes",
+         "ask": "shapes → their number of sides",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "famous-numbers",
+         "name": "Famous numbers",
+         "ask": "famous numbers (pi, e) → what they are",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "mathematicians",
+       "name": "Mathematicians",
+       "wants": [
+        {
+         "slug": "famous-math-problems",
+         "name": "Famous math problems",
+         "ask": "famous math problems → who solved them",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "units",
+       "name": "Units"
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Pi Cap",
+       "Protractor Halo",
+       "Grid-Paper Shirt",
+       "Drafting Compass",
+       "Puzzle Cube",
+       "Chalk-Dust Robe",
+       "Orbiting Numbers",
+       "Infinity Loop",
+       "Graph Paper"
+      ],
+      "title": "Logician",
+      "grandTitle": "Prime Mind",
+      "shader": "Graph Paper"
+     }
+    },
+    {
+     "slug": "inventions",
+     "name": "Inventions",
+     "topics": [
+      {
+       "slug": "inventors",
+       "name": "Inventors",
+       "wants": [
+        {
+         "slug": "accidental-discoveries",
+         "name": "Accidental discoveries",
+         "ask": "accidental discoveries (penicillin) → who found them",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "inventions-decade",
+         "name": "Inventions by decade",
+         "ask": "famous inventions → their decade",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "scientific-instruments",
+         "name": "Scientific instruments",
+         "ask": "scientific instruments → what they measure",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "nobel-prizes",
+       "name": "Nobel Prizes"
+      },
+      {
+       "slug": "scientists",
+       "name": "Scientists",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "famous-experiments",
+         "name": "Famous experiments",
+         "ask": "famous experiments → their scientist",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "scientists-discoveries",
+         "name": "Famous scientists",
+         "ask": "famous scientists → their discovery",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Thinking Cap",
+       "Graduation Cap",
+       "Pub Quiz Sweater",
+       "Pencil",
+       "Question-Mark Sign",
+       "Quizmaster Suit",
+       "Floating Lightbulb",
+       "Bouncing Question Mark",
+       "Chalkboard"
+      ],
+      "title": "Know-It-All",
+      "grandTitle": "Polymath",
+      "shader": "Chalkboard"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "society",
+   "name": "Society",
+   "icon": "earth",
+   "color": "#1f5fa8",
+   "examples": [
+    "history",
+    "capitals and countries",
+    "myths and legends",
+    "languages"
+   ],
+   "categories": [
+    {
+     "slug": "history",
+     "name": "History",
+     "topics": [
+      {
+       "slug": "ancient-world",
+       "name": "Ancient World",
+       "wants": [
+        {
+         "slug": "famous-walls",
+         "name": "Famous walls",
+         "ask": "famous walls (Hadrian's Wall, the Great Wall) → their country",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "ancient-cities-country",
+         "name": "Ancient cities",
+         "ask": "ancient cities → their modern country",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "ancient-inventions",
+         "name": "Ancient inventions",
+         "ask": "inventions of ancient civilisations → the civilisation",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "middle-ages",
+       "name": "Middle Ages"
+      },
+      {
+       "slug": "wars",
+       "name": "Wars",
+       "wants": [
+        {
+         "slug": "revolutions-country",
+         "name": "Revolutions",
+         "ask": "famous revolutions → their country",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "treaties-war",
+         "name": "Treaties",
+         "ask": "famous treaties → the war they ended",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "rulers",
+       "name": "Rulers",
+       "wants": [
+        {
+         "slug": "uk-prime-ministers",
+         "name": "UK prime ministers",
+         "ask": "UK prime ministers → their party or era",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "us-first-ladies",
+         "name": "US first ladies",
+         "ask": "US first ladies → their president",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "famous-queens",
+         "name": "Famous queens",
+         "ask": "famous queens → their realm",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "archaeology",
+       "name": "Archaeology"
+      },
+      {
+       "slug": "universities",
+       "name": "Universities"
+      },
+      {
+       "slug": "explorers",
+       "name": "Explorers",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "explorers-discoveries",
+         "name": "Explorers",
+         "ask": "famous explorers → what they found",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "exploration-firsts",
+         "name": "Firsts in exploration",
+         "ask": "firsts in exploration (first to the South Pole) → who",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "speeches-and-documents",
+       "name": "Speeches & Documents",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "famous-speeches",
+         "name": "Famous speeches",
+         "ask": "famous speeches → who gave them",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "founding-documents",
+         "name": "Founding documents",
+         "ask": "famous documents (Magna Carta) → their country",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "empires",
+       "name": "Empires",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "empires-capital",
+         "name": "Empires",
+         "ask": "great empires → their capital",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "pirates-and-spies",
+       "name": "Pirates & Spies",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "famous-pirates",
+         "name": "Famous pirates",
+         "ask": "famous pirates → their ship or sea",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "famous-spies",
+         "name": "Famous spies",
+         "ask": "famous spies → who they spied for",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Laurel Wreath",
+       "Centurion Helm",
+       "Toga",
+       "Quill",
+       "Scroll",
+       "Royal Robe",
+       "Spinning Hourglass",
+       "Marching Tin Soldier",
+       "Sepia"
+      ],
+      "title": "Chronicler",
+      "grandTitle": "Historian",
+      "shader": "Sepia"
+     }
+    },
+    {
+     "slug": "geography",
+     "name": "Geography",
+     "topics": [
+      {
+       "slug": "capitals",
+       "name": "Capitals",
+       "wants": [
+        {
+         "slug": "us-state-capitals",
+         "name": "US state capitals",
+         "ask": "US states → their capital",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "cities",
+       "name": "Cities",
+       "wants": [
+        {
+         "slug": "famous-streets",
+         "name": "Famous streets",
+         "ask": "famous streets → their city",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "borders-and-maps",
+       "name": "Borders & Maps",
+       "wants": [
+        {
+         "slug": "former-country-names",
+         "name": "Former country names",
+         "ask": "countries → their former name",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "rivers-and-lakes",
+       "name": "Rivers & Lakes"
+      },
+      {
+       "slug": "mountains-and-deserts",
+       "name": "Mountains & Deserts"
+      },
+      {
+       "slug": "flags-and-symbols",
+       "name": "Flags & Symbols"
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Explorer's Cap",
+       "Pith Helmet",
+       "Hiking Vest",
+       "Compass",
+       "Folded Map",
+       "Safari Outfit",
+       "Spinning Globe",
+       "Orbiting Mini-Globe",
+       "Atlas"
+      ],
+      "title": "Cartographer",
+      "grandTitle": "Master Cartographer",
+      "shader": "Atlas"
+     }
+    },
+    {
+     "slug": "myth-and-legend",
+     "name": "Myth & Legend",
+     "topics": [
+      {
+       "slug": "mythology",
+       "name": "Mythology",
+       "wants": [
+        {
+         "slug": "egyptian-gods",
+         "name": "Egyptian gods",
+         "ask": "Egyptian gods → what they ruled over",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "arthurian-legend",
+         "name": "King Arthur's legend",
+         "ask": "figures and things of King Arthur's legend → who or what they are",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "myth-heroes",
+         "name": "Heroes of myth",
+         "ask": "heroes of myth → their famous deed",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "urban-legends",
+       "name": "Urban Legends",
+       "wants": [
+        {
+         "slug": "urban-legends",
+         "name": "Urban legends",
+         "ask": "famous urban legends → where they come from",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "cryptids",
+       "name": "Cryptids",
+       "addedBy": "David, 2026-10-01",
+       "wants": [
+        {
+         "slug": "cryptids-country",
+         "name": "Cryptids",
+         "ask": "cryptids (Nessie, Bigfoot) → where they are said to live",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Winged Helm",
+       "Horned Helm",
+       "Chiton",
+       "Trident",
+       "Thunderbolt",
+       "Olympian Robes",
+       "Crackling Thunderbolt",
+       "Three-Headed Puppy",
+       "Marble"
+      ],
+      "title": "Acolyte",
+      "grandTitle": "Demigod",
+      "shader": "Marble"
+     }
+    },
+    {
+     "slug": "religion",
+     "name": "Religion",
+     "topics": [
+      {
+       "slug": "world-religions",
+       "name": "World Religions",
+       "wants": [
+        {
+         "slug": "holy-books",
+         "name": "Holy books",
+         "ask": "holy books → their faith",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "religious-festivals",
+         "name": "Religious festivals",
+         "ask": "religious festivals → their faith",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "scripture-figures",
+         "name": "Figures of scripture",
+         "ask": "famous figures of scripture → what they are known for",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "sacred-places",
+       "name": "Sacred Places",
+       "addedBy": "Claude, category rewrite 2026-09-27"
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Pilgrim's Hat",
+       "Wanderer's Hood",
+       "Travel Cloak",
+       "Pilgrim's Staff",
+       "Pilgrim's Candle",
+       "Pilgrim's Mantle",
+       "Guiding-Star Lantern",
+       "Peace Dove",
+       "Stained Glass"
+      ],
+      "title": "Pilgrim",
+      "grandTitle": "Sage",
+      "shader": "Stained Glass"
+     }
+    },
+    {
+     "slug": "language",
+     "name": "Language",
+     "topics": [
+      {
+       "slug": "languages",
+       "name": "Languages",
+       "wants": [
+        {
+         "slug": "alphabets",
+         "name": "Alphabets",
+         "ask": "writing systems → the language they write",
+         "by": "David, 2026-10-01"
+        },
+        {
+         "slug": "hello-languages",
+         "name": "Hello around the world",
+         "ask": "the word for hello in other languages → the language",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      },
+      {
+       "slug": "words",
+       "name": "Words",
+       "addedBy": "Claude, category rewrite 2026-09-27",
+       "wants": [
+        {
+         "slug": "idioms",
+         "name": "Idioms",
+         "ask": "idioms → what they mean",
+         "by": "David, 2026-10-01"
+        }
+       ]
+      }
+     ],
+     "world": {
+      "tiers": [
+       "Letter-Block Cap",
+       "Spelling-Bee Antennae",
+       "Alphabet Tee",
+       "Dictionary",
+       "Giant Inkwell",
+       "Crossword Suit",
+       "Swirling Punctuation",
+       "Chattering Teeth",
+       "Newsprint"
+      ],
+      "title": "Wordsmith",
+      "grandTitle": "Lexicon",
+      "shader": "Newsprint"
+     }
+    }
+   ]
+  }
+ ]
+}

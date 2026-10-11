@@ -1,0 +1,148 @@
+{
+ "id": "table.earth-and-space.moon-phases",
+ "kind": "table",
+ "title": "Moon phases",
+ "genre": "science-math-tech",
+ "category": "earth-and-space",
+ "topic": "space",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Hand-built, checked row by row against English Wikipedia",
+  "method": "enwiki: Lunar phase, Blue moon, Supermoon, Harvest moon, Lunar eclipse, Moon illusion",
+  "attribution": null,
+  "fetchedAt": "2026-10-05T19:45:00.000Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-05T19:39:50.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "looks_like",
+   "label": "What it looks like",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "moon phase or famous moon",
+  "many": "moon phases and famous moons",
+  "minFame": 0.3,
+  "columns": {
+   "looks_like": {
+    "role": "code",
+    "pick": "Which of these describes the {label}?",
+    "reverse": "Which phase or famous moon is this? {value}"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "New Moon",
+   "qid": null,
+   "fame": 0.404,
+   "looks_like": "Dark and invisible: the sunlit side faces away from us",
+   "kind": "phase",
+   "known": 0.95
+  },
+  {
+   "label": "Waxing Crescent",
+   "qid": null,
+   "fame": 0.535,
+   "looks_like": "A thin sliver lit on the right, growing night by night (northern sky)",
+   "kind": "phase",
+   "known": 0.5
+  },
+  {
+   "label": "First Quarter",
+   "qid": null,
+   "fame": 0.535,
+   "looks_like": "A half disc with the right side lit, a week after the dark one (northern sky)",
+   "kind": "phase",
+   "known": 0.4
+  },
+  {
+   "label": "Waxing Gibbous",
+   "qid": null,
+   "fame": 0.535,
+   "looks_like": "Mostly lit but a dent still dark on the left, getting rounder (northern sky)",
+   "kind": "phase",
+   "known": 0.3
+  },
+  {
+   "label": "Full Moon",
+   "qid": null,
+   "fame": 0.487,
+   "looks_like": "A complete bright disc, rising as the sun sets",
+   "kind": "phase",
+   "known": 0.95
+  },
+  {
+   "label": "Waning Gibbous",
+   "qid": null,
+   "fame": 0.535,
+   "looks_like": "Mostly lit with a dent growing dark on the right (northern sky)",
+   "kind": "phase",
+   "known": 0.3
+  },
+  {
+   "label": "Last Quarter",
+   "qid": null,
+   "fame": 0.535,
+   "looks_like": "A half disc with the left side lit (northern sky)",
+   "kind": "phase",
+   "known": 0.4
+  },
+  {
+   "label": "Waning Crescent",
+   "qid": null,
+   "fame": 0.535,
+   "looks_like": "A thin sliver lit on the left, shrinking toward darkness (northern sky)",
+   "kind": "phase",
+   "known": 0.5
+  },
+  {
+   "label": "Blue Moon",
+   "qid": null,
+   "fame": 0.464,
+   "looks_like": "Looks ordinary, not blue: by the common rule, the second full disc in one calendar month",
+   "kind": "named",
+   "known": 0.6
+  },
+  {
+   "label": "Supermoon",
+   "qid": null,
+   "fame": 0.355,
+   "looks_like": "A bright disc that looks a bit larger because it is at its closest to Earth",
+   "kind": "named",
+   "known": 0.5
+  },
+  {
+   "label": "Harvest Moon",
+   "qid": null,
+   "fame": 0.319,
+   "looks_like": "The bright disc nearest the autumn equinox, rising low and orange",
+   "kind": "named",
+   "known": 0.4
+  },
+  {
+   "label": "Blood Moon",
+   "qid": null,
+   "fame": 0.507,
+   "looks_like": "A disc turned coppery red while Earth's shadow covers it",
+   "kind": "named",
+   "known": 0.6
+  },
+  {
+   "label": "Moon Illusion",
+   "qid": null,
+   "fame": 0.425,
+   "looks_like": "A disc that seems huge near the horizon but is the same size overhead",
+   "kind": "named",
+   "known": 0.3
+  }
+ ]
+}

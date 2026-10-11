@@ -1,0 +1,362 @@
+{
+ "id": "table.film-and-tv.bond-films",
+ "kind": "table",
+ "title": "James Bond films: release year and the actor who played Bond",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "box-office",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?released ?actor WHERE { { SELECT ?item ?actor (MIN(?pd) AS ?released) WHERE { VALUES (?item ?actor) { (wd:Q102754 \"Sean Connery\") (wd:Q106571 \"Sean Connery\") (wd:Q106440 \"Sean Connery\") (wd:Q107724 \"Sean Connery\") (wd:Q107761 \"Sean Connery\") (wd:Q107914 \"Sean Connery\") (wd:Q180279 \"Sean Connery\") (wd:Q107894 \"George Lazenby\") (wd:Q27204 \"Roger Moore\") (wd:Q309289 \"Roger Moore\") (wd:Q320423 \"Roger Moore\") (wd:Q334780 \"Roger Moore\") (wd:Q332330 \"Roger Moore\") (wd:Q204398 \"Roger Moore\") (wd:Q332368 \"Roger Moore\") (wd:Q272064 \"Timothy Dalton\") (wd:Q309086 \"Timothy Dalton\") (wd:Q19089 \"Pierce Brosnan\") (wd:Q207916 \"Pierce Brosnan\") (wd:Q212145 \"Pierce Brosnan\") (wd:Q30931 \"Pierce Brosnan\") (wd:Q151904 \"Daniel Craig\") (wd:Q181540 \"Daniel Craig\") (wd:Q4941 \"Daniel Craig\") (wd:Q18602670 \"Daniel Craig\") (wd:Q21534241 \"Daniel Craig\") } ?item wdt:P577 ?pd } GROUP BY ?item ?actor } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T06:38:00.766Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T06:38:00.766Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "released",
+   "label": "Released",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "actor",
+   "label": "Bond actor",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "Bond film",
+  "many": "Bond films",
+  "itemText": "{label}",
+  "itemSub": "{actor}",
+  "hookAsk": "Which Bond film {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "released": {
+    "role": "date",
+    "sort": "from the earliest Bond film to the most recent",
+    "era": "Drop each Bond film into the decade it was released.",
+    "eraSize": "decade",
+    "shot": "In what year was the Bond film {label} released?"
+   },
+   "actor": {
+    "role": "link",
+    "pick": "Which actor played James Bond in {label}?",
+    "statement": "{label} starred {value} as James Bond.",
+    "match": "Match each Bond film to the actor who played 007.",
+    "odd": "Three of these Bond films starred {value}. Which one did not?",
+    "all": "Tap all {n} Bond films starring {value} as 007.",
+    "reverse": "Which of these Bond films starred {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "No Time to Die",
+   "qid": "Q21534241",
+   "fame": 0.687,
+   "released": 2021,
+   "actor": "Daniel Craig",
+   "description": "2021 film directed by Cary Joji Fukunaga",
+   "hook": "closes out one actor's run as the secret agent with a farewell mission",
+   "known": 0.8,
+   "kind": "craig"
+  },
+  {
+   "label": "Casino Royale",
+   "qid": "Q151904",
+   "fame": 0.639,
+   "released": 2006,
+   "actor": "Daniel Craig",
+   "description": "2006 film by Martin Campbell",
+   "hook": "reboots the franchise with the agent's first mission as a double-0, built around a high-stakes poker game",
+   "known": 0.8,
+   "kind": "craig"
+  },
+  {
+   "label": "Skyfall",
+   "qid": "Q4941",
+   "fame": 0.628,
+   "released": 2012,
+   "actor": "Daniel Craig",
+   "description": "2012 film by Sam Mendes",
+   "hook": "sends the agent to his ancestral Scottish home for a showdown with a former colleague turned cyber-terrorist",
+   "known": 0.8,
+   "kind": "craig"
+  },
+  {
+   "label": "Octopussy",
+   "qid": "Q204398",
+   "fame": 0.622,
+   "released": 1983,
+   "actor": "Roger Moore",
+   "description": "1983 film by John Glen",
+   "hook": "sends the agent to India and ends with him dressed as a clown, racing to defuse a bomb at a circus",
+   "known": 0.5,
+   "kind": "moore"
+  },
+  {
+   "label": "Spectre",
+   "qid": "Q18602670",
+   "fame": 0.621,
+   "released": 2015,
+   "actor": "Daniel Craig",
+   "description": "2015 film by Sam Mendes",
+   "hook": "opens with a Day of the Dead parade in Mexico City and reveals the shadowy group behind earlier villains",
+   "known": 0.7,
+   "kind": "craig"
+  },
+  {
+   "label": "GoldenEye",
+   "qid": "Q19089",
+   "fame": 0.615,
+   "released": 1995,
+   "actor": "Pierce Brosnan",
+   "description": "1995 film by Martin Campbell",
+   "hook": "opens with a bungee jump off a huge dam and features a rogue satellite weapon",
+   "known": 0.8,
+   "kind": "brosnan"
+  },
+  {
+   "label": "Die Another Day",
+   "qid": "Q30931",
+   "fame": 0.597,
+   "released": 2002,
+   "actor": "Pierce Brosnan",
+   "description": "2002 film by Lee Tamahori",
+   "hook": "features an invisible car and a villain's palace built from ice",
+   "known": 0.6,
+   "kind": "brosnan"
+  },
+  {
+   "label": "Licence to Kill",
+   "qid": "Q309086",
+   "fame": 0.595,
+   "released": 1989,
+   "actor": "Timothy Dalton",
+   "description": "1989 film by John Glen",
+   "hook": "has the agent go rogue to avenge a friend who was fed to a shark by a drug lord",
+   "known": 0.4,
+   "kind": "dalton"
+  },
+  {
+   "label": "Quantum of Solace",
+   "qid": "Q181540",
+   "fame": 0.592,
+   "released": 2008,
+   "actor": "Daniel Craig",
+   "description": "2008 film by Marc Forster",
+   "hook": "picks up right after the previous film, with the agent chasing a plot to control Bolivia's water",
+   "known": 0.7,
+   "kind": "craig"
+  },
+  {
+   "label": "A View to a Kill",
+   "qid": "Q332368",
+   "fame": 0.583,
+   "released": 1985,
+   "actor": "Roger Moore",
+   "description": "1985 film by John Glen",
+   "hook": "pits the agent against a microchip tycoon who plans to wipe out Silicon Valley",
+   "known": 0.4,
+   "kind": "moore"
+  },
+  {
+   "label": "The World Is Not Enough",
+   "qid": "Q212145",
+   "fame": 0.581,
+   "released": 1999,
+   "actor": "Pierce Brosnan",
+   "description": "1999 film by Michael Apted",
+   "hook": "features an oil heir, a villain who cannot feel pain, and a boat chase along the Thames",
+   "known": 0.6,
+   "kind": "brosnan"
+  },
+  {
+   "label": "Tomorrow Never Dies",
+   "qid": "Q207916",
+   "fame": 0.579,
+   "released": 1997,
+   "actor": "Pierce Brosnan",
+   "description": "1997 film by Roger Spottiswoode",
+   "hook": "pits the agent against a media mogul who stirs up conflict to boost his news ratings",
+   "known": 0.6,
+   "kind": "brosnan"
+  },
+  {
+   "label": "Never Say Never Again",
+   "qid": "Q180279",
+   "fame": 0.578,
+   "released": 1983,
+   "actor": "Sean Connery",
+   "description": "1983 film by Irvin Kershner",
+   "hook": "is a rival studio's remake of an earlier adventure, made outside the main film series",
+   "known": 0.5,
+   "kind": "connery"
+  },
+  {
+   "label": "The Living Daylights",
+   "qid": "Q272064",
+   "fame": 0.568,
+   "released": 1987,
+   "actor": "Timothy Dalton",
+   "description": "1987 film by John Glen",
+   "hook": "starts with a defecting Soviet general and a cellist caught up in a sniper plot",
+   "known": 0.4,
+   "kind": "dalton"
+  },
+  {
+   "label": "Dr. No",
+   "qid": "Q102754",
+   "fame": 0.557,
+   "released": 1962,
+   "actor": "Sean Connery",
+   "description": "1962 film by Terence Young",
+   "hook": "launched the whole film series, with a metal-handed villain on a Caribbean island",
+   "known": 0.8,
+   "kind": "connery"
+  },
+  {
+   "label": "On Her Majesty's Secret Service",
+   "qid": "Q107894",
+   "fame": 0.557,
+   "released": 1969,
+   "actor": "George Lazenby",
+   "description": "1969 film by Peter R. Hunt",
+   "hook": "is the only entry in which the agent gets married, set partly at a Swiss mountaintop lair",
+   "known": 0.5,
+   "kind": "lazenby"
+  },
+  {
+   "label": "Goldfinger",
+   "qid": "Q106440",
+   "fame": 0.552,
+   "released": 1964,
+   "actor": "Sean Connery",
+   "description": "1964 film by Guy Hamilton",
+   "hook": "introduces the ejector-seat Aston Martin and a villain with a plot against Fort Knox",
+   "known": 0.8,
+   "kind": "connery"
+  },
+  {
+   "label": "For Your Eyes Only",
+   "qid": "Q332330",
+   "fame": 0.545,
+   "released": 1981,
+   "actor": "Roger Moore",
+   "description": "1981 film by John Glen",
+   "hook": "has the agent race to recover a missile-targeting device from a sunken surveillance ship",
+   "known": 0.5,
+   "kind": "moore"
+  },
+  {
+   "label": "Live and Let Die",
+   "qid": "Q27204",
+   "fame": 0.54,
+   "released": 1973,
+   "actor": "Roger Moore",
+   "description": "1973 film directed by Guy Hamilton",
+   "hook": "pits the agent against a Harlem drug lord, with a bayou boat chase and a theme by a former Beatle",
+   "known": 0.6,
+   "kind": "moore"
+  },
+  {
+   "label": "The Spy Who Loved Me",
+   "qid": "Q320423",
+   "fame": 0.54,
+   "released": 1977,
+   "actor": "Roger Moore",
+   "description": "1977 film by Lewis Gilbert",
+   "hook": "introduces a steel-toothed giant henchman and a car that turns into a submarine",
+   "known": 0.6,
+   "kind": "moore"
+  },
+  {
+   "label": "From Russia with Love",
+   "qid": "Q106571",
+   "fame": 0.531,
+   "released": 1963,
+   "actor": "Sean Connery",
+   "description": "1963 UK film by Terence Young",
+   "hook": "features a deadly fight aboard a famous luxury train and a stolen code machine",
+   "known": 0.7,
+   "kind": "connery"
+  },
+  {
+   "label": "Diamonds Are Forever",
+   "qid": "Q107914",
+   "fame": 0.526,
+   "released": 1971,
+   "actor": "Sean Connery",
+   "description": "1971 film by Guy Hamilton",
+   "hook": "is set largely in Las Vegas, where the agent chases a gem-smuggling ring",
+   "known": 0.6,
+   "kind": "connery"
+  },
+  {
+   "label": "You Only Live Twice",
+   "qid": "Q107761",
+   "fame": 0.522,
+   "released": 1967,
+   "actor": "Sean Connery",
+   "description": "1967 film directed by Lewis Gilbert",
+   "hook": "takes the agent to Japan, where a villain hides a rocket base inside a volcano",
+   "known": 0.6,
+   "kind": "connery"
+  },
+  {
+   "label": "Thunderball",
+   "qid": "Q107724",
+   "fame": 0.52,
+   "released": 1965,
+   "actor": "Sean Connery",
+   "description": "1965 film by Terence Young",
+   "hook": "revolves around two stolen nuclear bombs and underwater battles in the Bahamas",
+   "known": 0.7,
+   "kind": "connery"
+  },
+  {
+   "label": "The Man with the Golden Gun",
+   "qid": "Q309289",
+   "fame": 0.518,
+   "released": 1974,
+   "actor": "Roger Moore",
+   "description": "1974 film by Guy Hamilton",
+   "hook": "pits the agent against a hired assassin with a custom weapon in a duel on a tropical island",
+   "known": 0.5,
+   "kind": "moore"
+  },
+  {
+   "label": "Moonraker",
+   "qid": "Q334780",
+   "fame": 0.516,
+   "released": 1979,
+   "actor": "Roger Moore",
+   "description": "1979 film by Lewis Gilbert",
+   "hook": "takes the agent into outer space to stop a tycoon's orbital plot",
+   "known": 0.6,
+   "kind": "moore"
+  }
+ ]
+}

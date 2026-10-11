@@ -1,0 +1,230 @@
+{
+ "id": "table.general-knowledge.catchphrases-more",
+ "kind": "table",
+ "title": "More catchphrases and who says them",
+ "genre": "general",
+ "category": "general-knowledge",
+ "topic": "catchphrases",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?phrase WHERE { VALUES (?item ?phrase) { (wd:Q2490541 \"No capes!\") (wd:Q836789 \"Riddle me this!\") (wd:Q2777701 \"Did I do that?\") (wd:Q1067868 \"Giggity!\") (wd:Q584674 \"Get over here!\") (wd:Q848673 \"Zoinks!\") (wd:Q2878611 \"Come on down!\") (wd:Q1239072 \"We wish you love, peace and soul!\") (wd:Q844904 \"Be very, very quiet, I'm hunting wabbits.\") (wd:Q319918 \"You're desthpicable!\") (wd:Q20823008 \"Just keep swimming.\") (wd:Q2290907 \"There's a snake in my boot!\") (wd:Q3374172 \"I know you are, but what am I?\") (wd:Q1511163 \"Ha-ha!\") (wd:Q1158157 \"Hi-diddly-ho, neighborino!\") (wd:Q838512 \"Suit up!\") (wd:Q1047230 \"Keep your feet on the ground and keep reaching for the stars.\") (wd:Q436386 \"I get no respect!\") (wd:Q471023 \"Good night, Mrs. Calabash, wherever you are.\") (wd:Q60518510 \"I know nothing!\") (wd:Q15007 \"My precious.\") (wd:Q134773 \"Life is like a box of chocolates.\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T08:48:04.991Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T08:48:04.991Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "catchphrase",
+   "label": "Catchphrase",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "famous name",
+  "many": "famous names",
+  "minFame": 0.45,
+  "hookAsk": "Which famous name {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "catchphrase": {
+    "role": "code",
+    "pick": "Which catchphrase is {label} famous for?",
+    "statement": "The catchphrase \"{value}\" belongs to {label}.",
+    "match": "Match each famous name to its catchphrase.",
+    "typeIt": "Who is famous for saying {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Forrest Gump",
+   "qid": "Q134773",
+   "fame": 0.675,
+   "catchphrase": "Life is like a box of chocolates.",
+   "kind": "character",
+   "description": "1994 film directed by Robert Zemeckis",
+   "hook": "follows a kind-hearted Alabama man who ends up present at major moments of modern American history",
+   "known": 0.8
+  },
+  {
+   "label": "Rodney Dangerfield",
+   "qid": "Q436386",
+   "fame": 0.638,
+   "catchphrase": "I get no respect!",
+   "kind": "character",
+   "description": "American stand-up comedian (1921–2004)",
+   "hook": "is a comedian famous for self-deprecating one-liners and endless complaints about his hard luck",
+   "known": 0.4
+  },
+  {
+   "label": "Casey Kasem",
+   "qid": "Q1047230",
+   "fame": 0.598,
+   "catchphrase": "Keep your feet on the ground and keep reaching for the stars.",
+   "kind": "character",
+   "description": "American voice actor (1932–2014)",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Pee-wee Herman",
+   "qid": "Q3374172",
+   "fame": 0.597,
+   "catchphrase": "I know you are, but what am I?",
+   "kind": "character",
+   "description": "comic fictional character played by Paul Reubens",
+   "hook": "is a childlike comic persona who grew from a stage act into a quirky kids' TV playhouse show",
+   "known": 0.4
+  },
+  {
+   "label": "Gollum",
+   "qid": "Q15007",
+   "fame": 0.577,
+   "catchphrase": "My precious.",
+   "kind": "character",
+   "description": "fictional character from The Hobbit",
+   "hook": "is a wretched creature, once a river-dwelling hobbit, twisted by obsession with a magic ring",
+   "known": 0.8
+  },
+  {
+   "label": "Daffy Duck",
+   "qid": "Q319918",
+   "fame": 0.557,
+   "catchphrase": "You're desthpicable!",
+   "kind": "character",
+   "description": "Fictional Warner Bros. character",
+   "hook": "is a screwball black waterfowl from Looney Tunes who is forever a foil to Bugs Bunny",
+   "known": 0.8
+  },
+  {
+   "label": "Riddler",
+   "qid": "Q836789",
+   "fame": 0.549,
+   "catchphrase": "Riddle me this!",
+   "kind": "character",
+   "description": "fictional character, a comic book supervillain who appears in comic books published by DC Comics",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Elmer Fudd",
+   "qid": "Q844904",
+   "fame": 0.548,
+   "catchphrase": "Be very, very quiet, I'm hunting wabbits.",
+   "kind": "character",
+   "description": "Warner Bros. cartoon character",
+   "hook": "is a hapless Looney Tunes human who swaps his Rs and Ls for Ws while forever chasing Bugs Bunny",
+   "known": 0.6
+  },
+  {
+   "label": "Jimmy Durante",
+   "qid": "Q471023",
+   "fame": 0.548,
+   "catchphrase": "Good night, Mrs. Calabash, wherever you are.",
+   "kind": "character",
+   "description": "American actor, comedian and singer (1893–1980)",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Steve Urkel",
+   "qid": "Q2777701",
+   "fame": 0.544,
+   "catchphrase": "Did I do that?",
+   "kind": "character",
+   "description": "fictional character on the sitcom Family Matters",
+   "hook": "is a bothersome neighbor who was meant for one episode but became his sitcom's most popular character",
+   "known": 0.4
+  },
+  {
+   "label": "Shaggy Rogers",
+   "qid": "Q848673",
+   "fame": 0.514,
+   "catchphrase": "Zoinks!",
+   "kind": "character",
+   "description": "fictional character in Scooby-Doo",
+   "hook": "is an amateur detective whose best friend is a dog, in a long-running mystery cartoon franchise",
+   "known": 0.6
+  },
+  {
+   "label": "Woody (Toy Story)",
+   "qid": "Q2290907",
+   "fame": 0.49,
+   "catchphrase": "There's a snake in my boot!",
+   "kind": "character",
+   "description": "fictional toy cowboy character from Disney and Pixar's Toy Story franchise",
+   "hook": "is a pull-string sheriff doll, mostly voiced by Tom Hanks, who is Buzz Lightyear's pal",
+   "known": 0.95
+  },
+  {
+   "label": "Edna Mode",
+   "qid": "Q2490541",
+   "fame": 0.479,
+   "catchphrase": "No capes!",
+   "kind": "character",
+   "description": "fictional character from The Incredibles",
+   "hook": "is an eccentric fashion designer who makes costumes for superheroes",
+   "known": 0.6
+  },
+  {
+   "label": "Glenn Quagmire",
+   "qid": "Q1067868",
+   "fame": 0.474,
+   "catchphrase": "Giggity!",
+   "kind": "character",
+   "description": "fictional character from the animated series Family Guy",
+   "hook": "is the retro, Rat Pack-style party animal living next door to the Griffins",
+   "known": 0.4
+  },
+  {
+   "label": "Don Cornelius",
+   "qid": "Q1239072",
+   "fame": 0.473,
+   "catchphrase": "We wish you love, peace and soul!",
+   "kind": "character",
+   "description": "American TV host and producer (1936–2012)",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Rod Roddy",
+   "qid": "Q2878611",
+   "fame": 0.462,
+   "catchphrase": "Come on down!",
+   "kind": "character",
+   "description": "American radio and television announcer (1937-2003)",
+   "hook": "is an offstage game-show announcer who succeeded Johnny Olson on a famous prices-guessing show",
+   "known": 0.8
+  },
+  {
+   "label": "Scorpion (Mortal Kombat)",
+   "qid": "Q584674",
+   "fame": 0.459,
+   "catchphrase": "Get over here!",
+   "kind": "character",
+   "description": "Mortal Kombat character",
+   "hook": "is a yellow-clad ninja who harpoons foes with a rope dart",
+   "known": 0.4
+  }
+ ]
+}

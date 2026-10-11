@@ -1,0 +1,378 @@
+{
+ "id": "table.wordplay.company-initials",
+ "kind": "table",
+ "title": "Famous brands and companies named from initials or abbreviations",
+ "genre": "general",
+ "category": "wordplay",
+ "topic": "acronyms",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?stands WHERE { VALUES (?item ?stands) { (wd:Q37156 \"International Business Machines\") (wd:Q26678 \"Bayerische Motoren Werke\") (wd:Q54078 \"Ingvar Kamprad Elmtaryd Agunnaryd\") (wd:Q524757 \"Kentucky Fried Chicken\") (wd:Q188326 \"Hennes & Mauritz\") (wd:Q190464 \"Hongkong and Shanghai Banking Corporation\") (wd:Q35476 \"American Telephone and Telegraph\") (wd:Q152057 \"British Petroleum\") (wd:Q219203 \"Nippon Electric Company\") (wd:Q48340 \"Cable News Network\") (wd:Q217776 \"Entertainment and Sports Programming Network\") (wd:Q23633 \"Home Box Office\") (wd:Q43359 \"Music Television\") (wd:Q9401 \"Badische Anilin- und Sodafabrik\") (wd:Q1498689 \"Government Employees Insurance Company\") (wd:Q1185675 \"International House of Pancakes\") (wd:Q294721 \"American Multi-Cinema\") (wd:Q13974 \"National Broadcasting Company\") (wd:Q43380 \"Columbia Broadcasting System\") (wd:Q27585 \"America Online\") (wd:Q181912 \"Koninklijke Luchtvaart Maatschappij\") (wd:Q233929 \"National Association for Stock Car Auto Racing\") (wd:Q253414 \"Fédération Internationale de Football Association\") (wd:Q128896 \"Advanced Micro Devices\") (wd:Q938773 \"Donna Karan New York\") (wd:Q159433 \"Minnesota Mining and Manufacturing\") (wd:Q169552 \"Hans Riegel Bonn\") (wd:Q125054 \"Albrecht Discount\") (wd:Q27597 \"Fabbrica Italiana Automobili Torino\") (wd:Q219501 \"Svenska Aeroplan Aktiebolag\") (wd:Q122741 \"Service Games\") (wd:Q211951 \"As Seen On Screen\") (wd:Q1545718 \"National Biscuit Company\") (wd:Q248 \"Integrated Electronics\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T17:26:16.111Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T17:26:16.111Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "stands_for",
+   "label": "Stands for",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "company",
+  "many": "companies",
+  "exclude": [],
+  "columns": {
+   "stands_for": {
+    "role": "code",
+    "pick": "What do the letters or name of {label} originally stand for?",
+    "statement": "{label} originally stood for {value}.",
+    "match": "Match each company to what its name originally stood for.",
+    "reverse": "Which company's name originally stood for {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "BMW",
+   "qid": "Q26678",
+   "fame": 0.651,
+   "stands_for": "Bayerische Motoren Werke",
+   "description": "German automobile manufacturer, and conglomerate",
+   "hook": "builds cars and motorcycles under a blue-and-white roundel badge",
+   "known": 0.85,
+   "kind": "automotive"
+  },
+  {
+   "label": "CNN",
+   "qid": "Q48340",
+   "fame": 0.632,
+   "stands_for": "Cable News Network",
+   "description": "American news channel",
+   "hook": "pioneered around-the-clock television coverage of current events",
+   "known": 0.95,
+   "kind": "broadcast"
+  },
+  {
+   "label": "FIFA",
+   "qid": "Q253414",
+   "fame": 0.627,
+   "stands_for": "Fédération Internationale de Football Association",
+   "description": "international governing body of association football",
+   "hook": "organizes the men's and women's soccer World Cup",
+   "known": 0.8,
+   "kind": "sports-org"
+  },
+  {
+   "label": "MTV",
+   "qid": "Q43359",
+   "fame": 0.621,
+   "stands_for": "Music Television",
+   "description": "American cable television channel",
+   "hook": "began broadcasting with a song about video killing the radio star",
+   "known": 0.8,
+   "kind": "broadcast"
+  },
+  {
+   "label": "NBC",
+   "qid": "Q13974",
+   "fame": 0.615,
+   "stands_for": "National Broadcasting Company",
+   "description": "American television and radio network",
+   "hook": "is symbolized by a colorful peacock and airs Saturday Night Live",
+   "known": 0.8,
+   "kind": "broadcast"
+  },
+  {
+   "label": "Aldi",
+   "qid": "Q125054",
+   "fame": 0.614,
+   "stands_for": "Albrecht Discount",
+   "description": "brand name of two global discount supermarket chains",
+   "hook": "is a grocery chain known for no-frills stores and rock-bottom prices",
+   "known": 0.6,
+   "kind": "consumer-goods"
+  },
+  {
+   "label": "IBM",
+   "qid": "Q37156",
+   "fame": 0.612,
+   "stands_for": "International Business Machines",
+   "description": "American multinational technology company",
+   "hook": "is nicknamed Big Blue and built the Deep Blue chess computer",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "CBS",
+   "qid": "Q43380",
+   "fame": 0.611,
+   "stands_for": "Columbia Broadcasting System",
+   "description": "American broadcast television and radio network",
+   "hook": "is identified by an eye logo and airs NFL games and late-night talk shows",
+   "known": 0.8,
+   "kind": "broadcast"
+  },
+  {
+   "label": "HBO",
+   "qid": "Q23633",
+   "fame": 0.608,
+   "stands_for": "Home Box Office",
+   "description": "American pay television network",
+   "hook": "produced series like The Sopranos and Game of Thrones",
+   "known": 0.85,
+   "kind": "broadcast"
+  },
+  {
+   "label": "Sega",
+   "qid": "Q122741",
+   "fame": 0.607,
+   "stands_for": "Service Games",
+   "description": "Japanese video game developer and publisher and subsidiary of Sega Sammy Holdings",
+   "hook": "created Sonic the Hedgehog and the Dreamcast console",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "KFC",
+   "qid": "Q524757",
+   "fame": 0.603,
+   "stands_for": "Kentucky Fried Chicken",
+   "description": "American fast food restaurant chain specializing in fried chicken",
+   "hook": "is built around a white-suited colonel and a secret blend of eleven herbs and spices",
+   "known": 0.95,
+   "kind": "consumer-goods"
+  },
+  {
+   "label": "IKEA",
+   "qid": "Q54078",
+   "fame": 0.601,
+   "stands_for": "Ingvar Kamprad Elmtaryd Agunnaryd",
+   "description": "Swedish multinational furniture store chain",
+   "hook": "sells flat-pack furniture and serves meatballs in its stores",
+   "known": 0.95,
+   "kind": "consumer-goods"
+  },
+  {
+   "label": "HSBC",
+   "qid": "Q190464",
+   "fame": 0.598,
+   "stands_for": "Hongkong and Shanghai Banking Corporation",
+   "description": "British multinational bank",
+   "hook": "is a London-headquartered lender with deep roots in Asia",
+   "known": 0.4,
+   "kind": "services"
+  },
+  {
+   "label": "ESPN",
+   "qid": "Q217776",
+   "fame": 0.587,
+   "stands_for": "Entertainment and Sports Programming Network",
+   "description": "American broadcast sports network",
+   "hook": "is home to SportsCenter, the X Games and Monday Night Football",
+   "known": 0.95,
+   "kind": "broadcast"
+  },
+  {
+   "label": "BP",
+   "qid": "Q152057",
+   "fame": 0.584,
+   "stands_for": "British Petroleum",
+   "description": "British multinational oil and gas company",
+   "hook": "sells fuel under a green and yellow sunburst logo",
+   "known": 0.6,
+   "kind": "services"
+  },
+  {
+   "label": "AMD",
+   "qid": "Q128896",
+   "fame": 0.583,
+   "stands_for": "Advanced Micro Devices",
+   "description": "American multinational semiconductor company",
+   "hook": "makes Ryzen processors and Radeon graphics cards",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "AT&T",
+   "qid": "Q35476",
+   "fame": 0.577,
+   "stands_for": "American Telephone and Telegraph",
+   "description": "American multinational conglomerate",
+   "hook": "once held a phone monopoly that was split into regional Baby Bells",
+   "known": 0.8,
+   "kind": "services"
+  },
+  {
+   "label": "Intel",
+   "qid": "Q248",
+   "fame": 0.574,
+   "stands_for": "Integrated Electronics",
+   "description": "American multinational technology company",
+   "hook": "makes processors for PCs and is known for a five-note jingle and Inside stickers",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "NASCAR",
+   "qid": "Q233929",
+   "fame": 0.569,
+   "stands_for": "National Association for Stock Car Auto Racing",
+   "description": "American automobile racing company",
+   "hook": "runs the Daytona 500 and races on oval tracks",
+   "known": 0.6,
+   "kind": "sports-org"
+  },
+  {
+   "label": "AOL",
+   "qid": "Q27585",
+   "fame": 0.564,
+   "stands_for": "America Online",
+   "description": "American web portal and online service provider",
+   "hook": "greeted dial-up subscribers with a famous You've Got Mail voice",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "KLM",
+   "qid": "Q181912",
+   "fame": 0.56,
+   "stands_for": "Koninklijke Luchtvaart Maatschappij",
+   "description": "flag carrier airline of the Netherlands",
+   "hook": "is the oldest airline still flying under its original name",
+   "known": 0.4,
+   "kind": "services"
+  },
+  {
+   "label": "H&M",
+   "qid": "Q188326",
+   "fame": 0.559,
+   "stands_for": "Hennes & Mauritz",
+   "description": "Swedish multinational clothing-retail company",
+   "hook": "sells fast-fashion clothes and runs designer collaborations",
+   "known": 0.8,
+   "kind": "consumer-goods"
+  },
+  {
+   "label": "Saab Group",
+   "qid": "Q219501",
+   "fame": 0.537,
+   "stands_for": "Svenska Aeroplan Aktiebolag",
+   "description": "Swedish aerospace and defense company",
+   "hook": "builds Gripen fighter jets and once built quirky cars",
+   "known": 0.4,
+   "kind": "automotive"
+  },
+  {
+   "label": "Fiat",
+   "qid": "Q27597",
+   "fame": 0.533,
+   "stands_for": "Fabbrica Italiana Automobili Torino",
+   "description": "Italian automotive company",
+   "hook": "makes the tiny 500 city car and is part of Stellantis",
+   "known": 0.6,
+   "kind": "automotive"
+  },
+  {
+   "label": "3M",
+   "qid": "Q159433",
+   "fame": 0.521,
+   "stands_for": "Minnesota Mining and Manufacturing",
+   "description": "American multinational corporation",
+   "hook": "invented Post-it Notes and Scotch tape",
+   "known": 0.6,
+   "kind": "services"
+  },
+  {
+   "label": "Haribo",
+   "qid": "Q169552",
+   "fame": 0.504,
+   "stands_for": "Hans Riegel Bonn",
+   "description": "confectionery company",
+   "hook": "invented the gummy bear",
+   "known": 0.8,
+   "kind": "consumer-goods"
+  },
+  {
+   "label": "BASF",
+   "qid": "Q9401",
+   "fame": 0.497,
+   "stands_for": "Badische Anilin- und Sodafabrik",
+   "description": "German chemical company with worldwide reach",
+   "hook": "is the world's largest chemical producer",
+   "known": 0.2,
+   "kind": "services"
+  },
+  {
+   "label": "AMC Theatres",
+   "qid": "Q294721",
+   "fame": 0.491,
+   "stands_for": "American Multi-Cinema",
+   "description": "US-based movie theater chain in the US and Europe",
+   "hook": "is the largest movie-house chain in the world",
+   "known": 0.6,
+   "kind": "broadcast"
+  },
+  {
+   "label": "Nabisco",
+   "qid": "Q1545718",
+   "fame": 0.49,
+   "stands_for": "National Biscuit Company",
+   "description": "American snack company",
+   "hook": "makes Oreos and Ritz crackers",
+   "known": 0.8,
+   "kind": "consumer-goods"
+  },
+  {
+   "label": "NEC",
+   "qid": "Q219203",
+   "fame": 0.472,
+   "stands_for": "Nippon Electric Company",
+   "description": "Japanese technology corporation",
+   "hook": "made the PC Engine game console and PC-98 computers",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "GEICO",
+   "qid": "Q1498689",
+   "fame": 0.462,
+   "stands_for": "Government Employees Insurance Company",
+   "description": "auto insurance company",
+   "hook": "is fronted by a talking gecko and a slogan about saving money in 15 minutes",
+   "known": 0.8,
+   "kind": "services"
+  },
+  {
+   "label": "IHOP",
+   "qid": "Q1185675",
+   "fame": 0.461,
+   "stands_for": "International House of Pancakes",
+   "description": "American multinational pancake house restaurant chain",
+   "hook": "is a diner chain known for all-day breakfast",
+   "known": 0.95,
+   "kind": "consumer-goods"
+  }
+ ]
+}

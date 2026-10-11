@@ -1,0 +1,240 @@
+{
+ "id": "table.video-games.best-selling-games",
+ "kind": "table",
+ "title": "Best-selling video games",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "best-sellers",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?sold ?released WHERE { { SELECT ?item (MAX(?n) AS ?sold) (MIN(?d) AS ?released) WHERE { ?item wdt:P31 wd:Q7889 ; wdt:P2664 ?n . FILTER(?n >= 20000000) OPTIONAL { ?item wdt:P577 ?d } } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T00:55:19.125Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T00:55:19.125Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "copies_millions",
+   "label": "Copies sold",
+   "unit": "million",
+   "type": "number"
+  },
+  {
+   "key": "released",
+   "label": "Released",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "game",
+  "many": "games",
+  "itemSub": "{hook}",
+  "hookAsk": "Which game {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "released": {
+    "role": "date",
+    "sort": "from the earliest release to the most recent",
+    "shot": "In what year did {label} come out?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Grand Theft Auto V",
+   "qid": "Q17452",
+   "fame": 0.788,
+   "copies_millions": 225,
+   "released": 2013,
+   "description": "2013 action-adventure video game developed by Rockstar North",
+   "hook": "lets you rampage through a sprawling crime-city sandbox as three switchable criminals",
+   "known": 0.95,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Minecraft",
+   "qid": "Q49740",
+   "fame": 0.716,
+   "copies_millions": 350,
+   "released": 2011,
+   "description": "2011 video game",
+   "hook": "lets you build anything out of blocks in a procedurally generated world made of cubes",
+   "known": 0.95,
+   "kind": "sandbox"
+  },
+  {
+   "label": "Red Dead Redemption 2",
+   "qid": "Q27438121",
+   "fame": 0.7,
+   "copies_millions": 82,
+   "released": 2018,
+   "description": "2018 western-themed action-adventure video game",
+   "hook": "puts you in the boots of an outlaw living out the last days of the American frontier",
+   "known": 0.8,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Grand Theft Auto: San Andreas",
+   "qid": "Q83265",
+   "fame": 0.696,
+   "copies_millions": 21.5,
+   "released": 2004,
+   "description": "2004 video game",
+   "hook": "drops a gang member into a sprawling retro-styled crime sandbox spanning an entire state",
+   "known": 0.6,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Cyberpunk 2077",
+   "qid": "Q3182559",
+   "fame": 0.659,
+   "copies_millions": 40,
+   "released": 2020,
+   "description": "2020 role-playing video game developed by CD Projekt RED",
+   "hook": "drops you into a sprawling neon megacity full of body-modding mercenaries and corporate crime",
+   "known": 0.6,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "The Witcher 3: Wild Hunt",
+   "qid": "Q4267401",
+   "fame": 0.634,
+   "copies_millions": 65,
+   "released": 2015,
+   "description": "2015 action role-playing video game",
+   "hook": "casts you as a monster hunter searching for an adopted daughter across a war-torn fantasy world",
+   "known": 0.8,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "The Legend of Zelda: Breath of the Wild",
+   "qid": "Q17185964",
+   "fame": 0.591,
+   "copies_millions": 34.1,
+   "released": 2017,
+   "description": "2017 action-adventure video game developed by Nintendo",
+   "hook": "drops you into a vast open kingdom to explore however you like after waking from a long sleep",
+   "known": 0.8,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "The Legend of Zelda: Tears of the Kingdom",
+   "qid": "Q64577191",
+   "fame": 0.58,
+   "copies_millions": 22.7,
+   "released": 2023,
+   "description": "2023 video game developed by Nintendo",
+   "hook": "lets you glue gadgets together and fly through the sky above a familiar open realm",
+   "known": 0.6,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Stardew Valley",
+   "qid": "Q23013817",
+   "fame": 0.562,
+   "copies_millions": 50,
+   "released": 2016,
+   "description": "2016 indie farming simulation role-playing video game",
+   "hook": "lets you abandon the city to restore a rundown farm and befriend the townsfolk",
+   "known": 0.8,
+   "kind": "simulation"
+  },
+  {
+   "label": "Super Smash Bros. Ultimate",
+   "qid": "Q54093632",
+   "fame": 0.539,
+   "copies_millions": 38.1,
+   "released": 2018,
+   "description": "2018 fighting video game",
+   "hook": "pits a huge roster of characters from many different franchises against each other in one arena",
+   "known": 0.8,
+   "kind": "fighting"
+  },
+  {
+   "label": "Terraria",
+   "qid": "Q332697",
+   "fame": 0.535,
+   "copies_millions": 70,
+   "released": 2011,
+   "description": "2011 action-adventure sandbox video game",
+   "hook": "has you dig, build, and battle across a 2D world that keeps expanding the deeper you go",
+   "known": 0.6,
+   "kind": "sandbox"
+  },
+  {
+   "label": "Super Mario Odyssey",
+   "qid": "Q28234671",
+   "fame": 0.53,
+   "copies_millions": 30.8,
+   "released": 2017,
+   "description": "2017 platform video game",
+   "hook": "has a plumber throw his hat to capture enemies and their bodies across whimsical kingdoms",
+   "known": 0.8,
+   "kind": "platform"
+  },
+  {
+   "label": "Garry's Mod",
+   "qid": "Q837923",
+   "fame": 0.514,
+   "copies_millions": 25,
+   "released": 2006,
+   "description": "2006 sandbox physics game",
+   "hook": "gives you an unrestricted physics sandbox for building silly contraptions and posing ragdolls",
+   "known": 0.4,
+   "kind": "sandbox"
+  },
+  {
+   "label": "Animal Crossing: New Horizons",
+   "qid": "Q64566657",
+   "fame": 0.496,
+   "copies_millions": 50.3,
+   "released": 2020,
+   "description": "2020 life simulation video game",
+   "hook": "lets you build a cozy island life at your own pace, one real-time day at a time",
+   "known": 0.8,
+   "kind": "simulation"
+  },
+  {
+   "label": "Dying Light",
+   "qid": "Q13415292",
+   "fame": 0.494,
+   "copies_millions": 20,
+   "released": 2015,
+   "description": "2015 survival horror video game",
+   "hook": "has you parkour across rooftops by day and flee flesh-eating hordes once the sun sets",
+   "known": 0.4,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Wii Sports",
+   "qid": "Q71936",
+   "fame": 0.466,
+   "copies_millions": 82.9,
+   "released": 2006,
+   "description": "2006 sports video game",
+   "hook": "had players swing a motion controller like a racket or club to compete in the living room",
+   "known": 0.8,
+   "kind": "sports"
+  }
+ ]
+}

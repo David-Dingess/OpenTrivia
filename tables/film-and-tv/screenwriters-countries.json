@@ -1,0 +1,1251 @@
+{
+ "id": "table.film-and-tv.screenwriters-countries",
+ "kind": "table",
+ "title": "Famous screenwriters and their home country",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "screenwriters",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?cLabel WHERE { { SELECT ?item (COUNT(DISTINCT ?f) AS ?nF) WHERE { ?f wdt:P31 wd:Q11424 ; wdt:P58 ?item ; wikibase:sitelinks ?fs . FILTER(?fs >= 40) FILTER(?item NOT IN (wd:Q51552, wd:Q25089, wd:Q42229, wd:Q220751, wd:Q298025)) } GROUP BY ?item HAVING(COUNT(DISTINCT ?f) >= 3) } hint:Prior hint:runFirst true . ?item wdt:P27 ?c . FILTER NOT EXISTS { ?item wdt:P27 ?c2 . FILTER(?c2 != ?c) } ?item wikibase:sitelinks ?sitelinks . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-01T03:50:46.760Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-01T03:50:46.760Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "screenwriter",
+  "many": "screenwriters",
+  "wildcard": "person",
+  "hookAsk": "Which screenwriter {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is the screenwriter {label} from?",
+    "statement": "{label} is a screenwriter from {value}.",
+    "match": "Match each screenwriter to their country.",
+    "odd": "Three of these screenwriters are from {value}. Which one isn't?",
+    "all": "Tap all {n} screenwriters from {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Guy Ritchie",
+   "qid": "Q192990",
+   "fame": 0.844,
+   "country": "United Kingdom",
+   "description": "English filmmaker (born 1968)",
+   "hook": "made fast-talking London gangster comedies and a modern action take on a famous Baker Street detective",
+   "known": 0.6,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Sylvester Stallone",
+   "qid": "Q40026",
+   "fame": 0.819,
+   "country": "United States",
+   "description": "American actor and filmmaker (born 1946)",
+   "hook": "wrote and starred in a film about an underdog Philadelphia boxer who goes the distance",
+   "known": 0.95,
+   "kind": "actor"
+  },
+  {
+   "label": "Ben Affleck",
+   "qid": "Q483118",
+   "fame": 0.766,
+   "country": "United States",
+   "description": "American film actor, director and screenwriter (born 1972)",
+   "hook": "won a writing Oscar with a childhood friend for a Boston drama, and later played the Caped Crusader",
+   "known": 0.8,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Steven Spielberg",
+   "qid": "Q8877",
+   "fame": 0.755,
+   "country": "United States",
+   "description": "American filmmaker (born 1946)",
+   "hook": "directed a great white shark thriller, a dinosaur theme park adventure and a boy-meets-alien classic",
+   "known": 0.95,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "George Lucas",
+   "qid": "Q38222",
+   "fame": 0.752,
+   "country": "United States",
+   "description": "American filmmaker and philanthropist (born 1944)",
+   "hook": "created a space saga about a farm boy, a Jedi order and a Death Star",
+   "known": 0.95,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "J. K. Rowling",
+   "qid": "Q34660",
+   "fame": 0.742,
+   "country": "United Kingdom",
+   "description": "English author (born 1965)",
+   "hook": "created the boy wizard who attends Hogwarts, one of the best-selling book series ever",
+   "known": 0.95,
+   "kind": "novelist"
+  },
+  {
+   "label": "Seth MacFarlane",
+   "qid": "Q188492",
+   "fame": 0.742,
+   "country": "United States",
+   "description": "American writer, actor, and producer (born 1973)",
+   "hook": "created a cartoon about a family with a talking dog, and directed a film about a foul-mouthed teddy bear",
+   "known": 0.8,
+   "kind": "actor"
+  },
+  {
+   "label": "Quentin Tarantino",
+   "qid": "Q3772",
+   "fame": 0.739,
+   "country": "United States",
+   "description": "American filmmaker and actor (born 1963)",
+   "hook": "wrote and directed a jumbled-timeline crime film with hitmen chatting about burgers",
+   "known": 0.95,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Stephen King",
+   "qid": "Q39829",
+   "fame": 0.738,
+   "country": "United States",
+   "description": "American novelist and writer (born 1947)",
+   "hook": "wrote horror novels about a haunted hotel and a shape-shifting clown who haunts the town of Derry",
+   "known": 0.95,
+   "kind": "novelist"
+  },
+  {
+   "label": "David Lynch",
+   "qid": "Q2071",
+   "fame": 0.727,
+   "country": "United States",
+   "description": "American filmmaker (1946–2025)",
+   "hook": "created a surreal TV mystery that asked who killed Laura Palmer",
+   "known": 0.8,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "James Gunn",
+   "qid": "Q717015",
+   "fame": 0.716,
+   "country": "United States",
+   "description": "American screenwriter and filmmaker (born 1966)",
+   "hook": "directed a space-heroes film featuring a talking raccoon and a walking tree",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Mel Brooks",
+   "qid": "Q104266",
+   "fame": 0.716,
+   "country": "United States",
+   "description": "American comedian, filmmaker, and actor (born 1926)",
+   "hook": "made spoof comedies such as a Western with a sheriff in Rock Ridge and a black-and-white monster parody",
+   "known": 0.8,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Ben Stiller",
+   "qid": "Q47100",
+   "fame": 0.71,
+   "country": "United States",
+   "description": "American actor and comedian (born 1965)",
+   "hook": "directed and starred in a comedy about a dim-witted male model who is brainwashed into an assassin plot",
+   "known": 0.6,
+   "kind": "actor"
+  },
+  {
+   "label": "Stan Lee",
+   "qid": "Q181900",
+   "fame": 0.709,
+   "country": "United States",
+   "description": "American comic book writer, editor, publisher, and producer (1922–2018)",
+   "hook": "co-created Spider-Man and many other comic book heroes, and popped up in cameos in their films",
+   "known": 0.8,
+   "kind": "comic writer"
+  },
+  {
+   "label": "Francis Ford Coppola",
+   "qid": "Q56094",
+   "fame": 0.708,
+   "country": "United States",
+   "description": "American filmmaker (born 1939)",
+   "hook": "directed a crime-family epic about the Corleones and a river journey into a war-torn jungle",
+   "known": 0.95,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Werner Herzog",
+   "qid": "Q44131",
+   "fame": 0.701,
+   "country": "Germany",
+   "description": "German film director, producer, screenwriter, actor and opera director (born 1942)",
+   "hook": "made intense films about obsessed explorers in the Amazon and a documentary about a man living among grizzlies",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Dan Aykroyd",
+   "qid": "Q105221",
+   "fame": 0.7,
+   "country": "Canada",
+   "description": "Canadian-American actor (born 1952)",
+   "hook": "co-starred in a musical comedy about two brothers on a mission from God to save an orphanage",
+   "known": 0.4,
+   "kind": "actor"
+  },
+  {
+   "label": "Paul Thomas Anderson",
+   "qid": "Q25132",
+   "fame": 0.7,
+   "country": "United States",
+   "description": "American filmmaker (born 1970)",
+   "hook": "directed an epic about a ruthless oilman and an ensemble film that ends with falling frogs",
+   "known": 0.6,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Aaron Sorkin",
+   "qid": "Q299194",
+   "fame": 0.699,
+   "country": "United States",
+   "description": "American filmmaker (born 1961)",
+   "hook": "wrote rapid-fire walk-and-talk dialogue for a White House TV drama and a film about founding a social network",
+   "known": 0.4,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Paul W. S. Anderson",
+   "qid": "Q380608",
+   "fame": 0.699,
+   "country": "United Kingdom",
+   "description": "British film director, screenwriter and producer",
+   "hook": "directed a video-game-based film series about fighting zombies and corporate mutants, starring Milla Jovovich",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Orson Welles",
+   "qid": "Q24829",
+   "fame": 0.691,
+   "country": "United States",
+   "description": "American actor and filmmaker (1915–1985)",
+   "hook": "directed a newspaper tycoon drama about the mystery of Rosebud, and a radio broadcast about invading Martians",
+   "known": 0.95,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "J. J. Abrams",
+   "qid": "Q188137",
+   "fame": 0.687,
+   "country": "United States",
+   "description": "American filmmaker (born 1966)",
+   "hook": "rebooted Star Trek for the big screen and directed a Star Wars sequel about the Force awakening",
+   "known": 0.6,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "John Cleese",
+   "qid": "Q25014",
+   "fame": 0.682,
+   "country": "United Kingdom",
+   "description": "English comedian and actor (born 1939)",
+   "hook": "co-founded a sketch comedy troupe with a dead parrot sketch, and played a hotel owner who loses his temper",
+   "known": 0.6,
+   "kind": "actor"
+  },
+  {
+   "label": "John Carpenter",
+   "qid": "Q95008",
+   "fame": 0.676,
+   "country": "United States",
+   "description": "American filmmaker, composer and actor (born 1948)",
+   "hook": "directed a masked killer stalking babysitters on Halloween night",
+   "known": 0.6,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Sam Raimi",
+   "qid": "Q275402",
+   "fame": 0.676,
+   "country": "United States",
+   "description": "American filmmaker (born 1959)",
+   "hook": "directed a cabin-in-the-woods horror series with a chainsaw-handed hero, and the first big Spider-Man trilogy",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Zack Snyder",
+   "qid": "Q139890",
+   "fame": 0.676,
+   "country": "United States",
+   "description": "American filmmaker (born 1966)",
+   "hook": "directed a stylized battle film about 300 Spartans and a Caped Crusader versus Man of Steel showdown",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Greta Gerwig",
+   "qid": "Q271967",
+   "fame": 0.675,
+   "country": "United States",
+   "description": "American actress and filmmaker (born 1983)",
+   "hook": "directed a candy-colored film about the world's most famous fashion doll",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Wes Anderson",
+   "qid": "Q223687",
+   "fame": 0.673,
+   "country": "United States",
+   "description": "American filmmaker (born 1969)",
+   "hook": "makes symmetrical, pastel-colored comedies such as one set in a pink hotel in a fictional Alpine republic",
+   "known": 0.6,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Luc Besson",
+   "qid": "Q484779",
+   "fame": 0.67,
+   "country": "France",
+   "description": "French filmmaker (born 1959)",
+   "hook": "directed a thriller about a hitman who befriends a young girl and a colorful sci-fi film with flying taxis",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Guillermo del Toro",
+   "qid": "Q219124",
+   "fame": 0.669,
+   "country": "Mexico",
+   "description": "Mexican filmmaker and author (born 1964)",
+   "hook": "directed a dark fairy tale about a girl and a faun in a labyrinth, and an Oscar-winning fish-man romance",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Marlon Wayans",
+   "qid": "Q310785",
+   "fame": 0.652,
+   "country": "United States",
+   "description": "American actor, screenwriter, and film producer",
+   "hook": "co-starred in horror spoof comedies and a film where two FBI agents go undercover as wealthy socialites",
+   "known": 0.4,
+   "kind": "actor"
+  },
+  {
+   "label": "Judd Apatow",
+   "qid": "Q325396",
+   "fame": 0.647,
+   "country": "United States",
+   "description": "American comedian and filmmaker (born 1967)",
+   "hook": "directed comedies about a middle-aged man who has never had a relationship, and about an unplanned pregnancy",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Peter Jackson",
+   "qid": "Q4465",
+   "fame": 0.644,
+   "country": "New Zealand",
+   "description": "New Zealand film director, screenwriter, producer and actor (born 1961)",
+   "hook": "directed the film trilogy about a hobbit carrying a ring to Mordor, plus a giant ape remake",
+   "known": 0.95,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Simon Pegg",
+   "qid": "Q238464",
+   "fame": 0.644,
+   "country": "United Kingdom",
+   "description": "English actor (born 1970)",
+   "hook": "co-wrote and starred in a zombie comedy set in a London pub, and played Scotty in Star Trek",
+   "known": 0.6,
+   "kind": "actor"
+  },
+  {
+   "label": "David Ayer",
+   "qid": "Q1091339",
+   "fame": 0.643,
+   "country": "United States",
+   "description": "American filmmaker",
+   "hook": "directed a gritty cop drama about patrolling Los Angeles and a film about a team of imprisoned supervillains",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "William Faulkner",
+   "qid": "Q38392",
+   "fame": 0.638,
+   "country": "United States",
+   "description": "American writer (1897-1962)",
+   "hook": "wrote Southern novels set in fictional Yoknapatawpha County and won the Nobel Prize in Literature",
+   "known": 0.4,
+   "kind": "novelist"
+  },
+  {
+   "label": "Larry McMurtry",
+   "qid": "Q611672",
+   "fame": 0.635,
+   "country": "United States",
+   "description": "American novelist, essayist, bookseller and screenwriter (1936-2021)",
+   "hook": "wrote a Pulitzer-winning novel about retired Texas Rangers driving cattle to Montana",
+   "known": 0.2,
+   "kind": "novelist"
+  },
+  {
+   "label": "Damon Lindelof",
+   "qid": "Q310556",
+   "fame": 0.632,
+   "country": "United States",
+   "description": "American screenwriter and producer (born 1973)",
+   "hook": "co-created a TV drama about plane-crash survivors on a mysterious island, and a graphic-novel superhero series",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Harold Ramis",
+   "qid": "Q286890",
+   "fame": 0.63,
+   "country": "United States",
+   "description": "American actor, comedian, and filmmaker (1944–2014)",
+   "hook": "directed a comedy about a weatherman stuck reliving the same day in Punxsutawney",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Nora Ephron",
+   "qid": "Q214677",
+   "fame": 0.628,
+   "country": "United States",
+   "description": "American film director and writer (1941–2012)",
+   "hook": "wrote romantic comedies about a widower's radio call-in and whether men and women can be just friends",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Robert Zemeckis",
+   "qid": "Q187364",
+   "fame": 0.628,
+   "country": "United States",
+   "description": "American screenwriter, film producer and director (born 1952)",
+   "hook": "directed a time-traveling DeLorean trilogy and a film about a simple man who tells his life story on a bench",
+   "known": 0.8,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Paul Schrader",
+   "qid": "Q363989",
+   "fame": 0.623,
+   "country": "United States",
+   "description": "American screenwriter and film director (born 1946)",
+   "hook": "wrote a gritty film about a lonely, disturbed New York cab driver",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Ryan Coogler",
+   "qid": "Q7383978",
+   "fame": 0.623,
+   "country": "United States",
+   "description": "American filmmaker (born 1986)",
+   "hook": "directed the superhero film set in the fictional African nation of Wakanda and a Rocky spin-off",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "John Hughes",
+   "qid": "Q311263",
+   "fame": 0.619,
+   "country": "United States",
+   "description": "American filmmaker (1950–2009)",
+   "hook": "wrote teen films about Saturday detention and a boy skipping school, plus a kid left home alone at Christmas",
+   "known": 0.6,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Michael Mann",
+   "qid": "Q270097",
+   "fame": 0.619,
+   "country": "United States",
+   "description": "American film director, screenwriter, and producer (born 1943)",
+   "hook": "directed a heist film with two famous actors facing off in a diner, and created a pastel Miami cop TV series",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Robert Rodriguez",
+   "qid": "Q47284",
+   "fame": 0.614,
+   "country": "United States",
+   "description": "American filmmaker (born 1968)",
+   "hook": "made a low-budget action film about a guitar player with a case full of weapons, and a family spy-kids series",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Alfonso Cuarón",
+   "qid": "Q28028",
+   "fame": 0.612,
+   "country": "Mexico",
+   "description": "Mexican filmmaker (born 1961)",
+   "hook": "directed a film about astronauts adrift in orbit after debris wrecks their shuttle, and a Harry Potter sequel",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Jack Kirby",
+   "qid": "Q311607",
+   "fame": 0.61,
+   "country": "United States",
+   "description": "American comic book artist (1917–1994)",
+   "hook": "drew the first Captain America comics and co-created the Fantastic Four and the Hulk",
+   "known": 0.4,
+   "kind": "comic writer"
+  },
+  {
+   "label": "Peter Morgan",
+   "qid": "Q948122",
+   "fame": 0.609,
+   "country": "United Kingdom",
+   "description": "British film writer and playwright",
+   "hook": "wrote a Netflix drama about a long-reigning queen and her royal family",
+   "known": 0.2,
+   "kind": "playwright"
+  },
+  {
+   "label": "John Huston",
+   "qid": "Q51575",
+   "fame": 0.607,
+   "country": "United States",
+   "description": "American film director, screenwriter, and actor (1906–1987)",
+   "hook": "directed a detective film about the hunt for a jeweled bird statue, starring Humphrey Bogart",
+   "known": 0.6,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Shawn Wayans",
+   "qid": "Q370102",
+   "fame": 0.606,
+   "country": "United States",
+   "description": "American actor, DJ, producer, writer and comedian",
+   "hook": "co-starred in a hit parody series that spoofed slasher films with a masked killer",
+   "known": 0.4,
+   "kind": "actor"
+  },
+  {
+   "label": "Alex Garland",
+   "qid": "Q542634",
+   "fame": 0.604,
+   "country": "United Kingdom",
+   "description": "British writer, scriptwriter and film director (born 1970)",
+   "hook": "wrote a zombie-virus film set in an emptied London and directed a robot Turing-test thriller",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Ingmar Bergman",
+   "qid": "Q7546",
+   "fame": 0.6,
+   "country": "Sweden",
+   "description": "Swedish director and screenwriter (1918–2007)",
+   "hook": "directed a film in which a medieval knight plays chess with Death",
+   "known": 0.6,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Lars von Trier",
+   "qid": "Q133730",
+   "fame": 0.598,
+   "country": "Denmark",
+   "description": "Danish film director and screenwriter (born 1956)",
+   "hook": "co-founded the Dogme 95 film movement, which required handheld cameras and no special effects",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Edgar Wright",
+   "qid": "Q522057",
+   "fame": 0.596,
+   "country": "United Kingdom",
+   "description": "British film director, screenwriter and producer",
+   "hook": "directed a zombie comedy, a pub-crawl alien apocalypse and a getaway-driver musical heist",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Matthew Vaughn",
+   "qid": "Q2593",
+   "fame": 0.595,
+   "country": "United Kingdom",
+   "description": "British film producer, director and screenwriter",
+   "hook": "directed a spy film about a street kid trained as a gentleman agent, and a teenage vigilante comic adaptation",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Adam McKay",
+   "qid": "Q350405",
+   "fame": 0.594,
+   "country": "United States",
+   "description": "American filmmaker (born 1968)",
+   "hook": "directed a newsroom comedy with Ron Burgundy and a film about the housing market collapse",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Cameron Crowe",
+   "qid": "Q318287",
+   "fame": 0.59,
+   "country": "United States",
+   "description": "American filmmaker and journalist (born 1957)",
+   "hook": "directed a film in which a sports agent shouts \"Show me the money\"",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Frank Miller",
+   "qid": "Q207676",
+   "fame": 0.583,
+   "country": "United States",
+   "description": "American writer, artist, film director (born 1957)",
+   "hook": "created a gritty graphic novel about an aging Batman and the stylized black-and-white Sin City",
+   "known": 0.4,
+   "kind": "comic writer"
+  },
+  {
+   "label": "Baz Luhrmann",
+   "qid": "Q250545",
+   "fame": 0.577,
+   "country": "Australia",
+   "description": "Australian writer, director, and producer (born 1962)",
+   "hook": "directed a flashy romance in a Parisian nightclub with a red curtain and a glitzy Jazz Age tale of Gatsby",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Terrence Malick",
+   "qid": "Q215478",
+   "fame": 0.577,
+   "country": "United States",
+   "description": "American film director and screenwriter (born 1943)",
+   "hook": "made the dreamy, nature-soaked dramas Days of Heaven and The Tree of Life",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Charlie Kaufman",
+   "qid": "Q312751",
+   "fame": 0.575,
+   "country": "United States",
+   "description": "American filmmaker and novelist",
+   "hook": "wrote the mind-bending Being John Malkovich and Eternal Sunshine of the Spotless Mind",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Pedro Almodóvar",
+   "qid": "Q55171",
+   "fame": 0.574,
+   "country": "Spain",
+   "description": "Spanish filmmaker (born 1949)",
+   "hook": "makes colorful, melodramatic films such as All About My Mother and Volver",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Nancy Meyers",
+   "qid": "Q235555",
+   "fame": 0.571,
+   "country": "United States",
+   "description": "American film director, producer and screenwriter",
+   "hook": "writes and directs glossy romantic comedies like Something's Gotta Give and The Holiday",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Sergio Leone",
+   "qid": "Q164562",
+   "fame": 0.57,
+   "country": "Italy",
+   "description": "Italian filmmaker (1929–1989)",
+   "hook": "directed the spaghetti westerns The Good, the Bad and the Ugly and Once Upon a Time in the West",
+   "known": 0.6,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "David Mamet",
+   "qid": "Q269927",
+   "fame": 0.564,
+   "country": "United States",
+   "description": "American playwright, filmmaker and author (born 1947)",
+   "hook": "wrote the tough-talking plays Glengarry Glen Ross and Oleanna",
+   "known": 0.2,
+   "kind": "playwright"
+  },
+  {
+   "label": "Frank Darabont",
+   "qid": "Q295445",
+   "fame": 0.562,
+   "country": "United States",
+   "description": "American film director, screenwriter and producer",
+   "hook": "directed The Shawshank Redemption and The Green Mile from Stephen King stories",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Stephenie Meyer",
+   "qid": "Q160219",
+   "fame": 0.562,
+   "country": "United States",
+   "description": "American author",
+   "hook": "wrote the vampire romance saga that began with a novel called Twilight",
+   "known": 0.6,
+   "kind": "novelist"
+  },
+  {
+   "label": "David O. Russell",
+   "qid": "Q314342",
+   "fame": 0.56,
+   "country": "United States",
+   "description": "American film director, screenwriter and producer",
+   "hook": "directed Silver Linings Playbook and The Fighter",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Mario Puzo",
+   "qid": "Q182870",
+   "fame": 0.557,
+   "country": "United States",
+   "description": "American author, screenwriter, and journalist",
+   "hook": "wrote the crime novel The Godfather and co-wrote its film adaptations",
+   "known": 0.6,
+   "kind": "novelist"
+  },
+  {
+   "label": "Todd Phillips",
+   "qid": "Q362824",
+   "fame": 0.557,
+   "country": "United States",
+   "description": "American filmmaker",
+   "hook": "directed The Hangover trilogy and the dark origin film Joker",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "George Miller",
+   "qid": "Q446960",
+   "fame": 0.552,
+   "country": "Australia",
+   "description": "Australian filmmaker (born 1945)",
+   "hook": "created the post-apocalyptic Mad Max films and directed Happy Feet",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Rian Johnson",
+   "qid": "Q621818",
+   "fame": 0.549,
+   "country": "United States",
+   "description": "American filmmaker (born 1973)",
+   "hook": "directed the whodunit Knives Out and the Star Wars film The Last Jedi",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Tony Gilroy",
+   "qid": "Q353117",
+   "fame": 0.549,
+   "country": "United States",
+   "description": "American screenwriter and director",
+   "hook": "wrote the Bourne films and directed Michael Clayton",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Federico Fellini",
+   "qid": "Q7371",
+   "fame": 0.544,
+   "country": "Italy",
+   "description": "Italian filmmaker (1920–1993)",
+   "hook": "directed the dreamy classics La Dolce Vita and 8 1/2",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Evan Goldberg",
+   "qid": "Q3061320",
+   "fame": 0.54,
+   "country": "Canada",
+   "description": "Canadian screenwriter (born 1982)",
+   "hook": "co-writes raunchy comedies like Superbad and Pineapple Express with his friend Seth Rogen",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Peter Farrelly",
+   "qid": "Q1368300",
+   "fame": 0.539,
+   "country": "United States",
+   "description": "American film director, producer and screenwriter",
+   "hook": "co-directed Dumb and Dumber with his brother and later won Best Picture for Green Book",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "James Mangold",
+   "qid": "Q433893",
+   "fame": 0.538,
+   "country": "United States",
+   "description": "American film director, screenwriter (born 1963)",
+   "hook": "directed Walk the Line and the Wolverine film Logan",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Steve Oedekerk",
+   "qid": "Q562063",
+   "fame": 0.538,
+   "country": "United States",
+   "description": "American actor and screenwriter",
+   "hook": "wrote comedies like Bruce Almighty and The Nutty Professor",
+   "known": 0.2,
+   "kind": "actor"
+  },
+  {
+   "label": "Leigh Whannell",
+   "qid": "Q471215",
+   "fame": 0.537,
+   "country": "Australia",
+   "description": "Australian filmmaker and actor",
+   "hook": "co-created the Saw horror franchise and wrote Insidious",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Raymond Chandler",
+   "qid": "Q180377",
+   "fame": 0.536,
+   "country": "United States",
+   "description": "American novelist and screenwriter (1888–1959)",
+   "hook": "created the hard-boiled detective Philip Marlowe",
+   "known": 0.4,
+   "kind": "novelist"
+  },
+  {
+   "label": "Shane Black",
+   "qid": "Q726126",
+   "fame": 0.534,
+   "country": "United States",
+   "description": "American actor, screenwriter and film director",
+   "hook": "wrote Lethal Weapon and directed Iron Man 3",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Dan Gilroy",
+   "qid": "Q1159073",
+   "fame": 0.532,
+   "country": "United States",
+   "description": "American screenwriter",
+   "hook": "wrote and directed the nocturnal crime thriller Nightcrawler",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Akiva Goldsman",
+   "qid": "Q419454",
+   "fame": 0.527,
+   "country": "United States",
+   "description": "American film producer",
+   "hook": "won an Oscar for writing A Beautiful Mind",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Dalton Trumbo",
+   "qid": "Q350666",
+   "fame": 0.525,
+   "country": "United States",
+   "description": "American screenwriter (1905–1976)",
+   "hook": "was blacklisted by Hollywood but later wrote Spartacus and Exodus",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Gale Anne Hurd",
+   "qid": "Q269895",
+   "fame": 0.525,
+   "country": "United States",
+   "description": "American film producer and screenwriter (born 1955)",
+   "hook": "produced The Terminator and the zombie series The Walking Dead",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "James Vanderbilt",
+   "qid": "Q919049",
+   "fame": 0.525,
+   "country": "United States",
+   "description": "American screenwriter",
+   "hook": "wrote the serial-killer thriller Zodiac and the newer Scream sequels",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Drew Goddard",
+   "qid": "Q922368",
+   "fame": 0.521,
+   "country": "United States",
+   "description": "American writer and director (born 1975)",
+   "hook": "wrote The Martian and co-created the horror film The Cabin in the Woods",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Kenneth Lonergan",
+   "qid": "Q968840",
+   "fame": 0.52,
+   "country": "United States",
+   "description": "American film director, playwright, and screenwriter",
+   "hook": "wrote and directed the grief drama Manchester by the Sea",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Michael Haneke",
+   "qid": "Q84199",
+   "fame": 0.519,
+   "country": "Austria",
+   "description": "Austrian film director and screenwriter (born 1942)",
+   "hook": "directed the chilling films Funny Games and The White Ribbon",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Nicholas Meyer",
+   "qid": "Q8312",
+   "fame": 0.519,
+   "country": "United States",
+   "description": "American screenwriter, producer, author, and director",
+   "hook": "directed the Star Trek film The Wrath of Khan",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Anthony Minghella",
+   "qid": "Q188726",
+   "fame": 0.518,
+   "country": "United Kingdom",
+   "description": "British film director, playwright and screenwriter (1954-2008)",
+   "hook": "directed the Oscar-sweeping wartime romance The English Patient",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Craig Mazin",
+   "qid": "Q1138605",
+   "fame": 0.513,
+   "country": "United States",
+   "description": "American director and producer",
+   "hook": "created the HBO miniseries Chernobyl",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Christopher McQuarrie",
+   "qid": "Q337658",
+   "fame": 0.512,
+   "country": "United States",
+   "description": "American screenwriter, producer and director (born 1968)",
+   "hook": "wrote The Usual Suspects and directed several Mission: Impossible sequels",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "François Truffaut",
+   "qid": "Q53002",
+   "fame": 0.511,
+   "country": "France",
+   "description": "French film director (1932–1984)",
+   "hook": "directed the New Wave classic The 400 Blows",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "David Koepp",
+   "qid": "Q270178",
+   "fame": 0.508,
+   "country": "United States",
+   "description": "American screenwriter and director (1963-)",
+   "hook": "wrote Jurassic Park and the first big-screen Spider-Man",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Tony Kushner",
+   "qid": "Q704433",
+   "fame": 0.501,
+   "country": "United States",
+   "description": "American playwright and screenwriter (born 1956)",
+   "hook": "wrote the epic two-part play Angels in America",
+   "known": 0.2,
+   "kind": "playwright"
+  },
+  {
+   "label": "William Goldman",
+   "qid": "Q506885",
+   "fame": 0.497,
+   "country": "United States",
+   "description": "American novelist, screenwriter and playwright (1931-2018)",
+   "hook": "wrote The Princess Bride and Butch Cassidy and the Sundance Kid",
+   "known": 0.4,
+   "kind": "novelist"
+  },
+  {
+   "label": "John Milius",
+   "qid": "Q83859",
+   "fame": 0.495,
+   "country": "United States",
+   "description": "American screenwriter and director",
+   "hook": "co-wrote Apocalypse Now and directed Conan the Barbarian",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Bill Finger",
+   "qid": "Q464282",
+   "fame": 0.493,
+   "country": "United States",
+   "description": "American comic strip and comic book writer (1914-1974)",
+   "hook": "co-created much of Batman's look and lore without credit for decades",
+   "known": 0.2,
+   "kind": "comic writer"
+  },
+  {
+   "label": "Stephen Sommers",
+   "qid": "Q363402",
+   "fame": 0.493,
+   "country": "United States",
+   "description": "American film director and screenwriter",
+   "hook": "directed The Mummy and Van Helsing",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Zak Penn",
+   "qid": "Q19031",
+   "fame": 0.489,
+   "country": "United States",
+   "description": "American screenwriter (born 1968)",
+   "hook": "wrote X2 and shared story credit on the first Avengers film",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Bob Kane",
+   "qid": "Q313048",
+   "fame": 0.486,
+   "country": "United States",
+   "description": "American comic book artist, the co-creator of Batman (1915-1998)",
+   "hook": "is credited as a co-creator of Batman, the Dark Knight of Gotham City",
+   "known": 0.4,
+   "kind": "comic writer"
+  },
+  {
+   "label": "Chris McKenna",
+   "qid": "Q5107425",
+   "fame": 0.485,
+   "country": "United States",
+   "description": "American television producer and writer",
+   "hook": "co-wrote the recent Spider-Man films starring Tom Holland",
+   "known": 0.05,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "David S. Goyer",
+   "qid": "Q352010",
+   "fame": 0.484,
+   "country": "United States",
+   "description": "American filmmaker, novelist, and comic book writer",
+   "hook": "co-wrote The Dark Knight trilogy with Christopher Nolan and created Blade on screen",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Lawrence Kasdan",
+   "qid": "Q240872",
+   "fame": 0.482,
+   "country": "United States",
+   "description": "American film director and film producer",
+   "hook": "wrote The Empire Strikes Back and Raiders of the Lost Ark",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Robert Towne",
+   "qid": "Q721922",
+   "fame": 0.481,
+   "country": "United States",
+   "description": "American screenwriter, producer, director and actor (1934–2024)",
+   "hook": "wrote the neo-noir classic Chinatown",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "J. Michael Straczynski",
+   "qid": "Q126941",
+   "fame": 0.48,
+   "country": "United States",
+   "description": "American writer and filmmaker (born 1954)",
+   "hook": "created the sci-fi series Babylon 5",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Fran Walsh",
+   "qid": "Q116861",
+   "fame": 0.478,
+   "country": "New Zealand",
+   "description": "New Zealand screenwriter and producer",
+   "hook": "won Oscars for co-writing The Lord of the Rings films with Peter Jackson",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Alex Kurtzman",
+   "qid": "Q432598",
+   "fame": 0.473,
+   "country": "United States",
+   "description": "American television producer",
+   "hook": "co-wrote the rebooted Star Trek films and the first Transformers",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Walter Hill",
+   "qid": "Q350422",
+   "fame": 0.471,
+   "country": "United States",
+   "description": "American film director, producer and screenwriter",
+   "hook": "directed the cult gang thriller The Warriors and the buddy-cop hit 48 Hrs",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Andrew Niccol",
+   "qid": "Q360737",
+   "fame": 0.468,
+   "country": "New Zealand",
+   "description": "New Zealand screenwriter, producer and film director",
+   "hook": "wrote and directed Gattaca and wrote The Truman Show",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Kevin Williamson",
+   "qid": "Q360642",
+   "fame": 0.468,
+   "country": "United States",
+   "description": "American screenwriter, director, and producer (born 1965)",
+   "hook": "wrote Scream and created Dawson's Creek",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Ronald D. Moore",
+   "qid": "Q549942",
+   "fame": 0.462,
+   "country": "United States",
+   "description": "American screenwriter and television producer (1964-)",
+   "hook": "developed the reimagined Battlestar Galactica and the time-travel romance Outlander",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Dan O'Bannon",
+   "qid": "Q498430",
+   "fame": 0.457,
+   "country": "United States",
+   "description": "American film director, screenwriter, actor (1946-2009)",
+   "hook": "wrote the original script for Alien",
+   "known": 0.2,
+   "kind": "screenwriter"
+  },
+  {
+   "label": "Dean Devlin",
+   "qid": "Q119849",
+   "fame": 0.457,
+   "country": "United States",
+   "description": "American actor",
+   "hook": "co-wrote the alien-invasion blockbuster Independence Day",
+   "known": 0.2,
+   "kind": "actor"
+  },
+  {
+   "label": "Mark Millar",
+   "qid": "Q2543",
+   "fame": 0.456,
+   "country": "United Kingdom",
+   "description": "Scottish comic book writer",
+   "hook": "wrote the comic books behind Kick-Ass and Kingsman",
+   "known": 0.2,
+   "kind": "comic writer"
+  },
+  {
+   "label": "Colin Trevorrow",
+   "qid": "Q5145625",
+   "fame": 0.455,
+   "country": "United States",
+   "description": "American film director (born 1976)",
+   "hook": "directed Jurassic World",
+   "known": 0.2,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Philip Kaufman",
+   "qid": "Q176126",
+   "fame": 0.454,
+   "country": "United States",
+   "description": "American film director, screenwriter and film producer",
+   "hook": "directed The Right Stuff, about the first astronauts",
+   "known": 0.2,
+   "kind": "filmmaker"
+  }
+ ]
+}

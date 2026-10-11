@@ -1,0 +1,302 @@
+{
+ "id": "table.general-knowledge.numbered-sets-more",
+ "kind": "table",
+ "title": "More famous numbered sets",
+ "genre": "general",
+ "category": "general-knowledge",
+ "topic": "numbered-sets",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?members WHERE { VALUES (?item ?members) { (wd:Q146027 \"Harry, Niall, Liam, Louis and Zayn\") (wd:Q154454 \"Justin, JC, Chris, Joey and Lance\") (wd:Q153056 \"Beyoncé, Kelly and Michelle\") (wd:Q134233 \"Kevin, Joe and Nick\") (wd:Q2331 \"Robert, Jimmy, John Paul and John\") (wd:Q15862 \"Freddie, Brian, Roger and John\") (wd:Q18233 \"Agnetha, Björn, Benny and Anni-Frid\") (wd:Q11649 \"Kurt, Krist and Dave\") (wd:Q178095 \"Sting, Andy and Stewart\") (wd:Q396 \"Bono, The Edge, Adam and Larry\") (wd:Q742804 \"T-Boz, Left Eye and Chilli\") (wd:Q152066 \"Gary, Robbie, Howard, Jason and Mark\") (wd:Q16402 \"Cleese, Palin, Idle, Chapman, Gilliam and Jones\") (wd:Q214039 \"Mike D, MCA and Ad-Rock\") (wd:Q47871 \"Billie Joe, Mike and Tré\") (wd:Q751079 \"Pavarotti, Domingo and Carreras\") (wd:Q597154 \"Shepard, Grissom, Glenn, Carpenter, Schirra, Cooper and Slayton\") (wd:Q1236206 \"Blossom, Bubbles and Buttercup\") (wd:Q117802687 \"Charlotte, Emily and Anne\") (wd:Q43653 \"Armstrong, Aldrin and Collins\") (wd:Q768621 \"Isaac, Taylor and Zac\") (wd:Q93346 \"Roger, Pete, John and Keith\") (wd:Q2306 \"Roger, David, Richard and Nick\") (wd:Q203871 \"Geddy, Alex and Neil\") (wd:Q203736 \"Eric, Jack and Ginger\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T09:27:28.141Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T09:27:28.141Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "members",
+   "label": "Its members (our words)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "famous group",
+  "many": "famous groups",
+  "minFame": 0.5,
+  "theLabels": [
+   "Jonas Brothers",
+   "Beastie Boys",
+   "Mercury Seven"
+  ],
+  "columns": {
+   "members": {
+    "role": "code",
+    "pick": "Which line-up makes up {label}?",
+    "statement": "{label} is made up of {value}.",
+    "reverse": "Which of these famous sets is made up of {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Nirvana",
+   "qid": "Q11649",
+   "fame": 0.744,
+   "members": "Kurt, Krist and Dave",
+   "kind": "band",
+   "description": "American rock band",
+   "hook": "popularized alternative rock and was dubbed the flagship group of Generation X",
+   "known": 0.95
+  },
+  {
+   "label": "Led Zeppelin",
+   "qid": "Q2331",
+   "fame": 0.736,
+   "members": "Robert, Jimmy, John Paul and John",
+   "kind": "band",
+   "description": "English rock band (1968–1980)",
+   "hook": "fused heavy electric guitar with blues and folk, helping establish hard rock and heavy metal",
+   "known": 0.95
+  },
+  {
+   "label": "Pink Floyd",
+   "qid": "Q2306",
+   "fame": 0.721,
+   "members": "Roger, David, Richard and Nick",
+   "kind": "band",
+   "description": "English rock band",
+   "hook": "became a leading progressive rock act known for long compositions, sonic experiments and elaborate live shows",
+   "known": 0.95
+  },
+  {
+   "label": "Hanson",
+   "qid": "Q768621",
+   "fame": 0.713,
+   "members": "Isaac, Taylor and Zac",
+   "kind": "band",
+   "description": "American band",
+   "hook": "is a pop rock trio of siblings from Tulsa, Oklahoma",
+   "known": 0.6
+  },
+  {
+   "label": "U2",
+   "qid": "Q396",
+   "fame": 0.712,
+   "members": "Bono, The Edge, Adam and Larry",
+   "kind": "band",
+   "description": "Irish rock band",
+   "hook": "is an anthemic rock group from Dublin whose singer often writes with spiritual imagery",
+   "known": 0.95
+  },
+  {
+   "label": "Jonas Brothers",
+   "qid": "Q134233",
+   "fame": 0.71,
+   "members": "Kevin, Joe and Nick",
+   "kind": "band",
+   "description": "American pop rock band",
+   "hook": "is a pop rock trio of siblings who rose to fame through Disney Channel",
+   "known": 0.8
+  },
+  {
+   "label": "Queen",
+   "qid": "Q15862",
+   "fame": 0.709,
+   "members": "Freddie, Brian, Roger and John",
+   "kind": "band",
+   "description": "British musical group; rock band",
+   "hook": "grew from prog and hard rock roots into radio-friendly arena rock, formed in London",
+   "known": 0.95
+  },
+  {
+   "label": "ABBA",
+   "qid": "Q18233",
+   "fame": 0.7,
+   "members": "Agnetha, Björn, Benny and Anni-Frid",
+   "kind": "band",
+   "description": "Swedish pop quartet",
+   "hook": "is a pop group from Stockholm counted among the most commercially successful in history",
+   "known": 0.95
+  },
+  {
+   "label": "Rush",
+   "qid": "Q203871",
+   "fame": 0.686,
+   "members": "Geddy, Alex and Neil",
+   "kind": "band",
+   "description": "Canadian rock band",
+   "hook": "is a rock power trio formed in Toronto",
+   "known": 0.6
+  },
+  {
+   "label": "Green Day",
+   "qid": "Q47871",
+   "fame": 0.675,
+   "members": "Billie Joe, Mike and Tré",
+   "kind": "band",
+   "description": "American musical group; rock band",
+   "hook": "reignited mainstream interest in punk rock with a breakout album called Dookie",
+   "known": 0.95
+  },
+  {
+   "label": "Beastie Boys",
+   "qid": "Q214039",
+   "fame": 0.673,
+   "members": "Mike D, MCA and Ad-Rock",
+   "kind": "band",
+   "description": "American hip-hop group (1981–2012)",
+   "hook": "blended hip-hop with punk energy, forming in New York City",
+   "known": 0.8
+  },
+  {
+   "label": "Apollo 11",
+   "qid": "Q43653",
+   "fame": 0.668,
+   "members": "Armstrong, Aldrin and Collins",
+   "kind": "space mission",
+   "description": "first Moon landing and fifth crewed flight of the United States Apollo program",
+   "hook": "was the spaceflight that put the first humans on the lunar surface",
+   "known": 0.95
+  },
+  {
+   "label": "One Direction",
+   "qid": "Q146027",
+   "fame": 0.659,
+   "members": "Harry, Niall, Liam, Louis and Zayn",
+   "kind": "band",
+   "description": "English-Irish musical group; boy band",
+   "hook": "became one of the best-selling pop acts of all time before going on indefinite hiatus",
+   "known": 0.8
+  },
+  {
+   "label": "The Who",
+   "qid": "Q93346",
+   "fame": 0.657,
+   "members": "Roger, Pete, John and Keith",
+   "kind": "band",
+   "description": "English rock band",
+   "hook": "helped develop the Marshall amp stack and powerful PA systems for rock shows",
+   "known": 0.95
+  },
+  {
+   "label": "Destiny's Child",
+   "qid": "Q153056",
+   "fame": 0.645,
+   "members": "Beyoncé, Kelly and Michelle",
+   "kind": "band",
+   "description": "American rhythm and blues girl group from Houston, Texas",
+   "hook": "is known for tight vocal harmonies and songs of female empowerment",
+   "known": 0.8
+  },
+  {
+   "label": "Monty Python",
+   "qid": "Q16402",
+   "fame": 0.644,
+   "members": "Cleese, Palin, Idle, Chapman, Gilliam and Jones",
+   "kind": "comedy group",
+   "description": "British surreal comedy group",
+   "hook": "is the comedy troupe behind the BBC sketch show Flying Circus",
+   "known": 0.8
+  },
+  {
+   "label": "TLC",
+   "qid": "Q742804",
+   "fame": 0.642,
+   "members": "T-Boz, Left Eye and Chilli",
+   "kind": "band",
+   "description": "American girl group",
+   "hook": "scored four number-one singles, including Waterfalls and No Scrubs",
+   "known": 0.6
+  },
+  {
+   "label": "The Police",
+   "qid": "Q178095",
+   "fame": 0.637,
+   "members": "Sting, Andy and Stewart",
+   "kind": "band",
+   "description": "English rock band",
+   "hook": "emerged from the punk scene and blended in reggae and new wave sounds",
+   "known": 0.8
+  },
+  {
+   "label": "NSYNC",
+   "qid": "Q154454",
+   "fame": 0.636,
+   "members": "Justin, JC, Chris, Joey and Lance",
+   "kind": "band",
+   "description": "American boy band",
+   "hook": "is an Orlando-formed vocal group whose American breakthrough single was I Want You Back",
+   "known": 0.8
+  },
+  {
+   "label": "Cream",
+   "qid": "Q203736",
+   "fame": 0.596,
+   "members": "Eric, Jack and Ginger",
+   "kind": "band",
+   "description": "British musical group",
+   "hook": "is widely regarded as the first supergroup in rock history",
+   "known": 0.6
+  },
+  {
+   "label": "The Powerpuff Girls",
+   "qid": "Q1236206",
+   "fame": 0.593,
+   "members": "Blossom, Bubbles and Buttercup",
+   "kind": "cartoon",
+   "description": "American animated television series from 1998–2005",
+   "hook": "follows three kindergarten-aged sisters with superpowers who protect the city of Townsville",
+   "known": 0.8
+  },
+  {
+   "label": "Take That",
+   "qid": "Q152066",
+   "fame": 0.586,
+   "members": "Gary, Robbie, Howard, Jason and Mark",
+   "kind": "band",
+   "description": "British five-piece vocal pop group",
+   "hook": "is a pop group formed in Manchester, with a lead singer who writes most of its songs",
+   "known": 0.6
+  },
+  {
+   "label": "The Three Tenors",
+   "qid": "Q751079",
+   "fame": 0.495,
+   "members": "Pavarotti, Domingo and Carreras",
+   "kind": "singing group",
+   "description": "popular operatic singing group consisting of Spaniards Plácido Domingo and José Carreras and Italian Luciano Pavarotti",
+   "hook": null,
+   "known": 0.6
+  },
+  {
+   "label": "Mercury Seven",
+   "qid": "Q597154",
+   "fame": 0.454,
+   "members": "Shepard, Grissom, Glenn, Carpenter, Schirra, Cooper and Slayton",
+   "kind": "astronauts",
+   "description": "group of seven Mercury astronauts",
+   "hook": null,
+   "known": 0.4
+  }
+ ]
+}

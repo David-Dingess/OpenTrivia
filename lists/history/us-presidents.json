@@ -1,0 +1,522 @@
+{
+ "id": "list.history.us-presidents",
+ "title": "US presidents",
+ "prompt": "Name a US president",
+ "genre": "society",
+ "category": "history",
+ "topic": "rulers",
+ "people": true,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P39 wd:Q11696 ; wdt:P31 wd:Q5 . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-09-30T04:15:14.327Z"
+ },
+ "rows": [
+  {
+   "label": "Donald Trump",
+   "qid": "Q22686",
+   "fame": 0.908,
+   "also": [
+    "Donald",
+    "Don",
+    "Donald John Trump",
+    "Trump",
+    "The Don",
+    "Don Trump",
+    "POTUS45",
+    "President Trump",
+    "President Don Trump",
+    "President Donald John Trump",
+    "President Donald Trump",
+    "The Donald"
+   ]
+  },
+  {
+   "label": "George W. Bush",
+   "qid": "Q207",
+   "fame": 0.812,
+   "also": [
+    "George Bush",
+    "Bush",
+    "POTUS 43",
+    "George Walker Bush",
+    "Bush Jr.",
+    "Dubya"
+   ]
+  },
+  {
+   "label": "Barack Obama",
+   "qid": "Q76",
+   "fame": 0.806,
+   "also": [
+    "Barack Hussein Obama II",
+    "Barack H Obama",
+    "Barack Hussein Obama",
+    "Barak Obama",
+    "Barry Obama",
+    "Barack Obama II",
+    "Barakat-ul-Husayn Obama",
+    "Barry Soetoro"
+   ]
+  },
+  {
+   "label": "John F. Kennedy",
+   "qid": "Q9696",
+   "fame": 0.792,
+   "also": [
+    "Kennedy",
+    "John Kennedy",
+    "JFK",
+    "John Fitzgerald Kennedy",
+    "President Kennedy",
+    "JF Kennedy",
+    "Jack Kennedy"
+   ]
+  },
+  {
+   "label": "Franklin Delano Roosevelt",
+   "qid": "Q8007",
+   "fame": 0.776,
+   "also": [
+    "Franklin D. Roosevelt",
+    "F.D.R.",
+    "Roosevelt",
+    "Franklin Roosevelt",
+    "President Roosevelt"
+   ]
+  },
+  {
+   "label": "George Washington",
+   "qid": "Q23",
+   "fame": 0.772,
+   "also": [
+    "Washington",
+    "American Cincinnatus",
+    "American Fabius",
+    "Father of the United States"
+   ]
+  },
+  {
+   "label": "Ronald Reagan",
+   "qid": "Q9960",
+   "fame": 0.771,
+   "also": [
+    "Ronald W Reagan",
+    "Ronald Wilson Reagan"
+   ]
+  },
+  {
+   "label": "Joe Biden",
+   "qid": "Q6279",
+   "fame": 0.769,
+   "also": [
+    "Biden",
+    "Joseph Robinette Biden Jr.",
+    "Joseph Biden",
+    "Joseph R. Biden",
+    "Joe R. Biden Jr.",
+    "Joseph R. Biden Jr.",
+    "Joseph Robinette Biden",
+    "JRB",
+    "President Biden"
+   ]
+  },
+  {
+   "label": "Dwight D. Eisenhower",
+   "qid": "Q9916",
+   "fame": 0.767,
+   "also": [
+    "David Dwight Eisenhower",
+    "Dwight Eisenhower",
+    "Ike",
+    "Eisenhower",
+    "Dwight David Eisenhower",
+    "President Eisenhower",
+    "Ike Eisenhower"
+   ]
+  },
+  {
+   "label": "Abraham Lincoln",
+   "qid": "Q91",
+   "fame": 0.765,
+   "also": [
+    "Honest Abe",
+    "Abe Lincoln",
+    "President Lincoln",
+    "Uncle Abe"
+   ]
+  },
+  {
+   "label": "Theodore Roosevelt",
+   "qid": "Q33866",
+   "fame": 0.758,
+   "also": [
+    "Teddy Roosevelt",
+    "Theodore Roosevelt Jr."
+   ]
+  },
+  {
+   "label": "George H. W. Bush",
+   "qid": "Q23505",
+   "fame": 0.757,
+   "also": [
+    "George Bush",
+    "President Bush",
+    "Bush 41",
+    "Bush I",
+    "Bush Senior",
+    "Bush Sr.",
+    "G H W Bush",
+    "George Bush Senior",
+    "George Bush Snr.",
+    "George Bush Sr",
+    "George H Bush",
+    "George H W"
+   ]
+  },
+  {
+   "label": "Bill Clinton",
+   "qid": "Q1124",
+   "fame": 0.754,
+   "also": [
+    "William Clinton",
+    "William J. Clinton",
+    "William Jefferson Blythe",
+    "William Jefferson Blythe III",
+    "William Jefferson Clinton",
+    "WJC"
+   ]
+  },
+  {
+   "label": "Richard Nixon",
+   "qid": "Q9588",
+   "fame": 0.736,
+   "also": [
+    "Richard Milhous Nixon",
+    "Nixon",
+    "Dick Nixon",
+    "Richard M. Nixon",
+    "Tricky Dick",
+    "President Nixon",
+    "President Richard Nixon"
+   ]
+  },
+  {
+   "label": "Thomas Jefferson",
+   "qid": "Q11812",
+   "fame": 0.726,
+   "also": [
+    "President Jefferson"
+   ]
+  },
+  {
+   "label": "Jimmy Carter",
+   "qid": "Q23685",
+   "fame": 0.725,
+   "also": [
+    "James Carter",
+    "39th President of the United States",
+    "James E. Carter",
+    "James E. Carter Jr.",
+    "James Earl Carter",
+    "James Earl Carter Jr."
+   ]
+  },
+  {
+   "label": "Harry S. Truman",
+   "qid": "Q11613",
+   "fame": 0.721,
+   "also": [
+    "Truman",
+    "Harry Truman",
+    "President Truman"
+   ]
+  },
+  {
+   "label": "Lyndon B. Johnson",
+   "qid": "Q9640",
+   "fame": 0.717,
+   "also": [
+    "LBJ",
+    "Lyndon Baines Johnson",
+    "Lyndon Johnson",
+    "President Johnson"
+   ]
+  },
+  {
+   "label": "James A. Garfield",
+   "qid": "Q34597",
+   "fame": 0.71,
+   "also": [
+    "James Garfield",
+    "James Abram Garfield",
+    "President Garfield"
+   ]
+  },
+  {
+   "label": "Gerald Ford",
+   "qid": "Q9582",
+   "fame": 0.706,
+   "also": [
+    "Ford",
+    "Leslie King",
+    "Leslie Lynch King",
+    "Gerald R. Ford",
+    "President Ford",
+    "Gerald Ford Jr.",
+    "Gerald R. Ford Jr.",
+    "Gerald Rudolph Ford Jr.",
+    "Leslie Lynch King Jr.",
+    "Gerald Rudolph Ford"
+   ]
+  },
+  {
+   "label": "Ulysses S. Grant",
+   "qid": "Q34836",
+   "fame": 0.703,
+   "also": [
+    "Ulysses Simpson Grant",
+    "General Grant",
+    "Ulysses Grant",
+    "President Grant",
+    "Hiram Ulysses Grant",
+    "U.S. Grant",
+    "Ulysses Hiram Grant"
+   ]
+  },
+  {
+   "label": "John Adams",
+   "qid": "Q11806",
+   "fame": 0.695,
+   "also": []
+  },
+  {
+   "label": "William McKinley",
+   "qid": "Q35041",
+   "fame": 0.689,
+   "also": [
+    "President McKinley",
+    "President William McKinley",
+    "William M'Kinley"
+   ]
+  },
+  {
+   "label": "Andrew Jackson",
+   "qid": "Q11817",
+   "fame": 0.682,
+   "also": [
+    "Old Hickory"
+   ]
+  },
+  {
+   "label": "Woodrow Wilson",
+   "qid": "Q34296",
+   "fame": 0.676,
+   "also": [
+    "Thomas Woodrow Wilson",
+    "President Wilson",
+    "Thomas W. Wilson"
+   ]
+  },
+  {
+   "label": "Calvin Coolidge",
+   "qid": "Q36023",
+   "fame": 0.673,
+   "also": [
+    "John Calvin Coolidge",
+    "John Calvin Coolidge Jr.",
+    "President Coolidge",
+    "Silent Cal",
+    "Silent Cal Coolidge"
+   ]
+  },
+  {
+   "label": "Herbert Hoover",
+   "qid": "Q35236",
+   "fame": 0.667,
+   "also": [
+    "Herbert Clark Hoover",
+    "Herbert C. Hoover",
+    "President Hoover"
+   ]
+  },
+  {
+   "label": "Grover Cleveland",
+   "qid": "Q35171",
+   "fame": 0.664,
+   "also": [
+    "Grover Cleveland Jr.",
+    "President Cleveland",
+    "Stephen G. Cleveland",
+    "Stephen Grover Cleveland",
+    "Stephen Grover Cleveland Jr."
+   ]
+  },
+  {
+   "label": "Warren G. Harding",
+   "qid": "Q35286",
+   "fame": 0.66,
+   "also": [
+    "Warren Harding",
+    "President Harding",
+    "President Warren Harding",
+    "Warren Gamaliel Harding"
+   ]
+  },
+  {
+   "label": "William Howard Taft",
+   "qid": "Q35648",
+   "fame": 0.659,
+   "also": [
+    "William Taft",
+    "William H. Taft",
+    "President Taft"
+   ]
+  },
+  {
+   "label": "Chester A. Arthur",
+   "qid": "Q35498",
+   "fame": 0.653,
+   "also": [
+    "Chester Arthur",
+    "President Arthur",
+    "Chester Alan Arthur"
+   ]
+  },
+  {
+   "label": "John Quincy Adams",
+   "qid": "Q11816",
+   "fame": 0.645,
+   "also": [
+    "John Adams",
+    "John Q. Adams"
+   ]
+  },
+  {
+   "label": "James Madison",
+   "qid": "Q11813",
+   "fame": 0.642,
+   "also": [
+    "James Madison Jr.",
+    "President James Madison",
+    "President Madison"
+   ]
+  },
+  {
+   "label": "Andrew Johnson",
+   "qid": "Q8612",
+   "fame": 0.641,
+   "also": [
+    "President Johnson",
+    "President Andrew Johnson"
+   ]
+  },
+  {
+   "label": "William Henry Harrison",
+   "qid": "Q11869",
+   "fame": 0.641,
+   "also": [
+    "President Harrison",
+    "Old Tippecanoe",
+    "William H. Harrison"
+   ]
+  },
+  {
+   "label": "James Buchanan",
+   "qid": "Q12325",
+   "fame": 0.631,
+   "also": [
+    "President Buchanan"
+   ]
+  },
+  {
+   "label": "Martin Van Buren",
+   "qid": "Q11820",
+   "fame": 0.628,
+   "also": [
+    "Buren",
+    "President Van Buren",
+    "Van Buren",
+    "Old Kinderhook",
+    "President Martin Van Buren",
+    "Martin van Ruin",
+    "The Mistletoe Politician",
+    "The Red Fox of Kinderhook",
+    "Maarten van Buren"
+   ]
+  },
+  {
+   "label": "James K. Polk",
+   "qid": "Q11891",
+   "fame": 0.614,
+   "also": [
+    "James Knox Polk",
+    "James Polk",
+    "President Polk"
+   ]
+  },
+  {
+   "label": "John Tyler",
+   "qid": "Q11881",
+   "fame": 0.613,
+   "also": [
+    "John Tyler Jr",
+    "President Tyler"
+   ]
+  },
+  {
+   "label": "Zachary Taylor",
+   "qid": "Q11896",
+   "fame": 0.612,
+   "also": [
+    "President Taylor",
+    "Old Rough and Ready",
+    "POTUS 12",
+    "President Zachary Taylor"
+   ]
+  },
+  {
+   "label": "Franklin Pierce",
+   "qid": "Q12312",
+   "fame": 0.601,
+   "also": [
+    "President Pierce"
+   ]
+  },
+  {
+   "label": "Rutherford B. Hayes",
+   "qid": "Q35686",
+   "fame": 0.601,
+   "also": [
+    "Rutherford Birchard Hayes",
+    "President Hayes",
+    "Rutherford Hayes"
+   ]
+  },
+  {
+   "label": "Benjamin Harrison",
+   "qid": "Q35678",
+   "fame": 0.597,
+   "also": [
+    "President Harrison"
+   ]
+  },
+  {
+   "label": "James Monroe",
+   "qid": "Q11815",
+   "fame": 0.594,
+   "also": [
+    "President Monroe"
+   ]
+  },
+  {
+   "label": "Millard Fillmore",
+   "qid": "Q12306",
+   "fame": 0.592,
+   "also": [
+    "President Fillmore"
+   ]
+  }
+ ]
+}

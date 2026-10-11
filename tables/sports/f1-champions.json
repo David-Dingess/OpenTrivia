@@ -1,0 +1,313 @@
+{
+ "id": "table.sports.f1-champions",
+ "kind": "table",
+ "title": "Formula One seasons: year and drivers' champion",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "racing",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?year ?winnerLabel WHERE { { SELECT ?item (MIN(?d) AS ?year) (SAMPLE(?w) AS ?winner) WHERE { ?item wdt:P31 wd:Q108861375 ; wdt:P1346 ?w ; (wdt:P585|wdt:P580) ?d . ?w wdt:P31 wd:Q5 . } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T04:56:36.322Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T04:56:36.322Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "year",
+   "label": "Season",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "champion",
+   "label": "Drivers' champion",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "item",
+  "many": "items",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "2023 Formula One World Championship",
+   "qid": "Q109323149",
+   "fame": 0.593,
+   "year": 2023,
+   "champion": "Max Verstappen",
+   "description": "74th Formula One season"
+  },
+  {
+   "label": "2021 Formula One World Championship",
+   "qid": "Q72635834",
+   "fame": 0.575,
+   "year": 2021,
+   "champion": "Max Verstappen",
+   "description": "72nd running of the Formula One World Championship"
+  },
+  {
+   "label": "2020 Formula One World Championship",
+   "qid": "Q41174436",
+   "fame": 0.556,
+   "year": 2020,
+   "champion": "Lewis Hamilton",
+   "description": "71st running of the Formula One World Championship"
+  },
+  {
+   "label": "2012 Formula One World Championship",
+   "qid": "Q69959",
+   "fame": 0.54,
+   "year": 2012,
+   "champion": "Sebastian Vettel",
+   "description": "63rd season of Formula One motor racing"
+  },
+  {
+   "label": "2016 Formula One World Championship",
+   "qid": "Q17455748",
+   "fame": 0.537,
+   "year": 2016,
+   "champion": "Nico Rosberg",
+   "description": "67th season of Formula One motor racing"
+  },
+  {
+   "label": "2007 Formula One World Championship",
+   "qid": "Q69901",
+   "fame": 0.533,
+   "year": 2007,
+   "champion": "Kimi Räikkönen",
+   "description": "61st season of Formula One motor racing"
+  },
+  {
+   "label": "2017 Formula One World Championship",
+   "qid": "Q20755615",
+   "fame": 0.533,
+   "year": 2017,
+   "champion": "Lewis Hamilton",
+   "description": "68th season of FIA Formula One World Championship"
+  },
+  {
+   "label": "2019 Formula One World Championship",
+   "qid": "Q41173535",
+   "fame": 0.528,
+   "year": 2019,
+   "champion": "Lewis Hamilton",
+   "description": "70th season of Formula One motor racing"
+  },
+  {
+   "label": "2010 Formula One World Championship",
+   "qid": "Q69934",
+   "fame": 0.526,
+   "year": 2010,
+   "champion": "Sebastian Vettel",
+   "description": "64th season of Formula One motor racing"
+  },
+  {
+   "label": "2009 Formula One World Championship",
+   "qid": "Q69923",
+   "fame": 0.525,
+   "year": 2009,
+   "champion": "Jenson Button",
+   "description": "63rd season of Formula One motor racing"
+  },
+  {
+   "label": "2008 Formula One World Championship",
+   "qid": "Q69913",
+   "fame": 0.524,
+   "year": 2008,
+   "champion": "Lewis Hamilton",
+   "description": "62nd season of Formula One motor racing"
+  },
+  {
+   "label": "2014 Formula One World Championship",
+   "qid": "Q69969",
+   "fame": 0.516,
+   "year": 2014,
+   "champion": "Lewis Hamilton",
+   "description": "65th season of Formula One motor racing"
+  },
+  {
+   "label": "2015 Formula One World Championship",
+   "qid": "Q14293115",
+   "fame": 0.51,
+   "year": 2015,
+   "champion": "Lewis Hamilton",
+   "description": "66th season of Formula One motor racing"
+  },
+  {
+   "label": "2013 Formula One World Championship",
+   "qid": "Q69356",
+   "fame": 0.507,
+   "year": 2013,
+   "champion": "Sebastian Vettel",
+   "description": "64th season of Formula One motor racing"
+  },
+  {
+   "label": "2006 Formula One World Championship",
+   "qid": "Q69893",
+   "fame": 0.506,
+   "year": 2006,
+   "champion": "Fernando Alonso",
+   "description": "60th season of Formula One motor racing"
+  },
+  {
+   "label": "2000 Formula One World Championship",
+   "qid": "Q69805",
+   "fame": 0.503,
+   "year": 2000,
+   "champion": "Michael Schumacher",
+   "description": "sports season"
+  },
+  {
+   "label": "2011 Formula One World Championship",
+   "qid": "Q69943",
+   "fame": 0.503,
+   "year": 2011,
+   "champion": "Sebastian Vettel",
+   "description": "62nd season of Formula One motor racing"
+  },
+  {
+   "label": "2005 Formula One World Championship",
+   "qid": "Q69880",
+   "fame": 0.501,
+   "year": 2005,
+   "champion": "Fernando Alonso",
+   "description": "sports season"
+  },
+  {
+   "label": "1994 Formula One World Championship",
+   "qid": "Q69713",
+   "fame": 0.493,
+   "year": 1994,
+   "champion": "Michael Schumacher",
+   "description": "sports season"
+  },
+  {
+   "label": "2004 Formula One World Championship",
+   "qid": "Q69869",
+   "fame": 0.489,
+   "year": 2004,
+   "champion": "Michael Schumacher",
+   "description": "58th season of FIA Formula One motor racing"
+  },
+  {
+   "label": "2001 Formula One World Championship",
+   "qid": "Q69835",
+   "fame": 0.485,
+   "year": 2001,
+   "champion": "Michael Schumacher",
+   "description": "sports season"
+  },
+  {
+   "label": "1997 Formula One World Championship",
+   "qid": "Q69750",
+   "fame": 0.483,
+   "year": 1997,
+   "champion": "Jacques Villeneuve",
+   "description": "sports season"
+  },
+  {
+   "label": "2002 Formula One World Championship",
+   "qid": "Q69844",
+   "fame": 0.481,
+   "year": 2002,
+   "champion": "Michael Schumacher",
+   "description": "sports season"
+  },
+  {
+   "label": "1999 Formula One World Championship",
+   "qid": "Q69791",
+   "fame": 0.48,
+   "year": 1999,
+   "champion": "Mika Häkkinen",
+   "description": "sports season"
+  },
+  {
+   "label": "2003 Formula One World Championship",
+   "qid": "Q69859",
+   "fame": 0.477,
+   "year": 2003,
+   "champion": "Michael Schumacher",
+   "description": "Motorsport competition"
+  },
+  {
+   "label": "1996 Formula One World Championship",
+   "qid": "Q69735",
+   "fame": 0.47,
+   "year": 1996,
+   "champion": "Damon Hill",
+   "description": "sports season"
+  },
+  {
+   "label": "1993 Formula One World Championship",
+   "qid": "Q69696",
+   "fame": 0.468,
+   "year": 1993,
+   "champion": "Alain Prost",
+   "description": "sports season"
+  },
+  {
+   "label": "1992 Formula One World Championship",
+   "qid": "Q69686",
+   "fame": 0.463,
+   "year": 1992,
+   "champion": "Nigel Mansell",
+   "description": "sports season"
+  },
+  {
+   "label": "1998 Formula One World Championship",
+   "qid": "Q69763",
+   "fame": 0.463,
+   "year": 1998,
+   "champion": "Mika Häkkinen",
+   "description": "sports season"
+  },
+  {
+   "label": "1995 Formula One World Championship",
+   "qid": "Q69722",
+   "fame": 0.461,
+   "year": 1995,
+   "champion": "Michael Schumacher",
+   "description": "sports season"
+  },
+  {
+   "label": "1991 Formula One World Championship",
+   "qid": "Q69670",
+   "fame": 0.458,
+   "year": 1991,
+   "champion": "Ayrton Senna",
+   "description": "sports season"
+  },
+  {
+   "label": "1982 Formula One World Championship",
+   "qid": "Q69548",
+   "fame": 0.454,
+   "year": 1982,
+   "champion": "Keke Rosberg",
+   "description": "sports season"
+  },
+  {
+   "label": "1990 Formula One World Championship",
+   "qid": "Q69657",
+   "fame": 0.451,
+   "year": 1990,
+   "champion": "Ayrton Senna",
+   "description": "sports season"
+  }
+ ]
+}

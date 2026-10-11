@@ -1,0 +1,637 @@
+{
+ "id": "table.literature.manga-creators",
+ "kind": "table",
+ "title": "Manga series and their creators",
+ "genre": "arts-entertainment",
+ "category": "literature",
+ "topic": "comics-and-manga",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?authorLabel WHERE { { SELECT ?item (SAMPLE(?a) AS ?author) (COUNT(DISTINCT ?a) AS ?nA) WHERE { ?item wdt:P31 wd:Q21198342 ; wdt:P50 ?a ; wikibase:sitelinks ?sl . FILTER(?sl >= 30) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nA = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 212",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T11:28:35.339Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T11:28:35.339Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "author",
+   "label": "Creator",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "manga",
+  "many": "manga series",
+  "exclude": [
+   {
+    "qid": "Q586025",
+    "why": "Attack on Titan is blocklisted (content/blocklist.json) — never appears anywhere."
+   }
+  ],
+  "hookAsk": "Which manga {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "author": {
+    "role": "link",
+    "pick": "Who created {label}?",
+    "statement": "{label} was created by {value}.",
+    "match": "Match each manga to its creator.",
+    "odd": "Three of these were created by {value}. Which one wasn't?",
+    "all": "Tap all {n} manga created by {value}.",
+    "reverse": "Which of these did {value} create?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "One Piece",
+   "qid": "Q28667972",
+   "fame": 0.692,
+   "author": "Eiichiro Oda",
+   "description": "Japanese manga series",
+   "hook": "follows a boy with a stretchy body who sails the seas hunting for a legendary hidden treasure",
+   "known": 0.8,
+   "kind": "action"
+  },
+  {
+   "label": "Jujutsu Kaisen",
+   "qid": "Q55522899",
+   "fame": 0.681,
+   "author": "Gege Akutami",
+   "description": "Japanese manga series",
+   "hook": "follows a teen who swallows a cursed finger and joins an order battling supernatural curses",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "Death Note",
+   "qid": "Q1834",
+   "fame": 0.642,
+   "author": "Tsugumi Ohba",
+   "description": "Japanese manga series",
+   "hook": "follows a student who gains a supernatural journal that kills anyone whose name he writes in it",
+   "known": 0.8,
+   "kind": "dark"
+  },
+  {
+   "label": "Demon Slayer: Kimetsu no Yaiba",
+   "qid": "Q24862683",
+   "fame": 0.642,
+   "author": "Koyoharu Gotōge",
+   "description": "Japanese manga series",
+   "hook": "follows a boy hunting man-eating creatures to save the sister they turned into one of their own",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "Naruto",
+   "qid": "Q26971382",
+   "fame": 0.641,
+   "author": "Masashi Kishimoto",
+   "description": "Japanese manga series",
+   "hook": "follows a young ninja with a fox spirit sealed inside him who dreams of leading his village",
+   "known": 0.8,
+   "kind": "action"
+  },
+  {
+   "label": "JoJo's Bizarre Adventure",
+   "qid": "Q696918",
+   "fame": 0.632,
+   "author": "Hirohiko Araki",
+   "description": "Japanese manga series",
+   "hook": "follows generations of one family battling supernatural foes with unique special powers",
+   "known": 0.4,
+   "kind": "action"
+  },
+  {
+   "label": "Frieren",
+   "qid": "Q98642652",
+   "fame": 0.62,
+   "author": "Kanehito Yamada",
+   "description": "Japanese manga series",
+   "hook": "follows a long-lived elf mage revisiting old companions long after their original quest ended",
+   "known": 0.4,
+   "kind": "action"
+  },
+  {
+   "label": "My Hero Academia",
+   "qid": "Q18047903",
+   "fame": 0.607,
+   "author": "Kōhei Horikoshi",
+   "description": "Japanese manga series",
+   "hook": "follows a boy born without powers who enrolls in an elite school training costumed champions",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "Chainsaw Man",
+   "qid": "Q65240543",
+   "fame": 0.606,
+   "author": "Tatsuki Fujimoto",
+   "description": "Japanese manga series",
+   "hook": "follows a poor young worker who fuses with his devil dog to battle other devils for money",
+   "known": 0.4,
+   "kind": "dark"
+  },
+  {
+   "label": "Hunter × Hunter",
+   "qid": "Q696071",
+   "fame": 0.602,
+   "author": "Yoshihiro Togashi",
+   "description": "Japanese manga series",
+   "hook": "follows a boy chasing his absent father while training to pass a brutal licensing exam",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "Sailor Moon",
+   "qid": "Q1643098",
+   "fame": 0.591,
+   "author": "Naoko Takeuchi",
+   "description": "Japanese manga series",
+   "hook": "follows a schoolgirl who transforms into a costumed guardian to protect the world from evil",
+   "known": 0.8,
+   "kind": "romance"
+  },
+  {
+   "label": "Doraemon",
+   "qid": "Q235311",
+   "fame": 0.586,
+   "author": "Fujiko F. Fujio",
+   "description": "Japanese manga series",
+   "hook": "follows a robotic cat from the future who helps a struggling boy using gadgets from his pocket",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Fullmetal Alchemist",
+   "qid": "Q189562",
+   "fame": 0.585,
+   "author": "Hiromu Arakawa",
+   "description": "Japanese manga series",
+   "hook": "follows two brothers seeking a legendary stone to restore the bodies they lost in a failed ritual",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "Black Clover",
+   "qid": "Q20638503",
+   "fame": 0.573,
+   "author": "Yūki Tabata",
+   "description": "Japanese manga series",
+   "hook": "follows a boy born without magic who dreams of becoming his kingdom's greatest wizard",
+   "known": 0.4,
+   "kind": "action"
+  },
+  {
+   "label": "Monster",
+   "qid": "Q858384",
+   "fame": 0.564,
+   "author": "Naoki Urasawa",
+   "description": "1994 manga series by Naoki Urasawa",
+   "hook": "follows a surgeon who saves a boy's life only to discover he grew into a serial killer",
+   "known": 0.4,
+   "kind": "dark"
+  },
+  {
+   "label": "Spy × Family",
+   "qid": "Q65231576",
+   "fame": 0.562,
+   "author": "Tatsuya Endō",
+   "description": "Japanese manga series",
+   "hook": "follows an undercover agent posing as a father in a fake household full of hidden secrets",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "The Quintessential Quintuplets",
+   "qid": "Q38277250",
+   "fame": 0.556,
+   "author": "Negi Haruba",
+   "description": "Japanese manga series",
+   "hook": "follows a tutor trying to win the heart of one of five identical sisters he's tutoring",
+   "known": 0.2,
+   "kind": "romance"
+  },
+  {
+   "label": "Akira",
+   "qid": "Q91486",
+   "fame": 0.549,
+   "author": "Katsuhiro Otomo",
+   "description": "manga series by Katsuhiro Otomo",
+   "hook": "follows a biker whose friend gains terrifying psychic powers after a secret government experiment",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "Haikyu!!",
+   "qid": "Q326642",
+   "fame": 0.549,
+   "author": "Haruichi Furudate",
+   "description": "Japanese manga series",
+   "hook": "follows a short but determined boy who joins his high school's volleyball team",
+   "known": 0.4,
+   "kind": "action"
+  },
+  {
+   "label": "Crayon Shin-chan",
+   "qid": "Q120300",
+   "fame": 0.543,
+   "author": "Yoshito Usui",
+   "description": "Japanese manga series",
+   "hook": "follows a mischievous five-year-old and his family's everyday comic misadventures",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Case Closed",
+   "qid": "Q3853685",
+   "fame": 0.542,
+   "author": "Gosho Aoyama",
+   "description": "Japanese manga series",
+   "hook": "follows a teen detective shrunk into a child's body who secretly solves crimes",
+   "known": 0.4,
+   "kind": "dark"
+  },
+  {
+   "label": "Tokyo Ghoul",
+   "qid": "Q11102941",
+   "fame": 0.542,
+   "author": "Sui Ishida",
+   "description": "Japanese manga series",
+   "hook": "follows a bookish student who becomes half of a flesh-eating creature after a near-fatal attack",
+   "known": 0.6,
+   "kind": "dark"
+  },
+  {
+   "label": "Gintama",
+   "qid": "Q764135",
+   "fame": 0.54,
+   "author": "Hideaki Sorachi",
+   "description": "Japanese manga series",
+   "hook": "follows a former warrior turned sword-for-hire helping oddball clients in an alternate-history Japan",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "Rurouni Kenshin",
+   "qid": "Q216439",
+   "fame": 0.54,
+   "author": "Nobuhiro Watsuki",
+   "description": "Japanese manga series",
+   "hook": "follows a former assassin who wanders feudal Japan seeking redemption without killing again",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "Inuyasha",
+   "qid": "Q182056",
+   "fame": 0.539,
+   "author": "Rumiko Takahashi",
+   "description": "Japanese manga series",
+   "hook": "follows a schoolgirl who falls through a well into feudal Japan and teams up with a half-demon",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "Yu Yu Hakusho",
+   "qid": "Q18225473",
+   "fame": 0.539,
+   "author": "Yoshihiro Togashi",
+   "description": "Japanese manga series",
+   "hook": "follows a delinquent teen who dies saving a child and returns as a spirit detective",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "Boruto",
+   "qid": "Q100774936",
+   "fame": 0.535,
+   "author": "Mikio Ikemoto",
+   "description": "Japanese manga series",
+   "hook": "follows the son of a legendary ninja growing up in his father's shadow while training as one himself",
+   "known": 0.4,
+   "kind": "action"
+  },
+  {
+   "label": "Vinland Saga",
+   "qid": "Q930990",
+   "fame": 0.532,
+   "author": "Makoto Yukimura",
+   "description": "Japanese manga series",
+   "hook": "follows a young Viking raider seeking revenge against the warrior who killed his father",
+   "known": 0.2,
+   "kind": "action"
+  },
+  {
+   "label": "Tokyo Revengers",
+   "qid": "Q63981675",
+   "fame": 0.531,
+   "author": "Ken Wakui",
+   "description": "Japanese manga series",
+   "hook": "follows a directionless man who leaps back in time to save an old girlfriend's life",
+   "known": 0.4,
+   "kind": "dark"
+  },
+  {
+   "label": "Ranma ½",
+   "qid": "Q272015",
+   "fame": 0.523,
+   "author": "Rumiko Takahashi",
+   "description": "Japanese manga series",
+   "hook": "follows a martial artist cursed to turn into a girl whenever splashed with cold water",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Initial D",
+   "qid": "Q164883",
+   "fame": 0.521,
+   "author": "Shūichi Shigeno",
+   "description": "Japanese manga series",
+   "hook": "follows a tofu delivery driver who becomes an unlikely star of illegal mountain street racing",
+   "known": 0.4,
+   "kind": "action"
+  },
+  {
+   "label": "Cardcaptor Sakura",
+   "qid": "Q49182",
+   "fame": 0.518,
+   "author": "Clamp",
+   "description": "Japanese manga series",
+   "hook": "follows a schoolgirl who must recapture magical cards she accidentally scattered across her town",
+   "known": 0.6,
+   "kind": "romance"
+  },
+  {
+   "label": "Assassination Classroom",
+   "qid": "Q3277067",
+   "fame": 0.517,
+   "author": "Yūsei Matsui",
+   "description": "Japanese manga series",
+   "hook": "follows a class of students secretly training to kill their tentacled teacher for a huge reward",
+   "known": 0.4,
+   "kind": "action"
+  },
+  {
+   "label": "Fist of the North Star",
+   "qid": "Q733498",
+   "fame": 0.517,
+   "author": "Buronson",
+   "description": "Japanese manga series",
+   "hook": "follows a wandering martial artist who defends the weak in a brutal wasteland after civilization's collapse",
+   "known": 0.4,
+   "kind": "action"
+  },
+  {
+   "label": "Nana",
+   "qid": "Q423658",
+   "fame": 0.517,
+   "author": "Ai Yazawa",
+   "description": "2000 manga series by Ai Yazawa",
+   "hook": "follows two young women who share the same first name and an apartment while chasing different dreams",
+   "known": 0.2,
+   "kind": "romance"
+  },
+  {
+   "label": "The Promised Neverland",
+   "qid": "Q28682687",
+   "fame": 0.517,
+   "author": "Kaiu Shirai",
+   "description": "Japanese manga series",
+   "hook": "follows orphaned children who discover their idyllic home is a farm raising them as food",
+   "known": 0.4,
+   "kind": "dark"
+  },
+  {
+   "label": "Astro Boy",
+   "qid": "Q673036",
+   "fame": 0.516,
+   "author": "Osamu Tezuka",
+   "description": "Japanese manga series",
+   "hook": "follows a robotic child built by a scientist to replace the son he lost",
+   "known": 0.8,
+   "kind": "action"
+  },
+  {
+   "label": "GTO: Great Teacher Onizuka",
+   "qid": "Q457981",
+   "fame": 0.511,
+   "author": "Tōru Fujisawa",
+   "description": "1997 manga series by Toru Fujisawa",
+   "hook": "follows a reformed former gang member who becomes a wildly unconventional homeroom instructor",
+   "known": 0.2,
+   "kind": "comedy"
+  },
+  {
+   "label": "Fairy Tail",
+   "qid": "Q18796",
+   "fame": 0.507,
+   "author": "Hiro Mashima",
+   "description": "Japanese manga series",
+   "hook": "follows a young wizard who joins a rowdy guild of magic users on chaotic adventures",
+   "known": 0.4,
+   "kind": "action"
+  },
+  {
+   "label": "Soul Eater",
+   "qid": "Q537389",
+   "fame": 0.506,
+   "author": "Atsushi Ōkubo",
+   "description": "Japanese manga series",
+   "hook": "follows students at an academy who wield living weapons to hunt corrupted spirits",
+   "known": 0.2,
+   "kind": "action"
+  },
+  {
+   "label": "Ouran High School Host Club",
+   "qid": "Q327773",
+   "fame": 0.501,
+   "author": "Bisco Hatori",
+   "description": "Japanese manga series",
+   "hook": "follows a scholarship student mistaken for a boy who joins wealthy classmates entertaining bored girls",
+   "known": 0.4,
+   "kind": "romance"
+  },
+  {
+   "label": "Your Lie in April",
+   "qid": "Q11419997",
+   "fame": 0.501,
+   "author": "Naoshi Arakawa",
+   "description": "Japanese manga series",
+   "hook": "follows a piano prodigy who stopped playing until a spirited violinist pulls him back to music",
+   "known": 0.2,
+   "kind": "romance"
+  },
+  {
+   "label": "Elfen Lied",
+   "qid": "Q214771",
+   "fame": 0.495,
+   "author": "Lynn Okamoto",
+   "description": "Japanese manga series",
+   "hook": "follows a mutant girl with retractable horns and deadly invisible limbs hiding among humans",
+   "known": 0.2,
+   "kind": "dark"
+  },
+  {
+   "label": "Hellsing",
+   "qid": "Q223155",
+   "fame": 0.495,
+   "author": "Kouta Hirano",
+   "description": "Japanese manga series",
+   "hook": "follows a vampire enforcer working for a secret organization that hunts undead monsters",
+   "known": 0.2,
+   "kind": "dark"
+  },
+  {
+   "label": "Black Butler",
+   "qid": "Q696302",
+   "fame": 0.494,
+   "author": "Yana Toboso",
+   "description": "Japanese manga series",
+   "hook": "follows a young English nobleman bound by contract to a demonic and impeccably proper servant",
+   "known": 0.4,
+   "kind": "dark"
+  },
+  {
+   "label": "Fruits Basket",
+   "qid": "Q216204",
+   "fame": 0.493,
+   "author": "Natsuki Takaya",
+   "description": "Japanese manga series",
+   "hook": "follows an orphaned girl who moves in with a family cursed to turn into animals of the zodiac",
+   "known": 0.4,
+   "kind": "romance"
+  },
+  {
+   "label": "Black Lagoon",
+   "qid": "Q423652",
+   "fame": 0.49,
+   "author": "Rei Hiroe",
+   "description": "Japanese manga series",
+   "hook": "follows a former salaryman who joins a band of mercenaries running contraband through Southeast Asia",
+   "known": 0.2,
+   "kind": "dark"
+  },
+  {
+   "label": "Azumanga Daioh",
+   "qid": "Q80873",
+   "fame": 0.483,
+   "author": "Kiyohiko Azuma",
+   "description": "Japanese manga series",
+   "hook": "follows a group of high school girls through slice-of-life comedy in their everyday classroom",
+   "known": 0.2,
+   "kind": "manga"
+  },
+  {
+   "label": "Captain Tsubasa",
+   "qid": "Q647486",
+   "fame": 0.479,
+   "author": "Yōichi Takahashi",
+   "description": "Japanese manga series",
+   "hook": "follows a talented young boy chasing his dream of leading his country to soccer's biggest trophy",
+   "known": 0.6,
+   "kind": "manga"
+  },
+  {
+   "label": "Saint Seiya",
+   "qid": "Q275956",
+   "fame": 0.478,
+   "author": "Masami Kurumada",
+   "description": "Japanese manga series",
+   "hook": "follows young warriors who don sacred armor to protect a goddess reborn among humans",
+   "known": 0.4,
+   "kind": "manga"
+  },
+  {
+   "label": "Urusei Yatsura",
+   "qid": "Q715723",
+   "fame": 0.478,
+   "author": "Rumiko Takahashi",
+   "description": "Japanese manga series",
+   "hook": "follows an unlucky teen bound to a mischievous alien girl after losing a game of tag",
+   "known": 0.4,
+   "kind": "manga"
+  },
+  {
+   "label": "Future Diary",
+   "qid": "Q494357",
+   "fame": 0.473,
+   "author": "Sakae Esuno",
+   "description": "Japanese manga series",
+   "hook": "follows a loner whose phone predicts events before they happen, dragging him into a deadly survival game",
+   "known": 0.2,
+   "kind": "manga"
+  },
+  {
+   "label": "Slam Dunk",
+   "qid": "Q714760",
+   "fame": 0.472,
+   "author": "Takehiko Inoue",
+   "description": "Japanese manga series",
+   "hook": "follows a delinquent who joins his high school's basketball team to impress a girl he likes",
+   "known": 0.6,
+   "kind": "manga"
+  },
+  {
+   "label": "The Seven Deadly Sins",
+   "qid": "Q9048543",
+   "fame": 0.468,
+   "author": "Nakaba Suzuki",
+   "description": "Japanese manga series",
+   "hook": "follows a band of disgraced former knights reuniting to save a kingdom from a tyrannical takeover",
+   "known": 0.4,
+   "kind": "manga"
+  },
+  {
+   "label": "K-On!",
+   "qid": "Q482482",
+   "fame": 0.466,
+   "author": "Kakifly",
+   "description": "Japanese manga series",
+   "hook": "follows a group of high school girls who form a band despite barely knowing how to play music",
+   "known": 0.2,
+   "kind": "manga"
+  },
+  {
+   "label": "Chobits",
+   "qid": "Q221369",
+   "fame": 0.46,
+   "author": "Clamp",
+   "description": "Japanese manga series",
+   "hook": "follows a young man who finds and raises an abandoned humanoid computer built to love",
+   "known": 0.4,
+   "kind": "manga"
+  },
+  {
+   "label": "Lucky Star",
+   "qid": "Q839091",
+   "fame": 0.459,
+   "author": "Kagami Yoshimizu",
+   "description": "Japanese manga series",
+   "hook": "follows a group of schoolgirls chatting through mundane everyday moments and shared hobbies",
+   "known": 0.2,
+   "kind": "manga"
+  }
+ ]
+}

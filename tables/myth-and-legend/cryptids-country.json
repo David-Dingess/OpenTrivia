@@ -1,0 +1,187 @@
+{
+ "id": "table.myth-and-legend.cryptids-country",
+ "kind": "table",
+ "title": "Cryptids and where they are said to live",
+ "genre": "society",
+ "category": "myth-and-legend",
+ "topic": "cryptids",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?regionLabel WHERE { VALUES (?item ?regionLabel) { (wd:Q49658 \"Scotland\") (wd:Q44810 \"North America\") (wd:Q129628 \"Himalayas\") (wd:Q183571 \"Puerto Rico\") (wd:Q746248 \"West Virginia\") (wd:Q668330 \"New Jersey\") (wd:Q1061045 \"Lake Champlain\") (wd:Q910763 \"British Columbia\") (wd:Q555716 \"Congo Basin\") (wd:Q272149 \"Mongolia\") (wd:Q973546 \"Australia\") (wd:Q964575 \"Australia\") (wd:Q2062425 \"Florida\") (wd:Q830569 \"Cornwall\") (wd:Q2419149 \"West Virginia\") (wd:Q1252960 \"Massachusetts\") (wd:Q605438 \"Amazon rainforest\") (wd:Q679574 \"Sumatra\") (wd:Q56276195 \"California\") (wd:Q4090945 \"Louisiana\") (wd:Q4736103 \"Georgia (US state)\") (wd:Q1814759 \"British Columbia\") (wd:Q908923 \"Wyoming\") (wd:Q977902 \"Kenya\") (wd:Q3866196 \"Arkansas\") (wd:Q3941197 \"Papua New Guinea\") (wd:Q655582 \"Indonesia\") (wd:Q2426596 \"Cornwall\") (wd:Q1511328 \"Wisconsin\") (wd:Q2049563 \"Exmoor\") (wd:Q880558 \"East Anglia\") (wd:Q1503117 \"Scotland\") (wd:Q4819356 \"Australia\") (wd:Q1072924 \"Japan\") (wd:Q2006961 \"China\") (wd:Q6837539 \"Michigan\") (wd:Q929345 \"Alps\") (wd:Q3866196 \"Arkansas\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T04:19:39.143Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T04:19:39.143Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "region",
+   "label": "Said to live in",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "cryptid",
+  "many": "cryptids",
+  "wildcard": "place",
+  "theLabels": [
+   "Loch Ness Monster",
+   "Flatwoods monster",
+   "Mongolian death worm",
+   "Fresno nightcrawler",
+   "Yeti"
+  ],
+  "columns": {
+   "region": {
+    "role": "link",
+    "pick": "Where is {label} said to live?",
+    "statement": "{label} is said to live in {value}.",
+    "match": "Match each cryptid to where it is said to live.",
+    "odd": "Three of these cryptids are said to live in {value}. Which one isn't?",
+    "all": "Tap all {n} cryptids said to live in {value}.",
+    "reverse": "Which of these is said to live in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Bigfoot",
+   "qid": "Q44810",
+   "fame": 0.623,
+   "region": "North America",
+   "description": "large and hairy ape-like mythical creature purported to inhabit forests in North America",
+   "hook": "is a huge, hairy humanoid said to roam forests, known for giant footprint casts and grainy footage",
+   "known": 0.8,
+   "kind": "north american"
+  },
+  {
+   "label": "Loch Ness Monster",
+   "qid": "Q49658",
+   "fame": 0.615,
+   "region": "Scotland",
+   "description": "lake monster of Scottish folklore",
+   "hook": "is a long-necked, humped water beast said to lurk in a deep lake, known for disputed photographs",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Chupacabra",
+   "qid": "Q183571",
+   "fame": 0.602,
+   "region": "Puerto Rico",
+   "description": "legendary creature; first purported sighting in Puerto Rico",
+   "hook": "is a legendary creature said to attack livestock, especially goats, and drain their blood",
+   "known": 0.6,
+   "kind": "americas"
+  },
+  {
+   "label": "Mothman",
+   "qid": "Q746248",
+   "fame": 0.594,
+   "region": "West Virginia",
+   "description": "a singular legendary creature based around West Virginia, United States",
+   "hook": "is a bird-like humanoid cryptid, possibly just misidentified sandhill cranes or herons",
+   "known": 0.6,
+   "kind": "north american"
+  },
+  {
+   "label": "Flatwoods monster",
+   "qid": "Q2419149",
+   "fame": 0.566,
+   "region": "West Virginia",
+   "description": "Folklore creature",
+   "hook": null,
+   "known": 0.2,
+   "kind": "north american"
+  },
+  {
+   "label": "Yeti",
+   "qid": "Q129628",
+   "fame": 0.551,
+   "region": "Himalayas",
+   "description": "ape-like creature purported to inhabit the Himalayan mountain range in Asia",
+   "hook": "is a large, hairy humanoid nicknamed the Abominable Snowman, said to haunt snowy peaks",
+   "known": 0.8,
+   "kind": "asian"
+  },
+  {
+   "label": "drop bear",
+   "qid": "Q4819356",
+   "fame": 0.541,
+   "region": "Australia",
+   "description": "famous hoax in contemporary Australian folklore",
+   "hook": "is a tall-tale hoax of a vicious, carnivorous koala that pounces from trees onto tourists",
+   "known": 0.6,
+   "kind": "australian"
+  },
+  {
+   "label": "jackalope",
+   "qid": "Q908923",
+   "fame": 0.522,
+   "region": "Wyoming",
+   "description": "mythical animal of North America",
+   "hook": "is a rabbit sporting antelope horns, popularized by taxidermy mounts",
+   "known": 0.4,
+   "kind": "north american"
+  },
+  {
+   "label": "Mokele-mbembe",
+   "qid": "Q555716",
+   "fame": 0.485,
+   "region": "Congo Basin",
+   "description": "water-dwelling entity that supposedly lives in the Congo River Basin",
+   "hook": null,
+   "known": 0.2,
+   "kind": "african"
+  },
+  {
+   "label": "bunyip",
+   "qid": "Q973546",
+   "fame": 0.481,
+   "region": "Australia",
+   "description": "mythical creature from Aboriginal mythology",
+   "hook": "is a swamp-lurking creature of Aboriginal mythology said to haunt billabongs and waterholes",
+   "known": 0.4,
+   "kind": "australian"
+  },
+  {
+   "label": "Fresno nightcrawler",
+   "qid": "Q56276195",
+   "fame": 0.466,
+   "region": "California",
+   "description": "cryptid from Fresno, California",
+   "hook": null,
+   "known": 0.05,
+   "kind": "north american"
+  },
+  {
+   "label": "Mongolian death worm",
+   "qid": "Q272149",
+   "fame": 0.464,
+   "region": "Mongolia",
+   "description": "legendary deadly cryptid of the Gobi desert",
+   "hook": null,
+   "known": 0.2,
+   "kind": "asian"
+  }
+ ]
+}

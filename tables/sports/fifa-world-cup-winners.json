@@ -1,0 +1,217 @@
+{
+ "id": "table.sports.fifa-world-cup-winners",
+ "kind": "table",
+ "title": "FIFA World Cup editions: year and winner",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "soccer",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?year ?winnerLabel ?hostLabel WHERE { { SELECT ?item (MIN(?d) AS ?year) (SAMPLE(?w) AS ?winner) (SAMPLE(?h) AS ?host) (COUNT(DISTINCT ?h) AS ?nHost) WHERE { ?item wdt:P3450 wd:Q19317 ; wdt:P1346 ?w ; (wdt:P580|wdt:P585) ?d . OPTIONAL { ?item wdt:P17 ?h } } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nHost <= 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T04:00:43.586Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T04:00:43.586Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "year",
+   "label": "Year",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "winner",
+   "label": "Winner",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "host",
+   "label": "Host country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "item",
+  "many": "items",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "2022 FIFA World Cup",
+   "qid": "Q284163",
+   "fame": 0.651,
+   "year": 2022,
+   "winner": "Argentina men's national football team",
+   "host": "Qatar",
+   "description": "22nd FIFA World Cup"
+  },
+  {
+   "label": "2014 FIFA World Cup",
+   "qid": "Q79859",
+   "fame": 0.631,
+   "year": 2014,
+   "winner": "Germany men's national association football team",
+   "host": "Brazil",
+   "description": "20th FIFA World Cup, held in Brazil"
+  },
+  {
+   "label": "2018 FIFA World Cup",
+   "qid": "Q170645",
+   "fame": 0.63,
+   "year": 2018,
+   "winner": "France men's national association football team",
+   "host": "Russia",
+   "description": "21st FIFA World Cup, held in Russia"
+  },
+  {
+   "label": "2010 FIFA World Cup",
+   "qid": "Q176883",
+   "fame": 0.625,
+   "year": 2010,
+   "winner": "Spain men's national football team",
+   "host": "South Africa",
+   "description": "19th FIFA World Cup, held in South Africa"
+  },
+  {
+   "label": "2006 FIFA World Cup",
+   "qid": "Q37285",
+   "fame": 0.616,
+   "year": 2006,
+   "winner": "Italy men's national association football team",
+   "host": "Germany",
+   "description": "18th FIFA World Cup, held in Germany"
+  },
+  {
+   "label": "1998 FIFA World Cup",
+   "qid": "Q101730",
+   "fame": 0.588,
+   "year": 1998,
+   "winner": "France men's national association football team",
+   "host": "France",
+   "description": "16th FIFA football World Cup finals, held in France"
+  },
+  {
+   "label": "1994 FIFA World Cup",
+   "qid": "Q101751",
+   "fame": 0.584,
+   "year": 1994,
+   "winner": "Brazil men's national football team",
+   "host": "United States",
+   "description": "15th FIFA World Cup, held in United States"
+  },
+  {
+   "label": "1986 FIFA World Cup",
+   "qid": "Q46938",
+   "fame": 0.555,
+   "year": 1986,
+   "winner": "Argentina men's national football team",
+   "host": "Mexico",
+   "description": "13th FIFA World Cup, held in Mexico"
+  },
+  {
+   "label": "1930 FIFA World Cup",
+   "qid": "Q48432",
+   "fame": 0.55,
+   "year": 1930,
+   "winner": "Uruguay men's national football team",
+   "host": "Uruguay",
+   "description": "1st FIFA World Cup, held in Uruguay"
+  },
+  {
+   "label": "1982 FIFA World Cup",
+   "qid": "Q46934",
+   "fame": 0.547,
+   "year": 1982,
+   "winner": "Italy men's national association football team",
+   "host": "Spain",
+   "description": "12th FIFA World Cup, held in Spain"
+  },
+  {
+   "label": "1966 FIFA World Cup",
+   "qid": "Q134202",
+   "fame": 0.542,
+   "year": 1966,
+   "winner": "England men's national association football team",
+   "host": "United Kingdom",
+   "description": "8th FIFA World Cup, held in England"
+  },
+  {
+   "label": "1970 FIFA World Cup",
+   "qid": "Q132664",
+   "fame": 0.525,
+   "year": 1970,
+   "winner": "Brazil men's national football team",
+   "host": "Mexico",
+   "description": "9th FIFA World Cup, held in Mexico"
+  },
+  {
+   "label": "1978 FIFA World Cup",
+   "qid": "Q46943",
+   "fame": 0.524,
+   "year": 1978,
+   "winner": "Argentina men's national football team",
+   "host": "Argentina",
+   "description": "11th FIFA World Cup, held in Argentina"
+  },
+  {
+   "label": "1958 FIFA World Cup",
+   "qid": "Q132533",
+   "fame": 0.508,
+   "year": 1958,
+   "winner": "Brazil men's national football team",
+   "host": "Sweden",
+   "description": "6th FIFA World Cup, held in Sweden"
+  },
+  {
+   "label": "1950 FIFA World Cup",
+   "qid": "Q132515",
+   "fame": 0.498,
+   "year": 1950,
+   "winner": "Uruguay men's national football team",
+   "host": "Brazil",
+   "description": "4th FIFA World Cup, held in Brazil"
+  },
+  {
+   "label": "1934 FIFA World Cup",
+   "qid": "Q1477177",
+   "fame": 0.495,
+   "year": 1934,
+   "winner": "Italy men's national association football team",
+   "host": "Italy",
+   "description": "2nd FIFA World Cup, held in Italy"
+  },
+  {
+   "label": "1962 FIFA World Cup",
+   "qid": "Q160813",
+   "fame": 0.494,
+   "year": 1962,
+   "winner": "Brazil men's national football team",
+   "host": "Chile",
+   "description": "7th FIFA World Cup, held in Chile"
+  },
+  {
+   "label": "1938 FIFA World Cup",
+   "qid": "Q131591",
+   "fame": 0.492,
+   "year": 1938,
+   "winner": "Italy men's national association football team",
+   "host": "France",
+   "description": "3rd FIFA World Cup, held in France"
+  }
+ ]
+}

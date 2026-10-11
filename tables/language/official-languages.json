@@ -1,0 +1,1169 @@
+{
+ "id": "table.language.official-languages",
+ "kind": "table",
+ "title": "Countries and their official language",
+ "genre": "society",
+ "category": "language",
+ "topic": "languages",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?langLabel WHERE { { SELECT ?item (SAMPLE(?l) AS ?lang) (COUNT(DISTINCT ?l) AS ?n) WHERE { ?item wdt:P31 wd:Q3624078 . FILTER NOT EXISTS { ?item wdt:P31 wd:Q3024240 } FILTER NOT EXISTS { ?item wdt:P576 [] } ?item wdt:P37 ?l . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?n = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T03:49:39.142Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T03:49:39.142Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "official_language",
+   "label": "Official language",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "country",
+  "many": "countries",
+  "wildcard": "place",
+  "columns": {
+   "official_language": {
+    "role": "link",
+    "pick": "What is the official language of {label}?",
+    "statement": "The official language of {label} is {value}.",
+    "match": "Match each country to its official language.",
+    "odd": "Three of these countries have {value} as an official language. Which one doesn't?",
+    "all": "Tap all {n} countries with {value} as an official language."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Nepal",
+   "qid": "Q837",
+   "fame": 0.831,
+   "official_language": "Nepali",
+   "description": "country in South Asia",
+   "hook": "is home to Mount Everest, the world's tallest mountain",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "United Kingdom",
+   "qid": "Q145",
+   "fame": 0.829,
+   "official_language": "English",
+   "description": "island country in north-west Europe",
+   "hook": "is home to Big Ben and Buckingham Palace",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "China",
+   "qid": "Q148",
+   "fame": 0.797,
+   "official_language": "Putonghua",
+   "description": "country in East Asia",
+   "hook": "is home to the Great Wall, stretching thousands of miles",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Russia",
+   "qid": "Q159",
+   "fame": 0.787,
+   "official_language": "Russian",
+   "description": "country in Eastern Europe and Northern Asia, the largest in the world by area",
+   "hook": "is home to the Kremlin and Red Square in its capital",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Australia",
+   "qid": "Q408",
+   "fame": 0.786,
+   "official_language": "English",
+   "description": "country in Oceania",
+   "hook": "is home to the Sydney Opera House and the Great Barrier Reef",
+   "known": 0.8,
+   "kind": "asian"
+  },
+  {
+   "label": "Germany",
+   "qid": "Q183",
+   "fame": 0.786,
+   "official_language": "German",
+   "description": "country in Central Europe",
+   "hook": "is home to Oktoberfest and the Brandenburg Gate",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Israel",
+   "qid": "Q801",
+   "fame": 0.783,
+   "official_language": "Hebrew",
+   "description": "country in West Asia",
+   "hook": "is home to the ancient city of Jerusalem",
+   "known": 0.8,
+   "kind": "middle-eastern"
+  },
+  {
+   "label": "Japan",
+   "qid": "Q17",
+   "fame": 0.776,
+   "official_language": "Japanese",
+   "description": "island country in East Asia",
+   "hook": "is home to Mount Fuji and ancient samurai traditions",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Yemen",
+   "qid": "Q805",
+   "fame": 0.775,
+   "official_language": "Arabic",
+   "description": "country in West Asia",
+   "hook": "is home to the ancient walled city of Sana'a",
+   "known": 0.2,
+   "kind": "middle-eastern"
+  },
+  {
+   "label": "Turkey",
+   "qid": "Q43",
+   "fame": 0.757,
+   "official_language": "Turkish",
+   "description": "country in West Asia and Southeast Europe",
+   "hook": "straddles two continents, split by the Bosphorus strait",
+   "known": 0.8,
+   "kind": "middle-eastern"
+  },
+  {
+   "label": "Brazil",
+   "qid": "Q155",
+   "fame": 0.756,
+   "official_language": "Portuguese",
+   "description": "country in South America",
+   "hook": "is home to the Amazon rainforest and the Christ the Redeemer statue",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "France",
+   "qid": "Q142",
+   "fame": 0.755,
+   "official_language": "French",
+   "description": "country in Western Europe and other continents (through its overseas territories in America, Africa and Oceania)",
+   "hook": "is home to the Eiffel Tower and the Louvre museum",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Iran",
+   "qid": "Q794",
+   "fame": 0.755,
+   "official_language": "Persian",
+   "description": "country in Western Asia",
+   "hook": "is home to the ancient ruins of Persepolis",
+   "known": 0.8,
+   "kind": "middle-eastern"
+  },
+  {
+   "label": "Indonesia",
+   "qid": "Q252",
+   "fame": 0.752,
+   "official_language": "Indonesian",
+   "description": "island country in Southeast Asia and Oceania",
+   "hook": "is made up of more islands than any other country on Earth",
+   "known": 0.8,
+   "kind": "asian"
+  },
+  {
+   "label": "Saudi Arabia",
+   "qid": "Q851",
+   "fame": 0.752,
+   "official_language": "Arabic",
+   "description": "country in West Asia",
+   "hook": "is home to the holy cities of Mecca and Medina",
+   "known": 0.8,
+   "kind": "middle-eastern"
+  },
+  {
+   "label": "Spain",
+   "qid": "Q29",
+   "fame": 0.742,
+   "official_language": "Spanish",
+   "description": "country in southwestern Europe with territories in Africa",
+   "hook": "is home to flamenco dancing and the running of the bulls",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Italy",
+   "qid": "Q38",
+   "fame": 0.739,
+   "official_language": "Italian",
+   "description": "country in southern Europe",
+   "hook": "is home to the Colosseum and the Leaning Tower of Pisa",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "United Arab Emirates",
+   "qid": "Q878",
+   "fame": 0.738,
+   "official_language": "Arabic",
+   "description": "country in Western Asia",
+   "hook": "is home to the world's tallest building, the Burj Khalifa",
+   "known": 0.8,
+   "kind": "middle-eastern"
+  },
+  {
+   "label": "Malaysia",
+   "qid": "Q833",
+   "fame": 0.735,
+   "official_language": "Malay",
+   "description": "country in Southeast Asia",
+   "hook": "is home to the Petronas Towers, once the world's tallest twin towers",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "Iceland",
+   "qid": "Q189",
+   "fame": 0.734,
+   "official_language": "Icelandic",
+   "description": "Nordic island country in the North Atlantic Ocean",
+   "hook": "is famous for its geysers, glaciers, and the Northern Lights",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "Myanmar",
+   "qid": "Q836",
+   "fame": 0.734,
+   "official_language": "Burmese",
+   "description": "country in Southeast Asia",
+   "hook": "is home to thousands of ancient Buddhist temples at Bagan",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Kyrgyzstan",
+   "qid": "Q813",
+   "fame": 0.733,
+   "official_language": "Kyrgyz",
+   "description": "sovereign state in Central Asia",
+   "hook": "is famous for its nomadic horse-riding traditions and towering mountains",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Poland",
+   "qid": "Q36",
+   "fame": 0.733,
+   "official_language": "Polish",
+   "description": "country in Central Europe",
+   "hook": "is home to the medieval old town of Krakow",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Sweden",
+   "qid": "Q34",
+   "fame": 0.733,
+   "official_language": "Swedish",
+   "description": "country in Northern Europe",
+   "hook": "gave the world flat-pack furniture and a famous pop quartet",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Vietnam",
+   "qid": "Q881",
+   "fame": 0.732,
+   "official_language": "Vietnamese",
+   "description": "country in Southeast Asia",
+   "hook": "is famous for its limestone cliffs rising from Halong Bay",
+   "known": 0.8,
+   "kind": "asian"
+  },
+  {
+   "label": "Czech Republic",
+   "qid": "Q213",
+   "fame": 0.73,
+   "official_language": "Czech",
+   "description": "country in Central Europe",
+   "hook": "is home to the fairy-tale castles of Prague",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Portugal",
+   "qid": "Q45",
+   "fame": 0.73,
+   "official_language": "Portuguese",
+   "description": "country in Southwestern Europe",
+   "hook": "is famous for its seafaring explorers who charted routes to Africa and Asia",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Argentina",
+   "qid": "Q414",
+   "fame": 0.729,
+   "official_language": "Spanish",
+   "description": "country in South America",
+   "hook": "is home to tango dancing and the vast Patagonian steppes",
+   "known": 0.8,
+   "kind": "american"
+  },
+  {
+   "label": "Ukraine",
+   "qid": "Q212",
+   "fame": 0.724,
+   "official_language": "Ukrainian",
+   "description": "country in Eastern Europe",
+   "hook": "is home to Europe's second-longest river, the Dnieper",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Armenia",
+   "qid": "Q399",
+   "fame": 0.723,
+   "official_language": "Armenian",
+   "description": "sovereign state in the South Caucasus region of Eurasia",
+   "hook": "is home to one of the world's oldest Christian churches",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Bangladesh",
+   "qid": "Q902",
+   "fame": 0.723,
+   "official_language": "Bangla",
+   "description": "country in South Asia",
+   "hook": "is home to the Sundarbans, the largest mangrove forest on Earth",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "Georgia",
+   "qid": "Q230",
+   "fame": 0.722,
+   "official_language": "Georgian",
+   "description": "country in the Caucasus region of Europe and Asia",
+   "hook": "is considered the birthplace of wine, with millennia of winemaking history",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Uzbekistan",
+   "qid": "Q265",
+   "fame": 0.72,
+   "official_language": "Uzbek",
+   "description": "sovereign state in Central Asia",
+   "hook": "is home to the ancient Silk Road cities of Samarkand and Bukhara",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Monaco",
+   "qid": "Q235",
+   "fame": 0.717,
+   "official_language": "French",
+   "description": "microstate in Western Europe",
+   "hook": "is famous for its Grand Prix street race and glamorous casino",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "Liechtenstein",
+   "qid": "Q347",
+   "fame": 0.716,
+   "official_language": "German",
+   "description": "country in Central Europe",
+   "hook": "is one of the smallest countries in the world, nestled in the Alps",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Albania",
+   "qid": "Q222",
+   "fame": 0.714,
+   "official_language": "Albanian",
+   "description": "country in southeastern Europe",
+   "hook": "is famous for its rugged coastline along the Adriatic and Ionian seas",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Serbia",
+   "qid": "Q403",
+   "fame": 0.714,
+   "official_language": "Serbian",
+   "description": "country in Southeast Europe",
+   "hook": "is home to the historic Belgrade Fortress at the meeting of two rivers",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "Thailand",
+   "qid": "Q869",
+   "fame": 0.713,
+   "official_language": "Thai",
+   "description": "country in Southeast Asia",
+   "hook": "is famous for its golden Buddhist temples and tropical beaches",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "Egypt",
+   "qid": "Q79",
+   "fame": 0.711,
+   "official_language": "Arabic",
+   "description": "country in Northeast Africa and Southwest Asia",
+   "hook": "is home to the Great Pyramids of Giza and the Sphinx",
+   "known": 0.8,
+   "kind": "african"
+  },
+  {
+   "label": "Ethiopia",
+   "qid": "Q115",
+   "fame": 0.711,
+   "official_language": "Amharic",
+   "description": "country in the Horn of Africa",
+   "hook": "is believed to be the birthplace of coffee",
+   "known": 0.6,
+   "kind": "african"
+  },
+  {
+   "label": "Croatia",
+   "qid": "Q224",
+   "fame": 0.71,
+   "official_language": "Croatian",
+   "description": "country in Central Europe",
+   "hook": "is home to the walled coastal city of Dubrovnik",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "Greece",
+   "qid": "Q41",
+   "fame": 0.709,
+   "official_language": "Greek",
+   "description": "country in Southeast Europe",
+   "hook": "is home to the ancient Acropolis and was the birthplace of the Olympic Games",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Nigeria",
+   "qid": "Q1033",
+   "fame": 0.707,
+   "official_language": "English",
+   "description": "sovereign state in West Africa",
+   "hook": "is home to Nollywood, one of the world's largest film industries",
+   "known": 0.6,
+   "kind": "african"
+  },
+  {
+   "label": "Democratic Republic of the Congo",
+   "qid": "Q974",
+   "fame": 0.705,
+   "official_language": "French",
+   "description": "country in Central Africa",
+   "hook": "is home to much of the world's second-largest rainforest",
+   "known": 0.4,
+   "kind": "african"
+  },
+  {
+   "label": "Syria",
+   "qid": "Q858",
+   "fame": 0.705,
+   "official_language": "Arabic",
+   "description": "country in West Asia",
+   "hook": "is home to Damascus, one of the oldest continuously inhabited cities on Earth",
+   "known": 0.6,
+   "kind": "middle-eastern"
+  },
+  {
+   "label": "Montenegro",
+   "qid": "Q236",
+   "fame": 0.703,
+   "official_language": "Montenegrin",
+   "description": "country in southeastern Europe",
+   "hook": "is famous for its dramatic fjord-like Bay of Kotor",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Lithuania",
+   "qid": "Q37",
+   "fame": 0.702,
+   "official_language": "Lithuanian",
+   "description": "country in northeastern Europe",
+   "hook": "is home to Trakai Island Castle, set on a lake",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Romania",
+   "qid": "Q218",
+   "fame": 0.699,
+   "official_language": "Romanian",
+   "description": "country in Southeast Europe",
+   "hook": "is home to Bran Castle, long linked to the Dracula legend",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "Mongolia",
+   "qid": "Q711",
+   "fame": 0.698,
+   "official_language": "Mongolian",
+   "description": "country in East Asia",
+   "hook": "is famous for its vast steppes and nomadic herding traditions",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Slovenia",
+   "qid": "Q215",
+   "fame": 0.696,
+   "official_language": "Slovene",
+   "description": "country in Central Europe",
+   "hook": "is home to Lake Bled and its fairytale island church",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Guyana",
+   "qid": "Q734",
+   "fame": 0.691,
+   "official_language": "English",
+   "description": "country in South America",
+   "hook": "is home to Kaieteur Falls, one of the tallest single-drop waterfalls on Earth",
+   "known": 0.2,
+   "kind": "american"
+  },
+  {
+   "label": "Colombia",
+   "qid": "Q739",
+   "fame": 0.69,
+   "official_language": "Spanish",
+   "description": "country in South America",
+   "hook": "is famous for its coffee-growing highlands and vibrant Caribbean coast",
+   "known": 0.8,
+   "kind": "american"
+  },
+  {
+   "label": "Andorra",
+   "qid": "Q228",
+   "fame": 0.689,
+   "official_language": "Catalan",
+   "description": "sovereign microstate between France and Spain, in Western Europe",
+   "hook": "is tucked entirely within the Pyrenees mountains",
+   "known": 0.2,
+   "kind": "european"
+  },
+  {
+   "label": "Bhutan",
+   "qid": "Q917",
+   "fame": 0.687,
+   "official_language": "Dzongkha",
+   "description": "sovereign state in South Asia",
+   "hook": "measures its progress by Gross National Happiness rather than by wealth alone",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Lebanon",
+   "qid": "Q822",
+   "fame": 0.687,
+   "official_language": "Arabic",
+   "description": "country in West Asia",
+   "hook": "is home to the ancient Roman ruins of Baalbek",
+   "known": 0.6,
+   "kind": "middle-eastern"
+  },
+  {
+   "label": "Maldives",
+   "qid": "Q826",
+   "fame": 0.687,
+   "official_language": "Maldivian",
+   "description": "sovereign state in South Asia, situated on an archipelago in the Arabian Sea",
+   "hook": "is famous for its coral atolls and overwater bungalows",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Bulgaria",
+   "qid": "Q219",
+   "fame": 0.685,
+   "official_language": "Bulgarian",
+   "description": "country in southeast Europe",
+   "hook": "is home to the ancient city of Plovdiv, among the oldest in Europe",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "Slovakia",
+   "qid": "Q214",
+   "fame": 0.685,
+   "official_language": "Slovak",
+   "description": "country in Central Europe",
+   "hook": "is home to the fairy-tale spires of Bratislava Castle",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "Suriname",
+   "qid": "Q730",
+   "fame": 0.684,
+   "official_language": "Dutch",
+   "description": "country in South America",
+   "hook": "is home to vast stretches of untouched Amazonian rainforest",
+   "known": 0.2,
+   "kind": "american"
+  },
+  {
+   "label": "Cuba",
+   "qid": "Q241",
+   "fame": 0.683,
+   "official_language": "Spanish",
+   "description": "sovereign state situated on an island in the Caribbean Sea",
+   "hook": "is famous for its classic vintage American cars and cigars",
+   "known": 0.8,
+   "kind": "american"
+  },
+  {
+   "label": "Hungary",
+   "qid": "Q28",
+   "fame": 0.683,
+   "official_language": "Hungarian",
+   "description": "country in Central Europe",
+   "hook": "is known for its thermal baths and the grand parliament building beside the Danube",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Dominican Republic",
+   "qid": "Q786",
+   "fame": 0.682,
+   "official_language": "Spanish",
+   "description": "island sovereign state in the Caribbean Sea",
+   "hook": "shares a Caribbean island with Haiti and is famous for its all-inclusive beach resorts",
+   "known": 0.6,
+   "kind": "american"
+  },
+  {
+   "label": "Estonia",
+   "qid": "Q191",
+   "fame": 0.682,
+   "official_language": "Estonian",
+   "description": "country in Northern Europe",
+   "hook": "is known for the medieval old town of its capital and its pioneering e-government services",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Turkmenistan",
+   "qid": "Q874",
+   "fame": 0.681,
+   "official_language": "Turkmen",
+   "description": "country in Central Asia",
+   "hook": "is home to a fiery natural gas crater in the desert nicknamed the Door to Hell",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Latvia",
+   "qid": "Q211",
+   "fame": 0.679,
+   "official_language": "Latvian",
+   "description": "sovereign state in northeastern Europe",
+   "hook": "is known for its Baltic amber and the Art Nouveau architecture filling its capital",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Jordan",
+   "qid": "Q810",
+   "fame": 0.677,
+   "official_language": "Arabic",
+   "description": "country in West Asia",
+   "hook": "is home to Petra, the ancient city carved directly into pink sandstone cliffs",
+   "known": 0.6,
+   "kind": "middle-eastern"
+  },
+  {
+   "label": "Chile",
+   "qid": "Q298",
+   "fame": 0.676,
+   "official_language": "Spanish",
+   "description": "country in South America and Oceania, with a claim in Antarctica",
+   "hook": "stretches along South America's Pacific coast and contains the driest desert on Earth",
+   "known": 0.8,
+   "kind": "american"
+  },
+  {
+   "label": "Moldova",
+   "qid": "Q217",
+   "fame": 0.674,
+   "official_language": "Romanian",
+   "description": "country in Eastern Europe",
+   "hook": "is riddled with vast underground cellars holding some of the world's largest wine collections",
+   "known": 0.2,
+   "kind": "european"
+  },
+  {
+   "label": "Ghana",
+   "qid": "Q117",
+   "fame": 0.673,
+   "official_language": "English",
+   "description": "country in West Africa",
+   "hook": "is one of the world's leading producers of the cocoa beans used to make chocolate",
+   "known": 0.4,
+   "kind": "african"
+  },
+  {
+   "label": "Oman",
+   "qid": "Q842",
+   "fame": 0.67,
+   "official_language": "Arabic",
+   "description": "sovereign state in western Asia",
+   "hook": "was once a center of the ancient frankincense trade along rugged desert coastlines",
+   "known": 0.2,
+   "kind": "middle-eastern"
+  },
+  {
+   "label": "Cambodia",
+   "qid": "Q424",
+   "fame": 0.669,
+   "official_language": "Khmer",
+   "description": "country in Southeast Asia",
+   "hook": "is home to Angkor Wat, the largest religious monument on Earth",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "El Salvador",
+   "qid": "Q792",
+   "fame": 0.667,
+   "official_language": "Spanish",
+   "description": "sovereign state in Central America",
+   "hook": "is dotted with volcanoes and became the first nation to make a cryptocurrency legal tender",
+   "known": 0.4,
+   "kind": "american"
+  },
+  {
+   "label": "Liberia",
+   "qid": "Q1014",
+   "fame": 0.667,
+   "official_language": "English",
+   "description": "sovereign state in West Africa",
+   "hook": "was founded as a homeland for freed African-American slaves returning across the Atlantic",
+   "known": 0.2,
+   "kind": "african"
+  },
+  {
+   "label": "San Marino",
+   "qid": "Q238",
+   "fame": 0.667,
+   "official_language": "Italian",
+   "description": "sovereign state in southern Europe, enclaved within Italy",
+   "hook": "is one of the world's oldest surviving republics, tucked inside a much larger neighbor",
+   "known": 0.2,
+   "kind": "european"
+  },
+  {
+   "label": "Libya",
+   "qid": "Q1016",
+   "fame": 0.663,
+   "official_language": "Arabic",
+   "description": "sovereign state in North Africa",
+   "hook": "holds some of the best-preserved ancient Roman ruins anywhere in North Africa",
+   "known": 0.4,
+   "kind": "african"
+  },
+  {
+   "label": "Namibia",
+   "qid": "Q1030",
+   "fame": 0.662,
+   "official_language": "English",
+   "description": "country in Southern Africa",
+   "hook": "contains some of the tallest sand dunes on Earth within an ancient coastal desert",
+   "known": 0.2,
+   "kind": "african"
+  },
+  {
+   "label": "Belize",
+   "qid": "Q242",
+   "fame": 0.661,
+   "official_language": "English",
+   "description": "sovereign state in Central America",
+   "hook": "is home to a massive sinkhole called the Great Blue Hole, visible from space",
+   "known": 0.2,
+   "kind": "american"
+  },
+  {
+   "label": "Laos",
+   "qid": "Q819",
+   "fame": 0.659,
+   "official_language": "Lao",
+   "description": "country in Southeast Asia",
+   "hook": "is scattered with mysterious ancient stone urns known as the Plain of Jars",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Bahrain",
+   "qid": "Q398",
+   "fame": 0.658,
+   "official_language": "Arabic",
+   "description": "country in the Persian Gulf",
+   "hook": "hosts a Formula One Grand Prix race on a circuit built in the desert",
+   "known": 0.4,
+   "kind": "middle-eastern"
+  },
+  {
+   "label": "Qatar",
+   "qid": "Q846",
+   "fame": 0.658,
+   "official_language": "Arabic",
+   "description": "country in West Asia",
+   "hook": "hosted a FIFA World Cup inside a cluster of ultra-modern, air-conditioned stadiums",
+   "known": 0.6,
+   "kind": "middle-eastern"
+  },
+  {
+   "label": "Tajikistan",
+   "qid": "Q863",
+   "fame": 0.657,
+   "official_language": "Tajik",
+   "description": "sovereign state in Central Asia",
+   "hook": "is covered by towering peaks of the Pamir range, nicknamed the roof of the world",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "The Bahamas",
+   "qid": "Q778",
+   "fame": 0.657,
+   "official_language": "English",
+   "description": "island sovereign state in the West Indies",
+   "hook": "is a chain of islands famous for pink-sand beaches and swimming pigs",
+   "known": 0.4,
+   "kind": "american"
+  },
+  {
+   "label": "Tunisia",
+   "qid": "Q948",
+   "fame": 0.657,
+   "official_language": "Arabic",
+   "description": "country in North Africa",
+   "hook": "was the site of the ancient city of Carthage, once a rival to Rome",
+   "known": 0.4,
+   "kind": "african"
+  },
+  {
+   "label": "Kuwait",
+   "qid": "Q817",
+   "fame": 0.654,
+   "official_language": "Arabic",
+   "description": "sovereign state in Western Asia",
+   "hook": "sits atop some of the largest proven oil reserves anywhere in the world",
+   "known": 0.4,
+   "kind": "middle-eastern"
+  },
+  {
+   "label": "Angola",
+   "qid": "Q916",
+   "fame": 0.653,
+   "official_language": "Portuguese",
+   "description": "country on the west coast of Southern Africa",
+   "hook": "holds vast offshore oil reserves along Africa's southern Atlantic coast",
+   "known": 0.2,
+   "kind": "african"
+  },
+  {
+   "label": "Guatemala",
+   "qid": "Q774",
+   "fame": 0.652,
+   "official_language": "Spanish",
+   "description": "sovereign state in Central America",
+   "hook": "is home to Tikal, one of the largest ancient Maya cities ever built",
+   "known": 0.4,
+   "kind": "american"
+  },
+  {
+   "label": "South Sudan",
+   "qid": "Q958",
+   "fame": 0.652,
+   "official_language": "English",
+   "description": "country in East Africa",
+   "hook": "contains the Sudd, one of the largest wetlands on Earth, fed by the White Nile",
+   "known": 0.2,
+   "kind": "african"
+  },
+  {
+   "label": "Niger",
+   "qid": "Q1032",
+   "fame": 0.65,
+   "official_language": "Hausa",
+   "description": "sovereign state in western Africa",
+   "hook": "is covered mostly by the Sahara Desert and is a major source of uranium",
+   "known": 0.2,
+   "kind": "african"
+  },
+  {
+   "label": "Trinidad and Tobago",
+   "qid": "Q754",
+   "fame": 0.65,
+   "official_language": "English",
+   "description": "island sovereign state in the Caribbean",
+   "hook": "is the birthplace of steelpan music and hosts a huge annual Carnival celebration",
+   "known": 0.4,
+   "kind": "american"
+  },
+  {
+   "label": "Benin",
+   "qid": "Q962",
+   "fame": 0.646,
+   "official_language": "French",
+   "description": "sovereign state in West Africa",
+   "hook": "is considered the birthplace of the Vodun religion practiced across the Americas",
+   "known": 0.2,
+   "kind": "african"
+  },
+  {
+   "label": "Costa Rica",
+   "qid": "Q800",
+   "fame": 0.642,
+   "official_language": "Spanish",
+   "description": "country in Central America",
+   "hook": "protects an outsized share of the planet's biodiversity within its rainforests and volcanoes",
+   "known": 0.6,
+   "kind": "american"
+  },
+  {
+   "label": "Ivory Coast",
+   "qid": "Q1008",
+   "fame": 0.639,
+   "official_language": "French",
+   "description": "sovereign state in West Africa",
+   "hook": "produces more cocoa than any other country on Earth",
+   "known": 0.4,
+   "kind": "african"
+  },
+  {
+   "label": "Nicaragua",
+   "qid": "Q811",
+   "fame": 0.638,
+   "official_language": "Spanish",
+   "description": "sovereign state in Central America",
+   "hook": "is dotted with volcanoes and holds Central America's largest freshwater lake",
+   "known": 0.2,
+   "kind": "american"
+  },
+  {
+   "label": "Botswana",
+   "qid": "Q963",
+   "fame": 0.634,
+   "official_language": "English",
+   "description": "sovereign state in Southern Africa",
+   "hook": "is home to the Okavango Delta, a vast inland river system that never reaches the sea",
+   "known": 0.2,
+   "kind": "african"
+  },
+  {
+   "label": "Mozambique",
+   "qid": "Q1029",
+   "fame": 0.631,
+   "official_language": "Portuguese",
+   "description": "country in Southeastern Africa; the current form of Mozambique since 1975",
+   "hook": "stretches along a long Indian Ocean coastline dotted with tropical islands",
+   "known": 0.2,
+   "kind": "african"
+  },
+  {
+   "label": "Panama",
+   "qid": "Q804",
+   "fame": 0.625,
+   "official_language": "Spanish",
+   "description": "sovereign state in Central America",
+   "hook": "is home to a famous canal linking the Atlantic and Pacific Oceans",
+   "known": 0.4,
+   "kind": "american"
+  },
+  {
+   "label": "Honduras",
+   "qid": "Q783",
+   "fame": 0.623,
+   "official_language": "Spanish",
+   "description": "sovereign state in Central America",
+   "hook": "contains Maya ruins famous for a carved hieroglyphic stairway at Copan",
+   "known": 0.2,
+   "kind": "american"
+  },
+  {
+   "label": "The Gambia",
+   "qid": "Q1005",
+   "fame": 0.619,
+   "official_language": "English",
+   "description": "sovereign state in West Africa",
+   "hook": "is the smallest country on mainland Africa, almost entirely surrounded by one neighbor",
+   "known": 0.05,
+   "kind": "african"
+  },
+  {
+   "label": "Zambia",
+   "qid": "Q953",
+   "fame": 0.619,
+   "official_language": "English",
+   "description": "country at the crossroads of Central and Southern Africa",
+   "hook": "shares one of the world's largest waterfalls with its southern neighbor",
+   "known": 0.2,
+   "kind": "african"
+  },
+  {
+   "label": "Saint Lucia",
+   "qid": "Q760",
+   "fame": 0.618,
+   "official_language": "English",
+   "description": "island sovereign state in the Caribbean Sea",
+   "hook": "is dominated by twin volcanic spires called the Pitons rising straight from the sea",
+   "known": 0.2,
+   "kind": "american"
+  },
+  {
+   "label": "Gabon",
+   "qid": "Q1000",
+   "fame": 0.611,
+   "official_language": "French",
+   "description": "country on the Atlantic coast of Central Africa",
+   "hook": "is covered almost entirely by dense rainforest home to forest elephants and gorillas",
+   "known": 0.2,
+   "kind": "african"
+  },
+  {
+   "label": "Republic of the Congo",
+   "qid": "Q971",
+   "fame": 0.61,
+   "official_language": "French",
+   "description": "country in Central Africa, capital Brazzaville",
+   "hook": "is one of Sub-Saharan Africa's largest oil producers, pumping crude from the Gulf of Guinea",
+   "known": 0.2,
+   "kind": "african"
+  },
+  {
+   "label": "Dominica",
+   "qid": "Q784",
+   "fame": 0.608,
+   "official_language": "English",
+   "description": "island sovereign state in the Caribbean Sea",
+   "hook": "is nicknamed the Nature Island for its rainforests, volcanoes, and a boiling lake",
+   "known": 0.05,
+   "kind": "american"
+  },
+  {
+   "label": "São Tomé and Príncipe",
+   "qid": "Q1039",
+   "fame": 0.607,
+   "official_language": "Portuguese",
+   "description": "island sovereign state in Africa",
+   "hook": "straddles the equator and grew rich exporting cocoa from old plantation estates",
+   "known": 0.05,
+   "kind": "african"
+  },
+  {
+   "label": "Guinea-Bissau",
+   "qid": "Q1007",
+   "fame": 0.603,
+   "official_language": "Portuguese",
+   "description": "sovereign state in Western Africa",
+   "hook": "is fringed by a UNESCO-protected archipelago of low, forested islands",
+   "known": 0.05,
+   "kind": "african"
+  },
+  {
+   "label": "Togo",
+   "qid": "Q945",
+   "fame": 0.603,
+   "official_language": "French",
+   "description": "country in West Africa",
+   "hook": "is one of Africa's narrowest countries, stretching from the coast toward the Sahara",
+   "known": 0.2,
+   "kind": "african"
+  },
+  {
+   "label": "Saint Kitts and Nevis",
+   "qid": "Q763",
+   "fame": 0.6,
+   "official_language": "English",
+   "description": "island sovereign state in the Caribbean Sea",
+   "hook": "is the smallest sovereign country in the Americas, made up of twin volcanic islands",
+   "known": 0.05,
+   "kind": "american"
+  },
+  {
+   "label": "Solomon Islands",
+   "qid": "Q685",
+   "fame": 0.595,
+   "official_language": "English",
+   "description": "island sovereign state in Oceania",
+   "hook": "was the site of a major World War Two battle fought for control of Guadalcanal",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Netherlands",
+   "qid": "Q29999",
+   "fame": 0.59,
+   "official_language": "Dutch",
+   "description": "transcontinental sovereign state and constitutional monarchy",
+   "hook": "pairs a flat, low-lying European homeland with Caribbean islands like Aruba and Curacao",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Saint Vincent and the Grenadines",
+   "qid": "Q757",
+   "fame": 0.581,
+   "official_language": "English",
+   "description": "island sovereign state in the Caribbean Sea",
+   "hook": "is a chain of over thirty islands that served as a filming location for a famous pirate movie franchise",
+   "known": 0.05,
+   "kind": "american"
+  },
+  {
+   "label": "Federated States of Micronesia",
+   "qid": "Q702",
+   "fame": 0.577,
+   "official_language": "English",
+   "description": "island sovereign state in Oceania",
+   "hook": "is home to Nan Madol, a mysterious ancient city built on a lagoon out of massive stone slabs",
+   "known": 0.05,
+   "kind": "asian"
+  }
+ ]
+}

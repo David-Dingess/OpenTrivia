@@ -1,0 +1,169 @@
+{
+ "id": "table.business.grocery-brands-maker",
+ "kind": "table",
+ "title": "Famous grocery and soft-drink brands and the company that makes them",
+ "genre": "daily-life",
+ "category": "business",
+ "topic": "big-companies",
+ "licence": "ODbL-1.0",
+ "source": {
+  "name": "Open Food Facts (ODbL)",
+  "method": "Hand-picked famous brands; maker corroborated by Open Food Facts brands_tags/brand_owner on product records and by the brand's English Wikipedia infobox and lead; fame from enwiki 30-day pageviews.",
+  "attribution": "Contains information from Open Food Facts, made available under the Open Database License (ODbL)",
+  "fetchedAt": "2026-10-04"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T13:42:05.745Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "maker",
+   "label": "Made by",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "grocery brand",
+  "many": "grocery brands",
+  "capitalise": true,
+  "wildcard": "food",
+  "columns": {
+   "maker": {
+    "role": "link",
+    "pick": "Which company makes {label}?",
+    "statement": "{label} is made by {value}.",
+    "match": "Match each grocery brand to the company that makes it.",
+    "odd": "Three of these grocery brands are made by {value}. Which one isn't?",
+    "all": "Tap all {n} grocery brands made by {value}.",
+    "reverse": "Which brand is made by {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Fanta",
+   "qid": null,
+   "fame": 0.565,
+   "maker": "The Coca-Cola Company",
+   "known": 0.95,
+   "kind": "soft drink"
+  },
+  {
+   "label": "Sprite",
+   "qid": null,
+   "fame": 0.478,
+   "maker": "The Coca-Cola Company",
+   "known": 0.95,
+   "kind": "soft drink"
+  },
+  {
+   "label": "Mountain Dew",
+   "qid": null,
+   "fame": 0.529,
+   "maker": "PepsiCo",
+   "known": 0.8,
+   "kind": "soft drink"
+  },
+  {
+   "label": "Gatorade",
+   "qid": null,
+   "fame": 0.517,
+   "maker": "PepsiCo",
+   "known": 0.8,
+   "kind": "sports drink"
+  },
+  {
+   "label": "Quaker Oats",
+   "qid": null,
+   "fame": 0.469,
+   "maker": "PepsiCo",
+   "known": 0.95,
+   "kind": "breakfast"
+  },
+  {
+   "label": "Irn-Bru",
+   "qid": null,
+   "fame": 0.542,
+   "maker": "A.G. Barr",
+   "known": 0.2,
+   "kind": "soft drink"
+  },
+  {
+   "label": "Kool-Aid",
+   "qid": null,
+   "fame": 0.474,
+   "maker": "Kraft Heinz",
+   "known": 0.6,
+   "kind": "drink mix"
+  },
+  {
+   "label": "Milo",
+   "qid": null,
+   "fame": 0.48,
+   "maker": "Nestlé",
+   "known": 0.4,
+   "kind": "drink mix"
+  },
+  {
+   "label": "Maggi",
+   "qid": null,
+   "fame": 0.5,
+   "maker": "Nestlé",
+   "known": 0.4,
+   "kind": "seasoning"
+  },
+  {
+   "label": "Spam",
+   "qid": null,
+   "fame": 0.576,
+   "maker": "Hormel Foods",
+   "known": 0.8,
+   "kind": "meat"
+  },
+  {
+   "label": "Tabasco",
+   "qid": null,
+   "fame": 0.491,
+   "maker": "McIlhenny Company",
+   "known": 0.8,
+   "kind": "seasoning"
+  },
+  {
+   "label": "Betty Crocker",
+   "qid": null,
+   "fame": 0.478,
+   "maker": "General Mills",
+   "known": 0.95,
+   "kind": "breakfast"
+  },
+  {
+   "label": "Reese's",
+   "qid": null,
+   "fame": 0.462,
+   "maker": "The Hershey Company",
+   "known": 0.95,
+   "kind": "candy"
+  },
+  {
+   "label": "The Laughing Cow",
+   "qid": null,
+   "fame": 0.516,
+   "maker": "Bel Group",
+   "known": 0.6,
+   "kind": "cheese"
+  },
+  {
+   "label": "Old Bay",
+   "qid": null,
+   "fame": 0.45,
+   "maker": "McCormick & Company",
+   "known": 0.6,
+   "kind": "seasoning"
+  }
+ ]
+}

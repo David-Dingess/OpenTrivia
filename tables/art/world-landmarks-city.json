@@ -1,0 +1,985 @@
+{
+ "id": "table.art.world-landmarks-city",
+ "kind": "table",
+ "title": "The world's most famous landmarks, their city and country",
+ "genre": "arts-entertainment",
+ "category": "art",
+ "topic": "landmarks",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?itemDescription ?article ?sitelinks ?countryLabel ?cityLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { VALUES ?item { wd:Q243 wd:Q9202 wd:Q41225 wd:Q44440 wd:Q83125 wd:Q54495 wd:Q79961 wd:Q10285 wd:Q12495 wd:Q9188 wd:Q134883 wd:Q5317 wd:Q2027162 wd:Q83497 wd:Q180376 wd:Q82425 wd:Q64436 wd:Q13397 wd:Q4152 wd:Q133274 wd:Q129846 wd:Q41116 wd:Q83063 wd:Q83101 wd:Q548679 wd:Q80290 wd:Q47672 wd:Q43473 wd:Q676203 wd:Q5859 wd:Q39671 wd:Q10288 wd:Q12506 wd:Q80541 wd:Q134140 wd:Q34221 wd:Q33910 wd:Q213360 wd:Q39231 wd:Q43278 wd:Q36332 wd:Q62408 wd:Q42182 wd:Q42646 wd:Q185382 wd:Q12512 wd:Q2943 wd:Q52505 wd:Q204871 wd:Q180901 wd:Q152072 wd:Q214619 wd:Q18536 wd:Q160659 wd:Q11259 wd:Q160409 wd:Q35525 wd:Q213559 wd:Q178114 wd:Q131354 wd:Q172822 wd:Q180422 wd:Q940843 wd:Q71229 wd:Q464535 wd:Q125006 wd:Q270983 wd:Q714828 wd:Q724970 wd:Q630135 wd:Q20892 wd:Q1374 wd:Q39054 wd:Q2981 wd:Q45178 wd:Q62378 wd:Q212065 wd:Q2946 wd:Q91274 wd:Q215003 wd:Q208633 wd:Q18068 wd:Q132783 wd:Q160112 wd:Q51252 wd:Q239477 wd:Q106187 wd:Q190128 wd:Q7343 wd:Q129296 } ?item wdt:P17 ?c . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { { SELECT ?item (MAX(?p) AS ?maxp) WHERE { VALUES ?item { wd:Q243 wd:Q9202 wd:Q41225 wd:Q44440 wd:Q83125 wd:Q54495 wd:Q79961 wd:Q10285 wd:Q12495 wd:Q9188 wd:Q134883 wd:Q5317 wd:Q2027162 wd:Q83497 wd:Q180376 wd:Q82425 wd:Q64436 wd:Q13397 wd:Q4152 wd:Q133274 wd:Q129846 wd:Q41116 wd:Q83063 wd:Q83101 wd:Q548679 wd:Q80290 wd:Q47672 wd:Q43473 wd:Q676203 wd:Q5859 wd:Q39671 wd:Q10288 wd:Q12506 wd:Q80541 wd:Q134140 wd:Q34221 wd:Q33910 wd:Q213360 wd:Q39231 wd:Q43278 wd:Q36332 wd:Q62408 wd:Q42182 wd:Q42646 wd:Q185382 wd:Q12512 wd:Q2943 wd:Q52505 wd:Q204871 wd:Q180901 wd:Q152072 wd:Q214619 wd:Q18536 wd:Q160659 wd:Q11259 wd:Q160409 wd:Q35525 wd:Q213559 wd:Q178114 wd:Q131354 wd:Q172822 wd:Q180422 wd:Q940843 wd:Q71229 wd:Q464535 wd:Q125006 wd:Q270983 wd:Q714828 wd:Q724970 wd:Q630135 wd:Q20892 wd:Q1374 wd:Q39054 wd:Q2981 wd:Q45178 wd:Q62378 wd:Q212065 wd:Q2946 wd:Q91274 wd:Q215003 wd:Q208633 wd:Q18068 wd:Q132783 wd:Q160112 wd:Q51252 wd:Q239477 wd:Q106187 wd:Q190128 wd:Q7343 wd:Q129296 } ?item wdt:P131+ ?ci . ?ci wdt:P31/wdt:P279* wd:Q515 ; wdt:P1082 ?p . } GROUP BY ?item } ?item wdt:P131+ ?city . ?city wdt:P1082 ?maxp . } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-01T16:26:38.725Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-01T16:26:38.725Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "city",
+   "label": "City",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "landmark",
+  "many": "landmarks",
+  "wildcard": "place",
+  "hookAsk": "Which landmark {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "theLabels": [
+   "Empire State Building",
+   "Eiffel Tower",
+   "Statue of Liberty",
+   "Leaning Tower of Pisa",
+   "Brooklyn Bridge",
+   "Trevi Fountain",
+   "Brandenburg Gate",
+   "Forbidden City",
+   "Kremlin",
+   "Space Needle",
+   "Hollywood Sign",
+   "Gateway Arch",
+   "Golden Gate Bridge",
+   "Atomium",
+   "Charles Bridge",
+   "Hermitage Museum",
+   "Uffizi Gallery",
+   "Ponte Vecchio",
+   "Lotus Temple",
+   "Petronas Towers",
+   "Arc de Triomphe",
+   "CN Tower",
+   "Red Square",
+   "Sydney Harbour Bridge",
+   "Milan Cathedral",
+   "Belém Tower"
+  ],
+  "columns": {
+   "city": {
+    "role": "link",
+    "pick": "In which city is {label}?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each landmark to its city.",
+    "odd": "Three of these landmarks are in {value}. Which one isn't?",
+    "all": "Tap all {n} landmarks in {value}.",
+    "reverse": "Which of these landmarks is in {value}?"
+   }
+  },
+  "exclude": [
+   {
+    "qid": "Q35525",
+    "why": "White House: city is the District of Columbia"
+   },
+   {
+    "qid": "Q12506",
+    "why": "Hagia Sophia: city is a province"
+   },
+   {
+    "qid": "Q12512",
+    "why": "St. Peter's Basilica: city is Vatican City"
+   },
+   {
+    "qid": "Q41225",
+    "why": "Big Ben: city is a borough"
+   },
+   {
+    "qid": "Q42182",
+    "why": "Buckingham Palace: city is a borough"
+   },
+   {
+    "qid": "Q62408",
+    "why": "Palace of Westminster: city is a borough"
+   },
+   {
+    "qid": "Q178114",
+    "why": "Washington Monument: city is the District of Columbia"
+   },
+   {
+    "qid": "Q2943",
+    "why": "Sistine Chapel: city is Vatican City"
+   },
+   {
+    "qid": "Q213559",
+    "why": "Lincoln Memorial: city is the District of Columbia"
+   },
+   {
+    "qid": "Q213360",
+    "why": "Table Mountain: city is an admin name"
+   }
+  ]
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Empire State Building",
+   "qid": "Q9188",
+   "fame": 0.695,
+   "city": "New York City",
+   "country": "United States",
+   "description": "skyscraper located in Midtown Manhattan, New York City, USA",
+   "hook": "was the world's tallest skyscraper for decades and is scaled by a giant ape in a classic film",
+   "known": 0.95,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "Eiffel Tower",
+   "qid": "Q243",
+   "fame": 0.689,
+   "city": "Paris",
+   "country": "France",
+   "description": "tower located on the Champ de Mars in Paris, France",
+   "hook": "is an iron lattice landmark built for a world's fair and nicknamed the Iron Lady",
+   "known": 0.95,
+   "kind": "tower"
+  },
+  {
+   "label": "Burj Khalifa",
+   "qid": "Q12495",
+   "fame": 0.688,
+   "city": "Dubai",
+   "country": "United Arab Emirates",
+   "description": "skyscraper in Dubai, United Arab Emirates",
+   "hook": "is the tallest man-made structure on Earth",
+   "known": 0.8,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "Statue of Liberty",
+   "qid": "Q9202",
+   "fame": 0.688,
+   "city": "New York City",
+   "country": "United States",
+   "description": "monument in New York",
+   "hook": "was a gift from a friendly nation and holds a torch aloft to welcome arriving immigrants",
+   "known": 0.95,
+   "kind": "monument"
+  },
+  {
+   "label": "Colosseum",
+   "qid": "Q10285",
+   "fame": 0.666,
+   "city": null,
+   "country": "Italy",
+   "description": "ancient Roman amphitheatre, a landmark of Rome, Italy",
+   "hook": "is an ancient arena where gladiators once fought",
+   "known": 0.95,
+   "kind": "amphitheatre"
+  },
+  {
+   "label": "Machu Picchu",
+   "qid": "Q676203",
+   "fame": 0.663,
+   "city": null,
+   "country": "Peru",
+   "description": "15th-century Inca citadel in the Peruvian Andes and UNESCO World Heritage Site",
+   "hook": "is a mountaintop citadel of a lost empire, often reached by a famous multi-day trek",
+   "known": 0.8,
+   "kind": "citadel"
+  },
+  {
+   "label": "Mount Rushmore",
+   "qid": "Q83497",
+   "fame": 0.663,
+   "city": null,
+   "country": "United States",
+   "description": "mountain in South Dakota featuring a sculpture of four US presidents",
+   "hook": "has the carved granite faces of four presidents staring out over the Black Hills",
+   "known": 0.95,
+   "kind": "monument"
+  },
+  {
+   "label": "Stonehenge",
+   "qid": "Q39671",
+   "fame": 0.652,
+   "city": null,
+   "country": "United Kingdom",
+   "description": "Neolithic henge monument in Amesbury, Wiltshire, England, UK",
+   "hook": "is a ring of giant standing stones aligned with the midsummer sunrise",
+   "known": 0.8,
+   "kind": "stone circle"
+  },
+  {
+   "label": "White House",
+   "qid": "Q35525",
+   "fame": 0.645,
+   "city": "District of Columbia",
+   "country": "United States",
+   "description": "official residence and office of the President of the United States",
+   "hook": "is the home and office of the American president",
+   "known": 0.95,
+   "kind": "palace"
+  },
+  {
+   "label": "Hagia Sophia",
+   "qid": "Q12506",
+   "fame": 0.644,
+   "city": "Istanbul Province",
+   "country": "Turkey",
+   "description": "mosque, museum, and former church in Istanbul, Turkey",
+   "hook": "is a vast domed structure that has served as a church, a mosque and a museum",
+   "known": 0.8,
+   "kind": "mosque"
+  },
+  {
+   "label": "Le Mont Saint-Michel",
+   "qid": "Q20892",
+   "fame": 0.643,
+   "city": null,
+   "country": "France",
+   "description": "French commune in the Manche department",
+   "hook": "is a tidal island crowned by an abbey, cut off by the sea at high tide",
+   "known": 0.8,
+   "kind": "monastery"
+  },
+  {
+   "label": "Angkor Wat",
+   "qid": "Q43473",
+   "fame": 0.632,
+   "city": null,
+   "country": "Cambodia",
+   "description": "Hindu-Buddhist temple complex in Cambodia",
+   "hook": "is the world's largest religious monument and appears on a national flag",
+   "known": 0.8,
+   "kind": "temple"
+  },
+  {
+   "label": "Petronas Towers",
+   "qid": "Q83063",
+   "fame": 0.626,
+   "city": "Kuala Lumpur",
+   "country": "Malaysia",
+   "description": "twin skyscrapers in Kuala Lumpur, Malaysia",
+   "hook": "were the world's tallest twin skyscrapers, linked by a sky bridge",
+   "known": 0.6,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "Christ the Redeemer",
+   "qid": "Q79961",
+   "fame": 0.618,
+   "city": "Rio de Janeiro",
+   "country": "Brazil",
+   "description": "colossal statue of Jesus in Rio de Janeiro, Brazil",
+   "hook": "stands with arms outstretched on a granite peak above a carnival-famous city",
+   "known": 0.8,
+   "kind": "statue"
+  },
+  {
+   "label": "Mount Fuji",
+   "qid": "Q39231",
+   "fame": 0.618,
+   "city": null,
+   "country": "Japan",
+   "description": "volcano in Yamanashi and Shizuoka Prefectures, Japan",
+   "hook": "is a snow-capped, near-perfect volcanic cone and the highest peak of its nation",
+   "known": 0.8,
+   "kind": "mountain"
+  },
+  {
+   "label": "Terracotta Army",
+   "qid": "Q47672",
+   "fame": 0.617,
+   "city": null,
+   "country": "China",
+   "description": "collection of ancient Chinese military statues",
+   "hook": "is thousands of life-size clay soldiers buried to guard an emperor's tomb",
+   "known": 0.8,
+   "kind": "sculpture"
+  },
+  {
+   "label": "Neuschwanstein Castle",
+   "qid": "Q4152",
+   "fame": 0.616,
+   "city": null,
+   "country": "Germany",
+   "description": "castle in Bavaria, Germany, Europe",
+   "hook": "is a hilltop fairytale fortress built for a reclusive king that inspired Disney's logo",
+   "known": 0.6,
+   "kind": "castle"
+  },
+  {
+   "label": "Arc de Triomphe",
+   "qid": "Q64436",
+   "fame": 0.613,
+   "city": "Paris",
+   "country": "France",
+   "description": "triumphal arch in Paris",
+   "hook": "honors Napoleon's armies and sits at the center of a star-shaped traffic junction",
+   "known": 0.95,
+   "kind": "arch"
+  },
+  {
+   "label": "Golden Gate Bridge",
+   "qid": "Q44440",
+   "fame": 0.611,
+   "city": "San Francisco",
+   "country": "United States",
+   "description": "suspension bridge on the San Francisco Bay",
+   "hook": "is an orange-red suspension span often shrouded in fog",
+   "known": 0.95,
+   "kind": "bridge"
+  },
+  {
+   "label": "Parthenon",
+   "qid": "Q10288",
+   "fame": 0.611,
+   "city": null,
+   "country": "Greece",
+   "description": "former temple of Athena on the Athenian Acropolis, Greece",
+   "hook": "is the marble temple to the goddess of wisdom on the Acropolis",
+   "known": 0.8,
+   "kind": "temple"
+  },
+  {
+   "label": "Palace of Versailles",
+   "qid": "Q2946",
+   "fame": 0.606,
+   "city": null,
+   "country": "France",
+   "description": "palace in Versailles, France and location of the Museum of the History of France",
+   "hook": "was the opulent royal residence of the Sun King, famed for its Hall of Mirrors",
+   "known": 0.95,
+   "kind": "palace"
+  },
+  {
+   "label": "St. Peter's Basilica",
+   "qid": "Q12512",
+   "fame": 0.605,
+   "city": "Vatican City",
+   "country": "Vatican City",
+   "description": "church in Vatican City",
+   "hook": "is the largest church in Christendom, topped by a dome designed by Michelangelo",
+   "known": 0.8,
+   "kind": "basilica"
+  },
+  {
+   "label": "Forbidden City",
+   "qid": "Q80290",
+   "fame": 0.603,
+   "city": "Beijing",
+   "country": "China",
+   "description": "Chinese imperial palace in Beijing",
+   "hook": "was the imperial home of Ming and Qing emperors, with a moat and thousands of rooms",
+   "known": 0.8,
+   "kind": "palace"
+  },
+  {
+   "label": "Tower of London",
+   "qid": "Q62378",
+   "fame": 0.603,
+   "city": null,
+   "country": "United Kingdom",
+   "description": "castle in central London, United Kingdom",
+   "hook": "houses the crown jewels and was once a notorious royal prison",
+   "known": 0.8,
+   "kind": "castle"
+  },
+  {
+   "label": "Big Ben",
+   "qid": "Q41225",
+   "fame": 0.601,
+   "city": "City of Westminster",
+   "country": "United Kingdom",
+   "description": "tower of the Palace of Westminster, London containing the bell Big Ben",
+   "hook": "is the famous clock that chimes beside the Houses of Parliament",
+   "known": 0.95,
+   "kind": "tower"
+  },
+  {
+   "label": "Buckingham Palace",
+   "qid": "Q42182",
+   "fame": 0.601,
+   "city": "City of Westminster",
+   "country": "United Kingdom",
+   "description": "official London residence and principal workplace of the British monarch",
+   "hook": "is the monarch's city home, famous for guards in bearskin hats",
+   "known": 0.95,
+   "kind": "palace"
+  },
+  {
+   "label": "Leaning Tower of Pisa",
+   "qid": "Q39054",
+   "fame": 0.601,
+   "city": "Pisa",
+   "country": "Italy",
+   "description": "cathedral bell tower in Pisa, Italy",
+   "hook": "is a bell campanile that famously tilts because of soft ground",
+   "known": 0.8,
+   "kind": "tower"
+  },
+  {
+   "label": "London Eye",
+   "qid": "Q160659",
+   "fame": 0.599,
+   "city": null,
+   "country": "United Kingdom",
+   "description": "observation wheel in London, England",
+   "hook": "is a giant observation wheel on the south bank of the Thames",
+   "known": 0.6,
+   "kind": "observation wheel"
+  },
+  {
+   "label": "Taipei 101",
+   "qid": "Q83101",
+   "fame": 0.599,
+   "city": "Taipei",
+   "country": "Taiwan",
+   "description": "skyscraper located in Xinyi District, Taipei, Taiwan",
+   "hook": "was once the world's tallest skyscraper, shaped like stacked bamboo segments",
+   "known": 0.6,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "Notre-Dame de Paris",
+   "qid": "Q2981",
+   "fame": 0.598,
+   "city": "Paris",
+   "country": "France",
+   "description": "cathedral in Paris",
+   "hook": "is the Gothic cathedral of Victor Hugo's hunchback",
+   "known": 0.95,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Chichen Itza",
+   "qid": "Q5859",
+   "fame": 0.59,
+   "city": null,
+   "country": "Mexico",
+   "description": "pre-Columbian Maya city in Mexico",
+   "hook": "is a Maya city with a stepped pyramid that casts a serpent shadow at the equinox",
+   "known": 0.6,
+   "kind": "temple"
+  },
+  {
+   "label": "Central Park",
+   "qid": "Q160409",
+   "fame": 0.589,
+   "city": "New York City",
+   "country": "United States",
+   "description": "public park at the center of Manhattan in New York City, New York, United States",
+   "hook": "is a huge green oasis amid skyscrapers, with a reservoir, a zoo and a famous skating rink",
+   "known": 0.95,
+   "kind": "park"
+  },
+  {
+   "label": "Windsor Castle",
+   "qid": "Q42646",
+   "fame": 0.587,
+   "city": null,
+   "country": "United Kingdom",
+   "description": "historic castle, royal residence at Windsor in Berkshire, England, UK",
+   "hook": "is the oldest and largest inhabited fortress in the world, a royal weekend home",
+   "known": 0.6,
+   "kind": "castle"
+  },
+  {
+   "label": "Brooklyn Bridge",
+   "qid": "Q125006",
+   "fame": 0.579,
+   "city": "New York City",
+   "country": "United States",
+   "description": "bridge in New York City, crossing the East River",
+   "hook": "is a granite-towered span with web-like steel cables linking Manhattan to a neighboring borough",
+   "known": 0.8,
+   "kind": "bridge"
+  },
+  {
+   "label": "CN Tower",
+   "qid": "Q134883",
+   "fame": 0.579,
+   "city": "Toronto",
+   "country": "Canada",
+   "description": "communications and observation tower in Toronto, Canada",
+   "hook": "was the world's tallest freestanding structure for decades and has a glass floor",
+   "known": 0.6,
+   "kind": "tower"
+  },
+  {
+   "label": "Santorini",
+   "qid": "Q129296",
+   "fame": 0.579,
+   "city": null,
+   "country": "Greece",
+   "description": "Greek island in the Cyclades",
+   "hook": "is a volcanic island of whitewashed cliffside villages and blue-domed churches",
+   "known": 0.6,
+   "kind": "island"
+  },
+  {
+   "label": "Hoover Dam",
+   "qid": "Q172822",
+   "fame": 0.578,
+   "city": null,
+   "country": "United States",
+   "description": "hydroelectric dam on the Colorado River, United States",
+   "hook": "is an art-deco concrete barrier that tamed a mighty river and created Lake Mead",
+   "known": 0.8,
+   "kind": "dam"
+  },
+  {
+   "label": "Uluru",
+   "qid": "Q33910",
+   "fame": 0.572,
+   "city": null,
+   "country": "Australia",
+   "description": "large sandstone isolated mount in Australia",
+   "hook": "is a giant red monolith sacred to Aboriginal people, glowing at sunset",
+   "known": 0.6,
+   "kind": "mountain"
+  },
+  {
+   "label": "Great Barrier Reef",
+   "qid": "Q7343",
+   "fame": 0.571,
+   "city": null,
+   "country": "Australia",
+   "description": "over 2300 km long coral reef off Australia's northeast coast, UNESCO World Heritage Site",
+   "hook": "is the largest coral system on Earth, visible from space",
+   "known": 0.8,
+   "kind": "reef"
+  },
+  {
+   "label": "Times Square",
+   "qid": "Q11259",
+   "fame": 0.568,
+   "city": "New York City",
+   "country": "United States",
+   "description": "neighborhood and square in Manhattan, New York City, United States",
+   "hook": "is the neon-lit crossroads where a glittering ball drops on New Year's Eve",
+   "known": 0.95,
+   "kind": "square"
+  },
+  {
+   "label": "Trevi Fountain",
+   "qid": "Q185382",
+   "fame": 0.565,
+   "city": "Rome",
+   "country": "Italy",
+   "description": "Baroque fountain in Rome, Italy",
+   "hook": "is where visitors toss a coin over the shoulder to guarantee a return trip",
+   "known": 0.8,
+   "kind": "fountain"
+  },
+  {
+   "label": "Palace of Westminster",
+   "qid": "Q62408",
+   "fame": 0.562,
+   "city": "City of Westminster",
+   "country": "United Kingdom",
+   "description": "meeting place of the Parliament of the United Kingdom, located in London, England, UK",
+   "hook": "is the Gothic Revival home of Britain's lawmakers",
+   "known": 0.8,
+   "kind": "palace"
+  },
+  {
+   "label": "Washington Monument",
+   "qid": "Q178114",
+   "fame": 0.56,
+   "city": "District of Columbia",
+   "country": "United States",
+   "description": "obelisk on the National Mall in Washington, D.C.",
+   "hook": "is a tall white marble obelisk honoring the first president of America",
+   "known": 0.95,
+   "kind": "monument"
+  },
+  {
+   "label": "Brandenburg Gate",
+   "qid": "Q82425",
+   "fame": 0.559,
+   "city": "Berlin",
+   "country": "Germany",
+   "description": "triumphal arch in Berlin, Germany",
+   "hook": "is a columned neoclassical archway topped by a four-horse chariot",
+   "known": 0.8,
+   "kind": "gate"
+  },
+  {
+   "label": "Sydney Opera House",
+   "qid": "Q45178",
+   "fame": 0.558,
+   "city": null,
+   "country": "Australia",
+   "description": "multi-venue performing arts centre in Sydney, New South Wales, Australia",
+   "hook": "is a performing-arts venue famed for white sail-like shells beside a harbour",
+   "known": 0.8,
+   "kind": "theatre"
+  },
+  {
+   "label": "Sistine Chapel",
+   "qid": "Q2943",
+   "fame": 0.557,
+   "city": "Vatican City",
+   "country": "Vatican City",
+   "description": "chapel in the Apostolic Palace, Vatican City",
+   "hook": "has a ceiling painted by Michelangelo and is where popes are elected",
+   "known": 0.8,
+   "kind": "chapel"
+  },
+  {
+   "label": "Harmandir Sahib",
+   "qid": "Q180422",
+   "fame": 0.556,
+   "city": "Amritsar",
+   "country": "India",
+   "description": "Sikh religious site in Amritsar, Punjab, India",
+   "hook": "is the golden temple at the heart of the Sikh faith",
+   "known": 0.4,
+   "kind": "shrine"
+  },
+  {
+   "label": "The Shard",
+   "qid": "Q18536",
+   "fame": 0.548,
+   "city": "London",
+   "country": "United Kingdom",
+   "description": "skyscraper in London, England",
+   "hook": "is a pointed glass skyscraper that pierces the skyline of a capital on the Thames",
+   "known": 0.4,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "Tower Bridge",
+   "qid": "Q83125",
+   "fame": 0.547,
+   "city": null,
+   "country": "United Kingdom",
+   "description": "bascule and suspension bridge in London",
+   "hook": "is a Victorian drawbridge with blue-painted twin towers, often confused with its plainer neighbor",
+   "known": 0.8,
+   "kind": "bridge"
+  },
+  {
+   "label": "Milan Cathedral",
+   "qid": "Q18068",
+   "fame": 0.545,
+   "city": "Milan",
+   "country": "Italy",
+   "description": "cathedral church of Milan, Italy",
+   "hook": "is a vast Gothic marble place of worship with thousands of statues and spires",
+   "known": 0.6,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Kremlin",
+   "qid": "Q133274",
+   "fame": 0.544,
+   "city": "Moscow",
+   "country": "Russia",
+   "description": "fortified complex in Moscow, Russia",
+   "hook": "is a red-walled fortress complex with golden-domed cathedrals",
+   "known": 0.8,
+   "kind": "fortress"
+  },
+  {
+   "label": "Alcatraz Island",
+   "qid": "Q131354",
+   "fame": 0.543,
+   "city": "San Francisco",
+   "country": "United States",
+   "description": "island in San Francisco, California, United States of America",
+   "hook": "was a notorious federal prison, once home to Al Capone, set in a chilly bay",
+   "known": 0.6,
+   "kind": "island"
+  },
+  {
+   "label": "Giant's Causeway",
+   "qid": "Q106187",
+   "fame": 0.543,
+   "city": null,
+   "country": "United Kingdom",
+   "description": "rock formation on the Antrim coast of Northern Ireland",
+   "hook": "is a coastline of thousands of interlocking hexagonal basalt columns",
+   "known": 0.4,
+   "kind": "rock formation"
+  },
+  {
+   "label": "Gateway Arch",
+   "qid": "Q2027162",
+   "fame": 0.539,
+   "city": "St. Louis",
+   "country": "United States",
+   "description": "monument in St. Louis, Missouri",
+   "hook": "is a stainless-steel curve on the Mississippi riverbank, the tallest of its kind in the world",
+   "known": 0.6,
+   "kind": "monument"
+  },
+  {
+   "label": "Manneken Pis",
+   "qid": "Q152072",
+   "fame": 0.519,
+   "city": "Brussels",
+   "country": "Belgium",
+   "description": "bronze sculpture and fountain by Jérôme Duquesnoy the Elder in Brussels, Belgium",
+   "hook": "is a small statue of a boy, dressed in costumes on special occasions, that spouts water",
+   "known": 0.4,
+   "kind": "statue"
+  },
+  {
+   "label": "Edinburgh Castle",
+   "qid": "Q212065",
+   "fame": 0.517,
+   "city": null,
+   "country": "United Kingdom",
+   "description": "castle in Edinburgh, Scotland, UK",
+   "hook": "sits on a volcanic crag and fires a gun every day at one o'clock",
+   "known": 0.6,
+   "kind": "castle"
+  },
+  {
+   "label": "St. Basil's Cathedral",
+   "qid": "Q129846",
+   "fame": 0.517,
+   "city": "Moscow",
+   "country": "Russia",
+   "description": "church in Moscow",
+   "hook": "is a colorful onion-domed church ordered by Ivan the Terrible",
+   "known": 0.8,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Space Needle",
+   "qid": "Q5317",
+   "fame": 0.516,
+   "city": "Seattle",
+   "country": "United States",
+   "description": "observation tower in Seattle, Washington, United States",
+   "hook": "is a flying-saucer-topped observation spire built for a world's fair",
+   "known": 0.6,
+   "kind": "tower"
+  },
+  {
+   "label": "Hollywood Sign",
+   "qid": "Q180376",
+   "fame": 0.512,
+   "city": "Los Angeles",
+   "country": "United States",
+   "description": "sign reading \"HOLLYWOOD\" located in Los Angeles, California, United States",
+   "hook": "is a set of giant white letters on a hillside overlooking the movie industry's home",
+   "known": 0.95,
+   "kind": "sign"
+  },
+  {
+   "label": "Marina Bay Sands",
+   "qid": "Q548679",
+   "fame": 0.508,
+   "city": "Singapore",
+   "country": "Singapore",
+   "description": "integrated resort in Singapore",
+   "hook": "is a trio of towers topped by a ship-shaped sky park with an infinity pool",
+   "known": 0.4,
+   "kind": "resort"
+  },
+  {
+   "label": "Sultan Ahmed Mosque",
+   "qid": "Q80541",
+   "fame": 0.503,
+   "city": null,
+   "country": "Turkey",
+   "description": "historic mosque located in Istanbul, Turkey, also known as Blue Mosque",
+   "hook": "is nicknamed for the blue tiles that cover its interior and is topped by six slender minarets",
+   "known": 0.6,
+   "kind": "mosque"
+  },
+  {
+   "label": "Lincoln Memorial",
+   "qid": "Q213559",
+   "fame": 0.494,
+   "city": "District of Columbia",
+   "country": "United States",
+   "description": "memorial in Washington, D.C., United States",
+   "hook": "honors a president with a giant seated marble statue at the western end of the National Mall",
+   "known": 0.8,
+   "kind": "memorial"
+  },
+  {
+   "label": "Abu Simbel",
+   "qid": "Q134140",
+   "fame": 0.493,
+   "city": null,
+   "country": "Egypt",
+   "description": "UNESCO World Heritage Site in southern Egypt",
+   "hook": "is a pair of temples carved into a rock face, fronted by colossal seated statues of a pharaoh",
+   "known": 0.4,
+   "kind": "temple"
+  },
+  {
+   "label": "Cliffs of Moher",
+   "qid": "Q239477",
+   "fame": 0.493,
+   "city": null,
+   "country": "Ireland",
+   "description": "cliffs in Western Ireland, on the Atlantic shore",
+   "hook": "plunges roughly 700 feet straight into the Atlantic along a windswept stretch of coast",
+   "known": 0.4,
+   "kind": "cliffs"
+  },
+  {
+   "label": "Sydney Harbour Bridge",
+   "qid": "Q54495",
+   "fame": 0.491,
+   "city": "Sydney",
+   "country": "Australia",
+   "description": "bridge crossing Sydney Harbour in Australia",
+   "hook": "is nicknamed the Coathanger because of its huge steel arch",
+   "known": 0.8,
+   "kind": "bridge"
+  },
+  {
+   "label": "Red Square",
+   "qid": "Q41116",
+   "fame": 0.482,
+   "city": "Moscow",
+   "country": "Russia",
+   "description": "the main square in Moscow, Russia",
+   "hook": "sits beside the Kremlin walls, flanked by Saint Basil's Cathedral and Lenin's Mausoleum",
+   "known": 0.8,
+   "kind": "square"
+  },
+  {
+   "label": "Lotus Temple",
+   "qid": "Q940843",
+   "fame": 0.474,
+   "city": "Delhi",
+   "country": "India",
+   "description": "Bahá'í House of Worship in Delhi, India",
+   "hook": null,
+   "known": 0.2,
+   "kind": "shrine"
+  },
+  {
+   "label": "Uffizi Gallery",
+   "qid": "Q51252",
+   "fame": 0.473,
+   "city": "Florence",
+   "country": "Italy",
+   "description": "palace and art museum in Florence, Italy",
+   "hook": "holds a vast collection of Renaissance masterpieces that once belonged to the Medici family",
+   "known": 0.4,
+   "kind": "museum"
+  },
+  {
+   "label": "Fushimi Inari-taisha",
+   "qid": "Q714828",
+   "fame": 0.472,
+   "city": "Kyoto",
+   "country": "Japan",
+   "description": "Shinto shrines in Kyoto, Japan",
+   "hook": "is famous for thousands of bright vermilion torii gates winding up a forested hillside",
+   "known": 0.4,
+   "kind": "shrine"
+  },
+  {
+   "label": "Belém Tower",
+   "qid": "Q215003",
+   "fame": 0.471,
+   "city": "Lisbon",
+   "country": "Portugal",
+   "description": "fortified tower located in the civil parish of Santa Maria de Belém in the municipality of Lisbon, Portugal",
+   "hook": "is a fortress that served as a ceremonial gateway for explorers setting sail",
+   "known": 0.4,
+   "kind": "tower"
+  },
+  {
+   "label": "Ponte Vecchio",
+   "qid": "Q208633",
+   "fame": 0.469,
+   "city": "Florence",
+   "country": "Italy",
+   "description": "bridge in Florence, Italy",
+   "hook": "is a medieval stone bridge lined with jewellers' shops and was spared destruction in World War II",
+   "known": 0.6,
+   "kind": "bridge"
+  },
+  {
+   "label": "Charles Bridge",
+   "qid": "Q204871",
+   "fame": 0.465,
+   "city": "Prague",
+   "country": "Czech Republic",
+   "description": "bridge in Prague, Czech Republic",
+   "hook": "is a medieval stone crossing of the Vltava lined with statues of saints",
+   "known": 0.6,
+   "kind": "bridge"
+  },
+  {
+   "label": "Museo del Prado",
+   "qid": "Q160112",
+   "fame": 0.464,
+   "city": null,
+   "country": "Spain",
+   "description": "Spanish national art museum in Madrid, Spain",
+   "hook": "is famed for its paintings by Goya and Velázquez, drawn from the old royal collection",
+   "known": 0.4,
+   "kind": "museum"
+  },
+  {
+   "label": "Hermitage Museum",
+   "qid": "Q132783",
+   "fame": 0.463,
+   "city": "Saint Petersburg",
+   "country": "Russia",
+   "description": "museum in Saint Petersburg, Russia",
+   "hook": "holds the largest collection of paintings in the world and began with a purchase by Catherine the Great",
+   "known": 0.4,
+   "kind": "museum"
+  },
+  {
+   "label": "Table Mountain",
+   "qid": "Q213360",
+   "fame": 0.459,
+   "city": "City of Cape Town",
+   "country": "South Africa",
+   "description": "mountain in Cape Town, South Africa",
+   "hook": "is a flat-topped peak overlooking its city, reached by a rotating cableway or a hike",
+   "known": 0.4,
+   "kind": "mountain"
+  },
+  {
+   "label": "Atomium",
+   "qid": "Q180901",
+   "fame": 0.452,
+   "city": "Brussels",
+   "country": "Belgium",
+   "description": "architectural landmark originally constructed as the centerpiece for Expo 58 in Brussels, Belgium",
+   "hook": null,
+   "known": 0.2,
+   "kind": "monument"
+  },
+  {
+   "label": "Ha Long Bay",
+   "qid": "Q190128",
+   "fame": 0.451,
+   "city": null,
+   "country": "Vietnam",
+   "description": "UNESCO World Heritage Site in Vietnam",
+   "hook": "is dotted with thousands of limestone islets rising from emerald water",
+   "known": 0.4,
+   "kind": "bay"
+  }
+ ]
+}

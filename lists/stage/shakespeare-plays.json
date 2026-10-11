@@ -1,0 +1,368 @@
+{
+ "id": "list.stage.shakespeare-plays",
+ "title": "Shakespeare's plays",
+ "prompt": "Name a Shakespeare play",
+ "genre": "arts-entertainment",
+ "category": "stage",
+ "topic": "theater",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P50 wd:Q692 ; wdt:P7937 wd:Q25379 . FILTER NOT EXISTS { ?item wdt:P144 [] } } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-09-30T04:12:24.720Z"
+ },
+ "rows": [
+  {
+   "label": "Macbeth",
+   "qid": "Q130283",
+   "fame": 0.629,
+   "also": [
+    "The Tragedy of Macbeth",
+    "The Bard's Play",
+    "The Scottish Play",
+    "Tragedy of Macbeth"
+   ]
+  },
+  {
+   "label": "The Taming of the Shrew",
+   "qid": "Q332387",
+   "fame": 0.603,
+   "also": []
+  },
+  {
+   "label": "A Midsummer Night's Dream",
+   "qid": "Q104871",
+   "fame": 0.601,
+   "also": [
+    "A Midſommer nights Dreame"
+   ]
+  },
+  {
+   "label": "Othello",
+   "qid": "Q26833",
+   "fame": 0.59,
+   "also": [
+    "The Tragedy of Othello",
+    "Tragedy of Othello"
+   ]
+  },
+  {
+   "label": "Much Ado About Nothing",
+   "qid": "Q130851",
+   "fame": 0.585,
+   "also": [
+    "Much Ado"
+   ]
+  },
+  {
+   "label": "King Lear",
+   "qid": "Q181598",
+   "fame": 0.582,
+   "also": [
+    "Life and death of king lear",
+    "The Life and Death of King Lear",
+    "The Tragedie of King Lear",
+    "The Tragedy of King Lear",
+    "Tragedy of King Lear"
+   ]
+  },
+  {
+   "label": "The Tempest",
+   "qid": "Q86440",
+   "fame": 0.569,
+   "also": [
+    "Tempest"
+   ]
+  },
+  {
+   "label": "Twelfth Night",
+   "qid": "Q221211",
+   "fame": 0.56,
+   "also": [
+    "12th Night"
+   ]
+  },
+  {
+   "label": "The Merchant of Venice",
+   "qid": "Q206400",
+   "fame": 0.551,
+   "also": [
+    "Merchant of Venice",
+    "The comicall Hiſtorie of the Merchant of Venice",
+    "The moſt excellent Hiſtorie of the Merchant of Venice"
+   ]
+  },
+  {
+   "label": "As You Like It",
+   "qid": "Q237572",
+   "fame": 0.539,
+   "also": []
+  },
+  {
+   "label": "Julius Caesar",
+   "qid": "Q215750",
+   "fame": 0.509,
+   "also": [
+    "The Tragedy of Julius Caesar",
+    "Tragedy of Julius Caesar"
+   ]
+  },
+  {
+   "label": "Titus Andronicus",
+   "qid": "Q272169",
+   "fame": 0.493,
+   "also": [
+    "The Tragedy of Titus Andronicus",
+    "The Lamentable Tragedy of Titus Andronicus"
+   ]
+  },
+  {
+   "label": "Antony and Cleopatra",
+   "qid": "Q606830",
+   "fame": 0.465,
+   "also": [
+    "Anthonie and Cleopatra",
+    "Anthony and Cleopatra",
+    "The Tragedy of Anthony and Cleopatra",
+    "Tragedy of Anthony and Cleopatra"
+   ]
+  },
+  {
+   "label": "The Winter's Tale",
+   "qid": "Q743194",
+   "fame": 0.461,
+   "also": [
+    "Winter's Tale"
+   ]
+  },
+  {
+   "label": "The Comedy of Errors",
+   "qid": "Q506505",
+   "fame": 0.46,
+   "also": [
+    "Comedy of Errors"
+   ]
+  },
+  {
+   "label": "Coriolanus",
+   "qid": "Q463126",
+   "fame": 0.458,
+   "also": [
+    "Caius Marcius Coriolanus",
+    "The Tragedy of Coriolanus",
+    "Tragedy of Coriolanus"
+   ]
+  },
+  {
+   "label": "Love's Labour's Lost",
+   "qid": "Q128610",
+   "fame": 0.454,
+   "also": [
+    "Love's Labor's Lost"
+   ]
+  },
+  {
+   "label": "Henry V",
+   "qid": "Q495954",
+   "fame": 0.446,
+   "also": [
+    "King Henry V",
+    "Life of Henry the Fifth",
+    "Life of King Henry the Fifth",
+    "The Life of Henry the Fifth",
+    "The Life of King Henry the Fifth"
+   ]
+  },
+  {
+   "label": "Richard II",
+   "qid": "Q649562",
+   "fame": 0.442,
+   "also": [
+    "King Richard II",
+    "The Tragedy of King Richard the Second",
+    "Tragedy of King Richard the Second",
+    "Life and Death of Richard the Second",
+    "The Life and Death of Richard the Second"
+   ]
+  },
+  {
+   "label": "Measure for Measure",
+   "qid": "Q665446",
+   "fame": 0.438,
+   "also": []
+  },
+  {
+   "label": "Henry IV, Part 1",
+   "qid": "Q631855",
+   "fame": 0.432,
+   "also": [
+    "First Part of King Henry the Fourth",
+    "The First Part of King Henry the Fourth",
+    "1 Henry IV",
+    "First Part of Henry the Fourth",
+    "The First Part of Henry the Fourth"
+   ]
+  },
+  {
+   "label": "Cymbeline",
+   "qid": "Q730212",
+   "fame": 0.414,
+   "also": [
+    "The Tragedy of Cymbeline",
+    "Cymbeline King of Britaine",
+    "Tragedy of Cymbeline"
+   ]
+  },
+  {
+   "label": "The Merry Wives of Windsor",
+   "qid": "Q844836",
+   "fame": 0.412,
+   "also": [
+    "Merry Wives of Windsor"
+   ]
+  },
+  {
+   "label": "All's Well That Ends Well",
+   "qid": "Q506865",
+   "fame": 0.408,
+   "also": []
+  },
+  {
+   "label": "The Two Gentlemen of Verona",
+   "qid": "Q232042",
+   "fame": 0.392,
+   "also": [
+    "Two Gentlemen of Verona"
+   ]
+  },
+  {
+   "label": "Pericles, Prince of Tyre",
+   "qid": "Q584729",
+   "fame": 0.383,
+   "also": [
+    "Pericles"
+   ]
+  },
+  {
+   "label": "Timon of Athens",
+   "qid": "Q284641",
+   "fame": 0.37,
+   "also": [
+    "The Life of Timon of Athens",
+    "Life of Timon of Athens",
+    "The Life of Tymon of Athens"
+   ]
+  },
+  {
+   "label": "Henry VIII",
+   "qid": "Q672059",
+   "fame": 0.357,
+   "also": [
+    "Henry the Eighth",
+    "Life of King Henry the Eighth",
+    "The Life of King Henry the Eighth"
+   ]
+  },
+  {
+   "label": "King John",
+   "qid": "Q661222",
+   "fame": 0.351,
+   "also": [
+    "Life and Death of King John",
+    "The Life and Death of King John"
+   ]
+  },
+  {
+   "label": "Henry VI, Part 1",
+   "qid": "Q643236",
+   "fame": 0.347,
+   "also": [
+    "The First Part of Henry the Sixth",
+    "1 Henry VI",
+    "First Part of King Henry the Sixth",
+    "The First Part of King Henry the Sixth",
+    "First Part of Henry the Sixth"
+   ]
+  },
+  {
+   "label": "Henry VI",
+   "qid": "Q20857440",
+   "fame": 0.338,
+   "also": []
+  },
+  {
+   "label": "Ur-Hamlet",
+   "qid": "Q2747111",
+   "fame": 0.291,
+   "also": [
+    "Hamlet"
+   ]
+  },
+  {
+   "label": "Edward III",
+   "qid": "Q1232635",
+   "fame": 0.283,
+   "also": [
+    "Raigne of King Edward the Third",
+    "The Raigne of King Edward the Third"
+   ]
+  },
+  {
+   "label": "Love's Labour's Won",
+   "qid": "Q2749746",
+   "fame": 0.28,
+   "also": [
+    "Loue labours wonne"
+   ]
+  },
+  {
+   "label": "Arden of Faversham",
+   "qid": "Q1625343",
+   "fame": 0.231,
+   "also": []
+  },
+  {
+   "label": "The History of King Lear",
+   "qid": "Q7739794",
+   "fame": 0.159,
+   "also": []
+  },
+  {
+   "label": "A Yorkshire Tragedy",
+   "qid": "Q4383498",
+   "fame": 0.116,
+   "also": []
+  },
+  {
+   "label": "Locrine",
+   "qid": "Q6131445",
+   "fame": 0.103,
+   "also": []
+  },
+  {
+   "label": "Edmund Ironside",
+   "qid": "Q3048108",
+   "fame": 0.1,
+   "also": []
+  },
+  {
+   "label": "The Second Maiden's Tragedy",
+   "qid": "Q6131327",
+   "fame": 0.08,
+   "also": []
+  },
+  {
+   "label": "Thomas Lord Cromwell",
+   "qid": "Q4383488",
+   "fame": 0.064,
+   "also": []
+  },
+  {
+   "label": "Acting Shakespeare",
+   "qid": "Q4676857",
+   "fame": 0.047,
+   "also": []
+  }
+ ]
+}

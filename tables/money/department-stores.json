@@ -1,0 +1,176 @@
+{
+ "id": "table.money.department-stores",
+ "kind": "table",
+ "title": "Department stores and their city",
+ "genre": "daily-life",
+ "category": "money",
+ "topic": "department-stores",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Hand-built, checked row by row against English Wikipedia",
+  "method": "enwiki: articles for each department store listed (Harrods, Selfridges, Macy's, Bloomingdale's, Nordstrom, Galeries Lafayette, El Corte Inglés, Hudson's Bay Company and the rest)",
+  "attribution": null,
+  "fetchedAt": "2026-10-05T00:00:00.000Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-05T19:01:25.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "city",
+   "label": "City of its flagship or head office",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "department store",
+  "many": "department stores",
+  "minFame": 0.38,
+  "columns": {
+   "city": {
+    "role": "link",
+    "pick": "In which city is the flagship or head office of {label}?",
+    "statement": "{label} is based in {value}.",
+    "match": "Match each department store to the city where it is based.",
+    "odd": "Three of these department stores are based in {value}. Which one isn't?",
+    "all": "Tap all {n} department stores based in {value}.",
+    "reverse": "Which of these department stores is based in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Harrods",
+   "qid": null,
+   "fame": 0.526,
+   "city": "London",
+   "known": 0.8,
+   "kind": "luxury"
+  },
+  {
+   "label": "Selfridges",
+   "qid": null,
+   "fame": 0.423,
+   "city": "London",
+   "known": 0.6,
+   "kind": "upscale"
+  },
+  {
+   "label": "Fortnum & Mason",
+   "qid": null,
+   "fame": 0.411,
+   "city": "London",
+   "known": 0.6,
+   "kind": "upscale"
+  },
+  {
+   "label": "Liberty",
+   "qid": null,
+   "fame": 0.383,
+   "city": "London",
+   "known": 0.4,
+   "kind": "upscale"
+  },
+  {
+   "label": "Debenhams",
+   "qid": null,
+   "fame": 0.383,
+   "city": "London",
+   "known": 0.4,
+   "kind": "regional"
+  },
+  {
+   "label": "Macy's",
+   "qid": null,
+   "fame": 0.506,
+   "city": "New York City",
+   "known": 0.95,
+   "kind": "luxury"
+  },
+  {
+   "label": "Bloomingdale's",
+   "qid": null,
+   "fame": 0.425,
+   "city": "New York City",
+   "known": 0.8,
+   "kind": "luxury"
+  },
+  {
+   "label": "Saks Fifth Avenue",
+   "qid": null,
+   "fame": 0.433,
+   "city": "New York City",
+   "known": 0.8,
+   "kind": "luxury"
+  },
+  {
+   "label": "Nordstrom",
+   "qid": null,
+   "fame": 0.489,
+   "city": "Seattle",
+   "known": 0.6,
+   "kind": "upscale"
+  },
+  {
+   "label": "Neiman Marcus",
+   "qid": null,
+   "fame": 0.458,
+   "city": "Dallas",
+   "known": 0.6,
+   "kind": "luxury"
+  },
+  {
+   "label": "Dillard's",
+   "qid": null,
+   "fame": 0.419,
+   "city": "Little Rock",
+   "known": 0.2,
+   "kind": "regional"
+  },
+  {
+   "label": "Belk",
+   "qid": null,
+   "fame": 0.38,
+   "city": "Charlotte",
+   "known": 0.2,
+   "kind": "regional"
+  },
+  {
+   "label": "Marshall Field's",
+   "qid": null,
+   "fame": 0.404,
+   "city": "Chicago",
+   "known": 0.2,
+   "kind": "regional"
+  },
+  {
+   "label": "Galeries Lafayette",
+   "qid": null,
+   "fame": 0.387,
+   "city": "Paris",
+   "known": 0.6,
+   "kind": "international"
+  },
+  {
+   "label": "El Corte Inglés",
+   "qid": null,
+   "fame": 0.38,
+   "city": "Madrid",
+   "known": 0.05,
+   "kind": "international"
+  },
+  {
+   "label": "Hudson's Bay",
+   "qid": null,
+   "fame": 0.57,
+   "city": "Toronto",
+   "known": 0.2,
+   "kind": "international"
+  }
+ ]
+}

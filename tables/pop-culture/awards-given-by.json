@@ -1,0 +1,237 @@
+{
+ "id": "table.pop-culture.awards-given-by",
+ "kind": "table",
+ "title": "Famous awards and who gives them",
+ "genre": "general",
+ "category": "pop-culture",
+ "topic": "awards",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?byLabel WHERE { ?item wdt:P31/wdt:P279* wd:Q618779; wdt:P1027 ?by; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 25) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T08:56:28.785Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T08:56:28.785Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "given_by",
+   "label": "Given by",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "award",
+  "many": "awards",
+  "columns": {
+   "given_by": {
+    "role": "code",
+    "pick": "Who gives the {label}?",
+    "statement": "The {label} is given by {value}.",
+    "match": "Match each award to the group that gives it.",
+    "reverse": "Which award is given by {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Ballon d'Or",
+   "qid": "Q166177",
+   "fame": 0.75,
+   "given_by": "France Football",
+   "description": "annual association football award",
+   "hook": "crowns the best soccer player of the season with a golden trophy",
+   "known": 0.8,
+   "kind": "sports"
+  },
+  {
+   "label": "Emmy Award",
+   "qid": "Q123737",
+   "fame": 0.69,
+   "given_by": "National Academy of Television Arts and Sciences",
+   "description": "American television production award",
+   "hook": "honors the best shows and performers on the small screen, with separate primetime and daytime ceremonies",
+   "known": 0.8,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Medal of Honor",
+   "qid": "Q203535",
+   "fame": 0.607,
+   "given_by": "President of the United States",
+   "description": "highest award for valor by an individual serving in the Armed Forces of the United States",
+   "hook": "is America's highest military decoration for valor in combat, presented in the name of Congress",
+   "known": 0.6,
+   "kind": "military"
+  },
+  {
+   "label": "Grammy Awards",
+   "qid": "Q41254",
+   "fame": 0.598,
+   "given_by": "National Academy of Recording Arts and Sciences",
+   "description": "American award for achievements in music",
+   "hook": "rewards achievements in music with a gilded gramophone trophy",
+   "known": 0.8,
+   "kind": "music"
+  },
+  {
+   "label": "Ig Nobel Prize",
+   "qid": "Q184253",
+   "fame": 0.588,
+   "given_by": "Annals of Improbable Research",
+   "description": "satiric science award",
+   "hook": null,
+   "known": 0.2,
+   "kind": "science"
+  },
+  {
+   "label": "Fields medal",
+   "qid": "Q28835",
+   "fame": 0.578,
+   "given_by": "International Mathematical Union",
+   "description": "prize awarded every four years to two, three, or four mathematicians under 40 years of age at the International Congress of the International Mathematical Union",
+   "hook": null,
+   "known": 0.05,
+   "kind": "science"
+  },
+  {
+   "label": "Nobel Prize in Literature",
+   "qid": "Q37922",
+   "fame": 0.552,
+   "given_by": "Swedish Academy",
+   "description": "one of five prizes established by Alfred Nobel",
+   "hook": "recognizes a writer's entire body of work, with the winner announced each October",
+   "known": 0.95,
+   "kind": "literature"
+  },
+  {
+   "label": "Victoria Cross",
+   "qid": "Q219578",
+   "fame": 0.549,
+   "given_by": "Monarch of the United Kingdom",
+   "description": "highest military decoration awarded by the UK and the Commonwealth",
+   "hook": "is the top British decoration for valour in the face of the enemy",
+   "known": 0.4,
+   "kind": "military"
+  },
+  {
+   "label": "Tony Awards",
+   "qid": "Q191874",
+   "fame": 0.542,
+   "given_by": "The Broadway League",
+   "description": "awards to recognize the excellence in live Broadway theatre, presented by the American Theatre Wing and The Broadway League at an annual ceremony in New York City",
+   "hook": "honors the best plays and musicals on the New York stage at a ceremony each June",
+   "known": 0.6,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Padma Bhushan",
+   "qid": "Q932650",
+   "fame": 0.534,
+   "given_by": "Government of India",
+   "description": "third-highest civilian award of India",
+   "hook": null,
+   "known": 0.05,
+   "kind": "humanitarian"
+  },
+  {
+   "label": "Golden Lion",
+   "qid": "Q209459",
+   "fame": 0.524,
+   "given_by": "Venice Film Festival",
+   "description": "highest prize given to a film at the Venice Film Festival",
+   "hook": null,
+   "known": 0.2,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Hugo Award",
+   "qid": "Q188914",
+   "fame": 0.522,
+   "given_by": "World Science Fiction Society",
+   "description": "set of awards given annually for the best science fiction or fantasy works and achievements of the previous year (1953–)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "science"
+  },
+  {
+   "label": "Nobel Prize in Physics",
+   "qid": "Q38104",
+   "fame": 0.519,
+   "given_by": "Royal Swedish Academy of Sciences",
+   "description": "yearly physics award given by the Royal Swedish Academy of Sciences",
+   "hook": "rewards groundbreaking discoveries about the fundamental forces and particles of the universe",
+   "known": 0.95,
+   "kind": "science"
+  },
+  {
+   "label": "Filmfare Awards",
+   "qid": "Q37049",
+   "fame": 0.509,
+   "given_by": "The Times Group",
+   "description": "annual film awards in India",
+   "hook": null,
+   "known": 0.05,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Righteous Among the Nations",
+   "qid": "Q112197",
+   "fame": 0.506,
+   "given_by": "Yad Vashem",
+   "description": "Israeli honorific for non-Jews who saved Jews during the Holocaust",
+   "hook": null,
+   "known": 0.2,
+   "kind": "humanitarian"
+  },
+  {
+   "label": "Turing Award",
+   "qid": "Q185667",
+   "fame": 0.481,
+   "given_by": "Association for Computing Machinery",
+   "description": "computer science award",
+   "hook": null,
+   "known": 0.2,
+   "kind": "science"
+  },
+  {
+   "label": "Nobel Prize in Physiology or Medicine",
+   "qid": "Q80061",
+   "fame": 0.454,
+   "given_by": "Karolinska Institutet",
+   "description": "one of five Nobel Prizes established in 1895 by Alfred Nobel",
+   "hook": "rewards breakthroughs in understanding the human body and fighting disease",
+   "known": 0.95,
+   "kind": "science"
+  },
+  {
+   "label": "Abel Prize",
+   "qid": "Q188184",
+   "fame": 0.453,
+   "given_by": "Norwegian Academy of Science and Letters",
+   "description": "international prize presented by the King of Norway to one or more outstanding mathematicians, created in 2003",
+   "hook": null,
+   "known": 0.05,
+   "kind": "science"
+  }
+ ]
+}

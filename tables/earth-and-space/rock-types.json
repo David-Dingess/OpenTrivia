@@ -1,0 +1,181 @@
+{
+ "id": "table.earth-and-space.rock-types",
+ "kind": "table",
+ "title": "Rock types",
+ "genre": "science-math-tech",
+ "category": "earth-and-space",
+ "topic": "geology",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?how WHERE { VALUES (?item ?how) { (wd:Q41177 \"Igneous\") (wd:Q43338 \"Igneous\") (wd:Q53754 \"Igneous\") (wd:Q180044 \"Igneous\") (wd:Q181908 \"Igneous\") (wd:Q46947 \"Igneous\") (wd:Q187408 \"Igneous\") (wd:Q190727 \"Igneous\") (wd:Q204376 \"Igneous\") (wd:Q105630 \"Igneous\") (wd:Q239918 \"Igneous\") (wd:Q6642389 \"Igneous\") (wd:Q466481 \"Igneous\") (wd:Q23757 \"Sedimentary\") (wd:Q13085 \"Sedimentary\") (wd:Q183670 \"Sedimentary\") (wd:Q83087 \"Sedimentary\") (wd:Q751300 \"Sedimentary\") (wd:Q191704 \"Sedimentary\") (wd:Q24489 \"Sedimentary\") (wd:Q156267 \"Sedimentary\") (wd:Q187156 \"Sedimentary\") (wd:Q184053 \"Sedimentary\") (wd:Q565731 \"Sedimentary\") (wd:Q193685 \"Sedimentary\") (wd:Q1134814 \"Sedimentary\") (wd:Q221378 \"Sedimentary\") (wd:Q40861 \"Metamorphic\") (wd:Q207079 \"Metamorphic\") (wd:Q237883 \"Metamorphic\") (wd:Q166409 \"Metamorphic\") (wd:Q15315 \"Metamorphic\") (wd:Q731880 \"Metamorphic\") (wd:Q707896 \"Metamorphic\") (wd:Q335239 \"Metamorphic\") (wd:Q737339 \"Metamorphic\") (wd:Q729546 \"Metamorphic\") (wd:Q744630 \"Metamorphic\") (wd:Q847702 \"Metamorphic\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-03T03:41:29.967Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-03T03:41:29.967Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "rock_class",
+   "label": "Rock class",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "rock",
+  "many": "rocks",
+  "hookAsk": "Which rock {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "lowerInProse": true,
+  "columns": {
+   "rock_class": {
+    "role": "link",
+    "pick": "What kind of rock is {label}: igneous, sedimentary or metamorphic?",
+    "statement": "{label} is classed as {value}.",
+    "match": "Match each rock to the kind it is.",
+    "odd": "Three of these rocks are {value}. Which one isn't?",
+    "all": "Tap all {n} rocks that are {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "obsidian",
+   "qid": "Q53754",
+   "fame": 0.579,
+   "rock_class": "Igneous",
+   "description": "naturally occurring volcanic glass",
+   "hook": "is a black, glassy stone that can be chipped into razor-sharp blades",
+   "known": 0.4,
+   "kind": "igneous"
+  },
+  {
+   "label": "limestone",
+   "qid": "Q23757",
+   "fame": 0.555,
+   "rock_class": "Sedimentary",
+   "description": "sedimentary rocks made of the chemical substance calcium carbonate",
+   "hook": "is the stone that builds cave systems and holds countless fossils of ancient shells and corals",
+   "known": 0.8,
+   "kind": "sedimentary"
+  },
+  {
+   "label": "basalt",
+   "qid": "Q43338",
+   "fame": 0.53,
+   "rock_class": "Igneous",
+   "description": "mafic igneous rock",
+   "hook": null,
+   "known": 0.3,
+   "kind": "igneous"
+  },
+  {
+   "label": "coal",
+   "qid": "Q24489",
+   "fame": 0.526,
+   "rock_class": "Sedimentary",
+   "description": "combustible sedimentary rock composed primarily of carbon",
+   "hook": "is a black fuel dug from mines that powered the Industrial Revolution",
+   "known": 0.9,
+   "kind": "sedimentary"
+  },
+  {
+   "label": "granite",
+   "qid": "Q41177",
+   "fame": 0.521,
+   "rock_class": "Igneous",
+   "description": "common type of intrusive, felsic, igneous rock with grained texture",
+   "hook": "is a hard, speckled stone used for kitchen countertops and gravestones",
+   "known": 0.8,
+   "kind": "igneous"
+  },
+  {
+   "label": "marble",
+   "qid": "Q40861",
+   "fame": 0.49,
+   "rock_class": "Metamorphic",
+   "description": "foliated metamorphic rock of carbonatic minerals",
+   "hook": "is a veined stone that sculptors carve into statues and builders use for polished floors",
+   "known": 0.7,
+   "kind": "metamorphic"
+  },
+  {
+   "label": "soapstone",
+   "qid": "Q707896",
+   "fame": 0.483,
+   "rock_class": "Metamorphic",
+   "description": "type of metamorphic rock",
+   "hook": null,
+   "known": 0.2,
+   "kind": "metamorphic"
+  },
+  {
+   "label": "flint",
+   "qid": "Q83087",
+   "fame": 0.48,
+   "rock_class": "Sedimentary",
+   "description": "sedimentary rock, chert variety",
+   "hook": "is a hard stone that makes sparks when struck and was shaped into prehistoric tools",
+   "known": 0.5,
+   "kind": "sedimentary"
+  },
+  {
+   "label": "pumice",
+   "qid": "Q180044",
+   "fame": 0.475,
+   "rock_class": "Igneous",
+   "description": "light coloured highly vesicular volcanic rock",
+   "hook": null,
+   "known": 0.3,
+   "kind": "igneous"
+  },
+  {
+   "label": "chalk",
+   "qid": "Q183670",
+   "fame": 0.463,
+   "rock_class": "Sedimentary",
+   "description": "soft, white, porous sedimentary rock",
+   "hook": "is a soft white stone that forms the cliffs of Dover and was long used to write on blackboards",
+   "known": 0.85,
+   "kind": "sedimentary"
+  },
+  {
+   "label": "sandstone",
+   "qid": "Q13085",
+   "fame": 0.456,
+   "rock_class": "Sedimentary",
+   "description": "type of sedimentary rock",
+   "hook": "is a grainy stone made of cemented sand, forming red desert arches and cliffs",
+   "known": 0.6,
+   "kind": "sedimentary"
+  },
+  {
+   "label": "travertine",
+   "qid": "Q187156",
+   "fame": 0.451,
+   "rock_class": "Sedimentary",
+   "description": "form of terrestrial limestone deposited around mineral springs, especially hot springs",
+   "hook": null,
+   "known": 0.25,
+   "kind": "sedimentary"
+  }
+ ]
+}

@@ -1,0 +1,553 @@
+{
+ "id": "list.food-and-drink.beer-styles",
+ "title": "Beer styles",
+ "prompt": "Name a beer style",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "wine-and-beer",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q1998962 . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-10-04T07:29:47.782Z"
+ },
+ "rows": [
+  {
+   "label": "India Pale Ale",
+   "qid": "Q1543214",
+   "fame": 0.505,
+   "also": [
+    "IPA",
+    "Indian Pale Ale",
+    "IPA Beer"
+   ]
+  },
+  {
+   "label": "stout",
+   "qid": "Q217825",
+   "fame": 0.46,
+   "also": []
+  },
+  {
+   "label": "Märzen",
+   "qid": "Q1760222",
+   "fame": 0.459,
+   "also": []
+  },
+  {
+   "label": "pilsner",
+   "qid": "Q152281",
+   "fame": 0.459,
+   "also": [
+    "pils",
+    "pilsen",
+    "pilsener"
+   ]
+  },
+  {
+   "label": "lager",
+   "qid": "Q253481",
+   "fame": 0.452,
+   "also": []
+  },
+  {
+   "label": "malt liquor",
+   "qid": "Q2397992",
+   "fame": 0.442,
+   "also": []
+  },
+  {
+   "label": "ale",
+   "qid": "Q208385",
+   "fame": 0.44,
+   "also": []
+  },
+  {
+   "label": "wheat beer",
+   "qid": "Q131413",
+   "fame": 0.438,
+   "also": [
+    "Kiihle blonde",
+    "Weiss Bier"
+   ]
+  },
+  {
+   "label": "Trappist beer",
+   "qid": "Q505815",
+   "fame": 0.43,
+   "also": []
+  },
+  {
+   "label": "Kölsch",
+   "qid": "Q4626",
+   "fame": 0.419,
+   "also": []
+  },
+  {
+   "label": "porter",
+   "qid": "Q954166",
+   "fame": 0.409,
+   "also": [
+    "porter beer"
+   ]
+  },
+  {
+   "label": "low-alcohol beer",
+   "qid": "Q524679",
+   "fame": 0.391,
+   "also": [
+    "non-alcoholic beer",
+    "small beer",
+    "light beer",
+    "near beer",
+    "small ale",
+    "zero-alcohol beer"
+   ]
+  },
+  {
+   "label": "helles",
+   "qid": "Q261105",
+   "fame": 0.387,
+   "also": [
+    "hell"
+   ]
+  },
+  {
+   "label": "lambic",
+   "qid": "Q526314",
+   "fame": 0.387,
+   "also": [
+    "lambik",
+    "lambiek"
+   ]
+  },
+  {
+   "label": "pale lager",
+   "qid": "Q15709638",
+   "fame": 0.384,
+   "also": []
+  },
+  {
+   "label": "pale ale",
+   "qid": "Q2271859",
+   "fame": 0.369,
+   "also": []
+  },
+  {
+   "label": "Bock",
+   "qid": "Q687737",
+   "fame": 0.366,
+   "also": []
+  },
+  {
+   "label": "bitter",
+   "qid": "Q27201",
+   "fame": 0.362,
+   "also": [
+    "best bitter",
+    "English bitter"
+   ]
+  },
+  {
+   "label": "Gose",
+   "qid": "Q561987",
+   "fame": 0.348,
+   "also": []
+  },
+  {
+   "label": "Dunkel",
+   "qid": "Q1265882",
+   "fame": 0.342,
+   "also": []
+  },
+  {
+   "label": "Irish Red Ale",
+   "qid": "Q55597285",
+   "fame": 0.322,
+   "also": [
+    "Red Ale"
+   ]
+  },
+  {
+   "label": "Altbier",
+   "qid": "Q44924",
+   "fame": 0.321,
+   "also": []
+  },
+  {
+   "label": "barley wine",
+   "qid": "Q808329",
+   "fame": 0.32,
+   "also": []
+  },
+  {
+   "label": "saison",
+   "qid": "Q1161714",
+   "fame": 0.311,
+   "also": []
+  },
+  {
+   "label": "zwickelbier",
+   "qid": "Q8401949",
+   "fame": 0.299,
+   "also": [
+    "Kellerbier"
+   ]
+  },
+  {
+   "label": "tripel",
+   "qid": "Q2719638",
+   "fame": 0.298,
+   "also": [
+    "tripel beer"
+   ]
+  },
+  {
+   "label": "kriek",
+   "qid": "Q1756073",
+   "fame": 0.296,
+   "also": [
+    "Kriek lambic"
+   ]
+  },
+  {
+   "label": "light beer",
+   "qid": "Q1814622",
+   "fame": 0.295,
+   "also": []
+  },
+  {
+   "label": "gueuze",
+   "qid": "Q1520229",
+   "fame": 0.272,
+   "also": [
+    "Brussels champagne",
+    "geuze"
+   ]
+  },
+  {
+   "label": "smoked beer",
+   "qid": "Q597787",
+   "fame": 0.272,
+   "also": [
+    "Rauchbier"
+   ]
+  },
+  {
+   "label": "ice beer",
+   "qid": "Q241949",
+   "fame": 0.271,
+   "also": []
+  },
+  {
+   "label": "American lager",
+   "qid": "Q16974848",
+   "fame": 0.269,
+   "also": []
+  },
+  {
+   "label": "brown ale",
+   "qid": "Q2725773",
+   "fame": 0.265,
+   "also": []
+  },
+  {
+   "label": "fruit beer",
+   "qid": "Q3510707",
+   "fame": 0.262,
+   "also": []
+  },
+  {
+   "label": "schwarzbier",
+   "qid": "Q1273660",
+   "fame": 0.26,
+   "also": []
+  },
+  {
+   "label": "cream ale",
+   "qid": "Q5183358",
+   "fame": 0.25,
+   "also": []
+  },
+  {
+   "label": "framboise",
+   "qid": "Q1748225",
+   "fame": 0.231,
+   "also": []
+  },
+  {
+   "label": "banana beer",
+   "qid": "Q2564161",
+   "fame": 0.23,
+   "also": [
+    "Omubisi"
+   ]
+  },
+  {
+   "label": "quadrupel",
+   "qid": "Q7268438",
+   "fame": 0.221,
+   "also": [
+    "quadrupel beer"
+   ]
+  },
+  {
+   "label": "farmhouse ale",
+   "qid": "Q25040057",
+   "fame": 0.22,
+   "also": []
+  },
+  {
+   "label": "Flanders red ale",
+   "qid": "Q2905073",
+   "fame": 0.22,
+   "also": []
+  },
+  {
+   "label": "Grodziskie",
+   "qid": "Q11818755",
+   "fame": 0.219,
+   "also": [
+    "Grätzer"
+   ]
+  },
+  {
+   "label": "dubbel",
+   "qid": "Q2542177",
+   "fame": 0.212,
+   "also": []
+  },
+  {
+   "label": "Dortmunder Export",
+   "qid": "Q1512528",
+   "fame": 0.21,
+   "also": []
+  },
+  {
+   "label": "corn beer",
+   "qid": "Q5171042",
+   "fame": 0.202,
+   "also": []
+  },
+  {
+   "label": "rye beer",
+   "qid": "Q773568",
+   "fame": 0.199,
+   "also": []
+  },
+  {
+   "label": "American pale ale",
+   "qid": "Q15940735",
+   "fame": 0.194,
+   "also": [
+    "APA"
+   ]
+  },
+  {
+   "label": "Old ale",
+   "qid": "Q3433031",
+   "fame": 0.19,
+   "also": []
+  },
+  {
+   "label": "bière de garde",
+   "qid": "Q1168351",
+   "fame": 0.188,
+   "also": []
+  },
+  {
+   "label": "Scotch ale",
+   "qid": "Q13430975",
+   "fame": 0.181,
+   "also": []
+  },
+  {
+   "label": "happoshu",
+   "qid": "Q1046968",
+   "fame": 0.176,
+   "also": [
+    "low-malt beer"
+   ]
+  },
+  {
+   "label": "Tella",
+   "qid": "Q1919628",
+   "fame": 0.171,
+   "also": [
+    "Talla"
+   ]
+  },
+  {
+   "label": "Flanders Oud Bruin",
+   "qid": "Q2790699",
+   "fame": 0.17,
+   "also": [
+    "Oud bruin",
+    "Oudenaards bruin"
+   ]
+  },
+  {
+   "label": "Zhigulevskoye",
+   "qid": "Q134899",
+   "fame": 0.167,
+   "also": [
+    "Žiguli"
+   ]
+  },
+  {
+   "label": "Zoigl",
+   "qid": "Q218424",
+   "fame": 0.156,
+   "also": []
+  },
+  {
+   "label": "bouza",
+   "qid": "Q2922667",
+   "fame": 0.154,
+   "also": []
+  },
+  {
+   "label": "Strong ale",
+   "qid": "Q31839204",
+   "fame": 0.15,
+   "also": []
+  },
+  {
+   "label": "Siwa",
+   "qid": "Q65964380",
+   "fame": 0.141,
+   "also": []
+  },
+  {
+   "label": "Cock ale",
+   "qid": "Q5139509",
+   "fame": 0.132,
+   "also": []
+  },
+  {
+   "label": "svagdricka",
+   "qid": "Q3126187",
+   "fame": 0.132,
+   "also": [
+    "soft drink",
+    "light drink",
+    "low drink",
+    "weak drink"
+   ]
+  },
+  {
+   "label": "Kveik",
+   "qid": "Q67112501",
+   "fame": 0.13,
+   "also": []
+  },
+  {
+   "label": "Near beer",
+   "qid": "Q28745369",
+   "fame": 0.107,
+   "also": []
+  },
+  {
+   "label": "Steinbier",
+   "qid": "Q1935215",
+   "fame": 0.079,
+   "also": []
+  },
+  {
+   "label": "Brunswick Mum",
+   "qid": "Q533180",
+   "fame": 0.069,
+   "also": []
+  },
+  {
+   "label": "American wild ale",
+   "qid": "Q4745555",
+   "fame": 0.06,
+   "also": [
+    "wild ale"
+   ]
+  },
+  {
+   "label": "copper ale",
+   "qid": "Q16951485",
+   "fame": 0.059,
+   "also": []
+  },
+  {
+   "label": "seasonal beer",
+   "qid": "Q25041816",
+   "fame": 0.059,
+   "also": []
+  },
+  {
+   "label": "Amber Ale",
+   "qid": "Q457026",
+   "fame": 0.033,
+   "also": []
+  },
+  {
+   "label": "abbey beer",
+   "qid": "Q1050906",
+   "fame": 0,
+   "also": [
+    "Abbey beers"
+   ]
+  },
+  {
+   "label": "blond",
+   "qid": "Q2792509",
+   "fame": 0,
+   "also": [
+    "Blonde beer",
+    "blond beer",
+    "Belgian blond ale",
+    "Belgian blonde ale"
+   ]
+  },
+  {
+   "label": "caves",
+   "qid": "Q120779634",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "dark beer",
+   "qid": "Q2905033",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "flavoured beer",
+   "qid": "Q2905029",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Peeterman Artois",
+   "qid": "Q7160484",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "red beer",
+   "qid": "Q2168133",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "rye India Pale Ale",
+   "qid": "Q25220404",
+   "fame": 0,
+   "also": [
+    "Rye IPA"
+   ]
+  },
+  {
+   "label": "Ukrainian golden ale",
+   "qid": "Q123481749",
+   "fame": 0,
+   "also": []
+  }
+ ]
+}

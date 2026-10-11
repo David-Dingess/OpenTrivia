@@ -1,0 +1,667 @@
+{
+ "id": "table.film-and-tv.film-directors",
+ "kind": "table",
+ "title": "Famous films and their directors",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "directors",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?dirLabel ?kindTag WHERE { { SELECT ?item (SAMPLE(?d) AS ?dir) (COUNT(DISTINCT ?d) AS ?nDir) WHERE { VALUES ?cls { wd:Q11424 wd:Q29168811 wd:Q202866 wd:Q28968511 } ?item wdt:P31 ?cls ; wdt:P57 ?d ; wikibase:sitelinks ?sl . FILTER(?sl >= 50) FILTER(?d NOT IN (wd:Q51552, wd:Q25089, wd:Q42229, wd:Q220751, wd:Q298025)) FILTER(?item NOT IN (wd:Q1392744, wd:Q25139)) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nDir = 1) BIND(IF(EXISTS { ?item wdt:P136|wdt:P31 ?g . VALUES ?g { wd:Q202866 wd:Q29168811 wd:Q28968511 } }, \"animated\", \"live-action\") AS ?kindTag) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T00:51:01.312Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T00:51:01.312Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "director",
+   "label": "Director",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "kind",
+   "label": "Film type",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "film",
+  "many": "films",
+  "hookAsk": "Which film {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "director": {
+    "role": "link",
+    "pick": "Who directed {label}?",
+    "statement": "{label} was directed by {value}.",
+    "match": "Match each film to its director.",
+    "odd": "Three of these were directed by {value}. Which one wasn't?",
+    "all": "Tap all {n} films directed by {value}.",
+    "reverse": "Which of these did {value} direct?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Interstellar",
+   "qid": "Q13417189",
+   "fame": 0.751,
+   "director": "Christopher Nolan",
+   "kind": "live-action",
+   "description": "2014 film by Christopher Nolan",
+   "hook": "follows explorers traveling through a wormhole to find a new habitable planet as Earth dies from crop blight",
+   "known": 0.8
+  },
+  {
+   "label": "The Godfather",
+   "qid": "Q47703",
+   "fame": 0.739,
+   "director": "Francis Ford Coppola",
+   "kind": "live-action",
+   "description": "1972 American epic gangster drama film directed by Francis Ford Coppola",
+   "hook": "follows a crime family's reluctant son pulled into leading it after an attempt on his father's life",
+   "known": 0.95
+  },
+  {
+   "label": "Oppenheimer",
+   "qid": "Q108839994",
+   "fame": 0.738,
+   "director": "Christopher Nolan",
+   "kind": "live-action",
+   "description": "2023 film directed by Christopher Nolan",
+   "hook": "follows the physicist leading the wartime race to build the first atomic bomb and living with its consequences",
+   "known": 0.8
+  },
+  {
+   "label": "The Dark Knight",
+   "qid": "Q163872",
+   "fame": 0.717,
+   "director": "Christopher Nolan",
+   "kind": "live-action",
+   "description": "2008 film directed by Christopher Nolan",
+   "hook": "follows a vigilante crimefighter facing a chaos-loving mastermind who pushes a city to its moral limits",
+   "known": 0.8
+  },
+  {
+   "label": "Titanic",
+   "qid": "Q44578",
+   "fame": 0.717,
+   "director": "James Cameron",
+   "kind": "live-action",
+   "description": "1997 film directed by James Cameron",
+   "hook": "follows two star-crossed lovers from different classes aboard a doomed ocean liner's first and only voyage",
+   "known": 0.95
+  },
+  {
+   "label": "Forrest Gump",
+   "qid": "Q134773",
+   "fame": 0.715,
+   "director": "Robert Zemeckis",
+   "kind": "live-action",
+   "description": "1994 film directed by Robert Zemeckis",
+   "hook": "follows a kind-hearted, slow-witted man who unwittingly shapes major historical events across several decades",
+   "known": 0.95
+  },
+  {
+   "label": "The Shawshank Redemption",
+   "qid": "Q172241",
+   "fame": 0.712,
+   "director": "Frank Darabont",
+   "kind": "live-action",
+   "description": "1994 film directed by Frank Darabont",
+   "hook": "follows a wrongly convicted banker who forms an enduring friendship while plotting a meticulous prison escape",
+   "known": 0.8
+  },
+  {
+   "label": "Avatar",
+   "qid": "Q24871",
+   "fame": 0.707,
+   "director": "James Cameron",
+   "kind": "live-action",
+   "description": "2009 film directed by James Cameron",
+   "hook": "follows a paralyzed marine who inhabits an alien body to infiltrate a native tribe and fights for their world",
+   "known": 0.8
+  },
+  {
+   "label": "The Terminator",
+   "qid": "Q162255",
+   "fame": 0.705,
+   "director": "James Cameron",
+   "kind": "live-action",
+   "description": "1984 film by James Cameron",
+   "hook": "follows a relentless cyborg assassin sent back in time to kill the future mother of a resistance leader",
+   "known": 0.8
+  },
+  {
+   "label": "2001: A Space Odyssey",
+   "qid": "Q103474",
+   "fame": 0.702,
+   "director": "Stanley Kubrick",
+   "kind": "live-action",
+   "description": "1968 film by Stanley Kubrick",
+   "hook": "follows astronauts on a mission overseen by a sentient computer that turns against its crew",
+   "known": 0.6
+  },
+  {
+   "label": "The Departed",
+   "qid": "Q172975",
+   "fame": 0.697,
+   "director": "Martin Scorsese",
+   "kind": "live-action",
+   "description": "2006 film directed by Martin Scorsese",
+   "hook": "follows an undercover cop and a mob informant embedded in the police, each racing to unmask the other",
+   "known": 0.6
+  },
+  {
+   "label": "Terminator 2: Judgment Day",
+   "qid": "Q170564",
+   "fame": 0.694,
+   "director": "James Cameron",
+   "kind": "live-action",
+   "description": "1991 film directed by James Cameron",
+   "hook": "follows a resistance leader's mother being protected by a reprogrammed cyborg from a shape-shifting killer",
+   "known": 0.8
+  },
+  {
+   "label": "Inception",
+   "qid": "Q25188",
+   "fame": 0.693,
+   "director": "Christopher Nolan",
+   "kind": "live-action",
+   "description": "2010 film directed by Christopher Nolan",
+   "hook": "follows a thief who plants an idea deep inside a target's mind by infiltrating his dreams within dreams",
+   "known": 0.8
+  },
+  {
+   "label": "Inglourious Basterds",
+   "qid": "Q153723",
+   "fame": 0.693,
+   "director": "Quentin Tarantino",
+   "kind": "live-action",
+   "description": "2009 film directed by Quentin Tarantino",
+   "hook": "follows soldiers hunting Nazis behind enemy lines alongside a cinema owner plotting revenge on her killers",
+   "known": 0.6
+  },
+  {
+   "label": "The Silence of the Lambs",
+   "qid": "Q133654",
+   "fame": 0.691,
+   "director": "Jonathan Demme",
+   "kind": "live-action",
+   "description": "1991 film directed by Jonathan Demme",
+   "hook": "follows a trainee FBI agent who seeks help from a brilliant, imprisoned psychiatrist to catch a killer",
+   "known": 0.8
+  },
+  {
+   "label": "Alien",
+   "qid": "Q103569",
+   "fame": 0.69,
+   "director": "Ridley Scott",
+   "kind": "live-action",
+   "description": "1979 film by Ridley Scott",
+   "hook": "follows a spacecraft crew hunted one by one by a deadly extraterrestrial that stowed away aboard their ship",
+   "known": 0.8
+  },
+  {
+   "label": "Blade Runner",
+   "qid": "Q184843",
+   "fame": 0.69,
+   "director": "Ridley Scott",
+   "kind": "live-action",
+   "description": "1982 film directed by Ridley Scott",
+   "hook": "follows a bounty hunter tasked with hunting down synthetic humans who have escaped back to Earth",
+   "known": 0.6
+  },
+  {
+   "label": "Harry Potter and the Philosopher's Stone",
+   "qid": "Q102438",
+   "fame": 0.689,
+   "director": "Chris Columbus",
+   "kind": "live-action",
+   "description": "2001 film directed by Chris Columbus",
+   "hook": "follows an orphaned boy who discovers he's a wizard and enrolls at a magical boarding school",
+   "known": 0.8
+  },
+  {
+   "label": "Lawrence of Arabia",
+   "qid": "Q228186",
+   "fame": 0.684,
+   "director": "David Lean",
+   "kind": "live-action",
+   "description": "1962 film directed by David Lean",
+   "hook": "follows a British officer who unites Arab tribes in a desert revolt during the First World War",
+   "known": 0.8
+  },
+  {
+   "label": "Jurassic Park",
+   "qid": "Q167726",
+   "fame": 0.683,
+   "director": "Steven Spielberg",
+   "kind": "live-action",
+   "description": "1993 film by Steven Spielberg",
+   "hook": "follows scientists and visitors trying to survive after cloned dinosaurs break loose on an island attraction",
+   "known": 0.8
+  },
+  {
+   "label": "Pulp Fiction",
+   "qid": "Q104123",
+   "fame": 0.683,
+   "director": "Quentin Tarantino",
+   "kind": "live-action",
+   "description": "1994 film by Quentin Tarantino",
+   "hook": "follows interlocking stories of hitmen, a boxer and a gangster's wife across a nonlinear crime saga",
+   "known": 0.8
+  },
+  {
+   "label": "Star Wars: Episode IV – A New Hope",
+   "qid": "Q17738",
+   "fame": 0.682,
+   "director": "George Lucas",
+   "kind": "live-action",
+   "description": "1977 film directed by George Lucas",
+   "hook": "follows a farm boy who joins rebels to rescue a princess and destroy an empire's planet-killing battle station",
+   "known": 0.95
+  },
+  {
+   "label": "Iron Man",
+   "qid": "Q192724",
+   "fame": 0.681,
+   "director": "Jon Favreau",
+   "kind": "live-action",
+   "description": "2008 film directed by Jon Favreau",
+   "hook": "follows a billionaire weapons manufacturer who builds a powered suit of armor after a life-changing capture",
+   "known": 0.8
+  },
+  {
+   "label": "Spider-Man",
+   "qid": "Q484442",
+   "fame": 0.679,
+   "director": "Sam Raimi",
+   "kind": "live-action",
+   "description": "2002 film directed by Sam Raimi",
+   "hook": "follows a bitten teenager who gains arachnid-like powers and learns that great power demands responsibility",
+   "known": 0.8
+  },
+  {
+   "label": "Batman Begins",
+   "qid": "Q166262",
+   "fame": 0.675,
+   "director": "Christopher Nolan",
+   "kind": "live-action",
+   "description": "2005 film by Christopher Nolan",
+   "hook": "follows a traumatized billionaire who trains abroad before returning home as a masked vigilante fighting crime",
+   "known": 0.8
+  },
+  {
+   "label": "Gladiator",
+   "qid": "Q128518",
+   "fame": 0.673,
+   "director": "Ridley Scott",
+   "kind": "live-action",
+   "description": "2000 film by Ridley Scott",
+   "hook": "follows a betrayed Roman general sold into slavery who rises through the arena to seek revenge on the emperor",
+   "known": 0.6
+  },
+  {
+   "label": "Apocalypse Now",
+   "qid": "Q182692",
+   "fame": 0.668,
+   "director": "Francis Ford Coppola",
+   "kind": "live-action",
+   "description": "1979 film directed by Francis Ford Coppola",
+   "hook": "follows a soldier sent upriver into the jungle to assassinate a renegade colonel who has gone mad with power",
+   "known": 0.8
+  },
+  {
+   "label": "Fight Club",
+   "qid": "Q190050",
+   "fame": 0.668,
+   "director": "David Fincher",
+   "kind": "live-action",
+   "description": "Psychological Drama and Thriller based on the novel “Fight Club” by Chuck Palahniuk",
+   "hook": "follows an insomniac office worker who forms an underground brawling group that spirals into anarchist chaos",
+   "known": 0.8
+  },
+  {
+   "label": "Back to the Future",
+   "qid": "Q91540",
+   "fame": 0.667,
+   "director": "Robert Zemeckis",
+   "kind": "live-action",
+   "description": "1985 film directed by Robert Zemeckis",
+   "hook": "follows a teen sent decades into the past who must reunite his parents to secure his own existence",
+   "known": 0.8
+  },
+  {
+   "label": "Taxi Driver",
+   "qid": "Q47221",
+   "fame": 0.667,
+   "director": "Martin Scorsese",
+   "kind": "live-action",
+   "description": "1976 film directed by Martin Scorsese",
+   "hook": "follows a lonely New York night-shift cabbie whose isolation spirals toward violence",
+   "known": 0.6
+  },
+  {
+   "label": "Dead Poets Society",
+   "qid": "Q106316",
+   "fame": 0.662,
+   "director": "Peter Weir",
+   "kind": "live-action",
+   "description": "1989 film directed by Peter Weir",
+   "hook": "follows an unconventional English teacher who inspires boarding school boys to seize the day through poetry",
+   "known": 0.6
+  },
+  {
+   "label": "Schindler's List",
+   "qid": "Q483941",
+   "fame": 0.662,
+   "director": "Steven Spielberg",
+   "kind": "live-action",
+   "description": "1993 film directed by Steven Spielberg",
+   "hook": "follows a war-profiteering businessman who spends his fortune saving Jewish workers from extermination",
+   "known": 0.8
+  },
+  {
+   "label": "Parasite",
+   "qid": "Q61448040",
+   "fame": 0.661,
+   "director": "Bong Joon-ho",
+   "kind": "live-action",
+   "description": "2019 film directed by Bong Joon-ho",
+   "hook": "follows a poor family who scheme their way into working for a wealthy household with disastrous consequences",
+   "known": 0.6
+  },
+  {
+   "label": "Saving Private Ryan",
+   "qid": "Q165817",
+   "fame": 0.66,
+   "director": "Steven Spielberg",
+   "kind": "live-action",
+   "description": "1998 film directed by Steven Spielberg",
+   "hook": "follows soldiers sent behind enemy lines to bring home a paratrooper whose brothers have all been killed",
+   "known": 0.8
+  },
+  {
+   "label": "Toy Story",
+   "qid": "Q171048",
+   "fame": 0.655,
+   "director": "John Lasseter",
+   "kind": "animated",
+   "description": "1995 animated film directed by John Lasseter",
+   "hook": "follows a cowboy doll's rivalry with a flashy new spaceman toy for a boy's affection",
+   "known": 0.95
+  },
+  {
+   "label": "Thor",
+   "qid": "Q217020",
+   "fame": 0.652,
+   "director": "Kenneth Branagh",
+   "kind": "live-action",
+   "description": "2011 film directed by Kenneth Branagh",
+   "hook": "follows a banished god of thunder who must prove himself on Earth to reclaim his hammer and stop his brother",
+   "known": 0.8
+  },
+  {
+   "label": "Citizen Kane",
+   "qid": "Q24815",
+   "fame": 0.651,
+   "director": "Orson Welles",
+   "kind": "live-action",
+   "description": "1941 American drama film directed by Orson Welles",
+   "hook": "follows a reporter piecing together a powerful newspaper tycoon's life through interviews after his dying word",
+   "known": 0.6
+  },
+  {
+   "label": "Psycho",
+   "qid": "Q163038",
+   "fame": 0.649,
+   "director": "Alfred Hitchcock",
+   "kind": "live-action",
+   "description": "1960 US film by Alfred Hitchcock",
+   "hook": "follows a fugitive secretary who checks into a remote motel run by a disturbed man dominated by his mother",
+   "known": 0.8
+  },
+  {
+   "label": "300",
+   "qid": "Q131390",
+   "fame": 0.647,
+   "director": "Zack Snyder",
+   "kind": "live-action",
+   "description": "2007 film directed by Zack Snyder",
+   "hook": "follows a small band of Spartan warriors making a last stand against a huge invading army at a mountain pass",
+   "known": 0.6
+  },
+  {
+   "label": "Home Alone",
+   "qid": "Q105031",
+   "fame": 0.647,
+   "director": "Chris Columbus",
+   "kind": "live-action",
+   "description": "1990 film directed by Chris Columbus",
+   "hook": "follows a boy accidentally left behind by his family who must defend his house from bumbling burglars",
+   "known": 0.8
+  },
+  {
+   "label": "Raiders of the Lost Ark",
+   "qid": "Q174284",
+   "fame": 0.646,
+   "director": "Steven Spielberg",
+   "kind": "live-action",
+   "description": "1981 film directed by Steven Spielberg",
+   "hook": "follows an archaeologist-adventurer racing Nazis to recover a biblical relic of immense power",
+   "known": 0.8
+  },
+  {
+   "label": "The Lord of the Rings: The Fellowship of the Ring",
+   "qid": "Q127367",
+   "fame": 0.646,
+   "director": "Peter Jackson",
+   "kind": "live-action",
+   "description": "2001 film by Peter Jackson",
+   "hook": "follows a small homebody and his companions setting out to destroy a corrupting object of immense power",
+   "known": 0.95
+  },
+  {
+   "label": "Casablanca",
+   "qid": "Q132689",
+   "fame": 0.645,
+   "director": "Michael Curtiz",
+   "kind": "live-action",
+   "description": "1942 film directed by Michael Curtiz",
+   "hook": "follows a cynical nightclub owner in wartime North Africa choosing between love and helping a rebel escape",
+   "known": 0.8
+  },
+  {
+   "label": "The Good, the Bad and the Ugly",
+   "qid": "Q41483",
+   "fame": 0.642,
+   "director": "Sergio Leone",
+   "kind": "live-action",
+   "description": "1966 film directed by Sergio Leone",
+   "hook": "follows three gunslingers racing each other to find a fortune in buried Confederate gold",
+   "known": 0.6
+  },
+  {
+   "label": "Brokeback Mountain",
+   "qid": "Q160618",
+   "fame": 0.641,
+   "director": "Ang Lee",
+   "kind": "live-action",
+   "description": "2005 film directed by Ang Lee",
+   "hook": "follows two ranch hands whose secret romance during a summer job endures across decades of separate lives",
+   "known": 0.6
+  },
+  {
+   "label": "Captain America: The First Avenger",
+   "qid": "Q275120",
+   "fame": 0.64,
+   "director": "Joe Johnston",
+   "kind": "live-action",
+   "description": "2011 film directed by Joe Johnston",
+   "hook": "follows a frail young man transformed into a super-soldier to fight a Nazi splinter organization",
+   "known": 0.6
+  },
+  {
+   "label": "One Flew Over the Cuckoo's Nest",
+   "qid": "Q171669",
+   "fame": 0.635,
+   "director": "Miloš Forman",
+   "kind": "live-action",
+   "description": "1975 film directed by Miloš Forman",
+   "hook": "follows a rebellious inmate who challenges a controlling nurse's authority at a psychiatric hospital",
+   "known": 0.8
+  },
+  {
+   "label": "A Beautiful Mind",
+   "qid": "Q164103",
+   "fame": 0.634,
+   "director": "Ron Howard",
+   "kind": "live-action",
+   "description": "2001 film by Ron Howard",
+   "hook": "follows a brilliant mathematician whose theories are overshadowed by a battle with schizophrenia",
+   "known": 0.6
+  },
+  {
+   "label": "Ben-Hur",
+   "qid": "Q180098",
+   "fame": 0.631,
+   "director": "William Wyler",
+   "kind": "live-action",
+   "description": "1959 American epic historical drama film by William Wyler",
+   "hook": "follows a betrayed Judean prince enslaved by a childhood friend who rises to win revenge in a chariot race",
+   "known": 0.6
+  },
+  {
+   "label": "Pirates of the Caribbean: The Curse of the Black Pearl",
+   "qid": "Q46717",
+   "fame": 0.631,
+   "director": "Gore Verbinski",
+   "kind": "live-action",
+   "description": "2003 American adventure fantasy comedy film directed by Gore Verbinski",
+   "hook": "follows a blacksmith teaming with a pirate captain to rescue a governor's daughter from a cursed crew",
+   "known": 0.8
+  },
+  {
+   "label": "Harry Potter and the Deathly Hallows – Part 2",
+   "qid": "Q232009",
+   "fame": 0.627,
+   "director": "David Yates",
+   "kind": "live-action",
+   "description": "2011 film directed by David Yates",
+   "hook": "follows a young wizard's final confrontation with the dark lord who murdered his parents",
+   "known": 0.8
+  },
+  {
+   "label": "The Lord of the Rings: The Return of the King",
+   "qid": "Q131074",
+   "fame": 0.623,
+   "director": "Peter Jackson",
+   "kind": "live-action",
+   "description": "2003 film by Peter Jackson",
+   "hook": "follows armies converging on a dark kingdom while two small companions finish their quest to destroy an object",
+   "known": 0.95
+  },
+  {
+   "label": "Harry Potter and the Prisoner of Azkaban",
+   "qid": "Q102448",
+   "fame": 0.621,
+   "director": "Alfonso Cuarón",
+   "kind": "live-action",
+   "description": "2004 film directed by Alfonso Cuarón",
+   "hook": "follows a young wizard learning the truth about an escaped convict tied to his parents' deaths",
+   "known": 0.8
+  },
+  {
+   "label": "Harry Potter and the Goblet of Fire",
+   "qid": "Q102225",
+   "fame": 0.62,
+   "director": "Mike Newell",
+   "kind": "live-action",
+   "description": "2005 film directed by Mike Newell",
+   "hook": "follows a young wizard mysteriously entered into a dangerous multi-school tournament",
+   "known": 0.8
+  },
+  {
+   "label": "The Incredibles",
+   "qid": "Q213326",
+   "fame": 0.618,
+   "director": "Brad Bird",
+   "kind": "animated",
+   "description": "2004 animated film directed by Brad Bird",
+   "hook": "follows a family of retired superheroes forced back into costume against a vengeful former fan",
+   "known": 0.8
+  },
+  {
+   "label": "Harry Potter and the Chamber of Secrets",
+   "qid": "Q102244",
+   "fame": 0.617,
+   "director": "Chris Columbus",
+   "kind": "live-action",
+   "description": "2002 film directed by Chris Columbus",
+   "hook": "follows a young wizard investigating a monster petrifying students at his school",
+   "known": 0.8
+  },
+  {
+   "label": "V for Vendetta",
+   "qid": "Q5890",
+   "fame": 0.615,
+   "director": "James McTeigue",
+   "kind": "live-action",
+   "description": "2005 film directed by James McTeigue",
+   "hook": "follows a masked anarchist waging a one-man campaign against a fascist government in a dystopian future",
+   "known": 0.6
+  },
+  {
+   "label": "Star Wars: Episode I – The Phantom Menace",
+   "qid": "Q165713",
+   "fame": 0.613,
+   "director": "George Lucas",
+   "kind": "live-action",
+   "description": "1999 film directed by George Lucas",
+   "hook": "follows two knights guarding a young queen while finding a gifted enslaved boy who may fulfill an old prophecy",
+   "known": 0.8
+  },
+  {
+   "label": "WALL-E",
+   "qid": "Q104905",
+   "fame": 0.609,
+   "director": "Andrew Stanton",
+   "kind": "animated",
+   "description": "2008 animated film directed by Andrew Stanton",
+   "hook": "follows a lonely trash-compacting robot who falls for a sleek scout robot and follows her into space",
+   "known": 0.8
+  },
+  {
+   "label": "Star Wars: Episode V – The Empire Strikes Back",
+   "qid": "Q181795",
+   "fame": 0.605,
+   "director": "Irvin Kershner",
+   "kind": "live-action",
+   "description": "1980 American epic space opera film directed by Irvin Kershner",
+   "hook": "follows rebels on the run as their hero trains with a small green master and learns a shocking family truth",
+   "known": 0.8
+  }
+ ]
+}

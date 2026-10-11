@@ -1,0 +1,231 @@
+{
+ "id": "table.oddities.eponymous-laws",
+ "kind": "table",
+ "title": "Laws named after people",
+ "genre": "general",
+ "category": "oddities",
+ "topic": "strange-laws",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?namedafterLabel ?countryLabel WHERE { { VALUES ?cls { wd:Q18673030 wd:Q1624034 wd:Q1398821 wd:Q200726 wd:Q60177031 } ?item wdt:P31 ?cls . ?item rdfs:label ?enLabel . FILTER(LANG(?enLabel) = \"en\") FILTER(REGEX(?enLabel, \"'s (law|laws|razor|principle|rule)$\", \"i\")) } UNION { VALUES ?item { wd:Q182667 wd:Q497359 wd:Q193698 wd:Q513453 wd:Q23758 wd:Q4898584 } } OPTIONAL { ?item wdt:P138 ?namedafter . OPTIONAL { ?namedafter wdt:P27 ?country } } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 111",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T17:18:39.168Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T17:18:39.168Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "named_after",
+   "label": "Named after",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "law",
+  "many": "laws",
+  "hookAsk": "Which famous law or principle {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is the person behind {label} from?",
+    "statement": "{label} is named after someone from {value}.",
+    "match": "Match each law to the country its namesake is from.",
+    "odd": "Three of these laws are named after people from {value}. Which one isn't?",
+    "all": "Tap all {n} laws named after people from {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Occam's razor",
+   "qid": "Q131012",
+   "fame": 0.656,
+   "named_after": "William of Ockham",
+   "country": "Kingdom of England",
+   "description": "philosophical principle used to judge credibility of statements",
+   "hook": "holds that the simplest explanation with the fewest assumptions is usually the best one",
+   "known": 0.95,
+   "kind": "principle"
+  },
+  {
+   "label": "Three Laws of Robotics",
+   "qid": "Q23758",
+   "fame": 0.605,
+   "named_after": null,
+   "country": null,
+   "description": "set of rules devised by the science fiction author Isaac Asimov",
+   "hook": "sets rules that a mechanical servant may never harm a human, from a sci-fi story series",
+   "known": 0.6,
+   "kind": "fictional"
+  },
+  {
+   "label": "Goodhart's law",
+   "qid": "Q2575082",
+   "fame": 0.599,
+   "named_after": "Charles Goodhart",
+   "country": "United Kingdom",
+   "description": "adage that when a measure becomes a target, it ceases to be a good measure",
+   "hook": "warns that once a measure becomes a target, it stops being a good measure",
+   "known": 0.4,
+   "kind": "observation"
+  },
+  {
+   "label": "Murphy's law",
+   "qid": "Q188908",
+   "fame": 0.581,
+   "named_after": "Edward A. Murphy, Jr.",
+   "country": "United States",
+   "description": "an adage or epigram that is typically stated as: \"Anything that can go wrong, will go wrong\".",
+   "hook": "claims that anything that can go wrong will go wrong",
+   "known": 0.95,
+   "kind": "principle"
+  },
+  {
+   "label": "Hanlon's razor",
+   "qid": "Q257767",
+   "fame": 0.574,
+   "named_after": "Robert J. Hanlon",
+   "country": null,
+   "description": "philosophical adage stating \"Never attribute to malice that which is adequately explained by stupidity.\"",
+   "hook": "advises not to blame malice for what stupidity can adequately explain",
+   "known": 0.6,
+   "kind": "principle"
+  },
+  {
+   "label": "The Peter Principle",
+   "qid": "Q497359",
+   "fame": 0.571,
+   "named_after": "Laurence J. Peter",
+   "country": "Canada",
+   "description": "book and concept by Laurence J. Peter that states that people in a hierarchy tend to rise to \"a level of respective incompetence\"",
+   "hook": "says employees in a hierarchy get promoted until they reach a job they cannot do well",
+   "known": 0.6,
+   "kind": "observation"
+  },
+  {
+   "label": "Moore's law",
+   "qid": "Q178655",
+   "fame": 0.57,
+   "named_after": "Gordon Moore",
+   "country": "United States",
+   "description": "observation on the growth of integrated circuit capacity",
+   "hook": "predicts that the number of transistors on a computer chip doubles about every two years",
+   "known": 0.8,
+   "kind": "observation"
+  },
+  {
+   "label": "Pareto principle",
+   "qid": "Q182667",
+   "fame": 0.57,
+   "named_after": "Vilfredo Pareto",
+   "country": "Kingdom of Italy",
+   "description": "statistical principle about ratio of effects to causes",
+   "hook": "says roughly 80 percent of effects come from 20 percent of causes",
+   "known": 0.6,
+   "kind": "observation"
+  },
+  {
+   "label": "Conway's law",
+   "qid": "Q1518855",
+   "fame": 0.534,
+   "named_after": "Melvin Conway",
+   "country": "United States",
+   "description": "observation that organizations design systems mirroring their communication structures (Melvin Conway, 1968)",
+   "hook": "says the design of software mirrors the communication structure of the organization that builds it",
+   "known": 0.4,
+   "kind": "observation"
+  },
+  {
+   "label": "Betteridge's law of headlines",
+   "qid": "Q4898584",
+   "fame": 0.513,
+   "named_after": "Ian Betteridge",
+   "country": "United Kingdom",
+   "description": "journalism-related adage",
+   "hook": "holds that any news story title ending in a question mark can be answered with no",
+   "known": 0.2,
+   "kind": "culture"
+  },
+  {
+   "label": "Poe's law",
+   "qid": "Q622190",
+   "fame": 0.502,
+   "named_after": null,
+   "country": null,
+   "description": "adage of Internet culture that, without a clear indicator of intent, one can’t parody extreme views such that some can’t mistake it for a sincere expression of the parodied views",
+   "hook": "notes that extreme views online cannot be parodied without someone mistaking the joke for sincerity",
+   "known": 0.2,
+   "kind": "culture"
+  },
+  {
+   "label": "Zipf's law",
+   "qid": "Q205472",
+   "fame": 0.488,
+   "named_after": "George Kingsley Zipf",
+   "country": "United States",
+   "description": "probability distribution",
+   "hook": "states that the most common word in a language appears about twice as often as the second most common",
+   "known": 0.2,
+   "kind": "observation"
+  },
+  {
+   "label": "Parkinson's law",
+   "qid": "Q506207",
+   "fame": 0.486,
+   "named_after": "C. Northcote Parkinson",
+   "country": "United Kingdom",
+   "description": "adage that work expands to fill the time available",
+   "hook": "says work expands to fill the time available for its completion",
+   "known": 0.8,
+   "kind": "principle"
+  },
+  {
+   "label": "Benford's law",
+   "qid": "Q817168",
+   "fame": 0.485,
+   "named_after": "Frank Benford",
+   "country": "United States",
+   "description": "observation about the frequency distribution of leading digits in many real-life sets of numerical data",
+   "hook": "finds that in many real-world datasets the digit 1 leads far more often than any other digit",
+   "known": 0.4,
+   "kind": "observation"
+  },
+  {
+   "label": "Clarke's three laws",
+   "qid": "Q513453",
+   "fame": 0.474,
+   "named_after": "Arthur C. Clarke",
+   "country": "United Kingdom",
+   "description": "three adages proposed by British science fiction writer Arthur C. Clarke about science and technology",
+   "hook": "includes the idea that advanced enough technology would look like magic to us",
+   "known": 0.4,
+   "kind": "fictional"
+  }
+ ]
+}

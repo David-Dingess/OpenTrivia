@@ -1,0 +1,280 @@
+{
+ "id": "table.geography.former-country-names",
+ "kind": "table",
+ "title": "Former country names",
+ "genre": "society",
+ "category": "geography",
+ "topic": "borders-and-maps",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?former WHERE { VALUES (?item ?former) { (wd:Q869 \"Siam\") (wd:Q854 \"Ceylon\") (wd:Q836 \"Burma\") (wd:Q794 \"Persia\") (wd:Q974 \"Zaire\") (wd:Q954 \"Rhodesia\") (wd:Q117 \"Gold Coast\") (wd:Q963 \"Bechuanaland\") (wd:Q1013 \"Basutoland\") (wd:Q1020 \"Nyasaland\") (wd:Q953 \"Northern Rhodesia\") (wd:Q962 \"Dahomey\") (wd:Q965 \"Upper Volta\") (wd:Q1050 \"Swaziland\") (wd:Q242 \"British Honduras\") (wd:Q734 \"British Guiana\") (wd:Q902 \"East Pakistan\") (wd:Q252 \"Dutch East Indies\") (wd:Q1030 \"South West Africa\") (wd:Q686 \"New Hebrides\") (wd:Q424 \"Kampuchea\") (wd:Q115 \"Abyssinia\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T02:57:20.864Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T02:57:20.864Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "former_name",
+   "label": "Former name",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "country",
+  "many": "countries",
+  "wildcard": "place",
+  "hookAsk": "Which country {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "former_name": {
+    "role": "code",
+    "pick": "What was {label} formerly called?",
+    "statement": "{label} used to be called {value}.",
+    "match": "Match each country to its former name.",
+    "reverse": "Which country used to be called {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Iran",
+   "qid": "Q794",
+   "fame": 0.756,
+   "former_name": "Persia",
+   "description": "country in Western Asia",
+   "hook": "was the heartland of an ancient empire founded by Cyrus the Great",
+   "known": 0.8,
+   "kind": "asian country"
+  },
+  {
+   "label": "Indonesia",
+   "qid": "Q252",
+   "fame": 0.751,
+   "former_name": "Dutch East Indies",
+   "description": "island country in Southeast Asia and Oceania",
+   "hook": "is the world's largest archipelagic state, spread over thousands of islands",
+   "known": 0.6,
+   "kind": "asian country"
+  },
+  {
+   "label": "Myanmar",
+   "qid": "Q836",
+   "fame": 0.732,
+   "former_name": "Burma",
+   "description": "country in Southeast Asia",
+   "hook": "is the largest country by area on mainland Southeast Asia",
+   "known": 0.7,
+   "kind": "asian country"
+  },
+  {
+   "label": "Sri Lanka",
+   "qid": "Q854",
+   "fame": 0.723,
+   "former_name": "Ceylon",
+   "description": "island country in South Asia",
+   "hook": "is an island in the Indian Ocean separated from India by the Palk Strait",
+   "known": 0.65,
+   "kind": "asian country"
+  },
+  {
+   "label": "Bangladesh",
+   "qid": "Q902",
+   "fame": 0.72,
+   "former_name": "East Pakistan",
+   "description": "country in South Asia",
+   "hook": "is a South Asian country on the Bay of Bengal with Dhaka as its capital",
+   "known": 0.4,
+   "kind": "asian country"
+  },
+  {
+   "label": "Ethiopia",
+   "qid": "Q115",
+   "fame": 0.719,
+   "former_name": "Abyssinia",
+   "description": "country in the Horn of Africa",
+   "hook": "is a landlocked country in the Horn of Africa with Addis Ababa as its capital",
+   "known": 0.4,
+   "kind": "african country"
+  },
+  {
+   "label": "Thailand",
+   "qid": "Q869",
+   "fame": 0.712,
+   "former_name": "Siam",
+   "description": "country in Southeast Asia",
+   "hook": "is a Southeast Asian kingdom whose capital is Bangkok",
+   "known": 0.75,
+   "kind": "asian country"
+  },
+  {
+   "label": "Democratic Republic of the Congo",
+   "qid": "Q974",
+   "fame": 0.706,
+   "former_name": "Zaire",
+   "description": "country in Central Africa",
+   "hook": null,
+   "known": 0.3,
+   "kind": "african country"
+  },
+  {
+   "label": "Eswatini",
+   "qid": "Q1050",
+   "fame": 0.704,
+   "former_name": "Swaziland",
+   "description": "sovereign state in southern Africa",
+   "hook": "is a small landlocked kingdom almost entirely surrounded by South Africa",
+   "known": 0.45,
+   "kind": "african country"
+  },
+  {
+   "label": "Guyana",
+   "qid": "Q734",
+   "fame": 0.691,
+   "former_name": "British Guiana",
+   "description": "country in South America",
+   "hook": null,
+   "known": 0.3,
+   "kind": "american country"
+  },
+  {
+   "label": "Zimbabwe",
+   "qid": "Q954",
+   "fame": 0.689,
+   "former_name": "Rhodesia",
+   "description": "sovereign state in southern Africa",
+   "hook": "is a landlocked country in southern Africa between the Zambezi and Limpopo rivers",
+   "known": 0.6,
+   "kind": "african country"
+  },
+  {
+   "label": "Burkina Faso",
+   "qid": "Q965",
+   "fame": 0.687,
+   "former_name": "Upper Volta",
+   "description": "sovereign state in Africa",
+   "hook": null,
+   "known": 0.15,
+   "kind": "african country"
+  },
+  {
+   "label": "Ghana",
+   "qid": "Q117",
+   "fame": 0.673,
+   "former_name": "Gold Coast",
+   "description": "country in West Africa",
+   "hook": "is a West African country on the Gulf of Guinea with Accra as its capital",
+   "known": 0.5,
+   "kind": "african country"
+  },
+  {
+   "label": "Cambodia",
+   "qid": "Q424",
+   "fame": 0.67,
+   "former_name": "Kampuchea",
+   "description": "country in Southeast Asia",
+   "hook": null,
+   "known": 0.2,
+   "kind": "asian country"
+  },
+  {
+   "label": "Belize",
+   "qid": "Q242",
+   "fame": 0.661,
+   "former_name": "British Honduras",
+   "description": "sovereign state in Central America",
+   "hook": null,
+   "known": 0.35,
+   "kind": "american country"
+  },
+  {
+   "label": "Namibia",
+   "qid": "Q1030",
+   "fame": 0.659,
+   "former_name": "South West Africa",
+   "description": "country in Southern Africa",
+   "hook": null,
+   "known": 0.25,
+   "kind": "african country"
+  },
+  {
+   "label": "Benin",
+   "qid": "Q962",
+   "fame": 0.653,
+   "former_name": "Dahomey",
+   "description": "sovereign state in West Africa",
+   "hook": null,
+   "known": 0.1,
+   "kind": "african country"
+  },
+  {
+   "label": "Botswana",
+   "qid": "Q963",
+   "fame": 0.643,
+   "former_name": "Bechuanaland",
+   "description": "sovereign state in Southern Africa",
+   "hook": null,
+   "known": 0.2,
+   "kind": "african country"
+  },
+  {
+   "label": "Vanuatu",
+   "qid": "Q686",
+   "fame": 0.642,
+   "former_name": "New Hebrides",
+   "description": "island country in Oceania",
+   "hook": null,
+   "known": 0.15,
+   "kind": "oceanic country"
+  },
+  {
+   "label": "Lesotho",
+   "qid": "Q1013",
+   "fame": 0.634,
+   "former_name": "Basutoland",
+   "description": "sovereign state in southern Africa",
+   "hook": null,
+   "known": 0.05,
+   "kind": "african country"
+  },
+  {
+   "label": "Zambia",
+   "qid": "Q953",
+   "fame": 0.617,
+   "former_name": "Northern Rhodesia",
+   "description": "country at the crossroads of Central and Southern Africa",
+   "hook": null,
+   "known": 0.35,
+   "kind": "african country"
+  },
+  {
+   "label": "Malawi",
+   "qid": "Q1020",
+   "fame": 0.612,
+   "former_name": "Nyasaland",
+   "description": "sovereign state in Africa",
+   "hook": null,
+   "known": 0.05,
+   "kind": "african country"
+  }
+ ]
+}

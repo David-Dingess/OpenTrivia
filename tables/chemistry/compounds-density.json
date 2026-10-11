@@ -1,0 +1,367 @@
+{
+ "id": "table.chemistry.compounds-density",
+ "kind": "table",
+ "title": "Everyday compounds: density",
+ "genre": "science-math-tech",
+ "category": "chemistry",
+ "topic": "everyday-chemistry",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?dens WHERE { VALUES ?item { wd:Q283 wd:Q1997 wd:Q4087 wd:Q37129 wd:Q153 wd:Q37525 wd:Q60235 wd:Q36933 wd:Q171877 wd:Q4118 wd:Q905750 wd:Q2025 wd:Q172275 wd:Q2270 wd:Q133145 wd:Q83320 wd:Q116269 wd:Q170591 wd:Q5282 wd:Q151313 wd:Q48318 wd:Q159683 wd:Q161210 wd:Q14982 wd:Q132501 wd:Q127900 wd:Q2409 wd:Q184782 wd:Q208451 wd:Q18216 wd:Q33495 wd:Q407520 wd:Q199678 wd:Q2314 wd:Q179731 wd:Q47512 wd:Q407204 wd:Q23767 wd:Q4027534 wd:Q194207 wd:Q102769 wd:Q49546 wd:Q179724 wd:Q190227 wd:Q182849 wd:Q177836 wd:Q288266 wd:Q134192 wd:Q131189 wd:Q186969 wd:Q162867 wd:Q960800 wd:Q146578 wd:Q193841 wd:Q423741 wd:Q427161 wd:Q898762 wd:Q185120 wd:Q172587 wd:Q4287 wd:Q844123 wd:Q181331 wd:Q12190 wd:Q143874 wd:Q259589 wd:Q902739 wd:Q188631 wd:Q182040 wd:Q5 } ?item p:P2054/psn:P2054/wikibase:quantityAmount ?dens . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T03:15:27.901Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T03:15:27.901Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "density_kgm3",
+   "label": "Density",
+   "unit": "kg/m3",
+   "type": "number"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "compound",
+  "many": "compounds",
+  "lowerInProse": true,
+  "columns": {
+   "density_kgm3": {
+    "role": "measure",
+    "precision": "typical",
+    "compare": "Which is usually denser",
+    "display": " kg/m³"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "water",
+   "qid": "Q283",
+   "fame": 0.643,
+   "density_kgm3": 998,
+   "description": "chemical compound whose molecules are formed by two hydrogen atoms and one oxygen atom",
+   "hook": "covers most of the Earth's surface and is essential to every known form of life",
+   "known": 0.95,
+   "kind": "common liquid"
+  },
+  {
+   "label": "ethanol",
+   "qid": "Q153",
+   "fame": 0.604,
+   "density_kgm3": 790,
+   "description": "chemical compound",
+   "hook": "is the intoxicating ingredient in beer, wine and spirits, and is also blended into fuel",
+   "known": 0.8,
+   "kind": "light liquid"
+  },
+  {
+   "label": "caffeine",
+   "qid": "Q60235",
+   "fame": 0.603,
+   "density_kgm3": 1230,
+   "description": "chemical compound used as a stimulant",
+   "hook": "is the stimulant in coffee, tea and energy drinks that helps people stay awake",
+   "known": 0.6,
+   "kind": "organic compound"
+  },
+  {
+   "label": "sodium bicarbonate",
+   "qid": "Q179731",
+   "fame": 0.584,
+   "density_kgm3": 2159,
+   "description": "chemical compound",
+   "hook": "is the baking staple that makes cakes rise and is used in classic volcano science fair projects",
+   "known": 0.8,
+   "kind": "everyday solid"
+  },
+  {
+   "label": "hydrogen peroxide",
+   "qid": "Q171877",
+   "fame": 0.582,
+   "density_kgm3": 1390,
+   "description": "chemical compound",
+   "hook": "is a pale blue liquid used to bleach hair and to disinfect small cuts",
+   "known": 0.6,
+   "kind": "heavy liquid"
+  },
+  {
+   "label": "aspirin",
+   "qid": "Q18216",
+   "fame": 0.577,
+   "density_kgm3": 1350,
+   "description": "medication used to treat pain and decrease the risk of heart disease",
+   "hook": "is a common over-the-counter pill for headaches and fever, taken in low doses to protect the heart",
+   "known": 0.8,
+   "kind": "organic compound"
+  },
+  {
+   "label": "potassium nitrate",
+   "qid": "Q177836",
+   "fame": 0.562,
+   "density_kgm3": 2109,
+   "description": "chemical compound",
+   "hook": null,
+   "known": 0.2,
+   "kind": "inorganic salt"
+  },
+  {
+   "label": "carbon dioxide",
+   "qid": "Q1997",
+   "fame": 0.558,
+   "density_kgm3": 2,
+   "description": "chemical compound",
+   "hook": "puts the fizz in soda, is exhaled by people, and is the main gas behind global warming",
+   "known": 0.95,
+   "kind": "gas"
+  },
+  {
+   "label": "sulfuric acid",
+   "qid": "Q4118",
+   "fame": 0.556,
+   "density_kgm3": 1830,
+   "description": "chemical compound",
+   "hook": "is the main liquid inside traditional car batteries and is a highly corrosive industrial chemical",
+   "known": 0.4,
+   "kind": "heavy liquid"
+  },
+  {
+   "label": "sodium hydroxide",
+   "qid": "Q102769",
+   "fame": 0.555,
+   "density_kgm3": 2130,
+   "description": "chemical compound",
+   "hook": null,
+   "known": 0.2,
+   "kind": "inorganic salt"
+  },
+  {
+   "label": "acetic acid",
+   "qid": "Q47512",
+   "fame": 0.554,
+   "density_kgm3": 1050,
+   "description": "chemical compound",
+   "hook": "gives vinegar its sharp smell and sour taste",
+   "known": 0.8,
+   "kind": "light liquid"
+  },
+  {
+   "label": "urea",
+   "qid": "Q48318",
+   "fame": 0.549,
+   "density_kgm3": 1320,
+   "description": "the diamide of carbonic acid",
+   "hook": null,
+   "known": 0.2,
+   "kind": "organic compound"
+  },
+  {
+   "label": "benzene",
+   "qid": "Q2270",
+   "fame": 0.544,
+   "density_kgm3": 880,
+   "description": "hydrocarbon compound consisting of a 6-sided ring",
+   "hook": null,
+   "known": 0.2,
+   "kind": "light liquid"
+  },
+  {
+   "label": "sodium chloride",
+   "qid": "Q2314",
+   "fame": 0.542,
+   "density_kgm3": 2165,
+   "description": "chemical compound",
+   "hook": "is the seasoning found in shakers on nearly every dinner table",
+   "known": 0.95,
+   "kind": "everyday solid"
+  },
+  {
+   "label": "chloroform",
+   "qid": "Q172275",
+   "fame": 0.538,
+   "density_kgm3": 1480,
+   "description": "chemical compound",
+   "hook": null,
+   "known": 0.05,
+   "kind": "heavy liquid"
+  },
+  {
+   "label": "nitroglycerin",
+   "qid": "Q162867",
+   "fame": 0.536,
+   "density_kgm3": 1600,
+   "description": "chemical compound",
+   "hook": null,
+   "known": 0.05,
+   "kind": "organic compound"
+  },
+  {
+   "label": "glycerol",
+   "qid": "Q132501",
+   "fame": 0.531,
+   "density_kgm3": 1260,
+   "description": "chemical compound",
+   "hook": "is a thick, sweet, syrupy liquid used in soaps, lotions and as a base for making explosives",
+   "known": 0.4,
+   "kind": "heavy liquid"
+  },
+  {
+   "label": "citric acid",
+   "qid": "Q159683",
+   "fame": 0.526,
+   "density_kgm3": 1665,
+   "description": "weak organic acid",
+   "hook": "gives lemons and limes their sour bite and is added to sour candy",
+   "known": 0.6,
+   "kind": "organic compound"
+  },
+  {
+   "label": "sodium carbonate",
+   "qid": "Q190227",
+   "fame": 0.526,
+   "density_kgm3": 2530,
+   "description": "chemical compound",
+   "hook": null,
+   "known": 0.2,
+   "kind": "inorganic salt"
+  },
+  {
+   "label": "sucrose",
+   "qid": "Q4027534",
+   "fame": 0.524,
+   "density_kgm3": 1590,
+   "description": "disaccharide made of glucose and fructose",
+   "hook": "is ordinary table sugar, extracted from cane or beets",
+   "known": 0.95,
+   "kind": "everyday solid"
+  },
+  {
+   "label": "calcium carbonate",
+   "qid": "Q23767",
+   "fame": 0.522,
+   "density_kgm3": 2700,
+   "description": "chemical compound",
+   "hook": "is the main ingredient of chalk, limestone and seashells",
+   "known": 0.6,
+   "kind": "inorganic salt"
+  },
+  {
+   "label": "carbon monoxide",
+   "qid": "Q2025",
+   "fame": 0.521,
+   "density_kgm3": 1,
+   "description": "chemical compound",
+   "hook": "is an odorless, invisible gas from faulty heaters that can silently poison people indoors",
+   "known": 0.6,
+   "kind": "gas"
+  },
+  {
+   "label": "silicon dioxide",
+   "qid": "Q116269",
+   "fame": 0.519,
+   "density_kgm3": 2634,
+   "description": "chemical compound",
+   "hook": "is the main ingredient in sand and quartz, and is melted to make glass",
+   "known": 0.8,
+   "kind": "everyday solid"
+  },
+  {
+   "label": "Bakelite",
+   "qid": "Q146578",
+   "fame": 0.507,
+   "density_kgm3": 1300,
+   "description": "early plastic",
+   "hook": null,
+   "known": 0.2,
+   "kind": "organic compound"
+  },
+  {
+   "label": "nitric acid",
+   "qid": "Q83320",
+   "fame": 0.502,
+   "density_kgm3": 1500,
+   "description": "strong, oxidising mineral acid",
+   "hook": null,
+   "known": 0.2,
+   "kind": "heavy liquid"
+  },
+  {
+   "label": "ethylene glycol",
+   "qid": "Q194207",
+   "fame": 0.492,
+   "density_kgm3": 1110,
+   "description": "organic compound used in the making of polyester fibers and in antifreeze formulations",
+   "hook": "is the sweet-tasting but poisonous liquid that keeps car radiators from freezing",
+   "known": 0.4,
+   "kind": "light liquid"
+  },
+  {
+   "label": "calcium hydroxide",
+   "qid": "Q182849",
+   "fame": 0.483,
+   "density_kgm3": 2240,
+   "description": "chemical compound",
+   "hook": null,
+   "known": 0.05,
+   "kind": "inorganic salt"
+  },
+  {
+   "label": "magnesium sulfate",
+   "qid": "Q288266",
+   "fame": 0.483,
+   "density_kgm3": 2660,
+   "description": "chemical compound",
+   "hook": "is the Epsom salt people dissolve in a bath to soothe sore muscles",
+   "known": 0.4,
+   "kind": "inorganic salt"
+  },
+  {
+   "label": "phosphoric acid",
+   "qid": "Q184782",
+   "fame": 0.468,
+   "density_kgm3": 1870,
+   "description": "chemical compound",
+   "hook": null,
+   "known": 0.2,
+   "kind": "heavy liquid"
+  },
+  {
+   "label": "calcium chloride",
+   "qid": "Q208451",
+   "fame": 0.465,
+   "density_kgm3": 2150,
+   "description": "chemical compound",
+   "hook": null,
+   "known": 0.05,
+   "kind": "inorganic salt"
+  },
+  {
+   "label": "naphthalene",
+   "qid": "Q179724",
+   "fame": 0.458,
+   "density_kgm3": 1150,
+   "description": "chemical compound",
+   "hook": "is the pungent white solid traditionally used to make mothballs",
+   "known": 0.4,
+   "kind": "organic compound"
+  }
+ ]
+}

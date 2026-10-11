@@ -1,0 +1,2103 @@
+{
+ "id": "table.music.band-hometowns",
+ "kind": "table",
+ "title": "Bands and their hometown",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "bands",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?cityLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?city) (COUNT(DISTINCT ?c) AS ?n) WHERE { ?item wdt:P31/wdt:P279* wd:Q215380 ; wdt:P740 ?c ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 35) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 500 } hint:Prior hint:runFirst true . FILTER(?n = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T06:58:03.631Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T06:58:03.631Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "hometown",
+   "label": "Hometown",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "band",
+  "many": "bands",
+  "hookAsk": "Which band {hook}?",
+  "hookStatement": "",
+  "columns": {
+   "hometown": {
+    "role": "link",
+    "pick": "Which city did the band {label} start out in?",
+    "statement": "{label} started out in {value}.",
+    "match": "Match each band to the city it started out in.",
+    "odd": "Three of these bands started out in {value}. Which one wasn't?",
+    "all": "Tap all {n} bands that started out in {value}.",
+    "reverse": "Which of these bands started out in {value}?"
+   }
+  },
+  "exclude": [
+   {
+    "qid": "Q11649",
+    "why": "Nirvana: Aberdeen could be Scotland or Washington"
+   },
+   {
+    "qid": "Q134969",
+    "why": "R.E.M.: Athens could be Greece or Georgia"
+   },
+   {
+    "qid": "Q473466",
+    "why": "Paramore: Franklin is a common US town name"
+   },
+   {
+    "qid": "Q7857806",
+    "why": "Twenty One Pilots: Columbus could be Ohio or Georgia"
+   },
+   {
+    "qid": "Q124147",
+    "why": "Scorpions: Hanover could be Germany or the US"
+   },
+   {
+    "qid": "Q45165",
+    "why": "System of a Down: Glendale could be California or Arizona"
+   },
+   {
+    "qid": "Q486830",
+    "why": "Audioslave: Glendale could be California or Arizona"
+   },
+   {
+    "qid": "Q483558",
+    "why": "Sum 41: Ajax is also a famous club and a cleaner"
+   },
+   {
+    "qid": "Q47871",
+    "why": "Green Day: Rodeo is a small town few know"
+   },
+   {
+    "qid": "Q690138",
+    "why": "The Everly Brothers: Shenandoah could be Iowa or the valley"
+   }
+  ]
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The Beatles",
+   "qid": "Q1299",
+   "fame": 0.774,
+   "hometown": "Liverpool",
+   "description": "English pop rock band (1960–1970)",
+   "hook": "sparked the British Invasion of American pop with 'Hey Jude' and 'Let It Be'",
+   "known": 0.95,
+   "kind": "classic rock"
+  },
+  {
+   "label": "Oasis",
+   "qid": "Q382890",
+   "fame": 0.761,
+   "hometown": "Manchester",
+   "description": "British rock band",
+   "hook": "was fronted by feuding siblings Noel and Liam Gallagher and sang 'Wonderwall'",
+   "known": 0.8,
+   "kind": "classic rock"
+  },
+  {
+   "label": "Linkin Park",
+   "qid": "Q261",
+   "fame": 0.759,
+   "hometown": "Agoura Hills",
+   "description": "American rock band",
+   "hook": "blended rock and rap on the album Hybrid Theory and the hit 'In the End'",
+   "known": 0.8,
+   "kind": "alternative rock"
+  },
+  {
+   "label": "Nirvana",
+   "qid": "Q11649",
+   "fame": 0.744,
+   "hometown": "Aberdeen",
+   "description": "American rock band",
+   "hook": "was fronted by Kurt Cobain and made grunge mainstream with 'Smells Like Teen Spirit'",
+   "known": 0.8,
+   "kind": "grunge"
+  },
+  {
+   "label": "Fleetwood Mac",
+   "qid": "Q106648",
+   "fame": 0.741,
+   "hometown": "London",
+   "description": "British-American rock band",
+   "hook": "made the album Rumours, famous for its members' tangled breakups",
+   "known": 0.8,
+   "kind": "classic rock"
+  },
+  {
+   "label": "AC/DC",
+   "qid": "Q27593",
+   "fame": 0.736,
+   "hometown": "Sydney",
+   "description": "Australian-British hard rock band",
+   "hook": "rocks with a schoolboy-uniformed lead guitarist and the album Back in Black",
+   "known": 0.8,
+   "kind": "hard rock"
+  },
+  {
+   "label": "Led Zeppelin",
+   "qid": "Q2331",
+   "fame": 0.736,
+   "hometown": "London",
+   "description": "English rock band (1968–1980)",
+   "hook": "wrote 'Stairway to Heaven' with guitarist Jimmy Page and singer Robert Plant",
+   "known": 0.95,
+   "kind": "classic rock"
+  },
+  {
+   "label": "Slipknot",
+   "qid": "Q254138",
+   "fame": 0.733,
+   "hometown": "Des Moines",
+   "description": "American band",
+   "hook": "performs in horror-style masks and matching numbered jumpsuits",
+   "known": 0.6,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "BTS",
+   "qid": "Q13580495",
+   "fame": 0.725,
+   "hometown": "Seoul",
+   "description": "South Korean musical group; boy band",
+   "hook": "is a seven-member K-pop group with a huge global fan army and the hit 'Dynamite'",
+   "known": 0.8,
+   "kind": "k-pop"
+  },
+  {
+   "label": "Spice Girls",
+   "qid": "Q55641",
+   "fame": 0.723,
+   "hometown": "London",
+   "description": "British girl group",
+   "hook": "sang 'Wannabe' with members nicknamed Scary, Sporty, Baby, Ginger and Posh",
+   "known": 0.8,
+   "kind": "girl group"
+  },
+  {
+   "label": "Pink Floyd",
+   "qid": "Q2306",
+   "fame": 0.721,
+   "hometown": "London",
+   "description": "English rock band",
+   "hook": "made The Dark Side of the Moon, with its prism album cover",
+   "known": 0.95,
+   "kind": "classic rock"
+  },
+  {
+   "label": "Metallica",
+   "qid": "Q15920",
+   "fame": 0.717,
+   "hometown": "Los Angeles",
+   "description": "American heavy metal band",
+   "hook": "pioneered thrash metal and made the Black Album with 'Enter Sandman'",
+   "known": 0.8,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "U2",
+   "qid": "Q396",
+   "fame": 0.712,
+   "hometown": "Dublin",
+   "description": "Irish rock band",
+   "hook": "is fronted by Bono and sings 'With or Without You' and 'One'",
+   "known": 0.8,
+   "kind": "alternative rock"
+  },
+  {
+   "label": "Jonas Brothers",
+   "qid": "Q134233",
+   "fame": 0.71,
+   "hometown": "Wyckoff",
+   "description": "American pop rock band",
+   "hook": "rose to fame on Disney Channel and sang 'Burnin' Up' and 'Sucker'",
+   "known": 0.6,
+   "kind": "pop rock"
+  },
+  {
+   "label": "Queen",
+   "qid": "Q15862",
+   "fame": 0.709,
+   "hometown": "London",
+   "description": "British musical group; rock band",
+   "hook": "was fronted by Freddie Mercury and performed 'Bohemian Rhapsody' and 'We Will Rock You'",
+   "known": 0.95,
+   "kind": "classic rock"
+  },
+  {
+   "label": "The Rolling Stones",
+   "qid": "Q11036",
+   "fame": 0.709,
+   "hometown": "London",
+   "description": "British rock band",
+   "hook": "is fronted by Mick Jagger and sang '(I Can't Get No) Satisfaction'",
+   "known": 0.95,
+   "kind": "classic rock"
+  },
+  {
+   "label": "Gorillaz",
+   "qid": "Q189991",
+   "fame": 0.706,
+   "hometown": "London",
+   "description": "British virtual band",
+   "hook": "is a cartoon group of animated characters that sang 'Clint Eastwood' and 'Feel Good Inc.'",
+   "known": 0.6,
+   "kind": "alternative rock"
+  },
+  {
+   "label": "Blackpink",
+   "qid": "Q25056945",
+   "fame": 0.705,
+   "hometown": "Seoul",
+   "description": "South Korean girl group",
+   "hook": "is a four-member K-pop group that sang 'Ddu-du Ddu-du' and 'How You Like That'",
+   "known": 0.8,
+   "kind": "k-pop"
+  },
+  {
+   "label": "Wu-Tang Clan",
+   "qid": "Q52463",
+   "fame": 0.702,
+   "hometown": "New York City",
+   "description": "American hip hop group",
+   "hook": "is a nine-member rap collective behind 'C.R.E.A.M.' and members like RZA and Method Man",
+   "known": 0.6,
+   "kind": "hip-hop"
+  },
+  {
+   "label": "ABBA",
+   "qid": "Q18233",
+   "fame": 0.7,
+   "hometown": "Stockholm",
+   "description": "Swedish pop quartet",
+   "hook": "sang 'Dancing Queen' and inspired the musical Mamma Mia!",
+   "known": 0.8,
+   "kind": "pop"
+  },
+  {
+   "label": "Lynyrd Skynyrd",
+   "qid": "Q158462",
+   "fame": 0.7,
+   "hometown": "Jacksonville",
+   "description": "American rock band",
+   "hook": "played Southern rock anthems 'Sweet Home Alabama' and 'Free Bird'",
+   "known": 0.6,
+   "kind": "hard rock"
+  },
+  {
+   "label": "Eagles",
+   "qid": "Q189635",
+   "fame": 0.699,
+   "hometown": "Los Angeles",
+   "description": "American country rock band",
+   "hook": "recorded 'Hotel California' and 'Take It Easy'",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Radiohead",
+   "qid": "Q44190",
+   "fame": 0.696,
+   "hometown": "Abingdon-on-Thames",
+   "description": "British band",
+   "hook": "made the angsty hit 'Creep' and the album OK Computer",
+   "known": 0.6,
+   "kind": "alternative rock"
+  },
+  {
+   "label": "Foo Fighters",
+   "qid": "Q483718",
+   "fame": 0.689,
+   "hometown": "Seattle",
+   "description": "American rock band",
+   "hook": "was formed by drummer-turned-frontman Dave Grohl after his previous band ended",
+   "known": 0.8,
+   "kind": "hard rock"
+  },
+  {
+   "label": "Rush",
+   "qid": "Q203871",
+   "fame": 0.686,
+   "hometown": "Toronto",
+   "description": "Canadian rock band",
+   "hook": "is a power trio with drummer Neil Peart and the song 'Tom Sawyer'",
+   "known": 0.6,
+   "kind": "progressive rock"
+  },
+  {
+   "label": "Backstreet Boys",
+   "qid": "Q17140",
+   "fame": 0.685,
+   "hometown": "Orlando",
+   "description": "American musical group; boy band",
+   "hook": "sang 'I Want It That Way' as a hugely popular boy band",
+   "known": 0.8,
+   "kind": "boy band"
+  },
+  {
+   "label": "Black Sabbath",
+   "qid": "Q47670",
+   "fame": 0.685,
+   "hometown": "Birmingham",
+   "description": "British heavy metal band",
+   "hook": "pioneered heavy metal with Ozzy Osbourne singing 'Paranoid' and 'Iron Man'",
+   "known": 0.8,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Guns N' Roses",
+   "qid": "Q11895",
+   "fame": 0.685,
+   "hometown": "Los Angeles",
+   "description": "American rock band",
+   "hook": "sang 'Sweet Child o' Mine' with top-hatted guitarist Slash",
+   "known": 0.8,
+   "kind": "hard rock"
+  },
+  {
+   "label": "Red Hot Chili Peppers",
+   "qid": "Q10708",
+   "fame": 0.684,
+   "hometown": "Los Angeles",
+   "description": "American rock band",
+   "hook": "sang 'Under the Bridge' and 'Californication' with funk-rock energy",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Jamiroquai",
+   "qid": "Q202041",
+   "fame": 0.681,
+   "hometown": "London",
+   "description": "British acid jazz band",
+   "hook": "sang 'Virtual Insanity' with funky acid-jazz grooves and a frontman in giant hats",
+   "known": 0.4,
+   "kind": "funk"
+  },
+  {
+   "label": "The Beach Boys",
+   "qid": "Q183048",
+   "fame": 0.679,
+   "hometown": "Hawthorne",
+   "description": "American rock band",
+   "hook": "sang 'Good Vibrations' and 'Surfin' U.S.A.' with sunny surf-rock harmonies",
+   "known": 0.8,
+   "kind": "pop rock"
+  },
+  {
+   "label": "Weezer",
+   "qid": "Q209956",
+   "fame": 0.679,
+   "hometown": "Los Angeles",
+   "description": "American rock band",
+   "hook": "sang 'Buddy Holly' and 'Say It Ain't So' with nerdy geek-rock charm",
+   "known": 0.6,
+   "kind": "pop rock"
+  },
+  {
+   "label": "Depeche Mode",
+   "qid": "Q482964",
+   "fame": 0.678,
+   "hometown": "Basildon",
+   "description": "British band",
+   "hook": "sang 'Just Can't Get Enough' and 'Enjoy the Silence' as synth-pop leaders",
+   "known": 0.6,
+   "kind": "synth-pop"
+  },
+  {
+   "label": "Pearl Jam",
+   "qid": "Q142701",
+   "fame": 0.677,
+   "hometown": "Seattle",
+   "description": "American rock band",
+   "hook": "was fronted by Eddie Vedder and made the debut album Ten",
+   "known": 0.8,
+   "kind": "grunge"
+  },
+  {
+   "label": "Green Day",
+   "qid": "Q47871",
+   "fame": 0.675,
+   "hometown": "Rodeo",
+   "description": "American musical group; rock band",
+   "hook": "sang 'Basket Case' and 'Boulevard of Broken Dreams' with pop-punk energy",
+   "known": 0.8,
+   "kind": "pop-punk"
+  },
+  {
+   "label": "Beastie Boys",
+   "qid": "Q214039",
+   "fame": 0.673,
+   "hometown": "New York City",
+   "description": "American hip-hop group (1981–2012)",
+   "hook": "rapped '(You Gotta) Fight for Your Right (To Party)' and mixed rap with punk",
+   "known": 0.6,
+   "kind": "hip-hop"
+  },
+  {
+   "label": "Paramore",
+   "qid": "Q473466",
+   "fame": 0.672,
+   "hometown": "Franklin",
+   "description": "American rock band",
+   "hook": "is fronted by red-haired Hayley Williams and sang 'Misery Business'",
+   "known": 0.6,
+   "kind": "pop-punk"
+  },
+  {
+   "label": "System of a Down",
+   "qid": "Q45165",
+   "fame": 0.672,
+   "hometown": "Glendale",
+   "description": "Armenian-American heavy metal band",
+   "hook": "sang 'Chop Suey!' and 'Toxicity' with a wild metal sound",
+   "known": 0.4,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Bon Jovi",
+   "qid": "Q259254",
+   "fame": 0.67,
+   "hometown": "Sayreville",
+   "description": "American rock band",
+   "hook": "sang 'Livin' on a Prayer' with a talk-box guitar hook",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "The Cranberries",
+   "qid": "Q483810",
+   "fame": 0.67,
+   "hometown": "Limerick",
+   "description": "Irish musical group; rock band",
+   "hook": "sang 'Zombie' and 'Linger' with singer Dolores O'Riordan",
+   "known": 0.6,
+   "kind": "alternative rock"
+  },
+  {
+   "label": "The Smashing Pumpkins",
+   "qid": "Q184217",
+   "fame": 0.67,
+   "hometown": "Chicago",
+   "description": "American alternative rock band",
+   "hook": "sang 'Tonight, Tonight' and made the double album Mellon Collie and the Infinite Sadness",
+   "known": 0.6,
+   "kind": "alternative rock"
+  },
+  {
+   "label": "Alice in Chains",
+   "qid": "Q484255",
+   "fame": 0.669,
+   "hometown": "Seattle",
+   "description": "American rock band",
+   "hook": "was a grunge band with dark harmonies, known for 'Man in the Box' and 'Rooster'",
+   "known": 0.6,
+   "kind": "grunge"
+  },
+  {
+   "label": "Kiss",
+   "qid": "Q124179",
+   "fame": 0.668,
+   "hometown": "New York City",
+   "description": "American musical group; hard rock band",
+   "hook": "performs in face paint and platform boots, spitting fire on stage",
+   "known": 0.6,
+   "kind": "hard rock"
+  },
+  {
+   "label": "Creedence Clearwater Revival",
+   "qid": "Q192463",
+   "fame": 0.667,
+   "hometown": "El Cerrito",
+   "description": "American roots rock band",
+   "hook": "sang 'Bad Moon Rising' and 'Proud Mary' with swamp-rock swagger",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "Sex Pistols",
+   "qid": "Q82545",
+   "fame": 0.667,
+   "hometown": "London",
+   "description": "English musical group; punk rock band",
+   "hook": "defined punk with 'God Save the Queen' and singer Johnny Rotten",
+   "known": 0.6,
+   "kind": "punk"
+  },
+  {
+   "label": "The Jackson 5",
+   "qid": "Q43267",
+   "fame": 0.667,
+   "hometown": "Gary",
+   "description": "American pop music family group",
+   "hook": "was a family group of siblings that sang 'ABC' and 'I Want You Back'",
+   "known": 0.8,
+   "kind": "pop"
+  },
+  {
+   "label": "Tears for Fears",
+   "qid": "Q269091",
+   "fame": 0.662,
+   "hometown": "Bath",
+   "description": "English pop/rock band",
+   "hook": "sang 'Everybody Wants to Rule the World' and 'Shout'",
+   "known": 0.4,
+   "kind": "synth-pop"
+  },
+  {
+   "label": "ZZ Top",
+   "qid": "Q136591",
+   "fame": 0.661,
+   "hometown": "Houston",
+   "description": "American rock band",
+   "hook": "is famous for its long beards and the song 'Sharp Dressed Man'",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Tool",
+   "qid": "Q184827",
+   "fame": 0.66,
+   "hometown": "Los Angeles",
+   "description": "American metal band",
+   "hook": "makes progressive metal with 'Sober' and 'Schism'",
+   "known": 0.4,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Venom",
+   "qid": "Q192861",
+   "fame": 0.66,
+   "hometown": "Newcastle upon Tyne",
+   "description": "British heavy metal band",
+   "hook": "gave black metal its name with an album titled for the genre",
+   "known": 0.2,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "One Direction",
+   "qid": "Q146027",
+   "fame": 0.659,
+   "hometown": "London",
+   "description": "English-Irish musical group; boy band",
+   "hook": "was formed on The X Factor and sang 'What Makes You Beautiful'",
+   "known": 0.8,
+   "kind": "boy band"
+  },
+  {
+   "label": "The Cure",
+   "qid": "Q484427",
+   "fame": 0.659,
+   "hometown": "Crawley",
+   "description": "British band",
+   "hook": "is a goth-rock band with teased-hair frontman Robert Smith and 'Friday I'm in Love'",
+   "known": 0.6,
+   "kind": "goth rock"
+  },
+  {
+   "label": "Blink-182",
+   "qid": "Q482477",
+   "fame": 0.658,
+   "hometown": "San Diego",
+   "description": "American rock band",
+   "hook": "sang 'All the Small Things' and 'What's My Age Again?' with pop-punk humor",
+   "known": 0.6,
+   "kind": "pop-punk"
+  },
+  {
+   "label": "The Who",
+   "qid": "Q93346",
+   "fame": 0.657,
+   "hometown": "London",
+   "description": "English rock band",
+   "hook": "smashed instruments on stage and wrote 'My Generation' and the rock opera Tommy",
+   "known": 0.8,
+   "kind": "classic rock"
+  },
+  {
+   "label": "Daft Punk",
+   "qid": "Q185828",
+   "fame": 0.656,
+   "hometown": "Paris",
+   "description": "French electronic music band",
+   "hook": "was a pair of robot-helmeted DJs who made 'Get Lucky'",
+   "known": 0.6,
+   "kind": "electronic"
+  },
+  {
+   "label": "Rage Against the Machine",
+   "qid": "Q72092",
+   "fame": 0.656,
+   "hometown": "Los Angeles",
+   "description": "American rap metal band",
+   "hook": "mixed rap and metal on 'Killing in the Name'",
+   "known": 0.6,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "N.W.A.",
+   "qid": "Q216856",
+   "fame": 0.654,
+   "hometown": "Compton",
+   "description": "American hip hop group",
+   "hook": "pioneered gangsta rap with members Dr. Dre and Ice Cube",
+   "known": 0.4,
+   "kind": "hip-hop"
+  },
+  {
+   "label": "Dire Straits",
+   "qid": "Q50040",
+   "fame": 0.653,
+   "hometown": "Deptford",
+   "description": "English rock band",
+   "hook": "sang 'Sultans of Swing' and 'Money for Nothing' with guitarist Mark Knopfler",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "The Strokes",
+   "qid": "Q211583",
+   "fame": 0.653,
+   "hometown": "New York City",
+   "description": "American rock band",
+   "hook": "sparked a garage-rock revival with the album Is This It",
+   "known": 0.4,
+   "kind": "indie rock"
+  },
+  {
+   "label": "Earth, Wind & Fire",
+   "qid": "Q28974",
+   "fame": 0.651,
+   "hometown": "Chicago",
+   "description": "American band",
+   "hook": "sang 'September' and 'Boogie Wonderland' with funk and horns",
+   "known": 0.4,
+   "kind": "funk"
+  },
+  {
+   "label": "Mötley Crüe",
+   "qid": "Q486688",
+   "fame": 0.651,
+   "hometown": "Los Angeles",
+   "description": "American metal band",
+   "hook": "was a glam metal band known for Sunset Strip excess and the hit Kickstart My Heart",
+   "known": 0.6,
+   "kind": "hard rock"
+  },
+  {
+   "label": "Duran Duran",
+   "qid": "Q58381",
+   "fame": 0.65,
+   "hometown": "Birmingham",
+   "description": "British band",
+   "hook": "led the New Romantic wave with glossy videos and the hit Hungry Like the Wolf",
+   "known": 0.4,
+   "kind": "synth-pop"
+  },
+  {
+   "label": "Limp Bizkit",
+   "qid": "Q240767",
+   "fame": 0.65,
+   "hometown": "Jacksonville",
+   "description": "American rap rock band",
+   "hook": "blended rap with heavy guitars and scored hits with Nookie and Rollin'",
+   "known": 0.4,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Talking Heads",
+   "qid": "Q205001",
+   "fame": 0.65,
+   "hometown": "New York City",
+   "description": "American band",
+   "hook": "was a quirky art-rock band led by David Byrne, famous for Psycho Killer",
+   "known": 0.4,
+   "kind": "art rock"
+  },
+  {
+   "label": "The Monkees",
+   "qid": "Q464036",
+   "fame": 0.649,
+   "hometown": "Los Angeles",
+   "description": "American pop group",
+   "hook": "was a pop group assembled for a TV sitcom, with hits like Daydream Believer",
+   "known": 0.6,
+   "kind": "pop"
+  },
+  {
+   "label": "Korn",
+   "qid": "Q80304",
+   "fame": 0.648,
+   "hometown": "Bakersfield",
+   "description": "American nu metal band",
+   "hook": "pioneered nu metal with downtuned guitars and the hit Freak on a Leash",
+   "known": 0.4,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "The Mamas & the Papas",
+   "qid": "Q211277",
+   "fame": 0.648,
+   "hometown": "Los Angeles",
+   "description": "American folk rock vocal group",
+   "hook": "sang California Dreamin' and Monday, Monday in lush four-part harmony",
+   "known": 0.4,
+   "kind": "folk rock"
+  },
+  {
+   "label": "The Smiths",
+   "qid": "Q180598",
+   "fame": 0.648,
+   "hometown": "Manchester",
+   "description": "British rock band",
+   "hook": "was a jangly indie band fronted by Morrissey, known for How Soon Is Now?",
+   "known": 0.4,
+   "kind": "indie rock"
+  },
+  {
+   "label": "Van Halen",
+   "qid": "Q190155",
+   "fame": 0.648,
+   "hometown": "Pasadena",
+   "description": "American rock band (1973–2020)",
+   "hook": "was a hard rock band built around Eddie's finger-tapping guitar and the hit Jump",
+   "known": 0.8,
+   "kind": "hard rock"
+  },
+  {
+   "label": "Yes",
+   "qid": "Q184386",
+   "fame": 0.648,
+   "hometown": "London",
+   "description": "English progressive rock band",
+   "hook": "was a progressive rock band known for Roundabout and album-length epics",
+   "known": 0.4,
+   "kind": "progressive rock"
+  },
+  {
+   "label": "R.E.M.",
+   "qid": "Q134969",
+   "fame": 0.647,
+   "hometown": "Athens",
+   "description": "American alternative rock band",
+   "hook": "had a hit with Losing My Religion and grew out of a college-radio scene",
+   "known": 0.6,
+   "kind": "alternative rock"
+  },
+  {
+   "label": "Westlife",
+   "qid": "Q151241",
+   "fame": 0.647,
+   "hometown": "Sligo",
+   "description": "Irish boy band",
+   "hook": "was a boy band that racked up a record run of UK chart-topping singles",
+   "known": 0.4,
+   "kind": "boy band"
+  },
+  {
+   "label": "Destiny's Child",
+   "qid": "Q153056",
+   "fame": 0.645,
+   "hometown": "Houston",
+   "description": "American rhythm and blues girl group from Houston, Texas",
+   "hook": "was a girl group that launched Beyoncé, with hits like Survivor and Say My Name",
+   "known": 0.8,
+   "kind": "girl group"
+  },
+  {
+   "label": "Black Eyed Peas",
+   "qid": "Q134541",
+   "fame": 0.644,
+   "hometown": "Los Angeles",
+   "description": "American hip hop group from California",
+   "hook": "is a hip-hop group with the hits I Gotta Feeling and Where Is the Love?",
+   "known": 0.6,
+   "kind": "hip-hop"
+  },
+  {
+   "label": "Rammstein",
+   "qid": "Q25177",
+   "fame": 0.644,
+   "hometown": "Berlin",
+   "description": "German Neue-Deutsche-Härte; industrial metal band",
+   "hook": "is a metal band known for pyrotechnic live shows and the song Du Hast",
+   "known": 0.4,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Megadeth",
+   "qid": "Q83431",
+   "fame": 0.643,
+   "hometown": "Los Angeles",
+   "description": "American thrash metal band",
+   "hook": "was a thrash metal band founded by Dave Mustaine after he left Metallica",
+   "known": 0.6,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Ramones",
+   "qid": "Q483407",
+   "fame": 0.641,
+   "hometown": "Forest Hills",
+   "description": "American punk rock band",
+   "hook": "launched fast three-chord punk with the chant Hey! Ho! Let's Go!",
+   "known": 0.6,
+   "kind": "punk"
+  },
+  {
+   "label": "Anthrax",
+   "qid": "Q109871",
+   "fame": 0.64,
+   "hometown": "New York City",
+   "description": "American thrash metal band",
+   "hook": "is a thrash metal band, one of the Big Four, named after a deadly disease",
+   "known": 0.4,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Joy Division",
+   "qid": "Q172763",
+   "fame": 0.64,
+   "hometown": "Salford",
+   "description": "British post-punk band",
+   "hook": "was a gloomy post-punk band behind Love Will Tear Us Apart",
+   "known": 0.2,
+   "kind": "post-punk"
+  },
+  {
+   "label": "New Order",
+   "qid": "Q214990",
+   "fame": 0.638,
+   "hometown": "Salford",
+   "description": "British band",
+   "hook": "rose from a post-punk band's ashes with the dance hit Blue Monday",
+   "known": 0.4,
+   "kind": "electronic"
+  },
+  {
+   "label": "The Police",
+   "qid": "Q178095",
+   "fame": 0.637,
+   "hometown": "London",
+   "description": "English rock band",
+   "hook": "was a trio led by Sting, famous for Every Breath You Take and Roxanne",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "The Killers",
+   "qid": "Q220730",
+   "fame": 0.634,
+   "hometown": "Las Vegas",
+   "description": "American musical group; rock band",
+   "hook": "scored hits with Mr. Brightside and Human",
+   "known": 0.8,
+   "kind": "alternative rock"
+  },
+  {
+   "label": "Toto",
+   "qid": "Q207472",
+   "fame": 0.634,
+   "hometown": "Van Nuys",
+   "description": "American rock band",
+   "hook": "had hits with Africa and Rosanna, powered by top studio session players",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Grateful Dead",
+   "qid": "Q212533",
+   "fame": 0.633,
+   "hometown": "Palo Alto",
+   "description": "American rock band (1965–1995)",
+   "hook": "was a psychedelic jam band famed for marathon concerts and a devoted touring fan community",
+   "known": 0.6,
+   "kind": "psychedelic rock"
+  },
+  {
+   "label": "Coldplay",
+   "qid": "Q45188",
+   "fame": 0.632,
+   "hometown": "London",
+   "description": "British rock band",
+   "hook": "had hits like Yellow and Viva la Vida, fronted by Chris Martin",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Def Leppard",
+   "qid": "Q182890",
+   "fame": 0.632,
+   "hometown": "Sheffield",
+   "description": "British musical group; rock band",
+   "hook": "had hits like Pour Some Sugar on Me and a drummer who played with one arm",
+   "known": 0.4,
+   "kind": "hard rock"
+  },
+  {
+   "label": "Muse",
+   "qid": "Q22151",
+   "fame": 0.632,
+   "hometown": "Teignmouth",
+   "description": "English rock band",
+   "hook": "is a rock trio known for Uprising and Supermassive Black Hole",
+   "known": 0.6,
+   "kind": "alternative rock"
+  },
+  {
+   "label": "DragonForce",
+   "qid": "Q212715",
+   "fame": 0.631,
+   "hometown": "London",
+   "description": "British power metal band",
+   "hook": "is a power metal band known for blistering guitar solos in Through the Fire and Flames",
+   "known": 0.2,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "The Pussycat Dolls",
+   "qid": "Q102385",
+   "fame": 0.629,
+   "hometown": "Los Angeles",
+   "description": "American girl group",
+   "hook": "was a burlesque-style girl group behind Don't Cha and Buttons",
+   "known": 0.2,
+   "kind": "girl group"
+  },
+  {
+   "label": "Twenty One Pilots",
+   "qid": "Q7857806",
+   "fame": 0.629,
+   "hometown": "Columbus",
+   "description": "American musical duo",
+   "hook": "is a duo famous for Stressed Out and Ride",
+   "known": 0.6,
+   "kind": "pop-punk"
+  },
+  {
+   "label": "Judas Priest",
+   "qid": "Q83468",
+   "fame": 0.628,
+   "hometown": "Birmingham",
+   "description": "British musical group; heavy metal band",
+   "hook": "was a heavy metal band known for leather-and-studs style and Breaking the Law",
+   "known": 0.6,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "The Doors",
+   "qid": "Q45354",
+   "fame": 0.628,
+   "hometown": "Los Angeles",
+   "description": "American rock band",
+   "hook": "was a rock band fronted by Jim Morrison, known for Light My Fire",
+   "known": 0.8,
+   "kind": "classic rock"
+  },
+  {
+   "label": "Aerosmith",
+   "qid": "Q126826",
+   "fame": 0.625,
+   "hometown": "Boston",
+   "description": "American hard rock band",
+   "hook": "is a hard rock band fronted by Steven Tyler, known for Dream On and Walk This Way",
+   "known": 0.8,
+   "kind": "hard rock"
+  },
+  {
+   "label": "Blur",
+   "qid": "Q485820",
+   "fame": 0.623,
+   "hometown": "London",
+   "description": "English alternative rock band",
+   "hook": "was a Britpop band known for Song 2 and a chart rivalry with Oasis",
+   "known": 0.6,
+   "kind": "britpop"
+  },
+  {
+   "label": "Arctic Monkeys",
+   "qid": "Q170599",
+   "fame": 0.621,
+   "hometown": "Sheffield",
+   "description": "English musical group; rock band",
+   "hook": "rose with I Bet You Look Good on the Dancefloor and the album AM",
+   "known": 0.6,
+   "kind": "indie rock"
+  },
+  {
+   "label": "Electric Light Orchestra",
+   "qid": "Q218255",
+   "fame": 0.621,
+   "hometown": "Birmingham",
+   "description": "English rock band",
+   "hook": "blended rock with strings and a spaceship stage, with hits like Mr. Blue Sky",
+   "known": 0.4,
+   "kind": "progressive rock"
+  },
+  {
+   "label": "Blondie",
+   "qid": "Q202741",
+   "fame": 0.619,
+   "hometown": "New York City",
+   "description": "American new wave band (1974–)",
+   "hook": "was a new wave band fronted by Debbie Harry, famous for Heart of Glass",
+   "known": 0.8,
+   "kind": "new wave"
+  },
+  {
+   "label": "Nine Inch Nails",
+   "qid": "Q11647",
+   "fame": 0.619,
+   "hometown": "Cleveland",
+   "description": "American industrial rock band",
+   "hook": "is an industrial rock project led by Trent Reznor, known for Closer",
+   "known": 0.4,
+   "kind": "industrial"
+  },
+  {
+   "label": "The Yardbirds",
+   "qid": "Q192725",
+   "fame": 0.619,
+   "hometown": "London",
+   "description": "English blues and psychedelic rock band",
+   "hook": "launched the careers of guitarists Eric Clapton, Jeff Beck and Jimmy Page",
+   "known": 0.4,
+   "kind": "blues rock"
+  },
+  {
+   "label": "Pet Shop Boys",
+   "qid": "Q485625",
+   "fame": 0.616,
+   "hometown": "London",
+   "description": "British synth-pop duo",
+   "hook": "is a synth-pop duo known for West End Girls and It's a Sin",
+   "known": 0.4,
+   "kind": "synth-pop"
+  },
+  {
+   "label": "Scorpions",
+   "qid": "Q124147",
+   "fame": 0.616,
+   "hometown": "Hanover",
+   "description": "German rock band",
+   "hook": "wrote the power ballad Wind of Change and Rock You Like a Hurricane",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "The Velvet Underground",
+   "qid": "Q103550",
+   "fame": 0.614,
+   "hometown": "New York City",
+   "description": "American rock band",
+   "hook": "was an art-rock band tied to Andy Warhol and the singer Nico",
+   "known": 0.4,
+   "kind": "art rock"
+  },
+  {
+   "label": "Bring Me the Horizon",
+   "qid": "Q494784",
+   "fame": 0.613,
+   "hometown": "Sheffield",
+   "description": "British rock band",
+   "hook": "went from metalcore to alt-rock with the hit Can You Feel My Heart",
+   "known": 0.2,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Imagine Dragons",
+   "qid": "Q391348",
+   "fame": 0.611,
+   "hometown": "Las Vegas",
+   "description": "American pop rock band",
+   "hook": "is a pop rock band known for Radioactive and Believer",
+   "known": 0.8,
+   "kind": "alternative rock"
+  },
+  {
+   "label": "Foreigner",
+   "qid": "Q275059",
+   "fame": 0.61,
+   "hometown": "New York City",
+   "description": "British-American rock band",
+   "hook": "had hits like I Want to Know What Love Is and Cold as Ice",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "Pixies",
+   "qid": "Q188464",
+   "fame": 0.61,
+   "hometown": "Boston",
+   "description": "American alternative rock band",
+   "hook": "shaped alternative rock with quiet-loud dynamics on Where Is My Mind?",
+   "known": 0.2,
+   "kind": "alternative rock"
+  },
+  {
+   "label": "The Clash",
+   "qid": "Q125603",
+   "fame": 0.61,
+   "hometown": "London",
+   "description": "British punk rock band",
+   "hook": "was a punk band known for Should I Stay or Should I Go and Rock the Casbah",
+   "known": 0.6,
+   "kind": "punk"
+  },
+  {
+   "label": "Slayer",
+   "qid": "Q131231",
+   "fame": 0.609,
+   "hometown": "Huntington Park",
+   "description": "American thrash metal band",
+   "hook": "was a fast, dark thrash metal band known for the album Reign in Blood",
+   "known": 0.4,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "The White Stripes",
+   "qid": "Q268160",
+   "fame": 0.606,
+   "hometown": "Detroit",
+   "description": "American rock band",
+   "hook": "was a duo with a signature red color scheme, known for Seven Nation Army",
+   "known": 0.6,
+   "kind": "garage rock"
+  },
+  {
+   "label": "Kings of Leon",
+   "qid": "Q192486",
+   "fame": 0.605,
+   "hometown": "Nashville",
+   "description": "American rock band",
+   "hook": "is a family band of brothers and a cousin, known for Sex on Fire and Use Somebody",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Motörhead",
+   "qid": "Q19697",
+   "fame": 0.605,
+   "hometown": "London",
+   "description": "British rock band",
+   "hook": "was a thunderous band fronted by bassist Lemmy, known for Ace of Spades",
+   "known": 0.4,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Siouxsie and the Banshees",
+   "qid": "Q323834",
+   "fame": 0.605,
+   "hometown": "London",
+   "description": "English rock band",
+   "hook": "was a goth-leaning post-punk band behind Hong Kong Garden and Spellbound",
+   "known": 0.2,
+   "kind": "goth rock"
+  },
+  {
+   "label": "Jefferson Airplane",
+   "qid": "Q488260",
+   "fame": 0.604,
+   "hometown": "San Francisco",
+   "description": "American rock band",
+   "hook": "was a psychedelic band behind White Rabbit and Somebody to Love",
+   "known": 0.4,
+   "kind": "psychedelic rock"
+  },
+  {
+   "label": "Måneskin",
+   "qid": "Q56884561",
+   "fame": 0.604,
+   "hometown": "Rome",
+   "description": "Italian rock band",
+   "hook": "won Eurovision with Zitti e buoni and dressed flamboyantly on stage",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "Maroon 5",
+   "qid": "Q182223",
+   "fame": 0.604,
+   "hometown": "Los Angeles",
+   "description": "American pop rock band",
+   "hook": "is a pop rock band known for Moves like Jagger and Sugar",
+   "known": 0.8,
+   "kind": "pop rock"
+  },
+  {
+   "label": "INXS",
+   "qid": "Q489801",
+   "fame": 0.603,
+   "hometown": "Sydney",
+   "description": "Australian rock band",
+   "hook": "was a band fronted by Michael Hutchence, known for Need You Tonight",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "Aespa",
+   "qid": "Q100877982",
+   "fame": 0.602,
+   "hometown": "Seoul",
+   "description": "South Korean girl group",
+   "hook": "is a girl group with virtual avatar counterparts, known for Next Level",
+   "known": 0.2,
+   "kind": "k-pop"
+  },
+  {
+   "label": "Audioslave",
+   "qid": "Q486830",
+   "fame": 0.601,
+   "hometown": "Glendale",
+   "description": "American rock band",
+   "hook": "was a supergroup pairing a Soundgarden singer with members of Rage Against the Machine",
+   "known": 0.2,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Jethro Tull",
+   "qid": "Q192353",
+   "fame": 0.601,
+   "hometown": "Luton",
+   "description": "British rock band",
+   "hook": "was a prog-folk band with a flute-playing frontman who stood on one leg, known for Aqualung",
+   "known": 0.4,
+   "kind": "progressive rock"
+  },
+  {
+   "label": "Girls' Generation",
+   "qid": "Q20153",
+   "fame": 0.6,
+   "hometown": "Seoul",
+   "description": "South Korean girl group",
+   "hook": "was a large K-pop group with the hit Gee",
+   "known": 0.6,
+   "kind": "k-pop"
+  },
+  {
+   "label": "Massive Attack",
+   "qid": "Q357418",
+   "fame": 0.6,
+   "hometown": "Bristol",
+   "description": "British trip hop band",
+   "hook": "pioneered a moody, downtempo sound with the albums Blue Lines and Mezzanine",
+   "known": 0.2,
+   "kind": "electronic"
+  },
+  {
+   "label": "Roxette",
+   "qid": "Q173790",
+   "fame": 0.6,
+   "hometown": "Halmstad",
+   "description": "Swedish pop duo",
+   "hook": "sang \"The Look\" and \"It Must Have Been Love\", the latter on the Pretty Woman soundtrack",
+   "known": 0.4,
+   "kind": "pop"
+  },
+  {
+   "label": "OneRepublic",
+   "qid": "Q1438730",
+   "fame": 0.599,
+   "hometown": "Colorado Springs",
+   "description": "American pop rock band",
+   "hook": "is led by Ryan Tedder and scored hits with \"Apologize\" and \"Counting Stars\"",
+   "known": 0.6,
+   "kind": "pop rock"
+  },
+  {
+   "label": "Village People",
+   "qid": "Q219874",
+   "fame": 0.598,
+   "hometown": "New York City",
+   "description": "American disco group",
+   "hook": "is a disco act in costumes best known for \"Y.M.C.A.\" and \"In the Navy\"",
+   "known": 0.6,
+   "kind": "disco"
+  },
+  {
+   "label": "Cream",
+   "qid": "Q203736",
+   "fame": 0.596,
+   "hometown": "London",
+   "description": "British musical group",
+   "hook": "was a power trio of Eric Clapton, Jack Bruce and Ginger Baker, known for \"Sunshine of Your Love\"",
+   "known": 0.4,
+   "kind": "blues rock"
+  },
+  {
+   "label": "Crosby, Stills, Nash & Young",
+   "qid": "Q10461933",
+   "fame": 0.596,
+   "hometown": "Los Angeles",
+   "description": "American and British folk rock supergroup",
+   "hook": "is a folk rock supergroup that played Woodstock and made the album Déjà Vu",
+   "known": 0.4,
+   "kind": "folk rock"
+  },
+  {
+   "label": "Ace of Base",
+   "qid": "Q151634",
+   "fame": 0.593,
+   "hometown": "Gothenburg",
+   "description": "Swedish pop group",
+   "hook": "had a worldwide hit with \"The Sign\" and \"All That She Wants\" in the early 1990s",
+   "known": 0.4,
+   "kind": "pop"
+  },
+  {
+   "label": "Panic! at the Disco",
+   "qid": "Q277551",
+   "fame": 0.592,
+   "hometown": "Las Vegas",
+   "description": "American musical group; rock solo project band",
+   "hook": "is led by Brendon Urie and scored a hit with \"I Write Sins Not Tragedies\"",
+   "known": 0.6,
+   "kind": "pop-punk"
+  },
+  {
+   "label": "Sum 41",
+   "qid": "Q483558",
+   "fame": 0.592,
+   "hometown": "Ajax",
+   "description": "Canadian punk rock band",
+   "hook": "is a pop-punk band known for the songs \"Fat Lip\" and \"In Too Deep\"",
+   "known": 0.4,
+   "kind": "pop-punk"
+  },
+  {
+   "label": "The Allman Brothers Band",
+   "qid": "Q507327",
+   "fame": 0.592,
+   "hometown": "Jacksonville",
+   "description": "American rock band",
+   "hook": "pioneered Southern rock with twin lead guitars and the live album At Fillmore East",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "Florence + the Machine",
+   "qid": "Q217360",
+   "fame": 0.591,
+   "hometown": "London",
+   "description": "English indie rock band",
+   "hook": "is fronted by a red-haired singer and known for \"Dog Days Are Over\" and \"You've Got the Love\"",
+   "known": 0.6,
+   "kind": "alternative rock"
+  },
+  {
+   "label": "The Kinks",
+   "qid": "Q188713",
+   "fame": 0.591,
+   "hometown": "London",
+   "description": "British rock band (1963-1996)",
+   "hook": "recorded \"You Really Got Me\" and \"Lola\", with Ray Davies as the main songwriter",
+   "known": 0.8,
+   "kind": "classic rock"
+  },
+  {
+   "label": "The Mars Volta",
+   "qid": "Q484993",
+   "fame": 0.591,
+   "hometown": "El Paso",
+   "description": "American rock band",
+   "hook": "plays progressive rock with wild guitar work and the concept album De-Loused in the Comatorium",
+   "known": 0.2,
+   "kind": "progressive rock"
+  },
+  {
+   "label": "Faith No More",
+   "qid": "Q320499",
+   "fame": 0.589,
+   "hometown": "San Francisco",
+   "description": "American rock band",
+   "hook": "blended funk, metal and rap, famous for \"Epic\" and singer Mike Patton",
+   "known": 0.2,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "The Animals",
+   "qid": "Q131422",
+   "fame": 0.589,
+   "hometown": "Newcastle upon Tyne",
+   "description": "English rock band",
+   "hook": "had a huge hit with a blues-rock version of \"The House of the Rising Sun\"",
+   "known": 0.4,
+   "kind": "blues rock"
+  },
+  {
+   "label": "Whitesnake",
+   "qid": "Q189965",
+   "fame": 0.588,
+   "hometown": "Middlesbrough",
+   "description": "British hard rock band",
+   "hook": "is a hard rock band led by David Coverdale, known for \"Here I Go Again\" and \"Is This Love\"",
+   "known": 0.4,
+   "kind": "hard rock"
+  },
+  {
+   "label": "Sepultura",
+   "qid": "Q239074",
+   "fame": 0.586,
+   "hometown": "Belo Horizonte",
+   "description": "Brazilian heavy metal band",
+   "hook": "is a groove and thrash metal band led by the brothers Max and Igor Cavalera, known for Roots",
+   "known": 0.2,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Take That",
+   "qid": "Q152066",
+   "fame": 0.586,
+   "hometown": "Manchester",
+   "description": "British five-piece vocal pop group",
+   "hook": "is a boy band with Gary Barlow and Robbie Williams that sang \"Back for Good\" and \"Never Forget\"",
+   "known": 0.6,
+   "kind": "boy band"
+  },
+  {
+   "label": "Twice",
+   "qid": "Q20645861",
+   "fame": 0.583,
+   "hometown": "Seoul",
+   "description": "South Korean girl group",
+   "hook": "is a nine-member girl group known for the catchy songs \"Cheer Up\" and \"TT\"",
+   "known": 0.6,
+   "kind": "k-pop"
+  },
+  {
+   "label": "a-ha",
+   "qid": "Q156305",
+   "fame": 0.582,
+   "hometown": "Oslo",
+   "description": "Norwegian pop band",
+   "hook": "is a synth-pop trio best known for \"Take On Me\" and its pencil-sketch music video",
+   "known": 0.6,
+   "kind": "synth-pop"
+  },
+  {
+   "label": "The Carpenters",
+   "qid": "Q223495",
+   "fame": 0.582,
+   "hometown": "Downey",
+   "description": "American musical group; vocal sibling duo",
+   "hook": "is a brother and sister duo, famous for \"Close to You\" and \"Top of the World\"",
+   "known": 0.6,
+   "kind": "pop"
+  },
+  {
+   "label": "Sugababes",
+   "qid": "Q193697",
+   "fame": 0.581,
+   "hometown": "London",
+   "description": "British pop girl group",
+   "hook": "is a pop girl group known for \"Push the Button\" and \"Round Round\"",
+   "known": 0.4,
+   "kind": "girl group"
+  },
+  {
+   "label": "The Moody Blues",
+   "qid": "Q211965",
+   "fame": 0.581,
+   "hometown": "Birmingham",
+   "description": "English rock band",
+   "hook": "recorded the orchestral album Days of Future Passed, featuring \"Nights in White Satin\"",
+   "known": 0.4,
+   "kind": "progressive rock"
+  },
+  {
+   "label": "Europe",
+   "qid": "Q185144",
+   "fame": 0.577,
+   "hometown": "Upplands Väsby",
+   "description": "Swedish rock band",
+   "hook": "is a hard rock band whose hit \"The Final Countdown\" is played at sports arenas worldwide",
+   "known": 0.4,
+   "kind": "hard rock"
+  },
+  {
+   "label": "Sonic Youth",
+   "qid": "Q188626",
+   "fame": 0.577,
+   "hometown": "New York City",
+   "description": "American rock band (1981–2011)",
+   "hook": "is a noisy alternative rock band with Thurston Moore and Kim Gordon, known for the album Daydream Nation",
+   "known": 0.2,
+   "kind": "alternative rock"
+  },
+  {
+   "label": "Mayhem",
+   "qid": "Q485116",
+   "fame": 0.576,
+   "hometown": "Oslo",
+   "description": "Norwegian black metal band",
+   "hook": null,
+   "known": 0.05,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "No Doubt",
+   "qid": "Q43259",
+   "fame": 0.576,
+   "hometown": "Anaheim",
+   "description": "American rock band",
+   "hook": "is a ska-pop band fronted by Gwen Stefani, known for \"Don't Speak\"",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Rainbow",
+   "qid": "Q16005",
+   "fame": 0.576,
+   "hometown": "Hertford",
+   "description": "English musical group; rock band",
+   "hook": "was formed by guitarist Ritchie Blackmore after he left Deep Purple",
+   "known": 0.2,
+   "kind": "hard rock"
+  },
+  {
+   "label": "Die Antwoord",
+   "qid": "Q23376",
+   "fame": 0.575,
+   "hometown": "Cape Town",
+   "description": "South African rap-rave group",
+   "hook": null,
+   "known": 0.05,
+   "kind": "electronic"
+  },
+  {
+   "label": "t.A.T.u.",
+   "qid": "Q161723",
+   "fame": 0.575,
+   "hometown": "Moscow",
+   "description": "Russian music duo",
+   "hook": "is a duo of two schoolgirl-styled singers best known for \"All the Things She Said\"",
+   "known": 0.2,
+   "kind": "pop"
+  },
+  {
+   "label": "Wham!",
+   "qid": "Q744087",
+   "fame": 0.574,
+   "hometown": "Bushey",
+   "description": "British pop band",
+   "hook": "was a duo of George Michael and Andrew Ridgeley, known for \"Wake Me Up Before You Go-Go\"",
+   "known": 0.6,
+   "kind": "pop"
+  },
+  {
+   "label": "Tokio Hotel",
+   "qid": "Q386216",
+   "fame": 0.571,
+   "hometown": "Magdeburg",
+   "description": "German band",
+   "hook": "is a band of twin brothers and friends, known for the song \"Monsoon\" and a teen fan following",
+   "known": 0.2,
+   "kind": "rock"
+  },
+  {
+   "label": "Cannibal Corpse",
+   "qid": "Q485231",
+   "fame": 0.57,
+   "hometown": "Buffalo",
+   "description": "American death metal band",
+   "hook": null,
+   "known": 0.05,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Peter, Paul and Mary",
+   "qid": "Q654716",
+   "fame": 0.567,
+   "hometown": "New York City",
+   "description": "American folk music group popular in the 1960s",
+   "hook": "is a folk trio that sang \"Puff, the Magic Dragon\" and \"Leaving on a Jet Plane\"",
+   "known": 0.6,
+   "kind": "folk"
+  },
+  {
+   "label": "Sabaton",
+   "qid": "Q740159",
+   "fame": 0.567,
+   "hometown": "Falun",
+   "description": "Swedish power metal band",
+   "hook": "is a power metal band that writes songs about famous battles and wars in history",
+   "known": 0.05,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Eurythmics",
+   "qid": "Q207706",
+   "fame": 0.565,
+   "hometown": "Sunderland",
+   "description": "British new wave duo",
+   "hook": "is a duo of Annie Lennox and Dave Stewart, known for \"Sweet Dreams (Are Made of This)\"",
+   "known": 0.6,
+   "kind": "synth-pop"
+  },
+  {
+   "label": "Nightwish",
+   "qid": "Q43510",
+   "fame": 0.564,
+   "hometown": "Kitee",
+   "description": "Finnish symphonic metal band",
+   "hook": "is a symphonic metal band known for operatic female vocals and the song \"Nemo\"",
+   "known": 0.2,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Portishead",
+   "qid": "Q191352",
+   "fame": 0.564,
+   "hometown": "Bristol",
+   "description": "English band",
+   "hook": "is a trip hop band with singer Beth Gibbons, known for the album Dummy and \"Glory Box\"",
+   "known": 0.2,
+   "kind": "electronic"
+  },
+  {
+   "label": "Bullet for My Valentine",
+   "qid": "Q485385",
+   "fame": 0.563,
+   "hometown": "Bridgend",
+   "description": "Welsh heavy metal band",
+   "hook": "is a heavy metal band known for the songs \"Tears Don't Fall\" and \"Scream Aim Fire\"",
+   "known": 0.2,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "5 Seconds of Summer",
+   "qid": "Q4641147",
+   "fame": 0.562,
+   "hometown": "Sydney",
+   "description": "Australian pop rock band",
+   "hook": "is a pop rock band known for \"She Looks So Perfect\" that began by posting videos online",
+   "known": 0.6,
+   "kind": "pop rock"
+  },
+  {
+   "label": "Placebo",
+   "qid": "Q484839",
+   "fame": 0.562,
+   "hometown": "London",
+   "description": "British rock band",
+   "hook": "is an alternative rock band fronted by Brian Molko, known for \"Nancy Boy\" and \"Pure Morning\"",
+   "known": 0.2,
+   "kind": "alternative rock"
+  },
+  {
+   "label": "The Chainsmokers",
+   "qid": "Q7721993",
+   "fame": 0.562,
+   "hometown": "New York City",
+   "description": "American electronic music duo",
+   "hook": "is an electronic duo known for the hits \"Closer\" and \"Don't Let Me Down\"",
+   "known": 0.6,
+   "kind": "electronic"
+  },
+  {
+   "label": "Kraftwerk",
+   "qid": "Q44892",
+   "fame": 0.561,
+   "hometown": "Düsseldorf",
+   "description": "German music band",
+   "hook": "were pioneers of electronic music who recorded \"Autobahn\" and \"The Model\"",
+   "known": 0.2,
+   "kind": "electronic"
+  },
+  {
+   "label": "Dead Kennedys",
+   "qid": "Q208211",
+   "fame": 0.557,
+   "hometown": "San Francisco",
+   "description": "American punk band",
+   "hook": "is a punk band led by Jello Biafra, known for the song \"California Über Alles\"",
+   "known": 0.2,
+   "kind": "punk"
+  },
+  {
+   "label": "Procol Harum",
+   "qid": "Q214486",
+   "fame": 0.557,
+   "hometown": "Southend-on-Sea",
+   "description": "British rock band",
+   "hook": "is best known for the 1960s hit \"A Whiter Shade of Pale\" with its organ melody",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "The Everly Brothers",
+   "qid": "Q690138",
+   "fame": 0.557,
+   "hometown": "Shenandoah",
+   "description": "American rock duo",
+   "hook": "is a brother duo famous for close harmonies on \"Wake Up Little Susie\" and \"Bye Bye Love\"",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "Hoobastank",
+   "qid": "Q49724",
+   "fame": 0.556,
+   "hometown": "Agoura Hills",
+   "description": "American band",
+   "hook": "is a rock band known for the ballad \"The Reason\"",
+   "known": 0.1,
+   "kind": "rock"
+  },
+  {
+   "label": "The Corrs",
+   "qid": "Q192915",
+   "fame": 0.556,
+   "hometown": "Dundalk",
+   "description": "Irish musical group",
+   "hook": "is a family band of three sisters and a brother, known for \"Breathless\" and \"Runaway\"",
+   "known": 0.4,
+   "kind": "folk rock"
+  },
+  {
+   "label": "The Supremes",
+   "qid": "Q218837",
+   "fame": 0.556,
+   "hometown": "Detroit",
+   "description": "American female singing group",
+   "hook": "was a Motown trio led by Diana Ross, with hits like \"Baby Love\" and \"Stop! In the Name of Love\"",
+   "known": 0.8,
+   "kind": "girl group"
+  },
+  {
+   "label": "Uriah Heep",
+   "qid": "Q108666",
+   "fame": 0.556,
+   "hometown": "London",
+   "description": "British band",
+   "hook": "is a hard rock band known for the songs \"Easy Livin'\" and \"Lady in Black\"",
+   "known": 0.2,
+   "kind": "hard rock"
+  },
+  {
+   "label": "Seventeen",
+   "qid": "Q14524548",
+   "fame": 0.551,
+   "hometown": "Seoul",
+   "description": "South Korean musical group; boy band",
+   "hook": "is a self-producing boy band with thirteen members, known for \"Very Nice\" and \"Don't Wanna Cry\"",
+   "known": 0.4,
+   "kind": "k-pop"
+  },
+  {
+   "label": "30 Seconds to Mars",
+   "qid": "Q40585",
+   "fame": 0.55,
+   "hometown": "Los Angeles",
+   "description": "American rock band from California",
+   "hook": "is a rock band led by actor Jared Leto, known for \"The Kill\" and \"From Yesterday\"",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "Fifth Harmony",
+   "qid": "Q3087893",
+   "fame": 0.548,
+   "hometown": "Miami",
+   "description": "American girl group",
+   "hook": "is a girl group formed on the TV show The X Factor, known for \"Work from Home\"",
+   "known": 0.4,
+   "kind": "girl group"
+  },
+  {
+   "label": "Gojira",
+   "qid": "Q1011412",
+   "fame": 0.546,
+   "hometown": "Bayonne",
+   "description": "French heavy metal band",
+   "hook": "is a heavy metal band known for environmental themes and for playing at the Paris Olympics opening ceremony",
+   "known": 0.2,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Snow Patrol",
+   "qid": "Q188407",
+   "fame": 0.545,
+   "hometown": "Dundee",
+   "description": "Northern Irish–Scottish musical group; rock band",
+   "hook": "is a rock band known for the slow-burning hit \"Chasing Cars\"",
+   "known": 0.4,
+   "kind": "alternative rock"
+  },
+  {
+   "label": "Blue",
+   "qid": "Q32825",
+   "fame": 0.544,
+   "hometown": "London",
+   "description": "English boy band",
+   "hook": "is a boy band known for \"All Rise\" and \"One Love\" and a duet with Elton John",
+   "known": 0.4,
+   "kind": "boy band"
+  },
+  {
+   "label": "Kino",
+   "qid": "Q650555",
+   "fame": 0.542,
+   "hometown": "Saint Petersburg",
+   "description": "Soviet rock band",
+   "hook": "was a band led by Viktor Tsoi that became a legendary voice of late-Soviet rock",
+   "known": 0.05,
+   "kind": "rock"
+  },
+  {
+   "label": "Simple Plan",
+   "qid": "Q485825",
+   "fame": 0.542,
+   "hometown": "Montreal",
+   "description": "Canadian rock band",
+   "hook": "is a pop-punk band known for the songs \"I'm Just a Kid\" and \"Welcome to My Life\"",
+   "known": 0.2,
+   "kind": "pop-punk"
+  },
+  {
+   "label": "Arcade Fire",
+   "qid": "Q58608",
+   "fame": 0.54,
+   "hometown": "Montreal",
+   "description": "Canadian indie rock band",
+   "hook": "is an indie band that won Album of the Year for The Suburbs",
+   "known": 0.4,
+   "kind": "indie rock"
+  },
+  {
+   "label": "Franz Ferdinand",
+   "qid": "Q173180",
+   "fame": 0.536,
+   "hometown": "Glasgow",
+   "description": "Scottish rock band from Glasgow",
+   "hook": "is an indie rock band known for the hit \"Take Me Out\"",
+   "known": 0.2,
+   "kind": "indie rock"
+  },
+  {
+   "label": "EXO",
+   "qid": "Q494717",
+   "fame": 0.534,
+   "hometown": "Seoul",
+   "description": "South Korean boy band",
+   "hook": "started as a twelve-member boy band split into Korean and Mandarin-singing subgroups",
+   "known": 0.4,
+   "kind": "k-pop"
+  },
+  {
+   "label": "Status Quo",
+   "qid": "Q322265",
+   "fame": 0.534,
+   "hometown": "London",
+   "description": "British musical group; rock band",
+   "hook": null,
+   "known": 0.2,
+   "kind": "rock"
+  },
+  {
+   "label": "The Cardigans",
+   "qid": "Q106379",
+   "fame": 0.529,
+   "hometown": "Jönköping",
+   "description": "Swedish rock band",
+   "hook": null,
+   "known": 0.1,
+   "kind": "rock"
+  },
+  {
+   "label": "Children of Bodom",
+   "qid": "Q171718",
+   "fame": 0.528,
+   "hometown": "Espoo",
+   "description": "Finnish melodic death metal band",
+   "hook": null,
+   "known": 0.1,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Sigur Rós",
+   "qid": "Q483828",
+   "fame": 0.524,
+   "hometown": "Reykjavík",
+   "description": "Icelandic band",
+   "hook": null,
+   "known": 0.2,
+   "kind": "alternative rock"
+  },
+  {
+   "label": "Boyzone",
+   "qid": "Q213495",
+   "fame": 0.523,
+   "hometown": "Dublin",
+   "description": "Irish musical group; boy band",
+   "hook": null,
+   "known": 0.2,
+   "kind": "boy band"
+  },
+  {
+   "label": "Gipsy Kings",
+   "qid": "Q40586",
+   "fame": 0.521,
+   "hometown": "Arles",
+   "description": "French-Spanish musical group",
+   "hook": null,
+   "known": 0.2,
+   "kind": "world music"
+  },
+  {
+   "label": "The Stooges",
+   "qid": "Q208767",
+   "fame": 0.519,
+   "hometown": "Ann Arbor",
+   "description": "American punk rock band",
+   "hook": null,
+   "known": 0.2,
+   "kind": "punk"
+  },
+  {
+   "label": "Helloween",
+   "qid": "Q158895",
+   "fame": 0.518,
+   "hometown": "Hamburg",
+   "description": "German power metal band",
+   "hook": null,
+   "known": 0.2,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Accept",
+   "qid": "Q25507",
+   "fame": 0.512,
+   "hometown": "Solingen",
+   "description": "German heavy metal band",
+   "hook": null,
+   "known": 0.2,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "AKB48",
+   "qid": "Q51118",
+   "fame": 0.509,
+   "hometown": "Akihabara",
+   "description": "Japanese female idol group",
+   "hook": null,
+   "known": 0.2,
+   "kind": "pop"
+  },
+  {
+   "label": "Bathory",
+   "qid": "Q157201",
+   "fame": 0.509,
+   "hometown": "Stockholm",
+   "description": "Swedish black metal band",
+   "hook": null,
+   "known": 0.05,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Red Velvet",
+   "qid": "Q17466114",
+   "fame": 0.506,
+   "hometown": "Seoul",
+   "description": "South Korean girl group",
+   "hook": null,
+   "known": 0.2,
+   "kind": "k-pop"
+  },
+  {
+   "label": "Behemoth",
+   "qid": "Q272260",
+   "fame": 0.504,
+   "hometown": "Gdańsk",
+   "description": "Polish extreme metal band",
+   "hook": null,
+   "known": 0.05,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "In Flames",
+   "qid": "Q258546",
+   "fame": 0.504,
+   "hometown": "Gothenburg",
+   "description": "Swedish melodic death metal band",
+   "hook": null,
+   "known": 0.1,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "SHINee",
+   "qid": "Q269836",
+   "fame": 0.502,
+   "hometown": "Seoul",
+   "description": "South Korean boy band",
+   "hook": "is a boy band nicknamed the \"Princes of K-pop\" that set a fashion trend among students",
+   "known": 0.4,
+   "kind": "k-pop"
+  },
+  {
+   "label": "NCT",
+   "qid": "Q23725822",
+   "fame": 0.5,
+   "hometown": "Seoul",
+   "description": "South Korean boy band",
+   "hook": "is a boy band with a limitless-member concept and seven rotating sub-units, among K-pop's best-selling acts",
+   "known": 0.4,
+   "kind": "k-pop"
+  },
+  {
+   "label": "Itzy",
+   "qid": "Q60732823",
+   "fame": 0.495,
+   "hometown": "Seoul",
+   "description": "South Korean girl group",
+   "hook": "is a five-member girl group known for its \"teen crush\" concept and the debut hit \"Dalla Dalla\"",
+   "known": 0.4,
+   "kind": "k-pop"
+  },
+  {
+   "label": "X Japan",
+   "qid": "Q179767",
+   "fame": 0.491,
+   "hometown": "Tateyama",
+   "description": "Japanese musical group; heavy metal band",
+   "hook": null,
+   "known": 0.1,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Amon Amarth",
+   "qid": "Q192863",
+   "fame": 0.49,
+   "hometown": "Tumba",
+   "description": "Swedish melodic death metal band",
+   "hook": null,
+   "known": 0.05,
+   "kind": "heavy metal"
+  }
+ ]
+}

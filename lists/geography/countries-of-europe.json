@@ -1,0 +1,580 @@
+{
+ "id": "list.geography.countries-of-europe",
+ "title": "Countries of Europe",
+ "prompt": "Name a country in Europe",
+ "genre": "society",
+ "category": "geography",
+ "topic": "borders-and-maps",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q3624078 ; wdt:P30 wd:Q46 . FILTER NOT EXISTS { ?item wdt:P576 [] } FILTER NOT EXISTS { ?item wdt:P31 wd:Q3024240 } } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-09-30T04:13:16.324Z"
+ },
+ "rows": [
+  {
+   "label": "United Kingdom",
+   "qid": "Q145",
+   "fame": 0.829,
+   "also": [
+    "the United Kingdom of Great Britain and Northern Ireland",
+    "Great Britain and Northern Ireland",
+    "United Kingdom of Great Britain and Northern Ireland",
+    "Great Britain",
+    "GBR",
+    "Britain",
+    "the UK",
+    "the United Kingdom"
+   ]
+  },
+  {
+   "label": "Russia",
+   "qid": "Q159",
+   "fame": 0.79,
+   "also": [
+    "RUS",
+    "Russian Federation"
+   ]
+  },
+  {
+   "label": "Germany",
+   "qid": "Q183",
+   "fame": 0.788,
+   "also": [
+    "BRD",
+    "DEU",
+    "GER",
+    "Federal Republic of Germany",
+    "FRG"
+   ]
+  },
+  {
+   "label": "Kazakhstan",
+   "qid": "Q232",
+   "fame": 0.77,
+   "also": [
+    "Republic of Kazakhstan",
+    "Republic of Qazaqstan",
+    "KAZ",
+    "Qazaqstan"
+   ]
+  },
+  {
+   "label": "Turkey",
+   "qid": "Q43",
+   "fame": 0.761,
+   "also": [
+    "Republic of Turkey",
+    "Republic of Türkiye",
+    "TUR",
+    "Türkiye"
+   ]
+  },
+  {
+   "label": "France",
+   "qid": "Q142",
+   "fame": 0.76,
+   "also": [
+    "French Republic",
+    "FRA",
+    "Francia",
+    "République française"
+   ]
+  },
+  {
+   "label": "Spain",
+   "qid": "Q29",
+   "fame": 0.746,
+   "also": [
+    "Kingdom of Spain",
+    "ESP"
+   ]
+  },
+  {
+   "label": "Italy",
+   "qid": "Q38",
+   "fame": 0.742,
+   "also": [
+    "Italian Republic",
+    "Republic of Italy",
+    "Italia",
+    "ITA"
+   ]
+  },
+  {
+   "label": "Portugal",
+   "qid": "Q45",
+   "fame": 0.739,
+   "also": [
+    "POR",
+    "Portuguese Republic",
+    "PRT",
+    "República Portuguesa"
+   ]
+  },
+  {
+   "label": "Czech Republic",
+   "qid": "Q213",
+   "fame": 0.737,
+   "also": [
+    "Czechia",
+    "Česká republika",
+    "CZE",
+    "CZR",
+    "the Czech Republic"
+   ]
+  },
+  {
+   "label": "Poland",
+   "qid": "Q36",
+   "fame": 0.737,
+   "also": [
+    "POL",
+    "Polonia",
+    "Republic of Poland"
+   ]
+  },
+  {
+   "label": "Norway",
+   "qid": "Q20",
+   "fame": 0.734,
+   "also": [
+    "NOR",
+    "Kingdom of Norway"
+   ]
+  },
+  {
+   "label": "Belarus",
+   "qid": "Q184",
+   "fame": 0.732,
+   "also": [
+    "White Russia",
+    "Belorussia",
+    "Bielaruś",
+    "Bielorussia",
+    "Byeloruss",
+    "Byelorussia",
+    "Republic of Belarus",
+    "Respublika Belarus'",
+    "Respublika Bielaruś",
+    "White Ruthenia",
+    "BLR"
+   ]
+  },
+  {
+   "label": "Kosovo",
+   "qid": "Q1246",
+   "fame": 0.732,
+   "also": [
+    "KOS",
+    "Kosova",
+    "Republic of Kosovo",
+    "RKS",
+    "XKX"
+   ]
+  },
+  {
+   "label": "Sweden",
+   "qid": "Q34",
+   "fame": 0.732,
+   "also": [
+    "Kingdom of Sweden",
+    "Swedish Kingdom",
+    "SWE"
+   ]
+  },
+  {
+   "label": "Cyprus",
+   "qid": "Q229",
+   "fame": 0.731,
+   "also": [
+    "Republic of Cyprus",
+    "Greek Administration of Southern Cyprus",
+    "Greek Cypriot State",
+    "CYP"
+   ]
+  },
+  {
+   "label": "Iceland",
+   "qid": "Q189",
+   "fame": 0.731,
+   "also": [
+    "Ysland",
+    "Icelandic republic",
+    "Isl.",
+    "Republic of Iceland"
+   ]
+  },
+  {
+   "label": "Switzerland",
+   "qid": "Q39",
+   "fame": 0.73,
+   "also": [
+    "CHE",
+    "Swiss",
+    "Confoederatio Helvetica",
+    "SUI",
+    "Swiss Confederation",
+    "Schweizerische Eidgenossenschaft"
+   ]
+  },
+  {
+   "label": "Ukraine",
+   "qid": "Q212",
+   "fame": 0.728,
+   "also": [
+    "Ukrainia",
+    "Ukraina",
+    "Ukr."
+   ]
+  },
+  {
+   "label": "Malta",
+   "qid": "Q233",
+   "fame": 0.727,
+   "also": [
+    "Republic of Malta",
+    "MLT"
+   ]
+  },
+  {
+   "label": "Georgia",
+   "qid": "Q230",
+   "fame": 0.726,
+   "also": [
+    "Sakartvelo",
+    "Republic of Georgia",
+    "GEO"
+   ]
+  },
+  {
+   "label": "Liechtenstein",
+   "qid": "Q347",
+   "fame": 0.719,
+   "also": [
+    "Principality of Liechtenstein",
+    "LIE"
+   ]
+  },
+  {
+   "label": "Serbia",
+   "qid": "Q403",
+   "fame": 0.719,
+   "also": [
+    "Republic of Serbia"
+   ]
+  },
+  {
+   "label": "Albania",
+   "qid": "Q222",
+   "fame": 0.718,
+   "also": [
+    "Republic of Albania",
+    "People's Republic of Albania",
+    "People's Socialist Republic of Albania",
+    "Republika Popullore e Shqiperise",
+    "Republika Popullore Socialiste e Shqiperise",
+    "Shqipërisë",
+    "ALB",
+    "Republika e Shqipërisë"
+   ]
+  },
+  {
+   "label": "Monaco",
+   "qid": "Q235",
+   "fame": 0.717,
+   "also": [
+    "MCO",
+    "Fort-Hercule",
+    "Mùnegu",
+    "Principality and Diocese of Monaco",
+    "Principality of Monaco",
+    "Principato di Monaco",
+    "Principatu de Mu̍negu",
+    "Principauté de Monaco",
+    "MON"
+   ]
+  },
+  {
+   "label": "Croatia",
+   "qid": "Q224",
+   "fame": 0.713,
+   "also": [
+    "CRO",
+    "HRV",
+    "Republic of Croatia"
+   ]
+  },
+  {
+   "label": "Greece",
+   "qid": "Q41",
+   "fame": 0.713,
+   "also": [
+    "GRC",
+    "GRE",
+    "Hellas",
+    "Hellenic Republic",
+    "Ellada",
+    "Greek Republic"
+   ]
+  },
+  {
+   "label": "Bosnia and Herzegovina",
+   "qid": "Q225",
+   "fame": 0.708,
+   "also": [
+    "Bosnia and Hercegovina",
+    "Bosnia-Herzegovina"
+   ]
+  },
+  {
+   "label": "Montenegro",
+   "qid": "Q236",
+   "fame": 0.708,
+   "also": [
+    "Republic of Montenegro",
+    "MNE"
+   ]
+  },
+  {
+   "label": "Ireland",
+   "qid": "Q27",
+   "fame": 0.707,
+   "also": [
+    "Republic of Ireland",
+    "Southern Ireland",
+    "IRL",
+    "Irish Republic",
+    "Hibernia",
+    "Irlandia",
+    "Irlanda",
+    "Éire"
+   ]
+  },
+  {
+   "label": "Belgium",
+   "qid": "Q31",
+   "fame": 0.706,
+   "also": [
+    "Kingdom of Belgium",
+    "BEL"
+   ]
+  },
+  {
+   "label": "Lithuania",
+   "qid": "Q37",
+   "fame": 0.706,
+   "also": [
+    "Republic of Lithuania",
+    "LTU",
+    "Lietuvos Respublika"
+   ]
+  },
+  {
+   "label": "Austria",
+   "qid": "Q40",
+   "fame": 0.703,
+   "also": [
+    "Republic of Austria",
+    "AUT"
+   ]
+  },
+  {
+   "label": "Finland",
+   "qid": "Q33",
+   "fame": 0.703,
+   "also": [
+    "Suomi",
+    "Finnia",
+    "Land of Thousand Lakes",
+    "Republic of Finland",
+    "Republiken Finland",
+    "Suomen tasavalta",
+    "FIN"
+   ]
+  },
+  {
+   "label": "Romania",
+   "qid": "Q218",
+   "fame": 0.703,
+   "also": [
+    "ROU",
+    "Roumania",
+    "Rumania"
+   ]
+  },
+  {
+   "label": "Slovenia",
+   "qid": "Q215",
+   "fame": 0.703,
+   "also": [
+    "Republic of Slovenia",
+    "slo",
+    "SVN",
+    "Slovenija",
+    "Republika Slovenija"
+   ]
+  },
+  {
+   "label": "Luxembourg",
+   "qid": "Q32",
+   "fame": 0.697,
+   "also": [
+    "Grand Duchy of Luxembourg",
+    "LUX",
+    "Luxemburg"
+   ]
+  },
+  {
+   "label": "Andorra",
+   "qid": "Q228",
+   "fame": 0.691,
+   "also": [
+    "AND",
+    "Principality of Andorra",
+    "Principality of the Valleys of Andorra"
+   ]
+  },
+  {
+   "label": "Bulgaria",
+   "qid": "Q219",
+   "fame": 0.689,
+   "also": [
+    "BGR",
+    "BUL",
+    "Bulgarian Republic",
+    "Republic of Bulgaria"
+   ]
+  },
+  {
+   "label": "Slovakia",
+   "qid": "Q214",
+   "fame": 0.689,
+   "also": [
+    "SVK",
+    "Slovak Republic"
+   ]
+  },
+  {
+   "label": "North Macedonia",
+   "qid": "Q221",
+   "fame": 0.687,
+   "also": [
+    "Macedonia",
+    "Makedonia",
+    "MKD",
+    "Former Yugoslav Republic of Macedonia",
+    "FYR Macedonia",
+    "Republic of Macedonia",
+    "Republic of North Macedonia"
+   ]
+  },
+  {
+   "label": "Estonia",
+   "qid": "Q191",
+   "fame": 0.686,
+   "also": [
+    "Estland",
+    "Eesti Vabariik",
+    "Republic of Estonia",
+    "EST",
+    "Eesti"
+   ]
+  },
+  {
+   "label": "Hungary",
+   "qid": "Q28",
+   "fame": 0.685,
+   "also": [
+    "HUN"
+   ]
+  },
+  {
+   "label": "Latvia",
+   "qid": "Q211",
+   "fame": 0.684,
+   "also": [
+    "LAT",
+    "Latveja",
+    "Latvejas Republika",
+    "Latvian Republic",
+    "Latvija",
+    "Latvijas Republika",
+    "Leţmо̄",
+    "Leţmо̄ Vabāmо̄",
+    "Republic of Latvia",
+    "LVA"
+   ]
+  },
+  {
+   "label": "Moldova",
+   "qid": "Q217",
+   "fame": 0.676,
+   "also": [
+    "Moldavia",
+    "Republic of Moldova",
+    "Republica Moldova",
+    "MDA"
+   ]
+  },
+  {
+   "label": "San Marino",
+   "qid": "Q238",
+   "fame": 0.676,
+   "also": [
+    "Most Serene Republic of San Marino",
+    "SMR"
+   ]
+  },
+  {
+   "label": "Vatican City",
+   "qid": "Q237",
+   "fame": 0.674,
+   "also": [
+    "Vatican",
+    "The Vatican",
+    "Holy See",
+    "Papal State",
+    "Città del Vaticano",
+    "State of Vatican City",
+    "Stato della Città del Vaticano",
+    "Status Civitatis Vaticanae",
+    "Vatican City State",
+    "vat",
+    "Civitas Vaticana"
+   ]
+  },
+  {
+   "label": "Kingdom of the Netherlands",
+   "qid": "Q29999",
+   "fame": 0.592,
+   "also": [
+    "Netherlands",
+    "the Netherlands",
+    "Nederlanden",
+    "NED",
+    "Kingdom of Netherlands",
+    "Koninkrijk der Nederlanden",
+    "Reino Hulandes"
+   ]
+  },
+  {
+   "label": "Kingdom of Denmark",
+   "qid": "Q756617",
+   "fame": 0.544,
+   "also": [
+    "Danish Realm",
+    "Denmark",
+    "Danmarkar Ríki",
+    "Danmarkip Naalagaaffik",
+    "Danmarks Rige",
+    "Kongeriget Danmark",
+    "Kongsríki Danmarkar",
+    "Kunngeqarfik Danmarki",
+    "Realm of Denmark",
+    "Danish Commonwealth"
+   ]
+  }
+ ]
+}

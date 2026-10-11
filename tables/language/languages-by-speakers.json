@@ -1,0 +1,337 @@
+{
+ "id": "table.language.languages-by-speakers",
+ "kind": "table",
+ "title": "Languages by native speakers",
+ "genre": "society",
+ "category": "language",
+ "topic": "languages",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?speakers WHERE { { SELECT ?item (MAX(?n) AS ?speakers) WHERE { { SELECT ?item (MAX(?when) AS ?latest) WHERE { VALUES ?cls { wd:Q34770 wd:Q1288568 wd:Q33742 } ?item wdt:P31 ?cls ; p:P1098 ?s . ?s pq:P518 wd:Q36870 ; pq:P585 ?when ; wikibase:rank ?r . FILTER(?r != wikibase:DeprecatedRank) } GROUP BY ?item } ?item p:P1098 ?s2 . ?s2 pq:P518 wd:Q36870 ; pq:P585 ?latest ; ps:P1098 ?n ; wikibase:rank ?r2 . FILTER(?r2 != wikibase:DeprecatedRank) } GROUP BY ?item HAVING(MAX(?n) >= 30000000) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-24T23:05:25.576Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-24T23:05:25.576Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "native_speakers_millions",
+   "label": "Native speakers",
+   "unit": "million",
+   "type": "number"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "language",
+  "many": "languages",
+  "hookAsk": "Which language {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "native_speakers_millions": {
+    "role": "measure",
+    "compare": "Which has more native speakers",
+    "display": "millions"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "English",
+   "qid": "Q1860",
+   "fame": 0.758,
+   "native_speakers_millions": 379,
+   "description": "West Germanic language",
+   "hook": "is the main working language of aviation, business and the internet worldwide",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Spanish",
+   "qid": "Q1321",
+   "fame": 0.657,
+   "native_speakers_millions": 485,
+   "description": "Romance language originating in the Iberian Peninsula",
+   "hook": "is the official language across most of Latin America as well as Spain",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Japanese",
+   "qid": "Q5287",
+   "fame": 0.656,
+   "native_speakers_millions": 128,
+   "description": "language spoken in East Asia",
+   "hook": "is written using characters borrowed from Chinese alongside two native syllabaries",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "French",
+   "qid": "Q150",
+   "fame": 0.647,
+   "native_speakers_millions": 77,
+   "description": "Romance language",
+   "hook": "is famous as the language of romance, fashion and diplomacy",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Tamil",
+   "qid": "Q5885",
+   "fame": 0.635,
+   "native_speakers_millions": 75,
+   "description": "Dravidian language native to South India and Sri Lanka",
+   "hook": "is one of the world's oldest languages still in everyday use, spoken across southern India and Sri Lanka",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "Russian",
+   "qid": "Q7737",
+   "fame": 0.625,
+   "native_speakers_millions": 154,
+   "description": "East Slavic language",
+   "hook": "is written in the Cyrillic alphabet and spoken across much of Eastern Europe and Central Asia",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Urdu",
+   "qid": "Q1617",
+   "fame": 0.605,
+   "native_speakers_millions": 69,
+   "description": "Indo-Aryan language spoken in South Asia",
+   "hook": "is closely related to another major South Asian language but written in a Perso-Arabic script",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Arabic",
+   "qid": "Q13955",
+   "fame": 0.601,
+   "native_speakers_millions": 295,
+   "description": "Semitic language and lingua franca of the Arab world",
+   "hook": "is the language of the Quran and is spoken across the Middle East and North Africa",
+   "known": 0.8,
+   "kind": "major"
+  },
+  {
+   "label": "Telugu",
+   "qid": "Q8097",
+   "fame": 0.601,
+   "native_speakers_millions": 82,
+   "description": "Dravidian language native to South India",
+   "hook": "is a classical South Indian language known for its smooth, rounded-looking script",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Bangla",
+   "qid": "Q9610",
+   "fame": 0.593,
+   "native_speakers_millions": 300,
+   "description": "Indo-Aryan language mostly spoken in Bangladesh and India",
+   "hook": "is the national language of Bangladesh and is also widely spoken in eastern India",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "Malayalam",
+   "qid": "Q36236",
+   "fame": 0.59,
+   "native_speakers_millions": 37,
+   "description": "Dravidian language of Southern India",
+   "hook": "is famous for its own name being spelled the same forwards and backwards",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Italian",
+   "qid": "Q652",
+   "fame": 0.585,
+   "native_speakers_millions": 65,
+   "description": "Romance language",
+   "hook": "is the language most associated with opera and classical music terminology",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Portuguese",
+   "qid": "Q5146",
+   "fame": 0.583,
+   "native_speakers_millions": 254,
+   "description": "Western Romance language",
+   "hook": "is the official language of both a European country and the largest country in South America",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Mandarin",
+   "qid": "Q9192",
+   "fame": 0.573,
+   "native_speakers_millions": 918,
+   "description": "major branch of Chinese spoken across most of northern and southwestern China",
+   "hook": "is written with thousands of characters and uses tones to tell similar-sounding words apart",
+   "known": 0.95,
+   "kind": "major"
+  },
+  {
+   "label": "Indonesian",
+   "qid": "Q9240",
+   "fame": 0.566,
+   "native_speakers_millions": 44,
+   "description": "official language of Indonesia",
+   "hook": "grew out of a simplified trade tongue that became the unifying language of a vast archipelago nation",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "Pashto",
+   "qid": "Q58680",
+   "fame": 0.555,
+   "native_speakers_millions": 39,
+   "description": "Indo-Aryan language of Afghanistan and Pakistan",
+   "hook": "is spoken by ethnic groups on both sides of the border between two Central and South Asian countries",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Vietnamese",
+   "qid": "Q9199",
+   "fame": 0.553,
+   "native_speakers_millions": 76,
+   "description": "Austroasiatic language originating in Vietnam",
+   "hook": "is written with the Latin alphabet plus added tone marks, unlike most of its neighboring languages",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "Burmese",
+   "qid": "Q9228",
+   "fame": 0.549,
+   "native_speakers_millions": 33,
+   "description": "Sino-Tibetan language of Myanmar",
+   "hook": "is written in a script made up almost entirely of circular-looking letters",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Punjabi",
+   "qid": "Q58635",
+   "fame": 0.548,
+   "native_speakers_millions": 125,
+   "description": "Indo-Aryan language spoken in the Punjab region of Pakistan and India",
+   "hook": "is a tonal language spoken across a fertile region split between two South Asian countries",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Polish",
+   "qid": "Q809",
+   "fame": 0.543,
+   "native_speakers_millions": 40,
+   "description": "West Slavic language",
+   "hook": "is a West Slavic language known for its consonant clusters and complex grammar",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Marathi",
+   "qid": "Q1571",
+   "fame": 0.534,
+   "native_speakers_millions": 83,
+   "description": "Indo-Aryan language",
+   "hook": "is spoken across a large western Indian state that includes the country's financial capital city",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Gujarati",
+   "qid": "Q5137",
+   "fame": 0.517,
+   "native_speakers_millions": 56,
+   "description": "Indo-Aryan language that is spoken in the Indian state of Gujarat",
+   "hook": "is spoken in a western Indian state known for its business community and vegetarian cuisine",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Yoruba",
+   "qid": "Q34311",
+   "fame": 0.492,
+   "native_speakers_millions": 38,
+   "description": "Niger-Congo language spoken in West Africa",
+   "hook": "is spoken by tens of millions across a West African nation and its diaspora, with a rich oral poetry tradition",
+   "known": 0.2,
+   "kind": "african"
+  },
+  {
+   "label": "Javanese",
+   "qid": "Q33549",
+   "fame": 0.489,
+   "native_speakers_millions": 68,
+   "description": "Austronesian language",
+   "hook": "is spoken by the largest ethnic group on one of the most populous islands in the world",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "Odia",
+   "qid": "Q33810",
+   "fame": 0.486,
+   "native_speakers_millions": 35,
+   "description": "Indo-Aryan language",
+   "hook": "is the official language of a state on India's eastern coast",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Bhojpuri",
+   "qid": "Q33268",
+   "fame": 0.481,
+   "native_speakers_millions": 52,
+   "description": "Indo-Aryan language native to India and Nepal",
+   "hook": "travelled from India to the Caribbean and Pacific with indentured labourers and is still spoken there today",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Hakka Chinese",
+   "qid": "Q33375",
+   "fame": 0.456,
+   "native_speakers_millions": 48,
+   "description": "primary branch of Chinese originating in Southern China",
+   "hook": "is named after a word meaning 'guest', since its speakers migrated far from their original homeland",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Yue Chinese",
+   "qid": "Q7033959",
+   "fame": 0.451,
+   "native_speakers_millions": 73,
+   "description": "primary branch of Chinese spoken in southern China",
+   "hook": "is the branch spoken in Hong Kong and much of the south, historically known abroad as Cantonese",
+   "known": 0.4,
+   "kind": "asian"
+  }
+ ]
+}

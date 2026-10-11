@@ -1,0 +1,108 @@
+{
+ "id": "list.earth-and-space.moons-of-jupiter",
+ "kind": "list",
+ "title": "Moons of Jupiter",
+ "genre": "science-math-tech",
+ "category": "earth-and-space",
+ "topic": "space",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { ?item wdt:P31 wd:Q61702557 . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T04:45:51.512Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T04:45:51.512Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "moon",
+  "many": "moons",
+  "columns": {}
+ },
+ "impostors": [
+  {
+   "label": "Titan",
+   "qid": "Q2565",
+   "why": "not a member: it orbits Saturn, not Jupiter"
+  },
+  {
+   "label": "Enceladus",
+   "qid": "Q3303",
+   "why": "not a member: it orbits Saturn, not Jupiter"
+  },
+  {
+   "label": "Iapetus",
+   "qid": "Q17958",
+   "why": "not a member: it orbits Saturn, not Jupiter"
+  },
+  {
+   "label": "Hyperion",
+   "qid": "Q15037",
+   "why": "not a member: it orbits Saturn, not Jupiter"
+  },
+  {
+   "label": "Mimas",
+   "qid": "Q15034",
+   "why": "not a member: it orbits Saturn, not Jupiter"
+  },
+  {
+   "label": "Rhea",
+   "qid": "Q15050",
+   "why": "not a member: it orbits Saturn, not Jupiter"
+  },
+  {
+   "label": "Tethys",
+   "qid": "Q15047",
+   "why": "not a member: it orbits Saturn, not Jupiter"
+  },
+  {
+   "label": "Phoebe",
+   "qid": "Q17975",
+   "why": "not a member: it orbits Saturn, not Jupiter"
+  }
+ ],
+ "rows": [
+  {
+   "label": "Ganymede",
+   "qid": "Q3169",
+   "fame": 0.571,
+   "description": "Galilean moon of Jupiter"
+  },
+  {
+   "label": "Europa",
+   "qid": "Q3143",
+   "fame": 0.563,
+   "description": "Galilean moon of Jupiter"
+  },
+  {
+   "label": "Io",
+   "qid": "Q3123",
+   "fame": 0.555,
+   "description": "innermost of the 4 Galilean moons of Jupiter"
+  },
+  {
+   "label": "Callisto",
+   "qid": "Q3134",
+   "fame": 0.486,
+   "description": "second largest Galilean moon of Jupiter and third largest in the solar system"
+  },
+  {
+   "label": "Amalthea",
+   "qid": "Q3257",
+   "fame": 0.453,
+   "description": "moon of Jupiter"
+  }
+ ]
+}

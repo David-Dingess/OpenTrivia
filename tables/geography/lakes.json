@@ -1,0 +1,451 @@
+{
+ "id": "table.geography.lakes",
+ "kind": "table",
+ "title": "Famous lakes",
+ "genre": "society",
+ "category": "geography",
+ "topic": "rivers-and-lakes",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Hand-built, checked row by row against English Wikipedia",
+  "method": null,
+  "attribution": null,
+  "fetchedAt": "2026-09-27T01:57:57.448Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T02:53:52.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "countries",
+   "label": "Countries",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "area_km2",
+   "label": "Area",
+   "unit": "km²",
+   "type": "number"
+  },
+  {
+   "key": "depth_m",
+   "label": "Maximum depth",
+   "unit": "m",
+   "type": "number",
+   "scale": "height-m"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "lake",
+  "many": "lakes",
+  "hookAsk": "Which lake {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each lake to its country.",
+    "odd": "Three of these lakes are in {value}. Which one isn't?",
+    "all": "Tap all {n} lakes in {value}."
+   },
+   "area_km2": {
+    "role": "measure",
+    "display": "km2"
+   },
+   "depth_m": {
+    "role": "measure",
+    "display": "m"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Lake Ontario",
+   "qid": "Q1062",
+   "fame": 0.902,
+   "country": null,
+   "countries": "Canada, United States",
+   "area_km2": 18960,
+   "depth_m": 244,
+   "description": "one of the Great Lakes in North America",
+   "hook": "catches the flow of a thundering waterfall shared by two countries",
+   "known": 0.4,
+   "kind": "great lake"
+  },
+  {
+   "label": "Lake Baikal",
+   "qid": "Q5513",
+   "fame": 0.669,
+   "country": "Russia",
+   "countries": null,
+   "area_km2": 31722,
+   "depth_m": 1642,
+   "description": "freshwater rift lake in southern Siberia, Russia; the greatest mountain lake in Asia and the most voluminous freshwater lake in the world",
+   "hook": "plunges deeper than anywhere else on Earth's surface",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Caspian Sea",
+   "qid": "Q5484",
+   "fame": 0.637,
+   "country": null,
+   "countries": "Azerbaijan, Iran, Kazakhstan, Russia, Turkmenistan",
+   "area_km2": 389000,
+   "depth_m": 1025,
+   "description": "largest landlocked salt lake, located between Europe and Asia",
+   "hook": "ranks as the largest lake on Earth, though its waters are salty",
+   "known": 0.8,
+   "kind": "salt"
+  },
+  {
+   "label": "Lake Superior",
+   "qid": "Q1066",
+   "fame": 0.628,
+   "country": null,
+   "countries": "Canada, United States",
+   "area_km2": 82100,
+   "depth_m": 406,
+   "description": "largest of the Great Lakes of North America",
+   "hook": "holds more fresh water than its four neighboring giants put together",
+   "known": 0.6,
+   "kind": "great lake"
+  },
+  {
+   "label": "Lake Erie",
+   "qid": "Q5492",
+   "fame": 0.596,
+   "country": null,
+   "countries": "Canada, United States",
+   "area_km2": 25744,
+   "depth_m": 64,
+   "description": "one of the Great Lakes in North America",
+   "hook": "freezes over more completely most winters than its deeper neighbors",
+   "known": 0.2,
+   "kind": "great lake"
+  },
+  {
+   "label": "Dead Sea",
+   "qid": "Q23883",
+   "fame": 0.585,
+   "country": null,
+   "countries": null,
+   "area_km2": 605,
+   "depth_m": null,
+   "description": "lake with no outflow (sea) in Western Asia",
+   "hook": "gets so salty that swimmers float on the surface without trying",
+   "known": 0.6,
+   "kind": "salt"
+  },
+  {
+   "label": "Lake Michigan",
+   "qid": "Q1169",
+   "fame": 0.583,
+   "country": "United States",
+   "countries": null,
+   "area_km2": 58030,
+   "depth_m": 281,
+   "description": "one of the Great Lakes of North America",
+   "hook": "sits completely inside a single country, unlike its neighboring giants",
+   "known": 0.4,
+   "kind": "great lake"
+  },
+  {
+   "label": "Lake Tahoe",
+   "qid": "Q169962",
+   "fame": 0.581,
+   "country": "United States",
+   "countries": null,
+   "area_km2": 490,
+   "depth_m": 501,
+   "description": "lake in California and Nevada, United States",
+   "hook": "draws visitors to its clear blue alpine waters ringed by ski resorts",
+   "known": 0.6,
+   "kind": "american"
+  },
+  {
+   "label": "Lake Como",
+   "qid": "Q15523",
+   "fame": 0.56,
+   "country": "Italy",
+   "countries": null,
+   "area_km2": 146,
+   "depth_m": 425,
+   "description": "lake in Lombardy, Italy",
+   "hook": "attracts celebrities to elegant villas amid the Alps",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "Lake Titicaca",
+   "qid": "Q35342",
+   "fame": 0.556,
+   "country": null,
+   "countries": "Bolivia, Peru",
+   "area_km2": 8372,
+   "depth_m": 281,
+   "description": "Alpine lake in Peru and Bolivia",
+   "hook": "hosts floating islands woven entirely from reeds by local islanders",
+   "known": 0.4,
+   "kind": "american"
+  },
+  {
+   "label": "Lake Huron",
+   "qid": "Q1383",
+   "fame": 0.555,
+   "country": null,
+   "countries": "Canada, United States",
+   "area_km2": 59600,
+   "depth_m": 229,
+   "description": "one of the Great Lakes of North America",
+   "hook": "has a shoreline longer than any of its sister waters, dotted with islands",
+   "known": 0.2,
+   "kind": "great lake"
+  },
+  {
+   "label": "Lake Victoria",
+   "qid": "Q5505",
+   "fame": 0.54,
+   "country": null,
+   "countries": "Kenya, Tanzania, Uganda",
+   "area_km2": 59947,
+   "depth_m": 81,
+   "description": "lake in east-central Africa",
+   "hook": "feeds the source of one of the world's longest rivers",
+   "known": 0.4,
+   "kind": "african"
+  },
+  {
+   "label": "Crater Lake",
+   "qid": "Q329266",
+   "fame": 0.536,
+   "country": "United States",
+   "countries": null,
+   "area_km2": 53,
+   "depth_m": 594,
+   "description": "caldera lake in south-central Oregon and main feature of Crater Lake National Park",
+   "hook": "has no rivers flowing in or out, fed only by rain and snow",
+   "known": 0.4,
+   "kind": "american"
+  },
+  {
+   "label": "Lake Maggiore",
+   "qid": "Q14379",
+   "fame": 0.535,
+   "country": "Italy",
+   "countries": "Italy, Switzerland",
+   "area_km2": 213,
+   "depth_m": 372,
+   "description": "lake in Italy and Switzerland",
+   "hook": "surrounds a cluster of small islands famous for ornate palace gardens",
+   "known": 0.2,
+   "kind": "european"
+  },
+  {
+   "label": "Loch Ness",
+   "qid": "Q49650",
+   "fame": 0.528,
+   "country": "Scotland",
+   "countries": null,
+   "area_km2": 56,
+   "depth_m": 230,
+   "description": "lake in Highland, Scotland, UK, outflows via Loch Dochfour to the River Ness and Caledonian Canal",
+   "hook": "hosts legends of a shy, elusive monster said to lurk in its murky depths",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "Lake Tanganyika",
+   "qid": "Q5511",
+   "fame": 0.513,
+   "country": null,
+   "countries": "Burundi, DR Congo, Tanzania, Zambia",
+   "area_km2": 32600,
+   "depth_m": 1470,
+   "description": "lake between Tanzania, DR Congo, Burundi and Zambia",
+   "hook": "stretches longer than any other freshwater body on Earth",
+   "known": 0.2,
+   "kind": "african"
+  },
+  {
+   "label": "Great Slave Lake",
+   "qid": "Q5539",
+   "fame": 0.508,
+   "country": "Canada",
+   "countries": null,
+   "area_km2": 27200,
+   "depth_m": 614,
+   "description": "lake in the Northwest Territories of Canada",
+   "hook": "freezes solid enough each winter for trucks to drive across on ice roads",
+   "known": 0.2,
+   "kind": "american"
+  },
+  {
+   "label": "Lake Toba",
+   "qid": "Q183360",
+   "fame": 0.506,
+   "country": "Indonesia",
+   "countries": null,
+   "area_km2": 1130,
+   "depth_m": 505,
+   "description": "volcanic crater lake located in North Sumatra, Indonesia",
+   "hook": "contains a large island born from one of history's biggest volcanic eruptions",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Lake Garda",
+   "qid": "Q6414",
+   "fame": 0.504,
+   "country": "Italy",
+   "countries": null,
+   "area_km2": 370,
+   "depth_m": 346,
+   "description": "lake in Italy",
+   "hook": "grows lemons along shores dotted with medieval castles",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "Lake Champlain",
+   "qid": "Q68467",
+   "fame": 0.481,
+   "country": "United States",
+   "countries": "Canada, United States",
+   "area_km2": 1269,
+   "depth_m": 122,
+   "description": "lake in New York, Vermont and Quebec",
+   "hook": "witnessed pivotal naval battles during a young nation's early wars",
+   "known": 0.2,
+   "kind": "american"
+  },
+  {
+   "label": "Lake Constance",
+   "qid": "Q4127",
+   "fame": 0.462,
+   "country": null,
+   "countries": "Austria, Germany, Switzerland",
+   "area_km2": 536,
+   "depth_m": 251,
+   "description": "lake in Germany, Switzerland and Austria",
+   "hook": "meets the borders of three countries at once",
+   "known": 0.2,
+   "kind": "european"
+  },
+  {
+   "label": "Lake Geneva",
+   "qid": "Q6403",
+   "fame": 0.461,
+   "country": "Switzerland",
+   "countries": "France, Switzerland",
+   "area_km2": 580,
+   "depth_m": 310,
+   "description": "lake in Switzerland and France",
+   "hook": "shoots a giant fountain jet into the air along its shoreline",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Lake Okeechobee",
+   "qid": "Q202905",
+   "fame": 0.46,
+   "country": "United States",
+   "countries": null,
+   "area_km2": 1890,
+   "depth_m": null,
+   "description": "freshwater lake in the state of Florida, USA",
+   "hook": "feeds fresh water south into the Everglades, keeping the wetlands alive",
+   "known": 0.2,
+   "kind": "american"
+  },
+  {
+   "label": "Great Bear Lake",
+   "qid": "Q5525",
+   "fame": 0.454,
+   "country": "Canada",
+   "countries": null,
+   "area_km2": 31153,
+   "depth_m": 446,
+   "description": "large glacial lake in the Northwest Territories, Canada",
+   "hook": "stays frozen for more than half the year and is prized for its exceptionally clear water",
+   "known": 0.2,
+   "kind": "american"
+  },
+  {
+   "label": "Issyk-Kul",
+   "qid": "Q42191",
+   "fame": 0.448,
+   "country": "Kyrgyzstan",
+   "countries": null,
+   "area_km2": 6236,
+   "depth_m": 668,
+   "description": "lake in Kyrgyzstan",
+   "hook": "stays unfrozen year-round despite sitting high in cold mountains",
+   "known": 0.05,
+   "kind": "asian"
+  },
+  {
+   "label": "Lake Bled",
+   "qid": "Q648902",
+   "fame": 0.444,
+   "country": "Slovenia",
+   "countries": null,
+   "area_km2": 1.45,
+   "depth_m": 31,
+   "description": "lake in Slovenia",
+   "hook": "centers on a tiny island church where visitors ring a wishing bell",
+   "known": 0.2,
+   "kind": "european"
+  },
+  {
+   "label": "Loch Lomond",
+   "qid": "Q208926",
+   "fame": 0.44,
+   "country": "Scotland",
+   "countries": null,
+   "area_km2": 71,
+   "depth_m": 190,
+   "description": "freshwater lake in Scotland, UK",
+   "hook": "inspired a famous folk song about high roads and low roads",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Lake Malawi",
+   "qid": "Q5532",
+   "fame": 0.419,
+   "country": "Malawi",
+   "countries": "Malawi, Mozambique, Tanzania",
+   "area_km2": 29600,
+   "depth_m": 706,
+   "description": "African Great Lake",
+   "hook": "shelters more fish species than almost any other body of water on Earth",
+   "known": 0.2,
+   "kind": "african"
+  }
+ ]
+}

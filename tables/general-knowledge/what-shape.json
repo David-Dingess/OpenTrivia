@@ -1,0 +1,311 @@
+{
+ "id": "table.general-knowledge.what-shape",
+ "kind": "table",
+ "title": "What shape? Famous things and their shape",
+ "genre": "general",
+ "category": "general-knowledge",
+ "topic": "what-shape",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?shapeLabel WHERE { VALUES (?item ?shapeLabel) { (wd:Q250429 \"octagon\") (wd:Q2722354 \"triangle\") (wd:Q47043 \"cube\") (wd:Q39671 \"circle\") (wd:Q10285 \"oval\") (wd:Q178114 \"obelisk\") (wd:Q123339 \"hexagon\") (wd:Q550147 \"hexagon\") (wd:Q215707 \"triangular prism\") (wd:Q528187 \"saddle\") (wd:Q2881344 \"oval\") (wd:Q2 \"oblate spheroid\") (wd:Q19907 \"sphere\") (wd:Q1192656 \"sphere\") (wd:Q810345 \"sphere\") (wd:Q159741 \"two stacked triangles\") (wd:Q124020 \"square\") (wd:Q809889 \"diamond\") (wd:Q71180315 \"pentagon\") (wd:Q7430 \"double helix\") (wd:Q321 \"spiral\") (wd:Q202570 \"circle\") (wd:Q173626 \"circle with a wedge missing\") (wd:Q1999118 \"triangle\") (wd:Q106187 \"hexagon\") (wd:Q45089 \"cube\") (wd:Q405 \"sphere\") (wd:Q525 \"sphere\") (wd:Q16629185 \"disc\") (wd:Q110079 \"square\") (wd:Q2290113 \"square\") (wd:Q177 \"circle\") (wd:Q272502 \"torus\") (wd:Q192783 \"torus\") (wd:Q160525 \"knot\") (wd:Q878120 \"circle\") (wd:Q39054 \"cylinder\") (wd:Q308841 \"spiral\") (wd:Q34439356 \"spiral\") (wd:Q42861 \"diamond\") (wd:Q650736 \"sphere\") (wd:Q13360264 \"circle\") (wd:Q47883 \"rectangle\") (wd:Q1058210 \"rectangle\") (wd:Q741118 \"rectangle\") (wd:Q8524 \"rectangle\") (wd:Q1052 \"arc\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T08:27:19.139Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T12:44:57.861Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "shape",
+   "label": "Shape",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "thing",
+  "many": "things",
+  "capitalise": true,
+  "theLabels": [
+   "Earth",
+   "Sun",
+   "Milky Way",
+   "Colosseum",
+   "Leaning Tower of Pisa",
+   "Washington Monument",
+   "Giant's Causeway",
+   "Death Star",
+   "United States one-dollar bill"
+  ],
+  "columns": {
+   "shape": {
+    "role": "link",
+    "pick": "What shape is {label}?",
+    "statement": "The shape of {label} is best described as {value}.",
+    "match": "Match each thing to its shape.",
+    "odd": "Three of these share this shape: {value}. Which one doesn't?",
+    "all": "Tap all {n} things with this shape: {value}.",
+    "reverse": "Which of these has this shape: {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Earth",
+   "qid": "Q2",
+   "fame": 0.761,
+   "shape": "oblate spheroid",
+   "kind": "space",
+   "description": "third planet from the Sun in the Solar System",
+   "hook": "is the only world known to harbor life and is mostly covered by ocean",
+   "known": 0.95
+  },
+  {
+   "label": "Sun",
+   "qid": "Q525",
+   "fame": 0.723,
+   "shape": "sphere",
+   "kind": "space",
+   "description": "star at the centre of the Solar System",
+   "hook": "is the hot ball of plasma that gives our planets light and warmth",
+   "known": 0.95
+  },
+  {
+   "label": "Colosseum",
+   "qid": "Q10285",
+   "fame": 0.666,
+   "shape": "oval",
+   "kind": "monument",
+   "description": "ancient Roman amphitheatre, a landmark of Rome, Italy",
+   "hook": "is the largest ancient amphitheatre ever built, begun under Emperor Vespasian",
+   "known": 0.95
+  },
+  {
+   "label": "Milky Way",
+   "qid": "Q321",
+   "fame": 0.665,
+   "shape": "spiral",
+   "kind": "space",
+   "description": "galaxy containing our Solar System",
+   "hook": "is the home galaxy whose hazy band of light stretches across the night sky",
+   "known": 0.95
+  },
+  {
+   "label": "Stonehenge",
+   "qid": "Q39671",
+   "fame": 0.652,
+   "shape": "circle",
+   "kind": "monument",
+   "description": "Neolithic henge monument in Amesbury, Wiltshire, England, UK",
+   "hook": "is a prehistoric ring of giant standing stones on an English plain",
+   "known": 0.95
+  },
+  {
+   "label": "Leaning Tower of Pisa",
+   "qid": "Q39054",
+   "fame": 0.601,
+   "shape": "cylinder",
+   "kind": "monument",
+   "description": "cathedral bell tower in Pisa, Italy",
+   "hook": "is a famous cathedral bell structure that tilts nearly four degrees on an unstable foundation",
+   "known": 0.95
+  },
+  {
+   "label": "Rubik's Cube",
+   "qid": "Q47043",
+   "fame": 0.569,
+   "shape": "cube",
+   "kind": "toy",
+   "description": "3-D combination puzzle with many different permutations",
+   "hook": "is a twisty puzzle invented by a Hungarian architecture professor in the 1970s",
+   "known": 0.95
+  },
+  {
+   "label": "rainbow",
+   "qid": "Q1052",
+   "fame": 0.564,
+   "shape": "arc",
+   "kind": "nature",
+   "description": "meteorological phenomenon caused by reflection, refraction and dispersion of light in water droplets",
+   "hook": "is a multicoloured band of light that appears when sunshine meets rain",
+   "known": 0.95
+  },
+  {
+   "label": "Washington Monument",
+   "qid": "Q178114",
+   "fame": 0.56,
+   "shape": "obelisk",
+   "kind": "monument",
+   "description": "obelisk on the National Mall in Washington, D.C.",
+   "hook": "is a tall stone landmark honoring the first U.S. president",
+   "known": 0.95
+  },
+  {
+   "label": "Giant's Causeway",
+   "qid": "Q106187",
+   "fame": 0.543,
+   "shape": "hexagon",
+   "kind": "nature",
+   "description": "rock formation on the Antrim coast of Northern Ireland",
+   "hook": "is a coastal landmark of about 40,000 interlocking basalt columns left by an ancient eruption",
+   "known": 0.6
+  },
+  {
+   "label": "snail",
+   "qid": "Q308841",
+   "fame": 0.532,
+   "shape": "spiral",
+   "kind": "nature",
+   "description": "common name for shelled Gastropods",
+   "hook": "is a slow-moving mollusc that carries a coiled shell on its back",
+   "known": 0.6
+  },
+  {
+   "label": "bagel",
+   "qid": "Q272502",
+   "fame": 0.527,
+   "shape": "torus",
+   "kind": "food",
+   "description": "torus-shaped bread product",
+   "hook": "is a dense, chewy bread roll that is boiled briefly before it is baked",
+   "known": 0.8
+  },
+  {
+   "label": "doughnut",
+   "qid": "Q192783",
+   "fame": 0.524,
+   "shape": "torus",
+   "kind": "food",
+   "description": "dessert food",
+   "hook": "is a sweet fried or baked treat made from leavened dough, found in bakeries everywhere",
+   "known": 0.95
+  },
+  {
+   "label": "pretzel",
+   "qid": "Q160525",
+   "fame": 0.518,
+   "shape": "knot",
+   "kind": "food",
+   "description": "German baked pastry shaped into a knot",
+   "hook": "is a baked, salted pastry twisted from a long strip of dough, popular as a snack",
+   "known": 0.6
+  },
+  {
+   "label": "Pringles",
+   "qid": "Q528187",
+   "fame": 0.515,
+   "shape": "saddle",
+   "kind": "food",
+   "description": "brand of potato-based chips",
+   "hook": "is a stackable potato-based snack chip invented by Procter & Gamble",
+   "known": 0.5
+  },
+  {
+   "label": "dice",
+   "qid": "Q45089",
+   "fame": 0.514,
+   "shape": "cube",
+   "kind": "game",
+   "description": "throwable object (usually but not necessarily a cube) with multiple resting positions, used for generating random integers or outcomes",
+   "hook": "are small tossed objects with marked sides, used for chance in board games and tabletop adventures",
+   "known": 0.95
+  },
+  {
+   "label": "Toblerone",
+   "qid": "Q215707",
+   "fame": 0.509,
+   "shape": "triangular prism",
+   "kind": "food",
+   "description": "brand of chocolate confection",
+   "hook": "is a Swiss chocolate brand, long made only in Bern",
+   "known": 0.6
+  },
+  {
+   "label": "flag of Nepal",
+   "qid": "Q159741",
+   "fame": 0.508,
+   "shape": "two stacked triangles",
+   "kind": "flag",
+   "description": "national flag of the Federal Democratic Republic of Nepal",
+   "hook": "is the only national banner that is taller than it is wide, built from two pennants",
+   "known": 0.6
+  },
+  {
+   "label": "United States one-dollar bill",
+   "qid": "Q1058210",
+   "fame": 0.503,
+   "shape": "rectangle",
+   "kind": "object",
+   "description": "current denomination of United States currency",
+   "hook": "is the lowest-value paper money in the U.S., showing the first president",
+   "known": 0.95
+  },
+  {
+   "label": "association football pitch",
+   "qid": "Q8524",
+   "fame": 0.502,
+   "shape": "rectangle",
+   "kind": "sport",
+   "description": "rectangular area where association football is played",
+   "hook": "is the playing surface defined by Law 1 of the Laws of the Game",
+   "known": 0.8
+  },
+  {
+   "label": "phonograph record",
+   "qid": "Q16629185",
+   "fame": 0.491,
+   "shape": "disc",
+   "kind": "object",
+   "description": "analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove",
+   "hook": "is the analog music medium with a groove that a needle follows to play sound",
+   "known": 0.4
+  },
+  {
+   "label": "flag of Switzerland",
+   "qid": "Q124020",
+   "fame": 0.466,
+   "shape": "square",
+   "kind": "flag",
+   "description": "national flag of the Swiss Confederation",
+   "hook": "is a white cross on a red field, unusual for not being oblong",
+   "known": 0.95
+  },
+  {
+   "label": "basketball",
+   "qid": "Q810345",
+   "fame": 0.463,
+   "shape": "sphere",
+   "kind": "sport",
+   "description": "inflated ball used for basketball games",
+   "hook": "is the inflated ball bounced, passed and shot through hoops",
+   "known": 0.95
+  },
+  {
+   "label": "Death Star",
+   "qid": "Q19907",
+   "fame": 0.453,
+   "shape": "sphere",
+   "kind": "fiction",
+   "description": "fictional space station used as a superweapon by the Galactic Empire in the Star Wars universe",
+   "hook": "is the moon-sized space station and planet-destroying superweapon of an evil Empire",
+   "known": 0.6
+  }
+ ]
+}

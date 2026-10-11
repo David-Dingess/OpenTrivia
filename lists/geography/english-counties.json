@@ -1,0 +1,401 @@
+{
+ "id": "list.geography.english-counties",
+ "title": "Ceremonial counties of England",
+ "prompt": "Name a county in England",
+ "genre": "society",
+ "category": "geography",
+ "topic": "borders-and-maps",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q180673 . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-10-04T09:08:32.633Z"
+ },
+ "rows": [
+  {
+   "label": "City of London",
+   "qid": "Q23311",
+   "fame": 0.609,
+   "also": [
+    "the City of London",
+    "Square Mile",
+    "the City",
+    "City and County of the City of London"
+   ]
+  },
+  {
+   "label": "Greater London",
+   "qid": "Q23306",
+   "fame": 0.585,
+   "also": []
+  },
+  {
+   "label": "Isle of Wight",
+   "qid": "Q9679",
+   "fame": 0.584,
+   "also": [
+    "Wit",
+    "Wight",
+    "Wight Island",
+    "Iktis",
+    "Island of Wight",
+    "Ouiktis",
+    "Wight I.",
+    "Wiht"
+   ]
+  },
+  {
+   "label": "Lancashire",
+   "qid": "Q23077",
+   "fame": 0.583,
+   "also": [
+    "Lancs",
+    "Lancastershire"
+   ]
+  },
+  {
+   "label": "Surrey",
+   "qid": "Q23276",
+   "fame": 0.582,
+   "also": []
+  },
+  {
+   "label": "Essex",
+   "qid": "Q23240",
+   "fame": 0.575,
+   "also": []
+  },
+  {
+   "label": "Devon",
+   "qid": "Q23156",
+   "fame": 0.559,
+   "also": [
+    "Devonshire"
+   ]
+  },
+  {
+   "label": "Kent",
+   "qid": "Q23298",
+   "fame": 0.558,
+   "also": [
+    "County of Kent"
+   ]
+  },
+  {
+   "label": "Hampshire",
+   "qid": "Q23204",
+   "fame": 0.557,
+   "also": [
+    "Hants",
+    "Southamptonshire"
+   ]
+  },
+  {
+   "label": "Hertfordshire",
+   "qid": "Q3410",
+   "fame": 0.555,
+   "also": [
+    "Herts"
+   ]
+  },
+  {
+   "label": "Greater Manchester",
+   "qid": "Q23099",
+   "fame": 0.547,
+   "also": []
+  },
+  {
+   "label": "Somerset",
+   "qid": "Q23157",
+   "fame": 0.543,
+   "also": [
+    "SOM",
+    "Somersetshire"
+   ]
+  },
+  {
+   "label": "Gloucestershire",
+   "qid": "Q23165",
+   "fame": 0.538,
+   "also": []
+  },
+  {
+   "label": "Cumbria",
+   "qid": "Q23066",
+   "fame": 0.536,
+   "also": []
+  },
+  {
+   "label": "Norfolk",
+   "qid": "Q23109",
+   "fame": 0.534,
+   "also": []
+  },
+  {
+   "label": "Northumberland",
+   "qid": "Q23079",
+   "fame": 0.532,
+   "also": []
+  },
+  {
+   "label": "Cheshire",
+   "qid": "Q23064",
+   "fame": 0.524,
+   "also": [
+    "Ches.",
+    "County of Chester",
+    "County Palatine of Chester",
+    "Chestershire"
+   ]
+  },
+  {
+   "label": "Berkshire",
+   "qid": "Q23220",
+   "fame": 0.523,
+   "also": [
+    "Berks",
+    "Royal County of Berkshire"
+   ]
+  },
+  {
+   "label": "Buckinghamshire",
+   "qid": "Q23229",
+   "fame": 0.522,
+   "also": [
+    "Bucks"
+   ]
+  },
+  {
+   "label": "Suffolk",
+   "qid": "Q23111",
+   "fame": 0.521,
+   "also": [
+    "SFK"
+   ]
+  },
+  {
+   "label": "Dorset",
+   "qid": "Q23159",
+   "fame": 0.52,
+   "also": [
+    "Dorsetshire"
+   ]
+  },
+  {
+   "label": "Wiltshire",
+   "qid": "Q23183",
+   "fame": 0.518,
+   "also": [
+    "WIL",
+    "Wilts",
+    "County of Wilts",
+    "County of Wiltshire"
+   ]
+  },
+  {
+   "label": "Derbyshire",
+   "qid": "Q23098",
+   "fame": 0.516,
+   "also": []
+  },
+  {
+   "label": "Oxfordshire",
+   "qid": "Q23169",
+   "fame": 0.514,
+   "also": [
+    "County of Oxford",
+    "Oxon."
+   ]
+  },
+  {
+   "label": "Merseyside",
+   "qid": "Q23100",
+   "fame": 0.509,
+   "also": []
+  },
+  {
+   "label": "West Yorkshire",
+   "qid": "Q23083",
+   "fame": 0.507,
+   "also": []
+  },
+  {
+   "label": "Lincolnshire",
+   "qid": "Q23090",
+   "fame": 0.504,
+   "also": [
+    "Lincoln",
+    "County of Lincoln",
+    "Lincs"
+   ]
+  },
+  {
+   "label": "County Durham",
+   "qid": "Q23082",
+   "fame": 0.5,
+   "also": [
+    "Durham",
+    "Durham County"
+   ]
+  },
+  {
+   "label": "North Yorkshire",
+   "qid": "Q23086",
+   "fame": 0.499,
+   "also": []
+  },
+  {
+   "label": "Shropshire",
+   "qid": "Q23103",
+   "fame": 0.498,
+   "also": [
+    "Salop"
+   ]
+  },
+  {
+   "label": "Worcestershire",
+   "qid": "Q23135",
+   "fame": 0.492,
+   "also": [
+    "Wigorn",
+    "Worcs"
+   ]
+  },
+  {
+   "label": "Staffordshire",
+   "qid": "Q23105",
+   "fame": 0.491,
+   "also": [
+    "Staffs"
+   ]
+  },
+  {
+   "label": "Warwickshire",
+   "qid": "Q23140",
+   "fame": 0.489,
+   "also": []
+  },
+  {
+   "label": "West Midlands",
+   "qid": "Q23124",
+   "fame": 0.485,
+   "also": [
+    "West Midlands county"
+   ]
+  },
+  {
+   "label": "Tyne and Wear",
+   "qid": "Q23080",
+   "fame": 0.484,
+   "also": []
+  },
+  {
+   "label": "Nottinghamshire",
+   "qid": "Q23092",
+   "fame": 0.475,
+   "also": [
+    "Notts"
+   ]
+  },
+  {
+   "label": "Northamptonshire",
+   "qid": "Q23115",
+   "fame": 0.473,
+   "also": []
+  },
+  {
+   "label": "Rutland",
+   "qid": "Q23107",
+   "fame": 0.468,
+   "also": []
+  },
+  {
+   "label": "West Sussex",
+   "qid": "Q23287",
+   "fame": 0.467,
+   "also": []
+  },
+  {
+   "label": "Herefordshire",
+   "qid": "Q23129",
+   "fame": 0.466,
+   "also": [
+    "County of Herefordshire"
+   ]
+  },
+  {
+   "label": "East Sussex",
+   "qid": "Q23293",
+   "fame": 0.464,
+   "also": []
+  },
+  {
+   "label": "Cambridgeshire",
+   "qid": "Q23112",
+   "fame": 0.462,
+   "also": [
+    "Cambs.",
+    "County of Cambridge"
+   ]
+  },
+  {
+   "label": "Leicestershire",
+   "qid": "Q23106",
+   "fame": 0.459,
+   "also": []
+  },
+  {
+   "label": "Bedfordshire",
+   "qid": "Q23143",
+   "fame": 0.453,
+   "also": [
+    "Beds."
+   ]
+  },
+  {
+   "label": "East Riding of Yorkshire",
+   "qid": "Q23088",
+   "fame": 0.45,
+   "also": [
+    "East Yorkshire"
+   ]
+  },
+  {
+   "label": "South Yorkshire",
+   "qid": "Q23095",
+   "fame": 0.448,
+   "also": []
+  },
+  {
+   "label": "County of London",
+   "qid": "Q1137312",
+   "fame": 0.331,
+   "also": []
+  },
+  {
+   "label": "Humberside",
+   "qid": "Q1636805",
+   "fame": 0.318,
+   "also": []
+  },
+  {
+   "label": "Avon",
+   "qid": "Q929902",
+   "fame": 0.292,
+   "also": []
+  },
+  {
+   "label": "City of Bristol",
+   "qid": "Q21693433",
+   "fame": 0.044,
+   "also": [
+    "Bristol",
+    "city and county of Bristol",
+    "County Borough of Bristol",
+    "county of Bristol",
+    "district of Bristol"
+   ]
+  }
+ ]
+}

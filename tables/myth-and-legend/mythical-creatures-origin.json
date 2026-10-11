@@ -1,0 +1,252 @@
+{
+ "id": "table.myth-and-legend.mythical-creatures-origin",
+ "kind": "table",
+ "title": "Mythical creatures and figures and the mythology they belong to",
+ "genre": "society",
+ "category": "myth-and-legend",
+ "topic": "mythology",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?traditionLabel WHERE { { SELECT ?item (SAMPLE(?tr) AS ?tradition) WHERE { VALUES ?item { wd:Q151480 wd:Q47534 wd:Q162797 wd:Q83496 wd:Q130223 wd:Q131087 wd:Q12581 wd:Q187002 wd:Q146313 wd:Q182560 wd:Q146104 wd:Q210053 wd:Q273112 wd:Q131483 wd:Q208010 wd:Q548119 wd:Q244392 wd:Q204608 wd:Q14138 wd:Q131135 wd:Q1125907 } ?item wdt:P361 ?tr . VALUES ?tr { wd:Q34726 wd:Q205740 wd:Q128285 wd:Q1471505 wd:Q1130378 wd:Q3039796 wd:Q5863468 wd:Q210677 wd:Q1829163 } } GROUP BY ?item HAVING(COUNT(DISTINCT ?tr) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 56",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T12:18:37.953Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T12:18:37.953Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "tradition",
+   "label": "Mythology",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "mythical figure",
+  "many": "mythical figures",
+  "theLabels": [
+   "banshee",
+   "valkyrie",
+   "griffin",
+   "qilin",
+   "sphinx",
+   "kelpie",
+   "leprechaun",
+   "troll",
+   "Jötnar"
+  ],
+  "hookAsk": "Which mythical figure {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "tradition": {
+    "role": "link",
+    "pick": "Which mythology does {label} belong to?",
+    "statement": "{label} belongs to {value}.",
+    "match": "Match each figure to its mythology.",
+    "odd": "Three of these belong to {value}. Which one doesn't?",
+    "all": "Tap all {n} figures that belong to {value}.",
+    "reverse": "Which of these belongs to {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Baba Yaga",
+   "qid": "Q187002",
+   "fame": 0.615,
+   "tradition": "Russian folklore",
+   "description": "mythological figure, fantasy character, witch",
+   "hook": "lives in a hut that stands on chicken legs and flies through the forest in a giant mortar and pestle",
+   "known": 0.2,
+   "kind": "slavic"
+  },
+  {
+   "label": "Anubis",
+   "qid": "Q47534",
+   "fame": 0.594,
+   "tradition": "Egyptian mythology",
+   "description": "Egyptian deity of mummification and the afterlife, usually depicted as a man with a canine head",
+   "hook": "guides the dead through the afterlife and is shown with a jackal's head",
+   "known": 0.6,
+   "kind": "egyptian"
+  },
+  {
+   "label": "Yggdrasil",
+   "qid": "Q131135",
+   "fame": 0.559,
+   "tradition": "Norse mythology",
+   "description": "immense mythical tree in Norse cosmology, connecting the Nine Worlds",
+   "hook": "connects nine worlds as the great tree at the center of the cosmos, with a serpent gnawing at its roots",
+   "known": 0.4,
+   "kind": "norse"
+  },
+  {
+   "label": "banshee",
+   "qid": "Q273112",
+   "fame": 0.556,
+   "tradition": "Irish mythology",
+   "description": "female spirit of death in Irish mythology",
+   "hook": "wails outside a house to warn that someone inside is about to die",
+   "known": 0.4,
+   "kind": "celtic"
+  },
+  {
+   "label": "Cerberus",
+   "qid": "Q83496",
+   "fame": 0.556,
+   "tradition": "Greek mythology",
+   "description": "three-headed dog that guards the underworld in Greek mythology",
+   "hook": "guards the gates of the underworld with three snarling heads so nothing can escape",
+   "known": 0.8,
+   "kind": "greek"
+  },
+  {
+   "label": "valkyrie",
+   "qid": "Q131087",
+   "fame": 0.556,
+   "tradition": "Norse mythology",
+   "description": "one of a host of female figures who decide which soldiers die in battle and which live",
+   "hook": "chooses which warriors die in battle and carries the bravest fallen to a great hall in the sky",
+   "known": 0.6,
+   "kind": "norse"
+  },
+  {
+   "label": "griffin",
+   "qid": "Q130223",
+   "fame": 0.55,
+   "tradition": "Greek mythology",
+   "description": "mythical creature with the body of a lion and head and wings of an eagle",
+   "hook": "has the body of a lion and the head and wings of an eagle, said to guard hidden treasure",
+   "known": 0.8,
+   "kind": "greek"
+  },
+  {
+   "label": "qilin",
+   "qid": "Q14138",
+   "fame": 0.542,
+   "tradition": "Chinese mythology",
+   "description": "mystical Chinese creature",
+   "hook": "appears only in times of peace and prosperity, blending the features of a dragon, deer, and ox",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "sphinx",
+   "qid": "Q151480",
+   "fame": 0.542,
+   "tradition": "Egyptian mythology",
+   "description": "mythological creature with the head of a human and the body of a lion",
+   "hook": "poses a riddle to travelers and devours anyone who cannot answer it",
+   "known": 0.6,
+   "kind": "egyptian"
+  },
+  {
+   "label": "Sekhmet",
+   "qid": "Q146104",
+   "fame": 0.539,
+   "tradition": "Egyptian mythology",
+   "description": "Egyptian deity",
+   "hook": "breathes fire and plague upon enemies but can also heal the sick, shown with a lioness's head",
+   "known": 0.4,
+   "kind": "egyptian"
+  },
+  {
+   "label": "Jötnar",
+   "qid": "Q210053",
+   "fame": 0.538,
+   "tradition": "Norse mythology",
+   "description": "race of beings in Germanic mythology",
+   "hook": "are giants who live apart from the gods and often clash with them in ancient tales",
+   "known": 0.4,
+   "kind": "norse"
+  },
+  {
+   "label": "Fenrir",
+   "qid": "Q182560",
+   "fame": 0.533,
+   "tradition": "Norse mythology",
+   "description": "monstrous wolf in Norse mythology",
+   "hook": "is a monstrous wolf bound by a magic chain until he breaks free at the end of the world",
+   "known": 0.4,
+   "kind": "norse"
+  },
+  {
+   "label": "Pegasus",
+   "qid": "Q162797",
+   "fame": 0.532,
+   "tradition": "Greek mythology",
+   "description": "mythological creature in Greek mythology",
+   "hook": "is a winged horse that sprang from a slain monster's blood and carries heroes through the sky",
+   "known": 0.8,
+   "kind": "greek"
+  },
+  {
+   "label": "kelpie",
+   "qid": "Q1125907",
+   "fame": 0.516,
+   "tradition": "Scottish mythology",
+   "description": "mythical Scottish shape-shifting water horse",
+   "hook": "lurks in lochs as a water horse and drags unwary riders who climb on its back beneath the surface",
+   "known": 0.2,
+   "kind": "celtic"
+  },
+  {
+   "label": "leprechaun",
+   "qid": "Q244392",
+   "fame": 0.516,
+   "tradition": "Irish mythology",
+   "description": "Irish legendary creature",
+   "hook": "hides a pot of gold and must grant three wishes to anyone who catches him and holds on tight",
+   "known": 0.4,
+   "kind": "celtic"
+  },
+  {
+   "label": "troll",
+   "qid": "Q12581",
+   "fame": 0.499,
+   "tradition": "Nordic folklore",
+   "description": "supernatural being in Norse mythology and Scandinavian folklore",
+   "hook": "lives under bridges or deep in the mountains and turns to stone if caught in sunlight",
+   "known": 0.4,
+   "kind": "norse"
+  },
+  {
+   "label": "Sobek",
+   "qid": "Q146313",
+   "fame": 0.479,
+   "tradition": "Egyptian mythology",
+   "description": "Egyptian crocodile deity",
+   "hook": "is shown with a crocodile's head and was honored to calm the dangers of the river",
+   "known": 0.4,
+   "kind": "egyptian"
+  },
+  {
+   "label": "Simurgh",
+   "qid": "Q548119",
+   "fame": 0.457,
+   "tradition": "Persian mythology",
+   "description": "mythical bird in Iranian mythology and literature",
+   "hook": "is an ancient bird so old it has watched the world end and begin again three times over",
+   "known": 0.2,
+   "kind": "asian"
+  }
+ ]
+}

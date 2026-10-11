@@ -1,0 +1,235 @@
+{
+ "id": "table.oddities.odd-sports-country",
+ "kind": "table",
+ "title": "Odd sports",
+ "genre": "general",
+ "category": "oddities",
+ "topic": "odd-sports",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { VALUES ?item { wd:Q866224 wd:Q1582389 wd:Q120931 wd:Q1193361 wd:Q40561 wd:Q19578052 wd:Q213711 wd:Q204632 wd:Q159452 wd:Q189317 wd:Q483693 wd:Q752190 wd:Q170931 wd:Q136851 wd:Q1134144 wd:Q1134392 wd:Q2040849 } ?item wdt:P495 ?c ; wikibase:sitelinks ?sl . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T04:50:54.244Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T04:50:54.244Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country of origin",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "sport",
+  "many": "sports",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country did {label} come from?",
+    "statement": "{label} began in {value}.",
+    "match": "Match each unusual sport to the country it came from.",
+    "odd": "Three of these sports began in {value}. Which one did not?",
+    "all": "Tap all {n} sports that began in {value}.",
+    "reverse": "Which of these sports began in {value}?"
+   }
+  },
+  "exclude": [
+   {
+    "qid": "Q1193361",
+    "why": "jai alai: Spain vs the Basque Country is disputed"
+   }
+  ]
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "pickleball",
+   "qid": "Q866224",
+   "fame": 0.651,
+   "country": "United States",
+   "description": "paddle sport combining elements of tennis, badminton, and table tennis",
+   "hook": "is played with solid paddles and a perforated plastic ball over a low net, and is booming with retirees",
+   "known": 0.4,
+   "kind": "paddle sport"
+  },
+  {
+   "label": "padel",
+   "qid": "Q1582389",
+   "fame": 0.602,
+   "country": "Mexico",
+   "description": "racket sport that combines tennis and squash",
+   "hook": null,
+   "known": 0.2,
+   "kind": "paddle sport"
+  },
+  {
+   "label": "Muay Thai",
+   "qid": "Q120931",
+   "fame": 0.576,
+   "country": "Thailand",
+   "description": "combat sport and martial art that uses stand-up striking along with various clinching techniques",
+   "hook": "is the \"art of eight limbs\", a striking sport using fists, elbows, knees and shins",
+   "known": 0.6,
+   "kind": "martial art"
+  },
+  {
+   "label": "jai alai",
+   "qid": "Q1193361",
+   "fame": 0.566,
+   "country": "Spain",
+   "description": "type of sport",
+   "hook": null,
+   "known": 0.15,
+   "kind": "ball sport"
+  },
+  {
+   "label": "sumo",
+   "qid": "Q40561",
+   "fame": 0.54,
+   "country": "Japan",
+   "description": "Japanese form of full-contact wrestling",
+   "hook": "is a wrestling sport where huge rikishi try to push each other out of a clay ring",
+   "known": 0.8,
+   "kind": "wrestling"
+  },
+  {
+   "label": "teqball",
+   "qid": "Q19578052",
+   "fame": 0.534,
+   "country": "Hungary",
+   "description": "ball sport using a curved table combining elements of sepak takraw and table tennis",
+   "hook": null,
+   "known": 0.05,
+   "kind": "paddle sport"
+  },
+  {
+   "label": "hurling",
+   "qid": "Q213711",
+   "fame": 0.526,
+   "country": "Ireland",
+   "description": "outdoor team game",
+   "hook": null,
+   "known": 0.3,
+   "kind": "team sport"
+  },
+  {
+   "label": "Gaelic football",
+   "qid": "Q204632",
+   "fame": 0.525,
+   "country": "Ireland",
+   "description": "Irish team sport, form of football",
+   "hook": null,
+   "known": 0.3,
+   "kind": "team sport"
+  },
+  {
+   "label": "capoeira",
+   "qid": "Q159452",
+   "fame": 0.518,
+   "country": "Brazil",
+   "description": "Brazilian martial art that combines elements of dance fists kicks and music",
+   "hook": "is a martial art disguised as dance, with acrobatic kicks performed to music in a circle of players",
+   "known": 0.5,
+   "kind": "martial art"
+  },
+  {
+   "label": "pétanque",
+   "qid": "Q189317",
+   "fame": 0.5,
+   "country": "France",
+   "description": "boules' sport game",
+   "hook": null,
+   "known": 0.35,
+   "kind": "ball sport"
+  },
+  {
+   "label": "parkour",
+   "qid": "Q483693",
+   "fame": 0.485,
+   "country": "France",
+   "description": "urban athletic holistic training discipline",
+   "hook": "is a discipline of running, vaulting and climbing over urban obstacles using only your body",
+   "known": 0.5,
+   "kind": "street discipline"
+  },
+  {
+   "label": "arnis",
+   "qid": "Q752190",
+   "fame": 0.474,
+   "country": "Philippines",
+   "description": "national sport and martial art of the Philippines",
+   "hook": null,
+   "known": 0.15,
+   "kind": "martial art"
+  },
+  {
+   "label": "kendo",
+   "qid": "Q170931",
+   "fame": 0.473,
+   "country": "Japan",
+   "description": "modern Japanese martial art",
+   "hook": "is a martial art where fighters in armor strike each other with bamboo swords",
+   "known": 0.45,
+   "kind": "martial art"
+  },
+  {
+   "label": "curling",
+   "qid": "Q136851",
+   "fame": 0.466,
+   "country": "Scotland",
+   "description": "winter team sport played on ice",
+   "hook": "is a winter sport where players slide heavy granite stones across ice while teammates sweep in front",
+   "known": 0.6,
+   "kind": "winter sport"
+  },
+  {
+   "label": "cornhole",
+   "qid": "Q1134144",
+   "fame": 0.464,
+   "country": "United States",
+   "description": "lawn game in which players take turns throwing bags of corn (or bean bags)",
+   "hook": "is a tailgate lawn game where bean bags are tossed at an angled board with a hole",
+   "known": 0.4,
+   "kind": "lawn game"
+  },
+  {
+   "label": "Lethwei",
+   "qid": "Q1134392",
+   "fame": 0.463,
+   "country": "Myanmar",
+   "description": "unarmed Burmese martial art",
+   "hook": null,
+   "known": 0.05,
+   "kind": "martial art"
+  },
+  {
+   "label": "pencak silat",
+   "qid": "Q2040849",
+   "fame": 0.455,
+   "country": "Indonesia",
+   "description": "Indonesian martial arts",
+   "hook": null,
+   "known": 0.2,
+   "kind": "martial art"
+  }
+ ]
+}

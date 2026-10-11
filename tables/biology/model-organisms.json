@@ -1,0 +1,169 @@
+{
+ "id": "table.biology.model-organisms",
+ "kind": "table",
+ "title": "Model organisms used in genetics research",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "genetics",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { VALUES ?item { wd:Q11575 wd:Q780 wd:Q79803 wd:Q25419 wd:Q184224 wd:Q22718 wd:Q156606 wd:Q719725 wd:Q130888 wd:Q158695 wd:Q169444 wd:Q91703 wd:Q654718 wd:Q83310 wd:Q25237 wd:Q181095 wd:Q144 wd:Q332874 wd:Q133459 } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 37",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T01:33:26.414Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T01:33:26.414Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "kind",
+   "label": "Kind",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "organism",
+  "many": "organisms",
+  "capitalise": true,
+  "hookAsk": "Which organism {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "kind": {
+    "role": "link",
+    "pick": "What kind of organism is {label}?",
+    "statement": "{label} is a kind of {value}.",
+    "match": "Match each organism to its kind.",
+    "odd": "Three of these are {value}s. Which one isn't?",
+    "all": "Tap all {n} {value}s."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "dog",
+   "qid": "Q144",
+   "fame": 0.717,
+   "kind": "mammal",
+   "description": "domesticated mammal of the family Canidae",
+   "hook": "is called man's best friend and was the first animal humans domesticated",
+   "known": 0.8
+  },
+  {
+   "label": "axolotl",
+   "qid": "Q22718",
+   "fame": 0.692,
+   "kind": "amphibian",
+   "description": "species of salamander",
+   "hook": "is a Mexican salamander famous for regrowing lost limbs and keeping its larval gills for life",
+   "known": 0.4
+  },
+  {
+   "label": "chicken",
+   "qid": "Q780",
+   "fame": 0.629,
+   "kind": "bird",
+   "description": "domesticated bird (specifically a red junglefowl) kept by humans primarily as a food source",
+   "hook": "is the farmyard bird kept worldwide for its eggs and meat, and is descended from a jungle bird of Asia",
+   "known": 0.95
+  },
+  {
+   "label": "maize",
+   "qid": "Q11575",
+   "fame": 0.609,
+   "kind": "plant",
+   "description": "species of grass cultivated as a food crop",
+   "hook": "is the tall cereal crop that gives us corn on the cob, popcorn and tortillas",
+   "known": 0.8
+  },
+  {
+   "label": "guinea pig",
+   "qid": "Q79803",
+   "fame": 0.594,
+   "kind": "mammal",
+   "description": "domesticated rodent from South America",
+   "hook": "is a South American rodent kept as a popular pet and long used in laboratory experiments",
+   "known": 0.95
+  },
+  {
+   "label": "Drosophila melanogaster",
+   "qid": "Q130888",
+   "fame": 0.553,
+   "kind": "insect",
+   "description": "species of fly",
+   "hook": "is the tiny fruit fly that geneticists have used for over a century to study heredity",
+   "known": 0.2
+  },
+  {
+   "label": "Escherichia coli",
+   "qid": "Q25419",
+   "fame": 0.543,
+   "kind": "bacterium",
+   "description": "enteric, rod shaped, gram-negative bacterium",
+   "hook": "is a gut bacterium studied in countless labs, and some strains cause food poisoning",
+   "known": 0.6
+  },
+  {
+   "label": "brown rat",
+   "qid": "Q184224",
+   "fame": 0.504,
+   "kind": "mammal",
+   "description": "species of mammal",
+   "hook": "is the common sewer-dwelling rodent that spread across the world in ships, and is a lab staple",
+   "known": 0.6
+  },
+  {
+   "label": "house mouse",
+   "qid": "Q83310",
+   "fame": 0.503,
+   "kind": "mammal",
+   "description": "species of mammal",
+   "hook": "is the small whiskered rodent that lives in our homes and is the most common lab animal for medical research",
+   "known": 0.6
+  },
+  {
+   "label": "Pisum sativum",
+   "qid": "Q25237",
+   "fame": 0.498,
+   "kind": "plant",
+   "description": "species of plant with edible seeds",
+   "hook": "is the green legume whose seeds Gregor Mendel crossed to discover the laws of inheritance",
+   "known": 0.4
+  },
+  {
+   "label": "rhesus macaque",
+   "qid": "Q156606",
+   "fame": 0.479,
+   "kind": "mammal",
+   "description": "species of Old World monkey",
+   "hook": "is a monkey that lent its name to a blood-group factor and has been widely used in medical research",
+   "known": 0.4
+  },
+  {
+   "label": "Saccharomyces cerevisiae",
+   "qid": "Q719725",
+   "fame": 0.468,
+   "kind": "fungus",
+   "description": "species of fungus",
+   "hook": "is the microscopic fungus used for baking bread and brewing beer",
+   "known": 0.05
+  }
+ ]
+}

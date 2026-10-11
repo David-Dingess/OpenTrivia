@@ -1,0 +1,85 @@
+{
+ "id": "table.games.board-games",
+ "kind": "table",
+ "title": "Board games by publication year",
+ "genre": "games-sports",
+ "category": "games",
+ "topic": "board-games",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?published WHERE { { SELECT ?item ?sitelinks (GROUP_CONCAT(CONCAT(STR(?publishedT), \"|\", STR(?publishedP)); separator=\";\") AS ?published) WHERE { ?item wdt:P31 wd:Q131436 ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 10) { ?item p:P577 ?publishedSt . ?publishedSt a wikibase:BestRank ; psv:P577 [ wikibase:timeValue ?publishedT ; wikibase:timePrecision ?publishedP ] . } UNION { ?item p:P571 ?publishedSt . ?publishedSt a wikibase:BestRank ; psv:P571 [ wikibase:timeValue ?publishedT ; wikibase:timePrecision ?publishedP ] . } } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 200 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-24T23:05:53.544Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-24T23:05:53.544Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "published",
+   "label": "First published",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "item",
+  "many": "items",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Monopoly",
+   "qid": "Q17243",
+   "fame": 0.587,
+   "published": 1935,
+   "description": "economics-themed board game"
+  },
+  {
+   "label": "Cluedo",
+   "qid": "Q17245",
+   "fame": 0.532,
+   "published": 1949,
+   "description": "1949 board game"
+  },
+  {
+   "label": "The Settlers of Catan",
+   "qid": "Q17271",
+   "fame": 0.512,
+   "published": 1995,
+   "description": "board game (1995)"
+  },
+  {
+   "label": "Ludo",
+   "qid": "Q1030283",
+   "fame": 0.504,
+   "published": 1896,
+   "description": "board game"
+  },
+  {
+   "label": "Risk",
+   "qid": "Q12541",
+   "fame": 0.469,
+   "published": 1957,
+   "description": "board game"
+  },
+  {
+   "label": "Royal Game of Ur",
+   "qid": "Q937315",
+   "fame": 0.456,
+   "published": -2599,
+   "description": "ancient Mesopotamian board game"
+  }
+ ]
+}

@@ -1,0 +1,231 @@
+{
+ "id": "table.getting-around.car-brand-parent",
+ "kind": "table",
+ "title": "Car brands and the company that owns them",
+ "genre": "daily-life",
+ "category": "getting-around",
+ "topic": "cars",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?parentLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?h) AS ?parent) (COUNT(DISTINCT ?h) AS ?n) WHERE { ?item wdt:P31/wdt:P279* wd:Q786820 ; wdt:P127|wdt:P749 ?h ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 30) FILTER NOT EXISTS { ?item wdt:P576 ?end } } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 250 } hint:Prior hint:runFirst true . FILTER(?n = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T21:49:03.431Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T21:49:03.431Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "parent",
+   "label": "Owned by",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "car brand",
+  "many": "car brands",
+  "hookAsk": "Which car brand {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "minFame": 0.45,
+  "columns": {
+   "parent": {
+    "role": "link",
+    "pick": "Which company owns {label}?",
+    "statement": "{label} is owned by {value}.",
+    "match": "Match each car brand to the company that owns it.",
+    "odd": "Three of these car brands are owned by {value}. Which one isn't?",
+    "all": "Tap all {n} car brands owned by {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Porsche",
+   "qid": "Q40993",
+   "fame": 0.604,
+   "parent": "Volkswagen Group",
+   "description": "German automobile manufacturer specializing in high-performance sports cars, SUVs and sedans, owned by Volkswagen AG",
+   "hook": "builds the rear-engined 911 sports car with a crest featuring a prancing horse",
+   "known": 0.4,
+   "kind": "performance"
+  },
+  {
+   "label": "Audi AG",
+   "qid": "Q23317",
+   "fame": 0.583,
+   "parent": "Volkswagen Group",
+   "description": "German automotive manufacturing subsidiary of Volkswagen Group",
+   "hook": "uses a badge of four interlocking rings and the slogan \"Vorsprung durch Technik\"",
+   "known": 0.6,
+   "kind": "luxury"
+  },
+  {
+   "label": "Lexus",
+   "qid": "Q35919",
+   "fame": 0.574,
+   "parent": "Toyota",
+   "description": "Japanese brand of luxury vehicle owned by Toyota Motor Corporation",
+   "hook": "was launched as a luxury line to take on European rivals in the American market",
+   "known": 0.6,
+   "kind": "luxury"
+  },
+  {
+   "label": "Chevrolet",
+   "qid": "Q29570",
+   "fame": 0.568,
+   "parent": "General Motors",
+   "description": "American automobile division of GM",
+   "hook": "sells the Corvette and Camaro and wears a golden bowtie badge",
+   "known": 0.8,
+   "kind": "mainstream"
+  },
+  {
+   "label": "Cadillac",
+   "qid": "Q27436",
+   "fame": 0.562,
+   "parent": "General Motors",
+   "description": "division of General Motors",
+   "hook": "is the classic American luxury badge, famed for 1950s tail fins and the Escalade SUV",
+   "known": 0.8,
+   "kind": "luxury"
+  },
+  {
+   "label": "Opel",
+   "qid": "Q40966",
+   "fame": 0.548,
+   "parent": "Stellantis",
+   "description": "German automobile manufacturer, subsidiary of Stellantis",
+   "hook": "wears a lightning bolt badge and built the Corsa and Astra for European drivers",
+   "known": 0.2,
+   "kind": "mainstream"
+  },
+  {
+   "label": "Bentley",
+   "qid": "Q27224",
+   "fame": 0.547,
+   "parent": "Volkswagen Group",
+   "description": "British automotive brand manufacturer",
+   "hook": "makes hand-built luxury grand tourers with a winged \"B\" badge",
+   "known": 0.2,
+   "kind": "luxury"
+  },
+  {
+   "label": "Rolls-Royce Motor Cars",
+   "qid": "Q234803",
+   "fame": 0.545,
+   "parent": "BMW",
+   "description": "English car company (1998-present)",
+   "hook": "makes ultra-luxury limousines topped with the Spirit of Ecstasy hood ornament",
+   "known": 0.4,
+   "kind": "luxury"
+  },
+  {
+   "label": "Maserati",
+   "qid": "Q35962",
+   "fame": 0.544,
+   "parent": "Stellantis",
+   "description": "Italian luxury car manufacturer",
+   "hook": "puts a trident badge on Italian luxury sports cars like the GranTurismo",
+   "known": 0.2,
+   "kind": "performance"
+  },
+  {
+   "label": "Citroën",
+   "qid": "Q6746",
+   "fame": 0.536,
+   "parent": "Stellantis",
+   "description": "French automotive manufacturer",
+   "hook": "uses a double-chevron badge and built the quirky 2CV \"Deux Chevaux\"",
+   "known": 0.2,
+   "kind": "mainstream"
+  },
+  {
+   "label": "Buick",
+   "qid": "Q27415",
+   "fame": 0.535,
+   "parent": "General Motors",
+   "description": "luxury car brand of General Motors",
+   "hook": "sells mid-size luxury SUVs with a tri-shield badge and is especially popular in China",
+   "known": 0.6,
+   "kind": "luxury"
+  },
+  {
+   "label": "Vauxhall",
+   "qid": "Q59187",
+   "fame": 0.534,
+   "parent": "Stellantis",
+   "description": "English car company, subsidiary of Stellantis",
+   "hook": "sells the Corsa and Astra in Britain under a griffin badge",
+   "known": 0.05,
+   "kind": "mainstream"
+  },
+  {
+   "label": "SEAT",
+   "qid": "Q188217",
+   "fame": 0.529,
+   "parent": "Volkswagen Group",
+   "description": "Spanish automotive company based in Martorell, subsidiary of Volkswagen Group",
+   "hook": "is Spain's best-known car marque, with the Ibiza and Leon hatchbacks",
+   "known": 0.2,
+   "kind": "mainstream"
+  },
+  {
+   "label": "Lincoln Motor Company",
+   "qid": "Q216796",
+   "fame": 0.509,
+   "parent": "Ford Motor Company",
+   "description": "luxury division of Ford Motor Company",
+   "hook": "is the luxury badge behind the Continental and the Navigator SUV, long used for presidential limousines",
+   "known": 0.6,
+   "kind": "luxury"
+  },
+  {
+   "label": "Alpine",
+   "qid": "Q26944",
+   "fame": 0.492,
+   "parent": "Renault",
+   "description": "French car manufacturer",
+   "hook": "is a French sports car marque famous for its blue rally cars and the lightweight A110",
+   "known": 0.2,
+   "kind": "performance"
+  },
+  {
+   "label": "Daihatsu",
+   "qid": "Q27511",
+   "fame": 0.467,
+   "parent": "Toyota",
+   "description": "Japanese automobile manufacturer",
+   "hook": "specializes in tiny, fuel-sipping kei cars for Japan's crowded streets",
+   "known": 0.4,
+   "kind": "mainstream"
+  },
+  {
+   "label": "DS Automobiles",
+   "qid": "Q16040593",
+   "fame": 0.466,
+   "parent": "Stellantis",
+   "description": "French premium car marque of Stellantis",
+   "hook": "is a French premium marque, spun off as an upscale line with avant-garde styling",
+   "known": 0.05,
+   "kind": "luxury"
+  }
+ ]
+}

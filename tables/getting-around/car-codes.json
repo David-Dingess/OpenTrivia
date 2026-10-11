@@ -1,0 +1,1288 @@
+{
+ "id": "table.getting-around.car-codes",
+ "kind": "table",
+ "title": "International car codes",
+ "genre": "daily-life",
+ "category": "getting-around",
+ "topic": "cars",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?code) (COUNT(DISTINCT ?c) AS ?n) WHERE { ?item wdt:P31 wd:Q3624078 . FILTER NOT EXISTS { ?item wdt:P31 wd:Q3024240 } FILTER NOT EXISTS { ?item wdt:P576 [] } ?item wdt:P395 ?c ; wikibase:sitelinks ?sitelinks . } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 250 } hint:Prior hint:runFirst true . FILTER(?n = 1) BIND(STR(?code) AS ?itemLabel) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item rdfs:label ?countryLabel . FILTER(LANG(?countryLabel)=\"en\") } ORDER BY DESC(?sitelinks) LIMIT 164",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T12:08:48.849Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T12:08:48.849Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "car code",
+  "many": "car codes",
+  "minFame": 0.45,
+  "columns": {
+   "country": {
+    "role": "code",
+    "pick": "Which country uses the international car code {label}?",
+    "statement": "The international car code {label} belongs to {value}.",
+    "match": "Match each international car code to its country.",
+    "reverse": "Which international car code does {value} use?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "USA",
+   "qid": "Q30",
+   "fame": 0.933,
+   "country": "United States",
+   "description": "country located primarily in North America",
+   "hook": "is home to Hollywood, the Grand Canyon and fifty states under one flag",
+   "known": 0.95,
+   "kind": "major country"
+  },
+  {
+   "label": "UK",
+   "qid": "Q145",
+   "fame": 0.832,
+   "country": "United Kingdom",
+   "description": "island country in north-west Europe",
+   "hook": "is home to Big Ben, Buckingham Palace and a monarch who reigns over four nations",
+   "known": 0.95,
+   "kind": "major country"
+  },
+  {
+   "label": "IND",
+   "qid": "Q668",
+   "fame": 0.814,
+   "country": "India",
+   "description": "country in South Asia",
+   "hook": "is the birthplace of Bollywood and home to the Taj Mahal and over a billion people",
+   "known": 0.8,
+   "kind": "major country"
+  },
+  {
+   "label": "IL",
+   "qid": "Q801",
+   "fame": 0.792,
+   "country": "Israel",
+   "description": "country in West Asia",
+   "hook": "is a small Middle Eastern nation whose cities include Tel Aviv and Jerusalem",
+   "known": 0.8,
+   "kind": "developed nation"
+  },
+  {
+   "label": "CDN",
+   "qid": "Q16",
+   "fame": 0.791,
+   "country": "Canada",
+   "description": "country in North America",
+   "hook": "is famous for maple syrup, hockey and the world's second-largest land area",
+   "known": 0.95,
+   "kind": "major country"
+  },
+  {
+   "label": "RUS",
+   "qid": "Q159",
+   "fame": 0.789,
+   "country": "Russia",
+   "description": "country in Eastern Europe and Northern Asia, the largest in the world by area",
+   "hook": "is the largest nation on Earth, home to the Kremlin and the Trans-Siberian Railway",
+   "known": 0.95,
+   "kind": "major country"
+  },
+  {
+   "label": "D",
+   "qid": "Q183",
+   "fame": 0.788,
+   "country": "Germany",
+   "description": "country in Central Europe",
+   "hook": "is known for Oktoberfest, the autobahn and a famously strong car industry",
+   "known": 0.95,
+   "kind": "major country"
+  },
+  {
+   "label": "AUS",
+   "qid": "Q408",
+   "fame": 0.786,
+   "country": "Australia",
+   "description": "country in Oceania",
+   "hook": "is a continent-sized nation known for kangaroos, koalas and the Sydney Opera House",
+   "known": 0.9,
+   "kind": "developed nation"
+  },
+  {
+   "label": "J",
+   "qid": "Q17",
+   "fame": 0.78,
+   "country": "Japan",
+   "description": "island country in East Asia",
+   "hook": "is the land of sushi, bullet trains, anime and Mount Fuji",
+   "known": 0.95,
+   "kind": "major country"
+  },
+  {
+   "label": "SGP",
+   "qid": "Q334",
+   "fame": 0.779,
+   "country": "Singapore",
+   "description": "sovereign island country and city-state in maritime Southeast Asia",
+   "hook": "is a tiny, spotless city-state famous for its Marina Bay Sands skyline and strict rules on chewing gum",
+   "known": 0.6,
+   "kind": "developed nation"
+  },
+  {
+   "label": "BR",
+   "qid": "Q155",
+   "fame": 0.775,
+   "country": "Brazil",
+   "description": "country in South America",
+   "hook": "is the home of Carnival in Rio, the Amazon rainforest and a famously football-mad people",
+   "known": 0.8,
+   "kind": "major country"
+  },
+  {
+   "label": "KZ",
+   "qid": "Q232",
+   "fame": 0.769,
+   "country": "Kazakhstan",
+   "description": "sovereign state in Eastern Europe and Central Asia",
+   "hook": "is the world's largest landlocked nation and the launch site for Russia's space missions",
+   "known": 0.2,
+   "kind": "developing nation"
+  },
+  {
+   "label": "F",
+   "qid": "Q142",
+   "fame": 0.761,
+   "country": "France",
+   "description": "country in Western Europe and other continents (through its overseas territories in America, Africa and Oceania)",
+   "hook": "is known for the Eiffel Tower, fine wine, croissants and the Louvre",
+   "known": 0.95,
+   "kind": "major country"
+  },
+  {
+   "label": "IR",
+   "qid": "Q794",
+   "fame": 0.759,
+   "country": "Iran",
+   "description": "country in Western Asia",
+   "hook": "is the ancient land once known as Persia, famous for its carpets and rich poetry",
+   "known": 0.8,
+   "kind": "developing nation"
+  },
+  {
+   "label": "TR",
+   "qid": "Q43",
+   "fame": 0.759,
+   "country": "Turkey",
+   "description": "country in West Asia and Southeast Europe",
+   "hook": "straddles two continents and is home to Istanbul and the ancient ruins of Troy",
+   "known": 0.8,
+   "kind": "developed nation"
+  },
+  {
+   "label": "RP",
+   "qid": "Q928",
+   "fame": 0.757,
+   "country": "Philippines",
+   "description": "archipelagic country in Southeast Asia",
+   "hook": "is a tropical island chain of over seven thousand islands in Southeast Asia",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "KSA",
+   "qid": "Q851",
+   "fame": 0.756,
+   "country": "Saudi Arabia",
+   "description": "country in West Asia",
+   "hook": "is a desert kingdom that holds Mecca and some of the world's biggest oil reserves",
+   "known": 0.6,
+   "kind": "developing nation"
+  },
+  {
+   "label": "MEX",
+   "qid": "Q96",
+   "fame": 0.755,
+   "country": "Mexico",
+   "description": "country in North America",
+   "hook": "is known for tacos, mariachi, Day of the Dead and the Aztec pyramids",
+   "known": 0.8,
+   "kind": "major country"
+  },
+  {
+   "label": "AZ",
+   "qid": "Q227",
+   "fame": 0.754,
+   "country": "Azerbaijan",
+   "description": "country in the Caucasus in Eastern Europe and Western Asia",
+   "hook": "is an oil-rich land on the Caspian Sea, famous for its capital Baku and its mud volcanoes",
+   "known": 0.2,
+   "kind": "developing nation"
+  },
+  {
+   "label": "RI",
+   "qid": "Q252",
+   "fame": 0.754,
+   "country": "Indonesia",
+   "description": "island country in Southeast Asia and Oceania",
+   "hook": "is the world's biggest archipelago nation, home to Bali and Komodo dragons",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "UAE",
+   "qid": "Q878",
+   "fame": 0.749,
+   "country": "United Arab Emirates",
+   "description": "country in Western Asia",
+   "hook": "is a desert federation known for Dubai's Burj Khalifa and its ultra-modern skyscrapers",
+   "known": 0.6,
+   "kind": "developed nation"
+  },
+  {
+   "label": "E",
+   "qid": "Q29",
+   "fame": 0.747,
+   "country": "Spain",
+   "description": "country in southwestern Europe with territories in Africa",
+   "hook": "is known for flamenco, bull runs, paella and La Liga football",
+   "known": 0.95,
+   "kind": "major country"
+  },
+  {
+   "label": "AFG",
+   "qid": "Q889",
+   "fame": 0.743,
+   "country": "Afghanistan",
+   "description": "country in Central and South Asia",
+   "hook": "is a rugged mountainous land that has seen decades of conflict and was crossed by the ancient Silk Road",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "PK",
+   "qid": "Q843",
+   "fame": 0.743,
+   "country": "Pakistan",
+   "description": "sovereign state in South Asia",
+   "hook": "is a South Asian nation that shares the Himalayan peaks of K2 and Indus River valley",
+   "known": 0.6,
+   "kind": "developing nation"
+  },
+  {
+   "label": "I",
+   "qid": "Q38",
+   "fame": 0.742,
+   "country": "Italy",
+   "description": "country in southern Europe",
+   "hook": "is the boot-shaped land of pizza, pasta, the Colosseum and Venice's canals",
+   "known": 0.95,
+   "kind": "major country"
+  },
+  {
+   "label": "NZ",
+   "qid": "Q664",
+   "fame": 0.742,
+   "country": "New Zealand",
+   "description": "island country in the southwest Pacific Ocean",
+   "hook": "is the land of the All Blacks and the filming location for Middle-earth movies",
+   "known": 0.8,
+   "kind": "developed nation"
+  },
+  {
+   "label": "ZA",
+   "qid": "Q258",
+   "fame": 0.741,
+   "country": "South Africa",
+   "description": "country in southern Africa",
+   "hook": "is the southern African land of safaris, Table Mountain and Nelson Mandela's legacy",
+   "known": 0.6,
+   "kind": "developing nation"
+  },
+  {
+   "label": "NEP",
+   "qid": "Q837",
+   "fame": 0.74,
+   "country": "Nepal",
+   "description": "country in South Asia",
+   "hook": "is a Himalayan kingdom turned republic that holds Mount Everest",
+   "known": 0.2,
+   "kind": "developing nation"
+  },
+  {
+   "label": "P",
+   "qid": "Q45",
+   "fame": 0.739,
+   "country": "Portugal",
+   "description": "country in Southwestern Europe",
+   "hook": "is a coastal nation known for port wine, fado music and explorer Vasco da Gama",
+   "known": 0.8,
+   "kind": "developed nation"
+  },
+  {
+   "label": "MAL",
+   "qid": "Q833",
+   "fame": 0.738,
+   "country": "Malaysia",
+   "description": "country in Southeast Asia",
+   "hook": "is a tropical nation known for the Petronas Twin Towers in Kuala Lumpur",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "CZ",
+   "qid": "Q213",
+   "fame": 0.736,
+   "country": "Czech Republic",
+   "description": "country in Central Europe",
+   "hook": "is a central European land known for Prague's castle, pilsner beer and a golden city of spires",
+   "known": 0.6,
+   "kind": "developed nation"
+  },
+  {
+   "label": "PL",
+   "qid": "Q36",
+   "fame": 0.736,
+   "country": "Poland",
+   "description": "country in Central Europe",
+   "hook": "is a central European land known for pierogi, Chopin and the city of Warsaw",
+   "known": 0.6,
+   "kind": "developed nation"
+  },
+  {
+   "label": "RA",
+   "qid": "Q414",
+   "fame": 0.733,
+   "country": "Argentina",
+   "description": "country in South America",
+   "hook": "is the land of tango, steak, Patagonia and Lionel Messi",
+   "known": 0.8,
+   "kind": "developing nation"
+  },
+  {
+   "label": "KP",
+   "qid": "Q423",
+   "fame": 0.732,
+   "country": "North Korea",
+   "description": "sovereign state in East Asia",
+   "hook": "is a secretive, isolated East Asian state ruled by a single ruling family dynasty",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "BLR",
+   "qid": "Q184",
+   "fame": 0.731,
+   "country": "Belarus",
+   "description": "country in Eastern Europe",
+   "hook": "is an Eastern European nation of forests and marshes that borders Russia",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "S",
+   "qid": "Q34",
+   "fame": 0.731,
+   "country": "Sweden",
+   "description": "country in Northern Europe",
+   "hook": "is the Scandinavian homeland of IKEA, ABBA and the Nobel Prize ceremony",
+   "known": 0.8,
+   "kind": "developed nation"
+  },
+  {
+   "label": "VN",
+   "qid": "Q881",
+   "fame": 0.731,
+   "country": "Vietnam",
+   "description": "country in Southeast Asia",
+   "hook": "is a Southeast Asian nation known for pho, motorbikes and Ha Long Bay's limestone islands",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "MS",
+   "qid": "Q1027",
+   "fame": 0.73,
+   "country": "Mauritius",
+   "description": "island sovereign state off of East Africa in the Indian Ocean",
+   "hook": "is an Indian Ocean island paradise where the extinct dodo once lived",
+   "known": 0.05,
+   "kind": "island nation"
+  },
+  {
+   "label": "CH",
+   "qid": "Q39",
+   "fame": 0.729,
+   "country": "Switzerland",
+   "description": "country in Central Europe",
+   "hook": "is known for chocolate, watches, neutrality and the snowy Alps",
+   "known": 0.8,
+   "kind": "developed nation"
+  },
+  {
+   "label": "M",
+   "qid": "Q233",
+   "fame": 0.728,
+   "country": "Malta",
+   "description": "country in Southern Europe situated on an archipelago in the Mediterranean Sea",
+   "hook": "is a tiny Mediterranean island nation once ruled by the Knights Hospitaller",
+   "known": 0.2,
+   "kind": "small nation"
+  },
+  {
+   "label": "AM",
+   "qid": "Q399",
+   "fame": 0.727,
+   "country": "Armenia",
+   "description": "sovereign state in the South Caucasus region of Eurasia",
+   "hook": "is a mountainous Caucasus nation that claims to have been the first to adopt Christianity as a state religion",
+   "known": 0.05,
+   "kind": "small nation"
+  },
+  {
+   "label": "KS",
+   "qid": "Q813",
+   "fame": 0.727,
+   "country": "Kyrgyzstan",
+   "description": "sovereign state in Central Asia",
+   "hook": "is a mountainous Central Asian nation of nomads, yurts and Lake Issyk-Kul",
+   "known": 0.05,
+   "kind": "small nation"
+  },
+  {
+   "label": "N",
+   "qid": "Q20",
+   "fame": 0.727,
+   "country": "Norway",
+   "description": "country in Northern Europe",
+   "hook": "is a Scandinavian nation of deep fjords, the northern lights and the Vikings",
+   "known": 0.8,
+   "kind": "developed nation"
+  },
+  {
+   "label": "UA",
+   "qid": "Q212",
+   "fame": 0.727,
+   "country": "Ukraine",
+   "description": "country in Eastern Europe",
+   "hook": "is a huge European breadbasket of wheat and sunflowers, with its capital on the Dnieper",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "CL",
+   "qid": "Q854",
+   "fame": 0.726,
+   "country": "Sri Lanka",
+   "description": "island country in South Asia",
+   "hook": "is a teardrop-shaped island known for tea, cinnamon and elephants south of India",
+   "known": 0.4,
+   "kind": "island nation"
+  },
+  {
+   "label": "GE",
+   "qid": "Q230",
+   "fame": 0.726,
+   "country": "Georgia",
+   "description": "country in the Caucasus region of Europe and Asia",
+   "hook": "is a small Caucasus nation known for its wine, which has been made there for thousands of years",
+   "known": 0.05,
+   "kind": "small nation"
+  },
+  {
+   "label": "CY",
+   "qid": "Q229",
+   "fame": 0.725,
+   "country": "Cyprus",
+   "description": "country in the Mediterranean Sea",
+   "hook": "is a divided Mediterranean island said to be the birthplace of Aphrodite",
+   "known": 0.2,
+   "kind": "island nation"
+  },
+  {
+   "label": "BD",
+   "qid": "Q902",
+   "fame": 0.723,
+   "country": "Bangladesh",
+   "description": "country in South Asia",
+   "hook": "is a crowded delta nation of rivers and rice, home to the Bengal tiger's mangrove forest",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "ETH",
+   "qid": "Q115",
+   "fame": 0.722,
+   "country": "Ethiopia",
+   "description": "country in the Horn of Africa",
+   "hook": "is a highland nation said to be the birthplace of coffee and home to rock-hewn churches",
+   "known": 0.2,
+   "kind": "african nation"
+  },
+  {
+   "label": "ROK",
+   "qid": "Q884",
+   "fame": 0.721,
+   "country": "South Korea",
+   "description": "country in East Asia",
+   "hook": "is known for K-pop, kimchi, Samsung and a high-tech culture split from its northern neighbour",
+   "known": 0.8,
+   "kind": "developed nation"
+  },
+  {
+   "label": "MC",
+   "qid": "Q235",
+   "fame": 0.718,
+   "country": "Monaco",
+   "description": "microstate in Western Europe",
+   "hook": "is a glamorous coastal micro-state known for its casino, Formula One street race and royal family",
+   "known": 0.05,
+   "kind": "small nation"
+  },
+  {
+   "label": "SRB",
+   "qid": "Q403",
+   "fame": 0.718,
+   "country": "Serbia",
+   "description": "country in Southeast Europe",
+   "hook": "is a Balkan nation known for tennis champion Novak Djokovic and a capital on the Danube",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "UZ",
+   "qid": "Q265",
+   "fame": 0.718,
+   "country": "Uzbekistan",
+   "description": "sovereign state in Central Asia",
+   "hook": "is a Central Asian land of Silk Road cities like Samarkand and Bukhara",
+   "known": 0.2,
+   "kind": "developing nation"
+  },
+  {
+   "label": "AL",
+   "qid": "Q222",
+   "fame": 0.717,
+   "country": "Albania",
+   "description": "country in southeastern Europe",
+   "hook": "is a Balkan nation on the Adriatic coast, long cut off from the world by a hardline regime",
+   "known": 0.2,
+   "kind": "developing nation"
+  },
+  {
+   "label": "ET",
+   "qid": "Q79",
+   "fame": 0.716,
+   "country": "Egypt",
+   "description": "country in Northeast Africa and Southwest Asia",
+   "hook": "is the land of the pyramids, the Sphinx, the Nile and the pharaohs",
+   "known": 0.8,
+   "kind": "developed nation"
+  },
+  {
+   "label": "FL",
+   "qid": "Q347",
+   "fame": 0.716,
+   "country": "Liechtenstein",
+   "description": "country in Central Europe",
+   "hook": "is one of the world's smallest nations, a tiny Alpine principality between Switzerland and Austria",
+   "known": 0.05,
+   "kind": "small nation"
+  },
+  {
+   "label": "T",
+   "qid": "Q869",
+   "fame": 0.716,
+   "country": "Thailand",
+   "description": "country in Southeast Asia",
+   "hook": "is the Southeast Asian land of pad thai, elephants, golden temples and the Land of Smiles",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "WAN",
+   "qid": "Q1033",
+   "fame": 0.715,
+   "country": "Nigeria",
+   "description": "sovereign state in West Africa",
+   "hook": "is Africa's most populous nation, known for Nollywood films and afrobeats music",
+   "known": 0.4,
+   "kind": "african nation"
+  },
+  {
+   "label": "MA",
+   "qid": "Q1028",
+   "fame": 0.714,
+   "country": "Morocco",
+   "description": "sovereign state in North Africa",
+   "hook": "is a North African kingdom known for Marrakesh's markets and the Atlas Mountains",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "GR",
+   "qid": "Q41",
+   "fame": 0.712,
+   "country": "Greece",
+   "description": "country in Southeast Europe",
+   "hook": "is the cradle of democracy, the Olympic Games and the Parthenon",
+   "known": 0.85,
+   "kind": "developed nation"
+  },
+  {
+   "label": "HR",
+   "qid": "Q224",
+   "fame": 0.712,
+   "country": "Croatia",
+   "description": "country in Central Europe",
+   "hook": "is a Balkan coastal land of islands whose walled old city stood in for King's Landing",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "IS",
+   "qid": "Q189",
+   "fame": 0.712,
+   "country": "Iceland",
+   "description": "Nordic island country in the North Atlantic Ocean",
+   "hook": "is a volcanic North Atlantic island of geysers, glaciers and the northern lights",
+   "known": 0.2,
+   "kind": "island nation"
+  },
+  {
+   "label": "MNE",
+   "qid": "Q236",
+   "fame": 0.71,
+   "country": "Montenegro",
+   "description": "country in southeastern Europe",
+   "hook": "is a small Balkan nation whose name means black mountain",
+   "known": 0.05,
+   "kind": "small nation"
+  },
+  {
+   "label": "BIH",
+   "qid": "Q225",
+   "fame": 0.707,
+   "country": "Bosnia and Herzegovina",
+   "description": "country in Southeast Europe",
+   "hook": "is a Balkan land known for a famous rebuilt arched stone bridge at Mostar",
+   "known": 0.2,
+   "kind": "developing nation"
+  },
+  {
+   "label": "IRL",
+   "qid": "Q27",
+   "fame": 0.707,
+   "country": "Ireland",
+   "description": "country in Northwestern Europe",
+   "hook": "is nicknamed the Emerald Isle and celebrates St. Patrick's Day",
+   "known": 0.85,
+   "kind": "developed nation"
+  },
+  {
+   "label": "LT",
+   "qid": "Q37",
+   "fame": 0.706,
+   "country": "Lithuania",
+   "description": "country in northeastern Europe",
+   "hook": "is a Baltic country that is passionate about basketball and amber jewelry",
+   "known": 0.2,
+   "kind": "developing nation"
+  },
+  {
+   "label": "B",
+   "qid": "Q31",
+   "fame": 0.705,
+   "country": "Belgium",
+   "description": "country in western Europe",
+   "hook": "is famed for waffles, chocolate and beer, and hosts the European Union's main institutions",
+   "known": 0.8,
+   "kind": "developed nation"
+  },
+  {
+   "label": "SYR",
+   "qid": "Q858",
+   "fame": 0.705,
+   "country": "Syria",
+   "description": "country in West Asia",
+   "hook": null,
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "ER",
+   "qid": "Q986",
+   "fame": 0.703,
+   "country": "Eritrea",
+   "description": "country in the Horn of Africa",
+   "hook": null,
+   "known": 0.05,
+   "kind": "african nation"
+  },
+  {
+   "label": "PNG",
+   "qid": "Q691",
+   "fame": 0.703,
+   "country": "Papua New Guinea",
+   "description": "country in Oceania",
+   "hook": "is a Pacific nation of hundreds of languages and birds-of-paradise",
+   "known": 0.05,
+   "kind": "developing nation"
+  },
+  {
+   "label": "RO",
+   "qid": "Q218",
+   "fame": 0.703,
+   "country": "Romania",
+   "description": "country in Southeast Europe",
+   "hook": "is the homeland of the Transylvania legend that inspired Dracula",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "SLO",
+   "qid": "Q215",
+   "fame": 0.703,
+   "country": "Slovenia",
+   "description": "country in Central Europe",
+   "hook": "is a small Alpine country with the fairy-tale Lake Bled",
+   "known": 0.6,
+   "kind": "developed nation"
+  },
+  {
+   "label": "A",
+   "qid": "Q40",
+   "fame": 0.702,
+   "country": "Austria",
+   "description": "country in Central Europe",
+   "hook": "is the Alpine birthplace of Mozart and the setting of The Sound of Music",
+   "known": 0.8,
+   "kind": "developed nation"
+  },
+  {
+   "label": "FIN",
+   "qid": "Q33",
+   "fame": 0.702,
+   "country": "Finland",
+   "description": "country in Northern Europe",
+   "hook": "is a land of saunas and thousands of lakes, and the official home of Santa's Lapland",
+   "known": 0.8,
+   "kind": "developed nation"
+  },
+  {
+   "label": "MGL",
+   "qid": "Q711",
+   "fame": 0.701,
+   "country": "Mongolia",
+   "description": "country in East Asia",
+   "hook": "was the heartland of Genghis Khan's vast empire",
+   "known": 0.2,
+   "kind": "developing nation"
+  },
+  {
+   "label": "DZ",
+   "qid": "Q262",
+   "fame": 0.697,
+   "country": "Algeria",
+   "description": "country in North Africa",
+   "hook": "holds much of the Sahara and is the largest country in Africa by area",
+   "known": 0.4,
+   "kind": "african nation"
+  },
+  {
+   "label": "L",
+   "qid": "Q32",
+   "fame": 0.697,
+   "country": "Luxembourg",
+   "description": "country in Western Europe",
+   "hook": "is a tiny, wealthy grand duchy ruled by a grand duke",
+   "known": 0.05,
+   "kind": "small nation"
+  },
+  {
+   "label": "SD",
+   "qid": "Q1050",
+   "fame": 0.697,
+   "country": "Eswatini",
+   "description": "sovereign state in southern Africa",
+   "hook": "is a small southern African monarchy that changed its name from Swaziland",
+   "known": 0.05,
+   "kind": "small nation"
+  },
+  {
+   "label": "CO",
+   "qid": "Q739",
+   "fame": 0.694,
+   "country": "Colombia",
+   "description": "country in South America",
+   "hook": "is a coffee-growing land and the home of singer Shakira",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "GUY",
+   "qid": "Q734",
+   "fame": 0.694,
+   "country": "Guyana",
+   "description": "country in South America",
+   "hook": "is the only English-speaking nation on the South American mainland",
+   "known": 0.05,
+   "kind": "developing nation"
+  },
+  {
+   "label": "ZW",
+   "qid": "Q954",
+   "fame": 0.692,
+   "country": "Zimbabwe",
+   "description": "sovereign state in southern Africa",
+   "hook": "shares the thundering Victoria Falls with Zambia",
+   "known": 0.2,
+   "kind": "african nation"
+  },
+  {
+   "label": "AND",
+   "qid": "Q228",
+   "fame": 0.69,
+   "country": "Andorra",
+   "description": "sovereign microstate between France and Spain, in Western Europe",
+   "hook": "is a tiny Pyrenees principality famed for ski resorts and duty-free shopping",
+   "known": 0.05,
+   "kind": "small nation"
+  },
+  {
+   "label": "BF",
+   "qid": "Q965",
+   "fame": 0.69,
+   "country": "Burkina Faso",
+   "description": "sovereign state in Africa",
+   "hook": "is a West African country whose name means land of upright people",
+   "known": 0.05,
+   "kind": "african nation"
+  },
+  {
+   "label": "RL",
+   "qid": "Q822",
+   "fame": 0.69,
+   "country": "Lebanon",
+   "description": "country in West Asia",
+   "hook": "is a Mediterranean land with a cedar tree on its flag and Beirut as its capital",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "CV",
+   "qid": "Q1011",
+   "fame": 0.689,
+   "country": "Cape Verde",
+   "description": "sovereign state comprising ten islands off the Western coast of Africa",
+   "hook": "is an Atlantic island nation and the birthplace of barefoot singer Cesaria Evora",
+   "known": 0.05,
+   "kind": "island nation"
+  },
+  {
+   "label": "SK",
+   "qid": "Q214",
+   "fame": 0.689,
+   "country": "Slovakia",
+   "description": "country in Central Europe",
+   "hook": "became independent through the peaceful Velvet Divorce from its Czech partner",
+   "known": 0.6,
+   "kind": "developed nation"
+  },
+  {
+   "label": "SME",
+   "qid": "Q730",
+   "fame": 0.689,
+   "country": "Suriname",
+   "description": "country in South America",
+   "hook": "is the smallest independent country in South America",
+   "known": 0.05,
+   "kind": "developing nation"
+  },
+  {
+   "label": "BG",
+   "qid": "Q219",
+   "fame": 0.688,
+   "country": "Bulgaria",
+   "description": "country in southeast Europe",
+   "hook": "is famed for rose oil and for yogurt",
+   "known": 0.6,
+   "kind": "developed nation"
+  },
+  {
+   "label": "C",
+   "qid": "Q241",
+   "fame": 0.688,
+   "country": "Cuba",
+   "description": "sovereign state situated on an island in the Caribbean Sea",
+   "hook": "is a Caribbean island famed for vintage American cars, cigars and salsa",
+   "known": 0.4,
+   "kind": "caribbean nation"
+  },
+  {
+   "label": "RM",
+   "qid": "Q1019",
+   "fame": 0.688,
+   "country": "Madagascar",
+   "description": "island sovereign state off the coast of Southeast Africa, in the Indian Ocean",
+   "hook": "is a huge Indian Ocean island home to lemurs and baobab trees",
+   "known": 0.05,
+   "kind": "island nation"
+  },
+  {
+   "label": "MK",
+   "qid": "Q221",
+   "fame": 0.687,
+   "country": "North Macedonia",
+   "description": "country in southeastern Europe",
+   "hook": "is the birthplace of Mother Teresa, with its capital at Skopje",
+   "known": 0.2,
+   "kind": "developing nation"
+  },
+  {
+   "label": "DOM",
+   "qid": "Q786",
+   "fame": 0.686,
+   "country": "Dominican Republic",
+   "description": "island sovereign state in the Caribbean Sea",
+   "hook": "shares an island with its western neighbour and is known for merengue and baseball",
+   "known": 0.2,
+   "kind": "caribbean nation"
+  },
+  {
+   "label": "EAT",
+   "qid": "Q924",
+   "fame": 0.686,
+   "country": "Tanzania",
+   "description": "country in East Africa",
+   "hook": "is home to Mount Kilimanjaro and the Serengeti",
+   "known": 0.2,
+   "kind": "african nation"
+  },
+  {
+   "label": "TM",
+   "qid": "Q874",
+   "fame": 0.686,
+   "country": "Turkmenistan",
+   "description": "country in Central Asia",
+   "hook": "has a burning gas crater nicknamed the Gateway to Hell",
+   "known": 0.05,
+   "kind": "developing nation"
+  },
+  {
+   "label": "EST",
+   "qid": "Q191",
+   "fame": 0.685,
+   "country": "Estonia",
+   "description": "country in Northern Europe",
+   "hook": "is a Baltic nation that gave the world Skype",
+   "known": 0.6,
+   "kind": "developed nation"
+  },
+  {
+   "label": "H",
+   "qid": "Q28",
+   "fame": 0.685,
+   "country": "Hungary",
+   "description": "country in Central Europe",
+   "hook": "is the home of goulash and the inventor of the Rubik's Cube",
+   "known": 0.6,
+   "kind": "developed nation"
+  },
+  {
+   "label": "IRQ",
+   "qid": "Q796",
+   "fame": 0.684,
+   "country": "Iraq",
+   "description": "sovereign state in Western Asia",
+   "hook": "covers much of ancient Mesopotamia, between the Tigris and Euphrates rivers",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "LV",
+   "qid": "Q211",
+   "fame": 0.684,
+   "country": "Latvia",
+   "description": "sovereign state in northeastern Europe",
+   "hook": "is a Baltic country whose capital Riga is known for Art Nouveau buildings",
+   "known": 0.6,
+   "kind": "developed nation"
+  },
+  {
+   "label": "HKJ",
+   "qid": "Q810",
+   "fame": 0.682,
+   "country": "Jordan",
+   "description": "country in West Asia",
+   "hook": "is home to the rose-red rock city of Petra",
+   "known": 0.2,
+   "kind": "developing nation"
+  },
+  {
+   "label": "FJI",
+   "qid": "Q712",
+   "fame": 0.681,
+   "country": "Fiji",
+   "description": "island sovereign state in Oceania",
+   "hook": "is a South Pacific island nation famed for resorts and rugby sevens",
+   "known": 0.05,
+   "kind": "island nation"
+  },
+  {
+   "label": "RCH",
+   "qid": "Q298",
+   "fame": 0.681,
+   "country": "Chile",
+   "description": "country in South America and Oceania, with a claim in Antarctica",
+   "hook": "is a long, thin land along the Andes, owner of Easter Island",
+   "known": 0.8,
+   "kind": "developing nation"
+  },
+  {
+   "label": "BHT",
+   "qid": "Q917",
+   "fame": 0.68,
+   "country": "Bhutan",
+   "description": "sovereign state in South Asia",
+   "hook": "is a Himalayan kingdom that measures Gross National Happiness",
+   "known": 0.05,
+   "kind": "developing nation"
+  },
+  {
+   "label": "MD",
+   "qid": "Q217",
+   "fame": 0.678,
+   "country": "Moldova",
+   "description": "country in Eastern Europe",
+   "hook": "is known for huge underground wine cellars",
+   "known": 0.1,
+   "kind": "developing nation"
+  },
+  {
+   "label": "SY",
+   "qid": "Q1042",
+   "fame": 0.678,
+   "country": "Seychelles",
+   "description": "island sovereign state off the eastern coast of Africa",
+   "hook": "is an Indian Ocean island nation famed for honeymoon beaches and giant tortoises",
+   "known": 0.05,
+   "kind": "island nation"
+  },
+  {
+   "label": "V",
+   "qid": "Q237",
+   "fame": 0.678,
+   "country": "Vatican City",
+   "description": "Holy See's independent state, an enclave within Rome, Italy",
+   "hook": "is the world's smallest country, home of the Pope and the Sistine Chapel",
+   "known": 0.05,
+   "kind": "small nation"
+  },
+  {
+   "label": "GH",
+   "qid": "Q117",
+   "fame": 0.676,
+   "country": "Ghana",
+   "description": "country in West Africa",
+   "hook": "was once called the Gold Coast and is a major cocoa producer",
+   "known": 0.2,
+   "kind": "african nation"
+  },
+  {
+   "label": "RSM",
+   "qid": "Q238",
+   "fame": 0.676,
+   "country": "San Marino",
+   "description": "sovereign state in southern Europe, enclaved within Italy",
+   "hook": "claims to be the world's oldest republic, perched on Mount Titano",
+   "known": 0.05,
+   "kind": "small nation"
+  },
+  {
+   "label": "YV",
+   "qid": "Q717",
+   "fame": 0.676,
+   "country": "Venezuela",
+   "description": "country in South America",
+   "hook": "holds Angel Falls, the world's tallest waterfall",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "JA",
+   "qid": "Q766",
+   "fame": 0.675,
+   "country": "Jamaica",
+   "description": "island state in the Caribbean Sea",
+   "hook": "is the birthplace of reggae and of sprinter Usain Bolt",
+   "known": 0.1,
+   "kind": "caribbean nation"
+  },
+  {
+   "label": "BRU",
+   "qid": "Q921",
+   "fame": 0.674,
+   "country": "Brunei",
+   "description": "sovereign country and sultanate on the island of Borneo in south-east Asia, member of the Commonwealth of Nations",
+   "hook": "is a tiny, oil-rich sultanate on the island of Borneo",
+   "known": 0.05,
+   "kind": "developing nation"
+  },
+  {
+   "label": "ES",
+   "qid": "Q792",
+   "fame": 0.674,
+   "country": "El Salvador",
+   "description": "sovereign state in Central America",
+   "hook": "is Central America's smallest country, nicknamed the land of volcanoes",
+   "known": 0.05,
+   "kind": "caribbean nation"
+  },
+  {
+   "label": "K",
+   "qid": "Q424",
+   "fame": 0.673,
+   "country": "Cambodia",
+   "description": "country in Southeast Asia",
+   "hook": "is home to the vast temple complex of Angkor Wat",
+   "known": 0.1,
+   "kind": "developing nation"
+  },
+  {
+   "label": "RH",
+   "qid": "Q790",
+   "fame": 0.671,
+   "country": "Haiti",
+   "description": "country in the Caribbean Sea",
+   "hook": "was the first country born from a successful slave revolt",
+   "known": 0.05,
+   "kind": "caribbean nation"
+  },
+  {
+   "label": "LB",
+   "qid": "Q1014",
+   "fame": 0.67,
+   "country": "Liberia",
+   "description": "sovereign state in West Africa",
+   "hook": "was founded by freed American slaves",
+   "known": 0.05,
+   "kind": "african nation"
+  },
+  {
+   "label": "SO",
+   "qid": "Q1045",
+   "fame": 0.67,
+   "country": "Somalia",
+   "description": "sovereign state in Africa",
+   "hook": null,
+   "known": 0.05,
+   "kind": "african nation"
+  },
+  {
+   "label": "WAL",
+   "qid": "Q1044",
+   "fame": 0.67,
+   "country": "Sierra Leone",
+   "description": "sovereign state in West Africa",
+   "hook": null,
+   "known": 0.05,
+   "kind": "african nation"
+  },
+  {
+   "label": "BRN",
+   "qid": "Q398",
+   "fame": 0.668,
+   "country": "Bahrain",
+   "description": "country in the Persian Gulf",
+   "hook": "is a Gulf island kingdom that hosts a Formula One Grand Prix",
+   "known": 0.1,
+   "kind": "developing nation"
+  },
+  {
+   "label": "PE",
+   "qid": "Q419",
+   "fame": 0.667,
+   "country": "Peru",
+   "description": "sovereign state in South America",
+   "hook": "is home to Machu Picchu, the Inca mountain citadel",
+   "known": 0.4,
+   "kind": "developing nation"
+  },
+  {
+   "label": "BOL",
+   "qid": "Q750",
+   "fame": 0.666,
+   "country": "Bolivia",
+   "description": "sovereign state in South America",
+   "hook": "holds the world's largest salt flat, Salar de Uyuni",
+   "known": 0.1,
+   "kind": "developing nation"
+  },
+  {
+   "label": "LAR",
+   "qid": "Q1016",
+   "fame": 0.666,
+   "country": "Libya",
+   "description": "sovereign state in North Africa",
+   "hook": null,
+   "known": 0.1,
+   "kind": "african nation"
+  },
+  {
+   "label": "Q",
+   "qid": "Q846",
+   "fame": 0.666,
+   "country": "Qatar",
+   "description": "country in West Asia",
+   "hook": null,
+   "known": 0.2,
+   "kind": "developing nation"
+  },
+  {
+   "label": "BH",
+   "qid": "Q242",
+   "fame": 0.665,
+   "country": "Belize",
+   "description": "sovereign state in Central America",
+   "hook": null,
+   "known": 0.05,
+   "kind": "caribbean nation"
+  },
+  {
+   "label": "EAK",
+   "qid": "Q114",
+   "fame": 0.663,
+   "country": "Kenya",
+   "description": "country in Eastern Africa",
+   "hook": null,
+   "known": 0.4,
+   "kind": "african nation"
+  }
+ ]
+}

@@ -1,0 +1,630 @@
+{
+ "id": "table.sports.cricketers-birthplace",
+ "kind": "table",
+ "title": "Famous cricketers and the city they were born in",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "cricket",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?birthLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?b) AS ?birth) (COUNT(DISTINCT ?b) AS ?nB) WHERE { ?item wdt:P106 wd:Q12299841 ; wdt:P19 ?b ; wikibase:sitelinks ?sitelinks . ?b wikibase:sitelinks ?bs . FILTER(?bs > 60) FILTER(?sitelinks > 12) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 500 } hint:Prior hint:runFirst true . FILTER(?nB = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T02:02:42.480Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T02:02:42.480Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "birthplace",
+   "label": "Birthplace",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "cricketer",
+  "many": "cricketers",
+  "wildcard": "person",
+  "hookAsk": "Which cricketer {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "birthplace": {
+    "role": "code",
+    "pick": "Which city was cricketer {label} born in?",
+    "statement": "{label} was born in {value}.",
+    "match": "Match each cricketer to the city where they were born.",
+    "reverse": "Which cricketer was born in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Virat Kohli",
+   "qid": "Q213854",
+   "fame": 0.766,
+   "birthplace": "Delhi",
+   "description": "Indian cricket player (born 1988)",
+   "hook": "is a run-machine batter famed for chasing down huge targets and for fiery on-field passion",
+   "known": 0.6,
+   "kind": "batter"
+  },
+  {
+   "label": "Sachin Tendulkar",
+   "qid": "Q9488",
+   "fame": 0.689,
+   "birthplace": "Mumbai",
+   "description": "Indian cricket player (born 1973)",
+   "hook": "is the Little Master, the first man to score 100 international centuries",
+   "known": 0.6,
+   "kind": "batter"
+  },
+  {
+   "label": "Rohit Sharma",
+   "qid": "Q3520045",
+   "fame": 0.631,
+   "birthplace": "Nagpur",
+   "description": "Indian cricketer (Captain)",
+   "hook": "is an opener nicknamed the Hitman who has hit three one-day double centuries",
+   "known": 0.4,
+   "kind": "batter"
+  },
+  {
+   "label": "MS Dhoni",
+   "qid": "Q470774",
+   "fame": 0.619,
+   "birthplace": "Ranchi",
+   "description": "Indian cricket player (born 1981)",
+   "hook": "is a cool-headed wicketkeeper and finisher who captained his side to T20 and 50-over world titles",
+   "known": 0.5,
+   "kind": "wicketkeeper"
+  },
+  {
+   "label": "Vinod Kambli",
+   "qid": "Q2723880",
+   "fame": 0.616,
+   "birthplace": "Mumbai",
+   "description": "Indian cricket player (born 1972)",
+   "hook": "is a flamboyant left-hander who hit back-to-back Test double centuries and grew up alongside a legend",
+   "known": 0.2,
+   "kind": "batter"
+  },
+  {
+   "label": "Mohammad Babar Azam",
+   "qid": "Q4837515",
+   "fame": 0.594,
+   "birthplace": "Lahore",
+   "description": "Pakistani cricketer",
+   "hook": "is a stylish top-order batter who reached the top of the world one-day rankings",
+   "known": 0.3,
+   "kind": "batter"
+  },
+  {
+   "label": "Mansoor Ali Khan Pataudi",
+   "qid": "Q983454",
+   "fame": 0.573,
+   "birthplace": "Bhopal",
+   "description": "Indian cricket player. (1941-2011)",
+   "hook": "was a nawab nicknamed Tiger who became a Test captain at 21 despite losing sight in one eye",
+   "known": 0.15,
+   "kind": "batter"
+  },
+  {
+   "label": "Kevin Pietersen",
+   "qid": "Q1398682",
+   "fame": 0.572,
+   "birthplace": "Pietermaritzburg",
+   "description": "South African-British cricketer",
+   "hook": "is a flamboyant batter famed for the audacious switch-hit",
+   "known": 0.25,
+   "kind": "batter"
+  },
+  {
+   "label": "Viv Richards",
+   "qid": "Q738016",
+   "fame": 0.562,
+   "birthplace": "St. John's",
+   "description": "West Indian cricketer",
+   "hook": "was a swaggering batter who scorned the helmet and terrorised bowlers in his prime",
+   "known": 0.2,
+   "kind": "batter"
+  },
+  {
+   "label": "Wasim Akram",
+   "qid": "Q982801",
+   "fame": 0.562,
+   "birthplace": "Lahore",
+   "description": "Pakistani cricketer",
+   "hook": "is a left-arm fast bowler called the Sultan of Swing, a master of reverse swing",
+   "known": 0.4,
+   "kind": "fast-bowler"
+  },
+  {
+   "label": "Javagal Srinath",
+   "qid": "Q2757591",
+   "fame": 0.552,
+   "birthplace": "Mysore",
+   "description": "Indian cricketer",
+   "hook": "was a quick bowler who later became one of the game's top match referees",
+   "known": 0.1,
+   "kind": "fast-bowler"
+  },
+  {
+   "label": "Jasprit Bumrah",
+   "qid": "Q16227998",
+   "fame": 0.551,
+   "birthplace": "Ahmedabad",
+   "description": "Indian cricketer (born 1993)",
+   "hook": "is a fast bowler with a slingy, unorthodox action and deadly yorkers",
+   "known": 0.3,
+   "kind": "fast-bowler"
+  },
+  {
+   "label": "Shoaib Akhtar",
+   "qid": "Q738330",
+   "fame": 0.551,
+   "birthplace": "Rawalpindi",
+   "description": "Pakistani cricketer",
+   "hook": "is a fast bowler nicknamed for a speeding train, first to officially bowl 100 mph",
+   "known": 0.25,
+   "kind": "fast-bowler"
+  },
+  {
+   "label": "Mithali Raj",
+   "qid": "Q3520476",
+   "fame": 0.547,
+   "birthplace": "Jodhpur",
+   "description": "Indian women's cricketer",
+   "hook": "is a women's batting great and the leading run-scorer in women's one-day cricket",
+   "known": 0.2,
+   "kind": "batter"
+  },
+  {
+   "label": "Sanju Samson",
+   "qid": "Q7418593",
+   "fame": 0.546,
+   "birthplace": "Thiruvananthapuram",
+   "description": "Indian cricketer",
+   "hook": "is a wicketkeeper-batter known for big sixes and for captaining the Royals in the IPL",
+   "known": 0.15,
+   "kind": "wicketkeeper"
+  },
+  {
+   "label": "Virender Sehwag",
+   "qid": "Q3345479",
+   "fame": 0.538,
+   "birthplace": "Delhi",
+   "description": "former Indian cricketer",
+   "hook": "is a fearless opener who hit two Test triple centuries by attacking from the first ball",
+   "known": 0.3,
+   "kind": "batter"
+  },
+  {
+   "label": "Sourav Ganguly",
+   "qid": "Q561487",
+   "fame": 0.531,
+   "birthplace": "Kolkata",
+   "description": "former Indian cricketer and former chairman of the Board of Control for Cricket in India (BCCI)",
+   "hook": "is a left-handed captain nicknamed Dada who famously waved his shirt from a Lord's balcony",
+   "known": 0.25,
+   "kind": "batter"
+  },
+  {
+   "label": "Andrew Flintoff",
+   "qid": "Q95885",
+   "fame": 0.53,
+   "birthplace": "Preston",
+   "description": "English cricketer and TV personality",
+   "hook": "is a hulking all-rounder nicknamed Freddie, hero of an epic Ashes series",
+   "known": 0.25,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "KL Rahul",
+   "qid": "Q6668646",
+   "fame": 0.53,
+   "birthplace": "Bengaluru",
+   "description": "Indian cricket player",
+   "hook": "is a stylish batter who also keeps wicket and has captained Lucknow's IPL side",
+   "known": 0.15,
+   "kind": "batter"
+  },
+  {
+   "label": "Kapil Dev",
+   "qid": "Q558189",
+   "fame": 0.527,
+   "birthplace": "Chandigarh",
+   "description": "Indian cricketer",
+   "hook": "is the all-rounder who lifted his country's first World Cup as captain",
+   "known": 0.35,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Steve Smith",
+   "qid": "Q7613970",
+   "fame": 0.522,
+   "birthplace": "Sydney",
+   "description": "Australian international cricketer",
+   "hook": "is a fidgety, unorthodox batter who began as a leg-spinner and became a prolific run-scorer at number four",
+   "known": 0.5,
+   "kind": "batter"
+  },
+  {
+   "label": "Yuvraj Singh",
+   "qid": "Q2723790",
+   "fame": 0.522,
+   "birthplace": "Chandigarh",
+   "description": "Indian cricketer (born 1981)",
+   "hook": "is the all-rounder who hit six sixes in one T20 World Cup over and beat cancer",
+   "known": 0.25,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Rahul Dravid",
+   "qid": "Q470772",
+   "fame": 0.52,
+   "birthplace": "Indore",
+   "description": "Indian cricketer",
+   "hook": "is a technically flawless batter nicknamed The Wall, later a national head coach",
+   "known": 0.35,
+   "kind": "batter"
+  },
+  {
+   "label": "Ishan Kishan",
+   "qid": "Q21621705",
+   "fame": 0.518,
+   "birthplace": "Patna",
+   "description": "Indian cricketer",
+   "hook": "is a wicketkeeper-batter who hit the fastest double century in one-day international history",
+   "known": 0.1,
+   "kind": "wicketkeeper"
+  },
+  {
+   "label": "Hardik Pandya",
+   "qid": "Q19895060",
+   "fame": 0.517,
+   "birthplace": "Surat",
+   "description": "Indian cricketer",
+   "hook": "is a big-hitting all-rounder who captained a brand-new franchise to an IPL title in its first season",
+   "known": 0.2,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Shreyas Iyer",
+   "qid": "Q18705305",
+   "fame": 0.517,
+   "birthplace": "Mumbai",
+   "description": "Indian cricketer",
+   "hook": "is a middle-order batter who captained Kolkata Knight Riders to an IPL title",
+   "known": 0.1,
+   "kind": "batter"
+  },
+  {
+   "label": "Suryakumar Yadav",
+   "qid": "Q15864307",
+   "fame": 0.515,
+   "birthplace": "Mumbai",
+   "description": "Indian cricketer",
+   "hook": "is an inventive batter famed for scooping fast bowlers over the keeper's head",
+   "known": 0.1,
+   "kind": "batter"
+  },
+  {
+   "label": "Sunil Gavaskar",
+   "qid": "Q558182",
+   "fame": 0.511,
+   "birthplace": "Mumbai",
+   "description": "Indian cricket player",
+   "hook": "is the pioneering opener who became the first man to pass 10,000 Test runs",
+   "known": 0.3,
+   "kind": "batter"
+  },
+  {
+   "label": "Ben Stokes",
+   "qid": "Q4886521",
+   "fame": 0.505,
+   "birthplace": "Christchurch",
+   "description": "cricketer (born 1991)",
+   "hook": "is an all-rounder whose heroics sealed an Ashes miracle at Headingley and won a World Cup final",
+   "known": 0.35,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Inzamam-ul-Haq",
+   "qid": "Q1393201",
+   "fame": 0.503,
+   "birthplace": "Multan",
+   "description": "former Pakistani cricketer",
+   "hook": "is a heavy-set batter famed for languid strokeplay and calmly steering big run chases",
+   "known": 0.2,
+   "kind": "batter"
+  },
+  {
+   "label": "Deepti Sharma",
+   "qid": "Q21622838",
+   "fame": 0.501,
+   "birthplace": "Agra",
+   "description": "Indian woman cricketer",
+   "hook": "is an off-spinning all-rounder who starred in a run to a women's World Cup final",
+   "known": 0.1,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Andrew Symonds",
+   "qid": "Q2723418",
+   "fame": 0.49,
+   "birthplace": "Birmingham",
+   "description": "Australian cricketer (1975–2022)",
+   "hook": "was a hard-hitting all-rounder nicknamed Roy who starred in World Cup-winning sides",
+   "known": 0.2,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Stuart Broad",
+   "qid": "Q3140358",
+   "fame": 0.489,
+   "birthplace": "Nottingham",
+   "description": "English cricketer (born 1986)",
+   "hook": "is a tall fast bowler who took 8 for 15 in a legendary Ashes spell and later passed 600 Test wickets",
+   "known": 0.3,
+   "kind": "fast-bowler"
+  },
+  {
+   "label": "Jemimah Rodrigues",
+   "qid": "Q42898219",
+   "fame": 0.488,
+   "birthplace": "Mumbai",
+   "description": "Indian cricketer",
+   "hook": "is a stylish young batter who played a match-winning hundred in a World Cup semi-final chase",
+   "known": 0.1,
+   "kind": "batter"
+  },
+  {
+   "label": "Muttiah Muralitharan",
+   "qid": "Q379709",
+   "fame": 0.487,
+   "birthplace": "Kandy",
+   "description": "Sri Lankan cricketer",
+   "hook": "is the spinner with the most Test wickets ever, 800, thanks to a whirring wrist action",
+   "known": 0.25,
+   "kind": "spinner"
+  },
+  {
+   "label": "Chris Gayle",
+   "qid": "Q2732196",
+   "fame": 0.482,
+   "birthplace": "Kingston",
+   "description": "Jamaican cricketer (born 1979)",
+   "hook": "is a giant, huge-hitting opener nicknamed the Universe Boss",
+   "known": 0.35,
+   "kind": "batter"
+  },
+  {
+   "label": "Stephen Fleming",
+   "qid": "Q3352116",
+   "fame": 0.482,
+   "birthplace": "Christchurch",
+   "description": "New Zealand cricketer",
+   "hook": "is a former captain now famed as a long-time coach of Chennai Super Kings",
+   "known": 0.1,
+   "kind": "batter"
+  },
+  {
+   "label": "Ricky Ponting",
+   "qid": "Q472649",
+   "fame": 0.481,
+   "birthplace": "Launceston",
+   "description": "Australian cricketer",
+   "hook": "was a pugnacious captain who led his side to back-to-back World Cup wins",
+   "known": 0.35,
+   "kind": "batter"
+  },
+  {
+   "label": "David Miller",
+   "qid": "Q6828449",
+   "fame": 0.48,
+   "birthplace": "Pietermaritzburg",
+   "description": "South African cricketer",
+   "hook": "is a big-hitting finisher nicknamed Killer",
+   "known": 0.1,
+   "kind": "batter"
+  },
+  {
+   "label": "Anil Kumble",
+   "qid": "Q2849991",
+   "fame": 0.479,
+   "birthplace": "Bengaluru",
+   "description": "former Indian cricketer",
+   "hook": "is the spinner who took all ten wickets in a single Test innings",
+   "known": 0.2,
+   "kind": "spinner"
+  },
+  {
+   "label": "Garfield Sobers",
+   "qid": "Q981485",
+   "fame": 0.477,
+   "birthplace": "Bridgetown",
+   "description": "Barbadian cricketer (1936–2026)",
+   "hook": "was the great all-rounder who hit six sixes in one over in first-class cricket",
+   "known": 0.15,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Lasith Malinga",
+   "qid": "Q2312779",
+   "fame": 0.477,
+   "birthplace": "Galle",
+   "description": "Sri Lankan cricketer",
+   "hook": "is a fast bowler with a slingy round-arm action, famed for four wickets in four balls",
+   "known": 0.15,
+   "kind": "fast-bowler"
+  },
+  {
+   "label": "Shikhar Dhawan",
+   "qid": "Q7487024",
+   "fame": 0.477,
+   "birthplace": "Delhi",
+   "description": "Indian cricketer",
+   "hook": "is a left-handed opener famed for his moustache-twirling, thigh-slapping celebration",
+   "known": 0.15,
+   "kind": "batter"
+  },
+  {
+   "label": "Irfan Pathan",
+   "qid": "Q1746795",
+   "fame": 0.475,
+   "birthplace": "Vadodara",
+   "description": "Indian cricketer",
+   "hook": "is a swing bowler who took a hat-trick in the very first over of a Test match",
+   "known": 0.15,
+   "kind": "fast-bowler"
+  },
+  {
+   "label": "Temba Bavuma",
+   "qid": "Q7698004",
+   "fame": 0.474,
+   "birthplace": "Cape Town",
+   "description": "South African cricketer",
+   "hook": "was the first Black African to score a Test century, later captaining his side to a world title",
+   "known": 0.15,
+   "kind": "batter"
+  },
+  {
+   "label": "Dinesh Karthik",
+   "qid": "Q3519679",
+   "fame": 0.473,
+   "birthplace": "Chennai",
+   "description": "Indian cricketer",
+   "hook": "is a veteran wicketkeeper who hit a last-ball six to win a tri-series final",
+   "known": 0.15,
+   "kind": "wicketkeeper"
+  },
+  {
+   "label": "Harbhajan Singh",
+   "qid": "Q9475",
+   "fame": 0.473,
+   "birthplace": "Jalandhar",
+   "description": "Indian cricketer and politician (born 1980)",
+   "hook": "is an off-spinner who took the first Test hat-trick by a bowler from his country",
+   "known": 0.2,
+   "kind": "spinner"
+  },
+  {
+   "label": "Gautam Gambhir",
+   "qid": "Q2721515",
+   "fame": 0.472,
+   "birthplace": "New Delhi",
+   "description": "Indian politician and former cricketer",
+   "hook": "is an opener who anchored the finals of two World Cup wins and later became a national head coach",
+   "known": 0.2,
+   "kind": "batter"
+  },
+  {
+   "label": "Mohammad Rizwan",
+   "qid": "Q19577671",
+   "fame": 0.472,
+   "birthplace": "Peshawar",
+   "description": "Pakistani cricketer (born 1992)",
+   "hook": "is a wicketkeeper-opener famed for record-setting T20 run tallies in a single year",
+   "known": 0.15,
+   "kind": "wicketkeeper"
+  },
+  {
+   "label": "Alastair Cook",
+   "qid": "Q500551",
+   "fame": 0.471,
+   "birthplace": "Gloucester",
+   "description": "English cricketer (born 1984)",
+   "hook": "is an opening batter who played 159 consecutive Tests and was later knighted",
+   "known": 0.25,
+   "kind": "batter"
+  },
+  {
+   "label": "Kuldeep Yadav",
+   "qid": "Q16225904",
+   "fame": 0.471,
+   "birthplace": "Kanpur",
+   "description": "Indian cricketer",
+   "hook": "is a left-arm wrist-spinner who has taken one-day international hat-tricks",
+   "known": 0.1,
+   "kind": "spinner"
+  },
+  {
+   "label": "VVS Laxman",
+   "qid": "Q10233",
+   "fame": 0.469,
+   "birthplace": "Hyderabad",
+   "description": "Indian cricketer",
+   "hook": "is the elegant batter whose epic 281 against Australia turned a follow-on into a famous win",
+   "known": 0.2,
+   "kind": "batter"
+  },
+  {
+   "label": "Ravichandran Ashwin",
+   "qid": "Q3007571",
+   "fame": 0.468,
+   "birthplace": "Chennai",
+   "description": "Indian cricket player",
+   "hook": "is a spinner famed for the carrom ball and for taking 500 Test wickets",
+   "known": 0.25,
+   "kind": "spinner"
+  },
+  {
+   "label": "AB de Villiers",
+   "qid": "Q3011889",
+   "fame": 0.464,
+   "birthplace": "Pretoria",
+   "description": "South African cricketer",
+   "hook": "is Mr 360, a batter who hit the fastest one-day international hundred, off 31 balls",
+   "known": 0.4,
+   "kind": "batter"
+  },
+  {
+   "label": "Brett Lee",
+   "qid": "Q422980",
+   "fame": 0.455,
+   "birthplace": "Wollongong",
+   "description": "Australian cricketer",
+   "hook": "is a fast bowler who bowled beyond 160 km/h and took a hat-trick at a World Cup",
+   "known": 0.2,
+   "kind": "fast-bowler"
+  },
+  {
+   "label": "Ravi Shastri",
+   "qid": "Q3518502",
+   "fame": 0.453,
+   "birthplace": "Mumbai",
+   "description": "Indian cricket coach, former player and commentator",
+   "hook": "is a former all-rounder turned booming commentator who later became national head coach",
+   "known": 0.15,
+   "kind": "all-rounder"
+  },
+  {
+   "label": "Rishabh Pant",
+   "qid": "Q21622311",
+   "fame": 0.45,
+   "birthplace": "Haridwar",
+   "description": "Indian cricketer",
+   "hook": "is a wicketkeeper-batter who survived a serious car crash and returned to Test cricket",
+   "known": 0.15,
+   "kind": "wicketkeeper"
+  }
+ ]
+}

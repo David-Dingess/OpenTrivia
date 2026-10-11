@@ -1,0 +1,370 @@
+{
+ "id": "table.film-and-tv.famous-villains",
+ "kind": "table",
+ "title": "Famous film villains and their film",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "box-office",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?filmLabel WHERE { VALUES (?item ?filmLabel) { (wd:Q12206942 \"Star Wars\") (wd:Q211013 \"The Silence of the Lambs\") (wd:Q2467893 \"Psycho\") (wd:Q329466 \"A Nightmare on Elm Street\") (wd:Q366957 \"Friday the 13th\") (wd:Q1426891 \"Halloween\") (wd:Q176132 \"Harry Potter\") (wd:Q2281 \"The Lord of the Rings\") (wd:Q1977325 \"The Lion King\") (wd:Q388605 \"101 Dalmatians\") (wd:Q18545687 \"Die Hard\") (wd:Q4775712 \"No Country for Old Men\") (wd:Q430599 \"Austin Powers\") (wd:Q51770 \"Return of the Jedi\") (wd:Q3120776 \"Inglourious Basterds\") (wd:Q2085488 \"The Matrix\") (wd:Q7070198 \"One Flew Over the Cuckoo's Nest\") (wd:Q3899150 \"It\") (wd:Q209758 \"Alien\") (wd:Q694790 \"Superman\") (wd:Q735721 \"Spider-Man\") (wd:Q64825451 \"Avengers: Infinity War\") (wd:Q158940 \"The Dark Knight Rises\") (wd:Q840291 \"X-Men\") (wd:Q3822980 \"The Wizard of Oz\") (wd:Q1035128 \"Peter Pan\") (wd:Q2537674 \"Back to the Future\") (wd:Q2305638 \"The Jungle Book\") (wd:Q10749037 \"Toy Story 3\") (wd:Q8099967 \"Who Framed Roger Rabbit\") (wd:Q1628095 \"Misery\") (wd:Q1660555 \"Sleeping Beauty\") (wd:Q324433 \"Alice in Wonderland\") (wd:Q611295 \"Snow White\") (wd:Q18152783 \"Tangled\") (wd:Q840202 \"Pirates of the Caribbean\") (wd:Q2916413 \"Shrek\") (wd:Q833933 \"2001: A Space Odyssey\") (wd:Q2327890 \"Terminator 2: Judgment Day\") (wd:Q2975734 \"The Usual Suspects\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T06:50:11.799Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T06:50:11.799Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "film",
+   "label": "Their film",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "villain",
+  "many": "villains",
+  "hookAsk": "Which famous film villain {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "film": {
+    "role": "link",
+    "pick": "{label} is the villain of which film or series?",
+    "statement": "{label} is the villain of {value}.",
+    "odd": "Three of these villains come from {value}. Which one does not?",
+    "all": "Tap all {n} villains from {value}.",
+    "reverse": "Which of these villains comes from {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Michael Myers",
+   "qid": "Q1426891",
+   "fame": 0.653,
+   "film": "Halloween",
+   "description": "fictional character in the Halloween franchise",
+   "hook": "stalks babysitters in a quiet suburb wearing a pale white mask and mechanic's coveralls",
+   "known": 0.95,
+   "kind": "slasher villain"
+  },
+  {
+   "label": "Hannibal Lecter",
+   "qid": "Q211013",
+   "fame": 0.64,
+   "film": "The Silence of the Lambs",
+   "description": "fictional character created by Thomas Harris",
+   "hook": "is a brilliant, cultured psychiatrist with a taste for human flesh who advises an FBI trainee",
+   "known": 0.95,
+   "kind": "psychological villain"
+  },
+  {
+   "label": "Jason Voorhees",
+   "qid": "Q366957",
+   "fame": 0.624,
+   "film": "Friday the 13th",
+   "description": "main character of the Friday the 13th series",
+   "hook": "wears a hockey mask and haunts the teen counselors of a summer camp by a lake",
+   "known": 0.8,
+   "kind": "slasher villain"
+  },
+  {
+   "label": "Pennywise",
+   "qid": "Q3899150",
+   "fame": 0.61,
+   "film": "It",
+   "description": "main antagonist of Stephen King's novel It",
+   "hook": "is a shape-shifting clown who lurks in the sewers of a small Maine town and preys on kids' fears",
+   "known": 0.8,
+   "kind": "supernatural horror"
+  },
+  {
+   "label": "Darth Vader",
+   "qid": "Q12206942",
+   "fame": 0.599,
+   "film": "Star Wars",
+   "description": "fictional character from the Star Wars media franchise",
+   "hook": "is a black-armored Sith lord famous for his wheezing breath, deep voice and red lightsaber",
+   "known": 0.95,
+   "kind": "sci-fi villain"
+  },
+  {
+   "label": "Freddy Krueger",
+   "qid": "Q329466",
+   "fame": 0.597,
+   "film": "A Nightmare on Elm Street",
+   "description": "the main antagonist of the A Nightmare on Elm Street film series",
+   "hook": "is a burn-scarred man in a striped sweater with a bladed glove who attacks teens in their dreams",
+   "known": 0.95,
+   "kind": "slasher villain"
+  },
+  {
+   "label": "Sauron",
+   "qid": "Q2281",
+   "fame": 0.593,
+   "film": "The Lord of the Rings",
+   "description": "fictional character from J.R.R. Tolkien's legendarium",
+   "hook": "is an all-seeing flaming eye atop a dark tower, hungry for a golden band of power",
+   "known": 0.8,
+   "kind": "fantasy villain"
+  },
+  {
+   "label": "Bane",
+   "qid": "Q158940",
+   "fame": 0.586,
+   "film": "The Dark Knight Rises",
+   "description": "fictional character in the DC Comics universe, a supervillain",
+   "hook": "is a hulking masked brute who famously breaks the Caped Crusader's back",
+   "known": 0.6,
+   "kind": "superhero villain"
+  },
+  {
+   "label": "Lord Voldemort",
+   "qid": "Q176132",
+   "fame": 0.583,
+   "film": "Harry Potter",
+   "description": "main antagonist of J. K. Rowling's Harry Potter series",
+   "hook": "is a noseless dark wizard who left a boy with a lightning-bolt scar and a house of horcruxes",
+   "known": 0.95,
+   "kind": "fantasy villain"
+  },
+  {
+   "label": "Magneto",
+   "qid": "Q840291",
+   "fame": 0.58,
+   "film": "X-Men",
+   "description": "fictional character in Marvel Comics",
+   "hook": "controls metal with his mind and leads mutants against humankind",
+   "known": 0.6,
+   "kind": "superhero villain"
+  },
+  {
+   "label": "Anton Chigurh",
+   "qid": "Q4775712",
+   "fame": 0.569,
+   "film": "No Country for Old Men",
+   "description": "fictional hitman",
+   "hook": "is a coin-flipping hitman with a bowl haircut and a cattle stunner",
+   "known": 0.4,
+   "kind": "crime villain"
+  },
+  {
+   "label": "Xenomorph",
+   "qid": "Q209758",
+   "fame": 0.564,
+   "film": "Alien",
+   "description": "fictional extraterrestrial species from the Alien film series",
+   "hook": "is a sleek, acid-blooded creature with an elongated head and a second set of jaws",
+   "known": 0.8,
+   "kind": "supernatural horror"
+  },
+  {
+   "label": "HAL 9000",
+   "qid": "Q833933",
+   "fame": 0.563,
+   "film": "2001: A Space Odyssey",
+   "description": "fictional character in Arthur C. Clarke's Space Odyssey series",
+   "hook": "is a calm-voiced shipboard computer with a glowing red eye that won't open the pod bay doors",
+   "known": 0.6,
+   "kind": "sci-fi villain"
+  },
+  {
+   "label": "Palpatine",
+   "qid": "Q51770",
+   "fame": 0.56,
+   "film": "Return of the Jedi",
+   "description": "fictional character from Star Wars",
+   "hook": "is a hooded Sith emperor who unleashes blue lightning from his fingertips",
+   "known": 0.8,
+   "kind": "sci-fi villain"
+  },
+  {
+   "label": "Keyser Söze",
+   "qid": "Q2975734",
+   "fame": 0.54,
+   "film": "The Usual Suspects",
+   "description": "character in the 1995 film The Usual Suspects",
+   "hook": "is a near-mythical crime boss whose true identity is the big mystery",
+   "known": 0.4,
+   "kind": "crime villain"
+  },
+  {
+   "label": "Lex Luthor",
+   "qid": "Q694790",
+   "fame": 0.54,
+   "film": "Superman",
+   "description": "fictional character in DC Comics",
+   "hook": "is a brilliant bald billionaire and arch-enemy of the Man of Steel",
+   "known": 0.8,
+   "kind": "superhero villain"
+  },
+  {
+   "label": "Norman Bates",
+   "qid": "Q2467893",
+   "fame": 0.537,
+   "film": "Psycho",
+   "description": "fictional character",
+   "hook": "is a shy motel owner with an unhealthy devotion to his mother",
+   "known": 0.8,
+   "kind": "psychological villain"
+  },
+  {
+   "label": "Nurse Ratched",
+   "qid": "Q7070198",
+   "fame": 0.517,
+   "film": "One Flew Over the Cuckoo's Nest",
+   "description": "main antagonist of Ken Kesey's 1962 novel One Flew Over the Cuckoo's Nest",
+   "hook": "is a stern head of a psychiatric ward who rules her patients with an iron hand",
+   "known": 0.6,
+   "kind": "psychological villain"
+  },
+  {
+   "label": "Thanos",
+   "qid": "Q64825451",
+   "fame": 0.516,
+   "film": "Avengers: Infinity War",
+   "description": "fictional character from the Marvel Cinematic Universe",
+   "hook": "is a giant purple Titan who gathers six stones to wipe out half of all life with a snap",
+   "known": 0.8,
+   "kind": "superhero villain"
+  },
+  {
+   "label": "Cruella de Vil",
+   "qid": "Q388605",
+   "fame": 0.515,
+   "film": "101 Dalmatians",
+   "description": "fictional character in Dodie Smith's \"The Hundred and One Dalmatians\" and in the Disney animated film and franchise \"101 Dalmatians\"",
+   "hook": "is a fur-obsessed socialite with black-and-white hair who wants a coat made of spotted pups",
+   "known": 0.8,
+   "kind": "animation villain"
+  },
+  {
+   "label": "Green Goblin",
+   "qid": "Q735721",
+   "fame": 0.511,
+   "film": "Spider-Man",
+   "description": "name used by numerous fictional characters in Marvel Comics",
+   "hook": "is a glider-riding, pumpkin-bomb-throwing villain in a ghoulish mask",
+   "known": 0.6,
+   "kind": "superhero villain"
+  },
+  {
+   "label": "Davy Jones",
+   "qid": "Q840202",
+   "fame": 0.502,
+   "film": "Pirates of the Caribbean",
+   "description": "fictional character from Pirates of the Caribbean",
+   "hook": "is a tentacle-bearded ship captain who commands a ghostly vessel and hides his heart in a chest",
+   "known": 0.6,
+   "kind": "fantasy villain"
+  },
+  {
+   "label": "Hans Landa",
+   "qid": "Q3120776",
+   "fame": 0.494,
+   "film": "Inglourious Basterds",
+   "description": "fictional Inglourious Basterds character",
+   "hook": null,
+   "known": 0.6,
+   "kind": "psychological villain"
+  },
+  {
+   "label": "T-1000",
+   "qid": "Q2327890",
+   "fame": 0.494,
+   "film": "Terminator 2: Judgment Day",
+   "description": "robotic antagonist in the film \"Terminator 2: Judgment Day\"",
+   "hook": "is a shape-shifting liquid-metal android sent from the future to hunt a boy",
+   "known": 0.8,
+   "kind": "sci-fi villain"
+  },
+  {
+   "label": "Captain Hook",
+   "qid": "Q1035128",
+   "fame": 0.49,
+   "film": "Peter Pan",
+   "description": "fictional pirate",
+   "hook": "is a swashbuckling pirate with a metal claw for a hand who is chased by a ticking crocodile",
+   "known": 0.8,
+   "kind": "animation villain"
+  },
+  {
+   "label": "Wicked Witch of the West",
+   "qid": "Q3822980",
+   "fame": 0.473,
+   "film": "The Wizard of Oz",
+   "description": "fictional character and the most significant antagonist in L. Frank Baum's children's book The Wonderful Wizard of Oz",
+   "hook": "is a green-skinned, broom-flying sorceress who sends winged monkeys after a girl and her dog",
+   "known": 0.95,
+   "kind": "animation villain"
+  },
+  {
+   "label": "Agent Smith",
+   "qid": "Q2085488",
+   "fame": 0.472,
+   "film": "The Matrix",
+   "description": "Fictional character appearing in The Matrix",
+   "hook": "is a sunglasses-wearing sentient program in a dark suit who can copy himself endlessly",
+   "known": 0.6,
+   "kind": "sci-fi villain"
+  },
+  {
+   "label": "Maleficent",
+   "qid": "Q1660555",
+   "fame": 0.47,
+   "film": "Sleeping Beauty",
+   "description": "Disney fairy character",
+   "hook": "is a horned dark fairy who curses a baby princess to prick her finger on a spinning wheel",
+   "known": 0.8,
+   "kind": "animation villain"
+  },
+  {
+   "label": "Scar",
+   "qid": "Q1977325",
+   "fame": 0.461,
+   "film": "The Lion King",
+   "description": "fictional character and main antagonist from The Lion King",
+   "hook": "is a jealous uncle with a black mane who schemes with hyenas to seize the throne",
+   "known": 0.95,
+   "kind": "animation villain"
+  },
+  {
+   "label": "Annie Wilkes",
+   "qid": "Q1628095",
+   "fame": 0.452,
+   "film": "Misery",
+   "description": "fictional character in the 1987 novel Misery",
+   "hook": "is a former nurse who holds her favorite novelist captive after rescuing him from a snowy crash",
+   "known": 0.4,
+   "kind": "psychological villain"
+  },
+  {
+   "label": "Dr. Evil",
+   "qid": "Q430599",
+   "fame": 0.451,
+   "film": "Austin Powers",
+   "description": "character in Austin Powers films",
+   "hook": "is a bald, cat-stroking mastermind who demands one million dollars with his pinky at his mouth",
+   "known": 0.6,
+   "kind": "comedy villain"
+  }
+ ]
+}

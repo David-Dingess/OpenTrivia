@@ -1,0 +1,385 @@
+{
+ "id": "table.sports.super-bowl-winners",
+ "kind": "table",
+ "title": "Super Bowls: year and winning team",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "football",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?year ?winnerLabel WHERE { { SELECT ?item (MIN(?d) AS ?year) (SAMPLE(?w) AS ?winner) WHERE { ?item wdt:P31 wd:Q32096 ; wdt:P1346 ?w ; (wdt:P585|wdt:P580) ?d . } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T04:00:40.576Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T04:00:40.576Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "year",
+   "label": "Played",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "winner",
+   "label": "Winner",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "item",
+  "many": "items",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Super Bowl LX",
+   "qid": "Q118876146",
+   "fame": 0.714,
+   "year": 2026,
+   "winner": "Seattle Seahawks",
+   "description": "2026 National Football League championship game"
+  },
+  {
+   "label": "Super Bowl LVI",
+   "qid": "Q30114464",
+   "fame": 0.66,
+   "year": 2022,
+   "winner": "Los Angeles Rams",
+   "description": "NFL championship game in 2022"
+  },
+  {
+   "label": "Super Bowl LIX",
+   "qid": "Q91157899",
+   "fame": 0.644,
+   "year": 2025,
+   "winner": "Philadelphia Eagles",
+   "description": "The 59th American Super Bowl Championship Game"
+  },
+  {
+   "label": "Super Bowl LV",
+   "qid": "Q24233824",
+   "fame": 0.617,
+   "year": 2021,
+   "winner": "Tampa Bay Buccaneers",
+   "description": "2021 NFL championship game, held in Tampa, Florida"
+  },
+  {
+   "label": "Super Bowl LII",
+   "qid": "Q15633579",
+   "fame": 0.613,
+   "year": 2018,
+   "winner": "Philadelphia Eagles",
+   "description": "2018 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl LVIII",
+   "qid": "Q54196525",
+   "fame": 0.609,
+   "year": 2024,
+   "winner": "Kansas City Chiefs",
+   "description": "2024 National Football League championship game"
+  },
+  {
+   "label": "Super Bowl LI",
+   "qid": "Q7642194",
+   "fame": 0.602,
+   "year": 2017,
+   "winner": "New England Patriots",
+   "description": "2017 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XXXVI",
+   "qid": "Q1073479",
+   "fame": 0.601,
+   "year": 2002,
+   "winner": "New England Patriots",
+   "description": "2002 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl LIII",
+   "qid": "Q20204362",
+   "fame": 0.597,
+   "year": 2019,
+   "winner": "New England Patriots",
+   "description": "2019 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XLVIII",
+   "qid": "Q1190093",
+   "fame": 0.597,
+   "year": 2014,
+   "winner": "Seattle Seahawks",
+   "description": "2014 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl LVII",
+   "qid": "Q54196526",
+   "fame": 0.596,
+   "year": 2023,
+   "winner": "Kansas City Chiefs",
+   "description": "2023 National Football League championship game"
+  },
+  {
+   "label": "Super Bowl XLVII",
+   "qid": "Q126291",
+   "fame": 0.596,
+   "year": 2013,
+   "winner": "Baltimore Ravens",
+   "description": "2013 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl LIV",
+   "qid": "Q20204363",
+   "fame": 0.589,
+   "year": 2020,
+   "winner": "Kansas City Chiefs",
+   "description": "2020 NFL championship game, held in Miami, Florida"
+  },
+  {
+   "label": "Super Bowl XLIX",
+   "qid": "Q1710023",
+   "fame": 0.588,
+   "year": 2015,
+   "winner": "New England Patriots",
+   "description": "2015 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XXXVII",
+   "qid": "Q939802",
+   "fame": 0.584,
+   "year": 2003,
+   "winner": "Tampa Bay Buccaneers",
+   "description": "2003 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl 50",
+   "qid": "Q7642193",
+   "fame": 0.576,
+   "year": 2016,
+   "winner": "Denver Broncos",
+   "description": "2016 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XLV",
+   "qid": "Q371433",
+   "fame": 0.576,
+   "year": 2011,
+   "winner": "Green Bay Packers",
+   "description": "2011 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XLIV",
+   "qid": "Q268882",
+   "fame": 0.571,
+   "year": 2010,
+   "winner": "New Orleans Saints",
+   "description": "2010 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XXXV",
+   "qid": "Q625210",
+   "fame": 0.57,
+   "year": 2001,
+   "winner": "Baltimore Ravens",
+   "description": "2001 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XLI",
+   "qid": "Q597607",
+   "fame": 0.569,
+   "year": 2007,
+   "winner": "Indianapolis Colts",
+   "description": "2007 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XLIII",
+   "qid": "Q853768",
+   "fame": 0.569,
+   "year": 2009,
+   "winner": "Pittsburgh Steelers",
+   "description": "2009 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XLII",
+   "qid": "Q597314",
+   "fame": 0.565,
+   "year": 2008,
+   "winner": "New York Giants",
+   "description": "2008 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XLVI",
+   "qid": "Q849079",
+   "fame": 0.565,
+   "year": 2012,
+   "winner": "New York Giants",
+   "description": "2012 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XXXI",
+   "qid": "Q598389",
+   "fame": 0.565,
+   "year": 1997,
+   "winner": "Green Bay Packers",
+   "description": "1997 edition of the Super Bowlhggh"
+  },
+  {
+   "label": "Super Bowl XXX",
+   "qid": "Q1065229",
+   "fame": 0.557,
+   "year": 1996,
+   "winner": "Dallas Cowboys",
+   "description": "1996 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XXIX",
+   "qid": "Q1064815",
+   "fame": 0.551,
+   "year": 1995,
+   "winner": "San Francisco 49ers",
+   "description": "1995 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XXXVIII",
+   "qid": "Q1049630",
+   "fame": 0.549,
+   "year": 2004,
+   "winner": "New England Patriots",
+   "description": "2004 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XL",
+   "qid": "Q904928",
+   "fame": 0.538,
+   "year": 2006,
+   "winner": "Pittsburgh Steelers",
+   "description": "2006 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XXXIX",
+   "qid": "Q926745",
+   "fame": 0.538,
+   "year": 2005,
+   "winner": "New England Patriots",
+   "description": "2005 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XXXIII",
+   "qid": "Q508448",
+   "fame": 0.529,
+   "year": 1999,
+   "winner": "Denver Broncos",
+   "description": "1999 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XXV",
+   "qid": "Q1512351",
+   "fame": 0.527,
+   "year": 1991,
+   "winner": "New York Giants",
+   "description": "1991 National Football League championship game"
+  },
+  {
+   "label": "Super Bowl XXXII",
+   "qid": "Q648144",
+   "fame": 0.525,
+   "year": 1998,
+   "winner": "Denver Broncos",
+   "description": "1998 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XXVII",
+   "qid": "Q1463422",
+   "fame": 0.518,
+   "year": 1993,
+   "winner": "Dallas Cowboys",
+   "description": "1993 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XX",
+   "qid": "Q1073454",
+   "fame": 0.511,
+   "year": 1986,
+   "winner": "Chicago Bears",
+   "description": "1986 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XXVIII",
+   "qid": "Q621500",
+   "fame": 0.499,
+   "year": 1994,
+   "winner": "Dallas Cowboys",
+   "description": "1994 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XXIII",
+   "qid": "Q1307150",
+   "fame": 0.497,
+   "year": 1989,
+   "winner": "San Francisco 49ers",
+   "description": "1989 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XXIV",
+   "qid": "Q1064807",
+   "fame": 0.496,
+   "year": 1990,
+   "winner": "San Francisco 49ers",
+   "description": "1990 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl I",
+   "qid": "Q847827",
+   "fame": 0.489,
+   "year": 1967,
+   "winner": "Green Bay Packers",
+   "description": "1967 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XXI",
+   "qid": "Q1808572",
+   "fame": 0.487,
+   "year": 1987,
+   "winner": "New York Giants",
+   "description": "1987 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XVIII",
+   "qid": "Q1848392",
+   "fame": 0.481,
+   "year": 1984,
+   "winner": "Los Angeles Raiders",
+   "description": "1984 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl III",
+   "qid": "Q939846",
+   "fame": 0.472,
+   "year": 1969,
+   "winner": "New York Jets",
+   "description": "1969 edition of the Super Bowl"
+  },
+  {
+   "label": "Super Bowl XIX",
+   "qid": "Q1965838",
+   "fame": 0.462,
+   "year": 1985,
+   "winner": "San Francisco 49ers",
+   "description": "1985 edition of the Super Bowl"
+  }
+ ]
+}

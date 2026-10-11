@@ -1,0 +1,579 @@
+{
+ "id": "table.biology.plants-family",
+ "kind": "table",
+ "title": "Famous plants and their family",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "plants",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?familyLabel WHERE { { SELECT ?item (SAMPLE(?f) AS ?family) (COUNT(DISTINCT ?f) AS ?nF) WHERE { VALUES ?item { wd:Q34687 wd:Q93201 wd:Q171497 wd:Q26158 wd:Q29465 wd:Q158984 wd:Q59882 wd:Q147552 wd:Q147105 wd:Q157124 wd:Q82014 wd:Q156901 wd:Q130918 wd:Q131584 wd:Q171892 wd:Q131219 wd:Q148675 wd:Q16528 wd:Q146628 wd:Q5194627 wd:Q155825 wd:Q132973 wd:Q1927560 wd:Q21187 wd:Q161098 wd:Q11575 wd:Q11577 wd:Q12104 wd:Q3391243 wd:Q10998 wd:Q37937 wd:Q83124 wd:Q11006 wd:Q37383 wd:Q133481 wd:Q156354 wd:Q42385 wd:Q101815 wd:Q30046 wd:Q132970 wd:Q1493 wd:Q13158 wd:Q17507129 wd:Q23425 wd:Q11678009 wd:Q23485 wd:Q23400 wd:Q58677 wd:Q47722 wd:Q81464 wd:Q83193 wd:Q165308 wd:Q7224923 wd:Q370239 wd:Q43084 wd:Q1380 wd:Q156037 wd:Q38859 wd:Q35625 wd:Q42562 wd:Q15041677 wd:Q26726 wd:Q181095 wd:Q80079 wd:Q275573 wd:Q670887 wd:Q165191 wd:Q165145 wd:Q156895 wd:Q156307 wd:Q150129 wd:Q149851 wd:Q13187 wd:Q25292 wd:Q165137 wd:Q36146 wd:Q37083 wd:Q214733 wd:Q39918 wd:Q13189 wd:Q18674606 wd:Q146281 wd:Q500 wd:Q3355098 wd:Q3919027 wd:Q37153 wd:Q343300 } ?item wdt:P171+ ?f . ?f wdt:P105 wd:Q35409 . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nF = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 134",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T03:23:11.221Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T03:23:11.221Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "family",
+   "label": "Family",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "plant",
+  "many": "plants",
+  "capitalise": true,
+  "columns": {
+   "family": {
+    "role": "link",
+    "pick": "What plant family is {label} in?",
+    "statement": "{label} is in the {value} family.",
+    "match": "Match each plant to its family.",
+    "odd": "Three of these plants are in the {value} family. Which one isn't?",
+    "all": "Tap all {n} plants in the {value} family."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "cassava",
+   "qid": "Q83124",
+   "fame": 0.616,
+   "family": "Euphorbiaceae",
+   "kind": "vegetable",
+   "description": "species of plant native to South America cultivated for industrial and food uses",
+   "hook": "is a starchy root crop turned into flour, chips, and tapioca pearls across the tropics",
+   "known": 0.4
+  },
+  {
+   "label": "Persea americana",
+   "qid": "Q37153",
+   "fame": 0.61,
+   "family": "Lauraceae",
+   "kind": "fruit",
+   "description": "species of plant, use Q961769 for the fruit",
+   "hook": "is a tree grown for its buttery green flesh, essential to guacamole and toast",
+   "known": 0.8
+  },
+  {
+   "label": "maize",
+   "qid": "Q11575",
+   "fame": 0.609,
+   "family": "Poaceae",
+   "kind": "grain",
+   "description": "species of grass cultivated as a food crop",
+   "hook": "is a towering grass whose golden cobs are a staple food worldwide",
+   "known": 0.95
+  },
+  {
+   "label": "potato",
+   "qid": "Q10998",
+   "fame": 0.605,
+   "family": "Solanaceae",
+   "kind": "vegetable",
+   "description": "species of plant (for the food, use Q16587531)",
+   "hook": "is an underground tuber that became a staple crop across Europe after arriving from the Andes",
+   "known": 0.95
+  },
+  {
+   "label": "Citrus × limon",
+   "qid": "Q500",
+   "fame": 0.6,
+   "family": "Rutaceae",
+   "kind": "fruit",
+   "description": "nothospecies of plant",
+   "hook": "is a sour yellow orchard crop whose juice and zest flavor drinks and desserts",
+   "known": 0.8
+  },
+  {
+   "label": "Hibiscus",
+   "qid": "Q157124",
+   "fame": 0.582,
+   "family": "Malvaceae",
+   "kind": "flower",
+   "description": "genus of plants",
+   "hook": "is a genus of large, trumpet-shaped tropical blooms often dried into tea",
+   "known": 0.6
+  },
+  {
+   "label": "peanut",
+   "qid": "Q37383",
+   "fame": 0.579,
+   "family": "Fabaceae",
+   "kind": "legume",
+   "description": "legume cultivated for use of the underground seedpods as a grain crop, and also processed as peanut oil",
+   "hook": "grows its seedpods underground and is pressed into a popular cooking oil",
+   "known": 0.8
+  },
+  {
+   "label": "Chrysanthemum",
+   "qid": "Q59882",
+   "fame": 0.578,
+   "family": "Asteraceae",
+   "kind": "flower",
+   "description": "genus of plants",
+   "hook": "is a many-petaled autumn bloom central to East Asian festivals and tea",
+   "known": 0.6
+  },
+  {
+   "label": "Ficus carica",
+   "qid": "Q36146",
+   "fame": 0.573,
+   "family": "Moraceae",
+   "kind": "fruit",
+   "description": "species of plant",
+   "hook": "is a Mediterranean tree whose soft, seed-filled treat is dried for snacking",
+   "known": 0.4
+  },
+  {
+   "label": "sweet potato",
+   "qid": "Q37937",
+   "fame": 0.565,
+   "family": "Convolvulaceae",
+   "kind": "vegetable",
+   "description": "species of plant",
+   "hook": "is an orange-fleshed root crop baked into pies and fries around the world",
+   "known": 0.8
+  },
+  {
+   "label": "date palm",
+   "qid": "Q25292",
+   "fame": 0.564,
+   "family": "Arecaceae",
+   "kind": "fruit",
+   "description": "palm tree cultivated for its edible sweet fruit",
+   "hook": "is a desert tree bearing a sticky, sugar-rich delicacy eaten dried",
+   "known": 0.6
+  },
+  {
+   "label": "Curcuma longa",
+   "qid": "Q42562",
+   "fame": 0.563,
+   "family": "Zingiberaceae",
+   "kind": "spice-herb",
+   "description": "plant used as spice",
+   "hook": "is a golden-rooted plant that colors curry dishes and gives mustard its hue",
+   "known": 0.6
+  },
+  {
+   "label": "Ananas comosus",
+   "qid": "Q1493",
+   "fame": 0.562,
+   "family": "Bromeliaceae",
+   "kind": "fruit",
+   "description": "species of flowering plant",
+   "hook": "is a spiky tropical treat crowned with a leafy tuft and tangy golden flesh",
+   "known": 0.8
+  },
+  {
+   "label": "black pepper",
+   "qid": "Q43084",
+   "fame": 0.561,
+   "family": "Piperaceae",
+   "kind": "spice-herb",
+   "description": "species of plant",
+   "hook": "is a tropical vine whose dried berries are ground into the world's most common table seasoning",
+   "known": 0.8
+  },
+  {
+   "label": "Hordeum vulgare",
+   "qid": "Q11577",
+   "fame": 0.558,
+   "family": "Poaceae",
+   "kind": "grain",
+   "description": "species of plant",
+   "hook": "is a cereal crop malted to brew beer and whisky",
+   "known": 0.6
+  },
+  {
+   "label": "Avena sativa",
+   "qid": "Q12104",
+   "fame": 0.557,
+   "family": "Poaceae",
+   "kind": "grain",
+   "description": "type of cereal",
+   "hook": "is a cereal crop rolled into breakfast porridge and hearty granola bars",
+   "known": 0.6
+  },
+  {
+   "label": "strawberry",
+   "qid": "Q13158",
+   "fame": 0.556,
+   "family": "Rosaceae",
+   "kind": "fruit",
+   "description": "hybrid species in the rose family",
+   "hook": "is a heart-shaped red treat with its seeds dotting the outside",
+   "known": 0.95
+  },
+  {
+   "label": "watermelon",
+   "qid": "Q17507129",
+   "fame": 0.556,
+   "family": "Cucurbitaceae",
+   "kind": "fruit",
+   "description": "species of plant",
+   "hook": "is a summer favorite with sweet pink flesh and a rind used for pickling",
+   "known": 0.95
+  },
+  {
+   "label": "soybean",
+   "qid": "Q11006",
+   "fame": 0.555,
+   "family": "Fabaceae",
+   "kind": "legume",
+   "description": "species of plant in the Fabaceae family",
+   "hook": "is a protein-rich crop pressed into oil, milk, and blocks of tofu",
+   "known": 0.8
+  },
+  {
+   "label": "Rosa",
+   "qid": "Q34687",
+   "fame": 0.553,
+   "family": "Rosaceae",
+   "kind": "flower",
+   "description": "genus of plants",
+   "hook": "is a thorny-stemmed bloom long given as a symbol of romance",
+   "known": 0.95
+  },
+  {
+   "label": "Lilium",
+   "qid": "Q5194627",
+   "fame": 0.546,
+   "family": "Liliaceae",
+   "kind": "flower",
+   "description": "genus of plants",
+   "hook": "is a trumpet-shaped bloom whose scent fills funerals and Easter services",
+   "known": 0.8
+  },
+  {
+   "label": "broccoli",
+   "qid": "Q47722",
+   "fame": 0.543,
+   "family": "Brassicaceae",
+   "kind": "vegetable",
+   "description": "edible green plant in the cabbage family",
+   "hook": "is a tree-shaped green crop packed into stir-fries and steamed side dishes",
+   "known": 0.95
+  },
+  {
+   "label": "Dionaea muscipula",
+   "qid": "Q155825",
+   "fame": 0.543,
+   "family": "Droseraceae",
+   "kind": "carnivorous",
+   "description": "carnivorous plant",
+   "hook": "snaps its hinged leaves shut to trap and digest unlucky insects",
+   "known": 0.6
+  },
+  {
+   "label": "Cucumis sativus",
+   "qid": "Q23425",
+   "fame": 0.542,
+   "family": "Cucurbitaceae",
+   "kind": "vegetable",
+   "description": "species of plant in the Cucurbitaceae family",
+   "hook": "is a cool, watery crop sliced into salads and pickled into jars",
+   "known": 0.95
+  },
+  {
+   "label": "Nelumbo nucifera",
+   "qid": "Q16528",
+   "fame": 0.541,
+   "family": "Nelumbonaceae",
+   "kind": "flower",
+   "description": "species of plant",
+   "hook": "rises unstained from muddy ponds as a symbol of purity in Asian religions",
+   "known": 0.4
+  },
+  {
+   "label": "Camellia sinensis",
+   "qid": "Q101815",
+   "fame": 0.537,
+   "family": "Theaceae",
+   "kind": "beverage",
+   "description": "species of plant",
+   "hook": "is the shrub whose picked leaves are dried and steeped to brew a global favorite drink",
+   "known": 0.6
+  },
+  {
+   "label": "Prunus persica",
+   "qid": "Q13189",
+   "fame": 0.537,
+   "family": "Rosaceae",
+   "kind": "fruit",
+   "description": "species of fruit tree (for the fruit use Q13202263)",
+   "hook": "is a fuzzy-skinned orchard treat with sweet golden flesh around a hard pit",
+   "known": 0.95
+  },
+  {
+   "label": "common sunflower",
+   "qid": "Q171497",
+   "fame": 0.535,
+   "family": "Asteraceae",
+   "kind": "flower",
+   "description": "species of flowering plant in the family of Asteraceae",
+   "hook": "turns its tall golden head to track the sun across the sky",
+   "known": 0.8
+  },
+  {
+   "label": "ginger",
+   "qid": "Q35625",
+   "fame": 0.531,
+   "family": "Zingiberaceae",
+   "kind": "spice-herb",
+   "description": "plant species",
+   "hook": "is a knobby root grated into stir-fries and steeped for a soothing tea",
+   "known": 0.8
+  },
+  {
+   "label": "Sequoiadendron giganteum",
+   "qid": "Q149851",
+   "fame": 0.531,
+   "family": "Cupressaceae",
+   "kind": "tree",
+   "description": "species of tree native to North America",
+   "hook": "is the world's most massive living thing, towering over California's mountains",
+   "known": 0.4
+  },
+  {
+   "label": "Bambusoideae",
+   "qid": "Q670887",
+   "fame": 0.524,
+   "family": "Poaceae",
+   "kind": "grass",
+   "description": "subfamily of plants",
+   "hook": "shoots upward nearly a meter in a single day and feeds giant pandas",
+   "known": 0.8
+  },
+  {
+   "label": "Papaver somniferum",
+   "qid": "Q131584",
+   "fame": 0.52,
+   "family": "Papaveraceae",
+   "kind": "flower",
+   "description": "species of plant",
+   "hook": "produces the sap used to make morphine, and its tiny seeds top bagels",
+   "known": 0.2
+  },
+  {
+   "label": "Dahlia",
+   "qid": "Q130918",
+   "fame": 0.519,
+   "family": "Asteraceae",
+   "kind": "flower",
+   "description": "genus of plants",
+   "hook": "is Mexico's national bloom, prized by gardeners for its geometric petal spirals",
+   "known": 0.4
+  },
+  {
+   "label": "Capsicum annuum",
+   "qid": "Q1380",
+   "fame": 0.518,
+   "family": "Solanaceae",
+   "kind": "vegetable",
+   "description": "species of the plant genus Capsicum",
+   "hook": "ranges from sweet bell varieties to fiery chilies that bring the heat to salsas",
+   "known": 0.95
+  },
+  {
+   "label": "Aloe vera",
+   "qid": "Q80079",
+   "fame": 0.514,
+   "family": "Asphodelaceae",
+   "kind": "succulent",
+   "description": "species of plant, herb",
+   "hook": "stores soothing gel in its thick spiky leaves, popular for sunburn relief",
+   "known": 0.8
+  },
+  {
+   "label": "basil",
+   "qid": "Q38859",
+   "fame": 0.512,
+   "family": "Lamiaceae",
+   "kind": "spice-herb",
+   "description": "species of plant, herb",
+   "hook": "is the fragrant leaf at the heart of pesto and classic Italian cooking",
+   "known": 0.95
+  },
+  {
+   "label": "Jasminum",
+   "qid": "Q82014",
+   "fame": 0.511,
+   "family": "Oleaceae",
+   "kind": "flower",
+   "description": "genus of plants in the Oleaceae family",
+   "hook": "releases a heady evening scent prized in perfumes and scented teas",
+   "known": 0.6
+  },
+  {
+   "label": "Narcissus",
+   "qid": "Q29465",
+   "fame": 0.506,
+   "family": "Amaryllidaceae",
+   "kind": "flower",
+   "description": "genus of plants in family Amaryllidaceae",
+   "hook": "pushes up trumpet-shaped yellow blooms as one of spring's first signs",
+   "known": 0.8
+  },
+  {
+   "label": "Tulipa",
+   "qid": "Q93201",
+   "fame": 0.506,
+   "family": "Liliaceae",
+   "kind": "flower",
+   "description": "genus of plants",
+   "hook": "sparked a speculative bulb-trading frenzy in the Dutch Golden Age",
+   "known": 0.95
+  },
+  {
+   "label": "Carnegiea gigantea",
+   "qid": "Q275573",
+   "fame": 0.502,
+   "family": "Cactaceae",
+   "kind": "cactus",
+   "description": "species of plant",
+   "hook": "lives up to two centuries, raising arm-like limbs across the Arizona desert",
+   "known": 0.4
+  },
+  {
+   "label": "Paeonia",
+   "qid": "Q147105",
+   "fame": 0.502,
+   "family": "Paeoniaceae",
+   "kind": "flower",
+   "description": "genus of flowering plants",
+   "hook": "unfurls huge ruffled blooms long grown in Chinese imperial gardens",
+   "known": 0.6
+  },
+  {
+   "label": "Sequoia sempervirens",
+   "qid": "Q150129",
+   "fame": 0.499,
+   "family": "Cupressaceae",
+   "kind": "tree",
+   "description": "species of plant in the monotypic genus Sequoia in the cypress family (Cupressaceae)",
+   "hook": "is the tallest living thing on Earth, soaring above California's foggy coast",
+   "known": 0.4
+  },
+  {
+   "label": "Tagetes",
+   "qid": "Q147552",
+   "fame": 0.492,
+   "family": "Asteraceae",
+   "kind": "flower",
+   "description": "genus of plants",
+   "hook": "lines gardens in fiery orange and gold and honors the dead on Dia de los Muertos",
+   "known": 0.6
+  },
+  {
+   "label": "Cannabis sativa",
+   "qid": "Q26726",
+   "fame": 0.488,
+   "family": "Cannabaceae",
+   "kind": "herb",
+   "description": "species of plant",
+   "hook": "yields tough fibers once spun into rope and sails for centuries of sailors",
+   "known": 0.4
+  },
+  {
+   "label": "Lavandula",
+   "qid": "Q171892",
+   "fame": 0.488,
+   "family": "Lamiaceae",
+   "kind": "herb",
+   "description": "genus of plants",
+   "hook": "perfumes fields of Provence with its purple spikes and calming scent",
+   "known": 0.8
+  },
+  {
+   "label": "Lactuca sativa",
+   "qid": "Q83193",
+   "fame": 0.482,
+   "family": "Asteraceae",
+   "kind": "vegetable",
+   "description": "plant series",
+   "hook": "forms crisp leafy heads that anchor salads and sandwiches worldwide",
+   "known": 0.95
+  },
+  {
+   "label": "cacao",
+   "qid": "Q42385",
+   "fame": 0.481,
+   "family": "Malvaceae",
+   "kind": "beverage",
+   "description": "tree native to tropical South America producing cocoa beans - the source plant of cacao and chocolate",
+   "hook": "grows pods on its trunk whose bitter beans are roasted into chocolate",
+   "known": 0.8
+  },
+  {
+   "label": "Iris",
+   "qid": "Q156901",
+   "fame": 0.478,
+   "family": "Iridaceae",
+   "kind": "flower",
+   "description": "genus of plants in the order Iridaceae",
+   "hook": "displays three drooping petals in a shape inspiring France's fleur-de-lis",
+   "known": 0.8
+  },
+  {
+   "label": "Dianthus caryophyllus",
+   "qid": "Q158984",
+   "fame": 0.454,
+   "family": "Caryophyllaceae",
+   "kind": "flower",
+   "description": "species of plant",
+   "hook": "grows ruffled, clove-scented petals worn as a classic boutonniere",
+   "known": 0.6
+  },
+  {
+   "label": "Bellis perennis",
+   "qid": "Q26158",
+   "fame": 0.453,
+   "family": "Asteraceae",
+   "kind": "flower",
+   "description": "Flowering plant in the daisy family Asteraceae",
+   "hook": "dots lawns with white petals ringing a cheerful yellow center",
+   "known": 0.8
+  },
+  {
+   "label": "Cinnamomum verum",
+   "qid": "Q370239",
+   "fame": 0.452,
+   "family": "Lauraceae",
+   "kind": "spice-herb",
+   "description": "species of flowering plant",
+   "hook": "comes from bark curled and dried into fragrant brown quills",
+   "known": 0.8
+  },
+  {
+   "label": "Coffea",
+   "qid": "Q156354",
+   "fame": 0.45,
+   "family": "Rubiaceae",
+   "kind": "beverage",
+   "description": "genus of flowering plants in the family Rubiaceae",
+   "hook": "produces red cherries whose roasted seeds fuel the world's morning ritual",
+   "known": 0.95
+  }
+ ]
+}

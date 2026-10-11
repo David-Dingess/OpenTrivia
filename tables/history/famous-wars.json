@@ -1,0 +1,402 @@
+{
+ "id": "table.history.famous-wars",
+ "kind": "table",
+ "title": "Famous wars and where they were fought",
+ "genre": "society",
+ "category": "history",
+ "topic": "wars",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?placeLabel WHERE { { SELECT ?item (SAMPLE(?p) AS ?place) (COUNT(DISTINCT ?p) AS ?nP) WHERE { ?item wdt:P31/wdt:P279* wd:Q198 ; wdt:P276|wdt:P17 ?p ; wdt:P580 ?s ; wikibase:sitelinks ?sl . FILTER(?sl >= 30) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nP = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T13:19:34.614Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T13:19:34.614Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "place",
+   "label": "Where fought",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "war",
+  "many": "wars",
+  "minFame": 0.5,
+  "theLabels": [
+   "Hundred Years' War",
+   "Six-Day War",
+   "Second Sino-Japanese War",
+   "Wars of the Roses",
+   "Napoleonic Wars",
+   "Second Boer War",
+   "Franco-Prussian War",
+   "Spanish–American War",
+   "English Civil War",
+   "Russo-Japanese War",
+   "French invasion of Russia",
+   "Great Northern War"
+  ],
+  "columns": {
+   "place": {
+    "role": "link",
+    "pick": "Where was {label} mainly fought?",
+    "statement": "{label} was mainly fought in {value}.",
+    "match": "Match each war to where it was fought.",
+    "reverse": "Which of these wars was fought in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Hundred Years' War",
+   "qid": "Q12551",
+   "fame": 0.657,
+   "place": "France",
+   "description": "series of conflicts and wars between England and France between 1337 and 1453",
+   "hook": "saw English kings fight for the French crown, and included the rise of Joan of Arc",
+   "known": 0.6,
+   "kind": "medieval"
+  },
+  {
+   "label": "Six-Day War",
+   "qid": "Q49077",
+   "fame": 0.653,
+   "place": "Middle East",
+   "description": "1967 war between Israel and Egypt, Jordan, and Syria",
+   "hook": "ended in a lightning Israeli victory that put Jerusalem's Old City under Israeli control",
+   "known": 0.6,
+   "kind": "middle-eastern"
+  },
+  {
+   "label": "Second Sino-Japanese War",
+   "qid": "Q170314",
+   "fame": 0.647,
+   "place": "China",
+   "description": "Japanese invasion of China (1937–1945)",
+   "hook": "saw an island empire invade its giant neighbour and later merge into the global Allies-versus-Axis conflict",
+   "known": 0.4,
+   "kind": "asian-pacific"
+  },
+  {
+   "label": "Wars of the Roses",
+   "qid": "Q127751",
+   "fame": 0.646,
+   "place": "Kingdom of England",
+   "description": "dynastic civil war in England from 1455 to 1487",
+   "hook": "pitted two rival royal houses, symbolised by a white and a red flower, against each other for the throne",
+   "known": 0.6,
+   "kind": "medieval"
+  },
+  {
+   "label": "Napoleonic Wars",
+   "qid": "Q78994",
+   "fame": 0.638,
+   "place": "Europe",
+   "description": "1803–1815 wars involving the French Empire",
+   "hook": "ended with an emperor's defeat at Waterloo and his exile to a remote island",
+   "known": 0.95,
+   "kind": "european"
+  },
+  {
+   "label": "Second Boer War",
+   "qid": "Q215112",
+   "fame": 0.62,
+   "place": "South Africa",
+   "description": "war between two Boer Republics (South African Republic and Orange Free State) and the United Kingdom",
+   "hook": "pitted the British Empire against Dutch-descended settlers in a gold-rich region",
+   "known": 0.6,
+   "kind": "colonial"
+  },
+  {
+   "label": "Franco-Prussian War",
+   "qid": "Q46083",
+   "fame": 0.618,
+   "place": "France",
+   "description": "1870–1871 military conflict of the Second French Empire versus Prussia and its allies",
+   "hook": "ended with Prussia's victory and a new German Empire proclaimed at Versailles",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Spanish–American War",
+   "qid": "Q12583",
+   "fame": 0.614,
+   "place": "Caribbean Sea",
+   "description": "1898 conflict between Spain and the United States",
+   "hook": "began after the mysterious sinking of the battleship USS Maine",
+   "known": 0.6,
+   "kind": "colonial"
+  },
+  {
+   "label": "English Civil War",
+   "qid": "Q80330",
+   "fame": 0.611,
+   "place": "Kingdom of England",
+   "description": "series of armed conflicts and political machinations between Parliamentarians and Royalists",
+   "hook": "saw King Charles I face Oliver Cromwell's Roundheads and ended with the monarch's execution",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "Russo-Japanese War",
+   "qid": "Q159950",
+   "fame": 0.608,
+   "place": "Manchuria",
+   "description": "conflict between the Russian and Japanese empires from 1904 to 1905",
+   "hook": "saw an Asian empire shock the world by defeating a European power at sea and on land",
+   "known": 0.4,
+   "kind": "asian-pacific"
+  },
+  {
+   "label": "French invasion of Russia",
+   "qid": "Q179250",
+   "fame": 0.562,
+   "place": "Russian Empire",
+   "description": "1812 conflict during the Napoleonic Wars",
+   "hook": "left Napoleon's massive army shattered by winter and a long retreat from Moscow",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Great Northern War",
+   "qid": "Q151616",
+   "fame": 0.557,
+   "place": "Eastern Europe",
+   "description": "conflict between anti-Swedish coalition Led by Russia and Swedish empires in 1700–1721",
+   "hook": "saw a young tsar topple Sweden's dominance of the Baltic at the Battle of Poltava",
+   "known": 0.2,
+   "kind": "european"
+  },
+  {
+   "label": "First Indochina War",
+   "qid": "Q748780",
+   "fame": 0.553,
+   "place": "French Indochina",
+   "description": "1946–1954 French colonial war in Vietnam",
+   "hook": "ended with a crushing colonial defeat at Dien Bien Phu",
+   "known": 0.4,
+   "kind": "asian-pacific"
+  },
+  {
+   "label": "Greek War of Independence",
+   "qid": "Q182062",
+   "fame": 0.552,
+   "place": "Ottoman Empire",
+   "description": "Greek rebellion against the Ottoman Empire (1821–1829)",
+   "hook": "saw Lord Byron support a rebellion that freed a nation from the sultan's rule",
+   "known": 0.4,
+   "kind": "independence"
+  },
+  {
+   "label": "Paraguayan War",
+   "qid": "Q58947",
+   "fame": 0.547,
+   "place": "Southern Cone",
+   "description": "large-scale conflict in South America (1864–1870)",
+   "hook": "devastated a small landlocked nation and cost it much of its population",
+   "known": 0.05,
+   "kind": "colonial"
+  },
+  {
+   "label": "French Revolutionary Wars",
+   "qid": "Q207318",
+   "fame": 0.536,
+   "place": "Europe",
+   "description": "1792–1802 series of conflicts between the French Republic and several European monarchies",
+   "hook": "saw a young republic fight off royal neighbours and raised a general named Bonaparte to fame",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Greco-Turkish War",
+   "qid": "Q87138",
+   "fame": 0.533,
+   "place": "Anatolia",
+   "description": "war lasting from 1919 to 1922 during the Turkish War of Independence",
+   "hook": "ended in disaster at the port city of Smyrna and a huge population exchange",
+   "known": 0.2,
+   "kind": "independence"
+  },
+  {
+   "label": "Japanese invasions of Korea",
+   "qid": "Q576338",
+   "fame": 0.533,
+   "place": "Korean Peninsula",
+   "description": "1592-1598 campaigns against Joseon by Toyotomi Hideyoshi",
+   "hook": "saw a unifying warlord's armies face Admiral Yi Sun-sin's famous turtle ships",
+   "known": 0.05,
+   "kind": "asian-pacific"
+  },
+  {
+   "label": "Hussite Wars",
+   "qid": "Q478301",
+   "fame": 0.532,
+   "place": "Central Europe",
+   "description": "15th-century wars fought between Protestant Hussites and Catholic forces",
+   "hook": "featured a one-eyed general and armored wagon forts that stunned charging knights",
+   "known": 0.05,
+   "kind": "medieval"
+  },
+  {
+   "label": "Continuation War",
+   "qid": "Q122100",
+   "fame": 0.53,
+   "place": "Finland",
+   "description": "1941–1944 Finnish war against USSR",
+   "hook": "pitted a small Nordic country against its giant eastern neighbour after the Winter War",
+   "known": 0.2,
+   "kind": "asian-pacific"
+  },
+  {
+   "label": "Gallic War",
+   "qid": "Q202161",
+   "fame": 0.518,
+   "place": "Gaul",
+   "description": "war (58–50 BCE) between the Roman Republic and Gaul",
+   "hook": "was Julius Caesar's conquest of a wide region, recounted in his own book and ending at Alesia",
+   "known": 0.6,
+   "kind": "ancient"
+  },
+  {
+   "label": "Polish–Soviet War",
+   "qid": "Q186284",
+   "fame": 0.518,
+   "place": "Central and Eastern Europe",
+   "description": "conflict between Poland and Soviet Russia following the First World War (February 1919 - March 1921)",
+   "hook": "saw the Miracle at the Vistula halt a Red Army advance on Warsaw",
+   "known": 0.05,
+   "kind": "independence"
+  },
+  {
+   "label": "War of the Sixth Coalition",
+   "qid": "Q138107",
+   "fame": 0.499,
+   "place": "Central Europe",
+   "description": "1813–1814 conflict during the Napoleonic Wars",
+   "hook": null,
+   "known": 0.2,
+   "kind": "european"
+  },
+  {
+   "label": "First Barbary War",
+   "qid": "Q468293",
+   "fame": 0.495,
+   "place": "Mediterranean Sea",
+   "description": "war against Barbary pirates",
+   "hook": null,
+   "known": 0.2,
+   "kind": "colonial"
+  },
+  {
+   "label": "War of the Third Coalition",
+   "qid": "Q249232",
+   "fame": 0.492,
+   "place": "Central Europe",
+   "description": "1805–1806 conflict during the Napoleonic Wars",
+   "hook": null,
+   "known": 0.2,
+   "kind": "european"
+  },
+  {
+   "label": "Sino-Soviet border conflict",
+   "qid": "Q244932",
+   "fame": 0.491,
+   "place": "Manchuria",
+   "description": "1969 undeclared conflict between USSR and People's Republic of China",
+   "hook": null,
+   "known": 0.05,
+   "kind": "asian-pacific"
+  },
+  {
+   "label": "South African Border War",
+   "qid": "Q1993848",
+   "fame": 0.491,
+   "place": "Namibia",
+   "description": "war on the border of South West Africa/Namibia and Angola",
+   "hook": null,
+   "known": 0.05,
+   "kind": "colonial"
+  },
+  {
+   "label": "Italian Wars",
+   "qid": "Q273348",
+   "fame": 0.484,
+   "place": "Italian Peninsula",
+   "description": "Wars in Italy from the 15th to 16th centuries",
+   "hook": null,
+   "known": 0.05,
+   "kind": "medieval"
+  },
+  {
+   "label": "Mahdist War",
+   "qid": "Q31944",
+   "fame": 0.481,
+   "place": "Sudan",
+   "description": "British colonial war",
+   "hook": null,
+   "known": 0.05,
+   "kind": "colonial"
+  },
+  {
+   "label": "War of Attrition",
+   "qid": "Q322607",
+   "fame": 0.481,
+   "place": "Sinai Peninsula",
+   "description": "1967–1970 war between Israel and Egypt, Syria and Jordan",
+   "hook": null,
+   "known": 0.4,
+   "kind": "middle-eastern"
+  },
+  {
+   "label": "First Punic War",
+   "qid": "Q6286",
+   "fame": 0.475,
+   "place": "Mediterranean Sea",
+   "description": "First War between Rome and Carthage",
+   "hook": null,
+   "known": 0.6,
+   "kind": "ancient"
+  },
+  {
+   "label": "Third Punic War",
+   "qid": "Q6334",
+   "fame": 0.475,
+   "place": "Tunisia",
+   "description": "war between the Roman Republic and Carthage between 149 and 146 BCE",
+   "hook": null,
+   "known": 0.4,
+   "kind": "ancient"
+  },
+  {
+   "label": "First Boer War",
+   "qid": "Q329203",
+   "fame": 0.455,
+   "place": "Transvaal Colony",
+   "description": "military conflict in South Africa (1880–1881)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "colonial"
+  }
+ ]
+}

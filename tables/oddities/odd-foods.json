@@ -1,0 +1,222 @@
+{
+ "id": "table.oddities.odd-foods",
+ "kind": "table",
+ "title": "Odd foods",
+ "genre": "general",
+ "category": "oddities",
+ "topic": "odd-traditions",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { VALUES (?item ?countryLabel) { (wd:Q209500 \"Scotland\") (wd:Q778396 \"Sweden\") (wd:Q1703796 \"Iceland\") (wd:Q622547 \"China\") (wd:Q255819 \"Italy\") (wd:Q505711 \"Japan\") (wd:Q302169 \"Philippines\") (wd:Q841470 \"Australia\") (wd:Q1331998 \"United Kingdom\") (wd:Q213908 \"Indonesia\") (wd:Q1568296 \"United Kingdom\") (wd:Q181761 \"Scotland\") (wd:Q2915502 \"England\") (wd:Q614320 \"Mexico\") (wd:Q1062847 \"Mexico\") (wd:Q10711327 \"Mexico\") (wd:Q7601887 \"England\") (wd:Q60483094 \"Wales\") (wd:Q17582679 \"China\") (wd:Q1328259 \"South Korea\") (wd:Q490759 \"South Korea\") (wd:Q2915783 \"Greenland\") (wd:Q2097276 \"Norway\") (wd:Q314529 \"Germany\") (wd:Q1542282 \"France\") (wd:Q11164 \"France\") (wd:Q534023 \"United States\") (wd:Q5971200 \"United States\") (wd:Q613665 \"Scotland\") (wd:Q284215 \"Australia\") (wd:Q5366160 \"United States\") (wd:Q1795395 \"Australia\") (wd:Q26081 \"China\") (wd:Q3230686 \"France\") (wd:Q120096 \"Indonesia\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T05:29:35.564Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T13:00:00.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "food",
+  "many": "foods",
+  "wildcard": "food",
+  "hookAsk": "Which food {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} from?",
+    "statement": "{label} is from {value}.",
+    "match": "Match each unusual food to its home country.",
+    "odd": "Three of these foods come from {value}. Which one does not?",
+    "all": "Tap all {n} foods that come from {value}.",
+    "reverse": "Which of these foods is from {value}?"
+   }
+  },
+  "exclude": [
+   {
+    "qid": "Q1331998",
+    "why": "Marmite: country is the United Kingdom, which overlaps England and Scotland"
+   },
+   {
+    "qid": "Q1568296",
+    "why": "Scotch egg: country is the United Kingdom, which overlaps England and Scotland"
+   }
+  ]
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "kopi luwak",
+   "qid": "Q213908",
+   "fame": 0.628,
+   "country": "Indonesia",
+   "description": "type of coffee produced in South East Asia",
+   "hook": "is made from coffee cherries eaten and passed by a palm civet, making it one of the priciest brews",
+   "known": 0.6,
+   "kind": "unconventional"
+  },
+  {
+   "label": "surströmming",
+   "qid": "Q778396",
+   "fame": 0.625,
+   "country": "Sweden",
+   "description": "fermented herring with a strong connection to northern Sweden",
+   "hook": "is a fermented Baltic herring sold in tins and famous for its overpowering smell",
+   "known": 0.4,
+   "kind": "fermented"
+  },
+  {
+   "label": "haggis",
+   "qid": "Q209500",
+   "fame": 0.568,
+   "country": "Scotland",
+   "description": "savoury pudding containing lamb and oats of Scottish origin",
+   "hook": "is a savoury pudding of sheep offal, oatmeal and onion, traditionally cooked in a stomach casing",
+   "known": 0.6,
+   "kind": "meat"
+  },
+  {
+   "label": "Vegemite",
+   "qid": "Q841470",
+   "fame": 0.568,
+   "country": "Australia",
+   "description": "savoury food spread",
+   "hook": "is a salty, dark brown yeast-extract spread, traditionally put thinly on buttered toast",
+   "known": 0.8,
+   "kind": "spread"
+  },
+  {
+   "label": "Marmite",
+   "qid": "Q1331998",
+   "fame": 0.545,
+   "country": "United Kingdom",
+   "description": "brand of condiment made from yeast extract",
+   "hook": "is a sticky yeast-extract spread whose ads famously say you will love it or hate it",
+   "known": 0.6,
+   "kind": "spread"
+  },
+  {
+   "label": "Hákarl",
+   "qid": "Q1703796",
+   "fame": 0.543,
+   "country": "Iceland",
+   "description": "national dish of Iceland consisting of fermented shark",
+   "hook": null,
+   "known": 0.2,
+   "kind": "fermented"
+  },
+  {
+   "label": "century egg",
+   "qid": "Q622547",
+   "fame": 0.539,
+   "country": "China",
+   "description": "Chinese egg-based culinary dish",
+   "hook": "is a duck, chicken or quail delicacy preserved in clay, ash and lime until its yolk turns dark green",
+   "known": 0.4,
+   "kind": "egg"
+  },
+  {
+   "label": "casu martzu",
+   "qid": "Q255819",
+   "fame": 0.526,
+   "country": "Italy",
+   "description": "Sardinian and Corsican cheese containing live maggots",
+   "hook": null,
+   "known": 0.2,
+   "kind": "unconventional"
+  },
+  {
+   "label": "nattō",
+   "qid": "Q505711",
+   "fame": 0.509,
+   "country": "Japan",
+   "description": "traditional Japanese food made from fermented soybeans",
+   "hook": "is a sticky, stringy dish of fermented soybeans, often eaten at breakfast with rice",
+   "known": 0.4,
+   "kind": "fermented"
+  },
+  {
+   "label": "cullen skink",
+   "qid": "Q613665",
+   "fame": 0.483,
+   "country": "Scotland",
+   "description": "thick Scottish soup made of smoked haddock, potatoes and onions",
+   "hook": null,
+   "known": 0.2,
+   "kind": "fish"
+  },
+  {
+   "label": "scrapple",
+   "qid": "Q5366160",
+   "fame": 0.482,
+   "country": "United States",
+   "description": "American pork offal mush",
+   "hook": null,
+   "known": 0.2,
+   "kind": "meat"
+  },
+  {
+   "label": "Scotch egg",
+   "qid": "Q1568296",
+   "fame": 0.472,
+   "country": "United Kingdom",
+   "description": "British dish of a soft-boiled egg wrapped in sausage meat, coated in bread crumbs and baked or deep-fried",
+   "hook": "is a snack with a boiled centre wrapped in sausage meat and breadcrumbs, then baked or fried",
+   "known": 0.6,
+   "kind": "egg"
+  },
+  {
+   "label": "jellied eels",
+   "qid": "Q2915502",
+   "fame": 0.471,
+   "country": "England",
+   "description": "traditional English dish",
+   "hook": null,
+   "known": 0.2,
+   "kind": "fish"
+  },
+  {
+   "label": "Spam musubi",
+   "qid": "Q5971200",
+   "fame": 0.47,
+   "country": "United States",
+   "description": "popular snack and lunch food in Hawaii",
+   "hook": "is a slice of grilled canned meat on a block of rice, wrapped in seaweed like onigiri",
+   "known": 0.4,
+   "kind": "unconventional"
+  },
+  {
+   "label": "Stargazy pie",
+   "qid": "Q7601887",
+   "fame": 0.465,
+   "country": "England",
+   "description": "Cornish dish made of baked fish",
+   "hook": null,
+   "known": 0.05,
+   "kind": "fish"
+  }
+ ]
+}

@@ -1,0 +1,435 @@
+{
+ "id": "table.internet.websites-headquarters",
+ "kind": "table",
+ "title": "Websites and apps: where they are based",
+ "genre": "general",
+ "category": "internet",
+ "topic": "websites-and-apps",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?hqLabel ?born WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?hq) (GROUP_CONCAT(DISTINCT CONCAT(STR(?bT), \"|\", STR(?bP)); separator=\";\") AS ?born) WHERE { { ?item wdt:P31/wdt:P279* wd:Q35127 } UNION { ?item wdt:P31/wdt:P279* wd:Q620615 } UNION { ?item wdt:P31/wdt:P279* wd:Q4182287 } ?item wikibase:sitelinks ?sitelinks ; wdt:P159 ?c . FILTER(?sitelinks > 30) ?item p:P571 ?st . ?st a wikibase:BestRank ; psv:P571 [ wikibase:timeValue ?bT ; wikibase:timePrecision ?bP ] . } GROUP BY ?item ?sitelinks HAVING(COUNT(DISTINCT ?c)=1) ORDER BY DESC(?sitelinks) LIMIT 300 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T13:18:19.660Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T13:18:19.660Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "hq",
+   "label": "Headquarters",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "launched",
+   "label": "Launched",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "website or app",
+  "many": "websites and apps",
+  "columns": {
+   "hq": {
+    "role": "link",
+    "pick": "Which city is {label} headquartered in?",
+    "statement": "{label} is headquartered in {value}.",
+    "match": "Match each website or app to the city where it is headquartered.",
+    "odd": "Which of these websites or apps is not headquartered in {value}?",
+    "all": "Which of these websites or apps are headquartered in {value}?",
+    "reverse": "Which website or app is headquartered in {value}?"
+   },
+   "launched": {
+    "role": "date",
+    "sort": "from the earliest launched to the most recent",
+    "era": "Drop each website or app into the decade it launched.",
+    "eraSize": "decade",
+    "shot": "In what year did {label} launch? It {hook}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "YouTube",
+   "qid": "Q866",
+   "fame": 0.897,
+   "hq": "San Bruno",
+   "launched": 2005,
+   "description": "American video-sharing platform owned by Alphabet Inc.",
+   "hook": "hosts billions of user-uploaded clips, from music videos to cat videos",
+   "known": 0.95,
+   "kind": "video"
+  },
+  {
+   "label": "Wikipedia",
+   "qid": "Q52",
+   "fame": 0.881,
+   "hq": "San Francisco",
+   "launched": 2001,
+   "description": "free multilingual online encyclopedia",
+   "hook": "is a free encyclopedia that anyone can edit",
+   "known": 0.95,
+   "kind": "reference"
+  },
+  {
+   "label": "WhatsApp",
+   "qid": "Q1049511",
+   "fame": 0.758,
+   "hq": "Menlo Park",
+   "launched": 2009,
+   "description": "Meta Platforms-owned mobile instant messenger and social media service",
+   "hook": "lets people send free messages and voice calls across the world",
+   "known": 0.95,
+   "kind": "social"
+  },
+  {
+   "label": "Hugging Face",
+   "qid": "Q108943604",
+   "fame": 0.753,
+   "hq": "New York City",
+   "launched": 2016,
+   "description": "American company",
+   "hook": "is named after a friendly emoji and hosts open-source AI models",
+   "known": 0.05,
+   "kind": "ai"
+  },
+  {
+   "label": "Reddit",
+   "qid": "Q1136",
+   "fame": 0.726,
+   "hq": "San Francisco",
+   "launched": 2005,
+   "description": "American social news aggregation website and discussion portal",
+   "hook": "is nicknamed the front page of the internet and sorts chatter into topic communities",
+   "known": 0.6,
+   "kind": "social"
+  },
+  {
+   "label": "Yandex",
+   "qid": "Q5281",
+   "fame": 0.722,
+   "hq": "Moscow",
+   "launched": 1997,
+   "description": "Russian technology company",
+   "hook": "is the leading search engine in Russia",
+   "known": 0.2,
+   "kind": "search"
+  },
+  {
+   "label": "LinkedIn",
+   "qid": "Q213660",
+   "fame": 0.69,
+   "hq": "Sunnyvale",
+   "launched": 2003,
+   "description": "American social networking website for people in professional occupations",
+   "hook": "is the go-to social network for resumes and job hunting",
+   "known": 0.8,
+   "kind": "social"
+  },
+  {
+   "label": "GitHub",
+   "qid": "Q364",
+   "fame": 0.688,
+   "hq": "San Francisco",
+   "launched": 2008,
+   "description": "hosting service for software projects using Git",
+   "hook": "is where programmers store and share code, with an octopus-cat mascot",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Google Maps",
+   "qid": "Q12013",
+   "fame": 0.675,
+   "hq": "Mountain View",
+   "launched": 2005,
+   "description": "Google's web mapping service (launched 2005)",
+   "hook": "gives turn-by-turn directions and lets you drop a little person into street-level views",
+   "known": 0.95,
+   "kind": "tech"
+  },
+  {
+   "label": "Pinterest",
+   "qid": "Q255381",
+   "fame": 0.647,
+   "hq": "San Francisco",
+   "launched": 2010,
+   "description": "American photo sharing and publishing website",
+   "hook": "lets people pin images to virtual boards for recipes and decor ideas",
+   "known": 0.6,
+   "kind": "social"
+  },
+  {
+   "label": "Perplexity AI",
+   "qid": "Q124333951",
+   "fame": 0.638,
+   "hq": "San Francisco",
+   "launched": 2022,
+   "description": "American conversational search engine company",
+   "hook": "is an AI answer engine that cites its sources",
+   "known": 0.05,
+   "kind": "ai"
+  },
+  {
+   "label": "Yahoo",
+   "qid": "Q37093",
+   "fame": 0.627,
+   "hq": "Sunnyvale",
+   "launched": 1994,
+   "description": "web portal and search engine",
+   "hook": "was an early web portal famous for its yodeling ad jingle",
+   "known": 0.6,
+   "kind": "legacy"
+  },
+  {
+   "label": "Twitch",
+   "qid": "Q4555537",
+   "fame": 0.619,
+   "hq": "San Francisco",
+   "launched": 2011,
+   "description": "American live-streaming platform",
+   "hook": "streams gamers playing live while viewers chat and cheer with emotes",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "eBay",
+   "qid": "Q58024",
+   "fame": 0.617,
+   "hq": "San Jose",
+   "launched": 1995,
+   "description": "American multinational internet corporation that manages eBay.com",
+   "hook": "pioneered online auctions where people bid on everything from junk to collectibles",
+   "known": 0.8,
+   "kind": "shopping"
+  },
+  {
+   "label": "HBO Max",
+   "qid": "Q65359104",
+   "fame": 0.589,
+   "hq": "New York City",
+   "launched": 2020,
+   "description": "Warner Bros. Discovery video-on-demand service",
+   "hook": "streams prestige dramas from the network behind The Sopranos",
+   "known": 0.6,
+   "kind": "video"
+  },
+  {
+   "label": "Airbnb",
+   "qid": "Q63327",
+   "fame": 0.583,
+   "hq": "San Francisco",
+   "launched": 2008,
+   "description": "American online platform for rental accommodations",
+   "hook": "lets travelers rent spare rooms and homes from hosts instead of hotels",
+   "known": 0.8,
+   "kind": "travel"
+  },
+  {
+   "label": "Flipkart",
+   "qid": "Q1381966",
+   "fame": 0.575,
+   "hq": "Bengaluru",
+   "launched": 2007,
+   "description": "Indian electronic commerce company",
+   "hook": "is India's big online shopping rival to the everything store",
+   "known": 0.05,
+   "kind": "shopping"
+  },
+  {
+   "label": "Tumblr",
+   "qid": "Q384060",
+   "fame": 0.558,
+   "hq": "San Francisco",
+   "launched": 2007,
+   "description": "microblogging platform and social networking website",
+   "hook": "is a blogging site known for reblogged GIFs and fandom posts",
+   "known": 0.2,
+   "kind": "social"
+  },
+  {
+   "label": "Bluesky",
+   "qid": "Q78194383",
+   "fame": 0.554,
+   "hq": "Seattle",
+   "launched": 2023,
+   "description": "American social networking service",
+   "hook": "is a social network started as a Twitter alternative, with a butterfly logo",
+   "known": 0.05,
+   "kind": "social"
+  },
+  {
+   "label": "Baidu",
+   "qid": "Q14772",
+   "fame": 0.534,
+   "hq": "Beijing",
+   "launched": 2000,
+   "description": "Chinese web services company",
+   "hook": "is the biggest search engine in China",
+   "known": 0.05,
+   "kind": "search"
+  },
+  {
+   "label": "Crunchyroll",
+   "qid": "Q1142035",
+   "fame": 0.532,
+   "hq": "San Francisco",
+   "launched": 2006,
+   "description": "American video streaming service",
+   "hook": "streams anime and subtitled Japanese series",
+   "known": 0.2,
+   "kind": "video"
+  },
+  {
+   "label": "Figma",
+   "qid": "Q96186334",
+   "fame": 0.523,
+   "hq": "San Francisco",
+   "launched": 2016,
+   "description": "online vector graphics editor and prototyping tool",
+   "hook": "lets designers work together on interface mockups in a web browser",
+   "known": 0.05,
+   "kind": "tech"
+  },
+  {
+   "label": "booking.com",
+   "qid": "Q4035313",
+   "fame": 0.517,
+   "hq": "Amsterdam",
+   "launched": 1996,
+   "description": "website and mobile apps for booking accommodation",
+   "hook": "lets travelers reserve hotels and rentals worldwide",
+   "known": 0.8,
+   "kind": "travel"
+  },
+  {
+   "label": "Ecosia",
+   "qid": "Q1282139",
+   "fame": 0.51,
+   "hq": "Berlin",
+   "launched": 2009,
+   "description": "web search engine and browser",
+   "hook": "is a search engine that uses its profits to plant trees",
+   "known": 0.05,
+   "kind": "search"
+  },
+  {
+   "label": "IGN",
+   "qid": "Q207708",
+   "fame": 0.502,
+   "hq": "San Francisco",
+   "launched": 1996,
+   "description": "American video game and entertainment media website",
+   "hook": "is a big source of video game reviews and news",
+   "known": 0.2,
+   "kind": "reference"
+  },
+  {
+   "label": "Flightradar24",
+   "qid": "Q1164485",
+   "fame": 0.498,
+   "hq": "Stockholm",
+   "launched": 2006,
+   "description": "Swedish internet-based service that shows real-time aircraft flight tracking information on a map",
+   "hook": "shows live planes moving across a map",
+   "known": 0.05,
+   "kind": "travel"
+  },
+  {
+   "label": "Wattpad",
+   "qid": "Q7664857",
+   "fame": 0.498,
+   "hq": "Toronto",
+   "launched": 2006,
+   "description": "online community themed around reading and writing",
+   "hook": "hosts stories by amateur authors that readers follow chapter by chapter",
+   "known": 0.05,
+   "kind": "reference"
+  },
+  {
+   "label": "DeepL",
+   "qid": "Q43968444",
+   "fame": 0.492,
+   "hq": "Cologne",
+   "launched": 2017,
+   "description": "AI-powered machine translation service developed by DeepL SE",
+   "hook": "is an AI translator often praised as more natural than its rivals",
+   "known": 0.05,
+   "kind": "tech"
+  },
+  {
+   "label": "Quora",
+   "qid": "Q51711",
+   "fame": 0.491,
+   "hq": "Mountain View",
+   "launched": 2010,
+   "description": "American question-and-answer website",
+   "hook": "is a site where users post questions and others answer them",
+   "known": 0.2,
+   "kind": "reference"
+  },
+  {
+   "label": "ResearchGate",
+   "qid": "Q754454",
+   "fame": 0.484,
+   "hq": "Berlin",
+   "launched": 2008,
+   "description": "commercial scientific social network",
+   "hook": "is a network where scientists share papers",
+   "known": 0.05,
+   "kind": "reference"
+  },
+  {
+   "label": "Grammarly",
+   "qid": "Q16840770",
+   "fame": 0.473,
+   "hq": "San Francisco",
+   "launched": 2009,
+   "description": "Online grammar, spell checking and plagiarism detection platform",
+   "hook": "checks spelling and tone as you type, marked by a green logo",
+   "known": 0.2,
+   "kind": "tech"
+  },
+  {
+   "label": "Vevo",
+   "qid": "Q473873",
+   "fame": 0.465,
+   "hq": "New York City",
+   "launched": 2009,
+   "description": "American video hosting service",
+   "hook": "hosts official music videos from major record labels",
+   "known": 0.2,
+   "kind": "video"
+  },
+  {
+   "label": "Taobao",
+   "qid": "Q2117484",
+   "fame": 0.452,
+   "hq": "Hangzhou",
+   "launched": 2003,
+   "description": "Chinese website for online shopping",
+   "hook": "is an enormous Chinese marketplace owned by Alibaba",
+   "known": 0.05,
+   "kind": "shopping"
+  }
+ ]
+}

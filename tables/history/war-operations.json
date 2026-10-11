@@ -1,0 +1,695 @@
+{
+ "id": "table.history.war-operations",
+ "kind": "table",
+ "title": "Famous battles, sieges and campaigns and the war they belong to",
+ "genre": "society",
+ "category": "history",
+ "topic": "wars",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?warLabel WHERE { { SELECT ?item (SAMPLE(?w) AS ?war) (COUNT(DISTINCT ?w) AS ?nW) WHERE { ?item wdt:P31/wdt:P279* wd:Q645883 ; wdt:P361 ?w ; wikibase:sitelinks ?sl . ?w wdt:P31/wdt:P279* wd:Q198 . FILTER(?sl >= 25) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nW = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T06:31:47.860Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T06:31:47.860Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "war",
+   "label": "War",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "battle or campaign",
+  "many": "battles and campaigns",
+  "theLabels": [
+   "Battle of Stalingrad",
+   "Battle of Thermopylae",
+   "Battle of the Little Bighorn",
+   "Battle of Gettysburg",
+   "1939 Invasion of Poland",
+   "Battle of the Alamo",
+   "Battle of Antietam",
+   "Battle of Okinawa",
+   "Battle of Agincourt",
+   "Battle of Berlin",
+   "Battle of Britain",
+   "Battle of Verdun",
+   "Tet Offensive",
+   "Peninsular War",
+   "Battle of Cannae",
+   "Siege of Leningrad",
+   "Siege of Yorktown",
+   "French invasion of Russia",
+   "Battle of Leyte Gulf",
+   "Battle of Rorke's Drift",
+   "Fall of Saigon",
+   "Battles of Lexington and Concord",
+   "Battle of the Boyne",
+   "Battle of Jutland",
+   "Battle of Borodino",
+   "Battle of Bunker Hill",
+   "Battle of Marathon",
+   "Battle of Dien Bien Phu",
+   "Battle of Sedan",
+   "Battle of Bosworth Field",
+   "Battle of Moscow",
+   "Allied invasion of Sicily",
+   "Battles of Saratoga",
+   "Third Battle of Ypres",
+   "Battle of Bannockburn",
+   "Battle of Dunkirk",
+   "Battle of the Atlantic",
+   "Battle of Salamis",
+   "Battle of Gaugamela",
+   "Battle of Crécy",
+   "Italian Campaign",
+   "Battle of Zama",
+   "Battle of Poitiers",
+   "Battle of Alesia",
+   "Battle of Singapore",
+   "Battle of Tarawa",
+   "Battle of Fort Sumter",
+   "Battle of Chancellorsville",
+   "Battle of Stirling Bridge",
+   "Battle of Tannenberg",
+   "Battle of Balaclava",
+   "Battle of Adwa",
+   "Battle of San Jacinto",
+   "Battle of Issus"
+  ],
+  "columns": {
+   "war": {
+    "role": "link",
+    "pick": "Which war was {label} part of?",
+    "statement": "{label} was part of {value}.",
+    "match": "Match each battle or campaign to the war it belonged to.",
+    "odd": "Three of these were part of {value}. Which one wasn't?",
+    "all": "Which {n} of these were part of {value}?",
+    "reverse": "Which of these was part of {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Battle of Stalingrad",
+   "qid": "Q38789",
+   "fame": 0.673,
+   "war": "Eastern Front",
+   "description": "1942 major battle of World War II",
+   "hook": "became a brutal street-by-street clash in a city on the Volga that turned the tide against the Nazis",
+   "known": 0.8,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Operation Barbarossa",
+   "qid": "Q83055",
+   "fame": 0.648,
+   "war": "Eastern Front",
+   "description": "invasion of the Soviet Union by the Nazi German-led Axis powers in Europe",
+   "hook": "was Hitler's massive surprise attack on his one-time pact partner, launched in the summer",
+   "known": 0.8,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Battle of Thermopylae",
+   "qid": "Q131969",
+   "fame": 0.635,
+   "war": "Second Persian invasion of Greece",
+   "description": "battle of 480 BCE during Persian invasion of Greece",
+   "hook": "saw 300 Spartans and their allies hold a narrow coastal pass against a vast invading army",
+   "known": 0.8,
+   "kind": "ancient battle"
+  },
+  {
+   "label": "Battle of the Little Bighorn",
+   "qid": "Q205422",
+   "fame": 0.625,
+   "war": "Great Sioux War of 1876",
+   "description": "June 1876 battle of the Great Sioux War",
+   "hook": "is remembered as Custer's Last Stand, where a cavalry commander and his men were wiped out",
+   "known": 0.6,
+   "kind": "american war"
+  },
+  {
+   "label": "Battle of Gettysburg",
+   "qid": "Q33132",
+   "fame": 0.62,
+   "war": "American Civil War",
+   "description": "1863 battle of the American Civil War",
+   "hook": "was a three-day Pennsylvania clash that ended with Pickett's Charge and a turning point for the Union",
+   "known": 0.95,
+   "kind": "american war"
+  },
+  {
+   "label": "1939 Invasion of Poland",
+   "qid": "Q150812",
+   "fame": 0.616,
+   "war": "World War II",
+   "description": "German, Soviet, and Slovak attack on and takeover of Poland that marked the start of World War II",
+   "hook": "began with German tanks crossing the border, prompting Britain and France to declare a global conflict",
+   "known": 0.8,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Battle of the Alamo",
+   "qid": "Q235344",
+   "fame": 0.612,
+   "war": "Texas Revolution",
+   "description": "1836 major battle of the Texas Revolution",
+   "hook": "ended with the defenders of an old San Antonio mission killed, inspiring the cry to remember it",
+   "known": 0.6,
+   "kind": "american war"
+  },
+  {
+   "label": "Battle of Antietam",
+   "qid": "Q719252",
+   "fame": 0.604,
+   "war": "American Civil War",
+   "description": "1862 major battle of the American Civil War",
+   "hook": "is the bloodiest single day in US military history, fought along a Maryland creek",
+   "known": 0.8,
+   "kind": "american war"
+  },
+  {
+   "label": "Battle of Okinawa",
+   "qid": "Q192660",
+   "fame": 0.604,
+   "war": "World War II",
+   "description": "1945 major battle of the Pacific War",
+   "hook": "was the last and largest island assault of the Pacific, fought with kamikaze attacks offshore",
+   "known": 0.6,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Battle of Agincourt",
+   "qid": "Q188495",
+   "fame": 0.594,
+   "war": "Hundred Years' War",
+   "description": "1415 English victory in the Hundred Years' War",
+   "hook": "saw English longbowmen cut down a much larger French force of armored knights in thick mud",
+   "known": 0.8,
+   "kind": "medieval battle"
+  },
+  {
+   "label": "Battle of Berlin",
+   "qid": "Q154182",
+   "fame": 0.59,
+   "war": "Eastern Front",
+   "description": "1945 last major offensive of the European theatre of World War Il",
+   "hook": "ended with the Soviet army storming the German capital as Hitler took his own life in a bunker",
+   "known": 0.8,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Battle of Britain",
+   "qid": "Q154720",
+   "fame": 0.578,
+   "war": "World War II",
+   "description": "air battle waged between German and British air forces in 1940",
+   "hook": "was fought in the skies, where Spitfires and Hurricanes held off the Luftwaffe to prevent an invasion",
+   "known": 0.8,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Battle of Verdun",
+   "qid": "Q130847",
+   "fame": 0.574,
+   "war": "World War I",
+   "description": "1916 battle on the Western Front during the First World War",
+   "hook": "was a nearly year-long grinder of trench fighting, symbolising French determination and mass slaughter",
+   "known": 0.8,
+   "kind": "world war i"
+  },
+  {
+   "label": "Tet Offensive",
+   "qid": "Q82542",
+   "fame": 0.574,
+   "war": "Vietnam War",
+   "description": "1968 military campaign during the Vietnam War",
+   "hook": "was a surprise wave of attacks launched during a lunar new year truce, shaking American public opinion",
+   "known": 0.6,
+   "kind": "asian conflict"
+  },
+  {
+   "label": "Peninsular War",
+   "qid": "Q152499",
+   "fame": 0.57,
+   "war": "Napoleonic Wars",
+   "description": "1807–1814 conflict during the Napoleonic Wars",
+   "hook": "was fought across Spain and Portugal, where Wellington and local guerrillas wore down Napoleon's army",
+   "known": 0.2,
+   "kind": "european 17-19 century"
+  },
+  {
+   "label": "Battle of Cannae",
+   "qid": "Q179591",
+   "fame": 0.568,
+   "war": "Second Punic War",
+   "description": "major battle of the Second Punic War (216 BCE)",
+   "hook": "saw Hannibal's double envelopment destroy a far larger Roman army, a textbook tactical masterpiece",
+   "known": 0.4,
+   "kind": "ancient battle"
+  },
+  {
+   "label": "Siege of Leningrad",
+   "qid": "Q151860",
+   "fame": 0.567,
+   "war": "Eastern Front",
+   "description": "8 September 1941 – 27 January 1944 blockade of Leningrad by the Axis",
+   "hook": "was a blockade lasting roughly 900 days in which hundreds of thousands starved in a frozen city",
+   "known": 0.6,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Siege of Yorktown",
+   "qid": "Q459447",
+   "fame": 0.564,
+   "war": "American Revolutionary War",
+   "description": "siege, part of American Revolutionary War",
+   "hook": "ended with Cornwallis surrendering to Washington and his French allies, effectively ending the colonial fight",
+   "known": 0.4,
+   "kind": "american war"
+  },
+  {
+   "label": "French invasion of Russia",
+   "qid": "Q179250",
+   "fame": 0.563,
+   "war": "Napoleonic Wars",
+   "description": "1812 conflict during the Napoleonic Wars",
+   "hook": "saw Napoleon's Grande Armée march to Moscow and then freeze and starve on the long retreat",
+   "known": 0.4,
+   "kind": "european 17-19 century"
+  },
+  {
+   "label": "Battle of Leyte Gulf",
+   "qid": "Q308999",
+   "fame": 0.561,
+   "war": "World War II",
+   "description": "1944 the largest naval battle of World War II",
+   "hook": "is considered the largest naval clash in history, fought near the Philippines with carriers and battleships",
+   "known": 0.4,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Battle of Rorke's Drift",
+   "qid": "Q1123353",
+   "fame": 0.559,
+   "war": "Anglo-Zulu War",
+   "description": "battle in the Anglo-Zulu War, specifically the defence of the mission station of Rorke's Drift",
+   "hook": "saw about 150 British soldiers hold a mission station against thousands of warriors, as in a famous film",
+   "known": 0.2,
+   "kind": "european 17-19 century"
+  },
+  {
+   "label": "Fall of Saigon",
+   "qid": "Q482456",
+   "fame": 0.557,
+   "war": "Vietnam War",
+   "description": "1975 capture of Saigon by the People’s Army of Vietnam and the National Liberation Front of South Vietnam",
+   "hook": "was marked by helicopters lifting people off a rooftop as the American-backed southern capital collapsed",
+   "known": 0.4,
+   "kind": "asian conflict"
+  },
+  {
+   "label": "Battles of Lexington and Concord",
+   "qid": "Q778010",
+   "fame": 0.556,
+   "war": "American Revolutionary War",
+   "description": "first military engagements of the American Revolutionary War (1775)",
+   "hook": "opened the fight for independence with the famous shot heard round the world",
+   "known": 0.6,
+   "kind": "american war"
+  },
+  {
+   "label": "Battle of the Boyne",
+   "qid": "Q644960",
+   "fame": 0.544,
+   "war": "Williamite War in Ireland",
+   "description": "1690 battle",
+   "hook": "saw two rival kings, William of Orange and James II, meet on an Irish river, a day still marked by parades",
+   "known": 0.2,
+   "kind": "european 17-19 century"
+  },
+  {
+   "label": "Battle of Jutland",
+   "qid": "Q156554",
+   "fame": 0.541,
+   "war": "World War I",
+   "description": "1916 naval battle during World War I",
+   "hook": "was the largest clash of battleships in the Great War, between two rival fleets off Denmark",
+   "known": 0.4,
+   "kind": "world war i"
+  },
+  {
+   "label": "Battle of Borodino",
+   "qid": "Q184320",
+   "fame": 0.535,
+   "war": "French invasion of Russia",
+   "description": "1812 battle during the French invasion of Russia",
+   "hook": "was the bloodiest day of Napoleon's march on Moscow, later the setting of Tolstoy's War and Peace",
+   "known": 0.2,
+   "kind": "european 17-19 century"
+  },
+  {
+   "label": "Operation Bagration",
+   "qid": "Q151052",
+   "fame": 0.533,
+   "war": "Eastern Front",
+   "description": "1944 large Soviet military offensive in WW2",
+   "hook": "was a huge Soviet summer push that destroyed German Army Group Centre in Belarus",
+   "known": 0.2,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Battle of Bunker Hill",
+   "qid": "Q334029",
+   "fame": 0.529,
+   "war": "American Revolutionary War",
+   "description": "1775 early battle of the American Revoluntionary War",
+   "hook": "is famed for the order not to fire until you see the whites of their eyes",
+   "known": 0.6,
+   "kind": "american war"
+  },
+  {
+   "label": "Battle of Marathon",
+   "qid": "Q31900",
+   "fame": 0.529,
+   "war": "First Persian invasion of Greece",
+   "description": "490 BCE battle in the Greco-Persian wars",
+   "hook": "saw outnumbered Athenians beat an invading empire, inspiring the legend of a runner and a long race",
+   "known": 0.8,
+   "kind": "ancient battle"
+  },
+  {
+   "label": "Battle of Dien Bien Phu",
+   "qid": "Q604897",
+   "fame": 0.528,
+   "war": "First Indochina War",
+   "description": "The decisive battle of the First Indochina War",
+   "hook": "ended with a French garrison in a mountain valley surrendering to Viet Minh forces, ending colonial rule",
+   "known": 0.2,
+   "kind": "asian conflict"
+  },
+  {
+   "label": "Operation Torch",
+   "qid": "Q194132",
+   "fame": 0.527,
+   "war": "World War II",
+   "description": "1942 Allied landing operations in French North Africa during World War II",
+   "hook": "was the Allied landing on the Moroccan and Algerian coasts, a first big amphibious assault",
+   "known": 0.2,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Battle of Sedan",
+   "qid": "Q156681",
+   "fame": 0.526,
+   "war": "Franco-Prussian War",
+   "description": "1870 battle during the Franco-Prussian War",
+   "hook": "saw the French emperor Napoleon III surrender with his army, leading to the fall of his empire",
+   "known": 0.2,
+   "kind": "european 17-19 century"
+  },
+  {
+   "label": "Battle of Bosworth Field",
+   "qid": "Q222013",
+   "fame": 0.525,
+   "war": "Wars of the Roses",
+   "description": "1485 last significant battle of the Wars of the Roses",
+   "hook": "ended with Richard III killed and the crown taken by Henry Tudor, founding a new dynasty",
+   "known": 0.6,
+   "kind": "medieval battle"
+  },
+  {
+   "label": "Battle of Moscow",
+   "qid": "Q151290",
+   "fame": 0.524,
+   "war": "Eastern Front",
+   "description": "1941 World War II campaign in Russia",
+   "hook": "was the Germans' drive toward the Soviet capital, halted in winter snow within sight of the city",
+   "known": 0.6,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Allied invasion of Sicily",
+   "qid": "Q217981",
+   "fame": 0.522,
+   "war": "World War II",
+   "description": "1943 military campaign of World War II on the island of Sicily, Italy",
+   "hook": "was a landing on a Mediterranean island that toppled Mussolini, led by Patton and Montgomery",
+   "known": 0.4,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Battles of Saratoga",
+   "qid": "Q846674",
+   "fame": 0.52,
+   "war": "American Revolutionary War",
+   "description": "1777 major turning point of the American Revolutionary War",
+   "hook": "saw a British general surrender his whole army to the rebels, convincing France to join their side",
+   "known": 0.4,
+   "kind": "american war"
+  },
+  {
+   "label": "Third Battle of Ypres",
+   "qid": "Q426227",
+   "fame": 0.516,
+   "war": "World War I",
+   "description": "Battle in the First World War",
+   "hook": "is better known as Passchendaele, a war of mud and rain in Flanders with enormous casualties",
+   "known": 0.2,
+   "kind": "world war i"
+  },
+  {
+   "label": "Battle of Bannockburn",
+   "qid": "Q222520",
+   "fame": 0.514,
+   "war": "Wars of Scottish Independence",
+   "description": "1314 battle during the First War of Scottish Independence",
+   "hook": "saw Robert the Bruce's Scots rout a larger English army led by Edward II",
+   "known": 0.4,
+   "kind": "medieval battle"
+  },
+  {
+   "label": "Battle of Dunkirk",
+   "qid": "Q208529",
+   "fame": 0.514,
+   "war": "World War II",
+   "description": "1940 battle in the Second World War between the Allies and Germany",
+   "hook": "was the desperate evacuation of the stranded British army by fleets of small civilian boats",
+   "known": 0.8,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Battle of the Atlantic",
+   "qid": "Q157627",
+   "fame": 0.507,
+   "war": "World War II",
+   "description": "1939 longest continuous military campaign in World War II",
+   "hook": "was the long struggle between U-boats and convoy escorts to keep supply lines open to Britain",
+   "known": 0.8,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Battle of Salamis",
+   "qid": "Q178850",
+   "fame": 0.503,
+   "war": "Second Persian invasion of Greece",
+   "description": "480 BCE naval battle fought between an alliance of Greek city-states and the Persian Empire",
+   "hook": "saw a clever Greek fleet trap a larger navy in a narrow strait, led by Themistocles",
+   "known": 0.8,
+   "kind": "ancient battle"
+  },
+  {
+   "label": "Battle of Gaugamela",
+   "qid": "Q179670",
+   "fame": 0.501,
+   "war": "Wars of Alexander the Great",
+   "description": "decisive battle of Alexander the Great's invasion of the Persian Achaemenid Empire",
+   "hook": "was the clash where a Macedonian king routed the much larger army of Darius III",
+   "known": 0.4,
+   "kind": "ancient battle"
+  },
+  {
+   "label": "Battle of Crécy",
+   "qid": "Q27759",
+   "fame": 0.498,
+   "war": "Hundred Years' War",
+   "description": "1346 battle of the Hundred Years' War",
+   "hook": "was an early triumph for English and Welsh longbowmen over French knights under King Edward III",
+   "known": 0.6,
+   "kind": "medieval battle"
+  },
+  {
+   "label": "Italian Campaign",
+   "qid": "Q162333",
+   "fame": 0.498,
+   "war": "World War II",
+   "description": "1943–1945 military campaign of World War II",
+   "hook": "was the slow grind up a mountainous peninsula, featuring Monte Cassino and the landing at Anzio",
+   "known": 0.4,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Battle of Zama",
+   "qid": "Q200056",
+   "fame": 0.495,
+   "war": "Second Punic War",
+   "description": "final battle of the Second Punic War",
+   "hook": "was where Scipio Africanus finally defeated Hannibal near Carthage, ending Rome's greatest threat",
+   "known": 0.2,
+   "kind": "ancient battle"
+  },
+  {
+   "label": "Battle of Poitiers",
+   "qid": "Q201692",
+   "fame": 0.493,
+   "war": "Hundred Years' War",
+   "description": "1356 battle of the Hundred Years' War",
+   "hook": "saw the English capture the French king John II with a small army of archers",
+   "known": 0.4,
+   "kind": "medieval battle"
+  },
+  {
+   "label": "Battle of Alesia",
+   "qid": "Q131386",
+   "fame": 0.492,
+   "war": "Gallic War",
+   "description": "decisive Roman victory in which Rome secures the conquest of Gaul",
+   "hook": "saw Julius Caesar trap the chieftain Vercingetorix inside a hilltop fortress with double siege walls",
+   "known": 0.4,
+   "kind": "ancient battle"
+  },
+  {
+   "label": "Battle of Singapore",
+   "qid": "Q296754",
+   "fame": 0.489,
+   "war": "World War II",
+   "description": "1942 World War II battle",
+   "hook": "saw the Japanese force the largest British surrender in history, taking the so-called Gibraltar of the East",
+   "known": 0.6,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Battle of Tarawa",
+   "qid": "Q250309",
+   "fame": 0.482,
+   "war": "World War II",
+   "description": "battle in the Pacific Theater of World War II, at the Tarawa Atoll in the Gilbert Islands",
+   "hook": "was a costly Marine assault across a coral reef, where landing craft got stuck on the shallows",
+   "known": 0.4,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Battle of Fort Sumter",
+   "qid": "Q543165",
+   "fame": 0.479,
+   "war": "American Civil War",
+   "description": "bombardment of Fort Sumter, immediate cause and first battle of the American Civil War",
+   "hook": "began when Confederate guns shelled a harbour garrison, opening hostilities between North and South",
+   "known": 0.4,
+   "kind": "american war"
+  },
+  {
+   "label": "Battle of Chancellorsville",
+   "qid": "Q745979",
+   "fame": 0.478,
+   "war": "American Civil War",
+   "description": "1863 major battle of the American Civil War",
+   "hook": "is called Robert E. Lee's greatest victory, though it cost him his general Stonewall Jackson",
+   "known": 0.4,
+   "kind": "american war"
+  },
+  {
+   "label": "Battle of Stirling Bridge",
+   "qid": "Q499626",
+   "fame": 0.475,
+   "war": "Wars of Scottish Independence",
+   "description": "1297 battle of the First War of Scottish Independence",
+   "hook": "saw William Wallace and Andrew Murray defeat the English as they tried to cross a narrow crossing on the Forth",
+   "known": 0.2,
+   "kind": "medieval battle"
+  },
+  {
+   "label": "Case Blue",
+   "qid": "Q158287",
+   "fame": 0.475,
+   "war": "Eastern Front",
+   "description": "German summer offensive of 1942 in southern Russia",
+   "hook": "was the Germans' drive toward the Caucasus oil fields and the Volga, which ended in disaster",
+   "known": 0.2,
+   "kind": "world war ii"
+  },
+  {
+   "label": "Battle of Tannenberg",
+   "qid": "Q153858",
+   "fame": 0.474,
+   "war": "World War I",
+   "description": "1914 battle between Russia and Germany",
+   "hook": "was a German victory in East Prussia that destroyed a Russian army and made Hindenburg a hero",
+   "known": 0.2,
+   "kind": "world war i"
+  },
+  {
+   "label": "Battle of Balaclava",
+   "qid": "Q464512",
+   "fame": 0.468,
+   "war": "Crimean War",
+   "description": "1854 battle of the Crimean War",
+   "hook": "included the doomed cavalry attack known as the Charge of the Light Brigade and the Thin Red Line",
+   "known": 0.4,
+   "kind": "european 17-19 century"
+  },
+  {
+   "label": "Battle of Adwa",
+   "qid": "Q302519",
+   "fame": 0.463,
+   "war": "First Italo-Ethiopian War",
+   "description": "battle between the Ethiopian Empire and the Kingdom of Italy near the town of Adwa, the climactic battle of the First Italo-Ethiopian War, securing Ethiopian sovereignty",
+   "hook": "was a stunning African victory over a European colonial army, keeping one nation independent",
+   "known": 0.05,
+   "kind": "european 17-19 century"
+  },
+  {
+   "label": "Battle of San Jacinto",
+   "qid": "Q841278",
+   "fame": 0.453,
+   "war": "Texas Revolution",
+   "description": "1836 decisive battle of the Texas Revolution",
+   "hook": "lasted about eighteen minutes, with Sam Houston's force routing the Mexican army and capturing Santa Anna",
+   "known": 0.4,
+   "kind": "american war"
+  },
+  {
+   "label": "Battle of Issus",
+   "qid": "Q201526",
+   "fame": 0.451,
+   "war": "Wars of Alexander the Great",
+   "description": "second great battle of Alexander's conquest of Asia",
+   "hook": "saw a young Macedonian king defeat Darius III, who fled the field, leaving behind his family",
+   "known": 0.4,
+   "kind": "ancient battle"
+  }
+ ]
+}

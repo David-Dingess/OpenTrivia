@@ -1,0 +1,398 @@
+{
+ "id": "table.language.language-families",
+ "kind": "table",
+ "title": "Languages and the language family they belong to",
+ "genre": "society",
+ "category": "language",
+ "topic": "languages",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?famLabel WHERE { { SELECT ?item (SAMPLE(?f) AS ?fam) (COUNT(DISTINCT ?f) AS ?n) WHERE { VALUES ?f { wd:Q19814 wd:Q21200 wd:Q23526 wd:Q25293 wd:Q33577 wd:Q33527 wd:Q2042538 wd:Q33136 wd:Q34049 wd:Q45961 wd:Q34113 wd:Q34090 wd:Q49228 wd:Q33311 wd:Q33612 wd:Q11263525 wd:Q33838 wd:Q34171 wd:Q33199 } ?item wdt:P31 wd:Q34770 . ?item wdt:P279* ?f . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?n = 1) ?fam rdfs:label ?fl . FILTER(LANG(?fl)=\"en\") BIND(REPLACE(STR(?fl),\"^(.*?)( languages)?$\",\"$1 languages\") AS ?famLabel) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T02:15:48.532Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T02:15:48.532Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "language_family",
+   "label": "Language family",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "language",
+  "many": "languages",
+  "columns": {
+   "language_family": {
+    "role": "link",
+    "pick": "Which language family does {label} belong to?",
+    "statement": "{label} is one of the {value}.",
+    "match": "Match each language to its family.",
+    "odd": "Three of these languages belong to the {value} family. Which one doesn't?",
+    "all": "Tap all {n} languages in the {value} family."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "English",
+   "qid": "Q1860",
+   "fame": 0.756,
+   "language_family": "Germanic languages",
+   "description": "West Germanic language",
+   "hook": "became the world's go-to second language for business, science and the internet",
+   "known": 0.8,
+   "kind": "germanic"
+  },
+  {
+   "label": "Spanish",
+   "qid": "Q1321",
+   "fame": 0.653,
+   "language_family": "Romance languages",
+   "description": "Romance language originating in the Iberian Peninsula",
+   "hook": "is the most spoken native tongue across Latin America, with hundreds of millions of speakers",
+   "known": 0.6,
+   "kind": "romance"
+  },
+  {
+   "label": "French",
+   "qid": "Q150",
+   "fame": 0.646,
+   "language_family": "Romance languages",
+   "description": "Romance language",
+   "hook": "is the language of Paris and is an official tongue on several continents",
+   "known": 0.6,
+   "kind": "romance"
+  },
+  {
+   "label": "Russian",
+   "qid": "Q7737",
+   "fame": 0.623,
+   "language_family": "Slavic languages",
+   "description": "East Slavic language",
+   "hook": "is written in the Cyrillic alphabet and spoken across the largest country on Earth",
+   "known": 0.5,
+   "kind": "slavic"
+  },
+  {
+   "label": "Persian",
+   "qid": "Q9168",
+   "fame": 0.615,
+   "language_family": "Iranian languages",
+   "description": "Western Iranian language",
+   "hook": "is spoken in Iran and is also called Farsi",
+   "known": 0.05,
+   "kind": "iranian"
+  },
+  {
+   "label": "Hebrew",
+   "qid": "Q9288",
+   "fame": 0.607,
+   "language_family": "Semitic languages",
+   "description": "Northwest Semitic language",
+   "hook": "was revived as an everyday spoken tongue in Israel after centuries as mostly a sacred language",
+   "known": 0.3,
+   "kind": "semitic"
+  },
+  {
+   "label": "Aramaic",
+   "qid": "Q28602",
+   "fame": 0.599,
+   "language_family": "Semitic languages",
+   "description": "Semitic language",
+   "hook": "is thought to be the everyday language spoken by Jesus",
+   "known": 0.05,
+   "kind": "semitic"
+  },
+  {
+   "label": "Arabic",
+   "qid": "Q13955",
+   "fame": 0.598,
+   "language_family": "Semitic languages",
+   "description": "Semitic language and lingua franca of the Arab world",
+   "hook": "is written from right to left and is the language of the Quran",
+   "known": 0.6,
+   "kind": "semitic"
+  },
+  {
+   "label": "Ancient Greek",
+   "qid": "Q35497",
+   "fame": 0.597,
+   "language_family": "Hellenic languages",
+   "description": "forms of Greek used from around the 9th century BCE to the 6th century CE",
+   "hook": "was the language of Homer, Plato and Aristotle",
+   "known": 0.4,
+   "kind": "hellenic"
+  },
+  {
+   "label": "Catalan",
+   "qid": "Q7026",
+   "fame": 0.582,
+   "language_family": "Romance languages",
+   "description": "Western Romance language",
+   "hook": "is spoken in Barcelona and the Andorran Pyrenees",
+   "known": 0.1,
+   "kind": "romance"
+  },
+  {
+   "label": "Mandarin",
+   "qid": "Q9192",
+   "fame": 0.569,
+   "language_family": "Sino-Tibetan languages",
+   "description": "major branch of Chinese spoken across most of northern and southwestern China",
+   "hook": "is the most widely spoken native language on Earth, with a tonal sound system",
+   "known": 0.5,
+   "kind": "sino-tibetan"
+  },
+  {
+   "label": "Indonesian",
+   "qid": "Q9240",
+   "fame": 0.562,
+   "language_family": "Austronesian languages",
+   "description": "official language of Indonesia",
+   "hook": "is the national language of an island nation of over 17,000 islands and is written in the Latin alphabet",
+   "known": 0.05,
+   "kind": "austronesian"
+  },
+  {
+   "label": "Hungarian",
+   "qid": "Q9067",
+   "fame": 0.552,
+   "language_family": "Uralic languages",
+   "description": "Ugric language mainly spoken in Hungary and surrounding countries",
+   "hook": "is famous for being unrelated to most of its European neighbours and for its many grammatical cases",
+   "known": 0.1,
+   "kind": "uralic"
+  },
+  {
+   "label": "Malay",
+   "qid": "Q9237",
+   "fame": 0.546,
+   "language_family": "Austronesian languages",
+   "description": "Austronesian macrolanguage, basis for Malaysian Malay and Indonesian",
+   "hook": "is spoken across Southeast Asia and is the national language of Malaysia and Brunei",
+   "known": 0.05,
+   "kind": "austronesian"
+  },
+  {
+   "label": "Punjabi",
+   "qid": "Q58635",
+   "fame": 0.546,
+   "language_family": "Indo-Aryan languages",
+   "description": "Indo-Aryan language spoken in the Punjab region of Pakistan and India",
+   "hook": "is the most spoken language of Pakistan and is written in more than one script",
+   "known": 0.05,
+   "kind": "indo-aryan"
+  },
+  {
+   "label": "Thai",
+   "qid": "Q9217",
+   "fame": 0.534,
+   "language_family": "Kra–Dai languages",
+   "description": "Tai language",
+   "hook": "has its own curving alphabet and uses tones to change word meaning",
+   "known": 0.1,
+   "kind": "kra-dai"
+  },
+  {
+   "label": "Swedish",
+   "qid": "Q9027",
+   "fame": 0.521,
+   "language_family": "Germanic languages",
+   "description": "North Germanic language spoken in Sweden and Finland",
+   "hook": "is the language of IKEA and ABBA",
+   "known": 0.3,
+   "kind": "germanic"
+  },
+  {
+   "label": "Czech",
+   "qid": "Q9056",
+   "fame": 0.517,
+   "language_family": "Slavic languages",
+   "description": "West Slavic language",
+   "hook": "gave the world the word robot",
+   "known": 0.1,
+   "kind": "slavic"
+  },
+  {
+   "label": "Khmer",
+   "qid": "Q9205",
+   "fame": 0.513,
+   "language_family": "Austroasiatic languages",
+   "description": "Austroasiatic language of Cambodia",
+   "hook": "has one of the longest alphabets in the world, with dozens of letters",
+   "known": 0.05,
+   "kind": "austroasiatic"
+  },
+  {
+   "label": "Lithuanian",
+   "qid": "Q9083",
+   "fame": 0.511,
+   "language_family": "Baltic languages",
+   "description": "Baltic language spoken in Lithuania",
+   "hook": "is one of the oldest living European tongues, keeping very archaic features",
+   "known": 0.05,
+   "kind": "baltic"
+  },
+  {
+   "label": "Danish",
+   "qid": "Q9035",
+   "fame": 0.509,
+   "language_family": "Germanic languages",
+   "description": "North Germanic language spoken in Northern Europe",
+   "hook": "is spoken in Copenhagen and has a famously tricky way of pronouncing numbers",
+   "known": 0.2,
+   "kind": "germanic"
+  },
+  {
+   "label": "Norwegian",
+   "qid": "Q9043",
+   "fame": 0.504,
+   "language_family": "Germanic languages",
+   "description": "North Germanic language spoken in Norway",
+   "hook": "is spoken in Oslo and the land of fjords, with two official written standards",
+   "known": 0.3,
+   "kind": "germanic"
+  },
+  {
+   "label": "Bulgarian",
+   "qid": "Q7918",
+   "fame": 0.501,
+   "language_family": "Slavic languages",
+   "description": "South Slavic language",
+   "hook": "is written in Cyrillic, an alphabet first spread by medieval missionaries working in this land",
+   "known": 0.1,
+   "kind": "slavic"
+  },
+  {
+   "label": "Serbian",
+   "qid": "Q9299",
+   "fame": 0.501,
+   "language_family": "Slavic languages",
+   "description": "standardized variety of Serbo-Croatian language used by Serbs",
+   "hook": "is written in both Cyrillic and Latin letters",
+   "known": 0.1,
+   "kind": "slavic"
+  },
+  {
+   "label": "Belarusian",
+   "qid": "Q9091",
+   "fame": 0.494,
+   "language_family": "Slavic languages",
+   "description": "East Slavic language",
+   "hook": "is spoken in Minsk and is written in Cyrillic",
+   "known": 0.05,
+   "kind": "slavic"
+  },
+  {
+   "label": "Galician",
+   "qid": "Q9307",
+   "fame": 0.491,
+   "language_family": "Romance languages",
+   "description": "Western Ibero-Romance language",
+   "hook": "is spoken in the northwest corner of Spain, near the pilgrim destination Santiago de Compostela",
+   "known": 0.05,
+   "kind": "romance"
+  },
+  {
+   "label": "Luxembourgish",
+   "qid": "Q9051",
+   "fame": 0.487,
+   "language_family": "Germanic languages",
+   "description": "Germanic language or language variety spoken in Luxembourg",
+   "hook": null,
+   "known": 0.05,
+   "kind": "germanic"
+  },
+  {
+   "label": "Macedonian",
+   "qid": "Q9296",
+   "fame": 0.484,
+   "language_family": "Slavic languages",
+   "description": "South Slavic language mostly spoken in North Macedonia",
+   "hook": "is written in a Cyrillic alphabet and spoken around Lake Ohrid and Skopje",
+   "known": 0.05,
+   "kind": "slavic"
+  },
+  {
+   "label": "Javanese",
+   "qid": "Q33549",
+   "fame": 0.479,
+   "language_family": "Austronesian languages",
+   "description": "Austronesian language",
+   "hook": "is spoken on the world's most populated island, by tens of millions of people",
+   "known": 0.05,
+   "kind": "austronesian"
+  },
+  {
+   "label": "Modern Greek",
+   "qid": "Q36510",
+   "fame": 0.479,
+   "language_family": "Hellenic languages",
+   "description": "dialects and varieties of the Greek language spoken in the modern era",
+   "hook": "is written in an alphabet that gave us the words alpha and beta, and is spoken in Athens",
+   "known": 0.4,
+   "kind": "hellenic"
+  },
+  {
+   "label": "Latvian",
+   "qid": "Q9078",
+   "fame": 0.478,
+   "language_family": "Baltic languages",
+   "description": "Baltic language, official in Latvia and the European Union",
+   "hook": "is spoken in Riga and is one of only two surviving tongues of its small family",
+   "known": 0.05,
+   "kind": "baltic"
+  },
+  {
+   "label": "Faroese",
+   "qid": "Q25258",
+   "fame": 0.467,
+   "language_family": "Germanic languages",
+   "description": "insular Nordic language spoken as a native language by the people of Faroe Islands",
+   "hook": "is spoken on a remote North Atlantic archipelago of sheep and puffins",
+   "known": 0.05,
+   "kind": "germanic"
+  },
+  {
+   "label": "Slovak",
+   "qid": "Q9058",
+   "fame": 0.467,
+   "language_family": "Slavic languages",
+   "description": "West Slavic language spoken in Slovakia",
+   "hook": "is spoken in Bratislava and is very close to its western neighbour's tongue",
+   "known": 0.05,
+   "kind": "slavic"
+  },
+  {
+   "label": "Cebuano",
+   "qid": "Q33239",
+   "fame": 0.462,
+   "language_family": "Austronesian languages",
+   "description": "Austronesian language spoken in the Philippines by Cebuanos and other ethnic groups",
+   "hook": "is widely spoken in the Visayas and southern Philippines, second only to Tagalog-based Filipino",
+   "known": 0.05,
+   "kind": "austronesian"
+  }
+ ]
+}

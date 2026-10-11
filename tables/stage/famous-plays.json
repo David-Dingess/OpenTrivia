@@ -1,0 +1,210 @@
+{
+ "id": "table.stage.famous-plays",
+ "kind": "table",
+ "title": "Famous plays and musicals and who made them",
+ "genre": "arts-entertainment",
+ "category": "stage",
+ "topic": "theater",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?authorLabel WHERE { ?item wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 20) VALUES ?g { wd:Q25379 wd:Q2743 wd:Q192782 wd:Q40831 wd:Q80930 } ?item wdt:P136 ?g . ?item wdt:P50|wdt:P86 ?author . ?item wdt:P31 ?cls . FILTER(?cls != wd:Q5) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-01T04:37:06.992Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-01T04:37:06.992Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "creator",
+   "label": "Written by",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "country",
+   "label": "Country of origin",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "play",
+  "many": "plays",
+  "hookAsk": "Which play {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "creator": {
+    "role": "link",
+    "pick": "Who wrote {label}?",
+    "statement": "{label} was written by {value}.",
+    "match": "Match each play to its writer.",
+    "odd": "Three of these plays were written by {value}. Which one wasn't?",
+    "all": "Tap all {n} plays written by {value}.",
+    "reverse": "Which of these plays did {value} write?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Hamlet",
+   "qid": "Q41567",
+   "fame": 0.653,
+   "creator": "William Shakespeare",
+   "country": "England",
+   "description": "tragedy by William Shakespeare",
+   "hook": "follows a Danish prince who feigns madness while seeking revenge for his father's murder",
+   "known": 0.8,
+   "kind": "play"
+  },
+  {
+   "label": "Romeo and Juliet",
+   "qid": "Q83186",
+   "fame": 0.649,
+   "creator": "William Shakespeare",
+   "country": "Kingdom of England",
+   "description": "tragedy by William Shakespeare",
+   "hook": "tells of two teenagers from feuding families in Verona whose love ends in tragedy",
+   "known": 0.95,
+   "kind": "play"
+  },
+  {
+   "label": "Macbeth",
+   "qid": "Q130283",
+   "fame": 0.629,
+   "creator": "William Shakespeare",
+   "country": null,
+   "description": "tragic play by William Shakespeare from the early 1600s",
+   "hook": "follows a Scottish nobleman driven to murder his way to the throne after witches' prophecy",
+   "known": 0.8,
+   "kind": "play"
+  },
+  {
+   "label": "Death of a Salesman",
+   "qid": "Q820862",
+   "fame": 0.592,
+   "creator": "Arthur Miller",
+   "country": "United States",
+   "description": "1949 play by Arthur Miller",
+   "hook": "follows Willy Loman, a worn-out traveling seller chasing the American Dream",
+   "known": 0.6,
+   "kind": "play"
+  },
+  {
+   "label": "Othello",
+   "qid": "Q26833",
+   "fame": 0.59,
+   "creator": "William Shakespeare",
+   "country": "England",
+   "description": "theatrical play by William Shakespeare",
+   "hook": "centers on a Moorish general whose jealousy is stoked by his scheming ensign Iago",
+   "known": 0.6,
+   "kind": "play"
+  },
+  {
+   "label": "The Crucible",
+   "qid": "Q1183443",
+   "fame": 0.59,
+   "creator": "Arthur Miller",
+   "country": "United States",
+   "description": "1953 play by Arthur Miller",
+   "hook": "dramatizes the Salem witch trials as an allegory for McCarthyism",
+   "known": 0.6,
+   "kind": "play"
+  },
+  {
+   "label": "King Lear",
+   "qid": "Q181598",
+   "fame": 0.58,
+   "creator": "William Shakespeare",
+   "country": null,
+   "description": "tragedy by William Shakespeare",
+   "hook": "follows an aging monarch who divides his kingdom among his three daughters and slides into madness",
+   "known": 0.7,
+   "kind": "play"
+  },
+  {
+   "label": "Wicked",
+   "qid": "Q616439",
+   "fame": 0.575,
+   "creator": "Stephen Schwartz",
+   "country": "United States",
+   "description": "2003 musical based on the 1995 Gregory Maguire's novel",
+   "hook": "tells the untold story of the witches of Oz before Dorothy arrives",
+   "known": 0.7,
+   "kind": "musical"
+  },
+  {
+   "label": "Faust",
+   "qid": "Q29478",
+   "fame": 0.549,
+   "creator": "Johann Wolfgang von Goethe",
+   "country": null,
+   "description": "play by Johann Wolfgang von Goethe",
+   "hook": "is a German two-part verse drama about a restless scholar who wagers with the devil Mephistopheles",
+   "known": 0.4,
+   "kind": "play"
+  },
+  {
+   "label": "The Tragical History of Doctor Faustus",
+   "qid": "Q50919",
+   "fame": 0.515,
+   "creator": "Christopher Marlowe",
+   "country": null,
+   "description": "play by Christopher Marlowe",
+   "hook": "stages an Elizabethan academic trading his soul to Lucifer for twenty-four years of magical power",
+   "known": 0.3,
+   "kind": "play"
+  },
+  {
+   "label": "Julius Caesar",
+   "qid": "Q215750",
+   "fame": 0.509,
+   "creator": "William Shakespeare",
+   "country": null,
+   "description": "play by William Shakespeare",
+   "hook": "shows Roman senators led by Brutus plotting to stab their ruler on the Ides of March",
+   "known": 0.7,
+   "kind": "play"
+  },
+  {
+   "label": "Antony and Cleopatra",
+   "qid": "Q606830",
+   "fame": 0.465,
+   "creator": "William Shakespeare",
+   "country": "England",
+   "description": "tragedy by William Shakespeare",
+   "hook": "depicts the doomed romance between a Roman general and the queen of Egypt",
+   "known": 0.6,
+   "kind": "play"
+  },
+  {
+   "label": "Hedda Gabler",
+   "qid": "Q176465",
+   "fame": 0.461,
+   "creator": "Henrik Ibsen",
+   "country": null,
+   "description": "play in four acts by Norwegian plawright Henrik Ibsen, published in 1890",
+   "hook": "follows a restless newlywed, a general's daughter, who manipulates those around her",
+   "known": 0.3,
+   "kind": "play"
+  }
+ ]
+}

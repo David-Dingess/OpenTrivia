@@ -1,0 +1,206 @@
+{
+ "id": "table.sports.famous-circuits",
+ "kind": "table",
+ "title": "Famous circuits",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "racing",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nCountry) WHERE { VALUES ?item { wd:Q102141307 wd:Q106544792 wd:Q1067286 wd:Q1092902 wd:Q112563 wd:Q113112116 wd:Q1166378 wd:Q1179250 wd:Q12221467 wd:Q1252953 wd:Q1325639 wd:Q1420895 wd:Q1423481 wd:Q152207 wd:Q1523618 wd:Q152408 wd:Q1547320 wd:Q155810 wd:Q1585125 wd:Q1626077 wd:Q1636819 wd:Q1700358 wd:Q17004958 wd:Q171288 wd:Q171313 wd:Q171332 wd:Q171356 wd:Q171358 wd:Q171385 wd:Q171387 wd:Q171390 wd:Q171399 wd:Q171400 wd:Q171402 wd:Q171404 wd:Q171406 wd:Q171417 wd:Q171424 wd:Q171449 wd:Q171566 wd:Q171574 wd:Q171667 wd:Q1723278 wd:Q1723946 wd:Q172732 wd:Q172738 wd:Q172743 wd:Q172860 wd:Q172868 wd:Q172869 wd:Q172873 wd:Q172876 wd:Q172879 wd:Q172880 wd:Q172882 wd:Q172883 wd:Q172884 wd:Q172888 wd:Q172890 wd:Q172892 wd:Q172895 wd:Q172906 wd:Q173083 wd:Q173099 wd:Q173116 wd:Q173185 wd:Q173202 wd:Q173889 wd:Q174004 wd:Q174090 wd:Q174170 wd:Q1803538 wd:Q1813430 wd:Q1815356 wd:Q1815381 wd:Q1931770 wd:Q1950645 wd:Q1965810 wd:Q2092059 wd:Q222686 wd:Q2465788 wd:Q383490 wd:Q524404 wd:Q547535 wd:Q567770 wd:Q571271 wd:Q5769926 wd:Q59626 wd:Q605644 wd:Q648512 wd:Q742207 wd:Q743656 wd:Q782455 wd:Q784899 wd:Q786577 wd:Q789427 wd:Q83234 wd:Q843925 wd:Q896797 wd:Q928721 wd:Q929193 wd:Q953716 wd:Q964148 wd:Q997133 } ?item wdt:P17 ?c ; wikibase:sitelinks ?sitelinks . } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 300 } hint:Prior hint:runFirst true . FILTER(?nCountry = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-10-03T02:30:43.292Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-03T02:30:43.292Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "racetrack",
+  "many": "racetracks",
+  "wildcard": "place",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "In which country is {label}?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each racetrack to its country.",
+    "odd": "Three of these racetracks are in {value}. Which one isn't?",
+    "all": "Tap all {n} racetracks in {value}.",
+    "reverse": "Which of these racetracks is in {value}?"
+   }
+  },
+  "exclude": [
+   {
+    "qid": "Q171400",
+    "why": "Circuit de Monaco: label shares the word Monaco with the answer"
+   }
+  ]
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Sepang International Circuit",
+   "qid": "Q172738",
+   "fame": 0.576,
+   "country": "Malaysia",
+   "description": "motorsport track in Malaysia",
+   "hook": "hosted Formula One races for nearly two decades, near a big airport in Southeast Asia",
+   "known": 0.4,
+   "kind": "f1-circuit"
+  },
+  {
+   "label": "Monza Circuit",
+   "qid": "Q171417",
+   "fame": 0.575,
+   "country": "Italy",
+   "description": "motorsport racetrack in Monza, Italy",
+   "hook": "is a fast, historic track north of Milan and a fixture of the Formula One calendar since its earliest seasons",
+   "known": 0.8,
+   "kind": "f1-circuit"
+  },
+  {
+   "label": "Nürburgring",
+   "qid": "Q152207",
+   "fame": 0.557,
+   "country": "Germany",
+   "description": "race track in Nürburg, Rhineland-Palatinate, Germany",
+   "hook": "has a punishing northern loop in the Eifel mountains that Jackie Stewart nicknamed the Green Hell",
+   "known": 0.6,
+   "kind": "road-course"
+  },
+  {
+   "label": "Baku City Circuit",
+   "qid": "Q17004958",
+   "fame": 0.532,
+   "country": "Azerbaijan",
+   "description": "motor racing circuit in Baku, Azerbaijan.",
+   "hook": "is a Formula One city track by a seaside boulevard, with one of the longest laps on the calendar",
+   "known": 0.4,
+   "kind": "street-circuit"
+  },
+  {
+   "label": "Silverstone Circuit",
+   "qid": "Q171402",
+   "fame": 0.526,
+   "country": "United Kingdom",
+   "description": "motor racing circuit on the Buckinghamshire and Northamptonshire border, UK",
+   "hook": "hosted the very first race of the Formula One world championship and still stages its nation's grand prix",
+   "known": 0.8,
+   "kind": "f1-circuit"
+  },
+  {
+   "label": "WeatherTech Raceway Laguna Seca",
+   "qid": "Q1423481",
+   "fame": 0.513,
+   "country": "United States",
+   "description": "motorsport track in the United States",
+   "hook": null,
+   "known": 0.2,
+   "kind": "road-course"
+  },
+  {
+   "label": "Circuit de Barcelona-Catalunya",
+   "qid": "Q171404",
+   "fame": 0.501,
+   "country": "Spain",
+   "description": "motorsport track in Spain",
+   "hook": "is a Formula One track seen as an all-rounder, with long straights and a mix of corners",
+   "known": 0.6,
+   "kind": "f1-circuit"
+  },
+  {
+   "label": "Bristol Motor Speedway",
+   "qid": "Q383490",
+   "fame": 0.49,
+   "country": "United States",
+   "description": "motorsport track in the United States",
+   "hook": "is a half-mile oval where NASCAR draws 146,000 fans and college football games have been played",
+   "known": 0.4,
+   "kind": "speedway"
+  },
+  {
+   "label": "Indianapolis Motor Speedway",
+   "qid": "Q172732",
+   "fame": 0.484,
+   "country": "United States",
+   "description": "motorsport track in Indianapolis, IN, USA",
+   "hook": "is the home of a legendary 500-mile race and the Brickyard 400 NASCAR event",
+   "known": 0.8,
+   "kind": "speedway"
+  },
+  {
+   "label": "Marina Bay Street Circuit",
+   "qid": "Q171390",
+   "fame": 0.483,
+   "country": "Singapore",
+   "description": "motorsport track in Singapore",
+   "hook": "is a harbourside track on city roads that stages a Formula One grand prix and nearly always sees a safety car",
+   "known": 0.6,
+   "kind": "street-circuit"
+  },
+  {
+   "label": "Imola Circuit",
+   "qid": "Q171313",
+   "fame": 0.474,
+   "country": "Italy",
+   "description": "motorsport venue in Italy",
+   "hook": "is named after the founder of a famous Italian carmaker and his son",
+   "known": 0.4,
+   "kind": "f1-circuit"
+  },
+  {
+   "label": "Circuit of the Americas",
+   "qid": "Q59626",
+   "fame": 0.471,
+   "country": "United States",
+   "description": "race track near Austin, Texas, USA",
+   "hook": "was the first track in its country purpose-built for Formula One, near the capital of Texas",
+   "known": 0.4,
+   "kind": "f1-circuit"
+  },
+  {
+   "label": "Darlington Raceway",
+   "qid": "Q1166378",
+   "fame": 0.458,
+   "country": "United States",
+   "description": "motorsport track in the United States",
+   "hook": null,
+   "known": 0.2,
+   "kind": "speedway"
+  },
+  {
+   "label": "Circuit de Monaco",
+   "qid": "Q171400",
+   "fame": 0.452,
+   "country": "Monaco",
+   "description": "street circuit around the harbour of the principality of Monaco",
+   "hook": "winds around a harbour through a glitzy city's streets and is often simply called Monte Carlo",
+   "known": 0.95,
+   "kind": "street-circuit"
+  }
+ ]
+}

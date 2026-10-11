@@ -1,0 +1,467 @@
+{
+ "id": "table.film-and-tv.sundance-winners",
+ "kind": "table",
+ "title": "Sundance and Independent Spirit winning films and their directors",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "indie-film",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?dirLabel ?kindTag WHERE { { SELECT ?item (SAMPLE(?d) AS ?dir) (COUNT(DISTINCT ?d) AS ?nDir) (MAX(?doc) AS ?isDoc) WHERE { ?item wdt:P31 wd:Q11424 ; wdt:P166 ?aw ; wdt:P57 ?d ; wikibase:sitelinks ?sl . ?aw rdfs:label ?al . FILTER(lang(?al) = \"en\" && (CONTAINS(?al, \"Sundance\") || CONTAINS(?al, \"Independent Spirit\")) && !CONTAINS(?al, \"Short\")) BIND(IF(CONTAINS(?al, \"Documentary\"), 1, 0) AS ?doc) FILTER(?sl >= 15) FILTER(?d NOT IN (wd:Q51552, wd:Q25089, wd:Q42229, wd:Q220751, wd:Q298025)) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nDir = 1) BIND(IF(?isDoc = 1, \"documentary\", \"drama\") AS ?kindTag) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T13:42:19.001Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T13:42:19.001Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "director",
+   "label": "Director",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "kind",
+   "label": "Film type",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "film",
+  "many": "indie award-winning films",
+  "hookAsk": "Which indie award-winning film {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "director": {
+    "role": "link",
+    "pick": "Who directed {label}?",
+    "statement": "{label} was directed by {value}.",
+    "match": "Match each indie award-winning film to its director.",
+    "odd": "Three of these indie award-winning films were directed by {value}. Which one wasn't?",
+    "all": "Tap all {n} indie award-winning films directed by {value}.",
+    "reverse": "Which of these did {value} direct?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Pulp Fiction",
+   "qid": "Q104123",
+   "fame": 0.686,
+   "director": "Quentin Tarantino",
+   "kind": "drama",
+   "description": "1994 film by Quentin Tarantino",
+   "hook": "interweaves crime stories of hitmen, a boxer and a mob boss's wife, with a famous dance contest",
+   "known": 0.9
+  },
+  {
+   "label": "The Witch",
+   "qid": "Q19057481",
+   "fame": 0.681,
+   "director": "Robert Eggers",
+   "kind": "drama",
+   "description": "2015 film directed by Robert Eggers",
+   "hook": "follows a Puritan family haunted by evil near their forest farm, with a goat named Black Phillip",
+   "known": 0.4
+  },
+  {
+   "label": "Whiplash",
+   "qid": "Q15648198",
+   "fame": 0.673,
+   "director": "Damien Chazelle",
+   "kind": "drama",
+   "description": "2014 film directed by Damien Chazelle",
+   "hook": "follows an ambitious young drummer pushed to his limits by a ferocious jazz conservatory instructor",
+   "known": 0.75
+  },
+  {
+   "label": "Silver Linings Playbook",
+   "qid": "Q116845",
+   "fame": 0.643,
+   "director": "David O. Russell",
+   "kind": "drama",
+   "description": "2012 film directed by David O. Russell",
+   "hook": "pairs two damaged people who bond over a dance competition and a love of football",
+   "known": 0.85
+  },
+  {
+   "label": "Birdman",
+   "qid": "Q13255497",
+   "fame": 0.636,
+   "director": "Alejandro González Iñárritu",
+   "kind": "drama",
+   "description": "2014 film by Alejandro González Iñárritu",
+   "hook": "stars a washed-up actor famous for a superhero role, staged to look like one continuous take",
+   "known": 0.7
+  },
+  {
+   "label": "12 Years a Slave",
+   "qid": "Q3023357",
+   "fame": 0.624,
+   "director": "Steve McQueen",
+   "kind": "drama",
+   "description": "2013 film directed by Steve McQueen",
+   "hook": "tells the true story of a free Black man kidnapped and sold into plantation labor",
+   "known": 0.85
+  },
+  {
+   "label": "Aftersun",
+   "qid": "Q111668106",
+   "fame": 0.617,
+   "director": "Charlotte Wells",
+   "kind": "drama",
+   "description": "2022 film directed by Charlotte Wells",
+   "hook": "looks back on a father-daughter holiday at a Turkish resort, seen through old camcorder footage",
+   "known": 0.3
+  },
+  {
+   "label": "CODA",
+   "qid": "Q104686893",
+   "fame": 0.606,
+   "director": "Siân Héder",
+   "kind": "drama",
+   "description": "2021 film directed by Sian Heder",
+   "hook": "centers on a hearing teenager who sings and interprets for her deaf family's fishing business",
+   "known": 0.8
+  },
+  {
+   "label": "Super Size Me",
+   "qid": "Q738662",
+   "fame": 0.578,
+   "director": "Morgan Spurlock",
+   "kind": "documentary",
+   "description": "2004 film directed by Morgan Spurlock",
+   "hook": "documents a man eating only at a fast-food chain for a month, with alarming health results",
+   "known": 0.9
+  },
+  {
+   "label": "50/50",
+   "qid": "Q859448",
+   "fame": 0.577,
+   "director": "Jonathan Levine",
+   "kind": "drama",
+   "description": "2011 film directed by Jonathan Levine",
+   "hook": "is a comedy-drama about a young man's cancer diagnosis and his best friend's awkward support",
+   "known": 0.6
+  },
+  {
+   "label": "A Room with a View",
+   "qid": "Q203574",
+   "fame": 0.563,
+   "director": "James Ivory",
+   "kind": "drama",
+   "description": "1985 film directed by James Ivory",
+   "hook": "adapts an E. M. Forster novel about a young Englishwoman's romance in Italy and Edwardian England",
+   "known": 0.7
+  },
+  {
+   "label": "Winter's Bone",
+   "qid": "Q301049",
+   "fame": 0.561,
+   "director": "Debra Granik",
+   "kind": "drama",
+   "description": "2010 film by Debra Granik",
+   "hook": "follows a teenage girl in the Ozarks searching for her missing father to save her family's home",
+   "known": 0.4
+  },
+  {
+   "label": "My Own Private Idaho",
+   "qid": "Q1125451",
+   "fame": 0.56,
+   "director": "Gus Van Sant",
+   "kind": "drama",
+   "description": "1991 film directed by Gus Van Sant",
+   "hook": "stars River Phoenix and Keanu Reeves as two street hustlers on a road trip",
+   "known": 0.5
+  },
+  {
+   "label": "The Piano",
+   "qid": "Q117315",
+   "fame": 0.56,
+   "director": "Jane Campion",
+   "kind": "drama",
+   "description": "1993 film directed by Jane Campion",
+   "hook": "follows a mute pianist and her daughter in 19th-century New Zealand, and won the Palme d'Or",
+   "known": 0.8
+  },
+  {
+   "label": "An Education",
+   "qid": "Q482436",
+   "fame": 0.555,
+   "director": "Lone Scherfig",
+   "kind": "drama",
+   "description": "2009 film by Lone Scherfig",
+   "hook": "follows a bright 1960s London schoolgirl seduced by an older man, with Carey Mulligan in her breakout role",
+   "known": 0.65
+  },
+  {
+   "label": "Fruitvale Station",
+   "qid": "Q3788751",
+   "fame": 0.555,
+   "director": "Ryan Coogler",
+   "kind": "drama",
+   "description": "2013 film by Ryan Coogler",
+   "hook": "dramatizes the final day of a young man killed by transit police on New Year's Day in Oakland",
+   "known": 0.5
+  },
+  {
+   "label": "The Station Agent",
+   "qid": "Q1653448",
+   "fame": 0.553,
+   "director": "Tom McCarthy",
+   "kind": "drama",
+   "description": "2003 film by Tom McCarthy",
+   "hook": "follows a man with dwarfism who inherits an abandoned railroad depot and makes unexpected friends",
+   "known": 0.3
+  },
+  {
+   "label": "The Spectacular Now",
+   "qid": "Q3522804",
+   "fame": 0.549,
+   "director": "James Ponsoldt",
+   "kind": "drama",
+   "description": "2013 film directed by James Ponsoldt",
+   "hook": "follows a charming high school senior who befriends a quiet girl and struggles with drinking",
+   "known": 0.6
+  },
+  {
+   "label": "Dancer in the Dark",
+   "qid": "Q110365",
+   "fame": 0.547,
+   "director": "Lars von Trier",
+   "kind": "drama",
+   "description": "2000 film by Lars von Trier",
+   "hook": "stars Björk as a factory worker going blind, told through musical fantasy sequences",
+   "known": 0.45
+  },
+  {
+   "label": "The Straight Story",
+   "qid": "Q1139454",
+   "fame": 0.545,
+   "director": "David Lynch",
+   "kind": "drama",
+   "description": "1999 film by David Lynch",
+   "hook": "follows an elderly man crossing Iowa on a riding lawn mower to visit his ailing brother",
+   "known": 0.6
+  },
+  {
+   "label": "Primer",
+   "qid": "Q1434995",
+   "fame": 0.533,
+   "director": "Shane Carruth",
+   "kind": "drama",
+   "description": "2004 film directed by Shane Carruth",
+   "hook": "is a low-budget, mind-bending story of engineers who accidentally build a time machine in a garage",
+   "known": 0.15
+  },
+  {
+   "label": "Wings of Desire",
+   "qid": "Q156911",
+   "fame": 0.532,
+   "director": "Wim Wenders",
+   "kind": "drama",
+   "description": "1987 film by Wim Wenders",
+   "hook": "follows angels who listen in on the thoughts of people in Berlin, until one longs to become human",
+   "known": 0.5
+  },
+  {
+   "label": "Clerks",
+   "qid": "Q747877",
+   "fame": 0.529,
+   "director": "Kevin Smith",
+   "kind": "drama",
+   "description": "1994 film directed by Kevin Smith",
+   "hook": "is a low-budget black-and-white comedy about a day in the life of a New Jersey convenience store clerk",
+   "known": 0.65
+  },
+  {
+   "label": "Pi",
+   "qid": "Q937762",
+   "fame": 0.525,
+   "director": "Darren Aronofsky",
+   "kind": "drama",
+   "description": "1998 film directed by Darren Aronofsky",
+   "hook": "follows a paranoid mathematician who searches for a hidden numerical order in the stock market",
+   "known": 0.45
+  },
+  {
+   "label": "Three Identical Strangers",
+   "qid": "Q55635808",
+   "fame": 0.525,
+   "director": "Tim Wardle",
+   "kind": "documentary",
+   "description": "2018 documentary film directed by Tim Wardle",
+   "hook": "documents triplets separated at birth who discover each other as young men by chance",
+   "known": 0.55
+  },
+  {
+   "label": "El Mariachi",
+   "qid": "Q840297",
+   "fame": 0.517,
+   "director": "Robert Rodriguez",
+   "kind": "drama",
+   "description": "1992 film directed by Robert Rodriguez",
+   "hook": "is a shoestring-budget action movie about a traveling guitarist mistaken for a killer, shot for about $7,000",
+   "known": 0.55
+  },
+  {
+   "label": "Chasing Amy",
+   "qid": "Q40115",
+   "fame": 0.505,
+   "director": "Kevin Smith",
+   "kind": "drama",
+   "description": "1997 film directed by Kevin Smith",
+   "hook": "is a romantic comedy about a comic book artist who falls for a woman who prefers women",
+   "known": 0.55
+  },
+  {
+   "label": "Minari",
+   "qid": "Q65679599",
+   "fame": 0.501,
+   "director": "Lee Isaac Chung",
+   "kind": "drama",
+   "description": "2020 film directed by Lee Isaac Chung",
+   "hook": "follows a Korean American family starting a farm in 1980s Arkansas, with a grandmother who moves in",
+   "known": 0.75
+  },
+  {
+   "label": "Paris Is Burning",
+   "qid": "Q7137311",
+   "fame": 0.49,
+   "director": "Jennie Livingston",
+   "kind": "documentary",
+   "description": "1990 film by Jennie Livingston",
+   "hook": "documents the drag ball culture of Harlem's Black and Latino communities in New York",
+   "known": 0.55
+  },
+  {
+   "label": "Brick",
+   "qid": "Q913439",
+   "fame": 0.487,
+   "director": "Rian Johnson",
+   "kind": "drama",
+   "description": "2005 film directed by Rian Johnson",
+   "hook": "sets a hardboiled detective mystery in a modern California high school",
+   "known": 0.65
+  },
+  {
+   "label": "Hedwig and the Angry Inch",
+   "qid": "Q1753731",
+   "fame": 0.485,
+   "director": "John Cameron Mitchell",
+   "kind": "drama",
+   "description": "2001 film directed by John Cameron Mitchell",
+   "hook": "adapts a rock musical about an East German singer whose surgery goes wrong",
+   "known": 0.5
+  },
+  {
+   "label": "Animal Kingdom",
+   "qid": "Q1144983",
+   "fame": 0.483,
+   "director": "David Michôd",
+   "kind": "drama",
+   "description": "2010 film directed by David Michôd",
+   "hook": "follows a teenager who moves in with his crime-family relatives in Melbourne",
+   "known": 0.4
+  },
+  {
+   "label": "Far from Heaven",
+   "qid": "Q1130664",
+   "fame": 0.478,
+   "director": "Todd Haynes",
+   "kind": "drama",
+   "description": "2002 film by Todd Haynes",
+   "hook": "imitates a 1950s Douglas Sirk melodrama about a Connecticut housewife whose marriage unravels",
+   "known": 0.55
+  },
+  {
+   "label": "In the Bedroom",
+   "qid": "Q151945",
+   "fame": 0.471,
+   "director": "Todd Field",
+   "kind": "drama",
+   "description": "2001 film by Todd Field",
+   "hook": "centers on a Maine couple whose marriage strains under the weight of losing their son",
+   "known": 0.5
+  },
+  {
+   "label": "The Motorcycle Diaries",
+   "qid": "Q309246",
+   "fame": 0.469,
+   "director": "Walter Salles",
+   "kind": "drama",
+   "description": "2004 film by Walter Salles",
+   "hook": "follows a young Che Guevara and a friend on a road trip across South America on a motorbike",
+   "known": 0.7
+  },
+  {
+   "label": "Whale Rider",
+   "qid": "Q19393",
+   "fame": 0.469,
+   "director": "Niki Caro",
+   "kind": "drama",
+   "description": "2002 drama film directed by Niki Caro",
+   "hook": "follows a Maori girl who defies her grandfather to become a chief, bonding with a giant sea creature",
+   "known": 0.6
+  },
+  {
+   "label": "The Unbearable Lightness of Being",
+   "qid": "Q1122571",
+   "fame": 0.468,
+   "director": "Philip Kaufman",
+   "kind": "drama",
+   "description": "1988 film by Philip Kaufman",
+   "hook": "adapts Milan Kundera's novel about a Czech surgeon and his lovers during the Prague Spring",
+   "known": 0.65
+  },
+  {
+   "label": "God's Own Country",
+   "qid": "Q28212152",
+   "fame": 0.462,
+   "director": "Francis Lee",
+   "kind": "drama",
+   "description": "2017 film directed by Francis Lee",
+   "hook": "is a romance between a young Yorkshire sheep farmer and a Romanian migrant worker",
+   "known": 0.4
+  },
+  {
+   "label": "The Squid and the Whale",
+   "qid": "Q1197427",
+   "fame": 0.456,
+   "director": "Noah Baumbach",
+   "kind": "drama",
+   "description": "2005 film by Noah Baumbach",
+   "hook": "portrays two Brooklyn boys coping with their writer parents' divorce in the 1980s",
+   "known": 0.65
+  },
+  {
+   "label": "You Can Count on Me",
+   "qid": "Q2300341",
+   "fame": 0.453,
+   "director": "Kenneth Lonergan",
+   "kind": "drama",
+   "description": "2000 film by Kenneth Lonergan",
+   "hook": "follows a single mother and her drifter brother as his return unsettles their quiet small-town lives",
+   "known": 0.6
+  }
+ ]
+}

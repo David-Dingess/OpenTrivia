@@ -1,0 +1,127 @@
+{
+ "id": "table.stage.dances",
+ "kind": "table",
+ "title": "Dances people know",
+ "genre": "arts-entertainment",
+ "category": "stage",
+ "topic": "dance",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { VALUES ?item { wd:Q193434 wd:Q338450 wd:Q189825 wd:Q221438 wd:Q208370 wd:Q244475 wd:Q41425 wd:Q9764 wd:Q169737 wd:Q2071053 wd:Q58339 wd:Q866636 wd:Q182863 wd:Q11403 wd:Q12414569 wd:Q1146185 wd:Q1156994 wd:Q153071 wd:Q17237 wd:Q663529 wd:Q7857851 wd:Q842835 wd:Q1900271 wd:Q912389 wd:Q245418 wd:Q1066703 wd:Q4413211 wd:Q333002 wd:Q1026113 wd:Q1756379 wd:Q747339 wd:Q488656 wd:Q229680 wd:Q595772 wd:Q661609 wd:Q937440 wd:Q1474245 wd:Q387916 wd:Q107740285 wd:Q1156570 wd:Q324617 wd:Q333009 wd:Q1134329 wd:Q334156 wd:Q949256 wd:Q208341 wd:Q159452 wd:Q3595586 wd:Q15830404 wd:Q1130969 wd:Q13479601 wd:Q520894 wd:Q653485 wd:Q936055 wd:Q1597549 wd:Q227045 wd:Q1018001 wd:Q118120 wd:Q486263 wd:Q976634 wd:Q1112128 } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T17:52:20.559Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T17:52:20.559Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "dance",
+  "many": "dances",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "disco",
+   "qid": "Q58339",
+   "fame": 0.539,
+   "description": "genre of dance music and a subculture that emerged in the 1970s from the United States' urban nightlife scene"
+  },
+  {
+   "label": "capoeira",
+   "qid": "Q159452",
+   "fame": 0.518,
+   "description": "Brazilian martial art that combines elements of dance fists kicks and music"
+  },
+  {
+   "label": "bossa nova",
+   "qid": "Q486263",
+   "fame": 0.513,
+   "description": "style of Brazilian music"
+  },
+  {
+   "label": "haka",
+   "qid": "Q3595586",
+   "fame": 0.51,
+   "description": "traditional Māori chanting dance"
+  },
+  {
+   "label": "flamenco",
+   "qid": "Q9764",
+   "fame": 0.508,
+   "description": "genre of Spanish music and dance"
+  },
+  {
+   "label": "Bharatanatyam",
+   "qid": "Q334156",
+   "fame": 0.493,
+   "description": "Indian classical dance"
+  },
+  {
+   "label": "breakdance",
+   "qid": "Q169737",
+   "fame": 0.492,
+   "description": "style of street dance"
+  },
+  {
+   "label": "twerking",
+   "qid": "Q7857851",
+   "fame": 0.48,
+   "description": "type of dance primarily involving the buttocks"
+  },
+  {
+   "label": "ballet",
+   "qid": "Q41425",
+   "fame": 0.476,
+   "description": "type of performance dance; performing arts genre; theatrical genre"
+  },
+  {
+   "label": "tango",
+   "qid": "Q338450",
+   "fame": 0.476,
+   "description": "Argentinian-Uruguayan partner dance"
+  },
+  {
+   "label": "belly dance",
+   "qid": "Q182863",
+   "fame": 0.468,
+   "description": "Arabic dance"
+  },
+  {
+   "label": "Morris dance",
+   "qid": "Q1900271",
+   "fame": 0.461,
+   "description": "English performance folk dance"
+  },
+  {
+   "label": "polka",
+   "qid": "Q153071",
+   "fame": 0.461,
+   "description": "Central European dance"
+  },
+  {
+   "label": "can can",
+   "qid": "Q333009",
+   "fame": 0.456,
+   "description": "music hall dance presentation"
+  },
+  {
+   "label": "cumbia",
+   "qid": "Q107740285",
+   "fame": 0.451,
+   "description": "number of musical rhythms and folk dance traditions of Latin America"
+  }
+ ]
+}

@@ -1,0 +1,662 @@
+{
+ "id": "table.sports.racing-drivers-country",
+ "kind": "table",
+ "title": "Famous racing drivers and the country they represent",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "racing",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nCountry) WHERE { VALUES ?occ { wd:Q378622 wd:Q10841764 wd:Q3014296 } ?item wdt:P106 ?occ ; wdt:P27 ?c ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 5) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 800 } hint:Prior hint:runFirst true . FILTER(?nCountry = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T02:39:41.645Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T02:39:41.645Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "racing driver",
+  "many": "racing drivers",
+  "wildcard": "person",
+  "hookAsk": "Which racing driver {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country does racing driver {label} represent?",
+    "statement": "{label} represents {value}.",
+    "match": "Match each racing driver to the country they represent.",
+    "odd": "Three of these racing drivers represent {value}. Which one doesn't?",
+    "all": "Tap all {n} racing drivers who represent {value}.",
+    "reverse": "Which of these racing drivers represents {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Kimi Antonelli",
+   "qid": "Q112073790",
+   "fame": 0.768,
+   "country": "Italy",
+   "description": "Italian F1 driver",
+   "hook": "stepped into a Mercedes seat as a teenager to replace a seven-time world champion",
+   "known": 0.05,
+   "kind": "prospect"
+  },
+  {
+   "label": "Lewis Hamilton",
+   "qid": "Q9673",
+   "fame": 0.758,
+   "country": "United Kingdom",
+   "description": "British racing driver",
+   "hook": "won seven Formula 1 world titles and holds the record for most race wins",
+   "known": 0.8,
+   "kind": "world champion"
+  },
+  {
+   "label": "Michael Schumacher",
+   "qid": "Q9671",
+   "fame": 0.734,
+   "country": "Germany",
+   "description": "German racing driver (born 1969)",
+   "hook": "won seven Formula 1 world titles, five of them in a row with Ferrari",
+   "known": 0.8,
+   "kind": "world champion"
+  },
+  {
+   "label": "Charles Leclerc",
+   "qid": "Q17541912",
+   "fame": 0.679,
+   "country": "Monaco",
+   "description": "Monegasque racing driver",
+   "hook": "is the Ferrari star who finally won his home Grand Prix after years of heartbreak",
+   "known": 0.6,
+   "kind": "f1 star"
+  },
+  {
+   "label": "Ayrton Senna",
+   "qid": "Q10490",
+   "fame": 0.672,
+   "country": "Brazil",
+   "description": "Brazilian racing driver (1960–1994)",
+   "hook": "was a three-time world champion whose fatal crash at Imola shocked the sport",
+   "known": 0.8,
+   "kind": "world champion"
+  },
+  {
+   "label": "Niki Lauda",
+   "qid": "Q78489",
+   "fame": 0.664,
+   "country": "Austria",
+   "description": "Austrian former Formula 1 driver (1949–2019)",
+   "hook": "returned to racing weeks after a fiery crash at the Nurburgring and won a third title",
+   "known": 0.6,
+   "kind": "world champion"
+  },
+  {
+   "label": "George Russell",
+   "qid": "Q17319645",
+   "fame": 0.66,
+   "country": "United Kingdom",
+   "description": "British racing driver (born 1998)",
+   "hook": "is a Mercedes driver nicknamed Mr. Saturday for his qualifying pace",
+   "known": 0.6,
+   "kind": "f1 star"
+  },
+  {
+   "label": "Fernando Alonso",
+   "qid": "Q10514",
+   "fame": 0.655,
+   "country": "Spain",
+   "description": "Spanish racing driver",
+   "hook": "won back-to-back Formula 1 titles with Renault and kept racing well into his forties",
+   "known": 0.8,
+   "kind": "world champion"
+  },
+  {
+   "label": "Pierre Gasly",
+   "qid": "Q11816647",
+   "fame": 0.647,
+   "country": "France",
+   "description": "French racing driver",
+   "hook": "won the Italian Grand Prix in a shock result in a small AlphaTauri car",
+   "known": 0.4,
+   "kind": "f1 star"
+  },
+  {
+   "label": "Ken Miles",
+   "qid": "Q949196",
+   "fame": 0.619,
+   "country": "United Kingdom",
+   "description": "British racing driver (1918–1966)",
+   "hook": "was the racer played by Christian Bale in the film Ford v Ferrari",
+   "known": 0.4,
+   "kind": "racing legend"
+  },
+  {
+   "label": "Kimi Räikkönen",
+   "qid": "Q11192",
+   "fame": 0.616,
+   "country": "Finland",
+   "description": "Finnish racing driver",
+   "hook": "is the last driver to win the Formula 1 title for Ferrari, nicknamed the Iceman",
+   "known": 0.6,
+   "kind": "world champion"
+  },
+  {
+   "label": "Sebastian Vettel",
+   "qid": "Q42311",
+   "fame": 0.611,
+   "country": "Germany",
+   "description": "German racing driver",
+   "hook": "won four straight world titles with Red Bull as a young star",
+   "known": 0.6,
+   "kind": "world champion"
+  },
+  {
+   "label": "James Hunt",
+   "qid": "Q140393",
+   "fame": 0.61,
+   "country": "United Kingdom",
+   "description": "British racing driver (1947–1993)",
+   "hook": "won a dramatic title fight against a rival that was dramatised in the film Rush",
+   "known": 0.4,
+   "kind": "racing legend"
+  },
+  {
+   "label": "Arvid Lindblad",
+   "qid": "Q117035650",
+   "fame": 0.605,
+   "country": "United Kingdom",
+   "description": "British racing driver",
+   "hook": "is a young Red Bull junior who made his Formula 1 debut in his late teens",
+   "known": 0.05,
+   "kind": "prospect"
+  },
+  {
+   "label": "Dale Earnhardt",
+   "qid": "Q355420",
+   "fame": 0.603,
+   "country": "United States",
+   "description": "American racing driver (1951-2001)",
+   "hook": "was the seven-time NASCAR champion known as The Intimidator, killed on the last lap at Daytona",
+   "known": 0.4,
+   "kind": "other series"
+  },
+  {
+   "label": "Valentino Rossi",
+   "qid": "Q169814",
+   "fame": 0.603,
+   "country": "Italy",
+   "description": "Italian motorcycle racer",
+   "hook": "won nine motorcycle world titles and wears the number 46",
+   "known": 0.4,
+   "kind": "other series"
+  },
+  {
+   "label": "Oscar Piastri",
+   "qid": "Q28741262",
+   "fame": 0.596,
+   "country": "Australia",
+   "description": "Australian racing driver",
+   "hook": "is a McLaren driver who fought for the Formula 1 title after winning races in papaya orange",
+   "known": 0.6,
+   "kind": "f1 star"
+  },
+  {
+   "label": "Carlos Sainz Jr.",
+   "qid": "Q544856",
+   "fame": 0.595,
+   "country": "Spain",
+   "description": "Spanish racing driver",
+   "hook": "is nicknamed the Smooth Operator and drove for Ferrari, Williams and more",
+   "known": 0.4,
+   "kind": "f1 star"
+  },
+  {
+   "label": "Jenson Button",
+   "qid": "Q10510",
+   "fame": 0.594,
+   "country": "United Kingdom",
+   "description": "British racing driver",
+   "hook": "won the Formula 1 title with Brawn GP after the team's remarkable rebirth from Honda",
+   "known": 0.6,
+   "kind": "world champion"
+  },
+  {
+   "label": "Daniel Ricciardo",
+   "qid": "Q82816",
+   "fame": 0.577,
+   "country": "Australia",
+   "description": "Australian racing driver",
+   "hook": "is famous for his big grin and his celebratory shoey drinks from his boot",
+   "known": 0.4,
+   "kind": "f1 driver"
+  },
+  {
+   "label": "Liam Lawson",
+   "qid": "Q59180330",
+   "fame": 0.57,
+   "country": "New Zealand",
+   "description": "New Zealand motor racing driver",
+   "hook": "was swapped mid-season between Red Bull and its sister team in a headline-making shuffle",
+   "known": 0.05,
+   "kind": "prospect"
+  },
+  {
+   "label": "Mick Schumacher",
+   "qid": "Q18119599",
+   "fame": 0.566,
+   "country": "Germany",
+   "description": "German racing driver (born 1999)",
+   "hook": "is the son of a seven-time world champion and raced for Haas",
+   "known": 0.4,
+   "kind": "prospect"
+  },
+  {
+   "label": "Jacques Villeneuve",
+   "qid": "Q172843",
+   "fame": 0.565,
+   "country": "Canada",
+   "description": "Canadian racecar driver (born 1971)",
+   "hook": "won the Indianapolis 500 and a Formula 1 title, son of a famous racer",
+   "known": 0.4,
+   "kind": "racing legend"
+  },
+  {
+   "label": "Esteban Ocon",
+   "qid": "Q15074165",
+   "fame": 0.561,
+   "country": "France",
+   "description": "French racing driver",
+   "hook": "won a chaotic race in Hungary and drives for Alpine and Haas",
+   "known": 0.4,
+   "kind": "f1 driver"
+  },
+  {
+   "label": "Yuki Tsunoda",
+   "qid": "Q59209579",
+   "fame": 0.552,
+   "country": "Japan",
+   "description": "Japanese racing driver",
+   "hook": "is a Red Bull driver who became a fan favourite for radio outbursts and quick starts",
+   "known": 0.4,
+   "kind": "f1 driver"
+  },
+  {
+   "label": "Valtteri Bottas",
+   "qid": "Q138745",
+   "fame": 0.55,
+   "country": "Finland",
+   "description": "Finnish Formula 1 racing driver",
+   "hook": "is a longtime Mercedes teammate famous for his shaved head and \"To whom it may concern\" radio line",
+   "known": 0.4,
+   "kind": "f1 driver"
+  },
+  {
+   "label": "Alex Zanardi",
+   "qid": "Q173188",
+   "fame": 0.549,
+   "country": "Italy",
+   "description": "Italian racing driver and para-cyclist (1966–2026)",
+   "hook": "lost both legs in a crash, then won gold medals at the Paralympic Games in handcycling",
+   "known": 0.4,
+   "kind": "other series"
+  },
+  {
+   "label": "Sergio Pérez",
+   "qid": "Q82805",
+   "fame": 0.549,
+   "country": "Mexico",
+   "description": "Mexican racing driver (1990-)",
+   "hook": "is nicknamed Checo and won several street races with Red Bull",
+   "known": 0.4,
+   "kind": "f1 driver"
+  },
+  {
+   "label": "David Coulthard",
+   "qid": "Q172832",
+   "fame": 0.544,
+   "country": "United Kingdom",
+   "description": "British racing driver",
+   "hook": "won at Monaco twice and is now a familiar TV commentator",
+   "known": 0.2,
+   "kind": "racing legend"
+  },
+  {
+   "label": "Nigel Mansell",
+   "qid": "Q10501",
+   "fame": 0.538,
+   "country": "United Kingdom",
+   "description": "British racing driver (born 1953)",
+   "hook": "is known for a huge moustache and won the world title with Williams",
+   "known": 0.4,
+   "kind": "racing legend"
+  },
+  {
+   "label": "Gilles Villeneuve",
+   "qid": "Q172845",
+   "fame": 0.537,
+   "country": "Canada",
+   "description": "Canadian racing driver (1950–1982)",
+   "hook": "was a fearless Ferrari driver whose daring cornering is still legendary",
+   "known": 0.4,
+   "kind": "racing legend"
+  },
+  {
+   "label": "Bruce McLaren",
+   "qid": "Q173081",
+   "fame": 0.534,
+   "country": "New Zealand",
+   "description": "New Zealand racecar driver, designer and team owner (1937-1970)",
+   "hook": "founded a team that still races today and won at Le Mans with Ford",
+   "known": 0.4,
+   "kind": "racing legend"
+  },
+  {
+   "label": "Oliver Bearman",
+   "qid": "Q107023292",
+   "fame": 0.534,
+   "country": "United Kingdom",
+   "description": "British racing driver (born 2005)",
+   "hook": "filled in for Ferrari at a moment's notice as a teenager and impressed in Saudi Arabia",
+   "known": 0.2,
+   "kind": "prospect"
+  },
+  {
+   "label": "Daniil Kvyat",
+   "qid": "Q979668",
+   "fame": 0.53,
+   "country": "Russia",
+   "description": "Russian racing car driver",
+   "hook": null,
+   "known": 0.05,
+   "kind": "prospect"
+  },
+  {
+   "label": "Nico Hülkenberg",
+   "qid": "Q76547",
+   "fame": 0.53,
+   "country": "Germany",
+   "description": "Formula One racing driver",
+   "hook": "holds the record for most Grand Prix starts before a first podium and won at Le Mans",
+   "known": 0.2,
+   "kind": "f1 driver"
+  },
+  {
+   "label": "Nelson Piquet",
+   "qid": "Q171346",
+   "fame": 0.528,
+   "country": "Brazil",
+   "description": "Brazilian racing driver (born 1952)",
+   "hook": "won three world titles and later had a driver son also race in the sport",
+   "known": 0.6,
+   "kind": "world champion"
+  },
+  {
+   "label": "Alain Prost",
+   "qid": "Q10494",
+   "fame": 0.526,
+   "country": "France",
+   "description": "French racing driver (born 1955)",
+   "hook": "is nicknamed The Professor and won four world titles for McLaren and Williams",
+   "known": 0.8,
+   "kind": "world champion"
+  },
+  {
+   "label": "Juan Pablo Montoya",
+   "qid": "Q172744",
+   "fame": 0.526,
+   "country": "Colombia",
+   "description": "Colombian racing driver; former Formula One driver",
+   "hook": "won the Indy 500 twice and once won at Monaco in a Williams",
+   "known": 0.4,
+   "kind": "racing legend"
+  },
+  {
+   "label": "Mika Häkkinen",
+   "qid": "Q172842",
+   "fame": 0.525,
+   "country": "Finland",
+   "description": "Finnish racing driver (born 1968)",
+   "hook": "won two titles for McLaren and is nicknamed the Flying Finn",
+   "known": 0.4,
+   "kind": "world champion"
+  },
+  {
+   "label": "Jackie Stewart",
+   "qid": "Q3188",
+   "fame": 0.518,
+   "country": "United Kingdom",
+   "description": "Scottish racing driver",
+   "hook": "won three world titles and campaigned tirelessly for motor racing safety",
+   "known": 0.6,
+   "kind": "world champion"
+  },
+  {
+   "label": "Narain Karthikeyan",
+   "qid": "Q82936",
+   "fame": 0.516,
+   "country": "India",
+   "description": "Indian racecar driver",
+   "hook": "was the first driver from his nation to race in Formula 1",
+   "known": 0.05,
+   "kind": "prospect"
+  },
+  {
+   "label": "Damon Hill",
+   "qid": "Q10505",
+   "fame": 0.513,
+   "country": "United Kingdom",
+   "description": "British racing driver",
+   "hook": "won the world title, following in the footsteps of his famous father",
+   "known": 0.6,
+   "kind": "world champion"
+  },
+  {
+   "label": "Rubens Barrichello",
+   "qid": "Q169846",
+   "fame": 0.51,
+   "country": "Brazil",
+   "description": "Brazilian racing driver",
+   "hook": "holds a record for most Grand Prix starts and was Ferrari's loyal wingman",
+   "known": 0.2,
+   "kind": "f1 driver"
+  },
+  {
+   "label": "Juan Manuel Fangio",
+   "qid": "Q2069",
+   "fame": 0.499,
+   "country": "Argentina",
+   "description": "Argentine racing driver (1911–1995)",
+   "hook": "won five world titles in the 1950s and is regarded as an all-time great",
+   "known": 0.8,
+   "kind": "world champion"
+  },
+  {
+   "label": "Jim Clark",
+   "qid": "Q3137",
+   "fame": 0.494,
+   "country": "United Kingdom",
+   "description": "British racecar driver (1936–1968)",
+   "hook": "was a Lotus star who won two world titles and died in a Formula 2 race",
+   "known": 0.4,
+   "kind": "world champion"
+  },
+  {
+   "label": "Graham Hill",
+   "qid": "Q3128",
+   "fame": 0.484,
+   "country": "United Kingdom",
+   "description": "British racing driver (1929–1975)",
+   "hook": "is the only man to win the Monaco Grand Prix, Indy 500 and Le Mans, the Triple Crown",
+   "known": 0.4,
+   "kind": "racing legend"
+  },
+  {
+   "label": "Felipe Massa",
+   "qid": "Q82652",
+   "fame": 0.482,
+   "country": "Brazil",
+   "description": "Brazilian race car driver",
+   "hook": "lost the world title by a single point on the final corner of the last race",
+   "known": 0.2,
+   "kind": "f1 driver"
+  },
+  {
+   "label": "Stirling Moss",
+   "qid": "Q172728",
+   "fame": 0.482,
+   "country": "United Kingdom",
+   "description": "British motor racing driver (1929-2020)",
+   "hook": "is the greatest driver never to win a world title, nicknamed Mr. Motor Racing",
+   "known": 0.4,
+   "kind": "racing legend"
+  },
+  {
+   "label": "Gabriel Bortoleto",
+   "qid": "Q106641273",
+   "fame": 0.481,
+   "country": "Brazil",
+   "description": "Brazilian racing driver",
+   "hook": "is a young Sauber driver who won the Formula 2 title as a rookie",
+   "known": 0.2,
+   "kind": "prospect"
+  },
+  {
+   "label": "Martin Brundle",
+   "qid": "Q172854",
+   "fame": 0.481,
+   "country": "United Kingdom",
+   "description": "British racecar driver",
+   "hook": "is a former racer turned TV commentator, known for his passionate grid walks",
+   "known": 0.2,
+   "kind": "racing legend"
+  },
+  {
+   "label": "Mark Webber",
+   "qid": "Q82667",
+   "fame": 0.48,
+   "country": "Australia",
+   "description": "Australian professional racing driver",
+   "hook": "is the Red Bull driver who later won the World Endurance Championship with Porsche",
+   "known": 0.4,
+   "kind": "racing legend"
+  },
+  {
+   "label": "Jody Scheckter",
+   "qid": "Q172775",
+   "fame": 0.471,
+   "country": "South Africa",
+   "description": "South African racecar driver",
+   "hook": "won the world title with Ferrari and later became a farmer",
+   "known": 0.2,
+   "kind": "world champion"
+  },
+  {
+   "label": "Keke Rosberg",
+   "qid": "Q171381",
+   "fame": 0.471,
+   "country": "Finland",
+   "description": "Finnish racing driver",
+   "hook": "won a world title in a Williams after taking only one race win that season",
+   "known": 0.4,
+   "kind": "world champion"
+  },
+  {
+   "label": "Nicholas Latifi",
+   "qid": "Q8898994",
+   "fame": 0.471,
+   "country": "Canada",
+   "description": "Canadian racing driver (born 1995)",
+   "hook": "is known for a controversial crash in Abu Dhabi that decided a championship",
+   "known": 0.2,
+   "kind": "prospect"
+  },
+  {
+   "label": "Kevin Magnussen",
+   "qid": "Q1740212",
+   "fame": 0.47,
+   "country": "Denmark",
+   "description": "Danish racing driver (born 1992)",
+   "hook": "is the son of a Le Mans class winner and a blunt-speaking Haas driver",
+   "known": 0.2,
+   "kind": "f1 driver"
+  },
+  {
+   "label": "Robert Kubica",
+   "qid": "Q160359",
+   "fame": 0.469,
+   "country": "Poland",
+   "description": "Polish racing and rally driver (born 1984)",
+   "hook": "was a rising star who returned to racing after a near-fatal rally crash",
+   "known": 0.2,
+   "kind": "f1 driver"
+  },
+  {
+   "label": "Jack Brabham",
+   "qid": "Q2125",
+   "fame": 0.457,
+   "country": "Australia",
+   "description": "Australian racing driver (1926–2014)",
+   "hook": "won three world titles including one in a car he built himself",
+   "known": 0.2,
+   "kind": "world champion"
+  },
+  {
+   "label": "Jack Doohan",
+   "qid": "Q81453998",
+   "fame": 0.455,
+   "country": "Australia",
+   "description": "Australian racing driver (born 2003)",
+   "hook": "is the son of a motorcycle champion and briefly raced for Alpine",
+   "known": 0.05,
+   "kind": "prospect"
+  },
+  {
+   "label": "Karun Chandhok",
+   "qid": "Q172905",
+   "fame": 0.451,
+   "country": "India",
+   "description": "Indian racing driver",
+   "hook": "is a Formula 1 veteran turned motorsport commentator and Le Mans racer",
+   "known": 0.05,
+   "kind": "prospect"
+  },
+  {
+   "label": "Eddie Irvine",
+   "qid": "Q171397",
+   "fame": 0.45,
+   "country": "United Kingdom",
+   "description": "British racecar driver",
+   "hook": "nearly won the championship after his team leader broke a leg and he took over the title fight",
+   "known": 0.2,
+   "kind": "f1 driver"
+  }
+ ]
+}

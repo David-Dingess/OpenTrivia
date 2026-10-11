@@ -1,0 +1,401 @@
+{
+ "id": "table.video-games.console-sales",
+ "kind": "table",
+ "title": "Game consoles and how many were sold",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "consoles",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?sold ?released WHERE { { SELECT ?item (MAX(?n) AS ?sold) (MIN(?d) AS ?released) WHERE { { SELECT ?item ?n WHERE { { SELECT ?item WHERE { ?game wdt:P400 ?item } GROUP BY ?item HAVING(COUNT(DISTINCT ?game) > 40) } ?item wdt:P176 ?m ; wdt:P2664 ?n . } LIMIT 300 } hint:Prior hint:runFirst true . OPTIONAL { ?item wdt:P577 ?d } } GROUP BY ?item LIMIT 150 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T01:23:57.868Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T01:23:57.868Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "sold_millions",
+   "label": "Units sold",
+   "unit": "million",
+   "type": "number",
+   "scale": "count-1000"
+  },
+  {
+   "key": "released",
+   "label": "Released",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "console",
+  "many": "consoles",
+  "hookAsk": "Which of these {hook}?",
+  "hookStatement": "The {label} {hook}.",
+  "columns": {
+   "released": {
+    "role": "date",
+    "sort": "from the first released to the most recent",
+    "era": "Drop each console into the decade it came out.",
+    "eraSize": "decade"
+   },
+   "sold_millions": {
+    "role": "measure",
+    "compare": "Which sold more units",
+    "display": " million"
+   }
+  },
+  "minFame": 0.5
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "PlayStation 5",
+   "qid": "Q63184502",
+   "fame": 0.693,
+   "sold_millions": 95.3,
+   "released": 2020,
+   "description": "Sony's ninth-generation and fifth home video game console",
+   "hook": "is Sony's current flagship home console, with a fast solid-state drive and a DualSense controller",
+   "known": 0.7,
+   "kind": "home console"
+  },
+  {
+   "label": "Nintendo Switch 2",
+   "qid": "Q122761124",
+   "fame": 0.671,
+   "sold_millions": 23.7,
+   "released": 2025,
+   "description": "video game console developed by Nintendo",
+   "hook": "is the successor to a hugely popular hybrid handheld-and-home console, with larger magnetic-attach controllers",
+   "known": 0.35,
+   "kind": "hybrid"
+  },
+  {
+   "label": "Nintendo Switch",
+   "qid": "Q19610114",
+   "fame": 0.653,
+   "sold_millions": 156.6,
+   "released": 2017,
+   "description": "hybrid video game console",
+   "hook": "is a hybrid console that docks to a TV or goes handheld, with detachable Joy-Con controllers",
+   "known": 0.85,
+   "kind": "hybrid"
+  },
+  {
+   "label": "PlayStation 2",
+   "qid": "Q10680",
+   "fame": 0.631,
+   "sold_millions": 160,
+   "released": 2000,
+   "description": "Sony's second home video game console, part of the sixth generation of consoles",
+   "hook": "is the best-selling home console of all time, and played DVDs out of the box",
+   "known": 0.9,
+   "kind": "home console"
+  },
+  {
+   "label": "PlayStation 4",
+   "qid": "Q5014725",
+   "fame": 0.628,
+   "sold_millions": 117.2,
+   "released": 2013,
+   "description": "Sony's fourth home video game console, part of the eighth generation of consoles",
+   "hook": "is the Sony home console that outsold its Microsoft rival and added a Share button to its controller",
+   "known": 0.8,
+   "kind": "home console"
+  },
+  {
+   "label": "PlayStation 3",
+   "qid": "Q10683",
+   "fame": 0.616,
+   "sold_millions": 87,
+   "released": 2006,
+   "description": "video game console developed Sony Interactive Entertainment",
+   "hook": "is the Sony home console that launched with a Blu-ray drive and a very high price tag",
+   "known": 0.65,
+   "kind": "home console"
+  },
+  {
+   "label": "PlayStation",
+   "qid": "Q10677",
+   "fame": 0.612,
+   "sold_millions": 102.4,
+   "released": 1994,
+   "description": "1994 5th generation video game console by Sony Interactive Entertainment",
+   "hook": "is the Sony console that moved games from cartridges to CDs and launched the company's gaming business",
+   "known": 0.8,
+   "kind": "home console"
+  },
+  {
+   "label": "Xbox Series X and Series S",
+   "qid": "Q98973368",
+   "fame": 0.607,
+   "sold_millions": 21,
+   "released": 2020,
+   "description": "home video game consoles developed by Microsoft",
+   "hook": "is the pair of Microsoft consoles, one powerful and one budget-friendly digital-only model, launched together",
+   "known": 0.45,
+   "kind": "home console"
+  },
+  {
+   "label": "Nintendo Entertainment System",
+   "qid": "Q172742",
+   "fame": 0.597,
+   "sold_millions": 61.9,
+   "released": 1983,
+   "description": "third generation home video game console",
+   "hook": "is the 8-bit console that revived the American games industry after the crash, with a gray plastic zapper",
+   "known": 0.75,
+   "kind": "home console"
+  },
+  {
+   "label": "PlayStation Portable",
+   "qid": "Q170325",
+   "fame": 0.597,
+   "sold_millions": 82,
+   "released": 2004,
+   "description": "handheld game console by Sony",
+   "hook": "is Sony's handheld that played games on small optical discs and rivaled Nintendo's dual-screen device",
+   "known": 0.55,
+   "kind": "handheld"
+  },
+  {
+   "label": "Xbox 360",
+   "qid": "Q48263",
+   "fame": 0.597,
+   "sold_millions": 85.5,
+   "released": 2005,
+   "description": "Microsoft's seventh-generation and second home video game console",
+   "hook": "is the Microsoft console known for online play over Live and the infamous red ring of death failure",
+   "known": 0.7,
+   "kind": "home console"
+  },
+  {
+   "label": "Wii",
+   "qid": "Q8079",
+   "fame": 0.593,
+   "sold_millions": 101.6,
+   "released": 2006,
+   "description": "seventh-generation home video game console by Nintendo",
+   "hook": "is the console that got whole families swinging motion-sensing remotes to play bowling and tennis",
+   "known": 0.8,
+   "kind": "home console"
+  },
+  {
+   "label": "Nintendo DS",
+   "qid": "Q170323",
+   "fame": 0.589,
+   "sold_millions": 154,
+   "released": 2004,
+   "description": "Nintendo handheld game console",
+   "hook": "is the clamshell handheld with two screens, one of them a touchscreen used with a stylus",
+   "known": 0.75,
+   "kind": "handheld"
+  },
+  {
+   "label": "Xbox One",
+   "qid": "Q13361286",
+   "fame": 0.589,
+   "sold_millions": 58,
+   "released": 2013,
+   "description": "home video game console developed by Microsoft",
+   "hook": "is the Microsoft console that launched with a required motion camera and a heavy focus on TV features",
+   "known": 0.55,
+   "kind": "home console"
+  },
+  {
+   "label": "Nintendo 3DS",
+   "qid": "Q203597",
+   "fame": 0.586,
+   "sold_millions": 75.9,
+   "released": 2011,
+   "description": "portable 3D dual-screen handheld by Nintendo",
+   "hook": "is the handheld that showed 3D effects without glasses, and later got a bigger XL version",
+   "known": 0.55,
+   "kind": "handheld"
+  },
+  {
+   "label": "Nintendo GameCube",
+   "qid": "Q182172",
+   "fame": 0.583,
+   "sold_millions": 21.7,
+   "released": 2001,
+   "description": "sixth-generation home video game console by Nintendo",
+   "hook": "is the purple cube-shaped home console that played small discs and had a carrying handle",
+   "known": 0.45,
+   "kind": "home console"
+  },
+  {
+   "label": "Nintendo 64",
+   "qid": "Q184839",
+   "fame": 0.58,
+   "sold_millions": 32.9,
+   "released": 1996,
+   "description": "fifth-generation home video game console by Nintendo",
+   "hook": "is the console with a three-pronged controller and four ports, home to Mario and Zelda in 3D",
+   "known": 0.7,
+   "kind": "home console"
+  },
+  {
+   "label": "Game Boy",
+   "qid": "Q186437",
+   "fame": 0.573,
+   "sold_millions": 118.7,
+   "released": 1989,
+   "description": "1989 portable video game console",
+   "hook": "is the gray handheld with a green-tinted screen that made Tetris a worldwide phenomenon",
+   "known": 0.85,
+   "kind": "handheld"
+  },
+  {
+   "label": "Super Nintendo Entertainment System",
+   "qid": "Q183259",
+   "fame": 0.573,
+   "sold_millions": 49.1,
+   "released": 1990,
+   "description": "fourth-generation home video game console by Nintendo",
+   "hook": "is the 16-bit console with a four-color-button controller, rival to Sega's blue-hedgehog machine",
+   "known": 0.7,
+   "kind": "home console"
+  },
+  {
+   "label": "Sega Genesis",
+   "qid": "Q10676",
+   "fame": 0.569,
+   "sold_millions": 39.8,
+   "released": 1988,
+   "description": "fourth-generation home video game console developed by Sega",
+   "hook": "is the 16-bit console that raced a fast blue hedgehog against its Mario-hosting rival",
+   "known": 0.65,
+   "kind": "home console"
+  },
+  {
+   "label": "Dreamcast",
+   "qid": "Q184198",
+   "fame": 0.566,
+   "sold_millions": 9.1,
+   "released": 1998,
+   "description": "sixth-generation home video game console developed by Sega",
+   "hook": "is the last console from its maker, an early online-capable system with a controller holding a tiny screen",
+   "known": 0.25,
+   "kind": "home console"
+  },
+  {
+   "label": "Game Boy Advance",
+   "qid": "Q188642",
+   "fame": 0.566,
+   "sold_millions": 81.5,
+   "released": 2001,
+   "description": "handheld game console by Nintendo",
+   "hook": "is the landscape-shaped handheld successor to a green-screened original, with shoulder buttons",
+   "known": 0.6,
+   "kind": "handheld"
+  },
+  {
+   "label": "PlayStation Vita",
+   "qid": "Q188808",
+   "fame": 0.559,
+   "sold_millions": 15,
+   "released": 2011,
+   "description": "portable game console developed by Sony Computer Entertainment",
+   "hook": "is Sony's second handheld, with a large OLED touchscreen and a rear touchpad",
+   "known": 0.25,
+   "kind": "handheld"
+  },
+  {
+   "label": "Xbox",
+   "qid": "Q132020",
+   "fame": 0.558,
+   "sold_millions": 24,
+   "released": 2001,
+   "description": "video game console by Microsoft",
+   "hook": "is the first console from Microsoft, with a built-in hard drive and a famously huge controller",
+   "known": 0.45,
+   "kind": "home console"
+  },
+  {
+   "label": "Wii U",
+   "qid": "Q56942",
+   "fame": 0.556,
+   "sold_millions": 13.6,
+   "released": 2012,
+   "description": "eighth-generation home video game console by Nintendo",
+   "hook": "is the home console with a tablet-like touchscreen controller that struggled to find buyers",
+   "known": 0.3,
+   "kind": "home console"
+  },
+  {
+   "label": "Sega Saturn",
+   "qid": "Q200912",
+   "fame": 0.551,
+   "sold_millions": 9.5,
+   "released": 1994,
+   "description": "home video game console",
+   "hook": "lost the CD-era console race to a Sony rival and was notoriously hard to program",
+   "known": 0.25,
+   "kind": "home console"
+  },
+  {
+   "label": "Atari 2600",
+   "qid": "Q206261",
+   "fame": 0.536,
+   "sold_millions": 30,
+   "released": 1977,
+   "description": "home video game console by Atari",
+   "hook": "is the early cartridge console with a joystick and wood-grain panel that filled living rooms",
+   "known": 0.65,
+   "kind": "home console"
+  },
+  {
+   "label": "TurboGrafx-16",
+   "qid": "Q1057377",
+   "fame": 0.483,
+   "sold_millions": 10,
+   "released": 1987,
+   "description": "fourth-generation home video game console",
+   "hook": null,
+   "known": 0.15,
+   "kind": "home console"
+  },
+  {
+   "label": "Nintendo DSi",
+   "qid": "Q637178",
+   "fame": 0.468,
+   "sold_millions": 28.4,
+   "released": 2008,
+   "description": "handheld game console by Nintendo",
+   "hook": null,
+   "known": 0.4,
+   "kind": "handheld"
+  },
+  {
+   "label": "Game Gear",
+   "qid": "Q751719",
+   "fame": 0.46,
+   "sold_millions": 10.6,
+   "released": 1990,
+   "description": "handheld game console developed by Sega",
+   "hook": null,
+   "known": 0.2,
+   "kind": "handheld"
+  }
+ ]
+}

@@ -1,0 +1,941 @@
+{
+ "id": "table.business.company-headquarters",
+ "kind": "table",
+ "title": "Famous companies and their headquarters city",
+ "genre": "daily-life",
+ "category": "business",
+ "topic": "big-companies",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?hqLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?hq) (COUNT(DISTINCT ?c) AS ?nC) WHERE { VALUES ?cls { wd:Q4830453 wd:Q6881511 wd:Q783794 wd:Q891723 wd:Q167037 wd:Q778575 wd:Q786820 wd:Q210167 wd:Q18509232 wd:Q2085381 wd:Q1331793 } ?item wdt:P31 ?cls ; wdt:P159 ?c ; wikibase:sitelinks ?sl . FILTER(?sl >= 65) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 329",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T21:26:09.208Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T21:26:09.208Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "hq_city",
+   "label": "Headquarters",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "company",
+  "many": "companies",
+  "minFame": 0.45,
+  "hookAsk": "Which company {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "exclude": [
+   {
+    "qid": "Q102673",
+    "why": "Gazprom: Russia questions are political-adjacent"
+   },
+   {
+    "qid": "Q58707",
+    "why": "Aeroflot: Russia questions are political-adjacent"
+   }
+  ],
+  "columns": {
+   "hq_city": {
+    "role": "link",
+    "pick": "In which city is {label} headquartered?",
+    "statement": "{label} is headquartered in {value}.",
+    "match": "Match each company to the city where it is headquartered.",
+    "odd": "Three of these companies are headquartered in {value}. Which one isn't?",
+    "all": "Tap all {n} companies headquartered in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Apple Inc.",
+   "qid": "Q312",
+   "fame": 0.777,
+   "hq_city": "Cupertino",
+   "description": "American multinational technology company based in Cupertino, California",
+   "hook": "makes the iPhone, the Mac and the iPad",
+   "known": 0.95,
+   "kind": "tech company"
+  },
+  {
+   "label": "OpenAI",
+   "qid": "Q21708200",
+   "fame": 0.772,
+   "hq_city": "San Francisco",
+   "description": "American artificial intelligence research organization",
+   "hook": "created the ChatGPT chatbot that took the world by storm",
+   "known": 0.7,
+   "kind": "tech company"
+  },
+  {
+   "label": "Amazon",
+   "qid": "Q3884",
+   "fame": 0.749,
+   "hq_city": "Seattle",
+   "description": "American multinational technology company",
+   "hook": "began by selling books online and grew into a giant shipping everything, with a Prime subscription",
+   "known": 0.95,
+   "kind": "tech company"
+  },
+  {
+   "label": "Microsoft",
+   "qid": "Q2283",
+   "fame": 0.744,
+   "hq_city": "Redmond",
+   "description": "American multinational technology corporation",
+   "hook": "makes Windows, Office and the Xbox console",
+   "known": 0.95,
+   "kind": "tech company"
+  },
+  {
+   "label": "Netflix",
+   "qid": "Q907311",
+   "fame": 0.728,
+   "hq_city": "Los Gatos",
+   "description": "American subscription video on-demand over-the-top streaming service",
+   "hook": "began mailing red-envelope DVDs and now streams hits like Stranger Things",
+   "known": 0.8,
+   "kind": "media company"
+  },
+  {
+   "label": "Nvidia",
+   "qid": "Q182477",
+   "fame": 0.718,
+   "hq_city": "Santa Clara",
+   "description": "American multinational technology company",
+   "hook": "designs the GeForce graphics cards and chips that power AI",
+   "known": 0.6,
+   "kind": "tech company"
+  },
+  {
+   "label": "McDonald's",
+   "qid": "Q38076",
+   "fame": 0.678,
+   "hq_city": "Chicago",
+   "description": "American fast food restaurant chain",
+   "hook": "serves Big Macs and fries under its golden arches",
+   "known": 0.95,
+   "kind": "fast food"
+  },
+  {
+   "label": "Meta Platforms",
+   "qid": "Q380",
+   "fame": 0.677,
+   "hq_city": "Menlo Park",
+   "description": "American technology company",
+   "hook": "owns Facebook, Instagram and WhatsApp",
+   "known": 0.85,
+   "kind": "tech company"
+  },
+  {
+   "label": "The Walt Disney Company",
+   "qid": "Q7414",
+   "fame": 0.673,
+   "hq_city": "Burbank",
+   "description": "American multinational mass media company",
+   "hook": "is home to Mickey Mouse, Marvel and Star Wars",
+   "known": 0.95,
+   "kind": "media company"
+  },
+  {
+   "label": "Walmart",
+   "qid": "Q483551",
+   "fame": 0.671,
+   "hq_city": "Bentonville",
+   "description": "U.S. discount retailer based in Arkansas",
+   "hook": "runs the world's biggest chain of big-box discount stores by revenue",
+   "known": 0.85,
+   "kind": "retail"
+  },
+  {
+   "label": "Nintendo",
+   "qid": "Q8093",
+   "fame": 0.67,
+   "hq_city": "Kyoto",
+   "description": "Japanese multinational video game and consumer electronics company",
+   "hook": "created Mario, Zelda and Pokemon games on consoles like the Switch",
+   "known": 0.85,
+   "kind": "gaming company"
+  },
+  {
+   "label": "Alphabet Inc.",
+   "qid": "Q20800404",
+   "fame": 0.662,
+   "hq_city": "Mountain View",
+   "description": "American multinational technology conglomerate",
+   "hook": "is the parent company that owns Google and YouTube",
+   "known": 0.95,
+   "kind": "tech company"
+  },
+  {
+   "label": "Pixar",
+   "qid": "Q127552",
+   "fame": 0.66,
+   "hq_city": "Emeryville",
+   "description": "American computer animation studio",
+   "hook": "made Toy Story, Finding Nemo and Inside Out with computer animation",
+   "known": 0.75,
+   "kind": "media company"
+  },
+  {
+   "label": "Oracle Corporation",
+   "qid": "Q19900",
+   "fame": 0.658,
+   "hq_city": "Austin",
+   "description": "American multinational computer corporation",
+   "hook": "is a database and business software giant founded by Larry Ellison",
+   "known": 0.5,
+   "kind": "tech company"
+  },
+  {
+   "label": "BMW",
+   "qid": "Q26678",
+   "fame": 0.652,
+   "hq_city": "Munich",
+   "description": "German automobile manufacturer, and conglomerate",
+   "hook": "builds cars with a kidney-shaped grille and the slogan Ultimate Driving Machine",
+   "known": 0.85,
+   "kind": "automaker"
+  },
+  {
+   "label": "Tesla",
+   "qid": "Q478214",
+   "fame": 0.652,
+   "hq_city": "Austin",
+   "description": "American automotive, energy storage and solar power company",
+   "hook": "builds electric cars like the Model 3 and Cybertruck under Elon Musk",
+   "known": 0.8,
+   "kind": "automaker"
+  },
+  {
+   "label": "Nike, Inc.",
+   "qid": "Q483915",
+   "fame": 0.65,
+   "hq_city": "Beaverton",
+   "description": "American athletic equipment company",
+   "hook": "sells sneakers with a swoosh logo and the slogan Just Do It",
+   "known": 0.9,
+   "kind": "sports brand"
+  },
+  {
+   "label": "American Airlines",
+   "qid": "Q32396",
+   "fame": 0.638,
+   "hq_city": "Fort Worth",
+   "description": "major airline of the United States",
+   "hook": "is a huge U.S. carrier with a red, white and blue eagle logo",
+   "known": 0.7,
+   "kind": "airline"
+  },
+  {
+   "label": "Ford Motor Company",
+   "qid": "Q44294",
+   "fame": 0.638,
+   "hq_city": "Dearborn",
+   "description": "American multinational automotive company",
+   "hook": "introduced the Model T and the moving assembly line, and builds the Mustang",
+   "known": 0.8,
+   "kind": "automaker"
+  },
+  {
+   "label": "Delta Air Lines",
+   "qid": "Q188920",
+   "fame": 0.637,
+   "hq_city": "Atlanta",
+   "description": "airline in the United States (1929–present)",
+   "hook": "is one of the biggest U.S. carriers, with a red and blue triangle logo",
+   "known": 0.7,
+   "kind": "airline"
+  },
+  {
+   "label": "General Motors",
+   "qid": "Q81965",
+   "fame": 0.636,
+   "hq_city": "Detroit",
+   "description": "American multinational automotive company",
+   "hook": "builds cars under badges including Chevrolet, Cadillac and Buick",
+   "known": 0.8,
+   "kind": "automaker"
+  },
+  {
+   "label": "Valve Corporation",
+   "qid": "Q193559",
+   "fame": 0.635,
+   "hq_city": "Bellevue",
+   "description": "American video game development and digital distribution company",
+   "hook": "made Half-Life and Portal and runs the Steam game store",
+   "known": 0.6,
+   "kind": "gaming company"
+  },
+  {
+   "label": "Adidas AG",
+   "qid": "Q3895",
+   "fame": 0.633,
+   "hq_city": "Herzogenaurach",
+   "description": "German multinational corporation",
+   "hook": "sells sportswear with three stripes on the side",
+   "known": 0.85,
+   "kind": "sports brand"
+  },
+  {
+   "label": "Nestlé",
+   "qid": "Q160746",
+   "fame": 0.63,
+   "hq_city": "Vevey",
+   "description": "Swiss multi-national food and beverage company",
+   "hook": "makes KitKat bars and Nespresso coffee and is the world's largest food company",
+   "known": 0.75,
+   "kind": "food company"
+  },
+  {
+   "label": "Mercedes-Benz",
+   "qid": "Q36008",
+   "fame": 0.622,
+   "hq_city": "Stuttgart",
+   "description": "German automobile brand owned by Mercedes-Benz AG",
+   "hook": "builds luxury cars marked by a three-pointed star",
+   "known": 0.85,
+   "kind": "automaker"
+  },
+  {
+   "label": "Volkswagen",
+   "qid": "Q246",
+   "fame": 0.622,
+   "hq_city": "Wolfsburg",
+   "description": "German automotive brand; manufacturing subsidiary of Volkswagen Group",
+   "hook": "builds the Beetle, the Golf and the Microbus, and is one of the world's biggest carmakers",
+   "known": 0.9,
+   "kind": "automaker"
+  },
+  {
+   "label": "Metro-Goldwyn-Mayer",
+   "qid": "Q179200",
+   "fame": 0.62,
+   "hq_city": "Los Angeles",
+   "description": "American film and television and distribution company",
+   "hook": "is a movie studio whose logo shows a roaring lion",
+   "known": 0.8,
+   "kind": "media company"
+  },
+  {
+   "label": "Nokia",
+   "qid": "Q1418",
+   "fame": 0.618,
+   "hq_city": "Espoo",
+   "description": "Finnish multinational telecommunications and information technology company",
+   "hook": "made famously indestructible mobile phones like the 3310",
+   "known": 0.6,
+   "kind": "tech company"
+  },
+  {
+   "label": "eBay",
+   "qid": "Q58024",
+   "fame": 0.617,
+   "hq_city": "San Jose",
+   "description": "American multinational internet corporation that manages eBay.com",
+   "hook": "runs an online marketplace where people bid in auctions",
+   "known": 0.75,
+   "kind": "retail"
+  },
+  {
+   "label": "Lufthansa",
+   "qid": "Q9325",
+   "fame": 0.613,
+   "hq_city": "Cologne",
+   "description": "Flag-carrier and largest airline of Germany",
+   "hook": "is a flag carrier whose logo is a bird in a circle",
+   "known": 0.65,
+   "kind": "airline"
+  },
+  {
+   "label": "IBM",
+   "qid": "Q37156",
+   "fame": 0.612,
+   "hq_city": "Armonk",
+   "description": "American multinational technology company",
+   "hook": "is nicknamed Big Blue and built the Deep Blue chess computer",
+   "known": 0.75,
+   "kind": "tech company"
+  },
+  {
+   "label": "Ferrari",
+   "qid": "Q27586",
+   "fame": 0.608,
+   "hq_city": "Maranello",
+   "description": "Italian luxury sports car manufacturer",
+   "hook": "builds red sports cars with a prancing horse badge and runs a famous Formula One team",
+   "known": 0.8,
+   "kind": "automaker"
+  },
+  {
+   "label": "Uber",
+   "qid": "Q780442",
+   "fame": 0.605,
+   "hq_city": "San Francisco",
+   "description": "peer-to-peer ridesharing, food delivery, and transportation network company headquartered in San Francisco, California",
+   "hook": "lets you tap an app to hail a ride from a nearby driver",
+   "known": 0.8,
+   "kind": "tech company"
+  },
+  {
+   "label": "Lamborghini",
+   "qid": "Q35886",
+   "fame": 0.604,
+   "hq_city": "Sant'Agata Bolognese",
+   "description": "Italian car manufacturer",
+   "hook": "builds flashy supercars with a raging bull badge",
+   "known": 0.65,
+   "kind": "automaker"
+  },
+  {
+   "label": "Porsche",
+   "qid": "Q40993",
+   "fame": 0.604,
+   "hq_city": "Stuttgart",
+   "description": "German automobile manufacturer specializing in high-performance sports cars, SUVs and sedans, owned by Volkswagen AG",
+   "hook": "builds the rear-engined 911 sports car",
+   "known": 0.85,
+   "kind": "automaker"
+  },
+  {
+   "label": "KFC",
+   "qid": "Q524757",
+   "fame": 0.603,
+   "hq_city": "Louisville",
+   "description": "American fast food restaurant chain specializing in fried chicken",
+   "hook": "sells fried chicken with a secret recipe and a white-suited Colonel on the bucket",
+   "known": 0.85,
+   "kind": "fast food"
+  },
+  {
+   "label": "PepsiCo",
+   "qid": "Q334800",
+   "fame": 0.597,
+   "hq_city": "Purchase",
+   "description": "American soft drink company",
+   "hook": "makes Doritos, Gatorade, Mountain Dew and Lay's chips",
+   "known": 0.7,
+   "kind": "food company"
+  },
+  {
+   "label": "Jaguar Cars",
+   "qid": "Q30055",
+   "fame": 0.593,
+   "hq_city": "Coventry",
+   "description": "former British car company",
+   "hook": "builds luxury saloons and sports models with a leaping cat mascot",
+   "known": 0.55,
+   "kind": "automaker"
+  },
+  {
+   "label": "Škoda Auto",
+   "qid": "Q29637",
+   "fame": 0.591,
+   "hq_city": "Mladá Boleslav",
+   "description": "automotive manufacturing subsidiary of Volkswagen Group",
+   "hook": "builds budget-friendly cars with a winged arrow logo and is part of a huge automotive group",
+   "known": 0.4,
+   "kind": "automaker"
+  },
+  {
+   "label": "The Coca-Cola Company",
+   "qid": "Q3295867",
+   "fame": 0.59,
+   "hq_city": "Atlanta",
+   "description": "American multinational beverage corporation",
+   "hook": "sells a fizzy drink with a secret formula in red cans and glass bottles",
+   "known": 0.95,
+   "kind": "food company"
+  },
+  {
+   "label": "British Airways",
+   "qid": "Q8766",
+   "fame": 0.589,
+   "hq_city": "London",
+   "description": "flag carrier airline of the United Kingdom",
+   "hook": "is the national flag carrier that flies from Heathrow with a Speedbird logo",
+   "known": 0.75,
+   "kind": "airline"
+  },
+  {
+   "label": "Motorola",
+   "qid": "Q259011",
+   "fame": 0.589,
+   "hq_city": "Schaumburg",
+   "description": "American telecommunications company (1928–2011)",
+   "hook": "made the Razr flip phone and the first handheld cellphone",
+   "known": 0.5,
+   "kind": "tech company"
+  },
+  {
+   "label": "BP",
+   "qid": "Q152057",
+   "fame": 0.584,
+   "hq_city": "London",
+   "description": "British multinational oil and gas company",
+   "hook": "is a giant oil major with a green and yellow sunburst logo",
+   "known": 0.75,
+   "kind": "oil company"
+  },
+  {
+   "label": "AMD",
+   "qid": "Q128896",
+   "fame": 0.583,
+   "hq_city": "Santa Clara",
+   "description": "American multinational semiconductor company",
+   "hook": "makes Ryzen processors and Radeon graphics cards, and rivals Intel",
+   "known": 0.6,
+   "kind": "tech company"
+  },
+  {
+   "label": "Audi AG",
+   "qid": "Q23317",
+   "fame": 0.583,
+   "hq_city": "Ingolstadt",
+   "description": "German automotive manufacturing subsidiary of Volkswagen Group",
+   "hook": "builds cars badged with four interlocking rings and the slogan Vorsprung durch Technik",
+   "known": 0.8,
+   "kind": "automaker"
+  },
+  {
+   "label": "Saudi Aramco",
+   "qid": "Q679322",
+   "fame": 0.582,
+   "hq_city": "Dhahran",
+   "description": "Saudi Arabian state-owned petroleum company",
+   "hook": "is the world's most valuable oil producer, based in the desert kingdom",
+   "known": 0.6,
+   "kind": "oil company"
+  },
+  {
+   "label": "Hyundai Motor Company",
+   "qid": "Q55931",
+   "fame": 0.581,
+   "hq_city": "Seoul",
+   "description": "South Korean multinational automaker",
+   "hook": "builds cars like the Sonata and Elantra, and is closely tied to Kia",
+   "known": 0.7,
+   "kind": "automaker"
+  },
+  {
+   "label": "Kia",
+   "qid": "Q35349",
+   "fame": 0.58,
+   "hq_city": "Seoul",
+   "description": "South Korean automobile manufacturer",
+   "hook": "builds the Soul, the Sportage and the Telluride",
+   "known": 0.6,
+   "kind": "automaker"
+  },
+  {
+   "label": "Xiaomi",
+   "qid": "Q1636958",
+   "fame": 0.58,
+   "hq_city": "Beijing",
+   "description": "Chinese electronics company",
+   "hook": "sells budget smartphones and smart-home gadgets and is nicknamed the Apple of its region",
+   "known": 0.5,
+   "kind": "tech company"
+  },
+  {
+   "label": "AT&T",
+   "qid": "Q35476",
+   "fame": 0.577,
+   "hq_city": "Dallas",
+   "description": "American multinational conglomerate",
+   "hook": "is a telecom giant that grew out of the old Bell phone monopoly",
+   "known": 0.75,
+   "kind": "telecom"
+  },
+  {
+   "label": "Intel",
+   "qid": "Q248",
+   "fame": 0.574,
+   "hq_city": "Santa Clara",
+   "description": "American multinational technology company",
+   "hook": "makes the processors in many PCs and is known for a short five-note jingle",
+   "known": 0.85,
+   "kind": "tech company"
+  },
+  {
+   "label": "Siemens",
+   "qid": "Q81230",
+   "fame": 0.574,
+   "hq_city": "Munich",
+   "description": "German multinational conglomerate company",
+   "hook": "is an engineering conglomerate that makes trains, medical scanners and home appliances",
+   "known": 0.5,
+   "kind": "conglomerate"
+  },
+  {
+   "label": "Aston Martin Lagonda",
+   "qid": "Q27074",
+   "fame": 0.573,
+   "hq_city": "Gaydon",
+   "description": "British luxury sports car manufacturer",
+   "hook": "builds the luxury sports cars driven by James Bond",
+   "known": 0.65,
+   "kind": "automaker"
+  },
+  {
+   "label": "Lenovo",
+   "qid": "Q14799",
+   "fame": 0.573,
+   "hq_city": "Beijing",
+   "description": "Chinese multinational technology company established in 1984",
+   "hook": "makes the ThinkPad laptop it bought from IBM",
+   "known": 0.55,
+   "kind": "tech company"
+  },
+  {
+   "label": "Panasonic Holdings Corporation",
+   "qid": "Q53247",
+   "fame": 0.571,
+   "hq_city": "Kadoma",
+   "description": "Japanese multinational electronics corporation",
+   "hook": "is an electronics maker behind Lumix cameras and Toughbook laptops",
+   "known": 0.4,
+   "kind": "electronics"
+  },
+  {
+   "label": "Turkish Airlines",
+   "qid": "Q4548",
+   "fame": 0.571,
+   "hq_city": "Istanbul",
+   "description": "national flag-carrier airline of Turkey",
+   "hook": "is a flag carrier that flies to more countries than almost any other airline",
+   "known": 0.55,
+   "kind": "airline"
+  },
+  {
+   "label": "Chevrolet",
+   "qid": "Q29570",
+   "fame": 0.568,
+   "hq_city": "Detroit",
+   "description": "American automobile division of GM",
+   "hook": "sells cars with a gold bowtie badge, including the Corvette and Camaro",
+   "known": 0.65,
+   "kind": "automaker"
+  },
+  {
+   "label": "Shell",
+   "qid": "Q154950",
+   "fame": 0.568,
+   "hq_city": "London",
+   "description": "British multinational oil and gas company",
+   "hook": "is an oil giant with a yellow seashell logo and gas stations worldwide",
+   "known": 0.8,
+   "kind": "oil company"
+  },
+  {
+   "label": "Huawei",
+   "qid": "Q160120",
+   "fame": 0.566,
+   "hq_city": "Shenzhen",
+   "description": "Chinese multinational technology enterprise",
+   "hook": "makes telecom equipment and smartphones and has been at the centre of a tech rivalry",
+   "known": 0.65,
+   "kind": "tech company"
+  },
+  {
+   "label": "Renault",
+   "qid": "Q6686",
+   "fame": 0.565,
+   "hq_city": "Boulogne-Billancourt",
+   "description": "automotive conglomerate",
+   "hook": "builds small cars such as the Clio and Twingo and has a diamond logo",
+   "known": 0.65,
+   "kind": "automaker"
+  },
+  {
+   "label": "Cadillac",
+   "qid": "Q27436",
+   "fame": 0.562,
+   "hq_city": "Detroit",
+   "description": "division of General Motors",
+   "hook": "is a luxury car brand known for huge tail fins in the 1950s",
+   "known": 0.6,
+   "kind": "automaker"
+  },
+  {
+   "label": "Puma",
+   "qid": "Q157064",
+   "fame": 0.562,
+   "hq_city": "Herzogenaurach",
+   "description": "German multinational corporation",
+   "hook": "makes sportswear with a leaping cat logo and was founded by the brother of Adidas's founder",
+   "known": 0.7,
+   "kind": "sports brand"
+  },
+  {
+   "label": "H&M",
+   "qid": "Q188326",
+   "fame": 0.559,
+   "hq_city": "Stockholm",
+   "description": "Swedish multinational clothing-retail company",
+   "hook": "is a fast-fashion retailer with stores on shopping streets worldwide",
+   "known": 0.7,
+   "kind": "retail"
+  },
+  {
+   "label": "LG Group",
+   "qid": "Q136778",
+   "fame": 0.559,
+   "hq_city": "Seoul",
+   "description": "South Korean multinational conglomerate",
+   "hook": "makes TVs, refrigerators and washing machines under the slogan Life's Good",
+   "known": 0.6,
+   "kind": "electronics"
+  },
+  {
+   "label": "Rolex",
+   "qid": "Q62288",
+   "fame": 0.558,
+   "hq_city": "Geneva",
+   "description": "Swiss luxury watch designer and manufacturer",
+   "hook": "makes prestigious luxury watches with a crown as its logo",
+   "known": 0.75,
+   "kind": "luxury brand"
+  },
+  {
+   "label": "Jeep",
+   "qid": "Q30113",
+   "fame": 0.557,
+   "hq_city": "Toledo",
+   "description": "US automotive company",
+   "hook": "makes rugged off-road SUVs with a seven-slot grille",
+   "known": 0.7,
+   "kind": "automaker"
+  },
+  {
+   "label": "Aeroflot",
+   "qid": "Q58707",
+   "fame": 0.551,
+   "hq_city": "Moscow",
+   "description": "flag carrier of Russia",
+   "hook": "is the largest airline of its country, flying under a winged emblem",
+   "known": 0.5,
+   "kind": "airline"
+  },
+  {
+   "label": "Cisco",
+   "qid": "Q173395",
+   "fame": 0.549,
+   "hq_city": "San Jose",
+   "description": "American multinational technology company",
+   "hook": "makes the network routers and switches that keep the internet running",
+   "known": 0.5,
+   "kind": "tech company"
+  },
+  {
+   "label": "Alfa Romeo",
+   "qid": "Q26921",
+   "fame": 0.548,
+   "hq_city": "Turin",
+   "description": "Italian automotive manufacturer",
+   "hook": "makes sporty Italian cars with a badge showing a serpent and a red cross",
+   "known": 0.55,
+   "kind": "automaker"
+  },
+  {
+   "label": "Opel",
+   "qid": "Q40966",
+   "fame": 0.548,
+   "hq_city": "Rüsselsheim am Main",
+   "description": "German automobile manufacturer, subsidiary of Stellantis",
+   "hook": "makes cars with a lightning-bolt logo and is sold in Europe as a sibling of Vauxhall",
+   "known": 0.4,
+   "kind": "automaker"
+  },
+  {
+   "label": "Adobe",
+   "qid": "Q11463",
+   "fame": 0.545,
+   "hq_city": "San Jose",
+   "description": "American multinational computer software company",
+   "hook": "makes Photoshop and created the PDF file format",
+   "known": 0.8,
+   "kind": "tech company"
+  },
+  {
+   "label": "Suzuki Motor Corporation",
+   "qid": "Q181642",
+   "fame": 0.544,
+   "hq_city": "Hamamatsu",
+   "description": "Japanese multinational automotive corporation",
+   "hook": "builds small cars, motorcycles and outboard engines",
+   "known": 0.45,
+   "kind": "automaker"
+  },
+  {
+   "label": "AB Volvo",
+   "qid": "Q163810",
+   "fame": 0.539,
+   "hq_city": "Gothenburg",
+   "description": "Swedish manufacturing company",
+   "hook": "builds heavy trucks, buses and construction machinery",
+   "known": 0.4,
+   "kind": "heavy equipment"
+  },
+  {
+   "label": "Dell",
+   "qid": "Q30873",
+   "fame": 0.538,
+   "hq_city": "Round Rock",
+   "description": "American multinational computer technology corporation",
+   "hook": "became a PC giant by selling computers built to order directly to customers",
+   "known": 0.75,
+   "kind": "tech company"
+  },
+  {
+   "label": "Baidu",
+   "qid": "Q14772",
+   "fame": 0.534,
+   "hq_city": "Beijing",
+   "description": "Chinese web services company",
+   "hook": "runs a dominant search engine, often called its country's Google",
+   "known": 0.5,
+   "kind": "tech company"
+  },
+  {
+   "label": "Fiat",
+   "qid": "Q27597",
+   "fame": 0.533,
+   "hq_city": "Turin",
+   "description": "Italian automotive company",
+   "hook": "makes the tiny 500 city car, a symbol of small-car style",
+   "known": 0.6,
+   "kind": "automaker"
+  },
+  {
+   "label": "Mitsubishi",
+   "qid": "Q183275",
+   "fame": 0.526,
+   "hq_city": "Tokyo",
+   "description": "group of autonomous, Japanese multinational companies",
+   "hook": "has a logo of three red diamonds and spans cars, electronics and heavy industry",
+   "known": 0.6,
+   "kind": "conglomerate"
+  },
+  {
+   "label": "Bayer",
+   "qid": "Q152051",
+   "fame": 0.525,
+   "hq_city": "Leverkusen",
+   "description": "German multinational pharmaceutical, chemical, and agricultural biotechnology company",
+   "hook": "first sold aspirin, and its logo is a cross inside a circle",
+   "known": 0.6,
+   "kind": "pharmaceutical"
+  },
+  {
+   "label": "Robert Bosch",
+   "qid": "Q234021",
+   "fame": 0.525,
+   "hq_city": "Gerlingen",
+   "description": "German manufacturing company",
+   "hook": "supplies car parts and sells power tools and home appliances",
+   "known": 0.35,
+   "kind": "conglomerate"
+  },
+  {
+   "label": "ASUS",
+   "qid": "Q152864",
+   "fame": 0.517,
+   "hq_city": "Taipei",
+   "description": "Taiwanese computers and electronics company",
+   "hook": "makes laptops and motherboards, with a name drawn from a winged horse of myth",
+   "known": 0.45,
+   "kind": "electronics"
+  },
+  {
+   "label": "Pfizer",
+   "qid": "Q206921",
+   "fame": 0.508,
+   "hq_city": "New York City",
+   "description": "American multinational pharmaceutical and biotechnology corporation",
+   "hook": "makes Lipitor and developed a widely used COVID-19 vaccine with a partner",
+   "known": 0.7,
+   "kind": "pharmaceutical"
+  },
+  {
+   "label": "Yamaha Motor Company",
+   "qid": "Q158888",
+   "fame": 0.508,
+   "hq_city": "Iwata",
+   "description": "Japanese motorcycle manufacturer",
+   "hook": "builds motorcycles, jet skis and outboard engines, and shares its name with a piano maker",
+   "known": 0.55,
+   "kind": "motorsports"
+  },
+  {
+   "label": "Deutsche Bank",
+   "qid": "Q66048",
+   "fame": 0.506,
+   "hq_city": "Frankfurt",
+   "description": "German global banking and financial services company",
+   "hook": "is one of the largest financial institutions in Europe, with a slanted stroke in a square as its logo",
+   "known": 0.5,
+   "kind": "financial"
+  },
+  {
+   "label": "Prada",
+   "qid": "Q193136",
+   "fame": 0.502,
+   "hq_city": "Milan",
+   "description": "Italian luxury fashion house",
+   "hook": "is a luxury fashion house famous for handbags and a film about a fashion magazine editor",
+   "known": 0.65,
+   "kind": "luxury brand"
+  },
+  {
+   "label": "TotalEnergies",
+   "qid": "Q154037",
+   "fame": 0.489,
+   "hq_city": "Courbevoie",
+   "description": "French multinational energy and petroleum company",
+   "hook": "is an oil supermajor that rebranded to stress its move into renewables",
+   "known": 0.5,
+   "kind": "oil company"
+  },
+  {
+   "label": "HTC",
+   "qid": "Q186012",
+   "fame": 0.479,
+   "hq_city": "New Taipei City",
+   "description": "Taiwanese electronics company",
+   "hook": "made the first phone running Android and the Vive virtual-reality headset",
+   "known": 0.4,
+   "kind": "electronics"
+  },
+  {
+   "label": "Gazprom",
+   "qid": "Q102673",
+   "fame": 0.468,
+   "hq_city": "Saint Petersburg",
+   "description": "Russian oil and gas company",
+   "hook": null,
+   "known": 0.4,
+   "kind": "oil company"
+  }
+ ]
+}

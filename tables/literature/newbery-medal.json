@@ -1,0 +1,71 @@
+{
+ "id": "table.literature.newbery-medal",
+ "kind": "table",
+ "title": "Newbery Medal winners",
+ "genre": "arts-entertainment",
+ "category": "literature",
+ "topic": "modern-fiction",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?year WHERE { { SELECT ?item (MIN(?d) AS ?year) WHERE { ?item p:P166 ?st . ?st ps:P166 wd:Q622813 ; pq:P585 ?d . MINUS { ?item wdt:P31 wd:Q5 } } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 43",
+  "attribution": null,
+  "fetchedAt": "2026-09-24T16:59:39.505Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-24T16:59:39.505Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "year",
+   "label": "Year",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "item",
+  "many": "items",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The Giver",
+   "qid": "Q258953",
+   "fame": 0.586,
+   "year": 1994,
+   "description": "1993 novel by Lois Lowry"
+  },
+  {
+   "label": "A Wrinkle in Time",
+   "qid": "Q2268391",
+   "fame": 0.568,
+   "year": 1963,
+   "description": "1962 science fantasy novel by Madeleine L'Engle"
+  },
+  {
+   "label": "Holes",
+   "qid": "Q175421",
+   "fame": 0.52,
+   "year": 1999,
+   "description": "1998 novel by Louis Sachar"
+  },
+  {
+   "label": "Bridge to Terabithia",
+   "qid": "Q838776",
+   "fame": 0.483,
+   "year": 1978,
+   "description": "1977 novel by Katherine Paterson"
+  }
+ ]
+}

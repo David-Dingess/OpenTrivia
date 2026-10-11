@@ -1,0 +1,268 @@
+{
+ "id": "table.food-and-drink.pasta-shapes",
+ "kind": "table",
+ "title": "Pasta shapes",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "cooking",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Hand-built, checked row by row against English Wikipedia",
+  "method": "enwiki: Spaghetti, Linguine, Fettuccine, Penne, Rigatoni, Farfalle, Orecchiette, Vermicelli, Capellini, Tagliatelle, Tortellini, Conchiglie, Fusilli, Lasagne, Macaroni, Cannelloni, Manicotti, Ziti, Orzo, Cavatappi, Pappardelle, Bucatini, Ravioli (intro extracts via the API)",
+  "attribution": null,
+  "fetchedAt": "2026-10-04"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T15:09:09.392Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "name_means",
+   "label": "What the name means (our words)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "shape",
+   "label": "Shape (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "pasta",
+  "many": "pastas",
+  "capitalise": true,
+  "lowerInProse": false,
+  "wildcard": "food",
+  "columns": {
+   "name_means": {
+    "role": "code",
+    "pick": "In Italian, what does the name of {label} mean?",
+    "statement": "The Italian name {label} means {value}.",
+    "match": "Match each pasta to what its Italian name means.",
+    "reverse": "Which pasta has a name that means {value}?"
+   },
+   "shape": {
+    "role": "code",
+    "pick": "Which of these describes the shape of {label}?",
+    "statement": "{label} is a pasta shaped like this: {value}.",
+    "match": "Match each pasta to its shape.",
+    "reverse": "Which pasta is this shape: {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Spaghetti",
+   "qid": null,
+   "fame": 0.485,
+   "name_means": "little strings",
+   "shape": "long thin round rod",
+   "kind": "long-strand",
+   "known": 0.95
+  },
+  {
+   "label": "Linguine",
+   "qid": null,
+   "fame": 0.409,
+   "name_means": "little tongues",
+   "shape": "long strand, slightly flattened",
+   "kind": "long-strand",
+   "known": 0.8
+  },
+  {
+   "label": "Fettuccine",
+   "qid": null,
+   "fame": 0.414,
+   "name_means": null,
+   "shape": "flat ribbon, thick and narrow",
+   "kind": "ribbon",
+   "known": 0.95
+  },
+  {
+   "label": "Penne",
+   "qid": null,
+   "fame": 0.376,
+   "name_means": null,
+   "shape": "tube with ends cut at a slant",
+   "kind": "tube",
+   "known": 0.95
+  },
+  {
+   "label": "Rigatoni",
+   "qid": null,
+   "fame": 0.416,
+   "name_means": "lined",
+   "shape": "ridged tube with straight-cut ends",
+   "kind": "tube",
+   "known": 0.8
+  },
+  {
+   "label": "Farfalle",
+   "qid": null,
+   "fame": 0.362,
+   "name_means": "butterflies",
+   "shape": "bow tie",
+   "kind": "shaped",
+   "known": 0.8
+  },
+  {
+   "label": "Orecchiette",
+   "qid": null,
+   "fame": 0.449,
+   "name_means": "ears",
+   "shape": "small dome like an ear",
+   "kind": "shaped",
+   "known": 0.4
+  },
+  {
+   "label": "Vermicelli",
+   "qid": null,
+   "fame": 0.466,
+   "name_means": null,
+   "shape": "thin round strand",
+   "kind": "long-strand",
+   "known": 0.4
+  },
+  {
+   "label": "Capellini",
+   "qid": null,
+   "fame": 0.361,
+   "name_means": "little hairs",
+   "shape": "very thin strand",
+   "kind": "long-strand",
+   "known": 0.4
+  },
+  {
+   "label": "Tagliatelle",
+   "qid": null,
+   "fame": 0.428,
+   "name_means": "to cut",
+   "shape": "long flat ribbon",
+   "kind": "ribbon",
+   "known": 0.6
+  },
+  {
+   "label": "Tortellini",
+   "qid": null,
+   "fame": 0.424,
+   "name_means": null,
+   "shape": "small stuffed pasta",
+   "kind": "stuffed",
+   "known": 0.8
+  },
+  {
+   "label": "Conchiglie",
+   "qid": null,
+   "fame": 0.34,
+   "name_means": "shells",
+   "shape": "shell",
+   "kind": "shaped",
+   "known": 0.6
+  },
+  {
+   "label": "Fusilli",
+   "qid": null,
+   "fame": 0.372,
+   "name_means": null,
+   "shape": "corkscrew twist",
+   "kind": "twist",
+   "known": 0.8
+  },
+  {
+   "label": "Lasagne",
+   "qid": null,
+   "fame": 0.185,
+   "name_means": null,
+   "shape": "wide flat sheet",
+   "kind": "sheet",
+   "known": 0.95
+  },
+  {
+   "label": "Macaroni",
+   "qid": null,
+   "fame": 0.434,
+   "name_means": null,
+   "shape": "narrow tube",
+   "kind": "tube",
+   "known": 0.9
+  },
+  {
+   "label": "Cannelloni",
+   "qid": null,
+   "fame": 0.386,
+   "name_means": "large reeds",
+   "shape": "large tube for stuffing and baking",
+   "kind": "tube",
+   "known": 0.6
+  },
+  {
+   "label": "Manicotti",
+   "qid": null,
+   "fame": 0.456,
+   "name_means": "sleeves",
+   "shape": "large tube for stuffing and baking",
+   "kind": "tube",
+   "known": 0.6
+  },
+  {
+   "label": "Ziti",
+   "qid": null,
+   "fame": 0.405,
+   "name_means": null,
+   "shape": "long narrow smooth tube",
+   "kind": "tube",
+   "known": 0.8
+  },
+  {
+   "label": "Orzo",
+   "qid": null,
+   "fame": 0.518,
+   "name_means": "barley",
+   "shape": "short grain, like a large grain of rice",
+   "kind": "small",
+   "known": 0.4
+  },
+  {
+   "label": "Cavatappi",
+   "qid": null,
+   "fame": 0.405,
+   "name_means": "corkscrews",
+   "shape": "helical tube",
+   "kind": "twist",
+   "known": 0.4
+  },
+  {
+   "label": "Pappardelle",
+   "qid": null,
+   "fame": 0.392,
+   "name_means": "to gobble up",
+   "shape": "very broad flat ribbon",
+   "kind": "ribbon",
+   "known": 0.6
+  },
+  {
+   "label": "Bucatini",
+   "qid": null,
+   "fame": 0.43,
+   "name_means": null,
+   "shape": "thick strand with a hole through the middle",
+   "kind": "long-strand",
+   "known": 0.4
+  },
+  {
+   "label": "Ravioli",
+   "qid": null,
+   "fame": 0.427,
+   "name_means": null,
+   "shape": "square stuffed pillow",
+   "kind": "stuffed",
+   "known": 0.8
+  }
+ ]
+}

@@ -1,0 +1,1562 @@
+{
+ "id": "table.food-and-drink.dishes",
+ "kind": "table",
+ "title": "Dishes and their country of origin",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "world-cuisine",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Hand-built, checked row by row against English Wikipedia",
+  "method": null,
+  "attribution": null,
+  "fetchedAt": "2026-09-27T02:05:40.542Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T03:01:29.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country of origin",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "kind",
+   "label": "Kind",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "dish",
+  "many": "dishes",
+  "capitalise": true,
+  "wildcard": "food",
+  "hookAsk": "Which dish {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country does {label} come from?",
+    "statement": "{label} comes from {value}.",
+    "match": "Match each dish to the country it comes from.",
+    "odd": "Three of these dishes come from {value}. Which one doesn't?",
+    "all": "Tap all {n} dishes from {value}."
+   },
+   "kind": {
+    "role": "link",
+    "odd": "Three of these are {value}s. Which one isn't?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Mooncake",
+   "qid": "Q197969",
+   "fame": 0.642,
+   "country": "China",
+   "kind": "dessert",
+   "description": "Chinese bakery product traditionally eaten during the Mid-Autumn Festival",
+   "hook": "is a round pastry with a dense sweet filling traditionally shared during a harvest-moon festival",
+   "known": 0.6
+  },
+  {
+   "label": "Surströmming",
+   "qid": "Q778396",
+   "fame": 0.623,
+   "country": "Sweden",
+   "kind": "snack",
+   "description": "fermented herring with a strong connection to northern Sweden",
+   "hook": "is a can of fermented herring so pungent it's traditionally opened outdoors",
+   "known": 0.2
+  },
+  {
+   "label": "Tiramisu",
+   "qid": "Q131582",
+   "fame": 0.617,
+   "country": "Italy",
+   "kind": "dessert",
+   "description": "Italian dessert",
+   "hook": "is a layered dessert of coffee-soaked ladyfingers and mascarpone dusted with cocoa",
+   "known": 0.8
+  },
+  {
+   "label": "Polenta",
+   "qid": "Q131607",
+   "fame": 0.587,
+   "country": "Italy",
+   "kind": "main",
+   "description": "corn meal boiled into a porridge",
+   "hook": "is a boiled cornmeal porridge that can be served soft or sliced and fried once firm",
+   "known": 0.4
+  },
+  {
+   "label": "Sushi",
+   "qid": "Q46383",
+   "fame": 0.583,
+   "country": "Japan",
+   "kind": "main",
+   "description": "portioned prepared vinegared rice topped or rolled with other ingredients",
+   "hook": "is vinegared rice paired with raw fish, vegetables or egg, often wrapped in seaweed",
+   "known": 0.8
+  },
+  {
+   "label": "Bolognese sauce",
+   "qid": "Q1162965",
+   "fame": 0.582,
+   "country": "Italy",
+   "kind": "sauce",
+   "description": "sauce",
+   "hook": "is a slow-simmered meat ragù enriched with tomato, wine and a splash of milk, tossed with pasta",
+   "known": 0.8
+  },
+  {
+   "label": "Bánh mì",
+   "qid": "Q615392",
+   "fame": 0.579,
+   "country": "Vietnam",
+   "kind": "street food",
+   "description": "Vietnamese bread or roll or sandwich",
+   "hook": "is a crusty baguette sandwich stuffed with pickled vegetables, herbs and meat or pâté",
+   "known": 0.6
+  },
+  {
+   "label": "Worcestershire sauce",
+   "qid": "Q842618",
+   "fame": 0.577,
+   "country": "United Kingdom",
+   "kind": "sauce",
+   "description": "sauce",
+   "hook": "is a tangy fermented condiment made from anchovies, vinegar and tamarind, splashed into savory dishes",
+   "known": 0.6
+  },
+  {
+   "label": "Carbonara",
+   "qid": "Q876624",
+   "fame": 0.57,
+   "country": "Italy",
+   "kind": "main",
+   "description": "pasta dish",
+   "hook": "is a pasta dish tossed with egg, hard cheese and cured pork, with no cream at all",
+   "known": 0.8
+  },
+  {
+   "label": "Shepherd's pie",
+   "qid": "Q2303056",
+   "fame": 0.567,
+   "country": "United Kingdom",
+   "kind": "main",
+   "description": "meat pie with a crust or topping of mashed potato",
+   "hook": "is a baked casserole of minced meat topped with a layer of mashed potato",
+   "known": 0.8
+  },
+  {
+   "label": "Kimchi",
+   "qid": "Q141898",
+   "fame": 0.561,
+   "country": "South Korea",
+   "kind": "main",
+   "description": "Traditional Korean dish of fermented vegetables",
+   "hook": "is a spicy fermented side dish usually made from salted cabbage and chili paste",
+   "known": 0.8
+  },
+  {
+   "label": "Poutine",
+   "qid": "Q396184",
+   "fame": 0.558,
+   "country": "Canada",
+   "kind": "snack",
+   "description": "dish of french fries, cheese curds and gravy",
+   "hook": "is a plate of fries topped with cheese curds and smothered in hot brown gravy",
+   "known": 0.6
+  },
+  {
+   "label": "Gnocchi",
+   "qid": "Q20063",
+   "fame": 0.556,
+   "country": "Italy",
+   "kind": "main",
+   "description": "type of Italian pasta",
+   "hook": "are small soft dumplings usually made from potato, boiled and tossed in sauce",
+   "known": 0.6
+  },
+  {
+   "label": "Paella",
+   "qid": "Q212121",
+   "fame": 0.556,
+   "country": "Spain",
+   "kind": "main",
+   "description": "rice dish from the Valencian Community, Spain",
+   "hook": "is a saffron-tinted rice dish cooked in a wide shallow pan with meat, seafood or vegetables",
+   "known": 0.8
+  },
+  {
+   "label": "Ossobuco",
+   "qid": "Q1057256",
+   "fame": 0.554,
+   "country": "Italy",
+   "kind": "main",
+   "description": "Lombard dish",
+   "hook": "is a braised cross-cut veal shank served with its marrow still in the bone",
+   "known": 0.4
+  },
+  {
+   "label": "Pho",
+   "qid": "Q420646",
+   "fame": 0.552,
+   "country": "Vietnam",
+   "kind": "soup",
+   "description": "Vietnamese noodle soup dish",
+   "hook": "is a fragrant broth soup with rice noodles, herbs and thin slices of meat",
+   "known": 0.8
+  },
+  {
+   "label": "Ramen",
+   "qid": "Q234646",
+   "fame": 0.551,
+   "country": "Japan",
+   "kind": "soup",
+   "description": "Japanese noodle soup of Chinese origin",
+   "hook": "is a noodle soup in a rich broth topped with sliced meat, egg and greens",
+   "known": 0.8
+  },
+  {
+   "label": "Yorkshire pudding",
+   "qid": "Q951669",
+   "fame": 0.549,
+   "country": "United Kingdom",
+   "kind": "bread",
+   "description": "a traditional English side dish",
+   "hook": "is a puffy baked batter side dish traditionally served with a Sunday roast",
+   "known": 0.6
+  },
+  {
+   "label": "Pad thai",
+   "qid": "Q730298",
+   "fame": 0.547,
+   "country": "Thailand",
+   "kind": "main",
+   "description": "stir-fried noodle dish from Thailand",
+   "hook": "is a stir-fried noodle dish tossed with egg, tamarind sauce, peanuts and bean sprouts",
+   "known": 0.8
+  },
+  {
+   "label": "Ratatouille",
+   "qid": "Q183095",
+   "fame": 0.545,
+   "country": "France",
+   "kind": "main",
+   "description": "French dish",
+   "hook": "is a stewed medley of summer vegetables like eggplant, zucchini and peppers",
+   "known": 0.8
+  },
+  {
+   "label": "Pozole",
+   "qid": "Q515692",
+   "fame": 0.545,
+   "country": "Mexico",
+   "kind": "soup",
+   "description": "Mexican hominy and meat soup",
+   "hook": "is a hearty hominy soup simmered with meat and topped with shredded cabbage and radish",
+   "known": 0.6
+  },
+  {
+   "label": "Pizza Margherita",
+   "qid": "Q500724",
+   "fame": 0.542,
+   "country": "Italy",
+   "kind": "main",
+   "description": "typical Neapolitan pizza topped with tomato, mozzarella, and fresh basil",
+   "hook": "is a flatbread topped simply with tomato sauce, melted cheese and fresh basil leaves",
+   "known": 0.95
+  },
+  {
+   "label": "Bagel",
+   "qid": "Q272502",
+   "fame": 0.54,
+   "country": "Poland",
+   "kind": "bread",
+   "description": "torus-shaped bread product",
+   "hook": "is a dense ring-shaped bread that's boiled before it's baked",
+   "known": 0.8
+  },
+  {
+   "label": "Reuben sandwich",
+   "qid": "Q3180957",
+   "fame": 0.538,
+   "country": "United States",
+   "kind": "snack",
+   "description": "hot sandwich of corned beef, Swiss cheese, with Russian or Thousand Island dressing, and sauerkraut",
+   "hook": "is a grilled stack of rye bread layered with cured beef, melted cheese, tangy cabbage and a creamy dressing",
+   "known": 0.6
+  },
+  {
+   "label": "Eggs Benedict",
+   "qid": "Q58263",
+   "fame": 0.538,
+   "country": "United States",
+   "kind": "main",
+   "description": "American breakfast dish",
+   "hook": "is an English muffin topped with ham, a soft poached topping and a rich butter-based sauce",
+   "known": 0.8
+  },
+  {
+   "label": "Hákarl",
+   "qid": "Q1703796",
+   "fame": 0.537,
+   "country": "Iceland",
+   "kind": "snack",
+   "description": "national dish of Iceland consisting of fermented shark",
+   "hook": "is a fermented and dried shark meat with a famously strong ammonia smell",
+   "known": 0.2
+  },
+  {
+   "label": "Jambalaya",
+   "qid": "Q1364509",
+   "fame": 0.536,
+   "country": "United States",
+   "kind": "main",
+   "description": "Louisiana Creole and Cajun rice dish of meat and vegetables mixed with rice",
+   "hook": "is a one-pot rice dish simmered with meat, sausage and vegetables in a spiced broth",
+   "known": 0.6
+  },
+  {
+   "label": "Spätzle",
+   "qid": "Q20065",
+   "fame": 0.535,
+   "country": "Germany",
+   "kind": "main",
+   "description": "type of egg noodle",
+   "hook": "is a soft egg noodle scraped or pressed into boiling water in small irregular shapes",
+   "known": 0.4
+  },
+  {
+   "label": "Goulash",
+   "qid": "Q205762",
+   "fame": 0.535,
+   "country": "Hungary",
+   "kind": "soup",
+   "description": "Hungarian dish",
+   "hook": "is a slow-cooked meat stew seasoned heavily with paprika",
+   "known": 0.8
+  },
+  {
+   "label": "Gumbo",
+   "qid": "Q1160522",
+   "fame": 0.535,
+   "country": "United States",
+   "kind": "soup",
+   "description": "Louisianan stew",
+   "hook": "is a thick stew built on a dark roux, often loaded with okra, sausage and seafood",
+   "known": 0.6
+  },
+  {
+   "label": "Butter chicken",
+   "qid": "Q1322549",
+   "fame": 0.534,
+   "country": "India",
+   "kind": "main",
+   "description": "Indian curry dish",
+   "hook": "is a mild curry of poultry simmered in a creamy, tomato-based sauce",
+   "known": 0.8
+  },
+  {
+   "label": "Risotto",
+   "qid": "Q208105",
+   "fame": 0.531,
+   "country": "Italy",
+   "kind": "main",
+   "description": "Italian rice dish",
+   "hook": "is a creamy rice dish made by slowly stirring broth into rice until it turns velvety",
+   "known": 0.8
+  },
+  {
+   "label": "Patatas bravas",
+   "qid": "Q2457586",
+   "fame": 0.53,
+   "country": "Spain",
+   "kind": "snack",
+   "description": "potato dish native to Spain",
+   "hook": "are fried potato chunks served with a spicy tomato sauce and often a garlicky aioli",
+   "known": 0.4
+  },
+  {
+   "label": "Enchilada",
+   "qid": "Q876096",
+   "fame": 0.529,
+   "country": "Mexico",
+   "kind": "main",
+   "description": "corn tortilla rolled around a filling and covered with a chili pepper sauce",
+   "hook": "is a rolled tortilla filled with meat or cheese and covered in a chili-based sauce",
+   "known": 0.6
+  },
+  {
+   "label": "Pastel de nata",
+   "qid": "Q1421401",
+   "fame": 0.528,
+   "country": "Portugal",
+   "kind": "dessert",
+   "description": "Portuguese egg tart pastry dusted with cinnamon",
+   "hook": "is a small custard tart with a flaky crust and a caramelized, blistered top",
+   "known": 0.6
+  },
+  {
+   "label": "Bruschetta",
+   "qid": "Q614448",
+   "fame": 0.526,
+   "country": "Italy",
+   "kind": "snack",
+   "description": "Italian dish",
+   "hook": "is grilled bread rubbed with garlic and topped with chopped tomato and basil",
+   "known": 0.8
+  },
+  {
+   "label": "Greek salad",
+   "qid": "Q240801",
+   "fame": 0.526,
+   "country": "Greece",
+   "kind": "main",
+   "description": "dish made from tomatoes, cucumbers, onions, feta, olives, salt, oregano, and olive oil",
+   "hook": "is a chunky combination of tomato, cucumber, onion and olives topped with a slab of tangy cheese",
+   "known": 0.8
+  },
+  {
+   "label": "Bibimbap",
+   "qid": "Q648352",
+   "fame": 0.526,
+   "country": "South Korea",
+   "kind": "main",
+   "description": "Korean rice bowl dish",
+   "hook": "is a rice bowl topped with an array of seasoned vegetables, meat and a fried egg, mixed together",
+   "known": 0.6
+  },
+  {
+   "label": "Turkish delight",
+   "qid": "Q182339",
+   "fame": 0.525,
+   "country": "Turkey",
+   "kind": "dessert",
+   "description": "Turkish gelatinous candy",
+   "hook": "is a soft, chewy gel candy dusted with powdered sugar, often flavored with rosewater",
+   "known": 0.6
+  },
+  {
+   "label": "Chilaquiles",
+   "qid": "Q2963582",
+   "fame": 0.525,
+   "country": "Mexico",
+   "kind": "main",
+   "description": "traditional Mexican dish",
+   "hook": "is a breakfast dish of fried tortilla pieces simmered in a chili sauce and topped with cheese",
+   "known": 0.4
+  },
+  {
+   "label": "Minestrone",
+   "qid": "Q581462",
+   "fame": 0.524,
+   "country": "Italy",
+   "kind": "soup",
+   "description": "thick soup of Italian origin made with vegetables, often with pasta or rice",
+   "hook": "is a thick vegetable soup that often includes beans and small pasta or rice",
+   "known": 0.6
+  },
+  {
+   "label": "Fish and chips",
+   "qid": "Q203925",
+   "fame": 0.524,
+   "country": "United Kingdom",
+   "kind": "main",
+   "description": "hot dish of fried fish and fried potato",
+   "hook": "is a battered, deep-fried fillet served alongside thick-cut fried potato wedges",
+   "known": 0.95
+  },
+  {
+   "label": "Tempeh",
+   "qid": "Q120096",
+   "fame": 0.523,
+   "country": "Indonesia",
+   "kind": "main",
+   "description": "Indonesian soy product originated from Java island, used as protein source",
+   "hook": "is a firm cake of fermented soybeans bound together by a white mold",
+   "known": 0.4
+  },
+  {
+   "label": "Mochi",
+   "qid": "Q470519",
+   "fame": 0.521,
+   "country": "Japan",
+   "kind": "dessert",
+   "description": "Japanese rice cake made of mochigome",
+   "hook": "is a chewy cake pounded from sticky rice, often wrapped around a sweet filling",
+   "known": 0.8
+  },
+  {
+   "label": "Cannoli",
+   "qid": "Q836151",
+   "fame": 0.52,
+   "country": "Italy",
+   "kind": "dessert",
+   "description": "traditional Italian bakery product (PAT)",
+   "hook": "is a fried pastry tube filled with a sweetened, creamy ricotta filling",
+   "known": 0.8
+  },
+  {
+   "label": "Okonomiyaki",
+   "qid": "Q701075",
+   "fame": 0.519,
+   "country": "Japan",
+   "kind": "main",
+   "description": "Japanese savory pancake",
+   "hook": "is a savory griddled pancake packed with cabbage and topped with a sweet-savory sauce and mayo",
+   "known": 0.4
+  },
+  {
+   "label": "Poke",
+   "qid": "Q7208574",
+   "fame": 0.519,
+   "country": "United States",
+   "kind": "main",
+   "description": "Hawaiian raw fish dish",
+   "hook": "is a chilled bowl of cubed raw fish tossed with soy sauce, sesame oil and rice",
+   "known": 0.6
+  },
+  {
+   "label": "Beef Stroganoff",
+   "qid": "Q849058",
+   "fame": 0.518,
+   "country": "Russia",
+   "kind": "main",
+   "description": "sautéed beef served in sauce",
+   "hook": "is sautéed strips of meat served in a creamy, tangy sauce, usually over noodles",
+   "known": 0.6
+  },
+  {
+   "label": "Lasagna",
+   "qid": "Q20034",
+   "fame": 0.516,
+   "country": "Italy",
+   "kind": "main",
+   "description": "layered pasta dish",
+   "hook": "is a baked casserole of flat pasta sheets layered with sauce and cheese",
+   "known": 0.95
+  },
+  {
+   "label": "Croque monsieur",
+   "qid": "Q738",
+   "fame": 0.515,
+   "country": "France",
+   "kind": "snack",
+   "description": "baked or fried ham and cheese sandwich",
+   "hook": "is a grilled sandwich of ham and melted cheese, sometimes topped with a creamy white sauce",
+   "known": 0.6
+  },
+  {
+   "label": "Taco",
+   "qid": "Q191655",
+   "fame": 0.515,
+   "country": "Mexico",
+   "kind": "street food",
+   "description": "Mexican dish consisting of a corn or wheat tortilla folded or rolled around a filling, salsa and vegetabes",
+   "hook": "is a folded tortilla wrapped around a filling of meat, vegetables and salsa",
+   "known": 0.95
+  },
+  {
+   "label": "Beef bourguignon",
+   "qid": "Q1022124",
+   "fame": 0.513,
+   "country": "France",
+   "kind": "main",
+   "description": "French wine-based beef stew",
+   "hook": "is a hearty cut of meat braised slowly in red wine with mushrooms, onions and bacon",
+   "known": 0.8
+  },
+  {
+   "label": "Red velvet cake",
+   "qid": "Q1284887",
+   "fame": 0.513,
+   "country": "United States",
+   "kind": "dessert",
+   "description": "chocolate cake",
+   "hook": "is a cocoa-tinted dessert with a deep crimson hue and a tangy cream cheese frosting",
+   "known": 0.8
+  },
+  {
+   "label": "Fettuccine Alfredo",
+   "qid": "Q2915859",
+   "fame": 0.511,
+   "country": "Italy",
+   "kind": "main",
+   "description": "pasta dish made from fettuccine tossed with Parmesan cheese and butter",
+   "hook": "is ribbon pasta tossed simply with butter and a generous amount of hard cheese",
+   "known": 0.8
+  },
+  {
+   "label": "Affogato",
+   "qid": "Q59059",
+   "fame": 0.51,
+   "country": "Italy",
+   "kind": "dessert",
+   "description": "Italian coffee-based dessert",
+   "hook": "is a scoop of ice cream drowned with a hot shot of strong dark coffee",
+   "known": 0.8
+  },
+  {
+   "label": "Gochujang",
+   "qid": "Q699637",
+   "fame": 0.508,
+   "country": "South Korea",
+   "kind": "sauce",
+   "description": "Korean red chilli paste",
+   "hook": "is a thick, fermented red chili paste with a deep savory sweetness",
+   "known": 0.4
+  },
+  {
+   "label": "Mille-feuille",
+   "qid": "Q12491",
+   "fame": 0.507,
+   "country": "France",
+   "kind": "dessert",
+   "description": "French pastry",
+   "hook": "is a pastry stacked from crisp buttery layers alternating with sweet cream",
+   "known": 0.6
+  },
+  {
+   "label": "Panna cotta",
+   "qid": "Q504941",
+   "fame": 0.505,
+   "country": "Italy",
+   "kind": "dessert",
+   "description": "Italian dessert made by blending cream, sugar and gelatin",
+   "hook": "is a chilled dessert of sweetened cream set with gelatin until silky and wobbly",
+   "known": 0.6
+  },
+  {
+   "label": "Nasi goreng",
+   "qid": "Q510666",
+   "fame": 0.505,
+   "country": "Indonesia",
+   "kind": "main",
+   "description": "Malay, Javanese and Chinese Southeast Asia fried rice",
+   "hook": "is rice stir-fried with sweet soy sauce, shallots, chili and often a fried egg on top",
+   "known": 0.8
+  },
+  {
+   "label": "Mole",
+   "qid": "Q1495652",
+   "fame": 0.505,
+   "country": "Mexico",
+   "kind": "sauce",
+   "description": "Mexican sauces containing a fruit, chili pepper, nuts, and such spices as black pepper, cinnamon, cumin, and chocolate",
+   "hook": "is a rich, dark sauce blending chili peppers, spices and a hint of chocolate",
+   "known": 0.6
+  },
+  {
+   "label": "Tteokbokki",
+   "qid": "Q1190475",
+   "fame": 0.504,
+   "country": "South Korea",
+   "kind": "street food",
+   "description": "South Korean dish made from rice and flour cakes",
+   "hook": "is chewy rice cakes simmered in a spicy-sweet red chili sauce",
+   "known": 0.4
+  },
+  {
+   "label": "Takoyaki",
+   "qid": "Q905527",
+   "fame": 0.503,
+   "country": "Japan",
+   "kind": "street food",
+   "description": "ball-shaped Japanese snack with octopus",
+   "hook": "are round battered balls griddled with bits of octopus inside",
+   "known": 0.6
+  },
+  {
+   "label": "Arancini",
+   "qid": "Q268857",
+   "fame": 0.501,
+   "country": "Italy",
+   "kind": "street food",
+   "description": "traditional Italian dish",
+   "hook": "are fried rice balls with a savory filling and a crisp golden crust",
+   "known": 0.4
+  },
+  {
+   "label": "Black Forest cake",
+   "qid": "Q19028",
+   "fame": 0.5,
+   "country": "Germany",
+   "kind": "dessert",
+   "description": "type of chocolate cake, traditionally made with \"kirschwasser\", a brandy made from double distillation of morello cherries",
+   "hook": "is a chocolate layer dessert filled with whipped cream and cherries, often soaked in cherry brandy",
+   "known": 0.8
+  },
+  {
+   "label": "Muesli",
+   "qid": "Q52406",
+   "fame": 0.5,
+   "country": "Switzerland",
+   "kind": "snack",
+   "description": "breakfast dish based on unboiled rolled oats and other ingredients",
+   "hook": "is a breakfast mix of raw rolled oats, dried fruit and nuts, often soaked in milk",
+   "known": 0.6
+  },
+  {
+   "label": "Gelato",
+   "qid": "Q1362405",
+   "fame": 0.498,
+   "country": "Italy",
+   "kind": "dessert",
+   "description": "Italian style of ice cream",
+   "hook": "is a dense, slowly churned frozen dessert with less air and fat than typical ice cream",
+   "known": 0.8
+  },
+  {
+   "label": "Kung Pao chicken",
+   "qid": "Q549713",
+   "fame": 0.498,
+   "country": "China",
+   "kind": "main",
+   "description": "spicy stir-fried dish",
+   "hook": "is a spicy stir-fry of diced poultry, peanuts and dried chili peppers",
+   "known": 0.8
+  },
+  {
+   "label": "Hot pot",
+   "qid": "Q846849",
+   "fame": 0.498,
+   "country": "China",
+   "kind": "main",
+   "description": "Chinese and Southeast Asian dish",
+   "hook": "is a simmering vessel of broth at the table where diners cook their own meat and vegetables",
+   "known": 0.6
+  },
+  {
+   "label": "Onigiri",
+   "qid": "Q13393",
+   "fame": 0.498,
+   "country": "Japan",
+   "kind": "snack",
+   "description": "Japanese rice ball",
+   "hook": "is a hand-shaped ball of rice often wrapped in a strip of seaweed with a filling inside",
+   "known": 0.6
+  },
+  {
+   "label": "Guacamole",
+   "qid": "Q207968",
+   "fame": 0.498,
+   "country": "Mexico",
+   "kind": "sauce",
+   "description": "Mexican avocado-based dip, spread, or salad",
+   "hook": "is a mashed dip made from ripe avocado, lime juice, onion and cilantro",
+   "known": 0.8
+  },
+  {
+   "label": "Crêpe",
+   "qid": "Q12200",
+   "fame": 0.497,
+   "country": "France",
+   "kind": "dessert",
+   "description": "type of very thin pancake",
+   "hook": "is a very thin pancake that can be filled with something sweet or savory and folded",
+   "known": 0.8
+  },
+  {
+   "label": "Chow mein",
+   "qid": "Q964107",
+   "fame": 0.497,
+   "country": "China",
+   "kind": "main",
+   "description": "fried noodles",
+   "hook": "is a stir-fried noodle dish tossed with vegetables and often strips of meat",
+   "known": 0.8
+  },
+  {
+   "label": "Massaman curry",
+   "qid": "Q301587",
+   "fame": 0.496,
+   "country": "Thailand",
+   "kind": "main",
+   "description": "mild Thai curry",
+   "hook": "is a mild, slightly sweet coconut-based stew with potatoes and peanuts",
+   "known": 0.6
+  },
+  {
+   "label": "Burrito",
+   "qid": "Q390823",
+   "fame": 0.496,
+   "country": "Mexico",
+   "kind": "main",
+   "description": "Mexican dish consisting of a wheat flour tortilla wrapped or folded into a cylindrical shape to completely enclose the filling",
+   "hook": "is a large flour tortilla wrapped tightly around rice, beans, meat and other fillings",
+   "known": 0.8
+  },
+  {
+   "label": "Focaccia",
+   "qid": "Q832791",
+   "fame": 0.495,
+   "country": "Italy",
+   "kind": "bread",
+   "description": "oven-baked Italian flat bread, sometimes filled in with other ingredients",
+   "hook": "is a flat, oven-baked bread dimpled on top and drizzled generously with olive oil",
+   "known": 0.8
+  },
+  {
+   "label": "Wiener schnitzel",
+   "qid": "Q6497852",
+   "fame": 0.494,
+   "country": "Austria",
+   "kind": "main",
+   "description": "breaded veal schnitzel",
+   "hook": "is a thin cutlet of veal pounded flat, breaded and fried until golden",
+   "known": 0.8
+  },
+  {
+   "label": "Tom yum",
+   "qid": "Q1052469",
+   "fame": 0.494,
+   "country": "Thailand",
+   "kind": "soup",
+   "description": "hot and sour Thai soup",
+   "hook": "is a hot and sour soup fragrant with lemongrass, lime leaves and chili",
+   "known": 0.6
+  },
+  {
+   "label": "Philly cheesesteak",
+   "qid": "Q1068892",
+   "fame": 0.493,
+   "country": "United States",
+   "kind": "street food",
+   "description": "steak and cheese sandwich from Philadelphia",
+   "hook": "is a sandwich of thinly sliced grilled steak and melted cheese in a long roll",
+   "known": 0.8
+  },
+  {
+   "label": "Soy sauce",
+   "qid": "Q229385",
+   "fame": 0.492,
+   "country": "China",
+   "kind": "sauce",
+   "description": "liquid seasoning",
+   "hook": "is a salty dark liquid seasoning brewed by fermenting beans and wheat",
+   "known": 0.8
+  },
+  {
+   "label": "Stroopwafel",
+   "qid": "Q267877",
+   "fame": 0.491,
+   "country": "Netherlands",
+   "kind": "snack",
+   "description": "two round waffle-like wafers with a caramel filling in the middle",
+   "hook": "is two thin waffle wafers sandwiched together around a gooey caramel filling",
+   "known": 0.6
+  },
+  {
+   "label": "Pani puri",
+   "qid": "Q2722122",
+   "fame": 0.491,
+   "country": "India",
+   "kind": "street food",
+   "description": "Indian snack",
+   "hook": "is a hollow crisp shell cracked open and filled with spiced tangy water and potato",
+   "known": 0.4
+  },
+  {
+   "label": "Hoisin sauce",
+   "qid": "Q404114",
+   "fame": 0.491,
+   "country": "China",
+   "kind": "sauce",
+   "description": "thick, pungent sauce commonly used in Chinese cuisine as a glaze for meat",
+   "hook": "is a thick, sweet and salty glaze brushed onto grilled or roasted meats",
+   "known": 0.6
+  },
+  {
+   "label": "Club sandwich",
+   "qid": "Q1093380",
+   "fame": 0.487,
+   "country": "United States",
+   "kind": "snack",
+   "description": "type of sandwich",
+   "hook": "is a triple-decker stack of bread layered with poultry, bacon, lettuce and tomato",
+   "known": 0.6
+  },
+  {
+   "label": "Fajitas",
+   "qid": "Q871272",
+   "fame": 0.487,
+   "country": "United States",
+   "kind": "main",
+   "description": "term found in Tex-Mex cuisine, commonly referring to any grilled meat usually served as a taco on a flour or corn tortilla",
+   "hook": "is grilled strips of meat and peppers served sizzling with warm tortillas on the side",
+   "known": 0.8
+  },
+  {
+   "label": "Buffalo wings",
+   "qid": "Q1072203",
+   "fame": 0.486,
+   "country": "United States",
+   "kind": "snack",
+   "description": "American food dish of spicy chicken wings",
+   "hook": "are fried chicken pieces tossed in a tangy, spicy vinegar-based hot sauce",
+   "known": 0.8
+  },
+  {
+   "label": "Coq au vin",
+   "qid": "Q527323",
+   "fame": 0.485,
+   "country": "France",
+   "kind": "main",
+   "description": "traditional French chicken dish made with red wine and dark meat",
+   "hook": "is chicken braised slowly in red wine with mushrooms, bacon and pearl onions",
+   "known": 0.8
+  },
+  {
+   "label": "Scone",
+   "qid": "Q869660",
+   "fame": 0.483,
+   "country": "United Kingdom",
+   "kind": "bread",
+   "description": "British quick bread",
+   "hook": "is a crumbly quick bread often split and topped with clotted cream and jam",
+   "known": 0.8
+  },
+  {
+   "label": "S'more",
+   "qid": "Q2339814",
+   "fame": 0.483,
+   "country": "United States",
+   "kind": "dessert",
+   "description": "North American dessert",
+   "hook": "is a toasted marshmallow and chocolate sandwiched between two graham crackers over a campfire",
+   "known": 0.8
+  },
+  {
+   "label": "Banoffee pie",
+   "qid": "Q2748774",
+   "fame": 0.482,
+   "country": "United Kingdom",
+   "kind": "dessert",
+   "description": "English dessert pie",
+   "hook": "is a no-bake dessert layered with banana, toffee and whipped cream over a biscuit base",
+   "known": 0.6
+  },
+  {
+   "label": "Hollandaise sauce",
+   "qid": "Q58259",
+   "fame": 0.481,
+   "country": "France",
+   "kind": "sauce",
+   "description": "classic sauce",
+   "hook": "is a rich, warm emulsion whisked from egg yolk and butter with a touch of lemon",
+   "known": 0.6
+  },
+  {
+   "label": "Béarnaise sauce",
+   "qid": "Q58265",
+   "fame": 0.481,
+   "country": "France",
+   "kind": "sauce",
+   "description": "Sauce made of clarified butter",
+   "hook": "is a warm butter-and-egg-yolk emulsion flavored with tarragon and shallots",
+   "known": 0.6
+  },
+  {
+   "label": "Toad in the hole",
+   "qid": "Q740764",
+   "fame": 0.481,
+   "country": "United Kingdom",
+   "kind": "main",
+   "description": "traditional English dish of sausages in Yorkshire pudding batter",
+   "hook": "is sausages baked inside a puffed, savory batter",
+   "known": 0.6
+  },
+  {
+   "label": "Quesadilla",
+   "qid": "Q865325",
+   "fame": 0.481,
+   "country": "Mexico",
+   "kind": "snack",
+   "description": "Mexican dish consisting of a tortilla filled with cheese and then grilled",
+   "hook": "is a folded tortilla grilled with melted cheese and other fillings inside",
+   "known": 0.8
+  },
+  {
+   "label": "Cacio e pepe",
+   "qid": "Q5016033",
+   "fame": 0.479,
+   "country": "Italy",
+   "kind": "main",
+   "description": "Italian pasta dish",
+   "hook": "is a pasta dish tossed with just hard cheese and coarsely cracked black pepper",
+   "known": 0.6
+  },
+  {
+   "label": "Calzone",
+   "qid": "Q1815560",
+   "fame": 0.479,
+   "country": "Italy",
+   "kind": "main",
+   "description": "oven-baked folded pizza from Naples",
+   "hook": "is a folded, oven-baked pocket of dough stuffed with cheese and other fillings",
+   "known": 0.6
+  },
+  {
+   "label": "Baguette",
+   "qid": "Q208172",
+   "fame": 0.479,
+   "country": "France",
+   "kind": "bread",
+   "description": "Long French white bread",
+   "hook": "is a long, thin loaf of bread with a crisp crust and an airy, chewy crumb",
+   "known": 0.95
+  },
+  {
+   "label": "Sticky toffee pudding",
+   "qid": "Q7616334",
+   "fame": 0.479,
+   "country": "United Kingdom",
+   "kind": "dessert",
+   "description": "dessert",
+   "hook": "is a moist date sponge cake drenched in a warm caramel sauce",
+   "known": 0.8
+  },
+  {
+   "label": "Cobb salad",
+   "qid": "Q1104585",
+   "fame": 0.479,
+   "country": "United States",
+   "kind": "main",
+   "description": "American garden salad",
+   "hook": "is chopped ingredients arranged in neat rows of bacon, egg, chicken, avocado and blue cheese",
+   "known": 0.6
+  },
+  {
+   "label": "Gazpacho",
+   "qid": "Q202677",
+   "fame": 0.477,
+   "country": "Spain",
+   "kind": "soup",
+   "description": "cold soup from Spain and Portugal",
+   "hook": "is a chilled soup blended from raw tomatoes and other vegetables",
+   "known": 0.8
+  },
+  {
+   "label": "Souvlaki",
+   "qid": "Q240923",
+   "fame": 0.477,
+   "country": "Greece",
+   "kind": "street food",
+   "description": "Greek fast food",
+   "hook": "is small skewered pieces of grilled meat, often tucked into flatbread",
+   "known": 0.6
+  },
+  {
+   "label": "Bulgogi",
+   "qid": "Q683682",
+   "fame": 0.477,
+   "country": "South Korea",
+   "kind": "main",
+   "description": "marinated, grilled Korean beef dish",
+   "hook": "is thin slices of marinated beef grilled or seared quickly over high heat",
+   "known": 0.8
+  },
+  {
+   "label": "Nachos",
+   "qid": "Q466430",
+   "fame": 0.477,
+   "country": "Mexico",
+   "kind": "snack",
+   "description": "Mexican dish",
+   "hook": "is a plate of crisp tortilla chips piled with melted cheese and toppings",
+   "known": 0.8
+  },
+  {
+   "label": "Tarte Tatin",
+   "qid": "Q1147946",
+   "fame": 0.476,
+   "country": "France",
+   "kind": "dessert",
+   "description": "pastry with caramelised fruit that originated in France",
+   "hook": "is an upside-down pastry where caramelized fruit sits beneath the crust",
+   "known": 0.8
+  },
+  {
+   "label": "Olivier salad",
+   "qid": "Q281278",
+   "fame": 0.476,
+   "country": "Russia",
+   "kind": "main",
+   "description": "salad dish",
+   "hook": "is chopped potato, egg and vegetables bound together with a creamy dressing",
+   "known": 0.6
+  },
+  {
+   "label": "Pesto",
+   "qid": "Q9896",
+   "fame": 0.475,
+   "country": "Italy",
+   "kind": "sauce",
+   "description": "sauce made from basil, pine nuts, Parmigiano Reggiano, olive oil, and garlic",
+   "hook": "is a bright green sauce blended from basil, garlic, pine nuts and hard cheese",
+   "known": 0.8
+  },
+  {
+   "label": "Bratwurst",
+   "qid": "Q899882",
+   "fame": 0.475,
+   "country": "Germany",
+   "kind": "main",
+   "description": "type of sausage",
+   "hook": "is a seasoned sausage traditionally grilled or pan-fried and served with mustard",
+   "known": 0.8
+  },
+  {
+   "label": "Peking duck",
+   "qid": "Q404973",
+   "fame": 0.475,
+   "country": "China",
+   "kind": "main",
+   "description": "roast duck from Beijing (Peking)",
+   "hook": "is a whole roasted bird prized for its thin, crackling-crisp skin",
+   "known": 0.8
+  },
+  {
+   "label": "Mapo tofu",
+   "qid": "Q1298577",
+   "fame": 0.473,
+   "country": "China",
+   "kind": "main",
+   "description": "Sichuan province dish",
+   "hook": "is soft bean curd cubes simmered in a fiery, numbing chili and bean paste sauce",
+   "known": 0.6
+  },
+  {
+   "label": "Xiaolongbao",
+   "qid": "Q702662",
+   "fame": 0.473,
+   "country": "China",
+   "kind": "snack",
+   "description": "steamed bun",
+   "hook": "is a delicate steamed dumpling that holds a pocket of hot savory broth inside",
+   "known": 0.4
+  },
+  {
+   "label": "Saganaki",
+   "qid": "Q1244010",
+   "fame": 0.471,
+   "country": "Greece",
+   "kind": "snack",
+   "description": "style of Greek dish",
+   "hook": "is a slab of cheese pan-fried until its edges turn golden and crisp",
+   "known": 0.4
+  },
+  {
+   "label": "Sachertorte",
+   "qid": "Q131442",
+   "fame": 0.47,
+   "country": "Austria",
+   "kind": "dessert",
+   "description": "specific type of chocolate cake, or torte",
+   "hook": "is a dense chocolate cake with a thin layer of apricot jam under its glossy glaze",
+   "known": 0.6
+  },
+  {
+   "label": "Raclette",
+   "qid": "Q20748",
+   "fame": 0.469,
+   "country": "Switzerland",
+   "kind": "main",
+   "description": "A Swiss national dish",
+   "hook": "is a semi-hard cheese melted and scraped directly onto potatoes and bread",
+   "known": 0.6
+  },
+  {
+   "label": "Miso soup",
+   "qid": "Q471866",
+   "fame": 0.469,
+   "country": "Japan",
+   "kind": "soup",
+   "description": "Japanese soup flavored with miso",
+   "hook": "is a light broth stirred through with a fermented soybean paste and often tofu",
+   "known": 0.8
+  },
+  {
+   "label": "Pumpernickel",
+   "qid": "Q837207",
+   "fame": 0.468,
+   "country": "Germany",
+   "kind": "bread",
+   "description": "type of German rye bread",
+   "hook": "is a dense, dark rye bread with a slightly sweet, earthy flavor",
+   "known": 0.6
+  },
+  {
+   "label": "Char siu",
+   "qid": "Q1204605",
+   "fame": 0.468,
+   "country": "China",
+   "kind": "main",
+   "description": "popular style of Cantonese barbecued pork",
+   "hook": "is strips of pork marinated and roasted until glossy with a sweet, smoky glaze",
+   "known": 0.6
+  },
+  {
+   "label": "Udon",
+   "qid": "Q471861",
+   "fame": 0.468,
+   "country": "Japan",
+   "kind": "main",
+   "description": "type of Japanese noodle",
+   "hook": "is a thick, chewy wheat noodle usually served in a mild savory broth",
+   "known": 0.8
+  },
+  {
+   "label": "Harissa",
+   "qid": "Q966327",
+   "fame": 0.467,
+   "country": "Tunisia",
+   "kind": "sauce",
+   "description": "Tunisian hot chili pepper paste",
+   "hook": "is a fiery paste blended from roasted chili peppers, garlic and spices",
+   "known": 0.4
+  },
+  {
+   "label": "Vindaloo",
+   "qid": "Q1339633",
+   "fame": 0.467,
+   "country": "India",
+   "kind": "main",
+   "description": "Indian dish",
+   "hook": "is a fiery curry made tangy with vinegar and heavy on the chili",
+   "known": 0.8
+  },
+  {
+   "label": "Salade niçoise",
+   "qid": "Q209486",
+   "fame": 0.465,
+   "country": "France",
+   "kind": "main",
+   "description": "composed tomato, egg, fish and vegetable salad",
+   "hook": "is a composed plate of tuna, hard-boiled egg, olives and green beans",
+   "known": 0.6
+  },
+  {
+   "label": "Corn dog",
+   "qid": "Q1133127",
+   "fame": 0.465,
+   "country": "United States",
+   "kind": "street food",
+   "description": "deep-fried, corn-battered hot dog on a stick",
+   "hook": "is a sausage on a stick, dipped in a sweet batter and deep-fried until golden",
+   "known": 0.6
+  },
+  {
+   "label": "Nanaimo bar",
+   "qid": "Q2885517",
+   "fame": 0.465,
+   "country": "Canada",
+   "kind": "dessert",
+   "description": "dessert",
+   "hook": "is a no-bake dessert square layered with a crumb base, custard filling and chocolate on top",
+   "known": 0.4
+  },
+  {
+   "label": "Sashimi",
+   "qid": "Q190715",
+   "fame": 0.464,
+   "country": "Japan",
+   "kind": "main",
+   "description": "Japanese dish",
+   "hook": "is thin slices of raw fish served without rice, often with soy sauce and wasabi",
+   "known": 0.8
+  },
+  {
+   "label": "Tempura",
+   "qid": "Q328709",
+   "fame": 0.463,
+   "country": "Japan",
+   "kind": "main",
+   "description": "Japanese dish of battered deep-fried fish or vegetable, of Portuguese origin",
+   "hook": "is seafood or vegetables coated in a light batter and deep-fried until crisp",
+   "known": 0.8
+  },
+  {
+   "label": "Koshari",
+   "qid": "Q1197104",
+   "fame": 0.461,
+   "country": "Egypt",
+   "kind": "main",
+   "description": "Egyptian dish",
+   "hook": "is a filling mix of rice, lentils and pasta topped with a tangy tomato sauce and crispy onions",
+   "known": 0.6
+  },
+  {
+   "label": "Bouillabaisse",
+   "qid": "Q828043",
+   "fame": 0.46,
+   "country": "France",
+   "kind": "soup",
+   "description": "traditional Provençal fish stew",
+   "hook": "is a hearty stew of mixed fish and shellfish simmered with herbs and saffron",
+   "known": 0.8
+  },
+  {
+   "label": "Madeleine",
+   "qid": "Q604408",
+   "fame": 0.458,
+   "country": "France",
+   "kind": "dessert",
+   "description": "type of cake traditional from France",
+   "hook": "is a small, shell-shaped sponge cake with a distinctive bump on its back",
+   "known": 0.6
+  },
+  {
+   "label": "Hawaiian pizza",
+   "qid": "Q590076",
+   "fame": 0.458,
+   "country": "Canada",
+   "kind": "main",
+   "description": "pizza variety, usually topped with pineapple pieces and ham",
+   "hook": "is a flatbread topped with cured ham and chunks of pineapple",
+   "known": 0.6
+  },
+  {
+   "label": "Chiles en nogada",
+   "qid": "Q1072902",
+   "fame": 0.457,
+   "country": "Mexico",
+   "kind": "main",
+   "description": "stuffed pepper dish with walnut cream sauce",
+   "hook": "is a stuffed pepper draped in a creamy walnut sauce and sprinkled with pomegranate seeds",
+   "known": 0.4
+  },
+  {
+   "label": "Tonkatsu",
+   "qid": "Q1142841",
+   "fame": 0.455,
+   "country": "Japan",
+   "kind": "main",
+   "description": "Japanese dish of deep-fried pork",
+   "hook": "is a thick cutlet of pork breaded and deep-fried until crisp",
+   "known": 0.6
+  },
+  {
+   "label": "Fried rice",
+   "qid": "Q1076874",
+   "fame": 0.452,
+   "country": "China",
+   "kind": "main",
+   "description": "cooked rice stir-fried with eggs and other ingredients",
+   "hook": "is leftover cooked grains tossed and sizzled in a hot wok with egg, vegetables and bits of meat",
+   "known": 0.8
+  },
+  {
+   "label": "Brioche",
+   "qid": "Q917574",
+   "fame": 0.451,
+   "country": "France",
+   "kind": "bread",
+   "description": "bread of French origin that is similar to a highly enriched pastry, and whose high egg and butter content give it a rich and tender crumb",
+   "hook": "is a soft, enriched bread made rich and tender with plenty of egg and butter",
+   "known": 0.8
+  },
+  {
+   "label": "Teriyaki",
+   "qid": "Q647175",
+   "fame": 0.451,
+   "country": "Japan",
+   "kind": "sauce",
+   "description": "Japanese marinade",
+   "hook": "is a glossy glaze of soy sauce, sugar and mirin brushed onto grilled meat or fish",
+   "known": 0.6
+  },
+  {
+   "label": "Sauerbraten",
+   "qid": "Q153352",
+   "fame": 0.45,
+   "country": "Germany",
+   "kind": "main",
+   "description": "German roast meat entree",
+   "hook": "is a pot roast marinated for days before slow braising, giving it a tangy edge",
+   "known": 0.4
+  },
+  {
+   "label": "Caprese salad",
+   "qid": "Q568364",
+   "fame": 0.449,
+   "country": "Italy",
+   "kind": "main",
+   "description": "Italian salad made of sliced fresh mozzarella, tomatoes, and sweet basil",
+   "hook": "is sliced fresh mozzarella layered with tomato and basil, drizzled with olive oil",
+   "known": 0.8
+  },
+  {
+   "label": "Soba",
+   "qid": "Q753910",
+   "fame": 0.449,
+   "country": "Japan",
+   "kind": "main",
+   "description": "thin Japanese noodle made from buckwheat flour",
+   "hook": "is a thin noodle made from buckwheat flour, served hot in broth or cold with dipping sauce",
+   "known": 0.6
+  },
+  {
+   "label": "Brigadeiro",
+   "qid": "Q2914862",
+   "fame": 0.448,
+   "country": "Brazil",
+   "kind": "dessert",
+   "description": "Brazilian chocolate truffle",
+   "hook": "is a rolled chocolate truffle made from condensed milk and cocoa, coated in sprinkles",
+   "known": 0.4
+  },
+  {
+   "label": "Peanut butter and jelly sandwich",
+   "qid": "Q1369093",
+   "fame": 0.447,
+   "country": "United States",
+   "kind": "snack",
+   "description": "sandwich consisting of peanut butter and fruit preserves (usually grape or strawberry jelly) spread on bread",
+   "hook": "is bread spread with a nutty paste on one side and sweet fruit preserves on the other",
+   "known": 0.8
+  },
+  {
+   "label": "French onion soup",
+   "qid": "Q244617",
+   "fame": 0.446,
+   "country": "France",
+   "kind": "soup",
+   "description": "soup based on meat stock and onions",
+   "hook": "is a deep, savory broth of slow-cooked alliums, topped with a toasted crouton and melted cheese",
+   "known": 0.8
+  },
+  {
+   "label": "Eton mess",
+   "qid": "Q3059368",
+   "fame": 0.446,
+   "country": "United Kingdom",
+   "kind": "dessert",
+   "description": "English dessert",
+   "hook": "is a jumbled dessert of broken meringue, whipped cream and crushed berries",
+   "known": 0.6
+  },
+  {
+   "label": "Sukiyaki",
+   "qid": "Q862569",
+   "fame": 0.446,
+   "country": "Japan",
+   "kind": "main",
+   "description": "Japanese hot pot",
+   "hook": "is thin-sliced meat and vegetables simmered together in a sweet soy broth at the table",
+   "known": 0.4
+  },
+  {
+   "label": "Key lime pie",
+   "qid": "Q1518169",
+   "fame": 0.446,
+   "country": "United States",
+   "kind": "dessert",
+   "description": "pie made using Key limes",
+   "hook": "is a tart, creamy custard made from a small yellow citrus fruit in a graham cracker crust",
+   "known": 0.8
+  },
+  {
+   "label": "Bangers and mash",
+   "qid": "Q2882471",
+   "fame": 0.445,
+   "country": "United Kingdom",
+   "kind": "main",
+   "description": "British meal of sausages and mashed potato",
+   "hook": "is a plate of grilled sausages served alongside a mound of creamy potato",
+   "known": 0.8
+  },
+  {
+   "label": "Crumpet",
+   "qid": "Q1142029",
+   "fame": 0.445,
+   "country": "United Kingdom",
+   "kind": "bread",
+   "description": "Small unsweetened griddle bread",
+   "hook": "is a soft, spongy griddle bread riddled with holes that soak up melted butter",
+   "known": 0.6
+  },
+  {
+   "label": "Ciabatta",
+   "qid": "Q246703",
+   "fame": 0.444,
+   "country": "Italy",
+   "kind": "bread",
+   "description": "Italian white bread",
+   "hook": "is a rustic white bread with a crisp crust and an open, airy crumb",
+   "known": 0.6
+  },
+  {
+   "label": "Currywurst",
+   "qid": "Q176063",
+   "fame": 0.444,
+   "country": "Germany",
+   "kind": "street food",
+   "description": "fast food dish of German origin",
+   "hook": "is a sliced sausage doused in ketchup and dusted with a spiced yellow seasoning",
+   "known": 0.4
+  },
+  {
+   "label": "Halo-halo",
+   "qid": "Q1572040",
+   "fame": 0.444,
+   "country": "Philippines",
+   "kind": "dessert",
+   "description": "Filipino dessert",
+   "hook": "is a mound of shaved ice mixed with sweet beans, jellies, fruit and evaporated milk",
+   "known": 0.4
+  },
+  {
+   "label": "Cornbread",
+   "qid": "Q1108866",
+   "fame": 0.442,
+   "country": "United States",
+   "kind": "bread",
+   "description": "American bread made from cornmeal",
+   "hook": "is a slightly sweet, crumbly baked side dish made from ground golden meal",
+   "known": 0.8
+  },
+  {
+   "label": "Wonton",
+   "qid": "Q553905",
+   "fame": 0.44,
+   "country": "China",
+   "kind": "snack",
+   "description": "type of dumpling commonly found in a number of Chinese cuisines",
+   "hook": "is a small dumpling wrapped in a thin sheet of dough and boiled or fried",
+   "known": 0.6
+  },
+  {
+   "label": "Nasi lemak",
+   "qid": "Q1420553",
+   "fame": 0.44,
+   "country": "Malaysia",
+   "kind": "main",
+   "description": "Malaysian rice dish cooked in coconut milk, served with sambal and side dishes.",
+   "hook": "is rice cooked in coconut milk and served with a spicy sambal and fried anchovies",
+   "known": 0.4
+  }
+ ]
+}

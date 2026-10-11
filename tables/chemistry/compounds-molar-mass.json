@@ -1,0 +1,446 @@
+{
+ "id": "table.chemistry.compounds-molar-mass",
+ "kind": "table",
+ "title": "Everyday compounds: molar mass",
+ "genre": "science-math-tech",
+ "category": "chemistry",
+ "topic": "everyday-chemistry",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?mass WHERE { VALUES ?item { wd:Q283 wd:Q1997 wd:Q4087 wd:Q37129 wd:Q153 wd:Q37525 wd:Q60235 wd:Q36933 wd:Q171877 wd:Q4118 wd:Q905750 wd:Q2025 wd:Q172275 wd:Q2270 wd:Q133145 wd:Q83320 wd:Q116269 wd:Q170591 wd:Q5282 wd:Q151313 wd:Q48318 wd:Q159683 wd:Q161210 wd:Q14982 wd:Q132501 wd:Q127900 wd:Q2409 wd:Q184782 wd:Q208451 wd:Q18216 wd:Q33495 wd:Q407520 wd:Q199678 wd:Q2314 wd:Q179731 wd:Q47512 wd:Q407204 wd:Q23767 wd:Q4027534 wd:Q194207 wd:Q102769 wd:Q49546 wd:Q179724 wd:Q190227 wd:Q182849 wd:Q177836 wd:Q288266 wd:Q134192 wd:Q131189 wd:Q186969 wd:Q162867 wd:Q960800 wd:Q146578 wd:Q193841 wd:Q423741 wd:Q427161 wd:Q898762 wd:Q185120 wd:Q172587 wd:Q4287 wd:Q844123 wd:Q181331 wd:Q12190 wd:Q143874 wd:Q259589 wd:Q902739 wd:Q188631 wd:Q182040 wd:Q5 } ?item wdt:P2067 ?mass . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T01:44:36.596Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T01:44:36.596Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "molar_mass",
+   "label": "Molar mass",
+   "unit": "g/mol",
+   "type": "number"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "compound",
+  "many": "compounds",
+  "lowerInProse": true,
+  "columns": {
+   "molar_mass": {
+    "role": "measure",
+    "compare": "Which has the greater molar mass",
+    "display": " g/mol"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "water",
+   "qid": "Q283",
+   "fame": 0.643,
+   "molar_mass": 18,
+   "description": "chemical compound whose molecules are formed by two hydrogen atoms and one oxygen atom",
+   "hook": "covers most of Earth's surface and is essential to all known life",
+   "known": 0.95,
+   "kind": "everyday chemical"
+  },
+  {
+   "label": "ethanol",
+   "qid": "Q153",
+   "fame": 0.604,
+   "molar_mass": 46.1,
+   "description": "chemical compound",
+   "hook": "is the alcohol found in beer, wine and spirits",
+   "known": 0.8,
+   "kind": "food compound"
+  },
+  {
+   "label": "caffeine",
+   "qid": "Q60235",
+   "fame": 0.603,
+   "molar_mass": 194.2,
+   "description": "chemical compound used as a stimulant",
+   "hook": "gives coffee and tea their wake-up kick",
+   "known": 0.95,
+   "kind": "food compound"
+  },
+  {
+   "label": "ibuprofen",
+   "qid": "Q186969",
+   "fame": 0.593,
+   "molar_mass": 206.3,
+   "description": "chemical compound",
+   "hook": "is a common over-the-counter painkiller sold as Advil and Motrin",
+   "known": 0.8,
+   "kind": "medicine"
+  },
+  {
+   "label": "sodium bicarbonate",
+   "qid": "Q179731",
+   "fame": 0.584,
+   "molar_mass": 84,
+   "description": "chemical compound",
+   "hook": "is baking soda, used in cakes and to calm heartburn",
+   "known": 0.8,
+   "kind": "household chemical"
+  },
+  {
+   "label": "hydrogen peroxide",
+   "qid": "Q171877",
+   "fame": 0.582,
+   "molar_mass": 34,
+   "description": "chemical compound",
+   "hook": "is a pale liquid used to bleach hair and clean small cuts",
+   "known": 0.8,
+   "kind": "household chemical"
+  },
+  {
+   "label": "aspirin",
+   "qid": "Q18216",
+   "fame": 0.577,
+   "molar_mass": 180.2,
+   "description": "medication used to treat pain and decrease the risk of heart disease",
+   "hook": "is a pain reliever often taken in low doses to protect the heart",
+   "known": 0.8,
+   "kind": "medicine"
+  },
+  {
+   "label": "nitrous oxide",
+   "qid": "Q905750",
+   "fame": 0.576,
+   "molar_mass": 44,
+   "description": "chemical compound",
+   "hook": "is known as laughing gas at the dentist",
+   "known": 0.6,
+   "kind": "gas"
+  },
+  {
+   "label": "ammonia",
+   "qid": "Q4087",
+   "fame": 0.573,
+   "molar_mass": 17,
+   "description": "chemical compound",
+   "hook": "is a sharp-smelling gas found in many household glass cleaners",
+   "known": 0.8,
+   "kind": "household chemical"
+  },
+  {
+   "label": "potassium nitrate",
+   "qid": "Q177836",
+   "fame": 0.562,
+   "molar_mass": 101.1,
+   "description": "chemical compound",
+   "hook": "is known as saltpeter and is used in fertilizer and fireworks",
+   "known": 0.4,
+   "kind": "mineral"
+  },
+  {
+   "label": "hydrochloric acid",
+   "qid": "Q2409",
+   "fame": 0.557,
+   "molar_mass": 36.5,
+   "description": "highly corrosive, strong mineral acid in aqueous solution",
+   "hook": "makes up the digestive juice in your stomach",
+   "known": 0.4,
+   "kind": "acid"
+  },
+  {
+   "label": "sulfuric acid",
+   "qid": "Q4118",
+   "fame": 0.556,
+   "molar_mass": 98.1,
+   "description": "chemical compound",
+   "hook": "is the corrosive liquid in traditional car batteries",
+   "known": 0.6,
+   "kind": "acid"
+  },
+  {
+   "label": "sodium hydroxide",
+   "qid": "Q102769",
+   "fame": 0.555,
+   "molar_mass": 40,
+   "description": "chemical compound",
+   "hook": "is known as lye and is used to make soap and unclog drains",
+   "known": 0.2,
+   "kind": "base"
+  },
+  {
+   "label": "acetic acid",
+   "qid": "Q47512",
+   "fame": 0.554,
+   "molar_mass": 60.1,
+   "description": "chemical compound",
+   "hook": "gives vinegar its sour taste and sharp smell",
+   "known": 0.6,
+   "kind": "acid"
+  },
+  {
+   "label": "benzene",
+   "qid": "Q2270",
+   "fame": 0.544,
+   "molar_mass": 78.1,
+   "description": "hydrocarbon compound consisting of a 6-sided ring",
+   "hook": "is a sweet-smelling, ring-shaped liquid found in petrol",
+   "known": 0.4,
+   "kind": "organic compound"
+  },
+  {
+   "label": "formaldehyde",
+   "qid": "Q161210",
+   "fame": 0.543,
+   "molar_mass": 30,
+   "description": "chemical compound",
+   "hook": "is a pungent preservative once used for pickling lab specimens",
+   "known": 0.4,
+   "kind": "organic compound"
+  },
+  {
+   "label": "sodium chloride",
+   "qid": "Q2314",
+   "fame": 0.542,
+   "molar_mass": 58.4,
+   "description": "chemical compound",
+   "hook": "is ordinary table salt",
+   "known": 0.95,
+   "kind": "everyday chemical"
+  },
+  {
+   "label": "methanol",
+   "qid": "Q14982",
+   "fame": 0.539,
+   "molar_mass": 32,
+   "description": "chemical compound",
+   "hook": "is the toxic wood alcohol that is dangerous to drink",
+   "known": 0.4,
+   "kind": "organic compound"
+  },
+  {
+   "label": "chloroform",
+   "qid": "Q172275",
+   "fame": 0.538,
+   "molar_mass": 119.4,
+   "description": "chemical compound",
+   "hook": "is a sweet-smelling liquid once used as an anesthetic and in old mystery stories",
+   "known": 0.4,
+   "kind": "organic compound"
+  },
+  {
+   "label": "nitroglycerin",
+   "qid": "Q162867",
+   "fame": 0.536,
+   "molar_mass": 227.1,
+   "description": "chemical compound",
+   "hook": "is a heart medicine that is also the shock-sensitive liquid behind dynamite",
+   "known": 0.4,
+   "kind": "medicine"
+  },
+  {
+   "label": "glycerol",
+   "qid": "Q132501",
+   "fame": 0.531,
+   "molar_mass": 92.1,
+   "description": "chemical compound",
+   "hook": "is a thick, sweet syrupy liquid found in soap, lotions and fats",
+   "known": 0.4,
+   "kind": "organic compound"
+  },
+  {
+   "label": "aspartame",
+   "qid": "Q182040",
+   "fame": 0.527,
+   "molar_mass": 294.3,
+   "description": "chemical compound",
+   "hook": "is a low-calorie sweetener in many diet sodas",
+   "known": 0.6,
+   "kind": "food compound"
+  },
+  {
+   "label": "citric acid",
+   "qid": "Q159683",
+   "fame": 0.526,
+   "molar_mass": 192.1,
+   "description": "weak organic acid",
+   "hook": "gives lemons and limes their sour bite",
+   "known": 0.6,
+   "kind": "acid"
+  },
+  {
+   "label": "methane",
+   "qid": "Q37129",
+   "fame": 0.526,
+   "molar_mass": 16,
+   "description": "simplest organic molecule with one carbon atom and four hydrogen",
+   "hook": "is the main component of natural gas and a potent greenhouse gas",
+   "known": 0.6,
+   "kind": "gas"
+  },
+  {
+   "label": "sodium carbonate",
+   "qid": "Q190227",
+   "fame": 0.526,
+   "molar_mass": 106,
+   "description": "chemical compound",
+   "hook": "is known as washing soda, used in laundry and glassmaking",
+   "known": 0.4,
+   "kind": "mineral"
+  },
+  {
+   "label": "sucrose",
+   "qid": "Q4027534",
+   "fame": 0.524,
+   "molar_mass": 342.3,
+   "description": "disaccharide made of glucose and fructose",
+   "hook": "is ordinary table sugar",
+   "known": 0.95,
+   "kind": "food compound"
+  },
+  {
+   "label": "vitamin C",
+   "qid": "Q199678",
+   "fame": 0.523,
+   "molar_mass": 176.1,
+   "description": "water-soluble vitamin and antioxidant essential for collagen synthesis, immune function, and skin brightening",
+   "hook": "is the nutrient in oranges that helps prevent scurvy",
+   "known": 0.95,
+   "kind": "food compound"
+  },
+  {
+   "label": "calcium carbonate",
+   "qid": "Q23767",
+   "fame": 0.522,
+   "molar_mass": 100.1,
+   "description": "chemical compound",
+   "hook": "is the main material of chalk, limestone and seashells",
+   "known": 0.6,
+   "kind": "mineral"
+  },
+  {
+   "label": "carbon monoxide",
+   "qid": "Q2025",
+   "fame": 0.521,
+   "molar_mass": 28,
+   "description": "chemical compound",
+   "hook": "is an odorless, deadly gas from faulty heaters that home alarms detect",
+   "known": 0.6,
+   "kind": "gas"
+  },
+  {
+   "label": "silicon dioxide",
+   "qid": "Q116269",
+   "fame": 0.519,
+   "molar_mass": 60.1,
+   "description": "chemical compound",
+   "hook": "is the main ingredient of quartz and ordinary beach sand",
+   "known": 0.4,
+   "kind": "mineral"
+  },
+  {
+   "label": "sodium hypochlorite",
+   "qid": "Q407204",
+   "fame": 0.513,
+   "molar_mass": 74.4,
+   "description": "chemical compound",
+   "hook": "is the active ingredient in household bleach",
+   "known": 0.6,
+   "kind": "household chemical"
+  },
+  {
+   "label": "ozone",
+   "qid": "Q36933",
+   "fame": 0.505,
+   "molar_mass": 48,
+   "description": "chemical compound",
+   "hook": "forms a layer high in the sky that shields us from ultraviolet light",
+   "known": 0.6,
+   "kind": "gas"
+  },
+  {
+   "label": "nitric acid",
+   "qid": "Q83320",
+   "fame": 0.502,
+   "molar_mass": 63,
+   "description": "strong, oxidising mineral acid",
+   "hook": "is a strong corrosive liquid used to make fertilizer and rocket fuel",
+   "known": 0.2,
+   "kind": "acid"
+  },
+  {
+   "label": "ethylene glycol",
+   "qid": "Q194207",
+   "fame": 0.492,
+   "molar_mass": 62.1,
+   "description": "organic compound used in the making of polyester fibers and in antifreeze formulations",
+   "hook": "is the sweet-tasting but poisonous main ingredient of antifreeze",
+   "known": 0.4,
+   "kind": "organic compound"
+  },
+  {
+   "label": "magnesium sulfate",
+   "qid": "Q288266",
+   "fame": 0.483,
+   "molar_mass": 120.4,
+   "description": "chemical compound",
+   "hook": "is sold as Epsom salts for a soothing bath soak",
+   "known": 0.6,
+   "kind": "mineral"
+  },
+  {
+   "label": "sulfur dioxide",
+   "qid": "Q5282",
+   "fame": 0.478,
+   "molar_mass": 64.1,
+   "description": "chemical compound",
+   "hook": "is a sharp gas from volcanoes and burning coal that helps cause acid rain",
+   "known": 0.4,
+   "kind": "gas"
+  },
+  {
+   "label": "propane",
+   "qid": "Q131189",
+   "fame": 0.475,
+   "molar_mass": 44.1,
+   "description": "chemical compound, commonly used as a fuel",
+   "hook": "fuels backyard barbecue grills and camping stoves",
+   "known": 0.6,
+   "kind": "gas"
+  },
+  {
+   "label": "calcium chloride",
+   "qid": "Q208451",
+   "fame": 0.465,
+   "molar_mass": 111,
+   "description": "chemical compound",
+   "hook": "is spread on icy roads to melt ice",
+   "known": 0.2,
+   "kind": "mineral"
+  },
+  {
+   "label": "naphthalene",
+   "qid": "Q179724",
+   "fame": 0.458,
+   "molar_mass": 128.2,
+   "description": "chemical compound",
+   "hook": "is the smelly stuff in old-fashioned mothballs",
+   "known": 0.4,
+   "kind": "organic compound"
+  }
+ ]
+}

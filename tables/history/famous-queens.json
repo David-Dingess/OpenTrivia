@@ -1,0 +1,321 @@
+{
+ "id": "table.history.famous-queens",
+ "kind": "table",
+ "title": "Famous queens and their realm",
+ "genre": "society",
+ "category": "history",
+ "topic": "rulers",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?realm WHERE { VALUES (?item ?realm) { (wd:Q9682 \"United Kingdom\") (wd:Q9439 \"United Kingdom\") (wd:Q82674 \"England\") (wd:Q131412 \"Scotland\") (wd:Q635 \"Egypt\") (wd:Q40930 \"Egypt\") (wd:Q129234 \"Egypt\") (wd:Q47365 \"France\") (wd:Q131552 \"France\") (wd:Q171480 \"France\") (wd:Q107288 \"Hawaii\") (wd:Q467650 \"Angola\") (wd:Q169794 \"Madagascar\") (wd:Q164518 \"Thailand\") (wd:Q152239 \"United Kingdom\") (wd:Q10633 \"United Kingdom\") (wd:Q76927 \"United Kingdom\") (wd:Q152260 \"United Kingdom\") (wd:Q161159 \"United Kingdom\") (wd:Q167433 \"United Kingdom\") (wd:Q57126 \"England\") (wd:Q182637 \"England\") (wd:Q192943 \"England\") (wd:Q188926 \"England\") (wd:Q80823 \"England\") (wd:Q162819 \"England\") (wd:Q162356 \"England\") (wd:Q9738 \"China\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T01:11:14.682Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T01:11:14.682Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "realm",
+   "label": "Realm",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "queen",
+  "many": "queens",
+  "wildcard": "person",
+  "itemSub": "{hook}",
+  "hookAsk": "Which queen {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "realm": {
+    "role": "link",
+    "pick": "Which realm was {label} queen of?",
+    "statement": "{label} was queen of {value}.",
+    "match": "Match each queen to her realm.",
+    "reverse": "Which of these women was queen of {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Elizabeth II",
+   "qid": "Q9682",
+   "fame": 0.832,
+   "realm": "United Kingdom",
+   "description": "Queen of the United Kingdom from 1952 to 2022 (1926–2022)",
+   "hook": "reigned longer than any other British monarch, for over seventy years",
+   "known": 0.95,
+   "kind": "british"
+  },
+  {
+   "label": "Victoria",
+   "qid": "Q9439",
+   "fame": 0.805,
+   "realm": "United Kingdom",
+   "description": "Queen of the United Kingdom from 1837 to 1901 (1819-1901)",
+   "hook": "gave her name to an era of industry and empire and ruled for over sixty years",
+   "known": 0.8,
+   "kind": "british"
+  },
+  {
+   "label": "Cleopatra",
+   "qid": "Q635",
+   "fame": 0.792,
+   "realm": "Egypt",
+   "description": "Queen of Ptolemaic Kingdom of Egypt from 51 to 30 BCE",
+   "hook": "was the last active ruler of her dynasty and allied with two famous Roman leaders",
+   "known": 0.95,
+   "kind": "egyptian"
+  },
+  {
+   "label": "Anne Boleyn",
+   "qid": "Q80823",
+   "fame": 0.746,
+   "realm": "England",
+   "description": "second wife of Henry VIII of England (died 1536)",
+   "hook": "was beheaded after the king broke with Rome to marry her",
+   "known": 0.8,
+   "kind": "english"
+  },
+  {
+   "label": "Marie Antoinette",
+   "qid": "Q47365",
+   "fame": 0.743,
+   "realm": "France",
+   "description": "last Queen of France prior to the French Revolution (1755–1793)",
+   "hook": "is the French royal falsely said to have told hungry crowds to eat cake",
+   "known": 0.8,
+   "kind": "french"
+  },
+  {
+   "label": "Mary I",
+   "qid": "Q82674",
+   "fame": 0.735,
+   "realm": "England",
+   "description": "Queen of England and Ireland from 1553 to 1558 (1516-1558)",
+   "hook": "earned the grim nickname \"Bloody\" for burning religious dissenters at the stake",
+   "known": 0.6,
+   "kind": "english"
+  },
+  {
+   "label": "Mary, Queen of Scots",
+   "qid": "Q131412",
+   "fame": 0.726,
+   "realm": "Scotland",
+   "description": "Queen of Scotland from 1542 to 1567 (1542–1587)",
+   "hook": "was held captive by her cousin for years before being beheaded",
+   "known": 0.6,
+   "kind": "scottish"
+  },
+  {
+   "label": "Catherine of Aragon",
+   "qid": "Q162819",
+   "fame": 0.697,
+   "realm": "England",
+   "description": "first wife of Henry VIII of England (1485–1536)",
+   "hook": "refused to accept the annulment of her marriage, which led the king to break with Rome",
+   "known": 0.4,
+   "kind": "english"
+  },
+  {
+   "label": "Lady Jane Grey",
+   "qid": "Q162356",
+   "fame": 0.687,
+   "realm": "England",
+   "description": "Queen of England and Ireland in July 1553",
+   "hook": "held the crown for just nine days before being deposed and beheaded",
+   "known": 0.4,
+   "kind": "english"
+  },
+  {
+   "label": "Queen Camilla",
+   "qid": "Q152239",
+   "fame": 0.684,
+   "realm": "United Kingdom",
+   "description": "Queen consort of the United Kingdom since 2022",
+   "hook": "married the heir to the throne after a long, highly publicised relationship",
+   "known": 0.6,
+   "kind": "british"
+  },
+  {
+   "label": "Mary of Teck",
+   "qid": "Q76927",
+   "fame": 0.677,
+   "realm": "United Kingdom",
+   "description": "Queen consort of the United Kingdom from 1910 to 1936",
+   "hook": null,
+   "known": 0.2,
+   "kind": "british"
+  },
+  {
+   "label": "Catherine Howard",
+   "qid": "Q188926",
+   "fame": 0.675,
+   "realm": "England",
+   "description": "fifth wife of Henry VIII of England",
+   "hook": "was a teenage bride of the king who was beheaded over her past entanglements",
+   "known": 0.4,
+   "kind": "english"
+  },
+  {
+   "label": "Jane Seymour",
+   "qid": "Q182637",
+   "fame": 0.666,
+   "realm": "England",
+   "description": "third wife of Henry VIII of England",
+   "hook": "gave the king his long-awaited male heir but died soon after the birth",
+   "known": 0.4,
+   "kind": "english"
+  },
+  {
+   "label": "Queen Elizabeth the Queen Mother",
+   "qid": "Q10633",
+   "fame": 0.663,
+   "realm": "United Kingdom",
+   "description": "Queen consort of the United Kingdom from 1936 to 1952 (1900–2002)",
+   "hook": "was a beloved, long-lived royal famed for boosting morale during the Blitz",
+   "known": 0.6,
+   "kind": "british"
+  },
+  {
+   "label": "Catherine Parr",
+   "qid": "Q192943",
+   "fame": 0.66,
+   "realm": "England",
+   "description": "sixth wife of Henry VIII of England; final queen consort of the House of Tudor",
+   "hook": null,
+   "known": 0.2,
+   "kind": "english"
+  },
+  {
+   "label": "Anne of Cleves",
+   "qid": "Q57126",
+   "fame": 0.656,
+   "realm": "England",
+   "description": "Queen consort of England (1515–1557)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "english"
+  },
+  {
+   "label": "Charlotte of Mecklenburg-Strelitz",
+   "qid": "Q161159",
+   "fame": 0.638,
+   "realm": "United Kingdom",
+   "description": "Queen consort of Great Britain and Ireland from 1761 to 1818",
+   "hook": "was the long-serving consort of the king who lost the American colonies",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Alexandra of Denmark",
+   "qid": "Q152260",
+   "fame": 0.627,
+   "realm": "United Kingdom",
+   "description": "Queen consort of the United Kingdom from 1901 to 1910",
+   "hook": null,
+   "known": 0.2,
+   "kind": "british"
+  },
+  {
+   "label": "Joséphine de Beauharnais",
+   "qid": "Q171480",
+   "fame": 0.616,
+   "realm": "France",
+   "description": "Empress consort of the French from 1804 to 1814 (1763-1814)",
+   "hook": "was the first wife of a famous French emperor, who annulled the marriage",
+   "known": 0.6,
+   "kind": "french"
+  },
+  {
+   "label": "Catherine de' Medici",
+   "qid": "Q131552",
+   "fame": 0.601,
+   "realm": "France",
+   "description": "queen-consort and regent of France (1519–1589)",
+   "hook": "was a Florentine-born royal who mothered three kings and wielded great influence",
+   "known": 0.4,
+   "kind": "french"
+  },
+  {
+   "label": "Nefertiti",
+   "qid": "Q40930",
+   "fame": 0.595,
+   "realm": "Egypt",
+   "description": "Egyptian queen and Great Royal Wife (chief consort) of Akhenaten, an Egyptian Pharaoh",
+   "hook": "is remembered through a famous painted bust and a sun-worshipping revolution",
+   "known": 0.8,
+   "kind": "egyptian"
+  },
+  {
+   "label": "Wu Zetian",
+   "qid": "Q9738",
+   "fame": 0.57,
+   "realm": "China",
+   "description": "founding empress of Zhou dynasty (r. 690–705); de facto ruler of Tang dynasty from 665 to 690",
+   "hook": null,
+   "known": 0.2,
+   "kind": "chinese"
+  },
+  {
+   "label": "Hatshepsut",
+   "qid": "Q129234",
+   "fame": 0.564,
+   "realm": "Egypt",
+   "description": "5th Pharaoh of the Eighteenth Dynasty of Egypt (c. 1479 BC - 1458 BC)",
+   "hook": "ruled as a female pharaoh, often shown wearing a ceremonial false beard",
+   "known": 0.4,
+   "kind": "egyptian"
+  },
+  {
+   "label": "Liliʻuokalani",
+   "qid": "Q107288",
+   "fame": 0.539,
+   "realm": "Hawaii",
+   "description": "monarch of the Hawaiian Kingdom (1838–1917)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "hawaiian"
+  },
+  {
+   "label": "Ranavalona I",
+   "qid": "Q169794",
+   "fame": 0.515,
+   "realm": "Madagascar",
+   "description": "queen of Imerina (1828-1861)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "madagascan"
+  },
+  {
+   "label": "Caroline of Brunswick",
+   "qid": "Q167433",
+   "fame": 0.506,
+   "realm": "United Kingdom",
+   "description": "Queen consort of the United Kingdom and Hanover from 1820 to 1821",
+   "hook": null,
+   "known": 0.2,
+   "kind": "british"
+  }
+ ]
+}

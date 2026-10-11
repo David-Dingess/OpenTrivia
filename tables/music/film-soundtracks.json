@@ -1,0 +1,2067 @@
+{
+ "id": "table.music.film-soundtracks",
+ "kind": "table",
+ "title": "Famous movie soundtracks and their composer",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "composers",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?cmLabel ?kindTag WHERE { { SELECT ?item (SAMPLE(?w) AS ?cm) (COUNT(DISTINCT ?w) AS ?nW) WHERE { ?item wdt:P31 wd:Q11424 ; wdt:P86 ?w ; wikibase:sitelinks ?sl . FILTER(?sl >= 50) FILTER(?w NOT IN (wd:Q51552, wd:Q25089, wd:Q42229)) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nW = 1) BIND(\"film\" AS ?kindTag) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T07:16:26.029Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T07:16:26.029Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "composer",
+   "label": "Composer",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "kind",
+   "label": "Type",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "film",
+  "many": "films",
+  "hookAsk": "Which film {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "composer": {
+    "role": "link",
+    "pick": "Who composed the score for the film {label}?",
+    "statement": "The score for {label} was composed by {value}.",
+    "match": "Match each film to the composer of its score.",
+    "odd": "Three of these films have scores by {value}. Which one doesn't?",
+    "all": "Tap all {n} films scored by {value}.",
+    "reverse": "Which of these films has a score by {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The Odyssey",
+   "qid": "Q131547207",
+   "fame": 0.94,
+   "composer": "Ludwig Göransson",
+   "kind": "film",
+   "description": "2026 film directed by Christopher Nolan",
+   "hook": "retells an ancient Greek epic about a king's perilous voyage back from war",
+   "known": 0.4
+  },
+  {
+   "label": "Avengers: Endgame",
+   "qid": "Q23781155",
+   "fame": 0.867,
+   "composer": "Alan Silvestri",
+   "kind": "film",
+   "description": "2019 Marvel Studios film",
+   "hook": "has surviving heroes use time travel to undo a universe-wide vanishing",
+   "known": 0.95
+  },
+  {
+   "label": "Interstellar",
+   "qid": "Q13417189",
+   "fame": 0.744,
+   "composer": "Hans Zimmer",
+   "kind": "film",
+   "description": "2014 film by Christopher Nolan",
+   "hook": "sends astronauts through a wormhole in search of a new homeworld for humanity",
+   "known": 0.9
+  },
+  {
+   "label": "Oppenheimer",
+   "qid": "Q108839994",
+   "fame": 0.743,
+   "composer": "Ludwig Göransson",
+   "kind": "film",
+   "description": "2023 film directed by Christopher Nolan",
+   "hook": "tells the story of the physicist who led the creation of the atomic bomb",
+   "known": 0.85
+  },
+  {
+   "label": "The Godfather",
+   "qid": "Q47703",
+   "fame": 0.736,
+   "composer": "Nino Rota",
+   "kind": "film",
+   "description": "1972 American epic gangster drama film directed by Francis Ford Coppola",
+   "hook": "follows a powerful Italian-American crime dynasty and its reluctant young heir",
+   "known": 0.95
+  },
+  {
+   "label": "Spider-Man: No Way Home",
+   "qid": "Q68934496",
+   "fame": 0.729,
+   "composer": "Michael Giacchino",
+   "kind": "film",
+   "description": "2021 film directed by Jon Watts",
+   "hook": "brings generations of web-slinging heroes together across the multiverse",
+   "known": 0.9
+  },
+  {
+   "label": "The Sixth Sense",
+   "qid": "Q183063",
+   "fame": 0.727,
+   "composer": "James Newton Howard",
+   "kind": "film",
+   "description": "1999 film directed by M. Night Shyamalan",
+   "hook": "stars a frightened boy who tells a child psychologist he sees dead people",
+   "known": 0.8
+  },
+  {
+   "label": "The Shawshank Redemption",
+   "qid": "Q172241",
+   "fame": 0.719,
+   "composer": "Thomas Newman",
+   "kind": "film",
+   "description": "1994 film directed by Frank Darabont",
+   "hook": "follows a banker wrongly convicted of murder who befriends a fellow inmate over decades",
+   "known": 0.85
+  },
+  {
+   "label": "No Country for Old Men",
+   "qid": "Q183081",
+   "fame": 0.716,
+   "composer": "Carter Burwell",
+   "kind": "film",
+   "description": "2007 film directed by Ethan and Joel Coen",
+   "hook": "follows a Texas hunter who finds drug money and is pursued by a relentless hitman",
+   "known": 0.7
+  },
+  {
+   "label": "The Batman",
+   "qid": "Q61117344",
+   "fame": 0.713,
+   "composer": "Michael Giacchino",
+   "kind": "film",
+   "description": "2022 superhero film by Matt Reeves",
+   "hook": "shows a young masked vigilante hunting a riddle-loving villain in a gloomy city",
+   "known": 0.85
+  },
+  {
+   "label": "The Shining",
+   "qid": "Q186341",
+   "fame": 0.712,
+   "composer": "Wendy Carlos",
+   "kind": "film",
+   "description": "1980 film directed by Stanley Kubrick",
+   "hook": "traps a writer and his family in an isolated snowbound hotel as he loses his mind",
+   "known": 0.8
+  },
+  {
+   "label": "Titanic",
+   "qid": "Q44578",
+   "fame": 0.708,
+   "composer": "James Horner",
+   "kind": "film",
+   "description": "1997 film directed by James Cameron",
+   "hook": "tells a doomed love story between a poor artist and a rich girl on an ill-fated ocean liner",
+   "known": 0.95
+  },
+  {
+   "label": "The Silence of the Lambs",
+   "qid": "Q133654",
+   "fame": 0.707,
+   "composer": "Howard Shore",
+   "kind": "film",
+   "description": "1991 film directed by Jonathan Demme",
+   "hook": "pairs an FBI trainee with a brilliant imprisoned psychiatrist to catch another killer",
+   "known": 0.8
+  },
+  {
+   "label": "The Terminator",
+   "qid": "Q162255",
+   "fame": 0.707,
+   "composer": "Brad Fiedel",
+   "kind": "film",
+   "description": "1984 film by James Cameron",
+   "hook": "sends a relentless cyborg assassin back in time to hunt a future rebel leader's mother",
+   "known": 0.85
+  },
+  {
+   "label": "The Matrix",
+   "qid": "Q83495",
+   "fame": 0.704,
+   "composer": "Don Davis",
+   "kind": "film",
+   "description": "1999 American science fiction action thriller film",
+   "hook": "reveals to a hacker that his reality is a computer simulation, with a red pill or blue pill",
+   "known": 0.95
+  },
+  {
+   "label": "A Clockwork Orange",
+   "qid": "Q181086",
+   "fame": 0.703,
+   "composer": "Wendy Carlos",
+   "kind": "film",
+   "description": "1971 film directed by Stanley Kubrick",
+   "hook": "is a stylized dystopian satire about a teen gang leader subjected to aversion therapy",
+   "known": 0.75
+  },
+  {
+   "label": "Inglourious Basterds",
+   "qid": "Q153723",
+   "fame": 0.702,
+   "composer": "Mary Ramos",
+   "kind": "film",
+   "description": "2009 film directed by Quentin Tarantino",
+   "hook": "imagines a band of Jewish-American soldiers hunting Nazis in occupied France",
+   "known": 0.8
+  },
+  {
+   "label": "The Prestige",
+   "qid": "Q46551",
+   "fame": 0.701,
+   "composer": "David Julyan",
+   "kind": "film",
+   "description": "2006 film directed by Christopher Nolan",
+   "hook": "pits two rival stage magicians against each other in an obsessive Victorian rivalry",
+   "known": 0.75
+  },
+  {
+   "label": "The Dark Knight Rises",
+   "qid": "Q189330",
+   "fame": 0.7,
+   "composer": "Hans Zimmer",
+   "kind": "film",
+   "description": "2012 superhero film by Christopher Nolan",
+   "hook": "brings a retired caped crusader back to face a brutal masked mercenary besieging his city",
+   "known": 0.9
+  },
+  {
+   "label": "The Departed",
+   "qid": "Q172975",
+   "fame": 0.699,
+   "composer": "Howard Shore",
+   "kind": "film",
+   "description": "2006 film directed by Martin Scorsese",
+   "hook": "pits an undercover cop against a mole in the police within the Boston mob",
+   "known": 0.85
+  },
+  {
+   "label": "Kingdom of Heaven",
+   "qid": "Q207698",
+   "fame": 0.697,
+   "composer": "Harry Gregson-Williams",
+   "kind": "film",
+   "description": "2005 film directed by Ridley Scott",
+   "hook": "dramatizes a blacksmith turned crusader knight defending Jerusalem",
+   "known": 0.7
+  },
+  {
+   "label": "10 Things I Hate About You",
+   "qid": "Q169082",
+   "fame": 0.695,
+   "composer": "Richard Gibbs",
+   "kind": "film",
+   "description": "1999 film directed by Gil Junger",
+   "hook": "updates Shakespeare's Taming of the Shrew into a high school romantic comedy",
+   "known": 0.7
+  },
+  {
+   "label": "Troy",
+   "qid": "Q186587",
+   "fame": 0.695,
+   "composer": "James Horner",
+   "kind": "film",
+   "description": "2004 film by Wolfgang Petersen",
+   "hook": "retells the legendary Greek siege of a walled city sparked by a prince's elopement with a queen",
+   "known": 0.8
+  },
+  {
+   "label": "Avengers: Infinity War",
+   "qid": "Q23780914",
+   "fame": 0.694,
+   "composer": "Alan Silvestri",
+   "kind": "film",
+   "description": "2018 Marvel Studios film",
+   "hook": "pits Earth's heroes against a purple warlord collecting powerful stones",
+   "known": 0.95
+  },
+  {
+   "label": "Scarface",
+   "qid": "Q47075",
+   "fame": 0.693,
+   "composer": "Giorgio Moroder",
+   "kind": "film",
+   "description": "1983 film directed by Brian De Palma",
+   "hook": "follows a Cuban immigrant's rise and fall as a Miami drug lord",
+   "known": 0.8
+  },
+  {
+   "label": "Cars",
+   "qid": "Q182153",
+   "fame": 0.692,
+   "composer": "Randy Newman",
+   "kind": "film",
+   "description": "2006 American animated film directed by John Lasseter",
+   "hook": "follows a hotshot race car stranded in a sleepy desert town on Route 66",
+   "known": 0.85
+  },
+  {
+   "label": "Spider-Man: Homecoming",
+   "qid": "Q23010088",
+   "fame": 0.69,
+   "composer": "Michael Giacchino",
+   "kind": "film",
+   "description": "2017 film directed by Jon Watts",
+   "hook": "shows a teenage web-slinger mentored by an armored billionaire while facing a winged scavenger villain",
+   "known": 0.85
+  },
+  {
+   "label": "Alien",
+   "qid": "Q103569",
+   "fame": 0.689,
+   "composer": "Jerry Goldsmith",
+   "kind": "film",
+   "description": "1979 film by Ridley Scott",
+   "hook": "traps a spaceship crew with a deadly extraterrestrial predator stalking them",
+   "known": 0.9
+  },
+  {
+   "label": "Blade Runner",
+   "qid": "Q184843",
+   "fame": 0.688,
+   "composer": "Vangelis",
+   "kind": "film",
+   "description": "1982 film directed by Ridley Scott",
+   "hook": "follows a detective hunting rogue androids in a rainy neon-lit future Los Angeles",
+   "known": 0.9
+  },
+  {
+   "label": "Fargo",
+   "qid": "Q222720",
+   "fame": 0.687,
+   "composer": "Carter Burwell",
+   "kind": "film",
+   "description": "1996 film directed by Ethan and Joel Coen",
+   "hook": "follows a pregnant small-town police chief investigating a botched kidnapping in snowy Minnesota",
+   "known": 0.85
+  },
+  {
+   "label": "Full Metal Jacket",
+   "qid": "Q243439",
+   "fame": 0.686,
+   "composer": "Vivian Kubrick",
+   "kind": "film",
+   "description": "1987 film by Stanley Kubrick",
+   "hook": "follows Marine recruits from brutal boot camp into the Vietnam War",
+   "known": 0.8
+  },
+  {
+   "label": "Terminator 2: Judgment Day",
+   "qid": "Q170564",
+   "fame": 0.686,
+   "composer": "Brad Fiedel",
+   "kind": "film",
+   "description": "1991 film directed by James Cameron",
+   "hook": "has a reprogrammed cyborg protect a boy from a shape-shifting liquid-metal assassin",
+   "known": 0.9
+  },
+  {
+   "label": "The Avengers",
+   "qid": "Q182218",
+   "fame": 0.686,
+   "composer": "Alan Silvestri",
+   "kind": "film",
+   "description": "2012 film directed by Joss Whedon",
+   "hook": "assembles Earth's mightiest heroes to stop a trickster god's alien invasion of New York",
+   "known": 0.95
+  },
+  {
+   "label": "Inception",
+   "qid": "Q25188",
+   "fame": 0.685,
+   "composer": "Hans Zimmer",
+   "kind": "film",
+   "description": "2010 film directed by Christopher Nolan",
+   "hook": "sends thieves into dreams within dreams in order to plant an idea in a target's mind",
+   "known": 0.95
+  },
+  {
+   "label": "Lawrence of Arabia",
+   "qid": "Q228186",
+   "fame": 0.685,
+   "composer": "Maurice Jarre",
+   "kind": "film",
+   "description": "1962 film directed by David Lean",
+   "hook": "chronicles a British officer who unites desert tribes in a World War I revolt",
+   "known": 0.75
+  },
+  {
+   "label": "Iron Man",
+   "qid": "Q192724",
+   "fame": 0.684,
+   "composer": "Ramin Djawadi",
+   "kind": "film",
+   "description": "2008 film directed by Jon Favreau",
+   "hook": "launched a shared superhero film universe with a billionaire inventor in a powered suit",
+   "known": 0.9
+  },
+  {
+   "label": "Star Wars: Episode IV – A New Hope",
+   "qid": "Q17738",
+   "fame": 0.684,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "1977 film directed by George Lucas",
+   "hook": "introduces a farm boy, a smuggler and a princess battling a space empire's planet-killing battle station",
+   "known": 0.98
+  },
+  {
+   "label": "Harry Potter and the Philosopher's Stone",
+   "qid": "Q102438",
+   "fame": 0.682,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "2001 film directed by Chris Columbus",
+   "hook": "introduces an orphan who discovers he is a wizard and enrolls at a school of magic",
+   "known": 0.95
+  },
+  {
+   "label": "Jurassic Park",
+   "qid": "Q167726",
+   "fame": 0.682,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "1993 film by Steven Spielberg",
+   "hook": "unleashes cloned dinosaurs on a tropical island attraction gone horribly wrong",
+   "known": 0.95
+  },
+  {
+   "label": "12 Angry Men",
+   "qid": "Q2345",
+   "fame": 0.679,
+   "composer": "Kenyon Hopkins",
+   "kind": "film",
+   "description": "1957 film by Sidney Lumet",
+   "hook": "confines a jury in one sweltering room as a lone holdout questions a murder case",
+   "known": 0.75
+  },
+  {
+   "label": "Donnie Darko",
+   "qid": "Q426828",
+   "fame": 0.679,
+   "composer": "Michael Andrews",
+   "kind": "film",
+   "description": "2001 film directed by Richard Kelly",
+   "hook": "mixes time travel, a giant sinister rabbit and a troubled teen in a cult sci-fi mystery",
+   "known": 0.7
+  },
+  {
+   "label": "Green Book",
+   "qid": "Q48673898",
+   "fame": 0.677,
+   "composer": "Kris Bowers",
+   "kind": "film",
+   "description": "2018 film by Peter Farrelly",
+   "hook": "follows a bouncer driving a Black classical pianist through the segregated South",
+   "known": 0.75
+  },
+  {
+   "label": "Rocky",
+   "qid": "Q188652",
+   "fame": 0.677,
+   "composer": "Bill Conti",
+   "kind": "film",
+   "description": "1976 film directed by John Avildsen",
+   "hook": "follows an underdog Philadelphia boxer given a shot at the heavyweight title",
+   "known": 0.9
+  },
+  {
+   "label": "Transformers",
+   "qid": "Q171453",
+   "fame": 0.677,
+   "composer": "Steve Jablonsky",
+   "kind": "film",
+   "description": "2007 film directed by Michael Bay",
+   "hook": "brings giant shape-shifting alien robots, warring factions of cars and trucks, to live action",
+   "known": 0.85
+  },
+  {
+   "label": "Forrest Gump",
+   "qid": "Q134773",
+   "fame": 0.675,
+   "composer": "Alan Silvestri",
+   "kind": "film",
+   "description": "1994 film directed by Robert Zemeckis",
+   "hook": "follows a kind, slow-witted Alabama man who witnesses decades of history, with a box of chocolates",
+   "known": 0.95
+  },
+  {
+   "label": "Gone with the Wind",
+   "qid": "Q2875",
+   "fame": 0.675,
+   "composer": "Max Steiner",
+   "kind": "film",
+   "description": "1939 film directed by Victor Fleming",
+   "hook": "sweeps through a headstrong Southern belle's love and survival during the American Civil War",
+   "known": 0.9
+  },
+  {
+   "label": "Mulholland Drive",
+   "qid": "Q272608",
+   "fame": 0.674,
+   "composer": "Angelo Badalamenti",
+   "kind": "film",
+   "description": "2001 film by David Lynch",
+   "hook": "is a surreal, dreamlike Hollywood mystery about an aspiring actress and a woman with amnesia",
+   "known": 0.65
+  },
+  {
+   "label": "The Wizard of Oz",
+   "qid": "Q193695",
+   "fame": 0.674,
+   "composer": "Harold Arlen",
+   "kind": "film",
+   "description": "1939 movie based on the book by L. Frank Baum",
+   "hook": "whisks a Kansas girl away to a magical land where she follows a yellow brick road",
+   "known": 0.95
+  },
+  {
+   "label": "The Hunger Games",
+   "qid": "Q212965",
+   "fame": 0.673,
+   "composer": "James Newton Howard",
+   "kind": "film",
+   "description": "2012 film directed by Gary Ross",
+   "hook": "forces teenagers to fight until only one survives on live TV in a dystopian nation",
+   "known": 0.85
+  },
+  {
+   "label": "Memento",
+   "qid": "Q190525",
+   "fame": 0.672,
+   "composer": "David Julyan",
+   "kind": "film",
+   "description": "2000 film by Christopher Nolan",
+   "hook": "tells of a man with no short-term memory hunting his wife's killer, partly in reverse",
+   "known": 0.75
+  },
+  {
+   "label": "Spider-Man: Far From Home",
+   "qid": "Q27985819",
+   "fame": 0.672,
+   "composer": "Michael Giacchino",
+   "kind": "film",
+   "description": "2019 film directed by Jon Watts",
+   "hook": "takes a teen web-slinger on a European school trip where elemental monsters appear",
+   "known": 0.85
+  },
+  {
+   "label": "Aliens",
+   "qid": "Q104814",
+   "fame": 0.67,
+   "composer": "James Horner",
+   "kind": "film",
+   "description": "1986 film by James Cameron",
+   "hook": "sends a battle-hardened survivor back with space marines to face a swarm of acid-blooded monsters",
+   "known": 0.9
+  },
+  {
+   "label": "Captain America: Civil War",
+   "qid": "Q18407657",
+   "fame": 0.67,
+   "composer": "Henry Jackman",
+   "kind": "film",
+   "description": "2016 film by Anthony and Joe Russo",
+   "hook": "splits a superhero team over government oversight of their powers",
+   "known": 0.9
+  },
+  {
+   "label": "Back to the Future",
+   "qid": "Q91540",
+   "fame": 0.669,
+   "composer": "Alan Silvestri",
+   "kind": "film",
+   "description": "1985 film directed by Robert Zemeckis",
+   "hook": "has a teen race a DeLorean through time and accidentally meddle in his parents' courtship",
+   "known": 0.95
+  },
+  {
+   "label": "Dunkirk",
+   "qid": "Q21935651",
+   "fame": 0.669,
+   "composer": "Hans Zimmer",
+   "kind": "film",
+   "description": "2017 film by Christopher Nolan",
+   "hook": "depicts a massive wartime beach evacuation of stranded soldiers across land, sea and air",
+   "known": 0.8
+  },
+  {
+   "label": "Eternal Sunshine of the Spotless Mind",
+   "qid": "Q208269",
+   "fame": 0.669,
+   "composer": "Jon Brion",
+   "kind": "film",
+   "description": "2004 film directed by Michel Gondry",
+   "hook": "follows exes who erase each other from their memories through a wiping procedure",
+   "known": 0.7
+  },
+  {
+   "label": "Life of Pi",
+   "qid": "Q152780",
+   "fame": 0.668,
+   "composer": "Mychael Danna",
+   "kind": "film",
+   "description": "2012 film directed by Ang Lee",
+   "hook": "strands a boy on a lifeboat with a Bengal tiger",
+   "known": 0.8
+  },
+  {
+   "label": "Fight Club",
+   "qid": "Q190050",
+   "fame": 0.667,
+   "composer": "Dust Brothers",
+   "kind": "film",
+   "description": "Psychological Drama and Thriller based on the novel “Fight Club” by Chuck Palahniuk",
+   "hook": "features an insomniac office worker and a soap salesman who start an underground brawling society",
+   "known": 0.8
+  },
+  {
+   "label": "Guardians of the Galaxy",
+   "qid": "Q5887360",
+   "fame": 0.667,
+   "composer": "Tyler Bates",
+   "kind": "film",
+   "description": "2014 film directed by James Gunn",
+   "hook": "unites a ragtag group of space outlaws including a talking raccoon and a tree creature",
+   "known": 0.85
+  },
+  {
+   "label": "Parasite",
+   "qid": "Q61448040",
+   "fame": 0.666,
+   "composer": "Jung Jae-il",
+   "kind": "film",
+   "description": "2019 film directed by Bong Joon-ho",
+   "hook": "contrasts a poor family and a wealthy one in a darkly comic thriller that won Best Picture",
+   "known": 0.85
+  },
+  {
+   "label": "The Deer Hunter",
+   "qid": "Q201674",
+   "fame": 0.666,
+   "composer": "Stanley Myers",
+   "kind": "film",
+   "description": "1978 film directed by Michael Cimino",
+   "hook": "follows steelworker friends from a Pennsylvania town whose lives are shattered by war in Vietnam",
+   "known": 0.75
+  },
+  {
+   "label": "The Wolf of Wall Street",
+   "qid": "Q1392744",
+   "fame": 0.666,
+   "composer": "Howard Shore",
+   "kind": "film",
+   "description": "2013 film by Martin Scorsese",
+   "hook": "follows a stockbroker whose fraud-fueled life of excess and parties eventually brings him down",
+   "known": 0.85
+  },
+  {
+   "label": "Birdman",
+   "qid": "Q13255497",
+   "fame": 0.665,
+   "composer": "Antonio Sánchez",
+   "kind": "film",
+   "description": "2014 film by Alejandro González Iñárritu",
+   "hook": "follows a washed-up former superhero actor staging a Broadway play, filmed like one long take",
+   "known": 0.75
+  },
+  {
+   "label": "Prometheus",
+   "qid": "Q192686",
+   "fame": 0.665,
+   "composer": "Marc Streitenfeld",
+   "kind": "film",
+   "description": "2012 film directed by Ridley Scott",
+   "hook": "sends a spaceship crew to a distant moon searching for the origin of humanity",
+   "known": 0.75
+  },
+  {
+   "label": "Dead Poets Society",
+   "qid": "Q106316",
+   "fame": 0.664,
+   "composer": "Maurice Jarre",
+   "kind": "film",
+   "description": "1989 film directed by Peter Weir",
+   "hook": "follows an unconventional English teacher who urges boys at a strict prep school to seize the day",
+   "known": 0.8
+  },
+  {
+   "label": "Léon: The Professional",
+   "qid": "Q484675",
+   "fame": 0.664,
+   "composer": "Éric Serra",
+   "kind": "film",
+   "description": "1994 film by Luc Besson",
+   "hook": "follows a hitman who reluctantly takes in a young girl whose family was murdered",
+   "known": 0.75
+  },
+  {
+   "label": "Arrival",
+   "qid": "Q20382729",
+   "fame": 0.662,
+   "composer": "Jóhann Jóhannsson",
+   "kind": "film",
+   "description": "2016 science fiction film by Denis Villeneuve",
+   "hook": "follows a linguist trying to communicate with alien visitors aboard towering ships",
+   "known": 0.8
+  },
+  {
+   "label": "Gangs of New York",
+   "qid": "Q154581",
+   "fame": 0.662,
+   "composer": "Howard Shore",
+   "kind": "film",
+   "description": "2002 film directed by Martin Scorsese",
+   "hook": "follows an Irish immigrant seeking revenge on a nativist gang boss in nineteenth-century Manhattan",
+   "known": 0.75
+  },
+  {
+   "label": "Spider-Man",
+   "qid": "Q484442",
+   "fame": 0.662,
+   "composer": "Danny Elfman",
+   "kind": "film",
+   "description": "2002 film directed by Sam Raimi",
+   "hook": "follows a teenager from Queens who gains wall-crawling powers after a lab bite",
+   "known": 0.9
+  },
+  {
+   "label": "The Martian",
+   "qid": "Q18547944",
+   "fame": 0.662,
+   "composer": "Harry Gregson-Williams",
+   "kind": "film",
+   "description": "2015 film directed by Ridley Scott",
+   "hook": "follows an astronaut stranded alone on the red planet who grows potatoes to survive",
+   "known": 0.85
+  },
+  {
+   "label": "Argo",
+   "qid": "Q59653",
+   "fame": 0.661,
+   "composer": "Alexandre Desplat",
+   "kind": "film",
+   "description": "2012 film directed by Ben Affleck",
+   "hook": "dramatizes a CIA plot to rescue hostages by posing as the crew of a fake sci-fi movie",
+   "known": 0.75
+  },
+  {
+   "label": "Catch Me If You Can",
+   "qid": "Q208108",
+   "fame": 0.661,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "2002 film by Steven Spielberg",
+   "hook": "follows a teenage con artist who poses as a pilot and a doctor while an agent chases him",
+   "known": 0.75
+  },
+  {
+   "label": "Psycho",
+   "qid": "Q163038",
+   "fame": 0.661,
+   "composer": "Bernard Herrmann",
+   "kind": "film",
+   "description": "1960 US film by Alfred Hitchcock",
+   "hook": "features an infamous shower scene at an out-of-the-way motel",
+   "known": 0.9
+  },
+  {
+   "label": "Schindler's List",
+   "qid": "Q483941",
+   "fame": 0.66,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "1993 film directed by Steven Spielberg",
+   "hook": "tells of a German businessman who saved over a thousand Jewish workers during the Holocaust",
+   "known": 0.85
+  },
+  {
+   "label": "Star Wars: Episode VII – The Force Awakens",
+   "qid": "Q6074",
+   "fame": 0.66,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "2015 film directed by J.J. Abrams",
+   "hook": "returns to a galaxy far, far away with a scavenger named Rey, decades after the original trilogy",
+   "known": 0.95
+  },
+  {
+   "label": "Taxi Driver",
+   "qid": "Q47221",
+   "fame": 0.66,
+   "composer": "Bernard Herrmann",
+   "kind": "film",
+   "description": "1976 film directed by Martin Scorsese",
+   "hook": "follows an insomniac veteran who works nights cruising New York City in a cab",
+   "known": 0.8
+  },
+  {
+   "label": "Captain Marvel",
+   "qid": "Q23781129",
+   "fame": 0.659,
+   "composer": "Pınar Toprak",
+   "kind": "film",
+   "description": "2019 film directed by Anna Boden and Ryan Fleck",
+   "hook": "introduces a former Air Force pilot with photon-blast powers who joins a war between the Kree and the Skrulls",
+   "known": 0.8
+  },
+  {
+   "label": "Requiem for a Dream",
+   "qid": "Q487181",
+   "fame": 0.659,
+   "composer": "Clint Mansell",
+   "kind": "film",
+   "description": "2000 film directed by Darren Aronofsky",
+   "hook": "follows four people in Coney Island whose addictions spiral into despair",
+   "known": 0.7
+  },
+  {
+   "label": "Saving Private Ryan",
+   "qid": "Q165817",
+   "fame": 0.659,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "1998 film directed by Steven Spielberg",
+   "hook": "opens with the D-Day landing on Omaha Beach and follows a squad sent to find a lost paratrooper",
+   "known": 0.9
+  },
+  {
+   "label": "The Sound of Music",
+   "qid": "Q60072",
+   "fame": 0.658,
+   "composer": "Richard Rodgers",
+   "kind": "film",
+   "description": "1965 film by Robert Wise",
+   "hook": "follows a young nun turned governess who wins over seven singing von Trapp children in the Alps",
+   "known": 0.95
+  },
+  {
+   "label": "Django Unchained",
+   "qid": "Q571032",
+   "fame": 0.657,
+   "composer": "Ennio Morricone",
+   "kind": "film",
+   "description": "2012 film by Quentin Tarantino",
+   "hook": "follows a freed slave who teams with a German bounty hunter to rescue his wife in the antebellum South",
+   "known": 0.85
+  },
+  {
+   "label": "The Fifth Element",
+   "qid": "Q106506",
+   "fame": 0.656,
+   "composer": "Éric Serra",
+   "kind": "film",
+   "description": "1997 film directed by Luc Besson",
+   "hook": "follows a New York cabbie who helps a mysterious woman save Earth from ultimate evil using four stones",
+   "known": 0.8
+  },
+  {
+   "label": "The Green Mile",
+   "qid": "Q208263",
+   "fame": 0.656,
+   "composer": "Thomas Newman",
+   "kind": "film",
+   "description": "1999 film directed by Frank Darabont",
+   "hook": "follows a death row guard who meets a gentle giant with miraculous healing powers",
+   "known": 0.8
+  },
+  {
+   "label": "X-Men",
+   "qid": "Q106182",
+   "fame": 0.656,
+   "composer": "Michael Kamen",
+   "kind": "film",
+   "description": "2000 film directed by Bryan Singer",
+   "hook": "introduces mutants with superpowers led by a telepath in a wheelchair and a rival who controls magnetism",
+   "known": 0.85
+  },
+  {
+   "label": "American Beauty",
+   "qid": "Q25139",
+   "fame": 0.654,
+   "composer": "Thomas Newman",
+   "kind": "film",
+   "description": "1999 US film directed by Sam Mendes",
+   "hook": "follows a suburban dad in a midlife crisis, with rose petals and a floating plastic bag",
+   "known": 0.8
+  },
+  {
+   "label": "The Incredible Hulk",
+   "qid": "Q466611",
+   "fame": 0.654,
+   "composer": "Craig Armstrong",
+   "kind": "film",
+   "description": "2008 film by Louis Leterrier",
+   "hook": "follows a scientist on the run who becomes a giant green rage monster when angry",
+   "known": 0.75
+  },
+  {
+   "label": "La La Land",
+   "qid": "Q20856802",
+   "fame": 0.653,
+   "composer": "Justin Hurwitz",
+   "kind": "film",
+   "description": "2016 film directed by Damien Chazelle",
+   "hook": "follows a jazz pianist and an aspiring actress chasing their dreams in Hollywood",
+   "known": 0.85
+  },
+  {
+   "label": "Citizen Kane",
+   "qid": "Q24815",
+   "fame": 0.652,
+   "composer": "Bernard Herrmann",
+   "kind": "film",
+   "description": "1941 American drama film directed by Orson Welles",
+   "hook": "traces a newspaper tycoon's rise and fall through the mystery of his final word",
+   "known": 0.85
+  },
+  {
+   "label": "Jaws",
+   "qid": "Q189505",
+   "fame": 0.652,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "1975 film by Steven Spielberg",
+   "hook": "follows a police chief, a scientist and a fisherman hunting a great white terrorizing a beach town",
+   "known": 0.95
+  },
+  {
+   "label": "The Usual Suspects",
+   "qid": "Q132351",
+   "fame": 0.652,
+   "composer": "John Ottman",
+   "kind": "film",
+   "description": "1995 film directed by Bryan Singer",
+   "hook": "follows a lineup of criminals and the legend of a mysterious crime lord named Keyser Soze",
+   "known": 0.8
+  },
+  {
+   "label": "Casablanca",
+   "qid": "Q132689",
+   "fame": 0.651,
+   "composer": "Max Steiner",
+   "kind": "film",
+   "description": "1942 film directed by Michael Curtiz",
+   "hook": "is a wartime romance set in a Moroccan nightclub, famous for the line \"Here's looking at you, kid\"",
+   "known": 0.9
+  },
+  {
+   "label": "Jurassic World",
+   "qid": "Q3512046",
+   "fame": 0.651,
+   "composer": "Michael Giacchino",
+   "kind": "film",
+   "description": "2015 film directed by Colin Trevorrow",
+   "hook": "reopens a dinosaur theme park where a genetically engineered hybrid escapes",
+   "known": 0.9
+  },
+  {
+   "label": "Avatar: The Way of Water",
+   "qid": "Q3604746",
+   "fame": 0.65,
+   "composer": "Simon Franglen",
+   "kind": "film",
+   "description": "2022 film by James Cameron",
+   "hook": "returns to Pandora, where a blue-skinned family joins an ocean-dwelling clan",
+   "known": 0.9
+  },
+  {
+   "label": "The Last Samurai",
+   "qid": "Q207130",
+   "fame": 0.648,
+   "composer": "Hans Zimmer",
+   "kind": "film",
+   "description": "2003 film directed by Edward Zwick",
+   "hook": "follows an American soldier who comes to admire the warriors he was sent to fight in nineteenth-century Japan",
+   "known": 0.75
+  },
+  {
+   "label": "Raiders of the Lost Ark",
+   "qid": "Q174284",
+   "fame": 0.647,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "1981 film directed by Steven Spielberg",
+   "hook": "follows a whip-wielding archaeologist racing the Nazis to find a biblical chest",
+   "known": 0.95
+  },
+  {
+   "label": "Trainspotting",
+   "qid": "Q109135",
+   "fame": 0.647,
+   "composer": "Damon Albarn",
+   "kind": "film",
+   "description": "1996 British film by Danny Boyle",
+   "hook": null,
+   "known": 0.7
+  },
+  {
+   "label": "300",
+   "qid": "Q131390",
+   "fame": 0.646,
+   "composer": "Tyler Bates",
+   "kind": "film",
+   "description": "2007 film directed by Zack Snyder",
+   "hook": "retells the stand of Spartan warriors against a massive Persian army at Thermopylae",
+   "known": 0.8
+  },
+  {
+   "label": "Borat",
+   "qid": "Q186323",
+   "fame": 0.646,
+   "composer": "Erran Baron Cohen",
+   "kind": "film",
+   "description": "2006 mockumentary comedy film directed by Larry Charles",
+   "hook": null,
+   "known": 0.7
+  },
+  {
+   "label": "Man of Steel",
+   "qid": "Q622769",
+   "fame": 0.646,
+   "composer": "Hans Zimmer",
+   "kind": "film",
+   "description": "2013 film directed by Zack Snyder",
+   "hook": "retells the origin of a Kryptonian raised in Kansas who faces General Zod",
+   "known": 0.85
+  },
+  {
+   "label": "Brokeback Mountain",
+   "qid": "Q160618",
+   "fame": 0.645,
+   "composer": "Gustavo Santaolalla",
+   "kind": "film",
+   "description": "2005 film directed by Ang Lee",
+   "hook": "follows two ranch hands whose secret love affair lasts for decades",
+   "known": 0.75
+  },
+  {
+   "label": "The Lord of the Rings: The Fellowship of the Ring",
+   "qid": "Q127367",
+   "fame": 0.645,
+   "composer": "Howard Shore",
+   "kind": "film",
+   "description": "2001 film by Peter Jackson",
+   "hook": "sets a hobbit and eight companions off to destroy a cursed piece of jewelry in a volcano",
+   "known": 0.95
+  },
+  {
+   "label": "Pirates of the Caribbean: Dead Men Tell no Tales",
+   "qid": "Q10350033",
+   "fame": 0.644,
+   "composer": "Hans Zimmer",
+   "kind": "film",
+   "description": "2017 film directed by Espen Sandberg and Joachim Rønning",
+   "hook": "pits Captain Jack Sparrow against a ghostly Spanish naval officer who escaped the Devil's Triangle",
+   "known": 0.8
+  },
+  {
+   "label": "Dr. Strangelove",
+   "qid": "Q105702",
+   "fame": 0.641,
+   "composer": "Laurie Johnson",
+   "kind": "film",
+   "description": "1964 British satire film directed by Stanley Kubrick",
+   "hook": "satirizes nuclear brinkmanship, with a war room, a cowboy riding a bomb and a wheelchair-bound scientist",
+   "known": 0.8
+  },
+  {
+   "label": "Joker",
+   "qid": "Q42759035",
+   "fame": 0.641,
+   "composer": "Hildur Guðnadóttir",
+   "kind": "film",
+   "description": "2019 musical film directed by Todd Phillips",
+   "hook": "follows a failing party clown whose descent into madness unfolds in a gritty Gotham",
+   "known": 0.8
+  },
+  {
+   "label": "Thor",
+   "qid": "Q217020",
+   "fame": 0.641,
+   "composer": "Patrick Doyle",
+   "kind": "film",
+   "description": "2011 film directed by Kenneth Branagh",
+   "hook": "introduces a Norse god of thunder banished to Earth by his father",
+   "known": 0.85
+  },
+  {
+   "label": "One Flew Over the Cuckoo's Nest",
+   "qid": "Q171669",
+   "fame": 0.64,
+   "composer": "Jack Nitzsche",
+   "kind": "film",
+   "description": "1975 film directed by Miloš Forman",
+   "hook": "follows a rebellious patient who clashes with a tyrannical nurse in a mental hospital",
+   "known": 0.75
+  },
+  {
+   "label": "Charlie and the Chocolate Factory",
+   "qid": "Q218235",
+   "fame": 0.638,
+   "composer": "Danny Elfman",
+   "kind": "film",
+   "description": "2005 film directed by Tim Burton",
+   "hook": "follows a poor boy who wins a golden ticket to tour an eccentric candy maker's wonderland",
+   "known": 0.85
+  },
+  {
+   "label": "Once Upon a Time in America",
+   "qid": "Q206388",
+   "fame": 0.637,
+   "composer": "Ennio Morricone",
+   "kind": "film",
+   "description": "1984 film by Sergio Leone",
+   "hook": "spans decades in the lives of Jewish gangster friends in New York, from childhood to old age",
+   "known": 0.65
+  },
+  {
+   "label": "A Beautiful Mind",
+   "qid": "Q164103",
+   "fame": 0.635,
+   "composer": "James Horner",
+   "kind": "film",
+   "description": "2001 film by Ron Howard",
+   "hook": "dramatizes a brilliant mathematician and Nobel laureate who struggles with schizophrenia",
+   "known": 0.8
+  },
+  {
+   "label": "Captain America: The Winter Soldier",
+   "qid": "Q1765358",
+   "fame": 0.635,
+   "composer": "Henry Jackman",
+   "kind": "film",
+   "description": "2014 film directed by Anthony Russo and Joe Russo",
+   "hook": "pits a shield-wielding Avenger against a metal-armed assassin and a conspiracy inside S.H.I.E.L.D",
+   "known": 0.85
+  },
+  {
+   "label": "Slumdog Millionaire",
+   "qid": "Q125076",
+   "fame": 0.635,
+   "composer": "A. R. Rahman",
+   "kind": "film",
+   "description": "2008 film directed by Danny Boyle",
+   "hook": "follows an orphan from Mumbai's slums who is one question away from a game show jackpot",
+   "known": 0.75
+  },
+  {
+   "label": "The Good, the Bad and the Ugly",
+   "qid": "Q41483",
+   "fame": 0.635,
+   "composer": "Ennio Morricone",
+   "kind": "film",
+   "description": "1966 film directed by Sergio Leone",
+   "hook": "is a spaghetti western about three gunslingers hunting buried Confederate gold during the Civil War",
+   "known": 0.85
+  },
+  {
+   "label": "Jumanji",
+   "qid": "Q222939",
+   "fame": 0.634,
+   "composer": "James Horner",
+   "kind": "film",
+   "description": "1995 film directed by Joe Johnston",
+   "hook": "follows kids who unleash jungle chaos from a cursed board game",
+   "known": 0.75
+  },
+  {
+   "label": "First Blood",
+   "qid": "Q244963",
+   "fame": 0.633,
+   "composer": "Jerry Goldsmith",
+   "kind": "film",
+   "description": "1982 film directed by Ted Kotcheff",
+   "hook": "introduces a Vietnam veteran drifter who wages a one-man war against a small-town sheriff",
+   "known": 0.75
+  },
+  {
+   "label": "Captain America: The First Avenger",
+   "qid": "Q275120",
+   "fame": 0.632,
+   "composer": "Alan Silvestri",
+   "kind": "film",
+   "description": "2011 film directed by Joe Johnston",
+   "hook": "follows a skinny Brooklyn kid transformed by a serum into a super-soldier in World War II",
+   "known": 0.85
+  },
+  {
+   "label": "The Imitation Game",
+   "qid": "Q14918344",
+   "fame": 0.632,
+   "composer": "Alexandre Desplat",
+   "kind": "film",
+   "description": "2014 film directed by Morten Tyldum",
+   "hook": "dramatizes the mathematician who cracked Nazi Germany's Enigma code",
+   "known": 0.75
+  },
+  {
+   "label": "Thor: Ragnarok",
+   "qid": "Q22665878",
+   "fame": 0.632,
+   "composer": "Mark Mothersbaugh",
+   "kind": "film",
+   "description": "2017 film directed by Taika Waititi",
+   "hook": "sends a god of thunder to a junkyard planet gladiator arena to face the Hulk and his sister Hela",
+   "known": 0.85
+  },
+  {
+   "label": "E.T. the Extra-Terrestrial",
+   "qid": "Q11621",
+   "fame": 0.63,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "1982 film directed by Steven Spielberg",
+   "hook": "follows a boy who befriends a stranded alien and helps him phone home",
+   "known": 0.95
+  },
+  {
+   "label": "Platoon",
+   "qid": "Q190643",
+   "fame": 0.63,
+   "composer": "Georges Delerue",
+   "kind": "film",
+   "description": "1986 film directed by Oliver Stone",
+   "hook": "follows a young infantry recruit torn between two sergeants in the jungles of Vietnam",
+   "known": 0.75
+  },
+  {
+   "label": "The Big Lebowski",
+   "qid": "Q337078",
+   "fame": 0.63,
+   "composer": "Carter Burwell",
+   "kind": "film",
+   "description": "1998 film by Joel Coen, Ethan Coen",
+   "hook": "follows a bathrobe-wearing slacker mistaken for a millionaire after a ruined rug",
+   "known": 0.8
+  },
+  {
+   "label": "The Bourne Identity",
+   "qid": "Q105624",
+   "fame": 0.629,
+   "composer": "John Powell",
+   "kind": "film",
+   "description": "2002 film directed by Doug Liman",
+   "hook": "follows an amnesiac spy pulled from the sea who discovers he has deadly fighting skills",
+   "known": 0.8
+  },
+  {
+   "label": "Skyfall",
+   "qid": "Q4941",
+   "fame": 0.628,
+   "composer": "Thomas Newman",
+   "kind": "film",
+   "description": "2012 film by Sam Mendes",
+   "hook": "sees a British secret agent return from presumed death to protect his spy chief from a vengeful ex-agent",
+   "known": 0.85
+  },
+  {
+   "label": "The Amazing Spider-Man",
+   "qid": "Q229808",
+   "fame": 0.628,
+   "composer": "James Horner",
+   "kind": "film",
+   "description": "2012 film directed by Marc Webb",
+   "hook": "retells how a teen gets web-slinging powers and faces a scientist who turns into a giant lizard",
+   "known": 0.8
+  },
+  {
+   "label": "The Bridge on the River Kwai",
+   "qid": "Q188718",
+   "fame": 0.628,
+   "composer": "Malcolm Arnold",
+   "kind": "film",
+   "description": "1957 film directed by David Lean",
+   "hook": "tells of prisoners of war forced by their captors to build a railway span in the jungle",
+   "known": 0.7
+  },
+  {
+   "label": "The Fast and the Furious",
+   "qid": "Q155476",
+   "fame": 0.628,
+   "composer": "BT",
+   "kind": "film",
+   "description": "2001 film directed by Rob Cohen",
+   "hook": "follows an undercover cop who infiltrates a street-racing crew suspected of truck hijackings",
+   "known": 0.75
+  },
+  {
+   "label": "Deadpool",
+   "qid": "Q19347291",
+   "fame": 0.627,
+   "composer": "Junkie XL",
+   "kind": "film",
+   "description": "2016 film directed by Tim Miller",
+   "hook": "stars a wisecracking, fourth-wall-breaking mercenary hunting the man who scarred him",
+   "known": 0.8
+  },
+  {
+   "label": "Terminator 3: Rise of the Machines",
+   "qid": "Q29054009",
+   "fame": 0.627,
+   "composer": "Marco Beltrami",
+   "kind": "film",
+   "description": "2003 film directed by Jonathan Mostow",
+   "hook": "sees an aging cyborg protector face a female robot assassin sent to kill the future resistance's allies",
+   "known": 0.75
+  },
+  {
+   "label": "12 Years a Slave",
+   "qid": "Q3023357",
+   "fame": 0.626,
+   "composer": "Hans Zimmer",
+   "kind": "film",
+   "description": "2013 film directed by Steve McQueen",
+   "hook": "tells the true story of a free Black musician kidnapped and sold into bondage in the American South",
+   "known": 0.75
+  },
+  {
+   "label": "Braveheart",
+   "qid": "Q162729",
+   "fame": 0.626,
+   "composer": "James Horner",
+   "kind": "film",
+   "description": "1995 film directed by Mel Gibson",
+   "hook": "follows a Scottish rebel who rallies his countrymen against English rule in the Middle Ages",
+   "known": 0.85
+  },
+  {
+   "label": "Doctor Strange",
+   "qid": "Q18406872",
+   "fame": 0.626,
+   "composer": "Michael Giacchino",
+   "kind": "film",
+   "description": "2016 film directed by Scott Derrickson",
+   "hook": "follows a brilliant surgeon whose ruined hands lead him to learn the mystic arts in Nepal",
+   "known": 0.85
+  },
+  {
+   "label": "Home Alone",
+   "qid": "Q105031",
+   "fame": 0.626,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "1990 film directed by Chris Columbus",
+   "hook": "follows a young boy left behind on a holiday trip who booby-traps his house against burglars",
+   "known": 0.95
+  },
+  {
+   "label": "The Lord of the Rings: The Return of the King",
+   "qid": "Q131074",
+   "fame": 0.626,
+   "composer": "Howard Shore",
+   "kind": "film",
+   "description": "2003 film by Peter Jackson",
+   "hook": "concludes a fantasy epic as hobbits climb a volcano to destroy a cursed jewel, sweeping the Oscars",
+   "known": 0.95
+  },
+  {
+   "label": "Harry Potter and the Deathly Hallows – Part 2",
+   "qid": "Q232009",
+   "fame": 0.625,
+   "composer": "Alexandre Desplat",
+   "kind": "film",
+   "description": "2011 film directed by David Yates",
+   "hook": "concludes a boy wizard's battle against the dark lord who killed his parents, ending at a magic school",
+   "known": 0.9
+  },
+  {
+   "label": "Rain Man",
+   "qid": "Q188845",
+   "fame": 0.625,
+   "composer": "Hans Zimmer",
+   "kind": "film",
+   "description": "1988 film directed by Barry Levinson",
+   "hook": "follows a selfish car dealer who road-trips with his autistic brother who has savant gifts",
+   "known": 0.8
+  },
+  {
+   "label": "Black Swan",
+   "qid": "Q180214",
+   "fame": 0.624,
+   "composer": "Clint Mansell",
+   "kind": "film",
+   "description": "2010 film directed by Darren Aronofsky",
+   "hook": "follows a ballerina whose obsession with a lead role in a Tchaikovsky ballet unravels her mind",
+   "known": 0.75
+  },
+  {
+   "label": "I Am Legend",
+   "qid": "Q212689",
+   "fame": 0.624,
+   "composer": "James Newton Howard",
+   "kind": "film",
+   "description": "2007 film directed by Francis Lawrence",
+   "hook": "follows a lone scientist in an emptied New York City after a virus turns people into monsters",
+   "known": 0.8
+  },
+  {
+   "label": "Harry Potter and the Goblet of Fire",
+   "qid": "Q102225",
+   "fame": 0.623,
+   "composer": "Patrick Doyle",
+   "kind": "film",
+   "description": "2005 film directed by Mike Newell",
+   "hook": "sees a young wizard forced into a dangerous three-school tournament as the dark lord returns",
+   "known": 0.9
+  },
+  {
+   "label": "Harry Potter and the Prisoner of Azkaban",
+   "qid": "Q102448",
+   "fame": 0.623,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "2004 film directed by Alfonso Cuarón",
+   "hook": "has a young wizard learn an escaped convict is tied to his parents' past, with a time-turning device",
+   "known": 0.9
+  },
+  {
+   "label": "V for Vendetta",
+   "qid": "Q5890",
+   "fame": 0.622,
+   "composer": "Dario Marianelli",
+   "kind": "film",
+   "description": "2005 film directed by James McTeigue",
+   "hook": "follows a masked vigilante in a dystopian London inspired by Guy Fawkes",
+   "known": 0.75
+  },
+  {
+   "label": "Spectre",
+   "qid": "Q18602670",
+   "fame": 0.621,
+   "composer": "Thomas Newman",
+   "kind": "film",
+   "description": "2015 film by Sam Mendes",
+   "hook": "has a British spy uncover a shadowy crime syndicate tied to his own past",
+   "known": 0.8
+  },
+  {
+   "label": "The Curious Case of Benjamin Button",
+   "qid": "Q183239",
+   "fame": 0.62,
+   "composer": "Alexandre Desplat",
+   "kind": "film",
+   "description": "2008 film by David Fincher",
+   "hook": "follows a man born elderly who ages backward through his life",
+   "known": 0.75
+  },
+  {
+   "label": "The Lost World: Jurassic Park",
+   "qid": "Q200873",
+   "fame": 0.62,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "1997 film directed by Steven Spielberg",
+   "hook": "sends a team to a second dinosaur-filled island, ending with a T. rex rampaging through San Diego",
+   "known": 0.85
+  },
+  {
+   "label": "Predator",
+   "qid": "Q200804",
+   "fame": 0.619,
+   "composer": "Alan Silvestri",
+   "kind": "film",
+   "description": "1987 film directed by John McTiernan",
+   "hook": "pits an elite commando squad against an invisible alien hunter in a jungle",
+   "known": 0.85
+  },
+  {
+   "label": "Twilight",
+   "qid": "Q160071",
+   "fame": 0.618,
+   "composer": "Carter Burwell",
+   "kind": "film",
+   "description": "2008 American film directed by Catherine Hardwicke",
+   "hook": "follows a teenage girl who falls for a brooding vampire in a rainy Washington town",
+   "known": 0.75
+  },
+  {
+   "label": "The Fast and the Furious: Tokyo Drift",
+   "qid": "Q213208",
+   "fame": 0.617,
+   "composer": "Brian Tyler",
+   "kind": "film",
+   "description": "2006 film directed by Justin Lin",
+   "hook": "sends an American teen to Japan where he learns a sliding style of street racing",
+   "known": 0.7
+  },
+  {
+   "label": "The Terminal",
+   "qid": "Q318766",
+   "fame": 0.617,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "2004 film directed by Steven Spielberg",
+   "hook": "has a foreign traveler stuck living in an airport after his homeland's government collapses",
+   "known": 0.75
+  },
+  {
+   "label": "Gravity",
+   "qid": "Q2579784",
+   "fame": 0.616,
+   "composer": "Steven Price",
+   "kind": "film",
+   "description": "2013 film directed by Alfonso Cuarón",
+   "hook": "strands astronauts adrift in orbit after debris destroys their shuttle",
+   "known": 0.8
+  },
+  {
+   "label": "Harry Potter and the Chamber of Secrets",
+   "qid": "Q102244",
+   "fame": 0.616,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "2002 film directed by Chris Columbus",
+   "hook": "sees a young wizard fight a giant snake in a hidden underground lair beneath his school",
+   "known": 0.9
+  },
+  {
+   "label": "The Day After Tomorrow",
+   "qid": "Q14320",
+   "fame": 0.616,
+   "composer": "Harald Kloser",
+   "kind": "film",
+   "description": "2004 film by Roland Emmerich",
+   "hook": "shows a sudden global climate disaster that freezes the Northern Hemisphere",
+   "known": 0.75
+  },
+  {
+   "label": "GoldenEye",
+   "qid": "Q19089",
+   "fame": 0.615,
+   "composer": "Éric Serra",
+   "kind": "film",
+   "description": "1995 film by Martin Campbell",
+   "hook": "has a British spy face a former colleague who plans to use a satellite weapon",
+   "known": 0.8
+  },
+  {
+   "label": "The Pianist",
+   "qid": "Q150804",
+   "fame": 0.615,
+   "composer": "Wojciech Kilar",
+   "kind": "film",
+   "description": "2002 film directed by Roman Polanski",
+   "hook": "follows a Jewish concert musician hiding in ruined Warsaw during wartime",
+   "known": 0.75
+  },
+  {
+   "label": "Transformers: Dark of the Moon",
+   "qid": "Q232774",
+   "fame": 0.615,
+   "composer": "Steve Jablonsky",
+   "kind": "film",
+   "description": "2011 film directed by Michael Bay",
+   "hook": "has giant shape-shifting robots fight over hidden alien wreckage found on the lunar surface",
+   "known": 0.8
+  },
+  {
+   "label": "Star Wars: Episode I – The Phantom Menace",
+   "qid": "Q165713",
+   "fame": 0.614,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "1999 film directed by George Lucas",
+   "hook": "kicks off the prequel trilogy with a pod-racing boy discovered by two Jedi knights",
+   "known": 0.95
+  },
+  {
+   "label": "Million Dollar Baby",
+   "qid": "Q184255",
+   "fame": 0.613,
+   "composer": "Clint Eastwood",
+   "kind": "film",
+   "description": "2004 film by Clint Eastwood",
+   "hook": "follows a determined waitress who convinces a gruff trainer to coach her as a boxer",
+   "known": 0.8
+  },
+  {
+   "label": "Love Actually",
+   "qid": "Q190588",
+   "fame": 0.612,
+   "composer": "Craig Armstrong",
+   "kind": "film",
+   "description": "2003 film directed by Richard Curtis",
+   "hook": "weaves many London romances together in the weeks before Christmas",
+   "known": 0.8
+  },
+  {
+   "label": "Thor: The Dark World",
+   "qid": "Q1201853",
+   "fame": 0.611,
+   "composer": "Brian Tyler",
+   "kind": "film",
+   "description": "2013 film directed by Alan Taylor",
+   "hook": "has a Norse thunder god team with his trickster brother against a hostile elf race",
+   "known": 0.85
+  },
+  {
+   "label": "My Neighbor Totoro",
+   "qid": "Q39571",
+   "fame": 0.61,
+   "composer": "Joe Hisaishi",
+   "kind": "film",
+   "description": "1988 film directed by Hayao Miyazaki",
+   "hook": "follows two sisters who befriend a giant furry forest spirit near their country home",
+   "known": 0.8
+  },
+  {
+   "label": "The Shape of Water",
+   "qid": "Q26698156",
+   "fame": 0.61,
+   "composer": "Alexandre Desplat",
+   "kind": "film",
+   "description": "2017 film by Guillermo del Toro",
+   "hook": "tells of a mute cleaning woman who falls for a captive amphibious creature in a Cold War lab",
+   "known": 0.8
+  },
+  {
+   "label": "Seven Samurai",
+   "qid": "Q189540",
+   "fame": 0.609,
+   "composer": "Fumio Hayasaka",
+   "kind": "film",
+   "description": "1954 Japanese film by Akira Kurosawa",
+   "hook": "follows a village that hires wandering swordsmen to protect it from bandits",
+   "known": 0.7
+  },
+  {
+   "label": "Fantastic Beasts and Where to Find Them",
+   "qid": "Q18199330",
+   "fame": 0.608,
+   "composer": "James Newton Howard",
+   "kind": "film",
+   "description": "2016 film directed by David Yates",
+   "hook": "follows a quirky magical-creature expert who arrives in New York with a suitcase full of animals",
+   "known": 0.75
+  },
+  {
+   "label": "The Mask",
+   "qid": "Q219421",
+   "fame": 0.608,
+   "composer": "Randy Edelman",
+   "kind": "film",
+   "description": "1994 film directed by Chuck Russell",
+   "hook": "stars a meek bank clerk who finds a green wooden face covering that turns him into a cartoonish trickster",
+   "known": 0.75
+  },
+  {
+   "label": "Harry Potter and the Half-Blood Prince",
+   "qid": "Q161687",
+   "fame": 0.607,
+   "composer": "Nicholas Hooper",
+   "kind": "film",
+   "description": "2009 film directed by David Yates",
+   "hook": "has a young wizard use an old potions textbook while uncovering the dark lord's past",
+   "known": 0.9
+  },
+  {
+   "label": "American History X",
+   "qid": "Q208572",
+   "fame": 0.606,
+   "composer": "Anne Dudley",
+   "kind": "film",
+   "description": "1998 film directed by Tony Kaye",
+   "hook": null,
+   "known": 0.7
+  },
+  {
+   "label": "Crouching Tiger, Hidden Dragon",
+   "qid": "Q273978",
+   "fame": 0.606,
+   "composer": "Tan Dun",
+   "kind": "film",
+   "description": "2000 film by Ang Lee",
+   "hook": "tells of martial-arts warriors chasing a stolen sword, with wire-assisted flying fights",
+   "known": 0.8
+  },
+  {
+   "label": "Harry Potter and the Order of the Phoenix",
+   "qid": "Q102235",
+   "fame": 0.606,
+   "composer": "Nicholas Hooper",
+   "kind": "film",
+   "description": "2007 film directed by David Yates",
+   "hook": "has a young wizard form a secret student defense group against a meddling ministry official",
+   "known": 0.9
+  },
+  {
+   "label": "Spartacus",
+   "qid": "Q108297",
+   "fame": 0.606,
+   "composer": "Alex North",
+   "kind": "film",
+   "description": "1960 film directed by Stanley Kubrick",
+   "hook": "tells of a gladiator who leads a slave revolt against Rome",
+   "known": 0.75
+  },
+  {
+   "label": "Spotlight",
+   "qid": "Q18154496",
+   "fame": 0.606,
+   "composer": "Howard Shore",
+   "kind": "film",
+   "description": "2015 film directed by Tom McCarthy",
+   "hook": null,
+   "known": 0.75
+  },
+  {
+   "label": "Independence Day",
+   "qid": "Q105387",
+   "fame": 0.605,
+   "composer": "David Arnold",
+   "kind": "film",
+   "description": "1996 film directed by Roland Emmerich",
+   "hook": "has giant alien ships blow up famous cities before humanity strikes back on the Fourth of July",
+   "known": 0.85
+  },
+  {
+   "label": "Life Is Beautiful",
+   "qid": "Q19355",
+   "fame": 0.605,
+   "composer": "Nicola Piovani",
+   "kind": "film",
+   "description": "1997 film by Roberto Benigni",
+   "hook": "follows a father who shields his young son from wartime horrors by pretending it is all a game",
+   "known": 0.75
+  },
+  {
+   "label": "Once Upon a Time in the West",
+   "qid": "Q168154",
+   "fame": 0.605,
+   "composer": "Ennio Morricone",
+   "kind": "film",
+   "description": "1968 film by Sergio Leone",
+   "hook": "stars a harmonica-playing gunman who takes on a ruthless killer over land the railroad wants",
+   "known": 0.7
+  },
+  {
+   "label": "Star Wars: Episode V – The Empire Strikes Back",
+   "qid": "Q181795",
+   "fame": 0.605,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "1980 American epic space opera film directed by Irvin Kershner",
+   "hook": "sends the rebels fleeing an ice-planet base while a young Jedi trains with a swamp-dwelling master",
+   "known": 0.98
+  },
+  {
+   "label": "Ant-Man",
+   "qid": "Q5901134",
+   "fame": 0.603,
+   "composer": "Christophe Beck",
+   "kind": "film",
+   "description": "2015 film directed by Peyton Reed",
+   "hook": "follows a reformed burglar who gets a suit that shrinks him to insect size",
+   "known": 0.8
+  },
+  {
+   "label": "Die Hard",
+   "qid": "Q105598",
+   "fame": 0.603,
+   "composer": "Michael Kamen",
+   "kind": "film",
+   "description": "1988 film directed by John McTiernan",
+   "hook": "pits a barefoot cop against armed thieves in a Los Angeles tower on Christmas Eve",
+   "known": 0.9
+  },
+  {
+   "label": "Pirates of the Caribbean: On Stranger Tides",
+   "qid": "Q183555",
+   "fame": 0.603,
+   "composer": "Hans Zimmer",
+   "kind": "film",
+   "description": "2011 film by Rob Marshall",
+   "hook": "sends a swashbuckling buccaneer captain on a quest for the Fountain of Youth",
+   "known": 0.8
+  },
+  {
+   "label": "Cast Away",
+   "qid": "Q213411",
+   "fame": 0.602,
+   "composer": "Alan Silvestri",
+   "kind": "film",
+   "description": "2000 film directed by Robert Zemeckis",
+   "hook": "follows a courier stranded on a deserted island who befriends a volleyball",
+   "known": 0.8
+  },
+  {
+   "label": "Harry Potter and the Deathly Hallows – Part 1",
+   "qid": "Q161678",
+   "fame": 0.602,
+   "composer": "Alexandre Desplat",
+   "kind": "film",
+   "description": "2010 film directed by David Yates",
+   "hook": "sends a wizard and his two best friends camping across the countryside hunting pieces of the dark lord's soul",
+   "known": 0.9
+  },
+  {
+   "label": "Men in Black",
+   "qid": "Q51416",
+   "fame": 0.602,
+   "composer": "Danny Elfman",
+   "kind": "film",
+   "description": "1997 science fiction film directed by Barry Sonnenfeld",
+   "hook": "follows secret agents in dark suits who police the aliens living on Earth",
+   "known": 0.85
+  },
+  {
+   "label": "Saw",
+   "qid": "Q486239",
+   "fame": 0.601,
+   "composer": "Charlie Clouser",
+   "kind": "film",
+   "description": "2004 film directed by James Wan",
+   "hook": null,
+   "known": 0.75
+  },
+  {
+   "label": "The Aviator",
+   "qid": "Q201924",
+   "fame": 0.601,
+   "composer": "Howard Shore",
+   "kind": "film",
+   "description": "2004 film directed by Martin Scorsese",
+   "hook": "follows an eccentric tycoon who makes movies and builds record-breaking planes",
+   "known": 0.75
+  },
+  {
+   "label": "Indiana Jones and the Temple of Doom",
+   "qid": "Q179215",
+   "fame": 0.6,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "1984 film by Steven Spielberg",
+   "hook": "sends a whip-cracking archaeologist to rescue enslaved children in India, with a wild mine-cart chase",
+   "known": 0.9
+  },
+  {
+   "label": "Bohemian Rhapsody",
+   "qid": "Q27894574",
+   "fame": 0.598,
+   "composer": "Brian May",
+   "kind": "film",
+   "description": "2018 film directed by Bryan Singer",
+   "hook": "tells the story of a legendary rock frontman and ends with a recreation of a famous Live Aid set",
+   "known": 0.8
+  },
+  {
+   "label": "Minions",
+   "qid": "Q13619743",
+   "fame": 0.598,
+   "composer": "Heitor Pereira",
+   "kind": "film",
+   "description": "2015 animated film by Pierre Coffin and Kyle Balda",
+   "hook": "is a prequel following small yellow henchmen who search for a villainous boss to serve",
+   "known": 0.75
+  },
+  {
+   "label": "Pirates of the Caribbean: Dead Man's Chest",
+   "qid": "Q161087",
+   "fame": 0.598,
+   "composer": "Hans Zimmer",
+   "kind": "film",
+   "description": "2006 film directed by Gore Verbinski",
+   "hook": "sends a swashbuckling captain to settle a debt owed to a squid-faced ghost ship captain",
+   "known": 0.85
+  },
+  {
+   "label": "Vertigo",
+   "qid": "Q202548",
+   "fame": 0.598,
+   "composer": "Bernard Herrmann",
+   "kind": "film",
+   "description": "1958 film by Alfred Hitchcock",
+   "hook": "stars James Stewart as a detective with a crippling fear of heights, set in San Francisco",
+   "known": 0.75
+  },
+  {
+   "label": "Venom",
+   "qid": "Q23006268",
+   "fame": 0.597,
+   "composer": "Ludwig Göransson",
+   "kind": "film",
+   "description": "2018 American film directed by Ruben Fleischer",
+   "hook": "follows a struggling journalist who bonds with an alien symbiote, with Tom Hardy in the lead",
+   "known": 0.75
+  },
+  {
+   "label": "12 Monkeys",
+   "qid": "Q175038",
+   "fame": 0.594,
+   "composer": "Paul Buckmaster",
+   "kind": "film",
+   "description": "1995 film directed by Terry Gilliam",
+   "hook": "follows a convict sent back in time to learn about a deadly virus, with Bruce Willis and Brad Pitt",
+   "known": 0.7
+  },
+  {
+   "label": "Dances with Wolves",
+   "qid": "Q20456",
+   "fame": 0.594,
+   "composer": "John Barry",
+   "kind": "film",
+   "description": "1990 film directed by Kevin Costner",
+   "hook": "follows a Union lieutenant who befriends the Sioux on the American frontier and won Best Picture",
+   "known": 0.85
+  },
+  {
+   "label": "Ben-Hur",
+   "qid": "Q180098",
+   "fame": 0.593,
+   "composer": "Miklós Rózsa",
+   "kind": "film",
+   "description": "1959 American epic historical drama film by William Wyler",
+   "hook": "is an epic of a Jewish prince and a famous chariot race, starring Charlton Heston",
+   "known": 0.8
+  },
+  {
+   "label": "The Da Vinci Code",
+   "qid": "Q160560",
+   "fame": 0.593,
+   "composer": "Hans Zimmer",
+   "kind": "film",
+   "description": "2006 film directed by Ron Howard",
+   "hook": "follows Tom Hanks as a Harvard symbologist hunting a secret hidden by a Louvre curator",
+   "known": 0.8
+  },
+  {
+   "label": "Blood Diamond",
+   "qid": "Q74958",
+   "fame": 0.592,
+   "composer": "James Newton Howard",
+   "kind": "film",
+   "description": "2006 film by Edward Zwick",
+   "hook": "stars Leonardo DiCaprio as a smuggler hunting a rare gem during a civil war in West Africa",
+   "known": 0.75
+  },
+  {
+   "label": "Indiana Jones and the Last Crusade",
+   "qid": "Q185658",
+   "fame": 0.592,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "1989 film directed by Steven Spielberg",
+   "hook": "has Harrison Ford searching for the Holy Grail alongside his father, played by Sean Connery",
+   "known": 0.9
+  },
+  {
+   "label": "Quantum of Solace",
+   "qid": "Q181540",
+   "fame": 0.592,
+   "composer": "David Arnold",
+   "kind": "film",
+   "description": "2008 film by Marc Forster",
+   "hook": "is the Daniel Craig James Bond sequel that picks up right after Casino Royale",
+   "known": 0.75
+  },
+  {
+   "label": "Star Wars: Episode VI – Return of the Jedi",
+   "qid": "Q181803",
+   "fame": 0.592,
+   "composer": "John Williams",
+   "kind": "film",
+   "description": "1983 film directed by Richard Marquand",
+   "hook": "wraps up the original space-opera trilogy with a second planet-killing battle station and fuzzy forest allies",
+   "known": 0.98
+  },
+  {
+   "label": "3 Idiots",
+   "qid": "Q229633",
+   "fame": 0.591,
+   "composer": "Shantanu Moitra",
+   "kind": "film",
+   "description": "2009 film directed by Rajkumar Hirani",
+   "hook": "follows three engineering college friends in an Indian comedy-drama with Aamir Khan",
+   "known": 0.65
+  },
+  {
+   "label": "Groundhog Day",
+   "qid": "Q488655",
+   "fame": 0.591,
+   "composer": "George Fenton",
+   "kind": "film",
+   "description": "1993 film by Harold Ramis",
+   "hook": "has Bill Murray as a cynical weatherman trapped in a time loop reliving the same day",
+   "known": 0.8
+  },
+  {
+   "label": "Downfall",
+   "qid": "Q152857",
+   "fame": 0.59,
+   "composer": "Stephan Zacharias",
+   "kind": "film",
+   "description": "2004 film by Oliver Hirschbiegel",
+   "hook": null,
+   "known": 0.7
+  },
+  {
+   "label": "The King's Speech",
+   "qid": "Q160060",
+   "fame": 0.59,
+   "composer": "Alexandre Desplat",
+   "kind": "film",
+   "description": "2010 British film directed by Tom Hooper",
+   "hook": "follows a future British monarch who overcomes a stammer with help from an Australian therapist",
+   "known": 0.8
+  },
+  {
+   "label": "The Lord of the Rings: The Two Towers",
+   "qid": "Q164963",
+   "fame": 0.59,
+   "composer": "Howard Shore",
+   "kind": "film",
+   "description": "2002 film by Peter Jackson",
+   "hook": "is the middle chapter of Tolkien's epic, featuring the battle at Helm's Deep",
+   "known": 0.95
+  },
+  {
+   "label": "Sherlock Holmes",
+   "qid": "Q200396",
+   "fame": 0.589,
+   "composer": "Hans Zimmer",
+   "kind": "film",
+   "description": "2009 film directed by Guy Ritchie",
+   "hook": "has Robert Downey Jr. and Jude Law as a famous detective and his doctor partner in Victorian London",
+   "known": 0.8
+  },
+  {
+   "label": "Unforgiven",
+   "qid": "Q104137",
+   "fame": 0.588,
+   "composer": "Lennie Niehaus",
+   "kind": "film",
+   "description": "1992 American Western film directed by Clint Eastwood",
+   "hook": "stars Clint Eastwood as an aging outlaw who takes one last job, and won Best Picture",
+   "known": 0.8
+  }
+ ]
+}

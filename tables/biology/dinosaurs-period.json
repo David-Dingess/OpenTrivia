@@ -1,0 +1,290 @@
+{
+ "id": "table.biology.dinosaurs-period",
+ "kind": "table",
+ "title": "Dinosaurs and the period they lived in",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "dinosaurs",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?perName WHERE { { SELECT ?item (SAMPLE(?pn) AS ?perName) (COUNT(DISTINCT ?pn) AS ?nP) WHERE { ?item wdt:P171* wd:Q430 ; wdt:P105 wd:Q34740 ; wikibase:sitelinks ?sl . FILTER(?sl >= 22) ?item wdt:P2348 ?t . ?t wdt:P361* ?per . VALUES (?per ?pn) { (wd:Q47158 \"Triassic\") (wd:Q45805 \"Jurassic\") (wd:Q44626 \"Cretaceous\") } } GROUP BY ?item HAVING (COUNT(DISTINCT ?pn) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T17:40:31.317Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T17:40:31.317Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "period",
+   "label": "Period",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "dinosaur",
+  "many": "dinosaurs",
+  "capitalise": true,
+  "columns": {
+   "period": {
+    "role": "link",
+    "pick": "In which period did {label} live?",
+    "statement": "{label} lived in the {value} period.",
+    "match": "Match each dinosaur to the period it lived in.",
+    "odd": "Three of these dinosaurs lived in the {value} period. Which one didn't?",
+    "all": "Tap all {n} dinosaurs that lived in the {value} period.",
+    "reverse": "Which of these dinosaurs lived in the {value} period?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Tyrannosaurus",
+   "qid": "Q14332",
+   "fame": 0.651,
+   "period": "Cretaceous",
+   "description": "extinct genus of theropod dinosaurs",
+   "hook": "was a massive meat-eater with tiny arms, its species name meaning \"king\"",
+   "known": 0.8,
+   "kind": "theropod"
+  },
+  {
+   "label": "Allosaurus",
+   "qid": "Q14400",
+   "fame": 0.581,
+   "period": "Jurassic",
+   "description": "extinct genus of theropod dinosaurs (Theropoda)",
+   "hook": "was a big meat-eater whose name means \"different lizard\"",
+   "known": 0.6,
+   "kind": "theropod"
+  },
+  {
+   "label": "Spinosaurus",
+   "qid": "Q130966",
+   "fame": 0.567,
+   "period": "Cretaceous",
+   "description": "extinct genus of theropod dinosaurs belonging to the spinosaurid family",
+   "hook": "was a huge North African meat-eater named for the tall spines along its back",
+   "known": 0.6,
+   "kind": "theropod"
+  },
+  {
+   "label": "Velociraptor",
+   "qid": "Q14403",
+   "fame": 0.564,
+   "period": "Cretaceous",
+   "description": "extinct genus of theropod dinosaur belonging to the Dromaeosaurs",
+   "hook": "was a small feathered hunter with a sickle-shaped claw on each foot",
+   "known": 0.8,
+   "kind": "theropod"
+  },
+  {
+   "label": "Stegosaurus",
+   "qid": "Q14388",
+   "fame": 0.552,
+   "period": "Jurassic",
+   "description": "extinct genus of ornithischian dinosaurs (Ornithischia)",
+   "hook": "was a plant-eater with kite-shaped plates on its back and spikes on its tail",
+   "known": 0.8,
+   "kind": "stegosaur"
+  },
+  {
+   "label": "Triceratops",
+   "qid": "Q14384",
+   "fame": 0.548,
+   "period": "Cretaceous",
+   "description": "genus of Late Cretaceous ceratopsids",
+   "hook": "was a plant-eater with a big bony frill and three horns on its face",
+   "known": 0.8,
+   "kind": "ceratopsian"
+  },
+  {
+   "label": "Archaeopteryx",
+   "qid": "Q100196",
+   "fame": 0.538,
+   "period": "Jurassic",
+   "description": "genus of early bird-like dinosaur",
+   "hook": "was a feathered, bird-like creature long treated as the oldest known bird",
+   "known": 0.6,
+   "kind": "proto-bird"
+  },
+  {
+   "label": "Giganotosaurus",
+   "qid": "Q14438",
+   "fame": 0.52,
+   "period": "Cretaceous",
+   "description": "genus of carcharodontosaurid dinosaur (fossil)",
+   "hook": "was one of the largest meat-eaters ever to walk the land, found in Patagonia",
+   "known": 0.6,
+   "kind": "theropod"
+  },
+  {
+   "label": "Therizinosaurus",
+   "qid": "Q131264",
+   "fame": 0.519,
+   "period": "Cretaceous",
+   "description": "genus of reptiles (fossil)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "theropod"
+  },
+  {
+   "label": "Ankylosaurus",
+   "qid": "Q40621",
+   "fame": 0.516,
+   "period": "Cretaceous",
+   "description": "ankylosaurid dinosaur genus from the Late Cretaceous Period",
+   "hook": "was a heavily armored plant-eater often held up as the classic example of its group",
+   "known": 0.6,
+   "kind": "ankylosaur"
+  },
+  {
+   "label": "Brachiosaurus",
+   "qid": "Q14397",
+   "fame": 0.516,
+   "period": "Jurassic",
+   "description": "sauropod dinosaur genus from the late Jurassic Period",
+   "hook": "was a giant long-necked plant-eater with front limbs longer than its back ones",
+   "known": 0.8,
+   "kind": "sauropod"
+  },
+  {
+   "label": "Dilophosaurus",
+   "qid": "Q271710",
+   "fame": 0.509,
+   "period": "Jurassic",
+   "description": "genus of reptiles (fossil)",
+   "hook": "was an early meat-eater with a pair of crests on its skull",
+   "known": 0.4,
+   "kind": "theropod"
+  },
+  {
+   "label": "Deinonychus",
+   "qid": "Q14405",
+   "fame": 0.501,
+   "period": "Cretaceous",
+   "description": "extinct genus of dromaeosaurs",
+   "hook": "was a sharp-clawed hunter whose study launched the dinosaur renaissance",
+   "known": 0.4,
+   "kind": "theropod"
+  },
+  {
+   "label": "Diplodocus",
+   "qid": "Q14330",
+   "fame": 0.5,
+   "period": "Jurassic",
+   "description": "genus of diplodocid sauropod dinosaur (fossil)",
+   "hook": "was a very long-necked, long-tailed plant-eater, named for double-beamed bones under its tail",
+   "known": 0.6,
+   "kind": "sauropod"
+  },
+  {
+   "label": "Parasaurolophus",
+   "qid": "Q203583",
+   "fame": 0.499,
+   "period": "Cretaceous",
+   "description": "genus of hadrosaurid dinosaurs",
+   "hook": "was a duck-billed plant-eater with a long curved tube-shaped crest on its head",
+   "known": 0.4,
+   "kind": "ornithopod"
+  },
+  {
+   "label": "Argentinosaurus",
+   "qid": "Q130859",
+   "fame": 0.496,
+   "period": "Cretaceous",
+   "description": "extinct genus of sauropod dinosaur (Sauropoda)",
+   "hook": "was among the largest land animals of all time, known only from fragmentary bones",
+   "known": 0.4,
+   "kind": "sauropod"
+  },
+  {
+   "label": "Utahraptor",
+   "qid": "Q131193",
+   "fame": 0.496,
+   "period": "Cretaceous",
+   "description": "genus of reptiles (fossil)",
+   "hook": null,
+   "known": 0.3,
+   "kind": "theropod"
+  },
+  {
+   "label": "Carnotaurus",
+   "qid": "Q18510948",
+   "fame": 0.494,
+   "period": "Cretaceous",
+   "description": "genus of reptiles (fossil)",
+   "hook": "was a South American meat-eater with two thick horns above its eyes and tiny forelimbs",
+   "known": 0.4,
+   "kind": "theropod"
+  },
+  {
+   "label": "Pachycephalosaurus",
+   "qid": "Q14455",
+   "fame": 0.489,
+   "period": "Cretaceous",
+   "description": "Genus of ornithischian dinosaur",
+   "hook": null,
+   "known": 0.3,
+   "kind": "ornithopod"
+  },
+  {
+   "label": "Coelophysis",
+   "qid": "Q309392",
+   "fame": 0.484,
+   "period": "Triassic",
+   "description": "extinct genus of theropod dinosaurs (Theropoda)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "theropod"
+  },
+  {
+   "label": "Iguanodon",
+   "qid": "Q130980",
+   "fame": 0.464,
+   "period": "Cretaceous",
+   "description": "genus of iguanodontian dinosaur (fossil)",
+   "hook": "was a bulky plant-eater with large spikes on its thumbs",
+   "known": 0.4,
+   "kind": "ornithopod"
+  },
+  {
+   "label": "Carcharodontosaurus",
+   "qid": "Q14431",
+   "fame": 0.454,
+   "period": "Cretaceous",
+   "description": "genus of carnivorous carcharodontosaurid dinosaur (fossil)",
+   "hook": null,
+   "known": 0.3,
+   "kind": "theropod"
+  },
+  {
+   "label": "Apatosaurus",
+   "qid": "Q14326",
+   "fame": 0.451,
+   "period": "Jurassic",
+   "description": "genus of apatosaurs",
+   "hook": "was a stocky, heavily built long-necked plant-eater with air-filled bones",
+   "known": 0.6,
+   "kind": "sauropod"
+  }
+ ]
+}

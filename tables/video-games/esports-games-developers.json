@@ -1,0 +1,261 @@
+{
+ "id": "table.video-games.esports-games-developers",
+ "kind": "table",
+ "title": "Esports games and the studio behind them",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "esports",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?devLabel WHERE { { SELECT ?item (SAMPLE(?d) AS ?dev) (COUNT(DISTINCT ?d) AS ?nD) WHERE { ?item wdt:P31 wd:Q112144412 ; wdt:P178 ?d ; wikibase:sitelinks ?sl . FILTER(?sl >= 10) FILTER NOT EXISTS { ?item wdt:P852 ?esrb . VALUES ?esrb { wd:Q14864331 wd:Q14864332 wd:Q110488287 wd:Q124356066 } } } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nD = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T02:05:28.142Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T02:05:28.142Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "developer",
+   "label": "Developer",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "game",
+  "many": "games",
+  "hookAsk": "Which game {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "developer": {
+    "role": "link",
+    "pick": "Which studio made {label}?",
+    "statement": "{label} was made by {value}.",
+    "match": "Match each esports game to the studio that made it.",
+    "odd": "Three of these esports games were made by {value}. Which one wasn't?",
+    "all": "Tap all {n} esports games made by {value}.",
+    "reverse": "Which of these esports games did {value} make?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "World of Warcraft",
+   "qid": "Q131007",
+   "fame": 0.658,
+   "developer": "Blizzard Entertainment",
+   "description": "2004 video game by Blizzard Entertainment",
+   "hook": "lets millions explore a fantasy realm online as orcs, elves and humans, the biggest subscription MMO",
+   "known": 0.8,
+   "kind": "mmo"
+  },
+  {
+   "label": "Fortnite",
+   "qid": "Q349375",
+   "fame": 0.639,
+   "developer": "Epic Games",
+   "description": "2017 video game developed by Epic Games",
+   "hook": "drops 100 players onto an island to build forts and be the last one standing, with a hugely popular free mode",
+   "known": 0.8,
+   "kind": "battle royale"
+  },
+  {
+   "label": "Free Fire",
+   "qid": "Q51883198",
+   "fame": 0.589,
+   "developer": "Garena",
+   "description": "2017 multiplayer online battle royale game",
+   "hook": "is a mobile battle royale with short matches that runs well on low-end phones and is hugely popular worldwide",
+   "known": 0.4,
+   "kind": "battle royale"
+  },
+  {
+   "label": "League of Legends",
+   "qid": "Q223341",
+   "fame": 0.584,
+   "developer": "Riot Games",
+   "description": "2009 multiplayer online battle arena video game",
+   "hook": "pits two teams of five champions against each other to destroy the enemy base, filling arenas for its finals",
+   "known": 0.8,
+   "kind": "moba"
+  },
+  {
+   "label": "Counter-Strike 2",
+   "qid": "Q111165107",
+   "fame": 0.55,
+   "developer": "Valve Corporation",
+   "description": "2023 video game",
+   "hook": "is the latest of the legendary team shooters where one side plants a bomb and the other defuses it",
+   "known": 0.6,
+   "kind": "fps"
+  },
+  {
+   "label": "Warcraft III: Reign of Chaos",
+   "qid": "Q207948",
+   "fame": 0.549,
+   "developer": "Blizzard Entertainment",
+   "description": "2002 video game",
+   "hook": "is a fantasy real-time strategy game where hero units lead armies, and it spawned a huge custom-map scene",
+   "known": 0.4,
+   "kind": "rts"
+  },
+  {
+   "label": "Street Fighter II",
+   "qid": "Q1133204",
+   "fame": 0.53,
+   "developer": "Capcom",
+   "description": "1991 video game developed by Capcom",
+   "hook": "is the arcade classic that launched the one-on-one tournament craze, with Ryu, Chun-Li and a hadouken fireball",
+   "known": 0.8,
+   "kind": "fighting game"
+  },
+  {
+   "label": "Valorant",
+   "qid": "Q86919275",
+   "fame": 0.528,
+   "developer": "Riot Games",
+   "description": "2020 free-to-play multiplayer first-person shooter video game developed by Riot Games",
+   "hook": "is a tactical five-versus-five shooter where agents with special abilities plant or defuse a spike",
+   "known": 0.6,
+   "kind": "fps"
+  },
+  {
+   "label": "FIFA",
+   "qid": "Q326704",
+   "fame": 0.524,
+   "developer": "EA Sports",
+   "description": "association football video game series",
+   "hook": "is the best-selling annual soccer video game series, famous for Ultimate Team card packs",
+   "known": 0.8,
+   "kind": "sports game"
+  },
+  {
+   "label": "Street Fighter 6",
+   "qid": "Q110999026",
+   "fame": 0.519,
+   "developer": "Capcom",
+   "description": "2023 fighting game developed by Capcom",
+   "hook": "is a modern one-on-one brawler with a Drive gauge and a World Tour mode where you create your own avatar",
+   "known": 0.4,
+   "kind": "fighting game"
+  },
+  {
+   "label": "Dota 2",
+   "qid": "Q771541",
+   "fame": 0.518,
+   "developer": "Valve Corporation",
+   "description": "2013 video game",
+   "hook": "is a five-a-side team game of defending ancient bases, famed for esports prize pools in the millions",
+   "known": 0.6,
+   "kind": "moba"
+  },
+  {
+   "label": "StarCraft II",
+   "qid": "Q18142874",
+   "fame": 0.509,
+   "developer": "Blizzard Entertainment",
+   "description": "game series from Blizzard Entertainment",
+   "hook": "is a sci-fi real-time strategy game where Terran, Zerg and Protoss clash, huge in South Korea",
+   "known": 0.4,
+   "kind": "rts"
+  },
+  {
+   "label": "Brawl Stars",
+   "qid": "Q30330493",
+   "fame": 0.506,
+   "developer": "Supercell",
+   "description": "2018 video game",
+   "hook": "is a fast mobile game of short three-versus-three matches with a cast of quirky playable characters",
+   "known": 0.4,
+   "kind": "mobile game"
+  },
+  {
+   "label": "Super Smash Bros. Melee",
+   "qid": "Q1052131",
+   "fame": 0.505,
+   "developer": "HAL Laboratory",
+   "description": "crossover fighting video game developed by Nintendo for the Nintendo GameCube in 2001",
+   "hook": "is a GameCube brawler with Mario and Link, beloved by competitive players for fast techniques like wavedashing",
+   "known": 0.4,
+   "kind": "fighting game"
+  },
+  {
+   "label": "Rocket League",
+   "qid": "Q20031743",
+   "fame": 0.503,
+   "developer": "Psyonix",
+   "description": "2015 video game",
+   "hook": "mixes soccer with jet-powered cars that boost into a giant ball to score goals",
+   "known": 0.6,
+   "kind": "sports game"
+  },
+  {
+   "label": "Escape from Tarkov",
+   "qid": "Q23038939",
+   "fame": 0.498,
+   "developer": "Battlestate Games",
+   "description": "2017 first-person shooter game developed by Battlestate Games",
+   "hook": null,
+   "known": 0.2,
+   "kind": "fps"
+  },
+  {
+   "label": "Injustice: Gods Among Us",
+   "qid": "Q619427",
+   "fame": 0.48,
+   "developer": "NetherRealm Studios",
+   "description": "2013 video game",
+   "hook": "is a fighting game where DC superheroes like Batman and Superman battle on stage-hazard arenas",
+   "known": 0.4,
+   "kind": "fighting game"
+  },
+  {
+   "label": "Overwatch",
+   "qid": "Q18515944",
+   "fame": 0.479,
+   "developer": "Blizzard Entertainment",
+   "description": "2016 multiplayer first-person shooter video game",
+   "hook": "is a colorful team shooter where two sides of heroes with unique abilities fight over objectives",
+   "known": 0.6,
+   "kind": "fps"
+  },
+  {
+   "label": "Heroes of the Storm",
+   "qid": "Q15139655",
+   "fame": 0.477,
+   "developer": "Blizzard Entertainment",
+   "description": "multiplayer video game by Blizzard Entertainment",
+   "hook": "is a team brawler mashing together famous characters from many fantasy and sci-fi worlds",
+   "known": 0.2,
+   "kind": "moba"
+  },
+  {
+   "label": "Honor of Kings",
+   "qid": "Q28360116",
+   "fame": 0.456,
+   "developer": "TiMi Studio Group",
+   "description": "2015 Chinese MOBA video game",
+   "hook": "is a mobile team battle game with legendary Chinese figures that is among the most-played in the world",
+   "known": 0.2,
+   "kind": "mobile game"
+  }
+ ]
+}

@@ -1,0 +1,368 @@
+{
+ "id": "table.wordplay.words-named-after-places",
+ "kind": "table",
+ "title": "Words named after places",
+ "genre": "general",
+ "category": "wordplay",
+ "topic": "eponyms",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?place WHERE { VALUES (?article ?place) { (<https://en.wikipedia.org/wiki/Denim> \"Nîmes, France\") (<https://en.wikipedia.org/wiki/Jeans> \"Genoa, Italy\") (<https://en.wikipedia.org/wiki/Bikini> \"Bikini Atoll\") (<https://en.wikipedia.org/wiki/Eau_de_Cologne> \"Cologne, Germany\") (<https://en.wikipedia.org/wiki/Champagne_%28wine%29> \"Champagne, France\") (<https://en.wikipedia.org/wiki/Cheddar_cheese> \"Cheddar, England\") (<https://en.wikipedia.org/wiki/Parmigiano-Reggiano> \"Parma, Italy\") (<https://en.wikipedia.org/wiki/Gouda_cheese> \"Gouda, Netherlands\") (<https://en.wikipedia.org/wiki/Brie> \"Brie, France\") (<https://en.wikipedia.org/wiki/Camembert> \"Camembert, France\") (<https://en.wikipedia.org/wiki/Roquefort> \"Roquefort-sur-Soulzon, France\") (<https://en.wikipedia.org/wiki/Gorgonzola> \"Gorgonzola, Italy\") (<https://en.wikipedia.org/wiki/Emmental_cheese> \"Emmental, Switzerland\") (<https://en.wikipedia.org/wiki/Hamburger> \"Hamburg, Germany\") (<https://en.wikipedia.org/wiki/Frankfurter_W%C3%BCrstchen> \"Frankfurt, Germany\") (<https://en.wikipedia.org/wiki/Bolognese_sauce> \"Bologna, Italy\") (<https://en.wikipedia.org/wiki/Tuxedo> \"Tuxedo Park, New York\") (<https://en.wikipedia.org/wiki/Cognac> \"Cognac, France\") (<https://en.wikipedia.org/wiki/Sherry> \"Jerez, Spain\") (<https://en.wikipedia.org/wiki/Port_wine> \"Porto, Portugal\") (<https://en.wikipedia.org/wiki/Madeira_wine> \"Madeira\") (<https://en.wikipedia.org/wiki/Tequila> \"Tequila, Mexico\") (<https://en.wikipedia.org/wiki/Pilsner> \"Plzeň, Czechia\") (<https://en.wikipedia.org/wiki/Chianti> \"Chianti, Italy\") (<https://en.wikipedia.org/wiki/Marsala_wine> \"Marsala, Italy\") (<https://en.wikipedia.org/wiki/Prosecco> \"Prosecco, Italy\") (<https://en.wikipedia.org/wiki/Dijon_mustard> \"Dijon, France\") (<https://en.wikipedia.org/wiki/Worcestershire_sauce> \"Worcester, England\") (<https://en.wikipedia.org/wiki/Sriracha> \"Si Racha, Thailand\") (<https://en.wikipedia.org/wiki/Tabasco_pepper> \"Tabasco, Mexico\") (<https://en.wikipedia.org/wiki/Cayenne_pepper> \"Cayenne, French Guiana\") (<https://en.wikipedia.org/wiki/Jalape%C3%B1o> \"Xalapa, Mexico\") (<https://en.wikipedia.org/wiki/Cantaloupe> \"Cantalupo, Italy\") (<https://en.wikipedia.org/wiki/Tangerine> \"Tangier, Morocco\") (<https://en.wikipedia.org/wiki/Satsuma_%28fruit%29> \"Satsuma Province, Japan\") (<https://en.wikipedia.org/wiki/Seville_orange> \"Seville, Spain\") (<https://en.wikipedia.org/wiki/Brussels_sprout> \"Brussels, Belgium\") (<https://en.wikipedia.org/wiki/Lima_bean> \"Lima, Peru\") (<https://en.wikipedia.org/wiki/Peking_duck> \"Beijing, China\") (<https://en.wikipedia.org/wiki/Baked_Alaska> \"Alaska\") (<https://en.wikipedia.org/wiki/Manhattan_%28cocktail%29> \"Manhattan, New York\") (<https://en.wikipedia.org/wiki/Buffalo_wing> \"Buffalo, New York\") (<https://en.wikipedia.org/wiki/Key_lime_pie> \"the Florida Keys\") (<https://en.wikipedia.org/wiki/Waldorf_salad> \"Waldorf Astoria Hotel, New York\") (<https://en.wikipedia.org/wiki/Eccles_cake> \"Eccles, England\") (<https://en.wikipedia.org/wiki/Bakewell_tart> \"Bakewell, England\") (<https://en.wikipedia.org/wiki/Yorkshire_pudding> \"Yorkshire, England\") (<https://en.wikipedia.org/wiki/Cornish_pasty> \"Cornwall, England\") (<https://en.wikipedia.org/wiki/Cashmere_wool> \"Kashmir\") (<https://en.wikipedia.org/wiki/Jersey_%28clothing%29> \"Jersey\") (<https://en.wikipedia.org/wiki/Guernsey_%28clothing%29> \"Guernsey\") (<https://en.wikipedia.org/wiki/Suede> \"Sweden\") (<https://en.wikipedia.org/wiki/Muslin> \"Mosul, Iraq\") (<https://en.wikipedia.org/wiki/Damask> \"Damascus, Syria\") (<https://en.wikipedia.org/wiki/Calico> \"Calicut, India\") (<https://en.wikipedia.org/wiki/Worsted> \"Worstead, England\") (<https://en.wikipedia.org/wiki/Panama_hat> \"Panama\") (<https://en.wikipedia.org/wiki/Oxford_shoe> \"Oxford, England\") (<https://en.wikipedia.org/wiki/Bermuda_shorts> \"Bermuda\") (<https://en.wikipedia.org/wiki/Jodhpurs> \"Jodhpur, India\") (<https://en.wikipedia.org/wiki/Balaclava_%28clothing%29> \"Balaclava, Crimea\") (<https://en.wikipedia.org/wiki/Homburg_%28hat%29> \"Bad Homburg, Germany\") (<https://en.wikipedia.org/wiki/Duffel_bag> \"Duffel, Belgium\") (<https://en.wikipedia.org/wiki/Fez_%28hat%29> \"Fez, Morocco\") (<https://en.wikipedia.org/wiki/Bayonet> \"Bayonne, France\") (<https://en.wikipedia.org/wiki/Limerick> \"Limerick, Ireland\") (<https://en.wikipedia.org/wiki/Marathon> \"Marathon, Greece\") (<https://en.wikipedia.org/wiki/Rugby_football> \"Rugby, England\") (<https://en.wikipedia.org/wiki/Badminton> \"Badminton House, England\") (<https://en.wikipedia.org/wiki/Spa> \"Spa, Belgium\") (<https://en.wikipedia.org/wiki/Sardine> \"Sardinia\") (<https://en.wikipedia.org/wiki/Magenta> \"Magenta, Italy\") (<https://en.wikipedia.org/wiki/Sienna_%28color%29> \"Siena, Italy\") (<https://en.wikipedia.org/wiki/Venetian_blind> \"Venice, Italy\") (<https://en.wikipedia.org/wiki/Bungalow> \"Bengal\") (<https://en.wikipedia.org/wiki/Shanghai> \"Shanghai, China\") (<https://en.wikipedia.org/wiki/Balkanization> \"the Balkans\") (<https://en.wikipedia.org/wiki/Tarantula> \"Taranto, Italy\") (<https://en.wikipedia.org/wiki/Chihuahua_%28dog%29> \"Chihuahua, Mexico\") (<https://en.wikipedia.org/wiki/Dalmatian_%28dog%29> \"Dalmatia, Croatia\") (<https://en.wikipedia.org/wiki/Labrador_Retriever> \"Labrador, Canada\") (<https://en.wikipedia.org/wiki/Pekingese> \"Beijing, China\") (<https://en.wikipedia.org/wiki/Siamese_cat> \"Siam (Thailand)\") (<https://en.wikipedia.org/wiki/Persian_cat> \"Persia (Iran)\") (<https://en.wikipedia.org/wiki/Rottweiler> \"Rottweil, Germany\") (<https://en.wikipedia.org/wiki/Pomeranian_dog> \"Pomerania\") (<https://en.wikipedia.org/wiki/Newfoundland_dog> \"Newfoundland, Canada\") (<https://en.wikipedia.org/wiki/Shetland_pony> \"the Shetland Islands\") (<https://en.wikipedia.org/wiki/Yorkshire_Terrier> \"Yorkshire, England\") (<https://en.wikipedia.org/wiki/Airedale_Terrier> \"Airedale, England\") (<https://en.wikipedia.org/wiki/Siberian_Husky> \"Siberia\") (<https://en.wikipedia.org/wiki/Alsatian_%28dog%29> \"Alsace, France\") (<https://en.wikipedia.org/wiki/Maine_Coon> \"Maine\") (<https://en.wikipedia.org/wiki/Manx_cat> \"the Isle of Man\") (<https://en.wikipedia.org/wiki/Abyssinian_cat> \"Abyssinia (Ethiopia)\") (<https://en.wikipedia.org/wiki/Havana_cigar> \"Havana, Cuba\") (<https://en.wikipedia.org/wiki/Laconic_phrase> \"Laconia, Greece\") (<https://en.wikipedia.org/wiki/Copper> \"Cyprus\") (<https://en.wikipedia.org/wiki/Dollar> \"Joachimsthal, Bohemia\") } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T05:56:51.291Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T13:30:19.676Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "named_after",
+   "label": "Named after",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "word",
+  "many": "words",
+  "wildcard": "place",
+  "exclude": [
+   {
+    "qid": "Q6663",
+    "why": "label and answer share a root"
+   },
+   {
+    "qid": "Q39093",
+    "why": "label and answer share a root"
+   },
+   {
+    "qid": "Q1162965",
+    "why": "label and answer share a root"
+   },
+   {
+    "qid": "Q842618",
+    "why": "label and answer share a root"
+   },
+   {
+    "qid": "Q39579",
+    "why": "label and answer share a root"
+   },
+   {
+    "qid": "Q42604",
+    "why": "label and answer share a root"
+   },
+   {
+    "qid": "Q42610",
+    "why": "label and answer share a root"
+   },
+   {
+    "qid": "Q39295",
+    "why": "label and answer share a root"
+   },
+   {
+    "qid": "Q7955",
+    "why": "label and answer share a root"
+   },
+   {
+    "qid": "Q173366",
+    "why": "label and answer share a root"
+   },
+   {
+    "qid": "Q404973",
+    "why": "same answer as Pekingese"
+   },
+   {
+    "qid": "Q471191",
+    "why": "label and answer share a root"
+   }
+  ],
+  "columns": {
+   "named_after": {
+    "role": "code",
+    "pick": "Which place is the word {label} named after?",
+    "statement": "The word {label} is named after {value}.",
+    "match": "Match each word to the place it is named after.",
+    "reverse": "Which word is named after {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "copper",
+   "qid": "Q753",
+   "fame": 0.598,
+   "named_after": "Cyprus",
+   "description": "chemical element with symbol Cu and atomic number 29",
+   "hook": "is a reddish-orange metal widely used in electrical wiring and old pennies",
+   "known": 0.8,
+   "kind": "chemical element"
+  },
+  {
+   "label": "hamburger",
+   "qid": "Q6663",
+   "fame": 0.594,
+   "named_after": "Hamburg, Germany",
+   "description": "American sandwich of ground beef patty",
+   "hook": "is a bun-wrapped ground beef patty, a staple of American cookouts and fast food",
+   "known": 0.95,
+   "kind": "food"
+  },
+  {
+   "label": "Rottweiler",
+   "qid": "Q39093",
+   "fame": 0.593,
+   "named_after": "Rottweil, Germany",
+   "description": "German dog breed",
+   "hook": "is a big, powerful, black-and-tan dog once used to drive cattle and pull butchers' carts",
+   "known": 0.8,
+   "kind": "dog breed"
+  },
+  {
+   "label": "bolognese sauce",
+   "qid": "Q1162965",
+   "fame": 0.584,
+   "named_after": "Bologna, Italy",
+   "description": "sauce",
+   "hook": "is a slow-cooked meat ragu with onion, celery and carrot, often served over pasta",
+   "known": 0.8,
+   "kind": "sauce"
+  },
+  {
+   "label": "Worcestershire sauce",
+   "qid": "Q842618",
+   "fame": 0.58,
+   "named_after": "Worcester, England",
+   "description": "sauce",
+   "hook": "is a tangy fermented condiment, famously made by Lea & Perrins, splashed on steak and Bloody Marys",
+   "known": 0.6,
+   "kind": "sauce"
+  },
+  {
+   "label": "Pomeranian",
+   "qid": "Q39579",
+   "fame": 0.571,
+   "named_after": "Pomerania",
+   "description": "dog breed",
+   "hook": "is a tiny, fluffy toy dog beloved by Queen Victoria",
+   "known": 0.6,
+   "kind": "dog breed"
+  },
+  {
+   "label": "Siamese",
+   "qid": "Q42604",
+   "fame": 0.558,
+   "named_after": "Siam",
+   "description": "breed of Oriental cat originated in Thailand",
+   "hook": "is a blue-eyed, dark-pointed cat breed with a loud voice, and the villains of a Disney dog movie",
+   "known": 0.8,
+   "kind": "cat breed"
+  },
+  {
+   "label": "Persian cat",
+   "qid": "Q42610",
+   "fame": 0.547,
+   "named_after": "Persia",
+   "description": "cat breed",
+   "hook": "is a long-haired, flat-faced cat breed, often a pampered show favorite",
+   "known": 0.8,
+   "kind": "cat breed"
+  },
+  {
+   "label": "Siberian Husky",
+   "qid": "Q39295",
+   "fame": 0.53,
+   "named_after": "Siberia",
+   "description": "dog breed",
+   "hook": "is a thick-coated, blue-eyed sled-pulling dog, famous for the serum run to Nome",
+   "known": 0.8,
+   "kind": "dog breed"
+  },
+  {
+   "label": "Abyssinian",
+   "qid": "Q7955",
+   "fame": 0.521,
+   "named_after": "Abyssinia",
+   "description": "cat breed",
+   "hook": "is a slender cat breed with a ticked, wildcat-like coat and big ears",
+   "known": 0.4,
+   "kind": "cat breed"
+  },
+  {
+   "label": "jalapeño",
+   "qid": "Q504133",
+   "fame": 0.518,
+   "named_after": "Xalapa, Mexico",
+   "description": "hot pepper",
+   "hook": "is a green chili pepper of medium heat, often stuffed with cheese and fried as poppers",
+   "known": 0.8,
+   "kind": "food"
+  },
+  {
+   "label": "Manx",
+   "qid": "Q42675",
+   "fame": 0.517,
+   "named_after": "the Isle of Man",
+   "description": "breed of domestic cat",
+   "hook": null,
+   "known": 0.2,
+   "kind": "cat breed"
+  },
+  {
+   "label": "Port Wine",
+   "qid": "Q191034",
+   "fame": 0.517,
+   "named_after": "Porto, Portugal",
+   "description": "Portuguese fortified wine",
+   "hook": "is a sweet, fortified red from the Douro Valley, traditionally served after dinner",
+   "known": 0.6,
+   "kind": "wine"
+  },
+  {
+   "label": "Pekingese",
+   "qid": "Q38959",
+   "fame": 0.516,
+   "named_after": "Beijing, China",
+   "description": "dog breed",
+   "hook": "is a small, flat-faced toy dog once bred as a companion for Chinese emperors",
+   "known": 0.6,
+   "kind": "dog breed"
+  },
+  {
+   "label": "bayonet",
+   "qid": "Q173366",
+   "fame": 0.504,
+   "named_after": "Bayonne, France",
+   "description": "bladed weapon designed for attachment to a firearm",
+   "hook": "is a blade fixed to the end of a rifle, turning it into a spear for close combat",
+   "known": 0.4,
+   "kind": "weapon"
+  },
+  {
+   "label": "sherry",
+   "qid": "Q16398",
+   "fame": 0.495,
+   "named_after": "Jerez, Spain",
+   "description": "fortified wine made from white grapes",
+   "hook": "is a fortified wine from Andalusia, ranging from bone-dry fino to sweet cream styles",
+   "known": 0.6,
+   "kind": "wine"
+  },
+  {
+   "label": "denim",
+   "qid": "Q652698",
+   "fame": 0.492,
+   "named_after": "Nîmes, France",
+   "description": "sturdy cotton or cotton-blend twill textile",
+   "hook": "is the rugged indigo twill cotton cloth used for blue work trousers",
+   "known": 0.95,
+   "kind": "textile"
+  },
+  {
+   "label": "cashmere",
+   "qid": "Q333631",
+   "fame": 0.49,
+   "named_after": "Kashmir",
+   "description": "fibre obtained from Cashmere goats and other types of goat",
+   "hook": "is a luxuriously soft wool combed from the undercoat of certain goats, used in pricey sweaters",
+   "known": 0.8,
+   "kind": "textile"
+  },
+  {
+   "label": "jeans",
+   "qid": "Q83363",
+   "fame": 0.487,
+   "named_after": "Genoa, Italy",
+   "description": "trousers often made from denim or dungaree cloth",
+   "hook": "are the blue trousers made famous by Levi Strauss and copper rivets",
+   "known": 0.95,
+   "kind": "textile"
+  },
+  {
+   "label": "bungalow",
+   "qid": "Q850107",
+   "fame": 0.48,
+   "named_after": "Bengal",
+   "description": "house that is either single-storey or has a second storey built into a sloping roof, popular in North America",
+   "hook": "is a cozy single-storey house with a wide veranda, a style adapted from colonial India",
+   "known": 0.6,
+   "kind": "architecture"
+  },
+  {
+   "label": "Peking duck",
+   "qid": "Q404973",
+   "fame": 0.477,
+   "named_after": "Beijing, China",
+   "description": "roast duck from Beijing (Peking)",
+   "hook": "is a roast bird with crackling-thin skin, carved at the table and wrapped in pancakes",
+   "known": 0.6,
+   "kind": "food"
+  },
+  {
+   "label": "balkanization",
+   "qid": "Q471191",
+   "fame": 0.463,
+   "named_after": "the Balkans",
+   "description": "geopolitical term for the fragmentation of a region into smaller states",
+   "hook": null,
+   "known": 0.2,
+   "kind": "term"
+  },
+  {
+   "label": "tangerine",
+   "qid": "Q516494",
+   "fame": 0.462,
+   "named_after": "Tangier, Morocco",
+   "description": "citrus species with orange-colored fruit",
+   "hook": "is a small, sweet, easy-peeling orange citrus fruit related to the mandarin",
+   "known": 0.8,
+   "kind": "food"
+  },
+  {
+   "label": "pilsner",
+   "qid": "Q152281",
+   "fame": 0.459,
+   "named_after": "Plzeň, Czechia",
+   "description": "type of pale lager",
+   "hook": "is a crisp, golden lager that began in Bohemia and became the world's most copied beer style",
+   "known": 0.6,
+   "kind": "beer"
+  },
+  {
+   "label": "muslin",
+   "qid": "Q725457",
+   "fame": 0.458,
+   "named_after": "Mosul, Iraq",
+   "description": "cotton fabric of plain weave",
+   "hook": "is a light, plain-weave cotton cloth, used for cheesecloth-style straining and costume mockups",
+   "known": 0.4,
+   "kind": "textile"
+  },
+  {
+   "label": "dollar",
+   "qid": "Q14083",
+   "fame": 0.451,
+   "named_after": "Joachimsthal, Bohemia",
+   "description": "name of many currencies",
+   "hook": "is the name of the money used in America, Canada and Australia",
+   "known": 0.95,
+   "kind": "currency"
+  }
+ ]
+}

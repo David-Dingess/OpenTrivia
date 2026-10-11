@@ -1,0 +1,458 @@
+{
+ "id": "table.wordplay.acronym-organizations",
+ "kind": "table",
+ "title": "Famous organizations and their acronyms",
+ "genre": "general",
+ "category": "wordplay",
+ "topic": "acronyms",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?acronym ?countryLabel WHERE { VALUES ?item { wd:Q1065 wd:Q7817 wd:Q7159 wd:Q7825 wd:Q7795 wd:Q35572 wd:Q42262 wd:Q47488 wd:Q40970 wd:Q41550 wd:Q6867 wd:Q123759 wd:Q170481 wd:Q132551 wd:Q170418 wd:Q125761 wd:Q40469 wd:Q171183 wd:Q187052 wd:Q170424 wd:Q33438 wd:Q131566 wd:Q18543 wd:Q166546 wd:Q151888 wd:Q749394 wd:Q200863 wd:Q461761 wd:Q217082 wd:Q175386 wd:Q271805 wd:Q127992 wd:Q456157 wd:Q668687 wd:Q176691 wd:Q242540 wd:Q304878 wd:Q466587 wd:Q493845 wd:Q465697 wd:Q973587 wd:Q373087 wd:Q130171 wd:Q73002 wd:Q1150494 wd:Q1427072 wd:Q217595 wd:Q247556 wd:Q40358 wd:Q1329523 wd:Q208371 wd:Q618696 wd:Q519826 wd:Q82494 wd:Q48413 wd:Q219555 wd:Q207460 wd:Q1641836 wd:Q913672 wd:Q193272 wd:Q816706 wd:Q145700 wd:Q188822 wd:Q217172 wd:Q47543 wd:Q485207 wd:Q81299 wd:Q83201 wd:Q7779 wd:Q1069175 wd:Q210347 wd:Q683524 wd:Q842490 wd:Q229478 } ?item wdt:P1813 ?acronym . FILTER(LANG(?acronym) = 'en') ?item wdt:P159/wdt:P17 ?country . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T14:38:10.619Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T14:38:10.619Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "acronym",
+   "label": "Acronym",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "country",
+   "label": "Headquarters country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "organization",
+  "many": "organizations",
+  "exclude": [
+   {
+    "qid": "Q7159",
+    "why": "African Union seat is disputed in the data"
+   },
+   {
+    "qid": "Q217082",
+    "why": "no real headquarters"
+   },
+   {
+    "qid": "Q519826",
+    "why": "too specific"
+   },
+   {
+    "qid": "Q176691",
+    "why": "too specific"
+   },
+   {
+    "qid": "Q217595",
+    "why": "too specific"
+   },
+   {
+    "qid": "Q217172",
+    "why": "too specific"
+   }
+  ],
+  "columns": {
+   "acronym": {
+    "role": "code",
+    "pick": "What is the common acronym for {label}?",
+    "statement": "{label} is commonly known as {value}.",
+    "match": "Match each organization to its acronym.",
+    "reverse": "Which organization goes by the acronym {value}?"
+   },
+   "country": {
+    "role": "link",
+    "pick": "In which country is {label} headquartered?",
+    "statement": "{label} is headquartered in {value}.",
+    "match": "Match each organization to the country it is headquartered in."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "United Nations",
+   "qid": "Q1065",
+   "fame": 0.713,
+   "acronym": "UN",
+   "country": "United States",
+   "description": "global international and intergovernmental organization",
+   "hook": "brings countries together in a General Assembly and a Security Council to keep the peace",
+   "known": 0.95,
+   "kind": "international government"
+  },
+  {
+   "label": "Major League Soccer",
+   "qid": "Q18543",
+   "fame": 0.662,
+   "acronym": "MLS",
+   "country": "United States",
+   "description": "professional soccer league in the USA and Canada",
+   "hook": "is the top professional circuit where clubs like Inter Miami and the LA Galaxy compete",
+   "known": 0.8,
+   "kind": "sports league"
+  },
+  {
+   "label": "Canadian Broadcasting Corporation",
+   "qid": "Q461761",
+   "fame": 0.658,
+   "acronym": "CBC",
+   "country": "Canada",
+   "description": "Canadian public broadcaster",
+   "hook": "is the public radio and television network behind Hockey Night",
+   "known": 0.6,
+   "kind": "media broadcaster"
+  },
+  {
+   "label": "Union of European Football Associations",
+   "qid": "Q35572",
+   "fame": 0.612,
+   "acronym": "UEFA",
+   "country": "Switzerland",
+   "description": "international governing body for association football in Europe",
+   "hook": "runs the Champions League and the continental championship for clubs and national teams",
+   "known": 0.8,
+   "kind": "sports federation"
+  },
+  {
+   "label": "International Criminal Court",
+   "qid": "Q47488",
+   "fame": 0.601,
+   "acronym": "ICC",
+   "country": "Netherlands",
+   "description": "intergovernmental organization and international tribunal",
+   "hook": "sits in The Hague and tries individuals for war crimes and genocide",
+   "known": 0.6,
+   "kind": "international government"
+  },
+  {
+   "label": "Organization for Economic Cooperation and Development",
+   "qid": "Q41550",
+   "fame": 0.601,
+   "acronym": "OECD",
+   "country": "France",
+   "description": "intergovernmental economic organization",
+   "hook": "is a Paris-based club of wealthy, market-driven nations that publishes influential statistics",
+   "known": 0.8,
+   "kind": "international economic"
+  },
+  {
+   "label": "Amazon Web Services",
+   "qid": "Q456157",
+   "fame": 0.597,
+   "acronym": "AWS",
+   "country": "United States",
+   "description": "subsidiary of Amazon that provides on-demand cloud computing platforms on a metered pay-as-you-go basis",
+   "hook": "is the cloud computing arm of the online retail giant, hosting much of the internet",
+   "known": 0.8,
+   "kind": "tech company"
+  },
+  {
+   "label": "World Health Organization",
+   "qid": "Q7817",
+   "fame": 0.57,
+   "acronym": "WHO",
+   "country": "Switzerland",
+   "description": "United Nations agency concerned with international public health",
+   "hook": "is the UN agency that leads global responses to pandemics and declared COVID-19 a pandemic",
+   "known": 0.95,
+   "kind": "international government"
+  },
+  {
+   "label": "National Collegiate Athletic Association",
+   "qid": "Q271805",
+   "fame": 0.564,
+   "acronym": "NCAA",
+   "country": "United States",
+   "description": "American collegiate athletic organization",
+   "hook": "governs college sports and runs the March Madness basketball tournament",
+   "known": 0.8,
+   "kind": "sports federation"
+  },
+  {
+   "label": "Associated Press",
+   "qid": "Q40469",
+   "fame": 0.557,
+   "acronym": "AP",
+   "country": "United States",
+   "description": "multinational nonprofit news agency headquartered in New York, United States",
+   "hook": "is a nonprofit news agency whose stylebook is followed by newsrooms across the country",
+   "known": 0.8,
+   "kind": "news media"
+  },
+  {
+   "label": "Organization of the Petroleum Exporting Countries",
+   "qid": "Q7795",
+   "fame": 0.554,
+   "acronym": "OPEC",
+   "country": "Austria",
+   "description": "international organization of petroleum-exporting countries",
+   "hook": "is a cartel of oil-producing nations that sets production quotas to influence crude prices",
+   "known": 0.8,
+   "kind": "international economic"
+  },
+  {
+   "label": "United States Postal Service",
+   "qid": "Q668687",
+   "fame": 0.553,
+   "acronym": "USPS",
+   "country": "United States",
+   "description": "independent agency of the U.S. federal government responsible for providing postal service",
+   "hook": "delivers letters and packages to every address, with its carriers famously braving snow, rain and heat",
+   "known": 0.8,
+   "kind": "government service"
+  },
+  {
+   "label": "African Union",
+   "qid": "Q7159",
+   "fame": 0.548,
+   "acronym": "AU",
+   "country": "South Africa",
+   "description": "supranational union in Africa",
+   "hook": "unites the member states of an entire continent and has its headquarters in Addis Ababa",
+   "known": 0.6,
+   "kind": "international coalition"
+  },
+  {
+   "label": "New Japan Pro-Wrestling",
+   "qid": "Q1150494",
+   "fame": 0.541,
+   "acronym": "NJPW",
+   "country": "Japan",
+   "description": "Japanese professional wrestling promotion",
+   "hook": "is the biggest grappling promotion in its home country, home to the Tokyo Dome show Wrestle Kingdom",
+   "known": 0.4,
+   "kind": "wrestling promotion"
+  },
+  {
+   "label": "World Economic Forum",
+   "qid": "Q170418",
+   "fame": 0.536,
+   "acronym": "WEF",
+   "country": "Switzerland",
+   "description": "Swiss nonprofit foundation",
+   "hook": "hosts an annual meeting of business and world leaders in the Alpine ski town of Davos",
+   "known": 0.6,
+   "kind": "business forum"
+  },
+  {
+   "label": "World Trade Organization",
+   "qid": "Q7825",
+   "fame": 0.527,
+   "acronym": "WTO",
+   "country": "Switzerland",
+   "description": "intergovernmental organization that intends to supervise and liberalize international trade",
+   "hook": "sets the rules for commerce between nations and settles disputes over tariffs",
+   "known": 0.95,
+   "kind": "international economic"
+  },
+  {
+   "label": "Recording Industry Association of America",
+   "qid": "Q200863",
+   "fame": 0.519,
+   "acronym": "RIAA",
+   "country": "United States",
+   "description": "trade organization representing the recording industry in the United States of America",
+   "hook": "certifies albums Gold and Platinum based on how many copies they sell",
+   "known": 0.6,
+   "kind": "trade association"
+  },
+  {
+   "label": "World Championship Wrestling",
+   "qid": "Q130171",
+   "fame": 0.516,
+   "acronym": "WCW",
+   "country": "United States",
+   "description": "American professional wrestling company",
+   "hook": "was the rival that battled the WWF in the Monday Night Wars, home of the nWo",
+   "known": 0.4,
+   "kind": "wrestling promotion"
+  },
+  {
+   "label": "Internet Engineering Task Force",
+   "qid": "Q217082",
+   "fame": 0.511,
+   "acronym": "IETF",
+   "country": "United States",
+   "description": "Open Internet standards organization",
+   "hook": "develops the technical rules that make the web work, publishing them as numbered RFC documents",
+   "known": 0.4,
+   "kind": "standards body"
+  },
+  {
+   "label": "Internal Revenue Service",
+   "qid": "Q973587",
+   "fame": 0.495,
+   "acronym": "IRS",
+   "country": "United States",
+   "description": "revenue service of the United States federal government",
+   "hook": "collects federal taxes and is the agency everyone files a return with every April",
+   "known": 0.8,
+   "kind": "government service"
+  },
+  {
+   "label": "European Space Agency",
+   "qid": "Q42262",
+   "fame": 0.492,
+   "acronym": "ESA",
+   "country": "France",
+   "description": "European organisation dedicated to space exploration",
+   "hook": "is a multinational body that launches rockets from French Guiana and sent the Rosetta probe to a comet",
+   "known": 0.6,
+   "kind": "space agency"
+  },
+  {
+   "label": "International Olympic Committee",
+   "qid": "Q40970",
+   "fame": 0.489,
+   "acronym": "IOC",
+   "country": "Switzerland",
+   "description": "non-governmental sports organisation (founded 1894)",
+   "hook": "organizes the Summer and Winter Games and awards gold, silver and bronze medals",
+   "known": 0.95,
+   "kind": "sports federation"
+  },
+  {
+   "label": "Asia-Pacific Economic Cooperation",
+   "qid": "Q170481",
+   "fame": 0.486,
+   "acronym": "APEC",
+   "country": "Singapore",
+   "description": "international economic forum",
+   "hook": "is a forum where Rim leaders meet each year to discuss commerce, often in matching shirts",
+   "known": 0.6,
+   "kind": "international economic"
+  },
+  {
+   "label": "American Chemical Society",
+   "qid": "Q247556",
+   "fame": 0.485,
+   "acronym": "ACS",
+   "country": "United States",
+   "description": "professional society, publisher",
+   "hook": "is a scientific group that publishes journals and assigns the registry numbers for substances",
+   "known": 0.4,
+   "kind": "professional society"
+  },
+  {
+   "label": "European Free Trade Association",
+   "qid": "Q166546",
+   "fame": 0.479,
+   "acronym": "EFTA",
+   "country": "Switzerland",
+   "description": "international trade organization and free trade area",
+   "hook": "is a bloc of countries such as Norway and Iceland that chose not to join the EU",
+   "known": 0.4,
+   "kind": "international economic"
+  },
+  {
+   "label": "Institute of Electrical and Electronics Engineers",
+   "qid": "Q131566",
+   "fame": 0.472,
+   "acronym": "IEEE",
+   "country": "United States",
+   "description": "American professional association for electronic engineering and electrical engineering",
+   "hook": "is the professional body that sets standards for Wi-Fi and Ethernet networking",
+   "known": 0.4,
+   "kind": "professional society"
+  },
+  {
+   "label": "American Film Institute",
+   "qid": "Q207460",
+   "fame": 0.471,
+   "acronym": "AFI",
+   "country": "United States",
+   "description": "American nonprofit educational arts organization devoted to film",
+   "hook": "publishes a famous list ranking the greatest movies ever made and gives a lifetime achievement award",
+   "known": 0.4,
+   "kind": "cultural organization"
+  },
+  {
+   "label": "Organization of American States",
+   "qid": "Q123759",
+   "fame": 0.466,
+   "acronym": "OAS",
+   "country": "United States",
+   "description": "international organization of states in the Americas",
+   "hook": "is a body linking nations of North and South America and the Caribbean, headquartered in Washington, D.C",
+   "known": 0.6,
+   "kind": "regional coalition"
+  },
+  {
+   "label": "Extreme Championship Wrestling",
+   "qid": "Q73002",
+   "fame": 0.465,
+   "acronym": "ECW",
+   "country": "United States",
+   "description": "defunct American professional wrestling promotion",
+   "hook": "was a Philadelphia-based promotion known for hardcore matches with tables and barbed wire",
+   "known": 0.4,
+   "kind": "wrestling promotion"
+  },
+  {
+   "label": "Lawrence Livermore National Laboratory",
+   "qid": "Q519826",
+   "fame": 0.462,
+   "acronym": "LLNL",
+   "country": "United States",
+   "description": "federal research institute in Livermore, California, United States",
+   "hook": "is a US science lab where researchers first got more energy out of a fusion reaction than the lasers put in",
+   "known": 0.4,
+   "kind": "research institution"
+  },
+  {
+   "label": "National Institute of Standards and Technology",
+   "qid": "Q176691",
+   "fame": 0.461,
+   "acronym": "NIST",
+   "country": "United States",
+   "description": "measurement standards laboratory in the United States",
+   "hook": "keeps the official measures for weights and time, and helps set encryption benchmarks",
+   "known": 0.4,
+   "kind": "research institution"
+  },
+  {
+   "label": "International Civil Aviation Organization",
+   "qid": "Q125761",
+   "fame": 0.456,
+   "acronym": "ICAO",
+   "country": "Canada",
+   "description": "specialized agency of the United Nations, coordinates the international civil aviation regulations and policy",
+   "hook": "is the UN agency that sets worldwide rules for airline safety and air travel",
+   "known": 0.6,
+   "kind": "international agency"
+  },
+  {
+   "label": "Oxford University Press",
+   "qid": "Q217595",
+   "fame": 0.451,
+   "acronym": "OUP",
+   "country": "United Kingdom",
+   "description": "publishing arm of the University of Oxford",
+   "hook": "is a college-owned publisher known for its famous English dictionary",
+   "known": 0.6,
+   "kind": "publishing house"
+  }
+ ]
+}

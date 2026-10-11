@@ -1,0 +1,304 @@
+{
+ "id": "table.internet.apps-sites-makers",
+ "kind": "table",
+ "title": "Apps and sites: who made or owns them",
+ "genre": "general",
+ "category": "internet",
+ "topic": "social-media",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?ownerLabel ?born WHERE { { SELECT ?item ?sitelinks (SAMPLE(?o) AS ?owner) (GROUP_CONCAT(DISTINCT CONCAT(STR(?bT), \"|\", STR(?bP)); separator=\";\") AS ?born) WHERE { { ?item wdt:P31/wdt:P279* wd:Q620615 } UNION { ?item wdt:P31/wdt:P279* wd:Q202833 } UNION { ?item wdt:P31/wdt:P279* wd:Q35127 } UNION { ?item wdt:P31/wdt:P279* wd:Q17155 } UNION { ?item wdt:P31/wdt:P279* wd:Q1329336 } ?item wikibase:sitelinks ?sitelinks ; wdt:P178|wdt:P127 ?o . FILTER(?sitelinks > 25) ?item p:P571 ?st . ?st a wikibase:BestRank ; psv:P571 [ wikibase:timeValue ?bT ; wikibase:timePrecision ?bP ] . } GROUP BY ?item ?sitelinks HAVING(COUNT(DISTINCT ?o)=1) ORDER BY DESC(?sitelinks) LIMIT 300 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T17:22:57.437Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T17:22:57.437Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "owner",
+   "label": "Made or owned by",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "launched",
+   "label": "Launched",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "app or site",
+  "many": "apps and sites",
+  "itemSub": "{hook}",
+  "hookAsk": "Which app or site {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "owner": {
+    "role": "code",
+    "pick": "Which company made or owns {label}?",
+    "statement": "{label} is made or owned by {value}.",
+    "match": "Match each app or site to the company behind it.",
+    "reverse": "Which app or site is made or owned by {value}?"
+   },
+   "launched": {
+    "role": "date",
+    "sort": "from the earliest launched to the most recent",
+    "era": "Drop each app or site into the decade it launched.",
+    "eraSize": "decade",
+    "shot": "In what year did {label} launch?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Facebook",
+   "qid": "Q355",
+   "fame": 0.827,
+   "owner": "Meta Platforms",
+   "launched": 2004,
+   "description": "American online social media and social networking service",
+   "hook": "connects friends through profiles, walls and a famous thumbs-up button",
+   "known": 0.95,
+   "kind": "social media"
+  },
+  {
+   "label": "Gmail",
+   "qid": "Q9334",
+   "fame": 0.72,
+   "owner": "Google",
+   "launched": 2004,
+   "description": "email service developed by Google",
+   "hook": "offers free webmail with huge storage and a search-based inbox",
+   "known": 0.95,
+   "kind": "email tool"
+  },
+  {
+   "label": "GitHub",
+   "qid": "Q364",
+   "fame": 0.686,
+   "owner": "GitHub Inc.",
+   "launched": 2007,
+   "description": "hosting service for software projects using Git",
+   "hook": "lets programmers store, share and collaborate on source code projects",
+   "known": 0.6,
+   "kind": "developer tool"
+  },
+  {
+   "label": "Telegram",
+   "qid": "Q15616276",
+   "fame": 0.681,
+   "owner": "Telegram FZ-LLC",
+   "launched": 2013,
+   "description": "instant messaging service",
+   "hook": "is a chat app known for large channels, bots and secret chats",
+   "known": 0.8,
+   "kind": "messaging app"
+  },
+  {
+   "label": "Wayback Machine",
+   "qid": "Q648266",
+   "fame": 0.677,
+   "owner": "Internet Archive",
+   "launched": 2001,
+   "description": "digital archive founded by the Internet Archive",
+   "hook": "lets you view saved snapshots of old web pages",
+   "known": 0.4,
+   "kind": "archive"
+  },
+  {
+   "label": "Pinterest",
+   "qid": "Q255381",
+   "fame": 0.651,
+   "owner": "Pinterest Inc.",
+   "launched": 2010,
+   "description": "American photo sharing and publishing website",
+   "hook": "lets users save images to themed boards for recipes, crafts and decor",
+   "known": 0.8,
+   "kind": "social media"
+  },
+  {
+   "label": "Spotify",
+   "qid": "Q689141",
+   "fame": 0.646,
+   "owner": "Spotify Technology",
+   "launched": 2006,
+   "description": "Swedish audio streaming service",
+   "hook": "streams music and podcasts on a free ad-supported or paid plan",
+   "known": 0.95,
+   "kind": "music streaming"
+  },
+  {
+   "label": "Yahoo",
+   "qid": "Q37093",
+   "fame": 0.627,
+   "owner": "Yahoo Inc.",
+   "launched": 1994,
+   "description": "web portal and search engine",
+   "hook": "is an early web portal known for its email, news and a famous yodel",
+   "known": 0.8,
+   "kind": "web portal"
+  },
+  {
+   "label": "Snapchat",
+   "qid": "Q333618",
+   "fame": 0.624,
+   "owner": "Snap Inc.",
+   "launched": 2011,
+   "description": "American photo messaging application",
+   "hook": "sends photos and videos that disappear after being viewed",
+   "known": 0.95,
+   "kind": "social media"
+  },
+  {
+   "label": "Twitch",
+   "qid": "Q4555537",
+   "fame": 0.62,
+   "owner": "Twitch Interactive",
+   "launched": 2011,
+   "description": "American live-streaming platform",
+   "hook": "lets gamers broadcast live and chat with fans as they play",
+   "known": 0.8,
+   "kind": "video streaming"
+  },
+  {
+   "label": "IMDb",
+   "qid": "Q37312",
+   "fame": 0.594,
+   "owner": "Amazon",
+   "launched": 1990,
+   "description": "online database of information related to films, television series, and video games",
+   "hook": "lists casts, ratings and trivia for movies and TV shows",
+   "known": 0.95,
+   "kind": "entertainment database"
+  },
+  {
+   "label": "DeviantArt",
+   "qid": "Q46523",
+   "fame": 0.584,
+   "owner": "Wix.com",
+   "launched": 2000,
+   "description": "social media and art website",
+   "hook": "hosts a community gallery of fan drawings and digital illustrations",
+   "known": 0.6,
+   "kind": "art community"
+  },
+  {
+   "label": "App Store",
+   "qid": "Q368215",
+   "fame": 0.572,
+   "owner": "Apple Inc.",
+   "launched": 2008,
+   "description": "digital app distribution platform for iOS/iPadOS",
+   "hook": "lets iPhone owners browse and download programs for their devices",
+   "known": 0.95,
+   "kind": "app marketplace"
+  },
+  {
+   "label": "Messenger",
+   "qid": "Q116947",
+   "fame": 0.566,
+   "owner": "Meta Platforms",
+   "launched": 2011,
+   "description": "instant messaging app developed by Meta Platforms",
+   "hook": "lets Facebook users chat, send stickers and make video calls",
+   "known": 0.95,
+   "kind": "messaging app"
+  },
+  {
+   "label": "Tumblr",
+   "qid": "Q384060",
+   "fame": 0.558,
+   "owner": "Automattic",
+   "launched": 2007,
+   "description": "microblogging platform and social networking website",
+   "hook": "is a blogging site known for reblogging short posts, GIFs and photos",
+   "known": 0.6,
+   "kind": "social media"
+  },
+  {
+   "label": "Signal",
+   "qid": "Q19718090",
+   "fame": 0.543,
+   "owner": "Signal Foundation",
+   "launched": 2014,
+   "description": "privacy-focused encrypted messaging app",
+   "hook": "is a secure chat app favored for end-to-end encryption and privacy",
+   "known": 0.6,
+   "kind": "messaging app"
+  },
+  {
+   "label": "Tinder",
+   "qid": "Q15078152",
+   "fame": 0.517,
+   "owner": "Match Group",
+   "launched": 2012,
+   "description": "social network and dating platform",
+   "hook": "matches people by swiping right or left on profile photos",
+   "known": 0.95,
+   "kind": "dating platform"
+  },
+  {
+   "label": "Threads",
+   "qid": "Q120281745",
+   "fame": 0.516,
+   "owner": "Meta Platforms",
+   "launched": 2023,
+   "description": "social networking site operated by Meta Platforms",
+   "hook": "is a text-based rival to Twitter tied to Instagram accounts",
+   "known": 0.4,
+   "kind": "social media"
+  },
+  {
+   "label": "Fandom",
+   "qid": "Q17459",
+   "fame": 0.496,
+   "owner": "Fandom, Inc.",
+   "launched": 2004,
+   "description": "wiki hosting service and domain",
+   "hook": "hosts fan-built wikis for movies, games and TV shows",
+   "known": 0.6,
+   "kind": "wiki community"
+  },
+  {
+   "label": "TED",
+   "qid": "Q189021",
+   "fame": 0.488,
+   "owner": "Sapling Foundation",
+   "launched": 1984,
+   "description": "global set of conferences",
+   "hook": "hosts short inspirational talks under the slogan ideas worth spreading",
+   "known": 0.95,
+   "kind": "conference platform"
+  },
+  {
+   "label": "Viber",
+   "qid": "Q332707",
+   "fame": 0.475,
+   "owner": "Rakuten Group, Inc.",
+   "launched": 2010,
+   "description": "cross-platform instant messaging voice-over-Internet Protocol application for smartphones",
+   "hook": "is a chat app offering free calls and stickers, popular in Eastern Europe",
+   "known": 0.2,
+   "kind": "messaging app"
+  }
+ ]
+}

@@ -1,0 +1,265 @@
+{
+ "id": "table.music.composers",
+ "kind": "table",
+ "title": "Composers by birth year",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "composers",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?born WHERE { { SELECT ?item ?sitelinks (MIN(?b) AS ?born) WHERE { ?item wdt:P106 wd:Q36834 ; wdt:P569 ?b ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 90) FILTER NOT EXISTS { VALUES ?other { wd:Q33999 wd:Q1028181 wd:Q2526255 wd:Q82955 wd:Q177220 wd:Q1234713 wd:Q205375 wd:Q81096 wd:Q36180 wd:Q639669 } ?item wdt:P106 ?other } } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 200 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T04:54:07.703Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T04:54:07.703Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "born",
+   "label": "Born",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "composer",
+  "many": "composers",
+  "columns": {
+   "born": {
+    "role": "date",
+    "sort": "from the earliest born to the latest",
+    "shot": "In what year was the composer {label} born?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Ludwig van Beethoven",
+   "qid": "Q255",
+   "fame": 0.68,
+   "born": 1770,
+   "description": "German composer (1770-1827)",
+   "hook": "continued composing symphonies after losing his hearing completely",
+   "known": 0.95,
+   "kind": "classical"
+  },
+  {
+   "label": "Johann Sebastian Bach",
+   "qid": "Q1339",
+   "fame": 0.636,
+   "born": 1685,
+   "description": "German composer (1685–1750)",
+   "hook": "filled churches with intricate fugues and cantatas as a working organist and choirmaster",
+   "known": 0.95,
+   "kind": "classical"
+  },
+  {
+   "label": "Frederick II of Prussia",
+   "qid": "Q33550",
+   "fame": 0.621,
+   "born": 1712,
+   "description": "King of Prussia from 1740 to 1786 (1712-1786)",
+   "hook": "played the flute and composed sonatas for his own court orchestra while ruling as king",
+   "known": 0.2,
+   "kind": "classical"
+  },
+  {
+   "label": "Pyotr Ilyich Tchaikovsky",
+   "qid": "Q7315",
+   "fame": 0.605,
+   "born": 1840,
+   "description": "Russian composer (1840–1893)",
+   "hook": "composed the ballet scores for Swan Lake and The Nutcracker",
+   "known": 0.95,
+   "kind": "romantic"
+  },
+  {
+   "label": "Sergei Rachmaninoff",
+   "qid": "Q131861",
+   "fame": 0.581,
+   "born": 1873,
+   "description": "Russian composer, pianist and conductor (1873–1943)",
+   "hook": "composed sweeping piano concertos and toured widely as a virtuoso pianist",
+   "known": 0.6,
+   "kind": "romantic"
+  },
+  {
+   "label": "Antonio Vivaldi",
+   "qid": "Q1340",
+   "fame": 0.58,
+   "born": 1678,
+   "description": "Italian composer and violinist (1678–1741)",
+   "hook": "composed a famous set of violin concertos nicknamed after the four seasons",
+   "known": 0.8,
+   "kind": "baroque"
+  },
+  {
+   "label": "Franz Schubert",
+   "qid": "Q7312",
+   "fame": 0.563,
+   "born": 1797,
+   "description": "Austrian composer (1797–1828)",
+   "hook": "wrote hundreds of songs and chamber works despite dying tragically young",
+   "known": 0.6,
+   "kind": "romantic"
+  },
+  {
+   "label": "Gustav Mahler",
+   "qid": "Q7304",
+   "fame": 0.561,
+   "born": 1860,
+   "description": "Austrian late-Romantic composer (1860–1911)",
+   "hook": "composed sprawling symphonies while working as a renowned opera conductor",
+   "known": 0.4,
+   "kind": "romantic"
+  },
+  {
+   "label": "Claude Debussy",
+   "qid": "Q4700",
+   "fame": 0.557,
+   "born": 1862,
+   "description": "French classical composer (1862–1918)",
+   "hook": "pioneered a dreamy impressionist style evoking moonlight and the sea",
+   "known": 0.6,
+   "kind": "romantic"
+  },
+  {
+   "label": "Antonín Dvořák",
+   "qid": "Q7298",
+   "fame": 0.544,
+   "born": 1841,
+   "description": "Czech composer (1841–1904)",
+   "hook": "wrote a symphony inspired by his time living in America",
+   "known": 0.6,
+   "kind": "romantic"
+  },
+  {
+   "label": "George Frideric Handel",
+   "qid": "Q7302",
+   "fame": 0.542,
+   "born": 1685,
+   "description": "German-British Baroque composer (1685–1759)",
+   "hook": "composed a beloved oratorio whose finale is sung standing at Christmastime",
+   "known": 0.8,
+   "kind": "baroque"
+  },
+  {
+   "label": "Johannes Brahms",
+   "qid": "Q7294",
+   "fame": 0.54,
+   "born": 1833,
+   "description": "German composer (1833–1897)",
+   "hook": "wrote a famous lullaby and four symphonies in the Romantic tradition",
+   "known": 0.8,
+   "kind": "romantic"
+  },
+  {
+   "label": "Igor Stravinsky",
+   "qid": "Q7314",
+   "fame": 0.538,
+   "born": 1882,
+   "description": "Russian, French, and American composer (1882–1971)",
+   "hook": "wrote a ballet score so radical it caused a riot at its Paris premiere",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Joseph Haydn",
+   "qid": "Q7349",
+   "fame": 0.526,
+   "born": 1732,
+   "description": "Austrian composer (1732–1809)",
+   "hook": "helped establish the classical symphony and string quartet as musical forms",
+   "known": 0.6,
+   "kind": "classical"
+  },
+  {
+   "label": "Edvard Grieg",
+   "qid": "Q80621",
+   "fame": 0.518,
+   "born": 1843,
+   "description": "Norwegian composer and pianist (1843–1907)",
+   "hook": "composed the incidental music for a Norwegian play, including a famous mountain-hall march",
+   "known": 0.4,
+   "kind": "romantic"
+  },
+  {
+   "label": "Maurice Ravel",
+   "qid": "Q1178",
+   "fame": 0.516,
+   "born": 1875,
+   "description": "French composer (1875–1937)",
+   "hook": "composed a famously repetitive orchestral piece built on one steady rhythm",
+   "known": 0.4,
+   "kind": "romantic"
+  },
+  {
+   "label": "Sergei Prokofiev",
+   "qid": "Q49481",
+   "fame": 0.516,
+   "born": 1891,
+   "description": "Russian and Soviet pianist, composer and conductor (1891–1953)",
+   "hook": "composed a symphonic fairy tale where each character gets its own instrument",
+   "known": 0.4,
+   "kind": "modern"
+  },
+  {
+   "label": "Jean Sibelius",
+   "qid": "Q45682",
+   "fame": 0.508,
+   "born": 1865,
+   "description": "Finnish composer (1865–1957)",
+   "hook": "composed a stirring tone poem that became a symbol of his homeland's independence",
+   "known": 0.4,
+   "kind": "modern"
+  },
+  {
+   "label": "Niccolò Paganini",
+   "qid": "Q66075",
+   "fame": 0.504,
+   "born": 1782,
+   "description": "Italian violinist and composer (1782–1840)",
+   "hook": "dazzled audiences with virtuoso violin skills so extreme some suspected a deal with the devil",
+   "known": 0.4,
+   "kind": "classical"
+  },
+  {
+   "label": "Gioachino Rossini",
+   "qid": "Q9726",
+   "fame": 0.466,
+   "born": 1792,
+   "description": "Italian opera composer (1792–1868)",
+   "hook": "composed comic operas including one about a witty barber from Seville",
+   "known": 0.4,
+   "kind": "classical"
+  },
+  {
+   "label": "Nikolai Rimsky-Korsakov",
+   "qid": "Q93227",
+   "fame": 0.453,
+   "born": 1844,
+   "description": "Russian composer (1844–1908)",
+   "hook": "composed an orchestral suite inspired by tales from the Arabian Nights",
+   "known": 0.4,
+   "kind": "romantic"
+  }
+ ]
+}

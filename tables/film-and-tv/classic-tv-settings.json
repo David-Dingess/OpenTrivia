@@ -1,0 +1,855 @@
+{
+ "id": "table.film-and-tv.classic-tv-settings",
+ "kind": "table",
+ "title": "Classic American TV series and where they are set",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "classic-tv",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?locLabel WHERE { { SELECT ?item (SAMPLE(?l) AS ?loc) WHERE { ?item wikibase:sitelinks ?sl . FILTER(?sl >= 15) ?item wdt:P31 wd:Q5398426 . ?item wdt:P580 ?st . FILTER(YEAR(?st) >= 1950 && YEAR(?st) <= 1995) ?item wdt:P495 wd:Q30 . ?item wdt:P840 ?l } GROUP BY ?item HAVING(COUNT(DISTINCT ?l) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T04:26:49.944Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T04:26:49.944Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "setting",
+   "label": "Set in",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "show",
+  "many": "classic TV shows",
+  "columns": {
+   "setting": {
+    "role": "link",
+    "pick": "In which US city or state is the TV series {label} set?",
+    "statement": "{value} is where {label} is set."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The X-Files",
+   "qid": "Q2744",
+   "fame": 0.689,
+   "setting": "Washington, D.C.",
+   "description": "1993–2002 American science fiction-drama television series",
+   "hook": "follows two FBI agents investigating unexplained cases and alien conspiracies",
+   "known": 0.85,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Law & Order",
+   "qid": "Q321423",
+   "fame": 0.674,
+   "setting": "New York City",
+   "description": "American police procedural and legal drama television series",
+   "hook": "splits each episode between detectives catching a suspect and prosecutors trying the case",
+   "known": 0.9,
+   "kind": "crime drama"
+  },
+  {
+   "label": "The Golden Girls",
+   "qid": "Q912467",
+   "fame": 0.668,
+   "setting": "Miami",
+   "description": "American sitcom",
+   "hook": "follows four older women sharing a home and trading wisecracks over cheesecake",
+   "known": 0.95,
+   "kind": "sitcom"
+  },
+  {
+   "label": "ER",
+   "qid": "Q207375",
+   "fame": 0.664,
+   "setting": "Chicago",
+   "description": "American medical drama television series (1994–2009)",
+   "hook": "follows doctors and nurses through chaotic shifts at a busy county hospital",
+   "known": 0.9,
+   "kind": "drama"
+  },
+  {
+   "label": "Charlie's Angels",
+   "qid": "Q617274",
+   "fame": 0.662,
+   "setting": "Los Angeles",
+   "description": "1976 American crime drama television series",
+   "hook": "follows three women detectives who take orders from a boss heard only over a speakerphone",
+   "known": 0.8,
+   "kind": "action"
+  },
+  {
+   "label": "Seinfeld",
+   "qid": "Q23733",
+   "fame": 0.656,
+   "setting": "New York City",
+   "description": "American television sitcom (1989–1998)",
+   "hook": "was famously pitched as a show about nothing, following a comedian and his friends",
+   "known": 0.98,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Frasier",
+   "qid": "Q209282",
+   "fame": 0.644,
+   "setting": "Seattle",
+   "description": "American sitcom (1993–2004)",
+   "hook": "follows a snobbish radio psychiatrist living with his retired-cop father and his brother",
+   "known": 0.9,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Columbo",
+   "qid": "Q371207",
+   "fame": 0.637,
+   "setting": "Los Angeles",
+   "description": "American crime drama television film series",
+   "hook": "features a rumpled detective in a raincoat who seems scatterbrained while catching killers",
+   "known": 0.85,
+   "kind": "crime drama"
+  },
+  {
+   "label": "Little House on the Prairie",
+   "qid": "Q839869",
+   "fame": 0.629,
+   "setting": "Minnesota",
+   "description": "American Western drama television series, 1974 to 1983",
+   "hook": "follows a pioneer family farming on the frontier, based on a series of children's books",
+   "known": 0.75,
+   "kind": "drama"
+  },
+  {
+   "label": "The A-Team",
+   "qid": "Q464123",
+   "fame": 0.625,
+   "setting": "Los Angeles",
+   "description": "American action-adventure television series (1983–1987)",
+   "hook": "follows fugitive ex-soldiers for hire who drive a black van and love it when a plan comes together",
+   "known": 0.85,
+   "kind": "action"
+  },
+  {
+   "label": "The Fresh Prince of Bel-Air",
+   "qid": "Q309063",
+   "fame": 0.62,
+   "setting": "Los Angeles",
+   "description": "American television series (1990–1996)",
+   "hook": "follows a street-smart teen from a tough neighborhood sent to live with wealthy relatives",
+   "known": 0.95,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Sesame Street",
+   "qid": "Q155629",
+   "fame": 0.615,
+   "setting": "New York City",
+   "description": "American children's television program",
+   "hook": "teaches children letters and numbers with puppets such as Big Bird and Elmo",
+   "known": 0.98,
+   "kind": "children's"
+  },
+  {
+   "label": "Married... with Children",
+   "qid": "Q208647",
+   "fame": 0.608,
+   "setting": "Chicago",
+   "description": "American television sitcom (1987-1997)",
+   "hook": "follows a dysfunctional family led by a shoe salesman who hates his life",
+   "known": 0.85,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Baywatch",
+   "qid": "Q223320",
+   "fame": 0.607,
+   "setting": "Los Angeles",
+   "description": "American action drama series",
+   "hook": "follows lifeguards in red swimsuits who run in slow motion along the beach",
+   "known": 0.8,
+   "kind": "action"
+  },
+  {
+   "label": "Happy Days",
+   "qid": "Q518589",
+   "fame": 0.606,
+   "setting": "Milwaukee",
+   "description": "1974-1984 television comedy set in the 1950s",
+   "hook": "follows a teenager and his leather-jacketed pal the Fonz, who snaps his fingers for attention",
+   "known": 0.9,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Full House",
+   "qid": "Q465472",
+   "fame": 0.601,
+   "setting": "San Francisco",
+   "description": "American television sitcom (1987–1995)",
+   "hook": "follows a widowed dad raising three daughters with help from his brother-in-law and best friend",
+   "known": 0.9,
+   "kind": "sitcom"
+  },
+  {
+   "label": "The Waltons",
+   "qid": "Q48777",
+   "fame": 0.599,
+   "setting": "Virginia",
+   "description": "American 1972–1981 television series",
+   "hook": "follows a large, close-knit mountain family during the Great Depression and ends with shouted goodnights",
+   "known": 0.75,
+   "kind": "drama"
+  },
+  {
+   "label": "Mighty Morphin Power Rangers",
+   "qid": "Q513809",
+   "fame": 0.596,
+   "setting": "California",
+   "description": "American superhero television series",
+   "hook": "follows teenagers who transform into color-coded warriors and battle monsters with giant robots",
+   "known": 0.85,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Murder, She Wrote",
+   "qid": "Q833322",
+   "fame": 0.595,
+   "setting": "Cabot Cove",
+   "description": "American television series (1984-1996)",
+   "hook": "follows a retired teacher turned mystery novelist who keeps stumbling over corpses",
+   "known": 0.8,
+   "kind": "crime drama"
+  },
+  {
+   "label": "The Brady Bunch",
+   "qid": "Q250767",
+   "fame": 0.593,
+   "setting": "Los Angeles",
+   "description": "American sitcom",
+   "hook": "follows a blended family of six kids and their parents, known for a grid-style opening sequence",
+   "known": 0.95,
+   "kind": "sitcom"
+  },
+  {
+   "label": "General Hospital",
+   "qid": "Q1136370",
+   "fame": 0.591,
+   "setting": "Port Charles",
+   "description": "American television soap opera",
+   "hook": "is one of the longest-running daytime soap operas, mixing medical drama with mobsters and romance",
+   "known": 0.65,
+   "kind": "soap opera"
+  },
+  {
+   "label": "The Young and the Restless",
+   "qid": "Q849627",
+   "fame": 0.591,
+   "setting": "Wisconsin",
+   "description": "American daytime soap opera",
+   "hook": "is a daytime soap opera that dominated US ratings for decades, following rival wealthy families",
+   "known": 0.7,
+   "kind": "soap opera"
+  },
+  {
+   "label": "Three's Company",
+   "qid": "Q245996",
+   "fame": 0.591,
+   "setting": "Los Angeles",
+   "description": "American sitcom",
+   "hook": "follows a young man sharing an apartment with two female roommates amid constant misunderstandings",
+   "known": 0.85,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Family Matters",
+   "qid": "Q593838",
+   "fame": 0.586,
+   "setting": "Chicago",
+   "description": "American television series",
+   "hook": "follows a middle-class household where a nerdy neighbor in suspenders became the breakout star",
+   "known": 0.8,
+   "kind": "sitcom"
+  },
+  {
+   "label": "All in the Family",
+   "qid": "Q1048856",
+   "fame": 0.58,
+   "setting": "New York City",
+   "description": "American television series (1971–1979)",
+   "hook": "follows a cranky blue-collar dad clashing with his liberal daughter's husband over dinner",
+   "known": 0.85,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Batman",
+   "qid": "Q1247201",
+   "fame": 0.578,
+   "setting": "Gotham City",
+   "description": "1960s American television series",
+   "hook": "follows a caped crusader and his young sidekick fighting colorful villains amid comic-book sound effects",
+   "known": 0.95,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Wings",
+   "qid": "Q331787",
+   "fame": 0.577,
+   "setting": "Massachusetts",
+   "description": "American TV series",
+   "hook": "follows two brothers who run a small airline at a regional airport",
+   "known": 0.75,
+   "kind": "sitcom"
+  },
+  {
+   "label": "The Rockford Files",
+   "qid": "Q283660",
+   "fame": 0.572,
+   "setting": "Los Angeles",
+   "description": "American television series",
+   "hook": "follows a laid-back private investigator who lives in a beach trailer and gets answering-machine messages",
+   "known": 0.7,
+   "kind": "crime drama"
+  },
+  {
+   "label": "The Munsters",
+   "qid": "Q1086390",
+   "fame": 0.571,
+   "setting": "Los Angeles",
+   "description": "American television series",
+   "hook": "follows a family of friendly monsters living in a spooky suburban house",
+   "known": 0.85,
+   "kind": "sitcom"
+  },
+  {
+   "label": "The Nanny",
+   "qid": "Q464865",
+   "fame": 0.571,
+   "setting": "New York City",
+   "description": "US 1990s television series",
+   "hook": "follows a loud, fashion-loving woman with a nasal laugh who becomes live-in help for a wealthy widower's kids",
+   "known": 0.8,
+   "kind": "sitcom"
+  },
+  {
+   "label": "I Love Lucy",
+   "qid": "Q181943",
+   "fame": 0.562,
+   "setting": "New York City",
+   "description": "American television sitcom",
+   "hook": "follows a redheaded housewife whose schemes to break into show business keep backfiring",
+   "known": 0.95,
+   "kind": "sitcom"
+  },
+  {
+   "label": "The Bold and the Beautiful",
+   "qid": "Q82729",
+   "fame": 0.558,
+   "setting": "Los Angeles",
+   "description": "American television soap opera",
+   "hook": "is a daytime soap opera about fashion-house dynasties and tangled romances",
+   "known": 0.65,
+   "kind": "soap opera"
+  },
+  {
+   "label": "Taxi",
+   "qid": "Q427529",
+   "fame": 0.557,
+   "setting": "New York City",
+   "description": "American television sitcom (1978–1983)",
+   "hook": "follows a crew of cab drivers dreaming of better careers, bossed by a short-tempered dispatcher",
+   "known": 0.75,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Night Court",
+   "qid": "Q1248182",
+   "fame": 0.55,
+   "setting": "New York City",
+   "description": "American television sitcom (1984–1992)",
+   "hook": "follows a zany judge with a love of magic tricks who presides over after-midnight trials of oddball defendants",
+   "known": 0.7,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Diff'rent Strokes",
+   "qid": "Q2478848",
+   "fame": 0.549,
+   "setting": "New York City",
+   "description": "television series (1978-1986)",
+   "hook": "follows two orphaned brothers adopted by a rich businessman, with a famous \"what you talkin' bout\" line",
+   "known": 0.85,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Dr. Quinn, Medicine Woman",
+   "qid": "Q647001",
+   "fame": 0.549,
+   "setting": "Colorado Springs",
+   "description": "American television series",
+   "hook": "follows a Boston-trained female physician who opens a practice on the Wild West frontier",
+   "known": 0.7,
+   "kind": "drama"
+  },
+  {
+   "label": "NYPD Blue",
+   "qid": "Q609274",
+   "fame": 0.548,
+   "setting": "New York City",
+   "description": "American television police drama (1993–2005)",
+   "hook": "follows a gritty detective squad and its troubled, hard-drinking lead",
+   "known": 0.7,
+   "kind": "crime drama"
+  },
+  {
+   "label": "The Jeffersons",
+   "qid": "Q153227",
+   "fame": 0.545,
+   "setting": "New York City",
+   "description": "American sitcom (1975–1985)",
+   "hook": "is a spin-off about a dry-cleaning entrepreneur who moves on up to a deluxe apartment in the sky",
+   "known": 0.85,
+   "kind": "sitcom"
+  },
+  {
+   "label": "ALF",
+   "qid": "Q264221",
+   "fame": 0.544,
+   "setting": "Los Angeles",
+   "description": "American sitcom (1986-1990)",
+   "hook": "follows a furry, wisecracking extraterrestrial hiding in a suburban family's home and craving cats",
+   "known": 0.8,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Northern Exposure",
+   "qid": "Q301345",
+   "fame": 0.544,
+   "setting": "Cicely",
+   "description": "American television series",
+   "hook": "follows a young big-city doctor forced to practice in a quirky small Alaskan town",
+   "known": 0.65,
+   "kind": "drama"
+  },
+  {
+   "label": "Walker, Texas Ranger",
+   "qid": "Q426432",
+   "fame": 0.54,
+   "setting": "Dallas",
+   "description": "1993 American action crime television series",
+   "hook": "follows a martial-arts-kicking lawman who fights crime with roundhouse kicks",
+   "known": 0.75,
+   "kind": "action"
+  },
+  {
+   "label": "Growing Pains",
+   "qid": "Q1061246",
+   "fame": 0.539,
+   "setting": "Long Island",
+   "description": "American television sitcom series",
+   "hook": "follows a family with a psychiatrist dad working from home and a teen heartthrob son",
+   "known": 0.75,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Mad About You",
+   "qid": "Q752365",
+   "fame": 0.538,
+   "setting": "New York City",
+   "description": "1990s American TV sitcom",
+   "hook": "follows newlyweds, played by Paul Reiser and Helen Hunt, adjusting to married life",
+   "known": 0.75,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Party of Five",
+   "qid": "Q1048363",
+   "fame": 0.535,
+   "setting": "San Francisco",
+   "description": "American television series",
+   "hook": "follows orphaned siblings who raise each other after losing their parents in a car accident",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "Hill Street Blues",
+   "qid": "Q1247241",
+   "fame": 0.533,
+   "setting": "Chicago",
+   "description": "American serial police drama television series (1981–1987)",
+   "hook": "is a gritty ensemble cop drama famous for a roll-call sign-off telling everyone to be careful out there",
+   "known": 0.75,
+   "kind": "crime drama"
+  },
+  {
+   "label": "Step by Step",
+   "qid": "Q658216",
+   "fame": 0.533,
+   "setting": "Wisconsin",
+   "description": "American television series (1991–1998)",
+   "hook": "follows two single parents who marry and merge their kids into one big blended family",
+   "known": 0.7,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Get Smart",
+   "qid": "Q1247268",
+   "fame": 0.532,
+   "setting": "Washington, D.C.",
+   "description": "American television series (1965–1970)",
+   "hook": "spoofs spy thrillers with a bumbling secret agent who talks into a shoe phone",
+   "known": 0.7,
+   "kind": "crime drama"
+  },
+  {
+   "label": "Matlock",
+   "qid": "Q1031383",
+   "fame": 0.532,
+   "setting": "Atlanta",
+   "description": "television series (1986–1995)",
+   "hook": "follows a folksy Southern defense lawyer played by Andy Griffith who wins with courtroom revelations",
+   "known": 0.8,
+   "kind": "crime drama"
+  },
+  {
+   "label": "Melrose Place",
+   "qid": "Q550238",
+   "fame": 0.53,
+   "setting": "Los Angeles",
+   "description": "1992 American prime time soap opera",
+   "hook": "is a prime-time soap about young adults and their scandalous affairs in an apartment complex",
+   "known": 0.65,
+   "kind": "soap opera"
+  },
+  {
+   "label": "Dinosaurs",
+   "qid": "Q1211977",
+   "fame": 0.529,
+   "setting": "Pangaea",
+   "description": "television program",
+   "hook": "is a puppet sitcom about a prehistoric family with a baby who hits his dad with a frying pan",
+   "known": 0.6,
+   "kind": "sitcom"
+  },
+  {
+   "label": "The Mary Tyler Moore Show",
+   "qid": "Q615944",
+   "fame": 0.529,
+   "setting": "Minnesota",
+   "description": "television series",
+   "hook": "follows a single woman building a career as a TV newsroom producer, famously tossing her hat in the air",
+   "known": 0.8,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Perfect Strangers",
+   "qid": "Q1304597",
+   "fame": 0.528,
+   "setting": "Chicago",
+   "description": "American comedy television series",
+   "hook": "follows a naive foreigner from a fictional Mediterranean island who moves in with his ambitious cousin",
+   "known": 0.7,
+   "kind": "sitcom"
+  },
+  {
+   "label": "The Partridge Family",
+   "qid": "Q654652",
+   "fame": 0.528,
+   "setting": "California",
+   "description": "television series",
+   "hook": "follows a widowed mom and her kids who form a pop band and tour in a painted bus",
+   "known": 0.8,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Perry Mason",
+   "qid": "Q165356",
+   "fame": 0.526,
+   "setting": "Los Angeles",
+   "description": "American dramatized court show (1957–1966)",
+   "hook": "follows a courtroom defense lawyer who wins by getting the real killer to confess on the witness stand",
+   "known": 0.85,
+   "kind": "crime drama"
+  },
+  {
+   "label": "Dynasty",
+   "qid": "Q584025",
+   "fame": 0.524,
+   "setting": "Colorado",
+   "description": "1980s American prime time television soap opera",
+   "hook": "is a glitzy prime-time soap about a feuding oil-tycoon clan and a famous rivalry between two women",
+   "known": 0.75,
+   "kind": "soap opera"
+  },
+  {
+   "label": "The Honeymooners",
+   "qid": "Q742551",
+   "fame": 0.524,
+   "setting": "Brooklyn",
+   "description": "American sitcom",
+   "hook": "follows a blustering bus driver and his sewer-worker pal, known for threats to send his wife to the moon",
+   "known": 0.85,
+   "kind": "sitcom"
+  },
+  {
+   "label": "St. Elsewhere",
+   "qid": "Q1068952",
+   "fame": 0.517,
+   "setting": "Massachusetts",
+   "description": "television series",
+   "hook": "is an ensemble medical drama about doctors at a rundown urban teaching hospital",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "Blossom",
+   "qid": "Q885450",
+   "fame": 0.515,
+   "setting": "California",
+   "description": "American television series",
+   "hook": "follows a quirky teenage girl in big floppy hats raised by her musician dad and two brothers",
+   "known": 0.7,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Doogie Howser, M.D.",
+   "qid": "Q937913",
+   "fame": 0.514,
+   "setting": "Los Angeles",
+   "description": "American medical drama",
+   "hook": "follows a teen prodigy who is a licensed physician and ends each episode typing a computer diary entry",
+   "known": 0.7,
+   "kind": "drama"
+  },
+  {
+   "label": "Cagney & Lacey",
+   "qid": "Q527916",
+   "fame": 0.512,
+   "setting": "New York City",
+   "description": "American television series (1982–1988)",
+   "hook": "follows two female police detectives, one a single careerist and the other a working mom",
+   "known": 0.65,
+   "kind": "crime drama"
+  },
+  {
+   "label": "Knots Landing",
+   "qid": "Q640535",
+   "fame": 0.508,
+   "setting": "Los Angeles",
+   "description": "television series",
+   "hook": "began as a spin-off of a Texas oil-family soap, following neighbours on a suburban cul-de-sac",
+   "known": 0.6,
+   "kind": "soap opera"
+  },
+  {
+   "label": "Diagnosis: Murder",
+   "qid": "Q1208153",
+   "fame": 0.506,
+   "setting": "Los Angeles",
+   "description": "American action-mystery-comedy-medical crime drama television series (1993-2001)",
+   "hook": "stars Dick Van Dyke as a doctor who helps his police-detective son crack cases",
+   "known": 0.5,
+   "kind": "drama"
+  },
+  {
+   "label": "Murphy Brown",
+   "qid": "Q521718",
+   "fame": 0.502,
+   "setting": "Washington, D.C.",
+   "description": "American television sitcom for CBS (1988-1998 and 2018)",
+   "hook": "follows a sharp-tongued TV news anchor who returns to her newsmagazine after rehab",
+   "known": 0.8,
+   "kind": "sitcom"
+  },
+  {
+   "label": "My So-Called Life",
+   "qid": "Q1161822",
+   "fame": 0.5,
+   "setting": "Pittsburgh",
+   "description": "American teen drama television series",
+   "hook": "follows an angst-filled fifteen-year-old girl, played by Claire Danes, through high-school heartbreak",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "L.A. Law",
+   "qid": "Q1247212",
+   "fame": 0.499,
+   "setting": "Los Angeles",
+   "description": "television series",
+   "hook": "follows attorneys at a high-powered firm through courtroom battles and office romances",
+   "known": 0.7,
+   "kind": "crime drama"
+  },
+  {
+   "label": "The Equalizer",
+   "qid": "Q1193168",
+   "fame": 0.498,
+   "setting": "New York City",
+   "description": "1985 American television series",
+   "hook": "stars Edward Woodward as a retired spy who helps people in trouble after they answer his newspaper ad",
+   "known": 0.65,
+   "kind": "action"
+  },
+  {
+   "label": "Remington Steele",
+   "qid": "Q676371",
+   "fame": 0.494,
+   "setting": "Los Angeles",
+   "description": "American television series",
+   "hook": "stars a future James Bond as a charming man posing as the fictitious head of a detective agency",
+   "known": 0.7,
+   "kind": "crime drama"
+  },
+  {
+   "label": "Beauty and the Beast",
+   "qid": "Q1216187",
+   "fame": 0.489,
+   "setting": "New York City",
+   "description": "American drama series",
+   "hook": "pairs a lawyer with a lion-faced man who lives in tunnels beneath the city",
+   "known": 0.65,
+   "kind": "drama"
+  },
+  {
+   "label": "The Fall Guy",
+   "qid": "Q2659146",
+   "fame": 0.489,
+   "setting": "Los Angeles",
+   "description": "TV series on ABC between 1981‒1986",
+   "hook": "stars Lee Majors as a movie stuntman who moonlights as a bounty hunter",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "Kojak",
+   "qid": "Q510554",
+   "fame": 0.487,
+   "setting": "New York City",
+   "description": "American television series starring Telly Savalas",
+   "hook": "follows a bald, lollipop-sucking police lieutenant who asks \"Who loves ya, baby?\"",
+   "known": 0.65,
+   "kind": "crime drama"
+  },
+  {
+   "label": "Punky Brewster",
+   "qid": "Q1545971",
+   "fame": 0.487,
+   "setting": "Chicago",
+   "description": "television series",
+   "hook": "follows a spunky young girl who is taken in by a grumpy older man and shares his home with her dog",
+   "known": 0.6,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Falcon Crest",
+   "qid": "Q662341",
+   "fame": 0.474,
+   "setting": "California",
+   "description": "American television program",
+   "hook": "centres on a feuding family and its powerful wine-making dynasty",
+   "known": 0.6,
+   "kind": "soap opera"
+  },
+  {
+   "label": "Picket Fences",
+   "qid": "Q1247248",
+   "fame": 0.465,
+   "setting": "Wisconsin",
+   "description": "television series",
+   "hook": "follows a small-town sheriff and his doctor wife amid bizarre cases and courtroom oddities",
+   "known": 0.5,
+   "kind": "drama"
+  },
+  {
+   "label": "Mannix",
+   "qid": "Q1247529",
+   "fame": 0.463,
+   "setting": "Los Angeles",
+   "description": "American detective television series (1967–1975)",
+   "hook": "stars Mike Connors as a tough private investigator who often ends up in fistfights",
+   "known": 0.6,
+   "kind": "crime drama"
+  },
+  {
+   "label": "The Secret World of Alex Mack",
+   "qid": "Q1500957",
+   "fame": 0.463,
+   "setting": "California",
+   "description": "American television series",
+   "hook": "follows a schoolgirl who gains the power to turn into liquid metal after a chemical spill",
+   "known": 0.5,
+   "kind": "sitcom"
+  },
+  {
+   "label": "The Amazing Spider-Man",
+   "qid": "Q1462394",
+   "fame": 0.461,
+   "setting": "New York City",
+   "description": "US 1970s television series",
+   "hook": "stars Nicholas Hammond as a student turned crime-fighter with wall-crawling powers from a radioactive bite",
+   "known": 0.7,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Sledge Hammer!",
+   "qid": "Q1570057",
+   "fame": 0.453,
+   "setting": "San Francisco",
+   "description": "television program",
+   "hook": "parodies tough-guy cop dramas with a wildly reckless, overconfident detective",
+   "known": 0.45,
+   "kind": "action"
+  },
+  {
+   "label": "Ironside",
+   "qid": "Q892438",
+   "fame": 0.452,
+   "setting": "San Francisco",
+   "description": "television series beginning in 1967",
+   "hook": "stars Raymond Burr as a wheelchair-using police consultant",
+   "known": 0.6,
+   "kind": "crime drama"
+  },
+  {
+   "label": "Cybill",
+   "qid": "Q899746",
+   "fame": 0.451,
+   "setting": "Los Angeles",
+   "description": "American comedy television series",
+   "hook": "stars a former model as a twice-divorced actress juggling her career, her exes and her daughters",
+   "known": 0.5,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Hunter",
+   "qid": "Q1638106",
+   "fame": 0.45,
+   "setting": "Los Angeles",
+   "description": "1984–1991 American police drama television series",
+   "hook": "stars a former pro football player as a maverick police sergeant who breaks the rules",
+   "known": 0.6,
+   "kind": "crime drama"
+  }
+ ]
+}

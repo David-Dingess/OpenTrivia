@@ -1,0 +1,181 @@
+{
+ "id": "table.oddities.odd-place-names",
+ "kind": "table",
+ "title": "Odd place names",
+ "genre": "general",
+ "category": "oddities",
+ "topic": "odd-place-names",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { VALUES ?item { wd:Q1602605 wd:Q1602619 wd:Q3273912 wd:Q3250427 wd:Q7062708 wd:Q431932 wd:Q322 wd:Q459600 wd:Q2562872 wd:Q2375092 wd:Q51687 wd:Q2409907 wd:Q575407 wd:Q28662 wd:Q1856420 wd:Q754489 wd:Q26163 wd:Q1019180 wd:Q246221 wd:Q167155 wd:Q222338 wd:Q719547 wd:Q750006 wd:Q936741 wd:Q337 wd:Q211907 wd:Q3777 wd:Q187861 wd:Q178093 wd:Q732342 wd:Q51678 wd:Q186702 wd:Q79580 wd:Q183113 wd:Q613441 wd:Q1011402 wd:Q1087086 wd:Q666295 wd:Q2010576 wd:Q890621 wd:Q2793942 wd:Q1951055 wd:Q1996225 wd:Q17966 wd:Q2678743 } ?item wikibase:sitelinks ?sitelinks ; wdt:P17 ?c . BIND(?c AS ?country) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T05:25:36.863Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T05:25:36.863Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "place",
+  "many": "places",
+  "capitalise": true,
+  "wildcard": "place",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "In which country is the oddly named {label}?",
+    "statement": "The oddly named {label} is in {value}.",
+    "match": "Match each oddly named place to its country.",
+    "odd": "Three of these oddly named places are in {value}. Which one isn't?",
+    "all": "Tap all {n} oddly named places in {value}.",
+    "reverse": "Which of these oddly named places is in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Llanfairpwllgwyngyll",
+   "qid": "Q322",
+   "fame": 0.57,
+   "country": "United Kingdom",
+   "description": "village in Anglesey, Wales, United Kingdom",
+   "hook": "has a name of 58 letters, said to be the longest of any place in Europe",
+   "known": 0.6,
+   "kind": "welsh place"
+  },
+  {
+   "label": "Bora Bora",
+   "qid": "Q183113",
+   "fame": 0.558,
+   "country": "France",
+   "description": "island in French Polynesia",
+   "hook": "is a South Pacific island famed for luxury resorts and overwater bungalows around a lagoon",
+   "known": 0.55,
+   "kind": "tropical island"
+  },
+  {
+   "label": "Chattanooga",
+   "qid": "Q186702",
+   "fame": 0.538,
+   "country": "United States",
+   "description": "city in and county seat of Hamilton County, Tennessee, United States",
+   "hook": "inspired a big-band hit by Glenn Miller about a train",
+   "known": 0.5,
+   "kind": "us city"
+  },
+  {
+   "label": "Ouagadougou",
+   "qid": "Q3777",
+   "fame": 0.527,
+   "country": "Burkina Faso",
+   "description": "capital of Burkina Faso",
+   "hook": null,
+   "known": 0.05,
+   "kind": "african capital"
+  },
+  {
+   "label": "Lake Chaubunagungamaug",
+   "qid": "Q337",
+   "fame": 0.51,
+   "country": "United States",
+   "description": "lake in the town of Webster, Massachusetts, United States",
+   "hook": null,
+   "known": 0.25,
+   "kind": "us lake"
+  },
+  {
+   "label": "Kalamazoo",
+   "qid": "Q167155",
+   "fame": 0.506,
+   "country": "United States",
+   "description": "county seat of Kalamazoo County, Michigan, United States",
+   "hook": "was the original home of the Gibson guitar company",
+   "known": 0.45,
+   "kind": "us city"
+  },
+  {
+   "label": "Poughkeepsie",
+   "qid": "Q178093",
+   "fame": 0.498,
+   "country": "United States",
+   "description": "city in New York, United States",
+   "hook": null,
+   "known": 0.35,
+   "kind": "us city"
+  },
+  {
+   "label": "Slough",
+   "qid": "Q211907",
+   "fame": 0.496,
+   "country": "United Kingdom",
+   "description": "town in Berkshire, England, UK",
+   "hook": null,
+   "known": 0.35,
+   "kind": "uk town"
+  },
+  {
+   "label": "Truth or Consequences",
+   "qid": "Q431932",
+   "fame": 0.493,
+   "country": "United States",
+   "description": "city in and county seat of Sierra County, New Mexico, United States",
+   "hook": null,
+   "known": 0.1,
+   "kind": "us city"
+  },
+  {
+   "label": "Tuscaloosa",
+   "qid": "Q79580",
+   "fame": 0.485,
+   "country": "United States",
+   "description": "city in and seat of Tuscaloosa County, Alabama, United States",
+   "hook": "is home to a university whose football team has won many national championships",
+   "known": 0.4,
+   "kind": "us city"
+  },
+  {
+   "label": "Walla Walla",
+   "qid": "Q222338",
+   "fame": 0.455,
+   "country": "United States",
+   "description": "city in and the county seat of Walla Walla County, Washington, United States",
+   "hook": "sits in a wine-growing region with over a hundred wineries",
+   "known": 0.4,
+   "kind": "us city"
+  },
+  {
+   "label": "Oshkosh",
+   "qid": "Q936741",
+   "fame": 0.45,
+   "country": "United States",
+   "description": "city in and county seat of Winnebago County, Wisconsin, United States",
+   "hook": "hosts the world's largest airshow and gave its name to a maker of kids' overalls",
+   "known": 0.4,
+   "kind": "us city"
+  }
+ ]
+}

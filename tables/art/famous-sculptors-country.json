@@ -1,0 +1,212 @@
+{
+ "id": "table.art.famous-sculptors-country",
+ "kind": "table",
+ "title": "Famous sculptors and the country they were born in",
+ "genre": "arts-entertainment",
+ "category": "art",
+ "topic": "sculpture",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) WHERE { ?item wdt:P106 wd:Q1281618 . ?item wikibase:sitelinks ?sl . FILTER(?sl >= 30) ?item wdt:P19 ?pl . ?pl wdt:P17 ?c . } GROUP BY ?item HAVING(COUNT(DISTINCT ?c) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-01T04:15:17.658Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-01T04:15:17.658Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Born in",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "sculptor",
+  "many": "sculptors",
+  "wildcard": "person",
+  "hookAsk": "Which sculptor {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country was sculptor {label} born in?",
+    "statement": "{label} was born in {value}.",
+    "match": "Match each sculptor to the country where they were born.",
+    "odd": "Three of these sculptors were born in {value}. Which one wasn't?",
+    "all": "Tap all {n} sculptors born in {value}.",
+    "reverse": "Which sculptor was born in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Yayoi Kusama",
+   "qid": "Q231121",
+   "fame": 0.708,
+   "country": "Japan",
+   "description": "Japanese artist (1929–2026)",
+   "hook": "is famous for polka dots, giant pumpkins and mirrored infinity rooms",
+   "known": 0.4,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Michelangelo",
+   "qid": "Q5592",
+   "fame": 0.669,
+   "country": "Italy",
+   "description": "Italian artist and architect (1475-1564)",
+   "hook": "carved the marble David and painted the Sistine Chapel ceiling",
+   "known": 0.95,
+   "kind": "old-master"
+  },
+  {
+   "label": "Anish Kapoor",
+   "qid": "Q327293",
+   "fame": 0.539,
+   "country": "India",
+   "description": "British-Indian artist (born 1954)",
+   "hook": "made the giant mirrored bean sculpture in Chicago's Millennium Park",
+   "known": 0.4,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Auguste Rodin",
+   "qid": "Q30755",
+   "fame": 0.51,
+   "country": "France",
+   "description": "French sculptor (1840–1917)",
+   "hook": "sculpted The Thinker and The Kiss",
+   "known": 0.8,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Jeff Koons",
+   "qid": "Q297525",
+   "fame": 0.509,
+   "country": "United States",
+   "description": "American sculptor and painter (born 1955)",
+   "hook": "makes giant shiny balloon-animal sculptures and a huge flower-covered puppy",
+   "known": 0.6,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Damien Hirst",
+   "qid": "Q294326",
+   "fame": 0.506,
+   "country": "United Kingdom",
+   "description": "English sculptor and installation artist",
+   "hook": "displayed a shark preserved in a glass tank of formaldehyde",
+   "known": 0.4,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Gian Lorenzo Bernini",
+   "qid": "Q160538",
+   "fame": 0.499,
+   "country": "Italy",
+   "description": "Italian sculptor and architect (1598–1680)",
+   "hook": "was the Baroque master who carved Apollo and Daphne and designed the colonnade of St. Peter's Square",
+   "known": 0.6,
+   "kind": "old-master"
+  },
+  {
+   "label": "Ai Weiwei",
+   "qid": "Q160115",
+   "fame": 0.495,
+   "country": "China",
+   "description": "Chinese Conceptual artist (born 1957)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Donatello",
+   "qid": "Q37562",
+   "fame": 0.494,
+   "country": "Italy",
+   "description": "Early Renaissance Italian sculptor (1386–1466)",
+   "hook": "cast the Gattamelata, one of the first life-size bronze horse-and-rider statues of the Renaissance",
+   "known": 0.6,
+   "kind": "old-master"
+  },
+  {
+   "label": "Henry Moore",
+   "qid": "Q151097",
+   "fame": 0.478,
+   "country": "United Kingdom",
+   "description": "English sculptor (1898–1986)",
+   "hook": "is known for large smooth reclining figures with holes through them",
+   "known": 0.4,
+   "kind": "modernist"
+  },
+  {
+   "label": "Camille Claudel",
+   "qid": "Q120582",
+   "fame": 0.475,
+   "country": "France",
+   "description": "French sculptor (1864–1943)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Fernando Botero",
+   "qid": "Q272877",
+   "fame": 0.468,
+   "country": "Colombia",
+   "description": "Colombian painter and sculptor (1932–2023)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Alexander Calder",
+   "qid": "Q151580",
+   "fame": 0.466,
+   "country": "United States",
+   "description": "American artist (1898–1976)",
+   "hook": "invented the hanging mobile, a kinetic sculpture that moves with the air",
+   "known": 0.4,
+   "kind": "modernist"
+  },
+  {
+   "label": "Louise Bourgeois",
+   "qid": "Q159409",
+   "fame": 0.457,
+   "country": "France",
+   "description": "French-American artist (1911-2010)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Alberto Giacometti",
+   "qid": "Q157194",
+   "fame": 0.456,
+   "country": "Switzerland",
+   "description": "Swiss sculptor and painter (1901–1966)",
+   "hook": "is famous for extremely thin, elongated walking figures",
+   "known": 0.6,
+   "kind": "modernist"
+  }
+ ]
+}

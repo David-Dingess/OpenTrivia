@@ -1,0 +1,436 @@
+{
+ "id": "table.biology.trees",
+ "kind": "table",
+ "title": "Trees: the fruit they bear and their leaves",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "plants",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?fruit ?leaf WHERE { VALUES (?item ?itemLabel ?fruit ?leaf) { (wd:Q12004 \"Oak\" \"Acorn\" \"Simple leaves\") (wd:Q26899 \"Horse chestnut\" \"Conker\" \"Compound leaves\") (wd:Q42292 \"Maple\" \"Winged seed\" \"Simple leaves\") (wd:Q12024 \"Pine\" \"Cone\" \"Needles\") (wd:Q26782 \"Spruce\" \"Cone\" \"Needles\") (wd:Q25350 \"Fir\" \"Cone\" \"Needles\") (wd:Q128550 \"Cedar\" \"Cone\" \"Needles\") (wd:Q14169641 \"Cypress\" \"Cone\" \"Scale-like leaves\") (wd:Q150129 \"Coast redwood\" \"Cone\" \"Needles\") (wd:Q149851 \"Giant sequoia\" \"Cone\" \"Scale-like leaves\") (wd:Q25618 \"Larch\" \"Cone\" \"Needles\") (wd:Q17038225 \"Yew\" \"Red berry-like aril\" \"Needles\") (wd:Q149461 \"Ginkgo\" \"Plum-like seed\" \"Simple leaves\") (wd:Q42385 \"Cacao\" \"Cocoa pod\" \"Simple leaves\") (wd:Q25243 \"Birch\" \"Tiny winged seeds\" \"Simple leaves\") (wd:Q36050 \"Willow\" \"Fluffy seed capsule\" \"Simple leaves\") (wd:Q25356 \"Poplar\" \"Fluffy seed capsule\" \"Simple leaves\") (wd:Q131113 \"Elm\" \"Papery winged disc\" \"Simple leaves\") (wd:Q128887 \"Ash\" \"Winged key\" \"Compound leaves\") (wd:Q127849 \"Linden\" \"Nutlet on a leafy wing\" \"Simple leaves\") (wd:Q183543 \"Sweetgum\" \"Spiky ball\" \"Simple leaves\") (wd:Q163025 \"Plane tree\" \"Bristly seed ball\" \"Simple leaves\") (wd:Q45669 \"Eucalyptus\" \"Gumnut\" \"Simple leaves\") (wd:Q157417 \"Black locust\" \"Seed pod\" \"Compound leaves\") (wd:Q311105 \"Jacaranda\" \"Flat woody pod\" \"Compound leaves\") (wd:Q80235 \"Tamarind\" \"Sticky brown pod\" \"Compound leaves\") (wd:Q68763 \"Carob\" \"Long brown pod\" \"Compound leaves\") (wd:Q157991 \"Baobab\" \"Large velvety pod\" \"Compound leaves\") (wd:Q2011854 \"Kapok\" \"Pod of silky fibre\" \"Compound leaves\") (wd:Q5678886 \"Banyan\" \"Small red figs\" \"Simple leaves\") (wd:Q157017 \"Magnolia\" \"Cone-like seed cluster\" \"Simple leaves\") (wd:Q159545 \"Dogwood\" \"Bright red drupes\" \"Simple leaves\") (wd:Q402453 \"Hawthorn\" \"Haw\" \"Simple leaves\") (wd:Q117085 \"Holly\" \"Red berries\" \"Simple leaves\") (wd:Q12646464 \"Rowan\" \"Orange-red berries\" \"Compound leaves\") (wd:Q25403 \"Beech\" \"Prickly husk with nuts\" \"Simple leaves\") (wd:Q22699 \"Sweet chestnut\" \"Spiky burr\" \"Simple leaves\") (wd:Q739430 \"Hemlock\" \"Small cone\" \"Needles\") (wd:Q156687 \"Douglas fir\" \"Cone with three-pronged bracts\" \"Needles\") (wd:Q156137 \"Cork oak\" \"Acorn\" \"Simple leaves\") (wd:Q239788 \"Mahogany\" \"Woody capsule\" \"Compound leaves\") (wd:Q25239 \"Alder\" \"Small woody cones\" \"Simple leaves\") (wd:Q129018 \"Blackthorn\" \"Sloe\" \"Simple leaves\") (wd:Q159570 \"Tree of heaven\" \"Winged seed\" \"Compound leaves\") (wd:Q158513 \"Hornbeam\" \"Nutlet in a leafy bract\" \"Simple leaves\") (wd:Q157236 \"Tulip tree\" \"Cone-like winged seeds\" \"Simple leaves\") (wd:Q156538 \"Rubber tree\" \"Explosive three-part capsule\" \"Compound leaves\") } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T17:01:44.869Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T17:01:44.869Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "fruit",
+   "label": "Fruit or seed it bears",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "leaf",
+   "label": "Leaf type",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "tree",
+  "many": "trees",
+  "capitalise": true,
+  "columns": {
+   "fruit": {
+    "role": "link",
+    "pick": "What does {label} bear?",
+    "statement": "{label} bears this fruit or seed: {value}.",
+    "match": "Match each tree to what it bears.",
+    "odd": "Three of these trees bear this: {value}. Which one doesn't?",
+    "all": "Tap all {n} trees that bear this: {value}."
+   },
+   "leaf": {
+    "role": "link",
+    "pick": "What kind of leaves does {label} have?",
+    "statement": "{label} has these leaves: {value}.",
+    "match": "Match each tree to its leaves.",
+    "odd": "Three of these trees have this leaf type: {value}. Which one doesn't?",
+    "all": "Tap all {n} trees with this leaf type: {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Tree of heaven",
+   "qid": "Q159570",
+   "fame": 0.586,
+   "fruit": "Winged seed",
+   "leaf": "Compound leaves",
+   "description": "species of plant",
+   "hook": null,
+   "known": 0.05,
+   "kind": "temperate hardwood"
+  },
+  {
+   "label": "Tamarind",
+   "qid": "Q80235",
+   "fame": 0.565,
+   "fruit": "Sticky brown pod",
+   "leaf": "Compound leaves",
+   "description": "species of plant, Tamarind",
+   "hook": null,
+   "known": 0.2,
+   "kind": "tropical"
+  },
+  {
+   "label": "Oak",
+   "qid": "Q12004",
+   "fame": 0.564,
+   "fruit": "Acorn",
+   "leaf": "Simple leaves",
+   "description": "genus of plants",
+   "hook": "is a hardwood of the Northern Hemisphere with hundreds of species, both deciduous and evergreen",
+   "known": 0.95,
+   "kind": "temperate hardwood"
+  },
+  {
+   "label": "Willow",
+   "qid": "Q36050",
+   "fame": 0.55,
+   "fruit": "Fluffy seed capsule",
+   "leaf": "Simple leaves",
+   "description": "genus of plants",
+   "hook": "is a moisture-loving genus of about 350 species, also known as sallows and osiers",
+   "known": 0.8,
+   "kind": "temperate hardwood"
+  },
+  {
+   "label": "Eucalyptus",
+   "qid": "Q45669",
+   "fame": 0.542,
+   "fruit": "Gumnut",
+   "leaf": "Simple leaves",
+   "description": "genus of flowering plants in the myrtle family, Myrtaceae",
+   "hook": "is a huge genus of more than 700 species, most of them trees, often called gum trees",
+   "known": 0.4,
+   "kind": "tropical"
+  },
+  {
+   "label": "Giant sequoia",
+   "qid": "Q149851",
+   "fame": 0.531,
+   "fruit": "Cone",
+   "leaf": "Scale-like leaves",
+   "description": "species of tree native to North America",
+   "hook": "is the largest tree on Earth, native to groves on the western slopes of California's Sierra Nevada",
+   "known": 0.6,
+   "kind": "conifer"
+  },
+  {
+   "label": "Pine",
+   "qid": "Q12024",
+   "fame": 0.531,
+   "fruit": "Cone",
+   "leaf": "Needles",
+   "description": "genus of plants in the conifer family Pinaceae",
+   "hook": "is a conifer whose leaves grow in bunches of two to five, with seeds on woody scales",
+   "known": 0.95,
+   "kind": "conifer"
+  },
+  {
+   "label": "Carob",
+   "qid": "Q68763",
+   "fame": 0.521,
+   "fruit": "Long brown pod",
+   "leaf": "Compound leaves",
+   "description": "species of plant",
+   "hook": null,
+   "known": 0.2,
+   "kind": "tropical"
+  },
+  {
+   "label": "Baobab",
+   "qid": "Q157991",
+   "fame": 0.513,
+   "fruit": "Large velvety pod",
+   "leaf": "Compound leaves",
+   "description": "genus of plants",
+   "hook": "is a giant deciduous genus of eight species found in Africa, Madagascar and Australia",
+   "known": 0.4,
+   "kind": "tropical"
+  },
+  {
+   "label": "Blackthorn",
+   "qid": "Q129018",
+   "fame": 0.509,
+   "fruit": "Sloe",
+   "leaf": "Simple leaves",
+   "description": "species of plant",
+   "hook": null,
+   "known": 0.2,
+   "kind": "temperate hardwood"
+  },
+  {
+   "label": "Horse chestnut",
+   "qid": "Q26899",
+   "fame": 0.509,
+   "fruit": "Conker",
+   "leaf": "Compound leaves",
+   "description": "species of plant",
+   "hook": "is a European and Asian tree whose North American relatives are called buckeyes",
+   "known": 0.4,
+   "kind": "temperate hardwood"
+  },
+  {
+   "label": "Birch",
+   "qid": "Q25243",
+   "fame": 0.507,
+   "fruit": "Tiny winged seeds",
+   "leaf": "Simple leaves",
+   "description": "genus of plants",
+   "hook": "is a thin-leaved hardwood of northern forests, related to alders and hazels",
+   "known": 0.8,
+   "kind": "temperate hardwood"
+  },
+  {
+   "label": "Magnolia",
+   "qid": "Q157017",
+   "fame": 0.507,
+   "fruit": "Cone-like seed cluster",
+   "leaf": "Simple leaves",
+   "description": "genus of plants",
+   "hook": "is a large genus of flowering plants with a range split between Asia and the Americas",
+   "known": 0.4,
+   "kind": "temperate hardwood"
+  },
+  {
+   "label": "Linden",
+   "qid": "Q127849",
+   "fame": 0.506,
+   "fruit": "Nutlet on a leafy wing",
+   "leaf": "Simple leaves",
+   "description": "genus of plants",
+   "hook": null,
+   "known": 0.2,
+   "kind": "temperate hardwood"
+  },
+  {
+   "label": "Maple",
+   "qid": "Q42292",
+   "fame": 0.504,
+   "fruit": "Winged seed",
+   "leaf": "Simple leaves",
+   "description": "genus of plants",
+   "hook": "is a genus whose most common European species is the sycamore, mostly native to East Asia",
+   "known": 0.8,
+   "kind": "temperate hardwood"
+  },
+  {
+   "label": "Elm",
+   "qid": "Q131113",
+   "fame": 0.503,
+   "fruit": "Papery winged disc",
+   "leaf": "Simple leaves",
+   "description": "genus of plants",
+   "hook": "is a deciduous genus spread across North America and Eurasia",
+   "known": 0.6,
+   "kind": "temperate hardwood"
+  },
+  {
+   "label": "Rowan",
+   "qid": "Q12646464",
+   "fame": 0.503,
+   "fruit": "Orange-red berries",
+   "leaf": "Compound leaves",
+   "description": "subgenus of plants",
+   "hook": null,
+   "known": 0.2,
+   "kind": "temperate hardwood"
+  },
+  {
+   "label": "Beech",
+   "qid": "Q25403",
+   "fame": 0.502,
+   "fruit": "Prickly husk with nuts",
+   "leaf": "Simple leaves",
+   "description": "genus of plants",
+   "hook": "is a deciduous genus of the Fagaceae family with 14 species in Eurasia and North America",
+   "known": 0.6,
+   "kind": "temperate hardwood"
+  },
+  {
+   "label": "Coast redwood",
+   "qid": "Q150129",
+   "fame": 0.5,
+   "fruit": "Cone",
+   "leaf": "Needles",
+   "description": "species of plant in the monotypic genus Sequoia in the cypress family (Cupressaceae)",
+   "hook": "is the tallest living tree on Earth, reaching over 100 metres and living around 2,000 years",
+   "known": 0.4,
+   "kind": "conifer"
+  },
+  {
+   "label": "Poplar",
+   "qid": "Q25356",
+   "fame": 0.487,
+   "fruit": "Fluffy seed capsule",
+   "leaf": "Simple leaves",
+   "description": "genus of plants",
+   "hook": "is a deciduous genus whose members include aspen and cottonwood",
+   "known": 0.4,
+   "kind": "temperate hardwood"
+  },
+  {
+   "label": "Banyan",
+   "qid": "Q5678886",
+   "fame": 0.486,
+   "fruit": "Small red figs",
+   "leaf": "Simple leaves",
+   "description": "a large tree with massive roots and sprawling branches.",
+   "hook": null,
+   "known": 0.2,
+   "kind": "tropical"
+  },
+  {
+   "label": "Larch",
+   "qid": "Q25618",
+   "fame": 0.482,
+   "fruit": "Cone",
+   "leaf": "Needles",
+   "description": "genus of plants",
+   "hook": "is a deciduous conifer that dominates the boreal forests of Siberia and Canada",
+   "known": 0.4,
+   "kind": "conifer"
+  },
+  {
+   "label": "Cacao",
+   "qid": "Q42385",
+   "fame": 0.481,
+   "fruit": "Cocoa pod",
+   "leaf": "Simple leaves",
+   "description": "tree native to tropical South America producing cocoa beans - the source plant of cacao and chocolate",
+   "hook": "is the small tropical tree whose dried, fermented seeds are made into chocolate",
+   "known": 0.6,
+   "kind": "tropical"
+  },
+  {
+   "label": "Black locust",
+   "qid": "Q157417",
+   "fame": 0.478,
+   "fruit": "Seed pod",
+   "leaf": "Compound leaves",
+   "description": "species of poisonous deciduous tree",
+   "hook": null,
+   "known": 0.05,
+   "kind": "temperate hardwood"
+  },
+  {
+   "label": "Spruce",
+   "qid": "Q26782",
+   "fame": 0.477,
+   "fruit": "Cone",
+   "leaf": "Needles",
+   "description": "genus of evergreen, coniferous tree",
+   "hook": "is a conifer genus of about 37 species found in northern temperate and taiga regions",
+   "known": 0.6,
+   "kind": "conifer"
+  },
+  {
+   "label": "Mahogany",
+   "qid": "Q239788",
+   "fame": 0.475,
+   "fruit": "Woody capsule",
+   "leaf": "Compound leaves",
+   "description": "wood",
+   "hook": "is a straight-grained, reddish-brown tropical timber from the Americas",
+   "known": 0.4,
+   "kind": "tropical"
+  },
+  {
+   "label": "Alder",
+   "qid": "Q25239",
+   "fame": 0.474,
+   "fruit": "Small woody cones",
+   "leaf": "Simple leaves",
+   "description": "genus of plants",
+   "hook": null,
+   "known": 0.2,
+   "kind": "temperate hardwood"
+  },
+  {
+   "label": "Ash",
+   "qid": "Q128887",
+   "fame": 0.474,
+   "fruit": "Winged key",
+   "leaf": "Compound leaves",
+   "description": "genus of plants",
+   "hook": "is a genus of 45 to 65 species in the olive and lilac family",
+   "known": 0.6,
+   "kind": "temperate hardwood"
+  },
+  {
+   "label": "Douglas fir",
+   "qid": "Q156687",
+   "fame": 0.467,
+   "fruit": "Cone with three-pronged bracts",
+   "leaf": "Needles",
+   "description": "evergreen conifer species",
+   "hook": "is the tallest tree in the pine family, native to western North America",
+   "known": 0.4,
+   "kind": "conifer"
+  },
+  {
+   "label": "Cypress",
+   "qid": "Q14169641",
+   "fame": 0.463,
+   "fruit": "Cone",
+   "leaf": "Scale-like leaves",
+   "description": "tree name applied to many plants of different genera",
+   "hook": "is a common name for conifers of several genera in the family Cupressaceae",
+   "known": 0.4,
+   "kind": "conifer"
+  },
+  {
+   "label": "Cedar",
+   "qid": "Q128550",
+   "fame": 0.462,
+   "fruit": "Cone",
+   "leaf": "Needles",
+   "description": "genus of plants",
+   "hook": "is a mountain conifer of the Himalayas and Mediterranean with leaves in tufts",
+   "known": 0.6,
+   "kind": "conifer"
+  },
+  {
+   "label": "Plane tree",
+   "qid": "Q163025",
+   "fame": 0.455,
+   "fruit": "Bristly seed ball",
+   "leaf": "Simple leaves",
+   "description": "genus of plants",
+   "hook": "is a small genus that is the sole living member of the family Platanaceae",
+   "known": 0.4,
+   "kind": "temperate hardwood"
+  },
+  {
+   "label": "Holly",
+   "qid": "Q117085",
+   "fame": 0.451,
+   "fruit": "Red berries",
+   "leaf": "Simple leaves",
+   "description": "genus of flowering plants",
+   "hook": "is a genus of over 570 species, whose European kind decorates Christmas cards",
+   "known": 0.8,
+   "kind": "temperate hardwood"
+  }
+ ]
+}

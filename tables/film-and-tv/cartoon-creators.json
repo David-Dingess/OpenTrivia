@@ -1,0 +1,991 @@
+{
+ "id": "table.film-and-tv.cartoon-creators",
+ "kind": "table",
+ "title": "Famous cartoons and their creator",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "cartoons-and-anime",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?creatorLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?creator) WHERE { ?item wdt:P31 wd:Q117467246 . ?item wikibase:sitelinks ?sl . FILTER(?sl >= 25) ?item wdt:P170 ?c . } GROUP BY ?item HAVING(COUNT(DISTINCT ?c) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T03:22:37.808Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T03:22:37.808Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "creator",
+   "label": "Creator",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "cartoon",
+  "many": "cartoons",
+  "hookAsk": "Which cartoon {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "creator": {
+    "role": "link",
+    "pick": "Who created the cartoon {label}?",
+    "statement": "{label} was created by {value}.",
+    "match": "Match each cartoon to its creator.",
+    "odd": "Three of these cartoons were created by {value}. Which one wasn't?",
+    "all": "Tap all {n} cartoons created by {value}.",
+    "reverse": "Which of these cartoons did {value} create?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The Simpsons",
+   "qid": "Q886",
+   "fame": 0.719,
+   "creator": "Matt Groening",
+   "description": "American animated sitcom created by Matt Groening",
+   "hook": "follows a yellow-skinned family living in the town of Springfield",
+   "known": 0.95,
+   "kind": "sitcom"
+  },
+  {
+   "label": "SpongeBob SquarePants",
+   "qid": "Q83279",
+   "fame": 0.681,
+   "creator": "Stephen Hillenburg",
+   "description": "American animated television series",
+   "hook": "follows a yellow undersea fry cook who lives in a pineapple",
+   "known": 0.95,
+   "kind": "children's"
+  },
+  {
+   "label": "Family Guy",
+   "qid": "Q5930",
+   "fame": 0.677,
+   "creator": "Seth MacFarlane",
+   "description": "American adult animated sitcom",
+   "hook": "follows a dim-witted dad, his talking dog and a scheming baby in Rhode Island",
+   "known": 0.8,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Bluey",
+   "qid": "Q39071378",
+   "fame": 0.652,
+   "creator": "Joe Brumm",
+   "description": "Australian animated preschool education television series",
+   "hook": "follows a playful puppy and her family through imaginative games",
+   "known": 0.8,
+   "kind": "children's"
+  },
+  {
+   "label": "Invincible",
+   "qid": "Q55614601",
+   "fame": 0.652,
+   "creator": "Robert Kirkman",
+   "description": "animated superhero television series",
+   "hook": "follows a teenager who inherits powers from his alien superhero father",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "Over the Garden Wall",
+   "qid": "Q17065414",
+   "fame": 0.641,
+   "creator": "Patrick McHale",
+   "description": "American animated television miniseries",
+   "hook": "follows two brothers lost in a mysterious forest trying to find their way home",
+   "known": 0.4,
+   "kind": "adventure"
+  },
+  {
+   "label": "Creature Commandos",
+   "qid": "Q116896366",
+   "fame": 0.631,
+   "creator": "James Gunn",
+   "description": "2024–present DC Studios animated series",
+   "hook": "follows a squad of monstrous misfits sent on secret government missions",
+   "known": 0.2,
+   "kind": "superhero"
+  },
+  {
+   "label": "Phineas and Ferb",
+   "qid": "Q217679",
+   "fame": 0.619,
+   "creator": "Dan Povenmire",
+   "description": "animated comedy-musical television series",
+   "hook": "follows two stepbrothers building wild inventions each summer day while their sister tries to bust them",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Paw Patrol",
+   "qid": "Q15106029",
+   "fame": 0.612,
+   "creator": "Keith Chapman",
+   "description": "Canadian children's animated television series",
+   "hook": "follows a boy and a team of rescue pups with vehicles who protect their seaside town",
+   "known": 0.8,
+   "kind": "children's"
+  },
+  {
+   "label": "Gravity Falls",
+   "qid": "Q550555",
+   "fame": 0.607,
+   "creator": "Alex Hirsch",
+   "description": "American animated television series",
+   "hook": "follows twin siblings spending a summer with their great-uncle in a mysterious Oregon town",
+   "known": 0.6,
+   "kind": "adventure"
+  },
+  {
+   "label": "Adventure Time",
+   "qid": "Q53093",
+   "fame": 0.602,
+   "creator": "Pendleton Ward",
+   "description": "American animated television series",
+   "hook": "follows a boy and his shape-shifting dog in a post-apocalyptic land of Ooo",
+   "known": 0.6,
+   "kind": "adventure"
+  },
+  {
+   "label": "BoJack Horseman",
+   "qid": "Q17733404",
+   "fame": 0.598,
+   "creator": "Raphael Bob-Waksberg",
+   "description": "2014–2020 American animated television series",
+   "hook": "follows a washed-up former sitcom star who is an anthropomorphic equine in Hollywood",
+   "known": 0.4,
+   "kind": "adult comedy"
+  },
+  {
+   "label": "Miraculous: Tales of Ladybug & Cat Noir",
+   "qid": "Q6470744",
+   "fame": 0.596,
+   "creator": "Thomas Astruc",
+   "description": "children's animated superhero television series",
+   "hook": "follows Parisian teens who transform into a spotted heroine and a black feline hero",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "The Powerpuff Girls",
+   "qid": "Q1236206",
+   "fame": 0.594,
+   "creator": "Craig McCracken",
+   "description": "American animated television series from 1998–2005",
+   "hook": "follows three sugar-and-spice super-kids created by a professor in a lab accident",
+   "known": 0.6,
+   "kind": "superhero"
+  },
+  {
+   "label": "Shaun the Sheep",
+   "qid": "Q477959",
+   "fame": 0.593,
+   "creator": "Nick Park",
+   "description": "British children's animated comedy television series",
+   "hook": "follows a mischievous woolly farm animal who leads his flock into trouble with a farmer and dog",
+   "known": 0.4,
+   "kind": "children's"
+  },
+  {
+   "label": "Spider-Man",
+   "qid": "Q569934",
+   "fame": 0.588,
+   "creator": "Stan Lee",
+   "description": "American animated television series from 1994–1998",
+   "hook": "follows a teenage photographer bitten by a radioactive arachnid and swinging over New York",
+   "known": 0.6,
+   "kind": "superhero"
+  },
+  {
+   "label": "The Wild Thornberrys",
+   "qid": "Q1357944",
+   "fame": 0.586,
+   "creator": "Arlene Klasky",
+   "description": "American animated series",
+   "hook": "follows a girl who can talk to animals on globe-trotting family adventures",
+   "known": 0.4,
+   "kind": "adventure"
+  },
+  {
+   "label": "Steven Universe",
+   "qid": "Q7615342",
+   "fame": 0.585,
+   "creator": "Rebecca Sugar",
+   "description": "American animated television series",
+   "hook": "follows a boy and his gem-based alien guardians who protect Earth",
+   "known": 0.6,
+   "kind": "adventure"
+  },
+  {
+   "label": "X-Men",
+   "qid": "Q1340065",
+   "fame": 0.584,
+   "creator": "Stan Lee",
+   "description": "animated television series from 1992–1997",
+   "hook": "follows a team of mutant heroes led by a telepathic professor in a wheelchair",
+   "known": 0.6,
+   "kind": "superhero"
+  },
+  {
+   "label": "Beavis and Butt-Head",
+   "qid": "Q511726",
+   "fame": 0.582,
+   "creator": "Mike Judge",
+   "description": "American adult animated sitcom created by Mike Judge",
+   "hook": "follows two dim-witted teens who sit on a couch, snicker and watch music videos",
+   "known": 0.6,
+   "kind": "sitcom"
+  },
+  {
+   "label": "The Loud House",
+   "qid": "Q20642692",
+   "fame": 0.582,
+   "creator": "Chris Savino",
+   "description": "American animated television series",
+   "hook": "follows a boy with ten sisters sharing one chaotic home",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "Thomas & Friends",
+   "qid": "Q501663",
+   "fame": 0.58,
+   "creator": "Wilbert Awdry",
+   "description": "British children's television series",
+   "hook": "follows sentient steam locomotives working on the Island of Sodor",
+   "known": 0.6,
+   "kind": "children's"
+  },
+  {
+   "label": "Love, Death & Robots",
+   "qid": "Q61740435",
+   "fame": 0.575,
+   "creator": "Tim Miller",
+   "description": "American animated television series",
+   "hook": "is an adult anthology of standalone sci-fi and fantasy shorts in many animation styles",
+   "known": 0.4,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Star Wars: The Clone Wars",
+   "qid": "Q632672",
+   "fame": 0.574,
+   "creator": "George Lucas",
+   "description": "2008–2020 American television series",
+   "hook": "chronicles the galactic conflict between the Republic and droid armies, with Jedi as generals",
+   "known": 0.8,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Rugrats",
+   "qid": "Q304290",
+   "fame": 0.571,
+   "creator": "Arlene Klasky",
+   "description": "American children's television series",
+   "hook": "follows a gang of adventurous babies who explore the world beyond their playpen",
+   "known": 0.6,
+   "kind": "children's"
+  },
+  {
+   "label": "Castlevania",
+   "qid": "Q30610085",
+   "fame": 0.569,
+   "creator": "Warren Ellis",
+   "description": "2017 American animated series",
+   "hook": "follows a vampire hunter and his allies battling Dracula's forces",
+   "known": 0.4,
+   "kind": "drama"
+  },
+  {
+   "label": "Disenchantment",
+   "qid": "Q33393380",
+   "fame": 0.569,
+   "creator": "Matt Groening",
+   "description": "2018–2023 American animated television series",
+   "hook": "follows a hard-drinking princess, an elf and a personal demon in a medieval kingdom",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "Teen Titans",
+   "qid": "Q638600",
+   "fame": 0.568,
+   "creator": "Glen Murakami",
+   "description": "2003 American animated television series",
+   "hook": "follows a team of young superheroes including a robot, a sorceress and an alien",
+   "known": 0.6,
+   "kind": "superhero"
+  },
+  {
+   "label": "Darkwing Duck",
+   "qid": "Q383914",
+   "fame": 0.567,
+   "creator": "Tad Stones",
+   "description": "American animated television series from 1991–1992",
+   "hook": "follows a caped, purple-fedora crime-fighter who parodies pulp heroes",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "Archer",
+   "qid": "Q632670",
+   "fame": 0.563,
+   "creator": "Adam Reed",
+   "description": "American animated television series",
+   "hook": "follows a suave but dysfunctional secret agent and his bickering spy colleagues",
+   "known": 0.6,
+   "kind": "sitcom"
+  },
+  {
+   "label": "The Amazing World of Gumball",
+   "qid": "Q906186",
+   "fame": 0.563,
+   "creator": "Ben Bocquelet",
+   "description": "British-German children's animated television series",
+   "hook": "follows a blue cat and his goldfish brother who has grown legs",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Arthur",
+   "qid": "Q1056342",
+   "fame": 0.561,
+   "creator": "Marc Brown",
+   "description": "children's animated edutainment television series",
+   "hook": "follows an aardvark schoolboy and his friends at elementary school",
+   "known": 0.8,
+   "kind": "children's"
+  },
+  {
+   "label": "Regular Show",
+   "qid": "Q82617",
+   "fame": 0.56,
+   "creator": "J. G. Quintel",
+   "description": "American animated television series created by J. G. Quintel for Cartoon Network",
+   "hook": "follows a blue jay and a raccoon slacking off as park groundskeepers",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Pingu",
+   "qid": "Q685225",
+   "fame": 0.557,
+   "creator": "Otmar Gutmann",
+   "description": "British-Swiss stop-motion clay animated children's comedy television series",
+   "hook": "follows a mischievous clay penguin who speaks in gibberish",
+   "known": 0.6,
+   "kind": "children's"
+  },
+  {
+   "label": "Bob the Builder",
+   "qid": "Q888360",
+   "fame": 0.555,
+   "creator": "Keith Chapman",
+   "description": "British children's animated television series",
+   "hook": "follows a can-do construction worker and his talking machines",
+   "known": 0.6,
+   "kind": "children's"
+  },
+  {
+   "label": "Justice League",
+   "qid": "Q250036",
+   "fame": 0.552,
+   "creator": "Bruce Timm",
+   "description": "American animated television series",
+   "hook": "unites Superman, Batman and Wonder Woman against cosmic threats",
+   "known": 0.8,
+   "kind": "superhero"
+  },
+  {
+   "label": "The Fairly OddParents",
+   "qid": "Q39037",
+   "fame": 0.551,
+   "creator": "Butch Hartman",
+   "description": "2001 American animated television series",
+   "hook": "follows a ten-year-old boy granted wishes by magical guardians who hover in a fish bowl",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Courage the Cowardly Dog",
+   "qid": "Q641486",
+   "fame": 0.549,
+   "creator": "John R. Dilworth",
+   "description": "American horror animated television series",
+   "hook": "follows a nervous pink dog protecting his elderly owners from strange threats in Nowhere",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Winx Club",
+   "qid": "Q77522",
+   "fame": 0.545,
+   "creator": "Iginio Straffi",
+   "description": "animated television series created by Iginio Straffi",
+   "hook": "follows a group of teen fairies attending a magical boarding school",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "Animaniacs",
+   "qid": "Q547744",
+   "fame": 0.543,
+   "creator": "Tom Ruegger",
+   "description": "American animated television series",
+   "hook": "features three zany siblings locked away in a water tower at a film studio",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "The Looney Tunes Show",
+   "qid": "Q684096",
+   "fame": 0.543,
+   "creator": "Sam Register",
+   "description": "animated sitcom",
+   "hook": "reimagines a rabbit and a duck as roommates in a suburban sitcom",
+   "known": 0.6,
+   "kind": "sitcom"
+  },
+  {
+   "label": "The Owl House",
+   "qid": "Q55635444",
+   "fame": 0.542,
+   "creator": "Dana Terrace",
+   "description": "American animated television series",
+   "hook": "follows a teenage human who stumbles into a demon realm and becomes a witch's apprentice",
+   "known": 0.4,
+   "kind": "adventure"
+  },
+  {
+   "label": "Batman Beyond",
+   "qid": "Q1339570",
+   "fame": 0.541,
+   "creator": "Alan Burnett",
+   "description": "American animated television series",
+   "hook": "follows a teenager who takes over the cowl from an aging Gotham vigilante in a neon future",
+   "known": 0.6,
+   "kind": "superhero"
+  },
+  {
+   "label": "The Grim Adventures of Billy & Mandy",
+   "qid": "Q13923",
+   "fame": 0.539,
+   "creator": "Maxwell Atoms",
+   "description": "American animated television series",
+   "hook": "follows two kids who trap the personification of death as their servant pal",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "Ninjago",
+   "qid": "Q851818",
+   "fame": 0.538,
+   "creator": "Michael Hegner",
+   "description": "Danish-Canadian computer-animated series",
+   "hook": "follows a team of color-coded warriors trained by a wise sensei, inspired by plastic bricks",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "Dexter's Laboratory",
+   "qid": "Q904733",
+   "fame": 0.534,
+   "creator": "Genndy Tartakovsky",
+   "description": "American comedy science fiction animated television series",
+   "hook": "follows a boy genius with a secret lab and his meddling older sister",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Ed, Edd n Eddy",
+   "qid": "Q719856",
+   "fame": 0.532,
+   "creator": "Danny Antonucci",
+   "description": "Canadian animated television series",
+   "hook": "follows three cul-de-sac boys scheming to earn money for jawbreakers",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Ultimate Spider-Man",
+   "qid": "Q401601",
+   "fame": 0.532,
+   "creator": "Brian Michael Bendis",
+   "description": "American superhero animated television series",
+   "hook": "follows a teen hero training with a S.H.I.E.L.D. team of young sidekicks",
+   "known": 0.6,
+   "kind": "superhero"
+  },
+  {
+   "label": "Hey Arnold!",
+   "qid": "Q832054",
+   "fame": 0.531,
+   "creator": "Craig Bartlett",
+   "description": "American animated children's television series",
+   "hook": "follows a football-headed kid growing up in a big-city neighborhood and boarding house",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Daria",
+   "qid": "Q1165866",
+   "fame": 0.529,
+   "creator": "Glenn Eichler",
+   "description": "American adult animated sitcom",
+   "hook": "follows a sardonic, bespectacled teen surviving high school",
+   "known": 0.6,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Sofia the First",
+   "qid": "Q7553692",
+   "fame": 0.528,
+   "creator": "Craig Gerber",
+   "description": "American animated television series",
+   "hook": "follows a girl who becomes a princess after her mother marries a king",
+   "known": 0.4,
+   "kind": "children's"
+  },
+  {
+   "label": "The Avengers: Earth's Mightiest Heroes",
+   "qid": "Q1211225",
+   "fame": 0.526,
+   "creator": "Stan Lee",
+   "description": "American animated television series",
+   "hook": "assembles Iron Man, Thor, Hulk and other Marvel champions into a team",
+   "known": 0.6,
+   "kind": "superhero"
+  },
+  {
+   "label": "Samurai Jack",
+   "qid": "Q694101",
+   "fame": 0.525,
+   "creator": "Genndy Tartakovsky",
+   "description": "American animated television series",
+   "hook": "follows a time-displaced warrior flung into a dystopian future by a shape-shifting demon",
+   "known": 0.6,
+   "kind": "adventure"
+  },
+  {
+   "label": "Transformers: Prime",
+   "qid": "Q676310",
+   "fame": 0.525,
+   "creator": "Roberto Orci",
+   "description": "American animated television series",
+   "hook": "follows robots who disguise themselves as vehicles and fight over Earth",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "He-Man and the Masters of the Universe",
+   "qid": "Q696870",
+   "fame": 0.521,
+   "creator": "Lou Scheimer",
+   "description": "1983 American animated television series produced by Filmation",
+   "hook": "follows a muscular prince who raises a sword to gain power on Eternia",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "Oggy and the Cockroaches",
+   "qid": "Q216843",
+   "fame": 0.521,
+   "creator": "Jean-Yves Raimbaud",
+   "description": "French children's animated comedy television series",
+   "hook": "pits a lazy house cat against three tormenting insects",
+   "known": 0.2,
+   "kind": "comedy"
+  },
+  {
+   "label": "Masha and the Bear",
+   "qid": "Q2667119",
+   "fame": 0.515,
+   "creator": "Oleg Kuzovkov",
+   "description": "Russian animated television series",
+   "hook": "follows a mischievous little girl and a gentle bruin who tries to keep the peace",
+   "known": 0.2,
+   "kind": "children's"
+  },
+  {
+   "label": "Foster's Home for Imaginary Friends",
+   "qid": "Q641521",
+   "fame": 0.514,
+   "creator": "Craig McCracken",
+   "description": "American animated television series",
+   "hook": "follows a boy whose invented companions live in a big mansion",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "Tiny Toon Adventures",
+   "qid": "Q387943",
+   "fame": 0.513,
+   "creator": "Tom Ruegger",
+   "description": "American animated television series",
+   "hook": "features youthful protégés of classic studio stars learning at a school of comedy",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "X-Men: Evolution",
+   "qid": "Q369286",
+   "fame": 0.513,
+   "creator": "Stan Lee",
+   "description": "animated television series",
+   "hook": "reimagines mutant heroes as high-school students under a telepathic principal",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "DuckTales",
+   "qid": "Q28739895",
+   "fame": 0.512,
+   "creator": "Carl Barks",
+   "description": "2017 American animated series",
+   "hook": "follows a miserly billionaire bird and his three nephews on treasure-hunting adventures",
+   "known": 0.6,
+   "kind": "adventure"
+  },
+  {
+   "label": "The Backyardigans",
+   "qid": "Q798576",
+   "fame": 0.512,
+   "creator": "Janice Burgess",
+   "description": "animated preschool education television series",
+   "hook": "follows five singing animal friends who imagine themselves into musical adventures",
+   "known": 0.4,
+   "kind": "children's"
+  },
+  {
+   "label": "Rocko's Modern Life",
+   "qid": "Q757148",
+   "fame": 0.51,
+   "creator": "Joe Murray",
+   "description": "American animated television series",
+   "hook": "follows a wallaby who moves to a strange city and struggles with everyday adult chores",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "Star Wars: The Bad Batch",
+   "qid": "Q97365172",
+   "fame": 0.508,
+   "creator": "Dave Filoni",
+   "description": "animated television series",
+   "hook": "follows a squad of genetically modified clone troopers who end up protecting a young girl",
+   "known": 0.4,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "The Spectacular Spider-Man",
+   "qid": "Q460707",
+   "fame": 0.507,
+   "creator": "Stan Lee",
+   "description": "2008 American animated television series",
+   "hook": "follows a teen hero balancing high school life with swinging through the city fighting villains",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "Captain Planet and the Planeteers",
+   "qid": "Q463974",
+   "fame": 0.501,
+   "creator": "Ted Turner",
+   "description": "American animated television series",
+   "hook": "features teens with magic rings who summon an eco-hero to fight pollution",
+   "known": 0.4,
+   "kind": "action"
+  },
+  {
+   "label": "Johnny Bravo",
+   "qid": "Q216991",
+   "fame": 0.501,
+   "creator": "Van Partible",
+   "description": "American animated television series",
+   "hook": "follows a muscle-bound, pompadoured man who keeps failing to charm women",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "Danny Phantom",
+   "qid": "Q83978",
+   "fame": 0.5,
+   "creator": "Butch Hartman",
+   "description": "American animated television series",
+   "hook": "follows a teen who gains ghost powers after a lab accident and fights spirits in his town",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Total Drama Island",
+   "qid": "Q754334",
+   "fame": 0.5,
+   "creator": "Jennifer Pertsch",
+   "description": "Canadian animated television series",
+   "hook": "pits teenage contestants against each other in a reality-competition parody at a summer camp",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "What's New, Scooby-Doo?",
+   "qid": "Q741791",
+   "fame": 0.496,
+   "creator": "Joe Ruby",
+   "description": "American animated television series",
+   "hook": "follows a talking Great Dane and his mystery-solving teen pals, updated with cell phones and the internet",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Mr. Bean: The Animated Series",
+   "qid": "Q841367",
+   "fame": 0.494,
+   "creator": "Rowan Atkinson",
+   "description": "British animated television series",
+   "hook": "follows a bumbling, nearly wordless man whose simple tasks spiral into chaos",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "Superman: The Animated Series",
+   "qid": "Q1277432",
+   "fame": 0.493,
+   "creator": "Bruce Timm",
+   "description": "American animated television series",
+   "hook": "follows the Man of Steel from Krypton as a Metropolis reporter and caped hero",
+   "known": 0.8,
+   "kind": "superhero"
+  },
+  {
+   "label": "Teenage Mutant Ninja Turtles",
+   "qid": "Q501338",
+   "fame": 0.493,
+   "creator": "Kevin Eastman",
+   "description": "American 2012-2017 animated TV series by the Nickelodeon Animation Studio in the franchise of the same name",
+   "hook": "follows four pizza-loving shelled brothers trained in the sewers by a rat sensei",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "Star vs. the Forces of Evil",
+   "qid": "Q13308931",
+   "fame": 0.491,
+   "creator": "Daron Nefcy",
+   "description": "American animated television series",
+   "hook": "follows a magical princess from another dimension sent to live on Earth with a host family",
+   "known": 0.4,
+   "kind": "adventure"
+  },
+  {
+   "label": "We Bare Bears",
+   "qid": "Q19881740",
+   "fame": 0.489,
+   "creator": "Daniel Chong",
+   "description": "American animated series",
+   "hook": "follows a grizzly, a panda and a polar brother trying to fit in among humans in the Bay Area",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Star Trek: The Animated Series",
+   "qid": "Q20922",
+   "fame": 0.486,
+   "creator": "Gene Roddenberry",
+   "description": "American animated science fiction television series from 1973–1974",
+   "hook": "continued a starship's five-year mission as a Saturday-morning cartoon with the original cast",
+   "known": 0.4,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "TaleSpin",
+   "qid": "Q753848",
+   "fame": 0.484,
+   "creator": "Jymn Magon",
+   "description": "American animated television series",
+   "hook": null,
+   "known": 0.2,
+   "kind": "adventure"
+  },
+  {
+   "label": "Star Wars: Clone Wars",
+   "qid": "Q616313",
+   "fame": 0.48,
+   "creator": "Genndy Tartakovsky",
+   "description": "American animated television series from 2003–2005",
+   "hook": "follows lightsaber-wielding Jedi fighting a galaxy-wide conflict in short, action-packed episodes",
+   "known": 0.4,
+   "kind": "action"
+  },
+  {
+   "label": "The Marvelous Misadventures of Flapjack",
+   "qid": "Q367313",
+   "fame": 0.479,
+   "creator": "Thurop Van Orman",
+   "description": "American animated television series",
+   "hook": null,
+   "known": 0.2,
+   "kind": "adventure"
+  },
+  {
+   "label": "Johnny Test",
+   "qid": "Q834814",
+   "fame": 0.478,
+   "creator": "Scott Fellows",
+   "description": "American-Canadian animated television series",
+   "hook": "follows a hyperactive boy who is the guinea pig for his genius twin sisters' experiments",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "My Life as a Teenage Robot",
+   "qid": "Q786120",
+   "fame": 0.477,
+   "creator": "Rob Renzetti",
+   "description": "American animated science fantasy television series",
+   "hook": null,
+   "known": 0.2,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "The Lion Guard",
+   "qid": "Q19363670",
+   "fame": 0.472,
+   "creator": "Ford Riley",
+   "description": "2015 American animated television series",
+   "hook": "follows a young cub leading a team of savanna animals defending their homeland, a sequel to a Disney film",
+   "known": 0.4,
+   "kind": "adventure"
+  },
+  {
+   "label": "Jackie Chan Adventures",
+   "qid": "Q777464",
+   "fame": 0.47,
+   "creator": "John Rogers",
+   "description": "American animated television series",
+   "hook": "follows an archaeologist and his niece battling villains who seek magical talismans of the zodiac",
+   "known": 0.4,
+   "kind": "action"
+  },
+  {
+   "label": "Amphibia",
+   "qid": "Q55603855",
+   "fame": 0.469,
+   "creator": "Matt Braly",
+   "description": "American animated television series",
+   "hook": "follows a teen girl transported to a swampy world of frog people",
+   "known": 0.4,
+   "kind": "adventure"
+  },
+  {
+   "label": "Postman Pat",
+   "qid": "Q1143800",
+   "fame": 0.469,
+   "creator": "John Cunliffe",
+   "description": "British animated preschool education television series",
+   "hook": "follows a friendly village mail carrier and his black-and-white cat",
+   "known": 0.4,
+   "kind": "children's"
+  },
+  {
+   "label": "Garfield and Friends",
+   "qid": "Q576501",
+   "fame": 0.466,
+   "creator": "Jim Davis",
+   "description": "American animated television series with characters from the Garfield and U.S. Acres comic strips",
+   "hook": "stars a lasagna-loving orange cat who hates Mondays, paired with farm animal segments",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "Code Lyoko",
+   "qid": "Q637190",
+   "fame": 0.465,
+   "creator": "Thomas Romain",
+   "description": "French animated television series",
+   "hook": null,
+   "known": 0.2,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Top Cat",
+   "qid": "Q655271",
+   "fame": 0.464,
+   "creator": "Joseph Barbera",
+   "description": "American animated television series",
+   "hook": null,
+   "known": 0.2,
+   "kind": "comedy"
+  },
+  {
+   "label": "Chowder",
+   "qid": "Q756428",
+   "fame": 0.463,
+   "creator": "C. H. Greenblatt",
+   "description": "American animated television series",
+   "hook": "follows a round young apprentice to a chef in a magical world of strange food",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "Disney's Adventures of the Gummi Bears",
+   "qid": "Q734576",
+   "fame": 0.462,
+   "creator": "Jymn Magon",
+   "description": "American animated television series",
+   "hook": null,
+   "known": 0.2,
+   "kind": "adventure"
+  },
+  {
+   "label": "Cow and Chicken",
+   "qid": "Q719872",
+   "fame": 0.458,
+   "creator": "David Feiss",
+   "description": "American animated television series",
+   "hook": null,
+   "known": 0.2,
+   "kind": "comedy"
+  },
+  {
+   "label": "Kick Buttowski: Suburban Daredevil",
+   "qid": "Q18887",
+   "fame": 0.456,
+   "creator": "Sandro Corsaro",
+   "description": "American children's animated television series",
+   "hook": null,
+   "known": 0.2,
+   "kind": "comedy"
+  },
+  {
+   "label": "Camp Lazlo",
+   "qid": "Q285276",
+   "fame": 0.454,
+   "creator": "Joe Murray",
+   "description": "American animated television series",
+   "hook": null,
+   "known": 0.2,
+   "kind": "adventure"
+  }
+ ]
+}

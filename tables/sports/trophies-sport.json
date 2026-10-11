@@ -1,0 +1,361 @@
+{
+ "id": "table.sports.trophies-sport",
+ "kind": "table",
+ "title": "Famous trophies and the sport they belong to",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "sports-lore",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?sportLabel WHERE { VALUES ?item { wd:Q211872 wd:Q31736 wd:Q2526532 wd:Q521098 wd:Q171408 wd:Q1026396 wd:Q1035067 wd:Q678383 wd:Q705707 wd:Q726480 wd:Q221401 wd:Q176834 wd:Q752423 wd:Q785207 wd:Q516636 wd:Q922116 wd:Q1133502 wd:Q928173 wd:Q166177 wd:Q222047 wd:Q739499 wd:Q738903 wd:Q725151 wd:Q634857 wd:Q517621 wd:Q18756 wd:Q11151 wd:Q178750 wd:Q83145 wd:Q223366 wd:Q483794 wd:Q169918 wd:Q184795 wd:Q189327 wd:Q189188 wd:Q11152 wd:Q150880 wd:Q308822 wd:Q132377 wd:Q206984 wd:Q854376 wd:Q467557 wd:Q396412 wd:Q192202 wd:Q16642 wd:Q58344 wd:Q1194788 wd:Q1193650 wd:Q1370853 wd:Q577698 wd:Q1065079 wd:Q26694763 wd:Q842375 wd:Q157894 wd:Q971637 wd:Q382934 } ?item wdt:P641 ?sport . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T03:17:18.622Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T03:17:18.622Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "sport",
+   "label": "Sport",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "trophy or competition",
+  "many": "trophies and competitions",
+  "hookAsk": "Which trophy or competition {hook}?",
+  "hookStatement": "",
+  "columns": {
+   "sport": {
+    "role": "link",
+    "pick": "Which sport is the {label} part of?",
+    "statement": "The {label} belongs to {value}.",
+    "match": "Match each trophy or competition to its sport.",
+    "odd": "Three of these trophies and competitions belong to {value}. Which one doesn't?",
+    "all": "Tap all {n} trophies and competitions that belong to {value}.",
+    "reverse": "Which of these trophies and competitions belongs to {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "UEFA Champions League",
+   "qid": "Q18756",
+   "fame": 0.767,
+   "sport": "association football",
+   "description": "European association football tournament",
+   "hook": "crowns the best club side on the continent, with its anthem sung before every match",
+   "known": 0.8,
+   "kind": "international tournament"
+  },
+  {
+   "label": "Ballon d'Or",
+   "qid": "Q166177",
+   "fame": 0.75,
+   "sport": "association football",
+   "description": "annual association football award",
+   "hook": "hands a golden ball to the best individual player of the year, chosen by a vote of journalists",
+   "known": 0.8,
+   "kind": "individual award"
+  },
+  {
+   "label": "Laver Cup",
+   "qid": "Q26694763",
+   "fame": 0.716,
+   "sport": "tennis",
+   "description": "tennis competition",
+   "hook": "pits a team of Europeans against a team from the rest of the globe, with stars as teammates instead of rivals",
+   "known": 0.4,
+   "kind": "team competition"
+  },
+  {
+   "label": "EFL Cup",
+   "qid": "Q11152",
+   "fame": 0.697,
+   "sport": "association football",
+   "description": "English association football competition",
+   "hook": "is the second-tier knockout trophy of English clubs, once named after a milk or a soft drink sponsor",
+   "known": 0.4,
+   "kind": "domestic cup"
+  },
+  {
+   "label": "FA Cup",
+   "qid": "Q11151",
+   "fame": 0.644,
+   "sport": "association football",
+   "description": "annual knockout football competition",
+   "hook": "is the oldest national knockout competition on Earth, where small clubs can beat giants",
+   "known": 0.8,
+   "kind": "domestic cup"
+  },
+  {
+   "label": "FIFA Club World Cup",
+   "qid": "Q223366",
+   "fame": 0.614,
+   "sport": "association football",
+   "description": "association football tournament for clubs",
+   "hook": "gathers the champion clubs of every continent in a single tournament to find the best on the planet",
+   "known": 0.6,
+   "kind": "international tournament"
+  },
+  {
+   "label": "AFC Asian Cup",
+   "qid": "Q157894",
+   "fame": 0.61,
+   "sport": "association football",
+   "description": "international association football tournament run by the Asian Football Confederation",
+   "hook": "crowns the best national side on the largest continent, held every four years",
+   "known": 0.4,
+   "kind": "international tournament"
+  },
+  {
+   "label": "Davis Cup",
+   "qid": "Q132377",
+   "fame": 0.61,
+   "sport": "tennis",
+   "description": "annual international team competition in men's tennis",
+   "hook": "is a long-running annual contest where nations send teams to battle in best-of-five rubbers on court",
+   "known": 0.8,
+   "kind": "team competition"
+  },
+  {
+   "label": "Heisman Trophy",
+   "qid": "Q1035067",
+   "fame": 0.61,
+   "sport": "American football",
+   "description": "annual award for outstanding college football player",
+   "hook": "gives a bronze statue of a stiff-arming runner to the best college player of the year",
+   "known": 0.6,
+   "kind": "individual award"
+  },
+  {
+   "label": "Africa Cup of Nations",
+   "qid": "Q83145",
+   "fame": 0.604,
+   "sport": "association football",
+   "description": "African association football tournament for men's national teams",
+   "hook": "crowns the best national side on the continent and is held every two years in different host countries",
+   "known": 0.6,
+   "kind": "international tournament"
+  },
+  {
+   "label": "Ryder Cup",
+   "qid": "Q854376",
+   "fame": 0.598,
+   "sport": "golf",
+   "description": "team-based golf competition between European and American professionals",
+   "hook": "sends twelve pros from each side of the Atlantic to battle for a small gold trophy every two years",
+   "known": 0.6,
+   "kind": "team competition"
+  },
+  {
+   "label": "Indian Premier League",
+   "qid": "Q396412",
+   "fame": 0.585,
+   "sport": "cricket",
+   "description": "professional cricket league in India",
+   "hook": "is a glitzy franchise competition with city-owned teams, auctioned stars and a short, loud season",
+   "known": 0.6,
+   "kind": "championship"
+  },
+  {
+   "label": "Copa América",
+   "qid": "Q178750",
+   "fame": 0.573,
+   "sport": "association football",
+   "description": "South American association football tournament for men's national teams",
+   "hook": "is the oldest continental national-team tournament on Earth, with Brazil and Argentina as the usual favourites",
+   "known": 0.8,
+   "kind": "international tournament"
+  },
+  {
+   "label": "Copa Libertadores",
+   "qid": "Q184795",
+   "fame": 0.57,
+   "sport": "association football",
+   "description": "South American association football tournament for clubs",
+   "hook": "is the top prize for the best club sides of the continent where Brazil and Argentina rule",
+   "known": 0.4,
+   "kind": "international tournament"
+  },
+  {
+   "label": "Stanley Cup",
+   "qid": "Q211872",
+   "fame": 0.561,
+   "sport": "ice hockey",
+   "description": "championship trophy awarded annually in the National Hockey League",
+   "hook": "is a silver chalice with names engraved on its bands, hoisted and drunk from by the winning team",
+   "known": 0.8,
+   "kind": "championship"
+  },
+  {
+   "label": "Billie Jean King Cup",
+   "qid": "Q206984",
+   "fame": 0.545,
+   "sport": "tennis",
+   "description": "international team competition in women's tennis",
+   "hook": "is the women's equivalent of a famous team competition, once named after the Federation's own title",
+   "known": 0.4,
+   "kind": "team competition"
+  },
+  {
+   "label": "Copa del Rey",
+   "qid": "Q483794",
+   "fame": 0.545,
+   "sport": "association football",
+   "description": "Spanish association football tournament",
+   "hook": "is the knockout competition of Spain, where the final is held on neutral ground in front of a royal",
+   "known": 0.6,
+   "kind": "domestic cup"
+  },
+  {
+   "label": "NBA Most Valuable Player Award",
+   "qid": "Q222047",
+   "fame": 0.539,
+   "sport": "basketball",
+   "description": "award",
+   "hook": "goes each season to the top performer on the hardwood, chosen by sportswriters and broadcasters",
+   "known": 0.8,
+   "kind": "individual award"
+  },
+  {
+   "label": "America's Cup",
+   "qid": "Q467557",
+   "fame": 0.516,
+   "sport": "sailing",
+   "description": "sailing race trophy",
+   "hook": "is the oldest trophy in international sport, held by one nation for 132 years in a row",
+   "known": 0.6,
+   "kind": "championship"
+  },
+  {
+   "label": "CONCACAF Gold Cup",
+   "qid": "Q189327",
+   "fame": 0.516,
+   "sport": "association football",
+   "description": "international football tournament in North America",
+   "hook": "crowns the best national side in North America and the Caribbean, with Mexico and the United States dominant",
+   "known": 0.4,
+   "kind": "international tournament"
+  },
+  {
+   "label": "ICC Champions Trophy",
+   "qid": "Q971637",
+   "fame": 0.51,
+   "sport": "cricket",
+   "description": "One-Day International (ODI) cricket tournament organised by the International Cricket Council (ICC)",
+   "hook": "is a quadrennial one-day tournament among the top eight nations, nicknamed the mini version of a bigger event",
+   "known": 0.4,
+   "kind": "championship"
+  },
+  {
+   "label": "Cy Young Award",
+   "qid": "Q634857",
+   "fame": 0.499,
+   "sport": "baseball",
+   "description": "Major League Baseball award given annually to the best pitcher in each league",
+   "hook": "goes to the best pitcher in each league every season, named after a hurler with 511 wins",
+   "known": 0.4,
+   "kind": "individual award"
+  },
+  {
+   "label": "FA Community Shield",
+   "qid": "Q189188",
+   "fame": 0.498,
+   "sport": "association football",
+   "description": "association football competition in England",
+   "hook": null,
+   "known": 0.2,
+   "kind": "domestic cup"
+  },
+  {
+   "label": "The Ashes",
+   "qid": "Q725151",
+   "fame": 0.487,
+   "sport": "cricket",
+   "description": "Test cricket series played between Australia and England, the oldest known cricket league",
+   "hook": "is a famous little urn said to hold burnt remains of a bail, fought over by two old rivals",
+   "known": 0.8,
+   "kind": "team competition"
+  },
+  {
+   "label": "DFB-Pokal",
+   "qid": "Q150880",
+   "fame": 0.486,
+   "sport": "association football",
+   "description": "cup for German knockout football cup comptetion held BV annually",
+   "hook": "is the knockout trophy of Germany, with a final always held in the capital's Olympic Stadium",
+   "known": 0.4,
+   "kind": "domestic cup"
+  },
+  {
+   "label": "MLS Cup",
+   "qid": "Q577698",
+   "fame": 0.484,
+   "sport": "association football",
+   "description": "championship match of Major League Soccer",
+   "hook": "is decided in a single playoff final to name the champion of the top American and Canadian circuit",
+   "known": 0.4,
+   "kind": "championship"
+  },
+  {
+   "label": "Coppa Italia",
+   "qid": "Q169918",
+   "fame": 0.468,
+   "sport": "association football",
+   "description": "annual domestic cup of Italian football",
+   "hook": "is the national knockout trophy contested by clubs in the boot-shaped peninsula",
+   "known": 0.6,
+   "kind": "domestic cup"
+  },
+  {
+   "label": "FIFA World Cup Trophy",
+   "qid": "Q517621",
+   "fame": 0.46,
+   "sport": "association football",
+   "description": "award for victors for the FIFA World Cup",
+   "hook": "is a gold statue of two figures holding up a globe, lifted by the planet's champions",
+   "known": 0.95,
+   "kind": "international tournament"
+  },
+  {
+   "label": "Six Nations Championship",
+   "qid": "Q16642",
+   "fame": 0.455,
+   "sport": "rugby union",
+   "description": "annual international rugby union competition",
+   "hook": "is the oldest annual northern-hemisphere tournament, with the Calcutta Cup and Triple Crown as side prizes",
+   "known": 0.8,
+   "kind": "team competition"
+  },
+  {
+   "label": "Grey Cup",
+   "qid": "Q171408",
+   "fame": 0.454,
+   "sport": "Canadian football",
+   "description": "championship game and trophy of the Canadian Football League",
+   "hook": null,
+   "known": 0.2,
+   "kind": "championship"
+  }
+ ]
+}

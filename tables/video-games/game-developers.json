@@ -1,0 +1,580 @@
+{
+ "id": "table.video-games.game-developers",
+ "kind": "table",
+ "title": "Video games and the studio that made them",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "studios",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?devLabel WHERE { { SELECT ?item (SAMPLE(?d) AS ?dev) (COUNT(DISTINCT ?d) AS ?nDev) WHERE { ?item wdt:P31 wd:Q7889 ; wdt:P178 ?d ; wikibase:sitelinks ?sl . FILTER(?sl >= 25) FILTER NOT EXISTS { ?item wdt:P852 ?esrb . VALUES ?esrb { wd:Q14864331 wd:Q14864332 wd:Q110488287 wd:Q124356066 } } FILTER NOT EXISTS { ?item wdt:P908 wd:Q14915517 } FILTER(?item NOT IN (wd:Q42266827, wd:Q857823, wd:Q15712701)) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nDev = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T00:50:54.301Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T00:50:54.301Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "developer",
+   "label": "Developer",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "game",
+  "many": "games",
+  "hookAsk": "Which game {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "developer": {
+    "role": "link",
+    "pick": "Which studio made {label}?",
+    "statement": "{label} was made by {value}.",
+    "match": "Match each game to the studio that made it.",
+    "odd": "Three of these were made by {value}. Which one wasn't?",
+    "all": "Tap all {n} games made by {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Wordle",
+   "qid": "Q110367996",
+   "fame": 0.801,
+   "developer": "Josh Wardle",
+   "description": "web-based word logic game",
+   "hook": "has everyone guessing a hidden five-letter word in six tries, sharing colored-square results online",
+   "known": 0.95,
+   "kind": "other"
+  },
+  {
+   "label": "Roblox",
+   "qid": "Q692989",
+   "fame": 0.752,
+   "developer": "Roblox Corporation",
+   "description": "multiplayer game creation platform",
+   "hook": "lets millions of players build and publish their own games inside one shared platform",
+   "known": 0.8,
+   "kind": "other"
+  },
+  {
+   "label": "World of Warcraft",
+   "qid": "Q131007",
+   "fame": 0.652,
+   "developer": "Blizzard Entertainment",
+   "description": "2004 video game by Blizzard Entertainment",
+   "hook": "lets thousands of players raid dungeons together in a persistent fantasy realm for a monthly fee",
+   "known": 0.8,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Fortnite",
+   "qid": "Q349375",
+   "fame": 0.635,
+   "developer": "Epic Games",
+   "description": "2017 video game developed by Epic Games",
+   "hook": "drops a hundred players onto a shrinking island to be the last one standing, building forts along the way",
+   "known": 0.95,
+   "kind": "other"
+  },
+  {
+   "label": "Spider-Man",
+   "qid": "Q25340029",
+   "fame": 0.622,
+   "developer": "Insomniac Games",
+   "description": "2018 video game developed by Insomniac Games",
+   "hook": "lets you swing between skyscrapers as a wall-crawling superhero protecting a city",
+   "known": 0.8,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Final Fantasy VII",
+   "qid": "Q214232",
+   "fame": 0.621,
+   "developer": "Square",
+   "description": "1997 video game",
+   "hook": "follows a mercenary who joins rebels fighting a company that drains the planet of its life energy",
+   "known": 0.8,
+   "kind": "final fantasy"
+  },
+  {
+   "label": "Pac-Man",
+   "qid": "Q173626",
+   "fame": 0.6,
+   "developer": "Namco",
+   "description": "1980 arcade game developed by Namco",
+   "hook": "has you gobble dots and fruit through a maze while dodging four colorful ghosts",
+   "known": 0.95,
+   "kind": "other"
+  },
+  {
+   "label": "Genshin Impact",
+   "qid": "Q65059474",
+   "fame": 0.591,
+   "developer": "miHoYo",
+   "description": "2020 free-to-play action role-playing video game",
+   "hook": "lets you gacha-pull elemental heroes to explore a gorgeous open fantasy world",
+   "known": 0.6,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Black Myth: Wukong",
+   "qid": "Q98582386",
+   "fame": 0.585,
+   "developer": "Game Science",
+   "description": "2024 video game developed by Game Science",
+   "hook": "follows a stone monkey hero fighting his way across a mythical land based on a classic legend",
+   "known": 0.4,
+   "kind": "action adventure"
+  },
+  {
+   "label": "League of Legends",
+   "qid": "Q223341",
+   "fame": 0.583,
+   "developer": "Riot Games",
+   "description": "2009 multiplayer online battle arena video game",
+   "hook": "pits two five-champion teams against each other to destroy a base guarded by turrets and a dragon pit",
+   "known": 0.7,
+   "kind": "other"
+  },
+  {
+   "label": "PUBG: Battlegrounds",
+   "qid": "Q28937399",
+   "fame": 0.582,
+   "developer": "PUBG Studios",
+   "description": "2017 video game",
+   "hook": "parachutes a hundred players onto an island to scavenge weapons until one team survives",
+   "known": 0.8,
+   "kind": "other"
+  },
+  {
+   "label": "Super Mario Bros.",
+   "qid": "Q11168",
+   "fame": 0.581,
+   "developer": "Nintendo Entertainment Analysis & Development",
+   "description": "1985 platform video game",
+   "hook": "introduced side-scrolling platforming where a mustachioed plumber stomps turtles to rescue a princess",
+   "known": 0.95,
+   "kind": "mario"
+  },
+  {
+   "label": "Among Us",
+   "qid": "Q96417649",
+   "fame": 0.579,
+   "developer": "InnerSloth",
+   "description": "2018 video game developed by InnerSloth",
+   "hook": "has a crew of colorful crewmates hunting for impostors secretly sabotaging their spaceship",
+   "known": 0.95,
+   "kind": "other"
+  },
+  {
+   "label": "RuneScape",
+   "qid": "Q187732",
+   "fame": 0.547,
+   "developer": "Jagex",
+   "description": "2001 massively multiplayer online role-playing game",
+   "hook": "lets you level up a fantasy character in a browser-based medieval world that never resets",
+   "known": 0.5,
+   "kind": "other"
+  },
+  {
+   "label": "Counter-Strike 2",
+   "qid": "Q111165107",
+   "fame": 0.543,
+   "developer": "Valve Corporation",
+   "description": "2023 video game",
+   "hook": "has two five-player teams plant or defuse a bomb using realistic weapon recoil and round-based economy",
+   "known": 0.7,
+   "kind": "other"
+  },
+  {
+   "label": "Warcraft III: Reign of Chaos",
+   "qid": "Q207948",
+   "fame": 0.542,
+   "developer": "Blizzard Entertainment",
+   "description": "2002 video game",
+   "hook": "has four fantasy factions, including undead and elves, battle for territory with hero units leading armies",
+   "known": 0.5,
+   "kind": "other"
+  },
+  {
+   "label": "Final Fantasy X",
+   "qid": "Q223381",
+   "fame": 0.54,
+   "developer": "Square",
+   "description": "2001 video game",
+   "hook": "follows an athlete swept into a strange land where he joins a summoner's pilgrimage to stop a rampaging beast",
+   "known": 0.7,
+   "kind": "final fantasy"
+  },
+  {
+   "label": "Portal",
+   "qid": "Q274897",
+   "fame": 0.535,
+   "developer": "Valve Corporation",
+   "description": "2007 first-person puzzle video game",
+   "hook": "has you punch portals into walls to solve physics puzzles while a sarcastic AI mocks you",
+   "known": 0.7,
+   "kind": "other"
+  },
+  {
+   "label": "Super Mario 64",
+   "qid": "Q216995",
+   "fame": 0.533,
+   "developer": "Nintendo Entertainment Analysis & Development",
+   "description": "1996 three-dimensional platform video game developed by Nintendo",
+   "hook": "was among the first platformers to let a mustachioed hero run freely through fully three-dimensional worlds",
+   "known": 0.8,
+   "kind": "mario"
+  },
+  {
+   "label": "Super Mario Odyssey",
+   "qid": "Q28234671",
+   "fame": 0.53,
+   "developer": "Nintendo",
+   "description": "2017 platform video game",
+   "hook": "has a mustachioed hero throw a sentient, living hat to possess enemies and objects",
+   "known": 0.7,
+   "kind": "mario"
+  },
+  {
+   "label": "Valorant",
+   "qid": "Q86919275",
+   "fame": 0.527,
+   "developer": "Riot Games",
+   "description": "2020 free-to-play multiplayer first-person shooter video game developed by Riot Games",
+   "hook": "has two five-player teams of gifted agents with unique powers plant or defuse a bomb on colorful maps",
+   "known": 0.6,
+   "kind": "other"
+  },
+  {
+   "label": "Call of Duty",
+   "qid": "Q211096",
+   "fame": 0.524,
+   "developer": "Infinity Ward",
+   "description": "2003 video game",
+   "hook": "drops you into gritty modern and historical battlefields for fast-paced military shootouts",
+   "known": 0.8,
+   "kind": "other"
+  },
+  {
+   "label": "Super Mario Galaxy",
+   "qid": "Q170489",
+   "fame": 0.523,
+   "developer": "Nintendo Entertainment Analysis & Development",
+   "description": "2007 video game",
+   "hook": "has a mustachioed hero hop between tiny spherical planets, bending gravity as he goes",
+   "known": 0.7,
+   "kind": "mario"
+  },
+  {
+   "label": "StarCraft",
+   "qid": "Q165929",
+   "fame": 0.521,
+   "developer": "Blizzard Entertainment",
+   "description": "1998 video game",
+   "hook": "has three alien factions clash for territory in a legendary real-time strategy war",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Myst",
+   "qid": "Q6497116",
+   "fame": 0.517,
+   "developer": "Cyan Worlds",
+   "description": "1993 graphic adventure video game",
+   "hook": "strands you on a mysterious island of puzzles with no instructions and barely any dialogue",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Dota 2",
+   "qid": "Q771541",
+   "fame": 0.515,
+   "developer": "Valve Corporation",
+   "description": "2013 video game",
+   "hook": "pits two five-hero teams against each other to slay a boss and destroy a heavily shielded base",
+   "known": 0.6,
+   "kind": "other"
+  },
+  {
+   "label": "Pong",
+   "qid": "Q216293",
+   "fame": 0.513,
+   "developer": "Atari, Inc.",
+   "description": "1972 video game",
+   "hook": "has two players bat a bouncing square between paddles on opposite sides of the screen",
+   "known": 0.95,
+   "kind": "other"
+  },
+  {
+   "label": "Euro Truck Simulator 2",
+   "qid": "Q2632206",
+   "fame": 0.51,
+   "developer": "SCS Software",
+   "description": "2012 vehicle simulation video game made by SCS Software",
+   "hook": "has you haul cargo across a continent behind the wheel of a big rig",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Final Fantasy XII",
+   "qid": "Q327594",
+   "fame": 0.509,
+   "developer": "Square Enix",
+   "description": "2006 video game",
+   "hook": "follows a band of unlikely rebels fighting to free a conquered kingdom from an occupying empire",
+   "known": 0.5,
+   "kind": "final fantasy"
+  },
+  {
+   "label": "Five Nights at Freddy's",
+   "qid": "Q17618314",
+   "fame": 0.508,
+   "developer": "Scott Cawthon",
+   "description": "2014 horror video game",
+   "hook": "has you survive night shifts guarding a haunted pizza restaurant from animatronic mascots",
+   "known": 0.6,
+   "kind": "other"
+  },
+  {
+   "label": "Second Life",
+   "qid": "Q106827",
+   "fame": 0.508,
+   "developer": "Linden Lab",
+   "description": "virtual online world",
+   "hook": "lets residents build homes, businesses, and avatars inside a persistent user-made virtual world",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Space Invaders",
+   "qid": "Q220665",
+   "fame": 0.506,
+   "developer": "Taito",
+   "description": "1978 fixed shooter video game",
+   "hook": "has you defend the bottom of the screen from descending rows of aliens closing in",
+   "known": 0.95,
+   "kind": "other"
+  },
+  {
+   "label": "Cuphead",
+   "qid": "Q18149495",
+   "fame": 0.505,
+   "developer": "Studio MDHR",
+   "description": "2017 video game",
+   "hook": "has you battle wildly animated bosses in a run-and-gun styled after old rubber-hose cartoons",
+   "known": 0.3,
+   "kind": "indie"
+  },
+  {
+   "label": "Brawl Stars",
+   "qid": "Q30330493",
+   "fame": 0.504,
+   "developer": "Supercell",
+   "description": "2018 video game",
+   "hook": "pits small teams of quirky characters against each other in quick top-down arena brawls",
+   "known": 0.3,
+   "kind": "other"
+  },
+  {
+   "label": "Super Mario World",
+   "qid": "Q853143",
+   "fame": 0.504,
+   "developer": "Nintendo Entertainment Analysis & Development",
+   "description": "1990 platform video game developed by Nintendo",
+   "hook": "introduced a friendly dinosaur sidekick a mustachioed hero could ride and flutter-jump with",
+   "known": 0.8,
+   "kind": "mario"
+  },
+  {
+   "label": "The Elder Scrolls III: Morrowind",
+   "qid": "Q718448",
+   "fame": 0.502,
+   "developer": "Bethesda Game Studios",
+   "description": "2002 fantasy action role-playing video game",
+   "hook": "drops you into an open fantasy island province where you can ignore the main quest entirely",
+   "known": 0.5,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Rocket League",
+   "qid": "Q20031743",
+   "fame": 0.501,
+   "developer": "Psyonix",
+   "description": "2015 video game",
+   "hook": "is soccer played by jet-boosted cars smashing a giant ball into goals",
+   "known": 0.6,
+   "kind": "other"
+  },
+  {
+   "label": "Tomb Raider",
+   "qid": "Q317620",
+   "fame": 0.5,
+   "developer": "Core Design",
+   "description": "1996 action-adventure video game developed by Core Design",
+   "hook": "has an adventurer with twin pistols swing and climb through ancient booby-trapped tombs",
+   "known": 0.7,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Final Fantasy VIII",
+   "qid": "Q245006",
+   "fame": 0.497,
+   "developer": "Square",
+   "description": "1999 role-playing video game",
+   "hook": "follows a young mercenary swept into a war against a sorceress bent on manipulating time itself",
+   "known": 0.5,
+   "kind": "final fantasy"
+  },
+  {
+   "label": "Final Fantasy IX",
+   "qid": "Q474573",
+   "fame": 0.495,
+   "developer": "Square",
+   "description": "2000 video game",
+   "hook": "follows a monkey-tailed thief who kidnaps a princess and ends up saving the world with her instead",
+   "known": 0.5,
+   "kind": "final fantasy"
+  },
+  {
+   "label": "Mario Kart 8",
+   "qid": "Q13427106",
+   "fame": 0.49,
+   "developer": "Nintendo Entertainment Analysis & Development",
+   "description": "2014 racing video game",
+   "hook": "has drivers hurl shells and bananas at each other while racing go-karts around themed tracks",
+   "known": 0.8,
+   "kind": "mario"
+  },
+  {
+   "label": "Candy Crush Saga",
+   "qid": "Q8768018",
+   "fame": 0.479,
+   "developer": "King",
+   "description": "2012 puzzle video game by King",
+   "hook": "has you match colorful candies in rows to clear boards on a never-ending map of levels",
+   "known": 0.9,
+   "kind": "other"
+  },
+  {
+   "label": "Overwatch",
+   "qid": "Q18515944",
+   "fame": 0.475,
+   "developer": "Blizzard Entertainment",
+   "description": "2016 multiplayer first-person shooter video game",
+   "hook": "has two teams of colorful heroes with unique powers fight over objective-based battlefields",
+   "known": 0.7,
+   "kind": "other"
+  },
+  {
+   "label": "Cities: Skylines",
+   "qid": "Q18149274",
+   "fame": 0.474,
+   "developer": "Colossal Order",
+   "description": "2015 city-building video game",
+   "hook": "lets you zone, pave, and manage traffic while growing a city from a small town",
+   "known": 0.3,
+   "kind": "other"
+  },
+  {
+   "label": "Warcraft: Orcs & Humans",
+   "qid": "Q207885",
+   "fame": 0.473,
+   "developer": "Blizzard Entertainment",
+   "description": "1994 video game",
+   "hook": "launched a legendary real-time strategy series pitting two fantasy armies against each other for territory",
+   "known": 0.3,
+   "kind": "other"
+  },
+  {
+   "label": "War Thunder",
+   "qid": "Q4052939",
+   "fame": 0.472,
+   "developer": "Gaijin Entertainment",
+   "description": "2012 vehicular combat multiplayer video game developed by Gaijin Entertainment",
+   "hook": "lets you pilot tanks, ships, and warplanes together in large-scale historical combat",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Need for Speed: Underground 2",
+   "qid": "Q726190",
+   "fame": 0.466,
+   "developer": "EA Vancouver",
+   "description": "2004 video game",
+   "hook": "lets you deeply customize your car's body and paint before racing through a nighttime city",
+   "known": 0.3,
+   "kind": "other"
+  },
+  {
+   "label": "Wii Sports",
+   "qid": "Q71936",
+   "fame": 0.466,
+   "developer": "Nintendo Entertainment Analysis & Development",
+   "description": "2006 sports video game",
+   "hook": "had players swing a motion controller like a racket or club to compete in the living room",
+   "known": 0.95,
+   "kind": "mario"
+  },
+  {
+   "label": "Civilization VI",
+   "qid": "Q24050047",
+   "fame": 0.461,
+   "developer": "Firaxis Games",
+   "description": "2016 turn-based strategy video game",
+   "hook": "has you guide a growing society from the stone age to the space age one turn at a time",
+   "known": 0.3,
+   "kind": "other"
+  },
+  {
+   "label": "Uncharted 2: Among Thieves",
+   "qid": "Q17146",
+   "fame": 0.461,
+   "developer": "Naughty Dog",
+   "description": "2009 video game",
+   "hook": "has a wisecracking treasure hunter climb, shoot, and swing through cinematic set pieces",
+   "known": 0.7,
+   "kind": "action adventure"
+  },
+  {
+   "label": "Angry Birds",
+   "qid": "Q4558721",
+   "fame": 0.459,
+   "developer": "Rovio Entertainment",
+   "description": "puzzle video game by Rovio released in December 2009",
+   "hook": "has you slingshot squabbling flightless fowl at pigs who stole their eggs",
+   "known": 0.85,
+   "kind": "other"
+  },
+  {
+   "label": "The Sims",
+   "qid": "Q184816",
+   "fame": 0.453,
+   "developer": "Maxis",
+   "description": "2000 video game",
+   "hook": "lets you build a house and control the daily lives of little people in a dollhouse-like simulation",
+   "known": 0.8,
+   "kind": "other"
+  }
+ ]
+}

@@ -1,0 +1,187 @@
+{
+ "id": "table.math.units-named-after",
+ "kind": "table",
+ "title": "Units named after people",
+ "genre": "science-math-tech",
+ "category": "math",
+ "topic": "units",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?namesake ?namesakeLabel WHERE { VALUES ?item { wd:Q12438 wd:Q25236 wd:Q25269 wd:Q44395 wd:Q11579 wd:Q25272 wd:Q25250 wd:Q47083 wd:Q39369 wd:Q25406 wd:Q131255 wd:Q163354 wd:Q163343 wd:Q170804 wd:Q169893 wd:Q102573 wd:Q190095 wd:Q103246 wd:Q484092 wd:Q179836 wd:Q83216 wd:Q33680 wd:Q25267 wd:Q42289 wd:Q5329 wd:Q128822 wd:Q253276 wd:Q3710 wd:Q218593 wd:Q482798 wd:Q100995 wd:Q48013 wd:Q41803 wd:Q191118 wd:Q8799 wd:Q8805 wd:Q12129 wd:Q531 wd:Q83327 wd:Q483261 wd:Q178413 wd:Q81292 wd:Q11582 wd:Q35852 wd:Q11573 wd:Q11570 wd:Q11574 wd:Q7727 wd:Q25235 wd:Q828224 wd:Q11229 wd:Q182429 wd:Q25343 wd:Q11570 wd:Q79726 wd:Q79738 wd:Q1811 wd:Q4917 wd:Q12129 wd:Q47083 wd:Q182098 wd:Q4593291 wd:Q11648 wd:Q41509 wd:Q25269 wd:Q25406 wd:Q12439 wd:Q182429 wd:Q12507 wd:Q25251 wd:Q1024 } ?item wdt:P138 ?namesake . ?namesake wdt:P31 wd:Q5 . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T03:03:01.963Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T03:03:01.963Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "namesake",
+   "label": "Named after",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "unit",
+  "many": "units",
+  "columns": {
+   "namesake": {
+    "role": "code",
+    "pick": "Who is the {label} named after?",
+    "statement": "The {label} is named after {value}.",
+    "match": "Match each unit to the person it is named after.",
+    "reverse": "Which unit is named after {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "joule",
+   "qid": "Q25269",
+   "fame": 0.553,
+   "namesake": "James Prescott Joule",
+   "description": "SI unit of energy, work and amount of heat",
+   "hook": "measures energy and work, and is the amount a one-watt device uses each second",
+   "known": 0.4,
+   "kind": "mechanics"
+  },
+  {
+   "label": "degree Fahrenheit",
+   "qid": "Q42289",
+   "fame": 0.545,
+   "namesake": "Daniel Gabriel Fahrenheit",
+   "description": "unit of temperature",
+   "hook": "is the temperature scale used in the United States, where water freezes at 32 and boils at 212",
+   "known": 0.6,
+   "kind": "temperature"
+  },
+  {
+   "label": "degree Celsius",
+   "qid": "Q25267",
+   "fame": 0.533,
+   "namesake": "Anders Celsius",
+   "description": "SI unit of Celsius temperature",
+   "hook": "is the metric temperature scale where water freezes at zero and boils at one hundred",
+   "known": 0.8,
+   "kind": "temperature"
+  },
+  {
+   "label": "kelvin",
+   "qid": "Q11579",
+   "fame": 0.529,
+   "namesake": "William Thomson, 1st Baron Kelvin",
+   "description": "SI unit of thermodynamic temperature",
+   "hook": "is the scientific temperature unit whose zero point is absolute zero, the coldest possible",
+   "known": 0.2,
+   "kind": "temperature"
+  },
+  {
+   "label": "decibel",
+   "qid": "Q5329",
+   "fame": 0.526,
+   "namesake": "Alexander Graham Bell",
+   "description": "logarithmic unit expressing the ratio of a physical quantity",
+   "hook": "measures how loud a sound is, and is named for the inventor of the telephone",
+   "known": 0.5,
+   "kind": "wave"
+  },
+  {
+   "label": "pascal",
+   "qid": "Q44395",
+   "fame": 0.521,
+   "namesake": "Blaise Pascal",
+   "description": "SI unit of pressure and stress",
+   "hook": "measures pressure, and is named for a French thinker who also built an early calculating machine",
+   "known": 0.15,
+   "kind": "mechanics"
+  },
+  {
+   "label": "hertz",
+   "qid": "Q39369",
+   "fame": 0.52,
+   "namesake": "Heinrich Hertz",
+   "description": "SI unit of frequency",
+   "hook": "measures how many times something repeats each second, such as a sound wave or radio signal",
+   "known": 0.4,
+   "kind": "wave"
+  },
+  {
+   "label": "watt",
+   "qid": "Q25236",
+   "fame": 0.518,
+   "namesake": "James Watt",
+   "description": "SI unit of power",
+   "hook": "measures power, and is printed on light bulbs to show how much electricity they draw",
+   "known": 0.8,
+   "kind": "mechanics"
+  },
+  {
+   "label": "newton",
+   "qid": "Q12438",
+   "fame": 0.514,
+   "namesake": "Isaac Newton",
+   "description": "SI unit of force",
+   "hook": "measures force, and is named for the scientist said to have been inspired by a falling apple",
+   "known": 0.3,
+   "kind": "mechanics"
+  },
+  {
+   "label": "ampere",
+   "qid": "Q25272",
+   "fame": 0.495,
+   "namesake": "André-Marie Ampère",
+   "description": "SI unit of electric current",
+   "hook": "measures the flow of electric current, and is the unit fuses and circuit breakers are rated in",
+   "known": 0.4,
+   "kind": "electricity"
+  },
+  {
+   "label": "ohm",
+   "qid": "Q47083",
+   "fame": 0.487,
+   "namesake": "Georg Simon Ohm",
+   "description": "SI derived unit of electrical resistance",
+   "hook": "measures how strongly a material resists the flow of electricity, and is written with the Greek letter omega",
+   "known": 0.1,
+   "kind": "electricity"
+  },
+  {
+   "label": "coulomb",
+   "qid": "Q25406",
+   "fame": 0.482,
+   "namesake": "Charles-Augustin de Coulomb",
+   "description": "SI unit of electric charge",
+   "hook": "measures electric charge, equal to what a one-amp current carries past a point in a second",
+   "known": 0.05,
+   "kind": "electricity"
+  },
+  {
+   "label": "volt",
+   "qid": "Q25250",
+   "fame": 0.461,
+   "namesake": "Alessandro Volta",
+   "description": "SI unit of electric potential, of electric potential difference (voltage), and of electromotive force",
+   "hook": "measures electrical pressure, such as the 1.5 on a AA battery or 120 from a US wall outlet",
+   "known": 0.85,
+   "kind": "electricity"
+  }
+ ]
+}

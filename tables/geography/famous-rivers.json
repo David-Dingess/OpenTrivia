@@ -1,0 +1,293 @@
+{
+ "id": "table.geography.famous-rivers",
+ "kind": "table",
+ "title": "Famous rivers: country and length",
+ "genre": "society",
+ "category": "geography",
+ "topic": "rivers-and-lakes",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?length ?countryLabel WHERE { { SELECT ?item (MAX(?l) AS ?length) (SAMPLE(?c) AS ?country) WHERE { ?item wdt:P31 wd:Q4022 ; p:P2043/psn:P2043/wikibase:quantityAmount ?l ; wdt:P17 ?c . FILTER(?l >= 100000) FILTER NOT EXISTS { ?item wdt:P17 ?c2 . FILTER(?c2 != ?c) } } GROUP BY ?item HAVING(COUNT(DISTINCT ?c) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T02:23:22.360Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T02:23:22.360Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "length_km",
+   "label": "Length",
+   "unit": "km",
+   "type": "number",
+   "scale": "length-km"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "river",
+  "many": "rivers",
+  "hookAsk": "Which river {hook}?",
+  "hookStatement": "The {label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country does the {label} flow through?",
+    "statement": "The {label} flows through {value}.",
+    "match": "Match each river to its country.",
+    "odd": "Three of these rivers flow through {value}. Which one does not?",
+    "all": "Tap all {n} rivers that flow through {value}."
+   },
+   "length_km": {
+    "role": "measure",
+    "compare": "Which is longer",
+    "display": "km",
+    "minRatio": 1.5
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Mississippi River",
+   "qid": "Q1497",
+   "fame": 0.613,
+   "country": "United States",
+   "length_km": 3766,
+   "description": "primary river of the largest drainage basin in the United States",
+   "hook": "flows south through the American heartland to the Gulf of Mexico and shaped the tales of Mark Twain",
+   "known": 0.95,
+   "kind": "north american"
+  },
+  {
+   "label": "Ganges",
+   "qid": "Q5089",
+   "fame": 0.58,
+   "country": "India",
+   "length_km": 2525,
+   "description": "major river in India",
+   "hook": "is considered sacred by Hindus and flows past the holy city of Varanasi",
+   "known": 0.8,
+   "kind": "asian"
+  },
+  {
+   "label": "River Thames",
+   "qid": "Q19686",
+   "fame": 0.561,
+   "country": "United Kingdom",
+   "length_km": 334,
+   "description": "river in southern England",
+   "hook": "winds through London past Big Ben and the Tower of London",
+   "known": 0.95,
+   "kind": "european"
+  },
+  {
+   "label": "Yangtze River",
+   "qid": "Q5413",
+   "fame": 0.551,
+   "country": "China",
+   "length_km": 6300,
+   "description": "Longest river in Asia, and the third-longest in the world",
+   "hook": "is the longest river in Asia and is crossed by the enormous Three Gorges Dam",
+   "known": 0.8,
+   "kind": "asian"
+  },
+  {
+   "label": "Yellow River",
+   "qid": "Q7355",
+   "fame": 0.549,
+   "country": "China",
+   "length_km": 5464,
+   "description": "major river in China",
+   "hook": "is called the cradle of an ancient civilization and carries so much silt it runs muddy",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "Hudson River",
+   "qid": "Q3140",
+   "fame": 0.546,
+   "country": "United States",
+   "length_km": 492,
+   "description": "river in New York State, United States",
+   "hook": "separates Manhattan from New Jersey and empties into New York Harbor",
+   "known": 0.8,
+   "kind": "north american"
+  },
+  {
+   "label": "Ohio River",
+   "qid": "Q4915",
+   "fame": 0.538,
+   "country": "United States",
+   "length_km": 1579,
+   "description": "river in the midwestern United States",
+   "hook": "flows past Cincinnati and Louisville before joining the Mississippi",
+   "known": 0.6,
+   "kind": "north american"
+  },
+  {
+   "label": "Volga",
+   "qid": "Q626",
+   "fame": 0.537,
+   "country": "Russia",
+   "length_km": 3530,
+   "description": "river in Russia; the longest river in Europe",
+   "hook": "is the longest river in Europe and empties into the Caspian Sea",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "Missouri River",
+   "qid": "Q5419",
+   "fame": 0.534,
+   "country": "United States",
+   "length_km": 3726,
+   "description": "major river in central United States",
+   "hook": "was followed westward by Lewis and Clark and joins the Mississippi near St. Louis",
+   "known": 0.6,
+   "kind": "north american"
+  },
+  {
+   "label": "Seine",
+   "qid": "Q1471",
+   "fame": 0.5,
+   "country": "France",
+   "length_km": 777,
+   "description": "river in France",
+   "hook": "flows through Paris past the Eiffel Tower and Notre-Dame",
+   "known": 0.95,
+   "kind": "european"
+  },
+  {
+   "label": "Potomac River",
+   "qid": "Q179444",
+   "fame": 0.498,
+   "country": "United States",
+   "length_km": 665,
+   "description": "river in the mid-Atlantic United States",
+   "hook": "flows past Washington, D.C., and separates Virginia from Maryland",
+   "known": 0.6,
+   "kind": "north american"
+  },
+  {
+   "label": "Narmada",
+   "qid": "Q234004",
+   "fame": 0.474,
+   "country": "India",
+   "length_km": 1315,
+   "description": "5th longest river of India",
+   "hook": null,
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Godavari River",
+   "qid": "Q191314",
+   "fame": 0.472,
+   "country": "India",
+   "length_km": 1465,
+   "description": "river in India",
+   "hook": null,
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Snake River",
+   "qid": "Q272074",
+   "fame": 0.469,
+   "country": "United States",
+   "length_km": 1735,
+   "description": "major tributary of the Columbia River in the northwestern United States",
+   "hook": "carves Hells Canyon, the deepest river gorge in North America, through Idaho",
+   "known": 0.4,
+   "kind": "north american"
+  },
+  {
+   "label": "River Severn",
+   "qid": "Q19682",
+   "fame": 0.466,
+   "country": "United Kingdom",
+   "length_km": 354,
+   "description": "river in the United Kingdom",
+   "hook": "is the longest river in Great Britain and is known for a famous tidal bore wave",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Susquehanna River",
+   "qid": "Q27538",
+   "fame": 0.462,
+   "country": "United States",
+   "length_km": 715,
+   "description": "river in the northeastern United States",
+   "hook": null,
+   "known": 0.2,
+   "kind": "north american"
+  },
+  {
+   "label": "Vistula",
+   "qid": "Q548",
+   "fame": 0.455,
+   "country": "Poland",
+   "length_km": 1047,
+   "description": "river in East-Central Europe",
+   "hook": "flows through Warsaw and Kraków before reaching the Baltic Sea",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Loire",
+   "qid": "Q1469",
+   "fame": 0.452,
+   "country": "France",
+   "length_km": 1006,
+   "description": "longest river in France",
+   "hook": "is lined with grand châteaux and a famous wine-growing valley",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "Vltava",
+   "qid": "Q131574",
+   "fame": 0.451,
+   "country": "Czech Republic",
+   "length_km": 430,
+   "description": "river in Czechia",
+   "hook": null,
+   "known": 0.2,
+   "kind": "european"
+  },
+  {
+   "label": "Tiber",
+   "qid": "Q13712",
+   "fame": 0.45,
+   "country": "Italy",
+   "length_km": 405,
+   "description": "river in Italy",
+   "hook": "flows through Rome, where legend says twin babies Romulus and Remus were set adrift",
+   "known": 0.6,
+   "kind": "european"
+  }
+ ]
+}

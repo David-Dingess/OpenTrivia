@@ -1,0 +1,190 @@
+{
+ "id": "table.pop-culture.award-shows",
+ "kind": "table",
+ "title": "Award shows: what they honour",
+ "genre": "general",
+ "category": "pop-culture",
+ "topic": "awards",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?honoursLabel WHERE { VALUES (?item ?honoursLabel) { (wd:Q19020 \"Films\") (wd:Q123737 \"Television\") (wd:Q191874 \"Broadway theatre\") (wd:Q41254 \"Recorded music\") (wd:Q1011547 \"Film and television\") (wd:Q392565 \"Chart success\") (wd:Q207601 \"Fan-voted artists\") (wd:Q223313 \"UK pop and rock\") (wd:Q163569 \"Young viewers' favorites\") (wd:Q40237 \"The worst in film\") (wd:Q622813 \"Children's books\") (wd:Q1026417 \"Picture-book art\") (wd:Q1035067 \"College football's best player\") (wd:Q166177 \"The best soccer player\") (wd:Q3046190 \"Sports feats\") (wd:Q566905 \"Animation\") (wd:Q1411891 \"The internet\") (wd:Q501058 \"Fan-voted favorites\") (wd:Q28470 \"West End theatre\") (wd:Q507057 \"Canadian music\") (wd:Q37049 \"Bollywood cinema\") (wd:Q174389 \"French cinema\") (wd:Q212828 \"Spanish cinema\") (wd:Q18642757 \"Interactive entertainment\") (wd:Q7191 \"Science, literature and peace\") (wd:Q80061 \"Journalism and writing\") (wd:Q732997 \"UK cinema\") (wd:Q1415017 \"Screenwriting\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T06:31:38.300Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T13:05:00.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "honours",
+   "label": "What it honours",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "award",
+  "many": "awards",
+  "itemText": "{label}",
+  "hookAsk": "Which award {hook}?",
+  "hookStatement": "",
+  "columns": {
+   "honours": {
+    "role": "code",
+    "pick": "What does the {label} honour?",
+    "statement": "The {label} honours {value}.",
+    "match": "Match each award to what it honours.",
+    "reverse": "Which award honours {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Ballon d'Or",
+   "qid": "Q166177",
+   "fame": 0.749,
+   "honours": "The best soccer player",
+   "description": "annual association football award",
+   "hook": "is handed out by a French magazine to the world's finest footballer, once limited to Europeans",
+   "known": 0.6,
+   "kind": "sports"
+  },
+  {
+   "label": "Academy Awards",
+   "qid": "Q19020",
+   "fame": 0.693,
+   "honours": "Films",
+   "description": "annual awards for cinematic achievements",
+   "hook": "is nicknamed after a golden statuette and caps Hollywood's prize season with a televised ceremony",
+   "known": 0.95,
+   "kind": "film"
+  },
+  {
+   "label": "Emmy Award",
+   "qid": "Q123737",
+   "fame": 0.691,
+   "honours": "Television",
+   "description": "American television production award",
+   "hook": "is given in separate ceremonies for primetime and daytime programming in America",
+   "known": 0.8,
+   "kind": "broadcast"
+  },
+  {
+   "label": "Heisman Trophy",
+   "qid": "Q1035067",
+   "fame": 0.607,
+   "honours": "College football's best player",
+   "description": "annual award for outstanding college football player",
+   "hook": "is presented each December to the top gridiron star at the university level",
+   "known": 0.4,
+   "kind": "sports"
+  },
+  {
+   "label": "Grammy Awards",
+   "qid": "Q41254",
+   "fame": 0.598,
+   "honours": "Recorded music",
+   "description": "American award for achievements in music",
+   "hook": "is a gilded gramophone trophy handed out at a big annual ceremony for songs and albums",
+   "known": 0.8,
+   "kind": "music"
+  },
+  {
+   "label": "Nobel Prize",
+   "qid": "Q7191",
+   "fame": 0.594,
+   "honours": "Science, literature and peace",
+   "description": "set of annual international awards, primarily 5 established in 1895 by Alfred Nobel",
+   "hook": "was set up in the will of the man who invented dynamite",
+   "known": 0.95,
+   "kind": "prestige"
+  },
+  {
+   "label": "Golden Raspberry Awards",
+   "qid": "Q40237",
+   "fame": 0.559,
+   "honours": "The worst in film",
+   "description": "award presented in recognition of the worst in film",
+   "hook": "is a parody ceremony whose trophy is a golf-ball-sized berry mounted on a reel",
+   "known": 0.6,
+   "kind": "film"
+  },
+  {
+   "label": "Tony Awards",
+   "qid": "Q191874",
+   "fame": 0.542,
+   "honours": "Broadway theatre",
+   "description": "awards to recognize the excellence in live Broadway theatre, presented by the American Theatre Wing and The Broadway League at an annual ceremony in New York City",
+   "hook": "is presented each June at a Manhattan ceremony for stage productions and performances",
+   "known": 0.4,
+   "kind": "theatre"
+  },
+  {
+   "label": "British Academy Film Awards",
+   "qid": "Q732997",
+   "fame": 0.522,
+   "honours": "UK cinema",
+   "description": "annual award show hosted by the British Academy of Film and Television Arts",
+   "hook": "is held in London and gives winners a statuette shaped like a theatrical mask",
+   "known": 0.4,
+   "kind": "film"
+  },
+  {
+   "label": "The Game Awards",
+   "qid": "Q18642757",
+   "fame": 0.518,
+   "honours": "Interactive entertainment",
+   "description": "annual video game awards ceremony",
+   "hook": null,
+   "known": 0.2,
+   "kind": "games"
+  },
+  {
+   "label": "Filmfare Awards",
+   "qid": "Q37049",
+   "fame": 0.51,
+   "honours": "Bollywood cinema",
+   "description": "annual film awards in India",
+   "hook": null,
+   "known": 0.05,
+   "kind": "film"
+  },
+  {
+   "label": "Golden Globe Awards",
+   "qid": "Q1011547",
+   "fame": 0.508,
+   "honours": "Film and television",
+   "description": "American film and television awards in several categories (1944–)",
+   "hook": "is held each January as a lead-up to the Oscars",
+   "known": 0.8,
+   "kind": "broadcast"
+  },
+  {
+   "label": "Nickelodeon Kids' Choice Awards",
+   "qid": "Q163569",
+   "fame": 0.507,
+   "honours": "Young viewers' favorites",
+   "description": "American media awards ceremony show",
+   "hook": "gives winners a hollow orange blimp figurine",
+   "known": 0.4,
+   "kind": "children's"
+  }
+ ]
+}

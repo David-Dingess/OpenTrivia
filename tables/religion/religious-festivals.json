@@ -1,0 +1,341 @@
+{
+ "id": "table.religion.religious-festivals",
+ "kind": "table",
+ "title": "Religious festivals and their faith",
+ "genre": "society",
+ "category": "religion",
+ "topic": "world-religions",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?relLabel WHERE { VALUES (?item ?relLabel) { (wd:Q19809 \"Christianity\") (wd:Q21196 \"Christianity\") (wd:Q40317 \"Christianity\") (wd:Q42236 \"Christianity\") (wd:Q131080 \"Christianity\") (wd:Q132001 \"Christianity\") (wd:Q123542 \"Christianity\") (wd:Q106333 \"Christianity\") (wd:Q39864 \"Christianity\") (wd:Q82866 \"Christianity\") (wd:Q83012 \"Christianity\") (wd:Q587 \"Christianity\") (wd:Q1033140 \"Christianity\") (wd:Q51638 \"Christianity\") (wd:Q186206 \"Christianity\") (wd:Q152395 \"Christianity\") (wd:Q18647897 \"Christianity\") (wd:Q154326 \"Christianity\") (wd:Q153093 \"Christianity\") (wd:Q162691 \"Christianity\") (wd:Q541946 \"Christianity\") (wd:Q4845365 \"Christianity\") (wd:Q4069073 \"Christianity\") (wd:Q514400 \"Islam\") (wd:Q464458 \"Islam\") (wd:Q193027 \"Islam\") (wd:Q183283 \"Islam\") (wd:Q216452 \"Islam\") (wd:Q381240 \"Islam\") (wd:Q41662 \"Islam\") (wd:Q132994 \"Judaism\") (wd:Q131028 \"Judaism\") (wd:Q121393 \"Judaism\") (wd:Q130881 \"Judaism\") (wd:Q182242 \"Judaism\") (wd:Q180115 \"Judaism\") (wd:Q201196 \"Judaism\") (wd:Q211349 \"Judaism\") (wd:Q748816 \"Judaism\") (wd:Q431678 \"Judaism\") (wd:Q10244 \"Hinduism\") (wd:Q848070 \"Hinduism\") (wd:Q10266 \"Hinduism\") (wd:Q929250 \"Hinduism\") (wd:Q1145922 \"Hinduism\") (wd:Q10269 \"Hinduism\") (wd:Q430574 \"Hinduism\") (wd:Q10274 \"Hinduism\") (wd:Q1771621 \"Hinduism\") (wd:Q10253 \"Hinduism\") (wd:Q1969250 \"Hinduism\") (wd:Q1423773 \"Hinduism\") (wd:Q10283 \"Hinduism\") (wd:Q17075610 \"Hinduism\") (wd:Q2394624 \"Hinduism\") (wd:Q1520811 \"Hinduism\") (wd:Q215700 \"Buddhism\") (wd:Q1154888 \"Buddhism\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T05:14:06.684Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T05:14:06.684Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "faith",
+   "label": "Faith",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "religious festival",
+  "many": "religious festivals",
+  "hookAsk": "Which religious festival {hook}?",
+  "hookStatement": "",
+  "columns": {
+   "faith": {
+    "role": "link",
+    "pick": "Which faith celebrates {label}?",
+    "statement": "{label} is a festival of {value}.",
+    "match": "Match each festival to the faith that celebrates it.",
+    "odd": "Three of these festivals belong to {value}. Which one doesn't?",
+    "all": "Tap all {n} festivals of {value}.",
+    "reverse": "Which of these festivals belongs to {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Yom Kippur",
+   "qid": "Q132994",
+   "fame": 0.805,
+   "faith": "Judaism",
+   "description": "primary holy day in Judaism, tenth day of the new year",
+   "hook": "is the holiest day of the year, spent in full fasting and prayer to seek atonement",
+   "known": 0.6,
+   "kind": "jewish"
+  },
+  {
+   "label": "Rosh Hashanah",
+   "qid": "Q131028",
+   "fame": 0.785,
+   "faith": "Judaism",
+   "description": "Jewish day of judgement preceding Yom Kippur (day of atonement), one of several Jewish New Years",
+   "hook": "marks the start of the new year and opens ten days of repentance",
+   "known": 0.6,
+   "kind": "jewish"
+  },
+  {
+   "label": "Ganesh Chaturthi",
+   "qid": "Q929250",
+   "fame": 0.747,
+   "faith": "Hinduism",
+   "description": "multi-day Hindu festival revering god Ganesha (August–September)",
+   "hook": "honors the elephant-headed deity with clay statues set up in homes and on public stages",
+   "known": 0.4,
+   "kind": "hindu"
+  },
+  {
+   "label": "Sukkot",
+   "qid": "Q182242",
+   "fame": 0.716,
+   "faith": "Judaism",
+   "description": "Jewish holiday, harvest festival, festival of booths",
+   "hook": null,
+   "known": 0.2,
+   "kind": "jewish"
+  },
+  {
+   "label": "Diwali",
+   "qid": "Q10244",
+   "fame": 0.701,
+   "faith": "Hinduism",
+   "description": "Hindu, Jain, Sikh, Buddhist and South Asian festival of lights",
+   "hook": "is the festival of lights, marking the victory of light over darkness",
+   "known": 0.95,
+   "kind": "hindu"
+  },
+  {
+   "label": "Krishna Janmashtami",
+   "qid": "Q430574",
+   "fame": 0.69,
+   "faith": "Hinduism",
+   "description": "annual commemoration in India on account of birth of the Hindu deity Lord Krishna",
+   "hook": "celebrates the birth of the eighth avatar of Vishnu",
+   "known": 0.4,
+   "kind": "hindu"
+  },
+  {
+   "label": "Christmas",
+   "qid": "Q19809",
+   "fame": 0.593,
+   "faith": "Christianity",
+   "description": "holiday originating in Christianity, usually December 25",
+   "hook": "commemorates the birth of Jesus and is observed mainly on December 25",
+   "known": 0.95,
+   "kind": "christian"
+  },
+  {
+   "label": "Ramadan",
+   "qid": "Q41662",
+   "fame": 0.563,
+   "faith": "Islam",
+   "description": "holy month of fasting for Muslims, observed on the ninth month of the Islamic calendar",
+   "hook": "is the ninth month of the lunar calendar, when Muslims fast from dawn to sunset",
+   "known": 0.95,
+   "kind": "islamic"
+  },
+  {
+   "label": "Navratri",
+   "qid": "Q10269",
+   "fame": 0.541,
+   "faith": "Hinduism",
+   "description": "annual Hindu festival",
+   "hook": "spans nine nights of worship honoring the goddess Durga",
+   "known": 0.6,
+   "kind": "hindu"
+  },
+  {
+   "label": "Durga Puja",
+   "qid": "Q1145922",
+   "fame": 0.54,
+   "faith": "Hinduism",
+   "description": "Hindu festival in Indian subcontinent",
+   "hook": "honors a goddess for her victory over the buffalo demon, with grand displays in Kolkata",
+   "known": 0.4,
+   "kind": "hindu"
+  },
+  {
+   "label": "Pentecost",
+   "qid": "Q39864",
+   "fame": 0.539,
+   "faith": "Christianity",
+   "description": "Christian holiday commemorating the New Testament stories of the Holy Spirit descenting upon the Apostles of Jesus",
+   "hook": "marks the descent of the Holy Spirit upon the apostles, fifty days after Easter",
+   "known": 0.6,
+   "kind": "christian"
+  },
+  {
+   "label": "Hanukkah",
+   "qid": "Q130881",
+   "fame": 0.537,
+   "faith": "Judaism",
+   "description": "Jewish holiday",
+   "hook": "lasts eight nights, with a nine-branched menorah lit to recall the rededication of the Temple",
+   "known": 0.8,
+   "kind": "jewish"
+  },
+  {
+   "label": "Eid al-Fitr",
+   "qid": "Q464458",
+   "fame": 0.532,
+   "faith": "Islam",
+   "description": "Islamic holiday on the first of Shawwal",
+   "hook": "celebrates the end of a month of dawn-to-dusk fasting with prayers, visits and shared meals",
+   "known": 0.8,
+   "kind": "islamic"
+  },
+  {
+   "label": "Onam",
+   "qid": "Q1969250",
+   "fame": 0.524,
+   "faith": "Hinduism",
+   "description": "harvest festival of Kerala state, India",
+   "hook": null,
+   "known": 0.2,
+   "kind": "hindu"
+  },
+  {
+   "label": "Pitru Paksha",
+   "qid": "Q2394624",
+   "fame": 0.523,
+   "faith": "Hinduism",
+   "description": "ancestral Worship from Hindu religion",
+   "hook": null,
+   "known": 0.05,
+   "kind": "hindu"
+  },
+  {
+   "label": "Simchat Torah",
+   "qid": "Q431678",
+   "fame": 0.519,
+   "faith": "Judaism",
+   "description": "Jewish holiday marking the conclusion of public Torah readings",
+   "hook": null,
+   "known": 0.05,
+   "kind": "jewish"
+  },
+  {
+   "label": "Vijayadashami",
+   "qid": "Q10274",
+   "fame": 0.519,
+   "faith": "Hinduism",
+   "description": "annual Hindu festival, celebrated at the end of Navaratri",
+   "hook": null,
+   "known": 0.2,
+   "kind": "hindu"
+  },
+  {
+   "label": "All Saints' Day",
+   "qid": "Q587",
+   "fame": 0.518,
+   "faith": "Christianity",
+   "description": "Christian feast day",
+   "hook": "honors every holy person of the church, observed on the first of November",
+   "known": 0.6,
+   "kind": "christian"
+  },
+  {
+   "label": "Passover",
+   "qid": "Q121393",
+   "fame": 0.518,
+   "faith": "Judaism",
+   "description": "Jewish holiday celebrating the Israelites' liberation from slavery in Egypt",
+   "hook": "recalls the Exodus from slavery in Egypt, marked by a ritual meal and unleavened bread",
+   "known": 0.8,
+   "kind": "jewish"
+  },
+  {
+   "label": "Raksha Bandhan",
+   "qid": "Q10266",
+   "fame": 0.515,
+   "faith": "Hinduism",
+   "description": "annual ritual originating from the Indian Subcontinent",
+   "hook": null,
+   "known": 0.2,
+   "kind": "hindu"
+  },
+  {
+   "label": "Easter",
+   "qid": "Q21196",
+   "fame": 0.513,
+   "faith": "Christianity",
+   "description": "Christian commemoration of the resurrection of Jesus",
+   "hook": "celebrates the resurrection of Jesus after his crucifixion",
+   "known": 0.95,
+   "kind": "christian"
+  },
+  {
+   "label": "Purim",
+   "qid": "Q180115",
+   "fame": 0.502,
+   "faith": "Judaism",
+   "description": "Jewish holiday and tradition, celebrated on the fourteenth day of the month Adar",
+   "hook": "recalls Queen Esther saving her people from the plot of the royal vizier Haman",
+   "known": 0.4,
+   "kind": "jewish"
+  },
+  {
+   "label": "Eid al-Adha",
+   "qid": "Q514400",
+   "fame": 0.493,
+   "faith": "Islam",
+   "description": "Islamic holiday on the tenth day of Dhu al-Hijja",
+   "hook": "is the Feast of the Sacrifice, the second of the two main Islamic festivals",
+   "known": 0.8,
+   "kind": "islamic"
+  },
+  {
+   "label": "Lent",
+   "qid": "Q82866",
+   "fame": 0.49,
+   "faith": "Christianity",
+   "description": "Penitential season in preparation for the observance of Easter",
+   "hook": "is a roughly forty-day season of fasting and penance leading up to Easter",
+   "known": 0.8,
+   "kind": "christian"
+  },
+  {
+   "label": "Assumption of Mary",
+   "qid": "Q162691",
+   "fame": 0.489,
+   "faith": "Christianity",
+   "description": "the bodily taking up of the Virgin Mary into Heaven at the end of her earthly life, dogma of the Catholic Church",
+   "hook": "is the Catholic dogma that the Virgin was taken body and soul into heaven, celebrated on 15 August",
+   "known": 0.4,
+   "kind": "christian"
+  },
+  {
+   "label": "Kumbh Mela",
+   "qid": "Q10283",
+   "fame": 0.467,
+   "faith": "Hinduism",
+   "description": "Hindu pilgrimage and festival celebrated in India",
+   "hook": "draws enormous crowds of pilgrims, rotating among four sacred sites",
+   "known": 0.4,
+   "kind": "hindu"
+  },
+  {
+   "label": "Good Friday",
+   "qid": "Q40317",
+   "fame": 0.466,
+   "faith": "Christianity",
+   "description": "Christian holiday",
+   "hook": "commemorates the crucifixion of Jesus and falls during Holy Week",
+   "known": 0.8,
+   "kind": "christian"
+  },
+  {
+   "label": "Epiphany",
+   "qid": "Q132001",
+   "fame": 0.465,
+   "faith": "Christianity",
+   "description": "Christian feast, public holiday in some countries",
+   "hook": "commemorates the visit of the Magi and is sometimes called Three Kings' Day",
+   "known": 0.4,
+   "kind": "christian"
+  }
+ ]
+}

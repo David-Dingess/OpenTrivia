@@ -1,0 +1,201 @@
+{
+ "id": "table.history.archaeological-finds",
+ "kind": "table",
+ "title": "Famous archaeological finds and where they are kept",
+ "genre": "society",
+ "category": "history",
+ "topic": "archaeology",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?museumLabel WHERE { VALUES ?item { wd:Q48584 wd:Q9048095 wd:Q1603141 wd:Q171291 wd:Q304483 wd:Q245388 wd:Q1126741 wd:Q131141 wd:Q1128599 wd:Q582172 wd:Q182324 wd:Q151952 wd:Q216402 wd:Q368138 wd:Q157094 wd:Q609292 wd:Q524447 wd:Q405008 wd:Q724954 wd:Q1137682 wd:Q636751 wd:Q378034 wd:Q681067 wd:Q1031406 wd:Q180012 wd:Q26082 wd:Q465338 wd:Q131397 } { SELECT ?item (SAMPLE(?loc) AS ?location) (COUNT(DISTINCT ?loc) AS ?nLoc) WHERE { VALUES ?item { wd:Q48584 wd:Q9048095 wd:Q1603141 wd:Q171291 wd:Q304483 wd:Q245388 wd:Q1126741 wd:Q131141 wd:Q1128599 wd:Q582172 wd:Q182324 wd:Q151952 wd:Q216402 wd:Q368138 wd:Q157094 wd:Q609292 wd:Q524447 wd:Q405008 wd:Q724954 wd:Q1137682 wd:Q636751 wd:Q378034 wd:Q681067 wd:Q1031406 wd:Q180012 wd:Q26082 wd:Q465338 wd:Q131397 } { ?item wdt:P195 ?loc } UNION { ?item wdt:P276 ?loc . FILTER NOT EXISTS { ?item wdt:P195 [] } } UNION { ?item wdt:P119 ?loc . FILTER NOT EXISTS { ?item wdt:P195 [] } FILTER NOT EXISTS { ?item wdt:P276 [] } } } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nLoc = 1) BIND(IF(?location IN (wd:Q3044747, wd:Q3044751, wd:Q3044749), wd:Q19675, ?location) AS ?museum) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 56",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T16:19:19.554Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T16:19:19.554Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "museum",
+   "label": "Museum",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "archaeological find",
+  "many": "archaeological finds",
+  "wildcard": "place",
+  "hookAsk": "Which famous find {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "theLabels": [
+   "Antikythera mechanism",
+   "Rosetta Stone",
+   "Venus de Milo",
+   "Winged Victory of Samothrace",
+   "Venus of Willendorf",
+   "Piri Reis map",
+   "Ishtar Gate",
+   "Phaistos disc",
+   "Nebra sky disk"
+  ],
+  "columns": {
+   "museum": {
+    "role": "link",
+    "pick": "In which museum is {label} kept?",
+    "statement": "{label} is kept in the {value}.",
+    "match": "Match each find to the museum that holds it.",
+    "reverse": "Which of these is kept in the {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Antikythera mechanism",
+   "qid": "Q182324",
+   "fame": 0.633,
+   "museum": "National Archaeological Museum of Athens",
+   "description": "ancient analog computer designed to calculate astronomical positions",
+   "hook": "is a corroded bronze gear device from a shipwreck, often called the world's oldest analog computer",
+   "known": 0.4,
+   "kind": "artifact"
+  },
+  {
+   "label": "Ötzi",
+   "qid": "Q171291",
+   "fame": 0.618,
+   "museum": "South Tyrol Museum of Archaeology",
+   "description": "well-preserved natural prehistoric mummy",
+   "hook": "is a natural mummy of a Copper Age hunter found frozen in an Alpine glacier by hikers",
+   "known": 0.6,
+   "kind": "human remains"
+  },
+  {
+   "label": "Rosetta Stone",
+   "qid": "Q48584",
+   "fame": 0.612,
+   "museum": "British Museum",
+   "description": "ancient Egyptian stele with inscriptions in three writing systems",
+   "hook": "is a carved slab whose parallel texts in three scripts let scholars decipher hieroglyphs",
+   "known": 0.8,
+   "kind": "text"
+  },
+  {
+   "label": "Venus de Milo",
+   "qid": "Q151952",
+   "fame": 0.558,
+   "museum": "Louvre Museum",
+   "description": "ancient Greek marble statue of a woman",
+   "hook": "is a famous armless ancient Greek marble sculpture of the goddess of love",
+   "known": 0.8,
+   "kind": "sculpture"
+  },
+  {
+   "label": "Lucy",
+   "qid": "Q245388",
+   "fame": 0.552,
+   "museum": "National Museum of Ethiopia",
+   "description": "fossilized skeleton of a female Australopithecus afarensis",
+   "hook": "is a partial early-human skeleton named after a Beatles song and found in East Africa",
+   "known": 0.6,
+   "kind": "human remains"
+  },
+  {
+   "label": "Winged Victory of Samothrace",
+   "qid": "Q216402",
+   "fame": 0.549,
+   "museum": "Louvre Museum",
+   "description": "statue from Samothrace, Greece in the Louvre, Paris, France",
+   "hook": "is a headless, wing-bearing marble goddess that seems to land on the prow of a ship",
+   "known": 0.6,
+   "kind": "sculpture"
+  },
+  {
+   "label": "Venus of Willendorf",
+   "qid": "Q131397",
+   "fame": 0.541,
+   "museum": "Natural History Museum, Vienna",
+   "description": "prehistoric figurine from Austria",
+   "hook": "is a tiny prehistoric limestone figurine of a woman with exaggerated curves",
+   "known": 0.4,
+   "kind": "sculpture"
+  },
+  {
+   "label": "Piri Reis map",
+   "qid": "Q1128599",
+   "fame": 0.515,
+   "museum": "Topkapı Palace",
+   "description": "Piri Reis's nautical chart",
+   "hook": "is a fragment of an Ottoman admiral's chart that shows the Atlantic and sparks fringe theories",
+   "known": 0.2,
+   "kind": "text"
+  },
+  {
+   "label": "Ishtar Gate",
+   "qid": "Q26082",
+   "fame": 0.508,
+   "museum": "Vorderasiatisches Museum Berlin",
+   "description": "eighth gate to the inner city of Babylon",
+   "hook": "is a dazzling blue glazed-brick entrance to an ancient city, reconstructed for display far from its home",
+   "known": 0.4,
+   "kind": "monument"
+  },
+  {
+   "label": "Phaistos disc",
+   "qid": "Q465338",
+   "fame": 0.479,
+   "museum": "Heraklion Archaeological Museum",
+   "description": "inscribed fired clay tablet found in Crete, covered on both sides with undeciphered spiral Minoan writing",
+   "hook": "is a spiral-stamped clay circle from Crete whose undeciphered symbols remain a puzzle",
+   "known": 0.2,
+   "kind": "artifact"
+  },
+  {
+   "label": "mask of Tutankhamun",
+   "qid": "Q9048095",
+   "fame": 0.478,
+   "museum": "Egyptian Museum",
+   "description": "gold mask of the Egyptian pharaoh Tutankhamun",
+   "hook": "is a gold and lapis funerary portrait covering the face of a boy king found in his tomb",
+   "known": 0.8,
+   "kind": "artifact"
+  },
+  {
+   "label": "Bust of Queen Nefertiti",
+   "qid": "Q582172",
+   "fame": 0.454,
+   "museum": "Egyptian Museum of Berlin",
+   "description": "bust from the Amarna Period in the Neues Museum, Berlin",
+   "hook": "is a painted limestone likeness of a royal beauty from the Nile, one of the most copied ancient portraits",
+   "known": 0.6,
+   "kind": "sculpture"
+  },
+  {
+   "label": "Nebra sky disk",
+   "qid": "Q157094",
+   "fame": 0.453,
+   "museum": "Halle State Museum of Prehistory",
+   "description": "artifact found in Nebra, Germany",
+   "hook": "is a bronze disc inlaid with gold suns, moon and stars, the oldest known concrete sky depiction",
+   "known": 0.2,
+   "kind": "artifact"
+  }
+ ]
+}

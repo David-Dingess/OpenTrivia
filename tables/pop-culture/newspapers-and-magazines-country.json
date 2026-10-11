@@ -1,0 +1,411 @@
+{
+ "id": "table.pop-culture.newspapers-and-magazines-country",
+ "kind": "table",
+ "title": "Newspapers and magazines: country of origin",
+ "genre": "general",
+ "category": "pop-culture",
+ "topic": "newspapers-and-magazines",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { ?item wdt:P31 ?c . VALUES ?c { wd:Q41298 wd:Q11032 wd:Q1002697 wd:Q1110794 wd:Q5707594 wd:Q13220204 wd:Q17232649 wd:Q1153191 wd:Q2682025 wd:Q19842659 wd:Q1760610 wd:Q220898 wd:Q2634285 wd:Q1666062 } . ?item wdt:P495 ?country . ?item wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 20) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T07:45:17.476Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T07:45:17.476Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "publication",
+  "many": "publications",
+  "itemText": "{label}",
+  "hookAsk": "Which publication {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} published in?",
+    "statement": "{label} is published in {value}.",
+    "match": "Match each newspaper or magazine to its home country.",
+    "odd": "Three of these publications come from {value}. Which one doesn't?",
+    "all": "Tap all {n} publications from {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The New York Times",
+   "qid": "Q9684",
+   "fame": 0.688,
+   "country": "United States",
+   "description": "American daily newspaper (founded 1851)",
+   "hook": "is nicknamed the Gray Lady and runs a famous daily crossword puzzle",
+   "known": 0.95,
+   "kind": "american newspaper"
+  },
+  {
+   "label": "The Guardian",
+   "qid": "Q11148",
+   "fame": 0.645,
+   "country": "United Kingdom",
+   "description": "British national daily newspaper",
+   "hook": "is a London-based daily that moved to a compact format and runs a huge free website",
+   "known": 0.95,
+   "kind": "british newspaper"
+  },
+  {
+   "label": "Rolling Stone",
+   "qid": "Q33511",
+   "fame": 0.589,
+   "country": "United States",
+   "description": "American monthly music magazine",
+   "hook": "puts musicians on its cover and began as a San Francisco rock publication",
+   "known": 0.6,
+   "kind": "american magazine"
+  },
+  {
+   "label": "The Washington Post",
+   "qid": "Q166032",
+   "fame": 0.565,
+   "country": "United States",
+   "description": "daily broadsheet newspaper in Washington, D.C.",
+   "hook": "is a capital-city daily best known for breaking the Watergate story",
+   "known": 0.8,
+   "kind": "american newspaper"
+  },
+  {
+   "label": "Daily Mail",
+   "qid": "Q210534",
+   "fame": 0.559,
+   "country": "United Kingdom",
+   "description": "British tabloid newspaper, since 1896",
+   "hook": "is a mass-market tabloid with one of the most-visited news sites in the world",
+   "known": 0.8,
+   "kind": "british newspaper"
+  },
+  {
+   "label": "The Times",
+   "qid": "Q50008",
+   "fame": 0.559,
+   "country": "United Kingdom",
+   "description": "British daily national newspaper based in London",
+   "hook": "is one of Britain's oldest daily papers and shares its name with a generic word for hours",
+   "known": 0.8,
+   "kind": "british newspaper"
+  },
+  {
+   "label": "Forbes",
+   "qid": "Q25161472",
+   "fame": 0.557,
+   "country": "United States",
+   "description": "American business magazine",
+   "hook": "publishes famous annual rankings of billionaires and the biggest companies",
+   "known": 0.8,
+   "kind": "american magazine"
+  },
+  {
+   "label": "Time",
+   "qid": "Q43297",
+   "fame": 0.552,
+   "country": "United States",
+   "description": "American news magazine and website",
+   "hook": "is a weekly with a red-bordered cover that names a Person of the Year",
+   "known": 0.95,
+   "kind": "american magazine"
+  },
+  {
+   "label": "The Wall Street Journal",
+   "qid": "Q164746",
+   "fame": 0.551,
+   "country": "United States",
+   "description": "American business-focused daily newspaper",
+   "hook": "is a business daily famous for its dotted-portrait style of front-page illustrations",
+   "known": 0.8,
+   "kind": "american newspaper"
+  },
+  {
+   "label": "The Daily Telegraph",
+   "qid": "Q192621",
+   "fame": 0.546,
+   "country": "United Kingdom",
+   "description": "British daily broadsheet newspaper",
+   "hook": "is a broadsheet nicknamed after a rail-thin communications device and read mainly in Britain",
+   "known": 0.6,
+   "kind": "british newspaper"
+  },
+  {
+   "label": "The Indian Express",
+   "qid": "Q1954843",
+   "fame": 0.544,
+   "country": "India",
+   "description": "daily broadsheet newspaper in India",
+   "hook": "is a large English-language daily named after a fast rail service, among the most read in its country",
+   "known": 0.05,
+   "kind": "international newspaper"
+  },
+  {
+   "label": "The New Yorker",
+   "qid": "Q217305",
+   "fame": 0.541,
+   "country": "United States",
+   "description": "American weekly magazine since 1925",
+   "hook": "is a weekly famed for its cartoons, long essays and a top-hatted dandy mascot",
+   "known": 0.8,
+   "kind": "american magazine"
+  },
+  {
+   "label": "Billboard",
+   "qid": "Q485240",
+   "fame": 0.539,
+   "country": "United States",
+   "description": "American weekly music magazine",
+   "hook": "publishes the Hot 100 chart ranking the most popular songs each week",
+   "known": 0.6,
+   "kind": "american magazine"
+  },
+  {
+   "label": "Chicago Tribune",
+   "qid": "Q47596",
+   "fame": 0.533,
+   "country": "United States",
+   "description": "major daily newspaper based in Chicago, Illinois, United States",
+   "hook": "is a Midwestern daily famous for a wrong-election-night headline about Dewey",
+   "known": 0.6,
+   "kind": "american newspaper"
+  },
+  {
+   "label": "Vogue",
+   "qid": "Q154008",
+   "fame": 0.528,
+   "country": "United States",
+   "description": "American fashion and lifestyle magazine",
+   "hook": "is the fashion bible whose September issue is the biggest of the year",
+   "known": 0.8,
+   "kind": "american magazine"
+  },
+  {
+   "label": "The Independent",
+   "qid": "Q11149",
+   "fame": 0.523,
+   "country": "United Kingdom",
+   "description": "British national daily newspaper",
+   "hook": "is a daily that stopped printing and now lives only online, with a name meaning free-thinking",
+   "known": 0.4,
+   "kind": "british newspaper"
+  },
+  {
+   "label": "New York Post",
+   "qid": "Q211374",
+   "fame": 0.52,
+   "country": "United States",
+   "description": "daily tabloid newspaper (1801-)",
+   "hook": "is a tabloid known for punny headlines, founded by a famous Founding Father",
+   "known": 0.6,
+   "kind": "american newspaper"
+  },
+  {
+   "label": "The Economist",
+   "qid": "Q180089",
+   "fame": 0.518,
+   "country": "United Kingdom",
+   "description": "British weekly news and international affairs publication (founded 1843)",
+   "hook": "calls itself a newspaper though it is a weekly, and publishes the Big Mac index",
+   "known": 0.6,
+   "kind": "british magazine"
+  },
+  {
+   "label": "The Atlantic",
+   "qid": "Q1542536",
+   "fame": 0.514,
+   "country": "United States",
+   "description": "magazine and multi-platform publisher based in Washington, D.C.",
+   "hook": "is a monthly magazine of long essays and ideas with a name taken from an ocean",
+   "known": 0.4,
+   "kind": "american magazine"
+  },
+  {
+   "label": "The Sun",
+   "qid": "Q208875",
+   "fame": 0.512,
+   "country": "United Kingdom",
+   "description": "British tabloid newspaper",
+   "hook": "is a tabloid famous for its pun-filled headlines and a long-running page-three tradition",
+   "known": 0.8,
+   "kind": "british newspaper"
+  },
+  {
+   "label": "Los Angeles Times",
+   "qid": "Q188515",
+   "fame": 0.498,
+   "country": "United States",
+   "description": "American daily newspaper covering the Greater Los Angeles area",
+   "hook": "is the biggest daily covering Southern California and Hollywood's hometown",
+   "known": 0.6,
+   "kind": "american newspaper"
+  },
+  {
+   "label": "Financial Times",
+   "qid": "Q183399",
+   "fame": 0.495,
+   "country": "United Kingdom",
+   "description": "London-based daily newspaper",
+   "hook": "is a London business daily instantly recognized by its salmon-pink paper",
+   "known": 0.6,
+   "kind": "british newspaper"
+  },
+  {
+   "label": "Pitchfork",
+   "qid": "Q721140",
+   "fame": 0.495,
+   "country": "United States",
+   "description": "American online music magazine",
+   "hook": "is an indie-music website known for scoring albums on a ten-point decimal scale",
+   "known": 0.2,
+   "kind": "american magazine"
+  },
+  {
+   "label": "The Spectator",
+   "qid": "Q1790750",
+   "fame": 0.483,
+   "country": "United Kingdom",
+   "description": "British weekly magazine",
+   "hook": "is the oldest continuously published weekly magazine in the English language",
+   "known": 0.2,
+   "kind": "british magazine"
+  },
+  {
+   "label": "Esquire",
+   "qid": "Q762195",
+   "fame": 0.477,
+   "country": "United States",
+   "description": "American men's magazine",
+   "hook": "is a men's lifestyle monthly known for its Sexiest Man Alive and style features",
+   "known": 0.6,
+   "kind": "american magazine"
+  },
+  {
+   "label": "The Hollywood Reporter",
+   "qid": "Q61503",
+   "fame": 0.476,
+   "country": "United States",
+   "description": "American publication focusing on the Hollywood motion picture industry",
+   "hook": "is a trade publication covering box office results and film and television dealmaking",
+   "known": 0.2,
+   "kind": "american magazine"
+  },
+  {
+   "label": "The Hindu",
+   "qid": "Q926175",
+   "fame": 0.475,
+   "country": "India",
+   "description": "English-language daily newspaper in India",
+   "hook": "is a long-running daily from Chennai that is among the most widely read English papers in its region",
+   "known": 0.05,
+   "kind": "international newspaper"
+  },
+  {
+   "label": "Der Spiegel",
+   "qid": "Q131478",
+   "fame": 0.474,
+   "country": "Germany",
+   "description": "German weekly news magazine based in Hamburg",
+   "hook": "is a weekly whose name means mirror and which is a heavyweight of European print media",
+   "known": 0.4,
+   "kind": "international magazine"
+  },
+  {
+   "label": "USA Today",
+   "qid": "Q39681",
+   "fame": 0.471,
+   "country": "United States",
+   "description": "American national daily newspaper",
+   "hook": "is a colorful national daily known for its weather map and for being sold in vending boxes everywhere",
+   "known": 0.8,
+   "kind": "american newspaper"
+  },
+  {
+   "label": "Vanity Fair",
+   "qid": "Q158283",
+   "fame": 0.471,
+   "country": "United States",
+   "description": "American monthly periodical about popular culture, fashion, and current affairs; established in 1913, ran until 1936, then revived in 1983",
+   "hook": "is a glossy monthly known for its star-studded Oscars party and celebrity cover shoots",
+   "known": 0.8,
+   "kind": "american magazine"
+  },
+  {
+   "label": "U.S. News & World Report",
+   "qid": "Q848629",
+   "fame": 0.459,
+   "country": "United States",
+   "description": "American news magazine",
+   "hook": "is best known for its annual rankings of colleges and hospitals",
+   "known": 0.6,
+   "kind": "american magazine"
+  },
+  {
+   "label": "Life",
+   "qid": "Q463198",
+   "fame": 0.458,
+   "country": "United States",
+   "description": "American magazine published 1883-2000",
+   "hook": "was a weekly famous for large photojournalism that once chronicled the world in pictures",
+   "known": 0.6,
+   "kind": "american magazine"
+  },
+  {
+   "label": "Newsweek",
+   "qid": "Q188413",
+   "fame": 0.458,
+   "country": "United States",
+   "description": "weekly magazine based in New York City",
+   "hook": "is a weekly news magazine that long rivaled a red-bordered competitor and later went digital-first",
+   "known": 0.8,
+   "kind": "american magazine"
+  },
+  {
+   "label": "Boston Globe",
+   "qid": "Q824451",
+   "fame": 0.45,
+   "country": "United States",
+   "description": "American daily newspaper",
+   "hook": "is the major daily of a New England city and the paper of record for the Red Sox faithful",
+   "known": 0.6,
+   "kind": "american newspaper"
+  },
+  {
+   "label": "News of the World",
+   "qid": "Q190534",
+   "fame": 0.45,
+   "country": "United Kingdom",
+   "description": "British tabloid newspaper",
+   "hook": null,
+   "known": 0.2,
+   "kind": "british newspaper"
+  }
+ ]
+}

@@ -1,0 +1,402 @@
+{
+ "id": "table.sports.mlb-players-famous-team",
+ "kind": "table",
+ "title": "Baseball stars and the team they are famous for",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "baseball",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?teamLabel WHERE { VALUES (?item ?teamLabel) { (wd:Q213812 \"New York Yankees\") (wd:Q215777 \"Atlanta Braves\") (wd:Q345004 \"New York Yankees\") (wd:Q357444 \"New York Yankees\") (wd:Q297142 \"New York Yankees\") (wd:Q440256 \"Los Angeles Dodgers\") (wd:Q172478 \"Boston Red Sox\") (wd:Q367566 \"New York Yankees\") (wd:Q552828 \"Detroit Tigers\") (wd:Q1316903 \"Pittsburgh Pirates\") (wd:Q1328142 \"St. Louis Cardinals\") (wd:Q536900 \"Seattle Mariners\") (wd:Q3090378 \"Los Angeles Angels\") (wd:Q4391858 \"Los Angeles Dodgers\") (wd:Q16234676 \"New York Yankees\") (wd:Q739866 \"Cincinnati Reds\") (wd:Q731168 \"Baltimore Orioles\") (wd:Q314712 \"San Francisco Giants\") (wd:Q455117 \"Chicago Cubs\") (wd:Q600 \"Seattle Mariners\") (wd:Q448005 \"Boston Red Sox\") (wd:Q382303 \"New York Yankees\") (wd:Q148726 \"St. Louis Cardinals\") (wd:Q1155003 \"Cincinnati Reds\") (wd:Q1287084 \"New York Mets\") (wd:Q1131535 \"St. Louis Cardinals\") (wd:Q3569094 \"San Francisco Giants\") (wd:Q3051017 \"Chicago Cubs\") (wd:Q521270 \"Baltimore Orioles\") (wd:Q601521 \"Oakland Athletics\") (wd:Q1145222 \"San Diego Padres\") (wd:Q679120 \"New York Yankees\") (wd:Q520665 \"Los Angeles Dodgers\") (wd:Q735795 \"Brooklyn Dodgers\") (wd:Q687282 \"Detroit Tigers\") (wd:Q956100 \"Boston Red Sox\") (wd:Q722059 \"Washington Senators\") (wd:Q613319 \"New York Mets\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-01T04:08:44.201Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-01T04:08:44.201Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "team",
+   "label": "Team",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "baseball star",
+  "many": "baseball stars",
+  "wildcard": "person",
+  "hookAsk": "Which baseball star {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "team": {
+    "role": "link",
+    "pick": "Which team is baseball star {label} best known for playing with?",
+    "statement": "{label} is best known for playing with the {value}.",
+    "match": "Match each baseball star to the team they are famous for.",
+    "odd": "Which of these baseball stars is not famous for playing with the {value}?",
+    "all": "Which of these baseball stars are famous for playing with the {value}?",
+    "reverse": "Which baseball star is best known for playing with the {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Babe Ruth",
+   "qid": "Q213812",
+   "fame": 0.725,
+   "team": "New York Yankees",
+   "description": "American baseball player (1895–1948)",
+   "hook": "was nicknamed the Sultan of Swat and became baseball's first true superstar slugger",
+   "known": 0.95,
+   "kind": "legendary slugger"
+  },
+  {
+   "label": "Shohei Ohtani",
+   "qid": "Q4391858",
+   "fame": 0.695,
+   "team": "Los Angeles Dodgers",
+   "description": "Japanese professional baseball player",
+   "hook": "stars as both a power-hitting slugger and an ace pitcher, a feat almost nobody manages",
+   "known": 0.8,
+   "kind": "modern slugger"
+  },
+  {
+   "label": "Aaron Judge",
+   "qid": "Q16234676",
+   "fame": 0.643,
+   "team": "New York Yankees",
+   "description": "American professional baseball player (born 1992)",
+   "hook": "smashed 62 home runs in a single season to set the American League record",
+   "known": 0.8,
+   "kind": "modern slugger"
+  },
+  {
+   "label": "Rickey Henderson",
+   "qid": "Q601521",
+   "fame": 0.632,
+   "team": "Oakland Athletics",
+   "description": "American Hall of Fame baseball player (1958–2024)",
+   "hook": "stole more bases than anyone else in major league history",
+   "known": 0.5,
+   "kind": "all-around"
+  },
+  {
+   "label": "Don Mattingly",
+   "qid": "Q679120",
+   "fame": 0.63,
+   "team": "New York Yankees",
+   "description": "American baseball player and coach (born 1961)",
+   "hook": "was a beloved first baseman and captain who never won a World Series ring as a player",
+   "known": 0.4,
+   "kind": "modern hitter"
+  },
+  {
+   "label": "Joe DiMaggio",
+   "qid": "Q297142",
+   "fame": 0.621,
+   "team": "New York Yankees",
+   "description": "American baseball player (1914–1999)",
+   "hook": "put together a 56-game hitting streak that has never been matched",
+   "known": 0.6,
+   "kind": "legendary hitter"
+  },
+  {
+   "label": "Lou Gehrig",
+   "qid": "Q357444",
+   "fame": 0.621,
+   "team": "New York Yankees",
+   "description": "American baseball player (1903–1941)",
+   "hook": "was called the Iron Horse before a disease that now carries his name ended his career",
+   "known": 0.5,
+   "kind": "legendary hitter"
+  },
+  {
+   "label": "Mickey Mantle",
+   "qid": "Q345004",
+   "fame": 0.61,
+   "team": "New York Yankees",
+   "description": "American baseball player (1931–1995)",
+   "hook": "was a switch-hitting center fielder famous for tape-measure home runs",
+   "known": 0.7,
+   "kind": "classic slugger"
+  },
+  {
+   "label": "Mike Trout",
+   "qid": "Q3090378",
+   "fame": 0.606,
+   "team": "Los Angeles Angels",
+   "description": "American professional baseball player",
+   "hook": "is a center fielder widely called the best all-around player of his generation",
+   "known": 0.8,
+   "kind": "modern all-around"
+  },
+  {
+   "label": "Barry Bonds",
+   "qid": "Q314712",
+   "fame": 0.597,
+   "team": "San Francisco Giants",
+   "description": "American baseball player (born 1964)",
+   "hook": "holds the all-time career home run record, a mark that sparked years of controversy",
+   "known": 0.7,
+   "kind": "modern slugger"
+  },
+  {
+   "label": "Pete Rose",
+   "qid": "Q739866",
+   "fame": 0.596,
+   "team": "Cincinnati Reds",
+   "description": "American baseball player (1941–2024)",
+   "hook": "holds the record for most career hits but was banned from the sport for gambling",
+   "known": 0.5,
+   "kind": "classic hitter"
+  },
+  {
+   "label": "Carl Yastrzemski",
+   "qid": "Q956100",
+   "fame": 0.582,
+   "team": "Boston Red Sox",
+   "description": "American baseball player",
+   "hook": "was the last hitter to win the batting Triple Crown before Miguel Cabrera did it",
+   "known": 0.3,
+   "kind": "classic hitter"
+  },
+  {
+   "label": "Ichiro Suzuki",
+   "qid": "Q600",
+   "fame": 0.581,
+   "team": "Seattle Mariners",
+   "description": "Japanese baseball player (born 1973)",
+   "hook": "set the single-season hits record after starring in Japan before coming to America",
+   "known": 0.6,
+   "kind": "modern hitter"
+  },
+  {
+   "label": "Albert Pujols",
+   "qid": "Q148726",
+   "fame": 0.58,
+   "team": "St. Louis Cardinals",
+   "description": "Dominican-American baseball player (born 1980)",
+   "hook": "became one of only a handful of sluggers to reach 700 career home runs",
+   "known": 0.6,
+   "kind": "modern slugger"
+  },
+  {
+   "label": "Ken Griffey Jr.",
+   "qid": "Q536900",
+   "fame": 0.579,
+   "team": "Seattle Mariners",
+   "description": "American baseball player (born 1969)",
+   "hook": "was a sweet-swinging center fielder who famously wore his cap backward",
+   "known": 0.7,
+   "kind": "modern slugger"
+  },
+  {
+   "label": "Ted Williams",
+   "qid": "Q172478",
+   "fame": 0.577,
+   "team": "Boston Red Sox",
+   "description": "American baseball player and fighter pilot",
+   "hook": "was the last major leaguer to hit .400 in a season",
+   "known": 0.4,
+   "kind": "legendary hitter"
+  },
+  {
+   "label": "Yogi Berra",
+   "qid": "Q367566",
+   "fame": 0.575,
+   "team": "New York Yankees",
+   "description": "American baseball player, manager, and coach (1925–2015)",
+   "hook": "was a catcher whose mangled-sounding sayings are as famous as his ten championship rings",
+   "known": 0.6,
+   "kind": "classic catcher"
+  },
+  {
+   "label": "Sandy Koufax",
+   "qid": "Q440256",
+   "fame": 0.573,
+   "team": "Los Angeles Dodgers",
+   "description": "American baseball player (born 1935)",
+   "hook": "was a dominant lefty who retired at the top of his game because of a sore elbow",
+   "known": 0.4,
+   "kind": "classic pitcher"
+  },
+  {
+   "label": "Cal Ripken Jr.",
+   "qid": "Q731168",
+   "fame": 0.567,
+   "team": "Baltimore Orioles",
+   "description": "American retired baseball player (born 1960)",
+   "hook": "broke baseball's famous consecutive-games record, earning the nickname Iron Man",
+   "known": 0.5,
+   "kind": "modern all-around"
+  },
+  {
+   "label": "Ty Cobb",
+   "qid": "Q552828",
+   "fame": 0.565,
+   "team": "Detroit Tigers",
+   "description": "American baseball player (1886–1961)",
+   "hook": "was nicknamed the Georgia Peach and owns the highest career batting average ever",
+   "known": 0.3,
+   "kind": "legendary hitter"
+  },
+  {
+   "label": "Tony Gwynn",
+   "qid": "Q1145222",
+   "fame": 0.561,
+   "team": "San Diego Padres",
+   "description": "American Hall of Fame baseball right fielder; 1960-2014",
+   "hook": "won eight batting titles with a famously sweet left-handed swing",
+   "known": 0.3,
+   "kind": "modern hitter"
+  },
+  {
+   "label": "Mike Piazza",
+   "qid": "Q613319",
+   "fame": 0.558,
+   "team": "New York Mets",
+   "description": "American baseball player",
+   "hook": "went from a 62nd-round afterthought pick to the greatest-hitting catcher in history",
+   "known": 0.4,
+   "kind": "modern catcher"
+  },
+  {
+   "label": "Clayton Kershaw",
+   "qid": "Q520665",
+   "fame": 0.557,
+   "team": "Los Angeles Dodgers",
+   "description": "American professional baseball player (born 1988)",
+   "hook": "is a lefty ace with a devastating curveball and multiple Cy Young Awards",
+   "known": 0.6,
+   "kind": "modern pitcher"
+  },
+  {
+   "label": "Mariano Rivera",
+   "qid": "Q382303",
+   "fame": 0.557,
+   "team": "New York Yankees",
+   "description": "Panamanian Hall of Fame baseball player, relief pitcher",
+   "hook": "retired as the all-time saves leader while throwing mostly one pitch, the cutter",
+   "known": 0.5,
+   "kind": "modern pitcher"
+  },
+  {
+   "label": "David Ortiz",
+   "qid": "Q448005",
+   "fame": 0.555,
+   "team": "Boston Red Sox",
+   "description": "Dominican-American professional baseball player (born 1975)",
+   "hook": "was nicknamed Big Papi and delivered countless clutch hits in October",
+   "known": 0.7,
+   "kind": "modern slugger"
+  },
+  {
+   "label": "Sammy Sosa",
+   "qid": "Q455117",
+   "fame": 0.552,
+   "team": "Chicago Cubs",
+   "description": "Dominican baseball player (born 1968)",
+   "hook": "chased the single-season home run record in a famous duel with Mark McGwire",
+   "known": 0.5,
+   "kind": "modern slugger"
+  },
+  {
+   "label": "Hank Aaron",
+   "qid": "Q215777",
+   "fame": 0.551,
+   "team": "Atlanta Braves",
+   "description": "American baseball player (1934–2021)",
+   "hook": "broke Babe Ruth's career home run record and held it for over thirty years",
+   "known": 0.8,
+   "kind": "legendary slugger"
+  },
+  {
+   "label": "Honus Wagner",
+   "qid": "Q1316903",
+   "fame": 0.496,
+   "team": "Pittsburgh Pirates",
+   "description": "American baseball player (1874-1955)",
+   "hook": "is pictured on the T206 baseball card, one of the most valuable ever sold",
+   "known": 0.2,
+   "kind": "legendary hitter"
+  },
+  {
+   "label": "Stan Musial",
+   "qid": "Q1328142",
+   "fame": 0.486,
+   "team": "St. Louis Cardinals",
+   "description": "American baseball player (1920-2013)",
+   "hook": "was known simply as The Man and collected more than 3,000 hits with a corkscrew stance",
+   "known": 0.3,
+   "kind": "classic hitter"
+  },
+  {
+   "label": "Tom Seaver",
+   "qid": "Q1287084",
+   "fame": 0.486,
+   "team": "New York Mets",
+   "description": "American baseball player (1944–2020)",
+   "hook": "was nicknamed The Franchise and won three Cy Young Awards",
+   "known": 0.3,
+   "kind": "classic pitcher"
+  },
+  {
+   "label": "Johnny Bench",
+   "qid": "Q1155003",
+   "fame": 0.472,
+   "team": "Cincinnati Reds",
+   "description": "American baseball player",
+   "hook": "is widely considered the greatest catcher ever and starred on the Big Red Machine",
+   "known": 0.4,
+   "kind": "classic catcher"
+  },
+  {
+   "label": "Ernie Banks",
+   "qid": "Q3051017",
+   "fame": 0.47,
+   "team": "Chicago Cubs",
+   "description": "American baseball player and coach",
+   "hook": "was a cheerful slugging shortstop famous for saying Let's play two",
+   "known": 0.3,
+   "kind": "classic slugger"
+  },
+  {
+   "label": "Bob Gibson",
+   "qid": "Q1131535",
+   "fame": 0.469,
+   "team": "St. Louis Cardinals",
+   "description": "American baseball player (1935–2020)",
+   "hook": "posted one of the lowest earned run averages ever in the so-called Year of the Pitcher",
+   "known": 0.2,
+   "kind": "classic pitcher"
+  },
+  {
+   "label": "Walter Johnson",
+   "qid": "Q722059",
+   "fame": 0.456,
+   "team": "Washington Senators",
+   "description": "American Hall of Fame baseball player (1887-1946)",
+   "hook": "was a fastball pitcher nicknamed The Big Train who won 417 games",
+   "known": 0.2,
+   "kind": "legendary pitcher"
+  }
+ ]
+}

@@ -1,0 +1,225 @@
+{
+ "id": "table.geography.tallest-mountains",
+ "kind": "table",
+ "title": "Tallest mountains (6,500 m and above)",
+ "genre": "society",
+ "category": "geography",
+ "topic": "mountains-and-deserts",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?elevation ?countryLabel WHERE { { SELECT ?item (MAX(?e) AS ?elevation) (SAMPLE(?c) AS ?country) WHERE { ?item wdt:P31 wd:Q8502 ; p:P2044/psn:P2044/wikibase:quantityAmount ?e . FILTER(?e >= 6500) OPTIONAL { ?item wdt:P17 ?c } } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-22T17:03:13.586Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-22T17:03:13.586Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "elevation_m",
+   "label": "Elevation",
+   "unit": "m",
+   "type": "number",
+   "scale": "height-m"
+  },
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "mountain",
+  "many": "mountains",
+  "hookAsk": "Which mountain {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each mountain to its country.",
+    "odd": "Three of these mountains are in {value}. Which one isn't?",
+    "all": "Tap all {n} mountains in {value}."
+   },
+   "elevation_m": {
+    "role": "measure",
+    "display": "m"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Mount Everest",
+   "qid": "Q513",
+   "fame": 0.739,
+   "elevation_m": 8850,
+   "country": "China",
+   "description": "Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas",
+   "hook": "is the tallest mountain above sea level on the entire planet",
+   "known": 0.95,
+   "kind": "mountain"
+  },
+  {
+   "label": "Mount Kailash",
+   "qid": "Q229107",
+   "fame": 0.705,
+   "elevation_m": 6638,
+   "country": "China",
+   "description": "mountain in Tibet, China",
+   "hook": "is considered sacred by four major religions and has never been climbed",
+   "known": 0.4,
+   "kind": "mountain"
+  },
+  {
+   "label": "K2",
+   "qid": "Q43512",
+   "fame": 0.654,
+   "elevation_m": 8611,
+   "country": "Pakistan",
+   "description": "2nd-highest mountain on Earth",
+   "hook": "is the second-highest peak on Earth, nicknamed the Savage Mountain for its danger",
+   "known": 0.6,
+   "kind": "mountain"
+  },
+  {
+   "label": "Langtang Lirung",
+   "qid": "Q1551402",
+   "fame": 0.59,
+   "elevation_m": 7227,
+   "country": "Nepal",
+   "description": "mountain in Nepal",
+   "hook": "towers over a popular himalayan trekking region and can sometimes be seen from kathmandu on clear days",
+   "known": 0.2,
+   "kind": "mountain"
+  },
+  {
+   "label": "Aconcagua",
+   "qid": "Q39739",
+   "fame": 0.573,
+   "elevation_m": 6962,
+   "country": "Argentina",
+   "description": "highest mountain in both the Southern and the Western Hemispheres (6967 m)",
+   "hook": "is the highest peak in the Americas and popular with climbers seeking a non-technical summit",
+   "known": 0.4,
+   "kind": "mountain"
+  },
+  {
+   "label": "Kanchenjunga",
+   "qid": "Q82019",
+   "fame": 0.558,
+   "elevation_m": 8586,
+   "country": "India",
+   "description": "third highest mountain in the world, in Nepal and India",
+   "hook": "is the third-highest peak on Earth and traditionally left just short of its true summit out of respect",
+   "known": 0.2,
+   "kind": "mountain"
+  },
+  {
+   "label": "Nanga Parbat",
+   "qid": "Q130736",
+   "fame": 0.549,
+   "elevation_m": 8126,
+   "country": "Pakistan",
+   "description": "mountain in Pakistan; 9th highest in the world",
+   "hook": "is nicknamed Killer Mountain for its steep, deadly slopes",
+   "known": 0.2,
+   "kind": "mountain"
+  },
+  {
+   "label": "Annapurna I",
+   "qid": "Q16466024",
+   "fame": 0.547,
+   "elevation_m": 8091,
+   "country": "Nepal",
+   "description": "mountain in the Himalayas",
+   "hook": "has one of the highest fatality rates of any major peak climbers have attempted to summit",
+   "known": 0.2,
+   "kind": "mountain"
+  },
+  {
+   "label": "Broad Peak",
+   "qid": "Q180996",
+   "fame": 0.533,
+   "elevation_m": 8051,
+   "country": "China",
+   "description": "12th highest mountain in the world",
+   "hook": "rises near K2 in the karakoram range and gets its name from an unusually wide summit ridge",
+   "known": 0.05,
+   "kind": "mountain"
+  },
+  {
+   "label": "Lhotse",
+   "qid": "Q168702",
+   "fame": 0.475,
+   "elevation_m": 8516,
+   "country": "China",
+   "description": "mountain in Nepal",
+   "hook": "stands right beside the world's tallest peak and shares part of its climbing route",
+   "known": 0.2,
+   "kind": "mountain"
+  },
+  {
+   "label": "Gangkhar Puensum",
+   "qid": "Q219986",
+   "fame": 0.469,
+   "elevation_m": 7570,
+   "country": "Bhutan",
+   "description": "Bhutan mountain",
+   "hook": "is believed to be the tallest mountain on Earth that no one has ever climbed to the top of",
+   "known": 0.05,
+   "kind": "mountain"
+  },
+  {
+   "label": "Manaslu",
+   "qid": "Q170070",
+   "fame": 0.454,
+   "elevation_m": 8163,
+   "country": "Nepal",
+   "description": "mountain in Nepal; eighth highest mountain in the world",
+   "hook": "was first climbed to its summit by a pioneering Japanese expedition",
+   "known": 0.05,
+   "kind": "mountain"
+  },
+  {
+   "label": "Shishapangma",
+   "qid": "Q105124",
+   "fame": 0.452,
+   "elevation_m": 8027,
+   "country": "China",
+   "description": "mountain in China",
+   "hook": "is the only one of the world's very tallest peaks that lies entirely within one country",
+   "known": 0.05,
+   "kind": "mountain"
+  },
+  {
+   "label": "Nanda Devi",
+   "qid": "Q213262",
+   "fame": 0.451,
+   "elevation_m": 7816,
+   "country": "India",
+   "description": "second highest mountain in India",
+   "hook": "is so sacred that climbing to its summit has been banned for decades",
+   "known": 0.05,
+   "kind": "mountain"
+  }
+ ]
+}

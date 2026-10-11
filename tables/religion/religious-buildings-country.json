@@ -1,0 +1,199 @@
+{
+ "id": "table.religion.religious-buildings-country",
+ "kind": "table",
+ "title": "Famous religious buildings and their country",
+ "genre": "society",
+ "category": "religion",
+ "topic": "sacred-places",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { VALUES ?class { wd:Q16970 wd:Q32815 wd:Q34627 wd:Q44613 wd:Q160742 wd:Q1370598 wd:Q2977 } ?item wdt:P31 ?class ; wdt:P17 ?c ; wikibase:sitelinks ?sl . FILTER(?sl >= 20) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T18:30:02.870Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T18:30:02.870Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "religious building",
+  "many": "religious buildings",
+  "wildcard": "place",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each religious building to its country.",
+    "odd": "Three of these religious buildings are in {value}. Which one isn't?",
+    "all": "Tap all {n} religious buildings in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Hagia Sophia",
+   "qid": "Q12506",
+   "fame": 0.645,
+   "country": "Turkey",
+   "description": "mosque, museum, and former church in Istanbul, Turkey",
+   "hook": "began as a Christian cathedral, later became a mosque, then a museum, then a mosque again",
+   "known": 0.95,
+   "kind": "mosque"
+  },
+  {
+   "label": "Florence Cathedral",
+   "qid": "Q191739",
+   "fame": 0.56,
+   "country": "Italy",
+   "description": "13th-century cathedral in Florence, Italy",
+   "hook": "is topped by Brunelleschi's enormous red-tiled dome",
+   "known": 0.6,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Al-Masjid Al-Haram",
+   "qid": "Q428858",
+   "fame": 0.552,
+   "country": "Saudi Arabia",
+   "description": "Islam's holiest mosque in Mecca, Saudi Arabia",
+   "hook": "surrounds the Kaaba, the cube-shaped focus of the Hajj pilgrimage",
+   "known": 0.6,
+   "kind": "mosque"
+  },
+  {
+   "label": "Milan Cathedral",
+   "qid": "Q18068",
+   "fame": 0.547,
+   "country": "Italy",
+   "description": "cathedral church of Milan, Italy",
+   "hook": "is a vast marble building bristling with spires, among the largest in Europe",
+   "known": 0.6,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Sacré-Cœur",
+   "qid": "Q28785",
+   "fame": 0.524,
+   "country": "France",
+   "description": "Roman Catholic church in Paris, France",
+   "hook": "gleams white atop the Montmartre hill with a Romano-Byzantine dome",
+   "known": 0.95,
+   "kind": "church"
+  },
+  {
+   "label": "Sultan Ahmed Mosque",
+   "qid": "Q80541",
+   "fame": 0.504,
+   "country": "Turkey",
+   "description": "historic mosque located in Istanbul, Turkey, also known as Blue Mosque",
+   "hook": "is nicknamed for the blue tiles lining its interior and has six minarets",
+   "known": 0.6,
+   "kind": "mosque"
+  },
+  {
+   "label": "Saint Catherine Monastery",
+   "qid": "Q185362",
+   "fame": 0.482,
+   "country": "Egypt",
+   "description": "Greek Orthodox monastery (the oldest) at the foot of Mount Sinai, Egypt",
+   "hook": "sits at the foot of the mountain where Moses is said to have received the commandments",
+   "known": 0.4,
+   "kind": "monastery"
+  },
+  {
+   "label": "Ulm Minster",
+   "qid": "Q44562",
+   "fame": 0.482,
+   "country": "Germany",
+   "description": "Gothic church in Germany",
+   "hook": "has the tallest church steeple in the world",
+   "known": 0.4,
+   "kind": "cathedral"
+  },
+  {
+   "label": "York Minster",
+   "qid": "Q252575",
+   "fame": 0.479,
+   "country": "United Kingdom",
+   "description": "cathedral of York, North Yorkshire, England, UK",
+   "hook": "is a huge Gothic cathedral famed for its medieval stained glass and Great East Window",
+   "known": 0.4,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Nidaros Cathedral",
+   "qid": "Q215023",
+   "fame": 0.478,
+   "country": "Norway",
+   "description": "cathedral in Trondheim, Norway",
+   "hook": "is the northernmost medieval church of its kind, built over the grave of a Viking king-saint",
+   "known": 0.4,
+   "kind": "cathedral"
+  },
+  {
+   "label": "St Mark's Basilica",
+   "qid": "Q172988",
+   "fame": 0.477,
+   "country": "Italy",
+   "description": "church in Venice, Italy",
+   "hook": "is covered in glittering gold mosaics beside the Doge's Palace",
+   "known": 0.6,
+   "kind": "basilica"
+  },
+  {
+   "label": "Umayyad Mosque",
+   "qid": "Q183562",
+   "fame": 0.469,
+   "country": "Syria",
+   "description": "mosque in Damascus, Syria",
+   "hook": "houses a shrine said to hold the head of John the Baptist",
+   "known": 0.4,
+   "kind": "mosque"
+  },
+  {
+   "label": "Charminar",
+   "qid": "Q1771696",
+   "fame": 0.462,
+   "country": "India",
+   "description": "mosque in Hyderabad, India",
+   "hook": "is an old-city landmark with four tall minarets, near a famous bangle market",
+   "known": 0.2,
+   "kind": "mosque"
+  },
+  {
+   "label": "Hallgrímskirkja",
+   "qid": "Q271466",
+   "fame": 0.459,
+   "country": "Iceland",
+   "description": "church in Reykjavík, Iceland",
+   "hook": "has a striking concrete tower inspired by basalt lava columns",
+   "known": 0.2,
+   "kind": "church"
+  }
+ ]
+}

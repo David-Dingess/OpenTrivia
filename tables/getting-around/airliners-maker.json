@@ -1,0 +1,439 @@
+{
+ "id": "table.getting-around.airliners-maker",
+ "kind": "table",
+ "title": "Famous aircraft and their maker",
+ "genre": "daily-life",
+ "category": "getting-around",
+ "topic": "airports",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?makerName WHERE { VALUES (?item ?itemLabel ?makerName) { (wd:Q6387 \"737\" \"Boeing\") (wd:Q179 \"747 jumbo jet\" \"Boeing\") (wd:Q6425 \"777\" \"Boeing\") (wd:Q6428 \"787 Dreamliner\" \"Boeing\") (wd:Q6394 \"707\" \"Boeing\") (wd:Q6409 \"727\" \"Boeing\") (wd:Q6423 \"767\" \"Boeing\") (wd:Q6418 \"757\" \"Boeing\") (wd:Q6401 \"717\" \"Boeing\") (wd:Q890166 \"314 Clipper\" \"Boeing\") (wd:Q729331 \"247\" \"Boeing\") (wd:Q5830 \"A380\" \"Airbus\") (wd:Q6475 \"A320\" \"Airbus\") (wd:Q6478 \"A330\" \"Airbus\") (wd:Q6481 \"A340\" \"Airbus\") (wd:Q6484 \"A350\" \"Airbus\") (wd:Q6437 \"A300\" \"Airbus\") (wd:Q6471 \"A310\" \"Airbus\") (wd:Q1784324 \"A318\" \"Airbus\") (wd:Q3317803 \"A319\" \"Airbus\") (wd:Q3278675 \"A321\" \"Airbus\") (wd:Q172957 \"Tu-154\" \"Tupolev\") (wd:Q188513 \"Tu-144\" \"Tupolev\") (wd:Q159067 \"Tu-134\" \"Tupolev\") (wd:Q182575 \"Il-62\" \"Ilyushin\") (wd:Q178351 \"An-225 Mriya\" \"Antonov\") (wd:Q190211 \"DC-3\" \"Douglas Aircraft\") (wd:Q142591 \"DC-2\" \"Douglas Aircraft\") (wd:Q503761 \"DC-6\" \"Douglas Aircraft\") (wd:Q223315 \"DC-8\" \"Douglas Aircraft\") (wd:Q208075 \"DC-10\" \"McDonnell Douglas\") (wd:Q62161 \"MD-11\" \"McDonnell Douglas\") (wd:Q852 \"L-1011 TriStar\" \"Lockheed\") (wd:Q677122 \"Constellation\" \"Lockheed\") (wd:Q429894 \"C919\" \"Comac\") (wd:Q6503 \"Caravelle\" \"Sud Aviation\") (wd:Q506736 \"F27 Friendship\" \"Fokker\") (wd:Q26066 \"Ju 52\" \"Junkers\") (wd:Q1137051 \"Viscount\" \"Vickers\") (wd:Q947947 \"VC10\" \"Vickers\") (wd:Q917907 \"Britannia\" \"Bristol Aeroplane Company\") (wd:Q1423689 \"Trident\" \"Hawker Siddeley\") (wd:Q683041 \"Twin Otter\" \"de Havilland Canada\") (wd:Q291804 \"Beaver\" \"de Havilland Canada\") (wd:Q617547 \"Sunderland\" \"Short Brothers\") (wd:Q891786 \"CRJ200\" \"Bombardier\") } ?item wikibase:sitelinks ?sitelinks . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T11:13:15.638Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T12:50:00.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "maker",
+   "label": "Maker",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "aircraft",
+  "many": "aircraft",
+  "minFame": 0.45,
+  "columns": {
+   "maker": {
+    "role": "link",
+    "pick": "Which company built the {label}?",
+    "statement": "The {label} was built by {value}.",
+    "match": "Match each aircraft to the company that built it.",
+    "odd": "Three of these aircraft were built by {value}. Which one wasn't?",
+    "all": "Tap all {n} aircraft built by {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "A380",
+   "qid": "Q5830",
+   "fame": 0.68,
+   "maker": "Airbus",
+   "description": "wide-body, double-deck, four-engine aircraft",
+   "hook": "is the world's largest passenger airliner, the only one with two full decks along its whole length",
+   "known": 0.95,
+   "kind": "jumbo"
+  },
+  {
+   "label": "767",
+   "qid": "Q6423",
+   "fame": 0.665,
+   "maker": "Boeing",
+   "description": "twinjet airliner family",
+   "hook": "is a twin-engine wide-body airliner built to fill the size gap between the biggest and smaller jets",
+   "known": 0.8,
+   "kind": "wide-body"
+  },
+  {
+   "label": "777",
+   "qid": "Q6425",
+   "fame": 0.661,
+   "maker": "Boeing",
+   "description": "Wide-body twin-engine jet airliner (1994–present)",
+   "hook": "is the largest twin-engine jet ever built and the most-produced wide-body airliner, nicknamed the Triple Seven",
+   "known": 0.8,
+   "kind": "wide-body"
+  },
+  {
+   "label": "787 Dreamliner",
+   "qid": "Q6428",
+   "fame": 0.656,
+   "maker": "Boeing",
+   "description": "wide-body twin-engine jet airliner",
+   "hook": "is a fuel-efficient wide-body airliner with a lightweight composite body, marketed under a dreamy nickname",
+   "known": 0.8,
+   "kind": "wide-body"
+  },
+  {
+   "label": "747 jumbo jet",
+   "qid": "Q179",
+   "fame": 0.653,
+   "maker": "Boeing",
+   "description": "widebody airliner family (1968–2023)",
+   "hook": "is the airliner with a distinctive upper-deck hump that earned it the nickname Queen of the Skies",
+   "known": 0.95,
+   "kind": "jumbo"
+  },
+  {
+   "label": "A350",
+   "qid": "Q6484",
+   "fame": 0.65,
+   "maker": "Airbus",
+   "description": "2013-present family of long-range, wide-body jet airliners",
+   "hook": "is a long-range wide-body twin-jet with a carbon-fibre body, built to rival a rival's Dreamliner",
+   "known": 0.6,
+   "kind": "wide-body"
+  },
+  {
+   "label": "An-225 Mriya",
+   "qid": "Q178351",
+   "fame": 0.644,
+   "maker": "Antonov",
+   "description": "Soviet heavy-duty transport turbojet aircraft",
+   "hook": "was the heaviest aircraft ever built, a six-engine giant that carried space shuttles on its back",
+   "known": 0.4,
+   "kind": "jumbo"
+  },
+  {
+   "label": "737",
+   "qid": "Q6387",
+   "fame": 0.634,
+   "maker": "Boeing",
+   "description": "1967 twin-engine jet-powered airliner family",
+   "hook": "is the best-selling narrow-body jet family, a short-haul workhorse flown by airlines worldwide",
+   "known": 0.85,
+   "kind": "narrow-body"
+  },
+  {
+   "label": "757",
+   "qid": "Q6418",
+   "fame": 0.613,
+   "maker": "Boeing",
+   "description": "airliner family (1982–2005)",
+   "hook": "is a narrow-body twin-jet with a long, pencil-like fuselage, used on long thin routes",
+   "known": 0.65,
+   "kind": "narrow-body"
+  },
+  {
+   "label": "707",
+   "qid": "Q6394",
+   "fame": 0.601,
+   "maker": "Boeing",
+   "description": "1957 airliner family",
+   "hook": "is the first jetliner its maker built and the plane that launched the jet age for ordinary travelers",
+   "known": 0.7,
+   "kind": "narrow-body"
+  },
+  {
+   "label": "A330",
+   "qid": "Q6478",
+   "fame": 0.595,
+   "maker": "Airbus",
+   "description": "1992 twinjet airliner family by Airbus",
+   "hook": "is a wide-body twin-engine airliner popular on long routes, built alongside a four-engine sibling",
+   "known": 0.6,
+   "kind": "wide-body"
+  },
+  {
+   "label": "A320",
+   "qid": "Q6475",
+   "fame": 0.586,
+   "maker": "Airbus",
+   "description": "1987 jet airliner family by Airbus including the A318, A319, A320, A321 and ACJ series",
+   "hook": "is the best-selling airliner family ever built and pioneered fly-by-wire controls in passenger service",
+   "known": 0.75,
+   "kind": "narrow-body"
+  },
+  {
+   "label": "A321",
+   "qid": "Q3278675",
+   "fame": 0.578,
+   "maker": "Airbus",
+   "description": "airliner series, stretched series of the A320 family",
+   "hook": "is the stretched, longest member of the best-selling narrow-body airliner family",
+   "known": 0.5,
+   "kind": "narrow-body"
+  },
+  {
+   "label": "DC-10",
+   "qid": "Q208075",
+   "fame": 0.575,
+   "maker": "McDonnell Douglas",
+   "description": "airliner family",
+   "hook": "is a three-engine wide-body airliner with one engine mounted at the base of its tail fin",
+   "known": 0.5,
+   "kind": "wide-body"
+  },
+  {
+   "label": "DC-3",
+   "qid": "Q190211",
+   "fame": 0.57,
+   "maker": "Douglas Aircraft",
+   "description": "1935 airliner family",
+   "hook": "is the classic propeller airliner that transformed air travel in the 1930s and hauled troops in the war",
+   "known": 0.7,
+   "kind": "vintage"
+  },
+  {
+   "label": "A340",
+   "qid": "Q6481",
+   "fame": 0.569,
+   "maker": "Airbus",
+   "description": "1991–2012 jet airliner family",
+   "hook": "is a long-range wide-body airliner with four engines, built alongside a twin-engine sibling",
+   "known": 0.5,
+   "kind": "wide-body"
+  },
+  {
+   "label": "727",
+   "qid": "Q6409",
+   "fame": 0.562,
+   "maker": "Boeing",
+   "description": "trijet narrow-body airliner (1963–1984)",
+   "hook": "is the only three-engine jet its maker ever built, with an engine at the tail and a rear boarding stairway",
+   "known": 0.45,
+   "kind": "narrow-body"
+  },
+  {
+   "label": "DC-8",
+   "qid": "Q223315",
+   "fame": 0.558,
+   "maker": "Douglas Aircraft",
+   "description": "airliner family",
+   "hook": "is an early long-range jetliner, built to rival the first big jet from its Seattle competitor",
+   "known": 0.5,
+   "kind": "narrow-body"
+  },
+  {
+   "label": "CRJ200",
+   "qid": "Q891786",
+   "fame": 0.556,
+   "maker": "Bombardier",
+   "description": "regional jet airliner",
+   "hook": null,
+   "known": 0.15,
+   "kind": "regional"
+  },
+  {
+   "label": "MD-11",
+   "qid": "Q62161",
+   "fame": 0.548,
+   "maker": "McDonnell Douglas",
+   "description": "airliner",
+   "hook": null,
+   "known": 0.35,
+   "kind": "wide-body"
+  },
+  {
+   "label": "L-1011 TriStar",
+   "qid": "Q852",
+   "fame": 0.547,
+   "maker": "Lockheed",
+   "description": "airliner family",
+   "hook": "is a three-engine wide-body airliner whose tail engine breathes through an S-shaped duct",
+   "known": 0.4,
+   "kind": "wide-body"
+  },
+  {
+   "label": "C919",
+   "qid": "Q429894",
+   "fame": 0.543,
+   "maker": "Comac",
+   "description": "narrow-body twinjet airliner",
+   "hook": null,
+   "known": 0.1,
+   "kind": "narrow-body"
+  },
+  {
+   "label": "A300",
+   "qid": "Q6437",
+   "fame": 0.54,
+   "maker": "Airbus",
+   "description": "1972 jet airliner family",
+   "hook": "is the first twin-engine wide-body airliner and launched a European consortium's jet business",
+   "known": 0.4,
+   "kind": "wide-body"
+  },
+  {
+   "label": "Twin Otter",
+   "qid": "Q683041",
+   "fame": 0.533,
+   "maker": "de Havilland Canada",
+   "description": "1965 utility aircraft family",
+   "hook": null,
+   "known": 0.2,
+   "kind": "utility"
+  },
+  {
+   "label": "Tu-144",
+   "qid": "Q188513",
+   "fame": 0.532,
+   "maker": "Tupolev",
+   "description": "Soviet supersonic airliner",
+   "hook": null,
+   "known": 0.3,
+   "kind": "soviet"
+  },
+  {
+   "label": "A319",
+   "qid": "Q3317803",
+   "fame": 0.523,
+   "maker": "Airbus",
+   "description": "airliner series, shortened version of the A320 family",
+   "hook": "is the shortened version of the best-selling narrow-body jet family, flown on short- to medium-range routes",
+   "known": 0.4,
+   "kind": "narrow-body"
+  },
+  {
+   "label": "717",
+   "qid": "Q6401",
+   "fame": 0.519,
+   "maker": "Boeing",
+   "description": "1998 airliner series",
+   "hook": null,
+   "known": 0.25,
+   "kind": "narrow-body"
+  },
+  {
+   "label": "Tu-154",
+   "qid": "Q172957",
+   "fame": 0.518,
+   "maker": "Tupolev",
+   "description": "trijet airliner",
+   "hook": null,
+   "known": 0.35,
+   "kind": "soviet"
+  },
+  {
+   "label": "Constellation",
+   "qid": "Q677122",
+   "fame": 0.483,
+   "maker": "Lockheed",
+   "description": "1943 airliner family",
+   "hook": "is a propeller airliner with a distinctive triple tail and dolphin-shaped body, nicknamed Connie",
+   "known": 0.45,
+   "kind": "vintage"
+  },
+  {
+   "label": "Il-62",
+   "qid": "Q182575",
+   "fame": 0.483,
+   "maker": "Ilyushin",
+   "description": "1963 airliner family",
+   "hook": null,
+   "known": 0.25,
+   "kind": "soviet"
+  },
+  {
+   "label": "DC-6",
+   "qid": "Q503761",
+   "fame": 0.48,
+   "maker": "Douglas Aircraft",
+   "description": "1946 airliner family",
+   "hook": null,
+   "known": 0.35,
+   "kind": "vintage"
+  },
+  {
+   "label": "A310",
+   "qid": "Q6471",
+   "fame": 0.479,
+   "maker": "Airbus",
+   "description": "1982 airliner family",
+   "hook": null,
+   "known": 0.3,
+   "kind": "narrow-body"
+  },
+  {
+   "label": "A318",
+   "qid": "Q1784324",
+   "fame": 0.467,
+   "maker": "Airbus",
+   "description": "2002 airliner series by Airbus",
+   "hook": null,
+   "known": 0.35,
+   "kind": "narrow-body"
+  },
+  {
+   "label": "VC10",
+   "qid": "Q947947",
+   "fame": 0.466,
+   "maker": "Vickers",
+   "description": "1962 airliner family",
+   "hook": null,
+   "known": 0.25,
+   "kind": "narrow-body"
+  },
+  {
+   "label": "Trident",
+   "qid": "Q1423689",
+   "fame": 0.464,
+   "maker": "Hawker Siddeley",
+   "description": "1962 airliner family",
+   "hook": null,
+   "known": 0.25,
+   "kind": "narrow-body"
+  },
+  {
+   "label": "Ju 52",
+   "qid": "Q26066",
+   "fame": 0.463,
+   "maker": "Junkers",
+   "description": "German transport aircraft",
+   "hook": null,
+   "known": 0.2,
+   "kind": "vintage"
+  },
+  {
+   "label": "Beaver",
+   "qid": "Q291804",
+   "fame": 0.458,
+   "maker": "de Havilland Canada",
+   "description": "1947 utility aircraft family by de Havilland Canada",
+   "hook": null,
+   "known": 0.2,
+   "kind": "utility"
+  },
+  {
+   "label": "Tu-134",
+   "qid": "Q159067",
+   "fame": 0.455,
+   "maker": "Tupolev",
+   "description": "twin engined short range airliner",
+   "hook": null,
+   "known": 0.15,
+   "kind": "soviet"
+  }
+ ]
+}

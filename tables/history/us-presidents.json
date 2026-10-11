@@ -1,0 +1,499 @@
+{
+ "id": "table.history.us-presidents",
+ "kind": "table",
+ "title": "Presidents of the United States by first inauguration",
+ "genre": "society",
+ "category": "history",
+ "topic": "rulers",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?start WHERE { { SELECT ?item (MIN(?s) AS ?start) WHERE { ?item wdt:P31 wd:Q5 ; p:P39 ?st . ?st ps:P39 wd:Q11696 ; pq:P580 ?s . FILTER NOT EXISTS { ?st wikibase:rank wikibase:DeprecatedRank } } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-23T03:46:44.056Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-23T03:46:44.056Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "inaugurated",
+   "label": "First inaugurated",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "president",
+  "many": "U.S. presidents",
+  "itemSub": "{hook}",
+  "hookAsk": "Which U.S. president {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "inaugurated": {
+    "role": "date",
+    "sort": "from the earliest first inauguration to the most recent",
+    "era": "Drop each president into the century they first took office.",
+    "shot": "In what year was {label} first sworn in as US president?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "George W. Bush",
+   "qid": "Q207",
+   "fame": 0.814,
+   "inaugurated": 2001,
+   "description": "43rd President of the United States (2001–2009)",
+   "hook": "led the nation's response to the September 11 terrorist attacks",
+   "known": 0.95,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Barack Obama",
+   "qid": "Q76",
+   "fame": 0.805,
+   "inaugurated": 2009,
+   "description": "44th President of the United States (2009–2017)",
+   "hook": "was the first Black person to hold the nation's highest office",
+   "known": 0.95,
+   "kind": "contemporary"
+  },
+  {
+   "label": "John F. Kennedy",
+   "qid": "Q9696",
+   "fame": 0.792,
+   "inaugurated": 1961,
+   "description": "president of the United States from 1961 to 1963 (1917–1963)",
+   "hook": "was assassinated while riding in a motorcade through Dallas",
+   "known": 0.95,
+   "kind": "cold-war"
+  },
+  {
+   "label": "George Washington",
+   "qid": "Q23",
+   "fame": 0.777,
+   "inaugurated": 1789,
+   "description": "Founding Father and first U.S. president (1732–1799)",
+   "hook": "led the Continental Army to victory before becoming the country's first leader",
+   "known": 0.95,
+   "kind": "founding"
+  },
+  {
+   "label": "Franklin Delano Roosevelt",
+   "qid": "Q8007",
+   "fame": 0.776,
+   "inaugurated": 1933,
+   "description": "president of the United States from 1933 to 1945 (1882–1945)",
+   "hook": "led the country through the Great Depression and most of a world war from a wheelchair",
+   "known": 0.95,
+   "kind": "early-20th-century"
+  },
+  {
+   "label": "Joe Biden",
+   "qid": "Q6279",
+   "fame": 0.773,
+   "inaugurated": 2021,
+   "description": "46th President of the United States (2021–2025)",
+   "hook": "became the oldest person ever elected to the nation's highest office",
+   "known": 0.95,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Ronald Reagan",
+   "qid": "Q9960",
+   "fame": 0.771,
+   "inaugurated": 1981,
+   "description": "president of the United States from 1981 to 1989 and actor (1911–2004)",
+   "hook": "was a Hollywood actor before turning to politics",
+   "known": 0.95,
+   "kind": "cold-war"
+  },
+  {
+   "label": "Dwight D. Eisenhower",
+   "qid": "Q9916",
+   "fame": 0.766,
+   "inaugurated": 1953,
+   "description": "president of the United States from 1953 to 1961 (1890–1969)",
+   "hook": "commanded Allied forces in Europe during a world war before taking office",
+   "known": 0.95,
+   "kind": "cold-war"
+  },
+  {
+   "label": "Abraham Lincoln",
+   "qid": "Q91",
+   "fame": 0.765,
+   "inaugurated": 1861,
+   "description": "president of the United States from 1861 to 1865 (1809-1865)",
+   "hook": "led the country through a civil war and ended slavery before being assassinated",
+   "known": 0.95,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Theodore Roosevelt",
+   "qid": "Q33866",
+   "fame": 0.76,
+   "inaugurated": 1901,
+   "description": "26th President of the United States from 1901 to 1909 (1858–1919)",
+   "hook": "led a famous cavalry charge up a hill in Cuba and later helped build a canal in Panama",
+   "known": 0.95,
+   "kind": "gilded age"
+  },
+  {
+   "label": "George H. W. Bush",
+   "qid": "Q23505",
+   "fame": 0.757,
+   "inaugurated": 1989,
+   "description": "41st President of the United States (1989–1993)",
+   "hook": "led an international coalition that pushed an invading army out of Kuwait",
+   "known": 0.8,
+   "kind": "cold-war"
+  },
+  {
+   "label": "Bill Clinton",
+   "qid": "Q1124",
+   "fame": 0.756,
+   "inaugurated": 1993,
+   "description": "42nd President of the United States (1993–2001)",
+   "hook": "presided over a stretch of strong economic growth and a federal budget surplus",
+   "known": 0.8,
+   "kind": "cold-war"
+  },
+  {
+   "label": "Richard Nixon",
+   "qid": "Q9588",
+   "fame": 0.738,
+   "inaugurated": 1969,
+   "description": "president of the United States from 1969 to 1974 (1913–1994)",
+   "hook": "opened diplomatic relations with China after decades of isolation",
+   "known": 0.95,
+   "kind": "cold-war"
+  },
+  {
+   "label": "Jimmy Carter",
+   "qid": "Q23685",
+   "fame": 0.728,
+   "inaugurated": 1977,
+   "description": "president of the United States from 1977 to 1981 (1924–2024)",
+   "hook": "won the Nobel Peace Prize for humanitarian work after leaving office",
+   "known": 0.8,
+   "kind": "cold-war"
+  },
+  {
+   "label": "Harry S. Truman",
+   "qid": "Q11613",
+   "fame": 0.725,
+   "inaugurated": 1945,
+   "description": "president of the United States from 1945 to 1953; politician (1884–1972)",
+   "hook": "made the decision to use atomic bombs against Japan to end a world war",
+   "known": 0.8,
+   "kind": "early-20th-century"
+  },
+  {
+   "label": "Lyndon B. Johnson",
+   "qid": "Q9640",
+   "fame": 0.724,
+   "inaugurated": 1963,
+   "description": "president of the United States from 1963 to 1969 (1908–1973)",
+   "hook": "signed landmark civil rights legislation into law",
+   "known": 0.8,
+   "kind": "cold-war"
+  },
+  {
+   "label": "Thomas Jefferson",
+   "qid": "Q11812",
+   "fame": 0.719,
+   "inaugurated": 1801,
+   "description": "Founding Father, U.S. president from 1801 to 1809 (1743–1826)",
+   "hook": "wrote the Declaration of Independence",
+   "known": 0.95,
+   "kind": "founding"
+  },
+  {
+   "label": "James A. Garfield",
+   "qid": "Q34597",
+   "fame": 0.712,
+   "inaugurated": 1881,
+   "description": "president of the United States in 1881",
+   "hook": "was shot by an assassin just months after taking office",
+   "known": 0.2,
+   "kind": "gilded age"
+  },
+  {
+   "label": "Ulysses S. Grant",
+   "qid": "Q34836",
+   "fame": 0.711,
+   "inaugurated": 1869,
+   "description": "president of the United States from 1869 to 1877",
+   "hook": "commanded the winning army in the civil war before taking office",
+   "known": 0.8,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Gerald Ford",
+   "qid": "Q9582",
+   "fame": 0.707,
+   "inaugurated": 1974,
+   "description": "president of the United States from 1974 to 1977 (1913–2006)",
+   "hook": "pardoned his predecessor for any crimes committed while in office",
+   "known": 0.4,
+   "kind": "cold-war"
+  },
+  {
+   "label": "John Adams",
+   "qid": "Q11806",
+   "fame": 0.7,
+   "inaugurated": 1797,
+   "description": "Founding Father, U.S. president from 1797 to 1801 (1735–1826)",
+   "hook": "served as the young nation's first vice president before becoming its second leader",
+   "known": 0.8,
+   "kind": "founding"
+  },
+  {
+   "label": "William McKinley",
+   "qid": "Q35041",
+   "fame": 0.691,
+   "inaugurated": 1897,
+   "description": "president of the United States from 1897 to 1901 (1843-1901)",
+   "hook": "was assassinated by an anarchist while greeting the public at a world's fair",
+   "known": 0.4,
+   "kind": "gilded age"
+  },
+  {
+   "label": "Andrew Jackson",
+   "qid": "Q11817",
+   "fame": 0.686,
+   "inaugurated": 1829,
+   "description": "president of the United States from 1829 to 1837",
+   "hook": "survived an assassination attempt and was known by a tough nickname involving hickory wood",
+   "known": 0.8,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Woodrow Wilson",
+   "qid": "Q34296",
+   "fame": 0.68,
+   "inaugurated": 1913,
+   "description": "28th President of the United States (1913–1921)",
+   "hook": "led the country through a world war and pushed for a league of nations afterward",
+   "known": 0.8,
+   "kind": "early-20th-century"
+  },
+  {
+   "label": "Calvin Coolidge",
+   "qid": "Q36023",
+   "fame": 0.676,
+   "inaugurated": 1923,
+   "description": "president of the United States from 1923 to 1929",
+   "hook": "earned a reputation for saying very little in public",
+   "known": 0.4,
+   "kind": "early-20th-century"
+  },
+  {
+   "label": "Herbert Hoover",
+   "qid": "Q35236",
+   "fame": 0.671,
+   "inaugurated": 1929,
+   "description": "president of the United States from 1929 to 1933 (1874–1964)",
+   "hook": "led wartime relief efforts before overseeing the start of a severe economic depression",
+   "known": 0.4,
+   "kind": "early-20th-century"
+  },
+  {
+   "label": "Grover Cleveland",
+   "qid": "Q35171",
+   "fame": 0.666,
+   "inaugurated": 1885,
+   "description": "22nd & 24th President of the United States (1885–1889; 1893–1897)",
+   "hook": "is the only person to serve two non-consecutive terms in the nation's highest office",
+   "known": 0.4,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Warren G. Harding",
+   "qid": "Q35286",
+   "fame": 0.665,
+   "inaugurated": 1921,
+   "description": "president of the United States from 1921 to 1923",
+   "hook": "died in office partway through his term",
+   "known": 0.4,
+   "kind": "early-20th-century"
+  },
+  {
+   "label": "William Howard Taft",
+   "qid": "Q35648",
+   "fame": 0.661,
+   "inaugurated": 1909,
+   "description": "27th President of the United States from 1909 to 1913 (1857–1930)",
+   "hook": "later served as chief justice of the Supreme Court",
+   "known": 0.4,
+   "kind": "early-20th-century"
+  },
+  {
+   "label": "Chester A. Arthur",
+   "qid": "Q35498",
+   "fame": 0.657,
+   "inaugurated": 1881,
+   "description": "president of the United States from 1881 to 1885",
+   "hook": "took office after his predecessor was assassinated",
+   "known": 0.2,
+   "kind": "gilded age"
+  },
+  {
+   "label": "John Quincy Adams",
+   "qid": "Q11816",
+   "fame": 0.65,
+   "inaugurated": 1825,
+   "description": "President of the United States from 1825 to 1829",
+   "hook": "was the son of a former president and later served in the House after his own term",
+   "known": 0.6,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Andrew Johnson",
+   "qid": "Q8612",
+   "fame": 0.645,
+   "inaugurated": 1865,
+   "description": "President of the United States from 1865 to 1869",
+   "hook": "survived removal from office by a single vote after being impeached",
+   "known": 0.4,
+   "kind": "19th-century"
+  },
+  {
+   "label": "William Henry Harrison",
+   "qid": "Q11869",
+   "fame": 0.645,
+   "inaugurated": 1841,
+   "description": "president of the United States in 1841 (1773-1841)",
+   "hook": "served the shortest term after falling ill weeks into his inauguration",
+   "known": 0.2,
+   "kind": "19th-century"
+  },
+  {
+   "label": "James Madison",
+   "qid": "Q11813",
+   "fame": 0.642,
+   "inaugurated": 1809,
+   "description": "President of the United States from 1809 to 1817 (1751–1836)",
+   "hook": "is remembered as the primary author of the Constitution",
+   "known": 0.8,
+   "kind": "founding"
+  },
+  {
+   "label": "James Buchanan",
+   "qid": "Q12325",
+   "fame": 0.64,
+   "inaugurated": 1857,
+   "description": "president of the United States from 1857 to 1861",
+   "hook": "led the country through the years just before the civil war began",
+   "known": 0.2,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Martin Van Buren",
+   "qid": "Q11820",
+   "fame": 0.63,
+   "inaugurated": 1837,
+   "description": "president of the United States from 1837 to 1841",
+   "hook": "was the first president born a citizen of the United States rather than a British subject",
+   "known": 0.2,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Zachary Taylor",
+   "qid": "Q11896",
+   "fame": 0.619,
+   "inaugurated": 1849,
+   "description": "president of the United States from 1849 to 1850",
+   "hook": "died of illness after only a brief time in office",
+   "known": 0.2,
+   "kind": "19th-century"
+  },
+  {
+   "label": "John Tyler",
+   "qid": "Q11881",
+   "fame": 0.616,
+   "inaugurated": 1841,
+   "description": "president of the United States from 1841 to 1845",
+   "hook": "was the first vice president to take office after his predecessor died in it",
+   "known": 0.2,
+   "kind": "19th-century"
+  },
+  {
+   "label": "James K. Polk",
+   "qid": "Q11891",
+   "fame": 0.614,
+   "inaugurated": 1845,
+   "description": "President of the United States from 1845 to 1849 (1795–1849)",
+   "hook": "expanded the country's territory all the way to the Pacific coast",
+   "known": 0.4,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Franklin Pierce",
+   "qid": "Q12312",
+   "fame": 0.606,
+   "inaugurated": 1853,
+   "description": "president of the United States from 1853 to 1857",
+   "hook": "was the only president known to have delivered his inaugural address entirely from memory, without notes",
+   "known": 0.2,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Rutherford B. Hayes",
+   "qid": "Q35686",
+   "fame": 0.605,
+   "inaugurated": 1877,
+   "description": "president of the United States from 1877 to 1881 (1822-1893)",
+   "hook": "won a disputed election that was settled by a special commission",
+   "known": 0.2,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Benjamin Harrison",
+   "qid": "Q35678",
+   "fame": 0.599,
+   "inaugurated": 1889,
+   "description": "President of the United States, 1889-1893 (1833–1901)",
+   "hook": "was the grandson of an earlier occupant of the nation's highest office",
+   "known": 0.2,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Millard Fillmore",
+   "qid": "Q12306",
+   "fame": 0.597,
+   "inaugurated": 1850,
+   "description": "president of the United States from 1850 to 1853",
+   "hook": "sent a naval expedition that forced open trade between Japan and the West",
+   "known": 0.2,
+   "kind": "19th-century"
+  },
+  {
+   "label": "James Monroe",
+   "qid": "Q11815",
+   "fame": 0.595,
+   "inaugurated": 1817,
+   "description": "president of the United States from 1817 to 1825 (1758–1831)",
+   "hook": "issued a famous doctrine warning European powers against interfering in the Americas",
+   "known": 0.6,
+   "kind": "founding"
+  }
+ ]
+}

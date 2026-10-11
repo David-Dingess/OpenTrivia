@@ -1,0 +1,187 @@
+{
+ "id": "table.math.famous-numbers",
+ "kind": "table",
+ "title": "Famous numbers and constants",
+ "genre": "science-math-tech",
+ "category": "math",
+ "topic": "geometry",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?clsLabel WHERE { VALUES ?item { wd:Q167 wd:Q82435 wd:Q41690 wd:Q193796 wd:Q507 wd:Q508 wd:Q6203 wd:Q122894 wd:Q2111 wd:Q733169 wd:Q389813 wd:Q205 wd:Q825176 wd:Q5962 wd:Q18373 wd:Q605704 wd:Q855282 wd:Q5997 wd:Q1547498 wd:Q2353128 wd:Q204 wd:Q199 wd:Q735775 wd:Q622682 } ?item wdt:P31 ?cls . VALUES ?cls { wd:Q186509 wd:Q173227 wd:Q1816844 } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T01:41:56.783Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T01:41:56.783Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "kind_of_number",
+   "label": "What it is",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "famous number",
+  "many": "famous numbers",
+  "itemSub": "{hook}",
+  "hookAsk": "Which famous number {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "kind_of_number": {
+    "role": "link",
+    "statement": "{label} is a {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "pi",
+   "qid": "Q167",
+   "fame": 0.665,
+   "kind_of_number": "mathematical constant",
+   "description": "constant ratio of the circumference of a circle to its diameter",
+   "hook": "has endless decimal digits that never repeat, and fans celebrate it with pies every March",
+   "known": 0.85,
+   "kind": "mathematical constant"
+  },
+  {
+   "label": "Euler's number",
+   "qid": "Q82435",
+   "fame": 0.653,
+   "kind_of_number": "mathematical constant",
+   "description": "mathematical constant; limit of (1 + 1/n)^n as n approaches infinity; transcendental number approximately equal 2.718281828",
+   "hook": null,
+   "known": 0.35,
+   "kind": "mathematical constant"
+  },
+  {
+   "label": "golden ratio",
+   "qid": "Q41690",
+   "fame": 0.625,
+   "kind_of_number": "mathematical constant",
+   "description": "ratio between two quantities whose sum is at the same ratio to the larger one",
+   "hook": "is the proportion said to appear in spiral shells, sunflowers and art, written with the letter phi",
+   "known": 0.55,
+   "kind": "mathematical constant"
+  },
+  {
+   "label": "speed of light in vacuum",
+   "qid": "Q2111",
+   "fame": 0.623,
+   "kind_of_number": "physical constant",
+   "description": "speed of electromagnetic waves in vacuum",
+   "hook": "is the cosmic limit on how fast anything can travel, about 300,000 kilometres every second",
+   "known": 0.85,
+   "kind": "physical constant"
+  },
+  {
+   "label": "Planck constant",
+   "qid": "Q122894",
+   "fame": 0.576,
+   "kind_of_number": "physical constant",
+   "description": "physical constant representing the quantum of action",
+   "hook": null,
+   "known": 0.25,
+   "kind": "physical constant"
+  },
+  {
+   "label": "Avogadro constant",
+   "qid": "Q6203",
+   "fame": 0.554,
+   "kind_of_number": "physical constant",
+   "description": "fundamental physical constant (symbols: L, Nᴀ) representing the molar number of entities",
+   "hook": null,
+   "known": 0.35,
+   "kind": "physical constant"
+  },
+  {
+   "label": "Graham's number",
+   "qid": "Q733169",
+   "fame": 0.54,
+   "kind_of_number": "large number",
+   "description": "enormously large number; upper bound solution to a Ramsey theory problem",
+   "hook": null,
+   "known": 0.05,
+   "kind": "large number"
+  },
+  {
+   "label": "Newtonian gravitational constant",
+   "qid": "Q18373",
+   "fame": 0.532,
+   "kind_of_number": "physical constant",
+   "description": "physical constant relating the gravitational force between objects to their mass and distance",
+   "hook": null,
+   "known": 0.25,
+   "kind": "physical constant"
+  },
+  {
+   "label": "googol",
+   "qid": "Q507",
+   "fame": 0.53,
+   "kind_of_number": "large number",
+   "description": "large integer number defined as ten raised to the power of 100",
+   "hook": null,
+   "known": 0.2,
+   "kind": "large number"
+  },
+  {
+   "label": "Boltzmann constant",
+   "qid": "Q5962",
+   "fame": 0.527,
+   "kind_of_number": "physical constant",
+   "description": "Physical constant relating energy with temperature and other intensive physical quantities",
+   "hook": null,
+   "known": 0.1,
+   "kind": "physical constant"
+  },
+  {
+   "label": "googolplex",
+   "qid": "Q508",
+   "fame": 0.501,
+   "kind_of_number": "large number",
+   "description": "large number defined as ten to the power of one googol",
+   "hook": null,
+   "known": 0.08,
+   "kind": "large number"
+  },
+  {
+   "label": "fine-structure constant",
+   "qid": "Q5997",
+   "fame": 0.464,
+   "kind_of_number": "physical constant",
+   "description": "physical constant quantifying the strength of the electromagnetic interaction between elementary charged particles",
+   "hook": null,
+   "known": 0.05,
+   "kind": "physical constant"
+  },
+  {
+   "label": "imaginary unit",
+   "qid": "Q193796",
+   "fame": 0.458,
+   "kind_of_number": "mathematical constant",
+   "description": "square root of negative one, used to define complex numbers",
+   "hook": null,
+   "known": 0.25,
+   "kind": "mathematical constant"
+  }
+ ]
+}

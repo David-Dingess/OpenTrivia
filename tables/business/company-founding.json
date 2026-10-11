@@ -1,0 +1,1448 @@
+{
+ "id": "table.business.company-founding",
+ "kind": "table",
+ "title": "Famous companies and the year they were founded",
+ "genre": "daily-life",
+ "category": "business",
+ "topic": "big-companies",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?inception WITH { SELECT DISTINCT ?item ?sitelinks WHERE { { VALUES ?cls { wd:Q4830453 wd:Q6881511 wd:Q783794 wd:Q891723 wd:Q167037 wd:Q778575 wd:Q786820 wd:Q210167 wd:Q18509232 wd:Q2085381 wd:Q1331793 } ?item wdt:P31 ?cls } UNION { VALUES ?item { wd:Q54078 wd:Q37158 wd:Q1063455 wd:Q191485 wd:Q192814 wd:Q126399 wd:Q159846 wd:Q168383 wd:Q689141 } } ?item wikibase:sitelinks ?sitelinks . FILTER(?sitelinks >= 50) ?item wdt:P571 ?i0 . } ORDER BY DESC(?sitelinks) LIMIT 400 } AS %items WITH { SELECT ?item ?sitelinks (GROUP_CONCAT(DISTINCT CONCAT(COALESCE(STR(?iT), \"\"), \"|\", COALESCE(STR(?iP), \"\")); separator=\";\") AS ?inception) WHERE { INCLUDE %items FILTER NOT EXISTS { ?item wdt:P576 [] } OPTIONAL { ?item p:P571 ?iSt . ?iSt a wikibase:BestRank ; psv:P571 [ wikibase:timeValue ?iT ; wikibase:timePrecision ?iP ] . } } GROUP BY ?item ?sitelinks } AS %dated WHERE { INCLUDE %dated OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) # hint: none added, named subqueries are materialised already LIMIT 524",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T17:56:03.870Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T17:56:03.870Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "founded",
+   "label": "Founded",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "company",
+  "many": "companies",
+  "hookAsk": "Which company {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "founded": {
+    "role": "date",
+    "sort": "from the oldest to the newest, by the year they were founded",
+    "era": "Drop each company into the century it was founded.",
+    "shot": "In what year was {label} founded? It {hook}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Google",
+   "qid": "Q95",
+   "fame": 0.831,
+   "founded": 1998,
+   "hook": "runs the world's most used search engine and owns YouTube",
+   "description": "American multinational technology company, a subsidiary of Alphabet Inc.",
+   "known": 0.95,
+   "kind": "tech"
+  },
+  {
+   "label": "Apple Inc.",
+   "qid": "Q312",
+   "fame": 0.777,
+   "founded": 1976,
+   "hook": "makes the iPhone, the iPad and the Mac",
+   "description": "American multinational technology company based in Cupertino, California",
+   "known": 0.95,
+   "kind": "tech"
+  },
+  {
+   "label": "OpenAI",
+   "qid": "Q21708200",
+   "fame": 0.772,
+   "founded": 2015,
+   "hook": "created the chatbot ChatGPT",
+   "description": "American artificial intelligence research organization",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "Amazon",
+   "qid": "Q3884",
+   "fame": 0.749,
+   "founded": 1994,
+   "hook": "started out selling books online and grew into a giant online store",
+   "description": "American multinational technology company",
+   "known": 0.95,
+   "kind": "web service"
+  },
+  {
+   "label": "Microsoft",
+   "qid": "Q2283",
+   "fame": 0.744,
+   "founded": 1975,
+   "hook": "makes Windows, Office and the Xbox",
+   "description": "American multinational technology corporation",
+   "known": 0.95,
+   "kind": "tech"
+  },
+  {
+   "label": "Netflix",
+   "qid": "Q907311",
+   "fame": 0.728,
+   "founded": 1997,
+   "hook": "mailed DVDs to homes before becoming a giant streaming service",
+   "description": "American subscription video on-demand over-the-top streaming service",
+   "known": 0.95,
+   "kind": "web service"
+  },
+  {
+   "label": "Nvidia",
+   "qid": "Q182477",
+   "fame": 0.718,
+   "founded": 1993,
+   "hook": "makes the GeForce graphics cards that power gaming PCs and AI",
+   "description": "American multinational technology company",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "DreamWorks Animation",
+   "qid": "Q500088",
+   "fame": 0.675,
+   "founded": 1994,
+   "hook": "made Shrek, Madagascar and Kung Fu Panda",
+   "description": "American animation studio",
+   "known": 0.8,
+   "kind": "entertainment"
+  },
+  {
+   "label": "The Walt Disney Company",
+   "qid": "Q7414",
+   "fame": 0.673,
+   "founded": 1923,
+   "hook": "created Mickey Mouse and runs theme parks around the world",
+   "description": "American multinational mass media company",
+   "known": 0.95,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Universal Pictures",
+   "qid": "Q168383",
+   "fame": 0.671,
+   "founded": 1912,
+   "hook": "released Jaws, E.T. and Jurassic Park",
+   "description": "American film and distribution company",
+   "known": 0.8,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Walmart",
+   "qid": "Q483551",
+   "fame": 0.671,
+   "founded": 1962,
+   "hook": "runs the world's biggest chain of supermarkets and discount stores",
+   "description": "U.S. discount retailer based in Arkansas",
+   "known": 0.95,
+   "kind": "food and shops"
+  },
+  {
+   "label": "Nintendo",
+   "qid": "Q8093",
+   "fame": 0.67,
+   "founded": 1889,
+   "hook": "created Mario and Zelda, and started out making playing cards",
+   "description": "Japanese multinational video game and consumer electronics company",
+   "known": 0.95,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Paramount Pictures",
+   "qid": "Q159846",
+   "fame": 0.663,
+   "founded": 1912,
+   "hook": "has a mountain peak ringed by stars as its logo and released The Godfather",
+   "description": "American film studio, subsidiary of Paramount Global",
+   "known": 0.8,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Pixar",
+   "qid": "Q127552",
+   "fame": 0.66,
+   "founded": 1986,
+   "hook": "made Toy Story, the first feature-length computer-animated film",
+   "description": "American computer animation studio",
+   "known": 0.95,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Oracle Corporation",
+   "qid": "Q19900",
+   "fame": 0.658,
+   "founded": 1977,
+   "hook": "is best known for the database software that big businesses run on",
+   "description": "American multinational computer corporation",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "SpaceX",
+   "qid": "Q193701",
+   "fame": 0.654,
+   "founded": 2002,
+   "hook": "builds reusable Falcon rockets and the giant Starship",
+   "description": "American spaceflight and AI company",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "BMW",
+   "qid": "Q26678",
+   "fame": 0.652,
+   "founded": 1916,
+   "hook": "is a Bavarian carmaker with a round blue-and-white badge",
+   "description": "German automobile manufacturer, and conglomerate",
+   "known": 0.95,
+   "kind": "car maker"
+  },
+  {
+   "label": "Tesla",
+   "qid": "Q478214",
+   "fame": 0.652,
+   "founded": 2003,
+   "hook": "popularised electric cars like the Model S and the Model 3",
+   "description": "American automotive, energy storage and solar power company",
+   "known": 0.95,
+   "kind": "car maker"
+  },
+  {
+   "label": "Nike",
+   "qid": "Q483915",
+   "fame": 0.65,
+   "founded": 1964,
+   "hook": "uses a swoosh logo and the slogan Just Do It",
+   "description": "American athletic equipment company",
+   "known": 0.95,
+   "kind": "fashion"
+  },
+  {
+   "label": "Spotify",
+   "qid": "Q689141",
+   "fame": 0.646,
+   "founded": 2006,
+   "hook": "is a Swedish music streaming service with a green logo",
+   "description": "Swedish audio streaming service",
+   "known": 0.95,
+   "kind": "web service"
+  },
+  {
+   "label": "Toyota",
+   "qid": "Q53268",
+   "fame": 0.639,
+   "founded": 1937,
+   "hook": "makes the Corolla and the Prius hybrid",
+   "description": "Japanese multinational automotive manufacturer",
+   "known": 0.95,
+   "kind": "car maker"
+  },
+  {
+   "label": "Ford Motor Company",
+   "qid": "Q44294",
+   "fame": 0.638,
+   "founded": 1903,
+   "hook": "built the Model T on the first moving assembly line",
+   "description": "American multinational automotive company",
+   "known": 0.95,
+   "kind": "car maker"
+  },
+  {
+   "label": "Sony Group",
+   "qid": "Q41187",
+   "fame": 0.638,
+   "founded": 1946,
+   "hook": "gave the world the Walkman and the Trinitron TV",
+   "description": "Japanese multinational conglomerate corporation",
+   "known": 0.95,
+   "kind": "tech"
+  },
+  {
+   "label": "Valve Corporation",
+   "qid": "Q193559",
+   "fame": 0.635,
+   "founded": 1996,
+   "hook": "runs the Steam game store and made Half-Life",
+   "description": "American video game development and digital distribution company",
+   "known": 0.6,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Starbucks",
+   "qid": "Q37158",
+   "fame": 0.631,
+   "founded": 1971,
+   "hook": "is a coffeehouse chain with a green two-tailed siren logo",
+   "description": "American multinational coffee company",
+   "known": 0.95,
+   "kind": "food and shops"
+  },
+  {
+   "label": "Nestlé",
+   "qid": "Q160746",
+   "fame": 0.63,
+   "founded": 1866,
+   "hook": "makes KitKat and Nescafé",
+   "description": "Swiss multi-national food and beverage company",
+   "known": 0.8,
+   "kind": "food and shops"
+  },
+  {
+   "label": "Ryanair",
+   "qid": "Q170614",
+   "fame": 0.627,
+   "founded": 1985,
+   "hook": "is Europe's biggest low-cost airline, based in Ireland",
+   "description": "low-cost airline of Ireland",
+   "known": 0.6,
+   "kind": "money and travel"
+  },
+  {
+   "label": "Boeing",
+   "qid": "Q66",
+   "fame": 0.625,
+   "founded": 1916,
+   "hook": "builds the 747 jumbo jet and the 737 airliner",
+   "description": "American global aerospace and defense corporation",
+   "known": 0.95,
+   "kind": "money and travel"
+  },
+  {
+   "label": "Capcom",
+   "qid": "Q14428",
+   "fame": 0.625,
+   "founded": 1979,
+   "hook": "created Street Fighter, Resident Evil and Mega Man",
+   "description": "Japanese video game company",
+   "known": 0.6,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Mercedes-Benz",
+   "qid": "Q36008",
+   "fame": 0.622,
+   "founded": 1926,
+   "hook": "is a German car brand with a three-pointed star badge",
+   "description": "German automobile brand owned by Mercedes-Benz AG",
+   "known": 0.95,
+   "kind": "car maker"
+  },
+  {
+   "label": "Volkswagen",
+   "qid": "Q246",
+   "fame": 0.622,
+   "founded": 1937,
+   "hook": "made the Beetle and the Golf",
+   "description": "German automotive brand; manufacturing subsidiary of Volkswagen Group",
+   "known": 0.95,
+   "kind": "car maker"
+  },
+  {
+   "label": "Metro-Goldwyn-Mayer",
+   "qid": "Q179200",
+   "fame": 0.62,
+   "founded": 1924,
+   "hook": "has a roaring lion at the start of its films",
+   "description": "American film and television and distribution company",
+   "known": 0.8,
+   "kind": "entertainment"
+  },
+  {
+   "label": "LVMH",
+   "qid": "Q504998",
+   "fame": 0.619,
+   "founded": 1987,
+   "hook": "is a French luxury giant that owns Louis Vuitton, Tiffany and Sephora",
+   "description": "French multinational luxury goods conglomerate",
+   "known": 0.6,
+   "kind": "fashion"
+  },
+  {
+   "label": "Nokia",
+   "qid": "Q1418",
+   "fame": 0.618,
+   "founded": 1865,
+   "hook": "made hugely popular mobile phones and the game Snake",
+   "description": "Finnish multinational telecommunications and information technology company",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "eBay",
+   "qid": "Q58024",
+   "fame": 0.617,
+   "founded": 1995,
+   "hook": "is an online marketplace famous for its auctions",
+   "description": "American multinational internet corporation that manages eBay.com",
+   "known": 0.95,
+   "kind": "web service"
+  },
+  {
+   "label": "IBM",
+   "qid": "Q37156",
+   "fame": 0.612,
+   "founded": 1911,
+   "hook": "is nicknamed Big Blue and built early mainframe computers",
+   "description": "American multinational technology company",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "Sega",
+   "qid": "Q122741",
+   "fame": 0.607,
+   "founded": 1960,
+   "hook": "created Sonic the Hedgehog and the Mega Drive console",
+   "description": "Japanese video game developer and publisher and subsidiary of Sega Sammy Holdings",
+   "known": 0.8,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Uber",
+   "qid": "Q780442",
+   "fame": 0.605,
+   "founded": 2009,
+   "hook": "lets people hail a ride from a phone app",
+   "description": "peer-to-peer ridesharing, food delivery, and transportation network company headquartered in San Francisco, California",
+   "known": 0.95,
+   "kind": "web service"
+  },
+  {
+   "label": "Goldman Sachs",
+   "qid": "Q193326",
+   "fame": 0.604,
+   "founded": 1869,
+   "hook": "is one of Wall Street's best-known investment banks",
+   "description": "American investment bank",
+   "known": 0.6,
+   "kind": "money and travel"
+  },
+  {
+   "label": "Porsche",
+   "qid": "Q40993",
+   "fame": 0.604,
+   "founded": 1931,
+   "hook": "makes the 911 sports car",
+   "description": "German automobile manufacturer specializing in high-performance sports cars, SUVs and sedans, owned by Volkswagen AG",
+   "known": 0.8,
+   "kind": "car maker"
+  },
+  {
+   "label": "Tencent",
+   "qid": "Q860580",
+   "fame": 0.604,
+   "founded": 1998,
+   "hook": "runs the WeChat app and owns a huge slice of the gaming world",
+   "description": "Chinese multinational investment holding conglomerate",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "7-Eleven",
+   "qid": "Q259340",
+   "fame": 0.603,
+   "founded": 1927,
+   "hook": "is a convenience store chain famous for the Slurpee",
+   "description": "American convenience store chain",
+   "known": 0.8,
+   "kind": "food and shops"
+  },
+  {
+   "label": "IKEA",
+   "qid": "Q54078",
+   "fame": 0.601,
+   "founded": 1943,
+   "hook": "sells flat-pack furniture with Swedish names and serves meatballs",
+   "description": "Swedish multinational furniture store chain",
+   "known": 0.95,
+   "kind": "food and shops"
+  },
+  {
+   "label": "Blizzard Entertainment",
+   "qid": "Q178824",
+   "fame": 0.6,
+   "founded": 1991,
+   "hook": "made World of Warcraft, StarCraft and Diablo",
+   "description": "American video game publisher and developer owned by Microsoft",
+   "known": 0.8,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Honda",
+   "qid": "Q9584",
+   "fame": 0.598,
+   "founded": 1948,
+   "hook": "makes the Civic and is the world's biggest motorcycle maker",
+   "description": "manufacturer of automobiles, motorcycles, and power equipment",
+   "known": 0.8,
+   "kind": "car maker"
+  },
+  {
+   "label": "HSBC",
+   "qid": "Q190464",
+   "fame": 0.598,
+   "founded": 1865,
+   "hook": "is a global bank with a red-and-white hexagon logo",
+   "description": "British multinational bank",
+   "known": 0.6,
+   "kind": "money and travel"
+  },
+  {
+   "label": "Activision",
+   "qid": "Q200491",
+   "fame": 0.594,
+   "founded": 1979,
+   "hook": "publishes the Guitar Hero and Tony Hawk's Pro Skater games",
+   "description": "American video game publisher",
+   "known": 0.8,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Procter & Gamble",
+   "qid": "Q212405",
+   "fame": 0.593,
+   "founded": 1837,
+   "hook": "makes Tide, Pampers and Gillette",
+   "description": "American multinational consumer goods corporation",
+   "known": 0.8,
+   "kind": "food and shops"
+  },
+  {
+   "label": "Škoda Auto",
+   "qid": "Q29637",
+   "fame": 0.591,
+   "founded": 1895,
+   "hook": "is a Czech carmaker whose badge is a winged arrow",
+   "description": "automotive manufacturing subsidiary of Volkswagen Group",
+   "known": 0.6,
+   "kind": "car maker"
+  },
+  {
+   "label": "Electronic Arts",
+   "qid": "Q173941",
+   "fame": 0.589,
+   "founded": 1982,
+   "hook": "makes The Sims and the Madden NFL football games",
+   "description": "American video game company",
+   "known": 0.8,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Hulu",
+   "qid": "Q1630304",
+   "fame": 0.585,
+   "founded": 2007,
+   "hook": "is an American streaming service for TV shows, now run by Disney",
+   "description": "American video streaming service",
+   "known": 0.8,
+   "kind": "web service"
+  },
+  {
+   "label": "BP",
+   "qid": "Q152057",
+   "fame": 0.584,
+   "founded": 1909,
+   "hook": "is a British oil giant with a green-and-yellow sunflower logo",
+   "description": "British multinational oil and gas company",
+   "known": 0.6,
+   "kind": "industry"
+  },
+  {
+   "label": "Unilever",
+   "qid": "Q157062",
+   "fame": 0.584,
+   "founded": 1929,
+   "hook": "makes Dove soap, Ben & Jerry's ice cream and Hellmann's mayonnaise",
+   "description": "British multinational consumer goods company",
+   "known": 0.6,
+   "kind": "food and shops"
+  },
+  {
+   "label": "Volvo Cars",
+   "qid": "Q215293",
+   "fame": 0.584,
+   "founded": 1927,
+   "hook": "is a Swedish carmaker famous for safety, which gave the world the three-point seatbelt",
+   "description": "Swedish automobile manufacturer",
+   "known": 0.8,
+   "kind": "car maker"
+  },
+  {
+   "label": "Airbnb",
+   "qid": "Q63327",
+   "fame": 0.583,
+   "founded": 2008,
+   "hook": "lets travellers rent rooms and homes from locals",
+   "description": "American online platform for rental accommodations",
+   "known": 0.95,
+   "kind": "web service"
+  },
+  {
+   "label": "AMD",
+   "qid": "Q128896",
+   "fame": 0.583,
+   "founded": 1969,
+   "hook": "makes Ryzen processors and Radeon graphics cards",
+   "description": "American multinational semiconductor company",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Audi AG",
+   "qid": "Q23317",
+   "fame": 0.583,
+   "founded": 1909,
+   "hook": "is a German carmaker whose badge is four linked rings",
+   "description": "German automotive manufacturing subsidiary of Volkswagen Group",
+   "known": 0.8,
+   "kind": "car maker"
+  },
+  {
+   "label": "Hyundai Motor Company",
+   "qid": "Q55931",
+   "fame": 0.581,
+   "founded": 1967,
+   "hook": "is South Korea's biggest carmaker, maker of the Tucson and the Elantra",
+   "description": "South Korean multinational automaker",
+   "known": 0.8,
+   "kind": "car maker"
+  },
+  {
+   "label": "Kia",
+   "qid": "Q35349",
+   "fame": 0.58,
+   "founded": 1944,
+   "hook": "is a South Korean carmaker behind the Sportage and the Soul",
+   "description": "South Korean automobile manufacturer",
+   "known": 0.8,
+   "kind": "car maker"
+  },
+  {
+   "label": "Samsung Electronics",
+   "qid": "Q20718",
+   "fame": 0.58,
+   "founded": 1969,
+   "hook": "makes Galaxy phones and is the world's biggest TV maker",
+   "description": "South Korean multinational electronics corporation",
+   "known": 0.95,
+   "kind": "tech"
+  },
+  {
+   "label": "Xiaomi",
+   "qid": "Q1636958",
+   "fame": 0.58,
+   "founded": 2010,
+   "hook": "is a Chinese phone maker that also sells electric cars",
+   "description": "Chinese electronics company",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Sony Interactive Entertainment",
+   "qid": "Q18594",
+   "fame": 0.579,
+   "founded": 1993,
+   "hook": "runs the PlayStation business and its online network",
+   "description": "American multinational software company",
+   "known": 0.8,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Koninklijke Philips NV",
+   "qid": "Q170416",
+   "fame": 0.578,
+   "founded": 1891,
+   "hook": "is a Dutch firm known for light bulbs, shavers and medical scanners",
+   "description": "Dutch multinational conglomerate corporation",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Nissan",
+   "qid": "Q20165",
+   "fame": 0.578,
+   "founded": 1933,
+   "hook": "makes the Leaf electric car and the GT-R",
+   "description": "Japanese automobile manufacturer",
+   "known": 0.8,
+   "kind": "car maker"
+  },
+  {
+   "label": "Konami",
+   "qid": "Q45700",
+   "fame": 0.576,
+   "founded": 1969,
+   "hook": "created Metal Gear, Castlevania and Frogger",
+   "description": "Japanese entertainment and video game company",
+   "known": 0.6,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Southwest Airlines",
+   "qid": "Q503308",
+   "fame": 0.576,
+   "founded": 1967,
+   "hook": "is a US low-cost airline famous for having no assigned seats",
+   "description": "airline of the United States",
+   "known": 0.6,
+   "kind": "money and travel"
+  },
+  {
+   "label": "Intel",
+   "qid": "Q248",
+   "fame": 0.574,
+   "founded": 1968,
+   "hook": "makes the Pentium and Core processors found in many PCs",
+   "description": "American multinational technology company",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "Lexus",
+   "qid": "Q35919",
+   "fame": 0.574,
+   "founded": 1989,
+   "hook": "is Toyota's luxury car brand",
+   "description": "Japanese brand of luxury vehicle owned by Toyota Motor Corporation",
+   "known": 0.8,
+   "kind": "car maker"
+  },
+  {
+   "label": "Siemens",
+   "qid": "Q81230",
+   "fame": 0.574,
+   "founded": 1847,
+   "hook": "is a German engineering giant that builds trains, turbines and hospital equipment",
+   "description": "German multinational conglomerate company",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Epic Games",
+   "qid": "Q739711",
+   "fame": 0.573,
+   "founded": 1991,
+   "hook": "made Fortnite and the Unreal Engine",
+   "description": "American video game and software developer",
+   "known": 0.8,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Lenovo",
+   "qid": "Q14799",
+   "fame": 0.573,
+   "founded": 1984,
+   "hook": "is a Chinese maker of ThinkPad laptops",
+   "description": "Chinese multinational technology company established in 1984",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Mazda",
+   "qid": "Q35996",
+   "fame": 0.573,
+   "founded": 1920,
+   "hook": "makes the MX-5 Miata roadster",
+   "description": "Japanese multinational automaker",
+   "known": 0.8,
+   "kind": "car maker"
+  },
+  {
+   "label": "Alibaba Group",
+   "qid": "Q1359568",
+   "fame": 0.572,
+   "founded": 1999,
+   "hook": "runs China's giant Taobao and Tmall online shopping sites",
+   "description": "Chinese multinational technology company",
+   "known": 0.6,
+   "kind": "web service"
+  },
+  {
+   "label": "Panasonic Holdings Corporation",
+   "qid": "Q53247",
+   "fame": 0.571,
+   "founded": 1918,
+   "hook": "is a Japanese electronics maker that builds batteries for electric cars",
+   "description": "Japanese multinational electronics corporation",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Qantas Airways",
+   "qid": "Q32491",
+   "fame": 0.571,
+   "founded": 1920,
+   "hook": "is Australia's national airline, with a kangaroo on its tail",
+   "description": "the flag carrier airline of Australia",
+   "known": 0.6,
+   "kind": "money and travel"
+  },
+  {
+   "label": "Ubisoft",
+   "qid": "Q188273",
+   "fame": 0.571,
+   "founded": 1986,
+   "hook": "made the Rayman, Just Dance and Assassin's Creed games",
+   "description": "French video game company",
+   "known": 0.8,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Reuters",
+   "qid": "Q130879",
+   "fame": 0.57,
+   "founded": 1851,
+   "hook": "is a worldwide news agency based in London",
+   "description": "international news agency",
+   "known": 0.6,
+   "kind": "money and travel"
+  },
+  {
+   "label": "American Express",
+   "qid": "Q194360",
+   "fame": 0.569,
+   "founded": 1850,
+   "hook": "issues charge cards and is famous for its green card",
+   "description": "American multinational financial services corporation",
+   "known": 0.8,
+   "kind": "money and travel"
+  },
+  {
+   "label": "Chevrolet",
+   "qid": "Q29570",
+   "fame": 0.568,
+   "founded": 1911,
+   "hook": "makes the Corvette and the Camaro, with a bow-tie badge",
+   "description": "American automobile division of GM",
+   "known": 0.8,
+   "kind": "car maker"
+  },
+  {
+   "label": "Subaru",
+   "qid": "Q172741",
+   "fame": 0.568,
+   "founded": 1953,
+   "hook": "has a cluster of six stars as its badge and makes the Impreza",
+   "description": "Japanese automobile manufacturing company",
+   "known": 0.6,
+   "kind": "car maker"
+  },
+  {
+   "label": "Louis Vuitton",
+   "qid": "Q191485",
+   "fame": 0.567,
+   "founded": 1854,
+   "hook": "is a French fashion house famous for monogrammed luggage and handbags",
+   "description": "French fashion house and luxury retail company",
+   "known": 0.8,
+   "kind": "fashion"
+  },
+  {
+   "label": "easyJet",
+   "qid": "Q191551",
+   "fame": 0.565,
+   "founded": 1995,
+   "hook": "is a British low-cost airline with bright orange planes",
+   "description": "British low-cost airline",
+   "known": 0.6,
+   "kind": "money and travel"
+  },
+  {
+   "label": "Hewlett-Packard",
+   "qid": "Q80978",
+   "fame": 0.563,
+   "founded": 1939,
+   "hook": "started in a Palo Alto garage and is famous for its printers",
+   "description": "American information technology company",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "Cadillac",
+   "qid": "Q27436",
+   "fame": 0.562,
+   "founded": 1902,
+   "hook": "is General Motors' luxury brand, maker of the Escalade",
+   "description": "division of General Motors",
+   "known": 0.8,
+   "kind": "car maker"
+  },
+  {
+   "label": "Puma",
+   "qid": "Q157064",
+   "fame": 0.562,
+   "founded": 1948,
+   "hook": "is a German sportswear brand with a leaping big cat logo",
+   "description": "German multinational corporation",
+   "known": 0.6,
+   "kind": "fashion"
+  },
+  {
+   "label": "Gucci",
+   "qid": "Q178516",
+   "fame": 0.559,
+   "founded": 1921,
+   "hook": "is an Italian fashion house with an interlocking double-G logo",
+   "description": "Italian luxury fashion house based in Florence, Italy",
+   "known": 0.8,
+   "kind": "fashion"
+  },
+  {
+   "label": "H&M",
+   "qid": "Q188326",
+   "fame": 0.559,
+   "founded": 1947,
+   "hook": "is a Swedish fast-fashion clothing chain",
+   "description": "Swedish multinational clothing-retail company",
+   "known": 0.8,
+   "kind": "food and shops"
+  },
+  {
+   "label": "LG Group",
+   "qid": "Q136778",
+   "fame": 0.559,
+   "founded": 1947,
+   "hook": "is a South Korean giant that makes OLED TVs and home appliances",
+   "description": "South Korean multinational conglomerate",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Tesco",
+   "qid": "Q487494",
+   "fame": 0.559,
+   "founded": 1919,
+   "hook": "is Britain's biggest supermarket chain",
+   "description": "British multinational retailer",
+   "known": 0.6,
+   "kind": "food and shops"
+  },
+  {
+   "label": "Rolex",
+   "qid": "Q62288",
+   "fame": 0.558,
+   "founded": 1905,
+   "hook": "is a Swiss watchmaker famous for the Submariner and a crown logo",
+   "description": "Swiss luxury watch designer and manufacturer",
+   "known": 0.8,
+   "kind": "fashion"
+  },
+  {
+   "label": "Virgin Atlantic",
+   "qid": "Q32277",
+   "fame": 0.558,
+   "founded": 1984,
+   "hook": "is Richard Branson's long-haul airline",
+   "description": "British airline",
+   "known": 0.6,
+   "kind": "money and travel"
+  },
+  {
+   "label": "Jeep",
+   "qid": "Q30113",
+   "fame": 0.557,
+   "founded": 1941,
+   "hook": "is famous for rugged off-roaders like the Wrangler",
+   "description": "US automotive company",
+   "known": 0.8,
+   "kind": "car maker"
+  },
+  {
+   "label": "DHL",
+   "qid": "Q489815",
+   "fame": 0.552,
+   "founded": 1969,
+   "hook": "is a yellow-and-red parcel delivery giant",
+   "description": "German logistics company and division of Deutsche Post",
+   "known": 0.6,
+   "kind": "money and travel"
+  },
+  {
+   "label": "Pizza Hut",
+   "qid": "Q191615",
+   "fame": 0.551,
+   "founded": 1958,
+   "hook": "is a restaurant chain known for its red-roof buildings and stuffed-crust pies",
+   "description": "American restaurant chain and international franchise",
+   "known": 0.8,
+   "kind": "food and shops"
+  },
+  {
+   "label": "Cisco",
+   "qid": "Q173395",
+   "fame": 0.549,
+   "founded": 1984,
+   "hook": "makes the routers and switches that run much of the internet",
+   "description": "American multinational technology company",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Alfa Romeo",
+   "qid": "Q26921",
+   "fame": 0.548,
+   "founded": 1910,
+   "hook": "is an Italian carmaker whose badge shows a serpent and a red cross",
+   "description": "Italian automotive manufacturer",
+   "known": 0.6,
+   "kind": "car maker"
+  },
+  {
+   "label": "Opel",
+   "qid": "Q40966",
+   "fame": 0.548,
+   "founded": 1862,
+   "hook": "is a German carmaker behind the Corsa and the Astra",
+   "description": "German automobile manufacturer, subsidiary of Stellantis",
+   "known": 0.6,
+   "kind": "car maker"
+  },
+  {
+   "label": "Bentley",
+   "qid": "Q27224",
+   "fame": 0.547,
+   "founded": 1919,
+   "hook": "is a British luxury carmaker with a winged B badge",
+   "description": "British automotive brand manufacturer",
+   "known": 0.8,
+   "kind": "car maker"
+  },
+  {
+   "label": "Adobe",
+   "qid": "Q11463",
+   "fame": 0.545,
+   "founded": 1982,
+   "hook": "makes Photoshop and created the PDF format",
+   "description": "American multinational computer software company",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "Barclays",
+   "qid": "Q245343",
+   "fame": 0.545,
+   "founded": 1690,
+   "hook": "is a British bank with a blue eagle logo",
+   "description": "British bank",
+   "known": 0.6,
+   "kind": "money and travel"
+  },
+  {
+   "label": "Maserati",
+   "qid": "Q35962",
+   "fame": 0.544,
+   "founded": 1914,
+   "hook": "is an Italian luxury carmaker with a trident badge",
+   "description": "Italian luxury car manufacturer",
+   "known": 0.6,
+   "kind": "car maker"
+  },
+  {
+   "label": "Suzuki Motor Corporation",
+   "qid": "Q181642",
+   "fame": 0.544,
+   "founded": 1909,
+   "hook": "makes small cars like the Swift and the Hayabusa motorcycle",
+   "description": "Japanese multinational automotive corporation",
+   "known": 0.6,
+   "kind": "car maker"
+  },
+  {
+   "label": "Harley-Davidson",
+   "qid": "Q192814",
+   "fame": 0.541,
+   "founded": 1903,
+   "hook": "makes big American motorcycles with a rumbling V-twin sound",
+   "description": "American motorcycle manufacturer",
+   "known": 0.95,
+   "kind": "car maker"
+  },
+  {
+   "label": "Dell",
+   "qid": "Q30873",
+   "fame": 0.538,
+   "founded": 1984,
+   "hook": "sells PCs and laptops, and was first run from a college dorm room",
+   "description": "American multinational computer technology corporation",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "Caterpillar Inc.",
+   "qid": "Q459965",
+   "fame": 0.537,
+   "founded": 1925,
+   "hook": "makes yellow bulldozers and diggers",
+   "description": "American corporation which designs, manufactures, markets and sells machinery and engines",
+   "known": 0.6,
+   "kind": "industry"
+  },
+  {
+   "label": "Dunkin'",
+   "qid": "Q847743",
+   "fame": 0.537,
+   "founded": 1950,
+   "hook": "is a coffee and doughnut chain from Massachusetts",
+   "description": "American global donut company and coffeehouse",
+   "known": 0.8,
+   "kind": "food and shops"
+  },
+  {
+   "label": "Johnson & Johnson",
+   "qid": "Q333718",
+   "fame": 0.537,
+   "founded": 1886,
+   "hook": "makes Band-Aid plasters and baby shampoo",
+   "description": "U.S multinational medical devices, pharmaceutical and consumer packaged goods manufacturer",
+   "known": 0.6,
+   "kind": "food and shops"
+  },
+  {
+   "label": "Citroën",
+   "qid": "Q6746",
+   "fame": 0.536,
+   "founded": 1919,
+   "hook": "is a French carmaker with a double-chevron badge that made the 2CV",
+   "description": "French automotive manufacturer",
+   "known": 0.6,
+   "kind": "car maker"
+  },
+  {
+   "label": "Mitsubishi Motors",
+   "qid": "Q36033",
+   "fame": 0.535,
+   "founded": 1970,
+   "hook": "makes the Outlander and the Lancer Evolution",
+   "description": "Japanese automotive manufacturer",
+   "known": 0.6,
+   "kind": "car maker"
+  },
+  {
+   "label": "Subway",
+   "qid": "Q244457",
+   "fame": 0.535,
+   "founded": 1965,
+   "hook": "is a sandwich chain famous for footlong subs",
+   "description": "American sandwich restaurant chain",
+   "known": 0.8,
+   "kind": "food and shops"
+  },
+  {
+   "label": "Fiat",
+   "qid": "Q27597",
+   "fame": 0.533,
+   "founded": 1899,
+   "hook": "is an Italian carmaker famous for the tiny 500",
+   "description": "Italian automotive company",
+   "known": 0.8,
+   "kind": "car maker"
+  },
+  {
+   "label": "Warner Bros. Entertainment",
+   "qid": "Q126399",
+   "fame": 0.532,
+   "founded": 1923,
+   "hook": "is the Hollywood studio behind Looney Tunes and the Harry Potter films",
+   "description": "American entertainment company",
+   "known": 0.8,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Christian Dior",
+   "qid": "Q542767",
+   "fame": 0.53,
+   "founded": 1946,
+   "hook": "is a Paris fashion house famous for its New Look and J'adore perfume",
+   "description": "French multinational luxury fashion house",
+   "known": 0.6,
+   "kind": "fashion"
+  },
+  {
+   "label": "Hermès",
+   "qid": "Q843887",
+   "fame": 0.526,
+   "founded": 1837,
+   "hook": "is a French luxury house famous for the Birkin bag and silk scarves",
+   "description": "French luxury goods manufacturer",
+   "known": 0.6,
+   "kind": "fashion"
+  },
+  {
+   "label": "Hitachi",
+   "qid": "Q53238",
+   "fame": 0.526,
+   "founded": 1910,
+   "hook": "is a Japanese giant that builds bullet trains and power plants",
+   "description": "Japanese multinational engineering and electronics company",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Bayer",
+   "qid": "Q152051",
+   "fame": 0.525,
+   "founded": 1863,
+   "hook": "is a German drug maker famous for aspirin",
+   "description": "German multinational pharmaceutical, chemical, and agricultural biotechnology company",
+   "known": 0.6,
+   "kind": "industry"
+  },
+  {
+   "label": "Michelin",
+   "qid": "Q151107",
+   "fame": 0.525,
+   "founded": 1889,
+   "hook": "is a French tyre maker with a mascot made of tyres, and hands out stars to restaurants",
+   "description": "French multinational tyre manufacturing company",
+   "known": 0.6,
+   "kind": "industry"
+  },
+  {
+   "label": "Texas Instruments",
+   "qid": "Q193412",
+   "fame": 0.525,
+   "founded": 1930,
+   "hook": "makes the graphing calculators used in maths classrooms",
+   "description": "American multinational semiconductor design and manufacturing company",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Visa Inc.",
+   "qid": "Q328840",
+   "fame": 0.524,
+   "founded": 1958,
+   "hook": "runs one of the world's biggest card payment networks",
+   "description": "American multinational financial services corporation",
+   "known": 0.8,
+   "kind": "money and travel"
+  },
+  {
+   "label": "ASUS",
+   "qid": "Q152864",
+   "fame": 0.517,
+   "founded": 1989,
+   "hook": "is a Taiwanese maker of laptops, motherboards and ROG gaming gear",
+   "description": "Taiwanese computers and electronics company",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Atari",
+   "qid": "Q207922",
+   "fame": 0.517,
+   "founded": 1972,
+   "hook": "made Pong and one of the first home game consoles",
+   "description": "brand name owned by Atari Interactive",
+   "known": 0.8,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Domino's Pizza",
+   "qid": "Q839466",
+   "fame": 0.516,
+   "founded": 1960,
+   "hook": "is a delivery chain with a red-and-blue tile logo, known for fast home delivery",
+   "description": "American pizza restaurant chain",
+   "known": 0.8,
+   "kind": "food and shops"
+  },
+  {
+   "label": "Vespa",
+   "qid": "Q217673",
+   "fame": 0.515,
+   "founded": 1946,
+   "hook": "makes the classic Italian motor scooter",
+   "description": "Italian scooter",
+   "known": 0.6,
+   "kind": "car maker"
+  },
+  {
+   "label": "Mastercard",
+   "qid": "Q489921",
+   "fame": 0.512,
+   "founded": 1966,
+   "hook": "has a logo of two overlapping red and yellow circles",
+   "description": "American multinational financial services corporation",
+   "known": 0.8,
+   "kind": "money and travel"
+  },
+  {
+   "label": "Levi Strauss & Co.",
+   "qid": "Q127962",
+   "fame": 0.509,
+   "founded": 1853,
+   "hook": "made the first blue jeans with copper rivets",
+   "description": "privately held American clothing company",
+   "known": 0.8,
+   "kind": "fashion"
+  },
+  {
+   "label": "Pfizer",
+   "qid": "Q206921",
+   "fame": 0.508,
+   "founded": 1849,
+   "hook": "is a US drug maker that co-developed one of the first coronavirus vaccines",
+   "description": "American multinational pharmaceutical and biotechnology corporation",
+   "known": 0.6,
+   "kind": "industry"
+  },
+  {
+   "label": "Yamaha Motor Company",
+   "qid": "Q158888",
+   "fame": 0.508,
+   "founded": 1955,
+   "hook": "makes motorcycles, jet skis and outboard boat engines",
+   "description": "Japanese motorcycle manufacturer",
+   "known": 0.6,
+   "kind": "car maker"
+  },
+  {
+   "label": "Deutsche Bank",
+   "qid": "Q66048",
+   "fame": 0.506,
+   "founded": 1870,
+   "hook": "is Germany's biggest lender, with twin glass towers in Frankfurt",
+   "description": "German global banking and financial services company",
+   "known": 0.6,
+   "kind": "money and travel"
+  },
+  {
+   "label": "Prada",
+   "qid": "Q193136",
+   "fame": 0.502,
+   "founded": 1913,
+   "hook": "is a Milan fashion house known for nylon bags and a triangle logo",
+   "description": "Italian luxury fashion house",
+   "known": 0.6,
+   "kind": "fashion"
+  },
+  {
+   "label": "The Lego Group",
+   "qid": "Q1063455",
+   "fame": 0.5,
+   "founded": 1932,
+   "hook": "makes the plastic building bricks that snap together",
+   "description": "Danish toy manufacturer best known for interlocking-brick construction toys",
+   "known": 0.95,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Xerox",
+   "qid": "Q152433",
+   "fame": 0.5,
+   "founded": 1906,
+   "hook": "made photocopying so common that its name became a verb",
+   "description": "American document management corporation",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "Acer",
+   "qid": "Q481778",
+   "fame": 0.489,
+   "founded": 1976,
+   "hook": "is a Taiwanese maker of laptops and Predator gaming PCs",
+   "description": "Taiwanese multinational hardware and electronics corporation",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Toshiba",
+   "qid": "Q49125",
+   "fame": 0.489,
+   "founded": 1875,
+   "hook": "is a Japanese electronics firm that made one of the first mass-market laptops",
+   "description": "Japanese multinational conglomerate corporation",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Baskin-Robbins",
+   "qid": "Q584601",
+   "fame": 0.488,
+   "founded": 1945,
+   "hook": "is an ice cream chain famous for its 31 flavours",
+   "description": "American multinational ice cream parlor chain",
+   "known": 0.8,
+   "kind": "food and shops"
+  },
+  {
+   "label": "Ericsson",
+   "qid": "Q52618",
+   "fame": 0.481,
+   "founded": 1876,
+   "hook": "is a Swedish maker of mobile network equipment",
+   "description": "Swedish provider of communications technology and services",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Bridgestone",
+   "qid": "Q179433",
+   "fame": 0.476,
+   "founded": 1931,
+   "hook": "is a Japanese tyre maker whose name is its founder's surname translated into English",
+   "description": "Japanese multinational manufacturer",
+   "known": 0.6,
+   "kind": "industry"
+  },
+  {
+   "label": "Burberry",
+   "qid": "Q390107",
+   "fame": 0.471,
+   "founded": 1856,
+   "hook": "is a British fashion house famous for trench coats and its check pattern",
+   "description": "English fashion company",
+   "known": 0.8,
+   "kind": "fashion"
+  },
+  {
+   "label": "Canon Inc.",
+   "qid": "Q62621",
+   "fame": 0.468,
+   "founded": 1937,
+   "hook": "makes EOS cameras and office printers",
+   "description": "Japanese multinational imaging corporation",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "Pirelli",
+   "qid": "Q207770",
+   "fame": 0.453,
+   "founded": 1872,
+   "hook": "is an Italian tyre maker that supplies every Formula One team",
+   "description": "Italian multinational tyre manufacturer based in the city of Milan",
+   "known": 0.6,
+   "kind": "industry"
+  }
+ ]
+}

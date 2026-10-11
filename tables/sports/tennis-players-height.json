@@ -1,0 +1,349 @@
+{
+ "id": "table.sports.tennis-players-height",
+ "kind": "table",
+ "title": "Tennis players and their height",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "tennis",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?height WHERE { ?item wdt:P106 wd:Q10833314; wdt:P31 wd:Q5; wdt:P2048 ?h0 . ?item p:P2048/psn:P2048/wikibase:quantityAmount ?height . ?item wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 40) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T04:24:31.422Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T04:24:31.422Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "height_m",
+   "label": "Height",
+   "unit": "m",
+   "type": "number",
+   "scale": "height-m"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "tennis player",
+  "many": "tennis players",
+  "wildcard": "person",
+  "hookAsk": "Which tennis player {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "height_m": {
+    "role": "measure",
+    "compare": "Which tennis player is taller",
+    "display": "m"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Elena Rybakina",
+   "qid": "Q42055714",
+   "fame": 0.929,
+   "height_m": 1.84,
+   "description": "Kazakhstani tennis player",
+   "hook": "won the Wimbledon singles title with a booming serve",
+   "known": 0.6,
+   "kind": "women"
+  },
+  {
+   "label": "Alexander Zverev",
+   "qid": "Q13990552",
+   "fame": 0.916,
+   "height_m": 1.98,
+   "description": "German tennis player (born 1997)",
+   "hook": "won Olympic gold in the men's singles in Tokyo",
+   "known": 0.6,
+   "kind": "men"
+  },
+  {
+   "label": "Aryna Sabalenka",
+   "qid": "Q23448791",
+   "fame": 0.897,
+   "height_m": 1.82,
+   "description": "Belarusian tennis player",
+   "hook": "rose to world number one and won hard-court majors in Melbourne and New York",
+   "known": 0.6,
+   "kind": "women"
+  },
+  {
+   "label": "Coco Gauff",
+   "qid": "Q39263365",
+   "fame": 0.827,
+   "height_m": 1.75,
+   "description": "US American tennis player (born 2004)",
+   "hook": "burst onto the scene as a teenager and went on to win a major in New York",
+   "known": 0.6,
+   "kind": "women"
+  },
+  {
+   "label": "Carlos Alcaraz",
+   "qid": "Q85518537",
+   "fame": 0.818,
+   "height_m": 1.83,
+   "description": "Spanish tennis player (born 2003)",
+   "hook": "became the youngest man ever ranked world number one",
+   "known": 0.6,
+   "kind": "men"
+  },
+  {
+   "label": "Novak Djokovic",
+   "qid": "Q5812",
+   "fame": 0.789,
+   "height_m": 1.88,
+   "description": "Serbian tennis player (born 1987)",
+   "hook": "holds the men's record for most Grand Slam singles titles",
+   "known": 0.95,
+   "kind": "men"
+  },
+  {
+   "label": "Naomi Osaka",
+   "qid": "Q17466583",
+   "fame": 0.773,
+   "height_m": 1.8,
+   "description": "Japanese tennis player (born 1997)",
+   "hook": "won majors in New York and Melbourne and lit the cauldron at the Tokyo Olympics",
+   "known": 0.8,
+   "kind": "women"
+  },
+  {
+   "label": "Roger Federer",
+   "qid": "Q1426",
+   "fame": 0.771,
+   "height_m": 1.85,
+   "description": "Swiss tennis player (born 1981)",
+   "hook": "won a record eight men's singles titles at Wimbledon",
+   "known": 0.95,
+   "kind": "men"
+  },
+  {
+   "label": "Jannik Sinner",
+   "qid": "Q54812588",
+   "fame": 0.768,
+   "height_m": 1.91,
+   "description": "Italian tennis player (born 2001)",
+   "hook": "rose to world number one and won the Australian Open",
+   "known": 0.6,
+   "kind": "men"
+  },
+  {
+   "label": "Serena Williams",
+   "qid": "Q11459",
+   "fame": 0.759,
+   "height_m": 1.78,
+   "description": "American tennis player (born 1981)",
+   "hook": "won 23 Grand Slam singles titles, the most of any player in the Open Era",
+   "known": 0.95,
+   "kind": "women"
+  },
+  {
+   "label": "Iga Świątek",
+   "qid": "Q26840238",
+   "fame": 0.731,
+   "height_m": 1.76,
+   "description": "Polish tennis player (born 2001)",
+   "hook": "dominates on clay, winning the Roland Garros title several times",
+   "known": 0.4,
+   "kind": "women"
+  },
+  {
+   "label": "Gaël Monfils",
+   "qid": "Q186429",
+   "fame": 0.698,
+   "height_m": 1.93,
+   "description": "French tennis player (born 1986)",
+   "hook": "is loved for acrobatic, showman-style defending and spectacular shots",
+   "known": 0.4,
+   "kind": "men"
+  },
+  {
+   "label": "Caroline Wozniacki",
+   "qid": "Q30767",
+   "fame": 0.682,
+   "height_m": 1.77,
+   "description": "Danish tennis player",
+   "hook": "reached world number one and later returned from retirement to play again",
+   "known": 0.6,
+   "kind": "women"
+  },
+  {
+   "label": "Martina Navratilova",
+   "qid": "Q54545",
+   "fame": 0.674,
+   "height_m": 1.73,
+   "description": "Czech-American tennis player",
+   "hook": "won a record nine Wimbledon singles titles",
+   "known": 0.8,
+   "kind": "women"
+  },
+  {
+   "label": "Elina Svitolina",
+   "qid": "Q270249",
+   "fame": 0.668,
+   "height_m": 1.74,
+   "description": "Ukrainian tennis player (born 1994)",
+   "hook": "reached Wimbledon semifinals and won an Olympic bronze medal",
+   "known": 0.4,
+   "kind": "women"
+  },
+  {
+   "label": "Billie Jean King",
+   "qid": "Q54527",
+   "fame": 0.664,
+   "height_m": 1.64,
+   "description": "American tennis player (born 1943)",
+   "hook": "won the famous Battle of the Sexes match and fought for equal prize money",
+   "known": 0.8,
+   "kind": "women"
+  },
+  {
+   "label": "Chris Evert",
+   "qid": "Q14286",
+   "fame": 0.65,
+   "height_m": 1.68,
+   "description": "American former tennis player (born 1954)",
+   "hook": "won the Roland Garros title a record seven times",
+   "known": 0.8,
+   "kind": "women"
+  },
+  {
+   "label": "Jennifer Capriati",
+   "qid": "Q11680",
+   "fame": 0.634,
+   "height_m": 1.7,
+   "description": "American tennis player",
+   "hook": "turned professional at thirteen and later won the Australian Open",
+   "known": 0.6,
+   "kind": "women"
+  },
+  {
+   "label": "Yannick Noah",
+   "qid": "Q221908",
+   "fame": 0.615,
+   "height_m": 1.94,
+   "description": "French tennis player and pop singer",
+   "hook": "won a major at Roland Garros in Paris and later became a pop singer",
+   "known": 0.6,
+   "kind": "men"
+  },
+  {
+   "label": "Boris Becker",
+   "qid": "Q76334",
+   "fame": 0.593,
+   "height_m": 1.9,
+   "description": "German tennis player, coach, and commentator (born 1967)",
+   "hook": "won Wimbledon at seventeen as an unseeded youngster",
+   "known": 0.8,
+   "kind": "men"
+  },
+  {
+   "label": "Ashleigh Barty",
+   "qid": "Q84056",
+   "fame": 0.583,
+   "height_m": 1.66,
+   "description": "Australian tennis player",
+   "hook": "retired while world number one after winning Wimbledon, and also played pro cricket",
+   "known": 0.8,
+   "kind": "women"
+  },
+  {
+   "label": "Ons Jabeur",
+   "qid": "Q290212",
+   "fame": 0.564,
+   "height_m": 1.67,
+   "description": "Tunisian tennis player",
+   "hook": "was the first Arab woman to reach a Grand Slam singles final",
+   "known": 0.4,
+   "kind": "women"
+  },
+  {
+   "label": "Li Na",
+   "qid": "Q180446",
+   "fame": 0.56,
+   "height_m": 1.72,
+   "description": "Chinese tennis player",
+   "hook": "became the first Asian player to win a Grand Slam singles title",
+   "known": 0.4,
+   "kind": "women"
+  },
+  {
+   "label": "John Isner",
+   "qid": "Q53566",
+   "fame": 0.559,
+   "height_m": 2.08,
+   "description": "American tennis player (born 1985)",
+   "hook": "won the longest match in tennis history, over eleven hours at Wimbledon",
+   "known": 0.6,
+   "kind": "men"
+  },
+  {
+   "label": "Lindsay Davenport",
+   "qid": "Q11677",
+   "fame": 0.547,
+   "height_m": 1.89,
+   "description": "American tennis player",
+   "hook": "won Olympic gold in Atlanta and reached world number one",
+   "known": 0.6,
+   "kind": "women"
+  },
+  {
+   "label": "Milos Raonic",
+   "qid": "Q312343",
+   "fame": 0.537,
+   "height_m": 1.96,
+   "description": "Canadian tennis player (born 1990)",
+   "hook": "reached the Wimbledon final thanks to a huge serve",
+   "known": 0.6,
+   "kind": "men"
+  },
+  {
+   "label": "Karolína Plíšková",
+   "qid": "Q289365",
+   "fame": 0.525,
+   "height_m": 1.86,
+   "description": "Czech female tennis player",
+   "hook": "is known for a huge serve and a stint at world number one",
+   "known": 0.4,
+   "kind": "women"
+  },
+  {
+   "label": "Arantxa Sánchez Vicario",
+   "qid": "Q188080",
+   "fame": 0.475,
+   "height_m": 1.69,
+   "description": "Spanish tennis player",
+   "hook": "won the Roland Garros title three times and collected Olympic medals",
+   "known": 0.6,
+   "kind": "women"
+  },
+  {
+   "label": "Tracy Austin",
+   "qid": "Q53326",
+   "fame": 0.469,
+   "height_m": 1.65,
+   "description": "US tennis player",
+   "hook": "became the youngest woman to win the title at Flushing Meadows, at sixteen",
+   "known": 0.4,
+   "kind": "women"
+  }
+ ]
+}

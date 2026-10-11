@@ -1,0 +1,258 @@
+{
+ "id": "table.art.tallest-buildings",
+ "kind": "table",
+ "title": "Tallest buildings",
+ "genre": "arts-entertainment",
+ "category": "art",
+ "topic": "landmarks",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?height ?countryLabel ?opened WHERE { { SELECT ?item (MAX(?h) AS ?height) (SAMPLE(?c) AS ?country) (GROUP_CONCAT(DISTINCT CONCAT(COALESCE(STR(?opT), \"\"), \"|\", COALESCE(STR(?opP), \"\")); separator=\";\") AS ?op) (GROUP_CONCAT(DISTINCT CONCAT(COALESCE(STR(?stT), \"\"), \"|\", COALESCE(STR(?stP), \"\")); separator=\";\") AS ?st) WHERE { ?item wdt:P31/wdt:P279* wd:Q11303 ; p:P2048/psn:P2048/wikibase:quantityAmount ?h . FILTER(?h >= 300) OPTIONAL { ?item wdt:P17 ?c } OPTIONAL { ?item p:P1619 ?opSt . ?opSt a wikibase:BestRank ; psv:P1619 [ wikibase:timeValue ?opT ; wikibase:timePrecision ?opP ] . } OPTIONAL { ?item p:P580 ?stSt . ?stSt a wikibase:BestRank ; psv:P580 [ wikibase:timeValue ?stT ; wikibase:timePrecision ?stP ] . } } GROUP BY ?item } hint:Prior hint:runFirst true . BIND(IF(CONTAINS(?op, \"-\"), ?op, ?st) AS ?opened) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T01:55:57.883Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T01:55:57.883Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "height_m",
+   "label": "Height",
+   "unit": "m",
+   "type": "number",
+   "scale": "height-m"
+  },
+  {
+   "key": "opened",
+   "label": "Opened",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "city",
+   "label": "City",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "skyscraper",
+  "many": "skyscrapers",
+  "itemSub": "{city}",
+  "hookAsk": "Which skyscraper {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "theLabels": [
+   "Empire State Building",
+   "Burj Khalifa",
+   "Willis Tower",
+   "Petronas Towers",
+   "Shanghai Tower",
+   "Lakhta Centre",
+   "Abraj Al Bait",
+   "Lotte World Tower",
+   "Central Park Tower"
+  ],
+  "columns": {
+   "city": {
+    "role": "link",
+    "pick": "Which city is {label} in?",
+    "statement": "{label} stands in {value}.",
+    "match": "Match each skyscraper to its city.",
+    "odd": "Three of these skyscrapers are in {value}. Which one isn't?",
+    "all": "Tap all {n} skyscrapers in {value}."
+   },
+   "opened": {
+    "role": "date",
+    "sort": "from the first to open to the most recent",
+    "shot": "In what year did {label} in {city} open?"
+   },
+   "height_m": {
+    "role": "measure",
+    "compare": "Which is taller",
+    "display": "m"
+   }
+  },
+  "minFame": 0.55
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "One World Trade Center",
+   "qid": "Q11245",
+   "fame": 0.776,
+   "height_m": 546,
+   "opened": 2014,
+   "country": "United States",
+   "description": "main building of the rebuilt World Trade Center complex in Lower Manhattan, New York City",
+   "city": "New York",
+   "hook": "stands as the tallest skyscraper in the Western Hemisphere, capped by a tall spire",
+   "known": 0.8,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "Empire State Building",
+   "qid": "Q9188",
+   "fame": 0.693,
+   "height_m": 457,
+   "opened": 1931,
+   "country": "United States",
+   "description": "skyscraper located in Midtown Manhattan, New York City, USA",
+   "city": "New York",
+   "hook": "lights up its top in different colors to mark holidays and events",
+   "known": 0.95,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "Burj Khalifa",
+   "qid": "Q12495",
+   "fame": 0.686,
+   "height_m": 830,
+   "opened": 2010,
+   "country": "United Arab Emirates",
+   "description": "skyscraper in Dubai, United Arab Emirates",
+   "city": "Dubai",
+   "hook": "holds the record as the world's tallest building, with a dazzling New Year's fireworks show",
+   "known": 0.95,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "Willis Tower",
+   "qid": "Q29294",
+   "fame": 0.661,
+   "height_m": 442,
+   "opened": 1973,
+   "country": "United States",
+   "description": "skyscraper in Chicago, Illinois, USA",
+   "city": "Chicago",
+   "hook": "lets visitors stand on glass ledges high above the city on its Skydeck",
+   "known": 0.8,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "Petronas Towers",
+   "qid": "Q83063",
+   "fame": 0.624,
+   "height_m": 452,
+   "opened": 1999,
+   "country": "Malaysia",
+   "description": "twin skyscrapers in Kuala Lumpur, Malaysia",
+   "city": "Kuala Lumpur",
+   "hook": "connects two skyscrapers with a skybridge high above the ground",
+   "known": 0.6,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "3 World Trade Center",
+   "qid": "Q941908",
+   "fame": 0.577,
+   "height_m": 329,
+   "opened": 2018,
+   "country": "United States",
+   "description": "Skyscraper within New York City",
+   "city": "New York",
+   "hook": "was designed by an architect known for putting a building's bracing on display instead of hiding it inside",
+   "known": 0.2,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "The Shard",
+   "qid": "Q18536",
+   "fame": 0.547,
+   "height_m": 306,
+   "opened": 2012,
+   "country": "United Kingdom",
+   "description": "skyscraper in London, England",
+   "city": "London",
+   "hook": "rises to a sharp glass point like a giant splinter over the skyline",
+   "known": 0.4,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "Two International Finance Centre",
+   "qid": "Q14226100",
+   "fame": 0.535,
+   "height_m": 412,
+   "opened": 2003,
+   "country": "China",
+   "description": "skyscraper in Central, Hong Kong",
+   "city": "Hong Kong",
+   "hook": null,
+   "known": 0.2,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "270 Park Avenue",
+   "qid": "Q109648853",
+   "fame": 0.502,
+   "height_m": 423,
+   "opened": 2025,
+   "country": "United States",
+   "description": "skyscraper in New York",
+   "city": "New York",
+   "hook": null,
+   "known": 0.05,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "One Vanderbilt",
+   "qid": "Q18398409",
+   "fame": 0.487,
+   "height_m": 427,
+   "opened": 2020,
+   "country": "United States",
+   "description": "office skyscraper in Manhattan, New York",
+   "city": "New York",
+   "hook": null,
+   "known": 0.2,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "Lotte World Tower",
+   "qid": "Q494895",
+   "fame": 0.481,
+   "height_m": 556,
+   "opened": 2017,
+   "country": "South Korea",
+   "description": "Skyscraper in Seoul, South Korea",
+   "city": "Seoul",
+   "hook": "offers a glass floor observation deck overlooking an amusement park and river",
+   "known": 0.2,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "Landmark 81",
+   "qid": "Q18640924",
+   "fame": 0.452,
+   "height_m": 462,
+   "opened": 2018,
+   "country": "Vietnam",
+   "description": "skyscraper",
+   "city": "Ho Chi Minh City",
+   "hook": null,
+   "known": 0.05,
+   "kind": "skyscraper"
+  }
+ ]
+}

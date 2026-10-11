@@ -1,0 +1,177 @@
+{
+ "id": "table.toys.toy-inventors",
+ "kind": "table",
+ "title": "Toys and the people who invented them",
+ "genre": "games-sports",
+ "category": "toys",
+ "topic": "toy-lines",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?makerLabel WHERE { { SELECT ?item (SAMPLE(?m) AS ?maker) WHERE { VALUES ?item { wd:Q167447 wd:Q170484 wd:Q47043 wd:Q549344 wd:Q1370972 wd:Q131689 wd:Q207786 wd:Q932209 wd:Q844684 wd:Q170436 wd:Q188057 wd:Q2091541 wd:Q1140857 wd:Q5087973 wd:Q128424 wd:Q2095216 wd:Q869870 wd:Q696920 wd:Q2394642 wd:Q241538 } { ?item wdt:P61 ?m } UNION { ?item wdt:P170 ?m } UNION { ?item wdt:P287 ?m } ?m wdt:P31 wd:Q5 . } GROUP BY ?item HAVING(COUNT(DISTINCT ?m) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . ?maker rdfs:label ?makerLabel . FILTER(LANG(?makerLabel) IN (\"en\",\"mul\")) ?item rdfs:label ?itemLabel . FILTER(LANG(?itemLabel) IN (\"en\",\"mul\")) } ORDER BY DESC(?sitelinks) LIMIT 43",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T09:57:18.629Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T09:57:18.629Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "inventor",
+   "label": "Inventor",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "toy",
+  "many": "toys",
+  "columns": {
+   "inventor": {
+    "role": "code",
+    "pick": "Who invented {label}?",
+    "statement": "{label} was invented by {value}.",
+    "match": "Match each toy to its inventor.",
+    "reverse": "Which of these did {value} invent?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Kewpie doll",
+   "qid": "Q1140857",
+   "fame": 0.645,
+   "inventor": "Rose O'Neill",
+   "description": "brand of dolls and figurines",
+   "hook": "began as a cherubic comic-strip character that became a widely collected figurine",
+   "known": 0.2,
+   "kind": "toy"
+  },
+  {
+   "label": "LEGO",
+   "qid": "Q170484",
+   "fame": 0.614,
+   "inventor": "Ole Kirk Christiansen",
+   "description": "construction toy",
+   "hook": "gave generations of children interlocking plastic bricks that snap together to build almost anything",
+   "known": 0.95,
+   "kind": "toy"
+  },
+  {
+   "label": "Scrabble",
+   "qid": "Q170436",
+   "fame": 0.601,
+   "inventor": "Alfred Mosher Butts",
+   "description": "board game with words",
+   "hook": "challenges players to form words on a grid using lettered tiles worth different point values",
+   "known": 0.8,
+   "kind": "toy"
+  },
+  {
+   "label": "Barbie",
+   "qid": "Q167447",
+   "fame": 0.581,
+   "inventor": "Ruth Handler",
+   "description": "fashion doll brand and media franchise",
+   "hook": "became the best-known fashion doll in the world, sparking endless outfits, careers, and dream houses",
+   "known": 0.95,
+   "kind": "toy"
+  },
+  {
+   "label": "Rubik's Cube",
+   "qid": "Q47043",
+   "fame": 0.571,
+   "inventor": "Ernő Rubik",
+   "description": "3-D combination puzzle with many different permutations",
+   "hook": "is a twisting puzzle with colored squares that must be lined up to match on every side",
+   "known": 0.95,
+   "kind": "toy"
+  },
+  {
+   "label": "Tamagotchi",
+   "qid": "Q207786",
+   "fame": 0.555,
+   "inventor": "Aki Maita",
+   "description": "handheld digital pet",
+   "hook": "was a pocket-sized digital pet that had to be fed and cared for or it would virtually die",
+   "known": 0.6,
+   "kind": "toy"
+  },
+  {
+   "label": "Yahtzee",
+   "qid": "Q696920",
+   "fame": 0.503,
+   "inventor": "Edwin S. Lowe",
+   "description": "dice game by Milton Bradley",
+   "hook": "challenges players to roll five dice into matching combinations for points",
+   "known": 0.4,
+   "kind": "toy"
+  },
+  {
+   "label": "Beanie Baby",
+   "qid": "Q128424",
+   "fame": 0.5,
+   "inventor": "Ty Warner",
+   "description": "American brand of stuffed toys",
+   "hook": "turned small stuffed animals into a collecting craze built on hard-to-find limited editions",
+   "known": 0.6,
+   "kind": "toy"
+  },
+  {
+   "label": "Raggedy Ann",
+   "qid": "Q2095216",
+   "fame": 0.468,
+   "inventor": "Johnny Gruelle",
+   "description": "fictional character",
+   "hook": "is a floppy, red-haired rag doll from a series of classic children's books",
+   "known": 0.4,
+   "kind": "toy"
+  },
+  {
+   "label": "Bratz",
+   "qid": "Q844684",
+   "fame": 0.452,
+   "inventor": "Carter Bryant",
+   "description": "American production line of fashion dolls and merchandise",
+   "hook": "brought a line of stylish, big-eyed fashion dolls with an edgier look than traditional dolls",
+   "known": 0.6,
+   "kind": "toy"
+  },
+  {
+   "label": "Furby",
+   "qid": "Q932209",
+   "fame": 0.45,
+   "inventor": "Caleb Chung",
+   "description": "electronic robotic toy",
+   "hook": "was a furry robotic toy that seemed to learn words and react to how it was treated",
+   "known": 0.4,
+   "kind": "toy"
+  },
+  {
+   "label": "Jenga",
+   "qid": "Q869870",
+   "fame": 0.45,
+   "inventor": "Leslie Scott",
+   "description": "game played with tower of blocks",
+   "hook": "is a stacking game where players pull wooden blocks from a tower without making it fall",
+   "known": 0.4,
+   "kind": "toy"
+  }
+ ]
+}

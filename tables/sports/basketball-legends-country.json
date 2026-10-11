@@ -1,0 +1,1292 @@
+{
+ "id": "table.sports.basketball-legends-country",
+ "kind": "table",
+ "title": "Famous basketball players and the country they represent",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "basketball",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nCountry) WHERE { ?item wdt:P106 wd:Q3665646 ; wdt:P1532 ?c ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 10) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 500 } hint:Prior hint:runFirst true . FILTER(?nCountry = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 186",
+  "attribution": null,
+  "fetchedAt": "2026-10-01T04:08:16.956Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-01T04:08:16.956Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "basketball player",
+  "many": "basketball players",
+  "wildcard": "person",
+  "hookAsk": "Which basketball player {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country does basketball player {label} represent?",
+    "statement": "{label} represents {value} in basketball.",
+    "match": "Match each basketball player to the country they represent.",
+    "odd": "Three of these basketball players represent {value}. Which one doesn't?",
+    "all": "Tap all {n} basketball players who represent {value}.",
+    "reverse": "Which of these basketball players represents {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "LeBron James",
+   "qid": "Q36159",
+   "fame": 0.768,
+   "country": "United States",
+   "description": "American basketball player (born 1984)",
+   "hook": "won titles with three different franchises and is the NBA's all-time leading scorer",
+   "known": 0.95,
+   "kind": "forward"
+  },
+  {
+   "label": "Michael Jordan",
+   "qid": "Q41421",
+   "fame": 0.76,
+   "country": "United States",
+   "description": "American basketball player and businessman (born 1963)",
+   "hook": "led the Chicago Bulls to six championships and starred in a hit movie with Bugs Bunny",
+   "known": 0.95,
+   "kind": "guard"
+  },
+  {
+   "label": "Shaquille O'Neal",
+   "qid": "Q169452",
+   "fame": 0.745,
+   "country": "United States",
+   "description": "American basketball player (born 1972)",
+   "hook": "was a dominant seven-foot-one center who won three straight titles with the Lakers",
+   "known": 0.85,
+   "kind": "center"
+  },
+  {
+   "label": "Dennis Rodman",
+   "qid": "Q201608",
+   "fame": 0.741,
+   "country": "United States",
+   "description": "American basketball player (born 1961)",
+   "hook": "was a rebounding champion known for dyed hair, tattoos and a wild off-court life",
+   "known": 0.7,
+   "kind": "forward"
+  },
+  {
+   "label": "Kobe Bryant",
+   "qid": "Q25369",
+   "fame": 0.722,
+   "country": "United States",
+   "description": "American basketball player (1978–2020)",
+   "hook": "spent his whole career with the Lakers and was nicknamed the Black Mamba",
+   "known": 0.9,
+   "kind": "guard"
+  },
+  {
+   "label": "Jalen Brunson",
+   "qid": "Q17305725",
+   "fame": 0.717,
+   "country": "United States",
+   "description": "American basketball player (born 1996)",
+   "hook": "became the star point guard of the New York Knicks after leaving the Dallas Mavericks",
+   "known": 0.3,
+   "kind": "guard"
+  },
+  {
+   "label": "Stephen Curry",
+   "qid": "Q352159",
+   "fame": 0.698,
+   "country": "United States",
+   "description": "American basketball player (born 1988)",
+   "hook": "is the Golden State Warriors guard who revolutionized the game with record three-point shooting",
+   "known": 0.85,
+   "kind": "guard"
+  },
+  {
+   "label": "Magic Johnson",
+   "qid": "Q134183",
+   "fame": 0.669,
+   "country": "United States",
+   "description": "American basketball player and entrepreneur (born 1959)",
+   "hook": "was a flashy 6-foot-9 point guard who led the Showtime Lakers and later announced he had HIV",
+   "known": 0.8,
+   "kind": "guard"
+  },
+  {
+   "label": "Kevin Durant",
+   "qid": "Q29545",
+   "fame": 0.662,
+   "country": "United States",
+   "description": "American basketball player (born 1988)",
+   "hook": "is a tall scoring forward who won titles with the Warriors after leaving Oklahoma City",
+   "known": 0.75,
+   "kind": "forward"
+  },
+  {
+   "label": "Kareem Abdul-Jabbar",
+   "qid": "Q179051",
+   "fame": 0.657,
+   "country": "United States",
+   "description": "American basketball player (born 1947)",
+   "hook": "scored more points than anyone in NBA history for decades with his signature skyhook",
+   "known": 0.85,
+   "kind": "center"
+  },
+  {
+   "label": "Marc Blucas",
+   "qid": "Q382295",
+   "fame": 0.656,
+   "country": "United States",
+   "description": "American actor",
+   "hook": "played a soldier boyfriend of a vampire slayer on a cult TV show after a college basketball career",
+   "known": 0.05,
+   "kind": "actor"
+  },
+  {
+   "label": "Allen Iverson",
+   "qid": "Q190094",
+   "fame": 0.649,
+   "country": "United States",
+   "description": "American basketball player (born 1975)",
+   "hook": "was a tiny, tattooed Philadelphia 76ers guard famous for his crossover and a 'practice' rant",
+   "known": 0.6,
+   "kind": "guard"
+  },
+  {
+   "label": "Giannis Antetokounmpo",
+   "qid": "Q8991894",
+   "fame": 0.646,
+   "country": "Greece",
+   "description": "Nigerian-Greek basketball player (born 1994)",
+   "hook": "is the Milwaukee Bucks star nicknamed the Greek Freak, a two-time MVP",
+   "known": 0.6,
+   "kind": "forward"
+  },
+  {
+   "label": "Larry Bird",
+   "qid": "Q190152",
+   "fame": 0.644,
+   "country": "United States",
+   "description": "American basketball player and coach (born 1956)",
+   "hook": "was a sharpshooting Boston Celtics forward from Indiana who won three straight MVP awards",
+   "known": 0.8,
+   "kind": "forward"
+  },
+  {
+   "label": "Victor Wembanyama",
+   "qid": "Q72941595",
+   "fame": 0.638,
+   "country": "France",
+   "description": "French basketball player (born 2004)",
+   "hook": "is a seven-foot-four San Antonio Spurs phenom with guard skills and a huge wingspan",
+   "known": 0.2,
+   "kind": "forward"
+  },
+  {
+   "label": "Kyrie Irving",
+   "qid": "Q348618",
+   "fame": 0.628,
+   "country": "United States",
+   "description": "American basketball player (born 1992)",
+   "hook": "is a ball-handling wizard who hit the title-winning shot for Cleveland against Golden State",
+   "known": 0.5,
+   "kind": "guard"
+  },
+  {
+   "label": "Yao Ming",
+   "qid": "Q58590",
+   "fame": 0.624,
+   "country": "China",
+   "description": "Chinese basketball player (born 1980)",
+   "hook": "was a towering 7-foot-6 center for the Houston Rockets who became a global ambassador for the sport",
+   "known": 0.6,
+   "kind": "center"
+  },
+  {
+   "label": "Charles Barkley",
+   "qid": "Q192707",
+   "fame": 0.622,
+   "country": "United States",
+   "description": "American basketball player (born 1963)",
+   "hook": "was a short, powerful forward nicknamed the Round Mound of Rebound, now a TV analyst",
+   "known": 0.65,
+   "kind": "forward"
+  },
+  {
+   "label": "Karl Malone",
+   "qid": "Q199896",
+   "fame": 0.621,
+   "country": "United States",
+   "description": "American basketball player (born 1963)",
+   "hook": "was a bruising Utah Jazz forward nicknamed the Mailman, who teamed up with John Stockton",
+   "known": 0.6,
+   "kind": "forward"
+  },
+  {
+   "label": "Dwyane Wade",
+   "qid": "Q31683",
+   "fame": 0.612,
+   "country": "United States",
+   "description": "American basketball player (born 1982)",
+   "hook": "was a Miami Heat guard who won a title and teamed up with LeBron and Bosh",
+   "known": 0.65,
+   "kind": "guard"
+  },
+  {
+   "label": "Lamar Odom",
+   "qid": "Q296403",
+   "fame": 0.61,
+   "country": "United States",
+   "description": "American basketball player (born 1979)",
+   "hook": "was a versatile Lakers forward who became famous for his marriage to a reality-TV star",
+   "known": 0.45,
+   "kind": "forward"
+  },
+  {
+   "label": "Russell Westbrook",
+   "qid": "Q196185",
+   "fame": 0.61,
+   "country": "United States",
+   "description": "American basketball player (born 1988)",
+   "hook": "is a hyper-athletic guard who averaged a triple-double for a whole season with Oklahoma City",
+   "known": 0.5,
+   "kind": "guard"
+  },
+  {
+   "label": "Shai Gilgeous-Alexander",
+   "qid": "Q32860369",
+   "fame": 0.609,
+   "country": "Canada",
+   "description": "Canadian basketball player (born 1998)",
+   "hook": "is a smooth Oklahoma City Thunder guard who won MVP and led the team to a championship",
+   "known": 0.25,
+   "kind": "guard"
+  },
+  {
+   "label": "Carmelo Anthony",
+   "qid": "Q129041",
+   "fame": 0.608,
+   "country": "United States",
+   "description": "American basketball player (born 1984)",
+   "hook": "is a high-scoring forward who spent a long stint with the New York Knicks and won Olympic gold",
+   "known": 0.7,
+   "kind": "forward"
+  },
+  {
+   "label": "Tony Parker",
+   "qid": "Q193108",
+   "fame": 0.605,
+   "country": "France",
+   "description": "French basketball player (born 1982)",
+   "hook": "was a speedy Spurs point guard who won four titles and married a Desperate Housewives star",
+   "known": 0.45,
+   "kind": "guard"
+  },
+  {
+   "label": "Jaylen Brown",
+   "qid": "Q19664817",
+   "fame": 0.603,
+   "country": "United States",
+   "description": "American basketball player (born 1996)",
+   "hook": "is a Boston Celtics wing who was named Finals MVP in a championship run",
+   "known": 0.25,
+   "kind": "forward"
+  },
+  {
+   "label": "Klay Thompson",
+   "qid": "Q29342",
+   "fame": 0.603,
+   "country": "United States",
+   "description": "American basketball player (born 1990)",
+   "hook": "is a sharpshooter, one half of the Splash Brothers, who once scored 60 points in under three quarters",
+   "known": 0.65,
+   "kind": "guard"
+  },
+  {
+   "label": "Luka Dončić",
+   "qid": "Q19844712",
+   "fame": 0.602,
+   "country": "Slovenia",
+   "description": "Slovenian basketball player (born 1999)",
+   "hook": "is a triple-double-collecting guard who was traded from Dallas to the Lakers in a shocking deal",
+   "known": 0.4,
+   "kind": "guard"
+  },
+  {
+   "label": "Phil Jackson",
+   "qid": "Q316246",
+   "fame": 0.602,
+   "country": "United States",
+   "description": "American basketball player, coach and executive",
+   "hook": "was the Zen Master coach who won eleven championships with the Bulls and Lakers",
+   "known": 0.5,
+   "kind": "coach"
+  },
+  {
+   "label": "Karl-Anthony Towns",
+   "qid": "Q6372315",
+   "fame": 0.601,
+   "country": "Dominican Republic",
+   "description": "Dominican-American basketball player",
+   "hook": "is a big man who shoots threes and plays for the New York Knicks after years in Minnesota",
+   "known": 0.15,
+   "kind": "forward"
+  },
+  {
+   "label": "Derrick Rose",
+   "qid": "Q205326",
+   "fame": 0.598,
+   "country": "United States",
+   "description": "American basketball player (born 1988)",
+   "hook": "became the youngest MVP in league history as a hometown Chicago Bulls guard",
+   "known": 0.5,
+   "kind": "guard"
+  },
+  {
+   "label": "Dwight Howard",
+   "qid": "Q25278",
+   "fame": 0.597,
+   "country": "United States",
+   "description": "American basketball player (born 1985)",
+   "hook": "was a dunk-contest Superman who won Defensive Player of the Year three times with Orlando",
+   "known": 0.5,
+   "kind": "center"
+  },
+  {
+   "label": "Nikola Jokić",
+   "qid": "Q17281073",
+   "fame": 0.596,
+   "country": "Serbia",
+   "description": "Serbian basketball player (born 1995)",
+   "hook": "is a passing center nicknamed the Joker who has won several MVPs with the Denver Nuggets",
+   "known": 0.35,
+   "kind": "center"
+  },
+  {
+   "label": "Muggsy Bogues",
+   "qid": "Q150502",
+   "fame": 0.595,
+   "country": "United States",
+   "description": "American basketball player-coach",
+   "hook": "is the shortest player in NBA history, at just five feet three inches",
+   "known": 0.4,
+   "kind": "guard"
+  },
+  {
+   "label": "Pete Maravich",
+   "qid": "Q316183",
+   "fame": 0.593,
+   "country": "United States",
+   "description": "American basketball player (born 1947)",
+   "hook": "was a floppy-socked showman known as Pistol who dazzled with ball-handling and passing wizardry",
+   "known": 0.45,
+   "kind": "guard"
+  },
+  {
+   "label": "Chris Paul",
+   "qid": "Q46040",
+   "fame": 0.592,
+   "country": "United States",
+   "description": "American basketball player (born 1985)",
+   "hook": "is a veteran point guard nicknamed CP3 who led the league in assists many times",
+   "known": 0.55,
+   "kind": "guard"
+  },
+  {
+   "label": "Dirk Nowitzki",
+   "qid": "Q44068",
+   "fame": 0.591,
+   "country": "Germany",
+   "description": "German basketball player (born 1978)",
+   "hook": "was a seven-foot sharpshooter who led the Mavericks to their first title with a one-legged fadeaway",
+   "known": 0.7,
+   "kind": "forward"
+  },
+  {
+   "label": "Scottie Pippen",
+   "qid": "Q193637",
+   "fame": 0.59,
+   "country": "United States",
+   "description": "American basketball player (born 1965)",
+   "hook": "was the Bulls' Hall of Fame wingman who played alongside the greatest of all time",
+   "known": 0.75,
+   "kind": "forward"
+  },
+  {
+   "label": "James Harden",
+   "qid": "Q136678",
+   "fame": 0.585,
+   "country": "United States",
+   "description": "American basketball player (born 1989)",
+   "hook": "is a bearded Houston Rockets guard known for step-back threes and the Euro step",
+   "known": 0.6,
+   "kind": "guard"
+  },
+  {
+   "label": "Tim Duncan",
+   "qid": "Q193020",
+   "fame": 0.584,
+   "country": "United States",
+   "description": "American basketball player (born 1976)",
+   "hook": "was a quiet San Antonio Spurs big man nicknamed The Big Fundamental, a five-time champion",
+   "known": 0.75,
+   "kind": "center"
+  },
+  {
+   "label": "Steve Nash",
+   "qid": "Q192955",
+   "fame": 0.582,
+   "country": "Canada",
+   "description": "Canadian basketball player and coach",
+   "hook": "was a floppy-haired point guard who won back-to-back MVPs with the Phoenix Suns",
+   "known": 0.5,
+   "kind": "guard"
+  },
+  {
+   "label": "Paul George",
+   "qid": "Q973121",
+   "fame": 0.581,
+   "country": "United States",
+   "description": "American basketball player (born 1990)",
+   "hook": "is a sweet-shooting wing who played with the Pacers, Thunder and Clippers",
+   "known": 0.35,
+   "kind": "forward"
+  },
+  {
+   "label": "Bill Russell",
+   "qid": "Q242185",
+   "fame": 0.58,
+   "country": "United States",
+   "description": "American basketball player (1934–2022)",
+   "hook": "won eleven championships in thirteen seasons with the Boston Celtics, the most of any player",
+   "known": 0.65,
+   "kind": "center"
+  },
+  {
+   "label": "Tracy McGrady",
+   "qid": "Q202295",
+   "fame": 0.58,
+   "country": "United States",
+   "description": "American basketball player (born 1979)",
+   "hook": "was an Orlando and Houston scorer famous for scoring 13 points in 33 seconds",
+   "known": 0.35,
+   "kind": "forward"
+  },
+  {
+   "label": "DeMar DeRozan",
+   "qid": "Q456374",
+   "fame": 0.575,
+   "country": "United States",
+   "description": "American basketball player (born 1989)",
+   "hook": "is a scoring wing known for his midrange game and a stint with the Toronto Raptors and Bulls",
+   "known": 0.3,
+   "kind": "guard"
+  },
+  {
+   "label": "Hakeem Olajuwon",
+   "qid": "Q273256",
+   "fame": 0.575,
+   "country": "United States",
+   "description": "Nigerian-American basketball player",
+   "hook": "was a Houston Rockets center nicknamed The Dream, known for his graceful footwork",
+   "known": 0.7,
+   "kind": "center"
+  },
+  {
+   "label": "Jason Kidd",
+   "qid": "Q221341",
+   "fame": 0.573,
+   "country": "United States",
+   "description": "American basketball player and coach",
+   "hook": "was a triple-double machine at point guard who led Dallas to a championship over the Heat",
+   "known": 0.6,
+   "kind": "guard"
+  },
+  {
+   "label": "Lisa Leslie",
+   "qid": "Q257980",
+   "fame": 0.573,
+   "country": "United States",
+   "description": "American basketball player (born 1972)",
+   "hook": "was a star center in the WNBA who was the first woman to dunk in a pro game",
+   "known": 0.3,
+   "kind": "women"
+  },
+  {
+   "label": "Blake Griffin",
+   "qid": "Q309783",
+   "fame": 0.571,
+   "country": "United States",
+   "description": "American basketball player (born 1989)",
+   "hook": "was a high-flying Los Angeles Clippers forward who leapt over a car in a dunk contest",
+   "known": 0.4,
+   "kind": "forward"
+  },
+  {
+   "label": "Jayson Tatum",
+   "qid": "Q21623063",
+   "fame": 0.571,
+   "country": "United States",
+   "description": "American basketball player (born 1998)",
+   "hook": "is a Boston Celtics forward who won a championship and once scored 60 points in a game",
+   "known": 0.35,
+   "kind": "forward"
+  },
+  {
+   "label": "Kevin Garnett",
+   "qid": "Q189240",
+   "fame": 0.571,
+   "country": "United States",
+   "description": "American basketball player (born 1976)",
+   "hook": "was a fiery, trash-talking big man who won a championship with the Boston Celtics",
+   "known": 0.65,
+   "kind": "forward"
+  },
+  {
+   "label": "Jimmy Butler",
+   "qid": "Q498348",
+   "fame": 0.568,
+   "country": "United States",
+   "description": "American basketball player (born 1989)",
+   "hook": "is a tough two-way wing known for leading the Miami Heat to the Finals and his coffee business",
+   "known": 0.35,
+   "kind": "guard"
+  },
+  {
+   "label": "Sue Bird",
+   "qid": "Q240672",
+   "fame": 0.568,
+   "country": "United States",
+   "description": "American basketball player (born 1980)",
+   "hook": "is a longtime Seattle Storm point guard who won four WNBA titles",
+   "known": 0.25,
+   "kind": "women"
+  },
+  {
+   "label": "Bam Adebayo",
+   "qid": "Q21620668",
+   "fame": 0.565,
+   "country": "United States",
+   "description": "American basketball player (born 1997)",
+   "hook": "is a versatile Miami Heat center known for his strong defense and for switching onto any position",
+   "known": 0.2,
+   "kind": "center"
+  },
+  {
+   "label": "Tyrese Haliburton",
+   "qid": "Q63190352",
+   "fame": 0.564,
+   "country": "United States",
+   "description": "American basketball player (born 2000)",
+   "hook": "is an Indiana Pacers point guard who led the league in assists and helped the team reach the Finals",
+   "known": 0.15,
+   "kind": "guard"
+  },
+  {
+   "label": "Kevin Love",
+   "qid": "Q297221",
+   "fame": 0.562,
+   "country": "United States",
+   "description": "American basketball player (born 1988)",
+   "hook": "is a rebounding big man who won a title with LeBron in Cleveland and has spoken openly about mental health",
+   "known": 0.35,
+   "kind": "forward"
+  },
+  {
+   "label": "Vince Carter",
+   "qid": "Q241261",
+   "fame": 0.561,
+   "country": "United States",
+   "description": "American basketball player (born 1977)",
+   "hook": "was a dunk-contest legend nicknamed Half Man, Half Amazing, who played for 22 seasons",
+   "known": 0.55,
+   "kind": "guard"
+  },
+  {
+   "label": "Devin Booker",
+   "qid": "Q20031362",
+   "fame": 0.56,
+   "country": "United States",
+   "description": "American basketball player (born 1996)",
+   "hook": "is a Phoenix Suns guard who scored 70 points in a single game",
+   "known": 0.3,
+   "kind": "guard"
+  },
+  {
+   "label": "Pat Riley",
+   "qid": "Q335762",
+   "fame": 0.557,
+   "country": "United States",
+   "description": "American basketball player, coach and executive",
+   "hook": "is a slicked-back-hair coach and executive who led the Showtime Lakers and later built the Miami Heat",
+   "known": 0.45,
+   "kind": "coach"
+  },
+  {
+   "label": "Damian Lillard",
+   "qid": "Q622308",
+   "fame": 0.551,
+   "country": "United States",
+   "description": "American basketball player (born 1990)",
+   "hook": "is a deep-shooting guard nicknamed Dame Time, long the face of the Portland Trail Blazers",
+   "known": 0.4,
+   "kind": "guard"
+  },
+  {
+   "label": "Joe Johnson",
+   "qid": "Q132208",
+   "fame": 0.551,
+   "country": "United States",
+   "description": "American basketball player (born 1981)",
+   "hook": "became a seven-time All-Star known for one-on-one isolation scoring",
+   "known": 0.3,
+   "kind": "forward"
+  },
+  {
+   "label": "Nicolas Batum",
+   "qid": "Q352114",
+   "fame": 0.551,
+   "country": "France",
+   "description": "French basketball player (born 1988)",
+   "hook": "is a long-time wing who played for Portland and helped his national side win Olympic silver",
+   "known": 0.2,
+   "kind": "forward"
+  },
+  {
+   "label": "Anthony Davis",
+   "qid": "Q317008",
+   "fame": 0.549,
+   "country": "United States",
+   "description": "American basketball player (born 1993)",
+   "hook": "is a shot-blocking big man with a famous unibrow who won a title with the Lakers",
+   "known": 0.55,
+   "kind": "forward"
+  },
+  {
+   "label": "Diana Taurasi",
+   "qid": "Q240726",
+   "fame": 0.549,
+   "country": "United States",
+   "description": "American basketball player (born 1982)",
+   "hook": "is the WNBA's all-time leading scorer and a longtime Phoenix Mercury star",
+   "known": 0.35,
+   "kind": "women"
+  },
+  {
+   "label": "Julius Erving",
+   "qid": "Q209921",
+   "fame": 0.548,
+   "country": "United States",
+   "description": "American basketball player (born 1950)",
+   "hook": "was a high-flying dunker nicknamed Dr. J",
+   "known": 0.5,
+   "kind": "forward"
+  },
+  {
+   "label": "Joel Embiid",
+   "qid": "Q15920046",
+   "fame": 0.546,
+   "country": "United States",
+   "description": "Cameroonian and French basketball player",
+   "hook": "is a Philadelphia center who won league MVP after the team's Trust the Process rebuild",
+   "known": 0.45,
+   "kind": "center"
+  },
+  {
+   "label": "Isiah Thomas",
+   "qid": "Q298512",
+   "fame": 0.544,
+   "country": "United States",
+   "description": "American basketball player, coach, executive",
+   "hook": "led the Bad Boys Pistons of Detroit to back-to-back championships",
+   "known": 0.5,
+   "kind": "guard"
+  },
+  {
+   "label": "Steve Kerr",
+   "qid": "Q523630",
+   "fame": 0.542,
+   "country": "United States",
+   "description": "American basketball player and coach",
+   "hook": "hit a title-clinching shot for the Bulls, then coached the Warriors to championships",
+   "known": 0.45,
+   "kind": "guard"
+  },
+  {
+   "label": "Patrick Ewing",
+   "qid": "Q271933",
+   "fame": 0.54,
+   "country": "United States",
+   "description": "Jamaican-American basketball player",
+   "hook": "was the star center of the New York Knicks who never won a championship",
+   "known": 0.65,
+   "kind": "center"
+  },
+  {
+   "label": "Jerry West",
+   "qid": "Q311195",
+   "fame": 0.535,
+   "country": "United States",
+   "description": "American basketball player and executive (1938-2024)",
+   "hook": "is the player whose silhouette became the NBA's logo",
+   "known": 0.55,
+   "kind": "guard"
+  },
+  {
+   "label": "John Stockton",
+   "qid": "Q213346",
+   "fame": 0.533,
+   "country": "United States",
+   "description": "American basketball player (born 1962)",
+   "hook": "holds the NBA career records for assists and steals, all with Utah",
+   "known": 0.6,
+   "kind": "guard"
+  },
+  {
+   "label": "Pau Gasol",
+   "qid": "Q193052",
+   "fame": 0.533,
+   "country": "Spain",
+   "description": "Spanish basketball player (born 1980)",
+   "hook": "won two championships with the Lakers as a skilled, passing big man",
+   "known": 0.45,
+   "kind": "center"
+  },
+  {
+   "label": "Ben Wallace",
+   "qid": "Q295364",
+   "fame": 0.53,
+   "country": "United States",
+   "description": "American basketball player (born 1974)",
+   "hook": "was an undrafted rebounder who won four Defensive Player of the Year awards",
+   "known": 0.2,
+   "kind": "center"
+  },
+  {
+   "label": "Manute Bol",
+   "qid": "Q313479",
+   "fame": 0.529,
+   "country": "Sudan",
+   "description": "Sudanese-American basketball player",
+   "hook": "was one of the tallest players in NBA history and famous for blocking shots",
+   "known": 0.2,
+   "kind": "center"
+  },
+  {
+   "label": "Kyle Lowry",
+   "qid": "Q974603",
+   "fame": 0.527,
+   "country": "United States",
+   "description": "American basketball player (born 1986)",
+   "hook": "led the Raptors to their first NBA championship",
+   "known": 0.3,
+   "kind": "guard"
+  },
+  {
+   "label": "Ray Allen",
+   "qid": "Q208623",
+   "fame": 0.527,
+   "country": "United States",
+   "description": "American basketball player (born 1975)",
+   "hook": "is a sharpshooter whose clutch Finals corner three forced overtime for Miami",
+   "known": 0.45,
+   "kind": "guard"
+  },
+  {
+   "label": "Bill Walton",
+   "qid": "Q363246",
+   "fame": 0.524,
+   "country": "United States",
+   "description": "American basketball player and sportscaster (1952–2024)",
+   "hook": "was a center for UCLA and Portland who became a colorful broadcaster",
+   "known": 0.4,
+   "kind": "center"
+  },
+  {
+   "label": "Danilo Gallinari",
+   "qid": "Q60118",
+   "fame": 0.522,
+   "country": "Italy",
+   "description": "Italian basketball player (born 1988)",
+   "hook": "is a sweet-shooting forward who spent years with the Denver Nuggets",
+   "known": 0.15,
+   "kind": "forward"
+  },
+  {
+   "label": "Rajon Rondo",
+   "qid": "Q274469",
+   "fame": 0.521,
+   "country": "United States",
+   "description": "American basketball player (born 1986)",
+   "hook": "was the Boston point guard who won a title alongside the Big Three",
+   "known": 0.3,
+   "kind": "guard"
+  },
+  {
+   "label": "Grant Hill",
+   "qid": "Q311895",
+   "fame": 0.516,
+   "country": "United States",
+   "description": "American basketball player (born 1972)",
+   "hook": "was a Duke star who shared Rookie of the Year before ankle injuries derailed his career",
+   "known": 0.35,
+   "kind": "forward"
+  },
+  {
+   "label": "Rasheed Wallace",
+   "qid": "Q270975",
+   "fame": 0.516,
+   "country": "United States",
+   "description": "American basketball player (born 1974)",
+   "hook": "was a technical-foul magnet who won a championship with Detroit",
+   "known": 0.3,
+   "kind": "forward"
+  },
+  {
+   "label": "Gary Payton",
+   "qid": "Q309872",
+   "fame": 0.515,
+   "country": "United States",
+   "description": "American basketball player (born 1968)",
+   "hook": "was a trash-talking defensive point guard nicknamed The Glove",
+   "known": 0.45,
+   "kind": "guard"
+  },
+  {
+   "label": "Reggie Miller",
+   "qid": "Q270966",
+   "fame": 0.515,
+   "country": "United States",
+   "description": "American basketball player (born 1965)",
+   "hook": "was an Indiana sharpshooter who famously feuded with Knicks fans at the Garden",
+   "known": 0.5,
+   "kind": "guard"
+  },
+  {
+   "label": "David Robinson",
+   "qid": "Q211876",
+   "fame": 0.513,
+   "country": "United States",
+   "description": "American basketball player (born 1965)",
+   "hook": "was a Navy graduate nicknamed The Admiral who starred for San Antonio",
+   "known": 0.5,
+   "kind": "center"
+  },
+  {
+   "label": "Dominique Wilkins",
+   "qid": "Q311533",
+   "fame": 0.513,
+   "country": "United States",
+   "description": "American basketball player (born 1960)",
+   "hook": "was an Atlanta scorer nicknamed The Human Highlight Film",
+   "known": 0.4,
+   "kind": "forward"
+  },
+  {
+   "label": "Draymond Green",
+   "qid": "Q2614593",
+   "fame": 0.513,
+   "country": "United States",
+   "description": "American basketball player (born 1990)",
+   "hook": "is a Warriors forward famed for defense, passing and a fiery temper",
+   "known": 0.35,
+   "kind": "forward"
+  },
+  {
+   "label": "Amar'e Stoudemire",
+   "qid": "Q270981",
+   "fame": 0.51,
+   "country": "United States",
+   "description": "American basketball player (born 1982)",
+   "hook": "was a high-flying Suns big man nicknamed STAT",
+   "known": 0.3,
+   "kind": "forward"
+  },
+  {
+   "label": "Dennis Schröder",
+   "qid": "Q10862660",
+   "fame": 0.506,
+   "country": "Germany",
+   "description": "German basketball player (born 1993)",
+   "hook": "is a point guard who was MVP of his national team's FIBA World Cup title run",
+   "known": 0.2,
+   "kind": "guard"
+  },
+  {
+   "label": "Doc Rivers",
+   "qid": "Q352093",
+   "fame": 0.506,
+   "country": "United States",
+   "description": "American basketball coach and player (born 1961)",
+   "hook": "coached Boston to a championship and later led Philadelphia and Milwaukee",
+   "known": 0.35,
+   "kind": "coach"
+  },
+  {
+   "label": "Chauncey Billups",
+   "qid": "Q298531",
+   "fame": 0.505,
+   "country": "United States",
+   "description": "American basketball player and coach",
+   "hook": "was nicknamed Mr. Big Shot and was Finals MVP with Detroit",
+   "known": 0.25,
+   "kind": "guard"
+  },
+  {
+   "label": "Bob Cousy",
+   "qid": "Q312643",
+   "fame": 0.504,
+   "country": "United States",
+   "description": "American basketball player and coach (born 1928)",
+   "hook": "was a flashy Celtics point guard nicknamed the Houdini of the Hardwood",
+   "known": 0.45,
+   "kind": "guard"
+  },
+  {
+   "label": "James Naismith",
+   "qid": "Q188962",
+   "fame": 0.504,
+   "country": "Canada",
+   "description": "Canadian-American coach; inventor of basketball",
+   "hook": "invented the game of basketball using a peach basket",
+   "known": 0.6,
+   "kind": "coach"
+  },
+  {
+   "label": "Paul Pierce",
+   "qid": "Q121647",
+   "fame": 0.501,
+   "country": "United States",
+   "description": "American basketball player (born 1977)",
+   "hook": "was the Celtics star nicknamed The Truth who won Finals MVP",
+   "known": 0.45,
+   "kind": "forward"
+  },
+  {
+   "label": "Kristaps Porziņģis",
+   "qid": "Q14834367",
+   "fame": 0.5,
+   "country": "Latvia",
+   "description": "Latvian basketball player (born 1995)",
+   "hook": "is a seven-foot-plus shooting big man nicknamed the Unicorn",
+   "known": 0.25,
+   "kind": "center"
+  },
+  {
+   "label": "Joakim Noah",
+   "qid": "Q311735",
+   "fame": 0.499,
+   "country": "France",
+   "description": "American–French basketball player",
+   "hook": "was an energetic Bulls center whose father won a Grand Slam tennis title",
+   "known": 0.25,
+   "kind": "center"
+  },
+  {
+   "label": "Penny Hardaway",
+   "qid": "Q317209",
+   "fame": 0.498,
+   "country": "United States",
+   "description": "American basketball player and coach",
+   "hook": "was a tall Orlando guard who starred in puppet sneaker commercials",
+   "known": 0.35,
+   "kind": "guard"
+  },
+  {
+   "label": "Domantas Sabonis",
+   "qid": "Q5289916",
+   "fame": 0.497,
+   "country": "Lithuania",
+   "description": "Lithuanian basketball player (born 1996)",
+   "hook": "is a triple-double big man whose father was a European legend",
+   "known": 0.2,
+   "kind": "center"
+  },
+  {
+   "label": "Clyde Drexler",
+   "qid": "Q295340",
+   "fame": 0.494,
+   "country": "United States",
+   "description": "American basketball player (born 1962)",
+   "hook": "was a gliding Portland guard who later won a title with Houston",
+   "known": 0.45,
+   "kind": "guard"
+  },
+  {
+   "label": "Greg Oden",
+   "qid": "Q313487",
+   "fame": 0.493,
+   "country": "United States",
+   "description": "American basketball player (born 1988)",
+   "hook": "was a top overall pick whose career was derailed by knee injuries",
+   "known": 0.15,
+   "kind": "center"
+  },
+  {
+   "label": "Manu Ginóbili",
+   "qid": "Q213132",
+   "fame": 0.493,
+   "country": "Argentina",
+   "description": "Argentine basketball player (born 1977)",
+   "hook": "was a left-handed San Antonio guard who popularized the Eurostep",
+   "known": 0.35,
+   "kind": "guard"
+  },
+  {
+   "label": "Zach LaVine",
+   "qid": "Q15908942",
+   "fame": 0.492,
+   "country": "United States",
+   "description": "American basketball player (born 1995)",
+   "hook": "is a high-flying guard who won back-to-back Slam Dunk Contests",
+   "known": 0.15,
+   "kind": "guard"
+  },
+  {
+   "label": "Andre Iguodala",
+   "qid": "Q136816",
+   "fame": 0.489,
+   "country": "United States",
+   "description": "American basketball player (born 1984)",
+   "hook": "won Finals MVP coming off the bench for Golden State",
+   "known": 0.3,
+   "kind": "forward"
+  },
+  {
+   "label": "Chris Bosh",
+   "qid": "Q201386",
+   "fame": 0.489,
+   "country": "United States",
+   "description": "American basketball player (born 1984)",
+   "hook": "joined two superstars in Miami to form a Big Three",
+   "known": 0.35,
+   "kind": "forward"
+  },
+  {
+   "label": "Jrue Holiday",
+   "qid": "Q622213",
+   "fame": 0.489,
+   "country": "United States",
+   "description": "American basketball player (born 1990)",
+   "hook": "is a defensive guard who won titles with Milwaukee and Boston",
+   "known": 0.25,
+   "kind": "guard"
+  },
+  {
+   "label": "Alonzo Mourning",
+   "qid": "Q310968",
+   "fame": 0.488,
+   "country": "United States",
+   "description": "American basketball player (born 1970)",
+   "hook": "was a Miami center who won a championship after a kidney transplant",
+   "known": 0.3,
+   "kind": "center"
+  },
+  {
+   "label": "Oscar Robertson",
+   "qid": "Q17717",
+   "fame": 0.486,
+   "country": "United States",
+   "description": "American basketball player (born 1938)",
+   "hook": "nicknamed the Big O, was first to average a triple-double over a full season",
+   "known": 0.5,
+   "kind": "guard"
+  },
+  {
+   "label": "Jonas Valančiūnas",
+   "qid": "Q380018",
+   "fame": 0.483,
+   "country": "Lithuania",
+   "description": "Lithuanian basketball player (born 1992)",
+   "hook": "is a rebounding big man who has played for Toronto, Memphis and New Orleans",
+   "known": 0.15,
+   "kind": "center"
+  },
+  {
+   "label": "John Wooden",
+   "qid": "Q551032",
+   "fame": 0.481,
+   "country": "United States",
+   "description": "American basketball coach (1910–2010)",
+   "hook": "won ten national titles at UCLA and was called the Wizard of Westwood",
+   "known": 0.55,
+   "kind": "coach"
+  },
+  {
+   "label": "Andrew Wiggins",
+   "qid": "Q4758911",
+   "fame": 0.479,
+   "country": "Canada",
+   "description": "Canadian basketball player (born 1995)",
+   "hook": "was a first overall pick who won a title with Golden State",
+   "known": 0.25,
+   "kind": "forward"
+  },
+  {
+   "label": "DeAndre Jordan",
+   "qid": "Q60478",
+   "fame": 0.479,
+   "country": "United States",
+   "description": "American basketball player (born 1988)",
+   "hook": "was a dunking center of the Lob City Clippers",
+   "known": 0.25,
+   "kind": "center"
+  },
+  {
+   "label": "JaVale McGee",
+   "qid": "Q553512",
+   "fame": 0.478,
+   "country": "United States",
+   "description": "American basketball player (born 1988)",
+   "hook": "is a shot-blocking center who has won three championships",
+   "known": 0.15,
+   "kind": "center"
+  },
+  {
+   "label": "Rudy Gobert",
+   "qid": "Q3446792",
+   "fame": 0.477,
+   "country": "France",
+   "description": "French basketball player (born 1992)",
+   "hook": "is a center nicknamed the Stifle Tower who has won multiple Defensive Player of the Year awards",
+   "known": 0.35,
+   "kind": "center"
+  },
+  {
+   "label": "Robert Parish",
+   "qid": "Q314614",
+   "fame": 0.476,
+   "country": "United States",
+   "description": "American former basketball player (born 1953)",
+   "hook": "was a Celtics center nicknamed The Chief who played into his forties",
+   "known": 0.35,
+   "kind": "center"
+  },
+  {
+   "label": "Erik Spoelstra",
+   "qid": "Q440324",
+   "fame": 0.475,
+   "country": "United States",
+   "description": "American basketball head coach",
+   "hook": "is the long-time Heat coach who led the team to two championships",
+   "known": 0.2,
+   "kind": "coach"
+  },
+  {
+   "label": "Carlos Boozer",
+   "qid": "Q310411",
+   "fame": 0.473,
+   "country": "United States",
+   "description": "American basketball player (born 1981)",
+   "hook": "was a Duke power forward who played for Utah and Chicago",
+   "known": 0.2,
+   "kind": "forward"
+  },
+  {
+   "label": "Elgin Baylor",
+   "qid": "Q357458",
+   "fame": 0.471,
+   "country": "United States",
+   "description": "American basketball player, coach, and executive (1934–2021)",
+   "hook": "was an acrobatic Lakers forward who never won a championship",
+   "known": 0.4,
+   "kind": "forward"
+  },
+  {
+   "label": "James Worthy",
+   "qid": "Q362872",
+   "fame": 0.47,
+   "country": "United States",
+   "description": "American basketball player (born 1961)",
+   "hook": "was a fast-breaking forward of the Showtime Lakers nicknamed Big Game",
+   "known": 0.35,
+   "kind": "forward"
+  },
+  {
+   "label": "John Havlicek",
+   "qid": "Q71127",
+   "fame": 0.47,
+   "country": "United States",
+   "description": "American basketball player (1940–2019)",
+   "hook": "made the legendary steal that sealed a Celtics playoff win over Philadelphia",
+   "known": 0.45,
+   "kind": "forward"
+  },
+  {
+   "label": "Kevin McHale",
+   "qid": "Q40444",
+   "fame": 0.463,
+   "country": "United States",
+   "description": "American basketball player (born 1957)",
+   "hook": "was a Celtics forward famous for his wide arsenal of low-post moves",
+   "known": 0.5,
+   "kind": "forward"
+  },
+  {
+   "label": "LaMarcus Aldridge",
+   "qid": "Q316243",
+   "fame": 0.456,
+   "country": "United States",
+   "description": "American basketball player",
+   "hook": "was a Portland and San Antonio big man known for his midrange jumper",
+   "known": 0.25,
+   "kind": "forward"
+  },
+  {
+   "label": "George Mikan",
+   "qid": "Q314185",
+   "fame": 0.455,
+   "country": "United States",
+   "description": "American basketball player, coach, commissioner",
+   "hook": "wore thick glasses as the first dominant big man, winning five titles in pro basketball's early days",
+   "known": 0.4,
+   "kind": "center"
+  },
+  {
+   "label": "Red Auerbach",
+   "qid": "Q336581",
+   "fame": 0.453,
+   "country": "United States",
+   "description": "American basketball coach (1917–2006)",
+   "hook": "lit a victory cigar on the bench as the coach who built a dynasty of nine championships",
+   "known": 0.5,
+   "kind": "coach"
+  },
+  {
+   "label": "Marc Gasol",
+   "qid": "Q275889",
+   "fame": 0.45,
+   "country": "Spain",
+   "description": "Spanish basketball player (born 1985)",
+   "hook": "anchored the Grit and Grind Memphis defense and won Defensive Player of the Year; his brother also starred",
+   "known": 0.25,
+   "kind": "center"
+  }
+ ]
+}

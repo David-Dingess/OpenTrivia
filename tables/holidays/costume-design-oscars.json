@@ -1,0 +1,521 @@
+{
+ "id": "table.holidays.costume-design-oscars",
+ "kind": "table",
+ "title": "Academy Award for Best Costume Design winners",
+ "genre": "daily-life",
+ "category": "holidays",
+ "topic": "costumes",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?year ?designerLabel WHERE { { SELECT ?item (MIN(?d) AS ?year) (GROUP_CONCAT(DISTINCT ?wLabel; separator=\" & \") AS ?designerLabel) WHERE { ?item p:P166 ?st . ?st ps:P166 wd:Q277536 ; pq:P585 ?d ; pq:P1346 ?w . ?item wdt:P31 wd:Q11424 . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". ?w rdfs:label ?wLabel . } } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T01:47:28.844Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T01:47:28.844Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "designer",
+   "label": "Costume designer",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "year",
+   "label": "Award year",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "film",
+  "many": "Best Costume Design winners",
+  "itemText": "{label} — {designer}",
+  "columns": {
+   "year": {
+    "role": "date",
+    "sort": "from the earliest Best Costume Design winner to the most recent"
+   },
+   "designer": {
+    "role": "link",
+    "pick": "Who designed the costumes for {label}?",
+    "statement": "{label} won the Best Costume Design Oscar in {year}, designed by {value}.",
+    "match": "Match each Best Costume Design winner to its costume designer.",
+    "odd": "Three of these Best Costume Design winners were designed by {value}. Which one wasn't?",
+    "all": "Tap all {n} Best Costume Design winners designed by {value}.",
+    "reverse": "Which of these did {value} design the costumes for?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Titanic",
+   "qid": "Q44578",
+   "fame": 0.716,
+   "designer": "Deborah Lynn Scott",
+   "year": 1998,
+   "description": "1997 film directed by James Cameron",
+   "hook": "follows a doomed romance between a poor artist and a rich girl aboard an ill-fated ocean liner",
+   "known": 0.95,
+   "kind": "historical"
+  },
+  {
+   "label": "Star Wars: Episode IV – A New Hope",
+   "qid": "Q17738",
+   "fame": 0.682,
+   "designer": "John Mollo",
+   "year": 1978,
+   "description": "1977 film directed by George Lucas",
+   "hook": "launched a space saga where a farm boy joins a rebellion against a dark armored villain",
+   "known": 0.95,
+   "kind": "fantasy"
+  },
+  {
+   "label": "Gladiator",
+   "qid": "Q128518",
+   "fame": 0.673,
+   "designer": "Janty Yates",
+   "year": 2001,
+   "description": "2000 film by Ridley Scott",
+   "hook": "follows a betrayed Roman general who fights for revenge in the arena",
+   "known": 0.8,
+   "kind": "historical"
+  },
+  {
+   "label": "Barry Lyndon",
+   "qid": "Q471716",
+   "fame": 0.638,
+   "designer": "Milena Canonero & Ulla-Britt Söderlund",
+   "year": 1976,
+   "description": "1975 film directed by Stanley Kubrick",
+   "hook": "follows an Irish rogue climbing into the aristocracy, with scenes lit only by candles",
+   "known": 0.2,
+   "kind": "historical"
+  },
+  {
+   "label": "Amadeus",
+   "qid": "Q190956",
+   "fame": 0.632,
+   "designer": "Theodor Pištěk",
+   "year": 1985,
+   "description": "1984 film directed by Miloš Forman",
+   "hook": "tells of a jealous court composer and his rivalry with a childlike musical prodigy in Vienna",
+   "known": 0.8,
+   "kind": "historical"
+  },
+  {
+   "label": "The Grand Budapest Hotel",
+   "qid": "Q3521099",
+   "fame": 0.628,
+   "designer": "Milena Canonero",
+   "year": 2015,
+   "description": "2014 film directed by Wes Anderson",
+   "hook": "is a pastel-colored caper about a legendary concierge and his young lobby boy at a mountain resort",
+   "known": 0.4,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Moulin Rouge!",
+   "qid": "Q193573",
+   "fame": 0.626,
+   "designer": "Catherine Martin & Angus Strathie",
+   "year": 2002,
+   "description": "2001 film directed by Baz Luhrmann",
+   "hook": "is a flashy musical about a poet who falls for a nightclub singer at a Parisian cabaret",
+   "known": 0.8,
+   "kind": "musical"
+  },
+  {
+   "label": "Mad Max: Fury Road",
+   "qid": "Q1757288",
+   "fame": 0.625,
+   "designer": "Jenny Beavan",
+   "year": 2016,
+   "description": "2015 film directed by George Miller",
+   "hook": "is a nonstop desert chase led by a one-armed warrior driving a war rig",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "The Lord of the Rings: The Return of the King",
+   "qid": "Q131074",
+   "fame": 0.624,
+   "designer": "Ngila Dickson & Richard Taylor",
+   "year": 2004,
+   "description": "2003 film by Peter Jackson",
+   "hook": "concludes the epic quest to destroy a magic ring in a volcano, with a king reclaiming his throne",
+   "known": 0.95,
+   "kind": "fantasy"
+  },
+  {
+   "label": "Phantom Thread",
+   "qid": "Q28840386",
+   "fame": 0.618,
+   "designer": "Mark Bridges",
+   "year": 2018,
+   "description": "2017 film directed by Paul Thomas Anderson",
+   "hook": "follows a fussy London dressmaker whose life is upended by a strong-willed young muse",
+   "known": 0.4,
+   "kind": "contemporary"
+  },
+  {
+   "label": "The Last Emperor",
+   "qid": "Q212775",
+   "fame": 0.616,
+   "designer": "James Acheson",
+   "year": 1988,
+   "description": "1987 film by Bernardo Bertolucci",
+   "hook": "tells the life story of China's final ruler, who took the throne as a small child",
+   "known": 0.4,
+   "kind": "historical"
+  },
+  {
+   "label": "Bram Stoker's Dracula",
+   "qid": "Q107325",
+   "fame": 0.61,
+   "designer": "Eiko Ishioka",
+   "year": 1993,
+   "description": "1992 film directed by Francis Ford Coppola",
+   "hook": "is a gothic take on the vampire count who travels from Transylvania to London",
+   "known": 0.6,
+   "kind": "gothic"
+  },
+  {
+   "label": "Fantastic Beasts and Where to Find Them",
+   "qid": "Q18199330",
+   "fame": 0.606,
+   "designer": "Colleen Atwood",
+   "year": 2017,
+   "description": "2016 film directed by David Yates",
+   "hook": "is a wizarding-world prequel about a magizoologist whose suitcase is full of creatures in 1920s New York",
+   "known": 0.8,
+   "kind": "fantasy"
+  },
+  {
+   "label": "The Aviator",
+   "qid": "Q201924",
+   "fame": 0.606,
+   "designer": "Sandy Powell",
+   "year": 2005,
+   "description": "2004 film directed by Martin Scorsese",
+   "hook": "follows a daring millionaire who builds planes and makes movies, while battling obsessive habits",
+   "known": 0.8,
+   "kind": "historical"
+  },
+  {
+   "label": "Little Women",
+   "qid": "Q56881140",
+   "fame": 0.603,
+   "designer": "Jacqueline Durran",
+   "year": 2020,
+   "description": "2019 film directed by Greta Gerwig",
+   "hook": "retells the tale of four sisters growing up in New England, with Jo hoping to be a writer",
+   "known": 0.8,
+   "kind": "literary"
+  },
+  {
+   "label": "Alice in Wonderland",
+   "qid": "Q174385",
+   "fame": 0.6,
+   "designer": "Colleen Atwood",
+   "year": 2011,
+   "description": "2010 film directed by Tim Burton",
+   "hook": "sends a grown-up girl back down a rabbit hole to face a Red Queen and a Jabberwocky",
+   "known": 0.8,
+   "kind": "fantasy"
+  },
+  {
+   "label": "Dangerous Liaisons",
+   "qid": "Q830553",
+   "fame": 0.594,
+   "designer": "James Acheson",
+   "year": 1989,
+   "description": "1988 film by Stephen Frears",
+   "hook": "shows two scheming aristocrats in pre-revolution France who play games of seduction with others",
+   "known": 0.6,
+   "kind": "literary"
+  },
+  {
+   "label": "The Great Gatsby",
+   "qid": "Q892735",
+   "fame": 0.592,
+   "designer": "Catherine Martin",
+   "year": 2014,
+   "description": "2013 film directed by Baz Luhrmann",
+   "hook": "shows a mysterious millionaire and his lavish parties on 1920s Long Island, all to win back an old flame",
+   "known": 0.8,
+   "kind": "literary"
+  },
+  {
+   "label": "Ran",
+   "qid": "Q565231",
+   "fame": 0.589,
+   "designer": "Emi Wada",
+   "year": 1986,
+   "description": "1985 film by Akira Kurosawa",
+   "hook": "reimagines King Lear in feudal Japan, with an aging warlord dividing his realm among three sons",
+   "known": 0.2,
+   "kind": "historical"
+  },
+  {
+   "label": "The English Patient",
+   "qid": "Q63026",
+   "fame": 0.579,
+   "designer": "Ann Roth",
+   "year": 1997,
+   "description": "1996 film directed by Anthony Minghella",
+   "hook": "follows a burned pilot and a nurse in a monastery in wartime Italy, told through flashbacks of an affair",
+   "known": 0.6,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Chariots of Fire",
+   "qid": "Q207921",
+   "fame": 0.578,
+   "designer": "Milena Canonero",
+   "year": 1982,
+   "description": "1981 film by Hugh Hudson",
+   "hook": "follows two British runners at the Paris Games, with an iconic slow-motion beach jog",
+   "known": 0.6,
+   "kind": "historical"
+  },
+  {
+   "label": "Marie Antoinette",
+   "qid": "Q829695",
+   "fame": 0.573,
+   "designer": "Milena Canonero",
+   "year": 2007,
+   "description": "2006 film directed by Sofia Coppola",
+   "hook": "portrays the young Austrian-born queen of France amid lavish parties, pastel cakes and shoes",
+   "known": 0.6,
+   "kind": "historical"
+  },
+  {
+   "label": "The Age of Innocence",
+   "qid": "Q1125442",
+   "fame": 0.572,
+   "designer": "Gabriella Pescucci",
+   "year": 1994,
+   "description": "1993 film by Martin Scorsese",
+   "hook": "is a tale of forbidden love among New York's high society during the Gilded Age",
+   "known": 0.2,
+   "kind": "literary"
+  },
+  {
+   "label": "Chicago",
+   "qid": "Q189889",
+   "fame": 0.569,
+   "designer": "Colleen Atwood",
+   "year": 2003,
+   "description": "2002 film by Rob Marshall",
+   "hook": "is a razzle-dazzle musical about murderesses and a slick lawyer in 1920s jazz-age Illinois",
+   "known": 0.8,
+   "kind": "musical"
+  },
+  {
+   "label": "A Room with a View",
+   "qid": "Q203574",
+   "fame": 0.559,
+   "designer": "Jenny Beavan & John Bright",
+   "year": 1987,
+   "description": "1985 film directed by James Ivory",
+   "hook": "follows a young Englishwoman whose Italian holiday leads to a choice between two suitors",
+   "known": 0.4,
+   "kind": "literary"
+  },
+  {
+   "label": "Gandhi",
+   "qid": "Q202211",
+   "fame": 0.555,
+   "designer": "Bhanu Athaiya & John Mollo",
+   "year": 1983,
+   "description": "1982 film directed by Richard Attenborough",
+   "hook": "tells the life of the lawyer who led India's nonviolent independence movement",
+   "known": 0.6,
+   "kind": "historical"
+  },
+  {
+   "label": "The Sting",
+   "qid": "Q62665",
+   "fame": 0.553,
+   "designer": "Edith Head",
+   "year": 1974,
+   "description": "1973 film by George Roy Hill",
+   "hook": "is a Depression-era con-artist caper in which two grifters take on a mob boss with an elaborate fake",
+   "known": 0.6,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Shakespeare in Love",
+   "qid": "Q182944",
+   "fame": 0.55,
+   "designer": "Sandy Powell",
+   "year": 1999,
+   "description": "1998 film by John Madden",
+   "hook": "imagines a young playwright's romance that inspires a famous tragedy about star-crossed lovers",
+   "known": 0.6,
+   "kind": "literary"
+  },
+  {
+   "label": "The Adventures of Priscilla, Queen of the Desert",
+   "qid": "Q255328",
+   "fame": 0.546,
+   "designer": "Lizzy Gardiner & Tim Chappel",
+   "year": 1995,
+   "description": "1994 film directed by Stephan Elliott",
+   "hook": "follows drag performers on a bus trip across the Australian outback to a resort show",
+   "known": 0.4,
+   "kind": "contemporary"
+  },
+  {
+   "label": "All That Jazz",
+   "qid": "Q1353441",
+   "fame": 0.532,
+   "designer": "Albert Wolsky",
+   "year": 1980,
+   "description": "1979 film directed by Bob Fosse",
+   "hook": "is a semi-autobiographical musical about a hard-living choreographer heading toward a final curtain",
+   "known": 0.2,
+   "kind": "musical"
+  },
+  {
+   "label": "The Duchess",
+   "qid": "Q466514",
+   "fame": 0.532,
+   "designer": "Michael O'Connor",
+   "year": 2009,
+   "description": "2008 film directed by Saul Dibb",
+   "hook": "stars Keira Knightley as a glamorous eighteenth-century English socialite trapped in a marriage to a Duke",
+   "known": 0.2,
+   "kind": "historical"
+  },
+  {
+   "label": "Anna Karenina",
+   "qid": "Q80204",
+   "fame": 0.527,
+   "designer": "Jacqueline Durran",
+   "year": 2013,
+   "description": "2012 film by Joe Wright",
+   "hook": "stars Keira Knightley as a Russian aristocrat torn between her marriage and a passionate affair",
+   "known": 0.4,
+   "kind": "literary"
+  },
+  {
+   "label": "Memoirs of a Geisha",
+   "qid": "Q45839",
+   "fame": 0.516,
+   "designer": "Colleen Atwood",
+   "year": 2006,
+   "description": "2005 film directed by Rob Marshall",
+   "hook": "follows a fisherman's daughter who becomes a celebrated entertainer in prewar Kyoto",
+   "known": 0.6,
+   "kind": "historical"
+  },
+  {
+   "label": "The Artist",
+   "qid": "Q171861",
+   "fame": 0.512,
+   "designer": "Mark Bridges",
+   "year": 2012,
+   "description": "2011 film directed by Michel Hazanavicius",
+   "hook": "is a black-and-white silent tribute to old Hollywood, about a star fading as talkies rise",
+   "known": 0.2,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Gigi",
+   "qid": "Q577757",
+   "fame": 0.507,
+   "designer": "Cecil Beaton",
+   "year": 1959,
+   "description": "1958 film by Vincente Minnelli",
+   "hook": "is a lavish musical about a young Parisian girl trained to be a courtesan",
+   "known": 0.6,
+   "kind": "musical"
+  },
+  {
+   "label": "Bugsy",
+   "qid": "Q241085",
+   "fame": 0.503,
+   "designer": "Albert Wolsky",
+   "year": 1992,
+   "description": "1991 film directed by Barry Levinson",
+   "hook": "follows a charming mobster who heads west to build a desert casino in Las Vegas",
+   "known": 0.4,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Death on the Nile",
+   "qid": "Q1059914",
+   "fame": 0.501,
+   "designer": "Anthony Powell",
+   "year": 1979,
+   "description": "1978 film by John Guillermin",
+   "hook": "is a Hercule Poirot whodunit set on a cruise down the river in Egypt",
+   "known": 0.4,
+   "kind": "historical"
+  },
+  {
+   "label": "Romeo and Juliet",
+   "qid": "Q517265",
+   "fame": 0.489,
+   "designer": "Danilo Donati",
+   "year": 1969,
+   "description": "1968 film by Franco Zeffirelli",
+   "hook": "is a lush adaptation of Shakespeare's tragedy of teenage lovers from feuding Verona families",
+   "known": 0.6,
+   "kind": "literary"
+  },
+  {
+   "label": "Elizabeth: The Golden Age",
+   "qid": "Q727846",
+   "fame": 0.473,
+   "designer": "Alexandra Byrne",
+   "year": 2008,
+   "description": "2007 film by Shekhar Kapur",
+   "hook": "follows the Virgin Queen as she faces the Spanish fleet and a bond with Walter Raleigh",
+   "known": 0.4,
+   "kind": "historical"
+  },
+  {
+   "label": "Henry V",
+   "qid": "Q114115",
+   "fame": 0.462,
+   "designer": "Phyllis Dalton",
+   "year": 1990,
+   "description": "1989 film directed by Kenneth Branagh",
+   "hook": "adapts Shakespeare's play about a young king who rallies his troops at Agincourt",
+   "known": 0.2,
+   "kind": "literary"
+  },
+  {
+   "label": "Nicholas and Alexandra",
+   "qid": "Q512475",
+   "fame": 0.452,
+   "designer": "Yvonne Blake & Antonio Castillo",
+   "year": 1972,
+   "description": "1971 biographical film directed by Franklin J. Schaffner",
+   "hook": "tells the story of the last tsar's family, ending with the Russian Revolution",
+   "known": 0.2,
+   "kind": "historical"
+  }
+ ]
+}

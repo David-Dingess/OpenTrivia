@@ -1,0 +1,350 @@
+{
+ "id": "table.literature.novel-settings",
+ "kind": "table",
+ "title": "Classic novels: where the story is set",
+ "genre": "arts-entertainment",
+ "category": "literature",
+ "topic": "classic-novels",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?settingLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?s) AS ?setting) (COUNT(DISTINCT ?s) AS ?nS) WHERE { ?item wdt:P31 wd:Q7725634 ; wdt:P7937 wd:Q8261 ; wdt:P840 ?s ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 40) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 400 } hint:Prior hint:runFirst true . FILTER(?nS = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T04:19:24.756Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T04:19:24.756Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "setting",
+   "label": "Set in",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "novel",
+  "many": "novels",
+  "itemText": "{label} — {setting}",
+  "columns": {
+   "setting": {
+    "role": "link",
+    "pick": "Where is {label} set?",
+    "statement": "{label} is set in {value}.",
+    "match": "Match each novel to where its story takes place.",
+    "odd": "Three of these novels are set in {value}. Which one is not?",
+    "all": "Tap all {n} novels set in {value}.",
+    "reverse": "Which of these novels is set in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Wuthering Heights",
+   "qid": "Q202975",
+   "fame": 0.687,
+   "setting": "Yorkshire",
+   "description": "1847 novel by Emily Brontë",
+   "hook": "tells of a stormy, obsessive romance between a foundling and his adopted sister on windswept moors",
+   "known": 0.7,
+   "kind": "classic"
+  },
+  {
+   "label": "Sense and Sensibility",
+   "qid": "Q274744",
+   "fame": 0.683,
+   "setting": "England",
+   "description": "1811 novel by Jane Austen",
+   "hook": "follows two sisters, one ruled by reason and one by emotion, as they search for husbands",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Crime and Punishment",
+   "qid": "Q165318",
+   "fame": 0.656,
+   "setting": "Saint Petersburg",
+   "description": "1866 Russian-language novel by Dostoyevsky",
+   "hook": "follows a poor student who murders a pawnbroker and is tormented by guilt",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "The Great Gatsby",
+   "qid": "Q214371",
+   "fame": 0.655,
+   "setting": "New York City",
+   "description": "1925 novel by F. Scott Fitzgerald",
+   "hook": "follows a mysterious millionaire who throws lavish parties to win back a lost love in the Jazz Age",
+   "known": 0.95,
+   "kind": "classic"
+  },
+  {
+   "label": "Moby-Dick",
+   "qid": "Q174596",
+   "fame": 0.654,
+   "setting": "Pacific Ocean",
+   "description": "novel by Herman Melville",
+   "hook": "follows a vengeful sea captain obsessed with hunting a giant white whale",
+   "known": 0.85,
+   "kind": "classic"
+  },
+  {
+   "label": "Fahrenheit 451",
+   "qid": "Q202009",
+   "fame": 0.641,
+   "setting": "United States",
+   "description": "1953 novel by Ray Bradbury",
+   "hook": "imagines a future where firemen burn books to keep people from thinking",
+   "known": 0.65,
+   "kind": "classic"
+  },
+  {
+   "label": "Brave New World",
+   "qid": "Q191949",
+   "fame": 0.639,
+   "setting": "London",
+   "description": "1932 novel by Aldous Huxley",
+   "hook": "imagines an engineered society kept happy by a pleasure drug called soma and strict caste conditioning",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "The Stranger",
+   "qid": "Q163297",
+   "fame": 0.636,
+   "setting": "Algeria",
+   "description": "1942 novel by Albert Camus",
+   "hook": "follows a detached clerk who shoots a man on a sunny beach, a landmark of absurdist fiction",
+   "known": 0.4,
+   "kind": "literary"
+  },
+  {
+   "label": "The Catcher in the Rye",
+   "qid": "Q183883",
+   "fame": 0.633,
+   "setting": "New York City",
+   "description": "1951 novel by J. D. Salinger",
+   "hook": "follows a restless teenager named Holden Caulfield wandering after being expelled from prep school",
+   "known": 0.9,
+   "kind": "classic"
+  },
+  {
+   "label": "Strange Case of Dr Jekyll and Mr Hyde",
+   "qid": "Q217352",
+   "fame": 0.616,
+   "setting": "London",
+   "description": "1886 novella by Robert Louis Stevenson",
+   "hook": "tells of a respectable doctor whose potion unleashes a violent alter ego",
+   "known": 0.7,
+   "kind": "classic"
+  },
+  {
+   "label": "Journey to the West",
+   "qid": "Q70784",
+   "fame": 0.604,
+   "setting": "China",
+   "description": "one of China's Four Great Classical Novels",
+   "hook": "follows a mischievous monkey king who escorts a monk on a pilgrimage to fetch sacred scriptures",
+   "known": 0.35,
+   "kind": "literary"
+  },
+  {
+   "label": "Do Androids Dream of Electric Sheep?",
+   "qid": "Q605249",
+   "fame": 0.598,
+   "setting": "San Francisco",
+   "description": "science fiction novel by Philip K. Dick",
+   "hook": "follows a bounty hunter hunting rogue artificial humans, and inspired the film Blade Runner",
+   "known": 0.25,
+   "kind": "literary"
+  },
+  {
+   "label": "The Scarlet Letter",
+   "qid": "Q907568",
+   "fame": 0.577,
+   "setting": "Boston",
+   "description": "novel by Nathaniel Hawthorne",
+   "hook": "follows a woman in Puritan society forced to wear a red mark of shame for adultery",
+   "known": 0.75,
+   "kind": "classic"
+  },
+  {
+   "label": "For Whom the Bell Tolls",
+   "qid": "Q200920",
+   "fame": 0.572,
+   "setting": "Spain",
+   "description": "1940 novel by Ernest Hemingway",
+   "hook": "follows an American dynamiter fighting alongside guerrillas in a civil war",
+   "known": 0.5,
+   "kind": "classic"
+  },
+  {
+   "label": "Adventures of Huckleberry Finn",
+   "qid": "Q215410",
+   "fame": 0.569,
+   "setting": "Mississippi River",
+   "description": "1884 novel by Mark Twain",
+   "hook": "follows a boy and an escaped slave drifting downriver on a raft",
+   "known": 0.85,
+   "kind": "classic"
+  },
+  {
+   "label": "Oliver Twist",
+   "qid": "Q164974",
+   "fame": 0.568,
+   "setting": "London",
+   "description": "1838 novel by Charles Dickens",
+   "hook": "follows an orphan who asks for more gruel and falls in with a gang of child pickpockets",
+   "known": 0.7,
+   "kind": "classic"
+  },
+  {
+   "label": "Life of Pi",
+   "qid": "Q374204",
+   "fame": 0.567,
+   "setting": "India",
+   "description": "2001 novel by Yann Martel",
+   "hook": "tells of a boy stranded on a lifeboat with a Bengal tiger after a shipwreck",
+   "known": 0.65,
+   "kind": "contemporary"
+  },
+  {
+   "label": "The Kite Runner",
+   "qid": "Q637839",
+   "fame": 0.566,
+   "setting": "Afghanistan",
+   "description": "2003 novel by Khaled Hosseini",
+   "hook": "follows a man haunted by a childhood betrayal of his closest friend, a servant's son",
+   "known": 0.5,
+   "kind": "contemporary"
+  },
+  {
+   "label": "The Fountainhead",
+   "qid": "Q612688",
+   "fame": 0.559,
+   "setting": "New York City",
+   "description": "novel by Ayn Rand",
+   "hook": "follows an uncompromising architect who refuses to give in to mediocrity and champions individualism",
+   "known": 0.35,
+   "kind": "literary"
+  },
+  {
+   "label": "The Phantom of the Opera",
+   "qid": "Q272506",
+   "fame": 0.558,
+   "setting": "Paris",
+   "description": "1910 novel by Gaston Leroux",
+   "hook": "tells of a disfigured musical genius who haunts a grand theatre and obsesses over a young singer",
+   "known": 0.75,
+   "kind": "classic"
+  },
+  {
+   "label": "Dream of the Red Chamber",
+   "qid": "Q8265",
+   "fame": 0.542,
+   "setting": "China",
+   "description": "one of China's Four Great Classical Novels",
+   "hook": "chronicles the rise and fall of a wealthy clan and a doomed romance, a masterpiece of its country's literature",
+   "known": 0.2,
+   "kind": "literary"
+  },
+  {
+   "label": "Siddhartha",
+   "qid": "Q457289",
+   "fame": 0.541,
+   "setting": "India",
+   "description": "novel by Hermann Hesse",
+   "hook": "follows a young man who leaves home on a spiritual quest for enlightenment in the time of the Buddha",
+   "known": 0.35,
+   "kind": "literary"
+  },
+  {
+   "label": "The Adventures of Tom Sawyer",
+   "qid": "Q326914",
+   "fame": 0.539,
+   "setting": "Missouri",
+   "description": "1876 adventure novel and bildungsroman by Mark Twain",
+   "hook": "follows a mischievous boy who tricks friends into whitewashing a fence and witnesses a murder in a graveyard",
+   "known": 0.9,
+   "kind": "classic"
+  },
+  {
+   "label": "The Name of the Rose",
+   "qid": "Q172850",
+   "fame": 0.527,
+   "setting": "Italy",
+   "description": "1980 novel by Umberto Eco",
+   "hook": "is a medieval whodunit in a monastery where a monk detective probes deaths tied to a forbidden book",
+   "known": 0.35,
+   "kind": "literary"
+  },
+  {
+   "label": "Mrs Dalloway",
+   "qid": "Q752584",
+   "fame": 0.523,
+   "setting": "London",
+   "description": "1925 novel by Virginia Woolf",
+   "hook": "follows a society hostess preparing for a party over the course of a single day",
+   "known": 0.2,
+   "kind": "literary"
+  },
+  {
+   "label": "A Study in Scarlet",
+   "qid": "Q223131",
+   "fame": 0.513,
+   "setting": "London",
+   "description": "first Sherlock Holmes novel by Sir Arthur Conan Doyle",
+   "hook": "introduced the world to a famous consulting detective and his doctor companion",
+   "known": 0.75,
+   "kind": "classic"
+  },
+  {
+   "label": "A Portrait of the Artist as a Young Man",
+   "qid": "Q465360",
+   "fame": 0.5,
+   "setting": "Dublin",
+   "description": "1918 autobiographical artist's novel and bildungsroman by James Joyce",
+   "hook": "follows Stephen Dedalus as he breaks from family, church and country to become a writer",
+   "known": 0.15,
+   "kind": "literary"
+  },
+  {
+   "label": "Love in the Time of Cholera",
+   "qid": "Q499396",
+   "fame": 0.483,
+   "setting": "Caribbean",
+   "description": "novel by Colombian Nobel Prize-winning author Gabriel García Márquez",
+   "hook": "tells of a man who waits over fifty years to win the woman he adored as a youth",
+   "known": 0.45,
+   "kind": "contemporary"
+  },
+  {
+   "label": "The Plague",
+   "qid": "Q320372",
+   "fame": 0.48,
+   "setting": "Oran",
+   "description": "French novel by Albert Camus",
+   "hook": "tells of a town sealed off by quarantine as an epidemic spreads, and a doctor who fights it",
+   "known": 0.3,
+   "kind": "literary"
+  }
+ ]
+}

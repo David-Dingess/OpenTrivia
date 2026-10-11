@@ -1,0 +1,207 @@
+{
+ "id": "table.pop-culture.horror-icons",
+ "kind": "table",
+ "title": "Horror icons: the film they star in",
+ "genre": "general",
+ "category": "pop-culture",
+ "topic": "fictional-characters",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?filmLabel WHERE { VALUES (?item ?filmLabel) { (wd:Q329466 \"A Nightmare on Elm Street\") (wd:Q366957 \"Friday the 13th\") (wd:Q1426891 \"Halloween\") (wd:Q1647348 \"The Texas Chain Saw Massacre\") (wd:Q25097 \"Child's Play\") (wd:Q3899150 \"It\") (wd:Q2444720 \"Scream\") (wd:Q2518973 \"Hellraiser\") (wd:Q1985548 \"Saw\") (wd:Q2467893 \"Psycho\") (wd:Q211013 \"The Silence of the Lambs\") (wd:Q209758 \"Alien\") (wd:Q2423675 \"The Ring\") (wd:Q2558762 \"The Grudge\") (wd:Q166150 \"The Omen\") (wd:Q2601499 \"The Shining\") (wd:Q1442062 \"Nosferatu\") (wd:Q60629269 \"Gremlins\") (wd:Q85743168 \"Terrifier\") (wd:Q2552758 \"The Evil Dead\") (wd:Q16605326 \"The Fly\") (wd:Q3515125 \"The Exorcist\") (wd:Q3931684 \"The Exorcist\") (wd:Q3866197 \"Creature from the Black Lagoon\") (wd:Q20859177 \"Hatchet\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T07:23:46.180Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T13:20:00.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "film",
+   "label": "Film",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "horror icon",
+  "many": "horror icons",
+  "columns": {
+   "film": {
+    "role": "code",
+    "pick": "Which film or series does the horror icon {label} come from?",
+    "statement": "{label} comes from {value}.",
+    "match": "Match each horror icon to the film or series they come from.",
+    "reverse": "Which horror icon comes from {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Michael Myers",
+   "qid": "Q1426891",
+   "fame": 0.649,
+   "film": "Halloween",
+   "description": "fictional character in the Halloween franchise",
+   "hook": "returns to his Illinois hometown to stalk teenagers while hiding behind a blank white mask",
+   "known": 0.8,
+   "kind": "slasher-villain"
+  },
+  {
+   "label": "Hannibal Lecter",
+   "qid": "Q211013",
+   "fame": 0.635,
+   "film": "The Silence of the Lambs",
+   "description": "fictional character created by Thomas Harris",
+   "hook": "is a refined former psychiatrist who advises FBI agents from inside a prison cell",
+   "known": 0.85,
+   "kind": "psychological-villain"
+  },
+  {
+   "label": "Pennywise",
+   "qid": "Q3899150",
+   "fame": 0.621,
+   "film": "It",
+   "description": "main antagonist of Stephen King's novel It",
+   "hook": "is a shapeshifting entity that lures kids in a Maine town by appearing as a dancing clown",
+   "known": 0.8,
+   "kind": "supernatural-entity"
+  },
+  {
+   "label": "Jason Voorhees",
+   "qid": "Q366957",
+   "fame": 0.619,
+   "film": "Friday the 13th",
+   "description": "main character of the Friday the 13th series",
+   "hook": "haunts a lakeside summer camp while wearing a hockey mask",
+   "known": 0.8,
+   "kind": "slasher-villain"
+  },
+  {
+   "label": "Pinhead",
+   "qid": "Q2518973",
+   "fame": 0.595,
+   "film": "Hellraiser",
+   "description": "fictional character from the Hellraiser series",
+   "hook": "is a bald, leather-clad figure whose head is studded with nails",
+   "known": 0.4,
+   "kind": "supernatural-entity"
+  },
+  {
+   "label": "Freddy Krueger",
+   "qid": "Q329466",
+   "fame": 0.583,
+   "film": "A Nightmare on Elm Street",
+   "description": "the main antagonist of the A Nightmare on Elm Street film series",
+   "hook": "attacks teenagers in their dreams wearing a striped sweater and a glove with blades",
+   "known": 0.85,
+   "kind": "slasher-villain"
+  },
+  {
+   "label": "Xenomorph",
+   "qid": "Q209758",
+   "fame": 0.564,
+   "film": "Alien",
+   "description": "fictional extraterrestrial species from the Alien film series",
+   "hook": "is a parasitic extraterrestrial predator that stalks a spaceship crew",
+   "known": 0.9,
+   "kind": "alien-creature"
+  },
+  {
+   "label": "Art the Clown",
+   "qid": "Q85743168",
+   "fame": 0.548,
+   "film": "Terrifier",
+   "description": "main antagonist of the Terrifier franchise",
+   "hook": null,
+   "known": 0.15,
+   "kind": "indie-modern-villain"
+  },
+  {
+   "label": "Leatherface",
+   "qid": "Q1647348",
+   "fame": 0.535,
+   "film": "The Texas Chain Saw Massacre",
+   "description": "fictional character in the Texas Chainsaw Massacre franchise",
+   "hook": "is a hulking figure in a grisly face mask from a rural family, armed with a revving saw",
+   "known": 0.7,
+   "kind": "slasher-villain"
+  },
+  {
+   "label": "Norman Bates",
+   "qid": "Q2467893",
+   "fame": 0.534,
+   "film": "Psycho",
+   "description": "fictional character",
+   "hook": "runs a roadside motel and is dominated by his possessive mother",
+   "known": 0.85,
+   "kind": "psychological-villain"
+  },
+  {
+   "label": "Count Orlok",
+   "qid": "Q1442062",
+   "fame": 0.517,
+   "film": "Nosferatu",
+   "description": "title character in the film Nosferatu",
+   "hook": null,
+   "known": 0.3,
+   "kind": "supernatural-entity"
+  },
+  {
+   "label": "Chucky",
+   "qid": "Q25097",
+   "fame": 0.512,
+   "film": "Child's Play",
+   "description": "horror film villain",
+   "hook": "is a doll possessed by a killer's soul, with a foul mouth and a knife",
+   "known": 0.6,
+   "kind": "possessed-doll"
+  },
+  {
+   "label": "Ghostface",
+   "qid": "Q2444720",
+   "fame": 0.511,
+   "film": "Scream",
+   "description": "shared identity of the antagonists in the Scream media franchise",
+   "hook": "hides behind a black robe and a pale, wailing mask while taunting victims over the phone",
+   "known": 0.75,
+   "kind": "slasher-villain"
+  },
+  {
+   "label": "Jigsaw",
+   "qid": "Q1985548",
+   "fame": 0.506,
+   "film": "Saw",
+   "description": "fictional character from the film series Saw",
+   "hook": "is a former engineer and architect who devises elaborate traps for his captives",
+   "known": 0.75,
+   "kind": "psychological-villain"
+  },
+  {
+   "label": "Ash Williams",
+   "qid": "Q2552758",
+   "fame": 0.504,
+   "film": "The Evil Dead",
+   "description": "fictional character from the Evil Dead series",
+   "hook": "is a wisecracking hero who fights demon-possessed creatures with a chainsaw for a hand and a shotgun",
+   "known": 0.5,
+   "kind": "survivor-protagonist"
+  }
+ ]
+}

@@ -1,0 +1,688 @@
+{
+ "id": "list.geography.french-departments",
+ "title": "French Departments",
+ "prompt": "Name a department of France",
+ "genre": "society",
+ "category": "geography",
+ "topic": "borders-and-maps",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q6465 . FILTER NOT EXISTS { ?item wdt:P576 [] } } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-10-04T09:51:23.784Z"
+ },
+ "rows": [
+  {
+   "label": "Vendée",
+   "qid": "Q12798",
+   "fame": 0.425,
+   "also": [
+    "Venge",
+    "La Vendée"
+   ]
+  },
+  {
+   "label": "Pas-de-Calais",
+   "qid": "Q12689",
+   "fame": 0.41,
+   "also": []
+  },
+  {
+   "label": "Dordogne",
+   "qid": "Q3357",
+   "fame": 0.403,
+   "also": [
+    "Department of Dordogne"
+   ]
+  },
+  {
+   "label": "Haute-Savoie",
+   "qid": "Q12751",
+   "fame": 0.381,
+   "also": [
+    "Upper Savoy"
+   ]
+  },
+  {
+   "label": "Seine-Saint-Denis",
+   "qid": "Q12761",
+   "fame": 0.38,
+   "also": [
+    "Seine-St.-Denis"
+   ]
+  },
+  {
+   "label": "Alpes-Maritimes",
+   "qid": "Q3139",
+   "fame": 0.376,
+   "also": [
+    "Aups Maritims"
+   ]
+  },
+  {
+   "label": "Nord",
+   "qid": "Q12661",
+   "fame": 0.375,
+   "also": [
+    "North",
+    "Northern Department"
+   ]
+  },
+  {
+   "label": "Ardèche",
+   "qid": "Q3148",
+   "fame": 0.374,
+   "also": []
+  },
+  {
+   "label": "Jura",
+   "qid": "Q3120",
+   "fame": 0.367,
+   "also": []
+  },
+  {
+   "label": "Gironde",
+   "qid": "Q12526",
+   "fame": 0.366,
+   "also": [
+    "Bec-d'Ambès",
+    "Department of Gironde",
+    "Gironda"
+   ]
+  },
+  {
+   "label": "Calvados",
+   "qid": "Q3249",
+   "fame": 0.361,
+   "also": []
+  },
+  {
+   "label": "Savoie",
+   "qid": "Q12745",
+   "fame": 0.361,
+   "also": [
+    "Savoy"
+   ]
+  },
+  {
+   "label": "Bouches-du-Rhône",
+   "qid": "Q3240",
+   "fame": 0.359,
+   "also": [
+    "Mouths of the Rhône"
+   ]
+  },
+  {
+   "label": "Hauts-de-Seine",
+   "qid": "Q12543",
+   "fame": 0.359,
+   "also": [
+    "Heights of Seine",
+    "Seine Heights",
+    "Upper Seine"
+   ]
+  },
+  {
+   "label": "Moselle",
+   "qid": "Q12652",
+   "fame": 0.359,
+   "also": []
+  },
+  {
+   "label": "Yvelines",
+   "qid": "Q12820",
+   "fame": 0.351,
+   "also": []
+  },
+  {
+   "label": "Côte-d’Or",
+   "qid": "Q3342",
+   "fame": 0.348,
+   "also": []
+  },
+  {
+   "label": "Loire-Atlantique",
+   "qid": "Q3068",
+   "fame": 0.348,
+   "also": [
+    "Loire-Inferieure"
+   ]
+  },
+  {
+   "label": "Finistère",
+   "qid": "Q3389",
+   "fame": 0.347,
+   "also": [
+    "Finisterre"
+   ]
+  },
+  {
+   "label": "Pyrénées-Orientales",
+   "qid": "Q12709",
+   "fame": 0.347,
+   "also": [
+    "Eastern Pyrenees",
+    "Pays Catalan"
+   ]
+  },
+  {
+   "label": "Vaucluse",
+   "qid": "Q12792",
+   "fame": 0.343,
+   "also": []
+  },
+  {
+   "label": "Pyrénées-Atlantiques",
+   "qid": "Q12703",
+   "fame": 0.336,
+   "also": [
+    "Basses-Pyrénées",
+    "Atlantic Pyrenees",
+    "Lower Pyrenees"
+   ]
+  },
+  {
+   "label": "Bas-Rhin",
+   "qid": "Q12717",
+   "fame": 0.333,
+   "also": [
+    "Lower Rhine"
+   ]
+  },
+  {
+   "label": "Seine-et-Marne",
+   "qid": "Q12753",
+   "fame": 0.328,
+   "also": []
+  },
+  {
+   "label": "Aveyron",
+   "qid": "Q3216",
+   "fame": 0.323,
+   "also": [
+    "Aveyron Department"
+   ]
+  },
+  {
+   "label": "Ain",
+   "qid": "Q3083",
+   "fame": 0.322,
+   "also": []
+  },
+  {
+   "label": "Val-de-Marne",
+   "qid": "Q12788",
+   "fame": 0.322,
+   "also": []
+  },
+  {
+   "label": "Isère",
+   "qid": "Q12559",
+   "fame": 0.318,
+   "also": []
+  },
+  {
+   "label": "Lozère",
+   "qid": "Q12580",
+   "fame": 0.316,
+   "also": [
+    "Losera"
+   ]
+  },
+  {
+   "label": "Morbihan",
+   "qid": "Q12642",
+   "fame": 0.316,
+   "also": []
+  },
+  {
+   "label": "Var",
+   "qid": "Q12789",
+   "fame": 0.316,
+   "also": []
+  },
+  {
+   "label": "Charente",
+   "qid": "Q3266",
+   "fame": 0.314,
+   "also": [
+    "Charente Department",
+    "département de la Charente",
+    "Department of Charente"
+   ]
+  },
+  {
+   "label": "Charente-Maritime",
+   "qid": "Q3278",
+   "fame": 0.314,
+   "also": [
+    "Charente-Inferieure"
+   ]
+  },
+  {
+   "label": "Essonne",
+   "qid": "Q3368",
+   "fame": 0.313,
+   "also": []
+  },
+  {
+   "label": "Somme",
+   "qid": "Q12770",
+   "fame": 0.313,
+   "also": []
+  },
+  {
+   "label": "Manche",
+   "qid": "Q12589",
+   "fame": 0.312,
+   "also": []
+  },
+  {
+   "label": "Aisne",
+   "qid": "Q3093",
+   "fame": 0.308,
+   "also": []
+  },
+  {
+   "label": "Alpes-de-Haute-Provence",
+   "qid": "Q3131",
+   "fame": 0.308,
+   "also": [
+    "Haute-Provence",
+    "Nord-de-Provence",
+    "Aups de Provença Auta",
+    "Basses-Alpes"
+   ]
+  },
+  {
+   "label": "Hérault",
+   "qid": "Q12545",
+   "fame": 0.307,
+   "also": [
+    "Erau"
+   ]
+  },
+  {
+   "label": "Val-d'Oise",
+   "qid": "Q12784",
+   "fame": 0.306,
+   "also": []
+  },
+  {
+   "label": "Aude",
+   "qid": "Q3207",
+   "fame": 0.299,
+   "also": [
+    "Cathar Country"
+   ]
+  },
+  {
+   "label": "Haut-Rhin",
+   "qid": "Q12722",
+   "fame": 0.299,
+   "also": [
+    "Oberelsass",
+    "Upper Rhine"
+   ]
+  },
+  {
+   "label": "Seine-Maritime",
+   "qid": "Q12758",
+   "fame": 0.299,
+   "also": [
+    "Seine-Inferieure"
+   ]
+  },
+  {
+   "label": "Côtes-d'Armor",
+   "qid": "Q3349",
+   "fame": 0.297,
+   "also": [
+    "Aodoù an Arvor",
+    "Cotes-du-Nord"
+   ]
+  },
+  {
+   "label": "Gard",
+   "qid": "Q12515",
+   "fame": 0.297,
+   "also": []
+  },
+  {
+   "label": "Landes",
+   "qid": "Q12563",
+   "fame": 0.294,
+   "also": []
+  },
+  {
+   "label": "Corrèze",
+   "qid": "Q3326",
+   "fame": 0.293,
+   "also": [
+    "Corresa"
+   ]
+  },
+  {
+   "label": "Haute-Garonne",
+   "qid": "Q12538",
+   "fame": 0.292,
+   "also": [
+    "Auta Garona",
+    "Nauta Garona",
+    "Upper Garonne"
+   ]
+  },
+  {
+   "label": "Oise",
+   "qid": "Q12675",
+   "fame": 0.29,
+   "also": []
+  },
+  {
+   "label": "Ardennes",
+   "qid": "Q3164",
+   "fame": 0.288,
+   "also": [
+    "Ardennes department"
+   ]
+  },
+  {
+   "label": "Gers",
+   "qid": "Q12517",
+   "fame": 0.286,
+   "also": []
+  },
+  {
+   "label": "Drôme",
+   "qid": "Q3364",
+   "fame": 0.285,
+   "also": []
+  },
+  {
+   "label": "Maine-et-Loire",
+   "qid": "Q12584",
+   "fame": 0.285,
+   "also": [
+    "Mayenne-et-Loire"
+   ]
+  },
+  {
+   "label": "Puy-de-Dôme",
+   "qid": "Q12694",
+   "fame": 0.285,
+   "also": []
+  },
+  {
+   "label": "Saône-et-Loire",
+   "qid": "Q12736",
+   "fame": 0.284,
+   "also": []
+  },
+  {
+   "label": "Vosges",
+   "qid": "Q3105",
+   "fame": 0.283,
+   "also": []
+  },
+  {
+   "label": "Ille-et-Vilaine",
+   "qid": "Q12549",
+   "fame": 0.282,
+   "also": []
+  },
+  {
+   "label": "Creuse",
+   "qid": "Q3353",
+   "fame": 0.281,
+   "also": []
+  },
+  {
+   "label": "Ariège",
+   "qid": "Q3184",
+   "fame": 0.28,
+   "also": [
+    "Ariege department"
+   ]
+  },
+  {
+   "label": "Meurthe-et-Moselle",
+   "qid": "Q12626",
+   "fame": 0.279,
+   "also": []
+  },
+  {
+   "label": "Hautes-Alpes",
+   "qid": "Q3125",
+   "fame": 0.277,
+   "also": []
+  },
+  {
+   "label": "Hautes-Pyrénées",
+   "qid": "Q12700",
+   "fame": 0.276,
+   "also": []
+  },
+  {
+   "label": "Allier",
+   "qid": "Q3113",
+   "fame": 0.273,
+   "also": []
+  },
+  {
+   "label": "Eure",
+   "qid": "Q3372",
+   "fame": 0.268,
+   "also": []
+  },
+  {
+   "label": "Marne",
+   "qid": "Q12594",
+   "fame": 0.267,
+   "also": []
+  },
+  {
+   "label": "Territoire de Belfort",
+   "qid": "Q12782",
+   "fame": 0.263,
+   "also": []
+  },
+  {
+   "label": "Lot",
+   "qid": "Q12576",
+   "fame": 0.261,
+   "also": []
+  },
+  {
+   "label": "Mayenne",
+   "qid": "Q12620",
+   "fame": 0.261,
+   "also": []
+  },
+  {
+   "label": "Indre",
+   "qid": "Q12553",
+   "fame": 0.259,
+   "also": [
+    "Department of Indre"
+   ]
+  },
+  {
+   "label": "Sarthe",
+   "qid": "Q12740",
+   "fame": 0.258,
+   "also": [
+    "Department of Sarthe"
+   ]
+  },
+  {
+   "label": "Yonne",
+   "qid": "Q12816",
+   "fame": 0.258,
+   "also": []
+  },
+  {
+   "label": "Cantal",
+   "qid": "Q3259",
+   "fame": 0.256,
+   "also": []
+  },
+  {
+   "label": "Haute-Loire",
+   "qid": "Q12572",
+   "fame": 0.256,
+   "also": []
+  },
+  {
+   "label": "Indre-et-Loire",
+   "qid": "Q12556",
+   "fame": 0.256,
+   "also": []
+  },
+  {
+   "label": "Lot-et-Garonne",
+   "qid": "Q12578",
+   "fame": 0.256,
+   "also": []
+  },
+  {
+   "label": "Rhône",
+   "qid": "Q46130",
+   "fame": 0.256,
+   "also": [
+    "Nouveau-Rhone"
+   ]
+  },
+  {
+   "label": "Deux-Sèvres",
+   "qid": "Q12765",
+   "fame": 0.255,
+   "also": []
+  },
+  {
+   "label": "Doubs",
+   "qid": "Q3361",
+   "fame": 0.255,
+   "also": []
+  },
+  {
+   "label": "Haute-Vienne",
+   "qid": "Q12808",
+   "fame": 0.255,
+   "also": []
+  },
+  {
+   "label": "Tarn",
+   "qid": "Q12772",
+   "fame": 0.255,
+   "also": [
+    "Tarn department"
+   ]
+  },
+  {
+   "label": "Orne",
+   "qid": "Q12679",
+   "fame": 0.254,
+   "also": []
+  },
+  {
+   "label": "Loire",
+   "qid": "Q12569",
+   "fame": 0.253,
+   "also": [
+    "Department of Loire"
+   ]
+  },
+  {
+   "label": "Loiret",
+   "qid": "Q12574",
+   "fame": 0.25,
+   "also": []
+  },
+  {
+   "label": "Meuse",
+   "qid": "Q12631",
+   "fame": 0.25,
+   "also": []
+  },
+  {
+   "label": "Aube",
+   "qid": "Q3194",
+   "fame": 0.248,
+   "also": []
+  },
+  {
+   "label": "Vienne",
+   "qid": "Q12804",
+   "fame": 0.248,
+   "also": [
+    "La Vienne"
+   ]
+  },
+  {
+   "label": "Nièvre",
+   "qid": "Q12657",
+   "fame": 0.246,
+   "also": []
+  },
+  {
+   "label": "Corse-du-Sud",
+   "qid": "Q3336",
+   "fame": 0.242,
+   "also": [
+    "Corsica di u Sudu",
+    "Corsica suttana",
+    "Pumonte",
+    "Pumonti",
+    "Southern Corsica"
+   ]
+  },
+  {
+   "label": "Eure-et-Loir",
+   "qid": "Q3377",
+   "fame": 0.239,
+   "also": []
+  },
+  {
+   "label": "Loir-et-Cher",
+   "qid": "Q12564",
+   "fame": 0.237,
+   "also": []
+  },
+  {
+   "label": "Haute-Marne",
+   "qid": "Q12607",
+   "fame": 0.233,
+   "also": []
+  },
+  {
+   "label": "Tarn-et-Garonne",
+   "qid": "Q12779",
+   "fame": 0.229,
+   "also": []
+  },
+  {
+   "label": "Haute-Saône",
+   "qid": "Q12730",
+   "fame": 0.228,
+   "also": []
+  },
+  {
+   "label": "Haute-Corse",
+   "qid": "Q3334",
+   "fame": 0.227,
+   "also": [
+    "Alta Corsica",
+    "Corsica suprana",
+    "Upper Corsica",
+    "Cismonte"
+   ]
+  },
+  {
+   "label": "Cher",
+   "qid": "Q3286",
+   "fame": 0.226,
+   "also": []
+  }
+ ]
+}

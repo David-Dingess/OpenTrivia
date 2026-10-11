@@ -1,0 +1,319 @@
+{
+ "id": "table.tech.software-makers",
+ "kind": "table",
+ "title": "Famous software and the company that made it",
+ "genre": "science-math-tech",
+ "category": "tech",
+ "topic": "coding",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?devLabel WHERE { { SELECT ?item (SAMPLE(?d) AS ?dev) (COUNT(DISTINCT ?d) AS ?nDev) WHERE { ?item wdt:P31/wdt:P279* wd:Q7397 ; wdt:P178 ?d ; wikibase:sitelinks ?sl . FILTER(?sl >= 60) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nDev = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T17:44:02.053Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T17:44:02.053Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "developer",
+   "label": "Developer",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "piece of software",
+  "many": "pieces of software",
+  "columns": {
+   "developer": {
+    "role": "link",
+    "pick": "Who made {label}?",
+    "statement": "{label} was made by {value}.",
+    "match": "Match each piece of software to the company or person behind it.",
+    "odd": "Three of these were made by {value}. Which one wasn't?",
+    "all": "Tap all {n} pieces of software made by {value}.",
+    "reverse": "Which of these did {value} make?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "ChatGPT",
+   "qid": "Q115564437",
+   "fame": 0.945,
+   "developer": "OpenAI",
+   "description": "artificial intelligence chatbot developed by OpenAI",
+   "hook": "is an AI assistant that answers questions and writes essays from typed prompts",
+   "known": 0.8,
+   "kind": "ai assistant"
+  },
+  {
+   "label": "Gmail",
+   "qid": "Q9334",
+   "fame": 0.72,
+   "developer": "Google",
+   "description": "email service developed by Google",
+   "hook": "is a free inbox service that wowed users by offering a huge storage allowance and fast search",
+   "known": 0.95,
+   "kind": "email service"
+  },
+  {
+   "label": "Android",
+   "qid": "Q94",
+   "fame": 0.667,
+   "developer": "Google",
+   "description": "operating system created by Google for use on mobile devices",
+   "hook": "is the world's most widely used phone operating system, named after a humanoid robot",
+   "known": 0.95,
+   "kind": "operating system"
+  },
+  {
+   "label": "macOS",
+   "qid": "Q14116",
+   "fame": 0.658,
+   "developer": "Apple Inc.",
+   "description": "operating system for Apple computers",
+   "hook": "is the desktop system powering iMac and MacBook computers, once known as OS X",
+   "known": 0.8,
+   "kind": "operating system"
+  },
+  {
+   "label": "Windows 11",
+   "qid": "Q107269746",
+   "fame": 0.623,
+   "developer": "Microsoft",
+   "description": "personal computer operating system by Microsoft released in 2021",
+   "hook": "is a desktop operating system known for its centered taskbar and rounded corners",
+   "known": 0.6,
+   "kind": "operating system"
+  },
+  {
+   "label": "iOS",
+   "qid": "Q48493",
+   "fame": 0.611,
+   "developer": "Apple Inc.",
+   "description": "mobile operating system by Apple Inc.",
+   "hook": "is the software that runs the iPhone and iPad",
+   "known": 0.95,
+   "kind": "operating system"
+  },
+  {
+   "label": "Windows XP",
+   "qid": "Q11248",
+   "fame": 0.574,
+   "developer": "Microsoft",
+   "description": "personal computer operating system developed by Microsoft",
+   "hook": "was a hugely popular desktop system known for its green Start button and rolling-hills wallpaper",
+   "known": 0.8,
+   "kind": "operating system"
+  },
+  {
+   "label": "App Store",
+   "qid": "Q368215",
+   "fame": 0.572,
+   "developer": "Apple Inc.",
+   "description": "digital app distribution platform for iOS/iPadOS",
+   "hook": "is where iPhone owners download games and programs",
+   "known": 0.8,
+   "kind": "software"
+  },
+  {
+   "label": "Safari",
+   "qid": "Q35773",
+   "fame": 0.572,
+   "developer": "Apple Inc.",
+   "description": "web browser developed by Apple",
+   "hook": "is the default web browser on iPhones and Macs, with a compass icon",
+   "known": 0.6,
+   "kind": "web browser"
+  },
+  {
+   "label": "Ubuntu",
+   "qid": "Q381",
+   "fame": 0.567,
+   "developer": "Canonical Ltd.",
+   "description": "Linux distribution developed by Canonical",
+   "hook": "is a popular free Linux system named after a southern African philosophy of shared humanity",
+   "known": 0.4,
+   "kind": "operating system"
+  },
+  {
+   "label": "Messenger",
+   "qid": "Q116947",
+   "fame": 0.566,
+   "developer": "Meta Platforms",
+   "description": "instant messaging app developed by Meta Platforms",
+   "hook": "is a chat service tied to the world's biggest social network, with a blue bubble logo",
+   "known": 0.8,
+   "kind": "messaging app"
+  },
+  {
+   "label": "Windows 7",
+   "qid": "Q11215",
+   "fame": 0.564,
+   "developer": "Microsoft",
+   "description": "personal computer operating system by Microsoft that was released in 2009",
+   "hook": "was a desktop system widely seen as a fix for its unloved predecessor, with a glassy Aero look",
+   "known": 0.8,
+   "kind": "operating system"
+  },
+  {
+   "label": "Scratch",
+   "qid": "Q275131",
+   "fame": 0.556,
+   "developer": "MIT Media Lab",
+   "description": "programming language learning environment",
+   "hook": "is a block-based coding tool where kids snap colorful pieces together, with a cat mascot",
+   "known": 0.4,
+   "kind": "programming tool"
+  },
+  {
+   "label": "LibreOffice",
+   "qid": "Q10135",
+   "fame": 0.553,
+   "developer": "The Document Foundation",
+   "description": "free and open-source productivity software suite by The Document Foundation",
+   "hook": null,
+   "known": 0.2,
+   "kind": "software"
+  },
+  {
+   "label": "MS-DOS",
+   "qid": "Q47604",
+   "fame": 0.546,
+   "developer": "Microsoft",
+   "description": "Microsoft operating system",
+   "hook": "was a text-only command-line system that ran early IBM-compatible PCs",
+   "known": 0.6,
+   "kind": "operating system"
+  },
+  {
+   "label": "LaTeX",
+   "qid": "Q5310",
+   "fame": 0.542,
+   "developer": "Leslie Lamport",
+   "description": "document markup language",
+   "hook": null,
+   "known": 0.05,
+   "kind": "programming tool"
+  },
+  {
+   "label": "Windows Vista",
+   "qid": "Q11230",
+   "fame": 0.532,
+   "developer": "Microsoft",
+   "description": "personal computer operating system by Microsoft that was released in 2007",
+   "hook": "was a desktop system criticized for slow performance and constant permission pop-ups",
+   "known": 0.4,
+   "kind": "operating system"
+  },
+  {
+   "label": "Threads",
+   "qid": "Q120281745",
+   "fame": 0.516,
+   "developer": "Meta Platforms",
+   "description": "social networking site operated by Meta Platforms",
+   "hook": "is a text-based social network launched as a rival to the bird-logo site once called Twitter",
+   "known": 0.4,
+   "kind": "messaging app"
+  },
+  {
+   "label": "iTunes",
+   "qid": "Q9589",
+   "fame": 0.514,
+   "developer": "Apple Inc.",
+   "description": "media player and library software",
+   "hook": "was the music player and shop that sold songs for 99 cents and synced iPods",
+   "known": 0.8,
+   "kind": "software"
+  },
+  {
+   "label": "Windows 95",
+   "qid": "Q83370",
+   "fame": 0.506,
+   "developer": "Microsoft",
+   "description": "personal computer operating system by Microsoft",
+   "hook": "introduced the Start button and taskbar to millions of desktops",
+   "known": 0.6,
+   "kind": "operating system"
+  },
+  {
+   "label": "OpenOffice.org",
+   "qid": "Q511977",
+   "fame": 0.498,
+   "developer": "Sun Microsystems",
+   "description": "discontinued free software ofice suite",
+   "hook": null,
+   "known": 0.2,
+   "kind": "software"
+  },
+  {
+   "label": "Internet Explorer",
+   "qid": "Q1575",
+   "fame": 0.497,
+   "developer": "Microsoft",
+   "description": "discontinued web browser by Microsoft",
+   "hook": "was the blue-e browser once installed on nearly every PC before being retired after long ridicule",
+   "known": 0.95,
+   "kind": "web browser"
+  },
+  {
+   "label": "Vim",
+   "qid": "Q131382",
+   "fame": 0.487,
+   "developer": "Bram Moolenaar",
+   "description": "text editor, improved version of Vi",
+   "hook": null,
+   "known": 0.05,
+   "kind": "programming tool"
+  },
+  {
+   "label": "MediaWiki",
+   "qid": "Q83",
+   "fame": 0.479,
+   "developer": "Wikimedia Foundation",
+   "description": "free and open-source wiki software, developed by the Wikimedia Foundation",
+   "hook": null,
+   "known": 0.2,
+   "kind": "programming tool"
+  },
+  {
+   "label": "Kotlin",
+   "qid": "Q3816639",
+   "fame": 0.461,
+   "developer": "JetBrains",
+   "description": "general-purpose programming language derived from Java",
+   "hook": null,
+   "known": 0.05,
+   "kind": "programming tool"
+  },
+  {
+   "label": "AutoCAD",
+   "qid": "Q83570",
+   "fame": 0.46,
+   "developer": "Autodesk",
+   "description": "commercial computer-aided design (CAD) and drafting software application",
+   "hook": null,
+   "known": 0.2,
+   "kind": "design application"
+  }
+ ]
+}

@@ -1,0 +1,408 @@
+{
+ "id": "list.geography.left-driving-countries",
+ "kind": "list",
+ "title": "Countries that drive on the left",
+ "genre": "society",
+ "category": "geography",
+ "topic": "borders-and-maps",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { ?item wdt:P31 wd:Q3624078 . FILTER NOT EXISTS { ?item wdt:P31 wd:Q3024240 } FILTER NOT EXISTS { ?item wdt:P576 [] } ?item wdt:P1622 wd:Q11920728 . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T04:17:40.094Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T04:17:40.094Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "country",
+  "many": "countries",
+  "columns": {}
+ },
+ "impostors": [
+  {
+   "label": "United States",
+   "qid": "Q30",
+   "why": "not a member: traffic drives on the right there"
+  },
+  {
+   "label": "China",
+   "qid": "Q148",
+   "why": "not a member: traffic drives on the right there"
+  },
+  {
+   "label": "Canada",
+   "qid": "Q16",
+   "why": "not a member: traffic drives on the right there"
+  },
+  {
+   "label": "Russia",
+   "qid": "Q159",
+   "why": "not a member: traffic drives on the right there"
+  },
+  {
+   "label": "Germany",
+   "qid": "Q183",
+   "why": "not a member: traffic drives on the right there"
+  },
+  {
+   "label": "Norway",
+   "qid": "Q20",
+   "why": "not a member: traffic drives on the right there"
+  },
+  {
+   "label": "Turkey",
+   "qid": "Q43",
+   "why": "not a member: traffic drives on the right there"
+  },
+  {
+   "label": "Brazil",
+   "qid": "Q155",
+   "why": "not a member: traffic drives on the right there"
+  }
+ ],
+ "rows": [
+  {
+   "label": "Nepal",
+   "qid": "Q837",
+   "fame": 0.831,
+   "description": "country in South Asia"
+  },
+  {
+   "label": "United Kingdom",
+   "qid": "Q145",
+   "fame": 0.829,
+   "description": "island country in north-west Europe"
+  },
+  {
+   "label": "India",
+   "qid": "Q668",
+   "fame": 0.812,
+   "description": "country in South Asia"
+  },
+  {
+   "label": "Australia",
+   "qid": "Q408",
+   "fame": 0.786,
+   "description": "country in Oceania"
+  },
+  {
+   "label": "Japan",
+   "qid": "Q17",
+   "fame": 0.776,
+   "description": "island country in East Asia"
+  },
+  {
+   "label": "Singapore",
+   "qid": "Q334",
+   "fame": 0.776,
+   "description": "sovereign island country and city-state in maritime Southeast Asia"
+  },
+  {
+   "label": "Indonesia",
+   "qid": "Q252",
+   "fame": 0.752,
+   "description": "island country in Southeast Asia and Oceania"
+  },
+  {
+   "label": "Pakistan",
+   "qid": "Q843",
+   "fame": 0.743,
+   "description": "sovereign state in South Asia"
+  },
+  {
+   "label": "New Zealand",
+   "qid": "Q664",
+   "fame": 0.736,
+   "description": "island country in the southwest Pacific Ocean"
+  },
+  {
+   "label": "South Africa",
+   "qid": "Q258",
+   "fame": 0.736,
+   "description": "country in southern Africa"
+  },
+  {
+   "label": "Malaysia",
+   "qid": "Q833",
+   "fame": 0.735,
+   "description": "country in Southeast Asia"
+  },
+  {
+   "label": "Argentina",
+   "qid": "Q414",
+   "fame": 0.729,
+   "description": "country in South America"
+  },
+  {
+   "label": "Malta",
+   "qid": "Q233",
+   "fame": 0.727,
+   "description": "country in Southern Europe situated on an archipelago in the Mediterranean Sea"
+  },
+  {
+   "label": "Sri Lanka",
+   "qid": "Q854",
+   "fame": 0.727,
+   "description": "island country in South Asia"
+  },
+  {
+   "label": "Cyprus",
+   "qid": "Q229",
+   "fame": 0.725,
+   "description": "country in the Mediterranean Sea"
+  },
+  {
+   "label": "Mauritius",
+   "qid": "Q1027",
+   "fame": 0.724,
+   "description": "island sovereign state off of East Africa in the Indian Ocean"
+  },
+  {
+   "label": "Bangladesh",
+   "qid": "Q902",
+   "fame": 0.723,
+   "description": "country in South Asia"
+  },
+  {
+   "label": "Thailand",
+   "qid": "Q869",
+   "fame": 0.713,
+   "description": "country in Southeast Asia"
+  },
+  {
+   "label": "Ireland",
+   "qid": "Q27",
+   "fame": 0.703,
+   "description": "country in Northwestern Europe"
+  },
+  {
+   "label": "Kiribati",
+   "qid": "Q710",
+   "fame": 0.698,
+   "description": "island sovereign state in the central Pacific Ocean"
+  },
+  {
+   "label": "Nauru",
+   "qid": "Q697",
+   "fame": 0.696,
+   "description": "country in Oceania"
+  },
+  {
+   "label": "Papua New Guinea",
+   "qid": "Q691",
+   "fame": 0.696,
+   "description": "country in Oceania"
+  },
+  {
+   "label": "Uganda",
+   "qid": "Q1036",
+   "fame": 0.692,
+   "description": "country in East Africa"
+  },
+  {
+   "label": "Guyana",
+   "qid": "Q734",
+   "fame": 0.691,
+   "description": "country in South America"
+  },
+  {
+   "label": "Bhutan",
+   "qid": "Q917",
+   "fame": 0.687,
+   "description": "sovereign state in South Asia"
+  },
+  {
+   "label": "Maldives",
+   "qid": "Q826",
+   "fame": 0.687,
+   "description": "sovereign state in South Asia, situated on an archipelago in the Arabian Sea"
+  },
+  {
+   "label": "Zimbabwe",
+   "qid": "Q954",
+   "fame": 0.687,
+   "description": "sovereign state in southern Africa"
+  },
+  {
+   "label": "Suriname",
+   "qid": "Q730",
+   "fame": 0.684,
+   "description": "country in South America"
+  },
+  {
+   "label": "Tanzania",
+   "qid": "Q924",
+   "fame": 0.684,
+   "description": "country in East Africa"
+  },
+  {
+   "label": "Eswatini",
+   "qid": "Q1050",
+   "fame": 0.682,
+   "description": "sovereign state in southern Africa"
+  },
+  {
+   "label": "Brunei",
+   "qid": "Q921",
+   "fame": 0.677,
+   "description": "sovereign country and sultanate on the island of Borneo in south-east Asia, member of the Commonwealth of Nations"
+  },
+  {
+   "label": "Fiji",
+   "qid": "Q712",
+   "fame": 0.676,
+   "description": "island sovereign state in Oceania"
+  },
+  {
+   "label": "Seychelles",
+   "qid": "Q1042",
+   "fame": 0.673,
+   "description": "island sovereign state off the eastern coast of Africa"
+  },
+  {
+   "label": "Jamaica",
+   "qid": "Q766",
+   "fame": 0.668,
+   "description": "island state in the Caribbean Sea"
+  },
+  {
+   "label": "Namibia",
+   "qid": "Q1030",
+   "fame": 0.662,
+   "description": "country in Southern Africa"
+  },
+  {
+   "label": "Kenya",
+   "qid": "Q114",
+   "fame": 0.659,
+   "description": "country in Eastern Africa"
+  },
+  {
+   "label": "The Bahamas",
+   "qid": "Q778",
+   "fame": 0.657,
+   "description": "island sovereign state in the West Indies"
+  },
+  {
+   "label": "Trinidad and Tobago",
+   "qid": "Q754",
+   "fame": 0.65,
+   "description": "island sovereign state in the Caribbean"
+  },
+  {
+   "label": "Timor-Leste",
+   "qid": "Q574",
+   "fame": 0.644,
+   "description": "sovereign state situated on several islands in Southeast Asia"
+  },
+  {
+   "label": "Barbados",
+   "qid": "Q244",
+   "fame": 0.639,
+   "description": "island nation in the Caribbean"
+  },
+  {
+   "label": "Botswana",
+   "qid": "Q963",
+   "fame": 0.634,
+   "description": "sovereign state in Southern Africa"
+  },
+  {
+   "label": "Mozambique",
+   "qid": "Q1029",
+   "fame": 0.631,
+   "description": "country in Southeastern Africa; the current form of Mozambique since 1975"
+  },
+  {
+   "label": "Lesotho",
+   "qid": "Q1013",
+   "fame": 0.629,
+   "description": "sovereign state in southern Africa"
+  },
+  {
+   "label": "Grenada",
+   "qid": "Q769",
+   "fame": 0.623,
+   "description": "island sovereign state in the Caribbean Sea"
+  },
+  {
+   "label": "Zambia",
+   "qid": "Q953",
+   "fame": 0.619,
+   "description": "country at the crossroads of Central and Southern Africa"
+  },
+  {
+   "label": "Saint Lucia",
+   "qid": "Q760",
+   "fame": 0.618,
+   "description": "island sovereign state in the Caribbean Sea"
+  },
+  {
+   "label": "Tuvalu",
+   "qid": "Q672",
+   "fame": 0.616,
+   "description": "country in Oceania"
+  },
+  {
+   "label": "Samoa",
+   "qid": "Q683",
+   "fame": 0.615,
+   "description": "sovereign state made up of six islands in the Pacific Ocean"
+  },
+  {
+   "label": "Malawi",
+   "qid": "Q1020",
+   "fame": 0.61,
+   "description": "sovereign state in Africa"
+  },
+  {
+   "label": "Dominica",
+   "qid": "Q784",
+   "fame": 0.608,
+   "description": "island sovereign state in the Caribbean Sea"
+  },
+  {
+   "label": "Tonga",
+   "qid": "Q678",
+   "fame": 0.604,
+   "description": "sovereign state in Oceania, situated on an archipelago"
+  },
+  {
+   "label": "Saint Kitts and Nevis",
+   "qid": "Q763",
+   "fame": 0.6,
+   "description": "island sovereign state in the Caribbean Sea"
+  },
+  {
+   "label": "Solomon Islands",
+   "qid": "Q685",
+   "fame": 0.595,
+   "description": "island sovereign state in Oceania"
+  },
+  {
+   "label": "Antigua and Barbuda",
+   "qid": "Q781",
+   "fame": 0.582,
+   "description": "island sovereign state in the Caribbean Sea"
+  },
+  {
+   "label": "Saint Vincent and the Grenadines",
+   "qid": "Q757",
+   "fame": 0.581,
+   "description": "island sovereign state in the Caribbean Sea"
+  }
+ ]
+}

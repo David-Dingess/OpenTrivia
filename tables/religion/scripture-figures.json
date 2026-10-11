@@ -1,0 +1,572 @@
+{
+ "id": "table.religion.scripture-figures",
+ "kind": "table",
+ "title": "Figures of scripture",
+ "genre": "society",
+ "category": "religion",
+ "topic": "world-religions",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?knownFor WHERE { VALUES (?item ?knownFor) { (wd:Q9077 \"led the Exodus out of Egypt\") (wd:Q9181 \"ready to sacrifice his only son\") (wd:Q345 \"mother of Jesus\") (wd:Q70899 \"the first man\") (wd:Q37085 \"wise king who built the Temple\") (wd:Q41370 \"shepherd boy who slew a giant\") (wd:Q40662 \"baptised Jesus in the Jordan\") (wd:Q830183 \"the first woman\") (wd:Q81422 \"built the ark\") (wd:Q289957 \"wrestled an angel, father of twelve tribes\") (wd:Q43600 \"tax collector turned apostle\") (wd:Q671872 \"son Abraham nearly sacrificed\") (wd:Q44015 \"the beloved disciple\") (wd:Q43399 \"fisherman apostle, brother of Peter\") (wd:Q159888 \"royal visitor who tested Solomon\") (wd:Q128267 \"carpenter, husband of Mary\") (wd:Q43999 \"fisherman apostle, brother of John\") (wd:Q133507 \"prophet taken up in a chariot of fire\") (wd:Q81018 \"betrayed Jesus for silver\") (wd:Q145746 \"sold into Egypt, coat of many colours\") (wd:Q51676 \"Moses's brother, first high priest\") (wd:Q43669 \"the doubting apostle\") (wd:Q194808 \"Abraham's wife, mother of Isaac\") (wd:Q188794 \"major prophet of Israel\") (wd:Q171724 \"survived the lions' den\") (wd:Q107626 \"third son of Adam\") (wd:Q214648 \"strongman undone by a haircut\") (wd:Q28730 \"first king of Israel\") (wd:Q40574 \"fled Sodom, his wife turned to salt\") (wd:Q179962 \"suffered much but kept faith\") (wd:Q2468262 \"swallowed by a great fish\") (wd:Q183403 \"Abraham's son by Hagar\") (wd:Q200902 \"one of Noah's three sons\") (wd:Q229702 \"one of Noah's three sons\") (wd:Q200637 \"one of Noah's three sons\") (wd:Q6577515 \"prophet who anointed Saul and David\") (wd:Q7734 \"led Israel into Canaan, Jericho\") (wd:Q192785 \"giant slain by a shepherd boy\") (wd:Q213027 \"walked with God, taken without dying\") (wd:Q158825 \"the weeping prophet\") (wd:Q194064 \"prophet of the valley of dry bones\") (wd:Q214617 \"Sarah's servant, mother of Ishmael\") (wd:Q732413 \"Jewish queen of Persia who saved her people\") (wd:Q220822 \"sold his birthright for stew\") (wd:Q40520 \"Isaac's wife\") (wd:Q156290 \"the oldest man in the Bible\") (wd:Q213633 \"judge and prophetess who led Israel to victory\") (wd:Q207389 \"Jacob's beloved wife\") (wd:Q539890 \"raised from the dead by Jesus\") (wd:Q205372 \"David's rebellious son\") (wd:Q1938388 \"Moses's sister\") (wd:Q1774982 \"loyal daughter-in-law of Naomi\") (wd:Q232453 \"sister of Mary and Lazarus\") (wd:Q176125 \"judge who won with three hundred men\") (wd:Q295084 \"Pharisee who visited Jesus by night\") (wd:Q235849 \"mother of John the Baptist\") (wd:Q128847 \"Jacob's first wife\") (wd:Q206238 \"prophet and successor of Elijah\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T05:21:35.777Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T05:21:35.777Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "known_for",
+   "label": "Known for",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "figure of scripture",
+  "many": "figures of scripture",
+  "wildcard": "person",
+  "hookAsk": "Which figure of scripture {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "David",
+   "qid": "Q41370",
+   "fame": 0.654,
+   "known_for": "shepherd boy who slew a giant",
+   "description": "king of Israel and Judah",
+   "hook": "is credited with writing many psalms and with making Jerusalem his capital",
+   "known": 0.8,
+   "kind": "king"
+  },
+  {
+   "label": "Moses",
+   "qid": "Q9077",
+   "fame": 0.648,
+   "known_for": "led the Exodus out of Egypt",
+   "description": "Abrahamic prophet said to have led the Israelites out of Egypt",
+   "hook": "led his people out of slavery and received the Ten Commandments on a mountain",
+   "known": 0.95,
+   "kind": "prophet"
+  },
+  {
+   "label": "Solomon",
+   "qid": "Q37085",
+   "fame": 0.648,
+   "known_for": "wise king who built the Temple",
+   "description": "king of Israel and son of David",
+   "hook": "is remembered for his wisdom, including a famous ruling over two women and a baby",
+   "known": 0.8,
+   "kind": "king"
+  },
+  {
+   "label": "Abraham",
+   "qid": "Q9181",
+   "fame": 0.644,
+   "known_for": "ready to sacrifice his only son",
+   "description": "foundational legendary figure among adherents of the eponymous Abrahamic religions",
+   "hook": "is honored as the father of many nations and was tested by a command to offer up his son",
+   "known": 0.8,
+   "kind": "patriarch"
+  },
+  {
+   "label": "Mary",
+   "qid": "Q345",
+   "fame": 0.634,
+   "known_for": "mother of Jesus",
+   "description": "mother of Jesus Christ",
+   "hook": "is honored in the Hail prayer and visited by an angel with surprising news",
+   "known": 0.9,
+   "kind": "matriarch"
+  },
+  {
+   "label": "Judas Iscariot",
+   "qid": "Q81018",
+   "fame": 0.627,
+   "known_for": "betrayed Jesus for silver",
+   "description": "notable as betrayer of Jesus, one of Jesus's original twelve disciples",
+   "hook": "is remembered as the disciple who handed his teacher over to the authorities with a kiss",
+   "known": 0.6,
+   "kind": "apostle"
+  },
+  {
+   "label": "John the Baptist",
+   "qid": "Q40662",
+   "fame": 0.623,
+   "known_for": "baptised Jesus in the Jordan",
+   "description": "1st-century Jewish itinerant preacher (Bible)",
+   "hook": "was a desert preacher in camel hair who baptized people in the river",
+   "known": 0.6,
+   "kind": "saint"
+  },
+  {
+   "label": "John the Apostle",
+   "qid": "Q44015",
+   "fame": 0.59,
+   "known_for": "the beloved disciple",
+   "description": "apostle of Jesus; son of Zebedee and Salome, brother of James; traditionally identified with John the Evangelist, John of Patmos, and the Beloved Disciple",
+   "hook": "is traditionally credited with a Gospel and the final book of the New Testament",
+   "known": 0.5,
+   "kind": "apostle"
+  },
+  {
+   "label": "Methuselah",
+   "qid": "Q156290",
+   "fame": 0.588,
+   "known_for": "the oldest man in the Bible",
+   "description": "oldest person in the Bible, Biblical Patriarch",
+   "hook": "is said to have lived 969 years, a record in his book",
+   "known": 0.4,
+   "kind": "patriarch"
+  },
+  {
+   "label": "Jacob",
+   "qid": "Q289957",
+   "fame": 0.587,
+   "known_for": "wrestled an angel, father of twelve tribes",
+   "description": "in Genesis, a son of Isaac, also known as Israel; the patriarch of the Israelites",
+   "hook": "was renamed after a night-long struggle and had a famous dream about a ladder to heaven",
+   "known": 0.6,
+   "kind": "patriarch"
+  },
+  {
+   "label": "Queen of Sheba",
+   "qid": "Q159888",
+   "fame": 0.585,
+   "known_for": "royal visitor who tested Solomon",
+   "description": "biblical figure",
+   "hook": "traveled with gifts to test a wise king with hard riddles",
+   "known": 0.4,
+   "kind": "matriarch"
+  },
+  {
+   "label": "Esau",
+   "qid": "Q220822",
+   "fame": 0.581,
+   "known_for": "sold his birthright for stew",
+   "description": "in Genesis, the older son of Isaac and the brother of Jacob",
+   "hook": "was a hairy hunter who lost his inheritance to a smooth-skinned twin",
+   "known": 0.3,
+   "kind": "patriarch"
+  },
+  {
+   "label": "Enoch",
+   "qid": "Q213027",
+   "fame": 0.578,
+   "known_for": "walked with God, taken without dying",
+   "description": "biblical figure, son of Jared",
+   "hook": "is the great-grandfather of a famous flood survivor and is said to have vanished from earth",
+   "known": 0.2,
+   "kind": "patriarch"
+  },
+  {
+   "label": "Noah",
+   "qid": "Q81422",
+   "fame": 0.572,
+   "known_for": "built the ark",
+   "description": "biblical prophet, son of Lamech, major figure in the Book of Genesis",
+   "hook": "was told to gather pairs of animals before the rains came and later saw a rainbow",
+   "known": 0.8,
+   "kind": "patriarch"
+  },
+  {
+   "label": "Saint Joseph",
+   "qid": "Q128267",
+   "fame": 0.57,
+   "known_for": "carpenter, husband of Mary",
+   "description": "Christian saint; husband of Mary and father of Jesus",
+   "hook": "is the quiet patron saint of workers, guided by dreams in the Nativity story",
+   "known": 0.6,
+   "kind": "saint"
+  },
+  {
+   "label": "Matthew the Apostle",
+   "qid": "Q43600",
+   "fame": 0.567,
+   "known_for": "tax collector turned apostle",
+   "description": "Christian evangelist and apostle (10-74)",
+   "hook": "left a tax booth to follow Jesus and is credited with the first Gospel",
+   "known": 0.4,
+   "kind": "apostle"
+  },
+  {
+   "label": "Ishmael",
+   "qid": "Q183403",
+   "fame": 0.565,
+   "known_for": "Abraham's son by Hagar",
+   "description": "son of Abraham in the Hebrew bible, prophet in Islam",
+   "hook": "was the first son of his famous father, sent away into the desert with his mother",
+   "known": 0.2,
+   "kind": "patriarch"
+  },
+  {
+   "label": "Samson",
+   "qid": "Q214648",
+   "fame": 0.561,
+   "known_for": "strongman undone by a haircut",
+   "description": "judge of ancient Israel, known for wielding supernatural strength (Judges)",
+   "hook": "was a mighty judge whose strength vanished when his hair was cut",
+   "known": 0.6,
+   "kind": "judge"
+  },
+  {
+   "label": "Joseph",
+   "qid": "Q145746",
+   "fame": 0.559,
+   "known_for": "sold into Egypt, coat of many colours",
+   "description": "Biblical figure, son of Jacob and Rachel and governor of Egypt during the late Hyksos dynasty",
+   "hook": "was a dreamer thrown into a pit by his brothers, who later interpreted Pharaoh's dreams",
+   "known": 0.5,
+   "kind": "patriarch"
+  },
+  {
+   "label": "Elijah",
+   "qid": "Q133507",
+   "fame": 0.557,
+   "known_for": "prophet taken up in a chariot of fire",
+   "description": "Biblical prophet",
+   "hook": "challenged priests of Baal on a mountain and rode a whirlwind to heaven",
+   "known": 0.4,
+   "kind": "prophet"
+  },
+  {
+   "label": "St. James the Elder",
+   "qid": "Q43999",
+   "fame": 0.555,
+   "known_for": "fisherman apostle, brother of John",
+   "description": "one of the Twelve Apostles of Jesus",
+   "hook": "was one of the first apostles called by Jesus and is patron of the pilgrimage to Compostela",
+   "known": 0.2,
+   "kind": "apostle"
+  },
+  {
+   "label": "Adam",
+   "qid": "Q70899",
+   "fame": 0.553,
+   "known_for": "the first man",
+   "description": "first man according to the Abrahamic creation and religions such as Judaism, Christianity and Islam",
+   "hook": "was formed from dust and lived in a garden until he ate forbidden fruit",
+   "known": 0.8,
+   "kind": "patriarch"
+  },
+  {
+   "label": "Thomas the Apostle",
+   "qid": "Q43669",
+   "fame": 0.552,
+   "known_for": "the doubting apostle",
+   "description": "one of the Twelve Apostles in the New Testament",
+   "hook": "demanded to touch the wounds before believing in the resurrection",
+   "known": 0.3,
+   "kind": "apostle"
+  },
+  {
+   "label": "Lazarus of Bethany",
+   "qid": "Q539890",
+   "fame": 0.549,
+   "known_for": "raised from the dead by Jesus",
+   "description": "subject of a prominent miracle of Jesus in the Gospel of John",
+   "hook": "was a friend of the Messiah whose sisters were Martha and Mary, and whose tomb was opened after four days",
+   "known": 0.5,
+   "kind": "saint"
+  },
+  {
+   "label": "Joshua",
+   "qid": "Q7734",
+   "fame": 0.545,
+   "known_for": "led Israel into Canaan, Jericho",
+   "description": "figure in the Torah, successor of Moses",
+   "hook": "succeeded the lawgiver and brought down city walls with trumpets",
+   "known": 0.5,
+   "kind": "judge"
+  },
+  {
+   "label": "Goliath",
+   "qid": "Q192785",
+   "fame": 0.544,
+   "known_for": "giant slain by a shepherd boy",
+   "description": "giant Philistine warrior",
+   "hook": "was a huge Philistine champion who terrified an army until a boy with a sling stepped up",
+   "known": 0.7,
+   "kind": "warrior"
+  },
+  {
+   "label": "Isaac",
+   "qid": "Q671872",
+   "fame": 0.539,
+   "known_for": "son Abraham nearly sacrificed",
+   "description": "Biblical character; son of Abraham",
+   "hook": "was the son born to elderly parents and spared by an angel at the altar",
+   "known": 0.5,
+   "kind": "patriarch"
+  },
+  {
+   "label": "Isaiah",
+   "qid": "Q188794",
+   "fame": 0.539,
+   "known_for": "major prophet of Israel",
+   "description": "biblical character",
+   "hook": "foretold a child called Immanuel and saw a vision of seraphim with burning coals",
+   "known": 0.3,
+   "kind": "prophet"
+  },
+  {
+   "label": "Saul",
+   "qid": "Q28730",
+   "fame": 0.536,
+   "known_for": "first king of Israel",
+   "description": "first king of the United Kingdom of Israel",
+   "hook": "was anointed as the first monarch of his people but fell out of favor with God",
+   "known": 0.4,
+   "kind": "king"
+  },
+  {
+   "label": "Daniel",
+   "qid": "Q171724",
+   "fame": 0.529,
+   "known_for": "survived the lions' den",
+   "description": "biblical figure associated to the Book of Daniel",
+   "hook": "was thrown to hungry beasts for praying but came out unharmed",
+   "known": 0.5,
+   "kind": "prophet"
+  },
+  {
+   "label": "Nicodemus",
+   "qid": "Q295084",
+   "fame": 0.529,
+   "known_for": "Pharisee who visited Jesus by night",
+   "description": "Pharisee, biblical figure appearing in the Gospel of John",
+   "hook": "was a religious leader who asked the Messiah about being born again and later helped bury him",
+   "known": 0.2,
+   "kind": "saint"
+  },
+  {
+   "label": "Sarah",
+   "qid": "Q194808",
+   "fame": 0.525,
+   "known_for": "Abraham's wife, mother of Isaac",
+   "description": "biblical matriarch, prophet, and major figure in Abrahamic religions",
+   "hook": "laughed when told she would have a child in her nineties",
+   "known": 0.6,
+   "kind": "matriarch"
+  },
+  {
+   "label": "Seth",
+   "qid": "Q107626",
+   "fame": 0.525,
+   "known_for": "third son of Adam",
+   "description": "biblical figure, third son of Adam",
+   "hook": "was the son born after the first murder, taking the place of a slain brother",
+   "known": 0.2,
+   "kind": "patriarch"
+  },
+  {
+   "label": "Andrew the Apostle",
+   "qid": "Q43399",
+   "fame": 0.524,
+   "known_for": "fisherman apostle, brother of Peter",
+   "description": "religious figure of the Christian faith",
+   "hook": "was the first disciple called by the Messiah and later introduced a sibling to him",
+   "known": 0.2,
+   "kind": "apostle"
+  },
+  {
+   "label": "Jonah",
+   "qid": "Q2468262",
+   "fame": 0.522,
+   "known_for": "swallowed by a great fish",
+   "description": "Biblical and Quranic prophet",
+   "hook": "fled a mission to Nineveh and spent three days inside a sea creature",
+   "known": 0.4,
+   "kind": "prophet"
+  },
+  {
+   "label": "Esther",
+   "qid": "Q732413",
+   "fame": 0.519,
+   "known_for": "Jewish queen of Persia who saved her people",
+   "description": "Biblical Jewish queen of Persia and Medes (Book of Esther)",
+   "hook": "won a Persian king's favor and risked her life to stop a plot, celebrated at Purim",
+   "known": 0.3,
+   "kind": "matriarch"
+  },
+  {
+   "label": "Ezekiel",
+   "qid": "Q194064",
+   "fame": 0.518,
+   "known_for": "prophet of the valley of dry bones",
+   "description": "biblical prophet and main figure of the Book of Ezekiel",
+   "hook": "saw wheels within wheels and a vision of a chariot throne during exile",
+   "known": 0.2,
+   "kind": "prophet"
+  },
+  {
+   "label": "Aaron",
+   "qid": "Q51676",
+   "fame": 0.507,
+   "known_for": "Moses's brother, first high priest",
+   "description": "male human biblical and quranic figure, brother of Moses",
+   "hook": "spoke for a stammering sibling and made a golden calf in the desert",
+   "known": 0.4,
+   "kind": "saint"
+  },
+  {
+   "label": "Jeremiah",
+   "qid": "Q158825",
+   "fame": 0.498,
+   "known_for": "the weeping prophet",
+   "description": "biblical character; prophet",
+   "hook": "wrote Lamentations and warned of Jerusalem's fall",
+   "known": 0.2,
+   "kind": "prophet"
+  },
+  {
+   "label": "Job",
+   "qid": "Q179962",
+   "fame": 0.491,
+   "known_for": "suffered much but kept faith",
+   "description": "biblical figure",
+   "hook": "lost family, wealth and health in a famous test of patience",
+   "known": 0.3,
+   "kind": "patriarch"
+  },
+  {
+   "label": "Samuel",
+   "qid": "Q6577515",
+   "fame": 0.489,
+   "known_for": "prophet who anointed Saul and David",
+   "description": "Biblical prophet and main figure of the First Book of Samuel",
+   "hook": "heard a voice calling in the night as a boy and later chose the first two kings",
+   "known": 0.2,
+   "kind": "prophet"
+  },
+  {
+   "label": "Eve",
+   "qid": "Q830183",
+   "fame": 0.486,
+   "known_for": "the first woman",
+   "description": "the first woman in the story of Genesis",
+   "hook": "was tempted by a serpent in the garden of paradise",
+   "known": 0.7,
+   "kind": "matriarch"
+  },
+  {
+   "label": "Hagar",
+   "qid": "Q214617",
+   "fame": 0.479,
+   "known_for": "Sarah's servant, mother of Ishmael",
+   "description": "biblical character, Egyptian handmaid of Sarah, wife of Abraham",
+   "hook": "was an Egyptian maid cast into the wilderness, where an angel found her at a spring",
+   "known": 0.15,
+   "kind": "matriarch"
+  },
+  {
+   "label": "Absalom",
+   "qid": "Q205372",
+   "fame": 0.475,
+   "known_for": "David's rebellious son",
+   "description": "biblical character; third son of David (Second Book of Samuel)",
+   "hook": "was a handsome prince who rebelled against his father and got caught by his long hair",
+   "known": 0.2,
+   "kind": "warrior"
+  },
+  {
+   "label": "Lot",
+   "qid": "Q40574",
+   "fame": 0.472,
+   "known_for": "fled Sodom, his wife turned to salt",
+   "description": "Biblical and Quranic figure who had incestual daughters",
+   "hook": "escaped a doomed city of fire and brimstone while a loved one glanced back",
+   "known": 0.3,
+   "kind": "patriarch"
+  },
+  {
+   "label": "Shem",
+   "qid": "Q200902",
+   "fame": 0.472,
+   "known_for": "one of Noah's three sons",
+   "description": "Biblical figure, son of Noah, ancestor of the Semites",
+   "hook": "rode out a flood on a huge boat and is traditionally the ancestor of Middle Eastern peoples",
+   "known": 0.15,
+   "kind": "patriarch"
+  },
+  {
+   "label": "Gideon",
+   "qid": "Q176125",
+   "fame": 0.469,
+   "known_for": "judge who won with three hundred men",
+   "description": "Judge in the Biblical Book of Judges",
+   "hook": "tested God with a fleece of wool, then won a battle using trumpets and torches in jars",
+   "known": 0.2,
+   "kind": "judge"
+  },
+  {
+   "label": "Rachel",
+   "qid": "Q207389",
+   "fame": 0.464,
+   "known_for": "Jacob's beloved wife",
+   "description": "Biblical matriarch",
+   "hook": "was the younger bride a man worked fourteen years to marry",
+   "known": 0.3,
+   "kind": "matriarch"
+  },
+  {
+   "label": "Rebecca",
+   "qid": "Q40520",
+   "fame": 0.462,
+   "known_for": "Isaac's wife",
+   "description": "Biblical matriarch, wife of Isaac",
+   "hook": "was chosen as a bride at a well after offering water to camels",
+   "known": 0.2,
+   "kind": "matriarch"
+  },
+  {
+   "label": "Japheth",
+   "qid": "Q200637",
+   "fame": 0.461,
+   "known_for": "one of Noah's three sons",
+   "description": "Biblical figure, son of Noah",
+   "hook": "rode out a flood on a huge boat and is traditionally the ancestor of peoples to the north and west",
+   "known": 0.15,
+   "kind": "patriarch"
+  },
+  {
+   "label": "Deborah",
+   "qid": "Q213633",
+   "fame": 0.455,
+   "known_for": "judge and prophetess who led Israel to victory",
+   "description": "fourth judge of Israel",
+   "hook": "held court under a palm tree and led a battle alongside a general named Barak",
+   "known": 0.2,
+   "kind": "judge"
+  },
+  {
+   "label": "Miriam",
+   "qid": "Q1938388",
+   "fame": 0.453,
+   "known_for": "Moses's sister",
+   "description": "sister of Moses and Aaron",
+   "hook": "watched over her baby brother in a basket on the river and later led a song of victory",
+   "known": 0.15,
+   "kind": "matriarch"
+  }
+ ]
+}

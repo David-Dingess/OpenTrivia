@@ -1,0 +1,323 @@
+{
+ "id": "table.history.university-groups",
+ "kind": "table",
+ "title": "Famous universities and the elite group they belong to",
+ "genre": "society",
+ "category": "history",
+ "topic": "universities",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?confLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?conf) (COUNT(DISTINCT ?c) AS ?nC) WHERE { ?item wdt:P463 ?c ; wikibase:sitelinks ?sl . ?item wdt:P31/wdt:P279* wd:Q3918 . FILTER(?sl >= 20) VALUES ?c { wd:Q49113 wd:Q590631 wd:Q1377311 wd:Q2634906 } } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-01T04:26:35.384Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-01T04:26:35.384Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "group",
+   "label": "Group",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "university",
+  "many": "universities",
+  "theLabels": [
+   "University of Oxford",
+   "University of Pennsylvania",
+   "University of Cambridge",
+   "London School of Economics and Political Science",
+   "University of Edinburgh",
+   "University of Warwick",
+   "University of Birmingham",
+   "University of Manchester",
+   "University of Glasgow",
+   "University of Sydney",
+   "University of Exeter",
+   "University of Nottingham"
+  ],
+  "columns": {
+   "group": {
+    "role": "link",
+    "pick": "Which famous group of universities is {label} part of?",
+    "statement": "{label} belongs to the {value}.",
+    "match": "Match each university to its group.",
+    "odd": "Three of these universities belong to the {value}. Which one doesn't?",
+    "all": "Tap all {n} universities in the {value}.",
+    "reverse": "Which of these universities belongs to the {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Harvard University",
+   "qid": "Q13371",
+   "fame": 0.687,
+   "group": "Ivy League",
+   "description": "private university in Cambridge, Massachusetts",
+   "hook": "is the oldest institution of higher learning in the United States",
+   "known": 0.95,
+   "kind": "ivy league"
+  },
+  {
+   "label": "Cornell University",
+   "qid": "Q49115",
+   "fame": 0.677,
+   "group": "Ivy League",
+   "description": "private and statutory land-grant research university in Ithaca, New York, USA",
+   "hook": "was founded to teach any person any study and sits above deep gorges in the Finger Lakes",
+   "known": 0.8,
+   "kind": "ivy league"
+  },
+  {
+   "label": "University of Oxford",
+   "qid": "Q34433",
+   "fame": 0.647,
+   "group": "Russell Group",
+   "description": "collegiate research university in Oxford, England",
+   "hook": "is the oldest in the English-speaking world and fields rowers in an annual Boat Race on the Thames",
+   "known": 0.95,
+   "kind": "russell group"
+  },
+  {
+   "label": "Columbia University",
+   "qid": "Q49088",
+   "fame": 0.63,
+   "group": "Ivy League",
+   "description": "private university in New York City, New York, US",
+   "hook": "administers the Pulitzer Prizes from its Morningside Heights campus in Manhattan",
+   "known": 0.8,
+   "kind": "ivy league"
+  },
+  {
+   "label": "Yale University",
+   "qid": "Q49112",
+   "fame": 0.622,
+   "group": "Ivy League",
+   "description": "private university in New Haven, Connecticut",
+   "hook": "is famed for secret societies such as Skull and Bones and its bulldog mascot",
+   "known": 0.95,
+   "kind": "ivy league"
+  },
+  {
+   "label": "University of Pennsylvania",
+   "qid": "Q49117",
+   "fame": 0.615,
+   "group": "Ivy League",
+   "description": "private research university in Philadelphia, Pennsylvania, United States",
+   "hook": "was founded by Benjamin Franklin and houses the Wharton business school",
+   "known": 0.8,
+   "kind": "ivy league"
+  },
+  {
+   "label": "University of Cambridge",
+   "qid": "Q35794",
+   "fame": 0.611,
+   "group": "Russell Group",
+   "description": "collegiate public research university in Cambridge, England, United Kingdom",
+   "hook": "counts Newton and Darwin among its alumni and rows an annual Boat Race against Oxford",
+   "known": 0.95,
+   "kind": "russell group"
+  },
+  {
+   "label": "Princeton University",
+   "qid": "Q21578",
+   "fame": 0.608,
+   "group": "Ivy League",
+   "description": "private Ivy League research university in Princeton, New Jersey, United States",
+   "hook": "wears orange and black, with a tiger mascot and a historic hall named Nassau",
+   "known": 0.8,
+   "kind": "ivy league"
+  },
+  {
+   "label": "Brown University",
+   "qid": "Q49114",
+   "fame": 0.592,
+   "group": "Ivy League",
+   "description": "private university in Providence, Rhode Island, United States",
+   "hook": "is known for an open curriculum that lets students design their own course of study",
+   "known": 0.6,
+   "kind": "ivy league"
+  },
+  {
+   "label": "Dartmouth College",
+   "qid": "Q49116",
+   "fame": 0.592,
+   "group": "Ivy League",
+   "description": "private university in Hanover, New Hampshire, US",
+   "hook": "inspired the film Animal House and cheers on its Big Green teams",
+   "known": 0.6,
+   "kind": "ivy league"
+  },
+  {
+   "label": "London School of Economics and Political Science",
+   "qid": "Q174570",
+   "fame": 0.544,
+   "group": "Russell Group",
+   "description": "public university in London, United Kingdom",
+   "hook": "is a specialist in the study of society and money that has trained many world leaders and Nobel laureates",
+   "known": 0.8,
+   "kind": "russell group"
+  },
+  {
+   "label": "Tsinghua University",
+   "qid": "Q16955",
+   "fame": 0.528,
+   "group": "C9 League",
+   "description": "public university in Beijing, China",
+   "hook": "is China's leading science and engineering school, set on a former imperial garden",
+   "known": 0.05,
+   "kind": "c9 league"
+  },
+  {
+   "label": "King's College London",
+   "qid": "Q245247",
+   "fame": 0.519,
+   "group": "Russell Group",
+   "description": "public research university in London, United Kingdom",
+   "hook": "was backed by the Duke of Wellington and absorbed the medical school where poet John Keats trained",
+   "known": 0.6,
+   "kind": "russell group"
+  },
+  {
+   "label": "University of Edinburgh",
+   "qid": "Q160302",
+   "fame": 0.508,
+   "group": "Russell Group",
+   "description": "public university in Edinburgh, Scotland, United Kingdom",
+   "hook": "trained Arthur Conan Doyle, who modeled Sherlock Holmes on one of its surgeons",
+   "known": 0.6,
+   "kind": "russell group"
+  },
+  {
+   "label": "Imperial College London",
+   "qid": "Q189022",
+   "fame": 0.505,
+   "group": "Russell Group",
+   "description": "public research university located in London, United Kingdom",
+   "hook": "is a science, engineering and medicine specialist in South Kensington near the Royal Albert Hall",
+   "known": 0.6,
+   "kind": "russell group"
+  },
+  {
+   "label": "Durham University",
+   "qid": "Q458393",
+   "fame": 0.479,
+   "group": "Russell Group",
+   "description": "collegiate public research university in Durham, England, United Kingdom",
+   "hook": "sits beside a Norman cathedral and castle that are World Heritage sites, with students living in the castle",
+   "known": 0.4,
+   "kind": "russell group"
+  },
+  {
+   "label": "University of Warwick",
+   "qid": "Q865528",
+   "fame": 0.475,
+   "group": "Russell Group",
+   "description": "university in Coventry, United Kingdom",
+   "hook": "is a modern campus school known for strong business and mathematics, built on former farmland",
+   "known": 0.4,
+   "kind": "russell group"
+  },
+  {
+   "label": "Peking University",
+   "qid": "Q16952",
+   "fame": 0.467,
+   "group": "C9 League",
+   "description": "university in Beijing, China",
+   "hook": "is known for scenic Weiming Lake and a water tower built to look like a pagoda",
+   "known": 0.05,
+   "kind": "c9 league"
+  },
+  {
+   "label": "University of Birmingham",
+   "qid": "Q223429",
+   "fame": 0.467,
+   "group": "Russell Group",
+   "description": "university in Birmingham, England, United Kingdom",
+   "hook": "is a red-brick pioneer topped by Old Joe, the tallest free-standing clock tower in the world",
+   "known": 0.4,
+   "kind": "russell group"
+  },
+  {
+   "label": "University of Manchester",
+   "qid": "Q230899",
+   "fame": 0.466,
+   "group": "Russell Group",
+   "description": "public research university in Manchester, England, United Kingdom",
+   "hook": "is where Rutherford split the atom and where graphene was first isolated",
+   "known": 0.6,
+   "kind": "russell group"
+  },
+  {
+   "label": "University of Glasgow",
+   "qid": "Q192775",
+   "fame": 0.463,
+   "group": "Russell Group",
+   "description": "university in Glasgow, Scotland, United Kingdom, founded in 1451",
+   "hook": "is a Scottish institution where economist Adam Smith studied and James Watt worked",
+   "known": 0.4,
+   "kind": "russell group"
+  },
+  {
+   "label": "University of Sydney",
+   "qid": "Q487556",
+   "fame": 0.458,
+   "group": "Group of Eight",
+   "description": "Australian university founded in 1850",
+   "hook": "is the oldest in Australia, famed for its Gothic sandstone Quadrangle and Great Hall",
+   "known": 0.4,
+   "kind": "group of eight"
+  },
+  {
+   "label": "University of Exeter",
+   "qid": "Q1414861",
+   "fame": 0.457,
+   "group": "Russell Group",
+   "description": "public research university located in Exeter, United Kingdom",
+   "hook": "is a leafy hilltop campus in England's West Country, known for climate and sports science",
+   "known": 0.2,
+   "kind": "russell group"
+  },
+  {
+   "label": "Monash University",
+   "qid": "Q598841",
+   "fame": 0.456,
+   "group": "Group of Eight",
+   "description": "public university based in Melbourne, Australia",
+   "hook": "is named after a First World War general and is among the country's largest by enrolment",
+   "known": 0.05,
+   "kind": "group of eight"
+  },
+  {
+   "label": "University of Nottingham",
+   "qid": "Q472316",
+   "fame": 0.452,
+   "group": "Russell Group",
+   "description": "public research university in Nottingham, England",
+   "hook": "has a lakeside campus with a clock-towered building beside it",
+   "known": 0.4,
+   "kind": "russell group"
+  }
+ ]
+}

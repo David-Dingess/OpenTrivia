@@ -1,0 +1,198 @@
+{
+ "id": "table.getting-around.famous-roads",
+ "kind": "table",
+ "title": "Famous roads and their country",
+ "genre": "daily-life",
+ "category": "getting-around",
+ "topic": "roads",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?co) AS ?country) (COUNT(DISTINCT ?co) AS ?n) WHERE { VALUES ?item { wd:Q79934 wd:Q550419 wd:Q74046 wd:Q550 wd:Q11260 wd:Q109858 wd:Q11690 wd:Q479469 wd:Q930276 wd:Q868616 wd:Q860442 wd:Q745608 wd:Q1156726 wd:Q209714 wd:Q38778 wd:Q1123106 wd:Q804402 wd:Q1813941 wd:Q189417 wd:Q214077 wd:Q382500 wd:Q160899 wd:Q160272 wd:Q940332 wd:Q885856 wd:Q812917 wd:Q1105882 wd:Q285218 wd:Q852908 wd:Q135501 wd:Q2735712 wd:Q579977 wd:Q1203550 wd:Q1334855 wd:Q934803 wd:Q1061576 wd:Q811493 wd:Q1515312 wd:Q141747 wd:Q1644209 wd:Q269373 wd:Q1347634 wd:Q3216467 wd:Q120192 wd:Q1344271 wd:Q3109921 wd:Q370697 wd:Q642700 wd:Q593178 wd:Q5599636 wd:Q109711 wd:Q109849 wd:Q109873 wd:Q1032558 wd:Q958299 wd:Q533037 wd:Q735620 wd:Q2188138 wd:Q1478843 wd:Q777052 wd:Q1324163 wd:Q1419892 wd:Q719317 wd:Q785788 wd:Q925349 wd:Q846686 wd:Q1631609 wd:Q892187 wd:Q1124023 wd:Q373302 wd:Q1194528 wd:Q5357299 wd:Q385206 wd:Q802062 wd:Q628076 wd:Q388423 wd:Q911052 wd:Q2112543 wd:Q694675 wd:Q921585 wd:Q1032122 wd:Q2304451 wd:Q1009423 wd:Q11660544 wd:Q3179287 wd:Q819117 wd:Q1142859 wd:Q217099 wd:Q214820 } ?item wdt:P17 ?co . } GROUP BY ?item HAVING(?n = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T11:45:46.010Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T11:45:46.010Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "road",
+  "many": "roads",
+  "wildcard": "place",
+  "hookAsk": "Which road {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "exclude": [
+   {
+    "qid": "Q1061576",
+    "why": "Trans-Canada Highway: name gives away the country"
+   }
+  ],
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each road to its country.",
+    "odd": "Three of these roads are in {value}. Which one isn't?",
+    "all": "Tap all {n} roads in {value}.",
+    "reverse": "Which of these roads is in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "U.S. Route 66",
+   "qid": "Q79934",
+   "fame": 0.622,
+   "country": "United States",
+   "description": "former U.S. Numbered Highway in the United States",
+   "hook": "carried migrants west from Chicago to the Pacific coast before interstates bypassed it",
+   "known": 0.6,
+   "kind": "famous route"
+  },
+  {
+   "label": "Carnaby Street",
+   "qid": "Q38778",
+   "fame": 0.584,
+   "country": "United Kingdom",
+   "description": "street in London",
+   "hook": "is a pedestrianised London shopping lane packed with independent fashion boutiques",
+   "known": 0.6,
+   "kind": "iconic street"
+  },
+  {
+   "label": "avenue des Champs-Élysées",
+   "qid": "Q550",
+   "fame": 0.548,
+   "country": "France",
+   "description": "avenue in Paris, France",
+   "hook": "runs from the Place de la Concorde to the Arc de Triomphe, and is where the famous cycling race ends",
+   "known": 0.8,
+   "kind": "iconic street"
+  },
+  {
+   "label": "Wall Street",
+   "qid": "Q11690",
+   "fame": 0.527,
+   "country": "United States",
+   "description": "street in Manhattan, New York, USA",
+   "hook": "anchors New York's financial district, and its name is shorthand for the nation's stock markets",
+   "known": 0.8,
+   "kind": "iconic street"
+  },
+  {
+   "label": "Las Vegas Strip",
+   "qid": "Q745608",
+   "fame": 0.525,
+   "country": "United States",
+   "description": "approximately 4 mile stretch of Las Vegas Boulevard in Paradise, Winchester, and Las Vegas in Nevada, United States, with many resorts, shows, and casinos",
+   "hook": "is a stretch of boulevard lined with giant casino resorts, one of the world's most iconic tourist sights",
+   "known": 0.8,
+   "kind": "resort district"
+  },
+  {
+   "label": "Icefields Parkway",
+   "qid": "Q1344271",
+   "fame": 0.511,
+   "country": "Canada",
+   "description": "mountain road and section of Alberta Highway 93 in Banff and Jasper national parks in Alberta, Canada",
+   "hook": null,
+   "known": 0.2,
+   "kind": "scenic highway"
+  },
+  {
+   "label": "Appian Way",
+   "qid": "Q189417",
+   "fame": 0.499,
+   "country": "Italy",
+   "description": "Roman highway from Rome, Italy, to Brundisium 312 BC",
+   "hook": "was an ancient Roman road nicknamed the queen of the long roads, linking Rome to Brindisi",
+   "known": 0.6,
+   "kind": "ancient road"
+  },
+  {
+   "label": "Broadway",
+   "qid": "Q11260",
+   "fame": 0.47,
+   "country": "United States",
+   "description": "road in New York City and Westchester County, New York, United States",
+   "hook": "is the oldest main north-south thoroughfare in New York, running from Manhattan up through the Bronx",
+   "known": 0.8,
+   "kind": "iconic street"
+  },
+  {
+   "label": "California State Route 1",
+   "qid": "Q550419",
+   "fame": 0.464,
+   "country": "United States",
+   "description": "state highway in California, United States",
+   "hook": "hugs most of the Pacific coastline and is often called the Pacific Coast Highway",
+   "known": 0.4,
+   "kind": "scenic highway"
+  },
+  {
+   "label": "Trans-Canada Highway",
+   "qid": "Q1061576",
+   "fame": 0.464,
+   "country": "Canada",
+   "description": "highway and highway system in Canada",
+   "hook": null,
+   "known": 0.2,
+   "kind": "famous route"
+  },
+  {
+   "label": "Fifth Avenue",
+   "qid": "Q109858",
+   "fame": 0.459,
+   "country": "United States",
+   "description": "north-south avenue in Manhattan, New York",
+   "hook": "is a Manhattan thoroughfare whose midtown stretch is among the priciest shopping strips on Earth",
+   "known": 0.8,
+   "kind": "iconic street"
+  },
+  {
+   "label": "Bowery",
+   "qid": "Q785788",
+   "fame": 0.458,
+   "country": "United States",
+   "description": "street and neighborhood in Manhattan, New York, U. S.",
+   "hook": null,
+   "known": 0.4,
+   "kind": "iconic street"
+  },
+  {
+   "label": "Lombard Street",
+   "qid": "Q930276",
+   "fame": 0.458,
+   "country": "United States",
+   "description": "thoroughfare in San Francisco, California, United States",
+   "hook": "has a steep block of eight hairpin turns, claimed to be the crookedest in the world",
+   "known": 0.4,
+   "kind": "iconic street"
+  }
+ ]
+}

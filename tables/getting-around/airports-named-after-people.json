@@ -1,0 +1,217 @@
+{
+ "id": "table.getting-around.airports-named-after-people",
+ "kind": "table",
+ "title": "Airports named after people",
+ "genre": "daily-life",
+ "category": "getting-around",
+ "topic": "airports",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?namesakeLabel ?placeLabel WHERE { { SELECT ?item (SAMPLE(?nm) AS ?namesake) (SAMPLE(?c) AS ?place) (COUNT(DISTINCT ?nm) AS ?n) WHERE { ?item wdt:P31 wd:Q1248784 ; wdt:P138 ?nm ; wdt:P931 ?c . ?nm wdt:P31 wd:Q5 . } GROUP BY ?item HAVING(?n = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T17:52:48.999Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T17:52:48.999Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "namesake",
+   "label": "Named after",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "place",
+   "label": "Location",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "airport",
+  "many": "airports",
+  "minFame": 0.45,
+  "exclude": [
+   {
+    "qid": "Q192733",
+    "why": "Sheremetyevo: the Pushkin naming is little known and political-adjacent"
+   },
+   {
+    "qid": "Q1160343",
+    "why": "Calgary: McCall is an obscure namesake"
+   },
+   {
+    "qid": "Q598817",
+    "why": "Hollywood Burbank no longer carries the Bob Hope name"
+   }
+  ],
+  "columns": {
+   "place": {
+    "role": "code",
+    "pick": "Which city is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each airport to its city.",
+    "reverse": "Which airport is in {value}?"
+   },
+   "namesake": {
+    "role": "code",
+    "pick": "Who is {label} named after?",
+    "statement": "{label} is named after {value}.",
+    "match": "Match each airport to the person it is named after.",
+    "reverse": "Which airport is named after {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "O'Hare International Airport",
+   "qid": "Q213717",
+   "fame": 0.596,
+   "namesake": "Edward O'Hare",
+   "place": "Chicago",
+   "description": "airport in Chicago, Illinois, United States",
+   "hook": "is a huge Midwestern hub whose ORD code comes from an old orchard-named field",
+   "known": 0.8,
+   "kind": "major hub"
+  },
+  {
+   "label": "Sydney Airport",
+   "qid": "Q17581",
+   "fame": 0.528,
+   "namesake": "Charles Kingsford Smith",
+   "place": "Sydney",
+   "description": "international airport serving Sydney, Australia",
+   "hook": "is one of the world's oldest continuously operating airports, down under's busiest gateway",
+   "known": 0.6,
+   "kind": "major hub"
+  },
+  {
+   "label": "Kempegowda International Airport",
+   "qid": "Q503364",
+   "fame": 0.527,
+   "namesake": "Kempe Gowda I",
+   "place": "Bengaluru",
+   "description": "international airport serving Bengaluru, Karnataka, India",
+   "hook": null,
+   "known": 0.2,
+   "kind": "local"
+  },
+  {
+   "label": "San Diego International Airport",
+   "qid": "Q1333923",
+   "fame": 0.503,
+   "namesake": "Charles Lindbergh",
+   "place": "San Diego County",
+   "description": "international airport in San Diego, California, USA",
+   "hook": "is famous for a single runway and approaches that pass just over downtown buildings",
+   "known": 0.8,
+   "kind": "historical"
+  },
+  {
+   "label": "I Gusti Ngurah Rai International Airport",
+   "qid": "Q1061846",
+   "fame": 0.494,
+   "namesake": "I Gusti Ngurah Rai",
+   "place": "Denpasar",
+   "description": "international airport serving Denpasar, Indonesia",
+   "hook": null,
+   "known": 0.05,
+   "kind": "local"
+  },
+  {
+   "label": "Sheremetyevo International Airport",
+   "qid": "Q192733",
+   "fame": 0.489,
+   "namesake": "Alexander Pushkin",
+   "place": "Moscow",
+   "description": "international airport serving Moscow, Russia",
+   "hook": null,
+   "known": 0.05,
+   "kind": "historical"
+  },
+  {
+   "label": "John Wayne Airport",
+   "qid": "Q1692316",
+   "fame": 0.488,
+   "namesake": "John Wayne",
+   "place": "Santa Ana",
+   "description": "airport in Orange County, California, USA",
+   "hook": "is known for a statue of a movie cowboy out front and strict noise rules on takeoffs",
+   "known": 0.7,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Calgary International Airport",
+   "qid": "Q1160343",
+   "fame": 0.477,
+   "namesake": "Frederick McCall",
+   "place": "Calgary",
+   "description": "airport in Alberta, Canada",
+   "hook": null,
+   "known": 0.2,
+   "kind": "local"
+  },
+  {
+   "label": "Madeira Cristiano-Ronaldo Airport",
+   "qid": "Q639161",
+   "fame": 0.464,
+   "namesake": "Cristiano Ronaldo",
+   "place": "Funchal",
+   "description": "international airport serving Madeira, Portugal",
+   "hook": "has a runway extended onto giant concrete columns above the ocean, with windy landings that test pilots",
+   "known": 0.9,
+   "kind": "entertainment"
+  },
+  {
+   "label": "Warsaw Chopin Airport",
+   "qid": "Q465071",
+   "fame": 0.462,
+   "namesake": "Frédéric Chopin",
+   "place": "Warsaw",
+   "description": "airport in Warsaw, Poland",
+   "hook": "is its country's busiest, long known by the name of the Okęcie district where it sits",
+   "known": 0.7,
+   "kind": "historical"
+  },
+  {
+   "label": "Baltimore/Washington International Thurgood Marshall Airport",
+   "qid": "Q94895",
+   "fame": 0.455,
+   "namesake": "Thurgood Marshall",
+   "place": "Baltimore",
+   "description": "airport near Baltimore, Maryland, United States",
+   "hook": "is a major Southwest Airlines base with its own Amtrak station on the Northeast Corridor",
+   "known": 0.7,
+   "kind": "historical"
+  },
+  {
+   "label": "Hollywood Burbank Airport",
+   "qid": "Q598817",
+   "fame": 0.452,
+   "namesake": "Bob Hope",
+   "place": "Burbank",
+   "description": "airport in Burbank serving the Greater Los Angeles Area, California, United States",
+   "hook": "is a compact, easy alternative to the area's giant main hub, popular with film-business travellers",
+   "known": 0.7,
+   "kind": "entertainment"
+  }
+ ]
+}

@@ -1,0 +1,337 @@
+{
+ "id": "table.sports.nba-team-arenas",
+ "kind": "table",
+ "title": "NBA teams and their home arenas",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "basketball",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?venueLabel WHERE { ?item wdt:P118 wd:Q155223 . ?item wdt:P115 ?venue . ?venue rdfs:label ?venueLabel . FILTER(LANG(?venueLabel)=\"en\") OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T22:20:42.282Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T22:20:42.282Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "arena",
+   "label": "Home arena",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "NBA team",
+  "many": "NBA teams",
+  "hookAsk": "Which NBA team {hook}?",
+  "hookStatement": "",
+  "columns": {
+   "arena": {
+    "role": "code",
+    "pick": "Which arena do the {label} call home?",
+    "statement": "The {label} play their home games at {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Los Angeles Lakers",
+   "qid": "Q121783",
+   "fame": 0.627,
+   "arena": "Crypto.com Arena",
+   "description": "American professional basketball team",
+   "hook": "has retired jerseys for Kobe Bryant and Magic Johnson and won a huge pile of championships",
+   "known": 0.9,
+   "kind": "western"
+  },
+  {
+   "label": "Los Angeles Clippers",
+   "qid": "Q976396",
+   "fame": 0.622,
+   "arena": "Crypto.com Arena",
+   "description": "American professional basketball team",
+   "hook": "shares a building with its city rival and had a high-flying \"Lob City\" era",
+   "known": 0.5,
+   "kind": "western"
+  },
+  {
+   "label": "New York Knicks",
+   "qid": "Q131364",
+   "fame": 0.619,
+   "arena": "Madison Square Garden",
+   "description": "National Basketball Association team in New York City",
+   "hook": "is a storied franchise whose fans pack a famous arena in America's largest city",
+   "known": 0.85,
+   "kind": "eastern"
+  },
+  {
+   "label": "Golden State Warriors",
+   "qid": "Q157376",
+   "fame": 0.591,
+   "arena": "Chase Center",
+   "description": "National Basketball Association team in San Francisco, California",
+   "hook": "won titles behind Stephen Curry's record-setting three-point shooting",
+   "known": 0.85,
+   "kind": "western"
+  },
+  {
+   "label": "Chicago Bulls",
+   "qid": "Q128109",
+   "fame": 0.586,
+   "arena": "United Center",
+   "description": "American professional basketball team",
+   "hook": "won six championships with Michael Jordan and Scottie Pippen",
+   "known": 0.85,
+   "kind": "eastern"
+  },
+  {
+   "label": "Boston Celtics",
+   "qid": "Q131371",
+   "fame": 0.583,
+   "arena": "TD Garden",
+   "description": "NBA team based in Boston",
+   "hook": "wears green and has won more championships than any other team, with Larry Bird among its legends",
+   "known": 0.85,
+   "kind": "eastern"
+  },
+  {
+   "label": "Toronto Raptors",
+   "qid": "Q132880",
+   "fame": 0.559,
+   "arena": "Scotiabank Arena",
+   "description": "National Basketball Association team in Toronto, Ontario",
+   "hook": "is the only Canadian team in the league and won its first title behind Kawhi Leonard",
+   "known": 0.6,
+   "kind": "eastern"
+  },
+  {
+   "label": "Miami Heat",
+   "qid": "Q169138",
+   "fame": 0.557,
+   "arena": "Kaseya Center",
+   "description": "American professional basketball team based in Miami",
+   "hook": "won titles with a Big Three of LeBron James, Dwyane Wade and Chris Bosh",
+   "known": 0.75,
+   "kind": "eastern"
+  },
+  {
+   "label": "Charlotte Hornets",
+   "qid": "Q163480",
+   "fame": 0.552,
+   "arena": "Spectrum Center",
+   "description": "American professional basketball team based in Charlotte, North Carolina",
+   "hook": "was once owned by Michael Jordan and is known for teal and purple colors",
+   "known": 0.4,
+   "kind": "eastern"
+  },
+  {
+   "label": "Sacramento Kings",
+   "qid": "Q166105",
+   "fame": 0.547,
+   "arena": "Golden 1 Center",
+   "description": "American professional basketball team",
+   "hook": "celebrates home wins by lighting a purple beam above its arena",
+   "known": 0.25,
+   "kind": "western"
+  },
+  {
+   "label": "San Antonio Spurs",
+   "qid": "Q159729",
+   "fame": 0.547,
+   "arena": "Frost Bank Center",
+   "description": "National Basketball Association team in San Antonio",
+   "hook": "won five championships with Tim Duncan and coach Gregg Popovich",
+   "known": 0.75,
+   "kind": "western"
+  },
+  {
+   "label": "Brooklyn Nets",
+   "qid": "Q572134",
+   "fame": 0.542,
+   "arena": "Barclays Center",
+   "description": "American professional basketball team",
+   "hook": "moved in from New Jersey and wears stark black and white",
+   "known": 0.5,
+   "kind": "eastern"
+  },
+  {
+   "label": "Minnesota Timberwolves",
+   "qid": "Q170558",
+   "fame": 0.542,
+   "arena": "Target Center",
+   "description": "American professional basketball team",
+   "hook": "is led by high-flying guard Anthony Edwards",
+   "known": 0.35,
+   "kind": "western"
+  },
+  {
+   "label": "Atlanta Hawks",
+   "qid": "Q159893",
+   "fame": 0.535,
+   "arena": "State Farm Arena",
+   "description": "Atlanta-based American professional basketball team",
+   "hook": "is led by sharpshooting guard Trae Young",
+   "known": 0.35,
+   "kind": "eastern"
+  },
+  {
+   "label": "Portland Trail Blazers",
+   "qid": "Q167253",
+   "fame": 0.532,
+   "arena": "Moda Center",
+   "description": "American professional basketball team",
+   "hook": "featured Damian Lillard and his long-range buzzer beaters",
+   "known": 0.5,
+   "kind": "western"
+  },
+  {
+   "label": "Washington Wizards",
+   "qid": "Q169165",
+   "fame": 0.532,
+   "arena": "Capital One Arena",
+   "description": "National Basketball Association team in Washington, D.C.",
+   "hook": "used to be called the Bullets before switching to a name about sorcerers",
+   "known": 0.5,
+   "kind": "eastern"
+  },
+  {
+   "label": "Cleveland Cavaliers",
+   "qid": "Q162990",
+   "fame": 0.53,
+   "arena": "Rocket Arena",
+   "description": "National Basketball Association team in Cleveland, Ohio",
+   "hook": "won its only title when LeBron James rallied it from a 3-1 series deficit",
+   "known": 0.65,
+   "kind": "eastern"
+  },
+  {
+   "label": "Denver Nuggets",
+   "qid": "Q162954",
+   "fame": 0.53,
+   "arena": "Ball Arena",
+   "description": "American basketball team",
+   "hook": "won its first championship behind big man Nikola Jokic",
+   "known": 0.65,
+   "kind": "western"
+  },
+  {
+   "label": "Detroit Pistons",
+   "qid": "Q169661",
+   "fame": 0.528,
+   "arena": "Little Caesars Arena",
+   "description": "American professional basketball team",
+   "hook": "were the \"Bad Boys\" known for rough defense who won back-to-back titles",
+   "known": 0.6,
+   "kind": "eastern"
+  },
+  {
+   "label": "Houston Rockets",
+   "qid": "Q161345",
+   "fame": 0.526,
+   "arena": "Toyota Center",
+   "description": "National Basketball Association team in Houston, Texas",
+   "hook": "won back-to-back titles with Hakeem Olajuwon",
+   "known": 0.75,
+   "kind": "western"
+  },
+  {
+   "label": "Milwaukee Bucks",
+   "qid": "Q169637",
+   "fame": 0.52,
+   "arena": "Fiserv Forum",
+   "description": "American professional basketball team",
+   "hook": "is led by Giannis Antetokounmpo, known as the Greek Freak",
+   "known": 0.65,
+   "kind": "eastern"
+  },
+  {
+   "label": "Oklahoma City Thunder",
+   "qid": "Q180950",
+   "fame": 0.52,
+   "arena": "Paycom Center",
+   "description": "American professional basketball team based in Oklahoma City, United States",
+   "hook": "started life in Seattle as the SuperSonics",
+   "known": 0.55,
+   "kind": "western"
+  },
+  {
+   "label": "Utah Jazz",
+   "qid": "Q170649",
+   "fame": 0.512,
+   "arena": "Delta Center",
+   "description": "American professional basketball team",
+   "hook": "featured the Hall of Fame duo of Karl Malone and John Stockton",
+   "known": 0.6,
+   "kind": "western"
+  },
+  {
+   "label": "New Orleans Pelicans",
+   "qid": "Q172339",
+   "fame": 0.505,
+   "arena": "Smoothie King Center",
+   "description": "American professional basketball team",
+   "hook": "is led by Zion Williamson, a powerful high-flying forward",
+   "known": 0.4,
+   "kind": "western"
+  },
+  {
+   "label": "Memphis Grizzlies",
+   "qid": "Q165529",
+   "fame": 0.504,
+   "arena": "FedExForum",
+   "description": "National Basketball Association team in Memphis, Tennessee",
+   "hook": "began life in Vancouver before relocating",
+   "known": 0.35,
+   "kind": "western"
+  },
+  {
+   "label": "Phoenix Suns",
+   "qid": "Q164177",
+   "fame": 0.499,
+   "arena": "Mortgage Matchup Center",
+   "description": "Arizona-based American professional basketball team",
+   "hook": "ran a fast-break offense with Steve Nash known as seven seconds or less",
+   "known": 0.6,
+   "kind": "western"
+  },
+  {
+   "label": "Orlando Magic",
+   "qid": "Q161337",
+   "fame": 0.494,
+   "arena": "Kia Center",
+   "description": "American professional basketball team",
+   "hook": "is based near Disney World and once paired Shaquille O'Neal with Penny Hardaway",
+   "known": 0.55,
+   "kind": "eastern"
+  },
+  {
+   "label": "Indiana Pacers",
+   "qid": "Q170329",
+   "fame": 0.492,
+   "arena": "Gainbridge Fieldhouse",
+   "description": "professional basketball team from Indianapolis, Indiana",
+   "hook": "featured sharpshooter Reggie Miller, who tormented the Knicks in the playoffs",
+   "known": 0.35,
+   "kind": "eastern"
+  }
+ ]
+}

@@ -1,0 +1,1708 @@
+{
+ "id": "list.pop-culture.star-wars-characters",
+ "title": "Star Wars characters",
+ "prompt": "Name a Star Wars character",
+ "genre": "general",
+ "category": "pop-culture",
+ "topic": "fictional-characters",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { { ?item wdt:P1080 ?u } UNION { ?item wdt:P1441 wd:Q17738 } ?item wdt:P31 ?cls . VALUES ?u { wd:Q3551295 wd:Q19786052 wd:Q17738 } VALUES ?cls { wd:Q15632617 wd:Q95074 wd:Q15773317 wd:Q1114461 wd:Q15773347 } . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1500",
+  "fetchedAt": "2026-10-02T12:19:05.906Z"
+ },
+ "rows": [
+  {
+   "label": "Grogu",
+   "qid": "Q77001957",
+   "fame": 0.624,
+   "also": [
+    "Baby Yoda",
+    "Din Grogu",
+    "Grogu “The Child”",
+    "The Child"
+   ]
+  },
+  {
+   "label": "Darth Vader",
+   "qid": "Q12206942",
+   "fame": 0.599,
+   "also": [
+    "Vader",
+    "Anakin Skywalker",
+    "Lord Vader"
+   ]
+  },
+  {
+   "label": "Palpatine",
+   "qid": "Q51770",
+   "fame": 0.561,
+   "also": [
+    "Darth Sidious",
+    "The Senate",
+    "Chancellor Palpatine",
+    "Emperor Palpatine",
+    "Sheev Palpatine"
+   ]
+  },
+  {
+   "label": "Rey",
+   "qid": "Q21772117",
+   "fame": 0.554,
+   "also": [
+    "Rey Palpatine",
+    "Rey Skywalker"
+   ]
+  },
+  {
+   "label": "Kylo Ren",
+   "qid": "Q21515016",
+   "fame": 0.544,
+   "also": [
+    "Ben Solo"
+   ]
+  },
+  {
+   "label": "Princess Leia",
+   "qid": "Q51797",
+   "fame": 0.543,
+   "also": [
+    "Princess Leia Organa",
+    "General Organa",
+    "Leia Organa",
+    "Leia Organa Solo",
+    "Princess Leia Organa of Alderaan"
+   ]
+  },
+  {
+   "label": "Jabba the Hutt",
+   "qid": "Q51794",
+   "fame": 0.526,
+   "also": [
+    "Jabba",
+    "Jabba Desilijic Tiure"
+   ]
+  },
+  {
+   "label": "Obi-Wan Kenobi",
+   "qid": "Q51740",
+   "fame": 0.519,
+   "also": [
+    "Ben Kenobi",
+    "General Kenobi",
+    "Master Kenobi",
+    "Obi Wan",
+    "Ratio Tile"
+   ]
+  },
+  {
+   "label": "Padmé Amidala",
+   "qid": "Q51789",
+   "fame": 0.517,
+   "also": [
+    "Padme Naberrie",
+    "Queen Amidala",
+    "Senator Amidala"
+   ]
+  },
+  {
+   "label": "Luke Skywalker",
+   "qid": "Q51746",
+   "fame": 0.514,
+   "also": [
+    "Luke Starkiller"
+   ]
+  },
+  {
+   "label": "Yoda",
+   "qid": "Q51730",
+   "fame": 0.513,
+   "also": [
+    "Grandmaster Yoda",
+    "Master Yoda"
+   ]
+  },
+  {
+   "label": "Boba Fett",
+   "qid": "Q51790",
+   "fame": 0.506,
+   "also": []
+  },
+  {
+   "label": "Darth Maul",
+   "qid": "Q51766",
+   "fame": 0.504,
+   "also": [
+    "Maul"
+   ]
+  },
+  {
+   "label": "Ahsoka Tano",
+   "qid": "Q51755",
+   "fame": 0.484,
+   "also": [
+    "Fulcrum",
+    "Snips",
+    "Ahsoka",
+    "Ashla"
+   ]
+  },
+  {
+   "label": "Han Solo",
+   "qid": "Q51802",
+   "fame": 0.477,
+   "also": []
+  },
+  {
+   "label": "Din Djarin",
+   "qid": "Q79325377",
+   "fame": 0.472,
+   "also": [
+    "Mandalorian",
+    "Mando",
+    "The Mandalorian",
+    "Din Djarin “The Mandalorian”"
+   ]
+  },
+  {
+   "label": "Rose Tico",
+   "qid": "Q48731689",
+   "fame": 0.46,
+   "also": [
+    "Rose"
+   ]
+  },
+  {
+   "label": "Jar Jar Binks",
+   "qid": "Q51793",
+   "fame": 0.459,
+   "also": [
+    "Jar Jar"
+   ]
+  },
+  {
+   "label": "Count Dooku",
+   "qid": "Q51727",
+   "fame": 0.457,
+   "also": [
+    "Tyranus",
+    "Count Dooku of Serenno",
+    "Darth Tyranus",
+    "Dooku",
+    "Dooku of Serenno"
+   ]
+  },
+  {
+   "label": "General Hux",
+   "qid": "Q21884092",
+   "fame": 0.452,
+   "also": [
+    "Armitage Hux",
+    "General Armitage Hux"
+   ]
+  },
+  {
+   "label": "Grand Admiral Thrawn",
+   "qid": "Q51780",
+   "fame": 0.452,
+   "also": [
+    "Thrawn",
+    "Kivu'raw'nuru",
+    "Mitth'raw'nuru",
+    "Mitth'raw'nuruodo",
+    "Vurawn"
+   ]
+  },
+  {
+   "label": "Wilhuff Tarkin",
+   "qid": "Q51800",
+   "fame": 0.449,
+   "also": [
+    "Grand Moff Tarkin",
+    "Governor Tarkin",
+    "Grand Moff Wilhuff Tarkin"
+   ]
+  },
+  {
+   "label": "Lando Calrissian",
+   "qid": "Q51799",
+   "fame": 0.448,
+   "also": [
+    "Landonis Balthazar Calrissian III"
+   ]
+  },
+  {
+   "label": "Supreme Leader Snoke",
+   "qid": "Q20501302",
+   "fame": 0.446,
+   "also": [
+    "Snoke"
+   ]
+  },
+  {
+   "label": "Mon Mothma",
+   "qid": "Q2631047",
+   "fame": 0.441,
+   "also": []
+  },
+  {
+   "label": "Chewbacca",
+   "qid": "Q51803",
+   "fame": 0.436,
+   "also": [
+    "Chewie"
+   ]
+  },
+  {
+   "label": "C-3PO",
+   "qid": "Q51787",
+   "fame": 0.432,
+   "also": [
+    "See-Threepio",
+    "Threepio"
+   ]
+  },
+  {
+   "label": "Qui-Gon Jinn",
+   "qid": "Q51736",
+   "fame": 0.43,
+   "also": [
+    "Qui-Gon"
+   ]
+  },
+  {
+   "label": "Revan",
+   "qid": "Q51745",
+   "fame": 0.43,
+   "also": [
+    "Darth Revan"
+   ]
+  },
+  {
+   "label": "Cassian Andor",
+   "qid": "Q27970919",
+   "fame": 0.427,
+   "also": [
+    "Kassa"
+   ]
+  },
+  {
+   "label": "Poe Dameron",
+   "qid": "Q21782656",
+   "fame": 0.425,
+   "also": []
+  },
+  {
+   "label": "General Grievous",
+   "qid": "Q51792",
+   "fame": 0.423,
+   "also": [
+    "Grievous",
+    "Qymaen jai Sheelal"
+   ]
+  },
+  {
+   "label": "Moff Gideon",
+   "qid": "Q85786022",
+   "fame": 0.415,
+   "also": [
+    "Gideon"
+   ]
+  },
+  {
+   "label": "Finn",
+   "qid": "Q21772120",
+   "fame": 0.409,
+   "also": []
+  },
+  {
+   "label": "Vice-Admiral Holdo",
+   "qid": "Q93168778",
+   "fame": 0.406,
+   "also": [
+    "Amilyn Holdo"
+   ]
+  },
+  {
+   "label": "Cal Kestis",
+   "qid": "Q63581338",
+   "fame": 0.405,
+   "also": []
+  },
+  {
+   "label": "Bo-Katan Kryze",
+   "qid": "Q104215396",
+   "fame": 0.404,
+   "also": [
+    "Lady Bo-Katan"
+   ]
+  },
+  {
+   "label": "Jango Fett",
+   "qid": "Q51795",
+   "fame": 0.404,
+   "also": []
+  },
+  {
+   "label": "Mace Windu",
+   "qid": "Q51725",
+   "fame": 0.404,
+   "also": []
+  },
+  {
+   "label": "Anakin Skywalker",
+   "qid": "Q51752",
+   "fame": 0.403,
+   "also": [
+    "The Chosen One",
+    "Ani",
+    "Anakin",
+    "General Skywalker",
+    "Allah Gold",
+    "Darth Vader"
+   ]
+  },
+  {
+   "label": "Mara Jade",
+   "qid": "Q51748",
+   "fame": 0.394,
+   "also": [
+    "Mara Jade Skywalker"
+   ]
+  },
+  {
+   "label": "Sabine Wren",
+   "qid": "Q25455117",
+   "fame": 0.392,
+   "also": []
+  },
+  {
+   "label": "Saw Gerrera",
+   "qid": "Q24734909",
+   "fame": 0.388,
+   "also": []
+  },
+  {
+   "label": "Cad Bane",
+   "qid": "Q52374",
+   "fame": 0.386,
+   "also": []
+  },
+  {
+   "label": "Qi'ra",
+   "qid": "Q54216419",
+   "fame": 0.382,
+   "also": []
+  },
+  {
+   "label": "Ezra Bridger",
+   "qid": "Q24953547",
+   "fame": 0.38,
+   "also": []
+  },
+  {
+   "label": "Captain Rex",
+   "qid": "Q2593408",
+   "fame": 0.378,
+   "also": [
+    "Rex",
+    "Commander Rex"
+   ]
+  },
+  {
+   "label": "Cara Dune",
+   "qid": "Q63728138",
+   "fame": 0.377,
+   "also": [
+    "Carasynthia Dune"
+   ]
+  },
+  {
+   "label": "Fennec Shand",
+   "qid": "Q86762044",
+   "fame": 0.377,
+   "also": []
+  },
+  {
+   "label": "Bail Organa",
+   "qid": "Q6315462",
+   "fame": 0.375,
+   "also": [
+    "senator Organa"
+   ]
+  },
+  {
+   "label": "Darth Bane",
+   "qid": "Q51764",
+   "fame": 0.373,
+   "also": [
+    "Dessel"
+   ]
+  },
+  {
+   "label": "Kanan Jarrus",
+   "qid": "Q24953533",
+   "fame": 0.369,
+   "also": [
+    "Caleb Dume"
+   ]
+  },
+  {
+   "label": "Orson Krennic",
+   "qid": "Q28039497",
+   "fame": 0.368,
+   "also": [
+    "Orson Callan Krennic"
+   ]
+  },
+  {
+   "label": "K-2SO",
+   "qid": "Q28039487",
+   "fame": 0.366,
+   "also": []
+  },
+  {
+   "label": "Watto",
+   "qid": "Q51801",
+   "fame": 0.364,
+   "also": []
+  },
+  {
+   "label": "Wedge Antilles",
+   "qid": "Q52310",
+   "fame": 0.361,
+   "also": []
+  },
+  {
+   "label": "Asajj Ventress",
+   "qid": "Q14417",
+   "fame": 0.357,
+   "also": []
+  },
+  {
+   "label": "Jyn Erso",
+   "qid": "Q24951125",
+   "fame": 0.354,
+   "also": []
+  },
+  {
+   "label": "Admiral Ackbar",
+   "qid": "Q52306",
+   "fame": 0.352,
+   "also": [
+    "Gial Ackbar"
+   ]
+  },
+  {
+   "label": "Owen Lars",
+   "qid": "Q2267163",
+   "fame": 0.352,
+   "also": [
+    "Uncle Owen"
+   ]
+  },
+  {
+   "label": "Phasma",
+   "qid": "Q21790713",
+   "fame": 0.348,
+   "also": [
+    "Captain Phasma"
+   ]
+  },
+  {
+   "label": "Cobb Vanth",
+   "qid": "Q102122789",
+   "fame": 0.346,
+   "also": [
+    "The Marshal"
+   ]
+  },
+  {
+   "label": "Maz Kanata",
+   "qid": "Q22079436",
+   "fame": 0.34,
+   "also": []
+  },
+  {
+   "label": "The Armorer",
+   "qid": "Q85806401",
+   "fame": 0.327,
+   "also": []
+  },
+  {
+   "label": "Baylan Skoll",
+   "qid": "Q121879570",
+   "fame": 0.316,
+   "also": []
+  },
+  {
+   "label": "Bib Fortuna",
+   "qid": "Q2706202",
+   "fame": 0.313,
+   "also": []
+  },
+  {
+   "label": "Dryden Vos",
+   "qid": "Q54339243",
+   "fame": 0.312,
+   "also": []
+  },
+  {
+   "label": "Kyle Katarn",
+   "qid": "Q51735",
+   "fame": 0.31,
+   "also": []
+  },
+  {
+   "label": "Jacen Solo",
+   "qid": "Q1087845",
+   "fame": 0.308,
+   "also": [
+    "Darth Caedus"
+   ]
+  },
+  {
+   "label": "Carson Teva",
+   "qid": "Q122310698",
+   "fame": 0.298,
+   "also": [
+    "Captain Carson Teva",
+    "Captain Teva"
+   ]
+  },
+  {
+   "label": "Doctor Aphra",
+   "qid": "Q64876660",
+   "fame": 0.294,
+   "also": [
+    "Chelli Lona Aphra"
+   ]
+  },
+  {
+   "label": "Darth Traya",
+   "qid": "Q2250762",
+   "fame": 0.292,
+   "also": [
+    "Kreia"
+   ]
+  },
+  {
+   "label": "Shmi Skywalker",
+   "qid": "Q51804",
+   "fame": 0.292,
+   "also": []
+  },
+  {
+   "label": "Migs Mayfeld",
+   "qid": "Q85846589",
+   "fame": 0.288,
+   "also": [
+    "Mayfeld"
+   ]
+  },
+  {
+   "label": "Tobias Beckett",
+   "qid": "Q54216677",
+   "fame": 0.286,
+   "also": []
+  },
+  {
+   "label": "Bastila Shan",
+   "qid": "Q51721",
+   "fame": 0.28,
+   "also": []
+  },
+  {
+   "label": "The Client",
+   "qid": "Q85806796",
+   "fame": 0.261,
+   "also": []
+  },
+  {
+   "label": "Huyang",
+   "qid": "Q125767223",
+   "fame": 0.26,
+   "also": [
+    "Professor Huyang"
+   ]
+  },
+  {
+   "label": "Iden Versio",
+   "qid": "Q48732458",
+   "fame": 0.26,
+   "also": []
+  },
+  {
+   "label": "Boss Nass",
+   "qid": "Q2333831",
+   "fame": 0.256,
+   "also": [
+    "Rugor Nass"
+   ]
+  },
+  {
+   "label": "Wicket W. Warrick",
+   "qid": "Q2707503",
+   "fame": 0.244,
+   "also": [
+    "Wicket"
+   ]
+  },
+  {
+   "label": "Firmus Piett",
+   "qid": "Q51778",
+   "fame": 0.241,
+   "also": [
+    "Admiral Piett"
+   ]
+  },
+  {
+   "label": "Finis Valorum",
+   "qid": "Q1844301",
+   "fame": 0.235,
+   "also": [
+    "Valorum",
+    "Chancellor Valorum"
+   ]
+  },
+  {
+   "label": "Enric Pryde",
+   "qid": "Q113388657",
+   "fame": 0.232,
+   "also": [
+    "Allegiant General Pryde"
+   ]
+  },
+  {
+   "label": "Nute Gunray",
+   "qid": "Q51791",
+   "fame": 0.231,
+   "also": []
+  },
+  {
+   "label": "Satine Kryze",
+   "qid": "Q106383564",
+   "fame": 0.231,
+   "also": [
+    "Duchess Satine",
+    "Duchess Satine Kryze"
+   ]
+  },
+  {
+   "label": "Yaddle",
+   "qid": "Q2481658",
+   "fame": 0.225,
+   "also": []
+  },
+  {
+   "label": "Krrsantan",
+   "qid": "Q110435316",
+   "fame": 0.219,
+   "also": [
+    "Black Krrsantan"
+   ]
+  },
+  {
+   "label": "Shin Hati",
+   "qid": "Q121879571",
+   "fame": 0.219,
+   "also": []
+  },
+  {
+   "label": "Darth Malak",
+   "qid": "Q2704488",
+   "fame": 0.215,
+   "also": [
+    "Malak",
+    "Alek"
+   ]
+  },
+  {
+   "label": "Quinlan Vos",
+   "qid": "Q1188045",
+   "fame": 0.213,
+   "also": []
+  },
+  {
+   "label": "Ben Skywalker",
+   "qid": "Q2704623",
+   "fame": 0.209,
+   "also": []
+  },
+  {
+   "label": "Morgan Elsbeth",
+   "qid": "Q121879572",
+   "fame": 0.204,
+   "also": []
+  },
+  {
+   "label": "Depa Billaba",
+   "qid": "Q2738825",
+   "fame": 0.199,
+   "also": []
+  },
+  {
+   "label": "Maximilian Veers",
+   "qid": "Q2630856",
+   "fame": 0.191,
+   "also": [
+    "General Veers"
+   ]
+  },
+  {
+   "label": "Bodhi Rook",
+   "qid": "Q28039504",
+   "fame": 0.185,
+   "also": []
+  },
+  {
+   "label": "Chirrut Îmwe",
+   "qid": "Q28039491",
+   "fame": 0.18,
+   "also": []
+  },
+  {
+   "label": "Mas Amedda",
+   "qid": "Q2268351",
+   "fame": 0.18,
+   "also": []
+  },
+  {
+   "label": "Galen Erso",
+   "qid": "Q28039509",
+   "fame": 0.179,
+   "also": []
+  },
+  {
+   "label": "Taun We",
+   "qid": "Q2532506",
+   "fame": 0.178,
+   "also": []
+  },
+  {
+   "label": "Fifth Brother",
+   "qid": "Q111192214",
+   "fame": 0.177,
+   "also": []
+  },
+  {
+   "label": "Plo Koon",
+   "qid": "Q635121",
+   "fame": 0.175,
+   "also": []
+  },
+  {
+   "label": "Talzin",
+   "qid": "Q21234629",
+   "fame": 0.172,
+   "also": [
+    "Mother Talzin"
+   ]
+  },
+  {
+   "label": "Ki-Adi-Mundi",
+   "qid": "Q54271",
+   "fame": 0.167,
+   "also": []
+  },
+  {
+   "label": "Greedo",
+   "qid": "Q2738049",
+   "fame": 0.159,
+   "also": []
+  },
+  {
+   "label": "Breha Organa",
+   "qid": "Q104632113",
+   "fame": 0.157,
+   "also": [
+    "Queen Breha Organa"
+   ]
+  },
+  {
+   "label": "Shaak Ti",
+   "qid": "Q1049155",
+   "fame": 0.157,
+   "also": []
+  },
+  {
+   "label": "Dengar",
+   "qid": "Q2998140",
+   "fame": 0.156,
+   "also": []
+  },
+  {
+   "label": "Baze Malbus",
+   "qid": "Q28039494",
+   "fame": 0.149,
+   "also": []
+  },
+  {
+   "label": "Enfys Nest",
+   "qid": "Q54455741",
+   "fame": 0.149,
+   "also": []
+  },
+  {
+   "label": "Sabé",
+   "qid": "Q3754619",
+   "fame": 0.147,
+   "also": []
+  },
+  {
+   "label": "Anakin Solo",
+   "qid": "Q2069214",
+   "fame": 0.146,
+   "also": []
+  },
+  {
+   "label": "Nien Nunb",
+   "qid": "Q2526049",
+   "fame": 0.145,
+   "also": []
+  },
+  {
+   "label": "Ruescott Melshi",
+   "qid": "Q28039564",
+   "fame": 0.142,
+   "also": [
+    "Melshi",
+    "Sergeant Melshi"
+   ]
+  },
+  {
+   "label": "Barriss Offee",
+   "qid": "Q2704981",
+   "fame": 0.14,
+   "also": []
+  },
+  {
+   "label": "Atton Rand",
+   "qid": "Q16529784",
+   "fame": 0.137,
+   "also": [
+    "Jaq"
+   ]
+  },
+  {
+   "label": "Aayla Secura",
+   "qid": "Q1998913",
+   "fame": 0.136,
+   "also": []
+  },
+  {
+   "label": "Talon Karrde",
+   "qid": "Q6138354",
+   "fame": 0.135,
+   "also": []
+  },
+  {
+   "label": "Prince Xizor",
+   "qid": "Q2633028",
+   "fame": 0.13,
+   "also": [
+    "Xizor"
+   ]
+  },
+  {
+   "label": "Wullf Yularen",
+   "qid": "Q21234601",
+   "fame": 0.128,
+   "also": []
+  },
+  {
+   "label": "Zam Wesell",
+   "qid": "Q2737965",
+   "fame": 0.128,
+   "also": []
+  },
+  {
+   "label": "Biggs Darklighter",
+   "qid": "Q3273056",
+   "fame": 0.125,
+   "also": []
+  },
+  {
+   "label": "Admiral Ozzel",
+   "qid": "Q51777",
+   "fame": 0.122,
+   "also": [
+    "Admiral Kendal Ozzel",
+    "Kendal Ozzel"
+   ]
+  },
+  {
+   "label": "Sebulba",
+   "qid": "Q2141572",
+   "fame": 0.12,
+   "also": []
+  },
+  {
+   "label": "Garsa Fwip",
+   "qid": "Q110307540",
+   "fame": 0.118,
+   "also": []
+  },
+  {
+   "label": "Cliegg Lars",
+   "qid": "Q2474198",
+   "fame": 0.115,
+   "also": []
+  },
+  {
+   "label": "Canderous Ordo",
+   "qid": "Q2248601",
+   "fame": 0.113,
+   "also": [
+    "Mandalore the Preserver"
+   ]
+  },
+  {
+   "label": "Jaina Solo",
+   "qid": "Q2264289",
+   "fame": 0.106,
+   "also": [
+    "Jaina Solo Fel"
+   ]
+  },
+  {
+   "label": "Babu Frik",
+   "qid": "Q90374166",
+   "fame": 0.102,
+   "also": []
+  },
+  {
+   "label": "Reva Sevander",
+   "qid": "Q111191242",
+   "fame": 0.102,
+   "also": [
+    "Third Sister"
+   ]
+  },
+  {
+   "label": "Beru Lars",
+   "qid": "Q2480769",
+   "fame": 0.101,
+   "also": [
+    "Aunt Beru",
+    "Beru Whitesun",
+    "Beru Whitesun Lars"
+   ]
+  },
+  {
+   "label": "Cade Skywalker",
+   "qid": "Q2706114",
+   "fame": 0.095,
+   "also": []
+  },
+  {
+   "label": "Jocasta Nu",
+   "qid": "Q2248965",
+   "fame": 0.095,
+   "also": []
+  },
+  {
+   "label": "Kit Fisto",
+   "qid": "Q932724",
+   "fame": 0.09,
+   "also": []
+  },
+  {
+   "label": "Sio Bibble",
+   "qid": "Q15882078",
+   "fame": 0.083,
+   "also": []
+  },
+  {
+   "label": "Bossk",
+   "qid": "Q2745835",
+   "fame": 0.082,
+   "also": []
+  },
+  {
+   "label": "General Dodonna",
+   "qid": "Q3755427",
+   "fame": 0.076,
+   "also": [
+    "Jan Dodonna"
+   ]
+  },
+  {
+   "label": "Raymus Antilles",
+   "qid": "Q3751841",
+   "fame": 0.074,
+   "also": []
+  },
+  {
+   "label": "Gilad Pellaeon",
+   "qid": "Q1071097",
+   "fame": 0.073,
+   "also": []
+  },
+  {
+   "label": "Agent Kallus",
+   "qid": "Q109381180",
+   "fame": 0.068,
+   "also": [
+    "Alexsandr Kallus"
+   ]
+  },
+  {
+   "label": "Val",
+   "qid": "Q54340140",
+   "fame": 0.065,
+   "also": [
+    "Val Beckett"
+   ]
+  },
+  {
+   "label": "Jannah",
+   "qid": "Q113414204",
+   "fame": 0.064,
+   "also": []
+  },
+  {
+   "label": "Jek Porkins",
+   "qid": "Q517292",
+   "fame": 0.064,
+   "also": []
+  },
+  {
+   "label": "Lieutenant Connix",
+   "qid": "Q47008403",
+   "fame": 0.064,
+   "also": [
+    "Kaydel Ko Connix"
+   ]
+  },
+  {
+   "label": "Lobot",
+   "qid": "Q3494697",
+   "fame": 0.064,
+   "also": []
+  },
+  {
+   "label": "Aurra Sing",
+   "qid": "Q51806",
+   "fame": 0.059,
+   "also": []
+  },
+  {
+   "label": "Carth Onasi",
+   "qid": "Q13582266",
+   "fame": 0.048,
+   "also": []
+  },
+  {
+   "label": "Maarva Andor",
+   "qid": "Q114251545",
+   "fame": 0.044,
+   "also": [
+    "Maarva Carassi Andor"
+   ]
+  },
+  {
+   "label": "Darth Nihilus",
+   "qid": "Q2485770",
+   "fame": 0.043,
+   "also": []
+  },
+  {
+   "label": "4-LOM",
+   "qid": "Q1490700",
+   "fame": 0.042,
+   "also": []
+  },
+  {
+   "label": "Adi Gallia",
+   "qid": "Q2704608",
+   "fame": 0.033,
+   "also": []
+  },
+  {
+   "label": "Lott Dod",
+   "qid": "Q14948402",
+   "fame": 0.027,
+   "also": []
+  },
+  {
+   "label": "Garven Dreis",
+   "qid": "Q11682046",
+   "fame": 0.024,
+   "also": [
+    "Dave Dreis",
+    "Dreis",
+    "Red Leader"
+   ]
+  },
+  {
+   "label": "Snap Wexley",
+   "qid": "Q25714283",
+   "fame": 0.018,
+   "also": []
+  },
+  {
+   "label": "Cut Lawquane",
+   "qid": "Q106762637",
+   "fame": 0.015,
+   "also": []
+  },
+  {
+   "label": "Salacious Crumb",
+   "qid": "Q2730049",
+   "fame": 0.015,
+   "also": [
+    "Salacious B. Crumb"
+   ]
+  },
+  {
+   "label": "General Madine",
+   "qid": "Q18361743",
+   "fame": 0.014,
+   "also": [
+    "Crix Madine"
+   ]
+  },
+  {
+   "label": "Durge",
+   "qid": "Q3041572",
+   "fame": 0.011,
+   "also": []
+  },
+  {
+   "label": "Juno Eclipse",
+   "qid": "Q5928722",
+   "fame": 0.007,
+   "also": []
+  },
+  {
+   "label": "Exar Kun",
+   "qid": "Q924583",
+   "fame": 0.006,
+   "also": []
+  },
+  {
+   "label": "Crosshair",
+   "qid": "Q106622745",
+   "fame": 0.001,
+   "also": []
+  },
+  {
+   "label": "Admiral Natasi Daala",
+   "qid": "Q1092548",
+   "fame": 0,
+   "also": [
+    "Daala",
+    "Natasi Daala"
+   ]
+  },
+  {
+   "label": "Agen Kolar",
+   "qid": "Q51742",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Airen Cracken",
+   "qid": "Q2828705",
+   "fame": 0,
+   "also": [
+    "General Cracken"
+   ]
+  },
+  {
+   "label": "Ajunta Pall",
+   "qid": "Q3503755",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Allana Solo",
+   "qid": "Q3612345",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Arvel Crynyd",
+   "qid": "Q119217659",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Bria Tharen",
+   "qid": "Q7887386",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Cal Omas",
+   "qid": "Q16534614",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Callista Ming",
+   "qid": "Q3650910",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Captain Tarpals",
+   "qid": "Q3286365",
+   "fame": 0,
+   "also": [
+    "Roos Tarpals"
+   ]
+  },
+  {
+   "label": "Captain Typho",
+   "qid": "Q6135489",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Carnor Jax",
+   "qid": "Q48889567",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Chopper",
+   "qid": "Q50380089",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Cin Drallig",
+   "qid": "Q2248111",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Commander Gree",
+   "qid": "Q3776288",
+   "fame": 0,
+   "also": [
+    "Gree"
+   ]
+  },
+  {
+   "label": "Corran Horn",
+   "qid": "Q2254810",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Danni Quee",
+   "qid": "Q14414683",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Darth Andeddu",
+   "qid": "Q3702854",
+   "fame": 0,
+   "also": [
+    "Immortal God-King of Prakith"
+   ]
+  },
+  {
+   "label": "Darth Malgus",
+   "qid": "Q3016241",
+   "fame": 0,
+   "also": [
+    "Veradun"
+   ]
+  },
+  {
+   "label": "Darth Sion",
+   "qid": "Q51767",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Dash Rendar",
+   "qid": "Q2629940",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Demetrius Zaarin",
+   "qid": "Q5802197",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Dexter Jettster",
+   "qid": "Q2214764",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Dr. Evazan",
+   "qid": "Q7488830",
+   "fame": 0,
+   "also": [
+    "Cornelius Evazan",
+    "Doctor Cornelius Evazan",
+    "Doctor Evazan"
+   ]
+  },
+  {
+   "label": "Eeth Koth",
+   "qid": "Q748945",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Empatojayos Brand",
+   "qid": "Q3724798",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Eno Cordova",
+   "qid": "Q121661272",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Even Piell",
+   "qid": "Q2739030",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Ferus Olin",
+   "qid": "Q1080988",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Freedon Nadd",
+   "qid": "Q51774",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Garm Bel Iblis",
+   "qid": "Q3758385",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Irek Ismaren",
+   "qid": "Q7497264",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Jaden Korr",
+   "qid": "Q3160424",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Jolee Bindo",
+   "qid": "Q2755075",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Jorus C'baoth",
+   "qid": "Q2253906",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Kam Solusar",
+   "qid": "Q3812652",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Kol Skywalker",
+   "qid": "Q3198423",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Kyp Durron",
+   "qid": "Q897831",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Lama Su",
+   "qid": "Q3499890",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Lowbacca",
+   "qid": "Q945094",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Lumiya",
+   "qid": "Q2249741",
+   "fame": 0,
+   "also": [
+    "Shira Brie",
+    "Shira Elan Colla Brie"
+   ]
+  },
+  {
+   "label": "Max Rebo",
+   "qid": "Q11691665",
+   "fame": 0,
+   "also": [
+    "Siiruulian Phantele"
+   ]
+  },
+  {
+   "label": "Mira",
+   "qid": "Q3858682",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Moff Jerjerrod",
+   "qid": "Q3807979",
+   "fame": 0,
+   "also": [
+    "Tiaan Jerjerrod",
+    "Jerjerrod"
+   ]
+  },
+  {
+   "label": "Momaw Nadon",
+   "qid": "Q10751999",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Naga Sadow",
+   "qid": "Q2739090",
+   "fame": 0,
+   "also": [
+    "Darth Naga Sadow"
+   ]
+  },
+  {
+   "label": "Noa Briqualon",
+   "qid": "Q20435134",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Nom Anor",
+   "qid": "Q3877903",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Nomi Sunrider",
+   "qid": "Q2250475",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Onaconda Farr",
+   "qid": "Q10340894",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Oola",
+   "qid": "Q22245293",
+   "fame": 0,
+   "also": [
+    "Oola the Twilek Dancing Girl"
+   ]
+  },
+  {
+   "label": "OOM-9",
+   "qid": "Q56415501",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Oppo Rancisis",
+   "qid": "Q591031",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Orn Free Taa",
+   "qid": "Q17996288",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Ponda Baba",
+   "qid": "Q10637390",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Pre Vizsla",
+   "qid": "Q16591910",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Quarsh Panaka",
+   "qid": "Q3361868",
+   "fame": 0,
+   "also": [
+    "Panaka",
+    "Captain Panaka"
+   ]
+  },
+  {
+   "label": "Rahm Kota",
+   "qid": "Q1245387",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Raynar Thul",
+   "qid": "Q3930693",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Rio Durant",
+   "qid": "Q54340342",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Rosh Penin",
+   "qid": "Q907262",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Rune Haako",
+   "qid": "Q2406808",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Rush Clovis",
+   "qid": "Q19819454",
+   "fame": 0,
+   "also": [
+    "Clovis"
+   ]
+  },
+  {
+   "label": "Saesee Tiin",
+   "qid": "Q2343363",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Satele Shan",
+   "qid": "Q3473874",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Saul Karath",
+   "qid": "Q6122148",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Shado Vao",
+   "qid": "Q7726044",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Sly Moore",
+   "qid": "Q3962923",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Sy Snootles",
+   "qid": "Q21683560",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Tala Durith",
+   "qid": "Q112620369",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Tarfful",
+   "qid": "Q2734577",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Tionne Solusar",
+   "qid": "Q3529256",
+   "fame": 0,
+   "also": [
+    "Tionne"
+   ]
+  },
+  {
+   "label": "Ulic Qel-Droma",
+   "qid": "Q2250235",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Vima-Da-Boda",
+   "qid": "Q10751976",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Wat Tambor",
+   "qid": "Q2257113",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Yarael Poof",
+   "qid": "Q2632619",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Ysanne Isard",
+   "qid": "Q7887876",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Zayne Carrick",
+   "qid": "Q3574951",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Zsinj",
+   "qid": "Q6171868",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Zuckuss",
+   "qid": "Q2244986",
+   "fame": 0,
+   "also": []
+  }
+ ]
+}

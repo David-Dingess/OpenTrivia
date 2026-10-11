@@ -1,0 +1,303 @@
+{
+ "id": "list.sports.nfl-teams",
+ "title": "NFL teams",
+ "prompt": "Name an NFL team",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "football",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q17156793 ; wdt:P118 wd:Q1215884 . FILTER NOT EXISTS { ?item wdt:P576 [] } } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-09-30T04:17:08.847Z"
+ },
+ "rows": [
+  {
+   "label": "Los Angeles Rams",
+   "qid": "Q337377",
+   "fame": 0.703,
+   "also": [
+    "Cleveland Rams",
+    "L.A. Rams",
+    "Los Angles Rams"
+   ]
+  },
+  {
+   "label": "New York Giants",
+   "qid": "Q190618",
+   "fame": 0.701,
+   "also": [
+    "Giants",
+    "NYG",
+    "NY Giants"
+   ]
+  },
+  {
+   "label": "Buffalo Bills",
+   "qid": "Q221626",
+   "fame": 0.696,
+   "also": []
+  },
+  {
+   "label": "Seattle Seahawks",
+   "qid": "Q221878",
+   "fame": 0.693,
+   "also": []
+  },
+  {
+   "label": "New England Patriots",
+   "qid": "Q193390",
+   "fame": 0.679,
+   "also": [
+    "Patriots",
+    "Pats",
+    "Boston Patriots",
+    "The New England Patriots"
+   ]
+  },
+  {
+   "label": "San Francisco 49ers",
+   "qid": "Q337758",
+   "fame": 0.678,
+   "also": [
+    "49ers",
+    "Forty Niners Football Co. LLC",
+    "Forty Niners Football Company LLC"
+   ]
+  },
+  {
+   "label": "Green Bay Packers",
+   "qid": "Q213837",
+   "fame": 0.675,
+   "also": [
+    "Packers",
+    "Green Bay",
+    "GNB"
+   ]
+  },
+  {
+   "label": "Washington Commanders",
+   "qid": "Q212654",
+   "fame": 0.674,
+   "also": [
+    "Commanders",
+    "Boston Braves",
+    "Redskins",
+    "Boston Redskins",
+    "Washington Football Team",
+    "Washington Redskins"
+   ]
+  },
+  {
+   "label": "Dallas Cowboys",
+   "qid": "Q204862",
+   "fame": 0.673,
+   "also": [
+    "Cowboys"
+   ]
+  },
+  {
+   "label": "Las Vegas Raiders",
+   "qid": "Q324523",
+   "fame": 0.67,
+   "also": [
+    "Raiders",
+    "Los Angeles Raiders",
+    "Oakland Raiders"
+   ]
+  },
+  {
+   "label": "Kansas City Chiefs",
+   "qid": "Q223522",
+   "fame": 0.668,
+   "also": [
+    "Chiefs",
+    "Dallas Texans",
+    "KC Chiefs"
+   ]
+  },
+  {
+   "label": "Pittsburgh Steelers",
+   "qid": "Q191477",
+   "fame": 0.662,
+   "also": [
+    "Steelers",
+    "Pittsburgh Pirates",
+    "Rooneymen"
+   ]
+  },
+  {
+   "label": "Philadelphia Eagles",
+   "qid": "Q219714",
+   "fame": 0.657,
+   "also": [
+    "The Birds",
+    "Eagles"
+   ]
+  },
+  {
+   "label": "Cleveland Browns",
+   "qid": "Q223527",
+   "fame": 0.653,
+   "also": [
+    "Browns"
+   ]
+  },
+  {
+   "label": "Baltimore Ravens",
+   "qid": "Q276539",
+   "fame": 0.652,
+   "also": []
+  },
+  {
+   "label": "Chicago Bears",
+   "qid": "Q205033",
+   "fame": 0.652,
+   "also": [
+    "Bears",
+    "Da Bears",
+    "Los Kundes",
+    "Monsters of the Midway."
+   ]
+  },
+  {
+   "label": "New York Jets",
+   "qid": "Q219602",
+   "fame": 0.645,
+   "also": [
+    "Jets",
+    "New York Titans",
+    "Titans of New York"
+   ]
+  },
+  {
+   "label": "Tennessee Titans",
+   "qid": "Q320484",
+   "fame": 0.643,
+   "also": [
+    "Titans",
+    "Houston Oilers",
+    "Tennessee Oilers"
+   ]
+  },
+  {
+   "label": "Minnesota Vikings",
+   "qid": "Q221150",
+   "fame": 0.642,
+   "also": [
+    "Vikings",
+    "Vikes"
+   ]
+  },
+  {
+   "label": "Arizona Cardinals",
+   "qid": "Q224164",
+   "fame": 0.639,
+   "also": [
+    "Chicago Cardinals",
+    "Morgan Athletic Club",
+    "Phoenix Cardinals",
+    "Racine Cardinals"
+   ]
+  },
+  {
+   "label": "Denver Broncos",
+   "qid": "Q223507",
+   "fame": 0.639,
+   "also": [
+    "Broncos"
+   ]
+  },
+  {
+   "label": "Los Angeles Chargers",
+   "qid": "Q272220",
+   "fame": 0.637,
+   "also": [
+    "San Diego Chargers",
+    "LA Chargers",
+    "Chargers"
+   ]
+  },
+  {
+   "label": "Miami Dolphins",
+   "qid": "Q223243",
+   "fame": 0.635,
+   "also": [
+    "Miami",
+    "Dolphins"
+   ]
+  },
+  {
+   "label": "Atlanta Falcons",
+   "qid": "Q272059",
+   "fame": 0.633,
+   "also": [
+    "Falcons"
+   ]
+  },
+  {
+   "label": "Detroit Lions",
+   "qid": "Q271880",
+   "fame": 0.63,
+   "also": []
+  },
+  {
+   "label": "Indianapolis Colts",
+   "qid": "Q193753",
+   "fame": 0.626,
+   "also": [
+    "Indianapolis"
+   ]
+  },
+  {
+   "label": "New Orleans Saints",
+   "qid": "Q172435",
+   "fame": 0.619,
+   "also": [
+    "Saints"
+   ]
+  },
+  {
+   "label": "Tampa Bay Buccaneers",
+   "qid": "Q320476",
+   "fame": 0.619,
+   "also": [
+    "Buccaneers",
+    "Bucs",
+    "Tampa Bay Bucs",
+    "Tampa Bay Bucs Football",
+    "Tampa Bucs",
+    "TB Buccaneers"
+   ]
+  },
+  {
+   "label": "Houston Texans",
+   "qid": "Q223514",
+   "fame": 0.617,
+   "also": [
+    "Texans"
+   ]
+  },
+  {
+   "label": "Jacksonville Jaguars",
+   "qid": "Q272223",
+   "fame": 0.617,
+   "also": [
+    "Jaguars"
+   ]
+  },
+  {
+   "label": "Carolina Panthers",
+   "qid": "Q330120",
+   "fame": 0.606,
+   "also": []
+  },
+  {
+   "label": "Cincinnati Bengals",
+   "qid": "Q223511",
+   "fame": 0.605,
+   "also": []
+  }
+ ]
+}

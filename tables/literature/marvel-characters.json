@@ -1,0 +1,354 @@
+{
+ "id": "list.literature.marvel-characters",
+ "kind": "list",
+ "title": "Marvel Universe characters",
+ "genre": "arts-entertainment",
+ "category": "literature",
+ "topic": "comics-and-manga",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT ?item ?sitelinks WHERE { ?item wdt:P1080 wd:Q2246088 ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 30) FILTER NOT EXISTS { ?item wdt:P1080 wd:Q1152150 } } ORDER BY DESC(?sitelinks) LIMIT 200 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T17:58:32.471Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T17:58:32.471Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "character",
+  "many": "characters",
+  "columns": {}
+ },
+ "impostors": [
+  {
+   "label": "Green Lantern",
+   "qid": "Q32884",
+   "why": "not a member: a DC character"
+  },
+  {
+   "label": "Batman",
+   "qid": "Q2695156",
+   "why": "not a member: a DC character"
+  },
+  {
+   "label": "Superman",
+   "qid": "Q79015",
+   "why": "not a member: a DC character"
+  },
+  {
+   "label": "Wonder Woman",
+   "qid": "Q338430",
+   "why": "not a member: a DC character"
+  },
+  {
+   "label": "The Joker",
+   "qid": "Q217533",
+   "why": "not a member: a DC character"
+  },
+  {
+   "label": "Harley Quinn",
+   "qid": "Q849477",
+   "why": "not a member: a DC character"
+  },
+  {
+   "label": "Catwoman",
+   "qid": "Q158952",
+   "why": "not a member: a DC character"
+  },
+  {
+   "label": "Riddler",
+   "qid": "Q836789",
+   "why": "not a member: a DC character"
+  }
+ ],
+ "rows": [
+  {
+   "label": "Spider-Man",
+   "qid": "Q79037",
+   "fame": 0.74,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Doctor Doom",
+   "qid": "Q430178",
+   "fame": 0.712,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Jean Grey",
+   "qid": "Q5350072",
+   "fame": 0.708,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Wolverine",
+   "qid": "Q186422",
+   "fame": 0.694,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Punisher",
+   "qid": "Q729150",
+   "fame": 0.625,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Hulk",
+   "qid": "Q188760",
+   "fame": 0.62,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Captain America",
+   "qid": "Q190679",
+   "fame": 0.619,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Deadpool",
+   "qid": "Q1631090",
+   "fame": 0.619,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Iron Man",
+   "qid": "Q180704",
+   "fame": 0.618,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Scarlet Witch",
+   "qid": "Q929285",
+   "fame": 0.618,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Thanos",
+   "qid": "Q2276627",
+   "fame": 0.615,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Nightcrawler",
+   "qid": "Q5342183",
+   "fame": 0.607,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Mystique",
+   "qid": "Q737236",
+   "fame": 0.604,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Magneto",
+   "qid": "Q840291",
+   "fame": 0.6,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Cyclops",
+   "qid": "Q857921",
+   "fame": 0.592,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Gambit",
+   "qid": "Q2639150",
+   "fame": 0.591,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Venom",
+   "qid": "Q1621261",
+   "fame": 0.588,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Doctor Strange",
+   "qid": "Q907767",
+   "fame": 0.586,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Galactus",
+   "qid": "Q1429836",
+   "fame": 0.582,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Storm",
+   "qid": "Q632212",
+   "fame": 0.569,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Daredevil",
+   "qid": "Q327553",
+   "fame": 0.559,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Silver Surfer",
+   "qid": "Q95153",
+   "fame": 0.559,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Kingpin",
+   "qid": "Q1753322",
+   "fame": 0.557,
+   "description": "fictional character in Marvel Comics, introduced in 1967"
+  },
+  {
+   "label": "Professor X",
+   "qid": "Q838076",
+   "fame": 0.555,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Beast",
+   "qid": "Q302186",
+   "fame": 0.548,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Mary Jane Watson",
+   "qid": "Q27810",
+   "fame": 0.548,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Quicksilver",
+   "qid": "Q929273",
+   "fame": 0.547,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Vision",
+   "qid": "Q2307071",
+   "fame": 0.545,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Blade",
+   "qid": "Q881024",
+   "fame": 0.543,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Black Panther",
+   "qid": "Q998220",
+   "fame": 0.539,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Green Goblin",
+   "qid": "Q735721",
+   "fame": 0.531,
+   "description": "name used by numerous fictional characters in Marvel Comics"
+  },
+  {
+   "label": "Thor",
+   "qid": "Q717588",
+   "fame": 0.529,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Doctor Octopus",
+   "qid": "Q578094",
+   "fame": 0.528,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Mister Fantastic",
+   "qid": "Q865017",
+   "fame": 0.527,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Red Skull",
+   "qid": "Q2034529",
+   "fame": 0.523,
+   "description": "fictional character in Marvel Comics, introduced in 1941"
+  },
+  {
+   "label": "Black Widow",
+   "qid": "Q369197",
+   "fame": 0.517,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Hawkeye",
+   "qid": "Q19095",
+   "fame": 0.513,
+   "description": "fictional character in Marvel Comics, introduced in 1964"
+  },
+  {
+   "label": "She-Hulk",
+   "qid": "Q677627",
+   "fame": 0.512,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Loki",
+   "qid": "Q1147326",
+   "fame": 0.507,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Star-Lord",
+   "qid": "Q3496918",
+   "fame": 0.496,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Human Torch",
+   "qid": "Q584585",
+   "fame": 0.491,
+   "description": "character in Marvel Comics"
+  },
+  {
+   "label": "War Machine",
+   "qid": "Q616337",
+   "fame": 0.491,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Lizard",
+   "qid": "Q19382",
+   "fame": 0.477,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Wasp",
+   "qid": "Q648125",
+   "fame": 0.474,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Groot",
+   "qid": "Q3116935",
+   "fame": 0.472,
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "label": "Nick Fury",
+   "qid": "Q975100",
+   "fame": 0.472,
+   "description": "fictional character in Marvel Comics"
+  }
+ ]
+}

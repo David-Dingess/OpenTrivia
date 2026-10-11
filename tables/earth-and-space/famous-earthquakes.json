@@ -1,0 +1,198 @@
+{
+ "id": "table.earth-and-space.famous-earthquakes",
+ "kind": "table",
+ "title": "Famous earthquakes",
+ "genre": "science-math-tech",
+ "category": "earth-and-space",
+ "topic": "geology",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel ?year WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) (MIN(?d) AS ?year) WHERE { ?item wdt:P31/wdt:P279* wd:Q7944 ; wdt:P585 ?d . ?item wdt:P17|wdt:P276/wdt:P17 ?c . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-03T00:52:06.449Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-03T00:52:06.449Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "year",
+   "label": "Year",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "earthquake",
+  "many": "earthquakes",
+  "hookAsk": "Which earthquake {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country was hit by {label}?",
+    "statement": "{label} struck {value}.",
+    "match": "Match each earthquake to the country it struck.",
+    "odd": "Three of these earthquakes struck {value}. Which one didn't?",
+    "reverse": "Which of these earthquakes struck {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "2011 Tōhoku earthquake and tsunami",
+   "qid": "Q36204",
+   "fame": 0.636,
+   "country": "Japan",
+   "year": 2011,
+   "description": "megathrust earthquake off the east coast of Japan",
+   "hook": "was the strongest quake ever recorded in its country and sent giant waves racing inland",
+   "known": 0.6,
+   "kind": "modern pacific"
+  },
+  {
+   "label": "1960 Valdivia earthquake",
+   "qid": "Q212618",
+   "fame": 0.569,
+   "country": "Chile",
+   "year": 1960,
+   "description": "9.4–9.6 magnitude earthquake in Chile",
+   "hook": null,
+   "known": 0.2,
+   "kind": "historic pacific"
+  },
+  {
+   "label": "1906 San Francisco earthquake",
+   "qid": "Q211386",
+   "fame": 0.532,
+   "country": "United States",
+   "year": 1906,
+   "description": "major earthquake that struck San Francisco and the coast of Northern California",
+   "hook": "was followed by days of fires that destroyed most of a major West Coast city",
+   "known": 0.8,
+   "kind": "historic pacific"
+  },
+  {
+   "label": "1989 Loma Prieta earthquake",
+   "qid": "Q1053476",
+   "fame": 0.532,
+   "country": "United States",
+   "year": 1989,
+   "description": "major earthquake in northern California",
+   "hook": "struck during a live broadcast of baseball's championship series between two Bay Area teams",
+   "known": 0.4,
+   "kind": "modern pacific"
+  },
+  {
+   "label": "1994 Northridge earthquake",
+   "qid": "Q1519015",
+   "fame": 0.527,
+   "country": "United States",
+   "year": 1994,
+   "description": "earthquake",
+   "hook": null,
+   "known": 0.2,
+   "kind": "modern pacific"
+  },
+  {
+   "label": "2010 Haiti earthquake",
+   "qid": "Q43777",
+   "fame": 0.524,
+   "country": "Haiti",
+   "year": 2010,
+   "description": "12 January 2010 magnitude 7.0 Mw earthquake",
+   "hook": null,
+   "known": 0.6,
+   "kind": "other region"
+  },
+  {
+   "label": "1755 Lisbon earthquake",
+   "qid": "Q191055",
+   "fame": 0.521,
+   "country": "Portugal",
+   "year": 1755,
+   "description": "earthquake in 1755",
+   "hook": null,
+   "known": 0.2,
+   "kind": "other region"
+  },
+  {
+   "label": "1958 Lituya Bay earthquake and megatsunami",
+   "qid": "Q10745598",
+   "fame": 0.515,
+   "country": "United States",
+   "year": 1958,
+   "description": "Alaska earthquake and megatsunami",
+   "hook": null,
+   "known": 0.05,
+   "kind": "historic pacific"
+  },
+  {
+   "label": "1964 Alaska great earthquake and tsunami",
+   "qid": "Q749610",
+   "fame": 0.499,
+   "country": "United States",
+   "year": 1964,
+   "description": "second most powerful earthquake to hit a region in recorded history",
+   "hook": null,
+   "known": 0.2,
+   "kind": "historic pacific"
+  },
+  {
+   "label": "February 2011 Christchurch earthquake",
+   "qid": "Q151850",
+   "fame": 0.482,
+   "country": "New Zealand",
+   "year": 2011,
+   "description": "February 2011 earthquake in Christchurch, New Zealand",
+   "hook": null,
+   "known": 0.4,
+   "kind": "modern pacific"
+  },
+  {
+   "label": "1923 Great Kantō Earthquake",
+   "qid": "Q274498",
+   "fame": 0.457,
+   "country": "Japan",
+   "year": 1923,
+   "description": "earthquake",
+   "hook": null,
+   "known": 0.2,
+   "kind": "historic pacific"
+  },
+  {
+   "label": "1976 Tangshan earthquake",
+   "qid": "Q462195",
+   "fame": 0.453,
+   "country": "China",
+   "year": 1976,
+   "description": "earthquake that occurred in 1976 Tangshan, Hebei, China",
+   "hook": null,
+   "known": 0.05,
+   "kind": "other region"
+  }
+ ]
+}

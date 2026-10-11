@@ -1,0 +1,732 @@
+{
+ "id": "table.geography.largest-cities",
+ "kind": "table",
+ "title": "Largest cities by population",
+ "genre": "society",
+ "category": "geography",
+ "topic": "cities",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?population ?countryLabel WHERE { { SELECT ?item (MAX(?p) AS ?population) (SAMPLE(?c) AS ?country) WHERE { VALUES ?cls { wd:Q515 wd:Q1549591 wd:Q1637706 wd:Q200250 } ?item wdt:P31 ?cls ; wdt:P1082 ?p . FILTER(?p >= 3000000) OPTIONAL { ?item wdt:P17 ?c } } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T00:54:05.293Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T00:54:05.293Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "population",
+   "label": "Population",
+   "unit": "people",
+   "type": "number"
+  },
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "city",
+  "many": "cities",
+  "wildcard": "place",
+  "hookAsk": "Which city {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each city to its country.",
+    "odd": "Three of these cities are in {value}. Which one isn't?",
+    "all": "Tap all {n} cities in {value}."
+   },
+   "population": {
+    "role": "measure",
+    "compare": "Which has more people",
+    "display": "people"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "New York City",
+   "qid": "Q60",
+   "fame": 0.79,
+   "population": 8804190,
+   "country": "United States",
+   "description": "most populous city in the United States",
+   "hook": "is famous for the Statue of Liberty, Broadway shows and towering skyscrapers",
+   "known": 0.95,
+   "kind": "american"
+  },
+  {
+   "label": "Singapore",
+   "qid": "Q334",
+   "fame": 0.776,
+   "population": 5866139,
+   "country": "Singapore",
+   "description": "sovereign island country and city-state in maritime Southeast Asia",
+   "hook": "is one of the world's busiest shipping ports and financial hubs",
+   "known": 0.8,
+   "kind": "asian"
+  },
+  {
+   "label": "Hong Kong",
+   "qid": "Q8646",
+   "fame": 0.749,
+   "population": 7413070,
+   "country": "China",
+   "description": "city and special administrative region of China",
+   "hook": "is famous for its dense skyline of skyscrapers packed against green mountains",
+   "known": 0.95,
+   "kind": "asian"
+  },
+  {
+   "label": "London",
+   "qid": "Q84",
+   "fame": 0.74,
+   "population": 8799728,
+   "country": "United Kingdom",
+   "description": "capital and largest city of England and the United Kingdom",
+   "hook": "is home to Big Ben and Tower Bridge along a famous river",
+   "known": 0.95,
+   "kind": "european"
+  },
+  {
+   "label": "Berlin",
+   "qid": "Q64",
+   "fame": 0.713,
+   "population": 3782202,
+   "country": "Germany",
+   "description": "federated state, capital and largest city of Germany",
+   "hook": "is home to a famous gate that once stood beside a wall splitting the city in two",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Tokyo",
+   "qid": "Q1490",
+   "fame": 0.688,
+   "population": 14264798,
+   "country": "Japan",
+   "description": "capital and largest city of Japan",
+   "hook": "is famous for neon-lit streets, sushi and futuristic technology",
+   "known": 0.95,
+   "kind": "asian"
+  },
+  {
+   "label": "Istanbul",
+   "qid": "Q406",
+   "fame": 0.671,
+   "population": 15655924,
+   "country": "Turkey",
+   "description": "largest city in Turkey",
+   "hook": "is the only major city that sits on two continents at once",
+   "known": 0.8,
+   "kind": "middle eastern"
+  },
+  {
+   "label": "Melbourne",
+   "qid": "Q3141",
+   "fame": 0.668,
+   "population": 5350705,
+   "country": "Australia",
+   "description": "capital city of Victoria, Australia",
+   "hook": "is famous for its coffee culture and colorful street art laneways",
+   "known": 0.8,
+   "kind": "oceanic"
+  },
+  {
+   "label": "Mumbai",
+   "qid": "Q1156",
+   "fame": 0.668,
+   "population": 15414288,
+   "country": "India",
+   "description": "capital city in Maharashtra, India",
+   "hook": "is home to Bollywood, the giant Hindi-language film industry",
+   "known": 0.8,
+   "kind": "asian"
+  },
+  {
+   "label": "Dubai",
+   "qid": "Q612",
+   "fame": 0.665,
+   "population": 3944751,
+   "country": "United Arab Emirates",
+   "description": "most populous city in the United Arab Emirates and the capital of the Emirate of Dubai",
+   "hook": "is home to the world's tallest building and man-made palm-shaped islands",
+   "known": 0.8,
+   "kind": "middle eastern"
+  },
+  {
+   "label": "Mexico City",
+   "qid": "Q1489",
+   "fame": 0.659,
+   "population": 9209944,
+   "country": "Mexico",
+   "description": "capital and largest city of Mexico",
+   "hook": "was built atop the ruins of an ancient Aztec capital",
+   "known": 0.8,
+   "kind": "american"
+  },
+  {
+   "label": "Shanghai",
+   "qid": "Q8686",
+   "fame": 0.658,
+   "population": 24870895,
+   "country": "China",
+   "description": "provincial-level municipality in China",
+   "hook": "is famous for its futuristic skyline along a historic waterfront",
+   "known": 0.95,
+   "kind": "asian"
+  },
+  {
+   "label": "Beijing",
+   "qid": "Q956",
+   "fame": 0.655,
+   "population": 21893095,
+   "country": "China",
+   "description": "capital city of China",
+   "hook": "is home to a vast ancient imperial palace complex",
+   "known": 0.95,
+   "kind": "asian"
+  },
+  {
+   "label": "Jakarta",
+   "qid": "Q3630",
+   "fame": 0.654,
+   "population": 11135191,
+   "country": "Indonesia",
+   "description": "capital and largest city of Indonesia",
+   "hook": "is one of the fastest-sinking big cities in the world",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "Moscow",
+   "qid": "Q649",
+   "fame": 0.654,
+   "population": 13274285,
+   "country": "Russia",
+   "description": "capital and most populous city of Russia",
+   "hook": "is home to the onion-domed towers of a famous fortified square",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Sydney",
+   "qid": "Q3130",
+   "fame": 0.654,
+   "population": 5450496,
+   "country": "Australia",
+   "description": "capital city of New South Wales, Australia",
+   "hook": "is famous for its sail-shaped opera house and harbor bridge",
+   "known": 0.95,
+   "kind": "oceanic"
+  },
+  {
+   "label": "Saint Petersburg",
+   "qid": "Q656",
+   "fame": 0.65,
+   "population": 5652922,
+   "country": "Russia",
+   "description": "federal city and former capital of Russia",
+   "hook": "is famous for grand palaces and canals, and is called the Venice of the North",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "Guangzhou",
+   "qid": "Q16572",
+   "fame": 0.647,
+   "population": 18676605,
+   "country": "China",
+   "description": "capital city of Guangdong Province, China",
+   "hook": "has been a major trading port for foreign merchants for centuries",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Delhi",
+   "qid": "Q1353",
+   "fame": 0.634,
+   "population": 26495000,
+   "country": "India",
+   "description": "megacity and union territory of India",
+   "hook": "is home to an ancient red fort and bustling historic bazaars",
+   "known": 0.8,
+   "kind": "asian"
+  },
+  {
+   "label": "Bangkok",
+   "qid": "Q1861",
+   "fame": 0.63,
+   "population": 5676648,
+   "country": "Thailand",
+   "description": "capital of Thailand",
+   "hook": "is famous for ornate golden temples and bustling floating markets",
+   "known": 0.8,
+   "kind": "asian"
+  },
+  {
+   "label": "Ho Chi Minh City",
+   "qid": "Q1854",
+   "fame": 0.629,
+   "population": 14002598,
+   "country": "Vietnam",
+   "description": "largest city in Vietnam",
+   "hook": "is famous for its French colonial buildings and a sea of motorbikes",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "Bengaluru",
+   "qid": "Q1355",
+   "fame": 0.628,
+   "population": 12327000,
+   "country": "India",
+   "description": "capital city of Karnataka state in India",
+   "hook": "is called the Silicon Valley of its country for its booming tech industry",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Kuala Lumpur",
+   "qid": "Q1865",
+   "fame": 0.628,
+   "population": 9000280,
+   "country": "Malaysia",
+   "description": "federal territory and capital city of Malaysia",
+   "hook": "is home to soaring twin towers that once stood as the world's tallest",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "Seoul",
+   "qid": "Q8684",
+   "fame": 0.627,
+   "population": 9668465,
+   "country": "South Korea",
+   "description": "capital and largest city of South Korea",
+   "hook": "is famous for K-pop culture and futuristic technology",
+   "known": 0.8,
+   "kind": "asian"
+  },
+  {
+   "label": "Shenzhen",
+   "qid": "Q15174",
+   "fame": 0.619,
+   "population": 17494398,
+   "country": "China",
+   "description": "city in China",
+   "hook": "grew from a small fishing village into a booming tech metropolis",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "Kolkata",
+   "qid": "Q1348",
+   "fame": 0.618,
+   "population": 4496694,
+   "country": "India",
+   "description": "capital city of West Bengal, India",
+   "hook": "served as the capital of a colonial empire's south asian territories for over a century",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Rio de Janeiro",
+   "qid": "Q8678",
+   "fame": 0.615,
+   "population": 6211223,
+   "country": "Brazil",
+   "description": "city of Rio de Janeiro state, Brazil",
+   "hook": "is home to a giant statue of a robed figure overlooking the city from a mountain",
+   "known": 0.95,
+   "kind": "american"
+  },
+  {
+   "label": "São Paulo",
+   "qid": "Q174",
+   "fame": 0.614,
+   "population": 11451999,
+   "country": "Brazil",
+   "description": "largest city of Brazil, and capital of the State of São Paulo",
+   "hook": "is a sprawling financial hub known for its endless skyscraper skyline",
+   "known": 0.8,
+   "kind": "american"
+  },
+  {
+   "label": "Cape Town",
+   "qid": "Q5465",
+   "fame": 0.613,
+   "population": 3776313,
+   "country": "South Africa",
+   "description": "city in the Western Cape, South Africa",
+   "hook": "sits beneath a flat-topped mountain overlooking two oceans",
+   "known": 0.6,
+   "kind": "african"
+  },
+  {
+   "label": "Cairo",
+   "qid": "Q85",
+   "fame": 0.609,
+   "population": 9801536,
+   "country": "Egypt",
+   "description": "capital city of Egypt",
+   "hook": "sits beside the ancient pyramids and a famous sphinx",
+   "known": 0.8,
+   "kind": "african"
+  },
+  {
+   "label": "Alexandria",
+   "qid": "Q87",
+   "fame": 0.605,
+   "population": 5362517,
+   "country": "Egypt",
+   "description": "port city on the Mediterranean coast of Egypt",
+   "hook": "was once home to one of the ancient world's tallest lighthouses",
+   "known": 0.4,
+   "kind": "african"
+  },
+  {
+   "label": "Karachi",
+   "qid": "Q8660",
+   "fame": 0.603,
+   "population": 14910352,
+   "country": "Pakistan",
+   "description": "provincial capital of Sindh, Pakistan",
+   "hook": "served as the country's first capital after independence and is now its busiest seaport",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Lagos",
+   "qid": "Q8673",
+   "fame": 0.601,
+   "population": 15070000,
+   "country": "Nigeria",
+   "description": "largest city and former capital of Nigeria",
+   "hook": "is the busiest seaport and most populous urban area in west africa",
+   "known": 0.6,
+   "kind": "african"
+  },
+  {
+   "label": "Johannesburg",
+   "qid": "Q34647",
+   "fame": 0.595,
+   "population": 4803262,
+   "country": "South Africa",
+   "description": "largest city in South Africa",
+   "hook": "grew out of a gold rush and is called the City of Gold",
+   "known": 0.6,
+   "kind": "african"
+  },
+  {
+   "label": "Baghdad",
+   "qid": "Q1530",
+   "fame": 0.593,
+   "population": 8126755,
+   "country": "Iraq",
+   "description": "capital city of Iraq",
+   "hook": "was once the center of learning for a medieval caliphate, home to a legendary house of wisdom",
+   "known": 0.6,
+   "kind": "middle eastern"
+  },
+  {
+   "label": "Dhaka",
+   "qid": "Q1354",
+   "fame": 0.591,
+   "population": 16800000,
+   "country": "Bangladesh",
+   "description": "capital and largest city of Bangladesh",
+   "hook": "is nicknamed the city of mosques and the rickshaw capital of the world",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "Casablanca",
+   "qid": "Q7903",
+   "fame": 0.587,
+   "population": 3215935,
+   "country": "Morocco",
+   "description": "largest city of Morocco",
+   "hook": "shares its name with a classic old black-and-white Hollywood film",
+   "known": 0.6,
+   "kind": "african"
+  },
+  {
+   "label": "Chengdu",
+   "qid": "Q30002",
+   "fame": 0.586,
+   "population": 20937757,
+   "country": "China",
+   "description": "capital of Sichuan Province, China",
+   "hook": "is home to a famous panda breeding and research center",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Harbin",
+   "qid": "Q42956",
+   "fame": 0.585,
+   "population": 10009854,
+   "country": "China",
+   "description": "capital of Heilongjiang province, China",
+   "hook": "hosts a spectacular festival of giant illuminated ice sculptures each winter",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Lahore",
+   "qid": "Q11739",
+   "fame": 0.585,
+   "population": 11126285,
+   "country": "Pakistan",
+   "description": "capital of the Punjab province, Pakistan",
+   "hook": "is home to a massive centuries-old fort and a grand mosque",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Hanoi",
+   "qid": "Q1858",
+   "fame": 0.579,
+   "population": 8717600,
+   "country": "Vietnam",
+   "description": "capital of Vietnam",
+   "hook": "is known for its atmospheric old quarter and lakeside pagodas",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "Bogotá",
+   "qid": "Q2841",
+   "fame": 0.577,
+   "population": 8034649,
+   "country": "Colombia",
+   "description": "capital city of Colombia",
+   "hook": "sits high in the andes mountains as one of the highest-altitude capitals in the world",
+   "known": 0.6,
+   "kind": "american"
+  },
+  {
+   "label": "Nairobi",
+   "qid": "Q3870",
+   "fame": 0.576,
+   "population": 5545000,
+   "country": "Kenya",
+   "description": "capital city of Kenya",
+   "hook": "is one of the few cities in the world with a wildlife safari park within its limits",
+   "known": 0.6,
+   "kind": "african"
+  },
+  {
+   "label": "Nanjing",
+   "qid": "Q16666",
+   "fame": 0.576,
+   "population": 9314685,
+   "country": "China",
+   "description": "capital city of Jiangsu Province, China, former capital of the Republic of China and China's Ming dynasty",
+   "hook": "served as an ancient capital for several dynasties",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Hangzhou",
+   "qid": "Q4970",
+   "fame": 0.573,
+   "population": 11936010,
+   "country": "China",
+   "description": "capital of Zhejiang Province, China",
+   "hook": "is famous for a scenic lake celebrated in classical poetry",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Xi'an",
+   "qid": "Q5826",
+   "fame": 0.573,
+   "population": 12952907,
+   "country": "China",
+   "description": "capital of Shaanxi Province, China",
+   "hook": "is home to a buried army of thousands of life-sized clay warriors",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Ankara",
+   "qid": "Q3640",
+   "fame": 0.57,
+   "population": 5803482,
+   "country": "Turkey",
+   "description": "capital of Turkey",
+   "hook": "houses the mausoleum of the nation's founding president",
+   "known": 0.4,
+   "kind": "middle eastern"
+  },
+  {
+   "label": "Kabul",
+   "qid": "Q5838",
+   "fame": 0.569,
+   "population": 5333284,
+   "country": "Afghanistan",
+   "description": "capital and the largest city of Afghanistan",
+   "hook": "sits in a mountain valley along the ancient silk road trading route",
+   "known": 0.4,
+   "kind": "middle eastern"
+  },
+  {
+   "label": "Jeddah",
+   "qid": "Q374365",
+   "fame": 0.566,
+   "population": 4697000,
+   "country": "Saudi Arabia",
+   "description": "city in Saudi Arabia",
+   "hook": "serves as the gateway city for pilgrims heading to Islam's holiest sites",
+   "known": 0.4,
+   "kind": "middle eastern"
+  },
+  {
+   "label": "Santiago",
+   "qid": "Q2887",
+   "fame": 0.564,
+   "population": 6257516,
+   "country": "Chile",
+   "description": "capital city of Chile",
+   "hook": "lies in a valley ringed by the andes mountains and is surrounded by wine country",
+   "known": 0.6,
+   "kind": "american"
+  },
+  {
+   "label": "Lima",
+   "qid": "Q2868",
+   "fame": 0.561,
+   "population": 9943800,
+   "country": "Peru",
+   "description": "capital and largest city of Peru",
+   "hook": "is celebrated as a global hotspot for fine dining and ceviche",
+   "known": 0.6,
+   "kind": "american"
+  },
+  {
+   "label": "Pune",
+   "qid": "Q1538",
+   "fame": 0.556,
+   "population": 6200000,
+   "country": "India",
+   "description": "metropolis in Maharashtra, India",
+   "hook": "is nicknamed the oxford of the east for its many universities",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Ahmedabad",
+   "qid": "Q1070",
+   "fame": 0.555,
+   "population": 7645000,
+   "country": "India",
+   "description": "city in the state of Gujarat, India",
+   "hook": "was home to the ashram of the leader who championed nonviolent resistance during the independence movement",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Jaipur",
+   "qid": "Q66485",
+   "fame": 0.549,
+   "population": 3073350,
+   "country": "India",
+   "description": "capital of Rajasthan, India",
+   "hook": "is known as the Pink City for the color of its old town",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Busan",
+   "qid": "Q16520",
+   "fame": 0.547,
+   "population": 3453198,
+   "country": "South Korea",
+   "description": "metropolitan city of South Korea",
+   "hook": "is famous for its beaches and a major international film festival",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Dar es Salaam",
+   "qid": "Q1960",
+   "fame": 0.547,
+   "population": 4715000,
+   "country": "Tanzania",
+   "description": "largest city in Tanzania and capital of Dar es Salaam Region",
+   "hook": "serves as the main seaport and commercial center on the indian ocean coast",
+   "known": 0.4,
+   "kind": "african"
+  },
+  {
+   "label": "Lucknow",
+   "qid": "Q47916",
+   "fame": 0.546,
+   "population": 3382000,
+   "country": "India",
+   "description": "capital of Uttar Pradesh, India",
+   "hook": "is famous for its nawabi-era cuisine and delicate embroidered textiles",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Tianjin",
+   "qid": "Q11736",
+   "fame": 0.544,
+   "population": 13866009,
+   "country": "China",
+   "description": "municipality of China",
+   "hook": "grew into a major port city dotted with european-style buildings from its treaty-port era",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "Amman",
+   "qid": "Q3805",
+   "fame": 0.539,
+   "population": 4007526,
+   "country": "Jordan",
+   "description": "capital of Jordan",
+   "hook": "was built across seven hills and still has a well-preserved roman theatre",
+   "known": 0.2,
+   "kind": "middle eastern"
+  },
+  {
+   "label": "Wuhan",
+   "qid": "Q11746",
+   "fame": 0.537,
+   "population": 12326518,
+   "country": "China",
+   "description": "capital city of Hubei Province, China",
+   "hook": "sits at the meeting point of two rivers, formed from the union of three older towns",
+   "known": 0.4,
+   "kind": "asian"
+  }
+ ]
+}

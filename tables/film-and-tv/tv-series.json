@@ -1,0 +1,530 @@
+{
+ "id": "table.film-and-tv.tv-series",
+ "kind": "table",
+ "title": "Television series by first air date",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "tv-dramas",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?start WHERE { { SELECT ?item ?sitelinks (MIN(?d) AS ?start) WHERE { ?item wdt:P31 wd:Q5398426 ; wdt:P580 ?d ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 60) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 200 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-24T17:57:33.042Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-24T17:57:33.042Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "first_aired",
+   "label": "First aired",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "TV series",
+  "many": "TV series",
+  "itemSub": "{hook}",
+  "hookAsk": "Which TV series {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "first_aired": {
+    "role": "date",
+    "sort": "from the first to air to the most recent",
+    "era": "Drop each show into the decade it first aired.",
+    "eraSize": "decade",
+    "shot": "In what year did {label} first air?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "American Horror Story",
+   "qid": "Q53922",
+   "fame": 0.789,
+   "first_aired": 2011,
+   "description": "American anthology horror television series",
+   "hook": "tells a different scary tale each season with mostly the same cast of actors",
+   "known": 0.8,
+   "kind": "horror"
+  },
+  {
+   "label": "House of the Dragon",
+   "qid": "Q72930269",
+   "fame": 0.778,
+   "first_aired": 2022,
+   "description": "American fantasy drama television series",
+   "hook": "follows a civil war between rival branches of a fantasy royal family who ride enormous winged beasts",
+   "known": 0.4,
+   "kind": "fantasy"
+  },
+  {
+   "label": "The Sopranos",
+   "qid": "Q23628",
+   "fame": 0.77,
+   "first_aired": 1999,
+   "description": "American crime drama television series (1999–2007)",
+   "hook": "follows a New Jersey mob boss balancing his crime family with therapy sessions",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "Game of Thrones",
+   "qid": "Q23572",
+   "fame": 0.759,
+   "first_aired": 2011,
+   "description": "American fantasy drama television series (2011–2019)",
+   "hook": "follows noble families fighting over an iron seat of power while an icy threat looms beyond a great wall",
+   "known": 0.8,
+   "kind": "fantasy"
+  },
+  {
+   "label": "Breaking Bad",
+   "qid": "Q1079",
+   "fame": 0.749,
+   "first_aired": 2008,
+   "description": "American crime drama television series (2008–2013)",
+   "hook": "follows a mild chemistry teacher who turns to a life of crime after a cancer diagnosis",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "Heroes",
+   "qid": "Q83401",
+   "fame": 0.738,
+   "first_aired": 2006,
+   "description": "American science fiction television drama series (2006–2010)",
+   "hook": "follows ordinary people discovering they have superhuman abilities",
+   "known": 0.6,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "The Big Bang Theory",
+   "qid": "Q8539",
+   "fame": 0.733,
+   "first_aired": 2007,
+   "description": "American television sitcom (2007–2019)",
+   "hook": "follows socially awkward science nerds and their friendship with the woman next door",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Grey's Anatomy",
+   "qid": "Q438406",
+   "fame": 0.724,
+   "first_aired": 2005,
+   "description": "American medical drama television series",
+   "hook": "follows surgical interns navigating life, love, and crises inside a Seattle hospital",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "Stranger Things",
+   "qid": "Q19798734",
+   "fame": 0.724,
+   "first_aired": 2016,
+   "description": "American science fiction horror television series",
+   "hook": "follows kids in a small town uncovering a monster from an alternate dimension",
+   "known": 0.8,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "The Walking Dead",
+   "qid": "Q232737",
+   "fame": 0.723,
+   "first_aired": 2003,
+   "description": "American post-apocalyptic horror drama zombie television series",
+   "hook": "follows survivors banding together after an outbreak of the undead overruns the world",
+   "known": 0.8,
+   "kind": "horror"
+  },
+  {
+   "label": "Twin Peaks",
+   "qid": "Q2085",
+   "fame": 0.716,
+   "first_aired": 1990,
+   "description": "American drama television series from 1990–1991",
+   "hook": "follows a surreal investigation into who killed a homecoming queen in a small logging town",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "The Office",
+   "qid": "Q23831",
+   "fame": 0.714,
+   "first_aired": 2005,
+   "description": "American sitcom broadcast on NBC",
+   "hook": "follows the mundane daily lives of employees at a paper company, shot like a documentary",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Modern Family",
+   "qid": "Q16756",
+   "fame": 0.709,
+   "first_aired": 2009,
+   "description": "American television sitcom (2009–2020)",
+   "hook": "follows three related households mockumentary-style as they bicker and love each other",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Peaky Blinders",
+   "qid": "Q14944179",
+   "fame": 0.702,
+   "first_aired": 2013,
+   "description": "British period drama television series (2013–2022)",
+   "hook": "follows a gang of sharp-suited gangsters running the streets of a British industrial city",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "Criminal Minds",
+   "qid": "Q202141",
+   "fame": 0.699,
+   "first_aired": 2005,
+   "description": "2005 American police procedural drama television series",
+   "hook": "follows FBI profilers hunting serial killers by getting inside their heads",
+   "known": 0.6,
+   "kind": "crime"
+  },
+  {
+   "label": "Doctor Who",
+   "qid": "Q34316",
+   "fame": 0.697,
+   "first_aired": 1963,
+   "description": "British science fiction television series",
+   "hook": "follows a time-traveling alien that keeps regenerating into a new body and face",
+   "known": 0.95,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "House M.D.",
+   "qid": "Q23558",
+   "fame": 0.694,
+   "first_aired": 2004,
+   "description": "American television medical drama",
+   "hook": "follows an unconventional, acerbic doctor solving medical mysteries other doctors can't",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "The X-Files",
+   "qid": "Q2744",
+   "fame": 0.692,
+   "first_aired": 1993,
+   "description": "1993–2002 American science fiction-drama television series",
+   "hook": "follows two FBI agents investigating unexplained paranormal cases",
+   "known": 0.8,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Black Mirror",
+   "qid": "Q558112",
+   "fame": 0.687,
+   "first_aired": 2011,
+   "description": "British television series",
+   "hook": "tells standalone dark stories about technology twisting everyday life",
+   "known": 0.8,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "The Last of Us",
+   "qid": "Q87131973",
+   "fame": 0.687,
+   "first_aired": 2023,
+   "description": "2023 American TV series based on the video game The Last of Us",
+   "hook": "follows survivors crossing a fungus-ravaged wasteland to protect a possibly immune girl",
+   "known": 0.4,
+   "kind": "drama"
+  },
+  {
+   "label": "Supernatural",
+   "qid": "Q130585",
+   "fame": 0.684,
+   "first_aired": 2005,
+   "description": "American dark fantasy television series",
+   "hook": "follows two brothers driving across the country hunting monsters and demons",
+   "known": 0.6,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Desperate Housewives",
+   "qid": "Q131758",
+   "fame": 0.683,
+   "first_aired": 2004,
+   "description": "American comedy-drama TV series",
+   "hook": "follows the secrets and scandals of women living on one picture-perfect suburban street",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "Wednesday",
+   "qid": "Q105553568",
+   "fame": 0.678,
+   "first_aired": 2022,
+   "description": "American horror comedy television series",
+   "hook": "follows a gloomy teenage outcast solving a mystery at her parents' old boarding school",
+   "known": 0.4,
+   "kind": "horror"
+  },
+  {
+   "label": "Dexter",
+   "qid": "Q23577",
+   "fame": 0.675,
+   "first_aired": 2006,
+   "description": "American crime drama television series (2006–2013)",
+   "hook": "follows a police forensics expert who secretly hunts down criminals the law let go",
+   "known": 0.8,
+   "kind": "crime"
+  },
+  {
+   "label": "Sex and the City",
+   "qid": "Q35791",
+   "fame": 0.674,
+   "first_aired": 1998,
+   "description": "American TV series (1998–2004)",
+   "hook": "follows four women navigating dating, careers, and friendship in Manhattan",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "The Vampire Diaries",
+   "qid": "Q28537",
+   "fame": 0.67,
+   "first_aired": 2009,
+   "description": "2009 American supernatural teen drama television series",
+   "hook": "follows a teenage girl torn between two undead brothers in a small town",
+   "known": 0.6,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Two and a Half Men",
+   "qid": "Q189267",
+   "fame": 0.659,
+   "first_aired": 2003,
+   "description": "American Television series, 2003-2015",
+   "hook": "follows a bachelor's chaotic household after his uptight brother and nephew move in",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Smallville",
+   "qid": "Q180228",
+   "fame": 0.655,
+   "first_aired": 2001,
+   "description": "American television series (2001–2011)",
+   "hook": "follows a young alien slowly becoming the world's most famous caped superhero",
+   "known": 0.6,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Lost",
+   "qid": "Q23567",
+   "fame": 0.654,
+   "first_aired": 2004,
+   "description": "American television series",
+   "hook": "follows plane crash survivors stranded on a mysterious island full of secrets",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "How I Met Your Mother",
+   "qid": "Q147235",
+   "fame": 0.648,
+   "first_aired": 2005,
+   "description": "American sitcom (2005–2014)",
+   "hook": "recounts to his kids the long romantic saga that eventually led him to their mom",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Prison Break",
+   "qid": "Q80044",
+   "fame": 0.634,
+   "first_aired": 2005,
+   "description": "American television series",
+   "hook": "follows a man who gets himself locked up to spring his wrongly convicted brother from the inside",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "Sherlock",
+   "qid": "Q192837",
+   "fame": 0.626,
+   "first_aired": 2010,
+   "description": "British crime drama television series, first broadcast in 2010",
+   "hook": "follows a brilliant, abrasive detective solving crimes in modern-day London with his doctor sidekick",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "Glee",
+   "qid": "Q152178",
+   "fame": 0.625,
+   "first_aired": 2009,
+   "description": "American musical comedy-drama television series",
+   "hook": "follows misfit high schoolers finding belonging by singing and dancing in show choir",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Squid Game",
+   "qid": "Q106582931",
+   "fame": 0.624,
+   "first_aired": 2021,
+   "description": "2021 South Korean television series",
+   "hook": "follows desperate contestants risking their lives in deadly versions of children's playground contests",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "24",
+   "qid": "Q56194",
+   "fame": 0.618,
+   "first_aired": 2001,
+   "description": "American television series (2001–2010, 2014)",
+   "hook": "follows a counterterrorism agent racing to stop a crisis in real time over a single day",
+   "known": 0.8,
+   "kind": "crime"
+  },
+  {
+   "label": "Hannah Montana",
+   "qid": "Q126631",
+   "fame": 0.616,
+   "first_aired": 2006,
+   "description": "American television series",
+   "hook": "follows a teenage girl secretly living a double life as a pop star",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Sesame Street",
+   "qid": "Q155629",
+   "fame": 0.616,
+   "first_aired": 1969,
+   "description": "American children's television program",
+   "hook": "teaches young kids letters and numbers through puppets living in a friendly city neighborhood",
+   "known": 0.95,
+   "kind": "children"
+  },
+  {
+   "label": "Charmed",
+   "qid": "Q162371",
+   "fame": 0.615,
+   "first_aired": 1998,
+   "description": "American supernatural drama / fantasy television series (1998–2006)",
+   "hook": "follows three sisters discovering they are powerful witches destined to protect the innocent",
+   "known": 0.8,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Mr. Bean",
+   "qid": "Q484020",
+   "fame": 0.615,
+   "first_aired": 1990,
+   "description": "British comedy television series (1990–1995)",
+   "hook": "follows a nearly wordless, accident-prone man bumbling through everyday situations",
+   "known": 0.95,
+   "kind": "comedy"
+  },
+  {
+   "label": "Money Heist",
+   "qid": "Q29647346",
+   "fame": 0.606,
+   "first_aired": 2017,
+   "description": "Spanish television crime series",
+   "hook": "follows a crew of robbers pulling off an elaborate raid on a national mint to print their own cash",
+   "known": 0.6,
+   "kind": "crime"
+  },
+  {
+   "label": "Stargate SG-1",
+   "qid": "Q187462",
+   "fame": 0.601,
+   "first_aired": 1997,
+   "description": "science fiction television series (1997–2007)",
+   "hook": "follows a military team traveling to other planets through an ancient alien portal",
+   "known": 0.6,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Teletubbies",
+   "qid": "Q41403",
+   "fame": 0.6,
+   "first_aired": 1997,
+   "description": "British children's television series (1997–2001/2022)",
+   "hook": "follows four colorful, antenna-headed characters playing together in a grassy, sunny land",
+   "known": 0.8,
+   "kind": "children"
+  },
+  {
+   "label": "Victorious",
+   "qid": "Q4533",
+   "fame": 0.598,
+   "first_aired": 2010,
+   "description": "American teen sitcom (2010-2013)",
+   "hook": "follows a teenager attending a performing arts high school for gifted young singers and actors",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "iCarly",
+   "qid": "Q3013",
+   "fame": 0.597,
+   "first_aired": 2007,
+   "description": "2007 American teen sitcom",
+   "hook": "follows a teenager who runs a hit web show from her bedroom with her best friends",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "CSI: Crime Scene Investigation",
+   "qid": "Q117396",
+   "fame": 0.591,
+   "first_aired": 2000,
+   "description": "American crime fiction television series (2000–2015)",
+   "hook": "follows forensic investigators using science and evidence to solve puzzling deaths",
+   "known": 0.8,
+   "kind": "crime"
+  },
+  {
+   "label": "Xena: Warrior Princess",
+   "qid": "Q38497",
+   "fame": 0.585,
+   "first_aired": 1995,
+   "description": "American–New Zealand fantasy series (1995–2001)",
+   "hook": "follows a legendary heroine atoning for her violent past by helping the weak in ancient times",
+   "known": 0.8,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Liv and Maddie",
+   "qid": "Q8172269",
+   "fame": 0.497,
+   "first_aired": 2013,
+   "description": "American comedy television series",
+   "hook": "follows twin sisters, one a TV star and one a basketball player, sharing a bedroom and a life",
+   "known": 0.4,
+   "kind": "comedy"
+  }
+ ]
+}

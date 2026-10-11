@@ -1,0 +1,4449 @@
+{
+ "id": "list.history.ancient-philosophers",
+ "title": "Philosophers of the ancient world",
+ "prompt": "Name a philosopher of the ancient world",
+ "genre": "society",
+ "category": "history",
+ "topic": "ancient-world",
+ "people": true,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q5 ; wdt:P106 wd:Q4964182 ; wdt:P569 ?b . FILTER(YEAR(?b) >= -800 && YEAR(?b) <= 500) } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-10-02T20:47:58.792Z"
+ },
+ "rows": [
+  {
+   "label": "Aristotle",
+   "qid": "Q868",
+   "fame": 0.717,
+   "also": [
+    "Arast̤ū",
+    "Arisṭāṭṭil",
+    "Aristòtil",
+    "Arisṭū",
+    "Arisṭūṭālīs",
+    "Arisutoteresu",
+    "Pseudo Aristotele",
+    "Ya-li-shih-to-te",
+    "Ya-li-ssu-to-te",
+    "Yalishiduode",
+    "Yalisiduode",
+    "Aristotel"
+   ]
+  },
+  {
+   "label": "Marcus Aurelius",
+   "qid": "Q1430",
+   "fame": 0.706,
+   "also": [
+    "Antoninus",
+    "Marcus Annius Verus",
+    "Caesar Marcus Aurelius Antoninus Augustus",
+    "Marcus Aurelius Verus",
+    "Marcus Catilius Severus Annius Verus",
+    "Verissimus",
+    "Marcus Aurelius Antoninus"
+   ]
+  },
+  {
+   "label": "Plato",
+   "qid": "Q859",
+   "fame": 0.69,
+   "also": [
+    "Platon",
+    "Aristocles"
+   ]
+  },
+  {
+   "label": "Socrates",
+   "qid": "Q913",
+   "fame": 0.676,
+   "also": [
+    "Sokrates",
+    "Sokratis"
+   ]
+  },
+  {
+   "label": "Seneca",
+   "qid": "Q2054",
+   "fame": 0.661,
+   "also": [
+    "Seneca the Younger",
+    "Annaeus Seneca",
+    "Lucio Anneo Seneca",
+    "Lucius Annaeus Seneca",
+    "Lucius Annaeus Seneca Iunior",
+    "Lucius Annaeus Seneca minor",
+    "Lucius Annaeus Seneca the Younger",
+    "the Younger Seneca"
+   ]
+  },
+  {
+   "label": "Confucius",
+   "qid": "Q4604",
+   "fame": 0.636,
+   "also": [
+    "Cheu-kong",
+    "Chung-ni",
+    "Cong-tse",
+    "K'ung Chung-ni",
+    "K'ung Fu-tse",
+    "K'ung-fu-tzu",
+    "K'ung-tzu",
+    "Kong Fu Zi",
+    "Kong Qiu",
+    "Kong Zhongni",
+    "Kongzi",
+    "Confucio"
+   ]
+  },
+  {
+   "label": "Diogenes of Sinope",
+   "qid": "Q59180",
+   "fame": 0.62,
+   "also": [
+    "Diogenes",
+    "Diogenes the Cynic"
+   ]
+  },
+  {
+   "label": "Pythagoras",
+   "qid": "Q10261",
+   "fame": 0.587,
+   "also": [
+    "Pythagoras from Samos",
+    "Pythagoras of Samos",
+    "Samian Sage"
+   ]
+  },
+  {
+   "label": "Laozi",
+   "qid": "Q9333",
+   "fame": 0.561,
+   "also": [
+    "Li Tan",
+    "Old Boy",
+    "Old Master",
+    "Venerable Master",
+    "Ancient Boy",
+    "Ancient Master",
+    "Old Lord",
+    "Sage Ancestor",
+    "Hsuan Yuan Huang Ti",
+    "Lao Chun",
+    "Lao Chun Tzu",
+    "Lao Dan"
+   ]
+  },
+  {
+   "label": "Hypatia",
+   "qid": "Q11903",
+   "fame": 0.559,
+   "also": [
+    "Divine Pagan",
+    "Hypatia of Alexandria"
+   ]
+  },
+  {
+   "label": "Epictetus",
+   "qid": "Q183144",
+   "fame": 0.55,
+   "also": [
+    "Epictetus of Hierapolis",
+    "Epiktetos"
+   ]
+  },
+  {
+   "label": "Heraclitus",
+   "qid": "Q41155",
+   "fame": 0.543,
+   "also": [
+    "Heraclitus of Ephesus",
+    "Weeping Philosopher"
+   ]
+  },
+  {
+   "label": "Epicurus",
+   "qid": "Q43216",
+   "fame": 0.52,
+   "also": [
+    "Epikouros"
+   ]
+  },
+  {
+   "label": "Democritus",
+   "qid": "Q41980",
+   "fame": 0.517,
+   "also": [
+    "Democritus of Abdera",
+    "Demokritos",
+    "Laughing Philosopher"
+   ]
+  },
+  {
+   "label": "Thales",
+   "qid": "Q36303",
+   "fame": 0.502,
+   "also": [
+    "Thales of Miletus"
+   ]
+  },
+  {
+   "label": "Boethius",
+   "qid": "Q102851",
+   "fame": 0.49,
+   "also": [
+    "Anicius Manlius Severinus Boëthius",
+    "Anicius Manlius Torquatus Severinus Boethius",
+    "Anicus Manlius Severinus Boethius"
+   ]
+  },
+  {
+   "label": "Nagarjuna",
+   "qid": "Q171195",
+   "fame": 0.477,
+   "also": [
+    "Aacharya Nagarjuna",
+    "Naga Arjuna",
+    "Nāgajjuna Bhikkhu",
+    "Nagarjun",
+    "Nāgārjuna Bodhisattva",
+    "Nāgārjunācārya",
+    "Nagarjunacharya"
+   ]
+  },
+  {
+   "label": "Chrysippus of Soli",
+   "qid": "Q211411",
+   "fame": 0.474,
+   "also": [
+    "Chrysippus"
+   ]
+  },
+  {
+   "label": "Plotinus",
+   "qid": "Q134189",
+   "fame": 0.466,
+   "also": [
+    "Plotinos"
+   ]
+  },
+  {
+   "label": "Parmenides",
+   "qid": "Q125551",
+   "fame": 0.464,
+   "also": [
+    "Parmenides of Elea"
+   ]
+  },
+  {
+   "label": "Zeno of Citium",
+   "qid": "Q171303",
+   "fame": 0.457,
+   "also": [
+    "Zeno of Kition",
+    "Zeno the Stoic",
+    "Zenon of Citium",
+    "Zeno"
+   ]
+  },
+  {
+   "label": "Empedocles",
+   "qid": "Q83375",
+   "fame": 0.454,
+   "also": []
+  },
+  {
+   "label": "Philo of Alexandria",
+   "qid": "Q189597",
+   "fame": 0.447,
+   "also": [
+    "Philo",
+    "Philio Alexandrinus",
+    "Philio Judæus",
+    "Philio of Alexandria",
+    "Philo Alexandrinus",
+    "Philo Judæus",
+    "Philo Judeaus",
+    "Philo the Jew"
+   ]
+  },
+  {
+   "label": "Zhuang Zhou",
+   "qid": "Q47739",
+   "fame": 0.447,
+   "also": [
+    "Chuang Tzu",
+    "Chuang Chou",
+    "Chuang-tse",
+    "Master Zhuang",
+    "Zhuangzi"
+   ]
+  },
+  {
+   "label": "Aspasia",
+   "qid": "Q228564",
+   "fame": 0.442,
+   "also": [
+    "Aspasia of Miletus"
+   ]
+  },
+  {
+   "label": "Lucretius",
+   "qid": "Q47154",
+   "fame": 0.44,
+   "also": [
+    "Titus Carus Lucretius",
+    "Titus Lucretius Carus"
+   ]
+  },
+  {
+   "label": "Anaximander",
+   "qid": "Q42458",
+   "fame": 0.438,
+   "also": [
+    "Anaximander of Miletus"
+   ]
+  },
+  {
+   "label": "Mencius",
+   "qid": "Q188903",
+   "fame": 0.437,
+   "also": [
+    "Mengzi",
+    "Meng K'e",
+    "Meng Tzu",
+    "Meng-tze"
+   ]
+  },
+  {
+   "label": "Sextus Empiricus",
+   "qid": "Q236594",
+   "fame": 0.428,
+   "also": [
+    "Sekst empirik"
+   ]
+  },
+  {
+   "label": "Zeno of Elea",
+   "qid": "Q132157",
+   "fame": 0.422,
+   "also": [
+    "Zeno"
+   ]
+  },
+  {
+   "label": "Theophrastus",
+   "qid": "Q160362",
+   "fame": 0.421,
+   "also": [
+    "Theophr.",
+    "Theophrastus of Eresos"
+   ]
+  },
+  {
+   "label": "Anaxagoras",
+   "qid": "Q83041",
+   "fame": 0.416,
+   "also": [
+    "Anaxagoras of Clazomenae"
+   ]
+  },
+  {
+   "label": "Apollonius of Tyana",
+   "qid": "Q297040",
+   "fame": 0.408,
+   "also": [
+    "Apollonius Tyanensis"
+   ]
+  },
+  {
+   "label": "Mozi",
+   "qid": "Q272411",
+   "fame": 0.396,
+   "also": [
+    "Micius",
+    "Master Mo",
+    "Mo Di",
+    "Mo Tse",
+    "Mo Tsi",
+    "Mo Tsu",
+    "Mo Tzu",
+    "Mocius",
+    "Motze",
+    "Motzi",
+    "Moztsu"
+   ]
+  },
+  {
+   "label": "Protagoras",
+   "qid": "Q169243",
+   "fame": 0.39,
+   "also": [
+    "Protagoras of Abdera"
+   ]
+  },
+  {
+   "label": "Arrian",
+   "qid": "Q31845",
+   "fame": 0.382,
+   "also": [
+    "Arrien",
+    "Arriano",
+    "Arrian of Nicomedia",
+    "Flavius Arrian",
+    "Lucius Flavius Arrianus",
+    "Arriános",
+    "Flaviĭ Arrian",
+    "Flavio Arriano",
+    "Flavius Arrianus",
+    "Lucio Flavio Arriano"
+   ]
+  },
+  {
+   "label": "Porphyry",
+   "qid": "Q203445",
+   "fame": 0.372,
+   "also": [
+    "Porphyry of Tyre",
+    "Malchus"
+   ]
+  },
+  {
+   "label": "Xenophanes",
+   "qid": "Q131671",
+   "fame": 0.371,
+   "also": [
+    "Xenophanes of Colophon"
+   ]
+  },
+  {
+   "label": "Zosimos of Panopolis",
+   "qid": "Q226868",
+   "fame": 0.37,
+   "also": [
+    "Zosimus",
+    "Zozimus of Panopolis"
+   ]
+  },
+  {
+   "label": "Proclus",
+   "qid": "Q271809",
+   "fame": 0.368,
+   "also": [
+    "Proclus Lycaeus"
+   ]
+  },
+  {
+   "label": "Celsus",
+   "qid": "Q315370",
+   "fame": 0.364,
+   "also": []
+  },
+  {
+   "label": "Vātsyāyana",
+   "qid": "Q380234",
+   "fame": 0.364,
+   "also": []
+  },
+  {
+   "label": "Marcus Terentius Varro",
+   "qid": "Q206119",
+   "fame": 0.358,
+   "also": [
+    "Varro",
+    "Marcus Terentius Varro Reatinus",
+    "Varro Reatinus",
+    "Marcus Varro"
+   ]
+  },
+  {
+   "label": "Antisthenes",
+   "qid": "Q179149",
+   "fame": 0.357,
+   "also": [
+    "Antisthenes of Athens"
+   ]
+  },
+  {
+   "label": "Yajnavalkya",
+   "qid": "Q1423663",
+   "fame": 0.357,
+   "also": []
+  },
+  {
+   "label": "Li Si",
+   "qid": "Q152919",
+   "fame": 0.352,
+   "also": [
+    "Li Ssu"
+   ]
+  },
+  {
+   "label": "Shang Yang",
+   "qid": "Q351345",
+   "fame": 0.352,
+   "also": []
+  },
+  {
+   "label": "Iamblichus",
+   "qid": "Q310916",
+   "fame": 0.351,
+   "also": [
+    "Iamblichus of Chalcis"
+   ]
+  },
+  {
+   "label": "Hilary of Poitiers",
+   "qid": "Q44344",
+   "fame": 0.348,
+   "also": [
+    "Athanasius of the West",
+    "Hammer of the Arians",
+    "Hilarius Pictaviensis",
+    "Saint Hilary of Poitiers"
+   ]
+  },
+  {
+   "label": "Pyrrho",
+   "qid": "Q192313",
+   "fame": 0.348,
+   "also": [
+    "Pyrrhon",
+    "Pyrron"
+   ]
+  },
+  {
+   "label": "Macrobius",
+   "qid": "Q313934",
+   "fame": 0.347,
+   "also": [
+    "Ambroise Théodose Macrobe",
+    "Ambrosius Theodosius Macrobius",
+    "Macrobius Ambrosius Theodosius"
+   ]
+  },
+  {
+   "label": "Xunzi",
+   "qid": "Q216072",
+   "fame": 0.34,
+   "also": [
+    "Master Xun",
+    "Xun Kuang"
+   ]
+  },
+  {
+   "label": "Seneca the Elder",
+   "qid": "Q273671",
+   "fame": 0.339,
+   "also": [
+    "Annæus Seneca",
+    "Annaeus Seneca maior"
+   ]
+  },
+  {
+   "label": "Han Fei",
+   "qid": "Q28959",
+   "fame": 0.338,
+   "also": [
+    "Han Feizi",
+    "Hanzi",
+    "Han-tsee",
+    "Hane-tsee",
+    "Master Han",
+    "Master Han Fei"
+   ]
+  },
+  {
+   "label": "Anaximenes of Miletus",
+   "qid": "Q80612",
+   "fame": 0.335,
+   "also": [
+    "Anaximenes",
+    "Anaximenes Milesius",
+    "Anaximenes the Milesian"
+   ]
+  },
+  {
+   "label": "Leucippus",
+   "qid": "Q165589",
+   "fame": 0.335,
+   "also": [
+    "Leucippus of Miletus"
+   ]
+  },
+  {
+   "label": "Cassiodorus",
+   "qid": "Q192365",
+   "fame": 0.334,
+   "also": [
+    "Flavius Magnus Aurelius Cassiodorus Senator"
+   ]
+  },
+  {
+   "label": "Anacharsis",
+   "qid": "Q325026",
+   "fame": 0.333,
+   "also": []
+  },
+  {
+   "label": "Kapila",
+   "qid": "Q574355",
+   "fame": 0.333,
+   "also": [
+    "Kapil"
+   ]
+  },
+  {
+   "label": "Lü Buwei",
+   "qid": "Q366120",
+   "fame": 0.333,
+   "also": [
+    "Liu Pou-ouei",
+    "Lu Po Wei"
+   ]
+  },
+  {
+   "label": "Mazdak",
+   "qid": "Q272300",
+   "fame": 0.333,
+   "also": [
+    "Mazdak the Younger"
+   ]
+  },
+  {
+   "label": "Sun Ce",
+   "qid": "Q380598",
+   "fame": 0.333,
+   "also": [
+    "Suen Chak",
+    "Sun Chak"
+   ]
+  },
+  {
+   "label": "Apollodorus of Athens",
+   "qid": "Q205704",
+   "fame": 0.33,
+   "also": [
+    "Apollodorus"
+   ]
+  },
+  {
+   "label": "Hippasus",
+   "qid": "Q298860",
+   "fame": 0.327,
+   "also": [
+    "Hippasus of Metapontum"
+   ]
+  },
+  {
+   "label": "Kanada",
+   "qid": "Q29049",
+   "fame": 0.327,
+   "also": [
+    "Kaṇāda. Kanādamunipraṇītam Vaiśeṣikadarśanam",
+    "Kaṇāda. Vaiśeṣika-darśanam"
+   ]
+  },
+  {
+   "label": "Zhang Heng",
+   "qid": "Q197206",
+   "fame": 0.327,
+   "also": [
+    "Chang Heng"
+   ]
+  },
+  {
+   "label": "Porcia",
+   "qid": "Q255448",
+   "fame": 0.325,
+   "also": [
+    "Portia",
+    "Porcia Catonis"
+   ]
+  },
+  {
+   "label": "Diotima of Mantinea",
+   "qid": "Q1227107",
+   "fame": 0.314,
+   "also": [
+    "Diotima",
+    "Diotyma"
+   ]
+  },
+  {
+   "label": "Critias",
+   "qid": "Q294092",
+   "fame": 0.313,
+   "also": [
+    "Critias IV"
+   ]
+  },
+  {
+   "label": "Posidonius",
+   "qid": "Q185770",
+   "fame": 0.312,
+   "also": [
+    "Poseidonios",
+    "Posidonius of Apamea"
+   ]
+  },
+  {
+   "label": "Epimenides of Crete",
+   "qid": "Q319406",
+   "fame": 0.311,
+   "also": [
+    "Epimenides"
+   ]
+  },
+  {
+   "label": "Herodes Atticus",
+   "qid": "Q311879",
+   "fame": 0.306,
+   "also": [
+    "Lucius Vibullius Tiberius Claudius Atticus Herodes"
+   ]
+  },
+  {
+   "label": "Eudoxus of Cnidus",
+   "qid": "Q185150",
+   "fame": 0.303,
+   "also": [
+    "Eudoxus"
+   ]
+  },
+  {
+   "label": "Sun Bin",
+   "qid": "Q334090",
+   "fame": 0.3,
+   "also": []
+  },
+  {
+   "label": "Thrasymachus",
+   "qid": "Q320955",
+   "fame": 0.299,
+   "also": [
+    "Thrasymachus of Calcedonia",
+    "Thrasymachus of Chalcedon"
+   ]
+  },
+  {
+   "label": "Crates of Thebes",
+   "qid": "Q317947",
+   "fame": 0.298,
+   "also": []
+  },
+  {
+   "label": "Tatian",
+   "qid": "Q272087",
+   "fame": 0.296,
+   "also": [
+    "Tatianus",
+    "Tatian the Syrian"
+   ]
+  },
+  {
+   "label": "Titus Pomponius Atticus",
+   "qid": "Q311733",
+   "fame": 0.294,
+   "also": [
+    "Atticus",
+    "Quintus Caecilius Atticus Pomponianus",
+    "Quintus Caecilius Pomponianus Atticus",
+    "Titus P. Atticus"
+   ]
+  },
+  {
+   "label": "Periander",
+   "qid": "Q328793",
+   "fame": 0.292,
+   "also": [
+    "Periandros"
+   ]
+  },
+  {
+   "label": "Sextus Julius Africanus",
+   "qid": "Q317014",
+   "fame": 0.29,
+   "also": [
+    "Julius Africanus",
+    "Sextus Iulius Africanus"
+   ]
+  },
+  {
+   "label": "Archytas",
+   "qid": "Q202001",
+   "fame": 0.289,
+   "also": [
+    "Archytas of Tarentum"
+   ]
+  },
+  {
+   "label": "Cerinthus",
+   "qid": "Q447428",
+   "fame": 0.285,
+   "also": []
+  },
+  {
+   "label": "Vasubandhu",
+   "qid": "Q316343",
+   "fame": 0.284,
+   "also": []
+  },
+  {
+   "label": "Macrina the Younger",
+   "qid": "Q239081",
+   "fame": 0.282,
+   "also": [
+    "Macrina"
+   ]
+  },
+  {
+   "label": "Gaius Musonius Rufus",
+   "qid": "Q381874",
+   "fame": 0.28,
+   "also": [
+    "Musonius Rufus"
+   ]
+  },
+  {
+   "label": "Ammonius Saccas",
+   "qid": "Q310173",
+   "fame": 0.279,
+   "also": []
+  },
+  {
+   "label": "Aristippus",
+   "qid": "Q189506",
+   "fame": 0.279,
+   "also": [
+    "Aristippus of Cyrene"
+   ]
+  },
+  {
+   "label": "Pompeia Plotina",
+   "qid": "Q239448",
+   "fame": 0.279,
+   "also": [
+    "Plotina",
+    "Pompeia L. f. Plotina"
+   ]
+  },
+  {
+   "label": "Śāriputra",
+   "qid": "Q320142",
+   "fame": 0.279,
+   "also": [
+    "Śāradvatiputra",
+    "Sāriputta"
+   ]
+  },
+  {
+   "label": "Simplicius of Cilicia",
+   "qid": "Q351518",
+   "fame": 0.277,
+   "also": [
+    "Simplicius",
+    "Simplicius van Cilicië"
+   ]
+  },
+  {
+   "label": "Philostratus",
+   "qid": "Q2274948",
+   "fame": 0.274,
+   "also": [
+    "Lucius Flavius Philostratus",
+    "Philostratus Atheniensis",
+    "Philostratus the Athenian"
+   ]
+  },
+  {
+   "label": "Dio Chrysostom",
+   "qid": "Q334457",
+   "fame": 0.269,
+   "also": [
+    "Dio of Prusa"
+   ]
+  },
+  {
+   "label": "Lu Ban",
+   "qid": "Q574184",
+   "fame": 0.269,
+   "also": [
+    "Lo Pan",
+    "Ban Lu",
+    "Loo Pun",
+    "Loo-pan"
+   ]
+  },
+  {
+   "label": "Martianus Capella",
+   "qid": "Q348408",
+   "fame": 0.268,
+   "also": [
+    "Capella",
+    "Martian",
+    "Martianus",
+    "Martian Capella",
+    "Martianus Minneus Felix Capella",
+    "Martianus Mineus Felix Capella"
+   ]
+  },
+  {
+   "label": "Ajita Kesakambali",
+   "qid": "Q153187",
+   "fame": 0.267,
+   "also": []
+  },
+  {
+   "label": "John Philoponus",
+   "qid": "Q317632",
+   "fame": 0.266,
+   "also": [
+    "Johannes Philoponus",
+    "Philoponus"
+   ]
+  },
+  {
+   "label": "Aristoxenus",
+   "qid": "Q335156",
+   "fame": 0.264,
+   "also": [
+    "Aristoxenus of Tarentum"
+   ]
+  },
+  {
+   "label": "Aeschines",
+   "qid": "Q317089",
+   "fame": 0.26,
+   "also": [
+    "Æschines"
+   ]
+  },
+  {
+   "label": "Damascius",
+   "qid": "Q315360",
+   "fame": 0.26,
+   "also": []
+  },
+  {
+   "label": "Cleanthes",
+   "qid": "Q310149",
+   "fame": 0.259,
+   "also": [
+    "Cleanthes of Assos"
+   ]
+  },
+  {
+   "label": "Marcus Cornelius Fronto",
+   "qid": "Q317055",
+   "fame": 0.259,
+   "also": [
+    "Fronto"
+   ]
+  },
+  {
+   "label": "Melito of Sardis",
+   "qid": "Q359945",
+   "fame": 0.259,
+   "also": []
+  },
+  {
+   "label": "Philodemus",
+   "qid": "Q451550",
+   "fame": 0.259,
+   "also": [
+    "Philodem",
+    "Philodemos",
+    "Philodemus of Gadara"
+   ]
+  },
+  {
+   "label": "Publilius Syrus",
+   "qid": "Q363375",
+   "fame": 0.259,
+   "also": []
+  },
+  {
+   "label": "Nicomachus",
+   "qid": "Q360366",
+   "fame": 0.257,
+   "also": [
+    "Nicomachus of Gerasa"
+   ]
+  },
+  {
+   "label": "Ban Zhao",
+   "qid": "Q177081",
+   "fame": 0.256,
+   "also": [
+    "Huiji",
+    "Gifted One Ban Zhao"
+   ]
+  },
+  {
+   "label": "Philolaus",
+   "qid": "Q212338",
+   "fame": 0.256,
+   "also": [
+    "Philolaus of Croton"
+   ]
+  },
+  {
+   "label": "Chilon of Sparta",
+   "qid": "Q34601",
+   "fame": 0.253,
+   "also": []
+  },
+  {
+   "label": "Carneades",
+   "qid": "Q284994",
+   "fame": 0.252,
+   "also": [
+    "Carneades of Cyrene"
+   ]
+  },
+  {
+   "label": "Diagoras of Melos",
+   "qid": "Q353264",
+   "fame": 0.252,
+   "also": []
+  },
+  {
+   "label": "Gargi Vachaknavi",
+   "qid": "Q2731767",
+   "fame": 0.252,
+   "also": []
+  },
+  {
+   "label": "Hipparchia of Maroneia",
+   "qid": "Q235494",
+   "fame": 0.251,
+   "also": [
+    "Hipparcha"
+   ]
+  },
+  {
+   "label": "Synesius of Cyrene",
+   "qid": "Q357027",
+   "fame": 0.251,
+   "also": [
+    "Synesius",
+    "Synesius of Ptolemais"
+   ]
+  },
+  {
+   "label": "Euhemerus",
+   "qid": "Q317942",
+   "fame": 0.25,
+   "also": [
+    "Euhemerus of Messene",
+    "Euhemeros of Messene"
+   ]
+  },
+  {
+   "label": "Mahapajapati Gotami",
+   "qid": "Q613944",
+   "fame": 0.25,
+   "also": [
+    "Mahāprajāpatī Gautamī",
+    "Mahaprajapati Gotami"
+   ]
+  },
+  {
+   "label": "Xenocrates",
+   "qid": "Q214121",
+   "fame": 0.25,
+   "also": [
+    "Xenocrates of Chalcedon"
+   ]
+  },
+  {
+   "label": "Bardaisan",
+   "qid": "Q354342",
+   "fame": 0.249,
+   "also": [
+    "Bardesaines"
+   ]
+  },
+  {
+   "label": "Pherecydes of Syros",
+   "qid": "Q311485",
+   "fame": 0.248,
+   "also": [
+    "Pherekydes of Syros"
+   ]
+  },
+  {
+   "label": "Wu Zixu",
+   "qid": "Q1268609",
+   "fame": 0.247,
+   "also": []
+  },
+  {
+   "label": "Persius",
+   "qid": "Q332785",
+   "fame": 0.246,
+   "also": [
+    "Aulus Persius Flaccus"
+   ]
+  },
+  {
+   "label": "Fan Li",
+   "qid": "Q1374991",
+   "fame": 0.245,
+   "also": []
+  },
+  {
+   "label": "Nicolaus of Damascus",
+   "qid": "Q313924",
+   "fame": 0.24,
+   "also": [
+    "Nicolas the Peripatetic",
+    "Nicolaus Damascenus"
+   ]
+  },
+  {
+   "label": "Asanga",
+   "qid": "Q379905",
+   "fame": 0.239,
+   "also": []
+  },
+  {
+   "label": "Demetrius of Phalerum",
+   "qid": "Q313286",
+   "fame": 0.239,
+   "also": [
+    "Demetrius of Phaleron",
+    "Demetrius Phalereus"
+   ]
+  },
+  {
+   "label": "Aristidis of Athens",
+   "qid": "Q349916",
+   "fame": 0.235,
+   "also": [
+    "Aristides of Athens",
+    "Aristides Marcianus"
+   ]
+  },
+  {
+   "label": "Maximus of Tyre",
+   "qid": "Q456649",
+   "fame": 0.235,
+   "also": []
+  },
+  {
+   "label": "Xenophon of Ephesus",
+   "qid": "Q463564",
+   "fame": 0.235,
+   "also": []
+  },
+  {
+   "label": "Guan Zhong",
+   "qid": "Q457972",
+   "fame": 0.233,
+   "also": []
+  },
+  {
+   "label": "Hegesias of Cyrene",
+   "qid": "Q437876",
+   "fame": 0.232,
+   "also": [
+    "Hegesias"
+   ]
+  },
+  {
+   "label": "Zengzi",
+   "qid": "Q1207671",
+   "fame": 0.23,
+   "also": [
+    "Zeng Shen"
+   ]
+  },
+  {
+   "label": "Speusippus",
+   "qid": "Q325955",
+   "fame": 0.229,
+   "also": []
+  },
+  {
+   "label": "Zhang Daoling",
+   "qid": "Q197172",
+   "fame": 0.229,
+   "also": [
+    "Zhang Ling",
+    "Chang Ling",
+    "Fuhan",
+    "Chang Tao-ling"
+   ]
+  },
+  {
+   "label": "Wang Chong",
+   "qid": "Q319329",
+   "fame": 0.228,
+   "also": []
+  },
+  {
+   "label": "Aelius Aristides",
+   "qid": "Q354431",
+   "fame": 0.227,
+   "also": [
+    "Publius Aelius Aristides",
+    "Publius Aelius Aristides Theodorus"
+   ]
+  },
+  {
+   "label": "Agrippa the Skeptic",
+   "qid": "Q365115",
+   "fame": 0.227,
+   "also": [
+    "Agrippa the Sceptic"
+   ]
+  },
+  {
+   "label": "Alexandros of Aphrodisias",
+   "qid": "Q317146",
+   "fame": 0.227,
+   "also": [
+    "Alexander of Aphrodisias"
+   ]
+  },
+  {
+   "label": "Apion",
+   "qid": "Q458108",
+   "fame": 0.227,
+   "also": [
+    "Apion Mochthos",
+    "Apion Pleistoneices"
+   ]
+  },
+  {
+   "label": "Alcmaeon of Croton",
+   "qid": "Q188332",
+   "fame": 0.223,
+   "also": [
+    "Alcmaeon"
+   ]
+  },
+  {
+   "label": "Bias of Priene",
+   "qid": "Q365977",
+   "fame": 0.223,
+   "also": [
+    "Bias"
+   ]
+  },
+  {
+   "label": "Ge Hong",
+   "qid": "Q553678",
+   "fame": 0.223,
+   "also": [
+    "Zhichuan",
+    "Baopuzi"
+   ]
+  },
+  {
+   "label": "Numenius of Apamea",
+   "qid": "Q707344",
+   "fame": 0.223,
+   "also": [
+    "Numenius"
+   ]
+  },
+  {
+   "label": "Dignāga",
+   "qid": "Q558272",
+   "fame": 0.222,
+   "also": [
+    "Diṅnāga"
+   ]
+  },
+  {
+   "label": "Cleobulus of Lindos",
+   "qid": "Q365950",
+   "fame": 0.218,
+   "also": [
+    "Cleobulus",
+    "Kleoboulos of Lindos"
+   ]
+  },
+  {
+   "label": "Yan Hui",
+   "qid": "Q1155960",
+   "fame": 0.217,
+   "also": [
+    "Ziyuan",
+    "Yan Yuan",
+    "Yanzi",
+    "Yen-tse",
+    "wa tong ku liao",
+    "Yen tzu"
+   ]
+  },
+  {
+   "label": "Crates of Mallus",
+   "qid": "Q503075",
+   "fame": 0.215,
+   "also": []
+  },
+  {
+   "label": "Dong Zhongshu",
+   "qid": "Q445626",
+   "fame": 0.212,
+   "also": [
+    "Dongzi",
+    "Ton-chong-chu",
+    "Tong Tchong-chu",
+    "Tou-chong-chu",
+    "Tung Chung-shu",
+    "Tung Tzu"
+   ]
+  },
+  {
+   "label": "Cassius Longinus",
+   "qid": "Q436634",
+   "fame": 0.211,
+   "also": [
+    "Cassius Dionisius Longinus",
+    "Dionysius Cassius Longinus"
+   ]
+  },
+  {
+   "label": "Yang Zhu",
+   "qid": "Q469931",
+   "fame": 0.21,
+   "also": []
+  },
+  {
+   "label": "Phaedo of Elis",
+   "qid": "Q380190",
+   "fame": 0.209,
+   "also": [
+    "Phaedo"
+   ]
+  },
+  {
+   "label": "Euclid of Megara",
+   "qid": "Q312682",
+   "fame": 0.207,
+   "also": [
+    "Eucleides of Megara",
+    "Euclides of Megara"
+   ]
+  },
+  {
+   "label": "Antiochus of Ascalon",
+   "qid": "Q320042",
+   "fame": 0.206,
+   "also": []
+  },
+  {
+   "label": "Pittacus of Mytilene",
+   "qid": "Q311835",
+   "fame": 0.206,
+   "also": [
+    "Pittacus"
+   ]
+  },
+  {
+   "label": "Zisi",
+   "qid": "Q1147803",
+   "fame": 0.205,
+   "also": [
+    "Kong Ji"
+   ]
+  },
+  {
+   "label": "Wu Qi",
+   "qid": "Q698899",
+   "fame": 0.204,
+   "also": []
+  },
+  {
+   "label": "Heraclides Ponticus",
+   "qid": "Q316334",
+   "fame": 0.202,
+   "also": [
+    "Heraklides",
+    "Heracleides of Pontus",
+    "Heracleides Pontus",
+    "Heraklides of Pontus"
+   ]
+  },
+  {
+   "label": "Victorinus of Pettau",
+   "qid": "Q469199",
+   "fame": 0.201,
+   "also": [
+    "Victorinus of Petovium",
+    "Victorinus of Ptuj",
+    "Victorinus Petavionensis",
+    "Victorinus Poetovionensis"
+   ]
+  },
+  {
+   "label": "Abrotelia",
+   "qid": "Q18639389",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Acron",
+   "qid": "Q2563682",
+   "fame": 0.2,
+   "also": [
+    "Akron",
+    "Acro",
+    "Acro of Agrigent",
+    "Akron of Agrigentum"
+   ]
+  },
+  {
+   "label": "Adeimantus of Collytus",
+   "qid": "Q353580",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Adrianus of Tyre",
+   "qid": "Q1271013",
+   "fame": 0.2,
+   "also": [
+    "Adrianus"
+   ]
+  },
+  {
+   "label": "Aedesius",
+   "qid": "Q404023",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aelius Antipater",
+   "qid": "Q3625041",
+   "fame": 0.2,
+   "also": [
+    "Antipater of Hierapolis",
+    "Antipatros of Hierapolis"
+   ]
+  },
+  {
+   "label": "Aeneas of Gaza",
+   "qid": "Q137152",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aesara",
+   "qid": "Q2637222",
+   "fame": 0.2,
+   "also": [
+    "Aesara of Lucania"
+   ]
+  },
+  {
+   "label": "Aeschines of Neapolis",
+   "qid": "Q409649",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aetius",
+   "qid": "Q794615",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Agapius",
+   "qid": "Q390501",
+   "fame": 0.2,
+   "also": [
+    "Agapius of Athens",
+    "Agapios of Athens"
+   ]
+  },
+  {
+   "label": "Agathobulus",
+   "qid": "Q2695834",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Albinus",
+   "qid": "Q657941",
+   "fame": 0.2,
+   "also": [
+    "Albinos"
+   ]
+  },
+  {
+   "label": "Alexamenus of Teos",
+   "qid": "Q4718101",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ammonius of Athens",
+   "qid": "Q473381",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Anatolius of Laodicea",
+   "qid": "Q2524557",
+   "fame": 0.2,
+   "also": [
+    "Anatolios",
+    "Anatolios of Alexandria",
+    "of Alexandria"
+   ]
+  },
+  {
+   "label": "Anniceris",
+   "qid": "Q556865",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Antipater of Cyrene",
+   "qid": "Q2194939",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Antipater of Tarsus",
+   "qid": "Q581732",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Antipater of Tyre",
+   "qid": "Q1047995",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Antisthenes of Rhodes",
+   "qid": "Q2405888",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Antoninus",
+   "qid": "Q2469216",
+   "fame": 0.2,
+   "also": [
+    "Antoninos of Kanopos",
+    "Antoninus of Canopus"
+   ]
+  },
+  {
+   "label": "Apollinaris",
+   "qid": "Q2696474",
+   "fame": 0.2,
+   "also": [
+    "Apollinaris the Elder",
+    "elder Apollinaris of Laodicea"
+   ]
+  },
+  {
+   "label": "Apollodorus of Phaleron",
+   "qid": "Q4780369",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Apollodorus of Seleucia",
+   "qid": "Q248616",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Apollodorus the Epicurean",
+   "qid": "Q2369009",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Apollonides",
+   "qid": "Q3620707",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Apollonius Cronus",
+   "qid": "Q1759046",
+   "fame": 0.2,
+   "also": [
+    "Apollonios",
+    "Apollonios Kronos",
+    "Apollonios of Kyrene",
+    "Apollonius of Cyrene"
+   ]
+  },
+  {
+   "label": "Apollonius of Chalcedon",
+   "qid": "Q3413773",
+   "fame": 0.2,
+   "also": [
+    "Apollonios of Chalkedon",
+    "Apollonios of Chalkis"
+   ]
+  },
+  {
+   "label": "Apollonius of Tyre",
+   "qid": "Q1799262",
+   "fame": 0.2,
+   "also": [
+    "Apollonios of Tyros"
+   ]
+  },
+  {
+   "label": "Archedemus of Tarsus",
+   "qid": "Q1113270",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Arignote",
+   "qid": "Q1996241",
+   "fame": 0.2,
+   "also": [
+    "Arignote of Samos"
+   ]
+  },
+  {
+   "label": "Aristion",
+   "qid": "Q2861408",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aristippus the Younger",
+   "qid": "Q665984",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aristobulus of Paneas",
+   "qid": "Q666230",
+   "fame": 0.2,
+   "also": [
+    "Aristobulus of Alexandria",
+    "Aristobulos of Alexandria"
+   ]
+  },
+  {
+   "label": "Aristocles of Messene",
+   "qid": "Q666667",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aristocreon",
+   "qid": "Q2572655",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aristodemus of Cydathenaeum",
+   "qid": "Q4791018",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aristos of Ascalon",
+   "qid": "Q667385",
+   "fame": 0.2,
+   "also": [
+    "Aristus of Ascalon"
+   ]
+  },
+  {
+   "label": "Aristotelis the Dialectician",
+   "qid": "Q668009",
+   "fame": 0.2,
+   "also": [
+    "Aristotle the Dialectician"
+   ]
+  },
+  {
+   "label": "Aristotle of Cyrene",
+   "qid": "Q4791109",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Arius Didymus",
+   "qid": "Q641051",
+   "fame": 0.2,
+   "also": [
+    "Areios Didymos",
+    "Areios Didymos of Alexandria"
+   ]
+  },
+  {
+   "label": "Arnouphis",
+   "qid": "Q4795400",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Arria",
+   "qid": "Q11955756",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Arulenus Rusticus",
+   "qid": "Q656891",
+   "fame": 0.2,
+   "also": [
+    "Quintus Junius Arulenus Rusticus"
+   ]
+  },
+  {
+   "label": "Asclepiades of Phlius",
+   "qid": "Q2087377",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Asclepiodotus",
+   "qid": "Q261224",
+   "fame": 0.2,
+   "also": [
+    "Asclepiodotus Tacticus"
+   ]
+  },
+  {
+   "label": "Asclepiodotus of Alexandria",
+   "qid": "Q731906",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Asclepius of Tralles",
+   "qid": "Q732098",
+   "fame": 0.2,
+   "also": [
+    "Asclepius",
+    "Asclepius Trallianus"
+   ]
+  },
+  {
+   "label": "Aspasius",
+   "qid": "Q735515",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Athenodoros Cananites",
+   "qid": "Q280432",
+   "fame": 0.2,
+   "also": [
+    "Athenodorus Cananites"
+   ]
+  },
+  {
+   "label": "Athenodoros Cordylion",
+   "qid": "Q532315",
+   "fame": 0.2,
+   "also": [
+    "Athenodorus Cordylion",
+    "Athenodorus of Tarsus"
+   ]
+  },
+  {
+   "label": "Athenodorus of Soli",
+   "qid": "Q2749849",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Atticus",
+   "qid": "Q758060",
+   "fame": 0.2,
+   "also": [
+    "Attikos"
+   ]
+  },
+  {
+   "label": "Aulus Egnatius Priscillianus",
+   "qid": "Q1237555",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Axiothea of Phlius",
+   "qid": "Q45013",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Badarayana",
+   "qid": "Q4840620",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Basilides the Epicurean",
+   "qid": "Q2475901",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Batis of Lampsacus",
+   "qid": "Q667147",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bhadrabahu",
+   "qid": "Q3524867",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bodhiruci",
+   "qid": "Q2324914",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Boethus of Sidon",
+   "qid": "Q2639498",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bolus of Mendes",
+   "qid": "Q645774",
+   "fame": 0.2,
+   "also": [
+    "Bolos the Democriteian"
+   ]
+  },
+  {
+   "label": "Bozorgmehr",
+   "qid": "Q3780281",
+   "fame": 0.2,
+   "also": [
+    "Buzurgmihr"
+   ]
+  },
+  {
+   "label": "Bryson of Achaea",
+   "qid": "Q2927235",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bu Shang",
+   "qid": "Q10944085",
+   "fame": 0.2,
+   "also": [
+    "Pu Shang",
+    "Tzu-hsia",
+    "Zixia"
+   ]
+  },
+  {
+   "label": "Buddhapālita",
+   "qid": "Q976112",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Calanus",
+   "qid": "Q929260",
+   "fame": 0.2,
+   "also": [
+    "Kalanos"
+   ]
+  },
+  {
+   "label": "Calcidius",
+   "qid": "Q729244",
+   "fame": 0.2,
+   "also": [
+    "Chalcidius",
+    "Chalcidus"
+   ]
+  },
+  {
+   "label": "Calippus of Syracuse",
+   "qid": "Q1377100",
+   "fame": 0.2,
+   "also": [
+    "Callippus of Syracuse"
+   ]
+  },
+  {
+   "label": "Cercidas",
+   "qid": "Q1279413",
+   "fame": 0.2,
+   "also": [
+    "Cerc.",
+    "Cercidas Iambographus"
+   ]
+  },
+  {
+   "label": "Chaeremon of Alexandria",
+   "qid": "Q897689",
+   "fame": 0.2,
+   "also": [
+    "Chaeremon"
+   ]
+  },
+  {
+   "label": "Chaerephon",
+   "qid": "Q744125",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chamaeleon",
+   "qid": "Q2955937",
+   "fame": 0.2,
+   "also": [
+    "Chamaeleon Heraclea"
+   ]
+  },
+  {
+   "label": "Chao Cuo",
+   "qid": "Q1185798",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Charmadas",
+   "qid": "Q255275",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chrysanthius",
+   "qid": "Q248578",
+   "fame": 0.2,
+   "also": [
+    "Chrysanthios of Sardes",
+    "Chrysanthius of Sardis"
+   ]
+  },
+  {
+   "label": "Chunyu Kun",
+   "qid": "Q1089622",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Claudianus Mamertus",
+   "qid": "Q782074",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Claudius Maximus",
+   "qid": "Q1098323",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Clearchus of Heraclea",
+   "qid": "Q984187",
+   "fame": 0.2,
+   "also": [
+    "Clearchus I of Heracleia",
+    "Klearchos of Herakleia",
+    "Clearchus"
+   ]
+  },
+  {
+   "label": "Clearchus of Soli",
+   "qid": "Q736433",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cleinias of Tarentum",
+   "qid": "Q1400157",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cleombrotus of Ambracia",
+   "qid": "Q1774128",
+   "fame": 0.2,
+   "also": [
+    "Theombrotus of Ambracia"
+   ]
+  },
+  {
+   "label": "Cleomenes the Cynic",
+   "qid": "Q437332",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Clinomachus",
+   "qid": "Q749452",
+   "fame": 0.2,
+   "also": [
+    "Kleinomachos"
+   ]
+  },
+  {
+   "label": "Colotes",
+   "qid": "Q1234536",
+   "fame": 0.2,
+   "also": [
+    "Colotes of Lampsacus"
+   ]
+  },
+  {
+   "label": "Cornelius Labeo",
+   "qid": "Q1133857",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cratippus of Pergamon",
+   "qid": "Q950303",
+   "fame": 0.2,
+   "also": [
+    "Cratippus of Mytilene"
+   ]
+  },
+  {
+   "label": "Critolaus",
+   "qid": "Q1073837",
+   "fame": 0.2,
+   "also": [
+    "Critolaus of Phaselis",
+    "Kritolaos"
+   ]
+  },
+  {
+   "label": "Criton",
+   "qid": "Q934471",
+   "fame": 0.2,
+   "also": [
+    "Crito of Alopece",
+    "Criton of Athen"
+   ]
+  },
+  {
+   "label": "Cronius the Pythagorean",
+   "qid": "Q446155",
+   "fame": 0.2,
+   "also": [
+    "Cronius"
+   ]
+  },
+  {
+   "label": "Damis",
+   "qid": "Q1158563",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Damo",
+   "qid": "Q451719",
+   "fame": 0.2,
+   "also": [
+    "Damon"
+   ]
+  },
+  {
+   "label": "Damon of Athens",
+   "qid": "Q2346819",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Daosheng",
+   "qid": "Q1822759",
+   "fame": 0.2,
+   "also": [
+    "Tao Sheng",
+    "Chu Tao-seng",
+    "Zhu Daosheng",
+    "Chu Tao-sheng"
+   ]
+  },
+  {
+   "label": "Dardanus of Athens",
+   "qid": "Q2661420",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Deceneus",
+   "qid": "Q15091905",
+   "fame": 0.2,
+   "also": [
+    "Deceneu"
+   ]
+  },
+  {
+   "label": "Demetrius Lacon",
+   "qid": "Q1185502",
+   "fame": 0.2,
+   "also": [
+    "Demetrios Lakon",
+    "Demetrius of Laconia",
+    "Demetr. Lac."
+   ]
+  },
+  {
+   "label": "Demetrius of Scepsis",
+   "qid": "Q986863",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Demonax",
+   "qid": "Q949530",
+   "fame": 0.2,
+   "also": [
+    "Demonax of Cyprus"
+   ]
+  },
+  {
+   "label": "Deng Xi",
+   "qid": "Q2495593",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dercyllides",
+   "qid": "Q1200209",
+   "fame": 0.2,
+   "also": [
+    "Dercylides"
+   ]
+  },
+  {
+   "label": "Dexippus",
+   "qid": "Q369129",
+   "fame": 0.2,
+   "also": [
+    "Dexippus the Platonist"
+   ]
+  },
+  {
+   "label": "Diodorus of Aspendus",
+   "qid": "Q948383",
+   "fame": 0.2,
+   "also": [
+    "Diodorus of Aspendos",
+    "Diodor of Aspendos",
+    "Diodoros of Aspendos"
+   ]
+  },
+  {
+   "label": "Diodorus of Tyre",
+   "qid": "Q905827",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Diodotus the Stoic",
+   "qid": "Q905818",
+   "fame": 0.2,
+   "also": [
+    "Diodotus Stoicus"
+   ]
+  },
+  {
+   "label": "Diogenes of Oenoanda",
+   "qid": "Q59137",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Diogenes of Tarsus",
+   "qid": "Q1226828",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dionysius of Chalcedon",
+   "qid": "Q4354636",
+   "fame": 0.2,
+   "also": [
+    "Dionysios of Chalkedon",
+    "Dionysios the Dialectic"
+   ]
+  },
+  {
+   "label": "Dionysius the Renegade",
+   "qid": "Q969976",
+   "fame": 0.2,
+   "also": [
+    "Dionysius of Heraclea"
+   ]
+  },
+  {
+   "label": "Dionysodorus",
+   "qid": "Q3708542",
+   "fame": 0.2,
+   "also": [
+    "Dionysodorus of Chios"
+   ]
+  },
+  {
+   "label": "Dioscorides",
+   "qid": "Q12278791",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Domninus of Larissa",
+   "qid": "Q1238588",
+   "fame": 0.2,
+   "also": [
+    "Domninos of Larisa",
+    "Domninos of Larissa"
+   ]
+  },
+  {
+   "label": "Dongfang Shuo",
+   "qid": "Q1190966",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Duanmu Ci",
+   "qid": "Q1039504",
+   "fame": 0.2,
+   "also": [
+    "Tuan-mu Tz'u",
+    "Tzu-kung",
+    "Zigong"
+   ]
+  },
+  {
+   "label": "Echecrates of Phlius",
+   "qid": "Q962486",
+   "fame": 0.2,
+   "also": [
+    "Echecrates"
+   ]
+  },
+  {
+   "label": "Epigenes",
+   "qid": "Q5382897",
+   "fame": 0.2,
+   "also": [
+    "Epigenes of Cefisia",
+    "Epigenes of Kephisia"
+   ]
+  },
+  {
+   "label": "Epiphanes",
+   "qid": "Q1347202",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Eudorus of Alexandria",
+   "qid": "Q992324",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Euenus",
+   "qid": "Q993516",
+   "fame": 0.2,
+   "also": [
+    "Euenus of Paros"
+   ]
+  },
+  {
+   "label": "Euphantus",
+   "qid": "Q3060400",
+   "fame": 0.2,
+   "also": [
+    "Euphantus of Olynthus"
+   ]
+  },
+  {
+   "label": "Euphrates the Stoic",
+   "qid": "Q2666131",
+   "fame": 0.2,
+   "also": [
+    "Euphrates of Tyre"
+   ]
+  },
+  {
+   "label": "Eurytus",
+   "qid": "Q1378597",
+   "fame": 0.2,
+   "also": [
+    "Eurytos",
+    "Eurytus of Tarentum"
+   ]
+  },
+  {
+   "label": "Eusebius Arabs",
+   "qid": "Q1378634",
+   "fame": 0.2,
+   "also": [
+    "Eusebius",
+    "Eusebius of Arabia"
+   ]
+  },
+  {
+   "label": "Eusebius of Myndus",
+   "qid": "Q248733",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Eustathius of Cappadocia",
+   "qid": "Q441590",
+   "fame": 0.2,
+   "also": [
+    "Eustathios"
+   ]
+  },
+  {
+   "label": "Euthydemus of Chios",
+   "qid": "Q2610597",
+   "fame": 0.2,
+   "also": [
+    "Euthydemus"
+   ]
+  },
+  {
+   "label": "Evander",
+   "qid": "Q2705204",
+   "fame": 0.2,
+   "also": [
+    "Evander of Phocaea"
+   ]
+  },
+  {
+   "label": "Fan Zhen",
+   "qid": "Q31765",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Firmilian",
+   "qid": "Q1419147",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Flavius Boethus",
+   "qid": "Q15975321",
+   "fame": 0.2,
+   "also": [
+    "Titus Flavius Boethus"
+   ]
+  },
+  {
+   "label": "Flavius Sallustius",
+   "qid": "Q1084333",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Fu Buqi",
+   "qid": "Q10948046",
+   "fame": 0.2,
+   "also": [
+    "Zijian",
+    "Fu Pu-ch'i",
+    "Mi Buqi"
+   ]
+  },
+  {
+   "label": "Fu Sheng",
+   "qid": "Q2856647",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gaius Blossius",
+   "qid": "Q857017",
+   "fame": 0.2,
+   "also": [
+    "Blossius",
+    "Blossius of Cuma",
+    "Blossius of Cumae",
+    "Gaius Blosius"
+   ]
+  },
+  {
+   "label": "Gaius Marius Victorinus",
+   "qid": "Q708247",
+   "fame": 0.2,
+   "also": [
+    "Marius Victorinus"
+   ]
+  },
+  {
+   "label": "Gaius the Platonist",
+   "qid": "Q1491308",
+   "fame": 0.2,
+   "also": [
+    "Gaius"
+   ]
+  },
+  {
+   "label": "Gao Chai",
+   "qid": "Q4505450",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gaozi",
+   "qid": "Q898091",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "George of Laodicea",
+   "qid": "Q5546697",
+   "fame": 0.2,
+   "also": [
+    "Georgios of Laodikeia",
+    "Georgius of Laodicea"
+   ]
+  },
+  {
+   "label": "Glaucon",
+   "qid": "Q1364945",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gnaeus Claudius Severus Arabianus",
+   "qid": "Q717647",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gongye Chang",
+   "qid": "Q10892620",
+   "fame": 0.2,
+   "also": [
+    "Zichang"
+   ]
+  },
+  {
+   "label": "Guiguzi",
+   "qid": "Q705744",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Guo Pu",
+   "qid": "Q765572",
+   "fame": 0.2,
+   "also": [
+    "Pu Guo"
+   ]
+  },
+  {
+   "label": "Guo Xiang",
+   "qid": "Q1291953",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "He Xiu",
+   "qid": "Q4502727",
+   "fame": 0.2,
+   "also": [
+    "Ho Yau"
+   ]
+  },
+  {
+   "label": "He Yan",
+   "qid": "Q1156713",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hecato of Rhodes",
+   "qid": "Q924215",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hegesinus of Pergamon",
+   "qid": "Q764766",
+   "fame": 0.2,
+   "also": [
+    "Hegesilaos",
+    "Hegesinos"
+   ]
+  },
+  {
+   "label": "Hegias",
+   "qid": "Q1593768",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Heliodorus of Alexandria",
+   "qid": "Q4135021",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Helvidius Priscus",
+   "qid": "Q1390986",
+   "fame": 0.2,
+   "also": [
+    "Cluvius",
+    "Gaius Helvidius Priscus"
+   ]
+  },
+  {
+   "label": "Heracleon",
+   "qid": "Q946929",
+   "fame": 0.2,
+   "also": [
+    "Heracleon the Gnostic"
+   ]
+  },
+  {
+   "label": "Heraclides of Aenus",
+   "qid": "Q5732535",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Herennius Senecio",
+   "qid": "Q833663",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Herillus",
+   "qid": "Q248975",
+   "fame": 0.2,
+   "also": [
+    "Erillus of Carthage"
+   ]
+  },
+  {
+   "label": "Hermias",
+   "qid": "Q1613489",
+   "fame": 0.2,
+   "also": [
+    "Hermeias"
+   ]
+  },
+  {
+   "label": "Hermias of Atarneus",
+   "qid": "Q948620",
+   "fame": 0.2,
+   "also": [
+    "Hermias"
+   ]
+  },
+  {
+   "label": "Hermodorus",
+   "qid": "Q11925495",
+   "fame": 0.2,
+   "also": [
+    "Hermodorus of Syracuse"
+   ]
+  },
+  {
+   "label": "Hermogenes",
+   "qid": "Q1336424",
+   "fame": 0.2,
+   "also": [
+    "Hermogenes of Athens"
+   ]
+  },
+  {
+   "label": "Hieronymus of Rhodes",
+   "qid": "Q1036270",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Huan Tan",
+   "qid": "Q1131375",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hui Shi",
+   "qid": "Q943012",
+   "fame": 0.2,
+   "also": [
+    "Huizi"
+   ]
+  },
+  {
+   "label": "Idomeneus of Lampsacus",
+   "qid": "Q648287",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Isidore of Alexandria",
+   "qid": "Q660170",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jason of Nysa",
+   "qid": "Q4352000",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jia Kui",
+   "qid": "Q5366140",
+   "fame": 0.2,
+   "also": [
+    "Jingbo",
+    "Jia Gui",
+    "Kui Jia"
+   ]
+  },
+  {
+   "label": "Julian of Eclanum",
+   "qid": "Q1662957",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kong Anguo",
+   "qid": "Q6143010",
+   "fame": 0.2,
+   "also": [
+    "Ziguo",
+    "Cong Ngane-coue",
+    "K'ung An-kuo",
+    "K'ung Ngan-kuo",
+    "Tzu-kuo"
+   ]
+  },
+  {
+   "label": "Kṣemā",
+   "qid": "Q2627201",
+   "fame": 0.2,
+   "also": [
+    "Khema"
+   ]
+  },
+  {
+   "label": "Lacritus",
+   "qid": "Q11934318",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lacydes of Cyrene",
+   "qid": "Q386261",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lamiscus",
+   "qid": "Q3826494",
+   "fame": 0.2,
+   "also": [
+    "Lamiskos"
+   ]
+  },
+  {
+   "label": "Lastheneia of Mantinea",
+   "qid": "Q288467",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Leonteus of Lampsacus",
+   "qid": "Q1225067",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Li Kui",
+   "qid": "Q716190",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Li Yiji",
+   "qid": "Q1066734",
+   "fame": 0.2,
+   "also": [
+    "Li Shiji"
+   ]
+  },
+  {
+   "label": "Liu An",
+   "qid": "Q704525",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Liu Ling",
+   "qid": "Q706832",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lucius Aelius Tubero",
+   "qid": "Q1159576",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lucius Aemilius Juncus",
+   "qid": "Q12285191",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lucius Calbenus Taurus",
+   "qid": "Q447741",
+   "fame": 0.2,
+   "also": [
+    "Lucius Calvenus Taurus",
+    "Tauros",
+    "Lucius Calvisius Taurus"
+   ]
+  },
+  {
+   "label": "Lucius Tarutius Firmanus",
+   "qid": "Q138724",
+   "fame": 0.2,
+   "also": [
+    "Lucius Tarrutius",
+    "Lucius Tarrutius Firmanus",
+    "Lucius Taruntius Firmanus"
+   ]
+  },
+  {
+   "label": "Lyco of Troas",
+   "qid": "Q934510",
+   "fame": 0.2,
+   "also": [
+    "Lycon"
+   ]
+  },
+  {
+   "label": "Lysis of Taras",
+   "qid": "Q720939",
+   "fame": 0.2,
+   "also": [
+    "Lysis of Tarentum"
+   ]
+  },
+  {
+   "label": "Ma Rong",
+   "qid": "Q657368",
+   "fame": 0.2,
+   "also": [
+    "Ma Yung"
+   ]
+  },
+  {
+   "label": "Macarius Magnes",
+   "qid": "Q719224",
+   "fame": 0.2,
+   "also": [
+    "Magnetes"
+   ]
+  },
+  {
+   "label": "Maitreya-nātha",
+   "qid": "Q1276324",
+   "fame": 0.2,
+   "also": [
+    "Maitreya"
+   ]
+  },
+  {
+   "label": "Makkhali Gosala",
+   "qid": "Q2701335",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mara Bar-Serapion",
+   "qid": "Q433332",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Marcus Favonius",
+   "qid": "Q1965137",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mardonio",
+   "qid": "Q3846727",
+   "fame": 0.2,
+   "also": [
+    "Mardonius"
+   ]
+  },
+  {
+   "label": "Marinus of Neapolis",
+   "qid": "Q581833",
+   "fame": 0.2,
+   "also": [
+    "Marinus",
+    "Marinos",
+    "Marinos of Neapolis",
+    "Marinus ha-Shomroni",
+    "Marinus of Flavia Neapolis",
+    "Marinus of Samaria"
+   ]
+  },
+  {
+   "label": "Maximus I of Constantinople",
+   "qid": "Q1290567",
+   "fame": 0.2,
+   "also": [
+    "Archbishop Maximus I of Constantinople",
+    "Maximus the Cynic"
+   ]
+  },
+  {
+   "label": "Maximus of Ephesus",
+   "qid": "Q248793",
+   "fame": 0.2,
+   "also": [
+    "Maximus Ephesius"
+   ]
+  },
+  {
+   "label": "Melissa",
+   "qid": "Q6812616",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Menedemus of Pyrrha",
+   "qid": "Q981586",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Menedemus the Cynic",
+   "qid": "Q925732",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Menodotus of Nicomedia",
+   "qid": "Q1047689",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Messius Phoebus Severus",
+   "qid": "Q927711",
+   "fame": 0.2,
+   "also": [
+    "Flavius Messius Phoebus Severus"
+   ]
+  },
+  {
+   "label": "Metrocles",
+   "qid": "Q1287486",
+   "fame": 0.2,
+   "also": [
+    "Metrocles of Maroneia"
+   ]
+  },
+  {
+   "label": "Metrodorus of Chios",
+   "qid": "Q535769",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Metrodorus of Lampsacus",
+   "qid": "Q539514",
+   "fame": 0.2,
+   "also": [
+    "Metrodorus"
+   ]
+  },
+  {
+   "label": "Metrodorus of Stratonicea",
+   "qid": "Q203911",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Min Sun",
+   "qid": "Q698867",
+   "fame": 0.2,
+   "also": [
+    "Ziqian",
+    "Min Ziqian"
+   ]
+  },
+  {
+   "label": "Mnesarchus of Athens",
+   "qid": "Q223383",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Moderatus of Gades",
+   "qid": "Q290471",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Monimus",
+   "qid": "Q942439",
+   "fame": 0.2,
+   "also": [
+    "Monimus of Syracuse"
+   ]
+  },
+  {
+   "label": "Myia",
+   "qid": "Q456560",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nausiphanes",
+   "qid": "Q1189157",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Neleus of Scepsis",
+   "qid": "Q3347025",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nemesius",
+   "qid": "Q960345",
+   "fame": 0.2,
+   "also": [
+    "Nemesius Emesenus",
+    "Nemesius of Emesa"
+   ]
+  },
+  {
+   "label": "Nicarete of Megara",
+   "qid": "Q1763617",
+   "fame": 0.2,
+   "also": [
+    "Nicarete"
+   ]
+  },
+  {
+   "label": "Nymphidianus of Smyrna",
+   "qid": "Q3877106",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ocellus Lucanus",
+   "qid": "Q268539",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Olympiodorus the Elder",
+   "qid": "Q925716",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Origen the Pagan",
+   "qid": "Q928551",
+   "fame": 0.2,
+   "also": [
+    "Origen",
+    "Origenes"
+   ]
+  },
+  {
+   "label": "Pamprepius",
+   "qid": "Q2531620",
+   "fame": 0.2,
+   "also": [
+    "Pampretius",
+    "Pamprepios"
+   ]
+  },
+  {
+   "label": "Panthoides",
+   "qid": "Q4354547",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Paramartha",
+   "qid": "Q979653",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pei Wei",
+   "qid": "Q4385580",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Peregrinus Proteus",
+   "qid": "Q248287",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Perictione",
+   "qid": "Q444595",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Persaeus",
+   "qid": "Q662932",
+   "fame": 0.2,
+   "also": [
+    "Persaeus of Citium"
+   ]
+  },
+  {
+   "label": "Phaedrus",
+   "qid": "Q554535",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Phaedrus the Epicurean",
+   "qid": "Q1050414",
+   "fame": 0.2,
+   "also": [
+    "Phaedrus"
+   ]
+  },
+  {
+   "label": "Phaenias of Eresus",
+   "qid": "Q943529",
+   "fame": 0.2,
+   "also": [
+    "Phaenias",
+    "Phanias the Lesbian"
+   ]
+  },
+  {
+   "label": "Phaleas of Chalcedon",
+   "qid": "Q1749928",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Philippus of Opus",
+   "qid": "Q555818",
+   "fame": 0.2,
+   "also": [
+    "Philip of Opus"
+   ]
+  },
+  {
+   "label": "Philiscus of Aegina",
+   "qid": "Q552862",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Philo the Dialectician",
+   "qid": "Q1366567",
+   "fame": 0.2,
+   "also": [
+    "Philo of Megara"
+   ]
+  },
+  {
+   "label": "Philonides of Laodicea",
+   "qid": "Q9259819",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Phintys",
+   "qid": "Q433919",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pierius",
+   "qid": "Q2335606",
+   "fame": 0.2,
+   "also": [
+    "Pierius of Alexandria"
+   ]
+  },
+  {
+   "label": "Polemarchus",
+   "qid": "Q3371179",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Polemon of Athens",
+   "qid": "Q1150145",
+   "fame": 0.2,
+   "also": [
+    "Polemon of Ilium",
+    "Polemo the Periegete"
+   ]
+  },
+  {
+   "label": "Polus",
+   "qid": "Q372798",
+   "fame": 0.2,
+   "also": [
+    "Polus of Agrigentum",
+    "Polus of Akragas"
+   ]
+  },
+  {
+   "label": "Polyaenus of Lampsacus",
+   "qid": "Q740432",
+   "fame": 0.2,
+   "also": [
+    "Polyaenus"
+   ]
+  },
+  {
+   "label": "Priscian of Lydia",
+   "qid": "Q185206",
+   "fame": 0.2,
+   "also": [
+    "Priscianus Lydus"
+   ]
+  },
+  {
+   "label": "Priscus of Epirus",
+   "qid": "Q780234",
+   "fame": 0.2,
+   "also": [
+    "Priscus"
+   ]
+  },
+  {
+   "label": "Prohaeresius",
+   "qid": "Q385213",
+   "fame": 0.2,
+   "also": [
+    "Proaeresius"
+   ]
+  },
+  {
+   "label": "Ptolemais of Cyrene",
+   "qid": "Q525814",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ptolemy",
+   "qid": "Q430051",
+   "fame": 0.2,
+   "also": [
+    "Ptolemy the Gnostic"
+   ]
+  },
+  {
+   "label": "Ptolemy-el-Garib",
+   "qid": "Q7257101",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Publius Anteius Antiochus",
+   "qid": "Q11906126",
+   "fame": 0.2,
+   "also": [
+    "Antiochos of Aigai",
+    "Antiochus of Aegae"
+   ]
+  },
+  {
+   "label": "Publius Clodius Thrasea Paetus",
+   "qid": "Q594441",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Publius Egnatius Celer",
+   "qid": "Q546375",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Python of Aenus",
+   "qid": "Q7263937",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Qidiao Kai",
+   "qid": "Q16903788",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Quintus Aelius Tubero",
+   "qid": "Q11035375",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Quintus Lucilius Balbus",
+   "qid": "Q1223467",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Quintus Sextius",
+   "qid": "Q1385296",
+   "fame": 0.2,
+   "also": [
+    "Quintus Sextius the Elder"
+   ]
+  },
+  {
+   "label": "Rabbi Ishmael",
+   "qid": "Q1391069",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ran Geng",
+   "qid": "Q857146",
+   "fame": 0.2,
+   "also": [
+    "Boniu",
+    "Ran Boniu"
+   ]
+  },
+  {
+   "label": "Ran Qiu",
+   "qid": "Q840352",
+   "fame": 0.2,
+   "also": [
+    "Ziyou",
+    "Ran You",
+    "Tzu-yu",
+    "Jan Ch'iu",
+    "Jan Yu"
+   ]
+  },
+  {
+   "label": "Ran Yong",
+   "qid": "Q8193981",
+   "fame": 0.2,
+   "also": [
+    "Zhonggong"
+   ]
+  },
+  {
+   "label": "Ruan Xian",
+   "qid": "Q3270479",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Śabara",
+   "qid": "Q2724007",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sallustius of Emesa",
+   "qid": "Q709719",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sanjaya Belatthaputta",
+   "qid": "Q1229185",
+   "fame": 0.2,
+   "also": [
+    "Sanjaya Belatthiputta"
+   ]
+  },
+  {
+   "label": "Satyrus the Peripatetic",
+   "qid": "Q1295215",
+   "fame": 0.2,
+   "also": [
+    "Satyros of Kallatis"
+   ]
+  },
+  {
+   "label": "Secundus the Silent",
+   "qid": "Q731078",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sengzhao",
+   "qid": "Q724293",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Shan Tao",
+   "qid": "Q1207661",
+   "fame": 0.2,
+   "also": [
+    "Juyuan"
+   ]
+  },
+  {
+   "label": "Shang Qu",
+   "qid": "Q10923196",
+   "fame": 0.2,
+   "also": [
+    "Zi Mu"
+   ]
+  },
+  {
+   "label": "Shen Dao",
+   "qid": "Q947699",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Simmias of Thebes",
+   "qid": "Q928470",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Siro the Epicurean",
+   "qid": "Q1225062",
+   "fame": 0.2,
+   "also": [
+    "Siro",
+    "Siron"
+   ]
+  },
+  {
+   "label": "Socrates the Younger",
+   "qid": "Q1367611",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sopater of Apamea",
+   "qid": "Q248969",
+   "fame": 0.2,
+   "also": [
+    "Sopatros of Apameia",
+    "Sopastros",
+    "Sopater of Apamea the Elder"
+   ]
+  },
+  {
+   "label": "Sosipatra",
+   "qid": "Q291952",
+   "fame": 0.2,
+   "also": [
+    "Sosipatra of Ephesus",
+    "Sosipatra of Lydia",
+    "Sosipatra of Pergamum"
+   ]
+  },
+  {
+   "label": "Sotades",
+   "qid": "Q965086",
+   "fame": 0.2,
+   "also": [
+    "Sotad.",
+    "Sotades of Maroneia"
+   ]
+  },
+  {
+   "label": "Sotion",
+   "qid": "Q2570422",
+   "fame": 0.2,
+   "also": [
+    "Sotion of Alexandria"
+   ]
+  },
+  {
+   "label": "Sphaerus",
+   "qid": "Q2311453",
+   "fame": 0.2,
+   "also": [
+    "Sphaerus of Borysthenes"
+   ]
+  },
+  {
+   "label": "Tantai Mieming",
+   "qid": "Q11566026",
+   "fame": 0.2,
+   "also": [
+    "Ziyu"
+   ]
+  },
+  {
+   "label": "Tao Hongjing",
+   "qid": "Q981888",
+   "fame": 0.2,
+   "also": [
+    "Huayang zhenren",
+    "Huayang zhenyi",
+    "Huayangyinju",
+    "Shanzhong zaixiang",
+    "Tongming",
+    "Zhenbai xiansheng"
+   ]
+  },
+  {
+   "label": "Telecles",
+   "qid": "Q2706119",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Teles of Megara",
+   "qid": "Q2367894",
+   "fame": 0.2,
+   "also": [
+    "Teles"
+   ]
+  },
+  {
+   "label": "Terpsion",
+   "qid": "Q674683",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Themista of Lampsacus",
+   "qid": "Q1229024",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Theodora of Emesa",
+   "qid": "Q29029522",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Theodorus Lector",
+   "qid": "Q920986",
+   "fame": 0.2,
+   "also": [
+    "Theodoros Anagnostes",
+    "Theodorus Anagnosta"
+   ]
+  },
+  {
+   "label": "Theodorus of Asine",
+   "qid": "Q965333",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Thrasyllus of Mendes",
+   "qid": "Q725225",
+   "fame": 0.2,
+   "also": [
+    "Tiberius Claudius Thrasyllus"
+   ]
+  },
+  {
+   "label": "Tiberius Claudius Aristocles",
+   "qid": "Q1747749",
+   "fame": 0.2,
+   "also": [
+    "Aristocles of Pergamon",
+    "Aristokles of Pergamon"
+   ]
+  },
+  {
+   "label": "Timocrates of Lampsacus",
+   "qid": "Q7806903",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Timon of Athens",
+   "qid": "Q1747004",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Timycha",
+   "qid": "Q434021",
+   "fame": 0.2,
+   "also": [
+    "Tymicha"
+   ]
+  },
+  {
+   "label": "Tisias",
+   "qid": "Q931271",
+   "fame": 0.2,
+   "also": [
+    "Tisias of Syracuse"
+   ]
+  },
+  {
+   "label": "Titus Albucius",
+   "qid": "Q2657157",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Troilus of Side",
+   "qid": "Q15914510",
+   "fame": 0.2,
+   "also": [
+    "Troilus"
+   ]
+  },
+  {
+   "label": "Wang Fu",
+   "qid": "Q290825",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Wang Su",
+   "qid": "Q713554",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Xeniades",
+   "qid": "Q1465879",
+   "fame": 0.2,
+   "also": [
+    "Xeniades of Corinth"
+   ]
+  },
+  {
+   "label": "Xenophilus",
+   "qid": "Q221497",
+   "fame": 0.2,
+   "also": [
+    "Xenophilus of Chalcidice",
+    "Xenophilus of Chalcis"
+   ]
+  },
+  {
+   "label": "Xiang Xiu",
+   "qid": "Q1147782",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Xie Daoyun",
+   "qid": "Q8044361",
+   "fame": 0.2,
+   "also": [
+    "Taoyuan"
+   ]
+  },
+  {
+   "label": "Ximen Bao",
+   "qid": "Q976097",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Xu Gan",
+   "qid": "Q621373",
+   "fame": 0.2,
+   "also": [
+    "Weichang",
+    "Gan Xu",
+    "Hsu Kan",
+    "Hsu Wei-ch'ang"
+   ]
+  },
+  {
+   "label": "Xu Xing",
+   "qid": "Q8045136",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Xu Yue",
+   "qid": "Q12159141",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Xun Can",
+   "qid": "Q16259917",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Xun Yue",
+   "qid": "Q11618050",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Yan Wuyou",
+   "qid": "Q15926484",
+   "fame": 0.2,
+   "also": [
+    "Yan Lu"
+   ]
+  },
+  {
+   "label": "Yan Yan",
+   "qid": "Q8193964",
+   "fame": 0.2,
+   "also": [
+    "Yan You",
+    "Ziyou",
+    "Yen Yen",
+    "Tzu-yu"
+   ]
+  },
+  {
+   "label": "Yin Mo",
+   "qid": "Q712125",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Yin Wen",
+   "qid": "Q16031704",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Yuan Xian",
+   "qid": "Q10911249",
+   "fame": 0.2,
+   "also": [
+    "Yüan Hsien",
+    "Yuan Si"
+   ]
+  },
+  {
+   "label": "Zai Yu",
+   "qid": "Q837573",
+   "fame": 0.2,
+   "also": [
+    "Ziwo",
+    "Tsai Wo",
+    "Tsai Yü",
+    "Tzu-wo",
+    "Zai Wo"
+   ]
+  },
+  {
+   "label": "Zeng Dian",
+   "qid": "Q11091584",
+   "fame": 0.2,
+   "also": [
+    "Zeng Xi"
+   ]
+  },
+  {
+   "label": "Zenodotus",
+   "qid": "Q189711",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zheng Xuan",
+   "qid": "Q197649",
+   "fame": 0.2,
+   "also": [
+    "Zheng Yuan",
+    "Cheng Yuan",
+    "Cheng Hsuan",
+    "Cheng K'ang-ch'eng",
+    "Kang-tching",
+    "King fang",
+    "Tchin Huen",
+    "Tchin Kang-tching",
+    "Tchine Huene",
+    "Tchine Kang-tching",
+    "Zheng Kangcheng"
+   ]
+  },
+  {
+   "label": "Zhi Dun",
+   "qid": "Q1291946",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zhuansun Shi",
+   "qid": "Q11447909",
+   "fame": 0.2,
+   "also": [
+    "Chuan-sun Shih",
+    "Tzu-chang",
+    "Zizhang"
+   ]
+  },
+  {
+   "label": "Zichan",
+   "qid": "Q1184340",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zilu",
+   "qid": "Q836861",
+   "fame": 0.2,
+   "also": [
+    "Zhong You",
+    "Jilu",
+    "Chi-lu",
+    "Chung Yu",
+    "Tzu-lu"
+   ]
+  },
+  {
+   "label": "Liu Xiang",
+   "qid": "Q465282",
+   "fame": 0.195,
+   "also": [
+    "Liu Gengsheng"
+   ]
+  },
+  {
+   "label": "Prodicus",
+   "qid": "Q297402",
+   "fame": 0.195,
+   "also": [
+    "Prodicus of Ceos"
+   ]
+  },
+  {
+   "label": "Arnobius",
+   "qid": "Q342416",
+   "fame": 0.194,
+   "also": [
+    "Arnobius Afer",
+    "Arnobius Major",
+    "Arnobius the Elder"
+   ]
+  },
+  {
+   "label": "Carpocrates",
+   "qid": "Q441448",
+   "fame": 0.193,
+   "also": []
+  },
+  {
+   "label": "Hecataeus of Abdera",
+   "qid": "Q471916",
+   "fame": 0.193,
+   "also": []
+  },
+  {
+   "label": "Aenesidemus",
+   "qid": "Q314467",
+   "fame": 0.191,
+   "also": [
+    "Ænesidemus",
+    "Aenesidemus of Cnossus"
+   ]
+  },
+  {
+   "label": "Favorinus",
+   "qid": "Q554387",
+   "fame": 0.191,
+   "also": [
+    "Favorí d'Arle",
+    "Favorinus of Arelate",
+    "Favorinus of Arles"
+   ]
+  },
+  {
+   "label": "Zhong Hui",
+   "qid": "Q197813",
+   "fame": 0.191,
+   "also": [
+    "Chung Wui"
+   ]
+  },
+  {
+   "label": "Theano",
+   "qid": "Q235426",
+   "fame": 0.19,
+   "also": []
+  },
+  {
+   "label": "Pantaenus",
+   "qid": "Q461067",
+   "fame": 0.189,
+   "also": [
+    "Pantenus",
+    "Saint Pantaenus",
+    "Saint Pantaenus the Philosopher",
+    "St Pantaenus"
+   ]
+  },
+  {
+   "label": "Anaxarchus",
+   "qid": "Q366031",
+   "fame": 0.188,
+   "also": [
+    "Anaxarchus of Abdera"
+   ]
+  },
+  {
+   "label": "Eubulides",
+   "qid": "Q461007",
+   "fame": 0.188,
+   "also": [
+    "Euboulides of Miletos",
+    "Eubulides of Miletus"
+   ]
+  },
+  {
+   "label": "Themistius",
+   "qid": "Q365183",
+   "fame": 0.188,
+   "also": []
+  },
+  {
+   "label": "Theodoros the Atheist",
+   "qid": "Q381765",
+   "fame": 0.188,
+   "also": [
+    "Theodorus the Atheist",
+    "Theodorus",
+    "Theodorus of Cyrene"
+   ]
+  },
+  {
+   "label": "Wang Bi",
+   "qid": "Q459865",
+   "fame": 0.188,
+   "also": [
+    "Wang Pi"
+   ]
+  },
+  {
+   "label": "Melissus of Samos",
+   "qid": "Q233711",
+   "fame": 0.187,
+   "also": [
+    "Melissos"
+   ]
+  },
+  {
+   "label": "Strato of Lampsacus",
+   "qid": "Q316353",
+   "fame": 0.187,
+   "also": [
+    "Straton of Lampsakos"
+   ]
+  },
+  {
+   "label": "Arcesilaus",
+   "qid": "Q73527",
+   "fame": 0.185,
+   "also": [
+    "Arcesilaus of Pitane"
+   ]
+  },
+  {
+   "label": "Timaeus of Locri",
+   "qid": "Q176287",
+   "fame": 0.184,
+   "also": [
+    "Timaeus",
+    "Timaeus of Locres"
+   ]
+  },
+  {
+   "label": "Diogenes of Babylon",
+   "qid": "Q434203",
+   "fame": 0.182,
+   "also": [
+    "Diogenes of Seleuceia",
+    "Diogenes the Stoic"
+   ]
+  },
+  {
+   "label": "Panaetius",
+   "qid": "Q297420",
+   "fame": 0.182,
+   "also": [
+    "Panaetius of Rhodes"
+   ]
+  },
+  {
+   "label": "Diogenes of Apollonia",
+   "qid": "Q191964",
+   "fame": 0.177,
+   "also": []
+  },
+  {
+   "label": "Ji Kang",
+   "qid": "Q468712",
+   "fame": 0.174,
+   "also": [
+    "Xikang",
+    "Shuye",
+    "Ji zhongsan"
+   ]
+  },
+  {
+   "label": "Cratylus",
+   "qid": "Q125247",
+   "fame": 0.172,
+   "also": [
+    "Cratylus of Athens"
+   ]
+  },
+  {
+   "label": "Hippias",
+   "qid": "Q210573",
+   "fame": 0.17,
+   "also": [
+    "Hippias of Elis"
+   ]
+  },
+  {
+   "label": "Junius Rusticus",
+   "qid": "Q18999",
+   "fame": 0.17,
+   "also": [
+    "Quintus Iunius Rusticus",
+    "Quintus Junius Rusticus"
+   ]
+  },
+  {
+   "label": "Timon of Phlius",
+   "qid": "Q280872",
+   "fame": 0.167,
+   "also": []
+  },
+  {
+   "label": "Aryadeva",
+   "qid": "Q558275",
+   "fame": 0.166,
+   "also": [
+    "Āryadevapāda"
+   ]
+  },
+  {
+   "label": "Olympiodorus the Younger",
+   "qid": "Q974775",
+   "fame": 0.165,
+   "also": [
+    "Olympiodorus of Alexandria the Younger"
+   ]
+  },
+  {
+   "label": "Philo of Larissa",
+   "qid": "Q365110",
+   "fame": 0.163,
+   "also": []
+  },
+  {
+   "label": "Theaetetus",
+   "qid": "Q920912",
+   "fame": 0.163,
+   "also": [
+    "Teatetus Atoneli"
+   ]
+  },
+  {
+   "label": "Ammonius Hermiae",
+   "qid": "Q123147",
+   "fame": 0.162,
+   "also": [
+    "Ammonius of Alexandria"
+   ]
+  },
+  {
+   "label": "Menippus",
+   "qid": "Q452077",
+   "fame": 0.161,
+   "also": [
+    "Menippus of Gadara"
+   ]
+  },
+  {
+   "label": "Stilpo",
+   "qid": "Q381048",
+   "fame": 0.161,
+   "also": [
+    "Stilpon",
+    "Stilpo of Megara"
+   ]
+  },
+  {
+   "label": "Shen Buhai",
+   "qid": "Q559421",
+   "fame": 0.16,
+   "also": []
+  },
+  {
+   "label": "Arete of Cyrene",
+   "qid": "Q262225",
+   "fame": 0.154,
+   "also": [
+    "Arete"
+   ]
+  },
+  {
+   "label": "Andronicus of Rhodes",
+   "qid": "Q352988",
+   "fame": 0.151,
+   "also": [
+    "Andronicus Rhodius"
+   ]
+  },
+  {
+   "label": "Lie Yukou",
+   "qid": "Q2984064",
+   "fame": 0.151,
+   "also": []
+  },
+  {
+   "label": "Seleucus of Seleucia",
+   "qid": "Q139798",
+   "fame": 0.151,
+   "also": [
+    "Seleucus of Babylon",
+    "Seleucus van Seleucia",
+    "Seleukos of Seleukeia"
+   ]
+  },
+  {
+   "label": "Zou Yan",
+   "qid": "Q227022",
+   "fame": 0.151,
+   "also": []
+  },
+  {
+   "label": "Gongsun Long",
+   "qid": "Q1362266",
+   "fame": 0.149,
+   "also": []
+  },
+  {
+   "label": "Jia Yi",
+   "qid": "Q301650",
+   "fame": 0.149,
+   "also": []
+  },
+  {
+   "label": "Eudemus of Rhodes",
+   "qid": "Q358482",
+   "fame": 0.148,
+   "also": []
+  },
+  {
+   "label": "Julius Pollux",
+   "qid": "Q548104",
+   "fame": 0.148,
+   "also": [
+    "Pollux",
+    "Iulius Pollux"
+   ]
+  },
+  {
+   "label": "Diodorus Cronus",
+   "qid": "Q715478",
+   "fame": 0.147,
+   "also": []
+  },
+  {
+   "label": "Liu Xin",
+   "qid": "Q453449",
+   "fame": 0.147,
+   "also": [
+    "Liu Hsin"
+   ]
+  },
+  {
+   "label": "Archelaus",
+   "qid": "Q343607",
+   "fame": 0.146,
+   "also": [
+    "Archelaus of Athens"
+   ]
+  },
+  {
+   "label": "Eunapius",
+   "qid": "Q343018",
+   "fame": 0.146,
+   "also": []
+  },
+  {
+   "label": "Yang Xiong",
+   "qid": "Q553520",
+   "fame": 0.145,
+   "also": [
+    "Yang Hsiung"
+   ]
+  },
+  {
+   "label": "Dicaearchus",
+   "qid": "Q352621",
+   "fame": 0.143,
+   "also": [
+    "Dicearchus of Messene",
+    "Dicaearchus of Messene"
+   ]
+  },
+  {
+   "label": "Olympiodorus of Thebes",
+   "qid": "Q506553",
+   "fame": 0.143,
+   "also": [
+    "Olympiodorus"
+   ]
+  },
+  {
+   "label": "Myson of Chenae",
+   "qid": "Q920354",
+   "fame": 0.142,
+   "also": []
+  },
+  {
+   "label": "Ruan Ji",
+   "qid": "Q142683",
+   "fame": 0.142,
+   "also": []
+  },
+  {
+   "label": "Peter the Iberian",
+   "qid": "Q928092",
+   "fame": 0.136,
+   "also": []
+  },
+  {
+   "label": "Alcidamas",
+   "qid": "Q444459",
+   "fame": 0.131,
+   "also": [
+    "Alkidamas",
+    "Alcidamante"
+   ]
+  },
+  {
+   "label": "Ariston of Chios",
+   "qid": "Q646951",
+   "fame": 0.131,
+   "also": [
+    "Aristo of Chios",
+    "Ariston"
+   ]
+  },
+  {
+   "label": "Severianus of Damascus",
+   "qid": "Q95158842",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "Geminus of Rhodos",
+   "qid": "Q379987",
+   "fame": 0.123,
+   "also": [
+    "Geminus",
+    "Geminus of Rhodes"
+   ]
+  },
+  {
+   "label": "Antiphon",
+   "qid": "Q15078686",
+   "fame": 0.12,
+   "also": [
+    "Sophistic works of Antiphon",
+    "Antiphon Sophist"
+   ]
+  },
+  {
+   "label": "Theon of Smyrna",
+   "qid": "Q705950",
+   "fame": 0.119,
+   "also": []
+  },
+  {
+   "label": "Ploutarchos of Athens",
+   "qid": "Q537304",
+   "fame": 0.117,
+   "also": [
+    "Plutarch of Athens"
+   ]
+  },
+  {
+   "label": "Aniruddha",
+   "qid": "Q3306373",
+   "fame": 0.116,
+   "also": []
+  },
+  {
+   "label": "Agatharchides",
+   "qid": "Q391216",
+   "fame": 0.112,
+   "also": [
+    "Agatharchus",
+    "Agatharchides of Cnidus",
+    "Agatharchus of Cnidus"
+   ]
+  },
+  {
+   "label": "Cebes",
+   "qid": "Q965144",
+   "fame": 0.112,
+   "also": [
+    "Cebes of Thebes"
+   ]
+  },
+  {
+   "label": "Zeno of Sidon",
+   "qid": "Q189759",
+   "fame": 0.112,
+   "also": [
+    "Zeno"
+   ]
+  },
+  {
+   "label": "Lucius Annaeus Cornutus",
+   "qid": "Q507036",
+   "fame": 0.11,
+   "also": [
+    "Cornutus"
+   ]
+  },
+  {
+   "label": "Syrianus",
+   "qid": "Q1373037",
+   "fame": 0.11,
+   "also": []
+  },
+  {
+   "label": "Sosigenes of Alexandria",
+   "qid": "Q316867",
+   "fame": 0.109,
+   "also": [
+    "Sosigenes"
+   ]
+  },
+  {
+   "label": "Huiyuan",
+   "qid": "Q1194206",
+   "fame": 0.106,
+   "also": [
+    "Lushan Huiyuan",
+    "Huiyuan of Mount Lu",
+    "Eon"
+   ]
+  },
+  {
+   "label": "Ion of Chios",
+   "qid": "Q162163",
+   "fame": 0.106,
+   "also": []
+  },
+  {
+   "label": "Bion of Borysthenes",
+   "qid": "Q359231",
+   "fame": 0.104,
+   "also": []
+  },
+  {
+   "label": "Aedesia",
+   "qid": "Q2382393",
+   "fame": 0.103,
+   "also": []
+  },
+  {
+   "label": "Nigidius Figulus",
+   "qid": "Q175042",
+   "fame": 0.1,
+   "also": [
+    "Publius Nigidius Figulus"
+   ]
+  },
+  {
+   "label": "Polemon of Laodicea",
+   "qid": "Q772775",
+   "fame": 0.095,
+   "also": [
+    "Antonius Polemon",
+    "Marcus Antonius Polemon",
+    "Polemon of Smyrna"
+   ]
+  },
+  {
+   "label": "Zacharias Rhetor",
+   "qid": "Q139567",
+   "fame": 0.095,
+   "also": [
+    "Zacharias of Mytilene",
+    "Zacharias Scholasticus"
+   ]
+  },
+  {
+   "label": "Aeschines of Sphettus",
+   "qid": "Q409647",
+   "fame": 0.091,
+   "also": [
+    "Aeschines Socraticus"
+   ]
+  },
+  {
+   "label": "Epicharmus of Kos",
+   "qid": "Q312410",
+   "fame": 0.091,
+   "also": [
+    "Epicharmus of Cos",
+    "Epicharmus",
+    "Epicharmus of Syracuse"
+   ]
+  },
+  {
+   "label": "Clitomachus",
+   "qid": "Q466951",
+   "fame": 0.09,
+   "also": [
+    "Hasdrubal",
+    "Cleitomachus of Carthage"
+   ]
+  },
+  {
+   "label": "Zoilus",
+   "qid": "Q218451",
+   "fame": 0.089,
+   "also": [
+    "Zoilus of Amphipolis"
+   ]
+  },
+  {
+   "label": "Amelius",
+   "qid": "Q248624",
+   "fame": 0.088,
+   "also": [
+    "Amelius Gentilianus",
+    "Amerius Gentilianus"
+   ]
+  },
+  {
+   "label": "Hierocles of Alexandria",
+   "qid": "Q248840",
+   "fame": 0.088,
+   "also": []
+  },
+  {
+   "label": "Crantor",
+   "qid": "Q434773",
+   "fame": 0.087,
+   "also": [
+    "Crantor of Soli"
+   ]
+  },
+  {
+   "label": "Polemon",
+   "qid": "Q553856",
+   "fame": 0.085,
+   "also": [
+    "Polemon of Athens"
+   ]
+  },
+  {
+   "label": "Zeno of Tarsus",
+   "qid": "Q189767",
+   "fame": 0.074,
+   "also": []
+  },
+  {
+   "label": "Eznik of Kolb",
+   "qid": "Q281146",
+   "fame": 0.07,
+   "also": [
+    "Eznik Koghbatsʻi",
+    "Yeznik of Kolb",
+    "Eznikê Qulpê"
+   ]
+  },
+  {
+   "label": "Menedemus",
+   "qid": "Q990589",
+   "fame": 0.07,
+   "also": [
+    "Menedemus of Eretria"
+   ]
+  },
+  {
+   "label": "Asclepigenia",
+   "qid": "Q586050",
+   "fame": 0.061,
+   "also": [
+    "Asklepigeneia"
+   ]
+  },
+  {
+   "label": "Eutocius of Ascalon",
+   "qid": "Q510719",
+   "fame": 0.061,
+   "also": []
+  },
+  {
+   "label": "Hermarchus",
+   "qid": "Q542808",
+   "fame": 0.061,
+   "also": [
+    "Hermarchus of Mytilene"
+   ]
+  },
+  {
+   "label": "Hippon",
+   "qid": "Q716416",
+   "fame": 0.059,
+   "also": [
+    "Hippo"
+   ]
+  },
+  {
+   "label": "Crates of Athens",
+   "qid": "Q712755",
+   "fame": 0.044,
+   "also": []
+  },
+  {
+   "label": "Sallustius",
+   "qid": "Q782401",
+   "fame": 0.013,
+   "also": []
+  },
+  {
+   "label": "Lucius Aelius Stilo Praeconinus",
+   "qid": "Q561367",
+   "fame": 0.008,
+   "also": [
+    "Lucius Aelius Praeconinus Stilo"
+   ]
+  }
+ ]
+}

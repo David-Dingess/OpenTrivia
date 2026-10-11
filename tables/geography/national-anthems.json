@@ -1,0 +1,389 @@
+{
+ "id": "table.geography.national-anthems",
+ "kind": "table",
+ "title": "Countries and their national anthems",
+ "genre": "society",
+ "category": "geography",
+ "topic": "flags-and-symbols",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?anthemLabel WHERE { { SELECT ?item (SAMPLE(?a) AS ?anthem) (COUNT(DISTINCT ?a) AS ?n) WHERE { ?item wdt:P31 wd:Q3624078 . FILTER NOT EXISTS { ?item wdt:P31 wd:Q3024240 } FILTER NOT EXISTS { ?item wdt:P576 [] } ?item wdt:P85 ?a . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?n = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T13:57:48.898Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T13:57:48.898Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "anthem",
+   "label": "National anthem",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "country",
+  "many": "countries",
+  "minFame": 0.5,
+  "wildcard": "place",
+  "columns": {
+   "anthem": {
+    "role": "code",
+    "pick": "What is the national anthem of {label}?",
+    "statement": "The national anthem of {label} is {value}.",
+    "match": "Match each country to its national anthem.",
+    "typeIt": "Which country has the national anthem {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "United States",
+   "qid": "Q30",
+   "fame": 0.932,
+   "anthem": "The Star-Spangled Banner",
+   "description": "country located primarily in North America",
+   "hook": "is home to Hollywood, Wall Street and the Grand Canyon",
+   "known": 0.8,
+   "kind": "american"
+  },
+  {
+   "label": "United Kingdom",
+   "qid": "Q145",
+   "fame": 0.829,
+   "anthem": "God Save the King",
+   "description": "island country in north-west Europe",
+   "hook": "is home to Big Ben, Stonehenge and the royal residence of Buckingham Palace",
+   "known": 0.6,
+   "kind": "western europe"
+  },
+  {
+   "label": "India",
+   "qid": "Q668",
+   "fame": 0.815,
+   "anthem": "Jana Gana Mana",
+   "description": "country in South Asia",
+   "hook": null,
+   "known": 0.2,
+   "kind": "south asia"
+  },
+  {
+   "label": "China",
+   "qid": "Q148",
+   "fame": 0.799,
+   "anthem": "March of the Volunteers",
+   "description": "country in East Asia",
+   "hook": null,
+   "known": 0.2,
+   "kind": "east asia"
+  },
+  {
+   "label": "Canada",
+   "qid": "Q16",
+   "fame": 0.793,
+   "anthem": "O Canada",
+   "description": "country in North America",
+   "hook": "is famous for maple syrup, ice hockey and Niagara Falls on its border",
+   "known": 0.6,
+   "kind": "american"
+  },
+  {
+   "label": "Japan",
+   "qid": "Q17",
+   "fame": 0.779,
+   "anthem": "Kimigayo",
+   "description": "island country in East Asia",
+   "hook": "is known for sushi, bullet trains and the snow-capped peak of Mount Fuji",
+   "known": 0.4,
+   "kind": "east asia"
+  },
+  {
+   "label": "Nepal",
+   "qid": "Q837",
+   "fame": 0.771,
+   "anthem": "Sayaun Thunga Phulka",
+   "description": "country in South Asia",
+   "hook": null,
+   "known": 0.05,
+   "kind": "south asia"
+  },
+  {
+   "label": "Turkey",
+   "qid": "Q43",
+   "fame": 0.761,
+   "anthem": "İstiklâl Marşı",
+   "description": "country in West Asia and Southeast Europe",
+   "hook": null,
+   "known": 0.2,
+   "kind": "west asia"
+  },
+  {
+   "label": "France",
+   "qid": "Q142",
+   "fame": 0.76,
+   "anthem": "La Marseillaise",
+   "description": "country in Western Europe and other continents (through its overseas territories in America, Africa and Oceania)",
+   "hook": "is known for the Eiffel Tower, the Louvre museum and fine wine and cheese",
+   "known": 0.8,
+   "kind": "western europe"
+  },
+  {
+   "label": "Philippines",
+   "qid": "Q928",
+   "fame": 0.757,
+   "anthem": "Lupang Hinirang",
+   "description": "archipelagic country in Southeast Asia",
+   "hook": null,
+   "known": 0.2,
+   "kind": "southeast asia"
+  },
+  {
+   "label": "Indonesia",
+   "qid": "Q252",
+   "fame": 0.754,
+   "anthem": "Indonesia Raya",
+   "description": "island country in Southeast Asia and Oceania",
+   "hook": null,
+   "known": 0.2,
+   "kind": "southeast asia"
+  },
+  {
+   "label": "Spain",
+   "qid": "Q29",
+   "fame": 0.746,
+   "anthem": "Marcha Real",
+   "description": "country in southwestern Europe with territories in Africa",
+   "hook": null,
+   "known": 0.2,
+   "kind": "western europe"
+  },
+  {
+   "label": "Pakistan",
+   "qid": "Q843",
+   "fame": 0.744,
+   "anthem": "Qaumi Taranah",
+   "description": "sovereign state in South Asia",
+   "hook": null,
+   "known": 0.05,
+   "kind": "south asia"
+  },
+  {
+   "label": "Italy",
+   "qid": "Q38",
+   "fame": 0.742,
+   "anthem": "Il Canto degli Italiani",
+   "description": "country in southern Europe",
+   "hook": "is the birthplace of pizza and pasta and home to the Colosseum",
+   "known": 0.4,
+   "kind": "western europe"
+  },
+  {
+   "label": "Malaysia",
+   "qid": "Q833",
+   "fame": 0.739,
+   "anthem": "Negaraku",
+   "description": "country in Southeast Asia",
+   "hook": null,
+   "known": 0.2,
+   "kind": "southeast asia"
+  },
+  {
+   "label": "Czech Republic",
+   "qid": "Q213",
+   "fame": 0.737,
+   "anthem": "Kde domov můj",
+   "description": "country in Central Europe",
+   "hook": null,
+   "known": 0.05,
+   "kind": "central europe"
+  },
+  {
+   "label": "Norway",
+   "qid": "Q20",
+   "fame": 0.734,
+   "anthem": "Ja, vi elsker dette landet",
+   "description": "country in Northern Europe",
+   "hook": null,
+   "known": 0.2,
+   "kind": "northern europe"
+  },
+  {
+   "label": "Vietnam",
+   "qid": "Q881",
+   "fame": 0.733,
+   "anthem": "Tiến Quân Ca",
+   "description": "country in Southeast Asia",
+   "hook": null,
+   "known": 0.2,
+   "kind": "southeast asia"
+  },
+  {
+   "label": "Sweden",
+   "qid": "Q34",
+   "fame": 0.732,
+   "anthem": "Du gamla, du fria",
+   "description": "country in Northern Europe",
+   "hook": null,
+   "known": 0.2,
+   "kind": "northern europe"
+  },
+  {
+   "label": "Bangladesh",
+   "qid": "Q902",
+   "fame": 0.724,
+   "anthem": "Amar Sonar Bangla",
+   "description": "country in South Asia",
+   "hook": null,
+   "known": 0.05,
+   "kind": "south asia"
+  },
+  {
+   "label": "South Korea",
+   "qid": "Q884",
+   "fame": 0.721,
+   "anthem": "Aegukga",
+   "description": "country in East Asia",
+   "hook": "is known for K-pop, kimchi and the Samsung phones made there",
+   "known": 0.4,
+   "kind": "east asia"
+  },
+  {
+   "label": "Serbia",
+   "qid": "Q403",
+   "fame": 0.719,
+   "anthem": "Bože pravde",
+   "description": "country in Southeast Europe",
+   "hook": null,
+   "known": 0.05,
+   "kind": "central europe"
+  },
+  {
+   "label": "Egypt",
+   "qid": "Q79",
+   "fame": 0.715,
+   "anthem": "Bilady, Bilady, Bilady",
+   "description": "country in Northeast Africa and Southwest Asia",
+   "hook": "is home to the Great Pyramids of Giza, the Sphinx and the Nile",
+   "known": 0.4,
+   "kind": "african"
+  },
+  {
+   "label": "Croatia",
+   "qid": "Q224",
+   "fame": 0.713,
+   "anthem": "Lijepa naša domovino",
+   "description": "country in Central Europe",
+   "hook": null,
+   "known": 0.05,
+   "kind": "central europe"
+  },
+  {
+   "label": "Morocco",
+   "qid": "Q1028",
+   "fame": 0.71,
+   "anthem": "Cherifian Anthem",
+   "description": "sovereign state in North Africa",
+   "hook": null,
+   "known": 0.05,
+   "kind": "african"
+  },
+  {
+   "label": "Ireland",
+   "qid": "Q27",
+   "fame": 0.707,
+   "anthem": "Amhrán na bhFiann",
+   "description": "country in Northwestern Europe",
+   "hook": "is known for shamrocks, Guinness stout and St. Patrick's Day",
+   "known": 0.4,
+   "kind": "western europe"
+  },
+  {
+   "label": "Belgium",
+   "qid": "Q31",
+   "fame": 0.706,
+   "anthem": "The Brabançonne",
+   "description": "country in western Europe",
+   "hook": null,
+   "known": 0.2,
+   "kind": "western europe"
+  },
+  {
+   "label": "Austria",
+   "qid": "Q40",
+   "fame": 0.703,
+   "anthem": "Land der Berge, Land am Strome",
+   "description": "country in Central Europe",
+   "hook": null,
+   "known": 0.2,
+   "kind": "central europe"
+  },
+  {
+   "label": "Finland",
+   "qid": "Q33",
+   "fame": 0.703,
+   "anthem": "Maamme",
+   "description": "country in Northern Europe",
+   "hook": null,
+   "known": 0.2,
+   "kind": "northern europe"
+  },
+  {
+   "label": "Romania",
+   "qid": "Q218",
+   "fame": 0.703,
+   "anthem": "Deșteaptă-te, române!",
+   "description": "country in Southeast Europe",
+   "hook": null,
+   "known": 0.05,
+   "kind": "central europe"
+  },
+  {
+   "label": "Bulgaria",
+   "qid": "Q219",
+   "fame": 0.689,
+   "anthem": "Mila Rodino",
+   "description": "country in southeast Europe",
+   "hook": null,
+   "known": 0.05,
+   "kind": "central europe"
+  },
+  {
+   "label": "Cuba",
+   "qid": "Q241",
+   "fame": 0.688,
+   "anthem": "El Himno de Bayamo",
+   "description": "sovereign state situated on an island in the Caribbean Sea",
+   "hook": "is a Caribbean island famed for hand-rolled cigars and vintage 1950s American cars",
+   "known": 0.4,
+   "kind": "american"
+  },
+  {
+   "label": "Hungary",
+   "qid": "Q28",
+   "fame": 0.685,
+   "anthem": "Himnusz",
+   "description": "country in Central Europe",
+   "hook": null,
+   "known": 0.05,
+   "kind": "central europe"
+  }
+ ]
+}

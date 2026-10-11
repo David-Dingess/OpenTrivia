@@ -1,0 +1,158 @@
+{
+ "id": "table.geography.largest-deserts",
+ "kind": "table",
+ "title": "Largest deserts",
+ "genre": "society",
+ "category": "geography",
+ "topic": "mountains-and-deserts",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?area WHERE { { SELECT ?item (MAX(?a) AS ?area) WHERE { ?item wdt:P31 wd:Q8514 ; p:P2046/psn:P2046/wikibase:quantityAmount ?a . FILTER(?a >= 50000000000) } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T00:53:06.515Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T00:53:06.515Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "area_km2",
+   "label": "Area",
+   "unit": "km²",
+   "type": "number"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "desert",
+  "many": "deserts",
+  "hookAsk": "Which desert {hook}?",
+  "hookStatement": "The {label} {hook}.",
+  "columns": {
+   "area_km2": {
+    "role": "measure",
+    "compare": "Which is bigger",
+    "display": "km2",
+    "minRatio": 1.5
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Sahara",
+   "qid": "Q6583",
+   "fame": 0.583,
+   "area_km2": 9200000,
+   "description": "desert on the African continent",
+   "hook": "is the largest hot expanse of sand and rock on Earth, nearly as big as a continent",
+   "known": 0.95,
+   "kind": "desert"
+  },
+  {
+   "label": "Atacama Desert",
+   "qid": "Q47141",
+   "fame": 0.554,
+   "area_km2": 181300,
+   "description": "desert in South America",
+   "hook": "is the driest non-polar place on Earth, where rain almost never falls",
+   "known": 0.6,
+   "kind": "desert"
+  },
+  {
+   "label": "Gobi Desert",
+   "qid": "Q42070",
+   "fame": 0.538,
+   "area_km2": 2354460,
+   "description": "desert in China and Mongolia",
+   "hook": "is a cold, rocky expanse where dinosaur fossils and eggs have been unearthed",
+   "known": 0.6,
+   "kind": "desert"
+  },
+  {
+   "label": "Sinai Peninsula",
+   "qid": "Q36755",
+   "fame": 0.538,
+   "area_km2": 60000,
+   "description": "peninsula in the Red Sea",
+   "hook": "sits between two seas and forms a bridge between two continents",
+   "known": 0.6,
+   "kind": "desert"
+  },
+  {
+   "label": "Mojave Desert",
+   "qid": "Q184355",
+   "fame": 0.535,
+   "area_km2": 124000,
+   "description": "desert in southwestern United States",
+   "hook": "is home to Death Valley, one of the hottest places on Earth",
+   "known": 0.6,
+   "kind": "desert"
+  },
+  {
+   "label": "Sonoran Desert",
+   "qid": "Q189429",
+   "fame": 0.486,
+   "area_km2": 310800,
+   "description": "desert in northwestern Mexico and the southwestern United States",
+   "hook": "is famous for its towering saguaro cacti with upraised arms",
+   "known": 0.4,
+   "kind": "desert"
+  },
+  {
+   "label": "Taklamakan",
+   "qid": "Q132956",
+   "fame": 0.483,
+   "area_km2": 337000,
+   "description": "desert in Xinjiang Uyghur Autonomous Region, China",
+   "hook": "is a vast sea of shifting sand dunes along the ancient Silk Road",
+   "known": 0.2,
+   "kind": "desert"
+  },
+  {
+   "label": "Thar Desert",
+   "qid": "Q172691",
+   "fame": 0.474,
+   "area_km2": 200000,
+   "description": "large, arid region in India and Pakistan",
+   "hook": "stretches along the border between two South Asian nations, dotted with sand dunes",
+   "known": 0.2,
+   "kind": "desert"
+  },
+  {
+   "label": "Kalahari Desert",
+   "qid": "Q47700",
+   "fame": 0.473,
+   "area_km2": 930000,
+   "description": "desert in southern Africa",
+   "hook": "is home to red sand dunes and hardy wildlife like meerkats",
+   "known": 0.6,
+   "kind": "desert"
+  },
+  {
+   "label": "Rub' al Khali",
+   "qid": "Q229269",
+   "fame": 0.455,
+   "area_km2": 680000,
+   "description": "desert",
+   "hook": "is one of the largest continuous stretches of sand on Earth, nearly the size of France",
+   "known": 0.2,
+   "kind": "desert"
+  }
+ ]
+}

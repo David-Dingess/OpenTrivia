@@ -1,0 +1,209 @@
+{
+ "id": "table.inventions.inventors-inventions",
+ "kind": "table",
+ "title": "Famous inventors and what they invented",
+ "genre": "science-math-tech",
+ "category": "inventions",
+ "topic": "inventors",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?invLabel WHERE { { SELECT ?item (SAMPLE(?v) AS ?inv) (COUNT(DISTINCT ?v) AS ?nV) WHERE { { SELECT ?item (MAX(?vs) AS ?mx) WHERE { ?item wdt:P31 wd:Q5 ; wdt:P106 wd:Q205375 . ?w wdt:P61 ?item ; wikibase:sitelinks ?vs . } GROUP BY ?item } ?v wdt:P61 ?item ; wikibase:sitelinks ?mx . FILTER(?mx >= 25) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nV = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T18:15:06.538Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T18:15:06.538Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "invention",
+   "label": "Invention",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "inventor",
+  "many": "inventors",
+  "hookAsk": "Which inventor {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "invention": {
+    "role": "code",
+    "pick": "What is {label} credited with inventing?",
+    "statement": "{label} is credited with inventing {value}.",
+    "match": "Match each inventor to their invention.",
+    "reverse": "Which of these inventors is known for {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Hedy Lamarr",
+   "qid": "Q49034",
+   "fame": 0.671,
+   "invention": "spread spectrum",
+   "description": "Austrian-American actress and co-inventor of an early technique for spread spectrum communications and frequency hopping (1914-2000)",
+   "hook": "starred in Hollywood films while co-developing a secret radio-guidance technique for torpedoes",
+   "known": 0.2,
+   "kind": "electrical"
+  },
+  {
+   "label": "Thomas Edison",
+   "qid": "Q8743",
+   "fame": 0.668,
+   "invention": "incandescent light bulb",
+   "description": "American inventor and businessman (1847–1931)",
+   "hook": "was nicknamed the Wizard of Menlo Park and patented over a thousand devices, including the phonograph",
+   "known": 0.95,
+   "kind": "electrical"
+  },
+  {
+   "label": "Tim Berners-Lee",
+   "qid": "Q80",
+   "fame": 0.613,
+   "invention": "HTML",
+   "description": "English computer scientist (born 1955)",
+   "hook": "launched the first website and proposed the World Wide Web while working at CERN",
+   "known": 0.5,
+   "kind": "software"
+  },
+  {
+   "label": "Alfred Nobel",
+   "qid": "Q23810",
+   "fame": 0.56,
+   "invention": "dynamite",
+   "description": "Swedish chemist and inventor (1833–1896)",
+   "hook": "left his fortune to fund yearly prizes for peace, physics, literature and more",
+   "known": 0.85,
+   "kind": "chemical"
+  },
+  {
+   "label": "Johannes Gutenberg",
+   "qid": "Q8958",
+   "fame": 0.549,
+   "invention": "printing press",
+   "description": "German inventor and craftsman (1400-1468)",
+   "hook": "produced a famous Bible in Mainz using movable metal type",
+   "known": 0.9,
+   "kind": "mechanical"
+  },
+  {
+   "label": "Ruth Handler",
+   "qid": "Q242034",
+   "fame": 0.528,
+   "invention": "Barbie",
+   "description": "American businesswoman",
+   "hook": "co-founded the toy company Mattel and created its best-known fashion doll",
+   "known": 0.6,
+   "kind": "product"
+  },
+  {
+   "label": "Gerardus Mercator",
+   "qid": "Q6353",
+   "fame": 0.524,
+   "invention": "Mercator projection",
+   "description": "Flemish geographer, cosmographer and cartographer (1512–1594)",
+   "hook": "drew a famous world map style that stretches lands near the poles and helped sailors navigate",
+   "known": 0.3,
+   "kind": "mapping"
+  },
+  {
+   "label": "Jonas Salk",
+   "qid": "Q200101",
+   "fame": 0.522,
+   "invention": "polio vaccine",
+   "description": "Jewish-American inventor of polio vaccine (1914–1995)",
+   "hook": "developed the first widely used shot that protected children from a crippling disease",
+   "known": 0.85,
+   "kind": "medical"
+  },
+  {
+   "label": "John Harvey Kellogg",
+   "qid": "Q380036",
+   "fame": 0.521,
+   "invention": "corn flakes",
+   "description": "American physician (1852–1943)",
+   "hook": "ran a Michigan sanitarium and helped create a famous breakfast cereal with his brother",
+   "known": 0.5,
+   "kind": "product"
+  },
+  {
+   "label": "Richard Stallman",
+   "qid": "Q7439",
+   "fame": 0.52,
+   "invention": "copyleft",
+   "description": "American software freedom activist, short story writer and computer programmer, founder of the GNU project",
+   "hook": "launched the free software movement and founded the GNU project",
+   "known": 0.05,
+   "kind": "software"
+  },
+  {
+   "label": "James Naismith",
+   "qid": "Q188962",
+   "fame": 0.504,
+   "invention": "basketball",
+   "description": "Canadian-American coach; inventor of basketball",
+   "hook": "created a winter game for restless students, scoring by tossing a ball into elevated peach baskets",
+   "known": 0.7,
+   "kind": "sport"
+  },
+  {
+   "label": "Alessandro Volta",
+   "qid": "Q680",
+   "fame": 0.472,
+   "invention": "battery",
+   "description": "Italian chemist and physicist (1745–1827)",
+   "hook": "stacked zinc and copper discs to produce the first steady flow of electric current",
+   "known": 0.5,
+   "kind": "electrical"
+  },
+  {
+   "label": "John Pemberton",
+   "qid": "Q215959",
+   "fame": 0.472,
+   "invention": "Coca-Cola",
+   "description": "American pharmacist, inventor of Coca-Cola (1831-1888)",
+   "hook": "was an Atlanta pharmacist who created a famous fizzy soft drink",
+   "known": 0.4,
+   "kind": "product"
+  },
+  {
+   "label": "Eli Whitney",
+   "qid": "Q280930",
+   "fame": 0.464,
+   "invention": "cotton gin",
+   "description": "American inventor (1765-1825)",
+   "hook": "built a machine that sped up cleaning a Southern cash crop and championed interchangeable musket parts",
+   "known": 0.6,
+   "kind": "mechanical"
+  },
+  {
+   "label": "Dean Kamen",
+   "qid": "Q720457",
+   "fame": 0.454,
+   "invention": "Segway PT",
+   "description": "American businessman",
+   "hook": "created a two-wheeled self-balancing scooter and founded a youth robotics competition",
+   "known": 0.2,
+   "kind": "mechanical"
+  }
+ ]
+}

@@ -1,0 +1,181 @@
+{
+ "id": "table.getting-around.famous-journeys",
+ "kind": "table",
+ "title": "Famous journeys and where they run",
+ "genre": "daily-life",
+ "category": "getting-around",
+ "topic": "canals-and-routes",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?co) AS ?country) (COUNT(DISTINCT ?co) AS ?n) WHERE { VALUES ?item { wd:Q58767 wd:Q620648 wd:Q862312 wd:Q6014019 wd:Q7350 wd:Q899 wd:Q459578 wd:Q2003736 wd:Q12501 wd:Q1856887 wd:Q379356 wd:Q1026956 wd:Q936593 wd:Q1193928 wd:Q661561 wd:Q693398 wd:Q189417 wd:Q144825 wd:Q31347 wd:Q202494 wd:Q182873 wd:Q651323 wd:Q14348 wd:Q559037 wd:Q1432750 wd:Q233283 wd:Q3434548 wd:Q967917 wd:Q642700 wd:Q477217 wd:Q876870 wd:Q1467414 wd:Q81136 wd:Q21707256 wd:Q2160819 wd:Q373845 wd:Q197764 wd:Q225313 wd:Q162835 wd:Q924225 wd:Q458111 wd:Q491216 wd:Q673819 wd:Q24777 wd:Q1154479 wd:Q963514 wd:Q1972399 wd:Q17050475 wd:Q41150 wd:Q542830 wd:Q311252 wd:Q16853596 wd:Q1757200 wd:Q23042024 wd:Q1201703 wd:Q300701 wd:Q217099 wd:Q36288 wd:Q239574 wd:Q754999 wd:Q220796 wd:Q1199700 wd:Q2903677 wd:Q1061576 wd:Q628076 wd:Q191985 wd:Q1361233 wd:Q2055880 } ?item wdt:P17 ?co . } GROUP BY ?item HAVING(?n = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T13:40:31.049Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T14:05:00.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "famous route",
+  "many": "famous routes",
+  "minFame": 0.45,
+  "hookAsk": "Which famous route {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each famous route to the country it is in.",
+    "odd": "Three of these famous routes are in {value}. Which one isn't?",
+    "all": "Tap all {n} famous routes in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Suez Canal",
+   "qid": "Q899",
+   "fame": 0.63,
+   "country": "Egypt",
+   "description": "artificial sea-level waterway in Egypt",
+   "hook": "joins the Mediterranean to the Red Sea, saving ships the long trip around Africa",
+   "known": 0.95,
+   "kind": "canal"
+  },
+  {
+   "label": "Panama Canal",
+   "qid": "Q7350",
+   "fame": 0.614,
+   "country": "Panama",
+   "description": "large canal in Panama",
+   "hook": "lifts ships over a continental divide through giant locks, linking the Atlantic and Pacific",
+   "known": 0.95,
+   "kind": "canal"
+  },
+  {
+   "label": "Oregon Trail",
+   "qid": "Q862312",
+   "fame": 0.576,
+   "country": "United States",
+   "description": "historic migration route spanning Independence, MO–Oregon City, OR",
+   "hook": "carried covered-wagon pioneers west from Missouri in the 1800s",
+   "known": 0.6,
+   "kind": "trail"
+  },
+  {
+   "label": "Appalachian Trail",
+   "qid": "Q620648",
+   "fame": 0.563,
+   "country": "United States",
+   "description": "2,198.4-mile (3,538 km) trail going through fourteen US states managed by the National Park Service",
+   "hook": "is a famous hiking-only footpath running from Georgia to Maine",
+   "known": 0.4,
+   "kind": "trail"
+  },
+  {
+   "label": "Erie Canal",
+   "qid": "Q459578",
+   "fame": 0.538,
+   "country": "United States",
+   "description": "canal in New York State",
+   "hook": "linked the Hudson River to the Great Lakes and boosted New York's rise as a trading hub",
+   "known": 0.4,
+   "kind": "canal"
+  },
+  {
+   "label": "Welland Canal",
+   "qid": "Q14348",
+   "fame": 0.523,
+   "country": "Canada",
+   "description": "ship canal in Canada",
+   "hook": null,
+   "known": 0.2,
+   "kind": "canal"
+  },
+  {
+   "label": "Trans-Siberian railway",
+   "qid": "Q58767",
+   "fame": 0.519,
+   "country": "Russia",
+   "description": "railway line between Moscow, the Russian Far East and the Sea of Japan",
+   "hook": "is the longest train line in the world, running from Moscow to Vladivostok",
+   "known": 0.6,
+   "kind": "overland route"
+  },
+  {
+   "label": "Appian Way",
+   "qid": "Q189417",
+   "fame": 0.499,
+   "country": "Italy",
+   "description": "Roman highway from Rome, Italy, to Brundisium 312 BC",
+   "hook": "is the ancient Roman road nicknamed the queen of the long roads",
+   "known": 0.6,
+   "kind": "overland route"
+  },
+  {
+   "label": "Grand Canal",
+   "qid": "Q31347",
+   "fame": 0.496,
+   "country": "China",
+   "description": "longest canal or artificial river in the world located in China",
+   "hook": "is the longest artificial waterway on Earth, linking Beijing with Hangzhou",
+   "known": 0.4,
+   "kind": "canal"
+  },
+  {
+   "label": "Corinth Canal",
+   "qid": "Q182873",
+   "fame": 0.49,
+   "country": "Greece",
+   "description": "canal in Peloponnese, Greece",
+   "hook": null,
+   "known": 0.2,
+   "kind": "canal"
+  },
+  {
+   "label": "Pacific Crest Trail",
+   "qid": "Q2003736",
+   "fame": 0.48,
+   "country": "United States",
+   "description": "long-distance hiking and equestrian trail in the USA",
+   "hook": "runs from the Mexican border to the Canadian border along the Sierra Nevada and Cascades",
+   "known": 0.4,
+   "kind": "trail"
+  },
+  {
+   "label": "Trans-Canada Highway",
+   "qid": "Q1061576",
+   "fame": 0.464,
+   "country": "Canada",
+   "description": "highway and highway system in Canada",
+   "hook": "crosses all ten provinces, from Victoria to St. John's",
+   "known": 0.4,
+   "kind": "overland route"
+  }
+ ]
+}

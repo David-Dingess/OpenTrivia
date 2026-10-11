@@ -1,0 +1,303 @@
+{
+ "id": "table.video-games.consoles",
+ "kind": "table",
+ "title": "Game consoles",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "consoles",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?released ?makerLabel WHERE { { SELECT ?item (SAMPLE(?maker) AS ?maker) (MIN(?d) AS ?released) WHERE { { SELECT ?item ?maker WHERE { ?item wdt:P176 ?maker . { SELECT ?item WHERE { ?game wdt:P400 ?item } GROUP BY ?item HAVING(COUNT(DISTINCT ?game) > 40) } } LIMIT 200 } hint:Prior hint:runFirst true . OPTIONAL { ?item wdt:P577 ?d } FILTER NOT EXISTS { ?item wdt:P31 wd:Q55990535 } FILTER NOT EXISTS { ?item wdt:P31 wd:Q60484681 } FILTER NOT EXISTS { ?item wdt:P31 wd:Q128558762 } FILTER NOT EXISTS { ?item wdt:P31 wd:Q431289 } FILTER NOT EXISTS { ?item wdt:P31 wd:Q19723444 } } GROUP BY ?item LIMIT 150 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-24T23:06:00.213Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-24T23:06:00.213Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "released",
+   "label": "Released",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "maker",
+   "label": "Manufacturer",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "console",
+  "many": "consoles",
+  "hookAsk": "Which console {hook}?",
+  "hookStatement": "The {label} {hook}.",
+  "columns": {
+   "maker": {
+    "role": "link",
+    "pick": "Who makes the {label}?",
+    "statement": "The {label} is made by {value}.",
+    "odd": "Three of these consoles are made by {value}. Which one isn't?",
+    "all": "Tap all {n} consoles made by {value}."
+   },
+   "released": {
+    "role": "date",
+    "sort": "from the first released to the most recent",
+    "era": "Drop each console into the decade it came out.",
+    "eraSize": "decade",
+    "shot": "In what year did the {label} come out?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "PlayStation 3",
+   "qid": "Q10683",
+   "fame": 0.621,
+   "released": 2006,
+   "maker": "Sony Interactive Entertainment",
+   "description": "video game console developed Sony Interactive Entertainment",
+   "hook": "used a sleek black case and struggled with a notoriously hard-to-program processor at launch",
+   "known": 0.8,
+   "kind": "sony"
+  },
+  {
+   "label": "Xbox Series X and Series S",
+   "qid": "Q98973368",
+   "fame": 0.619,
+   "released": 2020,
+   "maker": "Microsoft",
+   "description": "home video game consoles developed by Microsoft",
+   "hook": "comes in two sizes, one built for full 4K power and a smaller, cheaper digital-only version",
+   "known": 0.6,
+   "kind": "microsoft"
+  },
+  {
+   "label": "PlayStation Portable",
+   "qid": "Q170325",
+   "fame": 0.602,
+   "released": 2004,
+   "maker": "Sony Interactive Entertainment",
+   "description": "handheld game console by Sony",
+   "hook": "played movies and music off small proprietary discs alongside its handheld games",
+   "known": 0.6,
+   "kind": "sony"
+  },
+  {
+   "label": "Nintendo Entertainment System",
+   "qid": "Q172742",
+   "fame": 0.599,
+   "released": 1983,
+   "maker": "Nintendo",
+   "description": "third generation home video game console",
+   "hook": "revived a crashed home gaming market with a gray box and a gray zapper gun",
+   "known": 0.95,
+   "kind": "nintendo"
+  },
+  {
+   "label": "Wii",
+   "qid": "Q8079",
+   "fame": 0.597,
+   "released": 2006,
+   "maker": null,
+   "description": "seventh-generation home video game console by Nintendo",
+   "hook": "got whole families waving a motion-sensing remote around the living room together",
+   "known": 0.8,
+   "kind": "nintendo"
+  },
+  {
+   "label": "Nintendo DS",
+   "qid": "Q170323",
+   "fame": 0.594,
+   "released": 2004,
+   "maker": "Nintendo",
+   "description": "Nintendo handheld game console",
+   "hook": "opened with two screens, one of them touch-sensitive, folded shut like a clamshell",
+   "known": 0.8,
+   "kind": "nintendo"
+  },
+  {
+   "label": "Nintendo 3DS",
+   "qid": "Q203597",
+   "fame": 0.589,
+   "released": 2011,
+   "maker": "Nintendo",
+   "description": "portable 3D dual-screen handheld by Nintendo",
+   "hook": "added a glasses-free 3D effect you could dial up or down with a slider",
+   "known": 0.6,
+   "kind": "nintendo"
+  },
+  {
+   "label": "Nintendo GameCube",
+   "qid": "Q182172",
+   "fame": 0.586,
+   "released": 2001,
+   "maker": "Nintendo",
+   "description": "sixth-generation home video game console by Nintendo",
+   "hook": "played its games off small purple disc cartridges shaped like a cube",
+   "known": 0.6,
+   "kind": "nintendo"
+  },
+  {
+   "label": "Nintendo 64",
+   "qid": "Q184839",
+   "fame": 0.583,
+   "released": 1996,
+   "maker": "Nintendo",
+   "description": "fifth-generation home video game console by Nintendo",
+   "hook": "was one of the last major home systems to stick with cartridges instead of discs",
+   "known": 0.8,
+   "kind": "nintendo"
+  },
+  {
+   "label": "Super Nintendo Entertainment System",
+   "qid": "Q183259",
+   "fame": 0.581,
+   "released": 1990,
+   "maker": "Nintendo",
+   "description": "fourth-generation home video game console by Nintendo",
+   "hook": "introduced a wide, rounded gamepad with shoulder buttons and four differently colored face buttons",
+   "known": 0.8,
+   "kind": "nintendo"
+  },
+  {
+   "label": "Game Boy",
+   "qid": "Q186437",
+   "fame": 0.577,
+   "released": 1989,
+   "maker": "Nintendo",
+   "description": "1989 portable video game console",
+   "hook": "ran for dozens of hours on a handful of AA batteries with its dim green-tinted screen",
+   "known": 0.95,
+   "kind": "nintendo"
+  },
+  {
+   "label": "Sega Genesis",
+   "qid": "Q10676",
+   "fame": 0.573,
+   "released": 1988,
+   "maker": null,
+   "description": "fourth-generation home video game console developed by Sega",
+   "hook": "pitched itself against a rival with a blast-processing marketing slogan and an edgy blue mascot",
+   "known": 0.8,
+   "kind": "sega"
+  },
+  {
+   "label": "PlayStation Vita",
+   "qid": "Q188808",
+   "fame": 0.563,
+   "released": 2011,
+   "maker": "Sony Interactive Entertainment",
+   "description": "portable game console developed by Sony Computer Entertainment",
+   "hook": "packed a bright OLED touchscreen and two analog sticks into a slim handheld",
+   "known": 0.4,
+   "kind": "sony"
+  },
+  {
+   "label": "Wii U",
+   "qid": "Q56942",
+   "fame": 0.56,
+   "released": 2012,
+   "maker": "Nintendo",
+   "description": "eighth-generation home video game console by Nintendo",
+   "hook": "paired a traditional controller with a second screen you could hold like a tablet",
+   "known": 0.4,
+   "kind": "nintendo"
+  },
+  {
+   "label": "Atari 2600",
+   "qid": "Q206261",
+   "fame": 0.539,
+   "released": 1977,
+   "maker": "Atari, Inc.",
+   "description": "home video game console by Atari",
+   "hook": "popularized the plug-in cartridge format for home gaming rooms everywhere",
+   "known": 0.8,
+   "kind": "atari"
+  },
+  {
+   "label": "Game Boy Color",
+   "qid": "Q203992",
+   "fame": 0.525,
+   "released": 1998,
+   "maker": "Nintendo",
+   "description": "handheld Nintendo video game console introduced in 1998",
+   "hook": "finally brought a full-spectrum display to a wildly popular black-and-green handheld line",
+   "known": 0.6,
+   "kind": "nintendo"
+  },
+  {
+   "label": "TurboGrafx-16",
+   "qid": "Q1057377",
+   "fame": 0.486,
+   "released": 1987,
+   "maker": "NEC",
+   "description": "fourth-generation home video game console",
+   "hook": "was marketed as the first sixteen-bit home system, beating bulkier rivals to market",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Nintendo DSi",
+   "qid": "Q637178",
+   "fame": 0.471,
+   "released": 2008,
+   "maker": "Nintendo",
+   "description": "handheld game console by Nintendo",
+   "hook": "added two screens and a built-in camera to a handheld line, letting you snap and edit photos on the go",
+   "known": 0.4,
+   "kind": "nintendo"
+  },
+  {
+   "label": "Game & Watch series",
+   "qid": "Q215034",
+   "fame": 0.47,
+   "released": 1980,
+   "maker": "Nintendo",
+   "description": "handheld electronic game series developed and published by Nintendo between 1980 and 1991",
+   "hook": "packed a single built-in activity into a credit-card-sized handheld with a tiny LCD screen",
+   "known": 0.4,
+   "kind": "nintendo"
+  },
+  {
+   "label": "Neo Geo",
+   "qid": "Q1054350",
+   "fame": 0.466,
+   "released": 1990,
+   "maker": "SNK",
+   "description": "cartridge-based arcade system board and home video game console developed by SNK",
+   "hook": "brought arcade-quality games home, famous for its very expensive cartridges",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Atari Jaguar",
+   "qid": "Q650601",
+   "fame": 0.457,
+   "released": 1993,
+   "maker": "Atari Corporation",
+   "description": "Fifth-generation home video game console by Atari",
+   "hook": "was pitched as the first 64-bit home system but flopped despite the marketing claim",
+   "known": 0.2,
+   "kind": "atari"
+  }
+ ]
+}

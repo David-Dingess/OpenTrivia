@@ -1,0 +1,115 @@
+{
+ "id": "table.geography.emergency-numbers",
+ "kind": "table",
+ "title": "Main emergency phone numbers",
+ "genre": "society",
+ "category": "geography",
+ "topic": "flags-and-symbols",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Hand-built, checked row by row against English Wikipedia",
+  "method": null,
+  "attribution": null,
+  "fetchedAt": "2026-09-25T03:49:18.408Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-26T00:00:00.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "number",
+   "label": "Emergency number",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "country",
+  "many": "countries",
+  "columns": {
+   "number": {
+    "role": "link",
+    "pick": "What number do you call in an emergency in {label}?",
+    "statement": "In {label}, the emergency number is {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "United States",
+   "qid": "Q30",
+   "fame": 0.9,
+   "number": "911",
+   "description": "country located primarily in North America",
+   "hook": "is home to the Statue of Liberty, Hollywood, and the Grand Canyon",
+   "known": 0.95,
+   "kind": "emergency"
+  },
+  {
+   "label": "Canada",
+   "qid": "Q16",
+   "fame": 0.7,
+   "number": "911",
+   "description": "country in North America",
+   "hook": "is known for maple syrup, ice hockey, and vast snowy wilderness",
+   "known": 0.95,
+   "kind": "emergency"
+  },
+  {
+   "label": "United Kingdom",
+   "qid": "Q145",
+   "fame": 0.85,
+   "number": "999",
+   "description": "island country in north-west Europe",
+   "hook": "is home to Big Ben, the Royal Family, and the birthplace of Shakespeare",
+   "known": 0.8,
+   "kind": "emergency"
+  },
+  {
+   "label": "Australia",
+   "qid": "Q408",
+   "fame": 0.7,
+   "number": "000",
+   "description": "country in Oceania",
+   "hook": "is home to kangaroos, the Sydney Opera House, and vast outback deserts",
+   "known": 0.6,
+   "kind": "emergency"
+  },
+  {
+   "label": "New Zealand",
+   "qid": "Q664",
+   "fame": 0.5,
+   "number": "111",
+   "description": "island country in the southwest Pacific Ocean",
+   "hook": "is known for dramatic fjords, sheep farming, and lush green landscapes",
+   "known": 0.4,
+   "kind": "emergency"
+  },
+  {
+   "label": "European Union (EU-wide)",
+   "qid": "Q458",
+   "fame": 0.6,
+   "number": "112",
+   "description": "political and economic union of 27 European states",
+   "hook": "issues a shared currency called the euro and allows passport-free travel between many member countries",
+   "known": 0.2,
+   "kind": "emergency"
+  }
+ ]
+}

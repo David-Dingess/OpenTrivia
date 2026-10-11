@@ -1,0 +1,721 @@
+{
+ "id": "table.literature.book-series",
+ "kind": "table",
+ "title": "Famous book series and their author",
+ "genre": "arts-entertainment",
+ "category": "literature",
+ "topic": "modern-fiction",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?authorLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?a) AS ?author) (COUNT(DISTINCT ?a) AS ?nAuthor) WHERE { ?item wdt:P31/wdt:P279* wd:Q277759 ; wdt:P50 ?a ; wikibase:sitelinks ?sitelinks . FILTER NOT EXISTS { ?item wdt:P31/wdt:P279* wd:Q21198342 } FILTER NOT EXISTS { ?item wdt:P31/wdt:P279* wd:Q14406742 } FILTER NOT EXISTS { ?item wdt:P136 wd:Q8274 } FILTER NOT EXISTS { ?item wdt:P407 ?lang . FILTER(?lang IN (wd:Q5287, wd:Q9176)) } FILTER(?sitelinks > 8) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 400 } hint:Prior hint:runFirst true . FILTER(?nAuthor = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T19:19:33.061Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T19:19:33.061Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "author",
+   "label": "Author",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "book series",
+  "many": "book series",
+  "capitalise": true,
+  "itemText": "{label} — {author}",
+  "columns": {
+   "author": {
+    "role": "link",
+    "pick": "Who wrote {label}?",
+    "statement": "{label} was written by {value}.",
+    "match": "Match each book series to its author.",
+    "odd": "Three of these were written by {value}. Which one wasn't?",
+    "all": "Tap all {n} book series written by {value}.",
+    "reverse": "Which of these series did {value} write?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Silo",
+   "qid": "Q19319226",
+   "fame": 0.784,
+   "author": "Hugh Howey",
+   "description": "series of novels by Hugh Howey",
+   "hook": "follows survivors sealed inside a giant underground shelter, where asking to go outside is a death sentence",
+   "known": 0.2,
+   "kind": "scifi"
+  },
+  {
+   "label": "Harry Potter",
+   "qid": "Q8337",
+   "fame": 0.737,
+   "author": "J. K. Rowling",
+   "description": "1997–2007 fantasy book series by J. K. Rowling",
+   "hook": "follows a boy wizard at a magical boarding school as he faces the dark wizard who killed his parents",
+   "known": 0.95,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "A Court of Thorns and Roses",
+   "qid": "Q60979203",
+   "fame": 0.685,
+   "author": "Sarah J. Maas",
+   "description": "novel series by Sarah J. Maas",
+   "hook": "follows a huntress pulled into a magical faerie realm after killing a wolf, becoming a huge romantasy hit",
+   "known": 0.4,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "The Chronicles of Narnia",
+   "qid": "Q483412",
+   "fame": 0.683,
+   "author": "C. S. Lewis",
+   "description": "series of children's fantasy novels by C. S. Lewis, 1950–1956",
+   "hook": "follows children who step through a wardrobe into a magical land ruled by a noble lion",
+   "known": 0.95,
+   "kind": "classic-fantasy"
+  },
+  {
+   "label": "A Song of Ice and Fire",
+   "qid": "Q45875",
+   "fame": 0.681,
+   "author": "George R. R. Martin",
+   "description": "series of epic fantasy novels by George R. R. Martin",
+   "hook": "follows noble families warring over an iron seat of power while a long winter and dragons return to the world",
+   "known": 0.8,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "The Hunger Games",
+   "qid": "Q11679",
+   "fame": 0.678,
+   "author": "Suzanne Collins",
+   "description": "pentalogy of books by Suzanne Collins (2008–2025)",
+   "hook": "follows teenagers forced to fight to the death on live television in a dystopian future nation",
+   "known": 0.8,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "The Lord of the Rings",
+   "qid": "Q15228",
+   "fame": 0.678,
+   "author": "J. R. R. Tolkien",
+   "description": "1954–1955 fantasy novel trilogy by J. R. R. Tolkien",
+   "hook": "follows a hobbit's quest to destroy a corrupting golden band before a dark sorcerer reclaims it",
+   "known": 0.95,
+   "kind": "classic-fantasy"
+  },
+  {
+   "label": "James Bond",
+   "qid": "Q844",
+   "fame": 0.658,
+   "author": "Ian Fleming",
+   "description": "series of books about a British spy",
+   "hook": "follows a suave secret agent with a license to kill who saves the world from supervillains",
+   "known": 0.8,
+   "kind": "literary"
+  },
+  {
+   "label": "Throne of Glass",
+   "qid": "Q7798359",
+   "fame": 0.633,
+   "author": "Sarah J. Maas",
+   "description": "novel series by Sarah J. Maas",
+   "hook": "follows a teenage assassin fighting for her freedom who eventually contends for a kingdom's crown",
+   "known": 0.4,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "Discworld",
+   "qid": "Q3257270",
+   "fame": 0.632,
+   "author": "Terry Pratchett",
+   "description": "fantasy book series by Terry Pratchett",
+   "hook": "follows wizards, witches and guards living on a flat planet carried through space on a giant turtle's back",
+   "known": 0.6,
+   "kind": "classic-fantasy"
+  },
+  {
+   "label": "Little House on the Prairie",
+   "qid": "Q5400672",
+   "fame": 0.63,
+   "author": "Laura Ingalls Wilder",
+   "description": "series of children's books, primarily 9 novels 1932 to 1971; also the American media franchise based on it",
+   "hook": "follows a pioneer family building a home on the American frontier as settlers push west",
+   "known": 0.6,
+   "kind": "historical"
+  },
+  {
+   "label": "Mistborn",
+   "qid": "Q268100",
+   "fame": 0.629,
+   "author": "Brandon Sanderson",
+   "description": "novel series by Brandon Sanderson",
+   "hook": "follows a street thief recruited into a rebellion against a seemingly immortal, all-powerful emperor",
+   "known": 0.4,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "The Stormlight Archive",
+   "qid": "Q7766706",
+   "fame": 0.622,
+   "author": "Brandon Sanderson",
+   "description": "novel series by Brandon Sanderson",
+   "hook": "follows broken soldiers and scholars on a wind-scoured world as ancient god-like beings return to wage war",
+   "known": 0.2,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "The Expanse",
+   "qid": "Q19610143",
+   "fame": 0.606,
+   "author": "James S. A. Corey",
+   "description": "series of space opera novels by James S. A. Corey (collective pseudonym)",
+   "hook": "follows crews caught in politics between Earth, Mars and the asteroid belt after a strange alien discovery",
+   "known": 0.4,
+   "kind": "scifi"
+  },
+  {
+   "label": "Percy Jackson & the Olympians",
+   "qid": "Q213167",
+   "fame": 0.602,
+   "author": "Rick Riordan",
+   "description": "children's fantasy adventure series",
+   "hook": "follows a boy who learns he's the son of a Greek god and must survive a summer camp for demigods",
+   "known": 0.8,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "The Witcher",
+   "qid": "Q11835640",
+   "fame": 0.596,
+   "author": "Andrzej Sapkowski",
+   "description": "series of fantasy novels and short stories by Polish writer Andrzej Sapkowski",
+   "hook": "follows a monster hunter with silver hair navigating a morally gray world while raising his adopted daughter",
+   "known": 0.6,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "In Search of Lost Time",
+   "qid": "Q464928",
+   "fame": 0.588,
+   "author": "Marcel Proust",
+   "description": "novel sequence by Marcel Proust",
+   "hook": "follows a narrator's memories flooding back after tasting a small cake, in one of literature's longest works",
+   "known": 0.2,
+   "kind": "literary"
+  },
+  {
+   "label": "Diary of a Wimpy Kid",
+   "qid": "Q1339580",
+   "fame": 0.587,
+   "author": "Jeff Kinney",
+   "description": "comic style book series by Jeff Kinney",
+   "hook": "follows a middle schooler's comic, illustrated journal of embarrassing family and school mishaps",
+   "known": 0.8,
+   "kind": "children"
+  },
+  {
+   "label": "Tales of Dunk and Egg",
+   "qid": "Q2975594",
+   "fame": 0.586,
+   "author": "George R. R. Martin",
+   "description": "series of novellas by George R. R. Martin",
+   "hook": "follows a wandering knight and his young squire, secretly royalty, generations before a much bigger saga",
+   "known": 0.2,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "A Series of Unfortunate Events",
+   "qid": "Q213841",
+   "fame": 0.577,
+   "author": "Daniel Handler",
+   "description": "novel series by Lemony Snicket",
+   "hook": "follows three orphaned siblings pursued by a scheming relative determined to steal their inheritance",
+   "known": 0.6,
+   "kind": "children"
+  },
+  {
+   "label": "The Dark Tower",
+   "qid": "Q280898",
+   "fame": 0.577,
+   "author": "Stephen King",
+   "description": "novel series by Stephen King",
+   "hook": "follows a lone gunslinger's quest across a crumbling world toward a structure said to hold reality together",
+   "known": 0.6,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "The Vampire Chronicles",
+   "qid": "Q840516",
+   "fame": 0.574,
+   "author": "Anne Rice",
+   "description": "series of novels by Anne Rice",
+   "hook": "follows an immortal bloodsucker recounting centuries of guilt, seduction and loss in his own words",
+   "known": 0.4,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "Malazan Book of the Fallen",
+   "qid": "Q458982",
+   "fame": 0.573,
+   "author": "Steven Erikson",
+   "description": "novel series by Steven Erikson",
+   "hook": "follows soldiers, gods and mages across sprawling continents in a grim, empire-spanning war epic",
+   "known": 0.2,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "The Dresden Files",
+   "qid": "Q2307373",
+   "fame": 0.569,
+   "author": "Jim Butcher",
+   "description": "book series by Jim Butcher",
+   "hook": "follows a wizard-for-hire solving supernatural crimes as the only openly practicing wizard in a modern city",
+   "known": 0.4,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "Cormoran Strike",
+   "qid": "Q18417290",
+   "fame": 0.565,
+   "author": "J. K. Rowling",
+   "description": "Series of books by J.K. Rowling",
+   "hook": "follows a war-wounded private detective and his assistant solving crimes across London",
+   "known": 0.2,
+   "kind": "literary"
+  },
+  {
+   "label": "His Dark Materials",
+   "qid": "Q129240",
+   "fame": 0.565,
+   "author": "Philip Pullman",
+   "description": "novel series by Philip Pullman",
+   "hook": "follows a girl and her shape-shifting animal companion crossing parallel worlds against a controlling church",
+   "known": 0.6,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "Foundation series",
+   "qid": "Q1564644",
+   "fame": 0.559,
+   "author": "Isaac Asimov",
+   "description": "series of science fiction books by Isaac Asimov",
+   "hook": "follows a mathematician whose predictive science foresees an empire's fall and a plan to save civilization",
+   "known": 0.4,
+   "kind": "scifi"
+  },
+  {
+   "label": "Redwall",
+   "qid": "Q1247790",
+   "fame": 0.557,
+   "author": "Brian Jacques",
+   "description": "series of fantasy novels by Brian Jacques",
+   "hook": "follows brave mice and other woodland creatures defending their abbey from rats and other vermin invaders",
+   "known": 0.4,
+   "kind": "children"
+  },
+  {
+   "label": "Lord of Mysteries",
+   "qid": "Q109342457",
+   "fame": 0.556,
+   "author": "Cuttlefish That Loves Diving",
+   "description": "2018 Chinese web novel series",
+   "hook": "follows a man drawn into secret occult factions in a foggy, steampunk world as he gains strange powers",
+   "known": 0.05,
+   "kind": "scifi"
+  },
+  {
+   "label": "Twilight",
+   "qid": "Q44523",
+   "fame": 0.547,
+   "author": "Stephenie Meyer",
+   "description": "series of vampire romance novels by Stephenie Meyer",
+   "hook": "follows a teenage girl who falls in love with a vampire in a quiet, rainy Pacific Northwest town",
+   "known": 0.8,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "Earthsea series",
+   "qid": "Q116546",
+   "fame": 0.542,
+   "author": "Ursula K. Le Guin",
+   "description": "fantasy fiction series by Ursula K. Le Guin, including 5 novels 1968 to 2001 among other publications",
+   "hook": "follows a gifted young wizard learning that true power demands balance, humility and knowing one's own name",
+   "known": 0.4,
+   "kind": "classic-fantasy"
+  },
+  {
+   "label": "Oresteia",
+   "qid": "Q249769",
+   "fame": 0.539,
+   "author": "Aeschylus",
+   "description": "trilogy of Greek tragedies written by Aeschylus",
+   "hook": "follows a royal family's cycle of murder and revenge, resolved at last by the invention of trial by jury",
+   "known": 0.2,
+   "kind": "literary"
+  },
+  {
+   "label": "Remembrance of Earth's Past",
+   "qid": "Q29841269",
+   "fame": 0.537,
+   "author": "Liu Cixin",
+   "description": "science fiction trilogy by Liu Cixin",
+   "hook": "follows humanity's first contact with a hostile alien civilization after one scientist's signal to the stars",
+   "known": 0.2,
+   "kind": "scifi"
+  },
+  {
+   "label": "Curious George",
+   "qid": "Q1105407",
+   "fame": 0.536,
+   "author": "H. A. Rey",
+   "description": "protagonist of a series of popular children's books by the same name",
+   "hook": "follows a mischievous monkey brought from the jungle to the city by a man in a yellow hat",
+   "known": 0.8,
+   "kind": "children"
+  },
+  {
+   "label": "Dune",
+   "qid": "Q6095696",
+   "fame": 0.535,
+   "author": "Frank Herbert",
+   "description": "science fiction novel series by Frank Herbert",
+   "hook": "follows a young noble who becomes the prophesied leader of a desert planet's people and its precious spice",
+   "known": 0.8,
+   "kind": "scifi"
+  },
+  {
+   "label": "Platonic dialogue",
+   "qid": "Q3026037",
+   "fame": 0.535,
+   "author": "Plato",
+   "description": "philosophical dialogue attributed to Plato",
+   "hook": "records conversations led by a questioning philosopher exploring justice, love and the nature of knowledge",
+   "known": 0.2,
+   "kind": "literary"
+  },
+  {
+   "label": "Aubrey-Maturin series",
+   "qid": "Q10376289",
+   "fame": 0.529,
+   "author": "Patrick O'Brian",
+   "description": "series of maritime novels by Patrick O'Brian",
+   "hook": "follows a naval captain and his physician friend sailing through war and adventure during the Napoleonic era",
+   "known": 0.2,
+   "kind": "historical"
+  },
+  {
+   "label": "Goosebumps",
+   "qid": "Q3260367",
+   "fame": 0.526,
+   "author": "R. L. Stine",
+   "description": "horror book series by Robert Lawrence Stine",
+   "hook": "follows kids confronting monsters, curses and other spine-chilling horrors in short, twist-ending tales",
+   "known": 0.8,
+   "kind": "children"
+  },
+  {
+   "label": "The Kingkiller Chronicle",
+   "qid": "Q2585559",
+   "fame": 0.526,
+   "author": "Patrick Rothfuss",
+   "description": "Fantasy trilogy by Patrick Rothfuss",
+   "hook": "follows a legendary figure recounting his own life story of poverty, magic school and music from an inn",
+   "known": 0.4,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "Doctor Dolittle",
+   "qid": "Q11310767",
+   "fame": 0.524,
+   "author": "Hugh Lofting",
+   "description": "children's literature series written by Hugh Lofting",
+   "hook": "follows a physician who learns to talk with animals and travels the world helping them",
+   "known": 0.6,
+   "kind": "children"
+  },
+  {
+   "label": "Hyperion Cantos",
+   "qid": "Q1213577",
+   "fame": 0.518,
+   "author": "Dan Simmons",
+   "description": "science fiction book series by Dan Simmons",
+   "hook": "follows pilgrims traveling to a mysterious, deadly artifact, each telling their own tale along the way",
+   "known": 0.2,
+   "kind": "scifi"
+  },
+  {
+   "label": "Outlander series",
+   "qid": "Q18153036",
+   "fame": 0.505,
+   "author": "Diana Gabaldon",
+   "description": "sequence of multi-genre novels and shorter works written by Diana Gabaldon",
+   "hook": "follows a World War II nurse mysteriously transported back to the Scottish Highlands generations earlier",
+   "known": 0.6,
+   "kind": "historical"
+  },
+  {
+   "label": "Captain Underpants",
+   "qid": "Q2603941",
+   "fame": 0.498,
+   "author": "Dav Pilkey",
+   "description": "children's novel series by Dav Pilkey",
+   "hook": "follows two prank-loving kids who hypnotize their principal into a flying, underwear-clad superhero",
+   "known": 0.8,
+   "kind": "children"
+  },
+  {
+   "label": "The Famous Five",
+   "qid": "Q1134354",
+   "fame": 0.498,
+   "author": "Enid Blyton",
+   "description": "series of children's novels written by Enid Blyton",
+   "hook": "follows a group of children and their dog solving mysteries during school holidays in the English countryside",
+   "known": 0.6,
+   "kind": "children"
+  },
+  {
+   "label": "Deltora Quest series",
+   "qid": "Q2264470",
+   "fame": 0.497,
+   "author": "Jennifer Rowe",
+   "description": "series of 15 books by Jennifer Rowe (as Emily Rodda)",
+   "hook": "follows a boy on a journey to recover magical gems stolen from his kingdom's protective belt",
+   "known": 0.2,
+   "kind": "children"
+  },
+  {
+   "label": "The Forsyte Saga",
+   "qid": "Q735319",
+   "fame": 0.494,
+   "author": "John Galsworthy",
+   "description": "three novels by John Galsworthy",
+   "hook": "follows the rise and rivalries of a wealthy English family across several generations",
+   "known": 0.2,
+   "kind": "literary"
+  },
+  {
+   "label": "canon of Sherlock Holmes",
+   "qid": "Q2316684",
+   "fame": 0.493,
+   "author": "Arthur Conan Doyle",
+   "description": "56 short stories and four novels written by Sir Arthur Conan Doyle",
+   "hook": "follows a brilliant, eccentric detective and his loyal doctor friend solving crimes through pure deduction",
+   "known": 0.95,
+   "kind": "literary"
+  },
+  {
+   "label": "The Once and Future King",
+   "qid": "Q1195086",
+   "fame": 0.488,
+   "author": "T. H. White",
+   "description": "1958 novel by T. H. White",
+   "hook": "retells the legend of a boy raised by a wizard who pulls a sword from a stone to become a legendary ruler",
+   "known": 0.4,
+   "kind": "classic-fantasy"
+  },
+  {
+   "label": "Animorphs",
+   "qid": "Q548365",
+   "fame": 0.486,
+   "author": "Katherine Applegate",
+   "description": "science fiction young adult book series",
+   "hook": "follows teenagers who gain the power to transform into animals to secretly fight an alien invasion",
+   "known": 0.6,
+   "kind": "children"
+  },
+  {
+   "label": "Artemis Fowl",
+   "qid": "Q325283",
+   "fame": 0.48,
+   "author": "Eoin Colfer",
+   "description": "novel series by Eoin Colfer",
+   "hook": "follows a criminal boy genius who schemes against, then allies with, a hidden world of fairies",
+   "known": 0.4,
+   "kind": "children"
+  },
+  {
+   "label": "Oz book series",
+   "qid": "Q2167095",
+   "fame": 0.478,
+   "author": "L. Frank Baum",
+   "description": "series of children's novels started by L. Frank Baum and continued by others",
+   "hook": "follows a girl swept away by a storm to a magical land, journeying down a yellow road to find a wizard",
+   "known": 0.8,
+   "kind": "children"
+  },
+  {
+   "label": "Gormenghast trilogy",
+   "qid": "Q728841",
+   "fame": 0.474,
+   "author": "Mervyn Peake",
+   "description": "three novels by Mervyn Peake, published 1946–1959",
+   "hook": "follows the heir to a vast, decaying castle bound by centuries of rigid ritual and tradition",
+   "known": 0.2,
+   "kind": "classic-fantasy"
+  },
+  {
+   "label": "Hainish Cycle",
+   "qid": "Q2328396",
+   "fame": 0.472,
+   "author": "Ursula K. Le Guin",
+   "description": "science fiction series by Ursula K. Le Guin, including 7 novels 1966 to 2000 among other publications",
+   "hook": "follows envoys from a loose interstellar league visiting far-flung worlds to study alien cultures and genders",
+   "known": 0.2,
+   "kind": "scifi"
+  },
+  {
+   "label": "The Inheritance Cycle",
+   "qid": "Q2699024",
+   "fame": 0.47,
+   "author": "Christopher Paolini",
+   "description": "novel series by Christopher Paolini",
+   "hook": "follows a farm boy who bonds with a dragon and becomes a rebel fighting a tyrannical king",
+   "known": 0.6,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "The Mortal Instruments",
+   "qid": "Q478151",
+   "fame": 0.468,
+   "author": "Cassandra Clare",
+   "description": "novel series by Cassandra Clare",
+   "hook": "follows a teenage girl who discovers a hidden world of demon-hunting warriors in modern New York",
+   "known": 0.6,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "How to Train Your Dragon",
+   "qid": "Q857000",
+   "fame": 0.464,
+   "author": "Cressida Cowell",
+   "description": "novel series by Cressida Cowell",
+   "hook": "follows a young Viking who befriends the very creature he was expected to slay in battle",
+   "known": 0.6,
+   "kind": "children"
+  },
+  {
+   "label": "Ender's Saga",
+   "qid": "Q2642928",
+   "fame": 0.462,
+   "author": "Orson Scott Card",
+   "description": "1985-2008 Series of six SF novels by Orson Scott Card",
+   "hook": "follows a gifted child recruited to a military school to command humanity's fleet against alien invaders",
+   "known": 0.6,
+   "kind": "scifi"
+  },
+  {
+   "label": "Gor",
+   "qid": "Q1978911",
+   "fame": 0.46,
+   "author": "John Norman",
+   "description": "series of science fiction novels published by John Norman starting in 1966",
+   "hook": "follows a scholar transported to a hidden, warrior counter-Earth with a rigid, traditional social order",
+   "known": 0.05,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "The Chronicles of Prydain",
+   "qid": "Q1211900",
+   "fame": 0.46,
+   "author": "Lloyd Alexander",
+   "description": "novel series by Lloyd Alexander",
+   "hook": "follows an assistant pig-keeper who becomes an unlikely hero defending a magical land from an undead lord",
+   "known": 0.2,
+   "kind": "classic-fantasy"
+  },
+  {
+   "label": "The Worst Witch",
+   "qid": "Q3468347",
+   "fame": 0.458,
+   "author": "Jill Murphy",
+   "description": "series of children's novels by Jill Murphy",
+   "hook": "follows a clumsy young magic student struggling to fit in at a boarding school for spells",
+   "known": 0.2,
+   "kind": "children"
+  },
+  {
+   "label": "The Heroes of Olympus",
+   "qid": "Q1276821",
+   "fame": 0.457,
+   "author": "Rick Riordan",
+   "description": "novel series by Rick Riordan",
+   "hook": "follows demigod teens from Camp Half-Blood, a sequel to the Percy Jackson books",
+   "known": 0.4,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "Mr. Men",
+   "qid": "Q2005333",
+   "fame": 0.456,
+   "author": "Roger Hargreaves",
+   "description": "series of children's books",
+   "hook": "features tiny round characters named for a single trait, like Tickle, Greedy and Bump",
+   "known": 0.8,
+   "kind": "children"
+  },
+  {
+   "label": "Neapolitan Novels",
+   "qid": "Q22981812",
+   "fame": 0.455,
+   "author": "Elena Ferrante",
+   "description": "novel series by Elena Ferrante",
+   "hook": "traces a lifelong friendship between two girls growing up in Naples, starting with My Brilliant Friend",
+   "known": 0.2,
+   "kind": "literary"
+  },
+  {
+   "label": "The Baby-Sitters Club",
+   "qid": "Q3108867",
+   "fame": 0.454,
+   "author": "Ann M. Martin",
+   "description": "series of novels",
+   "hook": "follows a group of middle-school friends who run a neighborhood child-care business",
+   "known": 0.6,
+   "kind": "children"
+  },
+  {
+   "label": "The Southern Vampire Mysteries",
+   "qid": "Q666121",
+   "fame": 0.454,
+   "author": "Charlaine Harris",
+   "description": "book series",
+   "hook": "was adapted into the HBO show True Blood, with a telepathic waitress in Louisiana",
+   "known": 0.2,
+   "kind": "modern-fantasy"
+  },
+  {
+   "label": "Dog Man",
+   "qid": "Q56302682",
+   "fame": 0.453,
+   "author": "Dav Pilkey",
+   "description": "children's book series",
+   "hook": "stars a canine-headed police hero in graphic novels, spun off from Captain Underpants",
+   "known": 0.4,
+   "kind": "children"
+  }
+ ]
+}

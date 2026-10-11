@@ -1,0 +1,392 @@
+{
+ "id": "table.inventions.inventors-birth-country",
+ "kind": "table",
+ "title": "Famous inventors and the country they were born in",
+ "genre": "science-math-tech",
+ "category": "inventions",
+ "topic": "inventors",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { ?item wdt:P31 wd:Q5 ; wdt:P106 wd:Q205375 ; wdt:P19 ?bp . ?bp wdt:P17 ?c . ?item wikibase:sitelinks ?s . FILTER(?s >= 30) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T22:16:50.712Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T22:16:50.712Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "inventor",
+  "many": "inventors",
+  "wildcard": "person",
+  "hookAsk": "Which inventor {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country was {label} born in?",
+    "statement": "{label} was born in {value}.",
+    "match": "Match each inventor to the country they were born in.",
+    "odd": "Three of these inventors were born in {value}. Which one was not?",
+    "all": "Tap all {n} inventors born in {value}.",
+    "reverse": "Which of these inventors was born in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Steve Jobs",
+   "qid": "Q19837",
+   "fame": 0.81,
+   "country": "United States",
+   "description": "American entrepreneur; co-founder of Apple Inc. (1955–2011)",
+   "hook": "co-founded the computer company behind the iPhone and Mac",
+   "known": 0.95,
+   "kind": "computing"
+  },
+  {
+   "label": "Nikola Tesla",
+   "qid": "Q9036",
+   "fame": 0.725,
+   "country": "Croatia",
+   "description": "Serbian-American engineer and inventor (1856-1943)",
+   "hook": "championed alternating current power and the induction motor",
+   "known": 0.8,
+   "kind": "electrical"
+  },
+  {
+   "label": "Steve Wozniak",
+   "qid": "Q483382",
+   "fame": 0.674,
+   "country": "United States",
+   "description": "American computer pioneer, inventor, computer engineer and programmer; co-founder of Apple Inc.",
+   "hook": "designed the first Apple computers as the engineer of a famous garage duo",
+   "known": 0.6,
+   "kind": "computing"
+  },
+  {
+   "label": "Hedy Lamarr",
+   "qid": "Q49034",
+   "fame": 0.671,
+   "country": "Austria",
+   "description": "Austrian-American actress and co-inventor of an early technique for spread spectrum communications and frequency hopping (1914-2000)",
+   "hook": "was a Hollywood star who co-invented frequency hopping, a forerunner of Wi-Fi and Bluetooth tech",
+   "known": 0.4,
+   "kind": "communication"
+  },
+  {
+   "label": "Thomas Edison",
+   "qid": "Q8743",
+   "fame": 0.668,
+   "country": "United States",
+   "description": "American inventor and businessman (1847–1931)",
+   "hook": "developed a practical light bulb and the phonograph",
+   "known": 0.95,
+   "kind": "electrical"
+  },
+  {
+   "label": "Ada Lovelace",
+   "qid": "Q7259",
+   "fame": 0.666,
+   "country": "United Kingdom",
+   "description": "English mathematician (1815–1852)",
+   "hook": "is often called the first computer programmer for her notes on an early mechanical computer",
+   "known": 0.6,
+   "kind": "computing"
+  },
+  {
+   "label": "Henry Ford",
+   "qid": "Q8768",
+   "fame": 0.649,
+   "country": "United States",
+   "description": "American business magnate (1863–1947)",
+   "hook": "made cars affordable to ordinary families with the moving assembly line",
+   "known": 0.95,
+   "kind": "automotive"
+  },
+  {
+   "label": "Alexander Graham Bell",
+   "qid": "Q34286",
+   "fame": 0.63,
+   "country": "United Kingdom",
+   "description": "Canadian-American scientist inventor of telephone (1847–1922)",
+   "hook": "patented the first practical telephone",
+   "known": 0.8,
+   "kind": "communication"
+  },
+  {
+   "label": "Linus Torvalds",
+   "qid": "Q34253",
+   "fame": 0.625,
+   "country": "Finland",
+   "description": "Finnish software engineer (born 1969)",
+   "hook": "created the Linux kernel as a student and gave it away for free",
+   "known": 0.4,
+   "kind": "computing"
+  },
+  {
+   "label": "Tim Berners-Lee",
+   "qid": "Q80",
+   "fame": 0.613,
+   "country": "United Kingdom",
+   "description": "English computer scientist (born 1955)",
+   "hook": "invented the World Wide Web",
+   "known": 0.6,
+   "kind": "computing"
+  },
+  {
+   "label": "Michael Faraday",
+   "qid": "Q8750",
+   "fame": 0.578,
+   "country": "United Kingdom",
+   "description": "British scientist (1791–1867)",
+   "hook": "discovered electromagnetic induction and laid the groundwork for electric motors and generators",
+   "known": 0.6,
+   "kind": "electrical"
+  },
+  {
+   "label": "George Washington Carver",
+   "qid": "Q296898",
+   "fame": 0.575,
+   "country": "United States",
+   "description": "African American botanist and inventor (1864-1943)",
+   "hook": "is famed for promoting hundreds of uses for peanuts and better crop rotation",
+   "known": 0.6,
+   "kind": "science"
+  },
+  {
+   "label": "Charles Babbage",
+   "qid": "Q46633",
+   "fame": 0.573,
+   "country": "United Kingdom",
+   "description": "English mathematician, philosopher, and engineer (1791–1871)",
+   "hook": "designed the Difference Engine, an early mechanical computer",
+   "known": 0.4,
+   "kind": "computing"
+  },
+  {
+   "label": "Alexander Fleming",
+   "qid": "Q37064",
+   "fame": 0.572,
+   "country": "United Kingdom",
+   "description": "Scottish biologist, pharmacologist, botanist, and Nobel laureate (1881–1955)",
+   "hook": "discovered penicillin after noticing mould killing bacteria on a lab dish",
+   "known": 0.8,
+   "kind": "medical"
+  },
+  {
+   "label": "Johannes Gutenberg",
+   "qid": "Q8958",
+   "fame": 0.549,
+   "country": "Germany",
+   "description": "German inventor and craftsman (1400-1468)",
+   "hook": "introduced the movable-type printing press to Europe",
+   "known": 0.8,
+   "kind": "communication"
+  },
+  {
+   "label": "Guglielmo Marconi",
+   "qid": "Q36488",
+   "fame": 0.534,
+   "country": "Italy",
+   "description": "Italian inventor and radio pioneer (1874–1937)",
+   "hook": "pioneered long-distance radio transmission and wireless telegraphy",
+   "known": 0.6,
+   "kind": "communication"
+  },
+  {
+   "label": "Ferdinand Porsche",
+   "qid": "Q57249",
+   "fame": 0.524,
+   "country": "Czech Republic",
+   "description": "Austrian-born German automotive engineer, inventor (1875–1951)",
+   "hook": "designed the original Volkswagen Beetle and founded a famous sports car brand",
+   "known": 0.8,
+   "kind": "automotive"
+  },
+  {
+   "label": "Jonas Salk",
+   "qid": "Q200101",
+   "fame": 0.522,
+   "country": "United States",
+   "description": "Jewish-American inventor of polio vaccine (1914–1995)",
+   "hook": "developed the first widely used polio vaccine",
+   "known": 0.8,
+   "kind": "medical"
+  },
+  {
+   "label": "Les Paul",
+   "qid": "Q262399",
+   "fame": 0.52,
+   "country": "United States",
+   "description": "American jazz guitarist, country guitarist, songwriter and inventor (1915–2009)",
+   "hook": "pioneered multitrack recording and helped design a famous solid-body electric guitar bearing his name",
+   "known": 0.6,
+   "kind": "science"
+  },
+  {
+   "label": "Richard Stallman",
+   "qid": "Q7439",
+   "fame": 0.52,
+   "country": "United States",
+   "description": "American software freedom activist, short story writer and computer programmer, founder of the GNU project",
+   "hook": "founded the GNU project and the free software movement",
+   "known": 0.2,
+   "kind": "computing"
+  },
+  {
+   "label": "Robert Hooke",
+   "qid": "Q46830",
+   "fame": 0.52,
+   "country": "United Kingdom",
+   "description": "English natural philosopher, architect and polymath (1635 — 1703)",
+   "hook": "coined the biological term cell after studying cork under a microscope",
+   "known": 0.4,
+   "kind": "science"
+  },
+  {
+   "label": "Carl Benz",
+   "qid": "Q40224",
+   "fame": 0.514,
+   "country": "Germany",
+   "description": "German automotive and engine designer and manufacturer (1844–1929)",
+   "hook": "built the first practical gasoline-powered automobile",
+   "known": 0.8,
+   "kind": "automotive"
+  },
+  {
+   "label": "Buckminster Fuller",
+   "qid": "Q102289",
+   "fame": 0.513,
+   "country": "United States",
+   "description": "American architect, systems theorist, author, designer, inventor and futurist (1895–1983)",
+   "hook": "popularized the geodesic dome",
+   "known": 0.4,
+   "kind": "engineer"
+  },
+  {
+   "label": "James Watt",
+   "qid": "Q9041",
+   "fame": 0.497,
+   "country": "United Kingdom",
+   "description": "British engineer (1736–1819)",
+   "hook": "greatly improved the steam engine, helping to power the Industrial Revolution",
+   "known": 0.8,
+   "kind": "engineer"
+  },
+  {
+   "label": "Rudolf Diesel",
+   "qid": "Q12674",
+   "fame": 0.481,
+   "country": "France",
+   "description": "German inventor and mechanical engineer (1858–1913)",
+   "hook": "invented an engine that ignites its fuel by compression alone",
+   "known": 0.6,
+   "kind": "automotive"
+  },
+  {
+   "label": "William Shockley",
+   "qid": "Q163415",
+   "fame": 0.479,
+   "country": "United Kingdom",
+   "description": "American physicist and inventor (1910–1989)",
+   "hook": "co-invented the transistor, helping give rise to Silicon Valley",
+   "known": 0.4,
+   "kind": "computing"
+  },
+  {
+   "label": "Alessandro Volta",
+   "qid": "Q680",
+   "fame": 0.472,
+   "country": "Italy",
+   "description": "Italian chemist and physicist (1745–1827)",
+   "hook": "built the first electric battery, the voltaic pile",
+   "known": 0.6,
+   "kind": "electrical"
+  },
+  {
+   "label": "Igor Sikorsky",
+   "qid": "Q212446",
+   "fame": 0.467,
+   "country": "Ukraine",
+   "description": "American aviation pioneer from Russian Empire (1889–1972)",
+   "hook": "built the first mass-produced helicopter",
+   "known": 0.4,
+   "kind": "engineer"
+  },
+  {
+   "label": "Samuel Finley Breese Morse",
+   "qid": "Q75698",
+   "fame": 0.467,
+   "country": "United States",
+   "description": "American inventor and painter (1791–1872)",
+   "hook": "developed the electric telegraph and a dot-and-dash code to go with it",
+   "known": 0.8,
+   "kind": "communication"
+  },
+  {
+   "label": "Louis Braille",
+   "qid": "Q93182",
+   "fame": 0.458,
+   "country": "France",
+   "description": "French organist and teacher (1809-1852), inventor of braille, a system for reading and writing text and music, used by people who are blind or visually impaired",
+   "hook": "created a raised-dot reading and writing system for blind people",
+   "known": 0.8,
+   "kind": "medical"
+  },
+  {
+   "label": "Christiaan Huygens",
+   "qid": "Q39599",
+   "fame": 0.457,
+   "country": "Netherlands",
+   "description": "Dutch mathematician, physicist and astronomer (1629–1695)",
+   "hook": "invented the pendulum clock and discovered Saturn's largest moon",
+   "known": 0.4,
+   "kind": "electrical"
+  },
+  {
+   "label": "Robert H. Goddard",
+   "qid": "Q182546",
+   "fame": 0.457,
+   "country": "United States",
+   "description": "American physicist",
+   "hook": "launched the world's first liquid-fueled rocket",
+   "known": 0.4,
+   "kind": "engineer"
+  },
+  {
+   "label": "John Logie Baird",
+   "qid": "Q133544",
+   "fame": 0.45,
+   "country": "United Kingdom",
+   "description": "Scottish inventor, demonstrating the world's first working television (1888–1946)",
+   "hook": "gave the first public demonstration of a working television",
+   "known": 0.4,
+   "kind": "communication"
+  }
+ ]
+}

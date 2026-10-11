@@ -1,0 +1,711 @@
+{
+ "id": "table.video-games.game-engines",
+ "kind": "table",
+ "title": "Video games and the engine they run on",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "game-mechanics",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?engineLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?g) AS ?engine) (COUNT(DISTINCT ?g) AS ?nG) WHERE { ?item wdt:P31 wd:Q7889 ; wdt:P408 ?g ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks >= 14) FILTER NOT EXISTS { ?item wdt:P852 ?esrb . VALUES ?esrb { wd:Q14864331 wd:Q14864332 wd:Q110488287 wd:Q124356066 } } } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 500 } hint:Prior hint:runFirst true . FILTER(?nG = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T02:28:39.906Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T02:28:39.906Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "engine",
+   "label": "Game engine",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "game",
+  "many": "games",
+  "hookAsk": "Which game {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "engine": {
+    "role": "link",
+    "pick": "Which game engine does {label} run on?",
+    "statement": "{label} runs on {value}.",
+    "match": "Match each game to the engine it runs on.",
+    "odd": "Three of these games run on {value}. Which one doesn't?",
+    "all": "Tap all {n} games that run on {value}.",
+    "reverse": "Which of these games runs on {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Genshin Impact",
+   "qid": "Q65059474",
+   "fame": 0.654,
+   "engine": "Unity",
+   "description": "2020 free-to-play action role-playing video game",
+   "hook": "sends travelers across a fantasy world of elemental powers, with heroes collected through gacha pulls",
+   "known": 0.3,
+   "kind": "mega-hit"
+  },
+  {
+   "label": "Undertale",
+   "qid": "Q21039924",
+   "fame": 0.621,
+   "engine": "GameMaker",
+   "description": "2015 role-playing video game",
+   "hook": "lets players spare monsters instead of fighting them in a quirky world beneath the surface",
+   "known": 0.25,
+   "kind": "indie-gem"
+  },
+  {
+   "label": "Deltarune",
+   "qid": "Q58045522",
+   "fame": 0.617,
+   "engine": "GameMaker",
+   "description": "2018 independent video game developed by Toby Fox",
+   "hook": "follows a human teen and two monster pals falling into a dark world, from the maker of a cult indie RPG",
+   "known": 0.2,
+   "kind": "indie-gem"
+  },
+  {
+   "label": "Geometry Dash",
+   "qid": "Q16190030",
+   "fame": 0.612,
+   "engine": "Cocos2d-x",
+   "description": "2013 music-based platform video game and video game series",
+   "hook": "has a little square hopping over spikes and gaps in time with electronic music",
+   "known": 0.15,
+   "kind": "indie-gem"
+  },
+  {
+   "label": "Doki Doki Literature Club!",
+   "qid": "Q42266827",
+   "fame": 0.6,
+   "engine": "Ren'Py",
+   "description": "2017 horror visual novel game developed by Team Salvato",
+   "hook": "starts as a cheerful high-school dating sim about writing poetry before turning into psychological horror",
+   "known": 0.15,
+   "kind": "indie-gem"
+  },
+  {
+   "label": "Free Fire",
+   "qid": "Q51883198",
+   "fame": 0.589,
+   "engine": "Unity",
+   "description": "2017 multiplayer online battle royale game",
+   "hook": "drops mobile players onto an island for a short last-survivor-wins showdown",
+   "known": 0.1,
+   "kind": "mobile-game"
+  },
+  {
+   "label": "Black Myth: Wukong",
+   "qid": "Q98582386",
+   "fame": 0.581,
+   "engine": "Unreal Engine 5",
+   "description": "2024 video game developed by Game Science",
+   "hook": "casts players as a monkey warrior drawn from a classic Chinese novel about a journey to the west",
+   "known": 0.25,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "PUBG: Battlegrounds",
+   "qid": "Q28937399",
+   "fame": 0.581,
+   "engine": "Unreal Engine 4",
+   "description": "2017 video game",
+   "hook": "helped spark the last-player-standing craze by parachuting a hundred players onto an island",
+   "known": 0.4,
+   "kind": "mega-hit"
+  },
+  {
+   "label": "Among Us",
+   "qid": "Q96417649",
+   "fame": 0.58,
+   "engine": "Unity",
+   "description": "2018 video game developed by InnerSloth",
+   "hook": "has spaceship crewmates finishing tasks while hidden impostors sabotage them and everyone votes someone out",
+   "known": 0.2,
+   "kind": "mega-hit"
+  },
+  {
+   "label": "Hollow Knight",
+   "qid": "Q29300592",
+   "fame": 0.575,
+   "engine": "Unity",
+   "description": "2017 video game",
+   "hook": "sends a tiny bug warrior with a nail through a vast underground insect kingdom of ruined caverns",
+   "known": 0.2,
+   "kind": "indie-gem"
+  },
+  {
+   "label": "Hogwarts Legacy",
+   "qid": "Q99397854",
+   "fame": 0.569,
+   "engine": "Unreal Engine 4",
+   "description": "2023 open-world role-playing video game developed by Avalanche Software",
+   "hook": "lets players enroll as a student at the famous school of magic from a boy-wizard book series",
+   "known": 0.25,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Stardew Valley",
+   "qid": "Q23013817",
+   "fame": 0.565,
+   "engine": "MonoGame",
+   "description": "2016 indie farming simulation role-playing video game",
+   "hook": "has players inherit a run-down farm, grow crops, befriend townsfolk and mine caves",
+   "known": 0.15,
+   "kind": "indie-gem"
+  },
+  {
+   "label": "Horizon Zero Dawn",
+   "qid": "Q20155528",
+   "fame": 0.553,
+   "engine": "Decima",
+   "description": "2017 action role-playing video game",
+   "hook": "follows the huntress Aloy through a world roamed by robotic dinosaur-like machines",
+   "known": 0.2,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "RuneScape",
+   "qid": "Q187732",
+   "fame": 0.553,
+   "engine": "RuneTek",
+   "description": "2001 massively multiplayer online role-playing game",
+   "hook": "is a long-running fantasy online world where players chop trees, train skills and roam the Wilderness",
+   "known": 0.1,
+   "kind": "specialist-game"
+  },
+  {
+   "label": "Counter-Strike 2",
+   "qid": "Q111165107",
+   "fame": 0.55,
+   "engine": "Source 2",
+   "description": "2023 video game",
+   "hook": "pits bomb-planting attackers against defenders in round-based tactical shooter matches with a skin marketplace",
+   "known": 0.3,
+   "kind": "esports-title"
+  },
+  {
+   "label": "Hollow Knight: Silksong",
+   "qid": "Q63294487",
+   "fame": 0.546,
+   "engine": "Unity",
+   "description": "2025 Metroidvania action-adventure video game developed by Team Cherry",
+   "hook": "is the long-awaited sequel to a beloved bug-kingdom Metroidvania, starring the needle-wielding Hornet",
+   "known": 0.15,
+   "kind": "indie-gem"
+  },
+  {
+   "label": "Assassin's Creed Mirage",
+   "qid": "Q113675008",
+   "fame": 0.538,
+   "engine": "Ubisoft Anvil",
+   "description": "2023 video game",
+   "hook": "returns its series to stealthy roots, following a street thief who joins a hidden order in Baghdad",
+   "known": 0.15,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Star Wars Jedi: Fallen Order",
+   "qid": "Q55449345",
+   "fame": 0.535,
+   "engine": "Unreal Engine 4",
+   "description": "2019 single-player action-adventure video game",
+   "hook": "follows a young padawan on the run after the empire's purge, joined by a spherical droid named BD-1",
+   "known": 0.2,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Terraria",
+   "qid": "Q332697",
+   "fame": 0.535,
+   "engine": "Microsoft XNA",
+   "description": "2011 action-adventure sandbox video game",
+   "hook": "lets players dig, build and battle bosses in a 2D sandbox often compared to Minecraft",
+   "known": 0.15,
+   "kind": "indie-gem"
+  },
+  {
+   "label": "Command & Conquer: Red Alert 3",
+   "qid": "Q746351",
+   "fame": 0.534,
+   "engine": "SAGE",
+   "description": "2008 video game",
+   "hook": "pits the Allies, the Soviets and the Empire of the Rising Sun in campy live-action-cutscene warfare",
+   "known": 0.05,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Final Fantasy XV",
+   "qid": "Q1779100",
+   "fame": 0.53,
+   "engine": "Luminous Engine",
+   "description": "2016 action role-playing video game",
+   "hook": "follows a prince and his three friends on a road trip in a car called the Regalia",
+   "known": 0.15,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Need for Speed: Most Wanted",
+   "qid": "Q220365",
+   "fame": 0.53,
+   "engine": "EAGL",
+   "description": "2005 racing video game by Electronic Arts",
+   "hook": "has street racers climb a blacklist of rivals while outrunning the police",
+   "known": 0.05,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Kingdom Hearts III",
+   "qid": "Q3265748",
+   "fame": 0.528,
+   "engine": "Unreal Engine 4",
+   "description": "2019 video game",
+   "hook": "has Sora fighting alongside Disney characters while wielding a key-shaped weapon",
+   "known": 0.15,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Valorant",
+   "qid": "Q86919275",
+   "fame": 0.528,
+   "engine": "Unreal Engine 5",
+   "description": "2020 free-to-play multiplayer first-person shooter video game developed by Riot Games",
+   "hook": "is a tactical hero shooter where agents with special abilities plant or defuse a spike",
+   "known": 0.3,
+   "kind": "esports-title"
+  },
+  {
+   "label": "Metro Exodus",
+   "qid": "Q30238508",
+   "fame": 0.527,
+   "engine": "4A Engine",
+   "description": "2019 story-driven first person shooter stealth survival horror video game developed by 4A Games",
+   "hook": "sends survivors across post-nuclear Russia aboard a train locomotive named Aurora",
+   "known": 0.1,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Batman: Arkham Asylum",
+   "qid": "Q746228",
+   "fame": 0.525,
+   "engine": "Unreal Engine 3",
+   "description": "2009 action-adventure game",
+   "hook": "traps the Caped Crusader on an island prison overrun by the Joker's inmates",
+   "known": 0.2,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Pokémon Go",
+   "qid": "Q20966579",
+   "fame": 0.523,
+   "engine": "Unity",
+   "description": "augmented reality mobile game based on the Pokémon franchise",
+   "hook": "gets players walking outdoors to catch virtual creatures on their phones through augmented reality",
+   "known": 0.2,
+   "kind": "mobile-game"
+  },
+  {
+   "label": "Horizon Forbidden West",
+   "qid": "Q96216443",
+   "fame": 0.522,
+   "engine": "Decima",
+   "description": "2022 action role-playing video game developed by Guerrilla Games",
+   "hook": "sends the red-haired huntress Aloy across a flooded, ruined coastal America to stop a machine blight",
+   "known": 0.2,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Subway Surfers",
+   "qid": "Q9176944",
+   "fame": 0.521,
+   "engine": "Unity",
+   "description": "2012 mobile game",
+   "hook": "has a graffiti-tagging kid sprint endlessly along rail tracks, dodging oncoming trains and collecting coins",
+   "known": 0.2,
+   "kind": "mobile-game"
+  },
+  {
+   "label": "Dota 2",
+   "qid": "Q771541",
+   "fame": 0.518,
+   "engine": "Source 2",
+   "description": "2013 video game",
+   "hook": "is a lane-based team strategy game where five heroes defend an Ancient, famed for its huge esports prize pools",
+   "known": 0.2,
+   "kind": "esports-title"
+  },
+  {
+   "label": "Garry's Mod",
+   "qid": "Q837923",
+   "fame": 0.517,
+   "engine": "Source",
+   "description": "2006 sandbox physics game",
+   "hook": "gives players a physics toy box to build contraptions and stage silly scenes with no set goal",
+   "known": 0.2,
+   "kind": "indie-gem"
+  },
+  {
+   "label": "Portal 2",
+   "qid": "Q279446",
+   "fame": 0.511,
+   "engine": "Source",
+   "description": "2011 first-person puzzle-platform video game",
+   "hook": "has a test subject solving puzzles with a gun that opens linked holes, guided by a snarky AI",
+   "known": 0.3,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Five Nights at Freddy's",
+   "qid": "Q17618314",
+   "fame": 0.51,
+   "engine": "Clickteam Fusion 2.5",
+   "description": "2014 horror video game",
+   "hook": "has a security guard surviving overnight shifts as animatronic pizzeria mascots creep closer",
+   "known": 0.15,
+   "kind": "indie-gem"
+  },
+  {
+   "label": "Final Fantasy XIII",
+   "qid": "Q390595",
+   "fame": 0.508,
+   "engine": "Crystal Tools",
+   "description": "2010 role-playing video game",
+   "hook": "follows a group of branded outcasts hunted by the government on a famously linear path",
+   "known": 0.1,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Celeste",
+   "qid": "Q28451532",
+   "fame": 0.507,
+   "engine": "Microsoft XNA",
+   "description": "2018 video game",
+   "hook": "has a girl named Madeline climbing a snowy mountain while confronting her anxiety",
+   "known": 0.2,
+   "kind": "indie-gem"
+  },
+  {
+   "label": "Batman: Arkham Origins",
+   "qid": "Q10826261",
+   "fame": 0.506,
+   "engine": "Unreal Engine 3",
+   "description": "2013 action-adventure video game",
+   "hook": "is a prequel showing a younger Caped Crusader facing eight assassins on Christmas Eve",
+   "known": 0.15,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Cuphead",
+   "qid": "Q18149495",
+   "fame": 0.506,
+   "engine": "Unity",
+   "description": "2017 video game",
+   "hook": "is a run-and-gun famous for hand-drawn rubber-hose cartoon visuals and brutally tough boss fights",
+   "known": 0.25,
+   "kind": "indie-gem"
+  },
+  {
+   "label": "Hearts of Iron IV",
+   "qid": "Q15712701",
+   "fame": 0.505,
+   "engine": "Clausewitz Engine",
+   "description": "2016 video game",
+   "hook": "is a grand strategy game where players lead a nation through the Second World War",
+   "known": 0.1,
+   "kind": "specialist-game"
+  },
+  {
+   "label": "Rocket League",
+   "qid": "Q20031743",
+   "fame": 0.503,
+   "engine": "Unreal Engine 3",
+   "description": "2015 video game",
+   "hook": "is soccer played with jet-powered cars smashing a giant ball into goals",
+   "known": 0.2,
+   "kind": "esports-title"
+  },
+  {
+   "label": "Half-Life: Alyx",
+   "qid": "Q75653574",
+   "fame": 0.501,
+   "engine": "Source 2",
+   "description": "2020 VR video game developed by Valve Corporation",
+   "hook": "is a virtual reality shooter starring a young resistance fighter battling aliens in a walled city",
+   "known": 0.2,
+   "kind": "vr-game"
+  },
+  {
+   "label": "Assassin's Creed Origins",
+   "qid": "Q30138024",
+   "fame": 0.499,
+   "engine": "Ubisoft Anvil",
+   "description": "2017 video game",
+   "hook": "takes its series to ancient Egypt, following a Medjay named Bayek",
+   "known": 0.15,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Fortnite Battle Royale",
+   "qid": "Q50822580",
+   "fame": 0.498,
+   "engine": "Unreal Engine 4",
+   "description": "2017 free-to-play battle royal video game developed by Epic Games",
+   "hook": "drops a hundred players from a flying bus to build walls and be the last one standing",
+   "known": 0.5,
+   "kind": "mega-hit"
+  },
+  {
+   "label": "Prince of Persia: The Sands of Time",
+   "qid": "Q715292",
+   "fame": 0.497,
+   "engine": "Jade",
+   "description": "2003 action-adventure video game developed by Ubisoft Montreal",
+   "hook": "has an acrobatic royal wall-running through a palace and rewinding mistakes with a magical dagger",
+   "known": 0.1,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Final Fantasy IX",
+   "qid": "Q474573",
+   "fame": 0.496,
+   "engine": "Unity",
+   "description": "2000 video game",
+   "hook": "is a tale starring a thief named Zidane and a princess, with a throwback medieval style",
+   "known": 0.05,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Animal Crossing: New Horizons",
+   "qid": "Q64566657",
+   "fame": 0.495,
+   "engine": "LunchPack",
+   "description": "2020 life simulation video game",
+   "hook": "lets players build a getaway on a deserted island alongside a raccoon-dog tycoon named Tom Nook",
+   "known": 0.2,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Star Wars: The Old Republic",
+   "qid": "Q737308",
+   "fame": 0.484,
+   "engine": "HeroEngine",
+   "description": "2011 video game",
+   "hook": "is a massively multiplayer space-fantasy RPG set thousands of years before the movies",
+   "known": 0.1,
+   "kind": "specialist-game"
+  },
+  {
+   "label": "Fate/stay night",
+   "qid": "Q857823",
+   "fame": 0.482,
+   "engine": "KiriKiri",
+   "description": "2004 video game",
+   "hook": "is a visual novel where mages summon legendary heroes to fight over a wish-granting cup",
+   "known": 0.05,
+   "kind": "indie-gem"
+  },
+  {
+   "label": "Apex Legends",
+   "qid": "Q61478103",
+   "fame": 0.481,
+   "engine": "Source",
+   "description": "2019 video game",
+   "hook": "is a free squad-based last-team-standing shooter with hero characters and unique abilities",
+   "known": 0.2,
+   "kind": "esports-title"
+  },
+  {
+   "label": "The Simpsons: Hit & Run",
+   "qid": "Q836690",
+   "fame": 0.479,
+   "engine": "RenderWare",
+   "description": "2003 action-adventure video game",
+   "hook": "lets players drive around Springfield as a cartoon family, completing missions",
+   "known": 0.05,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Papers, Please",
+   "qid": "Q14565978",
+   "fame": 0.478,
+   "engine": "Unity",
+   "description": "2013 border inspector simulation adventure game",
+   "hook": "has you deciding who may cross a fictional border checkpoint under a strict rulebook",
+   "known": 0.15,
+   "kind": "indie-gem"
+  },
+  {
+   "label": "Star Wars: Knights of the Old Republic",
+   "qid": "Q725902",
+   "fame": 0.477,
+   "engine": "Odyssey Engine",
+   "description": "2003 video game",
+   "hook": "lets players choose between the light and dark side as a would-be Jedi in a sprawling RPG",
+   "known": 0.15,
+   "kind": "specialist-game"
+  },
+  {
+   "label": "Minecraft: Story Mode",
+   "qid": "Q20888644",
+   "fame": 0.473,
+   "engine": "Telltale Tool",
+   "description": "2015 video game",
+   "hook": "is an episodic choice-driven adventure in a blocky world, starring a hero named Jesse",
+   "known": 0.1,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "War Thunder",
+   "qid": "Q4052939",
+   "fame": 0.473,
+   "engine": "Dagor Engine",
+   "description": "2012 vehicular combat multiplayer video game developed by Gaijin Entertainment",
+   "hook": "lets players fight in historical aircraft, tanks and ships from many nations in big online matches",
+   "known": 0.15,
+   "kind": "esports-title"
+  },
+  {
+   "label": "Hello Neighbor",
+   "qid": "Q28127320",
+   "fame": 0.472,
+   "engine": "Unreal Engine 4",
+   "description": "2017 video game developed by Dynamic Pixels",
+   "hook": "has a curious kid sneaking into the suspicious house next door to uncover what is locked in the basement",
+   "known": 0.1,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Call of Duty 2",
+   "qid": "Q210298",
+   "fame": 0.47,
+   "engine": "IW",
+   "description": "2005 video game developed by Infinity Ward",
+   "hook": "was a World War II shooter that popularized regenerating health instead of medkits",
+   "known": 0.2,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Call of Duty 3",
+   "qid": "Q308961",
+   "fame": 0.469,
+   "engine": "Treyarch NGL",
+   "description": "2006 video game developed by Treyarch",
+   "hook": "is a World War II shooter set during the breakout from the Normandy beachhead",
+   "known": 0.1,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Age of Empires II: The Age of Kings",
+   "qid": "Q34852",
+   "fame": 0.468,
+   "engine": "Genie",
+   "description": "1999 real-time strategy video game",
+   "hook": "is a classic medieval real-time strategy game of building civilizations and fielding knights and trebuchets",
+   "known": 0.1,
+   "kind": "specialist-game"
+  },
+  {
+   "label": "Need for Speed: Underground 2",
+   "qid": "Q726190",
+   "fame": 0.465,
+   "engine": "EAGL",
+   "description": "2004 video game",
+   "hook": "has tuner-car street racers cruising a large open city, customizing rides with neon",
+   "known": 0.05,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Baldur's Gate",
+   "qid": "Q663583",
+   "fame": 0.464,
+   "engine": "Infinity Engine",
+   "description": "1998 fantasy role-playing video game",
+   "hook": "is a classic party-based fantasy RPG built on Dungeons & Dragons rules along the Sword Coast",
+   "known": 0.15,
+   "kind": "specialist-game"
+  },
+  {
+   "label": "Cities: Skylines II",
+   "qid": "Q116995799",
+   "fame": 0.464,
+   "engine": "Unity",
+   "description": "2023 city-building game developed by Colossal Order",
+   "hook": "lets players lay out roads, zones and services to grow a sprawling metropolis",
+   "known": 0.1,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Planescape: Torment",
+   "qid": "Q847638",
+   "fame": 0.459,
+   "engine": "Infinity Engine",
+   "description": "1999 role-playing video game",
+   "hook": "follows an amnesiac, scarred immortal who wakes in a morgue and talks his way through a planar multiverse",
+   "known": 0.1,
+   "kind": "specialist-game"
+  },
+  {
+   "label": "Rayman Legends",
+   "qid": "Q2255492",
+   "fame": 0.459,
+   "engine": "UbiArt Framework",
+   "description": "2013 platform video game developed by Ubisoft",
+   "hook": "is a hand-painted platformer where heroes dash through levels, including ones that run to rock songs",
+   "known": 0.1,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Rust",
+   "qid": "Q15304961",
+   "fame": 0.456,
+   "engine": "Unity",
+   "description": "2018 survival video game",
+   "hook": "drops naked players onto an island to scavenge, build bases and raid or fend off other players",
+   "known": 0.2,
+   "kind": "esports-title"
+  },
+  {
+   "label": "Mirror's Edge",
+   "qid": "Q526350",
+   "fame": 0.453,
+   "engine": "Unreal Engine 3",
+   "description": "2008 first-person action-adventure platform video game",
+   "hook": "is a first-person parkour game where a courier named Faith runs across the white rooftops of a sterile city",
+   "known": 0.1,
+   "kind": "aaa-classic"
+  },
+  {
+   "label": "Minecraft Dungeons",
+   "qid": "Q56884780",
+   "fame": 0.452,
+   "engine": "Unreal Engine 4",
+   "description": "2020 video game developed by Mojang and Double Eleven",
+   "hook": "is a family-friendly, loot-driven dungeon crawler where heroes fight hordes of mobs in co-op",
+   "known": 0.15,
+   "kind": "aaa-classic"
+  }
+ ]
+}

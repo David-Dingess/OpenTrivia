@@ -1,0 +1,360 @@
+{
+ "id": "table.biology.sea-life-class",
+ "kind": "table",
+ "title": "Famous sea creatures and their class",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "sea-life",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?classLabel WHERE { { SELECT ?item (SAMPLE(?f) AS ?class) (COUNT(DISTINCT ?f) AS ?nF) WHERE { VALUES ?name { \"Humpback whale\"@en \"Beluga whale\"@en \"Narwhal\"@en \"Fin whale\"@en \"Gray whale\"@en \"Common minke whale\"@en \"North Atlantic right whale\"@en \"Long-finned pilot whale\"@en \"Dolphin\"@en \"Common bottlenose dolphin\"@en \"Porpoise\"@en \"Dugong\"@en \"West Indian manatee\"@en \"Walrus\"@en \"Sea otter\"@en \"California sea lion\"@en \"Sea lion\"@en \"Leopard seal\"@en \"Southern elephant seal\"@en \"Great white shark\"@en \"Tiger shark\"@en \"Great hammerhead\"@en \"Whale shark\"@en \"Basking shark\"@en \"Goblin shark\"@en \"Nurse shark\"@en \"Shortfin mako shark\"@en \"Blacktip reef shark\"@en \"Giant oceanic manta ray\"@en \"Electric ray\"@en \"Swordfish\"@en \"Atlantic blue marlin\"@en \"Atlantic bluefin tuna\"@en \"Atlantic salmon\"@en \"Red-bellied piranha\"@en \"Great barracuda\"@en \"Mediterranean moray\"@en \"European flounder\"@en \"Atlantic mackerel\"@en \"Koi\"@en \"Goldfish\"@en \"Siamese fighting fish\"@en \"Angelfish\"@en \"Clownfish\"@en \"Colossal squid\"@en \"Giant squid\"@en \"Common octopus\"@en \"Giant Pacific octopus\"@en \"Greater blue-ringed octopus\"@en \"Blue-ringed octopus\"@en \"Common cuttlefish\"@en \"Coconut crab\"@en \"American lobster\"@en \"Antarctic krill\"@en \"Japanese spider crab\"@en \"Blue crab\"@en \"Oyster\"@en \"Clam\"@en \"Mussel\"@en \"Barnacle\"@en \"Conch\"@en \"Sea slug\"@en \"Starfish\"@en \"Box jellyfish\"@en \"Lion's mane jellyfish\"@en \"Portuguese man o' war\"@en \"Brain coral\"@en \"Staghorn coral\"@en \"Jellyfish\"@en \"Leatherback sea turtle\"@en \"Loggerhead sea turtle\"@en \"Hawksbill sea turtle\"@en } ?a schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?name . ?item wdt:P171+ ?f . ?f wdt:P105 wd:Q37517 . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nF = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T13:16:20.363Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T13:16:20.363Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "class",
+   "label": "Class",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "sea creature",
+  "many": "sea creatures",
+  "capitalise": true,
+  "columns": {
+   "class": {
+    "role": "link",
+    "pick": "What class does {label} belong to?",
+    "statement": "{label} belongs to the class {value}.",
+    "match": "Match each sea creature to its class.",
+    "odd": "Three of these sea creatures belong to the class {value}. Which one doesn't?",
+    "all": "Tap all {n} sea creatures in the class {value}.",
+    "reverse": "Which of these belongs to the class {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "giant squid",
+   "qid": "Q13537131",
+   "fame": 0.675,
+   "class": "Cephalopod",
+   "kind": "squid",
+   "description": "species of decapod cephalopods",
+   "hook": "is a legendary deep-sea monster with enormous eyes, long thought to be a myth of sailors",
+   "known": 0.8
+  },
+  {
+   "label": "whale shark",
+   "qid": "Q80378",
+   "fame": 0.621,
+   "class": "Chondrichthyes",
+   "kind": "shark",
+   "description": "species of fish",
+   "hook": "is the largest living animal of its kind, a gentle spotted giant that filters plankton",
+   "known": 0.6
+  },
+  {
+   "label": "great white shark",
+   "qid": "Q129026",
+   "fame": 0.614,
+   "class": "Chondrichthyes",
+   "kind": "shark",
+   "description": "species of large lamniform shark",
+   "hook": "is the famous apex predator of the Jaws films, feared as the ocean's top hunter",
+   "known": 0.95
+  },
+  {
+   "label": "narwhal",
+   "qid": "Q159426",
+   "fame": 0.608,
+   "class": "mammal",
+   "kind": "cetacean",
+   "description": "medium-sized toothed whale that lives year-round in the Arctic",
+   "hook": "is the Arctic 'unicorn of the sea' with a long spiralled tusk sprouting from its head",
+   "known": 0.8
+  },
+  {
+   "label": "Barnacle",
+   "qid": "Q220457",
+   "fame": 0.604,
+   "class": "Thecostraca",
+   "kind": "barnacle",
+   "description": "infraclass of crustaceans",
+   "hook": "is a hard-shelled creature that glues itself to rocks, ship hulls and piers",
+   "known": 0.2
+  },
+  {
+   "label": "Portuguese man o' war",
+   "qid": "Q202526",
+   "fame": 0.59,
+   "class": "Hydrozoa",
+   "kind": "jellyfish",
+   "description": "species of cnidarian",
+   "hook": "is a floating colony with a sail-like gas bladder and painfully stinging tentacles",
+   "known": 0.4
+  },
+  {
+   "label": "colossal squid",
+   "qid": "Q378330",
+   "fame": 0.589,
+   "class": "Cephalopod",
+   "kind": "squid",
+   "description": "species of mollusc",
+   "hook": "is the heaviest known invertebrate, a deep Antarctic giant with rotating hooks on its arms",
+   "known": 0.4
+  },
+  {
+   "label": "blue-ringed octopus",
+   "qid": "Q540649",
+   "fame": 0.585,
+   "class": "Cephalopod",
+   "kind": "octopus",
+   "description": "Species of mollusc",
+   "hook": "is a tiny, brightly marked sea creature carrying a potentially deadly venom",
+   "known": 0.6
+  },
+  {
+   "label": "walrus",
+   "qid": "Q40994",
+   "fame": 0.581,
+   "class": "mammal",
+   "kind": "pinniped",
+   "description": "species of mammal",
+   "hook": "is a tusked Arctic giant that hauls itself onto ice floes and sports a bristly moustache",
+   "known": 0.8
+  },
+  {
+   "label": "basking shark",
+   "qid": "Q185260",
+   "fame": 0.577,
+   "class": "Chondrichthyes",
+   "kind": "shark",
+   "description": "species of shark",
+   "hook": "is the second-largest fish in the sea, cruising with its huge mouth open to filter plankton",
+   "known": 0.4
+  },
+  {
+   "label": "leopard seal",
+   "qid": "Q186663",
+   "fame": 0.577,
+   "class": "mammal",
+   "kind": "pinniped",
+   "description": "species of mammal",
+   "hook": "is a spotted Antarctic predator that hunts penguins",
+   "known": 0.4
+  },
+  {
+   "label": "sea otter",
+   "qid": "Q41407",
+   "fame": 0.57,
+   "class": "mammal",
+   "kind": "otter",
+   "description": "species of marine mammal",
+   "hook": "floats on its back, cracks shellfish open with a rock and holds paws with its friends",
+   "known": 0.8
+  },
+  {
+   "label": "humpback whale",
+   "qid": "Q132905",
+   "fame": 0.567,
+   "class": "mammal",
+   "kind": "cetacean",
+   "description": "species of mammal",
+   "hook": "is famous for its haunting, complex songs and for leaping clear out of the water",
+   "known": 0.8
+  },
+  {
+   "label": "dugong",
+   "qid": "Q129544",
+   "fame": 0.556,
+   "class": "mammal",
+   "kind": "sirenian",
+   "description": "species of mammal",
+   "hook": "is a gentle grazer of seagrass, thought to have inspired old tales of mermaids",
+   "known": 0.2
+  },
+  {
+   "label": "beluga whale",
+   "qid": "Q132072",
+   "fame": 0.555,
+   "class": "mammal",
+   "kind": "cetacean",
+   "description": "species of whale",
+   "hook": "is a pure white Arctic cetacean nicknamed the 'canary of the sea' for its chirps and clicks",
+   "known": 0.6
+  },
+  {
+   "label": "sea lion",
+   "qid": "Q3887135",
+   "fame": 0.535,
+   "class": "mammal",
+   "kind": "pinniped",
+   "description": "subfamily of marine mammals",
+   "hook": "is an eared, noisy marine animal that barks and is a star of aquarium shows",
+   "known": 0.8
+  },
+  {
+   "label": "Coconut crab",
+   "qid": "Q206070",
+   "fame": 0.531,
+   "class": "Malacostraca",
+   "kind": "crab",
+   "description": "species of crustacean",
+   "hook": "is the largest land-living arthropod, able to climb palm trees and crack open its namesake fruit",
+   "known": 0.2
+  },
+  {
+   "label": "oyster",
+   "qid": "Q107411",
+   "fame": 0.516,
+   "class": "Bivalvia",
+   "kind": "oyster",
+   "description": "salt-water bivalve mollusc",
+   "hook": "is a bivalve served on the half shell, and sometimes hides a pearl",
+   "known": 0.8
+  },
+  {
+   "label": "porpoise",
+   "qid": "Q10867",
+   "fame": 0.511,
+   "class": "mammal",
+   "kind": "cetacean",
+   "description": "small cetacean of the family Phocoenidae",
+   "hook": "is a small, shy cousin of the dolphin with a blunt face and no beak",
+   "known": 0.6
+  },
+  {
+   "label": "fin whale",
+   "qid": "Q179020",
+   "fame": 0.503,
+   "class": "mammal",
+   "kind": "cetacean",
+   "description": "baleen whale, and second-largest mammal species",
+   "hook": "is the second-largest animal ever known, a sleek and very fast baleen giant",
+   "known": 0.4
+  },
+  {
+   "label": "Japanese spider crab",
+   "qid": "Q273655",
+   "fame": 0.503,
+   "class": "Malacostraca",
+   "kind": "crab",
+   "description": "species of crab",
+   "hook": "has the longest leg span of any arthropod, reaching several metres from claw to claw",
+   "known": 0.2
+  },
+  {
+   "label": "southern elephant seal",
+   "qid": "Q215343",
+   "fame": 0.497,
+   "class": "mammal",
+   "kind": "pinniped",
+   "description": "species of mammal",
+   "hook": "is the largest of its kind, with males sporting a huge inflatable snout and fighting on beaches",
+   "known": 0.2
+  },
+  {
+   "label": "Lion's Mane Jellyfish",
+   "qid": "Q522939",
+   "fame": 0.496,
+   "class": "Scyphozoa",
+   "kind": "jellyfish",
+   "description": "species of cnidarian",
+   "hook": "has the longest tentacles of any known animal, trailing like a huge stinging tangle",
+   "known": 0.4
+  },
+  {
+   "label": "North Pacific giant octopus",
+   "qid": "Q912404",
+   "fame": 0.496,
+   "class": "Cephalopod",
+   "kind": "octopus",
+   "description": "species of mollusc",
+   "hook": "is the largest of its eight-armed kind, a cold-water record-holder and famous escape artist",
+   "known": 0.2
+  },
+  {
+   "label": "leatherback sea turtle",
+   "qid": "Q120043",
+   "fame": 0.491,
+   "class": "Reptilia",
+   "kind": "turtle",
+   "description": "species of reptile",
+   "hook": "is the largest of its group, diving deep and crossing whole oceans with a soft ridged shell",
+   "known": 0.6
+  },
+  {
+   "label": "shortfin mako shark",
+   "qid": "Q192158",
+   "fame": 0.484,
+   "class": "Chondrichthyes",
+   "kind": "shark",
+   "description": "species of shark",
+   "hook": "is the fastest of its kind, a speedy hunter that leaps high out of the water",
+   "known": 0.4
+  },
+  {
+   "label": "goblin shark",
+   "qid": "Q499461",
+   "fame": 0.474,
+   "class": "Chondrichthyes",
+   "kind": "shark",
+   "description": "deep-sea shark",
+   "hook": "has a long flat snout and jaws that shoot forward out of its pale pink head",
+   "known": 0.05
+  },
+  {
+   "label": "California sea lion",
+   "qid": "Q379732",
+   "fame": 0.466,
+   "class": "mammal",
+   "kind": "pinniped",
+   "description": "species of mammal",
+   "hook": "is the barking performer of circuses and aquariums, often seen lounging on piers",
+   "known": 0.4
+  },
+  {
+   "label": "nurse shark",
+   "qid": "Q756859",
+   "fame": 0.459,
+   "class": "Chondrichthyes",
+   "kind": "shark",
+   "description": "species of elasmobranch fish",
+   "hook": "is a docile bottom-dweller that rests in groups on the sea floor and sucks up its prey",
+   "known": 0.2
+  },
+  {
+   "label": "loggerhead sea turtle",
+   "qid": "Q192095",
+   "fame": 0.457,
+   "class": "Reptilia",
+   "kind": "turtle",
+   "description": "species of turtle",
+   "hook": "is a reptile of the ocean named for its big head, and famed for nesting on beaches at night",
+   "known": 0.6
+  }
+ ]
+}

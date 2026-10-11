@@ -1,0 +1,371 @@
+{
+ "id": "table.food-and-drink.chefs-country",
+ "kind": "table",
+ "title": "Famous chefs and the country they cook for",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "chefs",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nCountry) WHERE { VALUES ?occ { wd:Q3499072 wd:Q16831714 wd:Q1325541 } ?item wdt:P106 ?occ ; wdt:P27 ?c ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 5) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 800 } hint:Prior hint:runFirst true . FILTER(?nCountry = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T10:52:29.595Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T10:52:29.595Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "chef",
+  "many": "chefs",
+  "wildcard": "person",
+  "hookAsk": "Which chef {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} best known in?",
+    "statement": "{label} is a chef best known in {value}.",
+    "match": "Match each chef to the country they are best known in.",
+    "odd": "Three of these chefs are best known in {value}. Which one isn't?",
+    "all": "Tap all {n} chefs best known in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Anthony Bourdain",
+   "qid": "Q426582",
+   "fame": 0.821,
+   "country": "United States",
+   "description": "American chef and television personality (1956-2018)",
+   "hook": "wrote a blunt kitchen memoir, then hosted globe-trotting shows about food and culture",
+   "known": 0.7,
+   "kind": "tv-celebrity"
+  },
+  {
+   "label": "Gordon Ramsay",
+   "qid": "Q15280",
+   "fame": 0.7,
+   "country": "United Kingdom",
+   "description": "British chef, restaurateur, and television personality (born 1966)",
+   "hook": "is a fiery, foul-mouthed TV chef with a huge Michelin-starred restaurant group",
+   "known": 0.8,
+   "kind": "tv-celebrity"
+  },
+  {
+   "label": "Prue Leith",
+   "qid": "Q7253009",
+   "fame": 0.66,
+   "country": "United Kingdom",
+   "description": "South African-British chef, writer, television personality, businesswoman",
+   "hook": "judges bakers in a famous tented competition after replacing Mary Berry",
+   "known": 0.4,
+   "kind": "tv-celebrity"
+  },
+  {
+   "label": "Bobby Flay",
+   "qid": "Q858327",
+   "fame": 0.637,
+   "country": "United States",
+   "description": "American celebrity chef, restaurateur and reality television personality",
+   "hook": "is a grill-loving Food Network star known for challenging rivals to cook-offs",
+   "known": 0.6,
+   "kind": "tv-celebrity"
+  },
+  {
+   "label": "Marco Pierre White",
+   "qid": "Q2917016",
+   "fame": 0.635,
+   "country": "United Kingdom",
+   "description": "British chef and restaurateur",
+   "hook": "became the youngest chef to earn three Michelin stars and once trained Gordon Ramsay",
+   "known": 0.4,
+   "kind": "tv-celebrity"
+  },
+  {
+   "label": "Ina Garten",
+   "qid": "Q273371",
+   "fame": 0.589,
+   "country": "United States",
+   "description": "American author and television presenter",
+   "hook": "hosts a Food Network show about easy, elegant home entertaining and her roast chicken",
+   "known": 0.6,
+   "kind": "tv-celebrity"
+  },
+  {
+   "label": "Jamie Oliver",
+   "qid": "Q190051",
+   "fame": 0.589,
+   "country": "United Kingdom",
+   "description": "British chef and media personality",
+   "hook": "rose to fame as a casual young TV cook and campaigned for healthier school dinners",
+   "known": 0.8,
+   "kind": "tv-celebrity"
+  },
+  {
+   "label": "Delia Smith",
+   "qid": "Q1808967",
+   "fame": 0.588,
+   "country": "United Kingdom",
+   "description": "English cook and television presenter",
+   "hook": "taught generations of home cooks the basics and co-owns a Norwich football club",
+   "known": 0.5,
+   "kind": "specialist"
+  },
+  {
+   "label": "David Chang",
+   "qid": "Q3017652",
+   "fame": 0.567,
+   "country": "United States",
+   "description": "American chef",
+   "hook": null,
+   "known": 0.2,
+   "kind": "fine-dining"
+  },
+  {
+   "label": "Anne Burrell",
+   "qid": "Q4768197",
+   "fame": 0.55,
+   "country": "United States",
+   "description": "American television chef (1969–2025)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "specialist"
+  },
+  {
+   "label": "Alton Brown",
+   "qid": "Q4736872",
+   "fame": 0.535,
+   "country": "United States",
+   "description": "American chef, author and musician",
+   "hook": "hosts a science-minded Food Network show and commentates on Iron Chef America",
+   "known": 0.4,
+   "kind": "specialist"
+  },
+  {
+   "label": "Rachael Ray",
+   "qid": "Q257943",
+   "fame": 0.533,
+   "country": "United States",
+   "description": "American television host, businesswoman, celebrity cook, and author",
+   "hook": "built a cooking empire on quick 30-minute meals and a daytime talk show",
+   "known": 0.6,
+   "kind": "tv-celebrity"
+  },
+  {
+   "label": "Paula Deen",
+   "qid": "Q3071037",
+   "fame": 0.508,
+   "country": "United States",
+   "description": "American cook, cooking show host, restaurateur, author, actress, and television personality",
+   "hook": "is a Savannah cook famed for buttery Southern comfort food and her restaurant The Lady and Sons",
+   "known": 0.6,
+   "kind": "tv-celebrity"
+  },
+  {
+   "label": "Heston Blumenthal",
+   "qid": "Q1616078",
+   "fame": 0.507,
+   "country": "United Kingdom",
+   "description": "English chef",
+   "hook": "is a pioneer of scientific cooking, famed for snail porridge and bacon-and-egg ice cream",
+   "known": 0.5,
+   "kind": "fine-dining"
+  },
+  {
+   "label": "Rick Stein",
+   "qid": "Q7331770",
+   "fame": 0.505,
+   "country": "United Kingdom",
+   "description": "English chef, writer and television presenter",
+   "hook": "is a TV seafood champion with a restaurant empire in the Cornish fishing town of Padstow",
+   "known": 0.4,
+   "kind": "specialist"
+  },
+  {
+   "label": "Thomas Keller",
+   "qid": "Q382550",
+   "fame": 0.502,
+   "country": "United States",
+   "description": "American chef, restaurateur, and cookbook writer",
+   "hook": null,
+   "known": 0.2,
+   "kind": "fine-dining"
+  },
+  {
+   "label": "Gary Rhodes",
+   "qid": "Q1494939",
+   "fame": 0.5,
+   "country": "United Kingdom",
+   "description": "British chef (1960–2019)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "specialist"
+  },
+  {
+   "label": "Gino D'Acampo",
+   "qid": "Q5563218",
+   "fame": 0.499,
+   "country": "Italy",
+   "description": "Italian celebrity chef and television personality",
+   "hook": "won a jungle reality show and became a TV regular cooking Italian food in Britain",
+   "known": 0.4,
+   "kind": "tv-celebrity"
+  },
+  {
+   "label": "Sandra Lee",
+   "qid": "Q15524741",
+   "fame": 0.499,
+   "country": "United States",
+   "description": "American television chef and author",
+   "hook": null,
+   "known": 0.2,
+   "kind": "specialist"
+  },
+  {
+   "label": "Auguste Escoffier",
+   "qid": "Q313744",
+   "fame": 0.496,
+   "country": "France",
+   "description": "French chef and culinary writer (1846–1935)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "culinary-legend"
+  },
+  {
+   "label": "Eric Ripert",
+   "qid": "Q2272017",
+   "fame": 0.49,
+   "country": "France",
+   "description": "French chef",
+   "hook": null,
+   "known": 0.2,
+   "kind": "fine-dining"
+  },
+  {
+   "label": "Andrew Zimmern",
+   "qid": "Q2405404",
+   "fame": 0.487,
+   "country": "United States",
+   "description": "American chef",
+   "hook": null,
+   "known": 0.2,
+   "kind": "specialist"
+  },
+  {
+   "label": "Christina Tosi",
+   "qid": "Q17505053",
+   "fame": 0.487,
+   "country": "United States",
+   "description": "American chef, author & television personality",
+   "hook": null,
+   "known": 0.2,
+   "kind": "specialist"
+  },
+  {
+   "label": "Curtis Stone",
+   "qid": "Q1145657",
+   "fame": 0.477,
+   "country": "Australia",
+   "description": "Australian chef",
+   "hook": null,
+   "known": 0.2,
+   "kind": "specialist"
+  },
+  {
+   "label": "Wolfgang Puck",
+   "qid": "Q78893",
+   "fame": 0.476,
+   "country": "United States",
+   "description": "Austrian-American chef and restaurateur",
+   "hook": "launched a celebrated Sunset Strip restaurant that grew into a worldwide dining empire",
+   "known": 0.7,
+   "kind": "tv-celebrity"
+  },
+  {
+   "label": "Joël Robuchon",
+   "qid": "Q1367752",
+   "fame": 0.471,
+   "country": "France",
+   "description": "French chef (1945–2018)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "fine-dining"
+  },
+  {
+   "label": "Pati Jinich",
+   "qid": "Q24765557",
+   "fame": 0.464,
+   "country": "Mexico",
+   "description": "Mexican chef, TV personality, cookbook author",
+   "hook": null,
+   "known": 0.05,
+   "kind": "specialist"
+  },
+  {
+   "label": "Geoffrey Zakarian",
+   "qid": "Q5534985",
+   "fame": 0.459,
+   "country": "United States",
+   "description": "Armenian-American celebrity chef",
+   "hook": null,
+   "known": 0.2,
+   "kind": "specialist"
+  },
+  {
+   "label": "Buddy Valastro",
+   "qid": "Q12156234",
+   "fame": 0.457,
+   "country": "United States",
+   "description": "American television host",
+   "hook": null,
+   "known": 0.2,
+   "kind": "specialist"
+  },
+  {
+   "label": "Paul Bocuse",
+   "qid": "Q8159",
+   "fame": 0.457,
+   "country": "France",
+   "description": "French chef (1926–2018)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "culinary-legend"
+  },
+  {
+   "label": "Rick Bayless",
+   "qid": "Q7331230",
+   "fame": 0.454,
+   "country": "United States",
+   "description": "American chef",
+   "hook": null,
+   "known": 0.05,
+   "kind": "specialist"
+  }
+ ]
+}

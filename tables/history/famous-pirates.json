@@ -1,0 +1,175 @@
+{
+ "id": "table.history.famous-pirates",
+ "kind": "table",
+ "title": "Famous pirates",
+ "genre": "society",
+ "category": "history",
+ "topic": "pirates-and-spies",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Hand-built, checked row by row against English Wikipedia",
+  "method": "enwiki: each pirate's own article plus Queen Anne's Revenge, Adventure Galley, Royal Fortune, Ranger (sloop), Fancy, Golden Hind, Caribbean",
+  "attribution": null,
+  "fetchedAt": "2026-10-05T19:55:48.661Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-05T19:57:30.581Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "ship",
+   "label": "Famous ship",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "sea",
+   "label": "Waters they sailed",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "pirate",
+  "many": "pirates",
+  "wildcard": "person",
+  "columns": {
+   "ship": {
+    "role": "code",
+    "pick": "Which ship is the pirate {label} best known for sailing?",
+    "statement": "{label} is best known for sailing the {value}.",
+    "match": "Match each pirate to their famous ship.",
+    "reverse": "Which pirate sailed the {value}?"
+   },
+   "sea": {
+    "role": "code",
+    "pick": "Where did {label} do most of their pirating?",
+    "statement": "{label} sailed the waters of {value}.",
+    "match": "Match each pirate to the waters they sailed."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Blackbeard",
+   "qid": null,
+   "fame": 0.646,
+   "ship": "Queen Anne's Revenge",
+   "sea": "Caribbean and the US East Coast",
+   "kind": "pirate",
+   "known": 0.8
+  },
+  {
+   "label": "Captain Kidd",
+   "qid": null,
+   "fame": 0.495,
+   "ship": "Adventure Galley",
+   "sea": "Indian Ocean",
+   "kind": "pirate",
+   "known": 0.6
+  },
+  {
+   "label": "Bartholomew Roberts",
+   "qid": null,
+   "fame": 0.503,
+   "ship": "Royal Fortune",
+   "sea": "Caribbean and West Africa",
+   "kind": "pirate",
+   "known": 0.4
+  },
+  {
+   "label": "Anne Bonny",
+   "qid": null,
+   "fame": 0.567,
+   "ship": "Ranger",
+   "sea": "Caribbean",
+   "kind": "pirate",
+   "known": 0.6
+  },
+  {
+   "label": "Mary Read",
+   "qid": null,
+   "fame": 0.492,
+   "ship": "Ranger",
+   "sea": "Caribbean",
+   "kind": "pirate",
+   "known": 0.4
+  },
+  {
+   "label": "Henry Every",
+   "qid": null,
+   "fame": 0.501,
+   "ship": "Fancy",
+   "sea": "Indian Ocean",
+   "kind": "pirate",
+   "known": 0.2
+  },
+  {
+   "label": "Stede Bonnet",
+   "qid": null,
+   "fame": 0.516,
+   "ship": "Revenge",
+   "sea": "Atlantic coast of the American colonies",
+   "kind": "pirate",
+   "known": 0.2
+  },
+  {
+   "label": "Jean Lafitte",
+   "qid": null,
+   "fame": 0.478,
+   "ship": null,
+   "sea": "Gulf of Mexico",
+   "kind": "pirate",
+   "known": 0.4
+  },
+  {
+   "label": "Charles Vane",
+   "qid": null,
+   "fame": 0.451,
+   "ship": null,
+   "sea": "Bahamas",
+   "kind": "pirate",
+   "known": 0.2
+  },
+  {
+   "label": "Hayreddin Barbarossa",
+   "qid": null,
+   "fame": 0.498,
+   "ship": null,
+   "sea": "Mediterranean Sea",
+   "kind": "pirate",
+   "known": 0.2
+  },
+  {
+   "label": "Grace O'Malley",
+   "qid": null,
+   "fame": 0.568,
+   "ship": null,
+   "sea": "Seas off western Ireland",
+   "kind": "pirate",
+   "known": 0.4
+  },
+  {
+   "label": "Henry Morgan",
+   "qid": null,
+   "fame": 0.485,
+   "ship": null,
+   "sea": "Caribbean",
+   "kind": "privateer",
+   "known": 0.6
+  },
+  {
+   "label": "Francis Drake",
+   "qid": null,
+   "fame": 0.605,
+   "ship": "Golden Hind",
+   "sea": "Spanish Main and the Pacific coast of the Americas",
+   "kind": "privateer",
+   "known": 0.8
+  }
+ ]
+}

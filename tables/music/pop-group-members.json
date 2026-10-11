@@ -1,0 +1,921 @@
+{
+ "id": "table.music.pop-group-members",
+ "kind": "table",
+ "title": "Boy bands and girl groups and their members",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "bands",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?bandLabel WHERE { { SELECT ?item (SAMPLE(?b) AS ?band) (COUNT(DISTINCT ?b) AS ?nB) WHERE { VALUES ?cls { wd:Q216337 wd:Q641066 } ?b wdt:P31/wdt:P279* ?cls . { ?item wdt:P463 ?b } UNION { ?b wdt:P527 ?item } ?item wdt:P31 wd:Q5 ; wikibase:sitelinks ?sl . FILTER(?sl >= 8) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nB = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 329",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T07:03:01.089Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T07:03:01.089Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "group",
+   "label": "Group",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "pop star",
+  "many": "pop stars",
+  "wildcard": "person",
+  "hookAsk": "Which pop star {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "group": {
+    "role": "link",
+    "pick": "Which group was {label} a member of?",
+    "statement": "{label} was a member of {value}.",
+    "match": "Match each singer to their group.",
+    "odd": "Three of these singers were in {value}. Which one wasn't?",
+    "all": "Tap all {n} members of {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Lisa",
+   "qid": "Q26707663",
+   "fame": 0.776,
+   "group": "Blackpink",
+   "description": "Thai rapper, singer, model, dancer and actress (born 1997)",
+   "hook": "is a Thai rapper and dancer who became a global K-pop star and solo performer",
+   "known": 0.6,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Sophia Laforteza",
+   "qid": "Q124692753",
+   "fame": 0.724,
+   "group": "Katseye",
+   "description": "Filipina and American singer (born 2002)",
+   "hook": "was chosen on a global streaming talent-search show to form a worldwide pop girl group",
+   "known": 0.05,
+   "kind": "modern western pop"
+  },
+  {
+   "label": "Manon Bannerman",
+   "qid": "Q124692741",
+   "fame": 0.723,
+   "group": "Katseye",
+   "description": "Swiss singer and model",
+   "hook": "is a Swiss-born singer picked on a reality show to join a multinational girl group",
+   "known": 0.05,
+   "kind": "modern western pop"
+  },
+  {
+   "label": "Justin Timberlake",
+   "qid": "Q43432",
+   "fame": 0.706,
+   "group": "NSYNC",
+   "description": "American singer and actor (born 1981)",
+   "hook": "went from boy-band heartthrob to solo hitmaker with songs like Cry Me a River",
+   "known": 0.8,
+   "kind": "1990s-2000s boy band"
+  },
+  {
+   "label": "Melanie Brown",
+   "qid": "Q236005",
+   "fame": 0.682,
+   "group": "Spice Girls",
+   "description": "British singer and television personality (born 1975)",
+   "hook": "was nicknamed Scary, known for leopard print and a loud Yorkshire accent",
+   "known": 0.6,
+   "kind": "1990s girl group"
+  },
+  {
+   "label": "Robbie Williams",
+   "qid": "Q47875",
+   "fame": 0.677,
+   "group": "Take That",
+   "description": "British singer (born 1974)",
+   "hook": "left a famous boy band for a solo career and sang the ballad Angels",
+   "known": 0.6,
+   "kind": "1990s-2000s boy band"
+  },
+  {
+   "label": "Rosé",
+   "qid": "Q27655344",
+   "fame": 0.674,
+   "group": "Blackpink",
+   "description": "South Korean-New Zealand singer (born 1997)",
+   "hook": "sang the global smash APT. alongside Bruno Mars",
+   "known": 0.6,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Melanie C",
+   "qid": "Q151830",
+   "fame": 0.665,
+   "group": "Spice Girls",
+   "description": "British pop singer (born 1974)",
+   "hook": "was nicknamed Sporty, known for tracksuits and backflips",
+   "known": 0.6,
+   "kind": "1990s girl group"
+  },
+  {
+   "label": "V",
+   "qid": "Q18388296",
+   "fame": 0.665,
+   "group": "BTS",
+   "description": "South Korean singer, actor and dancer",
+   "hook": "is a K-pop singer and actor who released the solo album Layover",
+   "known": 0.6,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Jennie",
+   "qid": "Q26262599",
+   "fame": 0.664,
+   "group": "Blackpink",
+   "description": "South Korean singer-songwriter and rapper (born 1996)",
+   "hook": "released the solo single Solo and became a Chanel ambassador",
+   "known": 0.6,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Jung Kook",
+   "qid": "Q22338877",
+   "fame": 0.656,
+   "group": "BTS",
+   "description": "South Korean singer",
+   "hook": "is the youngest of his group and scored a solo hit called Seven",
+   "known": 0.6,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Victoria Beckham",
+   "qid": "Q19810",
+   "fame": 0.651,
+   "group": "Spice Girls",
+   "description": "English businesswoman, fashion designer and singer (born 1974)",
+   "hook": "was nicknamed Posh and became a fashion designer married to a soccer star",
+   "known": 0.6,
+   "kind": "1990s girl group"
+  },
+  {
+   "label": "Geri Halliwell",
+   "qid": "Q19845",
+   "fame": 0.649,
+   "group": "Spice Girls",
+   "description": "English singer and actress (born 1972)",
+   "hook": "was nicknamed Ginger and once wore a famous Union Jack dress",
+   "known": 0.6,
+   "kind": "1990s girl group"
+  },
+  {
+   "label": "Jisoo",
+   "qid": "Q27655361",
+   "fame": 0.647,
+   "group": "Blackpink",
+   "description": "South Korean singer-songwriter, actress, and model  (born 1995)",
+   "hook": "is a K-pop singer who also starred in the TV drama Snowdrop",
+   "known": 0.6,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Leigh Anne Pinnock",
+   "qid": "Q19750811",
+   "fame": 0.633,
+   "group": "Little Mix",
+   "description": "British singer",
+   "hook": "went solo with the single Don't Say Love after a talent-show-winning girl group",
+   "known": 0.4,
+   "kind": "2000s-2010s girl group"
+  },
+  {
+   "label": "Nicole Appleton",
+   "qid": "Q2167793",
+   "fame": 0.632,
+   "group": "All Saints",
+   "description": "Canadian singer (born 1974)",
+   "hook": "sang on the hit Never Ever and was once married to Oasis singer Liam Gallagher",
+   "known": 0.2,
+   "kind": "1990s girl group"
+  },
+  {
+   "label": "Cheryl",
+   "qid": "Q212772",
+   "fame": 0.629,
+   "group": "Girls Aloud",
+   "description": "British singer, dancer, and television presenter",
+   "hook": "found fame on Popstars: The Rivals and later judged on The X Factor UK",
+   "known": 0.2,
+   "kind": "2000s-2010s girl group"
+  },
+  {
+   "label": "Emma Bunton",
+   "qid": "Q219878",
+   "fame": 0.629,
+   "group": "Spice Girls",
+   "description": "British singer (born 1976)",
+   "hook": "was nicknamed Baby, known for pigtails and platform sneakers",
+   "known": 0.6,
+   "kind": "1990s girl group"
+  },
+  {
+   "label": "Camila Cabello",
+   "qid": "Q18810940",
+   "fame": 0.624,
+   "group": "Fifth Harmony",
+   "description": "Cuban-Mexican-American singer",
+   "hook": "left a TV-talent-show girl group and scored a solo smash with Havana",
+   "known": 0.6,
+   "kind": "2000s-2010s girl group"
+  },
+  {
+   "label": "Jimin",
+   "qid": "Q20947093",
+   "fame": 0.614,
+   "group": "BTS",
+   "description": "South Korean singer and dancer (BTS)",
+   "hook": "is a dancer and singer who released the solo hit Like Crazy",
+   "known": 0.6,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Rozonda Thomas",
+   "qid": "Q438366",
+   "fame": 0.614,
+   "group": "TLC",
+   "description": "American singer, actress from Georgia (b. 1971)",
+   "hook": "goes by the nickname Chilli and sang on Waterfalls and No Scrubs",
+   "known": 0.4,
+   "kind": "1990s girl group"
+  },
+  {
+   "label": "Brian McFadden",
+   "qid": "Q311970",
+   "fame": 0.612,
+   "group": "Westlife",
+   "description": "Irish singer",
+   "hook": "was the first to quit a hit Irish boy band and went solo",
+   "known": 0.2,
+   "kind": "1990s-2000s boy band"
+  },
+  {
+   "label": "RM",
+   "qid": "Q20514446",
+   "fame": 0.606,
+   "group": "BTS",
+   "description": "South Korean rapper, singer, songwriter, record producer, and leader of the boy band BTS",
+   "hook": "is the leader of a K-pop band and learned English by watching the sitcom Friends",
+   "known": 0.6,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Nick Lachey",
+   "qid": "Q356109",
+   "fame": 0.599,
+   "group": "98 Degrees",
+   "description": "American singer, actor, producer and television personality",
+   "hook": "starred in the reality show Newlyweds with his then-wife Jessica Simpson",
+   "known": 0.4,
+   "kind": "1990s-2000s boy band"
+  },
+  {
+   "label": "Huh Yun-jin",
+   "qid": "Q111537648",
+   "fame": 0.597,
+   "group": "Le Sserafim",
+   "description": "South Korean-American singer-songwriter (born 2001)",
+   "hook": "is a K-pop singer and songwriter who grew up partly in the United States",
+   "known": 0.05,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Kim Seok-jin",
+   "qid": "Q24276424",
+   "fame": 0.596,
+   "group": "BTS",
+   "description": "South Korean singer",
+   "hook": "is the oldest of his group, goes by Jin, and released the solo song The Astronaut",
+   "known": 0.6,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Mark Feehily",
+   "qid": "Q1775181",
+   "fame": 0.594,
+   "group": "Westlife",
+   "description": "Irish pop singer (born 1980)",
+   "hook": "shared vocals on the ballad Flying Without Wings",
+   "known": 0.2,
+   "kind": "1990s-2000s boy band"
+  },
+  {
+   "label": "Felix",
+   "qid": "Q61100678",
+   "fame": 0.592,
+   "group": "Stray Kids",
+   "description": "South Korean-Australian rapper and singer (born 2000)",
+   "hook": "is the Aussie of a K-pop band, known for an unusually deep speaking voice",
+   "known": 0.2,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Lance Bass",
+   "qid": "Q443120",
+   "fame": 0.592,
+   "group": "NSYNC",
+   "description": "American singer, dancer, actor, and film and television producer",
+   "hook": "trained to fly into space as a would-be cosmonaut",
+   "known": 0.4,
+   "kind": "1990s-2000s boy band"
+  },
+  {
+   "label": "Suga",
+   "qid": "Q21075020",
+   "fame": 0.589,
+   "group": "BTS",
+   "description": "South Korean rapper, singer, record producer and songwriter",
+   "hook": "also performs under the name Agust D and releases solo mixtapes",
+   "known": 0.6,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Natalie Appleton",
+   "qid": "Q2426357",
+   "fame": 0.581,
+   "group": "All Saints",
+   "description": "Canadian singer",
+   "hook": "performed the hit Never Ever alongside her younger sister",
+   "known": 0.2,
+   "kind": "1990s girl group"
+  },
+  {
+   "label": "Kazuha Nakamura",
+   "qid": "Q111544446",
+   "fame": 0.578,
+   "group": "Le Sserafim",
+   "description": "Japanese singer (born 2003)",
+   "hook": "was a ballet dancer before becoming a K-pop idol",
+   "known": 0.05,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "J-hope",
+   "qid": "Q16236223",
+   "fame": 0.574,
+   "group": "BTS",
+   "description": "South Korean rapper, singer, dancer, songwriter, and record producer",
+   "hook": "released the solo album Jack in the Box and headlined Lollapalooza",
+   "known": 0.6,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Bang Chan",
+   "qid": "Q59670293",
+   "fame": 0.572,
+   "group": "Stray Kids",
+   "description": "Australian-South Korean singer, rapper and music producer (born 1997)",
+   "hook": "leads a K-pop boy band and writes its songs, after growing up in Sydney",
+   "known": 0.2,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Joey Fatone",
+   "qid": "Q1640877",
+   "fame": 0.571,
+   "group": "NSYNC",
+   "description": "American pop singer and actor (born 1977)",
+   "hook": "briefly hosted the TV game show Family Feud",
+   "known": 0.4,
+   "kind": "1990s-2000s boy band"
+  },
+  {
+   "label": "Sarah Harding",
+   "qid": "Q254962",
+   "fame": 0.57,
+   "group": "Girls Aloud",
+   "description": "British singer and actress (1981-2021)",
+   "hook": "joined through Popstars: The Rivals and later won Celebrity Big Brother",
+   "known": 0.2,
+   "kind": "2000s-2010s girl group"
+  },
+  {
+   "label": "Karina",
+   "qid": "Q101161002",
+   "fame": 0.568,
+   "group": "Aespa",
+   "description": "South Korean singer (born 2000)",
+   "hook": "leads a K-pop girl group whose act pairs each member with a digital avatar",
+   "known": 0.3,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Tionne Watkins",
+   "qid": "Q273981",
+   "fame": 0.563,
+   "group": "TLC",
+   "description": "American singer",
+   "hook": "is known as T-Boz for her deep, raspy voice on hits like Waterfalls",
+   "known": 0.4,
+   "kind": "1990s girl group"
+  },
+  {
+   "label": "Bae Suzy",
+   "qid": "Q464645",
+   "fame": 0.557,
+   "group": "Miss A",
+   "description": "South Korean singer and actress (born 1994)",
+   "hook": "is a K-pop singer who became a leading TV drama actress in shows like Start-Up",
+   "known": 0.3,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "JC Chasez",
+   "qid": "Q538409",
+   "fame": 0.556,
+   "group": "NSYNC",
+   "description": "American singer, songwriter, dancer, record producer, and occasional actor",
+   "hook": "got his start as a cast member on a famous kids' TV variety show alongside Britney Spears",
+   "known": 0.4,
+   "kind": "1990s-2000s boy band"
+  },
+  {
+   "label": "Jade Thirlwall",
+   "qid": "Q19750540",
+   "fame": 0.553,
+   "group": "Little Mix",
+   "description": "British singer",
+   "hook": "released the solo single Angel of My Dreams after a talent-show-winning girl group",
+   "known": 0.4,
+   "kind": "2000s-2010s girl group"
+  },
+  {
+   "label": "Normani",
+   "qid": "Q28148022",
+   "fame": 0.543,
+   "group": "Fifth Harmony",
+   "description": "American singer and dancer",
+   "hook": "went solo with the hit Motivation and competed on Dancing with the Stars",
+   "known": 0.2,
+   "kind": "2000s-2010s girl group"
+  },
+  {
+   "label": "Choi Ye-na",
+   "qid": "Q55694544",
+   "fame": 0.542,
+   "group": "Iz*One",
+   "description": "South Korean singer (born 1999)",
+   "hook": "debuted after the survival show Produce 48 and performs solo as Yena",
+   "known": 0.05,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Jackson Wang",
+   "qid": "Q16905948",
+   "fame": 0.542,
+   "group": "Got7",
+   "description": "Chinese rapper and singer (born 1994)",
+   "hook": "is a Hong Kong-born rapper who was once a member of his national fencing team",
+   "known": 0.3,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Jesy Nelson",
+   "qid": "Q25939080",
+   "fame": 0.54,
+   "group": "Little Mix",
+   "description": "British singer",
+   "hook": "left a talent-show-winning girl group and went solo with the song Boyz",
+   "known": 0.4,
+   "kind": "2000s-2010s girl group"
+  },
+  {
+   "label": "Gary Barlow",
+   "qid": "Q328753",
+   "fame": 0.536,
+   "group": "Take That",
+   "description": "British singer",
+   "hook": "writes most of the band's hits and was a judge on The X Factor UK",
+   "known": 0.4,
+   "kind": "1990s-2000s boy band"
+  },
+  {
+   "label": "Giselle",
+   "qid": "Q101161168",
+   "fame": 0.532,
+   "group": "Aespa",
+   "description": "Japanese singer and rapper (born 2000)",
+   "hook": "is the Japanese rapper of a K-pop girl group with digital avatar partners",
+   "known": 0.3,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Park Ji-hoon",
+   "qid": "Q30114466",
+   "fame": 0.532,
+   "group": "Wanna One",
+   "description": "South Korean actor and singer, born 1999",
+   "hook": "rose to fame on the survival show Produce 101 and also works as an actor",
+   "known": 0.05,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Perrie Edwards",
+   "qid": "Q16126719",
+   "fame": 0.53,
+   "group": "Little Mix",
+   "description": "British singer",
+   "hook": "sang the breakup anthem Shout Out to My Ex after winning a TV talent contest as a teen",
+   "known": 0.4,
+   "kind": "2000s-2010s girl group"
+  },
+  {
+   "label": "Carlos PenaVega",
+   "qid": "Q26053",
+   "fame": 0.529,
+   "group": "Big Time Rush",
+   "description": "American film and TV actor, singer-songwriter, dancer and television show host",
+   "hook": "starred as a hockey-playing teen on a Nickelodeon TV show",
+   "known": 0.2,
+   "kind": "modern western pop"
+  },
+  {
+   "label": "Lauren Jauregui",
+   "qid": "Q18921974",
+   "fame": 0.526,
+   "group": "Fifth Harmony",
+   "description": "American singer and songwriter (born 1996)",
+   "hook": "went solo with the single More Than That after leaving a girl group",
+   "known": 0.2,
+   "kind": "2000s-2010s girl group"
+  },
+  {
+   "label": "Hyunjin",
+   "qid": "Q57601775",
+   "fame": 0.525,
+   "group": "Stray Kids",
+   "description": "South Korean singer, model and rapper",
+   "hook": "is a K-pop dancer and model famed for his striking looks",
+   "known": 0.2,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Chris Kirkpatrick",
+   "qid": "Q3311525",
+   "fame": 0.522,
+   "group": "NSYNC",
+   "description": "American singer and dancer",
+   "hook": "voiced the pop star Chip Skylark in a Nickelodeon cartoon",
+   "known": 0.2,
+   "kind": "1990s-2000s boy band"
+  },
+  {
+   "label": "Hwasa",
+   "qid": "Q19603912",
+   "fame": 0.521,
+   "group": "Mamamoo",
+   "description": "South Korean singer and rapper (born 1995)",
+   "hook": "is a K-pop rapper and singer known for the solo hit Maria",
+   "known": 0.2,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Shane Filan",
+   "qid": "Q767609",
+   "fame": 0.521,
+   "group": "Westlife",
+   "description": "Irish pop singer",
+   "hook": "went solo with the album You and Me after leading a band's biggest ballads",
+   "known": 0.2,
+   "kind": "1990s-2000s boy band"
+  },
+  {
+   "label": "Nicky Byrne",
+   "qid": "Q320224",
+   "fame": 0.52,
+   "group": "Westlife",
+   "description": "Irish singer-songwriter, radio and TV presenter, dancer, and footballer",
+   "hook": "represented his home country at Eurovision with the song Sunlight",
+   "known": 0.2,
+   "kind": "1990s-2000s boy band"
+  },
+  {
+   "label": "Ro Woon",
+   "qid": "Q28790332",
+   "fame": 0.518,
+   "group": "SF9",
+   "description": "South Korean actor & singer (born 1996)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Winter",
+   "qid": "Q101161289",
+   "fame": 0.517,
+   "group": "Aespa",
+   "description": "South Korean singer (born 2001)",
+   "hook": null,
+   "known": 0.3,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Ningning",
+   "qid": "Q101161499",
+   "fame": 0.516,
+   "group": "Aespa",
+   "description": "Chinese singer (born 2002)",
+   "hook": "is the youngest member of a K-pop girl group with digital avatar counterparts",
+   "known": 0.3,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Han",
+   "qid": "Q60994278",
+   "fame": 0.511,
+   "group": "Stray Kids",
+   "description": "South Korean rapper, singer-songwriter and producer (born 2000)",
+   "hook": "raps and produces in the group's in-house three-person production team",
+   "known": 0.2,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Kian Egan",
+   "qid": "Q598728",
+   "fame": 0.511,
+   "group": "Westlife",
+   "description": "Irish pop singer (born 1980)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "1990s-2000s boy band"
+  },
+  {
+   "label": "Jackson Yee",
+   "qid": "Q22966646",
+   "fame": 0.507,
+   "group": "TFBoys",
+   "description": "Chinese singer and actor",
+   "hook": null,
+   "known": 0.05,
+   "kind": "other asian"
+  },
+  {
+   "label": "Jeon Soyeon",
+   "qid": "Q26707915",
+   "fame": 0.503,
+   "group": "I-dle",
+   "description": "South Korean singer and rapper (born 1998)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Lee Know",
+   "qid": "Q59260597",
+   "fame": 0.499,
+   "group": "Stray Kids",
+   "description": "South Korean singer and dancer (born 1998)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Jessica Jung",
+   "qid": "Q233911",
+   "fame": 0.497,
+   "group": "Girls' Generation",
+   "description": "South Korean-American singer",
+   "hook": null,
+   "known": 0.2,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Ong Seongwu",
+   "qid": "Q30311753",
+   "fame": 0.497,
+   "group": "Wanna One",
+   "description": "South Korean singer",
+   "hook": null,
+   "known": 0.05,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Nadine Coyle",
+   "qid": "Q977999",
+   "fame": 0.496,
+   "group": "Girls Aloud",
+   "description": "Irish singer and actress",
+   "hook": null,
+   "known": 0.2,
+   "kind": "2000s-2010s girl group"
+  },
+  {
+   "label": "Takuya Kimura",
+   "qid": "Q362254",
+   "fame": 0.494,
+   "group": "SMAP",
+   "description": "Japanese actor and singer",
+   "hook": null,
+   "known": 0.2,
+   "kind": "other asian"
+  },
+  {
+   "label": "Melanie Blatt",
+   "qid": "Q211213",
+   "fame": 0.486,
+   "group": "All Saints",
+   "description": "British singer",
+   "hook": null,
+   "known": 0.2,
+   "kind": "1990s girl group"
+  },
+  {
+   "label": "Chou Tzuyu",
+   "qid": "Q20688219",
+   "fame": 0.485,
+   "group": "Twice",
+   "description": "Taiwanese singer (born 1999)",
+   "hook": null,
+   "known": 0.3,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Jason Orange",
+   "qid": "Q130547",
+   "fame": 0.485,
+   "group": "Take That",
+   "description": "British pop singer",
+   "hook": "sang in a hugely popular English pop group that split up, reunited, and then he left show business",
+   "known": 0.4,
+   "kind": "1990s-2000s boy band"
+  },
+  {
+   "label": "Kim Min-gyu",
+   "qid": "Q21824887",
+   "fame": 0.482,
+   "group": "Seventeen",
+   "description": "South Korean singer and rapper",
+   "hook": null,
+   "known": 0.2,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "James Maslow",
+   "qid": "Q26058",
+   "fame": 0.479,
+   "group": "Big Time Rush",
+   "description": "American actor and singer",
+   "hook": null,
+   "known": 0.2,
+   "kind": "modern western pop"
+  },
+  {
+   "label": "Seungmin",
+   "qid": "Q60467634",
+   "fame": 0.476,
+   "group": "Stray Kids",
+   "description": "South Korean singer (born 2000)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Kang Chan-hee",
+   "qid": "Q6824033",
+   "fame": 0.474,
+   "group": "SF9",
+   "description": "South Korean singer and actor",
+   "hook": null,
+   "known": 0.05,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "I.N",
+   "qid": "Q59831589",
+   "fame": 0.472,
+   "group": "Stray Kids",
+   "description": "South Korean singer (born 2001)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Kwon Eun-bi",
+   "qid": "Q56505060",
+   "fame": 0.471,
+   "group": "Iz*One",
+   "description": "South Korean singer",
+   "hook": null,
+   "known": 0.05,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Shin Yu-na",
+   "qid": "Q60870263",
+   "fame": 0.466,
+   "group": "Itzy",
+   "description": "South Korean singer and rapper",
+   "hook": null,
+   "known": 0.2,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Changbin",
+   "qid": "Q61100669",
+   "fame": 0.465,
+   "group": "Stray Kids",
+   "description": "South Korean rapper, dancer, singer and songwriter",
+   "hook": null,
+   "known": 0.2,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Kimberley Walsh",
+   "qid": "Q256824",
+   "fame": 0.462,
+   "group": "Girls Aloud",
+   "description": "British singer and actress",
+   "hook": null,
+   "known": 0.2,
+   "kind": "2000s-2010s girl group"
+  },
+  {
+   "label": "Nicola Roberts",
+   "qid": "Q1072383",
+   "fame": 0.462,
+   "group": "Girls Aloud",
+   "description": "British singer and musician",
+   "hook": null,
+   "known": 0.2,
+   "kind": "2000s-2010s girl group"
+  },
+  {
+   "label": "Henry Lau",
+   "qid": "Q486443",
+   "fame": 0.461,
+   "group": "Super Junior-M",
+   "description": "Taiwnanese-Canadian singer and musician",
+   "hook": null,
+   "known": 0.2,
+   "kind": "k-pop boy"
+  },
+  {
+   "label": "Son Na-eun",
+   "qid": "Q492666",
+   "fame": 0.461,
+   "group": "Apink",
+   "description": "South Korean singer, model and actress",
+   "hook": null,
+   "known": 0.2,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Cho Mi-yeon",
+   "qid": "Q56259927",
+   "fame": 0.459,
+   "group": "I-dle",
+   "description": "South Korean singer; member of i-dle",
+   "hook": null,
+   "known": 0.2,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "CL",
+   "qid": "Q483683",
+   "fame": 0.458,
+   "group": "2NE1",
+   "description": "South Korean rapper and singer",
+   "hook": null,
+   "known": 0.2,
+   "kind": "k-pop girl"
+  },
+  {
+   "label": "Song Yuqi",
+   "qid": "Q55287306",
+   "fame": 0.456,
+   "group": "I-dle",
+   "description": "Chinese singer (born 1999)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "k-pop girl"
+  }
+ ]
+}

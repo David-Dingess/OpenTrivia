@@ -1,0 +1,82 @@
+{
+ "id": "list.music.queen-members",
+ "kind": "list",
+ "title": "Members of Queen",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "bands",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { wd:Q15862 p:P527 ?st . ?st ps:P527 ?item . FILTER NOT EXISTS { ?st pq:P582 ?end . FILTER(?end < \"1972-01-01T00:00:00Z\"^^xsd:dateTime) } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T08:56:51.377Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T08:56:51.377Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "member",
+  "many": "members",
+  "columns": {}
+ },
+ "impostors": [
+  {
+   "label": "Robert Plant",
+   "qid": "Q428223",
+   "why": "not a member: a member of Led Zeppelin"
+  },
+  {
+   "label": "Jimmy Page",
+   "qid": "Q165467",
+   "why": "not a member: a member of Led Zeppelin"
+  },
+  {
+   "label": "John Bonham",
+   "qid": "Q485490",
+   "why": "not a member: a member of Led Zeppelin"
+  },
+  {
+   "label": "John Paul Jones",
+   "qid": "Q190243",
+   "why": "not a member: a member of Led Zeppelin"
+  }
+ ],
+ "rows": [
+  {
+   "label": "Freddie Mercury",
+   "qid": "Q15869",
+   "fame": 0.813,
+   "description": "British singer, songwriter and musician, frontman of the rock band Queen (1946–1991)"
+  },
+  {
+   "label": "Brian May",
+   "qid": "Q15873",
+   "fame": 0.679,
+   "description": "British musician (born 1947)"
+  },
+  {
+   "label": "Roger Taylor",
+   "qid": "Q15880",
+   "fame": 0.67,
+   "description": "English musician, drummer of Queen (born 1949)"
+  },
+  {
+   "label": "John Deacon",
+   "qid": "Q192103",
+   "fame": 0.637,
+   "description": "British musician, bassist and songwriter (born 1951)"
+  }
+ ]
+}

@@ -1,0 +1,658 @@
+{
+ "id": "table.biology.animals-native-region",
+ "kind": "table",
+ "title": "Famous wild animals: where each one lives",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "wildlife",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { VALUES ?item { wd:Q36101 wd:Q5070208 wd:Q33602 wd:Q862089 wd:Q19939 wd:Q33609 wd:Q161829 wd:Q15343 wd:Q134964 wd:Q35694 wd:Q42569 wd:Q36611 wd:Q4126704 wd:Q41050 wd:Q245305 wd:Q34505 wd:Q23907 wd:Q134015 wd:Q185385 wd:Q4504 wd:Q82728 wd:Q127216 wd:Q93208 wd:Q131538 wd:Q1325045 wd:Q17592 wd:Q82037 wd:Q30197 wd:Q41960 wd:Q48186 wd:Q179959 wd:Q726151 wd:Q159426 wd:Q40994 wd:Q82738 wd:Q132922 wd:Q81564 wd:Q203033 wd:Q46212 wd:Q207058 wd:Q189868 wd:Q192029 wd:Q2274076 wd:Q20014035 wd:Q178089 wd:Q7609 wd:Q183255 wd:Q243761 wd:Q207347 wd:Q649549 wd:Q170598 wd:Q121439 wd:Q368495 wd:Q44299 wd:Q634804 wd:Q3007063 wd:Q208796 wd:Q337616 wd:Q185215 wd:Q41407 wd:Q457267 wd:Q188690 wd:Q61865 wd:Q168748 wd:Q186778 wd:Q167797 wd:Q623169 } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T03:06:19.640Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T03:06:19.640Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "origin",
+   "label": "Where it lives",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "animal",
+  "many": "animals",
+  "capitalise": true,
+  "columns": {
+   "origin": {
+    "role": "link",
+    "pick": "Where in the world does the {label} live in the wild?",
+    "statement": "The {label} lives in the wild in {value}.",
+    "match": "Match each animal to where it lives in the wild.",
+    "reverse": "Which of these animals lives in the wild in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Capybara",
+   "qid": "Q131538",
+   "fame": 0.671,
+   "origin": "South America",
+   "kind": "rodent",
+   "description": "species of large semiaquatic rodent in the cavy family",
+   "hook": "is the largest rodent in the world and loves relaxing in water with other animals perched on it",
+   "known": 0.4
+  },
+  {
+   "label": "Giant panda",
+   "qid": "Q33602",
+   "fame": 0.671,
+   "origin": "Asia (China)",
+   "kind": "bear",
+   "description": "species of mammal",
+   "hook": "is a black-and-white bamboo eater that is a beloved symbol of wildlife conservation",
+   "known": 0.95
+  },
+  {
+   "label": "Tiger",
+   "qid": "Q19939",
+   "fame": 0.666,
+   "origin": "Asia",
+   "kind": "big cat",
+   "description": "species of big cat",
+   "hook": "is the largest of the big cats, famous for its orange coat with bold black stripes",
+   "known": 0.8
+  },
+  {
+   "label": "Orangutan",
+   "qid": "Q41050",
+   "fame": 0.659,
+   "origin": "Asia (Borneo and Sumatra)",
+   "kind": "primate",
+   "description": "genus of ape found in rainforests on the Southeast Asian islands of Sumatra and Borneo",
+   "hook": "is a shaggy, red-haired great ape whose name means \"person of the forest\"",
+   "known": 0.6
+  },
+  {
+   "label": "Jaguar",
+   "qid": "Q35694",
+   "fame": 0.646,
+   "origin": "Central and South America",
+   "kind": "big cat",
+   "description": "species of big cat native to the Americas",
+   "hook": "is a spotted big cat with a famously powerful bite and a taste for swimming",
+   "known": 0.6
+  },
+  {
+   "label": "Komodo dragon",
+   "qid": "Q4504",
+   "fame": 0.644,
+   "origin": "Asia (Indonesia)",
+   "kind": "reptile",
+   "description": "species of reptile",
+   "hook": "is the heaviest lizard on Earth, with a venomous bite and a forked tongue",
+   "known": 0.6
+  },
+  {
+   "label": "Polar bear",
+   "qid": "Q33609",
+   "fame": 0.644,
+   "origin": "The Arctic",
+   "kind": "bear",
+   "description": "species of bear native largely within the Arctic Circle",
+   "hook": "is a huge white predator that hunts seals from sea ice and is the largest land carnivore",
+   "known": 0.9
+  },
+  {
+   "label": "Coyote",
+   "qid": "Q44299",
+   "fame": 0.643,
+   "origin": "North America",
+   "kind": "canine",
+   "description": "species of canine",
+   "hook": "is a wily, howling canine known for its cartoon rivalry with a speedy roadrunner",
+   "known": 0.7
+  },
+  {
+   "label": "Raccoon",
+   "qid": "Q121439",
+   "fame": 0.64,
+   "origin": "North America",
+   "kind": "mammal",
+   "description": "species of mammal native to North America",
+   "hook": "is a masked, clever scavenger known for washing its food and raiding trash cans",
+   "known": 0.8
+  },
+  {
+   "label": "Platypus",
+   "qid": "Q15343",
+   "fame": 0.636,
+   "origin": "Australia",
+   "kind": "monotreme",
+   "description": "semi-aquatic egg-laying mammal endemic to Australia",
+   "hook": "is an egg-laying mammal with a duck-like beak, webbed feet and a venomous spur",
+   "known": 0.7
+  },
+  {
+   "label": "Cheetah",
+   "qid": "Q23907",
+   "fame": 0.631,
+   "origin": "Africa",
+   "kind": "big cat",
+   "description": "species of mammal",
+   "hook": "is the fastest land animal, able to sprint after prey at highway speeds",
+   "known": 0.8
+  },
+  {
+   "label": "Gorilla",
+   "qid": "Q36611",
+   "fame": 0.617,
+   "origin": "Africa",
+   "kind": "primate",
+   "description": "genus of large African apes",
+   "hook": "is the largest living primate, famous for chest-beating and its gentle silverback leaders",
+   "known": 0.9
+  },
+  {
+   "label": "Red panda",
+   "qid": "Q41960",
+   "fame": 0.616,
+   "origin": "Asia (the Himalayas and China)",
+   "kind": "mammal",
+   "description": "species of small mammal from the Ailuridae family, native to Eastern Himalayas and Southwest China",
+   "hook": "is a small, fluffy, russet-furred climber with a ringed tail that eats bamboo",
+   "known": 0.6
+  },
+  {
+   "label": "Hippopotamus",
+   "qid": "Q34505",
+   "fame": 0.615,
+   "origin": "Africa",
+   "kind": "hoofed mammal",
+   "description": "species of mammal (artiodactyl)",
+   "hook": "is a huge, semi-aquatic river dweller whose name means \"river horse\" and which yawns with enormous jaws",
+   "known": 0.8
+  },
+  {
+   "label": "Chimpanzee",
+   "qid": "Q4126704",
+   "fame": 0.609,
+   "origin": "Africa",
+   "kind": "primate",
+   "description": "species of mammal; species of ape",
+   "hook": "is our closest living relative, a tool-using ape that shares most of our DNA",
+   "known": 0.9
+  },
+  {
+   "label": "Narwhal",
+   "qid": "Q159426",
+   "fame": 0.608,
+   "origin": "The Arctic",
+   "kind": "whale",
+   "description": "medium-sized toothed whale that lives year-round in the Arctic",
+   "hook": "is a whale nicknamed the unicorn of the sea for its long spiral tusk",
+   "known": 0.5
+  },
+  {
+   "label": "Tasmanian devil",
+   "qid": "Q134964",
+   "fame": 0.607,
+   "origin": "Australia (the island of Tasmania)",
+   "kind": "marsupial",
+   "description": "species of carnivorous marsupial from Australia",
+   "hook": "is a snarling, screeching marsupial famous for a Looney Tunes spinning cartoon character",
+   "known": 0.6
+  },
+  {
+   "label": "Kakapo",
+   "qid": "Q179959",
+   "fame": 0.606,
+   "origin": "New Zealand",
+   "kind": "bird",
+   "description": "species of non-flying New Zealand parrot",
+   "hook": "is a rare, flightless, night-active parrot and the heaviest of its kind",
+   "known": 0.2
+  },
+  {
+   "label": "Snow leopard",
+   "qid": "Q30197",
+   "fame": 0.603,
+   "origin": "Asia (the mountains of Central and South Asia)",
+   "kind": "big cat",
+   "description": "large felid native to the mountains of Central and South Asia",
+   "hook": "is an elusive, thick-furred big cat nicknamed the ghost of the high peaks",
+   "known": 0.5
+  },
+  {
+   "label": "Giraffe",
+   "qid": "Q862089",
+   "fame": 0.601,
+   "origin": "Africa",
+   "kind": "mammal",
+   "description": "genus of mammals",
+   "hook": "is the tallest land animal, with a long neck that helps it browse treetops",
+   "known": 0.95
+  },
+  {
+   "label": "Bald eagle",
+   "qid": "Q127216",
+   "fame": 0.597,
+   "origin": "North America",
+   "kind": "bird",
+   "description": "species of bird of prey found in North America",
+   "hook": "is a white-headed raptor that serves as the national bird of the United States",
+   "known": 0.95
+  },
+  {
+   "label": "Quokka",
+   "qid": "Q726151",
+   "fame": 0.597,
+   "origin": "Australia",
+   "kind": "marsupial",
+   "description": "species of mammal",
+   "hook": "is a small, cheerful-looking marsupial called the happiest animal for its smile in selfies",
+   "known": 0.3
+  },
+  {
+   "label": "Kangaroo",
+   "qid": "Q5070208",
+   "fame": 0.596,
+   "origin": "Australia",
+   "kind": "marsupial",
+   "description": "common name for some marsupials indigenous to Australia in the family Macropodidae",
+   "hook": "is a hopping marsupial that carries its young in a pouch and boxes with its powerful legs",
+   "known": 0.95
+  },
+  {
+   "label": "American bison",
+   "qid": "Q82728",
+   "fame": 0.59,
+   "origin": "North America",
+   "kind": "hoofed mammal",
+   "description": "North American species of even-toed ungulates",
+   "hook": "is a massive shaggy grazer that once roamed the Great Plains in enormous herds and appears on a US nickel",
+   "known": 0.8
+  },
+  {
+   "label": "King cobra",
+   "qid": "Q48186",
+   "fame": 0.59,
+   "origin": "Asia",
+   "kind": "snake",
+   "description": "species of reptile",
+   "hook": "is the longest venomous snake in the world, able to rear up and spread a hood",
+   "known": 0.6
+  },
+  {
+   "label": "Koala",
+   "qid": "Q36101",
+   "fame": 0.587,
+   "origin": "Australia",
+   "kind": "marsupial",
+   "description": "arboreal herbivorous marsupial native to Australia",
+   "hook": "is a sleepy, tree-hugging marsupial that eats eucalyptus leaves and is not a bear",
+   "known": 0.9
+  },
+  {
+   "label": "Okapi",
+   "qid": "Q82037",
+   "fame": 0.585,
+   "origin": "Africa",
+   "kind": "hoofed mammal",
+   "description": "species of mammal",
+   "hook": "is a shy forest mammal with zebra-striped legs that is a close relative of the giraffe",
+   "known": 0.2
+  },
+  {
+   "label": "Aardvark",
+   "qid": "Q46212",
+   "fame": 0.583,
+   "origin": "Africa",
+   "kind": "mammal",
+   "description": "species of mammal",
+   "hook": "is a nocturnal, long-snouted insect eater whose name means \"earth pig\" in Afrikaans",
+   "known": 0.4
+  },
+  {
+   "label": "Walrus",
+   "qid": "Q40994",
+   "fame": 0.582,
+   "origin": "The Arctic",
+   "kind": "seal",
+   "description": "species of mammal",
+   "hook": "is a whiskered, blubbery marine mammal with two long ivory tusks",
+   "known": 0.8
+  },
+  {
+   "label": "Sea otter",
+   "qid": "Q41407",
+   "fame": 0.572,
+   "origin": "The North Pacific coast",
+   "kind": "mammal",
+   "description": "species of marine mammal",
+   "hook": "is a furry marine mammal that floats on its back, cracks shellfish on its chest and holds paws while sleeping",
+   "known": 0.7
+  },
+  {
+   "label": "Sloth",
+   "qid": "Q2274076",
+   "fame": 0.567,
+   "origin": "Central and South America",
+   "kind": "mammal",
+   "description": "suborder of mammals",
+   "hook": "is a famously slow, tree-dwelling mammal that moves so little that algae grows in its fur",
+   "known": 0.7
+  },
+  {
+   "label": "Emu",
+   "qid": "Q93208",
+   "fame": 0.562,
+   "origin": "Australia",
+   "kind": "bird",
+   "description": "species of bird",
+   "hook": "is a tall, flightless bird that is the second largest in the world and can sprint quickly",
+   "known": 0.7
+  },
+  {
+   "label": "Meerkat",
+   "qid": "Q134015",
+   "fame": 0.556,
+   "origin": "Africa",
+   "kind": "mongoose",
+   "description": "species of mongoose",
+   "hook": "is a small, social mongoose that stands upright on its hind legs to keep watch",
+   "known": 0.7
+  },
+  {
+   "label": "Black mamba",
+   "qid": "Q188690",
+   "fame": 0.551,
+   "origin": "Africa",
+   "kind": "snake",
+   "description": "species of reptile",
+   "hook": "is a fast, highly venomous snake named for the inky color inside its mouth",
+   "known": 0.5
+  },
+  {
+   "label": "Arctic fox",
+   "qid": "Q82738",
+   "fame": 0.548,
+   "origin": "The Arctic",
+   "kind": "canine",
+   "description": "species of mammal",
+   "hook": "is a small white-coated canine that changes to brown in summer and survives extreme cold",
+   "known": 0.5
+  },
+  {
+   "label": "Gila monster",
+   "qid": "Q207058",
+   "fame": 0.546,
+   "origin": "North America (the southwestern United States)",
+   "kind": "reptile",
+   "description": "species of venomous lizard from the southwestern United States and northwestern Mexico",
+   "hook": "is a slow, orange-and-black venomous lizard that chews its venom into its victims",
+   "known": 0.3
+  },
+  {
+   "label": "Llama",
+   "qid": "Q42569",
+   "fame": 0.545,
+   "origin": "South America (the Andes)",
+   "kind": "camelid",
+   "description": "species of mammal",
+   "hook": "is a woolly pack animal that is known for spitting and is raised for its fleece",
+   "known": 0.8
+  },
+  {
+   "label": "Secretary bird",
+   "qid": "Q168748",
+   "fame": 0.544,
+   "origin": "Africa",
+   "kind": "bird",
+   "description": "large, mostly terrestrial bird of prey",
+   "hook": "is a long-legged raptor that hunts snakes by stomping them, with a crest of quill-like head feathers",
+   "known": 0.2
+  },
+  {
+   "label": "Greater roadrunner",
+   "qid": "Q634804",
+   "fame": 0.536,
+   "origin": "North America (the southwestern United States)",
+   "kind": "bird",
+   "description": "species of bird",
+   "hook": "is a fast-running, ground-dwelling bird made famous by \"beep beep\" cartoons",
+   "known": 0.6
+  },
+  {
+   "label": "Green anaconda",
+   "qid": "Q207347",
+   "fame": 0.533,
+   "origin": "South America",
+   "kind": "snake",
+   "description": "species of reptile",
+   "hook": "is the heaviest snake in the world, a swamp-dwelling constrictor",
+   "known": 0.5
+  },
+  {
+   "label": "Piranha",
+   "qid": "Q185215",
+   "fame": 0.533,
+   "origin": "South America",
+   "kind": "fish",
+   "description": "group of fish known by a particular common name",
+   "hook": "are sharp-toothed freshwater fish famous for stripping prey down to bones in a feeding frenzy",
+   "known": 0.6
+  },
+  {
+   "label": "Emperor penguin",
+   "qid": "Q161829",
+   "fame": 0.531,
+   "origin": "Antarctica",
+   "kind": "bird",
+   "description": "large flightless seabird endemic to Antarctica",
+   "hook": "is the tallest of its flightless seabird kind, whose fathers keep eggs warm through a brutal winter",
+   "known": 0.8
+  },
+  {
+   "label": "Andean condor",
+   "qid": "Q170598",
+   "fame": 0.524,
+   "origin": "South America (the Andes)",
+   "kind": "bird",
+   "description": "species of bird",
+   "hook": "is one of the largest flying birds in the world, a massive black vulture with a white neck ruff",
+   "known": 0.3
+  },
+  {
+   "label": "Wildebeest",
+   "qid": "Q7609",
+   "fame": 0.522,
+   "origin": "Africa",
+   "kind": "hoofed mammal",
+   "description": "antelope of the genus Connochaetes",
+   "hook": "is a shaggy, horned grazer famous for its enormous annual migration across the Serengeti",
+   "known": 0.7
+  },
+  {
+   "label": "Spotted hyena",
+   "qid": "Q178089",
+   "fame": 0.519,
+   "origin": "Africa",
+   "kind": "hyena",
+   "description": "species of mammal",
+   "hook": "is a bone-crushing scavenger and hunter known for its eerie laughing call",
+   "known": 0.6
+  },
+  {
+   "label": "Wallaby",
+   "qid": "Q623169",
+   "fame": 0.516,
+   "origin": "Australia and New Guinea",
+   "kind": "marsupial",
+   "description": "common name of small- or mid-sized macropods found in Australia and New Guinea",
+   "hook": "is a smaller cousin of the kangaroo that hops and carries young in a pouch",
+   "known": 0.6
+  },
+  {
+   "label": "Mandrill",
+   "qid": "Q189868",
+   "fame": 0.509,
+   "origin": "Africa",
+   "kind": "primate",
+   "description": "species of Old World monkey",
+   "hook": "is a large primate famous for a brightly colored red and blue face and rump",
+   "known": 0.4
+  },
+  {
+   "label": "Bactrian camel",
+   "qid": "Q132922",
+   "fame": 0.508,
+   "origin": "Asia (Central Asia)",
+   "kind": "camelid",
+   "description": "species of mammal",
+   "hook": "is a two-humped, shaggy-coated desert animal",
+   "known": 0.6
+  },
+  {
+   "label": "Indian peafowl",
+   "qid": "Q61865",
+   "fame": 0.503,
+   "origin": "Asia (the Indian subcontinent)",
+   "kind": "bird",
+   "description": "species of bird",
+   "hook": "is a bird whose males fan out dazzling iridescent blue plumage with eye-spotted tail feathers",
+   "known": 0.5
+  },
+  {
+   "label": "Toucan",
+   "qid": "Q1325045",
+   "fame": 0.503,
+   "origin": "Central and South America",
+   "kind": "bird",
+   "description": "family of birds",
+   "hook": "are tropical birds famous for their oversized, colorful bills",
+   "known": 0.7
+  },
+  {
+   "label": "Vicuña",
+   "qid": "Q167797",
+   "fame": 0.503,
+   "origin": "South America (the Andes)",
+   "kind": "camelid",
+   "description": "species of mammal",
+   "hook": "is a slender, wild relative of the llama prized for its extremely fine, valuable wool",
+   "known": 0.2
+  },
+  {
+   "label": "Aye-aye",
+   "qid": "Q186778",
+   "fame": 0.501,
+   "origin": "Madagascar",
+   "kind": "primate",
+   "description": "species of mammal",
+   "hook": "is a night-active primate with huge eyes, big ears and a long thin finger for tapping out grubs",
+   "known": 0.1
+  },
+  {
+   "label": "Proboscis monkey",
+   "qid": "Q192029",
+   "fame": 0.499,
+   "origin": "Asia (Borneo)",
+   "kind": "primate",
+   "description": "species of mammal",
+   "hook": "is a primate famous for its enormous, drooping nose and pot belly",
+   "known": 0.2
+  },
+  {
+   "label": "Galapagos tortoise",
+   "qid": "Q20014035",
+   "fame": 0.496,
+   "origin": "The Galapagos Islands (Ecuador)",
+   "kind": "reptile",
+   "description": "Chelonoidis species complex in the Galápagos Islands; species with many subspecies",
+   "hook": "is a giant, long-lived reptile whose shell shapes helped inspire Darwin's ideas on evolution",
+   "known": 0.6
+  },
+  {
+   "label": "Ostrich",
+   "qid": "Q17592",
+   "fame": 0.484,
+   "origin": "Africa",
+   "kind": "bird",
+   "description": "species of large flightless bird",
+   "hook": "is the largest and heaviest bird in the world and cannot fly but runs very fast",
+   "known": 0.8
+  },
+  {
+   "label": "Blue-footed booby",
+   "qid": "Q457267",
+   "fame": 0.473,
+   "origin": "The Americas (the Pacific coast)",
+   "kind": "bird",
+   "description": "species of bird",
+   "hook": "is a seabird famous for its bright turquoise feet and comical courtship dance",
+   "known": 0.3
+  },
+  {
+   "label": "Giant anteater",
+   "qid": "Q203033",
+   "fame": 0.469,
+   "origin": "Central and South America",
+   "kind": "anteater",
+   "description": "species of mammal",
+   "hook": "is a long-snouted mammal with a bushy tail that slurps up ants and termites with a sticky tongue",
+   "known": 0.4
+  },
+  {
+   "label": "Scarlet macaw",
+   "qid": "Q243761",
+   "fame": 0.464,
+   "origin": "Central and South America",
+   "kind": "bird",
+   "description": "species of bird",
+   "hook": "is a large, brilliantly red, yellow and blue parrot with a long tail",
+   "known": 0.5
+  },
+  {
+   "label": "Ring-tailed lemur",
+   "qid": "Q185385",
+   "fame": 0.461,
+   "origin": "Madagascar",
+   "kind": "primate",
+   "description": "large species of strepsirrhine primate",
+   "hook": "is a primate famous for its black-and-white banded tail and sunbathing pose",
+   "known": 0.5
+  },
+  {
+   "label": "Plains zebra",
+   "qid": "Q245305",
+   "fame": 0.459,
+   "origin": "Africa",
+   "kind": "hoofed mammal",
+   "description": "species of mammal",
+   "hook": "is a black-and-white striped grazing horse relative that gathers in huge herds",
+   "known": 0.8
+  }
+ ]
+}

@@ -1,0 +1,661 @@
+{
+ "id": "table.music.band-members",
+ "kind": "table",
+ "title": "Famous musicians and the band they played in",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "bands",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?bandLabel WHERE { { SELECT ?item (SAMPLE(?b) AS ?band) (COUNT(DISTINCT ?b) AS ?nB) WHERE { ?item wdt:P31 wd:Q5 ; wdt:P463 ?b ; wikibase:sitelinks ?sl . ?b wdt:P31/wdt:P279* wd:Q215380 ; wikibase:sitelinks ?bsl . FILTER(?bsl >= 60) FILTER(?sl >= 30) FILTER(?item NOT IN (wd:Q202246, wd:Q47878, wd:Q180861, wd:Q194045, wd:Q165467, wd:Q484523, wd:Q219631, wd:Q2756349, wd:Q11885)) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nB = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T00:51:31.896Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T00:51:31.896Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "band",
+   "label": "Band",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "musician",
+  "many": "musicians",
+  "wildcard": "person",
+  "hookAsk": "Which musician {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "band": {
+    "role": "link",
+    "pick": "Which band was {label} in?",
+    "statement": "{label} was a member of {value}.",
+    "match": "Match each musician to their band.",
+    "odd": "Three of these were in {value}. Which one wasn't?",
+    "all": "Tap all {n} members of {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Freddie Mercury",
+   "qid": "Q15869",
+   "fame": 0.81,
+   "band": "Queen",
+   "description": "British singer, songwriter and musician, frontman of the rock band Queen (1946–1991)",
+   "hook": "was the flamboyant lead singer known for his powerful four-octave vocal range",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Hayley Williams",
+   "qid": "Q201562",
+   "fame": 0.788,
+   "band": "Paramore",
+   "description": "American singer",
+   "hook": "is the fiery-haired lead singer known for her powerhouse vocals in a pop-punk band",
+   "known": 0.4,
+   "kind": "pop-punk"
+  },
+  {
+   "label": "Harry Styles",
+   "qid": "Q3626966",
+   "fame": 0.773,
+   "band": "One Direction",
+   "description": "English singer, songwriter and actor",
+   "hook": "went on to a hugely successful solo pop career after his boy band days",
+   "known": 0.6,
+   "kind": "pop"
+  },
+  {
+   "label": "John Lennon",
+   "qid": "Q1203",
+   "fame": 0.765,
+   "band": "The Beatles",
+   "description": "British musician (1940–1980)",
+   "hook": "wrote the peace anthem 'Imagine' during his solo career",
+   "known": 0.95,
+   "kind": "rock"
+  },
+  {
+   "label": "Paul McCartney",
+   "qid": "Q2599",
+   "fame": 0.765,
+   "band": "The Beatles",
+   "description": "English musician and member of the Beatles (born 1942)",
+   "hook": "is known as one of the most successful songwriters in music history and for his melodic bass playing",
+   "known": 0.95,
+   "kind": "rock"
+  },
+  {
+   "label": "Phil Collins",
+   "qid": "Q144622",
+   "fame": 0.76,
+   "band": "Genesis",
+   "description": "English drummer, singer, and songwriter (born 1951)",
+   "hook": "went on to a hit solo career as both a drummer and a soulful singer",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Stevie Nicks",
+   "qid": "Q234691",
+   "fame": 0.757,
+   "band": "Fleetwood Mac",
+   "description": "American singer and songwriter born 1948",
+   "hook": "is known for her mystical stage persona and shawl-twirling performances",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Ozzy Osbourne",
+   "qid": "Q133151",
+   "fame": 0.749,
+   "band": "Black Sabbath",
+   "description": "English musician and television personality (1948–2025)",
+   "hook": "was known as the Prince of Darkness for his theatrical heavy metal image",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "George Harrison",
+   "qid": "Q2643",
+   "fame": 0.743,
+   "band": "The Beatles",
+   "description": "English musician and member of the Beatles (1943–2001)",
+   "hook": "was known as the quiet one and later had a hit solo song about devotion",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Chester Bennington",
+   "qid": "Q19198",
+   "fame": 0.741,
+   "band": "Linkin Park",
+   "description": "American singer, songwriter and musician (1976–2017)",
+   "hook": "was the intense co-lead vocalist known for blending rap and rock vocals",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "Kurt Cobain",
+   "qid": "Q8446",
+   "fame": 0.739,
+   "band": "Nirvana",
+   "description": "American rock musician, singer and songwriter (1967–1994)",
+   "hook": "was the raspy-voiced frontman who helped bring grunge into the mainstream",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Chris Cornell",
+   "qid": "Q270935",
+   "fame": 0.735,
+   "band": "Soundgarden",
+   "description": "American musician (1964–2017)",
+   "hook": "was known for his powerful four-octave voice in a wave of Seattle rock",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "Lisa",
+   "qid": "Q26707663",
+   "fame": 0.733,
+   "band": "Blackpink",
+   "description": "Thai rapper, singer, model, dancer and actress (born 1997)",
+   "hook": "is a rapper and dancer known for a fierce solo hit about being a diva",
+   "known": 0.2,
+   "kind": "kpop"
+  },
+  {
+   "label": "Dolores O'Riordan",
+   "qid": "Q541599",
+   "fame": 0.729,
+   "band": "The Cranberries",
+   "description": "Irish musician (1971–2018)",
+   "hook": "had a distinctive yodel-like vocal style fronting an Irish rock band",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "Nick Jonas",
+   "qid": "Q201656",
+   "fame": 0.727,
+   "band": "Jonas Brothers",
+   "description": "American singer, actor and musician",
+   "hook": "went on to a successful solo pop career after his brother band days",
+   "known": 0.4,
+   "kind": "pop"
+  },
+  {
+   "label": "Ringo Starr",
+   "qid": "Q2632",
+   "fame": 0.724,
+   "band": "The Beatles",
+   "description": "British musician, drummer for the Beatles (born 1940)",
+   "hook": "was known for his steady drumming and occasional lead vocal turns on quirky songs",
+   "known": 0.95,
+   "kind": "rock"
+  },
+  {
+   "label": "Jon Bon Jovi",
+   "qid": "Q150916",
+   "fame": 0.723,
+   "band": "Bon Jovi",
+   "description": "American musician (born 1962)",
+   "hook": "is the arena-rock frontman known for his big power ballads",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Mick Jagger",
+   "qid": "Q128121",
+   "fame": 0.712,
+   "band": "The Rolling Stones",
+   "description": "British singer and songwriter; vocalist of The Rolling Stones",
+   "hook": "is famous for his energetic strut and exaggerated stage moves",
+   "known": 0.95,
+   "kind": "rock"
+  },
+  {
+   "label": "Joe Jonas",
+   "qid": "Q191088",
+   "fame": 0.707,
+   "band": "Jonas Brothers",
+   "description": "American singer, actor and musician",
+   "hook": "later fronted a synth-pop side project after his brother band days",
+   "known": 0.4,
+   "kind": "pop"
+  },
+  {
+   "label": "Sting",
+   "qid": "Q483203",
+   "fame": 0.702,
+   "band": "The Police",
+   "description": "British musician (born 1951)",
+   "hook": "went on to a successful solo career blending rock with jazz and world music",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Chris Martin",
+   "qid": "Q712860",
+   "fame": 0.7,
+   "band": "Coldplay",
+   "description": "English singer-songwriter (born 1977)",
+   "hook": "is the piano-playing frontman known for anthemic, uplifting rock ballads",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Noel Gallagher",
+   "qid": "Q193459",
+   "fame": 0.698,
+   "band": "Oasis",
+   "description": "British singer and guitarist",
+   "hook": "was the primary songwriter and lead guitarist behind a wave of British guitar anthems",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Nicole Scherzinger",
+   "qid": "Q167696",
+   "fame": 0.693,
+   "band": "The Pussycat Dolls",
+   "description": "American singer and actress (born 1978)",
+   "hook": "was the lead singer of an American girl group known for its dance-heavy pop",
+   "known": 0.2,
+   "kind": "pop"
+  },
+  {
+   "label": "Peter Gabriel",
+   "qid": "Q175195",
+   "fame": 0.693,
+   "band": "Genesis",
+   "description": "British singer and musician (born 1950)",
+   "hook": "left his prog rock band to launch a genre-blending solo career",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "Jim Morrison",
+   "qid": "Q44301",
+   "fame": 0.692,
+   "band": "The Doors",
+   "description": "American singer and poet; lead vocalist of The Doors (1943–1971)",
+   "hook": "was known as a poetic, brooding frontman with a booming baritone voice",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Slash",
+   "qid": "Q34166",
+   "fame": 0.692,
+   "band": "Guns N' Roses",
+   "description": "British musician",
+   "hook": "is instantly recognizable for his top hat and searing guitar solos",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Robert Plant",
+   "qid": "Q428223",
+   "fame": 0.691,
+   "band": "Led Zeppelin",
+   "description": "English musician and lead vocalist of Led Zeppelin",
+   "hook": "is known for his powerful wailing vocals and long golden hair",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Fergie",
+   "qid": "Q180004",
+   "fame": 0.68,
+   "band": "Black Eyed Peas",
+   "description": "American singer, rapper and actress (born 1975)",
+   "hook": "was the lead female vocalist of a hip-hop group known for playful, radio-friendly hits",
+   "known": 0.2,
+   "kind": "hiphop"
+  },
+  {
+   "label": "Brian May",
+   "qid": "Q15873",
+   "fame": 0.676,
+   "band": "Queen",
+   "description": "British musician (born 1947)",
+   "hook": "is the guitarist who built his own famous guitar and studied astrophysics",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Paul Simon",
+   "qid": "Q4028",
+   "fame": 0.676,
+   "band": "Simon & Garfunkel",
+   "description": "American singer-songwriter (born 1941)",
+   "hook": "went on to a celebrated solo career blending folk with world music influences",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Brian Wilson",
+   "qid": "Q313013",
+   "fame": 0.675,
+   "band": "The Beach Boys",
+   "description": "American musician, singer, songwriter and record producer (1942–2025)",
+   "hook": "was the creative genius behind lush vocal harmonies celebrating surf and sunshine",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "John Bonham",
+   "qid": "Q485490",
+   "fame": 0.675,
+   "band": "Led Zeppelin",
+   "description": "English drummer (1948–1980)",
+   "hook": "was renowned as one of the hardest-hitting drummers in rock history",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Angus Young",
+   "qid": "Q43932",
+   "fame": 0.673,
+   "band": "AC/DC",
+   "description": "Australian guitarist",
+   "hook": "is known for performing in a schoolboy uniform while duckwalking across the stage",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Keith Richards",
+   "qid": "Q189599",
+   "fame": 0.672,
+   "band": "The Rolling Stones",
+   "description": "British musician, guitarist of the Rolling Stones",
+   "hook": "is the guitarist behind some of rock's most iconic riffs",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Jung Kook",
+   "qid": "Q22338877",
+   "fame": 0.67,
+   "band": "BTS",
+   "description": "South Korean singer",
+   "hook": "is the youngest member, nicknamed the golden maknae for his vocal and dance talent",
+   "known": 0.2,
+   "kind": "kpop"
+  },
+  {
+   "label": "Zayn Malik",
+   "qid": "Q3626950",
+   "fame": 0.67,
+   "band": "One Direction",
+   "description": "English singer",
+   "hook": "left his boy band early to pursue a solo R&B-influenced career",
+   "known": 0.4,
+   "kind": "pop"
+  },
+  {
+   "label": "Mark Knopfler",
+   "qid": "Q185343",
+   "fame": 0.668,
+   "band": "Dire Straits",
+   "description": "British musician (born 1949)",
+   "hook": "is known for his fingerstyle guitar playing without a pick",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "Roger Taylor",
+   "qid": "Q15880",
+   "fame": 0.667,
+   "band": "Queen",
+   "description": "English musician, drummer of Queen (born 1949)",
+   "hook": "is the drummer known for his high vocal harmonies and songwriting contributions",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Robbie Williams",
+   "qid": "Q47875",
+   "fame": 0.666,
+   "band": "Take That",
+   "description": "British singer (born 1974)",
+   "hook": "left his boy band for a hugely successful solo pop career",
+   "known": 0.4,
+   "kind": "pop"
+  },
+  {
+   "label": "V",
+   "qid": "Q18388296",
+   "fame": 0.666,
+   "band": "BTS",
+   "description": "South Korean singer, actor and dancer",
+   "hook": "is known for his deep baritone voice that stands out among his higher-voiced bandmates",
+   "known": 0.2,
+   "kind": "kpop"
+  },
+  {
+   "label": "Bono",
+   "qid": "Q834621",
+   "fame": 0.664,
+   "band": "U2",
+   "description": "Irish singer",
+   "hook": "is the frontman known for his soaring vocals and humanitarian activism",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Jennie",
+   "qid": "Q26262599",
+   "fame": 0.663,
+   "band": "Blackpink",
+   "description": "South Korean singer-songwriter and rapper (born 1996)",
+   "hook": "is known for her rapping and a fierce solo single about diamonds",
+   "known": 0.2,
+   "kind": "kpop"
+  },
+  {
+   "label": "Eddie Van Halen",
+   "qid": "Q272012",
+   "fame": 0.662,
+   "band": "Van Halen",
+   "description": "Dutch-American rock guitarist (1955–2020)",
+   "hook": "revolutionized rock guitar with a two-handed tapping technique",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Amy Lee",
+   "qid": "Q172632",
+   "fame": 0.66,
+   "band": "Evanescence",
+   "description": "American singer, pianist and songwriter",
+   "hook": "is the classically trained pianist and powerful soprano fronting a gothic rock band",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "Rosé",
+   "qid": "Q27655344",
+   "fame": 0.66,
+   "band": "Blackpink",
+   "description": "South Korean-New Zealand singer (born 1997)",
+   "hook": "released a chart-topping solo ballad after debuting in a girl group",
+   "known": 0.2,
+   "kind": "kpop"
+  },
+  {
+   "label": "Debbie Harry",
+   "qid": "Q215026",
+   "fame": 0.659,
+   "band": "Blondie",
+   "description": "American singer, songwriter and actress, frontwoman of Blondie (born 1945)",
+   "hook": "was the platinum-blonde frontwoman blending punk with new wave and disco",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Syd Barrett",
+   "qid": "Q173061",
+   "fame": 0.659,
+   "band": "Pink Floyd",
+   "description": "British musician (1946–2006)",
+   "hook": "was the original visionary songwriter who left the band amid personal struggles",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "Lou Reed",
+   "qid": "Q189080",
+   "fame": 0.651,
+   "band": "The Velvet Underground",
+   "description": "American rock musician (1942–2013)",
+   "hook": "wrote gritty, poetic songs about street life before going solo with a glam rock hit",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "Serj Tankian",
+   "qid": "Q486063",
+   "fame": 0.649,
+   "band": "System of a Down",
+   "description": "Armenian-American rock musician, singer, songwriter and record producer",
+   "hook": "is known for his operatic, unpredictable vocal delivery in a politically charged metal band",
+   "known": 0.2,
+   "kind": "rock"
+  },
+  {
+   "label": "Anthony Kiedis",
+   "qid": "Q204751",
+   "fame": 0.647,
+   "band": "Red Hot Chili Peppers",
+   "description": "American musician",
+   "hook": "is the rapid-fire rapping vocalist fronting a funk-rock band",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "David Gilmour",
+   "qid": "Q178517",
+   "fame": 0.647,
+   "band": "Pink Floyd",
+   "description": "English musician, member of Pink Floyd (born 1946)",
+   "hook": "is known for his soaring, bluesy guitar solos and soulful voice",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Billie Joe Armstrong",
+   "qid": "Q712592",
+   "fame": 0.645,
+   "band": "Green Day",
+   "description": "American rock musician (born 1972)",
+   "hook": "is the snarling punk vocalist and guitarist behind a wave of pop-punk anthems",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Victoria Beckham",
+   "qid": "Q19810",
+   "fame": 0.645,
+   "band": "Spice Girls",
+   "description": "English businesswoman, fashion designer and singer (born 1974)",
+   "hook": "was known for her poised, fashionable image in a hugely popular girl group before turning to fashion design",
+   "known": 0.4,
+   "kind": "pop"
+  },
+  {
+   "label": "Flea",
+   "qid": "Q202859",
+   "fame": 0.642,
+   "band": "Red Hot Chili Peppers",
+   "description": "Australian musician",
+   "hook": "is the energetic bassist known for his slap-bass technique and shirtless stage antics",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "James Hetfield",
+   "qid": "Q484302",
+   "fame": 0.642,
+   "band": "Metallica",
+   "description": "American guitarist and singer",
+   "hook": "is the gruff-voiced rhythm guitarist fronting a pioneering thrash metal band",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Enya",
+   "qid": "Q38257",
+   "fame": 0.641,
+   "band": "Clannad",
+   "description": "Irish singer (born 1961)",
+   "hook": "went on to a massively successful solo career of ethereal, layered vocal music",
+   "known": 0.4,
+   "kind": "pop"
+  },
+  {
+   "label": "Jisoo",
+   "qid": "Q27655361",
+   "fame": 0.64,
+   "band": "Blackpink",
+   "description": "South Korean singer-songwriter, actress, and model  (born 1995)",
+   "hook": "is known for her sweet vocal tone and visual role within a K-pop girl group",
+   "known": 0.2,
+   "kind": "kpop"
+  },
+  {
+   "label": "Geri Halliwell",
+   "qid": "Q19845",
+   "fame": 0.639,
+   "band": "Spice Girls",
+   "description": "English singer and actress (born 1972)",
+   "hook": "was known for her fiery red hair and iconic Union Jack dress in a globally popular girl group",
+   "known": 0.2,
+   "kind": "pop"
+  },
+  {
+   "label": "John Deacon",
+   "qid": "Q192103",
+   "fame": 0.635,
+   "band": "Queen",
+   "description": "British musician, bassist and songwriter (born 1951)",
+   "hook": "was the reserved bassist who wrote a huge disco-influenced hit for his band",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "will.i.am",
+   "qid": "Q185610",
+   "fame": 0.635,
+   "band": "Black Eyed Peas",
+   "description": "American rapper, singer, and record producer (born 1975)",
+   "hook": "is a rapper-producer known for blending hip-hop with electronic dance pop",
+   "known": 0.2,
+   "kind": "hiphop"
+  }
+ ]
+}

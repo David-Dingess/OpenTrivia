@@ -1,0 +1,562 @@
+{
+ "id": "table.wordplay.celebrity-nicknames",
+ "kind": "table",
+ "title": "Celebrity nicknames",
+ "genre": "general",
+ "category": "wordplay",
+ "topic": "nicknames",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?nick WHERE { { SELECT ?item (SAMPLE(?a) AS ?nick) (COUNT(DISTINCT ?a) AS ?n) WHERE { VALUES ?item { wd:Q40026 wd:Q303 wd:Q79983 wd:Q36159 wd:Q126513 wd:Q692 wd:Q23434 wd:Q11998 wd:Q36107 wd:Q2643 wd:Q47213 wd:Q882 wd:Q1225 wd:Q1354960 wd:Q159347 wd:Q40531 wd:Q43432 wd:Q229430 wd:Q125121 wd:Q1514 wd:Q544387 wd:Q483382 wd:Q188426 wd:Q8991894 wd:Q201927 wd:Q73360 wd:Q209518 wd:Q11192 wd:Q104358 wd:Q105719 wd:Q214959 wd:Q52651 wd:Q273206 wd:Q103767 wd:Q231345 wd:Q5793 wd:Q18976 wd:Q10494 wd:Q212015 wd:Q17158 wd:Q251683 wd:Q38370 wd:Q7207 wd:Q102005 wd:Q102870 wd:Q181715 wd:Q165479 wd:Q37970 wd:Q184366 wd:Q81960 wd:Q529207 wd:Q9682 wd:Q190151 } ?item wdt:P1449 ?a . FILTER(LANG(?a)=\"en\") FILTER(STRLEN(?a) <= 24) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?n <= 2) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T06:16:15.903Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T06:16:15.903Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "nickname",
+   "label": "Nickname",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "famous person",
+  "many": "famous people",
+  "wildcard": "person",
+  "exclude": [
+   {
+    "qid": "Q7207",
+    "why": "nickname Gloriana is too obscure to ask"
+   },
+   {
+    "qid": "Q38370",
+    "why": "Bluff Hal is too obscure"
+   },
+   {
+    "qid": "Q9682",
+    "why": "Lilibet is a private family name"
+   }
+  ],
+  "columns": {
+   "nickname": {
+    "role": "code",
+    "pick": "Which nickname is {label} known by?",
+    "statement": "{label} is known as \"{value}\".",
+    "match": "Match each famous person to their nickname.",
+    "reverse": "Which famous person is known by the nickname \"{value}\"?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Elizabeth II",
+   "qid": "Q9682",
+   "fame": 0.837,
+   "nickname": "Lilibet",
+   "description": "Queen of the United Kingdom from 1952 to 2022 (1926–2022)",
+   "hook": "reigned as British monarch for over seventy years, longer than anyone before her",
+   "known": 0.95,
+   "kind": "royalty"
+  },
+  {
+   "label": "Sylvester Stallone",
+   "qid": "Q40026",
+   "fame": 0.819,
+   "nickname": "Sly",
+   "description": "American actor and filmmaker (born 1946)",
+   "hook": "played an underdog Philadelphia boxer and a one-man-army commando on screen",
+   "known": 0.8,
+   "kind": "actor"
+  },
+  {
+   "label": "Henry VIII of England",
+   "qid": "Q38370",
+   "fame": 0.797,
+   "nickname": "Bluff Hal",
+   "description": "King of England from 1509 to 1547 (1491–1547)",
+   "hook": "had six wives and broke away from the Roman Catholic Church",
+   "known": 0.8,
+   "kind": "royalty"
+  },
+  {
+   "label": "Elvis Presley",
+   "qid": "Q303",
+   "fame": 0.783,
+   "nickname": "The King of Rock",
+   "description": "American singer and actor (1935–1977)",
+   "hook": "was a hip-swiveling singer who recorded Hound Dog and lived at Graceland",
+   "known": 0.95,
+   "kind": "musician"
+  },
+  {
+   "label": "Elizabeth I of England",
+   "qid": "Q7207",
+   "fame": 0.771,
+   "nickname": "Gloriana",
+   "description": "Queen of England and Ireland from 1558 to 1603 (1533-1603)",
+   "hook": "ruled during the defeat of the Spanish Armada and never married",
+   "known": 0.8,
+   "kind": "royalty"
+  },
+  {
+   "label": "José Mourinho",
+   "qid": "Q79983",
+   "fame": 0.769,
+   "nickname": "Special One",
+   "description": "Portuguese association football manager and former player",
+   "hook": "is a football manager who won league titles with Porto, Chelsea and Inter Milan",
+   "known": 0.6,
+   "kind": "footballer"
+  },
+  {
+   "label": "LeBron James",
+   "qid": "Q36159",
+   "fame": 0.768,
+   "nickname": "King James",
+   "description": "American basketball player (born 1984)",
+   "hook": "is a basketball star who has played for Cleveland, Miami and the Lakers",
+   "known": 0.8,
+   "kind": "athlete"
+  },
+  {
+   "label": "Steve Irwin",
+   "qid": "Q126513",
+   "fame": 0.763,
+   "nickname": "The Crocodile Hunter",
+   "description": "Australian zookeeper, conservationist and TV personality (1962-2006)",
+   "hook": "was a TV wildlife presenter famous for wrestling reptiles and shouting 'Crikey!'",
+   "known": 0.8,
+   "kind": "actor"
+  },
+  {
+   "label": "Ernest Hemingway",
+   "qid": "Q23434",
+   "fame": 0.756,
+   "nickname": "Papa",
+   "description": "American author and journalist (1899–1961)",
+   "hook": "wrote The Old Man and the Sea and The Sun Also Rises",
+   "known": 0.8,
+   "kind": "historical"
+  },
+  {
+   "label": "Kylie Minogue",
+   "qid": "Q11998",
+   "fame": 0.755,
+   "nickname": "The Princess of Pop",
+   "description": "Australian singer and actress (born 1968)",
+   "hook": "sang Can't Get You Out of My Head and Spinning Around",
+   "known": 0.8,
+   "kind": "musician"
+  },
+  {
+   "label": "Muhammad Ali",
+   "qid": "Q36107",
+   "fame": 0.751,
+   "nickname": "The Greatest",
+   "description": "American boxer (1942–2016)",
+   "hook": "famously said he would float like a butterfly and sting like a bee",
+   "known": 0.95,
+   "kind": "athlete"
+  },
+  {
+   "label": "George Harrison",
+   "qid": "Q2643",
+   "fame": 0.747,
+   "nickname": "The quiet Beatle",
+   "description": "English musician and member of the Beatles (1943–2001)",
+   "hook": "was a lead guitarist who wrote Something and My Sweet Lord",
+   "known": 0.8,
+   "kind": "musician"
+  },
+  {
+   "label": "Warren Buffett",
+   "qid": "Q47213",
+   "fame": 0.746,
+   "nickname": "The Oracle of Omaha",
+   "description": "American investor, entrepreneur and businessman",
+   "hook": "is a billionaire investor known for folksy wisdom and running Berkshire Hathaway",
+   "known": 0.6,
+   "kind": "entrepreneur"
+  },
+  {
+   "label": "Charlie Chaplin",
+   "qid": "Q882",
+   "fame": 0.741,
+   "nickname": "The Tramp",
+   "description": "English actor and filmmaker (1889–1977)",
+   "hook": "was a silent film icon with a bowler hat, cane and toothbrush mustache",
+   "known": 0.8,
+   "kind": "actor"
+  },
+  {
+   "label": "Bruce Springsteen",
+   "qid": "Q1225",
+   "fame": 0.727,
+   "nickname": "The Boss",
+   "description": "American rock singer (born 1949)",
+   "hook": "sings Born in the U.S.A. and Born to Run with the E Street Band",
+   "known": 0.8,
+   "kind": "musician"
+  },
+  {
+   "label": "Mohamed Salah",
+   "qid": "Q1354960",
+   "fame": 0.724,
+   "nickname": "The Pharaoh",
+   "description": "Egyptian association football player (born 1992)",
+   "hook": "is a Liverpool forward who has won the Premier League Golden Boot several times",
+   "known": 0.6,
+   "kind": "footballer"
+  },
+  {
+   "label": "Steve McQueen",
+   "qid": "Q159347",
+   "fame": 0.714,
+   "nickname": "King of Cool",
+   "description": "American actor (1930-1980)",
+   "hook": "starred in The Great Escape and Bullitt and loved racing motorcycles",
+   "known": 0.8,
+   "kind": "actor"
+  },
+  {
+   "label": "John Wayne",
+   "qid": "Q40531",
+   "fame": 0.713,
+   "nickname": "Duke",
+   "description": "American actor (1907–1979)",
+   "hook": "was a Western film icon who won an Oscar for True Grit",
+   "known": 0.8,
+   "kind": "actor"
+  },
+  {
+   "label": "Justin Timberlake",
+   "qid": "Q43432",
+   "fame": 0.705,
+   "nickname": "Prince of Pop",
+   "description": "American singer and actor (born 1981)",
+   "hook": "left NSYNC for a solo career and sang Cry Me a River and Can't Stop the Feeling",
+   "known": 0.8,
+   "kind": "musician"
+  },
+  {
+   "label": "Reba McEntire",
+   "qid": "Q229430",
+   "fame": 0.697,
+   "nickname": "The Queen of Country",
+   "description": "American country singer and actress (born 1955)",
+   "hook": "is a red-headed singer who sings Fancy and starred in a long-running sitcom",
+   "known": 0.6,
+   "kind": "musician"
+  },
+  {
+   "label": "Aretha Franklin",
+   "qid": "Q125121",
+   "fame": 0.695,
+   "nickname": "Queen of soul",
+   "description": "American singer, songwriter, and pianist (1942–2018)",
+   "hook": "sang Respect and Chain of Fools",
+   "known": 0.8,
+   "kind": "musician"
+  },
+  {
+   "label": "Janis Joplin",
+   "qid": "Q1514",
+   "fame": 0.687,
+   "nickname": "Pearl",
+   "description": "American singer (1943–1970)",
+   "hook": "sang Piece of My Heart and Me and Bobby McGee and played Woodstock",
+   "known": 0.8,
+   "kind": "musician"
+  },
+  {
+   "label": "Ray Charles",
+   "qid": "Q544387",
+   "fame": 0.686,
+   "nickname": "The Genius",
+   "description": "American singer, pianist and songwriter (1930–2004)",
+   "hook": "was a blind pianist who sang Georgia on My Mind and Hit the Road Jack",
+   "known": 0.95,
+   "kind": "musician"
+  },
+  {
+   "label": "Steve Wozniak",
+   "qid": "Q483382",
+   "fame": 0.674,
+   "nickname": "Woz",
+   "description": "American computer pioneer, inventor, computer engineer and programmer; co-founder of Apple Inc.",
+   "hook": "co-founded Apple and designed the Apple I and Apple II computers",
+   "known": 0.4,
+   "kind": "entrepreneur"
+  },
+  {
+   "label": "Roy Orbison",
+   "qid": "Q188426",
+   "fame": 0.659,
+   "nickname": "the Big O",
+   "description": "American musician (1936 –1988)",
+   "hook": "sang Oh, Pretty Woman and Crying while wearing dark sunglasses",
+   "known": 0.6,
+   "kind": "musician"
+  },
+  {
+   "label": "Harriet Tubman",
+   "qid": "Q102870",
+   "fame": 0.657,
+   "nickname": "Moses",
+   "description": "African-American abolitionist (1822–1913)",
+   "hook": "escaped slavery and led others to freedom on the Underground Railroad",
+   "known": 0.8,
+   "kind": "historical"
+  },
+  {
+   "label": "Giannis Antetokounmpo",
+   "qid": "Q8991894",
+   "fame": 0.646,
+   "nickname": "The Greek Freak",
+   "description": "Nigerian-Greek basketball player (born 1994)",
+   "hook": "is a Milwaukee Bucks star who won two MVP awards and an NBA title",
+   "known": 0.6,
+   "kind": "athlete"
+  },
+  {
+   "label": "David Hasselhoff",
+   "qid": "Q201927",
+   "fame": 0.639,
+   "nickname": "The Hoff",
+   "description": "American actor, singer, producer, and businessman (born 1952)",
+   "hook": "starred in Knight Rider and Baywatch and is hugely popular in Germany",
+   "known": 0.8,
+   "kind": "actor"
+  },
+  {
+   "label": "Thibaut Courtois",
+   "qid": "Q73360",
+   "fame": 0.639,
+   "nickname": "The Wall",
+   "description": "Belgian association football player (born 1992)",
+   "hook": "is a tall goalkeeper who has played for Chelsea and Real Madrid",
+   "known": 0.4,
+   "kind": "footballer"
+  },
+  {
+   "label": "Bruce Dickinson",
+   "qid": "Q190151",
+   "fame": 0.635,
+   "nickname": "Human Air Raid Siren",
+   "description": "English heavy metal singer (born 1958)",
+   "hook": "is the soaring-voiced lead singer of Iron Maiden and a licensed airline pilot",
+   "known": 0.6,
+   "kind": "musician"
+  },
+  {
+   "label": "Wayne Gretzky",
+   "qid": "Q209518",
+   "fame": 0.635,
+   "nickname": "The Great One",
+   "description": "Canadian ice hockey player and coach (born 1961)",
+   "hook": "scored more goals and points than anyone in NHL history",
+   "known": 0.95,
+   "kind": "athlete"
+  },
+  {
+   "label": "Kimi Räikkönen",
+   "qid": "Q11192",
+   "fame": 0.616,
+   "nickname": "Iceman",
+   "description": "Finnish racing driver",
+   "hook": "won the Formula One world title with Ferrari",
+   "known": 0.4,
+   "kind": "athlete"
+  },
+  {
+   "label": "Jean Harlow",
+   "qid": "Q105719",
+   "fame": 0.613,
+   "nickname": "The Platinum Blonde",
+   "description": "American film actress (1911–1937)",
+   "hook": "starred in Dinner at Eight and Red Dust as a glamorous early-sound Hollywood actress",
+   "known": 0.4,
+   "kind": "actor"
+  },
+  {
+   "label": "Billie Holiday",
+   "qid": "Q104358",
+   "fame": 0.611,
+   "nickname": "Lady Day",
+   "description": "American jazz singer (1915–1959)",
+   "hook": "sang Strange Fruit and God Bless the Child",
+   "known": 0.8,
+   "kind": "musician"
+  },
+  {
+   "label": "Harry Belafonte",
+   "qid": "Q214959",
+   "fame": 0.605,
+   "nickname": "King of Calypso",
+   "description": "American singer, actor and civil rights activist (1927–2023)",
+   "hook": "sang Day-O, the banana boat song, and Jamaica Farewell",
+   "known": 0.8,
+   "kind": "musician"
+  },
+  {
+   "label": "William II of England",
+   "qid": "Q102005",
+   "fame": 0.6,
+   "nickname": "Rufus",
+   "description": "King of England from 1087 to 1100",
+   "hook": "is said to have died from an arrow while hunting in the New Forest",
+   "known": 0.4,
+   "kind": "royalty"
+  },
+  {
+   "label": "Ángel Di María",
+   "qid": "Q251683",
+   "fame": 0.597,
+   "nickname": "Fideo",
+   "description": "Argentine footballer (born 1988)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "footballer"
+  },
+  {
+   "label": "Jesse Owens",
+   "qid": "Q52651",
+   "fame": 0.565,
+   "nickname": "The Buckeye Bullet",
+   "description": "American track and field athlete (1913–1980)",
+   "hook": "won four gold medals at the Berlin Games, defying Nazi propaganda",
+   "known": 0.8,
+   "kind": "athlete"
+  },
+  {
+   "label": "Joe Louis",
+   "qid": "Q273206",
+   "fame": 0.565,
+   "nickname": "The Brown Bomber",
+   "description": "American boxer (1914-1981)",
+   "hook": "was a long-reigning world heavyweight champion who beat Max Schmeling",
+   "known": 0.8,
+   "kind": "athlete"
+  },
+  {
+   "label": "Charlie Parker",
+   "qid": "Q103767",
+   "fame": 0.561,
+   "nickname": "Bird",
+   "description": "American jazz saxophonist (1920–1955)",
+   "hook": "was a saxophone virtuoso who helped pioneer bebop",
+   "known": 0.6,
+   "kind": "musician"
+  },
+  {
+   "label": "Gregor Mendel",
+   "qid": "Q37970",
+   "fame": 0.544,
+   "nickname": "Father of Genetics",
+   "description": "Moravian scientist and Augustinian friar (1822–1884)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "historical"
+  },
+  {
+   "label": "Ole Gunnar Solskjær",
+   "qid": "Q18976",
+   "fame": 0.544,
+   "nickname": "The Baby-faced Assassin",
+   "description": "Norwegian association football manager",
+   "hook": "scored a stoppage-time winner in a Champions League final for Manchester United",
+   "known": 0.4,
+   "kind": "footballer"
+  },
+  {
+   "label": "Robert Burns",
+   "qid": "Q81960",
+   "fame": 0.53,
+   "nickname": "Bard of Ayrshire",
+   "description": "Scottish poet and lyricist (1759–1796)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "historical"
+  },
+  {
+   "label": "Alain Prost",
+   "qid": "Q10494",
+   "fame": 0.526,
+   "nickname": "The Professor",
+   "description": "French racing driver (born 1955)",
+   "hook": "won four Formula One titles and had a fierce rivalry with Ayrton Senna",
+   "known": 0.6,
+   "kind": "athlete"
+  },
+  {
+   "label": "Jenny Lind",
+   "qid": "Q231345",
+   "fame": 0.516,
+   "nickname": "Swedish Nightingale",
+   "description": "Swedish opera singer (1820–1887)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "musician"
+  },
+  {
+   "label": "Carles Puyol",
+   "qid": "Q17158",
+   "fame": 0.515,
+   "nickname": "Tarzan",
+   "description": "Spanish footballer (born 1978)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "footballer"
+  },
+  {
+   "label": "Thomas Henry Huxley",
+   "qid": "Q184366",
+   "fame": 0.512,
+   "nickname": "Darwin’s Bulldog",
+   "description": "British biologist and comparative anatomist (1825–1895)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "historical"
+  },
+  {
+   "label": "Johnny Hallyday",
+   "qid": "Q212015",
+   "fame": 0.474,
+   "nickname": "French Elvis",
+   "description": "French musician, singer and actor (1943–2017)",
+   "hook": "was a rock star adored as a national idol across decades of hits",
+   "known": 0.6,
+   "kind": "musician"
+  },
+  {
+   "label": "Shelly-Ann Fraser-Pryce",
+   "qid": "Q5793",
+   "fame": 0.459,
+   "nickname": "Pocket Rocket",
+   "description": "Jamaican track and field sprinter",
+   "hook": "is a sprinter who has won multiple world and Olympic 100 metre titles",
+   "known": 0.4,
+   "kind": "athlete"
+  }
+ ]
+}

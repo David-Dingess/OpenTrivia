@@ -1,0 +1,404 @@
+{
+ "id": "list.geography.countries-of-the-americas",
+ "title": "Countries of the Americas",
+ "prompt": "Name a country in North or South America",
+ "genre": "society",
+ "category": "geography",
+ "topic": "borders-and-maps",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q3624078 ; wdt:P30 ?cont . VALUES ?cont { wd:Q49 wd:Q18 } FILTER NOT EXISTS { ?item wdt:P576 [] } FILTER NOT EXISTS { ?item wdt:P31 wd:Q3024240 } } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-10-04T07:20:08.918Z"
+ },
+ "rows": [
+  {
+   "label": "United States",
+   "qid": "Q30",
+   "fame": 0.929,
+   "also": [
+    "the States",
+    "the U.S.",
+    "the U.S. of A",
+    "the U.S. of America",
+    "the U.S.A.",
+    "the United States of America",
+    "U.S. of America",
+    "US of A",
+    "the United States",
+    "United States of America",
+    "EUA",
+    "Murica"
+   ]
+  },
+  {
+   "label": "Canada",
+   "qid": "Q16",
+   "fame": 0.788,
+   "also": [
+    "CAN"
+   ]
+  },
+  {
+   "label": "Brazil",
+   "qid": "Q155",
+   "fame": 0.773,
+   "also": [
+    "Brasil",
+    "BRA",
+    "Federative Republic of Brazil"
+   ]
+  },
+  {
+   "label": "Mexico",
+   "qid": "Q96",
+   "fame": 0.752,
+   "also": [
+    "United Mexican States",
+    "MXN",
+    "United States of Mexico",
+    "Mexican Republic",
+    "Mexican United States",
+    "US of M",
+    "MEX"
+   ]
+  },
+  {
+   "label": "Argentina",
+   "qid": "Q414",
+   "fame": 0.73,
+   "also": [
+    "Argentine Republic",
+    "Republic of Argentina",
+    "Republica Argentina",
+    "ARG"
+   ]
+  },
+  {
+   "label": "Colombia",
+   "qid": "Q739",
+   "fame": 0.691,
+   "also": [
+    "Republic of Colombia",
+    "The Republic of Colombia",
+    "COL"
+   ]
+  },
+  {
+   "label": "Guyana",
+   "qid": "Q734",
+   "fame": 0.691,
+   "also": [
+    "Co-operative Republic of Guyana",
+    "Republic of Guyana",
+    "GUY"
+   ]
+  },
+  {
+   "label": "Suriname",
+   "qid": "Q730",
+   "fame": 0.687,
+   "also": [
+    "Surinam",
+    "Dutch Guiana",
+    "Republic of Surinam",
+    "Republic of Suriname",
+    "Surrinam",
+    "SUR"
+   ]
+  },
+  {
+   "label": "Cuba",
+   "qid": "Q241",
+   "fame": 0.686,
+   "also": [
+    "Republic of Cuba",
+    "CUB"
+   ]
+  },
+  {
+   "label": "Dominican Republic",
+   "qid": "Q786",
+   "fame": 0.683,
+   "also": [
+    "Dominicana",
+    "DOM",
+    "DomRep",
+    "Republica Dominicana"
+   ]
+  },
+  {
+   "label": "Chile",
+   "qid": "Q298",
+   "fame": 0.679,
+   "also": [
+    "CHL",
+    "CHI",
+    "Republic of Chile",
+    "República de Chile"
+   ]
+  },
+  {
+   "label": "Jamaica",
+   "qid": "Q766",
+   "fame": 0.675,
+   "also": [
+    "Commonwealth of Jamaica",
+    "JAM"
+   ]
+  },
+  {
+   "label": "Venezuela",
+   "qid": "Q717",
+   "fame": 0.675,
+   "also": [
+    "Republic of Venezuela",
+    "Bolivarian Republic of Venezuela",
+    "BR Venezuela",
+    "VEN",
+    "Vzla"
+   ]
+  },
+  {
+   "label": "El Salvador",
+   "qid": "Q792",
+   "fame": 0.671,
+   "also": [
+    "Salvador",
+    "ESA",
+    "Republic of El Salvador",
+    "SLV"
+   ]
+  },
+  {
+   "label": "Bolivia",
+   "qid": "Q750",
+   "fame": 0.667,
+   "also": [
+    "Plurinational State of Bolivia",
+    "Republic of Bolivia",
+    "bol"
+   ]
+  },
+  {
+   "label": "Haiti",
+   "qid": "Q790",
+   "fame": 0.666,
+   "also": [
+    "HTI",
+    "Hayti",
+    "HAI",
+    "Ayiti",
+    "Haitian Republic",
+    "Republic of Haiti"
+   ]
+  },
+  {
+   "label": "Peru",
+   "qid": "Q419",
+   "fame": 0.664,
+   "also": [
+    "Republic of Peru",
+    "Republica del Peru",
+    "PER"
+   ]
+  },
+  {
+   "label": "Belize",
+   "qid": "Q242",
+   "fame": 0.661,
+   "also": [
+    "BLZ"
+   ]
+  },
+  {
+   "label": "Guatemala",
+   "qid": "Q774",
+   "fame": 0.657,
+   "also": [
+    "GTM",
+    "Republic of Guatemala",
+    "República de Guatemala"
+   ]
+  },
+  {
+   "label": "The Bahamas",
+   "qid": "Q778",
+   "fame": 0.657,
+   "also": [
+    "Bahamas",
+    "BAH",
+    "Bahama Islands",
+    "Commonwealth of the Bahamas",
+    "BHS"
+   ]
+  },
+  {
+   "label": "Uruguay",
+   "qid": "Q77",
+   "fame": 0.656,
+   "also": [
+    "URU",
+    "Eastern Republic of Uruguay",
+    "Oriental Republic of Uruguay",
+    "URY"
+   ]
+  },
+  {
+   "label": "Trinidad and Tobago",
+   "qid": "Q754",
+   "fame": 0.651,
+   "also": [
+    "Republic of Trinidad and Tobago",
+    "Trinidad & Tobago",
+    "TRI",
+    "TTO"
+   ]
+  },
+  {
+   "label": "Barbados",
+   "qid": "Q244",
+   "fame": 0.643,
+   "also": [
+    "BAR",
+    "Barbadoes",
+    "BRB"
+   ]
+  },
+  {
+   "label": "Costa Rica",
+   "qid": "Q800",
+   "fame": 0.643,
+   "also": [
+    "CRI",
+    "Republic of Costa Rica",
+    "CRC"
+   ]
+  },
+  {
+   "label": "Nicaragua",
+   "qid": "Q811",
+   "fame": 0.643,
+   "also": [
+    "Republic of Nicaragua",
+    "NIC",
+    "NCA"
+   ]
+  },
+  {
+   "label": "Ecuador",
+   "qid": "Q736",
+   "fame": 0.642,
+   "also": [
+    "Republic of Ecuador",
+    "Republic of the Equator",
+    "The Ecuadorian State",
+    "ECU",
+    "Republic of Equator",
+    "República del Ecuador"
+   ]
+  },
+  {
+   "label": "Honduras",
+   "qid": "Q783",
+   "fame": 0.628,
+   "also": [
+    "HON",
+    "Honduran Republic",
+    "Republic of Honduras",
+    "HND"
+   ]
+  },
+  {
+   "label": "Panama",
+   "qid": "Q804",
+   "fame": 0.628,
+   "also": [
+    "PAN",
+    "Republic of Panama"
+   ]
+  },
+  {
+   "label": "Saint Lucia",
+   "qid": "Q760",
+   "fame": 0.619,
+   "also": [
+    "St Lucia",
+    "lca",
+    "Hewanorra",
+    "Iyonola"
+   ]
+  },
+  {
+   "label": "Grenada",
+   "qid": "Q769",
+   "fame": 0.618,
+   "also": [
+    "GRN",
+    "GRD"
+   ]
+  },
+  {
+   "label": "Paraguay",
+   "qid": "Q733",
+   "fame": 0.618,
+   "also": [
+    "Heart of South America",
+    "Republic of Paraguay",
+    "PRY",
+    "PAR"
+   ]
+  },
+  {
+   "label": "Dominica",
+   "qid": "Q784",
+   "fame": 0.612,
+   "also": [
+    "DOM",
+    "Commonwealth of Dominica",
+    "Island of Dominica",
+    "The Commonwealth of Dominica",
+    "Wai'tu kubuli",
+    "DMA"
+   ]
+  },
+  {
+   "label": "Saint Kitts and Nevis",
+   "qid": "Q763",
+   "fame": 0.604,
+   "also": [
+    "Federation of Saint Christopher and Nevis",
+    "Federation of Saint Kitts and Nevis",
+    "Kitts & Nevis",
+    "Kitts and Nevis",
+    "Saint Christopher and Nevis",
+    "St Kitts & Nevis",
+    "St Kitts and Nevis",
+    "KNA",
+    "SKN"
+   ]
+  },
+  {
+   "label": "Saint Vincent and the Grenadines",
+   "qid": "Q757",
+   "fame": 0.59,
+   "also": [
+    "St Vincent",
+    "Saint Vincent",
+    "St Vincent and the Grenadines",
+    "vct"
+   ]
+  },
+  {
+   "label": "Antigua and Barbuda",
+   "qid": "Q781",
+   "fame": 0.583,
+   "also": [
+    "Antigua-Barbuda",
+    "ANT",
+    "ATG"
+   ]
+  }
+ ]
+}

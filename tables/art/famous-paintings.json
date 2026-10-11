@@ -1,0 +1,260 @@
+{
+ "id": "table.art.famous-paintings",
+ "kind": "table",
+ "title": "Famous paintings (pre-1900): year and artist",
+ "genre": "arts-entertainment",
+ "category": "art",
+ "topic": "renaissance-art",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?inception ?creatorLabel WHERE { { SELECT ?item ?sitelinks (MIN(?d) AS ?inception) (SAMPLE(?c) AS ?creator) (COUNT(DISTINCT ?c) AS ?nCreator) WHERE { ?item wdt:P31 wd:Q3305213 ; wikibase:sitelinks ?sitelinks ; wdt:P571 ?d ; wdt:P170 ?c . FILTER(?sitelinks > 40) FILTER(?d < \"1900-01-01T00:00:00Z\"^^xsd:dateTime) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 200 } hint:Prior hint:runFirst true . FILTER(?nCreator = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 40",
+  "attribution": null,
+  "fetchedAt": "2026-09-24T23:14:22.392Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-24T23:14:22.392Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "year",
+   "label": "Painted",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "artist",
+   "label": "Artist",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "painting",
+  "many": "paintings",
+  "itemText": "{label} — {artist}",
+  "hookAsk": "Which painting {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "theLabels": [
+   "Mona Lisa",
+   "Last Supper",
+   "Starry Night",
+   "Scream",
+   "Birth of Venus",
+   "Night Watch",
+   "Garden of Earthly Delights",
+   "Persistence of Memory",
+   "Great Wave off Kanagawa",
+   "Kiss"
+  ],
+  "columns": {
+   "year": {
+    "role": "date",
+    "sort": "from the oldest to the newest",
+    "era": "Drop each painting into the century it was painted.",
+    "shot": "In what year did {artist} paint {label}?"
+   },
+   "artist": {
+    "role": "link",
+    "pick": "Who painted {label} in {year}?",
+    "statement": "{label} was painted by {value} in {year}.",
+    "match": "Match each painting to the artist who painted it.",
+    "reverse": "Which of these did {value} paint?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Mona Lisa",
+   "qid": "Q12418",
+   "fame": 0.701,
+   "year": 1503,
+   "artist": "Leonardo da Vinci",
+   "description": "oil painting by Leonardo da Vinci in the Louvre, Paris",
+   "hook": "shows a poised woman with a faint, ambiguous smile against a hazy landscape backdrop",
+   "known": 0.95,
+   "kind": "portrait"
+  },
+  {
+   "label": "The Starry Night",
+   "qid": "Q45585",
+   "fame": 0.665,
+   "year": 1889,
+   "artist": "Vincent van Gogh",
+   "description": "painting by Vincent van Gogh",
+   "hook": "shows a swirling sky of glowing stars over a quiet village and a tall dark cypress tree",
+   "known": 0.95,
+   "kind": "landscape"
+  },
+  {
+   "label": "The Garden of Earthly Delights",
+   "qid": "Q321303",
+   "fame": 0.621,
+   "year": 1490,
+   "artist": "Hieronymus Bosch",
+   "description": "medieval triptych by Hieronymus Bosch, Prado",
+   "hook": "depicts a fantastical triptych of paradise, chaotic pleasure, and nightmarish punishment across three panels",
+   "known": 0.6,
+   "kind": "allegorical"
+  },
+  {
+   "label": "Girl with a Pearl Earring",
+   "qid": "Q185372",
+   "fame": 0.59,
+   "year": 1665,
+   "artist": "Johannes Vermeer",
+   "description": "painting by Johannes Vermeer",
+   "hook": "shows a young woman in a blue turban glancing over her shoulder with a luminous teardrop jewel at her ear",
+   "known": 0.8,
+   "kind": "portrait"
+  },
+  {
+   "label": "The Birth of Venus",
+   "qid": "Q151047",
+   "fame": 0.573,
+   "year": 1485,
+   "artist": "Sandro Botticelli",
+   "description": "painting by Sandro Botticelli, Uffizi",
+   "hook": "shows a goddess emerging from the sea standing on a giant scallop shell",
+   "known": 0.8,
+   "kind": "allegorical"
+  },
+  {
+   "label": "Arnolfini Portrait",
+   "qid": "Q220859",
+   "fame": 0.553,
+   "year": 1434,
+   "artist": "Jan van Eyck",
+   "description": "1434 painting by Jan van Eyck",
+   "hook": "shows a wealthy merchant couple holding hands in a bedroom, a small dog at their feet and a mirror behind them",
+   "known": 0.4,
+   "kind": "portrait"
+  },
+  {
+   "label": "Las Meninas",
+   "qid": "Q208758",
+   "fame": 0.543,
+   "year": 1656,
+   "artist": "Diego Velázquez",
+   "description": "1656 painting by Diego Velázquez",
+   "hook": "shows a royal court scene where the artist appears at his easel beside a young princess and her attendants",
+   "known": 0.6,
+   "kind": "portrait"
+  },
+  {
+   "label": "The Night Watch",
+   "qid": "Q219831",
+   "fame": 0.522,
+   "year": 1642,
+   "artist": "Rembrandt",
+   "description": "1642 painting by Rembrandt, Rijksmuseum",
+   "hook": "shows a militia company bursting into motion as their captain gives the order to march",
+   "known": 0.8,
+   "kind": "narrative"
+  },
+  {
+   "label": "Lady with an Ermine",
+   "qid": "Q474338",
+   "fame": 0.518,
+   "year": 1490,
+   "artist": "Leonardo da Vinci",
+   "description": "painting by Leonardo da Vinci from around 1489–1490",
+   "hook": "shows a young noblewoman cradling a sleek white weasel-like animal in her arms",
+   "known": 0.4,
+   "kind": "portrait"
+  },
+  {
+   "label": "Wanderer above the Sea of Fog",
+   "qid": "Q311243",
+   "fame": 0.515,
+   "year": 1818,
+   "artist": "Caspar David Friedrich",
+   "description": "painting by Caspar David Friedrich at the Hamburger Kunsthalle",
+   "hook": "shows a lone figure standing atop a rocky peak gazing out over a mist-filled valley",
+   "known": 0.4,
+   "kind": "landscape"
+  },
+  {
+   "label": "The Raft of the Medusa",
+   "qid": "Q212616",
+   "fame": 0.514,
+   "year": 1819,
+   "artist": "Théodore Géricault",
+   "description": "painting by Théodore Géricault",
+   "hook": "shows shipwreck survivors crowded on a makeshift vessel desperately signaling a distant ship",
+   "known": 0.4,
+   "kind": "narrative"
+  },
+  {
+   "label": "Liberty Leading the People",
+   "qid": "Q29530",
+   "fame": 0.506,
+   "year": 1830,
+   "artist": "Eugène Delacroix",
+   "description": "painting by Eugène Delacroix, Louvre",
+   "hook": "shows a bare-chested allegorical woman waving a flag as she charges over fallen bodies during an uprising",
+   "known": 0.6,
+   "kind": "narrative"
+  },
+  {
+   "label": "Impression, Sunrise",
+   "qid": "Q328523",
+   "fame": 0.493,
+   "year": 1872,
+   "artist": "Claude Monet",
+   "description": "1872 painting by Claude Monet",
+   "hook": "shows a hazy harbor at dawn with small boats silhouetted against an orange sun",
+   "known": 0.4,
+   "kind": "landscape"
+  },
+  {
+   "label": "The Death of Socrates",
+   "qid": "Q1752990",
+   "fame": 0.481,
+   "year": 1787,
+   "artist": "Jacques-Louis David",
+   "description": "painting by Jacques-Louis David",
+   "hook": "shows a condemned philosopher calmly reaching for a cup of poison surrounded by grieving followers",
+   "known": 0.4,
+   "kind": "narrative"
+  },
+  {
+   "label": "The Third of May 1808",
+   "qid": "Q1091086",
+   "fame": 0.479,
+   "year": 1814,
+   "artist": "Francisco Goya",
+   "description": "painting by Francisco de Goya",
+   "hook": "shows a peasant with arms raised facing an execution squad by lantern light",
+   "known": 0.4,
+   "kind": "narrative"
+  },
+  {
+   "label": "Primavera",
+   "qid": "Q549847",
+   "fame": 0.478,
+   "year": 1480,
+   "artist": "Sandro Botticelli",
+   "description": "painting by Sandro Botticelli",
+   "hook": "shows mythological figures dancing together in an orange grove to welcome the arrival of spring",
+   "known": 0.6,
+   "kind": "allegorical"
+  }
+ ]
+}

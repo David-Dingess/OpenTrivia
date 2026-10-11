@@ -1,0 +1,228 @@
+{
+ "id": "list.geography.eu-member-states",
+ "kind": "list",
+ "title": "Member states of the European Union",
+ "genre": "society",
+ "category": "geography",
+ "topic": "borders-and-maps",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { ?item wdt:P31 wd:Q3624078 . FILTER NOT EXISTS { ?item wdt:P31 wd:Q3024240 } FILTER NOT EXISTS { ?item wdt:P576 [] } ?item p:P463 ?st . ?st ps:P463 wd:Q458 . FILTER NOT EXISTS { ?st pq:P582 [] } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T03:17:13.676Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T03:17:13.676Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "member state",
+  "many": "EU member states",
+  "columns": {}
+ },
+ "impostors": [
+  {
+   "label": "United Kingdom",
+   "qid": "Q145",
+   "why": "not a member: a European country outside the EU"
+  },
+  {
+   "label": "Russia",
+   "qid": "Q159",
+   "why": "not a member: a European country outside the EU"
+  },
+  {
+   "label": "Kazakhstan",
+   "qid": "Q232",
+   "why": "not a member: a European country outside the EU"
+  },
+  {
+   "label": "Norway",
+   "qid": "Q20",
+   "why": "not a member: a European country outside the EU"
+  },
+  {
+   "label": "Turkey",
+   "qid": "Q43",
+   "why": "not a member: a European country outside the EU"
+  },
+  {
+   "label": "Iceland",
+   "qid": "Q189",
+   "why": "not a member: a European country outside the EU"
+  },
+  {
+   "label": "Belarus",
+   "qid": "Q184",
+   "why": "not a member: a European country outside the EU"
+  },
+  {
+   "label": "Switzerland",
+   "qid": "Q39",
+   "why": "not a member: a European country outside the EU"
+  }
+ ],
+ "rows": [
+  {
+   "label": "Germany",
+   "qid": "Q183",
+   "fame": 0.786,
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "France",
+   "qid": "Q142",
+   "fame": 0.755,
+   "description": "country in Western Europe and other continents (through its overseas territories in America, Africa and Oceania)"
+  },
+  {
+   "label": "Spain",
+   "qid": "Q29",
+   "fame": 0.742,
+   "description": "country in southwestern Europe with territories in Africa"
+  },
+  {
+   "label": "Italy",
+   "qid": "Q38",
+   "fame": 0.739,
+   "description": "country in southern Europe"
+  },
+  {
+   "label": "Poland",
+   "qid": "Q36",
+   "fame": 0.733,
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Sweden",
+   "qid": "Q34",
+   "fame": 0.733,
+   "description": "country in Northern Europe"
+  },
+  {
+   "label": "Czech Republic",
+   "qid": "Q213",
+   "fame": 0.73,
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Portugal",
+   "qid": "Q45",
+   "fame": 0.73,
+   "description": "country in Southwestern Europe"
+  },
+  {
+   "label": "Malta",
+   "qid": "Q233",
+   "fame": 0.727,
+   "description": "country in Southern Europe situated on an archipelago in the Mediterranean Sea"
+  },
+  {
+   "label": "Cyprus",
+   "qid": "Q229",
+   "fame": 0.725,
+   "description": "country in the Mediterranean Sea"
+  },
+  {
+   "label": "Croatia",
+   "qid": "Q224",
+   "fame": 0.71,
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Greece",
+   "qid": "Q41",
+   "fame": 0.709,
+   "description": "country in Southeast Europe"
+  },
+  {
+   "label": "Belgium",
+   "qid": "Q31",
+   "fame": 0.703,
+   "description": "country in western Europe"
+  },
+  {
+   "label": "Ireland",
+   "qid": "Q27",
+   "fame": 0.703,
+   "description": "country in Northwestern Europe"
+  },
+  {
+   "label": "Lithuania",
+   "qid": "Q37",
+   "fame": 0.702,
+   "description": "country in northeastern Europe"
+  },
+  {
+   "label": "Finland",
+   "qid": "Q33",
+   "fame": 0.701,
+   "description": "country in Northern Europe"
+  },
+  {
+   "label": "Austria",
+   "qid": "Q40",
+   "fame": 0.7,
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Romania",
+   "qid": "Q218",
+   "fame": 0.699,
+   "description": "country in Southeast Europe"
+  },
+  {
+   "label": "Slovenia",
+   "qid": "Q215",
+   "fame": 0.696,
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Luxembourg",
+   "qid": "Q32",
+   "fame": 0.692,
+   "description": "country in Western Europe"
+  },
+  {
+   "label": "Bulgaria",
+   "qid": "Q219",
+   "fame": 0.685,
+   "description": "country in southeast Europe"
+  },
+  {
+   "label": "Slovakia",
+   "qid": "Q214",
+   "fame": 0.685,
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Hungary",
+   "qid": "Q28",
+   "fame": 0.683,
+   "description": "country in Central Europe"
+  },
+  {
+   "label": "Estonia",
+   "qid": "Q191",
+   "fame": 0.682,
+   "description": "country in Northern Europe"
+  },
+  {
+   "label": "Latvia",
+   "qid": "Q211",
+   "fame": 0.679,
+   "description": "sovereign state in northeastern Europe"
+  }
+ ]
+}

@@ -1,0 +1,309 @@
+{
+ "id": "table.math.si-units-measures",
+ "kind": "table",
+ "title": "Units and what they measure",
+ "genre": "science-math-tech",
+ "category": "math",
+ "topic": "units",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?mlabel WHERE { VALUES ?item { wd:Q12438 wd:Q25236 wd:Q25269 wd:Q44395 wd:Q11579 wd:Q25272 wd:Q25250 wd:Q47083 wd:Q39369 wd:Q25406 wd:Q131255 wd:Q163354 wd:Q163343 wd:Q170804 wd:Q169893 wd:Q102573 wd:Q190095 wd:Q103246 wd:Q484092 wd:Q179836 wd:Q83216 wd:Q41509 wd:Q33680 wd:Q25267 wd:Q42289 wd:Q103510 wd:Q5329 wd:Q128822 wd:Q253276 wd:Q3710 wd:Q218593 wd:Q482798 wd:Q100995 wd:Q48013 wd:Q41803 wd:Q191118 wd:Q8799 wd:Q8805 wd:Q12129 wd:Q531 wd:Q83327 wd:Q483261 wd:Q178413 wd:Q81292 wd:Q11582 wd:Q35852 wd:Q11573 wd:Q11570 wd:Q11574 wd:Q7727 wd:Q25235 } ?item wdt:P111 ?m . ?m rdfs:label ?mlabel . FILTER(LANG(?mlabel)=\"en\") FILTER(STR(?mlabel) IN (\"force\",\"power\",\"energy\",\"pressure\",\"temperature\",\"length\",\"mass\",\"time\",\"electric current\",\"frequency\",\"electric potential difference\",\"electric charge\",\"electrical resistance\",\"electrical capacitance\",\"inductance\",\"magnetic flux density\",\"magnetic flux\",\"luminous intensity\",\"luminous flux\",\"illuminance\",\"amount of substance\",\"radioactivity\",\"absorbed dose\",\"equivalent dose\",\"speed\",\"area\",\"volume\",\"angle\",\"duration\",\"electrical conductance\",\"information\",\"data\")) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T19:01:55.297Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T19:01:55.297Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "measures",
+   "label": "Measures",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "unit",
+  "many": "units",
+  "columns": {
+   "measures": {
+    "role": "link",
+    "pick": "What does the {label} measure?",
+    "statement": "The {label} is a unit of {value}.",
+    "match": "Match each unit to what it measures.",
+    "odd": "Three of these units measure {value}. Which one does not?",
+    "all": "Tap all {n} units that measure {value}.",
+    "reverse": "Which of these units measures {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "parsec",
+   "qid": "Q12129",
+   "fame": 0.556,
+   "measures": "length",
+   "description": "unit of length used in astronomy",
+   "hook": "is a favorite of astronomers and gets misused by Han Solo when bragging about the Kessel Run",
+   "known": 0.2,
+   "kind": "distance"
+  },
+  {
+   "label": "joule",
+   "qid": "Q25269",
+   "fame": 0.553,
+   "measures": "energy",
+   "description": "SI unit of energy, work and amount of heat",
+   "hook": "honors a British brewer's son who linked heat to motion, and shows up in kilo form on food labels",
+   "known": 0.6,
+   "kind": "energy"
+  },
+  {
+   "label": "light-year",
+   "qid": "Q531",
+   "fame": 0.547,
+   "measures": "length",
+   "description": "unit of astronomical length, defined as the distance that light travels in the vacuum in one year",
+   "hook": "is how astronomers describe how far away stars are, even though the name sounds like a span of time",
+   "known": 0.8,
+   "kind": "distance"
+  },
+  {
+   "label": "acre",
+   "qid": "Q81292",
+   "fame": 0.527,
+   "measures": "area",
+   "description": "unit of area",
+   "hook": "was traditionally what a yoked pair of oxen could plough in a single day",
+   "known": 0.6,
+   "kind": "area"
+  },
+  {
+   "label": "metre",
+   "qid": "Q11573",
+   "fame": 0.521,
+   "measures": "length",
+   "description": "SI unit of length",
+   "hook": "was first defined as one ten-millionth of the way from the North Pole to the equator",
+   "known": 0.95,
+   "kind": "distance"
+  },
+  {
+   "label": "pascal",
+   "qid": "Q44395",
+   "fame": 0.521,
+   "measures": "pressure",
+   "description": "SI unit of pressure and stress",
+   "hook": "honors a French polymath and is what tire gauges and weather barometers report",
+   "known": 0.2,
+   "kind": "pressure"
+  },
+  {
+   "label": "hertz",
+   "qid": "Q39369",
+   "fame": 0.52,
+   "measures": "frequency",
+   "description": "SI unit of frequency",
+   "hook": "honors the German physicist who proved radio waves exist, and is counted in cycles per second",
+   "known": 0.6,
+   "kind": "frequency"
+  },
+  {
+   "label": "watt",
+   "qid": "Q25236",
+   "fame": 0.518,
+   "measures": "power",
+   "description": "SI unit of power",
+   "hook": "honors the Scottish engineer who improved the steam engine, and is printed on light bulbs and microwaves",
+   "known": 0.8,
+   "kind": "power"
+  },
+  {
+   "label": "newton",
+   "qid": "Q12438",
+   "fame": 0.514,
+   "measures": "force",
+   "description": "SI unit of force",
+   "hook": "honors the scientist said to have been inspired by a falling apple, and is roughly an apple's weight",
+   "known": 0.4,
+   "kind": "force"
+  },
+  {
+   "label": "byte",
+   "qid": "Q8799",
+   "fame": 0.506,
+   "measures": "information",
+   "description": "unit of digital information equal to 8 bits",
+   "hook": "is made of eight bits and is what the 'mega' and 'giga' on file sizes multiply",
+   "known": 0.8,
+   "kind": "information"
+  },
+  {
+   "label": "knot",
+   "qid": "Q128822",
+   "fame": 0.502,
+   "measures": "speed",
+   "description": "unit of speed",
+   "hook": "is used at sea and in the air, and once was counted by paying out a rope with knots behind a ship",
+   "known": 0.4,
+   "kind": "speed"
+  },
+  {
+   "label": "ampere",
+   "qid": "Q25272",
+   "fame": 0.495,
+   "measures": "electric current",
+   "description": "SI unit of electric current",
+   "hook": "honors a French physicist and is what fuses and circuit breakers are rated in",
+   "known": 0.4,
+   "kind": "electricity"
+  },
+  {
+   "label": "hectare",
+   "qid": "Q35852",
+   "fame": 0.489,
+   "measures": "area",
+   "description": "metric unit of area",
+   "hook": "equals 10,000 square metres and is used for farmland and forests worldwide",
+   "known": 0.4,
+   "kind": "area"
+  },
+  {
+   "label": "kilogram",
+   "qid": "Q11570",
+   "fame": 0.487,
+   "measures": "mass",
+   "description": "metric unit of mass",
+   "hook": "is the only base unit with a prefix, and was long defined by a platinum-iridium cylinder in a Paris vault",
+   "known": 0.95,
+   "kind": "mass"
+  },
+  {
+   "label": "ohm",
+   "qid": "Q47083",
+   "fame": 0.487,
+   "measures": "electrical resistance",
+   "description": "SI derived unit of electrical resistance",
+   "hook": "honors a German physicist and is written with the Greek letter omega",
+   "known": 0.2,
+   "kind": "electricity"
+  },
+  {
+   "label": "mile",
+   "qid": "Q253276",
+   "fame": 0.485,
+   "measures": "length",
+   "description": "unit of length (on ground)",
+   "hook": "began as a Roman count of a thousand paces and is still used on American road signs",
+   "known": 0.9,
+   "kind": "distance"
+  },
+  {
+   "label": "inch",
+   "qid": "Q218593",
+   "fame": 0.483,
+   "measures": "length",
+   "description": "unit of length",
+   "hook": "was once defined as the width of a man's thumb, and equals 2.54 centimetres",
+   "known": 0.9,
+   "kind": "distance"
+  },
+  {
+   "label": "coulomb",
+   "qid": "Q25406",
+   "fame": 0.482,
+   "measures": "electric charge",
+   "description": "SI unit of electric charge",
+   "hook": "honors a French physicist and is what flows when one amp runs for one second",
+   "known": 0.05,
+   "kind": "electricity"
+  },
+  {
+   "label": "electronvolt",
+   "qid": "Q83327",
+   "fame": 0.468,
+   "measures": "energy",
+   "description": "unit of energy",
+   "hook": "is used by particle physicists, with the Large Hadron Collider's beams counted in trillions of them",
+   "known": 0.2,
+   "kind": "energy"
+  },
+  {
+   "label": "bit",
+   "qid": "Q8805",
+   "fame": 0.463,
+   "measures": "information",
+   "description": "basic unit of information in computing and digital communications",
+   "hook": "is a single 0 or 1, and eight of them make a byte",
+   "known": 0.8,
+   "kind": "information"
+  },
+  {
+   "label": "tonne",
+   "qid": "Q191118",
+   "fame": 0.463,
+   "measures": "mass",
+   "description": "metric unit of mass equivalent to 1000 kilograms",
+   "hook": "equals a thousand kilograms and is spelled with an extra letter to tell it from the American ton",
+   "known": 0.6,
+   "kind": "mass"
+  },
+  {
+   "label": "volt",
+   "qid": "Q25250",
+   "fame": 0.461,
+   "measures": "electric potential difference",
+   "description": "SI unit of electric potential, of electric potential difference (voltage), and of electromotive force",
+   "hook": "honors the Italian inventor of the first battery, and is what wall outlets and AA batteries are rated in",
+   "known": 0.8,
+   "kind": "electricity"
+  },
+  {
+   "label": "foot",
+   "qid": "Q3710",
+   "fame": 0.458,
+   "measures": "length",
+   "description": "unit of length",
+   "hook": "is divided into twelve inches, and is how airplane altitudes are given",
+   "known": 0.9,
+   "kind": "distance"
+  },
+  {
+   "label": "lumen",
+   "qid": "Q484092",
+   "fame": 0.454,
+   "measures": "luminous flux",
+   "description": "SI unit of luminous flux",
+   "hook": "is printed on light bulb boxes to say how bright they are",
+   "known": 0.2,
+   "kind": "light"
+  },
+  {
+   "label": "litre",
+   "qid": "Q11582",
+   "fame": 0.451,
+   "measures": "volume",
+   "description": "unit of volume accepted for use with the SI",
+   "hook": "is roughly the size of a big soda bottle, equal to a thousand cubic centimetres",
+   "known": 0.9,
+   "kind": "volume"
+  }
+ ]
+}

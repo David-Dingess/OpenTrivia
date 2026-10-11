@@ -1,0 +1,269 @@
+{
+ "id": "table.video-games.game-characters-franchise",
+ "kind": "table",
+ "title": "Game characters and the franchise they belong to",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "best-sellers",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?frLabel WHERE { VALUES (?item ?fr) { (wd:Q210593 wd:Q4802838) (wd:Q507001 wd:Q4802838) (wd:Q845864 wd:Q4802838) (wd:Q214174 wd:Q4802838) (wd:Q1061603 wd:Q4802838) (wd:Q1148659 wd:Q4802838) (wd:Q2208427 wd:Q4802838) (wd:Q1148045 wd:Q4802838) (wd:Q20735859 wd:Q4802838) (wd:Q3103978 wd:Q4802838) (wd:Q1057701 wd:Q4802838) (wd:Q2291541 wd:Q4802838) (wd:Q1315925 wd:Q4802838) (wd:Q3771604 wd:Q4802838) (wd:Q568553 wd:Q12393) (wd:Q545044 wd:Q12393) (wd:Q1200192 wd:Q12393) (wd:Q2745583 wd:Q12393) (wd:Q9351 wd:Q864) (wd:Q844940 wd:Q864) (wd:Q1263559 wd:Q864) (wd:Q2141803 wd:Q864) (wd:Q847571 wd:Q864) (wd:Q845294 wd:Q864) (wd:Q3178753 wd:Q864) (wd:Q1753198 wd:Q864) (wd:Q2480066 wd:Q864) (wd:Q1154303 wd:Q864) (wd:Q25918172 wd:Q864) (wd:Q2250743 wd:Q864) (wd:Q194135 wd:Q1046812) (wd:Q904189 wd:Q1046812) (wd:Q1996763 wd:Q1046812) (wd:Q1072866 wd:Q1046812) (wd:Q12400 wd:Q12397) (wd:Q652022 wd:Q1747150) (wd:Q2744250 wd:Q1747150) (wd:Q1328424 wd:Q2569953) (wd:Q1318338 wd:Q2569953) (wd:Q10904385 wd:Q662004) (wd:Q2081430 wd:Q1501747) (wd:Q2340460 wd:Q6720878) (wd:Q2270749 wd:Q1740851) (wd:Q7817054 wd:Q1139803) (wd:Q79853946 wd:Q1139803) (wd:Q16238023 wd:Q1139803) (wd:Q1798592 wd:Q12391356) (wd:Q2294772 wd:Q12391356) (wd:Q1199059 wd:Q12391356) (wd:Q1910444 wd:Q12391356) (wd:Q2479291 wd:Q12391356) (wd:Q104901351 wd:Q25445348) (wd:Q13164404 wd:Q25445348) (wd:Q568463 wd:Q1064135) (wd:Q223684 wd:Q270503) (wd:Q2089970 wd:Q755167) (wd:Q2745804 wd:Q8198020) (wd:Q907 wd:Q752241) (wd:Q605125 wd:Q7231475) (wd:Q851814 wd:Q7231475) (wd:Q2721772 wd:Q5170139) (wd:Q2552343 wd:Q5170139) (wd:Q2415482 wd:Q2227411) (wd:Q1038163 wd:Q339944) (wd:Q105102816 wd:Q105102816) (wd:Q53737957 wd:Q96329893) } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T04:45:23.251Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T04:45:23.251Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "franchise",
+   "label": "Franchise",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "game character",
+  "many": "game characters",
+  "columns": {
+   "franchise": {
+    "role": "link",
+    "pick": "Which game franchise is {label} from?",
+    "statement": "{label} is a character from {value}.",
+    "match": "Match each game character to the franchise they come from.",
+    "odd": "Three of these characters are from {value}. Which one isn't?",
+    "all": "Tap all {n} characters from {value}.",
+    "reverse": "Which of these characters is from {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Pikachu",
+   "qid": "Q9351",
+   "fame": 0.599,
+   "franchise": "Pokémon",
+   "description": "Pokémon species, mascot of the Pokémon franchise",
+   "hook": "is a yellow electric mouse with a lightning-bolt tail and red cheeks, and serves as the franchise mascot",
+   "known": 0.95,
+   "kind": "pokemon"
+  },
+  {
+   "label": "Lara Croft",
+   "qid": "Q223684",
+   "fame": 0.518,
+   "franchise": "Tomb Raider",
+   "description": "Tomb Raider protagonist character",
+   "hook": "is an athletic British archaeologist who explores ancient tombs and ruins, dual-wielding pistols",
+   "known": 0.8,
+   "kind": "protagonist"
+  },
+  {
+   "label": "Bulbasaur",
+   "qid": "Q847571",
+   "fame": 0.514,
+   "franchise": "Pokémon",
+   "description": "Pokémon species",
+   "hook": "is a green starter creature with a plant bulb growing on its back",
+   "known": 0.4,
+   "kind": "pokemon"
+  },
+  {
+   "label": "Link",
+   "qid": "Q568553",
+   "fame": 0.505,
+   "franchise": "The Legend of Zelda",
+   "description": "main character of The Legend of Zelda video games created by Shigeru Miyamoto",
+   "hook": "is a green-clad silent hero who wields a sword and shield to save a princess and a kingdom",
+   "known": 0.8,
+   "kind": "protagonist"
+  },
+  {
+   "label": "Samus Aran",
+   "qid": "Q12400",
+   "fame": 0.505,
+   "franchise": "Metroid",
+   "description": "video game character",
+   "hook": "is an armored galactic bounty hunter whose helmet hides a woman, a twist that surprised early players",
+   "known": 0.4,
+   "kind": "protagonist"
+  },
+  {
+   "label": "Dr. Eggman",
+   "qid": "Q1996763",
+   "fame": 0.499,
+   "franchise": "Sonic the Hedgehog",
+   "description": "fictional character from the Sonic franchise",
+   "hook": "is a mad scientist with a big mustache who builds robots to defeat a blue speedster",
+   "known": 0.4,
+   "kind": "antagonist"
+  },
+  {
+   "label": "Steve",
+   "qid": "Q104901351",
+   "fame": 0.498,
+   "franchise": "Minecraft",
+   "description": "protagonist of Minecraft",
+   "hook": "is the default blocky player avatar in a sandbox game about mining and crafting",
+   "known": 0.6,
+   "kind": "protagonist"
+  },
+  {
+   "label": "Princess Peach",
+   "qid": "Q507001",
+   "fame": 0.492,
+   "franchise": "Super Mario",
+   "description": "fictional character from the Mario franchise",
+   "hook": "is a pink-gowned ruler of a mushroom-filled kingdom who is repeatedly kidnapped by a fire-breathing villain",
+   "known": 0.8,
+   "kind": "princess"
+  },
+  {
+   "label": "Rosalina",
+   "qid": "Q2208427",
+   "fame": 0.486,
+   "franchise": "Super Mario",
+   "description": "fictional character from the Mario franchise",
+   "hook": "is a star-guarding guardian who lives in a comet observatory and mothers the star-like Lumas",
+   "known": 0.4,
+   "kind": "princess"
+  },
+  {
+   "label": "Bowser",
+   "qid": "Q845864",
+   "fame": 0.484,
+   "franchise": "Super Mario",
+   "description": "fictional character from the Mario franchise",
+   "hook": "is a spiky-shelled, fire-breathing king of the Koopas who keeps kidnapping a princess",
+   "known": 0.6,
+   "kind": "antagonist"
+  },
+  {
+   "label": "Mewtwo",
+   "qid": "Q2141803",
+   "fame": 0.484,
+   "franchise": "Pokémon",
+   "description": "Pokémon species",
+   "hook": "is a genetically engineered psychic creature often called the strongest of its kind",
+   "known": 0.6,
+   "kind": "pokemon"
+  },
+  {
+   "label": "Ganon",
+   "qid": "Q545044",
+   "fame": 0.483,
+   "franchise": "The Legend of Zelda",
+   "description": "video game character",
+   "hook": "is a pig-like demon king and recurring final boss, whose human form is Ganondorf",
+   "known": 0.4,
+   "kind": "antagonist"
+  },
+  {
+   "label": "Knuckles the Echidna",
+   "qid": "Q904189",
+   "fame": 0.473,
+   "franchise": "Sonic the Hedgehog",
+   "description": "fictional character from the Sonic franchise",
+   "hook": "is a red, brawling guardian of a giant emerald who punches through enemies and can glide",
+   "known": 0.4,
+   "kind": "sidekick"
+  },
+  {
+   "label": "Yoshi",
+   "qid": "Q214174",
+   "fame": 0.471,
+   "franchise": "Super Mario",
+   "description": "fictonal character in the Mario video game franchise",
+   "hook": "is a green dinosaur companion who flutters, swallows enemies, and lays eggs",
+   "known": 0.8,
+   "kind": "sidekick"
+  },
+  {
+   "label": "Luigi",
+   "qid": "Q210593",
+   "fame": 0.47,
+   "franchise": "Super Mario",
+   "description": "fictional video game character from the Mario franchise",
+   "hook": "is a green-capped, easily frightened plumber who is the lanky younger twin brother of a famous hero",
+   "known": 0.8,
+   "kind": "sidekick"
+  },
+  {
+   "label": "Master Chief",
+   "qid": "Q652022",
+   "fame": 0.468,
+   "franchise": "Halo",
+   "description": "fictional character in the Halo video game series",
+   "hook": "is a green-armored super-soldier who fights an alliance of aliens in a sci-fi shooter series",
+   "known": 0.6,
+   "kind": "protagonist"
+  },
+  {
+   "label": "Cloud Strife",
+   "qid": "Q1798592",
+   "fame": 0.467,
+   "franchise": "Final Fantasy",
+   "description": "protagonist of Final Fantasy VII",
+   "hook": "is a spiky-haired ex-soldier who swings an enormous buster sword in a classic role-playing game",
+   "known": 0.4,
+   "kind": "protagonist"
+  },
+  {
+   "label": "Mimikyu",
+   "qid": "Q25918172",
+   "fame": 0.46,
+   "franchise": "Pokémon",
+   "description": "Pokémon species",
+   "hook": null,
+   "known": 0.2,
+   "kind": "pokemon"
+  },
+  {
+   "label": "Princess Daisy",
+   "qid": "Q1148659",
+   "fame": 0.458,
+   "franchise": "Super Mario",
+   "description": "fictional character from the Mario franchise",
+   "hook": "is an orange-clad tomboy ruler of Sarasaland, often paired with the green-capped brother",
+   "known": 0.4,
+   "kind": "princess"
+  },
+  {
+   "label": "Snorlax",
+   "qid": "Q2480066",
+   "fame": 0.452,
+   "franchise": "Pokémon",
+   "description": "Pokémon species",
+   "hook": "is a huge, sleepy creature that blocks roads and does little but eat and nap",
+   "known": 0.4,
+   "kind": "pokemon"
+  },
+  {
+   "label": "GLaDOS",
+   "qid": "Q605125",
+   "fame": 0.45,
+   "franchise": "Portal",
+   "description": "fictional artificially intelligent computer system in the Portal series of video games",
+   "hook": null,
+   "known": 0.2,
+   "kind": "antagonist"
+  }
+ ]
+}

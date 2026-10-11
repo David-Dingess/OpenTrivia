@@ -1,0 +1,1101 @@
+{
+ "id": "table.film-and-tv.sitcoms-networks",
+ "kind": "table",
+ "title": "Sitcoms and the network that first aired them",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "sitcoms",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?netLabel WHERE { { SELECT ?item (SAMPLE(?n) AS ?net) WHERE { ?item wikibase:sitelinks ?sl . FILTER(?sl >= 20) ?item wdt:P31 wd:Q5398426 . ?item wdt:P136/wdt:P279* wd:Q170238 . ?item wdt:P449 ?n } GROUP BY ?item HAVING(COUNT(DISTINCT ?n) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-01T04:15:29.312Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-01T04:15:29.312Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "network",
+   "label": "Network",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "sitcom",
+  "many": "sitcoms",
+  "hookAsk": "Which sitcom {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "network": {
+    "role": "link",
+    "pick": "Which network first aired the sitcom {label}?",
+    "statement": "{label} first aired on {value}.",
+    "match": "Match each sitcom to the network that first aired it.",
+    "odd": "Three of these sitcoms first aired on {value}. Which one didn't?",
+    "all": "Tap all {n} sitcoms that first aired on {value}.",
+    "reverse": "Which of these sitcoms first aired on {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The Big Bang Theory",
+   "qid": "Q8539",
+   "fame": 0.732,
+   "network": "CBS",
+   "description": "American television sitcom (2007–2019)",
+   "hook": "follows brilliant physicist roommates and the waitress who lives across the hall",
+   "known": 0.8,
+   "kind": "cbs"
+  },
+  {
+   "label": "The Office",
+   "qid": "Q23831",
+   "fame": 0.712,
+   "network": "NBC",
+   "description": "American sitcom broadcast on NBC",
+   "hook": "is a mockumentary about the daily lives of workers at a paper company in Scranton",
+   "known": 0.95,
+   "kind": "nbc"
+  },
+  {
+   "label": "Modern Family",
+   "qid": "Q16756",
+   "fame": 0.707,
+   "network": "American Broadcasting Company",
+   "description": "American television sitcom (2009–2020)",
+   "hook": "is a mockumentary about three linked households whose members talk straight to the camera",
+   "known": 0.8,
+   "kind": "abc"
+  },
+  {
+   "label": "Friends",
+   "qid": "Q79784",
+   "fame": 0.704,
+   "network": "NBC",
+   "description": "American sitcom (1994–2004)",
+   "hook": "follows six pals in New York hanging out at a coffeehouse and a big apartment",
+   "known": 0.95,
+   "kind": "nbc"
+  },
+  {
+   "label": "The Middle",
+   "qid": "Q1138000",
+   "fame": 0.69,
+   "network": "American Broadcasting Company",
+   "description": "American sitcom television series (2009–2018)",
+   "hook": "follows a frazzled working mom raising three quirky kids in Indiana",
+   "known": 0.4,
+   "kind": "abc"
+  },
+  {
+   "label": "Young Sheldon",
+   "qid": "Q30014613",
+   "fame": 0.687,
+   "network": "CBS",
+   "description": "American comedy series",
+   "hook": "follows the childhood of a child prodigy who grows up to be a famous TV physicist",
+   "known": 0.4,
+   "kind": "cbs"
+  },
+  {
+   "label": "Malcolm in the Middle",
+   "qid": "Q242596",
+   "fame": 0.675,
+   "network": "Fox Broadcasting Company",
+   "description": "American television sitcom (2000–2006)",
+   "hook": "follows a gifted boy and his chaotic brothers, with him often talking to the camera",
+   "known": 0.8,
+   "kind": "fox"
+  },
+  {
+   "label": "Sex and the City",
+   "qid": "Q35791",
+   "fame": 0.674,
+   "network": "HBO",
+   "description": "American TV series (1998–2004)",
+   "hook": "follows four female friends dating and shopping their way through Manhattan",
+   "known": 0.6,
+   "kind": "hbo"
+  },
+  {
+   "label": "The Golden Girls",
+   "qid": "Q912467",
+   "fame": 0.668,
+   "network": "NBC",
+   "description": "American sitcom",
+   "hook": "follows four older women sharing a Miami home, often chatting over cheesecake",
+   "known": 0.8,
+   "kind": "nbc"
+  },
+  {
+   "label": "Curb Your Enthusiasm",
+   "qid": "Q23722",
+   "fame": 0.659,
+   "network": "HBO",
+   "description": "American television series",
+   "hook": "stars its co-creator as a cringe-prone version of himself, with improvised social blunders in Los Angeles",
+   "known": 0.6,
+   "kind": "hbo"
+  },
+  {
+   "label": "Schitt’s Creek",
+   "qid": "Q17111973",
+   "fame": 0.658,
+   "network": "CBC Television",
+   "description": "Canadian television sitcom",
+   "hook": "follows a once-wealthy family forced to live in a small-town motel they bought as a joke",
+   "known": 0.4,
+   "kind": "cbc"
+  },
+  {
+   "label": "Two and a Half Men",
+   "qid": "Q189267",
+   "fame": 0.658,
+   "network": "CBS",
+   "description": "American Television series, 2003-2015",
+   "hook": "follows a carefree jingle writer sharing his beach house with his divorced brother plus the brother's son",
+   "known": 0.6,
+   "kind": "cbs"
+  },
+  {
+   "label": "Seinfeld",
+   "qid": "Q23733",
+   "fame": 0.656,
+   "network": "NBC",
+   "description": "American television sitcom (1989–1998)",
+   "hook": "is famously billed as a show about nothing, centered on a stand-up comedian and his New York pals",
+   "known": 0.95,
+   "kind": "nbc"
+  },
+  {
+   "label": "Parks and Recreation",
+   "qid": "Q218035",
+   "fame": 0.651,
+   "network": "NBC",
+   "description": "American comedy television series",
+   "hook": "follows an endlessly optimistic local government employee in the fictional town of Pawnee",
+   "known": 0.8,
+   "kind": "nbc"
+  },
+  {
+   "label": "Derry Girls",
+   "qid": "Q47090557",
+   "fame": 0.644,
+   "network": "Channel 4",
+   "description": "Northern Irish sitcom",
+   "hook": "follows a gang of teenage mates at a convent school in Northern Ireland",
+   "known": 0.2,
+   "kind": "itv"
+  },
+  {
+   "label": "Frasier",
+   "qid": "Q209282",
+   "fame": 0.644,
+   "network": "NBC",
+   "description": "American sitcom (1993–2004)",
+   "hook": "follows a radio psychiatrist who moves back to Seattle to live with his ex-cop dad",
+   "known": 0.95,
+   "kind": "nbc"
+  },
+  {
+   "label": "The Inbetweeners",
+   "qid": "Q978011",
+   "fame": 0.644,
+   "network": "E4",
+   "description": "British coming-of-age school television series",
+   "hook": "follows four awkward sixth-form schoolboys with disastrous social lives",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "How I Met Your Mother",
+   "qid": "Q147235",
+   "fame": 0.643,
+   "network": "CBS",
+   "description": "American sitcom (2005–2014)",
+   "hook": "is narrated by a future dad telling his children the long tale of finding their mom",
+   "known": 0.8,
+   "kind": "cbs"
+  },
+  {
+   "label": "Saved by the Bell",
+   "qid": "Q1026823",
+   "fame": 0.64,
+   "network": "NBC",
+   "description": "American television sitcom (1989-1993)",
+   "hook": "follows prankster high schoolers at Bayside who freeze time to chat with the audience",
+   "known": 0.8,
+   "kind": "nbc"
+  },
+  {
+   "label": "Brooklyn Nine-Nine",
+   "qid": "Q13417244",
+   "fame": 0.633,
+   "network": "NBC",
+   "description": "American television series (2013–2021)",
+   "hook": "follows goofy detectives at a New York precinct led by a deadpan captain",
+   "known": 0.4,
+   "kind": "nbc"
+  },
+  {
+   "label": "Everybody Loves Raymond",
+   "qid": "Q208568",
+   "fame": 0.632,
+   "network": "CBS",
+   "description": "American TV sitcom (1996–2005)",
+   "hook": "follows a sportswriter whose overbearing parents live right across the street",
+   "known": 0.6,
+   "kind": "cbs"
+  },
+  {
+   "label": "Mr. Bean",
+   "qid": "Q484020",
+   "fame": 0.624,
+   "network": "ITV",
+   "description": "British comedy television series (1990–1995)",
+   "hook": "stars a nearly silent, wildly clumsy man in a tweed jacket who causes chaos everywhere",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "30 Rock",
+   "qid": "Q189350",
+   "fame": 0.621,
+   "network": "NBC",
+   "description": "American television comedy series (2006–2013)",
+   "hook": "follows a sketch-comedy head writer and her unpredictable network boss",
+   "known": 0.8,
+   "kind": "nbc"
+  },
+  {
+   "label": "The Fresh Prince of Bel-Air",
+   "qid": "Q309063",
+   "fame": 0.62,
+   "network": "NBC",
+   "description": "American television series (1990–1996)",
+   "hook": "follows a street-smart Philadelphia teen sent to live with rich relatives in California",
+   "known": 0.8,
+   "kind": "nbc"
+  },
+  {
+   "label": "Mom",
+   "qid": "Q13417213",
+   "fame": 0.617,
+   "network": "CBS",
+   "description": "American sitcom created by Chuck Lorre for CBS",
+   "hook": "follows a mother and her adult daughter supporting each other through recovery",
+   "known": 0.4,
+   "kind": "cbs"
+  },
+  {
+   "label": "The King of Queens",
+   "qid": "Q826594",
+   "fame": 0.614,
+   "network": "CBS",
+   "description": "American sitcom for CBS (1998–2007)",
+   "hook": "follows a package delivery driver, his wife, and her live-in father in a New York borough",
+   "known": 0.6,
+   "kind": "cbs"
+  },
+  {
+   "label": "Everybody Hates Chris",
+   "qid": "Q33323",
+   "fame": 0.613,
+   "network": "UPN",
+   "description": "American television series",
+   "hook": "is narrated by a famous comedian recalling his awkward teen years in a rough Brooklyn neighborhood",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "Married... with Children",
+   "qid": "Q208647",
+   "fame": 0.608,
+   "network": "Fox Broadcasting Company",
+   "description": "American television sitcom (1987-1997)",
+   "hook": "follows a grumpy shoe salesman and his dysfunctional Chicago household",
+   "known": 0.6,
+   "kind": "fox"
+  },
+  {
+   "label": "New Girl",
+   "qid": "Q844059",
+   "fame": 0.608,
+   "network": "Fox Broadcasting Company",
+   "description": "American sitcom",
+   "hook": "follows a quirky teacher who moves into a Los Angeles loft with three guys",
+   "known": 0.4,
+   "kind": "fox"
+  },
+  {
+   "label": "2 Broke Girls",
+   "qid": "Q32488",
+   "fame": 0.603,
+   "network": "CBS",
+   "description": "American sitcom (2011-2017)",
+   "hook": "follows two waitresses in Brooklyn dreaming of starting a cupcake business",
+   "known": 0.4,
+   "kind": "cbs"
+  },
+  {
+   "label": "Full House",
+   "qid": "Q465472",
+   "fame": 0.601,
+   "network": "American Broadcasting Company",
+   "description": "American television sitcom (1987–1995)",
+   "hook": "follows a widowed dad of three daughters helped by his brother-in-law and best friend",
+   "known": 0.8,
+   "kind": "abc"
+  },
+  {
+   "label": "Peep Show",
+   "qid": "Q1519256",
+   "fame": 0.601,
+   "network": "Channel 4",
+   "description": "television series",
+   "hook": "is filmed from its characters' point of view, with inner thoughts voiced aloud, about two London flatmates",
+   "known": 0.2,
+   "kind": "itv"
+  },
+  {
+   "label": "Fawlty Towers",
+   "qid": "Q212731",
+   "fame": 0.597,
+   "network": "BBC Two",
+   "description": "1970s BBC television sitcom",
+   "hook": "follows a perpetually frazzled seaside hotel manager and his disastrous guests",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Victorious",
+   "qid": "Q4533",
+   "fame": 0.596,
+   "network": "Nickelodeon",
+   "description": "American teen sitcom (2010-2013)",
+   "hook": "follows a singer at a performing arts high school in Hollywood",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "iCarly",
+   "qid": "Q3013",
+   "fame": 0.595,
+   "network": "Nickelodeon",
+   "description": "2007 American teen sitcom",
+   "hook": "follows a teen who hosts a popular web show from a Seattle apartment studio",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Boy Meets World",
+   "qid": "Q509485",
+   "fame": 0.594,
+   "network": "American Broadcasting Company",
+   "description": "American television sitcom",
+   "hook": "follows a kid growing up in Philadelphia alongside his best friend and his next-door history teacher",
+   "known": 0.6,
+   "kind": "abc"
+  },
+  {
+   "label": "Home Improvement",
+   "qid": "Q1337212",
+   "fame": 0.593,
+   "network": "American Broadcasting Company",
+   "description": "American television sitcom",
+   "hook": "stars a tool-obsessed host of a fix-it TV show whose wise neighbor is always hidden behind a fence",
+   "known": 0.8,
+   "kind": "abc"
+  },
+  {
+   "label": "That '70s Show",
+   "qid": "Q208072",
+   "fame": 0.592,
+   "network": "Fox Broadcasting Company",
+   "description": "American television period sitcom",
+   "hook": "follows a group of teens hanging out in a Wisconsin basement during the disco and bell-bottoms era",
+   "known": 0.8,
+   "kind": "fox"
+  },
+  {
+   "label": "8 Simple Rules",
+   "qid": "Q1111300",
+   "fame": 0.589,
+   "network": "American Broadcasting Company",
+   "description": "American television series",
+   "hook": "follows a dad trying to scare off the dates of his teenage daughters",
+   "known": 0.05,
+   "kind": "abc"
+  },
+  {
+   "label": "Hannah Montana",
+   "qid": "Q126631",
+   "fame": 0.587,
+   "network": "Disney Channel",
+   "description": "American television series",
+   "hook": "follows a girl secretly living a double life as a pop star in a blonde wig",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "Superstore",
+   "qid": "Q19863018",
+   "fame": 0.587,
+   "network": "NBC",
+   "description": "American sitcom",
+   "hook": "follows quirky workers at a big-box retailer in St. Louis",
+   "known": 0.2,
+   "kind": "nbc"
+  },
+  {
+   "label": "Family Matters",
+   "qid": "Q593838",
+   "fame": 0.586,
+   "network": "American Broadcasting Company",
+   "description": "American television series",
+   "hook": "became famous for a nerdy neighbor with suspenders who kept crashing into things",
+   "known": 0.6,
+   "kind": "abc"
+  },
+  {
+   "label": "The Thundermans",
+   "qid": "Q9197118",
+   "fame": 0.586,
+   "network": "Nickelodeon",
+   "description": "American comedy television series",
+   "hook": "follows a family of superheroes hiding their powers in the suburbs",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "Only Fools and Horses",
+   "qid": "Q1247858",
+   "fame": 0.585,
+   "network": "BBC One",
+   "description": "British television sitcom",
+   "hook": "follows two South London brothers trying to get rich with a three-wheeled van",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Will & Grace",
+   "qid": "Q212135",
+   "fame": 0.584,
+   "network": "NBC",
+   "description": "American sitcom (1998-2006, 2017-2020)",
+   "hook": "follows a lawyer and his best friend, an interior designer, sharing a New York apartment",
+   "known": 0.6,
+   "kind": "nbc"
+  },
+  {
+   "label": "All in the Family",
+   "qid": "Q1048856",
+   "fame": 0.58,
+   "network": "CBS",
+   "description": "American television series (1971–1979)",
+   "hook": "centers on a stubborn working-class Queens dad who argues with his liberal son-in-law",
+   "known": 0.05,
+   "kind": "cbs"
+  },
+  {
+   "label": "The Last Man on Earth",
+   "qid": "Q17052281",
+   "fame": 0.58,
+   "network": "Fox Broadcasting Company",
+   "description": "American post-apocalyptic comedy television series",
+   "hook": "follows what seems to be the sole survivor of a deadly virus roaming the empty planet",
+   "known": 0.2,
+   "kind": "fox"
+  },
+  {
+   "label": "The Goldbergs",
+   "qid": "Q13100312",
+   "fame": 0.579,
+   "network": "American Broadcasting Company",
+   "description": "American television sitcom (2013-23)",
+   "hook": "is a nostalgic look at growing up with a camcorder-wielding kid in a loud Pennsylvania household",
+   "known": 0.2,
+   "kind": "abc"
+  },
+  {
+   "label": "Grace and Frankie",
+   "qid": "Q18150372",
+   "fame": 0.577,
+   "network": "Netflix",
+   "description": "American comedy-drama web television series",
+   "hook": "follows two women who become friends after their husbands reveal they are in love with each other",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "The IT Crowd",
+   "qid": "Q239672",
+   "fame": 0.574,
+   "network": "Channel 4",
+   "description": "British television sitcom",
+   "hook": "follows tech support nerds stuck in a basement of a London company",
+   "known": 0.2,
+   "kind": "itv"
+  },
+  {
+   "label": "The Nanny",
+   "qid": "Q464865",
+   "fame": 0.571,
+   "network": "CBS",
+   "description": "US 1990s television series",
+   "hook": "follows a loudly dressed Queens woman who becomes a live-in caregiver for a Broadway producer's kids",
+   "known": 0.6,
+   "kind": "cbs"
+  },
+  {
+   "label": "Fresh Off the Boat",
+   "qid": "Q16919664",
+   "fame": 0.568,
+   "network": "American Broadcasting Company",
+   "description": "American single-camera sitcom television series (2015–2020)",
+   "hook": "follows a Taiwanese immigrant family adjusting to life in suburban Orlando",
+   "known": 0.6,
+   "kind": "abc"
+  },
+  {
+   "label": "My Name Is Earl",
+   "qid": "Q34659",
+   "fame": 0.568,
+   "network": "NBC",
+   "description": "American television series",
+   "hook": "follows a small-time crook who tries to right every wrong on his karma list",
+   "known": 0.4,
+   "kind": "nbc"
+  },
+  {
+   "label": "That's So Raven",
+   "qid": "Q460427",
+   "fame": 0.567,
+   "network": "Disney Channel",
+   "description": "American supernatural teen sitcom television series",
+   "hook": "follows a teen who gets visions of the future, leading to wacky disguises",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "The Suite Life of Zack & Cody",
+   "qid": "Q217246",
+   "fame": 0.566,
+   "network": "Disney Channel",
+   "description": "2005–2008 American sitcom",
+   "hook": "follows twin brothers causing havoc in a fancy Boston hotel where their mom sings",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "I Love Lucy",
+   "qid": "Q181943",
+   "fame": 0.562,
+   "network": "CBS",
+   "description": "American television sitcom",
+   "hook": "follows a scheming redhead desperate to join her bandleader husband's act",
+   "known": 0.2,
+   "kind": "cbs"
+  },
+  {
+   "label": "Keeping Up Appearances",
+   "qid": "Q922616",
+   "fame": 0.56,
+   "network": "BBC One",
+   "description": "British sitcom",
+   "hook": "follows a social-climbing housewife who insists on a flowery pronunciation of her surname",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Raising Hope",
+   "qid": "Q34669",
+   "fame": 0.557,
+   "network": "Fox Broadcasting Company",
+   "description": "television comedy program",
+   "hook": "follows a young dad bringing up a baby with help from his eccentric parents",
+   "known": 0.4,
+   "kind": "fox"
+  },
+  {
+   "label": "Jane the Virgin",
+   "qid": "Q16913682",
+   "fame": 0.556,
+   "network": "The CW",
+   "description": "American television series",
+   "hook": "is a telenovela-style dramedy about a young woman who becomes pregnant by a doctor's mistake",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Drake & Josh",
+   "qid": "Q753647",
+   "fame": 0.555,
+   "network": "Nickelodeon",
+   "description": "American television series",
+   "hook": "follows two stepbrothers with opposite personalities sharing a San Diego home",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "The Addams Family",
+   "qid": "Q266532",
+   "fame": 0.555,
+   "network": "American Broadcasting Company",
+   "description": "1964 TV series",
+   "hook": "follows a spooky, macabre household in a gloomy mansion that includes a disembodied hand",
+   "known": 0.05,
+   "kind": "abc"
+  },
+  {
+   "label": "Lizzie McGuire",
+   "qid": "Q635717",
+   "fame": 0.548,
+   "network": "Disney Channel",
+   "description": "2001-2004 American television series",
+   "hook": "follows a middle schooler whose inner thoughts appear as an animated cartoon version of herself",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Last Man Standing",
+   "qid": "Q944698",
+   "fame": 0.547,
+   "network": "Fox Broadcasting Company",
+   "description": "American sitcom created by Jack Burditt",
+   "hook": "follows a sporting-goods executive who is outnumbered by the women in his household",
+   "known": 0.4,
+   "kind": "fox"
+  },
+  {
+   "label": "Spin City",
+   "qid": "Q256527",
+   "fame": 0.547,
+   "network": "American Broadcasting Company",
+   "description": "television series",
+   "hook": "is set in a New York mayor's office where a deputy manages his boss's blunders",
+   "known": 0.4,
+   "kind": "abc"
+  },
+  {
+   "label": "Zoey 101",
+   "qid": "Q218281",
+   "fame": 0.546,
+   "network": "Nickelodeon",
+   "description": "American television series",
+   "hook": "follows a girl who enrolls in a coed California boarding school",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "ALF",
+   "qid": "Q264221",
+   "fame": 0.544,
+   "network": "NBC",
+   "description": "American sitcom (1986-1990)",
+   "hook": "features a furry alien from Melmac who crash-lands in a suburban garage",
+   "known": 0.05,
+   "kind": "nbc"
+  },
+  {
+   "label": "Black-ish",
+   "qid": "Q16868584",
+   "fame": 0.544,
+   "network": "American Broadcasting Company",
+   "description": "American television sitcom for ABC (2014-2022)",
+   "hook": "follows an upper-middle-class dad worried about keeping his kids connected to their heritage",
+   "known": 0.05,
+   "kind": "abc"
+  },
+  {
+   "label": "3rd Rock from the Sun",
+   "qid": "Q870490",
+   "fame": 0.542,
+   "network": "NBC",
+   "description": "American sitcom",
+   "hook": "follows aliens disguised as a human family while studying life on Earth",
+   "known": 0.2,
+   "kind": "nbc"
+  },
+  {
+   "label": "Good Luck Charlie",
+   "qid": "Q366375",
+   "fame": 0.541,
+   "network": "Disney Channel",
+   "description": "American sitcom",
+   "hook": "follows a big household welcoming a new baby whose video diaries advise her siblings",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "Henry Danger",
+   "qid": "Q17328326",
+   "fame": 0.541,
+   "network": "Nickelodeon",
+   "description": "American comedy televisión series",
+   "hook": "follows a teen who secretly works as a sidekick to a superhero called Captain Man",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "Growing Pains",
+   "qid": "Q1061246",
+   "fame": 0.539,
+   "network": "American Broadcasting Company",
+   "description": "American television sitcom series",
+   "hook": "follows a psychiatrist dad who works from home while raising his kids",
+   "known": 0.2,
+   "kind": "abc"
+  },
+  {
+   "label": "Mad About You",
+   "qid": "Q752365",
+   "fame": 0.538,
+   "network": "NBC",
+   "description": "1990s American TV sitcom",
+   "hook": "follows newlyweds, a documentary filmmaker and a PR specialist, living in New York",
+   "known": 0.6,
+   "kind": "nbc"
+  },
+  {
+   "label": "Anger Management",
+   "qid": "Q537952",
+   "fame": 0.537,
+   "network": "FX",
+   "description": "American television sitcom",
+   "hook": "features a therapist who leads group sessions for hot-tempered clients",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Mike & Molly",
+   "qid": "Q1575230",
+   "fame": 0.537,
+   "network": "CBS",
+   "description": "American comedy television series",
+   "hook": "follows a couple who meet at an overeaters support group in Chicago",
+   "known": 0.4,
+   "kind": "cbs"
+  },
+  {
+   "label": "Wizards of Waverly Place",
+   "qid": "Q184342",
+   "fame": 0.536,
+   "network": "Disney Channel",
+   "description": "American fantasy teen sitcom",
+   "hook": "follows magical siblings in New York who live above their family's sandwich shop",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "Fuller House",
+   "qid": "Q20714712",
+   "fame": 0.53,
+   "network": "Netflix",
+   "description": "American television sitcom",
+   "hook": "continues a classic sitcom with a grown woman raising kids alongside her sister and best friend",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Absolutely Fabulous",
+   "qid": "Q332554",
+   "fame": 0.529,
+   "network": "BBC One",
+   "description": "British television series",
+   "hook": "follows a boozy fashion PR woman and her best friend chasing glamour while her sensible daughter despairs",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "The Mary Tyler Moore Show",
+   "qid": "Q615944",
+   "fame": 0.529,
+   "network": "CBS",
+   "description": "television series",
+   "hook": "follows a single woman building a career in a Minneapolis TV newsroom",
+   "known": 0.2,
+   "kind": "cbs"
+  },
+  {
+   "label": "Unbreakable Kimmy Schmidt",
+   "qid": "Q16889037",
+   "fame": 0.529,
+   "network": "Netflix",
+   "description": "American comedy streaming television series",
+   "hook": "follows a woman rescued from a doomsday cult who starts over in New York",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Sam & Cat",
+   "qid": "Q623222",
+   "fame": 0.527,
+   "network": "Nickelodeon",
+   "description": "American television series",
+   "hook": "teams two very different roommates who start a babysitting business",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "Rules of Engagement",
+   "qid": "Q498569",
+   "fame": 0.521,
+   "network": "CBS",
+   "description": "TV series (2007-2013)",
+   "hook": "follows a couple preparing to marry and their friends navigating relationships",
+   "known": 0.4,
+   "kind": "cbs"
+  },
+  {
+   "label": "Father Ted",
+   "qid": "Q1366945",
+   "fame": 0.52,
+   "network": "Channel 4",
+   "description": "Irish television sitcom",
+   "hook": "follows bumbling priests stuck on a remote island parish with a tea-obsessed housekeeper",
+   "known": 0.2,
+   "kind": "itv"
+  },
+  {
+   "label": "Shake It Up",
+   "qid": "Q308700",
+   "fame": 0.52,
+   "network": "Disney Channel",
+   "description": "American sitcom (2010-2013)",
+   "hook": "follows two best friends who become backup dancers on a Chicago TV dance show",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "How I Met Your Father",
+   "qid": "Q108619693",
+   "fame": 0.513,
+   "network": "Hulu",
+   "description": "American sitcom (2022-2023)",
+   "hook": "follows a woman telling her son the story of her friends' search for love in New York",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "According to Jim",
+   "qid": "Q757318",
+   "fame": 0.505,
+   "network": "American Broadcasting Company",
+   "description": "American television series",
+   "hook": "centers on a laid-back suburban Chicago husband, his wife and their kids",
+   "known": 0.4,
+   "kind": "abc"
+  },
+  {
+   "label": "Just Shoot Me!",
+   "qid": "Q1419644",
+   "fame": 0.503,
+   "network": "NBC",
+   "description": "NBC sitcom",
+   "hook": "is set in the office of a New York fashion magazine run by a blustery publisher",
+   "known": 0.6,
+   "kind": "nbc"
+  },
+  {
+   "label": "K.C. Undercover",
+   "qid": "Q17635847",
+   "fame": 0.5,
+   "network": "Disney Channel",
+   "description": "American television series",
+   "hook": "follows a teen math whiz who learns her parents are spies and joins the family business",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "Hot in Cleveland",
+   "qid": "Q1374755",
+   "fame": 0.499,
+   "network": "TV Land",
+   "description": "American sitcom",
+   "hook": "follows three Californian women who settle in a Midwestern house after a plane diversion",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "My Wife and Kids",
+   "qid": "Q391425",
+   "fame": 0.499,
+   "network": "American Broadcasting Company",
+   "description": "American television sitcom",
+   "hook": "follows a joke-loving dad with a firm hand and a loud household of teenagers",
+   "known": 0.4,
+   "kind": "abc"
+  },
+  {
+   "label": "Dharma & Greg",
+   "qid": "Q672169",
+   "fame": 0.496,
+   "network": "American Broadcasting Company",
+   "description": "American television sitcom",
+   "hook": "follows opposites who marry on their first date, a free-spirited yoga teacher and a buttoned-up lawyer",
+   "known": 0.2,
+   "kind": "abc"
+  },
+  {
+   "label": "What I Like About You",
+   "qid": "Q1160221",
+   "fame": 0.493,
+   "network": "The WB",
+   "description": "American television series from 2002",
+   "hook": "follows a free-spirited young woman who moves in with her uptight older sister in New York",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "Suburgatory",
+   "qid": "Q53641",
+   "fame": 0.491,
+   "network": "American Broadcasting Company",
+   "description": "American sitcom",
+   "hook": "follows a single dad who moves his teen daughter from Manhattan to a fake-perfect suburb",
+   "known": 0.4,
+   "kind": "abc"
+  },
+  {
+   "label": "Even Stevens",
+   "qid": "Q2078546",
+   "fame": 0.487,
+   "network": "Disney Channel",
+   "description": "television series",
+   "hook": "follows a mischievous teen and his overachieving sister in a bickering household",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "Ned's Declassified School Survival Guide",
+   "qid": "Q1535338",
+   "fame": 0.485,
+   "network": "Nickelodeon",
+   "description": "American teen sitcom",
+   "hook": "gives tips on getting through middle years of education, narrated by a teen with two best friends",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Happy Endings",
+   "qid": "Q1584299",
+   "fame": 0.484,
+   "network": "American Broadcasting Company",
+   "description": "2011-2013 American sitcom television series",
+   "hook": "follows a Chicago friend group shaken when a bride leaves her fiance at the altar",
+   "known": 0.4,
+   "kind": "abc"
+  },
+  {
+   "label": "Man with a Plan",
+   "qid": "Q24200837",
+   "fame": 0.484,
+   "network": "CBS",
+   "description": "television series",
+   "hook": "follows a contractor who steps up at home when his wife goes back to work",
+   "known": 0.4,
+   "kind": "cbs"
+  },
+  {
+   "label": "Melissa & Joey",
+   "qid": "Q1064803",
+   "fame": 0.483,
+   "network": "Freeform",
+   "description": "US television series (2010-2015)",
+   "hook": "follows a local council member and a down-on-his-luck nanny caring for her niece and nephew",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Big Time Rush",
+   "qid": "Q794761",
+   "fame": 0.47,
+   "network": "Nickelodeon",
+   "description": "American television series",
+   "hook": "follows four hockey players from Minnesota who go to Los Angeles to form a boy band",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "A.N.T. Farm",
+   "qid": "Q278375",
+   "fame": 0.469,
+   "network": "Disney Channel",
+   "description": "American sitcom",
+   "hook": "follows a musical prodigy in a high school program for gifted kids",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "Bunk'd",
+   "qid": "Q19903191",
+   "fame": 0.467,
+   "network": "Disney Channel",
+   "description": "2015 American television series",
+   "hook": "follows campers and counselors at a summer camp in Maine",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "My Family",
+   "qid": "Q909557",
+   "fame": 0.464,
+   "network": "BBC One",
+   "description": "British sitcom",
+   "hook": "follows a grumpy London dentist and his chaotic household",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Cory in the House",
+   "qid": "Q842118",
+   "fame": 0.462,
+   "network": "Disney Channel",
+   "description": "American television sitcom",
+   "hook": "follows a teen who moves into the presidential residence with his chef father",
+   "known": 0.05,
+   "kind": "other"
+  },
+  {
+   "label": "Extras",
+   "qid": "Q23826",
+   "fame": 0.462,
+   "network": "BBC Two",
+   "description": "British sitcom",
+   "hook": "follows background actors hoping for fame, with celebrities mocking versions of themselves",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Lab Rats",
+   "qid": "Q2699347",
+   "fame": 0.45,
+   "network": "Disney XD",
+   "description": "Disney television series",
+   "hook": "follows bionic teens living in a hidden basement with their inventor",
+   "known": 0.05,
+   "kind": "other"
+  }
+ ]
+}

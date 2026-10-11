@@ -1,0 +1,254 @@
+{
+ "id": "table.sports.extreme-sports-stars-country",
+ "kind": "table",
+ "title": "Extreme sports stars and their sports",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "extreme-sports",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?sportLabel ?countryLabel WHERE { VALUES ?item { wd:Q295020 wd:Q288656 wd:Q364406 wd:Q379510 wd:Q465755 wd:Q452349 wd:Q979249 wd:Q4203 wd:Q381833 wd:Q668755 wd:Q2185882 wd:Q15649119 wd:Q968888 wd:Q3017223 wd:Q1320597 wd:Q4353690 wd:Q1571406 wd:Q47513624 wd:Q313447 wd:Q234216 wd:Q1700634 wd:Q246619 wd:Q64748123 wd:Q1391108 wd:Q20195096 wd:Q264875 wd:Q2166905 wd:Q3294177 wd:Q302525 wd:Q928552 wd:Q24778 wd:Q4831824 wd:Q7436569 wd:Q123688 wd:Q3093867 wd:Q435974 wd:Q1140016 wd:Q2938849 wd:Q3890668 wd:Q526273 wd:Q19955824 wd:Q350568 wd:Q26209646 wd:Q2440958 wd:Q722754 wd:Q2866511 wd:Q469872 wd:Q342862 wd:Q460670 wd:Q538026 wd:Q465229 wd:Q719262 wd:Q1350706 wd:Q533270 wd:Q2735451 wd:Q342834 wd:Q345788 wd:Q676356 wd:Q6199802 wd:Q235762 wd:Q465764 wd:Q4749355 wd:Q3142984 wd:Q1389456 wd:Q1557583 wd:Q10317645 wd:Q954574 wd:Q1894987 wd:Q383569 wd:Q4932692 wd:Q7384381 wd:Q2735568 wd:Q433859 wd:Q1463495 wd:Q3187443 wd:Q535118 wd:Q3434203 wd:Q3242368 } ?item wdt:P641 ?sport . OPTIONAL { ?item wdt:P27 ?country . } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T02:10:28.414Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T02:10:28.414Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "sport",
+   "label": "Sport",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "athlete",
+  "many": "extreme sports stars",
+  "wildcard": "person",
+  "hookAsk": "Which athlete {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "sport": {
+    "role": "link",
+    "pick": "Which sport is {label} best known for?",
+    "statement": "{label} is best known for {value}.",
+    "match": "Match each athlete to their sport.",
+    "odd": "Three of these athletes are known for {value}. Which one is not?",
+    "all": "Tap all {n} athletes known for {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Alex Honnold",
+   "qid": "Q979249",
+   "fame": 0.624,
+   "sport": "rock climbing",
+   "country": "United States",
+   "description": "American professional mountaineer and extreme climber",
+   "hook": "scaled El Capitan without ropes, as shown in an Oscar-winning documentary",
+   "known": 0.8,
+   "kind": "climber"
+  },
+  {
+   "label": "Tony Hawk",
+   "qid": "Q295020",
+   "fame": 0.624,
+   "sport": "skateboarding",
+   "country": "United States",
+   "description": "American professional skateboarder and actor",
+   "hook": "became the first to land a 900 spin and inspired a best-selling video game series",
+   "known": 0.95,
+   "kind": "skateboarder"
+  },
+  {
+   "label": "Felix Baumgartner",
+   "qid": "Q4203",
+   "fame": 0.623,
+   "sport": "BASE jumping",
+   "country": "Austria",
+   "description": "Austrian skydiver, daredevil and BASE jumper (1969–2025)",
+   "hook": "freefell from the edge of space after a balloon ride, breaking the sound barrier",
+   "known": 0.6,
+   "kind": "skydiver"
+  },
+  {
+   "label": "Chloe Kim",
+   "qid": "Q15649119",
+   "fame": 0.582,
+   "sport": "snowboarding",
+   "country": "United States",
+   "description": "American snowboarder",
+   "hook": "won back-to-back Olympic halfpipe golds, the first as a teenager",
+   "known": 0.6,
+   "kind": "snowboarder"
+  },
+  {
+   "label": "Dave Mirra",
+   "qid": "Q3017223",
+   "fame": 0.572,
+   "sport": "BMX",
+   "country": "United States",
+   "description": "American BMX rider (1974–2016)",
+   "hook": "collected a record haul of X Games medals on two wheels",
+   "known": 0.4,
+   "kind": "bmx"
+  },
+  {
+   "label": "Dean Potter",
+   "qid": "Q345788",
+   "fame": 0.566,
+   "sport": "rock climbing",
+   "country": "United States",
+   "description": "American rock climber (1972–2015)",
+   "hook": "pushed rope-free ascents and wingsuit flights off cliffs in Yosemite",
+   "known": 0.4,
+   "kind": "climber"
+  },
+  {
+   "label": "Bethany Hamilton",
+   "qid": "Q234216",
+   "fame": 0.551,
+   "sport": "surfing",
+   "country": "United States",
+   "description": "American surfer (born 1990)",
+   "hook": "returned to competition after losing an arm in a shark attack",
+   "known": 0.6,
+   "kind": "surfer"
+  },
+  {
+   "label": "Amy Purdy",
+   "qid": "Q4749355",
+   "fame": 0.545,
+   "sport": "Para snowboard",
+   "country": "United States",
+   "description": "American actress and para-snowboarder",
+   "hook": "placed second on Dancing with the Stars after losing both legs to illness",
+   "known": 0.4,
+   "kind": "snowboarder"
+  },
+  {
+   "label": "Travis Pastrana",
+   "qid": "Q379510",
+   "fame": 0.538,
+   "sport": "freestyle motocross",
+   "country": "United States",
+   "description": "American professional motorsports competitor and stunt performer",
+   "hook": "landed the first double backflip on a dirt bike and stars in Nitro Circus stunts",
+   "known": 0.6,
+   "kind": "motocross"
+  },
+  {
+   "label": "Kelly Slater",
+   "qid": "Q364406",
+   "fame": 0.494,
+   "sport": "surfing",
+   "country": "United States",
+   "description": "American surfer (born 1972)",
+   "hook": "won a record eleven world titles and appeared on Baywatch",
+   "known": 0.8,
+   "kind": "surfer"
+  },
+  {
+   "label": "Mick Fanning",
+   "qid": "Q1140016",
+   "fame": 0.489,
+   "sport": "surfing",
+   "country": "Australia",
+   "description": "Australian surfer",
+   "hook": "fought off a shark that attacked him mid-heat on live television",
+   "known": 0.6,
+   "kind": "surfer"
+  },
+  {
+   "label": "Jay Adams",
+   "qid": "Q1350706",
+   "fame": 0.488,
+   "sport": "skateboarding",
+   "country": "United States",
+   "description": "American skateboarder (1961–2014)",
+   "hook": "was a Dogtown Z-Boys member known for an aggressive, low-slung style",
+   "known": 0.2,
+   "kind": "skateboarder"
+  },
+  {
+   "label": "Janja Garnbret",
+   "qid": "Q26209646",
+   "fame": 0.481,
+   "sport": "sport climbing",
+   "country": "Slovenia",
+   "description": "Slovenian sport climber",
+   "hook": "won Olympic gold in both Tokyo and Paris",
+   "known": 0.4,
+   "kind": "climber"
+  },
+  {
+   "label": "Stacy Peralta",
+   "qid": "Q465229",
+   "fame": 0.476,
+   "sport": "skateboarding",
+   "country": "United States",
+   "description": "American skateboarder, screenwriter, film director",
+   "hook": "directed the documentary Dogtown and Z-Boys and the Bones Brigade films",
+   "known": 0.4,
+   "kind": "skateboarder"
+  },
+  {
+   "label": "Andy Irons",
+   "qid": "Q526273",
+   "fame": 0.467,
+   "sport": "surfing",
+   "country": "United States",
+   "description": "American surfer (1978–2010)",
+   "hook": "won three world titles in a row while battling a legendary rival",
+   "known": 0.4,
+   "kind": "surfer"
+  },
+  {
+   "label": "Rodney Mullen",
+   "qid": "Q313447",
+   "fame": 0.467,
+   "sport": "skateboarding",
+   "country": "United States",
+   "description": "American professional skateboarder",
+   "hook": "invented the flatground ollie and kickflip, shaping modern street tricks",
+   "known": 0.6,
+   "kind": "skateboarder"
+  },
+  {
+   "label": "Tony Alva",
+   "qid": "Q538026",
+   "fame": 0.458,
+   "sport": "skateboarding",
+   "country": "United States",
+   "description": "American skateboarder and entrepreneur",
+   "hook": "pioneered vertical riding in empty backyard pools as a founding pro of the Z-Boys",
+   "known": 0.2,
+   "kind": "skateboarder"
+  }
+ ]
+}

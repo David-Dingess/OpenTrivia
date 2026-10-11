@@ -1,0 +1,338 @@
+{
+ "id": "table.holidays.festivals",
+ "kind": "table",
+ "title": "Festivals: where they happen",
+ "genre": "daily-life",
+ "category": "holidays",
+ "topic": "festivals",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel ?founded WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) (GROUP_CONCAT(DISTINCT CONCAT(COALESCE(STR(?fT), \"\"), \"|\", COALESCE(STR(?fP), \"\")); separator=\";\") AS ?founded) WHERE { { SELECT ?item ?sl WHERE { ?item wdt:P31/wdt:P279* wd:Q132241 ; wikibase:sitelinks ?sl . FILTER(?sl >= 15) } ORDER BY DESC(?sl) LIMIT 300 } ?item wdt:P17 ?c . OPTIONAL { ?item p:P571 ?fSt . ?fSt a wikibase:BestRank ; psv:P571 [ wikibase:timeValue ?fT ; wikibase:timePrecision ?fP ] . } } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T02:06:41.732Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T02:06:41.732Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "founded",
+   "label": "Founded",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "festival",
+  "many": "festivals",
+  "hookAsk": "Which festival {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "itemText": "{label} — {country}",
+  "theLabels": [
+   "Venice Film Festival",
+   "Cannes Film Festival",
+   "Toronto International Film Festival",
+   "Sundance Film Festival",
+   "Telluride Film Festival",
+   "Edinburgh Festival Fringe",
+   "BBC Proms",
+   "Reading and Leeds Festivals",
+   "Warped Tour",
+   "Notting Hill Carnival",
+   "Coachella Valley Music and Arts Festival"
+  ],
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} held in?",
+    "statement": "{label} is held in {value}.",
+    "match": "Match each festival to its country.",
+    "odd": "Three of these festivals are held in {value}. Which one isn't?",
+    "all": "Tap all {n} festivals held in {value}."
+   },
+   "founded": {
+    "role": "date",
+    "sort": "from the oldest to the newest",
+    "shot": "In what year was {label} first held? The festival {hook}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Ganesh Chaturthi",
+   "qid": "Q929250",
+   "fame": 0.75,
+   "country": "India",
+   "founded": null,
+   "description": "multi-day Hindu festival revering god Ganesha (August–September)",
+   "hook": "honors the elephant-headed god with giant clay idols that are paraded and then immersed in water",
+   "known": 0.2,
+   "kind": "religious"
+  },
+  {
+   "label": "Burning Man",
+   "qid": "Q152518",
+   "fame": 0.728,
+   "country": "United States",
+   "founded": 1986,
+   "description": "annual experimental festival based in Nevada, United States",
+   "hook": "builds a temporary desert city each summer that ends with a giant wooden effigy going up in flames",
+   "known": 0.6,
+   "kind": "cultural"
+  },
+  {
+   "label": "Raksha Bandhan",
+   "qid": "Q10266",
+   "fame": 0.691,
+   "country": "India",
+   "founded": null,
+   "description": "annual ritual originating from the Indian Subcontinent",
+   "hook": "has sisters tie a decorative thread around their brothers' wrists as a sign of protection and love",
+   "known": 0.05,
+   "kind": "religious"
+  },
+  {
+   "label": "Oktoberfest",
+   "qid": "Q102400",
+   "fame": 0.671,
+   "country": "Germany",
+   "founded": 1810,
+   "description": "world's largest beer festival in Munich, Bavaria, Germany",
+   "hook": "draws millions each autumn to drink beer from liter steins in big tents and wear lederhosen and dirndls",
+   "known": 0.95,
+   "kind": "cultural"
+  },
+  {
+   "label": "Notting Hill Carnival",
+   "qid": "Q586220",
+   "fame": 0.617,
+   "country": "United Kingdom",
+   "founded": 1965,
+   "description": "annual street festival in London",
+   "hook": "fills west London's streets every August bank holiday with Caribbean costumes and sound systems",
+   "known": 0.4,
+   "kind": "cultural"
+  },
+  {
+   "label": "Onam",
+   "qid": "Q1969250",
+   "fame": 0.584,
+   "country": "India",
+   "founded": null,
+   "description": "harvest festival of Kerala state, India",
+   "hook": "welcomes a legendary king with flower carpets, a huge banquet on banana leaves and snake boat races",
+   "known": 0.05,
+   "kind": "religious"
+  },
+  {
+   "label": "Venice Film Festival",
+   "qid": "Q49024",
+   "fame": 0.559,
+   "country": "Italy",
+   "founded": 1932,
+   "description": "annual film festival held in Venice, Italy",
+   "hook": "awards the Golden Lion and is the oldest event of its kind in the world, held on a Lido island",
+   "known": 0.8,
+   "kind": "film"
+  },
+  {
+   "label": "Reading and Leeds Festivals",
+   "qid": "Q1137962",
+   "fame": 0.541,
+   "country": "United Kingdom",
+   "founded": 1971,
+   "description": "pair of annual music festivals in England",
+   "hook": "runs on twin sites over the August bank holiday weekend, with the same rock lineup playing at both",
+   "known": 0.4,
+   "kind": "music"
+  },
+  {
+   "label": "Cannes Film Festival",
+   "qid": "Q42369",
+   "fame": 0.54,
+   "country": "France",
+   "founded": 1946,
+   "description": "annual film festival held in Cannes, France",
+   "hook": "hands out the Palme d'Or each May on the French Riviera, with stars walking a famous red carpet",
+   "known": 0.95,
+   "kind": "film"
+  },
+  {
+   "label": "Toronto International Film Festival",
+   "qid": "Q390018",
+   "fame": 0.539,
+   "country": "Canada",
+   "founded": 1976,
+   "description": "annual film festival held in Toronto, Canada",
+   "hook": "is a major September stop for Oscar hopefuls, and its top prize is the People's Choice Award",
+   "known": 0.6,
+   "kind": "film"
+  },
+  {
+   "label": "Sundance Film Festival",
+   "qid": "Q189887",
+   "fame": 0.538,
+   "country": "United States",
+   "founded": 1978,
+   "description": "annual film festival held in Utah, United States",
+   "hook": "is the top showcase for independent movies, held each winter in a snowy Rocky Mountain ski town",
+   "known": 0.8,
+   "kind": "film"
+  },
+  {
+   "label": "Glastonbury Festival",
+   "qid": "Q309066",
+   "fame": 0.532,
+   "country": "United Kingdom",
+   "founded": 1970,
+   "description": "performing arts festival in Somerset, England",
+   "hook": "is a giant summer gathering on a dairy farm, known for its Pyramid Stage, mud and headline acts",
+   "known": 0.8,
+   "kind": "music"
+  },
+  {
+   "label": "Lollapalooza",
+   "qid": "Q889643",
+   "fame": 0.531,
+   "country": "United States",
+   "founded": 1991,
+   "description": "music festival in the United States",
+   "hook": "was started by Jane's Addiction's frontman and now fills a Chicago lakefront park each summer",
+   "known": 0.6,
+   "kind": "music"
+  },
+  {
+   "label": "BBC Proms",
+   "qid": "Q1046677",
+   "fame": 0.52,
+   "country": "United Kingdom",
+   "founded": 1895,
+   "description": "eight-week summer season of daily orchestral classical music concerts",
+   "hook": "ends each summer season with the flag-waving Last Night at the Royal Albert Hall",
+   "known": 0.2,
+   "kind": "music"
+  },
+  {
+   "label": "Navratri",
+   "qid": "Q10269",
+   "fame": 0.515,
+   "country": "India",
+   "founded": null,
+   "description": "annual Hindu festival",
+   "hook": "spans nine nights of dance and worship of the goddess Durga, including the garba dance",
+   "known": 0.05,
+   "kind": "religious"
+  },
+  {
+   "label": "Tomorrowland",
+   "qid": "Q606649",
+   "fame": 0.511,
+   "country": "Belgium",
+   "founded": 2005,
+   "description": "Belgian annual electronic dance music festival held in Boom, Antwerp",
+   "hook": "is a giant electronic dance event known for fairytale stages and its Mainstage, drawing crowds each July",
+   "known": 0.4,
+   "kind": "music"
+  },
+  {
+   "label": "Coachella Valley Music and Arts Festival",
+   "qid": "Q889872",
+   "fame": 0.51,
+   "country": "United States",
+   "founded": 1999,
+   "description": "annual music and arts festival held in April in Indio, California, United States",
+   "hook": "is a star-studded spring weekend in the desert, famous for fashion, influencers and huge headliners",
+   "known": 0.6,
+   "kind": "music"
+  },
+  {
+   "label": "Telluride Film Festival",
+   "qid": "Q2402350",
+   "fame": 0.489,
+   "country": "United States",
+   "founded": 1974,
+   "description": "annual film festival held in Telluride, USA",
+   "hook": "is a small, Labor Day event in a Colorado mountain town that keeps its lineup secret until it starts",
+   "known": 0.2,
+   "kind": "film"
+  },
+  {
+   "label": "Vijayadashami",
+   "qid": "Q10274",
+   "fame": 0.485,
+   "country": "India",
+   "founded": null,
+   "description": "annual Hindu festival, celebrated at the end of Navaratri",
+   "hook": "marks the triumph of good over evil, with giant effigies of the demon king Ravana burned at dusk",
+   "known": 0.05,
+   "kind": "religious"
+  },
+  {
+   "label": "South by Southwest",
+   "qid": "Q959755",
+   "fame": 0.483,
+   "country": "United States",
+   "founded": 1987,
+   "description": "annual festival held in Austin, USA",
+   "hook": "combines a massive spring gathering of movies, tech startups and live bands in the Texas capital",
+   "known": 0.4,
+   "kind": "music"
+  },
+  {
+   "label": "Edinburgh Festival Fringe",
+   "qid": "Q368176",
+   "fame": 0.481,
+   "country": "United Kingdom",
+   "founded": 1947,
+   "description": "arts festival",
+   "hook": "is the world's largest arts gathering, taking over a Scottish capital each August with comedy and theatre",
+   "known": 0.4,
+   "kind": "cultural"
+  },
+  {
+   "label": "Warped Tour",
+   "qid": "Q971625",
+   "fame": 0.457,
+   "country": "United States",
+   "founded": 1995,
+   "description": "annual traveling rock music festival",
+   "hook": "roamed North America each summer with punk and pop-punk bands playing on multiple stages in parking lots",
+   "known": 0.2,
+   "kind": "music"
+  },
+  {
+   "label": "Rock in Rio",
+   "qid": "Q1133749",
+   "fame": 0.456,
+   "country": "Brazil",
+   "founded": 1985,
+   "description": "Brazilian music festival",
+   "hook": "launched with a huge crowd and became known as one of the biggest music events on Earth",
+   "known": 0.4,
+   "kind": "music"
+  }
+ ]
+}

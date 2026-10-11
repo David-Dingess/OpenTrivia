@@ -1,0 +1,247 @@
+{
+ "id": "table.tech.programming-languages",
+ "kind": "table",
+ "title": "Programming languages by first release",
+ "genre": "science-math-tech",
+ "category": "tech",
+ "topic": "coding",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?released WHERE { { SELECT ?item ?sitelinks (GROUP_CONCAT(CONCAT(COALESCE(STR(?pubT), \"\"), \"|\", COALESCE(STR(?pubP), \"\")); separator=\";\") AS ?pub) (GROUP_CONCAT(CONCAT(COALESCE(STR(?incT), \"\"), \"|\", COALESCE(STR(?incP), \"\")); separator=\";\") AS ?inc) WHERE { { SELECT ?item ?sitelinks WHERE { ?item wdt:P31 wd:Q9143 ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 25) } ORDER BY DESC(?sitelinks) LIMIT 200 } OPTIONAL { ?item p:P577 ?pubSt . ?pubSt a wikibase:BestRank ; psv:P577 [ wikibase:timeValue ?pubT ; wikibase:timePrecision ?pubP ] . } OPTIONAL { ?item p:P571 ?incSt . ?incSt a wikibase:BestRank ; psv:P571 [ wikibase:timeValue ?incT ; wikibase:timePrecision ?incP ] . } } GROUP BY ?item ?sitelinks } hint:Prior hint:runFirst true . BIND(IF(CONTAINS(?pub, \"-\"), ?pub, ?inc) AS ?released) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-24T23:05:52.441Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-24T23:05:52.441Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "first_released",
+   "label": "First released",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "programming language",
+  "many": "programming languages",
+  "itemSub": "{hook}",
+  "hookAsk": "Which programming language {hook}?",
+  "columns": {
+   "first_released": {
+    "role": "date",
+    "sort": "from the oldest to the newest",
+    "shot": "In what year was the programming language {label} first released?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "C",
+   "qid": "Q15777",
+   "fame": 0.695,
+   "first_released": 1972,
+   "description": "general-purpose programming language",
+   "hook": "underlies most operating systems and shaped the syntax of countless later languages",
+   "known": 0.95,
+   "kind": "imperative"
+  },
+  {
+   "label": "JavaScript",
+   "qid": "Q2005",
+   "fame": 0.621,
+   "first_released": 1995,
+   "description": "high-level programming language",
+   "hook": "runs inside every web browser and brings web pages to life with interactivity",
+   "known": 0.95,
+   "kind": "scripting"
+  },
+  {
+   "label": "C++",
+   "qid": "Q2407",
+   "fame": 0.615,
+   "first_released": 1983,
+   "description": "general-purpose programming language",
+   "hook": "added object-oriented features on top of an older language and powers demanding software like game engines",
+   "known": 0.8,
+   "kind": "oop"
+  },
+  {
+   "label": "R",
+   "qid": "Q206904",
+   "fame": 0.594,
+   "first_released": 1993,
+   "description": "programming language for statistical analysis",
+   "hook": "is favored by statisticians and data scientists for analyzing data and making charts",
+   "known": 0.4,
+   "kind": "data"
+  },
+  {
+   "label": "Java",
+   "qid": "Q251",
+   "fame": 0.582,
+   "first_released": 1995,
+   "description": "object-oriented programming language",
+   "hook": "runs the same compiled code on any device thanks to a write once, run anywhere design",
+   "known": 0.95,
+   "kind": "oop"
+  },
+  {
+   "label": "Go",
+   "qid": "Q37227",
+   "fame": 0.566,
+   "first_released": 2009,
+   "description": "programming language developed by Google and the open-source community",
+   "hook": "was designed to make writing large-scale backend software simple and fast",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "assembly language",
+   "qid": "Q165436",
+   "fame": 0.563,
+   "first_released": 1949,
+   "description": "any low-level programming language in which there is a very strong correspondence between the instructions in the language and the architecture's machine code instructions",
+   "hook": "gives programmers instructions that map almost one-to-one onto a processor's own machine code",
+   "known": 0.2,
+   "kind": "low-level"
+  },
+  {
+   "label": "SQL",
+   "qid": "Q47607",
+   "fame": 0.549,
+   "first_released": 1986,
+   "description": "relational database language that allows to extract from data tables a series of records with selection, sorting and computation criteria, or to update, delete or add records",
+   "hook": "lets people ask relational databases to fetch, sort, and update stored records",
+   "known": 0.95,
+   "kind": "data"
+  },
+  {
+   "label": "TypeScript",
+   "qid": "Q978185",
+   "fame": 0.531,
+   "first_released": 2012,
+   "description": "programming language, superset of JavaScript that compiles to JavaScript",
+   "hook": "adds type safety on top of the web's dynamic scripting language, catching bugs before code runs",
+   "known": 0.8,
+   "kind": "scripting"
+  },
+  {
+   "label": "COBOL",
+   "qid": "Q131140",
+   "fame": 0.513,
+   "first_released": 1959,
+   "description": "programming language with English-like syntax",
+   "hook": "still powers many banks' and governments' old mainframe systems handling daily transactions",
+   "known": 0.4,
+   "kind": "imperative"
+  },
+  {
+   "label": "Fortran",
+   "qid": "Q83303",
+   "fame": 0.513,
+   "first_released": 1957,
+   "description": "general-purpose programming language",
+   "hook": "was built for scientists and engineers doing heavy numerical calculations and still runs in supercomputers",
+   "known": 0.6,
+   "kind": "imperative"
+  },
+  {
+   "label": "Perl",
+   "qid": "Q42478",
+   "fame": 0.5,
+   "first_released": 1987,
+   "description": "interpreted programming language first released in 1987",
+   "hook": "earned a reputation as the duct tape of the early web for quickly processing text and scripts",
+   "known": 0.4,
+   "kind": "scripting"
+  },
+  {
+   "label": "F#",
+   "qid": "Q648619",
+   "fame": 0.493,
+   "first_released": 2005,
+   "description": "Microsoft programming language",
+   "hook": "blends functional and object-oriented programming styles for building reliable software",
+   "known": 0.2,
+   "kind": "functional"
+  },
+  {
+   "label": "Lua",
+   "qid": "Q207316",
+   "fame": 0.485,
+   "first_released": 1993,
+   "description": "lightweight programming language",
+   "hook": "gets embedded inside games and apps as a small, fast scripting layer for custom behavior",
+   "known": 0.4,
+   "kind": "scripting"
+  },
+  {
+   "label": "Haskell",
+   "qid": "Q34010",
+   "fame": 0.471,
+   "first_released": 1990,
+   "description": "purely functional programming language",
+   "hook": "forces programmers to write in a purely functional style with no hidden side effects",
+   "known": 0.4,
+   "kind": "functional"
+  },
+  {
+   "label": "MATLAB",
+   "qid": "Q169478",
+   "fame": 0.469,
+   "first_released": 1984,
+   "description": "numerical computing environment",
+   "hook": "is the go-to tool engineers use for matrix math, simulations, and plotting technical data",
+   "known": 0.4,
+   "kind": "data"
+  },
+  {
+   "label": "Swift",
+   "qid": "Q17118377",
+   "fame": 0.464,
+   "first_released": 2014,
+   "description": "general-purpose, multi-paradigm, compiled programming language",
+   "hook": "was built to make writing apps for phones and computers safer and more modern than older tools",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Ada",
+   "qid": "Q154755",
+   "fame": 0.463,
+   "first_released": 1983,
+   "description": "programming language",
+   "hook": "was designed for safety-critical systems like aircraft and rockets where a single bug can be fatal",
+   "known": 0.2,
+   "kind": "imperative"
+  },
+  {
+   "label": "PL/I",
+   "qid": "Q223433",
+   "fame": 0.455,
+   "first_released": 1964,
+   "description": "procedural, imperative computer programming language",
+   "hook": "tried to combine business, scientific, and systems programming into a single all-purpose language",
+   "known": 0.2,
+   "kind": "imperative"
+  }
+ ]
+}

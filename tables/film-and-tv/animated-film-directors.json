@@ -1,0 +1,932 @@
+{
+ "id": "table.film-and-tv.animated-film-directors",
+ "kind": "table",
+ "title": "Animated feature films and their directors",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "animated-films",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?dirLabel ?countryLabel WHERE { { SELECT ?item (SAMPLE(?d) AS ?dir) (COUNT(DISTINCT ?d) AS ?nDir) (SAMPLE(?c) AS ?country) WHERE { VALUES ?cls { wd:Q202866 wd:Q29168811 wd:Q28968511 } ?item wdt:P31 ?cls ; wdt:P57 ?d ; wikibase:sitelinks ?sl . FILTER(?sl >= 40) OPTIONAL { ?item wdt:P495 ?c . } } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nDir = 1) FILTER(BOUND(?country)) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T03:17:09.324Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T03:17:09.324Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "director",
+   "label": "Director",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "kind",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "animated film",
+  "many": "animated films",
+  "hookAsk": "Which animated film {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "director": {
+    "role": "link",
+    "pick": "Who directed {label}?",
+    "statement": "{label} was directed by {value}.",
+    "match": "Match each animated film to its director.",
+    "odd": "Three of these animated films were directed by {value}. Which one wasn't?",
+    "all": "Tap all {n} animated films directed by {value}.",
+    "reverse": "Which of these animated films did {value} direct?"
+   },
+   "kind": {
+    "role": "link",
+    "pick": "Which country is {label} from?",
+    "statement": "{label} is an animated film from {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Minions & Monsters",
+   "qid": "Q127605787",
+   "fame": 0.7,
+   "director": "Pierre Coffin",
+   "kind": "United States",
+   "description": "2026 animated film directed by Pierre Coffin",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Coraline",
+   "qid": "Q632668",
+   "fame": 0.691,
+   "director": "Henry Selick",
+   "kind": "United States",
+   "description": "2009 animation film directed by Henry Selick",
+   "hook": "follows a girl who finds a hidden door to an eerie parallel home where everyone has buttons for eyes",
+   "known": 0.6
+  },
+  {
+   "label": "Toy Story",
+   "qid": "Q171048",
+   "fame": 0.664,
+   "director": "John Lasseter",
+   "kind": "United States",
+   "description": "1995 animated film directed by John Lasseter",
+   "hook": "was the first fully computer-animated feature film, about playthings that come alive when people leave",
+   "known": 0.95
+  },
+  {
+   "label": "The Nightmare Before Christmas",
+   "qid": "Q322328",
+   "fame": 0.645,
+   "director": "Henry Selick",
+   "kind": "United States",
+   "description": "1993 stop motion film directed by Henry Selick",
+   "hook": "follows the skeleton ruler of Halloween Town, who tries to take over the winter holiday",
+   "known": 0.7
+  },
+  {
+   "label": "Puss in Boots: The Last Wish",
+   "qid": "Q31271384",
+   "fame": 0.624,
+   "director": "Joel Crawford",
+   "kind": "United States",
+   "description": "2022 animated film directed by Joel Crawford",
+   "hook": "sees a swashbuckling feline down to his final life while a menacing wolf hunts him",
+   "known": 0.5
+  },
+  {
+   "label": "Inside Out 2",
+   "qid": "Q113877606",
+   "fame": 0.622,
+   "director": "Kelsey Mann",
+   "kind": "United States",
+   "description": "2024 animated film directed by Kelsey Mann",
+   "hook": "adds Anxiety and other new emotions to a teenage girl's mind as she hits puberty",
+   "known": 0.8
+  },
+  {
+   "label": "The Incredibles",
+   "qid": "Q213326",
+   "fame": 0.618,
+   "director": "Brad Bird",
+   "kind": "United States",
+   "description": "2004 animated film directed by Brad Bird",
+   "hook": "follows a family of retired superheroes forced back into action against a robotic threat",
+   "known": 0.8
+  },
+  {
+   "label": "Mufasa: The Lion King",
+   "qid": "Q114242678",
+   "fame": 0.616,
+   "director": "Barry Jenkins",
+   "kind": "United States",
+   "description": "2024 CGI film directed by Barry Jenkins",
+   "hook": "reveals how an orphaned cub rose to become ruler of the Pride Lands",
+   "known": 0.4
+  },
+  {
+   "label": "WALL-E",
+   "qid": "Q104905",
+   "fame": 0.613,
+   "director": "Andrew Stanton",
+   "kind": "United States",
+   "description": "2008 animated film directed by Andrew Stanton",
+   "hook": "follows a lonely trash-compacting robot on a deserted Earth who falls for a sleek probe named Eve",
+   "known": 0.9
+  },
+  {
+   "label": "My Neighbor Totoro",
+   "qid": "Q39571",
+   "fame": 0.611,
+   "director": "Hayao Miyazaki",
+   "kind": "Japan",
+   "description": "1988 film directed by Hayao Miyazaki",
+   "hook": "features a giant furry forest spirit who waits at a rainy bus stop with two sisters",
+   "known": 0.6
+  },
+  {
+   "label": "The Wild Robot",
+   "qid": "Q124378349",
+   "fame": 0.606,
+   "director": "Chris Sanders",
+   "kind": "United States",
+   "description": "2024 animated film directed by Chris Sanders",
+   "hook": "follows a shipwrecked machine who raises an orphaned gosling on a remote island",
+   "known": 0.3
+  },
+  {
+   "label": "The Lion King",
+   "qid": "Q27044293",
+   "fame": 0.605,
+   "director": "Jon Favreau",
+   "kind": "United States",
+   "description": "2019 film directed by Jon Favreau",
+   "hook": "reimagines a Disney classic with photorealistic computer-generated animals on the African savanna",
+   "known": 0.85
+  },
+  {
+   "label": "Fantastic Mr. Fox",
+   "qid": "Q465275",
+   "fame": 0.599,
+   "director": "Wes Anderson",
+   "kind": "United States",
+   "description": "2009 stop-motion animated film by Wes Anderson",
+   "hook": "is a stop-motion adaptation of a Roald Dahl tale about a sly thief outwitting three angry farmers",
+   "known": 0.5
+  },
+  {
+   "label": "The Emperor's New Groove",
+   "qid": "Q223163",
+   "fame": 0.599,
+   "director": "Mark Dindal",
+   "kind": "United States",
+   "description": "2000 animated film directed by Mark Dindal",
+   "hook": "follows a spoiled young ruler who is turned into a llama by his scheming advisor",
+   "known": 0.7
+  },
+  {
+   "label": "Cars 3",
+   "qid": "Q21079862",
+   "fame": 0.596,
+   "director": "Brian Fee",
+   "kind": "United States",
+   "description": "2017 American animated film directed by Brian Fee",
+   "hook": "sees a veteran racer named Lightning McQueen fight to stay relevant against high-tech rookies",
+   "known": 0.6
+  },
+  {
+   "label": "Elemental",
+   "qid": "Q112801489",
+   "fame": 0.586,
+   "director": "Peter Sohn",
+   "kind": "United States",
+   "description": "2023 American animated film directed by Peter Sohn",
+   "hook": "is a romance between a fiery young woman and a watery young man in a city of clashing forces",
+   "known": 0.4
+  },
+  {
+   "label": "Incredibles 2",
+   "qid": "Q24832112",
+   "fame": 0.584,
+   "director": "Brad Bird",
+   "kind": "United States",
+   "description": "2018 animated film directed by Brad Bird",
+   "hook": "has the mother go on superhero missions while dad stays home with the kids",
+   "known": 0.7
+  },
+  {
+   "label": "Kung Fu Panda 4",
+   "qid": "Q114707487",
+   "fame": 0.583,
+   "director": "Mike Mitchell",
+   "kind": "United States",
+   "description": "2024 film by Mike Mitchell",
+   "hook": "sends the Dragon Warrior toward a new role as he faces a shape-shifting sorceress",
+   "known": 0.6
+  },
+  {
+   "label": "Soul",
+   "qid": "Q64744044",
+   "fame": 0.582,
+   "director": "Pete Docter",
+   "kind": "United States",
+   "description": "2020 American computer-animated film",
+   "hook": "follows a jazz musician whose spirit ends up in a cosmic realm where personalities are formed",
+   "known": 0.65
+  },
+  {
+   "label": "Sing",
+   "qid": "Q20762698",
+   "fame": 0.578,
+   "director": "Garth Jennings",
+   "kind": "United States",
+   "description": "2016 American animated film",
+   "hook": "features a koala impresario who stages a talent competition for animals to save his theater",
+   "known": 0.5
+  },
+  {
+   "label": "Luca",
+   "qid": "Q97925311",
+   "fame": 0.577,
+   "director": "Enrico Casarosa",
+   "kind": "United States",
+   "description": "2021 animated film directed by Enrico Casarosa",
+   "hook": "follows a sea monster boy who explores an Italian seaside town in human form",
+   "known": 0.45
+  },
+  {
+   "label": "The Jungle Book",
+   "qid": "Q199839",
+   "fame": 0.577,
+   "director": "Wolfgang Reitherman",
+   "kind": "United States",
+   "description": "1967 animated film directed by Wolfgang Reitherman",
+   "hook": "follows a boy raised by wolves who is guided by a panther and a lazy bear",
+   "known": 0.8
+  },
+  {
+   "label": "Monster House",
+   "qid": "Q725842",
+   "fame": 0.576,
+   "director": "Gil Kenan",
+   "kind": "United States",
+   "description": "2006 animated film directed by Gil Kenan",
+   "hook": "has kids discover that their creepy neighbor's home is alive and hungry",
+   "known": 0.4
+  },
+  {
+   "label": "Turning Red",
+   "qid": "Q104845027",
+   "fame": 0.576,
+   "director": "Domee Shi",
+   "kind": "United States",
+   "description": "2022 American animated film by Domee Shi",
+   "hook": "follows a teen who becomes a giant fluffy panda whenever her emotions run high",
+   "known": 0.55
+  },
+  {
+   "label": "Kubo and the Two Strings",
+   "qid": "Q18786471",
+   "fame": 0.575,
+   "director": "Travis Knight",
+   "kind": "United States",
+   "description": "2016 animated film directed by Travis Knight",
+   "hook": "follows a boy with a magic shamisen who battles spirits, joined by a monkey and a beetle",
+   "known": 0.4
+  },
+  {
+   "label": "Nausicaä of the Valley of the Wind",
+   "qid": "Q8885676",
+   "fame": 0.574,
+   "director": "Hayao Miyazaki",
+   "kind": "Japan",
+   "description": "1984 film directed by Hayao Miyazaki",
+   "hook": "follows a princess who tries to stop a war between humans and giant insects in a toxic forest",
+   "known": 0.5
+  },
+  {
+   "label": "Despicable Me 4",
+   "qid": "Q113373276",
+   "fame": 0.572,
+   "director": "Chris Renaud",
+   "kind": "United States",
+   "description": "2024 American 3D computer-animated comedy film by Chris Renaud",
+   "hook": "sees a reformed villain and his family go into hiding from a vengeful old rival",
+   "known": 0.45
+  },
+  {
+   "label": "Meet the Robinsons",
+   "qid": "Q221679",
+   "fame": 0.566,
+   "director": "Stephen Anderson",
+   "kind": "United States",
+   "description": "2007 animated film directed by Stephen J. Anderson",
+   "hook": "sends a young inventor in a time machine to a future where he meets a wacky family",
+   "known": 0.35
+  },
+  {
+   "label": "Shrek Forever After",
+   "qid": "Q208131",
+   "fame": 0.566,
+   "director": "Mike Mitchell",
+   "kind": "United States",
+   "description": "2010 film directed by Mike Mitchell",
+   "hook": "shows an ogre who signs a deal with Rumpelstiltskin and lands in an alternate world",
+   "known": 0.6
+  },
+  {
+   "label": "The Aristocats",
+   "qid": "Q184701",
+   "fame": 0.566,
+   "director": "Wolfgang Reitherman",
+   "kind": "United States",
+   "description": "1970 animated film directed by Wolfgang Reitherman",
+   "hook": "follows a wealthy Parisian mother cat and her kittens whose inheritance draws a scheming butler",
+   "known": 0.65
+  },
+  {
+   "label": "The Good Dinosaur",
+   "qid": "Q7737199",
+   "fame": 0.566,
+   "director": "Peter Sohn",
+   "kind": "United States",
+   "description": "2015 animated film directed by Peter Sohn",
+   "hook": "imagines the asteroid never hit, as a timid young Apatosaurus befriends a feral human boy",
+   "known": 0.4
+  },
+  {
+   "label": "Wreck-It Ralph",
+   "qid": "Q28891",
+   "fame": 0.563,
+   "director": "Rich Moore",
+   "kind": "United States",
+   "description": "2012 animated film directed by Rich Moore",
+   "hook": "follows an arcade game villain who dreams of being a hero",
+   "known": 0.6
+  },
+  {
+   "label": "Lightyear",
+   "qid": "Q104409060",
+   "fame": 0.56,
+   "director": "Angus MacLane",
+   "kind": "United States",
+   "description": "2022 animated film by Angus MacLane",
+   "hook": "shows the origin of the space ranger who inspired a famous toy line",
+   "known": 0.5
+  },
+  {
+   "label": "Puss in Boots",
+   "qid": "Q324262",
+   "fame": 0.56,
+   "director": "Chris Miller",
+   "kind": "United States",
+   "description": "2011 animated film directed by Chris Miller",
+   "hook": "follows a swashbuckling cat who teams up with Humpty Dumpty in search of magic beans",
+   "known": 0.45
+  },
+  {
+   "label": "Isle of Dogs",
+   "qid": "Q28065409",
+   "fame": 0.558,
+   "director": "Wes Anderson",
+   "kind": "United States",
+   "description": "2018 animated film directed by Wes Anderson",
+   "hook": "is a stop-motion tale of a boy searching for his lost pet on a garbage island",
+   "known": 0.4
+  },
+  {
+   "label": "Onward",
+   "qid": "Q59690895",
+   "fame": 0.557,
+   "director": "Dan Scanlon",
+   "kind": "United States",
+   "description": "2020 film directed by Dan Scanlon",
+   "hook": "follows two elf brothers on a quest to bring their late father back for one day",
+   "known": 0.55
+  },
+  {
+   "label": "Rango",
+   "qid": "Q275432",
+   "fame": 0.557,
+   "director": "Gore Verbinski",
+   "kind": "United States",
+   "description": "2011 American animated film",
+   "hook": "follows a pet chameleon who becomes sheriff of a dusty Wild West town",
+   "known": 0.5
+  },
+  {
+   "label": "Rio",
+   "qid": "Q223359",
+   "fame": 0.557,
+   "director": "Carlos Saldanha",
+   "kind": "United States",
+   "description": "2011 American animated film directed by Carlos Saldanha",
+   "hook": "follows a domesticated blue macaw who travels to a Brazilian city to find a mate",
+   "known": 0.5
+  },
+  {
+   "label": "The Adventures of Tintin",
+   "qid": "Q980041",
+   "fame": 0.557,
+   "director": "Steven Spielberg",
+   "kind": "United States",
+   "description": "2011 animated film directed by Steven Spielberg",
+   "hook": "follows a young reporter and his dog in search of a sunken ship's treasure",
+   "known": 0.55
+  },
+  {
+   "label": "Megamind",
+   "qid": "Q81205",
+   "fame": 0.556,
+   "director": "Tom McGrath",
+   "kind": "United States",
+   "description": "2010 film directed by Tom McGrath",
+   "hook": "follows a blue-headed supervillain who defeats his hero and then has nothing to do",
+   "known": 0.6
+  },
+  {
+   "label": "Monsters University",
+   "qid": "Q641362",
+   "fame": 0.552,
+   "director": "Dan Scanlon",
+   "kind": "United States",
+   "description": "2013 animated film directed by Dan Scanlon",
+   "hook": "shows how two future scarers first meet as rivals at college",
+   "known": 0.5
+  },
+  {
+   "label": "Hotel Transylvania",
+   "qid": "Q249967",
+   "fame": 0.55,
+   "director": "Genndy Tartakovsky",
+   "kind": "United States",
+   "description": "2012 animated film directed by Genndy Tartakovsky",
+   "hook": "features Dracula running a resort for monsters where a human backpacker shows up",
+   "known": 0.5
+  },
+  {
+   "label": "The Garfield Movie",
+   "qid": "Q113547547",
+   "fame": 0.548,
+   "director": "Mark Dindal",
+   "kind": "United States",
+   "description": "2024 animated film directed by Mark Dindal",
+   "hook": "follows a lasagna-loving orange cat who is pulled into a heist by his long-lost father",
+   "known": 0.3
+  },
+  {
+   "label": "Happy Feet",
+   "qid": "Q126800",
+   "fame": 0.545,
+   "director": "George Miller",
+   "kind": "United States",
+   "description": "2006 animated film directed by George Miller",
+   "hook": "follows a penguin who cannot sing but is a brilliant tap dancer",
+   "known": 0.65
+  },
+  {
+   "label": "Oliver & Company",
+   "qid": "Q216929",
+   "fame": 0.543,
+   "director": "George Scribner",
+   "kind": "United States",
+   "description": "1988 animated film directed by George Scribner",
+   "hook": "retells a Dickens classic with a stray kitten who joins a gang of street dogs in New York",
+   "known": 0.45
+  },
+  {
+   "label": "Robin Hood",
+   "qid": "Q19090",
+   "fame": 0.543,
+   "director": "Wolfgang Reitherman",
+   "kind": "United States",
+   "description": "1973 animated film directed by Wolfgang Reitherman",
+   "hook": "casts a fox as the outlaw who steals from the rich in Sherwood Forest",
+   "known": 0.7
+  },
+  {
+   "label": "The Boss Baby",
+   "qid": "Q18619153",
+   "fame": 0.543,
+   "director": "Tom McGrath",
+   "kind": "United States",
+   "description": "2017 animated film by Tom McGrath",
+   "hook": "follows a suit-wearing infant sent from a company to stop a rival for parental love",
+   "known": 0.55
+  },
+  {
+   "label": "A Goofy Movie",
+   "qid": "Q869993",
+   "fame": 0.541,
+   "director": "Kevin Lima",
+   "kind": "United States",
+   "description": "1995 animated film directed by Kevin Lima",
+   "hook": "follows a teenager mortified by his dad on a cross-country fishing road trip",
+   "known": 0.45
+  },
+  {
+   "label": "Trolls",
+   "qid": "Q7845294",
+   "fame": 0.538,
+   "director": "Mike Mitchell",
+   "kind": "United States",
+   "description": "2016 animated film directed by Mike Mitchell",
+   "hook": "features tiny colorful creatures with wild hair who love to sing and hug",
+   "known": 0.5
+  },
+  {
+   "label": "Chicken Little",
+   "qid": "Q270940",
+   "fame": 0.537,
+   "director": "Mark Dindal",
+   "kind": "United States",
+   "description": "2005 animated film directed by Mark Dindal",
+   "hook": "follows a small bird who panics the town by claiming the sky is falling",
+   "known": 0.35
+  },
+  {
+   "label": "The Angry Birds Movie 2",
+   "qid": "Q18722273",
+   "fame": 0.537,
+   "director": "Thurop Van Orman",
+   "kind": "United States",
+   "description": "2019 animated film directed by Thurop Van Orman",
+   "hook": "sees feathered foes team up with green pigs to stop a threat from a nearby icy island",
+   "known": 0.4
+  },
+  {
+   "label": "The Bad Guys",
+   "qid": "Q97288428",
+   "fame": 0.534,
+   "director": "Pierre Perifel",
+   "kind": "United States",
+   "description": "2022 animated film directed by Pierre Perifel",
+   "hook": "follows a crew of reformed criminal animals led by a wolf who try to become heroes",
+   "known": 0.4
+  },
+  {
+   "label": "The Lego Batman Movie",
+   "qid": "Q23013169",
+   "fame": 0.534,
+   "director": "Chris McKay",
+   "kind": "United States",
+   "description": "2017 animated film directed by Chris McKay",
+   "hook": "spotlights a brooding brick-built caped crusader who must learn to work with a team",
+   "known": 0.6
+  },
+  {
+   "label": "The Simpsons Movie",
+   "qid": "Q182254",
+   "fame": 0.534,
+   "director": "David Silverman",
+   "kind": "United States",
+   "description": "2007 animated film directed by David Silverman",
+   "hook": "has Springfield trapped under a giant dome after a dad's careless pollution",
+   "known": 0.8
+  },
+  {
+   "label": "Minions: The Rise of Gru",
+   "qid": "Q60997779",
+   "fame": 0.533,
+   "director": "Kyle Balda",
+   "kind": "United States",
+   "description": "2022 animated film directed by Kyle Balda",
+   "hook": "shows a preteen aspiring villain joining a supervillain team with help from yellow henchmen",
+   "known": 0.5
+  },
+  {
+   "label": "Rise of the Guardians",
+   "qid": "Q136625",
+   "fame": 0.533,
+   "director": "Peter Ramsey",
+   "kind": "United States",
+   "description": "2012 animated film directed by Peter Ramsey",
+   "hook": "unites Santa, the Easter Bunny and the Tooth Fairy against the bogeyman",
+   "known": 0.45
+  },
+  {
+   "label": "Sinbad: Legend of the Seven Seas",
+   "qid": "Q1043425",
+   "fame": 0.531,
+   "director": "Tim Johnson",
+   "kind": "United States",
+   "description": "2003 animated film by Tim Johnson and Patrick Gilmore",
+   "hook": "follows a roguish sailor tasked with retrieving a stolen artifact by the goddess of discord",
+   "known": 0.35
+  },
+  {
+   "label": "Kung Fu Panda 2",
+   "qid": "Q487447",
+   "fame": 0.528,
+   "director": "Jennifer Yuh Nelson",
+   "kind": "United States",
+   "description": "2011 animated film directed by Jennifer Yuh Nelson",
+   "hook": "sends a martial-arts bear against a peacock warlord with a cannon",
+   "known": 0.6
+  },
+  {
+   "label": "Planes",
+   "qid": "Q1657080",
+   "fame": 0.526,
+   "director": "Klay Hall",
+   "kind": "United States",
+   "description": "2013 animated film directed by Klay Hall",
+   "hook": "follows a crop-duster with a fear of heights who dreams of racing around the world",
+   "known": 0.3
+  },
+  {
+   "label": "Strange World",
+   "qid": "Q107473453",
+   "fame": 0.523,
+   "director": "Don Hall",
+   "kind": "United States",
+   "description": "2022 animated film directed by Don Hall",
+   "hook": "follows a family of explorers who venture into a bizarre underground land",
+   "known": 0.25
+  },
+  {
+   "label": "Home",
+   "qid": "Q4499813",
+   "fame": 0.522,
+   "director": "Tim Johnson",
+   "kind": "United States",
+   "description": "2015 animated film by Tim Johnson",
+   "hook": "follows a small alien on the run who befriends a spirited human girl on a road trip",
+   "known": 0.4
+  },
+  {
+   "label": "How to Train Your Dragon: The Hidden World",
+   "qid": "Q22970530",
+   "fame": 0.522,
+   "director": "Dean DeBlois",
+   "kind": "United States",
+   "description": "2019 film directed by Dean DeBlois",
+   "hook": "sees a young Viking and his Night Fury search for a secret land where their winged kind can live safely",
+   "known": 0.55
+  },
+  {
+   "label": "Frankenweenie",
+   "qid": "Q1051023",
+   "fame": 0.516,
+   "director": "Tim Burton",
+   "kind": "United States",
+   "description": "2012 American animated film directed by Tim Burton",
+   "hook": "is a black-and-white tale of a boy who revives his beloved pet dog with lightning",
+   "known": 0.4
+  },
+  {
+   "label": "Despicable Me 3",
+   "qid": "Q22997984",
+   "fame": 0.512,
+   "director": "Pierre Coffin",
+   "kind": "United States",
+   "description": "2017 American 3D computer-animated comedy film directed by Pierre Coffin",
+   "hook": "has a former villain and his wife meeting his long-lost twin brother who dreams of being a bad guy",
+   "known": 0.4
+  },
+  {
+   "label": "Barnyard",
+   "qid": "Q1129308",
+   "fame": 0.511,
+   "director": "Steve Oedekerk",
+   "kind": "United States",
+   "description": "2006 animated film directed by Steve Oedekerk",
+   "hook": null,
+   "known": 0.35
+  },
+  {
+   "label": "How to Train Your Dragon 2",
+   "qid": "Q10298666",
+   "fame": 0.511,
+   "director": "Dean DeBlois",
+   "kind": "United States",
+   "description": "2014 animated film directed by Dean DeBlois",
+   "hook": "has a Viking teen discovering a hidden ice cave full of winged beasts and reuniting with his long-lost mother",
+   "known": 0.6
+  },
+  {
+   "label": "The Sword in the Stone",
+   "qid": "Q204662",
+   "fame": 0.511,
+   "director": "Wolfgang Reitherman",
+   "kind": "United States",
+   "description": "1963 animated film directed by Wolfgang Reitherman",
+   "hook": "follows young Arthur, tutored by the wizard Merlin who turns him into a fish, squirrel and bird",
+   "known": 0.55
+  },
+  {
+   "label": "The Croods: A New Age",
+   "qid": "Q24832743",
+   "fame": 0.509,
+   "director": "Joel Crawford",
+   "kind": "United States",
+   "description": "2020 animated film directed by Joel Crawford",
+   "hook": "pits a family of cavemen against a rival clan living in a walled, lush paradise",
+   "known": 0.4
+  },
+  {
+   "label": "Ice Age: The Meltdown",
+   "qid": "Q190910",
+   "fame": 0.508,
+   "director": "Carlos Saldanha",
+   "kind": "United States",
+   "description": "2006 animated film directed by Carlos Saldanha",
+   "hook": "follows a mammoth, a sloth and a saber-toothed tiger racing to escape a flood from a melting glacier",
+   "known": 0.55
+  },
+  {
+   "label": "Mr. Peabody & Sherman",
+   "qid": "Q6929072",
+   "fame": 0.505,
+   "director": "Rob Minkoff",
+   "kind": "United States",
+   "description": "2014 animated film directed by Rob Minkoff",
+   "hook": "follows a genius talking dog and his adopted human son who travel through history in a time machine",
+   "known": 0.4
+  },
+  {
+   "label": "Turbo",
+   "qid": "Q1523217",
+   "fame": 0.503,
+   "director": "David Soren",
+   "kind": "United States",
+   "description": "2013 film directed by David Soren",
+   "hook": null,
+   "known": 0.35
+  },
+  {
+   "label": "Quest for Camelot",
+   "qid": "Q1764174",
+   "fame": 0.5,
+   "director": "Frederik Du Chau",
+   "kind": "United States",
+   "description": "1998 animated film directed by Frederik Du Chau",
+   "hook": null,
+   "known": 0.25
+  },
+  {
+   "label": "Star Wars: The Clone Wars",
+   "qid": "Q382289",
+   "fame": 0.499,
+   "director": "Dave Filoni",
+   "kind": "United States",
+   "description": "2008 film by Dave Filoni",
+   "hook": "is a computer-animated feature that introduced Ahsoka and launched a long-running galaxy-spanning TV series",
+   "known": 0.5
+  },
+  {
+   "label": "Migration",
+   "qid": "Q117457809",
+   "fame": 0.496,
+   "director": "Benjamin Renner",
+   "kind": "United States",
+   "description": "2023 animated film directed by Benjamin Renner",
+   "hook": null,
+   "known": 0.35
+  },
+  {
+   "label": "Jimmy Neutron: Boy Genius",
+   "qid": "Q1743785",
+   "fame": 0.494,
+   "director": "John A. Davis",
+   "kind": "United States",
+   "description": "2001 American computer-animated film directed by John A. Davis",
+   "hook": null,
+   "known": 0.35
+  },
+  {
+   "label": "The Boss Baby: Family Business",
+   "qid": "Q11640531",
+   "fame": 0.494,
+   "director": "Tom McGrath",
+   "kind": "United States",
+   "description": "2017 film directed by Tom McGrath",
+   "hook": "reunites two grown brothers with a suit-wearing tot who sends them on a mission to help their own kid",
+   "known": 0.4
+  },
+  {
+   "label": "A Christmas Carol",
+   "qid": "Q86791",
+   "fame": 0.492,
+   "director": "Robert Zemeckis",
+   "kind": "United States",
+   "description": "2009 film by Robert Zemeckis",
+   "hook": "is a motion-capture retelling of the Dickens tale of a miserly man visited by three ghosts",
+   "known": 0.55
+  },
+  {
+   "label": "The Swan Princess",
+   "qid": "Q1216146",
+   "fame": 0.492,
+   "director": "Richard Rich",
+   "kind": "United States",
+   "description": "1994 American animated musical fantasy film directed by Richard Rich",
+   "hook": null,
+   "known": 0.25
+  },
+  {
+   "label": "Ferdinand",
+   "qid": "Q18740903",
+   "fame": 0.491,
+   "director": "Carlos Saldanha",
+   "kind": "United States",
+   "description": "2017 American animated film directed by Carlos Saldanha",
+   "hook": null,
+   "known": 0.35
+  },
+  {
+   "label": "The Peanuts Movie",
+   "qid": "Q15982441",
+   "fame": 0.487,
+   "director": "Steve Martino",
+   "kind": "United States",
+   "description": "2015 film directed by Steve Martino",
+   "hook": "stars Charlie Brown, Snoopy and the gang, with a dog fighting a Red Baron in his daydreams",
+   "known": 0.45
+  },
+  {
+   "label": "Tom and Jerry: The Movie",
+   "qid": "Q1090697",
+   "fame": 0.485,
+   "director": "Phil Roman",
+   "kind": "United States",
+   "description": "1993 American animated film directed by Phil Roman",
+   "hook": null,
+   "known": 0.3
+  },
+  {
+   "label": "Captain Underpants: The First Epic Movie",
+   "qid": "Q20979182",
+   "fame": 0.479,
+   "director": "David Soren",
+   "kind": "United States",
+   "description": "2017 film by David Soren",
+   "hook": null,
+   "known": 0.3
+  },
+  {
+   "label": "Planes: Fire & Rescue",
+   "qid": "Q15631322",
+   "fame": 0.473,
+   "director": "Bobs Gannaway",
+   "kind": "United States",
+   "description": "2014 animated film directed by Bobs Gannaway",
+   "hook": null,
+   "known": 0.25
+  },
+  {
+   "label": "The Ant Bully",
+   "qid": "Q622758",
+   "fame": 0.462,
+   "director": "John A. Davis",
+   "kind": "United States",
+   "description": "2006 film directed by John A. Davis",
+   "hook": null,
+   "known": 0.25
+  },
+  {
+   "label": "Smallfoot",
+   "qid": "Q30607974",
+   "fame": 0.458,
+   "director": "Karey Kirkpatrick",
+   "kind": "United States",
+   "description": "2018 animated film directed by Karey Kirkpatrick",
+   "hook": null,
+   "known": 0.3
+  },
+  {
+   "label": "The Little Prince",
+   "qid": "Q16386722",
+   "fame": 0.458,
+   "director": "Mark Osborne",
+   "kind": "Canada",
+   "description": "2015 animated film directed by Mark Osborne",
+   "hook": null,
+   "known": 0.25
+  }
+ ]
+}

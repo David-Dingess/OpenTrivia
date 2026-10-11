@@ -1,0 +1,366 @@
+{
+ "id": "table.film-and-tv.anime-series",
+ "kind": "table",
+ "title": "Anime television series by first air date",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "cartoons-and-anime",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?start WHERE { { SELECT ?item ?sitelinks (MIN(?d) AS ?start) WHERE { ?item wdt:P31 wd:Q63952888 ; (wdt:P580|wdt:P577) ?d ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 20) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 200 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-22T21:47:15.776Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-22T21:47:15.776Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "first_aired",
+   "label": "First aired",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "kind",
+   "label": "Kind",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "anime",
+  "many": "anime series",
+  "hookAsk": "Which anime {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "itemSub": "{hook}",
+  "columns": {
+   "first_aired": {
+    "role": "date",
+    "sort": "from the first to air to the most recent",
+    "era": "Drop each anime into the decade it first aired.",
+    "eraSize": "decade",
+    "shot": "In what year did the anime {label} first air?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Neon Genesis Evangelion",
+   "qid": "Q662",
+   "fame": 0.656,
+   "first_aired": 1995,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "depicts giant robots defending the world from monstrous invaders as teen pilots battle inner trauma",
+   "known": 0.8
+  },
+  {
+   "label": "Pokémon",
+   "qid": "Q239937",
+   "fame": 0.629,
+   "first_aired": 1997,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows a young trainer and his electric mouse partner catching and battling creatures to become a champion",
+   "known": 0.95
+  },
+  {
+   "label": "Puella Magi Madoka Magica",
+   "qid": "Q53353",
+   "fame": 0.606,
+   "first_aired": 2011,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows schoolgirls who trade their futures away for magical powers and pay a dark, transformative price",
+   "known": 0.4
+  },
+  {
+   "label": "Dragon Ball Z (1989)",
+   "qid": "Q477916",
+   "fame": 0.601,
+   "first_aired": 1989,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows grown alien-raised warriors defending Earth against ever stronger tyrannical foes",
+   "known": 0.95
+  },
+  {
+   "label": "Cowboy Bebop",
+   "qid": "Q101244908",
+   "fame": 0.592,
+   "first_aired": 1998,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows a ragtag crew of bounty hunters chasing outlaws across space aboard a beat-up ship",
+   "known": 0.8
+  },
+  {
+   "label": "Serial Experiments Lain",
+   "qid": "Q858387",
+   "fame": 0.59,
+   "first_aired": 1998,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows a shy teenager pulled into a mysterious online network that blurs the line between reality and the web",
+   "known": 0.4
+  },
+  {
+   "label": "Gurren Lagann",
+   "qid": "Q4277",
+   "fame": 0.558,
+   "first_aired": 2007,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows underground dwellers who dig to the surface and pilot giant mechs against an oppressive regime",
+   "known": 0.8
+  },
+  {
+   "label": "Fullmetal Alchemist: Brotherhood",
+   "qid": "Q437808",
+   "fame": 0.551,
+   "first_aired": 2009,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows two siblings using forbidden transmutation science to find a stone after losing their bodies",
+   "known": 0.8
+  },
+  {
+   "label": "Mobile Suit Gundam (1979)",
+   "qid": "Q1134906",
+   "fame": 0.546,
+   "first_aired": 1979,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows a teen pilot who awakens as a special kind of human amid a war between Earth and space colonies",
+   "known": 0.8
+  },
+  {
+   "label": "Dragon Ball Super (2015)",
+   "qid": "Q19839121",
+   "fame": 0.535,
+   "first_aired": 2015,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "continues alien-raised warriors facing gods of destruction and rival universes in tournament battles",
+   "known": 0.8
+  },
+  {
+   "label": "Ghost in the Shell: Stand Alone Complex",
+   "qid": "Q1776982",
+   "fame": 0.525,
+   "first_aired": 2002,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows a cyborg-enhanced police unit investigating crimes in a near-future world of hacked minds and machines",
+   "known": 0.6
+  },
+  {
+   "label": "Dragon Ball Daima (2024)",
+   "qid": "Q123022503",
+   "fame": 0.515,
+   "first_aired": 2024,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "shrinks its heroes into miniature versions of themselves for a quest through a magical demon realm",
+   "known": 0.6
+  },
+  {
+   "label": "Dragon Ball (1986)",
+   "qid": "Q239506",
+   "fame": 0.512,
+   "first_aired": 1986,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows a monkey-tailed boy seeking wish-granting orbs while training in martial arts as a child",
+   "known": 0.95
+  },
+  {
+   "label": "Samurai Champloo",
+   "qid": "Q143276",
+   "fame": 0.512,
+   "first_aired": 2004,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows two wandering swordsmen and a young woman searching for a fighter who smells of sunflowers",
+   "known": 0.6
+  },
+  {
+   "label": "Kabaneri of the Iron Fortress",
+   "qid": "Q18579178",
+   "fame": 0.504,
+   "first_aired": 2016,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows survivors aboard an armored train fighting undead creatures in a steampunk world",
+   "known": 0.4
+  },
+  {
+   "label": "Paranoia Agent",
+   "qid": "Q947799",
+   "fame": 0.496,
+   "first_aired": 2004,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows a detective duo investigating a string of attacks by a mysterious skating assailant with a golden bat",
+   "known": 0.4
+  },
+  {
+   "label": "Yu-Gi-Oh! Duel Monsters",
+   "qid": "Q1186025",
+   "fame": 0.496,
+   "first_aired": 2000,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows a boy who transforms into a fierce card player battling rivals with a mystical deck to save the world",
+   "known": 0.6
+  },
+  {
+   "label": "Girls und Panzer",
+   "qid": "Q28219",
+   "fame": 0.481,
+   "first_aired": 2012,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows high school students competing in a nationwide tournament sport built around driving tanks",
+   "known": 0.4
+  },
+  {
+   "label": "Digimon Adventure (1999)",
+   "qid": "Q689114",
+   "fame": 0.479,
+   "first_aired": 1999,
+   "kind": "anime",
+   "description": "1999 Japanese anime television series",
+   "hook": "follows kids pulled into a digital world where they befriend creatures that evolve to battle",
+   "known": 0.8
+  },
+  {
+   "label": "Lycoris Recoil",
+   "qid": "Q110361884",
+   "fame": 0.472,
+   "first_aired": 2022,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows two young undercover agents running a cafe by day while secretly protecting the city by night",
+   "known": 0.4
+  },
+  {
+   "label": "Mobile Suit Gundam Wing (1995)",
+   "qid": "Q711148",
+   "fame": 0.47,
+   "first_aired": 1995,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows five young pilots of stealth mecha fighting a war for colonial independence",
+   "known": 0.6
+  },
+  {
+   "label": "Sonic X",
+   "qid": "Q428130",
+   "fame": 0.466,
+   "first_aired": 2003,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows a speedy blue hero and his friends pulled from their world into ours to stop an evil genius",
+   "known": 0.4
+  },
+  {
+   "label": "Nadia: The Secret of Blue Water",
+   "qid": "Q696455",
+   "fame": 0.465,
+   "first_aired": 1990,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows a girl guarding a precious ocean-hued gem while traveling by submarine with an eccentric inventor",
+   "known": 0.2
+  },
+  {
+   "label": "Dragon Ball GT (1996)",
+   "qid": "Q735669",
+   "fame": 0.464,
+   "first_aired": 1996,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "sends an aging hero back into a child's body for a journey to collect wish-granting orbs across the universe",
+   "known": 0.6
+  },
+  {
+   "label": "The Vision of Escaflowne",
+   "qid": "Q92560",
+   "fame": 0.463,
+   "first_aired": 1996,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows a schoolgirl pulled into a fantasy realm where she rides a giant armored knight into battle",
+   "known": 0.4
+  },
+  {
+   "label": "Heidi, Girl of the Alps",
+   "qid": "Q715718",
+   "fame": 0.462,
+   "first_aired": 1974,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows a young orphan sent to live with her grandfather in the mountains",
+   "known": 0.2
+  },
+  {
+   "label": "Yuri on Ice",
+   "qid": "Q25104182",
+   "fame": 0.455,
+   "first_aired": 2016,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows a struggling figure skater training for a comeback season under a champion coach",
+   "known": 0.6
+  },
+  {
+   "label": "Free!",
+   "qid": "Q12019559",
+   "fame": 0.453,
+   "first_aired": 2013,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows childhood friends who reunite on a high school swim team",
+   "known": 0.6
+  },
+  {
+   "label": "Anohana",
+   "qid": "Q483943",
+   "fame": 0.45,
+   "first_aired": 2011,
+   "kind": "anime",
+   "description": "Japanese anime television series",
+   "hook": "follows childhood friends confronting old grief when the ghost of a departed friend reappears among them",
+   "known": 0.6
+  },
+  {
+   "label": "Bakugan Battle Brawlers",
+   "qid": "Q632746",
+   "fame": 0.45,
+   "first_aired": 2007,
+   "kind": "anime",
+   "description": "Japanese-Canadian action adventure television series",
+   "hook": "follows kids battling with creatures sealed inside living metal spheres",
+   "known": 0.4
+  }
+ ]
+}

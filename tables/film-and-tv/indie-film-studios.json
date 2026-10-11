@@ -1,0 +1,1888 @@
+{
+ "id": "table.film-and-tv.indie-film-studios",
+ "kind": "table",
+ "title": "Independent films and the studio behind them",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "indie-film",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?coLabel WHERE { { SELECT ?item (SAMPLE(?co) AS ?c) (COUNT(DISTINCT ?co) AS ?n) WHERE { VALUES ?cl { \"A24\"@en \"Neon\"@en \"Focus Features\"@en \"Searchlight Pictures\"@en \"Fox Searchlight Pictures\"@en \"Miramax\"@en \"Sony Pictures Classics\"@en \"Blumhouse Productions\"@en \"Fine Line Features\"@en \"Orion Pictures\"@en \"IFC Films\"@en \"Magnolia Pictures\"@en } ?co rdfs:label ?cl . FILTER(?sl >= 25) ?item wdt:P31 wd:Q11424 ; wdt:P750|wdt:P272 ?co ; wikibase:sitelinks ?sl . FILTER(?sl >= 25) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?n = 1) BIND(?c AS ?co) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T14:01:36.713Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T14:01:36.713Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "studio",
+   "label": "Studio",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "film",
+  "many": "films",
+  "columns": {
+   "studio": {
+    "role": "link",
+    "pick": "Which studio released {label}?",
+    "statement": "{label} was released by {value}.",
+    "match": "Match each film to the studio that released it.",
+    "odd": "Three of these films came from {value}. Which one didn't?",
+    "all": "Tap all {n} films released by {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The Gentlemen",
+   "qid": "Q60614686",
+   "fame": 0.784,
+   "studio": "Miramax",
+   "description": "2019 film directed by Guy Ritchie",
+   "hook": "follows an American expat drug baron in London who tries to sell off his marijuana empire",
+   "known": 0.8,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Anora",
+   "qid": "Q123185887",
+   "fame": 0.732,
+   "studio": "Neon",
+   "description": "2024 film directed by Sean Baker",
+   "hook": "follows a Brooklyn dancer who impulsively weds the son of a Russian oligarch",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Promising Young Woman",
+   "qid": "Q62595383",
+   "fame": 0.732,
+   "studio": "Focus Features",
+   "description": "2020 film directed by Emerald Fennell",
+   "hook": "follows a former medical student who poses as drunk at bars while seeking payback for a friend's tragedy",
+   "known": 0.6,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "No Country for Old Men",
+   "qid": "Q183081",
+   "fame": 0.718,
+   "studio": "Miramax",
+   "description": "2007 film directed by Ethan and Joel Coen",
+   "hook": "follows a hunter who finds drug money in the Texas desert and is chased by a relentless hitman",
+   "known": 0.8,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Bugonia",
+   "qid": "Q125971387",
+   "fame": 0.712,
+   "studio": "Focus Features",
+   "description": "2025 film directed by Yorgos Lanthimos",
+   "hook": "follows two conspiracy-obsessed men who kidnap a corporate CEO they believe is an alien",
+   "known": 0.2,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Terminator",
+   "qid": "Q162255",
+   "fame": 0.709,
+   "studio": "Orion Pictures",
+   "description": "1984 film by James Cameron",
+   "hook": "sends a killer cyborg back in time to hunt the mother of a future resistance leader",
+   "known": 0.95,
+   "kind": "classic indie"
+  },
+  {
+   "label": "The Menu",
+   "qid": "Q108444804",
+   "fame": 0.702,
+   "studio": "Searchlight Pictures",
+   "description": "2022 film directed by Mark Mylod",
+   "hook": "follows guests at an exclusive island restaurant where the celebrity chef has a deadly surprise planned",
+   "known": 0.6,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Marty Supreme",
+   "qid": "Q130118681",
+   "fame": 0.699,
+   "studio": "A24",
+   "description": "2025 film directed by Josh Safdie",
+   "hook": "follows an ambitious table tennis hustler chasing glory in postwar New York",
+   "known": 0.2,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "The Silence of the Lambs",
+   "qid": "Q133654",
+   "fame": 0.697,
+   "studio": "Orion Pictures",
+   "description": "1991 film directed by Jonathan Demme",
+   "hook": "pairs an FBI trainee with an imprisoned cannibal psychiatrist to catch a serial killer",
+   "known": 0.95,
+   "kind": "classic indie"
+  },
+  {
+   "label": "Good Will Hunting",
+   "qid": "Q193835",
+   "fame": 0.696,
+   "studio": "Miramax",
+   "description": "1997 film by Gus Van Sant",
+   "hook": "follows a self-taught math genius working as a janitor who is helped by a therapist",
+   "known": 0.8,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Nosferatu",
+   "qid": "Q116361132",
+   "fame": 0.693,
+   "studio": "Focus Features",
+   "description": "2024 film directed by Robert Eggers",
+   "hook": "retells the gothic vampire tale of a Transylvanian count who becomes obsessed with a young bride",
+   "known": 0.6,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Hamnet",
+   "qid": "Q122741016",
+   "fame": 0.691,
+   "studio": "Focus Features",
+   "description": "2025 film directed by Chloé Zhao",
+   "hook": "imagines the family grief that inspired Shakespeare's most famous tragedy",
+   "known": 0.2,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Get Out",
+   "qid": "Q25136235",
+   "fame": 0.687,
+   "studio": "Blumhouse Productions",
+   "description": "2017 film directed by Jordan Peele",
+   "hook": "follows a young Black photographer who meets his girlfriend's family and uncovers a sinister secret",
+   "known": 0.95,
+   "kind": "genre specialist"
+  },
+  {
+   "label": "Hereditary",
+   "qid": "Q47524071",
+   "fame": 0.686,
+   "studio": "A24",
+   "description": "2018 horror film by Ari Aster",
+   "hook": "haunts a family with dark secrets after the death of their secretive matriarch",
+   "known": 0.6,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Pulp Fiction",
+   "qid": "Q104123",
+   "fame": 0.685,
+   "studio": "Miramax",
+   "description": "1994 film by Quentin Tarantino",
+   "hook": "weaves together crime stories about hitmen, a boxer and a mob boss's wife",
+   "known": 0.95,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Everything Everywhere All at Once",
+   "qid": "Q83808444",
+   "fame": 0.684,
+   "studio": "A24",
+   "description": "2022 film by Daniel Kwan and Daniel Scheinert",
+   "hook": "sends a stressed laundromat owner hopping between parallel universes to save her family",
+   "known": 0.8,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "The Witch",
+   "qid": "Q19057481",
+   "fame": 0.682,
+   "studio": "A24",
+   "description": "2015 film directed by Robert Eggers",
+   "hook": "follows a devout New England family torn apart by fear of evil in the nearby woods",
+   "known": 0.6,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "The Whale",
+   "qid": "Q105883400",
+   "fame": 0.679,
+   "studio": "A24",
+   "description": "2022 film directed by Darren Aronofsky",
+   "hook": "follows a reclusive online English teacher trying to reconnect with his estranged teenage daughter",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Midsommar",
+   "qid": "Q55907451",
+   "fame": 0.675,
+   "studio": "A24",
+   "description": "2019 Swedish-American film directed by Ari Aster",
+   "hook": "takes a grieving student and her friends to a rural summer festival with dark rituals",
+   "known": 0.6,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Nocturnal Animals",
+   "qid": "Q21527905",
+   "fame": 0.675,
+   "studio": "Focus Features",
+   "description": "2016 film directed by Tom Ford",
+   "hook": "has a gallery owner read her ex-husband's disturbing novel manuscript",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Eternal Sunshine of the Spotless Mind",
+   "qid": "Q208269",
+   "fame": 0.673,
+   "studio": "Focus Features",
+   "description": "2004 film directed by Michel Gondry",
+   "hook": "follows exes who undergo a procedure to erase each other from their memories",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Three Billboards Outside Ebbing, Missouri",
+   "qid": "Q24053277",
+   "fame": 0.669,
+   "studio": "Searchlight Pictures",
+   "description": "2017 film directed by Martin McDonagh",
+   "hook": "follows a grieving mother who rents roadside ads to shame local police over her daughter's unsolved case",
+   "known": 0.8,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Parasite",
+   "qid": "Q61448040",
+   "fame": 0.665,
+   "studio": "Neon",
+   "description": "2019 film directed by Bong Joon-ho",
+   "hook": "follows a poor family who scheme their way into working for a wealthy household",
+   "known": 0.8,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Gangs of New York",
+   "qid": "Q154581",
+   "fame": 0.662,
+   "studio": "Miramax",
+   "description": "2002 film directed by Martin Scorsese",
+   "hook": "depicts a bloody 19th-century turf war between rival street crews in lower Manhattan",
+   "known": 0.8,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Lighthouse",
+   "qid": "Q55402791",
+   "fame": 0.66,
+   "studio": "A24",
+   "description": "2019 film directed by Robert Eggers",
+   "hook": "traps two keepers on a remote rocky island, driving them toward madness",
+   "known": 0.6,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "The Northman",
+   "qid": "Q87126244",
+   "fame": 0.653,
+   "studio": "Focus Features",
+   "description": "2022 film directed by Robert Eggers",
+   "hook": "follows a Viking prince bent on avenging his father",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Brutalist",
+   "qid": "Q101112656",
+   "fame": 0.65,
+   "studio": "A24",
+   "description": "2024 film directed by Brady Corbet",
+   "hook": "follows a visionary architect who flees Europe and rebuilds his life in America",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "28 Days Later",
+   "qid": "Q221075",
+   "fame": 0.645,
+   "studio": "Searchlight Pictures",
+   "description": "2002 film directed by Danny Boyle",
+   "hook": "follows survivors in Britain after a rage-inducing virus turns people into fast-moving infected",
+   "known": 0.8,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Brokeback Mountain",
+   "qid": "Q160618",
+   "fame": 0.645,
+   "studio": "Focus Features",
+   "description": "2005 film directed by Ang Lee",
+   "hook": "tells of two cowboys whose secret romance spans decades",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Civil War",
+   "qid": "Q111538862",
+   "fame": 0.644,
+   "studio": "A24",
+   "description": "2024 film directed by Alex Garland",
+   "hook": "follows photojournalists driving toward the capital through a fractured, battle-scarred America",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Juno",
+   "qid": "Q79503",
+   "fame": 0.643,
+   "studio": "Searchlight Pictures",
+   "description": "2007 film by Jason Reitman",
+   "hook": "follows a quirky teenager who decides to place her unplanned baby with a couple for adoption",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Split",
+   "qid": "Q21869840",
+   "fame": 0.643,
+   "studio": "Blumhouse Productions",
+   "description": "2016 film directed by M. Night Shyamalan",
+   "hook": "follows a man with many distinct personalities who kidnaps three teenage girls",
+   "known": 0.8,
+   "kind": "genre specialist"
+  },
+  {
+   "label": "Poor Things",
+   "qid": "Q108760382",
+   "fame": 0.642,
+   "studio": "Searchlight Pictures",
+   "description": "2023 film directed by Yorgos Lanthimos",
+   "hook": "follows a woman brought back to life with a child's brain who sets off to explore the world",
+   "known": 0.6,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Birdman",
+   "qid": "Q13255497",
+   "fame": 0.641,
+   "studio": "Searchlight Pictures",
+   "description": "2014 film by Alejandro González Iñárritu",
+   "hook": "follows a washed-up actor famous for a superhero role who stages a Broadway play",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Moonlight",
+   "qid": "Q21527875",
+   "fame": 0.64,
+   "studio": "A24",
+   "description": "2016 film directed by Barry Jenkins",
+   "hook": "follows a young Black man from Miami across three chapters of his life",
+   "known": 0.8,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "The Banshees of Inisherin",
+   "qid": "Q108314506",
+   "fame": 0.635,
+   "studio": "Searchlight Pictures",
+   "description": "2022 film by Martin McDonagh",
+   "hook": "follows a friendship on a remote Irish island that ends when one man abruptly says he is done",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Descendants",
+   "qid": "Q273686",
+   "fame": 0.634,
+   "studio": "Searchlight Pictures",
+   "description": "2011 film directed by Alexander Payne",
+   "hook": "follows a Hawaii lawyer forced to bond with his daughters after his wife's boating accident",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Amadeus",
+   "qid": "Q190956",
+   "fame": 0.631,
+   "studio": "Orion Pictures",
+   "description": "1984 film directed by Miloš Forman",
+   "hook": "portrays a jealous court composer's rivalry with a gifted, immature prodigy in Vienna",
+   "known": 0.95,
+   "kind": "classic indie"
+  },
+  {
+   "label": "The Grand Budapest Hotel",
+   "qid": "Q3521099",
+   "fame": 0.631,
+   "studio": "Searchlight Pictures",
+   "description": "2014 film directed by Wes Anderson",
+   "hook": "follows a legendary concierge and his young protege caught up in a stolen painting caper",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Glass",
+   "qid": "Q30939513",
+   "fame": 0.63,
+   "studio": "Blumhouse Productions",
+   "description": "2019 film directed by M. Night Shyamalan",
+   "hook": "unites a man with unbreakable strength, a mastermind with brittle bones and a man with many personalities",
+   "known": 0.6,
+   "kind": "genre specialist"
+  },
+  {
+   "label": "Kill Bill: Volume 1",
+   "qid": "Q165325",
+   "fame": 0.628,
+   "studio": "Miramax",
+   "description": "2003 film by Quentin Tarantino",
+   "hook": "follows a betrayed assassin in a yellow jumpsuit who sets out for revenge on her former colleagues",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Others",
+   "qid": "Q332515",
+   "fame": 0.627,
+   "studio": "Miramax",
+   "description": "2001 film by Alejandro Amenábar",
+   "hook": "follows a mother in a fog-shrouded mansion whose light-sensitive children believe it is haunted",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Us",
+   "qid": "Q56000996",
+   "fame": 0.627,
+   "studio": "Blumhouse Productions",
+   "description": "2019 film directed by Jordan Peele",
+   "hook": "pits a family on vacation against sinister doubles dressed in red jumpsuits",
+   "known": 0.4,
+   "kind": "genre specialist"
+  },
+  {
+   "label": "Black Swan",
+   "qid": "Q180214",
+   "fame": 0.625,
+   "studio": "Searchlight Pictures",
+   "description": "2010 film directed by Darren Aronofsky",
+   "hook": "follows an ambitious ballerina whose obsession with a dual role drives her to unravel",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "From Dusk till Dawn",
+   "qid": "Q196004",
+   "fame": 0.624,
+   "studio": "Miramax",
+   "description": "1996 film directed by Robert Rodriguez",
+   "hook": "sends outlaw brothers into a Mexican bar that turns out to be run by vampires",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Phantom Thread",
+   "qid": "Q28840386",
+   "fame": 0.624,
+   "studio": "Focus Features",
+   "description": "2017 film directed by Paul Thomas Anderson",
+   "hook": "follows a controlling, postwar London fashion designer whose life is upended by a strong-willed muse",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Platoon",
+   "qid": "Q190643",
+   "fame": 0.624,
+   "studio": "Orion Pictures",
+   "description": "1986 film directed by Oliver Stone",
+   "hook": "follows a young volunteer's harrowing tour of duty in Vietnam",
+   "known": 0.6,
+   "kind": "classic indie"
+  },
+  {
+   "label": "Reservoir Dogs",
+   "qid": "Q72962",
+   "fame": 0.623,
+   "studio": "Miramax",
+   "description": "1992 film by Quentin Tarantino",
+   "hook": "follows jewel thieves with color-coded aliases after a heist goes wrong",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Call Me by Your Name",
+   "qid": "Q25136757",
+   "fame": 0.619,
+   "studio": "Sony Pictures Classics",
+   "description": "2017 film by Luca Guadagnino",
+   "hook": null,
+   "known": 0.6,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Eastern Promises",
+   "qid": "Q752017",
+   "fame": 0.618,
+   "studio": "Focus Features",
+   "description": "2007 film directed by David Cronenberg",
+   "hook": "follows a London midwife who stumbles into the Russian mob",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Pianist",
+   "qid": "Q150804",
+   "fame": 0.617,
+   "studio": "Focus Features",
+   "description": "2002 film directed by Roman Polanski",
+   "hook": "tells of a Polish Jewish musician's survival in the Warsaw ghetto during World War II",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Ex Machina",
+   "qid": "Q16635326",
+   "fame": 0.616,
+   "studio": "A24",
+   "description": "2014 film directed by Alex Garland",
+   "hook": "follows a programmer testing a lifelike humanoid robot's ability to think",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "The Zone of Interest",
+   "qid": "Q115993222",
+   "fame": 0.616,
+   "studio": "A24",
+   "description": "2023 historical drama film by Jonathan Glazer",
+   "hook": "shows a family enjoying a quiet home life right next to a Nazi death camp",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Uncut Gems",
+   "qid": "Q56312570",
+   "fame": 0.615,
+   "studio": "A24",
+   "description": "2019 film directed by Joshua Safdie and Ben Safdie",
+   "hook": "follows a frantic diamond-district jeweler whose gambling habit spirals out of control",
+   "known": 0.6,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Lady Bird",
+   "qid": "Q27480769",
+   "fame": 0.613,
+   "studio": "A24",
+   "description": "2017 film directed by Greta Gerwig",
+   "hook": "follows a spirited Sacramento high-school senior at odds with her mother",
+   "known": 0.8,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "RoboCop",
+   "qid": "Q372514",
+   "fame": 0.613,
+   "studio": "Orion Pictures",
+   "description": "1987 film directed by Paul Verhoeven",
+   "hook": "turns a slain Detroit police officer into a cyborg crime-fighter",
+   "known": 0.4,
+   "kind": "classic indie"
+  },
+  {
+   "label": "The Florida Project",
+   "qid": "Q29514872",
+   "fame": 0.613,
+   "studio": "A24",
+   "description": "2017 film by Sean Baker",
+   "hook": "follows a six-year-old and her mother living in a budget motel near a theme park",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Dallas Buyers Club",
+   "qid": "Q3520498",
+   "fame": 0.61,
+   "studio": "Focus Features",
+   "description": "2013 film by Jean-Marc Vallée",
+   "hook": "follows a rodeo cowboy who smuggles unapproved medication for AIDS patients",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Shape of Water",
+   "qid": "Q26698156",
+   "fame": 0.61,
+   "studio": "Searchlight Pictures",
+   "description": "2017 film by Guillermo del Toro",
+   "hook": "tells of a mute cleaning woman who falls for a captive amphibian creature in a Cold War lab",
+   "known": 0.8,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Cold Mountain",
+   "qid": "Q390097",
+   "fame": 0.609,
+   "studio": "Miramax",
+   "description": "2003 film directed by Anthony Minghella",
+   "hook": "follows a wounded Confederate soldier walking home to his sweetheart",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Halloween",
+   "qid": "Q20666646",
+   "fame": 0.609,
+   "studio": "Blumhouse Productions",
+   "description": "2018 film by David Gordon Green",
+   "hook": "brings a masked killer back to his hometown to face the babysitter who survived him long ago",
+   "known": 0.4,
+   "kind": "genre specialist"
+  },
+  {
+   "label": "Life Is Beautiful",
+   "qid": "Q19355",
+   "fame": 0.604,
+   "studio": "Miramax",
+   "description": "1997 film by Roberto Benigni",
+   "hook": "shows a father shielding his young son from a camp's horrors by pretending it is all a game",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Sin City",
+   "qid": "Q192115",
+   "fame": 0.603,
+   "studio": "Miramax",
+   "description": "2005 film directed by Frank Miller and Robert Rodriguez",
+   "hook": "brings a graphic novel to the screen in stark black and white with splashes of color and hard-boiled tales",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Tinker Tailor Soldier Spy",
+   "qid": "Q681962",
+   "fame": 0.603,
+   "studio": "Focus Features",
+   "description": "2011 film directed by Tomas Alfredson",
+   "hook": "follows a retired British intelligence man hunting a mole inside the agency during the Cold War",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Mississippi Burning",
+   "qid": "Q918367",
+   "fame": 0.601,
+   "studio": "Orion Pictures",
+   "description": "1988 film by Alan Parker",
+   "hook": "dramatizes the FBI hunt for missing civil rights workers in the segregated South",
+   "known": 0.4,
+   "kind": "classic indie"
+  },
+  {
+   "label": "(500) Days of Summer",
+   "qid": "Q154935",
+   "fame": 0.598,
+   "studio": "Searchlight Pictures",
+   "description": "2009 film directed by Marc Webb",
+   "hook": "follows a greeting card writer looking back at a failed romance told out of order",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Dances with Wolves",
+   "qid": "Q20456",
+   "fame": 0.597,
+   "studio": "Orion Pictures",
+   "description": "1990 film directed by Kevin Costner",
+   "hook": "follows a Union soldier who befriends the Lakota and comes to adopt their way of life",
+   "known": 0.4,
+   "kind": "classic indie"
+  },
+  {
+   "label": "The Invisible Man",
+   "qid": "Q64004122",
+   "fame": 0.596,
+   "studio": "Blumhouse Productions",
+   "description": "2020 film directed by Leigh Whannell",
+   "hook": "reimagines a classic monster tale as a woman tormented by her abusive ex, who seems to have vanished",
+   "known": 0.4,
+   "kind": "genre specialist"
+  },
+  {
+   "label": "Little Miss Sunshine",
+   "qid": "Q192073",
+   "fame": 0.594,
+   "studio": "Searchlight Pictures",
+   "description": "2006 film by Jonathan Dayton and Valerie Faris",
+   "hook": "follows a quirky family road-tripping in a beat-up van to get their daughter to a beauty pageant",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Sunshine",
+   "qid": "Q478212",
+   "fame": 0.593,
+   "studio": "Searchlight Pictures",
+   "description": "2007 film directed by Danny Boyle",
+   "hook": "sends astronauts on a desperate mission to reignite a dying star",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Triangle of Sadness",
+   "qid": "Q97304180",
+   "fame": 0.592,
+   "studio": "Neon",
+   "description": "2022 film directed by Ruben Östlund",
+   "hook": "satirizes the ultra-rich as a luxury cruise turns into a shipwreck",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Amélie",
+   "qid": "Q484048",
+   "fame": 0.59,
+   "studio": "Miramax",
+   "description": "2001 film directed by Jean-Pierre Jeunet",
+   "hook": "follows a whimsical Parisian waitress who secretly improves the lives of those around her",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Boy in the Striped Pajamas",
+   "qid": "Q157556",
+   "fame": 0.589,
+   "studio": "Miramax",
+   "description": "2008 US-UK film directed by Mark Herman",
+   "hook": "tells of a commandant's young son who befriends a prisoner on the other side of a wire fence",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Black Phone",
+   "qid": "Q105584511",
+   "fame": 0.586,
+   "studio": "Blumhouse Productions",
+   "description": "2021 film directed by Scott Derrickson",
+   "hook": "has a kidnapped teen receive calls from the dead victims of a child abductor in a basement",
+   "known": 0.4,
+   "kind": "genre specialist"
+  },
+  {
+   "label": "Gone Baby Gone",
+   "qid": "Q247182",
+   "fame": 0.584,
+   "studio": "Miramax",
+   "description": "2007 film by Ben Affleck",
+   "hook": "follows Boston detectives searching for a missing little girl and facing a painful moral choice",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Purge",
+   "qid": "Q7758789",
+   "fame": 0.583,
+   "studio": "Blumhouse Productions",
+   "description": "2013 film directed by James DeMonaco",
+   "hook": "imagines a future night when all crime is legal for twelve hours",
+   "known": 0.4,
+   "kind": "genre specialist"
+  },
+  {
+   "label": "Asteroid City",
+   "qid": "Q108086029",
+   "fame": 0.581,
+   "studio": "Focus Features",
+   "description": "2023 film directed by Wes Anderson",
+   "hook": "is set in a desert crater town where a stargazing convention is interrupted by an alien visitor",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The English Patient",
+   "qid": "Q63026",
+   "fame": 0.581,
+   "studio": "Miramax",
+   "description": "1996 film directed by Anthony Minghella",
+   "hook": "follows a badly burned pilot and the nurse caring for him in an Italian villa near the end of WWII",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Gosford Park",
+   "qid": "Q165392",
+   "fame": 0.58,
+   "studio": "Focus Features",
+   "description": "2001 film directed by Robert Altman",
+   "hook": "mixes aristocrats and their servants at a weekend shooting party where a murder occurs",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Favourite",
+   "qid": "Q22001133",
+   "fame": 0.58,
+   "studio": "Searchlight Pictures",
+   "description": "2018 film directed by Yorgos Lanthimos",
+   "hook": "follows two women scheming for the affections of an ailing queen in an early English court",
+   "known": 0.6,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "A Serious Man",
+   "qid": "Q300555",
+   "fame": 0.579,
+   "studio": "Focus Features",
+   "description": "2009 film directed by Ethan and Joel Coen",
+   "hook": "follows a physics professor whose life unravels while he seeks answers from rabbis",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Nomadland",
+   "qid": "Q61740820",
+   "fame": 0.578,
+   "studio": "Searchlight Pictures",
+   "description": "2020 film directed by Chloé Zhao",
+   "hook": "follows a widow living out of a van and traveling the American West for seasonal work",
+   "known": 0.6,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Never Let Me Go",
+   "qid": "Q927826",
+   "fame": 0.576,
+   "studio": "Searchlight Pictures",
+   "description": "2010 film by Mark Romanek",
+   "hook": "follows friends raised at a boarding school who learn their purpose is organ donation",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Excalibur",
+   "qid": "Q206461",
+   "fame": 0.574,
+   "studio": "Orion Pictures",
+   "description": "1981 film by John Boorman",
+   "hook": "retells the legend of King Arthur and his enchanted sword",
+   "known": 0.4,
+   "kind": "classic indie"
+  },
+  {
+   "label": "Past Lives",
+   "qid": "Q116025865",
+   "fame": 0.574,
+   "studio": "A24",
+   "description": "2023 film by Celine Song",
+   "hook": "reunites childhood sweethearts decades after one emigrated, wondering about fate",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Chicago",
+   "qid": "Q189889",
+   "fame": 0.573,
+   "studio": "Miramax",
+   "description": "2002 film by Rob Marshall",
+   "hook": "follows two murderous vaudeville performers chasing fame through a jazz-age courtroom",
+   "known": 0.8,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Burn After Reading",
+   "qid": "Q381731",
+   "fame": 0.572,
+   "studio": "Focus Features",
+   "description": "2008 film directed by Ethan and Joel Coen",
+   "hook": "follows clueless gym employees tangled up with spies over a lost disc of secrets",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "In Bruges",
+   "qid": "Q244931",
+   "fame": 0.572,
+   "studio": "Focus Features",
+   "description": "2008 film directed by Martin McDonagh",
+   "hook": "follows two hitmen hiding out in a medieval Belgian canal town",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Kinds of Kindness",
+   "qid": "Q114345051",
+   "fame": 0.572,
+   "studio": "Searchlight Pictures",
+   "description": "2024 film directed by Yorgos Lanthimos",
+   "hook": "tells three separate stories in which the same actors play different characters",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Other Boleyn Girl",
+   "qid": "Q470073",
+   "fame": 0.572,
+   "studio": "Focus Features",
+   "description": "2008 film by Justin Chadwick",
+   "hook": "dramatizes two sisters competing for the affections of King Henry VIII",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "City of God",
+   "qid": "Q220741",
+   "fame": 0.571,
+   "studio": "Miramax",
+   "description": "2002 film directed by Fernando Meirelles and Kátia Lund",
+   "hook": "depicts youths growing up amid drug gangs in a Rio slum",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Kill Bill: Volume 2",
+   "qid": "Q928019",
+   "fame": 0.569,
+   "studio": "Miramax",
+   "description": "2004 film by Quentin Tarantino",
+   "hook": "concludes a bride's revenge quest against her former boss with a final showdown",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Cop Land",
+   "qid": "Q558102",
+   "fame": 0.568,
+   "studio": "Miramax",
+   "description": "1997 film by James Mangold",
+   "hook": "follows a half-deaf sheriff who confronts the corruption of NYC officers living across the river",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "127 Hours",
+   "qid": "Q174371",
+   "fame": 0.567,
+   "studio": "Searchlight Pictures",
+   "description": "2010 film directed by Danny Boyle",
+   "hook": "dramatizes a hiker whose arm gets pinned by a boulder in a remote canyon",
+   "known": 0.6,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "A Monster Calls",
+   "qid": "Q18200409",
+   "fame": 0.566,
+   "studio": "Focus Features",
+   "description": "2016 film directed by Juan Antonio Bayona",
+   "hook": "has a lonely boy visited at night by a giant walking tree while his mother is ill",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "M3GAN",
+   "qid": "Q110661062",
+   "fame": 0.565,
+   "studio": "Blumhouse Productions",
+   "description": "2022 film directed by Gerard Johnstone",
+   "hook": "features an artificial-intelligence doll that grows dangerously protective of a child",
+   "known": 0.4,
+   "kind": "genre specialist"
+  },
+  {
+   "label": "Oculus",
+   "qid": "Q3349019",
+   "fame": 0.565,
+   "studio": "Blumhouse Productions",
+   "description": "2013 film directed by Mike Flanagan",
+   "hook": "follows siblings trying to prove a haunted mirror caused their family's tragedy",
+   "known": 0.4,
+   "kind": "genre specialist"
+  },
+  {
+   "label": "Malèna",
+   "qid": "Q745973",
+   "fame": 0.563,
+   "studio": "Miramax",
+   "description": "2000 film by Giuseppe Tornatore",
+   "hook": "follows a teenager infatuated with a beautiful widow in a Sicilian town during WWII",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Danish Girl",
+   "qid": "Q19347583",
+   "fame": 0.563,
+   "studio": "Focus Features",
+   "description": "2015 film by Tom Hooper",
+   "hook": "dramatizes a Copenhagen painter's transition to living as a woman",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Moon",
+   "qid": "Q26751",
+   "fame": 0.562,
+   "studio": "Sony Pictures Classics",
+   "description": "2009 film directed by Duncan Jones",
+   "hook": "follows a lone mining-station worker who uncovers a disturbing secret about himself",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Darkest Hour",
+   "qid": "Q27958298",
+   "fame": 0.56,
+   "studio": "Focus Features",
+   "description": "2017 film directed by Joe Wright",
+   "hook": "dramatizes the British prime minister's early weeks facing the Nazi advance",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "My Own Private Idaho",
+   "qid": "Q1125451",
+   "fame": 0.559,
+   "studio": "Fine Line Features",
+   "description": "1991 film directed by Gus Van Sant",
+   "hook": "follows two drifting friends on a road trip, one of whom falls suddenly asleep from narcolepsy",
+   "known": 0.4,
+   "kind": "classic indie"
+  },
+  {
+   "label": "Tár",
+   "qid": "Q108649516",
+   "fame": 0.559,
+   "studio": "Focus Features",
+   "description": "2022 film directed by Todd Field",
+   "hook": "follows a world-famous orchestra conductor whose career unravels",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Hours",
+   "qid": "Q157044",
+   "fame": 0.559,
+   "studio": "Miramax",
+   "description": "2002 film directed by Stephen Daldry",
+   "hook": "weaves together three women's lives across decades, linked by a Virginia Woolf novel",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "21 Grams",
+   "qid": "Q214013",
+   "fame": 0.558,
+   "studio": "Focus Features",
+   "description": "2003 film directed by Alejandro González Iñárritu",
+   "hook": "interweaves the lives of three people connected by a fatal car accident and a heart transplant",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Tree of Life",
+   "qid": "Q244257",
+   "fame": 0.558,
+   "studio": "Searchlight Pictures",
+   "description": "2011 film directed by Terrence Malick",
+   "hook": "mixes a family's childhood memories with sweeping scenes of the cosmos and dinosaurs",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Spy Kids",
+   "qid": "Q550581",
+   "fame": 0.554,
+   "studio": "Miramax",
+   "description": "2001 film by Robert Rodriguez",
+   "hook": "follows two siblings who must rescue their captured secret-agent parents",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "A Real Pain",
+   "qid": "Q123690368",
+   "fame": 0.553,
+   "studio": "Searchlight Pictures",
+   "description": "2024 film by Jesse Eisenberg",
+   "hook": "follows two cousins on a heritage tour of Poland honoring their late grandmother",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Midnight in Paris",
+   "qid": "Q206124",
+   "fame": 0.552,
+   "studio": "Sony Pictures Classics",
+   "description": "2011 film by Woody Allen",
+   "hook": "sends a modern-day screenwriter to meet famous artists of a bygone era each night",
+   "known": 0.8,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "My Name Is Khan",
+   "qid": "Q330663",
+   "fame": 0.552,
+   "studio": "Searchlight Pictures",
+   "description": "2010 film directed by Karan Johar",
+   "hook": "follows a Muslim man with Asperger's who travels across America hoping to meet the president",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Atomic Blonde",
+   "qid": "Q21528112",
+   "fame": 0.551,
+   "studio": "Focus Features",
+   "description": "2017 film by David Leitch",
+   "hook": "follows a female MI6 agent in Berlin racing to recover a list of double agents",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Shakespeare in Love",
+   "qid": "Q182944",
+   "fame": 0.551,
+   "studio": "Miramax",
+   "description": "1998 film by John Madden",
+   "hook": "imagines the romance that inspired a famed playwright's tragic young lovers",
+   "known": 0.8,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The French Dispatch",
+   "qid": "Q59551547",
+   "fame": 0.551,
+   "studio": "Searchlight Pictures",
+   "description": "2021 film directed by Wes Anderson",
+   "hook": "presents anthology tales drawn from the staff of a magazine's final issue",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "An Education",
+   "qid": "Q482436",
+   "fame": 0.55,
+   "studio": "Sony Pictures Classics",
+   "description": "2009 film by Lone Scherfig",
+   "hook": "follows a bright schoolgirl in suburban London whose charming older suitor upends her plans",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Dancer in the Dark",
+   "qid": "Q110365",
+   "fame": 0.55,
+   "studio": "Fine Line Features",
+   "description": "2000 film by Lars von Trier",
+   "hook": "stars a pop singer as a factory worker going blind who escapes into musical fantasies",
+   "known": 0.4,
+   "kind": "classic indie"
+  },
+  {
+   "label": "Pitch Black",
+   "qid": "Q429934",
+   "fame": 0.549,
+   "studio": "Focus Features",
+   "description": "2000 film directed by David Twohy",
+   "hook": "strands spaceship crash survivors on a planet with three suns where deadly creatures emerge in an eclipse",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Stoker",
+   "qid": "Q487271",
+   "fame": 0.548,
+   "studio": "Searchlight Pictures",
+   "description": "2013 film by Park Chan-wook",
+   "hook": "follows a girl whose mysterious uncle arrives after her father's death",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Equilibrium",
+   "qid": "Q507461",
+   "fame": 0.546,
+   "studio": "Miramax",
+   "description": "2002 film directed by Kurt Wimmer",
+   "hook": "imagines a future where feelings are illegal and a martial-arts enforcer begins to question the system",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Moonrise Kingdom",
+   "qid": "Q217112",
+   "fame": 0.546,
+   "studio": "Focus Features",
+   "description": "2012 film directed by Wes Anderson",
+   "hook": "follows two young runaways in love on a New England island as a storm approaches",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "One Day",
+   "qid": "Q232161",
+   "fame": 0.546,
+   "studio": "Focus Features",
+   "description": "2011 film directed by Lone Scherfig",
+   "hook": "follows a pair of friends checking in on the same calendar date each year across two decades",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Belfast",
+   "qid": "Q100736066",
+   "fame": 0.544,
+   "studio": "Focus Features",
+   "description": "2021 film directed by Kenneth Branagh",
+   "hook": "follows a young boy whose close-knit neighborhood is torn apart as unrest erupts at the start of the Troubles",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Theory of Everything",
+   "qid": "Q15079318",
+   "fame": 0.542,
+   "studio": "Focus Features",
+   "description": "2014 film directed by James Marsh",
+   "hook": "tells the story of a famed physicist and his wife as he battles motor neurone disease",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Traffic",
+   "qid": "Q142292",
+   "fame": 0.542,
+   "studio": "Focus Features",
+   "description": "2000 film directed by Steven Soderbergh",
+   "hook": "weaves together separate stories about the drug trade along the US-Mexico border",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "I, Tonya",
+   "qid": "Q28369564",
+   "fame": 0.54,
+   "studio": "Miramax",
+   "description": "2017 film directed by Craig Gillespie",
+   "hook": "dramatizes a figure skater whose rival was attacked with a baton before the Winter Olympics",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Cider House Rules",
+   "qid": "Q648977",
+   "fame": 0.54,
+   "studio": "Miramax",
+   "description": "1999 film directed by Lasse Hallström",
+   "hook": "follows a young man raised in a Maine orphanage who leaves to work on an apple farm",
+   "known": 0.6,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Victoria and Abdul",
+   "qid": "Q27701609",
+   "fame": 0.54,
+   "studio": "Focus Features",
+   "description": "2017 film directed by Stephen Frears",
+   "hook": "tells of an aging British monarch's unlikely friendship with a young Indian clerk",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Heavenly Creatures",
+   "qid": "Q322206",
+   "fame": 0.539,
+   "studio": "Miramax",
+   "description": "1994 film directed by Peter Jackson",
+   "hook": "marked the film debut of Kate Winslet as a teen in an intense, fantasy-fueled friendship",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Happy Death Day",
+   "qid": "Q29514884",
+   "fame": 0.537,
+   "studio": "Blumhouse Productions",
+   "description": "2017 film directed by Christopher B. Landon",
+   "hook": "traps a college student in a time loop, repeatedly waking on her birthday to a masked killer",
+   "known": 0.4,
+   "kind": "genre specialist"
+  },
+  {
+   "label": "One Hour Photo",
+   "qid": "Q990976",
+   "fame": 0.537,
+   "studio": "Searchlight Pictures",
+   "description": "2002 film by Mark Romanek",
+   "hook": "stars Robin Williams as an unsettling drugstore lab clerk obsessed with a family",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Still Alice",
+   "qid": "Q16354843",
+   "fame": 0.536,
+   "studio": "Sony Pictures Classics",
+   "description": "2014 film directed by Richard Glatzer and Wash Westmoreland",
+   "hook": "won Julianne Moore an Oscar for playing a linguistics professor facing early-onset Alzheimer's",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "My Big Fat Greek Wedding",
+   "qid": "Q525415",
+   "fame": 0.532,
+   "studio": "IFC Films",
+   "description": "2002 film by Joel Zwick",
+   "hook": "became a huge sleeper hit about a woman whose loud, close-knit family meets her fiance",
+   "known": 0.8,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Sideways",
+   "qid": "Q675937",
+   "fame": 0.531,
+   "studio": "Searchlight Pictures",
+   "description": "2004 film directed by Alexander Payne",
+   "hook": "follows two friends on a wine-country road trip before one of them gets married",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Anna Karenina",
+   "qid": "Q80204",
+   "fame": 0.53,
+   "studio": "Focus Features",
+   "description": "2012 film by Joe Wright",
+   "hook": "retells a Russian aristocrat's doomed affair, with much of it staged inside a theater",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Before Midnight",
+   "qid": "Q2909183",
+   "fame": 0.53,
+   "studio": "Sony Pictures Classics",
+   "description": "2013 film directed by Richard Linklater",
+   "hook": "revisits a couple who met on a train, now parents on holiday in Greece",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Cinema Paradiso",
+   "qid": "Q464032",
+   "fame": 0.528,
+   "studio": "Miramax",
+   "description": "1988 film by Giuseppe Tornatore",
+   "hook": "follows a filmmaker recalling his boyhood friendship with a village projectionist",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Clerks",
+   "qid": "Q747877",
+   "fame": 0.528,
+   "studio": "Miramax",
+   "description": "1994 film directed by Kevin Smith",
+   "hook": "follows a single day in the life of a slacker at a New Jersey convenience store",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Darjeeling Limited",
+   "qid": "Q658944",
+   "fame": 0.526,
+   "studio": "Searchlight Pictures",
+   "description": "2007 film by Wes Anderson",
+   "hook": "follows three estranged brothers reuniting on a colorful train journey across India",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Beguiled",
+   "qid": "Q27684970",
+   "fame": 0.524,
+   "studio": "Focus Features",
+   "description": "2017 film directed by Sofia Coppola",
+   "hook": "is set at a Civil War girls' school that shelters a wounded enemy soldier",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Serendipity",
+   "qid": "Q971468",
+   "fame": 0.521,
+   "studio": "Miramax",
+   "description": "2001 film by Peter Chelsom",
+   "hook": "follows two strangers who reach for the same pair of gloves in New York and leave romance to fate",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Rounders",
+   "qid": "Q832728",
+   "fame": 0.52,
+   "studio": "Miramax",
+   "description": "1998 film directed by John Dahl",
+   "hook": "follows a law student who plays high-stakes underground poker",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Sliding Doors",
+   "qid": "Q470624",
+   "fame": 0.517,
+   "studio": "Miramax",
+   "description": "1998 film directed by Peter Howitt",
+   "hook": "splits a woman's life into two timelines depending on whether she catches a train",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Chocolat",
+   "qid": "Q220423",
+   "fame": 0.516,
+   "studio": "Miramax",
+   "description": "2000 film directed by Lasse Hallström",
+   "hook": "sees a mysterious woman open a sweets shop in a strict French village during Lent",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Biutiful",
+   "qid": "Q879174",
+   "fame": 0.514,
+   "studio": "Focus Features",
+   "description": "2010 film by Alejandro González Iñárritu",
+   "hook": "stars Javier Bardem as a dying father getting by in Barcelona's underworld",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Three Amigos",
+   "qid": "Q249288",
+   "fame": 0.511,
+   "studio": "Orion Pictures",
+   "description": "1986 film by John Landis",
+   "hook": "has a trio of silent-film actors mistaken for real heroes and asked to save a Mexican village",
+   "known": 0.4,
+   "kind": "classic indie"
+  },
+  {
+   "label": "The Player",
+   "qid": "Q1551573",
+   "fame": 0.51,
+   "studio": "Fine Line Features",
+   "description": "1992 film directed by Robert Altman",
+   "hook": "satirizes Hollywood through a studio executive who starts receiving threatening postcards",
+   "known": 0.6,
+   "kind": "classic indie"
+  },
+  {
+   "label": "Foxcatcher",
+   "qid": "Q5477105",
+   "fame": 0.509,
+   "studio": "Sony Pictures Classics",
+   "description": "2014 film directed by Bennett Miller",
+   "hook": "dramatizes a wealthy heir's disturbing bond with Olympic wrestlers",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Finding Neverland",
+   "qid": "Q208204",
+   "fame": 0.507,
+   "studio": "Miramax",
+   "description": "2004 historical fantasy drama film by Marc Forster",
+   "hook": "imagines how a playwright befriended a widow's sons and came to write Peter Pan",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Chasing Amy",
+   "qid": "Q40115",
+   "fame": 0.504,
+   "studio": "Miramax",
+   "description": "1997 film directed by Kevin Smith",
+   "hook": "is a romantic comedy about a comic-book artist whose new love complicates his best friendship",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Full Monty",
+   "qid": "Q775970",
+   "fame": 0.504,
+   "studio": "Searchlight Pictures",
+   "description": "1997 film directed by Peter Cattaneo",
+   "hook": "follows unemployed British steelworkers who decide to put on a strip show",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Wild",
+   "qid": "Q17065888",
+   "fame": 0.503,
+   "studio": "Searchlight Pictures",
+   "description": "2014 film by Jean-Marc Vallée",
+   "hook": "stars Reese Witherspoon as a woman who hikes the Pacific Crest Trail alone to heal",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Farewell My Concubine",
+   "qid": "Q696413",
+   "fame": 0.502,
+   "studio": "Miramax",
+   "description": "1993 film directed by Chen Kaige",
+   "hook": "follows two Peking opera performers through decades of turbulent history",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "A Dangerous Method",
+   "qid": "Q188159",
+   "fame": 0.5,
+   "studio": "Sony Pictures Classics",
+   "description": "2011 film by David Cronenberg",
+   "hook": "dramatizes the rivalry between Freud and Jung over a troubled patient",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Minari",
+   "qid": "Q65679599",
+   "fame": 0.5,
+   "studio": "A24",
+   "description": "2020 film directed by Lee Isaac Chung",
+   "hook": "follows a Korean immigrant family trying to start a vegetable farm in rural Arkansas",
+   "known": 0.6,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Confessions of a Dangerous Mind",
+   "qid": "Q770965",
+   "fame": 0.498,
+   "studio": "Miramax",
+   "description": "2002 film directed by George Clooney",
+   "hook": "adapts the claimed double life of a TV game-show host who said he was a CIA assassin",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Bling Ring",
+   "qid": "Q3077738",
+   "fame": 0.498,
+   "studio": "A24",
+   "description": "2013 film directed by Sofia Coppola",
+   "hook": "dramatizes a group of teens who burgled the homes of Hollywood celebrities",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Dirty Rotten Scoundrels",
+   "qid": "Q185248",
+   "fame": 0.497,
+   "studio": "Orion Pictures",
+   "description": "1988 film directed by Frank Oz",
+   "hook": "pits two con men against each other on the French Riviera over a wealthy heiress",
+   "known": 0.4,
+   "kind": "classic indie"
+  },
+  {
+   "label": "Doubt",
+   "qid": "Q640450",
+   "fame": 0.496,
+   "studio": "Miramax",
+   "description": "2008 film by John Patrick Shanley",
+   "hook": "pits a stern Catholic school principal against a charismatic priest she suspects",
+   "known": 0.6,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Blue Jasmine",
+   "qid": "Q2907178",
+   "fame": 0.491,
+   "studio": "Sony Pictures Classics",
+   "description": "2013 film by Woody Allen",
+   "hook": "won Cate Blanchett an Oscar as a fallen socialite who moves in with her sister",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Frida",
+   "qid": "Q35738",
+   "fame": 0.491,
+   "studio": "Miramax",
+   "description": "2002 film directed by Julie Taymor",
+   "hook": "stars Salma Hayek as a Mexican painter with a stormy marriage to a famous muralist",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Constant Gardener",
+   "qid": "Q645168",
+   "fame": 0.491,
+   "studio": "Focus Features",
+   "description": "2005 film by Fernando Meirelles",
+   "hook": "follows a diplomat investigating his activist wife's death in Kenya",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Kids Are All Right",
+   "qid": "Q380841",
+   "fame": 0.491,
+   "studio": "Focus Features",
+   "description": "2010 film by Lisa Cholodenko",
+   "hook": "follows a couple of moms whose teenage children seek out their sperm donor",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Kill Your Darlings",
+   "qid": "Q565623",
+   "fame": 0.49,
+   "studio": "Sony Pictures Classics",
+   "description": "2013 film directed by John Krokidas",
+   "hook": "stars Daniel Radcliffe as a young poet among the future writers of the Beat Generation",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Battle of the Sexes",
+   "qid": "Q24067722",
+   "fame": 0.489,
+   "studio": "Searchlight Pictures",
+   "description": "2017 film directed by Valerie Faris and Jonathan Dayton",
+   "hook": "dramatizes a televised tennis showdown between a female champion and a boastful former male star",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Thank You for Smoking",
+   "qid": "Q840872",
+   "fame": 0.485,
+   "studio": "Searchlight Pictures",
+   "description": "2005 film by Jason Reitman",
+   "hook": "satirizes a slick lobbyist who spins for the cigarette industry",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Dead Man",
+   "qid": "Q547189",
+   "fame": 0.483,
+   "studio": "Miramax",
+   "description": "1995 film by Jim Jarmusch",
+   "hook": "is a black-and-white western starring Johnny Depp as a wounded accountant",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Transamerica",
+   "qid": "Q742614",
+   "fame": 0.483,
+   "studio": "IFC Films",
+   "description": "2005 film directed by Duncan Tucker",
+   "hook": "earned Felicity Huffman an Oscar nomination as a woman on a cross-country road trip with her estranged son",
+   "known": 0.4,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "Jay and Silent Bob Strike Back",
+   "qid": "Q832190",
+   "fame": 0.48,
+   "studio": "Miramax",
+   "description": "2001 film directed by Kevin Smith",
+   "hook": "sends two slacker sidekicks to Hollywood to stop a movie based on their comic",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Short Cuts",
+   "qid": "Q605226",
+   "fame": 0.479,
+   "studio": "Fine Line Features",
+   "description": "1993 film by Robert Altman",
+   "hook": "weaves together many interlocking tales of Los Angeles residents drawn from stories by a famed author",
+   "known": 0.4,
+   "kind": "classic indie"
+  },
+  {
+   "label": "Queen of the Desert",
+   "qid": "Q15407746",
+   "fame": 0.475,
+   "studio": "IFC Films",
+   "description": "2015 film directed by Werner Herzog",
+   "hook": "stars Nicole Kidman as a British traveler and diplomat exploring the Middle East",
+   "known": 0.2,
+   "kind": "arthouse indie"
+  },
+  {
+   "label": "The Best Exotic Marigold Hotel",
+   "qid": "Q830295",
+   "fame": 0.471,
+   "studio": "Searchlight Pictures",
+   "description": "2011 film directed by John Madden",
+   "hook": "sends a group of British retirees to a faded lodging in Jaipur",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Marvin's Room",
+   "qid": "Q559907",
+   "fame": 0.47,
+   "studio": "Miramax",
+   "description": "1996 film by Jerry Zaks",
+   "hook": "stars Meryl Streep and Diane Keaton as estranged sisters reuniting over a family illness",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The Motorcycle Diaries",
+   "qid": "Q309246",
+   "fame": 0.469,
+   "studio": "Focus Features",
+   "description": "2004 film by Walter Salles",
+   "hook": "follows the young future revolutionary Che Guevara on a road trip across South America",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Kate & Leopold",
+   "qid": "Q1334550",
+   "fame": 0.468,
+   "studio": "Miramax",
+   "description": "2001 film directed by James Mangold",
+   "hook": "brings a Victorian-era duke through a time portal to modern Manhattan",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Four Rooms",
+   "qid": "Q1137372",
+   "fame": 0.467,
+   "studio": "Miramax",
+   "description": "1995 film by Quentin Tarantino, Robert Rodriguez, Alexandre Rockwell, Allison Anders",
+   "hook": "strings together a quartet of comedy segments set in one hotel on New Year's Eve",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Jersey Girl",
+   "qid": "Q127897",
+   "fame": 0.466,
+   "studio": "Miramax",
+   "description": "2004 film by Kevin Smith",
+   "hook": "follows a widowed music publicist who reluctantly raises his young daughter after losing his job",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Bullets Over Broadway",
+   "qid": "Q1004531",
+   "fame": 0.463,
+   "studio": "Miramax",
+   "description": "1994 film by Woody Allen",
+   "hook": "follows a 1920s playwright whose mob-backed show gets quietly rewritten by a gangster's bodyguard",
+   "known": 0.6,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "The House of the Spirits",
+   "qid": "Q312394",
+   "fame": 0.462,
+   "studio": "Miramax",
+   "description": "1993 film directed by Bille August",
+   "hook": "adapts a Latin American family saga blending magic and political upheaval",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Shine",
+   "qid": "Q826494",
+   "fame": 0.461,
+   "studio": "Fine Line Features",
+   "description": "1996 film directed by Scott Hicks",
+   "hook": "tells of a troubled piano prodigy, an Oscar-winning role for Geoffrey Rush",
+   "known": 0.4,
+   "kind": "classic indie"
+  },
+  {
+   "label": "Hannah and Her Sisters",
+   "qid": "Q845057",
+   "fame": 0.459,
+   "studio": "Orion Pictures",
+   "description": "1986 film by Woody Allen",
+   "hook": "follows the tangled romances of a New York family across two Thanksgivings",
+   "known": 0.6,
+   "kind": "classic indie"
+  },
+  {
+   "label": "Can You Ever Forgive Me?",
+   "qid": "Q28860129",
+   "fame": 0.458,
+   "studio": "Searchlight Pictures",
+   "description": "2018 film directed by Marielle Heller",
+   "hook": "stars Melissa McCarthy as a biographer who forges letters from famous writers",
+   "known": 0.4,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Mighty Aphrodite",
+   "qid": "Q1354109",
+   "fame": 0.453,
+   "studio": "Miramax",
+   "description": "1995 film by Woody Allen",
+   "hook": "follows a sportswriter who searches for the birth mother of his adopted son, with a Greek chorus",
+   "known": 0.6,
+   "kind": "prestige indie"
+  },
+  {
+   "label": "Throw Momma from the Train",
+   "qid": "Q1422110",
+   "fame": 0.453,
+   "studio": "Orion Pictures",
+   "description": "1987 film directed by Danny DeVito",
+   "hook": "follows a blocked writer and a lonely student who plot to swap murders of unwanted relatives",
+   "known": 0.4,
+   "kind": "classic indie"
+  },
+  {
+   "label": "Hitchcock",
+   "qid": "Q247733",
+   "fame": 0.451,
+   "studio": "Searchlight Pictures",
+   "description": "2012 film directed by Sacha Gervasi",
+   "hook": "dramatizes the making of the shower-scene horror classic Psycho and the strain on a director's marriage",
+   "known": 0.6,
+   "kind": "prestige indie"
+  }
+ ]
+}

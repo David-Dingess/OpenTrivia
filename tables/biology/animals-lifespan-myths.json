@@ -1,0 +1,148 @@
+{
+ "id": "table.biology.animals-lifespan-myths",
+ "kind": "table",
+ "title": "Animals and Lifespan Myths",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "wildlife",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?life WHERE { { SELECT ?item ?sitelinks (MAX(?l) AS ?life) WHERE { ?item wdt:P31 wd:Q16521 ; p:P2250/psn:P2250/wikibase:quantityAmount ?l ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 60) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 200 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-24T15:46:27.271Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-24T15:46:27.271Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "lifespan_years",
+   "label": "Life expectancy",
+   "unit": "years",
+   "type": "number"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "item",
+  "many": "items",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Komodo dragon",
+   "qid": "Q4504",
+   "fame": 0.65,
+   "lifespan_years": 30,
+   "description": "species of reptile"
+  },
+  {
+   "label": "Ursus maritimus",
+   "qid": "Q33609",
+   "fame": 0.644,
+   "lifespan_years": 50,
+   "description": "species of bear native largely within the Arctic Circle"
+  },
+  {
+   "label": "raccoon",
+   "qid": "Q121439",
+   "fame": 0.642,
+   "lifespan_years": 20,
+   "description": "species of mammal native to North America"
+  },
+  {
+   "label": "silverfish",
+   "qid": "Q26842",
+   "fame": 0.624,
+   "lifespan_years": 2,
+   "description": "species of insect"
+  },
+  {
+   "label": "great white shark",
+   "qid": "Q129026",
+   "fame": 0.617,
+   "lifespan_years": 73,
+   "description": "species of large lamniform shark"
+  },
+  {
+   "label": "Kakapo",
+   "qid": "Q179959",
+   "fame": 0.607,
+   "lifespan_years": 59,
+   "description": "species of non-flying New Zealand parrot"
+  },
+  {
+   "label": "quokka",
+   "qid": "Q726151",
+   "fame": 0.601,
+   "lifespan_years": 10,
+   "description": "species of mammal"
+  },
+  {
+   "label": "guinea pig",
+   "qid": "Q79803",
+   "fame": 0.598,
+   "lifespan_years": 5,
+   "description": "domesticated rodent from South America"
+  },
+  {
+   "label": "goat",
+   "qid": "Q2934",
+   "fame": 0.59,
+   "lifespan_years": 15,
+   "description": "domesticated mammal raised for its meat and milk"
+  },
+  {
+   "label": "humpback whale",
+   "qid": "Q132905",
+   "fame": 0.568,
+   "lifespan_years": 48,
+   "description": "species of mammal"
+  },
+  {
+   "label": "Northern Raven",
+   "qid": "Q25357",
+   "fame": 0.546,
+   "lifespan_years": 17,
+   "description": "species of bird"
+  },
+  {
+   "label": "pike",
+   "qid": "Q165278",
+   "fame": 0.515,
+   "lifespan_years": 7,
+   "description": "species of fish"
+  },
+  {
+   "label": "Grey Parrot",
+   "qid": "Q220328",
+   "fame": 0.48,
+   "lifespan_years": 45,
+   "description": "species of parrot"
+  },
+  {
+   "label": "Eurasian Sparrowhawk",
+   "qid": "Q25380",
+   "fame": 0.459,
+   "lifespan_years": 4,
+   "description": "species of bird"
+  },
+  {
+   "label": "Gadus morhua",
+   "qid": "Q199788",
+   "fame": 0.451,
+   "lifespan_years": 25,
+   "description": "benthopelagic fish of the family Gadidae"
+  }
+ ]
+}

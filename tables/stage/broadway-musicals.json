@@ -1,0 +1,421 @@
+{
+ "id": "table.stage.broadway-musicals",
+ "kind": "table",
+ "title": "Broadway musicals and their composer",
+ "genre": "arts-entertainment",
+ "category": "stage",
+ "topic": "theater",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?composerLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?composer) (COUNT(DISTINCT ?c) AS ?nC) WHERE { ?item wdt:P31 wd:Q58483083 ; wdt:P86 ?c ; wikibase:sitelinks ?sl . FILTER(?sl > 12) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) ?item wikibase:sitelinks ?sitelinks . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T05:35:08.089Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T05:35:08.089Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "composer",
+   "label": "Composer",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "musical",
+  "many": "musicals",
+  "hookAsk": "Which musical {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "composer": {
+    "role": "link",
+    "pick": "Who composed the music for {label}?",
+    "statement": "The music for {label} was composed by {value}.",
+    "match": "Match each musical to its composer.",
+    "odd": "Three of these musicals have music by {value}. Which one doesn't?",
+    "all": "Tap all {n} musicals with music by {value}.",
+    "reverse": "Which of these musicals has music by {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Hamilton",
+   "qid": "Q19320959",
+   "fame": 0.675,
+   "composer": "Lin-Manuel Miranda",
+   "description": "2015 musical by Lin-Manuel Miranda about Alexander Hamilton",
+   "hook": "tells a founding father's life story through hip-hop, rap and R&B songs",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "The Phantom of the Opera",
+   "qid": "Q382353",
+   "fame": 0.659,
+   "composer": "Andrew Lloyd Webber",
+   "description": "musical with music by Andrew Lloyd Webber",
+   "hook": "centres on a masked, disfigured composer lurking beneath a Paris playhouse and obsessed with a young soprano",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "Les Misérables",
+   "qid": "Q830581",
+   "fame": 0.622,
+   "composer": "Claude-Michel Schönberg",
+   "description": "1980 musical composed by Claude-Michel Schönberg, libretto by Alain Boublil, lyrics by Alain Boublil and Jean-Marc Natel",
+   "hook": "follows an ex-convict and a relentless police inspector through the turmoil of 19th-century France",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "Spring Awakening",
+   "qid": "Q579927",
+   "fame": 0.619,
+   "composer": "Duncan Sheik",
+   "description": "rock musical with music by Duncan Sheik and a book and lyrics by Steven Sater",
+   "hook": null,
+   "known": 0.6,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Cabaret",
+   "qid": "Q1024739",
+   "fame": 0.613,
+   "composer": "John Kander",
+   "description": "theatrical musical by John Kander debuted in 1966",
+   "hook": "is set in a seedy Berlin nightclub where a painted-faced emcee welcomes everyone in",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Rent",
+   "qid": "Q553890",
+   "fame": 0.607,
+   "composer": "Jonathan Larson",
+   "description": "rock musical, loosely based on La Bohème, set in New York during the AIDS Crisis",
+   "hook": "follows struggling young artists and musicians trying to get by in New York's East Village",
+   "known": 0.7,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Chicago",
+   "qid": "Q656285",
+   "fame": 0.598,
+   "composer": "John Kander",
+   "description": "1975 musical by John Kander and Fred Ebb",
+   "hook": "tells of murderous showgirls and their slick lawyer chasing fame in the Prohibition-era jazz age",
+   "known": 0.7,
+   "kind": "classic"
+  },
+  {
+   "label": "Jesus Christ Superstar",
+   "qid": "Q242667",
+   "fame": 0.593,
+   "composer": "Andrew Lloyd Webber",
+   "description": "1971 rock opera by Andrew Lloyd Webber",
+   "hook": null,
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "West Side Story",
+   "qid": "Q669010",
+   "fame": 0.593,
+   "composer": "Leonard Bernstein",
+   "description": "American musical with a book by Arthur Laurents, music by Leonard Bernstein and lyrics by Stephen Sondheim",
+   "hook": "retells Romeo and Juliet with rival street gangs on the streets of New York",
+   "known": 0.9,
+   "kind": "golden-age"
+  },
+  {
+   "label": "Cats",
+   "qid": "Q337097",
+   "fame": 0.578,
+   "composer": "Andrew Lloyd Webber",
+   "description": "1981 musical by Andrew Lloyd Webber",
+   "hook": "has a cast in whiskered costumes singing the ballad \"Memory\" at a junkyard gathering",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "Fiddler on the Roof",
+   "qid": "Q487330",
+   "fame": 0.578,
+   "composer": "Jerry Bock",
+   "description": "1964 musical",
+   "hook": "follows a Jewish dairyman in a Russian village trying to marry off his five daughters",
+   "known": 0.8,
+   "kind": "golden-age"
+  },
+  {
+   "label": "Wicked",
+   "qid": "Q616439",
+   "fame": 0.576,
+   "composer": "Stephen Schwartz",
+   "description": "2003 musical based on the 1995 Gregory Maguire's novel",
+   "hook": "tells the untold story of two young witches who meet at school long before a girl from Kansas arrives in Oz",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Sweeney Todd: The Demon Barber of Fleet Street",
+   "qid": "Q1326940",
+   "fame": 0.564,
+   "composer": "Stephen Sondheim",
+   "description": "1979 musical by Stephen Sondheim and Hugh Wheeler",
+   "hook": "follows a vengeful razor-wielding hairdresser and his pie-making partner in Victorian London",
+   "known": 0.7,
+   "kind": "classic"
+  },
+  {
+   "label": "Annie",
+   "qid": "Q566892",
+   "fame": 0.549,
+   "composer": "Charles Strouse",
+   "description": "Broadway musical",
+   "hook": "follows a red-haired orphan who is taken in by a billionaire and sings about tomorrow",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "The Sound of Music",
+   "qid": "Q1022513",
+   "fame": 0.549,
+   "composer": "Richard Rodgers",
+   "description": "1959 musical",
+   "hook": "follows a young governess who wins over a naval captain's seven children in the Alps",
+   "known": 0.95,
+   "kind": "golden-age"
+  },
+  {
+   "label": "Little Shop of Horrors",
+   "qid": "Q1199246",
+   "fame": 0.547,
+   "composer": "Alan Menken",
+   "description": "1982 horror comedy rock musical, by composer Alan Menken and writer Howard Ashman",
+   "hook": "features a man-eating plant with a booming voice that demands blood",
+   "known": 0.7,
+   "kind": "classic"
+  },
+  {
+   "label": "Into the Woods",
+   "qid": "Q1118244",
+   "fame": 0.543,
+   "composer": "Stephen Sondheim",
+   "description": "1987 musical with music and lyrics by Stephen Sondheim and book by James Lapine",
+   "hook": "mixes fairy-tale characters like Cinderella and Jack with a baker and his wife on a quest",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Evita",
+   "qid": "Q830549",
+   "fame": 0.538,
+   "composer": "Andrew Lloyd Webber",
+   "description": "1978 musical by Andrew Lloyd Webber and Tim Rice",
+   "hook": null,
+   "known": 0.7,
+   "kind": "classic"
+  },
+  {
+   "label": "Hair",
+   "qid": "Q1165499",
+   "fame": 0.536,
+   "composer": "Galt MacDermot",
+   "description": "1967 rock musical; book and lyrics by Gerome Ragni and James Rado, music by Galt MacDermot",
+   "hook": null,
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Joseph and the Amazing Technicolor Dreamcoat",
+   "qid": "Q1146264",
+   "fame": 0.531,
+   "composer": "Andrew Lloyd Webber",
+   "description": "musical by Tim Rice and Andrew Lloyd Webber",
+   "hook": "retells the tale of a favored son with a many-colored coat who is sold by his jealous brothers",
+   "known": 0.7,
+   "kind": "classic"
+  },
+  {
+   "label": "Miss Saigon",
+   "qid": "Q653753",
+   "fame": 0.529,
+   "composer": "Claude-Michel Schönberg",
+   "description": "1989 stage musical",
+   "hook": null,
+   "known": 0.7,
+   "kind": "classic"
+  },
+  {
+   "label": "Guys and Dolls",
+   "qid": "Q796988",
+   "fame": 0.527,
+   "composer": "Frank Loesser",
+   "description": "1950 American musical with music and lyrics by Frank Loesser and book by Jo Swerling and Abe Burrows",
+   "hook": "follows Broadway gamblers, a nightclub singer and a mission-hall sergeant in a love-and-betting tale",
+   "known": 0.7,
+   "kind": "golden-age"
+  },
+  {
+   "label": "Oklahoma!",
+   "qid": "Q1364648",
+   "fame": 0.513,
+   "composer": "Richard Rodgers",
+   "description": "1943 musical; first musical written by the team of Rodgers and Hammerstein",
+   "hook": "set among farmers and cowboys in a frontier territory, opening with a song about a beautiful morning",
+   "known": 0.6,
+   "kind": "golden-age"
+  },
+  {
+   "label": "A Chorus Line",
+   "qid": "Q189427",
+   "fame": 0.511,
+   "composer": "Marvin Hamlisch",
+   "description": "musical by Marvin Hamlisch",
+   "hook": "shows dancers sweating through an audition for a place in a Broadway ensemble",
+   "known": 0.7,
+   "kind": "classic"
+  },
+  {
+   "label": "My Fair Lady",
+   "qid": "Q591943",
+   "fame": 0.502,
+   "composer": "Frederick Loewe",
+   "description": "1956 musical based on Shaw's \"Pygmalion\"",
+   "hook": "has a flower girl taught to speak proper English by a stuffy phonetics professor",
+   "known": 0.95,
+   "kind": "golden-age"
+  },
+  {
+   "label": "Oliver!",
+   "qid": "Q1483458",
+   "fame": 0.496,
+   "composer": "Lionel Bart",
+   "description": "British musical, with music and lyrics by Lionel Bart",
+   "hook": "follows a workhouse orphan who famously dares to ask for more gruel",
+   "known": 0.7,
+   "kind": "golden-age"
+  },
+  {
+   "label": "South Pacific",
+   "qid": "Q1535240",
+   "fame": 0.491,
+   "composer": "Richard Rodgers",
+   "description": "1949 musical by Richard Rodgers, Oscar Hammerstein II, and Joshua Logan",
+   "hook": "tells of a Navy nurse and a French planter falling in love on a tropical island during World War II",
+   "known": 0.6,
+   "kind": "golden-age"
+  },
+  {
+   "label": "Billy Elliot the Musical",
+   "qid": "Q2771",
+   "fame": 0.488,
+   "composer": "Elton John",
+   "description": "musical based on the 2000 film Billy Elliot",
+   "hook": "follows a coal miner's son who trades boxing gloves for ballet shoes",
+   "known": 0.6,
+   "kind": "contemporary"
+  },
+  {
+   "label": "The Lion King",
+   "qid": "Q1195106",
+   "fame": 0.488,
+   "composer": "Elton John",
+   "description": "1997 stage musical with music by Elton John, lyrics by Tim Rice, and book by Roger Allers and Irene Mecchi based on the 1994 Disney animated film of the same name",
+   "hook": "features actors in giant animal puppets and masks telling of a cub exiled after his father's death",
+   "known": 0.95,
+   "kind": "contemporary"
+  },
+  {
+   "label": "The Producers",
+   "qid": "Q1751433",
+   "fame": 0.486,
+   "composer": "Mel Brooks",
+   "description": "2001 musical written by Mel Brooks",
+   "hook": "follows two schemers who plan to get rich by staging a guaranteed flop",
+   "known": 0.6,
+   "kind": "contemporary"
+  },
+  {
+   "label": "The King and I",
+   "qid": "Q6431690",
+   "fame": 0.485,
+   "composer": "Richard Rodgers",
+   "description": "1951 musical by the team of composer Richard Rodgers and dramatist Oscar Hammerstein II",
+   "hook": "tells of a British schoolteacher hired to teach the many children of a Siamese monarch",
+   "known": 0.8,
+   "kind": "golden-age"
+  },
+  {
+   "label": "Hairspray",
+   "qid": "Q153520",
+   "fame": 0.479,
+   "composer": "Marc Shaiman",
+   "description": "American musical",
+   "hook": "follows a plus-size teen dancing her way onto a Baltimore TV dance show",
+   "known": 0.6,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Hello, Dolly!",
+   "qid": "Q1371693",
+   "fame": 0.463,
+   "composer": "Jerry Herman",
+   "description": "musical",
+   "hook": "follows a matchmaker with a grand staircase entrance who sets her sights on a wealthy merchant",
+   "known": 0.6,
+   "kind": "golden-age"
+  },
+  {
+   "label": "Legally Blonde",
+   "qid": "Q2200020",
+   "fame": 0.46,
+   "composer": "Laurence O'Keefe",
+   "description": "musical",
+   "hook": "follows a pink-loving sorority girl who gets into Harvard Law School to win back her ex",
+   "known": 0.6,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Starlight Express",
+   "qid": "Q287281",
+   "fame": 0.458,
+   "composer": "Andrew Lloyd Webber",
+   "description": "1984 British musical, with music by Andrew Lloyd Webber and lyrics by Richard Stilgoe",
+   "hook": "has performers on roller skates playing racing trains",
+   "known": 0.4,
+   "kind": "classic"
+  },
+  {
+   "label": "Anastasia",
+   "qid": "Q24199422",
+   "fame": 0.454,
+   "composer": "Stephen Flaherty",
+   "description": "2016 musical",
+   "hook": "follows a young woman with amnesia who may be the lost daughter of Russia's last tsar",
+   "known": 0.6,
+   "kind": "contemporary"
+  }
+ ]
+}

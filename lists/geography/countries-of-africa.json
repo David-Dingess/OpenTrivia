@@ -1,0 +1,623 @@
+{
+ "id": "list.geography.countries-of-africa",
+ "title": "Countries of Africa",
+ "prompt": "Name a country in Africa",
+ "genre": "society",
+ "category": "geography",
+ "topic": "borders-and-maps",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q3624078 ; wdt:P30 wd:Q15 . FILTER NOT EXISTS { ?item wdt:P576 [] } FILTER NOT EXISTS { ?item wdt:P31 wd:Q3024240 } } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-09-30T04:13:13.011Z"
+ },
+ "rows": [
+  {
+   "label": "South Africa",
+   "qid": "Q258",
+   "fame": 0.741,
+   "also": [
+    "R.S.A.",
+    "Republic of South Africa",
+    "zaf"
+   ]
+  },
+  {
+   "label": "Mauritius",
+   "qid": "Q1027",
+   "fame": 0.73,
+   "also": [
+    "Maurice",
+    "MRI",
+    "Moris",
+    "Republic of Mauritius"
+   ]
+  },
+  {
+   "label": "Ethiopia",
+   "qid": "Q115",
+   "fame": 0.72,
+   "also": [
+    "Federal Democratic Republic of Ethiopia",
+    "ETH"
+   ]
+  },
+  {
+   "label": "Egypt",
+   "qid": "Q79",
+   "fame": 0.715,
+   "also": [
+    "Misr",
+    "Republic of Egypt",
+    "Arab Rep. Egypt",
+    "Arab Republic of Egypt",
+    "Rep. Egypt",
+    "EGY"
+   ]
+  },
+  {
+   "label": "Nigeria",
+   "qid": "Q1033",
+   "fame": 0.711,
+   "also": [
+    "NGA",
+    "Federal Republic of Nigeria",
+    "Naija",
+    "FRN",
+    "NGR",
+    "RFN"
+   ]
+  },
+  {
+   "label": "Morocco",
+   "qid": "Q1028",
+   "fame": 0.71,
+   "also": [
+    "al-Maġrib",
+    "Kingdom of Morocco",
+    "Lmaġrib",
+    "Maroc",
+    "Marocco",
+    "MAR"
+   ]
+  },
+  {
+   "label": "Democratic Republic of the Congo",
+   "qid": "Q974",
+   "fame": 0.709,
+   "also": [
+    "COD",
+    "Congo-Kinshasa",
+    "DR Kongo",
+    "Kongo-Kinshasa",
+    "DRC",
+    "Zaire",
+    "Congo",
+    "Dem. Rep. Congo",
+    "Dem. Republic of Congo",
+    "Dem. Republic of the Congo",
+    "Democratic Republic of Congo",
+    "DR Congo"
+   ]
+  },
+  {
+   "label": "Algeria",
+   "qid": "Q262",
+   "fame": 0.698,
+   "also": [
+    "Djazaïr",
+    "Dzayer",
+    "People's Democratic Republic of Algeria",
+    "ALG",
+    "DZA"
+   ]
+  },
+  {
+   "label": "Eritrea",
+   "qid": "Q986",
+   "fame": 0.697,
+   "also": [
+    "ERI",
+    "Ertrā",
+    "Iritriyā",
+    "State of Eritrea",
+    "IRI"
+   ]
+  },
+  {
+   "label": "Zimbabwe",
+   "qid": "Q954",
+   "fame": 0.691,
+   "also": [
+    "Republic of Zimbabwe",
+    "Rhodesia",
+    "ZWE",
+    "ZIM",
+    "Southern Rhodesia",
+    "Zimbabwe Rhodesia"
+   ]
+  },
+  {
+   "label": "Cape Verde",
+   "qid": "Q1011",
+   "fame": 0.689,
+   "also": [
+    "Cape Verde Islands",
+    "Republic of Cabo Verde",
+    "Republic of Cape Verde",
+    "CPV",
+    "Cabo Verde"
+   ]
+  },
+  {
+   "label": "Madagascar",
+   "qid": "Q1019",
+   "fame": 0.688,
+   "also": [
+    "Malagascar",
+    "Malagaskar",
+    "Republic of Madagascar",
+    "MAD",
+    "MDG"
+   ]
+  },
+  {
+   "label": "Eswatini",
+   "qid": "Q1050",
+   "fame": 0.687,
+   "also": [
+    "Swaziland",
+    "Kingdom of Eswatini",
+    "Kingdom of Swaziland",
+    "Umbuso weSwatini",
+    "SWZ"
+   ]
+  },
+  {
+   "label": "Tanzania",
+   "qid": "Q924",
+   "fame": 0.686,
+   "also": [
+    "United Republic of Tanzania",
+    "tza",
+    "United Republic of Tanganyika and Zanzibar"
+   ]
+  },
+  {
+   "label": "Burkina Faso",
+   "qid": "Q965",
+   "fame": 0.684,
+   "also": [
+    "Republic of Burkina Faso",
+    "BFA"
+   ]
+  },
+  {
+   "label": "Seychelles",
+   "qid": "Q1042",
+   "fame": 0.679,
+   "also": [
+    "Republic of Seychelles",
+    "SEY",
+    "SYC"
+   ]
+  },
+  {
+   "label": "Uganda",
+   "qid": "Q1036",
+   "fame": 0.678,
+   "also": [
+    "Ouganda",
+    "Pearl of Africa",
+    "Republic of Uganda",
+    "The Republic of Uganda",
+    "Ugandah",
+    "UGA"
+   ]
+  },
+  {
+   "label": "Ghana",
+   "qid": "Q117",
+   "fame": 0.676,
+   "also": [
+    "GHA",
+    "Republic of Ghana"
+   ]
+  },
+  {
+   "label": "Equatorial Guinea",
+   "qid": "Q983",
+   "fame": 0.671,
+   "also": [
+    "GEQ",
+    "Republic of Equatorial Guinea",
+    "GNQ"
+   ]
+  },
+  {
+   "label": "Liberia",
+   "qid": "Q1014",
+   "fame": 0.671,
+   "also": [
+    "Liber",
+    "Republic of Liberia",
+    "LBR"
+   ]
+  },
+  {
+   "label": "Somalia",
+   "qid": "Q1045",
+   "fame": 0.669,
+   "also": [
+    "Federal Republic of Somalia"
+   ]
+  },
+  {
+   "label": "Sudan",
+   "qid": "Q1049",
+   "fame": 0.669,
+   "also": [
+    "al-Sudan",
+    "as-Sudan",
+    "North Sudan",
+    "Republic of Sudan",
+    "Republic of the Sudan",
+    "Soudan",
+    "SUD",
+    "the Sudan"
+   ]
+  },
+  {
+   "label": "Libya",
+   "qid": "Q1016",
+   "fame": 0.667,
+   "also": [
+    "LBA",
+    "State of Libya",
+    "LBY"
+   ]
+  },
+  {
+   "label": "Sierra Leone",
+   "qid": "Q1044",
+   "fame": 0.667,
+   "also": [
+    "Republic of Sierra Leone",
+    "SLE"
+   ]
+  },
+  {
+   "label": "Namibia",
+   "qid": "Q1030",
+   "fame": 0.664,
+   "also": [
+    "Republic of Namibia",
+    "NAM"
+   ]
+  },
+  {
+   "label": "Kenya",
+   "qid": "Q114",
+   "fame": 0.663,
+   "also": [
+    "Republic of Kenya",
+    "KEN"
+   ]
+  },
+  {
+   "label": "Djibouti",
+   "qid": "Q977",
+   "fame": 0.662,
+   "also": [
+    "DJI",
+    "Jabuuti",
+    "Gabuuti",
+    "Jībūtī",
+    "Republic of Djibouti"
+   ]
+  },
+  {
+   "label": "Rwanda",
+   "qid": "Q1037",
+   "fame": 0.662,
+   "also": [
+    "RWA",
+    "Republic of Rwanda",
+    "The Land of a Thousand Hills"
+   ]
+  },
+  {
+   "label": "Tunisia",
+   "qid": "Q948",
+   "fame": 0.661,
+   "also": [
+    "Republic of Tunisia",
+    "Tunisian Republic",
+    "TUN"
+   ]
+  },
+  {
+   "label": "Angola",
+   "qid": "Q916",
+   "fame": 0.658,
+   "also": [
+    "Ngola",
+    "ANG",
+    "Republic of Angola",
+    "AGO"
+   ]
+  },
+  {
+   "label": "South Sudan",
+   "qid": "Q958",
+   "fame": 0.657,
+   "also": [
+    "SSD",
+    "Southern Sudan",
+    "Republic of South Sudan"
+   ]
+  },
+  {
+   "label": "Mauritania",
+   "qid": "Q1025",
+   "fame": 0.655,
+   "also": [
+    "Agawej",
+    "Gannaar",
+    "Islamic Republic of Mauritania",
+    "Mauretania",
+    "Moritani",
+    "Muritanya",
+    "Murutaane",
+    "MRT",
+    "MTN"
+   ]
+  },
+  {
+   "label": "Benin",
+   "qid": "Q962",
+   "fame": 0.652,
+   "also": [
+    "BEN",
+    "Dahomey",
+    "Republic of Benin"
+   ]
+  },
+  {
+   "label": "Niger",
+   "qid": "Q1032",
+   "fame": 0.649,
+   "also": [
+    "Republic Niger",
+    "Republic of Niger",
+    "Republic of the Niger",
+    "The Niger"
+   ]
+  },
+  {
+   "label": "Ivory Coast",
+   "qid": "Q1008",
+   "fame": 0.644,
+   "also": [
+    "Cote d'Ivoire",
+    "Cote d'lvoire",
+    "Cote Ivoire",
+    "Republic of Cote d'Ivoire",
+    "Republic of Ivory Coast",
+    "Republic of the Ivory Coast",
+    "The Ivory Coast",
+    "CIV"
+   ]
+  },
+  {
+   "label": "Burundi",
+   "qid": "Q967",
+   "fame": 0.643,
+   "also": [
+    "Gouvernement du Burundi",
+    "Republic of Burundi",
+    "Republika y'Uburundi",
+    "BDI"
+   ]
+  },
+  {
+   "label": "Mozambique",
+   "qid": "Q1029",
+   "fame": 0.643,
+   "also": [
+    "Moçambique",
+    "Republic of Mozambique",
+    "República de Moçambique",
+    "MOZ"
+   ]
+  },
+  {
+   "label": "Mali",
+   "qid": "Q912",
+   "fame": 0.638,
+   "also": [
+    "MLI",
+    "Republic of Mali"
+   ]
+  },
+  {
+   "label": "Botswana",
+   "qid": "Q963",
+   "fame": 0.637,
+   "also": [
+    "Lefatshe la Botswana",
+    "Republic of Botswana",
+    "BOT",
+    "BWA"
+   ]
+  },
+  {
+   "label": "Cameroon",
+   "qid": "Q1009",
+   "fame": 0.637,
+   "also": [
+    "Republic of Cameroon",
+    "CAM",
+    "CMR"
+   ]
+  },
+  {
+   "label": "Lesotho",
+   "qid": "Q1013",
+   "fame": 0.636,
+   "also": [
+    "Kingdom of Lesotho",
+    "LES",
+    "The Mountain Kingdom"
+   ]
+  },
+  {
+   "label": "Senegal",
+   "qid": "Q1041",
+   "fame": 0.634,
+   "also": [
+    "Republic of Senegal",
+    "SEN"
+   ]
+  },
+  {
+   "label": "Central African Republic",
+   "qid": "Q929",
+   "fame": 0.632,
+   "also": [
+    "Central Africa",
+    "CAR",
+    "CAF"
+   ]
+  },
+  {
+   "label": "The Gambia",
+   "qid": "Q1005",
+   "fame": 0.627,
+   "also": [
+    "Gambia",
+    "Islamic Republic of the Gambia",
+    "Republic of the Gambia",
+    "GAM",
+    "GMB"
+   ]
+  },
+  {
+   "label": "Chad",
+   "qid": "Q657",
+   "fame": 0.626,
+   "also": [
+    "GUM",
+    "CHA",
+    "Republic of Chad",
+    "TCD"
+   ]
+  },
+  {
+   "label": "Zambia",
+   "qid": "Q953",
+   "fame": 0.621,
+   "also": [
+    "Zed",
+    "ZAM",
+    "Republic of Zambia",
+    "ZMB"
+   ]
+  },
+  {
+   "label": "Malawi",
+   "qid": "Q1020",
+   "fame": 0.616,
+   "also": [
+    "MAW",
+    "Republic of Malawi",
+    "MWI"
+   ]
+  },
+  {
+   "label": "Gabon",
+   "qid": "Q1000",
+   "fame": 0.613,
+   "also": [
+    "GAB",
+    "Gabonese Republic",
+    "Republique Gabonaise"
+   ]
+  },
+  {
+   "label": "Republic of the Congo",
+   "qid": "Q971",
+   "fame": 0.613,
+   "also": [
+    "Congo",
+    "CGO",
+    "Congo Republic",
+    "Congo-Brazzaville",
+    "Rep. Congo",
+    "Republic of Congo",
+    "Republique du Congo",
+    "COG"
+   ]
+  },
+  {
+   "label": "São Tomé and Príncipe",
+   "qid": "Q1039",
+   "fame": 0.613,
+   "also": [
+    "Democratic Republic of São Tomé and Príncipe",
+    "Sao Tome & Principe",
+    "São Tomé og Príncipe",
+    "STP"
+   ]
+  },
+  {
+   "label": "Guinea",
+   "qid": "Q1006",
+   "fame": 0.61,
+   "also": [
+    "GUI",
+    "Guinea-Conakry",
+    "Republic of Guinea",
+    "GIN"
+   ]
+  },
+  {
+   "label": "Guinea-Bissau",
+   "qid": "Q1007",
+   "fame": 0.608,
+   "also": [
+    "GBS",
+    "Republic of Guinea-Bissau",
+    "GNB"
+   ]
+  },
+  {
+   "label": "Togo",
+   "qid": "Q945",
+   "fame": 0.605,
+   "also": [
+    "TOG",
+    "Togolese Republic",
+    "TGO"
+   ]
+  },
+  {
+   "label": "Comoros",
+   "qid": "Q970",
+   "fame": 0.602,
+   "also": [
+    "the Comoros",
+    "al-Ittiḥād al-Qumurī",
+    "Juzur al-Qamar",
+    "Juzur al-Qumur",
+    "Massiwa ya komori",
+    "ouvoimoja wakomori",
+    "Udzima wa Komori",
+    "Union des Comores",
+    "Union of the Comoros",
+    "COM"
+   ]
+  }
+ ]
+}

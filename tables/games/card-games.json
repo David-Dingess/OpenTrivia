@@ -1,0 +1,175 @@
+{
+ "id": "table.games.card-games",
+ "kind": "table",
+ "title": "Famous card games",
+ "genre": "games-sports",
+ "category": "games",
+ "topic": "card-games",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { VALUES ?item { wd:Q80131 wd:Q228044 wd:Q188966 wd:Q207302 wd:Q756011 wd:Q697641 wd:Q767979 wd:Q278854 wd:Q504577 wd:Q1056309 wd:Q510406 wd:Q546064 wd:Q1191033 wd:Q2121032 wd:Q6433358 wd:Q1139885 wd:Q655453 wd:Q11082926 wd:Q1019517 wd:Q2739146 wd:Q928584 wd:Q476996 wd:Q957572 wd:Q1898942 wd:Q273305 wd:Q17281123 wd:Q2054661 wd:Q7538723 wd:Q2887791 wd:Q4639742 wd:Q1517546 wd:Q6413051 wd:Q214536 wd:Q640673 wd:Q1050614 } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 50",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T10:36:48.137Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T10:36:48.137Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "kind",
+   "label": "Kind",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "card game",
+  "many": "card games",
+  "capitalise": true,
+  "columns": {
+   "kind": {
+    "role": "link",
+    "pick": "What kind of card game is {label}?",
+    "statement": "{label} is a {value} card game.",
+    "match": "Match each card game to its kind.",
+    "odd": "Three of these are {value} card games. Which one isn't?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "blackjack",
+   "qid": "Q228044",
+   "fame": 0.603,
+   "kind": "gambling",
+   "description": "gambling card game",
+   "hook": "challenges players to build a hand worth as close to 21 points as possible without going over",
+   "known": 0.95
+  },
+  {
+   "label": "Magic: The Gathering",
+   "qid": "Q207302",
+   "fame": 0.584,
+   "kind": "collectible-tcg",
+   "description": "1993 collectible card game",
+   "hook": "has players cast spells and summon fantasy creatures to defeat an opponent across two-player duels",
+   "known": 0.6
+  },
+  {
+   "label": "poker",
+   "qid": "Q80131",
+   "fame": 0.57,
+   "kind": "gambling",
+   "description": "family of card games",
+   "hook": "built its reputation on bluffing opponents while assembling the best five-card hand at the table",
+   "known": 0.95
+  },
+  {
+   "label": "Texas hold 'em",
+   "qid": "Q214536",
+   "fame": 0.56,
+   "kind": "gambling",
+   "description": "variation of the card game of poker",
+   "hook": "became the version most often shown on television, played by dealing two cards face down to each player",
+   "known": 0.8
+  },
+  {
+   "label": "Pokémon Trading Card Game",
+   "qid": "Q1056309",
+   "fame": 0.554,
+   "kind": "collectible-tcg",
+   "description": "1996 collectible card game based on Pokémon",
+   "hook": "has players collect and battle with creatures from a globally popular video-turned-cartoon franchise",
+   "known": 0.95
+  },
+  {
+   "label": "Rummy",
+   "qid": "Q756011",
+   "fame": 0.535,
+   "kind": "rummy-family",
+   "description": "traditional card game",
+   "hook": "challenges players to match cards into sets and runs before anyone else empties their hand",
+   "known": 0.6
+  },
+  {
+   "label": "contract bridge",
+   "qid": "Q188966",
+   "fame": 0.525,
+   "kind": "trick-taking",
+   "description": "card game",
+   "hook": "is played by four people in two partnerships who bid on how many tricks they expect to win",
+   "known": 0.4
+  },
+  {
+   "label": "Klondike",
+   "qid": "Q1191033",
+   "fame": 0.525,
+   "kind": "solitaire",
+   "description": "traditional solitaire card game",
+   "hook": "became the single-player game most computers ship as their default way to pass the time",
+   "known": 0.8
+  },
+  {
+   "label": "Gin rummy",
+   "qid": "Q11082926",
+   "fame": 0.5,
+   "kind": "rummy-family",
+   "description": "Card game",
+   "hook": "is a fast two-player matching game played to a target score across several quick hands",
+   "known": 0.6
+  },
+  {
+   "label": "hanafuda",
+   "qid": "Q697641",
+   "fame": 0.495,
+   "kind": "matching",
+   "description": "Japanese playing cards",
+   "hook": "features cards illustrated with flowers and seasons, and inspired the founding of a major video game company",
+   "known": 0.2
+  },
+  {
+   "label": "cribbage",
+   "qid": "Q1139885",
+   "fame": 0.484,
+   "kind": "counting",
+   "description": "English two-player card game using a wooden board with pegs",
+   "hook": "is scored by moving pegs along a wooden board as players count up combinations from their hand",
+   "known": 0.4
+  },
+  {
+   "label": "Canasta",
+   "qid": "Q278854",
+   "fame": 0.483,
+   "kind": "rummy-family",
+   "description": "Traditional card game",
+   "hook": "revolves around building matching sets of seven cards that earn a large bonus once completed",
+   "known": 0.4
+  },
+  {
+   "label": "Yu-Gi-Oh! Trading Card Game",
+   "qid": "Q546064",
+   "fame": 0.464,
+   "kind": "collectible-tcg",
+   "description": "trading card game",
+   "hook": "grew out of a manga and anime about duelists who summon monsters and cast spells to battle",
+   "known": 0.4
+  }
+ ]
+}

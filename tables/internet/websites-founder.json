@@ -1,0 +1,249 @@
+{
+ "id": "table.internet.websites-founder",
+ "kind": "table",
+ "title": "Websites and apps: who founded them",
+ "genre": "general",
+ "category": "internet",
+ "topic": "websites-and-apps",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?founderLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?founder) WHERE { { ?item wdt:P31/wdt:P279* wd:Q35127 } UNION { ?item wdt:P31/wdt:P279* wd:Q620615 } ?item wikibase:sitelinks ?sitelinks ; wdt:P112 ?c . ?c wdt:P31 wd:Q5 . FILTER(?sitelinks > 15) } GROUP BY ?item ?sitelinks HAVING(COUNT(DISTINCT ?c)<=1) ORDER BY DESC(?sitelinks) LIMIT 300 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T13:26:44.207Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T13:26:44.207Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "founder",
+   "label": "Founder",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "website or app",
+  "many": "websites and apps",
+  "minFame": 0.5,
+  "hookAsk": "Which website or app {hook}?",
+  "columns": {
+   "founder": {
+    "role": "code",
+    "pick": "Who founded {label}?",
+    "statement": "{label} was founded by {value}.",
+    "match": "Match each website or app to its founder.",
+    "reverse": "Which website or app did {value} found?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Amazon",
+   "qid": "Q3884",
+   "fame": 0.749,
+   "founder": "Jeff Bezos",
+   "description": "American multinational technology company",
+   "hook": "began as an online bookstore before selling nearly everything",
+   "known": 0.8,
+   "kind": "e-commerce"
+  },
+  {
+   "label": "Telegram",
+   "qid": "Q15616276",
+   "fame": 0.678,
+   "founder": "Pavel Durov",
+   "description": "instant messaging service",
+   "hook": "is a messaging app known for encrypted chats and huge broadcast channels",
+   "known": 0.4,
+   "kind": "social"
+  },
+  {
+   "label": "eBay",
+   "qid": "Q58024",
+   "fame": 0.617,
+   "founder": "Pierre Omidyar",
+   "description": "American multinational internet corporation that manages eBay.com",
+   "hook": "lets people bid against each other in online auctions",
+   "known": 0.4,
+   "kind": "e-commerce"
+  },
+  {
+   "label": "Internet Archive",
+   "qid": "Q461",
+   "fame": 0.595,
+   "founder": "Brewster Kahle",
+   "description": "U.S. non-profit organization and digital archive",
+   "hook": "runs the Wayback Machine, which saves old copies of web pages",
+   "known": 0.4,
+   "kind": "reference"
+  },
+  {
+   "label": "IMDb",
+   "qid": "Q37312",
+   "fame": 0.593,
+   "founder": "Col Needham",
+   "description": "online database of information related to films, television series, and video games",
+   "hook": "is the go-to online database of movie and TV cast lists and ratings",
+   "known": 0.2,
+   "kind": "media"
+  },
+  {
+   "label": "Bilibili",
+   "qid": "Q3077586",
+   "fame": 0.592,
+   "founder": "Xu Yi",
+   "description": "Chinese video sharing website",
+   "hook": "is a Chinese video site famed for comments that scroll across the screen",
+   "known": 0.05,
+   "kind": "media"
+  },
+  {
+   "label": "Bluesky",
+   "qid": "Q78194383",
+   "fame": 0.554,
+   "founder": "Jack Dorsey",
+   "description": "American social networking service",
+   "hook": null,
+   "known": 0.8,
+   "kind": "social"
+  },
+  {
+   "label": "Craigslist",
+   "qid": "Q788500",
+   "fame": 0.543,
+   "founder": "Craig Newmark",
+   "description": "classified advertisements website",
+   "hook": "is a bare-bones classifieds site for jobs, housing and used stuff",
+   "known": 0.6,
+   "kind": "classifieds"
+  },
+  {
+   "label": "Baidu",
+   "qid": "Q14772",
+   "fame": 0.534,
+   "founder": "Robin Li",
+   "description": "Chinese web services company",
+   "hook": "is the biggest search engine in China",
+   "known": 0.05,
+   "kind": "search"
+  },
+  {
+   "label": "Figma",
+   "qid": "Q96186334",
+   "fame": 0.523,
+   "founder": "Dylan Field",
+   "description": "online vector graphics editor and prototyping tool",
+   "hook": "is a browser-based design tool where teams build app interfaces together",
+   "known": 0.2,
+   "kind": "tools"
+  },
+  {
+   "label": "Google+",
+   "qid": "Q356",
+   "fame": 0.523,
+   "founder": "Bradley Horowitz",
+   "description": "defunct social networking service",
+   "hook": null,
+   "known": 0.05,
+   "kind": "social"
+  },
+  {
+   "label": "OpenStreetMap",
+   "qid": "Q936",
+   "fame": 0.507,
+   "founder": "Steve Coast",
+   "description": "online collaborative project creating a world geographic database",
+   "hook": "is a free, volunteer-built mapping project often called the Wikipedia of geography",
+   "known": 0.05,
+   "kind": "tools"
+  },
+  {
+   "label": "IGN",
+   "qid": "Q207708",
+   "fame": 0.502,
+   "founder": "Mark Jung",
+   "description": "American video game and entertainment media website",
+   "hook": "is a major website for video game reviews and news",
+   "known": 0.2,
+   "kind": "media"
+  },
+  {
+   "label": "DeepL",
+   "qid": "Q43968444",
+   "fame": 0.492,
+   "founder": "Jarosław Kutyłowski",
+   "description": "AI-powered machine translation service developed by DeepL SE",
+   "hook": null,
+   "known": 0.05,
+   "kind": "tools"
+  },
+  {
+   "label": "Newgrounds",
+   "qid": "Q263655",
+   "fame": 0.484,
+   "founder": "Tom Fulp",
+   "description": "American entertainment and social media website",
+   "hook": null,
+   "known": 0.05,
+   "kind": "media"
+  },
+  {
+   "label": "JD.com",
+   "qid": "Q3598926",
+   "fame": 0.478,
+   "founder": "Liu Qiangdong",
+   "description": "Chinese e-commerce company",
+   "hook": null,
+   "known": 0.05,
+   "kind": "e-commerce"
+  },
+  {
+   "label": "arXiv",
+   "qid": "Q118398",
+   "fame": 0.465,
+   "founder": "Paul Ginsparg",
+   "description": "online digital archive for electronic preprints of scientific papers",
+   "hook": null,
+   "known": 0.05,
+   "kind": "reference"
+  },
+  {
+   "label": "itch.io",
+   "qid": "Q22905933",
+   "fame": 0.458,
+   "founder": "Leaf Corcoran",
+   "description": "website for distributing video games",
+   "hook": null,
+   "known": 0.05,
+   "kind": "gaming"
+  },
+  {
+   "label": "Project Gutenberg",
+   "qid": "Q22673",
+   "fame": 0.452,
+   "founder": "Michael S. Hart",
+   "description": "free digital library",
+   "hook": null,
+   "known": 0.4,
+   "kind": "reference"
+  }
+ ]
+}

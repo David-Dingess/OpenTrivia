@@ -1,0 +1,190 @@
+{
+ "id": "table.toys.hobbies",
+ "kind": "table",
+ "title": "Hobbies people know",
+ "genre": "games-sports",
+ "category": "toys",
+ "topic": "hobbies",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { VALUES ?item { wd:Q2740942 wd:Q14930 wd:Q142554 wd:Q64365 wd:Q211011 wd:Q83357 wd:Q216749 wd:Q12681 wd:Q243237 wd:Q178459 wd:Q208386 wd:Q631286 wd:Q131026 wd:Q186083 wd:Q1161827 wd:Q47307 } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T22:28:10.078Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T22:28:10.078Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "hobby",
+  "many": "hobbies",
+  "capitalise": true,
+  "hookAsk": "Which hobby {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "kintsugi",
+   "qid": "Q2740942",
+   "fame": 0.596,
+   "description": "Japanese art of repairing broken pottery with lacquer dusted or mixed with powdered gold, silver, or platinum",
+   "hook": "mends broken pottery with gold-dusted lacquer, so the cracks become the prettiest part",
+   "known": 0.2,
+   "kind": "craft"
+  },
+  {
+   "label": "geocaching",
+   "qid": "Q14930",
+   "fame": 0.525,
+   "description": "outdoor recreational activity",
+   "hook": "sends people hunting for hidden containers using GPS coordinates",
+   "known": 0.4,
+   "kind": "activity"
+  },
+  {
+   "label": "cosplay",
+   "qid": "Q142554",
+   "fame": 0.522,
+   "description": "type of performance art",
+   "hook": "has fans dressing up as their favorite characters from movies, games or comics",
+   "known": 0.6,
+   "kind": "activity"
+  },
+  {
+   "label": "bonsai",
+   "qid": "Q64365",
+   "fame": 0.511,
+   "description": "miniature tree",
+   "hook": "trains miniature trees into elegant shapes through careful pruning",
+   "known": 0.6,
+   "kind": "craft"
+  },
+  {
+   "label": "falconry",
+   "qid": "Q211011",
+   "fame": 0.489,
+   "description": "hunting with a trained bird of prey",
+   "hook": "trains hawks and other birds of prey to hunt and return to a gloved hand",
+   "known": 0.4,
+   "kind": "activity"
+  },
+  {
+   "label": "origami",
+   "qid": "Q83357",
+   "fame": 0.484,
+   "description": "traditional Japanese art of paper folding",
+   "hook": "folds a single flat sheet of paper into cranes and other figures, without cuts or glue",
+   "known": 0.8,
+   "kind": "craft"
+  },
+  {
+   "label": "live action role-playing game",
+   "qid": "Q216749",
+   "fame": 0.479,
+   "description": "form of role-playing game where the participants physically act out their characters' actions",
+   "hook": "has players in costume act out a story in person, often fighting with foam swords",
+   "known": 0.4,
+   "kind": "activity"
+  },
+  {
+   "label": "calligraphy",
+   "qid": "Q12681",
+   "fame": 0.474,
+   "description": "visual art related to writing",
+   "hook": "turns handwriting into art with broad-nibbed pens and careful strokes",
+   "known": 0.8,
+   "kind": "craft"
+  },
+  {
+   "label": "taxidermy",
+   "qid": "Q243237",
+   "fame": 0.467,
+   "description": "art of preparing dead animals to preserve them with the appearance of life",
+   "hook": "preserves and mounts dead animals so they look alive",
+   "known": 0.2,
+   "kind": "craft"
+  },
+  {
+   "label": "ikebana",
+   "qid": "Q178459",
+   "fame": 0.459,
+   "description": "Japanese art of flower arrangement",
+   "hook": "is the Japanese art of arranging flowers, stems and branches",
+   "known": 0.4,
+   "kind": "craft"
+  },
+  {
+   "label": "crocheting",
+   "qid": "Q208386",
+   "fame": 0.456,
+   "description": "technique of creating lace or fabric from thread using a hook",
+   "hook": "loops yarn with a single hooked needle to make blankets, hats and lace",
+   "known": 0.6,
+   "kind": "craft"
+  },
+  {
+   "label": "numismatics",
+   "qid": "Q631286",
+   "fame": 0.43,
+   "description": "study of currencies, coins and paper money",
+   "hook": "is the study and collecting of coins and banknotes",
+   "known": 0.4,
+   "kind": "collecting"
+  },
+  {
+   "label": "philately",
+   "qid": "Q131026",
+   "fame": 0.43,
+   "description": "study of stamps and postal history and other related items",
+   "hook": "is the collecting and study of postage stamps",
+   "known": 0.4,
+   "kind": "collecting"
+  },
+  {
+   "label": "vexillology",
+   "qid": "Q186083",
+   "fame": 0.426,
+   "description": "study of flags",
+   "hook": "is the study of flags, their colours and what they mean",
+   "known": 0.2,
+   "kind": "collecting"
+  },
+  {
+   "label": "macramé",
+   "qid": "Q1161827",
+   "fame": 0.415,
+   "description": "technique of knotting cords or thick yarns to make lace or fringe",
+   "hook": "ties cord into decorative knots to make plant hangers and wall hangings",
+   "known": 0.2,
+   "kind": "craft"
+  },
+  {
+   "label": "genealogy",
+   "qid": "Q47307",
+   "fame": 0.409,
+   "description": "study of families, family history, and lineages using oral interviews, historical records, and genetic analysis; results displayed in charts or narratives demonstrating kinship and pedigrees among family members",
+   "hook": "traces family history back through records to build a family tree",
+   "known": 0.4,
+   "kind": "collecting"
+  }
+ ]
+}

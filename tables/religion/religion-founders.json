@@ -1,0 +1,208 @@
+{
+ "id": "table.religion.religion-founders",
+ "kind": "table",
+ "title": "Religion founders",
+ "genre": "society",
+ "category": "religion",
+ "topic": "world-religions",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?religionLabel WHERE { { SELECT ?item (SAMPLE(?r) AS ?religion) (COUNT(DISTINCT ?r) AS ?nR) WHERE { ?r wdt:P31/wdt:P279* wd:Q9174 ; wdt:P112 ?item . ?item wdt:P31 wd:Q5 ; wikibase:sitelinks ?sl . FILTER(?sl >= 15) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nR = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T13:21:44.331Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T13:21:44.331Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "religion",
+   "label": "Religion",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "religious figure",
+  "many": "religious figures",
+  "wildcard": "person",
+  "columns": {
+   "religion": {
+    "role": "code",
+    "pick": "Which faith is {label} best known for founding or launching?",
+    "statement": "{label} is closely linked with the start of {value}.",
+    "match": "Match each figure to the faith they are linked with.",
+    "reverse": "Who is most closely linked with the start of {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Jesus Christ",
+   "qid": "Q302",
+   "fame": 0.749,
+   "religion": "Christianity",
+   "description": "central figure of Christianity (c. 6 or 4 BC – AD 30 or 33)",
+   "hook": "is believed by his followers to be the Son of God who was crucified and rose again",
+   "known": 0.95,
+   "kind": "founder"
+  },
+  {
+   "label": "Muhammad",
+   "qid": "Q9458",
+   "fame": 0.746,
+   "religion": "Islam",
+   "description": "Arabian political leader and the founder of Islam (c. 570–632)",
+   "hook": "is regarded by followers as the final prophet, who received the Quran and lived in Mecca and Medina",
+   "known": 0.95,
+   "kind": "founder"
+  },
+  {
+   "label": "The Buddha",
+   "qid": "Q9441",
+   "fame": 0.698,
+   "religion": "Buddhism",
+   "description": "Indian philosopher and the founder of Buddhism (623 or 563 BCE – 543 or 483 BCE)",
+   "hook": "sat beneath a fig tree, reached enlightenment and taught the Middle Way",
+   "known": 0.95,
+   "kind": "founder"
+  },
+  {
+   "label": "Martin Luther",
+   "qid": "Q9554",
+   "fame": 0.683,
+   "religion": "Lutheranism",
+   "description": "German priest and theologian (1483–1546)",
+   "hook": "nailed a list of 95 complaints about church practices to a door in Wittenberg",
+   "known": 0.8,
+   "kind": "founder"
+  },
+  {
+   "label": "Joseph Smith",
+   "qid": "Q47102",
+   "fame": 0.653,
+   "religion": "Latter Day Saint movement",
+   "description": "American religious leader and founder of the Latter Day Saint movement (1805–1844)",
+   "hook": "said he translated the Book of Mormon from golden plates an angel showed him",
+   "known": 0.6,
+   "kind": "founder"
+  },
+  {
+   "label": "Confucius",
+   "qid": "Q4604",
+   "fame": 0.635,
+   "religion": "Confucianism",
+   "description": "5th-century BCE Chinese philosopher and politician",
+   "hook": "taught filial piety and ethical rule, with his sayings collected in the Analects",
+   "known": 0.8,
+   "kind": "founder"
+  },
+  {
+   "label": "Zoroaster",
+   "qid": "Q35811",
+   "fame": 0.593,
+   "religion": "Zoroastrianism",
+   "description": "founder of Zoroastrianism",
+   "hook": "was a Persian prophet who taught worship of the wise lord Ahura Mazda",
+   "known": 0.2,
+   "kind": "founder"
+  },
+  {
+   "label": "Guru Nanak",
+   "qid": "Q83322",
+   "fame": 0.567,
+   "religion": "Sikhism",
+   "description": "First Sikh Guru and founder of Sikhism",
+   "hook": "taught devotion to one God and equality of all people in the Punjab region of South Asia",
+   "known": 0.4,
+   "kind": "founder"
+  },
+  {
+   "label": "Laozi",
+   "qid": "Q9333",
+   "fame": 0.561,
+   "religion": "Taoism",
+   "description": "6th-century BC semi-legendary Chinese philosopher, founder of Taoism",
+   "hook": "is credited with writing the Tao Te Ching, a short classic of Chinese philosophy",
+   "known": 0.6,
+   "kind": "founder"
+  },
+  {
+   "label": "Helena Blavatsky",
+   "qid": "Q189454",
+   "fame": 0.545,
+   "religion": "Theosophy",
+   "description": "Russian occult writer (1831-1891)",
+   "hook": "co-founded a New York society blending Eastern mysticism with Western occultism",
+   "known": 0.2,
+   "kind": "founder"
+  },
+  {
+   "label": "Ann Lee",
+   "qid": "Q456543",
+   "fame": 0.524,
+   "religion": "Shakers",
+   "description": "English Shaker leader (1736-1784)",
+   "hook": "led English emigrants to America, in a group known for simple furniture and ecstatic dance",
+   "known": 0.05,
+   "kind": "founder"
+  },
+  {
+   "label": "Baháʼu'lláh",
+   "qid": "Q101054",
+   "fame": 0.515,
+   "religion": "Baháʼí Faith",
+   "description": "founder of the Bahá'í Faith (1817–1892)",
+   "hook": "was exiled from Persia and taught the unity of all religions and all humanity",
+   "known": 0.2,
+   "kind": "founder"
+  },
+  {
+   "label": "Emmanuel Swedenborg",
+   "qid": "Q185832",
+   "fame": 0.489,
+   "religion": "The New Church",
+   "description": "Swedish 18th century scientist and theologian (1688-1772)",
+   "hook": "was a scientist who claimed visions of heaven and hell and wrote about the afterlife",
+   "known": 0.05,
+   "kind": "founder"
+  },
+  {
+   "label": "Báb",
+   "qid": "Q104273",
+   "fame": 0.456,
+   "religion": "Bábism",
+   "description": "founder of Bábism and, according to the Baháʼís, predecessor of Baháʼu'lláh",
+   "hook": "declared himself the herald of a coming divine messenger in Persia and was executed by firing squad",
+   "known": 0.05,
+   "kind": "founder"
+  },
+  {
+   "label": "Mary Baker Eddy",
+   "qid": "Q235069",
+   "fame": 0.455,
+   "religion": "Christian Science",
+   "description": "American founder of Christian Science (1821–1910)",
+   "hook": "founded a Boston church stressing spiritual healing and launched a respected daily newspaper",
+   "known": 0.4,
+   "kind": "founder"
+  }
+ ]
+}

@@ -1,0 +1,410 @@
+{
+ "id": "table.music.music-scenes-countries",
+ "kind": "table",
+ "title": "Music genres and the country they began in",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "festivals-and-scenes",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { { SELECT ?item ?sitelinks WHERE { ?item wdt:P31 wd:Q188451 ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks >= 20) } ORDER BY DESC(?sitelinks) LIMIT 1500 } ?item wdt:P495 ?c . } GROUP BY ?item ?sitelinks } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T07:04:25.278Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T07:04:25.278Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country of origin",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "music genre",
+  "many": "music genres",
+  "hookAsk": "Which music genre {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country did {label} begin in?",
+    "statement": "{label} began in {value}.",
+    "match": "Match each music genre to the country it began in.",
+    "odd": "Three of these music genres began in {value}. Which one didn't?",
+    "all": "Tap all {n} music genres that began in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "heavy metal music",
+   "qid": "Q38848",
+   "fame": 0.61,
+   "country": "United Kingdom",
+   "description": "genre of rock music characterized by slack-tuned instruments, and unconventional changes of tonality (key) and time signature (metre)",
+   "hook": "is defined by thunderous distorted guitars, pounding drums and dark, powerful vocals",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "shoegaze",
+   "qid": "Q272167",
+   "fame": 0.594,
+   "country": "United Kingdom",
+   "description": "indie/alternative rock subgenre characterized by an ethereal mixture of obscured vocals, guitar distortion and effects, feedback, and overwhelming volume",
+   "hook": "is a dreamy wall of blurred guitar noise where the singing is buried in the haze",
+   "known": 0.2,
+   "kind": "rock"
+  },
+  {
+   "label": "country music",
+   "qid": "Q83440",
+   "fame": 0.592,
+   "country": "United States",
+   "description": "genre of American popular music",
+   "hook": "grew out of Nashville, with twangy guitars and songs about trucks, heartbreak and small-town life",
+   "known": 0.95,
+   "kind": "country"
+  },
+  {
+   "label": "hip-hop",
+   "qid": "Q11401",
+   "fame": 0.588,
+   "country": "United States",
+   "description": "rhythmic music accompanied by rhyming speech",
+   "hook": "grew out of block parties in the Bronx, built on DJs, breakbeats and rapped rhymes",
+   "known": 0.95,
+   "kind": "hip-hop"
+  },
+  {
+   "label": "jazz",
+   "qid": "Q8341",
+   "fame": 0.588,
+   "country": "United States",
+   "description": "musical style and genre",
+   "hook": "was born in New Orleans and is known for improvisation, swing and syncopated rhythm",
+   "known": 0.95,
+   "kind": "jazz"
+  },
+  {
+   "label": "nu metal",
+   "qid": "Q263734",
+   "fame": 0.586,
+   "country": "United States",
+   "description": "musical subgenre of alternative metal",
+   "hook": "fuses heavy guitar riffs with rapping and turntables, led by bands like Korn and Limp Bizkit",
+   "known": 0.6,
+   "kind": "hip-hop"
+  },
+  {
+   "label": "grunge",
+   "qid": "Q11365",
+   "fame": 0.583,
+   "country": "United States",
+   "description": "genre of rock music",
+   "hook": "came out of Seattle with flannel shirts, angst-filled lyrics and bands like Nirvana and Pearl Jam",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "K-pop",
+   "qid": "Q213665",
+   "fame": 0.581,
+   "country": "South Korea",
+   "description": "popular music originating in South Korea",
+   "hook": "is a polished export of idol groups with tightly choreographed dances and colorful videos",
+   "known": 0.8,
+   "kind": "pop"
+  },
+  {
+   "label": "progressive rock",
+   "qid": "Q49451",
+   "fame": 0.57,
+   "country": "United Kingdom",
+   "description": "genre of rock music",
+   "hook": "is known for long, ambitious songs, concept albums and classical influences, as with Yes and Genesis",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "post-punk",
+   "qid": "Q598929",
+   "fame": 0.556,
+   "country": "United Kingdom",
+   "description": "music genre",
+   "hook": "followed the first safety-pin wave with moodier, more experimental sounds, as with Joy Division",
+   "known": 0.2,
+   "kind": "rock"
+  },
+  {
+   "label": "rock and roll",
+   "qid": "Q7749",
+   "fame": 0.554,
+   "country": "United States",
+   "description": "genre of popular music, early subgenre of rock music",
+   "hook": "turned Elvis Presley and Chuck Berry into stars, mixing country twang with rhythm and blues",
+   "known": 0.95,
+   "kind": "rock"
+  },
+  {
+   "label": "blues",
+   "qid": "Q9759",
+   "fame": 0.551,
+   "country": "United States",
+   "description": "vocal and instrumental music form",
+   "hook": "grew from the Mississippi Delta, with twelve-bar songs of hardship and a bent-note guitar sound",
+   "known": 0.95,
+   "kind": "blues"
+  },
+  {
+   "label": "house music",
+   "qid": "Q20502",
+   "fame": 0.549,
+   "country": "United States",
+   "description": "electronic dance music genre, that originated in Chicago, United States, in the early 1980s",
+   "hook": "grew out of Chicago clubs, driven by a steady four-on-the-floor kick drum",
+   "known": 0.8,
+   "kind": "electronic"
+  },
+  {
+   "label": "bluegrass music",
+   "qid": "Q213714",
+   "fame": 0.547,
+   "country": "United States",
+   "description": "form of American roots music",
+   "hook": "is famous for lightning-fast banjo picking and high harmonies from acoustic string bands",
+   "known": 0.4,
+   "kind": "country"
+  },
+  {
+   "label": "contemporary R&B",
+   "qid": "Q850412",
+   "fame": 0.539,
+   "country": "United States",
+   "description": "popular music genre that combines rhythm and blues with elements of pop, soul, funk, hip-hop, and electronic music",
+   "hook": "blends smooth soul vocals with modern beats, as with Beyonce and Usher",
+   "known": 0.8,
+   "kind": "blues"
+  },
+  {
+   "label": "funk",
+   "qid": "Q164444",
+   "fame": 0.52,
+   "country": "United States",
+   "description": "music genre that emerged in the 1960s, blending soul, jazz, and R&B, known for its syncopated basslines, groovy rhythms, and danceable energy",
+   "hook": "is built on a heavy, syncopated bass groove, made famous by James Brown and Parliament",
+   "known": 0.8,
+   "kind": "blues"
+  },
+  {
+   "label": "trip hop",
+   "qid": "Q205560",
+   "fame": 0.517,
+   "country": "United Kingdom",
+   "description": "genre of electronic music",
+   "hook": "is a slow, moody, sample-heavy sound from Bristol, made famous by Massive Attack and Portishead",
+   "known": 0.4,
+   "kind": "electronic"
+  },
+  {
+   "label": "bossa nova",
+   "qid": "Q486263",
+   "fame": 0.514,
+   "country": "Brazil",
+   "description": "style of Brazilian music",
+   "hook": "is a smooth, gentle rhythm behind The Girl from Ipanema",
+   "known": 0.6,
+   "kind": "world"
+  },
+  {
+   "label": "Britpop",
+   "qid": "Q189045",
+   "fame": 0.511,
+   "country": "United Kingdom",
+   "description": "music genre; 1990s UK pop culture movement",
+   "hook": "was a mid-1990s wave of guitar bands, with a famous chart rivalry between Blur and Oasis",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "flamenco",
+   "qid": "Q9764",
+   "fame": 0.51,
+   "country": "Spain",
+   "description": "genre of Spanish music and dance",
+   "hook": "pairs passionate singing and fast guitar strumming with stamping dance and clapping in Andalusia",
+   "known": 0.6,
+   "kind": "world"
+  },
+  {
+   "label": "reggae",
+   "qid": "Q9794",
+   "fame": 0.51,
+   "country": "Jamaica",
+   "description": "music genre that originated in Jamaica in the late 1960s",
+   "hook": "is known for its offbeat, laid-back rhythm and was carried worldwide by Bob Marley",
+   "known": 0.95,
+   "kind": "reggae"
+  },
+  {
+   "label": "soul",
+   "qid": "Q131272",
+   "fame": 0.506,
+   "country": "United States",
+   "description": "genre of popular music",
+   "hook": "is gospel-rooted, emotional singing, made famous by Aretha Franklin and Otis Redding",
+   "known": 0.95,
+   "kind": "blues"
+  },
+  {
+   "label": "glam rock",
+   "qid": "Q76092",
+   "fame": 0.503,
+   "country": "United Kingdom",
+   "description": "style of rock music that developed in the United Kingdom in the early 1970s performed by musicians who wore outrageous costumes, makeup, and hairstyles, particularly platform shoes and glitter",
+   "hook": "is known for glitter, platform boots and flamboyant stars like David Bowie and T. Rex",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Krautrock",
+   "qid": "Q320592",
+   "fame": 0.49,
+   "country": "Germany",
+   "description": "genre of music that originated in Germany in the late 1960s",
+   "hook": "is an experimental style of motorik beats and synthesizers, with bands like Can and Kraftwerk nearby",
+   "known": 0.2,
+   "kind": "world"
+  },
+  {
+   "label": "rockabilly",
+   "qid": "Q203720",
+   "fame": 0.488,
+   "country": "United States",
+   "description": "early style of rock and roll music",
+   "hook": "mixes hillbilly twang with early rhythm and blues, with slap bass and greased-up quiffs",
+   "known": 0.4,
+   "kind": "rock"
+  },
+  {
+   "label": "calypso",
+   "qid": "Q752785",
+   "fame": 0.485,
+   "country": "Trinidad and Tobago",
+   "description": "style of Afro-Caribbean music that originated in Trinidad and Tobago",
+   "hook": "is known for witty, topical lyrics and steel drum rhythms, and it is tied to Carnival",
+   "known": 0.2,
+   "kind": "reggae"
+  },
+  {
+   "label": "doo-wop",
+   "qid": "Q546359",
+   "fame": 0.479,
+   "country": "United States",
+   "description": "style of rhythm & blues",
+   "hook": "is known for street-corner vocal harmony groups singing nonsense syllables behind a lead singer",
+   "known": 0.2,
+   "kind": "blues"
+  },
+  {
+   "label": "gospel music",
+   "qid": "Q180268",
+   "fame": 0.474,
+   "country": "United States",
+   "description": "genre of music emphasizing Christian lyrics",
+   "hook": "is sung in churches, with choirs and soaring praise-filled vocals",
+   "known": 0.8,
+   "kind": "blues"
+  },
+  {
+   "label": "bebop",
+   "qid": "Q105513",
+   "fame": 0.471,
+   "country": "United States",
+   "description": "a style of jazz developed in the early to mid-1940s in the United States",
+   "hook": "is a fast, complex jazz style played by Charlie Parker and Dizzy Gillespie",
+   "known": 0.4,
+   "kind": "jazz"
+  },
+  {
+   "label": "ragtime",
+   "qid": "Q185652",
+   "fame": 0.471,
+   "country": "United States",
+   "description": "music genre",
+   "hook": "is a syncopated piano style made famous by Scott Joplin and The Entertainer",
+   "known": 0.2,
+   "kind": "jazz"
+  },
+  {
+   "label": "dubstep",
+   "qid": "Q20474",
+   "fame": 0.47,
+   "country": "United Kingdom",
+   "description": "genre of electronic dance music that originated in South London",
+   "hook": "is known for wobbling bass drops and a heavy sub-bass sound that shakes club speakers",
+   "known": 0.6,
+   "kind": "electronic"
+  },
+  {
+   "label": "gamelan",
+   "qid": "Q194492",
+   "fame": 0.466,
+   "country": "Indonesia",
+   "description": "style of traditional music originated in the island of Java in Indonesia",
+   "hook": "is an orchestra of bronze gongs, metallophones and drums",
+   "known": 0.2,
+   "kind": "world"
+  },
+  {
+   "label": "dancehall",
+   "qid": "Q474027",
+   "fame": 0.453,
+   "country": "Jamaica",
+   "description": "genre of Jamaican popular music",
+   "hook": "is a bass-heavy, DJ-driven cousin of reggae with fast digital riddims and chatting vocals",
+   "known": 0.4,
+   "kind": "reggae"
+  },
+  {
+   "label": "mariachi",
+   "qid": "Q464129",
+   "fame": 0.453,
+   "country": "Mexico",
+   "description": "form of traditional music from Mexico",
+   "hook": "is played by street bands in big sombreros with trumpets, violins and guitars",
+   "known": 0.4,
+   "kind": "world"
+  },
+  {
+   "label": "J-pop",
+   "qid": "Q131578",
+   "fame": 0.452,
+   "country": "Japan",
+   "description": "Japanese popular music genre",
+   "hook": "is a bright, catchy sound tied to idol groups and anime theme songs",
+   "known": 0.4,
+   "kind": "pop"
+  }
+ ]
+}

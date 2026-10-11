@@ -1,0 +1,209 @@
+{
+ "id": "table.chemistry.household-chemical-names",
+ "kind": "table",
+ "title": "Household chemistry: the chemical behind the everyday name",
+ "genre": "science-math-tech",
+ "category": "chemistry",
+ "topic": "everyday-chemistry",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?use WHERE { VALUES (?item ?use) { (wd:Q2314 \"Table salt\") (wd:Q179731 \"Baking soda\") (wd:Q47512 \"Vinegar\") (wd:Q407204 \"Bleach\") (wd:Q23767 \"Chalk\") (wd:Q4027534 \"Table sugar\") (wd:Q194207 \"Antifreeze\") (wd:Q102769 \"Lye\") (wd:Q49546 \"Nail polish remover\") (wd:Q179724 \"Mothballs\") (wd:Q190227 \"Washing soda\") (wd:Q182849 \"Slaked lime\") (wd:Q177836 \"Saltpeter\") (wd:Q288266 \"Epsom salt\") (wd:Q134192 \"Lighter fuel\") (wd:Q131189 \"Barbecue gas\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T17:38:57.183Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T17:38:57.183Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "everyday_name",
+   "label": "Everyday name",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "compound",
+  "many": "compounds",
+  "capitalise": true,
+  "lowerInProse": true,
+  "columns": {
+   "everyday_name": {
+    "role": "code",
+    "pick": "What is the everyday name for the compound {label}?",
+    "statement": "The compound {label} is better known as {value}.",
+    "match": "Match each chemical compound to its everyday name.",
+    "reverse": "Which compound is commonly known as {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "sodium bicarbonate",
+   "qid": "Q179731",
+   "fame": 0.587,
+   "everyday_name": "Baking soda",
+   "description": "chemical compound",
+   "hook": "fizzes up a science-fair volcano and helps cakes rise in the oven",
+   "known": 0.85,
+   "kind": "food"
+  },
+  {
+   "label": "potassium nitrate",
+   "qid": "Q177836",
+   "fame": 0.564,
+   "everyday_name": "Saltpeter",
+   "description": "chemical compound",
+   "hook": null,
+   "known": 0.3,
+   "kind": "industrial"
+  },
+  {
+   "label": "sodium hydroxide",
+   "qid": "Q102769",
+   "fame": 0.558,
+   "everyday_name": "Lye",
+   "description": "chemical compound",
+   "hook": null,
+   "known": 0.15,
+   "kind": "industrial"
+  },
+  {
+   "label": "acetic acid",
+   "qid": "Q47512",
+   "fame": 0.557,
+   "everyday_name": "Vinegar",
+   "description": "chemical compound",
+   "hook": "gives pickles and salad dressing their sour tang",
+   "known": 0.9,
+   "kind": "food"
+  },
+  {
+   "label": "sodium chloride",
+   "qid": "Q2314",
+   "fame": 0.544,
+   "everyday_name": "Table salt",
+   "description": "chemical compound",
+   "hook": "is sprinkled on fries and spread on icy roads in winter",
+   "known": 0.99,
+   "kind": "food"
+  },
+  {
+   "label": "acetone",
+   "qid": "Q49546",
+   "fame": 0.533,
+   "everyday_name": "Nail polish remover",
+   "description": "chemical compound",
+   "hook": "is a fast-evaporating solvent used to strip lacquer from fingertips",
+   "known": 0.8,
+   "kind": "personal-care"
+  },
+  {
+   "label": "sodium carbonate",
+   "qid": "Q190227",
+   "fame": 0.528,
+   "everyday_name": "Washing soda",
+   "description": "chemical compound",
+   "hook": "is added to laundry to soften hard water and boost cleaning power",
+   "known": 0.6,
+   "kind": "cleaning"
+  },
+  {
+   "label": "sucrose",
+   "qid": "Q4027534",
+   "fame": 0.527,
+   "everyday_name": "Table sugar",
+   "description": "disaccharide made of glucose and fructose",
+   "hook": "sweetens coffee and is the main ingredient in most candy",
+   "known": 0.99,
+   "kind": "food"
+  },
+  {
+   "label": "calcium carbonate",
+   "qid": "Q23767",
+   "fame": 0.525,
+   "everyday_name": "Chalk",
+   "description": "chemical compound",
+   "hook": "is used to write on blackboards and makes up seashells and limestone",
+   "known": 0.85,
+   "kind": "household"
+  },
+  {
+   "label": "sodium hypochlorite",
+   "qid": "Q407204",
+   "fame": 0.516,
+   "everyday_name": "Bleach",
+   "description": "chemical compound",
+   "hook": "whitens laundry and disinfects swimming pools",
+   "known": 0.9,
+   "kind": "cleaning"
+  },
+  {
+   "label": "ethylene glycol",
+   "qid": "Q194207",
+   "fame": 0.494,
+   "everyday_name": "Antifreeze",
+   "description": "organic compound used in the making of polyester fibers and in antifreeze formulations",
+   "hook": "keeps car radiators from freezing and is sweet-tasting but toxic",
+   "known": 0.55,
+   "kind": "industrial"
+  },
+  {
+   "label": "calcium hydroxide",
+   "qid": "Q182849",
+   "fame": 0.486,
+   "everyday_name": "Slaked lime",
+   "description": "chemical compound",
+   "hook": null,
+   "known": 0.1,
+   "kind": "industrial"
+  },
+  {
+   "label": "magnesium sulfate",
+   "qid": "Q288266",
+   "fame": 0.486,
+   "everyday_name": "Epsom salt",
+   "description": "chemical compound",
+   "hook": "is dissolved in a bath to soothe sore muscles",
+   "known": 0.65,
+   "kind": "personal-care"
+  },
+  {
+   "label": "propane",
+   "qid": "Q131189",
+   "fame": 0.477,
+   "everyday_name": "Barbecue gas",
+   "description": "chemical compound, commonly used as a fuel",
+   "hook": "fills the tanks that fuel grills and camp stoves",
+   "known": 0.85,
+   "kind": "fuel"
+  },
+  {
+   "label": "naphthalene",
+   "qid": "Q179724",
+   "fame": 0.459,
+   "everyday_name": "Mothballs",
+   "description": "chemical compound",
+   "hook": "keeps clothes-eating insects out of stored sweaters with a strong smell",
+   "known": 0.6,
+   "kind": "household"
+  }
+ ]
+}

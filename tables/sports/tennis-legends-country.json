@@ -1,0 +1,962 @@
+{
+ "id": "table.sports.tennis-legends-country",
+ "kind": "table",
+ "title": "Famous tennis players and the country they represent",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "tennis",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nCountry) WHERE { ?item wdt:P106 wd:Q10833314 ; wdt:P27 ?c ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 5) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 800 } hint:Prior hint:runFirst true . FILTER(?nCountry = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T15:32:12.260Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T15:32:12.260Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "tennis player",
+  "many": "tennis players",
+  "wildcard": "person",
+  "hookAsk": "Which tennis player {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country does tennis player {label} represent?",
+    "statement": "{label} represents {value} in tennis.",
+    "match": "Match each tennis player to the country they represent.",
+    "odd": "Three of these tennis players represent {value}. Which one doesn't?",
+    "all": "Tap all {n} tennis players who represent {value}.",
+    "reverse": "Which of these tennis players represents {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Elena Rybakina",
+   "qid": "Q42055714",
+   "fame": 0.929,
+   "country": "Kazakhstan",
+   "description": "Kazakhstani tennis player",
+   "hook": "won the Wimbledon singles title with a powerful serve after switching nationality",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Alexander Zverev",
+   "qid": "Q13990552",
+   "fame": 0.916,
+   "country": "Germany",
+   "description": "German tennis player (born 1997)",
+   "hook": "is a towering baseliner who won Olympic gold in singles in Tokyo",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Aryna Sabalenka",
+   "qid": "Q23448791",
+   "fame": 0.898,
+   "country": "Belarus",
+   "description": "Belarusian tennis player",
+   "hook": "is a hard-hitting world number one who has won multiple hard-court Grand Slam titles",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Coco Gauff",
+   "qid": "Q39263365",
+   "fame": 0.828,
+   "country": "United States",
+   "description": "US American tennis player (born 2004)",
+   "hook": "burst onto the scene as a teenager at Wimbledon and later won a home Grand Slam title",
+   "known": 0.6,
+   "kind": "rising star"
+  },
+  {
+   "label": "Carlos Alcaraz",
+   "qid": "Q85518537",
+   "fame": 0.819,
+   "country": "Spain",
+   "description": "Spanish tennis player (born 2003)",
+   "hook": "is a young champion who beat the sport's old guard in a five-set Wimbledon final",
+   "known": 0.6,
+   "kind": "rising star"
+  },
+  {
+   "label": "Roger Federer",
+   "qid": "Q1426",
+   "fame": 0.777,
+   "country": "Switzerland",
+   "description": "Swiss tennis player (born 1981)",
+   "hook": "won a record-setting eight Wimbledon singles titles with an elegant one-handed backhand",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Naomi Osaka",
+   "qid": "Q17466583",
+   "fame": 0.775,
+   "country": "Japan",
+   "description": "Japanese tennis player (born 1997)",
+   "hook": "became the first Asian woman to reach world number one and won multiple hard-court majors",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Jannik Sinner",
+   "qid": "Q54812588",
+   "fame": 0.769,
+   "country": "Italy",
+   "description": "Italian tennis player (born 2001)",
+   "hook": "is a red-haired world number one who won his first major on hard courts down under",
+   "known": 0.6,
+   "kind": "rising star"
+  },
+  {
+   "label": "Serena Williams",
+   "qid": "Q11459",
+   "fame": 0.76,
+   "country": "United States",
+   "description": "American tennis player (born 1981)",
+   "hook": "won 23 Grand Slam singles titles, the most of any player in the Open Era",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Andy Roddick",
+   "qid": "Q54584",
+   "fame": 0.74,
+   "country": "United States",
+   "description": "American tennis player (born 1982)",
+   "hook": "was famous for one of the fastest serves ever recorded and a lone major title in New York",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Rafael Nadal",
+   "qid": "Q10132",
+   "fame": 0.735,
+   "country": "Spain",
+   "description": "Spanish tennis player (born 1986)",
+   "hook": "won a record number of Roland Garros titles, earning the nickname King of Clay",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Iga Świątek",
+   "qid": "Q26840238",
+   "fame": 0.731,
+   "country": "Poland",
+   "description": "Polish tennis player (born 2001)",
+   "hook": "is a dominant clay-court specialist who has won Roland Garros multiple times",
+   "known": 0.6,
+   "kind": "rising star"
+  },
+  {
+   "label": "Andre Agassi",
+   "qid": "Q7407",
+   "fame": 0.726,
+   "country": "United States",
+   "description": "American tennis player (born 1970)",
+   "hook": "is a flamboyant baseliner famous for a rivalry with Pete Sampras and a career Golden Slam",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Arthur Ashe",
+   "qid": "Q53325",
+   "fame": 0.725,
+   "country": "United States",
+   "description": "American tennis player (1943–1993)",
+   "hook": "became the first Black man to win the Wimbledon singles title and later campaigned for social causes",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "John McEnroe",
+   "qid": "Q16474",
+   "fame": 0.724,
+   "country": "United States",
+   "description": "American former tennis player (born 1959)",
+   "hook": "was a fiery left-hander famous for his on-court tantrums and his rivalry with Björn Borg",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Venus Williams",
+   "qid": "Q11578",
+   "fame": 0.724,
+   "country": "United States",
+   "description": "American tennis player (born 1980)",
+   "hook": "is an older sister who won Wimbledon multiple times and has played doubles with her sibling",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Daniil Medvedev",
+   "qid": "Q21622022",
+   "fame": 0.701,
+   "country": "Russia",
+   "description": "Russian tennis player",
+   "hook": "is a tall baseliner who ended Novak Djokovic's calendar Grand Slam bid in a New York final",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Gaël Monfils",
+   "qid": "Q186429",
+   "fame": 0.701,
+   "country": "France",
+   "description": "French tennis player (born 1986)",
+   "hook": "is an acrobatic showman famous for his leaping, sliding shots and entertaining style",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Steffi Graf",
+   "qid": "Q11662",
+   "fame": 0.693,
+   "country": "Germany",
+   "description": "German tennis player",
+   "hook": "won the calendar-year Grand Slam and a Golden Slam in a single season",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Pete Sampras",
+   "qid": "Q9446",
+   "fame": 0.691,
+   "country": "United States",
+   "description": "American tennis player (born 1971)",
+   "hook": "won 14 Grand Slam singles titles, powered by a legendary serve and volley game",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Caroline Wozniacki",
+   "qid": "Q30767",
+   "fame": 0.682,
+   "country": "Denmark",
+   "description": "Danish tennis player",
+   "hook": "reached world number one and won her only major after a marathon run in Melbourne",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Jimmy Connors",
+   "qid": "Q53393",
+   "fame": 0.68,
+   "country": "United States",
+   "description": "American tennis player (born 1952)",
+   "hook": "won the most tour-level singles titles of any man and was famous for his combative style",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Stan Wawrinka",
+   "qid": "Q193661",
+   "fame": 0.674,
+   "country": "Switzerland",
+   "description": "Swiss tennis player (born 1985)",
+   "hook": "is a late-blooming champion with a powerful one-handed backhand who won three majors",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Elina Svitolina",
+   "qid": "Q270249",
+   "fame": 0.671,
+   "country": "Ukraine",
+   "description": "Ukrainian tennis player (born 1994)",
+   "hook": "is a top-ranked star who reached Grand Slam semifinals and won an Olympic bronze medal",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Andy Murray",
+   "qid": "Q10125",
+   "fame": 0.668,
+   "country": "United Kingdom",
+   "description": "British tennis player (born 1987)",
+   "hook": "ended a long home drought by winning Wimbledon and won two Olympic singles golds",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Madison Keys",
+   "qid": "Q34403",
+   "fame": 0.668,
+   "country": "United States",
+   "description": "US American tennis player",
+   "hook": "is a big hitter who reached a US Open final before finally winning a major in Melbourne",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Billie Jean King",
+   "qid": "Q54527",
+   "fame": 0.665,
+   "country": "United States",
+   "description": "American tennis player (born 1943)",
+   "hook": "beat Bobby Riggs in the famous Battle of the Sexes match",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Chris Evert",
+   "qid": "Q14286",
+   "fame": 0.651,
+   "country": "United States",
+   "description": "American former tennis player (born 1954)",
+   "hook": "dominated the sport with a two-handed backhand and won Roland Garros seven times",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Grigor Dimitrov",
+   "qid": "Q337681",
+   "fame": 0.651,
+   "country": "Bulgaria",
+   "description": "Bulgarian tennis player",
+   "hook": "is a stylish one-handed backhander once nicknamed Baby Fed",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Emma Raducanu",
+   "qid": "Q64849968",
+   "fame": 0.647,
+   "country": "United Kingdom",
+   "description": "British tennis player (born 2002)",
+   "hook": "became the first qualifier ever to win a Grand Slam singles title, in New York",
+   "known": 0.6,
+   "kind": "rising star"
+  },
+  {
+   "label": "Jennifer Capriati",
+   "qid": "Q11680",
+   "fame": 0.635,
+   "country": "United States",
+   "description": "American tennis player",
+   "hook": "was a teenage prodigy who turned pro at thirteen and won three majors",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Sloane Stephens",
+   "qid": "Q54670",
+   "fame": 0.63,
+   "country": "United States",
+   "description": "US American tennis player",
+   "hook": "won a major in New York and then reached the final at Roland Garros",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Nick Kyrgios",
+   "qid": "Q3720084",
+   "fame": 0.629,
+   "country": "Australia",
+   "description": "Australian tennis player (born 1995)",
+   "hook": "is a talented showman known for underarm serves and on-court outbursts",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Dominic Thiem",
+   "qid": "Q88762",
+   "fame": 0.624,
+   "country": "Austria",
+   "description": "Austrian male tennis player",
+   "hook": "is a clay-loving star who won a New York major after coming back from two sets down",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Michael Chang",
+   "qid": "Q53370",
+   "fame": 0.623,
+   "country": "United States",
+   "description": "American tennis player (born 1972)",
+   "hook": "is the youngest man to win a major, at Roland Garros as a teenager",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Björn Borg",
+   "qid": "Q104506",
+   "fame": 0.606,
+   "country": "Sweden",
+   "description": "Swedish tennis player (born 1956)",
+   "hook": "won five straight Wimbledon titles and was known for his icy calm and long hair",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Boris Becker",
+   "qid": "Q76334",
+   "fame": 0.595,
+   "country": "Germany",
+   "description": "German tennis player, coach, and commentator (born 1967)",
+   "hook": "became the youngest Wimbledon men's champion at seventeen with a booming serve",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Ashleigh Barty",
+   "qid": "Q84056",
+   "fame": 0.584,
+   "country": "Australia",
+   "description": "Australian tennis player",
+   "hook": "retired at the top of the game while ranked number one, after winning three majors",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Kim Clijsters",
+   "qid": "Q11685",
+   "fame": 0.584,
+   "country": "Belgium",
+   "description": "Belgian tennis player",
+   "hook": "retired to become a mother, then came back and won multiple major titles",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Victoria Azarenka",
+   "qid": "Q10118",
+   "fame": 0.584,
+   "country": "Belarus",
+   "description": "Belarusian tennis player",
+   "hook": "is a former world number one who won two Grand Slam titles in Melbourne",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Simona Halep",
+   "qid": "Q230156",
+   "fame": 0.583,
+   "country": "Romania",
+   "description": "Romanian female tennis player",
+   "hook": "won a Grand Slam title on the clay of Paris and later at Wimbledon",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Lleyton Hewitt",
+   "qid": "Q180104",
+   "fame": 0.581,
+   "country": "Australia",
+   "description": "Australian tennis player and tennis coach",
+   "hook": "became the youngest world number one at the time and won Wimbledon and a New York title",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Andrey Rublev",
+   "qid": "Q17373391",
+   "fame": 0.579,
+   "country": "Russia",
+   "description": "Russian tennis player",
+   "hook": "is a fiery baseliner known for his heavy forehand and for winning a Masters title",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Eugenie Bouchard",
+   "qid": "Q439032",
+   "fame": 0.575,
+   "country": "Canada",
+   "description": "Canadian tennis player",
+   "hook": "reached the Wimbledon final as a young star and was known for off-court fame",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "CoCo Vandeweghe",
+   "qid": "Q54688",
+   "fame": 0.57,
+   "country": "United States",
+   "description": "American tennis player",
+   "hook": "comes from a family of athletes that includes an NBA-star uncle and a Miss USA mother",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Evonne Goolagong Cawley",
+   "qid": "Q228559",
+   "fame": 0.57,
+   "country": "Australia",
+   "description": "Australian Aboriginal tennis player",
+   "hook": "is an Indigenous champion who won Wimbledon twice and had a graceful, fluid game",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Juan Martín del Potro",
+   "qid": "Q180535",
+   "fame": 0.57,
+   "country": "Argentina",
+   "description": "Argentine tennis player (born 1988)",
+   "hook": "is a giant with a huge forehand who beat both Federer and Nadal on the way to a New York major",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Ons Jabeur",
+   "qid": "Q290212",
+   "fame": 0.566,
+   "country": "Tunisia",
+   "description": "Tunisian tennis player",
+   "hook": "is a trailblazing star and the first Arab woman to reach a Wimbledon final",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Rod Laver",
+   "qid": "Q105550",
+   "fame": 0.565,
+   "country": "Australia",
+   "description": "Australian tennis player",
+   "hook": "is the only man to win the calendar-year Grand Slam twice",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "James Blake",
+   "qid": "Q53333",
+   "fame": 0.564,
+   "country": "United States",
+   "description": "American tennis player",
+   "hook": "is a quick-footed player who reached the world's top five and starred in Davis Cup",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Li Na",
+   "qid": "Q180446",
+   "fame": 0.561,
+   "country": "China",
+   "description": "Chinese tennis player",
+   "hook": "became the first Asian player to win a Grand Slam singles title, at Roland Garros",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "John Isner",
+   "qid": "Q53566",
+   "fame": 0.56,
+   "country": "United States",
+   "description": "American tennis player (born 1985)",
+   "hook": "played the longest match in tennis history at Wimbledon, lasting over eleven hours",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Margaret Court",
+   "qid": "Q202342",
+   "fame": 0.556,
+   "country": "Australia",
+   "description": "Australian tennis player",
+   "hook": "holds the record for the most Grand Slam singles titles ever won, 24",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Leander Paes",
+   "qid": "Q296282",
+   "fame": 0.552,
+   "country": "India",
+   "description": "Indian tennis player",
+   "hook": "is a doubles great who won a Grand Slam in mixed and medaled at the Olympics",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Sania Mirza",
+   "qid": "Q132147",
+   "fame": 0.552,
+   "country": "India",
+   "description": "Indian tennis player",
+   "hook": "is a doubles star who reached world number one and won multiple mixed and women's titles",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Lindsay Davenport",
+   "qid": "Q11677",
+   "fame": 0.548,
+   "country": "United States",
+   "description": "American tennis player",
+   "hook": "is a tall baseliner who won three majors and reached world number one",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Barbora Krejčíková",
+   "qid": "Q11052500",
+   "fame": 0.544,
+   "country": "Czech Republic",
+   "description": "Czech tennis player (born 1995)",
+   "hook": "won singles and doubles titles at Roland Garros in the same year",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Angelique Kerber",
+   "qid": "Q77178",
+   "fame": 0.542,
+   "country": "Germany",
+   "description": "German tennis player",
+   "hook": "won two majors in one season and later beat Serena in a Wimbledon final",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Kei Nishikori",
+   "qid": "Q311222",
+   "fame": 0.542,
+   "country": "Japan",
+   "description": "Japanese tennis player (born 1989)",
+   "hook": "became the first Asian man to reach a Grand Slam singles final, in New York",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Juan Carlos Ferrero",
+   "qid": "Q185722",
+   "fame": 0.541,
+   "country": "Spain",
+   "description": "Spanish tennis player (1980-)",
+   "hook": "was world number one and won Roland Garros before mentoring a young champion",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Jim Courier",
+   "qid": "Q53396",
+   "fame": 0.54,
+   "country": "United States",
+   "description": "American tennis player",
+   "hook": "won the Australian and French Opens two years running and reached world number one",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Conchita Martínez",
+   "qid": "Q232618",
+   "fame": 0.539,
+   "country": "Spain",
+   "description": "Spanish tennis player",
+   "hook": "won Wimbledon by beating Martina Navratilova in the final",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Jeļena Ostapenko",
+   "qid": "Q5551564",
+   "fame": 0.539,
+   "country": "Latvia",
+   "description": "Latvian tennis player",
+   "hook": "won the French Open as an unseeded player with fearless, all-out hitting",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Marat Safin",
+   "qid": "Q133318",
+   "fame": 0.539,
+   "country": "Russia",
+   "description": "Russian tennis player",
+   "hook": "won the US Open by beating Pete Sampras and was known for a fiery temper and smashed rackets",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Stefan Edberg",
+   "qid": "Q189542",
+   "fame": 0.539,
+   "country": "Sweden",
+   "description": "Swedish tennis player",
+   "hook": "won six Grand Slam titles with a graceful serve-and-volley game and famed sportsmanship",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Milos Raonic",
+   "qid": "Q312343",
+   "fame": 0.537,
+   "country": "Canada",
+   "description": "Canadian tennis player (born 1990)",
+   "hook": "reached the Wimbledon final with one of the biggest serves on tour",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Justine Henin",
+   "qid": "Q11682",
+   "fame": 0.536,
+   "country": "Belgium",
+   "description": "Belgian tennis player (born 1982)",
+   "hook": "won seven Grand Slam singles titles despite a small frame, famed for a one-handed backhand",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Bianca Andreescu",
+   "qid": "Q22957410",
+   "fame": 0.532,
+   "country": "Canada",
+   "description": "Canadian tennis player",
+   "hook": "beat Serena Williams in the final to win the US Open as a teenager",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Karolína Plíšková",
+   "qid": "Q289365",
+   "fame": 0.53,
+   "country": "Czech Republic",
+   "description": "Czech female tennis player",
+   "hook": "reached world number one with a huge serve and has a twin sister who also plays",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Sam Querrey",
+   "qid": "Q54538",
+   "fame": 0.529,
+   "country": "United States",
+   "description": "American tennis player (born 1987)",
+   "hook": "has an enormous serve and reached the Wimbledon semifinals",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Ana Ivanovic",
+   "qid": "Q30758",
+   "fame": 0.526,
+   "country": "Serbia",
+   "description": "Serbian tennis player",
+   "hook": "won the French Open and rose to world number one",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Donna Vekić",
+   "qid": "Q648854",
+   "fame": 0.511,
+   "country": "Croatia",
+   "description": "Croatian tennis player",
+   "hook": "won an Olympic silver medal in singles after a long injury-hit rise",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Marin Čilić",
+   "qid": "Q245241",
+   "fame": 0.508,
+   "country": "Croatia",
+   "description": "Croatian tennis player (born 1988)",
+   "hook": "won the US Open by beating Kei Nishikori in the final",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Patrick Rafter",
+   "qid": "Q204068",
+   "fame": 0.504,
+   "country": "Australia",
+   "description": "Australian tennis player",
+   "hook": "won back-to-back US Open titles with a serve-and-volley game and famed sportsmanship",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Laura Robson",
+   "qid": "Q10120",
+   "fame": 0.502,
+   "country": "United Kingdom",
+   "description": "British female tennis player",
+   "hook": "won the girls' title at Wimbledon and later an Olympic silver medal alongside Andy Murray",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Petra Kvitová",
+   "qid": "Q30812",
+   "fame": 0.5,
+   "country": "Czech Republic",
+   "description": "Czech tennis player",
+   "hook": "won Wimbledon twice with a powerful left-handed game",
+   "known": 0.6,
+   "kind": "champion"
+  },
+  {
+   "label": "Tim Henman",
+   "qid": "Q221737",
+   "fame": 0.492,
+   "country": "United Kingdom",
+   "description": "British tennis player",
+   "hook": "was the home hope who reached four Wimbledon semifinals but never the final",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Mats Wilander",
+   "qid": "Q16475",
+   "fame": 0.489,
+   "country": "Sweden",
+   "description": "Swedish tennis player",
+   "hook": "won three of the four Grand Slam events in a single season on the way to world number one",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Mahesh Bhupathi",
+   "qid": "Q312554",
+   "fame": 0.487,
+   "country": "India",
+   "description": "Indian tennis player",
+   "hook": "formed the 'Indian Express' doubles pair with Leander Paes",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Arantxa Sánchez Vicario",
+   "qid": "Q188080",
+   "fame": 0.478,
+   "country": "Spain",
+   "description": "Spanish tennis player",
+   "hook": "won the French Open three times and was nicknamed the Barcelona Bumblebee",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Althea Gibson",
+   "qid": "Q53550",
+   "fame": 0.477,
+   "country": "United States",
+   "description": "American tennis player (1927-2003)",
+   "hook": "broke the color barrier by becoming the first Black player to win a Grand Slam title",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Ilie Năstase",
+   "qid": "Q106113",
+   "fame": 0.475,
+   "country": "Romania",
+   "description": "Romanian tennis player and politician",
+   "hook": "was a flamboyant world number one nicknamed 'Nasty' for his on-court antics",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Marion Bartoli",
+   "qid": "Q105838",
+   "fame": 0.473,
+   "country": "France",
+   "description": "French tennis player",
+   "hook": "won Wimbledon hitting two-handed shots on both wings",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Hsieh Su-Wei",
+   "qid": "Q232566",
+   "fame": 0.47,
+   "country": "Taiwan",
+   "description": "Taiwanese female tennis player",
+   "hook": "wins with an unorthodox, spin-and-slice game and has won Wimbledon doubles titles",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Tracy Austin",
+   "qid": "Q53326",
+   "fame": 0.47,
+   "country": "United States",
+   "description": "US tennis player",
+   "hook": "won the US Open as a teenager and reached world number one before injuries cut her career short",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Agnieszka Radwańska",
+   "qid": "Q207352",
+   "fame": 0.469,
+   "country": "Poland",
+   "description": "Polish tennis player",
+   "hook": "reached the Wimbledon final with a crafty, defensive style and the nickname 'the Professor'",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Markéta Vondroušová",
+   "qid": "Q18918709",
+   "fame": 0.458,
+   "country": "Czech Republic",
+   "description": "Czech tennis player",
+   "hook": "won Wimbledon as an unseeded player after reaching the French Open final earlier",
+   "known": 0.6,
+   "kind": "rising star"
+  },
+  {
+   "label": "Samantha Stosur",
+   "qid": "Q191766",
+   "fame": 0.451,
+   "country": "Australia",
+   "description": "Australian tennis player (born 1984)",
+   "hook": "won the US Open by beating Serena Williams in the final",
+   "known": 0.4,
+   "kind": "established pro"
+  },
+  {
+   "label": "Gustavo Kuerten",
+   "qid": "Q190723",
+   "fame": 0.45,
+   "country": "Brazil",
+   "description": "Brazilian tennis player",
+   "hook": "won the French Open three times and drew a heart in the clay after a famous win",
+   "known": 0.2,
+   "kind": "historic pro"
+  },
+  {
+   "label": "Tomáš Berdych",
+   "qid": "Q193665",
+   "fame": 0.45,
+   "country": "Czech Republic",
+   "description": "Czech tennis player (born 1985)",
+   "hook": "reached the Wimbledon final after beating both Federer and Djokovic",
+   "known": 0.4,
+   "kind": "established pro"
+  }
+ ]
+}

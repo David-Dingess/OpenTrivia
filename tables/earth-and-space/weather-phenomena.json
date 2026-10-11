@@ -1,0 +1,321 @@
+{
+ "id": "table.earth-and-space.weather-phenomena",
+ "kind": "table",
+ "title": "Famous weather phenomena",
+ "genre": "science-math-tech",
+ "category": "earth-and-space",
+ "topic": "weather",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { VALUES ?item { wd:Q7925 wd:Q211521 wd:Q11050195 wd:Q37602 wd:Q7561 wd:Q11120024 wd:Q25257 wd:Q14189 wd:Q185638 wd:Q40526 wd:Q182311 wd:Q37477 wd:Q192196 wd:Q8074 wd:Q207546 wd:Q8081 wd:Q8092 wd:Q140588 wd:Q205418 wd:Q2857578 wd:Q182878 wd:Q1022922 wd:Q33741 wd:Q83301 wd:Q192962 wd:Q747894 wd:Q2001587 wd:Q1993841 wd:Q8094 wd:Q42967 wd:Q3023711 wd:Q202325 wd:Q160603 wd:Q1052 wd:Q186310 wd:Q308762 wd:Q208589 wd:Q120688 wd:Q132814 wd:Q166583 wd:Q41097 wd:Q4590598 wd:Q180600 wd:Q178828 wd:Q81041 } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 63",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T16:47:44.539Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T16:47:44.539Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "kind",
+   "label": "Kind",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "weather phenomenon",
+  "many": "weather phenomena",
+  "hookAsk": "Which weather phenomenon {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "lowerInProse": true,
+  "columns": {
+   "kind": {
+    "role": "link",
+    "pick": "What kind of weather is {label}?",
+    "statement": "{label} is a kind of {value}.",
+    "odd": "Three of these are kinds of {value}. Which one isn't?",
+    "all": "Tap all {n} weather phenomena that are kinds of {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "nor'easter",
+   "qid": "Q2001587",
+   "fame": 0.708,
+   "kind": "storm",
+   "description": "storm in the US and Canada",
+   "hook": "is a powerful winter storm that batters the Atlantic coast with heavy snow and howling winds",
+   "known": 0.4
+  },
+  {
+   "label": "tornado",
+   "qid": "Q8081",
+   "fame": 0.595,
+   "kind": "storm",
+   "description": "violently rotating column of air that is in contact with both the earth's surface and a cumulonimbus cloud in the air",
+   "hook": "is a violently spinning funnel of air that tears across land, famous from Kansas and The Wizard of Oz",
+   "known": 0.95
+  },
+  {
+   "label": "St. Elmo's fire",
+   "qid": "Q120688",
+   "fame": 0.575,
+   "kind": "optical",
+   "description": "weather phenomenon",
+   "hook": "is a glowing blue-white glow that sailors saw on the masts of ships during storms",
+   "known": 0.2
+  },
+  {
+   "label": "tropical cyclone",
+   "qid": "Q8092",
+   "fame": 0.569,
+   "kind": "storm",
+   "description": "rapidly rotating storm system that forms in the tropics",
+   "hook": "is a huge spinning storm over warm ocean waters, called a hurricane when it hits the Atlantic",
+   "known": 0.8
+  },
+  {
+   "label": "ball lightning",
+   "qid": "Q192962",
+   "fame": 0.565,
+   "kind": "storm",
+   "description": "extremely rare unexplained atmospheric electrical phenomenon",
+   "hook": "is a rarely seen, mysterious glowing sphere that floats in the air during storms",
+   "known": 0.2
+  },
+  {
+   "label": "rainbow",
+   "qid": "Q1052",
+   "fame": 0.565,
+   "kind": "optical",
+   "description": "meteorological phenomenon caused by reflection, refraction and dispersion of light in water droplets",
+   "hook": "is a colorful arc of red, orange, yellow, green, blue and violet that appears when sun shines through rain",
+   "known": 0.95
+  },
+  {
+   "label": "lightning",
+   "qid": "Q33741",
+   "fame": 0.563,
+   "kind": "storm",
+   "description": "weather phenomenon involving electrostatic discharge",
+   "hook": "is a giant spark of electricity in the sky, and Benjamin Franklin famously flew a kite in one",
+   "known": 0.95
+  },
+  {
+   "label": "typhoon",
+   "qid": "Q140588",
+   "fame": 0.541,
+   "kind": "storm",
+   "description": "mature tropical cyclone that forms in the Western North Pacific Ocean, with winds of at least 118 km/h (64 kts, 32.7 m/s)",
+   "hook": "is the name given to a powerful ocean storm when it strikes East Asia and the Pacific",
+   "known": 0.8
+  },
+  {
+   "label": "dew point",
+   "qid": "Q178828",
+   "fame": 0.539,
+   "kind": "water-cycle-stage",
+   "description": "temperature at which air becomes saturated with water vapour",
+   "hook": "is the temperature at which air becomes so damp that droplets start to form",
+   "known": 0.4
+  },
+  {
+   "label": "monsoon",
+   "qid": "Q42967",
+   "fame": 0.538,
+   "kind": "wind",
+   "description": "seasonal changes in atmospheric circulation and precipitation associated with the asymmetric heating of land and sea",
+   "hook": "is a seasonal wind shift that brings months of heavy rain to South Asia",
+   "known": 0.8
+  },
+  {
+   "label": "sun dog",
+   "qid": "Q208589",
+   "fame": 0.538,
+   "kind": "optical",
+   "description": "atmospheric optical phenomenon",
+   "hook": "is a bright spot of light that appears beside the Sun, caused by ice crystals in the air",
+   "known": 0.2
+  },
+  {
+   "label": "derecho",
+   "qid": "Q3023711",
+   "fame": 0.535,
+   "kind": "wind",
+   "description": "widespread, long-lived, straight-line wind storm associated with a land-based, fast-moving group of severe thunderstorms",
+   "hook": "is a fast-moving line of destructive straight-line winds that can flatten crops across the Midwest",
+   "known": 0.4
+  },
+  {
+   "label": "cloud",
+   "qid": "Q8074",
+   "fame": 0.508,
+   "kind": "cloud-type",
+   "description": "visible mass of liquid droplets or frozen crystals suspended in the atmosphere",
+   "hook": "is a fluffy white or gray mass drifting in the sky, made of tiny droplets of water",
+   "known": 0.95
+  },
+  {
+   "label": "cumulonimbus",
+   "qid": "Q182311",
+   "fame": 0.505,
+   "kind": "cloud",
+   "description": "genus of clouds, dense towering vertical cloud associated with thunderstorms and atmospheric instability",
+   "hook": "is the towering anvil-topped storm giant that brings thunder, hail and heavy rain",
+   "known": 0.4
+  },
+  {
+   "label": "humidity",
+   "qid": "Q180600",
+   "fame": 0.499,
+   "kind": "water-cycle-stage",
+   "description": "amount of water vapor in the air",
+   "hook": "is the amount of moisture in the air that makes a hot day feel sticky and muggy",
+   "known": 0.8
+  },
+  {
+   "label": "heat lightning",
+   "qid": "Q1993841",
+   "fame": 0.497,
+   "kind": "storm",
+   "description": "lightning not accompanied by thunder sound",
+   "hook": "is the flashes seen on warm summer nights from a storm too far away to hear",
+   "known": 0.2
+  },
+  {
+   "label": "thunderstorm",
+   "qid": "Q2857578",
+   "fame": 0.488,
+   "kind": "thunderstorm-weather",
+   "description": "a storm characterized by the presence of lightning, usually accompanied by strong winds and often produce heavy rain and sometimes snow, sleet, or hail, but some produce little precipitation or no precipitation at all",
+   "hook": "is a stormy event with flashes, booms, gusty winds and heavy rain, often on hot afternoons",
+   "known": 0.95
+  },
+  {
+   "label": "waterspout",
+   "qid": "Q1022922",
+   "fame": 0.487,
+   "kind": "storm",
+   "description": "weather phenomenon characterized by an intense columnar vortex that occurs over a body of water",
+   "hook": "is a spinning column of air and mist that rises from a lake or the sea",
+   "known": 0.6
+  },
+  {
+   "label": "rain",
+   "qid": "Q7925",
+   "fame": 0.476,
+   "kind": "precipitation",
+   "description": "liquid water in the form of droplets that have condensed from atmospheric water vapor and then precipitated",
+   "hook": "falls from the sky in drops, and is what umbrellas are made to keep off",
+   "known": 0.95
+  },
+  {
+   "label": "water cycle",
+   "qid": "Q81041",
+   "fame": 0.472,
+   "kind": "water-measurement",
+   "description": "continuous movement of water on, above and below the surface of the Earth",
+   "hook": "is the endless loop in which rain evaporates from the seas, condenses and falls again",
+   "known": 0.8
+  },
+  {
+   "label": "contrail",
+   "qid": "Q207546",
+   "fame": 0.469,
+   "kind": "cloud",
+   "description": "long, thin artificial clouds that sometimes form behind aircraft",
+   "hook": "is the white streak that a jet leaves across the sky at high altitude",
+   "known": 0.6
+  },
+  {
+   "label": "supercell",
+   "qid": "Q747894",
+   "fame": 0.466,
+   "kind": "storm",
+   "description": "thunderstorm that is characterized by the presence of a mesocyclone",
+   "hook": "is a long-lasting rotating storm that is the most dangerous kind, often spawning tornadoes",
+   "known": 0.2
+  },
+  {
+   "label": "jet stream",
+   "qid": "Q202325",
+   "fame": 0.462,
+   "kind": "wind",
+   "description": "fast-flowing atmospheric air-current",
+   "hook": "is a fast river of air high above the Earth that steers weather across continents and speeds up flights",
+   "known": 0.6
+  },
+  {
+   "label": "snow",
+   "qid": "Q7561",
+   "fame": 0.458,
+   "kind": "precipitation",
+   "description": "precipitation in the form of ice crystal flakes",
+   "hook": "falls as white flakes, and is what kids hope for to get a day off school",
+   "known": 0.95
+  },
+  {
+   "label": "trade wind",
+   "qid": "Q160603",
+   "fame": 0.458,
+   "kind": "wind-system",
+   "description": "permanent east-to-west prevailing winds that flow in the Earth's equatorial region",
+   "hook": "is a steady breeze that blows toward the equator and once carried sailing ships across the oceans",
+   "known": 0.2
+  },
+  {
+   "label": "precipitation",
+   "qid": "Q25257",
+   "fame": 0.456,
+   "kind": "precipitation",
+   "description": "liquid or solid water that falls to the ground",
+   "hook": "is the general term for rain, sleet, hail and snow falling from the sky",
+   "known": 0.95
+  },
+  {
+   "label": "thunder",
+   "qid": "Q83301",
+   "fame": 0.455,
+   "kind": "storm",
+   "description": "sound caused by a lightning strike",
+   "hook": "is the loud rumbling boom that follows a bright flash in the sky",
+   "known": 0.95
+  },
+  {
+   "label": "wind",
+   "qid": "Q8094",
+   "fame": 0.453,
+   "kind": "wind-system",
+   "description": "flow of gases or air on a large scale",
+   "hook": "is moving air that fills sails, spins turbines and blows kites",
+   "known": 0.95
+  },
+  {
+   "label": "halo",
+   "qid": "Q186310",
+   "fame": 0.45,
+   "kind": "optical",
+   "description": "optical phenomenon",
+   "hook": "is a bright ring of light seen around the Sun or Moon, caused by ice crystals",
+   "known": 0.4
+  }
+ ]
+}

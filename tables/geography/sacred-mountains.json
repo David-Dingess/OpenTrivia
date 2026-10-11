@@ -1,0 +1,64 @@
+{
+ "id": "table.geography.sacred-mountains",
+ "kind": "table",
+ "title": "Sacred mountains by elevation",
+ "genre": "society",
+ "category": "geography",
+ "topic": "mountains-and-deserts",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?elevation WHERE { ?item wdt:P31 wd:Q8502 . ?item p:P2048 ?ht . ?ht psn:P2048/wikibase:quantityAmount ?elevation ; wikibase:rank ?rank . FILTER(?rank != wikibase:DeprecatedRank) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-24T16:04:50.392Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-24T16:04:50.392Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "elevation_m",
+   "label": "Elevation",
+   "unit": "m",
+   "type": "number"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "item",
+  "many": "items",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Mount Olympus",
+   "qid": "Q80344",
+   "fame": 0.575,
+   "elevation_m": 2918,
+   "description": "mountain in Elassona municipality, Greece"
+  },
+  {
+   "label": "Mauna Kea",
+   "qid": "Q131230",
+   "fame": 0.57,
+   "elevation_m": 9754,
+   "description": "Hawaiian volcano"
+  },
+  {
+   "label": "Stone Mountain",
+   "qid": "Q609700",
+   "fame": 0.5,
+   "elevation_m": 513,
+   "description": "mountain and state park in Georgia, United States"
+  }
+ ]
+}

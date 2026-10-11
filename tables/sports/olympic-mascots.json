@@ -1,0 +1,217 @@
+{
+ "id": "table.sports.olympic-mascots",
+ "kind": "table",
+ "title": "Olympic mascots",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "olympics",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?mascotLabel WHERE { { SELECT ?item (SAMPLE(?m) AS ?mascot) (COUNT(DISTINCT ?m) AS ?n) WHERE { ?item wdt:P822 ?m . ?item rdfs:label ?l . FILTER(LANG(?l)=\"en\" && REGEX(STR(?l),\"^[0-9]{4} (Summer|Winter) Olympics$\")) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?n = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-03T02:33:24.397Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-03T02:33:24.397Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "mascot",
+   "label": "Mascot",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "Olympic Games",
+  "many": "Olympic Games",
+  "columns": {
+   "mascot": {
+    "role": "code",
+    "pick": "Which mascot represented the {label}?",
+    "statement": "The mascot of the {label} was {value}.",
+    "reverse": "Which Olympic Games had {value} as its mascot?",
+    "match": "Match each Olympic Games to its mascot."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "2024 Summer Olympics",
+   "qid": "Q995653",
+   "fame": 0.662,
+   "mascot": "Olympic Phryge",
+   "description": "games of the XXXIII Olympiad, in Paris, France",
+   "hook": "made its city only the second ever to host the Games three times, after London",
+   "known": 0.6,
+   "kind": "summer olympics"
+  },
+  {
+   "label": "2026 Winter Olympics",
+   "qid": "Q4630399",
+   "fame": 0.6,
+   "mascot": "Tina",
+   "description": "25ᵗʰ edition of Winter Olympics, in Milan and Cortina d'Ampezzo, Italy",
+   "hook": "was the first Games ever officially shared between two cities, and the debut of ski mountaineering",
+   "known": 0.4,
+   "kind": "winter olympics"
+  },
+  {
+   "label": "2020 Summer Olympics",
+   "qid": "Q181278",
+   "fame": 0.583,
+   "mascot": "Miraitowa",
+   "description": "games of the XXXII Olympiad, in Tokyo, Japan, held in 2021",
+   "hook": "was delayed a full year by the COVID-19 pandemic yet kept its original name, and was played without spectators",
+   "known": 0.6,
+   "kind": "summer olympics"
+  },
+  {
+   "label": "2012 Summer Olympics",
+   "qid": "Q8577",
+   "fame": 0.541,
+   "mascot": "Wenlock",
+   "description": "Games of the XXX Olympiad, in London, United Kingdom",
+   "hook": "made its city the first ever to host the modern Games three times",
+   "known": 0.6,
+   "kind": "summer olympics"
+  },
+  {
+   "label": "2016 Summer Olympics",
+   "qid": "Q8613",
+   "fame": 0.538,
+   "mascot": "Vinicius",
+   "description": "Games of the XXXI Olympiad, in Rio de Janeiro, Brazil",
+   "hook": "was the first Games held in South America and the first in a Portuguese-speaking country",
+   "known": 0.4,
+   "kind": "summer olympics"
+  },
+  {
+   "label": "2008 Summer Olympics",
+   "qid": "Q8567",
+   "fame": 0.523,
+   "mascot": "Fuwa",
+   "description": "Games of the XXIX Olympiad, in Beijing, China",
+   "hook": "was the first Games hosted by the world's most populous country, drawing 204 national teams",
+   "known": 0.4,
+   "kind": "summer olympics"
+  },
+  {
+   "label": "1972 Summer Olympics",
+   "qid": "Q8438",
+   "fame": 0.51,
+   "mascot": "Waldi",
+   "description": "Games of the XX Olympiad, in Munich, West Germany",
+   "hook": null,
+   "known": 0.2,
+   "kind": "summer olympics"
+  },
+  {
+   "label": "1996 Summer Olympics",
+   "qid": "Q8531",
+   "fame": 0.508,
+   "mascot": "Izzy",
+   "description": "Games of the XXVI Olympiad, in Atlanta, USA",
+   "hook": "marked the 100th anniversary of the modern Games and was nicknamed the Centennial Games",
+   "known": 0.4,
+   "kind": "summer olympics"
+  },
+  {
+   "label": "2000 Summer Olympics",
+   "qid": "Q8544",
+   "fame": 0.507,
+   "mascot": "Olly, Sid and Millie",
+   "description": "Games of the XXVII Olympiad, in Sydney, Australia",
+   "hook": "was nicknamed the Games of the New Millennium and was the first to have at least 300 events",
+   "known": 0.4,
+   "kind": "summer olympics"
+  },
+  {
+   "label": "2004 Summer Olympics",
+   "qid": "Q8558",
+   "fame": 0.495,
+   "mascot": "Athena and Phevos",
+   "description": "Games of the XXVIII Olympiad, in Athens, Greece",
+   "hook": null,
+   "known": 0.2,
+   "kind": "summer olympics"
+  },
+  {
+   "label": "1984 Summer Olympics",
+   "qid": "Q8456",
+   "fame": 0.489,
+   "mascot": "Sam",
+   "description": "Games of the XXIII Olympiad, in Los Angeles, USA",
+   "hook": "opened with a man flying into the stadium on a jet pack and became the first Games to turn a big profit",
+   "known": 0.4,
+   "kind": "summer olympics"
+  },
+  {
+   "label": "1988 Summer Olympics",
+   "qid": "Q8470",
+   "fame": 0.487,
+   "mascot": "Hodori",
+   "description": "Games of the XXIV Olympiad, in Seoul, South Korea",
+   "hook": null,
+   "known": 0.2,
+   "kind": "summer olympics"
+  },
+  {
+   "label": "1992 Summer Olympics",
+   "qid": "Q8488",
+   "fame": 0.479,
+   "mascot": "Cobi",
+   "description": "Games of the XXV Olympiad in Barcelona, Catalonia, Spain",
+   "hook": null,
+   "known": 0.2,
+   "kind": "summer olympics"
+  },
+  {
+   "label": "1980 Summer Olympics",
+   "qid": "Q8450",
+   "fame": 0.477,
+   "mascot": "Misha",
+   "description": "Games of the XXII Olympiad, in Moscow, USSR",
+   "hook": "was the first Games staged in an Eastern Bloc country",
+   "known": 0.4,
+   "kind": "summer olympics"
+  },
+  {
+   "label": "2022 Winter Olympics",
+   "qid": "Q193074",
+   "fame": 0.466,
+   "mascot": "Bing Dwen Dwen",
+   "description": "24th edition of Winter Olympics, in Beijing, China",
+   "hook": "made its city the first ever to host both the hot-weather and cold-weather Games, with no fans at first",
+   "known": 0.4,
+   "kind": "winter olympics"
+  },
+  {
+   "label": "1976 Summer Olympics",
+   "qid": "Q8444",
+   "fame": 0.461,
+   "mascot": "Amik",
+   "description": "Games of the XXI Olympiad, in Montréal, Canada",
+   "hook": null,
+   "known": 0.2,
+   "kind": "summer olympics"
+  }
+ ]
+}

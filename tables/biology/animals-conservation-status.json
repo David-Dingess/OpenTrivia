@@ -1,0 +1,1100 @@
+{
+ "id": "table.biology.animals-conservation-status",
+ "kind": "table",
+ "title": "Animals by conservation status",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "wildlife",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?stLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?s) AS ?st) (COUNT(DISTINCT ?s) AS ?n) WHERE { ?item wdt:P31 wd:Q16521 ; wdt:P141 ?s ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 60) } GROUP BY ?item ?sitelinks HAVING(COUNT(DISTINCT ?s)=1) ORDER BY DESC(?sitelinks) LIMIT 400 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T01:31:12.929Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T01:31:12.929Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "status",
+   "label": "IUCN status",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "animal",
+  "many": "animals",
+  "capitalise": true,
+  "columns": {
+   "status": {
+    "role": "link",
+    "pick": "What is the IUCN conservation status of the {label}?",
+    "statement": "The IUCN lists the {label} as {value}.",
+    "match": "Match each animal to its IUCN conservation status.",
+    "odd": "Three of these animals are listed by the IUCN as {value}. Which one is not?",
+    "all": "Tap all {n} animals the IUCN lists as {value}.",
+    "reverse": "Which of these animals is listed by the IUCN as {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "lion",
+   "qid": "Q140",
+   "fame": 0.673,
+   "status": "vulnerable",
+   "description": "species of big cat",
+   "hook": "lives in social groups called prides and is nicknamed the king of the jungle",
+   "known": 0.95,
+   "kind": "big cat"
+  },
+  {
+   "label": "capybara",
+   "qid": "Q131538",
+   "fame": 0.671,
+   "status": "least concern",
+   "description": "species of large semiaquatic rodent in the cavy family",
+   "hook": "is the world's largest rodent and is famously relaxed around other animals",
+   "known": 0.4,
+   "kind": "rodent"
+  },
+  {
+   "label": "Giant panda",
+   "qid": "Q33602",
+   "fame": 0.671,
+   "status": "vulnerable",
+   "description": "species of mammal",
+   "hook": "eats almost nothing but bamboo and is the emblem of a major wildlife charity",
+   "known": 0.7,
+   "kind": "bear"
+  },
+  {
+   "label": "wolverine",
+   "qid": "Q14334",
+   "fame": 0.669,
+   "status": "least concern",
+   "description": "largest land-dwelling species of the family Mustelidae",
+   "hook": "is a fierce, stocky member of the weasel family known for tackling prey far larger than itself",
+   "known": 0.3,
+   "kind": "mustelid"
+  },
+  {
+   "label": "tiger",
+   "qid": "Q19939",
+   "fame": 0.666,
+   "status": "endangered",
+   "description": "species of big cat",
+   "hook": "is the largest wild cat and wears orange fur with bold black stripes",
+   "known": 0.95,
+   "kind": "big cat"
+  },
+  {
+   "label": "grey wolf",
+   "qid": "Q18498",
+   "fame": 0.65,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is the wild ancestor of the domestic dog and howls to keep its pack in touch",
+   "known": 0.85,
+   "kind": "wild canine"
+  },
+  {
+   "label": "cougar",
+   "qid": "Q35255",
+   "fame": 0.647,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a big cat also known as the mountain lion or puma",
+   "known": 0.6,
+   "kind": "big cat"
+  },
+  {
+   "label": "jaguar",
+   "qid": "Q35694",
+   "fame": 0.646,
+   "status": "near threatened",
+   "description": "species of big cat native to the Americas",
+   "hook": "is the largest cat of the Americas, with a bite strong enough to crack turtle shells",
+   "known": 0.75,
+   "kind": "big cat"
+  },
+  {
+   "label": "Komodo dragon",
+   "qid": "Q4504",
+   "fame": 0.644,
+   "status": "endangered",
+   "description": "species of reptile",
+   "hook": "is the heaviest lizard alive and hunts deer and pigs on Indonesian islands",
+   "known": 0.7,
+   "kind": "reptile"
+  },
+  {
+   "label": "coyote",
+   "qid": "Q44299",
+   "fame": 0.643,
+   "status": "least concern",
+   "description": "species of canine",
+   "hook": "is a howling trickster of the American West, chased in cartoons by a roadrunner",
+   "known": 0.5,
+   "kind": "wild canine"
+  },
+  {
+   "label": "raccoon",
+   "qid": "Q121439",
+   "fame": 0.64,
+   "status": "least concern",
+   "description": "species of mammal native to North America",
+   "hook": "wears a black bandit mask and dunks its food in water with clever paws",
+   "known": 0.6,
+   "kind": "mammal"
+  },
+  {
+   "label": "moose",
+   "qid": "Q35517",
+   "fame": 0.636,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is the largest member of the deer family and sports huge flat antlers",
+   "known": 0.6,
+   "kind": "ungulate"
+  },
+  {
+   "label": "platypus",
+   "qid": "Q15343",
+   "fame": 0.636,
+   "status": "near threatened",
+   "description": "semi-aquatic egg-laying mammal endemic to Australia",
+   "hook": "is a duck-billed, beaver-tailed mammal that lays eggs",
+   "known": 0.5,
+   "kind": "mammal"
+  },
+  {
+   "label": "sperm whale",
+   "qid": "Q81214",
+   "fame": 0.635,
+   "status": "vulnerable",
+   "description": "largest species of toothed whale",
+   "hook": "has the biggest brain of any animal and dives deep to hunt giant squid",
+   "known": 0.6,
+   "kind": "marine mammal"
+  },
+  {
+   "label": "honey badger",
+   "qid": "Q173128",
+   "fame": 0.632,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is famed for its fearless attitude, standing up to lions and venomous snakes",
+   "known": 0.3,
+   "kind": "mammal"
+  },
+  {
+   "label": "cheetah",
+   "qid": "Q23907",
+   "fame": 0.631,
+   "status": "vulnerable",
+   "description": "species of mammal",
+   "hook": "is the fastest land animal, sprinting in short bursts across the savanna",
+   "known": 0.75,
+   "kind": "big cat"
+  },
+  {
+   "label": "leopard",
+   "qid": "Q34706",
+   "fame": 0.622,
+   "status": "vulnerable",
+   "description": "species of big cat",
+   "hook": "is a spotted big cat that hauls its kills up into trees",
+   "known": 0.8,
+   "kind": "big cat"
+  },
+  {
+   "label": "whale shark",
+   "qid": "Q80378",
+   "fame": 0.621,
+   "status": "endangered",
+   "description": "species of fish",
+   "hook": "is the largest fish in the sea and filter-feeds on plankton",
+   "known": 0.6,
+   "kind": "fish"
+  },
+  {
+   "label": "bobcat",
+   "qid": "Q131907",
+   "fame": 0.619,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a stub-tailed North American feline with tufted ears",
+   "known": 0.4,
+   "kind": "big cat"
+  },
+  {
+   "label": "brown bear",
+   "qid": "Q36341",
+   "fame": 0.618,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a huge omnivore that includes the grizzly and Kodiak types",
+   "known": 0.8,
+   "kind": "bear"
+  },
+  {
+   "label": "Red Panda",
+   "qid": "Q41960",
+   "fame": 0.616,
+   "status": "endangered",
+   "description": "species of small mammal from the Ailuridae family, native to Eastern Himalayas and Southwest China",
+   "hook": "is a raccoon-like, tree-dwelling bamboo eater with a ringed bushy tail",
+   "known": 0.4,
+   "kind": "mammal"
+  },
+  {
+   "label": "American black bear",
+   "qid": "Q122783",
+   "fame": 0.615,
+   "status": "least concern",
+   "description": "species of bear",
+   "hook": "is the most widespread big carnivore of the continent's forests, notorious for raiding campsites",
+   "known": 0.6,
+   "kind": "bear"
+  },
+  {
+   "label": "Nile hippopotamus",
+   "qid": "Q34505",
+   "fame": 0.615,
+   "status": "vulnerable",
+   "description": "species of mammal (artiodactyl)",
+   "hook": "spends its days submerged in African rivers and is far more dangerous than it looks",
+   "known": 0.7,
+   "kind": "ungulate"
+  },
+  {
+   "label": "great white shark",
+   "qid": "Q129026",
+   "fame": 0.614,
+   "status": "vulnerable",
+   "description": "species of large lamniform shark",
+   "hook": "is the ocean predator made famous by the movie Jaws",
+   "known": 0.8,
+   "kind": "fish"
+  },
+  {
+   "label": "chimpanzee",
+   "qid": "Q4126704",
+   "fame": 0.609,
+   "status": "endangered",
+   "description": "species of mammal; species of ape",
+   "hook": "is a tool-using ape that shares most of its DNA with humans",
+   "known": 0.8,
+   "kind": "primate"
+  },
+  {
+   "label": "narwhal",
+   "qid": "Q159426",
+   "fame": 0.608,
+   "status": "least concern",
+   "description": "medium-sized toothed whale that lives year-round in the Arctic",
+   "hook": "is the Arctic unicorn of the sea, with a long spiral tusk",
+   "known": 0.4,
+   "kind": "marine mammal"
+  },
+  {
+   "label": "Tasmanian devil",
+   "qid": "Q134964",
+   "fame": 0.607,
+   "status": "endangered",
+   "description": "species of carnivorous marsupial from Australia",
+   "hook": "is a screeching marsupial scavenger that inspired a spinning Looney Tunes character",
+   "known": 0.3,
+   "kind": "mammal"
+  },
+  {
+   "label": "Kakapo",
+   "qid": "Q179959",
+   "fame": 0.606,
+   "status": "critically endangered",
+   "description": "species of non-flying New Zealand parrot",
+   "hook": "is a nocturnal, flightless parrot and the heaviest of its kind",
+   "known": 0.1,
+   "kind": "bird"
+  },
+  {
+   "label": "Peregrine Falcon",
+   "qid": "Q30535",
+   "fame": 0.605,
+   "status": "least concern",
+   "description": "species of bird of prey",
+   "hook": "is the fastest animal on Earth when diving after prey",
+   "known": 0.7,
+   "kind": "raptor"
+  },
+  {
+   "label": "caracal",
+   "qid": "Q30847",
+   "fame": 0.603,
+   "status": "least concern",
+   "description": "species of wild cat",
+   "hook": "is a wild cat with long black ear tufts that can snatch birds out of the air",
+   "known": 0.2,
+   "kind": "big cat"
+  },
+  {
+   "label": "snow leopard",
+   "qid": "Q30197",
+   "fame": 0.603,
+   "status": "vulnerable",
+   "description": "large felid native to the mountains of Central and South Asia",
+   "hook": "is an elusive mountain big cat nicknamed the ghost of the mountains",
+   "known": 0.6,
+   "kind": "big cat"
+  },
+  {
+   "label": "bald eagle",
+   "qid": "Q127216",
+   "fame": 0.597,
+   "status": "least concern",
+   "description": "species of bird of prey found in North America",
+   "hook": "is the national bird of the United States",
+   "known": 0.9,
+   "kind": "raptor"
+  },
+  {
+   "label": "Bonobo",
+   "qid": "Q19537",
+   "fame": 0.597,
+   "status": "endangered",
+   "description": "one of two species in the genus Pan, along with the common chimpanzee",
+   "hook": "is an ape from the Congo basin and a close cousin of the chimpanzee",
+   "known": 0.6,
+   "kind": "primate"
+  },
+  {
+   "label": "ocelot",
+   "qid": "Q33261",
+   "fame": 0.593,
+   "status": "least concern",
+   "description": "species of wild cat",
+   "hook": "is a sleek, spotted wild cat of the Americas whose coat was once prized in fashion",
+   "known": 0.3,
+   "kind": "big cat"
+  },
+  {
+   "label": "Osprey",
+   "qid": "Q25332",
+   "fame": 0.593,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is a fish-hunting raptor that dives feet-first into the water",
+   "known": 0.4,
+   "kind": "raptor"
+  },
+  {
+   "label": "American bison",
+   "qid": "Q82728",
+   "fame": 0.59,
+   "status": "near threatened",
+   "description": "North American species of even-toed ungulates",
+   "hook": "is the national mammal of the United States, once roaming the Great Plains in vast herds",
+   "known": 0.7,
+   "kind": "ungulate"
+  },
+  {
+   "label": "Golden Eagle",
+   "qid": "Q41181",
+   "fame": 0.589,
+   "status": "least concern",
+   "description": "species of bird of prey",
+   "hook": "is a huge brown raptor that has been used in falconry for centuries",
+   "known": 0.7,
+   "kind": "raptor"
+  },
+  {
+   "label": "wild boar",
+   "qid": "Q58697",
+   "fame": 0.588,
+   "status": "least concern",
+   "description": "omnivore species of mammal",
+   "hook": "is the bristly ancestor of the domestic pig",
+   "known": 0.5,
+   "kind": "mammal"
+  },
+  {
+   "label": "koala",
+   "qid": "Q36101",
+   "fame": 0.587,
+   "status": "vulnerable",
+   "description": "arboreal herbivorous marsupial native to Australia",
+   "hook": "is a eucalyptus-munching marsupial that sleeps most of the day",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "red fox",
+   "qid": "Q8332",
+   "fame": 0.587,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a cunning, orange-coated canine with a white-tipped bushy tail",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "aardvark",
+   "qid": "Q46212",
+   "fame": 0.583,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a nocturnal African mammal that digs for termites with a long sticky tongue",
+   "known": 0.3,
+   "kind": "mammal"
+  },
+  {
+   "label": "Pallas's cat",
+   "qid": "Q166794",
+   "fame": 0.583,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a round-faced, fluffy wild feline that became an internet favorite for its grumpy look",
+   "known": 0.2,
+   "kind": "big cat"
+  },
+  {
+   "label": "walrus",
+   "qid": "Q40994",
+   "fame": 0.582,
+   "status": "vulnerable",
+   "description": "species of mammal",
+   "hook": "is a whiskered Arctic mammal with long ivory tusks",
+   "known": 0.5,
+   "kind": "marine mammal"
+  },
+  {
+   "label": "humpback whale",
+   "qid": "Q132905",
+   "fame": 0.567,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a giant of the sea known for breaching and singing long, complex songs",
+   "known": 0.8,
+   "kind": "marine mammal"
+  },
+  {
+   "label": "serval",
+   "qid": "Q42699",
+   "fame": 0.564,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a long-legged African wild cat with huge ears that leaps high to catch birds",
+   "known": 0.2,
+   "kind": "big cat"
+  },
+  {
+   "label": "Emu",
+   "qid": "Q93208",
+   "fame": 0.562,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is a tall flightless bird of Australia, second-tallest bird in the world",
+   "known": 0.7,
+   "kind": "bird"
+  },
+  {
+   "label": "sand cat",
+   "qid": "Q175329",
+   "fame": 0.562,
+   "status": "least concern",
+   "description": "species of the only cat living foremost in true deserts",
+   "hook": "is a small desert-dwelling feline with furry paws that walk on hot dunes",
+   "known": 0.1,
+   "kind": "big cat"
+  },
+  {
+   "label": "meerkat",
+   "qid": "Q134015",
+   "fame": 0.556,
+   "status": "least concern",
+   "description": "species of mongoose",
+   "hook": "stands guard on its hind legs in desert groups and inspired Timon from The Lion King",
+   "known": 0.5,
+   "kind": "mammal"
+  },
+  {
+   "label": "beluga whale",
+   "qid": "Q132072",
+   "fame": 0.555,
+   "status": "least concern",
+   "description": "species of whale",
+   "hook": "is a white Arctic cetacean nicknamed the canary of the sea for its chirps and whistles",
+   "known": 0.5,
+   "kind": "marine mammal"
+  },
+  {
+   "label": "African wild dog",
+   "qid": "Q173651",
+   "fame": 0.554,
+   "status": "endangered",
+   "description": "species of canid native to Sub-Saharan Africa",
+   "hook": "is a mottled, big-eared pack hunter of the savanna that reportedly votes by sneezing",
+   "known": 0.4,
+   "kind": "wild canine"
+  },
+  {
+   "label": "European wildcat",
+   "qid": "Q43576",
+   "fame": 0.553,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a striped, bushy-tailed forest feline that resembles a sturdy tabby",
+   "known": 0.2,
+   "kind": "big cat"
+  },
+  {
+   "label": "Budgerigar",
+   "qid": "Q121221",
+   "fame": 0.552,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is a small green-and-yellow parakeet popular as a talkative pet",
+   "known": 0.5,
+   "kind": "bird"
+  },
+  {
+   "label": "African bush elephant",
+   "qid": "Q36557",
+   "fame": 0.548,
+   "status": "endangered",
+   "description": "species of mammal; largest land animal",
+   "hook": "is the largest living land animal on Earth, with big fan-shaped ears",
+   "known": 0.9,
+   "kind": "ungulate"
+  },
+  {
+   "label": "Arctic fox",
+   "qid": "Q82738",
+   "fame": 0.548,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "changes its coat to snowy white for the winter",
+   "known": 0.4,
+   "kind": "mammal"
+  },
+  {
+   "label": "Northern Raven",
+   "qid": "Q25357",
+   "fame": 0.547,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is a huge, glossy black bird tied to Norse myth and a famous Poe poem",
+   "known": 0.6,
+   "kind": "bird"
+  },
+  {
+   "label": "Secretarybird",
+   "qid": "Q168748",
+   "fame": 0.544,
+   "status": "endangered",
+   "description": "large, mostly terrestrial bird of prey",
+   "hook": "is a long-legged African raptor famous for stomping snakes",
+   "known": 0.2,
+   "kind": "raptor"
+  },
+  {
+   "label": "red deer",
+   "qid": "Q79794",
+   "fame": 0.543,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is one of the largest land mammals in Europe, with stags that roar during the autumn rut",
+   "known": 0.5,
+   "kind": "ungulate"
+  },
+  {
+   "label": "Nile crocodile",
+   "qid": "Q168745",
+   "fame": 0.541,
+   "status": "least concern",
+   "description": "species of reptile",
+   "hook": "is a huge African river predator famed for ambushing migrating wildebeest",
+   "known": 0.8,
+   "kind": "reptile"
+  },
+  {
+   "label": "House Sparrow",
+   "qid": "Q14683",
+   "fame": 0.538,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is one of the most widespread birds, thriving in towns and cities across the globe",
+   "known": 0.8,
+   "kind": "bird"
+  },
+  {
+   "label": "White rhinoceros",
+   "qid": "Q159918",
+   "fame": 0.537,
+   "status": "near threatened",
+   "description": "species of mammal",
+   "hook": "is the second-largest land mammal, with a wide square lip for grazing",
+   "known": 0.6,
+   "kind": "ungulate"
+  },
+  {
+   "label": "mallard",
+   "qid": "Q25348",
+   "fame": 0.531,
+   "status": "least concern",
+   "description": "species of duck",
+   "hook": "is the classic quacking pond bird, the male sporting a glossy green head",
+   "known": 0.8,
+   "kind": "bird"
+  },
+  {
+   "label": "dhole",
+   "qid": "Q132585",
+   "fame": 0.53,
+   "status": "endangered",
+   "description": "species of mammal",
+   "hook": "is a red-coated wild canine that hunts in packs and whistles to its packmates",
+   "known": 0.1,
+   "kind": "wild canine"
+  },
+  {
+   "label": "musk ox",
+   "qid": "Q184004",
+   "fame": 0.527,
+   "status": "least concern",
+   "description": "species of bovid from the Arctic, known for its thick coat of hair and strong odor",
+   "hook": "is a shaggy Arctic grazer that forms a defensive circle to protect its young from wolves",
+   "known": 0.3,
+   "kind": "ungulate"
+  },
+  {
+   "label": "Red Junglefowl",
+   "qid": "Q184774",
+   "fame": 0.526,
+   "status": "least concern",
+   "description": "species of bird; ancestor of the chicken",
+   "hook": "is the wild forest bird from which the farmyard hen was domesticated",
+   "known": 0.6,
+   "kind": "bird"
+  },
+  {
+   "label": "Andean Condor",
+   "qid": "Q170598",
+   "fame": 0.524,
+   "status": "vulnerable",
+   "description": "species of bird",
+   "hook": "is a huge South American vulture with a white neck ruff, soaring over the mountains",
+   "known": 0.4,
+   "kind": "bird"
+  },
+  {
+   "label": "Rock Dove",
+   "qid": "Q42326",
+   "fame": 0.522,
+   "status": "least concern",
+   "description": "species of pigeon; the wild bird from which domesticated pigeons derive",
+   "hook": "is the common city bird whose tamed descendants were used to carry messages",
+   "known": 0.7,
+   "kind": "bird"
+  },
+  {
+   "label": "Asian elephant",
+   "qid": "Q133006",
+   "fame": 0.52,
+   "status": "endangered",
+   "description": "species of mammal",
+   "hook": "is a large gray giant of South and Southeast Asia, smaller-eared than its African cousin",
+   "known": 0.8,
+   "kind": "ungulate"
+  },
+  {
+   "label": "adder",
+   "qid": "Q192056",
+   "fame": 0.514,
+   "status": "least concern",
+   "description": "species of snake belonging to the viper family (Viperidae)",
+   "hook": "is Britain's only venomous serpent, marked with a zigzag stripe down its back",
+   "known": 0.4,
+   "kind": "reptile"
+  },
+  {
+   "label": "bearded vulture",
+   "qid": "Q126167",
+   "fame": 0.514,
+   "status": "near threatened",
+   "description": "species of bird",
+   "hook": "is a mountain bird that drops bones from a height to smash them and eat the marrow",
+   "known": 0.2,
+   "kind": "raptor"
+  },
+  {
+   "label": "muskrat",
+   "qid": "Q26283",
+   "fame": 0.513,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a semi-aquatic North American rodent that builds lodges in marshes and has a scaly flat tail",
+   "known": 0.2,
+   "kind": "mammal"
+  },
+  {
+   "label": "clouded leopard",
+   "qid": "Q36135",
+   "fame": 0.509,
+   "status": "vulnerable",
+   "description": "species of mammal",
+   "hook": "is a tree-climbing wild cat with cloud-shaped markings and very long canine teeth",
+   "known": 0.3,
+   "kind": "big cat"
+  },
+  {
+   "label": "Eurasian Red Squirrel",
+   "qid": "Q4388",
+   "fame": 0.509,
+   "status": "least concern",
+   "description": "species of tree squirrel common throughout Eurasia",
+   "hook": "is a bushy-tailed, tufted-eared tree dweller, native and beloved in woodlands, pushed out by grey newcomers",
+   "known": 0.4,
+   "kind": "mammal"
+  },
+  {
+   "label": "pike",
+   "qid": "Q165278",
+   "fame": 0.507,
+   "status": "least concern",
+   "description": "species of fish",
+   "hook": "is a toothy, torpedo-shaped freshwater ambush hunter with a long duck-billed snout",
+   "known": 0.3,
+   "kind": "fish"
+  },
+  {
+   "label": "Eurasian lynx",
+   "qid": "Q43375",
+   "fame": 0.505,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a tufted-eared, short-tailed wild cat that stalks deer in the forests of Europe and Asia",
+   "known": 0.4,
+   "kind": "big cat"
+  },
+  {
+   "label": "house mouse",
+   "qid": "Q83310",
+   "fame": 0.503,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is the tiny common rodent kept as a lab subject and pet, and found in nearly every home",
+   "known": 0.6,
+   "kind": "mammal"
+  },
+  {
+   "label": "Indian Peafowl",
+   "qid": "Q61865",
+   "fame": 0.503,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is a showy bird whose male fans out a huge shimmering train of eyed feathers",
+   "known": 0.7,
+   "kind": "bird"
+  },
+  {
+   "label": "golden jackal",
+   "qid": "Q128098",
+   "fame": 0.502,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a wild dog often heard howling at dusk, a scavenger of the Middle East and Southern Asia",
+   "known": 0.3,
+   "kind": "wild canine"
+  },
+  {
+   "label": "African buffalo",
+   "qid": "Q160042",
+   "fame": 0.501,
+   "status": "near threatened",
+   "description": "species of mammal",
+   "hook": "is a massive, heavily horned grazer of the savanna, known as a dangerous animal to hunters",
+   "known": 0.5,
+   "kind": "ungulate"
+  },
+  {
+   "label": "great tit",
+   "qid": "Q25485",
+   "fame": 0.501,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is a small yellow-bellied garden bird with a black stripe down its front, common at feeders",
+   "known": 0.3,
+   "kind": "bird"
+  },
+  {
+   "label": "Eurasian Eagle-owl",
+   "qid": "Q130933",
+   "fame": 0.496,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is one of the biggest nocturnal raptors, with bright orange eyes and prominent ear tufts",
+   "known": 0.4,
+   "kind": "raptor"
+  },
+  {
+   "label": "European pine marten",
+   "qid": "Q26046",
+   "fame": 0.495,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a chocolate-brown, cat-sized relative of the weasel with a creamy bib, hunting in treetops",
+   "known": 0.2,
+   "kind": "mammal"
+  },
+  {
+   "label": "European robin",
+   "qid": "Q25334",
+   "fame": 0.495,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is a small garden bird with an orange-red breast, long tied to Christmas cards",
+   "known": 0.7,
+   "kind": "bird"
+  },
+  {
+   "label": "roe deer",
+   "qid": "Q122069",
+   "fame": 0.495,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a small, graceful woodland grazer whose males grow short three-pointed antlers",
+   "known": 0.3,
+   "kind": "ungulate"
+  },
+  {
+   "label": "Eurasian Magpie",
+   "qid": "Q25307",
+   "fame": 0.494,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is a glossy black-and-white bird with a long tail, famous in a counting rhyme and for collecting shiny things",
+   "known": 0.5,
+   "kind": "bird"
+  },
+  {
+   "label": "Great Egret",
+   "qid": "Q130730",
+   "fame": 0.494,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is a tall, elegant white wader that stands motionless in shallows, spearing fish",
+   "known": 0.4,
+   "kind": "bird"
+  },
+  {
+   "label": "chamois",
+   "qid": "Q131340",
+   "fame": 0.493,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a nimble goat-antelope that leaps across steep Alpine cliffs",
+   "known": 0.2,
+   "kind": "ungulate"
+  },
+  {
+   "label": "Common Blackbird",
+   "qid": "Q25234",
+   "fame": 0.492,
+   "status": "least concern",
+   "description": "species of thrush",
+   "hook": "is a garden songbird, the male jet black with a bright orange-yellow bill, famous in a nursery rhyme",
+   "known": 0.6,
+   "kind": "bird"
+  },
+  {
+   "label": "Eurasian badger",
+   "qid": "Q27066",
+   "fame": 0.489,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a black-and-white striped-faced digger that lives in underground setts and comes out at night",
+   "known": 0.4,
+   "kind": "mammal"
+  },
+  {
+   "label": "White-tailed Eagle",
+   "qid": "Q25438",
+   "fame": 0.489,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is a huge sea-coast raptor with a nickname of flying barn door for its broad wings",
+   "known": 0.4,
+   "kind": "raptor"
+  },
+  {
+   "label": "Common Starling",
+   "qid": "Q25469",
+   "fame": 0.488,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is a glossy speckled bird known for huge swirling flocks at dusk and for mimicking sounds",
+   "known": 0.5,
+   "kind": "bird"
+  },
+  {
+   "label": "Rook",
+   "qid": "Q25386",
+   "fame": 0.487,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is a large black bird that nests in noisy colonies in tall treetops, close kin of the crow",
+   "known": 0.3,
+   "kind": "bird"
+  },
+  {
+   "label": "common ostrich",
+   "qid": "Q17592",
+   "fame": 0.484,
+   "status": "least concern",
+   "description": "species of large flightless bird",
+   "hook": "is the world's largest bird, unable to fly but able to outrun most predators",
+   "known": 0.9,
+   "kind": "bird"
+  },
+  {
+   "label": "Snowy Owl",
+   "qid": "Q170177",
+   "fame": 0.482,
+   "status": "vulnerable",
+   "description": "species of bird",
+   "hook": "is a white Arctic hunter that flies by day and was Harry Potter's pet Hedwig",
+   "known": 0.6,
+   "kind": "bird"
+  },
+  {
+   "label": "Mute Swan",
+   "qid": "Q25402",
+   "fame": 0.471,
+   "status": "least concern",
+   "description": "species of swan",
+   "hook": "is a graceful white water bird with an orange bill, historically owned by the British crown",
+   "known": 0.7,
+   "kind": "bird"
+  },
+  {
+   "label": "Common Buzzard",
+   "qid": "Q25385",
+   "fame": 0.47,
+   "status": "least concern",
+   "description": "species of bird of prey",
+   "hook": "is a broad-winged raptor often seen circling on thermals and crying out with a mewing call",
+   "known": 0.4,
+   "kind": "raptor"
+  },
+  {
+   "label": "Jungle cat",
+   "qid": "Q42623",
+   "fame": 0.469,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a long-legged, slender wild cat that hunts around reed beds and wetlands",
+   "known": 0.1,
+   "kind": "big cat"
+  },
+  {
+   "label": "impala",
+   "qid": "Q132576",
+   "fame": 0.468,
+   "status": "least concern",
+   "description": "species of mammal",
+   "hook": "is a graceful African antelope famous for astonishing leaps to escape predators",
+   "known": 0.4,
+   "kind": "ungulate"
+  },
+  {
+   "label": "Common Nightingale",
+   "qid": "Q25393",
+   "fame": 0.465,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is a plain brown bird celebrated for its beautiful song, often sung at night",
+   "known": 0.4,
+   "kind": "bird"
+  },
+  {
+   "label": "Black Swan",
+   "qid": "Q131044",
+   "fame": 0.461,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is a dark-plumaged Australian water bird with a red bill, once thought impossible in Europe",
+   "known": 0.5,
+   "kind": "bird"
+  },
+  {
+   "label": "Western capercaillie",
+   "qid": "Q129059",
+   "fame": 0.46,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is the largest grouse, a turkey-sized forest bird whose males perform noisy courtship displays",
+   "known": 0.2,
+   "kind": "bird"
+  },
+  {
+   "label": "carrion crow",
+   "qid": "Q26198",
+   "fame": 0.458,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is an all-black, intelligent bird that often scavenges along roadsides and can use tools",
+   "known": 0.3,
+   "kind": "bird"
+  },
+  {
+   "label": "Eurasian Jay",
+   "qid": "Q25354",
+   "fame": 0.458,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is a colourful woodland bird with bright blue wing patches that buries acorns for winter",
+   "known": 0.4,
+   "kind": "bird"
+  },
+  {
+   "label": "Grey Heron",
+   "qid": "Q25273",
+   "fame": 0.458,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is a tall gray wader that stands still at the water's edge waiting to spear fish",
+   "known": 0.5,
+   "kind": "bird"
+  },
+  {
+   "label": "Eurasian Sparrowhawk",
+   "qid": "Q25380",
+   "fame": 0.454,
+   "status": "least concern",
+   "description": "species of bird",
+   "hook": "is a small bird of prey that dashes through gardens and woods to snatch songbirds",
+   "known": 0.3,
+   "kind": "raptor"
+  }
+ ]
+}

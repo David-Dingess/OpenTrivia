@@ -1,0 +1,195 @@
+{
+ "id": "table.art.famous-museums",
+ "kind": "table",
+ "title": "Famous museums and their city",
+ "genre": "arts-entertainment",
+ "category": "art",
+ "topic": "landmarks",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?cityLabel WHERE { VALUES (?item ?city) { (wd:Q19675 wd:Q90) (wd:Q6373 wd:Q84) (wd:Q160236 wd:Q60) (wd:Q46815 wd:Q1218) (wd:Q188740 wd:Q60) (wd:Q190804 wd:Q727) (wd:Q51252 wd:Q2044) (wd:Q224124 wd:Q727) (wd:Q160112 wd:Q2807) (wd:Q201469 wd:Q60) (wd:Q193375 wd:Q84) (wd:Q213322 wd:Q84) (wd:Q178065 wd:Q90) (wd:Q632682 wd:Q60) (wd:Q217717 wd:Q60) (wd:Q157316 wd:Q64) (wd:Q841506 wd:Q220) (wd:Q154568 wd:Q1726) (wd:Q820892 wd:Q90) (wd:Q157298 wd:Q64) (wd:Q1633842 wd:Q23436) (wd:Q524249 wd:Q1489) (wd:Q861608 wd:Q61) (wd:Q421084 wd:Q1524) (wd:Q752669 wd:Q61) (wd:Q2047427 wd:Q956) (wd:Q23402 wd:Q90) (wd:Q29247 wd:Q65) (wd:Q132783 wd:Q656) } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T11:19:54.306Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T11:19:54.306Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "city",
+   "label": "City",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "museum",
+  "many": "museums",
+  "wildcard": "place",
+  "hookAsk": "Which museum {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "theLabels": [
+   "Louvre Museum",
+   "British Museum",
+   "Metropolitan Museum of Art",
+   "Victoria and Albert Museum",
+   "Museum of Modern Art",
+   "Musée d'Orsay",
+   "Solomon R. Guggenheim Museum",
+   "American Museum of Natural History",
+   "Uffizi Gallery",
+   "Museo del Prado",
+   "Hermitage Museum",
+   "Rijksmuseum"
+  ],
+  "columns": {
+   "city": {
+    "role": "link",
+    "pick": "Which city is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each museum to its city.",
+    "odd": "Three of these museums are in {value}. Which one isn't?",
+    "all": "Tap all {n} museums in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Louvre Museum",
+   "qid": "Q19675",
+   "fame": 0.579,
+   "city": "Paris",
+   "description": "art and archeology museum in Paris, France",
+   "hook": "houses the Mona Lisa behind its glass pyramid entrance",
+   "known": 0.95,
+   "kind": "art"
+  },
+  {
+   "label": "British Museum",
+   "qid": "Q6373",
+   "fame": 0.569,
+   "city": "London",
+   "description": "national museum in London, United Kingdom",
+   "hook": "displays the Rosetta Stone, the key that helped decode ancient Egyptian hieroglyphs",
+   "known": 0.95,
+   "kind": "art"
+  },
+  {
+   "label": "Metropolitan Museum of Art",
+   "qid": "Q160236",
+   "fame": 0.551,
+   "city": "New York City",
+   "description": "art museum in New York City, United States",
+   "hook": "hosts the star-studded Met Gala fundraiser every spring",
+   "known": 0.95,
+   "kind": "art"
+  },
+  {
+   "label": "Victoria and Albert Museum",
+   "qid": "Q213322",
+   "fame": 0.497,
+   "city": "London",
+   "description": "museum in London, England, United Kingdom",
+   "hook": "holds the world's largest collection of decorative arts and design",
+   "known": 0.6,
+   "kind": "art"
+  },
+  {
+   "label": "Museum of Modern Art",
+   "qid": "Q188740",
+   "fame": 0.496,
+   "city": "New York City",
+   "description": "art museum in Manhattan in New York City, New York, United States",
+   "hook": "displays Van Gogh's swirling Starry Night",
+   "known": 0.8,
+   "kind": "art"
+  },
+  {
+   "label": "Musée d'Orsay",
+   "qid": "Q23402",
+   "fame": 0.488,
+   "city": "Paris",
+   "description": "art museum in Paris, France",
+   "hook": "fills a former train station with Impressionist masterpieces",
+   "known": 0.8,
+   "kind": "art"
+  },
+  {
+   "label": "Solomon R. Guggenheim Museum",
+   "qid": "Q201469",
+   "fame": 0.487,
+   "city": "New York City",
+   "description": "art museum in New York, New York",
+   "hook": "spirals upward inside a landmark building designed by Frank Lloyd Wright",
+   "known": 0.8,
+   "kind": "art"
+  },
+  {
+   "label": "American Museum of Natural History",
+   "qid": "Q217717",
+   "fame": 0.477,
+   "city": "New York City",
+   "description": "natural history museum in Manhattan, New York",
+   "hook": "greets visitors with towering dinosaur skeletons and a life-size model of a blue whale",
+   "known": 0.8,
+   "kind": "natural"
+  },
+  {
+   "label": "Uffizi Gallery",
+   "qid": "Q51252",
+   "fame": 0.472,
+   "city": "Florence",
+   "description": "palace and art museum in Florence, Italy",
+   "hook": "displays Botticelli's painting of Venus rising from a seashell",
+   "known": 0.8,
+   "kind": "art"
+  },
+  {
+   "label": "Museo del Prado",
+   "qid": "Q160112",
+   "fame": 0.466,
+   "city": "Madrid",
+   "description": "Spanish national art museum in Madrid, Spain",
+   "hook": "showcases royal portraits by Velazquez and dark visions by Goya",
+   "known": 0.8,
+   "kind": "art"
+  },
+  {
+   "label": "Hermitage Museum",
+   "qid": "Q132783",
+   "fame": 0.462,
+   "city": "Saint Petersburg",
+   "description": "museum in Saint Petersburg, Russia",
+   "hook": "occupies the former winter palace of Russia's tsars",
+   "known": 0.8,
+   "kind": "art"
+  },
+  {
+   "label": "Rijksmuseum",
+   "qid": "Q190804",
+   "fame": 0.456,
+   "city": "Amsterdam",
+   "description": "museum in Amsterdam, Netherlands",
+   "hook": "displays Rembrandt's dramatic militia scene The Night Watch",
+   "known": 0.6,
+   "kind": "art"
+  }
+ ]
+}

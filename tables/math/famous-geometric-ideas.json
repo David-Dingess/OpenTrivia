@@ -1,0 +1,209 @@
+{
+ "id": "table.math.famous-geometric-ideas",
+ "kind": "table",
+ "title": "Famous geometric objects and ideas",
+ "genre": "science-math-tech",
+ "category": "math",
+ "topic": "geometry",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?namedAfterLabel WHERE { VALUES ?item { wd:Q226843 wd:Q23638 wd:Q223137 wd:Q257 wd:Q41690 wd:Q188745 wd:Q11518 wd:Q757267 wd:Q62912 wd:Q12142 wd:Q12510 wd:Q233858 wd:Q162886 wd:Q8084 wd:Q214856 } OPTIONAL { ?item wdt:P138 ?namedAfter FILTER(?namedAfter != wd:Q29193) } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 30",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T03:02:12.098Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T03:02:12.098Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "named_after",
+   "label": "Named after",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "geometric idea",
+  "many": "geometric ideas",
+  "itemSub": "{hook}",
+  "hookAsk": "Which geometric idea {hook}?",
+  "hookStatement": "The {label} {hook}.",
+  "columns": {
+   "named_after": {
+    "role": "code",
+    "pick": "Who is the {label} named after?",
+    "statement": "The {label} is named after {value}.",
+    "reverse": "Which of these is named after {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "golden ratio",
+   "qid": "Q41690",
+   "fame": 0.626,
+   "named_after": null,
+   "kind": "ratio",
+   "description": "ratio between two quantities whose sum is at the same ratio to the larger one",
+   "hook": "is a proportion of about 1.618 that shows up in art, architecture and spiral shells",
+   "known": 0.6
+  },
+  {
+   "label": "Pythagorean theorem",
+   "qid": "Q11518",
+   "fame": 0.585,
+   "named_after": "Pythagoras",
+   "kind": "theorem",
+   "description": "relation in Euclidean geometry among the three sides of a right triangle",
+   "hook": "says the squares on the two shorter sides of a right triangle add up to the square on the longest side",
+   "known": 0.95
+  },
+  {
+   "label": "tesseract",
+   "qid": "Q12142",
+   "fame": 0.575,
+   "named_after": null,
+   "kind": "solid",
+   "description": "four-dimensional analogue of the cube",
+   "hook": "is the four-dimensional cousin of a cube, often pictured as a cube inside a cube",
+   "known": 0.2
+  },
+  {
+   "label": "Mandelbrot set",
+   "qid": "Q257",
+   "fame": 0.558,
+   "named_after": "Benoit Mandelbrot",
+   "kind": "fractal",
+   "description": "fractal-like set that plays a significant role in chaos research",
+   "hook": "is an endlessly detailed fractal picture that reveals new swirls the more you zoom in",
+   "known": 0.4
+  },
+  {
+   "label": "Möbius strip",
+   "qid": "Q226843",
+   "fame": 0.537,
+   "named_after": "August Ferdinand Möbius",
+   "kind": "surface",
+   "description": "two-dimensional surface with only one side and only one edge",
+   "hook": "is a twisted loop of paper with only one side, made by giving a band a half turn before joining the ends",
+   "known": 0.6
+  },
+  {
+   "label": "Cartesian coordinate system",
+   "qid": "Q62912",
+   "fame": 0.52,
+   "named_after": "René Descartes",
+   "kind": "system",
+   "description": "coordinate system that specifies each point uniquely by a pair of real numbers called coordinates",
+   "hook": "lays out points on a grid using an x-axis and a y-axis, the graph paper of math class",
+   "known": 0.8
+  },
+  {
+   "label": "trigonometry",
+   "qid": "Q8084",
+   "fame": 0.513,
+   "named_after": null,
+   "kind": "field",
+   "description": "branch of mathematics that studies triangles and the relationships between their sides and the angles between these sides",
+   "hook": "studies the sine, cosine and tangent of angles and how they relate to the sides of triangles",
+   "known": 0.8
+  },
+  {
+   "label": "Koch snowflake",
+   "qid": "Q223137",
+   "fame": 0.508,
+   "named_after": "Helge von Koch",
+   "kind": "fractal",
+   "description": "fractal and mathematical curve",
+   "hook": "is a fractal shape with a never-ending, ever-more-jagged six-pointed edge that looks like a frozen crystal",
+   "known": 0.2
+  },
+  {
+   "label": "torus",
+   "qid": "Q12510",
+   "fame": 0.489,
+   "named_after": null,
+   "kind": "surface",
+   "description": "doughnut-shaped surface of revolution, based on a revolved figure of a circle",
+   "hook": "is the shape of a doughnut or an inner tube",
+   "known": 0.4
+  },
+  {
+   "label": "Euclidean geometry",
+   "qid": "Q162886",
+   "fame": 0.484,
+   "named_after": "Euclid",
+   "kind": "system",
+   "description": "mathematical system attributed to Euclid",
+   "hook": "is the classic system of points, lines, angles and circles taught in school, built on a few basic postulates",
+   "known": 0.8
+  },
+  {
+   "label": "Platonic solid",
+   "qid": "Q188745",
+   "fame": 0.481,
+   "named_after": "Plato",
+   "kind": "solid",
+   "description": "convex regular polyhedra with the same number of faces at each vertex",
+   "hook": "is one of only five perfectly regular three-dimensional shapes, including the cube and the tetrahedron",
+   "known": 0.4
+  },
+  {
+   "label": "Voronoi diagram",
+   "qid": "Q757267",
+   "fame": 0.475,
+   "named_after": "Georgy Voronoy",
+   "kind": "diagram",
+   "description": "type of plane partition",
+   "hook": "splits a flat surface into regions, each holding every spot nearest to one of a set of points",
+   "known": 0.05
+  },
+  {
+   "label": "tessellation",
+   "qid": "Q214856",
+   "fame": 0.469,
+   "named_after": null,
+   "kind": "pattern",
+   "description": "tiling of a plane using one or more geometric shapes, called tiles, with no overlaps and no gaps",
+   "hook": "covers a flat surface with repeating shapes and no gaps, like bathroom floor tiles or an M. C. Escher print",
+   "known": 0.6
+  },
+  {
+   "label": "Klein bottle",
+   "qid": "Q23638",
+   "fame": 0.466,
+   "named_after": "Felix Klein",
+   "kind": "surface",
+   "description": "type of non-orientable surface",
+   "hook": "is a one-sided surface with no inside or outside that can't exist in 3D without crossing itself",
+   "known": 0.05
+  },
+  {
+   "label": "non-Euclidean geometry",
+   "qid": "Q233858",
+   "fame": 0.462,
+   "named_after": "Euclid",
+   "kind": "system",
+   "description": "two geometries based on axioms closely related to those specifying Euclidean geometry",
+   "hook": "is the kind where parallel lines can meet or diverge, as on a curved surface like a globe",
+   "known": 0.2
+  }
+ ]
+}

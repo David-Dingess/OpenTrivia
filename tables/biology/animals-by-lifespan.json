@@ -1,0 +1,187 @@
+{
+ "id": "table.biology.animals-by-lifespan",
+ "kind": "table",
+ "title": "Animals by typical lifespan",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "wildlife",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?life WHERE { { SELECT ?item ?sitelinks (MAX(?l) AS ?life) WHERE { ?item wdt:P31 wd:Q16521 ; p:P2250/psn:P2250/wikibase:quantityAmount ?l ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 60) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 200 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T04:49:52.135Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T04:49:52.135Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "lifespan_years",
+   "label": "Life expectancy",
+   "unit": "years",
+   "type": "number",
+   "scale": "count-1000"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "animal",
+  "many": "animals",
+  "columns": {
+   "lifespan_years": {
+    "role": "measure",
+    "compare": "Which usually lives longer",
+    "display": "years",
+    "precision": "typical"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Komodo dragon",
+   "qid": "Q4504",
+   "fame": 0.646,
+   "lifespan_years": 30,
+   "description": "species of reptile",
+   "hook": "is the largest living lizard species on Earth, found only on a few Indonesian islands",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "raccoon",
+   "qid": "Q121439",
+   "fame": 0.642,
+   "lifespan_years": 20,
+   "description": "species of mammal native to North America",
+   "hook": "has a masked face, a ringed tail, and a reputation for raiding trash cans",
+   "known": 0.8,
+   "kind": "mammal"
+  },
+  {
+   "label": "silverfish",
+   "qid": "Q26842",
+   "fame": 0.62,
+   "lifespan_years": 2,
+   "description": "species of insect",
+   "hook": "is a wingless insect often found in bathrooms, known for its fast wriggling movements",
+   "known": 0.2,
+   "kind": "insect"
+  },
+  {
+   "label": "great white shark",
+   "qid": "Q129026",
+   "fame": 0.615,
+   "lifespan_years": 73,
+   "description": "species of large lamniform shark",
+   "hook": "is the ocean's most feared predator, immortalized as the villain of a classic monster movie",
+   "known": 0.95,
+   "kind": "fish"
+  },
+  {
+   "label": "Kakapo",
+   "qid": "Q179959",
+   "fame": 0.606,
+   "lifespan_years": 59,
+   "description": "species of non-flying New Zealand parrot",
+   "hook": "is a flightless, critically endangered parrot known for its deep booming mating calls",
+   "known": 0.05,
+   "kind": "bird"
+  },
+  {
+   "label": "quokka",
+   "qid": "Q726151",
+   "fame": 0.599,
+   "lifespan_years": 10,
+   "description": "species of mammal",
+   "hook": "is known worldwide as the smiling selfie animal beloved by tourists",
+   "known": 0.6,
+   "kind": "mammal"
+  },
+  {
+   "label": "guinea pig",
+   "qid": "Q79803",
+   "fame": 0.594,
+   "lifespan_years": 5,
+   "description": "domesticated rodent from South America",
+   "hook": "gave its name to the everyday phrase used for a human test subject",
+   "known": 0.95,
+   "kind": "mammal"
+  },
+  {
+   "label": "goat",
+   "qid": "Q2934",
+   "fame": 0.59,
+   "lifespan_years": 15,
+   "description": "domesticated mammal raised for its meat and milk",
+   "hook": "is known for climbing incredibly steep cliffs and mountainsides with ease",
+   "known": 0.8,
+   "kind": "mammal"
+  },
+  {
+   "label": "humpback whale",
+   "qid": "Q132905",
+   "fame": 0.564,
+   "lifespan_years": 48,
+   "description": "species of mammal",
+   "hook": "is famous for its long, complex songs and spectacular ocean breaching",
+   "known": 0.8,
+   "kind": "mammal"
+  },
+  {
+   "label": "Northern Raven",
+   "qid": "Q25357",
+   "fame": 0.543,
+   "lifespan_years": 17,
+   "description": "species of bird",
+   "hook": "is one of the most intelligent birds, featured in Norse mythology as a messenger of the gods",
+   "known": 0.6,
+   "kind": "bird"
+  },
+  {
+   "label": "pike",
+   "qid": "Q165278",
+   "fame": 0.508,
+   "lifespan_years": 7,
+   "description": "species of fish",
+   "hook": "is a freshwater ambush predator known for its long body and razor-sharp teeth",
+   "known": 0.4,
+   "kind": "fish"
+  },
+  {
+   "label": "Grey Parrot",
+   "qid": "Q220328",
+   "fame": 0.477,
+   "lifespan_years": 45,
+   "description": "species of parrot",
+   "hook": "is famous for its exceptional talking ability and remarkable intelligence",
+   "known": 0.6,
+   "kind": "bird"
+  },
+  {
+   "label": "Eurasian Sparrowhawk",
+   "qid": "Q25380",
+   "fame": 0.455,
+   "lifespan_years": 4,
+   "description": "species of bird",
+   "hook": "is a woodland bird of prey known for hunting small birds with sudden bursts of speed",
+   "known": 0.2,
+   "kind": "bird"
+  }
+ ]
+}

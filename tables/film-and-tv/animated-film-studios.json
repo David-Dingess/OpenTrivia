@@ -1,0 +1,599 @@
+{
+ "id": "table.film-and-tv.animated-film-studios",
+ "kind": "table",
+ "title": "Animated films and the studio that made them",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "animated-films",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?studioLabel WHERE { { SELECT ?item (SAMPLE(?s) AS ?studio) (COUNT(DISTINCT ?s) AS ?nS) (MIN(?t) AS ?firstRelease) WHERE { VALUES ?s { wd:Q127552 wd:Q500088 wd:Q1047410 wd:Q182950 wd:Q1189512 wd:Q885885 wd:Q1416835 wd:Q301092 wd:Q1314323 } VALUES ?cls { wd:Q11424 wd:Q29168811 wd:Q202866 wd:Q28968511 } ?item wdt:P31 ?cls ; wdt:P272 ?s . ?item wdt:P136|wdt:P31 ?g . VALUES ?g { wd:Q202866 wd:Q29168811 wd:Q28968511 } OPTIONAL { ?item p:P577/psv:P577 [ wikibase:timeValue ?t ; wikibase:timePrecision ?p ] . } } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nS = 1) FILTER(BOUND(?firstRelease) && ?firstRelease <= NOW()) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T00:51:11.645Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T00:51:11.645Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "kind",
+   "label": "Studio",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "film",
+  "many": "films",
+  "hookAsk": "Which animated film {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "kind": {
+    "role": "link",
+    "pick": "Which studio made {label}?",
+    "statement": "{label} was made by {value}.",
+    "odd": "Three of these are {value} films. Which one isn't?",
+    "all": "Tap all {n} {value} films."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Cars",
+   "qid": "Q182153",
+   "fame": 0.693,
+   "kind": "Pixar",
+   "description": "2006 American animated film directed by John Lasseter",
+   "hook": "follows a hotshot rookie race car who gets stranded in a sleepy town and learns humility from its residents",
+   "known": 0.8
+  },
+  {
+   "label": "Spider-Man: Across the Spider-Verse",
+   "qid": "Q76448600",
+   "fame": 0.689,
+   "kind": "Sony Pictures Animation",
+   "description": "2023 animated film by Joaquim Dos Santos, Kemp Powers and Justin K. Thompson",
+   "hook": "follows a hero clashing with a multiversal society of counterparts over whether tragedy must define a hero",
+   "known": 0.6
+  },
+  {
+   "label": "Spider-Man: Into the Spider-Verse",
+   "qid": "Q29588607",
+   "fame": 0.684,
+   "kind": "Sony Pictures Animation",
+   "description": "2018 animated film directed by Bob Persichetti, Peter Ramsey and Rodney Rothman",
+   "hook": "follows a teenager bitten by a radioactive arachnid who teams up with heroic counterparts from other realities",
+   "known": 0.8
+  },
+  {
+   "label": "The Lion King",
+   "qid": "Q36479",
+   "fame": 0.657,
+   "kind": "Walt Disney Animation Studios",
+   "description": "1994 animated film directed by Roger Allers and Rob Minkoff",
+   "hook": "follows a young prince who flees after his father's death and must reclaim his throne from a treacherous uncle",
+   "known": 0.95
+  },
+  {
+   "label": "Moana",
+   "qid": "Q18647981",
+   "fame": 0.656,
+   "kind": "Walt Disney Animation Studios",
+   "description": "2016 animated film directed by John Musker and Ron Clements",
+   "hook": "follows a chief's daughter who sails beyond her reef with a demigod to restore a stolen heart",
+   "known": 0.8
+  },
+  {
+   "label": "Toy Story",
+   "qid": "Q171048",
+   "fame": 0.655,
+   "kind": "Pixar",
+   "description": "1995 animated film directed by John Lasseter",
+   "hook": "follows a cowboy doll whose favored place is threatened by a flashy new spaceman toy",
+   "known": 0.95
+  },
+  {
+   "label": "Coco",
+   "qid": "Q5815826",
+   "fame": 0.644,
+   "kind": "Pixar",
+   "description": "2017 animated film directed by Lee Unkrich and Adrian Molina",
+   "hook": "follows a boy who crosses into the land of the dead one festival night to learn his musical family's past",
+   "known": 0.8
+  },
+  {
+   "label": "Shrek",
+   "qid": "Q483815",
+   "fame": 0.644,
+   "kind": "DreamWorks Animation",
+   "description": "2001 American film directed by Andrew Adamson and Vicky Jenson",
+   "hook": "follows a grumpy ogre who reluctantly rescues a princess to reclaim his swamp from a scheming lord",
+   "known": 0.95
+  },
+  {
+   "label": "Ratatouille",
+   "qid": "Q170035",
+   "fame": 0.637,
+   "kind": "Pixar",
+   "description": "2007 animated film directed by Brad Bird",
+   "hook": "follows a rat with a gift for cooking who partners with a clumsy kitchen worker to become a chef in Paris",
+   "known": 0.8
+  },
+  {
+   "label": "The Prince of Egypt",
+   "qid": "Q245227",
+   "fame": 0.634,
+   "kind": "DreamWorks Animation",
+   "description": "1998 animated film directed by Brenda Chapman, Steve Hickner and Simon Wells",
+   "hook": "follows a young man raised in a royal palace who learns his origins and leads an enslaved people to freedom",
+   "known": 0.6
+  },
+  {
+   "label": "Monsters, Inc.",
+   "qid": "Q187726",
+   "fame": 0.627,
+   "kind": "Pixar",
+   "description": "2001 animated film directed by Pete Docter",
+   "hook": "follows two scare-factory workers who discover a small human child has wandered into their world",
+   "known": 0.8
+  },
+  {
+   "label": "Frozen",
+   "qid": "Q246283",
+   "fame": 0.626,
+   "kind": "Walt Disney Animation Studios",
+   "description": "2013 animated film directed by Chris Buck and Jennifer Lee",
+   "hook": "follows a princess who sets out to find her sister and undo an eternal winter she accidentally unleashed",
+   "known": 0.95
+  },
+  {
+   "label": "Finding Nemo",
+   "qid": "Q132863",
+   "fame": 0.62,
+   "kind": "Pixar",
+   "description": "2003 animated film directed by Andrew Stanton",
+   "hook": "follows a nervous clownfish who crosses the ocean to rescue his son after he's captured by a diver",
+   "known": 0.95
+  },
+  {
+   "label": "The Incredibles",
+   "qid": "Q213326",
+   "fame": 0.618,
+   "kind": "Pixar",
+   "description": "2004 animated film directed by Brad Bird",
+   "hook": "follows a family of retired superheroes forced back into action against a vengeful former fan",
+   "known": 0.8
+  },
+  {
+   "label": "Mulan",
+   "qid": "Q537407",
+   "fame": 0.615,
+   "kind": "Walt Disney Animation Studios",
+   "description": "1998 animated film directed by Barry Cook and Tony Bancroft",
+   "hook": "follows a young woman who disguises herself as a man to take her father's place in the army",
+   "known": 0.8
+  },
+  {
+   "label": "Up",
+   "qid": "Q174811",
+   "fame": 0.611,
+   "kind": "Pixar",
+   "description": "2009 animated film directed by Pete Docter",
+   "hook": "follows a grieving widower who ties balloons to his house to fly to South America, unaware of a young stowaway",
+   "known": 0.8
+  },
+  {
+   "label": "My Neighbor Totoro",
+   "qid": "Q39571",
+   "fame": 0.609,
+   "kind": "Studio Ghibli",
+   "description": "1988 film directed by Hayao Miyazaki",
+   "hook": "follows two young sisters who befriend gentle forest spirits after moving to the countryside",
+   "known": 0.6
+  },
+  {
+   "label": "WALL-E",
+   "qid": "Q104905",
+   "fame": 0.609,
+   "kind": "Pixar",
+   "description": "2008 animated film directed by Andrew Stanton",
+   "hook": "follows a lonely trash-compacting robot who falls for a sleek scout robot and follows her into space",
+   "known": 0.8
+  },
+  {
+   "label": "A Bug's Life",
+   "qid": "Q216153",
+   "fame": 0.608,
+   "kind": "Pixar",
+   "description": "1998 animated film directed by John Lasseter and Andrew Stanton",
+   "hook": "follows a clumsy ant who recruits a band of misfit performers to fight off bullying grasshoppers",
+   "known": 0.8
+  },
+  {
+   "label": "Beauty and the Beast",
+   "qid": "Q179673",
+   "fame": 0.606,
+   "kind": "Walt Disney Animation Studios",
+   "description": "1991 animated film directed by Gary Trousdale and Kirk Wise",
+   "hook": "follows a bookish woman who trades her freedom for her father's, and falls for the cursed creature holding her",
+   "known": 0.8
+  },
+  {
+   "label": "Tangled",
+   "qid": "Q188439",
+   "fame": 0.606,
+   "kind": "Walt Disney Animation Studios",
+   "description": "2010 animated film directed by Nathan Greno and Byron Howard",
+   "hook": "follows a long-haired princess locked in a tower who escapes with a charming thief to see floating lanterns",
+   "known": 0.8
+  },
+  {
+   "label": "Minions",
+   "qid": "Q13619743",
+   "fame": 0.604,
+   "kind": "Illumination",
+   "description": "2015 animated film by Pierre Coffin and Kyle Balda",
+   "hook": "follows small yellow henchmen searching through history for the most despicable master to serve",
+   "known": 0.6
+  },
+  {
+   "label": "Treasure Planet",
+   "qid": "Q392530",
+   "fame": 0.599,
+   "kind": "Walt Disney Animation Studios",
+   "description": "2002 animated film directed by John Musker and Ron Clements",
+   "hook": "follows a rebellious teen who joins a star-faring crew hunting for a legendary pirate's hidden loot",
+   "known": 0.6
+  },
+  {
+   "label": "The Emperor's New Groove",
+   "qid": "Q223163",
+   "fame": 0.598,
+   "kind": "Walt Disney Animation Studios",
+   "description": "2000 animated film directed by Mark Dindal",
+   "hook": "follows a spoiled ruler turned into a llama who must team up with a peasant to reclaim his throne",
+   "known": 0.6
+  },
+  {
+   "label": "The Hunchback of Notre Dame",
+   "qid": "Q213787",
+   "fame": 0.595,
+   "kind": "Walt Disney Animation Studios",
+   "description": "1996 animated film directed by Gary Trousdale and Kirk Wise",
+   "hook": "follows a bell-ringer with a deformity who falls for a dancer while hiding from a tyrannical official",
+   "known": 0.6
+  },
+  {
+   "label": "Zootopia",
+   "qid": "Q15270647",
+   "fame": 0.592,
+   "kind": "Walt Disney Animation Studios",
+   "description": "2016 animated film directed by Byron Howard and Rich Moore",
+   "hook": "follows a determined rabbit officer who partners with a con-artist fox to crack a mysterious disappearance",
+   "known": 0.8
+  },
+  {
+   "label": "Big Hero 6",
+   "qid": "Q13091172",
+   "fame": 0.59,
+   "kind": "Walt Disney Animation Studios",
+   "description": "2014 animated film directed by Don Hall and Chris Williams",
+   "hook": "follows a young inventor and his healthcare robot who become makeshift heroes to catch his brother's killer",
+   "known": 0.8
+  },
+  {
+   "label": "Tarzan",
+   "qid": "Q208696",
+   "fame": 0.59,
+   "kind": "Walt Disney Animation Studios",
+   "description": "1999 animated film directed by Kevin Lima and Chris Buck",
+   "hook": "follows a man raised by gorillas in the jungle who must choose between his animal family and the human world",
+   "known": 0.6
+  },
+  {
+   "label": "Brave",
+   "qid": "Q126796",
+   "fame": 0.586,
+   "kind": "Pixar",
+   "description": "2012 animated film",
+   "hook": "follows a headstrong princess who defies an arranged marriage and turns to a spell that endangers her family",
+   "known": 0.8
+  },
+  {
+   "label": "Incredibles 2",
+   "qid": "Q24832112",
+   "fame": 0.583,
+   "kind": "Pixar",
+   "description": "2018 animated film directed by Brad Bird",
+   "hook": "follows a family of superheroes navigating fame and a new villain while the mother takes the lead this time",
+   "known": 0.8
+  },
+  {
+   "label": "Madagascar",
+   "qid": "Q174555",
+   "fame": 0.581,
+   "kind": "DreamWorks Animation",
+   "description": "2005 animated film directed by Eric Darnell and Tom McGrath",
+   "hook": "follows pampered zoo animals who wash up on a wild island after escaping their comfortable enclosure",
+   "known": 0.6
+  },
+  {
+   "label": "Pocahontas",
+   "qid": "Q218894",
+   "fame": 0.579,
+   "kind": "Walt Disney Animation Studios",
+   "description": "1995 animated film directed by Mike Gabriel and Eric Goldberg",
+   "hook": "follows a Native American woman who falls for an English settler amid tension between their peoples",
+   "known": 0.6
+  },
+  {
+   "label": "Soul",
+   "qid": "Q64744044",
+   "fame": 0.578,
+   "kind": "Pixar",
+   "description": "2020 American computer-animated film",
+   "hook": "follows a jazz pianist whose spirit gets separated from his body just before his big break",
+   "known": 0.8
+  },
+  {
+   "label": "Corpse Bride",
+   "qid": "Q164417",
+   "fame": 0.574,
+   "kind": "Laika",
+   "description": "2005 stop-motion-animated dark fantasy film by Tim Burton and Mike Johnson",
+   "hook": "follows a nervous groom accidentally married to a deceased woman after practicing his vows in the woods",
+   "known": 0.4
+  },
+  {
+   "label": "Inside Out",
+   "qid": "Q6144664",
+   "fame": 0.573,
+   "kind": "Pixar",
+   "description": "2015 animated film directed by Pete Docter",
+   "hook": "follows the emotions living within a young girl's mind as they cope with her difficult move to a new city",
+   "known": 0.8
+  },
+  {
+   "label": "Turning Red",
+   "qid": "Q104845027",
+   "fame": 0.571,
+   "kind": "Pixar",
+   "description": "2022 American animated film by Domee Shi",
+   "hook": "follows a teenager who transforms into a giant red panda whenever her emotions run high",
+   "known": 0.8
+  },
+  {
+   "label": "The Good Dinosaur",
+   "qid": "Q7737199",
+   "fame": 0.566,
+   "kind": "Pixar",
+   "description": "2015 animated film directed by Peter Sohn",
+   "hook": "follows a timid young sauropod who befriends a feral human boy while trying to find his way home",
+   "known": 0.6
+  },
+  {
+   "label": "Robots",
+   "qid": "Q756238",
+   "fame": 0.565,
+   "kind": "Blue Sky Studios",
+   "description": "2005 computer-animated science fiction comedy adventure film by Blue Sky Studios and 20th Century Fox",
+   "hook": "follows an inventive young robot who travels to the big city hoping to get his invention noticed",
+   "known": 0.4
+  },
+  {
+   "label": "Antz",
+   "qid": "Q610502",
+   "fame": 0.564,
+   "kind": "DreamWorks Animation",
+   "description": "1998 American animated film",
+   "hook": "follows a neurotic worker insect who poses as a soldier to impress a princess and ends up saving the colony",
+   "known": 0.4
+  },
+  {
+   "label": "Chicken Run",
+   "qid": "Q156401",
+   "fame": 0.564,
+   "kind": "Aardman Animations",
+   "description": "2000 British stop-motion animated comedy film",
+   "hook": "follows egg-laying birds on a farm who plot an elaborate escape before they're turned into pies",
+   "known": 0.4
+  },
+  {
+   "label": "Meet the Robinsons",
+   "qid": "Q221679",
+   "fame": 0.564,
+   "kind": "Walt Disney Animation Studios",
+   "description": "2007 animated film directed by Stephen J. Anderson",
+   "hook": "follows a young orphan inventor who travels to the future and discovers a family who believes in him",
+   "known": 0.4
+  },
+  {
+   "label": "Kung Fu Panda",
+   "qid": "Q129193",
+   "fame": 0.562,
+   "kind": "DreamWorks Animation",
+   "description": "2008 film by John Stevenson and Mark Osborne",
+   "hook": "follows a clumsy, food-loving bear who is unexpectedly chosen as a legendary warrior",
+   "known": 0.8
+  },
+  {
+   "label": "Wreck-It Ralph",
+   "qid": "Q28891",
+   "fame": 0.56,
+   "kind": "Walt Disney Animation Studios",
+   "description": "2012 animated film directed by Rich Moore",
+   "hook": "follows a video game villain who leaves his own game seeking recognition as a good guy",
+   "known": 0.6
+  },
+  {
+   "label": "Ice Age",
+   "qid": "Q305250",
+   "fame": 0.557,
+   "kind": "Blue Sky Studios",
+   "description": "2002 animated film directed by Chris Wedge",
+   "hook": "follows a mismatched trio of prehistoric mammals who team up to return a lost human baby to his tribe",
+   "known": 0.6
+  },
+  {
+   "label": "One Hundred and One Dalmatians",
+   "qid": "Q165512",
+   "fame": 0.557,
+   "kind": "Walt Disney Animation Studios",
+   "description": "1961 animated film directed by Hamilton Luske, Clyde Geronimi, and Wolfgang Reitherman",
+   "hook": "follows two spotted dogs whose puppies are kidnapped by a fur-obsessed villainess",
+   "known": 0.6
+  },
+  {
+   "label": "Rio",
+   "qid": "Q223359",
+   "fame": 0.554,
+   "kind": "Blue Sky Studios",
+   "description": "2011 American animated film directed by Carlos Saldanha",
+   "hook": "follows a domesticated macaw who travels to Brazil and must learn to fly to escape smugglers",
+   "known": 0.6
+  },
+  {
+   "label": "Raya and the Last Dragon",
+   "qid": "Q66738105",
+   "fame": 0.553,
+   "kind": "Walt Disney Animation Studios",
+   "description": "2021 animated film directed by Don Hall and Carlos López Estrada",
+   "hook": "follows a lone warrior who crosses a fractured land to find a legendary creature and reunite her people",
+   "known": 0.8
+  },
+  {
+   "label": "Finding Dory",
+   "qid": "Q9321426",
+   "fame": 0.552,
+   "kind": "Pixar",
+   "description": "2016 animated film directed by Andrew Stanton",
+   "hook": "follows a forgetful blue fish who sets off to find the parents she was separated from as a child",
+   "known": 0.8
+  },
+  {
+   "label": "How to Train Your Dragon",
+   "qid": "Q373096",
+   "fame": 0.551,
+   "kind": "DreamWorks Animation",
+   "description": "2010 animated film directed by Dean DeBlois and Chris Sanders",
+   "hook": "follows a young Viking who befriends the very winged creature he was raised to slay",
+   "known": 0.8
+  },
+  {
+   "label": "Sleeping Beauty",
+   "qid": "Q215617",
+   "fame": 0.551,
+   "kind": "Walt Disney Animation Studios",
+   "description": "1959 American animated film",
+   "hook": "follows a cursed princess doomed to fall into an enchanted slumber unless true love's kiss saves her",
+   "known": 0.6
+  },
+  {
+   "label": "Lady and the Tramp",
+   "qid": "Q172284",
+   "fame": 0.55,
+   "kind": "Walt Disney Animation Studios",
+   "description": "1955 animated film by Hamilton Luske, Clyde Geronimi and Wilfred Jackson",
+   "hook": "follows a pampered house dog who falls for a streetwise stray from the wrong side of town",
+   "known": 0.6
+  },
+  {
+   "label": "Despicable Me",
+   "qid": "Q4447",
+   "fame": 0.548,
+   "kind": "Illumination",
+   "description": "2010 film directed by Pierre Coffin and Chris Renaud",
+   "hook": "follows a supervillain planning to steal the moon whose plans are upended by three orphan girls he adopts",
+   "known": 0.8
+  },
+  {
+   "label": "Monsters University",
+   "qid": "Q641362",
+   "fame": 0.548,
+   "kind": "Pixar",
+   "description": "2013 animated film directed by Dan Scanlon",
+   "hook": "follows two scare-school rivals who must work together after getting kicked out of the scaring program",
+   "known": 0.8
+  },
+  {
+   "label": "Hotel Transylvania",
+   "qid": "Q249967",
+   "fame": 0.544,
+   "kind": "Sony Pictures Animation",
+   "description": "2012 animated film directed by Genndy Tartakovsky",
+   "hook": "follows a protective vampire father running a monster resort thrown into chaos when a human wanders in",
+   "known": 0.6
+  },
+  {
+   "label": "Oliver & Company",
+   "qid": "Q216929",
+   "fame": 0.541,
+   "kind": "Walt Disney Animation Studios",
+   "description": "1988 animated film directed by George Scribner",
+   "hook": "follows an orphaned kitten who falls in with a gang of streetwise dogs and their thieving owner in a big city",
+   "known": 0.4
+  },
+  {
+   "label": "Brother Bear",
+   "qid": "Q215365",
+   "fame": 0.539,
+   "kind": "Walt Disney Animation Studios",
+   "description": "2003 animated film directed by Aaron Blaise and Robert Walker",
+   "hook": "follows a young hunter transformed into a large forest predator who must see the world through his prey's eyes",
+   "known": 0.4
+  },
+  {
+   "label": "The Lorax",
+   "qid": "Q786594",
+   "fame": 0.539,
+   "kind": "Illumination",
+   "description": "2012 animated film directed by Chris Renaud",
+   "hook": "follows a boy who seeks out a reclusive figure to learn how a beloved tree species vanished from his town",
+   "known": 0.6
+  },
+  {
+   "label": "Chicken Little",
+   "qid": "Q270940",
+   "fame": 0.536,
+   "kind": "Walt Disney Animation Studios",
+   "description": "2005 animated film directed by Mark Dindal",
+   "hook": "follows a small-town bird ridiculed for wrongly warning of disaster, later proven right about something bigger",
+   "known": 0.4
+  },
+  {
+   "label": "Minions: The Rise of Gru",
+   "qid": "Q60997779",
+   "fame": 0.532,
+   "kind": "Illumination",
+   "description": "2022 animated film directed by Kyle Balda",
+   "hook": "follows a boy villain-in-training desperate to join a supervillain crew before proving himself on his own",
+   "known": 0.6
+  },
+  {
+   "label": "Bolt",
+   "qid": "Q212792",
+   "fame": 0.525,
+   "kind": "Walt Disney Animation Studios",
+   "description": "2008 animated film directed by Chris Williams and Byron Howard",
+   "hook": "follows a television stunt dog who believes his powers are real and treks cross-country to save his owner",
+   "known": 0.6
+  }
+ ]
+}

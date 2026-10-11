@@ -1,0 +1,460 @@
+{
+ "id": "table.geography.us-state-nicknames",
+ "kind": "table",
+ "title": "US states and their nicknames",
+ "genre": "society",
+ "category": "geography",
+ "topic": "flags-and-symbols",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?nick WHERE { { SELECT ?item (SAMPLE(?a) AS ?nick) (COUNT(DISTINCT ?a) AS ?n) WHERE { ?item wdt:P31 wd:Q35657 ; wdt:P1449 ?a . FILTER(LANG(?a)=\"en\") } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?n = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-01T04:24:16.296Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-01T04:24:16.296Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "nickname",
+   "label": "State nickname",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "state",
+  "many": "states",
+  "wildcard": "place",
+  "hookAsk": "Which state {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "nickname": {
+    "role": "code",
+    "pick": "Which nickname belongs to {label}?",
+    "statement": "{label} is nicknamed {value}.",
+    "match": "Match each state to its nickname.",
+    "reverse": "Which state is known as {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "California",
+   "qid": "Q99",
+   "fame": 0.74,
+   "nickname": "The Golden State",
+   "description": "state of the United States of America",
+   "hook": "is home to Hollywood, Silicon Valley and redwood forests on the Pacific coast",
+   "known": 0.95,
+   "kind": "west"
+  },
+  {
+   "label": "Hawaii",
+   "qid": "Q782",
+   "fame": 0.733,
+   "nickname": "The Aloha State",
+   "description": "state of the United States of America",
+   "hook": "is a chain of volcanic Pacific islands famous for surfing, leis and hula",
+   "known": 0.95,
+   "kind": "west"
+  },
+  {
+   "label": "Texas",
+   "qid": "Q1439",
+   "fame": 0.706,
+   "nickname": "The Lone Star State",
+   "description": "state of the United States of America",
+   "hook": "is a huge southern land known for cattle ranches, oil and the Alamo",
+   "known": 0.95,
+   "kind": "south"
+  },
+  {
+   "label": "Alaska",
+   "qid": "Q797",
+   "fame": 0.697,
+   "nickname": "The Last Frontier",
+   "description": "state of the United States of America",
+   "hook": "is the biggest state by area, known for glaciers, grizzly bears and the northern lights",
+   "known": 0.8,
+   "kind": "west"
+  },
+  {
+   "label": "New Mexico",
+   "qid": "Q1522",
+   "fame": 0.689,
+   "nickname": "Land of Enchantment",
+   "description": "state of the United States of America",
+   "hook": "is a desert southwestern state known for Santa Fe adobe, chile peppers and a famous UFO legend",
+   "known": 0.8,
+   "kind": "west"
+  },
+  {
+   "label": "Massachusetts",
+   "qid": "Q771",
+   "fame": 0.685,
+   "nickname": "The Bay State",
+   "description": "state of the United States of America",
+   "hook": "is where the Pilgrims landed and the Boston Tea Party took place",
+   "known": 0.8,
+   "kind": "northeast"
+  },
+  {
+   "label": "New York",
+   "qid": "Q1384",
+   "fame": 0.68,
+   "nickname": "The Empire State",
+   "description": "state of the United States of America",
+   "hook": "is home to Niagara Falls, Wall Street and the Statue of Liberty",
+   "known": 0.95,
+   "kind": "northeast"
+  },
+  {
+   "label": "Florida",
+   "qid": "Q812",
+   "fame": 0.673,
+   "nickname": "The Sunshine State",
+   "description": "state of the United States of America",
+   "hook": "is a warm peninsula famous for beaches, oranges, theme parks and Everglades alligators",
+   "known": 0.95,
+   "kind": "south"
+  },
+  {
+   "label": "Washington",
+   "qid": "Q1223",
+   "fame": 0.664,
+   "nickname": "The Evergreen State",
+   "description": "state of the United States of America",
+   "hook": "is a Pacific Northwest land known for Seattle, coffee, rainy weather and Mount Rainier",
+   "known": 0.8,
+   "kind": "west"
+  },
+  {
+   "label": "Michigan",
+   "qid": "Q1166",
+   "fame": 0.655,
+   "nickname": "The Great Lakes State",
+   "description": "state of the United States of America",
+   "hook": "is shaped like a mitten and known as the home of the American car industry",
+   "known": 0.8,
+   "kind": "midwest"
+  },
+  {
+   "label": "Ohio",
+   "qid": "Q1397",
+   "fame": 0.653,
+   "nickname": "The Buckeye State",
+   "description": "state of the United States of America",
+   "hook": "is a Midwest land that gave the world the Wright brothers' bicycle shop and a Rock and Roll Hall of Fame",
+   "known": 0.8,
+   "kind": "midwest"
+  },
+  {
+   "label": "Georgia",
+   "qid": "Q1428",
+   "fame": 0.652,
+   "nickname": "Peach State",
+   "description": "state of the United States of America",
+   "hook": "is a southern land home to Atlanta, Coca-Cola and a former president's peanut farm",
+   "known": 0.6,
+   "kind": "south"
+  },
+  {
+   "label": "Tennessee",
+   "qid": "Q1509",
+   "fame": 0.649,
+   "nickname": "The Volunteer State",
+   "description": "state of the United States of America",
+   "hook": "is a southern land famous for Nashville country music and Memphis, home of Elvis",
+   "known": 0.6,
+   "kind": "south"
+  },
+  {
+   "label": "Rhode Island",
+   "qid": "Q1387",
+   "fame": 0.645,
+   "nickname": "The Ocean State",
+   "description": "state of the United States of America",
+   "hook": "is the smallest in area, known for sailing, mansions in Newport and its long coastline",
+   "known": 0.6,
+   "kind": "northeast"
+  },
+  {
+   "label": "Missouri",
+   "qid": "Q1581",
+   "fame": 0.643,
+   "nickname": "The Show Me State",
+   "description": "state of the United States of America",
+   "hook": "is a central land crowned by a giant stainless-steel arch in St. Louis",
+   "known": 0.6,
+   "kind": "midwest"
+  },
+  {
+   "label": "Colorado",
+   "qid": "Q1261",
+   "fame": 0.642,
+   "nickname": "The Centennial State",
+   "description": "state of the United States of America",
+   "hook": "is a land of skiing and the Rockies, with a mile-high capital city",
+   "known": 0.6,
+   "kind": "west"
+  },
+  {
+   "label": "Maryland",
+   "qid": "Q1391",
+   "fame": 0.642,
+   "nickname": "Old Line State",
+   "description": "state of the United States of America",
+   "hook": "is a mid-Atlantic land famous for blue crabs, Chesapeake Bay and Annapolis sailors",
+   "known": 0.6,
+   "kind": "northeast"
+  },
+  {
+   "label": "Wyoming",
+   "qid": "Q1214",
+   "fame": 0.64,
+   "nickname": "Equality State",
+   "description": "state of the United States of America",
+   "hook": "is a wide-open western land home to Yellowstone, Devils Tower and cowboy rodeos",
+   "known": 0.4,
+   "kind": "west"
+  },
+  {
+   "label": "Utah",
+   "qid": "Q829",
+   "fame": 0.637,
+   "nickname": "Beehive State",
+   "description": "state of the United States of America",
+   "hook": "is a western land known for the Great Salt Lake, red rock arches and Salt Lake City",
+   "known": 0.6,
+   "kind": "west"
+  },
+  {
+   "label": "Maine",
+   "qid": "Q724",
+   "fame": 0.636,
+   "nickname": "The Pine Tree State",
+   "description": "state of the United States of America",
+   "hook": "is a far northeastern land famous for lobster, rocky coastline, lighthouses and horror novelist Stephen King",
+   "known": 0.6,
+   "kind": "northeast"
+  },
+  {
+   "label": "Arizona",
+   "qid": "Q816",
+   "fame": 0.634,
+   "nickname": "The Grand Canyon State",
+   "description": "state of the United States of America",
+   "hook": "is a desert land home to saguaro cacti, Phoenix and one of the world's most famous canyons",
+   "known": 0.6,
+   "kind": "west"
+  },
+  {
+   "label": "Louisiana",
+   "qid": "Q1588",
+   "fame": 0.633,
+   "nickname": "Pelican State",
+   "description": "state of the United States of America",
+   "hook": "is a southern land famous for Mardi Gras, jazz, gumbo and the bayous",
+   "known": 0.6,
+   "kind": "south"
+  },
+  {
+   "label": "Oregon",
+   "qid": "Q824",
+   "fame": 0.63,
+   "nickname": "Beaver State",
+   "description": "state of the United States of America",
+   "hook": "is a Pacific Northwest land known for Portland, a rugged coast and Crater Lake",
+   "known": 0.6,
+   "kind": "west"
+  },
+  {
+   "label": "Oklahoma",
+   "qid": "Q1649",
+   "fame": 0.627,
+   "nickname": "Sooner State",
+   "description": "state of the United States of America",
+   "hook": "is a plains land tied to the Dust Bowl, cowboys and a famous Rodgers and Hammerstein musical",
+   "known": 0.4,
+   "kind": "south"
+  },
+  {
+   "label": "New Hampshire",
+   "qid": "Q759",
+   "fame": 0.626,
+   "nickname": "The Granite State",
+   "description": "state of the United States of America",
+   "hook": "is a northeastern land with early presidential primary voting and the motto Live Free or Die",
+   "known": 0.4,
+   "kind": "northeast"
+  },
+  {
+   "label": "Kentucky",
+   "qid": "Q1603",
+   "fame": 0.624,
+   "nickname": "Bluegrass State",
+   "description": "state of the United States of America",
+   "hook": "is a land famous for horse racing's Derby, bourbon whiskey and fried chicken",
+   "known": 0.6,
+   "kind": "south"
+  },
+  {
+   "label": "Mississippi",
+   "qid": "Q1494",
+   "fame": 0.623,
+   "nickname": "The Magnolia State",
+   "description": "state of the United States of America",
+   "hook": "is a southern land bordering a great river and known as the birthplace of the blues",
+   "known": 0.4,
+   "kind": "south"
+  },
+  {
+   "label": "Kansas",
+   "qid": "Q1558",
+   "fame": 0.62,
+   "nickname": "The Sunflower State",
+   "description": "state of the United States of America",
+   "hook": "is a central plains land, the setting for Dorothy's tornado trip to Oz",
+   "known": 0.4,
+   "kind": "midwest"
+  },
+  {
+   "label": "Vermont",
+   "qid": "Q16551",
+   "fame": 0.62,
+   "nickname": "The Green Mountain State",
+   "description": "state of the United States of America",
+   "hook": "is a northeastern land famous for maple syrup, fall foliage and ski resorts",
+   "known": 0.4,
+   "kind": "northeast"
+  },
+  {
+   "label": "West Virginia",
+   "qid": "Q1371",
+   "fame": 0.62,
+   "nickname": "Mountain State",
+   "description": "state of the United States of America",
+   "hook": "is an Appalachian land known for coal mining, rugged hills and a John Denver song about country roads",
+   "known": 0.4,
+   "kind": "south"
+  },
+  {
+   "label": "Arkansas",
+   "qid": "Q1612",
+   "fame": 0.617,
+   "nickname": "The Natural State",
+   "description": "state of the United States of America",
+   "hook": "is a southern land known for Hot Springs, diamonds, and as the home of a giant retail chain",
+   "known": 0.4,
+   "kind": "south"
+  },
+  {
+   "label": "Delaware",
+   "qid": "Q1393",
+   "fame": 0.615,
+   "nickname": "The First State",
+   "description": "state of the United States of America",
+   "hook": "was the first to ratify the U.S. Constitution and is small, flat and tax-friendly",
+   "known": 0.4,
+   "kind": "northeast"
+  },
+  {
+   "label": "Indiana",
+   "qid": "Q1415",
+   "fame": 0.615,
+   "nickname": "The Hoosier State",
+   "description": "state of the United States of America",
+   "hook": "is a Midwest land famous for a 500-mile auto race held every Memorial Day weekend",
+   "known": 0.4,
+   "kind": "midwest"
+  },
+  {
+   "label": "Iowa",
+   "qid": "Q1546",
+   "fame": 0.613,
+   "nickname": "The Hawkeye State",
+   "description": "state of the United States of America",
+   "hook": "is a Midwest land known for corn, presidential caucuses and a baseball diamond in a cornfield",
+   "known": 0.4,
+   "kind": "midwest"
+  },
+  {
+   "label": "Nebraska",
+   "qid": "Q1553",
+   "fame": 0.611,
+   "nickname": "Cornhusker State",
+   "description": "state of the United States of America",
+   "hook": "is a plains land known for corn, college football fans and Omaha's College World Series",
+   "known": 0.2,
+   "kind": "midwest"
+  },
+  {
+   "label": "South Carolina",
+   "qid": "Q1456",
+   "fame": 0.609,
+   "nickname": "The Palmetto State",
+   "description": "state of the United States of America",
+   "hook": "is a southern Atlantic land known for Charleston, Fort Sumter and the first shots of the Civil War",
+   "known": 0.4,
+   "kind": "south"
+  },
+  {
+   "label": "Nevada",
+   "qid": "Q1227",
+   "fame": 0.608,
+   "nickname": "Silver State",
+   "description": "state of the United States of America",
+   "hook": "is a desert land known for Las Vegas casinos, Hoover Dam and Area 51",
+   "known": 0.4,
+   "kind": "west"
+  },
+  {
+   "label": "Idaho",
+   "qid": "Q1221",
+   "fame": 0.601,
+   "nickname": "Gem State",
+   "description": "state of the United States of America",
+   "hook": "is a northwestern land best known worldwide for its potatoes",
+   "known": 0.4,
+   "kind": "west"
+  },
+  {
+   "label": "South Dakota",
+   "qid": "Q1211",
+   "fame": 0.579,
+   "nickname": "The Mount Rushmore State",
+   "description": "state of the United States of America",
+   "hook": "is a plains land with giant carved presidents' faces on a hillside and the Badlands",
+   "known": 0.4,
+   "kind": "midwest"
+  },
+  {
+   "label": "North Dakota",
+   "qid": "Q1207",
+   "fame": 0.577,
+   "nickname": "Peace Garden State",
+   "description": "state of the United States of America",
+   "hook": "is a northern plains land with harsh winters, oil fields and a vast border with Canada",
+   "known": 0.2,
+   "kind": "midwest"
+  }
+ ]
+}

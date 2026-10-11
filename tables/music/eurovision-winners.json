@@ -1,0 +1,497 @@
+{
+ "id": "table.music.eurovision-winners",
+ "kind": "table",
+ "title": "Eurovision Song Contest editions: year and winning country",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "festivals-and-scenes",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?year ?winnerLabel WHERE { { SELECT ?item (MIN(?d) AS ?year) (SAMPLE(?c) AS ?winner) (COUNT(DISTINCT ?c) AS ?nWinners) WHERE { ?item (wdt:P3450|wdt:P361|wdt:P179) wd:Q276 ; (wdt:P585|wdt:P580) ?d . ?item p:P1346 ?st . ?st pq:P1532 ?c . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nWinners = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-24T23:05:51.205Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-24T23:05:51.205Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "year",
+   "label": "Year",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "winner",
+   "label": "Winning country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "item",
+  "many": "items",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Eurovision Song Contest 2022",
+   "qid": "Q96929880",
+   "fame": 0.456,
+   "year": 2022,
+   "winner": "Ukraine",
+   "description": "66th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 2021",
+   "qid": "Q50729731",
+   "fame": 0.447,
+   "year": 2021,
+   "winner": "Italy",
+   "description": "65th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 2019",
+   "qid": "Q9095390",
+   "fame": 0.431,
+   "year": 2019,
+   "winner": "Netherlands",
+   "description": "64th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 2018",
+   "qid": "Q25408640",
+   "fame": 0.427,
+   "year": 2018,
+   "winner": "Israel",
+   "description": "63rd edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 2016",
+   "qid": "Q6015709",
+   "fame": 0.404,
+   "year": 2016,
+   "winner": "Ukraine",
+   "description": "61st edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 2017",
+   "qid": "Q23055386",
+   "fame": 0.4,
+   "year": 2017,
+   "winner": "Portugal",
+   "description": "62nd edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 2010",
+   "qid": "Q10158",
+   "fame": 0.397,
+   "year": 2010,
+   "winner": "Germany",
+   "description": "55th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 2015",
+   "qid": "Q15215081",
+   "fame": 0.396,
+   "year": 2015,
+   "winner": "Sweden",
+   "description": "60th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 2013",
+   "qid": "Q10162",
+   "fame": 0.391,
+   "year": 2013,
+   "winner": "Denmark",
+   "description": "58th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 2014",
+   "qid": "Q5354210",
+   "fame": 0.388,
+   "year": 2014,
+   "winner": "Austria",
+   "description": "59th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1988",
+   "qid": "Q211478",
+   "fame": 0.384,
+   "year": 1988,
+   "winner": "Switzerland",
+   "description": "33rd edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 2003",
+   "qid": "Q10148",
+   "fame": 0.349,
+   "year": 2003,
+   "winner": "Turkey",
+   "description": "48th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1956",
+   "qid": "Q171784",
+   "fame": 0.345,
+   "year": 1956,
+   "winner": "Switzerland",
+   "description": "1st edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1974",
+   "qid": "Q207541",
+   "fame": 0.343,
+   "year": 1974,
+   "winner": "Sweden",
+   "description": "19th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1994",
+   "qid": "Q211484",
+   "fame": 0.338,
+   "year": 1994,
+   "winner": "Ireland",
+   "description": "39th edition of Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1998",
+   "qid": "Q202110",
+   "fame": 0.337,
+   "year": 1998,
+   "winner": "Israel",
+   "description": "43rd edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 2002",
+   "qid": "Q10146",
+   "fame": 0.337,
+   "year": 2002,
+   "winner": "Latvia",
+   "description": "47th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1996",
+   "qid": "Q207815",
+   "fame": 0.335,
+   "year": 1996,
+   "winner": "Ireland",
+   "description": "41st edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1993",
+   "qid": "Q208243",
+   "fame": 0.332,
+   "year": 1993,
+   "winner": "Ireland",
+   "description": "38th edition of Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 2000",
+   "qid": "Q11113",
+   "fame": 0.332,
+   "year": 2000,
+   "winner": "Denmark",
+   "description": "45th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 2001",
+   "qid": "Q11062",
+   "fame": 0.327,
+   "year": 2001,
+   "winner": "Estonia",
+   "description": "46th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1990",
+   "qid": "Q207538",
+   "fame": 0.316,
+   "year": 1990,
+   "winner": "Italy",
+   "description": "35th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1980",
+   "qid": "Q213942",
+   "fame": 0.313,
+   "year": 1980,
+   "winner": "Ireland",
+   "description": "25th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1999",
+   "qid": "Q11117",
+   "fame": 0.31,
+   "year": 1999,
+   "winner": "Sweden",
+   "description": "44th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1995",
+   "qid": "Q209678",
+   "fame": 0.308,
+   "year": 1995,
+   "winner": "Norway",
+   "description": "40th edition of Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1979",
+   "qid": "Q216891",
+   "fame": 0.306,
+   "year": 1979,
+   "winner": "Israel",
+   "description": "24th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1992",
+   "qid": "Q211487",
+   "fame": 0.305,
+   "year": 1992,
+   "winner": "Ireland",
+   "description": "37th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1991",
+   "qid": "Q208523",
+   "fame": 0.303,
+   "year": 1991,
+   "winner": "Sweden",
+   "description": "36th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1981",
+   "qid": "Q211752",
+   "fame": 0.297,
+   "year": 1981,
+   "winner": "United Kingdom",
+   "description": "26th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1970",
+   "qid": "Q209673",
+   "fame": 0.293,
+   "year": 1970,
+   "winner": "Ireland",
+   "description": "15th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1982",
+   "qid": "Q211469",
+   "fame": 0.293,
+   "year": 1982,
+   "winner": "West Germany",
+   "description": "27th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1973",
+   "qid": "Q211490",
+   "fame": 0.292,
+   "year": 1973,
+   "winner": "Luxembourg",
+   "description": "18th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1989",
+   "qid": "Q208524",
+   "fame": 0.292,
+   "year": 1989,
+   "winner": "Socialist Federal Republic of Yugoslavia",
+   "description": "34th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1978",
+   "qid": "Q211754",
+   "fame": 0.291,
+   "year": 1978,
+   "winner": "Israel",
+   "description": "23rd edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1957",
+   "qid": "Q154846",
+   "fame": 0.29,
+   "year": 1957,
+   "winner": "Netherlands",
+   "description": "2nd edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1983",
+   "qid": "Q153578",
+   "fame": 0.29,
+   "year": 1983,
+   "winner": "Luxembourg",
+   "description": "28th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1977",
+   "qid": "Q211494",
+   "fame": 0.287,
+   "year": 1977,
+   "winner": "France",
+   "description": "22nd edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1986",
+   "qid": "Q210578",
+   "fame": 0.287,
+   "year": 1986,
+   "winner": "Belgium",
+   "description": "31st edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1987",
+   "qid": "Q211474",
+   "fame": 0.284,
+   "year": 1987,
+   "winner": "Ireland",
+   "description": "32nd edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1976",
+   "qid": "Q209751",
+   "fame": 0.283,
+   "year": 1976,
+   "winner": "United Kingdom",
+   "description": "21st edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1985",
+   "qid": "Q179853",
+   "fame": 0.281,
+   "year": 1985,
+   "winner": "Norway",
+   "description": "30th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1975",
+   "qid": "Q209745",
+   "fame": 0.28,
+   "year": 1975,
+   "winner": "Netherlands",
+   "description": "20th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1958",
+   "qid": "Q188517",
+   "fame": 0.279,
+   "year": 1958,
+   "winner": "France",
+   "description": "3rd edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1984",
+   "qid": "Q209846",
+   "fame": 0.277,
+   "year": 1984,
+   "winner": "Sweden",
+   "description": "29th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1972",
+   "qid": "Q211942",
+   "fame": 0.276,
+   "year": 1972,
+   "winner": "Luxembourg",
+   "description": "17th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1964",
+   "qid": "Q203983",
+   "fame": 0.275,
+   "year": 1964,
+   "winner": "Italy",
+   "description": "9th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1971",
+   "qid": "Q209429",
+   "fame": 0.267,
+   "year": 1971,
+   "winner": "Monaco",
+   "description": "16th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1961",
+   "qid": "Q200794",
+   "fame": 0.266,
+   "year": 1961,
+   "winner": "Luxembourg",
+   "description": "6th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1968",
+   "qid": "Q204010",
+   "fame": 0.266,
+   "year": 1968,
+   "winner": "Spain",
+   "description": "13th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1963",
+   "qid": "Q203968",
+   "fame": 0.264,
+   "year": 1963,
+   "winner": "Denmark",
+   "description": "8th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1965",
+   "qid": "Q203975",
+   "fame": 0.263,
+   "year": 1965,
+   "winner": "Luxembourg",
+   "description": "10th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1959",
+   "qid": "Q199924",
+   "fame": 0.262,
+   "year": 1959,
+   "winner": "Netherlands",
+   "description": "4th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1960",
+   "qid": "Q203245",
+   "fame": 0.262,
+   "year": 1960,
+   "winner": "France",
+   "description": "5th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1967",
+   "qid": "Q205192",
+   "fame": 0.259,
+   "year": 1967,
+   "winner": "United Kingdom",
+   "description": "12th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1962",
+   "qid": "Q203254",
+   "fame": 0.257,
+   "year": 1962,
+   "winner": "France",
+   "description": "7th edition of the Eurovision Song Contest"
+  },
+  {
+   "label": "Eurovision Song Contest 1966",
+   "qid": "Q207889",
+   "fame": 0.257,
+   "year": 1966,
+   "winner": "Austria",
+   "description": "11th edition of the Eurovision Song Contest"
+  }
+ ]
+}

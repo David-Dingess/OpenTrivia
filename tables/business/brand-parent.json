@@ -1,0 +1,288 @@
+{
+ "id": "table.business.brand-parent",
+ "kind": "table",
+ "title": "Famous brands and the company that owns them",
+ "genre": "daily-life",
+ "category": "business",
+ "topic": "big-companies",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?parentLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?h) AS ?parent) (COUNT(DISTINCT ?h) AS ?n) WHERE { ?item wdt:P31/wdt:P279* wd:Q431289 ; wdt:P127|wdt:P749 ?h ; wikibase:sitelinks ?sitelinks . ?h wdt:P31/wdt:P279* wd:Q4830453 . FILTER(?sitelinks > 40) FILTER NOT EXISTS { ?item wdt:P576 ?end } FILTER NOT EXISTS { ?item wdt:P31/wdt:P279* wd:Q786820 } } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 300 } hint:Prior hint:runFirst true . FILTER(?n = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T22:06:33.343Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T22:06:33.343Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "parent",
+   "label": "Owned by",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "brand",
+  "many": "brands",
+  "minFame": 0.5,
+  "hookAsk": "Which brand {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "parent": {
+    "role": "link",
+    "pick": "Which company owns {label}?",
+    "statement": "{label} is owned by {value}.",
+    "match": "Match each brand to the company that owns it.",
+    "odd": "Three of these brands are owned by {value}. Which one isn't?",
+    "all": "Tap all {n} brands owned by {value}.",
+    "reverse": "Which brand is owned by {value}?"
+   }
+  },
+  "exclude": [
+   {
+    "qid": "Q367251",
+    "why": "Kit Kat: Nestlé makes it worldwide but Hershey makes it in the US - the answer depends on the country"
+   }
+  ]
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Xbox",
+   "qid": "Q15281614",
+   "fame": 0.625,
+   "parent": "Microsoft",
+   "description": "Microsoft's video gaming brand",
+   "hook": "is a game console line with a glowing green button, home to the Master Chief shooter series",
+   "known": 0.8,
+   "kind": "video game brand"
+  },
+  {
+   "label": "PlayStation",
+   "qid": "Q1323662",
+   "fame": 0.604,
+   "parent": "Sony Interactive Entertainment",
+   "description": "video gaming brand owned by Sony Interactive Entertainment",
+   "hook": "is a game console line whose controller has triangle, circle, cross and square buttons",
+   "known": 0.85,
+   "kind": "video game brand"
+  },
+  {
+   "label": "KFC",
+   "qid": "Q524757",
+   "fame": 0.603,
+   "parent": "Yum! Brands",
+   "description": "American fast food restaurant chain specializing in fried chicken",
+   "hook": "sells fried chicken and is fronted by a white-suited colonel with glasses and a goatee",
+   "known": 0.95,
+   "kind": "fast food brand"
+  },
+  {
+   "label": "Barbie",
+   "qid": "Q167447",
+   "fame": 0.581,
+   "parent": "Mattel",
+   "description": "fashion doll brand and media franchise",
+   "hook": "is a fashion doll with a long-time boyfriend named Ken and a hit pink movie",
+   "known": 0.9,
+   "kind": "toy"
+  },
+  {
+   "label": "Taco Bell",
+   "qid": "Q752941",
+   "fame": 0.564,
+   "parent": "Yum! Brands",
+   "description": "American fast-food chain",
+   "hook": "is a fast-food chain that sells Crunchwraps and Chalupas and once ran ads with a talking chihuahua",
+   "known": 0.85,
+   "kind": "fast food brand"
+  },
+  {
+   "label": "Uniqlo",
+   "qid": "Q26070",
+   "fame": 0.555,
+   "parent": "Fast Retailing",
+   "description": "Japanese casual wear designer, manufacturer and retailer",
+   "hook": "is a casual-clothing retailer known for cheap thermal underwear and ultralight down jackets",
+   "known": 0.4,
+   "kind": "clothing"
+  },
+  {
+   "label": "Pizza Hut",
+   "qid": "Q191615",
+   "fame": 0.551,
+   "parent": "Yum! Brands",
+   "description": "American restaurant chain and international franchise",
+   "hook": "is a restaurant chain known for red roofs and stuffed-crust pies",
+   "known": 0.95,
+   "kind": "fast food brand"
+  },
+  {
+   "label": "Converse",
+   "qid": "Q319515",
+   "fame": 0.546,
+   "parent": "Nike, Inc.",
+   "description": "American shoe company and brand",
+   "hook": "makes canvas high-top sneakers known as Chuck Taylors",
+   "known": 0.75,
+   "kind": "clothing"
+  },
+  {
+   "label": "M&M's",
+   "qid": "Q739550",
+   "fame": 0.543,
+   "parent": "Mars, Incorporated",
+   "description": "brand of chocolate candy pieces",
+   "hook": "makes candy-coated chocolates that melt in your mouth, not in your hand",
+   "known": 0.95,
+   "kind": "chocolate/candy"
+  },
+  {
+   "label": "Dunkin'",
+   "qid": "Q847743",
+   "fame": 0.537,
+   "parent": "Inspire Brands",
+   "description": "American global donut company and coffeehouse",
+   "hook": "is a doughnut and iced-coffee chain that began in Massachusetts and has a pink and orange logo",
+   "known": 0.8,
+   "kind": "fast food brand"
+  },
+  {
+   "label": "Vogue",
+   "qid": "Q154008",
+   "fame": 0.53,
+   "parent": "Condé Nast",
+   "description": "American fashion and lifestyle magazine",
+   "hook": "is a glossy fashion magazine whose cover is a coveted honor, long led by editor Anna Wintour",
+   "known": 0.6,
+   "kind": "magazine"
+  },
+  {
+   "label": "Zara",
+   "qid": "Q147662",
+   "fame": 0.528,
+   "parent": "Inditex",
+   "description": "retailer for clothing and perfumes, headquartered in Spain",
+   "hook": "is a fast-fashion retailer that turns runway trends into store clothes within weeks",
+   "known": 0.7,
+   "kind": "clothing"
+  },
+  {
+   "label": "Pringles",
+   "qid": "Q528187",
+   "fame": 0.515,
+   "parent": "Kellanova",
+   "description": "brand of potato-based chips",
+   "hook": "sells stackable saddle-shaped chips packed in a tall tube can",
+   "known": 0.85,
+   "kind": "chocolate/candy"
+  },
+  {
+   "label": "Vespa",
+   "qid": "Q217673",
+   "fame": 0.515,
+   "parent": "Piaggio",
+   "description": "Italian scooter",
+   "hook": "is a curvy scooter that Audrey Hepburn rode through Rome in a classic film",
+   "known": 0.5,
+   "kind": "vehicle"
+  },
+  {
+   "label": "Nutella",
+   "qid": "Q212193",
+   "fame": 0.509,
+   "parent": "Ferrero SpA",
+   "description": "chocolate hazelnut spread manufactured by Ferrero",
+   "hook": "is a chocolate hazelnut spread eaten on toast and crepes straight from the jar",
+   "known": 0.85,
+   "kind": "chocolate/candy"
+  },
+  {
+   "label": "Toblerone",
+   "qid": "Q215707",
+   "fame": 0.509,
+   "parent": "Mondelez International",
+   "description": "brand of chocolate confection",
+   "hook": "is a chocolate bar shaped like a row of triangular peaks, made with honey and almond nougat",
+   "known": 0.7,
+   "kind": "chocolate/candy"
+  },
+  {
+   "label": "Johnnie Walker",
+   "qid": "Q502268",
+   "fame": 0.501,
+   "parent": "Diageo",
+   "description": "brand of Scotch whisky owned by Diageo that originated in Kilmarnock, Ayrshire, Scotland",
+   "hook": "is a Scotch whisky sold as Red Label and Black Label with a striding man on the bottle",
+   "known": 0.6,
+   "kind": "alcohol"
+  },
+  {
+   "label": "Snickers",
+   "qid": "Q714179",
+   "fame": 0.488,
+   "parent": "Mars, Incorporated",
+   "description": "brand name chocolate bar made by Mars, Incorporated",
+   "hook": null,
+   "known": 0.9,
+   "kind": "chocolate/candy"
+  },
+  {
+   "label": "Ray-Ban",
+   "qid": "Q653941",
+   "fame": 0.475,
+   "parent": "Luxottica",
+   "description": "brand of luxury sunglasses and eyeglasses",
+   "hook": null,
+   "known": 0.75,
+   "kind": "eyewear"
+  },
+  {
+   "label": "Kit Kat",
+   "qid": "Q367251",
+   "fame": 0.473,
+   "parent": "Nestlé",
+   "description": "brand of chocolate products",
+   "hook": null,
+   "known": 0.9,
+   "kind": "chocolate/candy"
+  },
+  {
+   "label": "Cartier",
+   "qid": "Q538587",
+   "fame": 0.469,
+   "parent": "Richemont",
+   "description": "French jeweler",
+   "hook": null,
+   "known": 0.6,
+   "kind": "jewelry"
+  },
+  {
+   "label": "Calvin Klein",
+   "qid": "Q1068628",
+   "fame": 0.468,
+   "parent": "PVH Corp.",
+   "description": "American fashion house",
+   "hook": null,
+   "known": 0.75,
+   "kind": "clothing"
+  }
+ ]
+}

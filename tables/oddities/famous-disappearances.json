@@ -1,0 +1,171 @@
+{
+ "id": "table.oddities.famous-disappearances",
+ "kind": "table",
+ "title": "Famous disappearances",
+ "genre": "general",
+ "category": "oddities",
+ "topic": "mysteries",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { VALUES ?item { wd:Q3355 wd:Q370705 wd:Q103651 wd:Q2908 wd:Q421675 wd:Q191050 wd:Q4263399 wd:Q311786 wd:Q1987577 wd:Q367196 wd:Q1065180 wd:Q294478 wd:Q653847 wd:Q15908324 wd:Q1332211 wd:Q59222 wd:Q2630073 wd:Q918462 wd:Q680897 wd:Q33209 wd:Q2305 wd:Q15217844 wd:Q1694882 wd:Q1286554 wd:Q12674 wd:Q35064 wd:Q57763 wd:Q1045146 wd:Q1913422 } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T05:59:29.249Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T13:05:00.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "vanished_where",
+   "label": "Vanished",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "kind",
+   "label": "Kind",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "disappearance",
+  "many": "disappearances",
+  "hookAsk": "Who or what {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "vanished_where": {
+    "role": "code",
+    "pick": "Where did {label} vanish?",
+    "statement": "{label} disappeared in or near {value}.",
+    "match": "Match each famous disappearance to where it happened.",
+    "reverse": "Which famous disappearance happened here: {value}?"
+   }
+  },
+  "exclude": [
+   {
+    "qid": "Q15908324",
+    "why": "MH370: an air disaster with 239 lost - removed by David (when in doubt, remove)"
+   }
+  ]
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Malaysia Airlines Flight 370",
+   "qid": "Q15908324",
+   "fame": 0.699,
+   "vanished_where": "Southern Indian Ocean",
+   "kind": "airliner",
+   "description": "passenger aircraft flight that went missing in 2014",
+   "hook": "was an airliner that dropped off radar bound for Beijing and triggered the largest search in aviation history",
+   "known": 0.4
+  },
+  {
+   "label": "Amelia Earhart",
+   "qid": "Q3355",
+   "fame": 0.684,
+   "vanished_where": "Pacific Ocean, near Howland Island",
+   "kind": "person",
+   "description": "American aviation pioneer and author (1897–1939)",
+   "hook": "was a record-setting woman pilot who vanished while trying to fly around the world",
+   "known": 0.8
+  },
+  {
+   "label": "Roanoke Colony",
+   "qid": "Q59222",
+   "fame": 0.632,
+   "vanished_where": "Outer Banks, North Carolina",
+   "kind": "colony",
+   "description": "former colony in present-day Dare County, North Carolina, US (1585–1590)",
+   "hook": "was an early English settlement in America whose settlers were gone when a supply ship returned",
+   "known": 0.4
+  },
+  {
+   "label": "Franklin's lost expedition",
+   "qid": "Q2305",
+   "fame": 0.581,
+   "vanished_where": "Arctic Canada",
+   "kind": "expedition",
+   "description": "1845 British expedition of Arctic exploration",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Antoine de Saint-Exupéry",
+   "qid": "Q2908",
+   "fame": 0.557,
+   "vanished_where": "Mediterranean Sea, off southern France",
+   "kind": "person",
+   "description": "French writer and aviator (1900–1944)",
+   "hook": "wrote a children's novella about a little prince from a tiny asteroid, then vanished on a wartime flight",
+   "known": 0.6
+  },
+  {
+   "label": "Glenn Miller",
+   "qid": "Q103651",
+   "fame": 0.553,
+   "vanished_where": "English Channel",
+   "kind": "person",
+   "description": "American band leader, arranger, and composer (1904–1944)",
+   "hook": "led a hugely popular big band known for \"Moonlight Serenade\" before vanishing on a wartime flight",
+   "known": 0.6
+  },
+  {
+   "label": "Mary Celeste",
+   "qid": "Q33209",
+   "fame": 0.543,
+   "vanished_where": "Atlantic Ocean, near the Azores",
+   "kind": "ship",
+   "description": "Ship found abandoned in the Atlantic Ocean in 1872",
+   "hook": "was a ship found drifting with nobody aboard, its cargo and belongings untouched",
+   "known": 0.6
+  },
+  {
+   "label": "Donald Crowhurst",
+   "qid": "Q1987577",
+   "fame": 0.541,
+   "vanished_where": "Atlantic Ocean",
+   "kind": "person",
+   "description": "British yacht racer (1932–1969)",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Percy Fawcett",
+   "qid": "Q370705",
+   "fame": 0.536,
+   "vanished_where": "Brazilian Amazon",
+   "kind": "person",
+   "description": "British explorer, anthropologist and archaeologist (1867–1925)",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Ambrose Bierce",
+   "qid": "Q191050",
+   "fame": 0.503,
+   "vanished_where": "Mexico",
+   "kind": "person",
+   "description": "American editorialist, journalist, short story writer, fabulist, and satirist (1842–1914)",
+   "hook": null,
+   "known": 0.2
+  }
+ ]
+}

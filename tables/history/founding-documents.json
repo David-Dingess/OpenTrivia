@@ -1,0 +1,191 @@
+{
+ "id": "table.history.founding-documents",
+ "kind": "table",
+ "title": "Founding documents and the country they come from",
+ "genre": "society",
+ "category": "history",
+ "topic": "speeches-and-documents",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?cname WHERE { VALUES (?item ?cname) { (wd:Q12519 \"England\"@en) (wd:Q93304 \"Babylonia\"@en) (wd:Q214524 \"United States\"@en) (wd:Q4576 \"United States\"@en) (wd:Q19867 \"England\"@en) (wd:Q179788 \"France\"@en) (wd:Q472802 \"New Zealand\"@en) (wd:Q157506 \"Germany\"@en) (wd:Q858036 \"United States\"@en) (wd:Q391358 \"United States\"@en) (wd:Q868502 \"United States\"@en) (wd:Q493620 \"United States\"@en) (wd:Q219447 \"England\"@en) (wd:Q203686 \"Ancient Rome\"@en) (wd:Q193155 \"United States\"@en) (wd:Q157648 \"United States\"@en) (wd:Q598496 \"Scotland\"@en) (wd:Q584063 \"England\"@en) (wd:Q316537 \"England\"@en) (wd:Q492004 \"England\"@en) (wd:Q944717 \"United States\"@en) (wd:Q4156977 \"United States\"@en) (wd:Q775307 \"Hungary\"@en) } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T02:23:23.176Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T02:23:23.176Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "document",
+  "many": "documents",
+  "theLabels": [
+   "Louisiana Purchase",
+   "Code of Hammurabi",
+   "Gettysburg Address",
+   "Articles of Confederation",
+   "Marshall Plan",
+   "Emancipation Proclamation",
+   "Federalist Papers",
+   "Mayflower Compact",
+   "Domesday Book",
+   "Bill of Rights 1689"
+  ],
+  "hookAsk": "Which document {hook}?",
+  "hookStatement": "",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} from?",
+    "statement": "{label} comes from {value}.",
+    "odd": "Three of these come from {value}. Which one doesn't?",
+    "all": "Tap all {n} that come from {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Magna Carta",
+   "qid": "Q12519",
+   "fame": 0.674,
+   "country": "England",
+   "description": "charter of rights agreed between King John of England and the nobility in 1215",
+   "hook": "was sealed by a king at Runnymede after rebel barons forced him to accept limits on his power",
+   "known": 0.75,
+   "kind": "declaration"
+  },
+  {
+   "label": "Domesday Book",
+   "qid": "Q19867",
+   "fame": 0.613,
+   "country": "England",
+   "description": "manuscript record of the \"Great Survey\" of much of England and parts of Wales completed in 1086",
+   "hook": "was a vast survey of lands and property ordered by William the Conqueror, named for Judgment Day",
+   "known": 0.55,
+   "kind": "record"
+  },
+  {
+   "label": "Louisiana Purchase",
+   "qid": "Q193155",
+   "fame": 0.61,
+   "country": "United States",
+   "description": "1803 acquisition by the U.S. of France's claim to the territory of Louisiana",
+   "hook": "was a land deal in which a young nation paid $15 million and roughly doubled its size",
+   "known": 0.7,
+   "kind": "policy"
+  },
+  {
+   "label": "Code of Hammurabi",
+   "qid": "Q93304",
+   "fame": 0.599,
+   "country": "Babylonia",
+   "description": "Babylonian code of law or conduct",
+   "hook": "is an ancient set of laws carved on a black stone pillar, known for its eye-for-an-eye style punishments",
+   "known": 0.6,
+   "kind": "ancient law code"
+  },
+  {
+   "label": "Gettysburg Address",
+   "qid": "Q214524",
+   "fame": 0.585,
+   "country": "United States",
+   "description": "speech by U.S. President Abraham Lincoln",
+   "hook": "was a short Lincoln speech at a Civil War cemetery, opening \"Four score and seven years ago\"",
+   "known": 0.85,
+   "kind": "proclamation"
+  },
+  {
+   "label": "Ninety-five Theses",
+   "qid": "Q157506",
+   "fame": 0.555,
+   "country": "Germany",
+   "description": "disputation by Martin Luther on indulgences",
+   "hook": "is said to have been nailed to a church door by Martin Luther, sparking the Protestant Reformation",
+   "known": 0.5,
+   "kind": "religious document"
+  },
+  {
+   "label": "Articles of Confederation",
+   "qid": "Q493620",
+   "fame": 0.535,
+   "country": "United States",
+   "description": "first constitution of the United States (1781–1789)",
+   "hook": "served as the young republic's first constitution, a weak framework replaced by a stronger one",
+   "known": 0.45,
+   "kind": "founding document"
+  },
+  {
+   "label": "Marshall Plan",
+   "qid": "Q4576",
+   "fame": 0.532,
+   "country": "United States",
+   "description": "American initiative for foreign aid to Western Europe following World War II",
+   "hook": "was the American aid program that helped rebuild Western Europe after World War II",
+   "known": 0.65,
+   "kind": "policy"
+  },
+  {
+   "label": "Emancipation Proclamation",
+   "qid": "Q391358",
+   "fame": 0.52,
+   "country": "United States",
+   "description": "executive order issued by president Abraham Lincoln on January 1, 1863 that freed southern slaves",
+   "hook": "was issued by Lincoln during the Civil War, declaring enslaved people in rebel states to be free",
+   "known": 0.8,
+   "kind": "proclamation"
+  },
+  {
+   "label": "Federalist Papers",
+   "qid": "Q858036",
+   "fame": 0.511,
+   "country": "United States",
+   "description": "series of 85 essays arguing in favor of the ratification of the US Constitution",
+   "hook": "is 85 essays by Hamilton, Madison and Jay, written as Publius to win support for the Constitution",
+   "known": 0.4,
+   "kind": "founding document"
+  },
+  {
+   "label": "Mayflower Compact",
+   "qid": "Q868502",
+   "fame": 0.479,
+   "country": "United States",
+   "description": "first governing document of Plymouth Colony",
+   "hook": "was an agreement signed aboard a ship by Pilgrim settlers before they landed to found a colony",
+   "known": 0.65,
+   "kind": "founding document"
+  },
+  {
+   "label": "Bill of Rights 1689",
+   "qid": "Q219447",
+   "fame": 0.468,
+   "country": "England",
+   "description": "act of the English Parliament guaranteeing certain rights",
+   "hook": "limited the powers of the monarch and strengthened Parliament after the Glorious Revolution",
+   "known": 0.5,
+   "kind": "declaration"
+  }
+ ]
+}

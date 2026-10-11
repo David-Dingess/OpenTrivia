@@ -1,0 +1,201 @@
+{
+ "id": "table.oddities.odd-place-names-r2",
+ "kind": "table",
+ "title": "Odd place names: the country (more)",
+ "genre": "general",
+ "category": "oddities",
+ "topic": "odd-place-names",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { VALUES ?item { wd:Q368241 wd:Q666831 wd:Q1012991 wd:Q10566 wd:Q2061 wd:Q913209 wd:Q1025791 wd:Q645475 wd:Q982501 wd:Q615975 wd:Q416901 wd:Q1012502 wd:Q1025016 wd:Q984834 wd:Q51147 wd:Q492796 wd:Q1021681 wd:Q1013249 wd:Q176410 wd:Q138578 wd:Q1738795 wd:Q495365 wd:Q988739 wd:Q732549 wd:Q1428659 wd:Q524233 wd:Q2738845 wd:Q578351 wd:Q983426 wd:Q970482 wd:Q49200 wd:Q54276 wd:Q667727 wd:Q43981 wd:Q490720 wd:Q320729 wd:Q37043 wd:Q34804 wd:Q1025065 wd:Q506402 wd:Q3238 wd:Q23430 wd:Q339462 wd:Q3273900 } ?item wikibase:sitelinks ?sitelinks ; wdt:P17 ?c . BIND(?c AS ?country) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T09:29:57.402Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T09:29:57.402Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "place",
+  "many": "places",
+  "capitalise": true,
+  "wildcard": "place",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "In which country is the oddly named {label}?",
+    "statement": "The oddly named {label} is in {value}.",
+    "match": "Match each oddly named place to its country.",
+    "odd": "Three of these oddly named places are in {value}. Which one isn't?",
+    "all": "Tap all {n} oddly named places in {value}.",
+    "reverse": "Which of these oddly named places is in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Albuquerque",
+   "qid": "Q34804",
+   "fame": 0.625,
+   "country": "United States",
+   "description": "city and county seat of Bernalillo County, New Mexico, United States and the largest city in the state",
+   "hook": "is the most populous city in its desert state, set along the Rio Grande below the Sandia Mountains",
+   "known": 0.6,
+   "kind": "us city"
+  },
+  {
+   "label": "Ulaanbaatar",
+   "qid": "Q23430",
+   "fame": 0.601,
+   "country": "Mongolia",
+   "description": "capital and largest city of Mongolia",
+   "hook": null,
+   "known": 0.2,
+   "kind": "capital"
+  },
+  {
+   "label": "Tallahassee",
+   "qid": "Q37043",
+   "fame": 0.549,
+   "country": "United States",
+   "description": "capital city of the U.S. state of Florida and seat of Leon County",
+   "hook": "is a Florida college town that serves as its state's capital and hosts Florida State University",
+   "known": 0.4,
+   "kind": "us capital"
+  },
+  {
+   "label": "Yellowknife",
+   "qid": "Q2061",
+   "fame": 0.543,
+   "country": "Canada",
+   "description": "capital and largest city of the Northwest Territories, Canada",
+   "hook": null,
+   "known": 0.05,
+   "kind": "canadian capital"
+  },
+  {
+   "label": "Saskatoon",
+   "qid": "Q10566",
+   "fame": 0.538,
+   "country": "Canada",
+   "description": "largest city in Saskatchewan, Canada",
+   "hook": null,
+   "known": 0.2,
+   "kind": "canadian city"
+  },
+  {
+   "label": "Sleepy Hollow",
+   "qid": "Q1025065",
+   "fame": 0.522,
+   "country": "United States",
+   "description": "village in New York, United States",
+   "hook": "is the Hudson River village tied to Washington Irving's tale of the Headless Horseman",
+   "known": 0.8,
+   "kind": "us village"
+  },
+  {
+   "label": "Tegucigalpa",
+   "qid": "Q3238",
+   "fame": 0.498,
+   "country": "Honduras",
+   "description": "capital and largest city of Honduras",
+   "hook": null,
+   "known": 0.05,
+   "kind": "capital"
+  },
+  {
+   "label": "Hoboken",
+   "qid": "Q138578",
+   "fame": 0.493,
+   "country": "United States",
+   "description": "city in Hudson County, New Jersey, United States",
+   "hook": "is a very densely packed city across the Hudson from Manhattan, home to a major rail and ferry terminal",
+   "known": 0.4,
+   "kind": "us city"
+  },
+  {
+   "label": "Ketchikan",
+   "qid": "Q43981",
+   "fame": 0.484,
+   "country": "United States",
+   "description": "city in Alaska, USA",
+   "hook": null,
+   "known": 0.2,
+   "kind": "us city"
+  },
+  {
+   "label": "Rancho Cucamonga",
+   "qid": "Q495365",
+   "fame": 0.484,
+   "country": "United States",
+   "description": "suburban city in San Bernardino County, California, United States",
+   "hook": "had its name popularized by a classic Jack Benny radio and TV comedy show",
+   "known": 0.4,
+   "kind": "us city"
+  },
+  {
+   "label": "Nacogdoches",
+   "qid": "Q970482",
+   "fame": 0.479,
+   "country": "United States",
+   "description": "city in and county seat of Nacogdoches County, Texas, United States",
+   "hook": null,
+   "known": 0.05,
+   "kind": "us city"
+  },
+  {
+   "label": "Biloxi",
+   "qid": "Q490720",
+   "fame": 0.465,
+   "country": "United States",
+   "description": "city in Harrison County, Mississippi, United States",
+   "hook": "is a Gulf Coast city that is home to Keesler Air Force Base and first settled by French colonists",
+   "known": 0.4,
+   "kind": "us city"
+  },
+  {
+   "label": "Ypsilanti",
+   "qid": "Q1021681",
+   "fame": 0.463,
+   "country": "United States",
+   "description": "city in Washtenaw County, Michigan, United States",
+   "hook": null,
+   "known": 0.05,
+   "kind": "us city"
+  },
+  {
+   "label": "Tupelo",
+   "qid": "Q667727",
+   "fame": 0.462,
+   "country": "United States",
+   "description": "city in, and the county seat of, Lee County, Mississippi, United States",
+   "hook": null,
+   "known": 0.2,
+   "kind": "us city"
+  }
+ ]
+}

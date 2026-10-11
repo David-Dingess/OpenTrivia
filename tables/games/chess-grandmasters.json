@@ -1,0 +1,215 @@
+{
+ "id": "table.games.chess-grandmasters",
+ "kind": "table",
+ "title": "Chess grandmasters by birth year",
+ "genre": "games-sports",
+ "category": "games",
+ "topic": "chess",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?born WHERE { { SELECT ?item ?sitelinks (GROUP_CONCAT(CONCAT(STR(?bornT), \"|\", STR(?bornP)); separator=\";\") AS ?born) WHERE { ?item wdt:P106 wd:Q10873124 ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 30) ?item p:P569 ?bornSt . ?bornSt a wikibase:BestRank . ?bornSt psv:P569 [ wikibase:timeValue ?bornT ; wikibase:timePrecision ?bornP ] . } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 250 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 108",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T16:49:17.208Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T16:49:17.208Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "born",
+   "label": "Born",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "chess grandmaster",
+  "many": "chess grandmasters",
+  "wildcard": "person",
+  "columns": {
+   "born": {
+    "role": "date",
+    "sort": "from the earliest born to the latest"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Magnus Carlsen",
+   "qid": "Q106807",
+   "fame": 0.665,
+   "born": 1990,
+   "description": "Norwegian chess player (born 1990)",
+   "hook": "held the top world ranking longer than any other player and won the world championship five times",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Bobby Fischer",
+   "qid": "Q41314",
+   "fame": 0.639,
+   "born": 1943,
+   "description": "American chess player (1943–2008)",
+   "hook": "beat a longtime Soviet champion in a world title match that became a Cold War sensation",
+   "known": 0.95,
+   "kind": "historic"
+  },
+  {
+   "label": "Garry Kasparov",
+   "qid": "Q28614",
+   "fame": 0.606,
+   "born": 1963,
+   "description": "Russian chess grandmaster and activist",
+   "hook": "became the youngest world champion of his era and later lost a famous match to a computer program",
+   "known": 0.95,
+   "kind": "historic"
+  },
+  {
+   "label": "Gukesh D",
+   "qid": "Q56026072",
+   "fame": 0.566,
+   "born": 2006,
+   "description": "Indian chess grandmaster",
+   "hook": "won the world championship as a teenager, becoming the youngest player ever to hold the title",
+   "known": 0.2,
+   "kind": "modern"
+  },
+  {
+   "label": "Judit Polgár",
+   "qid": "Q183250",
+   "fame": 0.556,
+   "born": 1976,
+   "description": "Hungarian chess player",
+   "hook": "is widely considered the strongest woman ever to play the game, beating many top players along the way",
+   "known": 0.6,
+   "kind": "modern"
+  },
+  {
+   "label": "Hikaru Nakamura",
+   "qid": "Q337223",
+   "fame": 0.552,
+   "born": 1987,
+   "description": "American chess player",
+   "hook": "built a massive online following as a top streamer, blitz specialist and commentator",
+   "known": 0.4,
+   "kind": "modern"
+  },
+  {
+   "label": "Viswanathan Anand",
+   "qid": "Q45747",
+   "fame": 0.541,
+   "born": 1969,
+   "description": "Indian chess grandmaster",
+   "hook": "held world titles in classical, rapid and blitz play all at the same time",
+   "known": 0.4,
+   "kind": "modern"
+  },
+  {
+   "label": "Javokhir Sindarov",
+   "qid": "Q27532037",
+   "fame": 0.537,
+   "born": 2005,
+   "description": "Uzbek chess grandmaster and 2026 Candidates Tournament winner",
+   "hook": "won a major candidates tournament as a rising young star, earning a shot at the world title",
+   "known": 0.05,
+   "kind": "modern"
+  },
+  {
+   "label": "Praggnanandhaa",
+   "qid": "Q26703041",
+   "fame": 0.52,
+   "born": 2005,
+   "description": "Indian chess player",
+   "hook": "beat the world's top-ranked player in a rapid event and became one of the youngest grandmasters ever",
+   "known": 0.2,
+   "kind": "modern"
+  },
+  {
+   "label": "Anatoly Karpov",
+   "qid": "Q131674",
+   "fame": 0.504,
+   "born": 1951,
+   "description": "Russian chess player",
+   "hook": "held the world championship for a decade and was known for a relentless, positional playing style",
+   "known": 0.6,
+   "kind": "historic"
+  },
+  {
+   "label": "Vladimir Kramnik",
+   "qid": "Q161092",
+   "fame": 0.501,
+   "born": 1975,
+   "description": "Russian chess grandmaster",
+   "hook": "ended a legendary champion's long reign at the top in a landmark title match",
+   "known": 0.4,
+   "kind": "modern"
+  },
+  {
+   "label": "Mikhail Tal",
+   "qid": "Q102664",
+   "fame": 0.495,
+   "born": 1936,
+   "description": "Soviet-Latvian chess player (1936-1992)",
+   "hook": "earned a nickname for his dazzling, high-risk attacking style and briefly held the world title",
+   "known": 0.4,
+   "kind": "historic"
+  },
+  {
+   "label": "Fabiano Caruana",
+   "qid": "Q367277",
+   "fame": 0.485,
+   "born": 1992,
+   "description": "Italian-American chess player",
+   "hook": "climbed to the top of the world rankings and challenged for the world title in a tiebreak-decided match",
+   "known": 0.2,
+   "kind": "modern"
+  },
+  {
+   "label": "Wesley So",
+   "qid": "Q147495",
+   "fame": 0.482,
+   "born": 1993,
+   "description": "Filipino-American chess player",
+   "hook": "won a major invitational tournament with a record unbeaten streak and later switched federations",
+   "known": 0.2,
+   "kind": "modern"
+  },
+  {
+   "label": "Anish Giri",
+   "qid": "Q548946",
+   "fame": 0.474,
+   "born": 1994,
+   "description": "Dutch chess player",
+   "hook": "became known for drawing an unusually high share of his games at the top level",
+   "known": 0.2,
+   "kind": "modern"
+  },
+  {
+   "label": "Ding Liren",
+   "qid": "Q1191198",
+   "fame": 0.452,
+   "born": 1992,
+   "description": "Chinese grandmaster and former World Chess Champion",
+   "hook": "became the first world champion from his country, winning the title in a dramatic tiebreak match",
+   "known": 0.2,
+   "kind": "modern"
+  }
+ ]
+}

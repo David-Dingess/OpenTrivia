@@ -1,0 +1,786 @@
+{
+ "id": "table.general-knowledge.what-colour",
+ "kind": "table",
+ "title": "What colour? Famous things and their colour",
+ "genre": "general",
+ "category": "general-knowledge",
+ "topic": "what-colour",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?colourLabel WHERE { VALUES (?article ?itemLabel ?colourLabel) { (<https://en.wikipedia.org/wiki/Banana> \"Banana\" \"yellow\") (<https://en.wikipedia.org/wiki/Lemon> \"Lemon\" \"yellow\") (<https://en.wikipedia.org/wiki/Strawberry> \"Strawberry\" \"red\") (<https://en.wikipedia.org/wiki/Tomato> \"Tomato\" \"red\") (<https://en.wikipedia.org/wiki/Carrot> \"Carrot\" \"orange\") (<https://en.wikipedia.org/wiki/Broccoli> \"Broccoli\" \"green\") (<https://en.wikipedia.org/wiki/Spinach> \"Spinach\" \"green\") (<https://en.wikipedia.org/wiki/Avocado> \"Avocado\" \"green\") (<https://en.wikipedia.org/wiki/Cucumber> \"Cucumber\" \"green\") (<https://en.wikipedia.org/wiki/Lime_(fruit)> \"Lime\" \"green\") (<https://en.wikipedia.org/wiki/Pumpkin> \"Pumpkin\" \"orange\") (<https://en.wikipedia.org/wiki/Eggplant> \"Eggplant\" \"purple\") (<https://en.wikipedia.org/wiki/Maize> \"Corn\" \"yellow\") (<https://en.wikipedia.org/wiki/Ketchup> \"Ketchup\" \"red\") (<https://en.wikipedia.org/wiki/Wasabi> \"Wasabi\" \"green\") (<https://en.wikipedia.org/wiki/Cherry> \"Cherry\" \"red\") (<https://en.wikipedia.org/wiki/Chocolate> \"Chocolate\" \"brown\") (<https://en.wikipedia.org/wiki/Milk> \"Milk\" \"white\") (<https://en.wikipedia.org/wiki/Salt> \"Salt\" \"white\") (<https://en.wikipedia.org/wiki/Mustard_(condiment)> \"Mustard\" \"yellow\") (<https://en.wikipedia.org/wiki/Matcha> \"Matcha\" \"green\") (<https://en.wikipedia.org/wiki/Guinness> \"Guinness\" \"black\") (<https://en.wikipedia.org/wiki/Fanta> \"Fanta\" \"orange\") (<https://en.wikipedia.org/wiki/Coca-Cola> \"Coca-Cola\" \"red\") (<https://en.wikipedia.org/wiki/Starbucks> \"Starbucks\" \"green\") (<https://en.wikipedia.org/wiki/Spotify> \"Spotify\" \"green\") (<https://en.wikipedia.org/wiki/Netflix> \"Netflix\" \"red\") (<https://en.wikipedia.org/wiki/YouTube> \"YouTube\" \"red\") (<https://en.wikipedia.org/wiki/Facebook> \"Facebook\" \"blue\") (<https://en.wikipedia.org/wiki/Ferrari> \"Ferrari\" \"red\") (<https://en.wikipedia.org/wiki/Tiffany_&_Co.> \"Tiffany & Co.\" \"blue\") (<https://en.wikipedia.org/wiki/Flamingo> \"Flamingo\" \"pink\") (<https://en.wikipedia.org/wiki/Polar_bear> \"Polar bear\" \"white\") (<https://en.wikipedia.org/wiki/Raven> \"Raven\" \"black\") (<https://en.wikipedia.org/wiki/Mute_swan> \"Mute swan\" \"white\") (<https://en.wikipedia.org/wiki/Domestic_canary> \"Canary\" \"yellow\") (<https://en.wikipedia.org/wiki/Northern_cardinal> \"Northern cardinal\" \"red\") (<https://en.wikipedia.org/wiki/Smurfs> \"The Smurfs\" \"blue\") (<https://en.wikipedia.org/wiki/Hulk_(comics)> \"The Hulk\" \"green\") (<https://en.wikipedia.org/wiki/Cookie_Monster> \"Cookie Monster\" \"blue\") (<https://en.wikipedia.org/wiki/Elmo> \"Elmo\" \"red\") (<https://en.wikipedia.org/wiki/Big_Bird> \"Big Bird\" \"yellow\") (<https://en.wikipedia.org/wiki/Grinch> \"Grinch\" \"green\") (<https://en.wikipedia.org/wiki/Shrek> \"Shrek\" \"green\") (<https://en.wikipedia.org/wiki/Kermit_the_Frog> \"Kermit the Frog\" \"green\") (<https://en.wikipedia.org/wiki/Oscar_the_Grouch> \"Oscar the Grouch\" \"green\") (<https://en.wikipedia.org/wiki/Count_von_Count> \"Count von Count\" \"purple\") (<https://en.wikipedia.org/wiki/Grover_(Sesame_Street)> \"Grover\" \"blue\") (<https://en.wikipedia.org/wiki/Sonic_the_Hedgehog> \"Sonic the Hedgehog\" \"blue\") (<https://en.wikipedia.org/wiki/Pikachu> \"Pikachu\" \"yellow\") (<https://en.wikipedia.org/wiki/Charmander> \"Charmander\" \"orange\") (<https://en.wikipedia.org/wiki/Squirtle> \"Squirtle\" \"blue\") (<https://en.wikipedia.org/wiki/Bulbasaur> \"Bulbasaur\" \"green\") (<https://en.wikipedia.org/wiki/Yoshi> \"Yoshi\" \"green\") (<https://en.wikipedia.org/wiki/Luigi> \"Luigi\" \"green\") (<https://en.wikipedia.org/wiki/Kirby_(character)> \"Kirby\" \"pink\") (<https://en.wikipedia.org/wiki/Mega_Man_(character)> \"Mega Man\" \"blue\") (<https://en.wikipedia.org/wiki/Pac-Man> \"Pac-Man\" \"yellow\") (<https://en.wikipedia.org/wiki/Garfield> \"Garfield\" \"orange\") (<https://en.wikipedia.org/wiki/Tigger> \"Tigger\" \"orange\") (<https://en.wikipedia.org/wiki/Tweety> \"Tweety\" \"yellow\") (<https://en.wikipedia.org/wiki/SpongeBob_SquarePants_(character)> \"SpongeBob SquarePants\" \"yellow\") (<https://en.wikipedia.org/wiki/Patrick_Star> \"Patrick Star\" \"pink\") (<https://en.wikipedia.org/wiki/Eugene_Krabs> \"Mr. Krabs\" \"red\") (<https://en.wikipedia.org/wiki/Piglet_(Winnie-the-Pooh)> \"Piglet\" \"pink\") (<https://en.wikipedia.org/wiki/Eeyore> \"Eeyore\" \"gray\") (<https://en.wikipedia.org/wiki/Minions_(franchise)> \"The Minions\" \"yellow\") (<https://en.wikipedia.org/wiki/Genie_(Aladdin)> \"The Genie\" \"blue\") (<https://en.wikipedia.org/wiki/Barney_&_Friends> \"Barney the Dinosaur\" \"purple\") (<https://en.wikipedia.org/wiki/Tinky-Winky> \"Tinky Winky\" \"purple\") (<https://en.wikipedia.org/wiki/Yoda> \"Yoda\" \"green\") (<https://en.wikipedia.org/wiki/Slimer> \"Slimer\" \"green\") (<https://en.wikipedia.org/wiki/Gumby> \"Gumby\" \"green\") (<https://en.wikipedia.org/wiki/Thanos> \"Thanos\" \"purple\") (<https://en.wikipedia.org/wiki/Chewbacca> \"Chewbacca\" \"brown\") (<https://en.wikipedia.org/wiki/Grimace_(McDonaldland)> \"Grimace\" \"purple\") (<https://en.wikipedia.org/wiki/Bart_Simpson> \"Bart Simpson\" \"yellow\") (<https://en.wikipedia.org/wiki/Homer_Simpson> \"Homer Simpson\" \"yellow\") (<https://en.wikipedia.org/wiki/Nemo_(Finding_Nemo)> \"Nemo\" \"orange\") (<https://en.wikipedia.org/wiki/TARDIS> \"TARDIS\" \"blue\") (<https://en.wikipedia.org/wiki/School_bus> \"School bus\" \"yellow\") (<https://en.wikipedia.org/wiki/Fire_engine> \"Fire engine\" \"red\") (<https://en.wikipedia.org/wiki/Pillar_box> \"British post box\" \"red\") (<https://en.wikipedia.org/wiki/Routemaster> \"London double-decker bus\" \"red\") (<https://en.wikipedia.org/wiki/Stop_sign> \"Stop sign\" \"red\") (<https://en.wikipedia.org/wiki/Statue_of_Liberty> \"Statue of Liberty\" \"green\") (<https://en.wikipedia.org/wiki/Golden_Gate_Bridge> \"Golden Gate Bridge\" \"orange\") (<https://en.wikipedia.org/wiki/Taj_Mahal> \"Taj Mahal\" \"white\") (<https://en.wikipedia.org/wiki/Emerald> \"Emerald\" \"green\") (<https://en.wikipedia.org/wiki/Sapphire> \"Sapphire\" \"blue\") (<https://en.wikipedia.org/wiki/Ruby> \"Ruby\" \"red\") (<https://en.wikipedia.org/wiki/Amethyst> \"Amethyst\" \"purple\") (<https://en.wikipedia.org/wiki/Chlorophyll> \"Chlorophyll\" \"green\") (<https://en.wikipedia.org/wiki/Hemoglobin> \"Hemoglobin\" \"red\") (<https://en.wikipedia.org/wiki/Sulfur> \"Sulfur\" \"yellow\") (<https://en.wikipedia.org/wiki/Coal> \"Coal\" \"black\") (<https://en.wikipedia.org/wiki/Chalk> \"Chalk\" \"white\") (<https://en.wikipedia.org/wiki/Grass> \"Grass\" \"green\") (<https://en.wikipedia.org/wiki/Sunflower> \"Sunflower\" \"yellow\") (<https://en.wikipedia.org/wiki/Dandelion> \"Dandelion\" \"yellow\") (<https://en.wikipedia.org/wiki/Daffodil> \"Daffodil\" \"yellow\") (<https://en.wikipedia.org/wiki/Poppy> \"Poppy\" \"red\") (<https://en.wikipedia.org/wiki/Lavender> \"Lavender\" \"purple\") (<https://en.wikipedia.org/wiki/Mars> \"Mars\" \"red\") (<https://en.wikipedia.org/wiki/Neptune> \"Neptune\" \"blue\") (<https://en.wikipedia.org/wiki/Snow> \"Snow\" \"white\") (<https://en.wikipedia.org/wiki/Blood> \"Blood\" \"red\") (<https://en.wikipedia.org/wiki/Cloud> \"Cloud\" \"white\") (<https://en.wikipedia.org/wiki/Pea> \"Pea\" \"green\") (<https://en.wikipedia.org/wiki/Mozzarella> \"Mozzarella\" \"white\") (<https://en.wikipedia.org/wiki/Cranberry> \"Cranberry\" \"red\") (<https://en.wikipedia.org/wiki/Crow> \"Crow\" \"black\") (<https://en.wikipedia.org/wiki/Dove> \"Dove\" \"white\") (<https://en.wikipedia.org/wiki/Ladybug> \"Ladybug\" \"red\") (<https://en.wikipedia.org/wiki/Santa_Claus> \"Santa Claus\" \"red\") } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T08:35:54.062Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T12:45:43.008Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "colour",
+   "label": "Colour",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "thing",
+  "many": "things",
+  "capitalise": true,
+  "theLabels": [
+   "Taj Mahal",
+   "Statue of Liberty",
+   "Golden Gate Bridge",
+   "TARDIS"
+  ],
+  "columns": {
+   "colour": {
+    "role": "link",
+    "pick": "What colour is {label}?",
+    "statement": "{label} is {value}.",
+    "match": "Match each thing to its colour.",
+    "odd": "Three of these are {value}. Which one isn't?",
+    "all": "Tap all {n} things that are {value}.",
+    "reverse": "Which of these is {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "YouTube",
+   "qid": "Q866",
+   "fame": 0.897,
+   "colour": "red",
+   "kind": "brand",
+   "description": "American video-sharing platform owned by Alphabet Inc.",
+   "hook": "lets anyone upload clips and is home to countless viral videos and creators",
+   "known": 0.95
+  },
+  {
+   "label": "Facebook",
+   "qid": "Q355",
+   "fame": 0.824,
+   "colour": "blue",
+   "kind": "brand",
+   "description": "American online social media and social networking service",
+   "hook": "connects billions of people through friend lists, walls and a thumbs-up button",
+   "known": 0.95
+  },
+  {
+   "label": "Taj Mahal",
+   "qid": "Q9141",
+   "fame": 0.689,
+   "colour": "white",
+   "kind": "landmark",
+   "description": "marble mausoleum in Agra, India",
+   "hook": "was built by an emperor as a tomb for his beloved wife",
+   "known": 0.8
+  },
+  {
+   "label": "Statue of Liberty",
+   "qid": "Q9202",
+   "fame": 0.688,
+   "colour": "green",
+   "kind": "landmark",
+   "description": "monument in New York",
+   "hook": "was a gift from France and welcomes ships into New York Harbor with a torch held high",
+   "known": 0.8
+  },
+  {
+   "label": "Chocolate",
+   "qid": "Q195",
+   "fame": 0.677,
+   "colour": "brown",
+   "kind": "food",
+   "description": "nutritionally dense or sweet food product from the seed of Theobroma cacao - cocoa bean",
+   "hook": "is made from cacao beans and comes in bars, truffles and hot drinks",
+   "known": 0.95
+  },
+  {
+   "label": "Mars",
+   "qid": "Q111",
+   "fame": 0.657,
+   "colour": "red",
+   "kind": "space",
+   "description": "fourth planet from the Solar System, tellurian and orange-red due to iron oxide",
+   "hook": "is a dusty neighbour planet that rovers explore for signs of ancient water and life",
+   "known": 0.8
+  },
+  {
+   "label": "Shrek",
+   "qid": "Q483815",
+   "fame": 0.648,
+   "colour": "green",
+   "kind": "character",
+   "description": "2001 American film directed by Andrew Adamson and Vicky Jenson",
+   "hook": "follows a grumpy ogre who rescues a princess with help from a talking donkey",
+   "known": 0.6
+  },
+  {
+   "label": "Polar bear",
+   "qid": "Q33609",
+   "fame": 0.644,
+   "colour": "white",
+   "kind": "animal",
+   "description": "species of bear native largely within the Arctic Circle",
+   "hook": "is a huge Arctic predator that hunts seals on drifting sea ice",
+   "known": 0.95
+  },
+  {
+   "label": "Neptune",
+   "qid": "Q332",
+   "fame": 0.636,
+   "colour": "blue",
+   "kind": "space",
+   "description": "eighth and farthest planet from the Sun in the Solar System, mainly composed of ice and rock",
+   "hook": "is the farthest planet from the Sun, known for supersonic winds and the moon Triton",
+   "known": 0.6
+  },
+  {
+   "label": "Sonic the Hedgehog",
+   "qid": "Q1046812",
+   "fame": 0.631,
+   "colour": "blue",
+   "kind": "character",
+   "description": "Sega video game franchise",
+   "hook": "stars a speedy mascot who collects rings and races past Dr. Eggman",
+   "known": 0.6
+  },
+  {
+   "label": "Matcha",
+   "qid": "Q822331",
+   "fame": 0.627,
+   "colour": "green",
+   "kind": "food",
+   "description": "finely powdered green tea",
+   "hook": "is whisked into a frothy drink and used in Japanese tea ceremonies",
+   "known": 0.4
+  },
+  {
+   "label": "Banana",
+   "qid": "Q503",
+   "fame": 0.622,
+   "colour": "yellow",
+   "kind": "food",
+   "description": "elongated, edible fruit produced by several kinds of large herbaceous flowering plants in the genus Musa",
+   "hook": "is a peeled-by-hand fruit that monkeys are famous for munching and people slip on in cartoons",
+   "known": 0.95
+  },
+  {
+   "label": "Golden Gate Bridge",
+   "qid": "Q44440",
+   "fame": 0.611,
+   "colour": "orange",
+   "kind": "landmark",
+   "description": "suspension bridge on the San Francisco Bay",
+   "hook": "is a famous suspension span across the entrance to San Francisco Bay, often shrouded in fog",
+   "known": 0.8
+  },
+  {
+   "label": "Corn",
+   "qid": "Q11575",
+   "fame": 0.61,
+   "colour": "yellow",
+   "kind": "food",
+   "description": "species of grass cultivated as a food crop",
+   "hook": "grows on a cob and is popped into a movie-theater snack",
+   "known": 0.8
+  },
+  {
+   "label": "Avocado",
+   "qid": "Q37153",
+   "fame": 0.608,
+   "colour": "green",
+   "kind": "food",
+   "description": "species of plant, use Q961769 for the fruit",
+   "hook": "is mashed into guacamole and spread on toast",
+   "known": 0.6
+  },
+  {
+   "label": "Ferrari",
+   "qid": "Q27586",
+   "fame": 0.608,
+   "colour": "red",
+   "kind": "brand",
+   "description": "Italian luxury sports car manufacturer",
+   "hook": "is an Italian maker of racing and luxury sports cars with a prancing horse badge",
+   "known": 0.8
+  },
+  {
+   "label": "Tomato",
+   "qid": "Q23501",
+   "fame": 0.606,
+   "colour": "red",
+   "kind": "food",
+   "description": "type of plant species with edible, often red, berry fruit",
+   "hook": "is technically a fruit but is treated as a vegetable, and tops pizzas and ketchup",
+   "known": 0.95
+  },
+  {
+   "label": "Pikachu",
+   "qid": "Q9351",
+   "fame": 0.602,
+   "colour": "yellow",
+   "kind": "character",
+   "description": "Pokémon species, mascot of the Pokémon franchise",
+   "hook": "is an electric-mouse mascot who says its own name and evolves from Pichu",
+   "known": 0.6
+  },
+  {
+   "label": "Pac-Man",
+   "qid": "Q173626",
+   "fame": 0.597,
+   "colour": "yellow",
+   "kind": "character",
+   "description": "1980 arcade game developed by Namco",
+   "hook": "is an arcade game about a hungry circle eating dots while chased by ghosts",
+   "known": 0.6
+  },
+  {
+   "label": "Garfield",
+   "qid": "Q72533",
+   "fame": 0.595,
+   "colour": "orange",
+   "kind": "character",
+   "description": "comic strip created by Jim Davis",
+   "hook": "is a lasagna-loving, Monday-hating cat who torments his owner and a dog named Odie",
+   "known": 0.6
+  },
+  {
+   "label": "Lemon",
+   "qid": "Q500",
+   "fame": 0.591,
+   "colour": "yellow",
+   "kind": "food",
+   "description": "nothospecies of plant",
+   "hook": "is a sour citrus squeezed into drinks, with a famous saying about life handing it out",
+   "known": 0.95
+  },
+  {
+   "label": "Sulfur",
+   "qid": "Q682",
+   "fame": 0.589,
+   "colour": "yellow",
+   "kind": "nature",
+   "description": "chemical element with symbol S and atomic number 16",
+   "hook": "is a brimstone element that gives rotten eggs and matches their smell",
+   "known": 0.2
+  },
+  {
+   "label": "Santa Claus",
+   "qid": "Q315796",
+   "fame": 0.571,
+   "colour": "red",
+   "kind": "character",
+   "description": "legendary figure said to deliver gifts to people on Christmas Eve",
+   "hook": "is a jolly gift-bringer who lives at the North Pole and rides a sleigh pulled by reindeer",
+   "known": 0.95
+  },
+  {
+   "label": "Sapphire",
+   "qid": "Q127583",
+   "fame": 0.568,
+   "colour": "blue",
+   "kind": "gem",
+   "description": "gem variety of corundum",
+   "hook": "is a precious stone that has been set in royal engagement rings",
+   "known": 0.4
+  },
+  {
+   "label": "SpongeBob SquarePants",
+   "qid": "Q935079",
+   "fame": 0.568,
+   "colour": "yellow",
+   "kind": "character",
+   "description": "main character from the animated television show SpongeBob SquarePants",
+   "hook": "is a cheerful fry cook living in a pineapple under the sea",
+   "known": 0.6
+  },
+  {
+   "label": "Pumpkin",
+   "qid": "Q165308",
+   "fame": 0.56,
+   "colour": "orange",
+   "kind": "food",
+   "description": "orange (yellow, green) winter squash native to North America",
+   "hook": "is carved into a lantern at Halloween and baked into a Thanksgiving pie",
+   "known": 0.95
+  },
+  {
+   "label": "Eggplant",
+   "qid": "Q7540",
+   "fame": 0.558,
+   "colour": "purple",
+   "kind": "food",
+   "description": "species of plant",
+   "hook": "is a glossy, oval vegetable baked into parmesan dishes and used in ratatouille",
+   "known": 0.6
+  },
+  {
+   "label": "Strawberry",
+   "qid": "Q13158",
+   "fame": 0.556,
+   "colour": "red",
+   "kind": "food",
+   "description": "hybrid species in the rose family",
+   "hook": "is a juicy berry with seeds on the outside, served with cream at Wimbledon",
+   "known": 0.95
+  },
+  {
+   "label": "Amethyst",
+   "qid": "Q79058",
+   "fame": 0.552,
+   "colour": "purple",
+   "kind": "gem",
+   "description": "mineral of quartz variety",
+   "hook": "is a quartz gemstone and the traditional birthstone for February",
+   "known": 0.2
+  },
+  {
+   "label": "Crow",
+   "qid": "Q388450",
+   "fame": 0.551,
+   "colour": "black",
+   "kind": "animal",
+   "description": "bird of the genus Corvus, or more broadly a synonym for all of Corvus",
+   "hook": "is a clever, noisy bird known for solving puzzles and cawing from fields and fence posts",
+   "known": 0.8
+  },
+  {
+   "label": "Bart Simpson",
+   "qid": "Q5480",
+   "fame": 0.547,
+   "colour": "yellow",
+   "kind": "character",
+   "description": "fictional character from The Simpsons",
+   "hook": "is a prankster who skateboards, shouts catchphrases and constantly infuriates his dad",
+   "known": 0.4
+  },
+  {
+   "label": "Wasabi",
+   "qid": "Q49855",
+   "fame": 0.545,
+   "colour": "green",
+   "kind": "food",
+   "description": "species of edible plant",
+   "hook": "is a pungent paste served with sushi that clears your sinuses",
+   "known": 0.4
+  },
+  {
+   "label": "Broccoli",
+   "qid": "Q47722",
+   "fame": 0.544,
+   "colour": "green",
+   "kind": "food",
+   "description": "edible green plant in the cabbage family",
+   "hook": "is a tiny-tree vegetable that many children refuse to eat",
+   "known": 0.8
+  },
+  {
+   "label": "Tweety",
+   "qid": "Q623553",
+   "fame": 0.542,
+   "colour": "yellow",
+   "kind": "character",
+   "description": "Warner Bros. theatrical cartoon character",
+   "hook": "is a canary who keeps being chased by a cat who thinks he saw a puddy tat",
+   "known": 0.2
+  },
+  {
+   "label": "Milk",
+   "qid": "Q8495",
+   "fame": 0.54,
+   "colour": "white",
+   "kind": "food",
+   "description": "white liquid produced by the mammary glands of mammals",
+   "hook": "comes from cows and is poured over cereal",
+   "known": 0.95
+  },
+  {
+   "label": "Flamingo",
+   "qid": "Q3901583",
+   "fame": 0.538,
+   "colour": "pink",
+   "kind": "animal",
+   "description": "family of birds",
+   "hook": "is a long-legged wading bird that famously rests standing on one leg",
+   "known": 0.8
+  },
+  {
+   "label": "Raven",
+   "qid": "Q8335",
+   "fame": 0.531,
+   "colour": "black",
+   "kind": "animal",
+   "description": "common name of several of the larger birds of the genus Corvus",
+   "hook": "is a large, glossy, intelligent bird in a famous Edgar Allan Poe poem",
+   "known": 0.6
+  },
+  {
+   "label": "Northern cardinal",
+   "qid": "Q726389",
+   "fame": 0.529,
+   "colour": "red",
+   "kind": "animal",
+   "description": "species of bird",
+   "hook": "is a crested songbird that is the state bird of many US states",
+   "known": 0.6
+  },
+  {
+   "label": "Salt",
+   "qid": "Q11254",
+   "fame": 0.529,
+   "colour": "white",
+   "kind": "food",
+   "description": "mineral used as food ingredient, composed primarily of sodium chloride",
+   "hook": "is a mineral seasoning shaken onto food and spread on icy roads",
+   "known": 0.95
+  },
+  {
+   "label": "Hemoglobin",
+   "qid": "Q43041",
+   "fame": 0.528,
+   "colour": "red",
+   "kind": "nature",
+   "description": "oxygen-transport metalloprotein in red blood cells of most vertebrates",
+   "hook": "is the iron-rich protein that carries oxygen around the body",
+   "known": 0.05
+  },
+  {
+   "label": "Coal",
+   "qid": "Q24489",
+   "fame": 0.526,
+   "colour": "black",
+   "kind": "nature",
+   "description": "combustible sedimentary rock composed primarily of carbon",
+   "hook": "is a fossil fuel burned for power and left as a lump in naughty stockings",
+   "known": 0.95
+  },
+  {
+   "label": "Blood",
+   "qid": "Q7873",
+   "fame": 0.525,
+   "colour": "red",
+   "kind": "nature",
+   "description": "organic fluid which transports nutrients throughout the organism",
+   "hook": "is pumped by the heart through veins and is given at donation drives",
+   "known": 0.95
+  },
+  {
+   "label": "Carrot",
+   "qid": "Q81",
+   "fame": 0.523,
+   "colour": "orange",
+   "kind": "food",
+   "description": "taproot of the domesticated carrot plant",
+   "hook": "is a crunchy root vegetable that rabbits are famous for munching, said to help eyesight",
+   "known": 0.95
+  },
+  {
+   "label": "Eeyore",
+   "qid": "Q1799013",
+   "fame": 0.521,
+   "colour": "gray",
+   "kind": "character",
+   "description": "character from Milne's Winnie-the-Pooh-books",
+   "hook": "is a gloomy stuffed donkey who loses his tail in the Hundred Acre Wood",
+   "known": 0.4
+  },
+  {
+   "label": "Elmo",
+   "qid": "Q762250",
+   "fame": 0.52,
+   "colour": "red",
+   "kind": "character",
+   "description": "Muppet character on the children's television show Sesame Street",
+   "hook": "is a furry, giggling monster who refers to himself in the third person on a children's street",
+   "known": 0.6
+  },
+  {
+   "label": "Yoda",
+   "qid": "Q51730",
+   "fame": 0.519,
+   "colour": "green",
+   "kind": "character",
+   "description": "fictional character from Star Wars",
+   "hook": "is a tiny, wise Jedi master who speaks in backwards sentences",
+   "known": 0.6
+  },
+  {
+   "label": "Emerald",
+   "qid": "Q43513",
+   "fame": 0.518,
+   "colour": "green",
+   "kind": "gem",
+   "description": "green gemstone, a beryl variety",
+   "hook": "is a precious beryl gem and the birthstone for May, also the name of a famous fictional city in Oz",
+   "known": 0.2
+  },
+  {
+   "label": "Mustard",
+   "qid": "Q131748",
+   "fame": 0.518,
+   "colour": "yellow",
+   "kind": "food",
+   "description": "condiment made from various varieties of mustard seeds",
+   "hook": "is a tangy condiment squirted on hot dogs and pretzels",
+   "known": 0.95
+  },
+  {
+   "label": "Ruby",
+   "qid": "Q43088",
+   "fame": 0.518,
+   "colour": "red",
+   "kind": "gem",
+   "description": "variety of corundum, mineral, gemstone",
+   "hook": "is a precious corundum gem and the birthstone for July",
+   "known": 0.4
+  },
+  {
+   "label": "Bulbasaur",
+   "qid": "Q847571",
+   "fame": 0.513,
+   "colour": "green",
+   "kind": "character",
+   "description": "Pokémon species",
+   "hook": "is the first creature in the original Pokedex, carrying a plant bulb on its back",
+   "known": 0.2
+  },
+  {
+   "label": "Cranberry",
+   "qid": "Q13181",
+   "fame": 0.513,
+   "colour": "red",
+   "kind": "food",
+   "description": "fruit, subgenus of plant",
+   "hook": "is a tart berry boiled into a Thanksgiving sauce and juiced into a popular drink",
+   "known": 0.6
+  },
+  {
+   "label": "Kermit the Frog",
+   "qid": "Q1107971",
+   "fame": 0.513,
+   "colour": "green",
+   "kind": "character",
+   "description": "Muppet character",
+   "hook": "is a puppet amphibian who sings that it is not easy being what he is, and hosts a famous variety show",
+   "known": 0.6
+  },
+  {
+   "label": "Patrick Star",
+   "qid": "Q1077456",
+   "fame": 0.509,
+   "colour": "pink",
+   "kind": "character",
+   "description": "main character in SpongeBob SquarePants",
+   "hook": "is a dim-witted best friend who lives under a rock in Bikini Bottom",
+   "known": 0.4
+  },
+  {
+   "label": "Cloud",
+   "qid": "Q8074",
+   "fame": 0.508,
+   "colour": "white",
+   "kind": "nature",
+   "description": "visible mass of liquid droplets or frozen crystals suspended in the atmosphere",
+   "hook": "is a floating mass of vapor that brings rain, shade and shapes people imagine",
+   "known": 0.95
+  },
+  {
+   "label": "Poppy",
+   "qid": "Q967457",
+   "fame": 0.505,
+   "colour": "red",
+   "kind": "nature",
+   "description": "common name for various plant species of the family Papaveraceae",
+   "hook": "is a flower worn on Remembrance Day to honor fallen soldiers and source of opium",
+   "known": 0.4
+  },
+  {
+   "label": "Pea",
+   "qid": "Q25237",
+   "fame": 0.501,
+   "colour": "green",
+   "kind": "food",
+   "description": "species of plant with edible seeds",
+   "hook": "is a small round seed that comes in a pod and is famously princess-bothering in a fairy tale",
+   "known": 0.95
+  },
+  {
+   "label": "Kirby",
+   "qid": "Q613241",
+   "fame": 0.494,
+   "colour": "pink",
+   "kind": "character",
+   "description": "fictional character",
+   "hook": "is a round, puffy hero who inhales enemies to copy their abilities",
+   "known": 0.2
+  },
+  {
+   "label": "Gumby",
+   "qid": "Q43998029",
+   "fame": 0.491,
+   "colour": "green",
+   "kind": "character",
+   "description": "1957 American clay animation franchise",
+   "hook": "is a bendy clay character who jumps into books and is accompanied by a horse named Pokey",
+   "known": 0.2
+  },
+  {
+   "label": "Chlorophyll",
+   "qid": "Q43177",
+   "fame": 0.483,
+   "colour": "green",
+   "kind": "nature",
+   "description": "group of chemical compounds",
+   "hook": "is the pigment that lets plants turn sunlight into food",
+   "known": 0.05
+  },
+  {
+   "label": "Grass",
+   "qid": "Q643352",
+   "fame": 0.482,
+   "colour": "green",
+   "kind": "nature",
+   "description": "collective name for three families of plants",
+   "hook": "is a lawn plant that is mowed on Saturday mornings and eaten by cattle",
+   "known": 0.95
+  },
+  {
+   "label": "Mozzarella",
+   "qid": "Q14088",
+   "fame": 0.479,
+   "colour": "white",
+   "kind": "food",
+   "description": "Italian cheese",
+   "hook": "is a stretchy cheese on pizza and in caprese salad",
+   "known": 0.8
+  },
+  {
+   "label": "Spinach",
+   "qid": "Q81464",
+   "fame": 0.476,
+   "colour": "green",
+   "kind": "food",
+   "description": "species of plant",
+   "hook": "is a leafy vegetable that gives a sailor man superhuman strength",
+   "known": 0.8
+  },
+  {
+   "label": "Lime",
+   "qid": "Q13195",
+   "fame": 0.472,
+   "colour": "green",
+   "kind": "food",
+   "description": "green and acidic citrus fruit of various Citrus species",
+   "hook": "is a sour citrus wedge squeezed into a gin and tonic or stuck in a Corona bottle",
+   "known": 0.8
+  },
+  {
+   "label": "Mute swan",
+   "qid": "Q25402",
+   "fame": 0.471,
+   "colour": "white",
+   "kind": "animal",
+   "description": "species of swan",
+   "hook": "is a graceful water bird that mates for life and stars in a famous ballet",
+   "known": 0.6
+  },
+  {
+   "label": "Yoshi",
+   "qid": "Q214174",
+   "fame": 0.469,
+   "colour": "green",
+   "kind": "character",
+   "description": "fictonal character in the Mario video game franchise",
+   "hook": "is a dinosaur companion who flutters, gobbles enemies with a long tongue and carries a plumber",
+   "known": 0.2
+  },
+  {
+   "label": "Chalk",
+   "qid": "Q183670",
+   "fame": 0.463,
+   "colour": "white",
+   "kind": "nature",
+   "description": "soft, white, porous sedimentary rock",
+   "hook": "is a soft rock used on blackboards and sidewalk drawings",
+   "known": 0.95
+  },
+  {
+   "label": "Canary",
+   "qid": "Q253941",
+   "fame": 0.462,
+   "colour": "yellow",
+   "kind": "animal",
+   "description": "breed of domesticated bird",
+   "hook": "is a songbird that miners once took underground to detect poison gas",
+   "known": 0.4
+  },
+  {
+   "label": "Big Bird",
+   "qid": "Q242562",
+   "fame": 0.461,
+   "colour": "yellow",
+   "kind": "character",
+   "description": "Sesame Street character",
+   "hook": "is an eight-foot-tall feathered resident of Sesame Street with a snuffleupagus friend",
+   "known": 0.4
+  },
+  {
+   "label": "Snow",
+   "qid": "Q7561",
+   "fame": 0.461,
+   "colour": "white",
+   "kind": "nature",
+   "description": "precipitation in the form of ice crystal flakes",
+   "hook": "falls in flakes that build snowmen and close schools",
+   "known": 0.95
+  },
+  {
+   "label": "Grinch",
+   "qid": "Q719748",
+   "fame": 0.453,
+   "colour": "green",
+   "kind": "character",
+   "description": "fictional character created by Dr. Seuss",
+   "hook": "is a grumpy hermit who steals Christmas from the Whos in Whoville",
+   "known": 0.6
+  },
+  {
+   "label": "TARDIS",
+   "qid": "Q35684",
+   "fame": 0.452,
+   "colour": "blue",
+   "kind": "thing",
+   "description": "fictional time-travelling device",
+   "hook": "is a time machine that looks like a British police call box and is bigger on the inside",
+   "known": 0.4
+  },
+  {
+   "label": "School bus",
+   "qid": "Q58678",
+   "fame": 0.45,
+   "colour": "yellow",
+   "kind": "thing",
+   "description": "bus operated by a school or school district for student transport",
+   "hook": "carries kids to class and flashes lights with a stop sign",
+   "known": 0.95
+  }
+ ]
+}

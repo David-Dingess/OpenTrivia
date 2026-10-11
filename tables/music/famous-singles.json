@@ -1,0 +1,571 @@
+{
+ "id": "table.music.famous-singles",
+ "kind": "table",
+ "title": "Famous singles and the artist behind them",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "chart-toppers",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?artistLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?a) AS ?artist) (COUNT(DISTINCT ?a) AS ?nA) WHERE { { SELECT ?item ?sitelinks WHERE { VALUES ?c { wd:Q134556 wd:Q7366 } ?item wdt:P31 ?c ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks >= 12) } ORDER BY DESC(?sitelinks) LIMIT 4000 } ?item wdt:P175 ?a . } GROUP BY ?item ?sitelinks } hint:Prior hint:runFirst true . FILTER(?nA = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 394",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T04:19:51.710Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T04:19:51.710Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "artist",
+   "label": "Artist",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "song",
+  "many": "songs",
+  "hookAsk": "Which song {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "artist": {
+    "role": "link",
+    "pick": "Which artist or band recorded the song {label}?",
+    "statement": "{label} is a song by {value}.",
+    "match": "Match each song to the artist who recorded it.",
+    "odd": "Three of these songs are by {value}. Which one isn't?",
+    "all": "Tap all {n} songs by {value} that appear here.",
+    "reverse": "Which of these songs is by {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Zombie",
+   "qid": "Q169298",
+   "fame": 0.6,
+   "artist": "The Cranberries",
+   "description": "original song written and composed by Dolores O'Riordan; originally recorded by The Cranberries and released in 1994",
+   "hook": "is a grunge-tinged rock anthem with a wailing, distorted chorus and a repeated \"in your head\" refrain",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "We Are the World",
+   "qid": "Q308895",
+   "fame": 0.598,
+   "artist": "USA for Africa",
+   "description": "1985 USA for Africa song",
+   "hook": "was recorded by dozens of famous singers in one night to raise money for famine relief",
+   "known": 0.8,
+   "kind": "pop"
+  },
+  {
+   "label": "Mr. Brightside",
+   "qid": "Q1999714",
+   "fame": 0.579,
+   "artist": "The Killers",
+   "description": "2003 single by The Killers",
+   "hook": "is a jealousy-fuelled rock anthem with a driving guitar riff that still fills dance floors",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Bitter Sweet Symphony",
+   "qid": "Q1338452",
+   "fame": 0.541,
+   "artist": "The Verve",
+   "description": "1997 single by The Verve",
+   "hook": "is built on a looped string sample and paired with a video of a man striding down a pavement",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Gangnam Style",
+   "qid": "Q890",
+   "fame": 0.54,
+   "artist": "Psy",
+   "description": "2012 single by Psy",
+   "hook": "was the first video to pass a billion YouTube views, thanks to its invisible-horse dance",
+   "known": 0.95,
+   "kind": "pop"
+  },
+  {
+   "label": "Creep",
+   "qid": "Q863433",
+   "fame": 0.539,
+   "artist": "Radiohead",
+   "description": "song written and composed by Radiohead",
+   "hook": "features a self-loathing narrator and a loud guitar crunch before each chorus",
+   "known": 0.7,
+   "kind": "rock"
+  },
+  {
+   "label": "Money for Nothing",
+   "qid": "Q1165404",
+   "fame": 0.538,
+   "artist": "Dire Straits",
+   "description": "1985 song by Dire Straits",
+   "hook": "has a guest vocal from Sting and a sneering narrator who wants his music on television",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Wake Me Up When September Ends",
+   "qid": "Q1751842",
+   "fame": 0.533,
+   "artist": "Green Day",
+   "description": "2005 single by Green Day",
+   "hook": "is a mournful rock ballad about losing a father, building from a soft acoustic start",
+   "known": 0.7,
+   "kind": "rock"
+  },
+  {
+   "label": "Seven Nation Army",
+   "qid": "Q1420378",
+   "fame": 0.528,
+   "artist": "The White Stripes",
+   "description": "2003 song by The White Stripes",
+   "hook": "is built on a bass-sounding guitar riff that fans chant in sports stadiums worldwide",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "We Didn't Start the Fire",
+   "qid": "Q1448949",
+   "fame": 0.513,
+   "artist": "Billy Joel",
+   "description": "1989 list song and single by Billy Joel",
+   "hook": "rattles off a rapid list of headlines, people and events from decades of history",
+   "known": 0.7,
+   "kind": "pop"
+  },
+  {
+   "label": "Since U Been Gone",
+   "qid": "Q1423509",
+   "fame": 0.512,
+   "artist": "Kelly Clarkson",
+   "description": "single",
+   "hook": "is a pop-rock breakup anthem with a huge chorus, sung by the first American Idol winner",
+   "known": 0.8,
+   "kind": "pop"
+  },
+  {
+   "label": "Can't Get You Out of My Head",
+   "qid": "Q155029",
+   "fame": 0.507,
+   "artist": "Kylie Minogue",
+   "description": "2001 single by Kylie Minogue",
+   "hook": "has a catchy la-la-la hook and a disco-flavoured video with a glittering white jumpsuit",
+   "known": 0.8,
+   "kind": "pop"
+  },
+  {
+   "label": "Another Day in Paradise",
+   "qid": "Q568004",
+   "fame": 0.504,
+   "artist": "Phil Collins",
+   "description": "song by Phil Collins",
+   "hook": "is a soft-rock song about homelessness, sung by a drummer who became a solo star",
+   "known": 0.8,
+   "kind": "pop"
+  },
+  {
+   "label": "Call Me Maybe",
+   "qid": "Q326835",
+   "fame": 0.503,
+   "artist": "Carly Rae Jepsen",
+   "description": "2011 single  by Carly Rae Jepsen",
+   "hook": "is a bubbly pop song about handing a phone number to a crush, boosted by a viral video",
+   "known": 0.9,
+   "kind": "pop"
+  },
+  {
+   "label": "Paint It Black",
+   "qid": "Q1046717",
+   "fame": 0.502,
+   "artist": "The Rolling Stones",
+   "description": "song by The Rolling Stones",
+   "hook": "opens with a sitar and sings of a world turned dark after a loss",
+   "known": 0.9,
+   "kind": "rock"
+  },
+  {
+   "label": "Every Breath You Take",
+   "qid": "Q1330171",
+   "fame": 0.499,
+   "artist": "The Police",
+   "description": "1983 single by The Police",
+   "hook": "sounds like a love song but has a possessive narrator who keeps watching someone",
+   "known": 0.9,
+   "kind": "rock"
+  },
+  {
+   "label": "Space Oddity",
+   "qid": "Q581952",
+   "fame": 0.499,
+   "artist": "David Bowie",
+   "description": "1969 David Bowie song",
+   "hook": "tells of an astronaut named Major Tom drifting away from ground control",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Blinding Lights",
+   "qid": "Q76566134",
+   "fame": 0.497,
+   "artist": "The Weeknd",
+   "description": "2019 single by The Weeknd",
+   "hook": "is a retro synth-pop smash that dominated streaming charts for years",
+   "known": 0.95,
+   "kind": "pop"
+  },
+  {
+   "label": "Shape of You",
+   "qid": "Q28132505",
+   "fame": 0.494,
+   "artist": "Ed Sheeran",
+   "description": "2017 single by Ed Sheeran",
+   "hook": "is a tropical-house hit about a romance that begins in a bar, with a marimba-style hook",
+   "known": 0.9,
+   "kind": "pop"
+  },
+  {
+   "label": "Flowers",
+   "qid": "Q115945493",
+   "fame": 0.492,
+   "artist": "Miley Cyrus",
+   "description": "2023 single by Miley Cyrus",
+   "hook": "is a self-love anthem about treating yourself well after a breakup",
+   "known": 0.9,
+   "kind": "pop"
+  },
+  {
+   "label": "Nothing Compares 2 U",
+   "qid": "Q678516",
+   "fame": 0.492,
+   "artist": "Sinéad O'Connor",
+   "description": "song by Prince, popularized by a 1990 cover performed by Sinéad O'Connor",
+   "hook": "was written by Prince but became a hit via a video of another singer's teary close-up",
+   "known": 0.7,
+   "kind": "pop"
+  },
+  {
+   "label": "Free Bird",
+   "qid": "Q251304",
+   "fame": 0.489,
+   "artist": "Lynyrd Skynyrd",
+   "description": "1974 single by Lynyrd Skynyrd",
+   "hook": "ends with a famously long guitar solo that fans shout requests for at concerts",
+   "known": 0.7,
+   "kind": "rock"
+  },
+  {
+   "label": "Another One Bites the Dust",
+   "qid": "Q568065",
+   "fame": 0.488,
+   "artist": "Queen",
+   "description": "1980 single by Queen",
+   "hook": "is driven by a funky bass line that helped a rock band cross over to dance audiences",
+   "known": 0.95,
+   "kind": "rock"
+  },
+  {
+   "label": "The Fox",
+   "qid": "Q14865006",
+   "fame": 0.486,
+   "artist": "Ylvis",
+   "description": "2013 electronic dance novelty song and viral video by Norwegian comedy duo Ylvis",
+   "hook": "asks what sound a certain woodland animal makes, in a silly Norwegian viral video",
+   "known": 0.9,
+   "kind": "novelty"
+  },
+  {
+   "label": "What Is Love",
+   "qid": "Q550158",
+   "fame": 0.482,
+   "artist": "Haddaway",
+   "description": "1993 song by Haddaway",
+   "hook": "is a Eurodance staple, famously head-bobbed to in a Saturday Night Live sketch",
+   "known": 0.7,
+   "kind": "novelty"
+  },
+  {
+   "label": "Sk8er Boi",
+   "qid": "Q543058",
+   "fame": 0.481,
+   "artist": "Avril Lavigne",
+   "description": "2002 single by Avril Lavigne",
+   "hook": "is a pop-punk tale of a girl who turned down a boy on a board and later regretted it",
+   "known": 0.8,
+   "kind": "pop"
+  },
+  {
+   "label": "Friday",
+   "qid": "Q1770461",
+   "fame": 0.48,
+   "artist": "Rebecca Black",
+   "description": "2011 single by Rebecca Black",
+   "hook": "was a viral video mocked online for lyrics about picking which seat to take in a car",
+   "known": 0.8,
+   "kind": "novelty"
+  },
+  {
+   "label": "Toxic",
+   "qid": "Q379751",
+   "fame": 0.48,
+   "artist": "Britney Spears",
+   "description": "2004 single by Britney Spears",
+   "hook": "is a dance-pop hit with a twisting string hook and a secret-agent-style video",
+   "known": 0.9,
+   "kind": "pop"
+  },
+  {
+   "label": "Happy",
+   "qid": "Q15275920",
+   "fame": 0.478,
+   "artist": "Pharrell Williams",
+   "description": "2013 single by Pharrell Williams",
+   "hook": "is a clap-along feel-good hit from an animated film about yellow minions",
+   "known": 0.95,
+   "kind": "pop"
+  },
+  {
+   "label": "Lose Yourself",
+   "qid": "Q957616",
+   "fame": 0.475,
+   "artist": "Eminem",
+   "description": "2002 single by Eminem",
+   "hook": "is a rap about seizing one shot, from a film about a Detroit battle rapper",
+   "known": 0.9,
+   "kind": "hip-hop"
+  },
+  {
+   "label": "Enjoy the Silence",
+   "qid": "Q279097",
+   "fame": 0.472,
+   "artist": "Depeche Mode",
+   "description": "1990 single by Depeche Mode",
+   "hook": "is a synth-pop song about words being unnecessary, with a video of a king carrying a deck chair",
+   "known": 0.6,
+   "kind": "electronic"
+  },
+  {
+   "label": "Enter Sandman",
+   "qid": "Q66057605",
+   "fame": 0.47,
+   "artist": "Metallica",
+   "description": "1991 single by Metallica",
+   "hook": "opens with a clean guitar riff and a child's bedtime prayer before turning heavy",
+   "known": 0.9,
+   "kind": "rock"
+  },
+  {
+   "label": "Good Vibrations",
+   "qid": "Q842176",
+   "fame": 0.469,
+   "artist": "The Beach Boys",
+   "description": "The Beach Boys song",
+   "hook": "is a studio-crafted \"pocket symphony\" of shifting sections and a theremin-like sound",
+   "known": 0.8,
+   "kind": "pop"
+  },
+  {
+   "label": "Party in the U.S.A.",
+   "qid": "Q547537",
+   "fame": 0.467,
+   "artist": "Miley Cyrus",
+   "description": "single",
+   "hook": "is a pop hit about a newcomer from Nashville feeling out of place in Los Angeles",
+   "known": 0.7,
+   "kind": "pop"
+  },
+  {
+   "label": "Losing My Religion",
+   "qid": "Q901333",
+   "fame": 0.465,
+   "artist": "R.E.M.",
+   "description": "1991 song by R.E.M.",
+   "hook": "is a mandolin-driven alt-rock hit whose title is a Southern phrase for being at the end of your rope",
+   "known": 0.7,
+   "kind": "rock"
+  },
+  {
+   "label": "Dance Monkey",
+   "qid": "Q65071242",
+   "fame": 0.464,
+   "artist": "Tones and I",
+   "description": "song written and composed by Toni Watson; originally recorded by Tones and I and released in 2019",
+   "hook": "is a hit by an Australian busker about being told to keep entertaining the crowd",
+   "known": 0.85,
+   "kind": "pop"
+  },
+  {
+   "label": "Livin' on a Prayer",
+   "qid": "Q1894466",
+   "fame": 0.462,
+   "artist": "Bon Jovi",
+   "description": "1986 single by Bon Jovi",
+   "hook": "tells of a working-class couple named Tommy and Gina, with a talk-box guitar intro",
+   "known": 0.9,
+   "kind": "rock"
+  },
+  {
+   "label": "Yellow",
+   "qid": "Q529026",
+   "fame": 0.462,
+   "artist": "Coldplay",
+   "description": "2000 single by Coldplay",
+   "hook": "is a soft-rock ballad about stars, with a video of a singer walking along a rainy beach",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Con te partirò",
+   "qid": "Q153202",
+   "fame": 0.458,
+   "artist": "Andrea Bocelli",
+   "description": "1995 song by Andrea Bocelli",
+   "hook": "is an Italian power ballad that became a famous duet with an English soprano",
+   "known": 0.6,
+   "kind": "pop"
+  },
+  {
+   "label": "In the End",
+   "qid": "Q20003",
+   "fame": 0.458,
+   "artist": "Linkin Park",
+   "description": "2001 single by Linkin Park",
+   "hook": "starts with a piano riff and trades rapped verses with sung choruses about effort that goes nowhere",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Dream On",
+   "qid": "Q686850",
+   "fame": 0.457,
+   "artist": "Aerosmith",
+   "description": "1973 single by Aerosmith",
+   "hook": "is a rock ballad that starts with a keyboard and builds to a famous screeching scream",
+   "known": 0.7,
+   "kind": "rock"
+  },
+  {
+   "label": "Thunderstruck",
+   "qid": "Q2430003",
+   "fame": 0.457,
+   "artist": "AC/DC",
+   "description": "1990 single by AC/DC",
+   "hook": "opens with a rapid, finger-tapped guitar riff and chanting voices",
+   "known": 0.8,
+   "kind": "rock"
+  },
+  {
+   "label": "Hung Up",
+   "qid": "Q1407276",
+   "fame": 0.456,
+   "artist": "Madonna",
+   "description": "song written and composed by Madonna, Stuart Price, Benny Andersson and Björn Ulvaeus, originally recorded by Madonna in 2005",
+   "hook": "is a dance-pop comeback built on a sample of a Swedish pop group's disco hit",
+   "known": 0.8,
+   "kind": "pop"
+  },
+  {
+   "label": "La Isla Bonita",
+   "qid": "Q939998",
+   "fame": 0.456,
+   "artist": "Madonna",
+   "description": "1987 single by Madonna",
+   "hook": "is a Spanish-guitar pop song dreaming of a tropical paradise",
+   "known": 0.7,
+   "kind": "pop"
+  },
+  {
+   "label": "Faded",
+   "qid": "Q22041338",
+   "fame": 0.455,
+   "artist": "Alan Walker",
+   "description": "2015 single by Alan Walker",
+   "hook": "is an electronic hit with a mournful vocal, made by a hooded producer",
+   "known": 0.7,
+   "kind": "electronic"
+  },
+  {
+   "label": "Espresso",
+   "qid": "Q125450571",
+   "fame": 0.453,
+   "artist": "Sabrina Carpenter",
+   "description": "2024 single by Sabrina Carpenter",
+   "hook": "is a cheeky summer pop hit comparing the singer's effect on someone to a caffeine jolt",
+   "known": 0.8,
+   "kind": "pop"
+  },
+  {
+   "label": "Chop Suey!",
+   "qid": "Q842880",
+   "fame": 0.452,
+   "artist": "System of a Down",
+   "description": "System of a Down song",
+   "hook": "switches between frantic verses and a soaring operatic chorus",
+   "known": 0.6,
+   "kind": "rock"
+  },
+  {
+   "label": "Song 2",
+   "qid": "Q85357",
+   "fame": 0.452,
+   "artist": "Blur",
+   "description": "1997 single by Blur",
+   "hook": "is famous for its \"woo-hoo\" shout and constant use in sports arenas",
+   "known": 0.75,
+   "kind": "rock"
+  },
+  {
+   "label": "Tik Tok",
+   "qid": "Q164100",
+   "fame": 0.452,
+   "artist": "Kesha",
+   "description": "2009 single by Kesha",
+   "hook": "is a party-all-night anthem with a talk-sung, auto-tuned delivery",
+   "known": 0.85,
+   "kind": "pop"
+  },
+  {
+   "label": "Irreplaceable",
+   "qid": "Q149053",
+   "fame": 0.451,
+   "artist": "Beyoncé",
+   "description": "2006 song by Beyoncé",
+   "hook": "tells an unfaithful partner to leave, with a line about boxes to the left",
+   "known": 0.9,
+   "kind": "pop"
+  },
+  {
+   "label": "Fireflies",
+   "qid": "Q1165917",
+   "fame": 0.45,
+   "artist": "Owl City",
+   "description": "2009 song by Owl City from Ocean Eyes",
+   "hook": "is a dreamy synth-pop track about sleeplessness and glowing insects",
+   "known": 0.8,
+   "kind": "electronic"
+  }
+ ]
+}

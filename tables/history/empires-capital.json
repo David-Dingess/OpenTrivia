@@ -1,0 +1,293 @@
+{
+ "id": "table.history.empires-capital",
+ "kind": "table",
+ "title": "Empires and their capital",
+ "genre": "society",
+ "category": "history",
+ "topic": "empires",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?capLabel WHERE { VALUES (?item ?capName) { (wd:Q12560 \"Istanbul\"@en) (wd:Q8680 \"London\"@en) (wd:Q71084 \"Paris\"@en) (wd:Q71092 \"Paris\"@en) (wd:Q2277 \"Rome\"@en) (wd:Q12544 \"Constantinople\"@en) (wd:Q12557 \"Karakorum\"@en) (wd:Q28573 \"Cusco\"@en) (wd:Q2608489 \"Tenochtitlan\"@en) (wd:Q34266 \"Saint Petersburg\"@en) (wd:Q8733 \"Beijing\"@en) (wd:Q188712 \"Tokyo\"@en) (wd:Q43287 \"Berlin\"@en) (wd:Q80702 \"Madrid\"@en) (wd:Q200464 \"Lisbon\"@en) (wd:Q31929 \"Aachen\"@en) (wd:Q202687 \"Gao\"@en) (wd:Q62943 \"Pataliputra\"@en) (wd:Q11774 \"Pataliputra\"@en) (wd:Q624887 \"Babylon\"@en) (wd:Q83891 \"Ctesiphon\"@en) (wd:Q12536 \"Baghdad\"@en) (wd:Q8575586 \"Damascus\"@en) (wd:Q201705 \"Angkor\"@en) (wd:Q217230 \"Rio de Janeiro\"@en) (wd:Q9683 \"Chang'an\"@en) (wd:Q4496560 \"Hattusa\"@en) (wd:Q28233 \"Seoul\"@en) (wd:Q7313 \"Beijing\"@en) (wd:Q7183 \"Xianyang\"@en) } ?item wdt:P36 ?cap . ?cap rdfs:label ?capName . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T01:14:22.871Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T01:14:22.871Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "capital",
+   "label": "Capital",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "empire",
+  "many": "empires",
+  "wildcard": "place",
+  "hookAsk": "Which empire {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "theLabels": [
+   "Ottoman Empire",
+   "Roman Empire",
+   "Byzantine Empire",
+   "British Empire",
+   "German Empire",
+   "Mongol Empire",
+   "Russian Empire",
+   "Inca Empire",
+   "Aztec Empire",
+   "Portuguese Empire",
+   "Songhai Empire",
+   "Gupta Empire",
+   "Carolingian Empire",
+   "Sasanian Empire",
+   "Abbasid Caliphate",
+   "Umayyad Caliphate",
+   "Empire of Japan",
+   "Empire of Brazil",
+   "First French Empire",
+   "Second French Empire",
+   "Maurya empire"
+  ],
+  "columns": {
+   "capital": {
+    "role": "code",
+    "pick": "Which city was the capital of {label}?",
+    "statement": "The capital of {label} was {value}.",
+    "match": "Match each empire to its capital.",
+    "reverse": "Which of these empires had {value} as its capital?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Ottoman Empire",
+   "qid": "Q12560",
+   "fame": 0.757,
+   "capital": "Istanbul",
+   "description": "empire with the monarchs from the Ottoman dynasty (1299–1922)",
+   "hook": "was ruled by sultans and stretched across the Balkans, the Middle East and North Africa",
+   "known": 0.6,
+   "kind": "early modern"
+  },
+  {
+   "label": "Roman Empire",
+   "qid": "Q2277",
+   "fame": 0.735,
+   "capital": "Rome",
+   "description": "period of Ancient Rome following the Republic",
+   "hook": "was ruled by emperors like Augustus and built roads, aqueducts and the Colosseum",
+   "known": 0.95,
+   "kind": "ancient"
+  },
+  {
+   "label": "Byzantine Empire",
+   "qid": "Q12544",
+   "fame": 0.712,
+   "capital": "Constantinople",
+   "description": "Roman Empire during Late Antiquity and the Middle Ages",
+   "hook": "was the Greek-speaking eastern half of the ancient superpower and outlasted the western half by centuries",
+   "known": 0.6,
+   "kind": "ancient"
+  },
+  {
+   "label": "British Empire",
+   "qid": "Q8680",
+   "fame": 0.684,
+   "capital": "London",
+   "description": "overseas possessions of England and later the United Kingdom (1607–1997)",
+   "hook": "was the largest realm in history, famous for the saying that the sun never set on it",
+   "known": 0.95,
+   "kind": "modern"
+  },
+  {
+   "label": "German Empire",
+   "qid": "Q43287",
+   "fame": 0.677,
+   "capital": "Berlin",
+   "description": "German nation-state in Central Europe from 1871 to 1918",
+   "hook": "was united under the Prussian king and ruled by Kaiser Wilhelm II during the Great War",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Mongol Empire",
+   "qid": "Q12557",
+   "fame": 0.669,
+   "capital": "Karakorum",
+   "description": "13th- and 14th-century empire originating in Mongolia",
+   "hook": "was founded by Genghis Khan and grew into the largest contiguous land realm ever",
+   "known": 0.4,
+   "kind": "medieval"
+  },
+  {
+   "label": "Russian Empire",
+   "qid": "Q34266",
+   "fame": 0.669,
+   "capital": "Saint Petersburg",
+   "description": "former empire in Eurasia and North America (1721–1917)",
+   "hook": "was ruled by tsars, such as Peter the Great and Catherine the Great",
+   "known": 0.8,
+   "kind": "early modern"
+  },
+  {
+   "label": "Empire of Japan",
+   "qid": "Q188712",
+   "fame": 0.654,
+   "capital": "Tokyo",
+   "description": "empire in the Asia-Pacific region from 1868 to 1947",
+   "hook": "was an island power ruled by an emperor that fought in the Pacific during the Second World War",
+   "known": 0.95,
+   "kind": "modern"
+  },
+  {
+   "label": "Umayyad Caliphate",
+   "qid": "Q8575586",
+   "fame": 0.631,
+   "capital": "Damascus",
+   "description": "second Islamic caliphate (661–750 CE)",
+   "hook": "was the first hereditary Islamic dynasty, spreading Arabic rule from Spain to Central Asia",
+   "known": 0.4,
+   "kind": "medieval"
+  },
+  {
+   "label": "Abbasid Caliphate",
+   "qid": "Q12536",
+   "fame": 0.629,
+   "capital": "Baghdad",
+   "description": "third Islamic caliphate (750–1258)",
+   "hook": "was the Islamic dynasty of the Golden Age of scholarship, linked to the tales of Harun al-Rashid",
+   "known": 0.4,
+   "kind": "medieval"
+  },
+  {
+   "label": "Inca Empire",
+   "qid": "Q28573",
+   "fame": 0.623,
+   "capital": "Cusco",
+   "description": "1438–1533 empire in South America",
+   "hook": "was the Andean realm of Machu Picchu, known for its mountain roads and knotted-string record keeping",
+   "known": 0.6,
+   "kind": "medieval"
+  },
+  {
+   "label": "Sasanian Empire",
+   "qid": "Q83891",
+   "fame": 0.614,
+   "capital": "Ctesiphon",
+   "description": "last pre-Islamic Iranian empire (224–651 AD)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "ancient"
+  },
+  {
+   "label": "First French Empire",
+   "qid": "Q71084",
+   "fame": 0.597,
+   "capital": "Paris",
+   "description": "empire of Napoleon I of France, from 1804 to 1815",
+   "hook": "was the realm of a general who crowned himself emperor and was finally beaten at Waterloo",
+   "known": 0.95,
+   "kind": "modern"
+  },
+  {
+   "label": "Maurya empire",
+   "qid": "Q62943",
+   "fame": 0.579,
+   "capital": "Pataliputra",
+   "description": "ancient Indian empire (322–184 BCE)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "ancient"
+  },
+  {
+   "label": "Carolingian Empire",
+   "qid": "Q31929",
+   "fame": 0.575,
+   "capital": "Aachen",
+   "description": "800–843 final stage in the history of the early medieval realm of the Franks, ruled by the Carolingian dynasty",
+   "hook": null,
+   "known": 0.2,
+   "kind": "medieval"
+  },
+  {
+   "label": "Aztec Empire",
+   "qid": "Q2608489",
+   "fame": 0.569,
+   "capital": "Tenochtitlan",
+   "description": "former Mesoamerican empire",
+   "hook": "was a Mesoamerican power conquered by Hernan Cortes and the Spanish",
+   "known": 0.6,
+   "kind": "medieval"
+  },
+  {
+   "label": "Portuguese Empire",
+   "qid": "Q200464",
+   "fame": 0.563,
+   "capital": "Lisbon",
+   "description": "global empire centered in Portugal (1415–1999)",
+   "hook": "was the first global European sea power, whose explorer Vasco da Gama first sailed from Europe to India",
+   "known": 0.8,
+   "kind": "early modern"
+  },
+  {
+   "label": "Gupta Empire",
+   "qid": "Q11774",
+   "fame": 0.553,
+   "capital": "Pataliputra",
+   "description": "ancient Indian empire (c. 3rd century CE–575 CE)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "ancient"
+  },
+  {
+   "label": "Second French Empire",
+   "qid": "Q71092",
+   "fame": 0.553,
+   "capital": "Paris",
+   "description": "government of France under Napoleon III, from 1852 to 1870",
+   "hook": "was led by a nephew of the famous general and saw the grand rebuilding of its capital's boulevards",
+   "known": 0.95,
+   "kind": "modern"
+  },
+  {
+   "label": "Empire of Brazil",
+   "qid": "Q217230",
+   "fame": 0.539,
+   "capital": "Rio de Janeiro",
+   "description": "empire in South America between 1822 and 1889",
+   "hook": "was the only monarchy in South America, ruled by Pedro I and Pedro II",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Songhai Empire",
+   "qid": "Q202687",
+   "fame": 0.498,
+   "capital": "Gao",
+   "description": "former state located in western Africa",
+   "hook": null,
+   "known": 0.05,
+   "kind": "medieval"
+  }
+ ]
+}

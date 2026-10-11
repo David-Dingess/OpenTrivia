@@ -1,0 +1,7056 @@
+{
+ "id": "list.pop-culture.newspapers",
+ "title": "Newspapers",
+ "prompt": "Name a newspaper",
+ "genre": "general",
+ "category": "pop-culture",
+ "topic": "newspapers-and-magazines",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q11032 . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-10-02T13:22:45.481Z"
+ },
+ "rows": [
+  {
+   "label": "The Guardian",
+   "qid": "Q11148",
+   "fame": 0.645,
+   "also": [
+    "Guardian",
+    "Manchester Guardian",
+    "The Manchester Guardian",
+    "The Grauniad",
+    "Guardian.co.uk",
+    "Guardian newspaper"
+   ]
+  },
+  {
+   "label": "The Times of India",
+   "qid": "Q46807",
+   "fame": 0.581,
+   "also": [
+    "timesofindia.indiatimes.com",
+    "TOI",
+    "Times of India",
+    "India Times",
+    "indiatimes.com",
+    "The Bombay Times and Journal of Commerce"
+   ]
+  },
+  {
+   "label": "The Washington Post",
+   "qid": "Q166032",
+   "fame": 0.564,
+   "also": [
+    "Washington Post",
+    "washingtonpost.com",
+    "WaPo",
+    "washpost"
+   ]
+  },
+  {
+   "label": "Daily Mail",
+   "qid": "Q210534",
+   "fame": 0.562,
+   "also": [
+    "The Daily Mail"
+   ]
+  },
+  {
+   "label": "The Times",
+   "qid": "Q50008",
+   "fame": 0.559,
+   "also": [
+    "Times",
+    "Daily Universal Register",
+    "London times",
+    "The Daily Universal Register",
+    "The London Times",
+    "The Thunderer",
+    "The Times newspaper",
+    "The Times of London",
+    "The Times Online",
+    "thetimes.com",
+    "Thunderer",
+    "Times of London"
+   ]
+  },
+  {
+   "label": "The Daily Telegraph",
+   "qid": "Q192621",
+   "fame": 0.547,
+   "also": [
+    "Telegraph",
+    "The Sunday Telegraph",
+    "Sunday Telegraph",
+    "Daily Telegraph",
+    "Daily Telegraph and Courier",
+    "Telegraph.co.uk",
+    "The Daily Telegraph and Courier",
+    "The Telegraph",
+    "The Telegraph Newspaper",
+    "The Torygraph"
+   ]
+  },
+  {
+   "label": "Chicago Tribune",
+   "qid": "Q47596",
+   "fame": 0.539,
+   "also": [
+    "Chi. Trib.",
+    "Chic. Trib.",
+    "Chic. Tribune",
+    "Chicago Daily Tribune",
+    "Chicago Sunday Tribune",
+    "Chicagotribune.com",
+    "The Chicago Daily Tribune",
+    "The Chicago Sunday Tribune",
+    "The Chicago Tribune"
+   ]
+  },
+  {
+   "label": "New York Post",
+   "qid": "Q211374",
+   "fame": 0.521,
+   "also": [
+    "nypost.com",
+    "Evening Post",
+    "The Evening Post",
+    "New-York Evening Post",
+    "NY Post",
+    "The New York Post"
+   ]
+  },
+  {
+   "label": "Haaretz",
+   "qid": "Q216393",
+   "fame": 0.516,
+   "also": [
+    "Imprensa"
+   ]
+  },
+  {
+   "label": "The Observer",
+   "qid": "Q336197",
+   "fame": 0.515,
+   "also": [
+    "Observer",
+    "London Observer",
+    "Sunday Observer",
+    "The London Observer"
+   ]
+  },
+  {
+   "label": "Los Angeles Times",
+   "qid": "Q188515",
+   "fame": 0.497,
+   "also": [
+    "LAT",
+    "L.A. Times",
+    "latimes.com",
+    "The LA Times",
+    "The Los Angeles Times"
+   ]
+  },
+  {
+   "label": "The Hindu",
+   "qid": "Q926175",
+   "fame": 0.475,
+   "also": [
+    "Hindu",
+    "thehindu.com"
+   ]
+  },
+  {
+   "label": "Boston Globe",
+   "qid": "Q824451",
+   "fame": 0.45,
+   "also": [
+    "The Boston Globe",
+    "The Globe",
+    "Boston Daily Globe",
+    "bostonglobe.com",
+    "The Boston Daily Globe"
+   ]
+  },
+  {
+   "label": "News of the World",
+   "qid": "Q190534",
+   "fame": 0.45,
+   "also": []
+  },
+  {
+   "label": "Daily Mirror",
+   "qid": "Q217623",
+   "fame": 0.449,
+   "also": [
+    "mirror.co.uk",
+    "The Mirror",
+    "The Daily Mirror"
+   ]
+  },
+  {
+   "label": "Dainik Jagran",
+   "qid": "Q1318465",
+   "fame": 0.431,
+   "also": []
+  },
+  {
+   "label": "Hindustan Times",
+   "qid": "Q41595",
+   "fame": 0.422,
+   "also": [
+    "The Hindustan Times"
+   ]
+  },
+  {
+   "label": "The Village Voice",
+   "qid": "Q876158",
+   "fame": 0.416,
+   "also": [
+    "Village Voice"
+   ]
+  },
+  {
+   "label": "The Economic Times",
+   "qid": "Q1954757",
+   "fame": 0.408,
+   "also": [
+    "Economic Times",
+    "economictimes.indiatimes.com"
+   ]
+  },
+  {
+   "label": "New York Daily News",
+   "qid": "Q627827",
+   "fame": 0.407,
+   "also": [
+    "Daily News",
+    "Daily News of New York City",
+    "NY Daily News",
+    "nydailynews.com",
+    "NYDN",
+    "The New York Daily News"
+   ]
+  },
+  {
+   "label": "The Irish Times",
+   "qid": "Q1134208",
+   "fame": 0.406,
+   "also": [
+    "Irish Times"
+   ]
+  },
+  {
+   "label": "The Washington Times",
+   "qid": "Q494170",
+   "fame": 0.4,
+   "also": [
+    "TWT",
+    "Washington Times",
+    "washingtontimes.com"
+   ]
+  },
+  {
+   "label": "The Christian Science Monitor",
+   "qid": "Q284947",
+   "fame": 0.397,
+   "also": [
+    "Christian Science Monitor",
+    "Csmonitor"
+   ]
+  },
+  {
+   "label": "The Sydney Morning Herald",
+   "qid": "Q390216",
+   "fame": 0.397,
+   "also": [
+    "SMH",
+    "smh.com.au",
+    "Sydney Herald",
+    "Sydney Morning Herald",
+    "The Sydney Herald"
+   ]
+  },
+  {
+   "label": "San Francisco Chronicle",
+   "qid": "Q139103",
+   "fame": 0.392,
+   "also": [
+    "Chronicle",
+    "SF Chronicle",
+    "sfchronicle.com",
+    "The San Francisco Chronicle"
+   ]
+  },
+  {
+   "label": "Chicago Sun-Times",
+   "qid": "Q577417",
+   "fame": 0.387,
+   "also": []
+  },
+  {
+   "label": "Le Figaro",
+   "qid": "Q216047",
+   "fame": 0.378,
+   "also": [
+    "Figaro",
+    "lefigaro.fr"
+   ]
+  },
+  {
+   "label": "People's Daily",
+   "qid": "Q54340",
+   "fame": 0.377,
+   "also": [
+    "The People's Daily",
+    "Rénmín Rìbào"
+   ]
+  },
+  {
+   "label": "National Post",
+   "qid": "Q1812075",
+   "fame": 0.375,
+   "also": [
+    "nationalpost.com",
+    "The National Post"
+   ]
+  },
+  {
+   "label": "Dawn",
+   "qid": "Q1178770",
+   "fame": 0.371,
+   "also": [
+    "Dawn Pakistan",
+    "Dawn.com"
+   ]
+  },
+  {
+   "label": "The Age",
+   "qid": "Q631893",
+   "fame": 0.355,
+   "also": [
+    "Age",
+    "Melbourne Age",
+    "Sunday Age",
+    "The Sunday Age"
+   ]
+  },
+  {
+   "label": "The New Zealand Herald",
+   "qid": "Q1199207",
+   "fame": 0.355,
+   "also": [
+    "NZH",
+    "New Zealand Herald",
+    "NZ Herald"
+   ]
+  },
+  {
+   "label": "Acta Diurna",
+   "qid": "Q343195",
+   "fame": 0.354,
+   "also": []
+  },
+  {
+   "label": "Yedioth Ahronoth",
+   "qid": "Q1132126",
+   "fame": 0.353,
+   "also": []
+  },
+  {
+   "label": "The Philadelphia Inquirer",
+   "qid": "Q600111",
+   "fame": 0.351,
+   "also": [
+    "Philadelphia Inquirer",
+    "The Inquirer"
+   ]
+  },
+  {
+   "label": "The New Indian Express",
+   "qid": "Q1955025",
+   "fame": 0.349,
+   "also": [
+    "newindianexpress.com"
+   ]
+  },
+  {
+   "label": "Kompas",
+   "qid": "Q4405665",
+   "fame": 0.346,
+   "also": [
+    "Harian Kompas",
+    "Kompas e-Paper",
+    "Kompas.id"
+   ]
+  },
+  {
+   "label": "Anandabazar Patrika",
+   "qid": "Q3344266",
+   "fame": 0.344,
+   "also": [
+    "Aanandabazaar Patrikaa",
+    "Anandabazaar Patrika",
+    "Anandbazar Patrika"
+   ]
+  },
+  {
+   "label": "Corriere della Sera",
+   "qid": "Q309135",
+   "fame": 0.344,
+   "also": [
+    "Corriere.it",
+    "Il corriere della sera"
+   ]
+  },
+  {
+   "label": "Detroit Free Press",
+   "qid": "Q601669",
+   "fame": 0.342,
+   "also": [
+    "Freep"
+   ]
+  },
+  {
+   "label": "The Moscow Times",
+   "qid": "Q1202611",
+   "fame": 0.337,
+   "also": [
+    "TMT",
+    "Moscow Times"
+   ]
+  },
+  {
+   "label": "Die Welt",
+   "qid": "Q29872",
+   "fame": 0.336,
+   "also": [
+    "WELT"
+   ]
+  },
+  {
+   "label": "China Daily",
+   "qid": "Q851422",
+   "fame": 0.334,
+   "also": [
+    "Zhongguo Ribao",
+    "chinadaily.com.cn"
+   ]
+  },
+  {
+   "label": "The Hankyoreh",
+   "qid": "Q486314",
+   "fame": 0.333,
+   "also": [
+    "hani.co.kr",
+    "Hankyoreh",
+    "Hankyoreh News"
+   ]
+  },
+  {
+   "label": "Evening Standard",
+   "qid": "Q666494",
+   "fame": 0.332,
+   "also": [
+    "The Standard",
+    "London Evening Standard"
+   ]
+  },
+  {
+   "label": "Novaya Gazeta",
+   "qid": "Q170135",
+   "fame": 0.328,
+   "also": [
+    "New Gazette",
+    "New Newspaper",
+    "Novaâ Gazeta",
+    "Novaia Gazeta",
+    "Novaja Gazeta",
+    "novayagazeta.ru"
+   ]
+  },
+  {
+   "label": "The Chosun Ilbo",
+   "qid": "Q483924",
+   "fame": 0.322,
+   "also": [
+    "Chosun Ilbo",
+    "Chosŏn Ilbosa",
+    "Chosun Daily",
+    "chosun.com"
+   ]
+  },
+  {
+   "label": "La Repubblica",
+   "qid": "Q85329",
+   "fame": 0.32,
+   "also": [
+    "The Republic",
+    "repubblica.it"
+   ]
+  },
+  {
+   "label": "New York Herald Tribune",
+   "qid": "Q532494",
+   "fame": 0.319,
+   "also": []
+  },
+  {
+   "label": "The Seattle Times",
+   "qid": "Q221718",
+   "fame": 0.319,
+   "also": [
+    "Seattle Daily Times",
+    "Seattle Times"
+   ]
+  },
+  {
+   "label": "New York World",
+   "qid": "Q1066835",
+   "fame": 0.318,
+   "also": [
+    "The World",
+    "World",
+    "The New York World"
+   ]
+  },
+  {
+   "label": "Izvestia",
+   "qid": "Q753932",
+   "fame": 0.315,
+   "also": []
+  },
+  {
+   "label": "Miami Herald",
+   "qid": "Q1706651",
+   "fame": 0.311,
+   "also": [
+    "The Miami Herald"
+   ]
+  },
+  {
+   "label": "New York Observer",
+   "qid": "Q2038698",
+   "fame": 0.311,
+   "also": [
+    "The New York Observer",
+    "The Observer",
+    "Observer",
+    "N.Y. Observer",
+    "Observer.com"
+   ]
+  },
+  {
+   "label": "Pittsburgh Post-Gazette",
+   "qid": "Q3063794",
+   "fame": 0.309,
+   "also": [
+    "Post-Gazette",
+    "The Pittsburgh Post-Gazette"
+   ]
+  },
+  {
+   "label": "Deccan Herald",
+   "qid": "Q1181753",
+   "fame": 0.308,
+   "also": []
+  },
+  {
+   "label": "Deseret News",
+   "qid": "Q1056889",
+   "fame": 0.303,
+   "also": [
+    "Deseret Morning News",
+    "The Deseret News"
+   ]
+  },
+  {
+   "label": "International Herald Tribune",
+   "qid": "Q100294968",
+   "fame": 0.301,
+   "also": [
+    "Herald Tribune",
+    "I.H.T"
+   ]
+  },
+  {
+   "label": "The Plain Dealer",
+   "qid": "Q286036",
+   "fame": 0.301,
+   "also": [
+    "Cleveland Plain Dealer",
+    "Cleveland.com",
+    "Plain Dealer",
+    "The Cleveland Plain Dealer"
+   ]
+  },
+  {
+   "label": "Deccan Chronicle",
+   "qid": "Q1975835",
+   "fame": 0.3,
+   "also": []
+  },
+  {
+   "label": "The Oregonian",
+   "qid": "Q1547338",
+   "fame": 0.3,
+   "also": [
+    "Daily Oregonian",
+    "Morning Oregonian",
+    "Oregonian",
+    "The Daily Oregonian",
+    "The Morning Oregonian",
+    "The Sunday Oregonian",
+    "The Weekly Oregonian",
+    "Weekly Oregonian"
+   ]
+  },
+  {
+   "label": "The Dallas Morning News",
+   "qid": "Q889935",
+   "fame": 0.297,
+   "also": [
+    "DMN",
+    "Dallas Morning News"
+   ]
+  },
+  {
+   "label": "Avanti!",
+   "qid": "Q790205",
+   "fame": 0.294,
+   "also": []
+  },
+  {
+   "label": "The Illustrated London News",
+   "qid": "Q856192",
+   "fame": 0.293,
+   "also": [
+    "Illustrated London News",
+    "ILN"
+   ]
+  },
+  {
+   "label": "Amar Ujala",
+   "qid": "Q2176784",
+   "fame": 0.29,
+   "also": []
+  },
+  {
+   "label": "Marca",
+   "qid": "Q917580",
+   "fame": 0.289,
+   "also": [
+    "marca.com"
+   ]
+  },
+  {
+   "label": "O Globo",
+   "qid": "Q970729",
+   "fame": 0.287,
+   "also": []
+  },
+  {
+   "label": "The Joong-ang Ilbo",
+   "qid": "Q483903",
+   "fame": 0.287,
+   "also": [
+    "JoongAng Ilbo",
+    "joonang ilbo"
+   ]
+  },
+  {
+   "label": "The Sun",
+   "qid": "Q1983260",
+   "fame": 0.285,
+   "also": [
+    "Sun",
+    "New York Sun",
+    "The New York Sun"
+   ]
+  },
+  {
+   "label": "Boston Herald",
+   "qid": "Q773802",
+   "fame": 0.283,
+   "also": [
+    "The Boston Herald"
+   ]
+  },
+  {
+   "label": "Paris Match",
+   "qid": "Q678095",
+   "fame": 0.283,
+   "also": []
+  },
+  {
+   "label": "The Herald",
+   "qid": "Q3179178",
+   "fame": 0.283,
+   "also": [
+    "Herald",
+    "Glasgow Advertiser",
+    "Glasgow Herald",
+    "Herald Scotland",
+    "The Glasgow Herald",
+    "The Herald and Advertiser and Commercial Chronicle",
+    "The Herald Scotland"
+   ]
+  },
+  {
+   "label": "The National",
+   "qid": "Q2544289",
+   "fame": 0.281,
+   "also": [
+    "National",
+    "National News",
+    "The National News"
+   ]
+  },
+  {
+   "label": "The Statesman",
+   "qid": "Q372096",
+   "fame": 0.281,
+   "also": [
+    "Statesman"
+   ]
+  },
+  {
+   "label": "Women's Wear Daily",
+   "qid": "Q3569766",
+   "fame": 0.281,
+   "also": [
+    "WWD",
+    "wwd.com"
+   ]
+  },
+  {
+   "label": "Hartford Courant",
+   "qid": "Q1587159",
+   "fame": 0.278,
+   "also": [
+    "courant.com",
+    "The Hartford Courant",
+    "The Hartford Daily Courant"
+   ]
+  },
+  {
+   "label": "Kesari",
+   "qid": "Q6394871",
+   "fame": 0.277,
+   "also": []
+  },
+  {
+   "label": "New-York Tribune",
+   "qid": "Q983247",
+   "fame": 0.275,
+   "also": [
+    "The New York Tribune"
+   ]
+  },
+  {
+   "label": "San Francisco Examiner",
+   "qid": "Q2164240",
+   "fame": 0.274,
+   "also": [
+    "SF Examiner",
+    "The San Francisco Examiner"
+   ]
+  },
+  {
+   "label": "Seattle Post-Intelligencer",
+   "qid": "Q286261",
+   "fame": 0.272,
+   "also": [
+    "Post-Intelligencer",
+    "Seattle P-I",
+    "Seattlepi.com",
+    "The P-I",
+    "The Seattle P-I",
+    "The Seattle Post-Intelligencer"
+   ]
+  },
+  {
+   "label": "Moskovskij Komsomolets",
+   "qid": "Q1062623",
+   "fame": 0.271,
+   "also": []
+  },
+  {
+   "label": "The Philippine Star",
+   "qid": "Q6489289",
+   "fame": 0.27,
+   "also": [
+    "Philippine Star",
+    "Philstar.com"
+   ]
+  },
+  {
+   "label": "Khaleej Times",
+   "qid": "Q1579995",
+   "fame": 0.269,
+   "also": []
+  },
+  {
+   "label": "The Sacramento Bee",
+   "qid": "Q356300",
+   "fame": 0.269,
+   "also": [
+    "Sacramento Bee"
+   ]
+  },
+  {
+   "label": "The Daily Prothom Alo",
+   "qid": "Q2156338",
+   "fame": 0.268,
+   "also": [
+    "Prothom Alo"
+   ]
+  },
+  {
+   "label": "The Tribune",
+   "qid": "Q1922367",
+   "fame": 0.268,
+   "also": [
+    "tribuneindia.com"
+   ]
+  },
+  {
+   "label": "La Stampa",
+   "qid": "Q923353",
+   "fame": 0.267,
+   "also": [
+    "Gazzetta Piemontese",
+    "lastampa.it"
+   ]
+  },
+  {
+   "label": "Jyllands-Posten",
+   "qid": "Q815527",
+   "fame": 0.266,
+   "also": []
+  },
+  {
+   "label": "Barron's",
+   "qid": "Q4863797",
+   "fame": 0.265,
+   "also": []
+  },
+  {
+   "label": "Daily Worker",
+   "qid": "Q1157607",
+   "fame": 0.265,
+   "also": [
+    "Worker",
+    "The Daily Worker",
+    "The Worker"
+   ]
+  },
+  {
+   "label": "Il Popolo d'Italia",
+   "qid": "Q1658254",
+   "fame": 0.265,
+   "also": [
+    "Popolo d'Italia"
+   ]
+  },
+  {
+   "label": "Svenska Dagbladet",
+   "qid": "Q1504847",
+   "fame": 0.264,
+   "also": [
+    "SvD"
+   ]
+  },
+  {
+   "label": "Tampa Bay Times",
+   "qid": "Q1714356",
+   "fame": 0.262,
+   "also": [
+    "sptimes.com",
+    "Tampa Bay Newspaper",
+    "tampabay.com"
+   ]
+  },
+  {
+   "label": "The Arizona Republic",
+   "qid": "Q1514991",
+   "fame": 0.262,
+   "also": [
+    "The Daily Republican",
+    "Arizona Republic",
+    "Arizona Republican",
+    "AZ Central",
+    "The Arizona Republican"
+   ]
+  },
+  {
+   "label": "The Mercury News",
+   "qid": "Q575741",
+   "fame": 0.262,
+   "also": [
+    "San Jose News",
+    "Mercury News",
+    "San Jose Mercury",
+    "San Jose Mercury News"
+   ]
+  },
+  {
+   "label": "Business Standard",
+   "qid": "Q2307816",
+   "fame": 0.261,
+   "also": []
+  },
+  {
+   "label": "The Kansas City Star",
+   "qid": "Q3521457",
+   "fame": 0.259,
+   "also": [
+    "Kansas City Star",
+    "KC Star"
+   ]
+  },
+  {
+   "label": "La Vanguardia",
+   "qid": "Q511533",
+   "fame": 0.258,
+   "also": [
+    "La Vanguardia Española"
+   ]
+  },
+  {
+   "label": "The Fader",
+   "qid": "Q3520826",
+   "fame": 0.256,
+   "also": []
+  },
+  {
+   "label": "Helsingin Sanomat",
+   "qid": "Q366921",
+   "fame": 0.253,
+   "also": [
+    "hs.fi"
+   ]
+  },
+  {
+   "label": "L'Ami du peuple",
+   "qid": "Q719806",
+   "fame": 0.252,
+   "also": []
+  },
+  {
+   "label": "Sözcü",
+   "qid": "Q4121023",
+   "fame": 0.251,
+   "also": []
+  },
+  {
+   "label": "Politico Europe",
+   "qid": "Q991826",
+   "fame": 0.249,
+   "also": [
+    "politico.eu"
+   ]
+  },
+  {
+   "label": "San Diego Union-Tribune",
+   "qid": "Q3547109",
+   "fame": 0.249,
+   "also": [
+    "The San Diego Union-Tribune",
+    "sandiegouniontribune.com",
+    "Sign On San Diego",
+    "SignOnSanDiego.com",
+    "U-T San Diego",
+    "utsandiego.com"
+   ]
+  },
+  {
+   "label": "Ouest-France",
+   "qid": "Q660769",
+   "fame": 0.248,
+   "also": []
+  },
+  {
+   "label": "The Korea Times",
+   "qid": "Q486950",
+   "fame": 0.247,
+   "also": [
+    "The Times of Korea",
+    "Times of Korea"
+   ]
+  },
+  {
+   "label": "The New York Times International Edition",
+   "qid": "Q678086",
+   "fame": 0.246,
+   "also": [
+    "International herald tribune",
+    "INYT",
+    "The International New York Times"
+   ]
+  },
+  {
+   "label": "Arab News",
+   "qid": "Q623659",
+   "fame": 0.245,
+   "also": []
+  },
+  {
+   "label": "Gazeta Wyborcza",
+   "qid": "Q741296",
+   "fame": 0.245,
+   "also": [
+    "wyborcza.pl",
+    "Wyborcza"
+   ]
+  },
+  {
+   "label": "Hürriyet",
+   "qid": "Q327147",
+   "fame": 0.245,
+   "also": [
+    "hurriyet.com.tr"
+   ]
+  },
+  {
+   "label": "Der Spiegel",
+   "qid": "Q278151",
+   "fame": 0.24,
+   "also": [
+    "Spiegel",
+    "SPON",
+    "Spiegel Online"
+   ]
+  },
+  {
+   "label": "RBC Information Systems",
+   "qid": "Q629733",
+   "fame": 0.238,
+   "also": [
+    "RBK Group",
+    "RBK",
+    "RBC journal"
+   ]
+  },
+  {
+   "label": "The Denver Post",
+   "qid": "Q2668654",
+   "fame": 0.238,
+   "also": [
+    "Denver Post",
+    "denverpost.com"
+   ]
+  },
+  {
+   "label": "The Indianapolis Star",
+   "qid": "Q2314407",
+   "fame": 0.238,
+   "also": [
+    "Indianapolis Journal",
+    "Indianapolis Star",
+    "Indy Star",
+    "The Indianapolis Journa"
+   ]
+  },
+  {
+   "label": "The West Australian",
+   "qid": "Q1810152",
+   "fame": 0.238,
+   "also": [
+    "The West",
+    "The Perth gazette and Western Australian journal",
+    "West Australian",
+    "West Australian Times",
+    "Western Australian Times"
+   ]
+  },
+  {
+   "label": "LA Weekly",
+   "qid": "Q952554",
+   "fame": 0.231,
+   "also": [
+    "Los Angeles Weekly"
+   ]
+  },
+  {
+   "label": "Daily NK",
+   "qid": "Q492825",
+   "fame": 0.228,
+   "also": []
+  },
+  {
+   "label": "L'Osservatore Romano",
+   "qid": "Q746112",
+   "fame": 0.228,
+   "also": []
+  },
+  {
+   "label": "Berlingske",
+   "qid": "Q59055",
+   "fame": 0.227,
+   "also": [
+    "Berlingske Tidende"
+   ]
+  },
+  {
+   "label": "Les Échos",
+   "qid": "Q923193",
+   "fame": 0.227,
+   "also": []
+  },
+  {
+   "label": "Granma",
+   "qid": "Q1130158",
+   "fame": 0.226,
+   "also": []
+  },
+  {
+   "label": "Le Monde diplomatique",
+   "qid": "Q858121",
+   "fame": 0.226,
+   "also": [
+    "Le Diplo",
+    "Le Monde diplo"
+   ]
+  },
+  {
+   "label": "The Courier-Mail",
+   "qid": "Q2095955",
+   "fame": 0.226,
+   "also": [
+    "The Courier",
+    "Courier-Mail",
+    "Moreton Bay Courier"
+   ]
+  },
+  {
+   "label": "Vancouver Sun",
+   "qid": "Q2004274",
+   "fame": 0.226,
+   "also": [
+    "The Sun",
+    "The Vancouver Sun",
+    "The Weekend Sun"
+   ]
+  },
+  {
+   "label": "The Dong-a Ilbo",
+   "qid": "Q486086",
+   "fame": 0.225,
+   "also": [
+    "Dong-a Ilbo"
+   ]
+  },
+  {
+   "label": "Amrita Bazar Patrika",
+   "qid": "Q203382",
+   "fame": 0.224,
+   "also": []
+  },
+  {
+   "label": "Rajasthan Patrika",
+   "qid": "Q3866831",
+   "fame": 0.224,
+   "also": []
+  },
+  {
+   "label": "The Gazette",
+   "qid": "Q1549535",
+   "fame": 0.224,
+   "also": [
+    "Gazette",
+    "Montreal Gazette",
+    "The Montreal Gazette"
+   ]
+  },
+  {
+   "label": "De Volkskrant",
+   "qid": "Q284183",
+   "fame": 0.223,
+   "also": [
+    "Volkskrant"
+   ]
+  },
+  {
+   "label": "National Catholic Reporter",
+   "qid": "Q1266813",
+   "fame": 0.222,
+   "also": [
+    "NCR"
+   ]
+  },
+  {
+   "label": "Rossiyskaya Gazeta",
+   "qid": "Q1853433",
+   "fame": 0.222,
+   "also": [
+    "rg.ru"
+   ]
+  },
+  {
+   "label": "El Espectador",
+   "qid": "Q1324151",
+   "fame": 0.221,
+   "also": []
+  },
+  {
+   "label": "Politiken",
+   "qid": "Q373133",
+   "fame": 0.221,
+   "also": []
+  },
+  {
+   "label": "Chicago Reader",
+   "qid": "Q2076422",
+   "fame": 0.218,
+   "also": [
+    "Reader"
+   ]
+  },
+  {
+   "label": "Al-Quds Al-Arabi",
+   "qid": "Q310193",
+   "fame": 0.217,
+   "also": [
+    "alquds.co.uk"
+   ]
+  },
+  {
+   "label": "Algemeiner Journal",
+   "qid": "Q1961754",
+   "fame": 0.217,
+   "also": [
+    "algemeiner.com",
+    "The Algemeiner"
+   ]
+  },
+  {
+   "label": "The Buffalo News",
+   "qid": "Q1390786",
+   "fame": 0.217,
+   "also": [
+    "Buffalo Evening News",
+    "Buffalo News",
+    "The Buffalo Evening News"
+   ]
+  },
+  {
+   "label": "The Salt Lake Tribune",
+   "qid": "Q1550315",
+   "fame": 0.217,
+   "also": [
+    "Salt Lake Tribune",
+    "sltrib.com"
+   ]
+  },
+  {
+   "label": "The Korea Herald",
+   "qid": "Q562824",
+   "fame": 0.215,
+   "also": []
+  },
+  {
+   "label": "New York Herald",
+   "qid": "Q924673",
+   "fame": 0.214,
+   "also": [
+    "The New York Herald",
+    "New York Daily Herald"
+   ]
+  },
+  {
+   "label": "China Times",
+   "qid": "Q697429",
+   "fame": 0.212,
+   "also": []
+  },
+  {
+   "label": "Le Soir",
+   "qid": "Q690672",
+   "fame": 0.212,
+   "also": [
+    "Le Soir de Bruxelles"
+   ]
+  },
+  {
+   "label": "Liberty Times",
+   "qid": "Q697462",
+   "fame": 0.21,
+   "also": [
+    "LTN",
+    "libertytimes.com.tw",
+    "ltn.com.tw",
+    "Liberty Times Net"
+   ]
+  },
+  {
+   "label": "Los Angeles Daily News",
+   "qid": "Q499188",
+   "fame": 0.21,
+   "also": [
+    "Los Angeles Daily"
+   ]
+  },
+  {
+   "label": "The Guardian Weekly",
+   "qid": "Q3446306",
+   "fame": 0.209,
+   "also": [
+    "Guardian weekly"
+   ]
+  },
+  {
+   "label": "Rzeczpospolita",
+   "qid": "Q2164678",
+   "fame": 0.208,
+   "also": []
+  },
+  {
+   "label": "The Austin Chronicle",
+   "qid": "Q3519844",
+   "fame": 0.208,
+   "also": [
+    "Austin Chronicle"
+   ]
+  },
+  {
+   "label": "El Universal",
+   "qid": "Q1321495",
+   "fame": 0.206,
+   "also": [
+    "Universal",
+    "eluniversal.com.mx"
+   ]
+  },
+  {
+   "label": "Thairath",
+   "qid": "Q1318400",
+   "fame": 0.206,
+   "also": []
+  },
+  {
+   "label": "Adevărul",
+   "qid": "Q426356",
+   "fame": 0.204,
+   "also": []
+  },
+  {
+   "label": "Die Rote Fahne",
+   "qid": "Q309119",
+   "fame": 0.202,
+   "also": []
+  },
+  {
+   "label": "20 Minuten",
+   "qid": "Q212855",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "24 Chasa",
+   "qid": "Q217309",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "24sata",
+   "qid": "Q217315",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "A Noite",
+   "qid": "Q9558312",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aachener Zeitung",
+   "qid": "Q300766",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aajkaal",
+   "qid": "Q2180999",
+   "fame": 0.2,
+   "also": [
+    "Sandhya Aajkaal"
+   ]
+  },
+  {
+   "label": "Abazashta",
+   "qid": "Q2630817",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "ABC Color",
+   "qid": "Q2065725",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Åbo Underrättelser",
+   "qid": "Q3141380",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Açoriano Oriental",
+   "qid": "Q4350216",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ad-Dustour",
+   "qid": "Q4678064",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ádahooníłígíí",
+   "qid": "Q8076507",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "ADN",
+   "qid": "Q2709098",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Adyge mak'",
+   "qid": "Q4058036",
+   "fame": 0.2,
+   "also": [
+    "Adyghe Maq"
+   ]
+  },
+  {
+   "label": "Akhbar el-Yom",
+   "qid": "Q4116122",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Akşam",
+   "qid": "Q424791",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Al Akhbar",
+   "qid": "Q2829196",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Al Ghad",
+   "qid": "Q4724199",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Al Gomhuria",
+   "qid": "Q4116126",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Al Madina",
+   "qid": "Q430268",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Al Nadwa",
+   "qid": "Q12205275",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Al Riyadh",
+   "qid": "Q4704716",
+   "fame": 0.2,
+   "also": [
+    "Alriyadh Newspaper"
+   ]
+  },
+  {
+   "label": "Al-Ahram Weekly",
+   "qid": "Q424967",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Al-Baʻth",
+   "qid": "Q292497",
+   "fame": 0.2,
+   "also": [
+    "Al-Ba'ath"
+   ]
+  },
+  {
+   "label": "Al-Hayat al-Jadida",
+   "qid": "Q2898468",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Al-Hilal",
+   "qid": "Q4702515",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Al-Ittihad",
+   "qid": "Q686585",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Al-Masry Al-Youm",
+   "qid": "Q2829240",
+   "fame": 0.2,
+   "also": [
+    "masr-alyoum"
+   ]
+  },
+  {
+   "label": "Al-Musawar",
+   "qid": "Q4118576",
+   "fame": 0.2,
+   "also": [
+    "Al-Muṣawwar",
+    "Al-Mussawar",
+    "Al-Mussawar Magazine"
+   ]
+  },
+  {
+   "label": "Al-Waqa'i' al-Misriyya",
+   "qid": "Q4703322",
+   "fame": 0.2,
+   "also": [
+    "Vekâyi-i Mısriyye",
+    "Veḳāʾiʿ-i Mıṣriyye"
+   ]
+  },
+  {
+   "label": "Al-Watan",
+   "qid": "Q828388",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Al-Watwan",
+   "qid": "Q12205284",
+   "fame": 0.2,
+   "also": [
+    "Al-Watwany"
+   ]
+  },
+  {
+   "label": "Ålandstidningen",
+   "qid": "Q3352241",
+   "fame": 0.2,
+   "also": [
+    "Åland",
+    "Tidningen Åland"
+   ]
+  },
+  {
+   "label": "Algemeen Handelsblad",
+   "qid": "Q837919",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Alik",
+   "qid": "Q2836909",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Alithia",
+   "qid": "Q2837227",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Allgemeine Zeitung",
+   "qid": "Q1432339",
+   "fame": 0.2,
+   "also": [
+    "Augsburger Allgemeine Zeitung",
+    "Cotta’sche Zeitung",
+    "Münchener Allgemeine Zeitung",
+    "Neueste Weltkunde"
+   ]
+  },
+  {
+   "label": "Altaposten",
+   "qid": "Q1758339",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Amar Asom",
+   "qid": "Q4022309",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Amigoe",
+   "qid": "Q2305983",
+   "fame": 0.2,
+   "also": [
+    "Amigoe di Curacao"
+   ]
+  },
+  {
+   "label": "Amsterdam News",
+   "qid": "Q1140177",
+   "fame": 0.2,
+   "also": [
+    "New York Amsterdam News",
+    "amsterdamnews.com",
+    "N.Y. Amsterdam News",
+    "The Amsterdam News",
+    "The New York Amsterdam news"
+   ]
+  },
+  {
+   "label": "An Claidheamh Soluis",
+   "qid": "Q3756416",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "An Phoblacht",
+   "qid": "Q482484",
+   "fame": 0.2,
+   "also": [
+    "anphoblacht.com"
+   ]
+  },
+  {
+   "label": "Ana Sözü",
+   "qid": "Q20965731",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Anchorage Daily News",
+   "qid": "Q489214",
+   "fame": 0.2,
+   "also": [
+    "ADN",
+    "adn.com",
+    "Alaska Dispatch News"
+   ]
+  },
+  {
+   "label": "Andhra Prabha",
+   "qid": "Q748528",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Antilliaans Dagblad",
+   "qid": "Q2643411",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ararad",
+   "qid": "Q4068569",
+   "fame": 0.2,
+   "also": [
+    "Ararad Daily"
+   ]
+  },
+  {
+   "label": "Aravot",
+   "qid": "Q13050928",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Arbeiter-Zeitung",
+   "qid": "Q627083",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Arevelk",
+   "qid": "Q4789120",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Argentinisches Tageblatt",
+   "qid": "Q325193",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Arizona Daily Star",
+   "qid": "Q1982939",
+   "fame": 0.2,
+   "also": [
+    "Arizona Star",
+    "AZ Daily Star",
+    "Azstarnet.com",
+    "La Estrella de Tucsón",
+    "The Arizona Daily Star",
+    "The Arizona Star",
+    "The AZ Daily Star",
+    "ThisIsTucson",
+    "Tucson.com"
+   ]
+  },
+  {
+   "label": "Armenian Weekly",
+   "qid": "Q4793242",
+   "fame": 0.2,
+   "also": [
+    "The Armenian Weekly",
+    "Hairenik Weekly"
+   ]
+  },
+  {
+   "label": "Army Times",
+   "qid": "Q689778",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Arriba",
+   "qid": "Q4795970",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Asbarez",
+   "qid": "Q3235454",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Asomiya Pratidin",
+   "qid": "Q4022319",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Athens News",
+   "qid": "Q120219",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aujourd'hui Le Maroc",
+   "qid": "Q2871743",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Austin American-Statesman",
+   "qid": "Q3629935",
+   "fame": 0.2,
+   "also": [
+    "Austin American",
+    "The Austin American"
+   ]
+  },
+  {
+   "label": "Avadhnama",
+   "qid": "Q2747390",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Avante!",
+   "qid": "Q790183",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Azerbaycan",
+   "qid": "Q4832376",
+   "fame": 0.2,
+   "also": [
+    "Azerbaijan"
+   ]
+  },
+  {
+   "label": "Azi",
+   "qid": "Q277224",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Babel",
+   "qid": "Q4808621",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Baltimore Afro-American",
+   "qid": "Q2826234",
+   "fame": 0.2,
+   "also": [
+    "Afro-American newspaper",
+    "afro.com",
+    "The Afro-American"
+   ]
+  },
+  {
+   "label": "Bande Mataram",
+   "qid": "Q4854477",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bangladesh Pratidin",
+   "qid": "Q18602716",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bartaman",
+   "qid": "Q4865142",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bashkimi",
+   "qid": "Q2445301",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bashkortostan",
+   "qid": "Q4080200",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bauer und Arbeiter",
+   "qid": "Q4873463",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "bdnews24.com",
+   "qid": "Q4875421",
+   "fame": 0.2,
+   "also": [
+    "bdnews24"
+   ]
+  },
+  {
+   "label": "Beeld",
+   "qid": "Q814052",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Beijing Review",
+   "qid": "Q497493",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Beijing Youth Daily",
+   "qid": "Q1006911",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Belaruskaya gazeta",
+   "qid": "Q950530",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Belfast Telegraph",
+   "qid": "Q3985843",
+   "fame": 0.2,
+   "also": [
+    "The Belfast Telegraph"
+   ]
+  },
+  {
+   "label": "Berita Harian",
+   "qid": "Q2211269",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Berliner Journal",
+   "qid": "Q821572",
+   "fame": 0.2,
+   "also": [
+    "Ontario Journal"
+   ]
+  },
+  {
+   "label": "Biełarus",
+   "qid": "Q3497081",
+   "fame": 0.2,
+   "also": [
+    "Belarus newspaper",
+    "The Belarusian"
+   ]
+  },
+  {
+   "label": "Billboard Brasil",
+   "qid": "Q1343828",
+   "fame": 0.2,
+   "also": [
+    "Billboard Brazil"
+   ]
+  },
+  {
+   "label": "Billboard Türkiye",
+   "qid": "Q2579123",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Birmingham Mail",
+   "qid": "Q4916749",
+   "fame": 0.2,
+   "also": [
+    "Birmingham Daily Mail",
+    "Birmingham Evening Mail",
+    "Black Country Mail"
+   ]
+  },
+  {
+   "label": "Birmingham Post",
+   "qid": "Q4916779",
+   "fame": 0.2,
+   "also": [
+    "Birmingham Daily Post",
+    "The Birmingham Post"
+   ]
+  },
+  {
+   "label": "Birobidzhaner Shtern",
+   "qid": "Q905507",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Birzhevyie Vedomosti",
+   "qid": "Q4087004",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bladet Tromsø",
+   "qid": "Q1757869",
+   "fame": 0.2,
+   "also": [
+    "ITromsø"
+   ]
+  },
+  {
+   "label": "Blitz",
+   "qid": "Q16843237",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Blog del Narco",
+   "qid": "Q4927359",
+   "fame": 0.2,
+   "also": [
+    "el pantera"
+   ]
+  },
+  {
+   "label": "Borås Tidning",
+   "qid": "Q4947013",
+   "fame": 0.2,
+   "also": [
+    "bt.se"
+   ]
+  },
+  {
+   "label": "Borgåbladet",
+   "qid": "Q3364582",
+   "fame": 0.2,
+   "also": [
+    "bbl.fi"
+   ]
+  },
+  {
+   "label": "Borneo Bulletin",
+   "qid": "Q4946070",
+   "fame": 0.2,
+   "also": [
+    "Borneo Bulletin Sunday",
+    "Borneo Bulletin Weekend",
+    "The Borneo bulletin"
+   ]
+  },
+  {
+   "label": "Borneo Post",
+   "qid": "Q734581",
+   "fame": 0.2,
+   "also": [
+    "The Borneo Post"
+   ]
+  },
+  {
+   "label": "Börsen-Zeitung",
+   "qid": "Q855176",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Boston Gazette",
+   "qid": "Q4947920",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bota Sot",
+   "qid": "Q894617",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Brabants Dagblad",
+   "qid": "Q250656",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Brestskaya Gazeta",
+   "qid": "Q31213431",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Broadway Journal",
+   "qid": "Q129875",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Brooklyn Eagle",
+   "qid": "Q4974820",
+   "fame": 0.2,
+   "also": [
+    "The Brooklyn Daily Eagle",
+    "Brooklyn Daily Eagle",
+    "The Brooklyn Eagle"
+   ]
+  },
+  {
+   "label": "Budapesti Hírlap",
+   "qid": "Q648055",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bukhara-yi Sharif",
+   "qid": "Q4986850",
+   "fame": 0.2,
+   "also": [
+    "Bukharai-ye-sharif"
+   ]
+  },
+  {
+   "label": "Busan Ilbo",
+   "qid": "Q608410",
+   "fame": 0.2,
+   "also": [
+    "Pusan Ilbo",
+    "The Busan Ilbo"
+   ]
+  },
+  {
+   "label": "Business Line",
+   "qid": "Q279739",
+   "fame": 0.2,
+   "also": [
+    "The Hindu Business Line"
+   ]
+  },
+  {
+   "label": "Business Recorder",
+   "qid": "Q59705",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Búsqueda",
+   "qid": "Q5005254",
+   "fame": 0.2,
+   "also": [
+    "Revista Búsqueda"
+   ]
+  },
+  {
+   "label": "Calcalist",
+   "qid": "Q2920691",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Calgary Herald",
+   "qid": "Q1026672",
+   "fame": 0.2,
+   "also": [
+    "calgaryherald.com",
+    "The Calgary Herald"
+   ]
+  },
+  {
+   "label": "Capital",
+   "qid": "Q25738",
+   "fame": 0.2,
+   "also": [
+    "Kapital"
+   ]
+  },
+  {
+   "label": "Catholic Herald",
+   "qid": "Q633906",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chandrika",
+   "qid": "Q4042996",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chicago American",
+   "qid": "Q5095396",
+   "fame": 0.2,
+   "also": [
+    "Chicago Herald American"
+   ]
+  },
+  {
+   "label": "Chicago Daily News",
+   "qid": "Q2963306",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "China Daily News",
+   "qid": "Q697337",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Choson Sinbo",
+   "qid": "Q704192",
+   "fame": 0.2,
+   "also": [
+    "The People's Korea"
+   ]
+  },
+  {
+   "label": "City Press",
+   "qid": "Q1093990",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Civil and Military Gazette",
+   "qid": "Q2799961",
+   "fame": 0.2,
+   "also": [
+    "The Civil and Military Gazette",
+    "The Civil and Military Gazette Limited",
+    "The Civil and Military Gazette Ltd"
+   ]
+  },
+  {
+   "label": "Cœurs Vaillants",
+   "qid": "Q3010860",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Comœdia",
+   "qid": "Q2991574",
+   "fame": 0.2,
+   "also": [
+    "Comoedia"
+   ]
+  },
+  {
+   "label": "Cotidianul",
+   "qid": "Q2483614",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Courante uyt Italien, Duytslandt, &c.",
+   "qid": "Q5178099",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Crimean chamber",
+   "qid": "Q12114803",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Critica Sociale",
+   "qid": "Q651079",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Culture and life",
+   "qid": "Q12115722",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "d'Lëtzebuerger Land",
+   "qid": "Q773198",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dagbladet Børsen",
+   "qid": "Q5208470",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dagens Industri",
+   "qid": "Q734293",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Daily Chronicle",
+   "qid": "Q74707",
+   "fame": 0.2,
+   "also": [
+    "The Daily Chronicle"
+   ]
+  },
+  {
+   "label": "Daily Desher Katha",
+   "qid": "Q3935555",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Daily Express",
+   "qid": "Q3694775",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Daily Jang",
+   "qid": "Q3696230",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Daily Monitor",
+   "qid": "Q382968",
+   "fame": 0.2,
+   "also": [
+    "English news paper"
+   ]
+  },
+  {
+   "label": "Daily Nation",
+   "qid": "Q1768677",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Daily News",
+   "qid": "Q3012106",
+   "fame": 0.2,
+   "also": [
+    "Daily Mail Monday",
+    "Daily News Online",
+    "dailynews.co.th",
+    "Naewna Hang Yuk Daily News"
+   ]
+  },
+  {
+   "label": "Daily News Egypt",
+   "qid": "Q5209324",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Daily Sabah",
+   "qid": "Q18639164",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Daily Times of Nigeria",
+   "qid": "Q5209383",
+   "fame": 0.2,
+   "also": [
+    "Daily Times",
+    "The Nigerian Daily Times"
+   ]
+  },
+  {
+   "label": "Dainik Agradoot",
+   "qid": "Q5209489",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dainik Janambhumi",
+   "qid": "Q1143899",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dainik Navajyoti",
+   "qid": "Q5209494",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dainik Statesman",
+   "qid": "Q2341026",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dala-Demokraten",
+   "qid": "Q4819152",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "De Limburger",
+   "qid": "Q691690",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "De Locomotief",
+   "qid": "Q3342497",
+   "fame": 0.2,
+   "also": [
+    "Semarangsch Nieuws en Advertentieblad."
+   ]
+  },
+  {
+   "label": "De Stentor",
+   "qid": "Q696725",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "De Twentsche Courant Tubantia",
+   "qid": "Q1180408",
+   "fame": 0.2,
+   "also": [
+    "Tubantia"
+   ]
+  },
+  {
+   "label": "Deepika",
+   "qid": "Q3041666",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Demokraatti",
+   "qid": "Q11855967",
+   "fame": 0.2,
+   "also": [
+    "Demari",
+    "Suomen sosialidemokraatti",
+    "Uutispäivä Demari"
+   ]
+  },
+  {
+   "label": "Den Danske Mercurius",
+   "qid": "Q1756714",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "der Freitag",
+   "qid": "Q265362",
+   "fame": 0.2,
+   "also": [
+    "Freitag"
+   ]
+  },
+  {
+   "label": "Diari d'Andorra",
+   "qid": "Q2621754",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Diari de Girona",
+   "qid": "Q3026345",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Diario 16",
+   "qid": "Q506978",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Diario de León",
+   "qid": "Q5805383",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Diario de Navarra",
+   "qid": "Q8355313",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Diario de Pernambuco",
+   "qid": "Q3480197",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Diario de Pontevedra",
+   "qid": "Q8355302",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Diario del Alto Aragón",
+   "qid": "Q3573768",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Diario Democracia",
+   "qid": "Q1209142",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Die Burger",
+   "qid": "Q1211828",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Die Son",
+   "qid": "Q1216310",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Die Weltwoche",
+   "qid": "Q870443",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dienas Lapa",
+   "qid": "Q1047981",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dina Thanthi",
+   "qid": "Q3522186",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dinakaran",
+   "qid": "Q2191913",
+   "fame": 0.2,
+   "also": [
+    "tiṉakaraṉ"
+   ]
+  },
+  {
+   "label": "Dinamalar",
+   "qid": "Q3246100",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dinamani",
+   "qid": "Q2854935",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dnestrovskaya Pravda",
+   "qid": "Q840965",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dnevnik",
+   "qid": "Q1232956",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dúgvan",
+   "qid": "Q669699",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ebela",
+   "qid": "Q3784692",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Echorouk El Yawmi",
+   "qid": "Q617296",
+   "fame": 0.2,
+   "also": [
+    "Echourouk",
+    "Echorouk",
+    "Echorouk Al Yawmi",
+    "Echourouk Al Yawmi",
+    "Echourouk El Yawmi"
+   ]
+  },
+  {
+   "label": "Eenadu",
+   "qid": "Q3764157",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Efimeris",
+   "qid": "Q694796",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Egin",
+   "qid": "Q964922",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Egunkaria",
+   "qid": "Q775074",
+   "fame": 0.2,
+   "also": [
+    "Euskaldunon Egunkaria"
+   ]
+  },
+  {
+   "label": "Einkommende Zeitungen",
+   "qid": "Q1308132",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "El Alcázar",
+   "qid": "Q3848529",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "El Comercio",
+   "qid": "Q909209",
+   "fame": 0.2,
+   "also": [
+    "El guacho",
+    "elcomercio.com"
+   ]
+  },
+  {
+   "label": "El Correo Gallego",
+   "qid": "Q3312356",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "El Defensor de Granada",
+   "qid": "Q5821693",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "El Diario",
+   "qid": "Q1324064",
+   "fame": 0.2,
+   "also": [
+    "El Diario Bolivia"
+   ]
+  },
+  {
+   "label": "El Diario La Prensa",
+   "qid": "Q2066807",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "El Diario Montañés",
+   "qid": "Q478520",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "El Economista",
+   "qid": "Q2839040",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "El Globo",
+   "qid": "Q5822007",
+   "fame": 0.2,
+   "also": [
+    "Globo"
+   ]
+  },
+  {
+   "label": "El Horria",
+   "qid": "Q16128711",
+   "fame": 0.2,
+   "also": [
+    "El Horria - La Liberté",
+    "La Liberté"
+   ]
+  },
+  {
+   "label": "El Liberal",
+   "qid": "Q3327138",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "El Mercurio de Valparaíso",
+   "qid": "Q3050097",
+   "fame": 0.2,
+   "also": [
+    "El Mercurio - Valparaíso"
+   ]
+  },
+  {
+   "label": "El Moudjahid",
+   "qid": "Q28055931",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "El Nacional",
+   "qid": "Q1324400",
+   "fame": 0.2,
+   "also": [
+    "elnacional.com"
+   ]
+  },
+  {
+   "label": "El Nuevo Día",
+   "qid": "Q3050130",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "El País",
+   "qid": "Q391530",
+   "fame": 0.2,
+   "also": [
+    "El País Cali"
+   ]
+  },
+  {
+   "label": "El Periódico de Aragón",
+   "qid": "Q2735252",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "El Peruano",
+   "qid": "Q1949576",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "El Salto",
+   "qid": "Q40013900",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "El Siglo de Torreón",
+   "qid": "Q500197",
+   "fame": 0.2,
+   "also": [
+    "elsiglodetorreon.com.mx",
+    "Siglo de Torreón"
+   ]
+  },
+  {
+   "label": "El Siglo Futuro",
+   "qid": "Q16878786",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "El Universo",
+   "qid": "Q926303",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Eleftheros Typos",
+   "qid": "Q572893",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Élet és Irodalom",
+   "qid": "Q274581",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Emerging Infectious Diseases",
+   "qid": "Q5235761",
+   "fame": 0.2,
+   "also": [
+    "EID",
+    "Emerg. Infect. Dis."
+   ]
+  },
+  {
+   "label": "Es-Sabah",
+   "qid": "Q1659206",
+   "fame": 0.2,
+   "also": [
+    "al-Ṣabāḥ"
+   ]
+  },
+  {
+   "label": "Estia",
+   "qid": "Q1370164",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Eswatini Observer",
+   "qid": "Q16800870",
+   "fame": 0.2,
+   "also": [
+    "Swazi Observer"
+   ]
+  },
+  {
+   "label": "Euromaidan Press",
+   "qid": "Q60785659",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Euzkadi",
+   "qid": "Q3061209",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Evenimentul Zilei",
+   "qid": "Q2480744",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Evrensel",
+   "qid": "Q1149161",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Expansión",
+   "qid": "Q556902",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Fædrelandet",
+   "qid": "Q1479255",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Fagun",
+   "qid": "Q59156174",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Fakt",
+   "qid": "Q1318217",
+   "fame": 0.2,
+   "also": [
+    "Fakt.pl"
+   ]
+  },
+  {
+   "label": "Faro de Vigo",
+   "qid": "Q3312323",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Felesteen",
+   "qid": "Q12231001",
+   "fame": 0.2,
+   "also": [
+    "Felestin",
+    "palestine newspaper"
+   ]
+  },
+  {
+   "label": "Feral Tribune",
+   "qid": "Q948316",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Fiji Times",
+   "qid": "Q3071731",
+   "fame": 0.2,
+   "also": [
+    "The Fiji Times"
+   ]
+  },
+  {
+   "label": "Filastin",
+   "qid": "Q5448286",
+   "fame": 0.2,
+   "also": [
+    "Falastin"
+   ]
+  },
+  {
+   "label": "Flamman",
+   "qid": "Q5457313",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Føringatíðindi",
+   "qid": "Q3467549",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Fort Worth Star-Telegram",
+   "qid": "Q2408536",
+   "fame": 0.2,
+   "also": [
+    "Star-Telegram"
+   ]
+  },
+  {
+   "label": "Free Malaysia Today",
+   "qid": "Q5499915",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Free Qaraqalpaqstan",
+   "qid": "Q4176406",
+   "fame": 0.2,
+   "also": [
+    "Erkin Qaraqalpaqstan"
+   ]
+  },
+  {
+   "label": "Gaelic Journal",
+   "qid": "Q3776806",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Galicia Hoxe",
+   "qid": "Q3322348",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gana Adhikar",
+   "qid": "Q5520456",
+   "fame": 0.2,
+   "also": [
+    "Dainik Gana Adhikar"
+   ]
+  },
+  {
+   "label": "Gazeta do Povo",
+   "qid": "Q10288580",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gazeta do Rio de Janeiro",
+   "qid": "Q5197223",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gazeta Express",
+   "qid": "Q954817",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gazeta Grodzieńska",
+   "qid": "Q2074897",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gazeta Shqiptare",
+   "qid": "Q3338559",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gazeta Sporturilor",
+   "qid": "Q2055060",
+   "fame": 0.2,
+   "also": [
+    "Sportul",
+    "Sportul Popular"
+   ]
+  },
+  {
+   "label": "Gazette de Lausanne",
+   "qid": "Q3099751",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gazette van Detroit",
+   "qid": "Q165081",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gazzetta del Sud",
+   "qid": "Q598457",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Glas Istre",
+   "qid": "Q5250252",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Glas javnosti",
+   "qid": "Q773472",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Glas Slavonije",
+   "qid": "Q1286940",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Glas Srpske",
+   "qid": "Q943619",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Global Finance",
+   "qid": "Q4039489",
+   "fame": 0.2,
+   "also": [
+    "Global Finance Magazine"
+   ]
+  },
+  {
+   "label": "GlobalPost",
+   "qid": "Q631535",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Golos",
+   "qid": "Q4142129",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Göteborgs Handels- och Sjöfartstidning",
+   "qid": "Q968533",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Greater Kashmir",
+   "qid": "Q744661",
+   "fame": 0.2,
+   "also": [
+    "United Kashmir"
+   ]
+  },
+  {
+   "label": "Green Anarchy",
+   "qid": "Q1544564",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Groznensky Rabochy",
+   "qid": "Q4150087",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Guangzhou Daily",
+   "qid": "Q842367",
+   "fame": 0.2,
+   "also": [
+    "Guangzhou Ribao"
+   ]
+  },
+  {
+   "label": "Gujarat Samachar",
+   "qid": "Q2129720",
+   "fame": 0.2,
+   "also": [
+    "Lok Prakashan Limited"
+   ]
+  },
+  {
+   "label": "Ha-Karmel",
+   "qid": "Q12406639",
+   "fame": 0.2,
+   "also": [
+    "Ha-Carmel"
+   ]
+  },
+  {
+   "label": "Haarlems Dagblad",
+   "qid": "Q650751",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Habertürk",
+   "qid": "Q5636741",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "HaBoker",
+   "qid": "Q2918130",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hadashot",
+   "qid": "Q1058638",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hakikat",
+   "qid": "Q875081",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hakimiyet-i Milliye",
+   "qid": "Q6102288",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hallands Nyheter",
+   "qid": "Q1472007",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hallandsposten",
+   "qid": "Q3101601",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hallingdølen",
+   "qid": "Q1764841",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Haló noviny",
+   "qid": "Q159937",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hamar Arbeiderblad",
+   "qid": "Q11973818",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hansŏng sunbo",
+   "qid": "Q5973318",
+   "fame": 0.2,
+   "also": [
+    "Hanseong sunbo"
+   ]
+  },
+  {
+   "label": "Haratch",
+   "qid": "Q751228",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hari Bhoomi",
+   "qid": "Q2521947",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "HaZvi",
+   "qid": "Q1513432",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Helsinki Times",
+   "qid": "Q4040556",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Heraldo de Aragón",
+   "qid": "Q3572134",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Heroldo de Esperanto",
+   "qid": "Q3785307",
+   "fame": 0.2,
+   "also": [
+    "Esperanto Herald"
+   ]
+  },
+  {
+   "label": "Het Financieele Dagblad",
+   "qid": "Q689171",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Het Vrije Volk",
+   "qid": "Q1482505",
+   "fame": 0.2,
+   "also": [
+    "Vrije Volk"
+   ]
+  },
+  {
+   "label": "Heti Válasz",
+   "qid": "Q529930",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hetq Online",
+   "qid": "Q5748001",
+   "fame": 0.2,
+   "also": [
+    "Hetq"
+   ]
+  },
+  {
+   "label": "Hind Samachar",
+   "qid": "Q5765865",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hindustan Dainik",
+   "qid": "Q5766803",
+   "fame": 0.2,
+   "also": [
+    "Hindustan"
+   ]
+  },
+  {
+   "label": "Hiwwe wie Driwwe",
+   "qid": "Q574474",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Holos Ukrayiny",
+   "qid": "Q4142154",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Honolulu Star-Advertiser",
+   "qid": "Q941351",
+   "fame": 0.2,
+   "also": [
+    "Honolulu Advertiser",
+    "The Honolulu Advertiser"
+   ]
+  },
+  {
+   "label": "Hospodářské noviny",
+   "qid": "Q623157",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Housaper",
+   "qid": "Q4992538",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hoy",
+   "qid": "Q3141644",
+   "fame": 0.2,
+   "also": [
+    "Diario Hoy",
+    "Hoy.es"
+   ]
+  },
+  {
+   "label": "Hrvatska riječ",
+   "qid": "Q743551",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hunchak",
+   "qid": "Q4140822",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "I Avgi",
+   "qid": "Q1655152",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "İkdam",
+   "qid": "Q6064230",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Il Gazzettino",
+   "qid": "Q902507",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "India Abroad",
+   "qid": "Q1948494",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Indonesia Raya",
+   "qid": "Q2746911",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Infa-Kurjer",
+   "qid": "Q6028743",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "International Times",
+   "qid": "Q1765961",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Iran",
+   "qid": "Q10859757",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Irān-e now",
+   "qid": "Q5933575",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ishig",
+   "qid": "Q55700253",
+   "fame": 0.2,
+   "also": [
+    "Yšyq",
+    "Ishiq"
+   ]
+  },
+  {
+   "label": "Islamic Republican",
+   "qid": "Q3809848",
+   "fame": 0.2,
+   "also": [
+    "Islamic Republic",
+    "Jomhouri Eslami",
+    "Jomhouri-e Eslami"
+   ]
+  },
+  {
+   "label": "Iveria",
+   "qid": "Q4197894",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jaam-e Jam",
+   "qid": "Q532925",
+   "fame": 0.2,
+   "also": [
+    "Jam-e Jam"
+   ]
+  },
+  {
+   "label": "Jakarta Globe",
+   "qid": "Q367157",
+   "fame": 0.2,
+   "also": [
+    "The Jakarta Globe"
+   ]
+  },
+  {
+   "label": "Janasadharan",
+   "qid": "Q3806981",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Janmabhumi",
+   "qid": "Q2801701",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jawa Pos Group",
+   "qid": "Q7355586",
+   "fame": 0.2,
+   "also": [
+    "Jawa Pos"
+   ]
+  },
+  {
+   "label": "Jewish Morning Journal",
+   "qid": "Q6189884",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jornal de Angola",
+   "qid": "Q1704026",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jornal do Commercio",
+   "qid": "Q3183945",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Joson Inmingun",
+   "qid": "Q11517810",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Journal de Genève",
+   "qid": "Q501154",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Journal des Dames",
+   "qid": "Q39207212",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jungle World",
+   "qid": "Q315829",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "JydskeVestkysten",
+   "qid": "Q1714734",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kaleva",
+   "qid": "Q3192167",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kannada Prabha",
+   "qid": "Q2363826",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kansan Lehti",
+   "qid": "Q18576344",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Karjalan Sanomat",
+   "qid": "Q2010714",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kaukasische Post",
+   "qid": "Q12840864",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kauppalehti",
+   "qid": "Q6378858",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kazakhstanskaya Pravda",
+   "qid": "Q310742",
+   "fame": 0.2,
+   "also": [
+    "Kazakhstan Pravda",
+    "Pravda Kazakhstan",
+    "Pravda Qazaqstan",
+    "Qazaqstan Pravda"
+   ]
+  },
+  {
+   "label": "Keijō Nippō",
+   "qid": "Q4251052",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kerala Kaumudi",
+   "qid": "Q2846588",
+   "fame": 0.2,
+   "also": [
+    "Kerala Kaumudi Daily"
+   ]
+  },
+  {
+   "label": "Keskipohjanmaa",
+   "qid": "Q3080775",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Khabar Lahariya",
+   "qid": "Q12422046",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Khabrain",
+   "qid": "Q6398798",
+   "fame": 0.2,
+   "also": [
+    "Daily Khabrain"
+   ]
+  },
+  {
+   "label": "Khao Sod",
+   "qid": "Q4923039",
+   "fame": 0.2,
+   "also": [
+    "Khao Sod English"
+   ]
+  },
+  {
+   "label": "Kievskaia starina",
+   "qid": "Q4220180",
+   "fame": 0.2,
+   "also": [
+    "Ukraine",
+    "Ukraina",
+    "Kievskaya starina",
+    "Kyivan Antiquity",
+    "Kyivan Past"
+   ]
+  },
+  {
+   "label": "Kıbrıs Postası",
+   "qid": "Q6041985",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kol HaAm",
+   "qid": "Q2917137",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kore Ilbo",
+   "qid": "Q841169",
+   "fame": 0.2,
+   "also": [
+    "Koryo Ilbo",
+    "Lenin's Banner",
+    "Lenin Kichi",
+    "Sonbong"
+   ]
+  },
+  {
+   "label": "Korea Economic Daily",
+   "qid": "Q626241",
+   "fame": 0.2,
+   "also": [
+    "The Korea Economic Daily",
+    "Hankyung",
+    "Han'guk Kyŏngje Sinmunsa",
+    "Hankyung.com",
+    "TeenAsia"
+   ]
+  },
+  {
+   "label": "Kosmo!",
+   "qid": "Q2850542",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kozma Minin",
+   "qid": "Q2656503",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kristeligt Dagblad",
+   "qid": "Q1433145",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Krytyka Polityczna",
+   "qid": "Q655104",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kurier Litewski",
+   "qid": "Q13027919",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kurier Wileński",
+   "qid": "Q1793105",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kurir",
+   "qid": "Q1284918",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kvinnheringen",
+   "qid": "Q1427703",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kwong Wah Yit Poh",
+   "qid": "Q2192552",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kyemon",
+   "qid": "Q11317862",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kyrgyz tuusu",
+   "qid": "Q9009040",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kyunghyang Shinmun",
+   "qid": "Q497170",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kyym",
+   "qid": "Q1983882",
+   "fame": 0.2,
+   "also": [
+    "Spark"
+   ]
+  },
+  {
+   "label": "L'Action Française",
+   "qid": "Q496011",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "L'Alsace",
+   "qid": "Q1398234",
+   "fame": 0.2,
+   "also": [
+    "L'Alsace-Le Pays"
+   ]
+  },
+  {
+   "label": "L'Avenir",
+   "qid": "Q2491106",
+   "fame": 0.2,
+   "also": [
+    "L'Avenir du Luxembourg"
+   ]
+  },
+  {
+   "label": "L'Écho de Paris",
+   "qid": "Q3205139",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "L'Eco di Bergamo",
+   "qid": "Q3817993",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "L'Indépendance belge",
+   "qid": "Q25381777",
+   "fame": 0.2,
+   "also": [
+    "L'Indépendant"
+   ]
+  },
+  {
+   "label": "L'Indépendant",
+   "qid": "Q2269524",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "La Bougie du Sapeur",
+   "qid": "Q3083378",
+   "fame": 0.2,
+   "also": [
+    "Bougie du sapeur"
+   ]
+  },
+  {
+   "label": "La Capital",
+   "qid": "Q4810370",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "La difesa della razza",
+   "qid": "Q1799261",
+   "fame": 0.2,
+   "also": [
+    "Difesa della razza",
+    "In Defense of Race",
+    "The Defense of the Race"
+   ]
+  },
+  {
+   "label": "La Domenica del Corriere",
+   "qid": "Q3820820",
+   "fame": 0.2,
+   "also": [
+    "Domenica del Corriere"
+   ]
+  },
+  {
+   "label": "La Epoca",
+   "qid": "Q3625214",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "La Française",
+   "qid": "Q48754768",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "La Fronde",
+   "qid": "Q3209254",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "La Libre Parole",
+   "qid": "Q3210026",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "La Nouvelle République du Centre-Ouest",
+   "qid": "Q3211144",
+   "fame": 0.2,
+   "also": [
+    "La Nouvelle République",
+    "La NR",
+    "NRCO"
+   ]
+  },
+  {
+   "label": "Lá Nua",
+   "qid": "Q1860245",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "La Nueva España",
+   "qid": "Q2227240",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "La Nuova Sardegna",
+   "qid": "Q635392",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "La Opinión",
+   "qid": "Q666651",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "La Petite Gironde",
+   "qid": "Q3211528",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "La Región",
+   "qid": "Q2841026",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "La República",
+   "qid": "Q1330217",
+   "fame": 0.2,
+   "also": [
+    "larepublica.pe"
+   ]
+  },
+  {
+   "label": "La Segunda",
+   "qid": "Q1751826",
+   "fame": 0.2,
+   "also": [
+    "Diario La Segunda",
+    "lasegunda.com"
+   ]
+  },
+  {
+   "label": "La Solidaridad",
+   "qid": "Q3549869",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "La Vérité",
+   "qid": "Q3213967",
+   "fame": 0.2,
+   "also": [
+    "The Truth"
+   ]
+  },
+  {
+   "label": "La Vie Ouvrière",
+   "qid": "Q3211149",
+   "fame": 0.2,
+   "also": [
+    "La Nouvelle Vie Ouvrière"
+   ]
+  },
+  {
+   "label": "LaMerhav",
+   "qid": "Q2897577",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Land og Folk",
+   "qid": "Q3351755",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Länsi-Suomi",
+   "qid": "Q3374398",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lapin Kansa",
+   "qid": "Q3353533",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Las Vegas Review-Journal",
+   "qid": "Q3632498",
+   "fame": 0.2,
+   "also": [
+    "reviewjournal.com",
+    "Review Journal Local",
+    "The Las Vegas Review-Journal"
+   ]
+  },
+  {
+   "label": "Le Canadien",
+   "qid": "Q2743644",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Le Matin",
+   "qid": "Q3224404",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Le Peuple",
+   "qid": "Q565089",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Le Populaire",
+   "qid": "Q3225790",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Le Quotidien",
+   "qid": "Q2311467",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Le Rénovateur",
+   "qid": "Q2422683",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Leeuwarder Courant",
+   "qid": "Q1517039",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Leidsch Dagblad",
+   "qid": "Q1650488",
+   "fame": 0.2,
+   "also": [
+    "N.V. Leidsch Dagblad"
+   ]
+  },
+  {
+   "label": "Leipziger Volkszeitung",
+   "qid": "Q283347",
+   "fame": 0.2,
+   "also": [
+    "LVZ"
+   ]
+  },
+  {
+   "label": "Lenins Weg",
+   "qid": "Q4042764",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Les Inrockuptibles",
+   "qid": "Q2758142",
+   "fame": 0.2,
+   "also": [
+    "Inrocks",
+    "Inrockuptibles",
+    "Les Inrocks",
+    "lesinrocks.com"
+   ]
+  },
+  {
+   "label": "Les Nouvelles littéraires",
+   "qid": "Q2361734",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Letopis",
+   "qid": "Q4260247",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lëtzebuerger Journal",
+   "qid": "Q355432",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lianhe Zaobao",
+   "qid": "Q3273611",
+   "fame": 0.2,
+   "also": [
+    "zaobao.com"
+   ]
+  },
+  {
+   "label": "Libertatea",
+   "qid": "Q6541479",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Liberty",
+   "qid": "Q3098886",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lietuvos aidas",
+   "qid": "Q64552",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lietuvos žinios",
+   "qid": "Q181327",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Loksatta",
+   "qid": "Q3627557",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lucifer the Lightbearer",
+   "qid": "Q547294",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Maaleht",
+   "qid": "Q1477887",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Madhyamam Daily",
+   "qid": "Q4119691",
+   "fame": 0.2,
+   "also": [
+    "Madhyamam"
+   ]
+  },
+  {
+   "label": "Maeil Sinbo",
+   "qid": "Q4309793",
+   "fame": 0.2,
+   "also": [
+    "Daily News",
+    "Maeil shinbo",
+    "Mainichi shinpō"
+   ]
+  },
+  {
+   "label": "Magyar Hírlap",
+   "qid": "Q898393",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Maharashtra Times",
+   "qid": "Q6733367",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Makedonia",
+   "qid": "Q1633183",
+   "fame": 0.2,
+   "also": [
+    "Macedonia"
+   ]
+  },
+  {
+   "label": "Malai Malar",
+   "qid": "Q2075033",
+   "fame": 0.2,
+   "also": [
+    "Maalai Malar"
+   ]
+  },
+  {
+   "label": "Malaya",
+   "qid": "Q6741553",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Malaysiakini",
+   "qid": "Q4918709",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Manawatu Standard",
+   "qid": "Q6747138",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mandarin Daily News",
+   "qid": "Q1888861",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Manila Standard",
+   "qid": "Q12810713",
+   "fame": 0.2,
+   "also": [
+    "Manila standard today"
+   ]
+  },
+  {
+   "label": "Marmara",
+   "qid": "Q2607282",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mathrubhumi",
+   "qid": "Q734491",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Media Indonesia",
+   "qid": "Q83737",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mercurius Hungaricus",
+   "qid": "Q1176014",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Merkuriusz Polski Ordynaryjny",
+   "qid": "Q1138117",
+   "fame": 0.2,
+   "also": [
+    "Merkuriusz Polski",
+    "Merkuryusz Polski",
+    "Merkuryusz Polski Ordynaryiny"
+   ]
+  },
+  {
+   "label": "Mersey Beat",
+   "qid": "Q388889",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Miami New Times",
+   "qid": "Q6827370",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Milenio",
+   "qid": "Q2273191",
+   "fame": 0.2,
+   "also": [
+    "Milenio Diario",
+    "Milenio Diario Jalisco",
+    "milenio.com"
+   ]
+  },
+  {
+   "label": "Millî Gazete",
+   "qid": "Q328388",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Milwaukee Journal Sentinel",
+   "qid": "Q1765623",
+   "fame": 0.2,
+   "also": [
+    "Journal-Sentinel",
+    "jsonline.com",
+    "The Milwaukee Journal Sentinel"
+   ]
+  },
+  {
+   "label": "Mint",
+   "qid": "Q2271133",
+   "fame": 0.2,
+   "also": [
+    "livemint.com",
+    "Mint News"
+   ]
+  },
+  {
+   "label": "Moldova Suverană",
+   "qid": "Q3496085",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "MONU – magazine on urbanism",
+   "qid": "Q797508",
+   "fame": 0.2,
+   "also": [
+    "MONU"
+   ]
+  },
+  {
+   "label": "Morgenblatt für gebildete Stände",
+   "qid": "Q1113948",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Moskauer Deutsche Zeitung",
+   "qid": "Q283570",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Moustique",
+   "qid": "Q3326405",
+   "fame": 0.2,
+   "also": [
+    "Le Moustique"
+   ]
+  },
+  {
+   "label": "Mshak",
+   "qid": "Q6930144",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mumbai Mirror",
+   "qid": "Q6935314",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Munhwa Ilbo",
+   "qid": "Q624791",
+   "fame": 0.2,
+   "also": [
+    "Munhwa Ilbosa"
+   ]
+  },
+  {
+   "label": "Mużyckaja prauda",
+   "qid": "Q2340989",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Muzykalnaya Gazeta",
+   "qid": "Q4306611",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nanfang Daily",
+   "qid": "Q392819",
+   "fame": 0.2,
+   "also": [
+    "Nan fang ri bao",
+    "Southern daily"
+   ]
+  },
+  {
+   "label": "Nanyang Siang Pau",
+   "qid": "Q6964475",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Národní listy",
+   "qid": "Q2006306",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nasz Dziennik",
+   "qid": "Q2344102",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "National Herald",
+   "qid": "Q12436127",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "National Zeitung",
+   "qid": "Q315473",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nava Bharat",
+   "qid": "Q2106140",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Navajivan Trust",
+   "qid": "Q12435195",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Navajo Times",
+   "qid": "Q6981660",
+   "fame": 0.2,
+   "also": [
+    "Navajo Times Today"
+   ]
+  },
+  {
+   "label": "Navbharat Times",
+   "qid": "Q3595638",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Navjivan",
+   "qid": "Q56290218",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Neatkarīgā Rīta Avīze",
+   "qid": "Q4045103",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nederlands Dagblad",
+   "qid": "Q689481",
+   "fame": 0.2,
+   "also": [
+    "nd.nl"
+   ]
+  },
+  {
+   "label": "Negro World",
+   "qid": "Q3874273",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "New Age",
+   "qid": "Q16764706",
+   "fame": 0.2,
+   "also": [
+    "New Age BD"
+   ]
+  },
+  {
+   "label": "New Vision",
+   "qid": "Q520214",
+   "fame": 0.2,
+   "also": [
+    "Voice of Uganda",
+    "Uganda Argus",
+    "Uganda Times"
+   ]
+  },
+  {
+   "label": "New York Daily Mirror",
+   "qid": "Q13436639",
+   "fame": 0.2,
+   "also": [
+    "Mirror",
+    "Daily Mirror",
+    "New York Mirror"
+   ]
+  },
+  {
+   "label": "New York Press",
+   "qid": "Q31176",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "New York World-Telegram",
+   "qid": "Q7014854",
+   "fame": 0.2,
+   "also": [
+    "New York Telegram",
+    "New York World-Telegram & Sun",
+    "New York World-Telegram and Sun",
+    "The New York World-Telegram"
+   ]
+  },
+  {
+   "label": "Nieuwe Rotterdamsche Courant",
+   "qid": "Q1989439",
+   "fame": 0.2,
+   "also": [
+    "NRC"
+   ]
+  },
+  {
+   "label": "Nieuwsblad van het Noorden",
+   "qid": "Q2608324",
+   "fame": 0.2,
+   "also": [
+    "NvhN"
+   ]
+  },
+  {
+   "label": "Nikkei Asia",
+   "qid": "Q17216388",
+   "fame": 0.2,
+   "also": [
+    "Nikkei Asian Review"
+   ]
+  },
+  {
+   "label": "Niyamiya Barta",
+   "qid": "Q7042037",
+   "fame": 0.2,
+   "also": [
+    "Niyomiya Barta"
+   ]
+  },
+  {
+   "label": "No Cut News",
+   "qid": "Q7044078",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nordlys",
+   "qid": "Q1759286",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Northern Bee",
+   "qid": "Q3201373",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Novaya Zhizn",
+   "qid": "Q7064514",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Novy Vzglyad",
+   "qid": "Q2044030",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nowy Kurier Warszawski",
+   "qid": "Q10941714",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nya Åland",
+   "qid": "Q3781659",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Oakland Tribune",
+   "qid": "Q3234627",
+   "fame": 0.2,
+   "also": [
+    "The Oakland Tribune"
+   ]
+  },
+  {
+   "label": "off our backs",
+   "qid": "Q7078947",
+   "fame": 0.2,
+   "also": [
+    "oob"
+   ]
+  },
+  {
+   "label": "Official Gazette of the Republic of Tunisia",
+   "qid": "Q3186971",
+   "fame": 0.2,
+   "also": [
+    "al-Rāʾid al-Tūnisī"
+   ]
+  },
+  {
+   "label": "Okaz",
+   "qid": "Q4119335",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Oma Mua",
+   "qid": "Q4045739",
+   "fame": 0.2,
+   "also": [
+    "Own Land"
+   ]
+  },
+  {
+   "label": "Orlando Sentinel",
+   "qid": "Q746424",
+   "fame": 0.2,
+   "also": [
+    "orlandosentinel.com",
+    "The Orlando Sentinel",
+    "Orlando Sentinel Star",
+    "The Orlando Sentinel Star"
+   ]
+  },
+  {
+   "label": "Österbottens Tidning",
+   "qid": "Q3365092",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ottawa Citizen",
+   "qid": "Q3357762",
+   "fame": 0.2,
+   "also": [
+    "Packet",
+    "The Ottawa Citizen"
+   ]
+  },
+  {
+   "label": "Oyggjatíðindi",
+   "qid": "Q3358151",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Özgür Gündem",
+   "qid": "Q307838",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Päivälehti",
+   "qid": "Q3375634",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pakistan Observer",
+   "qid": "Q3694852",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pall Mall Gazette",
+   "qid": "Q1628706",
+   "fame": 0.2,
+   "also": [
+    "The Pall Mall Gazette"
+   ]
+  },
+  {
+   "label": "Panorama",
+   "qid": "Q582714",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Parole der Woche",
+   "qid": "Q95935612",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pasaxon",
+   "qid": "Q16841170",
+   "fame": 0.2,
+   "also": [
+    "Pasason",
+    "Passasson",
+    "Paxaxon"
+   ]
+  },
+  {
+   "label": "Passauer Neue Presse",
+   "qid": "Q896978",
+   "fame": 0.2,
+   "also": [
+    "PNP"
+   ]
+  },
+  {
+   "label": "Pennsylvania Gazette",
+   "qid": "Q3106560",
+   "fame": 0.2,
+   "also": [
+    "The Pennsylvania Gazette"
+   ]
+  },
+  {
+   "label": "People's World",
+   "qid": "Q2069661",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Perfil",
+   "qid": "Q2070637",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pesti Napló",
+   "qid": "Q947009",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Philadelphia Daily News",
+   "qid": "Q3378849",
+   "fame": 0.2,
+   "also": [
+    "The Philadelphia Daily News"
+   ]
+  },
+  {
+   "label": "Phileleftheros",
+   "qid": "Q3378896",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Phoenix New Times",
+   "qid": "Q7186938",
+   "fame": 0.2,
+   "also": [
+    "New Times"
+   ]
+  },
+  {
+   "label": "Picture Post",
+   "qid": "Q511131",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pikiran Rakyat",
+   "qid": "Q2727002",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pittsburgh Tribune-Review",
+   "qid": "Q3044967",
+   "fame": 0.2,
+   "also": [
+    "TribLive"
+   ]
+  },
+  {
+   "label": "Pobjeda",
+   "qid": "Q664427",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Politis",
+   "qid": "Q511952",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Portland Tribune",
+   "qid": "Q430266",
+   "fame": 0.2,
+   "also": [
+    "The Portland Tribune"
+   ]
+  },
+  {
+   "label": "Prabhat Khabar",
+   "qid": "Q7237234",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Prager Presse",
+   "qid": "Q2107508",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Prager Zeitung",
+   "qid": "Q444477",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Prajasakti",
+   "qid": "Q6389421",
+   "fame": 0.2,
+   "also": [
+    "Prajashakti"
+   ]
+  },
+  {
+   "label": "Prajavani",
+   "qid": "Q2876395",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pravda Vostoka",
+   "qid": "Q4375827",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Premium Times",
+   "qid": "Q16943304",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Preußische Allgemeine Zeitung",
+   "qid": "Q1425047",
+   "fame": 0.2,
+   "also": [
+    "OPB",
+    "PAZ",
+    "Das Ostpreussenblatt",
+    "Ostpreußenblatt"
+   ]
+  },
+  {
+   "label": "Publick Occurrences Both Forreign and Domestick",
+   "qid": "Q6625649",
+   "fame": 0.2,
+   "also": [
+    "Public Occurrences Both Foreign and Domestic"
+   ]
+  },
+  {
+   "label": "Pudhari",
+   "qid": "Q4967993",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Punjab Kesari",
+   "qid": "Q3630070",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rabotnichesko Delo",
+   "qid": "Q7278803",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Racing Post",
+   "qid": "Q848935",
+   "fame": 0.2,
+   "also": [
+    "racingpost.com"
+   ]
+  },
+  {
+   "label": "Rafu Shimpo",
+   "qid": "Q7282746",
+   "fame": 0.2,
+   "also": [
+    "The Rafu Shimpo",
+    "Los Angeles Japanese Daily News"
+   ]
+  },
+  {
+   "label": "Rahva Hääl",
+   "qid": "Q2038151",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "RBK daily",
+   "qid": "Q4386462",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rech",
+   "qid": "Q1419486",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Record",
+   "qid": "Q639033",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Reference News",
+   "qid": "Q7307107",
+   "fame": 0.2,
+   "also": [
+    "Cankao Xiaoxi"
+   ]
+  },
+  {
+   "label": "Reformatorisch Dagblad",
+   "qid": "Q1639174",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Republika",
+   "qid": "Q2278575",
+   "fame": 0.2,
+   "also": [
+    "Republika Online",
+    "Republika.co.id"
+   ]
+  },
+  {
+   "label": "Resalat",
+   "qid": "Q7314924",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Respublika",
+   "qid": "Q3716789",
+   "fame": 0.2,
+   "also": [
+    "Golos Respubliki"
+   ]
+  },
+  {
+   "label": "Revalsche Post-Zeitung",
+   "qid": "Q6510475",
+   "fame": 0.2,
+   "also": [
+    "Revalische Post-Zeitung"
+   ]
+  },
+  {
+   "label": "Rigasche Rundschau",
+   "qid": "Q31840090",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rimjin-gang",
+   "qid": "Q836901",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rodongja Sinmun",
+   "qid": "Q16948651",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Roll Call",
+   "qid": "Q7360873",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "România liberă",
+   "qid": "Q7363426",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rue89",
+   "qid": "Q964945",
+   "fame": 0.2,
+   "also": [
+    "rue89.com"
+   ]
+  },
+  {
+   "label": "Russkiye Vedomosti",
+   "qid": "Q2028759",
+   "fame": 0.2,
+   "also": [
+    "Russkie Vedomosti",
+    "Russkija vědomosti"
+   ]
+  },
+  {
+   "label": "Saamana",
+   "qid": "Q3224731",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ságat",
+   "qid": "Q1049200",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sakala",
+   "qid": "Q206072",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sakshi",
+   "qid": "Q1754493",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Salzburger Nachrichten",
+   "qid": "Q2215996",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sambad Prabhakar",
+   "qid": "Q7408978",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Samyukta Karnataka",
+   "qid": "Q7413183",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "San Antonio Express-News",
+   "qid": "Q3946733",
+   "fame": 0.2,
+   "also": [
+    "MySA",
+    "Express News",
+    "Express and News",
+    "San Antonio Express",
+    "San Antonio Express and News",
+    "San Antonio Express San Antonio News"
+   ]
+  },
+  {
+   "label": "San Francisco Call",
+   "qid": "Q7413963",
+   "fame": 0.2,
+   "also": [
+    "The San Francisco Call",
+    "The Call",
+    "Call",
+    "Daily Call",
+    "Morning Call",
+    "Sunday Call",
+    "The Morning Call",
+    "Daily Morning Call",
+    "San Francisco Daily Call",
+    "San Francisco Daily Morning Call",
+    "San Francisco Morning Call"
+   ]
+  },
+  {
+   "label": "San Francisco Oracle",
+   "qid": "Q1433394",
+   "fame": 0.2,
+   "also": [
+    "The Oracle of the City of San Francisco"
+   ]
+  },
+  {
+   "label": "Santa Cruz Sentinel",
+   "qid": "Q7419429",
+   "fame": 0.2,
+   "also": [
+    "Sentinel",
+    "Santa Cruz County Sentinel",
+    "The Santa Cruz Sentinel"
+   ]
+  },
+  {
+   "label": "Saudi Gazette",
+   "qid": "Q1325956",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Schlesische Zeitung",
+   "qid": "Q828098",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Seoul Shinmun",
+   "qid": "Q482744",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Serxwebûn",
+   "qid": "Q2274409",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "SF Weekly",
+   "qid": "Q3481254",
+   "fame": 0.2,
+   "also": [
+    "San Francisco Weekly"
+   ]
+  },
+  {
+   "label": "Shanghai Daily",
+   "qid": "Q2037854",
+   "fame": 0.2,
+   "also": [
+    "SHINE",
+    "Shine.cn"
+   ]
+  },
+  {
+   "label": "Shargh",
+   "qid": "Q4819149",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Shekulli",
+   "qid": "Q569851",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Shin Min Daily News",
+   "qid": "Q11082830",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sichuan Daily",
+   "qid": "Q2646127",
+   "fame": 0.2,
+   "also": [
+    "scdaily.cn"
+   ]
+  },
+  {
+   "label": "Sin Po",
+   "qid": "Q7437543",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sirp",
+   "qid": "Q1518541",
+   "fame": 0.2,
+   "also": [
+    "Reede",
+    "Kultuurileht",
+    "Sirp ja Vasar"
+   ]
+  },
+  {
+   "label": "Slobodna Bosna",
+   "qid": "Q3486752",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Slovo Kyrgyzstana",
+   "qid": "Q4423860",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "South Florida Sun Sentinel",
+   "qid": "Q7638122",
+   "fame": 0.2,
+   "also": [
+    "Sun Sentinel"
+   ]
+  },
+  {
+   "label": "South Wales Echo",
+   "qid": "Q2075898",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Southern Metropolis Daily",
+   "qid": "Q833881",
+   "fame": 0.2,
+   "also": [
+    "Nanfang Dushi Bao"
+   ]
+  },
+  {
+   "label": "Southern Weekly",
+   "qid": "Q2681127",
+   "fame": 0.2,
+   "also": [
+    "Nanfang Zhoumo"
+   ]
+  },
+  {
+   "label": "Sovet Ermenistani",
+   "qid": "Q4426226",
+   "fame": 0.2,
+   "also": [
+    "Sovet Ermənistanı"
+   ]
+  },
+  {
+   "label": "Sovetskaya Belorussiya – Belarus' Segodnya",
+   "qid": "Q2991208",
+   "fame": 0.2,
+   "also": [
+    "Belarus Today",
+    "Belarus Segodnya"
+   ]
+  },
+  {
+   "label": "Spits",
+   "qid": "Q696731",
+   "fame": 0.2,
+   "also": [
+    "Sp!ts"
+   ]
+  },
+  {
+   "label": "Sportske novosti",
+   "qid": "Q2750982",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sportski žurnal",
+   "qid": "Q3494184",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Spurk",
+   "qid": "Q47964",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "St. Louis Post-Dispatch",
+   "qid": "Q3495288",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Stabroek News",
+   "qid": "Q7595795",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Standart",
+   "qid": "Q951167",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Star Gazetesi",
+   "qid": "Q6082816",
+   "fame": 0.2,
+   "also": [
+    "Star"
+   ]
+  },
+  {
+   "label": "Stochos",
+   "qid": "Q3555433",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Stockholms Dagblad",
+   "qid": "Q4567827",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sudharma",
+   "qid": "Q3809207",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sunday Mirror",
+   "qid": "Q7639452",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sunday Observer",
+   "qid": "Q2413156",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Super Express",
+   "qid": "Q494902",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Svoboda",
+   "qid": "Q7652765",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sydney Gazette",
+   "qid": "Q2041168",
+   "fame": 0.2,
+   "also": [
+    "The Sydney Gazette",
+    "Sydney Gazette and New South Wales Advertiser",
+    "The Sydney Gazette and New South Wales Advertiser"
+   ]
+  },
+  {
+   "label": "Szabad Nép",
+   "qid": "Q1293121",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Szabadság",
+   "qid": "Q649485",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Takvim-i Vekayi",
+   "qid": "Q4450146",
+   "fame": 0.2,
+   "also": [
+    "Teḳvīm-i Veḳāʿi"
+   ]
+  },
+  {
+   "label": "Tamil Murasu",
+   "qid": "Q3536298",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Taraf",
+   "qid": "Q847922",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Täräqqi",
+   "qid": "Q125314833",
+   "fame": 0.2,
+   "also": [
+    "Taraggi"
+   ]
+  },
+  {
+   "label": "Tarun Bharat",
+   "qid": "Q7686924",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tasvîr-i Efkâr",
+   "qid": "Q6058687",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Telangana Today",
+   "qid": "Q28174199",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Telefon Hírmondó",
+   "qid": "Q7696161",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Télérama",
+   "qid": "Q377629",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "TelQuel",
+   "qid": "Q1115018",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Thai Post",
+   "qid": "Q3107913",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Assam Tribune",
+   "qid": "Q3985721",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Bangkok Recorder",
+   "qid": "Q1129319",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Bismarck Tribune",
+   "qid": "Q2904709",
+   "fame": 0.2,
+   "also": [
+    "Bismarck Semi-weekly Tribune",
+    "Bismarck Tribune",
+    "Bismarck Weekly Tribune",
+    "Bismark Tribune",
+    "The Bismark Tribune"
+   ]
+  },
+  {
+   "label": "The Blade",
+   "qid": "Q442288",
+   "fame": 0.2,
+   "also": [
+    "Toledo Blade",
+    "The Toledo Blade"
+   ]
+  },
+  {
+   "label": "The Boston News-Letter",
+   "qid": "Q7719459",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Boston Post",
+   "qid": "Q7719460",
+   "fame": 0.2,
+   "also": [
+    "Boston Post"
+   ]
+  },
+  {
+   "label": "The Brunei Times",
+   "qid": "Q7720424",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Capital",
+   "qid": "Q3520197",
+   "fame": 0.2,
+   "also": [
+    "Capital",
+    "Capital Gazette"
+   ]
+  },
+  {
+   "label": "The Charlotte Observer",
+   "qid": "Q5486310",
+   "fame": 0.2,
+   "also": [
+    "Charlotte Observer"
+   ]
+  },
+  {
+   "label": "The Chenab Times",
+   "qid": "Q112168954",
+   "fame": 0.2,
+   "also": [
+    "Chenab Times"
+   ]
+  },
+  {
+   "label": "The Chicago Defender",
+   "qid": "Q961669",
+   "fame": 0.2,
+   "also": [
+    "Chicago defender"
+   ]
+  },
+  {
+   "label": "The Chronicle of Higher Education",
+   "qid": "Q73617",
+   "fame": 0.2,
+   "also": [
+    "Chronicle of Higher Education",
+    "chronicle.com"
+   ]
+  },
+  {
+   "label": "The Citizen",
+   "qid": "Q2750599",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Daily",
+   "qid": "Q41288",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Daily Graphic",
+   "qid": "Q4175261",
+   "fame": 0.2,
+   "also": [
+    "Daily Graphic",
+    "Graphic",
+    "The Graphic",
+    "The Daily Graphic: An Illustrated Evening Newspaper"
+   ]
+  },
+  {
+   "label": "The Daily Ittefaq",
+   "qid": "Q7728667",
+   "fame": 0.2,
+   "also": [
+    "Ittefaq"
+   ]
+  },
+  {
+   "label": "The Daily News",
+   "qid": "Q2605160",
+   "fame": 0.2,
+   "also": [
+    "Daily News"
+   ]
+  },
+  {
+   "label": "The Daily Star",
+   "qid": "Q494370",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Daily Talk",
+   "qid": "Q1627949",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Des Moines Register",
+   "qid": "Q3917258",
+   "fame": 0.2,
+   "also": [
+    "Register",
+    "The Register",
+    "Des Moines Register"
+   ]
+  },
+  {
+   "label": "The Detroit News",
+   "qid": "Q2703792",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Express Tribune",
+   "qid": "Q7732865",
+   "fame": 0.2,
+   "also": [
+    "tribune.com.pk",
+    "Express Tribune"
+   ]
+  },
+  {
+   "label": "The Film Daily",
+   "qid": "Q5448930",
+   "fame": 0.2,
+   "also": [
+    "Film Daily"
+   ]
+  },
+  {
+   "label": "The Free Press Journal",
+   "qid": "Q7735208",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Ghanaian Times",
+   "qid": "Q5555470",
+   "fame": 0.2,
+   "also": [
+    "Ghanaian Times",
+    "Guinea Press Limited"
+   ]
+  },
+  {
+   "label": "The Gleaner",
+   "qid": "Q26162515",
+   "fame": 0.2,
+   "also": [
+    "Jamaica Gleaner",
+    "The Daily Gleaner",
+    "The Gleaner index",
+    "The Jamaica Gleaner"
+   ]
+  },
+  {
+   "label": "The Hans India",
+   "qid": "Q5170037",
+   "fame": 0.2,
+   "also": [
+    "Hans India"
+   ]
+  },
+  {
+   "label": "The Himalayan Times",
+   "qid": "Q7739720",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Hitavada",
+   "qid": "Q2426836",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Honolulu Advertiser",
+   "qid": "Q7740166",
+   "fame": 0.2,
+   "also": [
+    "Honolulu Advertiser",
+    "honoluluadvertiser.com"
+   ]
+  },
+  {
+   "label": "The Illustrated Police News",
+   "qid": "Q1319452",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Irish News",
+   "qid": "Q1771070",
+   "fame": 0.2,
+   "also": [
+    "irish News"
+   ]
+  },
+  {
+   "label": "The Jewish Press",
+   "qid": "Q3521433",
+   "fame": 0.2,
+   "also": [
+    "JewishPress.com"
+   ]
+  },
+  {
+   "label": "The Jordan Times",
+   "qid": "Q7743519",
+   "fame": 0.2,
+   "also": [
+    "Jordan Times"
+   ]
+  },
+  {
+   "label": "The Korea Daily News",
+   "qid": "Q11441828",
+   "fame": 0.2,
+   "also": [
+    "Daehan Maeil Sinbo",
+    "Daehan Maeil Shinbo"
+   ]
+  },
+  {
+   "label": "The Kukmin Daily",
+   "qid": "Q10855572",
+   "fame": 0.2,
+   "also": [
+    "Kukmin Ilbo"
+   ]
+  },
+  {
+   "label": "The Lily",
+   "qid": "Q16934388",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Malay Mail",
+   "qid": "Q4808924",
+   "fame": 0.2,
+   "also": [
+    "Malay Mail"
+   ]
+  },
+  {
+   "label": "The Michigan Daily",
+   "qid": "Q7751250",
+   "fame": 0.2,
+   "also": [
+    "Michigan Daily"
+   ]
+  },
+  {
+   "label": "The Milli Gazette",
+   "qid": "Q15062993",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Morning Chronicle",
+   "qid": "Q2381797",
+   "fame": 0.2,
+   "also": [
+    "Morning Chronicle"
+   ]
+  },
+  {
+   "label": "The Moscow News",
+   "qid": "Q16269733",
+   "fame": 0.2,
+   "also": [
+    "Moscow news"
+   ]
+  },
+  {
+   "label": "The Munsif Daily",
+   "qid": "Q2031591",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Myanmar Times",
+   "qid": "Q3521950",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Namibian",
+   "qid": "Q493500",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Nation",
+   "qid": "Q7753130",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Nelson Mail",
+   "qid": "Q7753393",
+   "fame": 0.2,
+   "also": [
+    "The Nelson Evening Mail",
+    "Nelson Evening Mail",
+    "Nelson Mail"
+   ]
+  },
+  {
+   "label": "The New Arab",
+   "qid": "Q20389499",
+   "fame": 0.2,
+   "also": [
+    "Al-Araby Al-Jadeed"
+   ]
+  },
+  {
+   "label": "The New Orleans Bee",
+   "qid": "Q388946",
+   "fame": 0.2,
+   "also": [
+    "L'Abeille de la Nouvelle-Orléans",
+    "La Abeja de Nueva Orleans"
+   ]
+  },
+  {
+   "label": "The New Voice of Ukraine",
+   "qid": "Q20093911",
+   "fame": 0.2,
+   "also": [
+    "NV.ua",
+    "New Voice of Ukraine"
+   ]
+  },
+  {
+   "label": "The News Letter",
+   "qid": "Q7753920",
+   "fame": 0.2,
+   "also": [
+    "News Letter",
+    "Belfast News Letter"
+   ]
+  },
+  {
+   "label": "The Northern Echo",
+   "qid": "Q661005",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Oklahoman",
+   "qid": "Q7754787",
+   "fame": 0.2,
+   "also": [
+    "Daily Oklahoman",
+    "Oklahoman",
+    "The Daily Oklahoman"
+   ]
+  },
+  {
+   "label": "The Orange County Register",
+   "qid": "Q2413231",
+   "fame": 0.2,
+   "also": [
+    "Orange County Register",
+    "OC Register"
+   ]
+  },
+  {
+   "label": "The Palm Beach Post",
+   "qid": "Q3522163",
+   "fame": 0.2,
+   "also": [
+    "Palm Beach Post"
+   ]
+  },
+  {
+   "label": "The Pioneer",
+   "qid": "Q1285256",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Pittsburgh Press",
+   "qid": "Q7199377",
+   "fame": 0.2,
+   "also": [
+    "Pittsburgh Press"
+   ]
+  },
+  {
+   "label": "The Post",
+   "qid": "Q917338",
+   "fame": 0.2,
+   "also": [
+    "Dominion Post",
+    "The Dominion Post"
+   ]
+  },
+  {
+   "label": "The Press Democrat",
+   "qid": "Q3988817",
+   "fame": 0.2,
+   "also": [
+    "Press Democrat",
+    "Santa Rosa Press Democrat"
+   ]
+  },
+  {
+   "label": "The Providence Journal",
+   "qid": "Q3522349",
+   "fame": 0.2,
+   "also": [
+    "ProJo",
+    "Providence Journal",
+    "Providence Journal-Bulletin"
+   ]
+  },
+  {
+   "label": "The Punch",
+   "qid": "Q7758737",
+   "fame": 0.2,
+   "also": [
+    "Punch",
+    "Punch newspaper",
+    "Punch Nigeria"
+   ]
+  },
+  {
+   "label": "The Red Bulletin",
+   "qid": "Q3562637",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Republican",
+   "qid": "Q2276678",
+   "fame": 0.2,
+   "also": [
+    "Springfield Republican"
+   ]
+  },
+  {
+   "label": "The Revolution",
+   "qid": "Q7760570",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Sentinel",
+   "qid": "Q2543939",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Shillong Times",
+   "qid": "Q3989252",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Siasat Daily",
+   "qid": "Q2066673",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Slovak Spectator",
+   "qid": "Q1237701",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Southland Times",
+   "qid": "Q2414358",
+   "fame": 0.2,
+   "also": [
+    "Southland Times"
+   ]
+  },
+  {
+   "label": "The Stage",
+   "qid": "Q5235126",
+   "fame": 0.2,
+   "also": [
+    "Stage and television today",
+    "The stage and television today",
+    "The Stage Media Company Limited"
+   ]
+  },
+  {
+   "label": "The Standard",
+   "qid": "Q7766218",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Star-Ledger",
+   "qid": "Q1024250",
+   "fame": 0.2,
+   "also": [
+    "Newark Star Ledger",
+    "Newark Star-Eagle",
+    "Star-Ledger",
+    "Sunday Star-Ledger"
+   ]
+  },
+  {
+   "label": "The Suffragist",
+   "qid": "Q17013573",
+   "fame": 0.2,
+   "also": [
+    "Suffragist"
+   ]
+  },
+  {
+   "label": "The Sunday People",
+   "qid": "Q1253247",
+   "fame": 0.2,
+   "also": [
+    "Sunday People"
+   ]
+  },
+  {
+   "label": "The Sunday Times",
+   "qid": "Q3610555",
+   "fame": 0.2,
+   "also": [
+    "Sunday Times"
+   ]
+  },
+  {
+   "label": "The Tennessean",
+   "qid": "Q4808006",
+   "fame": 0.2,
+   "also": [
+    "Tennessean",
+    "Nashville Tennessean",
+    "The Nashville Tennessean"
+   ]
+  },
+  {
+   "label": "The Warsaw Voice",
+   "qid": "Q3307981",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The Washington Star",
+   "qid": "Q3489540",
+   "fame": 0.2,
+   "also": [
+    "Evening Star",
+    "The Daily Evening Star",
+    "The Evening Star",
+    "Washington Evening Star",
+    "Washington Star",
+    "Washington Star-News"
+   ]
+  },
+  {
+   "label": "The Yorkshire Post",
+   "qid": "Q1571030",
+   "fame": 0.2,
+   "also": [
+    "Yorkshire Post and Leeds Intelligencer",
+    "Yorkshire post"
+   ]
+  },
+  {
+   "label": "Theekkathir",
+   "qid": "Q2438659",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "This Day",
+   "qid": "Q527612",
+   "fame": 0.2,
+   "also": [
+    "This Day Live"
+   ]
+  },
+  {
+   "label": "Tibet Times",
+   "qid": "Q2327059",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tidens Krav",
+   "qid": "Q1757849",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tidningar Utgifne af et Sällskap i Åbo",
+   "qid": "Q11897456",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Times of Swaziland",
+   "qid": "Q11897338",
+   "fame": 0.2,
+   "also": [
+    "Times of Eswatini",
+    "The Times of Swazieland",
+    "times.co.sz"
+   ]
+  },
+  {
+   "label": "Tipao",
+   "qid": "Q3125185",
+   "fame": 0.2,
+   "also": [
+    "Dibao"
+   ]
+  },
+  {
+   "label": "Tokyo Nichi Nichi Shimbun",
+   "qid": "Q3530534",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tokyo Sports",
+   "qid": "Q8152375",
+   "fame": 0.2,
+   "also": [
+    "To-Spo"
+   ]
+  },
+  {
+   "label": "Tongnip Sinmun",
+   "qid": "Q625217",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Trinidad and Tobago Guardian",
+   "qid": "Q7842420",
+   "fame": 0.2,
+   "also": [
+    "Trinidad Guardian"
+   ]
+  },
+  {
+   "label": "Trud",
+   "qid": "Q1232958",
+   "fame": 0.2,
+   "also": [
+    "Dneven Trud"
+   ]
+  },
+  {
+   "label": "Trybuna",
+   "qid": "Q1428213",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tulsa World",
+   "qid": "Q7852377",
+   "fame": 0.2,
+   "also": [
+    "The Tulsa World",
+    "Tulsa Daily World",
+    "Tulsaworld.com"
+   ]
+  },
+  {
+   "label": "Tuổi Trẻ",
+   "qid": "Q7853413",
+   "fame": 0.2,
+   "also": [
+    "tuoitrenews.vn"
+   ]
+  },
+  {
+   "label": "Turkestanskie Vedomosti",
+   "qid": "Q4466073",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Türkiye",
+   "qid": "Q327799",
+   "fame": 0.2,
+   "also": [
+    "Turkey Newspaper"
+   ]
+  },
+  {
+   "label": "Turun Sanomat",
+   "qid": "Q2616090",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tygodnik Powszechny",
+   "qid": "Q1427385",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Työmies",
+   "qid": "Q24331592",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Udayavani",
+   "qid": "Q2251783",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Udmurt dunne",
+   "qid": "Q2671087",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Új Szó",
+   "qid": "Q752105",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Última Hora",
+   "qid": "Q6175024",
+   "fame": 0.2,
+   "also": [
+    "Diario Última Hora"
+   ]
+  },
+  {
+   "label": "Uma Leht",
+   "qid": "Q3738586",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Under the Radar",
+   "qid": "Q7883372",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "United Daily News",
+   "qid": "Q697153",
+   "fame": 0.2,
+   "also": [
+    "UDN"
+   ]
+  },
+  {
+   "label": "Unsere Zeit",
+   "qid": "Q896716",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Upsala Nya Tidning",
+   "qid": "Q3291931",
+   "fame": 0.2,
+   "also": [
+    "unt.se"
+   ]
+  },
+  {
+   "label": "Utrinski vesnik",
+   "qid": "Q1817522",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Uusi Suomi",
+   "qid": "Q3129935",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Valeurs Actuelles",
+   "qid": "Q3553781",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vanguard",
+   "qid": "Q7914812",
+   "fame": 0.2,
+   "also": [
+    "Vanguard news",
+    "Vanguard & b. Lagos",
+    "Vanguard Newspaper"
+   ]
+  },
+  {
+   "label": "Varden",
+   "qid": "Q7915546",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vårt Land",
+   "qid": "Q1757831",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vasabladet",
+   "qid": "Q3354076",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Västra Nyland",
+   "qid": "Q3365107",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vatan",
+   "qid": "Q763682",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Večer",
+   "qid": "Q3070871",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vecherniy Bishkek",
+   "qid": "Q75761",
+   "fame": 0.2,
+   "also": [
+    "Vecherniy Frunze"
+   ]
+  },
+  {
+   "label": "Vecherniy Brest",
+   "qid": "Q15476991",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vechernyaya Moskva",
+   "qid": "Q2614109",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vesti",
+   "qid": "Q1987800",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vientiane Mai",
+   "qid": "Q7928383",
+   "fame": 0.2,
+   "also": [
+    "Viengchanmay"
+   ]
+  },
+  {
+   "label": "Vijaya Karnataka",
+   "qid": "Q2464129",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vijesti",
+   "qid": "Q2035698",
+   "fame": 0.2,
+   "also": [
+    "vijesti.me"
+   ]
+  },
+  {
+   "label": "Vitebskiy Kurier",
+   "qid": "Q33207",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Volksblad",
+   "qid": "Q1476852",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vosges Matin",
+   "qid": "Q3563155",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Votes for Women",
+   "qid": "Q47969338",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Voxeurop",
+   "qid": "Q108884001",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Wayuunaiki",
+   "qid": "Q76313",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Western Mail",
+   "qid": "Q2670849",
+   "fame": 0.2,
+   "also": [
+    "The Western Mail",
+    "Wales on Sunday"
+   ]
+  },
+  {
+   "label": "Woman's Journal",
+   "qid": "Q4171142",
+   "fame": 0.2,
+   "also": [
+    "The Woman's Journal"
+   ]
+  },
+  {
+   "label": "Woxx",
+   "qid": "Q312106",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "WOZ Die Wochenzeitung",
+   "qid": "Q684726",
+   "fame": 0.2,
+   "also": [
+    "WOZ"
+   ]
+  },
+  {
+   "label": "Xurzærin",
+   "qid": "Q1551619",
+   "fame": 0.2,
+   "also": [
+    "Khurzarin"
+   ]
+  },
+  {
+   "label": "Y Cymro",
+   "qid": "Q3398806",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Yañı Dünya",
+   "qid": "Q4538346",
+   "fame": 0.2,
+   "also": [
+    "Lenin Bayrağı",
+    "Yani dyunya",
+    "Yañı Dünya gazetası",
+    "Yañı Dünya gazeti"
+   ]
+  },
+  {
+   "label": "Yeni Akit",
+   "qid": "Q6077569",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Yoldash",
+   "qid": "Q863244",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Yorkshire Evening Post",
+   "qid": "Q2545362",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Youm7",
+   "qid": "Q4119059",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zadarski list",
+   "qid": "Q6930032",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zakon i Pravosudiye",
+   "qid": "Q8065135",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zeitung vum Lëtzebuerger Vollek",
+   "qid": "Q187006",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zerkalo Nedeli",
+   "qid": "Q1972759",
+   "fame": 0.2,
+   "also": [
+    "Dzerkalo Tyzhnia",
+    "zn.ua"
+   ]
+  },
+  {
+   "label": "Życie Warszawy",
+   "qid": "Q393231",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "VentureBeat",
+   "qid": "Q4052640",
+   "fame": 0.198,
+   "also": [
+    "venturebeat.com"
+   ]
+  },
+  {
+   "label": "Bangkok Post",
+   "qid": "Q806491",
+   "fame": 0.197,
+   "also": [
+    "The Bangkok post"
+   ]
+  },
+  {
+   "label": "The Graphic",
+   "qid": "Q3521113",
+   "fame": 0.197,
+   "also": [
+    "Graphic",
+    "Graphic: An Illustrated Weekly Newspaper",
+    "The Graphic: An Illustrated Weekly Newspaper"
+   ]
+  },
+  {
+   "label": "L'Express",
+   "qid": "Q770596",
+   "fame": 0.195,
+   "also": [
+    "Express",
+    "lexpress.fr"
+   ]
+  },
+  {
+   "label": "La Dépêche du Midi",
+   "qid": "Q742587",
+   "fame": 0.193,
+   "also": [
+    "ladepeche.fr"
+   ]
+  },
+  {
+   "label": "Times of Malta",
+   "qid": "Q1735231",
+   "fame": 0.192,
+   "also": [
+    "timesofmalta.com",
+    "The Sunday Times of Malta",
+    "The Times of Malta"
+   ]
+  },
+  {
+   "label": "Korea JoongAng Daily",
+   "qid": "Q489520",
+   "fame": 0.191,
+   "also": []
+  },
+  {
+   "label": "Al-Hayat",
+   "qid": "Q285738",
+   "fame": 0.189,
+   "also": []
+  },
+  {
+   "label": "Blick",
+   "qid": "Q269300",
+   "fame": 0.189,
+   "also": [
+    "blick.ch"
+   ]
+  },
+  {
+   "label": "Yeni Şafak",
+   "qid": "Q1815813",
+   "fame": 0.189,
+   "also": []
+  },
+  {
+   "label": "Marianne",
+   "qid": "Q3291285",
+   "fame": 0.187,
+   "also": []
+  },
+  {
+   "label": "EITB",
+   "qid": "Q13422541",
+   "fame": 0.186,
+   "also": [
+    "Basque Radio Television",
+    "EITB Basque Radio Television",
+    "EITB EUSKAL IRRATI TELEBISTA",
+    "EITB Radio Televisión Pública Vasca",
+    "eitb.eus"
+   ]
+  },
+  {
+   "label": "De Standaard",
+   "qid": "Q1180325",
+   "fame": 0.185,
+   "also": [
+    "standaard.be"
+   ]
+  },
+  {
+   "label": "Oslobođenje",
+   "qid": "Q1261176",
+   "fame": 0.184,
+   "also": [
+    "Oslobodjenje",
+    "oslobodjenje.ba"
+   ]
+  },
+  {
+   "label": "Ta Kung Pao",
+   "qid": "Q666349",
+   "fame": 0.182,
+   "also": [
+    "L'Impartial",
+    "Da Gong Bao",
+    "takungpao.com"
+   ]
+  },
+  {
+   "label": "Taipei Times",
+   "qid": "Q714427",
+   "fame": 0.182,
+   "also": []
+  },
+  {
+   "label": "Göteborgs-Posten",
+   "qid": "Q1559719",
+   "fame": 0.18,
+   "also": [
+    "gp.se"
+   ]
+  },
+  {
+   "label": "Bombay Samachar",
+   "qid": "Q2768808",
+   "fame": 0.176,
+   "also": []
+  },
+  {
+   "label": "La Jornada",
+   "qid": "Q2496821",
+   "fame": 0.173,
+   "also": [
+    "jornada.com.mx"
+   ]
+  },
+  {
+   "label": "Borba",
+   "qid": "Q893337",
+   "fame": 0.17,
+   "also": []
+  },
+  {
+   "label": "Jutarnji list",
+   "qid": "Q1278377",
+   "fame": 0.168,
+   "also": []
+  },
+  {
+   "label": "Hankook Ilbo",
+   "qid": "Q489308",
+   "fame": 0.167,
+   "also": [
+    "Han'guk Ilbosa"
+   ]
+  },
+  {
+   "label": "Le Charivari",
+   "qid": "Q1809792",
+   "fame": 0.166,
+   "also": []
+  },
+  {
+   "label": "Milliyet",
+   "qid": "Q568226",
+   "fame": 0.166,
+   "also": []
+  },
+  {
+   "label": "Rheinische Zeitung",
+   "qid": "Q519542",
+   "fame": 0.165,
+   "also": []
+  },
+  {
+   "label": "Blic",
+   "qid": "Q883987",
+   "fame": 0.164,
+   "also": [
+    "blic.rs"
+   ]
+  },
+  {
+   "label": "Ekstra Bladet",
+   "qid": "Q1226253",
+   "fame": 0.164,
+   "also": []
+  },
+  {
+   "label": "Sabah",
+   "qid": "Q574575",
+   "fame": 0.162,
+   "also": []
+  },
+  {
+   "label": "Večernje novosti",
+   "qid": "Q1192921",
+   "fame": 0.159,
+   "also": []
+  },
+  {
+   "label": "Autosport",
+   "qid": "Q776358",
+   "fame": 0.157,
+   "also": []
+  },
+  {
+   "label": "Népszabadság",
+   "qid": "Q898833",
+   "fame": 0.156,
+   "also": []
+  },
+  {
+   "label": "The Province",
+   "qid": "Q132110",
+   "fame": 0.156,
+   "also": [
+    "Province",
+    "Sunday Province"
+   ]
+  },
+  {
+   "label": "Expresso",
+   "qid": "Q1384864",
+   "fame": 0.154,
+   "also": []
+  },
+  {
+   "label": "Hamshahri",
+   "qid": "Q1574046",
+   "fame": 0.152,
+   "also": []
+  },
+  {
+   "label": "Excélsior",
+   "qid": "Q3347987",
+   "fame": 0.15,
+   "also": []
+  },
+  {
+   "label": "Le Nouvel Obs",
+   "qid": "Q1044328",
+   "fame": 0.15,
+   "also": [
+    "L'Obs",
+    "Le Nouvel observateur",
+    "Nouvel Obs"
+   ]
+  },
+  {
+   "label": "Washington Blade",
+   "qid": "Q742091",
+   "fame": 0.15,
+   "also": [
+    "The Washington Blade"
+   ]
+  },
+  {
+   "label": "Le Journal du Dimanche",
+   "qid": "Q501461",
+   "fame": 0.149,
+   "also": [
+    "JDD",
+    "Journal du Dimanche"
+   ]
+  },
+  {
+   "label": "Iltalehti",
+   "qid": "Q2421561",
+   "fame": 0.147,
+   "also": []
+  },
+  {
+   "label": "Limonka",
+   "qid": "Q2494397",
+   "fame": 0.146,
+   "also": []
+  },
+  {
+   "label": "Rudé právo",
+   "qid": "Q1752739",
+   "fame": 0.146,
+   "also": []
+  },
+  {
+   "label": "Večernji list",
+   "qid": "Q241622",
+   "fame": 0.146,
+   "also": []
+  },
+  {
+   "label": "Frankfurter Rundschau",
+   "qid": "Q326068",
+   "fame": 0.143,
+   "also": [
+    "fr.de"
+   ]
+  },
+  {
+   "label": "Russia Beyond",
+   "qid": "Q4048611",
+   "fame": 0.143,
+   "also": [
+    "rbth.com",
+    "Russia Beyond the Headlines"
+   ]
+  },
+  {
+   "label": "Berliner Tageblatt",
+   "qid": "Q455014",
+   "fame": 0.141,
+   "also": []
+  },
+  {
+   "label": "Nezavisimaya Gazeta",
+   "qid": "Q946366",
+   "fame": 0.141,
+   "also": []
+  },
+  {
+   "label": "Courrier international",
+   "qid": "Q1137712",
+   "fame": 0.133,
+   "also": [
+    "Courrier inter"
+   ]
+  },
+  {
+   "label": "Shen Bao",
+   "qid": "Q919710",
+   "fame": 0.131,
+   "also": [
+    "Shun Pao"
+   ]
+  },
+  {
+   "label": "Zëri i Popullit",
+   "qid": "Q26400",
+   "fame": 0.129,
+   "also": []
+  },
+  {
+   "label": "El Periódico",
+   "qid": "Q35638",
+   "fame": 0.128,
+   "also": [
+    "El Periódico de Cataluña",
+    "El Periódico de Catalunya",
+    "elperiodico.cat",
+    "elperiodico.com"
+   ]
+  },
+  {
+   "label": "Slobodna Dalmacija",
+   "qid": "Q1281282",
+   "fame": 0.126,
+   "also": []
+  },
+  {
+   "label": "La Tribune",
+   "qid": "Q1799197",
+   "fame": 0.123,
+   "also": []
+  },
+  {
+   "label": "Kleine Zeitung",
+   "qid": "Q695301",
+   "fame": 0.121,
+   "also": []
+  },
+  {
+   "label": "Welt am Sonntag",
+   "qid": "Q194565",
+   "fame": 0.121,
+   "also": []
+  },
+  {
+   "label": "Zaman",
+   "qid": "Q145400",
+   "fame": 0.117,
+   "also": []
+  },
+  {
+   "label": "Sud-Ouest",
+   "qid": "Q2608774",
+   "fame": 0.116,
+   "also": [
+    "sudouest.fr"
+   ]
+  },
+  {
+   "label": "Trybuna Ludu",
+   "qid": "Q2166233",
+   "fame": 0.116,
+   "also": []
+  },
+  {
+   "label": "Hürriyet Daily News",
+   "qid": "Q1507755",
+   "fame": 0.115,
+   "also": [
+    "Turkish Daily News",
+    "Hürriyet Daily News and Economic Review"
+   ]
+  },
+  {
+   "label": "Le Petit Parisien",
+   "qid": "Q831299",
+   "fame": 0.115,
+   "also": []
+  },
+  {
+   "label": "Davar",
+   "qid": "Q2917796",
+   "fame": 0.109,
+   "also": []
+  },
+  {
+   "label": "Público",
+   "qid": "Q1835391",
+   "fame": 0.108,
+   "also": [
+    "Diario Público",
+    "publico.es"
+   ]
+  },
+  {
+   "label": "Heti Világgazdaság",
+   "qid": "Q545531",
+   "fame": 0.098,
+   "also": [
+    "HVG"
+   ]
+  },
+  {
+   "label": "Post- och Inrikes Tidningar",
+   "qid": "Q1756598",
+   "fame": 0.095,
+   "also": []
+  },
+  {
+   "label": "The Morning Post",
+   "qid": "Q1750567",
+   "fame": 0.091,
+   "also": [
+    "Morning Post"
+   ]
+  },
+  {
+   "label": "Koha Ditore",
+   "qid": "Q1778459",
+   "fame": 0.089,
+   "also": []
+  },
+  {
+   "label": "Le Nouvelliste",
+   "qid": "Q747947",
+   "fame": 0.087,
+   "also": []
+  },
+  {
+   "label": "Novoye Vremya",
+   "qid": "Q2598596",
+   "fame": 0.085,
+   "also": []
+  },
+  {
+   "label": "Hufvudstadsbladet",
+   "qid": "Q613979",
+   "fame": 0.083,
+   "also": [
+    "HBL",
+    "Husis",
+    "Höblan",
+    "Huvudstadsbladet"
+   ]
+  },
+  {
+   "label": "Le Temps",
+   "qid": "Q639137",
+   "fame": 0.081,
+   "also": []
+  },
+  {
+   "label": "The St. Petersburg Times",
+   "qid": "Q1334426",
+   "fame": 0.079,
+   "also": []
+  },
+  {
+   "label": "Novi list",
+   "qid": "Q478374",
+   "fame": 0.076,
+   "also": []
+  },
+  {
+   "label": "Delo",
+   "qid": "Q3487776",
+   "fame": 0.074,
+   "also": []
+  },
+  {
+   "label": "Diena",
+   "qid": "Q924512",
+   "fame": 0.063,
+   "also": []
+  },
+  {
+   "label": "The Cambodia Daily",
+   "qid": "Q3057820",
+   "fame": 0.063,
+   "also": [
+    "Cambodia Daily"
+   ]
+  },
+  {
+   "label": "Aamulehti",
+   "qid": "Q301000",
+   "fame": 0.06,
+   "also": []
+  },
+  {
+   "label": "Lietuvos rytas",
+   "qid": "Q1824397",
+   "fame": 0.058,
+   "also": []
+  },
+  {
+   "label": "El Diario Vasco",
+   "qid": "Q913303",
+   "fame": 0.053,
+   "also": []
+  },
+  {
+   "label": "Wen Hui Bao",
+   "qid": "Q1855448",
+   "fame": 0.049,
+   "also": [
+    "Wenhui Daily"
+   ]
+  },
+  {
+   "label": "Õhtuleht",
+   "qid": "Q293572",
+   "fame": 0.048,
+   "also": [
+    "SL Ohtuleht"
+   ]
+  },
+  {
+   "label": "Eesti Ekspress",
+   "qid": "Q1295548",
+   "fame": 0.046,
+   "also": []
+  },
+  {
+   "label": "Aušra",
+   "qid": "Q790028",
+   "fame": 0.042,
+   "also": []
+  },
+  {
+   "label": "Pakistan Times",
+   "qid": "Q7125723",
+   "fame": 0.037,
+   "also": [
+    "The Pakistan Times"
+   ]
+  },
+  {
+   "label": "Pajhwok Afghan News",
+   "qid": "Q3082692",
+   "fame": 0.035,
+   "also": []
+  },
+  {
+   "label": "The Baltic Times",
+   "qid": "Q1806290",
+   "fame": 0.028,
+   "also": []
+  },
+  {
+   "label": "Literaturnaya gazeta",
+   "qid": "Q1865276",
+   "fame": 0.018,
+   "also": []
+  },
+  {
+   "label": "Berria",
+   "qid": "Q827097",
+   "fame": 0.014,
+   "also": []
+  },
+  {
+   "label": "Nova Makedonija",
+   "qid": "Q2002826",
+   "fame": 0.006,
+   "also": []
+  },
+  {
+   "label": "Akinchi",
+   "qid": "Q2656631",
+   "fame": 0,
+   "also": [
+    "Ekinci",
+    "Əkinçi",
+    "Ekinchi"
+   ]
+  },
+  {
+   "label": "Alem-i Nisvan",
+   "qid": "Q25680777",
+   "fame": 0,
+   "also": [
+    "Women's World"
+   ]
+  },
+  {
+   "label": "Azat Artsakh",
+   "qid": "Q2532507",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Diario Frontera",
+   "qid": "Q721837",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Kodima",
+   "qid": "Q985193",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Pester Lloyd",
+   "qid": "Q922150",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Terciman",
+   "qid": "Q11319434",
+   "fame": 0,
+   "also": [
+    "Perevodchik",
+    "Tercüman",
+    "Terdzhiman",
+    "Tarjumān"
+   ]
+  },
+  {
+   "label": "Västerbottens Folkblad",
+   "qid": "Q7944384",
+   "fame": 0,
+   "also": []
+  }
+ ]
+}

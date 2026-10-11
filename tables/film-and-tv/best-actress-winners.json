@@ -1,0 +1,860 @@
+{
+ "id": "table.film-and-tv.best-actress-winners",
+ "kind": "table",
+ "title": "Academy Award for Best Actress winners",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "the-oscars",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?year ?filmLabel WHERE { { SELECT ?item (MIN(?d) AS ?year) (SAMPLE(?w) AS ?work) (COUNT(DISTINCT ?w) AS ?nWorks) WHERE { { SELECT ?item (MIN(?d0) AS ?first) WHERE { ?item p:P166 ?s0 . ?s0 ps:P166 wd:Q103618 ; pq:P585 ?d0 . ?item wdt:P31 wd:Q5 . } GROUP BY ?item } ?item p:P166 ?st . ?st ps:P166 wd:Q103618 ; pq:P585 ?d . FILTER(?d = ?first) OPTIONAL { ?st pq:P1686 ?w } } GROUP BY ?item } hint:Prior hint:runFirst true . BIND(IF(?nWorks = 1, ?work, ?noFilm) AS ?film) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 134",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T00:20:38.580Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T00:20:38.580Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "first_win",
+   "label": "First win",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "context",
+   "label": "Won for (film)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "actress",
+  "many": "Best Actress winners",
+  "itemText": "{label} — {context}",
+  "wildcard": "person",
+  "columns": {
+   "first_win": {
+    "role": "date",
+    "sort": "from the earliest first win to the most recent",
+    "shot": "In what year did {label} win the Oscar for Best Actress, for {context}?"
+   },
+   "context": {
+    "role": "code",
+    "reverse": "Who won the Best Actress Oscar for {value}?",
+    "statement": "{label} won the Best Actress Oscar for {value} in {first_win}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Sandra Bullock",
+   "qid": "Q40791",
+   "fame": 0.876,
+   "first_win": 2010,
+   "context": "The Blind Side",
+   "description": "American actress and film producer",
+   "hook": "played an undercover cop racing to stop a bomb aboard a speeding city bus in a hit action thriller",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Nicole Kidman",
+   "qid": "Q37459",
+   "fame": 0.843,
+   "first_win": 2003,
+   "context": "The Hours",
+   "description": "Australian-American actress, producer, and model (born 1967)",
+   "hook": "played a doomed cabaret singer swept into a lavish, tragic romance in a jukebox musical set in Paris",
+   "known": 0.95,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Sally Field",
+   "qid": "Q187033",
+   "fame": 0.796,
+   "first_win": 1980,
+   "context": "Norma Rae",
+   "description": "American actress",
+   "hook": "played the ex-wife of a father who disguises himself as a nanny to stay close to his kids in a hit comedy",
+   "known": 0.8,
+   "kind": "established"
+  },
+  {
+   "label": "Jane Fonda",
+   "qid": "Q41142",
+   "fame": 0.79,
+   "first_win": 1972,
+   "context": "Klute",
+   "description": "American actress and activist",
+   "hook": "released a bestselling series of home workout videos that helped popularize exercise tapes",
+   "known": 0.95,
+   "kind": "established"
+  },
+  {
+   "label": "Susan Sarandon",
+   "qid": "Q133050",
+   "fame": 0.786,
+   "first_win": 1996,
+   "context": "Dead Man Walking",
+   "description": "American actress and activist",
+   "hook": "played one of two friends who flee across the country after a shooting, in a landmark road movie",
+   "known": 0.8,
+   "kind": "established"
+  },
+  {
+   "label": "Natalie Portman",
+   "qid": "Q37876",
+   "fame": 0.782,
+   "first_win": 2011,
+   "context": "Black Swan",
+   "description": "Israeli-American actress (born 1981)",
+   "hook": "played a doomed queen and senator in a beloved space-opera prequel trilogy",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Jennifer Lawrence",
+   "qid": "Q189490",
+   "fame": 0.779,
+   "first_win": 2013,
+   "context": "Silver Linings Playbook",
+   "description": "American actress and producer (born 1990)",
+   "hook": "played a bow-wielding heroine who leads a rebellion in a hit dystopian film franchise",
+   "known": 0.95,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Julia Roberts",
+   "qid": "Q40523",
+   "fame": 0.764,
+   "first_win": 2001,
+   "context": "Erin Brockovich",
+   "description": "American actress (born 1967)",
+   "hook": "played a charming escort swept into a whirlwind romance with a wealthy businessman in a hit rom-com",
+   "known": 0.95,
+   "kind": "modern"
+  },
+  {
+   "label": "Cher",
+   "qid": "Q12003",
+   "fame": 0.757,
+   "first_win": 1988,
+   "context": "Moonstruck",
+   "description": "American musician, singer, actress and television personality (born 1946)",
+   "hook": "topped the charts with a robotic, vocoder-heavy pop hit about moving on from heartbreak",
+   "known": 0.8,
+   "kind": "established"
+  },
+  {
+   "label": "Shirley MacLaine",
+   "qid": "Q95026",
+   "fame": 0.756,
+   "first_win": 1984,
+   "context": "Terms of Endearment",
+   "description": "American actress",
+   "hook": "played an elevator operator caught in a love triangle with her married boss in a classic romantic drama",
+   "known": 0.8,
+   "kind": "established"
+  },
+  {
+   "label": "Charlize Theron",
+   "qid": "Q80046",
+   "fame": 0.75,
+   "first_win": 2004,
+   "context": "Monster",
+   "description": "South African and American actress (born 1975)",
+   "hook": "played a one-armed rebel leading a convoy of escaped captives across a post-apocalyptic wasteland",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Helen Mirren",
+   "qid": "Q349391",
+   "fame": 0.75,
+   "first_win": 2007,
+   "context": "The Queen",
+   "description": "British actress (born 1945)",
+   "hook": "played a former black-ops assassin dragged back into action alongside a team of retired spies",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Reese Witherspoon",
+   "qid": "Q44063",
+   "fame": 0.743,
+   "first_win": 2006,
+   "context": "Walk the Line",
+   "description": "American actress (born 1976)",
+   "hook": "played a sorority girl who proves her smarts at a top law school in a hit comedy",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Elizabeth Taylor",
+   "qid": "Q34851",
+   "fame": 0.742,
+   "first_win": 1961,
+   "context": "BUtterfield 8",
+   "description": "British-American actress (1932–2011)",
+   "hook": "played an ancient Egyptian queen in one of the most expensive epics ever filmed",
+   "known": 0.95,
+   "kind": "golden"
+  },
+  {
+   "label": "Diane Keaton",
+   "qid": "Q102642",
+   "fame": 0.738,
+   "first_win": 1978,
+   "context": "Annie Hall",
+   "description": "American actress and film director (1946–2025)",
+   "hook": "played the outsider girlfriend, later wife, of the youngest son in a landmark crime-family saga",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "Gwyneth Paltrow",
+   "qid": "Q34460",
+   "fame": 0.738,
+   "first_win": 1999,
+   "context": "Shakespeare in Love",
+   "description": "American actress, entrepreneur, writer and singer (born 1972)",
+   "hook": "played the sharp-witted love interest and eventual CEO of a billionaire tech-armored superhero",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Jessica Lange",
+   "qid": "Q173585",
+   "fame": 0.737,
+   "first_win": 1995,
+   "context": "Blue Sky",
+   "description": "American actress",
+   "hook": "played a rotating cast of unsettling characters across several seasons of a horror anthology series",
+   "known": 0.6,
+   "kind": "established"
+  },
+  {
+   "label": "Emma Thompson",
+   "qid": "Q168724",
+   "fame": 0.732,
+   "first_win": 1993,
+   "context": "Howards End",
+   "description": "English actress and screenwriter (born 1959)",
+   "hook": "played a betrayed wife discovering her husband's affair in an ensemble holiday romance film",
+   "known": 0.8,
+   "kind": "established"
+  },
+  {
+   "label": "Julie Andrews",
+   "qid": "Q161819",
+   "fame": 0.731,
+   "first_win": 1965,
+   "context": "Mary Poppins",
+   "description": "British actress, singer and author (born 1935)",
+   "hook": "played a free-spirited governess who wins over a widower's children while working in the Alps",
+   "known": 0.95,
+   "kind": "golden"
+  },
+  {
+   "label": "Audrey Hepburn",
+   "qid": "Q42786",
+   "fame": 0.73,
+   "first_win": 1954,
+   "context": "Roman Holiday",
+   "description": "British actress (1929–1993)",
+   "hook": "played a stylish New York socialite gazing into a jewelry store window in an iconic early scene",
+   "known": 0.95,
+   "kind": "golden"
+  },
+  {
+   "label": "Jessica Chastain",
+   "qid": "Q229313",
+   "fame": 0.73,
+   "first_win": 2022,
+   "context": "The Eyes of Tammy Faye",
+   "description": "American actress and producer (born 1977)",
+   "hook": "played the grown daughter of an astronaut racing against time as he journeys through a wormhole",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Barbra Streisand",
+   "qid": "Q4636",
+   "fame": 0.718,
+   "first_win": 1969,
+   "context": "Funny Girl",
+   "description": "American singer and actress (born 1942)",
+   "hook": "played a rising singer who falls for a fading rock star in a classic show-business romance",
+   "known": 0.95,
+   "kind": "classic"
+  },
+  {
+   "label": "Grace Kelly",
+   "qid": "Q3925",
+   "fame": 0.718,
+   "first_win": 1955,
+   "context": "The Country Girl",
+   "description": "American actress and Princess consort of Monaco (1929–1982)",
+   "hook": "played the elegant girlfriend who helps investigate a suspected murder seen through a neighbor's window",
+   "known": 0.95,
+   "kind": "golden"
+  },
+  {
+   "label": "Jodie Foster",
+   "qid": "Q41351",
+   "fame": 0.717,
+   "first_win": 1989,
+   "context": "The Accused",
+   "description": "American actress and filmmaker (born 1962)",
+   "hook": "played a scientist who makes contact with an alien intelligence and travels through a wormhole",
+   "known": 0.95,
+   "kind": "established"
+  },
+  {
+   "label": "Cate Blanchett",
+   "qid": "Q80966",
+   "fame": 0.702,
+   "first_win": 2014,
+   "context": "Blue Jasmine",
+   "description": "Australian actor and producer (born 1969)",
+   "hook": "played an ancient elf queen who gives a fellowship guidance and gifts before a perilous quest",
+   "known": 0.95,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Olivia Colman",
+   "qid": "Q7088045",
+   "fame": 0.701,
+   "first_win": 2019,
+   "context": "The Favourite",
+   "description": "British actress",
+   "hook": "played a modern monarch across a pivotal decade of her reign in an acclaimed royal drama series",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Halle Berry",
+   "qid": "Q1033016",
+   "fame": 0.699,
+   "first_win": 2002,
+   "context": "Monster's Ball",
+   "description": "American actress (born 1966)",
+   "hook": "played a weather-controlling mutant with a shock of white hair in a hit superhero franchise",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Brie Larson",
+   "qid": "Q29328",
+   "fame": 0.697,
+   "first_win": 2016,
+   "context": "Room",
+   "description": "American actress, singer and filmmaker (born 1989)",
+   "hook": "played a cosmic-powered superhero who joins an intergalactic team of defenders",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Renée Zellweger",
+   "qid": "Q122614",
+   "fame": 0.697,
+   "first_win": 2020,
+   "context": "Judy",
+   "description": "American actress (born 1969)",
+   "hook": "played a British singleton who chronicles her chaotic love life in a diary in a hit rom-com",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Liza Minnelli",
+   "qid": "Q14441",
+   "fame": 0.696,
+   "first_win": 1973,
+   "context": "Cabaret",
+   "description": "American actress and singer (born 1946)",
+   "hook": "starred opposite a jazz saxophonist chasing fame together in a gritty postwar New York musical drama",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "Julianne Moore",
+   "qid": "Q80405",
+   "fame": 0.689,
+   "first_win": 2015,
+   "context": "Still Alice",
+   "description": "British-American actress and author (born 1960)",
+   "hook": "played a drug kingpin plotting a global scheme from a jungle hideout in a stylish spy-action film",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Sophia Loren",
+   "qid": "Q43252",
+   "fame": 0.688,
+   "first_win": 1962,
+   "context": "Two Women",
+   "description": "Italian actress (born 1934)",
+   "hook": "played a fiery widow pursued by two feuding elderly rivals in a hit romantic-comedy sequel",
+   "known": 0.8,
+   "kind": "golden"
+  },
+  {
+   "label": "Jessie Buckley",
+   "qid": "Q6187642",
+   "fame": 0.686,
+   "first_win": 2026,
+   "context": "Hamnet",
+   "description": "Irish actress and singer (born 1989)",
+   "hook": "played a pregnant firefighter's wife facing the fallout of a nuclear disaster in an acclaimed miniseries",
+   "known": 0.4,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Katharine Hepburn",
+   "qid": "Q56016",
+   "fame": 0.686,
+   "first_win": 1934,
+   "context": "Morning Glory",
+   "description": "American actress (1907–2003)",
+   "hook": "played a scatterbrained heiress who ropes a mild-mannered paleontologist into chasing an escaped pet leopard",
+   "known": 0.95,
+   "kind": "golden"
+  },
+  {
+   "label": "Bette Davis",
+   "qid": "Q71206",
+   "fame": 0.679,
+   "first_win": 1936,
+   "context": "Dangerous",
+   "description": "American actress (1908–1989)",
+   "hook": "played an aging Broadway star wary of a scheming young fan out to steal her spotlight",
+   "known": 0.95,
+   "kind": "golden"
+  },
+  {
+   "label": "Anne Bancroft",
+   "qid": "Q183532",
+   "fame": 0.677,
+   "first_win": 1963,
+   "context": "The Miracle Worker",
+   "description": "American actress (1931–2005)",
+   "hook": "played an older woman who seduces a recent college graduate in a landmark satirical drama",
+   "known": 0.8,
+   "kind": "golden"
+  },
+  {
+   "label": "Frances McDormand",
+   "qid": "Q204299",
+   "fame": 0.672,
+   "first_win": 1997,
+   "context": "Fargo",
+   "description": "American actress",
+   "hook": "played a woman who takes to the road living out of a van after losing her job and home",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Ingrid Bergman",
+   "qid": "Q43247",
+   "fame": 0.67,
+   "first_win": 1945,
+   "context": "Gaslight",
+   "description": "Swedish actress (1915–1982)",
+   "hook": "played a woman torn between her husband and a former lover in a wartime nightclub romance",
+   "known": 0.8,
+   "kind": "golden"
+  },
+  {
+   "label": "Kathy Bates",
+   "qid": "Q544465",
+   "fame": 0.67,
+   "first_win": 1991,
+   "context": "Misery",
+   "description": "American film actress and director",
+   "hook": "played a wealthy, unsinkable socialite who survives a legendary ocean liner disaster",
+   "known": 0.8,
+   "kind": "established"
+  },
+  {
+   "label": "Ellen Burstyn",
+   "qid": "Q211144",
+   "fame": 0.665,
+   "first_win": 1975,
+   "context": "Alice Doesn't Live Here Anymore",
+   "description": "American actress",
+   "hook": "played the terrified mother of a possessed girl in one of horror's most famous films",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Hilary Swank",
+   "qid": "Q93187",
+   "fame": 0.664,
+   "first_win": 2000,
+   "context": "Boys Don't Cry",
+   "description": "American actress (born 1974)",
+   "hook": "played a determined boxer training for a shot at a professional title against long odds",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Sissy Spacek",
+   "qid": "Q190994",
+   "fame": 0.662,
+   "first_win": 1981,
+   "context": "Coal Miner's Daughter",
+   "description": "American actress",
+   "hook": "played a shy telekinetic teen humiliated at her prom in a horror classic",
+   "known": 0.6,
+   "kind": "established"
+  },
+  {
+   "label": "Michelle Yeoh",
+   "qid": "Q214289",
+   "fame": 0.659,
+   "first_win": 2023,
+   "context": "Everything Everywhere All at Once",
+   "description": "Malaysian actress (born 1962)",
+   "hook": "starred in gravity-defying sword fights across rooftops and bamboo forests in a landmark martial-arts epic",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Joanne Woodward",
+   "qid": "Q1111542",
+   "fame": 0.656,
+   "first_win": 1958,
+   "context": "The Three Faces of Eve",
+   "description": "American actress (born 1930)",
+   "hook": "was married to a Hollywood leading man for fifty years, one of film's most enduring pairings",
+   "known": 0.6,
+   "kind": "golden"
+  },
+  {
+   "label": "Vivien Leigh",
+   "qid": "Q129429",
+   "fame": 0.656,
+   "first_win": 1940,
+   "context": "Gone with the Wind",
+   "description": "British actress (1913–1967)",
+   "hook": "played a fragile, fading Southern belle who moves in with her sister in a landmark stage-to-screen drama",
+   "known": 0.8,
+   "kind": "golden"
+  },
+  {
+   "label": "Faye Dunaway",
+   "qid": "Q168721",
+   "fame": 0.654,
+   "first_win": 1977,
+   "context": "Network",
+   "description": "American actress",
+   "hook": "played a mysterious widow entangled in a private detective's investigation into a water-rights conspiracy",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Joan Crawford",
+   "qid": "Q40475",
+   "fame": 0.649,
+   "first_win": 1946,
+   "context": "Mildred Pierce",
+   "description": "American actress (1908–1977)",
+   "hook": "played a wheelchair-bound former child star locked in a bitter rivalry with her own sister",
+   "known": 0.6,
+   "kind": "golden"
+  },
+  {
+   "label": "Helen Hunt",
+   "qid": "Q170574",
+   "fame": 0.648,
+   "first_win": 1998,
+   "context": "As Good as It Gets",
+   "description": "American actress",
+   "hook": "played a storm chaser racing across the plains to get close to raging tornadoes",
+   "known": 0.6,
+   "kind": "modern"
+  },
+  {
+   "label": "Marion Cotillard",
+   "qid": "Q8927",
+   "fame": 0.643,
+   "first_win": 2008,
+   "context": "La Vie en Rose",
+   "description": "French actress and model (born 1975)",
+   "hook": "played a haunting figure from a dream architect's subconscious who threatens to derail his heists",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Holly Hunter",
+   "qid": "Q105660",
+   "fame": 0.639,
+   "first_win": 1994,
+   "context": "The Piano",
+   "description": "American actress (born 1958)",
+   "hook": "voiced a stretchy-limbed superhero mom holding her family together in an animated action-comedy",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "Olivia de Havilland",
+   "qid": "Q95068",
+   "fame": 0.634,
+   "first_win": 1947,
+   "context": "To Each His Own",
+   "description": "British actress (1916–2020)",
+   "hook": "played a gentle, devoted friend to a headstrong Southern belle in a sweeping historical epic",
+   "known": 0.6,
+   "kind": "golden"
+  },
+  {
+   "label": "Marlee Matlin",
+   "qid": "Q213287",
+   "fame": 0.597,
+   "first_win": 1987,
+   "context": "Children of a Lesser God",
+   "description": "American actress (born 1965)",
+   "hook": "played a recurring deaf character on a long-running political drama series set inside the White House",
+   "known": 0.4,
+   "kind": "established"
+  },
+  {
+   "label": "Julie Christie",
+   "qid": "Q181413",
+   "fame": 0.591,
+   "first_win": 1966,
+   "context": null,
+   "description": "British actress",
+   "hook": "played a nurse swept into a passionate wartime love affair with a poet in a sweeping epic romance",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Jane Wyman",
+   "qid": "Q95055",
+   "fame": 0.585,
+   "first_win": 1949,
+   "context": "Johnny Belinda",
+   "description": "American actress (1917–2007)",
+   "hook": "was once married to a future U.S. president long before he entered politics",
+   "known": 0.6,
+   "kind": "golden"
+  },
+  {
+   "label": "Jessica Tandy",
+   "qid": "Q182104",
+   "fame": 0.581,
+   "first_win": 1990,
+   "context": "Driving Miss Daisy",
+   "description": "British actress (1909–1994)",
+   "hook": "played an elderly woman recounting a decades-old friendship and a small town's secrets over tea",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Ginger Rogers",
+   "qid": "Q95089",
+   "fame": 0.579,
+   "first_win": 1941,
+   "context": "Kitty Foyle",
+   "description": "American actress and dancer (1911–1995)",
+   "hook": "co-starred in a string of glamorous Hollywood musicals as one half of a legendary on-screen duo",
+   "known": 0.8,
+   "kind": "golden"
+  },
+  {
+   "label": "Joan Fontaine",
+   "qid": "Q95076",
+   "fame": 0.578,
+   "first_win": 1942,
+   "context": "Suspicion",
+   "description": "British actress (1917–2013)",
+   "hook": "played a shy new bride haunted by the lingering memory of her husband's mysterious first wife",
+   "known": 0.6,
+   "kind": "golden"
+  },
+  {
+   "label": "Patricia Neal",
+   "qid": "Q191027",
+   "fame": 0.578,
+   "first_win": 1964,
+   "context": "Hud",
+   "description": "American stage and film actress (1926-2010)",
+   "hook": "played a housekeeper who befriends a peaceful alien visitor trying to warn mankind in a classic sci-fi film",
+   "known": 0.6,
+   "kind": "golden"
+  },
+  {
+   "label": "Loretta Young",
+   "qid": "Q253384",
+   "fame": 0.559,
+   "first_win": 1948,
+   "context": "The Farmer's Daughter",
+   "description": "American actress (1913–2000)",
+   "hook": "hosted her own weekly television anthology series after decades as a film star",
+   "known": 0.4,
+   "kind": "golden"
+  },
+  {
+   "label": "Louise Fletcher",
+   "qid": "Q182372",
+   "fame": 0.555,
+   "first_win": 1976,
+   "context": "One Flew Over the Cuckoo's Nest",
+   "description": "American actress (1934–2022)",
+   "hook": "played a scheming religious leader vying for power aboard a space station in a sci-fi TV series",
+   "known": 0.4,
+   "kind": "classic"
+  },
+  {
+   "label": "Mary Pickford",
+   "qid": "Q104109",
+   "fame": 0.552,
+   "first_win": 1930,
+   "context": "Coquette",
+   "description": "Canadian actress and producer (1892–1979)",
+   "hook": "was nicknamed America's Sweetheart and helped found a major Hollywood studio",
+   "known": 0.6,
+   "kind": "golden"
+  },
+  {
+   "label": "Helen Hayes",
+   "qid": "Q213302",
+   "fame": 0.537,
+   "first_win": 1932,
+   "context": "The Sin of Madelon Claudet",
+   "description": "American actress (1900–1993)",
+   "hook": "earned the nickname First Lady of American Theatre for her legendary stage career",
+   "known": 0.4,
+   "kind": "golden"
+  },
+  {
+   "label": "Susan Hayward",
+   "qid": "Q248837",
+   "fame": 0.531,
+   "first_win": 1959,
+   "context": "I Want to Live!",
+   "description": "American actress (1917–1975)",
+   "hook": "became known for playing gutsy women who overcame hardship in tearjerker dramas",
+   "known": 0.6,
+   "kind": "golden"
+  },
+  {
+   "label": "Jennifer Jones",
+   "qid": "Q189895",
+   "fame": 0.523,
+   "first_win": 1944,
+   "context": "The Song of Bernadette",
+   "description": "American actress (1919–2009)",
+   "hook": "was married to the producer behind Hollywood's most famous Civil War epic",
+   "known": 0.4,
+   "kind": "golden"
+  },
+  {
+   "label": "Glenda Jackson",
+   "qid": "Q182408",
+   "fame": 0.521,
+   "first_win": 1971,
+   "context": "Women in Love",
+   "description": "British actress and politician (1936–2023)",
+   "hook": "played Queen Elizabeth I twice, once on television and once on the big screen",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Claudette Colbert",
+   "qid": "Q203819",
+   "fame": 0.517,
+   "first_win": 1935,
+   "context": "It Happened One Night",
+   "description": "American actress (1903–1996)",
+   "hook": "played Cleopatra in a lavish historical epic during Hollywood's golden age",
+   "known": 0.6,
+   "kind": "golden"
+  },
+  {
+   "label": "Geraldine Page",
+   "qid": "Q228650",
+   "fame": 0.515,
+   "first_win": 1986,
+   "context": "The Trip to Bountiful",
+   "description": "American actress (1924–1987)",
+   "hook": "was nominated for this award seven times before finally winning on her eighth try",
+   "known": 0.4,
+   "kind": "established"
+  },
+  {
+   "label": "Judy Holliday",
+   "qid": "Q253298",
+   "fame": 0.511,
+   "first_win": 1951,
+   "context": "Born Yesterday",
+   "description": "American actress, comedian and singer (1921-1965)",
+   "hook": "played comedic characters who seemed dim but were secretly brilliant, echoing her own famously high IQ",
+   "known": 0.4,
+   "kind": "golden"
+  },
+  {
+   "label": "Greer Garson",
+   "qid": "Q182486",
+   "fame": 0.505,
+   "first_win": 1943,
+   "context": "Mrs. Miniver",
+   "description": "British-American actress (1904-1996)",
+   "hook": "gave the longest acceptance speech in this award's history, lasting several minutes",
+   "known": 0.4,
+   "kind": "golden"
+  },
+  {
+   "label": "Norma Shearer",
+   "qid": "Q95019",
+   "fame": 0.505,
+   "first_win": 1930,
+   "context": "The Divorcee",
+   "description": "Canadian-American actress (1902-1983)",
+   "hook": "was married to the powerful executive who ran production at a major Hollywood studio",
+   "known": 0.4,
+   "kind": "golden"
+  },
+  {
+   "label": "Shirley Booth",
+   "qid": "Q253308",
+   "fame": 0.495,
+   "first_win": 1953,
+   "context": "Come Back, Little Sheba",
+   "description": "American actress (1898–1992)",
+   "hook": "went on to play a beloved live-in housekeeper in a long-running television sitcom",
+   "known": 0.4,
+   "kind": "golden"
+  },
+  {
+   "label": "Janet Gaynor",
+   "qid": "Q182462",
+   "fame": 0.467,
+   "first_win": 1929,
+   "context": null,
+   "description": "American actress (1906–1984)",
+   "hook": "was the very first performer ever to win this award",
+   "known": 0.2,
+   "kind": "golden"
+  }
+ ]
+}

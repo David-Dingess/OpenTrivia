@@ -1,0 +1,170 @@
+{
+ "id": "table.earth-and-space.planets",
+ "kind": "table",
+ "title": "Planets of the Solar System",
+ "genre": "science-math-tech",
+ "category": "earth-and-space",
+ "topic": "space",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?dist ?mass ?period WHERE { { SELECT ?item (MAX(?d) AS ?dist) (MAX(?m) AS ?mass) (MAX(?p) AS ?period) WHERE { ?item wdt:P31/wdt:P279* wd:Q634 ; wdt:P397 wd:Q525 . ?item p:P2233/psn:P2233/wikibase:quantityAmount ?d . OPTIONAL { ?item p:P2067/psn:P2067/wikibase:quantityAmount ?m } OPTIONAL { ?item p:P2146/psn:P2146/wikibase:quantityAmount ?p } } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T00:55:04.412Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T00:55:04.412Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "distance_au",
+   "label": "Mean distance from the Sun",
+   "unit": "AU",
+   "type": "number"
+  },
+  {
+   "key": "mass_earths",
+   "label": "Mass",
+   "unit": "Earth masses",
+   "type": "number"
+  },
+  {
+   "key": "orbital_period_days",
+   "label": "Orbital period",
+   "unit": "days",
+   "type": "number"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "planet",
+  "many": "planets",
+  "hookAsk": "Which planet {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "distance_au": {
+    "role": "measure",
+    "sort": "from the closest to the Sun to the farthest",
+    "display": "au"
+   },
+   "mass_earths": {
+    "role": "measure",
+    "compare": "Which is heavier",
+    "display": "earths"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Earth",
+   "qid": "Q2",
+   "fame": 0.758,
+   "distance_au": 1,
+   "mass_earths": 1,
+   "orbital_period_days": 365.3,
+   "description": "third planet from the Sun in the Solar System",
+   "hook": "is the only known planet with life and liquid water oceans on its surface",
+   "known": 0.95,
+   "kind": "terrestrial"
+  },
+  {
+   "label": "Jupiter",
+   "qid": "Q319",
+   "fame": 0.677,
+   "distance_au": 5.2,
+   "mass_earths": 317.828,
+   "orbital_period_days": 4332.6,
+   "description": "fifth planet in the Solar System and largest among all; gaseous giant mainly composed of hydrogen and helium",
+   "hook": "is the largest planet in the solar system and hosts a giant storm bigger than the earth",
+   "known": 0.95,
+   "kind": "gas giant"
+  },
+  {
+   "label": "Venus",
+   "qid": "Q313",
+   "fame": 0.663,
+   "distance_au": 0.72,
+   "mass_earths": 0.815,
+   "orbital_period_days": 224.7,
+   "description": "second planet from the Solar System, tellurian and very similar to Earth",
+   "hook": "is the hottest planet due to a runaway greenhouse effect trapping heat under thick clouds",
+   "known": 0.95,
+   "kind": "terrestrial"
+  },
+  {
+   "label": "Saturn",
+   "qid": "Q193",
+   "fame": 0.661,
+   "distance_au": 9.55,
+   "mass_earths": 95.168,
+   "orbital_period_days": 10757.7,
+   "description": "sixth planet in the Solar System, with a ring system mainly composed of ice particles",
+   "hook": "is famous for its bright rings made of ice and rock",
+   "known": 0.95,
+   "kind": "gas giant"
+  },
+  {
+   "label": "Mars",
+   "qid": "Q111",
+   "fame": 0.655,
+   "distance_au": 1.52,
+   "mass_earths": 0.107,
+   "orbital_period_days": 687,
+   "description": "fourth planet from the Solar System, tellurian and orange-red due to iron oxide",
+   "hook": "gets its reddish color from rusted iron in its soil",
+   "known": 0.95,
+   "kind": "terrestrial"
+  },
+  {
+   "label": "Mercury",
+   "qid": "Q308",
+   "fame": 0.641,
+   "distance_au": 0.39,
+   "mass_earths": 0.055,
+   "orbital_period_days": 88,
+   "description": "first planet from the Solar System and smallest among all, tellurian and with extreme temperatures",
+   "hook": "is the smallest planet and swings between the most extreme day and night temperatures",
+   "known": 0.95,
+   "kind": "terrestrial"
+  },
+  {
+   "label": "Neptune",
+   "qid": "Q332",
+   "fame": 0.633,
+   "distance_au": 30.1,
+   "mass_earths": 17.151,
+   "orbital_period_days": 60193.2,
+   "description": "eighth and farthest planet from the Sun in the Solar System, mainly composed of ice and rock",
+   "hook": "is the windiest planet, with the fastest recorded winds in the solar system",
+   "known": 0.95,
+   "kind": "ice giant"
+  },
+  {
+   "label": "Uranus",
+   "qid": "Q324",
+   "fame": 0.616,
+   "distance_au": 19.19,
+   "mass_earths": 14.536,
+   "orbital_period_days": 30688.5,
+   "description": "seventh planet in the Solar System, mainly composed of hydrogen and helium",
+   "hook": "spins on its side, rotating almost perpendicular to its orbit around the sun",
+   "known": 0.95,
+   "kind": "ice giant"
+  }
+ ]
+}

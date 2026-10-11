@@ -1,0 +1,292 @@
+{
+ "id": "table.food-and-drink.fruit-origin",
+ "kind": "table",
+ "title": "Fruit: where it first grew",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "ingredients",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?place WHERE { VALUES (?article ?itemLabel ?place) { (<https://en.wikipedia.org/wiki/Banana> \"Banana\" \"Southeast Asia\") (<https://en.wikipedia.org/wiki/Apple> \"Apple\" \"Central Asia\") (<https://en.wikipedia.org/wiki/Orange_(fruit)> \"Orange\" \"China\") (<https://en.wikipedia.org/wiki/Pineapple> \"Pineapple\" \"South America\") (<https://en.wikipedia.org/wiki/Mango> \"Mango\" \"India\") (<https://en.wikipedia.org/wiki/Avocado> \"Avocado\" \"Mexico\") (<https://en.wikipedia.org/wiki/Papaya> \"Papaya\" \"Central America\") (<https://en.wikipedia.org/wiki/Kiwifruit> \"Kiwi\" \"China\") (<https://en.wikipedia.org/wiki/Peach> \"Peach\" \"China\") (<https://en.wikipedia.org/wiki/Watermelon> \"Watermelon\" \"Africa\") (<https://en.wikipedia.org/wiki/Blueberry> \"Blueberry\" \"North America\") (<https://en.wikipedia.org/wiki/Cranberry> \"Cranberry\" \"North America\") (<https://en.wikipedia.org/wiki/Pomegranate> \"Pomegranate\" \"Iran\") (<https://en.wikipedia.org/wiki/Persimmon> \"Persimmon\" \"China\") (<https://en.wikipedia.org/wiki/Lychee> \"Lychee\" \"China\") (<https://en.wikipedia.org/wiki/Durian> \"Durian\" \"Southeast Asia\") (<https://en.wikipedia.org/wiki/Mangosteen> \"Mangosteen\" \"Southeast Asia\") (<https://en.wikipedia.org/wiki/Pitaya> \"Dragon fruit\" \"Central America\") (<https://en.wikipedia.org/wiki/Passion_fruit> \"Passion fruit\" \"South America\") (<https://en.wikipedia.org/wiki/Guava> \"Guava\" \"Central America\") (<https://en.wikipedia.org/wiki/Carambola> \"Starfruit\" \"Southeast Asia\") (<https://en.wikipedia.org/wiki/Jackfruit> \"Jackfruit\" \"India\") (<https://en.wikipedia.org/wiki/Tamarind> \"Tamarind\" \"Africa\") (<https://en.wikipedia.org/wiki/Breadfruit> \"Breadfruit\" \"New Guinea\") (<https://en.wikipedia.org/wiki/Pomelo> \"Pomelo\" \"Southeast Asia\") (<https://en.wikipedia.org/wiki/Mandarin_orange> \"Mandarin orange\" \"China\") (<https://en.wikipedia.org/wiki/Kumquat> \"Kumquat\" \"China\") (<https://en.wikipedia.org/wiki/Boysenberry> \"Boysenberry\" \"California\") (<https://en.wikipedia.org/wiki/Clementine> \"Clementine\" \"Algeria\") (<https://en.wikipedia.org/wiki/Grapefruit> \"Grapefruit\" \"Barbados\") (<https://en.wikipedia.org/wiki/Soursop> \"Soursop\" \"Caribbean\") (<https://en.wikipedia.org/wiki/Cherimoya> \"Cherimoya\" \"Andes\") (<https://en.wikipedia.org/wiki/Rambutan> \"Rambutan\" \"Southeast Asia\") (<https://en.wikipedia.org/wiki/Acai_palm> \"Acai\" \"Brazil\") (<https://en.wikipedia.org/wiki/Dragon_fruit> \"Dragon fruit\" \"Central America\") (<https://en.wikipedia.org/wiki/Ackee> \"Ackee\" \"West Africa\") } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T10:01:51.343Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T12:30:00.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "origin",
+   "label": "First grew in",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "fruit",
+  "many": "fruits",
+  "capitalise": true,
+  "wildcard": "food",
+  "hookAsk": "Which fruit {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "origin": {
+    "role": "link",
+    "pick": "Where did {label} first grow?",
+    "statement": "{label} first grew in {value}.",
+    "match": "Match each fruit to the place it first grew.",
+    "odd": "Three of these fruits first grew in {value}. Which one didn't?",
+    "all": "Tap all {n} fruits that first grew in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Apple",
+   "qid": "Q89",
+   "fame": 0.645,
+   "origin": "Central Asia",
+   "kind": "fruit",
+   "description": "edible fruit of the apple tree",
+   "hook": "is the crunchy orchard staple said to keep the doctor away, and a famous symbol of temptation",
+   "known": 0.95
+  },
+  {
+   "label": "Persimmon",
+   "qid": "Q29526",
+   "fame": 0.603,
+   "origin": "China",
+   "kind": "fruit",
+   "description": "edible fruit of a number of species of trees in the genus Diospyros",
+   "hook": "is a glossy, bright orange autumn treat eaten soft and sweet, or dried",
+   "known": 0.6
+  },
+  {
+   "label": "Dragon fruit",
+   "qid": "Q232755",
+   "fame": 0.587,
+   "origin": "Central America",
+   "kind": "fruit",
+   "description": "fruit of several cactus species",
+   "hook": "is a hot-pink exotic cactus produce with white, black-speckled flesh, also called pitaya",
+   "known": 0.4
+  },
+  {
+   "label": "Mangosteen",
+   "qid": "Q170662",
+   "fame": 0.577,
+   "origin": "Southeast Asia",
+   "kind": "fruit",
+   "description": "species of plant",
+   "hook": "is a purple-rinded tropical treat with snowy segments, nicknamed the queen of tropical produce",
+   "known": 0.4
+  },
+  {
+   "label": "Durian",
+   "qid": "Q134185",
+   "fame": 0.576,
+   "origin": "Southeast Asia",
+   "kind": "fruit",
+   "description": "fruit of several tree species belonging to the genus Durio",
+   "hook": "is a spiky giant nicknamed the king of fruits, famous for a smell so strong that hotels ban it",
+   "known": 0.6
+  },
+  {
+   "label": "Pomegranate",
+   "qid": "Q13188",
+   "fame": 0.576,
+   "origin": "Iran",
+   "kind": "fruit",
+   "description": "fruit-bearing deciduous shrub",
+   "hook": "is a leathery red globe packed with juicy ruby seeds, long a symbol of abundance",
+   "known": 0.6
+  },
+  {
+   "label": "Lychee",
+   "qid": "Q13182",
+   "fame": 0.562,
+   "origin": "China",
+   "kind": "fruit",
+   "description": "species of plant",
+   "hook": "is a small tropical treat with a rough red shell and sweet, translucent white flesh around a big seed",
+   "known": 0.8
+  },
+  {
+   "label": "Tamarind",
+   "qid": "Q80235",
+   "fame": 0.562,
+   "origin": "Africa",
+   "kind": "fruit",
+   "description": "species of plant, Tamarind",
+   "hook": "is a brown pod with sticky, tangy pulp, used in chutneys, sauces and sweet-sour drinks",
+   "known": 0.4
+  },
+  {
+   "label": "Orange",
+   "qid": "Q13191",
+   "fame": 0.561,
+   "origin": "China",
+   "kind": "fruit",
+   "description": "citrus fruit of the orange tree",
+   "hook": "is the juicy citrus that is squeezed for breakfast juice and gives its name to a color",
+   "known": 0.95
+  },
+  {
+   "label": "Pineapple",
+   "qid": "Q1493",
+   "fame": 0.561,
+   "origin": "South America",
+   "kind": "fruit",
+   "description": "species of flowering plant",
+   "hook": "is a spiky-crowned tropical treat, famous for sweet yellow slices that are controversial on pizza",
+   "known": 0.8
+  },
+  {
+   "label": "Pomelo",
+   "qid": "Q80024",
+   "fame": 0.561,
+   "origin": "Southeast Asia",
+   "kind": "fruit",
+   "description": "species of plant",
+   "hook": "is the largest citrus, with thick pith and mild sweet flesh, and is an ancestor of the grapefruit",
+   "known": 0.4
+  },
+  {
+   "label": "Jackfruit",
+   "qid": "Q45757",
+   "fame": 0.558,
+   "origin": "India",
+   "kind": "fruit",
+   "description": "species of flowering plant",
+   "hook": "is a gigantic spiky tropical tree produce whose stringy flesh is used as a meat substitute in vegan cooking",
+   "known": 0.4
+  },
+  {
+   "label": "Kiwi",
+   "qid": "Q13194",
+   "fame": 0.558,
+   "origin": "China",
+   "kind": "fruit",
+   "description": "edible berry of woody vines in the genus Actinidia",
+   "hook": "is a fuzzy brown-skinned berry with bright green flesh and tiny black seeds, nicknamed the Chinese gooseberry",
+   "known": 0.8
+  },
+  {
+   "label": "Mango",
+   "qid": "Q169",
+   "fame": 0.552,
+   "origin": "India",
+   "kind": "fruit",
+   "description": "fruit of the mango tree",
+   "hook": "is a juicy stone fruit with golden flesh, often called the king of fruits in South Asia and made into lassi",
+   "known": 0.8
+  },
+  {
+   "label": "Watermelon",
+   "qid": "Q17507129",
+   "fame": 0.551,
+   "origin": "Africa",
+   "kind": "fruit",
+   "description": "species of plant",
+   "hook": "is a big green-striped summer picnic favorite with sweet red flesh, spat seeds and mostly water",
+   "known": 0.8
+  },
+  {
+   "label": "Rambutan",
+   "qid": "Q476864",
+   "fame": 0.544,
+   "origin": "Southeast Asia",
+   "kind": "fruit",
+   "description": "species of plant, rambutan",
+   "hook": "is a tropical treat with a hairy red shell that peels back to reveal sweet, translucent white flesh",
+   "known": 0.6
+  },
+  {
+   "label": "Blueberry",
+   "qid": "Q13178",
+   "fame": 0.537,
+   "origin": "North America",
+   "kind": "fruit",
+   "description": "fruit",
+   "hook": "is a small, round, dusty-blue berry beloved in muffins and pancakes, and packed with antioxidants",
+   "known": 0.8
+  },
+  {
+   "label": "Peach",
+   "qid": "Q13189",
+   "fame": 0.532,
+   "origin": "China",
+   "kind": "fruit",
+   "description": "species of fruit tree (for the fruit use Q13202263)",
+   "hook": "is a fuzzy-skinned summer stone fruit with sweet juicy flesh, loved in cobbler and pie, and a Georgia icon",
+   "known": 0.8
+  },
+  {
+   "label": "Kumquat",
+   "qid": "Q5122903",
+   "fame": 0.521,
+   "origin": "China",
+   "kind": "fruit",
+   "description": "common name for a group of citrus trees that produce cumquat fruit",
+   "hook": "is a tiny citrus that is eaten whole, rind and all, with a sweet skin and a sour center",
+   "known": 0.4
+  },
+  {
+   "label": "Papaya",
+   "qid": "Q34887",
+   "fame": 0.521,
+   "origin": "Central America",
+   "kind": "fruit",
+   "description": "species of plant",
+   "hook": "is a tropical treat with soft orange flesh and a cavity of black seeds, whose enzyme tenderizes meat",
+   "known": 0.6
+  },
+  {
+   "label": "Grapefruit",
+   "qid": "Q41350",
+   "fame": 0.512,
+   "origin": "Barbados",
+   "kind": "fruit",
+   "description": "nothospecies of plant",
+   "hook": "is a tart, bitter-sweet breakfast citrus with pink or yellow segments, traditionally eaten with a spoon",
+   "known": 0.6
+  },
+  {
+   "label": "Mandarin orange",
+   "qid": "Q125337",
+   "fame": 0.51,
+   "origin": "China",
+   "kind": "fruit",
+   "description": "species of plant",
+   "hook": "is a small, loose-skinned citrus that peels easily, associated with Lunar New Year gifts and canned segments",
+   "known": 0.6
+  },
+  {
+   "label": "Starfruit",
+   "qid": "Q181560",
+   "fame": 0.48,
+   "origin": "Southeast Asia",
+   "kind": "fruit",
+   "description": "fruit of Averrhoa carambola",
+   "hook": "is a waxy yellow-green tropical treat that makes a five-pointed shape when sliced across",
+   "known": 0.6
+  }
+ ]
+}

@@ -1,0 +1,180 @@
+{
+ "id": "table.chemistry.compounds-uses",
+ "kind": "table",
+ "title": "Everyday chemicals: what they are used for",
+ "genre": "science-math-tech",
+ "category": "chemistry",
+ "topic": "everyday-chemistry",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?useLabel WHERE { { SELECT ?item (SAMPLE(?u) AS ?use) (COUNT(DISTINCT ?u) AS ?nU) WHERE { ?item wdt:P274 ?f ; wdt:P366 ?u ; wikibase:sitelinks ?sl . FILTER(?sl > 40) FILTER NOT EXISTS { ?item wdt:P366 wd:Q12140 } FILTER NOT EXISTS { ?item wdt:P31 wd:Q12140 } FILTER NOT EXISTS { ?item wdt:P31 wd:Q11344 } } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nU = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T13:11:55.395Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T13:11:55.395Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "used_for",
+   "label": "Used for",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "chemical",
+  "many": "chemicals",
+  "lowerInProse": true,
+  "columns": {
+   "used_for": {
+    "role": "link",
+    "pick": "What is {label} mainly used as, or for?",
+    "statement": "{label} is used as: {value}.",
+    "match": "Match each chemical to its main use.",
+    "odd": "Which of these chemicals is not used as: {value}?",
+    "all": "Which of these chemicals are used as: {value}?",
+    "reverse": "Which of these chemicals is used as: {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "monosodium L-glutamate",
+   "qid": "Q179678",
+   "fame": 0.59,
+   "used_for": "flavor enhancer",
+   "description": "chemical compound, flavor enhancer",
+   "hook": "gives a savory, brothy taste to soups, snack chips and takeout dishes",
+   "known": 0.8,
+   "kind": "additive"
+  },
+  {
+   "label": "formaldehyde",
+   "qid": "Q161210",
+   "fame": 0.543,
+   "used_for": "fixative",
+   "description": "chemical compound",
+   "hook": "is a pungent gas famous for keeping school dissection specimens from rotting",
+   "known": 0.7,
+   "kind": "specialized"
+  },
+  {
+   "label": "diethyl ether",
+   "qid": "Q202218",
+   "fame": 0.542,
+   "used_for": "solvent",
+   "description": "chemical compound",
+   "hook": "was an early surgical anesthetic that put patients to sleep",
+   "known": 0.4,
+   "kind": "solvent"
+  },
+  {
+   "label": "methanol",
+   "qid": "Q14982",
+   "fame": 0.539,
+   "used_for": "solvent",
+   "description": "chemical compound",
+   "hook": "is nicknamed wood alcohol and can cause blindness if swallowed",
+   "known": 0.5,
+   "kind": "solvent"
+  },
+  {
+   "label": "chloroform",
+   "qid": "Q172275",
+   "fame": 0.538,
+   "used_for": "solvent",
+   "description": "chemical compound",
+   "hook": "is the sweet-smelling liquid movie villains press on a rag to knock people out",
+   "known": 0.6,
+   "kind": "solvent"
+  },
+  {
+   "label": "sucrose",
+   "qid": "Q4027534",
+   "fame": 0.524,
+   "used_for": "sweetener",
+   "description": "disaccharide made of glucose and fructose",
+   "hook": "forms the white crystals people stir into coffee, extracted from cane and beets",
+   "known": 0.95,
+   "kind": "additive"
+  },
+  {
+   "label": "heavy water",
+   "qid": "Q155890",
+   "fame": 0.521,
+   "used_for": "nuclear reactor coolant",
+   "description": "chemical compound",
+   "hook": null,
+   "known": 0.25,
+   "kind": "specialized"
+  },
+  {
+   "label": "sodium hypochlorite",
+   "qid": "Q407204",
+   "fame": 0.513,
+   "used_for": "bleach",
+   "description": "chemical compound",
+   "hook": "disinfects swimming pools and household surfaces, and must never be mixed with ammonia",
+   "known": 0.9,
+   "kind": "household"
+  },
+  {
+   "label": "ammonium nitrate",
+   "qid": "Q182329",
+   "fame": 0.481,
+   "used_for": "nitrogen fertilizer",
+   "description": "chemical compound",
+   "hook": "is a white salt that can detonate violently when stored in huge quantities",
+   "known": 0.4,
+   "kind": "specialized"
+  },
+  {
+   "label": "sulfur dioxide",
+   "qid": "Q5282",
+   "fame": 0.478,
+   "used_for": "food additive",
+   "description": "chemical compound",
+   "hook": null,
+   "known": 0.35,
+   "kind": "additive"
+  },
+  {
+   "label": "ammonium chloride",
+   "qid": "Q188543",
+   "fame": 0.463,
+   "used_for": "food additive",
+   "description": "chemical compound",
+   "hook": null,
+   "known": 0.2,
+   "kind": "additive"
+  },
+  {
+   "label": "naphthalene",
+   "qid": "Q179724",
+   "fame": 0.458,
+   "used_for": "mothball",
+   "description": "chemical compound",
+   "hook": "has a sharp odor people associate with old attic trunks and grandma's closet",
+   "known": 0.65,
+   "kind": "household"
+  }
+ ]
+}

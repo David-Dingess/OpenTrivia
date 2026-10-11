@@ -1,0 +1,7595 @@
+{
+ "id": "list.history.world-heritage-sites",
+ "title": "World Heritage Sites",
+ "prompt": "Name a World Heritage Site",
+ "genre": "society",
+ "category": "history",
+ "topic": "archaeology",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P1435 wd:Q9259 . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-10-02T18:15:35.741Z"
+ },
+ "rows": [
+  {
+   "label": "Basilica and Expiatory Church of the Holy Family",
+   "qid": "Q48435",
+   "fame": 0.697,
+   "also": [
+    "Sagrada Família",
+    "Expiatory Temple of the Holy Family",
+    "Temple of the Holy Family",
+    "Holy Family",
+    "La Sagrada Familia",
+    "Temple Expiatori de la Sagrada Família"
+   ]
+  },
+  {
+   "label": "Troy",
+   "qid": "Q22647",
+   "fame": 0.693,
+   "also": [
+    "Ilion",
+    "Ilium",
+    "City of Troy",
+    "Mint of Ilium",
+    "Ancient Troy",
+    "Teukroi"
+   ]
+  },
+  {
+   "label": "Statue of Liberty",
+   "qid": "Q9202",
+   "fame": 0.689,
+   "also": []
+  },
+  {
+   "label": "Taj Mahal",
+   "qid": "Q9141",
+   "fame": 0.689,
+   "also": [
+    "Crown of the Palace",
+    "the Taj Mahal"
+   ]
+  },
+  {
+   "label": "Lake Baikal",
+   "qid": "Q5513",
+   "fame": 0.679,
+   "also": [
+    "Baykal",
+    "Baikal",
+    "Bajkal",
+    "Baikal Sea",
+    "Ozero Bajkal"
+   ]
+  },
+  {
+   "label": "Vatican City",
+   "qid": "Q237",
+   "fame": 0.678,
+   "also": [
+    "vat",
+    "Civitas Vaticana",
+    "Vatican",
+    "The Vatican",
+    "Holy See",
+    "Papal State",
+    "Città del Vaticano",
+    "State of Vatican City",
+    "Stato della Città del Vaticano",
+    "Status Civitatis Vaticanae",
+    "Vatican City State"
+   ]
+  },
+  {
+   "label": "Heard Island and McDonald Islands",
+   "qid": "Q131198",
+   "fame": 0.663,
+   "also": [
+    "Heard and Macdonald Islands",
+    "Heard and McDonald Islands",
+    "HIMI",
+    "Territory of Heard Island and McDonald Islands",
+    "HMD"
+   ]
+  },
+  {
+   "label": "Stonehenge",
+   "qid": "Q39671",
+   "fame": 0.655,
+   "also": []
+  },
+  {
+   "label": "Göbekli Tepe",
+   "qid": "Q214944",
+   "fame": 0.654,
+   "also": [
+    "Portasar",
+    "Potbelly Hill"
+   ]
+  },
+  {
+   "label": "Petra",
+   "qid": "Q5788",
+   "fame": 0.627,
+   "also": [
+    "Mint of Petra",
+    "Raqmu"
+   ]
+  },
+  {
+   "label": "Yellowstone National Park",
+   "qid": "Q351",
+   "fame": 0.627,
+   "also": [
+    "Yellow Stone",
+    "Yellowstone Park",
+    "YELL",
+    "Yellowstone N. Park",
+    "Yellowstone National Parc",
+    "Yellowstone NP"
+   ]
+  },
+  {
+   "label": "Cologne Cathedral",
+   "qid": "Q4176",
+   "fame": 0.615,
+   "also": [
+    "High Cathedral of St. Peter"
+   ]
+  },
+  {
+   "label": "Hadrian's Wall",
+   "qid": "Q57357",
+   "fame": 0.615,
+   "also": [
+    "Roman Wall",
+    "Picts' Wall",
+    "Vallum Aelium"
+   ]
+  },
+  {
+   "label": "Acropolis of Athens",
+   "qid": "Q131013",
+   "fame": 0.613,
+   "also": []
+  },
+  {
+   "label": "Palace of Versailles",
+   "qid": "Q2946",
+   "fame": 0.606,
+   "also": [
+    "Versailles",
+    "Chateau de Versailles",
+    "France. Chateau Versailles",
+    "Palais de Versailles",
+    "Versailles Castle",
+    "Versailles Palace",
+    "Versailles. Chateau",
+    "Versailles. Palais"
+   ]
+  },
+  {
+   "label": "Galapagos Islands",
+   "qid": "Q38095",
+   "fame": 0.603,
+   "also": [
+    "Archipelago of Colon",
+    "Archipelago of Columbus",
+    "Archipelago of Ecuador",
+    "Archipelago of the Equator",
+    "Bewitched Islands",
+    "Colon Archipelago",
+    "Colon Islands",
+    "Colons",
+    "Columbus Archipelago",
+    "Columbus Islands",
+    "Ecuador Archipelago",
+    "Enchanted Islands"
+   ]
+  },
+  {
+   "label": "Tower of London",
+   "qid": "Q62378",
+   "fame": 0.603,
+   "also": [
+    "The Tower",
+    "The Tower of London",
+    "Her Majesty's Royal Palace and Fortress",
+    "His Majesty's Royal Palace and Fortress"
+   ]
+  },
+  {
+   "label": "Bath",
+   "qid": "Q22889",
+   "fame": 0.593,
+   "also": [
+    "City of Bath"
+   ]
+  },
+  {
+   "label": "Chichen Itza",
+   "qid": "Q5859",
+   "fame": 0.591,
+   "also": []
+  },
+  {
+   "label": "Teotihuacan",
+   "qid": "Q172613",
+   "fame": 0.582,
+   "also": [
+    "archeological site of Teotihuacan",
+    "Place of Reeds",
+    "City of the Sun",
+    "City of the Gods"
+   ]
+  },
+  {
+   "label": "Timbuktu",
+   "qid": "Q9427",
+   "fame": 0.58,
+   "also": [
+    "Tombouctou",
+    "Timbuctoo",
+    "Timbuktoo",
+    "Tumbutu"
+   ]
+  },
+  {
+   "label": "Brasília",
+   "qid": "Q2844",
+   "fame": 0.577,
+   "also": []
+  },
+  {
+   "label": "Great Barrier Reef",
+   "qid": "Q7343",
+   "fame": 0.571,
+   "also": [
+    "The Great Barrier Reef",
+    "La Grande Barrière"
+   ]
+  },
+  {
+   "label": "Yosemite National Park",
+   "qid": "Q180402",
+   "fame": 0.57,
+   "also": [
+    "Yosemite",
+    "YOSE",
+    "Yosemite NP"
+   ]
+  },
+  {
+   "label": "Blenheim Palace",
+   "qid": "Q208181",
+   "fame": 0.569,
+   "also": [
+    "Blenheim Park"
+   ]
+  },
+  {
+   "label": "Bikini Atoll",
+   "qid": "Q152225",
+   "fame": 0.567,
+   "also": [
+    "Bikini",
+    "Eschscholtz Atoll",
+    "Pikinni"
+   ]
+  },
+  {
+   "label": "Cahokia",
+   "qid": "Q333661",
+   "fame": 0.558,
+   "also": [
+    "Cahokia Mounds State Historic Site",
+    "Cahokia Mounds State Park"
+   ]
+  },
+  {
+   "label": "Sydney Opera House",
+   "qid": "Q45178",
+   "fame": 0.558,
+   "also": [
+    "Opera House",
+    "Sydney Opera"
+   ]
+  },
+  {
+   "label": "Jaipur",
+   "qid": "Q66485",
+   "fame": 0.552,
+   "also": [
+    "Pink City"
+   ]
+  },
+  {
+   "label": "Persepolis",
+   "qid": "Q129072",
+   "fame": 0.552,
+   "also": [
+    "Mint of Persepolis",
+    "Chehel Menar",
+    "Chel Menar",
+    "Chihil Minar",
+    "Chil Minar",
+    "Takht-e Jamshid"
+   ]
+  },
+  {
+   "label": "Mohenjo-daro",
+   "qid": "Q5725",
+   "fame": 0.547,
+   "also": [
+    "Mound of the Dead",
+    "Mound of dead",
+    "Mound of Dead Men"
+   ]
+  },
+  {
+   "label": "Valletta",
+   "qid": "Q23800",
+   "fame": 0.545,
+   "also": [
+    "La Valleta",
+    "Capital of Malta",
+    "Citta Umilissima",
+    "Il-Belt Valletta",
+    "Valleta",
+    "La Valletta",
+    "Valetta"
+   ]
+  },
+  {
+   "label": "Cusco",
+   "qid": "Q5582862",
+   "fame": 0.542,
+   "also": [
+    "Capital of the Inca empire",
+    "City of Cusco",
+    "City of Cuzco",
+    "Cultural heritage city of Peru",
+    "Cusco World Heritage Site",
+    "Cuzco World Heritage Site",
+    "Empire city of Cusco",
+    "Empire city of Cuzco",
+    "Imperial city of Cusco",
+    "Imperial city of Cuzco",
+    "Imperial City of the Cusco",
+    "Imperial City of the Cuzco"
+   ]
+  },
+  {
+   "label": "Giant's Causeway",
+   "qid": "Q106187",
+   "fame": 0.542,
+   "also": [
+    "Gyants Causey",
+    "Gyants Cawsway"
+   ]
+  },
+  {
+   "label": "Nazca Lines",
+   "qid": "Q2620036",
+   "fame": 0.539,
+   "also": [
+    "Nasca lines"
+   ]
+  },
+  {
+   "label": "Verona",
+   "qid": "Q2028",
+   "fame": 0.536,
+   "also": []
+  },
+  {
+   "label": "Amalfi Coast",
+   "qid": "Q212214",
+   "fame": 0.534,
+   "also": [
+    "Costa d'Amalfi",
+    "Costiera amalfitana"
+   ]
+  },
+  {
+   "label": "Ajanta Caves",
+   "qid": "Q184427",
+   "fame": 0.533,
+   "also": []
+  },
+  {
+   "label": "Victoria Falls",
+   "qid": "Q43278",
+   "fame": 0.531,
+   "also": [
+    "Mosi-oa-Tunya",
+    "Mosi-o-Tunya"
+   ]
+  },
+  {
+   "label": "Quito",
+   "qid": "Q2900",
+   "fame": 0.53,
+   "also": [
+    "Kitu",
+    "San Francisco de Quito",
+    "UIO"
+   ]
+  },
+  {
+   "label": "Qutb Minar",
+   "qid": "Q187635",
+   "fame": 0.53,
+   "also": [
+    "Qutab Minar",
+    "Dhruv Stambh",
+    "Dhurva Stambha",
+    "Qutub Minar"
+   ]
+  },
+  {
+   "label": "Tower of Hercules",
+   "qid": "Q245151",
+   "fame": 0.529,
+   "also": [
+    "Torre de Hércules",
+    "Herkulesen Dorrea"
+   ]
+  },
+  {
+   "label": "Stone Town",
+   "qid": "Q844417",
+   "fame": 0.526,
+   "also": [
+    "Stone Town of Zanzibar",
+    "Mji Mkongwe"
+   ]
+  },
+  {
+   "label": "Rabat",
+   "qid": "Q3551",
+   "fame": 0.521,
+   "also": [
+    "Rabbat"
+   ]
+  },
+  {
+   "label": "Çatalhöyük",
+   "qid": "Q192522",
+   "fame": 0.52,
+   "also": [
+    "Catal hüyük"
+   ]
+  },
+  {
+   "label": "Red Fort",
+   "qid": "Q45957",
+   "fame": 0.52,
+   "also": [
+    "Lal Qila"
+   ]
+  },
+  {
+   "label": "Konark Sun Temple",
+   "qid": "Q752091",
+   "fame": 0.515,
+   "also": [
+    "Sun Temple",
+    "Temple of the Sun",
+    "Surya Temple",
+    "Good Black Pagoda",
+    "Konarak Temple",
+    "Konarka Temple",
+    "Surya Deula"
+   ]
+  },
+  {
+   "label": "Mosque-Cathedral of Cordoba",
+   "qid": "Q33200",
+   "fame": 0.514,
+   "also": []
+  },
+  {
+   "label": "Chauvet Cave",
+   "qid": "Q374096",
+   "fame": 0.512,
+   "also": []
+  },
+  {
+   "label": "L'Anse aux Meadows",
+   "qid": "Q189113",
+   "fame": 0.512,
+   "also": []
+  },
+  {
+   "label": "Great Zimbabwe",
+   "qid": "Q209217",
+   "fame": 0.511,
+   "also": [
+    "Zimbabye"
+   ]
+  },
+  {
+   "label": "Lake District",
+   "qid": "Q211778",
+   "fame": 0.51,
+   "also": [
+    "The Lakes",
+    "Lakeland",
+    "English Lake District",
+    "The English Lake District"
+   ]
+  },
+  {
+   "label": "Western Ghats",
+   "qid": "Q4527",
+   "fame": 0.508,
+   "also": [
+    "Sahayadri Hills",
+    "Sahya Mountains",
+    "Sahya Parvat",
+    "Sahya Parvatam",
+    "Sahya Parvatham",
+    "Sahyadri",
+    "Sahyadri mountain range",
+    "Sahyadri mountain ranges",
+    "Sahyadri Mountains",
+    "Sahyadris",
+    "The Western Ghats",
+    "West coast mountain range of India"
+   ]
+  },
+  {
+   "label": "Acre",
+   "qid": "Q126084",
+   "fame": 0.506,
+   "also": [
+    "Akka",
+    "Akko"
+   ]
+  },
+  {
+   "label": "Sigiriya",
+   "qid": "Q272153",
+   "fame": 0.504,
+   "also": [
+    "Lion Rock",
+    "Sigiri"
+   ]
+  },
+  {
+   "label": "Appian Way",
+   "qid": "Q189417",
+   "fame": 0.499,
+   "also": [
+    "Via Appia"
+   ]
+  },
+  {
+   "label": "Mammoth Cave National Park",
+   "qid": "Q242681",
+   "fame": 0.498,
+   "also": [
+    "MACA",
+    "Mammoth Cave Biosphere Reserve"
+   ]
+  },
+  {
+   "label": "Himeji Castle",
+   "qid": "Q188754",
+   "fame": 0.497,
+   "also": [
+    "Hakuro Castle",
+    "Shirasagi Castle",
+    "White Egret Castle",
+    "White Heron Castle"
+   ]
+  },
+  {
+   "label": "Masada",
+   "qid": "Q186312",
+   "fame": 0.497,
+   "also": []
+  },
+  {
+   "label": "Ani",
+   "qid": "Q546010",
+   "fame": 0.495,
+   "also": [
+    "Abnicum"
+   ]
+  },
+  {
+   "label": "Ellora Caves",
+   "qid": "Q189616",
+   "fame": 0.493,
+   "also": [
+    "Elora"
+   ]
+  },
+  {
+   "label": "Meteora",
+   "qid": "Q3125051",
+   "fame": 0.493,
+   "also": [
+    "Meteora monasteries"
+   ]
+  },
+  {
+   "label": "Malbork Castle",
+   "qid": "Q71279",
+   "fame": 0.489,
+   "also": [
+    "Castle of the Teutonic Order in Malbork"
+   ]
+  },
+  {
+   "label": "Antonine Wall",
+   "qid": "Q210957",
+   "fame": 0.488,
+   "also": [
+    "Graham's Dyke",
+    "Severan Wall",
+    "Wall of Antoninus"
+   ]
+  },
+  {
+   "label": "Nan Madol",
+   "qid": "Q846967",
+   "fame": 0.485,
+   "also": []
+  },
+  {
+   "label": "Salvador",
+   "qid": "Q36947",
+   "fame": 0.485,
+   "also": [
+    "Bahia",
+    "São Salvador da Bahia de Todos os Santos"
+   ]
+  },
+  {
+   "label": "Merv",
+   "qid": "Q193325",
+   "fame": 0.484,
+   "also": [
+    "Marv",
+    "Merw",
+    "Marw",
+    "Margush",
+    "Merve Oasis"
+   ]
+  },
+  {
+   "label": "Palmyra",
+   "qid": "Q5747",
+   "fame": 0.484,
+   "also": [
+    "Palmira",
+    "Tadmor",
+    "Mint of Palmyra"
+   ]
+  },
+  {
+   "label": "Lumbini",
+   "qid": "Q9213",
+   "fame": 0.478,
+   "also": [
+    "Lumbini sal park lumbini sal park"
+   ]
+  },
+  {
+   "label": "Temple of Heaven",
+   "qid": "Q125445",
+   "fame": 0.475,
+   "also": [
+    "Imperial temple of heaven"
+   ]
+  },
+  {
+   "label": "Olympia",
+   "qid": "Q38888",
+   "fame": 0.474,
+   "also": [
+    "Olimpia",
+    "Longanico",
+    "Longavico",
+    "Olympia Pissa",
+    "Olympia Pisa",
+    "Lagganico Sauro"
+   ]
+  },
+  {
+   "label": "Forth Bridge",
+   "qid": "Q275",
+   "fame": 0.473,
+   "also": [
+    "The Forth Bridge",
+    "Forth Rail Bridge"
+   ]
+  },
+  {
+   "label": "Macquarie Island",
+   "qid": "Q46650",
+   "fame": 0.472,
+   "also": [
+    "Île Macquarie"
+   ]
+  },
+  {
+   "label": "Delos",
+   "qid": "Q173148",
+   "fame": 0.471,
+   "also": [
+    "Mint of Delos"
+   ]
+  },
+  {
+   "label": "Sanchi",
+   "qid": "Q181123",
+   "fame": 0.471,
+   "also": [
+    "Sanchi Stupa",
+    "Buddhist monuments at Sanchi",
+    "Great Sanchi Stupa",
+    "Sanchi Tope"
+   ]
+  },
+  {
+   "label": "Susa",
+   "qid": "Q180773",
+   "fame": 0.47,
+   "also": [
+    "Shushan",
+    "Mint of Susa",
+    "Susa archaeological complex"
+   ]
+  },
+  {
+   "label": "Nalanda Mahavihara",
+   "qid": "Q216243",
+   "fame": 0.467,
+   "also": [
+    "Mahavihara of Nalanda"
+   ]
+  },
+  {
+   "label": "Hiroshima Peace Memorial",
+   "qid": "Q231140",
+   "fame": 0.466,
+   "also": [
+    "A-Bomb Dome",
+    "Atomic Bomb Dome",
+    "Genbaku Dome"
+   ]
+  },
+  {
+   "label": "Summer Palace",
+   "qid": "Q4132",
+   "fame": 0.466,
+   "also": [
+    "Yiheyuan",
+    "New Summer Palace"
+   ]
+  },
+  {
+   "label": "Notre-Dame de Chartres",
+   "qid": "Q180274",
+   "fame": 0.465,
+   "also": [
+    "Chartres Cathedral",
+    "Our Lady of Chartres"
+   ]
+  },
+  {
+   "label": "Chhatrapati Shivaji Maharaj Terminus",
+   "qid": "Q235884",
+   "fame": 0.464,
+   "also": [
+    "Chhatrapati Shivaji Terminus",
+    "Bombay VT",
+    "Chhatrapati Shivaji Terminus railway station",
+    "Mumbai CSMT",
+    "Victoria Terminus"
+   ]
+  },
+  {
+   "label": "Pont du Gard",
+   "qid": "Q189764",
+   "fame": 0.464,
+   "also": []
+  },
+  {
+   "label": "Agra Fort",
+   "qid": "Q171857",
+   "fame": 0.461,
+   "also": [
+    "Red Fort",
+    "Agra's Red Fort"
+   ]
+  },
+  {
+   "label": "Mount Tai",
+   "qid": "Q216059",
+   "fame": 0.461,
+   "also": [
+    "Taishan",
+    "Tai Mountain"
+   ]
+  },
+  {
+   "label": "Fatehpur Sikri",
+   "qid": "Q179046",
+   "fame": 0.46,
+   "also": [
+    "Fatehpur Sikri Old",
+    "Fatepur Sikri",
+    "Fathpur Sikri",
+    "Futtehpore Sikri",
+    "Futtipoor Seehnee",
+    "Futtipoor Sicri",
+    "Futty Poor Sicri",
+    "Futtypore Sicri",
+    "Old Fatehpur Sikri"
+   ]
+  },
+  {
+   "label": "Baalbek",
+   "qid": "Q178835",
+   "fame": 0.458,
+   "also": [
+    "Heliopolis",
+    "Mint of Heliopolis",
+    "Baalbeck",
+    "Baalbec",
+    "Balbec"
+   ]
+  },
+  {
+   "label": "Mesa Verde National Park",
+   "qid": "Q237128",
+   "fame": 0.457,
+   "also": [
+    "MEVE"
+   ]
+  },
+  {
+   "label": "Pantanal",
+   "qid": "Q157603",
+   "fame": 0.457,
+   "also": []
+  },
+  {
+   "label": "Grand Canyon National Park",
+   "qid": "Q220289",
+   "fame": 0.456,
+   "also": [
+    "GRCA",
+    "Marble Canyon National Monument"
+   ]
+  },
+  {
+   "label": "Château de Chambord",
+   "qid": "Q205367",
+   "fame": 0.455,
+   "also": [
+    "Chambord",
+    "castle of Chambord",
+    "Chambord Castle"
+   ]
+  },
+  {
+   "label": "Sarnath",
+   "qid": "Q324394",
+   "fame": 0.455,
+   "also": []
+  },
+  {
+   "label": "Byblos",
+   "qid": "Q173532",
+   "fame": 0.454,
+   "also": [
+    "Byblus",
+    "Mint of Byblus",
+    "Geval",
+    "Gubla",
+    "Gval",
+    "Jubayl"
+   ]
+  },
+  {
+   "label": "Olympic National Park",
+   "qid": "Q372093",
+   "fame": 0.454,
+   "also": [
+    "ONP",
+    "OLYM",
+    "Olympic NP"
+   ]
+  },
+  {
+   "label": "St Kilda",
+   "qid": "Q166479",
+   "fame": 0.454,
+   "also": []
+  },
+  {
+   "label": "Taxila",
+   "qid": "Q156093",
+   "fame": 0.454,
+   "also": [
+    "Mint of Taxila"
+   ]
+  },
+  {
+   "label": "Ha Long Bay",
+   "qid": "Q190128",
+   "fame": 0.451,
+   "also": []
+  },
+  {
+   "label": "Shibam",
+   "qid": "Q192518",
+   "fame": 0.449,
+   "also": [
+    "Old Walled City of Shibam",
+    "the Chicago of the desert",
+    "the Manhattan of the Middle East",
+    "the oldest skyscraper city in the world"
+   ]
+  },
+  {
+   "label": "Cave of Altamira",
+   "qid": "Q133575",
+   "fame": 0.448,
+   "also": [
+    "Cuevas de Altamira"
+   ]
+  },
+  {
+   "label": "Skellig Michael",
+   "qid": "Q207193",
+   "fame": 0.447,
+   "also": [
+    "Great Skellig"
+   ]
+  },
+  {
+   "label": "Hampi",
+   "qid": "Q26732",
+   "fame": 0.446,
+   "also": [
+    "Group of Monuments at Hampi",
+    "Hampe",
+    "Bhaskara-kshetra",
+    "Hampi Group of Monuments",
+    "Kishkindha-kshetra",
+    "Pampa-kshetra",
+    "Vijayanagara ruins"
+   ]
+  },
+  {
+   "label": "Cyrene",
+   "qid": "Q44112",
+   "fame": 0.445,
+   "also": [
+    "Mint of Cyrene"
+   ]
+  },
+  {
+   "label": "Okavango Delta",
+   "qid": "Q650872",
+   "fame": 0.445,
+   "also": [
+    "Okavango Grassland"
+   ]
+  },
+  {
+   "label": "Jerónimos Monastery",
+   "qid": "Q272781",
+   "fame": 0.444,
+   "also": [
+    "Mosteiro dos Jerónimos"
+   ]
+  },
+  {
+   "label": "Itsukushima Shrine",
+   "qid": "Q191763",
+   "fame": 0.438,
+   "also": [
+    "Aki Ichinomiya",
+    "Itsukushima Shinto Shrine"
+   ]
+  },
+  {
+   "label": "Church of the Nativity",
+   "qid": "Q194504",
+   "fame": 0.437,
+   "also": [
+    "Basilica of the Nativity",
+    "Church of the Holy Cradle"
+   ]
+  },
+  {
+   "label": "Potosí",
+   "qid": "Q35045",
+   "fame": 0.437,
+   "also": [
+    "Villa Imperial de Potosi"
+   ]
+  },
+  {
+   "label": "Ngorongoro Conservation Area",
+   "qid": "Q1217726",
+   "fame": 0.435,
+   "also": []
+  },
+  {
+   "label": "Tiwanaku",
+   "qid": "Q61750",
+   "fame": 0.434,
+   "also": [
+    "Tiahuanaco",
+    "Tiahuanacu"
+   ]
+  },
+  {
+   "label": "Axum",
+   "qid": "Q5832",
+   "fame": 0.433,
+   "also": [
+    "Aksum",
+    "Mint of Axum",
+    "Axum town"
+   ]
+  },
+  {
+   "label": "Mogao Caves",
+   "qid": "Q43286",
+   "fame": 0.433,
+   "also": [
+    "Mogao ku"
+   ]
+  },
+  {
+   "label": "Aachen Cathedral",
+   "qid": "Q5908",
+   "fame": 0.432,
+   "also": [
+    "Imperial Cathedral"
+   ]
+  },
+  {
+   "label": "Elephanta Caves",
+   "qid": "Q649384",
+   "fame": 0.432,
+   "also": [
+    "Gharapuri Caves"
+   ]
+  },
+  {
+   "label": "Serengeti National Park",
+   "qid": "Q11812902",
+   "fame": 0.431,
+   "also": []
+  },
+  {
+   "label": "Surtsey",
+   "qid": "Q178124",
+   "fame": 0.43,
+   "also": []
+  },
+  {
+   "label": "Robben Island",
+   "qid": "Q192493",
+   "fame": 0.429,
+   "also": [
+    "Robbeneiland"
+   ]
+  },
+  {
+   "label": "Aït Benhaddou",
+   "qid": "Q309436",
+   "fame": 0.427,
+   "also": [
+    "Ksar of Aït Benhaddou"
+   ]
+  },
+  {
+   "label": "Cueva de las Manos",
+   "qid": "Q223385",
+   "fame": 0.427,
+   "also": [
+    "Cave of Hands",
+    "Cave of the Hands",
+    "Cdlm",
+    "Las Manos",
+    "Manos Cave"
+   ]
+  },
+  {
+   "label": "Luang Prabang",
+   "qid": "Q190165",
+   "fame": 0.427,
+   "also": [
+    "Luang Phabang"
+   ]
+  },
+  {
+   "label": "Wadi Rum",
+   "qid": "Q40729",
+   "fame": 0.424,
+   "also": [
+    "The Valley of the Moon",
+    "Wadi Rum Protected Area"
+   ]
+  },
+  {
+   "label": "Bhimbetka rock shelters",
+   "qid": "Q331603",
+   "fame": 0.423,
+   "also": [
+    "Auditorium cave",
+    "Bhonrawali shelters",
+    "Jhondra Pahari",
+    "Lakha Juar",
+    "Muni Babaki Pahari",
+    "Pre – historic rock shelters",
+    "Vinayaka Pahari"
+   ]
+  },
+  {
+   "label": "Kandy",
+   "qid": "Q203197",
+   "fame": 0.422,
+   "also": [
+    "Mahanuwara"
+   ]
+  },
+  {
+   "label": "Liberty Island",
+   "qid": "Q319821",
+   "fame": 0.422,
+   "also": [
+    "Bedloe Island",
+    "Bedloes Island",
+    "Bedlow Island",
+    "Bedlow's Island",
+    "Great Oyster Island",
+    "Min-ne-ais",
+    "Minissais",
+    "Minnisais",
+    "Statue of Liberty World Heritage Site"
+   ]
+  },
+  {
+   "label": "Palace of Fontainebleau",
+   "qid": "Q201428",
+   "fame": 0.422,
+   "also": [
+    "castle of Fontainebleau",
+    "chateau de Fontainebleau",
+    "musée de Fontainebleau"
+   ]
+  },
+  {
+   "label": "Palenque",
+   "qid": "Q181427",
+   "fame": 0.422,
+   "also": []
+  },
+  {
+   "label": "Hội An",
+   "qid": "Q36160",
+   "fame": 0.421,
+   "also": []
+  },
+  {
+   "label": "Humayun's Tomb",
+   "qid": "Q189648",
+   "fame": 0.421,
+   "also": [
+    "Maqbara e Humayun"
+   ]
+  },
+  {
+   "label": "Białowieża Forest",
+   "qid": "Q192666",
+   "fame": 0.418,
+   "also": [
+    "Bialowieza Forest",
+    "Bialowieza Primeval Forest",
+    "Bilovezha Forest"
+   ]
+  },
+  {
+   "label": "Djerba",
+   "qid": "Q188938",
+   "fame": 0.418,
+   "also": [
+    "Djerba Island",
+    "Jarbah"
+   ]
+  },
+  {
+   "label": "Prambanan Temple",
+   "qid": "Q47721",
+   "fame": 0.418,
+   "also": [
+    "Prambanan"
+   ]
+  },
+  {
+   "label": "Assur",
+   "qid": "Q200200",
+   "fame": 0.417,
+   "also": [
+    "Asshur",
+    "Ashur",
+    "Qal'at Sherqat"
+   ]
+  },
+  {
+   "label": "Kaziranga National Park",
+   "qid": "Q192764",
+   "fame": 0.415,
+   "also": []
+  },
+  {
+   "label": "Mystras",
+   "qid": "Q19053",
+   "fame": 0.413,
+   "also": [
+    "Mistra",
+    "Mistras"
+   ]
+  },
+  {
+   "label": "Huangshan",
+   "qid": "Q36034",
+   "fame": 0.412,
+   "also": [
+    "Yellow Mountain",
+    "Yellow Mountains"
+   ]
+  },
+  {
+   "label": "Mahabodhi Temple",
+   "qid": "Q4513",
+   "fame": 0.412,
+   "also": [
+    "Mahabodhi",
+    "Mahabodhi Temple Complex",
+    "Mahabodhi Temple Complex at Bodh Gaya",
+    "Mahabodi"
+   ]
+  },
+  {
+   "label": "Aeolian Islands",
+   "qid": "Q179883",
+   "fame": 0.41,
+   "also": [
+    "Æolian Islands",
+    "Lipari Islands"
+   ]
+  },
+  {
+   "label": "Everglades National Park",
+   "qid": "Q274131",
+   "fame": 0.41,
+   "also": [
+    "EVER"
+   ]
+  },
+  {
+   "label": "Jiuzhaigou Valley",
+   "qid": "Q4111",
+   "fame": 0.41,
+   "also": [
+    "Jiuzhaigou",
+    "Jiuzhaigou Valley Scenic and Historic Interest Area"
+   ]
+  },
+  {
+   "label": "Derbent",
+   "qid": "Q131416",
+   "fame": 0.408,
+   "also": [
+    "Darband",
+    "Derbend"
+   ]
+  },
+  {
+   "label": "Samarra",
+   "qid": "Q170047",
+   "fame": 0.407,
+   "also": []
+  },
+  {
+   "label": "Leptis Magna",
+   "qid": "Q191504",
+   "fame": 0.405,
+   "also": [
+    "Mint of Leptis Magna",
+    "Labdah",
+    "Ulpia Traiana"
+   ]
+  },
+  {
+   "label": "Danube Delta",
+   "qid": "Q184429",
+   "fame": 0.404,
+   "also": [
+    "Danube River Delta"
+   ]
+  },
+  {
+   "label": "Thingvellir National Park",
+   "qid": "Q107370",
+   "fame": 0.403,
+   "also": [
+    "Þingvellir",
+    "Thingvellir",
+    "Þingvellir National Park"
+   ]
+  },
+  {
+   "label": "Bagan",
+   "qid": "Q29317",
+   "fame": 0.4,
+   "also": [
+    "Pagan"
+   ]
+  },
+  {
+   "label": "K'gari",
+   "qid": "Q134905",
+   "fame": 0.4,
+   "also": [
+    "Great Sandy Island",
+    "Île Fraser",
+    "Fraser Island",
+    "Fraser",
+    "Gari"
+   ]
+  },
+  {
+   "label": "Anuradhapura",
+   "qid": "Q5724",
+   "fame": 0.399,
+   "also": []
+  },
+  {
+   "label": "Hadrian's Villa",
+   "qid": "Q272777",
+   "fame": 0.399,
+   "also": [
+    "Villa Adriana"
+   ]
+  },
+  {
+   "label": "Canal du Midi",
+   "qid": "Q202494",
+   "fame": 0.398,
+   "also": [
+    "Canal de las Doas Mars",
+    "canal of the two seas",
+    "Canal Royal en Languedoc"
+   ]
+  },
+  {
+   "label": "Kyoto Prefecture",
+   "qid": "Q120730",
+   "fame": 0.398,
+   "also": [
+    "Kyouto-fu",
+    "Kyoto",
+    "Kyoto-fu"
+   ]
+  },
+  {
+   "label": "Notre-Dame d'Amiens",
+   "qid": "Q106934",
+   "fame": 0.396,
+   "also": [
+    "Amiens Cathedral"
+   ]
+  },
+  {
+   "label": "Volubilis",
+   "qid": "Q391215",
+   "fame": 0.396,
+   "also": [
+    "Mint of Volubilis"
+   ]
+  },
+  {
+   "label": "Pasargadae",
+   "qid": "Q230025",
+   "fame": 0.395,
+   "also": []
+  },
+  {
+   "label": "Dessau",
+   "qid": "Q487070",
+   "fame": 0.393,
+   "also": []
+  },
+  {
+   "label": "Grand-Place",
+   "qid": "Q215429",
+   "fame": 0.393,
+   "also": [
+    "Grote Markt",
+    "Grand Place Brussels",
+    "Nedermerckt"
+   ]
+  },
+  {
+   "label": "Kronborg Castle",
+   "qid": "Q189358",
+   "fame": 0.391,
+   "also": [
+    "Kronborg",
+    "Elsinore"
+   ]
+  },
+  {
+   "label": "Plitvice Lakes National Park",
+   "qid": "Q189849",
+   "fame": 0.391,
+   "also": [
+    "Plitvice",
+    "Plitvice Lakes",
+    "Plitvice National Park",
+    "Plitvicka Jezera National Park"
+   ]
+  },
+  {
+   "label": "Mount Nemrut",
+   "qid": "Q207917",
+   "fame": 0.386,
+   "also": [
+    "Nemrud Dagh"
+   ]
+  },
+  {
+   "label": "Museum Island",
+   "qid": "Q151963",
+   "fame": 0.385,
+   "also": [
+    "Museumsinsel"
+   ]
+  },
+  {
+   "label": "Hegra",
+   "qid": "Q27356",
+   "fame": 0.383,
+   "also": [
+    "Mint of Hegra",
+    "Al-Hijr",
+    "Al-Hijr Archaeological Site",
+    "el Hijr",
+    "Mada'in Salih",
+    "Nabataean ruins of Hegra"
+   ]
+  },
+  {
+   "label": "Kairouan",
+   "qid": "Q179570",
+   "fame": 0.383,
+   "also": [
+    "Kirwan",
+    "Al-Qayrawan",
+    "Kairwan"
+   ]
+  },
+  {
+   "label": "Yakushima",
+   "qid": "Q242176",
+   "fame": 0.38,
+   "also": [
+    "Yaku Island"
+   ]
+  },
+  {
+   "label": "Curonian Spit",
+   "qid": "Q5595",
+   "fame": 0.377,
+   "also": [
+    "Curonian Spit Kaliningrad",
+    "Courland Spit",
+    "Courish Split"
+   ]
+  },
+  {
+   "label": "Copán",
+   "qid": "Q214827",
+   "fame": 0.376,
+   "also": []
+  },
+  {
+   "label": "Drottningholm Palace",
+   "qid": "Q208559",
+   "fame": 0.376,
+   "also": [
+    "Drottningholms slott"
+   ]
+  },
+  {
+   "label": "Suomenlinna",
+   "qid": "Q1292442",
+   "fame": 0.375,
+   "also": [
+    "Sveaborg"
+   ]
+  },
+  {
+   "label": "Saint Sophia Cathedral",
+   "qid": "Q830054",
+   "fame": 0.374,
+   "also": [
+    "St Sophia Cathedral",
+    "Saint Sophia's Cathedral",
+    "Sofiiskyi sobor",
+    "St Sophia's Cathedral"
+   ]
+  },
+  {
+   "label": "Santa Maria delle Grazie",
+   "qid": "Q244952",
+   "fame": 0.373,
+   "also": [
+    "Santa Maria delle Grazie Church",
+    "Basilica of Santa Maria Grazie"
+   ]
+  },
+  {
+   "label": "Komodo National Park",
+   "qid": "Q4520",
+   "fame": 0.369,
+   "also": []
+  },
+  {
+   "label": "Vigan",
+   "qid": "Q235004",
+   "fame": 0.365,
+   "also": [
+    "City of Vigan",
+    "Dakbayan sa Vigan",
+    "Vigan Heritage Village",
+    "Vigan City"
+   ]
+  },
+  {
+   "label": "Hatra",
+   "qid": "Q466614",
+   "fame": 0.364,
+   "also": []
+  },
+  {
+   "label": "Golestan Palace",
+   "qid": "Q210610",
+   "fame": 0.36,
+   "also": []
+  },
+  {
+   "label": "Wulingyuan",
+   "qid": "Q4187",
+   "fame": 0.36,
+   "also": [
+    "Wulingyuan National Park",
+    "Wulingyuan Scenic and Historic Interest Area",
+    "Wulingyuan Scenic Reserve"
+   ]
+  },
+  {
+   "label": "Tassili n'Ajjer",
+   "qid": "Q190048",
+   "fame": 0.359,
+   "also": []
+  },
+  {
+   "label": "Dasht-e Lut",
+   "qid": "Q767128",
+   "fame": 0.357,
+   "also": [
+    "Lut Desert"
+   ]
+  },
+  {
+   "label": "Wartburg",
+   "qid": "Q151545",
+   "fame": 0.353,
+   "also": [
+    "Schloss Wartburg",
+    "Wartburg Castle"
+   ]
+  },
+  {
+   "label": "Calakmul",
+   "qid": "Q272771",
+   "fame": 0.352,
+   "also": []
+  },
+  {
+   "label": "Nesebar",
+   "qid": "Q193241",
+   "fame": 0.352,
+   "also": [
+    "Nessebar",
+    "Nesebur"
+   ]
+  },
+  {
+   "label": "Chogha Zanbil",
+   "qid": "Q4523",
+   "fame": 0.351,
+   "also": [
+    "Choqa Zanbil",
+    "Dur Untash",
+    "Tchogha Zanbil"
+   ]
+  },
+  {
+   "label": "Shahrisabz",
+   "qid": "Q569766",
+   "fame": 0.35,
+   "also": [
+    "Kish",
+    "Kesh",
+    "Shakhrisyabz"
+   ]
+  },
+  {
+   "label": "Gorée",
+   "qid": "Q244347",
+   "fame": 0.349,
+   "also": [
+    "Gorée Island",
+    "Île de Gorée",
+    "Island of Gorée"
+   ]
+  },
+  {
+   "label": "Speyer Cathedral",
+   "qid": "Q22720",
+   "fame": 0.348,
+   "also": [
+    "Mariendom",
+    "Cathedral of Speyer",
+    "Imperial Cathedral of Speyer",
+    "Speyerer Dom"
+   ]
+  },
+  {
+   "label": "Kakadu National Park",
+   "qid": "Q189657",
+   "fame": 0.347,
+   "also": [
+    "Kakadu"
+   ]
+  },
+  {
+   "label": "Kathmandu Valley",
+   "qid": "Q970717",
+   "fame": 0.345,
+   "also": [
+    "Nepa valley",
+    "Nepal Valley"
+   ]
+  },
+  {
+   "label": "Castel del Monte",
+   "qid": "Q215897",
+   "fame": 0.34,
+   "also": []
+  },
+  {
+   "label": "Hawaiʻi Volcanoes National Park",
+   "qid": "Q205952",
+   "fame": 0.337,
+   "also": [
+    "HAVO",
+    "Volcanoes National Park",
+    "HVNP"
+   ]
+  },
+  {
+   "label": "Burgos Cathedral",
+   "qid": "Q744420",
+   "fame": 0.335,
+   "also": [
+    "Cathedral of kdcsk",
+    "Diocesan Cathedral of Burgos"
+   ]
+  },
+  {
+   "label": "Aldabra",
+   "qid": "Q272768",
+   "fame": 0.334,
+   "also": []
+  },
+  {
+   "label": "San Cristóbal de La Laguna",
+   "qid": "Q54898",
+   "fame": 0.334,
+   "also": [
+    "La Laguna"
+   ]
+  },
+  {
+   "label": "Polonnaruwa",
+   "qid": "Q394443",
+   "fame": 0.332,
+   "also": []
+  },
+  {
+   "label": "Timgad",
+   "qid": "Q459629",
+   "fame": 0.332,
+   "also": []
+  },
+  {
+   "label": "Island of Mozambique",
+   "qid": "Q331099",
+   "fame": 0.329,
+   "also": [
+    "Ilha de Moçambique"
+   ]
+  },
+  {
+   "label": "Selimiye Mosque",
+   "qid": "Q184534",
+   "fame": 0.329,
+   "also": []
+  },
+  {
+   "label": "Butrint",
+   "qid": "Q188694",
+   "fame": 0.323,
+   "also": [
+    "Buthrotum",
+    "Mint of Buthrotum",
+    "Bouthroton"
+   ]
+  },
+  {
+   "label": "Chitwan National Park",
+   "qid": "Q1075023",
+   "fame": 0.321,
+   "also": []
+  },
+  {
+   "label": "Wood Buffalo National Park",
+   "qid": "Q391338",
+   "fame": 0.32,
+   "also": []
+  },
+  {
+   "label": "Kevladev National Park",
+   "qid": "Q235878",
+   "fame": 0.319,
+   "also": [
+    "Keoladeo National Park",
+    "Bharatpur Bird Sanctuary",
+    "Bharatpur National Park",
+    "Bharatpur NP",
+    "Keoladeo Ghana National Park",
+    "Kevladev Bird Sanctuary"
+   ]
+  },
+  {
+   "label": "Porto Venere",
+   "qid": "Q188315",
+   "fame": 0.319,
+   "also": []
+  },
+  {
+   "label": "Sundarbans National Park",
+   "qid": "Q532440",
+   "fame": 0.319,
+   "also": [
+    "Sundarban National Park",
+    "Sunderban National Park",
+    "Sunderbans National Park"
+   ]
+  },
+  {
+   "label": "Köneürgenç",
+   "qid": "Q48472",
+   "fame": 0.311,
+   "also": [
+    "Konye-Urgench",
+    "Konya-Urgench",
+    "Old Urgench",
+    "Urganj",
+    "Köneürgench",
+    "Kounya-Ourguentch"
+   ]
+  },
+  {
+   "label": "Solovetsky Islands",
+   "qid": "Q205711",
+   "fame": 0.31,
+   "also": []
+  },
+  {
+   "label": "M'banza-Kongo",
+   "qid": "Q500189",
+   "fame": 0.309,
+   "also": [
+    "San Salvador",
+    "Sao Salvador",
+    "Mbanza Congo",
+    "Mabanza Congo",
+    "Mabanza Kongo",
+    "San Salvador de Congo",
+    "San Salvador del Congo",
+    "Sao Salvador do Congo"
+   ]
+  },
+  {
+   "label": "Naqsh-e Jahan Square",
+   "qid": "Q4519",
+   "fame": 0.309,
+   "also": [
+    "Emam Sq.",
+    "Imam Square",
+    "Meidan Emam",
+    "Naghsh-e jahan",
+    "Naghsh-e Jahan Square",
+    "Naghsh-i Jahan",
+    "Naghsh-i Jahan Square",
+    "Naqsh-e Jahan",
+    "Naqsh-i Jahan Square",
+    "Royal Square of Esfahan",
+    "Shah square",
+    "The Royal Square of Esfahan"
+   ]
+  },
+  {
+   "label": "Bosra",
+   "qid": "Q272680",
+   "fame": 0.308,
+   "also": [
+    "Bostra"
+   ]
+  },
+  {
+   "label": "Wachau",
+   "qid": "Q192201",
+   "fame": 0.305,
+   "also": []
+  },
+  {
+   "label": "Wuyi Mountains",
+   "qid": "Q207692",
+   "fame": 0.305,
+   "also": [
+    "Wuyishan",
+    "Mount Wuyi",
+    "Bohea Hills"
+   ]
+  },
+  {
+   "label": "Mehmed Paša Sokolović Bridge",
+   "qid": "Q210055",
+   "fame": 0.302,
+   "also": [
+    "Sokollu Mehmed Paşa Köprüsü"
+   ]
+  },
+  {
+   "label": "Virunga National Park",
+   "qid": "Q223589",
+   "fame": 0.302,
+   "also": [
+    "Albert National Park"
+   ]
+  },
+  {
+   "label": "Canaima National Park",
+   "qid": "Q1244337",
+   "fame": 0.301,
+   "also": []
+  },
+  {
+   "label": "Somapura Mahavihara",
+   "qid": "Q305044",
+   "fame": 0.298,
+   "also": [
+    "Paharpur",
+    "Paharpur Vihara",
+    "Pāhārpura"
+   ]
+  },
+  {
+   "label": "Neusiedl Lake",
+   "qid": "Q6396",
+   "fame": 0.285,
+   "also": [
+    "Lake Neusiedl"
+   ]
+  },
+  {
+   "label": "Struve Geodetic Arc",
+   "qid": "Q192243",
+   "fame": 0.281,
+   "also": []
+  },
+  {
+   "label": "Gelati Monastery",
+   "qid": "Q679979",
+   "fame": 0.28,
+   "also": []
+  },
+  {
+   "label": "Kasubi Tombs",
+   "qid": "Q309426",
+   "fame": 0.269,
+   "also": [
+    "Kampala Kasubi Tombs",
+    "Kasubi Royal Tombs",
+    "The Tombs of Buganda Kings at Kasubi"
+   ]
+  },
+  {
+   "label": "Sagarmatha National Park",
+   "qid": "Q2211959",
+   "fame": 0.268,
+   "also": [
+    "Sagarmatha rastriya nikunja"
+   ]
+  },
+  {
+   "label": "Jameh Mosque of Isfahan",
+   "qid": "Q1256501",
+   "fame": 0.267,
+   "also": [
+    "Friday Mosque of Isfahan",
+    "Jame Atiq Mosque  of Isfahan"
+   ]
+  },
+  {
+   "label": "prehistoric pile dwellings around the Alps",
+   "qid": "Q4580",
+   "fame": 0.262,
+   "also": []
+  },
+  {
+   "label": "Los Glaciares National Park",
+   "qid": "Q215992",
+   "fame": 0.255,
+   "also": []
+  },
+  {
+   "label": "Zabid",
+   "qid": "Q138986",
+   "fame": 0.252,
+   "also": [
+    "Zabeed",
+    "Zebid"
+   ]
+  },
+  {
+   "label": "Teide National Park",
+   "qid": "Q715124",
+   "fame": 0.249,
+   "also": []
+  },
+  {
+   "label": "Tomb of Askia",
+   "qid": "Q503823",
+   "fame": 0.247,
+   "also": []
+  },
+  {
+   "label": "Anjar",
+   "qid": "Q60977",
+   "fame": 0.244,
+   "also": []
+  },
+  {
+   "label": "Salt",
+   "qid": "Q867586",
+   "fame": 0.244,
+   "also": [
+    "As-Salt",
+    "Saltus"
+   ]
+  },
+  {
+   "label": "Soltaniyeh",
+   "qid": "Q4531",
+   "fame": 0.244,
+   "also": [
+    "Sultaniye",
+    "Saidiyeh",
+    "Soltaneyyeh",
+    "Soltanieh",
+    "Sultanieh",
+    "Sultaniya",
+    "Sultaniyeh"
+   ]
+  },
+  {
+   "label": "Bam",
+   "qid": "Q106636",
+   "fame": 0.241,
+   "also": []
+  },
+  {
+   "label": "Omo River",
+   "qid": "Q273456",
+   "fame": 0.239,
+   "also": [
+    "Umaa River"
+   ]
+  },
+  {
+   "label": "Simien Mountains National Park",
+   "qid": "Q504315",
+   "fame": 0.228,
+   "also": []
+  },
+  {
+   "label": "Cidade Velha",
+   "qid": "Q464913",
+   "fame": 0.223,
+   "also": []
+  },
+  {
+   "label": "Reichenau Island",
+   "qid": "Q156439",
+   "fame": 0.222,
+   "also": [
+    "Insel Reichenau"
+   ]
+  },
+  {
+   "label": "Djemila",
+   "qid": "Q457362",
+   "fame": 0.221,
+   "also": [
+    "Cuicul",
+    "Roman ruins of Djémila"
+   ]
+  },
+  {
+   "label": "Phong Nha–Ke Bang National Park",
+   "qid": "Q23513",
+   "fame": 0.22,
+   "also": [
+    "Ke Bang",
+    "Phong Nha-Ke Bang"
+   ]
+  },
+  {
+   "label": "Selous Game Reserve",
+   "qid": "Q2268839",
+   "fame": 0.22,
+   "also": []
+  },
+  {
+   "label": "Beemster",
+   "qid": "Q9900",
+   "fame": 0.216,
+   "also": [
+    "Beemster polder"
+   ]
+  },
+  {
+   "label": "Tadrart Acacus",
+   "qid": "Q308807",
+   "fame": 0.212,
+   "also": [
+    "Acacus Mountains",
+    "Tadrart Akakus"
+   ]
+  },
+  {
+   "label": "Valdes Peninsula",
+   "qid": "Q213237",
+   "fame": 0.21,
+   "also": []
+  },
+  {
+   "label": "Hortobágy National Park",
+   "qid": "Q61757",
+   "fame": 0.209,
+   "also": [
+    "Hortobágyi Nemzeti Park Igazgatóság"
+   ]
+  },
+  {
+   "label": "Okapi Wildlife Reserve",
+   "qid": "Q457304",
+   "fame": 0.207,
+   "also": [
+    "Reserve de faune a okapis"
+   ]
+  },
+  {
+   "label": "Salonga National Park",
+   "qid": "Q328488",
+   "fame": 0.206,
+   "also": []
+  },
+  {
+   "label": "Shirakami-Sanchi",
+   "qid": "Q501638",
+   "fame": 0.201,
+   "also": [
+    "Kōsei Mountains",
+    "Shirakami Mountains"
+   ]
+  },
+  {
+   "label": "Tsodilo",
+   "qid": "Q214007",
+   "fame": 0.201,
+   "also": [
+    "Tsodilo Hill",
+    "Tsodilo Hills"
+   ]
+  },
+  {
+   "label": "'Uruq Bani Ma'arid",
+   "qid": "Q21994709",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "A-Ma Temple",
+   "qid": "Q2149114",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aalto Works",
+   "qid": "Q127518238",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aapravasi Ghat",
+   "qid": "Q9276",
+   "fame": 0.2,
+   "also": [
+    "The Immigration Depot"
+   ]
+  },
+  {
+   "label": "Aasivissuit–Nipisat",
+   "qid": "Q16324987",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Abbey and Altenmünster of Lorsch",
+   "qid": "Q157550",
+   "fame": 0.2,
+   "also": [
+    "Lorsch Abbey"
+   ]
+  },
+  {
+   "label": "Abbey Church of Saint-Savin-sur-Gartempe",
+   "qid": "Q1774129",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Abbey of Fontenay",
+   "qid": "Q464918",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Abbey of Reichenau",
+   "qid": "Q679114",
+   "fame": 0.2,
+   "also": [
+    "Reichenau Abbey"
+   ]
+  },
+  {
+   "label": "Abbey of Saint Gall",
+   "qid": "Q155699",
+   "fame": 0.2,
+   "also": [
+    "Stift St. Gallen"
+   ]
+  },
+  {
+   "label": "Aflaj Irrigation System of Oman",
+   "qid": "Q25495",
+   "fame": 0.2,
+   "also": [
+    "Aflaj Irrigation Systems of Oman",
+    "Aflaj",
+    "Falaj"
+   ]
+  },
+  {
+   "label": "Agave Landscape and Ancient Industrial Facilities of Tequila",
+   "qid": "Q2104675",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ahwar of Southern Iraq",
+   "qid": "Q25933006",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aigai",
+   "qid": "Q16963755",
+   "fame": 0.2,
+   "also": [
+    "Aegae",
+    "Vergina",
+    "Aegeae",
+    "Aegaea",
+    "Aigaia",
+    "Aigeai"
+   ]
+  },
+  {
+   "label": "Aïr and Ténéré National Nature Reserve",
+   "qid": "Q794643",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Al Maghtas",
+   "qid": "Q12193567",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Al-Ahsa Oasis",
+   "qid": "Q311341",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Al-Balad, Jeddah",
+   "qid": "Q4702264",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Alcobaça Monastery",
+   "qid": "Q593147",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Alexander von Humboldt National Park",
+   "qid": "Q48153",
+   "fame": 0.2,
+   "also": [
+    "Alejandro de Humboldt National Park",
+    "Parque Nacional Alejandro de Humboldt"
+   ]
+  },
+  {
+   "label": "Aljafería",
+   "qid": "Q1354033",
+   "fame": 0.2,
+   "also": [
+    "Aljafería Palace"
+   ]
+  },
+  {
+   "label": "Altes Museum",
+   "qid": "Q156722",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Alto Douro Wine Region",
+   "qid": "Q649738",
+   "fame": 0.2,
+   "also": [
+    "Alto Douro",
+    "Douro Wine Region"
+   ]
+  },
+  {
+   "label": "Ambohimanga",
+   "qid": "Q458167",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ancient City of Aleppo",
+   "qid": "Q4115349",
+   "fame": 0.2,
+   "also": [
+    "Ancient Aleppo"
+   ]
+  },
+  {
+   "label": "Ancient City of Bosra",
+   "qid": "Q15727412",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ancient City of Damascus",
+   "qid": "Q3678596",
+   "fame": 0.2,
+   "also": [
+    "Old city of Damascus"
+   ]
+  },
+  {
+   "label": "Ancient ferrous metallurgy sites of Burkina Faso",
+   "qid": "Q65685157",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ancient Ksour of Ouadane, Chinguetti, Tichitt and Oualata",
+   "qid": "Q2845953",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Andrássy út",
+   "qid": "Q367395",
+   "fame": 0.2,
+   "also": [
+    "Andrássy Avenue"
+   ]
+  },
+  {
+   "label": "Antequera Dolmens Site",
+   "qid": "Q97633694",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aqueduct of Padre Tembleque",
+   "qid": "Q2840764",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Arabian Oryx Sanctuary",
+   "qid": "Q2015257",
+   "fame": 0.2,
+   "also": [
+    "Al Wusta Wildlife Reserve"
+   ]
+  },
+  {
+   "label": "Archaeological Site of Sabratha",
+   "qid": "Q15052130",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Area de Conservación Guanacaste World Heritage Site",
+   "qid": "Q775154",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Arles, Roman and Romanesque Monuments",
+   "qid": "Q1279597",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Armenian Monastic Ensembles of Iran",
+   "qid": "Q841896",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Arslantepe",
+   "qid": "Q705132",
+   "fame": 0.2,
+   "also": [
+    "Melid"
+   ]
+  },
+  {
+   "label": "Artists' Colony in Darmstadt",
+   "qid": "Q314730",
+   "fame": 0.2,
+   "also": [
+    "Darmstadt Artists' Colony",
+    "Mathildenhöhe"
+   ]
+  },
+  {
+   "label": "Asante Traditional Buildings",
+   "qid": "Q1141003",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Astronomical Observatory of the University of Kazan",
+   "qid": "Q4071782",
+   "fame": 0.2,
+   "also": [
+    "Astronomical Observatory of Kazan University",
+    "Kasan observatory"
+   ]
+  },
+  {
+   "label": "Atapuerca",
+   "qid": "Q923894",
+   "fame": 0.2,
+   "also": [
+    "Archaeological site of Atapuerca",
+    "Atapuerca archaeopaleontological sites",
+    "Atapuerca site"
+   ]
+  },
+  {
+   "label": "Augustusburg and Falkenlust Palaces",
+   "qid": "Q156292",
+   "fame": 0.2,
+   "also": [
+    "Castles of Augustusburg and Falkenlust at Brühl"
+   ]
+  },
+  {
+   "label": "Australian Convict Sites",
+   "qid": "Q391496",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ayutthaya Historical Park",
+   "qid": "Q1025100",
+   "fame": 0.2,
+   "also": [
+    "Historic City of Ayutthaya"
+   ]
+  },
+  {
+   "label": "Babelsberg Palace",
+   "qid": "Q702477",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Badain Jaran Desert",
+   "qid": "Q939033",
+   "fame": 0.2,
+   "also": [
+    "Badain Jaran Shamo"
+   ]
+  },
+  {
+   "label": "Baekje Historic Areas",
+   "qid": "Q20650483",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bahá'í World Centre buildings",
+   "qid": "Q2149036",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bahla Fort",
+   "qid": "Q1408909",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bahrain Pearling Trail",
+   "qid": "Q1889313",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bale Mountains National Park",
+   "qid": "Q804881",
+   "fame": 0.2,
+   "also": [
+    "Bale Mountain National Park"
+   ]
+  },
+  {
+   "label": "Bam Citadel",
+   "qid": "Q43277",
+   "fame": 0.2,
+   "also": [
+    "Arg-e Bam"
+   ]
+  },
+  {
+   "label": "Ban Chiang",
+   "qid": "Q584125",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Banc d'Arguin National Park",
+   "qid": "Q539518",
+   "fame": 0.2,
+   "also": [
+    "Parc national du Banc d'Arguin"
+   ]
+  },
+  {
+   "label": "Bandiagara Escarpment",
+   "qid": "Q650546",
+   "fame": 0.2,
+   "also": [
+    "Falaise de Bandiagara"
+   ]
+  },
+  {
+   "label": "Baroque Churches of the Philippines",
+   "qid": "Q808563",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bassari Country",
+   "qid": "Q2916296",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bat, Al-Khutm and Al-Ayn archaeological sites",
+   "qid": "Q25496",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Batalha Monastery",
+   "qid": "Q174779",
+   "fame": 0.2,
+   "also": [
+    "Monastery of Batalha",
+    "Monastery of Saint Mary of the Victory",
+    "Mosteiro da Batalha",
+    "Mosteiro de Santa Maria da Vitória"
+   ]
+  },
+  {
+   "label": "Bauhaus and its Sites in Weimar, Dessau and Bernau",
+   "qid": "Q14863645",
+   "fame": 0.2,
+   "also": [
+    "Bauhaus World Heritage Site"
+   ]
+  },
+  {
+   "label": "Beaufort Castle",
+   "qid": "Q476801",
+   "fame": 0.2,
+   "also": [
+    "Belfort",
+    "Shaqif Arnun"
+   ]
+  },
+  {
+   "label": "Béguinages in Flanders",
+   "qid": "Q265453",
+   "fame": 0.2,
+   "also": [
+    "Flemish Béguinages"
+   ]
+  },
+  {
+   "label": "Beit Guvrin National Park",
+   "qid": "Q2407530",
+   "fame": 0.2,
+   "also": [
+    "Beit Guvrin-Maresha National Park"
+   ]
+  },
+  {
+   "label": "Beit She'arim National Park",
+   "qid": "Q830805",
+   "fame": 0.2,
+   "also": [
+    "Beit She'arim necropolis"
+   ]
+  },
+  {
+   "label": "Belfries of Belgium and France",
+   "qid": "Q750675",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Belize Barrier Reef",
+   "qid": "Q28361",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Belvedere on the Pfingstberg",
+   "qid": "Q454078",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bergpark Wilhelmshöhe",
+   "qid": "Q447441",
+   "fame": 0.2,
+   "also": [
+    "Bergpark und Schloss Wilhelmshöhe",
+    "Park Wilhelmshöhe"
+   ]
+  },
+  {
+   "label": "Berlin Modernism Housing Estates",
+   "qid": "Q19094",
+   "fame": 0.2,
+   "also": [
+    "Siedlungen der Berliner Moderne"
+   ]
+  },
+  {
+   "label": "Bir Hima Rock Petroglyphs and Inscriptions",
+   "qid": "Q4915544",
+   "fame": 0.2,
+   "also": [
+    "Hima Cultural Area"
+   ]
+  },
+  {
+   "label": "Bom Jesus do Monte",
+   "qid": "Q2707216",
+   "fame": 0.2,
+   "also": [
+    "Sanctuary of Bom Jesus do Monte"
+   ]
+  },
+  {
+   "label": "borders of the Roman Empire",
+   "qid": "Q4147903",
+   "fame": 0.2,
+   "also": [
+    "Frontiers of the Roman Empire"
+   ]
+  },
+  {
+   "label": "Borobudur Temple Compounds",
+   "qid": "Q29070",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bourges Cathedral",
+   "qid": "Q207985",
+   "fame": 0.2,
+   "also": [
+    "Cathédrale Saint-Étienne de Bourges"
+   ]
+  },
+  {
+   "label": "Boyana Church",
+   "qid": "Q276553",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Brimstone Hill Fortress National Park",
+   "qid": "Q200521",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Brú na Bóinne",
+   "qid": "Q339489",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bruges City Hall",
+   "qid": "Q905848",
+   "fame": 0.2,
+   "also": [
+    "Bruges Town Hall",
+    "Stadhuis Brugge"
+   ]
+  },
+  {
+   "label": "Bryggen",
+   "qid": "Q153430",
+   "fame": 0.2,
+   "also": [
+    "Bryggen i Bergen"
+   ]
+  },
+  {
+   "label": "Buda Castle",
+   "qid": "Q46313",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Buddhist Monuments in the Hōryū-ji Area",
+   "qid": "Q1333799",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Budj Bim",
+   "qid": "Q260465",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Burana Tower",
+   "qid": "Q852032",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Burgess Shale",
+   "qid": "Q852085",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Burkhan Khaldun",
+   "qid": "Q1010335",
+   "fame": 0.2,
+   "also": [
+    "God Mountain"
+   ]
+  },
+  {
+   "label": "Bwindi Impenetrable National Park",
+   "qid": "Q500397",
+   "fame": 0.2,
+   "also": [
+    "Bwindi Impenetrable Forest National Park",
+    "Bwindi National Park",
+    "Bwindi Park"
+   ]
+  },
+  {
+   "label": "Canadian National Vimy Memorial",
+   "qid": "Q2561040",
+   "fame": 0.2,
+   "also": [
+    "Vimy Memorial",
+    "Vimy Ridge Memorial"
+   ]
+  },
+  {
+   "label": "Canadian Rocky Mountain Parks World Heritage Site",
+   "qid": "Q72895",
+   "fame": 0.2,
+   "also": [
+    "Canadian Rocky Mountain Parks"
+   ]
+  },
+  {
+   "label": "Cape Floristic Kingdom",
+   "qid": "Q1974274",
+   "fame": 0.2,
+   "also": [
+    "Cape Floristic Region",
+    "Capensis",
+    "Cape Floristic Province",
+    "Cape Kingdom",
+    "South African Floristic Kingdom",
+    "South African Kingdom"
+   ]
+  },
+  {
+   "label": "Capital Cities and Tombs of the Ancient Koguryo Kingdom",
+   "qid": "Q134873",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Caral",
+   "qid": "Q219279",
+   "fame": 0.2,
+   "also": [
+    "Caral-Supe"
+   ]
+  },
+  {
+   "label": "Carlsbad Caverns National Park",
+   "qid": "Q273195",
+   "fame": 0.2,
+   "also": [
+    "CAVE"
+   ]
+  },
+  {
+   "label": "Casas Grandes",
+   "qid": "Q853265",
+   "fame": 0.2,
+   "also": [
+    "Paquime"
+   ]
+  },
+  {
+   "label": "Casbah of Algiers",
+   "qid": "Q662102",
+   "fame": 0.2,
+   "also": [
+    "Kasbah of Algiers"
+   ]
+  },
+  {
+   "label": "Castillo de San Pedro de la Roca",
+   "qid": "Q910189",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Castles and Town Walls of King Edward in Gwynedd",
+   "qid": "Q837627",
+   "fame": 0.2,
+   "also": [
+    "The Castles and Town Walls of Edward I in Gwynedd"
+   ]
+  },
+  {
+   "label": "Cát Bà Island",
+   "qid": "Q993402",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Catalan Romanesque Churches of the Vall de Boí",
+   "qid": "Q1091515",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cathedral of the Nativity in Suzdal",
+   "qid": "Q2494499",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cathedral of the Savior in his Epiphany of Zaragoza",
+   "qid": "Q2196869",
+   "fame": 0.2,
+   "also": [
+    "Cathedral of the Savior of Zaragoza",
+    "Cathedral of the Savior in his Epiphany",
+    "cathedral of Zaragoza",
+    "La Seo Cathedral",
+    "Zaragoza cathedral"
+   ]
+  },
+  {
+   "label": "Cave of Altamira and Paleolithic Cave Art of Northern Spain",
+   "qid": "Q899302",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cavernas do Peruaçu National Park",
+   "qid": "Q1051873",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Caves and Ice Age Art in the Swabian Jura",
+   "qid": "Q19285921",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Caves of Aggtelek Karst and Slovak Karst",
+   "qid": "Q608090",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Centennial Hall",
+   "qid": "Q155743",
+   "fame": 0.2,
+   "also": [
+    "Hala Ludowa"
+   ]
+  },
+  {
+   "label": "Central Axis of Beijing",
+   "qid": "Q6112171",
+   "fame": 0.2,
+   "also": [
+    "Beijing Central Axis",
+    "Zhongzhou Road"
+   ]
+  },
+  {
+   "label": "Central Highlands of Sri Lanka",
+   "qid": "Q422941",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Central Suriname Nature Reserve",
+   "qid": "Q189934",
+   "fame": 0.2,
+   "also": [
+    "CSNR"
+   ]
+  },
+  {
+   "label": "Cerrado",
+   "qid": "Q278512",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Champagne hillsides, houses and cellars",
+   "qid": "Q20650698",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Champaner-Pavagadh Archaeological Park",
+   "qid": "Q844427",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chan Chan",
+   "qid": "Q277540",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Changdeokgung",
+   "qid": "Q477157",
+   "fame": 0.2,
+   "also": [
+    "Ch'angdŏkkung",
+    "Changdeok Palace",
+    "Changdeokgung Palace",
+    "Changdok-kung Palace"
+   ]
+  },
+  {
+   "label": "Château de Quéribus",
+   "qid": "Q667763",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chavin de Huantar",
+   "qid": "Q732554",
+   "fame": 0.2,
+   "also": [
+    "Cultura chavin"
+   ]
+  },
+  {
+   "label": "Chengde Mountain Resort and its outlying temples",
+   "qid": "Q1046818",
+   "fame": 0.2,
+   "also": [
+    "Chengde Mountain Resort",
+    "Bi shu shan zhuang",
+    "Imperial Summer Resort",
+    "Mountain Manor for Escaping the Summer Heat"
+   ]
+  },
+  {
+   "label": "Chengjiang Fossil Site",
+   "qid": "Q3485434",
+   "fame": 0.2,
+   "also": [
+    "Chengjiangdongwuhuashiqun Provincial Natural Reserve"
+   ]
+  },
+  {
+   "label": "China Danxia",
+   "qid": "Q1286650",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chinchorro culture",
+   "qid": "Q775089",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chinchorro mummies",
+   "qid": "Q27096877",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chinese Pavilion at Drottningholm",
+   "qid": "Q2227225",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chiribiquete National Park",
+   "qid": "Q2603196",
+   "fame": 0.2,
+   "also": [
+    "Serranía de Chiribiquete",
+    "Parque Nacional Natural Chiribiquete",
+    "Parque Nacional Natural Serranía de Chiribiquete"
+   ]
+  },
+  {
+   "label": "Chongoni Rock Art Area",
+   "qid": "Q832262",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Christiansfeld",
+   "qid": "Q3197288",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Church of Cristo Obrero y Nuestra Señora de Lourdes",
+   "qid": "Q26721344",
+   "fame": 0.2,
+   "also": [
+    "Iglesia de Cristo Obrero y Nuestra Señora de Lourdes",
+    "Atlantida Church",
+    "Church of Christ the Worker and Our Lady of Lourdes"
+   ]
+  },
+  {
+   "label": "Church of Our Lady of the Spasm, Jerusalem",
+   "qid": "Q999100",
+   "fame": 0.2,
+   "also": [
+    "Church of Our Lady of Sorrows"
+   ]
+  },
+  {
+   "label": "Church of St. Michael in Synkavičy",
+   "qid": "Q2657165",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Church of the Redeemer",
+   "qid": "Q564199",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Church of the Saviour at Berestove",
+   "qid": "Q2524402",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Churches and Convents of Goa",
+   "qid": "Q15726428",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Churches of Chiloé",
+   "qid": "Q27964",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "churches of Moldavia",
+   "qid": "Q387687",
+   "fame": 0.2,
+   "also": [
+    "Moldavian monasteries",
+    "Painted Monasteries"
+   ]
+  },
+  {
+   "label": "Churches of Peace",
+   "qid": "Q589634",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Churches of the Pskov School of Architecture",
+   "qid": "Q66053233",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Citadel of Erbil",
+   "qid": "Q206236",
+   "fame": 0.2,
+   "also": [
+    "Citadel of Arbil",
+    "Citadel of Hawler",
+    "Erbil Citadel",
+    "Qalay Hawler"
+   ]
+  },
+  {
+   "label": "Citadel of the Hồ Dynasty",
+   "qid": "Q190060",
+   "fame": 0.2,
+   "also": [
+    "Citadel of Ho Dynasty"
+   ]
+  },
+  {
+   "label": "Citadelle Laferrière",
+   "qid": "Q206194",
+   "fame": 0.2,
+   "also": [
+    "Citadelle",
+    "Citadelle Henri Christophe",
+    "la Citadelle"
+   ]
+  },
+  {
+   "label": "Cité de Carcassonne",
+   "qid": "Q389269",
+   "fame": 0.2,
+   "also": [
+    "Historic Fortified City of Carcassonne"
+   ]
+  },
+  {
+   "label": "City of Vicenza and the Palladian Villas of the Veneto",
+   "qid": "Q370956",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ciudad Universitaria",
+   "qid": "Q130025",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Classical Gardens of Suzhou",
+   "qid": "Q1144337",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Classical Weimar",
+   "qid": "Q467763",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Coiba",
+   "qid": "Q741636",
+   "fame": 0.2,
+   "also": [
+    "Quibo",
+    "Coiba Island",
+    "Coiba National Marine Park",
+    "Quibo Island"
+   ]
+  },
+  {
+   "label": "Colchic Rainforests and Wetlands",
+   "qid": "Q107694185",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Colonia Iulia Urbs Triumphalis Tarraco",
+   "qid": "Q1501940",
+   "fame": 0.2,
+   "also": [
+    "Tarraco",
+    "Archaeological Ensemble of Tarraco"
+   ]
+  },
+  {
+   "label": "Colonial City of Santo Domingo",
+   "qid": "Q2470834",
+   "fame": 0.2,
+   "also": [
+    "Ciudad Colonial",
+    "Colonial zone"
+   ]
+  },
+  {
+   "label": "Complex of Huế Monuments",
+   "qid": "Q10810560",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Convent of Christ",
+   "qid": "Q736692",
+   "fame": 0.2,
+   "also": [
+    "Convento de Cristo",
+    "Mosteiro de Cristo"
+   ]
+  },
+  {
+   "label": "Cordouan Lighthouse",
+   "qid": "Q199234",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cornwall and West Devon Mining Landscape",
+   "qid": "Q464566",
+   "fame": 0.2,
+   "also": [
+    "Cornish Mining World Heritage Site",
+    "Cornwall and West Devon Mining Landscape World Heritage Site"
+   ]
+  },
+  {
+   "label": "Cradle of Humankind",
+   "qid": "Q1130112",
+   "fame": 0.2,
+   "also": [
+    "Fossil Hominid Sites of South Africa"
+   ]
+  },
+  {
+   "label": "Crespi d'Adda",
+   "qid": "Q726842",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cusco Cathedral",
+   "qid": "Q2942242",
+   "fame": 0.2,
+   "also": [
+    "Cathedral Basilica of Our Lady of the Assumption",
+    "Cathedral Basilica of the Assumption of the Virgin",
+    "Cathedral of Cusco",
+    "Cathedral of Cuzco",
+    "Cuzco Cathedral"
+   ]
+  },
+  {
+   "label": "Dacian Fortresses of the Orăștie Mountains",
+   "qid": "Q729327",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dambulla cave temple",
+   "qid": "Q45690",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Danevirke",
+   "qid": "Q689454",
+   "fame": 0.2,
+   "also": [
+    "Dannevirke",
+    "Danewerk"
+   ]
+  },
+  {
+   "label": "Darién National Park",
+   "qid": "Q48608",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dazu Rock Carvings",
+   "qid": "Q651278",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dead Cities",
+   "qid": "Q393841",
+   "fame": 0.2,
+   "also": [
+    "Ancient Villages of Northern Syria",
+    "Forgotten Cities"
+   ]
+  },
+  {
+   "label": "Decorated Farmhouses of Hälsingland",
+   "qid": "Q1642003",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dengfeng",
+   "qid": "Q877609",
+   "fame": 0.2,
+   "also": [
+    "Dengfeng Shi"
+   ]
+  },
+  {
+   "label": "Derbent Wall",
+   "qid": "Q4158661",
+   "fame": 0.2,
+   "also": [
+    "Fortifications of Derbent"
+   ]
+  },
+  {
+   "label": "Derwent Valley Mills",
+   "qid": "Q646076",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Descent of the Ganges",
+   "qid": "Q1753664",
+   "fame": 0.2,
+   "also": [
+    "Arjuna’s Penance"
+   ]
+  },
+  {
+   "label": "Desembarco del Granma National Park",
+   "qid": "Q909755",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dessau-Wörlitz Garden Realm",
+   "qid": "Q157543",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dholavira",
+   "qid": "Q9468",
+   "fame": 0.2,
+   "also": [
+    "Kotda Timba"
+   ]
+  },
+  {
+   "label": "Dilmun Burial Mounds",
+   "qid": "Q5276996",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dinosaur Provincial Park",
+   "qid": "Q289466",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Divriği Great Mosque and Hospital",
+   "qid": "Q581641",
+   "fame": 0.2,
+   "also": [
+    "Great Mosque and Hospital of Divriği"
+   ]
+  },
+  {
+   "label": "Dja Faunal Reserve",
+   "qid": "Q843147",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Djoudj National Bird Sanctuary",
+   "qid": "Q733676",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "domus de janas",
+   "qid": "Q1238775",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Doñana National Park",
+   "qid": "Q463141",
+   "fame": 0.2,
+   "also": [
+    "Doñana"
+   ]
+  },
+  {
+   "label": "Dong Phayayen-Khao Yai Forest Complex",
+   "qid": "Q16963852",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Douaumont ossuary",
+   "qid": "Q705054",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dougga",
+   "qid": "Q32378",
+   "fame": 0.2,
+   "also": [
+    "Thugga"
+   ]
+  },
+  {
+   "label": "Drottningholm Palace Theatre",
+   "qid": "Q3058143",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Duchess Anna Amalia Library",
+   "qid": "Q50711",
+   "fame": 0.2,
+   "also": [
+    "HAAB"
+   ]
+  },
+  {
+   "label": "Early Christian Necropolis of Pécs",
+   "qid": "Q927535",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "East Rennell",
+   "qid": "Q852433",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ecbatana",
+   "qid": "Q696193",
+   "fame": 0.2,
+   "also": [
+    "Mint of Ecbatana",
+    "Ekbatana"
+   ]
+  },
+  {
+   "label": "Eise Eisinga Planetarium",
+   "qid": "Q601223",
+   "fame": 0.2,
+   "also": [
+    "Koninklijk Eise Eisinga Planetarium",
+    "Royal Eise Eisinga Planetarium"
+   ]
+  },
+  {
+   "label": "El Camino Real de Tierra Adentro",
+   "qid": "Q911953",
+   "fame": 0.2,
+   "also": [
+    "Camino Real de Tierra Adentro"
+   ]
+  },
+  {
+   "label": "El Fuerte de Samaipata",
+   "qid": "Q876451",
+   "fame": 0.2,
+   "also": [
+    "Samaipata",
+    "Fuerte de Samaipata",
+    "Samipata Fort"
+   ]
+  },
+  {
+   "label": "El Pinacate y Gran Desierto de Altar Biosphere Reserve",
+   "qid": "Q3821829",
+   "fame": 0.2,
+   "also": [
+    "El Pinacate and Gran Desierto de Altar Biosphere Reserve",
+    "El Pinacate y Gran Desierto de Altar",
+    "Pinacate and Grand Desert Biosphere Reserve",
+    "Pinacate Biosphere Reserve",
+    "Pinacate Reserve",
+    "Reserva de la Biosfera El Pinacate",
+    "Reserva de la Biosfera El Pinacate y Gran Desierto de Altar"
+   ]
+  },
+  {
+   "label": "Engelsberg Ironworks",
+   "qid": "Q936884",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ennedi Plateau",
+   "qid": "Q1343339",
+   "fame": 0.2,
+   "also": [
+    "Ennedi"
+   ]
+  },
+  {
+   "label": "Euphrasian Basilica",
+   "qid": "Q645105",
+   "fame": 0.2,
+   "also": [
+    "Cathedral Basilica of the Assumption of Mary"
+   ]
+  },
+  {
+   "label": "Fagus Factory",
+   "qid": "Q685476",
+   "fame": 0.2,
+   "also": [
+    "Faguswerk"
+   ]
+  },
+  {
+   "label": "Falun Mine",
+   "qid": "Q636194",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Fasil Ghebbi",
+   "qid": "Q464695",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ferapontov Monastery",
+   "qid": "Q838256",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Fort Douaumont",
+   "qid": "Q186536",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Fort Jesus Museum",
+   "qid": "Q379080",
+   "fame": 0.2,
+   "also": [
+    "Fort Jesus",
+    "Fort Jesus National Monument"
+   ]
+  },
+  {
+   "label": "Fortaleza do Monte",
+   "qid": "Q838085",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Fortifications of Vauban",
+   "qid": "Q833781",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Fountains Abbey",
+   "qid": "Q540237",
+   "fame": 0.2,
+   "also": [
+    "Fountains Cistercian Abbey"
+   ]
+  },
+  {
+   "label": "Franciscan Missions in the Sierra Gorda",
+   "qid": "Q751146",
+   "fame": 0.2,
+   "also": [
+    "Franciscan Missions in the Sierra Gorda of Querétaro"
+   ]
+  },
+  {
+   "label": "Fujian Tulou sites",
+   "qid": "Q718001",
+   "fame": 0.2,
+   "also": [
+    "Fujian tulou",
+    "Fujian Tulou world heritage site",
+    "Pinghe Tulou"
+   ]
+  },
+  {
+   "label": "Funerary and memory sites of the First World War",
+   "qid": "Q64685453",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gammelstad Church Town",
+   "qid": "Q1756286",
+   "fame": 0.2,
+   "also": [
+    "Gammelstads kyrkstad"
+   ]
+  },
+  {
+   "label": "Gamzigrad",
+   "qid": "Q904128",
+   "fame": 0.2,
+   "also": [
+    "Felix Romuliana"
+   ]
+  },
+  {
+   "label": "Gardens of Versailles",
+   "qid": "Q3162464",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Garrison Border Town of Elvas and its Fortifications",
+   "qid": "Q5524023",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gaya Tumuli",
+   "qid": "Q66201394",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "General Archive of the Indies",
+   "qid": "Q477051",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Getbol, Korean Tidal Flats",
+   "qid": "Q107715736",
+   "fame": 0.2,
+   "also": [
+    "Getbol"
+   ]
+  },
+  {
+   "label": "Glarus thrust",
+   "qid": "Q312118",
+   "fame": 0.2,
+   "also": [
+    "Glarus overthrust",
+    "Segnas Group",
+    "Swiss Tectonic Arena Sardona"
+   ]
+  },
+  {
+   "label": "Glienicke Palace",
+   "qid": "Q301684",
+   "fame": 0.2,
+   "also": [
+    "Schloß Glienicke"
+   ]
+  },
+  {
+   "label": "Gobustan Rock Art",
+   "qid": "Q4313909",
+   "fame": 0.2,
+   "also": [
+    "Gobustan Rock Art Cultural Landscape"
+   ]
+  },
+  {
+   "label": "Gobustan State Historical and Cultural Reserve",
+   "qid": "Q318181",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gochang, Hwasun and Ganghwa Dolmen Sites",
+   "qid": "Q495286",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Goguryeo tombs",
+   "qid": "Q277525",
+   "fame": 0.2,
+   "also": [
+    "complex of Goguryeo tombs",
+    "Koguryo tombs"
+   ]
+  },
+  {
+   "label": "Gola National Park",
+   "qid": "Q1512159",
+   "fame": 0.2,
+   "also": [
+    "Gola Rainforest National Park"
+   ]
+  },
+  {
+   "label": "Golden Mountains of Altai",
+   "qid": "Q155495",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gonbad-e Qabus",
+   "qid": "Q606763",
+   "fame": 0.2,
+   "also": [
+    "Qabus Dome"
+   ]
+  },
+  {
+   "label": "Gondwana Rainforests of Australia",
+   "qid": "Q643063",
+   "fame": 0.2,
+   "also": [
+    "Gondwana Rainforests",
+    "Forêts humides Gondwana de l’Australie"
+   ]
+  },
+  {
+   "label": "Gordion",
+   "qid": "Q542854",
+   "fame": 0.2,
+   "also": [
+    "Mint of Gordion",
+    "Gordium"
+   ]
+  },
+  {
+   "label": "Grachtengordel",
+   "qid": "Q478707",
+   "fame": 0.2,
+   "also": [
+    "Amsterdam Canal district",
+    "Canal belt of Amsterdam",
+    "World Heritage Site Canals of Amsterdam"
+   ]
+  },
+  {
+   "label": "Grand-Pré",
+   "qid": "Q1100749",
+   "fame": 0.2,
+   "also": [
+    "Grand Pré Heritage Conservation District"
+   ]
+  },
+  {
+   "label": "Great Himalayan National Park",
+   "qid": "Q1544213",
+   "fame": 0.2,
+   "also": [
+    "Great Himalayan National Park Conservation Area"
+   ]
+  },
+  {
+   "label": "Great Living Chola Temples",
+   "qid": "Q695229",
+   "fame": 0.2,
+   "also": [
+    "Chola Temples",
+    "Tanjavur temples",
+    "Thanjavur temples"
+   ]
+  },
+  {
+   "label": "Great Smoky Mountains National Park",
+   "qid": "Q464004",
+   "fame": 0.2,
+   "also": [
+    "GRSM",
+    "Great Smoky Mt National Park",
+    "Great Smoky Mts National Park",
+    "GSMNP"
+   ]
+  },
+  {
+   "label": "Greater Blue Mountains Area",
+   "qid": "Q934627",
+   "fame": 0.2,
+   "also": [
+    "Région des montagnes Bleues"
+   ]
+  },
+  {
+   "label": "Grimeton VLF transmitter",
+   "qid": "Q920206",
+   "fame": 0.2,
+   "also": [
+    "Grimeton Radio Station",
+    "Radiostationen i Varberg"
+   ]
+  },
+  {
+   "label": "Gros Morne National Park",
+   "qid": "Q257598",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Group of monuments at Mahabalipuram",
+   "qid": "Q3522747",
+   "fame": 0.2,
+   "also": [
+    "Mamallapuram temples",
+    "Seven Pagodas"
+   ]
+  },
+  {
+   "label": "Gulangyu",
+   "qid": "Q1025339",
+   "fame": 0.2,
+   "also": [
+    "Kou-lang-se"
+   ]
+  },
+  {
+   "label": "Gunung Mulu National Park",
+   "qid": "Q61535",
+   "fame": 0.2,
+   "also": [
+    "Mulu National Park"
+   ]
+  },
+  {
+   "label": "Gusuku Sites and Related Properties of the Kingdom of Ryukyu",
+   "qid": "Q1333330",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gyeongju Historic Areas",
+   "qid": "Q495241",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Head-Smashed-In Buffalo Jump",
+   "qid": "Q683110",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Heart of Neolithic Orkney",
+   "qid": "Q1334966",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Henderson Island",
+   "qid": "Q379759",
+   "fame": 0.2,
+   "also": [
+    "Elizabeth Island",
+    "San João Baptista"
+   ]
+  },
+  {
+   "label": "Heritage of Mercury. Almadén and Idrija",
+   "qid": "Q3370031",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Herrenchiemsee",
+   "qid": "Q118618",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hidden Christian Sites in the Nagasaki Region",
+   "qid": "Q93643",
+   "fame": 0.2,
+   "also": [
+    "Churches and Christian Sites in Nagasaki"
+   ]
+  },
+  {
+   "label": "Hill Forts of Rajasthan",
+   "qid": "Q10428494",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hin Nam No National Protected Area",
+   "qid": "Q5765542",
+   "fame": 0.2,
+   "also": [
+    "Hin Namno National Park"
+   ]
+  },
+  {
+   "label": "Historic Areas of Istanbul",
+   "qid": "Q5773394",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "historic centre of Córdoba",
+   "qid": "Q10749904",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Historic Centre of Florence",
+   "qid": "Q2707802",
+   "fame": 0.2,
+   "also": [
+    "Historic Center of Florence"
+   ]
+  },
+  {
+   "label": "Historic Centre of Lima",
+   "qid": "Q3320442",
+   "fame": 0.2,
+   "also": [
+    "Lima Monumental Zone",
+    "Monumental Zone of Lima"
+   ]
+  },
+  {
+   "label": "Historic Centre of Macau",
+   "qid": "Q2601433",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Historic Centre of Naples",
+   "qid": "Q832957",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Historic Centre of Sighișoara",
+   "qid": "Q1075681",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Historic Centre of the City of Salzburg",
+   "qid": "Q1621046",
+   "fame": 0.2,
+   "also": [
+    "Altstadt Salzburg"
+   ]
+  },
+  {
+   "label": "Historic Centres of Berat and Gjirokastër",
+   "qid": "Q3664670",
+   "fame": 0.2,
+   "also": [
+    "Historic Centres of Berat and Gjirokastra"
+   ]
+  },
+  {
+   "label": "Historic City of Ahmadabad",
+   "qid": "Q5472448",
+   "fame": 0.2,
+   "also": [
+    "Fort and Gates of Ahmedabad",
+    "Old Ahmedabad",
+    "Walled City of Ahmedabad"
+   ]
+  },
+  {
+   "label": "Historic Monuments and Sites in Kaesong",
+   "qid": "Q15726137",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Historic Monuments of Ancient Kyoto",
+   "qid": "Q874027",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Historic Monuments of Ancient Nara",
+   "qid": "Q1055749",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Historic Monuments of Novgorod and Surroundings",
+   "qid": "Q1218832",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Historic Town of Sukhothai and Associated Historic Towns",
+   "qid": "Q865097",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Historic Villages of Shirakawa-gō and Gokayama",
+   "qid": "Q877626",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "historical city centre of Odesa",
+   "qid": "Q15041608",
+   "fame": 0.2,
+   "also": [
+    "Historic Centre of Odesa",
+    "center of Odesa",
+    "centre of Odesa",
+    "Old Odesa"
+   ]
+  },
+  {
+   "label": "Hoh Xil",
+   "qid": "Q1790760",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Holašovice",
+   "qid": "Q826452",
+   "fame": 0.2,
+   "also": [
+    "Holschowitz"
+   ]
+  },
+  {
+   "label": "Hollókő",
+   "qid": "Q622865",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Holy Trinity Column in Olomouc",
+   "qid": "Q742362",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Honghe Hani Rice Terraces",
+   "qid": "Q11605230",
+   "fame": 0.2,
+   "also": [
+    "Hani Terraces",
+    "Yuanyang Rice Terraces"
+   ]
+  },
+  {
+   "label": "Horezu monastery",
+   "qid": "Q733069",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hospicio Cabañas",
+   "qid": "Q28416",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Huanglong",
+   "qid": "Q4107",
+   "fame": 0.2,
+   "also": [
+    "Huanglong Scenic and Historic Interest Area"
+   ]
+  },
+  {
+   "label": "Huascarán National Park",
+   "qid": "Q917369",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Humberstone and Santa Laura Saltpeter Works",
+   "qid": "Q572895",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Humble Administrator's Garden",
+   "qid": "Q1076650",
+   "fame": 0.2,
+   "also": [
+    "The Humble Administrator's Garden"
+   ]
+  },
+  {
+   "label": "Hwaseong Fortress",
+   "qid": "Q482423",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hypogeum of Ħal Saflieni",
+   "qid": "Q755514",
+   "fame": 0.2,
+   "also": [
+    "Ħal Saflieni Hypogeum",
+    "Saflieni Hypogeum"
+   ]
+  },
+  {
+   "label": "Ichkeul National Park",
+   "qid": "Q13220079",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Igreja da Sé",
+   "qid": "Q1106554",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Iguaçu National Park",
+   "qid": "Q742315",
+   "fame": 0.2,
+   "also": [
+    "Parque Nacional do Iguaçu"
+   ]
+  },
+  {
+   "label": "Iguazú National Park",
+   "qid": "Q474205",
+   "fame": 0.2,
+   "also": [
+    "Parque Nacional del Iguazú"
+   ]
+  },
+  {
+   "label": "Ilulissat Icefjord",
+   "qid": "Q828071",
+   "fame": 0.2,
+   "also": [
+    "Ilulissat Isfjord"
+   ]
+  },
+  {
+   "label": "Imperial Citadel of Thang Long",
+   "qid": "Q206219",
+   "fame": 0.2,
+   "also": [
+    "Hoàng thành Thăng Long",
+    "Imperial Citadel of Thang Long-Hanoi",
+    "Kinh thành",
+    "Thăng Long Imperial Citadel"
+   ]
+  },
+  {
+   "label": "Imperial Tombs of the Ming and Qing Dynasties",
+   "qid": "Q817164",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Inca road system",
+   "qid": "Q948975",
+   "fame": 0.2,
+   "also": [
+    "Qhapaq Ñan"
+   ]
+  },
+  {
+   "label": "Incense Route – Desert Cities in the Negev",
+   "qid": "Q477578",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Independence Hall",
+   "qid": "Q390028",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ir.D.F. Woudagemaal",
+   "qid": "Q1121835",
+   "fame": 0.2,
+   "also": [
+    "Wouda pumping station"
+   ]
+  },
+  {
+   "label": "iron pillar of Delhi",
+   "qid": "Q543419",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ironbridge Gorge",
+   "qid": "Q647958",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "iSimangaliso Wetland Park",
+   "qid": "Q310719",
+   "fame": 0.2,
+   "also": [
+    "Greater St. Lucia Wetland Park"
+   ]
+  },
+  {
+   "label": "Islamic Cairo",
+   "qid": "Q1100964",
+   "fame": 0.2,
+   "also": [
+    "Historic Cairo"
+   ]
+  },
+  {
+   "label": "Itchan Kala",
+   "qid": "Q535577",
+   "fame": 0.2,
+   "also": [
+    "Ichan Kala"
+   ]
+  },
+  {
+   "label": "Ivindo National Park",
+   "qid": "Q9055979",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Iwami Ginzan Silver Mine",
+   "qid": "Q174139",
+   "fame": 0.2,
+   "also": [
+    "Ōmori Ginzan",
+    "Sama Ginzan"
+   ]
+  },
+  {
+   "label": "Jabal Al Fayah",
+   "qid": "Q6172505",
+   "fame": 0.2,
+   "also": [
+    "Jebel Faya",
+    "Al-Fayah",
+    "Jabal Fa'iyah",
+    "Jabal Fairah",
+    "Jabal Faiya"
+   ]
+  },
+  {
+   "label": "Jantar Mantar",
+   "qid": "Q508634",
+   "fame": 0.2,
+   "also": [
+    "Jyotish Yantralaya"
+   ]
+  },
+  {
+   "label": "Jaú National Park",
+   "qid": "Q332381",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jeju Volcanic Island and Lava Tubes",
+   "qid": "Q495733",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jesuit Block and Estancias of Córdoba",
+   "qid": "Q837642",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jesuit missions among the Guaraní",
+   "qid": "Q465960",
+   "fame": 0.2,
+   "also": [
+    "Jesuit Missions of the Guarani",
+    "Jesuit Missions of the Guaranis",
+    "Jesuit reduction among the Guarani"
+   ]
+  },
+  {
+   "label": "Jesuit Missions of Chiquitos",
+   "qid": "Q33934",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jodensavanne",
+   "qid": "Q648787",
+   "fame": 0.2,
+   "also": [
+    "Joden Savana"
+   ]
+  },
+  {
+   "label": "Jodrell Bank Observatory",
+   "qid": "Q1569783",
+   "fame": 0.2,
+   "also": [
+    "Jodrell Bank Experimental Station",
+    "Nuffield Radio Astronomy Laboratories"
+   ]
+  },
+  {
+   "label": "John Crow Mountains",
+   "qid": "Q6227775",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jōmon Prehistoric Sites in Northern Japan",
+   "qid": "Q11402500",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jongmyo",
+   "qid": "Q490497",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Joya de Cerén",
+   "qid": "Q27985",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jungfrau-Aletsch protected area",
+   "qid": "Q616912",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jurassic Coast",
+   "qid": "Q575976",
+   "fame": 0.2,
+   "also": [
+    "Dorset and East Devon Coast"
+   ]
+  },
+  {
+   "label": "Kaloža Church",
+   "qid": "Q2986701",
+   "fame": 0.2,
+   "also": [
+    "Kalozha Church"
+   ]
+  },
+  {
+   "label": "Kalwaria Zebrzydowska park",
+   "qid": "Q1280433",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kapova Cave",
+   "qid": "Q1643788",
+   "fame": 0.2,
+   "also": [
+    "Shulgan-Tash Cave"
+   ]
+  },
+  {
+   "label": "Kenya Lake System in the Great Rift Valley",
+   "qid": "Q2384313",
+   "fame": 0.2,
+   "also": [
+    "Great Rift Valley"
+   ]
+  },
+  {
+   "label": "Kew Gardens",
+   "qid": "Q188617",
+   "fame": 0.2,
+   "also": [
+    "Royal Botanic Gardens",
+    "Kew Royal Botanic Gardens",
+    "Royal Botanic Gardens Kew"
+   ]
+  },
+  {
+   "label": "Khajuraho Group of Monuments",
+   "qid": "Q167298",
+   "fame": 0.2,
+   "also": [
+    "Khajuraho Hindu temples",
+    "Khajuraho Jain temples",
+    "Khajuraho temples",
+    "Kharjuravahaka"
+   ]
+  },
+  {
+   "label": "Khami",
+   "qid": "Q938685",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Khangchendzonga National Park",
+   "qid": "Q2605019",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Khirokitia",
+   "qid": "Q385086",
+   "fame": 0.2,
+   "also": [
+    "Choirokoitia Neolithic Site"
+   ]
+  },
+  {
+   "label": "Kigali Genocide Memorial",
+   "qid": "Q6405906",
+   "fame": 0.2,
+   "also": [
+    "Kigali Memorial Centre",
+    "Tutsi Genocide Memorial site"
+   ]
+  },
+  {
+   "label": "Kilimanjaro National Park",
+   "qid": "Q756790",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "King's House on Schachen",
+   "qid": "Q256160",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kizhi Pogost",
+   "qid": "Q477462",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Koh Ker",
+   "qid": "Q1778458",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kokino",
+   "qid": "Q1326977",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kondoa Rock Art Sites",
+   "qid": "Q1404282",
+   "fame": 0.2,
+   "also": [
+    "Kondoa Irangi Rock Paintings"
+   ]
+  },
+  {
+   "label": "Koutammakou",
+   "qid": "Q508040",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kraków Old Town",
+   "qid": "Q652634",
+   "fame": 0.2,
+   "also": [
+    "Stare Miasto"
+   ]
+  },
+  {
+   "label": "Kujataa",
+   "qid": "Q32904732",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kuk Swamp",
+   "qid": "Q1165562",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lake Malawi National Park",
+   "qid": "Q1077596",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lake Turkana National Parks",
+   "qid": "Q1647948",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lakes of Ounianga",
+   "qid": "Q547375",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Land of Frankincense",
+   "qid": "Q118468",
+   "fame": 0.2,
+   "also": [
+    "Frankincense Trail"
+   ]
+  },
+  {
+   "label": "Landmarks of the Ancient Kingdom of Saba",
+   "qid": "Q116943542",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Landscape of the Pico Island Vineyard Culture",
+   "qid": "Q2448665",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Laponian National Park",
+   "qid": "Q1137314",
+   "fame": 0.2,
+   "also": [
+    "Laponia",
+    "Laponia Världsarvsområde"
+   ]
+  },
+  {
+   "label": "Las Médulas",
+   "qid": "Q696803",
+   "fame": 0.2,
+   "also": [
+    "Las Médulas World Heritage Site"
+   ]
+  },
+  {
+   "label": "Laurisilva of Madeira",
+   "qid": "Q11257230",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lavaux",
+   "qid": "Q688060",
+   "fame": 0.2,
+   "also": [
+    "Lavaux vineyards"
+   ]
+  },
+  {
+   "label": "Le Morne Brabant",
+   "qid": "Q1129992",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Leal Senado Building",
+   "qid": "Q3181816",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lednice-Valtice Cultural Landscape",
+   "qid": "Q735278",
+   "fame": 0.2,
+   "also": [
+    "LVA",
+    "Lednice-Valtice Area",
+    "Lednice–Valtice Complex"
+   ]
+  },
+  {
+   "label": "Lena Pillars",
+   "qid": "Q277683",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lençóis Maranhenses National Park",
+   "qid": "Q647777",
+   "fame": 0.2,
+   "also": [
+    "Lençóis Maranhenses"
+   ]
+  },
+  {
+   "label": "León Cathedral",
+   "qid": "Q48605",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Levoča, Spiš Castle and the associated cultural monuments",
+   "qid": "Q6535830",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "lifts on the old Canal du Centre",
+   "qid": "Q99372",
+   "fame": 0.2,
+   "also": [
+    "Boat Lifts on the Canal du Centre",
+    "Canal du Centre boat lifts",
+    "lifts on the Canal du Centre"
+   ]
+  },
+  {
+   "label": "Linderhof Palace",
+   "qid": "Q162052",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Litomyšl Chateau",
+   "qid": "Q2164885",
+   "fame": 0.2,
+   "also": [
+    "Litomyšl Castle",
+    "Litomyšl Palace"
+   ]
+  },
+  {
+   "label": "Longmen Grottoes",
+   "qid": "Q273834",
+   "fame": 0.2,
+   "also": [
+    "Long-men shih kʻu",
+    "Longmen Shiku",
+    "Lung-men Caves",
+    "Lung-men Grottoes",
+    "Lung-men shih kʻu",
+    "Lung-men Shiku",
+    "Longmen Caves",
+    "Longmen National Park"
+   ]
+  },
+  {
+   "label": "Longobards in Italy, Places of Power",
+   "qid": "Q1214318",
+   "fame": 0.2,
+   "also": [
+    "Longobard sites"
+   ]
+  },
+  {
+   "label": "Lonja de la Seda",
+   "qid": "Q588009",
+   "fame": 0.2,
+   "also": [
+    "Llotja de la Seda"
+   ]
+  },
+  {
+   "label": "Los Alerces National Park",
+   "qid": "Q828291",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Los Katíos National Park",
+   "qid": "Q305169",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lower German Limes",
+   "qid": "Q1265889",
+   "fame": 0.2,
+   "also": [
+    "Lower Germanic Limes",
+    "Frontiers of the Roman Empire – The Lower German Limes",
+    "Inferior German Limes"
+   ]
+  },
+  {
+   "label": "Lugo Cathedral",
+   "qid": "Q2942708",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Luis Barragán House and Studio",
+   "qid": "Q1046414",
+   "fame": 0.2,
+   "also": [
+    "Casa Barragán",
+    "Casa Luis Barragán"
+   ]
+  },
+  {
+   "label": "Lushan Quaternary Glaciation National Geopark",
+   "qid": "Q4047",
+   "fame": 0.2,
+   "also": [
+    "Lushan Geopark",
+    "Lushan National Geological Park",
+    "Lushan Quarternary Glaciation National Geopark"
+   ]
+  },
+  {
+   "label": "M'zab",
+   "qid": "Q724484",
+   "fame": 0.2,
+   "also": [
+    "Aghlan",
+    "Msab",
+    "Mzab valley"
+   ]
+  },
+  {
+   "label": "Madara Rider",
+   "qid": "Q319296",
+   "fame": 0.2,
+   "also": [
+    "Madara Horseman"
+   ]
+  },
+  {
+   "label": "Madinat Al-Zahra",
+   "qid": "Q211252",
+   "fame": 0.2,
+   "also": [
+    "Caliphate City of Medina Azaharaa",
+    "Delimitación de Madinat al-Zahra",
+    "Medina Azahara"
+   ]
+  },
+  {
+   "label": "Madriu-Perafita-Claror Valley",
+   "qid": "Q332800",
+   "fame": 0.2,
+   "also": [
+    "Madriu-Perafita-Claror-Tal"
+   ]
+  },
+  {
+   "label": "Maidam",
+   "qid": "Q6735332",
+   "fame": 0.2,
+   "also": [
+    "Moidam",
+    "Moidams – the Mound-Burial system of the Ahom Dynasty"
+   ]
+  },
+  {
+   "label": "Maison Carrée",
+   "qid": "Q677659",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Major Mining Sites of Wallonia",
+   "qid": "Q1921177",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Major Town Houses of the Architect Victor Horta",
+   "qid": "Q1426014",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Makhonjwa Mountains",
+   "qid": "Q19605615",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Malia",
+   "qid": "Q1887316",
+   "fame": 0.2,
+   "also": [
+    "Malia archaeological site"
+   ]
+  },
+  {
+   "label": "Maloti-Drakensberg Park",
+   "qid": "Q6744547",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Manas National Park",
+   "qid": "Q506511",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Manu National Park",
+   "qid": "Q390264",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Maputo National Park",
+   "qid": "Q130019294",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Maratha Military Landscapes of India",
+   "qid": "Q134720951",
+   "fame": 0.2,
+   "also": [
+    "Maratha Military Architecture in Maharashtra"
+   ]
+  },
+  {
+   "label": "Margravial Opera House",
+   "qid": "Q278908",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Markovi Kuli",
+   "qid": "Q1283784",
+   "fame": 0.2,
+   "also": [
+    "Marko's Towers"
+   ]
+  },
+  {
+   "label": "Masjid Al-Aqsa",
+   "qid": "Q121610806",
+   "fame": 0.2,
+   "also": [
+    "Al-Aqsa",
+    "Haram eş-Şerif",
+    "Haram-ı Şerif",
+    "Mescid-i Aksa",
+    "Tapınak Dağı"
+   ]
+  },
+  {
+   "label": "Matobo Hills",
+   "qid": "Q917429",
+   "fame": 0.2,
+   "also": [
+    "Matopos"
+   ]
+  },
+  {
+   "label": "Maulbronn Monastery",
+   "qid": "Q157886",
+   "fame": 0.2,
+   "also": [
+    "Imperial Monastery of Maulbronn"
+   ]
+  },
+  {
+   "label": "Mausoleum of Khoja Ahmed Yasawi",
+   "qid": "Q46069",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mausoleum of the First Qin Emperor",
+   "qid": "Q910180",
+   "fame": 0.2,
+   "also": [
+    "Mausoleum of Qin Shi Huang",
+    "Mausoleum of Qin Chi Huang",
+    "Qinshihuang Ling"
+   ]
+  },
+  {
+   "label": "Maymand",
+   "qid": "Q1013465",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Medici Villas and Gardens in Tuscany",
+   "qid": "Q574879",
+   "fame": 0.2,
+   "also": [
+    "Medici villas"
+   ]
+  },
+  {
+   "label": "Medieval City of Rhodes",
+   "qid": "Q876685",
+   "fame": 0.2,
+   "also": [
+    "Medieval town of Rhodes"
+   ]
+  },
+  {
+   "label": "Medieval Monuments in Kosovo",
+   "qid": "Q1982106",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Medieval Town of Toruń",
+   "qid": "Q9390606",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Medina of Essaouira",
+   "qid": "Q11858823",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Medina of Marrakesh",
+   "qid": "Q966780",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Medina of Sousse",
+   "qid": "Q608100",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Medina of Tétouan",
+   "qid": "Q3847588",
+   "fame": 0.2,
+   "also": [
+    "Titawin"
+   ]
+  },
+  {
+   "label": "Medina of Tunis",
+   "qid": "Q3106527",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Megalithic Temples of Malta",
+   "qid": "Q753383",
+   "fame": 0.2,
+   "also": [
+    "Megalithic Temples of Malta and Gozo"
+   ]
+  },
+  {
+   "label": "Melka Kunture",
+   "qid": "Q3063392",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Menin Gate",
+   "qid": "Q1822397",
+   "fame": 0.2,
+   "also": [
+    "Menin Gate Memorial to the Missing"
+   ]
+  },
+  {
+   "label": "Messel pit",
+   "qid": "Q639217",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Miguasha National Park",
+   "qid": "Q631128",
+   "fame": 0.2,
+   "also": [
+    "Miguasha Provincial Park"
+   ]
+  },
+  {
+   "label": "Mir Castle Complex",
+   "qid": "Q209643",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mistaken Point Ecological Reserve",
+   "qid": "Q3301928",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Modena Cathedral",
+   "qid": "Q753721",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Monarch Butterfly Biosphere Reserve",
+   "qid": "Q852546",
+   "fame": 0.2,
+   "also": [
+    "Mountain of Butterflies"
+   ]
+  },
+  {
+   "label": "Monasteries of San Millán de la Cogolla",
+   "qid": "Q2284354",
+   "fame": 0.2,
+   "also": [
+    "San Millán Yuso and Suso Monasteries"
+   ]
+  },
+  {
+   "label": "Monasteries on the slopes of Popocatépetl",
+   "qid": "Q1141009",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Monolithic churches in Lalibela",
+   "qid": "Q642979",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Møns Klint",
+   "qid": "Q1517331",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Monte San Giorgio",
+   "qid": "Q16648",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Morne Trois Pitons National Park",
+   "qid": "Q629436",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mosque City of Bagerhat",
+   "qid": "Q799893",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mount Kenya National Park",
+   "qid": "Q1639468",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mount Kumgang",
+   "qid": "Q495501",
+   "fame": 0.2,
+   "also": [
+    "Diamond Mountain",
+    "Kumgang Mountains",
+    "Mount Geungang"
+   ]
+  },
+  {
+   "label": "Mount Nimba Strict Nature Reserve",
+   "qid": "Q924276",
+   "fame": 0.2,
+   "also": [
+    "Mount Nimba"
+   ]
+  },
+  {
+   "label": "Mount Sanqing",
+   "qid": "Q873358",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mount Wutai",
+   "qid": "Q120314",
+   "fame": 0.2,
+   "also": [
+    "Wu-tai-shan",
+    "Wutai Mountain"
+   ]
+  },
+  {
+   "label": "Mountain Railways of India",
+   "qid": "Q4528",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mudéjar architecture of Aragon",
+   "qid": "Q764675",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mulanje Massif",
+   "qid": "Q1510436",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Murambi Genocide Memorial",
+   "qid": "Q5964053",
+   "fame": 0.2,
+   "also": [
+    "Murambi Genocide Memorial Centre",
+    "Murambi Technical School"
+   ]
+  },
+  {
+   "label": "Museum Plantin-Moretus",
+   "qid": "Q595802",
+   "fame": 0.2,
+   "also": [
+    "Plantin–Moretus Museum",
+    "Museum Plantin-Moretus Antwerp",
+    "Museum Plantin-Moretus in Antwerp"
+   ]
+  },
+  {
+   "label": "Muskau Park",
+   "qid": "Q156308",
+   "fame": 0.2,
+   "also": [
+    "parc Muzakowski"
+   ]
+  },
+  {
+   "label": "Nahal Me'arot Nature Reserve",
+   "qid": "Q1443478",
+   "fame": 0.2,
+   "also": [
+    "Naẖal Me‘arot"
+   ]
+  },
+  {
+   "label": "Nahanni National Park Reserve",
+   "qid": "Q391391",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Namhansanseong",
+   "qid": "Q562529",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nanda Devi and Valley of Flowers National Parks",
+   "qid": "Q15839097",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nanda Devi National Park",
+   "qid": "Q1648266",
+   "fame": 0.2,
+   "also": [
+    "Nanda Devi Biosphere Reserve"
+   ]
+  },
+  {
+   "label": "Naryn Castle",
+   "qid": "Q2263092",
+   "fame": 0.2,
+   "also": [
+    "Naryn-Kala"
+   ]
+  },
+  {
+   "label": "National History Park",
+   "qid": "Q12125635",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Natural and Culturo-Historical Region of Kotor",
+   "qid": "Q3511938",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Naumburg Cathedral",
+   "qid": "Q5938",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Navy Petty-Officers School of Mechanics",
+   "qid": "Q1292306",
+   "fame": 0.2,
+   "also": [
+    "Navy Petty-Officers School",
+    "ESMA"
+   ]
+  },
+  {
+   "label": "Nelson's Dockyard",
+   "qid": "Q1435206",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Neolithic flint mines of Spiennes",
+   "qid": "Q677879",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "New Caledonia Barrier Reef",
+   "qid": "Q1330981",
+   "fame": 0.2,
+   "also": [
+    "New Caledonian barrier reef"
+   ]
+  },
+  {
+   "label": "New Lanark",
+   "qid": "Q743108",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "New Zealand Subantarctic Islands",
+   "qid": "Q46275",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Niah National Park",
+   "qid": "Q1984562",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ningaloo Reef",
+   "qid": "Q1541665",
+   "fame": 0.2,
+   "also": [
+    "Ningaloo Coast",
+    "Ningaloo",
+    "The Ningaloo Coast",
+    "Ningaloo Marine Park",
+    "Côte de Ningaloo"
+   ]
+  },
+  {
+   "label": "Ninstints",
+   "qid": "Q240832",
+   "fame": 0.2,
+   "also": [
+    "Nan Sdins",
+    "SGang Gwaay",
+    "SG̱ang Gwaay Llnaagay"
+   ]
+  },
+  {
+   "label": "Nisa",
+   "qid": "Q854672",
+   "fame": 0.2,
+   "also": [
+    "Mint of Nisa Mithradatkart",
+    "Nisa Mithradatkart",
+    "Mitridatkirt"
+   ]
+  },
+  {
+   "label": "Noel Kempff Mercado National Park",
+   "qid": "Q650710",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "northern French coal mining region",
+   "qid": "Q392215",
+   "fame": 0.2,
+   "also": [
+    "Nord-Pas de Calais Mining Basin",
+    "bassin minier du Nord-Pas-de-Calais"
+   ]
+  },
+  {
+   "label": "Novodevichy Convent",
+   "qid": "Q270725",
+   "fame": 0.2,
+   "also": [
+    "Bogoroditse-Smolensky Monastery"
+   ]
+  },
+  {
+   "label": "Nyungwe Forest",
+   "qid": "Q1356828",
+   "fame": 0.2,
+   "also": [
+    "Nyungwe",
+    "Nyungwe Forest National Park",
+    "Rugege",
+    "Rugege Forest"
+   ]
+  },
+  {
+   "label": "Odzala National Park",
+   "qid": "Q263883",
+   "fame": 0.2,
+   "also": [
+    "Odzala-Kokoua National Park",
+    "Parc National d'Odzala"
+   ]
+  },
+  {
+   "label": "Ogasawara Archipelago",
+   "qid": "Q13383295",
+   "fame": 0.2,
+   "also": [
+    "Ogasawara Islands",
+    "Ogasawara",
+    "Bonin Archipelago",
+    "Bonin Islands",
+    "Ogasawara Shoto"
+   ]
+  },
+  {
+   "label": "Okefenokee National Wildlife Refuge",
+   "qid": "Q7081911",
+   "fame": 0.2,
+   "also": [
+    "Richard S Bolt Visitor Center"
+   ]
+  },
+  {
+   "label": "Old City of Bern",
+   "qid": "Q687973",
+   "fame": 0.2,
+   "also": [
+    "Old City"
+   ]
+  },
+  {
+   "label": "Old City of Hebron",
+   "qid": "Q35584069",
+   "fame": 0.2,
+   "also": [
+    "Al-Khalil Old Town",
+    "Hebron Old Town"
+   ]
+  },
+  {
+   "label": "Old City of Zamość",
+   "qid": "Q3678597",
+   "fame": 0.2,
+   "also": [
+    "Old City"
+   ]
+  },
+  {
+   "label": "Old Quebec",
+   "qid": "Q2114279",
+   "fame": 0.2,
+   "also": [
+    "Haute-Ville",
+    "Historic District of Old Quebec",
+    "Old Quebec Heritage Site",
+    "site patrimonial du Vieux-Québec",
+    "Vieux Quebec"
+   ]
+  },
+  {
+   "label": "Old Rauma",
+   "qid": "Q828417",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Old Town",
+   "qid": "Q748211",
+   "fame": 0.2,
+   "also": [
+    "Staré Město",
+    "Old Town of Prague"
+   ]
+  },
+  {
+   "label": "Old Town of Ghadamès",
+   "qid": "Q105973249",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Old Town of Lviv",
+   "qid": "Q2592613",
+   "fame": 0.2,
+   "also": [
+    "Old Town",
+    "Lviv's Old Town"
+   ]
+  },
+  {
+   "label": "Old Towns of Djenné",
+   "qid": "Q15278644",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ombilin coal mine",
+   "qid": "Q16965955",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ore Mountain Mining Region",
+   "qid": "Q1945612",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Orkhon Valley",
+   "qid": "Q1453235",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Osun-Osogbo Grove",
+   "qid": "Q621498",
+   "fame": 0.2,
+   "also": [
+    "Osun-Osogbo",
+    "Temple of Osun",
+    "Osun-Osogbo Sacred Grove"
+   ]
+  },
+  {
+   "label": "Our Lady of Promise",
+   "qid": "Q890652",
+   "fame": 0.2,
+   "also": [
+    "Our Lady of Ljeviš",
+    "Metera Eleousa"
+   ]
+  },
+  {
+   "label": "Padova botanical garden",
+   "qid": "Q598892",
+   "fame": 0.2,
+   "also": [
+    "Orto botanico di Padova"
+   ]
+  },
+  {
+   "label": "Padua's fourteenth-century fresco cycles",
+   "qid": "Q107674350",
+   "fame": 0.2,
+   "also": [
+    "Padova Urbs picta"
+   ]
+  },
+  {
+   "label": "Painted Churches in the Troödos Region",
+   "qid": "Q462702",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Palace of Mafra",
+   "qid": "Q599223",
+   "fame": 0.2,
+   "also": [
+    "Mafra National Palace"
+   ]
+  },
+  {
+   "label": "Palaces and Parks of Potsdam and Berlin",
+   "qid": "Q852427",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Palazzo Rosso",
+   "qid": "Q2034331",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Paleochristian and Byzantine monuments of Thessaloniki",
+   "qid": "Q732708",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Palmeral of Elche",
+   "qid": "Q930784",
+   "fame": 0.2,
+   "also": [
+    "Elche Palm Grove",
+    "Palmeral de Elche"
+   ]
+  },
+  {
+   "label": "Pamir National Park",
+   "qid": "Q3076575",
+   "fame": 0.2,
+   "also": [
+    "Tajik National Park"
+   ]
+  },
+  {
+   "label": "Pampulha Modern Ensemble",
+   "qid": "Q9850285",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pannonhalma Archabbey",
+   "qid": "Q936285",
+   "fame": 0.2,
+   "also": [
+    "Benedictine Archabbey at Pannonhalma",
+    "Millenary Benedictine Abbey of Pannonhalma"
+   ]
+  },
+  {
+   "label": "Papahānaumokuākea Marine National Monument",
+   "qid": "Q787425",
+   "fame": 0.2,
+   "also": [
+    "Northwestern Hawaiian Islands Marine National Monument",
+    "PMNM"
+   ]
+  },
+  {
+   "label": "Par force hunting landscape in North Zealand",
+   "qid": "Q10620357",
+   "fame": 0.2,
+   "also": [
+    "The par force hunting landscape in North Zealand"
+   ]
+  },
+  {
+   "label": "Paraty",
+   "qid": "Q926729",
+   "fame": 0.2,
+   "also": [
+    "Parati"
+   ]
+  },
+  {
+   "label": "Pattadakal Group of Monuments",
+   "qid": "Q817250",
+   "fame": 0.2,
+   "also": [
+    "Pattadakal",
+    "Group of Monuments at Pattadakal",
+    "Pattada-Kisuvolal",
+    "Petirgal",
+    "Raktapur"
+   ]
+  },
+  {
+   "label": "Persian Caravanserai",
+   "qid": "Q66030932",
+   "fame": 0.2,
+   "also": [
+    "The Persian Caravanserai"
+   ]
+  },
+  {
+   "label": "Petäjävesi Old Church",
+   "qid": "Q435829",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Petroglyphs of Lake Onega and the White Sea",
+   "qid": "Q64808630",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pfaueninsel",
+   "qid": "Q677973",
+   "fame": 0.2,
+   "also": [
+    "Peacock Island"
+   ]
+  },
+  {
+   "label": "Philippi",
+   "qid": "Q379652",
+   "fame": 0.2,
+   "also": [
+    "Mint of Philippi"
+   ]
+  },
+  {
+   "label": "Phoenix Islands Protected Area",
+   "qid": "Q863815",
+   "fame": 0.2,
+   "also": [
+    "PIPA"
+   ]
+  },
+  {
+   "label": "Piazza del Duomo, Pisa",
+   "qid": "Q750245",
+   "fame": 0.2,
+   "also": [
+    "Piazza dei Miracoli",
+    "Piazza del Duomo"
+   ]
+  },
+  {
+   "label": "Pilgrimage Church of Saint John of Nepomuk",
+   "qid": "Q752318",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pimachiowin Aki",
+   "qid": "Q7194595",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pirin National Park",
+   "qid": "Q651314",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pitons",
+   "qid": "Q639487",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Plain of Jars",
+   "qid": "Q870258",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Poblet Monastery",
+   "qid": "Q645157",
+   "fame": 0.2,
+   "also": [
+    "Poblet Abbey"
+   ]
+  },
+  {
+   "label": "pont Saint-Bénézet",
+   "qid": "Q284444",
+   "fame": 0.2,
+   "also": [
+    "Avignon Bridge"
+   ]
+  },
+  {
+   "label": "Pontcysyllte Aqueduct",
+   "qid": "Q158822",
+   "fame": 0.2,
+   "also": [
+    "Pontcysyllte Aqueduct and Canal"
+   ]
+  },
+  {
+   "label": "Ponte Vecchio",
+   "qid": "Q208633",
+   "fame": 0.2,
+   "also": [
+    "Vecchio Bridge"
+   ]
+  },
+  {
+   "label": "port of the Moon",
+   "qid": "Q2249113",
+   "fame": 0.2,
+   "also": [
+    "Port de la Lune"
+   ]
+  },
+  {
+   "label": "Port Royal",
+   "qid": "Q685357",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "porticoes of Bologna",
+   "qid": "Q3909051",
+   "fame": 0.2,
+   "also": [
+    "Bologna Arcades",
+    "The Porticoes of Bologna"
+   ]
+  },
+  {
+   "label": "Poverty Point",
+   "qid": "Q964745",
+   "fame": 0.2,
+   "also": [
+    "POPO",
+    "Poverty Point National Monument"
+   ]
+  },
+  {
+   "label": "Preah Vihear Temple",
+   "qid": "Q45949",
+   "fame": 0.2,
+   "also": [
+    "Preah Vihear"
+   ]
+  },
+  {
+   "label": "Prehistoric Rock Art Sites in the Côa Valley",
+   "qid": "Q552106",
+   "fame": 0.2,
+   "also": [
+    "Prehistoric Rock Art Sites in the Côa Valley and Siega Verde",
+    "Prehistoric Rock-Art Site of the Côa Valley",
+    "Prehistoric Rock-Art Site of the Coa Valley and Siega Verde"
+   ]
+  },
+  {
+   "label": "Prehistoric Sites and Decorated Caves of the Vézère Valley",
+   "qid": "Q463159",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Princely Abbey of Corvey",
+   "qid": "Q56004",
+   "fame": 0.2,
+   "also": [
+    "Corvey Abbey",
+    "Corvey"
+   ]
+  },
+  {
+   "label": "Puerto Princesa Subterranean River National Park",
+   "qid": "Q824602",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Purnululu National Park",
+   "qid": "Q679568",
+   "fame": 0.2,
+   "also": [
+    "Purnululu",
+    "Purnululu N.P.",
+    "Parc national de Purnululu"
+   ]
+  },
+  {
+   "label": "Putorana Plateau",
+   "qid": "Q277576",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Qal’at al Bahrain",
+   "qid": "Q740104",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Qal'at Bani Hammad",
+   "qid": "Q500367",
+   "fame": 0.2,
+   "also": [
+    "Al Qal'a of Beni Hammad"
+   ]
+  },
+  {
+   "label": "Qalhat",
+   "qid": "Q680322",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Qaryat al-Faw",
+   "qid": "Q2829327",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Qasr Amra",
+   "qid": "Q499517",
+   "fame": 0.2,
+   "also": [
+    "Qusayr 'Amra"
+   ]
+  },
+  {
+   "label": "Qazan Kremlin",
+   "qid": "Q603622",
+   "fame": 0.2,
+   "also": [
+    "Kazan Kremlin"
+   ]
+  },
+  {
+   "label": "Quebrada de Humahuaca",
+   "qid": "Q28061",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Quiriguá",
+   "qid": "Q318422",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Qutb complex",
+   "qid": "Q1074330",
+   "fame": 0.2,
+   "also": [
+    "Qutb Minar complex",
+    "Kutub",
+    "Kootub",
+    "Qutub"
+   ]
+  },
+  {
+   "label": "Rainforests of the Atsinanana",
+   "qid": "Q564321",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ramappa Temple",
+   "qid": "Q3380656",
+   "fame": 0.2,
+   "also": [
+    "Gaurisa temple",
+    "Ramalingeswara temple",
+    "Ramappa temples complex",
+    "Rudresvara temple"
+   ]
+  },
+  {
+   "label": "Rani ki vav",
+   "qid": "Q7293002",
+   "fame": 0.2,
+   "also": [
+    "Rani Ki Vav Queen's Stepwell",
+    "Rani Ki Vav Stepwell"
+   ]
+  },
+  {
+   "label": "Rapa Nui National Park",
+   "qid": "Q1763364",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Redwood National and State Parks",
+   "qid": "Q63863168",
+   "fame": 0.2,
+   "also": [
+    "RNSP",
+    "The Redwood National and State Parks"
+   ]
+  },
+  {
+   "label": "Residence of Bukovinian and Dalmatian Metropolitans",
+   "qid": "Q156067",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Residences of the Royal House of Savoy",
+   "qid": "Q461272",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Revillagigedo Islands",
+   "qid": "Q849318",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rhine Gorge",
+   "qid": "Q1780249",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rice Terraces of the Philippine Cordilleras",
+   "qid": "Q1503858",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Richtersveld",
+   "qid": "Q1353565",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rietveld Schröder House",
+   "qid": "Q914231",
+   "fame": 0.2,
+   "also": [
+    "Rietveld house",
+    "Rietveld Schroederhouse",
+    "Schröderhouse"
+   ]
+  },
+  {
+   "label": "Río Abiseo National Park",
+   "qid": "Q941412",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Río Plátano Biosphere Reserve",
+   "qid": "Q752181",
+   "fame": 0.2,
+   "also": [
+    "Rio Platano Biosphere"
+   ]
+  },
+  {
+   "label": "Risco Caido",
+   "qid": "Q55495511",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rjukan–Notodden Industrial Heritage Site",
+   "qid": "Q20643889",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rocas Atoll",
+   "qid": "Q241074",
+   "fame": 0.2,
+   "also": [
+    "Atol das Rocas"
+   ]
+  },
+  {
+   "label": "Rock Art in the Hail Region of Saudi Arabia",
+   "qid": "Q20643274",
+   "fame": 0.2,
+   "also": [
+    "Rock Art of Hail Province"
+   ]
+  },
+  {
+   "label": "Rock Art of the Mediterranean Basin on the Iberian Peninsula",
+   "qid": "Q1975533",
+   "fame": 0.2,
+   "also": [
+    "Rock art of the Iberian Mediterranean Basin",
+    "Levantine art",
+    "Spanish Levantine art"
+   ]
+  },
+  {
+   "label": "Rock carvings at Alta",
+   "qid": "Q433634",
+   "fame": 0.2,
+   "also": [
+    "Alta petroglyphs",
+    "Petroglyphs in Alta",
+    "Rock art of Alta"
+   ]
+  },
+  {
+   "label": "Rock Carvings in Tanum",
+   "qid": "Q1761052",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "rock drawings in Valcamonica",
+   "qid": "Q945514",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rock Paintings of Hua Mountain",
+   "qid": "Q1632877",
+   "fame": 0.2,
+   "also": [
+    "Zuojiang Huashan Rock Art",
+    "Huashan Petroglyph",
+    "Huashan Pictographs",
+    "Huashan Rock Art"
+   ]
+  },
+  {
+   "label": "Rock Paintings of Sierra de San Francisco",
+   "qid": "Q552005",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rock-hewn Churches of Ivanovo",
+   "qid": "Q503387",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rohtas Fort",
+   "qid": "Q155188",
+   "fame": 0.2,
+   "also": [
+    "Rotas Ghur"
+   ]
+  },
+  {
+   "label": "Roman amphitheatre of El Jem",
+   "qid": "Q2914326",
+   "fame": 0.2,
+   "also": [
+    "Amphitheatre of El Jem",
+    "amphitheatre in El Jem"
+   ]
+  },
+  {
+   "label": "Roman Walls of Lugo",
+   "qid": "Q2733427",
+   "fame": 0.2,
+   "also": [
+    "Lugo"
+   ]
+  },
+  {
+   "label": "Roskilde Cathedral",
+   "qid": "Q209705",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Royal Abbey of Hautecombe",
+   "qid": "Q63524",
+   "fame": 0.2,
+   "also": [
+    "Hautecombe Abbey"
+   ]
+  },
+  {
+   "label": "Royal Alcázar of Segovia",
+   "qid": "Q557337",
+   "fame": 0.2,
+   "also": [
+    "Alcázar of Segovia",
+    "Segovia Alcazar",
+    "Segovia Castle",
+    "Royal Palace of Segovia"
+   ]
+  },
+  {
+   "label": "Royal Botanic Gardens, Kew",
+   "qid": "Q18748726",
+   "fame": 0.2,
+   "also": [
+    "Royal Botanic Gardens",
+    "Kew",
+    "Kew Gardens",
+    "Kew Royal Botanic Gardens"
+   ]
+  },
+  {
+   "label": "Royal Court of Tiébélé",
+   "qid": "Q65684910",
+   "fame": 0.2,
+   "also": [
+    "Tiébélé Royal Court"
+   ]
+  },
+  {
+   "label": "Royal Monastery of Saint Mary of Guadalupe",
+   "qid": "Q750248",
+   "fame": 0.2,
+   "also": [
+    "Monastery of Saint Mary of Guadalupe",
+    "Our Lady of Guadalupe",
+    "Santa María de Guadalupe",
+    "Monastery of Santa María de Guadalupe",
+    "Real Monasterio de Santa María de Guadalupe",
+    "Royal Monastery of Our Lady of Guadalupe",
+    "Royal Monastery of St Mary of Guadalupe"
+   ]
+  },
+  {
+   "label": "Royal Palaces of Abomey",
+   "qid": "Q2425839",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Royal Tombs of the Joseon Dynasty",
+   "qid": "Q495276",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ruínas de León Viejo",
+   "qid": "Q1422898",
+   "fame": 0.2,
+   "also": [
+    "León Viejo",
+    "Ruins of León Viejo"
+   ]
+  },
+  {
+   "label": "Ruins of Gedi",
+   "qid": "Q502518",
+   "fame": 0.2,
+   "also": [
+    "Gede Ruins National Monument"
+   ]
+  },
+  {
+   "label": "Ruins of Loropéni",
+   "qid": "Q1269931",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ruins of St. Paul's",
+   "qid": "Q1551411",
+   "fame": 0.2,
+   "also": [
+    "Ruins of Saint Paul's"
+   ]
+  },
+  {
+   "label": "Rwenzori Mountains National Park",
+   "qid": "Q838928",
+   "fame": 0.2,
+   "also": [
+    "Rwenzori National Park"
+   ]
+  },
+  {
+   "label": "Sacred Ensembles of the Hoysalas",
+   "qid": "Q66023123",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sacred Mijikenda Kaya Forests",
+   "qid": "Q1362222",
+   "fame": 0.2,
+   "also": [
+    "Kaya"
+   ]
+  },
+  {
+   "label": "Sacred Sites and Pilgrimage Routes in the Kii Mountain Range",
+   "qid": "Q611345",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sacri Monti of Piedmont and Lombardy",
+   "qid": "Q753162",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sado Mine",
+   "qid": "Q11248197",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Saint John Abbey",
+   "qid": "Q757067",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Saint Sophia Cathedral in Polotsk",
+   "qid": "Q2465016",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Saint-Savin",
+   "qid": "Q738657",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Saloum Delta",
+   "qid": "Q559363",
+   "fame": 0.2,
+   "also": [
+    "Delta of the Sine-Saloum",
+    "Saloum River Delta",
+    "Sine-Saloum Delta"
+   ]
+  },
+  {
+   "label": "Saltaire",
+   "qid": "Q838920",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sambor Prei Kuk",
+   "qid": "Q1818746",
+   "fame": 0.2,
+   "also": [
+    "Isanapur Khmer",
+    "Ishanapura",
+    "Sambour Group of temples"
+   ]
+  },
+  {
+   "label": "Sammallahdenmäki",
+   "qid": "Q239748",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "San Agustin archeological park",
+   "qid": "Q2887224",
+   "fame": 0.2,
+   "also": [
+    "San Agustín Archaeological Park"
+   ]
+  },
+  {
+   "label": "San Basilio de Palenque",
+   "qid": "Q692174",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sanctuary of Asclepius, Epidaurus",
+   "qid": "Q7698713",
+   "fame": 0.2,
+   "also": [
+    "Epidaurus Asklepieion",
+    "Sanctuary of Asklepios",
+    "Sanctuary of Asklepios at Epidaurus"
+   ]
+  },
+  {
+   "label": "Sanctuary of Bom Jesus de Matosinhos",
+   "qid": "Q1595417",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sanctuary of the Madonna di San Luca",
+   "qid": "Q2004104",
+   "fame": 0.2,
+   "also": [
+    "Basilica della Madonna di San Luca",
+    "Santuario della Madonna di San Luca",
+    "The Madonna of San Luca"
+   ]
+  },
+  {
+   "label": "Sangay National Park",
+   "qid": "Q839603",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sangha Trinational",
+   "qid": "Q2580451",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sangiran",
+   "qid": "Q842328",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sans-Souci Palace",
+   "qid": "Q930795",
+   "fame": 0.2,
+   "also": [
+    "Palace of Sans-Souci"
+   ]
+  },
+  {
+   "label": "Sansa, Buddhist Mountain Monasteries in Korea",
+   "qid": "Q55306582",
+   "fame": 0.2,
+   "also": [
+    "Sansa"
+   ]
+  },
+  {
+   "label": "Santa Cruz de Mompós",
+   "qid": "Q740288",
+   "fame": 0.2,
+   "also": [
+    "Santa Cruz de Mompox"
+   ]
+  },
+  {
+   "label": "Santiniketan",
+   "qid": "Q1026431",
+   "fame": 0.2,
+   "also": [
+    "Shantiniketan"
+   ]
+  },
+  {
+   "label": "São Francisco Square",
+   "qid": "Q7214285",
+   "fame": 0.2,
+   "also": [
+    "São Francisco Square in the Town of São Cristóvão"
+   ]
+  },
+  {
+   "label": "Sarazm",
+   "qid": "Q422929",
+   "fame": 0.2,
+   "also": [
+    "Sarazm Archaeological Site"
+   ]
+  },
+  {
+   "label": "Saryarka – Steppe and Lakes of Northern Kazakhstan",
+   "qid": "Q2559020",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sassanid Archaeological Landscape of Fars Region",
+   "qid": "Q55379486",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sawahlunto",
+   "qid": "Q7263",
+   "fame": 0.2,
+   "also": [
+    "Kota Sawah Lunto",
+    "Sawahlunto City"
+   ]
+  },
+  {
+   "label": "Schokland",
+   "qid": "Q140869527",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Schwerin Castle",
+   "qid": "Q573656",
+   "fame": 0.2,
+   "also": [
+    "Schwerin Palace"
+   ]
+  },
+  {
+   "label": "Sculptural Ensemble of Constantin Brâncuși at Târgu Jiu",
+   "qid": "Q4680630",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sebastia",
+   "qid": "Q2918480",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Semmering railway",
+   "qid": "Q259313",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Senado Square",
+   "qid": "Q837935",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Serra da Capivara National Park",
+   "qid": "Q267394",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sewell",
+   "qid": "Q588417",
+   "fame": 0.2,
+   "also": [
+    "Sewell Mining Town"
+   ]
+  },
+  {
+   "label": "Shahr-e Sukhteh",
+   "qid": "Q1025825",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sheikh Safi al-Din Khānegāh and Shrine Ensemble",
+   "qid": "Q4243",
+   "fame": 0.2,
+   "also": [
+    "Sheikh Safi's Tomb",
+    "Ardabil Shrine",
+    "Ardebil Shrine"
+   ]
+  },
+  {
+   "label": "Shiretoko Peninsula",
+   "qid": "Q629238",
+   "fame": 0.2,
+   "also": [
+    "Shiretoko-hantō"
+   ]
+  },
+  {
+   "label": "Shrines and Temples of Nikkō",
+   "qid": "Q1063133",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Shushtar Historical Hydraulic System",
+   "qid": "Q2274974",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Si Thep historical park",
+   "qid": "Q1517758",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sian Ka'an",
+   "qid": "Q559789",
+   "fame": 0.2,
+   "also": [
+    "Sian Kaʼan Biosphere Reserve"
+   ]
+  },
+  {
+   "label": "Šibenik Cathedral",
+   "qid": "Q391973",
+   "fame": 0.2,
+   "also": [
+    "Cathedral of St. James in Šibenik"
+   ]
+  },
+  {
+   "label": "Sichuan Giant Panda Sanctuaries",
+   "qid": "Q629902",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sidi Bou Said",
+   "qid": "Q877391",
+   "fame": 0.2,
+   "also": [
+    "Jabal el-Menar",
+    "Village of Sidi Bou Saïd"
+   ]
+  },
+  {
+   "label": "Silk Roads: the Routes Network of Chang'an-Tianshan Corridor",
+   "qid": "Q17277933",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Silk Roads: Zarafshan-Karakum Corridor",
+   "qid": "Q122666385",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Singapore Botanic Gardens",
+   "qid": "Q3046409",
+   "fame": 0.2,
+   "also": [
+    "SING",
+    "Singapore Botanical Gardens"
+   ]
+  },
+  {
+   "label": "Sinharaja Forest Reserve",
+   "qid": "Q375634",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sítio Roberto Burle Marx",
+   "qid": "Q56695607",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Škocjan Caves",
+   "qid": "Q500376",
+   "fame": 0.2,
+   "also": [
+    "Škocjanske Jame"
+   ]
+  },
+  {
+   "label": "Skogskyrkogården",
+   "qid": "Q213988",
+   "fame": 0.2,
+   "also": [
+    "Forest cemetery"
+   ]
+  },
+  {
+   "label": "Socotra Archipelago",
+   "qid": "Q2860218",
+   "fame": 0.2,
+   "also": [
+    "Socotra"
+   ]
+  },
+  {
+   "label": "South China Karst",
+   "qid": "Q853364",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Southern Öland cultural landscape",
+   "qid": "Q396132",
+   "fame": 0.2,
+   "also": [
+    "Agricultural landscape of southern Öland"
+   ]
+  },
+  {
+   "label": "Spiš Castle",
+   "qid": "Q205558",
+   "fame": 0.2,
+   "also": [
+    "Arx Scepusiensis",
+    "Spišský Hrad",
+    "Szepesi vár",
+    "Zipser Burg"
+   ]
+  },
+  {
+   "label": "Spišská Kapitula",
+   "qid": "Q1042821",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Srebarna Nature Reserve",
+   "qid": "Q122082",
+   "fame": 0.2,
+   "also": [
+    "Srebarna",
+    "Srébarna Biosphere Reserve"
+   ]
+  },
+  {
+   "label": "St. Dominic's Church",
+   "qid": "Q4130614",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Stari Grad Plain",
+   "qid": "Q614212",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Stevns Klint",
+   "qid": "Q1614152",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Stoclet Palace",
+   "qid": "Q239028",
+   "fame": 0.2,
+   "also": [
+    "Stoclet House",
+    "Palais Stoclet",
+    "Stocletpaleis"
+   ]
+  },
+  {
+   "label": "Stone spheres of Costa Rica",
+   "qid": "Q282275",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Stonehenge, Avebury and Associated Sites",
+   "qid": "Q587584",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Stora Sjöfallet National Park",
+   "qid": "Q1505447",
+   "fame": 0.2,
+   "also": [
+    "Stora Sjöfallet"
+   ]
+  },
+  {
+   "label": "Studenica monastery",
+   "qid": "Q143042",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Su Nuraxi di Barumini",
+   "qid": "Q253241",
+   "fame": 0.2,
+   "also": [
+    "Su Nuraxi"
+   ]
+  },
+  {
+   "label": "Sudanese style mosques in northern Côte d'Ivoire",
+   "qid": "Q65725484",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sukur",
+   "qid": "Q1123956",
+   "fame": 0.2,
+   "also": [
+    "Sukur Cultural Landscape"
+   ]
+  },
+  {
+   "label": "Sulaiman-Too",
+   "qid": "Q750190",
+   "fame": 0.2,
+   "also": [
+    "Sulayman Mountain",
+    "Sulamain-Too"
+   ]
+  },
+  {
+   "label": "Sviyazhsk Assumption Monastery",
+   "qid": "Q4411008",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tabriz Bazaar",
+   "qid": "Q4399",
+   "fame": 0.2,
+   "also": [
+    "Bazaar of Tabriz",
+    "Tabriz Bazaar Complex",
+    "Tabriz Bazar",
+    "Tabriz Grand Bazaar"
+   ]
+  },
+  {
+   "label": "Taï National Park",
+   "qid": "Q328577",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tajín Veracruz",
+   "qid": "Q753895",
+   "fame": 0.2,
+   "also": [
+    "El Tajín"
+   ]
+  },
+  {
+   "label": "Takalik Abaj",
+   "qid": "Q1509537",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Takht-e Soleyman",
+   "qid": "Q115253",
+   "fame": 0.2,
+   "also": [
+    "Takht-e Soleiman",
+    "Takht-e Suleiman",
+    "Takht-i-Suleiman"
+   ]
+  },
+  {
+   "label": "Tallinn Old Town",
+   "qid": "Q726803",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tamgaly",
+   "qid": "Q943327",
+   "fame": 0.2,
+   "also": [
+    "Tanbaly"
+   ]
+  },
+  {
+   "label": "Taos Pueblo",
+   "qid": "Q252814",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Taputapuatea marae",
+   "qid": "Q3287362",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tasmanian Wilderness",
+   "qid": "Q138170",
+   "fame": 0.2,
+   "also": [
+    "Tasmanian Wilderness World Heritage Area",
+    "The Tasmanian Wilderness",
+    "Zone de nature sauvage de Tasmanie"
+   ]
+  },
+  {
+   "label": "Te Wahipounamu",
+   "qid": "Q575398",
+   "fame": 0.2,
+   "also": [
+    "Te Wahipounamu – South West New Zealand World Heritage Site",
+    "Te Wahipounamu South West New Zealand World Heritage Area"
+   ]
+  },
+  {
+   "label": "Tehuacán-Cuicatlán Biosphere Reserve",
+   "qid": "Q5853681",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tell es-Sultan",
+   "qid": "Q2402267",
+   "fame": 0.2,
+   "also": [
+    "Jericho",
+    "Tel Jericho"
+   ]
+  },
+  {
+   "label": "Tell Umm el-'Amr",
+   "qid": "Q7697530",
+   "fame": 0.2,
+   "also": [
+    "Saint Hilarion monastery",
+    "Tell Umm Amer"
+   ]
+  },
+  {
+   "label": "Temple of Apollo Epicurius in Bassae",
+   "qid": "Q38278862",
+   "fame": 0.2,
+   "also": [
+    "Temple of Apollo at Bassae",
+    "Apollo Epicurius temple",
+    "Temple of Apollo Epicurius at Bassae",
+    "Temple of Apollo Epikourios",
+    "Temple of Apollo in Bassai"
+   ]
+  },
+  {
+   "label": "Temple of Jupiter",
+   "qid": "Q21079381",
+   "fame": 0.2,
+   "also": [
+    "Baalbek Temple of Jupiter",
+    "Temple of Jupiter Heliopolitanus",
+    "Temple of Jupiter Helipolitanus"
+   ]
+  },
+  {
+   "label": "Temple of Kukulcan",
+   "qid": "Q1128327",
+   "fame": 0.2,
+   "also": [
+    "La Pirámide",
+    "Pyramid of Kukulcan",
+    "Structure 5B18"
+   ]
+  },
+  {
+   "label": "Temple of the Inscriptions",
+   "qid": "Q2559153",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Teruel Cathedral",
+   "qid": "Q513893",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "The 20th-Century Architecture of Frank Lloyd Wright",
+   "qid": "Q10498496",
+   "fame": 0.2,
+   "also": [
+    "20th-Century Architecture of Frank Lloyd Wright"
+   ]
+  },
+  {
+   "label": "The Architectural Work of Le Corbusier",
+   "qid": "Q55619850",
+   "fame": 0.2,
+   "also": [
+    "Le Corbusier World Heritage"
+   ]
+  },
+  {
+   "label": "The Gedeo Cultural Landscape",
+   "qid": "Q65886125",
+   "fame": 0.2,
+   "also": [
+    "Gedeo Cultural Landscape"
+   ]
+  },
+  {
+   "label": "The Great Spa Towns of Europe",
+   "qid": "Q16064866",
+   "fame": 0.2,
+   "also": [
+    "Great Spa Towns of Europe",
+    "Great spas of Europe"
+   ]
+  },
+  {
+   "label": "Thimlich Ohinga",
+   "qid": "Q3524629",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Thracian Tomb of Kazanlak",
+   "qid": "Q301815",
+   "fame": 0.2,
+   "also": [
+    "Kazanlak tomb",
+    "vaulted-brickwork tomb Kazanlak"
+   ]
+  },
+  {
+   "label": "Thracian Tomb of Sveshtari",
+   "qid": "Q650531",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Three Castles of Bellinzona",
+   "qid": "Q510279",
+   "fame": 0.2,
+   "also": [
+    "Castles of Bellinzona"
+   ]
+  },
+  {
+   "label": "Three Parallel Rivers National Park",
+   "qid": "Q575035",
+   "fame": 0.2,
+   "also": [
+    "Three Parallel Rivers"
+   ]
+  },
+  {
+   "label": "Thungyai Naresuan Wildlife Sanctuary",
+   "qid": "Q422995",
+   "fame": 0.2,
+   "also": [
+    "Thung Yai Naresuan East Wildlife Sanctuary"
+   ]
+  },
+  {
+   "label": "Tierradentro",
+   "qid": "Q179506",
+   "fame": 0.2,
+   "also": [
+    "Tierradentroo"
+   ]
+  },
+  {
+   "label": "Tigrovaya Balka Nature Reserve",
+   "qid": "Q1138108",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tipasa",
+   "qid": "Q3529269",
+   "fame": 0.2,
+   "also": [
+    "Mint of Tipasa",
+    "Tipasa in Mauretania"
+   ]
+  },
+  {
+   "label": "Tiya archaeological site",
+   "qid": "Q6130080",
+   "fame": 0.2,
+   "also": [
+    "Tiya",
+    "Tiya Stelae",
+    "Tiya Steles"
+   ]
+  },
+  {
+   "label": "Tlacotalpan",
+   "qid": "Q903792",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tongariro National Park",
+   "qid": "Q202845",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tournai Cathedral",
+   "qid": "Q391229",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tower of Kamianiec",
+   "qid": "Q1710170",
+   "fame": 0.2,
+   "also": [
+    "Tower of Kamyenyets",
+    "Tower of Kamyanyets"
+   ]
+  },
+  {
+   "label": "Town Hall of Bremen",
+   "qid": "Q19479",
+   "fame": 0.2,
+   "also": [
+    "Bremen City Hall"
+   ]
+  },
+  {
+   "label": "Tràng An",
+   "qid": "Q10810559",
+   "fame": 0.2,
+   "also": [
+    "Tràng An Scenic Landscape Complex",
+    "Trang An Landscape Complex"
+   ]
+  },
+  {
+   "label": "Trans-Iranian railway",
+   "qid": "Q162835",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Transfiguration Church in Polack",
+   "qid": "Q1661800",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Trinity Lavra of St. Sergius",
+   "qid": "Q211962",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tsingy de Bemaraha Strict Nature Reserve",
+   "qid": "Q1405154",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tubbataha Reef",
+   "qid": "Q927108",
+   "fame": 0.2,
+   "also": [
+    "Tubbataha Natural Park",
+    "Tubbataha Reefs Natural Park"
+   ]
+  },
+  {
+   "label": "Tusi Sites",
+   "qid": "Q19852428",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Twyfelfontein",
+   "qid": "Q754791",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ujung Kulon National Park",
+   "qid": "Q4522",
+   "fame": 0.2,
+   "also": [
+    "Suaka Margasatwa Ujungkulon",
+    "Ujong Kulon Wildlife Reserve",
+    "Ujung Kulon"
+   ]
+  },
+  {
+   "label": "Uluṟu-Kata Tjuṯa National Park",
+   "qid": "Q251999",
+   "fame": 0.2,
+   "also": [
+    "Parc national d'Uluru-Kata Tjuta",
+    "Uluru-Kata Tjuta"
+   ]
+  },
+  {
+   "label": "Umm ar-Rasas",
+   "qid": "Q822842",
+   "fame": 0.2,
+   "also": [
+    "Kastron Mefa'a"
+   ]
+  },
+  {
+   "label": "Umm el-Jimal",
+   "qid": "Q3107493",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "University City of Caracas",
+   "qid": "Q1061531",
+   "fame": 0.2,
+   "also": [
+    "CUC",
+    "Ciudad Universitaria de Caracas"
+   ]
+  },
+  {
+   "label": "Upper German-Raetian Limes",
+   "qid": "Q17374397",
+   "fame": 0.2,
+   "also": [
+    "Upper Germanic-Rhaetian Limes"
+   ]
+  },
+  {
+   "label": "Urnes Stave Church",
+   "qid": "Q210678",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Val d'Orcia",
+   "qid": "Q217449",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Valle dei Templi",
+   "qid": "Q636774",
+   "fame": 0.2,
+   "also": [
+    "Archaeological Area of Agrigento"
+   ]
+  },
+  {
+   "label": "Vallée de Mai",
+   "qid": "Q573558",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Valley of Flowers National Park",
+   "qid": "Q605897",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Valongo Wharf",
+   "qid": "Q20048515",
+   "fame": 0.2,
+   "also": [
+    "Muelle de la Emperatriz",
+    "Muelle de Valongo"
+   ]
+  },
+  {
+   "label": "Van Nelle Factory",
+   "qid": "Q2328849",
+   "fame": 0.2,
+   "also": [
+    "Van Nellefabriek"
+   ]
+  },
+  {
+   "label": "Varlaam monastery",
+   "qid": "Q3320354",
+   "fame": 0.2,
+   "also": [
+    "Monastery of Varlaam",
+    "Moni Varlaam"
+   ]
+  },
+  {
+   "label": "Vatnajökull National Park",
+   "qid": "Q1353292",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vecrīga",
+   "qid": "Q1026415",
+   "fame": 0.2,
+   "also": [
+    "Historic Centre of Riga",
+    "Old Riga",
+    "Vecpilsēta"
+   ]
+  },
+  {
+   "label": "Vega Archipelago",
+   "qid": "Q829084",
+   "fame": 0.2,
+   "also": [
+    "Vegaøyan",
+    "Vega Islands"
+   ]
+  },
+  {
+   "label": "Verla",
+   "qid": "Q217447",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Via Traiana",
+   "qid": "Q432579",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Victorian Gothic and Art Deco Ensembles of Mumbai",
+   "qid": "Q16942531",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vieux Lyon",
+   "qid": "Q8399",
+   "fame": 0.2,
+   "also": [
+    "Lyon old town"
+   ]
+  },
+  {
+   "label": "Villa d'Este",
+   "qid": "Q746063",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Villa Romana del Casale",
+   "qid": "Q505617",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Villa Tugendhat",
+   "qid": "Q457453",
+   "fame": 0.2,
+   "also": [
+    "Tugendhat house"
+   ]
+  },
+  {
+   "label": "Villages with fortified churches in Transylvania",
+   "qid": "Q89675",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vilnius Old Town",
+   "qid": "Q445649",
+   "fame": 0.2,
+   "also": [
+    "Vilnius Historic Center",
+    "Vilnius Historic Centre"
+   ]
+  },
+  {
+   "label": "Viñales Valley",
+   "qid": "Q48108",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Virgin Komi Forests",
+   "qid": "Q593870",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Visoki Dečani",
+   "qid": "Q849517",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vjetrenica",
+   "qid": "Q2880621",
+   "fame": 0.2,
+   "also": [
+    "Vjetrenica Cave"
+   ]
+  },
+  {
+   "label": "Vlkolínec",
+   "qid": "Q392365",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Völklingen Ironworks",
+   "qid": "Q127754",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vredefort crater",
+   "qid": "Q330095",
+   "fame": 0.2,
+   "also": [
+    "Vredefort impact structure",
+    "Vredefort dome"
+   ]
+  },
+  {
+   "label": "W-Arly-Pendjari Complex",
+   "qid": "Q25379596",
+   "fame": 0.2,
+   "also": [
+    "WAP complex"
+   ]
+  },
+  {
+   "label": "Wadi Al-Hitan",
+   "qid": "Q501833",
+   "fame": 0.2,
+   "also": [
+    "Whale Valley"
+   ]
+  },
+  {
+   "label": "Wadi Wurayah",
+   "qid": "Q2538723",
+   "fame": 0.2,
+   "also": [
+    "Wādī Al Wirе̄'ah",
+    "Wadi Al Wurai‘ah",
+    "Wādī Al-Wurayʿah",
+    "Wadi Waraiya",
+    "Wadi Wurayyah",
+    "Wadi Wurrayah"
+   ]
+  },
+  {
+   "label": "Walls of Jerusalem",
+   "qid": "Q2918723",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Warsaw Old Town",
+   "qid": "Q1139084",
+   "fame": 0.2,
+   "also": [
+    "Old and New Town of Warsaw"
+   ]
+  },
+  {
+   "label": "Wat Phra Mahathat",
+   "qid": "Q2552354",
+   "fame": 0.2,
+   "also": [
+    "Wat Phra Mahathat Woramahawihan"
+   ]
+  },
+  {
+   "label": "Waterton-Glacier International Peace Park",
+   "qid": "Q828212",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Way of Saint James UNESCO World Heritage Sites in France",
+   "qid": "Q2962473",
+   "fame": 0.2,
+   "also": [
+    "Routes of Santiago de Compostela in France",
+    "route of Santiago de Compostela in France",
+    "way of St. James in France"
+   ]
+  },
+  {
+   "label": "Western Xia Mausoleums",
+   "qid": "Q1069411",
+   "fame": 0.2,
+   "also": [
+    "Western Xia Imperial Tombs"
+   ]
+  },
+  {
+   "label": "Wet Tropics of Queensland",
+   "qid": "Q1135808",
+   "fame": 0.2,
+   "also": [
+    "Tropiques humides de Queensland"
+   ]
+  },
+  {
+   "label": "White City",
+   "qid": "Q159070",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "White Monuments of Vladimir and Suzdal",
+   "qid": "Q838264",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Wieskirche",
+   "qid": "Q156675",
+   "fame": 0.2,
+   "also": [
+    "Pilgrimage Church of Wies"
+   ]
+  },
+  {
+   "label": "Willandra Lakes Region",
+   "qid": "Q747875",
+   "fame": 0.2,
+   "also": [
+    "Région des lacs Willandra"
+   ]
+  },
+  {
+   "label": "Windmills at Kinderdijk",
+   "qid": "Q12012965",
+   "fame": 0.2,
+   "also": [
+    "Kinderdijk windmills"
+   ]
+  },
+  {
+   "label": "wooden churches of Maramureș",
+   "qid": "Q828412",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Wooden churches of Southern Lesser Poland",
+   "qid": "Q854267",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "wooden churches of the Slovak Carpathians",
+   "qid": "Q471717",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Wooden tserkvas of Carpathian region in Poland and Ukraine",
+   "qid": "Q8032604",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Writing-on-Stone Provincial Park",
+   "qid": "Q8038519",
+   "fame": 0.2,
+   "also": [
+    "Áísínai’pi"
+   ]
+  },
+  {
+   "label": "Xanadu",
+   "qid": "Q471765",
+   "fame": 0.2,
+   "also": [
+    "Shangdu",
+    "Kaiping",
+    "Shang-tu",
+    "Site of Xanadu",
+    "Yuan Shangdu"
+   ]
+  },
+  {
+   "label": "Xochicalco",
+   "qid": "Q797120",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Yanbaru National Park",
+   "qid": "Q27134534",
+   "fame": 0.2,
+   "also": [
+    "Yambaru National Park"
+   ]
+  },
+  {
+   "label": "Yinxu",
+   "qid": "Q464904",
+   "fame": 0.2,
+   "also": [
+    "archaeological site of Yin Xu",
+    "Ruins of Yin",
+    "Yin Ruins"
+   ]
+  },
+  {
+   "label": "Yser Tower",
+   "qid": "Q1708620",
+   "fame": 0.2,
+   "also": [
+    "Yser Towers"
+   ]
+  },
+  {
+   "label": "Yungang Grottoes",
+   "qid": "Q308805",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zagori",
+   "qid": "Q2712111",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zhoukoudian site",
+   "qid": "Q499552",
+   "fame": 0.2,
+   "also": [
+    "Zhoukoudian Peking Man Site"
+   ]
+  },
+  {
+   "label": "Zollverein Coal Mine Industrial Complex",
+   "qid": "Q122026",
+   "fame": 0.2,
+   "also": [
+    "Zeche Zollverein"
+   ]
+  },
+  {
+   "label": "Zubarah",
+   "qid": "Q2727469",
+   "fame": 0.2,
+   "also": [
+    "Al Zubarah",
+    "Az Zubarah"
+   ]
+  },
+  {
+   "label": "Lorentz National Park",
+   "qid": "Q4516",
+   "fame": 0.199,
+   "also": [
+    "Taman Nasional Loretz"
+   ]
+  },
+  {
+   "label": "Abu Mena",
+   "qid": "Q9278",
+   "fame": 0.196,
+   "also": [
+    "Abu Mina"
+   ]
+  },
+  {
+   "label": "Garamba National Park",
+   "qid": "Q308893",
+   "fame": 0.188,
+   "also": [
+    "Parc National de la Garamba",
+    "Tshisumbu"
+   ]
+  },
+  {
+   "label": "Kinabalu Park",
+   "qid": "Q834893",
+   "fame": 0.183,
+   "also": [
+    "Kinabalu National Park"
+   ]
+  },
+  {
+   "label": "Niokolo-Koba National Park",
+   "qid": "Q679891",
+   "fame": 0.169,
+   "also": [
+    "Parc National du Niokolo Koba",
+    "PNNK"
+   ]
+  },
+  {
+   "label": "Garajonay National Park",
+   "qid": "Q464942",
+   "fame": 0.166,
+   "also": []
+  },
+  {
+   "label": "Tropical Rainforest Heritage of Sumatra",
+   "qid": "Q4521",
+   "fame": 0.163,
+   "also": []
+  },
+  {
+   "label": "Kahuzi-Biéga National Park",
+   "qid": "Q457324",
+   "fame": 0.154,
+   "also": []
+  },
+  {
+   "label": "Comoé National Park",
+   "qid": "Q501344",
+   "fame": 0.116,
+   "also": []
+  },
+  {
+   "label": "Manovo-Gounda St. Floris National Park",
+   "qid": "Q503835",
+   "fame": 0.087,
+   "also": []
+  },
+  {
+   "label": "Mỹ Sơn",
+   "qid": "Q391406",
+   "fame": 0,
+   "also": [
+    "Mỹ Sơn archaeological site",
+    "Monuments Čams De L'Annam",
+    "My Son sanctuary",
+    "My Son Santuary"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,371 @@
+{
+ "id": "table.music.composers-countries",
+ "kind": "table",
+ "title": "Famous composers and their country",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "composers",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { { SELECT ?item ?sitelinks WHERE { ?item wdt:P31 wd:Q5 ; wdt:P106 wd:Q36834 ; wdt:P19 [] ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks >= 60) FILTER NOT EXISTS { VALUES ?other { wd:Q33999 wd:Q1028181 wd:Q2526255 wd:Q82955 wd:Q177220 wd:Q1234713 wd:Q205375 wd:Q81096 wd:Q36180 wd:Q639669 wd:Q10800557 } ?item wdt:P106 ?other } } ORDER BY DESC(?sitelinks) LIMIT 1500 } ?item wdt:P19/wdt:P17 ?c } GROUP BY ?item ?sitelinks } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T04:29:41.503Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T04:29:41.503Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "composer",
+  "many": "composers",
+  "wildcard": "person",
+  "hookAsk": "Which composer {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country was {label} from?",
+    "statement": "{label} was from {value}.",
+    "match": "Match each composer to their country.",
+    "odd": "Three of these composers were from {value}. Which one wasn't?",
+    "all": "Tap all {n} composers from {value}."
+   }
+  },
+  "exclude": [
+   {
+    "qid": "Q7304",
+    "why": "Mahler: born in Bohemia, worked as an Austrian; country is disputed"
+   },
+   {
+    "qid": "Q7302",
+    "why": "Handel: born German, became British; country is disputed"
+   }
+  ]
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "John Williams",
+   "qid": "Q131285",
+   "fame": 0.691,
+   "country": "United States",
+   "description": "American composer and conductor (born 1932)",
+   "hook": "wrote the thundering themes for Star Wars, Jaws and Indiana Jones",
+   "known": 0.7,
+   "kind": "modern"
+  },
+  {
+   "label": "Ludwig van Beethoven",
+   "qid": "Q255",
+   "fame": 0.681,
+   "country": "Germany",
+   "description": "German composer (1770-1827)",
+   "hook": "kept writing towering symphonies, including the Ode to Joy finale, after going deaf",
+   "known": 0.95,
+   "kind": "romantic"
+  },
+  {
+   "label": "Johann Sebastian Bach",
+   "qid": "Q1339",
+   "fame": 0.64,
+   "country": "Germany",
+   "description": "German composer (1685–1750)",
+   "hook": "wrote the Brandenburg Concertos and a famous Toccata and Fugue for organ in the Baroque era",
+   "known": 0.9,
+   "kind": "baroque"
+  },
+  {
+   "label": "Pyotr Ilyich Tchaikovsky",
+   "qid": "Q7315",
+   "fame": 0.603,
+   "country": "Russia",
+   "description": "Russian composer (1840–1893)",
+   "hook": "wrote the ballets Swan Lake and The Nutcracker, plus an overture with real cannon fire",
+   "known": 0.85,
+   "kind": "romantic"
+  },
+  {
+   "label": "Antonio Vivaldi",
+   "qid": "Q1340",
+   "fame": 0.583,
+   "country": "Italy",
+   "description": "Italian composer and violinist (1678–1741)",
+   "hook": "wrote The Four Seasons, a set of violin concertos, and was nicknamed the Red Priest",
+   "known": 0.8,
+   "kind": "baroque"
+  },
+  {
+   "label": "Sergei Rachmaninoff",
+   "qid": "Q131861",
+   "fame": 0.582,
+   "country": "Russia",
+   "description": "Russian composer, pianist and conductor (1873–1943)",
+   "hook": "was a towering-handed pianist famed for his dark, romantic Second and Third Piano Concertos",
+   "known": 0.5,
+   "kind": "romantic"
+  },
+  {
+   "label": "Franz Schubert",
+   "qid": "Q7312",
+   "fame": 0.564,
+   "country": "Austria",
+   "description": "Austrian composer (1797–1828)",
+   "hook": "wrote hundreds of songs and an Unfinished Symphony before dying in his early thirties",
+   "known": 0.6,
+   "kind": "romantic"
+  },
+  {
+   "label": "Gustav Mahler",
+   "qid": "Q7304",
+   "fame": 0.562,
+   "country": "Czech Republic",
+   "description": "Austrian late-Romantic composer (1860–1911)",
+   "hook": "wrote enormous late-Romantic symphonies, including the Resurrection and the Symphony of a Thousand",
+   "known": 0.45,
+   "kind": "romantic"
+  },
+  {
+   "label": "Antonio Salieri",
+   "qid": "Q51088",
+   "fame": 0.559,
+   "country": "Italy",
+   "description": "Italian composer and teacher (1750–1825)",
+   "hook": "is remembered, thanks to a stage play and film, as the jealous rival of Mozart",
+   "known": 0.4,
+   "kind": "classical"
+  },
+  {
+   "label": "Claude Debussy",
+   "qid": "Q4700",
+   "fame": 0.558,
+   "country": "France",
+   "description": "French classical composer (1862–1918)",
+   "hook": "wrote the dreamy Clair de Lune and the orchestral piece Prelude to the Afternoon of a Faun",
+   "known": 0.7,
+   "kind": "impressionist"
+  },
+  {
+   "label": "Philip Glass",
+   "qid": "Q189729",
+   "fame": 0.547,
+   "country": "United States",
+   "description": "American composer (born 1937)",
+   "hook": "is the best-known minimalist, whose music uses hypnotic repeating patterns, as in Einstein on the Beach",
+   "known": 0.55,
+   "kind": "modern"
+  },
+  {
+   "label": "Antonín Dvořák",
+   "qid": "Q7298",
+   "fame": 0.544,
+   "country": "Czech Republic",
+   "description": "Czech composer (1841–1904)",
+   "hook": "wrote the Symphony From the New World after visiting America",
+   "known": 0.6,
+   "kind": "romantic"
+  },
+  {
+   "label": "George Frideric Handel",
+   "qid": "Q7302",
+   "fame": 0.544,
+   "country": "Germany",
+   "description": "German-British Baroque composer (1685–1759)",
+   "hook": "wrote the oratorio Messiah, with its rousing Hallelujah chorus, and Water Music for a royal barge party",
+   "known": 0.75,
+   "kind": "baroque"
+  },
+  {
+   "label": "Johannes Brahms",
+   "qid": "Q7294",
+   "fame": 0.54,
+   "country": "Germany",
+   "description": "German composer (1833–1897)",
+   "hook": "wrote a famous lullaby and the Hungarian Dances, and was a friend and champion of Clara Schumann",
+   "known": 0.75,
+   "kind": "romantic"
+  },
+  {
+   "label": "Igor Stravinsky",
+   "qid": "Q7314",
+   "fame": 0.539,
+   "country": "Russia",
+   "description": "Russian, French, and American composer (1882–1971)",
+   "hook": "caused a riot at the premiere of his ballet The Rite of Spring",
+   "known": 0.6,
+   "kind": "modern"
+  },
+  {
+   "label": "Joseph Haydn",
+   "qid": "Q7349",
+   "fame": 0.528,
+   "country": "Austria",
+   "description": "Austrian composer (1732–1809)",
+   "hook": "is called the Father of the Symphony and taught Beethoven in Vienna",
+   "known": 0.7,
+   "kind": "classical"
+  },
+  {
+   "label": "Edward Elgar",
+   "qid": "Q179631",
+   "fame": 0.523,
+   "country": "United Kingdom",
+   "description": "English composer (1857-1934)",
+   "hook": "wrote the Enigma Variations and the Pomp and Circumstance march played at graduations",
+   "known": 0.6,
+   "kind": "romantic"
+  },
+  {
+   "label": "Edvard Grieg",
+   "qid": "Q80621",
+   "fame": 0.517,
+   "country": "Norway",
+   "description": "Norwegian composer and pianist (1843–1907)",
+   "hook": "wrote the Peer Gynt suite, including In the Hall of the Mountain King",
+   "known": 0.7,
+   "kind": "romantic"
+  },
+  {
+   "label": "Maurice Ravel",
+   "qid": "Q1178",
+   "fame": 0.517,
+   "country": "France",
+   "description": "French composer (1875–1937)",
+   "hook": "wrote Boléro, a piece that builds one repeating melody from a quiet start to a huge climax",
+   "known": 0.75,
+   "kind": "impressionist"
+  },
+  {
+   "label": "Erik Satie",
+   "qid": "Q187192",
+   "fame": 0.516,
+   "country": "France",
+   "description": "French composer and pianist (1866-1925)",
+   "hook": "wrote the calm, spare piano pieces Gymnopédies and Gnossiennes, an early taste of ambient music",
+   "known": 0.55,
+   "kind": "impressionist"
+  },
+  {
+   "label": "Jean Sibelius",
+   "qid": "Q45682",
+   "fame": 0.509,
+   "country": "Finland",
+   "description": "Finnish composer (1865–1957)",
+   "hook": "wrote the patriotic tone poem Finlandia and a famous violin concerto",
+   "known": 0.5,
+   "kind": "impressionist"
+  },
+  {
+   "label": "Niccolò Paganini",
+   "qid": "Q66075",
+   "fame": 0.506,
+   "country": "Italy",
+   "description": "Italian violinist and composer (1782–1840)",
+   "hook": "was a legendary virtuoso violinist, rumored to have made a deal with the devil, famed for his 24 Caprices",
+   "known": 0.5,
+   "kind": "romantic"
+  },
+  {
+   "label": "Aaron Copland",
+   "qid": "Q192185",
+   "fame": 0.502,
+   "country": "United States",
+   "description": "American composer, composition teacher, writer, and conductor (1900-1990)",
+   "hook": "wrote Appalachian Spring and Fanfare for the Common Man, defining a wide-open American sound",
+   "known": 0.5,
+   "kind": "modern"
+  },
+  {
+   "label": "Camille Saint-Saëns",
+   "qid": "Q150445",
+   "fame": 0.497,
+   "country": "France",
+   "description": "French composer, organist, conductor and pianist (1835–1921)",
+   "hook": "wrote The Carnival of the Animals and the Organ Symphony",
+   "known": 0.6,
+   "kind": "romantic"
+  },
+  {
+   "label": "Clara Schumann",
+   "qid": "Q132232",
+   "fame": 0.487,
+   "country": "Germany",
+   "description": "German musician and composer (1819–1896)",
+   "hook": "was a celebrated child-prodigy pianist who toured Europe and wed fellow composer Robert",
+   "known": 0.4,
+   "kind": "romantic"
+  },
+  {
+   "label": "Johann Strauss II",
+   "qid": "Q83309",
+   "fame": 0.477,
+   "country": "Austria",
+   "description": "Austrian composer (1825-1899)",
+   "hook": "was the Waltz King, who wrote The Blue Danube and the operetta Die Fledermaus",
+   "known": 0.7,
+   "kind": "romantic"
+  },
+  {
+   "label": "Gioachino Rossini",
+   "qid": "Q9726",
+   "fame": 0.467,
+   "country": "Italy",
+   "description": "Italian opera composer (1792–1868)",
+   "hook": "wrote The Barber of Seville and the William Tell Overture, whose finale was the Lone Ranger's theme",
+   "known": 0.65,
+   "kind": "romantic"
+  },
+  {
+   "label": "Alexander Scriabin",
+   "qid": "Q185647",
+   "fame": 0.465,
+   "country": "Russia",
+   "description": "Russian composer and pianist (1872–1915)",
+   "hook": "wrote mystical, colorful music and reportedly saw sounds as colors",
+   "known": 0.3,
+   "kind": "romantic"
+  },
+  {
+   "label": "Nikolai Rimsky-Korsakov",
+   "qid": "Q93227",
+   "fame": 0.454,
+   "country": "Russia",
+   "description": "Russian composer (1844–1908)",
+   "hook": "wrote Scheherazade and The Flight of the Bumblebee while serving as a naval officer turned teacher",
+   "known": 0.55,
+   "kind": "romantic"
+  },
+  {
+   "label": "Henry Purcell",
+   "qid": "Q9695",
+   "fame": 0.453,
+   "country": "United Kingdom",
+   "description": "English composer (1659–1695)",
+   "hook": "wrote the opera Dido and Aeneas, with its heartbreaking lament, in the Baroque era",
+   "known": 0.35,
+   "kind": "baroque"
+  }
+ ]
+}

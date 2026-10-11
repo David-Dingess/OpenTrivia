@@ -1,0 +1,358 @@
+{
+ "id": "table.getting-around.iconic-vehicles",
+ "kind": "table",
+ "title": "Iconic vehicles and their country",
+ "genre": "daily-life",
+ "category": "getting-around",
+ "topic": "cars",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { VALUES (?item ?itemLabel ?c) { (wd:Q3273735 \"London black cab\" wd:Q145) (wd:Q217673 \"Vespa\" wd:Q38) (wd:Q152946 \"Beetle\" wd:Q183) (wd:Q495075 \"Willys Jeep\" wd:Q30) (wd:Q58678 \"Yellow school bus\" wd:Q30) (wd:Q938552 \"Routemaster bus\" wd:Q145) (wd:Q326015 \"2CV\" wd:Q142) (wd:Q467767 \"Fiat 500\" wd:Q38) (wd:Q182323 \"Model T\" wd:Q30) (wd:Q153681 \"Trabant\" wd:Q16957) (wd:Q652494 \"Jeepney\" wd:Q928) (wd:Q1908107 \"Matatu\" wd:Q114) (wd:Q17909 \"Piaggio Ape\" wd:Q38) (wd:Q1367306 \"Reliant Robin\" wd:Q145) (wd:Q1819861 \"VW Kombi camper van\" wd:Q183) (wd:Q409230 \"Airstream trailer\" wd:Q30) (wd:Q217046 \"Humvee\" wd:Q30) (wd:Q182916 \"Venetian gondola\" wd:Q38) (wd:Q374956 \"San Francisco cable car\" wd:Q30) (wd:Q164338 \"Shinkansen bullet train\" wd:Q17) (wd:Q129337 \"TGV\" wd:Q142) (wd:Q214893 \"Segway\" wd:Q30) (wd:Q848607 \"Toyota Hilux\" wd:Q17) (wd:Q1619367 \"Hindustan Ambassador\" wd:Q668) (wd:Q755309 \"Greyhound bus\" wd:Q30) (wd:Q205011 \"Chinese junk\" wd:Q148) (wd:Q1192736 \"Honda Super Cub\" wd:Q17) (wd:Q152238 \"Tata Nano\" wd:Q668) (wd:Q247716 \"Renault 4\" wd:Q142) (wd:Q1935247 \"Songthaew\" wd:Q869) (wd:Q1412490 \"Lambretta\" wd:Q38) (wd:Q1316596 \"New York yellow cab\" wd:Q30) (wd:Q183476 \"Ford Mustang\" wd:Q30) (wd:Q465966 \"Citroen DS\" wd:Q142) (wd:Q219357 \"Porsche 911\" wd:Q183) (wd:Q1401364 \"Rolls-Royce Silver Ghost\" wd:Q145) (wd:Q36024 \"Classic Mini\" wd:Q145) (wd:Q17241 \"Zamboni\" wd:Q30) (wd:Q914069 \"Toyota Land Cruiser\" wd:Q17) (wd:Q908027 \"Land Rover Defender\" wd:Q145) (wd:Q56166 \"Chevrolet Corvette\" wd:Q30) } ?item wikibase:sitelinks ?sitelinks . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?c rdfs:label ?countryLabel . FILTER(LANG(?countryLabel)=\"en\") } ORDER BY DESC(?sitelinks) LIMIT 108",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T11:07:28.318Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T13:00:00.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "vehicle",
+  "many": "vehicles",
+  "minFame": 0.45,
+  "theLabels": [
+   "Toyota Land Cruiser",
+   "Toyota Hilux",
+   "Shinkansen bullet train",
+   "Ford Mustang",
+   "Beetle",
+   "Porsche 911",
+   "Model T",
+   "Chevrolet Corvette",
+   "Humvee",
+   "Classic Mini",
+   "Land Rover Defender",
+   "San Francisco cable car",
+   "Willys Jeep",
+   "Vespa",
+   "TGV",
+   "Fiat 500",
+   "2CV",
+   "Citroen DS",
+   "Hindustan Ambassador",
+   "Reliant Robin",
+   "Greyhound bus",
+   "Chinese junk",
+   "Segway",
+   "London black cab",
+   "Honda Super Cub",
+   "Jeepney",
+   "Yellow school bus"
+  ],
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country does {label} come from?",
+    "statement": "{label} comes from {value}.",
+    "match": "Match each vehicle to the country it comes from.",
+    "odd": "Three of these vehicles come from {value}. Which one doesn't?",
+    "all": "Tap all {n} vehicles that come from {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Toyota Land Cruiser",
+   "qid": "Q914069",
+   "fame": 0.63,
+   "country": "Japan",
+   "description": "four-wheel-drive vehicle from Toyota",
+   "hook": "is the long-running four-wheel-drive series that has sold over ten million worldwide",
+   "known": 0.6,
+   "kind": "car"
+  },
+  {
+   "label": "Toyota Hilux",
+   "qid": "Q848607",
+   "fame": 0.622,
+   "country": "Japan",
+   "description": "series of light commercial vehicles produced by Toyota Motor Corporation",
+   "hook": "is a tough pickup truck whose name blends the words high and luxury",
+   "known": 0.4,
+   "kind": "truck"
+  },
+  {
+   "label": "Shinkansen bullet train",
+   "qid": "Q164338",
+   "fame": 0.603,
+   "country": "Japan",
+   "description": "Japanese high-speed rail system",
+   "hook": "is the high-speed rail network that began linking Tokyo to other regions just before an Olympics there",
+   "known": 0.8,
+   "kind": "train"
+  },
+  {
+   "label": "Ford Mustang",
+   "qid": "Q183476",
+   "fame": 0.602,
+   "country": "United States",
+   "description": "American muscle car model",
+   "hook": "gave its name to the pony car class, with a long hood and short rear deck",
+   "known": 0.95,
+   "kind": "car"
+  },
+  {
+   "label": "Beetle",
+   "qid": "Q152946",
+   "fame": 0.598,
+   "country": "Germany",
+   "description": "Volkswagen-made car produced from 1938 to 2003",
+   "hook": "is the best-selling car ever built on a single platform, famed for its bug-like shape",
+   "known": 0.95,
+   "kind": "car"
+  },
+  {
+   "label": "Porsche 911",
+   "qid": "Q219357",
+   "fame": 0.593,
+   "country": "Germany",
+   "description": "car model series",
+   "hook": "is a rear-engined sports car family with a flat-six engine hung out at the back",
+   "known": 0.8,
+   "kind": "car"
+  },
+  {
+   "label": "Model T",
+   "qid": "Q182323",
+   "fame": 0.581,
+   "country": "United States",
+   "description": "American car (1908-1927)",
+   "hook": "is regarded as the first automobile ordinary middle-class families could afford",
+   "known": 0.6,
+   "kind": "car"
+  },
+  {
+   "label": "Chevrolet Corvette",
+   "qid": "Q56166",
+   "fame": 0.573,
+   "country": "United States",
+   "description": "sports car by the Chevrolet division of General Motors (GM)",
+   "hook": "is the long-running two-seater sports car with a lightweight fibreglass body",
+   "known": 0.6,
+   "kind": "car"
+  },
+  {
+   "label": "Humvee",
+   "qid": "Q217046",
+   "fame": 0.559,
+   "country": "United States",
+   "description": "military utility vehicle",
+   "hook": "is the four-wheel-drive military truck that largely replaced the original jeep",
+   "known": 0.4,
+   "kind": "military vehicle"
+  },
+  {
+   "label": "Classic Mini",
+   "qid": "Q36024",
+   "fame": 0.547,
+   "country": "United Kingdom",
+   "description": "British car model made by the British Motor Corporation (BMC) and its successors from 1959 until 2000",
+   "hook": "is a tiny four-seat city car that stayed in production for four decades",
+   "known": 0.8,
+   "kind": "car"
+  },
+  {
+   "label": "Land Rover Defender",
+   "qid": "Q908027",
+   "fame": 0.545,
+   "country": "United Kingdom",
+   "description": "car model",
+   "hook": "is a boxy, rugged off-road four-wheel-drive range built for hard work",
+   "known": 0.6,
+   "kind": "car"
+  },
+  {
+   "label": "San Francisco cable car",
+   "qid": "Q374956",
+   "fame": 0.532,
+   "country": "United States",
+   "description": "cable car system in San Francisco, California, United States",
+   "hook": "is the last manually operated system of its kind in the world, climbing steep hills",
+   "known": 0.8,
+   "kind": "transit system"
+  },
+  {
+   "label": "Willys Jeep",
+   "qid": "Q495075",
+   "fame": 0.516,
+   "country": "United States",
+   "description": "American off-road light military utility vehicle",
+   "hook": "is the light off-road military utility vehicle that served the Allies in World War II",
+   "known": 0.4,
+   "kind": "car"
+  },
+  {
+   "label": "Vespa",
+   "qid": "Q217673",
+   "fame": 0.514,
+   "country": "Italy",
+   "description": "Italian scooter",
+   "hook": "is the pressed-steel scooter whose name means wasp in Italian",
+   "known": 0.8,
+   "kind": "scooter"
+  },
+  {
+   "label": "TGV",
+   "qid": "Q129337",
+   "fame": 0.494,
+   "country": "France",
+   "description": "France's high-speed rail service",
+   "hook": "is the high-speed train service that runs at up to 320 km/h on its newer lines",
+   "known": 0.4,
+   "kind": "train"
+  },
+  {
+   "label": "Fiat 500",
+   "qid": "Q467767",
+   "fame": 0.492,
+   "country": "Italy",
+   "description": "Rear-engined small city car by Fiat",
+   "hook": "is the tiny rear-engined city car that succeeded the Topolino",
+   "known": 0.6,
+   "kind": "car"
+  },
+  {
+   "label": "2CV",
+   "qid": "Q326015",
+   "fame": 0.49,
+   "country": "France",
+   "description": "Small car manufactured by Citroën from 1948 to 1990",
+   "hook": "is the economy car nicknamed two horses, designed to replace farmers' horse carts",
+   "known": 0.4,
+   "kind": "car"
+  },
+  {
+   "label": "Citroen DS",
+   "qid": "Q465966",
+   "fame": 0.49,
+   "country": "France",
+   "description": "front-engine, front-wheel-drive executive car (1955-1975)",
+   "hook": "is a futuristic executive car famed for its aerodynamic body and innovative ride technology",
+   "known": 0.4,
+   "kind": "car"
+  },
+  {
+   "label": "Hindustan Ambassador",
+   "qid": "Q1619367",
+   "fame": 0.475,
+   "country": "India",
+   "description": "car manufactured by Hindustan Motors from 1957 to 2014",
+   "hook": null,
+   "known": 0.2,
+   "kind": "car"
+  },
+  {
+   "label": "Reliant Robin",
+   "qid": "Q1367306",
+   "fame": 0.472,
+   "country": "United Kingdom",
+   "description": "three-wheeled automobile",
+   "hook": "is a small three-wheeled fibreglass car",
+   "known": 0.4,
+   "kind": "car"
+  },
+  {
+   "label": "Greyhound bus",
+   "qid": "Q755309",
+   "fame": 0.47,
+   "country": "United States",
+   "description": "North American intercity bus service",
+   "hook": "is the long-distance coach network serving over 1,600 destinations from its Texas base",
+   "known": 0.6,
+   "kind": "bus"
+  },
+  {
+   "label": "Chinese junk",
+   "qid": "Q205011",
+   "fame": 0.464,
+   "country": "China",
+   "description": "type of vessel typically of Southeast Asian or East Asian origin",
+   "hook": null,
+   "known": 0.2,
+   "kind": "boat"
+  },
+  {
+   "label": "Segway",
+   "qid": "Q214893",
+   "fame": 0.464,
+   "country": "United States",
+   "description": "battery-powered electric vehicle",
+   "hook": "is a two-wheeled, self-balancing personal transporter invented by Dean Kamen",
+   "known": 0.4,
+   "kind": "personal transport"
+  },
+  {
+   "label": "London black cab",
+   "qid": "Q3273735",
+   "fame": 0.459,
+   "country": "United Kingdom",
+   "description": "car for hire",
+   "hook": "is the classic hackney carriage taxi with an illuminated roof sign",
+   "known": 0.6,
+   "kind": "taxi"
+  },
+  {
+   "label": "Honda Super Cub",
+   "qid": "Q1192736",
+   "fame": 0.452,
+   "country": "Japan",
+   "description": "underbone motorcycle by Honda",
+   "hook": "is the most produced motor vehicle in history, passing 100 million units",
+   "known": 0.6,
+   "kind": "motorcycle"
+  },
+  {
+   "label": "Jeepney",
+   "qid": "Q652494",
+   "fame": 0.45,
+   "country": "Philippines",
+   "description": "means of public transportation in the Philippines",
+   "hook": null,
+   "known": 0.2,
+   "kind": "minibus"
+  },
+  {
+   "label": "Yellow school bus",
+   "qid": "Q58678",
+   "fame": 0.45,
+   "country": "United States",
+   "description": "bus operated by a school or school district for student transport",
+   "hook": "is the purpose-built transport that carries children to lessons in North America",
+   "known": 0.95,
+   "kind": "bus"
+  }
+ ]
+}

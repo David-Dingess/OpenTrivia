@@ -1,0 +1,363 @@
+{
+ "id": "table.general-knowledge.how-many-games-sport",
+ "kind": "table",
+ "title": "How many: games and sport",
+ "genre": "general",
+ "category": "general-knowledge",
+ "topic": "how-many",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?n WHERE { { SELECT ?item (MAX(?v) AS ?n) WHERE { VALUES ?item { wd:Q9448 wd:Q324867 wd:Q15804 wd:Q219592 wd:Q13394 wd:Q1215884 wd:Q1163715 wd:Q155223 wd:Q1215892 wd:Q18543 wd:Q50783 wd:Q167541 wd:Q764690 wd:Q14377162 wd:Q19510 wd:Q182994 wd:Q255633 wd:Q206813 wd:Q1146127 wd:Q1032175 wd:Q276445 wd:Q210339 wd:Q11413 wd:Q718 wd:Q11411 wd:Q131375 wd:Q191448 wd:Q17243 wd:Q17267 wd:Q17245 wd:Q17271 wd:Q12541 wd:Q1030283 wd:Q748139 wd:Q829265 wd:Q188966 wd:Q32907 } { ?item wdt:P1873 ?v } UNION { ?item wdt:P1132 ?v } } GROUP BY ?item HAVING(MIN(?v) = MAX(?v)) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T08:16:49.862Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T08:16:49.862Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "count",
+   "label": "How many",
+   "unit": null,
+   "type": "number",
+   "scale": "count-100"
+  },
+  {
+   "key": "counted",
+   "label": "What is counted",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "league or game",
+  "many": "leagues and games",
+  "theLabels": [
+   "Premier League",
+   "National Football League",
+   "EFL Championship",
+   "National Basketball Association",
+   "Australian Football League",
+   "National Hockey League",
+   "Saudi Pro League",
+   "Eredivisie",
+   "Primeira Liga",
+   "Scottish Premiership",
+   "Canadian Football League"
+  ],
+  "columns": {
+   "count": {
+    "role": "measure",
+    "ask": "How many {counted} does {label} have?",
+    "scale": "count-100",
+    "display": "plain",
+    "unit": null
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Premier League",
+   "qid": "Q9448",
+   "fame": 0.776,
+   "count": 20,
+   "kind": "league",
+   "counted": "teams",
+   "description": "English men's association top football league",
+   "hook": "is the richest, most-watched top flight of soccer in England, with promotion and relegation below it",
+   "known": 0.8
+  },
+  {
+   "label": "National Football League",
+   "qid": "Q1215884",
+   "fame": 0.744,
+   "count": 32,
+   "kind": "league",
+   "counted": "teams",
+   "description": "professional American football league",
+   "hook": "crowns its champion at the Super Bowl, the biggest annual gridiron spectacle in America",
+   "known": 0.8
+  },
+  {
+   "label": "EFL Championship",
+   "qid": "Q19510",
+   "fame": 0.693,
+   "count": 24,
+   "kind": "league",
+   "counted": "teams",
+   "description": "second tier of the football pyramid of professional football league in England",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "La Liga",
+   "qid": "Q324867",
+   "fame": 0.693,
+   "count": 20,
+   "kind": "league",
+   "counted": "teams",
+   "description": "men's top professional football division of the Spanish football league system",
+   "hook": "is the top soccer division in Spain, long dominated by Real Madrid and Barcelona",
+   "known": 0.6
+  },
+  {
+   "label": "Major League Baseball",
+   "qid": "Q1163715",
+   "fame": 0.679,
+   "count": 30,
+   "kind": "league",
+   "counted": "teams",
+   "description": "North American professional baseball league",
+   "hook": "plays a 162-game schedule and crowns its champion in the World Series",
+   "known": 0.8
+  },
+  {
+   "label": "Major League Soccer",
+   "qid": "Q18543",
+   "fame": 0.662,
+   "count": 30,
+   "kind": "league",
+   "counted": "teams",
+   "description": "professional soccer league in the USA and Canada",
+   "hook": "is the top-tier pro circuit of the United States and Canada for the world's most popular sport",
+   "known": 0.4
+  },
+  {
+   "label": "Serie A",
+   "qid": "Q15804",
+   "fame": 0.662,
+   "count": 20,
+   "kind": "league",
+   "counted": "teams",
+   "description": "professional league competition for football clubs located at the top of the Italian football league system",
+   "hook": "is Italy's top soccer division, home to clubs like Juventus, AC Milan and Inter",
+   "known": 0.6
+  },
+  {
+   "label": "National Basketball Association",
+   "qid": "Q155223",
+   "fame": 0.661,
+   "count": 30,
+   "kind": "league",
+   "counted": "teams",
+   "description": "North American professional basketball league",
+   "hook": "is the hoops circuit of stars like Michael Jordan and LeBron James, ending with the Finals",
+   "known": 0.8
+  },
+  {
+   "label": "chess",
+   "qid": "Q718",
+   "fame": 0.659,
+   "count": 2,
+   "kind": "board-game",
+   "counted": "players",
+   "description": "strategy board game",
+   "hook": "is played on 64 squares with kings, queens and pawns, and ends in checkmate",
+   "known": 0.95
+  },
+  {
+   "label": "Australian Football League",
+   "qid": "Q50783",
+   "fame": 0.648,
+   "count": 18,
+   "kind": "league",
+   "counted": "teams",
+   "description": "Australian rules football competition",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "National Hockey League",
+   "qid": "Q1215892",
+   "fame": 0.642,
+   "count": 32,
+   "kind": "league",
+   "counted": "teams",
+   "description": "North American professional ice hockey league",
+   "hook": "awards the Stanley Cup, the oldest trophy in North American pro sports, to its champion",
+   "known": 0.6
+  },
+  {
+   "label": "Ligue 1",
+   "qid": "Q13394",
+   "fame": 0.629,
+   "count": 18,
+   "kind": "league",
+   "counted": "teams",
+   "description": "French professional league for men's association football clubs",
+   "hook": "is France's top soccer division, where Paris Saint-Germain has dominated in recent years",
+   "known": 0.6
+  },
+  {
+   "label": "Saudi Pro League",
+   "qid": "Q255633",
+   "fame": 0.609,
+   "count": 18,
+   "kind": "league",
+   "counted": "teams",
+   "description": "highest division of association football in the Saudi league system",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Eredivisie",
+   "qid": "Q167541",
+   "fame": 0.584,
+   "count": 18,
+   "kind": "league",
+   "counted": "teams",
+   "description": "professional association football league in the Netherlands",
+   "hook": "is the top soccer division of the land of tulips, with clubs like Ajax and PSV",
+   "known": 0.4
+  },
+  {
+   "label": "Liga MX",
+   "qid": "Q764690",
+   "fame": 0.58,
+   "count": 18,
+   "kind": "league",
+   "counted": "teams",
+   "description": "top tier association football league of Mexico",
+   "hook": "is Mexico's top soccer division, split into Apertura and Clausura tournaments each year",
+   "known": 0.4
+  },
+  {
+   "label": "Primeira Liga",
+   "qid": "Q182994",
+   "fame": 0.579,
+   "count": 18,
+   "kind": "league",
+   "counted": "teams",
+   "description": "top division in Portuguese football",
+   "hook": "is Portugal's top soccer division, long ruled by Benfica, Porto and Sporting",
+   "known": 0.4
+  },
+  {
+   "label": "Scottish Premiership",
+   "qid": "Q14377162",
+   "fame": 0.578,
+   "count": 12,
+   "kind": "league",
+   "counted": "teams",
+   "description": "Scottish men's association football top division",
+   "hook": "is Scotland's top soccer division, long ruled by the Old Firm rivals Celtic and Rangers",
+   "known": 0.4
+  },
+  {
+   "label": "Canadian Football League",
+   "qid": "Q1032175",
+   "fame": 0.576,
+   "count": 9,
+   "kind": "league",
+   "counted": "teams",
+   "description": "professional Canadian football league",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Campeonato Brasileiro Série A",
+   "qid": "Q206813",
+   "fame": 0.564,
+   "count": 20,
+   "kind": "league",
+   "counted": "teams",
+   "description": "association football league in Brazil",
+   "hook": "is Brazil's top soccer division, nicknamed the Brasileirao, with clubs like Flamengo and Palmeiras",
+   "known": 0.4
+  },
+  {
+   "label": "backgammon",
+   "qid": "Q11411",
+   "fame": 0.553,
+   "count": 2,
+   "kind": "board-game",
+   "counted": "players",
+   "description": "one of the oldest board games for two players",
+   "hook": "is a dice-and-checkers race game where the goal is to bear off all fifteen of your pieces first",
+   "known": 0.6
+  },
+  {
+   "label": "tic-tac-toe",
+   "qid": "Q210339",
+   "fame": 0.552,
+   "count": 2,
+   "kind": "board-game",
+   "counted": "players",
+   "description": "game for two players played on a 3x3 board or a sheet of paper",
+   "hook": "is a paper-and-pencil game where you try to line up three Xs or Os, and is easily forced to a draw",
+   "known": 0.95
+  },
+  {
+   "label": "Nippon Professional Baseball",
+   "qid": "Q1146127",
+   "fame": 0.538,
+   "count": 12,
+   "kind": "league",
+   "counted": "teams",
+   "description": "baseball league representing the highest level of professional baseball in Japan",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "contract bridge",
+   "qid": "Q188966",
+   "fame": 0.525,
+   "count": 4,
+   "kind": "card-game",
+   "counted": "players",
+   "description": "card game",
+   "hook": "is a trick-taking card game of bidding and partnerships, played at tables of four",
+   "known": 0.4
+  },
+  {
+   "label": "shogi",
+   "qid": "Q131375",
+   "fame": 0.501,
+   "count": 2,
+   "kind": "board-game",
+   "counted": "players",
+   "description": "Japanese strategy board game",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "xiangqi",
+   "qid": "Q191448",
+   "fame": 0.48,
+   "count": 2,
+   "kind": "board-game",
+   "counted": "players",
+   "description": "chess variant native to China",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Othello",
+   "qid": "Q748139",
+   "fame": 0.461,
+   "count": 2,
+   "kind": "board-game",
+   "counted": "players",
+   "description": "strategy board game",
+   "hook": null,
+   "known": 0.2
+  }
+ ]
+}

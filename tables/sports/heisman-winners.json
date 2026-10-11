@@ -1,0 +1,509 @@
+{
+ "id": "table.sports.heisman-winners",
+ "kind": "table",
+ "title": "Heisman Trophy winners and their college",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "football",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?collegeLabel WHERE { VALUES (?item ?collegeLabel) { (wd:Q517467 \"Florida\") (wd:Q24809702 \"Louisville\") (wd:Q591678 \"Auburn\") (wd:Q809097 \"Oklahoma State\") (wd:Q56860229 \"LSU\") (wd:Q714292 \"Oklahoma\") (wd:Q1356923 \"Syracuse\") (wd:Q16729768 \"Alabama\") (wd:Q617158 \"Baylor\") (wd:Q14950655 \"Oklahoma\") (wd:Q363509 \"Notre Dame\") (wd:Q736932 \"Navy\") (wd:Q887401 \"Auburn\") (wd:Q963234 \"Southern California\") (wd:Q1066501 \"Michigan\") (wd:Q609950 \"Georgia\") (wd:Q1045461 \"Southern California\") (wd:Q6758302 \"Oregon\") (wd:Q71980 \"Florida State\") (wd:Q1251736 \"Boston College\") (wd:Q18648942 \"Oklahoma\") (wd:Q716875 \"Texas A&M\") (wd:Q1349267 \"Texas\") (wd:Q4912321 \"LSU\") (wd:Q80559 \"Ohio State\") (wd:Q379491 \"Southern California\") (wd:Q509646 \"Michigan\") (wd:Q522372 \"Texas\") (wd:Q584532 \"Miami\") (wd:Q726211 \"Stanford\") (wd:Q1380819 \"Pittsburgh\") (wd:Q3055549 \"Ohio State\") (wd:Q68974853 \"Alabama\") (wd:Q66825384 \"LSU\") (wd:Q321573 \"Iowa\") (wd:Q452154 \"Alabama\") (wd:Q108878513 \"Southern California\") (wd:Q245633 \"Notre Dame\") (wd:Q471897 \"Notre Dame\") (wd:Q1379926 \"Army\") (wd:Q3530742 \"Michigan\") (wd:Q110442577 \"Colorado\") (wd:Q321288 \"Ohio State\") (wd:Q582850 \"TCU\") (wd:Q1147480 \"BYU\") (wd:Q1233083 \"SMU\") (wd:Q1500180 \"Texas A&M\") (wd:Q1610505 \"Notre Dame\") (wd:Q2960443 \"Southern California\") (wd:Q5919292 \"Ohio State\") (wd:Q123411920 \"Indiana\") (wd:Q321872 \"Chicago\") (wd:Q535640 \"Notre Dame\") (wd:Q1233692 \"Army\") (wd:Q1818883 \"Notre Dame\") (wd:Q2903722 \"Oklahoma\") (wd:Q7171923 \"Army\") (wd:Q7704079 \"Oregon State\") (wd:Q1129334 \"Ohio State\") (wd:Q1164813 \"Florida\") (wd:Q1691335 \"Navy\") (wd:Q1700517 \"Notre Dame\") (wd:Q2636612 \"Wisconsin\") (wd:Q2979327 \"Yale\") (wd:Q3101881 \"South Carolina\") (wd:Q3163015 \"Oklahoma\") (wd:Q3218066 \"Yale\") (wd:Q4872246 \"Southern California\") (wd:Q7614020 \"Florida\") (wd:Q284613 \"Nebraska\") (wd:Q2091437 \"Nebraska\") (wd:Q2926477 \"Minnesota\") (wd:Q2964889 \"Florida State\") (wd:Q3082815 \"Georgia\") (wd:Q3181191 \"Penn State\") (wd:Q5273083 \"Princeton\") (wd:Q6267603 \"Nebraska\") (wd:Q7294771 \"Colorado\") (wd:Q7924830 \"Ohio State\") (wd:Q716376 \"Miami\") (wd:Q4754903 \"Houston\") (wd:Q4913418 \"Oklahoma\") (wd:Q7144051 \"Auburn\") (wd:Q7363689 \"Wisconsin\") (wd:Q7613529 \"Oklahoma\") (wd:Q5524678 \"UCLA\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-03T01:21:31.283Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-03T01:21:31.283Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "college",
+   "label": "College",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "Heisman winner",
+  "many": "Heisman winners",
+  "wildcard": "person",
+  "columns": {
+   "college": {
+    "role": "link",
+    "pick": "Which college did {label} play for when winning the Heisman Trophy?",
+    "statement": "{label} won the Heisman Trophy while playing for {value}.",
+    "match": "Match each Heisman Trophy winner to the college they played for.",
+    "odd": "Three of these Heisman winners played for {value}. Which one didn't?",
+    "all": "Tap all {n} Heisman winners who played for {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Derrick Henry",
+   "qid": "Q16729768",
+   "fame": 0.732,
+   "college": "Alabama",
+   "description": "American football player (born 1994)",
+   "hook": "is a bruising running back nicknamed King, who ran for over 2,000 yards in an NFL season",
+   "known": 0.6,
+   "kind": "recent"
+  },
+  {
+   "label": "Jayden Daniels",
+   "qid": "Q66825384",
+   "fame": 0.726,
+   "college": "LSU",
+   "description": "American football player (born 2000)",
+   "hook": "is a dual-threat quarterback who went second in the draft after a record-setting season",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Fernando Mendoza",
+   "qid": "Q123411920",
+   "fame": 0.723,
+   "college": "Indiana",
+   "description": "American football quarterback (born 2003)",
+   "hook": "is a quarterback who led a long-struggling program to an unbeaten regular season and a national title run",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Marcus Mariota",
+   "qid": "Q6758302",
+   "fame": 0.722,
+   "college": "Oregon",
+   "description": "American football player (born 1993)",
+   "hook": "is a quarterback who was the second pick in the draft after a dominant season with the Ducks",
+   "known": 0.6,
+   "kind": "modern"
+  },
+  {
+   "label": "Kyler Murray",
+   "qid": "Q18648942",
+   "fame": 0.718,
+   "college": "Oklahoma",
+   "description": "American football and baseball player (born 1997)",
+   "hook": "is a quarterback who was picked first in the NFL draft after also being picked ninth in the baseball draft",
+   "known": 0.6,
+   "kind": "recent"
+  },
+  {
+   "label": "Caleb Williams",
+   "qid": "Q108878513",
+   "fame": 0.717,
+   "college": "Southern California",
+   "description": "American football player (born 2002)",
+   "hook": "is a quarterback who won the award and was then the first pick in the draft by the Chicago Bears",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Joe Burrow",
+   "qid": "Q56860229",
+   "fame": 0.698,
+   "college": "LSU",
+   "description": "American football player (born 1996)",
+   "hook": "is a record-setting quarterback who went first in the draft and later led the Bengals to the Super Bowl",
+   "known": 0.6,
+   "kind": "recent"
+  },
+  {
+   "label": "Baker Mayfield",
+   "qid": "Q14950655",
+   "fame": 0.696,
+   "college": "Oklahoma",
+   "description": "American football player (born 1995)",
+   "hook": "is a brash quarterback who planted a flag at midfield in a rival's stadium and went first in the draft",
+   "known": 0.6,
+   "kind": "recent"
+  },
+  {
+   "label": "Lamar Jackson",
+   "qid": "Q24809702",
+   "fame": 0.692,
+   "college": "Louisville",
+   "description": "American football player (born 1997)",
+   "hook": "is a dazzling running quarterback who became the youngest to win the award and later an NFL MVP for the Ravens",
+   "known": 0.6,
+   "kind": "recent"
+  },
+  {
+   "label": "Tim Tebow",
+   "qid": "Q517467",
+   "fame": 0.691,
+   "college": "Florida",
+   "description": "American football and baseball player (born 1987)",
+   "hook": "is a quarterback and devout Christian famed for kneeling in prayer, who later tried pro baseball",
+   "known": 0.4,
+   "kind": "modern"
+  },
+  {
+   "label": "Johnny Manziel",
+   "qid": "Q716875",
+   "fame": 0.657,
+   "college": "Texas A&M",
+   "description": "American football player (born 1992)",
+   "hook": "is a freewheeling scrambling quarterback who was the first freshman ever to take the award",
+   "known": 0.6,
+   "kind": "modern"
+  },
+  {
+   "label": "Bo Jackson",
+   "qid": "Q887401",
+   "fame": 0.652,
+   "college": "Auburn",
+   "description": "American football and baseball player (born 1962)",
+   "hook": "is a two-sport legend who starred in both the NFL and Major League Baseball and starred in the \"Bo Knows\" ads",
+   "known": 0.6,
+   "kind": "legend"
+  },
+  {
+   "label": "Cam Newton",
+   "qid": "Q591678",
+   "fame": 0.646,
+   "college": "Auburn",
+   "description": "American football player (born 1989)",
+   "hook": "is a huge quarterback who led his team to a national title in a single season and went first in the draft",
+   "known": 0.6,
+   "kind": "modern"
+  },
+  {
+   "label": "Matt Leinart",
+   "qid": "Q963234",
+   "fame": 0.626,
+   "college": "Southern California",
+   "description": "American football player (born 1983)",
+   "hook": "is a quarterback who won the award in the same era the Trojans were chasing a national title three-peat",
+   "known": 0.4,
+   "kind": "modern"
+  },
+  {
+   "label": "Travis Hunter",
+   "qid": "Q110442577",
+   "fame": 0.623,
+   "college": "Colorado",
+   "description": "American football player (born 2003)",
+   "hook": "is a two-way star who played both receiver and cornerback and won the award while playing for Coach Prime",
+   "known": 0.8,
+   "kind": "contemporary"
+  },
+  {
+   "label": "DeVonta Smith",
+   "qid": "Q68974853",
+   "fame": 0.616,
+   "college": "Alabama",
+   "description": "American football player (born 1998)",
+   "hook": "is a slender receiver who was the first of his position in decades to win, after a huge title-game night",
+   "known": 0.6,
+   "kind": "recent"
+  },
+  {
+   "label": "Robert Griffin III",
+   "qid": "Q617158",
+   "fame": 0.615,
+   "college": "Baylor",
+   "description": "American football player (born 1990)",
+   "hook": "is a quarterback known by his initials and a number, taken second in the draft after an electric season",
+   "known": 0.4,
+   "kind": "modern"
+  },
+  {
+   "label": "Barry Sanders",
+   "qid": "Q809097",
+   "fame": 0.595,
+   "college": "Oklahoma State",
+   "description": "American football player (born 1968)",
+   "hook": "is a Hall of Fame running back famed for elusive moves, who starred for the Lions",
+   "known": 0.6,
+   "kind": "legend"
+  },
+  {
+   "label": "Eddie George",
+   "qid": "Q80559",
+   "fame": 0.593,
+   "college": "Ohio State",
+   "description": "American football player",
+   "hook": "is a durable running back who later became the face of the Tennessee Titans' offense",
+   "known": 0.4,
+   "kind": "legend"
+  },
+  {
+   "label": "Steve Spurrier",
+   "qid": "Q7614020",
+   "fame": 0.59,
+   "college": "Florida",
+   "description": "American football player and coach (born 1945)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "legend"
+  },
+  {
+   "label": "Doug Flutie",
+   "qid": "Q1251736",
+   "fame": 0.589,
+   "college": "Boston College",
+   "description": "American football player",
+   "hook": "is a pint-sized quarterback famous for a last-second Hail Mary pass to beat Miami",
+   "known": 0.4,
+   "kind": "legend"
+  },
+  {
+   "label": "Sam Bradford",
+   "qid": "Q714292",
+   "fame": 0.579,
+   "college": "Oklahoma",
+   "description": "American football player (born 1987)",
+   "hook": "is a quarterback who was the first pick in the draft and later battled injuries in the pros",
+   "known": 0.4,
+   "kind": "modern"
+  },
+  {
+   "label": "Desmond Howard",
+   "qid": "Q509646",
+   "fame": 0.565,
+   "college": "Michigan",
+   "description": "American football player (born 1970)",
+   "hook": "is a returner remembered for striking a pose after a long touchdown and later being Super Bowl MVP",
+   "known": 0.4,
+   "kind": "classic"
+  },
+  {
+   "label": "Roger Staubach",
+   "qid": "Q736932",
+   "fame": 0.56,
+   "college": "Navy",
+   "description": "American football player and Navy officer (born 1942)",
+   "hook": "is a quarterback who served in the military before becoming a Dallas Cowboys legend nicknamed Captain Comeback",
+   "known": 0.6,
+   "kind": "legend"
+  },
+  {
+   "label": "Ricky Williams",
+   "qid": "Q1349267",
+   "fame": 0.556,
+   "college": "Texas",
+   "description": "American football player (born 1977)",
+   "hook": "is a running back who broke the major-college career rushing record, later played for the Dolphins",
+   "known": 0.4,
+   "kind": "classic"
+  },
+  {
+   "label": "Herschel Walker",
+   "qid": "Q609950",
+   "fame": 0.554,
+   "college": "Georgia",
+   "description": "American diplomat and former football player (born 1962)",
+   "hook": "was a powerhouse running back who later took up bobsled and mixed martial arts",
+   "known": 0.6,
+   "kind": "legend"
+  },
+  {
+   "label": "Charles Woodson",
+   "qid": "Q1066501",
+   "fame": 0.553,
+   "college": "Michigan",
+   "description": "American football player (born 1976)",
+   "hook": "is a defensive back who was the first primarily defensive player to win, later a Hall of Fame cornerback",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Mark Ingram",
+   "qid": "Q452154",
+   "fame": 0.545,
+   "college": "Alabama",
+   "description": "American football player (born 1989)",
+   "hook": "is a running back who won the award in a very close vote and later played for the Saints and Ravens",
+   "known": 0.4,
+   "kind": "modern"
+  },
+  {
+   "label": "Carson Palmer",
+   "qid": "Q1045461",
+   "fame": 0.53,
+   "college": "Southern California",
+   "description": "American football player (born 1979)",
+   "hook": "is a quarterback who went first in the draft, then led the Bengals and later played for the Cardinals",
+   "known": 0.4,
+   "kind": "classic"
+  },
+  {
+   "label": "Earl Campbell",
+   "qid": "Q522372",
+   "fame": 0.529,
+   "college": "Texas",
+   "description": "American football player (born 1955)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "legend"
+  },
+  {
+   "label": "Marcus Allen",
+   "qid": "Q379491",
+   "fame": 0.528,
+   "college": "Southern California",
+   "description": "American football player and analyst (born 1960)",
+   "hook": "is a running back who rushed for over 2,000 yards in a season and was Super Bowl MVP with the Raiders",
+   "known": 0.4,
+   "kind": "legend"
+  },
+  {
+   "label": "Ernie Davis",
+   "qid": "Q1356923",
+   "fame": 0.524,
+   "college": "Syracuse",
+   "description": "American football player (1939–1963)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "legend"
+  },
+  {
+   "label": "Tony Dorsett",
+   "qid": "Q1380819",
+   "fame": 0.521,
+   "college": "Pittsburgh",
+   "description": "American football player (born 1954)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "legend"
+  },
+  {
+   "label": "Jim Plunkett",
+   "qid": "Q726211",
+   "fame": 0.517,
+   "college": "Stanford",
+   "description": "American football player (born 1947)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "legend"
+  },
+  {
+   "label": "Vinny Testaverde",
+   "qid": "Q584532",
+   "fame": 0.516,
+   "college": "Miami",
+   "description": "All-American college football player, professional football player, quarterback, Heisman Trophy winner",
+   "hook": "is a quarterback who was the first pick in the draft and played for many NFL teams over a long career",
+   "known": 0.4,
+   "kind": "legend"
+  },
+  {
+   "label": "Tom Harmon",
+   "qid": "Q3530742",
+   "fame": 0.49,
+   "college": "Michigan",
+   "description": "American football player and sportscaster (1919–1990)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "legend"
+  },
+  {
+   "label": "Charlie Ward",
+   "qid": "Q71980",
+   "fame": 0.484,
+   "college": "Florida State",
+   "description": "American basketball and football player",
+   "hook": "is a quarterback who also starred in college basketball and later played for the New York Knicks",
+   "known": 0.4,
+   "kind": "classic"
+  },
+  {
+   "label": "Ty Detmer",
+   "qid": "Q1147480",
+   "fame": 0.483,
+   "college": "BYU",
+   "description": "American football player and coach (born 1967)",
+   "hook": "is a quarterback who passed for huge yardage in a pass-heavy offense and later had a pro career as a backup",
+   "known": 0.4,
+   "kind": "classic"
+  },
+  {
+   "label": "Chris Weinke",
+   "qid": "Q2964889",
+   "fame": 0.477,
+   "college": "Florida State",
+   "description": "American football player",
+   "hook": "is an older quarterback who had previously played pro minor league baseball before winning the award",
+   "known": 0.4,
+   "kind": "classic"
+  },
+  {
+   "label": "Jason White",
+   "qid": "Q3163015",
+   "fame": 0.463,
+   "college": "Oklahoma",
+   "description": "American football player (born 1980)",
+   "hook": "is a quarterback who won the award a year after returning from major knee injuries",
+   "known": 0.4,
+   "kind": "classic"
+  },
+  {
+   "label": "Billy Cannon",
+   "qid": "Q4912321",
+   "fame": 0.46,
+   "college": "LSU",
+   "description": "American football player (1937-2018)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "legend"
+  },
+  {
+   "label": "Eric Crouch",
+   "qid": "Q284613",
+   "fame": 0.459,
+   "college": "Nebraska",
+   "description": "American football player",
+   "hook": "is an option quarterback who later switched to wide receiver in the pros after a standout college career",
+   "known": 0.4,
+   "kind": "classic"
+  },
+  {
+   "label": "Archie Griffin",
+   "qid": "Q321288",
+   "fame": 0.455,
+   "college": "Ohio State",
+   "description": "player of American football",
+   "hook": null,
+   "known": 0.05,
+   "kind": "legend"
+  },
+  {
+   "label": "Tim Brown",
+   "qid": "Q245633",
+   "fame": 0.455,
+   "college": "Notre Dame",
+   "description": "American football player (born 1966)",
+   "hook": "is a wide receiver and returner who later spent most of his pro career with the Raiders",
+   "known": 0.4,
+   "kind": "legend"
+  },
+  {
+   "label": "Andre Ware",
+   "qid": "Q4754903",
+   "fame": 0.454,
+   "college": "Houston",
+   "description": "American football player and analyst (born 1968)",
+   "hook": "is a quarterback who was the first Black signal-caller to win the award, in a run-and-shoot offense",
+   "known": 0.4,
+   "kind": "legend"
+  }
+ ]
+}

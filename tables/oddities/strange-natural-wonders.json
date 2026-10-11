@@ -1,0 +1,282 @@
+{
+ "id": "table.oddities.strange-natural-wonders",
+ "kind": "table",
+ "title": "Strange natural wonders",
+ "genre": "general",
+ "category": "oddities",
+ "topic": "natural-wonders",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { VALUES ?item { wd:Q70458 wd:Q498671 wd:Q838080 wd:Q106187 wd:Q403134 wd:Q590742 wd:Q14213070 wd:Q76122 wd:Q516651 wd:Q885118 wd:Q2421402 wd:Q858794 wd:Q1422831 wd:Q1754627 wd:Q1522557 wd:Q3850429 wd:Q86486 wd:Q1573293 wd:Q332628 wd:Q1070248 wd:Q1639253 wd:Q24993835 wd:Q647777 wd:Q1009481 wd:Q1799617 wd:Q1954540 wd:Q1235610 wd:Q1818515 wd:Q3895620 wd:Q181857 wd:Q2967745 wd:Q605185 wd:Q179970 wd:Q1602409 wd:Q431381 wd:Q2572189 wd:Q335585 wd:Q799720 wd:Q717351 wd:Q329266 wd:Q1061092 wd:Q1139689 wd:Q38519 wd:Q1128186 wd:Q33910 wd:Q306201 wd:Q308926 wd:Q1343339 wd:Q1071889 wd:Q1627589 wd:Q1282214 wd:Q548489 wd:Q81239 wd:Q2943304 wd:Q118841 wd:Q118388 wd:Q273195 wd:Q2666855 wd:Q7343 wd:Q351 wd:Q216846 wd:Q178124 wd:Q179734 wd:Q367943 wd:Q305949 wd:Q936252 wd:Q1200164 wd:Q190128 wd:Q189849 wd:Q80299 wd:Q3002224 wd:Q650872 wd:Q47141 wd:Q1932730 wd:Q188698 wd:Q2208162 wd:Q1440831 wd:Q387771 wd:Q7960635 wd:Q47141 } { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { VALUES ?item { wd:Q70458 wd:Q498671 wd:Q838080 wd:Q106187 wd:Q403134 wd:Q590742 wd:Q14213070 wd:Q76122 wd:Q516651 wd:Q885118 wd:Q2421402 wd:Q858794 wd:Q1422831 wd:Q1754627 wd:Q1522557 wd:Q3850429 wd:Q86486 wd:Q1573293 wd:Q332628 wd:Q1070248 wd:Q1639253 wd:Q24993835 wd:Q647777 wd:Q1009481 wd:Q1799617 wd:Q1954540 wd:Q1235610 wd:Q1818515 wd:Q3895620 wd:Q181857 wd:Q2967745 wd:Q605185 wd:Q179970 wd:Q1602409 wd:Q431381 wd:Q2572189 wd:Q335585 wd:Q799720 wd:Q717351 wd:Q329266 wd:Q1061092 wd:Q1139689 wd:Q38519 wd:Q1128186 wd:Q33910 wd:Q306201 wd:Q308926 wd:Q1343339 wd:Q1071889 wd:Q1627589 wd:Q1282214 wd:Q548489 wd:Q81239 wd:Q2943304 wd:Q118841 wd:Q118388 wd:Q273195 wd:Q2666855 wd:Q7343 wd:Q351 wd:Q216846 wd:Q178124 wd:Q179734 wd:Q367943 wd:Q305949 wd:Q936252 wd:Q1200164 wd:Q190128 wd:Q189849 wd:Q80299 wd:Q3002224 wd:Q650872 wd:Q47141 wd:Q1932730 wd:Q188698 wd:Q2208162 wd:Q1440831 wd:Q387771 wd:Q7960635 wd:Q47141 } ?item wdt:P17 ?c . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T05:16:07.388Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T05:16:07.388Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "natural wonder",
+  "many": "natural wonders",
+  "wildcard": "place",
+  "hookAsk": "Which natural wonder {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "theLabels": [
+   "Grand Canyon",
+   "Great Barrier Reef",
+   "Atacama Desert",
+   "Giant's Causeway",
+   "Danakil Depression",
+   "Bay of Fundy",
+   "Meteor Crater",
+   "Great Blue Hole",
+   "Salar de Uyuni"
+  ],
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each natural wonder to its country.",
+    "odd": "Three of these natural wonders are in {value}. Which one isn't?",
+    "all": "Tap all {n} natural wonders in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Yellowstone National Park",
+   "qid": "Q351",
+   "fame": 0.628,
+   "country": "United States",
+   "description": "first national park in the world, located in Wyoming, Montana, and Idaho in the United States",
+   "hook": "was the first of its kind in the world and is famed for its geysers, hot springs and roaming bison",
+   "known": 0.8,
+   "kind": "park"
+  },
+  {
+   "label": "Grand Canyon",
+   "qid": "Q118841",
+   "fame": 0.597,
+   "country": "United States",
+   "description": "steep-sided canyon carved by the Colorado River in Arizona, United States",
+   "hook": "exposes about two billion years of rock in a mile-deep gorge cut by a mighty river",
+   "known": 0.95,
+   "kind": "rock formation"
+  },
+  {
+   "label": "Uluru",
+   "qid": "Q33910",
+   "fame": 0.572,
+   "country": "Australia",
+   "description": "large sandstone isolated mount in Australia",
+   "hook": "is a giant red sandstone monolith in the outback, sacred to the Aboriginal people of the area",
+   "known": 0.6,
+   "kind": "rock formation"
+  },
+  {
+   "label": "Great Barrier Reef",
+   "qid": "Q7343",
+   "fame": 0.571,
+   "country": "Australia",
+   "description": "over 2300 km long coral reef off Australia's northeast coast, UNESCO World Heritage Site",
+   "hook": "is the largest living structure on Earth, so big it can be seen from space",
+   "known": 0.85,
+   "kind": "reef"
+  },
+  {
+   "label": "Atacama Desert",
+   "qid": "Q47141",
+   "fame": 0.556,
+   "country": "Chile",
+   "description": "desert in South America",
+   "hook": "is the driest place on Earth outside the poles, with some weather stations that have never recorded rain",
+   "known": 0.4,
+   "kind": "desert"
+  },
+  {
+   "label": "Death Valley",
+   "qid": "Q118388",
+   "fame": 0.545,
+   "country": "United States",
+   "description": "desert basin in Inyo and San Bernadino counties in California, United States",
+   "hook": "holds the record for the hottest air temperature ever measured on Earth",
+   "known": 0.7,
+   "kind": "desert"
+  },
+  {
+   "label": "Giant's Causeway",
+   "qid": "Q106187",
+   "fame": 0.543,
+   "country": "United Kingdom",
+   "description": "rock formation on the Antrim coast of Northern Ireland",
+   "hook": "is made of about 40,000 interlocking basalt columns, said in legend to be a path built by an Irish warrior",
+   "known": 0.5,
+   "kind": "rock formation"
+  },
+  {
+   "label": "Crater Lake",
+   "qid": "Q329266",
+   "fame": 0.537,
+   "country": "United States",
+   "description": "caldera lake in south-central Oregon and main feature of Crater Lake National Park",
+   "hook": "is the deepest lake in its country, famed for its deep blue water filling a collapsed volcano",
+   "known": 0.5,
+   "kind": "park"
+  },
+  {
+   "label": "Devils Tower",
+   "qid": "Q306201",
+   "fame": 0.536,
+   "country": "United States",
+   "description": "mountain near Moorcroft, Wyoming, United States",
+   "hook": "is a towering butte of columnar rock that was the first national monument and starred in a Spielberg film",
+   "known": 0.6,
+   "kind": "rock formation"
+  },
+  {
+   "label": "Danakil Depression",
+   "qid": "Q14213070",
+   "fame": 0.524,
+   "country": "Ethiopia",
+   "description": "geological depression, northern part of the Afar Triangle or Afar Depression in Ethiopia",
+   "hook": null,
+   "known": 0.15,
+   "kind": "geological"
+  },
+  {
+   "label": "Angel Falls",
+   "qid": "Q80299",
+   "fame": 0.509,
+   "country": "Venezuela",
+   "description": "waterfall in Venezuela; highest uninterrupted waterfall in the world",
+   "hook": "is the tallest uninterrupted waterfall in the world, plunging off a flat-topped mountain",
+   "known": 0.7,
+   "kind": "waterfall"
+  },
+  {
+   "label": "Bay of Fundy",
+   "qid": "Q181857",
+   "fame": 0.498,
+   "country": "Canada",
+   "description": "bay on the Atlantic coast of Canada noted for high tides",
+   "hook": "has the highest tides in the world, rising and falling by about the height of a four-story building",
+   "known": 0.5,
+   "kind": "geological"
+  },
+  {
+   "label": "Mammoth Cave",
+   "qid": "Q2666855",
+   "fame": 0.498,
+   "country": "United States",
+   "description": "cave system in Kentucky, United States of America",
+   "hook": "is the longest known system of underground passages in the world, with hundreds of miles mapped",
+   "known": 0.4,
+   "kind": "cave"
+  },
+  {
+   "label": "Meteor Crater",
+   "qid": "Q431381",
+   "fame": 0.497,
+   "country": "United States",
+   "description": "meteorite impact crater in northern Arizona",
+   "hook": null,
+   "known": 0.3,
+   "kind": "geological"
+  },
+  {
+   "label": "Salar de Uyuni",
+   "qid": "Q76122",
+   "fame": 0.497,
+   "country": "Bolivia",
+   "description": "salt flat in Bolivia",
+   "hook": null,
+   "known": 0.35,
+   "kind": "desert"
+  },
+  {
+   "label": "Kīlauea",
+   "qid": "Q188698",
+   "fame": 0.493,
+   "country": "United States",
+   "description": "active volcano in Hawaii",
+   "hook": "is among the most active volcanoes on Earth and is home to the legendary fire goddess Pele",
+   "known": 0.6,
+   "kind": "volcanic"
+  },
+  {
+   "label": "Zhangjiajie National Forest Park",
+   "qid": "Q3895620",
+   "fame": 0.493,
+   "country": "China",
+   "description": "park in Hunan province in China",
+   "hook": null,
+   "known": 0.3,
+   "kind": "park"
+  },
+  {
+   "label": "Lençóis Maranhenses National Park",
+   "qid": "Q647777",
+   "fame": 0.484,
+   "country": "Brazil",
+   "description": "national park in northeastern Brazil, known for its rolling dunes and fresh water lagoons",
+   "hook": null,
+   "known": 0.2,
+   "kind": "park"
+  },
+  {
+   "label": "Old Faithful",
+   "qid": "Q858794",
+   "fame": 0.477,
+   "country": "United States",
+   "description": "geyser in Yellowstone National Park in Wyoming, United States",
+   "hook": "is a famously predictable geyser that erupts roughly every hour and a half",
+   "known": 0.75,
+   "kind": "volcanic"
+  },
+  {
+   "label": "Great Blue Hole",
+   "qid": "Q86486",
+   "fame": 0.465,
+   "country": "Belize",
+   "description": "submarine sinkhole off the coast of Belize",
+   "hook": "is a giant circular sinkhole in the sea, seen from above as a deep dark eye in pale shallows",
+   "known": 0.4,
+   "kind": "geological"
+  },
+  {
+   "label": "Ha Long Bay",
+   "qid": "Q190128",
+   "fame": 0.451,
+   "country": "Vietnam",
+   "description": "UNESCO World Heritage Site in Vietnam",
+   "hook": null,
+   "known": 0.35,
+   "kind": "park"
+  }
+ ]
+}

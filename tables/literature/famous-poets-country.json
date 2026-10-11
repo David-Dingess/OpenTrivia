@@ -1,0 +1,610 @@
+{
+ "id": "table.literature.famous-poets-country",
+ "kind": "table",
+ "title": "Famous poets and their country",
+ "genre": "arts-entertainment",
+ "category": "literature",
+ "topic": "poetry",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { ?item wdt:P31 wd:Q5 ; wdt:P106 wd:Q49757 ; wdt:P27 ?c ; wikibase:sitelinks ?sitelinks . ?poem wdt:P50 ?item ; wdt:P7937 wd:Q5185279 . FILTER(?sitelinks > 40) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 400 } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T14:26:20.109Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T14:26:20.109Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "poet",
+  "many": "poets",
+  "wildcard": "person",
+  "hookAsk": "Which poet {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country or realm was {label} from?",
+    "statement": "{label} was from {value}.",
+    "match": "Match each poet to the country or realm they were from.",
+    "odd": "Three of these poets were from {value}. Which one was not?",
+    "all": "Tap all {n} poets from {value}.",
+    "reverse": "Which of these poets was from {value}?"
+   }
+  },
+  "exclude": [
+   {
+    "qid": "Q5879",
+    "why": "Duchy of Saxe-Weimar-Eisenach is an obscure realm label"
+   },
+   {
+    "qid": "Q17892",
+    "why": "Mytilene is a city-state, not a country players pick"
+   },
+   {
+    "qid": "Q44233",
+    "why": "Cyme is an ancient town, not a country players pick"
+   },
+   {
+    "qid": "Q190388",
+    "why": "Crown of Castile is an obscure realm label"
+   }
+  ]
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Edgar Allan Poe",
+   "qid": "Q16867",
+   "fame": 0.717,
+   "country": "United States",
+   "description": "American writer and literary critic (1809–1849)",
+   "hook": "wrote \"The Raven\" and macabre tales like \"The Tell-Tale Heart\"",
+   "known": 0.95,
+   "kind": "american"
+  },
+  {
+   "label": "Sylvia Plath",
+   "qid": "Q133054",
+   "fame": 0.679,
+   "country": "United States",
+   "description": "American poet and writer (1932–1963)",
+   "hook": "wrote the semi-autobiographical novel \"The Bell Jar\" and the poetry collection \"Ariel\"",
+   "known": 0.6,
+   "kind": "american"
+  },
+  {
+   "label": "Dante Alighieri",
+   "qid": "Q1067",
+   "fame": 0.653,
+   "country": "Republic of Florence",
+   "description": "Florentine poet, writer, and philosopher (c. 1265–1321)",
+   "hook": "wrote \"The Divine Comedy,\" a journey through Hell, Purgatory and Paradise",
+   "known": 0.95,
+   "kind": "european"
+  },
+  {
+   "label": "Johann Wolfgang von Goethe",
+   "qid": "Q5879",
+   "fame": 0.637,
+   "country": "Duchy of Saxe-Weimar-Eisenach",
+   "description": "German writer, artist, natural scientist and politician (1749–1832)",
+   "hook": "wrote the drama \"Faust,\" about a scholar who bargains with the devil",
+   "known": 0.8,
+   "kind": "european"
+  },
+  {
+   "label": "Rabindranath Tagore",
+   "qid": "Q7241",
+   "fame": 0.629,
+   "country": "British Raj",
+   "description": "Bengali poet, philosopher and polymath (1861–1941)",
+   "hook": "became the first non-European to win the Nobel Prize in Literature",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "Victor Hugo",
+   "qid": "Q535",
+   "fame": 0.626,
+   "country": "France",
+   "description": "French novelist, poet, dramatist and politician (1802–1885)",
+   "hook": "wrote \"Les Misérables\" and \"The Hunchback of Notre-Dame\"",
+   "known": 0.95,
+   "kind": "european"
+  },
+  {
+   "label": "Emily Brontë",
+   "qid": "Q80137",
+   "fame": 0.618,
+   "country": "United Kingdom",
+   "description": "English novelist and poet (1818–1848)",
+   "hook": "wrote the only novel \"Wuthering Heights,\" set on the windswept moors",
+   "known": 0.8,
+   "kind": "british"
+  },
+  {
+   "label": "Lewis Carroll",
+   "qid": "Q38082",
+   "fame": 0.613,
+   "country": "United Kingdom",
+   "description": "British author and scholar (1832–1898)",
+   "hook": "wrote \"Alice's Adventures in Wonderland\" and the nonsense poem \"Jabberwocky\"",
+   "known": 0.8,
+   "kind": "british"
+  },
+  {
+   "label": "Walt Whitman",
+   "qid": "Q81438",
+   "fame": 0.599,
+   "country": "United States",
+   "description": "American poet, essayist and journalist (1819–1892)",
+   "hook": "wrote the free-verse collection \"Leaves of Grass\" and \"O Captain! My Captain!\"",
+   "known": 0.8,
+   "kind": "american"
+  },
+  {
+   "label": "Allen Ginsberg",
+   "qid": "Q6711",
+   "fame": 0.597,
+   "country": "United States",
+   "description": "American poet and writer (1926–1997)",
+   "hook": "wrote the Beat Generation poem \"Howl,\" which faced an obscenity trial",
+   "known": 0.4,
+   "kind": "american"
+  },
+  {
+   "label": "Emily Dickinson",
+   "qid": "Q4441",
+   "fame": 0.597,
+   "country": "United States",
+   "description": "American poet (1830-1886)",
+   "hook": "was a reclusive poet of short, dash-filled poems who published almost nothing in life",
+   "known": 0.8,
+   "kind": "american"
+  },
+  {
+   "label": "Alexander Pushkin",
+   "qid": "Q7200",
+   "fame": 0.593,
+   "country": "Russian Empire",
+   "description": "Russian poet, playwright, and novelist (1799–1837)",
+   "hook": "wrote the verse novel \"Eugene Onegin\" and is called the founder of modern literature in his homeland",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "Jorge Luis Borges",
+   "qid": "Q909",
+   "fame": 0.593,
+   "country": "Argentina",
+   "description": "Argentine writer, essayist, poet and translator (1899–1986)",
+   "hook": "wrote labyrinthine short stories like \"The Library of Babel\" and \"The Aleph\"",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Ralph Waldo Emerson",
+   "qid": "Q48226",
+   "fame": 0.593,
+   "country": "United States",
+   "description": "American philosopher (1803–1882)",
+   "hook": "was a leading Transcendentalist who wrote the essay \"Self-Reliance\"",
+   "known": 0.6,
+   "kind": "american"
+  },
+  {
+   "label": "Virgil",
+   "qid": "Q1398",
+   "fame": 0.586,
+   "country": "Ancient Rome",
+   "description": "Roman poet (1st century BC)",
+   "hook": "wrote the \"Aeneid,\" the epic of a Trojan hero who founds a great empire's line",
+   "known": 0.6,
+   "kind": "ancient"
+  },
+  {
+   "label": "Federico García Lorca",
+   "qid": "Q41408",
+   "fame": 0.585,
+   "country": "Spain",
+   "description": "Spanish poet, dramatist and prose writer (1898–1936)",
+   "hook": "wrote \"Blood Wedding\" and \"Gypsy Ballads\" before being killed at the start of a civil war",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Geoffrey Chaucer",
+   "qid": "Q5683",
+   "fame": 0.583,
+   "country": "Kingdom of England",
+   "description": "14th century English poet and author (1343–1400)",
+   "hook": "wrote \"The Canterbury Tales,\" stories told by pilgrims on the road to a shrine",
+   "known": 0.8,
+   "kind": "british"
+  },
+  {
+   "label": "Ovid",
+   "qid": "Q7198",
+   "fame": 0.581,
+   "country": "Ancient Rome",
+   "description": "Roman poet (43 BC – 17/18 AD)",
+   "hook": "wrote the \"Metamorphoses,\" a long poem of myths in which people change shape",
+   "known": 0.6,
+   "kind": "ancient"
+  },
+  {
+   "label": "William Butler Yeats",
+   "qid": "Q40213",
+   "fame": 0.578,
+   "country": "Irish Free State",
+   "description": "Irish poet and playwright (1865–1939)",
+   "hook": "wrote \"The Second Coming\" and \"The Lake Isle of Innisfree\" and won a Nobel Prize",
+   "known": 0.8,
+   "kind": "british"
+  },
+  {
+   "label": "John Milton",
+   "qid": "Q79759",
+   "fame": 0.577,
+   "country": "Kingdom of England",
+   "description": "English poet and civil servant (1608–1674)",
+   "hook": "wrote \"Paradise Lost,\" an epic about Satan's fall and Adam and Eve",
+   "known": 0.8,
+   "kind": "british"
+  },
+  {
+   "label": "Thomas Hardy",
+   "qid": "Q132805",
+   "fame": 0.577,
+   "country": "United Kingdom",
+   "description": "English novelist and poet (1840–1928)",
+   "hook": "wrote \"Tess of the d'Urbervilles\" and \"Far from the Madding Crowd\" before turning mainly to verse",
+   "known": 0.6,
+   "kind": "british"
+  },
+  {
+   "label": "Robert Frost",
+   "qid": "Q168728",
+   "fame": 0.569,
+   "country": "United States",
+   "description": "American poet (1874–1963)",
+   "hook": "wrote \"The Road Not Taken\" and \"Stopping by Woods on a Snowy Evening\"",
+   "known": 0.8,
+   "kind": "american"
+  },
+  {
+   "label": "Christopher Marlowe",
+   "qid": "Q28975",
+   "fame": 0.567,
+   "country": "Kingdom of England",
+   "description": "English dramatist, poet and translator (1564–1593)",
+   "hook": "wrote \"Doctor Faustus\" and \"Tamburlaine\" and was a rival of Shakespeare",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "John Keats",
+   "qid": "Q82083",
+   "fame": 0.567,
+   "country": "United Kingdom",
+   "description": "English Romantic poet (1795–1821)",
+   "hook": "wrote \"Ode to a Nightingale\" and \"Ode on a Grecian Urn\" and died very young",
+   "known": 0.6,
+   "kind": "british"
+  },
+  {
+   "label": "Sappho",
+   "qid": "Q17892",
+   "fame": 0.563,
+   "country": "Mytilene",
+   "description": "ancient Greek poet from Lesbos (c. 630-c. 570 BC)",
+   "hook": "was an ancient poet of love lyrics whose work survives mostly in fragments",
+   "known": 0.2,
+   "kind": "ancient"
+  },
+  {
+   "label": "Langston Hughes",
+   "qid": "Q188093",
+   "fame": 0.562,
+   "country": "United States",
+   "description": "American writer and social activist (1901–1967)",
+   "hook": "was a leading voice of the Harlem Renaissance who wrote \"The Negro Speaks of Rivers\"",
+   "known": 0.4,
+   "kind": "american"
+  },
+  {
+   "label": "Samuel Johnson",
+   "qid": "Q183266",
+   "fame": 0.561,
+   "country": "Kingdom of Great Britain",
+   "description": "English writer and lexicographer (1709–1784)",
+   "hook": "compiled \"A Dictionary of the English Language\" almost single-handedly",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Henrik Ibsen",
+   "qid": "Q36661",
+   "fame": 0.558,
+   "country": "Norway",
+   "description": "Norwegian playwright and theatre director (1828–1906)",
+   "hook": "wrote the plays \"A Doll's House\" and \"Peer Gynt\"",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Jonathan Swift",
+   "qid": "Q41166",
+   "fame": 0.556,
+   "country": "Kingdom of Ireland",
+   "description": "Anglo-Irish satirist and essayist (1667–1745)",
+   "hook": "wrote \"Gulliver's Travels\" and the satire \"A Modest Proposal\"",
+   "known": 0.6,
+   "kind": "british"
+  },
+  {
+   "label": "Pablo Neruda",
+   "qid": "Q34189",
+   "fame": 0.556,
+   "country": "Chile",
+   "description": "Chilean poet and politician (1904-1973)",
+   "hook": "wrote \"Twenty Love Poems and a Song of Despair\" and won a Nobel Prize",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Charles Baudelaire",
+   "qid": "Q501",
+   "fame": 0.542,
+   "country": "France",
+   "description": "French poet and critic (1821–1867)",
+   "hook": "wrote the controversial collection \"Les Fleurs du mal\" (The Flowers of Evil)",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Arthur Rimbaud",
+   "qid": "Q493",
+   "fame": 0.541,
+   "country": "France",
+   "description": "French poet (1854-1891)",
+   "hook": "was a teenage prodigy who wrote \"The Drunken Boat\" and quit poetry by age twenty-one",
+   "known": 0.2,
+   "kind": "european"
+  },
+  {
+   "label": "Anne Brontë",
+   "qid": "Q44520",
+   "fame": 0.531,
+   "country": "United Kingdom",
+   "description": "British novelist and poet (1820-1849)",
+   "hook": "wrote the novel \"The Tenant of Wildfell Hall\" and was the youngest of three famous literary sisters",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Robert Burns",
+   "qid": "Q81960",
+   "fame": 0.53,
+   "country": "Kingdom of Great Britain",
+   "description": "Scottish poet and lyricist (1759–1796)",
+   "hook": "wrote \"Auld Lang Syne\" and \"To a Mouse\" and is celebrated each year with a supper",
+   "known": 0.6,
+   "kind": "british"
+  },
+  {
+   "label": "Alfred Tennyson",
+   "qid": "Q173869",
+   "fame": 0.528,
+   "country": "United Kingdom",
+   "description": "British Poet Laureate (1809–1892)",
+   "hook": "wrote \"The Charge of the Light Brigade\" and \"Ulysses\" and served as Poet Laureate for decades",
+   "known": 0.8,
+   "kind": "british"
+  },
+  {
+   "label": "Petrarch",
+   "qid": "Q1401",
+   "fame": 0.524,
+   "country": "Republic of Florence",
+   "description": "Italian scholar and poet (1304-1374)",
+   "hook": "popularized a fourteen-line love-poem form named after him, written for a woman called Laura",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Martial",
+   "qid": "Q2098",
+   "fame": 0.522,
+   "country": "Ancient Rome",
+   "description": "1st-century Latin poet from Hispania",
+   "hook": "was a Latin master of the short, witty, pointed poem called the epigram",
+   "known": 0.05,
+   "kind": "ancient"
+  },
+  {
+   "label": "Muhammad Iqbal",
+   "qid": "Q484141",
+   "fame": 0.519,
+   "country": "British Raj",
+   "description": "British-Indian Islamic philosopher, poet and politician (1877-1938)",
+   "hook": "wrote poetry in Urdu and Persian and is honored as the national poet of Pakistan",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Hesiod",
+   "qid": "Q44233",
+   "fame": 0.517,
+   "country": "Cyme",
+   "description": "ancient Greek poet of the archaic period",
+   "hook": "wrote \"Theogony\" and \"Works and Days\" about the origins of the gods and farm life",
+   "known": 0.05,
+   "kind": "ancient"
+  },
+  {
+   "label": "Henry Wadsworth Longfellow",
+   "qid": "Q152513",
+   "fame": 0.514,
+   "country": "United States",
+   "description": "American poet and educator (1807–1882)",
+   "hook": "wrote \"The Song of Hiawatha\" and \"Paul Revere's Ride\"",
+   "known": 0.6,
+   "kind": "american"
+  },
+  {
+   "label": "Elizabeth Barrett Browning",
+   "qid": "Q228494",
+   "fame": 0.513,
+   "country": "United Kingdom",
+   "description": "English poet (1806–1861)",
+   "hook": "wrote \"Sonnets from the Portuguese,\" including \"How do I love thee? Let me count the ways\"",
+   "known": 0.6,
+   "kind": "british"
+  },
+  {
+   "label": "Horace",
+   "qid": "Q6197",
+   "fame": 0.504,
+   "country": "Ancient Rome",
+   "description": "Roman lyric poet (65 BC – 8 BC)",
+   "hook": "wrote the Odes and coined the phrase \"carpe diem\" (seize the day)",
+   "known": 0.2,
+   "kind": "ancient"
+  },
+  {
+   "label": "John Donne",
+   "qid": "Q140412",
+   "fame": 0.498,
+   "country": "Kingdom of England",
+   "description": "English poet and cleric (1572–1631)",
+   "hook": "wrote \"No man is an island\" and was a leading Metaphysical poet who became a dean of St Paul's",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Seamus Heaney",
+   "qid": "Q93356",
+   "fame": 0.498,
+   "country": "Ireland",
+   "description": "Irish poet, playwright, translator, lecturer (1939–2013)",
+   "hook": "won the Nobel Prize in Literature and wrote \"Digging\" and \"Death of a Naturalist\"",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Jean Racine",
+   "qid": "Q742",
+   "fame": 0.485,
+   "country": "Kingdom of France",
+   "description": "French dramatist (1639-1699)",
+   "hook": "wrote the tragedies \"Phèdre\" and \"Andromaque\" in rhymed twelve-syllable verse",
+   "known": 0.2,
+   "kind": "european"
+  },
+  {
+   "label": "Omar Khayyám",
+   "qid": "Q35900",
+   "fame": 0.485,
+   "country": "Seljuk Empire",
+   "description": "Persian mathematician and poet (1048–1131)",
+   "hook": "is known for the \"Rubaiyat,\" quatrains about wine and fleeting life, and also for mathematics",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Ben Jonson",
+   "qid": "Q193857",
+   "fame": 0.47,
+   "country": "Kingdom of England",
+   "description": "English playwright, poet, and actor (1572-1637)",
+   "hook": "wrote the comedy \"Volpone\" and was a friend and rival of Shakespeare",
+   "known": 0.2,
+   "kind": "british"
+  },
+  {
+   "label": "John of the Cross",
+   "qid": "Q190388",
+   "fame": 0.462,
+   "country": "Crown of Castile",
+   "description": "Spanish mystic and Roman Catholic saint (1542–1591)",
+   "hook": "wrote \"Dark Night of the Soul,\" a mystic poem about the soul's journey toward God",
+   "known": 0.2,
+   "kind": "european"
+  },
+  {
+   "label": "Wole Soyinka",
+   "qid": "Q41488",
+   "fame": 0.46,
+   "country": "Nigeria",
+   "description": "Nigerian writer (born 1934)",
+   "hook": "became the first African to win the Nobel Prize in Literature",
+   "known": 0.2,
+   "kind": "asian"
+  },
+  {
+   "label": "Paul Verlaine",
+   "qid": "Q755",
+   "fame": 0.458,
+   "country": "France",
+   "description": "French poet (1844-1896)",
+   "hook": "was a Symbolist poet who wrote \"Autumn Song\" and had a stormy relationship with a teenage fellow poet",
+   "known": 0.2,
+   "kind": "european"
+  },
+  {
+   "label": "Catullus",
+   "qid": "Q163079",
+   "fame": 0.455,
+   "country": "Ancient Rome",
+   "description": "lyric Latin poet of the Roman Republic",
+   "hook": "wrote passionate love poems to a woman he called Lesbia",
+   "known": 0.05,
+   "kind": "ancient"
+  },
+  {
+   "label": "Carl Sandburg",
+   "qid": "Q193608",
+   "fame": 0.454,
+   "country": "United States",
+   "description": "American writer and editor (1878–1967)",
+   "hook": "wrote \"Chicago\" (\"City of the Big Shoulders\") and a Pulitzer-winning biography of Lincoln",
+   "known": 0.4,
+   "kind": "american"
+  },
+  {
+   "label": "Li Bai",
+   "qid": "Q7071",
+   "fame": 0.45,
+   "country": "Tang dynasty",
+   "description": "Classical Chinese poet of the Tang dynasty (701–762)",
+   "hook": "is famed for verses about wine, the moon and wandering, and is called a poet-immortal",
+   "known": 0.05,
+   "kind": "asian"
+  }
+ ]
+}

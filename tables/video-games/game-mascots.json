@@ -1,0 +1,229 @@
+{
+ "id": "table.video-games.game-mascots",
+ "kind": "table",
+ "title": "Game mascots and their company",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "studios",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?companyLabel WHERE { VALUES (?article ?itemLabel ?companyLabel) { (<https://en.wikipedia.org/wiki/Mario> \"Mario\" \"Nintendo\") (<https://en.wikipedia.org/wiki/Luigi> \"Luigi\" \"Nintendo\") (<https://en.wikipedia.org/wiki/Link_(The_Legend_of_Zelda)> \"Link\" \"Nintendo\") (<https://en.wikipedia.org/wiki/Kirby_(character)> \"Kirby\" \"Nintendo\") (<https://en.wikipedia.org/wiki/Donkey_Kong_(character)> \"Donkey Kong\" \"Nintendo\") (<https://en.wikipedia.org/wiki/Yoshi> \"Yoshi\" \"Nintendo\") (<https://en.wikipedia.org/wiki/Samus_Aran> \"Samus Aran\" \"Nintendo\") (<https://en.wikipedia.org/wiki/Fox_McCloud> \"Fox McCloud\" \"Nintendo\") (<https://en.wikipedia.org/wiki/Princess_Peach> \"Princess Peach\" \"Nintendo\") (<https://en.wikipedia.org/wiki/Bowser_(character)> \"Bowser\" \"Nintendo\") (<https://en.wikipedia.org/wiki/Wario> \"Wario\" \"Nintendo\") (<https://en.wikipedia.org/wiki/Toad_(Nintendo)> \"Toad\" \"Nintendo\") (<https://en.wikipedia.org/wiki/Isabelle_(Animal_Crossing)> \"Isabelle\" \"Nintendo\") (<https://en.wikipedia.org/wiki/Tom_Nook> \"Tom Nook\" \"Nintendo\") (<https://en.wikipedia.org/wiki/Captain_Falcon> \"Captain Falcon\" \"Nintendo\") (<https://en.wikipedia.org/wiki/Pikachu> \"Pikachu\" \"The Pokémon Company\") (<https://en.wikipedia.org/wiki/Charizard> \"Charizard\" \"The Pokémon Company\") (<https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_(character)> \"Sonic the Hedgehog\" \"Sega\") (<https://en.wikipedia.org/wiki/Miles_%22Tails%22_Prower> \"Tails\" \"Sega\") (<https://en.wikipedia.org/wiki/Knuckles_the_Echidna> \"Knuckles the Echidna\" \"Sega\") (<https://en.wikipedia.org/wiki/Dr._Eggman> \"Dr. Eggman\" \"Sega\") (<https://en.wikipedia.org/wiki/Alex_Kidd> \"Alex Kidd\" \"Sega\") (<https://en.wikipedia.org/wiki/Pac-Man_(character)> \"Pac-Man\" \"Bandai Namco\") (<https://en.wikipedia.org/wiki/Dig_Dug> \"Dig Dug\" \"Bandai Namco\") (<https://en.wikipedia.org/wiki/Mega_Man_(character)> \"Mega Man\" \"Capcom\") (<https://en.wikipedia.org/wiki/Ryu_(Street_Fighter)> \"Ryu\" \"Capcom\") (<https://en.wikipedia.org/wiki/Chun-Li> \"Chun-Li\" \"Capcom\") (<https://en.wikipedia.org/wiki/Master_Chief_(Halo)> \"Master Chief\" \"Microsoft\") (<https://en.wikipedia.org/wiki/Ratchet_(Ratchet_%26_Clank)> \"Ratchet\" \"Sony\") (<https://en.wikipedia.org/wiki/Sackboy> \"Sackboy\" \"Sony\") (<https://en.wikipedia.org/wiki/Rayman_(character)> \"Rayman\" \"Ubisoft\") (<https://en.wikipedia.org/wiki/Simon_Belmont> \"Simon Belmont\" \"Konami\") (<https://en.wikipedia.org/wiki/Bomberman> \"Bomberman\" \"Konami\") (<https://en.wikipedia.org/wiki/Cloud_Strife> \"Cloud Strife\" \"Square Enix\") (<https://en.wikipedia.org/wiki/Sora_(Kingdom_Hearts)> \"Sora\" \"Square Enix\") (<https://en.wikipedia.org/wiki/Gordon_Freeman> \"Gordon Freeman\" \"Valve\") (<https://en.wikipedia.org/wiki/GLaDOS> \"GLaDOS\" \"Valve\") (<https://en.wikipedia.org/wiki/Cuphead> \"Cuphead\" \"Studio MDHR\") (<https://en.wikipedia.org/wiki/Shovel_Knight> \"Shovel Knight\" \"Yacht Club Games\") (<https://en.wikipedia.org/wiki/Creeper_(Minecraft)> \"Creeper\" \"Mojang\") (<https://en.wikipedia.org/wiki/Steve_(Minecraft)> \"Steve\" \"Mojang\") (<https://en.wikipedia.org/wiki/Red_(Angry_Birds)> \"Red\" \"Rovio\") (<https://en.wikipedia.org/wiki/Q%2Abert> \"Q*bert\" \"Gottlieb\") (<https://en.wikipedia.org/wiki/Crash_Bandicoot_(character)> \"Crash Bandicoot\" \"Activision\") } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T05:02:48.242Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T05:02:48.242Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "company",
+   "label": "Company",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "game character",
+  "many": "game characters",
+  "columns": {
+   "company": {
+    "role": "link",
+    "pick": "Which company is {label} the star of?",
+    "statement": "{label} is a character from {value}.",
+    "match": "Match each game character to the company behind them.",
+    "odd": "Three of these characters belong to {value}. Which one doesn't?",
+    "all": "Tap all {n} characters that belong to {value}.",
+    "reverse": "Which of these characters belongs to {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Pikachu",
+   "qid": "Q9351",
+   "fame": 0.599,
+   "company": "The Pokémon Company",
+   "description": "Pokémon species, mascot of the Pokémon franchise",
+   "hook": "is a yellow electric mouse-like creature and the best-known face of a monster-collecting franchise",
+   "known": 0.95,
+   "kind": "mascot"
+  },
+  {
+   "label": "Mario",
+   "qid": "Q12379",
+   "fame": 0.584,
+   "company": "Nintendo",
+   "description": "fictional character in the Mario video game franchise",
+   "hook": "is an Italian-American plumber who rescues a princess from the villain Bowser",
+   "known": 0.95,
+   "kind": "mascot"
+  },
+  {
+   "label": "Chun-Li",
+   "qid": "Q1945499",
+   "fame": 0.578,
+   "company": "Capcom",
+   "description": "fictional Street Fighter character",
+   "hook": "is an Interpol officer and martial artist avenging her father, a pioneering woman in fighting games",
+   "known": 0.6,
+   "kind": "fighter"
+  },
+  {
+   "label": "Ryu",
+   "qid": "Q1223440",
+   "fame": 0.532,
+   "company": "Capcom",
+   "description": "fictional character from Street Fighter",
+   "hook": "is the headband-wearing hero of a fighting-game series, always training to become the strongest",
+   "known": 0.6,
+   "kind": "fighter"
+  },
+  {
+   "label": "Sonic the Hedgehog",
+   "qid": "Q191626",
+   "fame": 0.531,
+   "company": "Sega",
+   "description": "video game character from the eponymous video game franchise",
+   "hook": "is a blue speedster who collects rings and battles Doctor Eggman",
+   "known": 0.95,
+   "kind": "mascot"
+  },
+  {
+   "label": "Cuphead",
+   "qid": "Q18149495",
+   "fame": 0.51,
+   "company": "Studio MDHR",
+   "description": "2017 video game",
+   "hook": "follows two brothers who owe the Devil after a casino gamble, in a hand-drawn rubber-hose cartoon style",
+   "known": 0.4,
+   "kind": "protagonist"
+  },
+  {
+   "label": "Link",
+   "qid": "Q568553",
+   "fame": 0.505,
+   "company": "Nintendo",
+   "description": "main character of The Legend of Zelda video games created by Shigeru Miyamoto",
+   "hook": "is a green-clad hero who explores dungeons in Hyrule and battles Ganon to save a princess",
+   "known": 0.8,
+   "kind": "protagonist"
+  },
+  {
+   "label": "Samus Aran",
+   "qid": "Q12400",
+   "fame": 0.505,
+   "company": "Nintendo",
+   "description": "video game character",
+   "hook": "is an armored bounty hunter raised by bird-like aliens who explores hostile planets",
+   "known": 0.6,
+   "kind": "protagonist"
+  },
+  {
+   "label": "Steve",
+   "qid": "Q104901351",
+   "fame": 0.498,
+   "company": "Mojang",
+   "description": "protagonist of Minecraft",
+   "hook": "is the default blocky player avatar in a sandbox game about mining and crafting",
+   "known": 0.8,
+   "kind": "protagonist"
+  },
+  {
+   "label": "Kirby",
+   "qid": "Q613241",
+   "fame": 0.493,
+   "company": "Nintendo",
+   "description": "fictional character",
+   "hook": "is a round pink puffball who can inhale enemies to copy their abilities",
+   "known": 0.8,
+   "kind": "mascot"
+  },
+  {
+   "label": "Princess Peach",
+   "qid": "Q507001",
+   "fame": 0.492,
+   "company": "Nintendo",
+   "description": "fictional character from the Mario franchise",
+   "hook": "is the ruler of the Mushroom Kingdom, often kidnapped by Bowser",
+   "known": 0.8,
+   "kind": "supporting"
+  },
+  {
+   "label": "Knuckles the Echidna",
+   "qid": "Q904189",
+   "fame": 0.473,
+   "company": "Sega",
+   "description": "fictional character from the Sonic franchise",
+   "hook": "is a red spiny anteater-like brawler who guards the Master Emerald and fights with brute strength",
+   "known": 0.6,
+   "kind": "supporting"
+  },
+  {
+   "label": "Yoshi",
+   "qid": "Q214174",
+   "fame": 0.471,
+   "company": "Nintendo",
+   "description": "fictonal character in the Mario video game franchise",
+   "hook": "is a friendly green dinosaur who eats enemies with a long tongue and lays eggs",
+   "known": 0.8,
+   "kind": "supporting"
+  },
+  {
+   "label": "Master Chief",
+   "qid": "Q652022",
+   "fame": 0.468,
+   "company": "Microsoft",
+   "description": "fictional character in the Halo video game series",
+   "hook": "is a towering green-armored supersoldier who fights aliens in a sci-fi shooter",
+   "known": 0.6,
+   "kind": "protagonist"
+  },
+  {
+   "label": "Cloud Strife",
+   "qid": "Q1798592",
+   "fame": 0.467,
+   "company": "Square Enix",
+   "description": "protagonist of Final Fantasy VII",
+   "hook": "is a spiky-haired ex-soldier who wields an enormous buster sword",
+   "known": 0.6,
+   "kind": "protagonist"
+  },
+  {
+   "label": "Wario",
+   "qid": "Q536138",
+   "fame": 0.455,
+   "company": "Nintendo",
+   "description": "fictional video game character from the Mario franchise",
+   "hook": "is a selfish, greedy treasure hunter created as the evil opposite of a famous plumber",
+   "known": 0.6,
+   "kind": "supporting"
+  },
+  {
+   "label": "GLaDOS",
+   "qid": "Q605125",
+   "fame": 0.45,
+   "company": "Valve",
+   "description": "fictional artificially intelligent computer system in the Portal series of video games",
+   "hook": "is a rogue supercomputer that runs lethal test chambers and turns on its test subject",
+   "known": 0.4,
+   "kind": "non-player"
+  }
+ ]
+}

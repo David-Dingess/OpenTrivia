@@ -1,0 +1,308 @@
+{
+ "id": "table.food-and-drink.famous-chefs",
+ "kind": "table",
+ "title": "Famous chefs and what they are known for",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "chefs",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?famous WHERE { VALUES (?article ?itemLabel ?famous) { (<https://en.wikipedia.org/wiki/Gordon_Ramsay> \"Gordon Ramsay\" \"Hell's Kitchen and fiery kitchen TV\") (<https://en.wikipedia.org/wiki/Julia_Child> \"Julia Child\" \"French cooking brought to American TV\") (<https://en.wikipedia.org/wiki/Jamie_Oliver> \"Jamie Oliver\" \"The Naked Chef\") (<https://en.wikipedia.org/wiki/Guy_Fieri> \"Guy Fieri\" \"Diners, Drive-Ins and Dives\") (<https://en.wikipedia.org/wiki/Rachael_Ray> \"Rachael Ray\" \"30-minute meals\") (<https://en.wikipedia.org/wiki/Wolfgang_Puck> \"Wolfgang Puck\" \"Spago and California cuisine\") (<https://en.wikipedia.org/wiki/Emeril_Lagasse> \"Emeril Lagasse\" \"New Orleans Creole cooking and a shout of Bam\") (<https://en.wikipedia.org/wiki/Bobby_Flay> \"Bobby Flay\" \"Iron Chef America and Southwestern grilling\") (<https://en.wikipedia.org/wiki/Ina_Garten> \"Ina Garten\" \"Barefoot Contessa\") (<https://en.wikipedia.org/wiki/Alton_Brown> \"Alton Brown\" \"Good Eats\") (<https://en.wikipedia.org/wiki/Giada_De_Laurentiis> \"Giada De Laurentiis\" \"Everyday Italian\") (<https://en.wikipedia.org/wiki/Nigella_Lawson> \"Nigella Lawson\" \"Domestic Goddess\") (<https://en.wikipedia.org/wiki/Anthony_Bourdain> \"Anthony Bourdain\" \"Parts Unknown\") (<https://en.wikipedia.org/wiki/Heston_Blumenthal> \"Heston Blumenthal\" \"The Fat Duck and molecular gastronomy\") (<https://en.wikipedia.org/wiki/Thomas_Keller> \"Thomas Keller\" \"The French Laundry\") (<https://en.wikipedia.org/wiki/Paul_Bocuse> \"Paul Bocuse\" \"Nouvelle cuisine\") (<https://en.wikipedia.org/wiki/Auguste_Escoffier> \"Auguste Escoffier\" \"Classical French haute cuisine\") (<https://en.wikipedia.org/wiki/Ferran_Adrià> \"Ferran Adrià\" \"elBulli and molecular gastronomy\") (<https://en.wikipedia.org/wiki/René_Redzepi> \"René Redzepi\" \"Noma and New Nordic cuisine\") (<https://en.wikipedia.org/wiki/Joël_Robuchon> \"Joël Robuchon\" \"Silky mashed potatoes and French fine dining\") (<https://en.wikipedia.org/wiki/Massimo_Bottura> \"Massimo Bottura\" \"Osteria Francescana\") (<https://en.wikipedia.org/wiki/Nobu_Matsuhisa> \"Nobu Matsuhisa\" \"Japanese-Peruvian fusion\") (<https://en.wikipedia.org/wiki/Mary_Berry> \"Mary Berry\" \"The Great British Bake Off\") (<https://en.wikipedia.org/wiki/Rick_Stein> \"Rick Stein\" \"Seafood cooking\") (<https://en.wikipedia.org/wiki/Delia_Smith> \"Delia Smith\" \"How to Cook\") (<https://en.wikipedia.org/wiki/Ree_Drummond> \"Ree Drummond\" \"The Pioneer Woman\") (<https://en.wikipedia.org/wiki/David_Chang> \"David Chang\" \"Momofuku\") (<https://en.wikipedia.org/wiki/Yotam_Ottolenghi> \"Yotam Ottolenghi\" \"Middle Eastern-inspired vegetable cooking\") (<https://en.wikipedia.org/wiki/Madhur_Jaffrey> \"Madhur Jaffrey\" \"Indian cooking for Western kitchens\") (<https://en.wikipedia.org/wiki/Jacques_Pépin> \"Jacques Pépin\" \"French technique on public television\") (<https://en.wikipedia.org/wiki/Tom_Colicchio> \"Tom Colicchio\" \"Top Chef head judge\") (<https://en.wikipedia.org/wiki/Graham_Kerr> \"Graham Kerr\" \"The Galloping Gourmet\") (<https://en.wikipedia.org/wiki/Anne_Burrell> \"Anne Burrell\" \"Worst Cooks in America\") (<https://en.wikipedia.org/wiki/Sandra_Lee_(television_personality)> \"Sandra Lee\" \"Semi-Homemade\") (<https://en.wikipedia.org/wiki/José_Andrés> \"José Andrés\" \"Spanish tapas in America\") (<https://en.wikipedia.org/wiki/Michael_Symon> \"Michael Symon\" \"Cleveland cooking and The Chew\") (<https://en.wikipedia.org/wiki/Alain_Ducasse> \"Alain Ducasse\" \"Haute cuisine in Monaco and Paris\") (<https://en.wikipedia.org/wiki/Marco_Pierre_White> \"Marco Pierre White\" \"Youngest British chef with three Michelin stars\") (<https://en.wikipedia.org/wiki/Roy_Choi> \"Roy Choi\" \"Korean tacos from a food truck\") } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T10:33:40.416Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T12:17:47.937Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "famous",
+   "label": "Cuisine or show they are known for",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "chef",
+  "many": "chefs",
+  "wildcard": "person",
+  "columns": {
+   "famous": {
+    "role": "code",
+    "pick": "What is {label} best known for?",
+    "statement": "{label} is best known for {value}.",
+    "match": "Match each chef to what they are known for.",
+    "reverse": "Which chef is best known for {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Anthony Bourdain",
+   "qid": "Q426582",
+   "fame": 0.834,
+   "famous": "Parts Unknown",
+   "description": "American chef and television personality (1956-2018)",
+   "hook": "traveled the globe eating with locals on TV and wrote a bestselling tell-all about restaurant life",
+   "known": 0.7,
+   "kind": "tv-personality"
+  },
+  {
+   "label": "Nigella Lawson",
+   "qid": "Q264724",
+   "fame": 0.831,
+   "famous": "Domestic Goddess",
+   "description": "English food writer and television cook (born 1960)",
+   "hook": "is known for lavish, comforting home cooking and a glamorous, playful television persona",
+   "known": 0.7,
+   "kind": "tv-personality"
+  },
+  {
+   "label": "Giada De Laurentiis",
+   "qid": "Q166216",
+   "fame": 0.727,
+   "famous": "Everyday Italian",
+   "description": "Italian-American chef, writer, and television personality",
+   "hook": "is a TV cook known for easy pasta dishes, a bright smile and a famous film-producer grandfather",
+   "known": 0.6,
+   "kind": "tv-personality"
+  },
+  {
+   "label": "Gordon Ramsay",
+   "qid": "Q15280",
+   "fame": 0.701,
+   "famous": "Hell's Kitchen and fiery kitchen TV",
+   "description": "British chef, restaurateur, and television personality (born 1966)",
+   "hook": "is a hot-tempered TV chef famed for swearing at contestants and collecting many Michelin stars",
+   "known": 0.85,
+   "kind": "tv-personality"
+  },
+  {
+   "label": "Bobby Flay",
+   "qid": "Q858327",
+   "fame": 0.639,
+   "famous": "Iron Chef America and Southwestern grilling",
+   "description": "American celebrity chef, restaurateur and reality television personality",
+   "hook": "is a grill master who challenges rivals on cook-off shows and loves cooking with chilies",
+   "known": 0.65,
+   "kind": "tv-personality"
+  },
+  {
+   "label": "Marco Pierre White",
+   "qid": "Q2917016",
+   "fame": 0.636,
+   "famous": "Youngest British chef with three Michelin stars",
+   "description": "British chef and restaurateur",
+   "hook": "is a rebellious, long-haired London restaurateur who once trained Gordon Ramsay",
+   "known": 0.4,
+   "kind": "restaurant-chef"
+  },
+  {
+   "label": "Julia Child",
+   "qid": "Q214477",
+   "fame": 0.623,
+   "famous": "French cooking brought to American TV",
+   "description": "American chef",
+   "hook": "taught home cooks a famed European cuisine in a warbling voice on TV and in a landmark cookbook",
+   "known": 0.8,
+   "kind": "restaurant-chef"
+  },
+  {
+   "label": "Guy Fieri",
+   "qid": "Q12057690",
+   "fame": 0.608,
+   "famous": "Diners, Drive-Ins and Dives",
+   "description": "American television personality",
+   "hook": "is a spiky bleached-hair host who tours roadside eateries in a red convertible",
+   "known": 0.75,
+   "kind": "tv-personality"
+  },
+  {
+   "label": "Ina Garten",
+   "qid": "Q273371",
+   "fame": 0.594,
+   "famous": "Barefoot Contessa",
+   "description": "American author and television presenter",
+   "hook": "is a Hamptons-based host famed for easy, elegant entertaining and the catchphrase \"how easy is that?\"",
+   "known": 0.6,
+   "kind": "tv-personality"
+  },
+  {
+   "label": "Mary Berry",
+   "qid": "Q12035946",
+   "fame": 0.593,
+   "famous": "The Great British Bake Off",
+   "description": "British food writer and television presenter",
+   "hook": "is a veteran cake expert who judged amateur cooks in a tent on a hit TV contest",
+   "known": 0.7,
+   "kind": "tv-personality"
+  },
+  {
+   "label": "Delia Smith",
+   "qid": "Q1808967",
+   "fame": 0.588,
+   "famous": "How to Cook",
+   "description": "English cook and television presenter",
+   "hook": "is a bestselling cookbook author whose recommendations make shops sell out of ingredients",
+   "known": 0.65,
+   "kind": "tv-personality"
+  },
+  {
+   "label": "Jamie Oliver",
+   "qid": "Q190051",
+   "fame": 0.588,
+   "famous": "The Naked Chef",
+   "description": "British chef and media personality",
+   "hook": "is a casual, cheerful TV cook who campaigned for healthier school lunches",
+   "known": 0.8,
+   "kind": "tv-personality"
+  },
+  {
+   "label": "Yotam Ottolenghi",
+   "qid": "Q8056413",
+   "fame": 0.585,
+   "famous": "Middle Eastern-inspired vegetable cooking",
+   "description": "Israeli-born chef, cookery writer and restaurant owner",
+   "hook": "is a London restaurateur famed for colorful, veggie-forward dishes and cookbooks like Jerusalem and Plenty",
+   "known": 0.5,
+   "kind": "restaurant-chef"
+  },
+  {
+   "label": "David Chang",
+   "qid": "Q3017652",
+   "fame": 0.565,
+   "famous": "Momofuku",
+   "description": "American chef",
+   "hook": "began with a ramen restaurant in New York's East Village and grew it into a restaurant empire",
+   "known": 0.5,
+   "kind": "restaurant-chef"
+  },
+  {
+   "label": "Emeril Lagasse",
+   "qid": "Q339838",
+   "fame": 0.556,
+   "famous": "New Orleans Creole cooking and a shout of Bam",
+   "description": "American chef",
+   "hook": "is famed for the catchphrase \"kick it up a notch\" and spicy Louisiana flavors",
+   "known": 0.6,
+   "kind": "tv-personality"
+  },
+  {
+   "label": "Anne Burrell",
+   "qid": "Q4768197",
+   "fame": 0.552,
+   "famous": "Worst Cooks in America",
+   "description": "American television chef (1969–2025)",
+   "hook": "was a spiky-haired TV chef known for coaching hopeless kitchen newbies in a boot camp",
+   "known": 0.45,
+   "kind": "tv-personality"
+  },
+  {
+   "label": "Ree Drummond",
+   "qid": "Q7306553",
+   "fame": 0.544,
+   "famous": "The Pioneer Woman",
+   "description": "American chef",
+   "hook": "is a blogger turned TV host who cooks hearty meals on a working cattle ranch in Oklahoma",
+   "known": 0.6,
+   "kind": "tv-personality"
+  },
+  {
+   "label": "Rachael Ray",
+   "qid": "Q257943",
+   "fame": 0.537,
+   "famous": "30-minute meals",
+   "description": "American television host, businesswoman, celebrity cook, and author",
+   "hook": "is a perky TV host famed for quick weeknight dinners and the acronym EVOO",
+   "known": 0.75,
+   "kind": "tv-personality"
+  },
+  {
+   "label": "Alton Brown",
+   "qid": "Q4736872",
+   "fame": 0.534,
+   "famous": "Good Eats",
+   "description": "American chef, author and musician",
+   "hook": "is a quirky TV host who explains the science behind cooking and commentated on Iron Chef America",
+   "known": 0.65,
+   "kind": "tv-personality"
+  },
+  {
+   "label": "Heston Blumenthal",
+   "qid": "Q1616078",
+   "fame": 0.508,
+   "famous": "The Fat Duck and molecular gastronomy",
+   "description": "English chef",
+   "hook": "is famed for experimental dishes like snail porridge and bacon-and-egg ice cream",
+   "known": 0.6,
+   "kind": "restaurant-chef"
+  },
+  {
+   "label": "Rick Stein",
+   "qid": "Q7331770",
+   "fame": 0.505,
+   "famous": "Seafood cooking",
+   "description": "English chef, writer and television presenter",
+   "hook": "is a TV travel-cook who built a restaurant empire in a Cornish harbour town and loves fish",
+   "known": 0.5,
+   "kind": "restaurant-chef"
+  },
+  {
+   "label": "Thomas Keller",
+   "qid": "Q382550",
+   "fame": 0.503,
+   "famous": "The French Laundry",
+   "description": "American chef, restaurateur, and cookbook writer",
+   "hook": "runs a legendary Napa Valley restaurant and a New York sibling, both with three Michelin stars",
+   "known": 0.6,
+   "kind": "restaurant-chef"
+  },
+  {
+   "label": "Auguste Escoffier",
+   "qid": "Q313744",
+   "fame": 0.496,
+   "famous": "Classical French haute cuisine",
+   "description": "French chef and culinary writer (1846–1935)",
+   "hook": "organized restaurant kitchens into a ranked brigade system and worked alongside Ritz at luxury hotels",
+   "known": 0.7,
+   "kind": "restaurant-chef"
+  },
+  {
+   "label": "Wolfgang Puck",
+   "qid": "Q78893",
+   "fame": 0.477,
+   "famous": "Spago and California cuisine",
+   "description": "Austrian-American chef and restaurateur",
+   "hook": "opened a trendy Los Angeles restaurant and is known for gourmet pizza and catering Oscar parties",
+   "known": 0.75,
+   "kind": "restaurant-chef"
+  },
+  {
+   "label": "Paul Bocuse",
+   "qid": "Q8159",
+   "fame": 0.455,
+   "famous": "Nouvelle cuisine",
+   "description": "French chef (1926–2018)",
+   "hook": "was a Lyon chef honored with a world cooking contest named for him and a long-held top Michelin rating",
+   "known": 0.65,
+   "kind": "restaurant-chef"
+  }
+ ]
+}

@@ -1,0 +1,1219 @@
+{
+ "id": "table.video-games.game-genres",
+ "kind": "table",
+ "title": "Video games and their genre",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "game-mechanics",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?genreLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?g) AS ?genre) (COUNT(DISTINCT ?g) AS ?nG) WHERE { ?item wdt:P31 wd:Q7889 ; wdt:P136 ?g ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks >= 14) FILTER NOT EXISTS { ?item wdt:P852 ?esrb . VALUES ?esrb { wd:Q14864331 wd:Q14864332 wd:Q110488287 wd:Q124356066 } } } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 700 } hint:Prior hint:runFirst true . FILTER(?nG = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 394",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T14:56:59.913Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T14:56:59.913Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "genre",
+   "label": "Genre",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "game",
+  "many": "games",
+  "minFame": 0.5,
+  "exclude": [
+   {
+    "qid": "Q108479502",
+    "why": "ambiguous with the 2004 game"
+   },
+   {
+    "qid": "Q23013817",
+    "why": "one-off genre"
+   },
+   {
+    "qid": "Q15707420",
+    "why": "one-off genre"
+   },
+   {
+    "qid": "Q207786",
+    "why": "one-off genre, not really a video game"
+   },
+   {
+    "qid": "Q13576160",
+    "why": "one-off genre"
+   },
+   {
+    "qid": "Q746228",
+    "why": "Metroidvania label is contestable"
+   },
+   {
+    "qid": "Q1779100",
+    "why": "action RPG overlaps with RPG"
+   },
+   {
+    "qid": "Q9176944",
+    "why": "one-off genre"
+   },
+   {
+    "qid": "Q124357469",
+    "why": "one-off genre"
+   },
+   {
+    "qid": "Q216293",
+    "why": "sports label is odd"
+   },
+   {
+    "qid": "Q2681151",
+    "why": "obscure and violent"
+   },
+   {
+    "qid": "Q105731119",
+    "why": "one-off genre"
+   },
+   {
+    "qid": "Q64566657",
+    "why": "one-off genre"
+   },
+   {
+    "qid": "Q28861509",
+    "why": "platformer label overlaps with horror"
+   },
+   {
+    "qid": "Q390223",
+    "why": "MMO overlaps with RPG"
+   },
+   {
+    "qid": "Q28127320",
+    "why": "genre overlaps with others"
+   },
+   {
+    "qid": "Q474798",
+    "why": "Wikidata calls it an RPG; it is an action-adventure"
+   },
+   {
+    "qid": "Q220965",
+    "why": "one-off genre and obscure"
+   },
+   {
+    "qid": "Q847638",
+    "why": "too obscure"
+   },
+   {
+    "qid": "Q1134845",
+    "why": "MMORPG overlaps with RPG"
+   },
+   {
+    "qid": "Q868389",
+    "why": "MMORPG overlaps with RPG"
+   },
+   {
+    "qid": "Q379128",
+    "why": "one-off genre"
+   }
+  ],
+  "hookAsk": "Which game {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "genre": {
+    "role": "link",
+    "pick": "What genre is {label}?",
+    "statement": "The genre of {label} is {value}.",
+    "match": "Match each game to its genre."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The Legend of Zelda: Ocarina of Time",
+   "qid": "Q213911",
+   "fame": 0.707,
+   "genre": "action-adventure game",
+   "description": "1998 video game for the Nintendo 64",
+   "hook": "lets a young hero travel between childhood and adulthood by pulling a sword from a stone pedestal",
+   "known": 0.75,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Spider-Man 2",
+   "qid": "Q108479502",
+   "fame": 0.641,
+   "genre": "action-adventure game",
+   "description": "2023 video game developed by Insomniac Games",
+   "hook": "has two web-slinging New Yorkers swing across Manhattan on the PlayStation 5",
+   "known": 0.45,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Ghost of Yōtei",
+   "qid": "Q130360297",
+   "fame": 0.621,
+   "genre": "action-adventure game",
+   "description": "2025 video game developed by Sucker Punch Productions",
+   "hook": "follows a masked samurai avenging her family in feudal Hokkaido, a follow-up to a Tsushima saga",
+   "known": 0.45,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Silent Hill f",
+   "qid": "Q114772020",
+   "fame": 0.617,
+   "genre": "survival horror",
+   "description": "2025 survival horror video game developed by Neobards Entertainment",
+   "hook": "sends a schoolgirl into fog-covered rural Japan, in a long-running franchise of psychological dread",
+   "known": 0.45,
+   "kind": "survival-horror"
+  },
+  {
+   "label": "Tetris",
+   "qid": "Q71910",
+   "fame": 0.613,
+   "genre": "puzzle video game",
+   "description": "1984 tile-matching puzzle video game series",
+   "hook": "has players rotate falling blocks made of four squares to complete lines",
+   "known": 0.95,
+   "kind": "puzzle"
+  },
+  {
+   "label": "Pac-Man",
+   "qid": "Q173626",
+   "fame": 0.597,
+   "genre": "maze video game",
+   "description": "1980 arcade game developed by Namco",
+   "hook": "has a yellow circle chomp dots in a labyrinth while four colorful ghosts chase it",
+   "known": 0.95,
+   "kind": "maze"
+  },
+  {
+   "label": "League of Legends",
+   "qid": "Q223341",
+   "fame": 0.587,
+   "genre": "multiplayer online battle arena",
+   "description": "2009 multiplayer online battle arena video game",
+   "hook": "pits two teams of five champions against each other to destroy the enemy Nexus",
+   "known": 0.95,
+   "kind": "moba"
+  },
+  {
+   "label": "Super Mario Bros.",
+   "qid": "Q11168",
+   "fame": 0.584,
+   "genre": "2D platform game",
+   "description": "1985 platform video game",
+   "hook": "sends a mustachioed plumber to rescue Princess Peach from Bowser",
+   "known": 0.95,
+   "kind": "2d-platformer"
+  },
+  {
+   "label": "Alan Wake",
+   "qid": "Q575505",
+   "fame": 0.581,
+   "genre": "action-adventure game",
+   "description": "2010 video game",
+   "hook": "follows a novelist hunting for his missing wife in a Pacific Northwest town haunted by darkness",
+   "known": 0.45,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Tekken 3",
+   "qid": "Q1062106",
+   "fame": 0.581,
+   "genre": "3D fighting game",
+   "description": "1997 fighting video game",
+   "hook": "was a PlayStation hit where Jin Kazama fights in the King of Iron Fist tournament",
+   "known": 0.65,
+   "kind": "fighting"
+  },
+  {
+   "label": "The Legend of Zelda",
+   "qid": "Q12395",
+   "fame": 0.579,
+   "genre": "action-adventure game",
+   "description": "1986 action-adventure video game",
+   "hook": "launched a franchise about a green-clad hero saving a princess and the kingdom of Hyrule",
+   "known": 0.95,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Metal Gear Solid 3: Snake Eater",
+   "qid": "Q247935",
+   "fame": 0.57,
+   "genre": "action-adventure game",
+   "description": "action-adventure stealth video game released in 2004",
+   "hook": "drops a soldier into a Soviet jungle in the Cold War, where he must survive on the land",
+   "known": 0.75,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "The Legend of Zelda: Majora's Mask",
+   "qid": "Q732943",
+   "fame": 0.568,
+   "genre": "action-adventure game",
+   "description": "2000 video game",
+   "hook": "gives a young hero three days to stop a grinning moon from crashing into the land",
+   "known": 0.45,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "The Legend of Zelda: Twilight Princess",
+   "qid": "Q735613",
+   "fame": 0.567,
+   "genre": "action-adventure game",
+   "description": "2006 action-adventure video game",
+   "hook": "has a hero transform into a wolf while helping a shadowy ruler of a dusk-covered land",
+   "known": 0.45,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Command & Conquer: Red Alert 3",
+   "qid": "Q746351",
+   "fame": 0.566,
+   "genre": "real-time strategy",
+   "description": "2008 video game",
+   "hook": "is a campy game of alternate-history war between Allies, Soviets and the Empire of the Rising Sun",
+   "known": 0.45,
+   "kind": "rts"
+  },
+  {
+   "label": "Stardew Valley",
+   "qid": "Q23013817",
+   "fame": 0.565,
+   "genre": "farm life sim",
+   "description": "2016 indie farming simulation role-playing video game",
+   "hook": "lets you inherit your grandfather's plot, grow crops and befriend the villagers of Pelican Town",
+   "known": 0.65,
+   "kind": "sim"
+  },
+  {
+   "label": "Flappy Bird",
+   "qid": "Q15707420",
+   "fame": 0.561,
+   "genre": "action game",
+   "description": "2013 mobile video game by Dong Nguyen",
+   "hook": "has a tiny flapping creature squeeze through green pipes and was pulled from stores by its creator",
+   "known": 0.5,
+   "kind": "action"
+  },
+  {
+   "label": "Call of Duty: Modern Warfare III",
+   "qid": "Q121295422",
+   "fame": 0.559,
+   "genre": "first-person shooter",
+   "description": "2023 video game developed by Sledgehammer Games",
+   "hook": "sends Task Force 141 after the warlord Makarov in an entry of a huge military franchise",
+   "known": 0.45,
+   "kind": "fps"
+  },
+  {
+   "label": "Tamagotchi",
+   "qid": "Q207786",
+   "fame": 0.555,
+   "genre": "virtual pet video game",
+   "description": "handheld digital pet",
+   "hook": "is a keychain toy where you feed, clean and raise a pixelated creature",
+   "known": 0.5,
+   "kind": "sim"
+  },
+  {
+   "label": "Shadow of the Colossus",
+   "qid": "Q846051",
+   "fame": 0.554,
+   "genre": "action-adventure game",
+   "description": "2005 video game",
+   "hook": "has a young wanderer climb giant living creatures to revive a girl",
+   "known": 0.75,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Counter-Strike 2",
+   "qid": "Q111165107",
+   "fame": 0.549,
+   "genre": "first-person shooter",
+   "description": "2023 video game",
+   "hook": "is the Source 2 update to a hugely popular competitive game of terrorists versus their opponents",
+   "known": 0.65,
+   "kind": "fps"
+  },
+  {
+   "label": "EarthBound",
+   "qid": "Q2529000",
+   "fame": 0.547,
+   "genre": "role-playing video game",
+   "description": "1994 video game",
+   "hook": "sends a boy with a baseball bat and psychic powers to save the world from Giygas",
+   "known": 0.45,
+   "kind": "rpg"
+  },
+  {
+   "label": "Final Fantasy X",
+   "qid": "Q223381",
+   "fame": 0.543,
+   "genre": "role-playing video game",
+   "description": "2001 video game",
+   "hook": "follows Tidus and Yuna as they travel Spira to defeat a monster called Sin",
+   "known": 0.75,
+   "kind": "rpg"
+  },
+  {
+   "label": "Halo Infinite",
+   "qid": "Q54913666",
+   "fame": 0.534,
+   "genre": "first-person shooter",
+   "description": "2021 first-person shooter video game developed by 343 Industries",
+   "hook": "brings back Master Chief to fight the Banished on a broken ringworld",
+   "known": 0.8,
+   "kind": "fps"
+  },
+  {
+   "label": "Need for Speed: Most Wanted",
+   "qid": "Q220365",
+   "fame": 0.533,
+   "genre": "racing video game",
+   "description": "2005 racing video game by Electronic Arts",
+   "hook": "has you climb a blacklist of rival street racers while dodging the police",
+   "known": 0.65,
+   "kind": "racing"
+  },
+  {
+   "label": "GeoGuessr",
+   "qid": "Q13576160",
+   "fame": 0.532,
+   "genre": "casual game",
+   "description": "2013 geographic discovery video game",
+   "hook": "drops you at a random spot in Google Street View and asks you to guess where on Earth you are",
+   "known": 0.5,
+   "kind": "casual"
+  },
+  {
+   "label": "Batman: Arkham Asylum",
+   "qid": "Q746228",
+   "fame": 0.529,
+   "genre": "Metroidvania",
+   "description": "2009 action-adventure game",
+   "hook": "traps the Dark Knight on an island facing the Joker and a riot of inmates",
+   "known": 0.5,
+   "kind": "metroidvania"
+  },
+  {
+   "label": "Final Fantasy XV",
+   "qid": "Q1779100",
+   "fame": 0.529,
+   "genre": "action role-playing game",
+   "description": "2016 action role-playing video game",
+   "hook": "follows Prince Noctis and three friends on a road trip in a car called the Regalia",
+   "known": 0.75,
+   "kind": "arpg"
+  },
+  {
+   "label": "Subway Surfers",
+   "qid": "Q9176944",
+   "fame": 0.526,
+   "genre": "endless runner game",
+   "description": "2012 mobile game",
+   "hook": "has a graffiti-spraying kid run along train tracks while dodging trains and a grumpy inspector",
+   "known": 0.65,
+   "kind": "runner"
+  },
+  {
+   "label": "Super Mario Galaxy",
+   "qid": "Q170489",
+   "fame": 0.526,
+   "genre": "3D platform game",
+   "description": "2007 video game",
+   "hook": "sends a plumber between tiny planets with gravity, to rescue a princess in space",
+   "known": 0.45,
+   "kind": "3d-platformer"
+  },
+  {
+   "label": "The Legend of Zelda: Link's Awakening",
+   "qid": "Q1060323",
+   "fame": 0.526,
+   "genre": "action-adventure game",
+   "description": "1993 video game released by Nintendo",
+   "hook": "strands a hero on Koholint Island, where he must wake a sleeping Wind Fish",
+   "known": 0.65,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "StarCraft",
+   "qid": "Q165929",
+   "fame": 0.525,
+   "genre": "real-time strategy",
+   "description": "1998 video game",
+   "hook": "pits Terrans, Zerg and Protoss against one another in a military sci-fi classic",
+   "known": 0.45,
+   "kind": "rts"
+  },
+  {
+   "label": "Final Fantasy",
+   "qid": "Q1415970",
+   "fame": 0.524,
+   "genre": "role-playing video game",
+   "description": "1987 role-playing video game originally for the NES",
+   "hook": "sent four Light Warriors to restore crystals and launched a franchise that saved its publisher",
+   "known": 0.95,
+   "kind": "rpg"
+  },
+  {
+   "label": "The Legend of Zelda: Skyward Sword",
+   "qid": "Q861205",
+   "fame": 0.524,
+   "genre": "action-adventure game",
+   "description": "2011 video game on the Nintendo Wii",
+   "hook": "reveals how a hero's blade came to be, using motion controls in a sky-high land",
+   "known": 0.75,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Balatro",
+   "qid": "Q124357469",
+   "fame": 0.523,
+   "genre": "roguelike deck-building game",
+   "description": "2024 video game developed by LocalThunk",
+   "hook": "turns poker hands into a scoring puzzle, with joker cards that twist the rules",
+   "known": 0.45,
+   "kind": "roguelike"
+  },
+  {
+   "label": "Mobile Legends: Bang Bang",
+   "qid": "Q29564198",
+   "fame": 0.517,
+   "genre": "multiplayer online battle arena",
+   "description": "2016 multiplayer online battle arena mobile game",
+   "hook": "is a phone game hugely popular in Southeast Asia where five-player teams fight to destroy a base",
+   "known": 0.45,
+   "kind": "moba"
+  },
+  {
+   "label": "Pong",
+   "qid": "Q216293",
+   "fame": 0.515,
+   "genre": "sports video game",
+   "description": "1972 video game",
+   "hook": "is one of the earliest arcade hits, in which two paddles bat a square ball back and forth",
+   "known": 0.95,
+   "kind": "other"
+  },
+  {
+   "label": "Final Fantasy XII",
+   "qid": "Q327594",
+   "fame": 0.512,
+   "genre": "role-playing video game",
+   "description": "2006 video game",
+   "hook": "follows Vaan and Ashe in the land of Ivalice, and features a system of programmable Gambits",
+   "known": 0.45,
+   "kind": "rpg"
+  },
+  {
+   "label": "Sonic the Hedgehog",
+   "qid": "Q37123",
+   "fame": 0.511,
+   "genre": "platformer",
+   "description": "1991 video game",
+   "hook": "introduced a blue speedster who collects golden rings and fights Dr. Robotnik",
+   "known": 0.95,
+   "kind": "platformer"
+  },
+  {
+   "label": "Celeste",
+   "qid": "Q28451532",
+   "fame": 0.51,
+   "genre": "platformer",
+   "description": "2018 video game",
+   "hook": "has a girl named Madeline climb a tough mountain while facing her anxiety",
+   "known": 0.75,
+   "kind": "platformer"
+  },
+  {
+   "label": "Space Invaders",
+   "qid": "Q220665",
+   "fame": 0.509,
+   "genre": "shoot 'em up",
+   "description": "1978 fixed shooter video game",
+   "hook": "has a lone cannon fend off rows of descending pixelated aliens",
+   "known": 0.95,
+   "kind": "shooter"
+  },
+  {
+   "label": "Pokémon Emerald",
+   "qid": "Q2045645",
+   "fame": 0.507,
+   "genre": "role-playing video game",
+   "description": "2004 Japanese video game",
+   "hook": "sends trainers to the Hoenn region to stop Team Magma and Team Aqua from waking legendary beasts",
+   "known": 0.45,
+   "kind": "rpg"
+  },
+  {
+   "label": "Super Mario World",
+   "qid": "Q853143",
+   "fame": 0.507,
+   "genre": "2D platform game",
+   "description": "1990 platform video game developed by Nintendo",
+   "hook": "introduced a friendly green dinosaur that a mustachioed plumber can ride",
+   "known": 0.45,
+   "kind": "2d-platformer"
+  },
+  {
+   "label": "Ōkami",
+   "qid": "Q385184",
+   "fame": 0.505,
+   "genre": "action-adventure game",
+   "description": "2006 action-adventure video game published by Capcom",
+   "hook": "has a white wolf goddess restore nature using a celestial paintbrush",
+   "known": 0.45,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Crash Bandicoot",
+   "qid": "Q719176",
+   "fame": 0.503,
+   "genre": "3D platform game",
+   "description": "1996 platform video game",
+   "hook": "stars an orange marsupial who spins and jumps to stop Doctor Neo Cortex",
+   "known": 0.45,
+   "kind": "3d-platformer"
+  },
+  {
+   "label": "Gran Turismo 7",
+   "qid": "Q18345763",
+   "fame": 0.503,
+   "genre": "racing video game",
+   "description": "2022 video game developed by Polyphony Digital",
+   "hook": "is a driving simulator on PlayStation known for realistic cars and a Cafe menu",
+   "known": 0.45,
+   "kind": "racing"
+  },
+  {
+   "label": "Spyro the Dragon",
+   "qid": "Q858391",
+   "fame": 0.503,
+   "genre": "platformer",
+   "description": "1998 video game developed by Insomniac Games",
+   "hook": "stars a small purple fire-breather who must free his kin from crystals and gem-hunting",
+   "known": 0.45,
+   "kind": "platformer"
+  },
+  {
+   "label": "Super Mario Bros. Wonder",
+   "qid": "Q119819453",
+   "fame": 0.502,
+   "genre": "2D platform game",
+   "description": "2023 platform video game developed by Nintendo EPD",
+   "hook": "turns a plumber into an elephant and lets flower creatures warp the levels",
+   "known": 0.45,
+   "kind": "2d-platformer"
+  },
+  {
+   "label": "Tomb Raider",
+   "qid": "Q317620",
+   "fame": 0.502,
+   "genre": "action-adventure game",
+   "description": "1996 action-adventure video game developed by Core Design",
+   "hook": "introduced a British archaeologist with dual pistols who raids ancient tombs",
+   "known": 0.45,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Happy Wheels",
+   "qid": "Q2681151",
+   "fame": 0.501,
+   "genre": "platformer",
+   "description": "2010 video game",
+   "hook": "is a browser game of ragdoll physics and deadly obstacles, played by controlling gruesomely doomed characters",
+   "known": 0.5,
+   "kind": "platformer"
+  },
+  {
+   "label": "Friday Night Funkin'",
+   "qid": "Q105731119",
+   "fame": 0.5,
+   "genre": "rhythm game",
+   "description": "2020 rhythm game",
+   "hook": "has a boyfriend hit arrows in time with the beat in rap contests to win over his girlfriend's dad",
+   "known": 0.45,
+   "kind": "rhythm"
+  },
+  {
+   "label": "Animal Crossing: New Horizons",
+   "qid": "Q64566657",
+   "fame": 0.499,
+   "genre": "life simulation game",
+   "description": "2020 life simulation video game",
+   "hook": null,
+   "known": 0.65,
+   "kind": "sim"
+  },
+  {
+   "label": "Final Fantasy IX",
+   "qid": "Q474573",
+   "fame": 0.498,
+   "genre": "role-playing video game",
+   "description": "2000 video game",
+   "hook": null,
+   "known": 0.65,
+   "kind": "rpg"
+  },
+  {
+   "label": "Tekken 8",
+   "qid": "Q105486599",
+   "fame": 0.497,
+   "genre": "3D fighting game",
+   "description": "2024 fighting game developed by Bandai Namco Studios",
+   "hook": null,
+   "known": 0.45,
+   "kind": "fighting"
+  },
+  {
+   "label": "Command & Conquer: Red Alert",
+   "qid": "Q388225",
+   "fame": 0.493,
+   "genre": "real-time strategy",
+   "description": "1996 video game",
+   "hook": null,
+   "known": 0.65,
+   "kind": "rts"
+  },
+  {
+   "label": "The World Ends with You",
+   "qid": "Q1416303",
+   "fame": 0.492,
+   "genre": "role-playing video game",
+   "description": "2007 action role-playing video game",
+   "hook": null,
+   "known": 0.5,
+   "kind": "rpg"
+  },
+  {
+   "label": "Donkey Kong",
+   "qid": "Q12384",
+   "fame": 0.487,
+   "genre": "platformer",
+   "description": "1981 video game",
+   "hook": null,
+   "known": 0.95,
+   "kind": "platformer"
+  },
+  {
+   "label": "Contra",
+   "qid": "Q849328",
+   "fame": 0.486,
+   "genre": "shoot 'em up",
+   "description": "1987 run and gun action game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "shooter"
+  },
+  {
+   "label": "Luigi's Mansion",
+   "qid": "Q984029",
+   "fame": 0.486,
+   "genre": "action-adventure game",
+   "description": "2001 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Mario Bros.",
+   "qid": "Q610968",
+   "fame": 0.486,
+   "genre": "platformer",
+   "description": "1983 Japanese arcade game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "platformer"
+  },
+  {
+   "label": "Sonic Adventure 2",
+   "qid": "Q1070984",
+   "fame": 0.486,
+   "genre": "platformer",
+   "description": "2001 platform video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "platformer"
+  },
+  {
+   "label": "The Legend of Zelda: A Link Between Worlds",
+   "qid": "Q11300470",
+   "fame": 0.486,
+   "genre": "action-adventure game",
+   "description": "2013 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Little Nightmares",
+   "qid": "Q28861509",
+   "fame": 0.485,
+   "genre": "platformer",
+   "description": "2017 puzzle-platform horror adventure video game",
+   "hook": null,
+   "known": 0.5,
+   "kind": "platformer"
+  },
+  {
+   "label": "Ico",
+   "qid": "Q1324448",
+   "fame": 0.484,
+   "genre": "action-adventure game",
+   "description": "2001 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Super Mario Bros. 3",
+   "qid": "Q639619",
+   "fame": 0.484,
+   "genre": "2D platform game",
+   "description": "1988 platform video game developed by Nintendo",
+   "hook": null,
+   "known": 0.95,
+   "kind": "2d-platformer"
+  },
+  {
+   "label": "Club Penguin",
+   "qid": "Q390223",
+   "fame": 0.483,
+   "genre": "massively multiplayer online game",
+   "description": "massively multiplayer online game",
+   "hook": null,
+   "known": 0.5,
+   "kind": "mmo"
+  },
+  {
+   "label": "Donkey Kong Country",
+   "qid": "Q518987",
+   "fame": 0.483,
+   "genre": "2D platform game",
+   "description": "1994 side-scroller platform video game for the SNES",
+   "hook": null,
+   "known": 0.45,
+   "kind": "2d-platformer"
+  },
+  {
+   "label": "The Simpsons: Hit & Run",
+   "qid": "Q836690",
+   "fame": 0.483,
+   "genre": "action-adventure game",
+   "description": "2003 action-adventure video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Candy Crush Saga",
+   "qid": "Q8768018",
+   "fame": 0.481,
+   "genre": "puzzle video game",
+   "description": "2012 puzzle video game by King",
+   "hook": null,
+   "known": 0.65,
+   "kind": "puzzle"
+  },
+  {
+   "label": "Castlevania",
+   "qid": "Q1043375",
+   "fame": 0.48,
+   "genre": "action-adventure game",
+   "description": "1986 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Crash Bandicoot 4: It's About Time",
+   "qid": "Q96574138",
+   "fame": 0.479,
+   "genre": "platformer",
+   "description": "2020 platform video game developed by Toys for Bob",
+   "hook": null,
+   "known": 0.45,
+   "kind": "platformer"
+  },
+  {
+   "label": "Sonic Adventure",
+   "qid": "Q1069059",
+   "fame": 0.479,
+   "genre": "platformer",
+   "description": "1998 3D platforming video game developed by Sonic Team",
+   "hook": null,
+   "known": 0.5,
+   "kind": "platformer"
+  },
+  {
+   "label": "Hello Neighbor",
+   "qid": "Q28127320",
+   "fame": 0.476,
+   "genre": "survival horror",
+   "description": "2017 video game developed by Dynamic Pixels",
+   "hook": null,
+   "known": 0.5,
+   "kind": "survival-horror"
+  },
+  {
+   "label": "Lemmings",
+   "qid": "Q864177",
+   "fame": 0.476,
+   "genre": "puzzle video game",
+   "description": "1991 puzzle-platformer video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "puzzle"
+  },
+  {
+   "label": "GoldenEye 007",
+   "qid": "Q369086",
+   "fame": 0.475,
+   "genre": "first-person shooter",
+   "description": "1997 video game",
+   "hook": null,
+   "known": 0.8,
+   "kind": "fps"
+  },
+  {
+   "label": "Need for Speed Unbound",
+   "qid": "Q114438019",
+   "fame": 0.475,
+   "genre": "racing video game",
+   "description": "2022 video game developed by Criterion Games",
+   "hook": null,
+   "known": 0.45,
+   "kind": "racing"
+  },
+  {
+   "label": "Call of Duty 2",
+   "qid": "Q210298",
+   "fame": 0.473,
+   "genre": "first-person shooter",
+   "description": "2005 video game developed by Infinity Ward",
+   "hook": null,
+   "known": 0.8,
+   "kind": "fps"
+  },
+  {
+   "label": "Call of Duty 3",
+   "qid": "Q308961",
+   "fame": 0.473,
+   "genre": "first-person shooter",
+   "description": "2006 video game developed by Treyarch",
+   "hook": null,
+   "known": 0.8,
+   "kind": "fps"
+  },
+  {
+   "label": "Ms. Pac-Man",
+   "qid": "Q2141683",
+   "fame": 0.472,
+   "genre": "maze video game",
+   "description": "1982 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "maze"
+  },
+  {
+   "label": "Sonic the Hedgehog CD",
+   "qid": "Q579708",
+   "fame": 0.471,
+   "genre": "platformer",
+   "description": "1993 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "platformer"
+  },
+  {
+   "label": "Need for Speed: Underground 2",
+   "qid": "Q726190",
+   "fame": 0.47,
+   "genre": "racing video game",
+   "description": "2004 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "racing"
+  },
+  {
+   "label": "Dragon Quest",
+   "qid": "Q2313869",
+   "fame": 0.469,
+   "genre": "role-playing video game",
+   "description": "1986 role-playing video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "rpg"
+  },
+  {
+   "label": "Baldur's Gate",
+   "qid": "Q663583",
+   "fame": 0.468,
+   "genre": "role-playing video game",
+   "description": "1998 fantasy role-playing video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "rpg"
+  },
+  {
+   "label": "Pokémon Platinum",
+   "qid": "Q1154227",
+   "fame": 0.468,
+   "genre": "role-playing video game",
+   "description": "2008 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "rpg"
+  },
+  {
+   "label": "The Legend of Zelda: The Minish Cap",
+   "qid": "Q474798",
+   "fame": 0.468,
+   "genre": "role-playing video game",
+   "description": "2004 video game on the Game Boy Advance",
+   "hook": null,
+   "known": 0.45,
+   "kind": "rpg"
+  },
+  {
+   "label": "Heroes of Might and Magic III: The Restoration of Erathia",
+   "qid": "Q220965",
+   "fame": 0.467,
+   "genre": "turn-based strategy video game",
+   "description": "1999 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "strategy"
+  },
+  {
+   "label": "Planescape: Torment",
+   "qid": "Q847638",
+   "fame": 0.462,
+   "genre": "role-playing video game",
+   "description": "1999 role-playing video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "rpg"
+  },
+  {
+   "label": "Angry Birds",
+   "qid": "Q4558721",
+   "fame": 0.461,
+   "genre": "puzzle video game",
+   "description": "puzzle video game by Rovio released in December 2009",
+   "hook": null,
+   "known": 0.65,
+   "kind": "puzzle"
+  },
+  {
+   "label": "Command & Conquer: Red Alert 2",
+   "qid": "Q684904",
+   "fame": 0.461,
+   "genre": "real-time strategy",
+   "description": "2000 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "rts"
+  },
+  {
+   "label": "EverQuest",
+   "qid": "Q1134845",
+   "fame": 0.461,
+   "genre": "massively multiplayer online role-playing game",
+   "description": "1999 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "rpg"
+  },
+  {
+   "label": "Kirby's Dream Land",
+   "qid": "Q1154044",
+   "fame": 0.461,
+   "genre": "platformer",
+   "description": "1992 action platform video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "platformer"
+  },
+  {
+   "label": "Final Fantasy III",
+   "qid": "Q687559",
+   "fame": 0.46,
+   "genre": "role-playing video game",
+   "description": "1990 role-playing video game, originally released on Famicom",
+   "hook": null,
+   "known": 0.45,
+   "kind": "rpg"
+  },
+  {
+   "label": "Tomb Raider: Underworld",
+   "qid": "Q915860",
+   "fame": 0.46,
+   "genre": "action-adventure game",
+   "description": "2008 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Sonic the Hedgehog 3",
+   "qid": "Q856562",
+   "fame": 0.459,
+   "genre": "platformer",
+   "description": "1994 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "platformer"
+  },
+  {
+   "label": "Pokémon Crystal",
+   "qid": "Q2351827",
+   "fame": 0.457,
+   "genre": "role-playing video game",
+   "description": "2000 role-playing video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "rpg"
+  },
+  {
+   "label": "Final Fantasy V",
+   "qid": "Q900305",
+   "fame": 0.456,
+   "genre": "role-playing video game",
+   "description": "1992 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "rpg"
+  },
+  {
+   "label": "Kirby's Adventure",
+   "qid": "Q1154059",
+   "fame": 0.454,
+   "genre": "platformer",
+   "description": "1993 platform video game developed by HAL Laboratory",
+   "hook": null,
+   "known": 0.45,
+   "kind": "platformer"
+  },
+  {
+   "label": "Final Fantasy XIV",
+   "qid": "Q868389",
+   "fame": 0.453,
+   "genre": "massively multiplayer online role-playing game",
+   "description": "2010 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "rpg"
+  },
+  {
+   "label": "Plants vs. Zombies",
+   "qid": "Q379128",
+   "fame": 0.453,
+   "genre": "tower defense",
+   "description": "2009 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "tower-defense"
+  },
+  {
+   "label": "Crash Bandicoot: The Wrath of Cortex",
+   "qid": "Q869511",
+   "fame": 0.452,
+   "genre": "platformer",
+   "description": "2001 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "platformer"
+  },
+  {
+   "label": "Prince of Persia",
+   "qid": "Q4047361",
+   "fame": 0.452,
+   "genre": "action-adventure game",
+   "description": "1989 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "action-adventure"
+  },
+  {
+   "label": "Sonic Mania",
+   "qid": "Q25991770",
+   "fame": 0.452,
+   "genre": "platformer",
+   "description": "2017 platform video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "platformer"
+  },
+  {
+   "label": "Forza Horizon",
+   "qid": "Q83843",
+   "fame": 0.451,
+   "genre": "racing video game",
+   "description": "2012 open world racing video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "racing"
+  },
+  {
+   "label": "Rayman Origins",
+   "qid": "Q606894",
+   "fame": 0.451,
+   "genre": "2D platform game",
+   "description": "2011 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "2d-platformer"
+  },
+  {
+   "label": "Super Mario 3D World",
+   "qid": "Q13426947",
+   "fame": 0.451,
+   "genre": "platformer",
+   "description": "2013 platform video game developed by Nintendo",
+   "hook": null,
+   "known": 0.45,
+   "kind": "platformer"
+  },
+  {
+   "label": "Need for Speed: Carbon",
+   "qid": "Q219795",
+   "fame": 0.45,
+   "genre": "racing video game",
+   "description": "2006 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "racing"
+  },
+  {
+   "label": "Tomb Raider: Anniversary",
+   "qid": "Q580667",
+   "fame": 0.45,
+   "genre": "action-adventure game",
+   "description": "2007 video game",
+   "hook": null,
+   "known": 0.45,
+   "kind": "action-adventure"
+  }
+ ]
+}

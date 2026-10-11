@@ -1,0 +1,582 @@
+{
+ "id": "table.holidays.national-days",
+ "kind": "table",
+ "title": "National days: which date",
+ "genre": "daily-life",
+ "category": "holidays",
+ "topic": "festivals",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?dayLabel WHERE { { SELECT ?item (SAMPLE(?d) AS ?day) (COUNT(DISTINCT ?d) AS ?nD) (COUNT(DISTINCT ?h) AS ?nH) WHERE { VALUES ?h { wd:Q326724 wd:Q86591 wd:Q639756 wd:Q502375 wd:Q157582 wd:Q974845 wd:Q1145566 wd:Q111654241 wd:Q2086665 wd:Q62732044 wd:Q6972121 wd:Q2287840 wd:Q1342323 wd:Q419595 wd:Q2782002 wd:Q1968642 wd:Q2007314 wd:Q6016007 wd:Q55640009 wd:Q47002369 wd:Q580059 wd:Q7427168 wd:Q7267113 wd:Q4120072 wd:Q802461 wd:Q2360641 wd:Q2745862 wd:Q2190144 wd:Q183563 wd:Q72318 wd:Q1851080 wd:Q25173278 wd:Q3092947 wd:Q6016023 wd:Q6015989 wd:Q4709204 wd:Q3210210 wd:Q4842745 wd:Q6972118 wd:Q60786603 wd:Q30898571 wd:Q1651570 wd:Q20014640 wd:Q10560877 wd:Q30314675 wd:Q2465259 wd:Q7603926 wd:Q6819824 wd:Q3062847 wd:Q333016 wd:Q7318670 } ?h wdt:P17 ?item ; wdt:P837 ?d . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nD = 1 && ?nH = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T14:03:09.714Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T14:03:09.714Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "national_day",
+   "label": "National day",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "country",
+  "many": "countries",
+  "wildcard": "place",
+  "minFame": 0.45,
+  "exclude": [
+   {
+    "qid": "Q836",
+    "why": "Myanmar: contested, political"
+   },
+   {
+    "qid": "Q212",
+    "why": "Ukraine: war-adjacent"
+   },
+   {
+    "qid": "Q148",
+    "why": "China: political-adjacent"
+   }
+  ],
+  "columns": {
+   "national_day": {
+    "role": "code",
+    "pick": "On which date does {label} celebrate its national day?",
+    "statement": "{label} celebrates its national day on {value}.",
+    "match": "Match each country to the date of its national day."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "United States",
+   "qid": "Q30",
+   "fame": 0.933,
+   "national_day": "July 4",
+   "description": "country located primarily in North America",
+   "hook": "is home to Hollywood, Silicon Valley and a famous statue of a torch-bearing lady in New York Harbor",
+   "known": 0.95,
+   "kind": "country"
+  },
+  {
+   "label": "China",
+   "qid": "Q148",
+   "fame": 0.8,
+   "national_day": "October 1",
+   "description": "country in East Asia",
+   "hook": "is the world's most populous country after India and home to a famous wall and giant pandas",
+   "known": 0.95,
+   "kind": "country"
+  },
+  {
+   "label": "Canada",
+   "qid": "Q16",
+   "fame": 0.791,
+   "national_day": "July 1",
+   "description": "country in North America",
+   "hook": "is famous for maple syrup, hockey, Niagara Falls and a maple leaf on its flag",
+   "known": 0.95,
+   "kind": "country"
+  },
+  {
+   "label": "Germany",
+   "qid": "Q183",
+   "fame": 0.788,
+   "national_day": "October 3",
+   "description": "country in Central Europe",
+   "hook": "is known for Oktoberfest, autobahns with no general speed limit, and a once-divided capital",
+   "known": 0.9,
+   "kind": "country"
+  },
+  {
+   "label": "Australia",
+   "qid": "Q408",
+   "fame": 0.786,
+   "national_day": "January 26",
+   "description": "country in Oceania",
+   "hook": "is a continent-sized nation known for kangaroos, koalas and a giant red rock called Uluru",
+   "known": 0.9,
+   "kind": "country"
+  },
+  {
+   "label": "Japan",
+   "qid": "Q17",
+   "fame": 0.78,
+   "national_day": "February 23",
+   "description": "island country in East Asia",
+   "hook": "is known for sushi, bullet trains, cherry blossoms and a snow-capped volcano called Fuji",
+   "known": 0.9,
+   "kind": "country"
+  },
+  {
+   "label": "Singapore",
+   "qid": "Q334",
+   "fame": 0.779,
+   "national_day": "August 9",
+   "description": "sovereign island country and city-state in maritime Southeast Asia",
+   "hook": "is a tiny, spotless city-state at the tip of a peninsula, famous for its Merlion mascot and bayfront gardens",
+   "known": 0.8,
+   "kind": "country"
+  },
+  {
+   "label": "Brazil",
+   "qid": "Q155",
+   "fame": 0.775,
+   "national_day": "September 7",
+   "description": "country in South America",
+   "hook": "is the land of Carnival, the Amazon rainforest and a giant Christ statue overlooking Rio",
+   "known": 0.9,
+   "kind": "country"
+  },
+  {
+   "label": "France",
+   "qid": "Q142",
+   "fame": 0.761,
+   "national_day": "July 14",
+   "description": "country in Western Europe and other continents (through its overseas territories in America, Africa and Oceania)",
+   "hook": "is known for the Eiffel Tower, the Louvre, croissants and fine wine",
+   "known": 0.95,
+   "kind": "country"
+  },
+  {
+   "label": "Philippines",
+   "qid": "Q928",
+   "fame": 0.757,
+   "national_day": "June 12",
+   "description": "archipelagic country in Southeast Asia",
+   "hook": "is an island nation of more than seven thousand islands, known for its warm-weather beaches and karaoke",
+   "known": 0.6,
+   "kind": "country"
+  },
+  {
+   "label": "Saudi Arabia",
+   "qid": "Q851",
+   "fame": 0.756,
+   "national_day": "September 23",
+   "description": "country in West Asia",
+   "hook": "is a desert kingdom with a vast oil industry, home to the holy cities of Mecca and Medina",
+   "known": 0.7,
+   "kind": "country"
+  },
+  {
+   "label": "Mexico",
+   "qid": "Q96",
+   "fame": 0.755,
+   "national_day": "September 16",
+   "description": "country in North America",
+   "hook": "is known for tacos, mariachi, Day of the Dead and the ancient pyramids of the Aztecs and Maya",
+   "known": 0.95,
+   "kind": "country"
+  },
+  {
+   "label": "Indonesia",
+   "qid": "Q252",
+   "fame": 0.754,
+   "national_day": "August 17",
+   "description": "island country in Southeast Asia and Oceania",
+   "hook": "is a sprawling island nation that is home to Bali, Komodo dragons and many active volcanoes",
+   "known": 0.8,
+   "kind": "country"
+  },
+  {
+   "label": "United Arab Emirates",
+   "qid": "Q878",
+   "fame": 0.749,
+   "national_day": "December 2",
+   "description": "country in Western Asia",
+   "hook": "is a desert federation of seven sheikhdoms, home to the world's tallest building and glitzy Dubai",
+   "known": 0.7,
+   "kind": "country"
+  },
+  {
+   "label": "Spain",
+   "qid": "Q29",
+   "fame": 0.747,
+   "national_day": "October 12",
+   "description": "country in southwestern Europe with territories in Africa",
+   "hook": "is known for flamenco, bullfighting, paella and running with bulls through narrow streets",
+   "known": 0.9,
+   "kind": "country"
+  },
+  {
+   "label": "Pakistan",
+   "qid": "Q843",
+   "fame": 0.743,
+   "national_day": "August 14",
+   "description": "sovereign state in South Asia",
+   "hook": "is a South Asian nation that borders India and is home to the second-highest mountain on Earth, K2",
+   "known": 0.6,
+   "kind": "country"
+  },
+  {
+   "label": "Italy",
+   "qid": "Q38",
+   "fame": 0.742,
+   "national_day": "June 2",
+   "description": "country in southern Europe",
+   "hook": "is shaped like a boot and known for pizza, pasta, the Colosseum and the leaning tower of Pisa",
+   "known": 0.95,
+   "kind": "country"
+  },
+  {
+   "label": "Netherlands",
+   "qid": "Q55",
+   "fame": 0.742,
+   "national_day": "April 27",
+   "description": "one of the four autonomous countries of the Kingdom of the Netherlands; with territories in the Caribbean",
+   "hook": "is a low-lying land of windmills, tulips, canals and bicycles",
+   "known": 0.8,
+   "kind": "country"
+  },
+  {
+   "label": "New Zealand",
+   "qid": "Q664",
+   "fame": 0.742,
+   "national_day": "February 6",
+   "description": "island country in the southwest Pacific Ocean",
+   "hook": "stood in for Middle-earth in a famous fantasy film trilogy and is home to flightless kiwi birds",
+   "known": 0.9,
+   "kind": "country"
+  },
+  {
+   "label": "Portugal",
+   "qid": "Q45",
+   "fame": 0.739,
+   "national_day": "June 10",
+   "description": "country in Southwestern Europe",
+   "hook": "is a westernmost mainland European nation known for port wine, custard tarts and famous explorers",
+   "known": 0.8,
+   "kind": "country"
+  },
+  {
+   "label": "Malaysia",
+   "qid": "Q833",
+   "fame": 0.738,
+   "national_day": "August 31",
+   "description": "country in Southeast Asia",
+   "hook": "is a tropical nation known for the Petronas Twin Towers in its capital Kuala Lumpur",
+   "known": 0.7,
+   "kind": "country"
+  },
+  {
+   "label": "Poland",
+   "qid": "Q36",
+   "fame": 0.736,
+   "national_day": "November 11",
+   "description": "country in Central Europe",
+   "hook": "is known for pierogi, being the homeland of Marie Curie and Chopin, and a capital rebuilt after wartime ruin",
+   "known": 0.8,
+   "kind": "country"
+  },
+  {
+   "label": "Myanmar",
+   "qid": "Q836",
+   "fame": 0.735,
+   "national_day": "January 4",
+   "description": "country in Southeast Asia",
+   "hook": "is a Southeast Asian nation of golden pagodas, once known to the world by the name Burma",
+   "known": 0.5,
+   "kind": "country"
+  },
+  {
+   "label": "Argentina",
+   "qid": "Q414",
+   "fame": 0.733,
+   "national_day": "July 9",
+   "description": "country in South America",
+   "hook": "is the home of tango, big steaks, and a football legend named Diego Maradona",
+   "known": 0.8,
+   "kind": "country"
+  },
+  {
+   "label": "Vietnam",
+   "qid": "Q881",
+   "fame": 0.731,
+   "national_day": "September 2",
+   "description": "country in Southeast Asia",
+   "hook": "is a long, S-shaped Southeast Asian nation famous for pho, conical hats and Ha Long Bay",
+   "known": 0.6,
+   "kind": "country"
+  },
+  {
+   "label": "Norway",
+   "qid": "Q20",
+   "fame": 0.727,
+   "national_day": "May 17",
+   "description": "country in Northern Europe",
+   "hook": "is a Scandinavian land of deep fjords, the northern lights and Viking ancestors",
+   "known": 0.8,
+   "kind": "country"
+  },
+  {
+   "label": "Ukraine",
+   "qid": "Q212",
+   "fame": 0.727,
+   "national_day": "August 24",
+   "description": "country in Eastern Europe",
+   "hook": "is a big Eastern European nation of wheat fields, with a capital called Kyiv and the Chernobyl site",
+   "known": 0.7,
+   "kind": "country"
+  },
+  {
+   "label": "Sri Lanka",
+   "qid": "Q854",
+   "fame": 0.726,
+   "national_day": "February 4",
+   "description": "island country in South Asia",
+   "hook": "is a teardrop-shaped island off the southern tip of India, famous for its tea",
+   "known": 0.6,
+   "kind": "country"
+  },
+  {
+   "label": "Bangladesh",
+   "qid": "Q902",
+   "fame": 0.723,
+   "national_day": "March 26",
+   "description": "country in South Asia",
+   "hook": "is a densely populated delta nation known for the Bengal tiger and the vast Ganges river system",
+   "known": 0.5,
+   "kind": "country"
+  },
+  {
+   "label": "Monaco",
+   "qid": "Q235",
+   "fame": 0.718,
+   "national_day": "November 19",
+   "description": "microstate in Western Europe",
+   "hook": "is a tiny seaside principality famous for its casino, a glamorous Grand Prix and a royal family",
+   "known": 0.5,
+   "kind": "country"
+  },
+  {
+   "label": "Albania",
+   "qid": "Q222",
+   "fame": 0.717,
+   "national_day": "November 28",
+   "description": "country in southeastern Europe",
+   "hook": "is a small Balkan nation on the Adriatic coast, famous for its thousands of concrete bunkers",
+   "known": 0.4,
+   "kind": "country"
+  },
+  {
+   "label": "Egypt",
+   "qid": "Q79",
+   "fame": 0.716,
+   "national_day": "July 23",
+   "description": "country in Northeast Africa and Southwest Asia",
+   "hook": "is the land of the pharaohs, the Sphinx, the Great Pyramids and the River Nile",
+   "known": 0.95,
+   "kind": "country"
+  },
+  {
+   "label": "Nigeria",
+   "qid": "Q1033",
+   "fame": 0.715,
+   "national_day": "October 1",
+   "description": "sovereign state in West Africa",
+   "hook": "is the most populous nation in Africa, known for its booming film industry nicknamed Nollywood",
+   "known": 0.5,
+   "kind": "country"
+  },
+  {
+   "label": "Iceland",
+   "qid": "Q189",
+   "fame": 0.712,
+   "national_day": "June 17",
+   "description": "Nordic island country in the North Atlantic Ocean",
+   "hook": "is a volcanic island nation of geysers, glaciers and hot springs, with a famous Blue Lagoon",
+   "known": 0.7,
+   "kind": "country"
+  },
+  {
+   "label": "Montenegro",
+   "qid": "Q236",
+   "fame": 0.71,
+   "national_day": "July 13",
+   "description": "country in southeastern Europe",
+   "hook": "is a small Balkan country whose name means black mountain",
+   "known": 0.4,
+   "kind": "country"
+  },
+  {
+   "label": "Belgium",
+   "qid": "Q31",
+   "fame": 0.705,
+   "national_day": "July 21",
+   "description": "country in western Europe",
+   "hook": "is known for chocolate, waffles, fries and hosting the headquarters of the European Union",
+   "known": 0.9,
+   "kind": "country"
+  },
+  {
+   "label": "Romania",
+   "qid": "Q218",
+   "fame": 0.703,
+   "national_day": "December 1",
+   "description": "country in Southeast Europe",
+   "hook": "is a Carpathian land known for Transylvania and the legend of Dracula",
+   "known": 0.5,
+   "kind": "country"
+  },
+  {
+   "label": "Finland",
+   "qid": "Q33",
+   "fame": 0.702,
+   "national_day": "December 6",
+   "description": "country in Northern Europe",
+   "hook": "is a land of a thousand lakes, saunas, and the home of Santa Claus according to many",
+   "known": 0.8,
+   "kind": "country"
+  },
+  {
+   "label": "Algeria",
+   "qid": "Q262",
+   "fame": 0.697,
+   "national_day": "July 5",
+   "description": "country in North Africa",
+   "hook": "is the largest country in Africa by area, with much of its land covered by the Sahara",
+   "known": 0.4,
+   "kind": "country"
+  },
+  {
+   "label": "Luxembourg",
+   "qid": "Q32",
+   "fame": 0.697,
+   "national_day": "June 23",
+   "description": "country in Western Europe",
+   "hook": "is one of Europe's smallest countries and one of the world's wealthiest, known for banking",
+   "known": 0.5,
+   "kind": "country"
+  },
+  {
+   "label": "Oman",
+   "qid": "Q842",
+   "fame": 0.693,
+   "national_day": "November 20",
+   "description": "sovereign state in western Asia",
+   "hook": "is a sultanate on the Arabian Peninsula, known for frankincense and its Grand Mosque in Muscat",
+   "known": 0.3,
+   "kind": "country"
+  },
+  {
+   "label": "Lebanon",
+   "qid": "Q822",
+   "fame": 0.69,
+   "national_day": "November 22",
+   "description": "country in West Asia",
+   "hook": "is a Mediterranean country known for its cedar tree emblem and its capital Beirut",
+   "known": 0.5,
+   "kind": "country"
+  },
+  {
+   "label": "Estonia",
+   "qid": "Q191",
+   "fame": 0.685,
+   "national_day": "February 24",
+   "description": "country in Northern Europe",
+   "hook": "is a Baltic nation with a medieval old town in Tallinn and the birthplace of Skype",
+   "known": 0.4,
+   "kind": "country"
+  },
+  {
+   "label": "Hungary",
+   "qid": "Q28",
+   "fame": 0.685,
+   "national_day": "August 20",
+   "description": "country in Central Europe",
+   "hook": "is a landlocked nation split by the Danube into Buda and Pest, famous for goulash and paprika",
+   "known": 0.8,
+   "kind": "country"
+  },
+  {
+   "label": "Jordan",
+   "qid": "Q810",
+   "fame": 0.682,
+   "national_day": "May 25",
+   "description": "country in West Asia",
+   "hook": "is a desert kingdom famous for the rose-red rock city of Petra and the buoyant Dead Sea",
+   "known": 0.6,
+   "kind": "country"
+  },
+  {
+   "label": "Chile",
+   "qid": "Q298",
+   "fame": 0.681,
+   "national_day": "September 18",
+   "description": "country in South America and Oceania, with a claim in Antarctica",
+   "hook": "is a long, thin land along the Andes, known for the Atacama Desert and Easter Island's stone heads",
+   "known": 0.6,
+   "kind": "country"
+  },
+  {
+   "label": "Ghana",
+   "qid": "Q117",
+   "fame": 0.676,
+   "national_day": "March 6",
+   "description": "country in West Africa",
+   "hook": "was the first sub-Saharan African country to gain independence from colonial rule, famed for cocoa",
+   "known": 0.5,
+   "kind": "country"
+  },
+  {
+   "label": "Bahrain",
+   "qid": "Q398",
+   "fame": 0.668,
+   "national_day": "December 16",
+   "description": "country in the Persian Gulf",
+   "hook": "is a small island kingdom in the Gulf once famous for its pearl diving",
+   "known": 0.3,
+   "kind": "country"
+  },
+  {
+   "label": "Qatar",
+   "qid": "Q846",
+   "fame": 0.666,
+   "national_day": "December 18",
+   "description": "country in West Asia",
+   "hook": "is a small, wealthy Gulf nation that hosted football's World Cup in the winter",
+   "known": 0.4,
+   "kind": "country"
+  },
+  {
+   "label": "Kenya",
+   "qid": "Q114",
+   "fame": 0.663,
+   "national_day": "December 12",
+   "description": "country in Eastern Africa",
+   "hook": "is known for safaris, the Maasai Mara migration and champion long-distance runners",
+   "known": 0.6,
+   "kind": "country"
+  },
+  {
+   "label": "Cameroon",
+   "qid": "Q1009",
+   "fame": 0.637,
+   "national_day": "May 20",
+   "description": "sovereign state in West-Central Africa",
+   "hook": "is nicknamed Africa in miniature for its mix of coast, rainforest, mountains and savanna",
+   "known": 0.3,
+   "kind": "country"
+  }
+ ]
+}

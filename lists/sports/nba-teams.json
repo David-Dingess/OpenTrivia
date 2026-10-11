@@ -1,0 +1,291 @@
+{
+ "id": "list.sports.nba-teams",
+ "title": "NBA teams",
+ "prompt": "Name an NBA team",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "basketball",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q13393265 ; wdt:P118 wd:Q155223 . FILTER NOT EXISTS { ?item wdt:P576 [] } } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-09-30T04:17:06.663Z"
+ },
+ "rows": [
+  {
+   "label": "Los Angeles Lakers",
+   "qid": "Q121783",
+   "fame": 0.627,
+   "also": [
+    "Lakers",
+    "Purple and Gold",
+    "L.A. Lakers",
+    "Minneapolis Lakers",
+    "The Lake Show"
+   ]
+  },
+  {
+   "label": "Los Angeles Clippers",
+   "qid": "Q976396",
+   "fame": 0.622,
+   "also": [
+    "L.A. Clippers",
+    "LA Chokers",
+    "Buffalo Braves",
+    "San Diego Clippers"
+   ]
+  },
+  {
+   "label": "New York Knicks",
+   "qid": "Q131364",
+   "fame": 0.619,
+   "also": [
+    "New York Knickerbockers",
+    "NYK",
+    "Minutemen",
+    "Knicks"
+   ]
+  },
+  {
+   "label": "Philadelphia 76ers",
+   "qid": "Q138089",
+   "fame": 0.605,
+   "also": [
+    "Sixers",
+    "76ers",
+    "Philly 76ers",
+    "Syracuse Nationals",
+    "The 76ers",
+    "The Sixers"
+   ]
+  },
+  {
+   "label": "Golden State Warriors",
+   "qid": "Q157376",
+   "fame": 0.591,
+   "also": [
+    "Warriors",
+    "GSW",
+    "Dub Nation",
+    "Philadelphia Warriors",
+    "San Francisco Warriors"
+   ]
+  },
+  {
+   "label": "Chicago Bulls",
+   "qid": "Q128109",
+   "fame": 0.586,
+   "also": [
+    "Bulls",
+    "The Bulls"
+   ]
+  },
+  {
+   "label": "Boston Celtics",
+   "qid": "Q131371",
+   "fame": 0.583,
+   "also": [
+    "Celts",
+    "Celtics",
+    "Green and White"
+   ]
+  },
+  {
+   "label": "Toronto Raptors",
+   "qid": "Q132880",
+   "fame": 0.559,
+   "also": [
+    "Raptors"
+   ]
+  },
+  {
+   "label": "Miami Heat",
+   "qid": "Q169138",
+   "fame": 0.557,
+   "also": [
+    "Heat"
+   ]
+  },
+  {
+   "label": "Charlotte Hornets",
+   "qid": "Q163480",
+   "fame": 0.552,
+   "also": [
+    "Charlotte Bobcats"
+   ]
+  },
+  {
+   "label": "Sacramento Kings",
+   "qid": "Q166105",
+   "fame": 0.547,
+   "also": [
+    "Cincinnati Royals",
+    "Kansas City Kings",
+    "Kansas City-Omaha Kings",
+    "Rochester Royals"
+   ]
+  },
+  {
+   "label": "San Antonio Spurs",
+   "qid": "Q159729",
+   "fame": 0.547,
+   "also": [
+    "Dallas Chaparrals",
+    "Texas Chaparrals"
+   ]
+  },
+  {
+   "label": "Dallas Mavericks",
+   "qid": "Q132893",
+   "fame": 0.546,
+   "also": [
+    "Mavs"
+   ]
+  },
+  {
+   "label": "Brooklyn Nets",
+   "qid": "Q572134",
+   "fame": 0.542,
+   "also": [
+    "New Jersey Nets",
+    "New York Nets"
+   ]
+  },
+  {
+   "label": "Minnesota Timberwolves",
+   "qid": "Q170558",
+   "fame": 0.542,
+   "also": [
+    "Wolves",
+    "The Wolves",
+    "T-Wolves"
+   ]
+  },
+  {
+   "label": "Atlanta Hawks",
+   "qid": "Q159893",
+   "fame": 0.535,
+   "also": [
+    "Milwaukee Hawks",
+    "Tri-Cities Blackhawks"
+   ]
+  },
+  {
+   "label": "Portland Trail Blazers",
+   "qid": "Q167253",
+   "fame": 0.532,
+   "also": [
+    "Portland Blazers"
+   ]
+  },
+  {
+   "label": "Washington Wizards",
+   "qid": "Q169165",
+   "fame": 0.532,
+   "also": [
+    "The Wiz",
+    "Baltimore Bullets",
+    "Capital Bullets",
+    "Chicago Packers",
+    "Chicago Zephyrs",
+    "Washington Bullets"
+   ]
+  },
+  {
+   "label": "Cleveland Cavaliers",
+   "qid": "Q162990",
+   "fame": 0.53,
+   "also": [
+    "Cavaliers",
+    "Cavs",
+    "Cleveland Cavs"
+   ]
+  },
+  {
+   "label": "Denver Nuggets",
+   "qid": "Q162954",
+   "fame": 0.53,
+   "also": [
+    "Nugs"
+   ]
+  },
+  {
+   "label": "Detroit Pistons",
+   "qid": "Q169661",
+   "fame": 0.528,
+   "also": [
+    "Fort Wayne Pistons",
+    "Fort Wayne Zollner Pistons"
+   ]
+  },
+  {
+   "label": "Houston Rockets",
+   "qid": "Q161345",
+   "fame": 0.526,
+   "also": [
+    "San Diego Rockets"
+   ]
+  },
+  {
+   "label": "Milwaukee Bucks",
+   "qid": "Q169637",
+   "fame": 0.52,
+   "also": []
+  },
+  {
+   "label": "Oklahoma City Thunder",
+   "qid": "Q180950",
+   "fame": 0.52,
+   "also": [
+    "OKC Thunder"
+   ]
+  },
+  {
+   "label": "Utah Jazz",
+   "qid": "Q170649",
+   "fame": 0.512,
+   "also": [
+    "New Orleans Jazz"
+   ]
+  },
+  {
+   "label": "New Orleans Pelicans",
+   "qid": "Q172339",
+   "fame": 0.505,
+   "also": [
+    "New Orleans Hornets"
+   ]
+  },
+  {
+   "label": "Memphis Grizzlies",
+   "qid": "Q165529",
+   "fame": 0.504,
+   "also": [
+    "The Grizz"
+   ]
+  },
+  {
+   "label": "Phoenix Suns",
+   "qid": "Q164177",
+   "fame": 0.499,
+   "also": [
+    "PHX Suns"
+   ]
+  },
+  {
+   "label": "Orlando Magic",
+   "qid": "Q161337",
+   "fame": 0.494,
+   "also": []
+  },
+  {
+   "label": "Indiana Pacers",
+   "qid": "Q170329",
+   "fame": 0.492,
+   "also": [
+    "Pacers"
+   ]
+  }
+ ]
+}

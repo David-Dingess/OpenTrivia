@@ -1,0 +1,678 @@
+{
+ "id": "table.history.university-founded",
+ "kind": "table",
+ "title": "Famous universities and the year they were founded",
+ "genre": "society",
+ "category": "history",
+ "topic": "universities",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?founded WHERE { { SELECT ?item (GROUP_CONCAT(CONCAT(STR(?incT), \"|\", STR(?incP)); separator=\";\") AS ?founded) WHERE { ?item wdt:P31/wdt:P279* wd:Q3918 ; wikibase:sitelinks ?sl ; p:P571 ?incSt . FILTER(?sl >= 40) FILTER(?item NOT IN (wd:Q184478, wd:Q170027, wd:Q332342)) ?incSt a wikibase:BestRank ; psv:P571 [ wikibase:timeValue ?incT ; wikibase:timePrecision ?incP ] . } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-01T04:05:33.517Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-01T04:05:33.517Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "founded",
+   "label": "Founded",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "university",
+  "many": "universities",
+  "hookAsk": "Which university {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "founded": {
+    "role": "date",
+    "sort": "from the oldest to the newest, by the year they were founded",
+    "era": "Drop each university into the century it was founded.",
+    "shot": "In what year was {label} founded? It {hook}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Harvard University",
+   "qid": "Q13371",
+   "fame": 0.687,
+   "founded": 1636,
+   "description": "private university in Cambridge, Massachusetts",
+   "hook": "is the oldest higher-learning institution in the United States and the flagship of the Ivy League",
+   "known": 0.95,
+   "kind": "ivy"
+  },
+  {
+   "label": "Cornell University",
+   "qid": "Q49115",
+   "fame": 0.677,
+   "founded": 1865,
+   "description": "private and statutory land-grant research university in Ithaca, New York, USA",
+   "hook": "is an Ivy League school in the Finger Lakes region, known for its gorges and waterfalls",
+   "known": 0.8,
+   "kind": "ivy"
+  },
+  {
+   "label": "Stanford University",
+   "qid": "Q41506",
+   "fame": 0.647,
+   "founded": 1885,
+   "description": "private research university in Stanford, California, USA",
+   "hook": "sits on a huge campus in Silicon Valley and has launched countless tech startups",
+   "known": 0.95,
+   "kind": "us private"
+  },
+  {
+   "label": "University of Oxford",
+   "qid": "Q34433",
+   "fame": 0.647,
+   "founded": 1096,
+   "description": "collegiate research university in Oxford, England",
+   "hook": "is the oldest English-speaking school of higher learning, famous for its rivalry in the Boat Race",
+   "known": 0.95,
+   "kind": "british"
+  },
+  {
+   "label": "Columbia University",
+   "qid": "Q49088",
+   "fame": 0.63,
+   "founded": 1754,
+   "description": "private university in New York City, New York, US",
+   "hook": "is an Ivy League school in Manhattan that awards the Pulitzer Prizes",
+   "known": 0.8,
+   "kind": "ivy"
+  },
+  {
+   "label": "Yale University",
+   "qid": "Q49112",
+   "fame": 0.622,
+   "founded": 1701,
+   "description": "private university in New Haven, Connecticut",
+   "hook": "is an Ivy League school famed for its secret societies, a bulldog mascot and its blue color",
+   "known": 0.95,
+   "kind": "ivy"
+  },
+  {
+   "label": "University of Notre Dame",
+   "qid": "Q178848",
+   "fame": 0.62,
+   "founded": 1842,
+   "description": "Catholic university located in Notre Dame, Indiana, United States",
+   "hook": "is a Catholic school in Indiana famous for its Fighting Irish football team and a golden dome",
+   "known": 0.8,
+   "kind": "us private"
+  },
+  {
+   "label": "Massachusetts Institute of Technology",
+   "qid": "Q49108",
+   "fame": 0.615,
+   "founded": 1861,
+   "description": "private university in Cambridge, Massachusetts, USA, founded 1861",
+   "hook": "is a famous science and engineering school on the banks of the Charles River",
+   "known": 0.95,
+   "kind": "us private"
+  },
+  {
+   "label": "University of Pennsylvania",
+   "qid": "Q49117",
+   "fame": 0.615,
+   "founded": 1740,
+   "description": "private research university in Philadelphia, Pennsylvania, United States",
+   "hook": "is an Ivy League school in Philadelphia whose business school is named for Wharton",
+   "known": 0.8,
+   "kind": "ivy"
+  },
+  {
+   "label": "University of Cambridge",
+   "qid": "Q35794",
+   "fame": 0.611,
+   "founded": 1209,
+   "description": "collegiate public research university in Cambridge, England, United Kingdom",
+   "hook": "is a famously old English school of colleges, rivals of Oxford, with a river lined by punting boats",
+   "known": 0.95,
+   "kind": "british"
+  },
+  {
+   "label": "Princeton University",
+   "qid": "Q21578",
+   "fame": 0.608,
+   "founded": 1746,
+   "description": "private Ivy League research university in Princeton, New Jersey, United States",
+   "hook": "is a New Jersey Ivy League school with tiger mascot and a campus once home to Albert Einstein",
+   "known": 0.95,
+   "kind": "ivy"
+  },
+  {
+   "label": "University of California, Berkeley",
+   "qid": "Q168756",
+   "fame": 0.604,
+   "founded": 1868,
+   "description": "public university in Berkeley, California, USA",
+   "hook": "is a top public school near San Francisco, known for its Golden Bears and 1960s free speech protests",
+   "known": 0.95,
+   "kind": "us public"
+  },
+  {
+   "label": "Northwestern University",
+   "qid": "Q309350",
+   "fame": 0.601,
+   "founded": 1851,
+   "description": "private university in Evanston, Illinois, U.S.",
+   "hook": "is a private school on the shore of Lake Michigan, home of the Wildcats and a renowned journalism program",
+   "known": 0.6,
+   "kind": "us private"
+  },
+  {
+   "label": "University of Texas at Austin",
+   "qid": "Q49213",
+   "fame": 0.594,
+   "founded": 1883,
+   "description": "public university in Austin, Texas, USA",
+   "hook": "is a giant public school in a state capital whose Longhorns wear burnt orange",
+   "known": 0.8,
+   "kind": "us public"
+  },
+  {
+   "label": "Brown University",
+   "qid": "Q49114",
+   "fame": 0.592,
+   "founded": 1765,
+   "description": "private university in Providence, Rhode Island, United States",
+   "hook": "is a small Ivy League school in Rhode Island known for its open curriculum and bear mascot",
+   "known": 0.6,
+   "kind": "ivy"
+  },
+  {
+   "label": "Dartmouth College",
+   "qid": "Q49116",
+   "fame": 0.592,
+   "founded": 1769,
+   "description": "private university in Hanover, New Hampshire, US",
+   "hook": "is a rural Ivy League school in New England, setting for the classic comedy Animal House",
+   "known": 0.6,
+   "kind": "ivy"
+  },
+  {
+   "label": "Rutgers University",
+   "qid": "Q499451",
+   "fame": 0.59,
+   "founded": 1766,
+   "description": "multi-campus public research university in New Jersey, United States",
+   "hook": "is the New Jersey school that played in the first intercollegiate football game, as the Scarlet Knights",
+   "known": 0.4,
+   "kind": "us public"
+  },
+  {
+   "label": "University of Southern California",
+   "qid": "Q4614",
+   "fame": 0.588,
+   "founded": 1880,
+   "description": "private university in Los Angeles, California, United States",
+   "hook": "is a Los Angeles private school with Trojans teams and a famous film school",
+   "known": 0.8,
+   "kind": "us private"
+  },
+  {
+   "label": "University of Michigan",
+   "qid": "Q230492",
+   "fame": 0.585,
+   "founded": 1817,
+   "description": "public research university in Ann Arbor, Michigan",
+   "hook": "is a big public school with a giant football stadium known as the Big House and a maize and blue color scheme",
+   "known": 0.95,
+   "kind": "us public"
+  },
+  {
+   "label": "New York University",
+   "qid": "Q49210",
+   "fame": 0.576,
+   "founded": 1831,
+   "description": "private university in New York City",
+   "hook": "is a huge private school woven into the streets of Greenwich Village with violet colors",
+   "known": 0.8,
+   "kind": "us private"
+  },
+  {
+   "label": "United States Military Academy",
+   "qid": "Q9219",
+   "fame": 0.574,
+   "founded": 1802,
+   "description": "federal service academy in West Point, New York, United States",
+   "hook": "trains Army officers on the Hudson River and plays an annual football game against Navy",
+   "known": 0.8,
+   "kind": "us public"
+  },
+  {
+   "label": "Carnegie Mellon University",
+   "qid": "Q190080",
+   "fame": 0.572,
+   "founded": 1900,
+   "description": "private research university in Pittsburgh, Pennsylvania, United States",
+   "hook": "is a Pittsburgh school renowned for computer science and robotics",
+   "known": 0.6,
+   "kind": "us private"
+  },
+  {
+   "label": "Duke University",
+   "qid": "Q168751",
+   "fame": 0.571,
+   "founded": 1838,
+   "description": "private university in Durham, North Carolina, USA",
+   "hook": "is a North Carolina school with Blue Devils basketball and a Gothic chapel tower",
+   "known": 0.8,
+   "kind": "us private"
+  },
+  {
+   "label": "University of California, Los Angeles",
+   "qid": "Q174710",
+   "fame": 0.568,
+   "founded": 1919,
+   "description": "public university in Los Angeles, California, USA",
+   "hook": "is a public school in the City of Angels whose Bruins have won record numbers of NCAA titles",
+   "known": 0.95,
+   "kind": "us public"
+  },
+  {
+   "label": "California Institute of Technology",
+   "qid": "Q161562",
+   "fame": 0.56,
+   "founded": 1891,
+   "description": "private research university located in Pasadena, California, USA",
+   "hook": "is a small Pasadena science school that manages NASA's Jet Propulsion Laboratory",
+   "known": 0.8,
+   "kind": "us private"
+  },
+  {
+   "label": "University of Washington",
+   "qid": "Q219563",
+   "fame": 0.559,
+   "founded": 1861,
+   "description": "public research university in Seattle, Washington, United States",
+   "hook": "is a large public school in the Pacific Northwest, whose Huskies play beside a big lake",
+   "known": 0.4,
+   "kind": "us public"
+  },
+  {
+   "label": "University of Florida",
+   "qid": "Q501758",
+   "fame": 0.556,
+   "founded": 1853,
+   "description": "public research university in Gainesville, Florida, United States",
+   "hook": "is a large Southern public school whose Gators football team made a sports drink famous",
+   "known": 0.4,
+   "kind": "us public"
+  },
+  {
+   "label": "Georgetown University",
+   "qid": "Q333886",
+   "fame": 0.549,
+   "founded": 1789,
+   "description": "private university in Washington, D.C., United States",
+   "hook": "is the oldest Catholic and Jesuit school in the nation's capital, with a Hoyas basketball team",
+   "known": 0.6,
+   "kind": "us private"
+  },
+  {
+   "label": "University of Chicago",
+   "qid": "Q131252",
+   "fame": 0.549,
+   "founded": 1890,
+   "description": "private university in Chicago, Illinois",
+   "hook": "is an Illinois private school known for rigorous academics and the first nuclear chain reaction",
+   "known": 0.8,
+   "kind": "us private"
+  },
+  {
+   "label": "Johns Hopkins University",
+   "qid": "Q193727",
+   "fame": 0.547,
+   "founded": 1876,
+   "description": "private university in Baltimore, Maryland, USA",
+   "hook": "is a Maryland school famed for medicine, with a renowned hospital and public health program",
+   "known": 0.8,
+   "kind": "us private"
+  },
+  {
+   "label": "London School of Economics and Political Science",
+   "qid": "Q174570",
+   "fame": 0.544,
+   "founded": 1895,
+   "description": "public university in London, United Kingdom",
+   "hook": "is a famed British institution for studying finance and society that has trained many world leaders",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "Ohio State University",
+   "qid": "Q309331",
+   "fame": 0.543,
+   "founded": 1870,
+   "description": "public research university in Columbus, Ohio, United States",
+   "hook": "is a giant Midwestern public school whose Buckeyes football team plays in the Horseshoe",
+   "known": 0.6,
+   "kind": "us public"
+  },
+  {
+   "label": "Tsinghua University",
+   "qid": "Q16955",
+   "fame": 0.528,
+   "founded": 1911,
+   "description": "public university in Beijing, China",
+   "hook": "is one of the most elite science and engineering schools in the capital of China",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "University of St Andrews",
+   "qid": "Q216273",
+   "fame": 0.528,
+   "founded": 1413,
+   "description": "university in St Andrews, Fife, Scotland, UK",
+   "hook": "is Scotland's oldest school of higher learning, where Prince William met Kate Middleton",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "McGill University",
+   "qid": "Q201492",
+   "fame": 0.524,
+   "founded": 1821,
+   "description": "English-language public research university in Montreal, Quebec, Canada",
+   "hook": "is a top Canadian school named after a fur trader, in the largest French-speaking city of North America",
+   "known": 0.4,
+   "kind": "canadian"
+  },
+  {
+   "label": "Boston University",
+   "qid": "Q49110",
+   "fame": 0.52,
+   "founded": 1869,
+   "description": "private research university in Boston, Massachusetts, United States",
+   "hook": "is a large private school along the Charles River with Terriers teams and a red color scheme",
+   "known": 0.4,
+   "kind": "us private"
+  },
+  {
+   "label": "King's College London",
+   "qid": "Q245247",
+   "fame": 0.519,
+   "founded": 1829,
+   "description": "public research university in London, United Kingdom",
+   "hook": "is a British school on the Strand, founded with royal backing, with a famous hospital and the Strand campus",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "University of Virginia",
+   "qid": "Q213439",
+   "fame": 0.518,
+   "founded": 1819,
+   "description": "public university in Charlottesville, Virginia",
+   "hook": "was designed by Thomas Jefferson, who called it his proudest achievement besides the Declaration",
+   "known": 0.6,
+   "kind": "us public"
+  },
+  {
+   "label": "University of Bologna",
+   "qid": "Q131262",
+   "fame": 0.516,
+   "founded": 1088,
+   "description": "university in Bologna, Italy",
+   "hook": "is widely regarded as the oldest continuously operating school of higher learning in the world",
+   "known": 0.2,
+   "kind": "european"
+  },
+  {
+   "label": "University of North Carolina at Chapel Hill",
+   "qid": "Q192334",
+   "fame": 0.51,
+   "founded": 1789,
+   "description": "public research university in Chapel Hill, North Carolina, United States",
+   "hook": "is the nation's oldest public school and home of Tar Heels basketball and a blue sky color",
+   "known": 0.6,
+   "kind": "us public"
+  },
+  {
+   "label": "University of Toronto",
+   "qid": "Q180865",
+   "fame": 0.509,
+   "founded": 1827,
+   "description": "public research university in the Greater Toronto Area of Ontario, Canada",
+   "hook": "is Canada's largest and most prestigious school, where insulin was discovered",
+   "known": 0.4,
+   "kind": "canadian"
+  },
+  {
+   "label": "University of Edinburgh",
+   "qid": "Q160302",
+   "fame": 0.508,
+   "founded": 1583,
+   "description": "public university in Edinburgh, Scotland, United Kingdom",
+   "hook": "is a Scottish school whose alumni include Charles Darwin and Arthur Conan Doyle, near a famous castle",
+   "known": 0.6,
+   "kind": "british"
+  },
+  {
+   "label": "Imperial College London",
+   "qid": "Q189022",
+   "fame": 0.505,
+   "founded": 1907,
+   "description": "public research university located in London, United Kingdom",
+   "hook": "is a British school focused only on science, engineering, medicine and business",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "University of Minnesota",
+   "qid": "Q238101",
+   "fame": 0.504,
+   "founded": 1851,
+   "description": "public research university in Minneapolis and Saint Paul, Minnesota, United States",
+   "hook": "is a large public school spread across the Twin Cities with Golden Gophers teams",
+   "known": 0.4,
+   "kind": "us public"
+  },
+  {
+   "label": "University of Wisconsin–Madison",
+   "qid": "Q838330",
+   "fame": 0.504,
+   "founded": 1848,
+   "description": "public research university in Madison, Wisconsin, USA",
+   "hook": "is a big public school between two lakes with Badgers teams and a famous student terrace",
+   "known": 0.4,
+   "kind": "us public"
+  },
+  {
+   "label": "ETH Zurich",
+   "qid": "Q11942",
+   "fame": 0.502,
+   "founded": 1855,
+   "description": "public research university in Zurich",
+   "hook": "is a Swiss science and technology school that Albert Einstein attended",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "Indiana University Bloomington",
+   "qid": "Q1079140",
+   "fame": 0.493,
+   "founded": 1820,
+   "description": "public research university located in Bloomington, Indiana, U.S. (flagship campus of the Indiana University system)",
+   "hook": "is a large Midwestern public school whose Hoosiers are famous for basketball and the Little 500 bike race",
+   "known": 0.4,
+   "kind": "us public"
+  },
+  {
+   "label": "University of Pittsburgh",
+   "qid": "Q235034",
+   "fame": 0.489,
+   "founded": 1787,
+   "description": "state-related research university located in Pittsburgh, Pennsylvania, United States",
+   "hook": "is a Pennsylvania school with Panthers teams and a Gothic skyscraper called the Cathedral of Learning",
+   "known": 0.4,
+   "kind": "us private"
+  },
+  {
+   "label": "Durham University",
+   "qid": "Q458393",
+   "fame": 0.479,
+   "founded": 1832,
+   "description": "collegiate public research university in Durham, England, United Kingdom",
+   "hook": "is an English school with a cathedral and castle on a World Heritage peninsula",
+   "known": 0.2,
+   "kind": "british"
+  },
+  {
+   "label": "University of Arizona",
+   "qid": "Q503419",
+   "fame": 0.477,
+   "founded": 1885,
+   "description": "public university in Tucson, Arizona, United States",
+   "hook": "is a desert school in the Southwest whose Wildcats play basketball in Tucson",
+   "known": 0.2,
+   "kind": "us public"
+  },
+  {
+   "label": "University of Delhi",
+   "qid": "Q665105",
+   "fame": 0.476,
+   "founded": 1922,
+   "description": "Central university located in New Delhi",
+   "hook": "is a leading school in India's capital, with a sprawling collection of colleges",
+   "known": 0.05,
+   "kind": "asian"
+  },
+  {
+   "label": "University of British Columbia",
+   "qid": "Q391028",
+   "fame": 0.472,
+   "founded": 1908,
+   "description": "public research university in British Columbia, Canada",
+   "hook": "is a leading Canadian school on the Pacific coast, set on a scenic peninsula near Vancouver",
+   "known": 0.4,
+   "kind": "canadian"
+  },
+  {
+   "label": "Paris Institute of Political Studies",
+   "qid": "Q859363",
+   "fame": 0.47,
+   "founded": 1872,
+   "description": "higher-education institution in Paris, France",
+   "hook": "is a French elite school nicknamed for a street name, known for training presidents and diplomats",
+   "known": 0.05,
+   "kind": "european"
+  },
+  {
+   "label": "Lomonosov Moscow State University",
+   "qid": "Q13164",
+   "fame": 0.469,
+   "founded": 1755,
+   "description": "public research university in Moscow, Russia",
+   "hook": "is Russia's most famous school, topped by a huge Stalin-era tower on the Sparrow Hills",
+   "known": 0.4,
+   "kind": "european"
+  },
+  {
+   "label": "Peking University",
+   "qid": "Q16952",
+   "fame": 0.467,
+   "founded": 1898,
+   "description": "university in Beijing, China",
+   "hook": "is a famed school in China's capital, known for its lake and pagoda on the Weiming campus",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "University of Birmingham",
+   "qid": "Q223429",
+   "fame": 0.467,
+   "founded": 1900,
+   "description": "university in Birmingham, England, United Kingdom",
+   "hook": "is an English red brick school, with a tall clock tower named for Joseph Chamberlain",
+   "known": 0.2,
+   "kind": "british"
+  },
+  {
+   "label": "University of Manchester",
+   "qid": "Q230899",
+   "fame": 0.466,
+   "founded": 1824,
+   "description": "public research university in Manchester, England, United Kingdom",
+   "hook": "is a large English school in a northern city where graphene was first isolated",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "University of Glasgow",
+   "qid": "Q192775",
+   "fame": 0.463,
+   "founded": 1450,
+   "description": "university in Glasgow, Scotland, United Kingdom, founded in 1451",
+   "hook": "is a Scottish school with a famous Gothic main building and alumni including Adam Smith",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Tel Aviv University",
+   "qid": "Q319239",
+   "fame": 0.462,
+   "founded": 1956,
+   "description": "University in Tel Aviv, Israel",
+   "hook": "is the largest school in Israel's coastal metropolis, with a museum of the Jewish diaspora",
+   "known": 0.05,
+   "kind": "asian"
+  },
+  {
+   "label": "University of Sydney",
+   "qid": "Q487556",
+   "fame": 0.458,
+   "founded": 1850,
+   "description": "Australian university founded in 1850",
+   "hook": "is the oldest school in Australia, with a sandstone quadrangle that looks like Oxford",
+   "known": 0.4,
+   "kind": "asian"
+  },
+  {
+   "label": "University of Tokyo",
+   "qid": "Q7842",
+   "fame": 0.457,
+   "founded": 1877,
+   "description": "national university in Tokyo, Japan",
+   "hook": "is its nation's most prestigious school, known for a famous red gate and a ginkgo-lined avenue",
+   "known": 0.6,
+   "kind": "asian"
+  },
+  {
+   "label": "University of Göttingen",
+   "qid": "Q152838",
+   "fame": 0.456,
+   "founded": 1734,
+   "description": "university in the city of Göttingen, Germany",
+   "hook": null,
+   "known": 0.2,
+   "kind": "european"
+  }
+ ]
+}

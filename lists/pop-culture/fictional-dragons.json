@@ -1,0 +1,162 @@
+{
+ "id": "list.pop-culture.fictional-dragons",
+ "title": "Fictional Dragons",
+ "prompt": "Name a fictional dragon",
+ "genre": "general",
+ "category": "pop-culture",
+ "topic": "fictional-characters",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q30170627 . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-10-04T03:57:28.685Z"
+ },
+ "rows": [
+  {
+   "label": "King Ghidorah",
+   "qid": "Q1470558",
+   "fame": 0.604,
+   "also": [
+    "Ghidorah",
+    "Ghidrah"
+   ]
+  },
+  {
+   "label": "Lockheed",
+   "qid": "Q2196544",
+   "fame": 0.407,
+   "also": []
+  },
+  {
+   "label": "Fin Fang Foom",
+   "qid": "Q2604737",
+   "fame": 0.387,
+   "also": []
+  },
+  {
+   "label": "Figment",
+   "qid": "Q5447961",
+   "fame": 0.378,
+   "also": []
+  },
+  {
+   "label": "Spyro",
+   "qid": "Q3300732",
+   "fame": 0.37,
+   "also": [
+    "Spyro the Dragon"
+   ]
+  },
+  {
+   "label": "Sisu",
+   "qid": "Q106610625",
+   "fame": 0.293,
+   "also": []
+  },
+  {
+   "label": "Takhisis",
+   "qid": "Q3052922",
+   "fame": 0.191,
+   "also": []
+  },
+  {
+   "label": "Stuff the Magic Dragon",
+   "qid": "Q7628534",
+   "fame": 0.167,
+   "also": []
+  },
+  {
+   "label": "Konqi",
+   "qid": "Q252309",
+   "fame": 0.166,
+   "also": [
+    "KDE dragon",
+    "KDE Konqi",
+    "KDE mascot",
+    "Konqi Konqueror",
+    "Konqui"
+   ]
+  },
+  {
+   "label": "Katla",
+   "qid": "Q6976634",
+   "fame": 0.116,
+   "also": []
+  },
+  {
+   "label": "Abelardo the Dragon",
+   "qid": "Q4666665",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Beryllinthranox",
+   "qid": "Q111032259",
+   "fame": 0,
+   "also": [
+    "Beryl"
+   ]
+  },
+  {
+   "label": "Dojo Kanojo Cho",
+   "qid": "Q668773",
+   "fame": 0,
+   "also": [
+    "Dojo"
+   ]
+  },
+  {
+   "label": "Dragonlord",
+   "qid": "Q11598343",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Khisanth",
+   "qid": "Q111032266",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Malystryx",
+   "qid": "Q111032270",
+   "fame": 0,
+   "also": [
+    "Malys"
+   ]
+  },
+  {
+   "label": "Onysablet",
+   "qid": "Q111032272",
+   "fame": 0,
+   "also": [
+    "Sable"
+   ]
+  },
+  {
+   "label": "Paladine",
+   "qid": "Q3098428",
+   "fame": 0,
+   "also": [
+    "Fizban"
+   ]
+  },
+  {
+   "label": "Skie",
+   "qid": "Q6016282",
+   "fame": 0,
+   "also": [
+    "Khellendros"
+   ]
+  },
+  {
+   "label": "The Soup Dragon",
+   "qid": "Q137647142",
+   "fame": 0,
+   "also": [
+    "Soup Dragon"
+   ]
+  }
+ ]
+}

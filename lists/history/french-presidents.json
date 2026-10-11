@@ -1,0 +1,234 @@
+{
+ "id": "list.history.french-presidents",
+ "title": "Presidents of France",
+ "prompt": "Name a president of France",
+ "genre": "society",
+ "category": "history",
+ "topic": "rulers",
+ "people": true,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P39 wd:Q191954 ; wdt:P31 wd:Q5 . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-10-04T07:20:31.502Z"
+ },
+ "rows": [
+  {
+   "label": "Emmanuel Macron",
+   "qid": "Q3052772",
+   "fame": 0.721,
+   "also": [
+    "Jupiter",
+    "Macron",
+    "Emmanuel Jean-Michel Frédéric Macron"
+   ]
+  },
+  {
+   "label": "Charles de Gaulle",
+   "qid": "Q2042",
+   "fame": 0.691,
+   "also": [
+    "General Charles Andre Joseph Marie de Gaulle",
+    "Charles André Joseph Marie de Gaulle",
+    "général de Gaulle"
+   ]
+  },
+  {
+   "label": "Nicolas Sarkozy",
+   "qid": "Q329",
+   "fame": 0.577,
+   "also": [
+    "Sarko",
+    "Sarkozy",
+    "Nicolas Paul Stéphane Sarközy de Nagy-Bocsa",
+    "Nicolas Sarközy de Nagy-Bocsa"
+   ]
+  },
+  {
+   "label": "François Mitterrand",
+   "qid": "Q2038",
+   "fame": 0.552,
+   "also": [
+    "François Maurice Adrien Marie Mitterrand",
+    "François Marie Adrien Maurice Mitterrand"
+   ]
+  },
+  {
+   "label": "François Hollande",
+   "qid": "Q157",
+   "fame": 0.55,
+   "also": [
+    "François Gérard Georges Nicolas Hollande",
+    "Hollande"
+   ]
+  },
+  {
+   "label": "Jacques Chirac",
+   "qid": "Q2105",
+   "fame": 0.545,
+   "also": [
+    "Chirac",
+    "Jacques René Chirac"
+   ]
+  },
+  {
+   "label": "Valéry Giscard d'Estaing",
+   "qid": "Q2124",
+   "fame": 0.487,
+   "also": [
+    "VGE",
+    "Giscard d'Estaing",
+    "Giscard",
+    "Valéry Marie René Georges Giscard d'Estaing",
+    "Valéry René Marie Georges Giscard d'Estaing"
+   ]
+  },
+  {
+   "label": "Georges Pompidou",
+   "qid": "Q2185",
+   "fame": 0.484,
+   "also": [
+    "Georges Jean Raymond Pompidou"
+   ]
+  },
+  {
+   "label": "Adolphe Thiers",
+   "qid": "Q5738",
+   "fame": 0.478,
+   "also": [
+    "Louis-Adolphe Thiers",
+    "Marie Joseph Louis Adolphe Thiers"
+   ]
+  },
+  {
+   "label": "Patrice de MacMahon",
+   "qid": "Q158838",
+   "fame": 0.432,
+   "also": []
+  },
+  {
+   "label": "Félix Faure",
+   "qid": "Q296076",
+   "fame": 0.427,
+   "also": [
+    "François Felix Faure"
+   ]
+  },
+  {
+   "label": "Raymond Poincaré",
+   "qid": "Q191974",
+   "fame": 0.418,
+   "also": [
+    "Raymond Nicolas Landry Poincaré"
+   ]
+  },
+  {
+   "label": "Albert Lebrun",
+   "qid": "Q158749",
+   "fame": 0.416,
+   "also": [
+    "Albert François Lebrun"
+   ]
+  },
+  {
+   "label": "René Coty",
+   "qid": "Q158768",
+   "fame": 0.4,
+   "also": [
+    "Rene Jules Gustave Coty"
+   ]
+  },
+  {
+   "label": "Sadi Carnot",
+   "qid": "Q215778",
+   "fame": 0.375,
+   "also": [
+    "Marie François Sadi Carnot",
+    "Marie François Carnot"
+   ]
+  },
+  {
+   "label": "Paul Doumer",
+   "qid": "Q12680",
+   "fame": 0.367,
+   "also": [
+    "Joseph Athanase Doumer",
+    "Joseph Athanase Gaston Paul Doumer",
+    "Joseph Athanase Paul Doumer"
+   ]
+  },
+  {
+   "label": "Vincent Auriol",
+   "qid": "Q158772",
+   "fame": 0.365,
+   "also": [
+    "Vincent Jules Auriol",
+    "Jules-Vincent Auriol"
+   ]
+  },
+  {
+   "label": "Jules Grévy",
+   "qid": "Q296083",
+   "fame": 0.363,
+   "also": [
+    "François Paul Jules Grévy"
+   ]
+  },
+  {
+   "label": "Alexandre Millerand",
+   "qid": "Q274540",
+   "fame": 0.357,
+   "also": []
+  },
+  {
+   "label": "Paul Deschanel",
+   "qid": "Q309995",
+   "fame": 0.354,
+   "also": [
+    "Paul Eugène Louis Deschanel"
+   ]
+  },
+  {
+   "label": "Gaston Doumergue",
+   "qid": "Q296064",
+   "fame": 0.352,
+   "also": [
+    "Pierre-Paul-Henri-Gaston Doumer",
+    "Pierre-Paul-Henri-Gaston Doumergue"
+   ]
+  },
+  {
+   "label": "Émile Loubet",
+   "qid": "Q169502",
+   "fame": 0.346,
+   "also": [
+    "Émile François Loubet"
+   ]
+  },
+  {
+   "label": "Jean Casimir-Perier",
+   "qid": "Q315656",
+   "fame": 0.336,
+   "also": [
+    "Casimir-Perier",
+    "Jean Paul Pierre Casimir-Perier"
+   ]
+  },
+  {
+   "label": "Armand Fallières",
+   "qid": "Q296673",
+   "fame": 0.334,
+   "also": [
+    "Clément Armand Fallières"
+   ]
+  },
+  {
+   "label": "Alain Poher",
+   "qid": "Q12950",
+   "fame": 0.238,
+   "also": [
+    "Alain Émile Louis Marie Poher"
+   ]
+  }
+ ]
+}

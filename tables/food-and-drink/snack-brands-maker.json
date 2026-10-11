@@ -1,0 +1,206 @@
+{
+ "id": "table.food-and-drink.snack-brands-maker",
+ "kind": "table",
+ "title": "Snack brands and the company that makes them",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "sweets-and-snacks",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?makerLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?h) AS ?maker) (COUNT(DISTINCT ?h) AS ?n) WHERE { VALUES ?h { wd:Q695087 wd:Q1056637 wd:Q12857502 wd:Q269792 wd:Q1221751 wd:Q856897 wd:Q160746 wd:Q629998 wd:Q169552 wd:Q819241 wd:Q19681433 wd:Q1030544 wd:Q152822 wd:Q7824332 wd:Q612524 wd:Q7903503 } ?item wdt:P176|wdt:P127|wdt:P749 ?h ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 20) FILTER NOT EXISTS { ?item wdt:P576 ?end } } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 300 } hint:Prior hint:runFirst true . FILTER(?n = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T10:35:24.890Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T10:35:24.890Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "maker",
+   "label": "Made by",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "snack brand",
+  "many": "snack brands",
+  "capitalise": true,
+  "wildcard": "food",
+  "columns": {
+   "maker": {
+    "role": "link",
+    "pick": "Which company makes {label}?",
+    "statement": "{label} is made by {value}.",
+    "match": "Match each snack brand to the company that makes it.",
+    "odd": "Three of these snack brands are made by {value}. Which one isn't?",
+    "all": "Tap all {n} snack brands made by {value}."
+   }
+  },
+  "exclude": [
+   {
+    "qid": "Q367251",
+    "why": "Kit Kat: Nestlé makes it worldwide but Hershey makes it in the US - the answer depends on the country"
+   }
+  ]
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Oreo",
+   "qid": "Q138585",
+   "fame": 0.549,
+   "maker": "Mondelez International",
+   "description": "sandwich cookie made by Mondelez",
+   "hook": "is a sandwich cookie of two dark chocolate wafers around a sweet white cream filling",
+   "known": 0.95,
+   "kind": "cookie"
+  },
+  {
+   "label": "Cadbury",
+   "qid": "Q6677525",
+   "fame": 0.547,
+   "maker": "Mondelez International",
+   "description": "British multinational confectionery company",
+   "hook": "is a confectionery giant known for its Dairy Milk bars and the cream-filled Easter egg",
+   "known": 0.8,
+   "kind": "chocolate candy"
+  },
+  {
+   "label": "M&M's",
+   "qid": "Q739550",
+   "fame": 0.543,
+   "maker": "Mars, Incorporated",
+   "description": "brand of chocolate candy pieces",
+   "hook": "are candy-coated chocolate pieces printed with a lowercase letter on one side",
+   "known": 0.95,
+   "kind": "chocolate candy"
+  },
+  {
+   "label": "Nutella",
+   "qid": "Q212193",
+   "fame": 0.509,
+   "maker": "Ferrero SpA",
+   "description": "chocolate hazelnut spread manufactured by Ferrero",
+   "hook": "is a sweet, creamy hazelnut and cocoa spread eaten on bread and crepes",
+   "known": 0.95,
+   "kind": "spread"
+  },
+  {
+   "label": "Toblerone",
+   "qid": "Q215707",
+   "fame": 0.509,
+   "maker": "Mondelez International",
+   "description": "brand of chocolate confection",
+   "hook": "is a chocolate bar made of joined triangular prisms, shaped like an Alpine peak",
+   "known": 0.8,
+   "kind": "chocolate bar"
+  },
+  {
+   "label": "Doritos",
+   "qid": "Q776795",
+   "fame": 0.501,
+   "maker": "Frito-Lay",
+   "description": "American brand of flavored tortilla chips",
+   "hook": "is a tortilla chip whose nacho cheese flavor became hugely popular",
+   "known": 0.95,
+   "kind": "chip"
+  },
+  {
+   "label": "Lay’s",
+   "qid": "Q723513",
+   "fame": 0.499,
+   "maker": "Frito-Lay",
+   "description": "snack food company",
+   "hook": "is a potato chip brand sold in many flavors around the world",
+   "known": 0.95,
+   "kind": "chip"
+  },
+  {
+   "label": "Cheetos",
+   "qid": "Q484544",
+   "fame": 0.491,
+   "maker": "Frito-Lay",
+   "description": "brand of snack food",
+   "hook": "is a crunchy corn puff snack with a bright orange cheese coating",
+   "known": 0.8,
+   "kind": "chip"
+  },
+  {
+   "label": "Snickers",
+   "qid": "Q714179",
+   "fame": 0.488,
+   "maker": "Mars, Incorporated",
+   "description": "brand name chocolate bar made by Mars, Incorporated",
+   "hook": "is a peanut, caramel and nougat bar named after a candy family's favorite horse",
+   "known": 0.95,
+   "kind": "chocolate bar"
+  },
+  {
+   "label": "Kit Kat",
+   "qid": "Q367251",
+   "fame": 0.473,
+   "maker": "Nestlé",
+   "description": "brand of chocolate products",
+   "hook": null,
+   "known": 0.95,
+   "kind": "chocolate bar"
+  },
+  {
+   "label": "Chupa Chups",
+   "qid": "Q938535",
+   "fame": 0.469,
+   "maker": "Perfetti Van Melle",
+   "description": "Spanish candy brand",
+   "hook": "is a lollipop brand sold in over 150 countries",
+   "known": 0.6,
+   "kind": "hard candy"
+  },
+  {
+   "label": "Milka",
+   "qid": "Q757388",
+   "fame": 0.468,
+   "maker": "Mondelez International",
+   "description": "chocolate brand",
+   "hook": "is a chocolate brand whose name blends the German words for milk and cocoa",
+   "known": 0.4,
+   "kind": "chocolate candy"
+  },
+  {
+   "label": "Milky Way",
+   "qid": "Q1752705",
+   "fame": 0.454,
+   "maker": "Mars, Incorporated",
+   "description": "chocolate bar",
+   "hook": "is a malt-flavored chocolate bar whose American version holds nougat and caramel",
+   "known": 0.95,
+   "kind": "chocolate bar"
+  },
+  {
+   "label": "Twix",
+   "qid": "Q869733",
+   "fame": 0.452,
+   "maker": "Mars, Incorporated",
+   "description": "chocolate-coated cookie candy bar",
+   "hook": "is a chocolate bar with a biscuit base and caramel topping, usually sold as a pair of sticks",
+   "known": 0.95,
+   "kind": "chocolate bar"
+  }
+ ]
+}

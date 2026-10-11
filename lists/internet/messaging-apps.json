@@ -1,0 +1,776 @@
+{
+ "id": "list.internet.messaging-apps",
+ "title": "Messaging apps",
+ "prompt": "Name a messaging app",
+ "genre": "general",
+ "category": "internet",
+ "topic": "websites-and-apps",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q2462003 . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-09-30T13:50:45.851Z"
+ },
+ "rows": [
+  {
+   "label": "WhatsApp",
+   "qid": "Q1049511",
+   "fame": 0.758,
+   "also": [
+    "WhatsApp Messenger",
+    "WA Messenger",
+    "Wa.me",
+    "WhatsApp by Facebook",
+    "Whatsapp.com"
+   ]
+  },
+  {
+   "label": "Telegram",
+   "qid": "Q15616276",
+   "fame": 0.678,
+   "also": [
+    "Telegram Messenger",
+    "Telegram Portable",
+    "t.me"
+   ]
+  },
+  {
+   "label": "Discord",
+   "qid": "Q22907849",
+   "fame": 0.66,
+   "also": []
+  },
+  {
+   "label": "Snapchat",
+   "qid": "Q333618",
+   "fame": 0.625,
+   "also": [
+    "Snap",
+    "Snapchat Android app"
+   ]
+  },
+  {
+   "label": "Microsoft Teams",
+   "qid": "Q28406404",
+   "fame": 0.593,
+   "also": [
+    "Microsoft Office Teams",
+    "MS Teams",
+    "Teams"
+   ]
+  },
+  {
+   "label": "Messenger",
+   "qid": "Q116947",
+   "fame": 0.568,
+   "also": [
+    "Facebook Messenger",
+    "Facebook Chat"
+   ]
+  },
+  {
+   "label": "Skype",
+   "qid": "Q40984",
+   "fame": 0.548,
+   "also": [
+    "Skype Technologies",
+    "SkypeOut",
+    "sPortable",
+    "Microsoft Skype"
+   ]
+  },
+  {
+   "label": "Signal",
+   "qid": "Q19718090",
+   "fame": 0.544,
+   "also": [
+    "signalapp",
+    "Signal Messenger"
+   ]
+  },
+  {
+   "label": "Slack",
+   "qid": "Q17130715",
+   "fame": 0.532,
+   "also": [
+    "chatly.io",
+    "Slack HQ",
+    "slack.com"
+   ]
+  },
+  {
+   "label": "WeChat",
+   "qid": "Q283233",
+   "fame": 0.51,
+   "also": [
+    "Weixin"
+   ]
+  },
+  {
+   "label": "Messages",
+   "qid": "Q1801742",
+   "fame": 0.504,
+   "also": [
+    "Apple Messages"
+   ]
+  },
+  {
+   "label": "Viber",
+   "qid": "Q332707",
+   "fame": 0.473,
+   "also": [
+    "Rakuten Viber Messenger",
+    "Rakuten Viber"
+   ]
+  },
+  {
+   "label": "iMessage",
+   "qid": "Q290267",
+   "fame": 0.462,
+   "also": []
+  },
+  {
+   "label": "Zalo",
+   "qid": "Q16481045",
+   "fame": 0.461,
+   "also": []
+  },
+  {
+   "label": "LINE",
+   "qid": "Q602471",
+   "fame": 0.44,
+   "also": [
+    "LINE Messenger"
+   ]
+  },
+  {
+   "label": "ICQ",
+   "qid": "Q58166",
+   "fame": 0.438,
+   "also": [
+    "I SEE K-YOU"
+   ]
+  },
+  {
+   "label": "Windows Live Messenger",
+   "qid": "Q71493",
+   "fame": 0.427,
+   "also": [
+    "MSN Messenger",
+    "The Microsoft Network Messenger"
+   ]
+  },
+  {
+   "label": "AOL Instant Messenger",
+   "qid": "Q58066",
+   "fame": 0.401,
+   "also": [
+    "AIM",
+    "3char"
+   ]
+  },
+  {
+   "label": "Google Chat",
+   "qid": "Q89804122",
+   "fame": 0.401,
+   "also": [
+    "gchat",
+    "Google Hangouts Chat",
+    "Hangouts Chat"
+   ]
+  },
+  {
+   "label": "Kik",
+   "qid": "Q874394",
+   "fame": 0.392,
+   "also": [
+    "Kik Messenger"
+   ]
+  },
+  {
+   "label": "Imo.im",
+   "qid": "Q4041310",
+   "fame": 0.38,
+   "also": [
+    "Imo"
+   ]
+  },
+  {
+   "label": "Google Hangouts",
+   "qid": "Q13231451",
+   "fame": 0.379,
+   "also": [
+    "Hangouts"
+   ]
+  },
+  {
+   "label": "Fluxer",
+   "qid": "Q138314311",
+   "fame": 0.375,
+   "also": [
+    "Fluxxer"
+   ]
+  },
+  {
+   "label": "KakaoTalk",
+   "qid": "Q127293",
+   "fame": 0.356,
+   "also": [
+    "KaTalk"
+   ]
+  },
+  {
+   "label": "Stoat",
+   "qid": "Q133540545",
+   "fame": 0.349,
+   "also": [
+    "Revolt",
+    "Stoat Chat"
+   ]
+  },
+  {
+   "label": "Messenger Kids",
+   "qid": "Q54621410",
+   "fame": 0.347,
+   "also": []
+  },
+  {
+   "label": "BlackBerry Messenger",
+   "qid": "Q879996",
+   "fame": 0.344,
+   "also": [
+    "BBM"
+   ]
+  },
+  {
+   "label": "Yahoo! Messenger",
+   "qid": "Q71694",
+   "fame": 0.343,
+   "also": []
+  },
+  {
+   "label": "SimpleX Chat",
+   "qid": "Q120496333",
+   "fame": 0.337,
+   "also": [
+    "Simplex"
+   ]
+  },
+  {
+   "label": "Threema",
+   "qid": "Q13512316",
+   "fame": 0.321,
+   "also": []
+  },
+  {
+   "label": "Xfire",
+   "qid": "Q71681",
+   "fame": 0.312,
+   "also": []
+  },
+  {
+   "label": "Hike",
+   "qid": "Q14927579",
+   "fame": 0.302,
+   "also": [
+    "Hike Messenger",
+    "HIKE GLOBAL PTE. LTD."
+   ]
+  },
+  {
+   "label": "Guilded",
+   "qid": "Q107271495",
+   "fame": 0.298,
+   "also": []
+  },
+  {
+   "label": "Skype for Business",
+   "qid": "Q1416838",
+   "fame": 0.285,
+   "also": [
+    "Microsoft Office Communicator",
+    "Microsoft Lync"
+   ]
+  },
+  {
+   "label": "Pidgin",
+   "qid": "Q71380",
+   "fame": 0.274,
+   "also": [
+    "finch",
+    "gaim"
+   ]
+  },
+  {
+   "label": "Wickr",
+   "qid": "Q72320400",
+   "fame": 0.262,
+   "also": []
+  },
+  {
+   "label": "Briar",
+   "qid": "Q18210428",
+   "fame": 0.261,
+   "also": []
+  },
+  {
+   "label": "iChat",
+   "qid": "Q58144",
+   "fame": 0.261,
+   "also": [
+    "iChat AV"
+   ]
+  },
+  {
+   "label": "Wire",
+   "qid": "Q26934461",
+   "fame": 0.257,
+   "also": []
+  },
+  {
+   "label": "Rocket.Chat",
+   "qid": "Q24050001",
+   "fame": 0.255,
+   "also": []
+  },
+  {
+   "label": "Zulip",
+   "qid": "Q23680052",
+   "fame": 0.244,
+   "also": []
+  },
+  {
+   "label": "Google Allo",
+   "qid": "Q24090743",
+   "fame": 0.239,
+   "also": [
+    "Allo"
+   ]
+  },
+  {
+   "label": "Trillian",
+   "qid": "Q71483",
+   "fame": 0.237,
+   "also": []
+  },
+  {
+   "label": "Rubika",
+   "qid": "Q109548753",
+   "fame": 0.225,
+   "also": [
+    "Robino"
+   ]
+  },
+  {
+   "label": "Bale",
+   "qid": "Q122781807",
+   "fame": 0.22,
+   "also": [
+    "Bale Messenger"
+   ]
+  },
+  {
+   "label": "Eitaa",
+   "qid": "Q122780466",
+   "fame": 0.195,
+   "also": [
+    "Eitaa messenger"
+   ]
+  },
+  {
+   "label": "Hello",
+   "qid": "Q27609125",
+   "fame": 0.191,
+   "also": []
+  },
+  {
+   "label": "Mxit",
+   "qid": "Q3133024",
+   "fame": 0.19,
+   "also": []
+  },
+  {
+   "label": "PowWow",
+   "qid": "Q7235928",
+   "fame": 0.186,
+   "also": []
+  },
+  {
+   "label": "HipChat",
+   "qid": "Q5767820",
+   "fame": 0.185,
+   "also": []
+  },
+  {
+   "label": "Marco Polo",
+   "qid": "Q48814451",
+   "fame": 0.18,
+   "also": []
+  },
+  {
+   "label": "meebo",
+   "qid": "Q58508",
+   "fame": 0.18,
+   "also": []
+  },
+  {
+   "label": "WASTE",
+   "qid": "Q1678246",
+   "fame": 0.174,
+   "also": []
+  },
+  {
+   "label": "Windows Messenger",
+   "qid": "Q1154433",
+   "fame": 0.167,
+   "also": [
+    "W-msg"
+   ]
+  },
+  {
+   "label": "ChatON",
+   "qid": "Q497230",
+   "fame": 0.164,
+   "also": [
+    "Samsung ChatON"
+   ]
+  },
+  {
+   "label": "Adium",
+   "qid": "Q58058",
+   "fame": 0.162,
+   "also": [
+    "Adam Iser"
+   ]
+  },
+  {
+   "label": "TorChat",
+   "qid": "Q71475",
+   "fame": 0.162,
+   "also": []
+  },
+  {
+   "label": "Cryptocat",
+   "qid": "Q3005864",
+   "fame": 0.158,
+   "also": []
+  },
+  {
+   "label": "Ricochet",
+   "qid": "Q19894431",
+   "fame": 0.157,
+   "also": [
+    "Ricochet IM"
+   ]
+  },
+  {
+   "label": "Gitter",
+   "qid": "Q28955995",
+   "fame": 0.148,
+   "also": []
+  },
+  {
+   "label": "Skype for Business Server",
+   "qid": "Q1931614",
+   "fame": 0.142,
+   "also": [
+    "Microsoft Office Communications Server",
+    "Microsoft Lync Server"
+   ]
+  },
+  {
+   "label": "RingID",
+   "qid": "Q19894436",
+   "fame": 0.134,
+   "also": []
+  },
+  {
+   "label": "BiP",
+   "qid": "Q29364771",
+   "fame": 0.131,
+   "also": []
+  },
+  {
+   "label": "2go messenger",
+   "qid": "Q16927589",
+   "fame": 0.128,
+   "also": []
+  },
+  {
+   "label": "aMSN",
+   "qid": "Q58061",
+   "fame": 0.128,
+   "also": []
+  },
+  {
+   "label": "Soroush Plus",
+   "qid": "Q52176204",
+   "fame": 0.12,
+   "also": [
+    "Soroush messenger"
+   ]
+  },
+  {
+   "label": "Kopete",
+   "qid": "Q58443",
+   "fame": 0.111,
+   "also": []
+  },
+  {
+   "label": "Quiet Internet Pager",
+   "qid": "Q34000",
+   "fame": 0.11,
+   "also": [
+    "QIP Infium"
+   ]
+  },
+  {
+   "label": "IBM Lotus Sametime",
+   "qid": "Q58455",
+   "fame": 0.109,
+   "also": [
+    "HCL Sametime",
+    "Sametime"
+   ]
+  },
+  {
+   "label": "Mibbit",
+   "qid": "Q3247196",
+   "fame": 0.108,
+   "also": []
+  },
+  {
+   "label": "ByLock",
+   "qid": "Q65073815",
+   "fame": 0.104,
+   "also": []
+  },
+  {
+   "label": "Serypto",
+   "qid": "Q42588510",
+   "fame": 0.099,
+   "also": [
+    "Stride",
+    "Serypto.com"
+   ]
+  },
+  {
+   "label": "Psi",
+   "qid": "Q71393",
+   "fame": 0.098,
+   "also": []
+  },
+  {
+   "label": "iGap",
+   "qid": "Q30312534",
+   "fame": 0.091,
+   "also": [
+    "IGap Messenger"
+   ]
+  },
+  {
+   "label": "Prosody",
+   "qid": "Q1134205",
+   "fame": 0.09,
+   "also": [
+    "lxmppd",
+    "Prosody IM"
+   ]
+  },
+  {
+   "label": "QuteCom",
+   "qid": "Q928125",
+   "fame": 0.08,
+   "also": [
+    "OpenWengo"
+   ]
+  },
+  {
+   "label": "Glide",
+   "qid": "Q16927655",
+   "fame": 0.075,
+   "also": []
+  },
+  {
+   "label": "Empathy",
+   "qid": "Q58072",
+   "fame": 0.073,
+   "also": []
+  },
+  {
+   "label": "Qik",
+   "qid": "Q3443773",
+   "fame": 0.056,
+   "also": [
+    "Skype Qik"
+   ]
+  },
+  {
+   "label": "Profanity",
+   "qid": "Q7247905",
+   "fame": 0.055,
+   "also": []
+  },
+  {
+   "label": "Ekiga",
+   "qid": "Q1131287",
+   "fame": 0.05,
+   "also": [
+    "Ekiga Portable"
+   ]
+  },
+  {
+   "label": "KiwiIRC",
+   "qid": "Q110950651",
+   "fame": 0.05,
+   "also": []
+  },
+  {
+   "label": "Spark",
+   "qid": "Q578866",
+   "fame": 0.046,
+   "also": [
+    "Jive Communicator"
+   ]
+  },
+  {
+   "label": "Surespot messenger",
+   "qid": "Q15944552",
+   "fame": 0.044,
+   "also": [
+    "Surespot"
+   ]
+  },
+  {
+   "label": "WhatsApp Business",
+   "qid": "Q61064014",
+   "fame": 0.043,
+   "also": [
+    "Azola Phikwa"
+   ]
+  },
+  {
+   "label": "Instantbird",
+   "qid": "Q58189",
+   "fame": 0.028,
+   "also": []
+  },
+  {
+   "label": "Xabber",
+   "qid": "Q28833096",
+   "fame": 0.028,
+   "also": []
+  },
+  {
+   "label": "SOMA Messenger",
+   "qid": "Q21041358",
+   "fame": 0.026,
+   "also": [
+    "Instanza Inc."
+   ]
+  },
+  {
+   "label": "Finch",
+   "qid": "Q16927775",
+   "fame": 0.022,
+   "also": []
+  },
+  {
+   "label": "Libervia",
+   "qid": "Q17639086",
+   "fame": 0.014,
+   "also": [
+    "Salut à Toi"
+   ]
+  },
+  {
+   "label": "Centericq",
+   "qid": "Q859388",
+   "fame": 0.009,
+   "also": []
+  },
+  {
+   "label": "Myspace IM",
+   "qid": "Q4044688",
+   "fame": 0.007,
+   "also": []
+  },
+  {
+   "label": "Boljoo",
+   "qid": "Q4035293",
+   "fame": 0,
+   "also": [
+    "Boljoo Chat"
+   ]
+  },
+  {
+   "label": "ChitChat",
+   "qid": "Q5102173",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Fama IM",
+   "qid": "Q5432854",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Forfone",
+   "qid": "Q1437288",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Jimm",
+   "qid": "Q1471481",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Meatspace Chat",
+   "qid": "Q16927727",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Meetro",
+   "qid": "Q58518",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Microsoft Vine",
+   "qid": "Q9303048",
+   "fame": 0,
+   "also": [
+    "vine.net"
+   ]
+  },
+  {
+   "label": "TiK",
+   "qid": "Q7799968",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Tkabber",
+   "qid": "Q2377418",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "TNT",
+   "qid": "Q7670918",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "TU Me",
+   "qid": "Q7672061",
+   "fame": 0,
+   "also": []
+  }
+ ]
+}

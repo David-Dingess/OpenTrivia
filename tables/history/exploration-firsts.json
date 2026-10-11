@@ -1,0 +1,238 @@
+{
+ "id": "table.history.exploration-firsts",
+ "kind": "table",
+ "title": "Firsts in exploration",
+ "genre": "society",
+ "category": "history",
+ "topic": "explorers",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?feat WHERE { VALUES (?item ?feat) { (wd:Q926 \"First to reach the South Pole\") (wd:Q7327 \"First human in space\") (wd:Q44371 \"First woman in space\") (wd:Q1615 \"First to walk on the Moon\") (wd:Q174979 \"First American in space\") (wd:Q182642 \"First American to orbit the Earth\") (wd:Q49285 \"First American woman in space\") (wd:Q147581 \"First Chinese astronaut in space\") (wd:Q154269 \"First to walk in space\") (wd:Q1618 \"First to fly solo nonstop across the Atlantic\") (wd:Q3355 \"First woman to fly solo across the Atlantic\") (wd:Q35820 \"First to make a powered airplane flight\") (wd:Q5396 \"First to fly an airplane across the English Channel\") (wd:Q271939 \"First pilot to fly faster than the speed of sound\") (wd:Q4203 \"First skydiver to break the speed of sound in freefall\") (wd:Q505923 \"First to sail solo around the world\") (wd:Q234491 \"First woman to climb Mount Everest\") (wd:Q189307 \"First to climb all fourteen of the world's 8,000-metre peaks\") (wd:Q254376 \"First Black woman to earn a pilot's licence\") (wd:Q1496 \"First European to sail from the Atlantic into the Pacific\") (wd:Q201510 \"First to complete a voyage around the world\") (wd:Q130377 \"First European to sail around the southern tip of Africa\") (wd:Q7328 \"First to sail from Europe to India\") (wd:Q7324 \"First to sail across the Antarctic Circle\") (wd:Q315231 \"First to reach the deepest point of the ocean\") (wd:Q42838 \"First European to reach North America\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T01:11:01.892Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T01:11:01.892Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "first",
+   "label": "Famous first",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "explorer",
+  "many": "explorers and pioneers",
+  "wildcard": "person",
+  "columns": {
+   "first": {
+    "role": "code",
+    "pick": "Which famous first is {label} credited with?",
+    "statement": "The famous first of {label}: {value}.",
+    "match": "Match each explorer to their famous first.",
+    "reverse": "Who is credited with this famous first: {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Neil Armstrong",
+   "qid": "Q1615",
+   "fame": 0.69,
+   "first": "First to walk on the Moon",
+   "description": "American astronaut and lunar explorer (1930–2012)",
+   "hook": "commanded the Apollo 11 mission and stepped onto the lunar surface with a famous line",
+   "known": 0.95,
+   "kind": "astronaut"
+  },
+  {
+   "label": "Amelia Earhart",
+   "qid": "Q3355",
+   "fame": 0.685,
+   "first": "First woman to fly solo across the Atlantic",
+   "description": "American aviation pioneer and author (1897–1939)",
+   "hook": "vanished over the Pacific during an attempt to fly around the globe",
+   "known": 0.8,
+   "kind": "aviator"
+  },
+  {
+   "label": "Wright brothers",
+   "qid": "Q35820",
+   "fame": 0.646,
+   "first": "First to make a powered airplane flight",
+   "description": "American aviation pioneers",
+   "hook": "were Ohio bicycle makers who tested gliders and their Flyer on the dunes near Kitty Hawk",
+   "known": 0.9,
+   "kind": "aviator"
+  },
+  {
+   "label": "James Cook",
+   "qid": "Q7324",
+   "fame": 0.627,
+   "first": "First to sail across the Antarctic Circle",
+   "description": "British explorer, cartographer and naval officer (1728–1779)",
+   "hook": "led three Pacific voyages and charted the coasts of New Zealand and eastern Australia",
+   "known": 0.5,
+   "kind": "explorer"
+  },
+  {
+   "label": "Felix Baumgartner",
+   "qid": "Q4203",
+   "fame": 0.626,
+   "first": "First skydiver to break the speed of sound in freefall",
+   "description": "Austrian skydiver, daredevil and BASE jumper (1969–2025)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "daredevil"
+  },
+  {
+   "label": "Charles Lindbergh",
+   "qid": "Q1618",
+   "fame": 0.624,
+   "first": "First to fly solo nonstop across the Atlantic",
+   "description": "American aviator, author, inventor, explorer, and social activist (1902–1974)",
+   "hook": "piloted the Spirit of St. Louis from New York to Paris and became a worldwide celebrity",
+   "known": 0.7,
+   "kind": "aviator"
+  },
+  {
+   "label": "Yuri Gagarin",
+   "qid": "Q7327",
+   "fame": 0.624,
+   "first": "First human in space",
+   "description": "Soviet pilot and cosmonaut, first human in space (1934–1968)",
+   "hook": "orbited the planet once aboard Vostok 1 in a 108-minute flight",
+   "known": 0.9,
+   "kind": "astronaut"
+  },
+  {
+   "label": "Ferdinand Magellan",
+   "qid": "Q1496",
+   "fame": 0.62,
+   "first": "First European to sail from the Atlantic into the Pacific",
+   "description": "Portuguese explorer in the service of Spain",
+   "hook": "led the expedition whose surviving crew completed the first voyage around the world, though he died on the way",
+   "known": 0.6,
+   "kind": "explorer"
+  },
+  {
+   "label": "Vasco da Gama",
+   "qid": "Q7328",
+   "fame": 0.614,
+   "first": "First to sail from Europe to India",
+   "description": "Portuguese explorer (c. 1460s – 1524)",
+   "hook": "opened the sea route around the Cape of Good Hope to Kozhikode",
+   "known": 0.5,
+   "kind": "explorer"
+  },
+  {
+   "label": "Leif Erikson",
+   "qid": "Q42838",
+   "fame": 0.596,
+   "first": "First European to reach North America",
+   "description": "norse explorer (c. 970 – c. 1020)",
+   "hook": "is a Viking explorer nicknamed the Lucky who is linked to the settlement of Vinland",
+   "known": 0.5,
+   "kind": "explorer"
+  },
+  {
+   "label": "John Glenn",
+   "qid": "Q182642",
+   "fame": 0.575,
+   "first": "First American to orbit the Earth",
+   "description": "American astronaut and politician (1921–2016)",
+   "hook": "circled the globe three times in Friendship 7, then returned to space at age 77 and served as a senator",
+   "known": 0.5,
+   "kind": "astronaut"
+  },
+  {
+   "label": "Sally Ride",
+   "qid": "Q49285",
+   "fame": 0.566,
+   "first": "First American woman in space",
+   "description": "American astronaut and physicist (1951–2012)",
+   "hook": "flew aboard the Challenger shuttle and later became a physicist and science educator",
+   "known": 0.4,
+   "kind": "astronaut"
+  },
+  {
+   "label": "Reinhold Messner",
+   "qid": "Q189307",
+   "fame": 0.55,
+   "first": "First to climb all fourteen of the world's 8,000-metre peaks",
+   "description": "Italian mountaineer, adventurer and explorer (born 1944)",
+   "hook": null,
+   "known": 0.1,
+   "kind": "mountaineer"
+  },
+  {
+   "label": "Chuck Yeager",
+   "qid": "Q271939",
+   "fame": 0.541,
+   "first": "First pilot to fly faster than the speed of sound",
+   "description": "American World War II flying ace and test pilot; first pilot to fly faster than sound (1923–2020)",
+   "hook": "pushed the Bell X-1 past Mach 1 and was portrayed in The Right Stuff",
+   "known": 0.5,
+   "kind": "aviator"
+  },
+  {
+   "label": "Roald Amundsen",
+   "qid": "Q926",
+   "fame": 0.529,
+   "first": "First to reach the South Pole",
+   "description": "Norwegian explorer; first person to reach the South Pole (1872–1928)",
+   "hook": "beat Robert Falcon Scott in a race to the bottom of the world and navigated the Northwest Passage",
+   "known": 0.6,
+   "kind": "explorer"
+  },
+  {
+   "label": "Valentina Tereshkova",
+   "qid": "Q44371",
+   "fame": 0.524,
+   "first": "First woman in space",
+   "description": "Russian cosmonaut and pilot, first woman to have flown in space (born 1937)",
+   "hook": "flew solo on Vostok 6 and orbited the Earth dozens of times",
+   "known": 0.6,
+   "kind": "astronaut"
+  },
+  {
+   "label": "Alan Shepard",
+   "qid": "Q174979",
+   "fame": 0.517,
+   "first": "First American in space",
+   "description": "American astronaut, first American in space, lunar explorer (1923–1998)",
+   "hook": "flew a short suborbital Mercury hop and later hit golf balls on the lunar surface",
+   "known": 0.4,
+   "kind": "astronaut"
+  },
+  {
+   "label": "Bessie Coleman",
+   "qid": "Q254376",
+   "fame": 0.466,
+   "first": "First Black woman to earn a pilot's licence",
+   "description": "American aviator (1892–1926)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "aviator"
+  }
+ ]
+}

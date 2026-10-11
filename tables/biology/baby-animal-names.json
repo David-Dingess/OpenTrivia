@@ -1,0 +1,751 @@
+{
+ "id": "table.biology.baby-animal-names",
+ "kind": "table",
+ "title": "Baby animal names",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "wildlife",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?young WHERE { VALUES (?item ?itemLabel ?young) { (wd:Q146 \"Cat\"@en \"kitten\") (wd:Q144 \"Dog\"@en \"puppy\") (wd:Q726 \"Horse\"@en \"foal\") (wd:Q7368 \"Sheep\"@en \"lamb\") (wd:Q2934 \"Goat\"@en \"kid\") (wd:Q787 \"Pig\"@en \"piglet\") (wd:Q830 \"Cow\"@en \"calf\") (wd:Q5070208 \"Kangaroo\"@en \"joey\") (wd:Q36101 \"Koala\"@en \"joey\") (wd:Q140 \"Lion\"@en \"cub\") (wd:Q19939 \"Tiger\"@en \"cub\") (wd:Q36341 \"Brown bear\"@en \"cub\") (wd:Q33609 \"Polar bear\"@en \"cub\") (wd:Q33602 \"Giant panda\"@en \"cub\") (wd:Q23907 \"Cheetah\"@en \"cub\") (wd:Q34706 \"Leopard\"@en \"cub\") (wd:Q35694 \"Jaguar\"@en \"cub\") (wd:Q18498 \"Wolf\"@en \"pup\") (wd:Q3736439 \"Duck\"@en \"duckling\") (wd:Q780 \"Chicken\"@en \"chick\") (wd:Q16529344 \"Goose\"@en \"gosling\") (wd:Q29564928 \"Swan\"@en \"cygnet\") (wd:Q2092297 \"Eagle\"@en \"eaglet\") (wd:Q25222 \"Owl\"@en \"owlet\") (wd:Q53636 \"Frog\"@en \"tadpole\") (wd:Q6453151 \"Toad\"@en \"tadpole\") (wd:Q11946202 \"Butterfly\"@en \"caterpillar\") (wd:Q23390 \"Deer\"@en \"fawn\") (wd:Q7378 \"Elephant\"@en \"calf\") (wd:Q862089 \"Giraffe\"@en \"calf\") (wd:Q1865281 \"Whale\"@en \"calf\") (wd:Q7369 \"Dolphin\"@en \"calf\") (wd:Q34505 \"Hippopotamus\"@en \"calf\") (wd:Q34718 \"Rhinoceros\"@en \"calf\") (wd:Q42710 \"Water buffalo\"@en \"calf\") (wd:Q18099 \"Bison\"@en \"calf\") (wd:Q35517 \"Moose\"@en \"calf\") (wd:Q39624 \"Reindeer\"@en \"calf\") (wd:Q30263 \"Seal\"@en \"pup\") (wd:Q3887135 \"Sea lion\"@en \"pup\") (wd:Q28425 \"Bat\"@en \"pup\") (wd:Q9147 \"Penguin\"@en \"chick\") (wd:Q43794 \"Turkey\"@en \"poult\") (wd:Q128685 \"Eel\"@en \"elver\") (wd:Q46076 \"Hare\"@en \"leveret\") (wd:Q47542 \"Beaver\"@en \"kit\") (wd:Q200184 \"Otter\"@en \"pup\") (wd:Q42569 \"Llama\"@en \"cria\") (wd:Q122181742 \"Alpaca\"@en \"cria\") (wd:Q7375 \"Camel\"@en \"calf\") (wd:Q6120 \"Hedgehog\"@en \"hoglet\") (wd:Q1223829 \"Porcupine\"@en \"porcupette\") (wd:Q21824 \"Echidna\"@en \"puggle\") (wd:Q15343 \"Platypus\"@en \"puggle\") (wd:Q19707 \"Donkey\"@en \"foal\") (wd:Q32789 \"Zebra\"@en \"foal\") (wd:Q10856 \"Pigeon\"@en \"squab\") (wd:Q7372 \"Shark\"@en \"pup\") (wd:Q201251 \"Peacock\"@en \"peachick\") (wd:Q6072584 \"Quail\"@en \"chick\") (wd:Q1357 \"Spider\"@en \"spiderling\") (wd:Q44299 \"Coyote\"@en \"pup\") (wd:Q2576337 \"Ostrich\"@en \"chick\") (wd:Q3901583 \"Flamingo\"@en \"chick\") (wd:Q58697 \"Wild boar\"@en \"piglet\") (wd:Q219329 \"Sea turtle\"@en \"hatchling\") (wd:Q43169 \"Crocodile\"@en \"hatchling\") (wd:Q131538 \"Capybara\"@en \"pup\") (wd:Q6573 \"Hamster\"@en \"pup\") (wd:Q79803 \"Guinea pig\"@en \"pup\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T16:51:35.440Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T16:51:35.440Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "young",
+   "label": "Baby is called",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "animal",
+  "many": "animals",
+  "capitalise": true,
+  "lowerInProse": true,
+  "columns": {
+   "young": {
+    "role": "link",
+    "pick": "What is a baby {label} called?",
+    "statement": "A baby {label} is called \"{value}\".",
+    "match": "Match each animal to what its baby is called.",
+    "odd": "Three of these animals share a baby name: \"{value}\". Which one doesn't?",
+    "all": "Tap all {n} animals whose babies are called \"{value}\".",
+    "reverse": "Which of these animals has a baby called \"{value}\"?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Cat",
+   "qid": "Q146",
+   "fame": 0.795,
+   "young": "kitten",
+   "description": "small domesticated carnivorous mammal",
+   "hook": "is the most popular household companion, famous for purring and for chasing mice and laser dots",
+   "known": 0.95,
+   "kind": "pet"
+  },
+  {
+   "label": "Dog",
+   "qid": "Q144",
+   "fame": 0.726,
+   "young": "puppy",
+   "description": "domesticated mammal of the family Canidae",
+   "hook": "is called man's best friend, famous for loyalty, fetching sticks and wagging its tail",
+   "known": 0.95,
+   "kind": "pet"
+  },
+  {
+   "label": "Giant panda",
+   "qid": "Q33602",
+   "fame": 0.681,
+   "young": "cub",
+   "description": "species of mammal",
+   "hook": "is a black-and-white bamboo eater, the beloved symbol of a major wildlife conservation charity",
+   "known": 0.8,
+   "kind": "bear"
+  },
+  {
+   "label": "Capybara",
+   "qid": "Q131538",
+   "fame": 0.673,
+   "young": "pup",
+   "description": "species of large semiaquatic rodent in the cavy family",
+   "hook": "is the world's largest rodent, a South American water-lover that other animals happily lounge on",
+   "known": 0.2,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Lion",
+   "qid": "Q140",
+   "fame": 0.673,
+   "young": "cub",
+   "description": "species of big cat",
+   "hook": "is the mane-sporting king of the jungle, living in prides on the African savanna",
+   "known": 0.95,
+   "kind": "big cat"
+  },
+  {
+   "label": "Tiger",
+   "qid": "Q19939",
+   "fame": 0.667,
+   "young": "cub",
+   "description": "species of big cat",
+   "hook": "is the largest of the big cats, famous for its orange coat with black vertical stripes",
+   "known": 0.95,
+   "kind": "big cat"
+  },
+  {
+   "label": "Wolf",
+   "qid": "Q18498",
+   "fame": 0.65,
+   "young": "pup",
+   "description": "species of mammal",
+   "hook": "is a pack-hunting canine famous for howling at the moon and starring in fairy tales as a big bad villain",
+   "known": 0.8,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Horse",
+   "qid": "Q726",
+   "fame": 0.649,
+   "young": "foal",
+   "description": "domesticated four-footed mammal from the equine family",
+   "hook": "is a rideable, galloping animal long used for racing, farming and carrying knights into battle",
+   "known": 0.95,
+   "kind": "farm animal"
+  },
+  {
+   "label": "Jaguar",
+   "qid": "Q35694",
+   "fame": 0.645,
+   "young": "cub",
+   "description": "species of big cat native to the Americas",
+   "hook": "is a spotted, powerful-jawed cat of the rainforests of Central and South America, and a carmaker's logo",
+   "known": 0.6,
+   "kind": "big cat"
+  },
+  {
+   "label": "Polar bear",
+   "qid": "Q33609",
+   "fame": 0.645,
+   "young": "cub",
+   "description": "species of bear native largely within the Arctic Circle",
+   "hook": "is a white-furred Arctic hunter that stalks seals on drifting sea ice",
+   "known": 0.8,
+   "kind": "bear"
+  },
+  {
+   "label": "Coyote",
+   "qid": "Q44299",
+   "fame": 0.641,
+   "young": "pup",
+   "description": "species of canine",
+   "hook": "is a clever North American canine that yips at night and keeps escaping a cartoon predator's schemes",
+   "known": 0.6,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Moose",
+   "qid": "Q35517",
+   "fame": 0.64,
+   "young": "calf",
+   "description": "species of mammal",
+   "hook": "is the largest member of the deer family, a huge antlered browser of northern forests",
+   "known": 0.6,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Platypus",
+   "qid": "Q15343",
+   "fame": 0.639,
+   "young": "puggle",
+   "description": "semi-aquatic egg-laying mammal endemic to Australia",
+   "hook": "is a duck-billed, beaver-tailed Australian oddity that lays eggs yet nurses with milk",
+   "known": 0.2,
+   "kind": "marine mammal"
+  },
+  {
+   "label": "Eel",
+   "qid": "Q128685",
+   "fame": 0.638,
+   "young": "elver",
+   "description": "order of fishes",
+   "hook": "is a slippery, snake-shaped fish that migrates across oceans to spawn in the Sargasso Sea",
+   "known": 0.2,
+   "kind": "fish"
+  },
+  {
+   "label": "Elephant",
+   "qid": "Q7378",
+   "fame": 0.637,
+   "young": "calf",
+   "description": "large terrestrial mammals from Africa and Asia",
+   "hook": "is the largest land animal, famous for its trunk, tusks and a legendary memory",
+   "known": 0.95,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Cheetah",
+   "qid": "Q23907",
+   "fame": 0.634,
+   "young": "cub",
+   "description": "species of mammal",
+   "hook": "is the fastest land animal, sprinting after prey in short bursts across the savanna",
+   "known": 0.8,
+   "kind": "big cat"
+  },
+  {
+   "label": "Chicken",
+   "qid": "Q780",
+   "fame": 0.63,
+   "young": "chick",
+   "description": "domesticated bird (specifically a red junglefowl) kept by humans primarily as a food source",
+   "hook": "is the farmyard bird that lays breakfast eggs and is said to have crossed the road",
+   "known": 0.95,
+   "kind": "farm animal"
+  },
+  {
+   "label": "Cow",
+   "qid": "Q830",
+   "fame": 0.626,
+   "young": "calf",
+   "description": "large, domesticated, cloven-hooved herbivores",
+   "hook": "is the farm animal that gives milk and goes moo, held sacred in some cultures",
+   "known": 0.95,
+   "kind": "farm animal"
+  },
+  {
+   "label": "Brown bear",
+   "qid": "Q36341",
+   "fame": 0.623,
+   "young": "cub",
+   "description": "species of mammal",
+   "hook": "is a large, powerful omnivore of northern forests, known for catching salmon in rushing rivers",
+   "known": 0.6,
+   "kind": "bear"
+  },
+  {
+   "label": "Leopard",
+   "qid": "Q34706",
+   "fame": 0.622,
+   "young": "cub",
+   "description": "species of big cat",
+   "hook": "is a stealthy spotted cat that drags its kills up into trees, with a famous all-black variant",
+   "known": 0.8,
+   "kind": "big cat"
+  },
+  {
+   "label": "Hippopotamus",
+   "qid": "Q34505",
+   "fame": 0.618,
+   "young": "calf",
+   "description": "species of mammal (artiodactyl)",
+   "hook": "is a huge, river-dwelling African mammal whose name means river horse, with a deadly wide-mouthed yawn",
+   "known": 0.6,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Penguin",
+   "qid": "Q9147",
+   "fame": 0.611,
+   "young": "chick",
+   "description": "family of birds in the order Sphenisciformes",
+   "hook": "is a flightless, tuxedo-looking bird that waddles on ice and swims like a torpedo",
+   "known": 0.95,
+   "kind": "bird"
+  },
+  {
+   "label": "Bat",
+   "qid": "Q28425",
+   "fame": 0.609,
+   "young": "pup",
+   "description": "order of placental mammals (Placentalia)",
+   "hook": "is the only mammal capable of true flight, hanging upside down and navigating by echolocation",
+   "known": 0.6,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Shark",
+   "qid": "Q7372",
+   "fame": 0.608,
+   "young": "pup",
+   "description": "clade of predatory cartilaginous fish (Chondrichthyes)",
+   "hook": "is a toothy ocean predator whose dorsal fin made beachgoers fear the water in a blockbuster film",
+   "known": 0.6,
+   "kind": "fish"
+  },
+  {
+   "label": "Deer",
+   "qid": "Q23390",
+   "fame": 0.606,
+   "young": "fawn",
+   "description": "family of ruminants (Ruminantia)",
+   "hook": "is a graceful forest grazer whose males grow branching antlers, and a famous cartoon's Bambi",
+   "known": 0.8,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Giraffe",
+   "qid": "Q862089",
+   "fame": 0.601,
+   "young": "calf",
+   "description": "genus of mammals",
+   "hook": "is the tallest animal on Earth, with a famously long neck for munching treetop leaves",
+   "known": 0.95,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Hamster",
+   "qid": "Q6573",
+   "fame": 0.6,
+   "young": "pup",
+   "description": "subfamily of rodents (Cricetinae)",
+   "hook": "is a tiny pet rodent that stuffs its cheeks with food and runs for hours on a wheel",
+   "known": 0.8,
+   "kind": "pet"
+  },
+  {
+   "label": "Guinea pig",
+   "qid": "Q79803",
+   "fame": 0.596,
+   "young": "pup",
+   "description": "domesticated rodent from South America",
+   "hook": "is a squeaky, cuddly pet rodent from the Andes, a classic classroom companion",
+   "known": 0.8,
+   "kind": "pet"
+  },
+  {
+   "label": "Kangaroo",
+   "qid": "Q5070208",
+   "fame": 0.596,
+   "young": "joey",
+   "description": "common name for some marsupials indigenous to Australia in the family Macropodidae",
+   "hook": "is a hopping Australian marsupial that carries its young in a pouch and can box",
+   "known": 0.8,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Spider",
+   "qid": "Q1357",
+   "fame": 0.594,
+   "young": "spiderling",
+   "description": "order of arachnids",
+   "hook": "is an eight-legged creature that spins silk webs to trap flies",
+   "known": 0.4,
+   "kind": "arachnid"
+  },
+  {
+   "label": "Koala",
+   "qid": "Q36101",
+   "fame": 0.591,
+   "young": "joey",
+   "description": "arboreal herbivorous marsupial native to Australia",
+   "hook": "is a sleepy Australian marsupial that clings to eucalyptus trees and munches their leaves",
+   "known": 0.8,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Wild boar",
+   "qid": "Q58697",
+   "fame": 0.591,
+   "young": "piglet",
+   "description": "omnivore species of mammal",
+   "hook": "is the tusked, bristly forest ancestor of the barnyard swine, famed in Asterix comics",
+   "known": 0.4,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Pig",
+   "qid": "Q787",
+   "fame": 0.59,
+   "young": "piglet",
+   "description": "domesticated omnivorous even-toed ungulate",
+   "hook": "is a farm animal that oinks and rolls in mud, and the source of bacon and ham",
+   "known": 0.95,
+   "kind": "farm animal"
+  },
+  {
+   "label": "Beaver",
+   "qid": "Q47542",
+   "fame": 0.589,
+   "young": "kit",
+   "description": "genus of mammals",
+   "hook": "is a dam-building rodent with a flat tail and big front teeth, the national emblem of Canada",
+   "known": 0.6,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Echidna",
+   "qid": "Q21824",
+   "fame": 0.589,
+   "young": "puggle",
+   "description": "family of monotreme mammals",
+   "hook": "is a spiny, egg-laying Australian mammal with a long sticky tongue for catching ants",
+   "known": 0.2,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Goat",
+   "qid": "Q2934",
+   "fame": 0.588,
+   "young": "kid",
+   "description": "domesticated mammal raised for its meat and milk",
+   "hook": "is a horned, hardy farm animal famous for climbing rocks, eating almost anything and giving milk for cheese",
+   "known": 0.8,
+   "kind": "farm animal"
+  },
+  {
+   "label": "Seal",
+   "qid": "Q30263",
+   "fame": 0.588,
+   "young": "pup",
+   "description": "parvorder of mammals",
+   "hook": "is a flippered marine mammal that barks and basks on rocky shores, often balancing balls in circus acts",
+   "known": 0.8,
+   "kind": "marine mammal"
+  },
+  {
+   "label": "Donkey",
+   "qid": "Q19707",
+   "fame": 0.586,
+   "young": "foal",
+   "description": "subspecies of mammal (donkey as a domesticated subspecies); beast of burden, similar to a horse, but smaller",
+   "hook": "is a long-eared, stubborn beast of burden that brays and famously stars as Eeyore",
+   "known": 0.8,
+   "kind": "farm animal"
+  },
+  {
+   "label": "Sheep",
+   "qid": "Q7368",
+   "fame": 0.586,
+   "young": "lamb",
+   "description": "domesticated ruminant bred for meat, wool, and milk",
+   "hook": "is a woolly farm animal that goes baa, counted by insomniacs trying to fall asleep",
+   "known": 0.95,
+   "kind": "farm animal"
+  },
+  {
+   "label": "Frog",
+   "qid": "Q53636",
+   "fame": 0.583,
+   "young": "tadpole",
+   "description": "order of short bodied, tailless amphibians",
+   "hook": "is a hopping, croaking amphibian, famed for kissing princes and for a green Muppet named Kermit",
+   "known": 0.8,
+   "kind": "amphibian"
+  },
+  {
+   "label": "Rhinoceros",
+   "qid": "Q34718",
+   "fame": 0.581,
+   "young": "calf",
+   "description": "family of mammals",
+   "hook": "is a thick-skinned giant with a horn on its nose, poached nearly to extinction",
+   "known": 0.6,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Dolphin",
+   "qid": "Q7369",
+   "fame": 0.58,
+   "young": "calf",
+   "description": "marine mammal, closely related to whales and porpoises",
+   "hook": "is a clever, playful ocean mammal known for leaping from the water and chattering in clicks and whistles",
+   "known": 0.8,
+   "kind": "marine mammal"
+  },
+  {
+   "label": "Camel",
+   "qid": "Q7375",
+   "fame": 0.579,
+   "young": "calf",
+   "description": "genus of mammals",
+   "hook": "is a hump-backed desert animal that can go long stretches without water, nicknamed the ship of the desert",
+   "known": 0.8,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Crocodile",
+   "qid": "Q43169",
+   "fame": 0.579,
+   "young": "hatchling",
+   "description": "family of reptiles",
+   "hook": "is a large armored reptile with powerful jaws that lurks in rivers, as in the Nile",
+   "known": 0.8,
+   "kind": "reptile"
+  },
+  {
+   "label": "Hedgehog",
+   "qid": "Q6120",
+   "fame": 0.578,
+   "young": "hoglet",
+   "description": "subfamily of small spiny mammals",
+   "hook": "is a small, spiky, insect-eating mammal that rolls into a ball when scared",
+   "known": 0.6,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Peacock",
+   "qid": "Q201251",
+   "fame": 0.578,
+   "young": "peachick",
+   "description": "group of birds formed by the Indian peafowl, the green peafowl and the Congo peafowl",
+   "hook": "is a bird whose males fan out a dazzling blue-green tail of eyed feathers",
+   "known": 0.4,
+   "kind": "bird"
+  },
+  {
+   "label": "Otter",
+   "qid": "Q200184",
+   "fame": 0.574,
+   "young": "pup",
+   "description": "subfamily of mammals",
+   "hook": "is a playful, sleek swimmer that floats on its back, holding hands with friends to avoid drifting apart",
+   "known": 0.8,
+   "kind": "marine mammal"
+  },
+  {
+   "label": "Owl",
+   "qid": "Q25222",
+   "fame": 0.572,
+   "young": "owlet",
+   "description": "order of birds",
+   "hook": "is a nocturnal bird of prey with huge eyes, a swiveling head, and a reputation for wisdom",
+   "known": 0.8,
+   "kind": "bird"
+  },
+  {
+   "label": "Butterfly",
+   "qid": "Q11946202",
+   "fame": 0.568,
+   "young": "caterpillar",
+   "description": "group of insects in the order Lepidoptera",
+   "hook": "is an insect that emerges from a chrysalis with colorful wings after starting life as a hungry crawler",
+   "known": 0.95,
+   "kind": "insect"
+  },
+  {
+   "label": "Bison",
+   "qid": "Q18099",
+   "fame": 0.566,
+   "young": "calf",
+   "description": "genus of bovines",
+   "hook": "is a shaggy, humped giant of the American plains, once hunted to near extinction and shown on a nickel",
+   "known": 0.6,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Reindeer",
+   "qid": "Q39624",
+   "fame": 0.565,
+   "young": "calf",
+   "description": "species of deer",
+   "hook": "is the antlered animal said to pull a certain sleigh on Christmas Eve, led by one with a glowing red nose",
+   "known": 0.6,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Duck",
+   "qid": "Q3736439",
+   "fame": 0.561,
+   "young": "duckling",
+   "description": "common name for many species in the bird family Anatidae",
+   "hook": "is a web-footed water bird that quacks, and the species of Donald and Daffy",
+   "known": 0.95,
+   "kind": "bird"
+  },
+  {
+   "label": "Porcupine",
+   "qid": "Q1223829",
+   "fame": 0.56,
+   "young": "porcupette",
+   "description": "rodent with a coat of sharp spines",
+   "hook": "is a rodent with a coat of sharp quills it uses to defend itself against predators",
+   "known": 0.4,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Pigeon",
+   "qid": "Q10856",
+   "fame": 0.559,
+   "young": "squab",
+   "description": "family of birds (Aves)",
+   "hook": "is a city-dwelling bird that coos in squares and once carried messages over long distances",
+   "known": 0.6,
+   "kind": "bird"
+  },
+  {
+   "label": "Zebra",
+   "qid": "Q32789",
+   "fame": 0.556,
+   "young": "foal",
+   "description": "African subgenus of Equus of the horse family",
+   "hook": "is an African grazer famous for the bold black-and-white stripes that make each one unique",
+   "known": 0.8,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Alpaca",
+   "qid": "Q122181742",
+   "fame": 0.552,
+   "young": "cria",
+   "description": "species of mammal",
+   "hook": "is a fluffy, woolly South American camelid raised for soft fiber, sometimes known to spit",
+   "known": 0.6,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Whale",
+   "qid": "Q1865281",
+   "fame": 0.551,
+   "young": "calf",
+   "description": "animals in the order Cetacea",
+   "hook": "is the largest animal ever, a giant ocean mammal that sings haunting songs and spouts from a blowhole",
+   "known": 0.95,
+   "kind": "marine mammal"
+  },
+  {
+   "label": "Hare",
+   "qid": "Q46076",
+   "fame": 0.549,
+   "young": "leveret",
+   "description": "genus of mammals in the family Leporidae",
+   "hook": "is a long-eared, fast-running grassland animal that famously lost a race to a slow shelled opponent",
+   "known": 0.4,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Llama",
+   "qid": "Q42569",
+   "fame": 0.545,
+   "young": "cria",
+   "description": "species of mammal",
+   "hook": "is a woolly Andean pack animal with a reputation for spitting when annoyed",
+   "known": 0.6,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Ostrich",
+   "qid": "Q2576337",
+   "fame": 0.543,
+   "young": "chick",
+   "description": "genus of birds",
+   "hook": "is the largest living bird, unable to fly but able to outrun most predators",
+   "known": 0.6,
+   "kind": "bird"
+  },
+  {
+   "label": "Water buffalo",
+   "qid": "Q42710",
+   "fame": 0.541,
+   "young": "calf",
+   "description": "species of large bovid originating in South Asia",
+   "hook": null,
+   "known": 0.2,
+   "kind": "wild mammal"
+  },
+  {
+   "label": "Eagle",
+   "qid": "Q2092297",
+   "fame": 0.539,
+   "young": "eaglet",
+   "description": "large carnivorous bird",
+   "hook": "is a huge predatory bird of prey, many species of which hunt sizeable animals",
+   "known": 0.8,
+   "kind": "bird"
+  },
+  {
+   "label": "Flamingo",
+   "qid": "Q3901583",
+   "fame": 0.538,
+   "young": "chick",
+   "description": "family of birds",
+   "hook": "is a tall wading bird that is famous for its pink plumage and standing on one leg",
+   "known": 0.6,
+   "kind": "bird"
+  },
+  {
+   "label": "Sea lion",
+   "qid": "Q3887135",
+   "fame": 0.533,
+   "young": "pup",
+   "description": "subfamily of marine mammals",
+   "hook": "is an eared marine mammal with long front flippers that can walk on all fours on land",
+   "known": 0.6,
+   "kind": "marine mammal"
+  },
+  {
+   "label": "Quail",
+   "qid": "Q6072584",
+   "fame": 0.528,
+   "young": "chick",
+   "description": "name for several genera of birds in the order Galliformes",
+   "hook": null,
+   "known": 0.2,
+   "kind": "bird"
+  },
+  {
+   "label": "Turkey",
+   "qid": "Q43794",
+   "fame": 0.525,
+   "young": "poult",
+   "description": "North American genus of large birds",
+   "hook": "is a heavy, ground-dwelling bird with a fleshy wattle, and a traditional holiday dinner in North America",
+   "known": 0.4,
+   "kind": "bird"
+  },
+  {
+   "label": "Goose",
+   "qid": "Q16529344",
+   "fame": 0.52,
+   "young": "gosling",
+   "description": "common name for a group of birds",
+   "hook": "is a large waterfowl whose female shares its name with the male, called a gander",
+   "known": 0.8,
+   "kind": "bird"
+  },
+  {
+   "label": "Swan",
+   "qid": "Q29564928",
+   "fame": 0.52,
+   "young": "cygnet",
+   "description": "genus of birds",
+   "hook": "is the largest waterfowl, an elegant long-necked bird that often mates for life",
+   "known": 0.6,
+   "kind": "bird"
+  },
+  {
+   "label": "Sea turtle",
+   "qid": "Q219329",
+   "fame": 0.495,
+   "young": "hatchling",
+   "description": "superfamily of shelled marine reptiles",
+   "hook": "is a marine reptile with a shell and flippers, including the green, hawksbill and leatherback kinds",
+   "known": 0.6,
+   "kind": "reptile"
+  }
+ ]
+}

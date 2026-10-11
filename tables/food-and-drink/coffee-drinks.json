@@ -1,0 +1,180 @@
+{
+ "id": "table.food-and-drink.coffee-drinks",
+ "kind": "table",
+ "title": "Coffee drinks and what is in them",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "coffee-and-tea",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?contents WHERE { VALUES (?item ?itemLabel ?contents) { (wd:Q159774 \"Cappuccino\" \"Espresso, steamed milk and milk foam\") (wd:Q841774 \"Latte\" \"Espresso and steamed milk\") (wd:Q180289 \"Espresso\" \"Finely ground beans and hot water forced through under pressure\") (wd:Q1152551 \"Americano\" \"Espresso topped up with hot water\") (wd:Q739929 \"Mocha\" \"Espresso, steamed milk and chocolate\") (wd:Q731543 \"Macchiato\" \"Espresso marked with a spoonful of milk foam\") (wd:Q62449 \"Flat white\" \"Espresso and silky steamed milk\") (wd:Q622954 \"Irish coffee\" \"Hot coffee, Irish whiskey, sugar and cream\") (wd:Q59072 \"Cortado\" \"Espresso cut with about the same amount of warm milk\") (wd:Q766148 \"Frappuccino\" \"Blended coffee, milk and ice\") (wd:Q43022 \"Turkish coffee\" \"Powder-fine grounds simmered in water\") (wd:Q5142444 \"Cold brew\" \"Coarse grounds steeped in cold water for many hours\") (wd:Q968554 \"Iced coffee\" \"Chilled coffee served over ice\") (wd:Q259109 \"Café au lait\" \"Strong brewed coffee and hot milk\") (wd:Q59048 \"Lungo\" \"Espresso pulled long with extra water\") (wd:Q59047 \"Ristretto\" \"Espresso pulled short with less water\") (wd:Q19904106 \"Espresso martini\" \"Vodka, coffee liqueur and fresh espresso\") (wd:Q2673042 \"Vietnamese iced coffee\" \"Dark drip brew and sweetened condensed milk\") (wd:Q5297347 \"Doppio\" \"Two shots of espresso\") (wd:Q22929 \"Latte macchiato\" \"Steamed milk marked with a shot of espresso\") (wd:Q70461 \"Wiener Melange\" \"Espresso and steamed milk topped with milk foam\") (wd:Q750291 \"Greek frappé\" \"Instant coffee, water and sugar shaken into foam\") (wd:Q1061720 \"Café con leche\" \"Strong coffee and scalded milk\") (wd:Q858049 \"Instant coffee\" \"Dried coffee that dissolves in hot water\") (wd:Q1155703 \"Drip coffee\" \"Hot water dripped slowly through ground beans\") (wd:Q59059 \"Affogato\" \"Vanilla ice cream or gelato drowned in hot espresso\") (wd:Q18345746 \"Pumpkin spice latte\" \"Espresso, steamed milk and pumpkin-spice syrup\") (wd:Q89638559 \"Dalgona coffee\" \"Whipped instant coffee, sugar and water over milk\") (wd:Q19892389 \"Egg coffee\" \"Egg yolk whisked with sugar and condensed milk over coffee\") (wd:Q25620 \"Carajillo\" \"Hot coffee spiked with a splash of liqueur\") (wd:Q4243624 \"Cuban espresso\" \"Espresso whipped with sugar into a sweet foam\") } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T10:14:38.114Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T12:25:00.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "contents",
+   "label": "What is in it",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "coffee drink",
+  "many": "coffee drinks",
+  "capitalise": true,
+  "hookAsk": "Which coffee drink {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "contents": {
+    "role": "code",
+    "pick": "What goes into {label}?",
+    "statement": "{label} is made like this: {value}.",
+    "match": "Match each coffee drink to what goes into it.",
+    "reverse": "Which coffee drink is made like this: {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Espresso",
+   "qid": "Q180289",
+   "fame": 0.537,
+   "contents": "Finely ground beans and hot water forced through under pressure",
+   "kind": "coffee-drink",
+   "description": "strong type of coffee made using hot water under pressure",
+   "hook": "is the small, intense shot that forms the base of most café menu drinks",
+   "known": 0.95
+  },
+  {
+   "label": "Mocha",
+   "qid": "Q739929",
+   "fame": 0.525,
+   "contents": "Espresso, steamed milk and chocolate",
+   "kind": "coffee-drink",
+   "description": "chocolate-flavored variant of a caffè latte",
+   "hook": "takes its name from a Yemeni port city that was central to the early bean trade",
+   "known": 0.8
+  },
+  {
+   "label": "Cortado",
+   "qid": "Q59072",
+   "fame": 0.517,
+   "contents": "Espresso cut with about the same amount of warm milk",
+   "kind": "coffee-drink",
+   "description": "beverage consisting of espresso mixed with a roughly equal amount of warm milk to reduce the acidity",
+   "hook": "has a Spanish name meaning \"cut\", since its strong base is softened with a little dairy",
+   "known": 0.4
+  },
+  {
+   "label": "Affogato",
+   "qid": "Q59059",
+   "fame": 0.512,
+   "contents": "Vanilla ice cream or gelato drowned in hot espresso",
+   "kind": "coffee-drink",
+   "description": "Italian coffee-based dessert",
+   "hook": "is an Italian dessert made by pouring a fresh shot over a frozen scoop",
+   "known": 0.4
+  },
+  {
+   "label": "Americano",
+   "qid": "Q1152551",
+   "fame": 0.512,
+   "contents": "Espresso topped up with hot water",
+   "kind": "coffee-drink",
+   "description": "type of coffee drink prepared by diluting an espresso with hot water, giving it a similar strength to, but different flavor from, traditionally brewed coffee",
+   "hook": "is a shot stretched into a long, lighter black drink",
+   "known": 0.95
+  },
+  {
+   "label": "Cappuccino",
+   "qid": "Q159774",
+   "fame": 0.511,
+   "contents": "Espresso, steamed milk and milk foam",
+   "kind": "coffee-drink",
+   "description": "coffee drink",
+   "hook": "is named for the color of the robes worn by a religious order of friars",
+   "known": 0.95
+  },
+  {
+   "label": "Flat white",
+   "qid": "Q62449",
+   "fame": 0.506,
+   "contents": "Espresso and silky steamed milk",
+   "kind": "coffee-drink",
+   "description": "espresso-based coffee beverage",
+   "hook": "is a drink that both Australia and New Zealand claim to have invented",
+   "known": 0.6
+  },
+  {
+   "label": "Latte",
+   "qid": "Q841774",
+   "fame": 0.488,
+   "contents": "Espresso and steamed milk",
+   "kind": "coffee-drink",
+   "description": "coffee drink",
+   "hook": "is the mellow Italian café order traditionally served in a tall glass",
+   "known": 0.95
+  },
+  {
+   "label": "Pumpkin spice latte",
+   "qid": "Q18345746",
+   "fame": 0.475,
+   "contents": "Espresso, steamed milk and pumpkin-spice syrup",
+   "kind": "coffee-drink",
+   "description": "autumnal coffee drink",
+   "hook": "is the fall seasonal favorite launched by Starbucks and widely imitated since",
+   "known": 0.6
+  },
+  {
+   "label": "Cold brew",
+   "qid": "Q5142444",
+   "fame": 0.464,
+   "contents": "Coarse grounds steeped in cold water for many hours",
+   "kind": "coffee-drink",
+   "description": "method of brewing coffee",
+   "hook": "is made by soaking beans for half a day or more instead of using heat",
+   "known": 0.6
+  },
+  {
+   "label": "Turkish coffee",
+   "qid": "Q43022",
+   "fame": 0.454,
+   "contents": "Powder-fine grounds simmered in water",
+   "kind": "coffee-drink",
+   "description": "coffee brewing method originating from Turkey",
+   "hook": "is prepared unfiltered in a small long-handled pot called a cezve",
+   "known": 0.4
+  },
+  {
+   "label": "Ristretto",
+   "qid": "Q59047",
+   "fame": 0.45,
+   "contents": "Espresso pulled short with less water",
+   "kind": "coffee-drink",
+   "description": "coffee",
+   "hook": null,
+   "known": 0.2
+  }
+ ]
+}

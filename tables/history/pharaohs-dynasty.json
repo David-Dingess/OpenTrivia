@@ -1,0 +1,261 @@
+{
+ "id": "table.history.pharaohs-dynasty",
+ "kind": "table",
+ "title": "Pharaohs of Egypt and their dynasty",
+ "genre": "society",
+ "category": "history",
+ "topic": "archaeology",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?dynastyLabel WHERE { { SELECT ?item (SAMPLE(?d) AS ?dynasty) (COUNT(DISTINCT ?d) AS ?n) WHERE { ?item wdt:P39 wd:Q37110 ; wdt:P53 ?d . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?n = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T21:57:42.408Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T21:57:42.408Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "dynasty",
+   "label": "Dynasty",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "ancient ruler",
+  "many": "ancient rulers",
+  "wildcard": "person",
+  "hookAsk": "Which ancient ruler {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "dynasty": {
+    "role": "link",
+    "pick": "Which dynasty did {label} belong to?",
+    "statement": "{label} belonged to the {value}.",
+    "match": "Match each ruler to their dynasty.",
+    "odd": "Three of these belonged to the {value}. Which one didn't?",
+    "all": "Tap all {n} rulers of the {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Cleopatra",
+   "qid": "Q635",
+   "fame": 0.791,
+   "dynasty": "Ptolemaic dynasty",
+   "description": "Queen of Ptolemaic Kingdom of Egypt from 51 to 30 BCE",
+   "hook": "allied with Julius Caesar and Mark Antony, and is said to have died from a snake bite",
+   "known": 0.8,
+   "kind": "ptolemaic ruler"
+  },
+  {
+   "label": "Alexander the Great",
+   "qid": "Q8409",
+   "fame": 0.76,
+   "dynasty": "Argead dynasty",
+   "description": "king of Macedonia and conqueror of Achaemenid Persia (356–323 BC)",
+   "hook": "conquered a vast empire stretching to India and died young in Babylon",
+   "known": 0.95,
+   "kind": "macedonian conqueror"
+  },
+  {
+   "label": "Tutankhamun",
+   "qid": "Q12154",
+   "fame": 0.667,
+   "dynasty": "Eighteenth Dynasty of Egypt",
+   "description": "14th century BCE (18th dynasty) Egyptian pharaoh",
+   "hook": "was a boy king whose nearly intact tomb was found by Howard Carter, full of golden treasure",
+   "known": 0.8,
+   "kind": "egyptian pharaoh"
+  },
+  {
+   "label": "Ramesses II",
+   "qid": "Q1523",
+   "fame": 0.644,
+   "dynasty": "Nineteenth Dynasty of Egypt",
+   "description": "Egyptian third pharaoh of the Nineteenth Dynasty",
+   "hook": "ruled for over sixty years, fought the Hittites at Kadesh and built the temples of Abu Simbel",
+   "known": 0.6,
+   "kind": "egyptian pharaoh"
+  },
+  {
+   "label": "Xerxes I",
+   "qid": "Q129165",
+   "fame": 0.619,
+   "dynasty": "Achaemenid dynasty",
+   "description": "fifth Achaemenid emperor (486–465 BC)",
+   "hook": "led a huge Persian invasion of Greece and was defeated at the naval battle of Salamis",
+   "known": 0.4,
+   "kind": "achaemenid king"
+  },
+  {
+   "label": "Akhenaten",
+   "qid": "Q81794",
+   "fame": 0.599,
+   "dynasty": "Eighteenth Dynasty of Egypt",
+   "description": "Egyptian pharaoh in 18th Dynasty",
+   "hook": "abandoned the old gods to worship a single sun disk and moved the capital to a new city",
+   "known": 0.4,
+   "kind": "egyptian pharaoh"
+  },
+  {
+   "label": "Nefertiti",
+   "qid": "Q40930",
+   "fame": 0.593,
+   "dynasty": "Eighteenth Dynasty of Egypt",
+   "description": "Egyptian queen and Great Royal Wife (chief consort) of Akhenaten, an Egyptian Pharaoh",
+   "hook": "is remembered for a famous painted limestone bust displayed in a Berlin museum",
+   "known": 0.6,
+   "kind": "egyptian pharaoh"
+  },
+  {
+   "label": "Caesarion",
+   "qid": "Q39589",
+   "fame": 0.574,
+   "dynasty": "Ptolemaic dynasty",
+   "description": "last pharaoh of Ptolemaic Egypt from 44 to 30 BC",
+   "hook": "was the young son of Julius Caesar and a famous queen and was the last of the pharaohs",
+   "known": 0.2,
+   "kind": "ptolemaic ruler"
+  },
+  {
+   "label": "Darius I",
+   "qid": "Q44387",
+   "fame": 0.573,
+   "dynasty": "Achaemenid dynasty",
+   "description": "The fourth and greatest Achaemenid emperor (522–486 BC)",
+   "hook": "expanded the Persian Empire, built Persepolis and sent an army that lost at Marathon",
+   "known": 0.4,
+   "kind": "achaemenid king"
+  },
+  {
+   "label": "Hatshepsut",
+   "qid": "Q129234",
+   "fame": 0.562,
+   "dynasty": "Eighteenth Dynasty of Egypt",
+   "description": "5th Pharaoh of the Eighteenth Dynasty of Egypt (c. 1479 BC - 1458 BC)",
+   "hook": "was a woman who ruled as pharaoh, often shown wearing a false beard",
+   "known": 0.4,
+   "kind": "egyptian pharaoh"
+  },
+  {
+   "label": "Ptolemy I Soter",
+   "qid": "Q168261",
+   "fame": 0.533,
+   "dynasty": "Ptolemaic dynasty",
+   "description": "Macedonian general, ruler of Egypt",
+   "hook": "was a general under Alexander the Great who seized the Nile kingdom and founded a long royal line",
+   "known": 0.2,
+   "kind": "ptolemaic ruler"
+  },
+  {
+   "label": "Narmer",
+   "qid": "Q189582",
+   "fame": 0.514,
+   "dynasty": "First Dynasty of Egypt",
+   "description": "ancient Egyptian pharaoh of the Early Dynastic Period",
+   "hook": "is traditionally credited with uniting Upper and Lower lands under one crown",
+   "known": 0.05,
+   "kind": "egyptian pharaoh"
+  },
+  {
+   "label": "Khufu",
+   "qid": "Q161904",
+   "fame": 0.511,
+   "dynasty": "Fourth Dynasty of Egypt",
+   "description": "Fourth Dynasty ancient Egyptian pharaoh",
+   "hook": "built the Great Pyramid of Giza, the largest of the pyramids",
+   "known": 0.8,
+   "kind": "egyptian pharaoh"
+  },
+  {
+   "label": "Seti I",
+   "qid": "Q157918",
+   "fame": 0.508,
+   "dynasty": "Nineteenth Dynasty of Egypt",
+   "description": "second pharaoh of Ancient Egypt's 19th dynasty",
+   "hook": "built a magnificent tomb in the Valley of the Kings and was the father of Ramesses the Great",
+   "known": 0.2,
+   "kind": "egyptian pharaoh"
+  },
+  {
+   "label": "Thutmose III",
+   "qid": "Q157899",
+   "fame": 0.504,
+   "dynasty": "Eighteenth Dynasty of Egypt",
+   "description": "sixth Egyptian Pharaoh of the Eighteenth Dynasty",
+   "hook": "was a warrior pharaoh who won the Battle of Megiddo and is called the Napoleon of ancient times",
+   "known": 0.2,
+   "kind": "egyptian pharaoh"
+  },
+  {
+   "label": "Darius III",
+   "qid": "Q102865",
+   "fame": 0.496,
+   "dynasty": "Achaemenid dynasty",
+   "description": "last king of the Achaemenid Empire (r. 336–330 BC)",
+   "hook": "was the Persian king defeated by Alexander the Great at Gaugamela and Issus",
+   "known": 0.2,
+   "kind": "achaemenid king"
+  },
+  {
+   "label": "Amenhotep III",
+   "qid": "Q42606",
+   "fame": 0.487,
+   "dynasty": "Eighteenth Dynasty of Egypt",
+   "description": "ninth Pharaoh of the Eighteenth dynasty of Egypt",
+   "hook": "ruled at the peak of the kingdom's wealth and built the Colossi of Memnon",
+   "known": 0.2,
+   "kind": "egyptian pharaoh"
+  },
+  {
+   "label": "Ramesses I",
+   "qid": "Q1526",
+   "fame": 0.467,
+   "dynasty": "Nineteenth Dynasty of Egypt",
+   "description": "founding pharaoh of Ancient Egypt's Nineteenth Dynasty",
+   "hook": "founded a royal line but ruled for only about a year or two, leaving his son to build the glory",
+   "known": 0.05,
+   "kind": "egyptian pharaoh"
+  },
+  {
+   "label": "Ramesses III",
+   "qid": "Q1528",
+   "fame": 0.466,
+   "dynasty": "Twentieth Dynasty of Egypt",
+   "description": "Egyptian pharaoh of the 20th dynasty",
+   "hook": "was the last great warrior pharaoh, who repelled the Sea Peoples and survived a harem conspiracy",
+   "known": 0.2,
+   "kind": "egyptian pharaoh"
+  },
+  {
+   "label": "Cambyses II",
+   "qid": "Q182483",
+   "fame": 0.454,
+   "dynasty": "Achaemenid dynasty",
+   "description": "The second Achaemenid emperor (530–522 BC)",
+   "hook": "led the Persian conquest of the Nile kingdom and was the son of Cyrus the Great",
+   "known": 0.05,
+   "kind": "achaemenid king"
+  }
+ ]
+}

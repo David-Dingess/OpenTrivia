@@ -1,0 +1,178 @@
+{
+ "id": "table.biology.bones",
+ "kind": "table",
+ "title": "Bones and where they are in the body",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "human-body",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?region WHERE { VALUES (?item ?region) { (wd:Q13147 \"Head\") (wd:Q2576226 \"Chest\") (wd:Q713102 \"Hips\") (wd:Q1057892 \"Hand\") (wd:Q16295 \"Skull\") (wd:Q16298 \"Skull\") (wd:Q16317 \"Skull\") (wd:Q16313 \"Skull\") (wd:Q16321 \"Skull\") (wd:Q16331 \"Skull\") (wd:Q16370 \"Face\") (wd:Q182895 \"Face\") (wd:Q186102 \"Face\") (wd:Q38155 \"Face\") (wd:Q212721 \"Face\") (wd:Q193527 \"Face\") (wd:Q237632 \"Face\") (wd:Q319636 \"Ear\") (wd:Q497385 \"Ear\") (wd:Q499897 \"Ear\") (wd:Q16332 \"Neck\") (wd:Q233316 \"Spine\") (wd:Q193176 \"Spine\") (wd:Q655357 \"Spine\") (wd:Q792567 \"Spine\") (wd:Q900457 \"Spine\") (wd:Q578786 \"Spine\") (wd:Q405478 \"Spine\") (wd:Q180323 \"Spine\") (wd:Q196672 \"Chest\") (wd:Q8481 \"Chest\") (wd:Q16343 \"Shoulder\") (wd:Q16336 \"Shoulder\") (wd:Q162595 \"Arm\") (wd:Q178492 \"Arm\") (wd:Q199507 \"Arm\") (wd:Q232377 \"Wrist\") (wd:Q13141 \"Wrist\") (wd:Q13143 \"Wrist\") (wd:Q691942 \"Wrist\") (wd:Q54393 \"Wrist\") (wd:Q752369 \"Wrist\") (wd:Q847084 \"Wrist\") (wd:Q278417 \"Wrist\") (wd:Q265617 \"Wrist\") (wd:Q237229 \"Hand\") (wd:Q3356933 \"Pelvis\") (wd:Q728889 \"Pelvis\") (wd:Q531029 \"Pelvis\") (wd:Q176503 \"Leg\") (wd:Q178366 \"Leg\") (wd:Q302896 \"Leg\") (wd:Q229081 \"Leg\") (wd:Q1059724 \"Foot\") (wd:Q320524 \"Foot\") (wd:Q13100 \"Foot\") (wd:Q13075 \"Foot\") (wd:Q958194 \"Foot\") (wd:Q658424 \"Foot\") (wd:Q1422057 \"Foot\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T18:26:00.435Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T18:26:00.435Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "region",
+   "label": "Part of the body",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "bone",
+  "many": "bones",
+  "columns": {
+   "region": {
+    "role": "link",
+    "pick": "In which part of the body would you find the {label}?",
+    "statement": "The {label} is found in the {value}.",
+    "match": "Match each bone to the part of the body it is in.",
+    "odd": "Three of these bones are in the {value}. Which one is not?",
+    "reverse": "Which of these bones is found in the {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "clavicle",
+   "qid": "Q16343",
+   "fame": 0.51,
+   "region": "Shoulder",
+   "description": "plain bone of short length that serves as a strut between the scapula and the sternum",
+   "hook": "is the only long bone in the body that lies sideways, named for a Latin word for a little key",
+   "known": 0.6,
+   "kind": "shoulder bone"
+  },
+  {
+   "label": "coccyx",
+   "qid": "Q193176",
+   "fame": 0.508,
+   "region": "Spine",
+   "description": "bone of the pelvis",
+   "hook": "is the leftover of a tail from our distant ancestors, nicknamed the tailbone",
+   "known": 0.6,
+   "kind": "spine bone"
+  },
+  {
+   "label": "sternum",
+   "qid": "Q8481",
+   "fame": 0.505,
+   "region": "Chest",
+   "description": "flat bone in the middle front part of the rib cage",
+   "hook": "is the necktie-shaped breastbone that helps protect the heart and lungs",
+   "known": 0.8,
+   "kind": "chest bone"
+  },
+  {
+   "label": "scapula",
+   "qid": "Q16336",
+   "fame": 0.486,
+   "region": "Shoulder",
+   "description": "bone that connects the humerus (upper arm bone) with the clavicle (collar bone)",
+   "hook": "is named for a small shovel it was thought to resemble",
+   "known": 0.6,
+   "kind": "shoulder bone"
+  },
+  {
+   "label": "fibula",
+   "qid": "Q302896",
+   "fame": 0.481,
+   "region": "Leg",
+   "description": "leg bone next to the tibia",
+   "hook": "is the slender calf bone, thinnest of the long bones for its length",
+   "known": 0.4,
+   "kind": "leg bone"
+  },
+  {
+   "label": "pelvis",
+   "qid": "Q713102",
+   "fame": 0.48,
+   "region": "Hips",
+   "description": "lower part of the trunk of the human body between the abdomen and the thighs (sometimes also called pelvic region of the trunk",
+   "hook": "is the basin-shaped ring of hip bones that a baby passes through at birth",
+   "known": 0.8,
+   "kind": "hip bone"
+  },
+  {
+   "label": "femur",
+   "qid": "Q176503",
+   "fame": 0.463,
+   "region": "Leg",
+   "description": "femur bone",
+   "hook": "is the thigh bone, the largest and thickest bone in the human body",
+   "known": 0.8,
+   "kind": "leg bone"
+  },
+  {
+   "label": "tibia",
+   "qid": "Q178366",
+   "fame": 0.459,
+   "region": "Leg",
+   "description": "long bone of the lower leg",
+   "hook": "is the shinbone, the larger of the two bones below the knee",
+   "known": 0.6,
+   "kind": "leg bone"
+  },
+  {
+   "label": "vertebra",
+   "qid": "Q180323",
+   "fame": 0.457,
+   "region": "Spine",
+   "description": "bone in the spinal column",
+   "hook": "is one of the stacked bones that make up the backbone",
+   "known": 0.8,
+   "kind": "spine bone"
+  },
+  {
+   "label": "sacrum",
+   "qid": "Q233316",
+   "fame": 0.456,
+   "region": "Spine",
+   "description": "triangular-shaped bone at the bottom of the spine",
+   "hook": "is a triangular bone formed by five fused vertebrae at the base of the backbone",
+   "known": 0.4,
+   "kind": "spine bone"
+  },
+  {
+   "label": "skull",
+   "qid": "Q13147",
+   "fame": 0.456,
+   "region": "Head",
+   "description": "bony or cartilaginous structure that forms the skeleton of head in vertebrates",
+   "hook": "is the bony enclosure that protects the brain",
+   "known": 0.95,
+   "kind": "head bone"
+  },
+  {
+   "label": "hyoid bone",
+   "qid": "Q16332",
+   "fame": 0.452,
+   "region": "Neck",
+   "description": "horseshoe-shaped bone situated in the anterior midline of the neck between the chin and the thyroid cartilage",
+   "hook": null,
+   "known": 0.05,
+   "kind": "neck bone"
+  }
+ ]
+}

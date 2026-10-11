@@ -1,0 +1,538 @@
+{
+ "id": "table.film-and-tv.highest-grossing-films",
+ "kind": "table",
+ "title": "Highest-grossing films (worldwide, USD 1bn+)",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "box-office",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?gross ?released WHERE { { SELECT ?item (MAX(?amt) AS ?gross) (MIN(?pd) AS ?released) WHERE { ?item wdt:P31 wd:Q11424 ; p:P2142 ?st . ?st psv:P2142 ?v . ?v wikibase:quantityAmount ?amt ; wikibase:quantityUnit wd:Q4917 . FILTER(?amt >= 1000000000) OPTIONAL { ?item wdt:P577 ?pd } } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-22T21:54:56.928Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-22T21:54:56.928Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "gross_musd",
+   "label": "Worldwide box office",
+   "unit": "million USD",
+   "type": "number"
+  },
+  {
+   "key": "released",
+   "label": "Released",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "kind",
+   "label": "Film type",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "film",
+  "many": "films",
+  "exclude": [
+   {
+    "qid": "Q116677364",
+    "why": "a film about Michael Jackson (blocklisted, David 2026-09-26)"
+   }
+  ],
+  "itemSub": "{hook}",
+  "hookAsk": "Which blockbuster {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "released": {
+    "role": "date",
+    "sort": "from the earliest release to the most recent",
+    "shot": "In what year did {label} come out in cinemas?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Avengers: Endgame",
+   "qid": "Q23781155",
+   "fame": 0.801,
+   "gross_musd": 2798,
+   "released": 2019,
+   "kind": "live-action",
+   "description": "2019 film directed by Anthony and Joe Russo",
+   "hook": "follows a team of superheroes traveling through time to undo a villain's universe-halving snap",
+   "known": 0.8
+  },
+  {
+   "label": "Spider-Man: No Way Home",
+   "qid": "Q68934496",
+   "fame": 0.777,
+   "gross_musd": 1922,
+   "released": 2021,
+   "kind": "live-action",
+   "description": "2021 film directed by Jon Watts",
+   "hook": "follows a teenage hero whose identity gets exposed, leading to a team-up with variants of himself and his foes",
+   "known": 0.8
+  },
+  {
+   "label": "Deadpool & Wolverine",
+   "qid": "Q102180106",
+   "fame": 0.738,
+   "gross_musd": 1338,
+   "released": 2024,
+   "kind": "live-action",
+   "description": "2024 Marvel Studios film by Shawn Levy",
+   "hook": "follows a wisecracking mercenary teaming with a clawed mutant to save his own timeline from erasure",
+   "known": 0.8
+  },
+  {
+   "label": "Titanic",
+   "qid": "Q44578",
+   "fame": 0.728,
+   "gross_musd": 1850,
+   "released": 1997,
+   "kind": "live-action",
+   "description": "1997 film directed by James Cameron",
+   "hook": "follows two star-crossed lovers from different classes aboard a doomed ocean liner's first and only voyage",
+   "known": 0.95
+  },
+  {
+   "label": "The Dark Knight (2008)",
+   "qid": "Q163872",
+   "fame": 0.727,
+   "gross_musd": 1006,
+   "released": 2008,
+   "kind": "live-action",
+   "description": "2008 film directed by Christopher Nolan",
+   "hook": "follows a vigilante crimefighter facing a chaos-loving mastermind who pushes a city to its moral limits",
+   "known": 0.8
+  },
+  {
+   "label": "Avatar",
+   "qid": "Q24871",
+   "fame": 0.718,
+   "gross_musd": 2847,
+   "released": 2009,
+   "kind": "live-action",
+   "description": "2009 film directed by James Cameron",
+   "hook": "follows a paralyzed marine who inhabits an alien body to infiltrate a native tribe and fights for their world",
+   "known": 0.8
+  },
+  {
+   "label": "The Dark Knight Rises (2012)",
+   "qid": "Q189330",
+   "fame": 0.717,
+   "gross_musd": 1081,
+   "released": 2012,
+   "kind": "live-action",
+   "description": "2012 superhero film by Christopher Nolan",
+   "hook": "follows a retired vigilante lured back into action against a masked mercenary threatening to level his city",
+   "known": 0.6
+  },
+  {
+   "label": "Spider-Man: Far From Home",
+   "qid": "Q27985819",
+   "fame": 0.716,
+   "gross_musd": 1132,
+   "released": 2019,
+   "kind": "live-action",
+   "description": "2019 film directed by Jon Watts",
+   "hook": "follows a teen hero pressured into a global tour to stop threats guided by a mysterious illusionist",
+   "known": 0.6
+  },
+  {
+   "label": "Avengers: Infinity War",
+   "qid": "Q23780914",
+   "fame": 0.71,
+   "gross_musd": 2048,
+   "released": 2018,
+   "kind": "live-action",
+   "description": "2018 film by Anthony Russo and Joe Russo",
+   "hook": "follows a team of superheroes uniting to stop a powerful being from erasing half of all life",
+   "known": 0.8
+  },
+  {
+   "label": "The Avengers",
+   "qid": "Q182218",
+   "fame": 0.706,
+   "gross_musd": 1519,
+   "released": 2012,
+   "kind": "live-action",
+   "description": "2012 film directed by Joss Whedon",
+   "hook": "follows a newly assembled superhero team who set aside egos to repel an alien invasion of a major city",
+   "known": 0.8
+  },
+  {
+   "label": "Captain America: Civil War",
+   "qid": "Q18407657",
+   "fame": 0.704,
+   "gross_musd": 1153,
+   "released": 2016,
+   "kind": "live-action",
+   "description": "2016 film by Anthony and Joe Russo",
+   "hook": "follows a superhero team splitting into rival factions over government oversight of their powers",
+   "known": 0.6
+  },
+  {
+   "label": "Avengers: Age of Ultron",
+   "qid": "Q14171368",
+   "fame": 0.693,
+   "gross_musd": 1403,
+   "released": 2015,
+   "kind": "live-action",
+   "description": "2015 film directed by Joss Whedon",
+   "hook": "follows a superhero team battling a rogue AI they built that wants to wipe out humanity",
+   "known": 0.6
+  },
+  {
+   "label": "Jurassic Park",
+   "qid": "Q167726",
+   "fame": 0.691,
+   "gross_musd": 1030,
+   "released": 1993,
+   "kind": "live-action",
+   "description": "1993 film by Steven Spielberg",
+   "hook": "follows scientists and visitors trying to survive after cloned dinosaurs break loose on an island attraction",
+   "known": 0.8
+  },
+  {
+   "label": "Black Panther",
+   "qid": "Q23780734",
+   "fame": 0.687,
+   "gross_musd": 1348,
+   "released": 2018,
+   "kind": "live-action",
+   "description": "2018 film directed by Ryan Coogler",
+   "hook": "follows a newly crowned African king defending his hidden, advanced homeland from a vengeful challenger",
+   "known": 0.8
+  },
+  {
+   "label": "Avatar: The Way of Water",
+   "qid": "Q3604746",
+   "fame": 0.68,
+   "gross_musd": 2176,
+   "released": 2022,
+   "kind": "live-action",
+   "description": "2022 film by James Cameron",
+   "hook": "follows an alien-bonded family fleeing to ocean clans to protect their children from returning human forces",
+   "known": 0.8
+  },
+  {
+   "label": "Star Wars: Episode VII – The Force Awakens",
+   "qid": "Q6074",
+   "fame": 0.677,
+   "gross_musd": 2068,
+   "released": 2015,
+   "kind": "live-action",
+   "description": "2015 film directed by J.J. Abrams",
+   "hook": "follows a scavenger who discovers she's strong with a mystical energy field as a legendary knight goes missing",
+   "known": 0.95
+  },
+  {
+   "label": "Captain Marvel",
+   "qid": "Q23781129",
+   "fame": 0.674,
+   "gross_musd": 1128,
+   "released": 2019,
+   "kind": "live-action",
+   "description": "2019 film directed by Anna Boden and Ryan Fleck",
+   "hook": "follows an amnesiac fighter pilot who discovers cosmic powers and her forgotten past on Earth",
+   "known": 0.6
+  },
+  {
+   "label": "Jurassic World (2015)",
+   "qid": "Q3512046",
+   "fame": 0.665,
+   "gross_musd": 1670,
+   "released": 2015,
+   "kind": "live-action",
+   "description": "2015 film directed by Colin Trevorrow",
+   "hook": "follows park staff battling an engineered super-predator that escapes its pen at a dinosaur attraction",
+   "known": 0.8
+  },
+  {
+   "label": "Jurassic World Dominion (2022)",
+   "qid": "Q55178974",
+   "fame": 0.663,
+   "gross_musd": 1002,
+   "released": 2022,
+   "kind": "live-action",
+   "description": "2022 American film directed by Colin Trevorrow",
+   "hook": "follows former park survivors reuniting as dinosaurs now roam freely alongside humans across the globe",
+   "known": 0.6
+  },
+  {
+   "label": "Barbie",
+   "qid": "Q55436290",
+   "fame": 0.661,
+   "gross_musd": 1345,
+   "released": 2023,
+   "kind": "live-action",
+   "description": "2023 film directed by Greta Gerwig",
+   "hook": "follows a plastic doll who leaves her pink utopia for the real world after an existential crisis",
+   "known": 0.8
+  },
+  {
+   "label": "Iron Man 3",
+   "qid": "Q209538",
+   "fame": 0.66,
+   "gross_musd": 1215,
+   "released": 2013,
+   "kind": "live-action",
+   "description": "2013 film directed by Shane Black",
+   "hook": "follows a billionaire armored hero confronting a terrorist mastermind while stripped of his usual arsenal",
+   "known": 0.6
+  },
+  {
+   "label": "Furious 7",
+   "qid": "Q14650496",
+   "fame": 0.653,
+   "gross_musd": 1515,
+   "released": 2015,
+   "kind": "live-action",
+   "description": "2015 film directed by James Wan",
+   "hook": "follows street racers seeking revenge against an assassin targeting their family after a prior mission",
+   "known": 0.6
+  },
+  {
+   "label": "Transformers: Age of Extinction",
+   "qid": "Q6151665",
+   "fame": 0.652,
+   "gross_musd": 1104,
+   "released": 2014,
+   "kind": "live-action",
+   "description": "2014 science fiction film directed by Michael Bay",
+   "hook": "follows a father who finds a hidden alien robot and is swept into a war of shape-shifting machines and hunters",
+   "known": 0.6
+  },
+  {
+   "label": "Joker",
+   "qid": "Q42759035",
+   "fame": 0.648,
+   "gross_musd": 1074,
+   "released": 2019,
+   "kind": "live-action",
+   "description": "2019 musical film directed by Todd Phillips",
+   "hook": "follows a struggling failed comedian whose descent into violence turns him into a symbol of chaos",
+   "known": 0.6
+  },
+  {
+   "label": "Transformers: Dark of the Moon",
+   "qid": "Q232774",
+   "fame": 0.644,
+   "gross_musd": 1124,
+   "released": 2011,
+   "kind": "live-action",
+   "description": "2011 film directed by Michael Bay",
+   "hook": "follows a man drawn into a war between shape-shifting alien robots after a decades-old lunar secret surfaces",
+   "known": 0.6
+  },
+  {
+   "label": "Skyfall",
+   "qid": "Q4941",
+   "fame": 0.642,
+   "gross_musd": 1109,
+   "released": 2012,
+   "kind": "live-action",
+   "description": "2012 film by Sam Mendes",
+   "hook": "follows a battle-worn agent protecting his aging spymaster from a vengeful former operative with a grudge",
+   "known": 0.6
+  },
+  {
+   "label": "Aladdin",
+   "qid": "Q27188178",
+   "fame": 0.638,
+   "gross_musd": 1051,
+   "released": 2019,
+   "kind": "live-action",
+   "description": "2019 film directed by Guy Ritchie",
+   "hook": "follows a street thief who uses a wish-granting genie to pose as royalty and win a princess's heart",
+   "known": 0.6
+  },
+  {
+   "label": "Harry Potter and the Deathly Hallows – Part 2",
+   "qid": "Q232009",
+   "fame": 0.632,
+   "gross_musd": 1342,
+   "released": 2011,
+   "kind": "live-action",
+   "description": "2011 film directed by David Yates",
+   "hook": "follows a young wizard's final confrontation with the dark lord who murdered his parents",
+   "known": 0.8
+  },
+  {
+   "label": "The Lord of the Rings: The Return of the King",
+   "qid": "Q131074",
+   "fame": 0.628,
+   "gross_musd": 1149,
+   "released": 2003,
+   "kind": "live-action",
+   "description": "2003 film by Peter Jackson",
+   "hook": "follows armies converging on a dark kingdom while two small companions finish their quest to destroy an object",
+   "known": 0.8
+  },
+  {
+   "label": "Star Wars: Episode I – The Phantom Menace",
+   "qid": "Q165713",
+   "fame": 0.619,
+   "gross_musd": 1027,
+   "released": 1999,
+   "kind": "live-action",
+   "description": "1999 film directed by George Lucas",
+   "hook": "follows two knights guarding a young queen while finding a gifted enslaved boy who may fulfill an old prophecy",
+   "known": 0.6
+  },
+  {
+   "label": "The Fate of the Furious",
+   "qid": "Q19829521",
+   "fame": 0.617,
+   "gross_musd": 1236,
+   "released": 2017,
+   "kind": "live-action",
+   "description": "2017 film directed by F. Gary Gray",
+   "hook": "follows a street-racing crew forced against one of their own after he's blackmailed by a cyberterrorist",
+   "known": 0.6
+  },
+  {
+   "label": "Minions",
+   "qid": "Q13619743",
+   "fame": 0.616,
+   "gross_musd": 1159,
+   "released": 2015,
+   "kind": "animated",
+   "description": "2015 animated film by Pierre Coffin and Kyle Balda",
+   "hook": "follows small yellow henchmen searching through history for the most despicable master to serve",
+   "known": 0.8
+  },
+  {
+   "label": "Rogue One: A Star Wars Story",
+   "qid": "Q19590955",
+   "fame": 0.616,
+   "gross_musd": 1056,
+   "released": 2016,
+   "kind": "live-action",
+   "description": "2016 film directed by Gareth Edwards",
+   "hook": "follows rebels on a desperate mission to steal blueprints for a planet-destroying superweapon",
+   "known": 0.6
+  },
+  {
+   "label": "Jurassic World: Fallen Kingdom (2018)",
+   "qid": "Q21877685",
+   "fame": 0.615,
+   "gross_musd": 1310,
+   "released": 2018,
+   "kind": "live-action",
+   "description": "2018 5th Jurassic Park film directed by Juan Antonio Bayona",
+   "hook": "follows a rescue mission to save dinosaurs from an erupting island before they're auctioned as weapons",
+   "known": 0.6
+  },
+  {
+   "label": "The Lion King",
+   "qid": "Q27044293",
+   "fame": 0.614,
+   "gross_musd": 1655,
+   "released": 2019,
+   "kind": "animated",
+   "description": "2019 film directed by Jon Favreau",
+   "hook": "follows a young prince who flees after his father's death and must reclaim his throne from a treacherous uncle",
+   "known": 0.8
+  },
+  {
+   "label": "Pirates of the Caribbean: Dead Man's Chest",
+   "qid": "Q161087",
+   "fame": 0.611,
+   "gross_musd": 1066,
+   "released": 2006,
+   "kind": "live-action",
+   "description": "2006 film directed by Gore Verbinski",
+   "hook": "follows a cursed pirate captain racing to pay a debt to a tentacle-faced sea devil before time runs out",
+   "known": 0.6
+  },
+  {
+   "label": "Pirates of the Caribbean: On Stranger Tides",
+   "qid": "Q183555",
+   "fame": 0.611,
+   "gross_musd": 1046,
+   "released": 2011,
+   "kind": "live-action",
+   "description": "2011 film by Rob Marshall",
+   "hook": "follows a pirate captain seeking the fountain of youth while dodging a rival captain and mermaids",
+   "known": 0.6
+  },
+  {
+   "label": "Alice in Wonderland",
+   "qid": "Q174385",
+   "fame": 0.609,
+   "gross_musd": 1025,
+   "released": 2010,
+   "kind": "live-action",
+   "description": "2010 film directed by Tim Burton",
+   "hook": "follows a woman who returns as an adult to a fantastical realm to fulfill a prophecy and slay a fearsome beast",
+   "known": 0.6
+  },
+  {
+   "label": "Star Wars: Episode VIII – The Last Jedi",
+   "qid": "Q18486021",
+   "fame": 0.594,
+   "gross_musd": 1333,
+   "released": 2017,
+   "kind": "live-action",
+   "description": "2017 film directed by Rian Johnson",
+   "hook": "follows a scavenger seeking training from a reclusive warrior in exile while the resistance flees a fleet",
+   "known": 0.8
+  },
+  {
+   "label": "Beauty and the Beast",
+   "qid": "Q19946102",
+   "fame": 0.592,
+   "gross_musd": 1264,
+   "released": 2017,
+   "kind": "live-action",
+   "description": "2017 film directed by Bill Condon",
+   "hook": "follows a bookish woman who trades her freedom for her father's, and falls for the cursed creature holding her",
+   "known": 0.6
+  },
+  {
+   "label": "Lilo & Stitch",
+   "qid": "Q59395971",
+   "fame": 0.582,
+   "gross_musd": 1031,
+   "released": 2025,
+   "kind": "live-action",
+   "description": "2025 film directed by Dean Fleischer Camp",
+   "hook": "follows a lonely Hawaiian girl who adopts a destructive runaway alien experiment disguised as a dog",
+   "known": 0.6
+  },
+  {
+   "label": "The Hobbit: An Unexpected Journey",
+   "qid": "Q80379",
+   "fame": 0.56,
+   "gross_musd": 1017,
+   "released": 2012,
+   "kind": "live-action",
+   "description": "2012 film directed by Peter Jackson",
+   "hook": "follows a reluctant homebody who joins dwarves setting out to reclaim their mountain home from a dragon",
+   "known": 0.6
+  }
+ ]
+}

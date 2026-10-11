@@ -1,0 +1,228 @@
+{
+ "id": "table.food-and-drink.food-history",
+ "kind": "table",
+ "title": "Foods and drinks and who invented them",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "food-history",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?inventorLabel ?countryLabel ?invented WHERE { { SELECT ?item ?sitelinks (SAMPLE(?inv) AS ?inventor) (SAMPLE(?c) AS ?country) (GROUP_CONCAT(CONCAT(COALESCE(STR(?incT), \"\"), \"|\", COALESCE(STR(?incP), \"\")); separator=\";\") AS ?invented) WHERE { ?item wdt:P61 ?inv ; wdt:P31 ?directClass ; wikibase:sitelinks ?sitelinks . ?directClass wdt:P279* ?root . VALUES ?root { wd:Q2095 wd:Q40050 wd:Q746549 wd:Q844482 wd:Q10943 wd:Q5159627 } FILTER(?sitelinks > 6) OPTIONAL { ?item wdt:P495 ?c } OPTIONAL { ?item p:P571 ?incSt . ?incSt a wikibase:BestRank ; psv:P571 [ wikibase:timeValue ?incT ; wikibase:timePrecision ?incP ] . } } GROUP BY ?item ?sitelinks } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T02:44:38.176Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T02:44:38.176Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "inventor",
+   "label": "Invented by",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "country",
+   "label": "Country of origin",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "year_invented",
+   "label": "Year invented",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "food or drink",
+  "many": "foods and drinks",
+  "capitalise": true,
+  "columns": {
+   "inventor": {
+    "role": "code",
+    "pick": "Who invented {label}?",
+    "statement": "{label} was invented by {value}.",
+    "match": "Match each food or drink to who invented it.",
+    "reverse": "Which of these did {value} invent?"
+   },
+   "country": {
+    "role": "link",
+    "pick": "Which country does {label} come from?",
+    "statement": "{label} comes from {value}.",
+    "match": "Match each food or drink to the country it comes from.",
+    "odd": "Three of these come from {value}. Which one doesn't?",
+    "all": "Tap all {n} foods and drinks that come from {value}."
+   },
+   "year_invented": {
+    "role": "date",
+    "sort": "from the oldest to the newest",
+    "era": "Drop each food or drink into the era it was invented.",
+    "shot": "In what year was {label} first made? It {hook}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "umami",
+   "qid": "Q202637",
+   "fame": 0.569,
+   "inventor": "Kikunae Ikeda",
+   "country": null,
+   "year_invented": null,
+   "description": "one of the five basic tastes",
+   "hook": "is the savory fifth basic taste, found in mushrooms, tomatoes and aged cheese",
+   "known": 0.4,
+   "kind": "taste"
+  },
+  {
+   "label": "Vegemite",
+   "qid": "Q841470",
+   "fame": 0.564,
+   "inventor": "Cyril P. Callister",
+   "country": null,
+   "year_invented": 1922,
+   "description": "savoury food spread",
+   "hook": "is a dark, salty yeast-extract spread that people put thinly on buttered toast",
+   "known": 0.4,
+   "kind": "food"
+  },
+  {
+   "label": "vermouth",
+   "qid": "Q231088",
+   "fame": 0.544,
+   "inventor": "Antonio Benedetto Carpano",
+   "country": "Italy",
+   "year_invented": null,
+   "description": "alcoholic beverage, type of aromatized wine",
+   "hook": "is a fortified, herb-infused wine that is a key ingredient in Martinis and Manhattans",
+   "known": 0.4,
+   "kind": "ingredient"
+  },
+  {
+   "label": "Bloody Mary",
+   "qid": "Q207711",
+   "fame": 0.533,
+   "inventor": "Fernand Petiot",
+   "country": "France",
+   "year_invented": null,
+   "description": "cocktail containing vodka and tomato juice",
+   "hook": "is a brunch cocktail of vodka and tomato juice, often garnished with celery",
+   "known": 0.8,
+   "kind": "cocktail"
+  },
+  {
+   "label": "Mai Tai",
+   "qid": "Q280531",
+   "fame": 0.531,
+   "inventor": "Victor Jules Bergeron, Jr.",
+   "country": "United States",
+   "year_invented": null,
+   "description": "cocktail based on rum, Curaçao liqueur and lime juice",
+   "hook": "is a tiki cocktail of rum, orange liqueur and lime, served with a mint sprig",
+   "known": 0.4,
+   "kind": "cocktail"
+  },
+  {
+   "label": "takoyaki",
+   "qid": "Q905527",
+   "fame": 0.506,
+   "inventor": "Aidu-ya",
+   "country": "Japan",
+   "year_invented": null,
+   "description": "ball-shaped Japanese snack with octopus",
+   "hook": "is a street snack of wheat-batter balls with octopus, topped with sauce and bonito flakes",
+   "known": 0.4,
+   "kind": "food"
+  },
+  {
+   "label": "Angostura bitters",
+   "qid": "Q542594",
+   "fame": 0.498,
+   "inventor": "Johann Gottlieb Benjamin Siegert",
+   "country": "Venezuela",
+   "year_invented": 1824,
+   "description": "concentrated bitter made of water, alcohol, herbs and spices",
+   "hook": "is an aromatic dash-sized flavoring that gives Old Fashioneds and Manhattans their spice",
+   "known": 0.2,
+   "kind": "ingredient"
+  },
+  {
+   "label": "Waldorf salad",
+   "qid": "Q209464",
+   "fame": 0.492,
+   "inventor": "Oscar Tschirky",
+   "country": "United States",
+   "year_invented": 1893,
+   "description": "fruit and nut salad",
+   "hook": "combines chopped apples, celery, grapes and walnuts in mayonnaise, first served at a famous New York hotel",
+   "known": 0.4,
+   "kind": "food"
+  },
+  {
+   "label": "Daiquiri",
+   "qid": "Q917361",
+   "fame": 0.477,
+   "inventor": "Jennings Cox",
+   "country": "Cuba",
+   "year_invented": 1900,
+   "description": "family of cocktails with with rum, citrus and some sweetener",
+   "hook": "is a classic mix of white rum, lime juice and sugar, named after a mining town",
+   "known": 0.6,
+   "kind": "cocktail"
+  },
+  {
+   "label": "Vesper",
+   "qid": "Q590793",
+   "fame": 0.475,
+   "inventor": "Ian Fleming",
+   "country": null,
+   "year_invented": null,
+   "description": "cocktail originally made of gin, vodka, and Kina Lillet",
+   "hook": "is the shaken-not-stirred drink ordered by James Bond in Casino Royale",
+   "known": 0.2,
+   "kind": "cocktail"
+  },
+  {
+   "label": "Espresso martini",
+   "qid": "Q19904106",
+   "fame": 0.473,
+   "inventor": "Dick Bradsell",
+   "country": "England",
+   "year_invented": null,
+   "description": "coffee-flavored cocktail",
+   "hook": "is a vodka cocktail with coffee liqueur, created to wake a customer up",
+   "known": 0.6,
+   "kind": "cocktail"
+  },
+  {
+   "label": "Hawaiian pizza",
+   "qid": "Q590076",
+   "fame": 0.458,
+   "inventor": "Sam Panopoulos",
+   "country": "Canada",
+   "year_invented": 1962,
+   "description": "pizza variety, usually topped with pineapple pieces and ham",
+   "hook": "is topped with ham and pineapple, a sweet-and-savory combo that sparks endless debate",
+   "known": 0.8,
+   "kind": "food"
+  }
+ ]
+}

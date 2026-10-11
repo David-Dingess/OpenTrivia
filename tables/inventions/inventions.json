@@ -1,0 +1,381 @@
+{
+ "id": "table.inventions.inventions",
+ "kind": "table",
+ "title": "Inventions and their inventors",
+ "genre": "science-math-tech",
+ "category": "inventions",
+ "topic": "inventors",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?invLabel WHERE { { SELECT ?item (SAMPLE(?i) AS ?inv) (COUNT(DISTINCT ?i) AS ?nI) WHERE { VALUES ?item { wd:Q8777 wd:Q8811 wd:Q58148 wd:Q873501 wd:Q116434 wd:Q144334 wd:Q10693 wd:Q143 wd:Q174174 wd:Q80728 wd:Q858340 wd:Q7973 wd:Q186263 wd:Q1037810 wd:Q485257 wd:Q628007 wd:Q105525247 wd:Q7987 wd:Q11197 wd:Q9158 wd:Q180049 wd:Q9798 wd:Q47043 wd:Q1519099 wd:Q11420 wd:Q5372 wd:Q162339 wd:Q1136790 wd:Q11472 wd:Q1734 wd:Q5994 wd:Q101674 wd:Q207691 wd:Q17517 wd:Q127956 wd:Q202570 wd:Q840333 wd:Q44914 wd:Q39531 wd:Q181008 wd:Q171 wd:Q466 wd:Q79897 wd:Q11035 } ?item wdt:P61 ?i . ?i wdt:P31 wd:Q5 . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nI = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T00:51:13.892Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T00:51:13.892Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "inventor",
+   "label": "Inventor",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "invention",
+  "many": "inventions",
+  "capitalise": true,
+  "lowerInProse": true,
+  "hookAsk": "Which invention {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "inventor": {
+    "role": "code",
+    "pick": "Who invented {label}?",
+    "statement": "{label} was invented by {value}.",
+    "match": "Match each invention to its inventor.",
+    "reverse": "Which of these did {value} invent?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "wiki",
+   "qid": "Q171",
+   "fame": 0.798,
+   "inventor": "Ward Cunningham",
+   "description": "type of website that visitors can edit",
+   "hook": "lets any visitor edit and add to its pages collaboratively",
+   "known": 0.4,
+   "kind": "technology"
+  },
+  {
+   "label": "periodic table",
+   "qid": "Q10693",
+   "fame": 0.771,
+   "inventor": "Dmitri Mendeleev",
+   "description": "table systematically placing elements based on atomic number and recurrent properties",
+   "hook": "organizes every known chemical element by its atomic number and properties",
+   "known": 0.6,
+   "kind": "science"
+  },
+  {
+   "label": "email",
+   "qid": "Q9158",
+   "fame": 0.653,
+   "inventor": "Raymond Tomlinson",
+   "description": "electronic changing digital messages between a network",
+   "hook": "lets people send digital letters over a computer network instantly",
+   "known": 0.95,
+   "kind": "technology"
+  },
+  {
+   "label": "Hypertext Transfer Protocol",
+   "qid": "Q8777",
+   "fame": 0.634,
+   "inventor": "Tim Berners-Lee",
+   "description": "application-layer protocol for transferring web resources",
+   "hook": "is the set of rules your browser follows to fetch every web page you visit",
+   "known": 0.4,
+   "kind": "technology"
+  },
+  {
+   "label": "basketball",
+   "qid": "Q5372",
+   "fame": 0.63,
+   "inventor": "James Naismith",
+   "description": "team sport played on a court with baskets on either end",
+   "hook": "is a team sport where players hit a ball back and forth over a net without letting it touch the floor",
+   "known": 0.8,
+   "kind": "sport"
+  },
+  {
+   "label": "HTML",
+   "qid": "Q8811",
+   "fame": 0.626,
+   "inventor": "Tim Berners-Lee",
+   "description": "family of markup languages for displaying content in a web browser",
+   "hook": "is the markup language used to structure nearly every web page",
+   "known": 0.6,
+   "kind": "technology"
+  },
+  {
+   "label": "Esperanto",
+   "qid": "Q143",
+   "fame": 0.617,
+   "inventor": "L. L. Zamenhof",
+   "description": "international auxiliary language designed by L. L. Zamenhof",
+   "hook": "was designed to be an easy-to-learn universal second language for the whole world",
+   "known": 0.2,
+   "kind": "science"
+  },
+  {
+   "label": "Bluetooth",
+   "qid": "Q39531",
+   "fame": 0.602,
+   "inventor": "Jaap Haartsen",
+   "description": "short-distance wireless communication protocol",
+   "hook": "lets wireless earbuds, speakers and other gadgets connect over short distances",
+   "known": 0.8,
+   "kind": "technology"
+  },
+  {
+   "label": "volleyball",
+   "qid": "Q1734",
+   "fame": 0.594,
+   "inventor": "William G. Morgan",
+   "description": "team sport",
+   "hook": "was created as a gentler alternative team sport for players who found basketball too rough",
+   "known": 0.8,
+   "kind": "sport"
+  },
+  {
+   "label": "sudoku",
+   "qid": "Q44914",
+   "fame": 0.589,
+   "inventor": "Howard Garns",
+   "description": "logic-based number-placement puzzle",
+   "hook": "is a number-placement puzzle solved by filling a grid so no digit repeats in any row, column or box",
+   "known": 0.8,
+   "kind": "game"
+  },
+  {
+   "label": "mobile phone",
+   "qid": "Q17517",
+   "fame": 0.574,
+   "inventor": "Martin Cooper",
+   "description": "portable device to make telephone calls using a radio link",
+   "hook": "lets you make calls over a wireless radio connection instead of a wired line",
+   "known": 0.95,
+   "kind": "technology"
+  },
+  {
+   "label": "piano",
+   "qid": "Q5994",
+   "fame": 0.572,
+   "inventor": "Bartolomeo Cristofori",
+   "description": "musical keyboard instrument",
+   "hook": "produces sound when hammers strike strings after keys are pressed",
+   "known": 0.8,
+   "kind": "instrument"
+  },
+  {
+   "label": "printing press",
+   "qid": "Q144334",
+   "fame": 0.567,
+   "inventor": "Johannes Gutenberg",
+   "description": "device for evenly printing ink onto a print medium",
+   "hook": "used movable type to mass-produce books for the first time",
+   "known": 0.8,
+   "kind": "technology"
+  },
+  {
+   "label": "Rubik's Cube",
+   "qid": "Q47043",
+   "fame": 0.567,
+   "inventor": "Ernő Rubik",
+   "description": "3-D combination puzzle with many different permutations",
+   "hook": "is a twisting color-matching puzzle with billions of possible combinations to solve",
+   "known": 0.8,
+   "kind": "toy"
+  },
+  {
+   "label": "logarithm",
+   "qid": "Q11197",
+   "fame": 0.562,
+   "inventor": "John Napier",
+   "description": "inverse of the exponential function, which maps products to sums",
+   "hook": "turns multiplication problems into simple addition",
+   "known": 0.2,
+   "kind": "science"
+  },
+  {
+   "label": "judo",
+   "qid": "Q11420",
+   "fame": 0.542,
+   "inventor": "Kanō Jigorō",
+   "description": "modern martial art, combat and Olympic/Paralympic sport",
+   "hook": "is a martial art and Olympic sport built around throws and grappling holds",
+   "known": 0.6,
+   "kind": "sport"
+  },
+  {
+   "label": "theremin",
+   "qid": "Q207691",
+   "fame": 0.538,
+   "inventor": "Leon Theremin",
+   "description": "electronic music instrument",
+   "hook": "is played without ever touching it, by moving your hands near two antennas",
+   "known": 0.2,
+   "kind": "instrument"
+  },
+  {
+   "label": "phonograph",
+   "qid": "Q116434",
+   "fame": 0.533,
+   "inventor": "Thomas Edison",
+   "description": "device for the analogue recording and playback of sound",
+   "hook": "was the first device able to both record and play back sound",
+   "known": 0.4,
+   "kind": "technology"
+  },
+  {
+   "label": "diesel engine",
+   "qid": "Q174174",
+   "fame": 0.522,
+   "inventor": "Rudolf Diesel",
+   "description": "internal combustion engine with quality rotational frequency governing, internal mixture formation, lean air-fuel-ratio, diffusion flame and compression ignition",
+   "hook": "burns fuel using compression alone instead of a spark plug",
+   "known": 0.6,
+   "kind": "technology"
+  },
+  {
+   "label": "saxophone",
+   "qid": "Q9798",
+   "fame": 0.521,
+   "inventor": "Adolphe Sax",
+   "description": "single-reed woodwind instrument",
+   "hook": "is a curved brass-bodied woodwind instrument played with a single reed",
+   "known": 0.6,
+   "kind": "instrument"
+  },
+  {
+   "label": "microwave oven",
+   "qid": "Q127956",
+   "fame": 0.517,
+   "inventor": "Percy Spencer",
+   "description": "kitchen cooking appliance",
+   "hook": "cooks food quickly by exciting water molecules with electromagnetic waves",
+   "known": 0.95,
+   "kind": "device"
+  },
+  {
+   "label": "computer mouse",
+   "qid": "Q7987",
+   "fame": 0.506,
+   "inventor": "Douglas Engelbart",
+   "description": "hand-held device used to move a pointer on a computer display",
+   "hook": "moves an on-screen pointer as you slide it across a desk",
+   "known": 0.95,
+   "kind": "device"
+  },
+  {
+   "label": "dynamite",
+   "qid": "Q80728",
+   "fame": 0.506,
+   "inventor": "Alfred Nobel",
+   "description": "explosive preparation of stabilized nitroglycerin",
+   "hook": "stabilized a dangerously unstable explosive so it could be handled and transported safely",
+   "known": 0.4,
+   "kind": "technology"
+  },
+  {
+   "label": "paper",
+   "qid": "Q11472",
+   "fame": 0.503,
+   "inventor": "Cai Lun",
+   "description": "thin, flexible material mainly used for writing upon, printing upon, drawing or for packaging",
+   "hook": "gave the world a cheap, flexible material to write and print on",
+   "known": 0.95,
+   "kind": "technology"
+  },
+  {
+   "label": "pasteurization",
+   "qid": "Q58148",
+   "fame": 0.484,
+   "inventor": "Louis Pasteur",
+   "description": "process in which certain foods are treated with mild heat in order to eliminate pathogens and extend shelf life",
+   "hook": "uses mild heat to kill harmful germs in milk and other foods, extending their shelf life",
+   "known": 0.4,
+   "kind": "process"
+  },
+  {
+   "label": "polio vaccine",
+   "qid": "Q1519099",
+   "fame": 0.478,
+   "inventor": "Jonas Salk",
+   "description": "vaccine to prevent poliomyelitis",
+   "hook": "helped nearly eliminate a crippling childhood disease worldwide",
+   "known": 0.6,
+   "kind": "medical"
+  },
+  {
+   "label": "cotton gin",
+   "qid": "Q1136790",
+   "fame": 0.474,
+   "inventor": "Eli Whitney",
+   "description": "machine that separates cotton fibers from seeds",
+   "hook": "mechanically separates plant fibers from their seeds, speeding up textile production",
+   "known": 0.4,
+   "kind": "technology"
+  },
+  {
+   "label": "analytical engine",
+   "qid": "Q485257",
+   "fame": 0.471,
+   "inventor": "Charles Babbage",
+   "description": "proposed mechanical general-purpose computer, designed by Charles Babbage",
+   "hook": "was a mechanical design considered the first general-purpose computer, though it was never fully built",
+   "known": 0.2,
+   "kind": "technology"
+  },
+  {
+   "label": "kaleidoscope",
+   "qid": "Q180049",
+   "fame": 0.471,
+   "inventor": "David Brewster",
+   "description": "cylinder with mirrors containing loose, colored objects such as beads or pebbles and bits of glass",
+   "hook": "creates ever-changing symmetrical patterns using mirrors and loose colored pieces",
+   "known": 0.4,
+   "kind": "toy"
+  },
+  {
+   "label": "smallpox vaccine",
+   "qid": "Q1037810",
+   "fame": 0.467,
+   "inventor": "Edward Jenner",
+   "description": "first successful vaccine to be developed",
+   "hook": "led to the total worldwide eradication of a deadly disease",
+   "known": 0.6,
+   "kind": "medical"
+  },
+  {
+   "label": "Ferris wheel",
+   "qid": "Q202570",
+   "fame": 0.463,
+   "inventor": "George Washington Gale Ferris, Jr.",
+   "description": "amusement ride",
+   "hook": "carries riders in a giant rotating circle of passenger cars",
+   "known": 0.8,
+   "kind": "device"
+  },
+  {
+   "label": "stethoscope",
+   "qid": "Q162339",
+   "fame": 0.455,
+   "inventor": "René Laennec",
+   "description": "acoustic medical device for auscultation",
+   "hook": "lets doctors listen to your heartbeat and breathing sounds",
+   "known": 0.6,
+   "kind": "medical"
+  }
+ ]
+}

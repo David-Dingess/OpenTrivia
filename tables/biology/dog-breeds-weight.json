@@ -1,0 +1,378 @@
+{
+ "id": "table.biology.dog-breeds-weight",
+ "kind": "table",
+ "title": "Dog Breeds: how heavy",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "cat-and-dog-breeds",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?mass WHERE { { SELECT ?item (MAX(?m) AS ?mass) WHERE { ?item wdt:P31 wd:Q39367 ; wikibase:sitelinks ?sl . FILTER(?sl >= 15) ?item p:P2067/psn:P2067/wikibase:quantityAmount ?m } GROUP BY ?item } hint:Prior hint:runFirst true . ?item wikibase:sitelinks ?sitelinks . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T22:02:53.637Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T22:02:53.637Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "weight_kg",
+   "label": "Typical top weight",
+   "unit": "kg",
+   "type": "number",
+   "scale": "weight-kg"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "breed",
+  "many": "breeds",
+  "capitalise": true,
+  "columns": {
+   "weight_kg": {
+    "role": "measure",
+    "compare": "Which breed usually weighs more",
+    "display": "kg",
+    "precision": "typical"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Cane Corso",
+   "qid": "Q21082",
+   "fame": 0.634,
+   "weight_kg": 50,
+   "description": "Italian dog breed",
+   "hook": "is a powerful, muscular guardian breed descended from ancient Roman war companions",
+   "known": 0.4,
+   "kind": "large dog"
+  },
+  {
+   "label": "German Shepherd",
+   "qid": "Q38280",
+   "fame": 0.616,
+   "weight_kg": 40,
+   "description": "German breed of dog",
+   "hook": "is the classic police and military working breed, prized for intelligence and loyalty",
+   "known": 0.9,
+   "kind": "large dog"
+  },
+  {
+   "label": "Chihuahua",
+   "qid": "Q653",
+   "fame": 0.614,
+   "weight_kg": 3,
+   "description": "Mexican dog breed",
+   "hook": "is the smallest breed in the world, a tiny pet known for a big attitude",
+   "known": 0.95,
+   "kind": "toy dog"
+  },
+  {
+   "label": "Shih Tzu",
+   "qid": "Q39357",
+   "fame": 0.589,
+   "weight_kg": 8,
+   "description": "dog breed",
+   "hook": "is a small, long-haired lapdog bred to keep Chinese royalty company",
+   "known": 0.6,
+   "kind": "small dog"
+  },
+  {
+   "label": "Belgian Shepherd",
+   "qid": "Q37624",
+   "fame": 0.584,
+   "weight_kg": 30,
+   "description": "dog breed",
+   "hook": "is a herding breed with several coat varieties, popular with police and military units",
+   "known": 0.3,
+   "kind": "medium dog"
+  },
+  {
+   "label": "beagle",
+   "qid": "Q21102",
+   "fame": 0.564,
+   "weight_kg": 9,
+   "description": "dog breed",
+   "hook": "is a small scent-tracking breed with a famous howl, and the cartoon pet of Charlie Brown's Snoopy",
+   "known": 0.8,
+   "kind": "small dog"
+  },
+  {
+   "label": "Great Dane",
+   "qid": "Q5414",
+   "fame": 0.562,
+   "weight_kg": 90,
+   "description": "German dog breed",
+   "hook": "is one of the tallest breeds on Earth and the gentle giant behind Scooby-Doo",
+   "known": 0.85,
+   "kind": "giant dog"
+  },
+  {
+   "label": "Cavalier King Charles Spaniel",
+   "qid": "Q38072",
+   "fame": 0.561,
+   "weight_kg": 7,
+   "description": "dog breed",
+   "hook": "is a small, silky-eared lapdog named for royal kings who adored the breed",
+   "known": 0.6,
+   "kind": "toy dog"
+  },
+  {
+   "label": "Jack Russell Terrier",
+   "qid": "Q38287",
+   "fame": 0.559,
+   "weight_kg": 6,
+   "description": "dog breed",
+   "hook": "is a feisty, energetic little breed, famous as the star of the film The Mask",
+   "known": 0.75,
+   "kind": "toy dog"
+  },
+  {
+   "label": "Dobermann",
+   "qid": "Q38358",
+   "fame": 0.558,
+   "weight_kg": 45,
+   "description": "German dog breed",
+   "hook": "is a sleek, black-and-tan guard breed created by a German tax collector",
+   "known": 0.65,
+   "kind": "large dog"
+  },
+  {
+   "label": "Staffordshire Bull Terrier",
+   "qid": "Q39285",
+   "fame": 0.557,
+   "weight_kg": 17,
+   "description": "British breed of dog",
+   "hook": "is a stocky, muscular breed nicknamed the nanny dog for its affection toward children",
+   "known": 0.4,
+   "kind": "medium dog"
+  },
+  {
+   "label": "Irish wolfhound",
+   "qid": "Q38668",
+   "fame": 0.55,
+   "weight_kg": 55,
+   "description": "dog breed",
+   "hook": "is the tallest breed in the world, once used to hunt the animals in its name",
+   "known": 0.45,
+   "kind": "giant dog"
+  },
+  {
+   "label": "French Bulldog",
+   "qid": "Q29149",
+   "fame": 0.542,
+   "weight_kg": 14,
+   "description": "French breed of dog",
+   "hook": "is a compact companion with bat-like ears and a squashed face, hugely popular in big cities",
+   "known": 0.85,
+   "kind": "small dog"
+  },
+  {
+   "label": "Bulldog",
+   "qid": "Q38383",
+   "fame": 0.534,
+   "weight_kg": 25,
+   "description": "British breed of dog",
+   "hook": "is a wrinkly, stout, flat-faced breed and the mascot of many university sports teams",
+   "known": 0.8,
+   "kind": "medium dog"
+  },
+  {
+   "label": "Basenji",
+   "qid": "Q37871",
+   "fame": 0.531,
+   "weight_kg": 11,
+   "description": "dog breed",
+   "hook": "is the breed that yodels instead of barking, originally used for hunting in central Africa",
+   "known": 0.35,
+   "kind": "small dog"
+  },
+  {
+   "label": "Siberian Husky",
+   "qid": "Q39295",
+   "fame": 0.53,
+   "weight_kg": 28,
+   "description": "dog breed",
+   "hook": "is a striking blue-eyed sled puller bred for endurance in the frozen north",
+   "known": 0.8,
+   "kind": "medium dog"
+  },
+  {
+   "label": "Newfoundland dog",
+   "qid": "Q38706",
+   "fame": 0.527,
+   "weight_kg": 68,
+   "description": "dog breed",
+   "hook": "is a huge, webbed-footed water rescuer, and the breed that Nana was in Peter Pan",
+   "known": 0.45,
+   "kind": "giant dog"
+  },
+  {
+   "label": "basset hound",
+   "qid": "Q37716",
+   "fame": 0.522,
+   "weight_kg": 32,
+   "description": "dog breed",
+   "hook": "is a low-slung, long-eared scent tracker with a mournful face and a famously droopy look",
+   "known": 0.65,
+   "kind": "medium dog"
+  },
+  {
+   "label": "bloodhound",
+   "qid": "Q21098",
+   "fame": 0.521,
+   "weight_kg": 54,
+   "description": "dog breed",
+   "hook": "is a wrinkled, droopy-faced tracker whose sense of smell can be used as evidence in court",
+   "known": 0.55,
+   "kind": "giant dog"
+  },
+  {
+   "label": "Alaskan Malamute",
+   "qid": "Q21206",
+   "fame": 0.518,
+   "weight_kg": 38,
+   "description": "American dog breed originating in Alaska",
+   "hook": "is a strong, fluffy sled puller that looks like a husky but is bigger and heavier",
+   "known": 0.4,
+   "kind": "medium dog"
+  },
+  {
+   "label": "Pekingese",
+   "qid": "Q38959",
+   "fame": 0.516,
+   "weight_kg": 5,
+   "description": "dog breed",
+   "hook": "is a lion-like toy breed that was once guarded in the Chinese imperial palace",
+   "known": 0.45,
+   "kind": "toy dog"
+  },
+  {
+   "label": "English Mastiff",
+   "qid": "Q38418",
+   "fame": 0.509,
+   "weight_kg": 104,
+   "description": "English dog breed",
+   "hook": "is one of the heaviest breeds in the world, a massive and calm guardian",
+   "known": 0.5,
+   "kind": "giant dog"
+  },
+  {
+   "label": "Maltese",
+   "qid": "Q38751",
+   "fame": 0.507,
+   "weight_kg": 4,
+   "description": "dog breed in the toy group",
+   "hook": "is a tiny, silky white lapdog beloved by royalty going back to ancient times",
+   "known": 0.55,
+   "kind": "toy dog"
+  },
+  {
+   "label": "Afghan Hound",
+   "qid": "Q21080",
+   "fame": 0.502,
+   "weight_kg": 27,
+   "description": "dog breed",
+   "hook": "is an elegant sighthound with a long silky coat and a regal, aloof look",
+   "known": 0.4,
+   "kind": "medium dog"
+  },
+  {
+   "label": "Lagotto Romagnolo",
+   "qid": "Q38910",
+   "fame": 0.494,
+   "weight_kg": 16,
+   "description": "dog breed",
+   "hook": null,
+   "known": 0.15,
+   "kind": "small dog"
+  },
+  {
+   "label": "Presa Canario",
+   "qid": "Q37750",
+   "fame": 0.493,
+   "weight_kg": 65,
+   "description": "Spanish breed of dog",
+   "hook": null,
+   "known": 0.15,
+   "kind": "giant dog"
+  },
+  {
+   "label": "Nova Scotia Duck Tolling Retriever",
+   "qid": "Q38824",
+   "fame": 0.487,
+   "weight_kg": 23,
+   "description": "dog breed",
+   "hook": null,
+   "known": 0.25,
+   "kind": "medium dog"
+  },
+  {
+   "label": "English Cocker Spaniel",
+   "qid": "Q38533",
+   "fame": 0.479,
+   "weight_kg": 15,
+   "description": "British dog breed recognised by the FCI",
+   "hook": "is a gentle sporting breed with long, floppy ears and a merry, wagging tail",
+   "known": 0.5,
+   "kind": "small dog"
+  },
+  {
+   "label": "Bullmastiff",
+   "qid": "Q38080",
+   "fame": 0.473,
+   "weight_kg": 59,
+   "description": "English dog breed",
+   "hook": "is a large, powerful guard breed created to keep gamekeepers safe from poachers",
+   "known": 0.35,
+   "kind": "giant dog"
+  },
+  {
+   "label": "Pembroke Welsh Corgi",
+   "qid": "Q38783",
+   "fame": 0.457,
+   "weight_kg": 12,
+   "description": "dog breed",
+   "hook": "is a short-legged herder with a fluffy backside, famously loved by the British queen",
+   "known": 0.8,
+   "kind": "small dog"
+  },
+  {
+   "label": "Abruzzo-Maremma Sheepdog",
+   "qid": "Q21074",
+   "fame": 0.455,
+   "weight_kg": 52,
+   "description": "Italian dog breed",
+   "hook": null,
+   "known": 0.15,
+   "kind": "large dog"
+  },
+  {
+   "label": "Giant Schnauzer",
+   "qid": "Q38688",
+   "fame": 0.45,
+   "weight_kg": 47,
+   "description": "dog breed",
+   "hook": "is the largest of a bearded, bushy-eyebrowed family, used for herding and guarding",
+   "known": 0.35,
+   "kind": "large dog"
+  }
+ ]
+}

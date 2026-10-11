@@ -1,0 +1,262 @@
+{
+ "id": "table.sports.darts-snooker-legends",
+ "kind": "table",
+ "title": "Famous darts and snooker players and their country",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "darts-and-snooker",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nCountry) WHERE { VALUES ?occ { wd:Q17165321 wd:Q18574233 } ?item wdt:P106 ?occ ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 3) ?item wdt:P27 ?c0 . OPTIONAL { ?item wdt:P19/wdt:P131* ?uk . ?uk wdt:P31 wd:Q3336843 . } BIND(IF(?c0 = wd:Q145 && BOUND(?uk), ?uk, ?c0) AS ?c) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 400 } hint:Prior hint:runFirst true . FILTER(?nCountry = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T04:29:44.036Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T04:29:44.036Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "darts or snooker player",
+  "many": "darts and snooker players",
+  "wildcard": "person",
+  "hookAsk": "Which darts or snooker player {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country does {label} represent in darts or snooker?",
+    "statement": "{label} represents {value} in darts or snooker.",
+    "match": "Match each darts or snooker player to the country they represent.",
+    "odd": "Three of these darts and snooker players represent {value}. Which one doesn't?",
+    "all": "Tap all {n} darts and snooker players who represent {value}.",
+    "reverse": "Which of these darts or snooker players represents {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Graeme Dott",
+   "qid": "Q357018",
+   "fame": 0.635,
+   "country": "Scotland",
+   "description": "Scottish snooker player",
+   "hook": null,
+   "known": 0.2,
+   "kind": "snooker"
+  },
+  {
+   "label": "Luke Littler",
+   "qid": "Q110970104",
+   "fame": 0.588,
+   "country": "England",
+   "description": "English darts player (born 2007)",
+   "hook": "became the youngest world darts champion in history, winning the title as a teenager",
+   "known": 0.6,
+   "kind": "darts"
+  },
+  {
+   "label": "Ronnie O'Sullivan",
+   "qid": "Q190782",
+   "fame": 0.567,
+   "country": "England",
+   "description": "English snooker player (born 1975)",
+   "hook": "is a snooker genius with seven world titles and a record haul of Triple Crown wins",
+   "known": 0.8,
+   "kind": "snooker"
+  },
+  {
+   "label": "Jak Jones",
+   "qid": "Q549519",
+   "fame": 0.56,
+   "country": "Wales",
+   "description": "Welsh snooker player (born 1993)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "snooker"
+  },
+  {
+   "label": "James Wade",
+   "qid": "Q730238",
+   "fame": 0.52,
+   "country": "England",
+   "description": "English darts player",
+   "hook": "is widely called the greatest left-hander darts has ever seen, yet never won a world title",
+   "known": 0.4,
+   "kind": "darts"
+  },
+  {
+   "label": "Ali Carter",
+   "qid": "Q347262",
+   "fame": 0.504,
+   "country": "England",
+   "description": "English snooker player",
+   "hook": "is nicknamed the Captain because he pilots aeroplanes as a hobby",
+   "known": 0.4,
+   "kind": "snooker"
+  },
+  {
+   "label": "Gerwyn Price",
+   "qid": "Q17386578",
+   "fame": 0.501,
+   "country": "Wales",
+   "description": "Welsh darts and rugby player",
+   "hook": "switched from professional rugby to become a world darts champion nicknamed the Iceman",
+   "known": 0.4,
+   "kind": "darts"
+  },
+  {
+   "label": "Mark Selby",
+   "qid": "Q311858",
+   "fame": 0.501,
+   "country": "England",
+   "description": "English snooker player",
+   "hook": "is a four-time world snooker champion known for his grinding, tactical style",
+   "known": 0.6,
+   "kind": "snooker"
+  },
+  {
+   "label": "Judd Trump",
+   "qid": "Q313507",
+   "fame": 0.497,
+   "country": "England",
+   "description": "English snooker player",
+   "hook": "is a former world snooker champion and world number one with dozens of ranking titles",
+   "known": 0.6,
+   "kind": "snooker"
+  },
+  {
+   "label": "Luke Humphries",
+   "qid": "Q40667057",
+   "fame": 0.495,
+   "country": "England",
+   "description": "English darts player (born 1995)",
+   "hook": "is nicknamed Cool Hand and climbed to world number one in darts after winning a world title",
+   "known": 0.4,
+   "kind": "darts"
+  },
+  {
+   "label": "Phil Taylor",
+   "qid": "Q550313",
+   "fame": 0.491,
+   "country": "England",
+   "description": "English darts player (born 1960)",
+   "hook": "is nicknamed the Power and won a record sixteen world darts championships",
+   "known": 0.8,
+   "kind": "darts"
+  },
+  {
+   "label": "Mark Williams",
+   "qid": "Q317265",
+   "fame": 0.487,
+   "country": "Wales",
+   "description": "Welsh snooker player",
+   "hook": "is the only player to win all three versions of the snooker world championship",
+   "known": 0.6,
+   "kind": "snooker"
+  },
+  {
+   "label": "Stephen Hendry",
+   "qid": "Q295201",
+   "fame": 0.484,
+   "country": "Scotland",
+   "description": "Scottish snooker player",
+   "hook": "became the youngest world snooker champion ever and went on to win seven titles",
+   "known": 0.8,
+   "kind": "snooker"
+  },
+  {
+   "label": "Stephen Bunting",
+   "qid": "Q7608817",
+   "fame": 0.483,
+   "country": "England",
+   "description": "English darts player (born 1985)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "darts"
+  },
+  {
+   "label": "Michael van Gerwen",
+   "qid": "Q1319437",
+   "fame": 0.477,
+   "country": "Netherlands",
+   "description": "Dutch darts player (born 1989)",
+   "hook": "is a three-time darts world champion who has won more major titles than anyone but the sport's greatest",
+   "known": 0.8,
+   "kind": "darts"
+  },
+  {
+   "label": "John Higgins",
+   "qid": "Q295376",
+   "fame": 0.471,
+   "country": "Scotland",
+   "description": "Scottish snooker player",
+   "hook": "is a four-time world snooker champion who spent decades continuously in the top sixteen",
+   "known": 0.6,
+   "kind": "snooker"
+  },
+  {
+   "label": "Gian van Veen",
+   "qid": "Q113579837",
+   "fame": 0.46,
+   "country": "Netherlands",
+   "description": "Dutch darts player",
+   "hook": null,
+   "known": 0.2,
+   "kind": "darts"
+  },
+  {
+   "label": "Wu Yize",
+   "qid": "Q55756426",
+   "fame": 0.458,
+   "country": "China",
+   "description": "Chinese snooker player (born 2003)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "snooker"
+  },
+  {
+   "label": "Alex Higgins",
+   "qid": "Q529328",
+   "fame": 0.455,
+   "country": "Northern Ireland",
+   "description": "Northern Irish snooker player (1949–2010)",
+   "hook": "was nicknamed the Hurricane and helped make televised snooker a mainstream hit",
+   "known": 0.6,
+   "kind": "snooker"
+  },
+  {
+   "label": "Terry Griffiths",
+   "qid": "Q713009",
+   "fame": 0.453,
+   "country": "Wales",
+   "description": "Welsh snooker player (1947–2024)",
+   "hook": "won the world snooker championship as a qualifier before becoming a coach and commentator",
+   "known": 0.4,
+   "kind": "snooker"
+  }
+ ]
+}

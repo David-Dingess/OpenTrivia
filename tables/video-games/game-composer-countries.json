@@ -1,0 +1,90 @@
+{
+ "id": "table.video-games.game-composer-countries",
+ "kind": "table",
+ "title": "Composers behind video game music and their country",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "soundtracks",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?country WHERE { ?g wdt:P31 wd:Q7889 ; wdt:P86 ?item . ?item wikibase:sitelinks ?sl ; wdt:P27 ?country . FILTER(?sl >= 25) FILTER NOT EXISTS { ?item wdt:P27 ?c2 . FILTER(?c2 != ?country) } } GROUP BY ?item ?country } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T02:57:58.073Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T02:57:58.073Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "composer",
+  "many": "composers",
+  "wildcard": "person",
+  "hookAsk": "Which composer {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is the composer {label} from?",
+    "statement": "The composer {label} is from {value}.",
+    "match": "Match each composer to their country.",
+    "odd": "Three of these composers are from {value}. Which one isn't?",
+    "all": "Tap all {n} composers from {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Toby Fox",
+   "qid": "Q23919389",
+   "fame": 0.635,
+   "country": "United States",
+   "description": "American video game designer and composer (born 1991)"
+  },
+  {
+   "label": "Koji Kondo",
+   "qid": "Q356782",
+   "fame": 0.494,
+   "country": "Japan",
+   "description": "Japanese composer and pianist (born 1961)"
+  },
+  {
+   "label": "Nobuo Uematsu",
+   "qid": "Q312327",
+   "fame": 0.48,
+   "country": "Japan",
+   "description": "Japanese video game composer"
+  },
+  {
+   "label": "Eric Barone",
+   "qid": "Q44914560",
+   "fame": 0.474,
+   "country": "United States",
+   "description": "American video game developer, designer, composer and musician"
+  },
+  {
+   "label": "Yoko Shimomura",
+   "qid": "Q1073854",
+   "fame": 0.456,
+   "country": "Japan",
+   "description": "Japanese composer and pianist (born 1967)"
+  }
+ ]
+}

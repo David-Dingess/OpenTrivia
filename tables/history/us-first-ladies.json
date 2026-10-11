@@ -1,0 +1,254 @@
+{
+ "id": "table.history.us-first-ladies",
+ "kind": "table",
+ "title": "US first ladies and their president",
+ "genre": "society",
+ "category": "history",
+ "topic": "rulers",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?presLabel WHERE { { SELECT ?item (SAMPLE(?p) AS ?pres) (COUNT(DISTINCT ?p) AS ?nP) WHERE { ?item wdt:P39 wd:Q7166256 ; wdt:P26 ?p . ?p p:P39/ps:P39 wd:Q11696 . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nP = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T23:19:03.304Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T23:19:03.304Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "president",
+   "label": "Husband (the president)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "first lady",
+  "many": "U.S. first ladies",
+  "wildcard": "person",
+  "itemSub": "{hook}",
+  "hookAsk": "Which U.S. first lady {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Melania Trump",
+   "qid": "Q432473",
+   "fame": 0.734,
+   "president": "Donald Trump",
+   "description": "First Lady of the United States (2017–2021; since 2025)",
+   "known": 0.9,
+   "kind": "21st-century"
+  },
+  {
+   "label": "Jacqueline Kennedy Onassis",
+   "qid": "Q165421",
+   "fame": 0.723,
+   "president": "John F. Kennedy",
+   "description": "First Lady of the United States from 1961 to 1963",
+   "known": 0.8,
+   "kind": "20th-century-late"
+  },
+  {
+   "label": "Hillary Clinton",
+   "qid": "Q6294",
+   "fame": 0.689,
+   "president": "Bill Clinton",
+   "description": "American politician and diplomat (born 1947)",
+   "known": 0.9,
+   "kind": "21st-century"
+  },
+  {
+   "label": "Eleanor Roosevelt",
+   "qid": "Q83396",
+   "fame": 0.635,
+   "president": "Franklin Delano Roosevelt",
+   "description": "American diplomat and activist, First Lady of the United States from 1933 to 1945 (1884–1962)",
+   "known": 0.7,
+   "kind": "20th-century-early"
+  },
+  {
+   "label": "Michelle Obama",
+   "qid": "Q13133",
+   "fame": 0.629,
+   "president": "Barack Obama",
+   "description": "lawyer and former First Lady of the United States (2009-2017)",
+   "known": 0.9,
+   "kind": "21st-century"
+  },
+  {
+   "label": "Grace Coolidge",
+   "qid": "Q234287",
+   "fame": 0.627,
+   "president": "Calvin Coolidge",
+   "description": "First Lady of the United States from 1923 to 1929",
+   "known": 0.2,
+   "kind": "20th-century-early"
+  },
+  {
+   "label": "Laura Bush",
+   "qid": "Q152019",
+   "fame": 0.619,
+   "president": "George W. Bush",
+   "description": "First Lady of the United States from 2001 to 2009",
+   "known": 0.8,
+   "kind": "21st-century"
+  },
+  {
+   "label": "Mary Todd Lincoln",
+   "qid": "Q215062",
+   "fame": 0.606,
+   "president": "Abraham Lincoln",
+   "description": "First Lady of the United States from 1861 to 1865",
+   "known": 0.5,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Nancy Reagan",
+   "qid": "Q193426",
+   "fame": 0.588,
+   "president": "Ronald Reagan",
+   "description": "First Lady of the United States from 1981 to 1989",
+   "known": 0.8,
+   "kind": "20th-century-late"
+  },
+  {
+   "label": "Barbara Bush",
+   "qid": "Q190628",
+   "fame": 0.582,
+   "president": "George H. W. Bush",
+   "description": "First Lady of the United States from 1989 to 1993 (1925–2018)",
+   "known": 0.7,
+   "kind": "20th-century-late"
+  },
+  {
+   "label": "Jill Biden",
+   "qid": "Q235349",
+   "fame": 0.557,
+   "president": "Joe Biden",
+   "description": "American educator and First Lady of the United States from 2021 to 2025",
+   "known": 0.9,
+   "kind": "21st-century"
+  },
+  {
+   "label": "Lady Bird Johnson",
+   "qid": "Q233648",
+   "fame": 0.555,
+   "president": "Lyndon B. Johnson",
+   "description": "First Lady of the United States from 1963 to 1969",
+   "known": 0.5,
+   "kind": "20th-century-late"
+  },
+  {
+   "label": "Abigail Adams",
+   "qid": "Q206191",
+   "fame": 0.551,
+   "president": "John Adams",
+   "description": "First Lady of the United States from 1797 to 1801",
+   "known": 0.4,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Mamie Eisenhower",
+   "qid": "Q233686",
+   "fame": 0.536,
+   "president": "Dwight D. Eisenhower",
+   "description": "First Lady of the United States from 1953 to 1961",
+   "known": 0.6,
+   "kind": "20th-century-late"
+  },
+  {
+   "label": "Martha Washington",
+   "qid": "Q191789",
+   "fame": 0.535,
+   "president": "George Washington",
+   "description": "First Lady of the United States from 1789 to 1797",
+   "known": 0.7,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Pat Nixon",
+   "qid": "Q158707",
+   "fame": 0.52,
+   "president": "Richard Nixon",
+   "description": "First Lady of the United States from 1969 to 1974",
+   "known": 0.6,
+   "kind": "20th-century-late"
+  },
+  {
+   "label": "Betty Ford",
+   "qid": "Q213122",
+   "fame": 0.5,
+   "president": "Gerald Ford",
+   "description": "First Lady of the United States from 1974 to 1977",
+   "known": 0.5,
+   "kind": "20th-century-late"
+  },
+  {
+   "label": "Rosalynn Carter",
+   "qid": "Q219353",
+   "fame": 0.478,
+   "president": "Jimmy Carter",
+   "description": "First Lady of the United States from 1977 to 1981",
+   "known": 0.5,
+   "kind": "20th-century-late"
+  },
+  {
+   "label": "Frances Cleveland",
+   "qid": "Q233644",
+   "fame": 0.474,
+   "president": "Grover Cleveland",
+   "description": "First Lady of the United States from 1886 to 1889 and 1893 to 1897",
+   "known": 0.3,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Dolley Madison",
+   "qid": "Q233638",
+   "fame": 0.464,
+   "president": "James Madison",
+   "description": "First Lady of the United States from 1809 to 1817",
+   "known": 0.3,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Edith Bolling Galt Wilson",
+   "qid": "Q255169",
+   "fame": 0.464,
+   "president": "Woodrow Wilson",
+   "description": "First Lady of the United States from 1915 to 1921",
+   "known": 0.4,
+   "kind": "20th-century-early"
+  },
+  {
+   "label": "Lucretia Garfield",
+   "qid": "Q234261",
+   "fame": 0.464,
+   "president": "James A. Garfield",
+   "description": "First Lady of the United States from 1881 to 1881",
+   "known": 0.1,
+   "kind": "19th-century"
+  },
+  {
+   "label": "Louisa Adams",
+   "qid": "Q233660",
+   "fame": 0.462,
+   "president": "John Quincy Adams",
+   "description": "First Lady of the United States from 1825 to 1829",
+   "known": 0.2,
+   "kind": "19th-century"
+  }
+ ]
+}

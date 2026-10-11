@@ -1,0 +1,469 @@
+{
+ "id": "table.inventions.inventions-decade",
+ "kind": "table",
+ "title": "Inventions by decade",
+ "genre": "science-math-tech",
+ "category": "inventions",
+ "topic": "inventors",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?invented WHERE { { SELECT ?item ?sitelinks (GROUP_CONCAT(CONCAT(COALESCE(STR(?aT), \"\"), \"|\", COALESCE(STR(?aP), \"\")); separator=\";\") AS ?a) (GROUP_CONCAT(CONCAT(COALESCE(STR(?bT), \"\"), \"|\", COALESCE(STR(?bP), \"\")); separator=\";\") AS ?b) (GROUP_CONCAT(CONCAT(COALESCE(STR(?cT), \"\"), \"|\", COALESCE(STR(?cP), \"\")); separator=\";\") AS ?c) WHERE { VALUES ?item { wd:Q8777 wd:Q8811 wd:Q58148 wd:Q873501 wd:Q116434 wd:Q144334 wd:Q10693 wd:Q143 wd:Q174174 wd:Q80728 wd:Q858340 wd:Q7973 wd:Q186263 wd:Q1037810 wd:Q485257 wd:Q628007 wd:Q105525247 wd:Q7987 wd:Q11197 wd:Q9158 wd:Q180049 wd:Q9798 wd:Q47043 wd:Q1519099 wd:Q11420 wd:Q5372 wd:Q162339 wd:Q1136790 wd:Q1734 wd:Q5994 wd:Q101674 wd:Q207691 wd:Q17517 wd:Q127956 wd:Q202570 wd:Q840333 wd:Q44914 wd:Q39531 wd:Q181008 wd:Q171 wd:Q466 wd:Q79897 wd:Q11035 wd:Q11633 wd:Q5339 wd:Q197 wd:Q4439 wd:Q26540 wd:Q11442 wd:Q12876 wd:Q38867 wd:Q11658 wd:Q267298 wd:Q6368 wd:Q2736 } ?item wikibase:sitelinks ?sitelinks . OPTIONAL { ?item p:P575 ?s1 . ?s1 a wikibase:BestRank ; psv:P575 [ wikibase:timeValue ?aT ; wikibase:timePrecision ?aP ] . } OPTIONAL { ?item p:P577 ?s2 . ?s2 a wikibase:BestRank ; psv:P577 [ wikibase:timeValue ?bT ; wikibase:timePrecision ?bP ] . } OPTIONAL { ?item p:P571 ?s3 . ?s3 a wikibase:BestRank ; psv:P571 [ wikibase:timeValue ?cT ; wikibase:timePrecision ?cP ] . } } GROUP BY ?item ?sitelinks } hint:Prior hint:runFirst true . BIND(IF(CONTAINS(?a, \"-\"), ?a, IF(CONTAINS(?b, \"-\"), ?b, ?c)) AS ?invented) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T01:59:00.525Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T01:59:00.525Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "invented",
+   "label": "Invented",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "invention",
+  "many": "inventions",
+  "capitalise": true,
+  "lowerInProse": true,
+  "hookAsk": "Which invention {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "invented": {
+    "role": "date",
+    "sort": "from the earliest invention to the most recent",
+    "shot": "In what year was {label} invented?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "periodic table",
+   "qid": "Q10693",
+   "fame": 0.773,
+   "invented": 1869,
+   "description": "table systematically placing elements based on atomic number and recurrent properties",
+   "hook": "arranges every chemical element into rows and columns by atomic number",
+   "known": 0.8,
+   "kind": "science"
+  },
+  {
+   "label": "photography",
+   "qid": "Q11633",
+   "fame": 0.738,
+   "invented": 1839,
+   "description": "art, science, and practice of creating durable images by recording light or other electromagnetic radiation",
+   "hook": "captures light on film or a sensor to freeze a moment into a picture",
+   "known": 0.95,
+   "kind": "medium"
+  },
+  {
+   "label": "World Wide Web",
+   "qid": "Q466",
+   "fame": 0.708,
+   "invented": 1989,
+   "description": "global system of interlinked hypertext documents accessed via the Internet",
+   "hook": "lets people click links to jump between pages on the internet",
+   "known": 0.95,
+   "kind": "medium"
+  },
+  {
+   "label": "association football",
+   "qid": "Q2736",
+   "fame": 0.699,
+   "invented": 1863,
+   "description": "sport that is practiced between two teams of eleven players",
+   "hook": "is played with a round ball by two teams of eleven, with no hands allowed except for the goalkeeper",
+   "known": 0.95,
+   "kind": "sport"
+  },
+  {
+   "label": "web browser",
+   "qid": "Q6368",
+   "fame": 0.69,
+   "invented": 1990,
+   "description": "software application for retrieving, presenting, and traversing information resources on the World Wide Web",
+   "hook": "is the program you open to visit sites, such as Chrome or Firefox",
+   "known": 0.95,
+   "kind": "device"
+  },
+  {
+   "label": "email",
+   "qid": "Q9158",
+   "fame": 0.643,
+   "invented": 1971,
+   "description": "electronic changing digital messages between a network",
+   "hook": "sends written messages instantly between inboxes, using an @ symbol in addresses",
+   "known": 0.95,
+   "kind": "medium"
+  },
+  {
+   "label": "Hypertext Transfer Protocol",
+   "qid": "Q8777",
+   "fame": 0.638,
+   "invented": 1990,
+   "description": "application-layer protocol for transferring web resources",
+   "hook": "is the set of rules that starts most website addresses in your browser",
+   "known": 0.8,
+   "kind": "medium"
+  },
+  {
+   "label": "basketball",
+   "qid": "Q5372",
+   "fame": 0.63,
+   "invented": 1891,
+   "description": "team sport played on a court with baskets on either end",
+   "hook": "has players dribble and shoot a ball through a hoop to score points",
+   "known": 0.95,
+   "kind": "sport"
+  },
+  {
+   "label": "HTML",
+   "qid": "Q8811",
+   "fame": 0.624,
+   "invented": 1993,
+   "description": "family of markup languages for displaying content in a web browser",
+   "hook": "is the code that structures the headings, links and images of a website",
+   "known": 0.6,
+   "kind": "medium"
+  },
+  {
+   "label": "Morse code",
+   "qid": "Q79897",
+   "fame": 0.623,
+   "invented": 1836,
+   "description": "communication code with signals representing letters, punctuation marks and numbers",
+   "hook": "sends messages using short and long beeps or flashes, famously spelling out SOS",
+   "known": 0.6,
+   "kind": "medium"
+  },
+  {
+   "label": "Esperanto",
+   "qid": "Q143",
+   "fame": 0.616,
+   "invented": 1887,
+   "description": "international auxiliary language designed by L. L. Zamenhof",
+   "hook": null,
+   "known": 0.2,
+   "kind": "language"
+  },
+  {
+   "label": "volleyball",
+   "qid": "Q1734",
+   "fame": 0.599,
+   "invented": 1895,
+   "description": "team sport",
+   "hook": "has two teams hitting a ball over a high net without letting it touch the floor",
+   "known": 0.6,
+   "kind": "sport"
+  },
+  {
+   "label": "sudoku",
+   "qid": "Q44914",
+   "fame": 0.589,
+   "invented": 1979,
+   "description": "logic-based number-placement puzzle",
+   "hook": "challenges you to fill a nine-by-nine grid so no digit repeats in any row, column or box",
+   "known": 0.8,
+   "kind": "game"
+  },
+  {
+   "label": "mobile phone",
+   "qid": "Q17517",
+   "fame": 0.573,
+   "invented": 1973,
+   "description": "portable device to make telephone calls using a radio link",
+   "hook": "lets people make calls from anywhere without a cord, first demonstrated by a Motorola engineer",
+   "known": 0.95,
+   "kind": "device"
+  },
+  {
+   "label": "piano",
+   "qid": "Q5994",
+   "fame": 0.573,
+   "invented": 1700,
+   "description": "musical keyboard instrument",
+   "hook": "has black and white keys that strike strings with felt hammers",
+   "known": 0.8,
+   "kind": "instrument"
+  },
+  {
+   "label": "Rubik's Cube",
+   "qid": "Q47043",
+   "fame": 0.571,
+   "invented": 1974,
+   "description": "3-D combination puzzle with many different permutations",
+   "hook": "is a twisting puzzle of colored squares invented by a Hungarian architecture professor",
+   "known": 0.8,
+   "kind": "game"
+  },
+  {
+   "label": "printing press",
+   "qid": "Q144334",
+   "fame": 0.57,
+   "invented": 1439,
+   "description": "device for evenly printing ink onto a print medium",
+   "hook": "let books be mass-produced, famously used for the Gutenberg Bible",
+   "known": 0.6,
+   "kind": "medium"
+  },
+  {
+   "label": "transistor",
+   "qid": "Q5339",
+   "fame": 0.566,
+   "invented": 1947,
+   "description": "a semiconductor device",
+   "hook": "is the tiny switch inside computer chips, with billions packed into each one",
+   "known": 0.4,
+   "kind": "device"
+  },
+  {
+   "label": "airplane",
+   "qid": "Q197",
+   "fame": 0.554,
+   "invented": 1903,
+   "description": "powered fixed-wing aircraft",
+   "hook": "carries passengers through the sky on fixed wings, first flown by two brothers from Ohio",
+   "known": 0.95,
+   "kind": "vehicle"
+  },
+  {
+   "label": "judo",
+   "qid": "Q11420",
+   "fame": 0.542,
+   "invented": 1882,
+   "description": "modern martial art, combat and Olympic/Paralympic sport",
+   "hook": "is a Japanese martial art of throws and holds whose name means the gentle way",
+   "known": 0.6,
+   "kind": "sport"
+  },
+  {
+   "label": "laser",
+   "qid": "Q38867",
+   "fame": 0.536,
+   "invented": 1960,
+   "description": "device which emits light via optical amplification",
+   "hook": "produces a narrow, intense beam of focused light used in pointers, surgery and cutting",
+   "known": 0.8,
+   "kind": "device"
+  },
+  {
+   "label": "phonograph",
+   "qid": "Q116434",
+   "fame": 0.534,
+   "invented": 1877,
+   "description": "device for the analogue recording and playback of sound",
+   "hook": "plays sound recorded in grooves, first built by Thomas Edison",
+   "known": 0.4,
+   "kind": "instrument"
+  },
+  {
+   "label": "diesel engine",
+   "qid": "Q174174",
+   "fame": 0.525,
+   "invented": 1893,
+   "description": "internal combustion engine with quality rotational frequency governing, internal mixture formation, lean air-fuel-ratio, diffusion flame and compression ignition",
+   "hook": "ignites fuel by squeezing air until it gets hot, powering trucks and trains",
+   "known": 0.4,
+   "kind": "device"
+  },
+  {
+   "label": "transformer",
+   "qid": "Q11658",
+   "fame": 0.522,
+   "invented": 1831,
+   "description": "electrical device that transfers energy through electromagnetic induction from one circuit to another circuit",
+   "hook": null,
+   "known": 0.2,
+   "kind": "device"
+  },
+  {
+   "label": "saxophone",
+   "qid": "Q9798",
+   "fame": 0.52,
+   "invented": 1840,
+   "description": "single-reed woodwind instrument",
+   "hook": "is a curved brass woodwind with a single reed, loved in jazz",
+   "known": 0.6,
+   "kind": "instrument"
+  },
+  {
+   "label": "microwave oven",
+   "qid": "Q127956",
+   "fame": 0.518,
+   "invented": 1945,
+   "description": "kitchen cooking appliance",
+   "hook": "heats leftovers fast, discovered when a radar engineer's candy bar melted",
+   "known": 0.95,
+   "kind": "device"
+  },
+  {
+   "label": "telephone",
+   "qid": "Q11035",
+   "fame": 0.514,
+   "invented": 1876,
+   "description": "telecommunications device that permits two or more users to conduct a conversation",
+   "hook": "carries voices over wires, with its first patent famously going to Alexander Graham Bell",
+   "known": 0.95,
+   "kind": "medium"
+  },
+  {
+   "label": "hard disk",
+   "qid": "Q4439",
+   "fame": 0.513,
+   "invented": 1956,
+   "description": "data storage device",
+   "hook": "stores a computer's files on spinning magnetic platters inside a drive",
+   "known": 0.6,
+   "kind": "device"
+  },
+  {
+   "label": "dynamite",
+   "qid": "Q80728",
+   "fame": 0.508,
+   "invented": 1867,
+   "description": "explosive preparation of stabilized nitroglycerin",
+   "hook": "is the explosive whose inventor funded the Nobel Prizes with his fortune",
+   "known": 0.8,
+   "kind": "tool"
+  },
+  {
+   "label": "computer mouse",
+   "qid": "Q7987",
+   "fame": 0.507,
+   "invented": 1963,
+   "description": "hand-held device used to move a pointer on a computer display",
+   "hook": "moves a pointer on screen when slid across a desk, first built from wood",
+   "known": 0.95,
+   "kind": "device"
+  },
+  {
+   "label": "artificial satellite",
+   "qid": "Q26540",
+   "fame": 0.506,
+   "invented": 1957,
+   "description": "human-made object put into an orbit",
+   "hook": "circles Earth beaming signals, with Sputnik 1 the first to reach orbit",
+   "known": 0.6,
+   "kind": "device"
+  },
+  {
+   "label": "bicycle",
+   "qid": "Q11442",
+   "fame": 0.499,
+   "invented": 1885,
+   "description": "pedal-driven two-wheel vehicle",
+   "hook": "moves on two wheels by pedaling, with the rider balancing",
+   "known": 0.95,
+   "kind": "vehicle"
+  },
+  {
+   "label": "tank",
+   "qid": "Q12876",
+   "fame": 0.496,
+   "invented": 1915,
+   "description": "armored fighting vehicle intended as a primary offensive weapon in front-line ground combat",
+   "hook": "is an armored vehicle on caterpillar tracks, first used in World War I",
+   "known": 0.8,
+   "kind": "vehicle"
+  },
+  {
+   "label": "pasteurization",
+   "qid": "Q58148",
+   "fame": 0.486,
+   "invented": 1864,
+   "description": "process in which certain foods are treated with mild heat in order to eliminate pathogens and extend shelf life",
+   "hook": "heats milk briefly to kill germs, and is named after a French chemist",
+   "known": 0.4,
+   "kind": "tool"
+  },
+  {
+   "label": "cotton gin",
+   "qid": "Q1136790",
+   "fame": 0.478,
+   "invented": 1793,
+   "description": "machine that separates cotton fibers from seeds",
+   "hook": null,
+   "known": 0.2,
+   "kind": "tool"
+  },
+  {
+   "label": "battery",
+   "qid": "Q267298",
+   "fame": 0.476,
+   "invented": 1800,
+   "description": "assembly of one or more electrochemical cells, used to provide devices with stored electrical energy",
+   "hook": "stores chemical energy to power flashlights, remotes and phones",
+   "known": 0.8,
+   "kind": "device"
+  },
+  {
+   "label": "polio vaccine",
+   "qid": "Q1519099",
+   "fame": 0.476,
+   "invented": 1955,
+   "description": "vaccine to prevent poliomyelitis",
+   "hook": "protected children from a disease that caused paralysis, first developed by Jonas Salk",
+   "known": 0.4,
+   "kind": "medical"
+  },
+  {
+   "label": "kaleidoscope",
+   "qid": "Q180049",
+   "fame": 0.474,
+   "invented": 1816,
+   "description": "cylinder with mirrors containing loose, colored objects such as beads or pebbles and bits of glass",
+   "hook": "shows shifting symmetrical patterns of colored glass when turned",
+   "known": 0.4,
+   "kind": "amusement"
+  },
+  {
+   "label": "analytical engine",
+   "qid": "Q485257",
+   "fame": 0.473,
+   "invented": 1833,
+   "description": "proposed mechanical general-purpose computer, designed by Charles Babbage",
+   "hook": null,
+   "known": 0.05,
+   "kind": "science"
+  },
+  {
+   "label": "Ferris wheel",
+   "qid": "Q202570",
+   "fame": 0.464,
+   "invented": 1893,
+   "description": "amusement ride",
+   "hook": "is a giant rotating ride with passenger cabins, debuted at a Chicago world's fair",
+   "known": 0.8,
+   "kind": "amusement"
+  },
+  {
+   "label": "smallpox vaccine",
+   "qid": "Q1037810",
+   "fame": 0.462,
+   "invented": 1798,
+   "description": "first successful vaccine to be developed",
+   "hook": "protected people from a disease later eradicated, first tested using cowpox",
+   "known": 0.6,
+   "kind": "medical"
+  }
+ ]
+}

@@ -1,0 +1,321 @@
+{
+ "id": "table.oddities.heist-films",
+ "kind": "table",
+ "title": "Heist films: the director",
+ "genre": "general",
+ "category": "oddities",
+ "topic": "heists",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?directorLabel WHERE { VALUES ?item { wd:Q205447 wd:Q504053 wd:Q635632 wd:Q25627545 wd:Q42198 wd:Q72962 wd:Q81224 wd:Q458656 wd:Q499851 wd:Q851095 wd:Q335160 wd:Q648312 wd:Q23016644 wd:Q725539 wd:Q728485 wd:Q592072 wd:Q20026847 wd:Q778979 wd:Q24576050 wd:Q29163736 wd:Q790071 wd:Q28860130 wd:Q578873 wd:Q331017 wd:Q1856418 wd:Q1516287 wd:Q552036 wd:Q964779 wd:Q751401 wd:Q18703028 wd:Q470329 } ?item wdt:P57 ?director. FILTER NOT EXISTS { ?item wdt:P57 ?d2. FILTER(?d2 != ?director) } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T07:36:43.136Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T07:36:43.136Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "director",
+   "label": "Director",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "heist film",
+  "many": "heist films",
+  "hookAsk": "Which heist film {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "director": {
+    "role": "link",
+    "pick": "Who directed the heist film {label}?",
+    "statement": "{label} was directed by {value}.",
+    "match": "Match each heist film to its director.",
+    "odd": "Three of these heist films were directed by {value}. Which one wasn't?",
+    "all": "Tap all {n} heist films directed by {value}.",
+    "reverse": "Which of these heist films did {value} direct?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Heat",
+   "qid": "Q42198",
+   "fame": 0.674,
+   "director": "Michael Mann",
+   "description": "1995 film directed by Michael Mann",
+   "hook": "pits an LAPD detective against a career thief, famous for a huge downtown street shootout",
+   "known": 0.75,
+   "kind": "ensemble heist"
+  },
+  {
+   "label": "Ocean's Eleven",
+   "qid": "Q205447",
+   "fame": 0.665,
+   "director": "Steven Soderbergh",
+   "description": "2001 film by Steven Soderbergh",
+   "hook": "follows a slick crew of thieves planning to rob a Las Vegas casino owner of a fortune",
+   "known": 0.85,
+   "kind": "ensemble heist"
+  },
+  {
+   "label": "Ocean's 8",
+   "qid": "Q25627545",
+   "fame": 0.645,
+   "director": "Gary Ross",
+   "description": "2018 film by Gary Ross",
+   "hook": "sees an all-female crew plan a jewel theft at the annual Met Gala",
+   "known": 0.6,
+   "kind": "ensemble heist"
+  },
+  {
+   "label": "Snatch",
+   "qid": "Q335160",
+   "fame": 0.637,
+   "director": "Guy Ritchie",
+   "description": "2000 film directed by Guy Ritchie",
+   "hook": "follows a hunt for a stolen diamond through the London underworld, with a boxing promoter caught up in it",
+   "known": 0.65,
+   "kind": "stylish crime"
+  },
+  {
+   "label": "The Town",
+   "qid": "Q725539",
+   "fame": 0.633,
+   "director": "Ben Affleck",
+   "description": "2010 film directed by Ben Affleck",
+   "hook": "follows a Boston bank robber who falls for a victim, with a final job planned at a baseball park",
+   "known": 0.5,
+   "kind": "ensemble heist"
+  },
+  {
+   "label": "Ocean's Twelve",
+   "qid": "Q504053",
+   "fame": 0.628,
+   "director": "Steven Soderbergh",
+   "description": "2004 American film directed by Steven Soderbergh",
+   "hook": "sends a crew of thieves across Europe to repay a casino owner, in a sequel to a Las Vegas heist hit",
+   "known": 0.7,
+   "kind": "ensemble heist"
+  },
+  {
+   "label": "Reservoir Dogs",
+   "qid": "Q72962",
+   "fame": 0.62,
+   "director": "Quentin Tarantino",
+   "description": "1992 film by Quentin Tarantino",
+   "hook": "follows jewel thieves in matching black suits using colour code names after a robbery goes badly wrong",
+   "known": 0.8,
+   "kind": "classic noir"
+  },
+  {
+   "label": "Lock, Stock and Two Smoking Barrels",
+   "qid": "Q851095",
+   "fame": 0.616,
+   "director": "Guy Ritchie",
+   "description": "1998 film by Guy Ritchie",
+   "hook": "follows friends who plot to rob the gang next door after a rigged card game leaves them deep in debt",
+   "known": 0.65,
+   "kind": "stylish crime"
+  },
+  {
+   "label": "Dog Day Afternoon",
+   "qid": "Q458656",
+   "fame": 0.615,
+   "director": "Sidney Lumet",
+   "description": "1975 film directed by Sidney Lumet",
+   "hook": "dramatizes a real Brooklyn bank robbery turned hostage standoff, with a famous shout of \"Attica!\"",
+   "known": 0.85,
+   "kind": "classic noir"
+  },
+  {
+   "label": "Ocean's Thirteen",
+   "qid": "Q635632",
+   "fame": 0.612,
+   "director": "Steven Soderbergh",
+   "description": "2007 film by Steven Soderbergh",
+   "hook": "has a crew of thieves seek revenge on a casino tycoon by sabotaging his new Las Vegas hotel",
+   "known": 0.65,
+   "kind": "ensemble heist"
+  },
+  {
+   "label": "Now You See Me",
+   "qid": "Q499851",
+   "fame": 0.605,
+   "director": "Louis Leterrier",
+   "description": "2013 film directed by Louis Leterrier",
+   "hook": "follows a team of stage magicians who rob banks during their shows and reward the audience with the cash",
+   "known": 0.45,
+   "kind": "action heist"
+  },
+  {
+   "label": "Hell or High Water",
+   "qid": "Q20026847",
+   "fame": 0.595,
+   "director": "David Mackenzie",
+   "description": "2016 film directed by David Mackenzie",
+   "hook": "follows two brothers robbing banks to save the family ranch while Texas Rangers close in",
+   "known": 0.4,
+   "kind": "crime thriller"
+  },
+  {
+   "label": "Inside Man",
+   "qid": "Q81224",
+   "fame": 0.592,
+   "director": "Spike Lee",
+   "description": "2006 film by Spike Lee",
+   "hook": "centers on a clever Wall Street bank robbery that turns into a hostage standoff with a police negotiator",
+   "known": 0.55,
+   "kind": "crime thriller"
+  },
+  {
+   "label": "Baby Driver",
+   "qid": "Q23016644",
+   "fame": 0.589,
+   "director": "Edgar Wright",
+   "description": "2017 film directed by Edgar Wright",
+   "hook": "follows a getaway specialist who times his escapes to the songs on his earbuds",
+   "known": 0.45,
+   "kind": "stylish crime"
+  },
+  {
+   "label": "Sexy Beast",
+   "qid": "Q552036",
+   "fame": 0.572,
+   "director": "Jonathan Glazer",
+   "description": "2000 film directed by Jonathan Glazer",
+   "hook": null,
+   "known": 0.3,
+   "kind": "crime thriller"
+  },
+  {
+   "label": "The Italian Job",
+   "qid": "Q648312",
+   "fame": 0.549,
+   "director": "F. Gary Gray",
+   "description": "2003 film by F. Gary Gray",
+   "hook": "follows thieves who plot revenge for a stolen gold shipment, escaping in Mini Coopers",
+   "known": 0.6,
+   "kind": "action heist"
+  },
+  {
+   "label": "The Bank Job",
+   "qid": "Q790071",
+   "fame": 0.545,
+   "director": "Roger Donaldson",
+   "description": "2008 film directed by Roger Donaldson",
+   "hook": null,
+   "known": 0.25,
+   "kind": "action heist"
+  },
+  {
+   "label": "The Killing",
+   "qid": "Q592072",
+   "fame": 0.538,
+   "director": "Stanley Kubrick",
+   "description": "1956 film by Stanley Kubrick",
+   "hook": "follows a meticulously timed racetrack robbery told out of order, an early film from a legendary director",
+   "known": 0.8,
+   "kind": "classic noir"
+  },
+  {
+   "label": "Den of Thieves",
+   "qid": "Q28860130",
+   "fame": 0.535,
+   "director": "Christian Gudegast",
+   "description": "2018 film by Christian Gudegast",
+   "hook": null,
+   "known": 0.2,
+   "kind": "crime thriller"
+  },
+  {
+   "label": "Ronin",
+   "qid": "Q751401",
+   "fame": 0.534,
+   "director": "John Frankenheimer",
+   "description": "1998 film directed by John Frankenheimer",
+   "hook": "follows ex-spies hired to steal a mysterious briefcase, known for its realistic European car chases",
+   "known": 0.65,
+   "kind": "crime thriller"
+  },
+  {
+   "label": "Logan Lucky",
+   "qid": "Q24576050",
+   "fame": 0.533,
+   "director": "Steven Soderbergh",
+   "description": "2017 film directed by Steven Soderbergh",
+   "hook": null,
+   "known": 0.35,
+   "kind": "ensemble heist"
+  },
+  {
+   "label": "Widows",
+   "qid": "Q29163736",
+   "fame": 0.498,
+   "director": "Steve McQueen",
+   "description": "2018 film directed by Steve McQueen",
+   "hook": "follows four women who plan a robbery to repay a crime boss after their husbands die in a botched getaway",
+   "known": 0.4,
+   "kind": "ensemble heist"
+  },
+  {
+   "label": "Entrapment",
+   "qid": "Q578873",
+   "fame": 0.497,
+   "director": "Jon Amiel",
+   "description": "1999 film by Jon Amiel",
+   "hook": "pairs a veteran Scottish star with a Welsh actress as an investigator and thief planning a millennium heist",
+   "known": 0.45,
+   "kind": "action heist"
+  },
+  {
+   "label": "Tower Heist",
+   "qid": "Q778979",
+   "fame": 0.494,
+   "director": "Brett Ratner",
+   "description": "2011 heist comedy film directed by Brett Ratner",
+   "hook": null,
+   "known": 0.35,
+   "kind": "action heist"
+  },
+  {
+   "label": "To Catch a Thief",
+   "qid": "Q331017",
+   "fame": 0.484,
+   "director": "Alfred Hitchcock",
+   "description": "1955 film by Alfred Hitchcock",
+   "hook": "stars a retired cat burglar clearing his name on the French Riviera alongside a glamorous Hollywood princess",
+   "known": 0.85,
+   "kind": "classic noir"
+  },
+  {
+   "label": "Heist",
+   "qid": "Q964779",
+   "fame": 0.45,
+   "director": "David Mamet",
+   "description": "2001 film by David Mamet",
+   "hook": null,
+   "known": 0.2,
+   "kind": "crime thriller"
+  }
+ ]
+}

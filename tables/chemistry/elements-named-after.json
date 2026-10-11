@@ -1,0 +1,579 @@
+{
+ "id": "table.chemistry.elements-named-after",
+ "kind": "table",
+ "title": "Chemical elements: what they are named after",
+ "genre": "science-math-tech",
+ "category": "chemistry",
+ "topic": "elements",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?namedLabel WHERE { { SELECT ?item (SAMPLE(?p) AS ?named) WHERE { ?item wdt:P31 wd:Q11344 ; wdt:P138 ?p . } GROUP BY ?item HAVING(COUNT(DISTINCT ?p)=1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T03:11:26.824Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T03:11:26.824Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "named_after",
+   "label": "Named after",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "element",
+  "many": "elements",
+  "capitalise": true,
+  "lowerInProse": true,
+  "columns": {
+   "named_after": {
+    "role": "code",
+    "pick": "What is the element {label} named after?",
+    "statement": "The element {label} is named after {value}.",
+    "match": "Match each element to what its name comes from.",
+    "reverse": "Which element is named after {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "aluminium",
+   "qid": "Q663",
+   "fame": 0.61,
+   "named_after": "alum",
+   "description": "metallic chemical element of silvery appearance with symbol Al and atomic number 13",
+   "hook": "is a light, silvery metal used to make soda cans and kitchen foil",
+   "known": 0.8,
+   "kind": "light metal"
+  },
+  {
+   "label": "hydrogen",
+   "qid": "Q556",
+   "fame": 0.599,
+   "named_after": "water",
+   "description": "chemical element with symbol H and atomic number 1",
+   "hook": "is the lightest and most abundant element in the universe, and fuels the stars",
+   "known": 0.95,
+   "kind": "common gas"
+  },
+  {
+   "label": "copper",
+   "qid": "Q753",
+   "fame": 0.598,
+   "named_after": "Cyprus",
+   "description": "chemical element with symbol Cu and atomic number 29",
+   "hook": "is a reddish-orange metal used in electrical wiring and pennies",
+   "known": 0.8,
+   "kind": "metal"
+  },
+  {
+   "label": "tungsten",
+   "qid": "Q743",
+   "fame": 0.598,
+   "named_after": "grey wolf",
+   "description": "chemical element with symbol W and atomic number 74",
+   "hook": "is the metal with the highest melting point, used in old light bulb filaments",
+   "known": 0.6,
+   "kind": "metal"
+  },
+  {
+   "label": "plutonium",
+   "qid": "Q1102",
+   "fame": 0.594,
+   "named_after": "Pluto",
+   "description": "radioactive chemical element with symbol Pu and atomic number 94",
+   "hook": "is a radioactive element used as fuel in nuclear weapons and reactors",
+   "known": 0.7,
+   "kind": "radioactive element"
+  },
+  {
+   "label": "oxygen",
+   "qid": "Q629",
+   "fame": 0.592,
+   "named_after": "acid",
+   "description": "chemical element with symbol O and atomic number 8",
+   "hook": "is the gas humans breathe in to stay alive, making up about a fifth of the air",
+   "known": 0.95,
+   "kind": "common gas"
+  },
+  {
+   "label": "carbon",
+   "qid": "Q623",
+   "fame": 0.579,
+   "named_after": "coal",
+   "description": "chemical element with symbol C and atomic number 6; common element of all known life",
+   "hook": "is the basis of all known life, found in diamonds and pencil lead",
+   "known": 0.9,
+   "kind": "nonmetal"
+  },
+  {
+   "label": "uranium",
+   "qid": "Q1098",
+   "fame": 0.577,
+   "named_after": "Uranus",
+   "description": "radioactive, metallic chemical element with symbol U and atomic number 92",
+   "hook": "is a heavy radioactive metal used to fuel nuclear power plants",
+   "known": 0.7,
+   "kind": "radioactive element"
+  },
+  {
+   "label": "oganesson",
+   "qid": "Q1307",
+   "fame": 0.572,
+   "named_after": "Yuri Oganessian",
+   "description": "chemical element with symbol Og and atomic number 118",
+   "hook": "is the heaviest element on the periodic table, made only in labs and lasting a fraction of a second",
+   "known": 0.05,
+   "kind": "noble gas"
+  },
+  {
+   "label": "potassium",
+   "qid": "Q703",
+   "fame": 0.567,
+   "named_after": "potash",
+   "description": "chemical element with symbol K and atomic number 19",
+   "hook": "is a soft metal found in bananas that reacts violently when dropped into a sink",
+   "known": 0.6,
+   "kind": "metal"
+  },
+  {
+   "label": "lithium",
+   "qid": "Q568",
+   "fame": 0.564,
+   "named_after": "stone",
+   "description": "chemical element with symbol Li and atomic number 3",
+   "hook": "is the lightest metal, used in rechargeable batteries for phones and electric cars",
+   "known": 0.7,
+   "kind": "light metal"
+  },
+  {
+   "label": "silicon",
+   "qid": "Q670",
+   "fame": 0.564,
+   "named_after": "flint",
+   "description": "chemical element with symbol Si and atomic number 14",
+   "hook": "is the main ingredient in sand and glass, and the heart of computer chips",
+   "known": 0.8,
+   "kind": "nonmetal"
+  },
+  {
+   "label": "helium",
+   "qid": "Q560",
+   "fame": 0.559,
+   "named_after": "Helios",
+   "description": "chemical element with symbol He and atomic number 2; rare gas; noble gas",
+   "hook": "is the light gas that fills party balloons and makes your voice squeaky",
+   "known": 0.85,
+   "kind": "noble gas"
+  },
+  {
+   "label": "krypton",
+   "qid": "Q888",
+   "fame": 0.559,
+   "named_after": "hiding",
+   "description": "chemical element with symbol Kr and atomic number 36; rare gas",
+   "hook": "is a noble gas that shares its name with the home planet of a famous comic-book superhero",
+   "known": 0.45,
+   "kind": "noble gas"
+  },
+  {
+   "label": "cobalt",
+   "qid": "Q740",
+   "fame": 0.555,
+   "named_after": "kobold",
+   "description": "chemical element with symbol Co and atomic number 27",
+   "hook": "is a metal that gives glass and pottery a deep blue color",
+   "known": 0.35,
+   "kind": "metal"
+  },
+  {
+   "label": "titanium",
+   "qid": "Q716",
+   "fame": 0.555,
+   "named_after": "titan",
+   "description": "chemical element with symbol Ti and atomic number 22",
+   "hook": "is a strong, light metal used in jet engines, bike frames and hip replacements",
+   "known": 0.7,
+   "kind": "light metal"
+  },
+  {
+   "label": "chlorine",
+   "qid": "Q688",
+   "fame": 0.545,
+   "named_after": "green",
+   "description": "chemical element with symbol Cl and atomic number 17",
+   "hook": "is a poisonous yellowish gas used to disinfect swimming pools",
+   "known": 0.75,
+   "kind": "halogen"
+  },
+  {
+   "label": "xenon",
+   "qid": "Q1106",
+   "fame": 0.544,
+   "named_after": "stranger",
+   "description": "chemical element with atomic number of 54 and heaviest stable noble gas",
+   "hook": "is a heavy noble gas used in car headlights and camera flash lamps",
+   "known": 0.35,
+   "kind": "noble gas"
+  },
+  {
+   "label": "boron",
+   "qid": "Q618",
+   "fame": 0.543,
+   "named_after": "borax",
+   "description": "chemical element with symbol B and atomic number 5",
+   "hook": "is a hard element used in laundry additives and heat-resistant lab glassware",
+   "known": 0.4,
+   "kind": "nonmetal"
+  },
+  {
+   "label": "iodine",
+   "qid": "Q1103",
+   "fame": 0.541,
+   "named_after": "violet",
+   "description": "chemical element with symbol I and atomic number 53",
+   "hook": "is a dark solid that turns to purple vapor, added to table salt to prevent thyroid problems",
+   "known": 0.65,
+   "kind": "halogen"
+  },
+  {
+   "label": "astatine",
+   "qid": "Q999",
+   "fame": 0.539,
+   "named_after": "instability",
+   "description": "chemical element with symbol At and atomic number 85",
+   "hook": "is the rarest naturally occurring element on Earth, and intensely radioactive",
+   "known": 0.05,
+   "kind": "halogen"
+  },
+  {
+   "label": "selenium",
+   "qid": "Q876",
+   "fame": 0.531,
+   "named_after": "Moon",
+   "description": "chemical element with symbol Se and atomic number 34",
+   "hook": "is a trace mineral that is essential in tiny amounts and is used in dandruff shampoo",
+   "known": 0.35,
+   "kind": "nonmetal"
+  },
+  {
+   "label": "manganese",
+   "qid": "Q731",
+   "fame": 0.53,
+   "named_after": "Magnesia Prefecture",
+   "description": "chemical element, symbol Mn and atomic number 25",
+   "hook": "is a metal added to steel to make it tougher, and is essential in small amounts for the body",
+   "known": 0.35,
+   "kind": "metal"
+  },
+  {
+   "label": "osmium",
+   "qid": "Q751",
+   "fame": 0.528,
+   "named_after": "odor",
+   "description": "chemical element with symbol Os and atomic number 76",
+   "hook": "is the densest naturally occurring element, used in pen tips",
+   "known": 0.2,
+   "kind": "precious metal"
+  },
+  {
+   "label": "palladium",
+   "qid": "Q1089",
+   "fame": 0.528,
+   "named_after": "2 Pallas",
+   "description": "chemical element with symbol Pd and atomic number 46",
+   "hook": "is a silvery metal used in catalytic converters that clean up car exhaust",
+   "known": 0.25,
+   "kind": "precious metal"
+  },
+  {
+   "label": "beryllium",
+   "qid": "Q569",
+   "fame": 0.526,
+   "named_after": "beryl",
+   "description": "chemical element with symbol Be and atomic number 4",
+   "hook": "is a light, stiff metal used in space telescope mirrors and X-ray windows",
+   "known": 0.15,
+   "kind": "light metal"
+  },
+  {
+   "label": "iridium",
+   "qid": "Q877",
+   "fame": 0.523,
+   "named_after": "Iris",
+   "description": "chemical element with symbol Ir and atomic number 77",
+   "hook": "is an extremely dense metal, rich in the layer of rock linked to the dinosaurs' extinction",
+   "known": 0.25,
+   "kind": "precious metal"
+  },
+  {
+   "label": "polonium",
+   "qid": "Q979",
+   "fame": 0.521,
+   "named_after": "Poland",
+   "description": "chemical element with symbol Po and atomic number 84",
+   "hook": "is a radioactive element discovered by Marie and Pierre Curie",
+   "known": 0.3,
+   "kind": "radioactive element"
+  },
+  {
+   "label": "bromine",
+   "qid": "Q879",
+   "fame": 0.514,
+   "named_after": "stink",
+   "description": "chemical element with symbol Br and atomic number 35",
+   "hook": "is one of only two elements that are liquid at room temperature, a reddish-brown fuming one",
+   "known": 0.4,
+   "kind": "halogen"
+  },
+  {
+   "label": "fluorine",
+   "qid": "Q650",
+   "fame": 0.514,
+   "named_after": "hydrofluoric acid",
+   "description": "chemical element with symbol F and atomic number 9",
+   "hook": "is the most reactive element, added to toothpaste to fight cavities",
+   "known": 0.65,
+   "kind": "halogen"
+  },
+  {
+   "label": "neon",
+   "qid": "Q654",
+   "fame": 0.514,
+   "named_after": "novelty",
+   "description": "chemical element with symbol Ne and atomic number 10; rare gas that glows reddish-orange in a vacuum discharge tube",
+   "hook": "is the noble gas that lights up glowing signs in shop windows",
+   "known": 0.85,
+   "kind": "noble gas"
+  },
+  {
+   "label": "argon",
+   "qid": "Q696",
+   "fame": 0.508,
+   "named_after": "laziness",
+   "description": "chemical element with symbol Ar and atomic number 18; rare gas",
+   "hook": "is the third most common gas in the air, often used to fill light bulbs",
+   "known": 0.45,
+   "kind": "noble gas"
+  },
+  {
+   "label": "calcium",
+   "qid": "Q706",
+   "fame": 0.508,
+   "named_after": "lime",
+   "description": "chemical element with symbol Ca and atomic number 20",
+   "hook": "is the mineral that builds strong bones and teeth, found in milk",
+   "known": 0.85,
+   "kind": "metal"
+  },
+  {
+   "label": "gallium",
+   "qid": "Q861",
+   "fame": 0.498,
+   "named_after": "Gaul",
+   "description": "chemical element with symbol Ga and atomic number 31",
+   "hook": "is a soft metal that melts in your hand, a favorite science-class party trick",
+   "known": 0.25,
+   "kind": "metal"
+  },
+  {
+   "label": "vanadium",
+   "qid": "Q722",
+   "fame": 0.497,
+   "named_after": "Freyja",
+   "description": "chemical element with symbol V and atomic number 23",
+   "hook": "is a metal used to strengthen steel for tools, and named for a goddess of beauty and love",
+   "known": 0.2,
+   "kind": "metal"
+  },
+  {
+   "label": "caesium",
+   "qid": "Q1108",
+   "fame": 0.489,
+   "named_after": "sky blue",
+   "description": "chemical element with symbol Cs and atomic number 55",
+   "hook": "is a soft metal that explodes on contact with liquid, used in the most precise atomic clocks",
+   "known": 0.25,
+   "kind": "metal"
+  },
+  {
+   "label": "cadmium",
+   "qid": "Q1091",
+   "fame": 0.485,
+   "named_after": "Cadmus",
+   "description": "chemical element with symbol Cd and atomic number of 48",
+   "hook": "is a toxic metal once used in rechargeable batteries and bright yellow paint pigments",
+   "known": 0.3,
+   "kind": "metal"
+  },
+  {
+   "label": "thorium",
+   "qid": "Q1115",
+   "fame": 0.485,
+   "named_after": "Thor",
+   "description": "chemical element with symbol Th and atomic number 90",
+   "hook": "is a mildly radioactive metal named for a god of thunder, studied as a possible nuclear fuel",
+   "known": 0.25,
+   "kind": "radioactive element"
+  },
+  {
+   "label": "tantalum",
+   "qid": "Q1123",
+   "fame": 0.481,
+   "named_after": "Tantalus",
+   "description": "chemical element with symbol Ta and atomic number 73",
+   "hook": "is a corrosion-resistant metal used in the capacitors inside phones and laptops",
+   "known": 0.3,
+   "kind": "metal"
+  },
+  {
+   "label": "germanium",
+   "qid": "Q867",
+   "fame": 0.475,
+   "named_after": "Germany",
+   "description": "chemical element with symbol Ge and atomic number 32",
+   "hook": "is the metalloid used in the first transistors and in fiber-optic cables",
+   "known": 0.25,
+   "kind": "metalloid"
+  },
+  {
+   "label": "moscovium",
+   "qid": "Q1303",
+   "fame": 0.473,
+   "named_after": "Moscow Oblast",
+   "description": "chemical element with symbol Mc and atomic number 115",
+   "hook": "is a superheavy element made in a lab, with an existence of mere fractions of a second",
+   "known": 0.05,
+   "kind": "superheavy element"
+  },
+  {
+   "label": "rhodium",
+   "qid": "Q1087",
+   "fame": 0.473,
+   "named_after": "rose",
+   "description": "chemical element with symbol Rh and atomic number 45",
+   "hook": "is one of the priciest precious metals, used to plate jewelry and clean up car exhaust",
+   "known": 0.2,
+   "kind": "precious metal"
+  },
+  {
+   "label": "francium",
+   "qid": "Q671",
+   "fame": 0.472,
+   "named_after": "France",
+   "description": "chemical element with symbol Fr and atomic number 87",
+   "hook": "is one of the rarest and most unstable elements, with a half-life of only about 20 minutes",
+   "known": 0.1,
+   "kind": "metal"
+  },
+  {
+   "label": "tennessine",
+   "qid": "Q1306",
+   "fame": 0.471,
+   "named_after": "Tennessee",
+   "description": "chemical element with symbol Ts and atomic number 117",
+   "hook": "is a superheavy element created in a lab, and one of the newest additions to the periodic table",
+   "known": 0.05,
+   "kind": "superheavy element"
+  },
+  {
+   "label": "californium",
+   "qid": "Q1888",
+   "fame": 0.468,
+   "named_after": "California",
+   "description": "chemical element with symbol Cf and atomic number 98",
+   "hook": "is a radioactive element used in portable neutron sources to find oil and start reactors",
+   "known": 0.15,
+   "kind": "radioactive element"
+  },
+  {
+   "label": "yttrium",
+   "qid": "Q941",
+   "fame": 0.468,
+   "named_after": "Ytterby mine",
+   "description": "chemical element with symbol Y and atomic number 39",
+   "hook": "is a metal used to make red phosphors in old color TV screens and in LEDs",
+   "known": 0.2,
+   "kind": "metal"
+  },
+  {
+   "label": "zirconium",
+   "qid": "Q1038",
+   "fame": 0.468,
+   "named_after": "zircon",
+   "description": "chemical element with symbol Zr and atomic number 40",
+   "hook": "is a metal that resists corrosion and is used in nuclear reactors and imitation diamonds",
+   "known": 0.25,
+   "kind": "metal"
+  },
+  {
+   "label": "niobium",
+   "qid": "Q1046",
+   "fame": 0.466,
+   "named_after": "Niobe",
+   "description": "chemical element with symbol Nb and atomic number 41",
+   "hook": "is a metal used in superconducting magnets and for the alloys in MRI machines",
+   "known": 0.2,
+   "kind": "metal"
+  },
+  {
+   "label": "tellurium",
+   "qid": "Q1100",
+   "fame": 0.46,
+   "named_after": "Terra",
+   "description": "chemical element with symbol Te and atomic number 52",
+   "hook": "is a brittle silvery element used in solar panels, with a garlic-like smell when absorbed by the body",
+   "known": 0.2,
+   "kind": "nonmetal"
+  },
+  {
+   "label": "strontium",
+   "qid": "Q938",
+   "fame": 0.457,
+   "named_after": "Strontian",
+   "description": "chemical element with symbol Sr and atomic number 38",
+   "hook": "is the metal that gives fireworks their brilliant crimson glow",
+   "known": 0.7,
+   "kind": "metal"
+  },
+  {
+   "label": "americium",
+   "qid": "Q1872",
+   "fame": 0.456,
+   "named_after": "Americas",
+   "description": "chemical element with symbol Am and atomic number 95",
+   "hook": "is a radioactive element found inside household smoke detectors",
+   "known": 0.4,
+   "kind": "radioactive element"
+  },
+  {
+   "label": "scandium",
+   "qid": "Q713",
+   "fame": 0.45,
+   "named_after": "Scandinavia",
+   "description": "chemical element with symbol Sc and atomic number 21",
+   "hook": "is a light metal added to aluminum alloys for stadium seats and baseball bats",
+   "known": 0.2,
+   "kind": "light metal"
+  }
+ ]
+}

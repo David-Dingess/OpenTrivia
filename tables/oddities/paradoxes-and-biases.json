@@ -1,0 +1,287 @@
+{
+ "id": "table.oddities.paradoxes-and-biases",
+ "kind": "table",
+ "title": "Famous paradoxes and cognitive biases",
+ "genre": "general",
+ "category": "oddities",
+ "topic": "paradoxes-and-biases",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { VALUES ?item { wd:Q198835 wd:Q639444 wd:Q431498 wd:Q339000 wd:Q33378 wd:Q33580 wd:Q99982 wd:Q757290 wd:Q33401 wd:Q33387 wd:Q33519 wd:Q897194 wd:Q737851 wd:Q33539 wd:Q807853 wd:Q54765858 wd:Q22732 wd:Q839726 wd:Q1960297 wd:Q557151 wd:Q2919077 wd:Q230749 wd:Q840537 wd:Q1462985 wd:Q15793988 wd:Q1930546 wd:Q3363329 wd:Q340003 wd:Q834848 wd:Q874375 wd:Q1332562 wd:Q1890213 wd:Q1474401 wd:Q1518945 wd:Q2626581 wd:Q828646 wd:Q919255 wd:Q1142663 wd:Q827144 wd:Q2874240 wd:Q653175 wd:Q1426477 wd:Q184812 wd:Q384176 wd:Q2312941 wd:Q1653973 wd:Q1440683 wd:Q1340861 wd:Q7098963 wd:Q16254302 wd:Q1156820 wd:Q575786 wd:Q908850 wd:Q3246951 wd:Q855150 wd:Q18570 wd:Q8588 wd:Q214975 wd:Q321283 wd:Q745768 wd:Q180191 wd:Q2271174 wd:Q854591 wd:Q1797373 wd:Q135381 wd:Q920134 wd:Q1337985 wd:Q56297694 wd:Q2540477 wd:Q357496 wd:Q1542752 wd:Q4885677 wd:Q16831639 wd:Q1422241 wd:Q2736597 wd:Q7242394 wd:Q111944435 } } UNION { VALUES ?cl { wd:Q1127759 wd:Q131140 } ?item wdt:P31 ?cl . } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T07:51:37.751Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T07:51:37.751Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "paradox, bias or effect",
+  "many": "paradoxes, biases and effects",
+  "hookAsk": "Which paradox, bias or effect {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Dunning–Kruger effect",
+   "qid": "Q639444",
+   "fame": 0.688,
+   "description": "cognitive bias in which incompetent people tend to assess themselves as skilled",
+   "known": 0.8,
+   "kind": "cognitive bias"
+  },
+  {
+   "label": "Schrödinger's cat",
+   "qid": "Q8588",
+   "fame": 0.644,
+   "description": "thought experiment",
+   "known": 0.8,
+   "kind": "thought experiment"
+  },
+  {
+   "label": "Streisand effect",
+   "qid": "Q22732",
+   "fame": 0.634,
+   "description": "phenomenon whereby an attempt to hide, remove, or censor a piece of information has the unintended consequence of publicizing the information more widely, usually facilitated by the Internet",
+   "known": 0.4,
+   "kind": "psychological effect"
+  },
+  {
+   "label": "Fermi paradox",
+   "qid": "Q33580",
+   "fame": 0.615,
+   "description": "apparent contradiction between the lack of evidence and high probability estimates for the existence of extraterrestrial civilizations",
+   "known": 0.2,
+   "kind": "paradox"
+  },
+  {
+   "label": "Jevons paradox",
+   "qid": "Q1474401",
+   "fame": 0.615,
+   "description": "economical theory that increased efficiency in use of a resource also tends to increase consumption of that resource",
+   "known": 0.05,
+   "kind": "paradox"
+  },
+  {
+   "label": "survivorship bias",
+   "qid": "Q2919077",
+   "fame": 0.597,
+   "description": "logical error of concentrating on the people or things that made it past some selection process and overlooking those that did not, typically because of the latter's lack of visibility",
+   "known": 0.4,
+   "kind": "cognitive bias"
+  },
+  {
+   "label": "Monty Hall problem",
+   "qid": "Q198835",
+   "fame": 0.595,
+   "description": "mathematical problem",
+   "known": 0.4,
+   "kind": "probability problem"
+  },
+  {
+   "label": "pareidolia",
+   "qid": "Q506422",
+   "fame": 0.591,
+   "description": "psychological effect of observing human faces in inanimate objects",
+   "known": 0.4,
+   "kind": "psychological effect"
+  },
+  {
+   "label": "birthday problem",
+   "qid": "Q339000",
+   "fame": 0.557,
+   "description": "mathematical problem",
+   "known": 0.2,
+   "kind": "probability problem"
+  },
+  {
+   "label": "Baader–Meinhof effect",
+   "qid": "Q60769209",
+   "fame": 0.539,
+   "description": "cognitive bias",
+   "known": 0.4,
+   "kind": "cognitive bias"
+  },
+  {
+   "label": "Hilbert's paradox of the Grand Hotel",
+   "qid": "Q828646",
+   "fame": 0.539,
+   "description": "thought experiment proposed by David Hilbert",
+   "known": 0.05,
+   "kind": "thought experiment"
+  },
+  {
+   "label": "Boy or Girl paradox",
+   "qid": "Q2271174",
+   "fame": 0.533,
+   "description": "paradox in probability theory",
+   "known": 0.05,
+   "kind": "probability problem"
+  },
+  {
+   "label": "paradox of tolerance",
+   "qid": "Q3363329",
+   "fame": 0.532,
+   "description": "logical paradox in decision-making theory",
+   "known": 0.2,
+   "kind": "paradox"
+  },
+  {
+   "label": "confirmation bias",
+   "qid": "Q431498",
+   "fame": 0.531,
+   "description": "tendency of people to favor information that confirms their beliefs or hypotheses",
+   "known": 0.6,
+   "kind": "cognitive bias"
+  },
+  {
+   "label": "Zeno's paradoxes",
+   "qid": "Q33378",
+   "fame": 0.529,
+   "description": "set of philosophical problems",
+   "known": 0.4,
+   "kind": "paradox"
+  },
+  {
+   "label": "loss aversion",
+   "qid": "Q2874240",
+   "fame": 0.522,
+   "description": "people's tendency to prefer avoiding losses to acquiring equivalent gains, a behavior first identified by Amos Tversky and Daniel Kahneman",
+   "known": 0.2,
+   "kind": "cognitive bias"
+  },
+  {
+   "label": "Barnum effect",
+   "qid": "Q653175",
+   "fame": 0.496,
+   "description": "psychological phenomenon whereby individuals give high accuracy ratings to descriptions of their personality that supposedly are tailored specifically to them, yet which are in fact vague and general enough to apply to a wide range of people",
+   "known": 0.2,
+   "kind": "psychological effect"
+  },
+  {
+   "label": "Simpson's paradox",
+   "qid": "Q757290",
+   "fame": 0.494,
+   "description": "phenomenon in probability and statistics, in which a trend appears in several different groups of data but disappears or reverses when these groups are combined",
+   "known": 0.05,
+   "kind": "probability problem"
+  },
+  {
+   "label": "halo effect",
+   "qid": "Q840537",
+   "fame": 0.488,
+   "description": "tendency for positive impressions of a person, company, brand or product in one area to positively influence one's opinion or feelings in other areas",
+   "known": 0.4,
+   "kind": "cognitive bias"
+  },
+  {
+   "label": "Russell's paradox",
+   "qid": "Q33401",
+   "fame": 0.485,
+   "description": "paradox in set theory concerning the set of all sets not containing themselves",
+   "known": 0.05,
+   "kind": "paradox"
+  },
+  {
+   "label": "serial position effect",
+   "qid": "Q1426477",
+   "fame": 0.485,
+   "description": "tendency of a person to recall the first and last items in a series best, and the middle items worst",
+   "known": 0.2,
+   "kind": "cognitive bias"
+  },
+  {
+   "label": "bystander effect",
+   "qid": "Q230749",
+   "fame": 0.479,
+   "description": "social psychological phenomenon in which individuals are less likely to offer help to a victim when other people are present",
+   "known": 0.6,
+   "kind": "psychological effect"
+  },
+  {
+   "label": "coastline paradox",
+   "qid": "Q1797373",
+   "fame": 0.474,
+   "description": "counterintuitive observation that the coastline of a landmass does not have a well-defined length",
+   "known": 0.05,
+   "kind": "paradox"
+  },
+  {
+   "label": "Hawthorne effect",
+   "qid": "Q18570",
+   "fame": 0.471,
+   "description": "type of reactivity in which individuals modify an aspect of their behavior in response to their awareness of being observed",
+   "known": 0.2,
+   "kind": "psychological effect"
+  },
+  {
+   "label": "gambler's fallacy",
+   "qid": "Q839726",
+   "fame": 0.468,
+   "description": "mistaken belief that more frequent chance events will lead to less frequent chance events, or vice versa, to balance out",
+   "known": 0.6,
+   "kind": "cognitive bias"
+  },
+  {
+   "label": "Stroop effect",
+   "qid": "Q384176",
+   "fame": 0.467,
+   "description": "effect of psychological interference on reaction time",
+   "known": 0.2,
+   "kind": "psychological effect"
+  },
+  {
+   "label": "Zeigarnik effect",
+   "qid": "Q184812",
+   "fame": 0.464,
+   "description": "psychological phenomena when an activity that has been interrupted may be more readily recalled",
+   "known": 0.05,
+   "kind": "psychological effect"
+  },
+  {
+   "label": "curse of knowledge",
+   "qid": "Q2901014",
+   "fame": 0.457,
+   "description": "cognitive bias that occurs when an individual unknowingly assumes that the others have the same background to understand",
+   "known": 0.2,
+   "kind": "cognitive bias"
+  },
+  {
+   "label": "Moravec's paradox",
+   "qid": "Q2626581",
+   "fame": 0.454,
+   "description": "observation that perception requires more computation than reasoning",
+   "known": 0.05,
+   "kind": "paradox"
+  },
+  {
+   "label": "Pygmalion effect",
+   "qid": "Q855150",
+   "fame": 0.453,
+   "description": "phenomenon whereby others’ expectations of a target person affect the target person’s performance",
+   "known": 0.2,
+   "kind": "psychological effect"
+  },
+  {
+   "label": "Mandela effect",
+   "qid": "Q54765858",
+   "fame": 0.451,
+   "description": "phenomenon in which a group of people share a collective false memory of a past event",
+   "known": 0.8,
+   "kind": "psychological effect"
+  }
+ ]
+}

@@ -1,0 +1,797 @@
+{
+ "id": "list.biology.cat-breeds",
+ "title": "Cat breeds",
+ "prompt": "Name a cat breed",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "cat-and-dog-breeds",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q43577 . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-09-30T13:36:14.144Z"
+ },
+ "rows": [
+  {
+   "label": "Maine coon",
+   "qid": "Q42659",
+   "fame": 0.646,
+   "also": [
+    "American longhair",
+    "Maine coon cat"
+   ]
+  },
+  {
+   "label": "Ragdoll",
+   "qid": "Q42688",
+   "fame": 0.588,
+   "also": [
+    "Ragdoll cat"
+   ]
+  },
+  {
+   "label": "Bengal cat",
+   "qid": "Q42583",
+   "fame": 0.584,
+   "also": [
+    "Bengal"
+   ]
+  },
+  {
+   "label": "Siamese",
+   "qid": "Q42604",
+   "fame": 0.558,
+   "also": [
+    "Siamese cat"
+   ]
+  },
+  {
+   "label": "British Shorthair",
+   "qid": "Q29273",
+   "fame": 0.549,
+   "also": []
+  },
+  {
+   "label": "Sphynx",
+   "qid": "Q42712",
+   "fame": 0.549,
+   "also": [
+    "Sphynx cat",
+    "Canadian Hairless",
+    "Canadian Sphynx"
+   ]
+  },
+  {
+   "label": "Persian cat",
+   "qid": "Q42610",
+   "fame": 0.547,
+   "also": [
+    "Persian"
+   ]
+  },
+  {
+   "label": "Siberian",
+   "qid": "Q42630",
+   "fame": 0.537,
+   "also": [
+    "Siberian cat",
+    "Siberian forest cat"
+   ]
+  },
+  {
+   "label": "Savannah",
+   "qid": "Q42670",
+   "fame": 0.531,
+   "also": [
+    "Savannah cat"
+   ]
+  },
+  {
+   "label": "Abyssinian",
+   "qid": "Q7955",
+   "fame": 0.521,
+   "also": [
+    "Abyssinian cat"
+   ]
+  },
+  {
+   "label": "Bombay",
+   "qid": "Q42566",
+   "fame": 0.52,
+   "also": [
+    "Bombay cat"
+   ]
+  },
+  {
+   "label": "Manx",
+   "qid": "Q42675",
+   "fame": 0.517,
+   "also": [
+    "Manx cat"
+   ]
+  },
+  {
+   "label": "Russian Blue",
+   "qid": "Q42654",
+   "fame": 0.514,
+   "also": [
+    "Angel ruso"
+   ]
+  },
+  {
+   "label": "Scottish Fold",
+   "qid": "Q42636",
+   "fame": 0.503,
+   "also": []
+  },
+  {
+   "label": "Norwegian Forest Cat",
+   "qid": "Q42667",
+   "fame": 0.497,
+   "also": [
+    "NFC",
+    "norsk skogkatt",
+    "skogkatt",
+    "Wegie"
+   ]
+  },
+  {
+   "label": "Oriental Shorthair",
+   "qid": "Q42696",
+   "fame": 0.481,
+   "also": [
+    "Orientale"
+   ]
+  },
+  {
+   "label": "Turkish Angora",
+   "qid": "Q42720",
+   "fame": 0.479,
+   "also": [
+    "Turkish Angora cats"
+   ]
+  },
+  {
+   "label": "Munchkin cat",
+   "qid": "Q686698",
+   "fame": 0.476,
+   "also": [
+    "Kangaroo cat",
+    "Sausage cat"
+   ]
+  },
+  {
+   "label": "Egyptian Mau",
+   "qid": "Q7295",
+   "fame": 0.474,
+   "also": []
+  },
+  {
+   "label": "American Wirehair",
+   "qid": "Q7964",
+   "fame": 0.464,
+   "also": []
+  },
+  {
+   "label": "Burmese",
+   "qid": "Q42573",
+   "fame": 0.461,
+   "also": [
+    "Burmese cat"
+   ]
+  },
+  {
+   "label": "Devon Rex",
+   "qid": "Q42570",
+   "fame": 0.459,
+   "also": []
+  },
+  {
+   "label": "American Shorthair",
+   "qid": "Q7962",
+   "fame": 0.458,
+   "also": []
+  },
+  {
+   "label": "Turkish Van",
+   "qid": "Q42724",
+   "fame": 0.456,
+   "also": [
+    "swimming cat",
+    "Turkish cat",
+    "Turkish Vankedisi"
+   ]
+  },
+  {
+   "label": "Chartreux",
+   "qid": "Q42588",
+   "fame": 0.455,
+   "also": []
+  },
+  {
+   "label": "Birman cat",
+   "qid": "Q42563",
+   "fame": 0.433,
+   "also": [
+    "Birman",
+    "Sacred Cat of Burma"
+   ]
+  },
+  {
+   "label": "Nebelung",
+   "qid": "Q42647",
+   "fame": 0.429,
+   "also": []
+  },
+  {
+   "label": "Japanese Bobtail",
+   "qid": "Q42673",
+   "fame": 0.427,
+   "also": []
+  },
+  {
+   "label": "Himalayan",
+   "qid": "Q42959",
+   "fame": 0.426,
+   "also": [
+    "Himalayan cat"
+   ]
+  },
+  {
+   "label": "Exotic Shorthair",
+   "qid": "Q42555",
+   "fame": 0.416,
+   "also": []
+  },
+  {
+   "label": "snowshoe",
+   "qid": "Q42633",
+   "fame": 0.414,
+   "also": [
+    "Snowshoe cat"
+   ]
+  },
+  {
+   "label": "Khao Manee",
+   "qid": "Q42700",
+   "fame": 0.411,
+   "also": [
+    "Diamond Eye"
+   ]
+  },
+  {
+   "label": "Cornish Rex",
+   "qid": "Q42559",
+   "fame": 0.408,
+   "also": []
+  },
+  {
+   "label": "Lykoi Cat",
+   "qid": "Q16913794",
+   "fame": 0.408,
+   "also": [
+    "Lykoi",
+    "werewolf cat",
+    "wolf cat"
+   ]
+  },
+  {
+   "label": "Havana Brown",
+   "qid": "Q42645",
+   "fame": 0.398,
+   "also": [
+    "Swiss Mountain Cats"
+   ]
+  },
+  {
+   "label": "Tonkinese",
+   "qid": "Q42726",
+   "fame": 0.396,
+   "also": [
+    "Tonkinese cat"
+   ]
+  },
+  {
+   "label": "Selkirk Rex",
+   "qid": "Q42642",
+   "fame": 0.39,
+   "also": []
+  },
+  {
+   "label": "Thai",
+   "qid": "Q42732",
+   "fame": 0.389,
+   "also": [
+    "Thai cat",
+    "Applehead",
+    "Classical Siamese",
+    "Old-Style Siamese",
+    "Old-style Siamese cat",
+    "Traditional Siamese",
+    "Wichianmat",
+    "Wichien Maat"
+   ]
+  },
+  {
+   "label": "Pixie-bob",
+   "qid": "Q42693",
+   "fame": 0.388,
+   "also": []
+  },
+  {
+   "label": "Neva Masquerade",
+   "qid": "Q42599",
+   "fame": 0.382,
+   "also": [
+    "Neva Masquerade cat"
+   ]
+  },
+  {
+   "label": "Ocicat",
+   "qid": "Q42685",
+   "fame": 0.381,
+   "also": []
+  },
+  {
+   "label": "Balinese cat",
+   "qid": "Q9665",
+   "fame": 0.377,
+   "also": []
+  },
+  {
+   "label": "Singapura",
+   "qid": "Q42679",
+   "fame": 0.376,
+   "also": [
+    "Singapura cat"
+   ]
+  },
+  {
+   "label": "Chausie",
+   "qid": "Q42546",
+   "fame": 0.372,
+   "also": []
+  },
+  {
+   "label": "European Shorthair",
+   "qid": "Q20793",
+   "fame": 0.372,
+   "also": [
+    "Celtic",
+    "pelo corto celta"
+   ]
+  },
+  {
+   "label": "Aegean cat",
+   "qid": "Q7957",
+   "fame": 0.371,
+   "also": []
+  },
+  {
+   "label": "Highlander cat",
+   "qid": "Q25471053",
+   "fame": 0.37,
+   "also": []
+  },
+  {
+   "label": "Toyger",
+   "qid": "Q7323",
+   "fame": 0.37,
+   "also": []
+  },
+  {
+   "label": "Korat",
+   "qid": "Q42691",
+   "fame": 0.367,
+   "also": []
+  },
+  {
+   "label": "Traditional Persian",
+   "qid": "Q7832303",
+   "fame": 0.366,
+   "also": [
+    "Old-style Longhair",
+    "Original Longhair",
+    "Traditional Longhair"
+   ]
+  },
+  {
+   "label": "Ragamuffin",
+   "qid": "Q42637",
+   "fame": 0.365,
+   "also": [
+    "Ragamuffin cat"
+   ]
+  },
+  {
+   "label": "Minuet cat",
+   "qid": "Q6965006",
+   "fame": 0.364,
+   "also": [
+    "Napoleon"
+   ]
+  },
+  {
+   "label": "Peterbald",
+   "qid": "Q42663",
+   "fame": 0.363,
+   "also": []
+  },
+  {
+   "label": "American Bobtail",
+   "qid": "Q7874",
+   "fame": 0.362,
+   "also": []
+  },
+  {
+   "label": "Donskoy cat",
+   "qid": "Q7303",
+   "fame": 0.361,
+   "also": [
+    "Don Hairless",
+    "Don Sphynx",
+    "Russian Hairless"
+   ]
+  },
+  {
+   "label": "Dragon Li",
+   "qid": "Q7334",
+   "fame": 0.358,
+   "also": [
+    "Li Mao",
+    "Li Hua",
+    "China Li Hua",
+    "Chinese Li Hua",
+    "Li Hua Mao",
+    "Li Hua Mau"
+   ]
+  },
+  {
+   "label": "Arabian Mau",
+   "qid": "Q7970",
+   "fame": 0.353,
+   "also": []
+  },
+  {
+   "label": "American Curl",
+   "qid": "Q7960",
+   "fame": 0.351,
+   "also": [
+    "American Curl Longhair"
+   ]
+  },
+  {
+   "label": "Chantilly",
+   "qid": "Q392693",
+   "fame": 0.343,
+   "also": [
+    "Chantilly-Tiffany",
+    "Foreign Longhair",
+    "Chantilly cat"
+   ]
+  },
+  {
+   "label": "domestic short-haired cat",
+   "qid": "Q12648",
+   "fame": 0.336,
+   "also": [
+    "house cat",
+    "alley cat",
+    "domestic shorthair"
+   ]
+  },
+  {
+   "label": "Somali",
+   "qid": "Q42715",
+   "fame": 0.334,
+   "also": [
+    "Somali cat"
+   ]
+  },
+  {
+   "label": "Cymric",
+   "qid": "Q42578",
+   "fame": 0.323,
+   "also": [
+    "Cymric cat"
+   ]
+  },
+  {
+   "label": "LaPerm",
+   "qid": "Q42639",
+   "fame": 0.323,
+   "also": []
+  },
+  {
+   "label": "Ojos Azules",
+   "qid": "Q42640",
+   "fame": 0.321,
+   "also": [
+    "Ojos Azules cat"
+   ]
+  },
+  {
+   "label": "Kanaani cat",
+   "qid": "Q125490258",
+   "fame": 0.307,
+   "also": [
+    "Kanaani"
+   ]
+  },
+  {
+   "label": "Kurilian Bobtail",
+   "qid": "Q7338",
+   "fame": 0.305,
+   "also": [
+    "Kurile Island Bobtail",
+    "Kurilian Bobtail cat"
+   ]
+  },
+  {
+   "label": "Australian Mist",
+   "qid": "Q7989",
+   "fame": 0.303,
+   "also": [
+    "Aussie cat",
+    "Spotted Mist"
+   ]
+  },
+  {
+   "label": "Oriental Longhair",
+   "qid": "Q2099338",
+   "fame": 0.302,
+   "also": [
+    "Javanese",
+    "Mandarin",
+    "JAV",
+    "OLH",
+    "British angora",
+    "Javanese cat",
+    "Oriental Longhair cat"
+   ]
+  },
+  {
+   "label": "Asian",
+   "qid": "Q7974",
+   "fame": 0.296,
+   "also": [
+    "Asian cat",
+    "Malayan"
+   ]
+  },
+  {
+   "label": "Sokoke",
+   "qid": "Q2075066",
+   "fame": 0.294,
+   "also": [
+    "African Shorthair",
+    "Sokoke Forest Cat"
+   ]
+  },
+  {
+   "label": "Serengeti cat",
+   "qid": "Q7308",
+   "fame": 0.292,
+   "also": [
+    "Serengeti"
+   ]
+  },
+  {
+   "label": "Colorpoint Shorthair",
+   "qid": "Q4115865",
+   "fame": 0.288,
+   "also": []
+  },
+  {
+   "label": "Javanese",
+   "qid": "Q42661",
+   "fame": 0.284,
+   "also": [
+    "Javanese cat"
+   ]
+  },
+  {
+   "label": "Burmilla",
+   "qid": "Q29258",
+   "fame": 0.271,
+   "also": []
+  },
+  {
+   "label": "York Chocolate",
+   "qid": "Q2166017",
+   "fame": 0.268,
+   "also": []
+  },
+  {
+   "label": "Minskin",
+   "qid": "Q3039052",
+   "fame": 0.264,
+   "also": []
+  },
+  {
+   "label": "Ukrainian Levkoy",
+   "qid": "Q2642315",
+   "fame": 0.251,
+   "also": []
+  },
+  {
+   "label": "Aphrodite's Giant",
+   "qid": "Q5200515",
+   "fame": 0.247,
+   "also": [
+    "Aphrodite",
+    "Aphrodite's Giant cat",
+    "Aphrodite Giant"
+   ]
+  },
+  {
+   "label": "German Rex",
+   "qid": "Q42551",
+   "fame": 0.247,
+   "also": []
+  },
+  {
+   "label": "British Longhair",
+   "qid": "Q29268",
+   "fame": 0.241,
+   "also": [
+    "Highlander",
+    "Britannica",
+    "Highland Straight"
+   ]
+  },
+  {
+   "label": "Jianzhou cat",
+   "qid": "Q131191857",
+   "fame": 0.238,
+   "also": []
+  },
+  {
+   "label": "Brazilian Shorthair",
+   "qid": "Q29280",
+   "fame": 0.229,
+   "also": []
+  },
+  {
+   "label": "Toybob",
+   "qid": "Q30595152",
+   "fame": 0.228,
+   "also": []
+  },
+  {
+   "label": "domestic long-haired cat",
+   "qid": "Q42549",
+   "fame": 0.224,
+   "also": [
+    "domestic longhair"
+   ]
+  },
+  {
+   "label": "Suphalak",
+   "qid": "Q21002394",
+   "fame": 0.224,
+   "also": []
+  },
+  {
+   "label": "Mekong Bobtail",
+   "qid": "Q16889346",
+   "fame": 0.219,
+   "also": []
+  },
+  {
+   "label": "Russian White, Black and Tabby",
+   "qid": "Q13035968",
+   "fame": 0.218,
+   "also": []
+  },
+  {
+   "label": "Bambino",
+   "qid": "Q9667",
+   "fame": 0.208,
+   "also": [
+    "Bambino cat",
+    "Bambino Sphynx",
+    "Mèo Bambino"
+   ]
+  },
+  {
+   "label": "Raas",
+   "qid": "Q17517549",
+   "fame": 0.208,
+   "also": [
+    "Raas cat",
+    "Busok",
+    "Madura cat"
+   ]
+  },
+  {
+   "label": "squitten",
+   "qid": "Q7582359",
+   "fame": 0.204,
+   "also": []
+  },
+  {
+   "label": "California Spangled",
+   "qid": "Q42556",
+   "fame": 0.2,
+   "also": [
+    "California Spangled Cat"
+   ]
+  },
+  {
+   "label": "Rex mutation",
+   "qid": "Q42949",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tiffanie",
+   "qid": "Q7986",
+   "fame": 0.173,
+   "also": [
+    "Asian longhair",
+    "Asian semi-longhair",
+    "Burmilla longhair"
+   ]
+  },
+  {
+   "label": "FoldEx cat",
+   "qid": "Q17632871",
+   "fame": 0.164,
+   "also": [
+    "Foldex"
+   ]
+  },
+  {
+   "label": "Foreign White",
+   "qid": "Q42727",
+   "fame": 0.159,
+   "also": [
+    "White Siamese"
+   ]
+  },
+  {
+   "label": "Karelian Bobtail",
+   "qid": "Q4214935",
+   "fame": 0.127,
+   "also": []
+  },
+  {
+   "label": "Oriental Bicolour",
+   "qid": "Q7102323",
+   "fame": 0.118,
+   "also": []
+  },
+  {
+   "label": "Bohemian Rex",
+   "qid": "Q2778716",
+   "fame": 0.051,
+   "also": []
+  },
+  {
+   "label": "British Semi-longhair",
+   "qid": "Q29285",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Suffolk",
+   "qid": "Q132158203",
+   "fame": 0,
+   "also": [
+    "Suffolk cat",
+    "suffolk cats"
+   ]
+  },
+  {
+   "label": "Thai Lilac",
+   "qid": "Q119884431",
+   "fame": 0,
+   "also": [
+    "Thai Blue Point",
+    "Thai Lilac Point"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1170 @@
+{
+ "id": "table.sports.pro-wrestlers-birthplace",
+ "kind": "table",
+ "title": "Famous pro wrestlers and the city they were born in",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "wrestling",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?birthLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?b) AS ?birth) (COUNT(DISTINCT ?b) AS ?nb) WHERE { ?item wdt:P31 wd:Q5 ; wdt:P106 wd:Q13474373 ; wdt:P19 ?b ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 25) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 400 } hint:Prior hint:runFirst true . FILTER(?nb = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T08:28:28.506Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T08:28:28.506Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "birthplace",
+   "label": "Born in",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "wrestler",
+  "many": "wrestlers",
+  "wildcard": "person",
+  "hookAsk": "Which wrestler {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "birthplace": {
+    "role": "code",
+    "pick": "Which city was the wrestler {label} born in?",
+    "statement": "{label} was born in {value}.",
+    "match": "Match each wrestler to the city where they were born.",
+    "reverse": "Which wrestler was born in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Pac",
+   "qid": "Q2896228",
+   "fame": 0.913,
+   "birthplace": "Newcastle upon Tyne",
+   "description": "English professional wrestler (1986–2026)",
+   "hook": "flew from the top rope as a high-flying star known as the Man Who Fell From the Sky",
+   "known": 0.4,
+   "kind": "male"
+  },
+  {
+   "label": "Dwayne Johnson",
+   "qid": "Q10738",
+   "fame": 0.75,
+   "birthplace": "Hayward",
+   "description": "American actor and professional wrestler (born 1972)",
+   "hook": "left the ring for Hollywood and became one of the highest-paid movie stars, raising an eyebrow along the way",
+   "known": 0.95,
+   "kind": "male"
+  },
+  {
+   "label": "John Cena",
+   "qid": "Q44437",
+   "fame": 0.728,
+   "birthplace": "West Newbury",
+   "description": "American actor and professional wrestler (born 1977)",
+   "hook": "waves a hand in front of his face and says you cannot see him, before starring in movies",
+   "known": 0.9,
+   "kind": "male"
+  },
+  {
+   "label": "Dave Bautista",
+   "qid": "Q44158",
+   "fame": 0.711,
+   "birthplace": "Washington, D.C.",
+   "description": "American actor and former professional wrestler (born 1969)",
+   "hook": "went from the ring to playing Drax in a Marvel space-hero franchise",
+   "known": 0.8,
+   "kind": "male"
+  },
+  {
+   "label": "Hulk Hogan",
+   "qid": "Q44176",
+   "fame": 0.709,
+   "birthplace": "Augusta",
+   "description": "American professional wrestler, actor and television personality (1953–2025)",
+   "hook": "wore a yellow bandana and told fans to say your prayers and take your vitamins",
+   "known": 0.95,
+   "kind": "male"
+  },
+  {
+   "label": "Roman Reigns",
+   "qid": "Q275971",
+   "fame": 0.685,
+   "birthplace": "Pensacola",
+   "description": "American professional wrestler",
+   "hook": "leads a family called the Bloodline and is known as the Tribal Chief",
+   "known": 0.6,
+   "kind": "male"
+  },
+  {
+   "label": "Cody Rhodes",
+   "qid": "Q299222",
+   "fame": 0.664,
+   "birthplace": "Charlotte",
+   "description": "American professional wrestler",
+   "hook": "finished his story by winning the top title at the biggest annual show, after chasing his late father legacy",
+   "known": 0.4,
+   "kind": "male"
+  },
+  {
+   "label": "Sting",
+   "qid": "Q44640",
+   "fame": 0.661,
+   "birthplace": "Omaha",
+   "description": "American professional wrestler",
+   "hook": "painted his face black and white and rappelled down from arena rafters with a baseball bat",
+   "known": 0.8,
+   "kind": "male"
+  },
+  {
+   "label": "André the Giant",
+   "qid": "Q44368",
+   "fame": 0.657,
+   "birthplace": "Coulommiers",
+   "description": "French professional wrestler and actor (1946–1993)",
+   "hook": "stood over seven feet tall and was billed as the Eighth Wonder of the World",
+   "known": 0.95,
+   "kind": "male"
+  },
+  {
+   "label": "Ric Flair",
+   "qid": "Q44546",
+   "fame": 0.651,
+   "birthplace": "Memphis",
+   "description": "American professional wrestler",
+   "hook": "strutted in flashy robes, wooooo-ing his way to a record number of world title reigns",
+   "known": 0.9,
+   "kind": "male"
+  },
+  {
+   "label": "The Undertaker",
+   "qid": "Q44304",
+   "fame": 0.646,
+   "birthplace": "Houston",
+   "description": "American professional wrestler",
+   "hook": "is the Deadman who rises from a coffin, with a famously unbeaten streak at the biggest annual show",
+   "known": 0.9,
+   "kind": "male"
+  },
+  {
+   "label": "Brock Lesnar",
+   "qid": "Q220556",
+   "fame": 0.644,
+   "birthplace": "Webster",
+   "description": "American professional wrestler, mixed martial artist and football player (born 1977)",
+   "hook": "left the ring to try mixed martial arts and the UFC, then came back as the Beast Incarnate",
+   "known": 0.7,
+   "kind": "male"
+  },
+  {
+   "label": "CM Punk",
+   "qid": "Q215447",
+   "fame": 0.643,
+   "birthplace": "Chicago",
+   "description": "American professional wrestler, actor, and retired mixed martial artist",
+   "hook": "is straight-edge, cut a famous pipe-bomb speech, and walked out on the company with the title",
+   "known": 0.5,
+   "kind": "male"
+  },
+  {
+   "label": "Kane",
+   "qid": "Q44354",
+   "fame": 0.637,
+   "birthplace": "Torrejón de Ardoz",
+   "description": "American professional wrestler, actor, and politician",
+   "hook": "is the Big Red Machine, a masked monster brother of the Undertaker",
+   "known": 0.6,
+   "kind": "male"
+  },
+  {
+   "label": "Sami Zayn",
+   "qid": "Q376402",
+   "fame": 0.637,
+   "birthplace": "Laval",
+   "description": "Canadian professional wrestler",
+   "hook": "is a fan favorite who won over crowds as an underdog after being fought by a powerful faction",
+   "known": 0.3,
+   "kind": "male"
+  },
+  {
+   "label": "Chyna",
+   "qid": "Q466683",
+   "fame": 0.636,
+   "birthplace": "Rochester",
+   "description": "American professional wrestler and actress (1969-2016)",
+   "hook": "was the Ninth Wonder of the World, a muscled woman who competed against the men",
+   "known": 0.5,
+   "kind": "female"
+  },
+  {
+   "label": "Roddy Piper",
+   "qid": "Q59630",
+   "fame": 0.631,
+   "birthplace": "Saskatoon",
+   "description": "Canadian professional wrestler (1954–2015)",
+   "hook": "was Rowdy, a kilt-wearing brawler who hosted a famous talk segment, and starred in a cult sci-fi film",
+   "known": 0.7,
+   "kind": "male"
+  },
+  {
+   "label": "Triple H",
+   "qid": "Q44567",
+   "fame": 0.631,
+   "birthplace": "Nashua",
+   "description": "American professional wrestler",
+   "hook": "is the Game, a founder of D-Generation X who married the boss daughter and later ran the creative side",
+   "known": 0.6,
+   "kind": "male"
+  },
+  {
+   "label": "Eddie Guerrero",
+   "qid": "Q44374",
+   "fame": 0.624,
+   "birthplace": "El Paso",
+   "description": "American wrestler (1967–2005)",
+   "hook": "lied, cheated and stole his way to fans hearts, and splashed from the top rope with a frog splash",
+   "known": 0.6,
+   "kind": "male"
+  },
+  {
+   "label": "Randy Savage",
+   "qid": "Q59635",
+   "fame": 0.624,
+   "birthplace": "Columbus",
+   "description": "American professional wrestler (1952–2011)",
+   "hook": "was the Macho Man, a sunglasses-wearing star who yelled Ooh yeah and sold a beef jerky brand",
+   "known": 0.9,
+   "kind": "male"
+  },
+  {
+   "label": "Stone Cold Steve Austin",
+   "qid": "Q44313",
+   "fame": 0.62,
+   "birthplace": "Austin",
+   "description": "American professional wrestler and actor",
+   "hook": "was a bald, beer-guzzling rebel who battled his boss, and stunned with a Stunner",
+   "known": 0.95,
+   "kind": "male"
+  },
+  {
+   "label": "Rhea Ripley",
+   "qid": "Q56259738",
+   "fame": 0.617,
+   "birthplace": "Adelaide",
+   "description": "Australian professional wrestler",
+   "hook": "is the Eradicator, a goth-styled star who won the women Royal Rumble",
+   "known": 0.2,
+   "kind": "female"
+  },
+  {
+   "label": "Bryan Danielson",
+   "qid": "Q299355",
+   "fame": 0.611,
+   "birthplace": "Aberdeen",
+   "description": "American professional wrestler",
+   "hook": "is a technical master who yelled Yes! as a crowd chant and led the Yes Movement",
+   "known": 0.4,
+   "kind": "male"
+  },
+  {
+   "label": "Jon Moxley",
+   "qid": "Q113384",
+   "fame": 0.611,
+   "birthplace": "Cincinnati",
+   "description": "American professional wrestler and actor",
+   "hook": "is a hardcore brawler who started in a chaotic Shield trio and later jumped to a rival company as a champion",
+   "known": 0.3,
+   "kind": "male"
+  },
+  {
+   "label": "Kurt Angle",
+   "qid": "Q44453",
+   "fame": 0.61,
+   "birthplace": "Mt. Lebanon",
+   "description": "American professional wrestler and 1996 Olympic gold medalist",
+   "hook": "won an Olympic gold medal in freestyle wrestling with a broken neck before turning pro",
+   "known": 0.8,
+   "kind": "male"
+  },
+  {
+   "label": "Místico",
+   "qid": "Q317717",
+   "fame": 0.607,
+   "birthplace": "Mexico City",
+   "description": "Mexican professional wrestler",
+   "hook": "wears a famous mask in the lucha libre style and became a legend of Mexican wrestling",
+   "known": 0.2,
+   "kind": "male"
+  },
+  {
+   "label": "Shawn Michaels",
+   "qid": "Q31317",
+   "fame": 0.603,
+   "birthplace": "Chandler",
+   "description": "American professional wrestler",
+   "hook": "is the Heartbreak Kid, who delivers Sweet Chin Music and stole the show in ladder matches",
+   "known": 0.8,
+   "kind": "male"
+  },
+  {
+   "label": "Randy Orton",
+   "qid": "Q44449",
+   "fame": 0.602,
+   "birthplace": "Knoxville",
+   "description": "American professional wrestler (born 1980)",
+   "hook": "is the Viper, who hits an RKO out of nowhere",
+   "known": 0.6,
+   "kind": "male"
+  },
+  {
+   "label": "Bill Goldberg",
+   "qid": "Q115547",
+   "fame": 0.6,
+   "birthplace": "Tulsa",
+   "description": "American professional wrestler and football player (born 1966)",
+   "hook": "burst through flames in a famous streak of wins, then roared Who is next",
+   "known": 0.8,
+   "kind": "male"
+  },
+  {
+   "label": "The Great Khali",
+   "qid": "Q44482",
+   "fame": 0.599,
+   "birthplace": "Dhiraina",
+   "description": "Indian-American professional wrestler, actor and powerlifter",
+   "hook": "is a giant from India, over seven feet tall, who became the first of his nation to win a major title",
+   "known": 0.5,
+   "kind": "male"
+  },
+  {
+   "label": "Owen Hart",
+   "qid": "Q317365",
+   "fame": 0.596,
+   "birthplace": "Calgary",
+   "description": "Canadian wrestler (1965-1999)",
+   "hook": "was the Rocket, a high-flying star whose life ended in a tragic stunt accident at a big show",
+   "known": 0.5,
+   "kind": "male"
+  },
+  {
+   "label": "Bray Wyatt",
+   "qid": "Q1139993",
+   "fame": 0.595,
+   "birthplace": "Brooksville",
+   "description": "American professional wrestler (1987–2023)",
+   "hook": "led a cult-like family from a swamp, carrying a lantern and putting on a Fiend persona",
+   "known": 0.4,
+   "kind": "male"
+  },
+  {
+   "label": "Bret Hart",
+   "qid": "Q81324",
+   "fame": 0.594,
+   "birthplace": "Calgary",
+   "description": "Canadian-American professional wrestler, writer and actor",
+   "hook": "is the Hitman, a pink-and-black clad technician known for the Sharpshooter",
+   "known": 0.9,
+   "kind": "male"
+  },
+  {
+   "label": "Edge",
+   "qid": "Q44164",
+   "fame": 0.594,
+   "birthplace": "Orangeville",
+   "description": "Canadian professional wrestler and actor (born 1973)",
+   "hook": "is a Rated R Superstar, a ladder-match pioneer who spears opponents, and later starred in a Vikings-set show",
+   "known": 0.7,
+   "kind": "male"
+  },
+  {
+   "label": "Chris Jericho",
+   "qid": "Q44144",
+   "fame": 0.591,
+   "birthplace": "Manhasset",
+   "description": "American-Canadian professional wrestler (born 1970)",
+   "hook": "is the Ayatollah of Rock n Rolla, the first undisputed champion, and fronts a heavy metal band",
+   "known": 0.8,
+   "kind": "male"
+  },
+  {
+   "label": "Charlotte Flair",
+   "qid": "Q2891336",
+   "fame": 0.589,
+   "birthplace": "Charlotte",
+   "description": "American professional wrestler and actress",
+   "hook": "is the Queen, a record-setting daughter of the Nature Boy who wins many women titles",
+   "known": 0.5,
+   "kind": "female"
+  },
+  {
+   "label": "Mercedes Moné",
+   "qid": "Q6818195",
+   "fame": 0.582,
+   "birthplace": "Fairfield",
+   "description": "American professional wrestler and actress",
+   "hook": "is the Boss, who walked out of a major promotion and later jumped to a rival group as a champion",
+   "known": 0.3,
+   "kind": "female"
+  },
+  {
+   "label": "Paul Wight",
+   "qid": "Q44378",
+   "fame": 0.582,
+   "birthplace": "Aiken",
+   "description": "American professional wrestler and actor",
+   "hook": "is a seven-foot Big Show, once billed as the son of a giant, and a longtime heavyweight champion",
+   "known": 0.8,
+   "kind": "male"
+  },
+  {
+   "label": "Dusty Rhodes",
+   "qid": "Q361235",
+   "fame": 0.581,
+   "birthplace": "Austin",
+   "description": "American professional wrestler (1945–2015)",
+   "hook": "was the American Dream, a son-of-a-plumber storyteller known for his lisp and polka dots",
+   "known": 0.8,
+   "kind": "male"
+  },
+  {
+   "label": "Rikishi",
+   "qid": "Q360518",
+   "fame": 0.581,
+   "birthplace": "San Francisco",
+   "description": "American professional wrestler",
+   "hook": "was a member of a Samoan dynasty, and his huge backside famously sat on opponents",
+   "known": 0.6,
+   "kind": "male"
+  },
+  {
+   "label": "Kofi Kingston",
+   "qid": "Q44349",
+   "fame": 0.576,
+   "birthplace": "Kumasi",
+   "description": "Ghanaian-American professional wrestler",
+   "hook": "is a member of a trio called New Day, whose dance moves came with a Trouble in Paradise kick",
+   "known": 0.5,
+   "kind": "male"
+  },
+  {
+   "label": "Mick Foley",
+   "qid": "Q10731",
+   "fame": 0.573,
+   "birthplace": "Bloomington",
+   "description": "American professional wrestler",
+   "hook": "is a hardcore legend with many personas, famous for a tumble from the top of a steel cage",
+   "known": 0.8,
+   "kind": "male"
+  },
+  {
+   "label": "Scott Hall",
+   "qid": "Q352713",
+   "fame": 0.573,
+   "birthplace": "St. Mary's County",
+   "description": "American professional wrestler (1958–2022)",
+   "hook": "was the Bad Guy Razor Ramon, who flicked a toothpick and said Say hello to him",
+   "known": 0.7,
+   "kind": "male"
+  },
+  {
+   "label": "Drew McIntyre",
+   "qid": "Q311944",
+   "fame": 0.57,
+   "birthplace": "Ayr",
+   "description": "Scottish professional wrestler",
+   "hook": "is the Scottish Psychopath who became a champion after his talent was recognized at a big show",
+   "known": 0.4,
+   "kind": "male"
+  },
+  {
+   "label": "Kevin Nash",
+   "qid": "Q280793",
+   "fame": 0.569,
+   "birthplace": "Trenton",
+   "description": "American professional wrestler (born 1959)",
+   "hook": "is a tall member of the Outsiders and the nWo, and later appeared in a stripper movie",
+   "known": 0.6,
+   "kind": "male"
+  },
+  {
+   "label": "Bayley",
+   "qid": "Q5279406",
+   "fame": 0.566,
+   "birthplace": "Newark",
+   "description": "American professional wrestler",
+   "hook": "is a hugger who rose from a big fan of the show to a Grand Slam champion",
+   "known": 0.3,
+   "kind": "female"
+  },
+  {
+   "label": "Dustin Rhodes",
+   "qid": "Q314657",
+   "fame": 0.565,
+   "birthplace": "Austin",
+   "description": "American professional wrestler",
+   "hook": "is a son of the American Dream who played a gold-painted star called Goldust",
+   "known": 0.5,
+   "kind": "male"
+  },
+  {
+   "label": "Yokozuna",
+   "qid": "Q314633",
+   "fame": 0.556,
+   "birthplace": "San Francisco",
+   "description": "American professional wrestler (1966-2000)",
+   "hook": "was a huge, sumo-style champion who topped three hundred pounds and won a major title before his sudden death",
+   "known": 0.6,
+   "kind": "male"
+  },
+  {
+   "label": "Alexa Bliss",
+   "qid": "Q16525974",
+   "fame": 0.555,
+   "birthplace": "Columbus",
+   "description": "American professional wrestler",
+   "hook": "is a Little Miss with a doll-like gimmick, a fiendish side, and many women titles",
+   "known": 0.3,
+   "kind": "female"
+  },
+  {
+   "label": "Jeff Hardy",
+   "qid": "Q44137",
+   "fame": 0.555,
+   "birthplace": "Cameron",
+   "description": "American professional wrestler",
+   "hook": "is a daredevil Charismatic Enigma, known for a daring Swanton Bomb from great heights",
+   "known": 0.8,
+   "kind": "male"
+  },
+  {
+   "label": "Becky Lynch",
+   "qid": "Q7301800",
+   "fame": 0.552,
+   "birthplace": "Limerick",
+   "description": "Irish professional wrestler and actress",
+   "hook": "is the Man, who rose from the Four Horsewomen and held two top titles at once",
+   "known": 0.5,
+   "kind": "female"
+  },
+  {
+   "label": "Lex Luger",
+   "qid": "Q115347",
+   "fame": 0.552,
+   "birthplace": "Buffalo",
+   "description": "American professional wrestler",
+   "hook": "was the Total Package, a muscle-bound star who body-slammed a giant on a famous ship",
+   "known": 0.7,
+   "kind": "male"
+  },
+  {
+   "label": "Sheamus",
+   "qid": "Q222039",
+   "fame": 0.552,
+   "birthplace": "Dublin",
+   "description": "Irish professional wrestler and actor",
+   "hook": "is the Celtic Warrior, a pale Irishman whose Brogue Kick ends matches",
+   "known": 0.5,
+   "kind": "male"
+  },
+  {
+   "label": "Mark Henry",
+   "qid": "Q310073",
+   "fame": 0.551,
+   "birthplace": "Silsbee",
+   "description": "American professional wrestler and weightlifter",
+   "hook": "is the World Strongest Man, an Olympic weightlifter who tells opponents about Hall of Pain",
+   "known": 0.6,
+   "kind": "male"
+  },
+  {
+   "label": "The Ultimate Warrior",
+   "qid": "Q333421",
+   "fame": 0.551,
+   "birthplace": "Crawfordsville",
+   "description": "American professional wrestler and bodybuilder (1959-2014)",
+   "hook": "ran to the ring with face paint and tassels, and famously ended the Hulkamania title reign at a huge show",
+   "known": 0.8,
+   "kind": "male"
+  },
+  {
+   "label": "The Miz",
+   "qid": "Q44379",
+   "fame": 0.549,
+   "birthplace": "Parma",
+   "description": "American professional wrestler, actor and television personality (born 1980)",
+   "hook": "is a reality-TV graduate and a skilled talker who says he is awesome",
+   "known": 0.4,
+   "kind": "male"
+  },
+  {
+   "label": "Paige",
+   "qid": "Q2277711",
+   "fame": 0.548,
+   "birthplace": "Norwich",
+   "description": "British professional wrestler and actress",
+   "hook": "is a Anti-Diva from a wrestling family, debuted as the youngest holder of a women title",
+   "known": 0.4,
+   "kind": "female"
+  },
+  {
+   "label": "Jerry Lawler",
+   "qid": "Q345019",
+   "fame": 0.547,
+   "birthplace": "Memphis",
+   "description": "American professional wrestler and color commentator",
+   "hook": "is the King, known for feuds with a comedian and for years of loud commentary",
+   "known": 0.6,
+   "kind": "male"
+  },
+  {
+   "label": "AJ Lee",
+   "qid": "Q624017",
+   "fame": 0.546,
+   "birthplace": "Union City",
+   "description": "American professional wrestler and author",
+   "hook": "skipped around the ring, was a comic-book fan and a three-time Divas champion",
+   "known": 0.5,
+   "kind": "female"
+  },
+  {
+   "label": "Samoa Joe",
+   "qid": "Q381825",
+   "fame": 0.545,
+   "birthplace": "Orange County",
+   "description": "American professional wrestler",
+   "hook": "is the Samoan Submission Machine, who made opponents tap with the Coquina Clutch",
+   "known": 0.4,
+   "kind": "male"
+  },
+  {
+   "label": "Baron Corbin",
+   "qid": "Q3990706",
+   "fame": 0.543,
+   "birthplace": "Lenexa",
+   "description": "American professional wrestler",
+   "hook": "was a WWE heel who cashed in a Money in the Bank briefcase and loved to call himself the lone wolf",
+   "known": 0.3,
+   "kind": "male"
+  },
+  {
+   "label": "Jake Hager",
+   "qid": "Q313087",
+   "fame": 0.542,
+   "birthplace": "Fargo",
+   "description": "Former american professional wrestler and mixed martial arts (MMA) fighter",
+   "hook": "won an NCAA wrestling title before becoming a WWE champion and later a founding member of the Inner Circle",
+   "known": 0.3,
+   "kind": "male"
+  },
+  {
+   "label": "Brodie Lee",
+   "qid": "Q591915",
+   "fame": 0.539,
+   "birthplace": "Rochester",
+   "description": "American professional wrestler (1979–2020)",
+   "hook": "led the Dark Order in AEW and was a bearded, brooding leader of the Wyatt Family in WWE",
+   "known": 0.3,
+   "kind": "male"
+  },
+  {
+   "label": "John Morrison",
+   "qid": "Q259180",
+   "fame": 0.539,
+   "birthplace": "Los Angeles",
+   "description": "American professional wrestler",
+   "hook": "is a flashy, acrobatic star known for the Starship Pain and Hollywood-style persona",
+   "known": 0.4,
+   "kind": "male"
+  },
+  {
+   "label": "Kevin Owens",
+   "qid": "Q609472",
+   "fame": 0.537,
+   "birthplace": "Saint-Jean-sur-Richelieu",
+   "description": "Canadian professional wrestler",
+   "hook": "is a bearded, brawling Universal Champion who made a habit of powerbombing opponents through announce tables",
+   "known": 0.3,
+   "kind": "male"
+  },
+  {
+   "label": "Nattie",
+   "qid": "Q231508",
+   "fame": 0.537,
+   "birthplace": "Calgary",
+   "description": "Canadian professional wrestler and professional wrestling manager",
+   "hook": "is a Hart-family wrestler who won the Divas title and the women's tag belts as a fan favorite",
+   "known": 0.3,
+   "kind": "female"
+  },
+  {
+   "label": "Braun Strowman",
+   "qid": "Q4679732",
+   "fame": 0.535,
+   "birthplace": "Sherrills Ford",
+   "description": "American professional wrestler and strongman",
+   "hook": "is a towering former strongman known as the Monster Among Men who once flipped over an ambulance",
+   "known": 0.4,
+   "kind": "male"
+  },
+  {
+   "label": "Christian",
+   "qid": "Q44537",
+   "fame": 0.533,
+   "birthplace": "Kitchener",
+   "description": "Canadian professional wrestler and actor",
+   "hook": "spent years as the loyal tag partner of Edge before winning the world title with a Killswitch finisher",
+   "known": 0.5,
+   "kind": "male"
+  },
+  {
+   "label": "Naomi",
+   "qid": "Q3119295",
+   "fame": 0.533,
+   "birthplace": "Sanford",
+   "description": "American professional wrestler",
+   "hook": "won the WWE Smackdown Women's Championship and is known for dazzling lights-up entrances and the Glow gimmick",
+   "known": 0.3,
+   "kind": "female"
+  },
+  {
+   "label": "Trish Stratus",
+   "qid": "Q229310",
+   "fame": 0.533,
+   "birthplace": "Toronto",
+   "description": "Canadian professional wrestler",
+   "hook": "is a seven-time women's champion who became the face of WWE's Diva era and was inducted into the Hall of Fame",
+   "known": 0.8,
+   "kind": "female"
+  },
+  {
+   "label": "John Layfield",
+   "qid": "Q44692",
+   "fame": 0.531,
+   "birthplace": "Sweetwater",
+   "description": "American entrepreneur, professional wrestler, commentator and host",
+   "hook": "played a wealthy Texas cowboy villain who won the WWE title, then became a commentator",
+   "known": 0.5,
+   "kind": "male"
+  },
+  {
+   "label": "Booker T",
+   "qid": "Q44633",
+   "fame": 0.53,
+   "birthplace": "Houston",
+   "description": "American professional wrestler",
+   "hook": "is a five-time WCW champion who later became a WWE World Heavyweight Champion known for the Spinaroonie",
+   "known": 0.6,
+   "kind": "male"
+  },
+  {
+   "label": "Claudio Castagnoli",
+   "qid": "Q123969",
+   "fame": 0.526,
+   "birthplace": "Lucerne",
+   "description": "Swiss professional wrestler and actor (born 1980)",
+   "hook": "is a European Uppercut-slinging star who used to wrestle as Cesaro, earning fame for his swing and strength",
+   "known": 0.3,
+   "kind": "male"
+  },
+  {
+   "label": "A.J. Styles",
+   "qid": "Q83816",
+   "fame": 0.524,
+   "birthplace": "Jacksonville",
+   "description": "American professional wrestler",
+   "hook": "is the Phenomenal One, known for the Phenomenal Forearm and a long run as TNA and WWE champion",
+   "known": 0.6,
+   "kind": "male"
+  },
+  {
+   "label": "Rob Van Dam",
+   "qid": "Q44628",
+   "fame": 0.524,
+   "birthplace": "Battle Creek",
+   "description": "American professional wrestler and actor (born 1970)",
+   "hook": "was the self-proclaimed Whole F'n Show, a high-flying ECW icon famous for the Five Star Frog Splash",
+   "known": 0.6,
+   "kind": "male"
+  },
+  {
+   "label": "Diamond Dallas Page",
+   "qid": "Q382078",
+   "fame": 0.522,
+   "birthplace": "Point Pleasant",
+   "description": "American professional wrestler and actor",
+   "hook": "started wrestling in midlife, won the WCW title and built a popular yoga fitness program",
+   "known": 0.7,
+   "kind": "male"
+  },
+  {
+   "label": "The Iron Sheik",
+   "qid": "Q289781",
+   "fame": 0.522,
+   "birthplace": "Damghan",
+   "description": "Iranian-American professional wrestler and actor (1942–2023)",
+   "hook": "was a grizzled villain who waved the Iranian flag, used the Camel Clutch and briefly held the WWF title",
+   "known": 0.7,
+   "kind": "male"
+  },
+  {
+   "label": "Jeff Jarrett",
+   "qid": "Q352873",
+   "fame": 0.52,
+   "birthplace": "Nashville",
+   "description": "American professional wrestler",
+   "hook": "is a country-music-loving wrestler who smashed guitars over opponents and co-founded TNA",
+   "known": 0.5,
+   "kind": "male"
+  },
+  {
+   "label": "Matt Hardy",
+   "qid": "Q26621",
+   "fame": 0.52,
+   "birthplace": "Cameron",
+   "description": "American professional wrestler (born 1974)",
+   "hook": "is half of a brother tag team known for the Twist of Fate and a quirky Broken persona",
+   "known": 0.7,
+   "kind": "male"
+  },
+  {
+   "label": "Antonio Inoki",
+   "qid": "Q45207",
+   "fame": 0.518,
+   "birthplace": "Yokohama",
+   "description": "Japanese professional wrestler, businessman, and politician (1943-2022)",
+   "hook": "founded New Japan Pro-Wrestling and fought boxing legend Muhammad Ali in a famous exhibition",
+   "known": 0.6,
+   "kind": "male"
+  },
+  {
+   "label": "Finn Bálor",
+   "qid": "Q984334",
+   "fame": 0.518,
+   "birthplace": "Bray",
+   "description": "Irish professional wrestler",
+   "hook": "is a former NXT champion who paints his body as a demon before his Coup de Grace finisher",
+   "known": 0.3,
+   "kind": "male"
+  },
+  {
+   "label": "Big E",
+   "qid": "Q601923",
+   "fame": 0.517,
+   "birthplace": "Tampa",
+   "description": "American professional wrestler",
+   "hook": "is a powerful former WWE champion and New Day member who loves pancakes and the Ending finisher",
+   "known": 0.4,
+   "kind": "male"
+  },
+  {
+   "label": "William Regal",
+   "qid": "Q316938",
+   "fame": 0.517,
+   "birthplace": "Codsall",
+   "description": "British professional wrestler",
+   "hook": "is a British grappler who became a WWE commissioner and later an NXT general manager and trainer of stars",
+   "known": 0.5,
+   "kind": "male"
+  },
+  {
+   "label": "Bruno Sammartino",
+   "qid": "Q369270",
+   "fame": 0.516,
+   "birthplace": "Pizzoferrato",
+   "description": "Italian-born American professional wrestler (1935-2018)",
+   "hook": "was a WWWF champion for nearly eight years and a hero to Italian-Americans in the sport's early TV era",
+   "known": 0.6,
+   "kind": "male"
+  },
+  {
+   "label": "Dolph Ziggler",
+   "qid": "Q310683",
+   "fame": 0.514,
+   "birthplace": "Cleveland",
+   "description": "American professional wrestler (born 1980)",
+   "hook": "is a showoff known for his bleached-blond mop of hair, Zig Zag finisher and for selling hits to the extreme",
+   "known": 0.5,
+   "kind": "male"
+  },
+  {
+   "label": "Lita",
+   "qid": "Q230060",
+   "fame": 0.514,
+   "birthplace": "Fort Lauderdale",
+   "description": "American professional wrestler",
+   "hook": "is a high-flying fan favorite known for the Moonsault and a famous on-screen partnership with the Hardy Boyz",
+   "known": 0.7,
+   "kind": "female"
+  },
+  {
+   "label": "Bobby Lashley",
+   "qid": "Q317370",
+   "fame": 0.508,
+   "birthplace": "Junction City",
+   "description": "American professional wrestler and mixed martial arts (MMA) fighter",
+   "hook": "is a former Army serviceman and MMA fighter who became a WWE champion called the Almighty",
+   "known": 0.4,
+   "kind": "american male"
+  },
+  {
+   "label": "Jake Roberts",
+   "qid": "Q919492",
+   "fame": 0.506,
+   "birthplace": "Gainesville",
+   "description": "American professional wrestler",
+   "hook": "slithered to the ring with a pet snake named Damien and finished matches with the DDT",
+   "known": 0.6,
+   "kind": "american male"
+  },
+  {
+   "label": "Mickie James",
+   "qid": "Q270712",
+   "fame": 0.504,
+   "birthplace": "Richmond",
+   "description": "American country singer and professional wrestler",
+   "hook": "is a multi-time women's champion who also built a recording career as a country music singer",
+   "known": 0.2,
+   "kind": "american female"
+  },
+  {
+   "label": "Matt Cardona",
+   "qid": "Q139880",
+   "fame": 0.5,
+   "birthplace": "Merrick",
+   "description": "American professional wrestler",
+   "hook": "is the former Z-Ryder who left WWE, then became a top name on the indie wrestling scene",
+   "known": 0.05,
+   "kind": "american male"
+  },
+  {
+   "label": "Michelle McCool",
+   "qid": "Q229704",
+   "fame": 0.499,
+   "birthplace": "Palatka",
+   "description": "American professional wrestler",
+   "hook": "is a former Divas champion who teamed with Layla as the villainous duo LayCool",
+   "known": 0.2,
+   "kind": "american female"
+  },
+  {
+   "label": "Alberto Del Rio",
+   "qid": "Q79231",
+   "fame": 0.498,
+   "birthplace": "San Luis Potosí",
+   "description": "Mexican professional wrestler and mixed martial artist",
+   "hook": "is a luxury-car-driving heel known for the Cross Armbreaker and WWE title runs",
+   "known": 0.4,
+   "kind": "mexican male"
+  },
+  {
+   "label": "Viscera",
+   "qid": "Q317374",
+   "fame": 0.498,
+   "birthplace": "Goldsboro",
+   "description": "American professional wrestler",
+   "hook": "is a super-heavyweight who played several giant villain roles, including Mabel and Big Daddy V",
+   "known": 0.4,
+   "kind": "male"
+  },
+  {
+   "label": "Chavo Guerrero Jr.",
+   "qid": "Q44683",
+   "fame": 0.495,
+   "birthplace": "El Paso",
+   "description": "American professional wrestler (born 1970)",
+   "hook": "is a member of a famous luchador family who shouted his catchphrase and won the ECW title",
+   "known": 0.4,
+   "kind": "male"
+  },
+  {
+   "label": "Shinsuke Nakamura",
+   "qid": "Q1171177",
+   "fame": 0.493,
+   "birthplace": "Mineyama",
+   "description": "Japanese professional wrestler",
+   "hook": "is a striker known as the King of Strong Style who made a flashy WWE entrance with a signature Kinshasa knee",
+   "known": 0.5,
+   "kind": "male"
+  },
+  {
+   "label": "Vickie Guerrero",
+   "qid": "Q231501",
+   "fame": 0.491,
+   "birthplace": "El Paso",
+   "description": "American professional wrestling manager",
+   "hook": "is a manager and authority figure famous for yelling 'Excuse me!' and her frequent heel turns",
+   "known": 0.5,
+   "kind": "female"
+  },
+  {
+   "label": "Fit Finlay",
+   "qid": "Q44699",
+   "fame": 0.489,
+   "birthplace": "Belfast",
+   "description": "Northern Irish professional wrestler",
+   "hook": "is a hard-nosed Irish brawler turned WWE road agent who shared a ring with a leprechaun sidekick",
+   "known": 0.4,
+   "kind": "male"
+  },
+  {
+   "label": "Torrie Wilson",
+   "qid": "Q231173",
+   "fame": 0.489,
+   "birthplace": "Boise",
+   "description": "American professional wrestler",
+   "hook": "was a WWE Diva who became a Playboy cover model and was known for a long-running storyline with Stacy Keibler",
+   "known": 0.5,
+   "kind": "female"
+  },
+  {
+   "label": "Ted DiBiase",
+   "qid": "Q344997",
+   "fame": 0.488,
+   "birthplace": "Omaha",
+   "description": "American professional wrestler",
+   "hook": "was the Million Dollar Man, a WWE villain who tried to buy his way to a championship",
+   "known": 0.8,
+   "kind": "male"
+  },
+  {
+   "label": "Santino Marella",
+   "qid": "Q44669",
+   "fame": 0.483,
+   "birthplace": "Mississauga",
+   "description": "Canadian professional wrestler",
+   "hook": "became a WWE star by spoofing Italian stereotypes with a mustache, a cobra hand-gesture and a Cobra finisher",
+   "known": 0.5,
+   "kind": "male"
+  },
+  {
+   "label": "Ron Killings",
+   "qid": "Q310690",
+   "fame": 0.479,
+   "birthplace": "Atlanta",
+   "description": "American professional wrestler",
+   "hook": "is a rapper-turned-wrestler who used the catchphrase 'What up?' and the nickname The Truth",
+   "known": 0.4,
+   "kind": "male"
+  },
+  {
+   "label": "Beth Phoenix",
+   "qid": "Q236804",
+   "fame": 0.473,
+   "birthplace": "Elmira",
+   "description": "American professional wrestler",
+   "hook": "is the Glamazon, a multi-time Divas champion who later joined the WWE Hall of Fame",
+   "known": 0.6,
+   "kind": "female"
+  },
+  {
+   "label": "Ken Anderson",
+   "qid": "Q297240",
+   "fame": 0.465,
+   "birthplace": "Minneapolis",
+   "description": "American professional wrestler and actor",
+   "hook": "is a mic-savvy villain whose entrance shouted his own name and who hit the Mic Check finisher",
+   "known": 0.3,
+   "kind": "male"
+  },
+  {
+   "label": "Akebono Tarō",
+   "qid": "Q41152",
+   "fame": 0.463,
+   "birthplace": "Waimānalo",
+   "description": "American professional wrestler and rikishi (1969–2024)",
+   "hook": "was the first foreign-born sumo grand champion and later moved on to pro wrestling",
+   "known": 0.4,
+   "kind": "male"
+  },
+  {
+   "label": "Bob Holly",
+   "qid": "Q44866",
+   "fame": 0.458,
+   "birthplace": "Glendale",
+   "description": "American professional wrestler and actor",
+   "hook": "is a hard-hitting veteran and hardcore champion who long worked as a tag team brawler",
+   "known": 0.4,
+   "kind": "male"
+  },
+  {
+   "label": "Bobby Roode",
+   "qid": "Q322969",
+   "fame": 0.457,
+   "birthplace": "Peterborough",
+   "description": "Canadian professional wrestler",
+   "hook": "is the Glorious One, whose entrance made fans sing along, and a former NXT champion",
+   "known": 0.3,
+   "kind": "male"
+  },
+  {
+   "label": "Miro",
+   "qid": "Q2833189",
+   "fame": 0.456,
+   "birthplace": "Plovdiv",
+   "description": "Bulgarian professional wrestler, rower and powerlifter",
+   "hook": "first starred in WWE as Rusev, then became TNT champion in AEW under a new name",
+   "known": 0.3,
+   "kind": "male"
+  },
+  {
+   "label": "Curtis Axel",
+   "qid": "Q438400",
+   "fame": 0.455,
+   "birthplace": "Champlin",
+   "description": "American professional wrestler",
+   "hook": "is the son of Mr. Perfect who debuted as Michael McGillicutty before changing his name",
+   "known": 0.3,
+   "kind": "male"
+  },
+  {
+   "label": "Shelton Benjamin",
+   "qid": "Q299570",
+   "fame": 0.454,
+   "birthplace": "Orangeburg",
+   "description": "American professional wrestler",
+   "hook": "is a former Intercontinental champion known for the Pay Dirt and a tag team run with Cade",
+   "known": 0.4,
+   "kind": "male"
+  },
+  {
+   "label": "Hornswoggle",
+   "qid": "Q260056",
+   "fame": 0.453,
+   "birthplace": "Oshkosh",
+   "description": "American professional wrestler",
+   "hook": "is a small-statured star who spent years portraying a green-clad leprechaun mischief-maker on WWE television",
+   "known": 0.5,
+   "kind": "male"
+  },
+  {
+   "label": "Gail Kim",
+   "qid": "Q233896",
+   "fame": 0.45,
+   "birthplace": "Toronto",
+   "description": "Canadian professional wrestler, model and actress",
+   "hook": "won a WWE title in her debut match, then became the first Knockouts Champion in TNA",
+   "known": 0.5,
+   "kind": "female"
+  }
+ ]
+}

@@ -1,0 +1,1461 @@
+{
+ "id": "table.film-and-tv.tv-creators",
+ "kind": "table",
+ "title": "Famous TV series and their creator",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "tv-dramas",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?creatorLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?creator) WHERE { ?item wikibase:sitelinks ?sl . FILTER(?sl >= 12) ?item wdt:P31 wd:Q5398426 . ?item wdt:P170 ?c . ?c wdt:P31 wd:Q5 . FILTER(?c NOT IN (wd:Q298025, wd:Q444366)) FILTER(?item NOT IN (wd:Q106679014)) } GROUP BY ?item HAVING(COUNT(DISTINCT ?c) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 186",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T17:51:27.549Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T17:51:27.549Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "creator",
+   "label": "Creator",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "TV series",
+  "many": "TV series",
+  "hookAsk": "Which TV series {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "creator": {
+    "role": "link",
+    "pick": "Who created {label}?",
+    "statement": "{label} was created by {value}.",
+    "match": "Match each TV series to its creator.",
+    "odd": "Three of these were created by {value}. Which one wasn't?",
+    "all": "Tap all {n} TV series created by {value}.",
+    "reverse": "Which of these did {value} create?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The Sopranos",
+   "qid": "Q23628",
+   "fame": 0.772,
+   "creator": "David Chase",
+   "description": "American crime drama television series (1999–2007)",
+   "hook": "follows a New Jersey mob boss balancing family life with his criminal one while seeing a therapist",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "The Mentalist",
+   "qid": "Q204228",
+   "fame": 0.769,
+   "creator": "Bruno Heller",
+   "description": "American crime drama television series",
+   "hook": "follows a former psychic con artist who helps police solve crimes using his sharp powers of observation",
+   "known": 0.4,
+   "kind": "drama"
+  },
+  {
+   "label": "Gilmore Girls",
+   "qid": "Q193462",
+   "fame": 0.755,
+   "creator": "Amy Sherman-Palladino",
+   "description": "American comedy-drama series for The WB and The CW (2000–2007)",
+   "hook": "follows a fast-talking single mother and her teenage daughter navigating life in a quirky small town",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Breaking Bad",
+   "qid": "Q1079",
+   "fame": 0.751,
+   "creator": "Vince Gilligan",
+   "description": "American crime drama television series (2008–2013)",
+   "hook": "follows a high school chemistry teacher turned methamphetamine manufacturer after a cancer diagnosis",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "Shameless",
+   "qid": "Q23599",
+   "fame": 0.739,
+   "creator": "Paul Abbott",
+   "description": "American television comedy-drama series (2011–2021)",
+   "hook": "follows a large, chaotic working-class family navigating poverty and an alcoholic father",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "Grey's Anatomy",
+   "qid": "Q438406",
+   "fame": 0.724,
+   "creator": "Shonda Rhimes",
+   "description": "American medical drama television series",
+   "hook": "follows a group of surgeons navigating life, love and loss at a Seattle hospital",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "Heroes",
+   "qid": "Q83401",
+   "fame": 0.724,
+   "creator": "Tim Kring",
+   "description": "American science fiction television drama series (2006–2010)",
+   "hook": "follows ordinary people who discover they have developed extraordinary superhuman abilities",
+   "known": 0.6,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "The Walking Dead",
+   "qid": "Q232737",
+   "fame": 0.72,
+   "creator": "Frank Darabont",
+   "description": "American post-apocalyptic horror drama zombie television series",
+   "hook": "follows survivors trying to stay alive after a plague turns most of humanity into flesh-eating monsters",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "The Americans",
+   "qid": "Q498438",
+   "fame": 0.719,
+   "creator": "Joe Weisberg",
+   "description": "2013 American period spy thriller television series",
+   "hook": "follows two Soviet spies posing as an ordinary suburban couple during the Cold War",
+   "known": 0.4,
+   "kind": "drama"
+  },
+  {
+   "label": "Law & Order: Special Victims Unit",
+   "qid": "Q218567",
+   "fame": 0.718,
+   "creator": "Dick Wolf",
+   "description": "American police procedural crime drama television series",
+   "hook": "follows detectives investigating serious crimes against vulnerable people in a major city",
+   "known": 0.8,
+   "kind": "procedural"
+  },
+  {
+   "label": "Euphoria",
+   "qid": "Q56275505",
+   "fame": 0.717,
+   "creator": "Sam Levinson",
+   "description": "2019 American teen drama television series",
+   "hook": "follows a group of high schoolers navigating addiction, trauma and first love",
+   "known": 0.6,
+   "kind": "teen"
+  },
+  {
+   "label": "The Handmaid's Tale",
+   "qid": "Q25207350",
+   "fame": 0.713,
+   "creator": "Bruce Miller",
+   "description": "American web television series",
+   "hook": "follows a woman forced into reproductive servitude in a totalitarian society",
+   "known": 0.8,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Heated Rivalry",
+   "qid": "Q136813219",
+   "fame": 0.708,
+   "creator": "Jacob Tierney",
+   "description": "Canadian sports romance television series",
+   "hook": "follows two professional ice hockey opponents whose on-ice tension turns into a secret romance",
+   "known": 0.2,
+   "kind": "comedy"
+  },
+  {
+   "label": "True Detective",
+   "qid": "Q7847400",
+   "fame": 0.703,
+   "creator": "Nic Pizzolatto",
+   "description": "American television series (2014-)",
+   "hook": "follows detectives investigating a dark, interconnected crime across a single case each season",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "Peaky Blinders",
+   "qid": "Q14944179",
+   "fame": 0.702,
+   "creator": "Steven Knight",
+   "description": "British period drama television series (2013–2022)",
+   "hook": "follows a crime family clawing its way to power in an industrial English city after a world war",
+   "known": 0.6,
+   "kind": "period"
+  },
+  {
+   "label": "Fargo",
+   "qid": "Q15931555",
+   "fame": 0.701,
+   "creator": "Noah Hawley",
+   "description": "American crime drama television series",
+   "hook": "follows ordinary Midwesterners drawn into violent crime through a twist of fate",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "Succession",
+   "qid": "Q30599007",
+   "fame": 0.701,
+   "creator": "Jesse Armstrong",
+   "description": "American comedy-drama television series (2018–2023)",
+   "hook": "follows a wealthy media family feuding over who will take control of their father's company",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "The Wire",
+   "qid": "Q478360",
+   "fame": 0.701,
+   "creator": "David Simon",
+   "description": "American crime drama television series (2002–2008)",
+   "hook": "follows police and criminals on both sides of the drug trade in a struggling American city",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "Criminal Minds",
+   "qid": "Q202141",
+   "fame": 0.699,
+   "creator": "Jeff Davis",
+   "description": "2005 American police procedural drama television series",
+   "hook": "follows FBI profilers who track down serial killers and other violent offenders",
+   "known": 0.6,
+   "kind": "procedural"
+  },
+  {
+   "label": "Saturday Night Live",
+   "qid": "Q13979",
+   "fame": 0.697,
+   "creator": "Lorne Michaels",
+   "description": "American late-night live television sketch comedy show",
+   "hook": "features rotating hosts and musical guests in sketch comedy and celebrity impressions each week",
+   "known": 0.95,
+   "kind": "reality"
+  },
+  {
+   "label": "Person of Interest",
+   "qid": "Q564345",
+   "fame": 0.694,
+   "creator": "Jonathan Nolan",
+   "description": "2011 American science fiction crime drama television series",
+   "hook": "follows a billionaire and an ex-agent who stop crimes before they happen with a hidden surveillance system",
+   "known": 0.4,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "House M.D.",
+   "qid": "Q23558",
+   "fame": 0.69,
+   "creator": "David Shore",
+   "description": "American television medical drama",
+   "hook": "follows an unconventional, acerbic doctor who solves rare and baffling medical cases",
+   "known": 0.8,
+   "kind": "procedural"
+  },
+  {
+   "label": "Mad Men",
+   "qid": "Q223977",
+   "fame": 0.69,
+   "creator": "Matthew Weiner",
+   "description": "American period drama television series",
+   "hook": "follows advertising executives navigating ambition and personal turmoil on New York's Madison Avenue",
+   "known": 0.8,
+   "kind": "period"
+  },
+  {
+   "label": "The X-Files",
+   "qid": "Q2744",
+   "fame": 0.689,
+   "creator": "Chris Carter",
+   "description": "1993–2002 American science fiction-drama television series",
+   "hook": "follows two FBI agents investigating unexplained paranormal cases",
+   "known": 0.8,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Outlander",
+   "qid": "Q15072906",
+   "fame": 0.687,
+   "creator": "Ronald D. Moore",
+   "description": "British-American television drama series",
+   "hook": "follows a nurse who is mysteriously transported back in time to the Scottish Highlands",
+   "known": 0.4,
+   "kind": "period"
+  },
+  {
+   "label": "Black Mirror",
+   "qid": "Q558112",
+   "fame": 0.685,
+   "creator": "Charlie Brooker",
+   "description": "British television series",
+   "hook": "presents standalone stories exploring the dark side of modern technology and society",
+   "known": 0.8,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Downton Abbey",
+   "qid": "Q83071",
+   "fame": 0.684,
+   "creator": "Julian Fellowes",
+   "description": "British historical drama television series (2010–2015)",
+   "hook": "follows an aristocratic family and their servants navigating a rapidly changing society",
+   "known": 0.8,
+   "kind": "period"
+  },
+  {
+   "label": "Suits",
+   "qid": "Q370185",
+   "fame": 0.684,
+   "creator": "Aaron Korsh",
+   "description": "2011–2019 American legal drama television series",
+   "hook": "follows a talented dropout who lands a job at a top law firm despite never attending law school",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Supernatural",
+   "qid": "Q130585",
+   "fame": 0.684,
+   "creator": "Eric Kripke",
+   "description": "American dark fantasy television series",
+   "hook": "follows two brothers who travel the country hunting demons, monsters and other creatures",
+   "known": 0.6,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Malcolm in the Middle",
+   "qid": "Q242596",
+   "fame": 0.68,
+   "creator": "Linwood Boomer",
+   "description": "American television sitcom (2000–2006)",
+   "hook": "follows a gifted young boy navigating chaos with his eccentric, dysfunctional family",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Desperate Housewives",
+   "qid": "Q131758",
+   "fame": 0.679,
+   "creator": "Marc Cherry",
+   "description": "American comedy-drama TV series",
+   "hook": "follows the secrets and scandals of women living on a seemingly perfect suburban street",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "The Crown",
+   "qid": "Q20707362",
+   "fame": 0.678,
+   "creator": "Peter Morgan",
+   "description": "British–American television drama series",
+   "hook": "follows a monarch's reign from her early accession through the following decades",
+   "known": 0.8,
+   "kind": "period"
+  },
+  {
+   "label": "Star Trek: The Original Series",
+   "qid": "Q1077",
+   "fame": 0.677,
+   "creator": "Gene Roddenberry",
+   "description": "American science fiction television series (1966–1969)",
+   "hook": "follows the crew of a starship exploring the galaxy and encountering new civilizations",
+   "known": 0.95,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Bridgerton",
+   "qid": "Q85748936",
+   "fame": 0.675,
+   "creator": "Chris Van Dusen",
+   "description": "American television series",
+   "hook": "follows wealthy families navigating courtship and scandal in Regency-era London society",
+   "known": 0.8,
+   "kind": "period"
+  },
+  {
+   "label": "Sex and the City",
+   "qid": "Q35791",
+   "fame": 0.675,
+   "creator": "Darren Star",
+   "description": "American TV series (1998–2004)",
+   "hook": "follows four women navigating friendship, romance and careers in New York",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "The Blacklist",
+   "qid": "Q13148212",
+   "fame": 0.675,
+   "creator": "Jon Bokenkamp",
+   "description": "American television series (2013–2023)",
+   "hook": "follows a former government fugitive who surrenders to the FBI in exchange for helping catch other criminals",
+   "known": 0.4,
+   "kind": "drama"
+  },
+  {
+   "label": "Dexter",
+   "qid": "Q23577",
+   "fame": 0.674,
+   "creator": "James Manos Jr.",
+   "description": "American crime drama television series (2006–2013)",
+   "hook": "follows a forensic blood-spatter analyst who secretly hunts down other killers by night",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "Law & Order",
+   "qid": "Q321423",
+   "fame": 0.674,
+   "creator": "Dick Wolf",
+   "description": "American police procedural and legal drama television series",
+   "hook": "follows police investigating crimes and prosecutors trying them in court in two connected halves",
+   "known": 0.95,
+   "kind": "procedural"
+  },
+  {
+   "label": "Mindhunter",
+   "qid": "Q25340152",
+   "fame": 0.671,
+   "creator": "Joe Penhall",
+   "description": "2017–2019 American television series",
+   "hook": "follows FBI agents pioneering criminal profiling by interviewing incarcerated serial killers",
+   "known": 0.4,
+   "kind": "drama"
+  },
+  {
+   "label": "The Witcher",
+   "qid": "Q47500433",
+   "fame": 0.671,
+   "creator": "Lauren Schmidt Hissrich",
+   "description": "2019 fantasy drama television series",
+   "hook": "follows a monster hunter navigating a world of magic, monarchs and mutated beasts",
+   "known": 0.4,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "The Golden Girls",
+   "qid": "Q912467",
+   "fame": 0.669,
+   "creator": "Susan Harris",
+   "description": "American sitcom",
+   "hook": "follows four older women sharing a home and navigating life together in Florida",
+   "known": 0.95,
+   "kind": "comedy"
+  },
+  {
+   "label": "The Mandalorian",
+   "qid": "Q56876444",
+   "fame": 0.669,
+   "creator": "Jon Favreau",
+   "description": "American space opera streaming television series from 2019",
+   "hook": "follows a lone bounty hunter who becomes the protector of a small, mysterious child",
+   "known": 0.6,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Big Little Lies",
+   "qid": "Q19873404",
+   "fame": 0.668,
+   "creator": "David E. Kelley",
+   "description": "American television series",
+   "hook": "follows a group of mothers whose lives unravel after a mysterious death rattles their seaside town",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Andor",
+   "qid": "Q60462338",
+   "fame": 0.667,
+   "creator": "Tony Gilroy",
+   "description": "2022–2025 Star Wars television series",
+   "hook": "follows a small-time thief drawn into a growing rebellion against a powerful empire",
+   "known": 0.2,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "ER",
+   "qid": "Q207375",
+   "fame": 0.664,
+   "creator": "Michael Crichton",
+   "description": "American medical drama television series (1994–2009)",
+   "hook": "follows doctors and nurses handling life-and-death emergencies in a busy city hospital",
+   "known": 0.95,
+   "kind": "procedural"
+  },
+  {
+   "label": "Ozark",
+   "qid": "Q25205293",
+   "fame": 0.664,
+   "creator": "Bill Dubuque",
+   "description": "American crime drama television series (2017–2022)",
+   "hook": "follows a financial planner who relocates his family to launder money for a drug cartel",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "Sons of Anarchy",
+   "qid": "Q171254",
+   "fame": 0.664,
+   "creator": "Kurt Sutter",
+   "description": "American television series",
+   "hook": "follows a motorcycle club balancing loyalty, crime and family in a small California town",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "The Tudors",
+   "qid": "Q326731",
+   "fame": 0.663,
+   "creator": "Michael Hirst",
+   "description": "historical fiction television series (2007–2010)",
+   "hook": "follows a young English king's turbulent reign, marriages and rule",
+   "known": 0.6,
+   "kind": "period"
+  },
+  {
+   "label": "Charlie's Angels",
+   "qid": "Q617274",
+   "fame": 0.662,
+   "creator": "Ivan Goff",
+   "description": "1976 American crime drama television series",
+   "hook": "follows three skilled private detectives working undercover for a mysterious unseen boss",
+   "known": 0.8,
+   "kind": "procedural"
+  },
+  {
+   "label": "Community",
+   "qid": "Q728553",
+   "fame": 0.659,
+   "creator": "Dan Harmon",
+   "description": "American comedy television series",
+   "hook": "follows a mismatched group of students bonding in a study group at a run-down junior college",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Curb Your Enthusiasm",
+   "qid": "Q23722",
+   "fame": 0.658,
+   "creator": "Larry David",
+   "description": "American television series",
+   "hook": "follows a semi-fictional version of its creator navigating awkward social situations of his own making",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Loki",
+   "qid": "Q64349029",
+   "fame": 0.654,
+   "creator": "Michael Waldron",
+   "description": "American streaming television series",
+   "hook": "follows a trickster god forced to work for a bureaucratic agency that polices time itself",
+   "known": 0.2,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "One Tree Hill",
+   "qid": "Q203385",
+   "fame": 0.654,
+   "creator": "Mark Schwahn",
+   "description": "2003 American television drama series",
+   "hook": "follows two half-brothers and their friends growing up in a small basketball-obsessed town",
+   "known": 0.4,
+   "kind": "teen"
+  },
+  {
+   "label": "Bones",
+   "qid": "Q207803",
+   "fame": 0.652,
+   "creator": "Hart Hanson",
+   "description": "American crime comedy-horror television series (2005-2017)",
+   "hook": "follows a forensic anthropologist and an FBI agent solving murders using skeletal remains",
+   "known": 0.6,
+   "kind": "procedural"
+  },
+  {
+   "label": "The Good Place",
+   "qid": "Q22908690",
+   "fame": 0.649,
+   "creator": "Michael Schur",
+   "description": "2016 American fantasy comedy television series",
+   "hook": "follows a woman who wakes up in the afterlife and must hide that she does not belong among the virtuous",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "The Good Doctor",
+   "qid": "Q29908604",
+   "fame": 0.648,
+   "creator": "David Shore",
+   "description": "American television series (2017-2024)",
+   "hook": "follows a young surgeon with autism and exceptional medical skill working to prove himself",
+   "known": 0.4,
+   "kind": "procedural"
+  },
+  {
+   "label": "This Is Us",
+   "qid": "Q24068191",
+   "fame": 0.648,
+   "creator": "Dan Fogelman",
+   "description": "American television comedy-drama series",
+   "hook": "follows a family across different points in their lives, revealing how their pasts connect",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Star Trek: The Next Generation",
+   "qid": "Q16290",
+   "fame": 0.647,
+   "creator": "Gene Roddenberry",
+   "description": "American television series",
+   "hook": "follows a new starship crew and captain continuing a mission to explore the galaxy and seek out new life",
+   "known": 0.95,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "The West Wing",
+   "qid": "Q3577037",
+   "fame": 0.647,
+   "creator": "Aaron Sorkin",
+   "description": "American political drama series created by Aaron Sorkin for NBC (1999–2006)",
+   "hook": "follows the senior staff working inside the White House for a fictional U.S. president",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Fleabag",
+   "qid": "Q16868648",
+   "fame": 0.645,
+   "creator": "Phoebe Waller-Bridge",
+   "description": "British black comedy television series",
+   "hook": "follows a grief-stricken, sharp-tongued woman in London who breaks the fourth wall to confide in the audience",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Sex Education",
+   "qid": "Q55632932",
+   "fame": 0.642,
+   "creator": "Laurie Nunn",
+   "description": "2019 British television series",
+   "hook": "follows a teenager who secretly counsels classmates on intimacy despite his own inexperience",
+   "known": 0.4,
+   "kind": "teen"
+  },
+  {
+   "label": "The Orville",
+   "qid": "Q28429653",
+   "fame": 0.642,
+   "creator": "Seth MacFarlane",
+   "description": "American science fiction comedy drama television series (2017–2022)",
+   "hook": "follows a starship crew on missions that blend comedy and drama in classic space-adventure style",
+   "known": 0.2,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "M*A*S*H",
+   "qid": "Q494244",
+   "fame": 0.641,
+   "creator": "Larry Gelbart",
+   "description": "American television series (1972–1983)",
+   "hook": "follows army surgeons using dark humor to cope with the chaos of a wartime hospital unit",
+   "known": 0.95,
+   "kind": "comedy"
+  },
+  {
+   "label": "Peacemaker",
+   "qid": "Q101089777",
+   "fame": 0.641,
+   "creator": "James Gunn",
+   "description": "American television series",
+   "hook": "follows a costumed vigilante willing to kill anyone who stands between him and a harmonious world",
+   "known": 0.2,
+   "kind": "superhero"
+  },
+  {
+   "label": "Hannibal",
+   "qid": "Q888841",
+   "fame": 0.64,
+   "creator": "Bryan Fuller",
+   "description": "2013–2015 American television series",
+   "hook": "follows an FBI profiler who unknowingly turns to a cannibalistic killer posing as his psychiatrist",
+   "known": 0.4,
+   "kind": "drama"
+  },
+  {
+   "label": "True Blood",
+   "qid": "Q186219",
+   "fame": 0.638,
+   "creator": "Alan Ball",
+   "description": "American fantasy drama television series (2008–2014)",
+   "hook": "portrays vampires living openly among humans after a synthetic substitute lets them stop hunting people",
+   "known": 0.6,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "13 Reasons Why",
+   "qid": "Q18464203",
+   "fame": 0.634,
+   "creator": "Brian Yorkey",
+   "description": "2017 American teen drama television series",
+   "hook": "follows a set of cassette tapes that reveal, one by one, the events behind a classmate's death",
+   "known": 0.4,
+   "kind": "teen"
+  },
+  {
+   "label": "Prison Break",
+   "qid": "Q80044",
+   "fame": 0.634,
+   "creator": "Paul Scheuring",
+   "description": "American television series",
+   "hook": "follows an engineer who gets himself incarcerated on purpose to help his wrongly condemned brother escape",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "WandaVision",
+   "qid": "Q65980217",
+   "fame": 0.634,
+   "creator": "Jac Schaeffer",
+   "description": "2021 television miniseries",
+   "hook": "follows a grieving superhero who unknowingly traps a small town inside a shifting sitcom reality",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "Boardwalk Empire",
+   "qid": "Q585758",
+   "fame": 0.632,
+   "creator": "Terence Winter",
+   "description": "American period crime drama television series",
+   "hook": "follows a corrupt political boss profiting from illegal liquor along the Atlantic City shoreline",
+   "known": 0.6,
+   "kind": "period"
+  },
+  {
+   "label": "Everybody Loves Raymond",
+   "qid": "Q208568",
+   "fame": 0.632,
+   "creator": "Philip Rosenthal",
+   "description": "American TV sitcom (1996–2005)",
+   "hook": "follows a sportswriter whose overbearing parents live right across the street from his own family",
+   "known": 0.95,
+   "kind": "comedy"
+  },
+  {
+   "label": "Little House on the Prairie",
+   "qid": "Q839869",
+   "fame": 0.631,
+   "creator": "Michael Landon",
+   "description": "American Western drama television series, 1974 to 1983",
+   "hook": "follows a pioneer family building a life on the American frontier, based on beloved children's books",
+   "known": 0.8,
+   "kind": "period"
+  },
+  {
+   "label": "Orange Is the New Black",
+   "qid": "Q7099650",
+   "fame": 0.631,
+   "creator": "Jenji Kohan",
+   "description": "American comedy-drama series",
+   "hook": "follows a woman adjusting to life among a diverse cast of inmates after being sentenced to a women's prison",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Skins",
+   "qid": "Q326180",
+   "fame": 0.631,
+   "creator": "Jamie Brittain",
+   "description": "British teen drama series",
+   "hook": "follows an ensemble of British teenagers navigating friendship and personal crises across each school year",
+   "known": 0.4,
+   "kind": "teen"
+  },
+  {
+   "label": "Beverly Hills, 90210",
+   "qid": "Q117590",
+   "fame": 0.63,
+   "creator": "Darren Star",
+   "description": "1990 American teen drama television series",
+   "hook": "follows a pair of Midwestern twins adjusting to life at a wealthy Los Angeles high school",
+   "known": 0.8,
+   "kind": "teen"
+  },
+  {
+   "label": "Castle",
+   "qid": "Q386880",
+   "fame": 0.629,
+   "creator": "Andrew W. Marlowe",
+   "description": "American police procedural comedy-drama television series (2009-2016)",
+   "hook": "follows a bestselling novelist who shadows a New York police detective for inspiration on his next book",
+   "known": 0.6,
+   "kind": "procedural"
+  },
+  {
+   "label": "Daredevil",
+   "qid": "Q16977365",
+   "fame": 0.628,
+   "creator": "Drew Goddard",
+   "description": "2015–2018 American television series",
+   "hook": "follows a blind lawyer who uses heightened senses to fight crime in his neighborhood after dark",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "Miami Vice",
+   "qid": "Q559321",
+   "fame": 0.626,
+   "creator": "Anthony Yerkovich",
+   "description": "1984–1989 American crime drama television series",
+   "hook": "follows two stylish undercover detectives infiltrating the drug trade along the Florida coast",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "Squid Game",
+   "qid": "Q106582931",
+   "fame": 0.624,
+   "creator": "Hwang Dong-hyeok",
+   "description": "2021 South Korean television series",
+   "hook": "follows cash-strapped contestants competing in deadly childhood playground games for a huge prize",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "Coronation Street",
+   "qid": "Q945030",
+   "fame": 0.621,
+   "creator": "Tony Warren",
+   "description": "British soap opera",
+   "hook": "follows the intertwined lives of residents on a working-class road in a fictional northern English town",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "The Twilight Zone",
+   "qid": "Q742103",
+   "fame": 0.621,
+   "creator": "Rod Serling",
+   "description": "American TV anthology series (1959–1964)",
+   "hook": "presents a new self-contained story each episode, often with a surprising fantasy or sci-fi twist ending",
+   "known": 0.95,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Hawaii Five-0",
+   "qid": "Q728443",
+   "fame": 0.62,
+   "creator": "Leonard Freeman",
+   "description": "American action police procedural television series (2010-2020)",
+   "hook": "follows an elite task force fighting organized crime and other threats across a chain of Pacific islands",
+   "known": 0.8,
+   "kind": "procedural"
+  },
+  {
+   "label": "30 Rock",
+   "qid": "Q189350",
+   "fame": 0.618,
+   "creator": "Tina Fey",
+   "description": "American television comedy series (2006–2013)",
+   "hook": "follows the head writer of a live sketch-comedy show and the eccentric cast and executives around her",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "American Idol",
+   "qid": "Q201052",
+   "fame": 0.618,
+   "creator": "Simon Fuller",
+   "description": "American singing competition",
+   "hook": "follows aspiring singers competing in open auditions for a recording contract, with the public voting",
+   "known": 0.95,
+   "kind": "reality"
+  },
+  {
+   "label": "The O.C.",
+   "qid": "Q194427",
+   "fame": 0.618,
+   "creator": "Josh Schwartz",
+   "description": "2003 American teen drama television series",
+   "hook": "follows a teenager from a troubled background taken in by a wealthy family in an affluent coastal community",
+   "known": 0.6,
+   "kind": "teen"
+  },
+  {
+   "label": "Riverdale",
+   "qid": "Q23001951",
+   "fame": 0.617,
+   "creator": "Roberto Aguirre-Sacasa",
+   "description": "American teen drama television series (2017–2023)",
+   "hook": "reimagines a group of small-town comic-book teenagers navigating dark mysteries and murder investigations",
+   "known": 0.4,
+   "kind": "teen"
+  },
+  {
+   "label": "Vikings",
+   "qid": "Q2579463",
+   "fame": 0.617,
+   "creator": "Michael Hirst",
+   "description": "Canadian-Irish historical drama television series",
+   "hook": "follows a legendary Norse raider and his sons as they rise from farmers to feared seafaring conquerors",
+   "known": 0.6,
+   "kind": "period"
+  },
+  {
+   "label": "Charmed",
+   "qid": "Q162371",
+   "fame": 0.614,
+   "creator": "Constance M. Burge",
+   "description": "American supernatural drama / fantasy television series (1998–2006)",
+   "hook": "follows three sisters who discover they are powerful witches protecting the innocent from supernatural evil",
+   "known": 0.8,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Lucifer",
+   "qid": "Q19520525",
+   "fame": 0.614,
+   "creator": "Tom Kapinos",
+   "description": "American television series (2016–2021)",
+   "hook": "follows the devil, bored ruling the underworld, who relocates to Los Angeles and helps police solve murders",
+   "known": 0.4,
+   "kind": "series"
+  },
+  {
+   "label": "Mr. Bean",
+   "qid": "Q484020",
+   "fame": 0.614,
+   "creator": "Rowan Atkinson",
+   "description": "British comedy television series (1990–1995)",
+   "hook": "follows a childlike, almost silent British man who blunders his way through everyday situations",
+   "known": 0.95,
+   "kind": "comedy"
+  },
+  {
+   "label": "Mr. Robot",
+   "qid": "Q18844729",
+   "fame": 0.614,
+   "creator": "Sam Esmail",
+   "description": "American drama–thriller television series",
+   "hook": "follows an anxious cybersecurity engineer recruited by hackers to bring down a powerful corporation",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "Emily in Paris",
+   "qid": "Q64584978",
+   "fame": 0.613,
+   "creator": "Darren Star",
+   "description": "American comedy-drama television series",
+   "hook": "follows an American marketing executive adjusting to work and romance after relocating to a French city",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "Gossip Girl",
+   "qid": "Q199853",
+   "fame": 0.612,
+   "creator": "Josh Schwartz",
+   "description": "2007 American teen drama television series",
+   "hook": "follows the scandal-filled lives of wealthy Manhattan private-school teens, narrated by an anonymous blogger",
+   "known": 0.6,
+   "kind": "teen"
+  },
+  {
+   "label": "New Girl",
+   "qid": "Q844059",
+   "fame": 0.611,
+   "creator": "Elizabeth Meriwether",
+   "description": "American sitcom",
+   "hook": "follows a quirky, upbeat woman who moves in with three single men after a painful breakup",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Six Feet Under",
+   "qid": "Q216919",
+   "fame": 0.61,
+   "creator": "Alan Ball",
+   "description": "American drama television series (2001-2005)",
+   "hook": "follows a family running a funeral home, with each episode opening on the death that brings a new client",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "Money Heist",
+   "qid": "Q29647346",
+   "fame": 0.604,
+   "creator": "Álex Pina",
+   "description": "Spanish television crime series",
+   "hook": "follows a group of masked robbers executing an elaborate plan to rob a national institution",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "Entourage",
+   "qid": "Q253205",
+   "fame": 0.602,
+   "creator": "Doug Ellin",
+   "description": "American comedy-drama television series",
+   "hook": "follows a rising movie star and his childhood friends navigating fame, excess and deal-making in Hollywood",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Full House",
+   "qid": "Q465472",
+   "fame": 0.602,
+   "creator": "Jeff Franklin",
+   "description": "American television sitcom (1987–1995)",
+   "hook": "follows a widowed father raising three daughters with help from his brother-in-law and best friend",
+   "known": 0.95,
+   "kind": "comedy"
+  },
+  {
+   "label": "House of Cards",
+   "qid": "Q3330940",
+   "fame": 0.602,
+   "creator": "Beau Willimon",
+   "description": "2010s political drama TV series",
+   "hook": "follows a ruthless politician who schemes his way to the country's highest office, addressing viewers directly",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "Sabrina the Teenage Witch",
+   "qid": "Q383104",
+   "fame": 0.602,
+   "creator": "Nell Scovell",
+   "description": "American television sitcom (1996–2003)",
+   "hook": "follows a young girl who discovers magical powers and lives with her two spell-casting aunts and a talking cat",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Dawson's Creek",
+   "qid": "Q461357",
+   "fame": 0.597,
+   "creator": "Kevin Williamson",
+   "description": "1998 American teen drama television series",
+   "hook": "follows a movie-obsessed teenager and his close friends falling in and out of love in a small coastal town",
+   "known": 0.8,
+   "kind": "teen"
+  },
+  {
+   "label": "Roseanne",
+   "qid": "Q575373",
+   "fame": 0.597,
+   "creator": "Matt Williams",
+   "description": "American sitcom",
+   "hook": "follows a sharp-tongued, working-class wife and mother holding her family together through everyday struggles",
+   "known": 0.95,
+   "kind": "comedy"
+  },
+  {
+   "label": "Babylon 5",
+   "qid": "Q210146",
+   "fame": 0.596,
+   "creator": "J. Michael Straczynski",
+   "description": "American television series",
+   "hook": "centers on a space station serving as neutral ground among rival alien governments as a great war approaches",
+   "known": 0.4,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "That '70s Show",
+   "qid": "Q208072",
+   "fame": 0.595,
+   "creator": "Mark Brazill",
+   "description": "American television period sitcom",
+   "hook": "follows a group of teenage friends hanging out in a suburban Midwestern basement in everyday life",
+   "known": 0.95,
+   "kind": "comedy"
+  },
+  {
+   "label": "Barney & Friends",
+   "qid": "Q213588",
+   "fame": 0.594,
+   "creator": "Sheryl Leach",
+   "description": "American children's television series",
+   "hook": "follows a giant purple dinosaur who teaches young children lessons through songs, games and imagination",
+   "known": 0.8,
+   "kind": "children"
+  },
+  {
+   "label": "Murder, She Wrote",
+   "qid": "Q833322",
+   "fame": 0.594,
+   "creator": "Peter S. Fischer",
+   "description": "American television series (1984-1996)",
+   "hook": "follows a small-town novelist who keeps stumbling into and solving real-life killings in her community",
+   "known": 0.95,
+   "kind": "procedural"
+  },
+  {
+   "label": "MythBusters",
+   "qid": "Q486844",
+   "fame": 0.591,
+   "creator": "Peter Rees",
+   "description": "American television series",
+   "hook": "uses scientific experiments to test whether popular legends, urban rumors and movie stunts could really happen",
+   "known": 0.8,
+   "kind": "reality"
+  },
+  {
+   "label": "Ally McBeal",
+   "qid": "Q244803",
+   "fame": 0.589,
+   "creator": "David E. Kelley",
+   "description": "American legal comedy-drama television series",
+   "hook": "follows a quirky young lawyer at a Boston firm balancing her career and love life amid vivid daydreams",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Veep",
+   "qid": "Q74801",
+   "fame": 0.588,
+   "creator": "Armando Iannucci",
+   "description": "2012–2019 American comedy television series",
+   "hook": "follows a bumbling, foul-mouthed vice president and her dysfunctional staff stumbling through Washington",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "Psych",
+   "qid": "Q48758",
+   "fame": 0.587,
+   "creator": "Steve Franks",
+   "description": "American detective comedy-drama television series",
+   "hook": "follows a sharp-eyed young man who fakes being psychic so he can work as a police consultant",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "The Umbrella Academy",
+   "qid": "Q44535025",
+   "fame": 0.587,
+   "creator": "Steve Blackman",
+   "description": "American television series",
+   "hook": "follows estranged, superpowered siblings who reunite over their father's death and a looming apocalypse",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "Ugly Betty",
+   "qid": "Q276528",
+   "fame": 0.586,
+   "creator": "Fernando Gaitán Salom",
+   "description": "2006 American dramedy television series",
+   "hook": "follows an unglamorous young woman who lands a job at a high-fashion magazine despite not fitting its image",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "Dallas",
+   "qid": "Q168708",
+   "fame": 0.585,
+   "creator": "David Jacobs",
+   "description": "American television soap opera (1978–1991)",
+   "hook": "follows a wealthy Texas oil family torn apart by rivalry, betrayal and one especially ruthless eldest son",
+   "known": 0.95,
+   "kind": "drama"
+  },
+  {
+   "label": "Gotham",
+   "qid": "Q15726959",
+   "fame": 0.585,
+   "creator": "Bruno Heller",
+   "description": "American crime drama television series (2014-2019)",
+   "hook": "follows a young detective fighting corruption in a crime-ridden city before a caped vigilante ever appears",
+   "known": 0.4,
+   "kind": "procedural"
+  },
+  {
+   "label": "Xena: Warrior Princess",
+   "qid": "Q38497",
+   "fame": 0.583,
+   "creator": "John Schulian",
+   "description": "American–New Zealand fantasy series (1995–2001)",
+   "hook": "follows a reformed warlord roaming the ancient world with a bard companion, atoning for past misdeeds",
+   "known": 0.8,
+   "kind": "period"
+  },
+  {
+   "label": "Narcos",
+   "qid": "Q20642206",
+   "fame": 0.581,
+   "creator": "Chris Brancato",
+   "description": "American crime drama television series",
+   "hook": "dramatizes the rise and fall of a notorious cocaine kingpin and the agents assigned to bring him down",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "Elementary",
+   "qid": "Q247643",
+   "fame": 0.579,
+   "creator": "Robert Doherty",
+   "description": "American television drama (2012–2019)",
+   "hook": "reimagines a brilliant detective solving crimes in New York with a female version of his usual companion",
+   "known": 0.4,
+   "kind": "procedural"
+  },
+  {
+   "label": "Secret Invasion",
+   "qid": "Q108441863",
+   "fame": 0.579,
+   "creator": "Kyle Bradstreet",
+   "description": "American superhero television miniseries",
+   "hook": "follows a veteran spy uncovering a covert alien infiltration of Earth's institutions and world leaders",
+   "known": 0.2,
+   "kind": "superhero"
+  },
+  {
+   "label": "Moon Knight",
+   "qid": "Q84712802",
+   "fame": 0.578,
+   "creator": "Jeremy Slater",
+   "description": "2022 superhero television miniseries produced by Marvel Studios",
+   "hook": "follows a mild-mannered man with a fractured identity who becomes the earthly avatar of an ancient deity",
+   "known": 0.2,
+   "kind": "superhero"
+  },
+  {
+   "label": "Boston Legal",
+   "qid": "Q308984",
+   "fame": 0.577,
+   "creator": "David E. Kelley",
+   "description": "American legal dramedy",
+   "hook": "follows quirky, ethically flexible lawyers at a prestigious firm known for their offbeat courtroom antics",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "The Originals",
+   "qid": "Q4307100",
+   "fame": 0.577,
+   "creator": "Julie Plec",
+   "description": "American supernatural drama television series  (2013–2018)",
+   "hook": "follows a family of the first vampires ruling over New Orleans",
+   "known": 0.4,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "The IT Crowd",
+   "qid": "Q239672",
+   "fame": 0.576,
+   "creator": "Graham Linehan",
+   "description": "British television sitcom",
+   "hook": "follows two misfit computer-support workers holed up in a windowless basement office",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "How to Get Away with Murder",
+   "qid": "Q16862534",
+   "fame": 0.573,
+   "creator": "Peter Nowalk",
+   "description": "2014-2020 American legal thriller television series",
+   "hook": "follows a law professor and her students entangled in a deadly cover-up",
+   "known": 0.6,
+   "kind": "procedural"
+  },
+  {
+   "label": "Monk",
+   "qid": "Q189068",
+   "fame": 0.571,
+   "creator": "Andy Breckman",
+   "description": "American television series (2002–2009)",
+   "hook": "follows a brilliant detective whose obsessive phobias make solving crimes both a gift and a curse",
+   "known": 0.8,
+   "kind": "procedural"
+  },
+  {
+   "label": "Knight Rider",
+   "qid": "Q464009",
+   "fame": 0.57,
+   "creator": "Glen A. Larson",
+   "description": "1982–1986 American television series",
+   "hook": "follows a crime-fighter partnered with a talking, artificially intelligent car",
+   "known": 0.8,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "The Falcon and the Winter Soldier",
+   "qid": "Q65979734",
+   "fame": 0.569,
+   "creator": "Malcolm Spellman",
+   "description": "American streaming television miniseries",
+   "hook": "follows two of a legendary hero's closest allies stepping up after he steps down",
+   "known": 0.2,
+   "kind": "superhero"
+  },
+  {
+   "label": "My Name Is Earl",
+   "qid": "Q34659",
+   "fame": 0.568,
+   "creator": "Greg Garcia",
+   "description": "American television series",
+   "hook": "follows a small-time crook who wins the lottery and sets out to right every wrong he's done",
+   "known": 0.6,
+   "kind": "comedy"
+  },
+  {
+   "label": "The Suite Life of Zack & Cody",
+   "qid": "Q217246",
+   "fame": 0.566,
+   "creator": "Danny Kallis",
+   "description": "2005–2008 American sitcom",
+   "hook": "follows twin brothers growing up while living in a luxury hotel",
+   "known": 0.6,
+   "kind": "children"
+  },
+  {
+   "label": "NCIS: Los Angeles",
+   "qid": "Q6084",
+   "fame": 0.565,
+   "creator": "Shane Brennan",
+   "description": "American military drama/police procedural television series (2009–2023)",
+   "hook": "follows an undercover federal team that investigates crimes tied to the military",
+   "known": 0.6,
+   "kind": "procedural"
+  },
+  {
+   "label": "Alias",
+   "qid": "Q212807",
+   "fame": 0.558,
+   "creator": "J. J. Abrams",
+   "description": "American spy-action television series",
+   "hook": "follows a double agent secretly working against the spy agency that trained her",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "Ghost Whisperer",
+   "qid": "Q318649",
+   "fame": 0.557,
+   "creator": "John Gray",
+   "description": "2005 American supernatural television series",
+   "hook": "follows a woman who can see and help restless spirits find peace",
+   "known": 0.4,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "She-Hulk: Attorney at Law",
+   "qid": "Q84712806",
+   "fame": 0.556,
+   "creator": "Jessica Gao",
+   "description": "2022 American superhero television series",
+   "hook": "follows a legal expert who gains superhuman strength and green skin after a freak accident",
+   "known": 0.2,
+   "kind": "superhero"
+  },
+  {
+   "label": "Weeds",
+   "qid": "Q23609",
+   "fame": 0.556,
+   "creator": "Jenji Kohan",
+   "description": "2005-2012 American dark comedy-drama television series",
+   "hook": "follows a suburban widow who starts secretly dealing marijuana to support her family",
+   "known": 0.8,
+   "kind": "comedy"
+  },
+  {
+   "label": "White Collar",
+   "qid": "Q31915",
+   "fame": 0.556,
+   "creator": "Jeff Eastin",
+   "description": "American police procedural drama television series",
+   "hook": "follows a charming con artist who partners with an FBI agent to catch other criminals",
+   "known": 0.6,
+   "kind": "procedural"
+  },
+  {
+   "label": "Angel",
+   "qid": "Q212156",
+   "fame": 0.555,
+   "creator": "David Greenwalt",
+   "description": "American television series (1999-2004)",
+   "hook": "follows a vampire cursed with a soul who fights evil in the shadows of a big city",
+   "known": 0.8,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "LazyTown",
+   "qid": "Q640403",
+   "fame": 0.555,
+   "creator": "Magnús Scheving",
+   "description": "Icelandic children's television series",
+   "hook": "follows an athletic hero who encourages a sluggish community of kids to get active and eat healthy",
+   "known": 0.4,
+   "kind": "children"
+  },
+  {
+   "label": "The Muppet Show",
+   "qid": "Q2120540",
+   "fame": 0.554,
+   "creator": "Jim Henson",
+   "description": "American variety television series",
+   "hook": "follows a troupe of felt puppet performers staging a chaotic backstage comedy program",
+   "known": 0.8,
+   "kind": "reality"
+  },
+  {
+   "label": "Jessica Jones",
+   "qid": "Q18605540",
+   "fame": 0.551,
+   "creator": "Melissa Rosenberg",
+   "description": "2015 American television series",
+   "hook": "follows a hard-drinking private investigator with super strength confronting her mind-controlling abuser",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "60 Minutes",
+   "qid": "Q247869",
+   "fame": 0.549,
+   "creator": "Don Hewitt",
+   "description": "American television newsmagazine program",
+   "hook": "opens each episode with a ticking stopwatch before its investigative news segments",
+   "known": 0.95,
+   "kind": "reality"
+  },
+  {
+   "label": "Chuck",
+   "qid": "Q2293",
+   "fame": 0.549,
+   "creator": "Josh Schwartz",
+   "description": "American television series",
+   "hook": "follows an ordinary computer nerd who gets top-secret government intelligence downloaded into his brain",
+   "known": 0.6,
+   "kind": "comedy"
+  }
+ ]
+}

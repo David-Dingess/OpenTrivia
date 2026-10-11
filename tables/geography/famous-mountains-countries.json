@@ -1,0 +1,456 @@
+{
+ "id": "table.geography.famous-mountains-countries",
+ "kind": "table",
+ "title": "Famous mountains, ranges and deserts and their countries",
+ "genre": "society",
+ "category": "geography",
+ "topic": "mountains-and-deserts",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel ?elevation WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) (MAX(?e) AS ?elevation) WHERE { VALUES ?cls { wd:Q8502 wd:Q46831 wd:Q8514 wd:Q8072 wd:Q54050 } ?item wdt:P31/wdt:P279* ?cls ; wikibase:sitelinks ?sl ; wdt:P17 ?c . FILTER(?sl >= 40) OPTIONAL { ?item p:P2044/psn:P2044/wikibase:quantityAmount ?e } } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) FILTER(!BOUND(?elevation) || ?elevation < 6500) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 186",
+  "attribution": null,
+  "fetchedAt": "2026-10-01T03:59:41.459Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-01T03:59:41.459Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "elevation_m",
+   "label": "Elevation",
+   "unit": "m",
+   "type": "number",
+   "scale": "height-m"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "natural landmark",
+  "many": "natural landmarks",
+  "hookAsk": "Which natural landmark {hook}?",
+  "hookStatement": "",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each natural landmark to its country.",
+    "odd": "Three of these natural landmarks are in {value}. Which one isn't?",
+    "all": "Tap all {n} natural landmarks in {value}."
+   },
+   "elevation_m": {
+    "role": "measure",
+    "display": "m"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Denali",
+   "qid": "Q130018",
+   "fame": 0.632,
+   "country": "United States",
+   "elevation_m": 6190,
+   "description": "highest mountain in North America, located in Alaska",
+   "hook": "is the tallest peak in North America, long known by a president's name before reverting to its native one",
+   "known": 0.6,
+   "kind": "peak"
+  },
+  {
+   "label": "Mount Kilimanjaro",
+   "qid": "Q7296",
+   "fame": 0.632,
+   "country": "Tanzania",
+   "elevation_m": 5895,
+   "description": "mountain massif in Kilimanjaro National Park in Tanzania",
+   "hook": "is Africa's tallest peak, a snow-capped giant that trekkers can climb without ropes",
+   "known": 0.8,
+   "kind": "peak"
+  },
+  {
+   "label": "Dolomites",
+   "qid": "Q1283",
+   "fame": 0.628,
+   "country": "Italy",
+   "elevation_m": 3343,
+   "description": "mountain range in the Alps",
+   "hook": "is a range of pale, jagged Alpine peaks famed for ski resorts and a pink glow at sunset",
+   "known": 0.4,
+   "kind": "range"
+  },
+  {
+   "label": "Mount Whitney",
+   "qid": "Q235539",
+   "fame": 0.627,
+   "country": "United States",
+   "elevation_m": 4421,
+   "description": "highest mountain in California and the contiguous United States",
+   "hook": "is the tallest peak among the lower 48 states, a popular hiking goal in the Sierra Nevada",
+   "known": 0.4,
+   "kind": "peak"
+  },
+  {
+   "label": "Mount St. Helens",
+   "qid": "Q4675",
+   "fame": 0.623,
+   "country": "United States",
+   "elevation_m": 2549,
+   "description": "volcano in Washington state",
+   "hook": "lost its summit in a devastating Pacific Northwest eruption that blanketed the region in ash",
+   "known": 0.6,
+   "kind": "volcano"
+  },
+  {
+   "label": "Mount Vesuvius",
+   "qid": "Q524",
+   "fame": 0.621,
+   "country": "Italy",
+   "elevation_m": 1297,
+   "description": "active stratovolcano in the Gulf of Naples, Italy",
+   "hook": "is the volcano that buried the Roman towns of Pompeii and Herculaneum in ash",
+   "known": 0.8,
+   "kind": "volcano"
+  },
+  {
+   "label": "Mount Fuji",
+   "qid": "Q39231",
+   "fame": 0.618,
+   "country": "Japan",
+   "elevation_m": 3777,
+   "description": "volcano in Yamanashi and Shizuoka Prefectures, Japan",
+   "hook": "is a snow-capped, near-perfect cone and a beloved national symbol seen in countless woodblock prints",
+   "known": 0.8,
+   "kind": "volcano"
+  },
+  {
+   "label": "Mount Rainier",
+   "qid": "Q194057",
+   "fame": 0.595,
+   "country": "United States",
+   "elevation_m": 4389,
+   "description": "stratovolcano in the U.S. state of Washington",
+   "hook": "looms over Seattle and is considered one of the most dangerous volcanoes because of its glaciers and mudflows",
+   "known": 0.4,
+   "kind": "volcano"
+  },
+  {
+   "label": "Mount Etna",
+   "qid": "Q16990",
+   "fame": 0.592,
+   "country": "Italy",
+   "elevation_m": 3403,
+   "description": "active stratovolcano on the east coast of Sicily, Italy",
+   "hook": "is the tallest active volcano in Europe, frequently erupting on a Mediterranean island",
+   "known": 0.6,
+   "kind": "volcano"
+  },
+  {
+   "label": "Mount Ararat",
+   "qid": "Q72303",
+   "fame": 0.59,
+   "country": "Turkey",
+   "elevation_m": 5137,
+   "description": "highest peak in Turkey",
+   "hook": "is a twin-peaked, snowy giant traditionally said to be where Noah's ark came to rest",
+   "known": 0.4,
+   "kind": "peak"
+  },
+  {
+   "label": "Mount Olympus",
+   "qid": "Q80344",
+   "fame": 0.572,
+   "country": "Greece",
+   "elevation_m": 2918,
+   "description": "mountain in Elassona municipality, Greece",
+   "hook": "was believed in ancient myth to be the home of Zeus and the twelve gods",
+   "known": 0.8,
+   "kind": "peak"
+  },
+  {
+   "label": "Uluru",
+   "qid": "Q33910",
+   "fame": 0.572,
+   "country": "Australia",
+   "elevation_m": 900,
+   "description": "large sandstone isolated mount in Australia",
+   "hook": "is a giant red sandstone monolith, sacred to Aboriginal people, that glows at sunrise and sunset",
+   "known": 0.6,
+   "kind": "peak"
+  },
+  {
+   "label": "Mauna Kea",
+   "qid": "Q131230",
+   "fame": 0.561,
+   "country": "United States",
+   "elevation_m": 4207,
+   "description": "Hawaiian volcano",
+   "hook": null,
+   "known": 0.2,
+   "kind": "volcano"
+  },
+  {
+   "label": "Atacama Desert",
+   "qid": "Q47141",
+   "fame": 0.556,
+   "country": "Chile",
+   "elevation_m": 2657,
+   "description": "desert in South America",
+   "hook": "is the driest non-polar place on Earth, so dark and clear that astronomers build observatories here",
+   "known": 0.6,
+   "kind": "desert"
+  },
+  {
+   "label": "Mount Elbrus",
+   "qid": "Q43105",
+   "fame": 0.547,
+   "country": "Russia",
+   "elevation_m": 5642,
+   "description": "highest mountain of the Caucasus and highest mountain in Europe",
+   "hook": "is a dormant twin-coned volcano in the Caucasus, often named as the tallest peak in Europe",
+   "known": 0.4,
+   "kind": "peak"
+  },
+  {
+   "label": "Death Valley",
+   "qid": "Q118388",
+   "fame": 0.545,
+   "country": "United States",
+   "elevation_m": -85,
+   "description": "desert basin in Inyo and San Bernadino counties in California, United States",
+   "hook": "holds the record for the hottest air temperature ever reliably measured on Earth",
+   "known": 0.6,
+   "kind": "desert"
+  },
+  {
+   "label": "Ural Mountains",
+   "qid": "Q35600",
+   "fame": 0.544,
+   "country": "Russia",
+   "elevation_m": 1895,
+   "description": "mountain range in Eurasia",
+   "hook": "form the traditional boundary between Europe and Asia",
+   "known": 0.4,
+   "kind": "range"
+  },
+  {
+   "label": "Ben Nevis",
+   "qid": "Q104674",
+   "fame": 0.54,
+   "country": "United Kingdom",
+   "elevation_m": 1345,
+   "description": "highest mountain of Great Britain",
+   "hook": "is the highest peak in the British Isles, often climbed in a charity challenge with two others",
+   "known": 0.6,
+   "kind": "peak"
+  },
+  {
+   "label": "Mojave Desert",
+   "qid": "Q184355",
+   "fame": 0.539,
+   "country": "United States",
+   "elevation_m": null,
+   "description": "desert in southwestern United States",
+   "hook": "is a hot, dry expanse of Joshua trees and cacti that surrounds Las Vegas and borders Death Valley",
+   "known": 0.4,
+   "kind": "desert"
+  },
+  {
+   "label": "Devils Tower",
+   "qid": "Q306201",
+   "fame": 0.536,
+   "country": "United States",
+   "elevation_m": 1558,
+   "description": "mountain near Moorcroft, Wyoming, United States",
+   "hook": "is a striking rock column made famous by a Spielberg film about alien contact",
+   "known": 0.4,
+   "kind": "peak"
+  },
+  {
+   "label": "Tambora",
+   "qid": "Q168714",
+   "fame": 0.529,
+   "country": "Indonesia",
+   "elevation_m": 2850,
+   "description": "stratovolcano on the island of Sumbawa in Indonesia",
+   "hook": null,
+   "known": 0.2,
+   "kind": "volcano"
+  },
+  {
+   "label": "Mauna Loa",
+   "qid": "Q159762",
+   "fame": 0.513,
+   "country": "United States",
+   "elevation_m": 4169,
+   "description": "volcano on the island of Hawaii in Hawaii, United States",
+   "hook": null,
+   "known": 0.2,
+   "kind": "volcano"
+  },
+  {
+   "label": "Western Ghats",
+   "qid": "Q4527",
+   "fame": 0.509,
+   "country": "India",
+   "elevation_m": 2695,
+   "description": "mountain range along the western coast of India",
+   "hook": null,
+   "known": 0.2,
+   "kind": "range"
+  },
+  {
+   "label": "Mount Kosciuszko",
+   "qid": "Q178167",
+   "fame": 0.502,
+   "country": "Australia",
+   "elevation_m": 2228,
+   "description": "highest mountain in the mainland of the Australian continent, located on New South Wales–Victoria border",
+   "hook": null,
+   "known": 0.2,
+   "kind": "peak"
+  },
+  {
+   "label": "Puncak Jaya",
+   "qid": "Q1045888",
+   "fame": 0.494,
+   "country": "Indonesia",
+   "elevation_m": 4884,
+   "description": "highest mountain in Oceania and the highest island peak in the world",
+   "hook": null,
+   "known": 0.05,
+   "kind": "peak"
+  },
+  {
+   "label": "Kīlauea",
+   "qid": "Q188698",
+   "fame": 0.493,
+   "country": "United States",
+   "elevation_m": 1247,
+   "description": "active volcano in Hawaii",
+   "hook": "is one of the world's most active volcanoes, pouring lava down the Big Island of Hawaii",
+   "known": 0.4,
+   "kind": "volcano"
+  },
+  {
+   "label": "Teide",
+   "qid": "Q38954",
+   "fame": 0.486,
+   "country": "Spain",
+   "elevation_m": 3715,
+   "description": "volcano on Tenerife in the Canary Islands",
+   "hook": null,
+   "known": 0.2,
+   "kind": "volcano"
+  },
+  {
+   "label": "Pinatubo",
+   "qid": "Q1451",
+   "fame": 0.485,
+   "country": "Philippines",
+   "elevation_m": 1486,
+   "description": "active stratovolcano on the island of Luzon in the Philippines",
+   "hook": "produced one of the biggest eruptions of the 20th century, briefly cooling the whole planet",
+   "known": 0.4,
+   "kind": "volcano"
+  },
+  {
+   "label": "Chimborazo",
+   "qid": "Q14081",
+   "fame": 0.481,
+   "country": "Ecuador",
+   "elevation_m": 6263,
+   "description": "volcano and highest mountain in Ecuador",
+   "hook": null,
+   "known": 0.2,
+   "kind": "peak"
+  },
+  {
+   "label": "Snowdon",
+   "qid": "Q217142",
+   "fame": 0.479,
+   "country": "United Kingdom",
+   "elevation_m": 1085,
+   "description": "highest mountain in Wales",
+   "hook": "is the tallest peak in Wales, with a mountain railway running to its summit",
+   "known": 0.4,
+   "kind": "peak"
+  },
+  {
+   "label": "Black Hills",
+   "qid": "Q250937",
+   "fame": 0.474,
+   "country": "United States",
+   "elevation_m": 2207,
+   "description": "mountain range in South Dakota and Wyoming and holy site of Native Americans",
+   "hook": "is the sacred range of the Lakota that holds a granite carving of four presidents",
+   "known": 0.4,
+   "kind": "range"
+  },
+  {
+   "label": "Mount Logan",
+   "qid": "Q120306",
+   "fame": 0.473,
+   "country": "Canada",
+   "elevation_m": 5959,
+   "description": "highest mountain in Canada, in Yukon",
+   "hook": "is the tallest peak in its nation and the second tallest in North America, with an enormous base",
+   "known": 0.4,
+   "kind": "peak"
+  },
+  {
+   "label": "Mount Tai",
+   "qid": "Q216059",
+   "fame": 0.461,
+   "country": "China",
+   "elevation_m": 1545,
+   "description": "mountain in Shandong, China",
+   "hook": null,
+   "known": 0.2,
+   "kind": "peak"
+  },
+  {
+   "label": "Eiger",
+   "qid": "Q4425",
+   "fame": 0.46,
+   "country": "Switzerland",
+   "elevation_m": 3967,
+   "description": "mountain in the Bernese Alps, Switzerland",
+   "hook": "is a notorious Alpine peak whose steep north face is known as the Murder Wall",
+   "known": 0.4,
+   "kind": "peak"
+  },
+  {
+   "label": "Mount Kinabalu",
+   "qid": "Q60967",
+   "fame": 0.451,
+   "country": "Malaysia",
+   "elevation_m": 4095,
+   "description": "mountain in Malaysia",
+   "hook": null,
+   "known": 0.2,
+   "kind": "peak"
+  }
+ ]
+}

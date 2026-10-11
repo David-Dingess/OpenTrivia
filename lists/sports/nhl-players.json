@@ -1,0 +1,7249 @@
+{
+ "id": "list.sports.nhl-players",
+ "title": "NHL players",
+ "prompt": "Name an NHL player",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "hockey",
+ "people": true,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q5 ; wdt:P106 wd:Q11774891 ; wdt:P54 ?team . ?team wdt:P118 wd:Q1215892 . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-10-02T12:25:13.719Z"
+ },
+ "rows": [
+  {
+   "label": "Wayne Gretzky",
+   "qid": "Q209518",
+   "fame": 0.635,
+   "also": [
+    "The Great One",
+    "Wayne Douglas Gretzky"
+   ]
+  },
+  {
+   "label": "Sidney Crosby",
+   "qid": "Q311280",
+   "fame": 0.612,
+   "also": [
+    "Sidney Patrick Crosby"
+   ]
+  },
+  {
+   "label": "Alexander Ovechkin",
+   "qid": "Q311374",
+   "fame": 0.604,
+   "also": [
+    "OVI",
+    "Aleksandr Ovechkin",
+    "A.M. Ovechkin",
+    "Aleksandr Mikhaylovich Ovechkin",
+    "Alex Ovechkin",
+    "Alexander Mikhailovich Ovechkin",
+    "Ovi One",
+    "Ovi Ovechkin"
+   ]
+  },
+  {
+   "label": "Macklin Celebrini",
+   "qid": "Q116369841",
+   "fame": 0.597,
+   "also": [
+    "Macklin Richard Celebrini"
+   ]
+  },
+  {
+   "label": "Connor Hellebuyck",
+   "qid": "Q16229026",
+   "fame": 0.575,
+   "also": [
+    "Connor Charles Hellebuyck"
+   ]
+  },
+  {
+   "label": "Patrick Kane",
+   "qid": "Q335876",
+   "fame": 0.558,
+   "also": [
+    "Patrick Timothy Kane II",
+    "Patrick Timothy Kane"
+   ]
+  },
+  {
+   "label": "Mike Comrie",
+   "qid": "Q706869",
+   "fame": 0.553,
+   "also": [
+    "Michael William Comrie"
+   ]
+  },
+  {
+   "label": "Johnny Gaudreau",
+   "qid": "Q94064",
+   "fame": 0.55,
+   "also": [
+    "John Gaudreau",
+    "John Michael Gaudreau",
+    "Johnny Hockey"
+   ]
+  },
+  {
+   "label": "Connor McDavid",
+   "qid": "Q2806736",
+   "fame": 0.541,
+   "also": [
+    "Connor Andrew McDavid"
+   ]
+  },
+  {
+   "label": "Auston Matthews",
+   "qid": "Q20090644",
+   "fame": 0.535,
+   "also": [
+    "Auston Taylour Matthews"
+   ]
+  },
+  {
+   "label": "Valeri Bure",
+   "qid": "Q945734",
+   "fame": 0.532,
+   "also": []
+  },
+  {
+   "label": "Mario Lemieux",
+   "qid": "Q316249",
+   "fame": 0.516,
+   "also": []
+  },
+  {
+   "label": "Jaromír Jágr",
+   "qid": "Q295345",
+   "fame": 0.512,
+   "also": []
+  },
+  {
+   "label": "Mark Messier",
+   "qid": "Q319247",
+   "fame": 0.511,
+   "also": [
+    "Mark Douglas John Messier",
+    "Mark John Douglas Messier"
+   ]
+  },
+  {
+   "label": "Gordie Howe",
+   "qid": "Q358519",
+   "fame": 0.509,
+   "also": [
+    "Gordon Howe"
+   ]
+  },
+  {
+   "label": "Jack Hughes",
+   "qid": "Q55614777",
+   "fame": 0.498,
+   "also": []
+  },
+  {
+   "label": "Bobby Orr",
+   "qid": "Q348017",
+   "fame": 0.489,
+   "also": [
+    "Robert Orr",
+    "Robert Gordon Orr"
+   ]
+  },
+  {
+   "label": "Joe Thornton",
+   "qid": "Q434899",
+   "fame": 0.483,
+   "also": [
+    "Joseph Eric Thornton"
+   ]
+  },
+  {
+   "label": "Brad Marchand",
+   "qid": "Q80733",
+   "fame": 0.48,
+   "also": []
+  },
+  {
+   "label": "Matthew Tkachuk",
+   "qid": "Q21064031",
+   "fame": 0.474,
+   "also": []
+  },
+  {
+   "label": "Evgeni Malkin",
+   "qid": "Q314433",
+   "fame": 0.473,
+   "also": [
+    "Evgeni Vladimirovich Malkin",
+    "Geno Malkin",
+    "Yevgeny Vladimirovich Malkin"
+   ]
+  },
+  {
+   "label": "Nathan MacKinnon",
+   "qid": "Q1966594",
+   "fame": 0.47,
+   "also": [
+    "Nathan Raymond MacKinnon"
+   ]
+  },
+  {
+   "label": "P. K. Subban",
+   "qid": "Q27535",
+   "fame": 0.47,
+   "also": [
+    "Pernell Karl Subban",
+    "Pernell-Karl Sylvester Subban"
+   ]
+  },
+  {
+   "label": "John Tavares",
+   "qid": "Q537353",
+   "fame": 0.468,
+   "also": []
+  },
+  {
+   "label": "Pavel Bure",
+   "qid": "Q440741",
+   "fame": 0.462,
+   "also": [
+    "Pavel Vladimirovich Bure"
+   ]
+  },
+  {
+   "label": "David Pastrňák",
+   "qid": "Q16224594",
+   "fame": 0.459,
+   "also": []
+  },
+  {
+   "label": "Phil Kessel",
+   "qid": "Q723395",
+   "fame": 0.458,
+   "also": [
+    "Philbert Kessel",
+    "Phillip Kessel"
+   ]
+  },
+  {
+   "label": "Steve Yzerman",
+   "qid": "Q440395",
+   "fame": 0.458,
+   "also": [
+    "Stephen Gregory Yzerman"
+   ]
+  },
+  {
+   "label": "Brett Hull",
+   "qid": "Q440363",
+   "fame": 0.457,
+   "also": [
+    "Brett Andrew Hull"
+   ]
+  },
+  {
+   "label": "Marc-André Fleury",
+   "qid": "Q368554",
+   "fame": 0.455,
+   "also": []
+  },
+  {
+   "label": "Jonathan Toews",
+   "qid": "Q528240",
+   "fame": 0.454,
+   "also": [
+    "Jonathan Bryan Toews"
+   ]
+  },
+  {
+   "label": "Martin St. Louis",
+   "qid": "Q715426",
+   "fame": 0.451,
+   "also": []
+  },
+  {
+   "label": "Rod Brind'Amour",
+   "qid": "Q949869",
+   "fame": 0.451,
+   "also": []
+  },
+  {
+   "label": "Patrick Roy",
+   "qid": "Q357502",
+   "fame": 0.45,
+   "also": [
+    "Patrick Jacques Roy"
+   ]
+  },
+  {
+   "label": "Zdeno Chára",
+   "qid": "Q168957",
+   "fame": 0.448,
+   "also": []
+  },
+  {
+   "label": "Carey Price",
+   "qid": "Q720963",
+   "fame": 0.446,
+   "also": []
+  },
+  {
+   "label": "Dominik Hašek",
+   "qid": "Q312695",
+   "fame": 0.444,
+   "also": [
+    "Dominik Kaštánek"
+   ]
+  },
+  {
+   "label": "Frederik Andersen",
+   "qid": "Q984048",
+   "fame": 0.443,
+   "also": []
+  },
+  {
+   "label": "Eric Lindros",
+   "qid": "Q960614",
+   "fame": 0.44,
+   "also": [
+    "Eric Bryan Lindros"
+   ]
+  },
+  {
+   "label": "Aleksander Barkov",
+   "qid": "Q620356",
+   "fame": 0.433,
+   "also": [
+    "Aleksandr Barkov",
+    "Aleksander Aleksandrovich Barkov",
+    "Aleksander Aleksandrovich Barkov Jr.",
+    "Aleksander Barkov Jr.",
+    "Sasha Barkov"
+   ]
+  },
+  {
+   "label": "Chris Chelios",
+   "qid": "Q715377",
+   "fame": 0.43,
+   "also": [
+    "Chelios",
+    "Christos Chelios",
+    "Christos Kostas Chelios"
+   ]
+  },
+  {
+   "label": "Chris Pronger",
+   "qid": "Q553286",
+   "fame": 0.43,
+   "also": [
+    "Captain Crunch",
+    "Christopher Robert Pronger"
+   ]
+  },
+  {
+   "label": "Nikita Kucherov",
+   "qid": "Q1693680",
+   "fame": 0.43,
+   "also": [
+    "Nikita Igorevich Kucherov"
+   ]
+  },
+  {
+   "label": "Bobby Hull",
+   "qid": "Q456688",
+   "fame": 0.427,
+   "also": [
+    "The Golden Jet",
+    "Robert Marvin Hull"
+   ]
+  },
+  {
+   "label": "Jordan Staal",
+   "qid": "Q447270",
+   "fame": 0.424,
+   "also": []
+  },
+  {
+   "label": "Sergei Fedorov",
+   "qid": "Q368501",
+   "fame": 0.424,
+   "also": [
+    "Sergei Viktorovich Fyodorov",
+    "Sergey Viktorovich Fyodorov"
+   ]
+  },
+  {
+   "label": "Corey Perry",
+   "qid": "Q948963",
+   "fame": 0.421,
+   "also": []
+  },
+  {
+   "label": "Mitchell Marner",
+   "qid": "Q19896071",
+   "fame": 0.419,
+   "also": [
+    "Mitch Marner"
+   ]
+  },
+  {
+   "label": "Ryan Miller",
+   "qid": "Q250011",
+   "fame": 0.416,
+   "also": [
+    "Ryan Dean Miller"
+   ]
+  },
+  {
+   "label": "Henrik Lundqvist",
+   "qid": "Q362157",
+   "fame": 0.415,
+   "also": [
+    "Björn Henrik Lundqvist",
+    "King Henrik"
+   ]
+  },
+  {
+   "label": "Jarome Iginla",
+   "qid": "Q456708",
+   "fame": 0.415,
+   "also": [
+    "Jarome Arthur-Leigh Adekunle Tig Junior Elvis Iginla"
+   ]
+  },
+  {
+   "label": "Martin Brodeur",
+   "qid": "Q357465",
+   "fame": 0.414,
+   "also": [
+    "Martin Pierre Brodeur"
+   ]
+  },
+  {
+   "label": "Leon Draisaitl",
+   "qid": "Q15012236",
+   "fame": 0.411,
+   "also": [
+    "Leon Tim Draisaitl"
+   ]
+  },
+  {
+   "label": "Paul Kariya",
+   "qid": "Q449212",
+   "fame": 0.41,
+   "also": [
+    "Paul Tetsuhiko Kariya"
+   ]
+  },
+  {
+   "label": "Guy Lafleur",
+   "qid": "Q553249",
+   "fame": 0.407,
+   "also": [
+    "The Flower",
+    "Lafleur",
+    "Guy Damien Lafleur",
+    "Le Demon Blond"
+   ]
+  },
+  {
+   "label": "Joe Sakic",
+   "qid": "Q316190",
+   "fame": 0.407,
+   "also": [
+    "Joseph Steven Sakic"
+   ]
+  },
+  {
+   "label": "Ray Bourque",
+   "qid": "Q715566",
+   "fame": 0.407,
+   "also": [
+    "Raymond Jean Bourque"
+   ]
+  },
+  {
+   "label": "Phil Esposito",
+   "qid": "Q456779",
+   "fame": 0.406,
+   "also": [
+    "Norte",
+    "Philip Anthony Esposito"
+   ]
+  },
+  {
+   "label": "Patrick Marleau",
+   "qid": "Q537382",
+   "fame": 0.404,
+   "also": [
+    "Pat marleau",
+    "Patty marleau"
+   ]
+  },
+  {
+   "label": "Bo Horvat",
+   "qid": "Q13581453",
+   "fame": 0.403,
+   "also": [
+    "Bowie William Horvat"
+   ]
+  },
+  {
+   "label": "Drew Doughty",
+   "qid": "Q706924",
+   "fame": 0.403,
+   "also": []
+  },
+  {
+   "label": "Teemu Selänne",
+   "qid": "Q253073",
+   "fame": 0.403,
+   "also": [
+    "Finnish Flash",
+    "Teemu Ilmari Selänne"
+   ]
+  },
+  {
+   "label": "Brendan Shanahan",
+   "qid": "Q739144",
+   "fame": 0.402,
+   "also": [
+    "Brendan Frederick Shanahan"
+   ]
+  },
+  {
+   "label": "Mikael Granlund",
+   "qid": "Q520141",
+   "fame": 0.4,
+   "also": [
+    "Mikael Antero Granlund"
+   ]
+  },
+  {
+   "label": "Radko Gudas",
+   "qid": "Q3501342",
+   "fame": 0.399,
+   "also": []
+  },
+  {
+   "label": "Mats Sundin",
+   "qid": "Q368528",
+   "fame": 0.397,
+   "also": [
+    "Sudden",
+    "Mats Johan Sundin"
+   ]
+  },
+  {
+   "label": "Steven Stamkos",
+   "qid": "Q520397",
+   "fame": 0.396,
+   "also": []
+  },
+  {
+   "label": "Maurice Richard",
+   "qid": "Q325138",
+   "fame": 0.394,
+   "also": [
+    "Joseph-Henri-Maurice Richard"
+   ]
+  },
+  {
+   "label": "Mike Modano",
+   "qid": "Q368568",
+   "fame": 0.394,
+   "also": []
+  },
+  {
+   "label": "Mats Zuccarello",
+   "qid": "Q252043",
+   "fame": 0.391,
+   "also": [
+    "Mats André Zuccarello Aasen",
+    "Mats Zuccarello Aasen"
+   ]
+  },
+  {
+   "label": "Jack Eichel",
+   "qid": "Q17285387",
+   "fame": 0.39,
+   "also": [
+    "Jack John-Robert Eichel",
+    "John Robert Eichel"
+   ]
+  },
+  {
+   "label": "Henrik Sedin",
+   "qid": "Q375550",
+   "fame": 0.389,
+   "also": [
+    "Henrik Lars Sedin"
+   ]
+  },
+  {
+   "label": "Anže Kopitar",
+   "qid": "Q375787",
+   "fame": 0.387,
+   "also": []
+  },
+  {
+   "label": "Grant Fuhr",
+   "qid": "Q1354283",
+   "fame": 0.387,
+   "also": [
+    "Grant Scott Fuhr"
+   ]
+  },
+  {
+   "label": "Patrice Bergeron",
+   "qid": "Q536741",
+   "fame": 0.386,
+   "also": [
+    "Patrice Bergeron-Cleary"
+   ]
+  },
+  {
+   "label": "Pavel Datsyuk",
+   "qid": "Q381413",
+   "fame": 0.383,
+   "also": [
+    "Pavel Valerievich Datsyuk",
+    "Pavel Valeryevich Datsyuk"
+   ]
+  },
+  {
+   "label": "Bobby Clarke",
+   "qid": "Q888504",
+   "fame": 0.382,
+   "also": [
+    "Bob Clarke",
+    "Robert Earle Clarke"
+   ]
+  },
+  {
+   "label": "Paul Coffey",
+   "qid": "Q920926",
+   "fame": 0.382,
+   "also": [
+    "Paul Douglas Coffey",
+    "Paul Patrick Coffey"
+   ]
+  },
+  {
+   "label": "Peter Forsberg",
+   "qid": "Q348416",
+   "fame": 0.381,
+   "also": [
+    "Foppa",
+    "Peter Mattias Forsberg"
+   ]
+  },
+  {
+   "label": "Ryan Getzlaf",
+   "qid": "Q114068",
+   "fame": 0.381,
+   "also": []
+  },
+  {
+   "label": "Gabriel Landeskog",
+   "qid": "Q715421",
+   "fame": 0.38,
+   "also": []
+  },
+  {
+   "label": "Ilya Kovalchuk",
+   "qid": "Q434859",
+   "fame": 0.38,
+   "also": [
+    "Ilya Valeryevich Kovalchuk"
+   ]
+  },
+  {
+   "label": "Theoren Fleury",
+   "qid": "Q677434",
+   "fame": 0.38,
+   "also": [
+    "Theo Fleury"
+   ]
+  },
+  {
+   "label": "Daniel Alfredsson",
+   "qid": "Q447297",
+   "fame": 0.379,
+   "also": []
+  },
+  {
+   "label": "Claude Giroux",
+   "qid": "Q940193",
+   "fame": 0.377,
+   "also": []
+  },
+  {
+   "label": "John Carlson",
+   "qid": "Q1364621",
+   "fame": 0.376,
+   "also": []
+  },
+  {
+   "label": "Marián Hossa",
+   "qid": "Q312642",
+   "fame": 0.376,
+   "also": []
+  },
+  {
+   "label": "Pavol Demitra",
+   "qid": "Q363628",
+   "fame": 0.371,
+   "also": []
+  },
+  {
+   "label": "Andrei Vasilevskiy",
+   "qid": "Q2846850",
+   "fame": 0.367,
+   "also": [
+    "Andrei Vasilevski",
+    "Andrei Andreyevich Vasilevskiy"
+   ]
+  },
+  {
+   "label": "Dany Heatley",
+   "qid": "Q440283",
+   "fame": 0.367,
+   "also": [
+    "Daniel Heatley",
+    "Daniel James Heatley",
+    "Dany Healty",
+    "Dany Heatly"
+   ]
+  },
+  {
+   "label": "Jeremy Roenick",
+   "qid": "Q973444",
+   "fame": 0.366,
+   "also": [
+    "Jeremy Shaffer Roenick"
+   ]
+  },
+  {
+   "label": "Daniel Sedin",
+   "qid": "Q537416",
+   "fame": 0.361,
+   "also": [
+    "Daniel Hans Sedin"
+   ]
+  },
+  {
+   "label": "Scott Niedermayer",
+   "qid": "Q449145",
+   "fame": 0.358,
+   "also": []
+  },
+  {
+   "label": "Roberto Luongo",
+   "qid": "Q471499",
+   "fame": 0.357,
+   "also": []
+  },
+  {
+   "label": "Ryan O'Reilly",
+   "qid": "Q861211",
+   "fame": 0.357,
+   "also": []
+  },
+  {
+   "label": "Mikko Rantanen",
+   "qid": "Q11882784",
+   "fame": 0.356,
+   "also": []
+  },
+  {
+   "label": "Eric Staal",
+   "qid": "Q446986",
+   "fame": 0.354,
+   "also": [
+    "Eric Craig Staal"
+   ]
+  },
+  {
+   "label": "Börje Salming",
+   "qid": "Q739746",
+   "fame": 0.353,
+   "also": [
+    "Anders Börje Salming"
+   ]
+  },
+  {
+   "label": "Jonathan Quick",
+   "qid": "Q631758",
+   "fame": 0.353,
+   "also": [
+    "Jonathan Douglas Quick"
+   ]
+  },
+  {
+   "label": "Jamie Benn",
+   "qid": "Q1064791",
+   "fame": 0.352,
+   "also": [
+    "Jamie Randolph Benn"
+   ]
+  },
+  {
+   "label": "Ed Belfour",
+   "qid": "Q928110",
+   "fame": 0.351,
+   "also": [
+    "Edward John Belfour"
+   ]
+  },
+  {
+   "label": "Nicklas Lidström",
+   "qid": "Q434200",
+   "fame": 0.35,
+   "also": [
+    "Lidas",
+    "Lidström"
+   ]
+  },
+  {
+   "label": "Shane Doan",
+   "qid": "Q715600",
+   "fame": 0.343,
+   "also": [
+    "Shane Albert Doan"
+   ]
+  },
+  {
+   "label": "Stan Mikita",
+   "qid": "Q440237",
+   "fame": 0.342,
+   "also": [
+    "Stanley Mikita"
+   ]
+  },
+  {
+   "label": "Viacheslav Fetisov",
+   "qid": "Q553302",
+   "fame": 0.341,
+   "also": [
+    "Slava Fetisov"
+   ]
+  },
+  {
+   "label": "Duncan Keith",
+   "qid": "Q722101",
+   "fame": 0.339,
+   "also": []
+  },
+  {
+   "label": "Jacques Plante",
+   "qid": "Q538935",
+   "fame": 0.339,
+   "also": [
+    "Joseph Jacques Omer Plante"
+   ]
+  },
+  {
+   "label": "Adam Foote",
+   "qid": "Q349347",
+   "fame": 0.338,
+   "also": [
+    "Adam David Vernon Foote"
+   ]
+  },
+  {
+   "label": "Trevor Linden",
+   "qid": "Q739351",
+   "fame": 0.335,
+   "also": [
+    "Trevor John Linden"
+   ]
+  },
+  {
+   "label": "Bryan Trottier",
+   "qid": "Q471847",
+   "fame": 0.334,
+   "also": [
+    "Bryan John Trottier"
+   ]
+  },
+  {
+   "label": "Rasmus Dahlin",
+   "qid": "Q27839454",
+   "fame": 0.334,
+   "also": []
+  },
+  {
+   "label": "Ryan Suter",
+   "qid": "Q722707",
+   "fame": 0.332,
+   "also": []
+  },
+  {
+   "label": "Jean Béliveau",
+   "qid": "Q505479",
+   "fame": 0.331,
+   "also": [
+    "Jean Arthur Beliveau"
+   ]
+  },
+  {
+   "label": "Alexander Mogilny",
+   "qid": "Q505507",
+   "fame": 0.33,
+   "also": [
+    "Alexander Gennadevich Mogilny"
+   ]
+  },
+  {
+   "label": "Sam Reinhart",
+   "qid": "Q15952002",
+   "fame": 0.329,
+   "also": [
+    "Samson Reinhart"
+   ]
+  },
+  {
+   "label": "Vincent Lecavalier",
+   "qid": "Q706875",
+   "fame": 0.328,
+   "also": []
+  },
+  {
+   "label": "Dustin Brown",
+   "qid": "Q441047",
+   "fame": 0.326,
+   "also": [
+    "Dustin James Brown"
+   ]
+  },
+  {
+   "label": "Joe Nieuwendyk",
+   "qid": "Q693585",
+   "fame": 0.326,
+   "also": [
+    "Joseph Nieuwendyk"
+   ]
+  },
+  {
+   "label": "Victor Hedman",
+   "qid": "Q728924",
+   "fame": 0.326,
+   "also": [
+    "Victor Erik Olof Hedman"
+   ]
+  },
+  {
+   "label": "Igor Shestyorkin",
+   "qid": "Q15061109",
+   "fame": 0.324,
+   "also": [
+    "Igor Shesterkin",
+    "Igor Olegovich Shesterkin",
+    "Igor Olegovich Shestyorkin",
+    "Igor Olegovitj Sjestiorkin"
+   ]
+  },
+  {
+   "label": "Owen Nolan",
+   "qid": "Q1342371",
+   "fame": 0.324,
+   "also": [
+    "Owen Liam Nolan"
+   ]
+  },
+  {
+   "label": "Rick Nash",
+   "qid": "Q456741",
+   "fame": 0.324,
+   "also": []
+  },
+  {
+   "label": "Oliver Ekman-Larsson",
+   "qid": "Q1390668",
+   "fame": 0.319,
+   "also": [
+    "Oliver Oscar Emanuel Ekman-Larsson"
+   ]
+  },
+  {
+   "label": "Chris Drury",
+   "qid": "Q471491",
+   "fame": 0.318,
+   "also": [
+    "Christopher Ellis Drury"
+   ]
+  },
+  {
+   "label": "Brock Nelson",
+   "qid": "Q2925902",
+   "fame": 0.317,
+   "also": [
+    "Brock Christian Nelson"
+   ]
+  },
+  {
+   "label": "Tim Thomas",
+   "qid": "Q471466",
+   "fame": 0.316,
+   "also": []
+  },
+  {
+   "label": "Sam Bennett",
+   "qid": "Q16212438",
+   "fame": 0.315,
+   "also": [
+    "Samuel Bennett",
+    "Samuel Bennett-McDowell",
+    "Samuel Hunter Bennett"
+   ]
+  },
+  {
+   "label": "Shea Weber",
+   "qid": "Q948721",
+   "fame": 0.315,
+   "also": [
+    "Shea Michael Weber"
+   ]
+  },
+  {
+   "label": "Roman Josi",
+   "qid": "Q440285",
+   "fame": 0.314,
+   "also": []
+  },
+  {
+   "label": "Semyon Varlamov",
+   "qid": "Q559886",
+   "fame": 0.314,
+   "also": [
+    "Semyon Aleksandrovich Varlamov"
+   ]
+  },
+  {
+   "label": "Jari Kurri",
+   "qid": "Q363621",
+   "fame": 0.312,
+   "also": [
+    "Jari Pekka Kurri"
+   ]
+  },
+  {
+   "label": "Brian Leetch",
+   "qid": "Q288994",
+   "fame": 0.311,
+   "also": [
+    "Brian Joseph Leetch"
+   ]
+  },
+  {
+   "label": "Marc-Édouard Vlasic",
+   "qid": "Q1389704",
+   "fame": 0.31,
+   "also": []
+  },
+  {
+   "label": "Tuukka Rask",
+   "qid": "Q960553",
+   "fame": 0.309,
+   "also": [
+    "Tuukka Mikael Rask"
+   ]
+  },
+  {
+   "label": "Igor Larionov",
+   "qid": "Q456771",
+   "fame": 0.305,
+   "also": [
+    "Igor Nikolayevich Larionov"
+   ]
+  },
+  {
+   "label": "Nicklas Bäckström",
+   "qid": "Q708671",
+   "fame": 0.301,
+   "also": []
+  },
+  {
+   "label": "Matt Duchene",
+   "qid": "Q717078",
+   "fame": 0.3,
+   "also": [
+    "Matthew David Duchene",
+    "Matthew Duchene"
+   ]
+  },
+  {
+   "label": "Alex Pietrangelo",
+   "qid": "Q860744",
+   "fame": 0.299,
+   "also": [
+    "Alexander Pietrangelo"
+   ]
+  },
+  {
+   "label": "Ilya Bryzgalov",
+   "qid": "Q129201",
+   "fame": 0.299,
+   "also": [
+    "Ilya Nikolayevich Bryzgalov"
+   ]
+  },
+  {
+   "label": "Rob Blake",
+   "qid": "Q742548",
+   "fame": 0.297,
+   "also": [
+    "Robert Bowlby Blake"
+   ]
+  },
+  {
+   "label": "Peter Šťastný",
+   "qid": "Q539372",
+   "fame": 0.296,
+   "also": []
+  },
+  {
+   "label": "Bobby Ryan",
+   "qid": "Q561610",
+   "fame": 0.293,
+   "also": []
+  },
+  {
+   "label": "Henrik Zetterberg",
+   "qid": "Q447340",
+   "fame": 0.293,
+   "also": [
+    "Carl Henrik Zetterberg"
+   ]
+  },
+  {
+   "label": "Pekka Rinne",
+   "qid": "Q959915",
+   "fame": 0.293,
+   "also": [
+    "Pekka Päiviö Rinne"
+   ]
+  },
+  {
+   "label": "Braden Holtby",
+   "qid": "Q896915",
+   "fame": 0.292,
+   "also": []
+  },
+  {
+   "label": "Miikka Kiprusoff",
+   "qid": "Q739705",
+   "fame": 0.292,
+   "also": [
+    "Miikka Sakari Kiprusoff"
+   ]
+  },
+  {
+   "label": "Saku Koivu",
+   "qid": "Q347963",
+   "fame": 0.292,
+   "also": [
+    "Saku Antero Koivu"
+   ]
+  },
+  {
+   "label": "Evgeni Nabokov",
+   "qid": "Q390913",
+   "fame": 0.29,
+   "also": [
+    "Yevgeni Viktorovich Nabokov",
+    "Yevgeny Viktorovich Nabokov"
+   ]
+  },
+  {
+   "label": "Olaf Kölzig",
+   "qid": "Q510526",
+   "fame": 0.281,
+   "also": []
+  },
+  {
+   "label": "Markus Näslund",
+   "qid": "Q368511",
+   "fame": 0.28,
+   "also": []
+  },
+  {
+   "label": "Brad Richards",
+   "qid": "Q739793",
+   "fame": 0.279,
+   "also": [
+    "Bradley Richards",
+    "Bradley Glen Richards",
+    "Bradley Glenn Richards"
+   ]
+  },
+  {
+   "label": "Blake Wheeler",
+   "qid": "Q881297",
+   "fame": 0.277,
+   "also": [
+    "Blake James Wheeler"
+   ]
+  },
+  {
+   "label": "Philipp Grubauer",
+   "qid": "Q6381498",
+   "fame": 0.277,
+   "also": []
+  },
+  {
+   "label": "Patrick Sharp",
+   "qid": "Q1336130",
+   "fame": 0.276,
+   "also": []
+  },
+  {
+   "label": "Jeff Carter",
+   "qid": "Q943565",
+   "fame": 0.275,
+   "also": [
+    "Jeffrey J. Carter"
+   ]
+  },
+  {
+   "label": "Howie Morenz",
+   "qid": "Q538946",
+   "fame": 0.272,
+   "also": [
+    "Howard William Morenz"
+   ]
+  },
+  {
+   "label": "Erik Haula",
+   "qid": "Q11858149",
+   "fame": 0.267,
+   "also": []
+  },
+  {
+   "label": "Josh Morrissey",
+   "qid": "Q13581454",
+   "fame": 0.267,
+   "also": []
+  },
+  {
+   "label": "Timo Meier",
+   "qid": "Q20392160",
+   "fame": 0.267,
+   "also": []
+  },
+  {
+   "label": "Marián Gáborík",
+   "qid": "Q447291",
+   "fame": 0.265,
+   "also": []
+  },
+  {
+   "label": "Ryan Smyth",
+   "qid": "Q739756",
+   "fame": 0.265,
+   "also": [
+    "Ryan Alexander Borden Smyth",
+    "Ryan Alexander Gordon Smyth"
+   ]
+  },
+  {
+   "label": "Miroslav Šatan",
+   "qid": "Q715409",
+   "fame": 0.264,
+   "also": []
+  },
+  {
+   "label": "Colton Parayko",
+   "qid": "Q16204018",
+   "fame": 0.263,
+   "also": []
+  },
+  {
+   "label": "Nino Niederreiter",
+   "qid": "Q688768",
+   "fame": 0.263,
+   "also": []
+  },
+  {
+   "label": "Olli Jokinen",
+   "qid": "Q706944",
+   "fame": 0.263,
+   "also": [
+    "Olli Veli Pekka Jokinen"
+   ]
+  },
+  {
+   "label": "Ed Jovanovski",
+   "qid": "Q739863",
+   "fame": 0.26,
+   "also": [
+    "Edward Jovanovski"
+   ]
+  },
+  {
+   "label": "Peter Bondra",
+   "qid": "Q505524",
+   "fame": 0.26,
+   "also": []
+  },
+  {
+   "label": "Ruslan Salei",
+   "qid": "Q376357",
+   "fame": 0.26,
+   "also": [
+    "Ruslan Albertovich Salei"
+   ]
+  },
+  {
+   "label": "Thomas Vanek",
+   "qid": "Q44850",
+   "fame": 0.259,
+   "also": []
+  },
+  {
+   "label": "Darius Kasparaitis",
+   "qid": "Q458564",
+   "fame": 0.256,
+   "also": []
+  },
+  {
+   "label": "Alexander Radulov",
+   "qid": "Q471377",
+   "fame": 0.255,
+   "also": [
+    "Aleksandr Valeryevich Radulov",
+    "Alexander Valerievich Radulov"
+   ]
+  },
+  {
+   "label": "Chris Kunitz",
+   "qid": "Q1077443",
+   "fame": 0.255,
+   "also": [
+    "Christopher Kunitz"
+   ]
+  },
+  {
+   "label": "Doug Weight",
+   "qid": "Q928048",
+   "fame": 0.254,
+   "also": [
+    "Douglas Daniel Weight"
+   ]
+  },
+  {
+   "label": "Mikko Koivu",
+   "qid": "Q715623",
+   "fame": 0.252,
+   "also": [
+    "Mikko-Sakari Koivu"
+   ]
+  },
+  {
+   "label": "Patrik Eliáš",
+   "qid": "Q283100",
+   "fame": 0.249,
+   "also": []
+  },
+  {
+   "label": "Kārlis Skrastiņš",
+   "qid": "Q352151",
+   "fame": 0.239,
+   "also": []
+  },
+  {
+   "label": "Brooks Orpik",
+   "qid": "Q929783",
+   "fame": 0.237,
+   "also": [
+    "Richard Brooks Orpik"
+   ]
+  },
+  {
+   "label": "Georges Vézina",
+   "qid": "Q456736",
+   "fame": 0.237,
+   "also": [
+    "Joseph Georges Gonzague Vézina"
+   ]
+  },
+  {
+   "label": "Gustav Nyquist",
+   "qid": "Q128328",
+   "fame": 0.235,
+   "also": []
+  },
+  {
+   "label": "Loui Eriksson",
+   "qid": "Q497781",
+   "fame": 0.233,
+   "also": [
+    "Loui William Eriksson"
+   ]
+  },
+  {
+   "label": "Jaroslav Halák",
+   "qid": "Q887299",
+   "fame": 0.23,
+   "also": []
+  },
+  {
+   "label": "Milan Hejduk",
+   "qid": "Q960566",
+   "fame": 0.23,
+   "also": []
+  },
+  {
+   "label": "Ryan Callahan",
+   "qid": "Q1396686",
+   "fame": 0.228,
+   "also": [
+    "Ryan G Callahan"
+   ]
+  },
+  {
+   "label": "Mike Smith",
+   "qid": "Q930846",
+   "fame": 0.224,
+   "also": []
+  },
+  {
+   "label": "Ruslan Fedotenko",
+   "qid": "Q706954",
+   "fame": 0.222,
+   "also": [
+    "Ruslan Viktorovych Fedotenko"
+   ]
+  },
+  {
+   "label": "David Krejčí",
+   "qid": "Q944189",
+   "fame": 0.219,
+   "also": []
+  },
+  {
+   "label": "Artūrs Irbe",
+   "qid": "Q449582",
+   "fame": 0.218,
+   "also": []
+  },
+  {
+   "label": "Joel Lundqvist",
+   "qid": "Q931343",
+   "fame": 0.214,
+   "also": [
+    "Joel Per Lundqvist"
+   ]
+  },
+  {
+   "label": "Sergei Makarov",
+   "qid": "Q505412",
+   "fame": 0.211,
+   "also": [
+    "Sergei Mikhailovich Makarov"
+   ]
+  },
+  {
+   "label": "Niklas Kronwall",
+   "qid": "Q722939",
+   "fame": 0.21,
+   "also": [
+    "Hans Niklas Kronwall"
+   ]
+  },
+  {
+   "label": "Jori Lehterä",
+   "qid": "Q656263",
+   "fame": 0.206,
+   "also": []
+  },
+  {
+   "label": "Leo Komarov",
+   "qid": "Q928815",
+   "fame": 0.206,
+   "also": [
+    "Leonid Aleksandrovich Komarov",
+    "Leonid Komarov"
+   ]
+  },
+  {
+   "label": "Valtteri Filppula",
+   "qid": "Q723389",
+   "fame": 0.206,
+   "also": []
+  },
+  {
+   "label": "Dan Boyle",
+   "qid": "Q1159007",
+   "fame": 0.204,
+   "also": [
+    "Daniel Denis Boyle"
+   ]
+  },
+  {
+   "label": "Vladimir Krutov",
+   "qid": "Q504942",
+   "fame": 0.203,
+   "also": [
+    "Vladimir Yevgenyevich Krutov"
+   ]
+  },
+  {
+   "label": "Mats Näslund",
+   "qid": "Q742452",
+   "fame": 0.201,
+   "also": []
+  },
+  {
+   "label": "Aaron Ekblad",
+   "qid": "Q4661992",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aaron Miller",
+   "qid": "Q302339",
+   "fame": 0.2,
+   "also": [
+    "Aaron Michael Miller"
+   ]
+  },
+  {
+   "label": "Adam Deadmarsh",
+   "qid": "Q349138",
+   "fame": 0.2,
+   "also": [
+    "Adam Richard Deadmarsh"
+   ]
+  },
+  {
+   "label": "Adam Henrique",
+   "qid": "Q324136",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Adam Larsson",
+   "qid": "Q350284",
+   "fame": 0.2,
+   "also": [
+    "Nils Erik Adam Jeremy Larsson",
+    "Nils Erik Adam Larsson"
+   ]
+  },
+  {
+   "label": "Adam Lowry",
+   "qid": "Q4679424",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Adam Oates",
+   "qid": "Q350538",
+   "fame": 0.2,
+   "also": [
+    "Adam Robert Oates"
+   ]
+  },
+  {
+   "label": "Adrian Aucoin",
+   "qid": "Q372618",
+   "fame": 0.2,
+   "also": [
+    "Adrian Mark Aucoin"
+   ]
+  },
+  {
+   "label": "Adrian Kempe",
+   "qid": "Q15619153",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aki Berg",
+   "qid": "Q417771",
+   "fame": 0.2,
+   "also": [
+    "Aki-Petteri Arvid Berg"
+   ]
+  },
+  {
+   "label": "Akira Schmid",
+   "qid": "Q110063674",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Al Arbour",
+   "qid": "Q705925",
+   "fame": 0.2,
+   "also": [
+    "Alger Joseph Arbour"
+   ]
+  },
+  {
+   "label": "Al MacInnis",
+   "qid": "Q378367",
+   "fame": 0.2,
+   "also": [
+    "Allan MacInnis"
+   ]
+  },
+  {
+   "label": "Alec Martinez",
+   "qid": "Q503722",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aleš Kotalík",
+   "qid": "Q2003900",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Alex Delvecchio",
+   "qid": "Q662920",
+   "fame": 0.2,
+   "also": [
+    "Alexander Peter"
+   ]
+  },
+  {
+   "label": "Alex Tuch",
+   "qid": "Q17181019",
+   "fame": 0.2,
+   "also": [
+    "Alex Daniel Tuch"
+   ]
+  },
+  {
+   "label": "Alexander Edler",
+   "qid": "Q2063686",
+   "fame": 0.2,
+   "also": [
+    "Ulf Niklas Alexander Edler"
+   ]
+  },
+  {
+   "label": "Alexander Frolov",
+   "qid": "Q666511",
+   "fame": 0.2,
+   "also": [
+    "Aleksandr Aleksandrovich Frolov",
+    "Alexander Alexandrovich Frolov"
+   ]
+  },
+  {
+   "label": "Alexander Killorn",
+   "qid": "Q4719307",
+   "fame": 0.2,
+   "also": [
+    "Alex Killorn",
+    "Alexander Joseph Killorn"
+   ]
+  },
+  {
+   "label": "Alexander Salák",
+   "qid": "Q1400269",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Alexander Semin",
+   "qid": "Q537341",
+   "fame": 0.2,
+   "also": [
+    "Aleksandr Valeryevich Syomin",
+    "Alexander Valeryevich Semin"
+   ]
+  },
+  {
+   "label": "Alexander Steen",
+   "qid": "Q1571059",
+   "fame": 0.2,
+   "also": [
+    "Alexander Lennart Steen"
+   ]
+  },
+  {
+   "label": "Alexander Vasyunov",
+   "qid": "Q554302",
+   "fame": 0.2,
+   "also": [
+    "Alexander Sergeevich Vasyunov"
+   ]
+  },
+  {
+   "label": "Alexandre Daigle",
+   "qid": "Q671327",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Alexandre Texier",
+   "qid": "Q30729474",
+   "fame": 0.2,
+   "also": [
+    "Alex Texier"
+   ]
+  },
+  {
+   "label": "Alexei Emelin",
+   "qid": "Q375902",
+   "fame": 0.2,
+   "also": [
+    "Alexei Vyacheslavovich Emelin"
+   ]
+  },
+  {
+   "label": "Alexei Kovalev",
+   "qid": "Q739944",
+   "fame": 0.2,
+   "also": [
+    "Alexey Kovalev",
+    "Aleksey Vyacheslavovich Kovalyov",
+    "Alexei Vyacheslavovich Kovalev"
+   ]
+  },
+  {
+   "label": "Alexei Marchenko",
+   "qid": "Q982600",
+   "fame": 0.2,
+   "also": [
+    "Alexey Marchenko",
+    "Alexey Igorevich Marchenko"
+   ]
+  },
+  {
+   "label": "Alexei Ponikarovsky",
+   "qid": "Q739781",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Alexei Yashin",
+   "qid": "Q585247",
+   "fame": 0.2,
+   "also": [
+    "Aleksey Valeryevich Yashin",
+    "Alexei Valeryevich Yashin"
+   ]
+  },
+  {
+   "label": "Alexei Zhitnik",
+   "qid": "Q1379215",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Alphonse Lacroix",
+   "qid": "Q1361048",
+   "fame": 0.2,
+   "also": [
+    "Alphonse Albert Lacroix"
+   ]
+  },
+  {
+   "label": "Anders Eldebrink",
+   "qid": "Q245858",
+   "fame": 0.2,
+   "also": [
+    "Anders Karl Daniel Eldebrink"
+   ]
+  },
+  {
+   "label": "Anders Lee",
+   "qid": "Q4753855",
+   "fame": 0.2,
+   "also": [
+    "Anders Mark Lee"
+   ]
+  },
+  {
+   "label": "Anders Nilsson",
+   "qid": "Q491204",
+   "fame": 0.2,
+   "also": [
+    "Bengt Per Anders Nilsson"
+   ]
+  },
+  {
+   "label": "Andre Burakovsky",
+   "qid": "Q13581457",
+   "fame": 0.2,
+   "also": [
+    "André Burakowsky"
+   ]
+  },
+  {
+   "label": "Andreas Dackell",
+   "qid": "Q496746",
+   "fame": 0.2,
+   "also": [
+    "Andreas Lars Dackell"
+   ]
+  },
+  {
+   "label": "Andrei Kostitsyn",
+   "qid": "Q502878",
+   "fame": 0.2,
+   "also": [
+    "Andrei Olegovich Kostitsyn"
+   ]
+  },
+  {
+   "label": "Andrei Kovalenko",
+   "qid": "Q502310",
+   "fame": 0.2,
+   "also": [
+    "Andrei Nikolaevich Kovalenko"
+   ]
+  },
+  {
+   "label": "Andrei Loktionov",
+   "qid": "Q452625",
+   "fame": 0.2,
+   "also": [
+    "Andrei Vyacheslavovich Loktionov"
+   ]
+  },
+  {
+   "label": "Andrei Markov",
+   "qid": "Q502674",
+   "fame": 0.2,
+   "also": [
+    "Andrei Viktorovich Markov"
+   ]
+  },
+  {
+   "label": "Andrei Nazarov",
+   "qid": "Q502679",
+   "fame": 0.2,
+   "also": [
+    "Andrei Viktorovich Nazarov",
+    "Andrey Viktorovich Nazarov"
+   ]
+  },
+  {
+   "label": "Andrei Nikolishin",
+   "qid": "Q502116",
+   "fame": 0.2,
+   "also": [
+    "Andrei Vasilievich Nikolishin",
+    "Andrey Vasilyevich Nikolishin"
+   ]
+  },
+  {
+   "label": "Andrei Svechnikov",
+   "qid": "Q34489864",
+   "fame": 0.2,
+   "also": [
+    "Andrei Igorevich Svechnikov"
+   ]
+  },
+  {
+   "label": "Andrei Trefilov",
+   "qid": "Q502694",
+   "fame": 0.2,
+   "also": [
+    "Andrei Viktorovich Trefilov",
+    "Andrey Viktorovich Trefilov"
+   ]
+  },
+  {
+   "label": "Andrej Sekera",
+   "qid": "Q280876",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Andrew Brunette",
+   "qid": "Q503954",
+   "fame": 0.2,
+   "also": [
+    "Andrew D. Brunette"
+   ]
+  },
+  {
+   "label": "Andrew Cogliano",
+   "qid": "Q504116",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Andrew Copp",
+   "qid": "Q19800096",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Andrew Ference",
+   "qid": "Q504655",
+   "fame": 0.2,
+   "also": [
+    "Andrew James Stewart Ference"
+   ]
+  },
+  {
+   "label": "Andrew Hutchinson",
+   "qid": "Q175914",
+   "fame": 0.2,
+   "also": [
+    "Andrew Thomas Hutchinson"
+   ]
+  },
+  {
+   "label": "Andrew Ladd",
+   "qid": "Q505814",
+   "fame": 0.2,
+   "also": [
+    "Andrew Joseph Ladd"
+   ]
+  },
+  {
+   "label": "Andrew Mangiapane",
+   "qid": "Q20745013",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Andrew Raycroft",
+   "qid": "Q506880",
+   "fame": 0.2,
+   "also": [
+    "Andrew Joseph Ernest Raycroft"
+   ]
+  },
+  {
+   "label": "Andy Bathgate",
+   "qid": "Q525300",
+   "fame": 0.2,
+   "also": [
+    "Andrew James Bathgate"
+   ]
+  },
+  {
+   "label": "Andy Moog",
+   "qid": "Q526778",
+   "fame": 0.2,
+   "also": [
+    "Donald Andrew Moog"
+   ]
+  },
+  {
+   "label": "Antero Niittymäki",
+   "qid": "Q572100",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Anthony Mantha",
+   "qid": "Q13580947",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Antoine Roussel",
+   "qid": "Q586970",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Anton Khudobin",
+   "qid": "Q595186",
+   "fame": 0.2,
+   "also": [
+    "Anton Valerievich Khudobin",
+    "Anton Valeryevich Khudobin"
+   ]
+  },
+  {
+   "label": "Anton Lander",
+   "qid": "Q591400",
+   "fame": 0.2,
+   "also": [
+    "Sven Anton Lander"
+   ]
+  },
+  {
+   "label": "Anton Šťastný",
+   "qid": "Q596600",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Anton Strålman",
+   "qid": "Q594621",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Antti Aalto",
+   "qid": "Q609589",
+   "fame": 0.2,
+   "also": [
+    "Antti Sami Aalto"
+   ]
+  },
+  {
+   "label": "Antti Laaksonen",
+   "qid": "Q609720",
+   "fame": 0.2,
+   "also": [
+    "Antti Akseli Laaksonen"
+   ]
+  },
+  {
+   "label": "Antti Miettinen",
+   "qid": "Q609738",
+   "fame": 0.2,
+   "also": [
+    "Antti Markus Miettinen"
+   ]
+  },
+  {
+   "label": "Antti Niemi",
+   "qid": "Q609762",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Antti Raanta",
+   "qid": "Q4777426",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Antti-Jussi Niemi",
+   "qid": "Q609584",
+   "fame": 0.2,
+   "also": [
+    "Antti-Jussi Jormanpoika Niemi"
+   ]
+  },
+  {
+   "label": "Artem Anisimov",
+   "qid": "Q713347",
+   "fame": 0.2,
+   "also": [
+    "Artem Alekseevich Anisimov",
+    "Artyom Alekseyevich Anisimov"
+   ]
+  },
+  {
+   "label": "Artemi Panarin",
+   "qid": "Q593699",
+   "fame": 0.2,
+   "also": [
+    "Artemy Panarin",
+    "Artemy Sergeevich Panarin"
+   ]
+  },
+  {
+   "label": "Artūrs Kulda",
+   "qid": "Q716104",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Beattie Ramsay",
+   "qid": "Q813316",
+   "fame": 0.2,
+   "also": [
+    "William Beattie Ramsay"
+   ]
+  },
+  {
+   "label": "Ben Bishop",
+   "qid": "Q816445",
+   "fame": 0.2,
+   "also": [
+    "Benjamin Bishop",
+    "Benjamin Manning Bishop III"
+   ]
+  },
+  {
+   "label": "Bengt-Åke Gustafsson",
+   "qid": "Q817207",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bernie Geoffrion",
+   "qid": "Q826558",
+   "fame": 0.2,
+   "also": [
+    "Boom Boom",
+    "Bernard Joseph Andre Geoffrion"
+   ]
+  },
+  {
+   "label": "Bernie Parent",
+   "qid": "Q826579",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bert McCaffrey",
+   "qid": "Q827417",
+   "fame": 0.2,
+   "also": [
+    "John Albert McCaffrey"
+   ]
+  },
+  {
+   "label": "Bill Barber",
+   "qid": "Q323103",
+   "fame": 0.2,
+   "also": [
+    "William Charles Barber"
+   ]
+  },
+  {
+   "label": "Bill Guerin",
+   "qid": "Q795013",
+   "fame": 0.2,
+   "also": [
+    "William Robert Guerin"
+   ]
+  },
+  {
+   "label": "Billy Smith",
+   "qid": "Q863224",
+   "fame": 0.2,
+   "also": [
+    "William John Smith"
+   ]
+  },
+  {
+   "label": "Björn Melin",
+   "qid": "Q879707",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bo Berglund",
+   "qid": "Q610775",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bob Gainey",
+   "qid": "Q887935",
+   "fame": 0.2,
+   "also": [
+    "Robert Michael Gainey"
+   ]
+  },
+  {
+   "label": "Bobby Holík",
+   "qid": "Q888570",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bobby Rousseau",
+   "qid": "Q888653",
+   "fame": 0.2,
+   "also": [
+    "Robert Rousseau",
+    "Joseph Jean-Paul Robert Rousseau"
+   ]
+  },
+  {
+   "label": "Boris Mironov",
+   "qid": "Q893742",
+   "fame": 0.2,
+   "also": [
+    "Boris Olegovich Mironov"
+   ]
+  },
+  {
+   "label": "Brad McCrimmon",
+   "qid": "Q896843",
+   "fame": 0.2,
+   "also": [
+    "Byron Brad McCrimmon"
+   ]
+  },
+  {
+   "label": "Brad Stuart",
+   "qid": "Q896870",
+   "fame": 0.2,
+   "also": [
+    "Bradley Stuart"
+   ]
+  },
+  {
+   "label": "Brady Skjei",
+   "qid": "Q2923509",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Brady Tkachuk",
+   "qid": "Q47091197",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Brandon Bochenski",
+   "qid": "Q898119",
+   "fame": 0.2,
+   "also": [
+    "Brandon Louis Bochenski"
+   ]
+  },
+  {
+   "label": "Brandon Hagel",
+   "qid": "Q87544687",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Brandon Saad",
+   "qid": "Q389490",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Brandon Yip",
+   "qid": "Q898209",
+   "fame": 0.2,
+   "also": [
+    "Ye Jinguang",
+    "Brandon Michael Harry Yip"
+   ]
+  },
+  {
+   "label": "Branko Radivojevič",
+   "qid": "Q722117",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Brayden McNabb",
+   "qid": "Q944469",
+   "fame": 0.2,
+   "also": [
+    "Brayden Luke McNabb"
+   ]
+  },
+  {
+   "label": "Brayden Point",
+   "qid": "Q17183570",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Brayden Schenn",
+   "qid": "Q902941",
+   "fame": 0.2,
+   "also": [
+    "Brayden Michael Schenn"
+   ]
+  },
+  {
+   "label": "Brendan Gallagher",
+   "qid": "Q2924426",
+   "fame": 0.2,
+   "also": [
+    "Brendan Adam Mathew Gallagher"
+   ]
+  },
+  {
+   "label": "Brenden Morrow",
+   "qid": "Q573587",
+   "fame": 0.2,
+   "also": [
+    "Brenden Blair Morrow"
+   ]
+  },
+  {
+   "label": "Brent Burns",
+   "qid": "Q909711",
+   "fame": 0.2,
+   "also": [
+    "William Brent Burns"
+   ]
+  },
+  {
+   "label": "Brent Seabrook",
+   "qid": "Q909824",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Brent Sopel",
+   "qid": "Q909829",
+   "fame": 0.2,
+   "also": [
+    "Brent Bernard Sopel"
+   ]
+  },
+  {
+   "label": "Brian Bellows",
+   "qid": "Q582276",
+   "fame": 0.2,
+   "also": [
+    "Brian Edward Bellows"
+   ]
+  },
+  {
+   "label": "Brian Boucher",
+   "qid": "Q911928",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Brian Boyle",
+   "qid": "Q911930",
+   "fame": 0.2,
+   "also": [
+    "Brian Paul Boyle"
+   ]
+  },
+  {
+   "label": "Brian Campbell",
+   "qid": "Q911986",
+   "fame": 0.2,
+   "also": [
+    "Brian Wesley Campbell"
+   ]
+  },
+  {
+   "label": "Brian Dumoulin",
+   "qid": "Q4963628",
+   "fame": 0.2,
+   "also": [
+    "Brian Joseph Dumoulin"
+   ]
+  },
+  {
+   "label": "Brian Elliott",
+   "qid": "Q912135",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Brian Gionta",
+   "qid": "Q912220",
+   "fame": 0.2,
+   "also": [
+    "Brian Joseph Gionta"
+   ]
+  },
+  {
+   "label": "Brian Rafalski",
+   "qid": "Q706893",
+   "fame": 0.2,
+   "also": [
+    "Brian Christopher Rafalski"
+   ]
+  },
+  {
+   "label": "Brian Rolston",
+   "qid": "Q595728",
+   "fame": 0.2,
+   "also": [
+    "Brian Lee Rolston"
+   ]
+  },
+  {
+   "label": "Brock Boeser",
+   "qid": "Q20090315",
+   "fame": 0.2,
+   "also": [
+    "Brock Michael Boeser"
+   ]
+  },
+  {
+   "label": "Brock Faber",
+   "qid": "Q110973348",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bryan Berard",
+   "qid": "Q994964",
+   "fame": 0.2,
+   "also": [
+    "Bryan Wallace Berard"
+   ]
+  },
+  {
+   "label": "Bryan McCabe",
+   "qid": "Q776895",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bryan Rust",
+   "qid": "Q18637940",
+   "fame": 0.2,
+   "also": [
+    "Bryan Peter Rust"
+   ]
+  },
+  {
+   "label": "Cal Clutterbuck",
+   "qid": "Q942250",
+   "fame": 0.2,
+   "also": [
+    "Cal William Clutterbuck",
+    "Pascal William Clutterbuck"
+   ]
+  },
+  {
+   "label": "Calle Järnkrok",
+   "qid": "Q961358",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cam Fowler",
+   "qid": "Q1027905",
+   "fame": 0.2,
+   "also": [
+    "Cameron Matthew Fowler"
+   ]
+  },
+  {
+   "label": "Cam Neely",
+   "qid": "Q1027913",
+   "fame": 0.2,
+   "also": [
+    "Cameron Michael Neely"
+   ]
+  },
+  {
+   "label": "Cam Ward",
+   "qid": "Q707642",
+   "fame": 0.2,
+   "also": [
+    "Cameron Kenneth Ward"
+   ]
+  },
+  {
+   "label": "Carl Gunnarsson",
+   "qid": "Q122495",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Carl Hagelin",
+   "qid": "Q1038576",
+   "fame": 0.2,
+   "also": [
+    "Carl Oliver Hagelin"
+   ]
+  },
+  {
+   "label": "Carl Söderberg",
+   "qid": "Q2939014",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Carter Hart",
+   "qid": "Q23007764",
+   "fame": 0.2,
+   "also": [
+    "Carter John Hart"
+   ]
+  },
+  {
+   "label": "Charles McAvoy",
+   "qid": "Q23926004",
+   "fame": 0.2,
+   "also": [
+    "Charlie McAvoy"
+   ]
+  },
+  {
+   "label": "Charlie Coyle",
+   "qid": "Q547607",
+   "fame": 0.2,
+   "also": [
+    "Charles Robert Coyle"
+   ]
+  },
+  {
+   "label": "Charlie Gardiner",
+   "qid": "Q860294",
+   "fame": 0.2,
+   "also": [
+    "Charles Robert Gardiner",
+    "Chuck Gardiner"
+   ]
+  },
+  {
+   "label": "Chris Bourque",
+   "qid": "Q730901",
+   "fame": 0.2,
+   "also": [
+    "Christopher Ray Bourque"
+   ]
+  },
+  {
+   "label": "Chris Clark",
+   "qid": "Q1077107",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chris Kelly",
+   "qid": "Q979893",
+   "fame": 0.2,
+   "also": [
+    "Christopher Kelly"
+   ]
+  },
+  {
+   "label": "Chris Kreider",
+   "qid": "Q465017",
+   "fame": 0.2,
+   "also": [
+    "Christopher James Kreider"
+   ]
+  },
+  {
+   "label": "Chris Osgood",
+   "qid": "Q504452",
+   "fame": 0.2,
+   "also": [
+    "Christopher John Osgood"
+   ]
+  },
+  {
+   "label": "Chris Phillips",
+   "qid": "Q1077658",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chris Simon",
+   "qid": "Q1077747",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Christian Bäckman",
+   "qid": "Q1079118",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Claude Julien",
+   "qid": "Q268386",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Claude Lemieux",
+   "qid": "Q974567",
+   "fame": 0.2,
+   "also": [
+    "Claude Percy Lemieux"
+   ]
+  },
+  {
+   "label": "Clayton Keller",
+   "qid": "Q22278556",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cody Eakin",
+   "qid": "Q554195",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Colby Cave",
+   "qid": "Q47067957",
+   "fame": 0.2,
+   "also": [
+    "Colby Alexander Cave"
+   ]
+  },
+  {
+   "label": "Connor Bedard",
+   "qid": "Q102425753",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Connor Murphy",
+   "qid": "Q2993498",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Conor Garland",
+   "qid": "Q20090755",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Corey Crawford",
+   "qid": "Q513068",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cory Schneider",
+   "qid": "Q194028",
+   "fame": 0.2,
+   "also": [
+    "Cory Franklin Schneider"
+   ]
+  },
+  {
+   "label": "Craig Anderson",
+   "qid": "Q719882",
+   "fame": 0.2,
+   "also": [
+    "Craig Peter Anderson"
+   ]
+  },
+  {
+   "label": "Craig Ramsay",
+   "qid": "Q718620",
+   "fame": 0.2,
+   "also": [
+    "Craig Edward Ramsay"
+   ]
+  },
+  {
+   "label": "Craig Smith",
+   "qid": "Q1138675",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cristobal Huet",
+   "qid": "Q523170",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Curtis Joseph",
+   "qid": "Q1145615",
+   "fame": 0.2,
+   "also": [
+    "Curtis Shayne Joseph"
+   ]
+  },
+  {
+   "label": "Curtis Lazar",
+   "qid": "Q5195806",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dainius Zubrus",
+   "qid": "Q734782",
+   "fame": 0.2,
+   "also": [
+    "Dainius Gintas Zubrus"
+   ]
+  },
+  {
+   "label": "Dale Hawerchuk",
+   "qid": "Q1157843",
+   "fame": 0.2,
+   "also": [
+    "Dale Martin Hawerchuk"
+   ]
+  },
+  {
+   "label": "Damien Brunner",
+   "qid": "Q667016",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dan Bylsma",
+   "qid": "Q1159017",
+   "fame": 0.2,
+   "also": [
+    "Daniel Brian Bylsma"
+   ]
+  },
+  {
+   "label": "Daniel Brière",
+   "qid": "Q960831",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Daniel Cleary",
+   "qid": "Q1160350",
+   "fame": 0.2,
+   "also": [
+    "Daniel Michael Cleary"
+   ]
+  },
+  {
+   "label": "Daniel Tjärnqvist",
+   "qid": "Q729413",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Danny Markov",
+   "qid": "Q1163958",
+   "fame": 0.2,
+   "also": [
+    "Daniil Markov",
+    "Daniil Yevgenyevich Markov"
+   ]
+  },
+  {
+   "label": "Darcy Kuemper",
+   "qid": "Q5222375",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Darcy Tucker",
+   "qid": "Q1165737",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Darnell Nurse",
+   "qid": "Q13486477",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Darryl Sittler",
+   "qid": "Q1166725",
+   "fame": 0.2,
+   "also": [
+    "Darryl Glen Sittler"
+   ]
+  },
+  {
+   "label": "Dave Andreychuk",
+   "qid": "Q1173093",
+   "fame": 0.2,
+   "also": [
+    "David John Andreychuk"
+   ]
+  },
+  {
+   "label": "Dave Christian",
+   "qid": "Q977322",
+   "fame": 0.2,
+   "also": [
+    "David William Christian"
+   ]
+  },
+  {
+   "label": "Dave Trottier",
+   "qid": "Q608327",
+   "fame": 0.2,
+   "also": [
+    "David Thomas Trottier"
+   ]
+  },
+  {
+   "label": "David Aebischer",
+   "qid": "Q664921",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "David Backes",
+   "qid": "Q1173622",
+   "fame": 0.2,
+   "also": [
+    "David Anthony Backes"
+   ]
+  },
+  {
+   "label": "David Booth",
+   "qid": "Q1173781",
+   "fame": 0.2,
+   "also": [
+    "David Jonathan Booth"
+   ]
+  },
+  {
+   "label": "David Legwand",
+   "qid": "Q948733",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "David Moravec",
+   "qid": "Q743629",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "David Moss",
+   "qid": "Q1175765",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "David Perron",
+   "qid": "Q354570",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "David Rundblad",
+   "qid": "Q1176428",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "David Savard",
+   "qid": "Q3018760",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "David Výborný",
+   "qid": "Q1177008",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Denis Grebeshkov",
+   "qid": "Q928586",
+   "fame": 0.2,
+   "also": [
+    "Denis Sergeyevich Grebeshkov"
+   ]
+  },
+  {
+   "label": "Denis Potvin",
+   "qid": "Q176314",
+   "fame": 0.2,
+   "also": [
+    "Denis Charles Potvin"
+   ]
+  },
+  {
+   "label": "Denis Savard",
+   "qid": "Q1187631",
+   "fame": 0.2,
+   "also": [
+    "Denis Joseph Savard"
+   ]
+  },
+  {
+   "label": "Dennis Seidenberg",
+   "qid": "Q36925",
+   "fame": 0.2,
+   "also": [
+    "Dennis Marvin Seidenberg"
+   ]
+  },
+  {
+   "label": "Derek Boogaard",
+   "qid": "Q561882",
+   "fame": 0.2,
+   "also": [
+    "Derek Leendert Boogaard"
+   ]
+  },
+  {
+   "label": "Derek Roy",
+   "qid": "Q1200117",
+   "fame": 0.2,
+   "also": [
+    "Derek Leonard Roy"
+   ]
+  },
+  {
+   "label": "Derek Stepan",
+   "qid": "Q975099",
+   "fame": 0.2,
+   "also": [
+    "Derek Kenneth Stepan"
+   ]
+  },
+  {
+   "label": "Derian Hatcher",
+   "qid": "Q904173",
+   "fame": 0.2,
+   "also": [
+    "Derian John Hatcher"
+   ]
+  },
+  {
+   "label": "Derick Brassard",
+   "qid": "Q1200180",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Devan Dubnyk",
+   "qid": "Q969927",
+   "fame": 0.2,
+   "also": [
+    "Rautakauppias joka vetää budwieseria ja hakkaa akkaansa"
+   ]
+  },
+  {
+   "label": "Devon Toews",
+   "qid": "Q60063280",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dickie Moore",
+   "qid": "Q1210031",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dino Ciccarelli",
+   "qid": "Q905708",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dmitri Kalinin",
+   "qid": "Q706865",
+   "fame": 0.2,
+   "also": [
+    "Dmitri Vladimirovich Kalinin",
+    "Dmitry Vladimirovich Kalinin"
+   ]
+  },
+  {
+   "label": "Dmitri Khristich",
+   "qid": "Q929236",
+   "fame": 0.2,
+   "also": [
+    "Dmitry Khristich"
+   ]
+  },
+  {
+   "label": "Dmitri Korobov",
+   "qid": "Q1262241",
+   "fame": 0.2,
+   "also": [
+    "Dmitry Korobov",
+    "Dmitri Nikolaievich Korobov"
+   ]
+  },
+  {
+   "label": "Dmitri Kulikov",
+   "qid": "Q977337",
+   "fame": 0.2,
+   "also": [
+    "Dmitry Kulikov",
+    "Dmitry Vladimirovich Kulikov"
+   ]
+  },
+  {
+   "label": "Dmitri Mironov",
+   "qid": "Q375756",
+   "fame": 0.2,
+   "also": [
+    "Dmitri Olegovich Mironov"
+   ]
+  },
+  {
+   "label": "Dmitri Yushkevich",
+   "qid": "Q533920",
+   "fame": 0.2,
+   "also": [
+    "Dmitri Sergeyevich Yushkevich"
+   ]
+  },
+  {
+   "label": "Dmitrij Jaškin",
+   "qid": "Q1232813",
+   "fame": 0.2,
+   "also": [
+    "Dmitri Jaškin",
+    "Dmitrij Alexejevič Jaškin",
+    "Dmitriy Yashkin",
+    "Dmitry Alekseyevich Yashkin",
+    "Dmitry Yashkin"
+   ]
+  },
+  {
+   "label": "Dmitry Orlov",
+   "qid": "Q1232790",
+   "fame": 0.2,
+   "also": [
+    "Dmitri Orlov",
+    "Dmitry Vladimirovich Orlov"
+   ]
+  },
+  {
+   "label": "Don Cherry",
+   "qid": "Q592524",
+   "fame": 0.2,
+   "also": [
+    "Donald Cherry",
+    "Donald Stewart Cherry"
+   ]
+  },
+  {
+   "label": "Doug Gilmour",
+   "qid": "Q955391",
+   "fame": 0.2,
+   "also": [
+    "Douglas Robert Gilmour"
+   ]
+  },
+  {
+   "label": "Doug Harvey",
+   "qid": "Q1251751",
+   "fame": 0.2,
+   "also": [
+    "Douglas Harvey",
+    "Douglas Norman Harvey"
+   ]
+  },
+  {
+   "label": "Dougie Hamilton",
+   "qid": "Q522687",
+   "fame": 0.2,
+   "also": [
+    "Douglas Jonathan Hamilton"
+   ]
+  },
+  {
+   "label": "Dunc Munro",
+   "qid": "Q284823",
+   "fame": 0.2,
+   "also": [
+    "Duncan Brown Munro"
+   ]
+  },
+  {
+   "label": "Dušan Pašek",
+   "qid": "Q692388",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dustin Byfuglien",
+   "qid": "Q984271",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dwayne Roloson",
+   "qid": "Q608304",
+   "fame": 0.2,
+   "also": [
+    "Albert Dwayne Roloson"
+   ]
+  },
+  {
+   "label": "Dylan Larkin",
+   "qid": "Q17180725",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dylan Strome",
+   "qid": "Q17388804",
+   "fame": 0.2,
+   "also": [
+    "Dylan William Strome"
+   ]
+  },
+  {
+   "label": "Eddie Shore",
+   "qid": "Q282174",
+   "fame": 0.2,
+   "also": [
+    "Edward William Shore"
+   ]
+  },
+  {
+   "label": "Eeli Tolvanen",
+   "qid": "Q23906048",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Elias Pettersson",
+   "qid": "Q28057083",
+   "fame": 0.2,
+   "also": [
+    "Elias Fredrik Pettersson",
+    "Fredrik Elias Pettersson"
+   ]
+  },
+  {
+   "label": "Elmer Lach",
+   "qid": "Q1332986",
+   "fame": 0.2,
+   "also": [
+    "Elmer James Lach"
+   ]
+  },
+  {
+   "label": "Émile Bouchard",
+   "qid": "Q274947",
+   "fame": 0.2,
+   "also": [
+    "Butch Bouchard"
+   ]
+  },
+  {
+   "label": "Eric O'Dell",
+   "qid": "Q15373184",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Erik Černák",
+   "qid": "Q15613791",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Erik Christensen",
+   "qid": "Q1342263",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Erik Cole",
+   "qid": "Q687420",
+   "fame": 0.2,
+   "also": [
+    "Erik Thomas Cole"
+   ]
+  },
+  {
+   "label": "Erik Ersberg",
+   "qid": "Q646205",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Erik Gustafsson",
+   "qid": "Q390142",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Erik Johnson",
+   "qid": "Q960577",
+   "fame": 0.2,
+   "also": [
+    "Erik Robert Johnson"
+   ]
+  },
+  {
+   "label": "Erik Karlsson",
+   "qid": "Q929159",
+   "fame": 0.2,
+   "also": [
+    "Erik Sven Gunnar Karlsson"
+   ]
+  },
+  {
+   "label": "Esa Keskinen",
+   "qid": "Q1366651",
+   "fame": 0.2,
+   "also": [
+    "Esa Juhani Keskinen"
+   ]
+  },
+  {
+   "label": "Esa Lindell",
+   "qid": "Q11858583",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Esa Tikkanen",
+   "qid": "Q725787",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Espen Knutsen",
+   "qid": "Q555830",
+   "fame": 0.2,
+   "also": [
+    "Kjell Espen Knutsen Jahre"
+   ]
+  },
+  {
+   "label": "Evgenii Dadonov",
+   "qid": "Q209947",
+   "fame": 0.2,
+   "also": [
+    "Yevgeny Anatolyevich Dadonov"
+   ]
+  },
+  {
+   "label": "Evgeny Kuznetsov",
+   "qid": "Q928121",
+   "fame": 0.2,
+   "also": [
+    "Yevgeny Kuznetsov",
+    "Kuznetsov",
+    "Yevgeny Yevgenyevich Kuznetsov"
+   ]
+  },
+  {
+   "label": "Fedor Fedorov",
+   "qid": "Q1341732",
+   "fame": 0.2,
+   "also": [
+    "Fyodor Viktorovich Fyodorov"
+   ]
+  },
+  {
+   "label": "Fedor Tyutin",
+   "qid": "Q129202",
+   "fame": 0.2,
+   "also": [
+    "Fedor Anatolievich Tyutin"
+   ]
+  },
+  {
+   "label": "Filip Chytil",
+   "qid": "Q30582528",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Filip Forsberg",
+   "qid": "Q1413527",
+   "fame": 0.2,
+   "also": [
+    "Carl Filip Anton Forsberg"
+   ]
+  },
+  {
+   "label": "Filip Gustavsson",
+   "qid": "Q22278073",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Filip Hronek",
+   "qid": "Q20057354",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Filip Kuba",
+   "qid": "Q1336487",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "François Beauchemin",
+   "qid": "Q1383345",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Frank Fredrickson",
+   "qid": "Q1377418",
+   "fame": 0.2,
+   "also": [
+    "Sigurdur Franklin Fredrickson"
+   ]
+  },
+  {
+   "label": "František Kaberle",
+   "qid": "Q581499",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "František Kučera",
+   "qid": "Q1379201",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Fredrik Norrena",
+   "qid": "Q613467",
+   "fame": 0.2,
+   "also": [
+    "Fredrik Jan Elis Norrena"
+   ]
+  },
+  {
+   "label": "Geoff Platt",
+   "qid": "Q1400461",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Georges Laraque",
+   "qid": "Q1357050",
+   "fame": 0.2,
+   "also": [
+    "Georges Edy Laraque"
+   ]
+  },
+  {
+   "label": "Gerard Gallant",
+   "qid": "Q371327",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "German Titov",
+   "qid": "Q1346204",
+   "fame": 0.2,
+   "also": [
+    "German Mikhailovich Titov"
+   ]
+  },
+  {
+   "label": "Gilbert Brulé",
+   "qid": "Q1523935",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gilbert Perreault",
+   "qid": "Q141078",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Glen Hanlon",
+   "qid": "Q1382715",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Glenn Anderson",
+   "qid": "Q725700",
+   "fame": 0.2,
+   "also": [
+    "Glenn Chris Anderson"
+   ]
+  },
+  {
+   "label": "Glenn Hall",
+   "qid": "Q648824",
+   "fame": 0.2,
+   "also": [
+    "Glenn Henry Hall"
+   ]
+  },
+  {
+   "label": "Greg Johnson",
+   "qid": "Q1544932",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Haldor Halderson",
+   "qid": "Q568711",
+   "fame": 0.2,
+   "also": [
+    "Harold Halderson"
+   ]
+  },
+  {
+   "label": "Hampus Lindholm",
+   "qid": "Q3077684",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hannu Virta",
+   "qid": "Q656221",
+   "fame": 0.2,
+   "also": [
+    "Hannu Markus Virta"
+   ]
+  },
+  {
+   "label": "Harri Pesonen",
+   "qid": "Q1586121",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Harri Säteri",
+   "qid": "Q3034189",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Haydn Fleury",
+   "qid": "Q16228754",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Henri Jokiharju",
+   "qid": "Q24827212",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Henri Richard",
+   "qid": "Q959520",
+   "fame": 0.2,
+   "also": [
+    "Pocket Rocket",
+    "Joseph Henri Richard"
+   ]
+  },
+  {
+   "label": "Henrik Tallinder",
+   "qid": "Q1341825",
+   "fame": 0.2,
+   "also": [
+    "Henrik Per Tallinder"
+   ]
+  },
+  {
+   "label": "Herb Drury",
+   "qid": "Q1532331",
+   "fame": 0.2,
+   "also": [
+    "Herbert Joseph Drury",
+    "Herbert Drury"
+   ]
+  },
+  {
+   "label": "Herberts Vasiļjevs",
+   "qid": "Q688147",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hooley Smith",
+   "qid": "Q1379470",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Igor Korolev",
+   "qid": "Q542760",
+   "fame": 0.2,
+   "also": [
+    "Igor Borisovich Korolev",
+    "Igor Borisovich Korolyov"
+   ]
+  },
+  {
+   "label": "Igor Liba",
+   "qid": "Q1388435",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Iiro Pakarinen",
+   "qid": "Q1657997",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ilya Mikheyev",
+   "qid": "Q25388037",
+   "fame": 0.2,
+   "also": [
+    "Ilya Andreyevich Mikheyev"
+   ]
+  },
+  {
+   "label": "Ivan Baranka",
+   "qid": "Q984032",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ivan Barbashev",
+   "qid": "Q16147074",
+   "fame": 0.2,
+   "also": [
+    "Ivan Dmitrievich Barbashev"
+   ]
+  },
+  {
+   "label": "Ivan Provorov",
+   "qid": "Q19972647",
+   "fame": 0.2,
+   "also": [
+    "Ivan Vladimirovich Provorov"
+   ]
+  },
+  {
+   "label": "J. T. Miller",
+   "qid": "Q540422",
+   "fame": 0.2,
+   "also": [
+    "Jonathan Tanner Miller"
+   ]
+  },
+  {
+   "label": "Jaccob Slavin",
+   "qid": "Q21045691",
+   "fame": 0.2,
+   "also": [
+    "Jaccob Scott Slavin"
+   ]
+  },
+  {
+   "label": "Jack Adams",
+   "qid": "Q1354191",
+   "fame": 0.2,
+   "also": [
+    "John J. Adams",
+    "John James Adams"
+   ]
+  },
+  {
+   "label": "Jack Campbell",
+   "qid": "Q3123835",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jack Johnson",
+   "qid": "Q1390184",
+   "fame": 0.2,
+   "also": [
+    "John Joseph Louis Johnson III"
+   ]
+  },
+  {
+   "label": "Jacob Markström",
+   "qid": "Q27549",
+   "fame": 0.2,
+   "also": [
+    "Jacob Anders Markström"
+   ]
+  },
+  {
+   "label": "Jacques Lemaire",
+   "qid": "Q681705",
+   "fame": 0.2,
+   "also": [
+    "Jacques Gerard Lemaire"
+   ]
+  },
+  {
+   "label": "Jaden Schwartz",
+   "qid": "Q3160420",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jake Gardiner",
+   "qid": "Q539211",
+   "fame": 0.2,
+   "also": [
+    "Jake William Gardiner"
+   ]
+  },
+  {
+   "label": "Jake Guentzel",
+   "qid": "Q27902006",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jake Sanderson",
+   "qid": "Q99744353",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jakob Silfverberg",
+   "qid": "Q525338",
+   "fame": 0.2,
+   "also": [
+    "Jakob Erik Silfverberg"
+   ]
+  },
+  {
+   "label": "Jakub Klepiš",
+   "qid": "Q660401",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jakub Petružálek",
+   "qid": "Q929033",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jakub Voráček",
+   "qid": "Q1341638",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "James Neal",
+   "qid": "Q539743",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "James Reimer",
+   "qid": "Q1278471",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "James van Riemsdyk",
+   "qid": "Q27502",
+   "fame": 0.2,
+   "also": [
+    "JVR",
+    "James Frederick van Riemsdyk"
+   ]
+  },
+  {
+   "label": "Jamie Langenbrunner",
+   "qid": "Q639539",
+   "fame": 0.2,
+   "also": [
+    "Jamie Craig Langenbrunner"
+   ]
+  },
+  {
+   "label": "Jan Čaloun",
+   "qid": "Q1682461",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jan Hejda",
+   "qid": "Q1336374",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ján Lašák",
+   "qid": "Q944178",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jan Muršak",
+   "qid": "Q666660",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jānis Sprukts",
+   "qid": "Q202711",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Janne Niinimaa",
+   "qid": "Q1342811",
+   "fame": 0.2,
+   "also": [
+    "Janne Henrik Niinimaa"
+   ]
+  },
+  {
+   "label": "Janne Niskala",
+   "qid": "Q974516",
+   "fame": 0.2,
+   "also": [
+    "Janne Juhani Niskala"
+   ]
+  },
+  {
+   "label": "Janne Ojanen",
+   "qid": "Q1682887",
+   "fame": 0.2,
+   "also": [
+    "Janne Juhani Ojanen"
+   ]
+  },
+  {
+   "label": "Jannik Hansen",
+   "qid": "Q722111",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jared McCann",
+   "qid": "Q16229703",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jarmo Myllys",
+   "qid": "Q1334395",
+   "fame": 0.2,
+   "also": [
+    "Jarmo Pentti Kalevi Myllys"
+   ]
+  },
+  {
+   "label": "Jaroslav Jiřík",
+   "qid": "Q890617",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jaroslav Obšut",
+   "qid": "Q928096",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jaroslav Špaček",
+   "qid": "Q62545",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jason Arnott",
+   "qid": "Q706130",
+   "fame": 0.2,
+   "also": [
+    "Jason William Arnott"
+   ]
+  },
+  {
+   "label": "Jason Demers",
+   "qid": "Q932118",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jason Spezza",
+   "qid": "Q537476",
+   "fame": 0.2,
+   "also": [
+    "Jason Rocco Anthony Spezza"
+   ]
+  },
+  {
+   "label": "Jay Bouwmeester",
+   "qid": "Q722244",
+   "fame": 0.2,
+   "also": [
+    "Jay Daniel Bouwmeester"
+   ]
+  },
+  {
+   "label": "Jean-Gabriel Pageau",
+   "qid": "Q12860187",
+   "fame": 0.2,
+   "also": [
+    "J-G Pageau"
+   ]
+  },
+  {
+   "label": "Jean-Sébastien Giguère",
+   "qid": "Q963464",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jeff Skinner",
+   "qid": "Q553283",
+   "fame": 0.2,
+   "also": [
+    "Jeffrey Scott Skinner"
+   ]
+  },
+  {
+   "label": "Jere Karalahti",
+   "qid": "Q1342283",
+   "fame": 0.2,
+   "also": [
+    "Jere Juhani Karalahti"
+   ]
+  },
+  {
+   "label": "Jesper Bratt",
+   "qid": "Q30229860",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jhonas Enroth",
+   "qid": "Q1688832",
+   "fame": 0.2,
+   "also": [
+    "Jhonas Erik Enroth"
+   ]
+  },
+  {
+   "label": "Jim Craig",
+   "qid": "Q478435",
+   "fame": 0.2,
+   "also": [
+    "James Downey Craig"
+   ]
+  },
+  {
+   "label": "Jimmy Howard",
+   "qid": "Q1339869",
+   "fame": 0.2,
+   "also": [
+    "James Russell Howard III"
+   ]
+  },
+  {
+   "label": "Jiří Bubla",
+   "qid": "Q1435834",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jiří Dopita",
+   "qid": "Q320754",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jiří Hrdina",
+   "qid": "Q1689784",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jiří Hudler",
+   "qid": "Q722653",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jiří Novotný",
+   "qid": "Q167288",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jiří Sekáč",
+   "qid": "Q531052",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Joakim Nordström",
+   "qid": "Q962502",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jochen Hecht",
+   "qid": "Q68755",
+   "fame": 0.2,
+   "also": [
+    "Jochen Thomas Hecht"
+   ]
+  },
+  {
+   "label": "Joe Pavelski",
+   "qid": "Q1339283",
+   "fame": 0.2,
+   "also": [
+    "Pavelski"
+   ]
+  },
+  {
+   "label": "Joel Armia",
+   "qid": "Q979188",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Joel Eriksson Ek",
+   "qid": "Q19957723",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Joel Kiviranta",
+   "qid": "Q16299903",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Joel Quenneville",
+   "qid": "Q1387131",
+   "fame": 0.2,
+   "also": [
+    "Joel Norman Quenneville"
+   ]
+  },
+  {
+   "label": "Joel Ward",
+   "qid": "Q937742",
+   "fame": 0.2,
+   "also": [
+    "Joel Randal Ward"
+   ]
+  },
+  {
+   "label": "Joffrey Lupul",
+   "qid": "Q36886",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Johan Franzén",
+   "qid": "Q117294",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Johan Hedberg",
+   "qid": "Q1344583",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Johan Holmqvist",
+   "qid": "Q934186",
+   "fame": 0.2,
+   "also": [
+    "Johan Erik Daniel Holmqvist"
+   ]
+  },
+  {
+   "label": "John Gibson",
+   "qid": "Q2739452",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "John Klingberg",
+   "qid": "Q527382",
+   "fame": 0.2,
+   "also": [
+    "John Andersson Klingberg"
+   ]
+  },
+  {
+   "label": "John LeClair",
+   "qid": "Q1390233",
+   "fame": 0.2,
+   "also": [
+    "John Clark LeClair"
+   ]
+  },
+  {
+   "label": "John Madden",
+   "qid": "Q945652",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "John Moore",
+   "qid": "Q527195",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "John-Jason Peterka",
+   "qid": "Q80808677",
+   "fame": 0.2,
+   "also": [
+    "JJ Peterka"
+   ]
+  },
+  {
+   "label": "John-Michael Liles",
+   "qid": "Q739167",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Johnny Bower",
+   "qid": "Q1354159",
+   "fame": 0.2,
+   "also": [
+    "John William Bower"
+   ]
+  },
+  {
+   "label": "Johnny Oduya",
+   "qid": "Q1702376",
+   "fame": 0.2,
+   "also": [
+    "David Johnny Oduya"
+   ]
+  },
+  {
+   "label": "Jonas Bergqvist",
+   "qid": "Q948276",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jonas Brodin",
+   "qid": "Q1702919",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jonas Gustavsson",
+   "qid": "Q1702960",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jonas Holøs",
+   "qid": "Q1411743",
+   "fame": 0.2,
+   "also": [
+    "Jonas Holos"
+   ]
+  },
+  {
+   "label": "Jonas Siegenthaler",
+   "qid": "Q16990473",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jonathan Bernier",
+   "qid": "Q1376665",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jonathan Ericsson",
+   "qid": "Q1062142",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jonathan Huberdeau",
+   "qid": "Q984221",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jonathan Marchessault",
+   "qid": "Q3183311",
+   "fame": 0.2,
+   "also": [
+    "Jon Marchessault"
+   ]
+  },
+  {
+   "label": "Joni Pitkänen",
+   "qid": "Q1369504",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Joonas Kemppainen",
+   "qid": "Q3183646",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Joonas Korpisalo",
+   "qid": "Q6276024",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jordan Binnington",
+   "qid": "Q6276385",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jordan Eberle",
+   "qid": "Q975074",
+   "fame": 0.2,
+   "also": [
+    "Jordan Leslie Eberle"
+   ]
+  },
+  {
+   "label": "Jordin Tootoo",
+   "qid": "Q632163",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jörgen Jönsson",
+   "qid": "Q1342524",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "José Théodore",
+   "qid": "Q739894",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Josef Beránek",
+   "qid": "Q1378665",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Josef Vašíček",
+   "qid": "Q447786",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jozef Stümpel",
+   "qid": "Q739177",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Juha Lind",
+   "qid": "Q583267",
+   "fame": 0.2,
+   "also": [
+    "Juha Petteri Lind"
+   ]
+  },
+  {
+   "label": "Jukka Hentunen",
+   "qid": "Q689347",
+   "fame": 0.2,
+   "also": [
+    "Jukka Mika Petteri Hentunen"
+   ]
+  },
+  {
+   "label": "Justin Abdelkader",
+   "qid": "Q1381654",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Justin Faulk",
+   "qid": "Q187535",
+   "fame": 0.2,
+   "also": [
+    "Justin Michael Faulk"
+   ]
+  },
+  {
+   "label": "Justin Peters",
+   "qid": "Q1684796",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Justin Williams",
+   "qid": "Q722658",
+   "fame": 0.2,
+   "also": [
+    "Justin Craig Williams"
+   ]
+  },
+  {
+   "label": "Juuse Saros",
+   "qid": "Q15072852",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kanstantsin Kaltsou",
+   "qid": "Q1367412",
+   "fame": 0.2,
+   "also": [
+    "Konstantin Koltsov",
+    "Kanstancin Kaĺcoŭ",
+    "Kanstantsin Yauhenavich Kaltsou",
+    "Konstantin Yevgeniyevich Koltsov"
+   ]
+  },
+  {
+   "label": "Karel Rachůnek",
+   "qid": "Q182144",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Karri Rämö",
+   "qid": "Q1364723",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kaspars Daugaviņš",
+   "qid": "Q1390251",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Keith Tkachuk",
+   "qid": "Q960045",
+   "fame": 0.2,
+   "also": [
+    "Keith Matthew Tkachuk"
+   ]
+  },
+  {
+   "label": "Ken Dryden",
+   "qid": "Q739820",
+   "fame": 0.2,
+   "also": [
+    "Kenneth Wayne Dryden"
+   ]
+  },
+  {
+   "label": "Kenny Jönsson",
+   "qid": "Q1342482",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kent Nilsson",
+   "qid": "Q207834",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kevin Fiala",
+   "qid": "Q15989104",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kevin Shattenkirk",
+   "qid": "Q1398820",
+   "fame": 0.2,
+   "also": [
+    "Kevin Michael Shattenkirk"
+   ]
+  },
+  {
+   "label": "Kimmo Timonen",
+   "qid": "Q957404",
+   "fame": 0.2,
+   "also": [
+    "Kimmo Samuel Timonen"
+   ]
+  },
+  {
+   "label": "Kirk Maltby",
+   "qid": "Q1342472",
+   "fame": 0.2,
+   "also": [
+    "Kirk Frederick Maltby"
+   ]
+  },
+  {
+   "label": "Kris Draper",
+   "qid": "Q948695",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kris Letang",
+   "qid": "Q1376409",
+   "fame": 0.2,
+   "also": [
+    "Kristopher Allen",
+    "Kristopher Allen Letang",
+    "Kristopher Joseph Pierre Irwin Letang",
+    "Kristopher Letang"
+   ]
+  },
+  {
+   "label": "Kristers Gudļevskis",
+   "qid": "Q4151607",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Krzysztof Oliwa",
+   "qid": "Q942957",
+   "fame": 0.2,
+   "also": [
+    "Krzysztof Artur Oliwa"
+   ]
+  },
+  {
+   "label": "Kyle Okposo",
+   "qid": "Q128225",
+   "fame": 0.2,
+   "also": [
+    "Kyle Henry Erovre Okposo"
+   ]
+  },
+  {
+   "label": "Kyle Palmieri",
+   "qid": "Q526935",
+   "fame": 0.2,
+   "also": [
+    "Kyle Charles Palmieri"
+   ]
+  },
+  {
+   "label": "Ladislav Nagy",
+   "qid": "Q722688",
+   "fame": 0.2,
+   "also": [
+    "Nagy Ladislav"
+   ]
+  },
+  {
+   "label": "Ladislav Šmíd",
+   "qid": "Q719298",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lanny McDonald",
+   "qid": "Q1332308",
+   "fame": 0.2,
+   "also": [
+    "Lanny King McDonald"
+   ]
+  },
+  {
+   "label": "Larry Murphy",
+   "qid": "Q1077414",
+   "fame": 0.2,
+   "also": [
+    "Lawrence Thomas Murphy"
+   ]
+  },
+  {
+   "label": "Lars Eller",
+   "qid": "Q427363",
+   "fame": 0.2,
+   "also": [
+    "Lars Fosgaard Eller"
+   ]
+  },
+  {
+   "label": "Lasse Kukkonen",
+   "qid": "Q960599",
+   "fame": 0.2,
+   "also": [
+    "Lasse Juhani Kukkonen"
+   ]
+  },
+  {
+   "label": "Lawson Crouse",
+   "qid": "Q18763985",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Leo Boivin",
+   "qid": "Q706850",
+   "fame": 0.2,
+   "also": [
+    "Leo Joseph Boivin"
+   ]
+  },
+  {
+   "label": "Linden Vey",
+   "qid": "Q3241412",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lindy Ruff",
+   "qid": "Q1061825",
+   "fame": 0.2,
+   "also": [
+    "Lindy Cameron Ruff"
+   ]
+  },
+  {
+   "label": "Linus Omark",
+   "qid": "Q477240",
+   "fame": 0.2,
+   "also": [
+    "Linus Karl Heimer Omark"
+   ]
+  },
+  {
+   "label": "Linus Ullmark",
+   "qid": "Q6379338",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Logan Couture",
+   "qid": "Q323891",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Logan Thompson",
+   "qid": "Q105892417",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ľubomír Višňovský",
+   "qid": "Q345018",
+   "fame": 0.2,
+   "also": [
+    "Lubomir Visnovski"
+   ]
+  },
+  {
+   "label": "Ľuboš Bartečko",
+   "qid": "Q345044",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Luc Bourdon",
+   "qid": "Q943495",
+   "fame": 0.2,
+   "also": [
+    "Joseph Luc Bourdon"
+   ]
+  },
+  {
+   "label": "Luc Robitaille",
+   "qid": "Q661592",
+   "fame": 0.2,
+   "also": [
+    "Luc Jean-Marie Robitaille"
+   ]
+  },
+  {
+   "label": "Luca Sbisa",
+   "qid": "Q688834",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lukáš Krajíček",
+   "qid": "Q1365333",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Luke Schenn",
+   "qid": "Q1390315",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mackenzie Blackwood",
+   "qid": "Q20551945",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Magnus Johansson",
+   "qid": "Q1884584",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Magnus Pääjärvi",
+   "qid": "Q933273",
+   "fame": 0.2,
+   "also": [
+    "Karl Magnus Svensson Pääjärvi",
+    "Magnus Pääjärvi-Svensson"
+   ]
+  },
+  {
+   "label": "Marc Savard",
+   "qid": "Q948748",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Marc Staal",
+   "qid": "Q960003",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Marc-André Gragnani",
+   "qid": "Q1392196",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Marcel Dionne",
+   "qid": "Q141082",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Marcel Goc",
+   "qid": "Q72455",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Marcel Hossa",
+   "qid": "Q561648",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Marcel Pronovost",
+   "qid": "Q630516",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Marco Sturm",
+   "qid": "Q63367",
+   "fame": 0.2,
+   "also": [
+    "Marco Johann Sturm"
+   ]
+  },
+  {
+   "label": "Marcus Foligno",
+   "qid": "Q246404",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Marcus Johansson",
+   "qid": "Q1859905",
+   "fame": 0.2,
+   "also": [
+    "Marcus Lars Johansson"
+   ]
+  },
+  {
+   "label": "Marcus Pettersson",
+   "qid": "Q16224651",
+   "fame": 0.2,
+   "also": [
+    "Marcus Karl Gustav Pettersson"
+   ]
+  },
+  {
+   "label": "Marek Hrivík",
+   "qid": "Q3290386",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Marek Svatoš",
+   "qid": "Q722089",
+   "fame": 0.2,
+   "also": [
+    "arek Svatos"
+   ]
+  },
+  {
+   "label": "Marek Zidlicky",
+   "qid": "Q706878",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mariusz Czerkawski",
+   "qid": "Q1607588",
+   "fame": 0.2,
+   "also": [
+    "Mariusz Krzysztof Czerkawski"
+   ]
+  },
+  {
+   "label": "Mark Giordano",
+   "qid": "Q1387968",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mark Howe",
+   "qid": "Q1370223",
+   "fame": 0.2,
+   "also": [
+    "Mark Steven Howe"
+   ]
+  },
+  {
+   "label": "Mark Johnson",
+   "qid": "Q1356869",
+   "fame": 0.2,
+   "also": [
+    "Mark Einar Johnson"
+   ]
+  },
+  {
+   "label": "Mark Pavelich",
+   "qid": "Q916029",
+   "fame": 0.2,
+   "also": [
+    "Mark Thomas Pavelich"
+   ]
+  },
+  {
+   "label": "Mark Recchi",
+   "qid": "Q715591",
+   "fame": 0.2,
+   "also": [
+    "Mark Louis Recchi"
+   ]
+  },
+  {
+   "label": "Mark Scheifele",
+   "qid": "Q982252",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mark Stone",
+   "qid": "Q473524",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mark Streit",
+   "qid": "Q553297",
+   "fame": 0.2,
+   "also": [
+    "Mark Thomas Streit"
+   ]
+  },
+  {
+   "label": "Marko Daňo",
+   "qid": "Q1953740",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Markus Granlund",
+   "qid": "Q979688",
+   "fame": 0.2,
+   "also": [
+    "Kari Markus Granlund"
+   ]
+  },
+  {
+   "label": "Martin Biron",
+   "qid": "Q1384142",
+   "fame": 0.2,
+   "also": [
+    "Martin Gaston Biron"
+   ]
+  },
+  {
+   "label": "Martin Cibák",
+   "qid": "Q1772716",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Martin Gerber",
+   "qid": "Q688813",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Martin Hanzal",
+   "qid": "Q1384161",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Martin Havlát",
+   "qid": "Q948787",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Martin Jones",
+   "qid": "Q8837546",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Martin Marinčin",
+   "qid": "Q3052404",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Martin Procházka",
+   "qid": "Q743596",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Martin Ručinský",
+   "qid": "Q1904899",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Martin Škoula",
+   "qid": "Q507839",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Martin Straka",
+   "qid": "Q1341901",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Martin Štrbák",
+   "qid": "Q932732",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Marty Turco",
+   "qid": "Q578738",
+   "fame": 0.2,
+   "also": [
+    "Marty Vincent Turco"
+   ]
+  },
+  {
+   "label": "Mathew Barzal",
+   "qid": "Q17385625",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mathieu Schneider",
+   "qid": "Q1344150",
+   "fame": 0.2,
+   "also": [
+    "Mathieu David Schneider"
+   ]
+  },
+  {
+   "label": "Matt Cullen",
+   "qid": "Q1376984",
+   "fame": 0.2,
+   "also": [
+    "Matthew David Cullen"
+   ]
+  },
+  {
+   "label": "Matt Hendricks",
+   "qid": "Q949288",
+   "fame": 0.2,
+   "also": [
+    "Matthew James Hendricks"
+   ]
+  },
+  {
+   "label": "Matt Murray",
+   "qid": "Q19663237",
+   "fame": 0.2,
+   "also": [
+    "Matthew Murray"
+   ]
+  },
+  {
+   "label": "Matt Niskanen",
+   "qid": "Q929135",
+   "fame": 0.2,
+   "also": [
+    "Matthew Norman Niskanen"
+   ]
+  },
+  {
+   "label": "Matthias Plachta",
+   "qid": "Q110068",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mattias Ekholm",
+   "qid": "Q3062859",
+   "fame": 0.2,
+   "also": [
+    "Mattias Hans Ekholm"
+   ]
+  },
+  {
+   "label": "Mattias Öhlund",
+   "qid": "Q944255",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mattias Weinhandl",
+   "qid": "Q944091",
+   "fame": 0.2,
+   "also": [
+    "Mattias John Erich Weinhandl"
+   ]
+  },
+  {
+   "label": "Max Domi",
+   "qid": "Q13581451",
+   "fame": 0.2,
+   "also": [
+    "Maxwell Johannes Domi"
+   ]
+  },
+  {
+   "label": "Max Friberg",
+   "qid": "Q1912556",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Max Pacioretty",
+   "qid": "Q1913226",
+   "fame": 0.2,
+   "also": [
+    "Maximillian Kolenda Pacioretty"
+   ]
+  },
+  {
+   "label": "Maxim Afinogenov",
+   "qid": "Q706971",
+   "fame": 0.2,
+   "also": [
+    "Maksim Sergeyevich Afinogenov",
+    "Maxim Sergeyevich Afinogenov"
+   ]
+  },
+  {
+   "label": "Maxim Lapierre",
+   "qid": "Q1391892",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Maxim Sushinsky",
+   "qid": "Q722145",
+   "fame": 0.2,
+   "also": [
+    "Maksim Yuryevich Sushinsky",
+    "Maxim Yuryevich Sushinsky"
+   ]
+  },
+  {
+   "label": "Michael Grabner",
+   "qid": "Q33700",
+   "fame": 0.2,
+   "also": [
+    "Michael-René Grabner"
+   ]
+  },
+  {
+   "label": "Michael Nylander",
+   "qid": "Q1342533",
+   "fame": 0.2,
+   "also": [
+    "Michael Gunnar Nylander",
+    "Nyllet"
+   ]
+  },
+  {
+   "label": "Michael Peca",
+   "qid": "Q1383180",
+   "fame": 0.2,
+   "also": [
+    "Mike Peca",
+    "Michael Anthony Peca"
+   ]
+  },
+  {
+   "label": "Michael Raffl",
+   "qid": "Q580598",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Michal Jordán",
+   "qid": "Q1930416",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Michal Rozsíval",
+   "qid": "Q1389530",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mika Pyörälä",
+   "qid": "Q984012",
+   "fame": 0.2,
+   "also": [
+    "Mika Tuomas Pyörälä"
+   ]
+  },
+  {
+   "label": "Mikael Backlund",
+   "qid": "Q1286038",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mikael Tellqvist",
+   "qid": "Q1342417",
+   "fame": 0.2,
+   "also": [
+    "Mikael Karl Tellqvist"
+   ]
+  },
+  {
+   "label": "Mike Bossy",
+   "qid": "Q372804",
+   "fame": 0.2,
+   "also": [
+    "Michael Dean Bossy"
+   ]
+  },
+  {
+   "label": "Mike Dunham",
+   "qid": "Q1933161",
+   "fame": 0.2,
+   "also": [
+    "Michael Francis Dunham"
+   ]
+  },
+  {
+   "label": "Mike Fisher",
+   "qid": "Q945715",
+   "fame": 0.2,
+   "also": [
+    "Michael Andrew Fisher"
+   ]
+  },
+  {
+   "label": "Mike Gartner",
+   "qid": "Q373960",
+   "fame": 0.2,
+   "also": [
+    "Michael Alfred Gartner"
+   ]
+  },
+  {
+   "label": "Mike Green",
+   "qid": "Q1381562",
+   "fame": 0.2,
+   "also": [
+    "Michael David Green"
+   ]
+  },
+  {
+   "label": "Mike Matheson",
+   "qid": "Q3313431",
+   "fame": 0.2,
+   "also": [
+    "Michael Matheson",
+    "Michael Wallace Matheson"
+   ]
+  },
+  {
+   "label": "Mike Ramsey",
+   "qid": "Q1933453",
+   "fame": 0.2,
+   "also": [
+    "Michael Allen Ramsey"
+   ]
+  },
+  {
+   "label": "Mike Ribeiro",
+   "qid": "Q762260",
+   "fame": 0.2,
+   "also": [
+    "Michael Tavares Ribeiro"
+   ]
+  },
+  {
+   "label": "Mike Richards",
+   "qid": "Q575019",
+   "fame": 0.2,
+   "also": [
+    "Michael Richards"
+   ]
+  },
+  {
+   "label": "Mike Richter",
+   "qid": "Q1933497",
+   "fame": 0.2,
+   "also": [
+    "Michael Thomas Richter"
+   ]
+  },
+  {
+   "label": "Mike York",
+   "qid": "Q705474",
+   "fame": 0.2,
+   "also": [
+    "Michael Allan York"
+   ]
+  },
+  {
+   "label": "Mikhail Grabovski",
+   "qid": "Q604600",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mikhail Grigorenko",
+   "qid": "Q964207",
+   "fame": 0.2,
+   "also": [
+    "Mikhail Olegovich Grigorenko"
+   ]
+  },
+  {
+   "label": "Mikhail Sergachev",
+   "qid": "Q21622801",
+   "fame": 0.2,
+   "also": [
+    "Mikhail Aleksandrovich Sergachev"
+   ]
+  },
+  {
+   "label": "Mikhail Shtalenkov",
+   "qid": "Q1374066",
+   "fame": 0.2,
+   "also": [
+    "Mikhail Alekseyevich Shtalenkov"
+   ]
+  },
+  {
+   "label": "Mikkel Bødker",
+   "qid": "Q944165",
+   "fame": 0.2,
+   "also": [
+    "Mikkel Boedker"
+   ]
+  },
+  {
+   "label": "Mikko Koskinen",
+   "qid": "Q509185",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mikko Lehtonen",
+   "qid": "Q59951",
+   "fame": 0.2,
+   "also": [
+    "Mikko Kristian Lehtonen"
+   ]
+  },
+  {
+   "label": "Milan Bartovič",
+   "qid": "Q1858657",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Milan Hnilička",
+   "qid": "Q1934256",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Milan Jurčina",
+   "qid": "Q1383310",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Milan Lučić",
+   "qid": "Q722592",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Milan Michálek",
+   "qid": "Q944923",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Milan Nový",
+   "qid": "Q614791",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Miloslav Hořava",
+   "qid": "Q933325",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Miro Heiskanen",
+   "qid": "Q24827214",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Morgan Rielly",
+   "qid": "Q552306",
+   "fame": 0.2,
+   "also": [
+    "Morgan Frederick Rielly"
+   ]
+  },
+  {
+   "label": "Nail Yakupov",
+   "qid": "Q559162",
+   "fame": 0.2,
+   "also": [
+    "Nail Railovich Yakupov",
+    "Nail Yaqupof"
+   ]
+  },
+  {
+   "label": "Nate Schmidt",
+   "qid": "Q15142783",
+   "fame": 0.2,
+   "also": [
+    "Nathan Thomas Schmidt"
+   ]
+  },
+  {
+   "label": "Nathan Horton",
+   "qid": "Q1336921",
+   "fame": 0.2,
+   "also": [
+    "Nathan Russell Horton"
+   ]
+  },
+  {
+   "label": "Nazem Kadri",
+   "qid": "Q1852981",
+   "fame": 0.2,
+   "also": [
+    "Nazem Samir Kadri"
+   ]
+  },
+  {
+   "label": "Neal Broten",
+   "qid": "Q960185",
+   "fame": 0.2,
+   "also": [
+    "Neal LaMoy Broten"
+   ]
+  },
+  {
+   "label": "Nick Bjugstad",
+   "qid": "Q3047621",
+   "fame": 0.2,
+   "also": [
+    "Nicholas Jay Bjugstad"
+   ]
+  },
+  {
+   "label": "Nick Bonino",
+   "qid": "Q459545",
+   "fame": 0.2,
+   "also": [
+    "Nicholas Bonino",
+    "Nicholas Lawrence Bonino"
+   ]
+  },
+  {
+   "label": "Nick Foligno",
+   "qid": "Q943363",
+   "fame": 0.2,
+   "also": [
+    "Nicholas Foligno"
+   ]
+  },
+  {
+   "label": "Nick Suzuki",
+   "qid": "Q29287706",
+   "fame": 0.2,
+   "also": [
+    "Nicholas Suzuki"
+   ]
+  },
+  {
+   "label": "Nicklas Jensen",
+   "qid": "Q1253280",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Niclas Hävelid",
+   "qid": "Q1985911",
+   "fame": 0.2,
+   "also": [
+    "Niclas Anders Hävelid"
+   ]
+  },
+  {
+   "label": "Nicolas Roy",
+   "qid": "Q16224877",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nigel Dawes",
+   "qid": "Q545735",
+   "fame": 0.2,
+   "also": [
+    "Nigel Alexander Dawes"
+   ]
+  },
+  {
+   "label": "Nik Antropov",
+   "qid": "Q285823",
+   "fame": 0.2,
+   "also": [
+    "Nikolai Alexandrovich Antropov",
+    "Nikolai Antropov"
+   ]
+  },
+  {
+   "label": "Nikita Filatov",
+   "qid": "Q248990",
+   "fame": 0.2,
+   "also": [
+    "Nikita Vasilyevich Filatov"
+   ]
+  },
+  {
+   "label": "Nikita Nesterov",
+   "qid": "Q1336633",
+   "fame": 0.2,
+   "also": [
+    "Nikita Danilovich Nesterov"
+   ]
+  },
+  {
+   "label": "Nikita Zadorov",
+   "qid": "Q3341513",
+   "fame": 0.2,
+   "also": [
+    "Nikita Sergeyevich Zadorov",
+    "Nikita Sergeyvich Zadorov"
+   ]
+  },
+  {
+   "label": "Niklas Bäckström",
+   "qid": "Q708093",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Niklas Hjalmarsson",
+   "qid": "Q1399662",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nikolai Borschevsky",
+   "qid": "Q785251",
+   "fame": 0.2,
+   "also": [
+    "Nikolai Konstantinovich Borschevsky"
+   ]
+  },
+  {
+   "label": "Nikolai Khabibulin",
+   "qid": "Q553244",
+   "fame": 0.2,
+   "also": [
+    "Nikolai Alexandrovich Khabibulin"
+   ]
+  },
+  {
+   "label": "Nikolai Kulemin",
+   "qid": "Q944116",
+   "fame": 0.2,
+   "also": [
+    "Nikolay Kulemin",
+    "Nikolay Vladimirovich Kulemin",
+    "Nikolay Vladimirovich Kulyomin"
+   ]
+  },
+  {
+   "label": "Noah Hanifin",
+   "qid": "Q17386014",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Oleg Kvasha",
+   "qid": "Q1799869",
+   "fame": 0.2,
+   "also": [
+    "Oleg Vladimirovich Kvasha"
+   ]
+  },
+  {
+   "label": "Oleg Tverdovsky",
+   "qid": "Q1185283",
+   "fame": 0.2,
+   "also": [
+    "Oleg Fedorovych Tverdovsky"
+   ]
+  },
+  {
+   "label": "Oliver Bjorkstrand",
+   "qid": "Q1439741",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Olli Määttä",
+   "qid": "Q3351500",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ondřej Palát",
+   "qid": "Q6381284",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Oscar Lindberg",
+   "qid": "Q961869",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Oscar Möller",
+   "qid": "Q939710",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Oskar Osala",
+   "qid": "Q739213",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ossi Väänänen",
+   "qid": "Q1269867",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "P. J. Axelsson",
+   "qid": "Q1348778",
+   "fame": 0.2,
+   "also": [
+    "Anders Per-Johan Axelsson"
+   ]
+  },
+  {
+   "label": "Pat LaFontaine",
+   "qid": "Q252365",
+   "fame": 0.2,
+   "also": [
+    "Patrick Michael LaFontaine"
+   ]
+  },
+  {
+   "label": "Pat Quinn",
+   "qid": "Q712344",
+   "fame": 0.2,
+   "also": [
+    "John Brian Patrick Quinn"
+   ]
+  },
+  {
+   "label": "Patric Hörnqvist",
+   "qid": "Q2057094",
+   "fame": 0.2,
+   "also": [
+    "Patric Gösta Hörnqvist"
+   ]
+  },
+  {
+   "label": "Patric Kjellberg",
+   "qid": "Q1399858",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Patrick Fischer",
+   "qid": "Q329184",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Patrick Thoresen",
+   "qid": "Q442631",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Patrik Juhlin",
+   "qid": "Q391219",
+   "fame": 0.2,
+   "also": [
+    "Clas Patrik Juhlin"
+   ]
+  },
+  {
+   "label": "Patrik Laine",
+   "qid": "Q17382085",
+   "fame": 0.2,
+   "also": [
+    "Patrick Liney"
+   ]
+  },
+  {
+   "label": "Paul Henderson",
+   "qid": "Q150670",
+   "fame": 0.2,
+   "also": [
+    "Paul Garnet Henderson"
+   ]
+  },
+  {
+   "label": "Paul Martin",
+   "qid": "Q1382845",
+   "fame": 0.2,
+   "also": [
+    "Paul Joseph Martin"
+   ]
+  },
+  {
+   "label": "Paul Stastny",
+   "qid": "Q949482",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pavel Brendl",
+   "qid": "Q1390363",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pavel Kubina",
+   "qid": "Q1341657",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pavel Patera",
+   "qid": "Q1378613",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pavel Zacha",
+   "qid": "Q16225756",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pavol Regenda",
+   "qid": "Q110933819",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pelle Lindbergh",
+   "qid": "Q948412",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Peter Budaj",
+   "qid": "Q705612",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Peter Cehlárik",
+   "qid": "Q15402296",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Peter Čerešňák",
+   "qid": "Q7177966",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Peter Laviolette",
+   "qid": "Q713383",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Peter Regin",
+   "qid": "Q980606",
+   "fame": 0.2,
+   "also": [
+    "Peter Regin Jensen"
+   ]
+  },
+  {
+   "label": "Peter Zezel",
+   "qid": "Q946247",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Petr Čajánek",
+   "qid": "Q944229",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Petr Mrázek",
+   "qid": "Q1891283",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Petr Nedvěd",
+   "qid": "Q1374123",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Petr Průcha",
+   "qid": "Q932789",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Petr Svoboda",
+   "qid": "Q1374852",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Petr Sýkora",
+   "qid": "Q722746",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Petteri Wirtanen",
+   "qid": "Q24432",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Phil Housley",
+   "qid": "Q722956",
+   "fame": 0.2,
+   "also": [
+    "Phillip Francis Housley"
+   ]
+  },
+  {
+   "label": "Philip Larsen",
+   "qid": "Q475645",
+   "fame": 0.2,
+   "also": [
+    "Philip Elzer Gade Larsen"
+   ]
+  },
+  {
+   "label": "Philippe Bozon",
+   "qid": "Q179542",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pierre Pilote",
+   "qid": "Q473306",
+   "fame": 0.2,
+   "also": [
+    "Joseph Albert Pierre Paul Pilote"
+   ]
+  },
+  {
+   "label": "Pierre Turgeon",
+   "qid": "Q739886",
+   "fame": 0.2,
+   "also": [
+    "Pierre Julien Turgeon"
+   ]
+  },
+  {
+   "label": "Radek Dvořák",
+   "qid": "Q1382789",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Radek Faksa",
+   "qid": "Q3416408",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Radim Vrbata",
+   "qid": "Q1373494",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rasmus Ristolainen",
+   "qid": "Q3077970",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rastislav Staňa",
+   "qid": "Q717443",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ray Emery",
+   "qid": "Q960507",
+   "fame": 0.2,
+   "also": [
+    "Raymond Robert Emery"
+   ]
+  },
+  {
+   "label": "Red Kelly",
+   "qid": "Q706565",
+   "fame": 0.2,
+   "also": [
+    "Leonard Patrick Kelly"
+   ]
+  },
+  {
+   "label": "René Bourque",
+   "qid": "Q1266907",
+   "fame": 0.2,
+   "also": [
+    "Rene Gary Wayne Bourque"
+   ]
+  },
+  {
+   "label": "Ricardo Andrés Vega Torres",
+   "qid": "Q739160",
+   "fame": 0.2,
+   "also": [
+    "Dion Phaneuf"
+   ]
+  },
+  {
+   "label": "Richard Lintner",
+   "qid": "Q1766286",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Richard Pánik",
+   "qid": "Q2119483",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Richard Park",
+   "qid": "Q562194",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Richard Šmehlík",
+   "qid": "Q1373846",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Richard Zedník",
+   "qid": "Q722066",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rick Rypien",
+   "qid": "Q176748",
+   "fame": 0.2,
+   "also": [
+    "Richard Joseph Rypien"
+   ]
+  },
+  {
+   "label": "Rickard Rakell",
+   "qid": "Q1731789",
+   "fame": 0.2,
+   "also": [
+    "Rickard Lars Gunnar Roland Rakell"
+   ]
+  },
+  {
+   "label": "Rob Klinkhammer",
+   "qid": "Q6378861",
+   "fame": 0.2,
+   "also": [
+    "Robert Klinkhammer"
+   ]
+  },
+  {
+   "label": "Rob Niedermayer",
+   "qid": "Q122588",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Robert Benson",
+   "qid": "Q1304756",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Robert Esche",
+   "qid": "Q960482",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Róbert Petrovický",
+   "qid": "Q943632",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Robert Reichel",
+   "qid": "Q2030640",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Róbert Švehla",
+   "qid": "Q980521",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Robert Thomas",
+   "qid": "Q30689603",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Robin Lehner",
+   "qid": "Q976044",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Robyn Regehr",
+   "qid": "Q1395276",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rod Gilbert",
+   "qid": "Q265683",
+   "fame": 0.2,
+   "also": [
+    "Rodrigue Gabriel Gilbert"
+   ]
+  },
+  {
+   "label": "Roger Johansson",
+   "qid": "Q611117",
+   "fame": 0.2,
+   "also": [
+    "Roger Per Arne Johansson"
+   ]
+  },
+  {
+   "label": "Roman Čechmánek",
+   "qid": "Q957353",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Roman Hamrlík",
+   "qid": "Q1344640",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Roman Turek",
+   "qid": "Q1387192",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ron Francis",
+   "qid": "Q927970",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ronnie Sundin",
+   "qid": "Q2065786",
+   "fame": 0.2,
+   "also": [
+    "Ronnie Karl Sundin"
+   ]
+  },
+  {
+   "label": "Rostislav Olesz",
+   "qid": "Q1378177",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ryan Hartman",
+   "qid": "Q13581452",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ryan Kesler",
+   "qid": "Q640268",
+   "fame": 0.2,
+   "also": [
+    "Ryan James Kesler"
+   ]
+  },
+  {
+   "label": "Ryan Malone",
+   "qid": "Q1276120",
+   "fame": 0.2,
+   "also": [
+    "Ryan Gregory Malone"
+   ]
+  },
+  {
+   "label": "Ryan McDonagh",
+   "qid": "Q2094838",
+   "fame": 0.2,
+   "also": [
+    "Ryan Patrick McDonagh"
+   ]
+  },
+  {
+   "label": "Ryan Murray",
+   "qid": "Q1899364",
+   "fame": 0.2,
+   "also": [
+    "Ryan James Murray"
+   ]
+  },
+  {
+   "label": "Ryan Nugent-Hopkins",
+   "qid": "Q715578",
+   "fame": 0.2,
+   "also": [
+    "Ryan Jarromie Noel Nugent-Hopkins"
+   ]
+  },
+  {
+   "label": "Ryan Whitney",
+   "qid": "Q2004775",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sam Gagner",
+   "qid": "Q86705",
+   "fame": 0.2,
+   "also": [
+    "Sam William Gagner"
+   ]
+  },
+  {
+   "label": "Sami Kapanen",
+   "qid": "Q385944",
+   "fame": 0.2,
+   "also": [
+    "Sami Hannu Antero Kapanen"
+   ]
+  },
+  {
+   "label": "Sami Vatanen",
+   "qid": "Q30783",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Samuel Påhlsson",
+   "qid": "Q2001168",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sandis Ozoliņš",
+   "qid": "Q463191",
+   "fame": 0.2,
+   "also": [
+    "Sandis Ozolinsh"
+   ]
+  },
+  {
+   "label": "Scott Gomez",
+   "qid": "Q739332",
+   "fame": 0.2,
+   "also": [
+    "Scott Carlos Gomez"
+   ]
+  },
+  {
+   "label": "Scott Stevens",
+   "qid": "Q281303",
+   "fame": 0.2,
+   "also": [
+    "Ronald Scott Stevens"
+   ]
+  },
+  {
+   "label": "Sean Avery",
+   "qid": "Q725726",
+   "fame": 0.2,
+   "also": [
+    "Sean Christopher Avery"
+   ]
+  },
+  {
+   "label": "Sean Burke",
+   "qid": "Q1364147",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sean Couturier",
+   "qid": "Q1860056",
+   "fame": 0.2,
+   "also": [
+    "Sean Gerald Couturier"
+   ]
+  },
+  {
+   "label": "Sergei Bobrovsky",
+   "qid": "Q1365299",
+   "fame": 0.2,
+   "also": [
+    "Sergei Andreyevich Bobrovsky",
+    "Sergey Bobrovskiy",
+    "Sergey Bobrovsky"
+   ]
+  },
+  {
+   "label": "Sergei Gonchar",
+   "qid": "Q553238",
+   "fame": 0.2,
+   "also": [
+    "Sergei Viktorovich Gonchar"
+   ]
+  },
+  {
+   "label": "Sergei Kalinin",
+   "qid": "Q973775",
+   "fame": 0.2,
+   "also": [
+    "Sergey Kalinin",
+    "Sergey Pavlovich Kalinin"
+   ]
+  },
+  {
+   "label": "Sergei Kostitsyn",
+   "qid": "Q603727",
+   "fame": 0.2,
+   "also": [
+    "Sergei Olegovich Kostitsyn"
+   ]
+  },
+  {
+   "label": "Sergei Krivokrasov",
+   "qid": "Q1308171",
+   "fame": 0.2,
+   "also": [
+    "Sergei Vladimirovich Krivokrasov"
+   ]
+  },
+  {
+   "label": "Sergei Mylnikov",
+   "qid": "Q590619",
+   "fame": 0.2,
+   "also": [
+    "Sergei Aleksandrovich Mylnikov"
+   ]
+  },
+  {
+   "label": "Sergei Nemchinov",
+   "qid": "Q1373969",
+   "fame": 0.2,
+   "also": [
+    "Sergei Lvovich Nemchinov"
+   ]
+  },
+  {
+   "label": "Sergei Plotnikov",
+   "qid": "Q963067",
+   "fame": 0.2,
+   "also": [
+    "Sergei Sergeyevich Plotnikov",
+    "Sergey Sergeyevich Plotnikov"
+   ]
+  },
+  {
+   "label": "Sergei Samsonov",
+   "qid": "Q163589",
+   "fame": 0.2,
+   "also": [
+    "Sergei Viktorovich Samsonov"
+   ]
+  },
+  {
+   "label": "Sergei Shirokov",
+   "qid": "Q1365085",
+   "fame": 0.2,
+   "also": [
+    "Sergei Sergeyevich Shirokov"
+   ]
+  },
+  {
+   "label": "Sergei Starikov",
+   "qid": "Q1318008",
+   "fame": 0.2,
+   "also": [
+    "Sergei Viktorovich Starikov"
+   ]
+  },
+  {
+   "label": "Sergei Zubov",
+   "qid": "Q606201",
+   "fame": 0.2,
+   "also": [
+    "Sergei Alexandrovich Zubov",
+    "Sergey Aleksandrovich Zubov"
+   ]
+  },
+  {
+   "label": "Sergejs Žoltoks",
+   "qid": "Q715699",
+   "fame": 0.2,
+   "also": [
+    "Sergei Zholtok"
+   ]
+  },
+  {
+   "label": "Seth Jarvis",
+   "qid": "Q100149493",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Seth Jones",
+   "qid": "Q4014741",
+   "fame": 0.2,
+   "also": [
+    "Jared Seth Jones"
+   ]
+  },
+  {
+   "label": "Shaone Morrisonn",
+   "qid": "Q943545",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Shayne Gostisbehere",
+   "qid": "Q16228901",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Shea Theodore",
+   "qid": "Q13581460",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sid Abel",
+   "qid": "Q375748",
+   "fame": 0.2,
+   "also": [
+    "Sidney Gerald Abel"
+   ]
+  },
+  {
+   "label": "Simon Gagné",
+   "qid": "Q1364695",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Simon Moser",
+   "qid": "Q688374",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Šimon Nemec",
+   "qid": "Q106943350",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Slava Voynov",
+   "qid": "Q2095646",
+   "fame": 0.2,
+   "also": [
+    "Vyacheslav Leonidovich Voynov"
+   ]
+  },
+  {
+   "label": "Staffan Kronwall",
+   "qid": "Q979676",
+   "fame": 0.2,
+   "also": [
+    "Per Staffan Kronwall"
+   ]
+  },
+  {
+   "label": "Stéphane da Costa",
+   "qid": "Q1365192",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Steve Christoff",
+   "qid": "Q516101",
+   "fame": 0.2,
+   "also": [
+    "Steven Mark Christoff"
+   ]
+  },
+  {
+   "label": "Steve Mason",
+   "qid": "Q2033859",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Steve Montador",
+   "qid": "Q2062685",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Syl Apps",
+   "qid": "Q322783",
+   "fame": 0.2,
+   "also": [
+    "Charles Joseph Sylvanus Apps"
+   ]
+  },
+  {
+   "label": "T. J. Oshie",
+   "qid": "Q983953",
+   "fame": 0.2,
+   "also": [
+    "Timothy Leif Oshie"
+   ]
+  },
+  {
+   "label": "Taffy Abel",
+   "qid": "Q2118953",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Taylor Hall",
+   "qid": "Q721993",
+   "fame": 0.2,
+   "also": [
+    "Taylor Strba Hall"
+   ]
+  },
+  {
+   "label": "Ted Lindsay",
+   "qid": "Q2164733",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Teemu Hartikainen",
+   "qid": "Q514512",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Teodors Bļugers",
+   "qid": "Q15407916",
+   "fame": 0.2,
+   "also": [
+    "Teddy Blueger",
+    "Theodor Blueger"
+   ]
+  },
+  {
+   "label": "Terry Sawchuk",
+   "qid": "Q520254",
+   "fame": 0.2,
+   "also": [
+    "Terrance Sawchuk",
+    "Terry Sawchuck",
+    "Terrance Gordon Sawchuk"
+   ]
+  },
+  {
+   "label": "Teuvo Teräväinen",
+   "qid": "Q3519286",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Thatcher Demko",
+   "qid": "Q17151061",
+   "fame": 0.2,
+   "also": [
+    "Thatcher Douglas Demko"
+   ]
+  },
+  {
+   "label": "Thomas Chabot",
+   "qid": "Q20070752",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Thomas Greiss",
+   "qid": "Q72467",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Thomas Raffl",
+   "qid": "Q685660",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Thomas Rundqvist",
+   "qid": "Q695780",
+   "fame": 0.2,
+   "also": [
+    "Per Thomas Rundqvist"
+   ]
+  },
+  {
+   "label": "Tim Gleason",
+   "qid": "Q1424363",
+   "fame": 0.2,
+   "also": [
+    "Timothy Patrick Gleason"
+   ]
+  },
+  {
+   "label": "Tim Horton",
+   "qid": "Q1345631",
+   "fame": 0.2,
+   "also": [
+    "Miles Horton",
+    "Miles Gilbert Horton"
+   ]
+  },
+  {
+   "label": "Timo Jutila",
+   "qid": "Q691856",
+   "fame": 0.2,
+   "also": [
+    "Timo Juhani Jutila"
+   ]
+  },
+  {
+   "label": "Timo Pielmeier",
+   "qid": "Q873385",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tiny Thompson",
+   "qid": "Q1389891",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tobias Rieder",
+   "qid": "Q2152043",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Todd Bertuzzi",
+   "qid": "Q739843",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Toe Blake",
+   "qid": "Q285583",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tom Barrasso",
+   "qid": "Q608435",
+   "fame": 0.2,
+   "also": [
+    "Thomas Patrick Barrasso"
+   ]
+  },
+  {
+   "label": "Tom Poti",
+   "qid": "Q939096",
+   "fame": 0.2,
+   "also": [
+    "Thomas Emilio Poti"
+   ]
+  },
+  {
+   "label": "Tom Wilson",
+   "qid": "Q542781",
+   "fame": 0.2,
+   "also": [
+    "Thomas Wilson"
+   ]
+  },
+  {
+   "label": "Tomáš Fleischmann",
+   "qid": "Q1389901",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tomáš Hertl",
+   "qid": "Q2257856",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tomas Holmström",
+   "qid": "Q1344532",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tomas Jonsson",
+   "qid": "Q1378633",
+   "fame": 0.2,
+   "also": [
+    "Alf Tomas Jonsson"
+   ]
+  },
+  {
+   "label": "Tomáš Jurčo",
+   "qid": "Q1363192",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tomáš Kopecký",
+   "qid": "Q723369",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tomáš Kundrátek",
+   "qid": "Q369411",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tomáš Nosek",
+   "qid": "Q7820627",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tomáš Plekanec",
+   "qid": "Q722077",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tomas Sandström",
+   "qid": "Q1376695",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tomáš Surový",
+   "qid": "Q943519",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tomáš Tatar",
+   "qid": "Q166374",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Toni Lydman",
+   "qid": "Q943033",
+   "fame": 0.2,
+   "also": [
+    "Toni Petteri Lydman"
+   ]
+  },
+  {
+   "label": "Tony Amonte",
+   "qid": "Q1386805",
+   "fame": 0.2,
+   "also": [
+    "Amonte",
+    "Anthony Amonte",
+    "Anthony L. Amonte",
+    "Anthony Lewis Amonte"
+   ]
+  },
+  {
+   "label": "Tony Esposito",
+   "qid": "Q954322",
+   "fame": 0.2,
+   "also": [
+    "Anthony James Esposito"
+   ]
+  },
+  {
+   "label": "Tony Mårtensson",
+   "qid": "Q722097",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Torey Krug",
+   "qid": "Q6378866",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Travis Konecny",
+   "qid": "Q16229347",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Travis Sanheim",
+   "qid": "Q17180909",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Travis Zajac",
+   "qid": "Q786977",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Trevor Daley",
+   "qid": "Q682629",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Trevor Kidd",
+   "qid": "Q711399",
+   "fame": 0.2,
+   "also": [
+    "Trevor Rodney Kidd"
+   ]
+  },
+  {
+   "label": "Trevor van Riemsdyk",
+   "qid": "Q16225498",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Troy Terry",
+   "qid": "Q21600096",
+   "fame": 0.2,
+   "also": [
+    "Troy Nathan Terry"
+   ]
+  },
+  {
+   "label": "Tuomas Grönman",
+   "qid": "Q1453917",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ty Conklin",
+   "qid": "Q948802",
+   "fame": 0.2,
+   "also": [
+    "Ty Curtis Conklin"
+   ]
+  },
+  {
+   "label": "Tyler Ennis",
+   "qid": "Q129210",
+   "fame": 0.2,
+   "also": [
+    "Tyler Foster Ennis"
+   ]
+  },
+  {
+   "label": "Tyler Johnson",
+   "qid": "Q7585450",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tyler Myers",
+   "qid": "Q1365229",
+   "fame": 0.2,
+   "also": [
+    "The Big Easy",
+    "Tyler Paul Myers"
+   ]
+  },
+  {
+   "label": "Tyler Seguin",
+   "qid": "Q772640",
+   "fame": 0.2,
+   "also": [
+    "Tyler Paul Seguin"
+   ]
+  },
+  {
+   "label": "Tyler Toffoli",
+   "qid": "Q3546040",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tyson Barrie",
+   "qid": "Q582730",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tyson Jost",
+   "qid": "Q22005703",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Udo Kiessling",
+   "qid": "Q62780",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ulf Samuelsson",
+   "qid": "Q1390152",
+   "fame": 0.2,
+   "also": [
+    "Robocop",
+    "Tuffe Uffe",
+    "Ulf Bo Samuelsson"
+   ]
+  },
+  {
+   "label": "Ulf Sterner",
+   "qid": "Q1379127",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Uwe Krupp",
+   "qid": "Q63098",
+   "fame": 0.2,
+   "also": [
+    "Uwe Gerd Krupp"
+   ]
+  },
+  {
+   "label": "Václav Nedomanský",
+   "qid": "Q942406",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Václav Prospal",
+   "qid": "Q678896",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Valeri Kamensky",
+   "qid": "Q1334360",
+   "fame": 0.2,
+   "also": [
+    "Valeri Viktorovich Kamenski",
+    "Valery Kamensky"
+   ]
+  },
+  {
+   "label": "Valeri Nichushkin",
+   "qid": "Q2365750",
+   "fame": 0.2,
+   "also": [
+    "Valeri Ivanovich Nichushkin"
+   ]
+  },
+  {
+   "label": "Valeri Zelepukin",
+   "qid": "Q2007327",
+   "fame": 0.2,
+   "also": [
+    "Valeri Mikhailovich Zelepukin",
+    "Valery Mikhaylovich Zelepukin"
+   ]
+  },
+  {
+   "label": "Victor Rask",
+   "qid": "Q1699128",
+   "fame": 0.2,
+   "also": [
+    "Victor Emanuel Martin Rask"
+   ]
+  },
+  {
+   "label": "Viktor Arvidsson",
+   "qid": "Q2645491",
+   "fame": 0.2,
+   "also": [
+    "Johan Viktor Arvidsson"
+   ]
+  },
+  {
+   "label": "Viktor Fasth",
+   "qid": "Q927388",
+   "fame": 0.2,
+   "also": [
+    "Erik Sixten Viktor Fasth"
+   ]
+  },
+  {
+   "label": "Viktor Kozlov",
+   "qid": "Q739732",
+   "fame": 0.2,
+   "also": [
+    "Viktor Nikolayevich Kozlov"
+   ]
+  },
+  {
+   "label": "Ville Pokka",
+   "qid": "Q3078050",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vince Dunn",
+   "qid": "Q41611395",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vincent Trocheck",
+   "qid": "Q7932086",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vitaly Vishnevskiy",
+   "qid": "Q129206",
+   "fame": 0.2,
+   "also": [
+    "Vitaly Viktorovich Vishnevskiy"
+   ]
+  },
+  {
+   "label": "Vladimir Malakhov",
+   "qid": "Q2006107",
+   "fame": 0.2,
+   "also": [
+    "Vladimir Igorevich Malakhov"
+   ]
+  },
+  {
+   "label": "Vladimír Sobotka",
+   "qid": "Q599214",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vladimir Tarasenko",
+   "qid": "Q715587",
+   "fame": 0.2,
+   "also": [
+    "Vladimir Andreevich Tarasenko"
+   ]
+  },
+  {
+   "label": "Vladimir Tsyplakov",
+   "qid": "Q2092875",
+   "fame": 0.2,
+   "also": [
+    "Vladimir Viktorovich Tsyplakov"
+   ]
+  },
+  {
+   "label": "Vladislav Namestnikov",
+   "qid": "Q1339462",
+   "fame": 0.2,
+   "also": [
+    "Vladislav Yevgenievich Namestnikov"
+   ]
+  },
+  {
+   "label": "Vyacheslav Butsayev",
+   "qid": "Q2005574",
+   "fame": 0.2,
+   "also": [
+    "Vyacheslav Gennadievich Butsayev",
+    "Vyacheslav Gennadyevich Butsayev"
+   ]
+  },
+  {
+   "label": "Vyacheslav Kozlov",
+   "qid": "Q126430",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Wade Belak",
+   "qid": "Q722122",
+   "fame": 0.2,
+   "also": [
+    "Wade William Aadland",
+    "Wade William Belak"
+   ]
+  },
+  {
+   "label": "Wade Redden",
+   "qid": "Q1387113",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Wayne Simmonds",
+   "qid": "Q371775",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "William Karlsson",
+   "qid": "Q2577203",
+   "fame": 0.2,
+   "also": [
+    "Lars William Karlsson",
+    "Wild Bill Karlsson"
+   ]
+  },
+  {
+   "label": "William Nylander",
+   "qid": "Q14614517",
+   "fame": 0.2,
+   "also": [
+    "William Altelius",
+    "William Andrew Michael Junior Nylander Altelius",
+    "William Nylander Altelius"
+   ]
+  },
+  {
+   "label": "Yan Stastny",
+   "qid": "Q749613",
+   "fame": 0.2,
+   "also": [
+    "Yan Pavol Stastny"
+   ]
+  },
+  {
+   "label": "Yannick Weber",
+   "qid": "Q869663",
+   "fame": 0.2,
+   "also": [
+    "Yannick Cyril Weber"
+   ]
+  },
+  {
+   "label": "Yegor Sharangovich",
+   "qid": "Q29788539",
+   "fame": 0.2,
+   "also": [
+    "Yegor Alexandrovich Sharangovich"
+   ]
+  },
+  {
+   "label": "Yvan Cournoyer",
+   "qid": "Q710342",
+   "fame": 0.2,
+   "also": [
+    "The Road Runner",
+    "Yvan Serge Cournoyer"
+   ]
+  },
+  {
+   "label": "Zach Bogosian",
+   "qid": "Q139302",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zach Hyman",
+   "qid": "Q19878924",
+   "fame": 0.2,
+   "also": [
+    "Zachary Martin Hyman"
+   ]
+  },
+  {
+   "label": "Zach Parise",
+   "qid": "Q139368",
+   "fame": 0.2,
+   "also": [
+    "Zachary Justin Parise"
+   ]
+  },
+  {
+   "label": "Zach Werenski",
+   "qid": "Q19662630",
+   "fame": 0.2,
+   "also": [
+    "Zachary Werenski"
+   ]
+  },
+  {
+   "label": "Zack Kassian",
+   "qid": "Q139846",
+   "fame": 0.2,
+   "also": [
+    "Zack Adam Kassian"
+   ]
+  },
+  {
+   "label": "Zarley Zalapski",
+   "qid": "Q147992",
+   "fame": 0.2,
+   "also": [
+    "Zarley Bennett Zalapski"
+   ]
+  },
+  {
+   "label": "Zbyněk Michálek",
+   "qid": "Q168321",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zdeno Cíger",
+   "qid": "Q168955",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zemgus Girgensons",
+   "qid": "Q3078663",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Žigmund Pálffy",
+   "qid": "Q394023",
+   "fame": 0.2,
+   "also": [
+    "Ziggy Palffy",
+    "Žigo Pálffy"
+   ]
+  },
+  {
+   "label": "Håkan Loob",
+   "qid": "Q706958",
+   "fame": 0.199,
+   "also": [
+    "Per Håkan Loob"
+   ]
+  },
+  {
+   "label": "Tomáš Kaberle",
+   "qid": "Q706882",
+   "fame": 0.198,
+   "also": []
+  },
+  {
+   "label": "Wojtek Wolski",
+   "qid": "Q86684",
+   "fame": 0.196,
+   "also": []
+  },
+  {
+   "label": "Ales Hemsky",
+   "qid": "Q737730",
+   "fame": 0.194,
+   "also": []
+  },
+  {
+   "label": "Teppo Numminen",
+   "qid": "Q1348641",
+   "fame": 0.193,
+   "also": [
+    "Teppo Kalevi Numminen"
+   ]
+  },
+  {
+   "label": "Tomáš Vokoun",
+   "qid": "Q927959",
+   "fame": 0.188,
+   "also": []
+  },
+  {
+   "label": "Milt Schmidt",
+   "qid": "Q1355449",
+   "fame": 0.187,
+   "also": [
+    "Milton Conrad Schmidt"
+   ]
+  },
+  {
+   "label": "Tuomo Ruutu",
+   "qid": "Q708663",
+   "fame": 0.187,
+   "also": [
+    "Tuomo Iisakki Ruutu"
+   ]
+  },
+  {
+   "label": "Alexei Morozov",
+   "qid": "Q735366",
+   "fame": 0.183,
+   "also": [
+    "Alexei Alekseyevich Morozov"
+   ]
+  },
+  {
+   "label": "Ivan Hlinka",
+   "qid": "Q388631",
+   "fame": 0.176,
+   "also": []
+  },
+  {
+   "label": "Kari Lehtonen",
+   "qid": "Q585152",
+   "fame": 0.175,
+   "also": []
+  },
+  {
+   "label": "Jarkko Ruutu",
+   "qid": "Q188105",
+   "fame": 0.174,
+   "also": [
+    "Jarkko Samuli Ruutu"
+   ]
+  },
+  {
+   "label": "Jere Lehtinen",
+   "qid": "Q539344",
+   "fame": 0.173,
+   "also": [
+    "Jere Kalervo Lehtinen"
+   ]
+  },
+  {
+   "label": "Dan Hamhuis",
+   "qid": "Q1159078",
+   "fame": 0.172,
+   "also": [
+    "Daniel Hamhuis"
+   ]
+  },
+  {
+   "label": "Alexei Zhamnov",
+   "qid": "Q1345810",
+   "fame": 0.162,
+   "also": []
+  },
+  {
+   "label": "Eric Brewer",
+   "qid": "Q1342539",
+   "fame": 0.161,
+   "also": [
+    "Eric Peter Brewer"
+   ]
+  },
+  {
+   "label": "Jussi Jokinen",
+   "qid": "Q537505",
+   "fame": 0.16,
+   "also": [
+    "Jussi Petteri Jokinen"
+   ]
+  },
+  {
+   "label": "Robert Lang",
+   "qid": "Q914398",
+   "fame": 0.159,
+   "also": []
+  },
+  {
+   "label": "Alexei Kasatonov",
+   "qid": "Q1348811",
+   "fame": 0.155,
+   "also": [
+    "Alexei Viktorovich Kasatonov"
+   ]
+  },
+  {
+   "label": "Christian Ehrhoff",
+   "qid": "Q63097",
+   "fame": 0.155,
+   "also": []
+  },
+  {
+   "label": "Tommy Salo",
+   "qid": "Q739875",
+   "fame": 0.151,
+   "also": [
+    "Tommy Mikael Salo"
+   ]
+  },
+  {
+   "label": "Sami Salo",
+   "qid": "Q708152",
+   "fame": 0.146,
+   "also": [
+    "Sami Sakari Salo"
+   ]
+  },
+  {
+   "label": "Marcus Krüger",
+   "qid": "Q1894251",
+   "fame": 0.144,
+   "also": []
+  },
+  {
+   "label": "Mikael Samuelsson",
+   "qid": "Q707335",
+   "fame": 0.143,
+   "also": [
+    "Karl Mikael Samuelsson"
+   ]
+  },
+  {
+   "label": "Ville Peltonen",
+   "qid": "Q538425",
+   "fame": 0.143,
+   "also": [
+    "Ville Sakari Peltonen"
+   ]
+  },
+  {
+   "label": "Marek Malík",
+   "qid": "Q283459",
+   "fame": 0.141,
+   "also": []
+  },
+  {
+   "label": "Jonas Hiller",
+   "qid": "Q666825",
+   "fame": 0.139,
+   "also": []
+  },
+  {
+   "label": "Roman Červenka",
+   "qid": "Q984017",
+   "fame": 0.138,
+   "also": []
+  },
+  {
+   "label": "Helmuts Balderis",
+   "qid": "Q553261",
+   "fame": 0.136,
+   "also": [
+    "Helmuts Balderis-Sildedzis"
+   ]
+  },
+  {
+   "label": "Raimo Helminen",
+   "qid": "Q739807",
+   "fame": 0.135,
+   "also": [
+    "Raimo Ilmari Helminen"
+   ]
+  },
+  {
+   "label": "Fredrik Modin",
+   "qid": "Q605511",
+   "fame": 0.134,
+   "also": []
+  },
+  {
+   "label": "Niklas Hagman",
+   "qid": "Q223300",
+   "fame": 0.13,
+   "also": []
+  },
+  {
+   "label": "Michael Frolík",
+   "qid": "Q1170487",
+   "fame": 0.129,
+   "also": []
+  },
+  {
+   "label": "Jiří Šlégr",
+   "qid": "Q722971",
+   "fame": 0.128,
+   "also": []
+  },
+  {
+   "label": "Patrik Berglund",
+   "qid": "Q929173",
+   "fame": 0.123,
+   "also": []
+  },
+  {
+   "label": "Martin Erat",
+   "qid": "Q964014",
+   "fame": 0.118,
+   "also": []
+  },
+  {
+   "label": "Michal Handzuš",
+   "qid": "Q937057",
+   "fame": 0.115,
+   "also": []
+  },
+  {
+   "label": "Viktor Tikhonov",
+   "qid": "Q247265",
+   "fame": 0.107,
+   "also": [
+    "Viktor Vasilievich Tikhonov"
+   ]
+  },
+  {
+   "label": "Andrej Meszároš",
+   "qid": "Q502970",
+   "fame": 0.106,
+   "also": []
+  },
+  {
+   "label": "Igor Kravchuk",
+   "qid": "Q664151",
+   "fame": 0.104,
+   "also": [
+    "Igor Aleksandrovich Kravchuk"
+   ]
+  },
+  {
+   "label": "Frans Nielsen",
+   "qid": "Q717514",
+   "fame": 0.088,
+   "also": []
+  },
+  {
+   "label": "Raphael Diaz",
+   "qid": "Q337053",
+   "fame": 0.086,
+   "also": [
+    "Raphael Salvador Diaz",
+    "Rafael Diaz"
+   ]
+  },
+  {
+   "label": "Ville Nieminen",
+   "qid": "Q1111600",
+   "fame": 0.086,
+   "also": [
+    "Ville Juhani Nieminen"
+   ]
+  },
+  {
+   "label": "Vladimír Růžička",
+   "qid": "Q1336392",
+   "fame": 0.086,
+   "also": []
+  },
+  {
+   "label": "Alexei Gusarov",
+   "qid": "Q290173",
+   "fame": 0.076,
+   "also": [
+    "Aleksey Vasilyevich Gusarov",
+    "Alexei Vasilievich Gusarov"
+   ]
+  },
+  {
+   "label": "Sami Lepistö",
+   "qid": "Q944069",
+   "fame": 0.066,
+   "also": []
+  },
+  {
+   "label": "Petteri Nummelin",
+   "qid": "Q666493",
+   "fame": 0.052,
+   "also": [
+    "Timo Petteri Nummelin"
+   ]
+  },
+  {
+   "label": "Jan Bulis",
+   "qid": "Q929223",
+   "fame": 0.048,
+   "also": []
+  },
+  {
+   "label": "Niko Kapanen",
+   "qid": "Q155307",
+   "fame": 0.047,
+   "also": [
+    "Niko Klaus Petteri Kapanen"
+   ]
+  },
+  {
+   "label": "Joakim Lindström",
+   "qid": "Q137547",
+   "fame": 0.035,
+   "also": []
+  },
+  {
+   "label": "Lauri Korpikoski",
+   "qid": "Q940202",
+   "fame": 0.03,
+   "also": []
+  },
+  {
+   "label": "Antti Pihlström",
+   "qid": "Q609803",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Jarkko Immonen",
+   "qid": "Q561846",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Petri Kontiola",
+   "qid": "Q927896",
+   "fame": 0,
+   "also": []
+  }
+ ]
+}

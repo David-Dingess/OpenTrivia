@@ -1,0 +1,178 @@
+{
+ "id": "table.pop-culture.fads-by-decade",
+ "kind": "table",
+ "title": "Fads and crazes",
+ "genre": "general",
+ "category": "pop-culture",
+ "topic": "fads-and-crazes",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks (GROUP_CONCAT(DISTINCT CONCAT(STR(?t),\"|\",STR(?prec)); separator=\";\") AS ?yrs) WHERE { VALUES ?item { wd:Q15707420 wd:Q4558721 wd:Q8768018 wd:Q864 wd:Q618998 wd:Q715858 wd:Q18345746 wd:Q756030 wd:Q215641 wd:Q15783 wd:Q1031639 wd:Q840121 wd:Q116578 wd:Q192015 wd:Q86919775 wd:Q27997726 wd:Q48967323 wd:Q7194194 wd:Q1898976 wd:Q2276502 wd:Q7784123 wd:Q2165726 wd:Q4950971 wd:Q1424519 wd:Q17148777 wd:Q7602548 wd:Q931529 wd:Q1796985 wd:Q6453221 wd:Q30014939 wd:Q1036057 wd:Q5506202 wd:Q953512 wd:Q475456 wd:Q878120 wd:Q128424 wd:Q2394642 wd:Q932209 wd:Q788346 wd:Q29279406 wd:Q2668301 wd:Q519930 wd:Q4606965 wd:Q217668 wd:Q20966579 wd:Q16740954 wd:Q1573844 wd:Q4992093 wd:Q1866654 wd:Q6730687 wd:Q1567192 wd:Q845399 wd:Q7538697 wd:Q7642783 wd:Q125007648 wd:Q27808404 wd:Q27770847 wd:Q839679 wd:Q2605825 wd:Q7535632 wd:Q2631239 wd:Q1813317 wd:Q5580161 wd:Q1064754 wd:Q3287501 wd:Q58339 wd:Q7361053 wd:Q6176906 wd:Q1056309 wd:Q695677 wd:Q207786 wd:Q47043 wd:Q890 wd:Q17521923 wd:Q696775 wd:Q10885857 wd:Q5645673 wd:Q7133943 wd:Q204050 wd:Q2532883 wd:Q549544 wd:Q219217 wd:Q21161871 wd:Q107128853 wd:Q109535860 wd:Q47545258 wd:Q110367996 wd:Q3743738 wd:Q747201 wd:Q1097194 wd:Q1485203 wd:Q18387942 wd:Q1424125 wd:Q5357499 wd:Q533946 wd:Q254026 wd:Q1134329 wd:Q169737 wd:Q1118802 wd:Q2329163 wd:Q1891883 wd:Q12068677 wd:Q3643110 wd:Q3050557 wd:Q1410374 wd:Q1568360 wd:Q842998 wd:Q2742804 wd:Q7361080 wd:Q640754 wd:Q916998 wd:Q1568588 wd:Q10971633 wd:Q7857851 wd:Q108905093 wd:Q89638559 wd:Q3299911 wd:Q16152381 wd:Q549344 wd:Q1056309 wd:Q2569969 } { ?item p:P571/psv:P571 ?v } UNION { ?item p:P577/psv:P577 ?v } UNION { ?item p:P575/psv:P575 ?v } UNION { ?item p:P580/psv:P580 ?v } ?v wikibase:timeValue ?t ; wikibase:timePrecision ?prec . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } GROUP BY ?item ?itemLabel ?article ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T06:28:33.096Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T06:28:33.096Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "year",
+   "label": "Year it took off",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "fad",
+  "many": "fads and crazes",
+  "capitalise": true,
+  "columns": {
+   "year": {
+    "role": "date",
+    "sort": "from the earliest craze to the most recent",
+    "era": "Drop each craze into the decade it took off.",
+    "eraSize": "decade",
+    "shot": "In what year did {label} become a craze?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Flappy Bird",
+   "qid": "Q15707420",
+   "fame": 0.563,
+   "year": 2013,
+   "description": "2013 mobile video game by Dong Nguyen",
+   "hook": "has a player flap a tiny winged hero between green pipes, and was pulled by its maker at its peak",
+   "known": 0.8,
+   "kind": "game"
+  },
+  {
+   "label": "Tamagotchi",
+   "qid": "Q207786",
+   "fame": 0.555,
+   "year": 1996,
+   "description": "handheld digital pet",
+   "hook": "is an egg-shaped keychain gadget whose virtual pet kids had to feed and clean up after",
+   "known": 0.8,
+   "kind": "toy"
+  },
+  {
+   "label": "Pokémon Trading Card Game",
+   "qid": "Q1056309",
+   "fame": 0.551,
+   "year": 1996,
+   "description": "1996 collectible card game based on Pokémon",
+   "hook": "lets players battle with decks of collectible cards, and kids traded shiny holographic ones at school",
+   "known": 0.95,
+   "kind": "game"
+  },
+  {
+   "label": "Gangnam Style",
+   "qid": "Q890",
+   "fame": 0.54,
+   "year": 2012,
+   "description": "2012 single by Psy",
+   "hook": "is a K-pop video where a singer does an invisible horse-riding dance that spread across the world on YouTube",
+   "known": 0.8,
+   "kind": "music"
+  },
+  {
+   "label": "disco",
+   "qid": "Q58339",
+   "fame": 0.537,
+   "year": 1972,
+   "description": "genre of dance music and a subculture that emerged in the 1970s from the United States' urban nightlife scene",
+   "hook": "brought mirror balls, bell-bottoms and thumping four-on-the-floor beats to dance floors",
+   "known": 0.95,
+   "kind": "cultural"
+  },
+  {
+   "label": "Pokémon Go",
+   "qid": "Q20966579",
+   "fame": 0.523,
+   "year": 2016,
+   "description": "augmented reality mobile game based on the Pokémon franchise",
+   "hook": "sent millions of people out walking with their phones to catch virtual creatures placed on real-world maps",
+   "known": 0.8,
+   "kind": "game"
+  },
+  {
+   "label": "tulip mania",
+   "qid": "Q219217",
+   "fame": 0.518,
+   "year": 1634,
+   "description": "17th-century economic bubble in the Netherlands",
+   "hook": "saw buyers pay absurd prices for flower bulbs before collapse, the classic speculative bubble",
+   "known": 0.6,
+   "kind": "economic"
+  },
+  {
+   "label": "Sea-Monkeys",
+   "qid": "Q10885857",
+   "fame": 0.504,
+   "year": 1957,
+   "description": "brine shrimp sold as pets",
+   "hook": "promised tiny instant pets that hatch from a pouch of powder in water, advertised in comic books",
+   "known": 0.6,
+   "kind": "toy"
+  },
+  {
+   "label": "Candy Crush Saga",
+   "qid": "Q8768018",
+   "fame": 0.478,
+   "year": 2012,
+   "description": "2012 puzzle video game by King",
+   "hook": "has players swap colored sweets to match three in a row, a huge mobile and Facebook hit",
+   "known": 0.8,
+   "kind": "game"
+  },
+  {
+   "label": "Pumpkin Spice Latte",
+   "qid": "Q18345746",
+   "fame": 0.475,
+   "year": 2003,
+   "description": "autumnal coffee drink",
+   "hook": "is a seasonal fall coffee drink from Starbucks, flavored with cinnamon, nutmeg and clove",
+   "known": 0.8,
+   "kind": "food"
+  },
+  {
+   "label": "Cha Cha Slide",
+   "qid": "Q2532883",
+   "fame": 0.451,
+   "year": 2000,
+   "description": "2000 single by DJ Casper",
+   "hook": "is a line dance song that calls out moves like \"to the left\" and \"criss cross\"",
+   "known": 0.6,
+   "kind": "music"
+  },
+  {
+   "label": "Furby",
+   "qid": "Q932209",
+   "fame": 0.451,
+   "year": 1998,
+   "description": "electronic robotic toy",
+   "hook": "is an owl-like talking robot toy that was a must-have holiday gift and spoke its own made-up language",
+   "known": 0.6,
+   "kind": "toy"
+  }
+ ]
+}

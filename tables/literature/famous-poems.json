@@ -1,0 +1,309 @@
+{
+ "id": "table.literature.famous-poems",
+ "kind": "table",
+ "title": "Famous poems and their poet",
+ "genre": "arts-entertainment",
+ "category": "literature",
+ "topic": "poetry",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?authorLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?a) AS ?author) (COUNT(DISTINCT ?a) AS ?nAuthor) WHERE { ?item wdt:P31 wd:Q7725634 ; wdt:P7937 wd:Q5185279 ; wdt:P50 ?a ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 15) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 200 } hint:Prior hint:runFirst true . FILTER(?nAuthor = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T16:42:00.452Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T16:42:00.452Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "author",
+   "label": "Poet",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "poem",
+  "many": "poems",
+  "columns": {
+   "author": {
+    "role": "link",
+    "pick": "Who wrote {label}?",
+    "statement": "{label} was written by {value}.",
+    "match": "Match each poem to its poet.",
+    "odd": "Three of these were written by {value}. Which one wasn't?",
+    "all": "Tap all {n} poems written by {value}.",
+    "reverse": "Which of these did {value} write?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Ramayana",
+   "qid": "Q37293",
+   "fame": 0.641,
+   "author": "Valmiki",
+   "description": "An ancient Hindu epic composed by Valmiki which narrates the life story of Lord Rama.",
+   "hook": "follows an exiled prince who wages a great war to rescue his kidnapped wife from a demon king",
+   "known": 0.4,
+   "kind": "epic"
+  },
+  {
+   "label": "Paradise Lost",
+   "qid": "Q28754",
+   "fame": 0.629,
+   "author": "John Milton",
+   "description": "epic poem by John Milton",
+   "hook": "tells of a rebellious angel's fall and the expulsion of the first man and woman from their garden home",
+   "known": 0.6,
+   "kind": "epic"
+  },
+  {
+   "label": "Mahabharata",
+   "qid": "Q8276",
+   "fame": 0.622,
+   "author": "Vyasa",
+   "description": "ancient Sanskrit epic by Vyasa",
+   "hook": "recounts a great war between two branches of a royal family, fought on a sacred battlefield",
+   "known": 0.4,
+   "kind": "epic"
+  },
+  {
+   "label": "Ozymandias",
+   "qid": "Q662166",
+   "fame": 0.622,
+   "author": "Percy Bysshe Shelley",
+   "description": "1818 sonnet by Percy Bysshe Shelley",
+   "hook": "describes a crumbling desert statue whose boastful inscription mocks the ruin of its own forgotten king",
+   "known": 0.6,
+   "kind": "lyric"
+  },
+  {
+   "label": "Bhagavad Gita",
+   "qid": "Q46802",
+   "fame": 0.621,
+   "author": "Vyasa",
+   "description": "primary holy scripture for Hinduism",
+   "hook": "records a battlefield dialogue between a warrior prince and his divine charioteer about duty and destiny",
+   "known": 0.4,
+   "kind": "lyric"
+  },
+  {
+   "label": "Aeneid",
+   "qid": "Q60220",
+   "fame": 0.613,
+   "author": "Virgil",
+   "description": "epic poem by Virgil",
+   "hook": "follows a Trojan hero's journey to found the city that would become Rome",
+   "known": 0.6,
+   "kind": "epic"
+  },
+  {
+   "label": "The Canterbury Tales",
+   "qid": "Q191663",
+   "fame": 0.588,
+   "author": "Geoffrey Chaucer",
+   "description": "collection of stories written in Middle English by Geoffrey Chaucer",
+   "hook": "gathers a band of pilgrims trading stories on their journey to a holy shrine",
+   "known": 0.6,
+   "kind": "epic"
+  },
+  {
+   "label": "Jabberwocky",
+   "qid": "Q250371",
+   "fame": 0.558,
+   "author": "Lewis Carroll",
+   "description": "nonsense poem by Lewis Carroll",
+   "hook": "invents nonsense words to tell of a monster slain by a hero with a vorpal sword",
+   "known": 0.8,
+   "kind": "narrative"
+  },
+  {
+   "label": "Sir Gawain and the Green Knight",
+   "qid": "Q756715",
+   "fame": 0.546,
+   "author": "Pearl poet",
+   "description": "late 14th-century Middle English chivalric romance",
+   "hook": "follows a warrior who accepts a beheading challenge from a mysterious emerald-skinned stranger",
+   "known": 0.2,
+   "kind": "epic"
+  },
+  {
+   "label": "The Raven",
+   "qid": "Q22726",
+   "fame": 0.546,
+   "author": "Edgar Allan Poe",
+   "description": "narrative poem by Edgar Allan Poe",
+   "hook": "features a talking bird repeating a single haunting word to a man grieving his lost love",
+   "known": 0.8,
+   "kind": "narrative"
+  },
+  {
+   "label": "The Rime of the Ancient Mariner",
+   "qid": "Q708177",
+   "fame": 0.54,
+   "author": "Samuel Taylor Coleridge",
+   "description": "1798 poem by Samuel Taylor Coleridge",
+   "hook": "tells of a sailor cursed after killing an albatross, forced to recount his tale to a wedding guest",
+   "known": 0.6,
+   "kind": "narrative"
+  },
+  {
+   "label": "Metamorphoses",
+   "qid": "Q184742",
+   "fame": 0.539,
+   "author": "Ovid",
+   "description": "narrative poem by Ovid",
+   "hook": "collects myths in which people are transformed into animals, plants, and stars",
+   "known": 0.4,
+   "kind": "lyric"
+  },
+  {
+   "label": "And did those feet in ancient time",
+   "qid": "Q77425249",
+   "fame": 0.519,
+   "author": "William Blake",
+   "description": "1804 poem by William Blake",
+   "hook": "asks whether Christ once walked upon English soil, and gave rise to a stirring national hymn",
+   "known": 0.4,
+   "kind": "lyric"
+  },
+  {
+   "label": "The Tyger",
+   "qid": "Q2503329",
+   "fame": 0.514,
+   "author": "William Blake",
+   "description": "1794 William Blake poem",
+   "hook": "questions what immortal power could have forged a fearsome predator's perfect symmetry",
+   "known": 0.6,
+   "kind": "lyric"
+  },
+  {
+   "label": "O Captain! My Captain!",
+   "qid": "Q2008338",
+   "fame": 0.51,
+   "author": "Walt Whitman",
+   "description": "poem by Walt Whitman on the death of Abraham Lincoln",
+   "hook": "mourns a fallen leader who guided the ship of state safely to port, only to die as it arrives",
+   "known": 0.4,
+   "kind": "lyric"
+  },
+  {
+   "label": "The Road Not Taken",
+   "qid": "Q1933024",
+   "fame": 0.504,
+   "author": "Robert Frost",
+   "description": "poem by Robert Frost",
+   "hook": "reflects on choosing between two diverging paths in an autumn wood",
+   "known": 0.95,
+   "kind": "lyric"
+  },
+  {
+   "label": "The Charge of the Light Brigade",
+   "qid": "Q1867023",
+   "fame": 0.492,
+   "author": "Alfred Tennyson",
+   "description": "poem by Alfred, Lord Tennyson (1854)",
+   "hook": "honors a doomed cavalry assault into enemy cannon fire after a battlefield order was misunderstood",
+   "known": 0.6,
+   "kind": "lyric"
+  },
+  {
+   "label": "Piers Plowman",
+   "qid": "Q1757630",
+   "fame": 0.489,
+   "author": "William Langland",
+   "description": "Middle English allegorical narrative poem by William Langland",
+   "hook": "uses a series of dream visions to guide a search for religious truth in medieval England",
+   "known": 0.2,
+   "kind": "epic"
+  },
+  {
+   "label": "Kubla Khan",
+   "qid": "Q1089037",
+   "fame": 0.481,
+   "author": "Samuel Taylor Coleridge",
+   "description": "poem by Samuel Taylor Coleridge",
+   "hook": "describes a fantastical pleasure dome imagined in a dream and left unfinished after an interruption",
+   "known": 0.4,
+   "kind": "lyric"
+  },
+  {
+   "label": "Layla and Majnun",
+   "qid": "Q673156",
+   "fame": 0.476,
+   "author": "Nizami Ganjavi",
+   "description": "story of Arab origin, about the 7th-century Arabic poet Qays ibn al-Mulawwah and his lover Layla bint Mahdi",
+   "hook": "tells of a poet driven to madness by his forbidden love for a woman he could never marry",
+   "known": 0.2,
+   "kind": "narrative"
+  },
+  {
+   "label": "Telegony",
+   "qid": "Q1520934",
+   "fame": 0.472,
+   "author": "Eugammon of Cyrene",
+   "description": "poem written by Eugammon of Cyrene",
+   "hook": "tells how a hero is fatally wounded by his own unknown son, neither realizing who the other is",
+   "known": 0.05,
+   "kind": "narrative"
+  },
+  {
+   "label": "The Lady of Shalott",
+   "qid": "Q2091538",
+   "fame": 0.462,
+   "author": "Alfred Tennyson",
+   "description": "1832 Victorian ballad by Alfred Tennyson",
+   "hook": "follows a cursed weaver in a tower who dies floating downriver after glimpsing a knight",
+   "known": 0.6,
+   "kind": "narrative"
+  },
+  {
+   "label": "Meghadūta",
+   "qid": "Q182283",
+   "fame": 0.46,
+   "author": "Kalidasa",
+   "description": "lyric poem by Kālidāsa",
+   "hook": "has an exiled spirit ask a passing raincloud to carry a message of love to his distant wife",
+   "known": 0.05,
+   "kind": "lyric"
+  },
+  {
+   "label": "In Flanders Fields",
+   "qid": "Q25772",
+   "fame": 0.455,
+   "author": "John McCrae",
+   "description": "war poem",
+   "hook": "has fallen soldiers speak from their graves among blooming poppies, urging the living to keep fighting",
+   "known": 0.8,
+   "kind": "lyric"
+  },
+  {
+   "label": "The Song of Roland",
+   "qid": "Q185427",
+   "fame": 0.451,
+   "author": "Turold",
+   "description": "medieval epic work",
+   "hook": "recounts a knight's last stand in a mountain ambush, blowing his horn for help only when it is too late",
+   "known": 0.4,
+   "kind": "epic"
+  }
+ ]
+}

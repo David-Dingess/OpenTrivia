@@ -1,0 +1,382 @@
+{
+ "id": "table.art.fashion-designers-country",
+ "kind": "table",
+ "title": "Famous fashion designers and their home country",
+ "genre": "arts-entertainment",
+ "category": "art",
+ "topic": "fashion",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) WHERE { ?item wdt:P106 wd:Q3501317 . ?item wdt:P27 ?c . MINUS { ?item wdt:P106 ?o . VALUES ?o { wd:Q177220 wd:Q33999 wd:Q4610556 wd:Q2252262 wd:Q10800557 wd:Q10798782 wd:Q639669 wd:Q82955 wd:Q2259451 wd:Q488205 wd:Q947873 wd:Q2066131 wd:Q1930187 wd:Q36834 wd:Q3282637 wd:Q483501 wd:Q753110 wd:Q855091 } } } GROUP BY ?item HAVING(COUNT(DISTINCT ?c) = 1) } hint:Prior hint:runFirst true . ?country rdfs:label ?countryLabel . FILTER(LANG(?countryLabel)=\"en\") OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T06:57:15.316Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T06:57:15.316Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "fashion designer",
+  "many": "fashion designers",
+  "wildcard": "person",
+  "hookAsk": "Which fashion designer {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is fashion designer {label} from?",
+    "statement": "{label} is a fashion designer from {value}.",
+    "match": "Match each fashion designer to their home country.",
+    "odd": "Three of these fashion designers are from {value}. Which one isn't?",
+    "all": "Tap all {n} fashion designers from {value}.",
+    "reverse": "Which of these fashion designers is from {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "John Galliano",
+   "qid": "Q313607",
+   "fame": 0.738,
+   "country": "United Kingdom",
+   "description": "British fashion designer (born 1960)",
+   "hook": null,
+   "known": 0.3,
+   "kind": "british"
+  },
+  {
+   "label": "Ralph Lauren",
+   "qid": "Q296647",
+   "fame": 0.656,
+   "country": "United States",
+   "description": "American fashion designer (born 1939)",
+   "hook": "built a lifestyle empire on a logo of a mounted polo player and preppy looks",
+   "known": 0.7,
+   "kind": "american"
+  },
+  {
+   "label": "Coco Chanel",
+   "qid": "Q45661",
+   "fame": 0.636,
+   "country": "France",
+   "description": "French fashion designer (1883–1971)",
+   "hook": "popularised the little black dress and the boxy tweed suit, plus a perfume called No. 5",
+   "known": 0.8,
+   "kind": "french"
+  },
+  {
+   "label": "Kate Spade",
+   "qid": "Q275094",
+   "fame": 0.625,
+   "country": "United States",
+   "description": "American fashion designer (1962–2018)",
+   "hook": "founded a brand famous for colorful, playful handbags",
+   "known": 0.4,
+   "kind": "american"
+  },
+  {
+   "label": "Rick Owens",
+   "qid": "Q556462",
+   "fame": 0.616,
+   "country": "United States",
+   "description": "American fashion designer (born 1962)",
+   "hook": null,
+   "known": 0.1,
+   "kind": "american"
+  },
+  {
+   "label": "Alexander McQueen",
+   "qid": "Q207939",
+   "fame": 0.602,
+   "country": "United Kingdom",
+   "description": "British fashion designer (1969–2010)",
+   "hook": "was known for dramatic, theatrical runway shows and skull-print scarves",
+   "known": 0.5,
+   "kind": "british"
+  },
+  {
+   "label": "Yves Saint Laurent",
+   "qid": "Q171556",
+   "fame": 0.599,
+   "country": "France",
+   "description": "French fashion designer (1936–2008)",
+   "hook": "introduced a tuxedo suit for women called Le Smoking",
+   "known": 0.8,
+   "kind": "french"
+  },
+  {
+   "label": "Gianni Versace",
+   "qid": "Q264490",
+   "fame": 0.598,
+   "country": "Italy",
+   "description": "Italian fashion designer (1946–1997)",
+   "hook": "built a flashy brand with a Medusa-head logo and bold gold-and-print designs",
+   "known": 0.7,
+   "kind": "italian"
+  },
+  {
+   "label": "Tommy Hilfiger",
+   "qid": "Q136687",
+   "fame": 0.585,
+   "country": "United States",
+   "description": "American fashion designer",
+   "hook": "built a brand of red, white and blue preppy sportswear with a flag logo",
+   "known": 0.7,
+   "kind": "american"
+  },
+  {
+   "label": "Christian Dior",
+   "qid": "Q159694",
+   "fame": 0.58,
+   "country": "France",
+   "description": "French fashion designer (1905–1957)",
+   "hook": "launched the New Look, with nipped waists and full skirts, after World War II",
+   "known": 0.8,
+   "kind": "french"
+  },
+  {
+   "label": "Paul Smith",
+   "qid": "Q1231482",
+   "fame": 0.577,
+   "country": "United Kingdom",
+   "description": "fashion designer from England (born 1946)",
+   "hook": null,
+   "known": 0.25,
+   "kind": "british"
+  },
+  {
+   "label": "Karl Lagerfeld",
+   "qid": "Q76716",
+   "fame": 0.573,
+   "country": "Germany",
+   "description": "German fashion designer (1933–2019)",
+   "hook": "was recognised by a white ponytail, dark sunglasses and high starched collars, while leading Chanel",
+   "known": 0.8,
+   "kind": "german"
+  },
+  {
+   "label": "Marc Jacobs",
+   "qid": "Q313108",
+   "fame": 0.568,
+   "country": "United States",
+   "description": "American fashion designer (born 1963)",
+   "hook": "headed the fashion lines at Louis Vuitton and made grunge a runway trend",
+   "known": 0.4,
+   "kind": "american"
+  },
+  {
+   "label": "Vivienne Westwood",
+   "qid": "Q158067",
+   "fame": 0.556,
+   "country": "United Kingdom",
+   "description": "British fashion designer (1941–2022)",
+   "hook": "helped bring punk style from the street to the runway",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Vera Wang",
+   "qid": "Q230728",
+   "fame": 0.55,
+   "country": "United States",
+   "description": "American fashion designer (born 1939)",
+   "hook": "is best known for elegant wedding gowns, after a start in figure skating",
+   "known": 0.4,
+   "kind": "american"
+  },
+  {
+   "label": "Donatella Versace",
+   "qid": "Q229437",
+   "fame": 0.537,
+   "country": "Italy",
+   "description": "Italian fashion designer",
+   "hook": "leads a fashion house founded by her brother, known for platinum-blonde hair and bold glamour",
+   "known": 0.6,
+   "kind": "italian"
+  },
+  {
+   "label": "Giorgio Armani",
+   "qid": "Q157054",
+   "fame": 0.537,
+   "country": "Italy",
+   "description": "Italian fashion designer (1934–2025)",
+   "hook": "made relaxed, unstructured tailoring a red-carpet staple",
+   "known": 0.7,
+   "kind": "italian"
+  },
+  {
+   "label": "Thom Browne",
+   "qid": "Q3524805",
+   "fame": 0.535,
+   "country": "United States",
+   "description": "American fashion designer",
+   "hook": null,
+   "known": 0.2,
+   "kind": "american"
+  },
+  {
+   "label": "Christian Louboutin",
+   "qid": "Q452136",
+   "fame": 0.513,
+   "country": "France",
+   "description": "French fashion designer (born 1964)",
+   "hook": "puts shiny red soles on high-heeled shoes",
+   "known": 0.6,
+   "kind": "french"
+  },
+  {
+   "label": "Jean-Paul Gaultier",
+   "qid": "Q242868",
+   "fame": 0.511,
+   "country": "France",
+   "description": "French fashion designer (born 1952)",
+   "hook": "designed the cone-shaped bra corset Madonna wore on tour, and loves sailor stripes",
+   "known": 0.5,
+   "kind": "french"
+  },
+  {
+   "label": "Tory Burch",
+   "qid": "Q2945547",
+   "fame": 0.506,
+   "country": "United States",
+   "description": "American fashion designer, businesswoman, and philanthropist",
+   "hook": null,
+   "known": 0.3,
+   "kind": "american"
+  },
+  {
+   "label": "Michael Kors",
+   "qid": "Q717618",
+   "fame": 0.503,
+   "country": "United States",
+   "description": "American fashion designer (born 1959)",
+   "hook": "is a longtime judge on Project Runway and sells handbags marked with his initials",
+   "known": 0.6,
+   "kind": "american"
+  },
+  {
+   "label": "Miuccia Prada",
+   "qid": "Q242342",
+   "fame": 0.488,
+   "country": "Italy",
+   "description": "Italian fashion designer and entrepreneur",
+   "hook": "turned her grandfather's luggage business into a luxury house famed for a black nylon backpack",
+   "known": 0.5,
+   "kind": "italian"
+  },
+  {
+   "label": "Halston",
+   "qid": "Q456243",
+   "fame": 0.482,
+   "country": "United States",
+   "description": "American fashion designer (1932-1990)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "american"
+  },
+  {
+   "label": "Louis Vuitton",
+   "qid": "Q277616",
+   "fame": 0.475,
+   "country": "France",
+   "description": "French fashion designer and businessman (1821–1892)",
+   "hook": "made travel trunks whose checkered, monogrammed canvas became a luxury status symbol",
+   "known": 0.6,
+   "kind": "french"
+  },
+  {
+   "label": "Edith Head",
+   "qid": "Q234961",
+   "fame": 0.474,
+   "country": "United States",
+   "description": "American film and television costumer (1897-1981)",
+   "hook": null,
+   "known": 0.15,
+   "kind": "american"
+  },
+  {
+   "label": "Rachel Zoe",
+   "qid": "Q289089",
+   "fame": 0.473,
+   "country": "United States",
+   "description": "American fashion stylist",
+   "hook": null,
+   "known": 0.3,
+   "kind": "american"
+  },
+  {
+   "label": "Narciso Rodriguez",
+   "qid": "Q1775942",
+   "fame": 0.468,
+   "country": "United States",
+   "description": "American Fashion Designer",
+   "hook": null,
+   "known": 0.1,
+   "kind": "american"
+  },
+  {
+   "label": "Cristóbal Balenciaga",
+   "qid": "Q381088",
+   "fame": 0.462,
+   "country": "Spain",
+   "description": "Spanish fashion designer (1895-1972)",
+   "hook": null,
+   "known": 0.3,
+   "kind": "spanish"
+  },
+  {
+   "label": "Philipp Plein",
+   "qid": "Q73234",
+   "fame": 0.461,
+   "country": "Germany",
+   "description": "German fashion designer",
+   "hook": null,
+   "known": 0.1,
+   "kind": "german"
+  },
+  {
+   "label": "Donna Karan",
+   "qid": "Q464497",
+   "fame": 0.458,
+   "country": "United States",
+   "description": "American fashion designer (born 1948)",
+   "hook": "created the DKNY label and a capsule collection of seven easy pieces",
+   "known": 0.4,
+   "kind": "american"
+  },
+  {
+   "label": "Hedi Slimane",
+   "qid": "Q558",
+   "fame": 0.452,
+   "country": "France",
+   "description": "French Tunisian fashion designer (born 1968)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "french"
+  }
+ ]
+}

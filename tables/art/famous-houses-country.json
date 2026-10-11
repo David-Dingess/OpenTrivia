@@ -1,0 +1,292 @@
+{
+ "id": "table.art.famous-houses-country",
+ "kind": "table",
+ "title": "Famous Houses & Mansions: their country",
+ "genre": "arts-entertainment",
+ "category": "art",
+ "topic": "famous-homes",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { VALUES ?cls { wd:Q16560 wd:Q1802963 wd:Q1076486 wd:Q1055891 } ?item wdt:P31 ?cls ; wdt:P17 ?c ; wikibase:sitelinks ?sl . FILTER(?sl >= 20) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T02:48:42.184Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T02:48:42.184Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "house",
+  "many": "houses",
+  "wildcard": "place",
+  "theLabels": [
+   "White House",
+   "Palace of Versailles",
+   "Forbidden City",
+   "Alhambra",
+   "Palace of the Parliament",
+   "Winter Palace",
+   "Apostolic Palace",
+   "Tuileries Palace",
+   "Royal Palace of Madrid",
+   "Reales Alcázares",
+   "Royal Pavilion"
+  ],
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each house to its country.",
+    "odd": "Three of these houses are in {value}. Which one isn't?",
+    "all": "Tap all {n} houses in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "White House",
+   "qid": "Q35525",
+   "fame": 0.642,
+   "country": "United States",
+   "description": "official residence and office of the President of the United States",
+   "hook": "serves as the home and workplace of the U.S. president in Washington, D.C",
+   "known": 0.95,
+   "kind": "palace"
+  },
+  {
+   "label": "Neuschwanstein Castle",
+   "qid": "Q4152",
+   "fame": 0.616,
+   "country": "Germany",
+   "description": "castle in Bavaria, Germany, Europe",
+   "hook": "is a fairytale hilltop fortress in the Alps that inspired the Disney logo",
+   "known": 0.8,
+   "kind": "castle"
+  },
+  {
+   "label": "Palace of Versailles",
+   "qid": "Q2946",
+   "fame": 0.605,
+   "country": "France",
+   "description": "palace in Versailles, France and location of the Museum of the History of France",
+   "hook": "was the lavish home of the Sun King and is famed for its Hall of Mirrors",
+   "known": 0.95,
+   "kind": "palace"
+  },
+  {
+   "label": "Forbidden City",
+   "qid": "Q80290",
+   "fame": 0.603,
+   "country": "China",
+   "description": "Chinese imperial palace in Beijing",
+   "hook": "was the vast walled home of emperors in Beijing, beside Tiananmen Square",
+   "known": 0.8,
+   "kind": "palace"
+  },
+  {
+   "label": "Alhambra",
+   "qid": "Q47476",
+   "fame": 0.598,
+   "country": "Spain",
+   "description": "palace and fortress complex in Granada, Andalusia, Spain",
+   "hook": "is a hilltop Moorish fortress-palace with ornate courtyards and the Court of the Lions",
+   "known": 0.6,
+   "kind": "palace"
+  },
+  {
+   "label": "Windsor Castle",
+   "qid": "Q42646",
+   "fame": 0.588,
+   "country": "United Kingdom",
+   "description": "historic castle, royal residence at Windsor in Berkshire, England, UK",
+   "hook": "is the oldest continuously occupied fortress home of the monarch, west of London",
+   "known": 0.8,
+   "kind": "castle"
+  },
+  {
+   "label": "The Crystal Palace",
+   "qid": "Q202902",
+   "fame": 0.575,
+   "country": "United Kingdom",
+   "description": "former building originally in Hyde Park, London, 1854 relocated to Bromley, South London",
+   "hook": "was a giant glass-and-iron hall built for the Great Exhibition and later lost to fire",
+   "known": 0.4,
+   "kind": "palace"
+  },
+  {
+   "label": "Graceland",
+   "qid": "Q545360",
+   "fame": 0.543,
+   "country": "United States",
+   "description": "mansion in Memphis, Tennessee, United States; former residence of Elvis Presley",
+   "hook": "was the Memphis mansion home of the King of Rock and Roll, now a museum",
+   "known": 0.6,
+   "kind": "house"
+  },
+  {
+   "label": "Clarence House",
+   "qid": "Q565521",
+   "fame": 0.542,
+   "country": "United Kingdom",
+   "description": "official residence of king Charles III, and his wife Camilla",
+   "hook": "is the London residence linked to the Queen Mother and later to the current king",
+   "known": 0.4,
+   "kind": "residence"
+  },
+  {
+   "label": "Kensington Palace",
+   "qid": "Q207385",
+   "fame": 0.53,
+   "country": "United Kingdom",
+   "description": "royal residence set in Kensington Gardens, London, England, UK",
+   "hook": "is the London home where Princess Diana lived and where William and Kate have lived",
+   "known": 0.4,
+   "kind": "palace"
+  },
+  {
+   "label": "Topkapı Palace",
+   "qid": "Q170495",
+   "fame": 0.514,
+   "country": "Turkey",
+   "description": "palace museum in Istanbul, Turkey",
+   "hook": "was the Ottoman sultans' Bosphorus-side home, now a museum holding the Spoonmaker's Diamond",
+   "known": 0.4,
+   "kind": "palace"
+  },
+  {
+   "label": "Palace of the Parliament",
+   "qid": "Q164150",
+   "fame": 0.508,
+   "country": "Romania",
+   "description": "multi-purpose building in Romania",
+   "hook": "is often called the heaviest and one of the largest administrative buildings in the world",
+   "known": 0.2,
+   "kind": "palace"
+  },
+  {
+   "label": "Winter Palace",
+   "qid": "Q182147",
+   "fame": 0.507,
+   "country": "Russia",
+   "description": "former imperial palace in Saint Petersburg, Russia",
+   "hook": "was the home of the tsars and houses the Hermitage Museum",
+   "known": 0.6,
+   "kind": "palace"
+  },
+  {
+   "label": "Hampton Court Palace",
+   "qid": "Q205666",
+   "fame": 0.505,
+   "country": "United Kingdom",
+   "description": "historic royal palace in Richmond, Greater London",
+   "hook": "was a favorite of Henry VIII and is known for its famous hedge maze",
+   "known": 0.4,
+   "kind": "palace"
+  },
+  {
+   "label": "Apostolic Palace",
+   "qid": "Q145093",
+   "fame": 0.48,
+   "country": "Vatican City",
+   "description": "official residence of the Pope in Vatican City",
+   "hook": "is the papal residence next to St. Peter's Basilica and the Sistine Chapel",
+   "known": 0.4,
+   "kind": "palace"
+  },
+  {
+   "label": "Hawa Mahal",
+   "qid": "Q836531",
+   "fame": 0.474,
+   "country": "India",
+   "description": "palace in Jaipur, Rajasthan, India",
+   "hook": "is the pink sandstone Palace of Winds with hundreds of small latticed windows",
+   "known": 0.2,
+   "kind": "palace"
+  },
+  {
+   "label": "Gyeongbokgung",
+   "qid": "Q482485",
+   "fame": 0.471,
+   "country": "South Korea",
+   "description": "palace in Seoul, South Korea",
+   "hook": "is the largest of the Joseon dynasty's royal residences, with a guarded gate ceremony",
+   "known": 0.2,
+   "kind": "palace"
+  },
+  {
+   "label": "Holyrood Palace",
+   "qid": "Q505950",
+   "fame": 0.466,
+   "country": "United Kingdom",
+   "description": "official residence of the British monarch in Scotland",
+   "hook": "is the King's official residence in Edinburgh, once home to Mary, Queen of Scots",
+   "known": 0.2,
+   "kind": "palace"
+  },
+  {
+   "label": "Royal Palace of Madrid",
+   "qid": "Q171517",
+   "fame": 0.465,
+   "country": "Spain",
+   "description": "official residence of the Spanish Royal Family",
+   "hook": "is the largest of its kind in Europe by floor area, yet is used only for state ceremonies",
+   "known": 0.4,
+   "kind": "palace"
+  },
+  {
+   "label": "Hofburg Palace",
+   "qid": "Q46242",
+   "fame": 0.463,
+   "country": "Austria",
+   "description": "palace located in Vienna, Austria",
+   "hook": "was the winter home of the Habsburg emperors and is now home to the Spanish Riding School",
+   "known": 0.2,
+   "kind": "palace"
+  },
+  {
+   "label": "Dolmabahçe Palace",
+   "qid": "Q274141",
+   "fame": 0.461,
+   "country": "Turkey",
+   "description": "palace in Istanbul, Turkey",
+   "hook": "is an opulent Ottoman residence on the Bosphorus where Atatürk died",
+   "known": 0.2,
+   "kind": "palace"
+  },
+  {
+   "label": "Royal Pavilion",
+   "qid": "Q62364",
+   "fame": 0.455,
+   "country": "United Kingdom",
+   "description": "former royal residence located in Brighton, England, United Kingdom",
+   "hook": "is a seaside retreat with onion domes and minarets in an Indian-inspired style",
+   "known": 0.2,
+   "kind": "residence"
+  }
+ ]
+}

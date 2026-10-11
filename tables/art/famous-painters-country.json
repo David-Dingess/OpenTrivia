@@ -1,0 +1,810 @@
+{
+ "id": "table.art.famous-painters-country",
+ "kind": "table",
+ "title": "Famous painters and the country they were born in",
+ "genre": "arts-entertainment",
+ "category": "art",
+ "topic": "painters",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) WHERE { ?item wdt:P106 wd:Q1028181 . ?item wikibase:sitelinks ?sl . FILTER(?sl >= 45) ?item wdt:P19 ?pl . ?pl wdt:P17 ?c . } GROUP BY ?item HAVING(COUNT(DISTINCT ?c) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T14:29:38.706Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T14:29:38.706Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Born in",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "painter",
+  "many": "painters",
+  "wildcard": "person",
+  "hookAsk": "Which painter {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country was {label} born in?",
+    "statement": "{label} was born in {value}.",
+    "match": "Match each painter to the country they were born in.",
+    "odd": "Three of these painters were born in {value}. Which one wasn't?",
+    "all": "Tap all {n} painters born in {value}.",
+    "reverse": "Which of these painters was born in {value}?"
+   }
+  },
+  "exclude": [
+   {
+    "qid": "Q160149",
+    "why": "Rothko: American painter born in Latvia; country is contested"
+   },
+   {
+    "qid": "Q61064",
+    "why": "Kandinsky: Russian-born, worked in Germany and France; country is muddled"
+   },
+   {
+    "qid": "Q154340",
+    "why": "Bacon: Irish-born but known as a British painter"
+   },
+   {
+    "qid": "Q93284",
+    "why": "Chagall: born in the Russian Empire, now Belarus; country is disputed"
+   },
+   {
+    "qid": "Q146691",
+    "why": "Mucha: born in Austria-Hungary, now Czechia"
+   },
+   {
+    "qid": "Q44007",
+    "why": "Klee: German-Swiss; born in Switzerland but known as German"
+   },
+   {
+    "qid": "Q150312",
+    "why": "Sher-Gil: Hungarian-Indian; country is muddled"
+   },
+   {
+    "qid": "Q172911",
+    "why": "Repin: Russian-empire painter born in what is now Ukraine"
+   },
+   {
+    "qid": "Q301",
+    "why": "El Greco: born on Crete, worked in Spain; country is muddled"
+   }
+  ]
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Frida Kahlo",
+   "qid": "Q5588",
+   "fame": 0.716,
+   "country": "Mexico",
+   "description": "Mexican painter (1907–1954)",
+   "hook": "paints vivid, unflinching self-portraits, often with her signature unibrow and pain on display",
+   "known": 0.6,
+   "kind": "modern painter"
+  },
+  {
+   "label": "Vincent van Gogh",
+   "qid": "Q5582",
+   "fame": 0.714,
+   "country": "Netherlands",
+   "description": "Dutch painter (1853–1890)",
+   "hook": "painted swirling night skies and sunflowers, and famously cut off part of his own ear",
+   "known": 0.95,
+   "kind": "post-impressionist"
+  },
+  {
+   "label": "Yayoi Kusama",
+   "qid": "Q231121",
+   "fame": 0.708,
+   "country": "Japan",
+   "description": "Japanese artist (1929–2026)",
+   "hook": "covers rooms, pumpkins and canvases in endless polka dots",
+   "known": 0.4,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Andy Warhol",
+   "qid": "Q5603",
+   "fame": 0.705,
+   "country": "United States",
+   "description": "American artist, film director, and producer (1928–1987)",
+   "hook": "turned soup cans and celebrity faces into pop art silkscreens",
+   "known": 0.8,
+   "kind": "pop artist"
+  },
+  {
+   "label": "Pablo Picasso",
+   "qid": "Q5593",
+   "fame": 0.701,
+   "country": "Spain",
+   "description": "Spanish painter and sculptor (1881–1973)",
+   "hook": "co-founded Cubism and painted a huge anti-war mural about a bombed town",
+   "known": 0.95,
+   "kind": "modern master"
+  },
+  {
+   "label": "Michelangelo",
+   "qid": "Q5592",
+   "fame": 0.669,
+   "country": "Italy",
+   "description": "Italian artist and architect (1475-1564)",
+   "hook": "painted the Sistine Chapel ceiling and carved a giant marble statue of a biblical hero",
+   "known": 0.95,
+   "kind": "renaissance master"
+  },
+  {
+   "label": "Salvador Dalí",
+   "qid": "Q5577",
+   "fame": 0.666,
+   "country": "Spain",
+   "description": "Spanish artist (1904–1989)",
+   "hook": "painted melting clocks and was known for a waxed, upturned mustache",
+   "known": 0.8,
+   "kind": "surrealist"
+  },
+  {
+   "label": "Claude Monet",
+   "qid": "Q296",
+   "fame": 0.624,
+   "country": "France",
+   "description": "French painter (1840–1926)",
+   "hook": "painted water lilies and a harbor sunrise that gave Impressionism its name",
+   "known": 0.95,
+   "kind": "impressionist"
+  },
+  {
+   "label": "William Blake",
+   "qid": "Q41513",
+   "fame": 0.613,
+   "country": "United Kingdom",
+   "description": "English poet and artist (1757–1827)",
+   "hook": "wrote and illustrated visionary books of poems, including one about a fearsome tiger",
+   "known": 0.4,
+   "kind": "romantic"
+  },
+  {
+   "label": "Caravaggio",
+   "qid": "Q42207",
+   "fame": 0.61,
+   "country": "Italy",
+   "description": "Italian painter (1571–1610)",
+   "hook": "used dramatic light and shadow in gritty, realistic scenes, and lived as a brawler on the run",
+   "known": 0.6,
+   "kind": "baroque"
+  },
+  {
+   "label": "Jackson Pollock",
+   "qid": "Q37571",
+   "fame": 0.608,
+   "country": "United States",
+   "description": "American painter (1912–1956)",
+   "hook": "dripped and splashed paint onto canvases laid out on the floor",
+   "known": 0.6,
+   "kind": "abstract expressionist"
+  },
+  {
+   "label": "Rembrandt",
+   "qid": "Q5598",
+   "fame": 0.607,
+   "country": "Netherlands",
+   "description": "Dutch painter and printmaker (1606–1669)",
+   "hook": "painted a famous militia group scene and a long series of self-portraits",
+   "known": 0.95,
+   "kind": "baroque master"
+  },
+  {
+   "label": "Hieronymus Bosch",
+   "qid": "Q130531",
+   "fame": 0.599,
+   "country": "Netherlands",
+   "description": "painters in art (1450–1516)",
+   "hook": "painted bizarre, monster-filled visions of heaven and hell, including a garden of earthly delights",
+   "known": 0.6,
+   "kind": "early netherlandish"
+  },
+  {
+   "label": "Francisco Goya",
+   "qid": "Q5432",
+   "fame": 0.594,
+   "country": "Spain",
+   "description": "Spanish painter and printmaker (1746–1828)",
+   "hook": "served as royal court painter, then made dark nightmare scenes like a giant devouring his son",
+   "known": 0.6,
+   "kind": "romantic"
+  },
+  {
+   "label": "Gustav Klimt",
+   "qid": "Q34661",
+   "fame": 0.593,
+   "country": "Austria",
+   "description": "Austrian symbolist painter (1862–1918)",
+   "hook": "painted shimmering gold-leaf works, including a famous golden embrace of two lovers",
+   "known": 0.6,
+   "kind": "symbolist"
+  },
+  {
+   "label": "Diego Rivera",
+   "qid": "Q171128",
+   "fame": 0.588,
+   "country": "Mexico",
+   "description": "Mexican muralist (1886–1957)",
+   "hook": "painted huge public murals about workers and history, and married a famous self-portrait artist",
+   "known": 0.6,
+   "kind": "muralist"
+  },
+  {
+   "label": "Georgia O'Keeffe",
+   "qid": "Q46408",
+   "fame": 0.584,
+   "country": "United States",
+   "description": "American modernist artist (1887–1986)",
+   "hook": "painted giant close-ups of flowers and bleached animal skulls in the desert",
+   "known": 0.6,
+   "kind": "modernist"
+  },
+  {
+   "label": "Raphael",
+   "qid": "Q5597",
+   "fame": 0.584,
+   "country": "Italy",
+   "description": "Italian painter and architect (1483–1520)",
+   "hook": "painted a gathering of ancient philosophers and graceful Madonnas for the Vatican",
+   "known": 0.95,
+   "kind": "renaissance master"
+  },
+  {
+   "label": "Edvard Munch",
+   "qid": "Q41406",
+   "fame": 0.574,
+   "country": "Norway",
+   "description": "Norwegian painter (1863–1944)",
+   "hook": "painted a figure shrieking beneath a blood-red sky",
+   "known": 0.8,
+   "kind": "expressionist"
+  },
+  {
+   "label": "Mark Rothko",
+   "qid": "Q160149",
+   "fame": 0.571,
+   "country": "Latvia",
+   "description": "American painter of Latvian-Jewish descent (1903–1970)",
+   "hook": "painted huge, glowing blocks of color that seem to hover on the canvas",
+   "known": 0.4,
+   "kind": "abstract expressionist"
+  },
+  {
+   "label": "David Hockney",
+   "qid": "Q159907",
+   "fame": 0.569,
+   "country": "United Kingdom",
+   "description": "painter, printmaker, set designer, photographer (1937–2026)",
+   "hook": "painted sunny swimming pools and splashy scenes of life in Los Angeles",
+   "known": 0.6,
+   "kind": "contemporary"
+  },
+  {
+   "label": "Henri Matisse",
+   "qid": "Q5589",
+   "fame": 0.569,
+   "country": "France",
+   "description": "French artist (1869–1954)",
+   "hook": "led the Fauves with wild color and made bold paper cut-outs late in life",
+   "known": 0.8,
+   "kind": "fauvist"
+  },
+  {
+   "label": "Paul Gauguin",
+   "qid": "Q37693",
+   "fame": 0.568,
+   "country": "France",
+   "description": "French painter and printmaker (1848–1903)",
+   "hook": "left Europe to paint vivid, colorful scenes of island life in Tahiti",
+   "known": 0.8,
+   "kind": "post-impressionist"
+  },
+  {
+   "label": "Henri de Toulouse-Lautrec",
+   "qid": "Q82445",
+   "fame": 0.564,
+   "country": "France",
+   "description": "French painter and illustrator (1864–1901)",
+   "hook": "made posters and paintings of cabaret life in Montmartre, including the Moulin Rouge",
+   "known": 0.6,
+   "kind": "impressionist"
+  },
+  {
+   "label": "Wassily Kandinsky",
+   "qid": "Q61064",
+   "fame": 0.564,
+   "country": "Russia",
+   "description": "avant-garde painter of Russian origin (1866–1944)",
+   "hook": "pioneered fully abstract painting, inspired by music and color",
+   "known": 0.6,
+   "kind": "abstract"
+  },
+  {
+   "label": "Pierre-Auguste Renoir",
+   "qid": "Q39931",
+   "fame": 0.559,
+   "country": "France",
+   "description": "French painter and sculptor (1841–1919)",
+   "hook": "painted sunlit, soft-edged scenes of Parisian parties and bathers",
+   "known": 0.8,
+   "kind": "impressionist"
+  },
+  {
+   "label": "Albrecht Dürer",
+   "qid": "Q5580",
+   "fame": 0.558,
+   "country": "Germany",
+   "description": "German painter, printmaker, mathematician, and theorist (1471-1528)",
+   "hook": "made famous detailed prints, including a rhinoceros and a pair of praying hands",
+   "known": 0.6,
+   "kind": "renaissance"
+  },
+  {
+   "label": "Jan van Eyck",
+   "qid": "Q102272",
+   "fame": 0.557,
+   "country": "Belgium",
+   "description": "Flemish painter (c.1390–1441)",
+   "hook": "painted a double portrait with a tiny convex mirror and perfected oil painting detail",
+   "known": 0.6,
+   "kind": "early netherlandish"
+  },
+  {
+   "label": "Johannes Vermeer",
+   "qid": "Q41264",
+   "fame": 0.556,
+   "country": "Netherlands",
+   "description": "Dutch painter (1632–1675)",
+   "hook": "painted quiet household scenes, including a girl wearing a pearl earring",
+   "known": 0.8,
+   "kind": "baroque"
+  },
+  {
+   "label": "J. M. W. Turner",
+   "qid": "Q159758",
+   "fame": 0.554,
+   "country": "United Kingdom",
+   "description": "English painter and draftsman (c.1775–1851)",
+   "hook": "painted stormy, glowing seascapes, including an old warship being towed to its last berth",
+   "known": 0.6,
+   "kind": "romantic"
+  },
+  {
+   "label": "M. C. Escher",
+   "qid": "Q1470",
+   "fame": 0.551,
+   "country": "Netherlands",
+   "description": "Dutch graphic artist (1898–1972)",
+   "hook": "made impossible staircases and interlocking patterns that loop endlessly",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "René Magritte",
+   "qid": "Q7836",
+   "fame": 0.548,
+   "country": "Belgium",
+   "description": "Belgian surrealist (1898–1967)",
+   "hook": "painted a pipe labeled as not a pipe and men in bowler hats with apples for faces",
+   "known": 0.6,
+   "kind": "surrealist"
+  },
+  {
+   "label": "Peter Paul Rubens",
+   "qid": "Q5599",
+   "fame": 0.546,
+   "country": "Germany",
+   "description": "Flemish painter (1577–1640)",
+   "hook": "painted lush, dramatic Baroque scenes of full-figured people and also worked as a diplomat",
+   "known": 0.6,
+   "kind": "baroque"
+  },
+  {
+   "label": "Piet Mondrian",
+   "qid": "Q151803",
+   "fame": 0.542,
+   "country": "Netherlands",
+   "description": "Dutch painter (1872–1944)",
+   "hook": "painted grids of black lines filled with blocks of red, yellow and blue",
+   "known": 0.8,
+   "kind": "abstract"
+  },
+  {
+   "label": "Francis Bacon",
+   "qid": "Q154340",
+   "fame": 0.539,
+   "country": "Ireland",
+   "description": "Irish-born British figurative painter (1909–1992)",
+   "hook": "painted raw, distorted screaming figures, often in three-panel works",
+   "known": 0.4,
+   "kind": "figurative"
+  },
+  {
+   "label": "Sandro Botticelli",
+   "qid": "Q5669",
+   "fame": 0.537,
+   "country": "Italy",
+   "description": "Italian painter (1445–1510)",
+   "hook": "painted a goddess rising from the sea on a giant shell",
+   "known": 0.95,
+   "kind": "renaissance master"
+  },
+  {
+   "label": "John Singer Sargent",
+   "qid": "Q155626",
+   "fame": 0.536,
+   "country": "Italy",
+   "description": "American painter (1856–1925)",
+   "hook": "was a society portraitist whose portrait of a woman in a black gown caused a scandal",
+   "known": 0.4,
+   "kind": "portraitist"
+  },
+  {
+   "label": "Paul Cézanne",
+   "qid": "Q35548",
+   "fame": 0.536,
+   "country": "France",
+   "description": "French painter (1839–1906)",
+   "hook": "painted still lifes of apples and a favorite mountain, paving the way for Cubism",
+   "known": 0.8,
+   "kind": "post-impressionist"
+  },
+  {
+   "label": "Raja Ravi Varma",
+   "qid": "Q333453",
+   "fame": 0.535,
+   "country": "India",
+   "description": "Indian painter from Kerala (1848–1906)",
+   "hook": "painted Hindu gods and epic heroes in a realistic European style and spread them as prints",
+   "known": 0.05,
+   "kind": "romantic"
+  },
+  {
+   "label": "Katsushika Hokusai",
+   "qid": "Q5586",
+   "fame": 0.534,
+   "country": "Japan",
+   "description": "Japanese artist (1760-1849)",
+   "hook": "created a towering ocean wave with a small Mount Fuji behind it",
+   "known": 0.8,
+   "kind": "ukiyo-e"
+  },
+  {
+   "label": "Marc Chagall",
+   "qid": "Q93284",
+   "fame": 0.534,
+   "country": "Belarus",
+   "description": "Belarusian-French artist (1887–1985)",
+   "hook": "painted dreamy scenes of floating lovers and fiddlers over village rooftops",
+   "known": 0.6,
+   "kind": "surrealist"
+  },
+  {
+   "label": "Artemisia Gentileschi",
+   "qid": "Q212657",
+   "fame": 0.532,
+   "country": "Italy",
+   "description": "Italian Baroque painter (1593-1651)",
+   "hook": "painted powerful biblical heroines, notably a woman overpowering a general",
+   "known": 0.4,
+   "kind": "baroque"
+  },
+  {
+   "label": "James McNeill Whistler",
+   "qid": "Q203643",
+   "fame": 0.531,
+   "country": "United States",
+   "description": "American painter (1834-1903)",
+   "hook": "painted a portrait of his mother, titled as an arrangement in grey and black",
+   "known": 0.4,
+   "kind": "portraitist"
+  },
+  {
+   "label": "Egon Schiele",
+   "qid": "Q44032",
+   "fame": 0.53,
+   "country": "Austria",
+   "description": "Austrian painter (1890-1918)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "expressionist"
+  },
+  {
+   "label": "Jacques-Louis David",
+   "qid": "Q83155",
+   "fame": 0.523,
+   "country": "France",
+   "description": "French painter (1748–1825)",
+   "hook": "painted heroic scenes, including a general crossing a mountain pass on a rearing horse",
+   "known": 0.4,
+   "kind": "neoclassical"
+  },
+  {
+   "label": "Alphonse Mucha",
+   "qid": "Q146691",
+   "fame": 0.52,
+   "country": "Czech Republic",
+   "description": "Czech painter, illustrator and graphic artist (1860–1939)",
+   "hook": "made flowing Art Nouveau posters of women framed by flowers",
+   "known": 0.6,
+   "kind": "art nouveau"
+  },
+  {
+   "label": "Pieter Brueghel the Elder",
+   "qid": "Q43270",
+   "fame": 0.519,
+   "country": "Netherlands",
+   "description": "Flemish painter (1526–1569)",
+   "hook": "painted busy peasant festivals and a towering unfinished-looking Babel",
+   "known": 0.6,
+   "kind": "renaissance"
+  },
+  {
+   "label": "Edgar Degas",
+   "qid": "Q46373",
+   "fame": 0.515,
+   "country": "France",
+   "description": "French Impressionist artist (1834–1917)",
+   "hook": "painted ballet dancers in rehearsal and backstage",
+   "known": 0.8,
+   "kind": "impressionist"
+  },
+  {
+   "label": "Georges Seurat",
+   "qid": "Q34013",
+   "fame": 0.515,
+   "country": "France",
+   "description": "French painter (1859-1891)",
+   "hook": "painted with tiny dots of color, including a Sunday afternoon on a park island",
+   "known": 0.6,
+   "kind": "post-impressionist"
+  },
+  {
+   "label": "Titian",
+   "qid": "Q47551",
+   "fame": 0.514,
+   "country": "Italy",
+   "description": "Italian painter (c.1490–1576)",
+   "hook": "was a Venetian master famed for rich red tones and portraits of emperors and kings",
+   "known": 0.6,
+   "kind": "renaissance"
+  },
+  {
+   "label": "Gustave Doré",
+   "qid": "Q6682",
+   "fame": 0.512,
+   "country": "France",
+   "description": "French illustrator and painter (1832–1883)",
+   "hook": "illustrated Dante's Inferno and the Bible with dramatic engravings",
+   "known": 0.4,
+   "kind": "romantic"
+  },
+  {
+   "label": "Édouard Manet",
+   "qid": "Q40599",
+   "fame": 0.511,
+   "country": "France",
+   "description": "French painter (1832–1883)",
+   "hook": "bridged realism and Impressionism with a barmaid scene at the Folies-Bergere",
+   "known": 0.6,
+   "kind": "impressionist"
+  },
+  {
+   "label": "Amedeo Modigliani",
+   "qid": "Q120993",
+   "fame": 0.51,
+   "country": "Italy",
+   "description": "Italian painter and sculptor (1884–1920)",
+   "hook": "painted portraits with elongated necks and blank almond-shaped eyes",
+   "known": 0.6,
+   "kind": "modern"
+  },
+  {
+   "label": "Hans Holbein the Younger",
+   "qid": "Q48319",
+   "fame": 0.505,
+   "country": "Germany",
+   "description": "German artist and printmaker (1497–1543)",
+   "hook": "painted Henry VIII's court and a portrait with a hidden stretched skull",
+   "known": 0.4,
+   "kind": "renaissance"
+  },
+  {
+   "label": "Joan Miró",
+   "qid": "Q152384",
+   "fame": 0.504,
+   "country": "Spain",
+   "description": "Spanish painter, sculptor, and ceramicist (1893–1983)",
+   "hook": "painted playful, dreamlike stars, eyes and squiggles in bright primary colors",
+   "known": 0.6,
+   "kind": "surrealist"
+  },
+  {
+   "label": "Diego Velázquez",
+   "qid": "Q297",
+   "fame": 0.503,
+   "country": "Spain",
+   "description": "Spanish painter (1599–1660)",
+   "hook": "painted a royal princess with her attendants and the artist himself at an easel",
+   "known": 0.95,
+   "kind": "baroque master"
+  },
+  {
+   "label": "El Greco",
+   "qid": "Q301",
+   "fame": 0.501,
+   "country": "Greece",
+   "description": "Greek artist, painter, sculptor and architect (1541–1614)",
+   "hook": "painted stretched, flame-like figures beneath twisting skies",
+   "known": 0.8,
+   "kind": "mannerist"
+  },
+  {
+   "label": "Max Ernst",
+   "qid": "Q154842",
+   "fame": 0.495,
+   "country": "Germany",
+   "description": "German artist (1891–1976)",
+   "hook": "was a Surrealist pioneer of collage and rubbing textures from objects",
+   "known": 0.4,
+   "kind": "surrealist"
+  },
+  {
+   "label": "Mary Cassatt",
+   "qid": "Q173223",
+   "fame": 0.492,
+   "country": "United States",
+   "description": "American painter and printmaker (1844—1926)",
+   "hook": "painted intimate scenes of mothers and children and exhibited with the Impressionists",
+   "known": 0.4,
+   "kind": "impressionist"
+  },
+  {
+   "label": "Caspar David Friedrich",
+   "qid": "Q104884",
+   "fame": 0.491,
+   "country": "Germany",
+   "description": "German Romantic landscape painter (1774–1840)",
+   "hook": "painted a lone wanderer gazing over a sea of fog",
+   "known": 0.4,
+   "kind": "romantic"
+  },
+  {
+   "label": "Paul Klee",
+   "qid": "Q44007",
+   "fame": 0.488,
+   "country": "Switzerland",
+   "description": "German-Swiss artist (1879–1940)",
+   "hook": "taught at the Bauhaus school and drew whimsical figures like a twittering machine",
+   "known": 0.4,
+   "kind": "abstract"
+  },
+  {
+   "label": "Dante Gabriel Rossetti",
+   "qid": "Q186748",
+   "fame": 0.485,
+   "country": "United Kingdom",
+   "description": "English poet, illustrator, painter, and translator (1828-1882)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "romantic"
+  },
+  {
+   "label": "Giotto",
+   "qid": "Q7814",
+   "fame": 0.483,
+   "country": "Italy",
+   "description": "Italian painter and architect (c. 1267–1337)",
+   "hook": "frescoed a chapel in Padua, helping break painting free of stiff medieval style",
+   "known": 0.4,
+   "kind": "early renaissance"
+  },
+  {
+   "label": "Eugène Delacroix",
+   "qid": "Q33477",
+   "fame": 0.481,
+   "country": "France",
+   "description": "French painter (1798–1863)",
+   "hook": "painted a flag-waving woman leading a crowd over a barricade in a revolution scene",
+   "known": 0.4,
+   "kind": "romantic"
+  },
+  {
+   "label": "Gustave Courbet",
+   "qid": "Q34618",
+   "fame": 0.469,
+   "country": "France",
+   "description": "French painter (1819–1877)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "realist"
+  },
+  {
+   "label": "Amrita Sher-Gil",
+   "qid": "Q150312",
+   "fame": 0.468,
+   "country": "Hungary",
+   "description": "Hungarian-Indian painter (1913–1941)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "modern"
+  },
+  {
+   "label": "Fernando Botero",
+   "qid": "Q272877",
+   "fame": 0.468,
+   "country": "Colombia",
+   "description": "Colombian painter and sculptor (1932–2023)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "modern"
+  },
+  {
+   "label": "Ilya Repin",
+   "qid": "Q172911",
+   "fame": 0.466,
+   "country": "Ukraine",
+   "description": "Russian-empire painter of Ukrainian birth (1844-1930)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "realist"
+  },
+  {
+   "label": "William-Adolphe Bouguereau",
+   "qid": "Q483992",
+   "fame": 0.466,
+   "country": "France",
+   "description": "French academic painter (1825–1905)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "academic"
+  },
+  {
+   "label": "Giuseppe Arcimboldo",
+   "qid": "Q7751",
+   "fame": 0.454,
+   "country": "Italy",
+   "description": "Italian painter of the late Renaissance (1527–1593)",
+   "hook": "painted portraits made entirely of fruit, vegetables and flowers",
+   "known": 0.6,
+   "kind": "renaissance"
+  },
+  {
+   "label": "John Constable",
+   "qid": "Q159297",
+   "fame": 0.452,
+   "country": "United Kingdom",
+   "description": "English painter (1776-1837)",
+   "hook": "painted peaceful rural scenes, including a horse-drawn hay cart crossing a stream",
+   "known": 0.4,
+   "kind": "romantic"
+  }
+ ]
+}

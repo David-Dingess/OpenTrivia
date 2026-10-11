@@ -1,0 +1,248 @@
+{
+ "id": "table.biology.venomous-animals",
+ "kind": "table",
+ "title": "Venomous animals: where each one lives",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "wildlife",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { VALUES ?item { wd:Q48186 wd:Q188690 wd:Q72934 wd:Q2321476 wd:Q306908 wd:Q744532 wd:Q222287 wd:Q1417249 wd:Q1248772 wd:Q905354 wd:Q371183 wd:Q330548 wd:Q893048 wd:Q192754 wd:Q244377 wd:Q1520949 wd:Q4661821 wd:Q284352 wd:Q82544 wd:Q666300 wd:Q207058 wd:Q4504 wd:Q15343 wd:Q121791 wd:Q301084 wd:Q1454860 wd:Q622805 wd:Q40581 wd:Q41165 wd:Q1513945 wd:Q113297 wd:Q1615145 wd:Q953286 wd:Q1366532 wd:Q1130416 wd:Q386619 wd:Q46112 wd:Q1142349 wd:Q617000 } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T18:28:36.828Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T18:28:36.828Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "origin",
+   "label": "Where it lives",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "venomous animal",
+  "many": "venomous animals",
+  "capitalise": true,
+  "columns": {
+   "origin": {
+    "role": "link",
+    "pick": "Where in the world does the {label} live in the wild?",
+    "statement": "The {label} lives in the wild in {value}.",
+    "match": "Match each venomous animal to where it lives in the wild.",
+    "reverse": "Which of these venomous animals lives in the wild in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Komodo dragon",
+   "qid": "Q4504",
+   "fame": 0.647,
+   "origin": "Asia",
+   "kind": "lizard",
+   "description": "species of reptile",
+   "hook": "is the largest living lizard in the world",
+   "known": 0.4
+  },
+  {
+   "label": "Platypus",
+   "qid": "Q15343",
+   "fame": 0.639,
+   "origin": "Oceania",
+   "kind": "mammal",
+   "description": "semi-aquatic egg-laying mammal endemic to Australia",
+   "hook": "is an egg-laying mammal with a duck-like bill and venomous spurs",
+   "known": 0.6
+  },
+  {
+   "label": "Brown recluse spider",
+   "qid": "Q284352",
+   "fame": 0.592,
+   "origin": "North America",
+   "kind": "spider",
+   "description": "spider with venomous bite native to US",
+   "hook": "has a violin-shaped marking and a bite that can damage skin",
+   "known": 0.5
+  },
+  {
+   "label": "King cobra",
+   "qid": "Q48186",
+   "fame": 0.592,
+   "origin": "Asia",
+   "kind": "snake",
+   "description": "species of reptile",
+   "hook": "is the longest venomous snake in the world",
+   "known": 0.7
+  },
+  {
+   "label": "Inland taipan",
+   "qid": "Q72934",
+   "fame": 0.588,
+   "origin": "Oceania",
+   "kind": "snake",
+   "description": "species of reptile",
+   "hook": null,
+   "known": 0.3
+  },
+  {
+   "label": "Asian giant hornet",
+   "qid": "Q121791",
+   "fame": 0.572,
+   "origin": "Asia",
+   "kind": "wasp",
+   "description": "species of insect",
+   "hook": "is the largest of its stinging insect family and caused alarm in the Pacific Northwest",
+   "known": 0.4
+  },
+  {
+   "label": "Black mamba",
+   "qid": "Q188690",
+   "fame": 0.55,
+   "origin": "Africa",
+   "kind": "snake",
+   "description": "species of reptile",
+   "hook": "is a fast, feared snake named for the inside of its mouth",
+   "known": 0.7
+  },
+  {
+   "label": "Gila monster",
+   "qid": "Q207058",
+   "fame": 0.548,
+   "origin": "North America",
+   "kind": "lizard",
+   "description": "species of venomous lizard from the southwestern United States and northwestern Mexico",
+   "hook": null,
+   "known": 0.35
+  },
+  {
+   "label": "Goliath birdeater",
+   "qid": "Q617000",
+   "fame": 0.548,
+   "origin": "South America",
+   "kind": "spider",
+   "description": "species of tarantula from South America",
+   "hook": null,
+   "known": 0.25
+  },
+  {
+   "label": "Russell's viper",
+   "qid": "Q330548",
+   "fame": 0.539,
+   "origin": "Asia",
+   "kind": "snake",
+   "description": "species of venomous snakes",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Cottonmouth",
+   "qid": "Q905354",
+   "fame": 0.529,
+   "origin": "North America",
+   "kind": "snake",
+   "description": "species of pit viper",
+   "hook": null,
+   "known": 0.35
+  },
+  {
+   "label": "Copperhead",
+   "qid": "Q1248772",
+   "fame": 0.519,
+   "origin": "North America",
+   "kind": "snake",
+   "description": "species of reptile",
+   "hook": null,
+   "known": 0.35
+  },
+  {
+   "label": "Eastern brown snake",
+   "qid": "Q306908",
+   "fame": 0.518,
+   "origin": "Oceania",
+   "kind": "snake",
+   "description": "species of reptile",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Gaboon viper",
+   "qid": "Q371183",
+   "fame": 0.507,
+   "origin": "Africa",
+   "kind": "snake",
+   "description": "species of snake",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "Indian cobra",
+   "qid": "Q192754",
+   "fame": 0.505,
+   "origin": "Asia",
+   "kind": "snake",
+   "description": "species of reptile",
+   "hook": "is the hooded snake famously swayed by charmers' flutes",
+   "known": 0.5
+  },
+  {
+   "label": "Boomslang",
+   "qid": "Q893048",
+   "fame": 0.487,
+   "origin": "Africa",
+   "kind": "snake",
+   "description": "species of snakes of genus Dispholidus in the family Lamprophiidae",
+   "hook": null,
+   "known": 0.15
+  },
+  {
+   "label": "Timber rattlesnake",
+   "qid": "Q1417249",
+   "fame": 0.483,
+   "origin": "North America",
+   "kind": "snake",
+   "description": "species of reptile",
+   "hook": null,
+   "known": 0.35
+  },
+  {
+   "label": "Tiger snake",
+   "qid": "Q1520949",
+   "fame": 0.476,
+   "origin": "Oceania",
+   "kind": "snake",
+   "description": "species of snake",
+   "hook": null,
+   "known": 0.15
+  },
+  {
+   "label": "Sydney funnel-web spider",
+   "qid": "Q4661821",
+   "fame": 0.473,
+   "origin": "Oceania",
+   "kind": "spider",
+   "description": "of arachnid",
+   "hook": "is a notoriously dangerous arachnid found around Australia's biggest harbour city",
+   "known": 0.5
+  }
+ ]
+}

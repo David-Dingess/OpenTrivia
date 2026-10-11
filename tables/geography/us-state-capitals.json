@@ -1,0 +1,560 @@
+{
+ "id": "table.geography.us-state-capitals",
+ "kind": "table",
+ "title": "US state capitals",
+ "genre": "society",
+ "category": "geography",
+ "topic": "capitals",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?capitalLabel WHERE { { SELECT ?item (SAMPLE(?cap) AS ?capital) (COUNT(DISTINCT ?cap) AS ?nCap) WHERE { ?item wdt:P31 wd:Q35657 ; wdt:P36 ?cap . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nCap = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T02:24:42.790Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T02:24:42.790Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "capital",
+   "label": "Capital",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "state",
+  "many": "states",
+  "wildcard": "place",
+  "hookAsk": "Which state {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "capital": {
+    "role": "code",
+    "pick": "What is the capital of {label}?",
+    "statement": "The capital of {label} is {value}.",
+    "match": "Match each state to its capital.",
+    "reverse": "Which state has {value} as its capital?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "California",
+   "qid": "Q99",
+   "fame": 0.739,
+   "capital": "Sacramento",
+   "description": "state of the United States of America",
+   "hook": "is the most populous in the nation and home to Hollywood, Silicon Valley and the Golden Gate Bridge",
+   "known": 0.8,
+   "kind": "west"
+  },
+  {
+   "label": "Hawaii",
+   "qid": "Q782",
+   "fame": 0.727,
+   "capital": "Honolulu",
+   "description": "state of the United States of America",
+   "hook": "is an island chain in the Pacific known for volcanoes, surfing and the luau",
+   "known": 0.7,
+   "kind": "west"
+  },
+  {
+   "label": "Texas",
+   "qid": "Q1439",
+   "fame": 0.704,
+   "capital": "Austin",
+   "description": "state of the United States of America",
+   "hook": "is the Lone Star state, famous for cowboys, the Alamo and big-sky ranch country",
+   "known": 0.8,
+   "kind": "south"
+  },
+  {
+   "label": "Alaska",
+   "qid": "Q797",
+   "fame": 0.694,
+   "capital": "Juneau",
+   "description": "state of the United States of America",
+   "hook": "is the largest in the nation by area, known for glaciers, grizzlies and the northern lights",
+   "known": 0.6,
+   "kind": "west"
+  },
+  {
+   "label": "New Mexico",
+   "qid": "Q1522",
+   "fame": 0.687,
+   "capital": "Santa Fe",
+   "description": "state of the United States of America",
+   "hook": "is a desert southwestern land known for adobe buildings, red chile and the Roswell UFO legend",
+   "known": 0.6,
+   "kind": "southwest"
+  },
+  {
+   "label": "Pennsylvania",
+   "qid": "Q1400",
+   "fame": 0.682,
+   "capital": "Harrisburg",
+   "description": "state of the United States of America",
+   "hook": "is the Keystone state, home of the Liberty Bell, Gettysburg and the Philly cheesesteak",
+   "known": 0.6,
+   "kind": "northeast"
+  },
+  {
+   "label": "Massachusetts",
+   "qid": "Q771",
+   "fame": 0.681,
+   "capital": "Boston",
+   "description": "state of the United States of America",
+   "hook": "is where the Pilgrims settled and the Tea Party tossed crates into the harbor, and it's home to Harvard",
+   "known": 0.8,
+   "kind": "northeast"
+  },
+  {
+   "label": "New York",
+   "qid": "Q1384",
+   "fame": 0.676,
+   "capital": "Albany",
+   "description": "state of the United States of America",
+   "hook": "is home to the Statue of Liberty, Niagara Falls and the Big Apple",
+   "known": 0.8,
+   "kind": "northeast"
+  },
+  {
+   "label": "Florida",
+   "qid": "Q812",
+   "fame": 0.67,
+   "capital": "Tallahassee",
+   "description": "state of the United States of America",
+   "hook": "is the Sunshine state, known for Disney World, orange groves, alligators and the Everglades",
+   "known": 0.6,
+   "kind": "south"
+  },
+  {
+   "label": "Washington",
+   "qid": "Q1223",
+   "fame": 0.662,
+   "capital": "Olympia",
+   "description": "state of the United States of America",
+   "hook": "is a rainy Pacific Northwest state, known for Seattle, coffee, Mount Rainier and Microsoft",
+   "known": 0.6,
+   "kind": "west"
+  },
+  {
+   "label": "New Jersey",
+   "qid": "Q1408",
+   "fame": 0.66,
+   "capital": "Trenton",
+   "description": "state of the United States of America",
+   "hook": "is the Garden state, known for its Atlantic boardwalk, the Meadowlands and a famous turnpike",
+   "known": 0.5,
+   "kind": "northeast"
+  },
+  {
+   "label": "Michigan",
+   "qid": "Q1166",
+   "fame": 0.651,
+   "capital": "Lansing",
+   "description": "state of the United States of America",
+   "hook": "is shaped like a mitten, borders four Great Lakes and is the home of the American auto industry",
+   "known": 0.5,
+   "kind": "midwest"
+  },
+  {
+   "label": "North Carolina",
+   "qid": "Q1454",
+   "fame": 0.651,
+   "capital": "Raleigh",
+   "description": "state of the United States of America",
+   "hook": "is where the Wright brothers first flew, with Blue Ridge mountains and the Outer Banks",
+   "known": 0.5,
+   "kind": "south"
+  },
+  {
+   "label": "Ohio",
+   "qid": "Q1397",
+   "fame": 0.651,
+   "capital": "Columbus",
+   "description": "state of the United States of America",
+   "hook": "is the Buckeye state, birthplace of aviation pioneers and astronauts and home to the Rock Hall of Fame",
+   "known": 0.7,
+   "kind": "midwest"
+  },
+  {
+   "label": "Tennessee",
+   "qid": "Q1509",
+   "fame": 0.651,
+   "capital": "Nashville",
+   "description": "state of the United States of America",
+   "hook": "is the birthplace of country music and the blues, with Graceland and the Grand Ole Opry",
+   "known": 0.6,
+   "kind": "south"
+  },
+  {
+   "label": "Georgia",
+   "qid": "Q1428",
+   "fame": 0.649,
+   "capital": "Atlanta",
+   "description": "state of the United States of America",
+   "hook": "is the Peach state, home of Coca-Cola and the busiest airport in the world",
+   "known": 0.7,
+   "kind": "south"
+  },
+  {
+   "label": "Minnesota",
+   "qid": "Q1527",
+   "fame": 0.648,
+   "capital": "Saint Paul",
+   "description": "state of the United States of America",
+   "hook": "is the land of 10,000 lakes, known for hockey, the Mall of America and the Twin Cities",
+   "known": 0.5,
+   "kind": "midwest"
+  },
+  {
+   "label": "Virginia",
+   "qid": "Q1370",
+   "fame": 0.645,
+   "capital": "Richmond",
+   "description": "state of the United States of America",
+   "hook": "is the birthplace of presidents, site of the first permanent English colony at Jamestown and the Pentagon",
+   "known": 0.6,
+   "kind": "south"
+  },
+  {
+   "label": "Missouri",
+   "qid": "Q1581",
+   "fame": 0.642,
+   "capital": "Jefferson City",
+   "description": "state of the United States of America",
+   "hook": "is the Show-Me state, home to the Gateway Arch and the starting point of the Oregon Trail",
+   "known": 0.4,
+   "kind": "midwest"
+  },
+  {
+   "label": "Rhode Island",
+   "qid": "Q1387",
+   "fame": 0.642,
+   "capital": "Providence",
+   "description": "state of the United States of America",
+   "hook": "is the smallest in the nation by area, nicknamed the Ocean state, with famed Newport mansions",
+   "known": 0.5,
+   "kind": "northeast"
+  },
+  {
+   "label": "Colorado",
+   "qid": "Q1261",
+   "fame": 0.64,
+   "capital": "Denver",
+   "description": "state of the United States of America",
+   "hook": "is the Centennial state, known for the Rocky Mountains, ski resorts and its high-altitude mile-high city",
+   "known": 0.7,
+   "kind": "southwest"
+  },
+  {
+   "label": "Maryland",
+   "qid": "Q1391",
+   "fame": 0.64,
+   "capital": "Annapolis",
+   "description": "state of the United States of America",
+   "hook": "is known for blue crabs, the Chesapeake Bay and the Naval Academy",
+   "known": 0.5,
+   "kind": "south"
+  },
+  {
+   "label": "Connecticut",
+   "qid": "Q779",
+   "fame": 0.638,
+   "capital": "Hartford",
+   "description": "state of the United States of America",
+   "hook": "is a small New England state known as the insurance capital and home to Yale",
+   "known": 0.5,
+   "kind": "northeast"
+  },
+  {
+   "label": "Wyoming",
+   "qid": "Q1214",
+   "fame": 0.636,
+   "capital": "Cheyenne",
+   "description": "state of the United States of America",
+   "hook": "is the least populous in the nation, home to Yellowstone, Old Faithful and the Devils Tower",
+   "known": 0.4,
+   "kind": "west"
+  },
+  {
+   "label": "Illinois",
+   "qid": "Q1204",
+   "fame": 0.635,
+   "capital": "Springfield",
+   "description": "state of the United States of America",
+   "hook": "is the Land of Lincoln, known for deep-dish pizza and the Windy City on Lake Michigan",
+   "known": 0.5,
+   "kind": "midwest"
+  },
+  {
+   "label": "Utah",
+   "qid": "Q829",
+   "fame": 0.634,
+   "capital": "Salt Lake City",
+   "description": "state of the United States of America",
+   "hook": "is known for red rock arches, national parks, world-class powder skiing and the pioneers who founded it",
+   "known": 0.7,
+   "kind": "southwest"
+  },
+  {
+   "label": "Maine",
+   "qid": "Q724",
+   "fame": 0.633,
+   "capital": "Augusta",
+   "description": "state of the United States of America",
+   "hook": "is the northeasternmost state, famous for lobster, rocky coasts and lighthouses",
+   "known": 0.4,
+   "kind": "northeast"
+  },
+  {
+   "label": "Wisconsin",
+   "qid": "Q1537",
+   "fame": 0.632,
+   "capital": "Madison",
+   "description": "state of the United States of America",
+   "hook": "is America's Dairyland, famous for cheese, the Green Bay Packers and Harley-Davidson",
+   "known": 0.5,
+   "kind": "midwest"
+  },
+  {
+   "label": "Arizona",
+   "qid": "Q816",
+   "fame": 0.631,
+   "capital": "Phoenix",
+   "description": "state of the United States of America",
+   "hook": "is the home of the Grand Canyon, saguaro cacti and scorching desert summers",
+   "known": 0.7,
+   "kind": "southwest"
+  },
+  {
+   "label": "Alabama",
+   "qid": "Q173",
+   "fame": 0.63,
+   "capital": "Montgomery",
+   "description": "state of the United States of America",
+   "hook": "is a Deep South state known for the civil rights marches, college football and the space rocket center",
+   "known": 0.3,
+   "kind": "south"
+  },
+  {
+   "label": "Louisiana",
+   "qid": "Q1588",
+   "fame": 0.628,
+   "capital": "Baton Rouge",
+   "description": "state of the United States of America",
+   "hook": "is known for Mardi Gras, jazz, gumbo and the bayous of the Mississippi delta",
+   "known": 0.5,
+   "kind": "south"
+  },
+  {
+   "label": "Oregon",
+   "qid": "Q824",
+   "fame": 0.627,
+   "capital": "Salem",
+   "description": "state of the United States of America",
+   "hook": "is a Pacific Northwest state known for its Trail, Crater Lake, forests and craft beer",
+   "known": 0.4,
+   "kind": "west"
+  },
+  {
+   "label": "Montana",
+   "qid": "Q1212",
+   "fame": 0.626,
+   "capital": "Helena",
+   "description": "state of the United States of America",
+   "hook": "is Big Sky Country, home to Glacier National Park and a large share of Yellowstone",
+   "known": 0.3,
+   "kind": "west"
+  },
+  {
+   "label": "Oklahoma",
+   "qid": "Q1649",
+   "fame": 0.625,
+   "capital": "Oklahoma City",
+   "description": "state of the United States of America",
+   "hook": "is the heart of Tornado Alley, known for oil, cowboys and the Dust Bowl",
+   "known": 0.4,
+   "kind": "south"
+  },
+  {
+   "label": "New Hampshire",
+   "qid": "Q759",
+   "fame": 0.624,
+   "capital": "Concord",
+   "description": "state of the United States of America",
+   "hook": "is the Granite state, famous for its motto \"Live Free or Die\" and first-in-the-nation primaries",
+   "known": 0.4,
+   "kind": "northeast"
+  },
+  {
+   "label": "Kentucky",
+   "qid": "Q1603",
+   "fame": 0.622,
+   "capital": "Frankfort",
+   "description": "state of the United States of America",
+   "hook": "is the Bluegrass state, known for the Derby, bourbon whiskey and fried chicken",
+   "known": 0.3,
+   "kind": "south"
+  },
+  {
+   "label": "Vermont",
+   "qid": "Q16551",
+   "fame": 0.622,
+   "capital": "Montpelier",
+   "description": "state of the United States of America",
+   "hook": "is a Green Mountain state famous for maple syrup, fall foliage and ice cream makers Ben and Jerry",
+   "known": 0.3,
+   "kind": "northeast"
+  },
+  {
+   "label": "Mississippi",
+   "qid": "Q1494",
+   "fame": 0.621,
+   "capital": "Jackson",
+   "description": "state of the United States of America",
+   "hook": "is the birthplace of the blues, named for a mighty river that forms its western border",
+   "known": 0.3,
+   "kind": "south"
+  },
+  {
+   "label": "Kansas",
+   "qid": "Q1558",
+   "fame": 0.618,
+   "capital": "Topeka",
+   "description": "state of the United States of America",
+   "hook": "is the Sunflower state, known for wheat fields, tornadoes and the setting of Dorothy's farmhouse",
+   "known": 0.3,
+   "kind": "midwest"
+  },
+  {
+   "label": "Arkansas",
+   "qid": "Q1612",
+   "fame": 0.617,
+   "capital": "Little Rock",
+   "description": "state of the United States of America",
+   "hook": "is the Natural state, known for hot springs, diamonds and a former president from Hope",
+   "known": 0.4,
+   "kind": "south"
+  },
+  {
+   "label": "West Virginia",
+   "qid": "Q1371",
+   "fame": 0.616,
+   "capital": "Charleston",
+   "description": "state of the United States of America",
+   "hook": "is the Mountain State, known for coal mining, Appalachian ridges and country roads in a John Denver hit",
+   "known": 0.3,
+   "kind": "south"
+  },
+  {
+   "label": "Iowa",
+   "qid": "Q1546",
+   "fame": 0.614,
+   "capital": "Des Moines",
+   "description": "state of the United States of America",
+   "hook": "is a Midwest farm state known for corn, a famous caucus and the movie Field of Dreams",
+   "known": 0.4,
+   "kind": "midwest"
+  },
+  {
+   "label": "Indiana",
+   "qid": "Q1415",
+   "fame": 0.612,
+   "capital": "Indianapolis",
+   "description": "state of the United States of America",
+   "hook": "is the Hoosier state, known for a famous 500-mile auto race and basketball fever",
+   "known": 0.6,
+   "kind": "midwest"
+  },
+  {
+   "label": "Delaware",
+   "qid": "Q1393",
+   "fame": 0.611,
+   "capital": "Dover",
+   "description": "state of the United States of America",
+   "hook": "is the First State to ratify the Constitution and is the second smallest by area",
+   "known": 0.3,
+   "kind": "northeast"
+  },
+  {
+   "label": "Nebraska",
+   "qid": "Q1553",
+   "fame": 0.608,
+   "capital": "Lincoln",
+   "description": "state of the United States of America",
+   "hook": "is the Cornhusker state, known for corn, college football and the Great Plains",
+   "known": 0.4,
+   "kind": "midwest"
+  },
+  {
+   "label": "South Carolina",
+   "qid": "Q1456",
+   "fame": 0.605,
+   "capital": "Columbia",
+   "description": "state of the United States of America",
+   "hook": "is where the first shots of the Civil War were fired, known for Charleston, palmetto trees and peaches",
+   "known": 0.4,
+   "kind": "south"
+  },
+  {
+   "label": "Nevada",
+   "qid": "Q1227",
+   "fame": 0.604,
+   "capital": "Carson City",
+   "description": "state of the United States of America",
+   "hook": "is a desert state known for casinos, the Las Vegas Strip and Area 51",
+   "known": 0.4,
+   "kind": "southwest"
+  },
+  {
+   "label": "Idaho",
+   "qid": "Q1221",
+   "fame": 0.599,
+   "capital": "Boise",
+   "description": "state of the United States of America",
+   "hook": "is the Gem state, best known for potatoes and Sun Valley skiing",
+   "known": 0.3,
+   "kind": "west"
+  },
+  {
+   "label": "South Dakota",
+   "qid": "Q1211",
+   "fame": 0.577,
+   "capital": "Pierre",
+   "description": "state of the United States of America",
+   "hook": "is home to Mount Rushmore, the Badlands and the Sturgis motorcycle rally",
+   "known": 0.3,
+   "kind": "midwest"
+  },
+  {
+   "label": "North Dakota",
+   "qid": "Q1207",
+   "fame": 0.572,
+   "capital": "Bismarck",
+   "description": "state of the United States of America",
+   "hook": "is a Great Plains state known for the Badlands of Theodore Roosevelt National Park, wheat and an oil boom",
+   "known": 0.3,
+   "kind": "midwest"
+  }
+ ]
+}

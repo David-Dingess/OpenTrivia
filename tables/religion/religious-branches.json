@@ -1,0 +1,231 @@
+{
+ "id": "table.religion.religious-branches",
+ "kind": "table",
+ "title": "Branches of the great religions",
+ "genre": "society",
+ "category": "religion",
+ "topic": "world-religions",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?religionLabel WHERE { { SELECT ?item (SAMPLE(?r) AS ?religion) (COUNT(DISTINCT ?r) AS ?nR) WHERE { VALUES ?r { wd:Q5043 wd:Q432 wd:Q748 wd:Q9089 wd:Q9268 } ?item wdt:P279+ ?r . FILTER NOT EXISTS { ?item wdt:P31 wd:Q5 } ?item wikibase:sitelinks ?sl . FILTER(?sl >= 25) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nR = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T01:49:15.989Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T01:49:15.989Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "religion",
+   "label": "Religion",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "religious branch",
+  "many": "religious branches",
+  "hookAsk": "Which religious branch or movement {hook}?",
+  "hookStatement": "",
+  "columns": {
+   "religion": {
+    "role": "link",
+    "pick": "Which faith is {label} a branch or school of?",
+    "statement": "{label} is a branch or school of {value}.",
+    "match": "Match each branch to the faith it belongs to.",
+    "odd": "Three of these belong to {value}. Which one doesn't?",
+    "all": "Tap all {n} branches or schools of {value}.",
+    "reverse": "Which of these is a branch or school of {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Kabbalah",
+   "qid": "Q123006",
+   "fame": 0.633,
+   "religion": "Judaism",
+   "description": "esoteric discipline and school of thought, associated with Judaism",
+   "hook": "centres on mystical readings of sacred texts and a diagram called the Tree of Life",
+   "known": 0.3,
+   "kind": "esoteric tradition"
+  },
+  {
+   "label": "Protestantism",
+   "qid": "Q23540",
+   "fame": 0.631,
+   "religion": "Christianity",
+   "description": "branch of Christianity that emerged following the Protestant Reformation of the 16th century in opposition to the Roman Catholic Church and rejects papal supremacy",
+   "hook": "arose when reformers broke away from the Catholic Church during the Reformation",
+   "known": 0.95,
+   "kind": "major branch"
+  },
+  {
+   "label": "Lutheranism",
+   "qid": "Q75809",
+   "fame": 0.602,
+   "religion": "Christianity",
+   "description": "form of Protestantism commonly associated with the teachings of Martin Luther",
+   "hook": "follows the ideas of a German monk who famously posted 95 theses against church practices",
+   "known": 0.7,
+   "kind": "protestant denomination"
+  },
+  {
+   "label": "Pentecostalism",
+   "qid": "Q483978",
+   "fame": 0.599,
+   "religion": "Christianity",
+   "description": "evangelical Christian movement",
+   "hook": "emphasises spiritual gifts such as speaking in tongues, inspired by a biblical festival day",
+   "known": 0.4,
+   "kind": "evangelical movement"
+  },
+  {
+   "label": "Mennonites",
+   "qid": "Q110223",
+   "fame": 0.585,
+   "religion": "Christianity",
+   "description": "Anabaptist groups originating in Western Europe",
+   "hook": "are known for pacifist beliefs and a plain, community-centred way of life",
+   "known": 0.3,
+   "kind": "anabaptist denomination"
+  },
+  {
+   "label": "Anglicanism",
+   "qid": "Q6423963",
+   "fame": 0.582,
+   "religion": "Christianity",
+   "description": "Christian tradition developing out of the practices, liturgy and identity of the Church of England",
+   "hook": "grew out of the national church of England after a king broke with the pope",
+   "known": 0.8,
+   "kind": "protestant denomination"
+  },
+  {
+   "label": "Evangelicalism",
+   "qid": "Q194253",
+   "fame": 0.58,
+   "religion": "Christianity",
+   "description": "Evangelical Christian movement",
+   "hook": "stresses personal conversion, being born again, and the authority of the Bible",
+   "known": 0.6,
+   "kind": "evangelical movement"
+  },
+  {
+   "label": "Presbyterianism",
+   "qid": "Q178169",
+   "fame": 0.58,
+   "religion": "Christianity",
+   "description": "branch of Protestant Christianity using presbyterian church government and originating in the British Isles",
+   "hook": "is governed by elected elders rather than bishops and traces back to John Knox in Scotland",
+   "known": 0.5,
+   "kind": "protestant denomination"
+  },
+  {
+   "label": "Methodism",
+   "qid": "Q33203",
+   "fame": 0.567,
+   "religion": "Christianity",
+   "description": "group of historically related denominations of Protestant Christianity",
+   "hook": "began as a movement led by John Wesley and is named for its methodical approach to devotion",
+   "known": 0.6,
+   "kind": "protestant denomination"
+  },
+  {
+   "label": "Anabaptism",
+   "qid": "Q165580",
+   "fame": 0.545,
+   "religion": "Christianity",
+   "description": "Christian denominational family",
+   "hook": "rejected infant baptism in the sixteenth century, insisting on a believer's own choice",
+   "known": 0.2,
+   "kind": "anabaptist tradition"
+  },
+  {
+   "label": "Baptists",
+   "qid": "Q93191",
+   "fame": 0.541,
+   "religion": "Christianity",
+   "description": "evangelical Christian movement",
+   "hook": "practise full-immersion baptism of believers and prize the independence of each congregation",
+   "known": 0.7,
+   "kind": "protestant denomination"
+  },
+  {
+   "label": "Zen",
+   "qid": "Q7953",
+   "fame": 0.535,
+   "religion": "Buddhism",
+   "description": "school of Mahāyāna Buddhist Tradition",
+   "hook": "stresses seated meditation and puzzling riddles called koans",
+   "known": 0.65,
+   "kind": "buddhist school"
+  },
+  {
+   "label": "Eastern Orthodoxy",
+   "qid": "Q3333484",
+   "fame": 0.521,
+   "religion": "Christianity",
+   "description": "Christian denominational family",
+   "hook": "split from the Western church in the Great Schism and is led by patriarchs such as the one in Constantinople",
+   "known": 0.6,
+   "kind": "major branch"
+  },
+  {
+   "label": "Oriental Orthodox churches",
+   "qid": "Q49377",
+   "fame": 0.518,
+   "religion": "Christianity",
+   "description": "largest group of churches following Oriental Orthodoxy in full communion",
+   "hook": "includes the Coptic, Armenian and Ethiopian communions, which separated after a fifth-century council",
+   "known": 0.25,
+   "kind": "major branch"
+  },
+  {
+   "label": "Vaishnavism",
+   "qid": "Q45584",
+   "fame": 0.513,
+   "religion": "Hinduism",
+   "description": "major Hindu tradition that reveres Vishnu as the Supreme Being",
+   "hook": "venerates the preserver deity, whose avatars include Rama and Krishna",
+   "known": 0.35,
+   "kind": "hindu tradition"
+  },
+  {
+   "label": "Mahāyāna",
+   "qid": "Q48362",
+   "fame": 0.509,
+   "religion": "Buddhism",
+   "description": "branch of Buddhism popular in East Asia and Vietnam that sees the goal of becoming a buddha through the bodhisattva path as being available to all and sees the state of the arhat as incomplete",
+   "hook": "teaches the ideal of the bodhisattva, who vows to help every being reach enlightenment",
+   "known": 0.5,
+   "kind": "buddhist branch"
+  },
+  {
+   "label": "Theravāda",
+   "qid": "Q132265",
+   "fame": 0.502,
+   "religion": "Buddhism",
+   "description": "major branch of Buddhism following the Pāli Canon, dominant in Sri Lanka, Cambodia, Laos, Myanmar and Thailand",
+   "hook": "is the dominant tradition in Sri Lanka and Thailand and follows scriptures written in Pali",
+   "known": 0.4,
+   "kind": "buddhist branch"
+  }
+ ]
+}

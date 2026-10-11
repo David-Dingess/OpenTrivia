@@ -1,0 +1,333 @@
+{
+ "id": "table.history.roman-emperors",
+ "kind": "table",
+ "title": "Roman emperors by accession",
+ "genre": "society",
+ "category": "history",
+ "topic": "rulers",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?start WHERE { { SELECT ?item (MIN(?s) AS ?start) WHERE { ?item p:P39 ?st . ?st ps:P39 wd:Q842606 ; pq:P580 ?s . } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T04:05:33.574Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T04:05:33.574Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "accession",
+   "label": "Accession",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "emperor",
+  "many": "Roman emperors",
+  "itemSub": "{hook}",
+  "hookAsk": "Which Roman emperor {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Augustus",
+   "qid": "Q1405",
+   "fame": 0.717,
+   "accession": -26,
+   "description": "first emperor of the Roman Empire and founder of the Julio-Claudian dynasty"
+  },
+  {
+   "label": "Marcus Aurelius",
+   "qid": "Q1430",
+   "fame": 0.708,
+   "accession": 161,
+   "description": "16th Roman Emperor from 161 to 180 and Stoic philosopher"
+  },
+  {
+   "label": "Nero",
+   "qid": "Q1413",
+   "fame": 0.681,
+   "accession": 54,
+   "description": "fifth and last Roman Emperor of Julio-Claudian dynasty (54–68)"
+  },
+  {
+   "label": "Caligula",
+   "qid": "Q1409",
+   "fame": 0.673,
+   "accession": 37,
+   "description": "third Roman emperor (37–41)"
+  },
+  {
+   "label": "Constantine the Great",
+   "qid": "Q8413",
+   "fame": 0.66,
+   "accession": 306,
+   "description": "Roman emperor from 306 to 337 and first to convert to Christianity (272–337)"
+  },
+  {
+   "label": "Tiberius",
+   "qid": "Q1407",
+   "fame": 0.643,
+   "accession": 14,
+   "description": "second Roman Emperor from 14 to 37 AD"
+  },
+  {
+   "label": "Commodus",
+   "qid": "Q1434",
+   "fame": 0.628,
+   "accession": 177,
+   "description": "17th Roman Emperor (180–192)"
+  },
+  {
+   "label": "Claudius",
+   "qid": "Q1411",
+   "fame": 0.622,
+   "accession": 41,
+   "description": "fourth Roman emperor (41–54)"
+  },
+  {
+   "label": "Hadrian",
+   "qid": "Q1427",
+   "fame": 0.615,
+   "accession": 117,
+   "description": "14th Roman Emperor (117–138)"
+  },
+  {
+   "label": "Trajan",
+   "qid": "Q1425",
+   "fame": 0.607,
+   "accession": 98,
+   "description": "13th Roman Emperor (98–117)"
+  },
+  {
+   "label": "Caracalla",
+   "qid": "Q1446",
+   "fame": 0.595,
+   "accession": 198,
+   "description": "Roman emperor from 198 to 217"
+  },
+  {
+   "label": "Diocletian",
+   "qid": "Q43107",
+   "fame": 0.595,
+   "accession": 284,
+   "description": "Augustus of the Eastern Roman Empire (244-311)"
+  },
+  {
+   "label": "Domitian",
+   "qid": "Q1423",
+   "fame": 0.591,
+   "accession": 81,
+   "description": "11th Roman Emperor (81–96)"
+  },
+  {
+   "label": "Elagabalus",
+   "qid": "Q1762",
+   "fame": 0.576,
+   "accession": 218,
+   "description": "Roman Emperor (218-222)"
+  },
+  {
+   "label": "Septimius Severus",
+   "qid": "Q1442",
+   "fame": 0.574,
+   "accession": 193,
+   "description": "Roman emperor from 193 to 211"
+  },
+  {
+   "label": "Titus",
+   "qid": "Q1421",
+   "fame": 0.574,
+   "accession": 79,
+   "description": "tenth Roman Emperor (79–81)"
+  },
+  {
+   "label": "Vespasian",
+   "qid": "Q1419",
+   "fame": 0.571,
+   "accession": 69,
+   "description": "ninth Roman Emperor and founder of the Flavian dynasty (69–79)"
+  },
+  {
+   "label": "Aurelian",
+   "qid": "Q46780",
+   "fame": 0.57,
+   "accession": 270,
+   "description": "Roman Emperor (C.E.214-275)"
+  },
+  {
+   "label": "Nerva",
+   "qid": "Q1424",
+   "fame": 0.565,
+   "accession": 96,
+   "description": "12th Roman Emperor (96–98)"
+  },
+  {
+   "label": "Theodosius I",
+   "qid": "Q46696",
+   "fame": 0.543,
+   "accession": 379,
+   "description": "Roman emperor from 379 to 395"
+  },
+  {
+   "label": "Antoninus Pius",
+   "qid": "Q1429",
+   "fame": 0.542,
+   "accession": 138,
+   "description": "15th Roman Emperor (138–161)"
+  },
+  {
+   "label": "Julian",
+   "qid": "Q33941",
+   "fame": 0.532,
+   "accession": 360,
+   "description": "last Pagan Roman emperor, reigned 361 to 363"
+  },
+  {
+   "label": "Macrinus",
+   "qid": "Q1752",
+   "fame": 0.527,
+   "accession": 217,
+   "description": "Roman emperor from 217 to 218"
+  },
+  {
+   "label": "Tacitus",
+   "qid": "Q177988",
+   "fame": 0.522,
+   "accession": 275,
+   "description": "Roman emperor from 275 to 276"
+  },
+  {
+   "label": "Galba",
+   "qid": "Q1414",
+   "fame": 0.519,
+   "accession": 68,
+   "description": "sixth Roman Emperor (68–69)"
+  },
+  {
+   "label": "Vitellius",
+   "qid": "Q1417",
+   "fame": 0.515,
+   "accession": 69,
+   "description": "eighth Roman Emperor (69)"
+  },
+  {
+   "label": "Pertinax",
+   "qid": "Q1436",
+   "fame": 0.511,
+   "accession": 192,
+   "description": "emperor of Ancient Rome (126-193)"
+  },
+  {
+   "label": "Maximinus Thrax",
+   "qid": "Q1777",
+   "fame": 0.51,
+   "accession": 235,
+   "description": "Roman Emperor (173-238)"
+  },
+  {
+   "label": "Otho",
+   "qid": "Q1416",
+   "fame": 0.509,
+   "accession": 69,
+   "description": "seventh Roman Emperor (69)"
+  },
+  {
+   "label": "Geta",
+   "qid": "Q183089",
+   "fame": 0.506,
+   "accession": 209,
+   "description": "Roman emperor from 209 to 211"
+  },
+  {
+   "label": "Severus Alexander",
+   "qid": "Q1769",
+   "fame": 0.495,
+   "accession": 222,
+   "description": "Roman Emperor (208-235)"
+  },
+  {
+   "label": "Didius Julianus",
+   "qid": "Q1440",
+   "fame": 0.49,
+   "accession": 193,
+   "description": "emperor of ancient Rome (193 CE)"
+  },
+  {
+   "label": "Lucius Verus",
+   "qid": "Q1433",
+   "fame": 0.489,
+   "accession": 161,
+   "description": "joint Roman Emperor with Marcus Aurelius (161–169)"
+  },
+  {
+   "label": "Valerian",
+   "qid": "Q46750",
+   "fame": 0.487,
+   "accession": 253,
+   "description": "Roman emperor"
+  },
+  {
+   "label": "Philip the Arab",
+   "qid": "Q1817",
+   "fame": 0.484,
+   "accession": 244,
+   "description": "Roman Emperor (204-249)"
+  },
+  {
+   "label": "Constantius II",
+   "qid": "Q46418",
+   "fame": 0.471,
+   "accession": 337,
+   "description": "Roman emperor (317-361)"
+  },
+  {
+   "label": "Valentinian I",
+   "qid": "Q46720",
+   "fame": 0.468,
+   "accession": 364,
+   "description": "Roman emperor from 364 to 375"
+  },
+  {
+   "label": "Decius",
+   "qid": "Q1830",
+   "fame": 0.461,
+   "accession": 249,
+   "description": "Roman Emperor (201-251)"
+  },
+  {
+   "label": "Gallienus",
+   "qid": "Q104475",
+   "fame": 0.459,
+   "accession": 253,
+   "description": "Roman emperor (218-268)"
+  },
+  {
+   "label": "Probus",
+   "qid": "Q187068",
+   "fame": 0.458,
+   "accession": 276,
+   "description": "3rd-century Roman Emperor (232-282)"
+  },
+  {
+   "label": "Constantius Chlorus",
+   "qid": "Q131195",
+   "fame": 0.457,
+   "accession": 305,
+   "description": "Roman emperor (250-306)"
+  }
+ ]
+}

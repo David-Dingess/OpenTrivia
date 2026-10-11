@@ -1,0 +1,657 @@
+{
+ "id": "table.pop-culture.tv-spin-offs",
+ "kind": "table",
+ "title": "TV spin-offs and the show they came from",
+ "genre": "general",
+ "category": "pop-culture",
+ "topic": "tv",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?parentLabel WHERE { { SELECT ?item (SAMPLE(?p) AS ?parent) WHERE { ?item wikibase:sitelinks ?sl . FILTER(?sl >= 12) ?item wdt:P31/wdt:P279* wd:Q5398426 . ?p wdt:P2512 ?item . ?p wdt:P31/wdt:P279* wd:Q5398426 } GROUP BY ?item HAVING(COUNT(DISTINCT ?p) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T07:05:33.876Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T07:05:33.876Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "parent",
+   "label": "Spun off from",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "TV spin-off",
+  "many": "TV spin-offs",
+  "columns": {
+   "parent": {
+    "role": "link",
+    "pick": "Which TV show was the spin-off {label} spun off from?",
+    "statement": "{label} was spun off from {value}.",
+    "match": "Match each spin-off to the show it came from.",
+    "reverse": "Which of these spin-offs came from {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "A Different World",
+   "qid": "Q1109026",
+   "fame": 0.719,
+   "parent": "The Cosby Show",
+   "description": "television series",
+   "hook": "follows students at a historically Black college, led by a Southern belle turned dorm lover",
+   "known": 0.4,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Better Call Saul",
+   "qid": "Q14925221",
+   "fame": 0.718,
+   "parent": "Breaking Bad",
+   "description": "American crime drama television series (2015–2022)",
+   "hook": "follows a small-time lawyer's slide toward shady dealings with a drug empire",
+   "known": 0.8,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "Young Sheldon",
+   "qid": "Q30014613",
+   "fame": 0.687,
+   "parent": "The Big Bang Theory",
+   "description": "American comedy series",
+   "hook": "follows a gifted Texas kid growing up in a big household before he became a famous physicist",
+   "known": 0.9,
+   "kind": "sitcom"
+  },
+  {
+   "label": "NCIS",
+   "qid": "Q4525",
+   "fame": 0.684,
+   "parent": "JAG",
+   "description": "American military drama/police procedural fiction television series (2003-)",
+   "hook": "follows a team of agents who investigate crimes involving sailors and Marines",
+   "known": 0.95,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "1923",
+   "qid": "Q112862420",
+   "fame": 0.681,
+   "parent": "Yellowstone",
+   "description": "American Western drama television series",
+   "hook": "follows a Montana ranching clan facing drought, Prohibition-era trouble and brutal winters",
+   "known": 0.6,
+   "kind": "western"
+  },
+  {
+   "label": "The Madison",
+   "qid": "Q131461120",
+   "fame": 0.677,
+   "parent": "Yellowstone",
+   "description": "Upcoming television series",
+   "hook": null,
+   "known": 0.05,
+   "kind": "western"
+  },
+  {
+   "label": "1883",
+   "qid": "Q110124251",
+   "fame": 0.661,
+   "parent": "Yellowstone",
+   "description": "American drama television series",
+   "hook": "follows wagon-train travelers heading west across the plains toward Montana",
+   "known": 0.6,
+   "kind": "western"
+  },
+  {
+   "label": "Major Crimes",
+   "qid": "Q738219",
+   "fame": 0.647,
+   "parent": "The Closer",
+   "description": "television series",
+   "hook": "follows an LA police unit that cuts deals with suspects to close big cases",
+   "known": 0.5,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "Frasier",
+   "qid": "Q209282",
+   "fame": 0.644,
+   "parent": "Cheers",
+   "description": "American sitcom (1993–2004)",
+   "hook": "follows a snobbish radio psychiatrist, his dad and his brother in Seattle",
+   "known": 0.95,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Agatha All Along",
+   "qid": "Q108837156",
+   "fame": 0.643,
+   "parent": "WandaVision",
+   "description": "2024 Marvel Studios television series",
+   "hook": "follows a cackling witch who leads a coven down a magical road of trials",
+   "known": 0.5,
+   "kind": "superhero"
+  },
+  {
+   "label": "The Punisher",
+   "qid": "Q27089570",
+   "fame": 0.636,
+   "parent": "Daredevil",
+   "description": "American superhero television series (2017-2019)",
+   "hook": "follows a vengeful ex-Marine who wages a one-man war on criminals",
+   "known": 0.6,
+   "kind": "superhero"
+  },
+  {
+   "label": "American Dad!",
+   "qid": "Q210311",
+   "fame": 0.609,
+   "parent": "Family Guy",
+   "description": "American animated sitcom",
+   "hook": "follows a CIA agent, his household, an alien and a goldfish with a German accent",
+   "known": 0.7,
+   "kind": "animated-comedy"
+  },
+  {
+   "label": "The Flash",
+   "qid": "Q15711398",
+   "fame": 0.604,
+   "parent": "Arrow",
+   "description": "American superhero television series (2014–2023)",
+   "hook": "follows a forensic scientist who gains super speed after a lab accident",
+   "known": 0.8,
+   "kind": "superhero"
+  },
+  {
+   "label": "Adventure Time",
+   "qid": "Q53093",
+   "fame": 0.602,
+   "parent": "Random! Cartoons",
+   "description": "American animated television series",
+   "hook": "follows a boy and his shape-shifting dog in a candy-filled post-apocalyptic land",
+   "known": 0.8,
+   "kind": "animated-drama"
+  },
+  {
+   "label": "The Powerpuff Girls",
+   "qid": "Q1236206",
+   "fame": 0.594,
+   "parent": "What a Cartoon!",
+   "description": "American animated television series from 1998–2005",
+   "hook": "follows three kindergarten-age sisters made of sugar, spice and Chemical X who fight crime",
+   "known": 0.9,
+   "kind": "animated-drama"
+  },
+  {
+   "label": "The Legend of Korra",
+   "qid": "Q18790",
+   "fame": 0.593,
+   "parent": "Avatar: The Last Airbender",
+   "description": "American animated television series",
+   "hook": "follows a hot-headed young bender who must master all four elements to keep the peace",
+   "known": 0.7,
+   "kind": "animated-drama"
+  },
+  {
+   "label": "Chilling Adventures of Sabrina",
+   "qid": "Q50809037",
+   "fame": 0.586,
+   "parent": "Riverdale",
+   "description": "American supernatural television series (2018–2020)",
+   "hook": "follows a teenage half-witch torn between mortal life and dark magic",
+   "known": 0.5,
+   "kind": "supernatural-drama"
+  },
+  {
+   "label": "Family Matters",
+   "qid": "Q593838",
+   "fame": 0.586,
+   "parent": "Perfect Strangers",
+   "description": "American television series",
+   "hook": "features a nerdy neighbor in suspenders who became the breakout star",
+   "known": 0.7,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Xena: Warrior Princess",
+   "qid": "Q38497",
+   "fame": 0.58,
+   "parent": "Hercules: The Legendary Journeys",
+   "description": "American–New Zealand fantasy series (1995–2001)",
+   "hook": "follows a sword-wielding former warlord seeking redemption alongside a bard sidekick",
+   "known": 0.7,
+   "kind": "fantasy"
+  },
+  {
+   "label": "Boston Legal",
+   "qid": "Q308984",
+   "fame": 0.578,
+   "parent": "The Practice",
+   "description": "American legal dramedy",
+   "hook": "follows eccentric attorneys at a firm known for outrageous cases and courtroom speeches",
+   "known": 0.6,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "The Originals",
+   "qid": "Q4307100",
+   "fame": 0.576,
+   "parent": "The Vampire Diaries",
+   "description": "American supernatural drama television series  (2013–2018)",
+   "hook": "follows an ancient, powerful immortal clan ruling New Orleans",
+   "known": 0.6,
+   "kind": "supernatural-drama"
+  },
+  {
+   "label": "The Good Fight",
+   "qid": "Q28052823",
+   "fame": 0.563,
+   "parent": "The Good Wife",
+   "description": "2017 American legal drama television series",
+   "hook": "follows lawyers at a Chicago firm after a financial scandal upends their careers",
+   "known": 0.6,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "Angel",
+   "qid": "Q212156",
+   "fame": 0.554,
+   "parent": "Buffy the Vampire Slayer",
+   "description": "American television series (1999-2004)",
+   "hook": "follows a brooding immortal with a soul who fights evil in Los Angeles",
+   "known": 0.8,
+   "kind": "supernatural-drama"
+  },
+  {
+   "label": "Joey",
+   "qid": "Q319817",
+   "fame": 0.554,
+   "parent": "Friends",
+   "description": "American sitcom",
+   "hook": "follows an aspiring actor who moves to Los Angeles to chase his dreams",
+   "known": 0.85,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Pinky and the Brain",
+   "qid": "Q1500726",
+   "fame": 0.551,
+   "parent": "Animaniacs",
+   "description": "animated television series",
+   "hook": "follows two lab mice, one a genius, plotting nightly to take over the world",
+   "known": 0.75,
+   "kind": "animated-comedy"
+  },
+  {
+   "label": "The Fairly OddParents",
+   "qid": "Q39037",
+   "fame": 0.551,
+   "parent": "Oh Yeah! Cartoons",
+   "description": "2001 American animated television series",
+   "hook": "follows a ten-year-old whose wishes are granted by floating godparents with wands",
+   "known": 0.7,
+   "kind": "animated-comedy"
+  },
+  {
+   "label": "Doom Patrol",
+   "qid": "Q55952118",
+   "fame": 0.55,
+   "parent": "Titans",
+   "description": "2019 American superhero television series",
+   "hook": "follows a team of misfit superheroes damaged by bizarre accidents",
+   "known": 0.3,
+   "kind": "superhero"
+  },
+  {
+   "label": "Aqua Teen Hunger Force",
+   "qid": "Q622946",
+   "fame": 0.549,
+   "parent": "Space Ghost Coast to Coast",
+   "description": "American animated television series",
+   "hook": "follows a talking milkshake, fry box and meatball living next to a lazy neighbor in New Jersey",
+   "known": 0.6,
+   "kind": "animated-comedy"
+  },
+  {
+   "label": "Courage the Cowardly Dog",
+   "qid": "Q641486",
+   "fame": 0.549,
+   "parent": "What a Cartoon!",
+   "description": "American horror animated television series",
+   "hook": "follows a nervous pink pup protecting his elderly owners from supernatural threats",
+   "known": 0.7,
+   "kind": "animated-drama"
+  },
+  {
+   "label": "The Jeffersons",
+   "qid": "Q153227",
+   "fame": 0.545,
+   "parent": "All in the Family",
+   "description": "American sitcom (1975–1985)",
+   "hook": "follows a dry-cleaning entrepreneur and his wife who strike it rich and move to a deluxe apartment in the sky",
+   "known": 0.85,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Laverne & Shirley",
+   "qid": "Q1247693",
+   "fame": 0.539,
+   "parent": "Happy Days",
+   "description": "American television sitcom",
+   "hook": "follows two roommates working on a Milwaukee brewery bottling line",
+   "known": 0.6,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Station 19",
+   "qid": "Q47497143",
+   "fame": 0.539,
+   "parent": "Grey's Anatomy",
+   "description": "American action-drama television series",
+   "hook": "follows Seattle firefighters and paramedics tackling dramatic emergencies",
+   "known": 0.5,
+   "kind": "medical-drama"
+  },
+  {
+   "label": "The Grim Adventures of Billy & Mandy",
+   "qid": "Q13923",
+   "fame": 0.539,
+   "parent": "Grim & Evil",
+   "description": "American animated television series",
+   "hook": "follows two kids who cheated Death into becoming their best friend",
+   "known": 0.5,
+   "kind": "animated-comedy"
+  },
+  {
+   "label": "Mork & Mindy",
+   "qid": "Q988037",
+   "fame": 0.535,
+   "parent": "Happy Days",
+   "description": "American television series",
+   "hook": "follows a wacky alien sent to Earth to study humans, greeting people with \"Nanu nanu\"",
+   "known": 0.7,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Dexter's Laboratory",
+   "qid": "Q904733",
+   "fame": 0.534,
+   "parent": "What a Cartoon!",
+   "description": "American comedy science fiction animated television series",
+   "hook": "follows a boy genius with a hidden underground science base and a meddling sister",
+   "known": 0.7,
+   "kind": "animated-comedy"
+  },
+  {
+   "label": "Fuller House",
+   "qid": "Q20714712",
+   "fame": 0.53,
+   "parent": "Full House",
+   "description": "American television sitcom",
+   "hook": "follows a widowed mom raising her kids with her sister and best friend in a San Francisco home",
+   "known": 0.65,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Melrose Place",
+   "qid": "Q550238",
+   "fame": 0.53,
+   "parent": "Beverly Hills, 90210",
+   "description": "1992 American prime time soap opera",
+   "hook": "follows young adults and their scandalous romances at a Los Angeles apartment complex",
+   "known": 0.7,
+   "kind": "soap-opera"
+  },
+  {
+   "label": "Private Practice",
+   "qid": "Q283393",
+   "fame": 0.53,
+   "parent": "Grey's Anatomy",
+   "description": "American medical drama television program",
+   "hook": "follows a surgeon who leaves Seattle to join a wellness center in California",
+   "known": 0.65,
+   "kind": "medical-drama"
+  },
+  {
+   "label": "Daria",
+   "qid": "Q1165866",
+   "fame": 0.529,
+   "parent": "Beavis and Butt-Head",
+   "description": "American adult animated sitcom",
+   "hook": "follows a sarcastic, deadpan teen who skewers her shallow classmates",
+   "known": 0.7,
+   "kind": "animated-comedy"
+  },
+  {
+   "label": "The Cleveland Show",
+   "qid": "Q34397",
+   "fame": 0.519,
+   "parent": "Family Guy",
+   "description": "American animated sitcom, spin-off of Family Guy",
+   "hook": "follows a mild-mannered neighbor who moves to Virginia with his new wife and kids",
+   "known": 0.5,
+   "kind": "animated-comedy"
+  },
+  {
+   "label": "The Lone Gunmen",
+   "qid": "Q1218201",
+   "fame": 0.512,
+   "parent": "The X-Files",
+   "description": "2001 American television series",
+   "hook": "follows three conspiracy-theory nerds who publish a paranoid newsletter",
+   "known": 0.3,
+   "kind": "sci-fi-drama"
+  },
+  {
+   "label": "Knots Landing",
+   "qid": "Q640535",
+   "fame": 0.508,
+   "parent": "Dallas",
+   "description": "television series",
+   "hook": "follows neighbors on a California cul-de-sac with sordid secrets",
+   "known": 0.5,
+   "kind": "soap-opera"
+  },
+  {
+   "label": "Mayans M.C.",
+   "qid": "Q27947810",
+   "fame": 0.508,
+   "parent": "Sons of Anarchy",
+   "description": "American crime drama television series",
+   "hook": "follows a Latino motorcycle club on the California-Mexico border",
+   "known": 0.5,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "Johnny Bravo",
+   "qid": "Q216991",
+   "fame": 0.501,
+   "parent": "What a Cartoon!",
+   "description": "American animated television series",
+   "hook": "follows a pompadoured, muscle-bound man who keeps failing to charm women",
+   "known": 0.5,
+   "kind": "animated-comedy"
+  },
+  {
+   "label": "Lewis",
+   "qid": "Q2523064",
+   "fame": 0.501,
+   "parent": "Inspector Morse",
+   "description": "British television show",
+   "hook": "follows an Oxford police detective and his younger sidekick solving academic-world murders",
+   "known": 0.6,
+   "kind": "crime-drama"
+  },
+  {
+   "label": "Torchwood",
+   "qid": "Q390120",
+   "fame": 0.5,
+   "parent": "Doctor Who",
+   "description": "British television series and spin-off from Doctor Who",
+   "hook": "follows a secret team in Cardiff hunting alien threats",
+   "known": 0.5,
+   "kind": "sci-fi-drama"
+  },
+  {
+   "label": "Luke Cage",
+   "qid": "Q20646602",
+   "fame": 0.495,
+   "parent": "Jessica Jones",
+   "description": "American television series",
+   "hook": "follows a bulletproof man with super strength protecting Harlem",
+   "known": 0.65,
+   "kind": "superhero"
+  },
+  {
+   "label": "Millennium",
+   "qid": "Q1477859",
+   "fame": 0.488,
+   "parent": "The X-Files",
+   "description": "American television series",
+   "hook": "follows an ex-FBI profiler haunted by visions of dark crimes",
+   "known": 0.3,
+   "kind": "sci-fi-drama"
+  },
+  {
+   "label": "Ashes to Ashes",
+   "qid": "Q725195",
+   "fame": 0.477,
+   "parent": "Life on Mars",
+   "description": "British television series",
+   "hook": "follows a modern police psychologist who wakes up decades in the past",
+   "known": 0.4,
+   "kind": "sci-fi-drama"
+  },
+  {
+   "label": "My Life as a Teenage Robot",
+   "qid": "Q786120",
+   "fame": 0.477,
+   "parent": "Oh Yeah! Cartoons",
+   "description": "American animated science fantasy television series",
+   "hook": "follows a mechanical heroine balancing high school with saving the planet",
+   "known": 0.5,
+   "kind": "animated-drama"
+  },
+  {
+   "label": "Empty Nest",
+   "qid": "Q130346",
+   "fame": 0.476,
+   "parent": "The Golden Girls",
+   "description": "American television sitcom",
+   "hook": "follows a Miami doctor whose adult daughters keep moving back in",
+   "known": 0.4,
+   "kind": "sitcom"
+  },
+  {
+   "label": "The Patrick Star Show",
+   "qid": "Q103821269",
+   "fame": 0.476,
+   "parent": "SpongeBob SquarePants",
+   "description": "animated spin-off of SpongeBob SquarePants",
+   "hook": "follows a dim-witted pink sea creature who hosts his own talk program",
+   "known": 0.5,
+   "kind": "animated-comedy"
+  },
+  {
+   "label": "Bunk'd",
+   "qid": "Q19903191",
+   "fame": 0.467,
+   "parent": "Jessie",
+   "description": "2015 American television series",
+   "hook": "follows teen counselors and campers at a Maine summer camp",
+   "known": 0.4,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Good Trouble",
+   "qid": "Q54024745",
+   "fame": 0.467,
+   "parent": "The Fosters",
+   "description": "television series",
+   "hook": "follows young adults starting careers in a shared Los Angeles co-living building",
+   "known": 0.3,
+   "kind": "drama"
+  },
+  {
+   "label": "Cory in the House",
+   "qid": "Q842118",
+   "fame": 0.462,
+   "parent": "That's So Raven",
+   "description": "American television sitcom",
+   "hook": "follows a boy whose dad becomes chef at the presidential residence",
+   "known": 0.5,
+   "kind": "sitcom"
+  },
+  {
+   "label": "The Bionic Woman",
+   "qid": "Q1216258",
+   "fame": 0.459,
+   "parent": "The Six Million Dollar Man",
+   "description": "American television series (1976)",
+   "hook": "follows a tennis pro rebuilt with robotic limbs after a skydiving crash",
+   "known": 0.4,
+   "kind": "sci-fi-drama"
+  },
+  {
+   "label": "Cow and Chicken",
+   "qid": "Q719872",
+   "fame": 0.458,
+   "parent": "What a Cartoon!",
+   "description": "American animated television series",
+   "hook": "follows odd siblings, a bovine girl and a feathered boy, plus a devil who pops up in disguises",
+   "known": 0.5,
+   "kind": "animated-comedy"
+  },
+  {
+   "label": "Harvey Birdman, Attorney at Law",
+   "qid": "Q2668194",
+   "fame": 0.455,
+   "parent": "Space Ghost Coast to Coast",
+   "description": "American animated television series 2000-2007",
+   "hook": "follows a former superhero turned lawyer defending cartoon characters in court",
+   "known": 0.5,
+   "kind": "animated-comedy"
+  },
+  {
+   "label": "Caprica",
+   "qid": "Q579554",
+   "fame": 0.454,
+   "parent": "Battlestar Galactica",
+   "description": "American television series",
+   "hook": "follows rival families on a distant world as they invent the first robotic soldiers",
+   "known": 0.25,
+   "kind": "sci-fi-drama"
+  },
+  {
+   "label": "Elena of Avalor",
+   "qid": "Q24574641",
+   "fame": 0.45,
+   "parent": "Sofia the First",
+   "description": "2016–2020 American animated television series",
+   "hook": "follows a teen princess who frees her kingdom from an evil sorceress",
+   "known": 0.3,
+   "kind": "animated-drama"
+  }
+ ]
+}

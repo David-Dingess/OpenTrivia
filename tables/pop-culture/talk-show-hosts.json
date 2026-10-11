@@ -1,0 +1,229 @@
+{
+ "id": "table.pop-culture.talk-show-hosts",
+ "kind": "table",
+ "title": "Talk-show hosts: their show",
+ "genre": "general",
+ "category": "pop-culture",
+ "topic": "tv",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?showLabel WHERE { VALUES (?item ?showLabel) { (wd:Q310819 \"The Tonight Show\") (wd:Q218718 \"The Tonight Show\") (wd:Q335680 \"The Tonight Show\") (wd:Q553276 \"The Tonight Show\") (wd:Q217298 \"Late Show\") (wd:Q212886 \"Late Show\") (wd:Q14536 \"Late Night\") (wd:Q72867 \"The Late Late Show\") (wd:Q767499 \"The Late Late Show\") (wd:Q211987 \"The Daily Show\") (wd:Q7839350 \"The Daily Show\") (wd:Q1701254 \"Last Week Tonight\") (wd:Q55800 \"Chicago daytime talk show\") (wd:Q4914 \"ABC late-night show\") (wd:Q49001 \"The View\") (wd:Q231417 \"The View\") (wd:Q1587581 \"The Tonight Show\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T06:56:28.954Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T13:09:17.154Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "show",
+   "label": "Their show",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "talk-show host",
+  "many": "talk-show hosts",
+  "columns": {
+   "show": {
+    "role": "link",
+    "pick": "Which show is the talk-show host {label} best known for?",
+    "statement": "{label} is best known for {value}.",
+    "match": "Match each talk-show host to the show they are best known for.",
+    "odd": "Three of these talk-show hosts are known for {value}. Which one is not?",
+    "all": "Tap all {n} talk-show hosts known for {value}.",
+    "reverse": "Which of these talk-show hosts is best known for {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Jimmy Fallon",
+   "qid": "Q335680",
+   "fame": 0.692,
+   "show": "The Tonight Show",
+   "description": "American talk show host and comedian (born 1974)",
+   "hook": "took over NBC's late-night desk and became known for music, games and lip-sync battles",
+   "known": 0.8,
+   "kind": "late night"
+  },
+  {
+   "label": "Oprah Winfrey",
+   "qid": "Q55800",
+   "fame": 0.691,
+   "show": "Chicago daytime talk show",
+   "description": "American talk show host, actress, producer, and author (born 1954)",
+   "hook": "became the Queen of All Media with a hugely popular conversation hour and a famous book club",
+   "known": 0.95,
+   "kind": "daytime"
+  },
+  {
+   "label": "Jimmy Kimmel",
+   "qid": "Q4914",
+   "fame": 0.683,
+   "show": "ABC late-night show",
+   "description": "American talk show host and comedian (born 1967)",
+   "hook": "fronts a network program with celebrity pranks and has emceed the Oscars several times",
+   "known": 0.8,
+   "kind": "late night"
+  },
+  {
+   "label": "Jon Stewart",
+   "qid": "Q211987",
+   "fame": 0.676,
+   "show": "The Daily Show",
+   "description": "American comedian, writer, producer, activist, and television host",
+   "hook": "led a satirical fake-news program on Comedy Central for sixteen seasons",
+   "known": 0.8,
+   "kind": "news comedy"
+  },
+  {
+   "label": "Whoopi Goldberg",
+   "qid": "Q49001",
+   "fame": 0.676,
+   "show": "The View",
+   "description": "American actress, comedian, author and television personality",
+   "hook": "is one of the few entertainers to win an Emmy, Grammy, Oscar and Tony",
+   "known": 0.8,
+   "kind": "daytime"
+  },
+  {
+   "label": "Stephen Colbert",
+   "qid": "Q212886",
+   "fame": 0.67,
+   "show": "Late Show",
+   "description": "American comedian and writer (born 1964)",
+   "hook": "played a fictional blowhard pundit on cable before taking over CBS's after-dark desk",
+   "known": 0.8,
+   "kind": "late night"
+  },
+  {
+   "label": "Johnny Carson",
+   "qid": "Q310819",
+   "fame": 0.667,
+   "show": "The Tonight Show",
+   "description": "American talk show host and comedian (1925–2005)",
+   "hook": "ruled late-night television for three decades with his monologues and couch chats",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Barbara Walters",
+   "qid": "Q231417",
+   "fame": 0.633,
+   "show": "The View",
+   "description": "American broadcast journalist (1929–2022)",
+   "hook": "was a trailblazing TV journalist famed for her celebrity interviews and for creating a daytime panel",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Jay Leno",
+   "qid": "Q218718",
+   "fame": 0.631,
+   "show": "The Tonight Show",
+   "description": "American television host and comedian (born 1950)",
+   "hook": "took over NBC late night from Carson and is a famous car collector",
+   "known": 0.8,
+   "kind": "late night"
+  },
+  {
+   "label": "David Letterman",
+   "qid": "Q217298",
+   "fame": 0.627,
+   "show": "Late Show",
+   "description": "American comedian and television host",
+   "hook": "was famed for his Top Ten lists, a gap-toothed grin and tossing things off his desk",
+   "known": 0.8,
+   "kind": "late night"
+  },
+  {
+   "label": "Trevor Noah",
+   "qid": "Q7839350",
+   "fame": 0.618,
+   "show": "The Daily Show",
+   "description": "South African comedian and television host",
+   "hook": "is a South African comedian who succeeded Jon Stewart at Comedy Central's satirical news desk",
+   "known": 0.6,
+   "kind": "news comedy"
+  },
+  {
+   "label": "Seth Meyers",
+   "qid": "Q14536",
+   "fame": 0.606,
+   "show": "Late Night",
+   "description": "American comedian, television host and actor",
+   "hook": "anchored the Weekend Update fake-news desk on SNL before hosting his own NBC program",
+   "known": 0.6,
+   "kind": "late night"
+  },
+  {
+   "label": "James Corden",
+   "qid": "Q767499",
+   "fame": 0.603,
+   "show": "The Late Late Show",
+   "description": "English actor, comedian, singer and television host (born 1978)",
+   "hook": "is an English comedian famous for his Carpool Karaoke segments and the sitcom Gavin & Stacey",
+   "known": 0.6,
+   "kind": "late night"
+  },
+  {
+   "label": "Craig Ferguson",
+   "qid": "Q72867",
+   "fame": 0.586,
+   "show": "The Late Late Show",
+   "description": "British actor",
+   "hook": "is a Scottish-born host who chatted with a skeleton robot sidekick and won a Peabody",
+   "known": 0.4,
+   "kind": "late night"
+  },
+  {
+   "label": "John Oliver",
+   "qid": "Q1701254",
+   "fame": 0.586,
+   "show": "Last Week Tonight",
+   "description": "British-American comedian and television host",
+   "hook": "is a British comedian who delivers long HBO rants on a weekly news-comedy program",
+   "known": 0.6,
+   "kind": "news comedy"
+  },
+  {
+   "label": "Steve Allen",
+   "qid": "Q553276",
+   "fame": 0.513,
+   "show": "The Tonight Show",
+   "description": "American actor, comedian, musician and presenter (1921–2000)",
+   "hook": null,
+   "known": 0.3,
+   "kind": "classic"
+  },
+  {
+   "label": "Jack Paar",
+   "qid": "Q1587581",
+   "fame": 0.45,
+   "show": "The Tonight Show",
+   "description": "American author, radio and television comedian and talk show host (1918-2004)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "classic"
+  }
+ ]
+}

@@ -1,0 +1,686 @@
+{
+ "id": "list.sports.premier-league-clubs",
+ "title": "Premier League clubs",
+ "prompt": "Name a club that has played in the Premier League",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "soccer",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?s wdt:P3450 wd:Q9448 ; wdt:P1923 ?item . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-09-30T04:16:54.806Z"
+ },
+ "rows": [
+  {
+   "label": "Manchester City F.C.",
+   "qid": "Q50602",
+   "fame": 0.814,
+   "also": [
+    "City",
+    "The Blues",
+    "The Citizens",
+    "Citizens",
+    "Man City",
+    "Sky Blues",
+    "The Sky Blues",
+    "Manchester City",
+    "Manchester City F.C. Soccer",
+    "Manchester City Football Club",
+    "MCFC"
+   ]
+  },
+  {
+   "label": "Chelsea F.C.",
+   "qid": "Q9616",
+   "fame": 0.795,
+   "also": [
+    "Chelsea",
+    "CFC",
+    "The Blues",
+    "Chelsea Football Club",
+    "The Pensioners"
+   ]
+  },
+  {
+   "label": "Manchester United F.C.",
+   "qid": "Q18656",
+   "fame": 0.783,
+   "also": [
+    "Manchester United",
+    "Red Devils",
+    "MUFC",
+    "Man U",
+    "Man United",
+    "Man Utd",
+    "Manchester United Football Club"
+   ]
+  },
+  {
+   "label": "Arsenal F.C.",
+   "qid": "Q9617",
+   "fame": 0.781,
+   "also": [
+    "AFC",
+    "Arsenal",
+    "The Arsenal",
+    "Arsenal Football Club",
+    "The Ars",
+    "The Arsenal F.C.",
+    "Arsenal London"
+   ]
+  },
+  {
+   "label": "Liverpool F.C.",
+   "qid": "Q1130849",
+   "fame": 0.772,
+   "also": [
+    "LFC",
+    "FC Liverpool",
+    "Liverpool Football Club",
+    "Liverpool"
+   ]
+  },
+  {
+   "label": "Tottenham Hotspur F.C.",
+   "qid": "Q18741",
+   "fame": 0.75,
+   "also": [
+    "Hotspur",
+    "Tottenham",
+    "The Lilywhites",
+    "Tottenham Hotspur",
+    "THFC",
+    "Spurs",
+    "Tottenham Hotspur Football Club"
+   ]
+  },
+  {
+   "label": "Brighton & Hove Albion F.C.",
+   "qid": "Q19453",
+   "fame": 0.728,
+   "also": [
+    "BHA",
+    "Brighton",
+    "Albion",
+    "Brighton and Hove",
+    "BHAFC",
+    "Brighton & Hove",
+    "Brighton & Hove Albion",
+    "Brighton & Hove Albion Football Club",
+    "Brighton and Hove Albion",
+    "Brighton and Hove Albion F.C.",
+    "Brighton and Hove Albion Football Club",
+    "Brighton F.C."
+   ]
+  },
+  {
+   "label": "Aston Villa F.C.",
+   "qid": "Q18711",
+   "fame": 0.726,
+   "also": [
+    "Aston Villa Football Club",
+    "AVFC",
+    "The Villans",
+    "Villa",
+    "The Villa",
+    "Aston Villa"
+   ]
+  },
+  {
+   "label": "Everton F.C.",
+   "qid": "Q5794",
+   "fame": 0.721,
+   "also": [
+    "Everton",
+    "The Blues",
+    "EFC",
+    "Everton Football Club",
+    "The Toffees"
+   ]
+  },
+  {
+   "label": "Hull City A.F.C.",
+   "qid": "Q19477",
+   "fame": 0.72,
+   "also": [
+    "City",
+    "Hull",
+    "The Tigers",
+    "HCAFC",
+    "Hull City",
+    "Hull City Association Football Club"
+   ]
+  },
+  {
+   "label": "Newcastle United F.C.",
+   "qid": "Q18716",
+   "fame": 0.702,
+   "also": [
+    "Newcastle",
+    "The Magpies",
+    "Newcastle United",
+    "Newcastle United Football Club",
+    "NUFC"
+   ]
+  },
+  {
+   "label": "Ipswich Town F.C.",
+   "qid": "Q9653",
+   "fame": 0.696,
+   "also": [
+    "Ipswich",
+    "Town",
+    "The Blues",
+    "ITFC",
+    "Ipswich Town",
+    "Ipswich Town Football Club",
+    "The Tractor Boys"
+   ]
+  },
+  {
+   "label": "West Ham United F.C.",
+   "qid": "Q18747",
+   "fame": 0.696,
+   "also": [
+    "United",
+    "WHU",
+    "The Hammers",
+    "The Irons",
+    "West Ham",
+    "West Ham United",
+    "West Ham United Football Club",
+    "WHUFC"
+   ]
+  },
+  {
+   "label": "Leicester City F.C.",
+   "qid": "Q19481",
+   "fame": 0.689,
+   "also": [
+    "City",
+    "Leicester",
+    "Leicester City",
+    "LCFC",
+    "The Foxes",
+    "Leicester City Football Club",
+    "Leicester Fosse",
+    "Leicester Fosse FC",
+    "Leicester Fosse Football Club"
+   ]
+  },
+  {
+   "label": "Crystal Palace F.C.",
+   "qid": "Q19467",
+   "fame": 0.684,
+   "also": [
+    "Palace",
+    "Crystal Palace",
+    "The Eagles",
+    "CPFC",
+    "Crystal Palace Football Club",
+    "The Glaziers"
+   ]
+  },
+  {
+   "label": "Leeds United F.C.",
+   "qid": "Q1128631",
+   "fame": 0.683,
+   "also": [
+    "United",
+    "L.U.F.C.",
+    "Leeds United",
+    "Leeds United A.F.C.",
+    "Leeds United Association Football Club",
+    "Leeds United Football Club",
+    "Leeds Utd",
+    "The Peacocks",
+    "Leeds"
+   ]
+  },
+  {
+   "label": "Sunderland A.F.C.",
+   "qid": "Q18739",
+   "fame": 0.678,
+   "also": [
+    "Sunderland",
+    "SAFC",
+    "Sunderland Association Football Club",
+    "The Black Cats"
+   ]
+  },
+  {
+   "label": "Coventry City F.C.",
+   "qid": "Q19580",
+   "fame": 0.667,
+   "also": [
+    "Coventry",
+    "City",
+    "CCFC",
+    "Sky Blues",
+    "Coventry City",
+    "Coventry City Football Club"
+   ]
+  },
+  {
+   "label": "Brentford F.C.",
+   "qid": "Q19571",
+   "fame": 0.665,
+   "also": [
+    "Brentford",
+    "BFC",
+    "The Bees",
+    "Brentford Football Club"
+   ]
+  },
+  {
+   "label": "Fulham F.C.",
+   "qid": "Q18708",
+   "fame": 0.665,
+   "also": [
+    "The Cottagers",
+    "Fulham",
+    "FFC",
+    "Fulham Football Club"
+   ]
+  },
+  {
+   "label": "Nottingham Forest F.C.",
+   "qid": "Q19490",
+   "fame": 0.664,
+   "also": [
+    "Forest",
+    "The Reds",
+    "NFFC",
+    "Nottingham Forest",
+    "Nottingham Forest Football Club",
+    "Nottm Forest",
+    "Tricky Trees"
+   ]
+  },
+  {
+   "label": "AFC Bournemouth",
+   "qid": "Q19568",
+   "fame": 0.657,
+   "also": [
+    "Bournemouth",
+    "Boscombe",
+    "The Cherries",
+    "AFCB",
+    "Boscombe F.C.",
+    "Boscombe Football Club",
+    "Bournemouth and Boscombe Athletic",
+    "Bournemouth and Boscombe Athletic F.C.",
+    "Bournemouth and Boscombe Athletic Football Club"
+   ]
+  },
+  {
+   "label": "Burnley F.C.",
+   "qid": "Q19458",
+   "fame": 0.653,
+   "also": [
+    "Burnley",
+    "BFC",
+    "Burnley Football Club",
+    "The Clarets"
+   ]
+  },
+  {
+   "label": "Wolverhampton Wanderers F.C.",
+   "qid": "Q19500",
+   "fame": 0.644,
+   "also": [
+    "Wolves",
+    "Wolverhampton",
+    "Wanderers",
+    "WWFC",
+    "Wolverhampton FC Wolves",
+    "Wolverhampton Wanderers",
+    "Wolverhampton Wanderers Football Club",
+    "Wolverhampton Wolves",
+    "Wolverhampton Wolves FC"
+   ]
+  },
+  {
+   "label": "Blackburn Rovers F.C.",
+   "qid": "Q19446",
+   "fame": 0.636,
+   "also": [
+    "Blackburn",
+    "Rovers",
+    "Blackburn Rovers",
+    "Blackburn Rovers Football Club",
+    "BRFC"
+   ]
+  },
+  {
+   "label": "Southampton F.C.",
+   "qid": "Q18732",
+   "fame": 0.618,
+   "also": [
+    "Southampton",
+    "S.F.C.",
+    "Southampton Football Club"
+   ]
+  },
+  {
+   "label": "Queens Park Rangers F.C.",
+   "qid": "Q18723",
+   "fame": 0.617,
+   "also": [
+    "The Hoops",
+    "QPRFC",
+    "Queens Park Rangers",
+    "Queens Park Rangers Football Club",
+    "The Rs"
+   ]
+  },
+  {
+   "label": "Swansea City A.F.C.",
+   "qid": "Q18659",
+   "fame": 0.61,
+   "also": [
+    "City",
+    "Swansea",
+    "The Jacks",
+    "The Swans",
+    "SCAFC",
+    "Swansea City",
+    "Swansea City Association Football Club"
+   ]
+  },
+  {
+   "label": "Sheffield Wednesday F.C.",
+   "qid": "Q19498",
+   "fame": 0.609,
+   "also": [
+    "Wednesday",
+    "The Owls",
+    "SWFC",
+    "Sheff Wed",
+    "Sheffield Wednesday",
+    "Sheffield Wednesday Football Club"
+   ]
+  },
+  {
+   "label": "Middlesbrough F.C.",
+   "qid": "Q18661",
+   "fame": 0.608,
+   "also": [
+    "MFC",
+    "Middlesbrough",
+    "The Boro",
+    "Middlesbrough Football Club"
+   ]
+  },
+  {
+   "label": "Sheffield United F.C.",
+   "qid": "Q19607",
+   "fame": 0.607,
+   "also": [
+    "United",
+    "The Blades",
+    "SUFC",
+    "Sheff Utd",
+    "Sheffield United",
+    "Sheffield United Football Club"
+   ]
+  },
+  {
+   "label": "West Bromwich Albion F.C.",
+   "qid": "Q18744",
+   "fame": 0.597,
+   "also": [
+    "The Albion",
+    "The Baggies",
+    "The Throstles",
+    "WBAFC",
+    "West Brom",
+    "West Bromwich Albion",
+    "West Bromwich Albion Football Club"
+   ]
+  },
+  {
+   "label": "Bolton Wanderers F.C.",
+   "qid": "Q19451",
+   "fame": 0.596,
+   "also": [
+    "Bolton",
+    "Wanderers",
+    "Bolton Wanderers",
+    "Bolton Wanderers Football Club",
+    "BWFC",
+    "The Trotters"
+   ]
+  },
+  {
+   "label": "Charlton Athletic F.C.",
+   "qid": "Q19462",
+   "fame": 0.595,
+   "also": [
+    "Athletic",
+    "Charlton",
+    "CAFC",
+    "Charlton Athletic",
+    "Charlton Athletic Football Club",
+    "The Addicks"
+   ]
+  },
+  {
+   "label": "Stoke City F.C.",
+   "qid": "Q18736",
+   "fame": 0.592,
+   "also": [
+    "City",
+    "Stoke",
+    "The Potters",
+    "SCFC",
+    "Stoke City",
+    "Stoke City Football Club"
+   ]
+  },
+  {
+   "label": "Birmingham City F.C.",
+   "qid": "Q19444",
+   "fame": 0.59,
+   "also": [
+    "City",
+    "Birmingham",
+    "Blues",
+    "BCFC",
+    "Birmingham City",
+    "Birmingham City Football Club"
+   ]
+  },
+  {
+   "label": "Derby County F.C.",
+   "qid": "Q19470",
+   "fame": 0.59,
+   "also": [
+    "Derby",
+    "DCFC",
+    "The Rams",
+    "County",
+    "Derby County"
+   ]
+  },
+  {
+   "label": "Norwich City F.C.",
+   "qid": "Q18721",
+   "fame": 0.587,
+   "also": [
+    "City",
+    "Norwich",
+    "NCFC",
+    "Norwich City",
+    "Norwich City Football Club",
+    "The Canaries"
+   ]
+  },
+  {
+   "label": "Watford F.C.",
+   "qid": "Q2714",
+   "fame": 0.572,
+   "also": [
+    "WFC",
+    "Watford",
+    "The Hornets",
+    "Watford Football Club"
+   ]
+  },
+  {
+   "label": "Luton Town F.C.",
+   "qid": "Q18520",
+   "fame": 0.566,
+   "also": [
+    "Town",
+    "Luton",
+    "LTFC",
+    "The Hatters",
+    "Luton Town",
+    "Luton Town Football Club"
+   ]
+  },
+  {
+   "label": "Portsmouth F.C.",
+   "qid": "Q19604",
+   "fame": 0.563,
+   "also": [
+    "Portsmouth",
+    "PFC",
+    "Pompey",
+    "Portsmouth Football Club"
+   ]
+  },
+  {
+   "label": "Wimbledon F.C.",
+   "qid": "Q19482",
+   "fame": 0.559,
+   "also": [
+    "Wimbledon",
+    "Wimbledon Football Club"
+   ]
+  },
+  {
+   "label": "Cardiff City F.C.",
+   "qid": "Q18662",
+   "fame": 0.558,
+   "also": [
+    "Cardiff",
+    "City",
+    "CCFC",
+    "The Bluebirds",
+    "Cardiff City",
+    "Cardiff City Football Club"
+   ]
+  },
+  {
+   "label": "Wigan Athletic F.C.",
+   "qid": "Q18750",
+   "fame": 0.552,
+   "also": [
+    "Athletic",
+    "Wigan",
+    "WAFC",
+    "The Latics",
+    "Wigan Athletic",
+    "Wigan Athletic Football Club"
+   ]
+  },
+  {
+   "label": "Bradford City A.F.C.",
+   "qid": "Q48879",
+   "fame": 0.551,
+   "also": [
+    "City",
+    "Bradford",
+    "The Citizens",
+    "BCAFC",
+    "Bradford City",
+    "Bradford City Association Football Club",
+    "The Bantams",
+    "The Paraders"
+   ]
+  },
+  {
+   "label": "Reading F.C.",
+   "qid": "Q18729",
+   "fame": 0.546,
+   "also": [
+    "Reading",
+    "RFC",
+    "The Royals",
+    "Reading Football Club"
+   ]
+  },
+  {
+   "label": "Huddersfield Town A.F.C.",
+   "qid": "Q19473",
+   "fame": 0.531,
+   "also": [
+    "Town",
+    "Huddersfield",
+    "HTFC",
+    "HTAFC",
+    "Huddersfield Town",
+    "Huddersfield Town Association Football Club",
+    "Huddersfield Town FC",
+    "Huddersfield Town Football Club",
+    "The Terriers"
+   ]
+  },
+  {
+   "label": "Barnsley F.C.",
+   "qid": "Q19442",
+   "fame": 0.523,
+   "also": [
+    "Barnsley",
+    "The Reds",
+    "BFC",
+    "Barnsley Football Club",
+    "Barnsley St. Peter's",
+    "The Tykes"
+   ]
+  },
+  {
+   "label": "Blackpool F.C.",
+   "qid": "Q19449",
+   "fame": 0.517,
+   "also": [
+    "The Pool",
+    "Blackpool",
+    "BFC",
+    "The Tangerines",
+    "Blackpool Football Club",
+    "The Seasiders"
+   ]
+  },
+  {
+   "label": "Swindon Town F.C.",
+   "qid": "Q19634",
+   "fame": 0.513,
+   "also": [
+    "Town",
+    "Swindon",
+    "STFC",
+    "The Robins",
+    "Swindon Town",
+    "Swindon Town Football Club"
+   ]
+  },
+  {
+   "label": "Oldham Athletic A.F.C.",
+   "qid": "Q19601",
+   "fame": 0.51,
+   "also": [
+    "Athletic",
+    "Oldham",
+    "OAAFC",
+    "Latics",
+    "Oldham Athletic",
+    "Oldham Athletic Association Football Club"
+   ]
+  }
+ ]
+}

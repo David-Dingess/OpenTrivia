@@ -1,0 +1,192 @@
+{
+ "id": "table.food-and-drink.cheeses-country",
+ "kind": "table",
+ "title": "Cheeses and their country of origin",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "ingredients",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { VALUES (?article ?countryLabel) { (<https://en.wikipedia.org/wiki/Parmesan> \"Italy\") (<https://en.wikipedia.org/wiki/Paneer> \"India\") (<https://en.wikipedia.org/wiki/Pecorino> \"Italy\") (<https://en.wikipedia.org/wiki/Gruyère> \"Switzerland\") (<https://en.wikipedia.org/wiki/Cotija> \"Mexico\") (<https://en.wikipedia.org/wiki/Camembert_(cheese)> \"France\") (<https://en.wikipedia.org/wiki/Roquefort_cheese> \"France\") (<https://en.wikipedia.org/wiki/Stilton> \"England\") (<https://en.wikipedia.org/wiki/Emmental> \"Switzerland\") (<https://en.wikipedia.org/wiki/Provolone_cheese> \"Italy\") (<https://en.wikipedia.org/wiki/Manchego_cheese> \"Spain\") (<https://en.wikipedia.org/wiki/Asiago> \"Italy\") (<https://en.wikipedia.org/wiki/Edam> \"Netherlands\") (<https://en.wikipedia.org/wiki/Havarti_cheese> \"Denmark\") (<https://en.wikipedia.org/wiki/Jarlsberg> \"Norway\") (<https://en.wikipedia.org/wiki/Colby> \"United States\") (<https://en.wikipedia.org/wiki/Limburger_cheese> \"Belgium\") (<https://en.wikipedia.org/wiki/Fontina_cheese> \"Italy\") (<https://en.wikipedia.org/wiki/Tilsit> \"Germany\") (<https://en.wikipedia.org/wiki/Munster> \"France\") (<https://en.wikipedia.org/wiki/Cheddar_cheese> \"England\") (<https://en.wikipedia.org/wiki/Brie> \"France\") (<https://en.wikipedia.org/wiki/Camembert> \"France\") (<https://en.wikipedia.org/wiki/Roquefort> \"France\") (<https://en.wikipedia.org/wiki/Gouda_cheese> \"Netherlands\") (<https://en.wikipedia.org/wiki/Edam_cheese> \"Netherlands\") (<https://en.wikipedia.org/wiki/Emmental_cheese> \"Switzerland\") (<https://en.wikipedia.org/wiki/Gruyère_cheese> \"Switzerland\") (<https://en.wikipedia.org/wiki/Gorgonzola> \"Italy\") (<https://en.wikipedia.org/wiki/Parmigiano-Reggiano> \"Italy\") (<https://en.wikipedia.org/wiki/Mozzarella> \"Italy\") (<https://en.wikipedia.org/wiki/Ricotta> \"Italy\") (<https://en.wikipedia.org/wiki/Provolone> \"Italy\") (<https://en.wikipedia.org/wiki/Pecorino_Romano> \"Italy\") (<https://en.wikipedia.org/wiki/Mascarpone> \"Italy\") (<https://en.wikipedia.org/wiki/Asiago_cheese> \"Italy\") (<https://en.wikipedia.org/wiki/Feta> \"Greece\") (<https://en.wikipedia.org/wiki/Halloumi> \"Cyprus\") (<https://en.wikipedia.org/wiki/Manchego> \"Spain\") (<https://en.wikipedia.org/wiki/Cotija_cheese> \"Mexico\") (<https://en.wikipedia.org/wiki/Stilton_cheese> \"England\") (<https://en.wikipedia.org/wiki/Wensleydale_cheese> \"England\") (<https://en.wikipedia.org/wiki/Red_Leicester> \"England\") (<https://en.wikipedia.org/wiki/Cheshire_cheese> \"England\") (<https://en.wikipedia.org/wiki/Double_Gloucester> \"England\") (<https://en.wikipedia.org/wiki/Havarti> \"Denmark\") (<https://en.wikipedia.org/wiki/Danish_Blue> \"Denmark\") (<https://en.wikipedia.org/wiki/Jarlsberg_cheese> \"Norway\") (<https://en.wikipedia.org/wiki/Gjetost> \"Norway\") (<https://en.wikipedia.org/wiki/Limburger> \"Belgium\") (<https://en.wikipedia.org/wiki/Raclette> \"Switzerland\") (<https://en.wikipedia.org/wiki/Appenzeller_cheese> \"Switzerland\") (<https://en.wikipedia.org/wiki/Munster_cheese> \"France\") (<https://en.wikipedia.org/wiki/Comté_cheese> \"France\") (<https://en.wikipedia.org/wiki/Reblochon> \"France\") (<https://en.wikipedia.org/wiki/Époisses_de_Bourgogne> \"France\") (<https://en.wikipedia.org/wiki/Boursin> \"France\") (<https://en.wikipedia.org/wiki/Mimolette> \"France\") (<https://en.wikipedia.org/wiki/Port_Salut> \"France\") (<https://en.wikipedia.org/wiki/Tilsit_cheese> \"Germany\") (<https://en.wikipedia.org/wiki/Oaxaca_cheese> \"Mexico\") (<https://en.wikipedia.org/wiki/Fontina> \"Italy\") (<https://en.wikipedia.org/wiki/Taleggio_cheese> \"Italy\") (<https://en.wikipedia.org/wiki/Burrata> \"Italy\") (<https://en.wikipedia.org/wiki/Grana_Padano> \"Italy\") (<https://en.wikipedia.org/wiki/Monterey_Jack> \"United States\") (<https://en.wikipedia.org/wiki/Colby_cheese> \"United States\") (<https://en.wikipedia.org/wiki/Pepper_Jack> \"United States\") (<https://en.wikipedia.org/wiki/Caerphilly_cheese> \"Wales\") (<https://en.wikipedia.org/wiki/Lancashire_cheese> \"England\") (<https://en.wikipedia.org/wiki/Dubliner_cheese> \"Ireland\") (<https://en.wikipedia.org/wiki/Cabrales_cheese> \"Spain\") (<https://en.wikipedia.org/wiki/Cantal_cheese> \"France\") (<https://en.wikipedia.org/wiki/Beaufort_cheese> \"France\") (<https://en.wikipedia.org/wiki/Brie_de_Meaux> \"France\") (<https://en.wikipedia.org/wiki/Neufchâtel_cheese> \"France\") (<https://en.wikipedia.org/wiki/Humboldt_Fog> \"United States\") (<https://en.wikipedia.org/wiki/Pecorino_Toscano> \"Italy\") (<https://en.wikipedia.org/wiki/Scamorza> \"Italy\") (<https://en.wikipedia.org/wiki/Caciocavallo> \"Italy\") (<https://en.wikipedia.org/wiki/Quark_(dairy_product)> \"Germany\") (<https://en.wikipedia.org/wiki/Brunost> \"Norway\") } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T09:54:57.583Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T12:30:00.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country of origin",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "cheese",
+  "many": "cheeses",
+  "capitalise": false,
+  "wildcard": "food",
+  "hookAsk": "Which cheese {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country does {label} come from?",
+    "statement": "{label} comes from {value}.",
+    "match": "Match each cheese to the country it comes from.",
+    "odd": "Three of these cheeses come from {value}. Which one doesn't?",
+    "all": "Tap all {n} cheeses from {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "halloumi",
+   "qid": "Q549793",
+   "fame": 0.541,
+   "country": "Cyprus",
+   "description": "Cypriot semi-hard, unripened brined cheese",
+   "hook": null,
+   "known": 0.2,
+   "kind": "brined cheese"
+  },
+  {
+   "label": "Parmesan",
+   "qid": "Q155922",
+   "fame": 0.518,
+   "country": "Italy",
+   "description": "Italian hard cheese",
+   "hook": "is the hard, granular cheese aged for at least a year and grated over pasta and risotto",
+   "known": 0.95,
+   "kind": "hard cheese"
+  },
+  {
+   "label": "burrata",
+   "qid": "Q543512",
+   "fame": 0.516,
+   "country": "Italy",
+   "description": "Italian cheese",
+   "hook": "has a solid mozzarella shell that is filled with soft shreds and cream",
+   "known": 0.4,
+   "kind": "soft cheese"
+  },
+  {
+   "label": "Cheddar cheese",
+   "qid": "Q217525",
+   "fame": 0.516,
+   "country": "England",
+   "description": "type of cheese that is somewhat hard and often sharp",
+   "hook": "takes its name from a Somerset village and is often sharp, with a version coloured orange by annatto",
+   "known": 0.95,
+   "kind": "hard cheese"
+  },
+  {
+   "label": "paneer",
+   "qid": "Q1139546",
+   "fame": 0.507,
+   "country": "India",
+   "description": "fresh cheese common in the Indian subcontinent",
+   "hook": "is a fresh, non-melting curd made by curdling milk with acid, cubed into curries",
+   "known": 0.4,
+   "kind": "soft cheese"
+  },
+  {
+   "label": "mascarpone",
+   "qid": "Q209889",
+   "fame": 0.501,
+   "country": "Italy",
+   "description": "soft Italian dairy product made by acid-heat coagulation of cream",
+   "hook": "is a rich, spreadable cream product best known as the filling of tiramisu",
+   "known": 0.8,
+   "kind": "soft cheese"
+  },
+  {
+   "label": "mozzarella",
+   "qid": "Q14088",
+   "fame": 0.479,
+   "country": "Italy",
+   "description": "Italian cheese",
+   "hook": "is the stretchy, melting topping that gives pizza its famous cheese pull",
+   "known": 0.95,
+   "kind": "soft cheese"
+  },
+  {
+   "label": "feta",
+   "qid": "Q182760",
+   "fame": 0.475,
+   "country": "Greece",
+   "description": "brined white cheese from Greece",
+   "hook": "is a tangy, crumbly white cheese aged in brine and tossed into salads",
+   "known": 0.8,
+   "kind": "brined cheese"
+  },
+  {
+   "label": "raclette",
+   "qid": "Q20748",
+   "fame": 0.475,
+   "country": "Switzerland",
+   "description": "A Swiss national dish",
+   "hook": null,
+   "known": 0.2,
+   "kind": "specialty cheese"
+  },
+  {
+   "label": "ricotta",
+   "qid": "Q216781",
+   "fame": 0.456,
+   "country": "Italy",
+   "description": "Italian whey cheese",
+   "hook": "is a soft, grainy whey cheese used in lasagna and cannoli filling",
+   "known": 0.6,
+   "kind": "soft cheese"
+  },
+  {
+   "label": "Gouda",
+   "qid": "Q593675",
+   "fame": 0.454,
+   "country": "Netherlands",
+   "description": "Dutch yellow cheese made from cow's milk",
+   "hook": "is a mild yellow cow-milk cheese that turns harder and sharper with age, often sold in wax-coated wheels",
+   "known": 0.6,
+   "kind": "hard cheese"
+  },
+  {
+   "label": "Grana Padano",
+   "qid": "Q940319",
+   "fame": 0.453,
+   "country": "Italy",
+   "description": "Italian PDO cheese",
+   "hook": "is a hard, crumbly cheese similar to Parmesan but cheaper and less strictly regulated",
+   "known": 0.4,
+   "kind": "hard cheese"
+  },
+  {
+   "label": "brunost",
+   "qid": "Q629718",
+   "fame": 0.45,
+   "country": "Norway",
+   "description": "Norwegian cheese",
+   "hook": null,
+   "known": 0.05,
+   "kind": "specialty cheese"
+  }
+ ]
+}

@@ -1,0 +1,597 @@
+{
+ "id": "list.geography.countries-of-asia",
+ "title": "Countries of Asia",
+ "prompt": "Name a country in Asia",
+ "genre": "society",
+ "category": "geography",
+ "topic": "borders-and-maps",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q3624078 ; wdt:P30 wd:Q48 . FILTER NOT EXISTS { ?item wdt:P576 [] } FILTER NOT EXISTS { ?item wdt:P31 wd:Q3024240 } } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-09-30T04:13:33.029Z"
+ },
+ "rows": [
+  {
+   "label": "India",
+   "qid": "Q668",
+   "fame": 0.815,
+   "also": [
+    "IND",
+    "Hindustan",
+    "Bharat",
+    "Bharata",
+    "Tianzhu",
+    "Hindoostan",
+    "Al Hind",
+    "Bharatvarsh",
+    "Tenjiku",
+    "Bharat Ganarajya",
+    "Indostan",
+    "Republic of India"
+   ]
+  },
+  {
+   "label": "People's Republic of China",
+   "qid": "Q148",
+   "fame": 0.799,
+   "also": [
+    "China",
+    "China PR",
+    "P.R.C.",
+    "PR China",
+    "The PRC",
+    "Red China",
+    "Communist China",
+    "the People's Republic of China",
+    "Zhongguo"
+   ]
+  },
+  {
+   "label": "Israel",
+   "qid": "Q801",
+   "fame": 0.79,
+   "also": [
+    "State of Israel",
+    "ISR",
+    "Yisrael"
+   ]
+  },
+  {
+   "label": "Russia",
+   "qid": "Q159",
+   "fame": 0.79,
+   "also": [
+    "RUS",
+    "Russian Federation"
+   ]
+  },
+  {
+   "label": "Japan",
+   "qid": "Q17",
+   "fame": 0.779,
+   "also": [
+    "JAP",
+    "JPN",
+    "Nihon",
+    "Land of the Rising Sun",
+    "Nippon",
+    "Iapan",
+    "Iapon",
+    "Land of Rising Sun",
+    "Nihon-koku",
+    "Nippon-koku",
+    "State of Japan"
+   ]
+  },
+  {
+   "label": "Yemen",
+   "qid": "Q805",
+   "fame": 0.779,
+   "also": [
+    "Rep. Yemen",
+    "Republic of Yemen",
+    "YEM"
+   ]
+  },
+  {
+   "label": "Singapore",
+   "qid": "Q334",
+   "fame": 0.777,
+   "also": [
+    "Garden City",
+    "Lion City",
+    "Singapore City",
+    "Republic of Singapore",
+    "S'pore",
+    "SGP",
+    "SIN"
+   ]
+  },
+  {
+   "label": "Nepal",
+   "qid": "Q837",
+   "fame": 0.771,
+   "also": [
+    "Palpa",
+    "Balbo",
+    "Nekbal",
+    "Bal-po'i yul",
+    "Bal-yul",
+    "Balpo",
+    "Balpo-yul",
+    "Federal Democratic Republic of Nepal",
+    "Naipál",
+    "Naipala",
+    "Ne-pel",
+    "Necbal"
+   ]
+  },
+  {
+   "label": "Kazakhstan",
+   "qid": "Q232",
+   "fame": 0.77,
+   "also": [
+    "Republic of Kazakhstan",
+    "Republic of Qazaqstan",
+    "KAZ",
+    "Qazaqstan"
+   ]
+  },
+  {
+   "label": "Turkey",
+   "qid": "Q43",
+   "fame": 0.761,
+   "also": [
+    "Republic of Turkey",
+    "Republic of Türkiye",
+    "TUR",
+    "Türkiye"
+   ]
+  },
+  {
+   "label": "Palestine",
+   "qid": "Q219060",
+   "fame": 0.76,
+   "also": [
+    "State of Palestine",
+    "PSE",
+    "Palestinian Authority",
+    "Palestinian National Authority"
+   ]
+  },
+  {
+   "label": "Iran",
+   "qid": "Q794",
+   "fame": 0.759,
+   "also": [
+    "IRI",
+    "IRN",
+    "Islamic Rep. Iran",
+    "Islamic Republic of Iran"
+   ]
+  },
+  {
+   "label": "Philippines",
+   "qid": "Q928",
+   "fame": 0.757,
+   "also": [
+    "Republic of the Philippines",
+    "Philippine Islands",
+    "The Philippines",
+    "PHI",
+    "PHL"
+   ]
+  },
+  {
+   "label": "Indonesia",
+   "qid": "Q252",
+   "fame": 0.754,
+   "also": [
+    "IDN",
+    "Republik Indonesia",
+    "INA",
+    "Republic of Indonesia"
+   ]
+  },
+  {
+   "label": "Taiwan",
+   "qid": "Q865",
+   "fame": 0.754,
+   "also": [
+    "Taiwan ROC",
+    "Chunghwa Minkuo",
+    "Chunghwa Minkwo",
+    "The ROC",
+    "Republic of China",
+    "Nationalist China",
+    "Free China",
+    "Chinese Republic",
+    "ROC",
+    "Chinese Taipei",
+    "TWN"
+   ]
+  },
+  {
+   "label": "Azerbaijan",
+   "qid": "Q227",
+   "fame": 0.752,
+   "also": [
+    "Republic of Azerbaijan",
+    "AZE",
+    "Azərbaycan",
+    "Azərbaycan Respublikası"
+   ]
+  },
+  {
+   "label": "Saudi Arabia",
+   "qid": "Q851",
+   "fame": 0.752,
+   "also": [
+    "SAU",
+    "KSA",
+    "Kingdom of Saudi Arabia",
+    "Saudi"
+   ]
+  },
+  {
+   "label": "Afghanistan",
+   "qid": "Q889",
+   "fame": 0.744,
+   "also": [
+    "Affghanistan",
+    "Affghanisthan",
+    "Affghaunistan",
+    "Afghania",
+    "Afghanisthan",
+    "Afghaunistan",
+    "Afghaunistaun",
+    "AFG"
+   ]
+  },
+  {
+   "label": "Pakistan",
+   "qid": "Q843",
+   "fame": 0.744,
+   "also": [
+    "Islamic Republic of Pakistan",
+    "Republic of Pakistan",
+    "PAK",
+    "Hồi Quốc",
+    "Tây Hồi"
+   ]
+  },
+  {
+   "label": "United Arab Emirates",
+   "qid": "Q878",
+   "fame": 0.744,
+   "also": [
+    "Emirates",
+    "the United Arab Emirates",
+    "ARE",
+    "the Emirates",
+    "the U.A.E.",
+    "U.A.E."
+   ]
+  },
+  {
+   "label": "Malaysia",
+   "qid": "Q833",
+   "fame": 0.739,
+   "also": [
+    "Federation of Malaysia",
+    "Malaysia Federation",
+    "MAS",
+    "MYS"
+   ]
+  },
+  {
+   "label": "Myanmar",
+   "qid": "Q836",
+   "fame": 0.736,
+   "also": [
+    "Republic of the Union of Myanmar",
+    "MMR",
+    "MYA",
+    "Union of Burma",
+    "Birma",
+    "BUR",
+    "Burma",
+    "Birmania"
+   ]
+  },
+  {
+   "label": "Kyrgyzstan",
+   "qid": "Q813",
+   "fame": 0.735,
+   "also": [
+    "Kyrgyz Republic",
+    "KGZ"
+   ]
+  },
+  {
+   "label": "Vietnam",
+   "qid": "Q881",
+   "fame": 0.733,
+   "also": [
+    "Cộng hòa Xã hội chủ nghĩa Việt Nam",
+    "Socialist Republic of Vietnam",
+    "VNM",
+    "SRV",
+    "VIE"
+   ]
+  },
+  {
+   "label": "North Korea",
+   "qid": "Q423",
+   "fame": 0.732,
+   "also": [
+    "DPR Korea",
+    "Democratic People's Republic of Korea",
+    "DPRK",
+    "PRK"
+   ]
+  },
+  {
+   "label": "Armenia",
+   "qid": "Q399",
+   "fame": 0.727,
+   "also": [
+    "Hayastan",
+    "Hayastani Hanrapetut’yun",
+    "Republic of Armenia",
+    "ARM"
+   ]
+  },
+  {
+   "label": "Sri Lanka",
+   "qid": "Q854",
+   "fame": 0.727,
+   "also": [
+    "SRI",
+    "Ceylan",
+    "Serendib",
+    "Taprobane",
+    "Democratic Socialist Republic of Sri Lanka",
+    "lke",
+    "LKA",
+    "Ceylon"
+   ]
+  },
+  {
+   "label": "Uzbekistan",
+   "qid": "Q265",
+   "fame": 0.726,
+   "also": [
+    "Republic of Uzbekistan",
+    "UZB"
+   ]
+  },
+  {
+   "label": "Bangladesh",
+   "qid": "Q902",
+   "fame": 0.724,
+   "also": [
+    "Country of Bengal",
+    "Land of Bengal",
+    "People's Republic of Bangladesh",
+    "BAN",
+    "BGD"
+   ]
+  },
+  {
+   "label": "South Korea",
+   "qid": "Q884",
+   "fame": 0.721,
+   "also": [
+    "ROK",
+    "Republic of Korea",
+    "Silla",
+    "Choson",
+    "Hanguk",
+    "Daehan Minguk",
+    "Korea Republic",
+    "Rep. Korea",
+    "KOR"
+   ]
+  },
+  {
+   "label": "Thailand",
+   "qid": "Q869",
+   "fame": 0.717,
+   "also": [
+    "THA",
+    "The Kingdom of Siam",
+    "The Kingdom of Thailand",
+    "Prathet Thai",
+    "Ratcha-anachak Thai",
+    "Thai",
+    "Siam",
+    "Kingdom of Siam",
+    "Kingdom of Thailand"
+   ]
+  },
+  {
+   "label": "Syria",
+   "qid": "Q858",
+   "fame": 0.705,
+   "also": [
+    "Surya",
+    "Syrian Arab Republic",
+    "SYR"
+   ]
+  },
+  {
+   "label": "Mongolia",
+   "qid": "Q711",
+   "fame": 0.701,
+   "also": [
+    "Mongol State",
+    "State of Mongolia",
+    "MNG"
+   ]
+  },
+  {
+   "label": "Maldives",
+   "qid": "Q826",
+   "fame": 0.691,
+   "also": [
+    "MDV",
+    "Republic of Maldives"
+   ]
+  },
+  {
+   "label": "Lebanon",
+   "qid": "Q822",
+   "fame": 0.69,
+   "also": [
+    "Lebanese Republic",
+    "Lubnan",
+    "Republic of Lebanon",
+    "State of Lebanon",
+    "LBN"
+   ]
+  },
+  {
+   "label": "Turkmenistan",
+   "qid": "Q874",
+   "fame": 0.687,
+   "also": [
+    "TKM",
+    "Turkmenia"
+   ]
+  },
+  {
+   "label": "Bhutan",
+   "qid": "Q917",
+   "fame": 0.684,
+   "also": [
+    "BHU",
+    "Kingdom of Bhutan"
+   ]
+  },
+  {
+   "label": "Jordan",
+   "qid": "Q810",
+   "fame": 0.682,
+   "also": [
+    "HKJ",
+    "Yarden",
+    "Giordania",
+    "Hashemite Kingdom of Jordan",
+    "ISO 3166-1:JO",
+    "Kingdom of Jordan",
+    "State of Jordan",
+    "JOR"
+   ]
+  },
+  {
+   "label": "Iraq",
+   "qid": "Q796",
+   "fame": 0.679,
+   "also": [
+    "IRQ",
+    "Republic of Iraq"
+   ]
+  },
+  {
+   "label": "Brunei",
+   "qid": "Q921",
+   "fame": 0.675,
+   "also": [
+    "Negara Brunei Darussalam",
+    "BRN",
+    "BRU",
+    "Brunei Darussalam"
+   ]
+  },
+  {
+   "label": "Cambodia",
+   "qid": "Q424",
+   "fame": 0.673,
+   "also": [
+    "Kamboja",
+    "Kingdom of Cambodia",
+    "Camboya",
+    "Campuchia",
+    "Kambodzha",
+    "Kampuchea",
+    "KHM",
+    "KKH"
+   ]
+  },
+  {
+   "label": "Oman",
+   "qid": "Q842",
+   "fame": 0.67,
+   "also": [
+    "Uman",
+    "omn",
+    "Sultanate of Oman"
+   ]
+  },
+  {
+   "label": "Bahrain",
+   "qid": "Q398",
+   "fame": 0.665,
+   "also": [
+    "BAH",
+    "Bahrein Islands",
+    "Dawlat al-Bahrain",
+    "ISO 3166-1:BH",
+    "Kingdom of Bahrain",
+    "Mamlakat al-Baḥrayn",
+    "BHR",
+    "Bahrein"
+   ]
+  },
+  {
+   "label": "Qatar",
+   "qid": "Q846",
+   "fame": 0.664,
+   "also": [
+    "qat",
+    "State of Qatar"
+   ]
+  },
+  {
+   "label": "Laos",
+   "qid": "Q819",
+   "fame": 0.663,
+   "also": [
+    "Lao PDR",
+    "Lao People's Democratic Republic",
+    "LAO"
+   ]
+  },
+  {
+   "label": "Tajikistan",
+   "qid": "Q863",
+   "fame": 0.66,
+   "also": [
+    "Republic of Tajikistan",
+    "TJK"
+   ]
+  },
+  {
+   "label": "Kuwait",
+   "qid": "Q817",
+   "fame": 0.658,
+   "also": [
+    "State of Kuwait",
+    "KUW",
+    "KWT"
+   ]
+  },
+  {
+   "label": "Timor-Leste",
+   "qid": "Q574",
+   "fame": 0.647,
+   "also": [
+    "East Timor",
+    "Democratic Republic of Timor-Leste"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,180 @@
+{
+ "id": "table.holidays.public-holidays",
+ "kind": "table",
+ "title": "Holidays: which country",
+ "genre": "daily-life",
+ "category": "holidays",
+ "topic": "festivals",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel ?month WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { { SELECT ?item ?sl WHERE { ?item wdt:P31/wdt:P279* wd:Q1445650 ; wikibase:sitelinks ?sl . FILTER(?sl >= 25) } ORDER BY DESC(?sl) LIMIT 400 } ?item wdt:P17 ?c . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T19:18:32.512Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T19:18:32.512Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "holiday",
+  "many": "holidays",
+  "hookAsk": "Which holiday {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country celebrates {label}?",
+    "statement": "{label} is celebrated in {value}.",
+    "match": "Match each holiday to the country that celebrates it.",
+    "odd": "Three of these holidays are celebrated in {value}. Which one isn't?",
+    "all": "Tap all {n} holidays celebrated in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Ch'usŏk",
+   "qid": "Q1090024",
+   "fame": 0.657,
+   "country": "South Korea",
+   "description": "major harvest festival in Korea celebrated on the 15th day of the 8th month of the lunar calendar (the full moon night)",
+   "hook": "is a harvest festival where families honor ancestors and share half-moon shaped rice cakes",
+   "known": 0.2,
+   "kind": "harvest"
+  },
+  {
+   "label": "Day of the Dead",
+   "qid": "Q309256",
+   "fame": 0.656,
+   "country": "Mexico",
+   "description": "Mesoamerican and South American festival",
+   "hook": "welcomes back departed loved ones with marigolds, sugar skulls and decorated altars",
+   "known": 0.8,
+   "kind": "harvest"
+  },
+  {
+   "label": "Juneteenth",
+   "qid": "Q6312521",
+   "fame": 0.553,
+   "country": "United States",
+   "description": "holiday commemorating the emancipation of enslaved African Americans in Texas on June 19, 1865",
+   "hook": "celebrates the end of slavery with parades, cookouts and readings of an emancipation order",
+   "known": 0.6,
+   "kind": "freedom"
+  },
+  {
+   "label": "Guy Fawkes Night",
+   "qid": "Q844844",
+   "fame": 0.551,
+   "country": "United Kingdom",
+   "description": "annual commemoration involving bonfires and fireworks displays on 5 November commemorating the Gunpowder Plot in 1605",
+   "hook": "is marked with bonfires and fireworks recalling a failed plot to blow up parliament",
+   "known": 0.6,
+   "kind": "historical"
+  },
+  {
+   "label": "Navratri",
+   "qid": "Q10269",
+   "fame": 0.524,
+   "country": "India",
+   "description": "annual Hindu festival",
+   "hook": "is a nine-night festival honoring the goddess Durga with dance and fasting",
+   "known": 0.4,
+   "kind": "religious"
+  },
+  {
+   "label": "Kwanzaa",
+   "qid": "Q746851",
+   "fame": 0.517,
+   "country": "United States",
+   "description": "African-American holiday",
+   "hook": "is a week-long celebration of heritage built on seven principles and a candle holder called a kinara",
+   "known": 0.6,
+   "kind": "cultural"
+  },
+  {
+   "label": "Memorial Day",
+   "qid": "Q371781",
+   "fame": 0.515,
+   "country": "United States",
+   "description": "federal holiday in the United States of America for honoring and mourning the U.S. military personnel who died while serving in the United States Armed Forces",
+   "hook": "honors soldiers who died in service and marks the unofficial start of summer",
+   "known": 0.8,
+   "kind": "military"
+  },
+  {
+   "label": "Vijayadashami",
+   "qid": "Q10274",
+   "fame": 0.495,
+   "country": "India",
+   "description": "annual Hindu festival, celebrated at the end of Navaratri",
+   "hook": "celebrates good triumphing over evil, with effigies of a ten-headed demon king set ablaze",
+   "known": 0.2,
+   "kind": "religious"
+  },
+  {
+   "label": "Bastille Day",
+   "qid": "Q326724",
+   "fame": 0.484,
+   "country": "France",
+   "description": "French National Day",
+   "hook": "commemorates the storming of a royal prison at the start of a revolution, with a big military parade",
+   "known": 0.8,
+   "kind": "national"
+  },
+  {
+   "label": "Gandhi Jayanti",
+   "qid": "Q658185",
+   "fame": 0.484,
+   "country": "India",
+   "description": "national holiday celebrated in India to mark the occasion of the birthday of Mahatma Gandhi",
+   "hook": "honors the birthday of the leader of a nonviolent independence movement",
+   "known": 0.6,
+   "kind": "historical"
+  },
+  {
+   "label": "Martin Luther King Jr. Day",
+   "qid": "Q751738",
+   "fame": 0.463,
+   "country": "United States",
+   "description": "U.S. holiday, 3rd Monday of January",
+   "hook": "honors a civil rights leader famous for the \"I Have a Dream\" speech",
+   "known": 0.8,
+   "kind": "freedom"
+  },
+  {
+   "label": "Veterans Day",
+   "qid": "Q755999",
+   "fame": 0.456,
+   "country": "United States",
+   "description": "federal holiday in the United States",
+   "hook": "honors all who served in the armed forces, observed on the anniversary of the armistice ending World War I",
+   "known": 0.8,
+   "kind": "military"
+  }
+ ]
+}

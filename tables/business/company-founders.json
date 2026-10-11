@@ -1,0 +1,369 @@
+{
+ "id": "table.business.company-founders",
+ "kind": "table",
+ "title": "Companies and the people who founded them",
+ "genre": "daily-life",
+ "category": "business",
+ "topic": "big-companies",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Hand-built, checked row by row against English Wikipedia",
+  "method": null,
+  "attribution": null,
+  "fetchedAt": "2026-09-27T02:12:15.856Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-26T00:00:00.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "founder",
+   "label": "Founded by",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "company",
+  "many": "companies",
+  "minFame": 0.6,
+  "hookAsk": "Which company {hook}?",
+  "columns": {
+   "founder": {
+    "role": "code",
+    "pick": "Who founded {label}?",
+    "statement": "{label} was founded by {value}.",
+    "match": "Match each company to its founder.",
+    "reverse": "Which company did {value} found?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "YouTube",
+   "qid": "Q866",
+   "fame": 0.892,
+   "founder": "Chad Hurley, Steve Chen and Jawed Karim",
+   "description": "American video-sharing platform owned by Alphabet Inc.",
+   "hook": "grew from a video-sharing startup into the world's most-watched video site",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "Instagram",
+   "qid": "Q209330",
+   "fame": 0.84,
+   "founder": "Kevin Systrom and Mike Krieger",
+   "description": "photo and video sharing social network owned by Meta Platforms",
+   "hook": "turned everyday photos into filtered, shareable square snapshots",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "Google",
+   "qid": "Q95",
+   "fame": 0.826,
+   "founder": "Larry Page and Sergey Brin",
+   "description": "American multinational technology company, a subsidiary of Alphabet Inc.",
+   "hook": "became the world's go-to tool for searching the internet",
+   "known": 0.95,
+   "kind": "tech"
+  },
+  {
+   "label": "Apple",
+   "qid": "Q312",
+   "fame": 0.775,
+   "founder": "Steve Jobs, Steve Wozniak and Ronald Wayne",
+   "description": "American multinational technology company based in Cupertino, California",
+   "hook": "makes the iPhone along with popular, minimalist-designed laptops",
+   "known": 0.95,
+   "kind": "tech"
+  },
+  {
+   "label": "Microsoft",
+   "qid": "Q2283",
+   "fame": 0.744,
+   "founder": "Bill Gates and Paul Allen",
+   "description": "American multinational technology corporation",
+   "hook": "created the software running on most of the world's personal computers",
+   "known": 0.95,
+   "kind": "tech"
+  },
+  {
+   "label": "Netflix",
+   "qid": "Q907311",
+   "fame": 0.724,
+   "founder": "Reed Hastings and Marc Randolph",
+   "description": "American subscription video on-demand over-the-top streaming service",
+   "hook": "went from mailing DVDs to streaming shows worldwide",
+   "known": 0.8,
+   "kind": "media"
+  },
+  {
+   "label": "Nvidia",
+   "qid": "Q182477",
+   "fame": 0.719,
+   "founder": "Jensen Huang, Chris Malachowsky and Curtis Priem",
+   "description": "American multinational technology company",
+   "hook": "makes the graphics chips that power video games and modern AI",
+   "known": 0.8,
+   "kind": "tech"
+  },
+  {
+   "label": "Studio Ghibli",
+   "qid": "Q182950",
+   "fame": 0.681,
+   "founder": "Hayao Miyazaki, Isao Takahata, Toshio Suzuki and Yasuyoshi Tokuma",
+   "description": "Japanese animation studio",
+   "hook": "created beloved animated films featuring magical forests and flying castles",
+   "known": 0.6,
+   "kind": "media"
+  },
+  {
+   "label": "Nike",
+   "qid": "Q483915",
+   "fame": 0.647,
+   "founder": "Phil Knight and Bill Bowerman",
+   "description": "American athletic equipment company",
+   "hook": "makes the swoosh-logo sneakers worn by athletes worldwide",
+   "known": 0.8,
+   "kind": "fashion"
+  },
+  {
+   "label": "Spotify",
+   "qid": "Q689141",
+   "fame": 0.644,
+   "founder": "Daniel Ek and Martin Lorentzon",
+   "description": "Swedish audio streaming service",
+   "hook": "lets listeners stream millions of songs and podcasts on demand",
+   "known": 0.6,
+   "kind": "media"
+  },
+  {
+   "label": "Sony",
+   "qid": "Q41187",
+   "fame": 0.636,
+   "founder": "Masaru Ibuka and Akio Morita",
+   "description": "Japanese multinational conglomerate corporation",
+   "hook": "makes the PlayStation game console and a wide range of electronics",
+   "known": 0.8,
+   "kind": "media"
+  },
+  {
+   "label": "Valve",
+   "qid": "Q193559",
+   "fame": 0.632,
+   "founder": "Gabe Newell and Mike Harrington",
+   "description": "American video game development and digital distribution company",
+   "hook": "runs the biggest digital storefront for PC video games",
+   "known": 0.8,
+   "kind": "media"
+  },
+  {
+   "label": "Samsung",
+   "qid": "Q20716",
+   "fame": 0.628,
+   "founder": "Lee Byung-chul",
+   "description": "South Korean multinational conglomerate",
+   "hook": "makes the Galaxy smartphones and a vast range of consumer electronics",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "Yahoo",
+   "qid": "Q37093",
+   "fame": 0.625,
+   "founder": "Jerry Yang and David Filo",
+   "description": "web portal and search engine",
+   "hook": "ran one of the earliest popular web search portals and email services",
+   "known": 0.4,
+   "kind": "tech"
+  },
+  {
+   "label": "Red Bull",
+   "qid": "Q51482",
+   "fame": 0.618,
+   "founder": "Dietrich Mateschitz and Chaleo Yoovidhya",
+   "description": "brand of energy drinks sold by Red Bull GmbH",
+   "hook": "sponsors extreme sports and a Formula 1 racing team",
+   "known": 0.4,
+   "kind": "food"
+  },
+  {
+   "label": "eBay",
+   "qid": "Q58024",
+   "fame": 0.615,
+   "founder": "Pierre Omidyar",
+   "description": "American multinational internet corporation that manages eBay.com",
+   "hook": "lets people buy and sell almost anything through online auctions",
+   "known": 0.8,
+   "kind": "retail"
+  },
+  {
+   "label": "IKEA",
+   "qid": "Q54078",
+   "fame": 0.599,
+   "founder": "Ingvar Kamprad",
+   "description": "Swedish multinational furniture store chain",
+   "hook": "sells flatpack furniture and is famous for meatballs served in its cafeteria",
+   "known": 0.6,
+   "kind": "retail"
+  },
+  {
+   "label": "KFC",
+   "qid": "Q524757",
+   "fame": 0.599,
+   "founder": "Colonel Harland Sanders",
+   "description": "American fast food restaurant chain specializing in fried chicken",
+   "hook": "serves fried chicken under a bow-tied, white-suited mascot's smiling face",
+   "known": 0.6,
+   "kind": "food"
+  },
+  {
+   "label": "Electronic Arts",
+   "qid": "Q173941",
+   "fame": 0.588,
+   "founder": "Trip Hawkins",
+   "description": "American video game company",
+   "hook": "publishes hit sports and life-simulation video games",
+   "known": 0.4,
+   "kind": "media"
+  },
+  {
+   "label": "Motown",
+   "qid": "Q43327",
+   "fame": 0.581,
+   "founder": "Berry Gordy",
+   "description": "American record label",
+   "hook": "launched the soulful sound that defined a generation of hit records",
+   "known": 0.4,
+   "kind": "media"
+  },
+  {
+   "label": "Airbnb",
+   "qid": "Q63327",
+   "fame": 0.579,
+   "founder": "Brian Chesky, Joe Gebbia and Nathan Blecharczyk",
+   "description": "American online platform for rental accommodations",
+   "hook": "lets travelers book stays in other people's homes worldwide",
+   "known": 0.6,
+   "kind": "retail"
+  },
+  {
+   "label": "Intel",
+   "qid": "Q248",
+   "fame": 0.572,
+   "founder": "Robert Noyce and Gordon Moore",
+   "description": "American multinational technology company",
+   "hook": "makes the processor chips found inside countless personal computers",
+   "known": 0.6,
+   "kind": "tech"
+  },
+  {
+   "label": "DreamWorks",
+   "qid": "Q192557",
+   "fame": 0.559,
+   "founder": "Steven Spielberg, Jeffrey Katzenberg and David Geffen",
+   "description": "American film studio",
+   "hook": "makes animated blockbusters featuring an ogre and a kung fu panda",
+   "known": 0.6,
+   "kind": "media"
+  },
+  {
+   "label": "Puma",
+   "qid": "Q157064",
+   "fame": 0.556,
+   "founder": "Rudolf Dassler",
+   "description": "German multinational corporation",
+   "hook": "sells sporty sneakers and gear branded with a leaping wildcat",
+   "known": 0.6,
+   "kind": "fashion"
+  },
+  {
+   "label": "Wendy's",
+   "qid": "Q550258",
+   "fame": 0.552,
+   "founder": "Dave Thomas",
+   "description": "American international fast food chain restaurant",
+   "hook": "serves square hamburger patties under a red-haired mascot's grin",
+   "known": 0.4,
+   "kind": "food"
+  },
+  {
+   "label": "Uniqlo",
+   "qid": "Q26070",
+   "fame": 0.551,
+   "founder": "Tadashi Yanai",
+   "description": "Japanese casual wear designer, manufacturer and retailer",
+   "hook": "sells simple, affordable everyday clothing basics worldwide",
+   "known": 0.4,
+   "kind": "fashion"
+  },
+  {
+   "label": "Zara",
+   "qid": "Q147662",
+   "fame": 0.525,
+   "founder": "Amancio Ortega and Rosalía Mera",
+   "description": "retailer for clothing and perfumes, headquartered in Spain",
+   "hook": "turns runway trends into store racks within just weeks",
+   "known": 0.4,
+   "kind": "fashion"
+  },
+  {
+   "label": "Virgin Group",
+   "qid": "Q494917",
+   "fame": 0.524,
+   "founder": "Richard Branson and Nik Powell",
+   "description": "British multinational branded venture capital conglomerate",
+   "hook": "spans airlines, music and even spaceflight under one adventurous brand",
+   "known": 0.4,
+   "kind": "media"
+  },
+  {
+   "label": "Atari",
+   "qid": "Q207922",
+   "fame": 0.516,
+   "founder": "Nolan Bushnell and Ted Dabney",
+   "description": "brand name owned by Atari Interactive",
+   "hook": "pioneered classic arcade and home video games in gaming's early days",
+   "known": 0.4,
+   "kind": "media"
+  },
+  {
+   "label": "Lego",
+   "qid": "Q1063455",
+   "fame": 0.501,
+   "founder": "Ole Kirk Christiansen",
+   "description": "Danish toy manufacturer best known for interlocking-brick construction toys",
+   "hook": "makes colorful interlocking bricks kids snap together to build anything",
+   "known": 0.6,
+   "kind": "toy"
+  },
+  {
+   "label": "Patagonia",
+   "qid": "Q1660552",
+   "fame": 0.463,
+   "founder": "Yvon Chouinard",
+   "description": "American clothing company",
+   "hook": "makes outdoor gear and pledges its profits to fighting climate change",
+   "known": 0.2,
+   "kind": "fashion"
+  }
+ ]
+}

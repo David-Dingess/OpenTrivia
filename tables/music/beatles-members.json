@@ -1,0 +1,102 @@
+{
+ "id": "list.music.beatles-members",
+ "kind": "list",
+ "title": "Members of the Beatles",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "bands",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { wd:Q1299 p:P527 ?st . ?st ps:P527 ?item . FILTER NOT EXISTS { ?st pq:P582 ?end . FILTER(?end < \"1963-01-01T00:00:00Z\"^^xsd:dateTime) } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T04:54:25.927Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T04:54:25.927Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "member",
+  "many": "members",
+  "columns": {}
+ },
+ "impostors": [
+  {
+   "label": "Mick Jagger",
+   "qid": "Q128121",
+   "why": "not a member: a member of the Rolling Stones"
+  },
+  {
+   "label": "Keith Richards",
+   "qid": "Q189599",
+   "why": "not a member: a member of the Rolling Stones"
+  },
+  {
+   "label": "Brian Jones",
+   "qid": "Q204943",
+   "why": "not a member: a member of the Rolling Stones"
+  },
+  {
+   "label": "Ronnie Wood",
+   "qid": "Q211094",
+   "why": "not a member: a member of the Rolling Stones"
+  },
+  {
+   "label": "Bill Wyman",
+   "qid": "Q312559",
+   "why": "not a member: a member of the Rolling Stones"
+  },
+  {
+   "label": "Charlie Watts",
+   "qid": "Q216051",
+   "why": "not a member: a member of the Rolling Stones"
+  },
+  {
+   "label": "Mick Taylor",
+   "qid": "Q312696",
+   "why": "not a member: a member of the Rolling Stones"
+  },
+  {
+   "label": "Ian Stewart",
+   "qid": "Q319737",
+   "why": "not a member: a member of the Rolling Stones"
+  }
+ ],
+ "rows": [
+  {
+   "label": "John Lennon",
+   "qid": "Q1203",
+   "fame": 0.768,
+   "description": "British musician (1940–1980)"
+  },
+  {
+   "label": "Paul McCartney",
+   "qid": "Q2599",
+   "fame": 0.768,
+   "description": "English musician and member of the Beatles (born 1942)"
+  },
+  {
+   "label": "George Harrison",
+   "qid": "Q2643",
+   "fame": 0.746,
+   "description": "English musician and member of the Beatles (1943–2001)"
+  },
+  {
+   "label": "Ringo Starr",
+   "qid": "Q2632",
+   "fame": 0.727,
+   "description": "British musician, drummer for the Beatles (born 1940)"
+  }
+ ]
+}

@@ -1,0 +1,607 @@
+{
+ "id": "table.music.grammy-best-new-artist",
+ "kind": "table",
+ "title": "Grammy Best New Artist winners and the year",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "grammys",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?year WHERE { { SELECT ?item ?sitelinks (MIN(?y) AS ?year) (COUNT(DISTINCT ?y) AS ?nY) WHERE { ?item p:P166 ?st . ?st ps:P166 wd:Q1453643 . OPTIONAL { ?st pq:P585 ?d } BIND(YEAR(?d) AS ?y) ?item wikibase:sitelinks ?sitelinks . FILTER(BOUND(?y)) } GROUP BY ?item ?sitelinks } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T06:59:57.236Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T06:59:57.236Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "year",
+   "label": "Year",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "artist",
+  "many": "Grammy Best New Artist winners",
+  "wildcard": "person",
+  "columns": {
+   "year": {
+    "role": "date",
+    "era": "Drop each artist into the decade they won the Grammy for Best New Artist.",
+    "eraSize": "decade",
+    "shot": "In what year did {label} win the Grammy for Best New Artist?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Olivia Rodrigo",
+   "qid": "Q63243883",
+   "fame": 0.807,
+   "year": 2022,
+   "description": "American singer-songwriter and actress (born 2003)",
+   "hook": "topped the charts with a heartbroken ballad about a driver's license",
+   "known": 0.6,
+   "kind": "solo female"
+  },
+  {
+   "label": "Dua Lipa",
+   "qid": "Q21914464",
+   "fame": 0.787,
+   "year": 2019,
+   "description": "British singer-songwriter (born 1995)",
+   "hook": "is a pop star behind the dance hit \"Levitating\" and the album Future Nostalgia",
+   "known": 0.8,
+   "kind": "solo female"
+  },
+  {
+   "label": "The Beatles",
+   "qid": "Q1299",
+   "fame": 0.773,
+   "year": 1965,
+   "description": "English pop rock band (1960–1970)",
+   "hook": "were the Liverpool foursome of Lennon, McCartney, Harrison and Starr who led the British Invasion",
+   "known": 0.95,
+   "kind": "band"
+  },
+  {
+   "label": "Billie Eilish",
+   "qid": "Q29564107",
+   "fame": 0.741,
+   "year": 2020,
+   "description": "American singer-songwriter (born 2001)",
+   "hook": "whispers moody pop hits like \"Bad Guy\" and records with her songwriting brother",
+   "known": 0.8,
+   "kind": "solo female"
+  },
+  {
+   "label": "Tom Jones",
+   "qid": "Q180850",
+   "fame": 0.736,
+   "year": 1966,
+   "description": "Welsh singer (born 1940)",
+   "hook": "is a Welsh voice behind \"It's Not Unusual\" and \"She's a Lady\"",
+   "known": 0.8,
+   "kind": "solo male"
+  },
+  {
+   "label": "Amy Winehouse",
+   "qid": "Q15897",
+   "fame": 0.73,
+   "year": 2008,
+   "description": "English singer-songwriter (1983–2011)",
+   "hook": "sang \"Rehab\" with a beehive hairdo and a retro soul sound",
+   "known": 0.8,
+   "kind": "solo female"
+  },
+  {
+   "label": "Mariah Carey",
+   "qid": "Q41076",
+   "fame": 0.724,
+   "year": 1991,
+   "description": "American singer (born 1969)",
+   "hook": "is a five-octave-range diva known for \"Vision of Love\" and a holiday classic about Christmas wishes",
+   "known": 0.95,
+   "kind": "solo female"
+  },
+  {
+   "label": "Olivia Dean",
+   "qid": "Q108106738",
+   "fame": 0.722,
+   "year": 2026,
+   "description": "British singer",
+   "hook": null,
+   "known": 0.05,
+   "kind": "solo female"
+  },
+  {
+   "label": "Adele",
+   "qid": "Q23215",
+   "fame": 0.696,
+   "year": 2009,
+   "description": "English singer-songwriter (born 1988)",
+   "hook": "is a powerhouse vocalist behind \"Rolling in the Deep\" and \"Hello\"",
+   "known": 0.95,
+   "kind": "solo female"
+  },
+  {
+   "label": "Christina Aguilera",
+   "qid": "Q41594",
+   "fame": 0.691,
+   "year": 2000,
+   "description": "American singer, songwriter and actress",
+   "hook": "rose from a Mickey Mouse Club stint to sing \"Genie in a Bottle\" and judge a TV singing contest",
+   "known": 0.6,
+   "kind": "solo female"
+  },
+  {
+   "label": "Chappell Roan",
+   "qid": "Q110281146",
+   "fame": 0.684,
+   "year": 2025,
+   "description": "American singer (born 1998)",
+   "hook": "is a drag-inspired pop star known for \"Pink Pony Club\" and \"Good Luck, Babe!\"",
+   "known": 0.2,
+   "kind": "solo female"
+  },
+  {
+   "label": "Cyndi Lauper",
+   "qid": "Q1545",
+   "fame": 0.677,
+   "year": 1985,
+   "description": "American singer",
+   "hook": "sang \"Girls Just Want to Have Fun\" and \"Time After Time\" with brightly dyed hair",
+   "known": 0.8,
+   "kind": "solo female"
+  },
+  {
+   "label": "Evanescence",
+   "qid": "Q1777698",
+   "fame": 0.672,
+   "year": 2004,
+   "description": "American rock band",
+   "hook": "blended gothic metal with a piano hook on the single \"Bring Me to Life\"",
+   "known": 0.6,
+   "kind": "band"
+  },
+  {
+   "label": "Sheryl Crow",
+   "qid": "Q200586",
+   "fame": 0.671,
+   "year": 1995,
+   "description": "American musician (born 1962)",
+   "hook": "is a rocker who sang \"All I Wanna Do\" and \"If It Makes You Happy\"",
+   "known": 0.6,
+   "kind": "solo female"
+  },
+  {
+   "label": "Bette Midler",
+   "qid": "Q190631",
+   "fame": 0.67,
+   "year": 1974,
+   "description": "American singer and actress (born 1945)",
+   "hook": "is \"The Divine Miss M\", who sang \"Wind Beneath My Wings\" and starred in Beaches",
+   "known": 0.8,
+   "kind": "solo female"
+  },
+  {
+   "label": "Carrie Underwood",
+   "qid": "Q215546",
+   "fame": 0.668,
+   "year": 2007,
+   "description": "American singer and actor (born 1983)",
+   "hook": "won a TV singing competition, then scored country hits like \"Before He Cheats\"",
+   "known": 0.6,
+   "kind": "solo female"
+  },
+  {
+   "label": "Lauryn Hill",
+   "qid": "Q214226",
+   "fame": 0.666,
+   "year": 1999,
+   "description": "American singer and rapper (born 1975)",
+   "hook": "left the Fugees to release The Miseducation, a landmark album of hip-hop and soul",
+   "known": 0.6,
+   "kind": "solo female"
+  },
+  {
+   "label": "LeAnn Rimes",
+   "qid": "Q120533",
+   "fame": 0.65,
+   "year": 1997,
+   "description": "American singer and actress (born 1982)",
+   "hook": "was a teenage country prodigy who sang \"How Do I Live\" and \"Blue\"",
+   "known": 0.4,
+   "kind": "solo female"
+  },
+  {
+   "label": "Sam Smith",
+   "qid": "Q15123969",
+   "fame": 0.647,
+   "year": 2015,
+   "description": "British singer-songwriter",
+   "hook": "sang the heartbroken ballad \"Stay With Me\" and later \"Unholy\" with Kim Petras",
+   "known": 0.6,
+   "kind": "solo male"
+  },
+  {
+   "label": "Alicia Keys",
+   "qid": "Q121507",
+   "fame": 0.646,
+   "year": 2002,
+   "description": "American singer-songwriter and pianist (born 1981)",
+   "hook": "is a pianist-singer known for \"Fallin'\" and the hit \"Empire State of Mind\" with Jay-Z",
+   "known": 0.8,
+   "kind": "solo female"
+  },
+  {
+   "label": "Carly Simon",
+   "qid": "Q181683",
+   "fame": 0.646,
+   "year": 1972,
+   "description": "American musician (born 1943)",
+   "hook": "sang the mysterious hit \"You're So Vain\" and the Bond theme \"Nobody Does It Better\"",
+   "known": 0.8,
+   "kind": "solo female"
+  },
+  {
+   "label": "Norah Jones",
+   "qid": "Q549981",
+   "fame": 0.639,
+   "year": 2003,
+   "description": "American musician (born 1979)",
+   "hook": "sold millions with the smooth jazz-pop album Come Away with Me and the song \"Don't Know Why\"",
+   "known": 0.6,
+   "kind": "solo female"
+  },
+  {
+   "label": "Bob Newhart",
+   "qid": "Q718078",
+   "fame": 0.633,
+   "year": 1961,
+   "description": "American stand-up comedian and actor (1829–2024)",
+   "hook": "is a deadpan comedian famous for a one-sided telephone routine and the sitcom about a Chicago psychologist",
+   "known": 0.4,
+   "kind": "solo male"
+  },
+  {
+   "label": "Megan Thee Stallion",
+   "qid": "Q59268408",
+   "fame": 0.633,
+   "year": 2021,
+   "description": "American rapper, singer and songwriter",
+   "hook": "is a Houston rapper known for \"Savage\" and \"WAP\" with Cardi B",
+   "known": 0.4,
+   "kind": "solo female"
+  },
+  {
+   "label": "Tracy Chapman",
+   "qid": "Q187814",
+   "fame": 0.629,
+   "year": 1989,
+   "description": "American singer-songwriter",
+   "hook": "sang the acoustic hits \"Fast Car\" and \"Give Me One Reason\"",
+   "known": 0.6,
+   "kind": "solo female"
+  },
+  {
+   "label": "Macklemore & Ryan Lewis",
+   "qid": "Q16853301",
+   "fame": 0.618,
+   "year": 2013,
+   "description": "American hip hop duo",
+   "hook": "had a thrift-shop hit and a chart-topping song about a shopping spree at a secondhand store",
+   "known": 0.6,
+   "kind": "group"
+  },
+  {
+   "label": "Bobby Darin",
+   "qid": "Q311267",
+   "fame": 0.614,
+   "year": 1960,
+   "description": "American singer and actor (1936–1973)",
+   "hook": "was a crooner famous for \"Mack the Knife\" and \"Beyond the Sea\"",
+   "known": 0.4,
+   "kind": "solo male"
+  },
+  {
+   "label": "Maroon 5",
+   "qid": "Q182223",
+   "fame": 0.604,
+   "year": 2005,
+   "description": "American pop rock band",
+   "hook": "is a pop rock band fronted by Adam Levine, known for \"Moves Like Jagger\" and \"Sugar\"",
+   "known": 0.8,
+   "kind": "band"
+  },
+  {
+   "label": "Meghan Trainor",
+   "qid": "Q17403494",
+   "fame": 0.603,
+   "year": 2016,
+   "description": "American singer-songwriter (born 1993)",
+   "hook": "sang the body-positive doo-wop pop hit \"All About That Bass\"",
+   "known": 0.4,
+   "kind": "solo female"
+  },
+  {
+   "label": "Sheena Easton",
+   "qid": "Q465977",
+   "fame": 0.602,
+   "year": 1982,
+   "description": "Scottish singer (born 1959)",
+   "hook": "got her start on a TV documentary and sang \"9 to 5\" and the Bond theme \"For Your Eyes Only\"",
+   "known": 0.4,
+   "kind": "solo female"
+  },
+  {
+   "label": "John Legend",
+   "qid": "Q44857",
+   "fame": 0.598,
+   "year": 2006,
+   "description": "American singer-songwriter",
+   "hook": "is a pianist-singer known for \"All of Me\" and \"Ordinary People\"",
+   "known": 0.6,
+   "kind": "solo male"
+  },
+  {
+   "label": "Christopher Cross",
+   "qid": "Q445438",
+   "fame": 0.593,
+   "year": 1981,
+   "description": "American singer-songwriter (born 1951)",
+   "hook": "sang the soft rock yacht anthems \"Sailing\" and \"Ride Like the Wind\"",
+   "known": 0.4,
+   "kind": "solo male"
+  },
+  {
+   "label": "Sade",
+   "qid": "Q658182",
+   "fame": 0.592,
+   "year": 1986,
+   "description": "British band",
+   "hook": "is a smooth jazz-pop group fronted by Helen Folasade Adu, known for \"Smooth Operator\"",
+   "known": 0.6,
+   "kind": "band"
+  },
+  {
+   "label": "Toni Braxton",
+   "qid": "Q155412",
+   "fame": 0.59,
+   "year": 1994,
+   "description": "American singer (born 1967)",
+   "hook": "is a contralto R&B star known for \"Un-Break My Heart\" and \"He Wasn't Man Enough\"",
+   "known": 0.6,
+   "kind": "solo female"
+  },
+  {
+   "label": "Bobbie Gentry",
+   "qid": "Q272253",
+   "fame": 0.585,
+   "year": 1968,
+   "description": "American singer-songwriter (born 1942)",
+   "hook": "wrote and sang a Southern gothic hit about a bridge over a river in Mississippi",
+   "known": 0.2,
+   "kind": "solo female"
+  },
+  {
+   "label": "The Carpenters",
+   "qid": "Q223495",
+   "fame": 0.582,
+   "year": 1971,
+   "description": "American musical group; vocal sibling duo",
+   "hook": "were a soft-pop brother-and-sister pair who sang \"Close to You\" and \"Rainy Days and Mondays\"",
+   "known": 0.6,
+   "kind": "group"
+  },
+  {
+   "label": "Fun",
+   "qid": "Q838984",
+   "fame": 0.568,
+   "year": 2013,
+   "description": "American indie rock band",
+   "hook": "is an indie pop trio behind \"We Are Young\" and \"Some Nights\"",
+   "known": 0.4,
+   "kind": "band"
+  },
+  {
+   "label": "Men at Work",
+   "qid": "Q831111",
+   "fame": 0.564,
+   "year": 1983,
+   "description": "Australian rock band",
+   "hook": "is an Aussie group known for \"Down Under\" and \"Who Can It Be Now?\"",
+   "known": 0.4,
+   "kind": "band"
+  },
+  {
+   "label": "Natalie Cole",
+   "qid": "Q231942",
+   "fame": 0.564,
+   "year": 1976,
+   "description": "American singer (1950–2015)",
+   "hook": "was a singer who recorded duets with her late father, the jazz crooner Nat King",
+   "known": 0.4,
+   "kind": "solo female"
+  },
+  {
+   "label": "Bon Iver",
+   "qid": "Q357340",
+   "fame": 0.553,
+   "year": 2012,
+   "description": "American indie folk band",
+   "hook": "began as one man's cabin album, For Emma, Forever Ago, and later collaborated with Kanye West",
+   "known": 0.4,
+   "kind": "band"
+  },
+  {
+   "label": "Bruce Hornsby",
+   "qid": "Q918502",
+   "fame": 0.547,
+   "year": 1987,
+   "description": "American musician",
+   "hook": "is a piano-driven rocker behind \"The Way It Is\" and a stint touring with the Grateful Dead",
+   "known": 0.2,
+   "kind": "solo male"
+  },
+  {
+   "label": "Hootie & the Blowfish",
+   "qid": "Q1476499",
+   "fame": 0.543,
+   "year": 1996,
+   "description": "American rock band",
+   "hook": null,
+   "known": 0.4,
+   "kind": "band"
+  },
+  {
+   "label": "Paula Cole",
+   "qid": "Q269462",
+   "fame": 0.541,
+   "year": 1998,
+   "description": "American singer",
+   "hook": "sang \"I Don't Want to Wait\", the theme to the teen drama Dawson's Creek",
+   "known": 0.4,
+   "kind": "solo female"
+  },
+  {
+   "label": "Chance the Rapper",
+   "qid": "Q12470060",
+   "fame": 0.535,
+   "year": 2017,
+   "description": "American rapper, singer and record producer (born 1993)",
+   "hook": "is a Chicago hip-hop artist who released free mixtapes like Coloring Book and Acid Rap",
+   "known": 0.4,
+   "kind": "solo male"
+  },
+  {
+   "label": "Culture Club",
+   "qid": "Q50037",
+   "fame": 0.532,
+   "year": 1984,
+   "description": "English new wave band",
+   "hook": "is a new wave band fronted by Boy George, known for \"Karma Chameleon\"",
+   "known": 0.6,
+   "kind": "band"
+  },
+  {
+   "label": "Robert Goulet",
+   "qid": "Q720742",
+   "fame": 0.527,
+   "year": 1963,
+   "description": "Canadian-American singer and actor (1933–2007)",
+   "hook": "played Lancelot in the original Broadway Camelot and sang in a deep baritone",
+   "known": 0.2,
+   "kind": "solo male"
+  },
+  {
+   "label": "Victoria Monét",
+   "qid": "Q19864989",
+   "fame": 0.519,
+   "year": 2024,
+   "description": "American singer and songwriter (born 1989)",
+   "hook": "is an R&B singer-songwriter known for the album Jaguar II and writing for Ariana Grande",
+   "known": 0.2,
+   "kind": "solo female"
+  },
+  {
+   "label": "Alessia Cara",
+   "qid": "Q20090091",
+   "fame": 0.517,
+   "year": 2018,
+   "description": "Italian-Canadian singer, songwriter and actress",
+   "hook": "sang the self-aware anthem \"Here\" and \"Scars to Your Beautiful\"",
+   "known": 0.4,
+   "kind": "solo female"
+  },
+  {
+   "label": "Debby Boone",
+   "qid": "Q269508",
+   "fame": 0.509,
+   "year": 1978,
+   "description": "American singer (born 1956)",
+   "hook": "is the daughter of a pop crooner and sang the ballad \"You Light Up My Life\"",
+   "known": 0.2,
+   "kind": "solo female"
+  },
+  {
+   "label": "José Feliciano",
+   "qid": "Q315784",
+   "fame": 0.507,
+   "year": 1969,
+   "description": "Puerto Rican musician",
+   "hook": "is a blind guitarist known for a Latin-flavored cover of \"Light My Fire\" and the holiday song \"Feliz Navidad\"",
+   "known": 0.4,
+   "kind": "solo male"
+  },
+  {
+   "label": "Zac Brown Band",
+   "qid": "Q139154",
+   "fame": 0.485,
+   "year": 2010,
+   "description": "American country/folk band",
+   "hook": "is a country group known for the beach-loving hit \"Chicken Fried\" and \"Toes\"",
+   "known": 0.4,
+   "kind": "band"
+  },
+  {
+   "label": "Rickie Lee Jones",
+   "qid": "Q258846",
+   "fame": 0.483,
+   "year": 1980,
+   "description": "American singer (born 1954)",
+   "hook": "is a jazz-tinged singer-songwriter known for \"Chuck E.'s in Love\"",
+   "known": 0.2,
+   "kind": "solo female"
+  },
+  {
+   "label": "Marvin Hamlisch",
+   "qid": "Q337206",
+   "fame": 0.474,
+   "year": 1975,
+   "description": "American composer and conductor (1944-2012)",
+   "hook": "was a composer who scored The Sting and wrote the Broadway musical A Chorus Line",
+   "known": 0.2,
+   "kind": "solo male"
+  },
+  {
+   "label": "Jody Watley",
+   "qid": "Q465897",
+   "fame": 0.472,
+   "year": 1988,
+   "description": "American singer",
+   "hook": "left the group Shalamar to sing \"Looking for a New Love\" as a solo star",
+   "known": 0.2,
+   "kind": "solo female"
+  },
+  {
+   "label": "Arrested Development",
+   "qid": "Q699534",
+   "fame": 0.451,
+   "year": 1993,
+   "description": "American alternative hip hop group",
+   "hook": "is an alt hip-hop group known for \"Tennessee\" and \"Mr. Wendal\"",
+   "known": 0.4,
+   "kind": "group"
+  }
+ ]
+}

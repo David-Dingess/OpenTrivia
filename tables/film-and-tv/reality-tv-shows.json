@@ -1,0 +1,378 @@
+{
+ "id": "table.film-and-tv.reality-tv-shows",
+ "kind": "table",
+ "title": "Reality TV shows: country, network and first aired",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "reality-tv",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel ?networkLabel ?start WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) (SAMPLE(?n) AS ?network) (COUNT(DISTINCT ?n) AS ?nN) (MIN(?d) AS ?start) WHERE { { VALUES ?item { wd:Q28856068 wd:Q2790662 wd:Q700722 wd:Q3278334 wd:Q60096 wd:Q6690861 wd:Q152108 wd:Q1418248 wd:Q7759594 wd:Q2674710 wd:Q467561 wd:Q4431988 wd:Q2298323 wd:Q17104499 wd:Q549337 wd:Q62660082 wd:Q56276004 wd:Q909037 wd:Q15067038 wd:Q1772867 wd:Q24037129 wd:Q7737672 wd:Q1122661 wd:Q31426 wd:Q865612 wd:Q13360589 wd:Q16967552 wd:Q6726715 wd:Q1532410 wd:Q1027398 wd:Q16993042 wd:Q3235466 wd:Q556444 wd:Q6502417 wd:Q19798730 wd:Q16840152 wd:Q7914497 wd:Q11838869 wd:Q2855875 wd:Q557913 wd:Q702432 wd:Q7759591 wd:Q7759597 wd:Q1145002 wd:Q797907 wd:Q743738 wd:Q91015222 wd:Q112587272 wd:Q116449538 wd:Q2531243 wd:Q4857958 wd:Q694243 wd:Q819092 wd:Q1427572 wd:Q951562 wd:Q2421659 wd:Q1159312 wd:Q2290376 wd:Q112403 wd:Q6072379 wd:Q4905347 wd:Q17514443 wd:Q902421 wd:Q4744595 wd:Q2404067 wd:Q431286 wd:Q111160190 wd:Q24037548 wd:Q7759590 wd:Q17110041 wd:Q6859753 wd:Q2520237 wd:Q1784093 wd:Q3817900 wd:Q3530299 wd:Q3486966 wd:Q2481867 wd:Q912279 } } UNION { ?item wdt:P31/wdt:P279* wd:Q5398426 ; wdt:P136 wd:Q182415 } ?item wdt:P495 ?c ; wdt:P449 ?n ; wdt:P580 ?d ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 12) } GROUP BY ?item ?sitelinks HAVING(?nC = 1 && ?nN = 1) ORDER BY DESC(?sitelinks) LIMIT 300 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T14:14:44.379Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T14:14:44.379Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country of origin",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "network",
+   "label": "Original network",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "first_aired",
+   "label": "First aired",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "reality show",
+  "many": "reality shows",
+  "columns": {
+   "network": {
+    "role": "link",
+    "pick": "Which network first aired {label}?",
+    "statement": "{label} first aired on {value}.",
+    "match": "Match each reality show to the network it first aired on.",
+    "odd": "Three of these reality shows first aired on {value}. Which one didn't?",
+    "all": "Tap all {n} reality shows that first aired on {value}.",
+    "reverse": "Which of these reality shows first aired on {value}?"
+   },
+   "first_aired": {
+    "role": "date",
+    "sort": "from the first to air to the most recent",
+    "era": "Drop each reality show into the decade it first aired.",
+    "eraSize": "decade",
+    "shot": "In what year did {label} first air on {network}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "America's Got Talent",
+   "qid": "Q467561",
+   "fame": 0.644,
+   "country": "United States",
+   "network": "NBC",
+   "first_aired": 2006,
+   "description": "televised American talent show competition",
+   "hook": "lets singers, magicians and dog acts audition for a celebrity panel and a golden buzzer",
+   "known": 0.95,
+   "kind": "competition show"
+  },
+  {
+   "label": "Survivor",
+   "qid": "Q28856068",
+   "fame": 0.638,
+   "country": "United States",
+   "network": "CBS",
+   "first_aired": 2000,
+   "description": "American version of the international Survivor reality competition television franchise",
+   "hook": "strands contestants on a remote island where tribes compete and vote each other out with torches snuffed",
+   "known": 0.95,
+   "kind": "competition show"
+  },
+  {
+   "label": "Hell's Kitchen",
+   "qid": "Q1012139",
+   "fame": 0.626,
+   "country": "United States",
+   "network": "Fox Broadcasting Company",
+   "first_aired": 2005,
+   "description": "American television series",
+   "hook": "has a fiery, foul-mouthed celebrity chef yelling at aspiring cooks competing to run a restaurant",
+   "known": 0.8,
+   "kind": "competition show"
+  },
+  {
+   "label": "Jackass",
+   "qid": "Q465616",
+   "fame": 0.599,
+   "country": "United States",
+   "network": "MTV",
+   "first_aired": 2000,
+   "description": "American reality comedy series",
+   "hook": "features a crew performing painful, dangerous stunts and pranks on themselves for laughs",
+   "known": 0.8,
+   "kind": "comedy show"
+  },
+  {
+   "label": "Impractical Jokers",
+   "qid": "Q2029180",
+   "fame": 0.592,
+   "country": "United States",
+   "network": "TruTV",
+   "first_aired": 2011,
+   "description": "television series",
+   "hook": "follows four friends who dare each other to do embarrassing public challenges through hidden earpieces",
+   "known": 0.6,
+   "kind": "comedy show"
+  },
+  {
+   "label": "Jersey Shore",
+   "qid": "Q1165712",
+   "fame": 0.59,
+   "country": "United States",
+   "network": "MTV",
+   "first_aired": 2009,
+   "description": "American reality television series",
+   "hook": "follows a group of tanned housemates in a beach town known for gym, tanning and laundry",
+   "known": 0.8,
+   "kind": "reality show"
+  },
+  {
+   "label": "Ramsay's Kitchen Nightmares USA",
+   "qid": "Q2531243",
+   "fame": 0.589,
+   "country": "United States",
+   "network": "Fox Broadcasting Company",
+   "first_aired": 2007,
+   "description": "American reality television",
+   "hook": "features a hot-tempered British chef trying to rescue failing restaurants across the country",
+   "known": 0.6,
+   "kind": "reality show"
+  },
+  {
+   "label": "The Masked Singer",
+   "qid": "Q56276004",
+   "fame": 0.589,
+   "country": "United States",
+   "network": "Fox Broadcasting Company",
+   "first_aired": 2019,
+   "description": "2019 American reality singing competition television game show",
+   "hook": "has celebrities sing in elaborate full-body costumes while a panel guesses who is underneath",
+   "known": 0.8,
+   "kind": "competition show"
+  },
+  {
+   "label": "MasterChef USA",
+   "qid": "Q1090807",
+   "fame": 0.578,
+   "country": "United States",
+   "network": "Fox Broadcasting Company",
+   "first_aired": 2010,
+   "description": "American cooking reality show",
+   "hook": "has home cooks compete for a title and cookbook deal, judged by a trio including a famously fiery chef",
+   "known": 0.8,
+   "kind": "competition show"
+  },
+  {
+   "label": "Pawn Stars",
+   "qid": "Q794145",
+   "fame": 0.574,
+   "country": "United States",
+   "network": "History",
+   "first_aired": 2009,
+   "description": "American reality television series",
+   "hook": "follows a family-run Las Vegas shop where customers try to sell rare and unusual items",
+   "known": 0.8,
+   "kind": "documentary show"
+  },
+  {
+   "label": "Shark Tank",
+   "qid": "Q1440964",
+   "fame": 0.571,
+   "country": "United States",
+   "network": "American Broadcasting Company",
+   "first_aired": 2009,
+   "description": "American reality television series",
+   "hook": "has entrepreneurs pitch their inventions to wealthy investors hoping to land a deal",
+   "known": 0.8,
+   "kind": "competition show"
+  },
+  {
+   "label": "The X Factor",
+   "qid": "Q4431988",
+   "fame": 0.57,
+   "country": "United Kingdom",
+   "network": "ITV",
+   "first_aired": 2004,
+   "description": "UK television series (2004–2018)",
+   "hook": "was a singing contest created by a music mogul known for a scathing judging panel",
+   "known": 0.95,
+   "kind": "competition show"
+  },
+  {
+   "label": "Running Man",
+   "qid": "Q21149",
+   "fame": 0.566,
+   "country": "South Korea",
+   "network": "SBS TV",
+   "first_aired": 2010,
+   "description": "South Korean variety show",
+   "hook": "has celebrity cast members race through city landmarks completing games and ripping name tags off each other",
+   "known": 0.2,
+   "kind": "competition show"
+  },
+  {
+   "label": "Deadliest Catch",
+   "qid": "Q557913",
+   "fame": 0.56,
+   "country": "United States",
+   "network": "Discovery Channel",
+   "first_aired": 2005,
+   "description": "reality television series, Discovery Channel, 2005 — present",
+   "hook": "follows crab fishermen braving dangerous waves in the Bering Sea",
+   "known": 0.8,
+   "kind": "documentary show"
+  },
+  {
+   "label": "The Amazing Race",
+   "qid": "Q60096",
+   "fame": 0.554,
+   "country": "United States",
+   "network": "CBS",
+   "first_aired": 2001,
+   "description": "American adventure reality game show",
+   "hook": "sends teams of two racing around the globe completing tasks and roadblocks to win a million dollars",
+   "known": 0.8,
+   "kind": "competition show"
+  },
+  {
+   "label": "Britain's Got Talent",
+   "qid": "Q556444",
+   "fame": 0.538,
+   "country": "United Kingdom",
+   "network": "ITV",
+   "first_aired": 2007,
+   "description": "British television talent show since 2007",
+   "hook": "has singers, dancers and novelty acts audition for celebrity judges, hoping to reach a live final",
+   "known": 0.8,
+   "kind": "competition show"
+  },
+  {
+   "label": "MasterChef Australia",
+   "qid": "Q3234943",
+   "fame": 0.537,
+   "country": "Australia",
+   "network": "Network 10",
+   "first_aired": 2009,
+   "description": "Australian reality competitive cooking game show based on the original British MasterChef",
+   "hook": "has amateur cooks face pressure tests and mystery boxes to win a trophy from the land down under",
+   "known": 0.6,
+   "kind": "competition show"
+  },
+  {
+   "label": "Storage Wars",
+   "qid": "Q2502851",
+   "fame": 0.533,
+   "country": "United States",
+   "network": "A&E",
+   "first_aired": 2010,
+   "description": "television series",
+   "hook": "follows buyers who bid on the contents of abandoned lockers hoping to find valuable treasures",
+   "known": 0.6,
+   "kind": "documentary show"
+  },
+  {
+   "label": "Dance Moms",
+   "qid": "Q1159312",
+   "fame": 0.527,
+   "country": "United States",
+   "network": "Lifetime",
+   "first_aired": 2011,
+   "description": "American reality television series",
+   "hook": "follows young dancers and their intense coach and stage mothers in a Pittsburgh studio",
+   "known": 0.6,
+   "kind": "reality show"
+  },
+  {
+   "label": "Keeping Up with the Kardashians",
+   "qid": "Q152108",
+   "fame": 0.526,
+   "country": "United States",
+   "network": "E!",
+   "first_aired": 2007,
+   "description": "American reality television series",
+   "hook": "follows a famous California family with a momager and sisters whose names all start with K",
+   "known": 0.95,
+   "kind": "reality show"
+  },
+  {
+   "label": "The Bachelor",
+   "qid": "Q700722",
+   "fame": 0.499,
+   "country": "United States",
+   "network": "American Broadcasting Company",
+   "first_aired": 2002,
+   "description": "American reality television series on ABC",
+   "hook": "has a single suitor hand out roses each week to narrow down a group of romantic hopefuls",
+   "known": 0.95,
+   "kind": "dating show"
+  },
+  {
+   "label": "America's Next Top Model",
+   "qid": "Q31426",
+   "fame": 0.494,
+   "country": "United States",
+   "network": "UPN",
+   "first_aired": 2003,
+   "description": "American television series (2003–2016)",
+   "hook": "has aspiring models compete in photo shoots and runway challenges, hosted by a famous supermodel",
+   "known": 0.8,
+   "kind": "fashion show"
+  },
+  {
+   "label": "Top Chef",
+   "qid": "Q2298323",
+   "fame": 0.493,
+   "country": "United States",
+   "network": "Bravo",
+   "first_aired": 2006,
+   "description": "American reality competition show",
+   "hook": "has cooks tackle quickfire and elimination challenges, with losers told to pack their knives",
+   "known": 0.8,
+   "kind": "competition show"
+  },
+  {
+   "label": "So You Think You Can Dance",
+   "qid": "Q865612",
+   "fame": 0.477,
+   "country": "United States",
+   "network": "Fox Broadcasting Company",
+   "first_aired": 2005,
+   "description": "American reality television dance competition show",
+   "hook": "has dancers of every style compete for America's votes to win a cash prize",
+   "known": 0.8,
+   "kind": "competition show"
+  },
+  {
+   "label": "The Ultimate Fighter",
+   "qid": "Q2072393",
+   "fame": 0.463,
+   "country": "United States",
+   "network": "Spike TV",
+   "first_aired": 2005,
+   "description": "American reality series and MMA competition",
+   "hook": "puts rival teams of aspiring cage fighters in a house to earn a professional contract",
+   "known": 0.6,
+   "kind": "competition show"
+  }
+ ]
+}

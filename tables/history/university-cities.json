@@ -1,0 +1,410 @@
+{
+ "id": "table.history.university-cities",
+ "kind": "table",
+ "title": "Famous universities and the city they are in",
+ "genre": "society",
+ "category": "history",
+ "topic": "universities",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?cityLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?city) (COUNT(DISTINCT ?c) AS ?nC) WHERE { ?item wdt:P31/wdt:P279* wd:Q3918 ; wdt:P159 ?c ; wikibase:sitelinks ?sl . FILTER(?sl >= 40) ?c wdt:P31/wdt:P279* wd:Q515 . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T00:51:33.076Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T00:51:33.076Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "city",
+   "label": "City",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "university",
+  "many": "universities",
+  "wildcard": "place",
+  "theLabels": [
+   "Massachusetts Institute of Technology",
+   "Ohio State University",
+   "Brigham Young University",
+   "Johns Hopkins University",
+   "Georgia Tech",
+   "Michigan State University",
+   "University of Maryland",
+   "University of Alabama",
+   "University of Arizona",
+   "University of Florida",
+   "University of Michigan",
+   "University of Minnesota",
+   "University of Pennsylvania",
+   "University of Southern California",
+   "University of Virginia",
+   "University of British Columbia",
+   "University of al-Qarawiyyin",
+   "Texas A&M University",
+   "Arizona State University"
+  ],
+  "columns": {
+   "city": {
+    "role": "link",
+    "pick": "Which city is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each university to its city.",
+    "all": "Which {n} of these universities are in {value}?",
+    "reverse": "Which of these universities is in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Harvard University",
+   "qid": "Q13371",
+   "fame": 0.687,
+   "city": "Cambridge",
+   "description": "private university in Cambridge, Massachusetts",
+   "hook": "is the oldest school of higher learning in the United States and the top of the Ivy League",
+   "known": 0.95,
+   "kind": "ivy league"
+  },
+  {
+   "label": "Yale University",
+   "qid": "Q49112",
+   "fame": 0.622,
+   "city": "New Haven",
+   "description": "private university in New Haven, Connecticut",
+   "hook": "is an Ivy League school with secret societies like Skull and Bones and a bulldog mascot named Handsome Dan",
+   "known": 0.95,
+   "kind": "ivy league"
+  },
+  {
+   "label": "Massachusetts Institute of Technology",
+   "qid": "Q49108",
+   "fame": 0.615,
+   "city": "Cambridge",
+   "description": "private university in Cambridge, Massachusetts, USA, founded 1861",
+   "hook": "is a famous engineering school known for elaborate campus pranks called hacks",
+   "known": 0.9,
+   "kind": "elite private"
+  },
+  {
+   "label": "University of Pennsylvania",
+   "qid": "Q49117",
+   "fame": 0.615,
+   "city": "Philadelphia",
+   "description": "private research university in Philadelphia, Pennsylvania, United States",
+   "hook": "is an Ivy League school founded by Benjamin Franklin and home to a famous business school",
+   "known": 0.8,
+   "kind": "ivy league"
+  },
+  {
+   "label": "Texas A&M University",
+   "qid": "Q49212",
+   "fame": 0.61,
+   "city": "College Station",
+   "description": "public research university in College Station, Texas, United States",
+   "hook": "is a school known for its Aggie traditions, a Corps of Cadets and the 12th Man",
+   "known": 0.6,
+   "kind": "public state"
+  },
+  {
+   "label": "Northwestern University",
+   "qid": "Q309350",
+   "fame": 0.601,
+   "city": "Evanston",
+   "description": "private university in Evanston, Illinois, U.S.",
+   "hook": "is a Big Ten school on the shore of Lake Michigan, famous for its journalism program and Wildcats teams",
+   "known": 0.6,
+   "kind": "elite private"
+  },
+  {
+   "label": "Brown University",
+   "qid": "Q49114",
+   "fame": 0.592,
+   "city": "Providence",
+   "description": "private university in Providence, Rhode Island, United States",
+   "hook": "is the Ivy League school with an open curriculum and a bear as its mascot",
+   "known": 0.6,
+   "kind": "ivy league"
+  },
+  {
+   "label": "University of Southern California",
+   "qid": "Q4614",
+   "fame": 0.588,
+   "city": "Los Angeles",
+   "description": "private university in Los Angeles, California, United States",
+   "hook": "is a school whose Trojans football team is a longtime crosstown rival of UCLA",
+   "known": 0.7,
+   "kind": "elite private"
+  },
+  {
+   "label": "University of Michigan",
+   "qid": "Q230492",
+   "fame": 0.585,
+   "city": "Ann Arbor",
+   "description": "public research university in Ann Arbor, Michigan",
+   "hook": "is a Big Ten school with a huge football stadium called the Big House and maize-and-blue colors",
+   "known": 0.8,
+   "kind": "big ten"
+  },
+  {
+   "label": "Rice University",
+   "qid": "Q842909",
+   "fame": 0.578,
+   "city": "Houston",
+   "description": "private university in Houston, Texas, USA",
+   "hook": "is a Texas school whose sports teams are the Owls and whose stadium hosted a famous Moon speech",
+   "known": 0.4,
+   "kind": "elite private"
+  },
+  {
+   "label": "Carnegie Mellon University",
+   "qid": "Q190080",
+   "fame": 0.572,
+   "city": "Pittsburgh",
+   "description": "private research university in Pittsburgh, Pennsylvania, United States",
+   "hook": "is a school known for robotics, computer science and drama, with a Tartans nickname",
+   "known": 0.7,
+   "kind": "elite private"
+  },
+  {
+   "label": "Duke University",
+   "qid": "Q168751",
+   "fame": 0.571,
+   "city": "Durham",
+   "description": "private university in Durham, North Carolina, USA",
+   "hook": "is a school known for Blue Devils basketball and Coach K, with a Gothic chapel on campus",
+   "known": 0.8,
+   "kind": "elite private"
+  },
+  {
+   "label": "Howard University",
+   "qid": "Q1068752",
+   "fame": 0.569,
+   "city": "Washington, D.C.",
+   "description": "university in Washington D.C.",
+   "hook": "is one of the best-known historically Black colleges, with a Bison mascot",
+   "known": 0.6,
+   "kind": "historic"
+  },
+  {
+   "label": "Brigham Young University",
+   "qid": "Q332498",
+   "fame": 0.561,
+   "city": "Provo",
+   "description": "private research university in Provo, Utah, United States",
+   "hook": "is a school run by the Church of Jesus Christ of Latter-day Saints, known for its honor code and Cougars teams",
+   "known": 0.4,
+   "kind": "historic"
+  },
+  {
+   "label": "University of Florida",
+   "qid": "Q501758",
+   "fame": 0.556,
+   "city": "Gainesville",
+   "description": "public research university in Gainesville, Florida, United States",
+   "hook": "is a school whose Gators teams play in the Swamp and which gave the world a famous sports drink",
+   "known": 0.5,
+   "kind": "public state"
+  },
+  {
+   "label": "Vanderbilt University",
+   "qid": "Q29052",
+   "fame": 0.554,
+   "city": "Nashville",
+   "description": "private university in Nashville, Tennessee, US",
+   "hook": "is a Southern school founded with money from a railroad tycoon and known for its Commodores teams",
+   "known": 0.5,
+   "kind": "elite private"
+  },
+  {
+   "label": "Georgetown University",
+   "qid": "Q333886",
+   "fame": 0.549,
+   "city": "Washington, D.C.",
+   "description": "private university in Washington, D.C., United States",
+   "hook": "is the oldest Catholic and Jesuit school in the United States, with Hoyas sports teams",
+   "known": 0.8,
+   "kind": "historic"
+  },
+  {
+   "label": "Johns Hopkins University",
+   "qid": "Q193727",
+   "fame": 0.547,
+   "city": "Baltimore",
+   "description": "private university in Baltimore, Maryland, USA",
+   "hook": "is a school famed for medicine and public health, with a top hospital tied to its name",
+   "known": 0.7,
+   "kind": "elite private"
+  },
+  {
+   "label": "Ohio State University",
+   "qid": "Q309331",
+   "fame": 0.543,
+   "city": "Columbus",
+   "description": "public research university in Columbus, Ohio, United States",
+   "hook": "is a Big Ten school known for Buckeyes football and its rivalry with Michigan",
+   "known": 0.8,
+   "kind": "big ten"
+  },
+  {
+   "label": "Tsinghua University",
+   "qid": "Q16955",
+   "fame": 0.528,
+   "city": "Beijing",
+   "description": "public university in Beijing, China",
+   "hook": "is a top-ranked Chinese school built on the grounds of a former imperial garden",
+   "known": 0.2,
+   "kind": "international"
+  },
+  {
+   "label": "Arizona State University",
+   "qid": "Q670897",
+   "fame": 0.527,
+   "city": "Tempe",
+   "description": "public university in Tempe, Arizona, US",
+   "hook": "is one of the largest schools in the country by enrollment, with Sun Devils teams",
+   "known": 0.4,
+   "kind": "public state"
+  },
+  {
+   "label": "McGill University",
+   "qid": "Q201492",
+   "fame": 0.524,
+   "city": "Montreal",
+   "description": "English-language public research university in Montreal, Quebec, Canada",
+   "hook": "is the top-ranked Canadian school, whose Redbirds teams play in a French-speaking province",
+   "known": 0.4,
+   "kind": "international"
+  },
+  {
+   "label": "University of Virginia",
+   "qid": "Q213439",
+   "fame": 0.518,
+   "city": "Charlottesville",
+   "description": "public university in Charlottesville, Virginia",
+   "hook": "is a school designed by Thomas Jefferson, centered on a domed Rotunda and a lawn called the Academical Village",
+   "known": 0.7,
+   "kind": "historic"
+  },
+  {
+   "label": "University of Alabama",
+   "qid": "Q492318",
+   "fame": 0.507,
+   "city": "Tuscaloosa",
+   "description": "public university located in Tuscaloosa, Alabama, United States",
+   "hook": "is a Southern school whose Crimson Tide football team won titles under Bear Bryant and Nick Saban",
+   "known": 0.6,
+   "kind": "public state"
+  },
+  {
+   "label": "University of Minnesota",
+   "qid": "Q238101",
+   "fame": 0.504,
+   "city": "Minneapolis",
+   "description": "public research university in Minneapolis and Saint Paul, Minnesota, United States",
+   "hook": "is a Big Ten school whose Golden Gophers play in a metropolitan area known as the Twin Cities",
+   "known": 0.5,
+   "kind": "big ten"
+  },
+  {
+   "label": "Georgia Tech",
+   "qid": "Q864855",
+   "fame": 0.499,
+   "city": "Atlanta",
+   "description": "public research university in Atlanta, Georgia, United States",
+   "hook": "is a technology school whose Yellow Jackets teams and Ramblin' Wreck car are famous",
+   "known": 0.6,
+   "kind": "public state"
+  },
+  {
+   "label": "Michigan State University",
+   "qid": "Q270222",
+   "fame": 0.499,
+   "city": "East Lansing",
+   "description": "public research university in East Lansing, Michigan, United States",
+   "hook": "is a Big Ten school whose Spartans teams are known for basketball under Tom Izzo",
+   "known": 0.6,
+   "kind": "big ten"
+  },
+  {
+   "label": "University of Maryland",
+   "qid": "Q503415",
+   "fame": 0.497,
+   "city": "College Park",
+   "description": "public research university in the city of College Park in Prince George's County, Maryland, USA",
+   "hook": "is a school whose Terrapins teams are named after a turtle, located just outside the nation's capital",
+   "known": 0.4,
+   "kind": "big ten"
+  },
+  {
+   "label": "Emory University",
+   "qid": "Q621043",
+   "fame": 0.494,
+   "city": "Atlanta",
+   "description": "private research university in Atlanta, Georgia, United States",
+   "hook": "is a Southern school funded by a soft-drink fortune, with Eagles teams",
+   "known": 0.4,
+   "kind": "elite private"
+  },
+  {
+   "label": "Al-Azhar University",
+   "qid": "Q173959",
+   "fame": 0.487,
+   "city": "Cairo",
+   "description": "public university in Cairo, Egypt",
+   "hook": "is a centuries-old mosque and school that is among the oldest and most influential centers of Islamic learning",
+   "known": 0.05,
+   "kind": "international"
+  },
+  {
+   "label": "University of Arizona",
+   "qid": "Q503419",
+   "fame": 0.477,
+   "city": "Tucson",
+   "description": "public university in Tucson, Arizona, United States",
+   "hook": "is a Southwestern school whose Wildcats basketball team is a perennial contender in the desert",
+   "known": 0.4,
+   "kind": "public state"
+  },
+  {
+   "label": "University of British Columbia",
+   "qid": "Q391028",
+   "fame": 0.472,
+   "city": "Vancouver",
+   "description": "public research university in British Columbia, Canada",
+   "hook": "is a top Canadian school on the Pacific coast, with Thunderbirds sports teams",
+   "known": 0.3,
+   "kind": "international"
+  },
+  {
+   "label": "University of al-Qarawiyyin",
+   "qid": "Q378014",
+   "fame": 0.465,
+   "city": "Fez",
+   "description": "university in Fez, Morocco",
+   "hook": "is widely considered the oldest continually operating degree-granting school in the world, founded by a woman",
+   "known": 0.05,
+   "kind": "international"
+  }
+ ]
+}

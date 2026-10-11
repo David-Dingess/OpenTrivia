@@ -1,0 +1,186 @@
+{
+ "id": "table.getting-around.motorcycle-brands-country",
+ "kind": "table",
+ "title": "Motorcycle brands and their country",
+ "genre": "daily-life",
+ "category": "getting-around",
+ "topic": "cars",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?n) WHERE { { ?item wdt:P1056 wd:Q34493 } UNION { ?item wdt:P31/wdt:P279* wd:Q15081030 } UNION { ?item wdt:P452 wd:Q15081030 } ?item wdt:P17|wdt:P495 ?c ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 10) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 300 } hint:Prior hint:runFirst true . FILTER(?n = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T10:45:27.724Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T10:45:27.724Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "motorcycle brand",
+  "many": "motorcycle brands",
+  "wildcard": "place",
+  "minFame": 0.45,
+  "exclude": [
+   {
+    "qid": "Q2668720",
+    "why": "Royal Enfield India: the name gives away the answer"
+   }
+  ],
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is the motorcycle brand {label} from?",
+    "statement": "The motorcycle brand {label} is from {value}.",
+    "match": "Match each motorcycle brand to its home country.",
+    "odd": "Three of these motorcycle brands are from {value}. Which one isn't?",
+    "all": "Tap all {n} motorcycle brands from {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "BMW",
+   "qid": "Q26678",
+   "fame": 0.652,
+   "country": "Germany",
+   "description": "German automobile manufacturer, and conglomerate",
+   "hook": "is a luxury carmaker whose motorcycles are known for boxer twin engines and GS adventure bikes",
+   "known": 0.8,
+   "kind": "mainstream"
+  },
+  {
+   "label": "Honda",
+   "qid": "Q9584",
+   "fame": 0.598,
+   "country": "Japan",
+   "description": "manufacturer of automobiles, motorcycles, and power equipment",
+   "hook": "has been the biggest motorcycle maker on the planet for decades, led by the Super Cub",
+   "known": 0.95,
+   "kind": "mainstream"
+  },
+  {
+   "label": "Royal Enfield India",
+   "qid": "Q2668720",
+   "fame": 0.572,
+   "country": "India",
+   "description": "Indian motorcycle manufacturing company",
+   "hook": null,
+   "known": 0.2,
+   "kind": "regional"
+  },
+  {
+   "label": "Suzuki Motor Corporation",
+   "qid": "Q181642",
+   "fame": 0.544,
+   "country": "Japan",
+   "description": "Japanese multinational automotive corporation",
+   "hook": "makes the Hayabusa superbike and GSX-R sport bikes as well as small cars",
+   "known": 0.8,
+   "kind": "mainstream"
+  },
+  {
+   "label": "Harley-Davidson",
+   "qid": "Q192814",
+   "fame": 0.541,
+   "country": "United States",
+   "description": "American motorcycle manufacturer",
+   "hook": "is the iconic cruiser brand with a loyal following, rumbling V-twins and a long rivalry with Indian",
+   "known": 0.95,
+   "kind": "iconic"
+  },
+  {
+   "label": "KTM",
+   "qid": "Q215657",
+   "fame": 0.514,
+   "country": "Austria",
+   "description": "Austrian motorcycle and sports car brand",
+   "hook": "is known for orange off-road dirt bikes and a MotoGP racing team",
+   "known": 0.4,
+   "kind": "specialty"
+  },
+  {
+   "label": "Yamaha Motor Company",
+   "qid": "Q158888",
+   "fame": 0.508,
+   "country": "Japan",
+   "description": "Japanese motorcycle manufacturer",
+   "hook": "split off from a famous musical instrument maker and also builds outboard boat motors",
+   "known": 0.8,
+   "kind": "mainstream"
+  },
+  {
+   "label": "Hero MotoCorp",
+   "qid": "Q1613763",
+   "fame": 0.506,
+   "country": "India",
+   "description": "Indian motorcycle and scooter manufacturer",
+   "hook": null,
+   "known": 0.2,
+   "kind": "regional"
+  },
+  {
+   "label": "TVS Motor Company",
+   "qid": "Q3300084",
+   "fame": 0.505,
+   "country": "India",
+   "description": "2- and 3-wheeler manufacturer from Chennai, India",
+   "hook": null,
+   "known": 0.05,
+   "kind": "regional"
+  },
+  {
+   "label": "Indian Motorcycle",
+   "qid": "Q1091034",
+   "fame": 0.472,
+   "country": "United States",
+   "description": "American brand of motorcycles",
+   "hook": "is the historic rival of Harley, famous for the Scout and the Chief",
+   "known": 0.6,
+   "kind": "iconic"
+  },
+  {
+   "label": "Ducati",
+   "qid": "Q271812",
+   "fame": 0.467,
+   "country": "Italy",
+   "description": "Italian company that designs and manufactures motorcycles",
+   "hook": "is famed for red sport bikes and has won more superbike world titles than any other maker",
+   "known": 0.6,
+   "kind": "specialty"
+  },
+  {
+   "label": "Jawa",
+   "qid": "Q763622",
+   "fame": 0.461,
+   "country": "Czech Republic",
+   "description": "Czech machinery company",
+   "hook": null,
+   "known": 0.05,
+   "kind": "heritage"
+  }
+ ]
+}

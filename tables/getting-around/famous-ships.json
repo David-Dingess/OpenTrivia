@@ -1,0 +1,428 @@
+{
+ "id": "table.getting-around.famous-ships",
+ "kind": "table",
+ "title": "Famous ships and their country",
+ "genre": "daily-life",
+ "category": "getting-around",
+ "topic": "ships",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryName ?typeName WHERE { VALUES (?item ?itemLabel ?countryName ?typeName) { (wd:Q25173 \"Titanic\" \"United Kingdom\" \"Ocean liner\") (wd:Q187093 \"Mayflower\" \"England\" \"Sailing ship\") (wd:Q187425 \"Lusitania\" \"United Kingdom\" \"Ocean liner\") (wd:Q321007 \"Olympic\" \"United Kingdom\" \"Ocean liner\") (wd:Q215692 \"Britannic\" \"United Kingdom\" \"Hospital ship\") (wd:Q504096 \"Carpathia\" \"United Kingdom\" \"Ocean liner\") (wd:Q752939 \"Queen Mary\" \"United Kingdom\" \"Ocean liner\") (wd:Q1244204 \"Queen Elizabeth 2\" \"United Kingdom\" \"Ocean liner\") (wd:Q171255 \"Cutty Sark\" \"United Kingdom\" \"Clipper\") (wd:Q213958 \"HMS Victory\" \"United Kingdom\" \"Warship\") (wd:Q544894 \"Mary Rose\" \"England\" \"Warship\") (wd:Q546198 \"Golden Hind\" \"England\" \"Sailing ship\") (wd:Q312224 \"HMS Endeavour\" \"United Kingdom\" \"Research ship\") (wd:Q35926 \"HMS Beagle\" \"United Kingdom\" \"Research ship\") (wd:Q900379 \"HMS Bounty\" \"United Kingdom\" \"Sailing ship\") (wd:Q757178 \"HMS Belfast\" \"United Kingdom\" \"Warship\") (wd:Q733293 \"SS Great Eastern\" \"United Kingdom\" \"Steamship\") (wd:Q744086 \"SS Great Britain\" \"United Kingdom\" \"Steamship\") (wd:Q946641 \"SS Great Western\" \"United Kingdom\" \"Steamship\") (wd:Q512615 \"HMS Erebus\" \"United Kingdom\" \"Polar ship\") (wd:Q141667 \"HMS Terror\" \"United Kingdom\" \"Polar ship\") (wd:Q107900 \"Santa Maria\" \"Spain\" \"Sailing ship\") (wd:Q204025 \"Kon-Tiki\" \"Norway\" \"Raft\") (wd:Q110283 \"Fram\" \"Norway\" \"Polar ship\") (wd:Q1528966 \"Gjøa\" \"Norway\" \"Polar ship\") (wd:Q944436 \"USS Constitution\" \"United States\" \"Warship\") (wd:Q857891 \"USS Monitor\" \"United States\" \"Ironclad\") (wd:Q671602 \"USS Maine\" \"United States\" \"Battleship\") (wd:Q506022 \"USS Arizona\" \"United States\" \"Battleship\") (wd:Q272560 \"USS Missouri\" \"United States\" \"Battleship\") (wd:Q1351288 \"USS Intrepid\" \"United States\" \"Aircraft carrier\") (wd:Q827360 \"USS Nautilus\" \"United States\" \"Submarine\") (wd:Q1286267 \"SS Edmund Fitzgerald\" \"United States\" \"Freighter\") (wd:Q150857 \"Bismarck\" \"Germany\" \"Battleship\") (wd:Q153370 \"Tirpitz\" \"Germany\" \"Battleship\") (wd:Q154115 \"Admiral Graf Spee\" \"Germany\" \"Cruiser\") (wd:Q215010 \"Yamato\" \"Japan\" \"Battleship\") (wd:Q304703 \"Normandie\" \"France\" \"Ocean liner\") (wd:Q493798 \"Andrea Doria\" \"Italy\" \"Ocean liner\") (wd:Q886009 \"Bluenose\" \"Canada\" \"Sailing ship\") } ?item wikibase:sitelinks ?sitelinks . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T11:26:56.509Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T13:00:00.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "type",
+   "label": "Type of ship",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "ship",
+  "many": "ships",
+  "minFame": 0.45,
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country did {label} sail for?",
+    "statement": "{label} sailed for {value}.",
+    "match": "Match each ship to the country it sailed for.",
+    "odd": "Three of these ships sailed for {value}. Which one didn't?",
+    "all": "Tap all {n} ships that sailed for {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Titanic",
+   "qid": "Q25173",
+   "fame": 0.73,
+   "country": "United Kingdom",
+   "type": "Ocean liner",
+   "description": "British transatlantic passenger liner, launched and foundered in 1912",
+   "hook": "struck an iceberg on her maiden voyage and sank with about 1,500 lives lost",
+   "known": 0.95,
+   "kind": "ocean liner"
+  },
+  {
+   "label": "SS Edmund Fitzgerald",
+   "qid": "Q1286267",
+   "fame": 0.64,
+   "country": "United States",
+   "type": "Freighter",
+   "description": "American Great Lakes freighter",
+   "hook": "sank with all 29 crew aboard in a storm on Lake Superior",
+   "known": 0.6,
+   "kind": "freighter"
+  },
+  {
+   "label": "Mayflower",
+   "qid": "Q187093",
+   "fame": 0.604,
+   "country": "England",
+   "type": "Sailing ship",
+   "description": "sailing ship carrying English and Dutch Pilgrims from England to North America",
+   "hook": "carried the Pilgrims across the Atlantic to the New World",
+   "known": 0.8,
+   "kind": "sailing ship"
+  },
+  {
+   "label": "HMS Victory",
+   "qid": "Q213958",
+   "fame": 0.591,
+   "country": "United Kingdom",
+   "type": "Warship",
+   "description": "1765 first-rate ship of the line",
+   "hook": "was Nelson's flagship at Trafalgar and is still in commission as the oldest of its kind",
+   "known": 0.7,
+   "kind": "warship"
+  },
+  {
+   "label": "Yamato",
+   "qid": "Q215010",
+   "fame": 0.59,
+   "country": "Japan",
+   "type": "Battleship",
+   "description": "1940 Yamato-class battleship",
+   "hook": "carried the largest guns ever mounted on any warship",
+   "known": 0.5,
+   "kind": "battleship"
+  },
+  {
+   "label": "Bismarck",
+   "qid": "Q150857",
+   "fame": 0.589,
+   "country": "Germany",
+   "type": "Battleship",
+   "description": "1939 Bismarck-class battleship",
+   "hook": "was a giant Nazi-era vessel named after a famous chancellor",
+   "known": 0.5,
+   "kind": "battleship"
+  },
+  {
+   "label": "Britannic",
+   "qid": "Q215692",
+   "fame": 0.579,
+   "country": "United Kingdom",
+   "type": "Hospital ship",
+   "description": "Olympic-class ocean liner. Sister ship of RMS Olympic and RMS Titanic",
+   "hook": "was the younger sister of Titanic and sank in the Aegean Sea during the First World War",
+   "known": 0.4,
+   "kind": "ocean liner"
+  },
+  {
+   "label": "Lusitania",
+   "qid": "Q187425",
+   "fame": 0.574,
+   "country": "United Kingdom",
+   "type": "Ocean liner",
+   "description": "British ocean liner sunk by a German submarine in World War I",
+   "hook": "was torpedoed by a German U-boat in the First World War, turning American opinion against Germany",
+   "known": 0.6,
+   "kind": "ocean liner"
+  },
+  {
+   "label": "Queen Mary",
+   "qid": "Q752939",
+   "fame": 0.574,
+   "country": "United Kingdom",
+   "type": "Ocean liner",
+   "description": "retired British ocean liner",
+   "hook": "is now a hotel and museum moored in Long Beach, California",
+   "known": 0.6,
+   "kind": "ocean liner"
+  },
+  {
+   "label": "Olympic",
+   "qid": "Q321007",
+   "fame": 0.567,
+   "country": "United Kingdom",
+   "type": "Ocean liner",
+   "description": "lead ship of the Olympic-Class ocean liners. Sister ship to RMS Titanic and HMHS Britannic",
+   "hook": "was the older sister of Titanic and served as a troopship in the First World War",
+   "known": 0.4,
+   "kind": "ocean liner"
+  },
+  {
+   "label": "Andrea Doria",
+   "qid": "Q493798",
+   "fame": 0.563,
+   "country": "Italy",
+   "type": "Ocean liner",
+   "description": "ocean liner",
+   "hook": "sank after colliding with another vessel in thick fog, with most aboard rescued",
+   "known": 0.5,
+   "kind": "ocean liner"
+  },
+  {
+   "label": "USS Missouri",
+   "qid": "Q272560",
+   "fame": 0.561,
+   "country": "United States",
+   "type": "Battleship",
+   "description": "1944 Iowa-class battleship",
+   "hook": "hosted the signing of the Japanese surrender that ended World War II",
+   "known": 0.4,
+   "kind": "battleship"
+  },
+  {
+   "label": "Carpathia",
+   "qid": "Q504096",
+   "fame": 0.559,
+   "country": "United Kingdom",
+   "type": "Ocean liner",
+   "description": "British ocean liner known for rescuing survivors of the RMS Titanic",
+   "hook": "raced through ice fields to rescue over 700 survivors of Titanic",
+   "known": 0.6,
+   "kind": "ocean liner"
+  },
+  {
+   "label": "USS Constitution",
+   "qid": "Q944436",
+   "fame": 0.557,
+   "country": "United States",
+   "type": "Warship",
+   "description": "1797 heavy frigate of the United States Navy, oldest commissioned naval vessel afloat",
+   "hook": "is nicknamed Old Ironsides and is the oldest commissioned vessel still afloat",
+   "known": 0.4,
+   "kind": "warship"
+  },
+  {
+   "label": "USS Arizona",
+   "qid": "Q506022",
+   "fame": 0.541,
+   "country": "United States",
+   "type": "Battleship",
+   "description": "1915 Pennsylvania-class battleship",
+   "hook": "sank in the attack on Pearl Harbor and now lies beneath a memorial there",
+   "known": 0.5,
+   "kind": "battleship"
+  },
+  {
+   "label": "HMS Belfast",
+   "qid": "Q757178",
+   "fame": 0.519,
+   "country": "United Kingdom",
+   "type": "Warship",
+   "description": "1938 Edinburgh-class light cruiser",
+   "hook": null,
+   "known": 0.3,
+   "kind": "warship"
+  },
+  {
+   "label": "Tirpitz",
+   "qid": "Q153370",
+   "fame": 0.518,
+   "country": "Germany",
+   "type": "Battleship",
+   "description": "1939 Bismarck-class battleship",
+   "hook": "was the second of two huge battleships, named for the architect of the Kaiser's navy",
+   "known": 0.4,
+   "kind": "battleship"
+  },
+  {
+   "label": "Queen Elizabeth 2",
+   "qid": "Q1244204",
+   "fame": 0.515,
+   "country": "United Kingdom",
+   "type": "Ocean liner",
+   "description": "former ocean liner and cruise ship from the United Kingdom",
+   "hook": "sailed for Cunard across the Atlantic and on cruises for decades before becoming a hotel in Dubai",
+   "known": 0.6,
+   "kind": "ocean liner"
+  },
+  {
+   "label": "Cutty Sark",
+   "qid": "Q171255",
+   "fame": 0.507,
+   "country": "United Kingdom",
+   "type": "Clipper",
+   "description": "British clipper ship",
+   "hook": "was one of the last and fastest ships built to haul tea, named for a witch in a Burns poem",
+   "known": 0.5,
+   "kind": "sailing ship"
+  },
+  {
+   "label": "Admiral Graf Spee",
+   "qid": "Q154115",
+   "fame": 0.499,
+   "country": "Germany",
+   "type": "Cruiser",
+   "description": "1934 Deutschland-class heavy cruiser",
+   "hook": null,
+   "known": 0.3,
+   "kind": "cruiser"
+  },
+  {
+   "label": "SS Great Britain",
+   "qid": "Q744086",
+   "fame": 0.499,
+   "country": "United Kingdom",
+   "type": "Steamship",
+   "description": "1843 passenger steamship and museum in Bristol, United Kingdom",
+   "hook": "was designed by Brunel as the first large ship to combine an iron hull with a screw propeller",
+   "known": 0.4,
+   "kind": "steamship"
+  },
+  {
+   "label": "SS Great Eastern",
+   "qid": "Q733293",
+   "fame": 0.491,
+   "country": "United Kingdom",
+   "type": "Steamship",
+   "description": "British sailing steamship",
+   "hook": null,
+   "known": 0.3,
+   "kind": "steamship"
+  },
+  {
+   "label": "HMS Terror",
+   "qid": "Q141667",
+   "fame": 0.485,
+   "country": "United Kingdom",
+   "type": "Polar ship",
+   "description": "1813 Vesuvius-class bomb vessel",
+   "hook": null,
+   "known": 0.25,
+   "kind": "polar vessel"
+  },
+  {
+   "label": "USS Nautilus",
+   "qid": "Q827360",
+   "fame": 0.484,
+   "country": "United States",
+   "type": "Submarine",
+   "description": "world's first nuclear-powered submarine",
+   "hook": "was the world's first nuclear-powered boat and the first to pass beneath the North Pole",
+   "known": 0.5,
+   "kind": "submarine"
+  },
+  {
+   "label": "Mary Rose",
+   "qid": "Q544894",
+   "fame": 0.479,
+   "country": "England",
+   "type": "Warship",
+   "description": "1511 carrack warship",
+   "hook": "was a flagship of Henry VIII that sank in the Solent while fighting a French invasion fleet",
+   "known": 0.4,
+   "kind": "warship"
+  },
+  {
+   "label": "USS Maine",
+   "qid": "Q671602",
+   "fame": 0.478,
+   "country": "United States",
+   "type": "Battleship",
+   "description": "second-class battleship of the United States Navy",
+   "hook": null,
+   "known": 0.3,
+   "kind": "battleship"
+  },
+  {
+   "label": "USS Intrepid",
+   "qid": "Q1351288",
+   "fame": 0.467,
+   "country": "United States",
+   "type": "Aircraft carrier",
+   "description": "1943 Essex-class aircraft carrier",
+   "hook": null,
+   "known": 0.35,
+   "kind": "aircraft carrier"
+  },
+  {
+   "label": "HMS Bounty",
+   "qid": "Q900379",
+   "fame": 0.466,
+   "country": "United Kingdom",
+   "type": "Sailing ship",
+   "description": "1784 survey ship",
+   "hook": "was the scene of a famous mutiny led by Fletcher Christian against Captain Bligh",
+   "known": 0.5,
+   "kind": "sailing ship"
+  },
+  {
+   "label": "HMS Erebus",
+   "qid": "Q512615",
+   "fame": 0.462,
+   "country": "United Kingdom",
+   "type": "Polar ship",
+   "description": "1826 Hecla-class bomb vessel",
+   "hook": null,
+   "known": 0.25,
+   "kind": "polar vessel"
+  },
+  {
+   "label": "Normandie",
+   "qid": "Q304703",
+   "fame": 0.461,
+   "country": "France",
+   "type": "Ocean liner",
+   "description": "ship built in 1935",
+   "hook": "was the largest and fastest passenger ship afloat when she entered service, setting an Atlantic record",
+   "known": 0.4,
+   "kind": "ocean liner"
+  },
+  {
+   "label": "Santa Maria",
+   "qid": "Q107900",
+   "fame": 0.46,
+   "country": "Spain",
+   "type": "Sailing ship",
+   "description": "carrack used by Christopher Columbus",
+   "hook": "was the largest of the three ships Columbus sailed across the Atlantic on his first voyage",
+   "known": 0.6,
+   "kind": "sailing ship"
+  },
+  {
+   "label": "Golden Hind",
+   "qid": "Q546198",
+   "fame": 0.459,
+   "country": "England",
+   "type": "Sailing ship",
+   "description": "1577 galleon, flagship of Francis Drake's circumnavigation",
+   "hook": "carried Francis Drake on his voyage around the world",
+   "known": 0.45,
+   "kind": "sailing ship"
+  },
+  {
+   "label": "USS Monitor",
+   "qid": "Q857891",
+   "fame": 0.457,
+   "country": "United States",
+   "type": "Ironclad",
+   "description": "1862 unique ironclad; first in United States Navy service",
+   "hook": null,
+   "known": 0.3,
+   "kind": "ironclad"
+  }
+ ]
+}

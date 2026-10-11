@@ -1,0 +1,509 @@
+{
+ "id": "table.sports.famous-coaches",
+ "kind": "table",
+ "title": "Famous coaches and the team they are famous for",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "sports-lore",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?teamLabel WHERE { VALUES (?item ?teamLabel) { (wd:Q553321 \"Green Bay Packers\") (wd:Q720027 \"New England Patriots\") (wd:Q1374361 \"Dallas Cowboys\") (wd:Q1239512 \"Miami Dolphins\") (wd:Q2365047 \"San Francisco 49ers\") (wd:Q952108 \"Pittsburgh Steelers\") (wd:Q2622812 \"Kansas City Chiefs\") (wd:Q1355840 \"Chicago Bears\") (wd:Q163908 \"Chicago Bears\") (wd:Q1345694 \"Oakland Raiders\") (wd:Q364415 \"New York Giants\") (wd:Q719098 \"Indianapolis Colts\") (wd:Q1758777 \"Seattle Seahawks\") (wd:Q2414784 \"New Orleans Saints\") (wd:Q371118 \"Pittsburgh Steelers\") (wd:Q316246 \"Chicago Bulls\") (wd:Q336581 \"Boston Celtics\") (wd:Q456730 \"San Antonio Spurs\") (wd:Q335762 \"Miami Heat\") (wd:Q440324 \"Miami Heat\") (wd:Q523630 \"Golden State Warriors\") (wd:Q176263 \"Detroit Pistons\") (wd:Q388134 \"Utah Jazz\") (wd:Q551032 \"UCLA Bruins\") (wd:Q434909 \"Duke Blue Devils\") (wd:Q202584 \"North Carolina Tar Heels\") (wd:Q373491 \"UConn Huskies\") (wd:Q460394 \"Tennessee Lady Volunteers\") (wd:Q530705 \"Syracuse Orange\") (wd:Q44980 \"Manchester United\") (wd:Q47576 \"Arsenal\") (wd:Q164038 \"Manchester City\") (wd:Q83106 \"Liverpool\") (wd:Q207457 \"Liverpool\") (wd:Q207658 \"Nottingham Forest\") (wd:Q206237 \"Manchester United\") (wd:Q657360 \"Spain national football team\") (wd:Q4462 \"Germany national football team\") (wd:Q258115 \"Atletico Madrid\") (wd:Q355378 \"Celtic\") (wd:Q313784 \"Arsenal\") (wd:Q294259 \"AC Milan\") (wd:Q316681 \"England national football team\") (wd:Q311029 \"England national football team\") (wd:Q508711 \"France national football team\") (wd:Q311586 \"Argentina national football team\") (wd:Q707804 \"New York Yankees\") (wd:Q1071896 \"Los Angeles Dodgers\") (wd:Q1047261 \"New York Yankees\") (wd:Q1126349 \"Philadelphia Athletics\") (wd:Q1133919 \"Cincinnati Reds\") (wd:Q2696934 \"St. Louis Cardinals\") (wd:Q2907947 \"Atlanta Braves\") (wd:Q1277193 \"Baltimore Orioles\") (wd:Q920331 \"Detroit Red Wings\") (wd:Q285583 \"Montreal Canadiens\") (wd:Q278804 \"Alabama Crimson Tide\") (wd:Q70894 \"Alabama Crimson Tide\") (wd:Q1770885 \"Notre Dame Fighting Irish\") (wd:Q2154479 \"Ajax\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T03:51:22.957Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T03:51:22.957Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "team",
+   "label": "Team",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "coach",
+  "many": "coaches",
+  "wildcard": "person",
+  "hookAsk": "Which coach {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "team": {
+    "role": "link",
+    "pick": "Which team is {label} best known for coaching?",
+    "statement": "{label} is best known for coaching {value}.",
+    "match": "Match each coach to the team they are best known for coaching."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Mike Tomlin",
+   "qid": "Q371118",
+   "fame": 0.77,
+   "team": "Pittsburgh Steelers",
+   "description": "American football coach (born 1972)",
+   "hook": "has never had a losing season as head coach of a famously stable NFL franchise",
+   "known": 0.4,
+   "kind": "american football"
+  },
+  {
+   "label": "Pep Guardiola",
+   "qid": "Q164038",
+   "fame": 0.75,
+   "team": "Manchester City",
+   "description": "Spanish association football manager and player (born 1971)",
+   "hook": "built a possession-based, tiki-taka style side that won a treble and a record-setting run of titles",
+   "known": 0.8,
+   "kind": "soccer"
+  },
+  {
+   "label": "Nick Saban",
+   "qid": "Q70894",
+   "fame": 0.74,
+   "team": "Alabama Crimson Tide",
+   "description": "American football coach",
+   "hook": "won seven national titles in college football and is known for a relentless 'process' mindset",
+   "known": 0.6,
+   "kind": "american football"
+  },
+  {
+   "label": "Bill Belichick",
+   "qid": "Q720027",
+   "fame": 0.713,
+   "team": "New England Patriots",
+   "description": "American football coach (born 1952)",
+   "hook": "won six Super Bowls as a head coach and is famous for hooded sweatshirts and terse press conferences",
+   "known": 0.8,
+   "kind": "american football"
+  },
+  {
+   "label": "Jürgen Klopp",
+   "qid": "Q83106",
+   "fame": 0.701,
+   "team": "Liverpool",
+   "description": "German association football manager (born 1967)",
+   "hook": "is known for 'heavy metal football', gegenpressing and big bear hugs on the touchline",
+   "known": 0.8,
+   "kind": "soccer"
+  },
+  {
+   "label": "John Madden",
+   "qid": "Q1345694",
+   "fame": 0.695,
+   "team": "Oakland Raiders",
+   "description": "American football coach (1936–2021)",
+   "hook": "won a Super Bowl as coach, then became a beloved broadcaster whose name is on a best-selling video game series",
+   "known": 0.6,
+   "kind": "american football"
+  },
+  {
+   "label": "Andy Reid",
+   "qid": "Q2622812",
+   "fame": 0.68,
+   "team": "Kansas City Chiefs",
+   "description": "American football player and coach",
+   "hook": "is a mustached, cheeseburger-loving head coach known for a creative offense and multiple Super Bowl wins",
+   "known": 0.6,
+   "kind": "american football"
+  },
+  {
+   "label": "Brian Clough",
+   "qid": "Q207658",
+   "fame": 0.677,
+   "team": "Nottingham Forest",
+   "description": "English football player and manager (1935–2004)",
+   "hook": "was a brash, quotable manager who won back-to-back European Cups with a small provincial club",
+   "known": 0.4,
+   "kind": "soccer"
+  },
+  {
+   "label": "Alex Ferguson",
+   "qid": "Q44980",
+   "fame": 0.667,
+   "team": "Manchester United",
+   "description": "Scottish association football manager and former player (born 1941)",
+   "hook": "won 13 league titles and two Champions Leagues in 26 years, famous for the 'hairdryer treatment'",
+   "known": 0.8,
+   "kind": "soccer"
+  },
+  {
+   "label": "Sean Payton",
+   "qid": "Q2414784",
+   "fame": 0.657,
+   "team": "New Orleans Saints",
+   "description": "American football coach and player (born 1963)",
+   "hook": "led a city's team to its first Super Bowl win, aided by a bold onside kick call",
+   "known": 0.4,
+   "kind": "american football"
+  },
+  {
+   "label": "Mike Ditka",
+   "qid": "Q1355840",
+   "fame": 0.646,
+   "team": "Chicago Bears",
+   "description": "American football player, coach, and television commentator (born 1939)",
+   "hook": "is a mustached tight end turned coach with a famously gruff, tough-guy persona and a Super Bowl title",
+   "known": 0.6,
+   "kind": "american football"
+  },
+  {
+   "label": "Diego Simeone",
+   "qid": "Q258115",
+   "fame": 0.637,
+   "team": "Atletico Madrid",
+   "description": "Argentine association football player and manager (born 1970)",
+   "hook": "is an intense, touchline-prowling manager famous for a gritty, defensive 'cholismo' style",
+   "known": 0.6,
+   "kind": "soccer"
+  },
+  {
+   "label": "Pete Carroll",
+   "qid": "Q1758777",
+   "fame": 0.624,
+   "team": "Seattle Seahawks",
+   "description": "American football player and coach",
+   "hook": "is a high-energy coach who won a college national title and a Super Bowl, known for gum-chewing enthusiasm",
+   "known": 0.4,
+   "kind": "american football"
+  },
+  {
+   "label": "Gregg Popovich",
+   "qid": "Q456730",
+   "fame": 0.605,
+   "team": "San Antonio Spurs",
+   "description": "American basketball coach",
+   "hook": "is a gruff, sardonic coach who won five NBA titles and was famous for terse sideline interviews",
+   "known": 0.8,
+   "kind": "basketball"
+  },
+  {
+   "label": "Bill Parcells",
+   "qid": "Q364415",
+   "fame": 0.601,
+   "team": "New York Giants",
+   "description": "American football coach (born 1941)",
+   "hook": "is nicknamed 'the Big Tuna' and won two Super Bowls with one franchise",
+   "known": 0.4,
+   "kind": "american football"
+  },
+  {
+   "label": "Phil Jackson",
+   "qid": "Q316246",
+   "fame": 0.601,
+   "team": "Chicago Bulls",
+   "description": "American basketball player, coach and executive",
+   "hook": "is the 'Zen Master' who won six NBA titles with one team and five with another",
+   "known": 0.8,
+   "kind": "basketball"
+  },
+  {
+   "label": "Arsène Wenger",
+   "qid": "Q47576",
+   "fame": 0.587,
+   "team": "Arsenal",
+   "description": "French football manager (born 1949)",
+   "hook": "is a professor-like manager who led his club through a whole league season unbeaten",
+   "known": 0.6,
+   "kind": "soccer"
+  },
+  {
+   "label": "Bear Bryant",
+   "qid": "Q278804",
+   "fame": 0.569,
+   "team": "Alabama Crimson Tide",
+   "description": "American college football coach (1913–1983)",
+   "hook": "is a houndstooth-hat-wearing college coaching legend who won six national championships",
+   "known": 0.4,
+   "kind": "american football"
+  },
+  {
+   "label": "Vince Lombardi",
+   "qid": "Q553321",
+   "fame": 0.566,
+   "team": "Green Bay Packers",
+   "description": "American football player, coach, and executive (1913-1970)",
+   "hook": "is a famously demanding coach whose name is on the Super Bowl trophy and who won the first two championships",
+   "known": 0.6,
+   "kind": "american football"
+  },
+  {
+   "label": "Didier Deschamps",
+   "qid": "Q508711",
+   "fame": 0.561,
+   "team": "France national football team",
+   "description": "French association football player and coach",
+   "hook": "captained a World Cup winning side as a player, then won the tournament again as a manager",
+   "known": 0.6,
+   "kind": "soccer"
+  },
+  {
+   "label": "Don Shula",
+   "qid": "Q1239512",
+   "fame": 0.561,
+   "team": "Miami Dolphins",
+   "description": "American football player and coach (1930-2020)",
+   "hook": "holds the record for most wins by an NFL head coach and led the only perfect season in league history",
+   "known": 0.6,
+   "kind": "american football"
+  },
+  {
+   "label": "Pat Riley",
+   "qid": "Q335762",
+   "fame": 0.551,
+   "team": "Miami Heat",
+   "description": "American basketball player, coach and executive",
+   "hook": "is a slicked-back-hair coach famous for 'Showtime' basketball and a guarantee of a repeat title",
+   "known": 0.6,
+   "kind": "basketball"
+  },
+  {
+   "label": "Tom Landry",
+   "qid": "Q1374361",
+   "fame": 0.548,
+   "team": "Dallas Cowboys",
+   "description": "American football coach and player (1924–2000)",
+   "hook": "is a fedora-wearing, stone-faced coach who led his team to twenty straight winning seasons",
+   "known": 0.6,
+   "kind": "american football"
+  },
+  {
+   "label": "Steve Kerr",
+   "qid": "Q523630",
+   "fame": 0.544,
+   "team": "Golden State Warriors",
+   "description": "American basketball player and coach",
+   "hook": "is a sharpshooting former player who coached a team to a record 73-win season and several titles",
+   "known": 0.6,
+   "kind": "basketball"
+  },
+  {
+   "label": "Tony Dungy",
+   "qid": "Q719098",
+   "fame": 0.542,
+   "team": "Indianapolis Colts",
+   "description": "American football player and coach (born 1955)",
+   "hook": "was the first Black head coach to win a Super Bowl and is known for a calm, faith-driven approach",
+   "known": 0.4,
+   "kind": "american football"
+  },
+  {
+   "label": "Joe Torre",
+   "qid": "Q707804",
+   "fame": 0.539,
+   "team": "New York Yankees",
+   "description": "American baseball player, coach, manager",
+   "hook": "managed a dynasty that won four World Series titles in five years in the late 1990s",
+   "known": 0.6,
+   "kind": "baseball"
+  },
+  {
+   "label": "George Halas",
+   "qid": "Q163908",
+   "fame": 0.534,
+   "team": "Chicago Bears",
+   "description": "American football player, coach, and team owner (1895-1983)",
+   "hook": "is nicknamed 'Papa' and was a founding figure of the NFL who won six league championships as a coach",
+   "known": 0.4,
+   "kind": "american football"
+  },
+  {
+   "label": "Matt Busby",
+   "qid": "Q206237",
+   "fame": 0.517,
+   "team": "Manchester United",
+   "description": "Scottish football player and manager (1909–1994)",
+   "hook": "rebuilt his club after a deadly airplane crash and won the first European Cup for an English side",
+   "known": 0.2,
+   "kind": "soccer"
+  },
+  {
+   "label": "Lionel Scaloni",
+   "qid": "Q311586",
+   "fame": 0.51,
+   "team": "Argentina national football team",
+   "description": "Argentine football coach (born 1978)",
+   "hook": "led his country to a World Cup trophy in a thrilling penalty shootout final after a long wait",
+   "known": 0.6,
+   "kind": "soccer"
+  },
+  {
+   "label": "Bill Shankly",
+   "qid": "Q207457",
+   "fame": 0.506,
+   "team": "Liverpool",
+   "description": "Scottish footballer and manager (1913-1981)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "soccer"
+  },
+  {
+   "label": "Mike Krzyzewski",
+   "qid": "Q434909",
+   "fame": 0.506,
+   "team": "Duke Blue Devils",
+   "description": "American basketball coach (born 1947)",
+   "hook": "is known as 'Coach K', the all-time wins leader in men's major college basketball",
+   "known": 0.6,
+   "kind": "basketball"
+  },
+  {
+   "label": "Gareth Southgate",
+   "qid": "Q316681",
+   "fame": 0.501,
+   "team": "England national football team",
+   "description": "English professional football manager and former player (born 1970)",
+   "hook": "wears a waistcoat on the touchline and led his country to a European Championship final",
+   "known": 0.6,
+   "kind": "soccer"
+  },
+  {
+   "label": "Tommy Lasorda",
+   "qid": "Q1071896",
+   "fame": 0.5,
+   "team": "Los Angeles Dodgers",
+   "description": "American baseball player and coach (1927–2021)",
+   "hook": "is a famously fiery, spaghetti-loving manager who bled blue and won two World Series",
+   "known": 0.4,
+   "kind": "baseball"
+  },
+  {
+   "label": "Tony La Russa",
+   "qid": "Q2696934",
+   "fame": 0.493,
+   "team": "St. Louis Cardinals",
+   "description": "American baseball player and manager",
+   "hook": "is a lawyer-turned-manager who won World Series titles with two clubs and popularized specialized bullpen use",
+   "known": 0.4,
+   "kind": "baseball"
+  },
+  {
+   "label": "Bill Walsh",
+   "qid": "Q2365047",
+   "fame": 0.489,
+   "team": "San Francisco 49ers",
+   "description": "American football coach (1931–2007)",
+   "hook": "invented the 'West Coast offense' and won three Super Bowls",
+   "known": 0.4,
+   "kind": "american football"
+  },
+  {
+   "label": "Chuck Noll",
+   "qid": "Q952108",
+   "fame": 0.487,
+   "team": "Pittsburgh Steelers",
+   "description": "American football player and coach (1932-2014)",
+   "hook": "is the only coach to win four Super Bowls with the same franchise, building a 1970s 'Steel Curtain' dynasty",
+   "known": 0.4,
+   "kind": "american football"
+  },
+  {
+   "label": "John Wooden",
+   "qid": "Q551032",
+   "fame": 0.479,
+   "team": "UCLA Bruins",
+   "description": "American basketball coach (1910–2010)",
+   "hook": "is the 'Wizard of Westwood' who won ten national championships and taught a famous 'pyramid of success'",
+   "known": 0.6,
+   "kind": "basketball"
+  },
+  {
+   "label": "Knute Rockne",
+   "qid": "Q1770885",
+   "fame": 0.478,
+   "team": "Notre Dame Fighting Irish",
+   "description": "American football player and coach (1888–1931)",
+   "hook": "is a legendary coach famous for the 'Win one for the Gipper' speech and the forward pass",
+   "known": 0.4,
+   "kind": "american football"
+  },
+  {
+   "label": "Erik Spoelstra",
+   "qid": "Q440324",
+   "fame": 0.477,
+   "team": "Miami Heat",
+   "description": "American basketball head coach",
+   "hook": "led a team through a 'Big Three' era with several straight NBA Finals trips and championships",
+   "known": 0.4,
+   "kind": "basketball"
+  },
+  {
+   "label": "Vicente del Bosque",
+   "qid": "Q657360",
+   "fame": 0.472,
+   "team": "Spain national football team",
+   "description": "Spanish footballer and manager (born 1950)",
+   "hook": "is a mild-mannered, mustached manager who won a World Cup and two European Championships in a row",
+   "known": 0.4,
+   "kind": "soccer"
+  },
+  {
+   "label": "Jock Stein",
+   "qid": "Q355378",
+   "fame": 0.471,
+   "team": "Celtic",
+   "description": "Scottish football player and manager (1922–1985)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "soccer"
+  },
+  {
+   "label": "Geno Auriemma",
+   "qid": "Q373491",
+   "fame": 0.463,
+   "team": "UConn Huskies",
+   "description": "Italian-born American women's basketball coach",
+   "hook": "is a winning machine who has led his team to a dozen national titles, with several undefeated seasons",
+   "known": 0.6,
+   "kind": "basketball"
+  },
+  {
+   "label": "Pat Summitt",
+   "qid": "Q460394",
+   "fame": 0.46,
+   "team": "Tennessee Lady Volunteers",
+   "description": "American basketball player and coach (1952–2016)",
+   "hook": "retired as college basketball's winningest coach, with eight national titles",
+   "known": 0.6,
+   "kind": "basketball"
+  },
+  {
+   "label": "Joachim Löw",
+   "qid": "Q4462",
+   "fame": 0.457,
+   "team": "Germany national football team",
+   "description": "German footballer and manager",
+   "hook": "led his country to a World Cup title in Brazil after years as an assistant, known for his scarf and tidy style",
+   "known": 0.4,
+   "kind": "soccer"
+  },
+  {
+   "label": "Red Auerbach",
+   "qid": "Q336581",
+   "fame": 0.452,
+   "team": "Boston Celtics",
+   "description": "American basketball coach (1917–2006)",
+   "hook": "is the cigar-smoking coach who lit up a victory cigar and won nine NBA championships",
+   "known": 0.6,
+   "kind": "basketball"
+  }
+ ]
+}

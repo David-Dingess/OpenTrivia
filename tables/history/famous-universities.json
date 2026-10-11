@@ -1,0 +1,1131 @@
+{
+ "id": "table.history.famous-universities",
+ "kind": "table",
+ "title": "Famous universities and their country",
+ "genre": "society",
+ "category": "history",
+ "topic": "universities",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { ?item wdt:P31/wdt:P279* wd:Q3918 ; wdt:P17 ?c ; wikibase:sitelinks ?sl . FILTER(?sl >= 40) FILTER(?item NOT IN (wd:Q184478, wd:Q9219, wd:Q559549)) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 524",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T17:08:12.188Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T17:08:12.188Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "university",
+  "many": "universities",
+  "hookAsk": "Which university {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "theLabels": [
+   "University of Oxford",
+   "University of Notre Dame",
+   "University of Pennsylvania",
+   "University of Cambridge",
+   "University of California, Berkeley",
+   "University of Texas at Austin",
+   "University of Southern California",
+   "University of Michigan",
+   "University of California, Los Angeles",
+   "University of Florida",
+   "University of Washington",
+   "University of Chicago",
+   "University of Illinois Urbana-Champaign",
+   "University of St Andrews",
+   "University of Virginia",
+   "University of London",
+   "University of Bologna",
+   "University of North Carolina at Chapel Hill",
+   "University of Toronto",
+   "University of Edinburgh",
+   "University of Birmingham",
+   "University of Alabama",
+   "University of Paris",
+   "University of Minnesota",
+   "University of Wisconsin–Madison",
+   "University of Maryland",
+   "University of Missouri",
+   "University of Pittsburgh",
+   "University of California, Davis",
+   "University of Iowa",
+   "University of Arizona",
+   "University of Delhi",
+   "University of Utah",
+   "University of British Columbia",
+   "University of Warwick",
+   "University of California, San Diego",
+   "University of Kansas",
+   "University of Sydney",
+   "University of al-Qarawiyyin",
+   "University of Glasgow",
+   "University of Manchester",
+   "University of Göttingen",
+   "University of Tokyo",
+   "University of Exeter",
+   "University of Nottingham",
+   "Massachusetts Institute of Technology",
+   "California Institute of Technology",
+   "London School of Economics and Political Science",
+   "Paris Institute of Political Studies"
+  ],
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each university to its country.",
+    "odd": "Three of these universities are in {value}. Which one isn't?",
+    "all": "Tap all {n} universities in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Harvard University",
+   "qid": "Q13371",
+   "fame": 0.688,
+   "country": "United States",
+   "description": "private university in Cambridge, Massachusetts",
+   "hook": "is the oldest school in its country and has produced more billionaires and presidents than any other",
+   "known": 0.95,
+   "kind": "american ivy"
+  },
+  {
+   "label": "University of Oxford",
+   "qid": "Q34433",
+   "fame": 0.649,
+   "country": "United Kingdom",
+   "description": "collegiate research university in Oxford, England",
+   "hook": "is the oldest school in the English-speaking world and educated more prime ministers than any other",
+   "known": 0.95,
+   "kind": "british"
+  },
+  {
+   "label": "Stanford University",
+   "qid": "Q41506",
+   "fame": 0.644,
+   "country": "United States",
+   "description": "private research university in Stanford, California, USA",
+   "hook": "sits in the heart of Silicon Valley and its graduates founded some of the world's biggest tech companies",
+   "known": 0.95,
+   "kind": "american private"
+  },
+  {
+   "label": "Columbia University",
+   "qid": "Q49088",
+   "fame": 0.628,
+   "country": "United States",
+   "description": "private university in New York City, New York, US",
+   "hook": "is an Ivy League school in the heart of a major city and has produced dozens of Nobel laureates",
+   "known": 0.8,
+   "kind": "american ivy"
+  },
+  {
+   "label": "Yale University",
+   "qid": "Q49112",
+   "fame": 0.624,
+   "country": "United States",
+   "description": "private university in New Haven, Connecticut",
+   "hook": "is known for its secretive senior societies and for educating a long line of presidents",
+   "known": 0.95,
+   "kind": "american ivy"
+  },
+  {
+   "label": "University of Notre Dame",
+   "qid": "Q178848",
+   "fame": 0.62,
+   "country": "United States",
+   "description": "Catholic university located in Notre Dame, Indiana, United States",
+   "hook": "is known for its golden-domed main building and a football team with a fiercely loyal following",
+   "known": 0.8,
+   "kind": "american private"
+  },
+  {
+   "label": "Massachusetts Institute of Technology",
+   "qid": "Q49108",
+   "fame": 0.617,
+   "country": "United States",
+   "description": "private university in Cambridge, Massachusetts, USA, founded 1861",
+   "hook": "is world famous for pioneering research in science and engineering",
+   "known": 0.95,
+   "kind": "american private"
+  },
+  {
+   "label": "University of Pennsylvania",
+   "qid": "Q49117",
+   "fame": 0.616,
+   "country": "United States",
+   "description": "private research university in Philadelphia, Pennsylvania, United States",
+   "hook": "was founded by a famous inventor and statesman and is home to a top-ranked business school",
+   "known": 0.8,
+   "kind": "american ivy"
+  },
+  {
+   "label": "University of Cambridge",
+   "qid": "Q35794",
+   "fame": 0.614,
+   "country": "United Kingdom",
+   "description": "collegiate public research university in Cambridge, England, United Kingdom",
+   "hook": "is famous for punting along its river and for a long list of Nobel Prize-winning alumni",
+   "known": 0.95,
+   "kind": "british"
+  },
+  {
+   "label": "Princeton University",
+   "qid": "Q21578",
+   "fame": 0.607,
+   "country": "United States",
+   "description": "private Ivy League research university in Princeton, New Jersey, United States",
+   "hook": "is famous for its eating clubs and for once being home to a legendary physicist",
+   "known": 0.95,
+   "kind": "american ivy"
+  },
+  {
+   "label": "University of California, Berkeley",
+   "qid": "Q168756",
+   "fame": 0.607,
+   "country": "United States",
+   "description": "public university in Berkeley, California, USA",
+   "hook": "is known for its role in the free speech movement and its reputation for student activism",
+   "known": 0.8,
+   "kind": "american public"
+  },
+  {
+   "label": "Texas A&M University",
+   "qid": "Q49212",
+   "fame": 0.606,
+   "country": "United States",
+   "description": "public research university in College Station, Texas, United States",
+   "hook": "is known for its military-style cadet corps and passionate traditions like the twelfth man",
+   "known": 0.6,
+   "kind": "american public"
+  },
+  {
+   "label": "Cornell University",
+   "qid": "Q49115",
+   "fame": 0.601,
+   "country": "United States",
+   "description": "private and statutory land-grant research university in Ithaca, New York, USA",
+   "hook": "is an Ivy League school famous for its scenic gorges and waterfalls on campus",
+   "known": 0.8,
+   "kind": "american ivy"
+  },
+  {
+   "label": "Northwestern University",
+   "qid": "Q309350",
+   "fame": 0.601,
+   "country": "United States",
+   "description": "private university in Evanston, Illinois, U.S.",
+   "hook": "is known for its top-ranked journalism school and its Big Ten sports teams",
+   "known": 0.6,
+   "kind": "american private"
+  },
+  {
+   "label": "Brown University",
+   "qid": "Q49114",
+   "fame": 0.595,
+   "country": "United States",
+   "description": "private university in Providence, Rhode Island, United States",
+   "hook": "is an Ivy League school famous for letting students design their own course of study",
+   "known": 0.8,
+   "kind": "american ivy"
+  },
+  {
+   "label": "University of Texas at Austin",
+   "qid": "Q49213",
+   "fame": 0.595,
+   "country": "United States",
+   "description": "public university in Austin, Texas, USA",
+   "hook": "is known for its Longhorn mascot and one of the largest fan bases in college sports",
+   "known": 0.6,
+   "kind": "american public"
+  },
+  {
+   "label": "Dartmouth College",
+   "qid": "Q49116",
+   "fame": 0.591,
+   "country": "United States",
+   "description": "private university in Hanover, New Hampshire, US",
+   "hook": "is the smallest Ivy League school and is famous for its strong outdoor and wilderness traditions",
+   "known": 0.8,
+   "kind": "american ivy"
+  },
+  {
+   "label": "Rutgers University",
+   "qid": "Q499451",
+   "fame": 0.589,
+   "country": "United States",
+   "description": "multi-campus public research university in New Jersey, United States",
+   "hook": "hosted the very first college football game ever played",
+   "known": 0.4,
+   "kind": "american public"
+  },
+  {
+   "label": "University of Southern California",
+   "qid": "Q4614",
+   "fame": 0.587,
+   "country": "United States",
+   "description": "private university in Los Angeles, California, United States",
+   "hook": "is famous for its film school that trained many of Hollywood's biggest directors",
+   "known": 0.8,
+   "kind": "american private"
+  },
+  {
+   "label": "University of Michigan",
+   "qid": "Q230492",
+   "fame": 0.586,
+   "country": "United States",
+   "description": "public research university in Ann Arbor, Michigan",
+   "hook": "plays football in one of the largest stadiums in the country, nicknamed the Big House",
+   "known": 0.8,
+   "kind": "american public"
+  },
+  {
+   "label": "New York University",
+   "qid": "Q49210",
+   "fame": 0.578,
+   "country": "United States",
+   "description": "private university in New York City",
+   "hook": "is spread across a major city rather than a traditional campus and is one of the largest private universities",
+   "known": 0.8,
+   "kind": "american private"
+  },
+  {
+   "label": "Carnegie Mellon University",
+   "qid": "Q190080",
+   "fame": 0.575,
+   "country": "United States",
+   "description": "private research university in Pittsburgh, Pennsylvania, United States",
+   "hook": "is famous for its computer science and robotics programs and its respected drama school",
+   "known": 0.8,
+   "kind": "american private"
+  },
+  {
+   "label": "Rice University",
+   "qid": "Q842909",
+   "fame": 0.575,
+   "country": "United States",
+   "description": "private university in Houston, Texas, USA",
+   "hook": "is a small, highly selective school known for its unusual house-based residential system",
+   "known": 0.6,
+   "kind": "american private"
+  },
+  {
+   "label": "Duke University",
+   "qid": "Q168751",
+   "fame": 0.574,
+   "country": "United States",
+   "description": "private university in Durham, North Carolina, USA",
+   "hook": "is famous for its rabid basketball fans known as the Cameron Crazies",
+   "known": 0.8,
+   "kind": "american private"
+  },
+  {
+   "label": "Howard University",
+   "qid": "Q1068752",
+   "fame": 0.57,
+   "country": "United States",
+   "description": "university in Washington D.C.",
+   "hook": "is a historically Black school that has educated generations of prominent leaders and artists",
+   "known": 0.6,
+   "kind": "american private"
+  },
+  {
+   "label": "University of California, Los Angeles",
+   "qid": "Q174710",
+   "fame": 0.569,
+   "country": "United States",
+   "description": "public university in Los Angeles, California, USA",
+   "hook": "has won more Olympic gold medals than most nations that compete at the games",
+   "known": 0.8,
+   "kind": "american public"
+  },
+  {
+   "label": "Brigham Young University",
+   "qid": "Q332498",
+   "fame": 0.563,
+   "country": "United States",
+   "description": "private research university in Provo, Utah, United States",
+   "hook": "is run by a religious organization and requires students to follow a strict honor code",
+   "known": 0.6,
+   "kind": "american private"
+  },
+  {
+   "label": "Purdue University",
+   "qid": "Q217741",
+   "fame": 0.563,
+   "country": "United States",
+   "description": "public research university in West Lafayette, Indiana, United States",
+   "hook": "is nicknamed the cradle of astronauts for how many of its graduates have flown in space",
+   "known": 0.6,
+   "kind": "american public"
+  },
+  {
+   "label": "Vanderbilt University",
+   "qid": "Q29052",
+   "fame": 0.557,
+   "country": "United States",
+   "description": "private university in Nashville, Tennessee, US",
+   "hook": "was funded by a shipping and railroad fortune and is nicknamed a Southern Ivy",
+   "known": 0.6,
+   "kind": "american private"
+  },
+  {
+   "label": "University of Florida",
+   "qid": "Q501758",
+   "fame": 0.556,
+   "country": "United States",
+   "description": "public research university in Gainesville, Florida, United States",
+   "hook": "is home to the Gators and one of the largest and most successful college sports programs",
+   "known": 0.6,
+   "kind": "american public"
+  },
+  {
+   "label": "University of Washington",
+   "qid": "Q219563",
+   "fame": 0.556,
+   "country": "United States",
+   "description": "public research university in Seattle, Washington, United States",
+   "hook": "is famous for its cherry blossom-lined quad and strong computer science and medical programs",
+   "known": 0.6,
+   "kind": "american public"
+  },
+  {
+   "label": "California Institute of Technology",
+   "qid": "Q161562",
+   "fame": 0.553,
+   "country": "United States",
+   "description": "private research university located in Pasadena, California, USA",
+   "hook": "is one of the smallest and most selective science schools and runs a major space research lab",
+   "known": 0.8,
+   "kind": "american private"
+  },
+  {
+   "label": "University of Chicago",
+   "qid": "Q131252",
+   "fame": 0.552,
+   "country": "United States",
+   "description": "private university in Chicago, Illinois",
+   "hook": "is famous for its intense academic culture and a school of economic thought named after it",
+   "known": 0.8,
+   "kind": "american private"
+  },
+  {
+   "label": "Georgetown University",
+   "qid": "Q333886",
+   "fame": 0.551,
+   "country": "United States",
+   "description": "private university in Washington, D.C., United States",
+   "hook": "is the oldest Catholic school in its country and a top training ground for future diplomats",
+   "known": 0.8,
+   "kind": "american private"
+  },
+  {
+   "label": "Johns Hopkins University",
+   "qid": "Q193727",
+   "fame": 0.55,
+   "country": "United States",
+   "description": "private university in Baltimore, Maryland, USA",
+   "hook": "was the first research-focused school in its country and is renowned for its medical program",
+   "known": 0.8,
+   "kind": "american private"
+  },
+  {
+   "label": "Pennsylvania State University",
+   "qid": "Q739627",
+   "fame": 0.55,
+   "country": "United States",
+   "description": "public university in Pennsylvania, United States",
+   "hook": "fills one of the largest football stadiums in the country every home game",
+   "known": 0.6,
+   "kind": "american public"
+  },
+  {
+   "label": "London School of Economics and Political Science",
+   "qid": "Q174570",
+   "fame": 0.549,
+   "country": "United Kingdom",
+   "description": "public university in London, United Kingdom",
+   "hook": "sits in a global financial district and has trained numerous heads of state and central bankers",
+   "known": 0.8,
+   "kind": "british"
+  },
+  {
+   "label": "Syracuse University",
+   "qid": "Q617433",
+   "fame": 0.547,
+   "country": "United States",
+   "description": "private university in Syracuse, New York, United States",
+   "hook": "is known for its respected journalism school and passionate college basketball following",
+   "known": 0.4,
+   "kind": "american private"
+  },
+  {
+   "label": "Ohio State University",
+   "qid": "Q309331",
+   "fame": 0.545,
+   "country": "United States",
+   "description": "public research university in Columbus, Ohio, United States",
+   "hook": "has one of the largest student bodies in the country and a huge football following",
+   "known": 0.6,
+   "kind": "american public"
+  },
+  {
+   "label": "Tufts University",
+   "qid": "Q49120",
+   "fame": 0.541,
+   "country": "United States",
+   "description": "private research university in Medford/Somerville, Massachusetts",
+   "hook": "is known for its highly regarded school of international relations and diplomacy",
+   "known": 0.6,
+   "kind": "american private"
+  },
+  {
+   "label": "Tsinghua University",
+   "qid": "Q16955",
+   "fame": 0.531,
+   "country": "China",
+   "description": "public university in Beijing, China",
+   "hook": "is considered one of the most prestigious engineering schools in its country and trained many national leaders",
+   "known": 0.6,
+   "kind": "international"
+  },
+  {
+   "label": "Trinity College",
+   "qid": "Q332342",
+   "fame": 0.53,
+   "country": "United Kingdom",
+   "description": "constituent college of the University of Cambridge in England",
+   "hook": "has produced more Nobel Prize winners than most entire countries",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Arizona State University",
+   "qid": "Q670897",
+   "fame": 0.529,
+   "country": "United States",
+   "description": "public university in Tempe, Arizona, US",
+   "hook": "has one of the largest student enrollments in the country and a lively campus social scene",
+   "known": 0.4,
+   "kind": "american public"
+  },
+  {
+   "label": "McGill University",
+   "qid": "Q201492",
+   "fame": 0.526,
+   "country": "Canada",
+   "description": "English-language public research university in Montreal, Quebec, Canada",
+   "hook": "is often nicknamed a northern Ivy and is renowned for its medical school",
+   "known": 0.6,
+   "kind": "international"
+  },
+  {
+   "label": "University of Illinois Urbana-Champaign",
+   "qid": "Q457281",
+   "fame": 0.525,
+   "country": "United States",
+   "description": "public research university in Urbana and Champaign, Illinois, United States",
+   "hook": "is where the first widely used web browser was created",
+   "known": 0.4,
+   "kind": "american public"
+  },
+  {
+   "label": "University of St Andrews",
+   "qid": "Q216273",
+   "fame": 0.525,
+   "country": "United Kingdom",
+   "description": "university in St Andrews, Fife, Scotland, UK",
+   "hook": "is the oldest school of higher learning in Scotland and is where a future king met his future queen",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Virginia Tech",
+   "qid": "Q65379",
+   "fame": 0.524,
+   "country": "United States",
+   "description": "public university with the main campus in Blacksburg, Virginia",
+   "hook": "is known for its engineering programs and a football entrance tradition set to a heavy metal song",
+   "known": 0.4,
+   "kind": "american private"
+  },
+  {
+   "label": "Boston University",
+   "qid": "Q49110",
+   "fame": 0.523,
+   "country": "United States",
+   "description": "private research university in Boston, Massachusetts, United States",
+   "hook": "runs along a river through the heart of a major city and is one of the largest private universities",
+   "known": 0.4,
+   "kind": "american private"
+  },
+  {
+   "label": "University of Virginia",
+   "qid": "Q213439",
+   "fame": 0.523,
+   "country": "United States",
+   "description": "public university in Charlottesville, Virginia",
+   "hook": "was founded by a founding father and modeled its landmark rotunda on an ancient Roman temple",
+   "known": 0.6,
+   "kind": "american public"
+  },
+  {
+   "label": "King's College London",
+   "qid": "Q245247",
+   "fame": 0.522,
+   "country": "United Kingdom",
+   "description": "public research university in London, United Kingdom",
+   "hook": "was founded by a monarch and sits in the heart of a major city's government district",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Trinity College, Dublin",
+   "qid": "Q258464",
+   "fame": 0.522,
+   "country": "Ireland",
+   "description": "constituent college of the University of Dublin in Ireland",
+   "hook": "is the country's oldest university and houses a famous illuminated medieval manuscript",
+   "known": 0.6,
+   "kind": "international"
+  },
+  {
+   "label": "University of London",
+   "qid": "Q170027",
+   "fame": 0.52,
+   "country": "United Kingdom",
+   "description": "federal research university in London, England",
+   "hook": "is a federation of many famous colleges and was among the first to award degrees to women",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Florida State University",
+   "qid": "Q861548",
+   "fame": 0.519,
+   "country": "United States",
+   "description": "public university in Tallahassee, Florida, United States",
+   "hook": "is home to a respected film school and a marching band famous for its game-day chant",
+   "known": 0.4,
+   "kind": "american public"
+  },
+  {
+   "label": "George Washington University",
+   "qid": "Q432637",
+   "fame": 0.514,
+   "country": "United States",
+   "description": "private university in Washington, D.C., USA",
+   "hook": "sits blocks from the seat of national government and trains many future politicians and diplomats",
+   "known": 0.4,
+   "kind": "american private"
+  },
+  {
+   "label": "University of Bologna",
+   "qid": "Q131262",
+   "fame": 0.514,
+   "country": "Italy",
+   "description": "university in Bologna, Italy",
+   "hook": "is the oldest school of higher learning in the world that is still operating today",
+   "known": 0.4,
+   "kind": "international"
+  },
+  {
+   "label": "University of North Carolina at Chapel Hill",
+   "qid": "Q192334",
+   "fame": 0.513,
+   "country": "United States",
+   "description": "public research university in Chapel Hill, North Carolina, United States",
+   "hook": "is the oldest public school of higher learning in its country and has a storied basketball dynasty",
+   "known": 0.4,
+   "kind": "american public"
+  },
+  {
+   "label": "University of Toronto",
+   "qid": "Q180865",
+   "fame": 0.511,
+   "country": "Canada",
+   "description": "public research university in the Greater Toronto Area of Ontario, Canada",
+   "hook": "is where a life-saving treatment for diabetes was first discovered",
+   "known": 0.6,
+   "kind": "international"
+  },
+  {
+   "label": "University of Edinburgh",
+   "qid": "Q160302",
+   "fame": 0.51,
+   "country": "United Kingdom",
+   "description": "public university in Edinburgh, Scotland, United Kingdom",
+   "hook": "was a hub of the Scottish Enlightenment and counts numerous Nobel Prize winners among its graduates",
+   "known": 0.8,
+   "kind": "british"
+  },
+  {
+   "label": "University of Birmingham",
+   "qid": "Q223429",
+   "fame": 0.509,
+   "country": "United Kingdom",
+   "description": "university in Birmingham, England, United Kingdom",
+   "hook": "was the first of the civic redbrick universities and set the template many others followed",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "University of Alabama",
+   "qid": "Q492318",
+   "fame": 0.508,
+   "country": "United States",
+   "description": "public university located in Tuscaloosa, Alabama, United States",
+   "hook": "is home to one of the most storied dynasties in college football history",
+   "known": 0.4,
+   "kind": "american public"
+  },
+  {
+   "label": "University of Paris",
+   "qid": "Q209842",
+   "fame": 0.506,
+   "country": "France",
+   "description": "French university (c. 1150–1970)",
+   "hook": "was one of the first universities in Europe and became the model many later schools were built on",
+   "known": 0.4,
+   "kind": "international"
+  },
+  {
+   "label": "University of Minnesota",
+   "qid": "Q238101",
+   "fame": 0.505,
+   "country": "United States",
+   "description": "public research university in Minneapolis and Saint Paul, Minnesota, United States",
+   "hook": "is where doctors performed one of the first open-heart surgeries and built an early wearable heart pacemaker",
+   "known": 0.4,
+   "kind": "american public"
+  },
+  {
+   "label": "Imperial College London",
+   "qid": "Q189022",
+   "fame": 0.504,
+   "country": "United Kingdom",
+   "description": "public research university located in London, United Kingdom",
+   "hook": "trains scientists and engineers and counts the discoverer of penicillin among its former professors",
+   "known": 0.8,
+   "kind": "british"
+  },
+  {
+   "label": "University of Wisconsin–Madison",
+   "qid": "Q838330",
+   "fame": 0.502,
+   "country": "United States",
+   "description": "public research university in Madison, Wisconsin, USA",
+   "hook": "pioneered vitamin research that helped explain why sunlight and milk keep bones healthy",
+   "known": 0.4,
+   "kind": "american public"
+  },
+  {
+   "label": "ETH Zurich",
+   "qid": "Q11942",
+   "fame": 0.501,
+   "country": "Switzerland",
+   "description": "public research university in Zurich",
+   "hook": "counts Albert Einstein among its graduates and has produced more Nobel laureates than nearly any rival school",
+   "known": 0.6,
+   "kind": "international"
+  },
+  {
+   "label": "York University",
+   "qid": "Q849751",
+   "fame": 0.501,
+   "country": "Canada",
+   "description": "public research university in Toronto, Ontario, Canada",
+   "hook": "trains many of its country's film and TV professionals through one of its most respected arts schools",
+   "known": 0.2,
+   "kind": "international"
+  },
+  {
+   "label": "Georgia Tech",
+   "qid": "Q864855",
+   "fame": 0.5,
+   "country": "United States",
+   "description": "public research university in Atlanta, Georgia, United States",
+   "hook": "leads its football team onto the field before home games behind a vintage car called the Ramblin' Wreck",
+   "known": 0.6,
+   "kind": "american private"
+  },
+  {
+   "label": "Michigan State University",
+   "qid": "Q270222",
+   "fame": 0.5,
+   "country": "United States",
+   "description": "public research university in East Lansing, Michigan, United States",
+   "hook": "was the first school in its country to teach agriculture and science alongside the classics",
+   "known": 0.4,
+   "kind": "american public"
+  },
+  {
+   "label": "University of Maryland",
+   "qid": "Q503415",
+   "fame": 0.499,
+   "country": "United States",
+   "description": "public research university in the city of College Park in Prince George's County, Maryland, USA",
+   "hook": "sits next to the nation's capital and partners with nearby federal agencies on major scientific research",
+   "known": 0.4,
+   "kind": "american public"
+  },
+  {
+   "label": "Emory University",
+   "qid": "Q621043",
+   "fame": 0.498,
+   "country": "United States",
+   "description": "private research university in Atlanta, Georgia, United States",
+   "hook": "was built up with soda-fortune money and now partners closely with the nation's top disease-control agency",
+   "known": 0.4,
+   "kind": "american private"
+  },
+  {
+   "label": "Indiana University Bloomington",
+   "qid": "Q1079140",
+   "fame": 0.494,
+   "country": "United States",
+   "description": "public research university located in Bloomington, Indiana, U.S. (flagship campus of the Indiana University system)",
+   "hook": "is home to a research institute that pioneered the scientific study of human sexuality",
+   "known": 0.2,
+   "kind": "american public"
+  },
+  {
+   "label": "University of Missouri",
+   "qid": "Q579968",
+   "fame": 0.494,
+   "country": "United States",
+   "description": "public research university in Columbia, Missouri, USA",
+   "hook": "opened the world's first school dedicated to training journalists",
+   "known": 0.2,
+   "kind": "american public"
+  },
+  {
+   "label": "University of Pittsburgh",
+   "qid": "Q235034",
+   "fame": 0.491,
+   "country": "United States",
+   "description": "state-related research university located in Pittsburgh, Pennsylvania, United States",
+   "hook": "is where a scientist developed the vaccine that helped wipe out polio",
+   "known": 0.4,
+   "kind": "american private"
+  },
+  {
+   "label": "Al-Azhar University",
+   "qid": "Q173959",
+   "fame": 0.489,
+   "country": "Egypt",
+   "description": "public university in Cairo, Egypt",
+   "hook": "is one of the world's oldest universities and remains a leading center of Islamic learning",
+   "known": 0.4,
+   "kind": "international"
+  },
+  {
+   "label": "Washington University in St. Louis",
+   "qid": "Q777403",
+   "fame": 0.488,
+   "country": "United States",
+   "description": "private research university in St. Louis, Missouri, United States",
+   "hook": "has hosted more presidential debates than any other school in its country",
+   "known": 0.2,
+   "kind": "american private"
+  },
+  {
+   "label": "Sorbonne University",
+   "qid": "Q41497113",
+   "fame": 0.486,
+   "country": "France",
+   "description": "French university located in Paris, created in 2018 from the merger of Université Paris IV and Université Paris VI",
+   "hook": "brought together leading schools of science, medicine and the arts under one name",
+   "known": 0.8,
+   "kind": "international"
+  },
+  {
+   "label": "Durham University",
+   "qid": "Q458393",
+   "fame": 0.482,
+   "country": "United Kingdom",
+   "description": "collegiate public research university in Durham, England, United Kingdom",
+   "hook": "has a castle as one of its colleges and once had a bestselling travel writer as its chancellor",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "University of California, Davis",
+   "qid": "Q129421",
+   "fame": 0.479,
+   "country": "United States",
+   "description": "public university in the Davis, California area; part of the University of California system",
+   "hook": "runs a top veterinary school and trains many of the winemakers behind bottles sold nationwide",
+   "known": 0.2,
+   "kind": "american public"
+  },
+  {
+   "label": "University of Iowa",
+   "qid": "Q182973",
+   "fame": 0.479,
+   "country": "United States",
+   "description": "public research university in Iowa City, Iowa, United States",
+   "hook": "runs the country's most celebrated creative-writing program, which has produced dozens of major authors",
+   "known": 0.4,
+   "kind": "american public"
+  },
+  {
+   "label": "University of Arizona",
+   "qid": "Q503419",
+   "fame": 0.478,
+   "country": "United States",
+   "description": "public university in Tucson, Arizona, United States",
+   "hook": "builds giant telescope mirrors and helped run a mission that dug into the soil of Mars",
+   "known": 0.4,
+   "kind": "american public"
+  },
+  {
+   "label": "University of Delhi",
+   "qid": "Q665105",
+   "fame": 0.478,
+   "country": "India",
+   "description": "Central university located in New Delhi",
+   "hook": "is one of the largest universities in its country and counts several national leaders among its graduates",
+   "known": 0.4,
+   "kind": "international"
+  },
+  {
+   "label": "University of Utah",
+   "qid": "Q168515",
+   "fame": 0.477,
+   "country": "United States",
+   "description": "public coeducational space-grant research university in Salt Lake City, Utah, United States",
+   "hook": "carried out one of the earliest artificial heart transplants and was an early internet hub",
+   "known": 0.2,
+   "kind": "american public"
+  },
+  {
+   "label": "University of British Columbia",
+   "qid": "Q391028",
+   "fame": 0.474,
+   "country": "Canada",
+   "description": "public research university in British Columbia, Canada",
+   "hook": "sits on a cliff-top campus overlooking mountains and the ocean and runs a major physics lab",
+   "known": 0.4,
+   "kind": "international"
+  },
+  {
+   "label": "University of Warwick",
+   "qid": "Q865528",
+   "fame": 0.474,
+   "country": "United Kingdom",
+   "description": "university in Coventry, United Kingdom",
+   "hook": "built one of its country's top-ranked business schools within just a few decades of opening its doors",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Paris Institute of Political Studies",
+   "qid": "Q859363",
+   "fame": 0.473,
+   "country": "France",
+   "description": "higher-education institution in Paris, France",
+   "hook": "has trained most of its country's recent heads of state and top diplomats",
+   "known": 0.2,
+   "kind": "international"
+  },
+  {
+   "label": "Lomonosov Moscow State University",
+   "qid": "Q13164",
+   "fame": 0.472,
+   "country": "Russia",
+   "description": "public research university in Moscow, Russia",
+   "hook": "occupies a towering skyscraper that was once the tallest building on its continent for decades",
+   "known": 0.4,
+   "kind": "international"
+  },
+  {
+   "label": "University of California, San Diego",
+   "qid": "Q622664",
+   "fame": 0.471,
+   "country": "United States",
+   "description": "public university in La Jolla, California, United States",
+   "hook": "runs a renowned oceanography institute whose measurements helped confirm the planet's air is changing",
+   "known": 0.4,
+   "kind": "american public"
+  },
+  {
+   "label": "University of Kansas",
+   "qid": "Q52413",
+   "fame": 0.469,
+   "country": "United States",
+   "description": "public research university in Kansas, United States",
+   "hook": "was where the inventor of basketball became a coach after creating the game",
+   "known": 0.2,
+   "kind": "american public"
+  },
+  {
+   "label": "University of Sydney",
+   "qid": "Q487556",
+   "fame": 0.469,
+   "country": "Australia",
+   "description": "Australian university founded in 1850",
+   "hook": "is its country's oldest school and has educated several of its prime ministers",
+   "known": 0.6,
+   "kind": "international"
+  },
+  {
+   "label": "Peking University",
+   "qid": "Q16952",
+   "fame": 0.468,
+   "country": "China",
+   "description": "university in Beijing, China",
+   "hook": "was the birthplace of a major student movement that helped shape modern thought and politics in its country",
+   "known": 0.6,
+   "kind": "international"
+  },
+  {
+   "label": "SOAS, University of London",
+   "qid": "Q220144",
+   "fame": 0.467,
+   "country": "United Kingdom",
+   "description": "university in the UK",
+   "hook": "is a leading center for studying the languages, cultures and politics of Asia, Africa and the Middle East",
+   "known": 0.2,
+   "kind": "british"
+  },
+  {
+   "label": "University of al-Qarawiyyin",
+   "qid": "Q378014",
+   "fame": 0.467,
+   "country": "Morocco",
+   "description": "university in Fez, Morocco",
+   "hook": "is recognized as the oldest continuously operating school in the world and was founded by a woman",
+   "known": 0.2,
+   "kind": "international"
+  },
+  {
+   "label": "University of Glasgow",
+   "qid": "Q192775",
+   "fame": 0.467,
+   "country": "United Kingdom",
+   "description": "university in Glasgow, Scotland, United Kingdom, founded in 1451",
+   "hook": "is where an instrument maker's improvements to a steam engine helped power the industrial revolution",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Nalanda Mahavihara",
+   "qid": "Q216243",
+   "fame": 0.466,
+   "country": "India",
+   "description": "ancient Hindu-Buddhist monastery in present-day Bihar, India",
+   "hook": "was an ancient center of learning often called one of the world's first residential universities",
+   "known": 0.2,
+   "kind": "university"
+  },
+  {
+   "label": "Tel Aviv University",
+   "qid": "Q319239",
+   "fame": 0.466,
+   "country": "Israel",
+   "description": "University in Tel Aviv, Israel",
+   "hook": "is the largest school in its country by enrollment and a leading center for scientific research",
+   "known": 0.4,
+   "kind": "international"
+  },
+  {
+   "label": "University of Manchester",
+   "qid": "Q230899",
+   "fame": 0.465,
+   "country": "United Kingdom",
+   "description": "public research university in Manchester, England, United Kingdom",
+   "hook": "is where scientists first split the atom and, decades later, isolated an ultra-thin super-strong material",
+   "known": 0.6,
+   "kind": "british"
+  },
+  {
+   "label": "University of Göttingen",
+   "qid": "Q152838",
+   "fame": 0.459,
+   "country": "Germany",
+   "description": "university in the city of Göttingen, Germany",
+   "hook": "was a hub where physicists worked out much of the mathematical foundation behind quantum mechanics",
+   "known": 0.2,
+   "kind": "international"
+  },
+  {
+   "label": "University of Tokyo",
+   "qid": "Q7842",
+   "fame": 0.458,
+   "country": "Japan",
+   "description": "national university in Tokyo, Japan",
+   "hook": "is considered the most prestigious school in its country and has educated many of its prime ministers",
+   "known": 0.6,
+   "kind": "international"
+  },
+  {
+   "label": "University of Exeter",
+   "qid": "Q1414861",
+   "fame": 0.456,
+   "country": "United Kingdom",
+   "description": "public research university located in Exeter, United Kingdom",
+   "hook": "partners on climate research and counts the author of a famous boy-wizard series among its graduates",
+   "known": 0.2,
+   "kind": "british"
+  },
+  {
+   "label": "Monash University",
+   "qid": "Q598841",
+   "fame": 0.455,
+   "country": "Australia",
+   "description": "public university based in Melbourne, Australia",
+   "hook": "enrolls more students than any other school in its country",
+   "known": 0.2,
+   "kind": "international"
+  },
+  {
+   "label": "University of Nottingham",
+   "qid": "Q472316",
+   "fame": 0.452,
+   "country": "United Kingdom",
+   "description": "public research university in Nottingham, England",
+   "hook": "is where a physicist's work developing body-scanning technology earned a Nobel Prize",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "The Rockefeller University",
+   "qid": "Q270272",
+   "fame": 0.45,
+   "country": "United States",
+   "description": "research institute in New York City founded in 1901",
+   "hook": "focuses only on biomedical research and has produced Nobel Prize winners at an astonishing rate",
+   "known": 0.2,
+   "kind": "american private"
+  }
+ ]
+}

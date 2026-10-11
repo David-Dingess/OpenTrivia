@@ -1,0 +1,204 @@
+{
+ "id": "table.games.classic-games",
+ "kind": "table",
+ "title": "Classic games and toys",
+ "genre": "games-sports",
+ "category": "games",
+ "topic": "board-games",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { VALUES ?item { wd:Q718 wd:Q1293 wd:Q32907 wd:Q12263 wd:Q11411 wd:Q878120 wd:Q131536 wd:Q17267 wd:Q17254 wd:Q796171 wd:Q244158 wd:Q1506083 wd:Q6647504 wd:Q1529908 wd:Q1346099 wd:Q1431716 wd:Q1368825 wd:Q672107 wd:Q245336 wd:Q181008 wd:Q83207 wd:Q44914 wd:Q565449 wd:Q697302 wd:Q106631 wd:Q210339 wd:Q63607682 wd:Q183621 wd:Q653928 wd:Q14922 wd:Q5032102 wd:Q2269267 wd:Q890566 wd:Q611991 wd:Q131471 wd:Q165302 } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 56",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T10:10:04.762Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T10:10:04.762Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "kind",
+   "label": "Kind",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "classic",
+  "many": "classics",
+  "capitalise": true,
+  "hookAsk": "Which classic {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "kind": {
+    "role": "link",
+    "pick": "What kind of classic is {label}?",
+    "statement": "{label} is a kind of {value}.",
+    "match": "Match each classic to its kind.",
+    "odd": "Three of these are {value}s. Which one isn't?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "chess",
+   "qid": "Q718",
+   "fame": 0.655,
+   "kind": "board-game",
+   "description": "strategy board game",
+   "hook": "is played on a checkered board where the goal is to trap the opposing king",
+   "known": 0.95
+  },
+  {
+   "label": "mahjong",
+   "qid": "Q12263",
+   "fame": 0.645,
+   "kind": "tile-game",
+   "description": "game",
+   "hook": "is played with tiles bearing suits and symbols, often shuffled by mixing them loudly on the table",
+   "known": 0.6
+  },
+  {
+   "label": "rock-paper-scissors",
+   "qid": "Q106631",
+   "fame": 0.612,
+   "kind": "hand-game",
+   "description": "hand game for two players",
+   "hook": "is settled with a hand gesture thrown on a shared count, where each choice beats one and loses to another",
+   "known": 0.95
+  },
+  {
+   "label": "sudoku",
+   "qid": "Q44914",
+   "fame": 0.592,
+   "kind": "puzzle",
+   "description": "logic-based number-placement puzzle",
+   "hook": "asks players to fill a grid so every row, column and box contains each digit exactly once",
+   "known": 0.95
+  },
+  {
+   "label": "backgammon",
+   "qid": "Q11411",
+   "fame": 0.555,
+   "kind": "board-game",
+   "description": "one of the oldest board games for two players",
+   "hook": "moves pieces around a track based on dice rolls, racing to bear them all off before your opponent",
+   "known": 0.6
+  },
+  {
+   "label": "ouija",
+   "qid": "Q672107",
+   "fame": 0.554,
+   "kind": "novelty",
+   "description": "flat wooden board with numbers and letters",
+   "hook": "uses a pointer that seems to glide on its own to spell out ghostly messages",
+   "known": 0.6
+  },
+  {
+   "label": "tic-tac-toe",
+   "qid": "Q210339",
+   "fame": 0.554,
+   "kind": "board-game",
+   "description": "game for two players played on a 3x3 board or a sheet of paper",
+   "hook": "is won by lining up three marks in a row on a simple grid",
+   "known": 0.95
+  },
+  {
+   "label": "Uno",
+   "qid": "Q17267",
+   "fame": 0.54,
+   "kind": "card-game",
+   "description": "Card game",
+   "hook": "is won by being the first to empty your hand, calling out before your last card drops",
+   "known": 0.95
+  },
+  {
+   "label": "checkers",
+   "qid": "Q1293",
+   "fame": 0.507,
+   "kind": "board-game",
+   "description": "board game",
+   "hook": "is played by jumping over an opponent's pieces to capture them on a diagonal board",
+   "known": 0.95
+  },
+  {
+   "label": "boomerang",
+   "qid": "Q131536",
+   "fame": 0.47,
+   "kind": "toy",
+   "description": "thrown weapon",
+   "hook": "is a curved throwing tool famous for looping back to the thrower when thrown correctly",
+   "known": 0.8
+  },
+  {
+   "label": "dominoes",
+   "qid": "Q32907",
+   "fame": 0.467,
+   "kind": "tile-game",
+   "description": "game played with rectangular tiles",
+   "hook": "is played by matching numbered ends of tiles laid end to end",
+   "known": 0.8
+  },
+  {
+   "label": "Magic 8-Ball",
+   "qid": "Q1368825",
+   "fame": 0.466,
+   "kind": "novelty",
+   "description": "toy",
+   "hook": "answers yes-or-no questions with a reply that floats up inside a dark liquid-filled sphere",
+   "known": 0.8
+  },
+  {
+   "label": "Play-Doh",
+   "qid": "Q1346099",
+   "fame": 0.461,
+   "kind": "toy",
+   "description": "modeling compound used by young children for art and craft projects",
+   "hook": "is a soft modeling compound kids squish and shape by hand, often sold in colorful tubs",
+   "known": 0.95
+  },
+  {
+   "label": "darts",
+   "qid": "Q131471",
+   "fame": 0.459,
+   "kind": "throwing-game",
+   "description": "throwing game",
+   "hook": "is scored by throwing pointed sticks at a numbered circular target on a wall",
+   "known": 0.95
+  },
+  {
+   "label": "pinball machine game",
+   "qid": "Q653928",
+   "fame": 0.456,
+   "kind": "arcade-game",
+   "description": "type of arcade game",
+   "hook": "keeps a metal ball bouncing among lit-up bumpers and flippers for as long as you can",
+   "known": 0.8
+  },
+  {
+   "label": "snakes and ladders",
+   "qid": "Q697302",
+   "fame": 0.451,
+   "kind": "board-game",
+   "description": "board game",
+   "hook": "sends players climbing shortcuts or sliding backward depending on which square they land on",
+   "known": 0.8
+  }
+ ]
+}

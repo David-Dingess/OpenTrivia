@@ -1,0 +1,726 @@
+{
+ "id": "list.inventions.turing-award-winners",
+ "title": "Turing Award winners",
+ "prompt": "Name a winner of the Turing Award",
+ "genre": "science-math-tech",
+ "category": "inventions",
+ "topic": "scientists",
+ "people": true,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q5 ; wdt:P166 wd:Q185667 . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-10-02T07:58:35.732Z"
+ },
+ "rows": [
+  {
+   "label": "Geoffrey Hinton",
+   "qid": "Q92894",
+   "fame": 0.69,
+   "also": [
+    "Geoff Hinton",
+    "Geoffrey E. Hinton",
+    "Geoffrey Everest Hinton"
+   ]
+  },
+  {
+   "label": "Tim Berners-Lee",
+   "qid": "Q80",
+   "fame": 0.613,
+   "also": [
+    "Berners-Lee",
+    "Timothy John Berners-Lee",
+    "Sir Tim Berners-Lee",
+    "Sir Timothy John Berners-Lee",
+    "T Berners-Lee",
+    "T.J. Berners-Lee",
+    "TBL",
+    "TimBL"
+   ]
+  },
+  {
+   "label": "Yoshua Bengio",
+   "qid": "Q3572699",
+   "fame": 0.578,
+   "also": []
+  },
+  {
+   "label": "Yann LeCun",
+   "qid": "Q3571662",
+   "fame": 0.57,
+   "also": [
+    "LeCun",
+    "Y LeCun",
+    "Yann A. LeCun",
+    "Yann André Le Cun",
+    "Yann L. Cun",
+    "YL Cun"
+   ]
+  },
+  {
+   "label": "Vint Cerf",
+   "qid": "Q92743",
+   "fame": 0.553,
+   "also": [
+    "Vinton G. Cerf",
+    "Cerf",
+    "Cerf V",
+    "Cerf V. G.",
+    "V Cerf",
+    "V G Cerf",
+    "Vint G. Cerf",
+    "Vinton Cerf",
+    "Vinton Gray Cerf"
+   ]
+  },
+  {
+   "label": "John McCarthy",
+   "qid": "Q92739",
+   "fame": 0.522,
+   "also": []
+  },
+  {
+   "label": "Dennis M. Ritchie",
+   "qid": "Q45575",
+   "fame": 0.516,
+   "also": [
+    "Dennis Ritchie",
+    "Dennis MacAlistair Ritchie",
+    "dmr"
+   ]
+  },
+  {
+   "label": "Donald Knuth",
+   "qid": "Q17457",
+   "fame": 0.496,
+   "also": [
+    "DEK",
+    "Knuth",
+    "Don Knuth",
+    "Donald E. Knuth",
+    "Donald Ervin Knuth"
+   ]
+  },
+  {
+   "label": "Marvin Minsky",
+   "qid": "Q204815",
+   "fame": 0.488,
+   "also": [
+    "Marvin L. Minsky",
+    "Marvin Lee Minsky"
+   ]
+  },
+  {
+   "label": "Edsger W. Dijkstra",
+   "qid": "Q8556",
+   "fame": 0.484,
+   "also": [
+    "Dijkstra",
+    "Edsger Wybe Dijkstra",
+    "Edsger Dijkstra",
+    "EWD"
+   ]
+  },
+  {
+   "label": "Ken Thompson",
+   "qid": "Q1107006",
+   "fame": 0.471,
+   "also": [
+    "Kenneth Thompson",
+    "Kenneth Lane Thompson",
+    "Kenneth L. Thompson"
+   ]
+  },
+  {
+   "label": "Herbert Simon",
+   "qid": "Q181529",
+   "fame": 0.453,
+   "also": [
+    "Herbert A. Simon",
+    "Herbert Alexander Simon"
+   ]
+  },
+  {
+   "label": "John L. Hennessy",
+   "qid": "Q92854",
+   "fame": 0.449,
+   "also": [
+    "John Hennessy",
+    "John LeRoy Hennessy"
+   ]
+  },
+  {
+   "label": "Judea Pearl",
+   "qid": "Q92824",
+   "fame": 0.433,
+   "also": []
+  },
+  {
+   "label": "Edwin Catmull",
+   "qid": "Q93161",
+   "fame": 0.409,
+   "also": [
+    "Ed Catmull",
+    "Edwin E. Catmull",
+    "Edwin Earl Catmull"
+   ]
+  },
+  {
+   "label": "Richard S. Sutton",
+   "qid": "Q7328833",
+   "fame": 0.406,
+   "also": [
+    "Richard Sutton",
+    "Rich Sutton",
+    "Richard Stuart Sutton"
+   ]
+  },
+  {
+   "label": "Robert W. Floyd",
+   "qid": "Q92641",
+   "fame": 0.405,
+   "also": [
+    "Robert Floyd",
+    "Bob Floyd"
+   ]
+  },
+  {
+   "label": "Alan Kay",
+   "qid": "Q92742",
+   "fame": 0.404,
+   "also": [
+    "Alan C. Kay",
+    "Alan Curtis Kay"
+   ]
+  },
+  {
+   "label": "Leslie Lamport",
+   "qid": "Q92613",
+   "fame": 0.396,
+   "also": [
+    "Leslie B. Lamport",
+    "Leslie Barry Lamport"
+   ]
+  },
+  {
+   "label": "Tony Hoare",
+   "qid": "Q92602",
+   "fame": 0.385,
+   "also": [
+    "C.A.R. Hoare",
+    "Sir Charles Antony Richard Hoare",
+    "Charles Antony Richard Hoare"
+   ]
+  },
+  {
+   "label": "Douglas Engelbart",
+   "qid": "Q92614",
+   "fame": 0.382,
+   "also": [
+    "Douglas C. Engelbart",
+    "Doug Engelbart",
+    "Doug C. Engelbart",
+    "Douglas Carl Engelbart"
+   ]
+  },
+  {
+   "label": "Adi Shamir",
+   "qid": "Q320624",
+   "fame": 0.368,
+   "also": []
+  },
+  {
+   "label": "Robert Metcalfe",
+   "qid": "Q92766",
+   "fame": 0.366,
+   "also": [
+    "Robert Melancton Metcalfe",
+    "Bob Metcalfe",
+    "Robert Melancton Metcalf",
+    "Robert M. Metcalfe"
+   ]
+  },
+  {
+   "label": "Barbara Liskov",
+   "qid": "Q16080922",
+   "fame": 0.356,
+   "also": [
+    "Barbara Jane Huberman",
+    "Barbara Jane Huberman Liskov",
+    "Barbara Jane Liskov"
+   ]
+  },
+  {
+   "label": "Ron Rivest",
+   "qid": "Q578036",
+   "fame": 0.354,
+   "also": [
+    "Ronald L. Rivest",
+    "Ronald Linn Rivest"
+   ]
+  },
+  {
+   "label": "Edgar F. Codd",
+   "qid": "Q92596",
+   "fame": 0.348,
+   "also": [
+    "Edgar Frank Codd",
+    "Edgar Codd"
+   ]
+  },
+  {
+   "label": "Niklaus Wirth",
+   "qid": "Q92604",
+   "fame": 0.348,
+   "also": [
+    "Niklaus E. Wirth",
+    "Niklaus Emil Wirth"
+   ]
+  },
+  {
+   "label": "Stephen Cook",
+   "qid": "Q62870",
+   "fame": 0.345,
+   "also": [
+    "Stephen A. Cook",
+    "Stephen Arthur Cook"
+   ]
+  },
+  {
+   "label": "Raj Reddy",
+   "qid": "Q92820",
+   "fame": 0.339,
+   "also": [
+    "Dabbala Rajagopal Reddy"
+   ]
+  },
+  {
+   "label": "Michael Stonebraker",
+   "qid": "Q92758",
+   "fame": 0.337,
+   "also": [
+    "Michael Ralph Stonebraker",
+    "Mike Stonebraker"
+   ]
+  },
+  {
+   "label": "Shafrira Goldwasser",
+   "qid": "Q11609",
+   "fame": 0.33,
+   "also": [
+    "Shafi Goldwasser"
+   ]
+  },
+  {
+   "label": "Richard Hamming",
+   "qid": "Q92619",
+   "fame": 0.325,
+   "also": [
+    "Richard W. Hamming",
+    "Richard Wesley Hamming"
+   ]
+  },
+  {
+   "label": "Allen Newell",
+   "qid": "Q439245",
+   "fame": 0.324,
+   "also": []
+  },
+  {
+   "label": "Ivan Sutherland",
+   "qid": "Q62866",
+   "fame": 0.323,
+   "also": [
+    "Ivan E. Sutherland",
+    "Ivan Edward Sutherland"
+   ]
+  },
+  {
+   "label": "Leonard Adleman",
+   "qid": "Q918650",
+   "fame": 0.315,
+   "also": [
+    "Leonard M. Adleman",
+    "Leonard Max Adleman",
+    "Len Adleman"
+   ]
+  },
+  {
+   "label": "David A. Patterson",
+   "qid": "Q92851",
+   "fame": 0.314,
+   "also": [
+    "David Patterson",
+    "David Andrew Patterson"
+   ]
+  },
+  {
+   "label": "Bob Kahn",
+   "qid": "Q62843",
+   "fame": 0.305,
+   "also": [
+    "Robert Kahn",
+    "R.E. Kahn",
+    "Robert E. Kahn",
+    "Robert Elliot Kahn"
+   ]
+  },
+  {
+   "label": "Whitfield Diffie",
+   "qid": "Q462089",
+   "fame": 0.305,
+   "also": [
+    "Bailey Diffie",
+    "Bailey Whitfield Diffie",
+    "W.Diffie",
+    "Whit Diffie"
+   ]
+  },
+  {
+   "label": "John Backus",
+   "qid": "Q92746",
+   "fame": 0.304,
+   "also": [
+    "John W. Backus",
+    "John Warner Backus"
+   ]
+  },
+  {
+   "label": "Manuel Blum",
+   "qid": "Q92626",
+   "fame": 0.303,
+   "also": []
+  },
+  {
+   "label": "Avi Wigderson",
+   "qid": "Q92957",
+   "fame": 0.289,
+   "also": []
+  },
+  {
+   "label": "Fred Brooks",
+   "qid": "Q92609",
+   "fame": 0.289,
+   "also": [
+    "Frederick Phillips",
+    "Frederick P. Brooks",
+    "Frederick P. Brooks Jr."
+   ]
+  },
+  {
+   "label": "Jim Gray",
+   "qid": "Q92606",
+   "fame": 0.289,
+   "also": [
+    "James Nicholas Gray"
+   ]
+  },
+  {
+   "label": "Andrew Yao",
+   "qid": "Q62888",
+   "fame": 0.287,
+   "also": [
+    "Andrew Chi-Chih Yao"
+   ]
+  },
+  {
+   "label": "Gilles Brassard",
+   "qid": "Q92938",
+   "fame": 0.286,
+   "also": []
+  },
+  {
+   "label": "Richard M. Karp",
+   "qid": "Q92612",
+   "fame": 0.279,
+   "also": [
+    "Richard Karp",
+    "Dick Karp",
+    "Dick M. Karp",
+    "Dick Manning Karp",
+    "Richard Manning Karp"
+   ]
+  },
+  {
+   "label": "Robert Tarjan",
+   "qid": "Q92638",
+   "fame": 0.273,
+   "also": [
+    "R.E. Tarjan",
+    "Robert E. Tarjan",
+    "Robert Endre Tarjan"
+   ]
+  },
+  {
+   "label": "Dana Scott",
+   "qid": "Q49823",
+   "fame": 0.27,
+   "also": [
+    "Dana S. Scott",
+    "Dana Stewart Scott"
+   ]
+  },
+  {
+   "label": "Jeffrey David Ullman",
+   "qid": "Q92794",
+   "fame": 0.266,
+   "also": [
+    "Jeffrey Ullman",
+    "Jeff Ullman",
+    "Jeffrey D. Ullman"
+   ]
+  },
+  {
+   "label": "Martin Edward Hellman",
+   "qid": "Q476466",
+   "fame": 0.266,
+   "also": [
+    "Martin Hellman",
+    "E.Hellman",
+    "Martin E. Hellman"
+   ]
+  },
+  {
+   "label": "Alfred Aho",
+   "qid": "Q62898",
+   "fame": 0.251,
+   "also": [
+    "Al Aho",
+    "Alfred V. Aho",
+    "Alfred Vaino Aho"
+   ]
+  },
+  {
+   "label": "Frances Allen",
+   "qid": "Q9602",
+   "fame": 0.251,
+   "also": [
+    "Fran Allen",
+    "Frances Elizabeth Allen",
+    "Frances E. Allen"
+   ]
+  },
+  {
+   "label": "Kristen Nygaard",
+   "qid": "Q92744",
+   "fame": 0.251,
+   "also": []
+  },
+  {
+   "label": "John Edward Hopcroft",
+   "qid": "Q62874",
+   "fame": 0.25,
+   "also": [
+    "John Hopcroft",
+    "John E. Hopcroft"
+   ]
+  },
+  {
+   "label": "Richard E. Stearns",
+   "qid": "Q92822",
+   "fame": 0.243,
+   "also": [
+    "Richard Stearns",
+    "Dick Stearns",
+    "Richard Edwin Stearns"
+   ]
+  },
+  {
+   "label": "Michael O. Rabin",
+   "qid": "Q357965",
+   "fame": 0.242,
+   "also": [
+    "Michael Rabin",
+    "Michael Oser Rabin"
+   ]
+  },
+  {
+   "label": "Silvio Micali",
+   "qid": "Q93080",
+   "fame": 0.237,
+   "also": []
+  },
+  {
+   "label": "Jack Dongarra",
+   "qid": "Q92670",
+   "fame": 0.236,
+   "also": [
+    "Jack J. Dongarra",
+    "Jack Joseph Dongarra"
+   ]
+  },
+  {
+   "label": "Kenneth E. Iverson",
+   "qid": "Q92629",
+   "fame": 0.233,
+   "also": [
+    "Kenneth Eugene Iverson"
+   ]
+  },
+  {
+   "label": "Leslie Valiant",
+   "qid": "Q93154",
+   "fame": 0.229,
+   "also": [
+    "Leslie G. Valiant",
+    "Leslie Gabriel Valiant"
+   ]
+  },
+  {
+   "label": "Alan Perlis",
+   "qid": "Q62861",
+   "fame": 0.225,
+   "also": [
+    "Alan J. Perlis",
+    "Alan Jay Perlis"
+   ]
+  },
+  {
+   "label": "William Kahan",
+   "qid": "Q92782",
+   "fame": 0.222,
+   "also": [
+    "William Morton Kahan"
+   ]
+  },
+  {
+   "label": "Peter Naur",
+   "qid": "Q92618",
+   "fame": 0.221,
+   "also": []
+  },
+  {
+   "label": "Maurice Wilkes",
+   "qid": "Q62857",
+   "fame": 0.219,
+   "also": [
+    "Maurice V. Wilkes",
+    "Maurice Vincent Wilkes",
+    "Sir Maurice Vincent Wilkes"
+   ]
+  },
+  {
+   "label": "Pat Hanrahan",
+   "qid": "Q7143512",
+   "fame": 0.219,
+   "also": [
+    "Patrick M. Hanrahan",
+    "Patrick Matthew Hanrahan"
+   ]
+  },
+  {
+   "label": "Edward Feigenbaum",
+   "qid": "Q92823",
+   "fame": 0.216,
+   "also": [
+    "Ed Feigenbaum",
+    "Edward A. Feigenbaum",
+    "Edward Albert Feigenbaum"
+   ]
+  },
+  {
+   "label": "Butler Lampson",
+   "qid": "Q92644",
+   "fame": 0.191,
+   "also": [
+    "Butler W. Lampson",
+    "Butler Wright Lampson"
+   ]
+  },
+  {
+   "label": "Robin Milner",
+   "qid": "Q92643",
+   "fame": 0.19,
+   "also": [
+    "Arthur John Robin Gorell Milner"
+   ]
+  },
+  {
+   "label": "Ole-Johan Dahl",
+   "qid": "Q92745",
+   "fame": 0.189,
+   "also": []
+  },
+  {
+   "label": "Fernando J. Corbató",
+   "qid": "Q92625",
+   "fame": 0.178,
+   "also": [
+    "Fernando Jose Corbato"
+   ]
+  },
+  {
+   "label": "Amir Pnueli",
+   "qid": "Q92649",
+   "fame": 0.167,
+   "also": []
+  },
+  {
+   "label": "Iosif Sifakis",
+   "qid": "Q92781",
+   "fame": 0.166,
+   "also": [
+    "Joseph Sifakis"
+   ]
+  },
+  {
+   "label": "Charles Bachman",
+   "qid": "Q62894",
+   "fame": 0.163,
+   "also": [
+    "Charlie Bachman",
+    "Charles W. Bachman",
+    "Charles William Bachman",
+    "Charles William Bachman III"
+   ]
+  },
+  {
+   "label": "James H. Wilkinson",
+   "qid": "Q62877",
+   "fame": 0.153,
+   "also": [
+    "James Wilkinson",
+    "Jim Wilkinson",
+    "James Hardy Wilkinson"
+   ]
+  },
+  {
+   "label": "John Cocke",
+   "qid": "Q92632",
+   "fame": 0.146,
+   "also": []
+  },
+  {
+   "label": "Juris Hartmanis",
+   "qid": "Q92628",
+   "fame": 0.143,
+   "also": []
+  },
+  {
+   "label": "Charles P. Thacker",
+   "qid": "Q92828",
+   "fame": 0.137,
+   "also": [
+    "Chuck Thacker"
+   ]
+  },
+  {
+   "label": "Edmund M. Clarke",
+   "qid": "Q92819",
+   "fame": 0.127,
+   "also": [
+    "Edmund Clarke",
+    "Edmund Melson Clarke"
+   ]
+  },
+  {
+   "label": "E. Allen Emerson",
+   "qid": "Q92821",
+   "fame": 0.084,
+   "also": [
+    "Allen Emerson",
+    "Ernest Allen Emerson"
+   ]
+  }
+ ]
+}

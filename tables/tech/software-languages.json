@@ -1,0 +1,259 @@
+{
+ "id": "table.tech.software-languages",
+ "kind": "table",
+ "title": "Famous software and the language it is written in",
+ "genre": "science-math-tech",
+ "category": "tech",
+ "topic": "coding",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?langLabel WHERE { { SELECT ?item (SAMPLE(?d) AS ?lang) (COUNT(DISTINCT ?d) AS ?nL) WHERE { ?item wdt:P31/wdt:P279* ?cls ; wdt:P277 ?d ; wikibase:sitelinks ?sl . VALUES ?cls { wd:Q271680 wd:Q188860 wd:Q1330336 wd:Q7397 wd:Q9135 wd:Q1301371 } ?d wdt:P31/wdt:P279* wd:Q9143 . FILTER(?sl >= 40) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nL = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T01:14:21.358Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T01:14:21.358Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "language",
+   "label": "Written in",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "piece of software",
+  "many": "pieces of software",
+  "columns": {
+   "language": {
+    "role": "link",
+    "pick": "Which programming language is {label} written in?",
+    "statement": "{label} is written in {value}.",
+    "match": "Match each piece of software to the language it is written in.",
+    "odd": "Three of these are written in {value}. Which one is not?",
+    "all": "Tap all {n} pieces of software written in {value}.",
+    "reverse": "Which of these is written in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Wikipedia",
+   "qid": "Q52",
+   "fame": 0.881,
+   "language": "PHP",
+   "description": "free multilingual online encyclopedia",
+   "hook": "is a free online encyclopedia that anyone can edit",
+   "known": 0.6,
+   "kind": "website"
+  },
+  {
+   "label": "Facebook",
+   "qid": "Q355",
+   "fame": 0.824,
+   "language": "PHP",
+   "description": "American online social media and social networking service",
+   "hook": "is the social network where people post updates and friend each other",
+   "known": 0.95,
+   "kind": "social platform"
+  },
+  {
+   "label": "Google Chrome",
+   "qid": "Q777",
+   "fame": 0.795,
+   "language": "C++",
+   "description": "web browser developed by Google",
+   "hook": "is the most widely used web browser in the world",
+   "known": 0.95,
+   "kind": "browser"
+  },
+  {
+   "label": "WhatsApp",
+   "qid": "Q1049511",
+   "fame": 0.758,
+   "language": "Erlang",
+   "description": "Meta Platforms-owned mobile instant messenger and social media service",
+   "hook": "is a messaging app used by billions to send texts, photos and voice notes",
+   "known": 0.8,
+   "kind": "messaging app"
+  },
+  {
+   "label": "Gmail",
+   "qid": "Q9334",
+   "fame": 0.717,
+   "language": "JavaScript",
+   "description": "email service developed by Google",
+   "hook": "is a hugely popular free email service known for its big inbox storage",
+   "known": 0.8,
+   "kind": "email service"
+  },
+  {
+   "label": "Linux",
+   "qid": "Q388",
+   "fame": 0.661,
+   "language": "C",
+   "description": "family of Unix-like operating systems",
+   "hook": "is an open-source operating system whose mascot is a penguin",
+   "known": 0.6,
+   "kind": "operating system"
+  },
+  {
+   "label": "Microsoft Word",
+   "qid": "Q11261",
+   "fame": 0.595,
+   "language": "C++",
+   "description": "word processor software part of Microsoft 365",
+   "hook": "is the best-known program for writing and formatting documents in an office suite",
+   "known": 0.95,
+   "kind": "office software"
+  },
+  {
+   "label": "Siri",
+   "qid": "Q582159",
+   "fame": 0.577,
+   "language": "Objective-C",
+   "description": "intelligent personal assistant on various Apple devices",
+   "hook": "is a voice assistant that answers spoken questions on iPhones",
+   "known": 0.8,
+   "kind": "voice assistant"
+  },
+  {
+   "label": "Unreal Engine",
+   "qid": "Q608276",
+   "fame": 0.557,
+   "language": "C++",
+   "description": "video game engine series developed by Epic Games",
+   "hook": "powers many blockbuster video games, including Fortnite",
+   "known": 0.6,
+   "kind": "game engine"
+  },
+  {
+   "label": "nginx",
+   "qid": "Q306144",
+   "fame": 0.554,
+   "language": "C",
+   "description": "open source web server and a reverse proxy server",
+   "hook": "is a fast web server that runs a large share of busy websites",
+   "known": 0.2,
+   "kind": "web server"
+  },
+  {
+   "label": "LibreOffice",
+   "qid": "Q10135",
+   "fame": 0.551,
+   "language": "C++",
+   "description": "free and open-source productivity software suite by The Document Foundation",
+   "hook": "is a free alternative to paid office suites, with a writer, spreadsheet and slide app",
+   "known": 0.4,
+   "kind": "office software"
+  },
+  {
+   "label": "Duolingo",
+   "qid": "Q2918660",
+   "fame": 0.544,
+   "language": "Scala",
+   "description": "American online platform for language learning",
+   "hook": "gamifies learning foreign tongues with streaks and a green owl mascot",
+   "known": 0.6,
+   "kind": "learning app"
+  },
+  {
+   "label": "MS-DOS",
+   "qid": "Q47604",
+   "fame": 0.543,
+   "language": "assembly language",
+   "description": "Microsoft operating system",
+   "hook": "was the text-based command-line operating system that ran early IBM PCs",
+   "known": 0.4,
+   "kind": "operating system"
+  },
+  {
+   "label": "Kubernetes",
+   "qid": "Q22661306",
+   "fame": 0.535,
+   "language": "Go",
+   "description": "software to manage containers on a server-cluster",
+   "hook": "orchestrates containers across clusters, and its name is Greek for helmsman",
+   "known": 0.05,
+   "kind": "infrastructure tool"
+  },
+  {
+   "label": "PostgreSQL",
+   "qid": "Q192490",
+   "fame": 0.527,
+   "language": "C",
+   "description": "free and open-source relational database management system",
+   "hook": "is an open-source database system with an elephant for a mascot",
+   "known": 0.2,
+   "kind": "database"
+  },
+  {
+   "label": "React",
+   "qid": "Q19399674",
+   "fame": 0.521,
+   "language": "JavaScript",
+   "description": "JavaScript library for building user interfaces",
+   "hook": "lets developers build web interfaces from reusable components",
+   "known": 0.4,
+   "kind": "web framework"
+  },
+  {
+   "label": "Docker",
+   "qid": "Q15206305",
+   "fame": 0.517,
+   "language": "Go",
+   "description": "open-source software for deploying and running of containerized applications",
+   "hook": "packages apps into portable containers, with a whale as its logo",
+   "known": 0.3,
+   "kind": "infrastructure tool"
+  },
+  {
+   "label": "Emacs",
+   "qid": "Q189722",
+   "fame": 0.499,
+   "language": "Lisp",
+   "description": "family of text editors",
+   "hook": "is a legendary text editor whose fans have a long-running rivalry with vi users",
+   "known": 0.1,
+   "kind": "text editor"
+  },
+  {
+   "label": "Quora",
+   "qid": "Q51711",
+   "fame": 0.491,
+   "language": "Python",
+   "description": "American question-and-answer website",
+   "hook": "lets people ask questions and get answers from strangers",
+   "known": 0.5,
+   "kind": "website"
+  },
+  {
+   "label": "SQLite",
+   "qid": "Q319417",
+   "fame": 0.478,
+   "language": "C",
+   "description": "serverless relational database management system (RDBMS)",
+   "hook": "is a tiny database engine built into phones and web browsers",
+   "known": 0.05,
+   "kind": "database"
+  }
+ ]
+}

@@ -1,0 +1,845 @@
+{
+ "id": "table.food-and-drink.drinks",
+ "kind": "table",
+ "title": "Famous drinks",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "wine-and-beer",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Hand-built, checked row by row against English Wikipedia",
+  "method": null,
+  "attribution": null,
+  "fetchedAt": "2026-09-27T02:14:57.247Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T03:01:29.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country of origin",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "kind",
+   "label": "Kind",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "made_from",
+   "label": "Made from",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "drink",
+  "many": "drinks",
+  "capitalise": true,
+  "hookAsk": "Which drink {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country does {label} come from?",
+    "statement": "{label} comes from {value}.",
+    "match": "Match each drink to the country it comes from.",
+    "odd": "Three of these drinks come from {value}. Which one doesn't?",
+    "all": "Tap all {n} drinks from {value}."
+   },
+   "made_from": {
+    "role": "link",
+    "pick": "What is {label} made from?",
+    "statement": "{label} is made from {value}.",
+    "match": "Match each drink to what it's made from."
+   },
+   "kind": {
+    "role": "link",
+    "odd": "Three of these are {value}s. Which one isn't?"
+   }
+  },
+  "exclude": [
+   {
+    "qid": "Q170210",
+    "why": "Absinthe: Switzerland and France both claim it - origin argued"
+   },
+   {
+    "qid": "Q253481",
+    "why": "Lager: a brewing style shared across Central Europe - no single country"
+   },
+   {
+    "qid": "Q638290",
+    "why": "Raki: an anise spirit claimed across Turkey and the Balkans"
+   }
+  ]
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Matcha",
+   "qid": "Q822331",
+   "fame": 0.624,
+   "country": "Japan",
+   "kind": "tea",
+   "made_from": "green tea leaves",
+   "description": "finely powdered green tea",
+   "hook": "is a finely ground powdered leaf whisked into hot water for a vivid, ceremonial drink",
+   "known": 0.6
+  },
+  {
+   "label": "Absinthe",
+   "qid": "Q170210",
+   "fame": 0.607,
+   "country": "Switzerland",
+   "kind": "spirit",
+   "made_from": "wormwood",
+   "description": "alcoholic drink",
+   "hook": "is a strong bitter spirit flavored with an herb once wrongly blamed for causing hallucinations",
+   "known": 0.6
+  },
+  {
+   "label": "Negroni",
+   "qid": "Q1401202",
+   "fame": 0.571,
+   "country": "Italy",
+   "kind": "cocktail",
+   "made_from": "gin",
+   "description": "cocktail made of gin, Campari, and vermouth",
+   "hook": "is a bright red bittersweet cocktail served over ice with an orange twist",
+   "known": 0.4
+  },
+  {
+   "label": "Long Island iced tea",
+   "qid": "Q1052769",
+   "fame": 0.571,
+   "country": "United States",
+   "kind": "cocktail",
+   "made_from": "vodka",
+   "description": "mixed drink with vodka, gin, tequila, and rum",
+   "hook": "is a mixed cocktail combining four clear spirits with cola for a deceptively strong drink",
+   "known": 0.4
+  },
+  {
+   "label": "Bubble tea",
+   "qid": "Q715858",
+   "fame": 0.557,
+   "country": "Taiwan",
+   "kind": "tea",
+   "made_from": "tea",
+   "description": "Taiwanese tea-based drink containing tapioca pearls",
+   "hook": "is a milky sweet drink served cold with chewy tapioca balls sipped through a wide straw",
+   "known": 0.6
+  },
+  {
+   "label": "Paloma",
+   "qid": "Q7128571",
+   "fame": 0.557,
+   "country": null,
+   "kind": "cocktail",
+   "made_from": "tequila",
+   "description": "tequila-based cocktail",
+   "hook": "is a citrusy cocktail topped with grapefruit soda and served in a salt-rimmed glass",
+   "known": 0.2
+  },
+  {
+   "label": "Root beer",
+   "qid": "Q36275",
+   "fame": 0.551,
+   "country": "United States",
+   "kind": "soft drink",
+   "made_from": "sassafras",
+   "description": "carbonated beverage, originally made using the root of a sassafras plant",
+   "hook": "is a sweet fizzy soda historically flavored with a fragrant tree bark blend",
+   "known": 0.8
+  },
+  {
+   "label": "Piña colada",
+   "qid": "Q745886",
+   "fame": 0.549,
+   "country": null,
+   "kind": "cocktail",
+   "made_from": "rum",
+   "description": "sweet, rum-based cocktail with coconut and pineapple",
+   "hook": "is a creamy, sweet cocktail blended with pineapple and coconut cream",
+   "known": 0.8
+  },
+  {
+   "label": "Soju",
+   "qid": "Q696105",
+   "fame": 0.544,
+   "country": "South Korea",
+   "kind": "spirit",
+   "made_from": "rice",
+   "description": "distilled beverage",
+   "hook": "is a clear, mild-tasting distilled spirit traditionally sipped from small shot glasses",
+   "known": 0.4
+  },
+  {
+   "label": "Bourbon",
+   "qid": "Q543127",
+   "fame": 0.542,
+   "country": "United States",
+   "kind": "spirit",
+   "made_from": "corn",
+   "description": "type of American whiskey, a barrel-aged distilled spirit made primarily from corn",
+   "hook": "is a caramel-colored spirit aged in charred oak barrels, giving it a sweet, smoky flavor",
+   "known": 0.8
+  },
+  {
+   "label": "Martini",
+   "qid": "Q273027",
+   "fame": 0.537,
+   "country": null,
+   "kind": "cocktail",
+   "made_from": "gin",
+   "description": "cocktail made with gin and vermouth",
+   "hook": "is a classic cocktail stirred or shaken and garnished with an olive or a lemon twist",
+   "known": 0.95
+  },
+  {
+   "label": "Old fashioned",
+   "qid": "Q497448",
+   "fame": 0.535,
+   "country": "United States",
+   "kind": "cocktail",
+   "made_from": "whiskey",
+   "description": "cocktail made of sugar with bitters and alcohol",
+   "hook": "is a spirit-forward cocktail muddled with a sugar cube and a few dashes of bitters",
+   "known": 0.6
+  },
+  {
+   "label": "Cognac",
+   "qid": "Q284",
+   "fame": 0.534,
+   "country": "France",
+   "kind": "spirit",
+   "made_from": "grapes",
+   "description": "alcoholic beverage; variety of brandy",
+   "hook": "is a smooth amber spirit double-distilled and aged in oak, sipped from a wide-bowled glass",
+   "known": 0.8
+  },
+  {
+   "label": "Spritz",
+   "qid": "Q668635",
+   "fame": 0.534,
+   "country": "Italy",
+   "kind": "cocktail",
+   "made_from": "prosecco",
+   "description": "wine-based cocktail",
+   "hook": "is a bubbly, low-alcohol drink poured over ice and topped with soda water",
+   "known": 0.6
+  },
+  {
+   "label": "Espresso",
+   "qid": "Q180289",
+   "fame": 0.533,
+   "country": "Italy",
+   "kind": "coffee",
+   "made_from": "coffee beans",
+   "description": "strong type of coffee made using hot water under pressure",
+   "hook": "is a small, concentrated shot of dark roast topped with a thin layer of golden crema",
+   "known": 0.95
+  },
+  {
+   "label": "Mai Tai",
+   "qid": "Q280531",
+   "fame": 0.53,
+   "country": "United States",
+   "kind": "cocktail",
+   "made_from": "rum",
+   "description": "cocktail based on rum, Curaçao liqueur and lime juice",
+   "hook": "is a tiki cocktail with a nutty almond-syrup sweetness, garnished with a mint sprig and lime shell",
+   "known": 0.4
+  },
+  {
+   "label": "Bloody Mary",
+   "qid": "Q207711",
+   "fame": 0.528,
+   "country": null,
+   "kind": "cocktail",
+   "made_from": "vodka",
+   "description": "cocktail containing vodka and tomato juice",
+   "hook": "is a savory brunch cocktail mixed with tomato juice and spices, garnished with celery",
+   "known": 0.8
+  },
+  {
+   "label": "Margarita",
+   "qid": "Q657621",
+   "fame": 0.52,
+   "country": null,
+   "kind": "cocktail",
+   "made_from": "tequila",
+   "description": "Mexican cocktail of tequila and orange liqueur",
+   "hook": "is a lime-based cocktail served on the rocks or blended, often in a salt-rimmed glass",
+   "known": 0.95
+  },
+  {
+   "label": "Tequila",
+   "qid": "Q122195",
+   "fame": 0.515,
+   "country": "Mexico",
+   "kind": "spirit",
+   "made_from": "agave",
+   "description": "alcoholic beverage originating from Mexico",
+   "hook": "is a spirit distilled from the heart of a spiky desert plant and often served with lime and salt",
+   "known": 0.95
+  },
+  {
+   "label": "Cortado",
+   "qid": "Q59072",
+   "fame": 0.514,
+   "country": "Spain",
+   "kind": "coffee",
+   "made_from": "coffee beans",
+   "description": "beverage consisting of espresso mixed with a roughly equal amount of warm milk to reduce the acidity",
+   "hook": "is a small espresso-based drink cut with a bit of warm milk to soften its bite",
+   "known": 0.4
+  },
+  {
+   "label": "Sake",
+   "qid": "Q170219",
+   "fame": 0.513,
+   "country": "Japan",
+   "kind": "other",
+   "made_from": "rice",
+   "description": "alcoholic beverage of Japanese origin",
+   "hook": "is a clear fermented drink brewed from a staple grain and traditionally served warm or chilled",
+   "known": 0.8
+  },
+  {
+   "label": "Port",
+   "qid": "Q191034",
+   "fame": 0.513,
+   "country": "Portugal",
+   "kind": "wine",
+   "made_from": "grapes",
+   "description": "Portuguese fortified wine",
+   "hook": "is a sweet fortified wine traditionally enjoyed after dinner",
+   "known": 0.6
+  },
+  {
+   "label": "Mezcal",
+   "qid": "Q726413",
+   "fame": 0.512,
+   "country": "Mexico",
+   "kind": "spirit",
+   "made_from": "agave",
+   "description": "distilled alcoholic beverage",
+   "hook": "is a smoky spirit distilled from a roasted desert plant, often sipped neat",
+   "known": 0.4
+  },
+  {
+   "label": "Limoncello",
+   "qid": "Q736208",
+   "fame": 0.512,
+   "country": "Italy",
+   "kind": "spirit",
+   "made_from": "lemons",
+   "description": "Italian lemon liqueur",
+   "hook": "is a bright yellow sweet liqueur served ice-cold as a after-dinner sipper",
+   "known": 0.6
+  },
+  {
+   "label": "Moscow mule",
+   "qid": "Q1507096",
+   "fame": 0.512,
+   "country": "United States",
+   "kind": "cocktail",
+   "made_from": "vodka",
+   "description": "mule cocktail with vodka, ginger beer and lime",
+   "hook": "is a spicy, citrusy cocktail traditionally served in a copper mug",
+   "known": 0.4
+  },
+  {
+   "label": "Rooibos",
+   "qid": "Q272181",
+   "fame": 0.511,
+   "country": "South Africa",
+   "kind": "tea",
+   "made_from": "rooibos",
+   "description": "species of plant",
+   "hook": "is a naturally caffeine-free reddish herbal infusion brewed from a needle-leafed shrub",
+   "known": 0.6
+  },
+  {
+   "label": "Rakı",
+   "qid": "Q638290",
+   "fame": 0.51,
+   "country": "Turkey",
+   "kind": "spirit",
+   "made_from": "grapes",
+   "description": "unsweetened, anise-flavored alcoholic drink",
+   "hook": "is a strong anise spirit that turns milky white when water is added, often served with grilled meats",
+   "known": 0.4
+  },
+  {
+   "label": "Earl Grey",
+   "qid": "Q207788",
+   "fame": 0.509,
+   "country": "United Kingdom",
+   "kind": "tea",
+   "made_from": "black tea leaves",
+   "description": "black tea blend flavored with bergamot",
+   "hook": "is a leaf infusion scented with a citrusy oil from a small orange-like fruit",
+   "known": 0.8
+  },
+  {
+   "label": "Ouzo",
+   "qid": "Q337687",
+   "fame": 0.509,
+   "country": "Greece",
+   "kind": "spirit",
+   "made_from": "anise",
+   "description": "anis drink",
+   "hook": "is a licorice-flavored spirit that turns milky with water or ice, often sipped alongside seafood",
+   "known": 0.4
+  },
+  {
+   "label": "Masala chai",
+   "qid": "Q877661",
+   "fame": 0.508,
+   "country": "India",
+   "kind": "tea",
+   "made_from": "black tea leaves",
+   "description": "flavoured tea beverage made from milk, aromatic spices and herbs",
+   "hook": "is a spiced, milky brewed drink warmed with cinnamon, cardamom and other spices",
+   "known": 0.6
+  },
+  {
+   "label": "Caipirinha",
+   "qid": "Q625152",
+   "fame": 0.508,
+   "country": "Brazil",
+   "kind": "cocktail",
+   "made_from": "cachaça",
+   "description": "Brazil's national cocktail",
+   "hook": "is a muddled cocktail of crushed limes and sugar over a strong sugarcane spirit",
+   "known": 0.6
+  },
+  {
+   "label": "Cappuccino",
+   "qid": "Q159774",
+   "fame": 0.506,
+   "country": "Italy",
+   "kind": "coffee",
+   "made_from": "coffee beans",
+   "description": "coffee drink",
+   "hook": "is an espresso-based drink topped with a thick layer of steamed milk foam",
+   "known": 0.95
+  },
+  {
+   "label": "Cachaça",
+   "qid": "Q744729",
+   "fame": 0.506,
+   "country": "Brazil",
+   "kind": "spirit",
+   "made_from": "sugarcane",
+   "description": "distilled alcoholic beverage",
+   "hook": "is a distilled spirit made from fresh pressed cane juice rather than molasses",
+   "known": 0.2
+  },
+  {
+   "label": "India pale ale",
+   "qid": "Q1543214",
+   "fame": 0.506,
+   "country": "United Kingdom",
+   "kind": "beer",
+   "made_from": "barley",
+   "description": "Pale ale beer with high hop content to improve its preservation",
+   "hook": "is a heavily hopped, bitter beer originally brewed extra strong to survive long sea voyages",
+   "known": 0.6
+  },
+  {
+   "label": "Cosmopolitan",
+   "qid": "Q268057",
+   "fame": 0.501,
+   "country": null,
+   "kind": "cocktail",
+   "made_from": "vodka",
+   "description": "cocktail made with vodka",
+   "hook": "is a pink cocktail served in a chilled glass with a splash of cranberry and citrus",
+   "known": 0.8
+  },
+  {
+   "label": "Baijiu",
+   "qid": "Q629266",
+   "fame": 0.5,
+   "country": "China",
+   "kind": "spirit",
+   "made_from": "sorghum",
+   "description": "Chinese liquor distilled from sorghum, rice, wheat, barley, millet, or Job's tears; name means literally “white alcohol”",
+   "hook": "is an intensely strong, pungent clear grain spirit sipped in tiny cups during toasts",
+   "known": 0.2
+  },
+  {
+   "label": "Prosecco",
+   "qid": "Q1069954",
+   "fame": 0.499,
+   "country": "Italy",
+   "kind": "wine",
+   "made_from": "grapes",
+   "description": "Italian controlled designation of origin wine from Veneto and Friuli-Venezia Giulia",
+   "hook": "is a light, bubbly wine often used as the base for a popular brunch cocktail",
+   "known": 0.8
+  },
+  {
+   "label": "Champagne",
+   "qid": "Q134862",
+   "fame": 0.494,
+   "country": "France",
+   "kind": "wine",
+   "made_from": "grapes",
+   "description": "sparkling wine from Champagne, France",
+   "hook": "is a bubbly celebratory wine made using a special two-step fermentation process",
+   "known": 0.95
+  },
+  {
+   "label": "Amaretto",
+   "qid": "Q455045",
+   "fame": 0.493,
+   "country": "Italy",
+   "kind": "spirit",
+   "made_from": "almonds",
+   "description": "Italian almond liqueur",
+   "hook": "is a sweet nutty liqueur with a rich marzipan-like flavor",
+   "known": 0.6
+  },
+  {
+   "label": "Cola",
+   "qid": "Q134041",
+   "fame": 0.49,
+   "country": "United States",
+   "kind": "soft drink",
+   "made_from": "kola nut",
+   "description": "carbonated soft drink",
+   "hook": "is a dark, fizzy, caramel-colored soft drink historically flavored with a tropical nut",
+   "known": 0.95
+  },
+  {
+   "label": "Sherry",
+   "qid": "Q16398",
+   "fame": 0.49,
+   "country": "Spain",
+   "kind": "wine",
+   "made_from": "grapes",
+   "description": "fortified wine made from white grapes",
+   "hook": "is a fortified wine ranging from bone dry to lusciously sweet, often sipped before or after a meal",
+   "known": 0.6
+  },
+  {
+   "label": "Mojito",
+   "qid": "Q487338",
+   "fame": 0.49,
+   "country": "Cuba",
+   "kind": "cocktail",
+   "made_from": "rum",
+   "description": "traditional Cuban highball cocktail",
+   "hook": "is a minty, sugary cocktail topped with soda water and muddled fresh leaves",
+   "known": 0.8
+  },
+  {
+   "label": "Grappa",
+   "qid": "Q693078",
+   "fame": 0.489,
+   "country": "Italy",
+   "kind": "spirit",
+   "made_from": "grapes",
+   "description": "Italian alcoholic beverage",
+   "hook": "is a fiery clear spirit distilled from the leftover skins, seeds and stems after winemaking",
+   "known": 0.4
+  },
+  {
+   "label": "Oolong",
+   "qid": "Q231587",
+   "fame": 0.488,
+   "country": "China",
+   "kind": "tea",
+   "made_from": "tea leaves",
+   "description": "partially oxidized tea",
+   "hook": "is a partially oxidized leaf infusion that falls between a green and a dark variety in flavor",
+   "known": 0.6
+  },
+  {
+   "label": "Manhattan",
+   "qid": "Q1414032",
+   "fame": 0.488,
+   "country": "United States",
+   "kind": "cocktail",
+   "made_from": "whiskey",
+   "description": "cocktail made with whiskey, sweet vermouth, and bitters",
+   "hook": "is a stirred cocktail of a dark spirit and sweet vermouth, garnished with a cherry",
+   "known": 0.6
+  },
+  {
+   "label": "Sangria",
+   "qid": "Q273296",
+   "fame": 0.486,
+   "country": null,
+   "kind": "wine",
+   "made_from": "wine",
+   "description": "wine punch",
+   "hook": "is a fruity chilled punch made by mixing chopped fruit into a red or white base",
+   "known": 0.8
+  },
+  {
+   "label": "Sambuca",
+   "qid": "Q723464",
+   "fame": 0.48,
+   "country": "Italy",
+   "kind": "spirit",
+   "made_from": "anise",
+   "description": "Italian anise-flavored liqueur",
+   "hook": "is a syrupy-sweet liqueur with a licorice-like flavor, sometimes served flaming with coffee beans on top",
+   "known": 0.4
+  },
+  {
+   "label": "White Russian",
+   "qid": "Q283543",
+   "fame": 0.479,
+   "country": null,
+   "kind": "cocktail",
+   "made_from": "vodka",
+   "description": "cocktail made with vodka and coffee liqueur",
+   "hook": "is a creamy after-dinner cocktail layered with a coffee liqueur and topped with cream",
+   "known": 0.4
+  },
+  {
+   "label": "Daiquiri",
+   "qid": "Q917361",
+   "fame": 0.477,
+   "country": "Cuba",
+   "kind": "cocktail",
+   "made_from": "rum",
+   "description": "family of cocktails with with rum, citrus and some sweetener",
+   "hook": "is a chilled, citrusy cocktail shaken with a clear cane spirit and a touch of sweetener",
+   "known": 0.6
+  },
+  {
+   "label": "Pu'er",
+   "qid": "Q690098",
+   "fame": 0.469,
+   "country": "China",
+   "kind": "tea",
+   "made_from": "tea leaves",
+   "description": "variety of fermented tea produced in the Yunnan province of China",
+   "hook": "is a dark, earthy fermented leaf infusion often pressed into aged cakes or bricks",
+   "known": 0.2
+  },
+  {
+   "label": "Ayran",
+   "qid": "Q192892",
+   "fame": 0.461,
+   "country": null,
+   "kind": "soft drink",
+   "made_from": "yogurt",
+   "description": "drink made from yoghurt with soda water and salt, and sometimes also vodka",
+   "hook": "is a savory, salted, watered-down cultured milk drink served chilled",
+   "known": 0.2
+  },
+  {
+   "label": "Pilsner",
+   "qid": "Q152281",
+   "fame": 0.459,
+   "country": "Czech Republic",
+   "kind": "beer",
+   "made_from": "barley",
+   "description": "type of pale lager",
+   "hook": "is a golden, clear beer style that broke from the cloudy, dark beers common before it",
+   "known": 0.8
+  },
+  {
+   "label": "Agua fresca",
+   "qid": "Q4694505",
+   "fame": 0.452,
+   "country": "Mexico",
+   "kind": "soft drink",
+   "made_from": "fruit",
+   "description": "Mexican drink",
+   "hook": "is a light, non-fizzy drink blended from melon, hibiscus or tamarind with water and a little sweetener",
+   "known": 0.2
+  },
+  {
+   "label": "Mimosa",
+   "qid": "Q2530766",
+   "fame": 0.452,
+   "country": null,
+   "kind": "cocktail",
+   "made_from": "sparkling wine",
+   "description": "drink composed of sparkling wine and citrus fruit juice",
+   "hook": "is a brunch cocktail that mixes a bubbly drink with citrus juice in equal parts",
+   "known": 0.8
+  },
+  {
+   "label": "Lager",
+   "qid": "Q253481",
+   "fame": 0.45,
+   "country": "Germany",
+   "kind": "beer",
+   "made_from": "barley",
+   "description": "type of beer",
+   "hook": "is a beer style fermented and matured at cold temperatures for a clean, crisp taste",
+   "known": 0.95
+  },
+  {
+   "label": "Bellini",
+   "qid": "Q815994",
+   "fame": 0.448,
+   "country": "Italy",
+   "kind": "cocktail",
+   "made_from": "prosecco",
+   "description": "cocktail of Prosecco sparkling wine and peach purée",
+   "hook": "is a peach-flavored cocktail made with a light bubbly wine, traditionally a pale pink color",
+   "known": 0.6
+  },
+  {
+   "label": "Macchiato",
+   "qid": "Q731543",
+   "fame": 0.443,
+   "country": "Italy",
+   "kind": "coffee",
+   "made_from": "coffee beans",
+   "description": "espresso coffee drink with a small amount of milk, usually foamed",
+   "hook": "is a small espresso-based drink marked with just a dollop of foamed milk",
+   "known": 0.6
+  },
+  {
+   "label": "Lapsang souchong",
+   "qid": "Q634871",
+   "fame": 0.443,
+   "country": "China",
+   "kind": "tea",
+   "made_from": "black tea leaves",
+   "description": "Chinese black tea that is smoke-dried",
+   "hook": "is a leaf infusion dried over smoldering pine, giving it a campfire aroma",
+   "known": 0.2
+  },
+  {
+   "label": "Ristretto",
+   "qid": "Q59047",
+   "fame": 0.442,
+   "country": "Italy",
+   "kind": "coffee",
+   "made_from": "coffee beans",
+   "description": "coffee",
+   "hook": "is an extra-short, extra-concentrated espresso shot pulled with less water",
+   "known": 0.4
+  },
+  {
+   "label": "Ginger beer",
+   "qid": "Q1448819",
+   "fame": 0.439,
+   "country": "United Kingdom",
+   "kind": "soft drink",
+   "made_from": "ginger",
+   "description": "carbonated beverage",
+   "hook": "is a spicy, fizzy soft drink brewed or flavored with a hot fibrous root",
+   "known": 0.6
+  },
+  {
+   "label": "Armagnac",
+   "qid": "Q503252",
+   "fame": 0.438,
+   "country": "France",
+   "kind": "spirit",
+   "made_from": "grapes",
+   "description": "style of brandy produced in France",
+   "hook": "is an amber spirit distilled once and aged in oak, sipped after a meal",
+   "known": 0.4
+  },
+  {
+   "label": "Frappé coffee",
+   "qid": "Q750291",
+   "fame": 0.434,
+   "country": "Greece",
+   "kind": "coffee",
+   "made_from": "coffee beans",
+   "description": "Greek iced coffee drink",
+   "hook": "is a cold, foamy shaken drink made from instant grounds and served over ice",
+   "known": 0.4
+  },
+  {
+   "label": "Chianti",
+   "qid": "Q750979",
+   "fame": 0.434,
+   "country": "Italy",
+   "kind": "wine",
+   "made_from": "grapes",
+   "description": "Italian controlled and guaranteed designation of origin wine from Tuscany",
+   "hook": "is a dry red table wine known for its distinctive straw-wrapped bottle",
+   "known": 0.8
+  },
+  {
+   "label": "Madeira",
+   "qid": "Q27697",
+   "fame": 0.432,
+   "country": "Portugal",
+   "kind": "wine",
+   "made_from": "grapes",
+   "description": "Portuguese wine",
+   "hook": "is a fortified wine cooked with gentle heat, which lets it stay fresh long after opening",
+   "known": 0.4
+  },
+  {
+   "label": "Calvados",
+   "qid": "Q3268",
+   "fame": 0.43,
+   "country": "France",
+   "kind": "spirit",
+   "made_from": "apples",
+   "description": "French apple brandy",
+   "hook": "is a spirit distilled from fermented cider and aged in oak casks",
+   "known": 0.2
+  },
+  {
+   "label": "Makgeolli",
+   "qid": "Q696911",
+   "fame": 0.43,
+   "country": "South Korea",
+   "kind": "other",
+   "made_from": "rice",
+   "description": "Korean raw rice wine",
+   "hook": "is a milky, lightly fizzy fermented grain drink with a slightly sweet tang",
+   "known": 0.2
+  },
+  {
+   "label": "Burgundy",
+   "qid": "Q1016093",
+   "fame": 0.43,
+   "country": "France",
+   "kind": "wine",
+   "made_from": "grapes",
+   "description": "wine made in the Burgundy region in eastern France",
+   "hook": "is a red or white wine traditionally made from a single grape variety, rather than blended",
+   "known": 0.6
+  },
+  {
+   "label": "Bordeaux",
+   "qid": "Q168461",
+   "fame": 0.422,
+   "country": "France",
+   "kind": "wine",
+   "made_from": "grapes",
+   "description": "Bordeaux region of southwest France",
+   "hook": "is a red or white wine traditionally blended from several grape varieties grown near a coastal port",
+   "known": 0.6
+  }
+ ]
+}

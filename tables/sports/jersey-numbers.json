@@ -1,0 +1,643 @@
+{
+ "id": "table.sports.jersey-numbers",
+ "kind": "table",
+ "title": "Famous jersey numbers",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "sports-lore",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?num ?teamLabel WHERE { VALUES (?item ?num ?teamLabel) { (wd:Q41421 23 \"Chicago Bulls\") (wd:Q25369 24 \"Los Angeles Lakers\") (wd:Q36159 23 \"Cleveland Cavaliers\") (wd:Q615 10 \"FC Barcelona\") (wd:Q11571 7 \"Portugal national team\") (wd:Q12897 10 \"Brazil national team\") (wd:Q1835 10 \"France national team\") (wd:Q68060 1 \"Juventus\") (wd:Q107365 1 \"Germany national team\") (wd:Q17507 3 \"FC Barcelona\") (wd:Q48892 11 \"Chelsea\") (wd:Q624 10 \"Juventus\") (wd:Q179051 33 \"Los Angeles Lakers\") (wd:Q10524 11 \"Manchester United\") (wd:Q43926 21 \"Juventus\") (wd:Q169452 34 \"Los Angeles Lakers\") (wd:Q134183 32 \"Los Angeles Lakers\") (wd:Q49704 5 \"FC Barcelona\") (wd:Q483027 3 \"AC Milan\") (wd:Q190152 33 \"Boston Celtics\") (wd:Q29545 35 \"Oklahoma City Thunder\") (wd:Q182455 13 \"Philadelphia 76ers\") (wd:Q189892 10 \"Galatasaray\") (wd:Q242185 6 \"Boston Celtics\") (wd:Q192707 34 \"Phoenix Suns\") (wd:Q193020 21 \"San Antonio Spurs\") (wd:Q8991894 34 \"Milwaukee Bucks\") (wd:Q44068 41 \"Dallas Mavericks\") (wd:Q273256 34 \"Houston Rockets\") (wd:Q199896 32 \"Utah Jazz\") (wd:Q190094 3 \"Philadelphia 76ers\") (wd:Q313381 12 \"New England Patriots\") (wd:Q19844712 77 \"Dallas Mavericks\") (wd:Q205326 1 \"Chicago Bulls\") (wd:Q46040 3 \"Los Angeles Clippers\") (wd:Q193637 33 \"Chicago Bulls\") (wd:Q196185 0 \"Oklahoma City Thunder\") (wd:Q311195 44 \"Los Angeles Lakers\") (wd:Q136678 13 \"Houston Rockets\") (wd:Q192955 13 \"Phoenix Suns\") (wd:Q209921 6 \"Philadelphia 76ers\") (wd:Q926248 2 \"Toronto Raptors\") (wd:Q312643 14 \"Boston Celtics\") (wd:Q270966 31 \"Indiana Pacers\") (wd:Q211876 50 \"San Antonio Spurs\") (wd:Q295345 68 \"Pittsburgh Penguins\") (wd:Q357458 22 \"Los Angeles Lakers\") (wd:Q298512 11 \"Detroit Pistons\") (wd:Q298531 1 \"Detroit Pistons\") (wd:Q193052 16 \"Los Angeles Lakers\") (wd:Q16902219 8 \"Arsenal\") (wd:Q171295 11 \"Juventus\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T04:26:56.223Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T04:26:56.223Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "team",
+   "label": "Team",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "number",
+   "label": "Jersey number",
+   "unit": null,
+   "type": "number"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "athlete",
+  "many": "athletes",
+  "wildcard": "person",
+  "hookAsk": "Which athlete {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "team": {
+    "role": "link",
+    "pick": "Which team is {label} best known for playing for, wearing number {number}?",
+    "statement": "{label} is best known for wearing number {number} for {value}.",
+    "match": "Match each athlete to the team they wore their famous number for."
+   },
+   "number": {
+    "role": "link",
+    "pick": "Which jersey number is {label} famous for wearing at {team}?",
+    "statement": "{label} is famous for wearing number {value} at {team}.",
+    "match": "Match each athlete to their famous jersey number."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Cristiano Ronaldo",
+   "qid": "Q11571",
+   "fame": 0.861,
+   "team": "Portugal national team",
+   "number": 7,
+   "description": "Portuguese association football player (born 1985)",
+   "hook": "is a prolific goal-scoring forward famed for his leaping headers and a signature celebration",
+   "known": 0.95,
+   "kind": "soccer"
+  },
+  {
+   "label": "Lionel Messi",
+   "qid": "Q615",
+   "fame": 0.832,
+   "team": "FC Barcelona",
+   "number": 10,
+   "description": "Argentine association football player (born 1987)",
+   "hook": "is a dribbling wizard from Rosario who has won the Ballon d'Or a record number of times",
+   "known": 0.95,
+   "kind": "soccer"
+  },
+  {
+   "label": "Tom Brady",
+   "qid": "Q313381",
+   "fame": 0.778,
+   "team": "New England Patriots",
+   "number": 12,
+   "description": "American football player (born 1977)",
+   "hook": "is a quarterback who won a record seven Super Bowl titles",
+   "known": 0.8,
+   "kind": "american football"
+  },
+  {
+   "label": "LeBron James",
+   "qid": "Q36159",
+   "fame": 0.77,
+   "team": "Cleveland Cavaliers",
+   "number": 23,
+   "description": "American basketball player (born 1984)",
+   "hook": "is a forward who has become the all-time leading scorer in the league and won titles with three franchises",
+   "known": 0.95,
+   "kind": "basketball"
+  },
+  {
+   "label": "Michael Jordan",
+   "qid": "Q41421",
+   "fame": 0.76,
+   "team": "Chicago Bulls",
+   "number": 23,
+   "description": "American basketball player and businessman (born 1963)",
+   "hook": "is a six-time champion guard famous for his airborne dunks and a baseball detour",
+   "known": 0.95,
+   "kind": "basketball"
+  },
+  {
+   "label": "Shaquille O'Neal",
+   "qid": "Q169452",
+   "fame": 0.746,
+   "team": "Los Angeles Lakers",
+   "number": 34,
+   "description": "American basketball player (born 1972)",
+   "hook": "is a dominant seven-foot center who starred in movies and rapped as well as won three straight titles",
+   "known": 0.8,
+   "kind": "basketball"
+  },
+  {
+   "label": "Kawhi Leonard",
+   "qid": "Q926248",
+   "fame": 0.742,
+   "team": "Toronto Raptors",
+   "number": 2,
+   "description": "American basketball player (born 1991)",
+   "hook": "is a quiet two-way forward famous for a series-winning buzzer-beater that bounced four times on the rim",
+   "known": 0.6,
+   "kind": "basketball"
+  },
+  {
+   "label": "Kobe Bryant",
+   "qid": "Q25369",
+   "fame": 0.723,
+   "team": "Los Angeles Lakers",
+   "number": 24,
+   "description": "American basketball player (1978–2020)",
+   "hook": "was a five-time champion guard nicknamed the Black Mamba who scored 81 points in a single game",
+   "known": 0.95,
+   "kind": "basketball"
+  },
+  {
+   "label": "Zinedine Zidane",
+   "qid": "Q1835",
+   "fame": 0.718,
+   "team": "France national team",
+   "number": 10,
+   "description": "French association football player and coach",
+   "hook": "is a playmaker remembered for a World Cup final headbutt and a stunning volley in a Champions League final",
+   "known": 0.6,
+   "kind": "soccer"
+  },
+  {
+   "label": "Magic Johnson",
+   "qid": "Q134183",
+   "fame": 0.67,
+   "team": "Los Angeles Lakers",
+   "number": 32,
+   "description": "American basketball player and entrepreneur (born 1959)",
+   "hook": "is a tall point guard known for no-look passes, a smile, and an announcement that he was HIV positive",
+   "known": 0.8,
+   "kind": "basketball"
+  },
+  {
+   "label": "Pelé",
+   "qid": "Q12897",
+   "fame": 0.67,
+   "team": "Brazil national team",
+   "number": 10,
+   "description": "Brazilian footballer (1940–2022)",
+   "hook": "is a three-time World Cup winner often named the greatest footballer ever",
+   "known": 0.8,
+   "kind": "soccer"
+  },
+  {
+   "label": "Kevin Durant",
+   "qid": "Q29545",
+   "fame": 0.666,
+   "team": "Oklahoma City Thunder",
+   "number": 35,
+   "description": "American basketball player (born 1988)",
+   "hook": "is a lanky scoring forward who won two titles in a row and Finals MVP awards after joining a superteam",
+   "known": 0.8,
+   "kind": "basketball"
+  },
+  {
+   "label": "Martin Ødegaard",
+   "qid": "Q16902219",
+   "fame": 0.663,
+   "team": "Arsenal",
+   "number": 8,
+   "description": "Norwegian footballer (born 1998)",
+   "hook": "is a creative midfield captain who was a teenage prodigy signed by Real Madrid",
+   "known": 0.2,
+   "kind": "soccer"
+  },
+  {
+   "label": "Kareem Abdul-Jabbar",
+   "qid": "Q179051",
+   "fame": 0.657,
+   "team": "Los Angeles Lakers",
+   "number": 33,
+   "description": "American basketball player (born 1947)",
+   "hook": "is the master of the sky hook shot and a six-time MVP who also acted in a classic comedy",
+   "known": 0.8,
+   "kind": "basketball"
+  },
+  {
+   "label": "Giannis Antetokounmpo",
+   "qid": "Q8991894",
+   "fame": 0.648,
+   "team": "Milwaukee Bucks",
+   "number": 34,
+   "description": "Nigerian-Greek basketball player (born 1994)",
+   "hook": "is a forward nicknamed the Greek Freak who won both MVP and Finals MVP honors",
+   "known": 0.6,
+   "kind": "basketball"
+  },
+  {
+   "label": "Larry Bird",
+   "qid": "Q190152",
+   "fame": 0.643,
+   "team": "Boston Celtics",
+   "number": 33,
+   "description": "American basketball player and coach (born 1956)",
+   "hook": "is a sharpshooting forward from French Lick who won three straight MVP awards and was known for trash talk",
+   "known": 0.8,
+   "kind": "basketball"
+  },
+  {
+   "label": "Wilt Chamberlain",
+   "qid": "Q182455",
+   "fame": 0.638,
+   "team": "Philadelphia 76ers",
+   "number": 13,
+   "description": "American basketball player (1936–1999)",
+   "hook": "is the only player to score 100 points in an NBA game and averaged over 50 in a season",
+   "known": 0.8,
+   "kind": "basketball"
+  },
+  {
+   "label": "Allen Iverson",
+   "qid": "Q190094",
+   "fame": 0.634,
+   "team": "Philadelphia 76ers",
+   "number": 3,
+   "description": "American basketball player (born 1975)",
+   "hook": "is a small, tattooed guard nicknamed The Answer, famed for a crossover and a practice rant",
+   "known": 0.6,
+   "kind": "basketball"
+  },
+  {
+   "label": "Gerard Piqué",
+   "qid": "Q17507",
+   "fame": 0.627,
+   "team": "FC Barcelona",
+   "number": 3,
+   "description": "Spanish association football player (born 1987)",
+   "hook": "is a tall defender who won the World Cup and was once married to a Colombian pop star",
+   "known": 0.4,
+   "kind": "soccer"
+  },
+  {
+   "label": "Charles Barkley",
+   "qid": "Q192707",
+   "fame": 0.619,
+   "team": "Phoenix Suns",
+   "number": 34,
+   "description": "American basketball player (born 1963)",
+   "hook": "is a stocky forward nicknamed the Round Mound of Rebound who famously said he was not a role model",
+   "known": 0.6,
+   "kind": "basketball"
+  },
+  {
+   "label": "Karl Malone",
+   "qid": "Q199896",
+   "fame": 0.619,
+   "team": "Utah Jazz",
+   "number": 32,
+   "description": "American basketball player (born 1963)",
+   "hook": "is a bruising power forward nicknamed The Mailman, an all-time top scorer who never won a title",
+   "known": 0.6,
+   "kind": "basketball"
+  },
+  {
+   "label": "Didier Drogba",
+   "qid": "Q48892",
+   "fame": 0.618,
+   "team": "Chelsea",
+   "number": 11,
+   "description": "Ivorian and French association football player",
+   "hook": "is a powerful striker who scored a late equalizer and the winning penalty in a Champions League final",
+   "known": 0.6,
+   "kind": "soccer"
+  },
+  {
+   "label": "Ryan Giggs",
+   "qid": "Q10524",
+   "fame": 0.612,
+   "team": "Manchester United",
+   "number": 11,
+   "description": "Welsh association football player and coach",
+   "hook": "is a flying winger who won an astonishing number of Premier League titles over a very long career",
+   "known": 0.6,
+   "kind": "soccer"
+  },
+  {
+   "label": "Manuel Neuer",
+   "qid": "Q107365",
+   "fame": 0.611,
+   "team": "Germany national team",
+   "number": 1,
+   "description": "German association football player (born 1986)",
+   "hook": "is a goalkeeper who redefined the position as a sweeper-keeper and won the World Cup",
+   "known": 0.6,
+   "kind": "soccer"
+  },
+  {
+   "label": "Paolo Maldini",
+   "qid": "Q483027",
+   "fame": 0.61,
+   "team": "AC Milan",
+   "number": 3,
+   "description": "Italian association football player (born 1968)",
+   "hook": "is an elegant one-club defender and captain who won multiple Champions League titles",
+   "known": 0.6,
+   "kind": "soccer"
+  },
+  {
+   "label": "Russell Westbrook",
+   "qid": "Q196185",
+   "fame": 0.609,
+   "team": "Oklahoma City Thunder",
+   "number": 0,
+   "description": "American basketball player (born 1988)",
+   "hook": "is an explosive point guard who averaged a triple-double for an entire season, more than once",
+   "known": 0.6,
+   "kind": "basketball"
+  },
+  {
+   "label": "Luka Dončić",
+   "qid": "Q19844712",
+   "fame": 0.607,
+   "team": "Dallas Mavericks",
+   "number": 77,
+   "description": "Slovenian basketball player (born 1999)",
+   "hook": "is a young European guard who stars in the NBA with triple-double stat lines and step-back threes",
+   "known": 0.4,
+   "kind": "basketball"
+  },
+  {
+   "label": "Derrick Rose",
+   "qid": "Q205326",
+   "fame": 0.597,
+   "team": "Chicago Bulls",
+   "number": 1,
+   "description": "American basketball player (born 1988)",
+   "hook": "became the youngest MVP in league history as a hometown point guard before injuries struck",
+   "known": 0.4,
+   "kind": "basketball"
+  },
+  {
+   "label": "Dirk Nowitzki",
+   "qid": "Q44068",
+   "fame": 0.591,
+   "team": "Dallas Mavericks",
+   "number": 41,
+   "description": "German basketball player (born 1978)",
+   "hook": "is a seven-foot shooter famed for a one-legged fadeaway jumper and a title run as the Finals MVP",
+   "known": 0.8,
+   "kind": "basketball"
+  },
+  {
+   "label": "Gianluigi Buffon",
+   "qid": "Q68060",
+   "fame": 0.59,
+   "team": "Juventus",
+   "number": 1,
+   "description": "former Italian footballer (born 1978)",
+   "hook": "is a legendary goalkeeper who lifted the World Cup and stayed at the top into his forties",
+   "known": 0.6,
+   "kind": "soccer"
+  },
+  {
+   "label": "Chris Paul",
+   "qid": "Q46040",
+   "fame": 0.589,
+   "team": "Los Angeles Clippers",
+   "number": 3,
+   "description": "American basketball player (born 1985)",
+   "hook": "is a point guard nicknamed CP3 who is among the all-time leaders in assists and steals",
+   "known": 0.4,
+   "kind": "basketball"
+  },
+  {
+   "label": "Scottie Pippen",
+   "qid": "Q193637",
+   "fame": 0.589,
+   "team": "Chicago Bulls",
+   "number": 33,
+   "description": "American basketball player (born 1965)",
+   "hook": "is a versatile forward who was the key sidekick on six championship teams of the 1990s",
+   "known": 0.8,
+   "kind": "basketball"
+  },
+  {
+   "label": "Hakeem Olajuwon",
+   "qid": "Q273256",
+   "fame": 0.587,
+   "team": "Houston Rockets",
+   "number": 34,
+   "description": "Nigerian-American basketball player",
+   "hook": "is a center famed for the Dream Shake footwork who won back-to-back titles in the mid-1990s",
+   "known": 0.8,
+   "kind": "basketball"
+  },
+  {
+   "label": "James Harden",
+   "qid": "Q136678",
+   "fame": 0.587,
+   "team": "Houston Rockets",
+   "number": 13,
+   "description": "American basketball player (born 1989)",
+   "hook": "is a bearded guard known for step-back threes and a league scoring title and MVP award",
+   "known": 0.6,
+   "kind": "basketball"
+  },
+  {
+   "label": "Steve Nash",
+   "qid": "Q192955",
+   "fame": 0.58,
+   "team": "Phoenix Suns",
+   "number": 13,
+   "description": "Canadian basketball player and coach",
+   "hook": "is a two-time MVP point guard famed for his flowing hair, passing and a run-and-gun offense",
+   "known": 0.4,
+   "kind": "basketball"
+  },
+  {
+   "label": "Bill Russell",
+   "qid": "Q242185",
+   "fame": 0.579,
+   "team": "Boston Celtics",
+   "number": 6,
+   "description": "American basketball player (1934–2022)",
+   "hook": "is a defensive center who won eleven championships in thirteen seasons",
+   "known": 0.8,
+   "kind": "basketball"
+  },
+  {
+   "label": "Tim Duncan",
+   "qid": "Q193020",
+   "fame": 0.579,
+   "team": "San Antonio Spurs",
+   "number": 21,
+   "description": "American basketball player (born 1976)",
+   "hook": "is a quiet big man nicknamed The Big Fundamental who won five championships",
+   "known": 0.8,
+   "kind": "basketball"
+  },
+  {
+   "label": "Alessandro Del Piero",
+   "qid": "Q624",
+   "fame": 0.566,
+   "team": "Juventus",
+   "number": 10,
+   "description": "Italian association football player",
+   "hook": "is a one-club striker and captain famed for a curling shot into the far corner nicknamed after him",
+   "known": 0.4,
+   "kind": "soccer"
+  },
+  {
+   "label": "Andrea Pirlo",
+   "qid": "Q43926",
+   "fame": 0.56,
+   "team": "Juventus",
+   "number": 21,
+   "description": "Italian association football player and manager",
+   "hook": "is a bearded deep-lying playmaker known for pinpoint long passes and a cheeky chipped penalty",
+   "known": 0.4,
+   "kind": "soccer"
+  },
+  {
+   "label": "Sergio Busquets",
+   "qid": "Q49704",
+   "fame": 0.556,
+   "team": "FC Barcelona",
+   "number": 5,
+   "description": "Spanish association football player (born 1988)",
+   "hook": "is a lanky defensive midfielder who anchored a golden era of tiki-taka and won the World Cup",
+   "known": 0.4,
+   "kind": "soccer"
+  },
+  {
+   "label": "Julius Erving",
+   "qid": "Q209921",
+   "fame": 0.547,
+   "team": "Philadelphia 76ers",
+   "number": 6,
+   "description": "American basketball player (born 1950)",
+   "hook": "is a high-flying forward nicknamed Dr. J whose free-throw-line dunk thrilled fans",
+   "known": 0.2,
+   "kind": "basketball"
+  },
+  {
+   "label": "Isiah Thomas",
+   "qid": "Q298512",
+   "fame": 0.544,
+   "team": "Detroit Pistons",
+   "number": 11,
+   "description": "American basketball player, coach, executive",
+   "hook": "is a small guard who led the Bad Boys to back-to-back titles and was a Finals MVP",
+   "known": 0.2,
+   "kind": "basketball"
+  },
+  {
+   "label": "Gheorghe Hagi",
+   "qid": "Q189892",
+   "fame": 0.543,
+   "team": "Galatasaray",
+   "number": 10,
+   "description": "Romanian association football player and manager (born 1965)",
+   "hook": "is a left-footed playmaker nicknamed the Maradona of the Carpathians",
+   "known": 0.2,
+   "kind": "soccer"
+  },
+  {
+   "label": "Jerry West",
+   "qid": "Q311195",
+   "fame": 0.535,
+   "team": "Los Angeles Lakers",
+   "number": 44,
+   "description": "American basketball player and executive (1938-2024)",
+   "hook": "is the guard whose silhouette is said to appear on the league's logo",
+   "known": 0.6,
+   "kind": "basketball"
+  },
+  {
+   "label": "Pau Gasol",
+   "qid": "Q193052",
+   "fame": 0.534,
+   "team": "Los Angeles Lakers",
+   "number": 16,
+   "description": "Spanish basketball player (born 1980)",
+   "hook": "is a tall, skilled big man who won two titles alongside Kobe and is the older brother of an NBA center",
+   "known": 0.4,
+   "kind": "basketball"
+  },
+  {
+   "label": "Pavel Nedvěd",
+   "qid": "Q171295",
+   "fame": 0.52,
+   "team": "Juventus",
+   "number": 11,
+   "description": "Czech association football player",
+   "hook": "was a tireless midfielder with long blond hair who won the Ballon d'Or and was nicknamed the Furia Ceca",
+   "known": 0.2,
+   "kind": "soccer"
+  },
+  {
+   "label": "David Robinson",
+   "qid": "Q211876",
+   "fame": 0.515,
+   "team": "San Antonio Spurs",
+   "number": 50,
+   "description": "American basketball player (born 1965)",
+   "hook": "is a naval academy graduate nicknamed The Admiral who won two titles as a center",
+   "known": 0.4,
+   "kind": "basketball"
+  },
+  {
+   "label": "Jaromír Jágr",
+   "qid": "Q295345",
+   "fame": 0.511,
+   "team": "Pittsburgh Penguins",
+   "number": 68,
+   "description": "Czech ice hockey winger",
+   "hook": "is a hockey legend with a flowing mullet who is among the top career point scorers",
+   "known": 0.4,
+   "kind": "ice hockey"
+  },
+  {
+   "label": "Reggie Miller",
+   "qid": "Q270966",
+   "fame": 0.508,
+   "team": "Indiana Pacers",
+   "number": 31,
+   "description": "American basketball player (born 1965)",
+   "hook": "is a sharpshooter famed for scoring eight points in nine seconds against the Knicks",
+   "known": 0.4,
+   "kind": "basketball"
+  },
+  {
+   "label": "Chauncey Billups",
+   "qid": "Q298531",
+   "fame": 0.506,
+   "team": "Detroit Pistons",
+   "number": 1,
+   "description": "American basketball player and coach",
+   "hook": "is a guard nicknamed Mr. Big Shot who was named Finals MVP on a title team in the 2000s",
+   "known": 0.2,
+   "kind": "basketball"
+  },
+  {
+   "label": "Bob Cousy",
+   "qid": "Q312643",
+   "fame": 0.503,
+   "team": "Boston Celtics",
+   "number": 14,
+   "description": "American basketball player and coach (born 1928)",
+   "hook": "is a flashy ball-handling guard called the Houdini of the Hardwood who won six championships",
+   "known": 0.2,
+   "kind": "basketball"
+  },
+  {
+   "label": "Elgin Baylor",
+   "qid": "Q357458",
+   "fame": 0.47,
+   "team": "Los Angeles Lakers",
+   "number": 22,
+   "description": "American basketball player, coach, and executive (1934–2021)",
+   "hook": "was an acrobatic forward who helped pioneer above-the-rim play and never won a title",
+   "known": 0.2,
+   "kind": "basketball"
+  }
+ ]
+}

@@ -1,0 +1,225 @@
+{
+ "id": "table.myth-and-legend.arthurian-legend",
+ "kind": "table",
+ "title": "King Arthur's legend",
+ "genre": "society",
+ "category": "myth-and-legend",
+ "topic": "mythology",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?role WHERE { VALUES (?item ?role) { (wd:Q45792 \"the legendary king of Britain who gathered the knights\") (wd:Q272054 \"the king's queen, who loved his best knight\") (wd:Q215681 \"the greatest knight, whose love for the queen broke the kingdom\") (wd:Q188044 \"the wizard who advised the king and arranged his birth\") (wd:Q187880 \"the king's magical sword\") (wd:Q220437 \"the king's castle and court\") (wd:Q162808 \"the sacred cup the knights set out to find\") (wd:Q381981 \"the circular seat of equals where the knights gathered\") (wd:Q81109 \"the traitor who rebelled against the king and gave him his last wound\") (wd:Q321305 \"the king's sorceress half-sister\") (wd:Q831685 \"the king's nephew who accepted a beheading challenge\") (wd:Q831462 \"the pure knight, son of Lancelot, who achieved the sacred quest\") (wd:Q728510 \"the naive young knight who first saw the wounded king's castle\") (wd:Q954012 \"the knight who loved a princess from Ireland\") (wd:Q572381 \"the Irish princess loved by a knight and promised to a king\") (wd:Q854036 \"the mysterious woman who gave the king his sword\") (wd:Q657200 \"the king's father, a ruler of Britain\") (wd:Q216901 \"the misty island where the king was taken to heal\") (wd:Q1052725 \"the king's foster brother and steward\") (wd:Q202529 \"the knight who threw the sword back into the water\") (wd:Q1611229 \"the giant who offered a beheading game at court\") (wd:Q10336945 \"the enchantress who trapped the wizard\") (wd:Q1420120 \"the wounded keeper of the sacred cup\") (wd:Q675705 \"the king's mother\") (wd:Q369139 \"the king's half-sister, mother of Mordred and Gawain\") (wd:Q508541 \"the lost land of a knight, said to be sunk beneath the sea\") (wd:Q1538364 \"the duke whose wife was desired by the king's father\") (wd:Q971238 \"the knight who raised the future king as his own\") (wd:Q2984446 \"the maiden who died of love for Lancelot\") (wd:Q1205690 \"the king who chased a barking monster\") (wd:Q1529836 \"the barking monster a knight pursued forever\") (wd:Q748777 \"the Cornish village where legend places the king's birth\") (wd:Q1412726 \"the Somerset hill linked with the misty island\") (wd:Q1157373 \"the king's fool, knighted as a jest\") (wd:Q3173860 \"the dangerous seat reserved for the knight who would find the sacred cup\") (wd:Q894176 \"a loyal knight who shared the quest for the sacred cup\") (wd:Q1462742 \"the aging king who was wed to the Irish princess\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T03:11:08.801Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T03:11:08.801Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "role",
+   "label": "Who or what it is",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "figure from King Arthur's legend",
+  "many": "figures from King Arthur's legend",
+  "theLabels": [
+   "Holy Grail",
+   "Lady of the Lake",
+   "Fisher King",
+   "Glastonbury Tor"
+  ],
+  "hookAsk": "Which part of King Arthur's legend {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "role": {
+    "role": "code",
+    "pick": "In the legend of King Arthur, what is {label}?",
+    "statement": "In the legend of King Arthur, {label} is {value}.",
+    "match": "Match each name from King Arthur's legend to who or what it is.",
+    "reverse": "In the legend of King Arthur, which name is {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "King Arthur",
+   "qid": "Q45792",
+   "fame": 0.678,
+   "role": "the legendary king of Britain who gathered the knights",
+   "description": "legendary British leader of the late 5th and early 6th centuries",
+   "hook": "is the fabled monarch of medieval romance who sits with his champions around a circular table",
+   "known": 0.95,
+   "kind": "legendary ruler"
+  },
+  {
+   "label": "Merlin",
+   "qid": "Q188044",
+   "fame": 0.628,
+   "role": "the wizard who advised the king and arranged his birth",
+   "description": "legendary British wizard",
+   "hook": "is the legendary prophet and magician of medieval Britain, famed for shaping a famous court",
+   "known": 0.95,
+   "kind": "wizard"
+  },
+  {
+   "label": "Morgan le Fay",
+   "qid": "Q321305",
+   "fame": 0.598,
+   "role": "the king's sorceress half-sister",
+   "description": "enchantress in Arthurian legend",
+   "hook": "is a powerful enchantress of Arthurian tales, often cast as a scheming rival to her own brother",
+   "known": 0.8,
+   "kind": "sorceress"
+  },
+  {
+   "label": "Lady of the Lake",
+   "qid": "Q854036",
+   "fame": 0.594,
+   "role": "the mysterious woman who gave the king his sword",
+   "description": "ruler of Avalon in the Arthurian legend",
+   "hook": "is the enchantress of legend who hands a famous blade to a young hero from beneath the water",
+   "known": 0.6,
+   "kind": "mystical figure"
+  },
+  {
+   "label": "Excalibur",
+   "qid": "Q187880",
+   "fame": 0.557,
+   "role": "the king's magical sword",
+   "description": "legendary sword of King Arthur",
+   "hook": "is the legendary blade of Britain's mythic ruler, tied to a stone-pulling tale and a watery giver",
+   "known": 0.95,
+   "kind": "legendary weapon"
+  },
+  {
+   "label": "Uther Pendragon",
+   "qid": "Q657200",
+   "fame": 0.552,
+   "role": "the king's father, a ruler of Britain",
+   "description": "father of King Arthur in Arthurian legend",
+   "hook": "is the fabled monarch who fathered a famous hero after Merlin disguised him as a rival",
+   "known": 0.4,
+   "kind": "legendary ruler"
+  },
+  {
+   "label": "Avalon",
+   "qid": "Q216901",
+   "fame": 0.548,
+   "role": "the misty island where the king was taken to heal",
+   "description": "legendary island featured in the Arthurian legend",
+   "hook": "is the legendary isle where a wounded monarch was carried after his last battle",
+   "known": 0.8,
+   "kind": "legendary place"
+  },
+  {
+   "label": "Holy Grail",
+   "qid": "Q162808",
+   "fame": 0.544,
+   "role": "the sacred cup the knights set out to find",
+   "description": "cup, dish or stone with miraculous powers, important motif in Arthurian literature",
+   "hook": "is the treasured vessel that Round Table champions spend years seeking in medieval romance",
+   "known": 0.95,
+   "kind": "legendary artifact"
+  },
+  {
+   "label": "Lancelot",
+   "qid": "Q215681",
+   "fame": 0.537,
+   "role": "the greatest knight, whose love for the queen broke the kingdom",
+   "description": "Arthurian character",
+   "hook": "is the celebrated Round Table champion who had a secret affair with his monarch's wife",
+   "known": 0.95,
+   "kind": "legendary knight"
+  },
+  {
+   "label": "Guinevere",
+   "qid": "Q272054",
+   "fame": 0.533,
+   "role": "the king's queen, who loved his best knight",
+   "description": "character in Arthurian legend",
+   "hook": "is the legendary wife of Britain's mythic monarch whose romance helped bring down his realm",
+   "known": 0.95,
+   "kind": "legendary ruler"
+  },
+  {
+   "label": "Mordred",
+   "qid": "Q81109",
+   "fame": 0.526,
+   "role": "the traitor who rebelled against the king and gave him his last wound",
+   "description": "character in Arthurian legend",
+   "hook": "is the treacherous knight who turned on his own uncle at the final battle of the legend",
+   "known": 0.6,
+   "kind": "legendary ruler"
+  },
+  {
+   "label": "Camelot",
+   "qid": "Q220437",
+   "fame": 0.509,
+   "role": "the king's castle and court",
+   "description": "mythical castle and court associated with King Arthur",
+   "hook": "is the fabled seat of a legendary British monarch, a symbol of chivalry with a Round Table",
+   "known": 0.95,
+   "kind": "legendary place"
+  },
+  {
+   "label": "Fisher King",
+   "qid": "Q1420120",
+   "fame": 0.508,
+   "role": "the wounded keeper of the sacred cup",
+   "description": "Keeper of the Holy Grail in Arthurian legend",
+   "hook": null,
+   "known": 0.2,
+   "kind": "mystical figure"
+  },
+  {
+   "label": "Galahad",
+   "qid": "Q831462",
+   "fame": 0.494,
+   "role": "the pure knight, son of Lancelot, who achieved the sacred quest",
+   "description": "knight of the round table",
+   "hook": "is the spotless teenage Round Table champion who succeeds where all the others fail",
+   "known": 0.6,
+   "kind": "legendary knight"
+  },
+  {
+   "label": "Gawain",
+   "qid": "Q831685",
+   "fame": 0.486,
+   "role": "the king's nephew who accepted a beheading challenge",
+   "description": "knight in Arthurian legends",
+   "hook": "is the Round Table knight who faces a mysterious green challenger in a famous Middle English poem",
+   "known": 0.8,
+   "kind": "legendary knight"
+  },
+  {
+   "label": "Glastonbury Tor",
+   "qid": "Q1412726",
+   "fame": 0.455,
+   "role": "the Somerset hill linked with the misty island",
+   "description": "hill in Glastonbury, Somerset, England",
+   "hook": "is the steep conical landmark crowned by a ruined church tower, tied by tradition to Avalon",
+   "known": 0.4,
+   "kind": "legendary place"
+  }
+ ]
+}

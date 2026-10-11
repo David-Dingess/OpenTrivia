@@ -1,0 +1,1971 @@
+{
+ "id": "table.film-and-tv.directors-countries",
+ "kind": "table",
+ "title": "Famous film directors and their country",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "directors",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) (COUNT(DISTINCT ?f2) AS ?nF) WHERE { ?item wdt:P31 wd:Q5 ; wdt:P106 wd:Q2526255 ; wdt:P27 ?c ; wikibase:sitelinks ?sl . FILTER(?sl >= 40) ?f2 wdt:P57 ?item . ?f2 wikibase:sitelinks ?fs2 . FILTER(?fs2 >= 20) FILTER NOT EXISTS { ?item wdt:P570 ?dod . FILTER(YEAR(?dod) < 1930) } FILTER(?item NOT IN (wd:Q51552, wd:Q25089, wd:Q42229, wd:Q220751, wd:Q298025)) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) FILTER(?nF >= 3) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T06:17:02.569Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T06:17:02.569Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "director",
+  "many": "directors",
+  "wildcard": "person",
+  "hookAsk": "Which director {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} from?",
+    "statement": "{label} is from {value}.",
+    "match": "Match each director to their country.",
+    "odd": "Three of these directors are from {value}. Which one isn't?",
+    "all": "Tap all {n} directors from {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Guy Ritchie",
+   "qid": "Q192990",
+   "fame": 0.844,
+   "country": "United Kingdom",
+   "description": "English filmmaker (born 1968)",
+   "hook": "made slick crime capers about fast-talking gangsters and directed a modern Sherlock Holmes",
+   "known": 0.4,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "Warren Beatty",
+   "qid": "Q95030",
+   "fame": 0.841,
+   "country": "United States",
+   "description": "American actor and filmmaker",
+   "hook": "starred in and directed a film about a comic-strip detective, and once opened the wrong Oscars envelope",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Sylvester Stallone",
+   "qid": "Q40026",
+   "fame": 0.819,
+   "country": "United States",
+   "description": "American actor and filmmaker (born 1946)",
+   "hook": "wrote and starred as an underdog boxer who runs up the steps of a Philadelphia museum",
+   "known": 0.8,
+   "kind": "united-states"
+  },
+  {
+   "label": "Clint Eastwood",
+   "qid": "Q43203",
+   "fame": 0.805,
+   "country": "United States",
+   "description": "American actor and film director (born 1930)",
+   "hook": "played a squinting gunslinger called the Man with No Name before directing Oscar-winning westerns",
+   "known": 0.95,
+   "kind": "united-states"
+  },
+  {
+   "label": "Kenneth Branagh",
+   "qid": "Q55294",
+   "fame": 0.805,
+   "country": "United Kingdom",
+   "description": "British actor and filmmaker (born 1960)",
+   "hook": "brought many Shakespeare plays to the screen and played the detective Hercule Poirot on film",
+   "known": 0.4,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "Ben Affleck",
+   "qid": "Q483118",
+   "fame": 0.766,
+   "country": "United States",
+   "description": "American film actor, director and screenwriter (born 1972)",
+   "hook": "directed a Boston heist thriller and also played Batman on the big screen",
+   "known": 0.6,
+   "kind": "united-states"
+  },
+  {
+   "label": "Rob Reiner",
+   "qid": "Q287607",
+   "fame": 0.755,
+   "country": "United States",
+   "description": "American filmmaker and actor (1947–2025)",
+   "hook": "directed a mockumentary about a loud heavy-metal band whose amplifiers go up to eleven",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Steven Spielberg",
+   "qid": "Q8877",
+   "fame": 0.755,
+   "country": "United States",
+   "description": "American filmmaker (born 1946)",
+   "hook": "directed a shark thriller, a dinosaur theme-park adventure and a story of a friendly alien stranded on Earth",
+   "known": 0.95,
+   "kind": "united-states"
+  },
+  {
+   "label": "George Lucas",
+   "qid": "Q38222",
+   "fame": 0.752,
+   "country": "United States",
+   "description": "American filmmaker and philanthropist (born 1944)",
+   "hook": "created a space saga about Jedi knights, a farm boy named Luke and a villain in a black helmet",
+   "known": 0.95,
+   "kind": "united-states"
+  },
+  {
+   "label": "Danny DeVito",
+   "qid": "Q26806",
+   "fame": 0.744,
+   "country": "United States",
+   "description": "American actor, comedian, director and producer (born 1944)",
+   "hook": "played a cranky taxi dispatcher on a sitcom and the scheming Penguin in a Batman film",
+   "known": 0.6,
+   "kind": "united-states"
+  },
+  {
+   "label": "Seth MacFarlane",
+   "qid": "Q188492",
+   "fame": 0.742,
+   "country": "United States",
+   "description": "American writer, actor, and producer (born 1973)",
+   "hook": "created a cartoon about a bumbling dad and a talking dog, and directed a film about a living teddy bear",
+   "known": 0.6,
+   "kind": "united-states"
+  },
+  {
+   "label": "Ridley Scott",
+   "qid": "Q56005",
+   "fame": 0.74,
+   "country": "United Kingdom",
+   "description": "English filmmaker (born 1937)",
+   "hook": "directed a sci-fi horror with a deadly xenomorph, a gladiator epic and a cyberpunk noir",
+   "known": 0.8,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "Quentin Tarantino",
+   "qid": "Q3772",
+   "fame": 0.739,
+   "country": "United States",
+   "description": "American filmmaker and actor (born 1963)",
+   "hook": "is known for talky, nonlinear crime films such as Pulp Fiction and Reservoir Dogs",
+   "known": 0.8,
+   "kind": "united-states"
+  },
+  {
+   "label": "Robert Redford",
+   "qid": "Q59215",
+   "fame": 0.738,
+   "country": "United States",
+   "description": "American actor and director (1936–2025)",
+   "hook": "starred as the Sundance Kid and founded a famous independent film festival in Utah",
+   "known": 0.6,
+   "kind": "united-states"
+  },
+  {
+   "label": "John Krasinski",
+   "qid": "Q313039",
+   "fame": 0.728,
+   "country": "United States",
+   "description": "American actor and filmmaker (born 1979)",
+   "hook": "played Jim on a paper-company sitcom, then directed a horror film where monsters hunt by sound",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Kevin Costner",
+   "qid": "Q11930",
+   "fame": 0.728,
+   "country": "United States",
+   "description": "American actor and filmmaker (born 1955)",
+   "hook": "starred in a baseball fantasy about a cornfield diamond and won an Oscar directing a frontier epic",
+   "known": 0.8,
+   "kind": "united-states"
+  },
+  {
+   "label": "David Lynch",
+   "qid": "Q2071",
+   "fame": 0.727,
+   "country": "United States",
+   "description": "American filmmaker (1946–2025)",
+   "hook": "created a surreal TV mystery that asked who killed Laura Palmer",
+   "known": 0.8,
+   "kind": "united-states"
+  },
+  {
+   "label": "Barbra Streisand",
+   "qid": "Q4636",
+   "fame": 0.721,
+   "country": "United States",
+   "description": "American singer and actress (born 1942)",
+   "hook": "is a legendary singer who starred in Funny Girl and won Oscars for acting and songwriting",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Jodie Foster",
+   "qid": "Q41351",
+   "fame": 0.72,
+   "country": "United States",
+   "description": "American actress and filmmaker (born 1962)",
+   "hook": "played an FBI trainee who trades riddles with a cannibal psychiatrist in a thriller",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "James Gunn",
+   "qid": "Q717015",
+   "fame": 0.716,
+   "country": "United States",
+   "description": "American screenwriter and filmmaker (born 1966)",
+   "hook": "directed a space adventure about a ragtag band of misfits with a talking raccoon and a walking tree",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Mel Brooks",
+   "qid": "Q104266",
+   "fame": 0.716,
+   "country": "United States",
+   "description": "American comedian, filmmaker, and actor (born 1926)",
+   "hook": "spoofed westerns and horror movies with Blazing Saddles and Young Frankenstein",
+   "known": 0.6,
+   "kind": "united-states"
+  },
+  {
+   "label": "Jordan Peele",
+   "qid": "Q3371986",
+   "fame": 0.711,
+   "country": "United States",
+   "description": "American actor, comedian and filmmaker (born 1979)",
+   "hook": "made a hit horror film about a visit to a girlfriend's family and a place called the sunken place",
+   "known": 0.6,
+   "kind": "united-states"
+  },
+  {
+   "label": "Ben Stiller",
+   "qid": "Q47100",
+   "fame": 0.71,
+   "country": "United States",
+   "description": "American actor and comedian (born 1965)",
+   "hook": "directed and starred as a dim male model in a fashion-world comedy",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Francis Ford Coppola",
+   "qid": "Q56094",
+   "fame": 0.708,
+   "country": "United States",
+   "description": "American filmmaker (born 1939)",
+   "hook": "directed a mafia saga about the Corleone family and an offer that can't be refused",
+   "known": 0.95,
+   "kind": "united-states"
+  },
+  {
+   "label": "Ron Howard",
+   "qid": "Q103646",
+   "fame": 0.708,
+   "country": "United States",
+   "description": "American film director, producer, and actor",
+   "hook": "grew up as Opie on a small-town sitcom and went on to direct Apollo 13",
+   "known": 0.8,
+   "kind": "united-states"
+  },
+  {
+   "label": "David Fincher",
+   "qid": "Q184903",
+   "fame": 0.704,
+   "country": "United States",
+   "description": "American film director (born 1962)",
+   "hook": "directed dark, stylish thrillers like Seven and Fight Club",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Tim Burton",
+   "qid": "Q56008",
+   "fame": 0.703,
+   "country": "United States",
+   "description": "American filmmaker and artist (born 1958)",
+   "hook": "makes gothic, quirky films like Edward Scissorhands and Beetlejuice",
+   "known": 0.8,
+   "kind": "united-states"
+  },
+  {
+   "label": "Werner Herzog",
+   "qid": "Q44131",
+   "fame": 0.701,
+   "country": "Germany",
+   "description": "German film director, producer, screenwriter, actor and opera director (born 1942)",
+   "hook": "is famed for intense documentaries and for once eating his own shoe after losing a bet",
+   "known": 0.6,
+   "kind": "germany"
+  },
+  {
+   "label": "Paul Thomas Anderson",
+   "qid": "Q25132",
+   "fame": 0.7,
+   "country": "United States",
+   "description": "American filmmaker (born 1970)",
+   "hook": "directed the oil-tycoon drama with the famous line about drinking your milkshake",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Jon Favreau",
+   "qid": "Q295964",
+   "fame": 0.694,
+   "country": "United States",
+   "description": "American actor and filmmaker (born 1966)",
+   "hook": "directed the first Iron Man film and the holiday comedy about a human raised as an elf",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Elizabeth Banks",
+   "qid": "Q219373",
+   "fame": 0.691,
+   "country": "United States",
+   "description": "American actress and director (born 1974)",
+   "hook": "played Effie Trinket in The Hunger Games and directed Pitch Perfect 2",
+   "known": 0.05,
+   "kind": "united-states"
+  },
+  {
+   "label": "Orson Welles",
+   "qid": "Q24829",
+   "fame": 0.691,
+   "country": "United States",
+   "description": "American actor and filmmaker (1915–1985)",
+   "hook": "made Citizen Kane and panicked radio listeners with a Martians-invade broadcast",
+   "known": 0.8,
+   "kind": "united-states"
+  },
+  {
+   "label": "J. J. Abrams",
+   "qid": "Q188137",
+   "fame": 0.687,
+   "country": "United States",
+   "description": "American filmmaker (born 1966)",
+   "hook": "created the plane-crash island TV series Lost and directed a Star Wars sequel",
+   "known": 0.6,
+   "kind": "united-states"
+  },
+  {
+   "label": "Taika Waititi",
+   "qid": "Q2388576",
+   "fame": 0.686,
+   "country": "New Zealand",
+   "description": "New Zealand filmmaker, actor, and comedian (born 1975)",
+   "hook": "directed a god-of-thunder superhero comedy and voiced a gentle rock creature in it",
+   "known": 0.4,
+   "kind": "new-zealand"
+  },
+  {
+   "label": "Dennis Hopper",
+   "qid": "Q102711",
+   "fame": 0.683,
+   "country": "United States",
+   "description": "American actor and film director (1936–2010)",
+   "hook": "rode motorcycles in a famous counterculture road movie that he also directed",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Mira Nair",
+   "qid": "Q466320",
+   "fame": 0.682,
+   "country": "India",
+   "description": "Indian-American filmmaker (born 1957)",
+   "hook": "directed Monsoon Wedding, a lively film about a Punjabi family wedding in Delhi",
+   "known": 0.2,
+   "kind": "india"
+  },
+  {
+   "label": "Sofia Coppola",
+   "qid": "Q193628",
+   "fame": 0.681,
+   "country": "United States",
+   "description": "American filmmaker (born 1971)",
+   "hook": "directed a dreamy film about two strangers in a Tokyo hotel and won an Oscar for her screenplay",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "John Carpenter",
+   "qid": "Q95008",
+   "fame": 0.676,
+   "country": "United States",
+   "description": "American filmmaker, composer and actor (born 1948)",
+   "hook": "directed the classic slasher film about a masked killer stalking a town on Halloween night",
+   "known": 0.6,
+   "kind": "united-states"
+  },
+  {
+   "label": "Sam Raimi",
+   "qid": "Q275402",
+   "fame": 0.676,
+   "country": "United States",
+   "description": "American filmmaker (born 1959)",
+   "hook": "directed the Spider-Man trilogy starring Tobey Maguire",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Zack Snyder",
+   "qid": "Q139890",
+   "fame": 0.676,
+   "country": "United States",
+   "description": "American filmmaker (born 1966)",
+   "hook": "directed stylized action films about 300 Spartans and the Man of Steel",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Greta Gerwig",
+   "qid": "Q271967",
+   "fame": 0.675,
+   "country": "United States",
+   "description": "American actress and filmmaker (born 1983)",
+   "hook": "directed Lady Bird and a hit movie about a fashion doll",
+   "known": 0.6,
+   "kind": "united-states"
+  },
+  {
+   "label": "Denis Villeneuve",
+   "qid": "Q548823",
+   "fame": 0.674,
+   "country": "Canada",
+   "description": "Canadian film director and screenwriter (born 1967)",
+   "hook": "directed the Dune films and the sequel to Blade Runner",
+   "known": 0.6,
+   "kind": "canada"
+  },
+  {
+   "label": "Wes Anderson",
+   "qid": "Q223687",
+   "fame": 0.673,
+   "country": "United States",
+   "description": "American filmmaker (born 1969)",
+   "hook": "is known for symmetrical, pastel-colored films like The Grand Budapest Hotel",
+   "known": 0.8,
+   "kind": "united-states"
+  },
+  {
+   "label": "Richard Attenborough",
+   "qid": "Q51506",
+   "fame": 0.672,
+   "country": "United Kingdom",
+   "description": "British actor (1923–2014)",
+   "hook": "won Oscars for directing Gandhi and played the founder of a dinosaur park",
+   "known": 0.4,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "Rob Zombie",
+   "qid": "Q298255",
+   "fame": 0.671,
+   "country": "United States",
+   "description": "American rock singer and filmmaker",
+   "hook": "fronted a shock-rock band before directing horror films",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Guillermo del Toro",
+   "qid": "Q219124",
+   "fame": 0.669,
+   "country": "Mexico",
+   "description": "Mexican filmmaker and author (born 1964)",
+   "hook": "directed a fantasy about a girl in a faun's labyrinth and an Oscar-winning fish-man romance",
+   "known": 0.6,
+   "kind": "mexico"
+  },
+  {
+   "label": "Hayao Miyazaki",
+   "qid": "Q55400",
+   "fame": 0.662,
+   "country": "Japan",
+   "description": "Japanese animator, filmmaker, and mangaka (born 1941)",
+   "hook": "co-founded Studio Ghibli and made Spirited Away and My Neighbor Totoro",
+   "known": 0.8,
+   "kind": "japan"
+  },
+  {
+   "label": "Laurence Olivier",
+   "qid": "Q55245",
+   "fame": 0.657,
+   "country": "United Kingdom",
+   "description": "English actor and director (1907–1989)",
+   "hook": "was a legendary stage actor who filmed Hamlet and Henry V and was made a lord",
+   "known": 0.2,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "John Waters",
+   "qid": "Q314926",
+   "fame": 0.654,
+   "country": "United States",
+   "description": "American filmmaker, actor, comedian and writer (born 1946)",
+   "hook": "is the pencil-mustached cult filmmaker behind the musical Hairspray",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Spike Lee",
+   "qid": "Q51566",
+   "fame": 0.654,
+   "country": "United States",
+   "description": "American filmmaker (born 1957)",
+   "hook": "directed Do the Right Thing and is a famous courtside fan of the New York Knicks",
+   "known": 0.6,
+   "kind": "united-states"
+  },
+  {
+   "label": "David Cronenberg",
+   "qid": "Q55422",
+   "fame": 0.646,
+   "country": "Canada",
+   "description": "Canadian filmmaker (born 1943)",
+   "hook": "is the master of body horror behind the film about a scientist who merges with a fly",
+   "known": 0.4,
+   "kind": "canada"
+  },
+  {
+   "label": "Spike Jonze",
+   "qid": "Q259913",
+   "fame": 0.646,
+   "country": "United States",
+   "description": "American filmmaker (born 1969)",
+   "hook": "directed Being John Malkovich and a film about a man who falls for his computer's voice",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Peter Jackson",
+   "qid": "Q4465",
+   "fame": 0.644,
+   "country": "New Zealand",
+   "description": "New Zealand film director, screenwriter, producer and actor (born 1961)",
+   "hook": "brought Middle-earth to the screen with the Lord of the Rings trilogy",
+   "known": 0.8,
+   "kind": "new-zealand"
+  },
+  {
+   "label": "Sam Mendes",
+   "qid": "Q223233",
+   "fame": 0.641,
+   "country": "United Kingdom",
+   "description": "British stage and film director (born 1965)",
+   "hook": "directed the Bond films Skyfall and Spectre, and the suburban drama American Beauty",
+   "known": 0.6,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "Bob Fosse",
+   "qid": "Q313256",
+   "fame": 0.64,
+   "country": "United States",
+   "description": "American choreographer, dancer, and director (1927–1987)",
+   "hook": "choreographed and directed Cabaret and the dance musical All That Jazz",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Farhan Akhtar",
+   "qid": "Q590853",
+   "fame": 0.639,
+   "country": "India",
+   "description": "Indian director and actor",
+   "hook": "directed the Bollywood friends-on-a-Goa-trip film Dil Chahta Hai and played a famous runner onscreen",
+   "known": 0.05,
+   "kind": "india"
+  },
+  {
+   "label": "Trey Parker",
+   "qid": "Q44414",
+   "fame": 0.639,
+   "country": "United States",
+   "description": "American actor, animator and filmmaker (born 1969)",
+   "hook": "co-created a crude cartoon about foul-mouthed kids in a Colorado mountain town",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Brian De Palma",
+   "qid": "Q189526",
+   "fame": 0.638,
+   "country": "United States",
+   "description": "American filmmaker",
+   "hook": "directed the prom-night horror film Carrie and the first Mission: Impossible",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Eli Roth",
+   "qid": "Q358714",
+   "fame": 0.634,
+   "country": "United States",
+   "description": "American filmmaker and actor",
+   "hook": "directed horror films and played the bat-swinging Bear Jew in a World War II caper",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Danny Boyle",
+   "qid": "Q134867",
+   "fame": 0.633,
+   "country": "United Kingdom",
+   "description": "English filmmaker",
+   "hook": "directed Trainspotting and the Oscar-winning Slumdog Millionaire",
+   "known": 0.6,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "Harold Ramis",
+   "qid": "Q286890",
+   "fame": 0.63,
+   "country": "United States",
+   "description": "American actor, comedian, and filmmaker (1944–2014)",
+   "hook": "directed a comedy about a weatherman reliving the same day and played one of the Ghostbusters",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Michael Bay",
+   "qid": "Q59259",
+   "fame": 0.63,
+   "country": "United States",
+   "description": "American film director and producer (born 1965)",
+   "hook": "is known for loud, explosive blockbusters about giant transforming robots",
+   "known": 0.6,
+   "kind": "united-states"
+  },
+  {
+   "label": "Penny Marshall",
+   "qid": "Q237659",
+   "fame": 0.63,
+   "country": "United States",
+   "description": "American actress, director and producer (1943–2018)",
+   "hook": "directed a comedy about a boy who wakes up as an adult and a film about a women's baseball league",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Gene Kelly",
+   "qid": "Q73089",
+   "fame": 0.628,
+   "country": "United States",
+   "description": "American dancer, actor, singer, director and choreographer (1912–1996)",
+   "hook": "danced and sang through puddles in the rain while swinging an umbrella",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Nora Ephron",
+   "qid": "Q214677",
+   "fame": 0.628,
+   "country": "United States",
+   "description": "American film director and writer (1941–2012)",
+   "hook": "directed a romantic comedy about a widower, a radio call-in show and a meeting atop the Empire State Building",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Robert Zemeckis",
+   "qid": "Q187364",
+   "fame": 0.628,
+   "country": "United States",
+   "description": "American screenwriter, film producer and director (born 1952)",
+   "hook": "directed a time-traveling DeLorean adventure and a film mixing cartoon characters with live actors",
+   "known": 0.6,
+   "kind": "united-states"
+  },
+  {
+   "label": "Brad Bird",
+   "qid": "Q310960",
+   "fame": 0.627,
+   "country": "United States",
+   "description": "American film director, animator, screenwriter and producer (born 1957)",
+   "hook": "directed animated films about a rat who loves cooking and a family of superheroes",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Paul Greengrass",
+   "qid": "Q356275",
+   "fame": 0.627,
+   "country": "United Kingdom",
+   "description": "English writer and film director (born 1955)",
+   "hook": "directed shaky-camera action thrillers starring an amnesiac spy named Bourne",
+   "known": 0.4,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "Tony Goldwyn",
+   "qid": "Q224754",
+   "fame": 0.625,
+   "country": "United States",
+   "description": "American actor and director (born 1960)",
+   "hook": "played the scheming best friend in a ghost romance famous for a pottery scene",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Ryan Coogler",
+   "qid": "Q7383978",
+   "fame": 0.623,
+   "country": "United States",
+   "description": "American filmmaker (born 1986)",
+   "hook": "directed a superhero film set in Wakanda and a boxing spin-off about Rocky's protege",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "John Cassavetes",
+   "qid": "Q51488",
+   "fame": 0.622,
+   "country": "United States",
+   "description": "Greek-American actor, film director, and screenwriter (1929–1989)",
+   "hook": "championed improvised independent filmmaking and acted in a horror film about a devil's child",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "John Landis",
+   "qid": "Q51564",
+   "fame": 0.621,
+   "country": "United States",
+   "description": "American film director, screenwriter and producer",
+   "hook": "directed a famous zombie-dance music video and a campus toga-party comedy",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Kevin Smith",
+   "qid": "Q489831",
+   "fame": 0.621,
+   "country": "United States",
+   "description": "American filmmaker (born 1970)",
+   "hook": "made slacker comedies about convenience store clerks and plays the silent sidekick Bob",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Luca Guadagnino",
+   "qid": "Q1335528",
+   "fame": 0.621,
+   "country": "Italy",
+   "description": "Italian filmmaker (born 1971)",
+   "hook": "directed a sun-soaked summer romance famous for a peach scene",
+   "known": 0.05,
+   "kind": "italy"
+  },
+  {
+   "label": "John Hughes",
+   "qid": "Q311263",
+   "fame": 0.619,
+   "country": "United States",
+   "description": "American filmmaker (1950–2009)",
+   "hook": "made teen comedies about Saturday detention and a student skipping school for a day",
+   "known": 0.6,
+   "kind": "united-states"
+  },
+  {
+   "label": "Michael Mann",
+   "qid": "Q270097",
+   "fame": 0.619,
+   "country": "United States",
+   "description": "American film director, screenwriter, and producer (born 1943)",
+   "hook": "directed a crime epic where two famous actors finally meet across a diner table",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Richard Linklater",
+   "qid": "Q40035",
+   "fame": 0.617,
+   "country": "United States",
+   "description": "American director and screenwriter (born 1960)",
+   "hook": "filmed one boy growing up over twelve real years of shooting",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Yorgos Lanthimos",
+   "qid": "Q975410",
+   "fame": 0.616,
+   "country": "Greece",
+   "description": "Greek filmmaker (born 1973)",
+   "hook": "directs darkly comic oddities about a queen's rival favorites and a woman with a transplanted brain",
+   "known": 0.05,
+   "kind": "greece"
+  },
+  {
+   "label": "Robert Rodriguez",
+   "qid": "Q47284",
+   "fame": 0.614,
+   "country": "United States",
+   "description": "American filmmaker (born 1968)",
+   "hook": "directed a mariachi action film on a tiny budget and a kids' spy franchise",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Steven Soderbergh",
+   "qid": "Q103917",
+   "fame": 0.613,
+   "country": "United States",
+   "description": "American filmmaker (born 1963)",
+   "hook": "directed a casino heist caper with a slick crew of eleven and a legal drama about a fighter against polluters",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Alfonso Cuarón",
+   "qid": "Q28028",
+   "fame": 0.612,
+   "country": "Mexico",
+   "description": "Mexican filmmaker (born 1961)",
+   "hook": "directed a space-drift survival thriller and a wizard-school prisoner sequel",
+   "known": 0.2,
+   "kind": "mexico"
+  },
+  {
+   "label": "Buster Keaton",
+   "qid": "Q103949",
+   "fame": 0.612,
+   "country": "United States",
+   "description": "American motion picture director, motion picture producer, motion picture producers and director, comedian, actor",
+   "hook": "was the stone-faced silent comedian who performed his own dangerous stunts",
+   "known": 0.4,
+   "kind": "united-states"
+  },
+  {
+   "label": "Chris Columbus",
+   "qid": "Q75079",
+   "fame": 0.611,
+   "country": "United States",
+   "description": "American filmmaker (born 1958)",
+   "hook": "directed a boy left behind over Christmas and the first two wizard-school films",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Bong Joon-ho",
+   "qid": "Q495980",
+   "fame": 0.608,
+   "country": "South Korea",
+   "description": "South Korean filmmaker (born 1969)",
+   "hook": "directed the first non-English film to win Best Picture, a dark story of two households divided by class",
+   "known": 0.2,
+   "kind": "south-korea"
+  },
+  {
+   "label": "Sydney Pollack",
+   "qid": "Q51522",
+   "fame": 0.608,
+   "country": "United States",
+   "description": "American film director, producer and actor (1934-2008)",
+   "hook": "directed a comedy about an actor posing as a woman and a romance on an African coffee farm",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "John Huston",
+   "qid": "Q51575",
+   "fame": 0.607,
+   "country": "United States",
+   "description": "American film director, screenwriter, and actor (1906–1987)",
+   "hook": "directed a noir about a jeweled bird statue and a prospectors' gold-rush tragedy",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "John Lasseter",
+   "qid": "Q269214",
+   "fame": 0.607,
+   "country": "United States",
+   "description": "American animator, film director, screenwriter, producer (born 1957)",
+   "hook": "led the early animated films about living toys and a lightning-fast race car",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Kathryn Bigelow",
+   "qid": "Q34816",
+   "fame": 0.605,
+   "country": "United States",
+   "description": "American filmmaker (born 1951)",
+   "hook": "became the first woman to win the Best Director Oscar, for a bomb-disposal war film",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Louis Malle",
+   "qid": "Q55392",
+   "fame": 0.605,
+   "country": "France",
+   "description": "French film director, screenwriter, and producer (1932-1995)",
+   "hook": "directed a film that is nothing but two men talking over dinner and a wartime boarding-school drama",
+   "known": 0.2,
+   "kind": "france"
+  },
+  {
+   "label": "Farah Khan",
+   "qid": "Q167636",
+   "fame": 0.601,
+   "country": "India",
+   "description": "Indian film director and choreographer (born 1965)",
+   "hook": "choreographs and directs big song-and-dance Bollywood entertainers",
+   "known": 0.2,
+   "kind": "india"
+  },
+  {
+   "label": "Ingmar Bergman",
+   "qid": "Q7546",
+   "fame": 0.6,
+   "country": "Sweden",
+   "description": "Swedish director and screenwriter (1918–2007)",
+   "hook": "directed a film in which a knight plays chess against Death",
+   "known": 0.2,
+   "kind": "sweden"
+  },
+  {
+   "label": "Lars von Trier",
+   "qid": "Q133730",
+   "fame": 0.598,
+   "country": "Denmark",
+   "description": "Danish film director and screenwriter (born 1956)",
+   "hook": "co-founded the Dogme filmmaking movement of stripped-down rules",
+   "known": 0.2,
+   "kind": "denmark"
+  },
+  {
+   "label": "Sidney Lumet",
+   "qid": "Q51559",
+   "fame": 0.598,
+   "country": "United States",
+   "description": "American director, producer and screenwriter (1924–2011)",
+   "hook": "directed a tense jury-room drama and a sweaty bank-heist film starring Al Pacino",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Ang Lee",
+   "qid": "Q160726",
+   "fame": 0.597,
+   "country": "Taiwan",
+   "description": "Taiwanese film director, screenwriter and producer (born 1954)",
+   "hook": "directed a forbidden romance between two cowboys and a martial-arts epic with a crouching tiger",
+   "known": 0.2,
+   "kind": "taiwan"
+  },
+  {
+   "label": "Wes Craven",
+   "qid": "Q223992",
+   "fame": 0.596,
+   "country": "United States",
+   "description": "American filmmaker (1939–2015)",
+   "hook": "created a dream-invading killer with a razor glove and a masked phone-call slasher series",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Matthew Vaughn",
+   "qid": "Q2593",
+   "fame": 0.595,
+   "country": "United Kingdom",
+   "description": "British film producer, director and screenwriter",
+   "hook": "directed a stylish spy film set around a tailor shop and a superhero film about a girl called Hit-Girl",
+   "known": 0.2,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "Adam McKay",
+   "qid": "Q350405",
+   "fame": 0.594,
+   "country": "United States",
+   "description": "American filmmaker (born 1968)",
+   "hook": "directed a news-anchor comedy and a film explaining the housing crash with celebrities in bathtubs",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Paul Verhoeven",
+   "qid": "Q129079",
+   "fame": 0.589,
+   "country": "Netherlands",
+   "description": "Dutch film director (born 1938)",
+   "hook": "directed satirical sci-fi about a cyborg police officer and a war against giant bugs",
+   "known": 0.2,
+   "kind": "netherlands"
+  },
+  {
+   "label": "Park Chan-wook",
+   "qid": "Q315484",
+   "fame": 0.586,
+   "country": "South Korea",
+   "description": "South Korean filmmaker (born 1963)",
+   "hook": "directed a revenge thriller famous for a long hallway hammer fight",
+   "known": 0.2,
+   "kind": "south-korea"
+  },
+  {
+   "label": "Mike Nichols",
+   "qid": "Q51537",
+   "fame": 0.583,
+   "country": "United States",
+   "description": "American director and comedian (1931–2014)",
+   "hook": "directed a college graduate's affair with the older Mrs. Robinson",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "William Friedkin",
+   "qid": "Q51582",
+   "fame": 0.583,
+   "country": "United States",
+   "description": "American director and producer (1935–2023)",
+   "hook": "directed a horror film about a possessed girl and a gritty New York car-chase cop film",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Karan Johar",
+   "qid": "Q468442",
+   "fame": 0.58,
+   "country": "India",
+   "description": "Indian film director and producer",
+   "hook": "directs glossy Bollywood family romances and hosts a celebrity coffee couch chat show",
+   "known": 0.2,
+   "kind": "india"
+  },
+  {
+   "label": "Peter Bogdanovich",
+   "qid": "Q158250",
+   "fame": 0.58,
+   "country": "United States",
+   "description": "American film director (1939–2022)",
+   "hook": "directed a black-and-white drama about teenagers in a dying small town with a movie theater",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Satyajit Ray",
+   "qid": "Q8873",
+   "fame": 0.58,
+   "country": "India",
+   "description": "Indian filmmaker and writer (1921–1992)",
+   "hook": "made a trilogy following a village boy named Apu",
+   "known": 0.2,
+   "kind": "india"
+  },
+  {
+   "label": "Tony Richardson",
+   "qid": "Q52411",
+   "fame": 0.579,
+   "country": "United Kingdom",
+   "description": "English theatre and film director and producer (1928-1991)",
+   "hook": "directed a bawdy 18th-century romp about a foundling that won Best Picture",
+   "known": 0.2,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "Baz Luhrmann",
+   "qid": "Q250545",
+   "fame": 0.577,
+   "country": "Australia",
+   "description": "Australian writer, director, and producer (born 1962)",
+   "hook": "directed a flashy Parisian nightclub musical and a lavish Jazz Age tale of a mysterious millionaire",
+   "known": 0.2,
+   "kind": "australia"
+  },
+  {
+   "label": "Terrence Malick",
+   "qid": "Q215478",
+   "fame": 0.577,
+   "country": "United States",
+   "description": "American film director and screenwriter (born 1943)",
+   "hook": "directs dreamy, nature-soaked films and is famous for being reclusive",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Pedro Almodóvar",
+   "qid": "Q55171",
+   "fame": 0.574,
+   "country": "Spain",
+   "description": "Spanish filmmaker (born 1949)",
+   "hook": "directs colorful melodramas like one about women on the verge of a nervous breakdown",
+   "known": 0.2,
+   "kind": "spain"
+  },
+  {
+   "label": "Michael Cimino",
+   "qid": "Q59129",
+   "fame": 0.572,
+   "country": "United States",
+   "description": "American film director (1939–2016)",
+   "hook": "directed a steel-town war drama with a Russian roulette scene and a famously over-budget western",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Jim Jarmusch",
+   "qid": "Q191755",
+   "fame": 0.571,
+   "country": "United States",
+   "description": "American film director, screenwriter and actor",
+   "hook": "makes deadpan indie films, including one about vampire lovers and another about five taxi rides",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Sean Baker",
+   "qid": "Q7441419",
+   "fame": 0.571,
+   "country": "United States",
+   "description": "American film director",
+   "hook": "directed a Best Picture winner about a dancer's whirlwind marriage to an oligarch's son",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Sergio Leone",
+   "qid": "Q164562",
+   "fame": 0.57,
+   "country": "Italy",
+   "description": "Italian filmmaker (1929–1989)",
+   "hook": "made spaghetti westerns starring a squinting gunslinger with no name",
+   "known": 0.2,
+   "kind": "italy"
+  },
+  {
+   "label": "Chloé Zhao",
+   "qid": "Q21078321",
+   "fame": 0.569,
+   "country": "China",
+   "description": "Chinese filmmaker (born 1982)",
+   "hook": "directed a Best Picture winner about a woman living out of a van across the West",
+   "known": 0.2,
+   "kind": "china"
+  },
+  {
+   "label": "Peter Weir",
+   "qid": "Q55424",
+   "fame": 0.566,
+   "country": "Australia",
+   "description": "Australian film director (born 1944)",
+   "hook": "directed a film about a man whose whole life is a televised show",
+   "known": 0.2,
+   "kind": "australia"
+  },
+  {
+   "label": "Robert Altman",
+   "qid": "Q55163",
+   "fame": 0.566,
+   "country": "United States",
+   "description": "American filmmaker (1925–2006)",
+   "hook": "is known for overlapping dialogue and huge casts, as in a war-hospital satire",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Yash Chopra",
+   "qid": "Q30876",
+   "fame": 0.566,
+   "country": "India",
+   "description": "Indian film director, script writer and film producer (1932–2012)",
+   "hook": "directed sweeping Bollywood love stories with songs in Swiss meadows",
+   "known": 0.2,
+   "kind": "india"
+  },
+  {
+   "label": "Ken Russell",
+   "qid": "Q55249",
+   "fame": 0.564,
+   "country": "United Kingdom",
+   "description": "British film director (1927–2011)",
+   "hook": "made flamboyant, provocative films including biopics of famous composers",
+   "known": 0.2,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "Mike Leigh",
+   "qid": "Q315756",
+   "fame": 0.563,
+   "country": "United Kingdom",
+   "description": "English writer and director (born 1943)",
+   "hook": "develops films through long improvised rehearsals, as in a drama about a woman meeting her birth mother",
+   "known": 0.2,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "Frank Darabont",
+   "qid": "Q295445",
+   "fame": 0.562,
+   "country": "United States",
+   "description": "American film director, screenwriter and producer",
+   "hook": "directed prison dramas from Stephen King stories, including a rock-hammer escape",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Garry Marshall",
+   "qid": "Q315087",
+   "fame": 0.562,
+   "country": "United States",
+   "description": "American actor and filmmaker (1934–2016)",
+   "hook": "directed a princess-makeover comedy and a Rodeo Drive Cinderella romance",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Vincente Minnelli",
+   "qid": "Q51535",
+   "fame": 0.561,
+   "country": "United States",
+   "description": "American stage and film director (1903-1986)",
+   "hook": "directed classic MGM musicals such as Meet Me in St. Louis and Gigi",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Wim Wenders",
+   "qid": "Q55411",
+   "fame": 0.561,
+   "country": "Germany",
+   "description": "German filmmaker (born 1945)",
+   "hook": "directed Paris, Texas and the Buena Vista Social Club documentary",
+   "known": 0.2,
+   "kind": "germany"
+  },
+  {
+   "label": "Barry Levinson",
+   "qid": "Q269692",
+   "fame": 0.56,
+   "country": "United States",
+   "description": "American screenwriter, film director, actor, and producer",
+   "hook": "directed Rain Man and Good Morning, Vietnam",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "David O. Russell",
+   "qid": "Q314342",
+   "fame": 0.56,
+   "country": "United States",
+   "description": "American film director, screenwriter and producer",
+   "hook": "directed Silver Linings Playbook and Three Kings",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "John Ford",
+   "qid": "Q51114",
+   "fame": 0.559,
+   "country": "United States",
+   "description": "American film director (1894–1973)",
+   "hook": "made countless Westerns set in Monument Valley, often starring the Duke",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Blake Edwards",
+   "qid": "Q56093",
+   "fame": 0.558,
+   "country": "United States",
+   "description": "American film director, screenwriter and producer (1922-2010)",
+   "hook": "directed the Pink Panther comedies and Breakfast at Tiffany's",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Joel Schumacher",
+   "qid": "Q295207",
+   "fame": 0.557,
+   "country": "United States",
+   "description": "American director, screenwriter, and producer (1939–2020)",
+   "hook": "directed the Batman films Batman Forever and Batman & Robin",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Todd Phillips",
+   "qid": "Q362824",
+   "fame": 0.557,
+   "country": "United States",
+   "description": "American filmmaker",
+   "hook": "directed The Hangover trilogy and the Joker film starring Joaquin Phoenix",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Gore Verbinski",
+   "qid": "Q295463",
+   "fame": 0.556,
+   "country": "United States",
+   "description": "American film director (born 1964)",
+   "hook": "directed the first three Pirates of the Caribbean films",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "George Miller",
+   "qid": "Q446960",
+   "fame": 0.552,
+   "country": "Australia",
+   "description": "Australian filmmaker (born 1945)",
+   "hook": "directed the Mad Max series, including Fury Road",
+   "known": 0.2,
+   "kind": "australia"
+  },
+  {
+   "label": "James L. Brooks",
+   "qid": "Q95125",
+   "fame": 0.552,
+   "country": "United States",
+   "description": "American director, writer, and producer (born 1940)",
+   "hook": "directed Terms of Endearment and As Good as It Gets",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Georges Méliès",
+   "qid": "Q152272",
+   "fame": 0.55,
+   "country": "France",
+   "description": "French filmmaker and illusionist (1861–1938)",
+   "hook": "pioneered special effects in early cinema with a film of a rocket landing in the Moon's eye",
+   "known": 0.2,
+   "kind": "france"
+  },
+  {
+   "label": "Satoshi Kon",
+   "qid": "Q333643",
+   "fame": 0.55,
+   "country": "Japan",
+   "description": "Japanese anime director and manga artist (1963–2010)",
+   "hook": "directed the anime films Perfect Blue and Paprika",
+   "known": 0.2,
+   "kind": "japan"
+  },
+  {
+   "label": "Rian Johnson",
+   "qid": "Q621818",
+   "fame": 0.549,
+   "country": "United States",
+   "description": "American filmmaker (born 1973)",
+   "hook": "directed Knives Out and Star Wars: The Last Jedi",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Dario Argento",
+   "qid": "Q53011",
+   "fame": 0.544,
+   "country": "Italy",
+   "description": "Italian film director and screenwriter (born 1940)",
+   "hook": "is a master of stylish horror, known for Suspiria and Deep Red",
+   "known": 0.2,
+   "kind": "italy"
+  },
+  {
+   "label": "Federico Fellini",
+   "qid": "Q7371",
+   "fame": 0.544,
+   "country": "Italy",
+   "description": "Italian filmmaker (1920–1993)",
+   "hook": "directed La Dolce Vita and 8½",
+   "known": 0.2,
+   "kind": "italy"
+  },
+  {
+   "label": "Cecil B. DeMille",
+   "qid": "Q72267",
+   "fame": 0.543,
+   "country": "United States",
+   "description": "American film director, producer and actor (1881–1959)",
+   "hook": "directed grand Hollywood epics like The Ten Commandments",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "William Hanna",
+   "qid": "Q263324",
+   "fame": 0.541,
+   "country": "United States",
+   "description": "American animator (1910–2001)",
+   "hook": "co-created Tom and Jerry and The Flintstones",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Steve McQueen",
+   "qid": "Q706475",
+   "fame": 0.539,
+   "country": "United Kingdom",
+   "description": "British film director and video artist (born 1969)",
+   "hook": "directed 12 Years a Slave, which won the Oscar for Best Picture",
+   "known": 0.2,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "James Mangold",
+   "qid": "Q433893",
+   "fame": 0.538,
+   "country": "United States",
+   "description": "American film director, screenwriter (born 1963)",
+   "hook": "directed Walk the Line and Logan",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Roberto Benigni",
+   "qid": "Q23301",
+   "fame": 0.538,
+   "country": "Italy",
+   "description": "Italian actor, comedian, screenwriter and film director (born 1952)",
+   "hook": "directed and starred in Life Is Beautiful, winning the Oscar for Best Actor",
+   "known": 0.2,
+   "kind": "italy"
+  },
+  {
+   "label": "Andrew Stanton",
+   "qid": "Q328723",
+   "fame": 0.537,
+   "country": "United States",
+   "description": "American animator, film director and screenwriter (born 1965)",
+   "hook": "directed the Pixar films Finding Nemo and WALL-E",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Jonathan Demme",
+   "qid": "Q48987",
+   "fame": 0.537,
+   "country": "United States",
+   "description": "American filmmaker (1944–2017)",
+   "hook": "directed The Silence of the Lambs",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Makoto Shinkai",
+   "qid": "Q335080",
+   "fame": 0.535,
+   "country": "Japan",
+   "description": "Japanese anime director",
+   "hook": "directed the hit anime Your Name",
+   "known": 0.2,
+   "kind": "japan"
+  },
+  {
+   "label": "Jean Cocteau",
+   "qid": "Q83158",
+   "fame": 0.534,
+   "country": "France",
+   "description": "French writer and film director (1889–1963)",
+   "hook": "directed the poetic fantasy films Beauty and the Beast and Orpheus, and was also a poet",
+   "known": 0.2,
+   "kind": "france"
+  },
+  {
+   "label": "John Boorman",
+   "qid": "Q55277",
+   "fame": 0.533,
+   "country": "United Kingdom",
+   "description": "British film director, producer and screenwriter",
+   "hook": "directed Deliverance and Excalibur",
+   "known": 0.2,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "Roger Corman",
+   "qid": "Q318292",
+   "fame": 0.533,
+   "country": "United States",
+   "description": "American film director and producer (1926–2024)",
+   "hook": "was the king of low-budget B-movies, including The Little Shop of Horrors",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Ed Wood",
+   "qid": "Q221843",
+   "fame": 0.53,
+   "country": "United States",
+   "description": "American screenwriter, director, producer, actor, author, and film editor",
+   "hook": "made Plan 9 from Outer Space, often called the worst film ever made",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Richard Donner",
+   "qid": "Q262130",
+   "fame": 0.53,
+   "country": "United States",
+   "description": "American film director (1930–2021)",
+   "hook": "directed Superman starring Christopher Reeve and the Lethal Weapon series",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Takeshi Kitano",
+   "qid": "Q26372",
+   "fame": 0.528,
+   "country": "Japan",
+   "description": "Japanese film director, comedian, singer, actor, film editor, presenter, screenwriter, author, poet, painter and video game designer (born 1947)",
+   "hook": "directed yakuza films such as Sonatine and Hana-bi, and is also a famous comedian",
+   "known": 0.2,
+   "kind": "japan"
+  },
+  {
+   "label": "Joseph Barbera",
+   "qid": "Q190373",
+   "fame": 0.527,
+   "country": "United States",
+   "description": "American animator and cartoonist (1911–2006)",
+   "hook": "co-created Tom and Jerry and Yogi Bear",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Wolfgang Petersen",
+   "qid": "Q65321",
+   "fame": 0.525,
+   "country": "Germany",
+   "description": "German film director (1941–2022)",
+   "hook": "directed the submarine film Das Boot and the epic Troy",
+   "known": 0.2,
+   "kind": "germany"
+  },
+  {
+   "label": "David Yates",
+   "qid": "Q312988",
+   "fame": 0.522,
+   "country": "United Kingdom",
+   "description": "English filmmaker (born 1963)",
+   "hook": "directed the last four Harry Potter films",
+   "known": 0.2,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "Michael Haneke",
+   "qid": "Q84199",
+   "fame": 0.519,
+   "country": "Austria",
+   "description": "Austrian film director and screenwriter (born 1942)",
+   "hook": "directed the unsettling dramas Funny Games and The White Ribbon",
+   "known": 0.2,
+   "kind": "austria"
+  },
+  {
+   "label": "Anthony Minghella",
+   "qid": "Q188726",
+   "fame": 0.518,
+   "country": "United Kingdom",
+   "description": "British film director, playwright and screenwriter (1954-2008)",
+   "hook": "directed The Talented Mr. Ripley and Cold Mountain",
+   "known": 0.2,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "Hirokazu Koreeda",
+   "qid": "Q740758",
+   "fame": 0.518,
+   "country": "Japan",
+   "description": "Japanese film director, producer, screenplay writer and film editor (born 1962)",
+   "hook": "directed Shoplifters, a drama about a makeshift family",
+   "known": 0.2,
+   "kind": "japan"
+  },
+  {
+   "label": "Ken Loach",
+   "qid": "Q55238",
+   "fame": 0.515,
+   "country": "United Kingdom",
+   "description": "English film director and screenwriter (born 1936)",
+   "hook": "makes gritty social-realist dramas like I, Daniel Blake",
+   "known": 0.2,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "Sammo Hung",
+   "qid": "Q311219",
+   "fame": 0.515,
+   "country": "China",
+   "description": "Hong Kong actor, choreographer, martial artist and filmmaker (born 1952)",
+   "hook": "is a kung fu star and action choreographer who worked with Jackie Chan",
+   "known": 0.2,
+   "kind": "china"
+  },
+  {
+   "label": "Sam Peckinpah",
+   "qid": "Q51461",
+   "fame": 0.512,
+   "country": "United States",
+   "description": "American film director (1925–1984)",
+   "hook": "directed the violent Western The Wild Bunch",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "François Truffaut",
+   "qid": "Q53002",
+   "fame": 0.511,
+   "country": "France",
+   "description": "French film director (1932–1984)",
+   "hook": "directed The 400 Blows, a landmark of the New Wave",
+   "known": 0.2,
+   "kind": "france"
+  },
+  {
+   "label": "Cristian Mungiu",
+   "qid": "Q314353",
+   "fame": 0.51,
+   "country": "Romania",
+   "description": "Romanian film director, screenwriter, and film producer (born 1968)",
+   "hook": "directed 4 Months, 3 Weeks and 2 Days, which won the Palme d'Or",
+   "known": 0.2,
+   "kind": "romania"
+  },
+  {
+   "label": "Mathieu Kassovitz",
+   "qid": "Q491766",
+   "fame": 0.502,
+   "country": "France",
+   "description": "French actor, film director, film producer and screenwriter (born 1967)",
+   "hook": "directed the black-and-white suburban drama La Haine and acted in Amélie",
+   "known": 0.2,
+   "kind": "france"
+  },
+  {
+   "label": "Howard Hawks",
+   "qid": "Q51581",
+   "fame": 0.498,
+   "country": "United States",
+   "description": "American film director, producer and screenwriter (1896–1977)",
+   "hook": "directed Bringing Up Baby and Rio Bravo",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Zhang Yimou",
+   "qid": "Q55430",
+   "fame": 0.495,
+   "country": "China",
+   "description": "Chinese filmmaker",
+   "hook": "directed Hero and House of Flying Daggers, and the Beijing Olympics opening ceremony",
+   "known": 0.2,
+   "kind": "china"
+  },
+  {
+   "label": "Franco Zeffirelli",
+   "qid": "Q53040",
+   "fame": 0.491,
+   "country": "Italy",
+   "description": "Italian director and politician (1923-2019)",
+   "hook": "directed a famous film version of Romeo and Juliet with teenage leads",
+   "known": 0.2,
+   "kind": "italy"
+  },
+  {
+   "label": "Joseph L. Mankiewicz",
+   "qid": "Q51583",
+   "fame": 0.489,
+   "country": "United States",
+   "description": "American film director, screenwriter, and producer (1909-1993)",
+   "hook": "directed All About Eve and Cleopatra with Elizabeth Taylor",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Alan Parker",
+   "qid": "Q271284",
+   "fame": 0.486,
+   "country": "United Kingdom",
+   "description": "British filmmaker (1944–2020)",
+   "hook": "directed Midnight Express, Fame and Pink Floyd The Wall",
+   "known": 0.2,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "John Frankenheimer",
+   "qid": "Q262820",
+   "fame": 0.485,
+   "country": "United States",
+   "description": "American film and television director (1930-2002)",
+   "hook": "directed The Manchurian Candidate and Grand Prix",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Jane Campion",
+   "qid": "Q230448",
+   "fame": 0.483,
+   "country": "New Zealand",
+   "description": "New Zealand film director, screenwriter and producer (born 1954)",
+   "hook": "directed The Piano and was the first woman to win the Palme d'Or",
+   "known": 0.2,
+   "kind": "new-zealand"
+  },
+  {
+   "label": "Krzysztof Kieślowski",
+   "qid": "Q55165",
+   "fame": 0.482,
+   "country": "Poland",
+   "description": "Polish film director and screenwriter (1941–1996)",
+   "hook": "directed the Three Colors trilogy: Blue, White and Red",
+   "known": 0.2,
+   "kind": "poland"
+  },
+  {
+   "label": "Norman Jewison",
+   "qid": "Q309214",
+   "fame": 0.481,
+   "country": "Canada",
+   "description": "Canadian film director, producer and actor (1926–2024)",
+   "hook": "directed In the Heat of the Night and Fiddler on the Roof",
+   "known": 0.2,
+   "kind": "canada"
+  },
+  {
+   "label": "Alan J. Pakula",
+   "qid": "Q51519",
+   "fame": 0.476,
+   "country": "United States",
+   "description": "American film director, writer and producer (1928–1998)",
+   "hook": "directed All the President's Men and Sophie's Choice",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Michel Gondry",
+   "qid": "Q126098",
+   "fame": 0.476,
+   "country": "France",
+   "description": "French film director, screenwriter and producer (born 1963)",
+   "hook": "directed Eternal Sunshine of the Spotless Mind",
+   "known": 0.2,
+   "kind": "france"
+  },
+  {
+   "label": "Yasujirō Ozu",
+   "qid": "Q55402",
+   "fame": 0.476,
+   "country": "Japan",
+   "description": "Japanese film director, screenwriter (1903–1963)",
+   "hook": "directed the quiet family drama Tokyo Story",
+   "known": 0.2,
+   "kind": "japan"
+  },
+  {
+   "label": "Abbas Kiarostami",
+   "qid": "Q55210",
+   "fame": 0.473,
+   "country": "Iran",
+   "description": "Iranian film director, screenwriter, photographer and film producer (1940-2016)",
+   "hook": "directed Taste of Cherry and Close-Up, quiet poetic films",
+   "known": 0.2,
+   "kind": "iran"
+  },
+  {
+   "label": "Robert Wise",
+   "qid": "Q59821",
+   "fame": 0.471,
+   "country": "United States",
+   "description": "American film director, film producer and film editor (1914–2005)",
+   "hook": "directed both West Side Story and The Sound of Music",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "John G. Avildsen",
+   "qid": "Q260125",
+   "fame": 0.47,
+   "country": "United States",
+   "description": "American film director",
+   "hook": "directed Rocky and The Karate Kid",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Andrew Niccol",
+   "qid": "Q360737",
+   "fame": 0.468,
+   "country": "New Zealand",
+   "description": "New Zealand screenwriter, producer and film director",
+   "hook": "directed the sci-fi film Gattaca and wrote The Truman Show",
+   "known": 0.2,
+   "kind": "new-zealand"
+  },
+  {
+   "label": "Carol Reed",
+   "qid": "Q95143",
+   "fame": 0.467,
+   "country": "United Kingdom",
+   "description": "English film director (1906–1976)",
+   "hook": "directed The Third Man, set in postwar Vienna, and the musical Oliver!",
+   "known": 0.2,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "James Ivory",
+   "qid": "Q51577",
+   "fame": 0.462,
+   "country": "United States",
+   "description": "American film director",
+   "hook": "directed lavish period dramas like A Room with a View and Howards End",
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Don Siegel",
+   "qid": "Q358322",
+   "fame": 0.459,
+   "country": "United States",
+   "description": "American film director (1912–1991)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Stanley Donen",
+   "qid": "Q48765",
+   "fame": 0.459,
+   "country": "United States",
+   "description": "American film director and choreographer (1924-2019)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "united-states"
+  },
+  {
+   "label": "Jacques Tati",
+   "qid": "Q51549",
+   "fame": 0.458,
+   "country": "France",
+   "description": "French filmmaker (1907-1982)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "france"
+  },
+  {
+   "label": "John Schlesinger",
+   "qid": "Q55303",
+   "fame": 0.458,
+   "country": "United Kingdom",
+   "description": "English film and stage director (1926–2003)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "Lasse Hallström",
+   "qid": "Q316051",
+   "fame": 0.458,
+   "country": "Sweden",
+   "description": "Swedish director and screenwriter",
+   "hook": null,
+   "known": 0.2,
+   "kind": "sweden"
+  },
+  {
+   "label": "Xavier Dolan",
+   "qid": "Q551861",
+   "fame": 0.458,
+   "country": "Canada",
+   "description": "Canadian filmmaker (born 1989)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "canada"
+  },
+  {
+   "label": "Jean-Pierre Jeunet",
+   "qid": "Q217324",
+   "fame": 0.457,
+   "country": "France",
+   "description": "French film director",
+   "hook": null,
+   "known": 0.2,
+   "kind": "france"
+  },
+  {
+   "label": "Paolo Sorrentino",
+   "qid": "Q374678",
+   "fame": 0.455,
+   "country": "Italy",
+   "description": "Italian film director and screenwriter (born 1970)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "italy"
+  },
+  {
+   "label": "Robert Bresson",
+   "qid": "Q55391",
+   "fame": 0.454,
+   "country": "France",
+   "description": "French film director (1901–1999)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "france"
+  },
+  {
+   "label": "Tom Hooper",
+   "qid": "Q295912",
+   "fame": 0.454,
+   "country": "United Kingdom",
+   "description": "British-Australian filmmaker",
+   "hook": null,
+   "known": 0.2,
+   "kind": "united-kingdom"
+  },
+  {
+   "label": "George Cukor",
+   "qid": "Q56014",
+   "fame": 0.45,
+   "country": "United States",
+   "description": "American film director and producer (1899–1983)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "united-states"
+  }
+ ]
+}

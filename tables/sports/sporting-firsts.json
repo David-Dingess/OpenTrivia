@@ -1,0 +1,308 @@
+{
+ "id": "table.sports.sporting-firsts",
+ "kind": "table",
+ "title": "Sporting firsts",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "sports-lore",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?feat WHERE { VALUES (?item ?feat) { (wd:Q319351 \"First to run a mile in under four minutes\") (wd:Q221048 \"First Black player in modern Major League Baseball\") (wd:Q202424 \"First Olympic marathon champion\") (wd:Q52604 \"First to long jump beyond 29 feet\") (wd:Q33228 \"First perfect 10 in Olympic gymnastics\") (wd:Q263287 \"First woman to swim the English Channel\") (wd:Q964345 \"First to swim the English Channel\") (wd:Q151284 \"First to swim 100 metres freestyle in under a minute\") (wd:Q273842 \"First Tour de France winner\") (wd:Q53550 \"First Black player to win a Grand Slam tennis title\") (wd:Q53325 \"First Black man to win the Wimbledon singles title\") (wd:Q209518 \"First NHL player to score 200 points in a season\") (wd:Q9488 \"First man to score a double century in a one-day international\") (wd:Q9124 \"First to run a marathon distance in under two hours\") (wd:Q295020 \"First to land a 900 on a skateboard\") (wd:Q213812 \"First to hit 60 home runs in a season\") (wd:Q919907 \"First perfect game in World Series history\") (wd:Q684020 \"First Latin American inducted into the Baseball Hall of Fame\") (wd:Q9673 \"First Black Formula One world champion\") (wd:Q213448 \"First woman to win an IndyCar race\") (wd:Q182455 \"First to score 100 points in an NBA game\") (wd:Q346602 \"First to run 100 metres in under 10 seconds with electronic timing\") (wd:Q52596 \"First Black African Olympic gold medallist\") (wd:Q234762 \"First Indigenous Australian to win individual Olympic gold\") (wd:Q437526 \"First golfer to win the Grand Slam\") (wd:Q724358 \"First Black player in the NHL\") (wd:Q711825 \"First Black player in the American League\") (wd:Q1277115 \"First Black player to play in an NBA game\") (wd:Q242185 \"First Black head coach in the NBA\") (wd:Q10993 \"First Black golfer to win the Masters\") (wd:Q221482 \"First Native American to win Olympic gold\") (wd:Q97440819 \"First woman to run the Boston Marathon with an official number\") (wd:Q4934606 \"First woman to run the entire Boston Marathon\") (wd:Q12897 \"First to win three World Cups\") (wd:Q11662 \"First tennis player to win the Golden Slam\") (wd:Q357444 \"First MLB player to have his number retired\") (wd:Q954184 \"First to play in both a Super Bowl and a World Series\") (wd:Q261294 \"First to land a backflip on one blade at the Olympics\") (wd:Q235498 \"First woman to land a triple axel in competition\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-03T02:42:09.759Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-03T02:42:09.759Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "first",
+   "label": "Famous first",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "athlete",
+  "many": "athletes",
+  "wildcard": "person",
+  "columns": {
+   "first": {
+    "role": "code",
+    "pick": "Which sporting first belongs to {label}?",
+    "statement": "{label} earned this sporting first: {value}.",
+    "match": "Match each athlete to the sporting first they are known for.",
+    "reverse": "Which of these athletes earned this sporting first: {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Lewis Hamilton",
+   "qid": "Q9673",
+   "fame": 0.763,
+   "first": "First Black Formula One world champion",
+   "description": "British racing driver",
+   "hook": "is a British driver who now races for Ferrari and holds the record for most race victories",
+   "known": 0.8,
+   "kind": "breakthrough"
+  },
+  {
+   "label": "Deion Sanders",
+   "qid": "Q954184",
+   "fame": 0.726,
+   "first": "First to play in both a Super Bowl and a World Series",
+   "description": "American football and baseball player and football coach",
+   "hook": "is nicknamed Prime Time and starred in the NFL and in baseball before coaching college football",
+   "known": 0.6,
+   "kind": "milestone"
+  },
+  {
+   "label": "Babe Ruth",
+   "qid": "Q213812",
+   "fame": 0.724,
+   "first": "First to hit 60 home runs in a season",
+   "description": "American baseball player (1895–1948)",
+   "hook": "was nicknamed the Sultan of Swat and went from Red Sox pitcher to Yankees slugger",
+   "known": 0.95,
+   "kind": "milestone"
+  },
+  {
+   "label": "Arthur Ashe",
+   "qid": "Q53325",
+   "fame": 0.721,
+   "first": "First Black man to win the Wimbledon singles title",
+   "description": "American tennis player (1943–1993)",
+   "hook": "was a serve-and-volley star who also took the US Open and Australian Open crowns",
+   "known": 0.8,
+   "kind": "breakthrough"
+  },
+  {
+   "label": "Tiger Woods",
+   "qid": "Q10993",
+   "fame": 0.716,
+   "first": "First Black golfer to win the Masters",
+   "description": "American golfer",
+   "hook": "won his first major by twelve strokes and became one of the most famous athletes in the world",
+   "known": 0.8,
+   "kind": "breakthrough"
+  },
+  {
+   "label": "Sachin Tendulkar",
+   "qid": "Q9488",
+   "fame": 0.699,
+   "first": "First man to score a double century in a one-day international",
+   "description": "Indian cricket player (born 1973)",
+   "hook": "is the all-time leading run-scorer in cricket and the only batsman to reach 100 hundreds",
+   "known": 0.6,
+   "kind": "milestone"
+  },
+  {
+   "label": "Roberto Clemente",
+   "qid": "Q684020",
+   "fame": 0.691,
+   "first": "First Latin American inducted into the Baseball Hall of Fame",
+   "description": "Puerto Rican baseball player (1934–1972)",
+   "hook": "was a Pirates right fielder who died in a plane crash carrying relief for earthquake survivors",
+   "known": 0.4,
+   "kind": "breakthrough"
+  },
+  {
+   "label": "Steffi Graf",
+   "qid": "Q11662",
+   "fame": 0.689,
+   "first": "First tennis player to win the Golden Slam",
+   "description": "German tennis player",
+   "hook": "won 22 major singles titles and spent a record 377 weeks ranked world number one",
+   "known": 0.8,
+   "kind": "milestone"
+  },
+  {
+   "label": "Pelé",
+   "qid": "Q12897",
+   "fame": 0.67,
+   "first": "First to win three World Cups",
+   "description": "Brazilian footballer (1940–2022)",
+   "hook": "was named Athlete of the Century by the International Olympic Committee",
+   "known": 0.95,
+   "kind": "milestone"
+  },
+  {
+   "label": "Jackie Robinson",
+   "qid": "Q221048",
+   "fame": 0.657,
+   "first": "First Black player in modern Major League Baseball",
+   "description": "American baseball player (1919–1972)",
+   "hook": "was a four-sport star at UCLA before a Brooklyn Dodgers career at first base",
+   "known": 0.95,
+   "kind": "breakthrough"
+  },
+  {
+   "label": "Wilt Chamberlain",
+   "qid": "Q182455",
+   "fame": 0.638,
+   "first": "First to score 100 points in an NBA game",
+   "description": "American basketball player (1936–1999)",
+   "hook": "was a 7-foot-1 center who set dozens of NBA records",
+   "known": 0.8,
+   "kind": "milestone"
+  },
+  {
+   "label": "Danica Patrick",
+   "qid": "Q213448",
+   "fame": 0.636,
+   "first": "First woman to win an IndyCar race",
+   "description": "American racecar driver (born 1982)",
+   "hook": "raced in NASCAR too and is the most successful female driver in American open-wheel history",
+   "known": 0.6,
+   "kind": "breakthrough"
+  },
+  {
+   "label": "Wayne Gretzky",
+   "qid": "Q209518",
+   "fame": 0.633,
+   "first": "First NHL player to score 200 points in a season",
+   "description": "Canadian ice hockey player and coach (born 1961)",
+   "hook": "is nicknamed the Great One and is the NHL's all-time leading scorer",
+   "known": 0.8,
+   "kind": "milestone"
+  },
+  {
+   "label": "Lou Gehrig",
+   "qid": "Q357444",
+   "fame": 0.626,
+   "first": "First MLB player to have his number retired",
+   "description": "American baseball player (1903–1941)",
+   "hook": "earned the nickname Iron Horse for his durability as a Yankees first baseman",
+   "known": 0.6,
+   "kind": "milestone"
+  },
+  {
+   "label": "Tony Hawk",
+   "qid": "Q295020",
+   "fame": 0.622,
+   "first": "First to land a 900 on a skateboard",
+   "description": "American professional skateboarder and actor",
+   "hook": "is a skateboarder nicknamed Birdman whose name is on a hit video game series",
+   "known": 0.8,
+   "kind": "milestone"
+  },
+  {
+   "label": "Jim Thorpe",
+   "qid": "Q221482",
+   "fame": 0.618,
+   "first": "First Native American to win Olympic gold",
+   "description": "American track and field athlete and baseball player (1888-1953)",
+   "hook": "was stripped of his medals after it emerged he had been paid for semi-pro baseball",
+   "known": 0.4,
+   "kind": "breakthrough"
+  },
+  {
+   "label": "Bill Russell",
+   "qid": "Q242185",
+   "fame": 0.576,
+   "first": "First Black head coach in the NBA",
+   "description": "American basketball player (1934–2022)",
+   "hook": "led the Boston Celtics to eleven championships in thirteen seasons",
+   "known": 0.6,
+   "kind": "breakthrough"
+  },
+  {
+   "label": "Eliud Kipchoge",
+   "qid": "Q9124",
+   "fame": 0.53,
+   "first": "First to run a marathon distance in under two hours",
+   "description": "Kenyan long-distance runner",
+   "hook": "is a Kenyan star, twice a champion at the Games and a former record holder",
+   "known": 0.4,
+   "kind": "milestone"
+  },
+  {
+   "label": "Nadia Comăneci",
+   "qid": "Q33228",
+   "fame": 0.529,
+   "first": "First perfect 10 in Olympic gymnastics",
+   "description": "Romanian gymnast and five-time Olympic gold medalist (born 1961)",
+   "hook": "was a teenage gymnast who won three golds at the Montreal Games",
+   "known": 0.8,
+   "kind": "milestone"
+  },
+  {
+   "label": "Cathy Freeman",
+   "qid": "Q234762",
+   "fame": 0.517,
+   "first": "First Indigenous Australian to win individual Olympic gold",
+   "description": "Australian short-distance runner",
+   "hook": "lit the cauldron at her home Games and then took the 400 metres title there",
+   "known": 0.4,
+   "kind": "breakthrough"
+  },
+  {
+   "label": "Johnny Weissmuller",
+   "qid": "Q151284",
+   "fame": 0.513,
+   "first": "First to swim 100 metres freestyle in under a minute",
+   "description": "American swimmer, water polo player, and actor (1904–1984)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "milestone"
+  },
+  {
+   "label": "Surya Bonaly",
+   "qid": "Q261294",
+   "fame": 0.512,
+   "first": "First to land a backflip on one blade at the Olympics",
+   "description": "French figure skater",
+   "hook": "won five European titles and three World silver medals in figure skating",
+   "known": 0.4,
+   "kind": "milestone"
+  },
+  {
+   "label": "Gertrude Ederle",
+   "qid": "Q263287",
+   "fame": 0.511,
+   "first": "First woman to swim the English Channel",
+   "description": "American swimmer (1905–2003)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "breakthrough"
+  },
+  {
+   "label": "Roger Bannister",
+   "qid": "Q319351",
+   "fame": 0.486,
+   "first": "First to run a mile in under four minutes",
+   "description": "English physician and athlete (1929–2018)",
+   "hook": "was a neurologist who ran at Oxford's Iffley Road track to break a famed barrier",
+   "known": 0.6,
+   "kind": "milestone"
+  },
+  {
+   "label": "Althea Gibson",
+   "qid": "Q53550",
+   "fame": 0.474,
+   "first": "First Black player to win a Grand Slam tennis title",
+   "description": "American tennis player (1927-2003)",
+   "hook": "took 11 major crowns across singles, doubles and mixed and later turned pro on the golf tour",
+   "known": 0.4,
+   "kind": "breakthrough"
+  }
+ ]
+}

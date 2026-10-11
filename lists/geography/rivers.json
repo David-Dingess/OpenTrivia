@@ -1,0 +1,7937 @@
+{
+ "id": "list.geography.rivers",
+ "title": "Rivers",
+ "prompt": "Name a river",
+ "genre": "society",
+ "category": "geography",
+ "topic": "rivers-and-lakes",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q4022 ; wdt:P2043 ?len . FILTER(?len > 300) FILTER NOT EXISTS { ?item wdt:P576 [] } } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-10-02T05:39:38.813Z"
+ },
+ "rows": [
+  {
+   "label": "Danube",
+   "qid": "Q1653",
+   "fame": 0.631,
+   "also": [
+    "Donau",
+    "Danube River",
+    "River Danube"
+   ]
+  },
+  {
+   "label": "Nile",
+   "qid": "Q3392",
+   "fame": 0.622,
+   "also": [
+    "River Nile",
+    "The Nile",
+    "Nile River",
+    "Nahr an Nīl",
+    "Bahr en Nīl",
+    "Nīl River",
+    "Nilus River",
+    "Shihor"
+   ]
+  },
+  {
+   "label": "Mississippi River",
+   "qid": "Q1497",
+   "fame": 0.613,
+   "also": [
+    "Mississippi",
+    "The Mississippi"
+   ]
+  },
+  {
+   "label": "Ganges",
+   "qid": "Q5089",
+   "fame": 0.58,
+   "also": [
+    "Ganga",
+    "Ganges River",
+    "River Ganges",
+    "Ganga Nadi"
+   ]
+  },
+  {
+   "label": "Rhine",
+   "qid": "Q584",
+   "fame": 0.58,
+   "also": [
+    "Rhine River"
+   ]
+  },
+  {
+   "label": "River Congo",
+   "qid": "Q3503",
+   "fame": 0.57,
+   "also": [
+    "Congo River",
+    "Zaire",
+    "Zaire River"
+   ]
+  },
+  {
+   "label": "Amazon River",
+   "qid": "Q3783",
+   "fame": 0.565,
+   "also": [
+    "The Amazon",
+    "Amazonian River",
+    "River Amazon",
+    "The Amazon River"
+   ]
+  },
+  {
+   "label": "River Thames",
+   "qid": "Q19686",
+   "fame": 0.561,
+   "also": [
+    "Thames",
+    "Tamesis",
+    "the River Thames",
+    "the Thames"
+   ]
+  },
+  {
+   "label": "Colorado River",
+   "qid": "Q1265",
+   "fame": 0.552,
+   "also": [
+    "Green River",
+    "North Fork",
+    "Big River",
+    "Grand River",
+    "Blue River",
+    "Rio de los Martires",
+    "Rio Colorado",
+    "Ahan Yava Kothickwa",
+    "Ancon de San Andres",
+    "Bunkara River",
+    "Buqui Acqumuri",
+    "Canon of the Colorado River"
+   ]
+  },
+  {
+   "label": "Yangtze River",
+   "qid": "Q5413",
+   "fame": 0.551,
+   "also": [
+    "Yangtze",
+    "Yang-tse",
+    "Yang-tse River",
+    "Yang-tsze",
+    "Yang-tsze-kiang",
+    "Yangtse-chiang",
+    "Yangtsze River",
+    "Yangtzekiang",
+    "Yangzi River",
+    "Yantse Kiang",
+    "Yang-tse-kiang",
+    "Jiang"
+   ]
+  },
+  {
+   "label": "Yellow River",
+   "qid": "Q7355",
+   "fame": 0.549,
+   "also": [
+    "Huang He",
+    "Hoang-ho",
+    "Hoan-ho",
+    "Hoan-ho R.",
+    "Hoan-ho River",
+    "Hoang-ho R.",
+    "Hoang-ho River",
+    "Huang He R.",
+    "Huang He River",
+    "Huang-ho",
+    "Huang-ho R.",
+    "Huang-ho River"
+   ]
+  },
+  {
+   "label": "Hudson River",
+   "qid": "Q3140",
+   "fame": 0.546,
+   "also": [
+    "Hudson"
+   ]
+  },
+  {
+   "label": "Rio Grande",
+   "qid": "Q160636",
+   "fame": 0.546,
+   "also": [
+    "Rio Bravo del Norte",
+    "Rio Grande River",
+    "Rio Bravo"
+   ]
+  },
+  {
+   "label": "Ohio River",
+   "qid": "Q4915",
+   "fame": 0.538,
+   "also": []
+  },
+  {
+   "label": "Volga",
+   "qid": "Q626",
+   "fame": 0.537,
+   "also": [
+    "Wolga",
+    "Volga River",
+    "River Volga",
+    "River Wolga",
+    "Volga R.",
+    "Wolga R.",
+    "Wolga River"
+   ]
+  },
+  {
+   "label": "Euphrates",
+   "qid": "Q34589",
+   "fame": 0.534,
+   "also": []
+  },
+  {
+   "label": "Missouri River",
+   "qid": "Q5419",
+   "fame": 0.534,
+   "also": [
+    "Missouri",
+    "The Missouri"
+   ]
+  },
+  {
+   "label": "Indus River",
+   "qid": "Q7348",
+   "fame": 0.533,
+   "also": [
+    "Indus",
+    "Sindh River",
+    "Mehran River",
+    "Indus R.",
+    "River Indus",
+    "Sindhu River",
+    "Darya-i-Sindh"
+   ]
+  },
+  {
+   "label": "Columbia River",
+   "qid": "Q2251",
+   "fame": 0.52,
+   "also": []
+  },
+  {
+   "label": "Brahmaputra River",
+   "qid": "Q45403",
+   "fame": 0.506,
+   "also": [
+    "Sky river",
+    "Brahmaputra",
+    "Dihong",
+    "Brahmapoutra",
+    "Brahmapoutra R.",
+    "Brahmapoutra River",
+    "Brahmaputra R.",
+    "Tsangpo-Brahmaputra"
+   ]
+  },
+  {
+   "label": "St. Lawrence River",
+   "qid": "Q134750",
+   "fame": 0.506,
+   "also": [
+    "Fleuve Saint-Laurent",
+    "Saint Lawrence River"
+   ]
+  },
+  {
+   "label": "Seine",
+   "qid": "Q1471",
+   "fame": 0.5,
+   "also": [
+    "river Seine",
+    "Seine River",
+    "the Seine"
+   ]
+  },
+  {
+   "label": "Potomac River",
+   "qid": "Q179444",
+   "fame": 0.498,
+   "also": [
+    "Co-hon-go-roo-ta River",
+    "Patawmeck River",
+    "Patawomeck River",
+    "Potowmac River"
+   ]
+  },
+  {
+   "label": "Niger River",
+   "qid": "Q3542",
+   "fame": 0.493,
+   "also": [
+    "Niger",
+    "fleuve Niger",
+    "Quorra",
+    "River Niger"
+   ]
+  },
+  {
+   "label": "Mekong River",
+   "qid": "Q41179",
+   "fame": 0.489,
+   "also": [
+    "Mekong",
+    "Lancang Jiang",
+    "Lancang R.",
+    "Lantzan Kiang",
+    "Lantzan R.",
+    "Lantzan River",
+    "Mekhong",
+    "Mekhong R.",
+    "Mekong R.",
+    "Lancang River"
+   ]
+  },
+  {
+   "label": "Tigris",
+   "qid": "Q35591",
+   "fame": 0.484,
+   "also": [
+    "Tigris River"
+   ]
+  },
+  {
+   "label": "Elbe",
+   "qid": "Q1644",
+   "fame": 0.48,
+   "also": [
+    "Labe",
+    "Elba",
+    "Łaba",
+    "Łobjo",
+    "Elbe River"
+   ]
+  },
+  {
+   "label": "Rhône",
+   "qid": "Q602",
+   "fame": 0.476,
+   "also": [
+    "Rhone River"
+   ]
+  },
+  {
+   "label": "Narmada",
+   "qid": "Q234004",
+   "fame": 0.474,
+   "also": [
+    "Narmada River",
+    "Narbada",
+    "Nerbudda"
+   ]
+  },
+  {
+   "label": "Godavari River",
+   "qid": "Q191314",
+   "fame": 0.472,
+   "also": [
+    "Godavari"
+   ]
+  },
+  {
+   "label": "Snake River",
+   "qid": "Q272074",
+   "fame": 0.469,
+   "also": [
+    "Sahaptin",
+    "Mad River",
+    "Lewis River",
+    "Louis River",
+    "Great Snake River",
+    "Kimeonim",
+    "Kimooenim",
+    "Kooskooskee River",
+    "Lewis and Clark's River",
+    "Lewis Fork",
+    "Saptin River",
+    "Shawpatin"
+   ]
+  },
+  {
+   "label": "River Severn",
+   "qid": "Q19682",
+   "fame": 0.466,
+   "also": [
+    "Severn",
+    "Afon Hafren"
+   ]
+  },
+  {
+   "label": "Dnieper",
+   "qid": "Q40855",
+   "fame": 0.463,
+   "also": [
+    "Dnepr",
+    "Dnipro",
+    "Dnieper River",
+    "Dnipro River"
+   ]
+  },
+  {
+   "label": "Susquehanna River",
+   "qid": "Q27538",
+   "fame": 0.462,
+   "also": [
+    "Susquehanna",
+    "Sasquehannagh",
+    "Susquehannah River"
+   ]
+  },
+  {
+   "label": "Vistula",
+   "qid": "Q548",
+   "fame": 0.455,
+   "also": [
+    "Weichsel",
+    "Wisła",
+    "Wisla",
+    "Visla"
+   ]
+  },
+  {
+   "label": "Amu Darya",
+   "qid": "Q8493",
+   "fame": 0.453,
+   "also": [
+    "Amu",
+    "Oxus",
+    "Hamu",
+    "Amu River",
+    "Amudaryo",
+    "Amou daria",
+    "Amu Daria",
+    "Hamu River",
+    "Amu Dar'ya river",
+    "River Amu Dar'ya"
+   ]
+  },
+  {
+   "label": "Loire",
+   "qid": "Q1469",
+   "fame": 0.452,
+   "also": [
+    "Loire River",
+    "River Loire"
+   ]
+  },
+  {
+   "label": "Vltava",
+   "qid": "Q131574",
+   "fame": 0.451,
+   "also": [
+    "Moldau",
+    "Veltava"
+   ]
+  },
+  {
+   "label": "Tiber",
+   "qid": "Q13712",
+   "fame": 0.45,
+   "also": [
+    "Tevere",
+    "Tiberis"
+   ]
+  },
+  {
+   "label": "Gandaki River",
+   "qid": "Q849494",
+   "fame": 0.448,
+   "also": [
+    "Narayani River",
+    "Thak Khola",
+    "Gandak River",
+    "Kali Gandaki River"
+   ]
+  },
+  {
+   "label": "White Nile",
+   "qid": "Q4814791",
+   "fame": 0.442,
+   "also": [
+    "Albert Nile",
+    "An Nīl al Abyaḑ",
+    "El Bahr el Abyad River",
+    "Mountain Nile",
+    "White Nile River"
+   ]
+  },
+  {
+   "label": "Mackenzie River",
+   "qid": "Q3411",
+   "fame": 0.441,
+   "also": [
+    "Dehcho",
+    "Fleuve Mackenzie",
+    "Kuukpak"
+   ]
+  },
+  {
+   "label": "Yamuna",
+   "qid": "Q132726",
+   "fame": 0.44,
+   "also": [
+    "Jumna",
+    "Jamna",
+    "Jumna river",
+    "Yamuna River"
+   ]
+  },
+  {
+   "label": "Arkansas River",
+   "qid": "Q8319",
+   "fame": 0.439,
+   "also": []
+  },
+  {
+   "label": "Douro River",
+   "qid": "Q14299",
+   "fame": 0.439,
+   "also": [
+    "Douro",
+    "Duero",
+    "Duero River"
+   ]
+  },
+  {
+   "label": "Orinoco River",
+   "qid": "Q131792",
+   "fame": 0.439,
+   "also": [
+    "Orinoco"
+   ]
+  },
+  {
+   "label": "Amur River",
+   "qid": "Q6862",
+   "fame": 0.429,
+   "also": [
+    "Amur",
+    "Heilong Jiang",
+    "Black River",
+    "Heilong River",
+    "Saghalien Oula",
+    "Black Dragon River",
+    "Heilongjiang River",
+    "Saghalien River"
+   ]
+  },
+  {
+   "label": "Delaware River",
+   "qid": "Q143762",
+   "fame": 0.429,
+   "also": []
+  },
+  {
+   "label": "Tennessee River",
+   "qid": "Q193737",
+   "fame": 0.429,
+   "also": []
+  },
+  {
+   "label": "Tagus River",
+   "qid": "Q14294",
+   "fame": 0.427,
+   "also": [
+    "Tagus",
+    "Tejo River",
+    "Tejo",
+    "Tajo",
+    "Tajo River"
+   ]
+  },
+  {
+   "label": "Meuse",
+   "qid": "Q41986",
+   "fame": 0.424,
+   "also": [
+    "Maas",
+    "Meuse River",
+    "Maos",
+    "Mosa",
+    "Mouze"
+   ]
+  },
+  {
+   "label": "Krishna River",
+   "qid": "Q193499",
+   "fame": 0.422,
+   "also": []
+  },
+  {
+   "label": "Yukon River",
+   "qid": "Q104437",
+   "fame": 0.419,
+   "also": [
+    "Yukon"
+   ]
+  },
+  {
+   "label": "Blue Nile",
+   "qid": "Q882739",
+   "fame": 0.418,
+   "also": [
+    "Abai river",
+    "Abay River",
+    "Abbai River",
+    "Abbay River",
+    "Al-bahr al-Azraq",
+    "Blue Nile River",
+    "El Bahr el Azraq",
+    "El Bahr el Azraq River"
+   ]
+  },
+  {
+   "label": "Murray River",
+   "qid": "Q183078",
+   "fame": 0.415,
+   "also": [
+    "River Murray",
+    "Indi Miky"
+   ]
+  },
+  {
+   "label": "Moselle",
+   "qid": "Q1667",
+   "fame": 0.411,
+   "also": [
+    "Mosel",
+    "Mosel River",
+    "Mosella River",
+    "Moselle River"
+   ]
+  },
+  {
+   "label": "Fraser River",
+   "qid": "Q269710",
+   "fame": 0.399,
+   "also": []
+  },
+  {
+   "label": "Han River",
+   "qid": "Q55500",
+   "fame": 0.399,
+   "also": [
+    "Han Gang",
+    "Han Jiang",
+    "Han Gang River",
+    "Han R.",
+    "Han-kang",
+    "Han-kang River",
+    "Hang R.",
+    "Hang River",
+    "Hang-kiang",
+    "River Han",
+    "River Hang",
+    "River Seoul"
+   ]
+  },
+  {
+   "label": "Sutlej",
+   "qid": "Q171675",
+   "fame": 0.397,
+   "also": [
+    "Satadree",
+    "Satluj River",
+    "Sutlej River",
+    "Satadru"
+   ]
+  },
+  {
+   "label": "Kosi River",
+   "qid": "Q695610",
+   "fame": 0.396,
+   "also": [
+    "Koshi River",
+    "Saptakoshi River"
+   ]
+  },
+  {
+   "label": "Chenab River",
+   "qid": "Q216875",
+   "fame": 0.395,
+   "also": [
+    "Acesines",
+    "Asikni",
+    "Chandrabhaga",
+    "Ashkini",
+    "Chanab",
+    "Chanha",
+    "Chenab",
+    "Chunab",
+    "Iskmati"
+   ]
+  },
+  {
+   "label": "Ebro",
+   "qid": "Q10965",
+   "fame": 0.395,
+   "also": []
+  },
+  {
+   "label": "Guadalquivir",
+   "qid": "Q14309",
+   "fame": 0.395,
+   "also": [
+    "Baetis river"
+   ]
+  },
+  {
+   "label": "Oder",
+   "qid": "Q552",
+   "fame": 0.394,
+   "also": [
+    "Odra",
+    "Oder River"
+   ]
+  },
+  {
+   "label": "Tumen River",
+   "qid": "Q55499",
+   "fame": 0.394,
+   "also": [
+    "Tumen Ula"
+   ]
+  },
+  {
+   "label": "Chao Phraya River",
+   "qid": "Q118850",
+   "fame": 0.391,
+   "also": [
+    "Mae Nam Chao Phraya",
+    "Maenam Chao Praya"
+   ]
+  },
+  {
+   "label": "Yalu River",
+   "qid": "Q55498",
+   "fame": 0.388,
+   "also": [
+    "Amrok",
+    "Apnok Kang",
+    "Yalu Chiang"
+   ]
+  },
+  {
+   "label": "Dniester",
+   "qid": "Q131210",
+   "fame": 0.386,
+   "also": [
+    "Dnister River"
+   ]
+  },
+  {
+   "label": "River Shannon",
+   "qid": "Q192820",
+   "fame": 0.384,
+   "also": [
+    "Shannon",
+    "Shannon R.",
+    "Shannon River"
+   ]
+  },
+  {
+   "label": "Lena River",
+   "qid": "Q46841",
+   "fame": 0.383,
+   "also": [
+    "Lena"
+   ]
+  },
+  {
+   "label": "Jhelum River",
+   "qid": "Q214874",
+   "fame": 0.382,
+   "also": [
+    "Hydaspes",
+    "Bihat",
+    "Jehlam River",
+    "Jehlum River",
+    "Jhelam River",
+    "Vehat",
+    "Vitastā",
+    "Vyeth"
+   ]
+  },
+  {
+   "label": "Sava",
+   "qid": "Q14383",
+   "fame": 0.382,
+   "also": [
+    "Save"
+   ]
+  },
+  {
+   "label": "Beas River",
+   "qid": "Q319590",
+   "fame": 0.381,
+   "also": [
+    "Vipasha"
+   ]
+  },
+  {
+   "label": "Irrawaddy River",
+   "qid": "Q26076",
+   "fame": 0.379,
+   "also": [
+    "Irawadi",
+    "Ayeyarwadi River"
+   ]
+  },
+  {
+   "label": "Spree",
+   "qid": "Q1684",
+   "fame": 0.379,
+   "also": []
+  },
+  {
+   "label": "Mahanadi",
+   "qid": "Q271044",
+   "fame": 0.378,
+   "also": [
+    "Mahánadé",
+    "Mahanadi River"
+   ]
+  },
+  {
+   "label": "Paraná River",
+   "qid": "Q127892",
+   "fame": 0.377,
+   "also": [
+    "Parana"
+   ]
+  },
+  {
+   "label": "Syr Darya",
+   "qid": "Q483159",
+   "fame": 0.377,
+   "also": [
+    "Sir",
+    "Sirr",
+    "Jaxartes",
+    "Syr",
+    "Iaxartes",
+    "Iaxartes River",
+    "Jaxartes River",
+    "River Iaxartes",
+    "River Jaxartes",
+    "River Sir",
+    "River Sirr",
+    "River Syr"
+   ]
+  },
+  {
+   "label": "Pearl River",
+   "qid": "Q201463",
+   "fame": 0.376,
+   "also": [
+    "Chu Chiang",
+    "Great River",
+    "Canton River",
+    "Ta River",
+    "Zhu River",
+    "Chu River",
+    "Chu Kiang",
+    "Chu-kiang River",
+    "Da River",
+    "River Canton",
+    "River Chu",
+    "River Ta"
+   ]
+  },
+  {
+   "label": "Sacramento River",
+   "qid": "Q335575",
+   "fame": 0.374,
+   "also": []
+  },
+  {
+   "label": "Yenisei",
+   "qid": "Q78707",
+   "fame": 0.372,
+   "also": [
+    "Yenisei River",
+    "Enisey",
+    "Yenisey",
+    "Jenisej",
+    "River Yenisei",
+    "Enisei",
+    "Enisei River",
+    "Enisey River",
+    "Jenisej River",
+    "River Enisei",
+    "River Enisey",
+    "River Jenisej"
+   ]
+  },
+  {
+   "label": "Main",
+   "qid": "Q1670",
+   "fame": 0.368,
+   "also": []
+  },
+  {
+   "label": "Yellowstone River",
+   "qid": "Q374772",
+   "fame": 0.368,
+   "also": [
+    "Yellowstone",
+    "Aahkawirahkata",
+    "E-chee-dick-karsh-ah-shay",
+    "Encheda-cahchi-ichi",
+    "Mi tse a-da-zi",
+    "Mi-tsi-a-da-zi",
+    "Moehe'yoe",
+    "Pierre Jaune",
+    "River a la Biche",
+    "River aux Roches Jaunes",
+    "River Rockybone",
+    "River Yellow Rock"
+   ]
+  },
+  {
+   "label": "Ghaghara River",
+   "qid": "Q390232",
+   "fame": 0.365,
+   "also": [
+    "Ghaghara",
+    "Karnali River",
+    "Ghagra River"
+   ]
+  },
+  {
+   "label": "Orange River",
+   "qid": "Q181475",
+   "fame": 0.365,
+   "also": [
+    "Groote River",
+    "Gariep",
+    "Senqu River"
+   ]
+  },
+  {
+   "label": "Ural River",
+   "qid": "Q80240",
+   "fame": 0.365,
+   "also": [
+    "Ural",
+    "Yaik",
+    "Jaik",
+    "Zhayyq"
+   ]
+  },
+  {
+   "label": "Don",
+   "qid": "Q1229",
+   "fame": 0.364,
+   "also": [
+    "Tanais",
+    "Don River",
+    "River Don"
+   ]
+  },
+  {
+   "label": "Ottawa River",
+   "qid": "Q60974",
+   "fame": 0.364,
+   "also": [
+    "Kichi-Sìbì",
+    "Kitchissippi",
+    "Riviere des Outaouais"
+   ]
+  },
+  {
+   "label": "Platte River",
+   "qid": "Q655754",
+   "fame": 0.364,
+   "also": [
+    "Platte"
+   ]
+  },
+  {
+   "label": "Tisza",
+   "qid": "Q134350",
+   "fame": 0.364,
+   "also": [
+    "Tisa",
+    "Theiss"
+   ]
+  },
+  {
+   "label": "Scheldt",
+   "qid": "Q37620",
+   "fame": 0.36,
+   "also": [
+    "Escaut",
+    "Le Sceau",
+    "Schelde"
+   ]
+  },
+  {
+   "label": "Rio Negro",
+   "qid": "Q118771",
+   "fame": 0.357,
+   "also": [
+    "Negro River"
+   ]
+  },
+  {
+   "label": "Tapti River",
+   "qid": "Q707056",
+   "fame": 0.356,
+   "also": [
+    "Tapti",
+    "Tapi river"
+   ]
+  },
+  {
+   "label": "Okavango River",
+   "qid": "Q188773",
+   "fame": 0.355,
+   "also": [
+    "Cubango",
+    "Kavango"
+   ]
+  },
+  {
+   "label": "Ravi River",
+   "qid": "Q317899",
+   "fame": 0.351,
+   "also": [
+    "Hyarotis",
+    "Airavati",
+    "Hydraotis",
+    "Iravati"
+   ]
+  },
+  {
+   "label": "Moskva River",
+   "qid": "Q175117",
+   "fame": 0.35,
+   "also": [
+    "Moskva"
+   ]
+  },
+  {
+   "label": "Irtysh",
+   "qid": "Q128102",
+   "fame": 0.345,
+   "also": [
+    "Irtish",
+    "Ertix R.",
+    "Ertix River",
+    "Irtish R.",
+    "Irtish River",
+    "Irtysh R.",
+    "Irtysh River",
+    "River Ertix",
+    "River Irtish",
+    "River Irtysh"
+   ]
+  },
+  {
+   "label": "Limpopo River",
+   "qid": "Q173017",
+   "fame": 0.345,
+   "also": [
+    "Limpopo"
+   ]
+  },
+  {
+   "label": "Neckar",
+   "qid": "Q1673",
+   "fame": 0.344,
+   "also": [
+    "NSU-Fiat"
+   ]
+  },
+  {
+   "label": "Garonne",
+   "qid": "Q5077",
+   "fame": 0.341,
+   "also": [
+    "Garonne river"
+   ]
+  },
+  {
+   "label": "Gambia River",
+   "qid": "Q160819",
+   "fame": 0.339,
+   "also": [
+    "River Gambia",
+    "River Gambra"
+   ]
+  },
+  {
+   "label": "Neman",
+   "qid": "Q5622",
+   "fame": 0.334,
+   "also": [
+    "Memel",
+    "Niemen",
+    "Nyoman",
+    "Nemunas",
+    "Nioman",
+    "Neman River"
+   ]
+  },
+  {
+   "label": "Adige",
+   "qid": "Q13696",
+   "fame": 0.332,
+   "also": [
+    "Adige River",
+    "Etsch",
+    "Atesis"
+   ]
+  },
+  {
+   "label": "Orontes River",
+   "qid": "Q188871",
+   "fame": 0.33,
+   "also": [
+    "Orontes"
+   ]
+  },
+  {
+   "label": "Daugava",
+   "qid": "Q8197",
+   "fame": 0.329,
+   "also": [
+    "Düna",
+    "Western Dvina",
+    "Dzvina",
+    "Daugava River"
+   ]
+  },
+  {
+   "label": "Volta River",
+   "qid": "Q192415",
+   "fame": 0.319,
+   "also": [
+    "Volta",
+    "River Volta"
+   ]
+  },
+  {
+   "label": "Aras River",
+   "qid": "Q179751",
+   "fame": 0.318,
+   "also": [
+    "Aras"
+   ]
+  },
+  {
+   "label": "Inn",
+   "qid": "Q14369",
+   "fame": 0.318,
+   "also": [
+    "Inn river"
+   ]
+  },
+  {
+   "label": "Senegal River",
+   "qid": "Q3569",
+   "fame": 0.315,
+   "also": [
+    "Senegal"
+   ]
+  },
+  {
+   "label": "Maritsa",
+   "qid": "Q204347",
+   "fame": 0.313,
+   "also": [
+    "Evros"
+   ]
+  },
+  {
+   "label": "Red River",
+   "qid": "Q206850",
+   "fame": 0.313,
+   "also": [
+    "Song Cai",
+    "Yuan River",
+    "Hong River"
+   ]
+  },
+  {
+   "label": "Saône",
+   "qid": "Q187834",
+   "fame": 0.313,
+   "also": []
+  },
+  {
+   "label": "Magdalena River",
+   "qid": "Q191829",
+   "fame": 0.312,
+   "also": []
+  },
+  {
+   "label": "Weser",
+   "qid": "Q1650",
+   "fame": 0.307,
+   "also": [
+    "Werser"
+   ]
+  },
+  {
+   "label": "Drava",
+   "qid": "Q171009",
+   "fame": 0.304,
+   "also": [
+    "Drave"
+   ]
+  },
+  {
+   "label": "Saskatchewan River",
+   "qid": "Q3047",
+   "fame": 0.302,
+   "also": [
+    "Saskatchewan"
+   ]
+  },
+  {
+   "label": "Drina",
+   "qid": "Q186901",
+   "fame": 0.3,
+   "also": []
+  },
+  {
+   "label": "Athabasca River",
+   "qid": "Q2216",
+   "fame": 0.297,
+   "also": [
+    "Athabasca"
+   ]
+  },
+  {
+   "label": "Salween River",
+   "qid": "Q26422",
+   "fame": 0.296,
+   "also": [
+    "Thanlwin",
+    "Salween",
+    "Nu River"
+   ]
+  },
+  {
+   "label": "Angara",
+   "qid": "Q162737",
+   "fame": 0.295,
+   "also": [
+    "Angara River"
+   ]
+  },
+  {
+   "label": "Paraguay River",
+   "qid": "Q179396",
+   "fame": 0.294,
+   "also": []
+  },
+  {
+   "label": "Vardar",
+   "qid": "Q189596",
+   "fame": 0.294,
+   "also": [
+    "Axios"
+   ]
+  },
+  {
+   "label": "Western Bug",
+   "qid": "Q156237",
+   "fame": 0.294,
+   "also": [
+    "Bug",
+    "Bug River"
+   ]
+  },
+  {
+   "label": "Huai River",
+   "qid": "Q213576",
+   "fame": 0.293,
+   "also": [
+    "Hwai River"
+   ]
+  },
+  {
+   "label": "Ubangi River",
+   "qid": "Q171649",
+   "fame": 0.292,
+   "also": [
+    "Oubangui"
+   ]
+  },
+  {
+   "label": "Darling River",
+   "qid": "Q181482",
+   "fame": 0.289,
+   "also": []
+  },
+  {
+   "label": "Kabul River",
+   "qid": "Q8515",
+   "fame": 0.287,
+   "also": [
+    "Cophes",
+    "Cophen River"
+   ]
+  },
+  {
+   "label": "Kura River",
+   "qid": "Q156557",
+   "fame": 0.286,
+   "also": [
+    "Kura",
+    "Kür çayı",
+    "Kür",
+    "Kura Nehri",
+    "Mtkvari"
+   ]
+  },
+  {
+   "label": "Saale",
+   "qid": "Q1678",
+   "fame": 0.285,
+   "also": [
+    "Saxon Saale",
+    "Thuringian Saale"
+   ]
+  },
+  {
+   "label": "Helmand River",
+   "qid": "Q8510",
+   "fame": 0.283,
+   "also": [
+    "Helmund",
+    "Helmend",
+    "Hirmand",
+    "Helmud river"
+   ]
+  },
+  {
+   "label": "Kagera River",
+   "qid": "Q2750140",
+   "fame": 0.283,
+   "also": [
+    "Akagera River",
+    "Alexandra Nile"
+   ]
+  },
+  {
+   "label": "Prut",
+   "qid": "Q182445",
+   "fame": 0.283,
+   "also": [
+    "Pruth"
+   ]
+  },
+  {
+   "label": "Vaal River",
+   "qid": "Q209530",
+   "fame": 0.283,
+   "also": [
+    "Vaal"
+   ]
+  },
+  {
+   "label": "Havel",
+   "qid": "Q1682",
+   "fame": 0.278,
+   "also": []
+  },
+  {
+   "label": "Xingu River",
+   "qid": "Q49544",
+   "fame": 0.278,
+   "also": [
+    "Xingu",
+    "Rio Xingu"
+   ]
+  },
+  {
+   "label": "Southern Bug",
+   "qid": "Q188940",
+   "fame": 0.277,
+   "also": [
+    "Boh River",
+    "Buh Pivdennyi",
+    "Hipanis",
+    "Pivdennyi Buh"
+   ]
+  },
+  {
+   "label": "Madeira River",
+   "qid": "Q118251",
+   "fame": 0.274,
+   "also": []
+  },
+  {
+   "label": "Marne",
+   "qid": "Q41983",
+   "fame": 0.274,
+   "also": []
+  },
+  {
+   "label": "Kızılırmak River",
+   "qid": "Q257785",
+   "fame": 0.271,
+   "also": [
+    "Alis",
+    "Kizil",
+    "Halys",
+    "Kizilirmak",
+    "Halys River",
+    "Marrassantiya"
+   ]
+  },
+  {
+   "label": "Songhua River",
+   "qid": "Q210326",
+   "fame": 0.271,
+   "also": [
+    "Sungari",
+    "Sunghwari"
+   ]
+  },
+  {
+   "label": "Uruguay River",
+   "qid": "Q18278",
+   "fame": 0.27,
+   "also": [
+    "Uruguay"
+   ]
+  },
+  {
+   "label": "Struma",
+   "qid": "Q204127",
+   "fame": 0.265,
+   "also": [
+    "Strymon",
+    "Strymonas"
+   ]
+  },
+  {
+   "label": "Morava",
+   "qid": "Q179251",
+   "fame": 0.264,
+   "also": [
+    "Marus",
+    "Morava river"
+   ]
+  },
+  {
+   "label": "Donets",
+   "qid": "Q191238",
+   "fame": 0.262,
+   "also": [
+    "Donetz",
+    "Donets River",
+    "Severskiy Donets",
+    "Seversky Donets",
+    "Siverskiy Donets",
+    "Siversky Donets",
+    "Siverskyi Donets",
+    "Siverskyy Donets"
+   ]
+  },
+  {
+   "label": "Essequibo River",
+   "qid": "Q589911",
+   "fame": 0.262,
+   "also": []
+  },
+  {
+   "label": "Ili River",
+   "qid": "Q192567",
+   "fame": 0.262,
+   "also": [
+    "Yili River",
+    "Yili",
+    "Ili",
+    "Ili R.",
+    "River Ili"
+   ]
+  },
+  {
+   "label": "Pripyat River",
+   "qid": "Q157042",
+   "fame": 0.26,
+   "also": [
+    "Pripyat",
+    "Pripiat River",
+    "Prypiać",
+    "Prypiać River",
+    "Prypiat River",
+    "Prypyat River"
+   ]
+  },
+  {
+   "label": "Dordogne",
+   "qid": "Q208174",
+   "fame": 0.258,
+   "also": [
+    "Duranius"
+   ]
+  },
+  {
+   "label": "Great Menderes River",
+   "qid": "Q211089",
+   "fame": 0.258,
+   "also": [
+    "Büyük Menderes River",
+    "Meander",
+    "Maeander",
+    "Mæander"
+   ]
+  },
+  {
+   "label": "Guadiana",
+   "qid": "Q14305",
+   "fame": 0.258,
+   "also": [
+    "Guadiana River",
+    "Anas River"
+   ]
+  },
+  {
+   "label": "Karun River",
+   "qid": "Q461557",
+   "fame": 0.257,
+   "also": [
+    "Karun",
+    "Karoon",
+    "Karoon River"
+   ]
+  },
+  {
+   "label": "Northern Dvina",
+   "qid": "Q8187",
+   "fame": 0.256,
+   "also": [
+    "Dwina",
+    "Severnaya Dvina"
+   ]
+  },
+  {
+   "label": "São Francisco River",
+   "qid": "Q142148",
+   "fame": 0.255,
+   "also": [
+    "São Francisco",
+    "Rio São Francisco",
+    "Rio São Francisco do Norte"
+   ]
+  },
+  {
+   "label": "Ussuri",
+   "qid": "Q207777",
+   "fame": 0.255,
+   "also": [
+    "Ussuri River",
+    "Wusuli River"
+   ]
+  },
+  {
+   "label": "Benue River",
+   "qid": "Q204806",
+   "fame": 0.252,
+   "also": [
+    "Benue",
+    "Chadda River",
+    "Tchadda River"
+   ]
+  },
+  {
+   "label": "Oka",
+   "qid": "Q172089",
+   "fame": 0.252,
+   "also": [
+    "Oka River"
+   ]
+  },
+  {
+   "label": "Awash River",
+   "qid": "Q782845",
+   "fame": 0.249,
+   "also": [
+    "Awaash"
+   ]
+  },
+  {
+   "label": "Marañón River",
+   "qid": "Q200174",
+   "fame": 0.249,
+   "also": [
+    "Marañon",
+    "Río Marañón"
+   ]
+  },
+  {
+   "label": "Tarim River",
+   "qid": "Q237901",
+   "fame": 0.245,
+   "also": [
+    "Tarim",
+    "Echardes",
+    "Echardes River",
+    "Oechardes",
+    "Oechardes River",
+    "Oikhardes",
+    "Oikhardes River",
+    "River Echardes",
+    "River Oechardes",
+    "River Oikhardes",
+    "River T'a-li-mu",
+    "River Tarim"
+   ]
+  },
+  {
+   "label": "Draa River",
+   "qid": "Q486636",
+   "fame": 0.244,
+   "also": [
+    "Wad Dara",
+    "Wad Dra",
+    "Wadi Dar'a",
+    "Wadi Dra",
+    "Wadi Draa",
+    "Dara",
+    "Lixus",
+    "Dra",
+    "Draa",
+    "Darha",
+    "Dara River",
+    "Asif en Dra"
+   ]
+  },
+  {
+   "label": "Sakarya River",
+   "qid": "Q217466",
+   "fame": 0.241,
+   "also": [
+    "Sangarius"
+   ]
+  },
+  {
+   "label": "Chari River",
+   "qid": "Q135477",
+   "fame": 0.24,
+   "also": [
+    "Shari River"
+   ]
+  },
+  {
+   "label": "Ucayali River",
+   "qid": "Q200952",
+   "fame": 0.239,
+   "also": [
+    "Ucayali",
+    "Río Ucayali"
+   ]
+  },
+  {
+   "label": "Iguazu River",
+   "qid": "Q191635",
+   "fame": 0.238,
+   "also": [
+    "Recorrido"
+   ]
+  },
+  {
+   "label": "Kapuas River",
+   "qid": "Q841359",
+   "fame": 0.237,
+   "also": [
+    "Great Kapoeas River",
+    "Great Kapuas",
+    "Kapuas Besar"
+   ]
+  },
+  {
+   "label": "Omo River",
+   "qid": "Q273456",
+   "fame": 0.237,
+   "also": [
+    "Umaa River"
+   ]
+  },
+  {
+   "label": "Kama",
+   "qid": "Q79082",
+   "fame": 0.235,
+   "also": [
+    "Kama River"
+   ]
+  },
+  {
+   "label": "Ems",
+   "qid": "Q1648",
+   "fame": 0.232,
+   "also": []
+  },
+  {
+   "label": "Jubba River",
+   "qid": "Q138491",
+   "fame": 0.232,
+   "also": [
+    "Juba",
+    "Webi Jubba"
+   ]
+  },
+  {
+   "label": "Mur",
+   "qid": "Q204040",
+   "fame": 0.229,
+   "also": [
+    "Mura"
+   ]
+  },
+  {
+   "label": "Liao River",
+   "qid": "Q559661",
+   "fame": 0.227,
+   "also": []
+  },
+  {
+   "label": "Selenga",
+   "qid": "Q75745",
+   "fame": 0.226,
+   "also": [
+    "Selenge",
+    "Selenga River"
+   ]
+  },
+  {
+   "label": "Mureș River",
+   "qid": "Q207493",
+   "fame": 0.225,
+   "also": [
+    "Mureș",
+    "Maros River"
+   ]
+  },
+  {
+   "label": "Warta",
+   "qid": "Q201823",
+   "fame": 0.223,
+   "also": []
+  },
+  {
+   "label": "Oise",
+   "qid": "Q200231",
+   "fame": 0.222,
+   "also": [
+    "Rivière Oise"
+   ]
+  },
+  {
+   "label": "Terek",
+   "qid": "Q82776",
+   "fame": 0.221,
+   "also": [
+    "Terek River"
+   ]
+  },
+  {
+   "label": "Xi River",
+   "qid": "Q216941",
+   "fame": 0.218,
+   "also": [
+    "West River",
+    "Xi Jiang"
+   ]
+  },
+  {
+   "label": "Minho River",
+   "qid": "Q14554",
+   "fame": 0.216,
+   "also": [
+    "Minho",
+    "Rio Minho",
+    "Río Miño"
+   ]
+  },
+  {
+   "label": "Adda",
+   "qid": "Q63109",
+   "fame": 0.211,
+   "also": []
+  },
+  {
+   "label": "Panj River",
+   "qid": "Q8542",
+   "fame": 0.21,
+   "also": [
+    "Panj",
+    "Ochus",
+    "Panja",
+    "Panja River",
+    "Ochus River",
+    "Pandja",
+    "Pandja River",
+    "River Ochus",
+    "River Pandja",
+    "River Panj",
+    "River Panja"
+   ]
+  },
+  {
+   "label": "Glomma",
+   "qid": "Q214535",
+   "fame": 0.208,
+   "also": [
+    "Glommen",
+    "Glåma",
+    "Stor-Elv"
+   ]
+  },
+  {
+   "label": "Berezina",
+   "qid": "Q207927",
+   "fame": 0.205,
+   "also": [
+    "Beresina",
+    "Biarezina"
+   ]
+  },
+  {
+   "label": "Orkhon River",
+   "qid": "Q237099",
+   "fame": 0.204,
+   "also": []
+  },
+  {
+   "label": "Khabur River",
+   "qid": "Q685344",
+   "fame": 0.202,
+   "also": [
+    "Khabur"
+   ]
+  },
+  {
+   "label": "Tocantins River",
+   "qid": "Q156054",
+   "fame": 0.202,
+   "also": [
+    "Rio Tocantins",
+    "Tocantins"
+   ]
+  },
+  {
+   "label": "Narew",
+   "qid": "Q60055",
+   "fame": 0.201,
+   "also": []
+  },
+  {
+   "label": "Abakan",
+   "qid": "Q216950",
+   "fame": 0.2,
+   "also": [
+    "Bolshoy Abakan"
+   ]
+  },
+  {
+   "label": "Abitibi River",
+   "qid": "Q59647",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Abuna River",
+   "qid": "Q1477896",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Acre River",
+   "qid": "Q73584",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Adycha River",
+   "qid": "Q380249",
+   "fame": 0.2,
+   "also": [
+    "Adycha"
+   ]
+  },
+  {
+   "label": "Adzva",
+   "qid": "Q378723",
+   "fame": 0.2,
+   "also": [
+    "Adzva River"
+   ]
+  },
+  {
+   "label": "Agan River",
+   "qid": "Q390433",
+   "fame": 0.2,
+   "also": [
+    "Agan"
+   ]
+  },
+  {
+   "label": "Aguarico River",
+   "qid": "Q397928",
+   "fame": 0.2,
+   "also": [
+    "Río Aguarico"
+   ]
+  },
+  {
+   "label": "Agusan River",
+   "qid": "Q398774",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Akhtuba",
+   "qid": "Q341057",
+   "fame": 0.2,
+   "also": [
+    "Akhtuba River"
+   ]
+  },
+  {
+   "label": "Aksu River",
+   "qid": "Q4059960",
+   "fame": 0.2,
+   "also": [
+    "Aksu",
+    "Aqsū"
+   ]
+  },
+  {
+   "label": "Alabama River",
+   "qid": "Q558643",
+   "fame": 0.2,
+   "also": [
+    "Alabama"
+   ]
+  },
+  {
+   "label": "Alazeya",
+   "qid": "Q82228",
+   "fame": 0.2,
+   "also": [
+    "Alazeya River"
+   ]
+  },
+  {
+   "label": "Albany River",
+   "qid": "Q1241991",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Aley",
+   "qid": "Q1057823",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Alibori River",
+   "qid": "Q4725666",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Allaikha River",
+   "qid": "Q1313409",
+   "fame": 0.2,
+   "also": [
+    "Allaikha",
+    "Allaykha"
+   ]
+  },
+  {
+   "label": "Allakh-Yun",
+   "qid": "Q1817886",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Allegheny River",
+   "qid": "Q686021",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Allier",
+   "qid": "Q2464",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Amga",
+   "qid": "Q186155",
+   "fame": 0.2,
+   "also": [
+    "Amga River"
+   ]
+  },
+  {
+   "label": "Amguema",
+   "qid": "Q470525",
+   "fame": 0.2,
+   "also": [
+    "Amguyema"
+   ]
+  },
+  {
+   "label": "Amgun River",
+   "qid": "Q470542",
+   "fame": 0.2,
+   "also": [
+    "Amgun"
+   ]
+  },
+  {
+   "label": "Anabar",
+   "qid": "Q82187",
+   "fame": 0.2,
+   "also": [
+    "Anabar River"
+   ]
+  },
+  {
+   "label": "Ångermanälven",
+   "qid": "Q271112",
+   "fame": 0.2,
+   "also": [
+    "Ångerman"
+   ]
+  },
+  {
+   "label": "Anseba River",
+   "qid": "Q569470",
+   "fame": 0.2,
+   "also": [
+    "Anseba"
+   ]
+  },
+  {
+   "label": "Anuy",
+   "qid": "Q612422",
+   "fame": 0.2,
+   "also": [
+    "Anui River",
+    "Anuy River"
+   ]
+  },
+  {
+   "label": "Anyuy River",
+   "qid": "Q2286960",
+   "fame": 0.2,
+   "also": [
+    "Anyuy",
+    "Dondon"
+   ]
+  },
+  {
+   "label": "Apa River",
+   "qid": "Q1285293",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Apure River",
+   "qid": "Q853315",
+   "fame": 0.2,
+   "also": [
+    "Apure",
+    "Río Apure"
+   ]
+  },
+  {
+   "label": "Apurímac River",
+   "qid": "Q214921",
+   "fame": 0.2,
+   "also": [
+    "Río Apurímac",
+    "Apurimac"
+   ]
+  },
+  {
+   "label": "Arauca River",
+   "qid": "Q1059928",
+   "fame": 0.2,
+   "also": [
+    "Río Arauca"
+   ]
+  },
+  {
+   "label": "Arghandab River",
+   "qid": "Q8498",
+   "fame": 0.2,
+   "also": [
+    "Arachosia",
+    "Arachotos"
+   ]
+  },
+  {
+   "label": "Arun River",
+   "qid": "Q1111197",
+   "fame": 0.2,
+   "also": [
+    "Arun",
+    "Pum Qu",
+    "Bum Chu"
+   ]
+  },
+  {
+   "label": "Aruwimi River",
+   "qid": "Q540956",
+   "fame": 0.2,
+   "also": [
+    "Aruwimi"
+   ]
+  },
+  {
+   "label": "Arys River",
+   "qid": "Q2622025",
+   "fame": 0.2,
+   "also": [
+    "Arys"
+   ]
+  },
+  {
+   "label": "Ashburton River",
+   "qid": "Q724934",
+   "fame": 0.2,
+   "also": [
+    "Curlew River",
+    "Willem's River"
+   ]
+  },
+  {
+   "label": "Assiniboine River",
+   "qid": "Q220503",
+   "fame": 0.2,
+   "also": [
+    "Assiniboine"
+   ]
+  },
+  {
+   "label": "Atbarah River",
+   "qid": "Q753897",
+   "fame": 0.2,
+   "also": [
+    "Atbara",
+    "Atbara river",
+    "Black Nile",
+    "Red Nile"
+   ]
+  },
+  {
+   "label": "Athi-Galana-Sabaki River",
+   "qid": "Q1508817",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Atrato River",
+   "qid": "Q1363972",
+   "fame": 0.2,
+   "also": [
+    "Atrato"
+   ]
+  },
+  {
+   "label": "Atrek River",
+   "qid": "Q283622",
+   "fame": 0.2,
+   "also": [
+    "Atrek",
+    "Rūdkhāneh-ye Atrak"
+   ]
+  },
+  {
+   "label": "Ayaguz River",
+   "qid": "Q2668113",
+   "fame": 0.2,
+   "also": [
+    "Ayagöz",
+    "Ajaguz River",
+    "Ayaköz"
+   ]
+  },
+  {
+   "label": "Badyarikha River",
+   "qid": "Q267885",
+   "fame": 0.2,
+   "also": [
+    "Badyarikha"
+   ]
+  },
+  {
+   "label": "Bafing River",
+   "qid": "Q180558",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bagmati River",
+   "qid": "Q4461769",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bahr al-Arab",
+   "qid": "Q153506",
+   "fame": 0.2,
+   "also": [
+    "Kiir River"
+   ]
+  },
+  {
+   "label": "Bahr Aouk River",
+   "qid": "Q769856",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bahr el Ghazal River",
+   "qid": "Q803634",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bahr Salamat",
+   "qid": "Q1301912",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bakoy River",
+   "qid": "Q789056",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Balkh River",
+   "qid": "Q2881031",
+   "fame": 0.2,
+   "also": [
+    "Baktros"
+   ]
+  },
+  {
+   "label": "Balsas River",
+   "qid": "Q1129218",
+   "fame": 0.2,
+   "also": [
+    "Atoyac River",
+    "Mezcala River"
+   ]
+  },
+  {
+   "label": "Banas River",
+   "qid": "Q2722701",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bandama River",
+   "qid": "Q789969",
+   "fame": 0.2,
+   "also": [
+    "Bandama"
+   ]
+  },
+  {
+   "label": "Bani River",
+   "qid": "Q289460",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Barak River",
+   "qid": "Q1709169",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Barguzin",
+   "qid": "Q808176",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Barito River",
+   "qid": "Q979518",
+   "fame": 0.2,
+   "also": [
+    "Barito-rivier",
+    "River Banjer"
+   ]
+  },
+  {
+   "label": "Barka River",
+   "qid": "Q808239",
+   "fame": 0.2,
+   "also": [
+    "Baraka",
+    "Baraka River",
+    "Nahr Baraka"
+   ]
+  },
+  {
+   "label": "Baro River",
+   "qid": "Q808543",
+   "fame": 0.2,
+   "also": [
+    "Upeno River"
+   ]
+  },
+  {
+   "label": "Bartang River",
+   "qid": "Q809231",
+   "fame": 0.2,
+   "also": [
+    "Bartang",
+    "Aksu River",
+    "Murghab River"
+   ]
+  },
+  {
+   "label": "Batang Hari",
+   "qid": "Q810720",
+   "fame": 0.2,
+   "also": [
+    "Batang Hari River",
+    "Djambi-rivier"
+   ]
+  },
+  {
+   "label": "Batang Rajang",
+   "qid": "Q1474026",
+   "fame": 0.2,
+   "also": [
+    "Rajang River",
+    "Rajakng River"
+   ]
+  },
+  {
+   "label": "Belaya River",
+   "qid": "Q815243",
+   "fame": 0.2,
+   "also": [
+    "Belaya"
+   ]
+  },
+  {
+   "label": "Bengawan Solo River",
+   "qid": "Q2902049",
+   "fame": 0.2,
+   "also": [
+    "Solo River",
+    "Bengawan Solo",
+    "Bengawan River",
+    "Great River of Solo"
+   ]
+  },
+  {
+   "label": "Beni River",
+   "qid": "Q142604",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Benito River",
+   "qid": "Q2634342",
+   "fame": 0.2,
+   "also": [
+    "Benito",
+    "Uoro River",
+    "Mbini",
+    "Woleu"
+   ]
+  },
+  {
+   "label": "Berbice River",
+   "qid": "Q2896921",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Berd",
+   "qid": "Q818861",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bermejo",
+   "qid": "Q270467",
+   "fame": 0.2,
+   "also": [
+    "Bermejo River"
+   ]
+  },
+  {
+   "label": "Beryozovka River",
+   "qid": "Q820758",
+   "fame": 0.2,
+   "also": [
+    "Beryozovka",
+    "Berëzovka"
+   ]
+  },
+  {
+   "label": "Betsiboka River",
+   "qid": "Q425",
+   "fame": 0.2,
+   "also": [
+    "Betsiboka"
+   ]
+  },
+  {
+   "label": "Betwa River",
+   "qid": "Q1334522",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bhima River",
+   "qid": "Q854999",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Big Black River",
+   "qid": "Q1042217",
+   "fame": 0.2,
+   "also": [
+    "Loosa Chitto"
+   ]
+  },
+  {
+   "label": "Big Sioux River",
+   "qid": "Q859274",
+   "fame": 0.2,
+   "also": [
+    "Calumet River",
+    "Red Pipe Stone River",
+    "Sious River",
+    "Sioux River",
+    "Tchankasndata"
+   ]
+  },
+  {
+   "label": "Big Uzen",
+   "qid": "Q1514184",
+   "fame": 0.2,
+   "also": [
+    "Bolshoy Uzen",
+    "Ulken Uzen"
+   ]
+  },
+  {
+   "label": "Bighorn River",
+   "qid": "Q859686",
+   "fame": 0.2,
+   "also": [
+    "Arikusu Hukaahaanu",
+    "Arikusu Huukaahaanu",
+    "Big Wind River",
+    "Great Horn River",
+    "Ksaiyo'he",
+    "Le Corne"
+   ]
+  },
+  {
+   "label": "Bikin",
+   "qid": "Q860113",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Biryusa",
+   "qid": "Q386101",
+   "fame": 0.2,
+   "also": [
+    "Ona",
+    "Ona River",
+    "Biryusa River"
+   ]
+  },
+  {
+   "label": "Bityug",
+   "qid": "Q878830",
+   "fame": 0.2,
+   "also": [
+    "Bityug River"
+   ]
+  },
+  {
+   "label": "Biya",
+   "qid": "Q859934",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Black River",
+   "qid": "Q1922260",
+   "fame": 0.2,
+   "also": [
+    "Sông Đà",
+    "Lixian River"
+   ]
+  },
+  {
+   "label": "Black Volta",
+   "qid": "Q1256528",
+   "fame": 0.2,
+   "also": [
+    "Black Volta River",
+    "Mouhoun River"
+   ]
+  },
+  {
+   "label": "Bogotá River",
+   "qid": "Q1278695",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bolshaya Chukochya River",
+   "qid": "Q1548523",
+   "fame": 0.2,
+   "also": [
+    "Bolshaya Chukochya",
+    "Chukochya River"
+   ]
+  },
+  {
+   "label": "Bolshaya Kheta River",
+   "qid": "Q185328",
+   "fame": 0.2,
+   "also": [
+    "Bolshaya Kheta"
+   ]
+  },
+  {
+   "label": "Bolshaya Ussurka River",
+   "qid": "Q891573",
+   "fame": 0.2,
+   "also": [
+    "Bolshaya Ussurka"
+   ]
+  },
+  {
+   "label": "Bolshoy Anyuy",
+   "qid": "Q1465920",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bolshoy Cheremshan",
+   "qid": "Q224686",
+   "fame": 0.2,
+   "also": [
+    "Bolshoy Cheremshan River"
+   ]
+  },
+  {
+   "label": "Bolshoy Ik",
+   "qid": "Q68941",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bolshoy Irgiz",
+   "qid": "Q613666",
+   "fame": 0.2,
+   "also": [
+    "Bolshoy Irgiz River"
+   ]
+  },
+  {
+   "label": "Bolshoy Kinel",
+   "qid": "Q277416",
+   "fame": 0.2,
+   "also": [
+    "Bol'shaya Kinel'",
+    "Bolshoy Kinel River"
+   ]
+  },
+  {
+   "label": "Bolshoy Yenisei",
+   "qid": "Q1548748",
+   "fame": 0.2,
+   "also": [
+    "Great Yenisei",
+    "Bol'shoj Enisej"
+   ]
+  },
+  {
+   "label": "Bolshoy Yugan",
+   "qid": "Q13203321",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Borzya River",
+   "qid": "Q894199",
+   "fame": 0.2,
+   "also": [
+    "Borzya"
+   ]
+  },
+  {
+   "label": "Boteti River",
+   "qid": "Q859594",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bow River",
+   "qid": "Q895385",
+   "fame": 0.2,
+   "also": [
+    "Bow"
+   ]
+  },
+  {
+   "label": "Brahmani River",
+   "qid": "Q2639171",
+   "fame": 0.2,
+   "also": [
+    "Brahmani"
+   ]
+  },
+  {
+   "label": "Branco River",
+   "qid": "Q1165761",
+   "fame": 0.2,
+   "also": [
+    "Rio Branco",
+    "White River"
+   ]
+  },
+  {
+   "label": "Brantas River",
+   "qid": "Q2570778",
+   "fame": 0.2,
+   "also": [
+    "Kali Brantas"
+   ]
+  },
+  {
+   "label": "Brazos River",
+   "qid": "Q903306",
+   "fame": 0.2,
+   "also": [
+    "Maligne",
+    "La Trinidad",
+    "Rio Colorado",
+    "Colorado River",
+    "Rio Trinidad",
+    "Brazos de Dios",
+    "Los Brazos de Dios",
+    "Rio Brasos de Dios",
+    "Rio Brazos de Dios",
+    "Rio de los Brazos de Dios",
+    "Rio Espiritu Santo",
+    "The River of the Arms of God"
+   ]
+  },
+  {
+   "label": "Breede River",
+   "qid": "Q904992",
+   "fame": 0.2,
+   "also": [
+    "Breë River"
+   ]
+  },
+  {
+   "label": "Brisbane River",
+   "qid": "Q905910",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bukhan River",
+   "qid": "Q494423",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bukhtarma River",
+   "qid": "Q999149",
+   "fame": 0.2,
+   "also": [
+    "Bukhtarma"
+   ]
+  },
+  {
+   "label": "Burdekin River",
+   "qid": "Q1010448",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bureya",
+   "qid": "Q729705",
+   "fame": 0.2,
+   "also": [
+    "Bureya River"
+   ]
+  },
+  {
+   "label": "Buzău River",
+   "qid": "Q833164",
+   "fame": 0.2,
+   "also": [
+    "Buzău"
+   ]
+  },
+  {
+   "label": "Buzuluk",
+   "qid": "Q602463",
+   "fame": 0.2,
+   "also": [
+    "Buzuluk River"
+   ]
+  },
+  {
+   "label": "Byoryolyokh",
+   "qid": "Q879450",
+   "fame": 0.2,
+   "also": [
+    "Bërëlëkh"
+   ]
+  },
+  {
+   "label": "Bystry Tanyp",
+   "qid": "Q20619140",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Bytantay",
+   "qid": "Q974630",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cả River",
+   "qid": "Q589583",
+   "fame": 0.2,
+   "also": [
+    "Hoi Lam Giang",
+    "Lam River"
+   ]
+  },
+  {
+   "label": "Cagayan River",
+   "qid": "Q545808",
+   "fame": 0.2,
+   "also": [
+    "Río Grande de Cagayán"
+   ]
+  },
+  {
+   "label": "Caledon River",
+   "qid": "Q509983",
+   "fame": 0.2,
+   "also": [
+    "Mohokare River",
+    "Wilhelminarivier"
+   ]
+  },
+  {
+   "label": "Canadian River",
+   "qid": "Q597753",
+   "fame": 0.2,
+   "also": [
+    "South Canadian River"
+   ]
+  },
+  {
+   "label": "Cape Fear River",
+   "qid": "Q1034421",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Caroní River",
+   "qid": "Q590533",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Casamance River",
+   "qid": "Q255093",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Casiquiare canal",
+   "qid": "Q331455",
+   "fame": 0.2,
+   "also": [
+    "Casiquiare",
+    "Cassiquiari",
+    "Río Casiquiare"
+   ]
+  },
+  {
+   "label": "Catatumbo River",
+   "qid": "Q1948210",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cauca River",
+   "qid": "Q853332",
+   "fame": 0.2,
+   "also": [
+    "Cauca"
+   ]
+  },
+  {
+   "label": "Caura River",
+   "qid": "Q1121956",
+   "fame": 0.2,
+   "also": [
+    "Río Caura"
+   ]
+  },
+  {
+   "label": "Cauto River",
+   "qid": "Q472849",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cavalla River",
+   "qid": "Q627944",
+   "fame": 0.2,
+   "also": [
+    "Cavalla",
+    "Cavally",
+    "Youbou",
+    "Diougou"
+   ]
+  },
+  {
+   "label": "Ceyhan River",
+   "qid": "Q1057961",
+   "fame": 0.2,
+   "also": [
+    "Ceyhan"
+   ]
+  },
+  {
+   "label": "Chambal River",
+   "qid": "Q1060631",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chambeshi River",
+   "qid": "Q777999",
+   "fame": 0.2,
+   "also": [
+    "Chambeze River",
+    "Chambezi River"
+   ]
+  },
+  {
+   "label": "Chara",
+   "qid": "Q1074898",
+   "fame": 0.2,
+   "also": [
+    "Chara River"
+   ]
+  },
+  {
+   "label": "Charyn River",
+   "qid": "Q2995415",
+   "fame": 0.2,
+   "also": [
+    "Charyn",
+    "Sharyn",
+    "Kur-Tcharyn",
+    "River Charyn",
+    "River Sharyn",
+    "Sharyn River",
+    "Tcharyn"
+   ]
+  },
+  {
+   "label": "Charysh",
+   "qid": "Q747219",
+   "fame": 0.2,
+   "also": [
+    "Charysh River"
+   ]
+  },
+  {
+   "label": "Chaya",
+   "qid": "Q1669375",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chelif River",
+   "qid": "Q772214",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cheptsa",
+   "qid": "Q864697",
+   "fame": 0.2,
+   "also": [
+    "Cheptsa River"
+   ]
+  },
+  {
+   "label": "Cher",
+   "qid": "Q213503",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cheyenne River",
+   "qid": "Q2116752",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chi River",
+   "qid": "Q1071554",
+   "fame": 0.2,
+   "also": [
+    "Mae Nam Chi"
+   ]
+  },
+  {
+   "label": "Chikoy",
+   "qid": "Q203228",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chindwin River",
+   "qid": "Q870069",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chir",
+   "qid": "Q71122",
+   "fame": 0.2,
+   "also": [
+    "Chir River"
+   ]
+  },
+  {
+   "label": "Chona",
+   "qid": "Q1932182",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chubut River",
+   "qid": "Q955354",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chuluut River",
+   "qid": "Q402844",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chulym",
+   "qid": "Q214768",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chumysh",
+   "qid": "Q1312072",
+   "fame": 0.2,
+   "also": [
+    "Chumysh River"
+   ]
+  },
+  {
+   "label": "Churchill River",
+   "qid": "Q3318",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Chusovaya",
+   "qid": "Q756091",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cimarron River",
+   "qid": "Q1092055",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Clark Fork",
+   "qid": "Q664874",
+   "fame": 0.2,
+   "also": [
+    "Clark Fork River"
+   ]
+  },
+  {
+   "label": "Coco River",
+   "qid": "Q1468689",
+   "fame": 0.2,
+   "also": [
+    "Río Wanki",
+    "Segovia River",
+    "Wangki River",
+    "Río Wangki",
+    "Río Segovia"
+   ]
+  },
+  {
+   "label": "Colville River",
+   "qid": "Q1113020",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Connecticut River",
+   "qid": "Q379648",
+   "fame": 0.2,
+   "also": [
+    "Connecticut River Estuary and Tidal River Wetlands Complex"
+   ]
+  },
+  {
+   "label": "Cooper Creek",
+   "qid": "Q432278",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Coosa River",
+   "qid": "Q1129913",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Copper River",
+   "qid": "Q1131444",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Coppermine River",
+   "qid": "Q1131514",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Corubal River",
+   "qid": "Q2411947",
+   "fame": 0.2,
+   "also": [
+    "Tomine",
+    "Corubal",
+    "Rio Corubal"
+   ]
+  },
+  {
+   "label": "Çoruh",
+   "qid": "Q70970",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Courantyne River",
+   "qid": "Q508582",
+   "fame": 0.2,
+   "also": [
+    "Corentyn River",
+    "Corentyne River"
+   ]
+  },
+  {
+   "label": "Cross River",
+   "qid": "Q1141201",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cuando River",
+   "qid": "Q182942",
+   "fame": 0.2,
+   "also": [
+    "Chobe River",
+    "Kwando",
+    "Linyanti River"
+   ]
+  },
+  {
+   "label": "Cuiabá River",
+   "qid": "Q998087",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cumberland River",
+   "qid": "Q1143718",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Cuyuni River",
+   "qid": "Q1146770",
+   "fame": 0.2,
+   "also": [
+    "Manuel Alejandro Linares Ponce"
+   ]
+  },
+  {
+   "label": "Dadu River",
+   "qid": "Q1075393",
+   "fame": 0.2,
+   "also": [
+    "Dajin River",
+    "Daduhe River"
+   ]
+  },
+  {
+   "label": "Damodar River",
+   "qid": "Q1971511",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dasht River",
+   "qid": "Q1030262",
+   "fame": 0.2,
+   "also": [
+    "Dasht",
+    "Dasht Kaur"
+   ]
+  },
+  {
+   "label": "Delgermörön",
+   "qid": "Q401637",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Demerara River",
+   "qid": "Q1185369",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Demyanka",
+   "qid": "Q1185746",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Des Moines River",
+   "qid": "Q492787",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Desaguadero River",
+   "qid": "Q385342",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Deseado River",
+   "qid": "Q1544156",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dez River",
+   "qid": "Q1207296",
+   "fame": 0.2,
+   "also": [
+    "Rūdkhāneh-ye Dez"
+   ]
+  },
+  {
+   "label": "Diamantina River",
+   "qid": "Q1208608",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Digul River",
+   "qid": "Q575695",
+   "fame": 0.2,
+   "also": [
+    "Digul",
+    "Sungai Digul",
+    "Oewamba Rivier"
+   ]
+  },
+  {
+   "label": "Dinder River",
+   "qid": "Q2604961",
+   "fame": 0.2,
+   "also": [
+    "Dinder Wenz"
+   ]
+  },
+  {
+   "label": "Dja River",
+   "qid": "Q1231996",
+   "fame": 0.2,
+   "also": [
+    "Ngoko River"
+   ]
+  },
+  {
+   "label": "Doce River",
+   "qid": "Q1757394",
+   "fame": 0.2,
+   "also": [
+    "Rio Doce"
+   ]
+  },
+  {
+   "label": "Dong Nai River",
+   "qid": "Q2330067",
+   "fame": 0.2,
+   "also": [
+    "Đồng Nai River",
+    "Sông Đồng Nai"
+   ]
+  },
+  {
+   "label": "Dong River",
+   "qid": "Q285137",
+   "fame": 0.2,
+   "also": [
+    "Dong Jiang"
+   ]
+  },
+  {
+   "label": "Dudypta",
+   "qid": "Q1263834",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dulce River",
+   "qid": "Q2565430",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Dulgalakh River",
+   "qid": "Q1264793",
+   "fame": 0.2,
+   "also": [
+    "Dulgalakh"
+   ]
+  },
+  {
+   "label": "Durance",
+   "qid": "Q754718",
+   "fame": 0.2,
+   "also": [
+    "Durença",
+    "Durènço"
+   ]
+  },
+  {
+   "label": "Dyoma",
+   "qid": "Q1232261",
+   "fame": 0.2,
+   "also": [
+    "Dyoma River"
+   ]
+  },
+  {
+   "label": "Dzhida",
+   "qid": "Q1262097",
+   "fame": 0.2,
+   "also": [
+    "Dzhida River"
+   ]
+  },
+  {
+   "label": "Eg River",
+   "qid": "Q236910",
+   "fame": 0.2,
+   "also": [
+    "Egiin Gol"
+   ]
+  },
+  {
+   "label": "Egorlyk",
+   "qid": "Q1686539",
+   "fame": 0.2,
+   "also": [
+    "Yegorlyk",
+    "Yegorlyk River"
+   ]
+  },
+  {
+   "label": "Elgi",
+   "qid": "Q2450529",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Emba River",
+   "qid": "Q517670",
+   "fame": 0.2,
+   "also": [
+    "Emba",
+    "Zhem"
+   ]
+  },
+  {
+   "label": "Falémé River",
+   "qid": "Q995969",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Farah River",
+   "qid": "Q2091566",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Faro River",
+   "qid": "Q16918124",
+   "fame": 0.2,
+   "also": [
+    "Faro"
+   ]
+  },
+  {
+   "label": "Fen River",
+   "qid": "Q1154778",
+   "fame": 0.2,
+   "also": [
+    "Fen He"
+   ]
+  },
+  {
+   "label": "Finlay River",
+   "qid": "Q280696",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Fish River",
+   "qid": "Q1143836",
+   "fame": 0.2,
+   "also": [
+    "The Fish River"
+   ]
+  },
+  {
+   "label": "Fitzroy River",
+   "qid": "Q1421409",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Flinders River",
+   "qid": "Q1428816",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Fly River",
+   "qid": "Q739751",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gamtoos River",
+   "qid": "Q3312383",
+   "fame": 0.2,
+   "also": [
+    "Gamptoos River"
+   ]
+  },
+  {
+   "label": "Gan River",
+   "qid": "Q1046685",
+   "fame": 0.2,
+   "also": [
+    "Gan Jiang"
+   ]
+  },
+  {
+   "label": "Ganale Dorya River",
+   "qid": "Q1493334",
+   "fame": 0.2,
+   "also": [
+    "Ganale Doria River",
+    "Genalē Wenz"
+   ]
+  },
+  {
+   "label": "Gascoyne River",
+   "qid": "Q1495089",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gazimur River",
+   "qid": "Q1495175",
+   "fame": 0.2,
+   "also": [
+    "Gazimur"
+   ]
+  },
+  {
+   "label": "Geba River",
+   "qid": "Q201520",
+   "fame": 0.2,
+   "also": [
+    "Kayanga River"
+   ]
+  },
+  {
+   "label": "Gediz River",
+   "qid": "Q1351474",
+   "fame": 0.2,
+   "also": [
+    "Gediz"
+   ]
+  },
+  {
+   "label": "Genil",
+   "qid": "Q17760",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Geum River",
+   "qid": "Q489139",
+   "fame": 0.2,
+   "also": [
+    "Kŭmgang"
+   ]
+  },
+  {
+   "label": "Ghaggar-Hakra river",
+   "qid": "Q798422",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gila River",
+   "qid": "Q838143",
+   "fame": 0.2,
+   "also": [
+    "Rio Azul",
+    "Akee-mull",
+    "Apache de Gila",
+    "Brazo de Miraflores",
+    "Cina`ahuwipi",
+    "Hah-quah-sa eel",
+    "Hela River",
+    "Jila River",
+    "Rio de las Balsas",
+    "Rio del los Apostoles",
+    "Rio del Nombre Jesus",
+    "Rio Gila"
+   ]
+  },
+  {
+   "label": "Gilyuy",
+   "qid": "Q1524376",
+   "fame": 0.2,
+   "also": [
+    "Gilyuy River"
+   ]
+  },
+  {
+   "label": "Gomal River",
+   "qid": "Q8501",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gomti River",
+   "qid": "Q477676",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gonam River",
+   "qid": "Q1535737",
+   "fame": 0.2,
+   "also": [
+    "Gonam"
+   ]
+  },
+  {
+   "label": "Gongola River",
+   "qid": "Q4786963",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Gourits River",
+   "qid": "Q3642203",
+   "fame": 0.2,
+   "also": [
+    "Gouritsrivier",
+    "Gouritz River",
+    "Gowritz River"
+   ]
+  },
+  {
+   "label": "Grande River",
+   "qid": "Q386331",
+   "fame": 0.2,
+   "also": [
+    "Rio Grande"
+   ]
+  },
+  {
+   "label": "Great Fish River",
+   "qid": "Q1130009",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Great Kei River",
+   "qid": "Q1413605",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Great Ruaha River",
+   "qid": "Q1861088",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Great Zab",
+   "qid": "Q756018",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Green River",
+   "qid": "Q952429",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Grijalva River",
+   "qid": "Q27035",
+   "fame": 0.2,
+   "also": [
+    "Río Grande",
+    "Río Chiapa",
+    "Mezcalapa River",
+    "Tabasco River",
+    "Río Grande de Chiapas",
+    "Seleguá River"
+   ]
+  },
+  {
+   "label": "Guadalupe River",
+   "qid": "Q1552614",
+   "fame": 0.2,
+   "also": [
+    "Rio San Juan",
+    "Guadeloupe River",
+    "La Riviere de la Madeleine",
+    "Nuestra Senora de Guadalupe",
+    "Rio de Alarcon",
+    "Rio de Magdalena",
+    "Rio de Nuestra Senora de Guadalupe",
+    "Rio Guardaloupa",
+    "Rio san Augustin",
+    "Rio San Ybon"
+   ]
+  },
+  {
+   "label": "Guaporé River",
+   "qid": "Q916349",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Guaviare River",
+   "qid": "Q1047596",
+   "fame": 0.2,
+   "also": [
+    "Río Guaviare"
+   ]
+  },
+  {
+   "label": "Guayas River",
+   "qid": "Q1343252",
+   "fame": 0.2,
+   "also": [
+    "Guayaquil River"
+   ]
+  },
+  {
+   "label": "Harricana River",
+   "qid": "Q71996",
+   "fame": 0.2,
+   "also": [
+    "Harricanaw River"
+   ]
+  },
+  {
+   "label": "Hay River",
+   "qid": "Q2231",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hayes River",
+   "qid": "Q72673",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Hingol River",
+   "qid": "Q1030189",
+   "fame": 0.2,
+   "also": [
+    "Hungol River"
+   ]
+  },
+  {
+   "label": "Hinterrhein",
+   "qid": "Q668852",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Horyn",
+   "qid": "Q1134536",
+   "fame": 0.2,
+   "also": [
+    "Haryn"
+   ]
+  },
+  {
+   "label": "Hotan River",
+   "qid": "Q625575",
+   "fame": 0.2,
+   "also": [
+    "Hetian River"
+   ]
+  },
+  {
+   "label": "Huallaga River",
+   "qid": "Q611388",
+   "fame": 0.2,
+   "also": [
+    "Río Huallaga"
+   ]
+  },
+  {
+   "label": "Humboldt River",
+   "qid": "Q1361278",
+   "fame": 0.2,
+   "also": [
+    "Buenaventura River",
+    "Ogdens River",
+    "Barren River",
+    "Bishop Creek",
+    "Bishops Creek",
+    "East Fork Humboldt River",
+    "Fremonts Creek",
+    "Humbold River",
+    "Lower Bishop Creek",
+    "Marias River",
+    "Marys River",
+    "Pauls River"
+   ]
+  },
+  {
+   "label": "Ialomița River",
+   "qid": "Q726693",
+   "fame": 0.2,
+   "also": [
+    "Ialomița"
+   ]
+  },
+  {
+   "label": "Ider River",
+   "qid": "Q26301",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Iijoki",
+   "qid": "Q1472085",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ilek",
+   "qid": "Q598256",
+   "fame": 0.2,
+   "also": [
+    "Ilek River"
+   ]
+  },
+  {
+   "label": "Ilim",
+   "qid": "Q1418910",
+   "fame": 0.2,
+   "also": [
+    "Ilim River"
+   ]
+  },
+  {
+   "label": "Illinois River",
+   "qid": "Q8321",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ilovlya",
+   "qid": "Q2557120",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ilych",
+   "qid": "Q577085",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Indalsälven",
+   "qid": "Q426516",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Indragiri River",
+   "qid": "Q3511574",
+   "fame": 0.2,
+   "also": [
+    "Kuantan River"
+   ]
+  },
+  {
+   "label": "Indravati River",
+   "qid": "Q1661830",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ingoda",
+   "qid": "Q695947",
+   "fame": 0.2,
+   "also": [
+    "Ingoda River"
+   ]
+  },
+  {
+   "label": "Inhul River",
+   "qid": "Q41452",
+   "fame": 0.2,
+   "also": [
+    "Inhul",
+    "Ingul River"
+   ]
+  },
+  {
+   "label": "Inhulets River",
+   "qid": "Q1331959",
+   "fame": 0.2,
+   "also": [
+    "Inhulets"
+   ]
+  },
+  {
+   "label": "Inya",
+   "qid": "Q955455",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Iori River",
+   "qid": "Q163384",
+   "fame": 0.2,
+   "also": [
+    "Iori"
+   ]
+  },
+  {
+   "label": "Iowa River",
+   "qid": "Q1672169",
+   "fame": 0.2,
+   "also": [
+    "Iowa"
+   ]
+  },
+  {
+   "label": "Iput",
+   "qid": "Q1813407",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Irgiz River",
+   "qid": "Q938914",
+   "fame": 0.2,
+   "also": [
+    "Irgiz",
+    "Yrghyz"
+   ]
+  },
+  {
+   "label": "Iriri River",
+   "qid": "Q1261515",
+   "fame": 0.2,
+   "also": [
+    "Rio Iriri"
+   ]
+  },
+  {
+   "label": "Irkut",
+   "qid": "Q880254",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Iset",
+   "qid": "Q874369",
+   "fame": 0.2,
+   "also": [
+    "Iset River"
+   ]
+  },
+  {
+   "label": "Itapecuru River",
+   "qid": "Q3041714",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ivindo River",
+   "qid": "Q1650057",
+   "fame": 0.2,
+   "also": [
+    "Ivindo"
+   ]
+  },
+  {
+   "label": "Iya",
+   "qid": "Q1414584",
+   "fame": 0.2,
+   "also": [
+    "Iya River"
+   ]
+  },
+  {
+   "label": "Izhma",
+   "qid": "Q695579",
+   "fame": 0.2,
+   "also": [
+    "Izva"
+   ]
+  },
+  {
+   "label": "Jaguaribe River",
+   "qid": "Q2460373",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "James River",
+   "qid": "Q422487",
+   "fame": 0.2,
+   "also": [
+    "James His River",
+    "Powhatan River"
+   ]
+  },
+  {
+   "label": "Jari River",
+   "qid": "Q2670262",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Javary River",
+   "qid": "Q941329",
+   "fame": 0.2,
+   "also": [
+    "Javari",
+    "Rio Javari",
+    "Yavari",
+    "Rio Yavari"
+   ]
+  },
+  {
+   "label": "Jequitinhonha River",
+   "qid": "Q2742774",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Jialing River",
+   "qid": "Q1045185",
+   "fame": 0.2,
+   "also": [
+    "Jialing Jiang"
+   ]
+  },
+  {
+   "label": "Jiu River",
+   "qid": "Q530577",
+   "fame": 0.2,
+   "also": [
+    "Jiu",
+    "Schil",
+    "Rabon",
+    "Schiel",
+    "Zsil"
+   ]
+  },
+  {
+   "label": "Júcar",
+   "qid": "Q14311",
+   "fame": 0.2,
+   "also": [
+    "Júcar river"
+   ]
+  },
+  {
+   "label": "Juruena River",
+   "qid": "Q472816",
+   "fame": 0.2,
+   "also": [
+    "Rio Juruena"
+   ]
+  },
+  {
+   "label": "Kabompo River",
+   "qid": "Q164993",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kaduna River",
+   "qid": "Q2338605",
+   "fame": 0.2,
+   "also": [
+    "River"
+   ]
+  },
+  {
+   "label": "Kafue River",
+   "qid": "Q846063",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kaidu River",
+   "qid": "Q624934",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kalar River",
+   "qid": "Q2660455",
+   "fame": 0.2,
+   "also": [
+    "Kalar"
+   ]
+  },
+  {
+   "label": "Kalix River",
+   "qid": "Q845520",
+   "fame": 0.2,
+   "also": [
+    "Kalix älv",
+    "Kalixälven"
+   ]
+  },
+  {
+   "label": "Kamala River",
+   "qid": "Q6355608",
+   "fame": 0.2,
+   "also": [
+    "Kamla River"
+   ]
+  },
+  {
+   "label": "Kan",
+   "qid": "Q939201",
+   "fame": 0.2,
+   "also": [
+    "Kan River"
+   ]
+  },
+  {
+   "label": "Kanchalan",
+   "qid": "Q997048",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Karakash River",
+   "qid": "Q2339487",
+   "fame": 0.2,
+   "also": [
+    "Karakax He"
+   ]
+  },
+  {
+   "label": "Karakoro River",
+   "qid": "Q846045",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Karasu River",
+   "qid": "Q1728989",
+   "fame": 0.2,
+   "also": [
+    "Karasu",
+    "Karasu Irmağı"
+   ]
+  },
+  {
+   "label": "Karatal River",
+   "qid": "Q1429523",
+   "fame": 0.2,
+   "also": [
+    "Karatal"
+   ]
+  },
+  {
+   "label": "Kargat",
+   "qid": "Q1247866",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Karkheh River",
+   "qid": "Q1472376",
+   "fame": 0.2,
+   "also": [
+    "Kerkheh",
+    "Rud-e Karḵeh",
+    "Rūdkhāneh-ye Karkheh"
+   ]
+  },
+  {
+   "label": "Kasai River",
+   "qid": "Q186541",
+   "fame": 0.2,
+   "also": [
+    "Kasaï",
+    "Cassai"
+   ]
+  },
+  {
+   "label": "Kashgar River",
+   "qid": "Q1511750",
+   "fame": 0.2,
+   "also": [
+    "Kashgar",
+    "Kizil River",
+    "Kizil Su",
+    "Kizil Su River",
+    "Kizzil River",
+    "Kizzil Su",
+    "Kizzil Su River",
+    "River Kizil",
+    "River Kizzil"
+   ]
+  },
+  {
+   "label": "Katun",
+   "qid": "Q723864",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kazan River",
+   "qid": "Q719436",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kazym",
+   "qid": "Q1069509",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kazyr",
+   "qid": "Q1322076",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kentucky River",
+   "qid": "Q1544834",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kerio River",
+   "qid": "Q2305746",
+   "fame": 0.2,
+   "also": [
+    "Kerio"
+   ]
+  },
+  {
+   "label": "Ket",
+   "qid": "Q724465",
+   "fame": 0.2,
+   "also": [
+    "Ket River"
+   ]
+  },
+  {
+   "label": "Khemchik",
+   "qid": "Q928213",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kheta",
+   "qid": "Q920267",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Khilok River",
+   "qid": "Q1073024",
+   "fame": 0.2,
+   "also": [
+    "Khilok"
+   ]
+  },
+  {
+   "label": "Khopyor",
+   "qid": "Q647052",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Khor River",
+   "qid": "Q263484",
+   "fame": 0.2,
+   "also": [
+    "Khor"
+   ]
+  },
+  {
+   "label": "Khorol River",
+   "qid": "Q1076536",
+   "fame": 0.2,
+   "also": [
+    "Khorol"
+   ]
+  },
+  {
+   "label": "Khovd River",
+   "qid": "Q2426540",
+   "fame": 0.2,
+   "also": [
+    "Hobdo River"
+   ]
+  },
+  {
+   "label": "Khroma",
+   "qid": "Q1087566",
+   "fame": 0.2,
+   "also": [
+    "Khroma River"
+   ]
+  },
+  {
+   "label": "Khwae Yai River",
+   "qid": "Q1357447",
+   "fame": 0.2,
+   "also": [
+    "Mae Nam Khwae Yai",
+    "river Kwai"
+   ]
+  },
+  {
+   "label": "Kinabatangan River",
+   "qid": "Q1532371",
+   "fame": 0.2,
+   "also": [
+    "Sungai Kinabatangan"
+   ]
+  },
+  {
+   "label": "Kirenga",
+   "qid": "Q587464",
+   "fame": 0.2,
+   "also": [
+    "Kirenga River"
+   ]
+  },
+  {
+   "label": "Kitoy River",
+   "qid": "Q1572822",
+   "fame": 0.2,
+   "also": [
+    "Kitoy"
+   ]
+  },
+  {
+   "label": "Kiya",
+   "qid": "Q1513580",
+   "fame": 0.2,
+   "also": [
+    "Kiya River"
+   ]
+  },
+  {
+   "label": "Klamath River",
+   "qid": "Q968640",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Klarälven",
+   "qid": "Q1338024",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Klyazma",
+   "qid": "Q12556970",
+   "fame": 0.2,
+   "also": [
+    "Klyazma River"
+   ]
+  },
+  {
+   "label": "Kofarnihon River",
+   "qid": "Q2417571",
+   "fame": 0.2,
+   "also": [
+    "Kofarnihon"
+   ]
+  },
+  {
+   "label": "Kokcha River",
+   "qid": "Q2420095",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kolva",
+   "qid": "Q8181",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Komati River",
+   "qid": "Q1635625",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Komoé River",
+   "qid": "Q615662",
+   "fame": 0.2,
+   "also": [
+    "Comoé River"
+   ]
+  },
+  {
+   "label": "Konda",
+   "qid": "Q856630",
+   "fame": 0.2,
+   "also": [
+    "Konda River"
+   ]
+  },
+  {
+   "label": "Kondoma",
+   "qid": "Q1536880",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Konkouré River",
+   "qid": "Q2467572",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kootenay River",
+   "qid": "Q2262",
+   "fame": 0.2,
+   "also": [
+    "Swan River",
+    "Kootanie River",
+    "Kootenai River",
+    "Kootenie River",
+    "Kootienay River"
+   ]
+  },
+  {
+   "label": "Kostroma",
+   "qid": "Q863102",
+   "fame": 0.2,
+   "also": [
+    "Kostroma River"
+   ]
+  },
+  {
+   "label": "Kotuy",
+   "qid": "Q26374",
+   "fame": 0.2,
+   "also": [
+    "Kotuy River"
+   ]
+  },
+  {
+   "label": "Kouilou-Niari River",
+   "qid": "Q1637839",
+   "fame": 0.2,
+   "also": [
+    "Kouilou-Niari",
+    "Kwil-Niari",
+    "Kwila-Niari",
+    "Kwilu-Niari"
+   ]
+  },
+  {
+   "label": "Koyukuk River",
+   "qid": "Q1546553",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kubena",
+   "qid": "Q1570703",
+   "fame": 0.2,
+   "also": [
+    "Kubena River"
+   ]
+  },
+  {
+   "label": "Kuiseb River",
+   "qid": "Q1432995",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kuma",
+   "qid": "Q182042",
+   "fame": 0.2,
+   "also": [
+    "Kuma River"
+   ]
+  },
+  {
+   "label": "Kunar River",
+   "qid": "Q8519",
+   "fame": 0.2,
+   "also": [
+    "Chitral River",
+    "Kama River",
+    "Mastuj River"
+   ]
+  },
+  {
+   "label": "Kunduz River",
+   "qid": "Q2985144",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kureyka",
+   "qid": "Q909457",
+   "fame": 0.2,
+   "also": [
+    "Liuma",
+    "Kureika",
+    "Lyuma",
+    "Kureika River",
+    "Kureyka River",
+    "Liuma River",
+    "Lyuma River"
+   ]
+  },
+  {
+   "label": "Kuskokwim River",
+   "qid": "Q60067",
+   "fame": 0.2,
+   "also": [
+    "Kusko River"
+   ]
+  },
+  {
+   "label": "Kwango River",
+   "qid": "Q732790",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kwilu River",
+   "qid": "Q1059228",
+   "fame": 0.2,
+   "also": [
+    "Kouilou",
+    "Kuilu"
+   ]
+  },
+  {
+   "label": "Lachlan River",
+   "qid": "Q1321316",
+   "fame": 0.2,
+   "also": [
+    "Calare",
+    "Galiyarr",
+    "Kalare"
+   ]
+  },
+  {
+   "label": "Laramie River",
+   "qid": "Q866712",
+   "fame": 0.2,
+   "also": [
+    "Big Laramie River",
+    "Hin'ini'yohe",
+    "Maga Wakpa"
+   ]
+  },
+  {
+   "label": "Lempa River",
+   "qid": "Q1511554",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lepsy River",
+   "qid": "Q1046455",
+   "fame": 0.2,
+   "also": [
+    "Lepsy",
+    "Lepsi"
+   ]
+  },
+  {
+   "label": "Lerma River",
+   "qid": "Q1633955",
+   "fame": 0.2,
+   "also": [
+    "Lerma"
+   ]
+  },
+  {
+   "label": "Liard River",
+   "qid": "Q2249",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Limay River",
+   "qid": "Q1470945",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Linde River",
+   "qid": "Q1817893",
+   "fame": 0.2,
+   "also": [
+    "Linde"
+   ]
+  },
+  {
+   "label": "Little Colorado River",
+   "qid": "Q1152278",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Little Yenisey",
+   "qid": "Q1511505",
+   "fame": 0.2,
+   "also": [
+    "Little Yenisei",
+    "Little Yenisei River",
+    "Maly Yenisey",
+    "Malyj Enisej",
+    "Shishged Gol",
+    "Shishged River"
+   ]
+  },
+  {
+   "label": "Little Zab",
+   "qid": "Q954645",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ljungan",
+   "qid": "Q949042",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ljusnan",
+   "qid": "Q1160449",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lô River",
+   "qid": "Q2227484",
+   "fame": 0.2,
+   "also": [
+    "Panlong river"
+   ]
+  },
+  {
+   "label": "Loa River",
+   "qid": "Q737831",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Logone River",
+   "qid": "Q645191",
+   "fame": 0.2,
+   "also": [
+    "Logon River"
+   ]
+  },
+  {
+   "label": "Lohit River",
+   "qid": "Q1083286",
+   "fame": 0.2,
+   "also": [
+    "Luhit River",
+    "Zayü River"
+   ]
+  },
+  {
+   "label": "Loir",
+   "qid": "Q376133",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lol River",
+   "qid": "Q492001",
+   "fame": 0.2,
+   "also": [
+    "Loll",
+    "Lol"
+   ]
+  },
+  {
+   "label": "Lomami River",
+   "qid": "Q753765",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lot",
+   "qid": "Q211766",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lovat",
+   "qid": "Q255379",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lozva",
+   "qid": "Q923058",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lualaba River",
+   "qid": "Q836812",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Luan River",
+   "qid": "Q1193523",
+   "fame": 0.2,
+   "also": [
+    "Luan He"
+   ]
+  },
+  {
+   "label": "Luangwa River",
+   "qid": "Q1321671",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Luapula River",
+   "qid": "Q151858",
+   "fame": 0.2,
+   "also": [
+    "Lwapula"
+   ]
+  },
+  {
+   "label": "Lufira River",
+   "qid": "Q624223",
+   "fame": 0.2,
+   "also": [
+    "Lufira"
+   ]
+  },
+  {
+   "label": "Luga",
+   "qid": "Q14684",
+   "fame": 0.2,
+   "also": [
+    "Luga River"
+   ]
+  },
+  {
+   "label": "Lukuga River",
+   "qid": "Q128350",
+   "fame": 0.2,
+   "also": [
+    "Lukuga"
+   ]
+  },
+  {
+   "label": "Lule River",
+   "qid": "Q857676",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Lulua",
+   "qid": "Q1487426",
+   "fame": 0.2,
+   "also": [
+    "Lulua River"
+   ]
+  },
+  {
+   "label": "Luni River",
+   "qid": "Q289273",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Luo River",
+   "qid": "Q1204978",
+   "fame": 0.2,
+   "also": [
+    "Luo He"
+   ]
+  },
+  {
+   "label": "Luvua River",
+   "qid": "Q220839",
+   "fame": 0.2,
+   "also": [
+    "Luvwa"
+   ]
+  },
+  {
+   "label": "Luza",
+   "qid": "Q1293972",
+   "fame": 0.2,
+   "also": [
+    "Luz",
+    "Luza River"
+   ]
+  },
+  {
+   "label": "Ma River",
+   "qid": "Q508468",
+   "fame": 0.2,
+   "also": [
+    "Sông Mã"
+   ]
+  },
+  {
+   "label": "Madre de Dios River",
+   "qid": "Q849693",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mahakam River",
+   "qid": "Q328396",
+   "fame": 0.2,
+   "also": [
+    "Koetai-rivier",
+    "Kutei River",
+    "River Mahakam"
+   ]
+  },
+  {
+   "label": "Mahananda River",
+   "qid": "Q2428539",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mahaweli River",
+   "qid": "Q1518007",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mahi River",
+   "qid": "Q542539",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Malagarasi River",
+   "qid": "Q1514693",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Maly Anyuy",
+   "qid": "Q1115719",
+   "fame": 0.2,
+   "also": [
+    "Malyy Anyuy River"
+   ]
+  },
+  {
+   "label": "Maly Uzen",
+   "qid": "Q1577271",
+   "fame": 0.2,
+   "also": [
+    "Balaözen",
+    "Kishi Uzen",
+    "Kişi Özen",
+    "Sarıözen",
+    "Saryozen"
+   ]
+  },
+  {
+   "label": "Mamberamo River",
+   "qid": "Q726986",
+   "fame": 0.2,
+   "also": [
+    "Mamberamo-rivier",
+    "Mberamo Rivier",
+    "Sungai Mamberamo"
+   ]
+  },
+  {
+   "label": "Mana River",
+   "qid": "Q178396",
+   "fame": 0.2,
+   "also": [
+    "Mana"
+   ]
+  },
+  {
+   "label": "Manas River",
+   "qid": "Q2015702",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mangoky River",
+   "qid": "Q1288223",
+   "fame": 0.2,
+   "also": [
+    "Mangoky"
+   ]
+  },
+  {
+   "label": "Mano River",
+   "qid": "Q1329322",
+   "fame": 0.2,
+   "also": [
+    "Mano"
+   ]
+  },
+  {
+   "label": "Mantaro River",
+   "qid": "Q773333",
+   "fame": 0.2,
+   "also": [
+    "Río Mantaro"
+   ]
+  },
+  {
+   "label": "Manych",
+   "qid": "Q1047528",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mara River",
+   "qid": "Q530479",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mareb River",
+   "qid": "Q1474323",
+   "fame": 0.2,
+   "also": [
+    "Mereb River",
+    "Gash",
+    "Mareb"
+   ]
+  },
+  {
+   "label": "Marghab River",
+   "qid": "Q8553",
+   "fame": 0.2,
+   "also": [
+    "Murghab",
+    "Murgab",
+    "Murgap",
+    "Morghab",
+    "Murghab River",
+    "Marghab",
+    "Moorghabee",
+    "Moorghabee River",
+    "Morghab River",
+    "Murgab River",
+    "Murgap River"
+   ]
+  },
+  {
+   "label": "Markha",
+   "qid": "Q185839",
+   "fame": 0.2,
+   "also": [
+    "Markha River"
+   ]
+  },
+  {
+   "label": "Maroni",
+   "qid": "Q1369002",
+   "fame": 0.2,
+   "also": [
+    "Maroni Creek",
+    "Marowijne river"
+   ]
+  },
+  {
+   "label": "Maya",
+   "qid": "Q831383",
+   "fame": 0.2,
+   "also": [
+    "Maya River"
+   ]
+  },
+  {
+   "label": "Mazowe River",
+   "qid": "Q317951",
+   "fame": 0.2,
+   "also": [
+    "Mazowe"
+   ]
+  },
+  {
+   "label": "Mbam River",
+   "qid": "Q946653",
+   "fame": 0.2,
+   "also": [
+    "Mbam"
+   ]
+  },
+  {
+   "label": "Mbomou River",
+   "qid": "Q171440",
+   "fame": 0.2,
+   "also": [
+    "Mbomou"
+   ]
+  },
+  {
+   "label": "Medjerda River",
+   "qid": "Q340043",
+   "fame": 0.2,
+   "also": [
+    "Bagrada",
+    "Majerda",
+    "Medjerdah"
+   ]
+  },
+  {
+   "label": "Medveditsa",
+   "qid": "Q1535189",
+   "fame": 0.2,
+   "also": [
+    "Medveditsa River"
+   ]
+  },
+  {
+   "label": "Mékrou River",
+   "qid": "Q739892",
+   "fame": 0.2,
+   "also": [
+    "Mekrou"
+   ]
+  },
+  {
+   "label": "Messoyakha",
+   "qid": "Q302610",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Meta River",
+   "qid": "Q655251",
+   "fame": 0.2,
+   "also": [
+    "Rio Meta"
+   ]
+  },
+  {
+   "label": "Mezen",
+   "qid": "Q79106",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Miass",
+   "qid": "Q642028",
+   "fame": 0.2,
+   "also": [
+    "Miass River"
+   ]
+  },
+  {
+   "label": "Milk River",
+   "qid": "Q217739",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Min River",
+   "qid": "Q729269",
+   "fame": 0.2,
+   "also": [
+    "Min Jiang"
+   ]
+  },
+  {
+   "label": "Mindanao River",
+   "qid": "Q2095415",
+   "fame": 0.2,
+   "also": [
+    "Rio Grande de Mindanao"
+   ]
+  },
+  {
+   "label": "Minnesota River",
+   "qid": "Q1136502",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Moa River",
+   "qid": "Q2503121",
+   "fame": 0.2,
+   "also": [
+    "Moa",
+    "Makona River"
+   ]
+  },
+  {
+   "label": "Moksha",
+   "qid": "Q595213",
+   "fame": 0.2,
+   "also": [
+    "Moksha River"
+   ]
+  },
+  {
+   "label": "Mologa",
+   "qid": "Q1133858",
+   "fame": 0.2,
+   "also": [
+    "Mologa River"
+   ]
+  },
+  {
+   "label": "Moloma",
+   "qid": "Q1029502",
+   "fame": 0.2,
+   "also": [
+    "Moloma River"
+   ]
+  },
+  {
+   "label": "Molopo River",
+   "qid": "Q546793",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Moma River",
+   "qid": "Q783916",
+   "fame": 0.2,
+   "also": [
+    "Moma"
+   ]
+  },
+  {
+   "label": "Mono River",
+   "qid": "Q268624",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Morkoka River",
+   "qid": "Q187994",
+   "fame": 0.2,
+   "also": [
+    "Morkoka"
+   ]
+  },
+  {
+   "label": "Motagua River",
+   "qid": "Q1346148",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Moulouya River",
+   "qid": "Q1146608",
+   "fame": 0.2,
+   "also": [
+    "Moulaya",
+    "Moulouya"
+   ]
+  },
+  {
+   "label": "Mrassu",
+   "qid": "Q1419687",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Msta",
+   "qid": "Q1139404",
+   "fame": 0.2,
+   "also": [
+    "Msta River"
+   ]
+  },
+  {
+   "label": "Mudan River",
+   "qid": "Q618668",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Muling River",
+   "qid": "Q715373",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Mun River",
+   "qid": "Q1455933",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Muna",
+   "qid": "Q915982",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Murat River",
+   "qid": "Q913193",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Murchison River",
+   "qid": "Q1703677",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Murrumbidgee River",
+   "qid": "Q475597",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Musi River",
+   "qid": "Q39247",
+   "fame": 0.2,
+   "also": [
+    "Palembang Rivier"
+   ]
+  },
+  {
+   "label": "Muya",
+   "qid": "Q673207",
+   "fame": 0.2,
+   "also": [
+    "Muya River"
+   ]
+  },
+  {
+   "label": "Nadym",
+   "qid": "Q81507",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nakdong River",
+   "qid": "Q55501",
+   "fame": 0.2,
+   "also": [
+    "Rakdong River"
+   ]
+  },
+  {
+   "label": "Nam Ou",
+   "qid": "Q973135",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nan River",
+   "qid": "Q1153522",
+   "fame": 0.2,
+   "also": [
+    "Mae Nam Nan"
+   ]
+  },
+  {
+   "label": "Napo River",
+   "qid": "Q849480",
+   "fame": 0.2,
+   "also": [
+    "Río Napo"
+   ]
+  },
+  {
+   "label": "Neches River",
+   "qid": "Q964437",
+   "fame": 0.2,
+   "also": [
+    "Two Rivers",
+    "Nueces River",
+    "Sabine River",
+    "Snow River",
+    "Harrel Slough",
+    "Nachawi",
+    "Nachez River",
+    "Natchez River",
+    "Rio de los Tejas",
+    "Rio de Nechas",
+    "Rio de Nievas",
+    "Rio del Arcangel San Miguel"
+   ]
+  },
+  {
+   "label": "Nelson River",
+   "qid": "Q3292",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nen River",
+   "qid": "Q866875",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Neosho River",
+   "qid": "Q516393",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nercha",
+   "qid": "Q1630619",
+   "fame": 0.2,
+   "also": [
+    "Nercha River"
+   ]
+  },
+  {
+   "label": "Neuquén River",
+   "qid": "Q1472009",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Niobrara River",
+   "qid": "Q1124558",
+   "fame": 0.2,
+   "also": [
+    "Eau-qui-court River",
+    "Hisse yovi yoe",
+    "Kickatari",
+    "L'Eau qui Court",
+    "La Riviere qui Court",
+    "Mini tanka Wakpa",
+    "Mniblaska",
+    "Nebrara",
+    "Ni obthatha ke",
+    "Niobrarah River",
+    "Rapid River",
+    "Runningwater Creek"
+   ]
+  },
+  {
+   "label": "Noatak River",
+   "qid": "Q1517486",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "North Platte River",
+   "qid": "Q1755015",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "North Saskatchewan River",
+   "qid": "Q2237",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Noteć",
+   "qid": "Q828869",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nueces River",
+   "qid": "Q1468723",
+   "fame": 0.2,
+   "also": [
+    "Chotilapacquen",
+    "East Nueces River",
+    "Rio de la Nueces",
+    "Rio de las Nueces",
+    "Rio Escondido"
+   ]
+  },
+  {
+   "label": "Numedalslågen",
+   "qid": "Q1420630",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nura",
+   "qid": "Q1817051",
+   "fame": 0.2,
+   "also": [
+    "Nura River"
+   ]
+  },
+  {
+   "label": "Nyanga River",
+   "qid": "Q3086588",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nyukzha",
+   "qid": "Q595026",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Nyuya",
+   "qid": "Q1074894",
+   "fame": 0.2,
+   "also": [
+    "Nyuya River"
+   ]
+  },
+  {
+   "label": "Nzoia River",
+   "qid": "Q2915185",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Odiel",
+   "qid": "Q17747",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Okhota",
+   "qid": "Q1466439",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Oldman River",
+   "qid": "Q1514985",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Olifants River",
+   "qid": "Q978191",
+   "fame": 0.2,
+   "also": [
+    "Lepelle",
+    "Rio dos Elefantes",
+    "Olifantsrivier",
+    "Elephants River",
+    "iBhalule",
+    "Obalule"
+   ]
+  },
+  {
+   "label": "Olyokma",
+   "qid": "Q26358",
+   "fame": 0.2,
+   "also": [
+    "Olyokma River"
+   ]
+  },
+  {
+   "label": "Omolon",
+   "qid": "Q1142842",
+   "fame": 0.2,
+   "also": [
+    "Omolon River"
+   ]
+  },
+  {
+   "label": "Omoloy",
+   "qid": "Q1416354",
+   "fame": 0.2,
+   "also": [
+    "Omoloy River"
+   ]
+  },
+  {
+   "label": "Onega",
+   "qid": "Q78898",
+   "fame": 0.2,
+   "also": [
+    "Onega River"
+   ]
+  },
+  {
+   "label": "Onilahy River",
+   "qid": "Q2465863",
+   "fame": 0.2,
+   "also": [
+    "Onilahy"
+   ]
+  },
+  {
+   "label": "Or River",
+   "qid": "Q1807286",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Oril River",
+   "qid": "Q2630027",
+   "fame": 0.2,
+   "also": [
+    "Oril"
+   ]
+  },
+  {
+   "label": "Osage River",
+   "qid": "Q1619907",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Osam",
+   "qid": "Q845988",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Osha",
+   "qid": "Q2625817",
+   "fame": 0.2,
+   "also": [
+    "Osha River"
+   ]
+  },
+  {
+   "label": "Oskil",
+   "qid": "Q540067",
+   "fame": 0.2,
+   "also": [
+    "Oskol",
+    "Oskol River"
+   ]
+  },
+  {
+   "label": "Oti River",
+   "qid": "Q252472",
+   "fame": 0.2,
+   "also": [
+    "Pendjari River"
+   ]
+  },
+  {
+   "label": "Ouémé River",
+   "qid": "Q595037",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Oum Er-Rbia River",
+   "qid": "Q1778840",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Oyapock",
+   "qid": "Q1541246",
+   "fame": 0.2,
+   "also": [
+    "Oiapoque River",
+    "Rio Oiapoque"
+   ]
+  },
+  {
+   "label": "Ozhogina River",
+   "qid": "Q1266978",
+   "fame": 0.2,
+   "also": [
+    "Ozhogina"
+   ]
+  },
+  {
+   "label": "Pa Sak River",
+   "qid": "Q1152315",
+   "fame": 0.2,
+   "also": [
+    "Mae Nam Pa Sak"
+   ]
+  },
+  {
+   "label": "Paatsjoki",
+   "qid": "Q524612",
+   "fame": 0.2,
+   "also": [
+    "Báhčeveaijohka",
+    "Paaččjokk",
+    "Paatsjoki River",
+    "Paččvei",
+    "Pasvikelva",
+    "Patsojoki"
+   ]
+  },
+  {
+   "label": "Pahang River",
+   "qid": "Q1783725",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pangani River",
+   "qid": "Q506955",
+   "fame": 0.2,
+   "also": [
+    "Rhaptus",
+    "Luffu",
+    "Jipe Ruvu"
+   ]
+  },
+  {
+   "label": "Pánuco River",
+   "qid": "Q1893265",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Parabel",
+   "qid": "Q1464701",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Paraíba do Sul River",
+   "qid": "Q1807293",
+   "fame": 0.2,
+   "also": [
+    "Paraíba do Sul",
+    "Paraíba River",
+    "Rio Paraíba do Sul"
+   ]
+  },
+  {
+   "label": "Paranaíba River",
+   "qid": "Q776155",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Paranapanema River",
+   "qid": "Q607976",
+   "fame": 0.2,
+   "also": [
+    "Rio Paranapanema"
+   ]
+  },
+  {
+   "label": "Parnaíba River",
+   "qid": "Q1419084",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pastaza River",
+   "qid": "Q685475",
+   "fame": 0.2,
+   "also": [
+    "Río Pastaza"
+   ]
+  },
+  {
+   "label": "Patía River",
+   "qid": "Q2983856",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pcič",
+   "qid": "Q915889",
+   "fame": 0.2,
+   "also": [
+    "Ptsich"
+   ]
+  },
+  {
+   "label": "Peace River",
+   "qid": "Q2220",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Peel River",
+   "qid": "Q2067014",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pelly River",
+   "qid": "Q1898456",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pelym",
+   "qid": "Q288240",
+   "fame": 0.2,
+   "also": [
+    "Pelym River"
+   ]
+  },
+  {
+   "label": "Penna River",
+   "qid": "Q1877489",
+   "fame": 0.2,
+   "also": [
+    "Penner River"
+   ]
+  },
+  {
+   "label": "Penzhina",
+   "qid": "Q612112",
+   "fame": 0.2,
+   "also": [
+    "Penzhina River"
+   ]
+  },
+  {
+   "label": "Pibor River",
+   "qid": "Q3179125",
+   "fame": 0.2,
+   "also": [
+    "River Pibor"
+   ]
+  },
+  {
+   "label": "Pilica",
+   "qid": "Q750418",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pinega",
+   "qid": "Q8212",
+   "fame": 0.2,
+   "also": [
+    "Pinega River"
+   ]
+  },
+  {
+   "label": "Ping River",
+   "qid": "Q592383",
+   "fame": 0.2,
+   "also": [
+    "Mae Nam Ping"
+   ]
+  },
+  {
+   "label": "Pite River",
+   "qid": "Q1330818",
+   "fame": 0.2,
+   "also": [
+    "Piteälven"
+   ]
+  },
+  {
+   "label": "Pizhma",
+   "qid": "Q304530",
+   "fame": 0.2,
+   "also": [
+    "Pizhma River"
+   ]
+  },
+  {
+   "label": "Ponoy",
+   "qid": "Q1075070",
+   "fame": 0.2,
+   "also": [
+    "Ponoy River"
+   ]
+  },
+  {
+   "label": "Popigay River",
+   "qid": "Q1630635",
+   "fame": 0.2,
+   "also": [
+    "Popigay"
+   ]
+  },
+  {
+   "label": "Porcupine River",
+   "qid": "Q284603",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Poronay",
+   "qid": "Q715143",
+   "fame": 0.2,
+   "also": [
+    "Poronay River"
+   ]
+  },
+  {
+   "label": "Powder River",
+   "qid": "Q2096785",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pronya",
+   "qid": "Q1784849",
+   "fame": 0.2,
+   "also": [
+    "Pronya River"
+   ]
+  },
+  {
+   "label": "Psel",
+   "qid": "Q1133871",
+   "fame": 0.2,
+   "also": [
+    "Psel River",
+    "Psyol"
+   ]
+  },
+  {
+   "label": "Pungwe River",
+   "qid": "Q2116568",
+   "fame": 0.2,
+   "also": [
+    "Púngoè River",
+    "Pungué",
+    "Pungué River",
+    "Rio Púngoè",
+    "Rio Púnguè"
+   ]
+  },
+  {
+   "label": "Pur",
+   "qid": "Q81528",
+   "fame": 0.2,
+   "also": [
+    "Pur River"
+   ]
+  },
+  {
+   "label": "Pyakupur",
+   "qid": "Q1462989",
+   "fame": 0.2,
+   "also": [
+    "Pyakupur River"
+   ]
+  },
+  {
+   "label": "Pyana",
+   "qid": "Q1460130",
+   "fame": 0.2,
+   "also": [
+    "Pyana River"
+   ]
+  },
+  {
+   "label": "Pyasina",
+   "qid": "Q81626",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Pyoza",
+   "qid": "Q762362",
+   "fame": 0.2,
+   "also": [
+    "Peza",
+    "Pyoza River"
+   ]
+  },
+  {
+   "label": "Pyshma",
+   "qid": "Q913174",
+   "fame": 0.2,
+   "also": [
+    "Pyshma River"
+   ]
+  },
+  {
+   "label": "Qashqadaryo River",
+   "qid": "Q1032649",
+   "fame": 0.2,
+   "also": [
+    "Qashqadaryo"
+   ]
+  },
+  {
+   "label": "Qiantang River",
+   "qid": "Q19751",
+   "fame": 0.2,
+   "also": [
+    "Chekiang",
+    "Ch'ien T'ang",
+    "Great River",
+    "Zhejiang",
+    "Ch'ien T'ang River",
+    "Ch'ien-t'ang Chiang",
+    "Che River",
+    "Chekiang River",
+    "Cientang",
+    "Hang-chou River",
+    "Hangchow River",
+    "Hangzhou River"
+   ]
+  },
+  {
+   "label": "Qiemo River",
+   "qid": "Q2380766",
+   "fame": 0.2,
+   "also": [
+    "Cherchen River",
+    "Qarqan He"
+   ]
+  },
+  {
+   "label": "Qu'Appelle River",
+   "qid": "Q391566",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Raidāk River",
+   "qid": "Q3647339",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Red Deer River",
+   "qid": "Q850119",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Red River of the North",
+   "qid": "Q156006",
+   "fame": 0.2,
+   "also": [
+    "Red River"
+   ]
+  },
+  {
+   "label": "Red Volta",
+   "qid": "Q2083328",
+   "fame": 0.2,
+   "also": [
+    "Nazinon"
+   ]
+  },
+  {
+   "label": "Republican River",
+   "qid": "Q673908",
+   "fame": 0.2,
+   "also": [
+    "Coster Blanches",
+    "Ki-ra-ru-tah",
+    "Ki-rara-tu",
+    "Mahohevaohe",
+    "Republican Fork",
+    "Republican Fork of Kanzas River",
+    "Riviere Republicaine"
+   ]
+  },
+  {
+   "label": "Rio Conchos",
+   "qid": "Q1970278",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Río Cuareim",
+   "qid": "Q1279982",
+   "fame": 0.2,
+   "also": [
+    "Quaraí River"
+   ]
+  },
+  {
+   "label": "Río Grande de Santiago",
+   "qid": "Q2302661",
+   "fame": 0.2,
+   "also": [
+    "Santiago River"
+   ]
+  },
+  {
+   "label": "Roanoke River",
+   "qid": "Q1584933",
+   "fame": 0.2,
+   "also": [
+    "Staunton River"
+   ]
+  },
+  {
+   "label": "Rock River",
+   "qid": "Q1852004",
+   "fame": 0.2,
+   "also": [
+    "Sinnissippi",
+    "Sinnissippi River"
+   ]
+  },
+  {
+   "label": "Rogue River",
+   "qid": "Q1848950",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Rokel River",
+   "qid": "Q1781219",
+   "fame": 0.2,
+   "also": [
+    "Seli",
+    "Rokel",
+    "Seli River"
+   ]
+  },
+  {
+   "label": "Ros River",
+   "qid": "Q1367245",
+   "fame": 0.2,
+   "also": [
+    "Ros"
+   ]
+  },
+  {
+   "label": "Rufiji River",
+   "qid": "Q936023",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ruo Shui",
+   "qid": "Q1048648",
+   "fame": 0.2,
+   "also": [
+    "Ejin River",
+    "Heihe",
+    "Ejin"
+   ]
+  },
+  {
+   "label": "Ruvuma River",
+   "qid": "Q746779",
+   "fame": 0.2,
+   "also": [
+    "River Ruvuma",
+    "Rovuma River"
+   ]
+  },
+  {
+   "label": "Sabarmati",
+   "qid": "Q630397",
+   "fame": 0.2,
+   "also": [
+    "Sabarmati River"
+   ]
+  },
+  {
+   "label": "Sabine River",
+   "qid": "Q596106",
+   "fame": 0.2,
+   "also": [
+    "Sabine"
+   ]
+  },
+  {
+   "label": "Saint John River",
+   "qid": "Q607546",
+   "fame": 0.2,
+   "also": [
+    "Rivière Saint-Jean",
+    "Fleuve Saint-Jean"
+   ]
+  },
+  {
+   "label": "Saint Louis River",
+   "qid": "Q1273955",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sakmara",
+   "qid": "Q68939",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sal River",
+   "qid": "Q1576907",
+   "fame": 0.2,
+   "also": [
+    "Sal"
+   ]
+  },
+  {
+   "label": "Salado River",
+   "qid": "Q1162365",
+   "fame": 0.2,
+   "also": [
+    "Río Salado"
+   ]
+  },
+  {
+   "label": "Saloum River",
+   "qid": "Q940142",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Salt River",
+   "qid": "Q1341271",
+   "fame": 0.2,
+   "also": [
+    "Hakathi:",
+    "Onk Akimel",
+    "ʼHakanyacha"
+   ]
+  },
+  {
+   "label": "Samara River",
+   "qid": "Q1047677",
+   "fame": 0.2,
+   "also": [
+    "Samara"
+   ]
+  },
+  {
+   "label": "San Joaquin River",
+   "qid": "Q751347",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "San Juan River",
+   "qid": "Q1542874",
+   "fame": 0.2,
+   "also": [
+    "Rio San Juan",
+    "Hoh Bakai'i",
+    "Juta'imp",
+    "No:da:a Bit hoh",
+    "noda's Bitqo",
+    "Nwansabe'imp",
+    "Rio de San Juan",
+    "San Bit hoh",
+    "San Bitqo",
+    "T hoh"
+   ]
+  },
+  {
+   "label": "Sangha",
+   "qid": "Q239883",
+   "fame": 0.2,
+   "also": [
+    "Sangha River"
+   ]
+  },
+  {
+   "label": "Sankarani River",
+   "qid": "Q1390033",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sankosh River",
+   "qid": "Q629894",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sankuru River",
+   "qid": "Q899815",
+   "fame": 0.2,
+   "also": [
+    "Lubilash"
+   ]
+  },
+  {
+   "label": "Santa Cruz River",
+   "qid": "Q1478566",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sartang River",
+   "qid": "Q1479580",
+   "fame": 0.2,
+   "also": [
+    "Sartang"
+   ]
+  },
+  {
+   "label": "Sarthe",
+   "qid": "Q736600",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sarysu",
+   "qid": "Q706980",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sassandra River",
+   "qid": "Q1535828",
+   "fame": 0.2,
+   "also": [
+    "Sassandra"
+   ]
+  },
+  {
+   "label": "Savannah River",
+   "qid": "Q370750",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Save River",
+   "qid": "Q293988",
+   "fame": 0.2,
+   "also": [
+    "Save",
+    "Sabi River"
+   ]
+  },
+  {
+   "label": "Ščara",
+   "qid": "Q1117401",
+   "fame": 0.2,
+   "also": [
+    "Shchara"
+   ]
+  },
+  {
+   "label": "Scioto River",
+   "qid": "Q209540",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sebou River",
+   "qid": "Q1129810",
+   "fame": 0.2,
+   "also": [
+    "Asif n Gigu",
+    "Asif n Sbu",
+    "Guigou River",
+    "Sebou"
+   ]
+  },
+  {
+   "label": "Sefid Rud",
+   "qid": "Q1430986",
+   "fame": 0.2,
+   "also": [
+    "Amardos",
+    "Safid River",
+    "Safid Rud",
+    "Sefid River",
+    "Šāhrud"
+   ]
+  },
+  {
+   "label": "Segura",
+   "qid": "Q18612",
+   "fame": 0.2,
+   "also": [
+    "Río Segura"
+   ]
+  },
+  {
+   "label": "Selemdzha River",
+   "qid": "Q1138427",
+   "fame": 0.2,
+   "also": [
+    "Selemdzha"
+   ]
+  },
+  {
+   "label": "Selennyakh River",
+   "qid": "Q1784612",
+   "fame": 0.2,
+   "also": [
+    "Selennyakh"
+   ]
+  },
+  {
+   "label": "Sepik",
+   "qid": "Q848308",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Severn River",
+   "qid": "Q1239783",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Severnaya Sosva",
+   "qid": "Q1099551",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Seyhan River",
+   "qid": "Q910975",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sharda River",
+   "qid": "Q2095324",
+   "fame": 0.2,
+   "also": [
+    "Kali River",
+    "Mahakali river",
+    "Sarda River"
+   ]
+  },
+  {
+   "label": "Shebelle River",
+   "qid": "Q141915",
+   "fame": 0.2,
+   "also": [
+    "Webi Shabeelle"
+   ]
+  },
+  {
+   "label": "Shinano River",
+   "qid": "Q734455",
+   "fame": 0.2,
+   "also": [
+    "Chikuma River"
+   ]
+  },
+  {
+   "label": "Shish",
+   "qid": "Q2469390",
+   "fame": 0.2,
+   "also": [
+    "Shish River"
+   ]
+  },
+  {
+   "label": "Shyok River",
+   "qid": "Q1587234",
+   "fame": 0.2,
+   "also": [
+    "River Shayok",
+    "River Shyok",
+    "Shayok",
+    "Shayok River",
+    "Shyok"
+   ]
+  },
+  {
+   "label": "Sittaung River",
+   "qid": "Q1075555",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Skeena River",
+   "qid": "Q2291822",
+   "fame": 0.2,
+   "also": [
+    "The Skeena"
+   ]
+  },
+  {
+   "label": "Skellefte River",
+   "qid": "Q1410160",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Slave River",
+   "qid": "Q2226",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sluch River",
+   "qid": "Q1548111",
+   "fame": 0.2,
+   "also": [
+    "Sluch"
+   ]
+  },
+  {
+   "label": "Smoky Hill River",
+   "qid": "Q177627",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Smoky River",
+   "qid": "Q1551634",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Snowy River",
+   "qid": "Q498876",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sobat River",
+   "qid": "Q821911",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sofia River",
+   "qid": "Q4785721",
+   "fame": 0.2,
+   "also": [
+    "Sofia"
+   ]
+  },
+  {
+   "label": "Sok",
+   "qid": "Q1989786",
+   "fame": 0.2,
+   "also": [
+    "Sok River"
+   ]
+  },
+  {
+   "label": "Sokoto River",
+   "qid": "Q2092438",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Solimões",
+   "qid": "Q2844812",
+   "fame": 0.2,
+   "also": [
+    "Solimões River"
+   ]
+  },
+  {
+   "label": "Someș",
+   "qid": "Q217401",
+   "fame": 0.2,
+   "also": [
+    "Szamos"
+   ]
+  },
+  {
+   "label": "Son River",
+   "qid": "Q1418174",
+   "fame": 0.2,
+   "also": [
+    "Sone River",
+    "Soan River"
+   ]
+  },
+  {
+   "label": "Sosva",
+   "qid": "Q615083",
+   "fame": 0.2,
+   "also": [
+    "Sosva River"
+   ]
+  },
+  {
+   "label": "South Nahanni River",
+   "qid": "Q1535066",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "South Platte River",
+   "qid": "Q130892",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "South Saskatchewan River",
+   "qid": "Q2242",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sozh",
+   "qid": "Q784682",
+   "fame": 0.2,
+   "also": [
+    "Sož",
+    "Sozh River"
+   ]
+  },
+  {
+   "label": "St. Francis River",
+   "qid": "Q1108022",
+   "fame": 0.2,
+   "also": [
+    "El Rio San Francisco",
+    "First Creek",
+    "Fiume San Francesco",
+    "Rio San Francisco",
+    "Riviere des Chepoussea",
+    "Riviere Saint Francis",
+    "Saint Francois River",
+    "San Francisco River",
+    "Charley Creek",
+    "Saint Francis River",
+    "Charles Creek",
+    "Cholohollay River"
+   ]
+  },
+  {
+   "label": "St. Johns River",
+   "qid": "Q1677915",
+   "fame": 0.2,
+   "also": [
+    "Saint Johns River"
+   ]
+  },
+  {
+   "label": "Stikine River",
+   "qid": "Q2092571",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Styr River",
+   "qid": "Q1136609",
+   "fame": 0.2,
+   "also": [
+    "Styr"
+   ]
+  },
+  {
+   "label": "Subarnarekha River",
+   "qid": "Q3822918",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sukhona",
+   "qid": "Q82812",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Sula River",
+   "qid": "Q1501150",
+   "fame": 0.2,
+   "also": [
+    "Sula"
+   ]
+  },
+  {
+   "label": "Suriname River",
+   "qid": "Q635545",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Surma River",
+   "qid": "Q2985860",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Susitna River",
+   "qid": "Q60065",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Suwannee River",
+   "qid": "Q2299655",
+   "fame": 0.2,
+   "also": [
+    "Suwanee River"
+   ]
+  },
+  {
+   "label": "Svislach River",
+   "qid": "Q875547",
+   "fame": 0.2,
+   "also": [
+    "Svislach",
+    "Svislač"
+   ]
+  },
+  {
+   "label": "Sviyaga",
+   "qid": "Q1132165",
+   "fame": 0.2,
+   "also": [
+    "Sviyaga River"
+   ]
+  },
+  {
+   "label": "Swakop River",
+   "qid": "Q1455877",
+   "fame": 0.2,
+   "also": [
+    "Swakop"
+   ]
+  },
+  {
+   "label": "Swan River",
+   "qid": "Q1137387",
+   "fame": 0.2,
+   "also": [
+    "Yerbal Derrigan"
+   ]
+  },
+  {
+   "label": "Sylva",
+   "qid": "Q509058",
+   "fame": 0.2,
+   "also": [
+    "Sylva River"
+   ]
+  },
+  {
+   "label": "Sym River",
+   "qid": "Q1762275",
+   "fame": 0.2,
+   "also": [
+    "Sym"
+   ]
+  },
+  {
+   "label": "Sysola",
+   "qid": "Q854899",
+   "fame": 0.2,
+   "also": [
+    "Syktyv",
+    "Sysola River"
+   ]
+  },
+  {
+   "label": "Tacuarembó River",
+   "qid": "Q799966",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Taedong River",
+   "qid": "Q330618",
+   "fame": 0.2,
+   "also": [
+    "Taedong-gang",
+    "the Taedong River"
+   ]
+  },
+  {
+   "label": "Tagil",
+   "qid": "Q1344430",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Talas River",
+   "qid": "Q745859",
+   "fame": 0.2,
+   "also": [
+    "Talas"
+   ]
+  },
+  {
+   "label": "Tana",
+   "qid": "Q829866",
+   "fame": 0.2,
+   "also": [
+    "Teno",
+    "Deatnu",
+    "Tenojoki"
+   ]
+  },
+  {
+   "label": "Tana River",
+   "qid": "Q331162",
+   "fame": 0.2,
+   "also": [
+    "Tana",
+    "Sagana River"
+   ]
+  },
+  {
+   "label": "Tanana River",
+   "qid": "Q393769",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tano River",
+   "qid": "Q472715",
+   "fame": 0.2,
+   "also": [
+    "Tano",
+    "Tanoé River"
+   ]
+  },
+  {
+   "label": "Tara",
+   "qid": "Q705896",
+   "fame": 0.2,
+   "also": [
+    "Tara River"
+   ]
+  },
+  {
+   "label": "Tarn",
+   "qid": "Q215653",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tavda",
+   "qid": "Q83458",
+   "fame": 0.2,
+   "also": [
+    "Tavda River"
+   ]
+  },
+  {
+   "label": "Taz",
+   "qid": "Q81555",
+   "fame": 0.2,
+   "also": [
+    "Taz River"
+   ]
+  },
+  {
+   "label": "Teesta River",
+   "qid": "Q907883",
+   "fame": 0.2,
+   "also": [
+    "Tista River"
+   ]
+  },
+  {
+   "label": "Tekezé River",
+   "qid": "Q843308",
+   "fame": 0.2,
+   "also": [
+    "Tacazze",
+    "Takkaze"
+   ]
+  },
+  {
+   "label": "Teles Pires River",
+   "qid": "Q745263",
+   "fame": 0.2,
+   "also": [
+    "Teles Pires",
+    "Rio São Manoel"
+   ]
+  },
+  {
+   "label": "Tes",
+   "qid": "Q2368048",
+   "fame": 0.2,
+   "also": [
+    "Tes River"
+   ]
+  },
+  {
+   "label": "Teslin River",
+   "qid": "Q284495",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Teteriv",
+   "qid": "Q162741",
+   "fame": 0.2,
+   "also": [
+    "Teterev"
+   ]
+  },
+  {
+   "label": "Thelon River",
+   "qid": "Q2416760",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Thompson River",
+   "qid": "Q2143805",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tietê River",
+   "qid": "Q849539",
+   "fame": 0.2,
+   "also": [
+    "Rio Tietê"
+   ]
+  },
+  {
+   "label": "Tigre River",
+   "qid": "Q1636709",
+   "fame": 0.2,
+   "also": [
+    "Río Tigre"
+   ]
+  },
+  {
+   "label": "Timpton",
+   "qid": "Q516818",
+   "fame": 0.2,
+   "also": [
+    "Timpton River"
+   ]
+  },
+  {
+   "label": "Tombigbee River",
+   "qid": "Q2297877",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tompo",
+   "qid": "Q1390587",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tone River",
+   "qid": "Q177452",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Torne River",
+   "qid": "Q121538",
+   "fame": 0.2,
+   "also": [
+    "Torne",
+    "Duortneseatnu",
+    "Torne älv",
+    "Torneälven",
+    "Tornio River",
+    "Torniojoki",
+    "Tornionjoki",
+    "Tornionväylä"
+   ]
+  },
+  {
+   "label": "Torsa River",
+   "qid": "Q2066287",
+   "fame": 0.2,
+   "also": [
+    "Amo Chu",
+    "Kangphu Chhu",
+    "Kangphu Chu",
+    "Mo Chu"
+   ]
+  },
+  {
+   "label": "Trinity River",
+   "qid": "Q1969490",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Trombetas River",
+   "qid": "Q2207501",
+   "fame": 0.2,
+   "also": [
+    "Trombetas",
+    "Rio Trombetas"
+   ]
+  },
+  {
+   "label": "Tromyogan",
+   "qid": "Q2035343",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tshuapa River",
+   "qid": "Q2635327",
+   "fame": 0.2,
+   "also": [
+    "Tshwapa"
+   ]
+  },
+  {
+   "label": "Tsilma",
+   "qid": "Q391098",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tsipa River",
+   "qid": "Q205425",
+   "fame": 0.2,
+   "also": [
+    "Tsipa"
+   ]
+  },
+  {
+   "label": "Tsna",
+   "qid": "Q217954",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tugela River",
+   "qid": "Q476317",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tungabhadra River",
+   "qid": "Q949183",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tuo River",
+   "qid": "Q1192771",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tura",
+   "qid": "Q588242",
+   "fame": 0.2,
+   "also": [
+    "Tura River"
+   ]
+  },
+  {
+   "label": "Turgai River",
+   "qid": "Q658832",
+   "fame": 0.2,
+   "also": [
+    "Turgay",
+    "Torghay"
+   ]
+  },
+  {
+   "label": "Turukhan",
+   "qid": "Q954728",
+   "fame": 0.2,
+   "also": [
+    "Turukhan River"
+   ]
+  },
+  {
+   "label": "Tuul River",
+   "qid": "Q643058",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tym",
+   "qid": "Q1346382",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tyosha",
+   "qid": "Q1514207",
+   "fame": 0.2,
+   "also": [
+    "Tesha",
+    "Tyosha River"
+   ]
+  },
+  {
+   "label": "Tyukyan",
+   "qid": "Q1785031",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Tyung",
+   "qid": "Q1347142",
+   "fame": 0.2,
+   "also": [
+    "Tyung River"
+   ]
+  },
+  {
+   "label": "Ubagan River",
+   "qid": "Q2659607",
+   "fame": 0.2,
+   "also": [
+    "Ubagan",
+    "Obaghan"
+   ]
+  },
+  {
+   "label": "Uchur River",
+   "qid": "Q1074914",
+   "fame": 0.2,
+   "also": [
+    "Uchur"
+   ]
+  },
+  {
+   "label": "Uda",
+   "qid": "Q583285",
+   "fame": 0.2,
+   "also": [
+    "Chuna"
+   ]
+  },
+  {
+   "label": "Uday River",
+   "qid": "Q367366",
+   "fame": 0.2,
+   "also": [
+    "Udai"
+   ]
+  },
+  {
+   "label": "Uele",
+   "qid": "Q171436",
+   "fame": 0.2,
+   "also": [
+    "Uele River",
+    "Welle"
+   ]
+  },
+  {
+   "label": "Ugra",
+   "qid": "Q264040",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ulúa River",
+   "qid": "Q2419404",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Ulungur River",
+   "qid": "Q1393642",
+   "fame": 0.2,
+   "also": [
+    "Urungu",
+    "Urungu River"
+   ]
+  },
+  {
+   "label": "Ume älv",
+   "qid": "Q51845",
+   "fame": 0.2,
+   "also": [
+    "Ume River",
+    "Umeälven"
+   ]
+  },
+  {
+   "label": "Unzha",
+   "qid": "Q1431174",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Upa",
+   "qid": "Q627412",
+   "fame": 0.2,
+   "also": [
+    "Upa River"
+   ]
+  },
+  {
+   "label": "Upper Angara",
+   "qid": "Q1054311",
+   "fame": 0.2,
+   "also": [
+    "Verkhnyaya Angara"
+   ]
+  },
+  {
+   "label": "Urubamba River",
+   "qid": "Q209590",
+   "fame": 0.2,
+   "also": [
+    "Willkamayu",
+    "Rio Urubamba",
+    "Rio Vilcanota",
+    "Willkanuta"
+   ]
+  },
+  {
+   "label": "Usa",
+   "qid": "Q8175",
+   "fame": 0.2,
+   "also": [
+    "Usva"
+   ]
+  },
+  {
+   "label": "Usumacinta River",
+   "qid": "Q1139679",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Uyandina",
+   "qid": "Q2312062",
+   "fame": 0.2,
+   "also": [
+    "Uyandina River"
+   ]
+  },
+  {
+   "label": "Vakh",
+   "qid": "Q837201",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vashka",
+   "qid": "Q637310",
+   "fame": 0.2,
+   "also": [
+    "Vashka River"
+   ]
+  },
+  {
+   "label": "Västerdal River",
+   "qid": "Q179015",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vasyugan",
+   "qid": "Q511067",
+   "fame": 0.2,
+   "also": [
+    "Vasyugan River"
+   ]
+  },
+  {
+   "label": "Vaupés River",
+   "qid": "Q14290",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Velikaya",
+   "qid": "Q23550",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Venta",
+   "qid": "Q215397",
+   "fame": 0.2,
+   "also": [
+    "Windau",
+    "Vanta",
+    "Venta River",
+    "Windawa"
+   ]
+  },
+  {
+   "label": "Ventuari River",
+   "qid": "Q1349924",
+   "fame": 0.2,
+   "also": [
+    "Río Ventuari"
+   ]
+  },
+  {
+   "label": "Victoria River",
+   "qid": "Q1540063",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vienne",
+   "qid": "Q659546",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vindel River",
+   "qid": "Q1272368",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vishera",
+   "qid": "Q476721",
+   "fame": 0.2,
+   "also": [
+    "Vishera River"
+   ]
+  },
+  {
+   "label": "Vitim",
+   "qid": "Q26068",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Vorona",
+   "qid": "Q1313548",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Voronezh",
+   "qid": "Q847893",
+   "fame": 0.2,
+   "also": [
+    "Voronezh River"
+   ]
+  },
+  {
+   "label": "Vorskla",
+   "qid": "Q844041",
+   "fame": 0.2,
+   "also": [
+    "Vorskla River"
+   ]
+  },
+  {
+   "label": "Vovcha",
+   "qid": "Q2993908",
+   "fame": 0.2,
+   "also": [
+    "Vovcha River"
+   ]
+  },
+  {
+   "label": "Vym",
+   "qid": "Q1065265",
+   "fame": 0.2,
+   "also": [
+    "Emva",
+    "Yemva"
+   ]
+  },
+  {
+   "label": "Wabash River",
+   "qid": "Q196183",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Waikato River",
+   "qid": "Q1048219",
+   "fame": 0.2,
+   "also": [
+    "Waikato"
+   ]
+  },
+  {
+   "label": "Wami River",
+   "qid": "Q1106820",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Wei River",
+   "qid": "Q847641",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "West Morava",
+   "qid": "Q378985",
+   "fame": 0.2,
+   "also": [
+    "Western Morava"
+   ]
+  },
+  {
+   "label": "West Rapti River",
+   "qid": "Q2869013",
+   "fame": 0.2,
+   "also": [
+    "West Rapti"
+   ]
+  },
+  {
+   "label": "White River",
+   "qid": "Q1813795",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "White Volta",
+   "qid": "Q1259188",
+   "fame": 0.2,
+   "also": [
+    "Nakambé"
+   ]
+  },
+  {
+   "label": "Wieprz",
+   "qid": "Q1130403",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Willamette River",
+   "qid": "Q131071",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Wisconsin River",
+   "qid": "Q978496",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Wu River",
+   "qid": "Q1515792",
+   "fame": 0.2,
+   "also": [
+    "Wu Jiang"
+   ]
+  },
+  {
+   "label": "Xiang River",
+   "qid": "Q831884",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Yalong River",
+   "qid": "Q876857",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Yaqui River",
+   "qid": "Q1889886",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Yarkand River",
+   "qid": "Q559283",
+   "fame": 0.2,
+   "also": [
+    "Yarkand",
+    "Yarkend",
+    "Yarkent",
+    "Sirikol",
+    "Sirikol River",
+    "Yarkant",
+    "Yarkant He",
+    "Yarkant River",
+    "Yarkend River",
+    "Yarkent River"
+   ]
+  },
+  {
+   "label": "Yarlung Tsangpo River",
+   "qid": "Q3244259",
+   "fame": 0.2,
+   "also": [
+    "Yarlung Tsangpo",
+    "Yalu Zangbu River",
+    "Yar klung gtsang po",
+    "Yarlung Zangbo River"
+   ]
+  },
+  {
+   "label": "Yasachnaya",
+   "qid": "Q571157",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Yaya",
+   "qid": "Q1637644",
+   "fame": 0.2,
+   "also": [
+    "Yaya River"
+   ]
+  },
+  {
+   "label": "Yayva",
+   "qid": "Q2320653",
+   "fame": 0.2,
+   "also": [
+    "Yayva River"
+   ]
+  },
+  {
+   "label": "Yeşilırmak River",
+   "qid": "Q1145293",
+   "fame": 0.2,
+   "also": [
+    "Yeşilırmak"
+   ]
+  },
+  {
+   "label": "Yeya River",
+   "qid": "Q133452",
+   "fame": 0.2,
+   "also": [
+    "Yeya"
+   ]
+  },
+  {
+   "label": "Ygyatta",
+   "qid": "Q259790",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Yobe River",
+   "qid": "Q1199792",
+   "fame": 0.2,
+   "also": [
+    "Komadugu Yobe",
+    "Komadougou Yobe"
+   ]
+  },
+  {
+   "label": "Yom River",
+   "qid": "Q586733",
+   "fame": 0.2,
+   "also": [
+    "Mae Nam Yom"
+   ]
+  },
+  {
+   "label": "Yongding River",
+   "qid": "Q1151727",
+   "fame": 0.2,
+   "also": [
+    "Wuding River"
+   ]
+  },
+  {
+   "label": "Yuan River",
+   "qid": "Q1063190",
+   "fame": 0.2,
+   "also": [
+    "Yuanjiang"
+   ]
+  },
+  {
+   "label": "yuca guasi",
+   "qid": "Q1343322",
+   "fame": 0.2,
+   "also": [
+    "Desaguadero River"
+   ]
+  },
+  {
+   "label": "Yudoma",
+   "qid": "Q588592",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Yug",
+   "qid": "Q845960",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Yurungkax He",
+   "qid": "Q2339502",
+   "fame": 0.2,
+   "also": [
+    "White Jade River"
+   ]
+  },
+  {
+   "label": "Yuryuzan",
+   "qid": "Q116456",
+   "fame": 0.2,
+   "also": [
+    "Yuryuzan River"
+   ]
+  },
+  {
+   "label": "Zavkhan River",
+   "qid": "Q2353197",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Zayandeh River",
+   "qid": "Q167814",
+   "fame": 0.2,
+   "also": [
+    "Zayanderud",
+    "Zayandeh Rud"
+   ]
+  },
+  {
+   "label": "Zeravshan",
+   "qid": "Q501027",
+   "fame": 0.2,
+   "also": [
+    "Zarafshon",
+    "Zeravshan River",
+    "the Zeravshan"
+   ]
+  },
+  {
+   "label": "Zhob River",
+   "qid": "Q2985177",
+   "fame": 0.2,
+   "also": []
+  },
+  {
+   "label": "Kuban",
+   "qid": "Q82308",
+   "fame": 0.197,
+   "also": [
+    "Hypanis",
+    "Kuban River"
+   ]
+  },
+  {
+   "label": "Olt River",
+   "qid": "Q126822",
+   "fame": 0.191,
+   "also": [
+    "Olt"
+   ]
+  },
+  {
+   "label": "Onon River",
+   "qid": "Q206694",
+   "fame": 0.189,
+   "also": [
+    "Onon"
+   ]
+  },
+  {
+   "label": "Rioni",
+   "qid": "Q203409",
+   "fame": 0.188,
+   "also": []
+  },
+  {
+   "label": "Argun River",
+   "qid": "Q26439",
+   "fame": 0.187,
+   "also": [
+    "Argun",
+    "Ergun",
+    "Argoun",
+    "Argoun R.",
+    "Argun R.",
+    "Ergun R.",
+    "Ergun River",
+    "River Argoun",
+    "River Argun",
+    "River Ergun"
+   ]
+  },
+  {
+   "label": "Hari River",
+   "qid": "Q8505",
+   "fame": 0.185,
+   "also": [
+    "Hari",
+    "Arius",
+    "Tarius",
+    "Arios",
+    "Tedzhen",
+    "Tejen",
+    "Areios",
+    "Gerirud",
+    "Tedzhen river",
+    "Tejen river"
+   ]
+  },
+  {
+   "label": "San",
+   "qid": "Q216488",
+   "fame": 0.185,
+   "also": []
+  },
+  {
+   "label": "Shire River",
+   "qid": "Q2279579",
+   "fame": 0.184,
+   "also": [
+    "Shiré"
+   ]
+  },
+  {
+   "label": "Kolyma",
+   "qid": "Q78879",
+   "fame": 0.183,
+   "also": [
+    "Kolyma River"
+   ]
+  },
+  {
+   "label": "Pechora",
+   "qid": "Q8168",
+   "fame": 0.183,
+   "also": [
+    "Petchora"
+   ]
+  },
+  {
+   "label": "Neris",
+   "qid": "Q207903",
+   "fame": 0.18,
+   "also": [
+    "Vilija",
+    "Viliya"
+   ]
+  },
+  {
+   "label": "Váh",
+   "qid": "Q202598",
+   "fame": 0.178,
+   "also": [
+    "Vág",
+    "Waag"
+   ]
+  },
+  {
+   "label": "Araguaia River",
+   "qid": "Q171847",
+   "fame": 0.177,
+   "also": [
+    "Araguay",
+    "Rio Araguaia"
+   ]
+  },
+  {
+   "label": "Doubs",
+   "qid": "Q14372",
+   "fame": 0.177,
+   "also": [
+    "Doubs river",
+    "Le Doubs"
+   ]
+  },
+  {
+   "label": "Aisne",
+   "qid": "Q41962",
+   "fame": 0.176,
+   "also": []
+  },
+  {
+   "label": "Kherlen River",
+   "qid": "Q641020",
+   "fame": 0.173,
+   "also": [
+    "Kern",
+    "Kerülen",
+    "Kerulen River"
+   ]
+  },
+  {
+   "label": "Cunene River",
+   "qid": "Q320649",
+   "fame": 0.171,
+   "also": [
+    "Kunene River"
+   ]
+  },
+  {
+   "label": "Ogooué River",
+   "qid": "Q750021",
+   "fame": 0.17,
+   "also": [
+    "Ogowe",
+    "Ogowe River",
+    "Nazareth River"
+   ]
+  },
+  {
+   "label": "Ishim",
+   "qid": "Q191524",
+   "fame": 0.169,
+   "also": [
+    "Yessil"
+   ]
+  },
+  {
+   "label": "Iskar",
+   "qid": "Q217805",
+   "fame": 0.169,
+   "also": []
+  },
+  {
+   "label": "Putumayo River",
+   "qid": "Q213782",
+   "fame": 0.169,
+   "also": [
+    "Içá River",
+    "Rio Içá",
+    "Río Putumayo"
+   ]
+  },
+  {
+   "label": "Siret River",
+   "qid": "Q208302",
+   "fame": 0.169,
+   "also": [
+    "Siret"
+   ]
+  },
+  {
+   "label": "Chu River",
+   "qid": "Q524206",
+   "fame": 0.165,
+   "also": [
+    "Chu",
+    "Shu",
+    "Chuy",
+    "River Chu",
+    "Chu R.",
+    "River Shu",
+    "Shu R.",
+    "Shu River"
+   ]
+  },
+  {
+   "label": "Japurá River",
+   "qid": "Q171840",
+   "fame": 0.165,
+   "also": [
+    "Yapura",
+    "Rio Caqueta",
+    "Rio Japurá"
+   ]
+  },
+  {
+   "label": "Tapajós River",
+   "qid": "Q752674",
+   "fame": 0.165,
+   "also": [
+    "Tapajós"
+   ]
+  },
+  {
+   "label": "Tobol",
+   "qid": "Q124653",
+   "fame": 0.159,
+   "also": [
+    "Tobol River"
+   ]
+  },
+  {
+   "label": "Purus River",
+   "qid": "Q26271",
+   "fame": 0.156,
+   "also": [
+    "Rio Purus"
+   ]
+  },
+  {
+   "label": "Desna",
+   "qid": "Q202796",
+   "fame": 0.153,
+   "also": [
+    "Desna River"
+   ]
+  },
+  {
+   "label": "Pilcomayo River",
+   "qid": "Q270569",
+   "fame": 0.147,
+   "also": [
+    "Río Pilcomayo"
+   ]
+  },
+  {
+   "label": "Adour",
+   "qid": "Q207366",
+   "fame": 0.145,
+   "also": [
+    "the Adour"
+   ]
+  },
+  {
+   "label": "Gauja",
+   "qid": "Q207928",
+   "fame": 0.143,
+   "also": [
+    "Koiva River",
+    "Koiva"
+   ]
+  },
+  {
+   "label": "Bío Bío River",
+   "qid": "Q93360",
+   "fame": 0.142,
+   "also": []
+  },
+  {
+   "label": "Kemijoki",
+   "qid": "Q214779",
+   "fame": 0.141,
+   "also": [
+    "Kemi",
+    "Kemi älv",
+    "Kemi river"
+   ]
+  },
+  {
+   "label": "Alazani",
+   "qid": "Q212795",
+   "fame": 0.136,
+   "also": [
+    "Alazonios",
+    "Alazonius"
+   ]
+  },
+  {
+   "label": "Vakhsh River",
+   "qid": "Q8526",
+   "fame": 0.136,
+   "also": [
+    "Vakhsh",
+    "Surkh-ab",
+    "Surkh-ab River",
+    "Surkhob",
+    "Surkhob River",
+    "Vaksh",
+    "Waksh",
+    "Waksh River",
+    "Kyzyl-Suu",
+    "Kizil Su River",
+    "Kizil-su",
+    "Kyzylsu"
+   ]
+  },
+  {
+   "label": "Timiș River",
+   "qid": "Q214894",
+   "fame": 0.132,
+   "also": [
+    "Timiș"
+   ]
+  },
+  {
+   "label": "Argeș River",
+   "qid": "Q214811",
+   "fame": 0.128,
+   "also": [
+    "Argeș",
+    "Argyas",
+    "Argisch",
+    "Râul Argeș"
+   ]
+  },
+  {
+   "label": "Juruá River",
+   "qid": "Q117526",
+   "fame": 0.125,
+   "also": [
+    "Rio Jurua",
+    "Río Yuruá",
+    "Jurua"
+   ]
+  },
+  {
+   "label": "Nizhnyaya Tunguska",
+   "qid": "Q26428",
+   "fame": 0.125,
+   "also": [
+    "Nizhnyaya Tunguska River"
+   ]
+  },
+  {
+   "label": "Yana",
+   "qid": "Q78861",
+   "fame": 0.125,
+   "also": [
+    "Yana River"
+   ]
+  },
+  {
+   "label": "Indigirka",
+   "qid": "Q82207",
+   "fame": 0.124,
+   "also": [
+    "Protoka Srednyaya",
+    "Indigirka River"
+   ]
+  },
+  {
+   "label": "Podkamennaya Tunguska",
+   "qid": "Q26361",
+   "fame": 0.118,
+   "also": []
+  },
+  {
+   "label": "Mamoré River",
+   "qid": "Q117615",
+   "fame": 0.113,
+   "also": [
+    "Rio Mamoré"
+   ]
+  },
+  {
+   "label": "Naryn River",
+   "qid": "Q651195",
+   "fame": 0.11,
+   "also": [
+    "Naryn",
+    "Narin",
+    "Narin R.",
+    "Narin River",
+    "Naryn R.",
+    "River Narin",
+    "River Naryn"
+   ]
+  },
+  {
+   "label": "Anadyr",
+   "qid": "Q26390",
+   "fame": 0.109,
+   "also": []
+  },
+  {
+   "label": "Samara",
+   "qid": "Q649527",
+   "fame": 0.103,
+   "also": [
+    "Samara River"
+   ]
+  },
+  {
+   "label": "Olenyok",
+   "qid": "Q26799",
+   "fame": 0.102,
+   "also": [
+    "Olenëk",
+    "Olenyok River"
+   ]
+  },
+  {
+   "label": "Vilyuy",
+   "qid": "Q26433",
+   "fame": 0.1,
+   "also": [
+    "Vilui River",
+    "Vilyuy River",
+    "Wilui River"
+   ]
+  },
+  {
+   "label": "Shilka",
+   "qid": "Q115456",
+   "fame": 0.082,
+   "also": [
+    "Shilka River"
+   ]
+  },
+  {
+   "label": "Vyatka",
+   "qid": "Q192495",
+   "fame": 0.079,
+   "also": [
+    "Vyatka River"
+   ]
+  },
+  {
+   "label": "Tom",
+   "qid": "Q216188",
+   "fame": 0.074,
+   "also": [
+    "Tom River"
+   ]
+  },
+  {
+   "label": "Seym",
+   "qid": "Q738986",
+   "fame": 0.073,
+   "also": [
+    "Seym River"
+   ]
+  },
+  {
+   "label": "Belaya",
+   "qid": "Q192157",
+   "fame": 0.07,
+   "also": [
+    "Agidel",
+    "Belaya River"
+   ]
+  },
+  {
+   "label": "Aldan",
+   "qid": "Q191832",
+   "fame": 0.067,
+   "also": [
+    "Aldan River"
+   ]
+  },
+  {
+   "label": "Zeya",
+   "qid": "Q210220",
+   "fame": 0.065,
+   "also": []
+  },
+  {
+   "label": "Vychegda",
+   "qid": "Q65383",
+   "fame": 0.064,
+   "also": [
+    "Ezhva"
+   ]
+  },
+  {
+   "label": "Sura",
+   "qid": "Q209891",
+   "fame": 0.048,
+   "also": [
+    "Sura River"
+   ]
+  },
+  {
+   "label": "Kamchatka River",
+   "qid": "Q133476",
+   "fame": 0.04,
+   "also": [
+    "Kamchatka"
+   ]
+  },
+  {
+   "label": "Ufa",
+   "qid": "Q210870",
+   "fame": 0.025,
+   "also": [
+    "Ufa River"
+   ]
+  },
+  {
+   "label": "Vetluga",
+   "qid": "Q467419",
+   "fame": 0,
+   "also": []
+  }
+ ]
+}

@@ -1,0 +1,559 @@
+{
+ "id": "table.getting-around.airlines-country",
+ "kind": "table",
+ "title": "Airlines and their country",
+ "genre": "daily-life",
+ "category": "getting-around",
+ "topic": "airports",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?n) WHERE { ?item wdt:P31 wd:Q46970 ; wdt:P17 ?c ; wikibase:sitelinks ?sitelinks . FILTER NOT EXISTS { ?item wdt:P576 ?end } FILTER(?sitelinks > 25) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 400 } hint:Prior hint:runFirst true . FILTER(?n = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T11:03:52.490Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T11:03:52.490Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "airline",
+  "many": "airlines",
+  "minFame": 0.45,
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} based in?",
+    "statement": "{label} is based in {value}.",
+    "match": "Match each airline to the country it is based in.",
+    "odd": "Three of these airlines are based in {value}. Which one isn't?",
+    "all": "Tap all {n} airlines based in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "flydubai",
+   "qid": "Q1048495",
+   "fame": 0.653,
+   "country": "United Arab Emirates",
+   "description": "Emirati government-owned low-cost airline based in Dubai, United Arab Emirates",
+   "hook": "is a budget carrier that connects a glitzy desert hub to dozens of cities across the Middle East and beyond",
+   "known": 0.2,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "American Airlines",
+   "qid": "Q32396",
+   "fame": 0.638,
+   "country": "United States",
+   "description": "major airline of the United States",
+   "hook": "is the world's biggest carrier by fleet size, with a major hub in Dallas and Charlotte",
+   "known": 0.8,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "Delta Air Lines",
+   "qid": "Q188920",
+   "fame": 0.638,
+   "country": "United States",
+   "description": "airline in the United States (1929–present)",
+   "hook": "is a giant carrier headquartered in Atlanta, home to the world's busiest passenger hub",
+   "known": 0.8,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "IndiGo",
+   "qid": "Q1057110",
+   "fame": 0.63,
+   "country": "India",
+   "description": "Indian airline company",
+   "hook": "is the biggest carrier in its home market, easily spotted by its blue-and-white planes",
+   "known": 0.6,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "Ryanair",
+   "qid": "Q170614",
+   "fame": 0.625,
+   "country": "Ireland",
+   "description": "low-cost airline of Ireland",
+   "hook": "is Europe's busiest budget carrier, known for bare-bones fares and strict baggage fees",
+   "known": 0.7,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "Etihad Airways",
+   "qid": "Q212304",
+   "fame": 0.618,
+   "country": "United Arab Emirates",
+   "description": "flag-carrier airline of the United Arab Emirates",
+   "hook": "is a Gulf flag carrier based in Abu Dhabi, known for luxury flying suites with a private shower",
+   "known": 0.7,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "Lufthansa",
+   "qid": "Q9325",
+   "fame": 0.612,
+   "country": "Germany",
+   "description": "Flag-carrier and largest airline of Germany",
+   "hook": "is a flag carrier whose yellow-and-blue crane logo is among Europe's best known, with its hub in Frankfurt",
+   "known": 0.8,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "British Airways",
+   "qid": "Q8766",
+   "fame": 0.588,
+   "country": "United Kingdom",
+   "description": "flag carrier airline of the United Kingdom",
+   "hook": "is a flag carrier based at London Heathrow that once flew the supersonic Concorde",
+   "known": 0.8,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "Southwest Airlines",
+   "qid": "Q503308",
+   "fame": 0.576,
+   "country": "United States",
+   "description": "airline of the United States",
+   "hook": "is a budget carrier famous for flying only Boeing 737s, with no assigned seats and free checked bags",
+   "known": 0.8,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "Wizz Air",
+   "qid": "Q335147",
+   "fame": 0.575,
+   "country": "Hungary",
+   "description": "Hungarian low-cost airline",
+   "hook": "is a purple-and-pink budget carrier that spreads cheap fares across Central and Eastern Europe",
+   "known": 0.3,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "Qantas Airways",
+   "qid": "Q32491",
+   "fame": 0.569,
+   "country": "Australia",
+   "description": "the flag carrier airline of Australia",
+   "hook": "is a flag carrier known for a flying kangaroo logo and some of the longest nonstop flights in the world",
+   "known": 0.7,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "Alaska Airlines",
+   "qid": "Q822614",
+   "fame": 0.567,
+   "country": "United States",
+   "description": "major American airline",
+   "hook": "is a West Coast carrier with a smiling Inuit man on its tails, based in Seattle",
+   "known": 0.6,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "easyJet",
+   "qid": "Q191551",
+   "fame": 0.564,
+   "country": "United Kingdom",
+   "description": "British low-cost airline",
+   "hook": "is a budget carrier whose bright orange planes buzz around Europe's short-haul routes",
+   "known": 0.8,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "KLM",
+   "qid": "Q181912",
+   "fame": 0.559,
+   "country": "Netherlands",
+   "description": "flag carrier airline of the Netherlands",
+   "hook": "is the oldest carrier in the world still flying under its original name, with a hub at Amsterdam Schiphol",
+   "known": 0.7,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "Virgin Atlantic",
+   "qid": "Q32277",
+   "fame": 0.557,
+   "country": "United Kingdom",
+   "description": "British airline",
+   "hook": "is a flamboyant long-haul carrier with red planes and a flying-lady logo, started by a daring billionaire",
+   "known": 0.7,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "All Nippon Airways",
+   "qid": "Q204284",
+   "fame": 0.556,
+   "country": "Japan",
+   "description": "Japanese airline",
+   "hook": "is one of the biggest carriers in its country, known for its blue livery and sea-turtle painted jets",
+   "known": 0.6,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "JetBlue Airways",
+   "qid": "Q161086",
+   "fame": 0.556,
+   "country": "United States",
+   "description": "airline from the United States",
+   "hook": "is a New York based low-fare carrier famous for free snacks and live TV at every seat",
+   "known": 0.6,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "Frontier Airlines",
+   "qid": "Q1139541",
+   "fame": 0.541,
+   "country": "United States",
+   "description": "airline in the United States",
+   "hook": "is an ultra-low-cost carrier with a different animal painted on each plane's tail",
+   "known": 0.3,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "Aer Lingus",
+   "qid": "Q83716",
+   "fame": 0.534,
+   "country": "Ireland",
+   "description": "flag-carrier airline of Ireland",
+   "hook": "is a flag carrier with a green shamrock on its tail that connects Dublin to North America",
+   "known": 0.4,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "ITA Airways",
+   "qid": "Q108251249",
+   "fame": 0.532,
+   "country": "Italy",
+   "description": "state-owned flag carrier of Italy",
+   "hook": "is a flag carrier founded as the successor of a famously troubled national airline, with its hub in Rome",
+   "known": 0.4,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "AirAsia",
+   "qid": "Q406643",
+   "fame": 0.531,
+   "country": "Malaysia",
+   "description": "Malaysian low-cost airline",
+   "hook": "is a red-liveried budget giant whose slogan says now everyone can fly",
+   "known": 0.5,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "Condor Flugdienst",
+   "qid": "Q312517",
+   "fame": 0.531,
+   "country": "Germany",
+   "description": "German leisure airline",
+   "hook": "is a leisure carrier that flies vacationers to sunny holiday beaches on yellow-tailed planes",
+   "known": 0.2,
+   "kind": "leisure carrier"
+  },
+  {
+   "label": "Asiana Airlines",
+   "qid": "Q211165",
+   "fame": 0.53,
+   "country": "South Korea",
+   "description": "airline in South Korea",
+   "hook": "is a flag carrier with a hub at Incheon, long a rival of its larger national competitor",
+   "known": 0.4,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "Allegiant Air",
+   "qid": "Q1319601",
+   "fame": 0.529,
+   "country": "United States",
+   "description": "United States based low cost airline",
+   "hook": "is an ultra-low-cost carrier that mostly flies leisure travelers from smaller cities to Las Vegas and Florida",
+   "known": 0.2,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "Ethiopian Airlines",
+   "qid": "Q245233",
+   "fame": 0.519,
+   "country": "Ethiopia",
+   "description": "flag-carrier airline of Ethiopia",
+   "hook": "is Africa's largest carrier by passengers and a hub for flights across the continent from Addis Ababa",
+   "known": 0.4,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "WestJet",
+   "qid": "Q1059770",
+   "fame": 0.518,
+   "country": "Canada",
+   "description": "Airline in Canada",
+   "hook": "is a carrier with a cheerful teal livery, based in Calgary",
+   "known": 0.3,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "AirBaltic",
+   "qid": "Q300924",
+   "fame": 0.515,
+   "country": "Latvia",
+   "description": "Latvian airline; flag-carrier airline of Latvia",
+   "hook": "is a Baltic carrier based in Riga that flies Airbus A220 jets",
+   "known": 0.2,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "Iberia",
+   "qid": "Q187972",
+   "fame": 0.51,
+   "country": "Spain",
+   "description": "flag-carrier airline of Spain",
+   "hook": "is a flag carrier with a hub in Madrid, long the main link between Europe and Latin America",
+   "known": 0.6,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "Gulf Air",
+   "qid": "Q473231",
+   "fame": 0.504,
+   "country": "Bahrain",
+   "description": "flag carrier of Bahrain",
+   "hook": "is a small flag carrier based in Manama, named for the waters its home island kingdom sits in",
+   "known": 0.2,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "Hawaiian Airlines",
+   "qid": "Q642610",
+   "fame": 0.5,
+   "country": "United States",
+   "description": "airline in the western United States",
+   "hook": "is a carrier with a Polynesian woman painted on its tail, connecting the islands to the mainland",
+   "known": 0.5,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "SpiceJet",
+   "qid": "Q943813",
+   "fame": 0.495,
+   "country": "India",
+   "description": "Indian low-cost airline",
+   "hook": "is a red-and-yellow budget carrier that has struggled with debts and grounded jets",
+   "known": 0.3,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "Air Arabia",
+   "qid": "Q406798",
+   "fame": 0.493,
+   "country": "United Arab Emirates",
+   "description": "Emirati low-cost airline based in Sharjah, UAE",
+   "hook": "is a pioneering budget carrier from the Gulf, flying out of a hub at Sharjah",
+   "known": 0.2,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "Pegasus Airlines",
+   "qid": "Q1100424",
+   "fame": 0.493,
+   "country": "Turkey",
+   "description": "Turkish low-cost airline headquartered in Pendik, Istanbul",
+   "hook": "is a budget carrier whose red-and-white planes link Istanbul's second airport to Europe and Asia",
+   "known": 0.2,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "Aegean Airlines",
+   "qid": "Q380580",
+   "fame": 0.492,
+   "country": "Greece",
+   "description": "Flag carrier airline of Greece",
+   "hook": "is a flag carrier that serves many sun-soaked holiday islands in the Mediterranean from Athens",
+   "known": 0.3,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "Jet2.com",
+   "qid": "Q1140807",
+   "fame": 0.49,
+   "country": "United Kingdom",
+   "description": "British low cost airline",
+   "hook": "is a budget carrier with a cheeky slogan, a big seller of package holidays from northern airports",
+   "known": 0.3,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "Scoot",
+   "qid": "Q1319404",
+   "fame": 0.489,
+   "country": "Singapore",
+   "description": "Singaporean low-cost airline and a wholly owned subsidiary of Singapore Airlines",
+   "hook": "is the budget arm of a famous long-haul carrier, with a yellow livery that is easy to spot",
+   "known": 0.2,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "Cebu Pacific",
+   "qid": "Q995151",
+   "fame": 0.487,
+   "country": "Philippines",
+   "description": "low-cost Philippine airline",
+   "hook": "is a budget carrier that links an archipelago's many islands and popularized cheap promo seat sales",
+   "known": 0.2,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "Air Transat",
+   "qid": "Q407869",
+   "fame": 0.484,
+   "country": "Canada",
+   "description": "airline in Canada",
+   "hook": "is a holiday carrier that flies sun seekers from cold Montreal and Toronto to Caribbean beaches",
+   "known": 0.3,
+   "kind": "leisure carrier"
+  },
+  {
+   "label": "Avianca",
+   "qid": "Q308911",
+   "fame": 0.483,
+   "country": "Colombia",
+   "description": "Colombian airline",
+   "hook": "is one of the oldest carriers in the Americas, with a hub in Bogota",
+   "known": 0.4,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "LATAM Airlines",
+   "qid": "Q649178",
+   "fame": 0.479,
+   "country": "Chile",
+   "description": "airline of Chile",
+   "hook": "is South America's largest carrier, formed by merging a flag carrier with a Brazilian rival",
+   "known": 0.5,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "Jetstar Airways",
+   "qid": "Q767627",
+   "fame": 0.473,
+   "country": "Australia",
+   "description": "Australian low-cost airline",
+   "hook": "is the budget arm of a flag carrier, with an orange star logo, covering Asia and the Pacific",
+   "known": 0.5,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "Vueling",
+   "qid": "Q646741",
+   "fame": 0.473,
+   "country": "Spain",
+   "description": "Spanish low-cost airline",
+   "hook": "is a Barcelona based budget carrier with a bright yellow livery",
+   "known": 0.3,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "Transavia",
+   "qid": "Q246952",
+   "fame": 0.467,
+   "country": "Netherlands",
+   "description": "Dutch low-cost airline",
+   "hook": "is a budget carrier that flies sun seekers to Mediterranean resorts, owned by a famous flag carrier",
+   "known": 0.2,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "Brussels Airlines",
+   "qid": "Q153571",
+   "fame": 0.464,
+   "country": "Belgium",
+   "description": "airline based in Brussels, Belgium",
+   "hook": "is a carrier based at the airport of Europe's capital, part of a big European group, flying mainly to Africa",
+   "known": 0.3,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "Eurowings",
+   "qid": "Q168836",
+   "fame": 0.462,
+   "country": "Germany",
+   "description": "German low-cost airline; part of Lufthansa Group",
+   "hook": "is the low-cost arm of a major flag carrier, known for short-haul flights across Europe",
+   "known": 0.3,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "Air Europa",
+   "qid": "Q332980",
+   "fame": 0.459,
+   "country": "Spain",
+   "description": "Spanish airline",
+   "hook": "is a Madrid based carrier that competes with the biggest national airline in transatlantic routes",
+   "known": 0.2,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "VietJet Air",
+   "qid": "Q853878",
+   "fame": 0.459,
+   "country": "Vietnam",
+   "description": "low-cost airline from Vietnam",
+   "hook": "is a budget carrier known for its bright red planes and bikini-clad flight attendants in promotions",
+   "known": 0.3,
+   "kind": "low-cost carrier"
+  },
+  {
+   "label": "TUI Airways",
+   "qid": "Q1156859",
+   "fame": 0.458,
+   "country": "United Kingdom",
+   "description": "Charter airline based in the United Kingdom",
+   "hook": "is a charter carrier that flies package holidaymakers to Mediterranean resorts, run by a big tour operator",
+   "known": 0.2,
+   "kind": "leisure carrier"
+  },
+  {
+   "label": "Copa Airlines",
+   "qid": "Q849404",
+   "fame": 0.457,
+   "country": "Panama",
+   "description": "flag-carrier airline of Panama",
+   "hook": "is a flag carrier with a hub in a canal-crossing capital, known as the Hub of the Americas",
+   "known": 0.3,
+   "kind": "major flag carrier"
+  },
+  {
+   "label": "Volaris",
+   "qid": "Q431757",
+   "fame": 0.454,
+   "country": "Mexico",
+   "description": "Mexican low-cost airline",
+   "hook": "is a budget carrier that carries travelers across a big North American country and into the United States",
+   "known": 0.2,
+   "kind": "low-cost carrier"
+  }
+ ]
+}

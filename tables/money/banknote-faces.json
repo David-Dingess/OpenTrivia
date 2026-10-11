@@ -1,0 +1,478 @@
+{
+ "id": "table.money.banknote-faces",
+ "kind": "table",
+ "title": "Faces on banknotes",
+ "genre": "daily-life",
+ "category": "money",
+ "topic": "banknotes",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?curLabel WHERE { VALUES (?item ?curLabel) { (wd:Q23 \"US $1 bill\") (wd:Q11812 \"US $2 bill\") (wd:Q91 \"US $5 bill\") (wd:Q178903 \"US $10 bill\") (wd:Q11817 \"US $20 bill\") (wd:Q34836 \"US $50 bill\") (wd:Q34969 \"US $100 bill\") (wd:Q35041 \"US $500 bill\") (wd:Q35171 \"US $1,000 bill\") (wd:Q34296 \"US $100,000 bill\") (wd:Q36322 \"UK £10 note\") (wd:Q8016 \"UK £5 note\") (wd:Q7251 \"UK £50 note\") (wd:Q159758 \"UK £20 note\") (wd:Q935 \"UK £1 note\") (wd:Q189144 \"UK 50p note\") (wd:Q1001 \"Indian rupee notes\") (wd:Q355447 \"Japanese 10,000 yen note\") (wd:Q356114 \"Japanese 1,000 yen note\") (wd:Q81731 \"Japanese 2,000 yen note\") (wd:Q37682 \"South Korean 10,000 won note\") (wd:Q134958 \"Ukrainian 100 hryvnia note\") (wd:Q203808 \"Ukrainian 5 hryvnia note\") (wd:Q14974 \"Ukrainian 1 hryvnia note\") (wd:Q5673 \"Danish 10 kroner note\") (wd:Q182804 \"Danish 50 kroner note\") (wd:Q7085 \"Danish 500 kroner note\") (wd:Q55767 \"Swedish 20 kronor note\") (wd:Q5443 \"Swedish 100 kronor note\") (wd:Q7546 \"Swedish 200 kronor note\") (wd:Q41406 \"Norwegian 1,000 kroner note\") (wd:Q80621 \"Norwegian 500 kroner note\") (wd:Q40213 \"Irish 20 pound note\") (wd:Q6882 \"Irish 10 pound note\") (wd:Q9036 \"Yugoslav 10 billion dinar note\") (wd:Q20882 \"French 200 franc note\") (wd:Q2908 \"French 50 franc note\") (wd:Q4700 \"French 20 franc note\") (wd:Q33477 \"French 100 franc note\") (wd:Q171128 \"Mexican 500 peso note\") (wd:Q5878 \"Colombian 50,000 peso note\") (wd:Q237607 \"Australian $100 note\") (wd:Q128633 \"Canadian $50 note\") (wd:Q12154 \"Egyptian 1 pound note\") (wd:Q1500 \"Philippine 2 peso bill\") (wd:Q188939 \"Philippine 5 peso bill\") (wd:Q78492 \"Czech 5,000 koruna note\") (wd:Q155669 \"Czech 100 koruna note\") (wd:Q53435 \"Polish 10 zloty note\") (wd:Q184935 \"Romanian 500 lei note\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T16:25:35.512Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T16:25:35.512Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "note",
+   "label": "Banknote they appear on",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "person on a banknote",
+  "many": "people on banknotes",
+  "minFame": 0.5,
+  "columns": {
+   "note": {
+    "role": "code",
+    "pick": "Which banknote carries the portrait of {label}?",
+    "statement": "{label} is pictured on the {value}.",
+    "match": "Match each person to the banknote they appear on.",
+    "reverse": "Who is pictured on the {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "George Washington",
+   "qid": "Q23",
+   "fame": 0.77,
+   "note": "US $1 bill",
+   "description": "Founding Father and first U.S. president (1732–1799)",
+   "hook": "led the Continental Army and then became the first leader of a new republic",
+   "known": 0.95,
+   "kind": "american president"
+  },
+  {
+   "label": "Abraham Lincoln",
+   "qid": "Q91",
+   "fame": 0.765,
+   "note": "US $5 bill",
+   "description": "president of the United States from 1861 to 1865 (1809-1865)",
+   "hook": "led the nation through its civil war and issued the Emancipation Proclamation",
+   "known": 0.95,
+   "kind": "american president"
+  },
+  {
+   "label": "Winston Churchill",
+   "qid": "Q8016",
+   "fame": 0.761,
+   "note": "UK £5 note",
+   "description": "British statesman, soldier and writer (1874–1965)",
+   "hook": "led his country through the Second World War with famously defiant speeches",
+   "known": 0.95,
+   "kind": "statesman"
+  },
+  {
+   "label": "Mahatma Gandhi",
+   "qid": "Q1001",
+   "fame": 0.755,
+   "note": "Indian rupee notes",
+   "description": "Indian independence activist (1869–1948)",
+   "hook": "led a nonviolent independence movement, including the long Salt March",
+   "known": 0.8,
+   "kind": "statesman"
+  },
+  {
+   "label": "Jane Austen",
+   "qid": "Q36322",
+   "fame": 0.745,
+   "note": "UK £10 note",
+   "description": "author, novelist, writer (1775–1817)",
+   "hook": "wrote Pride and Prejudice and other sharp romantic comedies of manners",
+   "known": 0.8,
+   "kind": "writer"
+  },
+  {
+   "label": "Alan Turing",
+   "qid": "Q7251",
+   "fame": 0.734,
+   "note": "UK £50 note",
+   "description": "English computer scientist (1912–1954)",
+   "hook": "helped crack the Enigma code in wartime and pioneered the idea of the modern computer",
+   "known": 0.6,
+   "kind": "scientist"
+  },
+  {
+   "label": "Alexander Hamilton",
+   "qid": "Q178903",
+   "fame": 0.734,
+   "note": "US $10 bill",
+   "description": "American Founding Father and statesman (1755/1757–1804)",
+   "hook": "was a Founding Father whose life inspired a hit hip-hop stage musical",
+   "known": 0.6,
+   "kind": "statesman"
+  },
+  {
+   "label": "Thomas Jefferson",
+   "qid": "Q11812",
+   "fame": 0.729,
+   "note": "US $2 bill",
+   "description": "Founding Father, U.S. president from 1801 to 1809 (1743–1826)",
+   "hook": "wrote the Declaration of Independence and doubled the country's size with a land purchase",
+   "known": 0.95,
+   "kind": "american president"
+  },
+  {
+   "label": "Nikola Tesla",
+   "qid": "Q9036",
+   "fame": 0.727,
+   "note": "Yugoslav 10 billion dinar note",
+   "description": "Serbian-American engineer and inventor (1856-1943)",
+   "hook": "pioneered alternating-current electricity and was a famous rival of Thomas Edison",
+   "known": 0.6,
+   "kind": "scientist"
+  },
+  {
+   "label": "Isaac Newton",
+   "qid": "Q935",
+   "fame": 0.721,
+   "note": "UK £1 note",
+   "description": "English mathematician and physicist (1642–1727)",
+   "hook": "formulated the laws of motion and gravity, famously linked to a falling apple",
+   "known": 0.8,
+   "kind": "scientist"
+  },
+  {
+   "label": "Benjamin Franklin",
+   "qid": "Q34969",
+   "fame": 0.711,
+   "note": "US $100 bill",
+   "description": "American polymath and statesman (1706–1790)",
+   "hook": "was a Founding Father and inventor famed for flying a kite in a thunderstorm",
+   "known": 0.8,
+   "kind": "statesman"
+  },
+  {
+   "label": "Ulysses S. Grant",
+   "qid": "Q34836",
+   "fame": 0.701,
+   "note": "US $50 bill",
+   "description": "president of the United States from 1869 to 1877",
+   "hook": "commanded the Union armies to victory in the Civil War before entering the White House",
+   "known": 0.6,
+   "kind": "american president"
+  },
+  {
+   "label": "William McKinley",
+   "qid": "Q35041",
+   "fame": 0.688,
+   "note": "US $500 bill",
+   "description": "president of the United States from 1897 to 1901 (1843-1901)",
+   "hook": "led the country through the Spanish-American War and was later assassinated",
+   "known": 0.4,
+   "kind": "american president"
+  },
+  {
+   "label": "Andrew Jackson",
+   "qid": "Q11817",
+   "fame": 0.682,
+   "note": "US $20 bill",
+   "description": "president of the United States from 1829 to 1837",
+   "hook": "became a hero at the Battle of New Orleans before serving as the seventh president",
+   "known": 0.6,
+   "kind": "american president"
+  },
+  {
+   "label": "Woodrow Wilson",
+   "qid": "Q34296",
+   "fame": 0.676,
+   "note": "US $100,000 bill",
+   "description": "28th President of the United States (1913–1921)",
+   "hook": "led the country through the First World War and championed the League of Nations",
+   "known": 0.6,
+   "kind": "american president"
+  },
+  {
+   "label": "Tutankhamun",
+   "qid": "Q12154",
+   "fame": 0.667,
+   "note": "Egyptian 1 pound note",
+   "description": "14th century BCE (18th dynasty) Egyptian pharaoh",
+   "hook": "was a boy king whose treasure-filled tomb with a golden mask was found in the Valley of the Kings",
+   "known": 0.8,
+   "kind": "ruler"
+  },
+  {
+   "label": "Grover Cleveland",
+   "qid": "Q35171",
+   "fame": 0.663,
+   "note": "US $1,000 bill",
+   "description": "22nd & 24th President of the United States (1885–1889; 1893–1897)",
+   "hook": "is the only president to serve two separate, non-consecutive terms",
+   "known": 0.4,
+   "kind": "american president"
+  },
+  {
+   "label": "James Joyce",
+   "qid": "Q6882",
+   "fame": 0.657,
+   "note": "Irish 10 pound note",
+   "description": "Irish novelist and poet (1882–1941)",
+   "hook": "wrote Ulysses, a landmark novel following a single day in Dublin",
+   "known": 0.6,
+   "kind": "writer"
+  },
+  {
+   "label": "Greta Garbo",
+   "qid": "Q5443",
+   "fame": 0.632,
+   "note": "Swedish 100 kronor note",
+   "description": "Swedish-American actress (1905–1990)",
+   "hook": "was a mysterious film star of the silent era who famously wanted to be alone",
+   "known": 0.6,
+   "kind": "performer"
+  },
+  {
+   "label": "Hans Christian Andersen",
+   "qid": "Q5673",
+   "fame": 0.631,
+   "note": "Danish 10 kroner note",
+   "description": "Danish writer and poet (1805–1875)",
+   "hook": "wrote fairy tales such as The Little Mermaid and The Ugly Duckling",
+   "known": 0.6,
+   "kind": "writer"
+  },
+  {
+   "label": "Gabriel García Márquez",
+   "qid": "Q5878",
+   "fame": 0.619,
+   "note": "Colombian 50,000 peso note",
+   "description": "Colombian writer and Nobel laureate (1927–2014)",
+   "hook": "wrote One Hundred Years of Solitude and won the Nobel Prize in Literature",
+   "known": 0.6,
+   "kind": "writer"
+  },
+  {
+   "label": "Ingmar Bergman",
+   "qid": "Q7546",
+   "fame": 0.598,
+   "note": "Swedish 200 kronor note",
+   "description": "Swedish director and screenwriter (1918–2007)",
+   "hook": "directed The Seventh Seal, with its famous chess game against Death",
+   "known": 0.4,
+   "kind": "performer"
+  },
+  {
+   "label": "Niels Bohr",
+   "qid": "Q7085",
+   "fame": 0.597,
+   "note": "Danish 500 kroner note",
+   "description": "Danish physicist (1885–1962)",
+   "hook": "developed a model of the atom with electrons orbiting in shells and won a Nobel Prize",
+   "known": 0.4,
+   "kind": "scientist"
+  },
+  {
+   "label": "Diego Rivera",
+   "qid": "Q171128",
+   "fame": 0.59,
+   "note": "Mexican 500 peso note",
+   "description": "Mexican muralist (1886–1957)",
+   "hook": "painted enormous public murals and was married to the painter Frida Kahlo",
+   "known": 0.4,
+   "kind": "artist"
+  },
+  {
+   "label": "William Butler Yeats",
+   "qid": "Q40213",
+   "fame": 0.578,
+   "note": "Irish 20 pound note",
+   "description": "Irish poet and playwright (1865–1939)",
+   "hook": "wrote The Second Coming and won the Nobel Prize in Literature",
+   "known": 0.4,
+   "kind": "writer"
+  },
+  {
+   "label": "José Rizal",
+   "qid": "Q1500",
+   "fame": 0.575,
+   "note": "Philippine 2 peso bill",
+   "description": "Filipino nationalist, writer and polymath (1861–1896)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "statesman"
+  },
+  {
+   "label": "Edvard Munch",
+   "qid": "Q41406",
+   "fame": 0.573,
+   "note": "Norwegian 1,000 kroner note",
+   "description": "Norwegian painter (1863–1944)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "artist"
+  },
+  {
+   "label": "Walter Raleigh",
+   "qid": "Q189144",
+   "fame": 0.569,
+   "note": "UK 50p note",
+   "description": "English statesman, soldier and writer (1552–1618)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "statesman"
+  },
+  {
+   "label": "Claude Debussy",
+   "qid": "Q4700",
+   "fame": 0.558,
+   "note": "French 20 franc note",
+   "description": "French classical composer (1862–1918)",
+   "hook": "composed Clair de Lune and the orchestral seascape La Mer",
+   "known": 0.4,
+   "kind": "composer"
+  },
+  {
+   "label": "Antoine de Saint-Exupéry",
+   "qid": "Q2908",
+   "fame": 0.557,
+   "note": "French 50 franc note",
+   "description": "French writer and aviator (1900–1944)",
+   "hook": "wrote The Little Prince and worked as a pioneering airmail pilot",
+   "known": 0.4,
+   "kind": "writer"
+  },
+  {
+   "label": "J. M. W. Turner",
+   "qid": "Q159758",
+   "fame": 0.556,
+   "note": "UK £20 note",
+   "description": "English painter and draftsman (c.1775–1851)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "artist"
+  },
+  {
+   "label": "Karen Blixen",
+   "qid": "Q182804",
+   "fame": 0.549,
+   "note": "Danish 50 kroner note",
+   "description": "Danish writer (1885-1962)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "writer"
+  },
+  {
+   "label": "Emilio Aguinaldo",
+   "qid": "Q188939",
+   "fame": 0.533,
+   "note": "Philippine 5 peso bill",
+   "description": "President of the Philippines from 1899 to 1902",
+   "hook": null,
+   "known": 0.05,
+   "kind": "ruler"
+  },
+  {
+   "label": "Charles IV",
+   "qid": "Q155669",
+   "fame": 0.522,
+   "note": "Czech 100 koruna note",
+   "description": "Holy Roman Emperor",
+   "hook": null,
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Edvard Grieg",
+   "qid": "Q80621",
+   "fame": 0.515,
+   "note": "Norwegian 500 kroner note",
+   "description": "Norwegian composer and pianist (1843–1907)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "composer"
+  },
+  {
+   "label": "Gustave Eiffel",
+   "qid": "Q20882",
+   "fame": 0.505,
+   "note": "French 200 franc note",
+   "description": "French chemical engineer and architect (1832–1923)",
+   "hook": "built a towering wrought-iron landmark on the Champ de Mars in Paris",
+   "known": 0.6,
+   "kind": "scientist"
+  },
+  {
+   "label": "William Lyon Mackenzie King",
+   "qid": "Q128633",
+   "fame": 0.502,
+   "note": "Canadian $50 note",
+   "description": "10th Prime Minister of Canada (1874–1950)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "statesman"
+  },
+  {
+   "label": "Vladimir the Great",
+   "qid": "Q14974",
+   "fame": 0.497,
+   "note": "Ukrainian 1 hryvnia note",
+   "description": "Grand Prince of Kiev",
+   "hook": null,
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Sejong the Great",
+   "qid": "Q37682",
+   "fame": 0.495,
+   "note": "South Korean 10,000 won note",
+   "description": "fourth king of Joseon (Korea), creator of Hangul",
+   "hook": null,
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Astrid Lindgren",
+   "qid": "Q55767",
+   "fame": 0.492,
+   "note": "Swedish 20 kronor note",
+   "description": "Swedish writer of fiction and screenplays (1907–2002)",
+   "hook": null,
+   "known": 0.4,
+   "kind": "writer"
+  },
+  {
+   "label": "Eugène Delacroix",
+   "qid": "Q33477",
+   "fame": 0.481,
+   "note": "French 100 franc note",
+   "description": "French painter (1798–1863)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "artist"
+  },
+  {
+   "label": "Murasaki Shikibu",
+   "qid": "Q81731",
+   "fame": 0.468,
+   "note": "Japanese 2,000 yen note",
+   "description": "Japanese novelist and poet (c.973–c.1014)",
+   "hook": null,
+   "known": 0.05,
+   "kind": "writer"
+  }
+ ]
+}

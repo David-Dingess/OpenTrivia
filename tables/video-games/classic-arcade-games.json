@@ -1,0 +1,181 @@
+{
+ "id": "table.video-games.classic-arcade-games",
+ "kind": "table",
+ "title": "Classic arcade games and the studio that made them",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "arcade",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?relLabel WHERE { { SELECT ?item (SAMPLE(?d) AS ?devSample) (COUNT(DISTINCT ?d) AS ?nDev) (SAMPLE(?p) AS ?pubSample) (COUNT(DISTINCT ?p) AS ?nPub) WHERE { ?item wdt:P31 wd:Q7889 ; wdt:P400 wd:Q192851 ; wikibase:sitelinks ?sl . FILTER(?sl >= 5) FILTER NOT EXISTS { ?item wdt:P852 ?esrb . VALUES ?esrb { wd:Q14864331 wd:Q14864332 wd:Q110488287 wd:Q124356066 } } OPTIONAL { ?item wdt:P178 ?d . } OPTIONAL { ?item wdt:P123 ?p . } } GROUP BY ?item } hint:Prior hint:runFirst true . BIND(IF(?nDev = 1, ?devSample, IF(?nPub = 1, ?pubSample, ?devSample)) AS ?rel) FILTER(?nDev = 1 || ?nPub = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 654",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T14:23:55.537Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T14:23:55.537Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "maker",
+   "label": "Maker",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "game",
+  "many": "games",
+  "exclude": [
+   {
+    "qid": "Q2575214",
+    "why": "Developed by Namco, published by Nintendo: maker is ambiguous"
+   },
+   {
+    "qid": "Q2141683",
+    "why": "Made by General Computer, published by Midway: maker is ambiguous"
+   },
+   {
+    "qid": "Q9029138",
+    "why": "Bandai Namco overlaps with Namco as a value"
+   }
+  ],
+  "columns": {
+   "maker": {
+    "role": "link",
+    "pick": "Which company made the arcade game {label}?",
+    "statement": "The arcade game {label} was made by {value}.",
+    "match": "Match each arcade game to the company that made it.",
+    "all": "Tap all {n} arcade games made by {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Pac-Man",
+   "qid": "Q173626",
+   "fame": 0.597,
+   "maker": "Namco",
+   "description": "1980 arcade game developed by Namco",
+   "hook": "has a yellow circle chomping dots through a maze while colorful ghosts chase it",
+   "known": 0.95,
+   "kind": "classic arcade"
+  },
+  {
+   "label": "Tekken 3",
+   "qid": "Q1062106",
+   "fame": 0.581,
+   "maker": "Namco",
+   "description": "1997 fighting video game",
+   "hook": "is a 3D fighting game entry that puts Jin Kazama at the center of the tournament",
+   "known": 0.4,
+   "kind": "fighting game"
+  },
+  {
+   "label": "Street Fighter II (1991)",
+   "qid": "Q1133204",
+   "fame": 0.53,
+   "maker": "Capcom",
+   "description": "1991 video game developed by Capcom",
+   "hook": "popularized combo-based one-on-one fighting and launched a wave of arcade challengers",
+   "known": 0.8,
+   "kind": "fighting game"
+  },
+  {
+   "label": "Pong",
+   "qid": "Q216293",
+   "fame": 0.515,
+   "maker": "Atari, Inc.",
+   "description": "1972 video game",
+   "hook": "is a simple electronic table tennis game with two paddles and a bouncing ball",
+   "known": 0.95,
+   "kind": "classic arcade"
+  },
+  {
+   "label": "Space Invaders",
+   "qid": "Q220665",
+   "fame": 0.509,
+   "maker": "Taito",
+   "description": "1978 fixed shooter video game",
+   "hook": "has rows of descending aliens that a lone cannon shoots from the bottom of the screen",
+   "known": 0.8,
+   "kind": "arcade shooter"
+  },
+  {
+   "label": "Donkey Kong",
+   "qid": "Q12384",
+   "fame": 0.487,
+   "maker": "Nintendo",
+   "description": "1981 video game",
+   "hook": "has a carpenter climbing ladders and leaping barrels to rescue a damsel from a giant ape",
+   "known": 0.8,
+   "kind": "platformer"
+  },
+  {
+   "label": "Contra",
+   "qid": "Q849328",
+   "fame": 0.486,
+   "maker": "Konami",
+   "description": "1987 run and gun action game",
+   "hook": "is a run-and-gun shooter famous for a cheat code that grants thirty lives",
+   "known": 0.6,
+   "kind": "action arcade"
+  },
+  {
+   "label": "Mario Bros.",
+   "qid": "Q610968",
+   "fame": 0.486,
+   "maker": "Nintendo",
+   "description": "1983 Japanese arcade game",
+   "hook": "has two plumber brothers knocking pests off platforms as they emerge from pipes",
+   "known": 0.6,
+   "kind": "platformer"
+  },
+  {
+   "label": "Street Fighter (1987)",
+   "qid": "Q1503511",
+   "fame": 0.486,
+   "maker": "Capcom",
+   "description": "1987 arcade video game",
+   "hook": "started a legendary fighting franchise, starring a fireball-throwing hero named Ryu",
+   "known": 0.6,
+   "kind": "fighting game"
+  },
+  {
+   "label": "Ms. Pac-Man",
+   "qid": "Q2141683",
+   "fame": 0.472,
+   "maker": "Midway Games",
+   "description": "1982 video game",
+   "hook": "added a bow-wearing heroine to a maze-chomping classic",
+   "known": 0.8,
+   "kind": "classic arcade"
+  },
+  {
+   "label": "Golden Axe",
+   "qid": "Q1046574",
+   "fame": 0.458,
+   "maker": "Sega",
+   "description": "1989 beat 'em up video game",
+   "hook": "sends a barbarian, an amazon and a dwarf through a fantasy land beating up enemies",
+   "known": 0.6,
+   "kind": "action arcade"
+  }
+ ]
+}

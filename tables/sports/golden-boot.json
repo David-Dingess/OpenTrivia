@@ -1,0 +1,182 @@
+{
+ "id": "table.sports.golden-boot",
+ "kind": "table",
+ "title": "World Cup Golden Boot winners and the country they played for",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "soccer",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nCountry) WHERE { VALUES ?item { wd:Q309645 wd:Q266489 wd:Q311739 wd:Q295265 wd:Q192749 wd:Q162043 wd:Q43744 wd:Q271557 wd:Q180649 wd:Q178628 wd:Q47778 wd:Q295307 wd:Q187125 wd:Q295746 wd:Q189217 wd:Q529207 wd:Q80471 wd:Q43666 wd:Q368441 wd:Q969725 wd:Q21621995 } ?item wdt:P1532 ?c ; wikibase:sitelinks ?sitelinks . FILTER(?c NOT IN (wd:Q36704, wd:Q15180)) } GROUP BY ?item ?sitelinks } hint:Prior hint:runFirst true . FILTER(?nCountry = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-03T01:31:26.365Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-03T01:31:26.365Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "Golden Boot winner",
+  "many": "World Cup Golden Boot winners",
+  "wildcard": "person",
+  "hookAsk": "Which World Cup Golden Boot winner {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country did World Cup Golden Boot winner {label} play for?",
+    "statement": "{label} won a World Cup Golden Boot playing for {value}.",
+    "match": "Match each World Cup Golden Boot winner to the country they played for.",
+    "odd": "Three of these World Cup Golden Boot winners played for {value}. Which one didn't?",
+    "all": "Tap all {n} World Cup Golden Boot winners who played for {value}.",
+    "reverse": "Which of these World Cup Golden Boot winners played for {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Kylian Mbappé",
+   "qid": "Q21621995",
+   "fame": 0.78,
+   "country": "France",
+   "description": "French association football player (born 1998)",
+   "hook": "is a lightning-fast forward who became the all-time leading scorer at the World Cup",
+   "known": 0.8,
+   "kind": "modern"
+  },
+  {
+   "label": "Harry Kane",
+   "qid": "Q969725",
+   "fame": 0.772,
+   "country": "England",
+   "description": "English association football player (born 1993)",
+   "hook": "is a striker who became his national team's record scorer and Tottenham's all-time top scorer",
+   "known": 0.6,
+   "kind": "modern"
+  },
+  {
+   "label": "Ronaldo Nazário",
+   "qid": "Q529207",
+   "fame": 0.704,
+   "country": "Brazil",
+   "description": "Brazilian association football player (born 1976)",
+   "hook": "is the striker nicknamed O Fenômeno, a two-time Ballon d'Or winner",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "Gary Lineker",
+   "qid": "Q47778",
+   "fame": 0.643,
+   "country": "England",
+   "description": "English football pundit and former player",
+   "hook": "is a former striker turned TV presenter, the only player to top his league's scoring chart with three clubs",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "James Rodríguez",
+   "qid": "Q368441",
+   "fame": 0.631,
+   "country": "Colombia",
+   "description": "Colombian association football player",
+   "hook": "is an attacking midfielder who starred at a World Cup and then signed for Real Madrid",
+   "known": 0.4,
+   "kind": "modern"
+  },
+  {
+   "label": "Thomas Müller",
+   "qid": "Q43666",
+   "fame": 0.618,
+   "country": "Germany",
+   "description": "German association football player",
+   "hook": "is a forward nicknamed the interpreter of space who spent his career at Bayern Munich",
+   "known": 0.6,
+   "kind": "modern"
+  },
+  {
+   "label": "Gerd Müller",
+   "qid": "Q43744",
+   "fame": 0.529,
+   "country": "Germany",
+   "description": "German footballer (1945–2021)",
+   "hook": "was a prolific striker nicknamed Der Bomber who set the Bundesliga scoring record at Bayern Munich",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Miroslav Klose",
+   "qid": "Q80471",
+   "fame": 0.524,
+   "country": "Germany",
+   "description": "German professional football manager and former player",
+   "hook": "is a striker who held the World Cup scoring record for twelve years and lifted the trophy",
+   "known": 0.6,
+   "kind": "modern"
+  },
+  {
+   "label": "Hristo Stoichkov",
+   "qid": "Q187125",
+   "fame": 0.522,
+   "country": "Bulgaria",
+   "description": "Bulgarian footballer and manager (born 1966)",
+   "hook": "is a forward who starred in Barcelona's Dream Team and won the Ballon d'Or",
+   "known": 0.4,
+   "kind": "classic"
+  },
+  {
+   "label": "Eusébio",
+   "qid": "Q162043",
+   "fame": 0.519,
+   "country": "Portugal",
+   "description": "Portuguese footballer (1942–2014)",
+   "hook": "was a striker nicknamed the Black Panther and is considered Benfica's greatest ever player",
+   "known": 0.4,
+   "kind": "classic"
+  },
+  {
+   "label": "Paolo Rossi",
+   "qid": "Q178628",
+   "fame": 0.486,
+   "country": "Italy",
+   "description": "Italian footballer (1956–2020)",
+   "hook": "is the striker whose goals won a World Cup and who took both its Golden Boot and Golden Ball",
+   "known": 0.4,
+   "kind": "classic"
+  },
+  {
+   "label": "Mario Kempes",
+   "qid": "Q180649",
+   "fame": 0.463,
+   "country": "Argentina",
+   "description": "Argentine footballer (born 1954)",
+   "hook": null,
+   "known": 0.2,
+   "kind": "classic"
+  }
+ ]
+}

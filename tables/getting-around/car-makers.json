@@ -1,0 +1,655 @@
+{
+ "id": "table.getting-around.car-makers",
+ "kind": "table",
+ "title": "Car manufacturers by founding year",
+ "genre": "daily-life",
+ "category": "getting-around",
+ "topic": "cars",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?inception ?countryLabel WHERE { { SELECT ?item ?sitelinks (MIN(?d) AS ?inception) (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nc) WHERE { ?item wdt:P31 wd:Q786820 ; wdt:P571 ?d ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 40) OPTIONAL { ?item wdt:P17 ?c } } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 200 } hint:Prior hint:runFirst true . FILTER(?nc <= 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-24T23:05:55.234Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-24T23:05:55.234Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "founded",
+   "label": "Founded",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "car maker",
+  "many": "car makers",
+  "itemSub": "{country}",
+  "hookAsk": "Which car maker {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country does {label} come from?",
+    "statement": "{label} is a car maker from {value}.",
+    "odd": "Three of these car makers come from {value}. Which one doesn't?",
+    "all": "Tap all {n} car makers from {value}.",
+    "match": "Match each car maker to its country."
+   },
+   "founded": {
+    "role": "date",
+    "sort": "from the oldest to the newest, by the year they were founded",
+    "shot": "In what year was the car maker {label} founded?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Stellantis",
+   "qid": "Q97439162",
+   "fame": 0.672,
+   "founded": 2021,
+   "country": "Netherlands",
+   "description": "Franco-Italian-American multinational automotive manufacturer",
+   "hook": "formed when two big automakers merged into one giant multi-brand group",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "BMW",
+   "qid": "Q26678",
+   "fame": 0.649,
+   "founded": 1916,
+   "country": "Germany",
+   "description": "German automobile manufacturer, and conglomerate",
+   "hook": "is known for the spinning-propeller badge on sporty, precision-engineered sedans and coupes",
+   "known": 0.95,
+   "kind": "german"
+  },
+  {
+   "label": "BYD Auto",
+   "qid": "Q27423",
+   "fame": 0.644,
+   "founded": 2003,
+   "country": "China",
+   "description": "Chinese automobile manufacturer",
+   "hook": "grew from a battery maker into one of the world's biggest sellers of electric cars",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Toyota",
+   "qid": "Q53268",
+   "fame": 0.64,
+   "founded": 1937,
+   "country": "Japan",
+   "description": "Japanese multinational automotive manufacturer",
+   "hook": "built its reputation on dependable, fuel-efficient cars that just keep running",
+   "known": 0.95,
+   "kind": "japanese"
+  },
+  {
+   "label": "Ford Motor Company",
+   "qid": "Q44294",
+   "fame": 0.639,
+   "founded": 1903,
+   "country": "United States",
+   "description": "American multinational automotive company",
+   "hook": "put moving assembly lines to work so ordinary families could finally afford a car",
+   "known": 0.95,
+   "kind": "american"
+  },
+  {
+   "label": "General Motors",
+   "qid": "Q81965",
+   "fame": 0.637,
+   "founded": 1908,
+   "country": "United States",
+   "description": "American multinational automotive company",
+   "hook": "grew into a sprawling empire of car brands under one big corporate roof",
+   "known": 0.95,
+   "kind": "american"
+  },
+  {
+   "label": "Volkswagen",
+   "qid": "Q246",
+   "fame": 0.623,
+   "founded": 1937,
+   "country": "Germany",
+   "description": "German automotive brand; manufacturing subsidiary of Volkswagen Group",
+   "hook": "made its name with an affordable, air-cooled, rounded people's car that became a hippie icon",
+   "known": 0.95,
+   "kind": "german"
+  },
+  {
+   "label": "Porsche",
+   "qid": "Q40993",
+   "fame": 0.609,
+   "founded": 1931,
+   "country": "Germany",
+   "description": "German automobile manufacturer specializing in high-performance sports cars, SUVs and sedans, owned by Volkswagen AG",
+   "hook": "builds sleek rear-engined sports cars instantly recognizable by their curved silhouette",
+   "known": 0.95,
+   "kind": "german"
+  },
+  {
+   "label": "Ferrari",
+   "qid": "Q27586",
+   "fame": 0.607,
+   "founded": 1947,
+   "country": "Italy",
+   "description": "Italian luxury sports car manufacturer",
+   "hook": "races a prancing-horse emblem and builds some of the most coveted supercars on earth",
+   "known": 0.95,
+   "kind": "italian"
+  },
+  {
+   "label": "Geely",
+   "qid": "Q739000",
+   "fame": 0.601,
+   "founded": 1986,
+   "country": "China",
+   "description": "Chinese automotive manufacturing company",
+   "hook": "grew from a small workshop into a global automaker that also owns famous overseas sports car brands",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Honda",
+   "qid": "Q9584",
+   "fame": 0.597,
+   "founded": 1948,
+   "country": "Japan",
+   "description": "manufacturer of automobiles, motorcycles, and power equipment",
+   "hook": "began by building small engines and motorcycles before becoming a top-selling carmaker",
+   "known": 0.95,
+   "kind": "japanese"
+  },
+  {
+   "label": "Jaguar Cars",
+   "qid": "Q30055",
+   "fame": 0.596,
+   "founded": 1934,
+   "country": "United Kingdom",
+   "description": "former British car company",
+   "hook": "built elegant, wood-and-leather British luxury saloons with a leaping cat on the hood",
+   "known": 0.8,
+   "kind": "british"
+  },
+  {
+   "label": "Škoda Auto",
+   "qid": "Q29637",
+   "fame": 0.589,
+   "founded": 1895,
+   "country": "Czech Republic",
+   "description": "automotive manufacturing subsidiary of Volkswagen Group",
+   "hook": "makes practical, value-priced family cars with a winged-arrow badge",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Volvo Cars",
+   "qid": "Q215293",
+   "fame": 0.585,
+   "founded": 1927,
+   "country": "Sweden",
+   "description": "Swedish automobile manufacturer",
+   "hook": "built its whole brand around pioneering seatbelts and crash safety",
+   "known": 0.8,
+   "kind": "other"
+  },
+  {
+   "label": "Audi AG",
+   "qid": "Q23317",
+   "fame": 0.584,
+   "founded": 1909,
+   "country": "Germany",
+   "description": "German automotive manufacturing subsidiary of Volkswagen Group",
+   "hook": "races four interlocking rings on sleek performance sedans and SUVs",
+   "known": 0.8,
+   "kind": "german"
+  },
+  {
+   "label": "Kia",
+   "qid": "Q35349",
+   "fame": 0.581,
+   "founded": 1944,
+   "country": "South Korea",
+   "description": "South Korean automobile manufacturer",
+   "hook": "went from a budget also-ran to a design-award-winning maker of stylish, affordable cars",
+   "known": 0.8,
+   "kind": "other"
+  },
+  {
+   "label": "Nissan",
+   "qid": "Q20165",
+   "fame": 0.577,
+   "founded": 1933,
+   "country": "Japan",
+   "description": "Japanese automobile manufacturer",
+   "hook": "pioneered mass-market electric cars alongside its everyday sedans and SUVs",
+   "known": 0.95,
+   "kind": "japanese"
+  },
+  {
+   "label": "Lexus",
+   "qid": "Q35919",
+   "fame": 0.575,
+   "founded": 1989,
+   "country": "Japan",
+   "description": "Japanese brand of luxury vehicle owned by Toyota Motor Corporation",
+   "hook": "was launched as a quieter, more pampering luxury alternative to sportier rivals",
+   "known": 0.8,
+   "kind": "japanese"
+  },
+  {
+   "label": "Mazda",
+   "qid": "Q35996",
+   "fame": 0.573,
+   "founded": 1920,
+   "country": "Japan",
+   "description": "Japanese multinational automaker",
+   "hook": "is famous for a lightweight rotary engine that spins instead of pumping pistons",
+   "known": 0.8,
+   "kind": "japanese"
+  },
+  {
+   "label": "Land Rover",
+   "qid": "Q35907",
+   "fame": 0.572,
+   "founded": 1978,
+   "country": "United Kingdom",
+   "description": "former British car company",
+   "hook": "built rugged, boxy off-roaders favored by explorers and royalty alike",
+   "known": 0.8,
+   "kind": "british"
+  },
+  {
+   "label": "Chevrolet",
+   "qid": "Q29570",
+   "fame": 0.569,
+   "founded": 1911,
+   "country": "United States",
+   "description": "American automobile division of GM",
+   "hook": "puts a bowtie badge on affordable pickups, muscle cars, and family sedans",
+   "known": 0.8,
+   "kind": "american"
+  },
+  {
+   "label": "Subaru",
+   "qid": "Q172741",
+   "fame": 0.569,
+   "founded": 1953,
+   "country": "Japan",
+   "description": "Japanese automobile manufacturing company",
+   "hook": "builds most of its lineup around all-wheel drive as standard, even on ordinary sedans",
+   "known": 0.6,
+   "kind": "japanese"
+  },
+  {
+   "label": "Renault",
+   "qid": "Q6686",
+   "fame": 0.566,
+   "founded": 1898,
+   "country": "France",
+   "description": "automotive conglomerate",
+   "hook": "builds affordable hatchbacks and also fields a famous yellow Formula 1 team",
+   "known": 0.8,
+   "kind": "french"
+  },
+  {
+   "label": "Cadillac",
+   "qid": "Q27436",
+   "fame": 0.565,
+   "founded": 1902,
+   "country": "United States",
+   "description": "division of General Motors",
+   "hook": "puts a crest badge on plush, chrome-heavy full-size luxury sedans",
+   "known": 0.6,
+   "kind": "american"
+  },
+  {
+   "label": "Saab Automobile",
+   "qid": "Q48957",
+   "fame": 0.56,
+   "founded": 1945,
+   "country": "Sweden",
+   "description": "defunct Swedish car manufacturer (1945-2016)",
+   "hook": "built quirky, aircraft-inspired sedans before shutting down for good",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Jeep",
+   "qid": "Q30113",
+   "fame": 0.555,
+   "founded": 1941,
+   "country": "United States",
+   "description": "US automotive company",
+   "hook": "is famous for a boxy, go-anywhere off-road vehicle with round headlights and a seven-slot grille",
+   "known": 0.8,
+   "kind": "american"
+  },
+  {
+   "label": "Koenigsegg",
+   "qid": "Q35594",
+   "fame": 0.553,
+   "founded": 1994,
+   "country": "Sweden",
+   "description": "Swedish manufacturer of high-performance sports cars",
+   "hook": "is a tiny Swedish outfit that hand-builds some of the fastest hypercars on the planet",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Lotus Cars",
+   "qid": "Q35935",
+   "fame": 0.551,
+   "founded": 1952,
+   "country": "United Kingdom",
+   "description": "British manufacturer of sports and racing cars",
+   "hook": "builds ultralight, nimble sports machines built around the idea that less weight beats more power",
+   "known": 0.6,
+   "kind": "british"
+  },
+  {
+   "label": "Opel",
+   "qid": "Q40966",
+   "fame": 0.549,
+   "founded": 1862,
+   "country": "Germany",
+   "description": "German automobile manufacturer, subsidiary of Stellantis",
+   "hook": "puts a lightning-bolt badge on practical everyday German hatchbacks and sedans",
+   "known": 0.6,
+   "kind": "german"
+  },
+  {
+   "label": "Maserati",
+   "qid": "Q35962",
+   "fame": 0.547,
+   "founded": 1914,
+   "country": "Italy",
+   "description": "Italian luxury car manufacturer",
+   "hook": "puts a trident badge on elegant Italian grand tourers",
+   "known": 0.8,
+   "kind": "italian"
+  },
+  {
+   "label": "Alfa Romeo",
+   "qid": "Q26921",
+   "fame": 0.545,
+   "founded": 1910,
+   "country": "Italy",
+   "description": "Italian automotive manufacturer",
+   "hook": "puts a winged serpent badge on passionate, sporty Italian sedans and coupes",
+   "known": 0.8,
+   "kind": "italian"
+  },
+  {
+   "label": "Suzuki Motor Corporation",
+   "qid": "Q181642",
+   "fame": 0.545,
+   "founded": 1909,
+   "country": "Japan",
+   "description": "Japanese multinational automotive corporation",
+   "hook": "is known for tiny, affordable city cars and off-road vehicles alongside its motorcycles",
+   "known": 0.6,
+   "kind": "japanese"
+  },
+  {
+   "label": "Bentley",
+   "qid": "Q27224",
+   "fame": 0.543,
+   "founded": 1919,
+   "country": "United Kingdom",
+   "description": "British automotive brand manufacturer",
+   "hook": "builds hand-crafted British luxury cars once famous for a matching aero engine business",
+   "known": 0.8,
+   "kind": "british"
+  },
+  {
+   "label": "Dodge",
+   "qid": "Q27564",
+   "fame": 0.543,
+   "founded": 1900,
+   "country": "United States",
+   "description": "US automotive company",
+   "hook": "is famous for loud, muscular performance sedans with a ram's-head badge",
+   "known": 0.6,
+   "kind": "american"
+  },
+  {
+   "label": "Rolls-Royce Motor Cars",
+   "qid": "Q234803",
+   "fame": 0.541,
+   "founded": 1998,
+   "country": "United Kingdom",
+   "description": "English car company (1998-present)",
+   "hook": "builds the ultimate whisper-quiet, handcrafted status-symbol luxury sedans",
+   "known": 0.8,
+   "kind": "british"
+  },
+  {
+   "label": "Mitsubishi Motors",
+   "qid": "Q36033",
+   "fame": 0.537,
+   "founded": 1970,
+   "country": "Japan",
+   "description": "Japanese automotive manufacturer",
+   "hook": "puts a three-diamond badge on rugged SUVs and everyday commuter cars",
+   "known": 0.6,
+   "kind": "japanese"
+  },
+  {
+   "label": "Buick",
+   "qid": "Q27415",
+   "fame": 0.535,
+   "founded": 1899,
+   "country": "United States",
+   "description": "luxury car brand of General Motors",
+   "hook": "was long marketed as a quietly upscale, slightly older-skewing American luxury brand",
+   "known": 0.4,
+   "kind": "american"
+  },
+  {
+   "label": "Mahindra & Mahindra",
+   "qid": "Q848059",
+   "fame": 0.535,
+   "founded": 1945,
+   "country": "India",
+   "description": "Indian multinational automobile manufacturer",
+   "hook": "grew from a farm-tractor business into a major maker of SUVs and utility vehicles",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Vauxhall",
+   "qid": "Q59187",
+   "fame": 0.535,
+   "founded": 1857,
+   "country": "United Kingdom",
+   "description": "English car company, subsidiary of Stellantis",
+   "hook": "put a griffin badge on everyday British family cars for well over a century",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "Citroën",
+   "qid": "Q6746",
+   "fame": 0.534,
+   "founded": 1919,
+   "country": "France",
+   "description": "French automotive manufacturer",
+   "hook": "is known for a double-chevron badge and famously soft, cloud-like ride comfort",
+   "known": 0.6,
+   "kind": "french"
+  },
+  {
+   "label": "Fiat",
+   "qid": "Q27597",
+   "fame": 0.534,
+   "founded": 1899,
+   "country": "Italy",
+   "description": "Italian automotive company",
+   "hook": "is famous for tiny, cheerful city cars that made mobility affordable across a whole country",
+   "known": 0.8,
+   "kind": "italian"
+  },
+  {
+   "label": "Dacia",
+   "qid": "Q27460",
+   "fame": 0.53,
+   "founded": 1966,
+   "country": "Romania",
+   "description": "brand and romanian car manufacturer from Renault",
+   "hook": "builds no-frills, budget-friendly cars aimed at value-conscious buyers",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "SEAT",
+   "qid": "Q188217",
+   "fame": 0.527,
+   "founded": 1950,
+   "country": "Spain",
+   "description": "Spanish automotive company based in Martorell, subsidiary of Volkswagen Group",
+   "hook": "puts a stylized S badge on sporty, youth-oriented hatchbacks",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Lincoln Motor Company",
+   "qid": "Q216796",
+   "fame": 0.51,
+   "founded": 1917,
+   "country": "United States",
+   "description": "luxury division of Ford Motor Company",
+   "hook": "was created as an upscale luxury badge for an American mass-market carmaker",
+   "known": 0.6,
+   "kind": "american"
+  },
+  {
+   "label": "Isuzu",
+   "qid": "Q29803",
+   "fame": 0.509,
+   "founded": 1934,
+   "country": "Japan",
+   "description": "Japanese company manufacturing motor vehicles",
+   "hook": "is best known for its tough diesel engines and rugged trucks",
+   "known": 0.4,
+   "kind": "japanese"
+  },
+  {
+   "label": "Holden",
+   "qid": "Q29281",
+   "fame": 0.505,
+   "founded": 1856,
+   "country": "Australia",
+   "description": "Australian subsidiary of General Motors, an automaker",
+   "hook": "built a once-beloved lion-badge muscle car before its home market production ended",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Alpine",
+   "qid": "Q26944",
+   "fame": 0.489,
+   "founded": 1955,
+   "country": "France",
+   "description": "French car manufacturer",
+   "hook": "built lightweight, nimble little sports cars famous on rally stages",
+   "known": 0.4,
+   "kind": "french"
+  },
+  {
+   "label": "Lancia",
+   "qid": "Q35896",
+   "fame": 0.489,
+   "founded": 1906,
+   "country": "Italy",
+   "description": "Italian automotive company",
+   "hook": "built innovative, elegant Italian sedans once favored by heads of state",
+   "known": 0.4,
+   "kind": "italian"
+  },
+  {
+   "label": "Groupe PSA",
+   "qid": "Q275623",
+   "fame": 0.481,
+   "founded": 1976,
+   "country": "France",
+   "description": "French automotive manufacturing corporation (1976-2021)",
+   "hook": "was the parent group behind two rival French carmakers before it merged into a bigger conglomerate",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Daihatsu",
+   "qid": "Q27511",
+   "fame": 0.469,
+   "founded": 1907,
+   "country": "Japan",
+   "description": "Japanese automobile manufacturer",
+   "hook": "specializes in small, fuel-sipping kei-class city cars",
+   "known": 0.2,
+   "kind": "japanese"
+  },
+  {
+   "label": "DAF",
+   "qid": "Q27489",
+   "fame": 0.458,
+   "founded": 1928,
+   "country": "Netherlands",
+   "description": "Netherlands branch of American manufacturer Paccar",
+   "hook": "is best known for building heavy-duty trucks rather than passenger cars",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "AvtoVAZ",
+   "qid": "Q2309",
+   "fame": 0.453,
+   "founded": 1966,
+   "country": "Russia",
+   "description": "Russian automobile manufacturer",
+   "hook": "built the basic, boxy sedans that were once the default car of an entire nation",
+   "known": 0.4,
+   "kind": "other"
+  },
+  {
+   "label": "KG Mobility",
+   "qid": "Q221869",
+   "fame": 0.452,
+   "founded": 1954,
+   "country": "South Korea",
+   "description": "South Korean automobile manufacturer",
+   "hook": "was long known by an older name tied to a construction and defense conglomerate",
+   "known": 0.2,
+   "kind": "other"
+  }
+ ]
+}

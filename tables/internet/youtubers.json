@@ -1,0 +1,566 @@
+{
+ "id": "table.internet.youtubers",
+ "kind": "table",
+ "title": "YouTubers: home country and birth year",
+ "genre": "general",
+ "category": "internet",
+ "topic": "social-media",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel ?born WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (GROUP_CONCAT(DISTINCT CONCAT(STR(?bornT), \"|\", STR(?bornP)); separator=\";\") AS ?born) WHERE { ?item wdt:P106 wd:Q17125263 ; wdt:P31 wd:Q5 ; wdt:P27 ?c ; wikibase:sitelinks ?sitelinks . ?item p:P2397 ?ch . ?ch pq:P3744 ?subs . FILTER(?subs > 3000000) FILTER(?sitelinks > 8) ?item p:P569 ?bornSt . ?bornSt a wikibase:BestRank ; psv:P569 [ wikibase:timeValue ?bornT ; wikibase:timePrecision ?bornP ] . } GROUP BY ?item ?sitelinks HAVING(COUNT(DISTINCT ?c) = 1) ORDER BY DESC(?sitelinks) LIMIT 250 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T16:20:48.494Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T16:20:48.494Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "born",
+   "label": "Born",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "YouTuber",
+  "many": "YouTubers",
+  "wildcard": "person",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} from?",
+    "statement": "{label} is from {value}.",
+    "match": "Match each YouTuber to their home country.",
+    "odd": "Three of these YouTubers are from {value}. Which one is not?",
+    "reverse": "Which of these YouTubers is from {value}?"
+   },
+   "born": {
+    "role": "date",
+    "sort": "from the oldest to the youngest",
+    "era": "Drop each YouTuber into the decade they were born.",
+    "eraSize": "decade"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "MrBeast",
+   "qid": "Q57618112",
+   "fame": 0.764,
+   "country": "United States",
+   "born": 1998,
+   "description": "American YouTuber, media personality and businessman (born 1998)",
+   "hook": "is known for giving away huge sums of cash and staging over-the-top challenge videos",
+   "known": 0.95,
+   "kind": "entertainer"
+  },
+  {
+   "label": "IShowSpeed",
+   "qid": "Q114834007",
+   "fame": 0.681,
+   "country": "United States",
+   "born": 2005,
+   "description": "American influencer, musician and online streamer (born 2005)",
+   "hook": "is a loud livestreamer famous for excitable reactions and a signature celebration shout",
+   "known": 0.4,
+   "kind": "entertainer"
+  },
+  {
+   "label": "JoJo Siwa",
+   "qid": "Q24174947",
+   "fame": 0.671,
+   "country": "United States",
+   "born": 2003,
+   "description": "American dancer, singer, actress, and YouTube personality",
+   "hook": "rose from a dance reality show to fame with big hair bows and a glittery pop style",
+   "known": 0.8,
+   "kind": "entertainer"
+  },
+  {
+   "label": "Technoblade",
+   "qid": "Q105396829",
+   "fame": 0.631,
+   "country": "United States",
+   "born": 1999,
+   "description": "American Minecraft YouTuber (1999–2022)",
+   "hook": "was a beloved block-game player who wore a pig crown and was mourned by fans after his death",
+   "known": 0.8,
+   "kind": "gamer"
+  },
+  {
+   "label": "Markiplier",
+   "qid": "Q16729001",
+   "fame": 0.625,
+   "country": "United States",
+   "born": 1989,
+   "description": "American YouTuber and Internet personality",
+   "hook": "is known for horror game reactions and a big following of fans who love his energetic commentary",
+   "known": 0.95,
+   "kind": "gamer"
+  },
+  {
+   "label": "PewDiePie",
+   "qid": "Q13423853",
+   "fame": 0.618,
+   "country": "Sweden",
+   "born": 1989,
+   "description": "Swedish YouTuber (born 1989)",
+   "hook": "was for years the most subscribed solo channel, famous for gaming videos and a fan base called the Bro Army",
+   "known": 0.95,
+   "kind": "entertainer"
+  },
+  {
+   "label": "Bhuvan Bam",
+   "qid": "Q30323629",
+   "fame": 0.613,
+   "country": "India",
+   "born": 1994,
+   "description": "Indian YouTuber",
+   "hook": "is a comedian who plays every character in a hit web comedy series called BB Ki Vines",
+   "known": 0.4,
+   "kind": "vlogger"
+  },
+  {
+   "label": "Mark Rober",
+   "qid": "Q24088544",
+   "fame": 0.601,
+   "country": "United States",
+   "born": 1980,
+   "description": "American YouTuber, engineer and inventor",
+   "hook": "is a former space engineer who builds elaborate science stunts like a glitter bomb for porch pirates",
+   "known": 0.6,
+   "kind": "tech creator"
+  },
+  {
+   "label": "Emma Chamberlain",
+   "qid": "Q63349606",
+   "fame": 0.579,
+   "country": "United States",
+   "born": 2001,
+   "description": "American media personality (born 2001)",
+   "hook": "became famous for casual vlogs and a coffee company, and is a fashion week regular",
+   "known": 0.8,
+   "kind": "vlogger"
+  },
+  {
+   "label": "Jacksepticeye",
+   "qid": "Q20089050",
+   "fame": 0.568,
+   "country": "Ireland",
+   "born": 1990,
+   "description": "Irish YouTuber",
+   "hook": "is a green-haired gamer known for a friendly greeting and a shouted welcome to his videos",
+   "known": 0.6,
+   "kind": "gamer"
+  },
+  {
+   "label": "Ludwig Ahgren",
+   "qid": "Q104833873",
+   "fame": 0.564,
+   "country": "United States",
+   "born": 1995,
+   "description": "American YouTuber and streamer (born 1995)",
+   "hook": "set a Twitch subscriber record with a month-long subscribe-a-thon livestream",
+   "known": 0.4,
+   "kind": "gamer"
+  },
+  {
+   "label": "Rosanna Pansino",
+   "qid": "Q17811858",
+   "fame": 0.564,
+   "country": "United States",
+   "born": 1985,
+   "description": "American YouTuber (born 1985)",
+   "hook": "is known for baking videos that recreate treats from pop culture and video games",
+   "known": 0.4,
+   "kind": "entertainer"
+  },
+  {
+   "label": "Rick Beato",
+   "qid": "Q100249904",
+   "fame": 0.563,
+   "country": "United States",
+   "born": 1962,
+   "description": "American YouTuber, guitarist, record producer",
+   "hook": "is a music producer who explains songs and ear training in long, guitar-filled videos",
+   "known": 0.2,
+   "kind": "music creator"
+  },
+  {
+   "label": "MatPat",
+   "qid": "Q24056548",
+   "fame": 0.56,
+   "country": "United States",
+   "born": 1986,
+   "description": "American YouTuber (born 1986)",
+   "hook": "is known for a series of deep-dive theories about video games and cartoons",
+   "known": 0.4,
+   "kind": "entertainer"
+  },
+  {
+   "label": "Nick DiGiovanni",
+   "qid": "Q107343956",
+   "fame": 0.56,
+   "country": "United States",
+   "born": 1996,
+   "description": "American entertainer and chef (born 1996)",
+   "hook": "is a chef who rose to fame on a cooking competition and via kitchen videos while studying at a top university",
+   "known": 0.4,
+   "kind": "entertainer"
+  },
+  {
+   "label": "Doctor Mike",
+   "qid": "Q28967863",
+   "fame": 0.556,
+   "country": "United States",
+   "born": 1989,
+   "description": "Actively Practicing Board Certified Russian–American celebrity doctor (born 1989)",
+   "hook": "is a physician who answers medical questions and reviews TV hospital shows for a huge online audience",
+   "known": 0.2,
+   "kind": "specialist"
+  },
+  {
+   "label": "Tom Scott",
+   "qid": "Q7817504",
+   "fame": 0.552,
+   "country": "United Kingdom",
+   "born": 1984,
+   "description": "English presenter",
+   "hook": "is a presenter of quirky, fact-filled videos about technology and odd trivia, including a series about facts",
+   "known": 0.4,
+   "kind": "tech creator"
+  },
+  {
+   "label": "Lindsey Stirling",
+   "qid": "Q128667",
+   "fame": 0.551,
+   "country": "United States",
+   "born": 1986,
+   "description": "American violinist, musician, dancer, performance artist, singer and composer",
+   "hook": "is a violinist who dances while playing and blends classical sound with electronic and pop music",
+   "known": 0.6,
+   "kind": "music creator"
+  },
+  {
+   "label": "Hank Green",
+   "qid": "Q550996",
+   "fame": 0.549,
+   "country": "United States",
+   "born": 1980,
+   "description": "American author, vlogger, and science communicator",
+   "hook": "co-founded a video channel with his brother and explains science on an educational series",
+   "known": 0.6,
+   "kind": "music creator"
+  },
+  {
+   "label": "Levy Rozman",
+   "qid": "Q27530896",
+   "fame": 0.548,
+   "country": "United States",
+   "born": 1995,
+   "description": "American chess streamer and YouTuber",
+   "hook": "is an international master who teaches chess online and is nicknamed after a chess piece style",
+   "known": 0.2,
+   "kind": "specialist"
+  },
+  {
+   "label": "Lucas Cruikshank",
+   "qid": "Q724093",
+   "fame": 0.546,
+   "country": "United States",
+   "born": 1993,
+   "description": "American actor",
+   "hook": "became a star by playing a squeaky-voiced six-year-old character with a hyperactive personality",
+   "known": 0.2,
+   "kind": "entertainer"
+  },
+  {
+   "label": "Anthony Padilla",
+   "qid": "Q21597747",
+   "fame": 0.542,
+   "country": "United States",
+   "born": 1987,
+   "description": "American YouTuber, actor and producer",
+   "hook": "co-founded a hugely subscribed sketch comedy channel before going solo with interview series",
+   "known": 0.6,
+   "kind": "entertainer"
+  },
+  {
+   "label": "Lilly Singh",
+   "qid": "Q17403226",
+   "fame": 0.541,
+   "country": "Canada",
+   "born": 1988,
+   "description": "Canadian YouTube personality, vlogger and comedian",
+   "hook": "is a comedian who used the alias Superwoman and went on to host a late-night talk show",
+   "known": 0.6,
+   "kind": "vlogger"
+  },
+  {
+   "label": "Prajakta Koli",
+   "qid": "Q51120666",
+   "fame": 0.537,
+   "country": "India",
+   "born": 1993,
+   "description": "Indian creator, actor, and author",
+   "hook": "is best known for a comedy channel called MostlySane and for acting in Netflix films",
+   "known": 0.4,
+   "kind": "vlogger"
+  },
+  {
+   "label": "Jenna Marbles",
+   "qid": "Q5306331",
+   "fame": 0.529,
+   "country": "United States",
+   "born": 1986,
+   "description": "American YouTube personality (born 1986)",
+   "hook": "was a comedy vlogger famous for rants and bizarre characters who left the internet in a surprise announcement",
+   "known": 0.8,
+   "kind": "vlogger"
+  },
+  {
+   "label": "CarryMinati",
+   "qid": "Q77599314",
+   "fame": 0.526,
+   "country": "India",
+   "born": 1999,
+   "description": "Indian YouTuber and streamer (born 1999)",
+   "hook": "is a roast-video star and gamer who became one of the most followed creators in his homeland",
+   "known": 0.4,
+   "kind": "gamer"
+  },
+  {
+   "label": "Liza Koshy",
+   "qid": "Q28549850",
+   "fame": 0.512,
+   "country": "United States",
+   "born": 1996,
+   "description": "American Internet personality",
+   "hook": "rose from short comedic clips on a short-video app to hosting and acting in TV and film",
+   "known": 0.6,
+   "kind": "vlogger"
+  },
+  {
+   "label": "Marques Brownlee",
+   "qid": "Q15994958",
+   "fame": 0.512,
+   "country": "United States",
+   "born": 1993,
+   "description": "American technology reviewer, YouTuber and Internet personality",
+   "hook": "is a tech reviewer known for sleek smartphone reviews and interviewing world leaders and CEOs",
+   "known": 0.8,
+   "kind": "tech creator"
+  },
+  {
+   "label": "Ryan Higa",
+   "qid": "Q23454",
+   "fame": 0.508,
+   "country": "United States",
+   "born": 1990,
+   "description": "American Internet personality and actor",
+   "hook": "rose to fame with the Nigahiga channel, known for comedy sketches and how-to parodies",
+   "known": 0.6,
+   "kind": "entertainer"
+  },
+  {
+   "label": "Toby Turner",
+   "qid": "Q7811905",
+   "fame": 0.507,
+   "country": "United States",
+   "born": 1985,
+   "description": "American Internet personality",
+   "hook": "is known as Tobuscus, famous for Literal Trailers that replace dialogue with lyrics describing scenes",
+   "known": 0.4,
+   "kind": "entertainer"
+  },
+  {
+   "label": "Cr1TiKaL",
+   "qid": "Q98465764",
+   "fame": 0.503,
+   "country": "United States",
+   "born": 1994,
+   "description": "YouTube commentator, Twitch streamer, actor, voice actor, writer and musician (born 1994)",
+   "hook": "is a commentator whose videos react to internet drama and gaming news with a deadpan style",
+   "known": 0.6,
+   "kind": "gamer"
+  },
+  {
+   "label": "Joe Sugg",
+   "qid": "Q16762380",
+   "fame": 0.498,
+   "country": "United Kingdom",
+   "born": 1991,
+   "description": "British vlogger",
+   "hook": "is a vlogger who competed on a British ballroom dancing reality show and is the brother of another star",
+   "known": 0.6,
+   "kind": "vlogger"
+  },
+  {
+   "label": "TommyInnit",
+   "qid": "Q104589982",
+   "fame": 0.495,
+   "country": "United Kingdom",
+   "born": 2004,
+   "description": "British YouTuber and streamer",
+   "hook": "is a hugely popular block-building game streamer and a member of a famous roleplay server community",
+   "known": 0.4,
+   "kind": "gamer"
+  },
+  {
+   "label": "Dream",
+   "qid": "Q99196256",
+   "fame": 0.494,
+   "country": "United States",
+   "born": 1999,
+   "description": "American YouTuber, streamer and singer (born 1999)",
+   "hook": "is a masked Minecraft creator famous for speedrun manhunt videos and a smiley-face mask",
+   "known": 0.8,
+   "kind": "gamer"
+  },
+  {
+   "label": "Jaiden Animations",
+   "qid": "Q64826858",
+   "fame": 0.486,
+   "country": "United States",
+   "born": 1997,
+   "description": "American YouTuber and animator",
+   "hook": "is an animator who tells personal stories with a hand-drawn cartoon bird self-portrait",
+   "known": 0.6,
+   "kind": "animator"
+  },
+  {
+   "label": "Ninja",
+   "qid": "Q50825725",
+   "fame": 0.483,
+   "country": "United States",
+   "born": 1991,
+   "description": "American livestreamer and vlogger (born 1991)",
+   "hook": "became a household name streaming a battle royale shooter, with blue hair and a headband",
+   "known": 0.95,
+   "kind": "gamer"
+  },
+  {
+   "label": "Ray William Johnson",
+   "qid": "Q49847",
+   "fame": 0.481,
+   "country": "United States",
+   "born": 1981,
+   "description": "American YouTuber (born 1981)",
+   "hook": "is known for a weekly comedy series that opened with a catchphrase greeting and reviewed viral clips",
+   "known": 0.6,
+   "kind": "entertainer"
+  },
+  {
+   "label": "Linus Sebastian",
+   "qid": "Q22810736",
+   "fame": 0.48,
+   "country": "Canada",
+   "born": 1986,
+   "description": "Canadian YouTuber",
+   "hook": "founded a tech review channel and computer hardware retailer with a famous habit of dropping things",
+   "known": 0.4,
+   "kind": "tech creator"
+  },
+  {
+   "label": "Nikkie de Jager",
+   "qid": "Q28112642",
+   "fame": 0.476,
+   "country": "Netherlands",
+   "born": 1994,
+   "description": "Dutch video blogger and make-up artist",
+   "hook": "is a makeup artist whose beauty tutorials built a huge online following",
+   "known": 0.4,
+   "kind": "beauty creator"
+  },
+  {
+   "label": "iJustine",
+   "qid": "Q2372674",
+   "fame": 0.475,
+   "country": "United States",
+   "born": 1984,
+   "description": "American YouTube personality (born 1984)",
+   "hook": "is a tech and lifestyle vlogger known for unboxing gadgets and a giggly, cheerful style",
+   "known": 0.6,
+   "kind": "vlogger"
+  },
+  {
+   "label": "Casey Neistat",
+   "qid": "Q5048547",
+   "fame": 0.472,
+   "country": "United States",
+   "born": 1981,
+   "description": "American YouTube personality, filmmaker and entrepreneur",
+   "hook": "is a filmmaker known for daily vlogs, a viral hoverboard stunt and a famous bike lane video",
+   "known": 0.8,
+   "kind": "vlogger"
+  },
+  {
+   "label": "Marzia Kjellberg",
+   "qid": "Q18148459",
+   "fame": 0.47,
+   "country": "Italy",
+   "born": 1992,
+   "description": "Italian YouTuber",
+   "hook": "is a creator known for gaming and lifestyle videos and for being married to a famous gamer",
+   "known": 0.4,
+   "kind": "vlogger"
+  },
+  {
+   "label": "Philip DeFranco",
+   "qid": "Q525921",
+   "fame": 0.46,
+   "country": "United States",
+   "born": 1985,
+   "description": "American YouTube personality",
+   "hook": "hosts a daily news and pop culture show that sums up the day's stories",
+   "known": 0.6,
+   "kind": "vlogger"
+  },
+  {
+   "label": "Zoe Sugg",
+   "qid": "Q15901046",
+   "fame": 0.46,
+   "country": "United Kingdom",
+   "born": 1990,
+   "description": "British vlogger",
+   "hook": "is a beauty and lifestyle vlogger who wrote a best-selling novel and is the sister of another star",
+   "known": 0.6,
+   "kind": "vlogger"
+  },
+  {
+   "label": "Daniel Howell",
+   "qid": "Q5213711",
+   "fame": 0.457,
+   "country": "United Kingdom",
+   "born": 1991,
+   "description": "English YouTuber, radio personality, and writer",
+   "hook": "is a vlogger and former radio host who co-hosts a video series with a friend named Phil",
+   "known": 0.4,
+   "kind": "vlogger"
+  }
+ ]
+}

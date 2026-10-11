@@ -1,0 +1,1721 @@
+{
+ "id": "table.music.famous-albums",
+ "kind": "table",
+ "title": "Famous albums and the artist behind them",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "chart-toppers",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?artistLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?a) AS ?artist) (COUNT(DISTINCT ?a) AS ?nA) WHERE { { SELECT ?item ?sitelinks WHERE { ?item wdt:P31 wd:Q482994 ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks >= 30) } ORDER BY DESC(?sitelinks) LIMIT 600 } ?item wdt:P175 ?a . } GROUP BY ?item ?sitelinks } hint:Prior hint:runFirst true . FILTER(?nA = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T13:33:41.550Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T13:33:41.550Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "artist",
+   "label": "Artist",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "album",
+  "many": "albums",
+  "hookAsk": "Which album {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "artist": {
+    "role": "link",
+    "pick": "Which artist or band made the album {label}?",
+    "statement": "{label} is an album by {value}.",
+    "match": "Match each album to the artist who made it.",
+    "odd": "Three of these albums are by {value}. Which one isn't?",
+    "all": "Tap all {n} albums by {value} that appear here.",
+    "reverse": "Which of these albums is by {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The Life of a Showgirl",
+   "qid": "Q135726298",
+   "fame": 0.708,
+   "artist": "Taylor Swift",
+   "description": "2025 studio album by Taylor Swift",
+   "hook": "was recorded in Sweden while its creator was on a record-breaking stadium tour",
+   "known": 0.85,
+   "kind": "modern pop"
+  },
+  {
+   "label": "Abbey Road",
+   "qid": "Q173643",
+   "fame": 0.675,
+   "artist": "The Beatles",
+   "description": "1969 studio album by the Beatles",
+   "hook": "has a cover of four men striding across a zebra crossing",
+   "known": 0.85,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Sgt. Pepper's Lonely Hearts Club Band",
+   "qid": "Q169226",
+   "fame": 0.647,
+   "artist": "The Beatles",
+   "description": "1967 studio album by The Beatles",
+   "hook": "has a cover crowded with a collage of famous faces and is hailed as a pop landmark",
+   "known": 0.9,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Let It Be",
+   "qid": "Q199585",
+   "fame": 0.643,
+   "artist": "The Beatles",
+   "description": "1970 studio album by the Beatles",
+   "hook": "was released as the group's swansong, with a piano ballad about Mother Mary",
+   "known": 0.85,
+   "kind": "rock legend"
+  },
+  {
+   "label": "The Dark Side of the Moon",
+   "qid": "Q150901",
+   "fame": 0.643,
+   "artist": "Pink Floyd",
+   "description": "1973 studio album by British band Pink Floyd",
+   "hook": "has a prism splitting white light into a rainbow on its cover and topped the charts for years",
+   "known": 0.8,
+   "kind": "rock legend"
+  },
+  {
+   "label": "B'Day",
+   "qid": "Q193950",
+   "fame": 0.636,
+   "artist": "Beyoncé",
+   "description": "2006 studio album by Beyoncé",
+   "hook": "includes the hits Irreplaceable and Deja Vu",
+   "known": 0.75,
+   "kind": "pop star"
+  },
+  {
+   "label": "Nevermind",
+   "qid": "Q17444",
+   "fame": 0.631,
+   "artist": "Nirvana",
+   "description": "1991 studio album by Nirvana",
+   "hook": "has a cover of a baby swimming underwater toward a dollar bill on a fishhook",
+   "known": 0.7,
+   "kind": "grunge alt"
+  },
+  {
+   "label": "Revolver",
+   "qid": "Q185121",
+   "fame": 0.622,
+   "artist": "The Beatles",
+   "description": "1966 studio album by the Beatles",
+   "hook": "opens with Taxman and closes with the psychedelic Tomorrow Never Knows",
+   "known": 0.75,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Rubber Soul",
+   "qid": "Q190640",
+   "fame": 0.617,
+   "artist": "The Beatles",
+   "description": "1965 studio album by the Beatles",
+   "hook": "marked a folk-influenced shift and includes Norwegian Wood and Michelle",
+   "known": 0.8,
+   "kind": "rock legend"
+  },
+  {
+   "label": "The Wall",
+   "qid": "Q151114",
+   "fame": 0.607,
+   "artist": "Pink Floyd",
+   "description": "double studio album by British band Pink Floyd",
+   "hook": "is a rock opera about an isolated star, with a hit sung by a children's choir about not needing education",
+   "known": 0.85,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Wish You Were Here",
+   "qid": "Q200872",
+   "fame": 0.6,
+   "artist": "Pink Floyd",
+   "description": "1975 studio album by Pink Floyd",
+   "hook": "is a tribute to a former founding member, with a cover of two men shaking hands, one on fire",
+   "known": 0.75,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Hybrid Theory",
+   "qid": "Q19862",
+   "fame": 0.584,
+   "artist": "Linkin Park",
+   "description": "2000 album by Linkin Park",
+   "hook": "was a nu-metal debut that sold over ten million copies and includes Crawling and In the End",
+   "known": 0.65,
+   "kind": "alt metal"
+  },
+  {
+   "label": "OK Computer",
+   "qid": "Q202996",
+   "fame": 0.581,
+   "artist": "Radiohead",
+   "description": "1997 studio album by Radiohead",
+   "hook": "is an alt-rock landmark featuring Paranoid Android and Karma Police",
+   "known": 0.7,
+   "kind": "alternative"
+  },
+  {
+   "label": "Animals",
+   "qid": "Q206216",
+   "fame": 0.578,
+   "artist": "Pink Floyd",
+   "description": "1977 album by Pink Floyd",
+   "hook": "is a concept record inspired by Orwell's farm novel, with a giant inflatable pig over a power station",
+   "known": 0.65,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Appetite for Destruction",
+   "qid": "Q270690",
+   "fame": 0.574,
+   "artist": "Guns N' Roses",
+   "description": "1987 debut studio album by Guns N’ Roses",
+   "hook": "is a hard-rock debut featuring Sweet Child o' Mine and Paradise City",
+   "known": 0.7,
+   "kind": "grunge alt"
+  },
+  {
+   "label": "All Eyez on Me",
+   "qid": "Q498054",
+   "fame": 0.573,
+   "artist": "Tupac Shakur",
+   "description": "1996 double studio album by 2Pac",
+   "hook": "is a double-disc West Coast rap release featuring California Love",
+   "known": 0.75,
+   "kind": "hip-hop"
+  },
+  {
+   "label": "...And Justice for All",
+   "qid": "Q214973",
+   "fame": 0.572,
+   "artist": "Metallica",
+   "description": "1988 studio album by Metallica",
+   "hook": "is a thrash-metal record known for long songs and the epic single One",
+   "known": 0.6,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "In Utero",
+   "qid": "Q222001",
+   "fame": 0.571,
+   "artist": "Nirvana",
+   "description": "1993 studio album by Nirvana",
+   "hook": "was a raw, abrasive follow-up to a blockbuster, featuring Heart-Shaped Box and Pennyroyal Tea",
+   "known": 0.65,
+   "kind": "grunge alt"
+  },
+  {
+   "label": "Pet Sounds",
+   "qid": "Q212863",
+   "fame": 0.571,
+   "artist": "The Beach Boys",
+   "description": "1966 studio album by the Beach Boys",
+   "hook": "is a lush studio-crafted pop landmark that includes God Only Knows and Wouldn't It Be Nice",
+   "known": 0.65,
+   "kind": "rock legend"
+  },
+  {
+   "label": "American Idiot",
+   "qid": "Q151714",
+   "fame": 0.569,
+   "artist": "Green Day",
+   "description": "2004 album by American rock band Green Day",
+   "hook": "is a punk rock opera about Jesus of Suburbia, featuring Boulevard of Broken Dreams",
+   "known": 0.65,
+   "kind": "grunge alt"
+  },
+  {
+   "label": "Help!",
+   "qid": "Q201816",
+   "fame": 0.568,
+   "artist": "The Beatles",
+   "description": "1965 studio album by the Beatles",
+   "hook": "served as the soundtrack to a comedy film and includes Yesterday and Ticket to Ride",
+   "known": 0.8,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Please Please Me",
+   "qid": "Q181826",
+   "fame": 0.568,
+   "artist": "The Beatles",
+   "description": "1963 debut studio album by The Beatles",
+   "hook": "was recorded in a single marathon day and finishes with a cover of Twist and Shout",
+   "known": 0.8,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Back in Black",
+   "qid": "Q155715",
+   "fame": 0.567,
+   "artist": "AC/DC",
+   "description": "1980 studio album by AC/DC",
+   "hook": "was made as a tribute to a late frontman and is one of the best-selling albums ever",
+   "known": 0.7,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Folklore",
+   "qid": "Q97620733",
+   "fame": 0.566,
+   "artist": "Taylor Swift",
+   "description": "2020 studio album by Taylor Swift",
+   "hook": "was a surprise-released lockdown record with a cozy indie sound, including Cardigan and Betty",
+   "known": 0.8,
+   "kind": "modern pop"
+  },
+  {
+   "label": "Master of Puppets",
+   "qid": "Q187507",
+   "fame": 0.565,
+   "artist": "Metallica",
+   "description": "1986 studio album by Metallica",
+   "hook": "is a thrash-metal classic whose long lead track is about being controlled by addiction",
+   "known": 0.65,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "1989",
+   "qid": "Q17544553",
+   "fame": 0.56,
+   "artist": "Taylor Swift",
+   "description": "2014 studio album by Taylor Swift",
+   "hook": "was a full switch to synth-pop, and includes Shake It Off and Blank Space",
+   "known": 0.8,
+   "kind": "modern pop"
+  },
+  {
+   "label": "Midnights",
+   "qid": "Q113640799",
+   "fame": 0.559,
+   "artist": "Taylor Swift",
+   "description": "2022 album by Taylor Swift",
+   "hook": "is a concept record about sleepless nights, featuring Anti-Hero",
+   "known": 0.8,
+   "kind": "modern pop"
+  },
+  {
+   "label": "The Joshua Tree",
+   "qid": "Q152873",
+   "fame": 0.559,
+   "artist": "U2",
+   "description": "1987 studio album by U2",
+   "hook": "is named for a desert plant and features With or Without You and Where the Streets Have No Name",
+   "known": 0.75,
+   "kind": "rock legend"
+  },
+  {
+   "label": "A Hard Day's Night",
+   "qid": "Q182518",
+   "fame": 0.558,
+   "artist": "The Beatles",
+   "description": "1964 studio album by the Beatles",
+   "hook": "is the soundtrack to a black-and-white comedy film about a chaotic day in the group's life",
+   "known": 0.85,
+   "kind": "rock legend"
+  },
+  {
+   "label": "In the Court of the Crimson King",
+   "qid": "Q212799",
+   "fame": 0.556,
+   "artist": "King Crimson",
+   "description": "1969 debut studio album by King Crimson",
+   "hook": "is a founding prog-rock landmark with a screaming face on the cover",
+   "known": 0.35,
+   "kind": "progressive"
+  },
+  {
+   "label": "Physical Graffiti",
+   "qid": "Q210809",
+   "fame": 0.556,
+   "artist": "Led Zeppelin",
+   "description": "1975 studio album by Led Zeppelin",
+   "hook": "is a sprawling double release featuring Kashmir, with a die-cut tenement building on the cover",
+   "known": 0.8,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Magical Mystery Tour",
+   "qid": "Q60676411",
+   "fame": 0.553,
+   "artist": "The Beatles",
+   "description": "1967 studio album by The Beatles; US Edition",
+   "hook": "collects songs from a TV film, including I Am the Walrus and Strawberry Fields Forever",
+   "known": 0.8,
+   "kind": "rock legend"
+  },
+  {
+   "label": "A Night at the Opera",
+   "qid": "Q193477",
+   "fame": 0.552,
+   "artist": "Queen",
+   "description": "1975 studio album by Queen",
+   "hook": "is the record that contains Bohemian Rhapsody and Love of My Life",
+   "known": 0.8,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Reputation",
+   "qid": "Q37814092",
+   "fame": 0.552,
+   "artist": "Taylor Swift",
+   "description": "2016 studio album by Taylor Swift",
+   "hook": "is a darker electro-pop record with a snake motif, including Look What You Made Me Do",
+   "known": 0.75,
+   "kind": "modern pop"
+  },
+  {
+   "label": "Meteora",
+   "qid": "Q19858",
+   "fame": 0.551,
+   "artist": "Linkin Park",
+   "description": "2003 album by Linkin Park",
+   "hook": "is a nu-metal follow-up to a huge debut, including Numb and Somewhere I Belong",
+   "known": 0.55,
+   "kind": "alt metal"
+  },
+  {
+   "label": "Bleach",
+   "qid": "Q218513",
+   "fame": 0.549,
+   "artist": "Nirvana",
+   "description": "1989 debut studio album by Nirvana",
+   "hook": "is a grungy debut recorded on a shoestring budget for the Sub Pop label",
+   "known": 0.6,
+   "kind": "grunge alt"
+  },
+  {
+   "label": "Ride the Lightning",
+   "qid": "Q190989",
+   "fame": 0.549,
+   "artist": "Metallica",
+   "description": "1984 studio album by Metallica",
+   "hook": "is a thrash-metal follow-up including Fade to Black and For Whom the Bell Tolls",
+   "known": 0.65,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Toxicity",
+   "qid": "Q218971",
+   "fame": 0.548,
+   "artist": "System of a Down",
+   "description": "2001 studio album by System of a Down",
+   "hook": "is a heavy alt-metal record featuring Chop Suey! and Aerials",
+   "known": 0.45,
+   "kind": "alt metal"
+  },
+  {
+   "label": "Houses of the Holy",
+   "qid": "Q211413",
+   "fame": 0.546,
+   "artist": "Led Zeppelin",
+   "description": "1973 studio album by Led Zeppelin",
+   "hook": "has a cover of children climbing rocks at a Northern Irish causeway and includes The Rain Song",
+   "known": 0.75,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Mayhem",
+   "qid": "Q131919251",
+   "fame": 0.544,
+   "artist": "Lady Gaga",
+   "description": "2025 studio album by Lady Gaga",
+   "hook": "is a return to dark pop featuring Abracadabra and Die with a Smile",
+   "known": 0.75,
+   "kind": "pop star"
+  },
+  {
+   "label": "Red",
+   "qid": "Q858750",
+   "fame": 0.544,
+   "artist": "Taylor Swift",
+   "description": "2012 studio album by Taylor Swift",
+   "hook": "features All Too Well and We Are Never Ever Getting Back Together",
+   "known": 0.75,
+   "kind": "modern pop"
+  },
+  {
+   "label": "Paranoid",
+   "qid": "Q271787",
+   "fame": 0.543,
+   "artist": "Black Sabbath",
+   "description": "1970 studio album by Black Sabbath",
+   "hook": "is a foundational heavy-metal record featuring Iron Man and War Pigs",
+   "known": 0.55,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Exile on Main St.",
+   "qid": "Q217248",
+   "fame": 0.542,
+   "artist": "The Rolling Stones",
+   "description": "1972 double studio album by The Rolling Stones",
+   "hook": "is a sprawling double release largely recorded in the basement of a French villa",
+   "known": 0.8,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Kill 'Em All",
+   "qid": "Q182826",
+   "fame": 0.542,
+   "artist": "Metallica",
+   "description": "1983 debut studio album by Metallica",
+   "hook": "is a pioneering thrash-metal debut featuring Seek & Destroy",
+   "known": 0.6,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "The Number of the Beast",
+   "qid": "Q223858",
+   "fame": 0.542,
+   "artist": "Iron Maiden",
+   "description": "1982 studio album by Iron Maiden",
+   "hook": "is a heavy-metal landmark featuring Hallowed Be Thy Name and Run to the Hills",
+   "known": 0.65,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Blood Sugar Sex Magik",
+   "qid": "Q329396",
+   "fame": 0.541,
+   "artist": "Red Hot Chili Peppers",
+   "description": "1991 studio album by Red Hot Chili Peppers",
+   "hook": "was recorded in a spooky mansion and includes Under the Bridge and Give It Away",
+   "known": 0.6,
+   "kind": "funk rock"
+  },
+  {
+   "label": "The Bends",
+   "qid": "Q221246",
+   "fame": 0.54,
+   "artist": "Radiohead",
+   "description": "1995 studio album by Radiohead",
+   "hook": "is the guitar-rock follow-up to a hit debut, including Fake Plastic Trees and High and Dry",
+   "known": 0.6,
+   "kind": "alternative"
+  },
+  {
+   "label": "The Marshall Mathers LP",
+   "qid": "Q153607",
+   "fame": 0.54,
+   "artist": "Eminem",
+   "description": "2000 studio album by Eminem",
+   "hook": "is a rap release named for its performer's real name, featuring Stan and The Real Slim Shady",
+   "known": 0.8,
+   "kind": "hip-hop"
+  },
+  {
+   "label": "Kid A",
+   "qid": "Q220726",
+   "fame": 0.539,
+   "artist": "Radiohead",
+   "description": "2000 studio album by Radiohead",
+   "hook": "is an experimental electronic turn including Everything in Its Right Place and Idioteque",
+   "known": 0.65,
+   "kind": "alternative"
+  },
+  {
+   "label": "Meddle",
+   "qid": "Q205458",
+   "fame": 0.538,
+   "artist": "Pink Floyd",
+   "description": "1971 studio album by Pink Floyd",
+   "hook": "features a 23-minute track that fills a whole side, and opens with One of These Days",
+   "known": 0.5,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Highway to Hell",
+   "qid": "Q285929",
+   "fame": 0.536,
+   "artist": "AC/DC",
+   "description": "1979 studio album by AC/DC",
+   "hook": "was the final record with its original frontman, and includes Touch Too Much",
+   "known": 0.6,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "In Rainbows",
+   "qid": "Q223295",
+   "fame": 0.536,
+   "artist": "Radiohead",
+   "description": "2007 studio album by Radiohead",
+   "hook": "was first released online with pay-what-you-want pricing",
+   "known": 0.65,
+   "kind": "alternative"
+  },
+  {
+   "label": "The Piper at the Gates of Dawn",
+   "qid": "Q202714",
+   "fame": 0.536,
+   "artist": "Pink Floyd",
+   "description": "1967 debut studio album by Pink Floyd",
+   "hook": "is a psychedelic debut led by founding singer Syd Barrett and includes Astronomy Domine",
+   "known": 0.45,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Dookie",
+   "qid": "Q211292",
+   "fame": 0.535,
+   "artist": "Green Day",
+   "description": "1994 studio album by Green Day",
+   "hook": "is a punk breakthrough featuring Basket Case and When I Come Around",
+   "known": 0.6,
+   "kind": "grunge alt"
+  },
+  {
+   "label": "Fearless",
+   "qid": "Q842214",
+   "fame": 0.534,
+   "artist": "Taylor Swift",
+   "description": "2008 studio album by Taylor Swift",
+   "hook": "is a country-pop record featuring Love Story and You Belong with Me, and won the top Grammy",
+   "known": 0.8,
+   "kind": "modern pop"
+  },
+  {
+   "label": "Lover",
+   "qid": "Q64596218",
+   "fame": 0.534,
+   "artist": "Taylor Swift",
+   "description": "2019 studio album by Taylor Swift",
+   "hook": "is a pastel-toned pop record including Me! and The Man",
+   "known": 0.75,
+   "kind": "modern pop"
+  },
+  {
+   "label": "Unknown Pleasures",
+   "qid": "Q735573",
+   "fame": 0.533,
+   "artist": "Joy Division",
+   "description": "1979 studio album by Joy Division",
+   "hook": "has a cover of stacked pulsar radio-wave lines, later a popular T-shirt design",
+   "known": 0.4,
+   "kind": "post-punk"
+  },
+  {
+   "label": "London Calling",
+   "qid": "Q19003",
+   "fame": 0.531,
+   "artist": "The Clash",
+   "description": "1979 studio album by the Clash",
+   "hook": "is a double punk album with a cover photo of a bassist smashing his instrument",
+   "known": 0.6,
+   "kind": "punk rock"
+  },
+  {
+   "label": "A Momentary Lapse of Reason",
+   "qid": "Q109214",
+   "fame": 0.53,
+   "artist": "Pink Floyd",
+   "description": "1987 studio album by Pink Floyd",
+   "hook": "was the group's first release after its bassist and lyricist left, led by David Gilmour",
+   "known": 0.55,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Ray of Light",
+   "qid": "Q155335",
+   "fame": 0.528,
+   "artist": "Madonna",
+   "description": "1998 studio album by Madonna",
+   "hook": "is an electronica-flavored reinvention including Frozen and The Power of Good-Bye",
+   "known": 0.65,
+   "kind": "pop star"
+  },
+  {
+   "label": "The Division Bell",
+   "qid": "Q208521",
+   "fame": 0.528,
+   "artist": "Pink Floyd",
+   "description": "1994 studio album by Pink Floyd",
+   "hook": "has a cover of two giant metal faces staring at each other and includes the song High Hopes",
+   "known": 0.55,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Californication",
+   "qid": "Q219425",
+   "fame": 0.525,
+   "artist": "Red Hot Chili Peppers",
+   "description": "1999 studio album by Red Hot Chili Peppers",
+   "hook": "marked a comeback with guitarist John Frusciante and produced Scar Tissue and Otherside",
+   "known": 0.6,
+   "kind": "funk rock"
+  },
+  {
+   "label": "The Slim Shady LP",
+   "qid": "Q383459",
+   "fame": 0.525,
+   "artist": "Eminem",
+   "description": "1999 studio album by Eminem",
+   "hook": "introduced the rapper's unhinged alter ego and includes My Name Is",
+   "known": 0.7,
+   "kind": "hip-hop"
+  },
+  {
+   "label": "Atom Heart Mother",
+   "qid": "Q210122",
+   "fame": 0.524,
+   "artist": "Pink Floyd",
+   "description": "1970 studio album by Pink Floyd",
+   "hook": "has a cover photo of a cow and a side-long suite performed with an orchestra and choir",
+   "known": 0.5,
+   "kind": "rock legend"
+  },
+  {
+   "label": "In Through the Out Door",
+   "qid": "Q432609",
+   "fame": 0.524,
+   "artist": "Led Zeppelin",
+   "description": "1979 studio album by Led Zeppelin",
+   "hook": "was sold in several sleeve versions wrapped in brown paper and includes All My Love",
+   "known": 0.7,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Ummagumma",
+   "qid": "Q206271",
+   "fame": 0.524,
+   "artist": "Pink Floyd",
+   "description": "1969 double album by Pink Floyd; live and studio album",
+   "hook": "pairs a live disc with a studio disc where each member contributes solo pieces",
+   "known": 0.4,
+   "kind": "rock legend"
+  },
+  {
+   "label": "News of the World",
+   "qid": "Q309021",
+   "fame": 0.523,
+   "artist": "Queen",
+   "description": "1977 studio album by Queen",
+   "hook": "opens with the stomp-clap anthems We Will Rock You and We Are the Champions",
+   "known": 0.85,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Powerslave",
+   "qid": "Q308899",
+   "fame": 0.523,
+   "artist": "Iron Maiden",
+   "description": "1984 studio album by Iron Maiden",
+   "hook": "has a cover of a pharaoh statue in Egypt and includes Aces High and a long tale of a sailor",
+   "known": 0.6,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Achtung Baby",
+   "qid": "Q308801",
+   "fame": 0.522,
+   "artist": "U2",
+   "description": "1991 studio album by U2",
+   "hook": "was recorded in Berlin and reinvented the band's sound, with One and Mysterious Ways",
+   "known": 0.7,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Back to Black",
+   "qid": "Q156670",
+   "fame": 0.522,
+   "artist": "Amy Winehouse",
+   "description": "2006 studio album by Amy Winehouse",
+   "hook": "features the hit Rehab and swept the Grammys for its late singer",
+   "known": 0.65,
+   "kind": "pop star"
+  },
+  {
+   "label": "Speak Now",
+   "qid": "Q385122",
+   "fame": 0.522,
+   "artist": "Taylor Swift",
+   "description": "2010 studio album by Taylor Swift",
+   "hook": "was written entirely by its singer alone and includes Mean and Story of Us",
+   "known": 0.75,
+   "kind": "modern pop"
+  },
+  {
+   "label": "Lemonade",
+   "qid": "Q23905116",
+   "fame": 0.521,
+   "artist": "Beyoncé",
+   "description": "2016 studio album by Beyoncé",
+   "hook": "was a visual album that premiered on HBO and includes Formation and Hold Up",
+   "known": 0.8,
+   "kind": "pop star"
+  },
+  {
+   "label": "The Fame",
+   "qid": "Q131182",
+   "fame": 0.521,
+   "artist": "Lady Gaga",
+   "description": "2008 studio album by Lady Gaga",
+   "hook": "launched a pop career with Just Dance and Poker Face",
+   "known": 0.8,
+   "kind": "pop star"
+  },
+  {
+   "label": "Minutes to Midnight",
+   "qid": "Q19855",
+   "fame": 0.519,
+   "artist": "Linkin Park",
+   "description": "2007 studio album by Linkin Park",
+   "hook": "moved away from nu-metal with hits like What I've Done and Bleed It Out",
+   "known": 0.6,
+   "kind": "alt metal"
+  },
+  {
+   "label": "A Saucerful of Secrets",
+   "qid": "Q207661",
+   "fame": 0.518,
+   "artist": "Pink Floyd",
+   "description": "1968 studio album by Pink Floyd",
+   "hook": "features founding member Syd Barrett on just one track, Jugband Blues",
+   "known": 0.4,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Fallen",
+   "qid": "Q155612",
+   "fame": 0.517,
+   "artist": "Evanescence",
+   "description": "2003 studio album by Evanescence",
+   "hook": "produced the gothic rock hit Bring Me to Life with a guest rapper's vocals",
+   "known": 0.5,
+   "kind": "gothic rock"
+  },
+  {
+   "label": "Load",
+   "qid": "Q276546",
+   "fame": 0.517,
+   "artist": "Metallica",
+   "description": "1996 studio album by Metallica",
+   "hook": "features Until It Sleeps and Hero of the Day and has a bloody fist on its cover",
+   "known": 0.55,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "The Final Cut",
+   "qid": "Q208227",
+   "fame": 0.516,
+   "artist": "Pink Floyd",
+   "description": "1983 studio album by Pink Floyd",
+   "hook": "was the last to feature bassist Roger Waters and dwells on war and loss",
+   "known": 0.45,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Master of Reality",
+   "qid": "Q658926",
+   "fame": 0.513,
+   "artist": "Black Sabbath",
+   "description": "1971 studio album by Black Sabbath",
+   "hook": "features down-tuned doom riffs and the stoner anthem Sweet Leaf",
+   "known": 0.5,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Presence",
+   "qid": "Q215408",
+   "fame": 0.513,
+   "artist": "Led Zeppelin",
+   "description": "1976 studio album by Led Zeppelin",
+   "hook": "was recorded in Munich while the singer recovered from an accident, with Achilles Last Stand",
+   "known": 0.7,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Killers",
+   "qid": "Q275550",
+   "fame": 0.512,
+   "artist": "Iron Maiden",
+   "description": "1981 studio album by Iron Maiden",
+   "hook": "was the last to feature singer Paul Di'Anno and includes Wrathchild",
+   "known": 0.45,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Like a Virgin",
+   "qid": "Q250406",
+   "fame": 0.512,
+   "artist": "Madonna",
+   "description": "1984 studio album by Madonna",
+   "hook": "made its singer a superstar with Material Girl and Dress You Up",
+   "known": 0.75,
+   "kind": "pop star"
+  },
+  {
+   "label": "Obscured by Clouds",
+   "qid": "Q210140",
+   "fame": 0.511,
+   "artist": "Pink Floyd",
+   "description": "1972 soundtrack album by British band Pink Floyd; from the 1972 film La Vallée",
+   "hook": "was a film soundtrack recorded at a French chateau",
+   "known": 0.3,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Sheer Heart Attack",
+   "qid": "Q219747",
+   "fame": 0.511,
+   "artist": "Queen",
+   "description": "1974 studio album by Queen",
+   "hook": "broke the band into the mainstream and includes Now I'm Here and Brighton Rock",
+   "known": 0.7,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Made in Heaven",
+   "qid": "Q155593",
+   "fame": 0.508,
+   "artist": "Queen",
+   "description": "1995 studio album by Queen",
+   "hook": "was assembled after the singer's death from his final recordings, including Too Much Love Will Kill You",
+   "known": 0.6,
+   "kind": "rock legend"
+  },
+  {
+   "label": "21",
+   "qid": "Q155169",
+   "fame": 0.507,
+   "artist": "Adele",
+   "description": "2011 studio album by Adele",
+   "hook": "won Grammys with Rolling in the Deep and Someone Like You",
+   "known": 0.75,
+   "kind": "pop star"
+  },
+  {
+   "label": "I Am… Sasha Fierce",
+   "qid": "Q147006",
+   "fame": 0.505,
+   "artist": "Beyoncé",
+   "description": "2008 studio album by Beyoncé",
+   "hook": "was split into two halves, one for a stage alter ego, and includes Single Ladies",
+   "known": 0.75,
+   "kind": "pop star"
+  },
+  {
+   "label": "Piece of Mind",
+   "qid": "Q476977",
+   "fame": 0.505,
+   "artist": "Iron Maiden",
+   "description": "album by Iron Maiden",
+   "hook": "introduced drummer Nicko McBrain and includes The Trooper",
+   "known": 0.5,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Innuendo",
+   "qid": "Q210048",
+   "fame": 0.504,
+   "artist": "Queen",
+   "description": "1990 studio album by Queen",
+   "hook": "was the last released in its singer's lifetime and includes The Show Must Go On",
+   "known": 0.8,
+   "kind": "rock legend"
+  },
+  {
+   "label": "MTV Unplugged in New York",
+   "qid": "Q212326",
+   "fame": 0.504,
+   "artist": "Nirvana",
+   "description": "1994 live album by Nirvana",
+   "hook": "is a stripped-back acoustic set with a Bowie cover, released months after the singer's death",
+   "known": 0.65,
+   "kind": "grunge alt"
+  },
+  {
+   "label": "Blackout",
+   "qid": "Q192755",
+   "fame": 0.502,
+   "artist": "Britney Spears",
+   "description": "2007 studio album by Britney Spears",
+   "hook": "features the dance hit Gimme More and Piece of Me",
+   "known": 0.65,
+   "kind": "pop star"
+  },
+  {
+   "label": "Seventh Son of a Seventh Son",
+   "qid": "Q641620",
+   "fame": 0.502,
+   "artist": "Iron Maiden",
+   "description": "album by Iron Maiden",
+   "hook": "is a concept album about a mystical child with psychic powers and includes Can I Play with Madness",
+   "known": 0.4,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Anti",
+   "qid": "Q21084500",
+   "fame": 0.501,
+   "artist": "Rihanna",
+   "description": "2016 studio album by Rihanna",
+   "hook": "was first streamed free through Tidal and includes Work and Needed Me",
+   "known": 0.7,
+   "kind": "pop star"
+  },
+  {
+   "label": "Hot Space",
+   "qid": "Q275828",
+   "fame": 0.5,
+   "artist": "Queen",
+   "description": "1982 studio album by Queen",
+   "hook": "leaned into disco and funk and includes the Bowie collaboration Under Pressure",
+   "known": 0.65,
+   "kind": "rock legend"
+  },
+  {
+   "label": "…Baby One More Time",
+   "qid": "Q190911",
+   "fame": 0.499,
+   "artist": "Britney Spears",
+   "description": "1999 debut studio album by Britney Spears",
+   "hook": "launched a teen pop star with a schoolgirl-uniform video",
+   "known": 0.75,
+   "kind": "pop star"
+  },
+  {
+   "label": "2Pacalypse Now",
+   "qid": "Q23349",
+   "fame": 0.499,
+   "artist": "Tupac Shakur",
+   "description": "1991 debut studio album by Tupac Shakur",
+   "hook": "was the first album by the West Coast rapper and includes Brenda's Got a Baby",
+   "known": 0.6,
+   "kind": "hip-hop"
+  },
+  {
+   "label": "A Day at the Races",
+   "qid": "Q220756",
+   "fame": 0.498,
+   "artist": "Queen",
+   "description": "1976 studio album by Queen",
+   "hook": "is named after a Marx Brothers film and includes Somebody to Love",
+   "known": 0.75,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Are You Experienced",
+   "qid": "Q640397",
+   "fame": 0.498,
+   "artist": "The Jimi Hendrix Experience",
+   "description": "1967 debut studio album by The Jimi Hendrix Experience",
+   "hook": "introduced a left-handed guitar wizard with Purple Haze and Hey Joe",
+   "known": 0.65,
+   "kind": "classic rock"
+  },
+  {
+   "label": "Coda",
+   "qid": "Q678221",
+   "fame": 0.497,
+   "artist": "Led Zeppelin",
+   "description": "1982 album by Led Zeppelin",
+   "hook": "collected leftover tracks after the drummer John Bonham died",
+   "known": 0.65,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Pablo Honey",
+   "qid": "Q221241",
+   "fame": 0.497,
+   "artist": "Radiohead",
+   "description": "1993 debut studio album by Radiohead",
+   "hook": "includes the hit Creep, which the band later grew to dislike",
+   "known": 0.7,
+   "kind": "alternative"
+  },
+  {
+   "label": "Reload",
+   "qid": "Q715465",
+   "fame": 0.497,
+   "artist": "Metallica",
+   "description": "1997 studio album by Metallica",
+   "hook": "was recorded alongside its predecessor and includes Fuel and The Memory Remains",
+   "known": 0.55,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Highway 61 Revisited",
+   "qid": "Q217211",
+   "fame": 0.496,
+   "artist": "Bob Dylan",
+   "description": "1965 studio album by Bob Dylan",
+   "hook": "opens with Like a Rolling Stone and helped make folk-rock electric",
+   "known": 0.6,
+   "kind": "folk rock"
+  },
+  {
+   "label": "Like a Prayer",
+   "qid": "Q252447",
+   "fame": 0.496,
+   "artist": "Madonna",
+   "description": "1989 studio album by Madonna",
+   "hook": "caused an uproar over its religious imagery and cost its singer a Pepsi sponsorship",
+   "known": 0.75,
+   "kind": "pop star"
+  },
+  {
+   "label": "Confessions on a Dance Floor",
+   "qid": "Q151880",
+   "fame": 0.495,
+   "artist": "Madonna",
+   "description": "2005 studio album by Madonna",
+   "hook": "is a nonstop club-ready record whose hit Hung Up samples ABBA",
+   "known": 0.65,
+   "kind": "pop star"
+  },
+  {
+   "label": "Dangerously in Love",
+   "qid": "Q127503",
+   "fame": 0.495,
+   "artist": "Beyoncé",
+   "description": "2003 studio album by Beyoncé",
+   "hook": "was a solo debut featuring the Jay-Z collaboration that topped the charts",
+   "known": 0.8,
+   "kind": "pop star"
+  },
+  {
+   "label": "The Game",
+   "qid": "Q211405",
+   "fame": 0.495,
+   "artist": "Queen",
+   "description": "1980 studio album by Queen",
+   "hook": "includes Another One Bites the Dust and Crazy Little Thing Called Love",
+   "known": 0.85,
+   "kind": "rock legend"
+  },
+  {
+   "label": "A Kind of Magic",
+   "qid": "Q300447",
+   "fame": 0.494,
+   "artist": "Queen",
+   "description": "1986 studio album by Queen",
+   "hook": "tied in with the film Highlander and includes Who Wants to Live Forever",
+   "known": 0.65,
+   "kind": "rock legend"
+  },
+  {
+   "label": "St. Anger",
+   "qid": "Q154111",
+   "fame": 0.494,
+   "artist": "Metallica",
+   "description": "2003 album by Metallica",
+   "hook": "is known for lacking guitar solos and for its clanging snare drum sound",
+   "known": 0.5,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Teenage Dream",
+   "qid": "Q186188",
+   "fame": 0.494,
+   "artist": "Katy Perry",
+   "description": "2010 album by Katy Perry",
+   "hook": "produced five number-one singles, tying a record held by Michael Jackson, including California Gurls",
+   "known": 0.7,
+   "kind": "pop star"
+  },
+  {
+   "label": "True Blue",
+   "qid": "Q154467",
+   "fame": 0.494,
+   "artist": "Madonna",
+   "description": "1986 studio album by Madonna",
+   "hook": "includes Papa Don't Preach and La Isla Bonita",
+   "known": 0.65,
+   "kind": "pop star"
+  },
+  {
+   "label": "Death Magnetic",
+   "qid": "Q151657",
+   "fame": 0.491,
+   "artist": "Metallica",
+   "description": "2008 studio album by Metallica",
+   "hook": "marked a return to thrash but drew complaints about overly loud mastering",
+   "known": 0.6,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Reign in Blood",
+   "qid": "Q474960",
+   "fame": 0.491,
+   "artist": "Slayer",
+   "description": "1986 studio album by Slayer",
+   "hook": "is a thrash landmark barely half an hour long, produced by Rick Rubin",
+   "known": 0.35,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "The Endless River",
+   "qid": "Q17319538",
+   "fame": 0.491,
+   "artist": "Pink Floyd",
+   "description": "2014 studio album by Pink Floyd",
+   "hook": "was built from unused recordings with late keyboardist Richard Wright and is mostly instrumental",
+   "known": 0.5,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Born This Way",
+   "qid": "Q164646",
+   "fame": 0.49,
+   "artist": "Lady Gaga",
+   "description": "2011 studio album by Lady Gaga",
+   "hook": "includes Judas and The Edge of Glory and an anthem of self-acceptance",
+   "known": 0.75,
+   "kind": "pop star"
+  },
+  {
+   "label": "Jazz",
+   "qid": "Q270083",
+   "fame": 0.49,
+   "artist": "Queen",
+   "description": "1978 studio album by Queen",
+   "hook": "includes Bicycle Race and Don't Stop Me Now",
+   "known": 0.7,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Amnesiac",
+   "qid": "Q223650",
+   "fame": 0.488,
+   "artist": "Radiohead",
+   "description": "2001 album by Radiohead",
+   "hook": "was made in the same sessions as Kid A and includes Pyramid Song",
+   "known": 0.55,
+   "kind": "alternative"
+  },
+  {
+   "label": "Boy",
+   "qid": "Q207662",
+   "fame": 0.488,
+   "artist": "U2",
+   "description": "1980 debut studio album by U2",
+   "hook": "was a debut with I Will Follow and has a young child's face on the cover",
+   "known": 0.6,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Let Go",
+   "qid": "Q213039",
+   "fame": 0.488,
+   "artist": "Avril Lavigne",
+   "description": "2002 studio album by Avril Lavigne",
+   "hook": "launched a skater-punk teen star with Complicated and Sk8er Boi",
+   "known": 0.55,
+   "kind": "punk rock"
+  },
+  {
+   "label": "The Unforgettable Fire",
+   "qid": "Q536336",
+   "fame": 0.488,
+   "artist": "U2",
+   "description": "1984 studio album by U2",
+   "hook": "includes a hit song about Martin Luther King Jr. and was produced by Brian Eno and Daniel Lanois",
+   "known": 0.6,
+   "kind": "rock legend"
+  },
+  {
+   "label": "G N' R Lies",
+   "qid": "Q834994",
+   "fame": 0.487,
+   "artist": "Guns N' Roses",
+   "description": "1988 studio album by Guns N' Roses",
+   "hook": "pairs raw rock tracks with the acoustic ballad Patience",
+   "known": 0.5,
+   "kind": "grunge alt"
+  },
+  {
+   "label": "Parachutes",
+   "qid": "Q131977",
+   "fame": 0.487,
+   "artist": "Coldplay",
+   "description": "2000 studio album by Coldplay",
+   "hook": "features the hit single Yellow and won a Grammy for Best Alternative Music Album",
+   "known": 0.65,
+   "kind": "alternative"
+  },
+  {
+   "label": "Relapse",
+   "qid": "Q245353",
+   "fame": 0.487,
+   "artist": "Eminem",
+   "description": "2009 studio album by Eminem",
+   "hook": "marked a return after a hiatus and features the single We Made You",
+   "known": 0.65,
+   "kind": "hip-hop"
+  },
+  {
+   "label": "25",
+   "qid": "Q21168841",
+   "fame": 0.486,
+   "artist": "Adele",
+   "description": "2015 studio album by Adele",
+   "hook": "features the hit Hello and broke first-week sales records",
+   "known": 0.8,
+   "kind": "pop star"
+  },
+  {
+   "label": "Fear of the Dark",
+   "qid": "Q477065",
+   "fame": 0.486,
+   "artist": "Iron Maiden",
+   "description": "1992 studio album by Iron Maiden",
+   "hook": "was Bruce Dickinson's final album with his group before his first departure",
+   "known": 0.45,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "A Thousand Suns",
+   "qid": "Q13171",
+   "fame": 0.485,
+   "artist": "Linkin Park",
+   "description": "2010 album by Linkin Park",
+   "hook": "blends electronic experiments with nuclear-age themes and features Waiting for the End",
+   "known": 0.6,
+   "kind": "alt metal"
+  },
+  {
+   "label": "Encore",
+   "qid": "Q638412",
+   "fame": 0.485,
+   "artist": "Eminem",
+   "description": "2004 studio album by Eminem",
+   "hook": "features the singles Just Lose It and Mosh",
+   "known": 0.65,
+   "kind": "hip-hop"
+  },
+  {
+   "label": "The Works",
+   "qid": "Q224641",
+   "fame": 0.485,
+   "artist": "Queen",
+   "description": "1984 studio album by Queen",
+   "hook": "features Radio Ga Ga and I Want to Break Free",
+   "known": 0.75,
+   "kind": "rock legend"
+  },
+  {
+   "label": "All That You Can't Leave Behind",
+   "qid": "Q296586",
+   "fame": 0.483,
+   "artist": "U2",
+   "description": "2000 studio album by U2",
+   "hook": "returned to a classic sound with the hits Beautiful Day and Elevation",
+   "known": 0.7,
+   "kind": "rock legend"
+  },
+  {
+   "label": "L.A. Woman",
+   "qid": "Q212846",
+   "fame": 0.483,
+   "artist": "The Doors",
+   "description": "1971 studio album by The Doors",
+   "hook": "is Jim Morrison's final studio record with his group and features Love Her Madly",
+   "known": 0.6,
+   "kind": "classic rock"
+  },
+  {
+   "label": "Music",
+   "qid": "Q155358",
+   "fame": 0.483,
+   "artist": "Madonna",
+   "description": "2000 studio album by Madonna",
+   "hook": "features the singles Don't Tell Me and What It Feels Like for a Girl",
+   "known": 0.65,
+   "kind": "pop star"
+  },
+  {
+   "label": "The Miracle",
+   "qid": "Q390295",
+   "fame": 0.483,
+   "artist": "Queen",
+   "description": "1989 studio album by Queen",
+   "hook": "features I Want It All and Breakthru",
+   "known": 0.7,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Garage Inc.",
+   "qid": "Q476874",
+   "fame": 0.48,
+   "artist": "Metallica",
+   "description": "1998 double compilation album by Metallica; covers album",
+   "hook": "collects cover versions of songs by other artists like Whiskey in the Jar",
+   "known": 0.5,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "By the Way",
+   "qid": "Q153475",
+   "fame": 0.479,
+   "artist": "Red Hot Chili Peppers",
+   "description": "2002 studio album by Red Hot Chili Peppers",
+   "hook": "features hits Can't Stop and Universally Speaking",
+   "known": 0.6,
+   "kind": "funk rock"
+  },
+  {
+   "label": "Oops!… I Did It Again",
+   "qid": "Q152999",
+   "fame": 0.479,
+   "artist": "Britney Spears",
+   "description": "2000 studio album by Britney Spears",
+   "hook": "includes the single Lucky and a smash title track",
+   "known": 0.75,
+   "kind": "pop star"
+  },
+  {
+   "label": "In the Zone",
+   "qid": "Q27166",
+   "fame": 0.478,
+   "artist": "Britney Spears",
+   "description": "2003 studio album by Britney Spears",
+   "hook": "features dance smash Toxic",
+   "known": 0.7,
+   "kind": "pop star"
+  },
+  {
+   "label": "A Rush of Blood to the Head",
+   "qid": "Q207970",
+   "fame": 0.475,
+   "artist": "Coldplay",
+   "description": "2002 studio album by Coldplay",
+   "hook": "features hits Clocks and In My Place",
+   "known": 0.65,
+   "kind": "alternative"
+  },
+  {
+   "label": "Artpop",
+   "qid": "Q2743297",
+   "fame": 0.475,
+   "artist": "Lady Gaga",
+   "description": "2013 studio album by Lady Gaga",
+   "hook": "features the single Applause",
+   "known": 0.65,
+   "kind": "pop star"
+  },
+  {
+   "label": "One Hot Minute",
+   "qid": "Q117225",
+   "fame": 0.475,
+   "artist": "Red Hot Chili Peppers",
+   "description": "1995 studio album by Red Hot Chili Peppers",
+   "hook": "features guitarist Dave Navarro and the single Aeroplane",
+   "known": 0.45,
+   "kind": "funk rock"
+  },
+  {
+   "label": "Stadium Arcadium",
+   "qid": "Q152605",
+   "fame": 0.475,
+   "artist": "Red Hot Chili Peppers",
+   "description": "ninth studio album by American rock band Red Hot Chili Peppers",
+   "hook": "was a double album that debuted at number one with Dani California",
+   "known": 0.6,
+   "kind": "funk rock"
+  },
+  {
+   "label": "4",
+   "qid": "Q238235",
+   "fame": 0.474,
+   "artist": "Beyoncé",
+   "description": "2011 studio album by Beyoncé",
+   "hook": "features Love on Top and Run the World (Girls)",
+   "known": 0.75,
+   "kind": "pop star"
+  },
+  {
+   "label": "Good Girl Gone Bad",
+   "qid": "Q153391",
+   "fame": 0.474,
+   "artist": "Rihanna",
+   "description": "2007 studio album by Rihanna",
+   "hook": "features the megahit Umbrella",
+   "known": 0.7,
+   "kind": "pop star"
+  },
+  {
+   "label": "Future Nostalgia",
+   "qid": "Q76962209",
+   "fame": 0.472,
+   "artist": "Dua Lipa",
+   "description": "2020 studio album by Dua Lipa",
+   "hook": "is a disco-flavored pop record featuring Don't Start Now",
+   "known": 0.7,
+   "kind": "pop star"
+  },
+  {
+   "label": "Strange Days",
+   "qid": "Q212665",
+   "fame": 0.47,
+   "artist": "The Doors",
+   "description": "1967 sophomore studio album by The Doors",
+   "hook": "features Love Me Two Times and Moonlight Drive",
+   "known": 0.55,
+   "kind": "classic rock"
+  },
+  {
+   "label": "Viva la Vida or Death and All His Friends",
+   "qid": "Q158740",
+   "fame": 0.47,
+   "artist": "Coldplay",
+   "description": "2008 studio album by Coldplay",
+   "hook": "features Violet Hill and a chart-topping title track",
+   "known": 0.7,
+   "kind": "alternative"
+  },
+  {
+   "label": "Circus",
+   "qid": "Q19345",
+   "fame": 0.468,
+   "artist": "Britney Spears",
+   "description": "2008 studio album by Britney Spears",
+   "hook": "features the single Womanizer",
+   "known": 0.7,
+   "kind": "pop star"
+  },
+  {
+   "label": "Hardwired… to Self-Destruct",
+   "qid": "Q24034571",
+   "fame": 0.468,
+   "artist": "Metallica",
+   "description": "2016 studio album by Metallica",
+   "hook": "ended an eight-year gap between records",
+   "known": 0.6,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "When We All Fall Asleep, Where Do We Go?",
+   "qid": "Q61157315",
+   "fame": 0.468,
+   "artist": "Billie Eilish",
+   "description": "2019 studio album by Billie Eilish",
+   "hook": "features Bad Guy and won a Grammy for Album of the Year",
+   "known": 0.8,
+   "kind": "modern pop"
+  },
+  {
+   "label": "Dangerous Woman",
+   "qid": "Q23035063",
+   "fame": 0.467,
+   "artist": "Ariana Grande",
+   "description": "2016 studio album by Ariana Grande",
+   "hook": "features Into You and Side to Side",
+   "known": 0.7,
+   "kind": "pop star"
+  },
+  {
+   "label": "Loud",
+   "qid": "Q208340",
+   "fame": 0.466,
+   "artist": "Rihanna",
+   "description": "2010 studio album by Rihanna",
+   "hook": "features S&M and What's My Name?",
+   "known": 0.75,
+   "kind": "pop star"
+  },
+  {
+   "label": "Loose",
+   "qid": "Q488934",
+   "fame": 0.465,
+   "artist": "Nelly Furtado",
+   "description": "2006 studio album by Nelly Furtado",
+   "hook": "features Say It Right and Maneater",
+   "known": 0.5,
+   "kind": "pop star"
+  },
+  {
+   "label": "Morrison Hotel",
+   "qid": "Q214139",
+   "fame": 0.465,
+   "artist": "The Doors",
+   "description": "1970 studio album by The Doors",
+   "hook": "features Roadhouse Blues and Peace Frog",
+   "known": 0.55,
+   "kind": "classic rock"
+  },
+  {
+   "label": "How to Dismantle an Atomic Bomb",
+   "qid": "Q370769",
+   "fame": 0.464,
+   "artist": "U2",
+   "description": "2004 studio album by U2",
+   "hook": "features Vertigo and Sometimes You Can't Make It on Your Own",
+   "known": 0.65,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Sweetener",
+   "qid": "Q52477911",
+   "fame": 0.464,
+   "artist": "Ariana Grande",
+   "description": "2018 studio album by Ariana Grande",
+   "hook": "features No Tears Left to Cry and God Is a Woman",
+   "known": 0.7,
+   "kind": "pop star"
+  },
+  {
+   "label": "21st Century Breakdown",
+   "qid": "Q207502",
+   "fame": 0.46,
+   "artist": "Green Day",
+   "description": "2009 studio album by Green Day",
+   "hook": "is a rock opera featuring Know Your Enemy",
+   "known": 0.65,
+   "kind": "grunge alt"
+  },
+  {
+   "label": "X&Y",
+   "qid": "Q158738",
+   "fame": 0.46,
+   "artist": "Coldplay",
+   "description": "2005 studio album by Coldplay",
+   "hook": "features Fix You and Speed of Sound",
+   "known": 0.7,
+   "kind": "alternative"
+  },
+  {
+   "label": "Black Holes and Revelations",
+   "qid": "Q204240",
+   "fame": 0.459,
+   "artist": "Muse",
+   "description": "2006 album by Muse",
+   "hook": "features Starlight and Knights of Cydonia",
+   "known": 0.5,
+   "kind": "alternative"
+  },
+  {
+   "label": "Brave New World",
+   "qid": "Q668039",
+   "fame": 0.458,
+   "artist": "Iron Maiden",
+   "description": "2000 album by Iron Maiden",
+   "hook": "brought Bruce Dickinson and Adrian Smith back to the lineup",
+   "known": 0.55,
+   "kind": "heavy metal"
+  },
+  {
+   "label": "Waiting for the Sun",
+   "qid": "Q214134",
+   "fame": 0.457,
+   "artist": "The Doors",
+   "description": "1968 studio album The Doors",
+   "hook": "features Hello, I Love You",
+   "known": 0.6,
+   "kind": "classic rock"
+  },
+  {
+   "label": "19",
+   "qid": "Q208902",
+   "fame": 0.455,
+   "artist": "Adele",
+   "description": "2008 debut studio album by Adele",
+   "hook": "features Chasing Pavements and Hometown Glory",
+   "known": 0.75,
+   "kind": "pop star"
+  },
+  {
+   "label": "October",
+   "qid": "Q269674",
+   "fame": 0.455,
+   "artist": "U2",
+   "description": "1981 studio album by U2",
+   "hook": "was made after a bag of the singer's lyrics went missing",
+   "known": 0.55,
+   "kind": "rock legend"
+  },
+  {
+   "label": "Living Things",
+   "qid": "Q13172",
+   "fame": 0.454,
+   "artist": "Linkin Park",
+   "description": "2012 album by Linkin Park",
+   "hook": "features Burn It Down and Lost in the Echo",
+   "known": 0.6,
+   "kind": "alt metal"
+  },
+  {
+   "label": "The Soft Parade",
+   "qid": "Q217203",
+   "fame": 0.454,
+   "artist": "The Doors",
+   "description": "album by The Doors",
+   "hook": "features Touch Me with horns and strings",
+   "known": 0.45,
+   "kind": "classic rock"
+  },
+  {
+   "label": "Absolution",
+   "qid": "Q210904",
+   "fame": 0.452,
+   "artist": "Muse",
+   "description": "2003 album by Muse",
+   "hook": "features Time Is Running Out and Hysteria",
+   "known": 0.5,
+   "kind": "alternative"
+  },
+  {
+   "label": "Fever",
+   "qid": "Q156710",
+   "fame": 0.45,
+   "artist": "Kylie Minogue",
+   "description": "2001 studio album by Kylie Minogue",
+   "hook": "features Can't Get You Out of My Head",
+   "known": 0.55,
+   "kind": "pop star"
+  },
+  {
+   "label": "Unapologetic",
+   "qid": "Q45367",
+   "fame": 0.45,
+   "artist": "Rihanna",
+   "description": "2012 studio album by Rihanna",
+   "hook": "features Diamonds and Stay",
+   "known": 0.75,
+   "kind": "pop star"
+  },
+  {
+   "label": "Warning",
+   "qid": "Q213694",
+   "fame": 0.45,
+   "artist": "Green Day",
+   "description": "2000 studio album by Green Day",
+   "hook": "features Minority and Waiting",
+   "known": 0.6,
+   "kind": "grunge alt"
+  }
+ ]
+}

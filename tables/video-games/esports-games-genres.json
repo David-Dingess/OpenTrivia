@@ -1,0 +1,344 @@
+{
+ "id": "table.video-games.esports-games-genres",
+ "kind": "table",
+ "title": "Esports games and their genre",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "esports",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?genreLabel WHERE { { SELECT ?item (SAMPLE(?g) AS ?genre) (COUNT(DISTINCT ?g) AS ?nG) WHERE { ?item wdt:P31 wd:Q112144412 ; wdt:P136 ?g ; wikibase:sitelinks ?sl . FILTER(?sl >= 10) FILTER NOT EXISTS { ?item wdt:P852 ?esrb . VALUES ?esrb { wd:Q14864331 wd:Q14864332 wd:Q110488287 wd:Q124356066 } } } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nG = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T14:43:08.112Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T14:43:08.112Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "genre",
+   "label": "Genre",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "game",
+  "many": "games",
+  "minFame": 0.5,
+  "exclude": [
+   {
+    "qid": "Q10896671",
+    "why": "Sim racing overlaps racing game as a genre value"
+   },
+   {
+    "qid": "Q105486599",
+    "why": "3D fighting game overlaps fighting game as a genre value"
+   },
+   {
+    "qid": "Q13576160",
+    "why": "Casual game is a vague genre"
+   }
+  ],
+  "columns": {
+   "genre": {
+    "role": "link",
+    "pick": "What kind of game is {label}?",
+    "statement": "The genre of {label} is {value}.",
+    "match": "Match each game to its genre.",
+    "odd": "Three of these games share the genre {value}. Which one doesn't?",
+    "all": "Tap all {n} games in the genre {value}.",
+    "reverse": "Which of these games is in the genre {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Tetris",
+   "qid": "Q71910",
+   "fame": 0.613,
+   "genre": "puzzle video game",
+   "description": "1984 tile-matching puzzle video game series",
+   "hook": "has players rotate falling blocks to complete solid lines and clear them",
+   "known": 0.9,
+   "kind": "puzzle"
+  },
+  {
+   "label": "League of Legends",
+   "qid": "Q223341",
+   "fame": 0.587,
+   "genre": "multiplayer online battle arena",
+   "description": "2009 multiplayer online battle arena video game",
+   "hook": "pits two teams of five champions against each other to destroy the enemy nexus",
+   "known": 0.7,
+   "kind": "moba"
+  },
+  {
+   "label": "Stardew Valley",
+   "qid": "Q23013817",
+   "fame": 0.565,
+   "genre": "farm life sim",
+   "description": "2016 indie farming simulation role-playing video game",
+   "hook": "has you take over your late grandfather's overgrown land, growing crops and befriending villagers",
+   "known": 0.5,
+   "kind": "simulation"
+  },
+  {
+   "label": "Call of Duty: Modern Warfare III",
+   "qid": "Q121295422",
+   "fame": 0.559,
+   "genre": "first-person shooter",
+   "description": "2023 video game developed by Sledgehammer Games",
+   "hook": "continues a rebooted military saga featuring Captain Price and Task Force 141",
+   "known": 0.8,
+   "kind": "fps"
+  },
+  {
+   "label": "Call of Duty: Black Ops 6",
+   "qid": "Q125962931",
+   "fame": 0.553,
+   "genre": "first-person shooter",
+   "description": "2024 video game developed by Treyarch and Raven Software",
+   "hook": "adds a movement system letting players dive and slide in any direction",
+   "known": 0.8,
+   "kind": "fps"
+  },
+  {
+   "label": "EA Sports FC 26",
+   "qid": "Q135144851",
+   "fame": 0.551,
+   "genre": "association football video game",
+   "description": "2025 video game by Electronic Arts",
+   "hook": "carries on a soccer series that dropped its old name after a split with the sport's governing body",
+   "known": 0.7,
+   "kind": "sports"
+  },
+  {
+   "label": "Counter-Strike 2",
+   "qid": "Q111165107",
+   "fame": 0.549,
+   "genre": "first-person shooter",
+   "description": "2023 video game",
+   "hook": "is the Source 2 successor to a long-running bomb-defusal team game",
+   "known": 0.7,
+   "kind": "fps"
+  },
+  {
+   "label": "Halo Infinite",
+   "qid": "Q54913666",
+   "fame": 0.534,
+   "genre": "first-person shooter",
+   "description": "2021 first-person shooter video game developed by 343 Industries",
+   "hook": "sends Master Chief against the Banished on a damaged ringworld",
+   "known": 0.7,
+   "kind": "fps"
+  },
+  {
+   "label": "PUBG Mobile",
+   "qid": "Q63595820",
+   "fame": 0.534,
+   "genre": "battle royale game",
+   "description": "2018 mobile video game developed by Tencent Games and Bluehole",
+   "hook": "drops up to 100 players onto an island to fight until only one remains",
+   "known": 0.6,
+   "kind": "battle-royale"
+  },
+  {
+   "label": "Need for Speed: Most Wanted",
+   "qid": "Q220365",
+   "fame": 0.533,
+   "genre": "racing video game",
+   "description": "2005 racing video game by Electronic Arts",
+   "hook": "has you climb a blacklist of rival drivers while evading police in Rockport",
+   "known": 0.6,
+   "kind": "racing"
+  },
+  {
+   "label": "GeoGuessr",
+   "qid": "Q13576160",
+   "fame": 0.532,
+   "genre": "casual game",
+   "description": "2013 geographic discovery video game",
+   "hook": "drops you somewhere in Street View and asks you to pinpoint where you are on a map",
+   "known": 0.3,
+   "kind": "casual"
+  },
+  {
+   "label": "FIFA",
+   "qid": "Q326704",
+   "fame": 0.527,
+   "genre": "association football video game",
+   "description": "association football video game series",
+   "hook": "is the annual Electronic Arts soccer series that later dropped this name after a licensing split",
+   "known": 0.8,
+   "kind": "sports"
+  },
+  {
+   "label": "StarCraft",
+   "qid": "Q165929",
+   "fame": 0.525,
+   "genre": "real-time strategy",
+   "description": "1998 video game",
+   "hook": "pits Terran, Zerg and Protoss in a sci-fi war and became a national obsession in South Korea",
+   "known": 0.5,
+   "kind": "rts"
+  },
+  {
+   "label": "Warcraft III: Reforged",
+   "qid": "Q58202883",
+   "fame": 0.521,
+   "genre": "real-time strategy",
+   "description": "2020 video game remaster",
+   "hook": "updated a beloved fantasy classic's graphics but launched to fan backlash",
+   "known": 0.4,
+   "kind": "rts"
+  },
+  {
+   "label": "Mobile Legends: Bang Bang",
+   "qid": "Q29564198",
+   "fame": 0.517,
+   "genre": "multiplayer online battle arena",
+   "description": "2016 multiplayer online battle arena mobile game",
+   "hook": "is a hugely popular phone game of five-versus-five hero matches, especially in Southeast Asia",
+   "known": 0.4,
+   "kind": "moba"
+  },
+  {
+   "label": "Dream League Soccer",
+   "qid": "Q18215877",
+   "fame": 0.498,
+   "genre": "association football video game",
+   "description": "Football simulation video game series",
+   "hook": null,
+   "known": 0.4,
+   "kind": "sports"
+  },
+  {
+   "label": "Tekken 8",
+   "qid": "Q105486599",
+   "fame": 0.497,
+   "genre": "3D fighting game",
+   "description": "2024 fighting game developed by Bandai Namco Studios",
+   "hook": null,
+   "known": 0.5,
+   "kind": "fighting"
+  },
+  {
+   "label": "Forza Horizon 5",
+   "qid": "Q107214683",
+   "fame": 0.483,
+   "genre": "racing video game",
+   "description": "2021 racing video game developed by Playground Games",
+   "hook": null,
+   "known": 0.6,
+   "kind": "racing"
+  },
+  {
+   "label": "Injustice 2",
+   "qid": "Q24717189",
+   "fame": 0.479,
+   "genre": "fighting game",
+   "description": "2017 fighting game developed by Netherrealm Studios",
+   "hook": null,
+   "known": 0.4,
+   "kind": "fighting"
+  },
+  {
+   "label": "Call of Duty 2",
+   "qid": "Q210298",
+   "fame": 0.473,
+   "genre": "first-person shooter",
+   "description": "2005 video game developed by Infinity Ward",
+   "hook": null,
+   "known": 0.6,
+   "kind": "fps"
+  },
+  {
+   "label": "Need for Speed: Underground 2",
+   "qid": "Q726190",
+   "fame": 0.47,
+   "genre": "racing video game",
+   "description": "2004 video game",
+   "hook": null,
+   "known": 0.4,
+   "kind": "racing"
+  },
+  {
+   "label": "Heroes of Might and Magic III: The Restoration of Erathia",
+   "qid": "Q220965",
+   "fame": 0.467,
+   "genre": "turn-based strategy video game",
+   "description": "1999 video game",
+   "hook": null,
+   "known": 0.3,
+   "kind": "strategy"
+  },
+  {
+   "label": "Honor of Kings",
+   "qid": "Q28360116",
+   "fame": 0.458,
+   "genre": "multiplayer online battle arena",
+   "description": "2015 Chinese MOBA video game",
+   "hook": null,
+   "known": 0.3,
+   "kind": "moba"
+  },
+  {
+   "label": "Assetto Corsa",
+   "qid": "Q10896671",
+   "fame": 0.453,
+   "genre": "sim racing",
+   "description": "2013 video game",
+   "hook": null,
+   "known": 0.2,
+   "kind": "sim-racing"
+  },
+  {
+   "label": "Defense of the Ancients",
+   "qid": "Q215936",
+   "fame": 0.453,
+   "genre": "multiplayer online battle arena",
+   "description": "mod for Warcraft III: Reign of Chaos",
+   "hook": null,
+   "known": 0.4,
+   "kind": "moba"
+  },
+  {
+   "label": "Jak and Daxter: The Precursor Legacy",
+   "qid": "Q1784103",
+   "fame": 0.45,
+   "genre": "platformer",
+   "description": "2001 video game developed by Naughty Dog",
+   "hook": null,
+   "known": 0.4,
+   "kind": "platformer"
+  },
+  {
+   "label": "Need for Speed: Carbon",
+   "qid": "Q219795",
+   "fame": 0.45,
+   "genre": "racing video game",
+   "description": "2006 video game",
+   "hook": null,
+   "known": 0.5,
+   "kind": "racing"
+  }
+ ]
+}

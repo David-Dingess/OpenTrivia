@@ -1,0 +1,651 @@
+{
+ "id": "table.geography.capitals-on-rivers",
+ "kind": "table",
+ "title": "Capital cities and the river they stand on",
+ "genre": "society",
+ "category": "geography",
+ "topic": "capitals",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?riverLabel WHERE { { SELECT ?item (SAMPLE(?r) AS ?river) WHERE { ?c wdt:P31 wd:Q3624078 ; wdt:P36 ?item . FILTER NOT EXISTS { ?c wdt:P576 ?end } ?item wdt:P206 ?r . ?r wdt:P31/wdt:P279* wd:Q4022 . } GROUP BY ?item HAVING(COUNT(DISTINCT ?r) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-01T04:23:00.113Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-01T04:23:00.113Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "river",
+   "label": "River",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "capital",
+  "many": "capitals",
+  "wildcard": "place",
+  "hookAsk": "Which capital {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "river": {
+    "role": "link",
+    "pick": "Which river does {label}, a capital city, stand on?",
+    "statement": "{label} stands on the {value}.",
+    "match": "Match each capital to the river it stands on.",
+    "odd": "Three of these capitals stand on the {value}. Which one does not?",
+    "all": "Tap all {n} capitals that stand on the {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "London",
+   "qid": "Q84",
+   "fame": 0.74,
+   "river": "River Thames",
+   "description": "capital and largest city of England and the United Kingdom",
+   "hook": "is home to Big Ben, Buckingham Palace and the Tower Bridge",
+   "known": 0.95,
+   "kind": "european capital"
+  },
+  {
+   "label": "Paris",
+   "qid": "Q90",
+   "fame": 0.711,
+   "river": "Seine",
+   "description": "capital and most populous city in France",
+   "hook": "is the City of Light, crowned by an iron tower and home to the Louvre",
+   "known": 0.95,
+   "kind": "european capital"
+  },
+  {
+   "label": "Prague",
+   "qid": "Q1085",
+   "fame": 0.662,
+   "river": "Vltava",
+   "description": "capital city of the Czech Republic",
+   "hook": "is a city of a hundred spires, with a medieval astronomical clock and a famous stone bridge",
+   "known": 0.8,
+   "kind": "european capital"
+  },
+  {
+   "label": "Amsterdam",
+   "qid": "Q727",
+   "fame": 0.655,
+   "river": "Amstel",
+   "description": "capital and most populous city of the Netherlands",
+   "hook": "is a canal-laced city of narrow gabled houses, bicycles and a famous red-light district",
+   "known": 0.8,
+   "kind": "european capital"
+  },
+  {
+   "label": "Jakarta",
+   "qid": "Q3630",
+   "fame": 0.655,
+   "river": "Ciliwung River",
+   "description": "capital and largest city of Indonesia",
+   "hook": "is a sprawling, traffic-choked megacity on the island of Java",
+   "known": 0.4,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Budapest",
+   "qid": "Q1781",
+   "fame": 0.649,
+   "river": "Danube",
+   "description": "capital and largest city of Hungary",
+   "hook": "is a city of thermal baths and a grand domed parliament, once two towns joined into one",
+   "known": 0.8,
+   "kind": "european capital"
+  },
+  {
+   "label": "Madrid",
+   "qid": "Q2807",
+   "fame": 0.64,
+   "river": "Manzanares",
+   "description": "capital of Spain",
+   "hook": "is home to the Prado museum and the Royal Palace, and sits near the middle of the Iberian peninsula",
+   "known": 0.9,
+   "kind": "european capital"
+  },
+  {
+   "label": "Bangkok",
+   "qid": "Q1861",
+   "fame": 0.636,
+   "river": "Chao Phraya River",
+   "description": "capital of Thailand",
+   "hook": "is a steamy city of golden temples, tuk-tuks and street food",
+   "known": 0.8,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Damascus",
+   "qid": "Q3766",
+   "fame": 0.63,
+   "river": "Barada",
+   "description": "capital and largest city of Syria",
+   "hook": "is often called one of the oldest continuously inhabited cities on Earth",
+   "known": 0.5,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Warsaw",
+   "qid": "Q270",
+   "fame": 0.624,
+   "river": "Vistula",
+   "description": "capital and largest city of Poland",
+   "hook": "is a city rebuilt from wartime ruins, with a reconstructed Old Town and the Palace of Culture",
+   "known": 0.6,
+   "kind": "european capital"
+  },
+  {
+   "label": "Lisbon",
+   "qid": "Q597",
+   "fame": 0.62,
+   "river": "Tagus River",
+   "description": "municipality and capital city of Portugal",
+   "hook": "is a hilly, tiled-roof city known for yellow trams, custard tarts and a devastating earthquake long ago",
+   "known": 0.7,
+   "kind": "european capital"
+  },
+  {
+   "label": "Bratislava",
+   "qid": "Q1780",
+   "fame": 0.613,
+   "river": "Danube",
+   "description": "capital city of Slovakia",
+   "hook": "is a small city with a hilltop castle that sits right beside the borders of two neighbouring countries",
+   "known": 0.3,
+   "kind": "european capital"
+  },
+  {
+   "label": "Cairo",
+   "qid": "Q85",
+   "fame": 0.612,
+   "river": "Nile",
+   "description": "capital city of Egypt",
+   "hook": "is a vast city near the Giza pyramids and the Sphinx",
+   "known": 0.85,
+   "kind": "african capital"
+  },
+  {
+   "label": "New Delhi",
+   "qid": "Q987",
+   "fame": 0.612,
+   "river": "Yamuna",
+   "description": "capital city of India",
+   "hook": "is a planned seat of government laid out by British architects, with a famous India Gate",
+   "known": 0.8,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Sarajevo",
+   "qid": "Q11194",
+   "fame": 0.605,
+   "river": "Miljacka",
+   "description": "capital city of Bosnia and Herzegovina",
+   "hook": "is the city where an assassination helped spark the First World War",
+   "known": 0.5,
+   "kind": "european capital"
+  },
+  {
+   "label": "Kinshasa",
+   "qid": "Q3838",
+   "fame": 0.604,
+   "river": "River Congo",
+   "description": "capital and the largest city of the Democratic Republic of the Congo having the status of a province",
+   "hook": "is a huge Central African city facing a neighbouring capital just across the water",
+   "known": 0.2,
+   "kind": "african capital"
+  },
+  {
+   "label": "Manila",
+   "qid": "Q1461",
+   "fame": 0.601,
+   "river": "Pasig River",
+   "description": "capital city of the Philippines",
+   "hook": "is a crowded metropolis with jeepneys and a walled Spanish colonial district called Intramuros",
+   "known": 0.5,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Ulaanbaatar",
+   "qid": "Q23430",
+   "fame": 0.598,
+   "river": "Tuul River",
+   "description": "capital and largest city of Mongolia",
+   "hook": "is the coldest national capital on Earth, home to nomadic yurt districts",
+   "known": 0.3,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Tbilisi",
+   "qid": "Q994",
+   "fame": 0.597,
+   "river": "Kura River",
+   "description": "capital and the largest city of Georgia (country)",
+   "hook": "is a hillside city of sulphur baths and balconied old houses at the crossroads of Europe and Asia",
+   "known": 0.3,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Baghdad",
+   "qid": "Q1530",
+   "fame": 0.594,
+   "river": "Tigris",
+   "description": "capital city of Iraq",
+   "hook": "was the centre of the Abbasid caliphate and its House of Wisdom, a medieval hub of learning",
+   "known": 0.6,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Kyiv",
+   "qid": "Q1899",
+   "fame": 0.594,
+   "river": "Dnieper",
+   "description": "capital and largest city of Ukraine",
+   "hook": "is a city of golden-domed monasteries and a vast central square known for its protests",
+   "known": 0.6,
+   "kind": "european capital"
+  },
+  {
+   "label": "Dhaka",
+   "qid": "Q1354",
+   "fame": 0.591,
+   "river": "Buriganga River",
+   "description": "capital and largest city of Bangladesh",
+   "hook": "is one of the world's most densely crowded cities, famed for its cycle rickshaws",
+   "known": 0.3,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Helsinki",
+   "qid": "Q1757",
+   "fame": 0.591,
+   "river": "Vantaa River",
+   "description": "capital and most populous city of Finland",
+   "hook": "is a seaside city of saunas, design shops and a white cathedral on a hill",
+   "known": 0.6,
+   "kind": "european capital"
+  },
+  {
+   "label": "Tashkent",
+   "qid": "Q269",
+   "fame": 0.59,
+   "river": "Chirchiq",
+   "description": "capital of Uzbekistan",
+   "hook": "is a Central Asian city on the old Silk Road, rebuilt after a destructive earthquake",
+   "known": 0.2,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Yerevan",
+   "qid": "Q1953",
+   "fame": 0.589,
+   "river": "Hrazdan River",
+   "description": "capital and largest city of Armenia",
+   "hook": "is the rose-coloured city beneath the view of Mount Ararat",
+   "known": 0.2,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Bucharest",
+   "qid": "Q19660",
+   "fame": 0.588,
+   "river": "Dâmbovița River",
+   "description": "capital and largest city of Romania",
+   "hook": "was nicknamed Little Paris and holds one of the heaviest buildings on Earth, a huge Parliament palace",
+   "known": 0.5,
+   "kind": "european capital"
+  },
+  {
+   "label": "Astana",
+   "qid": "Q1520",
+   "fame": 0.583,
+   "river": "Ishim",
+   "description": "capital of Kazakhstan",
+   "hook": "is a futuristic planned city on the steppe that replaced an older capital in the 1990s",
+   "known": 0.2,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Hanoi",
+   "qid": "Q1858",
+   "fame": 0.58,
+   "river": "Red River",
+   "description": "capital of Vietnam",
+   "hook": "is a city of motorbikes, a lake with a turtle legend, and an old quarter of 36 streets",
+   "known": 0.7,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Pyongyang",
+   "qid": "Q18808",
+   "fame": 0.576,
+   "river": "Taedong River",
+   "description": "capital city of North Korea",
+   "hook": "is a secretive city of monuments, wide boulevards and a pyramid-shaped hotel",
+   "known": 0.4,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Kabul",
+   "qid": "Q5838",
+   "fame": 0.569,
+   "river": "Kabul River",
+   "description": "capital and the largest city of Afghanistan",
+   "hook": "is a mountain-ringed city with a long history of invading empires and recent wars",
+   "known": 0.5,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Santiago",
+   "qid": "Q2887",
+   "fame": 0.566,
+   "river": "Mapocho River",
+   "description": "capital city of Chile",
+   "hook": "is a city backed by the snowy Andes, close to wine valleys and the Pacific coast",
+   "known": 0.6,
+   "kind": "south american capital"
+  },
+  {
+   "label": "Zagreb",
+   "qid": "Q1435",
+   "fame": 0.563,
+   "river": "Sava",
+   "description": "capital city of Croatia",
+   "hook": "is a city of Austro-Hungarian architecture, famous for its Christmas Advent festival and cravat origins",
+   "known": 0.4,
+   "kind": "european capital"
+  },
+  {
+   "label": "Skopje",
+   "qid": "Q384",
+   "fame": 0.55,
+   "river": "Vardar",
+   "description": "capital city of North Macedonia",
+   "hook": "is the birthplace of Mother Teresa, filled with statues of heroes of antiquity",
+   "known": 0.2,
+   "kind": "european capital"
+  },
+  {
+   "label": "Nicosia",
+   "qid": "Q3856",
+   "fame": 0.543,
+   "river": "Pedieos",
+   "description": "capital of Cyprus",
+   "hook": "is the last capital in Europe split in two by a dividing buffer zone",
+   "known": 0.3,
+   "kind": "european capital"
+  },
+  {
+   "label": "Bern",
+   "qid": "Q70",
+   "fame": 0.536,
+   "river": "Aare",
+   "description": "city in Switzerland, capital of the canton of Bern and de facto capital of Switzerland",
+   "hook": "is a medieval old town with a clock tower and a pit of live bears, protected by UNESCO",
+   "known": 0.7,
+   "kind": "european capital"
+  },
+  {
+   "label": "Colombo",
+   "qid": "Q35381",
+   "fame": 0.535,
+   "river": "Kelani River",
+   "description": "largest city and de facto capital of Sri Lanka",
+   "hook": "is a bustling port city on the Indian Ocean island once called Ceylon",
+   "known": 0.3,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Chișinău",
+   "qid": "Q21197",
+   "fame": 0.534,
+   "river": "Bâc",
+   "description": "capital of Moldova",
+   "hook": "is a green city surrounded by vineyards, with some of the biggest wine cellars in the world nearby",
+   "known": 0.2,
+   "kind": "european capital"
+  },
+  {
+   "label": "Havana",
+   "qid": "Q1563",
+   "fame": 0.534,
+   "river": "Almendares River",
+   "description": "capital and largest city of Cuba",
+   "hook": "is a city of vintage American cars, crumbling colonial buildings and a seafront Malecón",
+   "known": 0.8,
+   "kind": "north american capital"
+  },
+  {
+   "label": "Brussels",
+   "qid": "Q239",
+   "fame": 0.521,
+   "river": "Senne",
+   "description": "municipality in the Brussels-Capital Region and capital of Belgium",
+   "hook": "is a city of waffles, chocolate and a small peeing-boy statue, and the main home of the European Union",
+   "known": 0.8,
+   "kind": "european capital"
+  },
+  {
+   "label": "Caracas",
+   "qid": "Q1533",
+   "fame": 0.511,
+   "river": "Guaire River",
+   "description": "capital and largest city of Venezuela",
+   "hook": "is a South American city in a valley under the Ávila mountain, home to a huge oil-rich nation",
+   "known": 0.4,
+   "kind": "south american capital"
+  },
+  {
+   "label": "Luxembourg",
+   "qid": "Q1842",
+   "fame": 0.508,
+   "river": "Alzette",
+   "description": "capital and largest city of Luxembourg",
+   "hook": "is a tiny grand-ducal city of deep gorges and fortress ruins, and a major banking centre",
+   "known": 0.8,
+   "kind": "european capital"
+  },
+  {
+   "label": "Antananarivo",
+   "qid": "Q3915",
+   "fame": 0.507,
+   "river": "Ikopa River",
+   "description": "capital and largest city of Madagascar",
+   "hook": "is a hilltop city on an island famed for lemurs and vanilla",
+   "known": 0.2,
+   "kind": "african capital"
+  },
+  {
+   "label": "Monrovia",
+   "qid": "Q3748",
+   "fame": 0.504,
+   "river": "Mesurado River",
+   "description": "capital city of Liberia",
+   "hook": "is a West African port named after a US president, founded for freed American slaves",
+   "known": 0.2,
+   "kind": "african capital"
+  },
+  {
+   "label": "Vientiane",
+   "qid": "Q9326",
+   "fame": 0.501,
+   "river": "Mekong River",
+   "description": "capital of Laos",
+   "hook": "is a laid-back city of French colonial buildings and golden Buddhist temples in Southeast Asia",
+   "known": 0.2,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Georgetown",
+   "qid": "Q10717",
+   "fame": 0.497,
+   "river": "Demerara River",
+   "description": "capital city of Guyana",
+   "hook": "is a wooden-house city on the Atlantic coast of South America, built below sea level",
+   "known": 0.3,
+   "kind": "south american capital"
+  },
+  {
+   "label": "Tegucigalpa",
+   "qid": "Q3238",
+   "fame": 0.491,
+   "river": "Choluteca River",
+   "description": "capital and largest city of Honduras",
+   "hook": "is a Central American highland city with a name from an indigenous word meaning silver hill",
+   "known": 0.2,
+   "kind": "central american capital"
+  },
+  {
+   "label": "Asunción",
+   "qid": "Q2933",
+   "fame": 0.49,
+   "river": "Paraguay River",
+   "description": "capital of Paraguay",
+   "hook": "is an inland South American city near a border with a much larger neighbour, known as the Mother of Cities",
+   "known": 0.3,
+   "kind": "south american capital"
+  },
+  {
+   "label": "Brazzaville",
+   "qid": "Q3844",
+   "fame": 0.489,
+   "river": "River Congo",
+   "description": "capital of the Republic of the Congo",
+   "hook": "is a central African city that faces another national capital across a wide water boundary",
+   "known": 0.1,
+   "kind": "african capital"
+  },
+  {
+   "label": "Thimphu",
+   "qid": "Q9270",
+   "fame": 0.476,
+   "river": "Raidāk River",
+   "description": "capital of Bhutan",
+   "hook": "is a Himalayan city with no traffic lights, in a land that measures Gross National Happiness",
+   "known": 0.2,
+   "kind": "asian capital"
+  },
+  {
+   "label": "Vaduz",
+   "qid": "Q1844",
+   "fame": 0.473,
+   "river": "Rhine",
+   "description": "capital of Liechtenstein",
+   "hook": "is a tiny Alpine town with a castle on a hill, in one of Europe's smallest states",
+   "known": 0.4,
+   "kind": "european capital"
+  },
+  {
+   "label": "Niamey",
+   "qid": "Q3674",
+   "fame": 0.471,
+   "river": "Niger River",
+   "description": "capital of Niger",
+   "hook": "is a West African city on the edge of the Sahel, in a desert-covered country",
+   "known": 0.1,
+   "kind": "african capital"
+  },
+  {
+   "label": "Freetown",
+   "qid": "Q3780",
+   "fame": 0.467,
+   "river": "Sierra Leone River",
+   "description": "capital of Sierra Leone",
+   "hook": "is a West African port whose name recalls the settlement of freed slaves",
+   "known": 0.2,
+   "kind": "african capital"
+  },
+  {
+   "label": "Bamako",
+   "qid": "Q3703",
+   "fame": 0.464,
+   "river": "Niger River",
+   "description": "capital of Mali",
+   "hook": null,
+   "known": 0.1,
+   "kind": "african capital"
+  },
+  {
+   "label": "Paramaribo",
+   "qid": "Q3001",
+   "fame": 0.464,
+   "river": "Suriname River",
+   "description": "capital city of Suriname",
+   "hook": "is a wooden-building city on the northeast coast of South America with a Dutch-colonial UNESCO-listed core",
+   "known": 0.2,
+   "kind": "south american capital"
+  },
+  {
+   "label": "Juba",
+   "qid": "Q1947",
+   "fame": 0.463,
+   "river": "Nile",
+   "description": "capital of the Republic of South Sudan",
+   "hook": "is the capital of the world's youngest country, which became independent after a long civil war",
+   "known": 0.1,
+   "kind": "african capital"
+  },
+  {
+   "label": "Bangui",
+   "qid": "Q3832",
+   "fame": 0.462,
+   "river": "Ubangi River",
+   "description": "capital city of the Central African Republic",
+   "hook": "is a central African city on the border with its southern neighbour, shaken by repeated conflict",
+   "known": 0.1,
+   "kind": "african capital"
+  },
+  {
+   "label": "Bandar Seri Begawan",
+   "qid": "Q9279",
+   "fame": 0.458,
+   "river": "Brunei River",
+   "description": "capital and largest city of Brunei",
+   "hook": "is a wealthy oil-rich sultanate's city of a huge gold-domed mosque and a village of stilt houses",
+   "known": 0.2,
+   "kind": "asian capital"
+  },
+  {
+   "label": "N'Djamena",
+   "qid": "Q3659",
+   "fame": 0.457,
+   "river": "Chari River",
+   "description": "capital and largest city of Chad",
+   "hook": "is a city on the edge of the Sahara, close to the shores of a shrinking Lake in the Sahel",
+   "known": 0.1,
+   "kind": "african capital"
+  },
+  {
+   "label": "Andorra la Vella",
+   "qid": "Q1863",
+   "fame": 0.45,
+   "river": "Gran Valira",
+   "description": "capital of Andorra",
+   "hook": "is a mountain city with duty-free shopping, in a tiny state between France and Spain",
+   "known": 0.3,
+   "kind": "european capital"
+  }
+ ]
+}

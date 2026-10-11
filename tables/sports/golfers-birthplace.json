@@ -1,0 +1,280 @@
+{
+ "id": "table.sports.golfers-birthplace",
+ "kind": "table",
+ "title": "Famous golfers and the city they were born in",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "golf",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?birthLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?b) AS ?birth) (COUNT(DISTINCT ?b) AS ?nb) WHERE { ?item wdt:P106 wd:Q11303721 ; wdt:P19 ?b ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 5) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 800 } hint:Prior hint:runFirst true . FILTER(?nb = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T02:28:28.741Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T02:28:28.741Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "birthplace",
+   "label": "Born in",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "golfer",
+  "many": "golfers",
+  "wildcard": "person",
+  "hookAsk": "Which golfer {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "birthplace": {
+    "role": "code",
+    "pick": "Which city was golfer {label} born in?",
+    "statement": "{label} was born in {value}.",
+    "match": "Match each golfer to the city where they were born.",
+    "reverse": "Which golfer was born in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Scottie Scheffler",
+   "qid": "Q30161386",
+   "fame": 0.691,
+   "birthplace": "Ridgewood",
+   "description": "American professional golfer (born 1996)",
+   "hook": "dominated the sport as world number one and won multiple green jackets at Augusta",
+   "known": 0.4,
+   "kind": "tour pro"
+  },
+  {
+   "label": "Rory McIlroy",
+   "qid": "Q380613",
+   "fame": 0.635,
+   "birthplace": "Holywood",
+   "description": "Northern Irish professional golfer (born 1989)",
+   "hook": "won four major titles and is famed for a smooth swing and long drives",
+   "known": 0.6,
+   "kind": "tour pro"
+  },
+  {
+   "label": "Adam Scott",
+   "qid": "Q350869",
+   "fame": 0.578,
+   "birthplace": "Adelaide",
+   "description": "Australian golfer",
+   "hook": "won the green jacket at Augusta with a long-handled putter in a playoff",
+   "known": 0.4,
+   "kind": "major champion"
+  },
+  {
+   "label": "Nelly Korda",
+   "qid": "Q34703749",
+   "fame": 0.55,
+   "birthplace": "Bradenton",
+   "description": "American golfer",
+   "hook": "became one of the top women's golfers and won an Olympic gold medal",
+   "known": 0.2,
+   "kind": "tour pro"
+  },
+  {
+   "label": "Bryson DeChambeau",
+   "qid": "Q21005578",
+   "fame": 0.546,
+   "birthplace": "Modesto",
+   "description": "American professional golfer",
+   "hook": "is a physics-minded bomber known for oversized-length drives and one-length irons",
+   "known": 0.4,
+   "kind": "tour pro"
+  },
+  {
+   "label": "Arnold Palmer",
+   "qid": "Q9434",
+   "fame": 0.543,
+   "birthplace": "Latrobe",
+   "description": "American golfer (1929–2016)",
+   "hook": "is the king of golf whose fans formed an army, and who has an iced tea and lemonade drink named for him",
+   "known": 0.95,
+   "kind": "golfing legend"
+  },
+  {
+   "label": "Jack Nicklaus",
+   "qid": "Q9424",
+   "fame": 0.541,
+   "birthplace": "Columbus",
+   "description": "American golfer (born 1940)",
+   "hook": "is the Golden Bear who won a record eighteen major championships",
+   "known": 0.95,
+   "kind": "golfing legend"
+  },
+  {
+   "label": "Phil Mickelson",
+   "qid": "Q325374",
+   "fame": 0.511,
+   "birthplace": "San Diego",
+   "description": "American professional golfer",
+   "hook": "is a lefty famous for flop shots who became the oldest ever major winner at the PGA Championship",
+   "known": 0.8,
+   "kind": "major champion"
+  },
+  {
+   "label": "Gary Player",
+   "qid": "Q469721",
+   "fame": 0.51,
+   "birthplace": "Johannesburg",
+   "description": "South African golfer",
+   "hook": "is the Black Knight, one of golf's three greats, who won all four majors and dressed in black",
+   "known": 0.8,
+   "kind": "golfing legend"
+  },
+  {
+   "label": "Greg Norman",
+   "qid": "Q381941",
+   "fame": 0.497,
+   "birthplace": "Mount Isa",
+   "description": "Australian professional golfer (born 1955)",
+   "hook": "is the Great White Shark, a long-time world number one famous for Sunday collapses at Augusta",
+   "known": 0.6,
+   "kind": "major champion"
+  },
+  {
+   "label": "Geoff Ogilvy",
+   "qid": "Q780742",
+   "fame": 0.491,
+   "birthplace": "Adelaide",
+   "description": "Australian professional golfer",
+   "hook": "won the US Open at Winged Foot in a tough-conditions finish",
+   "known": 0.2,
+   "kind": "major champion"
+  },
+  {
+   "label": "Collin Morikawa",
+   "qid": "Q25316367",
+   "fame": 0.468,
+   "birthplace": "Los Angeles",
+   "description": "American professional golfer",
+   "hook": "won the Open Championship and the PGA Championship before turning thirty on his first tries at each",
+   "known": 0.4,
+   "kind": "tour pro"
+  },
+  {
+   "label": "Brooks Koepka",
+   "qid": "Q749702",
+   "fame": 0.467,
+   "birthplace": "West Palm Beach",
+   "description": "American professional golfer (born 1990)",
+   "hook": "won back-to-back US Opens and several PGA Championships, then joined the LIV breakaway tour",
+   "known": 0.4,
+   "kind": "tour pro"
+  },
+  {
+   "label": "Tommy Fleetwood",
+   "qid": "Q1865564",
+   "fame": 0.465,
+   "birthplace": "Southport",
+   "description": "English professional golfer",
+   "hook": "is a fan favourite known for runner-up finishes in majors and a long ponytail-era Ryder Cup heroics",
+   "known": 0.2,
+   "kind": "major champion"
+  },
+  {
+   "label": "Justin Rose",
+   "qid": "Q722750",
+   "fame": 0.462,
+   "birthplace": "Johannesburg",
+   "description": "South African-born English professional golfer",
+   "hook": "won Olympic gold when golf returned to the Games and a US Open at Merion",
+   "known": 0.6,
+   "kind": "major champion"
+  },
+  {
+   "label": "Jordan Spieth",
+   "qid": "Q2287947",
+   "fame": 0.461,
+   "birthplace": "Dallas",
+   "description": "American professional golfer",
+   "hook": "won the Masters and US Open in one season as a young star, then added an Open Championship",
+   "known": 0.6,
+   "kind": "tour pro"
+  },
+  {
+   "label": "Bobby Jones",
+   "qid": "Q437526",
+   "fame": 0.459,
+   "birthplace": "Atlanta",
+   "description": "American amateur golfer and lawyer (1902–1971)",
+   "hook": "won the original grand slam of golf's four majors, then retired and co-founded the Masters",
+   "known": 0.8,
+   "kind": "golfing legend"
+  },
+  {
+   "label": "Francis Ouimet",
+   "qid": "Q1383295",
+   "fame": 0.458,
+   "birthplace": "Brookline",
+   "description": "American amateur golfer (1893–1967)",
+   "hook": "was a young amateur and former caddie who stunned the golf world by beating British stars at the US Open",
+   "known": 0.05,
+   "kind": "golfing legend"
+  },
+  {
+   "label": "Ian Poulter",
+   "qid": "Q615937",
+   "fame": 0.456,
+   "birthplace": "Hitchin",
+   "description": "English professional golfer",
+   "hook": "is a flamboyant dresser famed for fiery Ryder Cup performances",
+   "known": 0.2,
+   "kind": "major champion"
+  },
+  {
+   "label": "Lee Trevino",
+   "qid": "Q950128",
+   "fame": 0.454,
+   "birthplace": "Dallas",
+   "description": "American golfer",
+   "hook": "is the Merry Mex, a wisecracking six-time major winner who was once struck by lightning",
+   "known": 0.6,
+   "kind": "golfing legend"
+  },
+  {
+   "label": "Justin Thomas",
+   "qid": "Q15877245",
+   "fame": 0.45,
+   "birthplace": "Louisville",
+   "description": "American golfer",
+   "hook": "won two PGA Championships and a FedEx Cup title, and is a close friend of Jordan Spieth",
+   "known": 0.4,
+   "kind": "tour pro"
+  },
+  {
+   "label": "Patrick Reed",
+   "qid": "Q15905139",
+   "fame": 0.45,
+   "birthplace": "San Antonio",
+   "description": "American professional golfer",
+   "hook": "won the Masters green jacket and earned a Captain America nickname for Ryder Cup play",
+   "known": 0.4,
+   "kind": "tour pro"
+  }
+ ]
+}

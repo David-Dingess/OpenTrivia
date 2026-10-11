@@ -1,0 +1,382 @@
+{
+ "id": "table.holidays.holiday-films",
+ "kind": "table",
+ "title": "Holiday films",
+ "genre": "daily-life",
+ "category": "holidays",
+ "topic": "christmas",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?released ?dirLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?d) AS ?dir) (COUNT(DISTINCT ?d) AS ?nD) (GROUP_CONCAT(CONCAT(COALESCE(STR(?pubT), \"\"), \"|\", COALESCE(STR(?pubP), \"\")); separator=\";\") AS ?released) WHERE { ?item wdt:P136 wd:Q28026639 ; wdt:P31 wd:Q11424 ; wdt:P57 ?d ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks >= 20) OPTIONAL { ?item p:P577 ?pubSt . ?pubSt a wikibase:BestRank ; psv:P577 [ wikibase:timeValue ?pubT ; wikibase:timePrecision ?pubP ] . } } GROUP BY ?item ?sitelinks } hint:Prior hint:runFirst true . FILTER(?nD = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T15:29:41.674Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T15:29:41.674Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "released",
+   "label": "Released",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "director",
+   "label": "Director",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "film",
+  "many": "holiday films",
+  "hookAsk": "Which holiday film {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "released": {
+    "role": "date",
+    "sort": "from the earliest release to the most recent",
+    "era": "Drop each holiday film into the decade it came out.",
+    "eraSize": "decade",
+    "shot": "In what year did the holiday film {label} come out?"
+   },
+   "director": {
+    "role": "link",
+    "pick": "Who directed the holiday film {label}?",
+    "statement": "{label} was directed by {value}.",
+    "match": "Match each holiday film to its director.",
+    "odd": "Three of these holiday films were directed by {value}. Which one wasn't?",
+    "all": "Tap all {n} holiday films directed by {value}.",
+    "reverse": "Which of these did {value} direct?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Home Alone",
+   "qid": "Q105031",
+   "fame": 0.627,
+   "released": 1990,
+   "director": "Chris Columbus",
+   "description": "1990 film directed by Chris Columbus",
+   "hook": "follows a young boy who defends his house with booby traps against two bumbling burglars",
+   "known": 0.95,
+   "kind": "family comedy"
+  },
+  {
+   "label": "Gremlins",
+   "qid": "Q241958",
+   "fame": 0.623,
+   "released": 1984,
+   "director": "Joe Dante",
+   "description": "1984 film directed by Joe Dante",
+   "hook": "pits a teenager and his furry pet against mischievous creatures that multiply when wet",
+   "known": 0.8,
+   "kind": "family comedy"
+  },
+  {
+   "label": "Love Actually",
+   "qid": "Q190588",
+   "fame": 0.611,
+   "released": 2003,
+   "director": "Richard Curtis",
+   "description": "2003 film directed by Richard Curtis",
+   "hook": "weaves together many British romances in the weeks leading up to the holidays",
+   "known": 0.8,
+   "kind": "romantic"
+  },
+  {
+   "label": "Die Hard",
+   "qid": "Q105598",
+   "fame": 0.602,
+   "released": 1988,
+   "director": "John McTiernan",
+   "description": "1988 film directed by John McTiernan",
+   "hook": "sees a New York cop battle terrorists inside a Los Angeles skyscraper on Christmas Eve",
+   "known": 0.95,
+   "kind": "action"
+  },
+  {
+   "label": "Batman Returns",
+   "qid": "Q189054",
+   "fame": 0.601,
+   "released": 1992,
+   "director": "Tim Burton",
+   "description": "1992 film directed by Tim Burton",
+   "hook": "pits the Dark Knight against the Penguin and Catwoman in a snowy Gotham",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+   "qid": "Q485803",
+   "fame": 0.597,
+   "released": 2005,
+   "director": "Andrew Adamson",
+   "description": "2005 film directed by Andrew Adamson",
+   "hook": "follows four siblings who enter a frozen fantasy realm through a closet and aid a talking big cat",
+   "known": 0.6,
+   "kind": "fantasy"
+  },
+  {
+   "label": "The Christmas Chronicles 2",
+   "qid": "Q99395721",
+   "fame": 0.592,
+   "released": 2020,
+   "director": "Chris Columbus",
+   "description": "2020 musical film directed by Chris Columbus",
+   "hook": "sends a teen and Kurt Russell's Santa to the North Pole to stop a plot against the holiday",
+   "known": 0.4,
+   "kind": "fantasy"
+  },
+  {
+   "label": "It's a Wonderful Life",
+   "qid": "Q204191",
+   "fame": 0.579,
+   "released": 1946,
+   "director": "Frank Capra",
+   "description": "1946 film directed by Frank Capra",
+   "hook": "shows a guardian angel convincing a despairing small-town banker that the world is better with him in it",
+   "known": 0.95,
+   "kind": "fantasy"
+  },
+  {
+   "label": "The Family Stone",
+   "qid": "Q1064838",
+   "fame": 0.577,
+   "released": 2005,
+   "director": "Thomas Bezucha",
+   "description": "2005 film directed by Thomas Bezucha",
+   "hook": "follows an uptight woman meeting her boyfriend's boisterous relatives at the holidays",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "Trading Places",
+   "qid": "Q504151",
+   "fame": 0.566,
+   "released": 1983,
+   "director": "John Landis",
+   "description": "1983 film directed by John Landis",
+   "hook": "swaps the lives of a wealthy commodities broker and a street hustler through a bet by two rich brothers",
+   "known": 0.6,
+   "kind": "family comedy"
+  },
+  {
+   "label": "Dr. Seuss' How the Grinch Stole Christmas",
+   "qid": "Q131864",
+   "fame": 0.555,
+   "released": 2000,
+   "director": "Ron Howard",
+   "description": "2000 film directed by Ron Howard",
+   "hook": "follows a green hermit who tries to ruin a whole town's holiday celebrations",
+   "known": 0.95,
+   "kind": "fantasy"
+  },
+  {
+   "label": "Lethal Weapon",
+   "qid": "Q462447",
+   "fame": 0.554,
+   "released": 1987,
+   "director": "Richard Donner",
+   "description": "1987 film directed by Richard Donner",
+   "hook": "pairs a reckless LAPD detective with a veteran partner about to retire",
+   "known": 0.8,
+   "kind": "action"
+  },
+  {
+   "label": "While You Were Sleeping",
+   "qid": "Q492093",
+   "fame": 0.547,
+   "released": 1995,
+   "director": "Jon Turteltaub",
+   "description": "1995 film directed by Jon Turteltaub",
+   "hook": "has a lonely transit worker mistaken for the fiancee of a comatose stranger, then fall for his brother",
+   "known": 0.6,
+   "kind": "romantic"
+  },
+  {
+   "label": "Red One",
+   "qid": "Q114876737",
+   "fame": 0.538,
+   "released": 2024,
+   "director": "Jake Kasdan",
+   "description": "2024 film directed by Jake Kasdan",
+   "hook": null,
+   "known": 0.2,
+   "kind": "action"
+  },
+  {
+   "label": "The Holiday",
+   "qid": "Q478748",
+   "fame": 0.533,
+   "released": 2006,
+   "director": "Nancy Meyers",
+   "description": "2006 film directed by Nancy Meyers",
+   "hook": "has two women from different countries swap houses for the season and find romance",
+   "known": 0.6,
+   "kind": "romantic"
+  },
+  {
+   "label": "Elf",
+   "qid": "Q949879",
+   "fame": 0.525,
+   "released": 2003,
+   "director": "Jon Favreau",
+   "description": "2003 film directed by Jon Favreau",
+   "hook": "follows a human raised at the North Pole who travels to New York to find his father",
+   "known": 0.8,
+   "kind": "family comedy"
+  },
+  {
+   "label": "The Family Man",
+   "qid": "Q428551",
+   "fame": 0.517,
+   "released": 2000,
+   "director": "Brett Ratner",
+   "description": "2000 film by Brett Ratner",
+   "hook": "shows a wealthy executive who wakes up in an alternate life as a suburban husband and father",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "National Lampoon's Christmas Vacation",
+   "qid": "Q1421476",
+   "fame": 0.516,
+   "released": 1989,
+   "director": "Jeremiah S. Chechik",
+   "description": "1989 film directed by Jeremiah S. Chechik",
+   "hook": "follows a dad whose over-the-top holiday plans, with dazzling lights and rowdy relatives, go hilariously wrong",
+   "known": 0.8,
+   "kind": "family comedy"
+  },
+  {
+   "label": "The Night Before",
+   "qid": "Q18155444",
+   "fame": 0.51,
+   "released": 2015,
+   "director": "Jonathan Levine",
+   "description": "2015 film directed by Jonathan Levine",
+   "hook": "follows three friends on a wild Christmas Eve tradition seeking a legendary party in New York",
+   "known": 0.4,
+   "kind": "family comedy"
+  },
+  {
+   "label": "Last Christmas",
+   "qid": "Q60370884",
+   "fame": 0.506,
+   "released": 2019,
+   "director": "Paul Feig",
+   "description": "2019 film directed by Paul Feig",
+   "hook": "follows a London holiday-shop worker who meets a mysterious young man, set to George Michael's songs",
+   "known": 0.4,
+   "kind": "romantic"
+  },
+  {
+   "label": "A Christmas Story",
+   "qid": "Q556933",
+   "fame": 0.495,
+   "released": 1983,
+   "director": "Bob Clark",
+   "description": "1983 film by Bob Clark",
+   "hook": "is famed for a leg-shaped lamp prize and a boy's tongue stuck to a frozen pole",
+   "known": 0.8,
+   "kind": "family comedy"
+  },
+  {
+   "label": "Jingle All the Way",
+   "qid": "Q1064530",
+   "fame": 0.475,
+   "released": 1996,
+   "director": "Brian Levant",
+   "description": "1996 film directed by Brian Levant",
+   "hook": "pits two dads against each other in a frantic hunt for a sold-out superhero toy",
+   "known": 0.8,
+   "kind": "family comedy"
+  },
+  {
+   "label": "Why Him?",
+   "qid": "Q23058779",
+   "fame": 0.468,
+   "released": 2016,
+   "director": "John Hamburg",
+   "description": "2016 film by John Hamburg",
+   "hook": "follows a dad who clashes with his daughter's crude tech-billionaire boyfriend during a holiday visit",
+   "known": 0.4,
+   "kind": "romantic"
+  },
+  {
+   "label": "The Guardians of the Galaxy Holiday Special",
+   "qid": "Q106729096",
+   "fame": 0.458,
+   "released": 2022,
+   "director": "James Gunn",
+   "description": "Marvel Studios television special",
+   "hook": null,
+   "known": 0.2,
+   "kind": "fantasy"
+  },
+  {
+   "label": "Just Friends",
+   "qid": "Q1292187",
+   "fame": 0.457,
+   "released": 2005,
+   "director": "Roger Kumble",
+   "description": "2005 film by Roger Kumble",
+   "hook": "follows a once-bullied teen turned slick music executive who returns to face his old crush",
+   "known": 0.4,
+   "kind": "romantic"
+  },
+  {
+   "label": "The Santa Clause",
+   "qid": "Q497850",
+   "fame": 0.453,
+   "released": 1994,
+   "director": "John Pasquin",
+   "description": "1994 film directed by John Pasquin",
+   "hook": "has a divorced dad put on a red suit found on his roof and become the new jolly gift-giver",
+   "known": 0.8,
+   "kind": "fantasy"
+  },
+  {
+   "label": "Daddy's Home 2",
+   "qid": "Q28975643",
+   "fame": 0.451,
+   "released": 2017,
+   "director": "Sean Anders",
+   "description": "2017 film directed by Sean Anders",
+   "hook": "adds two grandfathers to a feuding stepdad-and-dad duo during a holiday cabin trip",
+   "known": 0.4,
+   "kind": "drama"
+  },
+  {
+   "label": "Miracle on 34th Street",
+   "qid": "Q1467214",
+   "fame": 0.45,
+   "released": 1947,
+   "director": "George Seaton",
+   "description": "1947 film by George Seaton",
+   "hook": "follows a department-store Santa whose claim to be the real thing ends up in court",
+   "known": 0.8,
+   "kind": "fantasy"
+  }
+ ]
+}

@@ -1,0 +1,280 @@
+{
+ "id": "table.myth-and-legend.myth-heroes",
+ "kind": "table",
+ "title": "Heroes of myth and legend and their famous deed",
+ "genre": "society",
+ "category": "myth-and-legend",
+ "topic": "mythology",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?deed WHERE { VALUES (?item ?deed) { (wd:Q122248 \"completed twelve impossible labors\") (wd:Q130832 \"cut off the head of Medusa\") (wd:Q1320718 \"killed the bull-headed monster of the labyrinth\") (wd:Q47231 \"spent ten years sailing home after the Trojan War\") (wd:Q41746 \"was undone by an arrow to his one weak spot\") (wd:Q176758 \"sailed with the Argonauts to fetch the Golden Fleece\") (wd:Q189872 \"tamed a winged horse and slew the Chimera\") (wd:Q1281177 \"tore the arm off the monster Grendel\") (wd:Q159709 \"a king who set out to find immortality\") (wd:Q211955 \"held off a whole army alone in Ulster\") (wd:Q537554 \"slew the dragon Fafnir\") (wd:Q82732 \"fled burning Troy and became the ancestor of Rome\") (wd:Q174353 \"charmed the underworld with his lyre to try to rescue his wife\") (wd:Q159666 \"defended Troy until he was slain in single combat\") (wd:Q382610 \"gained wisdom from the Salmon of Knowledge\") (wd:Q11773777 \"stole the peaches of immortality and fought heaven itself\") (wd:Q2186 \"founded a city after killing his twin brother\") (wd:Q1065105 \"shot down nine of the ten suns\") (wd:Q122634 \"robbed the rich to feed the poor in Sherwood Forest\") (wd:Q130890 \"answered the Sphinx riddle and became king of Thebes\") (wd:Q27613 \"sowed dragon teeth that grew into warriors\") (wd:Q30908 \"shot an apple off his own son head\") (wd:Q877820 \"led a dog, a monkey and a pheasant against a demon island\") (wd:Q190323 \"won a footrace and hunted the Calydonian boar\") (wd:Q831462 \"found the Holy Grail\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T04:00:53.581Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T04:00:53.581Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "deed",
+   "label": "Famous deed",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "hero of myth and legend",
+  "many": "heroes of myth and legend",
+  "theLabels": [],
+  "hookAsk": "Which hero of myth and legend {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "deed": {
+    "role": "code",
+    "pick": "Which of these is the legend of {label}?",
+    "statement": "{label} {value}.",
+    "match": "Match each hero of myth and legend to the legend they are known for.",
+    "reverse": "Which hero of myth and legend fits this: {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Odysseus",
+   "qid": "Q47231",
+   "fame": 0.71,
+   "deed": "spent ten years sailing home after the Trojan War",
+   "description": "legendary Greek king of Ithaca",
+   "hook": "is the cunning Greek king and hero of Homer's Odyssey, nicknamed the Cunning",
+   "known": 0.95,
+   "kind": "greek hero"
+  },
+  {
+   "label": "Achilles",
+   "qid": "Q41746",
+   "fame": 0.693,
+   "deed": "was undone by an arrow to his one weak spot",
+   "description": "Greek mythological hero of the Trojan War",
+   "hook": "is the central hero of Homer's Iliad, son of a sea nymph and the greatest Greek warrior",
+   "known": 0.95,
+   "kind": "greek hero"
+  },
+  {
+   "label": "Robin Hood",
+   "qid": "Q122634",
+   "fame": 0.692,
+   "deed": "robbed the rich to feed the poor in Sherwood Forest",
+   "description": "heroic outlaw in English folklore, a highly skilled archer and swordsman",
+   "hook": "is a legendary archer outlaw who is said to have defied the Sheriff of Nottingham",
+   "known": 0.95,
+   "kind": "european legend"
+  },
+  {
+   "label": "Heracles",
+   "qid": "Q122248",
+   "fame": 0.621,
+   "deed": "completed twelve impossible labors",
+   "description": "divine hero in Greek mythology, son of Zeus and Alcmene",
+   "hook": "is the Greek hero of superhuman strength, famous for a dozen great labours",
+   "known": 0.95,
+   "kind": "greek hero"
+  },
+  {
+   "label": "Gilgamesh",
+   "qid": "Q159709",
+   "fame": 0.599,
+   "deed": "a king who set out to find immortality",
+   "description": "Sumerian ruler and protagonist of the Epic of Gilgamesh",
+   "hook": null,
+   "known": 0.2,
+   "kind": "mesopotamian"
+  },
+  {
+   "label": "Sun Wukong",
+   "qid": "Q11773777",
+   "fame": 0.594,
+   "deed": "stole the peaches of immortality and fought heaven itself",
+   "description": "mythical character from Journey to the West",
+   "hook": "is the Monkey King, born from a stone, who escorts a monk on a quest for Buddhist scriptures",
+   "known": 0.4,
+   "kind": "asian legend"
+  },
+  {
+   "label": "Orpheus",
+   "qid": "Q174353",
+   "fame": 0.587,
+   "deed": "charmed the underworld with his lyre to try to rescue his wife",
+   "description": "legendary musician, poet, and prophet in ancient Greek religion and myth",
+   "hook": "is a Thracian bard whose music could charm all living things and even stones",
+   "known": 0.8,
+   "kind": "greek hero"
+  },
+  {
+   "label": "Perseus",
+   "qid": "Q130832",
+   "fame": 0.587,
+   "deed": "cut off the head of Medusa",
+   "description": "legendary Greek hero and founder of Mycenae, demigod son of Zeus and Danae; famous for beheading the Gorgon Medusa",
+   "hook": "is the Greek demigod who beheaded a snake-haired Gorgon and rescued Andromeda from a sea monster",
+   "known": 0.8,
+   "kind": "greek hero"
+  },
+  {
+   "label": "Theseus",
+   "qid": "Q1320718",
+   "fame": 0.586,
+   "deed": "killed the bull-headed monster of the labyrinth",
+   "description": "legendary king of Athens, son of Aegeus and Aethra; famous for slaying the Minotaur",
+   "hook": "is the legendary king of Athens who united Attica after many adventures on the road",
+   "known": 0.8,
+   "kind": "greek hero"
+  },
+  {
+   "label": "Oedipus",
+   "qid": "Q130890",
+   "fame": 0.568,
+   "deed": "answered the Sphinx riddle and became king of Thebes",
+   "description": "mythical Greek king of Thebes",
+   "hook": "is the tragic king who unknowingly fulfilled a prophecy that he would kill his father and marry his mother",
+   "known": 0.8,
+   "kind": "greek hero"
+  },
+  {
+   "label": "Hector",
+   "qid": "Q159666",
+   "fame": 0.558,
+   "deed": "defended Troy until he was slain in single combat",
+   "description": "prince of Troy in Greek mythology",
+   "hook": "is the greatest Trojan warrior, killed by Achilles and dragged behind a chariot",
+   "known": 0.8,
+   "kind": "trojan"
+  },
+  {
+   "label": "Aeneas",
+   "qid": "Q82732",
+   "fame": 0.557,
+   "deed": "fled burning Troy and became the ancestor of Rome",
+   "description": "Trojan hero, son of Anchises and Aphrodite",
+   "hook": "is the Trojan hero at the center of Virgil's epic and the forefather of Romulus and Remus",
+   "known": 0.6,
+   "kind": "trojan"
+  },
+  {
+   "label": "William Tell",
+   "qid": "Q30908",
+   "fame": 0.548,
+   "deed": "shot an apple off his own son head",
+   "description": "folk hero of Switzerland",
+   "hook": "is a crossbow-wielding folk hero who defied a Habsburg reeve and is called father of a confederation",
+   "known": 0.8,
+   "kind": "european legend"
+  },
+  {
+   "label": "Cú Chulainn",
+   "qid": "Q211955",
+   "fame": 0.538,
+   "deed": "held off a whole army alone in Ulster",
+   "description": "Irish mythological hero",
+   "hook": "is an Irish warrior hero and demigod whose name means Hound of Culann",
+   "known": 0.4,
+   "kind": "celtic hero"
+  },
+  {
+   "label": "Jason",
+   "qid": "Q176758",
+   "fame": 0.538,
+   "deed": "sailed with the Argonauts to fetch the Golden Fleece",
+   "description": "Greek mythological hero, son of Aeson",
+   "hook": "is the Greek hero, rightful heir of Iolcos, who married the sorceress Medea",
+   "known": 0.8,
+   "kind": "greek hero"
+  },
+  {
+   "label": "Romulus",
+   "qid": "Q2186",
+   "fame": 0.521,
+   "deed": "founded a city after killing his twin brother",
+   "description": "legendary founder and first king of Rome",
+   "hook": "is the legendary first king of Rome, credited with its oldest laws and institutions",
+   "known": 0.8,
+   "kind": "roman"
+  },
+  {
+   "label": "Galahad",
+   "qid": "Q831462",
+   "fame": 0.494,
+   "deed": "found the Holy Grail",
+   "description": "knight of the round table",
+   "hook": "is the purest knight of King Arthur's Round Table, son of Lancelot",
+   "known": 0.8,
+   "kind": "european legend"
+  },
+  {
+   "label": "Sigurd",
+   "qid": "Q537554",
+   "fame": 0.486,
+   "deed": "slew the dragon Fafnir",
+   "description": "fictional character in Germanic and Norse heroic legend, dragon slayer",
+   "hook": "is the Norse form of the German hero Siegfried, nicknamed the horn-skinned",
+   "known": 0.6,
+   "kind": "european legend"
+  },
+  {
+   "label": "Atalanta",
+   "qid": "Q190323",
+   "fame": 0.478,
+   "deed": "won a footrace and hunted the Calydonian boar",
+   "description": "Greek mythological character, the only female Argonaut",
+   "hook": "is a huntress allied to Artemis, known for her speed and as the lone woman among a famous crew",
+   "known": 0.6,
+   "kind": "greek hero"
+  },
+  {
+   "label": "Fionn mac Cumhaill",
+   "qid": "Q382610",
+   "fame": 0.478,
+   "deed": "gained wisdom from the Salmon of Knowledge",
+   "description": "Irish mythical hero",
+   "hook": "is the Irish leader of the Fianna hunter-warriors, a seer and poet with a magic thumb",
+   "known": 0.4,
+   "kind": "celtic hero"
+  },
+  {
+   "label": "Bellerophon",
+   "qid": "Q189872",
+   "fame": 0.47,
+   "deed": "tamed a winged horse and slew the Chimera",
+   "description": "Hero in Greek myth who rode Pegasus and killed the Chimera",
+   "hook": "is a Corinthian son of Poseidon who angered the gods by trying to fly to Olympus",
+   "known": 0.6,
+   "kind": "greek hero"
+  },
+  {
+   "label": "Cadmus",
+   "qid": "Q27613",
+   "fame": 0.46,
+   "deed": "sowed dragon teeth that grew into warriors",
+   "description": "mythological founder of Thebes, son of Agenor",
+   "hook": "is the legendary Phoenician prince who founded a Greek city after searching for his abducted sister Europa",
+   "known": 0.6,
+   "kind": "greek hero"
+  }
+ ]
+}

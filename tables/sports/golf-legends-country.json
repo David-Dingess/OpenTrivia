@@ -1,0 +1,382 @@
+{
+ "id": "table.sports.golf-legends-country",
+ "kind": "table",
+ "title": "Famous golfers and the country they represent",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "golf",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nCountry) WHERE { ?item wdt:P106 wd:Q11303721 ; wdt:P27 ?c ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 5) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 800 } hint:Prior hint:runFirst true . FILTER(?nCountry = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T15:05:14.472Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T15:05:14.472Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "golfer",
+  "many": "golfers",
+  "wildcard": "person",
+  "hookAsk": "Which golfer {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country does golfer {label} represent?",
+    "statement": "{label} represents {value} in golf.",
+    "match": "Match each golfer to the country they represent.",
+    "odd": "Three of these golfers represent {value}. Which one doesn't?",
+    "all": "Tap all {n} golfers who represent {value}.",
+    "reverse": "Which of these golfers represents {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Scottie Scheffler",
+   "qid": "Q30161386",
+   "fame": 0.695,
+   "country": "United States",
+   "description": "American professional golfer (born 1996)",
+   "hook": "rose to world number one and won the Masters more than once in the 2020s",
+   "known": 0.8,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Rory McIlroy",
+   "qid": "Q380613",
+   "fame": 0.642,
+   "country": "United Kingdom",
+   "description": "Northern Irish professional golfer (born 1989)",
+   "hook": "won four major titles and is a fixture on Ryder Cup teams for Europe",
+   "known": 0.8,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Shane Lowry",
+   "qid": "Q2736966",
+   "fame": 0.63,
+   "country": "Ireland",
+   "description": "Irish professional golfer",
+   "hook": "won a British major at Royal Portrush with a home crowd roaring him on",
+   "known": 0.4,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Adam Scott",
+   "qid": "Q350869",
+   "fame": 0.601,
+   "country": "Australia",
+   "description": "Australian golfer",
+   "hook": "won the Masters in a playoff and is known for a famously elegant one-handed-finish swing",
+   "known": 0.6,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Charley Hull",
+   "qid": "Q5084314",
+   "fame": 0.58,
+   "country": "United Kingdom",
+   "description": "English professional golfer",
+   "hook": "became a teenage star on the women's tour and a regular in Solheim Cup play",
+   "known": 0.2,
+   "kind": "female golfer"
+  },
+  {
+   "label": "John Daly",
+   "qid": "Q389438",
+   "fame": 0.557,
+   "country": "United States",
+   "description": "American professional golfer",
+   "hook": "is a long-hitting, mullet-sporting champion who won two majors as a fan favorite",
+   "known": 0.6,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Nelly Korda",
+   "qid": "Q34703749",
+   "fame": 0.554,
+   "country": "United States",
+   "description": "American golfer",
+   "hook": "is a women's world number one who won a major and an Olympic gold medal",
+   "known": 0.4,
+   "kind": "female golfer"
+  },
+  {
+   "label": "Bryson DeChambeau",
+   "qid": "Q21005578",
+   "fame": 0.551,
+   "country": "United States",
+   "description": "American professional golfer",
+   "hook": "is a physics-minded power hitter who won a major and later joined a breakaway tour",
+   "known": 0.6,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Payne Stewart",
+   "qid": "Q506891",
+   "fame": 0.549,
+   "country": "United States",
+   "description": "American professional golfer (1957-1999)",
+   "hook": "was famous for wearing old-fashioned plus fours and a flat cap while winning major titles",
+   "known": 0.4,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Arnold Palmer",
+   "qid": "Q9434",
+   "fame": 0.545,
+   "country": "United States",
+   "description": "American golfer (1929–2016)",
+   "hook": "was a charismatic star with a devoted fan army and a lemonade-and-iced-tea drink named for him",
+   "known": 0.95,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Jack Nicklaus",
+   "qid": "Q9424",
+   "fame": 0.545,
+   "country": "United States",
+   "description": "American golfer (born 1940)",
+   "hook": "won a record eighteen major championships and is nicknamed the Golden Bear",
+   "known": 0.95,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Gary Player",
+   "qid": "Q469721",
+   "fame": 0.53,
+   "country": "South Africa",
+   "description": "South African golfer",
+   "hook": "was a pioneering international champion nicknamed the Black Knight who won the career Grand Slam",
+   "known": 0.8,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Paige Spiranac",
+   "qid": "Q39047153",
+   "fame": 0.526,
+   "country": "United States",
+   "description": "American model and golfer",
+   "hook": "is a social media star who built a huge online following from golf trick shots and fashion",
+   "known": 0.4,
+   "kind": "female golfer"
+  },
+  {
+   "label": "Paul Casey",
+   "qid": "Q683113",
+   "fame": 0.52,
+   "country": "United Kingdom",
+   "description": "English professional golfer",
+   "hook": "has been a mainstay of Europe's Ryder Cup teams and once climbed to third in the world rankings",
+   "known": 0.4,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Phil Mickelson",
+   "qid": "Q325374",
+   "fame": 0.517,
+   "country": "United States",
+   "description": "American professional golfer",
+   "hook": "is a left-hander who won a PGA Championship at age fifty, nicknamed Lefty",
+   "known": 0.95,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Greg Norman",
+   "qid": "Q381941",
+   "fame": 0.5,
+   "country": "Australia",
+   "description": "Australian professional golfer (born 1955)",
+   "hook": "is a blond Hall of Famer nicknamed the Great White Shark, twice winner of the Open Championship",
+   "known": 0.8,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Jon Rahm",
+   "qid": "Q24800169",
+   "fame": 0.494,
+   "country": "Spain",
+   "description": "Spanish professional golfer",
+   "hook": "won the Masters and a US Open and rose to world number one from a base in Basque country",
+   "known": 0.6,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Collin Morikawa",
+   "qid": "Q25316367",
+   "fame": 0.485,
+   "country": "United States",
+   "description": "American professional golfer",
+   "hook": "won two major titles before turning thirty, including an Open Championship at Royal St George's",
+   "known": 0.4,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Justin Rose",
+   "qid": "Q722750",
+   "fame": 0.479,
+   "country": "United Kingdom",
+   "description": "South African-born English professional golfer",
+   "hook": "won the first Olympic gold medal in golf in over a century",
+   "known": 0.6,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Bobby Jones",
+   "qid": "Q437526",
+   "fame": 0.478,
+   "country": "United States",
+   "description": "American amateur golfer and lawyer (1902–1971)",
+   "hook": "co-founded Augusta National and the Masters, and won all four major titles in a single season as an amateur",
+   "known": 0.4,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Tommy Fleetwood",
+   "qid": "Q1865564",
+   "fame": 0.478,
+   "country": "United Kingdom",
+   "description": "English professional golfer",
+   "hook": "is a long-haired Ryder Cup favorite from the Southport area, famous for his flowing locks and beard",
+   "known": 0.4,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Matthew Fitzpatrick",
+   "qid": "Q15087459",
+   "fame": 0.476,
+   "country": "United Kingdom",
+   "description": "professional golfer",
+   "hook": "won the U.S. Open at Brookline after earlier winning the U.S. Amateur on the same course",
+   "known": 0.4,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Brooks Koepka",
+   "qid": "Q749702",
+   "fame": 0.474,
+   "country": "United States",
+   "description": "American professional golfer (born 1990)",
+   "hook": "is a powerful major specialist who has won multiple PGA Championships and US Opens",
+   "known": 0.6,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Wyndham Clark",
+   "qid": "Q61948301",
+   "fame": 0.468,
+   "country": "United States",
+   "description": "American golfer (1993-)",
+   "hook": "won the U.S. Open at Los Angeles Country Club for his first major title",
+   "known": 0.4,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Jordan Spieth",
+   "qid": "Q2287947",
+   "fame": 0.466,
+   "country": "United States",
+   "description": "American professional golfer",
+   "hook": "won the Masters and the Open Championship as a young star and completed most of a career Grand Slam",
+   "known": 0.8,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Seve Ballesteros",
+   "qid": "Q272190",
+   "fame": 0.46,
+   "country": "Spain",
+   "description": "Spanish professional golfer (1957–2011)",
+   "hook": "was a swashbuckling short-game wizard who inspired European golf and Ryder Cup success",
+   "known": 0.8,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Francis Ouimet",
+   "qid": "Q1383295",
+   "fame": 0.459,
+   "country": "United States",
+   "description": "American amateur golfer (1893–1967)",
+   "hook": "stunned the sport as a local amateur who beat British stars to win the US Open, once caddied by a boy",
+   "known": 0.2,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Ian Poulter",
+   "qid": "Q615937",
+   "fame": 0.459,
+   "country": "United Kingdom",
+   "description": "English professional golfer",
+   "hook": "is known for flamboyant trousers and a fierce Ryder Cup record despite no major win",
+   "known": 0.4,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Dustin Johnson",
+   "qid": "Q1002293",
+   "fame": 0.458,
+   "country": "United States",
+   "description": "American professional golfer",
+   "hook": "is a powerful, laid-back player who won two majors and became world number one",
+   "known": 0.8,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Lee Trevino",
+   "qid": "Q950128",
+   "fame": 0.457,
+   "country": "United States",
+   "description": "American golfer",
+   "hook": "was a wisecracking champion nicknamed the Merry Mex who won six majors and survived a lightning strike",
+   "known": 0.6,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Patrick Reed",
+   "qid": "Q15905139",
+   "fame": 0.455,
+   "country": "United States",
+   "description": "American professional golfer",
+   "hook": "won the Masters and earned the nickname Captain America for his Ryder Cup play",
+   "known": 0.6,
+   "kind": "male golfer"
+  },
+  {
+   "label": "Ben Hogan",
+   "qid": "Q365626",
+   "fame": 0.45,
+   "country": "United States",
+   "description": "American golfer (1912–1997)",
+   "hook": "won majors after surviving a near-fatal car crash and wrote a famous book on swing fundamentals",
+   "known": 0.8,
+   "kind": "male golfer"
+  }
+ ]
+}

@@ -1,0 +1,354 @@
+{
+ "id": "table.general-knowledge.made-of-everyday",
+ "kind": "table",
+ "title": "What is it made of? Everyday things, foods and fabrics",
+ "genre": "general",
+ "category": "general-knowledge",
+ "topic": "made-of",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?materialLabel WHERE { VALUES (?article ?itemLabel ?materialLabel) { (<https://en.wikipedia.org/wiki/Rosetta_Stone> \"Rosetta Stone\" \"granodiorite\") (<https://en.wikipedia.org/wiki/Moai> \"Moai\" \"volcanic tuff\") (<https://en.wikipedia.org/wiki/Terracotta_Army> \"Terracotta Army\" \"clay\") (<https://en.wikipedia.org/wiki/Venus_of_Willendorf> \"Venus of Willendorf\" \"limestone\") (<https://en.wikipedia.org/wiki/Burj_Khalifa> \"Burj Khalifa\" \"concrete\") (<https://en.wikipedia.org/wiki/Penny_(United_States_coin)> \"US penny\" \"zinc\") (<https://en.wikipedia.org/wiki/Eraser> \"Eraser\" \"rubber\") (<https://en.wikipedia.org/wiki/Tennis_ball> \"Tennis ball\" \"rubber\") (<https://en.wikipedia.org/wiki/Hockey_puck> \"Hockey puck\" \"rubber\") (<https://en.wikipedia.org/wiki/Porcelain> \"Porcelain\" \"kaolin clay\") (<https://en.wikipedia.org/wiki/Cardboard> \"Cardboard\" \"paper pulp\") (<https://en.wikipedia.org/wiki/Tweed> \"Tweed\" \"wool\") (<https://en.wikipedia.org/wiki/Felt> \"Felt\" \"wool\") (<https://en.wikipedia.org/wiki/Rubber> \"Rubber\" \"latex\") (<https://en.wikipedia.org/wiki/Ketchup> \"Ketchup\" \"tomatoes\") (<https://en.wikipedia.org/wiki/Tabasco_sauce> \"Tabasco\" \"hot peppers\") (<https://en.wikipedia.org/wiki/Bacon> \"Bacon\" \"pork belly\") (<https://en.wikipedia.org/wiki/Salami> \"Salami\" \"pork\") (<https://en.wikipedia.org/wiki/Spam_(food)> \"Spam\" \"pork\") (<https://en.wikipedia.org/wiki/Haggis> \"Haggis\" \"sheep offal\") (<https://en.wikipedia.org/wiki/Caviar> \"Caviar\" \"sturgeon roe\") (<https://en.wikipedia.org/wiki/Tzatziki> \"Tzatziki\" \"yogurt\") (<https://en.wikipedia.org/wiki/Pesto> \"Pesto\" \"basil\") (<https://en.wikipedia.org/wiki/Marzipan> \"Marzipan\" \"almonds\") (<https://en.wikipedia.org/wiki/Meringue> \"Meringue\" \"egg whites\") (<https://en.wikipedia.org/wiki/Tempeh> \"Tempeh\" \"soybeans\") (<https://en.wikipedia.org/wiki/Miso> \"Miso\" \"soybeans\") (<https://en.wikipedia.org/wiki/Gin> \"Gin\" \"juniper berries\") (<https://en.wikipedia.org/wiki/Brandy> \"Brandy\" \"wine\") (<https://en.wikipedia.org/wiki/Cognac> \"Cognac\" \"grapes\") (<https://en.wikipedia.org/wiki/Mead> \"Mead\" \"honey\") (<https://en.wikipedia.org/wiki/Lemonade> \"Lemonade\" \"lemons\") (<https://en.wikipedia.org/wiki/Kombucha> \"Kombucha\" \"tea\") (<https://en.wikipedia.org/wiki/Skateboard> \"Skateboard\" \"maple wood\") (<https://en.wikipedia.org/wiki/Bowling_pin> \"Bowling pin\" \"maple wood\") (<https://en.wikipedia.org/wiki/Compact_disc> \"Compact disc\" \"polycarbonate\") (<https://en.wikipedia.org/wiki/Concrete> \"Concrete\" \"cement\") (<https://en.wikipedia.org/wiki/Jelly_bean> \"Jelly bean\" \"sugar\") (<https://en.wikipedia.org/wiki/Caramel> \"Caramel\" \"sugar\") (<https://en.wikipedia.org/wiki/Candy_cane> \"Candy cane\" \"sugar\") (<https://en.wikipedia.org/wiki/Jam> \"Jam\" \"fruit\") (<https://en.wikipedia.org/wiki/Prosciutto> \"Prosciutto\" \"pork leg\") (<https://en.wikipedia.org/wiki/Parmigiano-Reggiano> \"Parmesan\" \"cow milk\") (<https://en.wikipedia.org/wiki/Cola> \"Cola\" \"kola nut\") (<https://en.wikipedia.org/wiki/Tea> \"Tea\" \"tea leaves\") (<https://en.wikipedia.org/wiki/Kevlar> \"Kevlar\" \"aramid\") (<https://en.wikipedia.org/wiki/Lycra> \"Spandex\" \"polyurethane\") (<https://en.wikipedia.org/wiki/Polar_fleece> \"Fleece\" \"polyester\") (<https://en.wikipedia.org/wiki/Parchment> \"Parchment\" \"animal skin\") (<https://en.wikipedia.org/wiki/Vellum> \"Vellum\" \"calfskin\") } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T09:11:23.171Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T09:11:23.171Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "material",
+   "label": "Made of",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "thing",
+  "many": "things",
+  "minFame": 0.45,
+  "theLabels": [
+   "Terracotta Army",
+   "Rosetta Stone"
+  ],
+  "columns": {
+   "material": {
+    "role": "link",
+    "pick": "What is {label} mainly made from?",
+    "statement": "{label} is mainly made from {value}.",
+    "match": "Match each thing to what it is mainly made from.",
+    "odd": "Three of these are mainly made from {value}. Which one isn't?",
+    "all": "Tap all {n} things that are mainly made from {value}.",
+    "reverse": "Which of these is mainly made from {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Burj Khalifa",
+   "qid": "Q12495",
+   "fame": 0.69,
+   "material": "concrete",
+   "description": "skyscraper in Dubai, United Arab Emirates",
+   "hook": "is the tallest building in the world, towering over its desert city",
+   "known": 0.6,
+   "kind": "monument"
+  },
+  {
+   "label": "Terracotta Army",
+   "qid": "Q47672",
+   "fame": 0.623,
+   "material": "clay",
+   "description": "collection of ancient Chinese military statues",
+   "hook": "is a vast buried force of life-sized soldiers guarding a first emperor's tomb",
+   "known": 0.4,
+   "kind": "monument"
+  },
+  {
+   "label": "Rosetta Stone",
+   "qid": "Q48584",
+   "fame": 0.613,
+   "material": "granodiorite",
+   "description": "ancient Egyptian stele with inscriptions in three writing systems",
+   "hook": "let scholars crack Egyptian hieroglyphs by comparing its three scripts",
+   "known": 0.4,
+   "kind": "monument"
+  },
+  {
+   "label": "Kombucha",
+   "qid": "Q657032",
+   "fame": 0.599,
+   "material": "tea",
+   "description": "tea fermented using a symbiosis of bacteria and yeast",
+   "hook": "is a fizzy, slightly sour fermented drink made with a floating culture called a SCOBY",
+   "known": 0.4,
+   "kind": "spirit"
+  },
+  {
+   "label": "Spam",
+   "qid": "Q606132",
+   "fame": 0.576,
+   "material": "pork",
+   "description": "brand of canned precooked meat product",
+   "hook": "is a canned meat from Hormel, famous in Hawaii and in a Monty Python sketch",
+   "known": 0.6,
+   "kind": "meat product"
+  },
+  {
+   "label": "Moai",
+   "qid": "Q20350",
+   "fame": 0.571,
+   "material": "volcanic tuff",
+   "description": "monolithic humanoid figures",
+   "hook": "are giant carved stone heads standing on Easter Island",
+   "known": 0.6,
+   "kind": "monument"
+  },
+  {
+   "label": "Haggis",
+   "qid": "Q209500",
+   "fame": 0.57,
+   "material": "sheep offal",
+   "description": "savoury pudding containing lamb and oats of Scottish origin",
+   "hook": "is a Scottish dish traditionally boiled in a stomach casing and served on Burns Night",
+   "known": 0.4,
+   "kind": "meat product"
+  },
+  {
+   "label": "Brandy",
+   "qid": "Q146470",
+   "fame": 0.564,
+   "material": "wine",
+   "description": "spirit produced by distilling wine",
+   "hook": "is an after-dinner spirit served in a snifter, often aged in oak",
+   "known": 0.8,
+   "kind": "spirit"
+  },
+  {
+   "label": "Compact disc",
+   "qid": "Q34467",
+   "fame": 0.557,
+   "material": "polycarbonate",
+   "description": "digital optical disc data storage format",
+   "hook": "was the shiny music format that replaced cassettes in the final decades of the last century",
+   "known": 0.6,
+   "kind": "material"
+  },
+  {
+   "label": "Gin",
+   "qid": "Q959362",
+   "fame": 0.546,
+   "material": "juniper berries",
+   "description": "distilled alcoholic drink",
+   "hook": "is the clear spirit that gives a martini its bite, paired with tonic in a classic highball",
+   "known": 0.6,
+   "kind": "spirit"
+  },
+  {
+   "label": "Venus of Willendorf",
+   "qid": "Q131397",
+   "fame": 0.541,
+   "material": "limestone",
+   "description": "prehistoric figurine from Austria",
+   "hook": null,
+   "known": 0.2,
+   "kind": "monument"
+  },
+  {
+   "label": "Cognac",
+   "qid": "Q284",
+   "fame": 0.538,
+   "material": "grapes",
+   "description": "alcoholic beverage; variety of brandy",
+   "hook": "is a famous aged French spirit named for a town in the Charente region",
+   "known": 0.6,
+   "kind": "spirit"
+  },
+  {
+   "label": "Mead",
+   "qid": "Q184442",
+   "fame": 0.535,
+   "material": "honey",
+   "description": "alcoholic beverage made from honey",
+   "hook": "is an ancient golden drink that Vikings and medieval feasters were fond of",
+   "known": 0.4,
+   "kind": "spirit"
+  },
+  {
+   "label": "Caviar",
+   "qid": "Q186385",
+   "fame": 0.532,
+   "material": "sturgeon roe",
+   "description": "salt-cured fish-eggs of the Acipenseridae family",
+   "hook": "is a luxury delicacy served on blinis and priced like gold",
+   "known": 0.6,
+   "kind": "meat product"
+  },
+  {
+   "label": "Ketchup",
+   "qid": "Q178143",
+   "fame": 0.532,
+   "material": "tomatoes",
+   "description": "table condiment usually made of tomatoes",
+   "hook": "is the red condiment squeezed on fries and burgers",
+   "known": 0.95,
+   "kind": "sauce"
+  },
+  {
+   "label": "Tempeh",
+   "qid": "Q120096",
+   "fame": 0.525,
+   "material": "soybeans",
+   "description": "Indonesian soy product originated from Java island, used as protein source",
+   "hook": null,
+   "known": 0.2,
+   "kind": "fermented food"
+  },
+  {
+   "label": "Concrete",
+   "qid": "Q22657",
+   "fame": 0.522,
+   "material": "cement",
+   "description": "composite construction material",
+   "hook": "is the gray building material poured to make sidewalks, dams and foundations",
+   "known": 0.4,
+   "kind": "material"
+  },
+  {
+   "label": "Miso",
+   "qid": "Q235169",
+   "fame": 0.519,
+   "material": "soybeans",
+   "description": "fermented soybean paste",
+   "hook": "is a salty Japanese paste that flavors a famous breakfast soup",
+   "known": 0.4,
+   "kind": "fermented food"
+  },
+  {
+   "label": "Tzatziki",
+   "qid": "Q836538",
+   "fame": 0.516,
+   "material": "yogurt",
+   "description": "cold cucumber-yogurt dip, soup, or sauce",
+   "hook": "is a cool Greek dip served with gyros",
+   "known": 0.4,
+   "kind": "sauce"
+  },
+  {
+   "label": "Prosciutto",
+   "qid": "Q1065033",
+   "fame": 0.515,
+   "material": "pork leg",
+   "description": "Italian dry-cured ham",
+   "hook": "is a thinly sliced Italian cured ham often wrapped around melon",
+   "known": 0.6,
+   "kind": "meat product"
+  },
+  {
+   "label": "US penny",
+   "qid": "Q161604",
+   "fame": 0.515,
+   "material": "zinc",
+   "description": "United States coin with a value of 1 cent",
+   "hook": null,
+   "known": 0.3,
+   "kind": "material"
+  },
+  {
+   "label": "Marzipan",
+   "qid": "Q106252",
+   "fame": 0.507,
+   "material": "almonds",
+   "description": "confection consisting primarily of sugar or honey and almond meal (ground almonds)",
+   "hook": "is a sweet, moldable candy often shaped into little fruits and cake decorations",
+   "known": 0.4,
+   "kind": "sweet"
+  },
+  {
+   "label": "Bacon",
+   "qid": "Q11106",
+   "fame": 0.506,
+   "material": "pork belly",
+   "description": "salt cured pork belly, back, or side, sometimes smoked",
+   "hook": "is the crispy breakfast strip that sizzles in a pan alongside eggs",
+   "known": 0.95,
+   "kind": "meat product"
+  },
+  {
+   "label": "Porcelain",
+   "qid": "Q130693",
+   "fame": 0.504,
+   "material": "kaolin clay",
+   "description": "ceramic material",
+   "hook": "is the fine, translucent china prized for delicate teacups and dinnerware",
+   "known": 0.4,
+   "kind": "material"
+  },
+  {
+   "label": "Kevlar",
+   "qid": "Q207344",
+   "fame": 0.496,
+   "material": "aramid",
+   "description": "heat-resistant and strong aromatic polyamide fiber",
+   "hook": null,
+   "known": 0.2,
+   "kind": "material"
+  },
+  {
+   "label": "Tabasco",
+   "qid": "Q335016",
+   "fame": 0.491,
+   "material": "hot peppers",
+   "description": "American hot sauce brand",
+   "hook": "is a Louisiana red pepper sauce sold in tiny bottles with green caps",
+   "known": 0.6,
+   "kind": "sauce"
+  },
+  {
+   "label": "Meringue",
+   "qid": "Q276276",
+   "fame": 0.483,
+   "material": "egg whites",
+   "description": "sugar confectionery made from whipped egg whites and sugar",
+   "hook": "is the fluffy white topping baked into a lemon pie",
+   "known": 0.6,
+   "kind": "sweet"
+  },
+  {
+   "label": "Salami",
+   "qid": "Q188655",
+   "fame": 0.481,
+   "material": "pork",
+   "description": "cured sausage, fermented and air-dried meat",
+   "hook": "is an Italian deli sausage sliced thin and often found on charcuterie boards",
+   "known": 0.8,
+   "kind": "meat product"
+  },
+  {
+   "label": "Pesto",
+   "qid": "Q9896",
+   "fame": 0.477,
+   "material": "basil",
+   "description": "sauce made from basil, pine nuts, Parmigiano Reggiano, olive oil, and garlic",
+   "hook": "is a bright green Genoese sauce tossed with pasta",
+   "known": 0.6,
+   "kind": "sauce"
+  }
+ ]
+}

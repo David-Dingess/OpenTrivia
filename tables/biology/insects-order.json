@@ -1,0 +1,329 @@
+{
+ "id": "table.biology.insects-order",
+ "kind": "table",
+ "title": "Famous insects and the order they belong to",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "insects",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks (COALESCE(?orderOverride, ?orderLabel) AS ?orderName) WHERE { { SELECT ?item ?itemLabel (SAMPLE(?o) AS ?order) (COUNT(DISTINCT ?o) AS ?nO) WHERE { VALUES (?item ?itemLabel) { (wd:Q503799 \"Hercules beetle\") (wd:Q190491 \"Stag beetle\") (wd:Q25327 \"Ladybug\") (wd:Q25420 \"Firefly\") (wd:Q28457 \"Click beetle\") (wd:Q186946 \"Scarab beetle\") (wd:Q156954 \"Colorado potato beetle\") (wd:Q383963 \"Weevil\") (wd:Q1683382 \"Japanese beetle\") (wd:Q225965 \"Mealworm\") (wd:Q27925 \"Furniture beetle\") (wd:Q861966 \"Dung beetle\") (wd:Q212398 \"Monarch butterfly\") (wd:Q158603 \"Painted lady\") (wd:Q156454 \"Red admiral\") (wd:Q158699 \"Peacock butterfly\") (wd:Q27653 \"Cabbage white\") (wd:Q135289 \"Luna moth\") (wd:Q167435 \"Atlas moth\") (wd:Q45532 \"Spongy moth\") (wd:Q134747 \"Silk moth\") (wd:Q41524 \"Death's-head hawkmoth\") (wd:Q1766445 \"Io moth\") (wd:Q142322 \"Cecropia moth\") (wd:Q1945889 \"Clothes moth\") (wd:Q45262 \"Codling moth\") (wd:Q30964 \"Emperor moth\") (wd:Q633535 \"Blue morpho\") (wd:Q59905 \"Swallowtail butterfly\") (wd:Q30034 \"Honey bee\") (wd:Q25407 \"Bumblebee\") (wd:Q581995 \"Carpenter bee\") (wd:Q1065202 \"Yellowjacket\") (wd:Q1155461 \"Paper wasp\") (wd:Q334422 \"Hornet\") (wd:Q121791 \"Asian giant hornet\") (wd:Q52707770 \"Tarantula hawk\") (wd:Q1194382 \"Fire ant\") (wd:Q157875 \"Carpenter ant\") (wd:Q288145 \"Army ant\") (wd:Q1945635 \"Leafcutter ant\") (wd:Q177349 \"Weaver ant\") (wd:Q839823 \"Black garden ant\") (wd:Q1141346 \"Pharaoh ant\") (wd:Q166111 \"House fly\") (wd:Q130888 \"Fruit fly\") (wd:Q7367 \"Mosquito\") (wd:Q205256 \"Tsetse fly\") (wd:Q228241 \"Horse fly\") (wd:Q474636 \"Crane fly\") (wd:Q28404 \"Blowfly\") (wd:Q941965 \"Human botfly\") (wd:Q7618284 \"Grasshopper\") (wd:Q27711 \"House cricket\") (wd:Q281634 \"Desert locust\") (wd:Q727919 \"Katydid\") (wd:Q199765 \"Mole cricket\") (wd:Q3622155 \"Giant weta\") (wd:Q1947892 \"Cicada\") (wd:Q1354085 \"Aphid\") (wd:Q940337 \"Bed bug\") (wd:Q652142 \"Stink bug\") (wd:Q8356884 \"Giant water bug\") (wd:Q270322 \"Water strider\") (wd:Q768510 \"Assassin bug\") (wd:Q244452 \"Leafhopper\") (wd:Q80066 \"Dragonfly\") (wd:Q230502 \"Damselfly\") (wd:Q267996 \"American cockroach\") (wd:Q466194 \"German cockroach\") (wd:Q1050699 \"Termite\") (wd:Q268319 \"Praying mantis\") (wd:Q1736901 \"Cat flea\") (wd:Q989263 \"Human flea\") (wd:Q27358 \"Head louse\") (wd:Q283518 \"Indian stick insect\") (wd:Q2537221 \"Earwig\") } ?item wdt:P171+ ?o . ?o wdt:P105 wd:Q36602 . } GROUP BY ?item ?itemLabel } hint:Prior hint:runFirst true . FILTER(?nO = 1) OPTIONAL { VALUES (?order ?orderOverride) { (wd:Q22671 \"Coleoptera\") (wd:Q28319 \"Lepidoptera\") (wd:Q25312 \"Diptera\") (wd:Q25375 \"Odonata\") (wd:Q22651 \"Hymenoptera\") (wd:Q167810 \"Orthoptera\") (wd:Q25309 \"Blattodea\") (wd:Q131250 \"Mantodea\") (wd:Q26371 \"Hemiptera\") (wd:Q388162 \"Siphonaptera\") (wd:Q49381348 \"Phasmatodea\") (wd:Q13676 \"Dermaptera\") (wd:Q3409994 \"Psocodea\") (wd:Q6481228 \"Phthiraptera\") } } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 121",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T13:20:49.744Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T13:20:49.744Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "order",
+   "label": "Order",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "insect",
+  "many": "insects",
+  "columns": {
+   "order": {
+    "role": "link",
+    "pick": "Which order does {label} belong to?",
+    "statement": "{label} belongs to the order {value}.",
+    "match": "Match each insect to its order.",
+    "odd": "Three of these insects belong to the order {value}. Which one doesn't?",
+    "all": "Tap all {n} insects in the order {value}.",
+    "reverse": "Which of these belongs to the order {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Cicada",
+   "qid": "Q1947892",
+   "fame": 0.629,
+   "order": "Hemiptera",
+   "description": "superfamily of insects",
+   "hook": "is known for its loud summer buzzing and for emerging in huge swarms after years underground",
+   "known": 0.6,
+   "kind": "true-bug"
+  },
+  {
+   "label": "Monarch butterfly",
+   "qid": "Q212398",
+   "fame": 0.589,
+   "order": "Lepidoptera",
+   "description": "milkweed butterfly in the family Nymphalidae",
+   "hook": "is an orange and black migrant that flies thousands of miles to overwinter in Mexico",
+   "known": 0.8,
+   "kind": "butterfly"
+  },
+  {
+   "label": "Mosquito",
+   "qid": "Q7367",
+   "fame": 0.589,
+   "order": "Diptera",
+   "description": "family of nematoceran flies",
+   "hook": "is a tiny biting pest whose females spread malaria and other diseases",
+   "known": 0.8,
+   "kind": "fly"
+  },
+  {
+   "label": "Dragonfly",
+   "qid": "Q80066",
+   "fame": 0.581,
+   "order": "Odonata",
+   "description": "suborder of insects with long strong bodies and two pairs of wings",
+   "hook": "is a fast, agile hunter that zips over ponds on two pairs of shimmering wings",
+   "known": 0.8,
+   "kind": "other"
+  },
+  {
+   "label": "Asian giant hornet",
+   "qid": "Q121791",
+   "fame": 0.573,
+   "order": "Hymenoptera",
+   "description": "species of insect",
+   "hook": "is the world's largest of its kind, nicknamed for a fearsome sting and a taste for honey bees",
+   "known": 0.4,
+   "kind": "wasp"
+  },
+  {
+   "label": "Hornet",
+   "qid": "Q334422",
+   "fame": 0.572,
+   "order": "Hymenoptera",
+   "description": "genus of insects",
+   "hook": "is a large, aggressive stinging wasp that builds papery nests",
+   "known": 0.6,
+   "kind": "wasp"
+  },
+  {
+   "label": "Bumblebee",
+   "qid": "Q25407",
+   "fame": 0.562,
+   "order": "Hymenoptera",
+   "description": "genus of insects",
+   "hook": "is a fuzzy, round pollinator that buzzes from flower to flower",
+   "known": 0.8,
+   "kind": "wasp"
+  },
+  {
+   "label": "Fruit fly",
+   "qid": "Q130888",
+   "fame": 0.556,
+   "order": "Diptera",
+   "description": "species of fly",
+   "hook": "is a tiny insect swarming over ripe bananas and a favorite subject of genetics labs",
+   "known": 0.6,
+   "kind": "fly"
+  },
+  {
+   "label": "Katydid",
+   "qid": "Q727919",
+   "fame": 0.551,
+   "order": "Orthoptera",
+   "description": "family of insects in the order Orthoptera",
+   "hook": "is a green, leaf-mimicking relative of the grasshopper that sings at night",
+   "known": 0.2,
+   "kind": "other"
+  },
+  {
+   "label": "Ladybug",
+   "qid": "Q25327",
+   "fame": 0.546,
+   "order": "Coleoptera",
+   "description": "family of beetles",
+   "hook": "is a red, black-spotted garden helper that eats aphids and is considered good luck",
+   "known": 0.95,
+   "kind": "beetle"
+  },
+  {
+   "label": "German cockroach",
+   "qid": "Q466194",
+   "fame": 0.54,
+   "order": "Blattodea",
+   "description": "species of insect",
+   "hook": "is a common household pest that scurries away when the kitchen lights come on",
+   "known": 0.6,
+   "kind": "roach"
+  },
+  {
+   "label": "Firefly",
+   "qid": "Q25420",
+   "fame": 0.528,
+   "order": "Coleoptera",
+   "description": "family of beetles",
+   "hook": "is a beetle that lights up summer nights with a glowing abdomen",
+   "known": 0.8,
+   "kind": "beetle"
+  },
+  {
+   "label": "Horse fly",
+   "qid": "Q228241",
+   "fame": 0.523,
+   "order": "Diptera",
+   "description": "family of flies",
+   "hook": "is a large, hard-to-swat pest whose females deliver painful bites to livestock and people",
+   "known": 0.4,
+   "kind": "fly"
+  },
+  {
+   "label": "Luna moth",
+   "qid": "Q135289",
+   "fame": 0.509,
+   "order": "Lepidoptera",
+   "description": "species of insect",
+   "hook": "is a pale green giant with long tails on its wings that flies at night",
+   "known": 0.4,
+   "kind": "butterfly"
+  },
+  {
+   "label": "Silk moth",
+   "qid": "Q134747",
+   "fame": 0.506,
+   "order": "Lepidoptera",
+   "description": "insect from the moth family",
+   "hook": "is a caterpillar farmed for the fine thread used to make a luxurious fabric",
+   "known": 0.2,
+   "kind": "butterfly"
+  },
+  {
+   "label": "Weevil",
+   "qid": "Q383963",
+   "fame": 0.506,
+   "order": "Coleoptera",
+   "description": "superfamily of beetles",
+   "hook": "is a small beetle with a long snout that ruins crops like cotton",
+   "known": 0.2,
+   "kind": "beetle"
+  },
+  {
+   "label": "Tsetse fly",
+   "qid": "Q205256",
+   "fame": 0.505,
+   "order": "Diptera",
+   "description": "genus of insects",
+   "hook": "is a biting African fly that spreads sleeping sickness",
+   "known": 0.2,
+   "kind": "fly"
+  },
+  {
+   "label": "American cockroach",
+   "qid": "Q267996",
+   "fame": 0.502,
+   "order": "Blattodea",
+   "description": "species of insect",
+   "hook": "is a large reddish-brown household pest, one of the biggest of its kind",
+   "known": 0.4,
+   "kind": "roach"
+  },
+  {
+   "label": "House fly",
+   "qid": "Q166111",
+   "fame": 0.498,
+   "order": "Diptera",
+   "description": "species of insect in the class \"Muscidae\", sort of fly",
+   "hook": "is a common buzzing pest that lands on food and spreads germs",
+   "known": 0.8,
+   "kind": "fly"
+  },
+  {
+   "label": "Hercules beetle",
+   "qid": "Q503799",
+   "fame": 0.494,
+   "order": "Coleoptera",
+   "description": "species of rhinoceros beetle",
+   "hook": "is one of the largest and strongest of its kind, named for a mythical strongman and sporting a big horn",
+   "known": 0.4,
+   "kind": "beetle"
+  },
+  {
+   "label": "Assassin bug",
+   "qid": "Q768510",
+   "fame": 0.482,
+   "order": "Hemiptera",
+   "description": "family of insects",
+   "hook": "is a predator that stabs its prey with a sharp beak and injects digestive saliva",
+   "known": 0.2,
+   "kind": "true-bug"
+  },
+  {
+   "label": "Giant water bug",
+   "qid": "Q8356884",
+   "fame": 0.48,
+   "order": "Hemiptera",
+   "description": "family of insects",
+   "hook": "is a large aquatic predator that ambushes prey and can deliver a painful bite",
+   "known": 0.05,
+   "kind": "true-bug"
+  },
+  {
+   "label": "Honey bee",
+   "qid": "Q30034",
+   "fame": 0.48,
+   "order": "Hymenoptera",
+   "description": "species of insect",
+   "hook": "is a social pollinator that makes sweet golden food in a hive and does a waggle dance",
+   "known": 0.95,
+   "kind": "wasp"
+  },
+  {
+   "label": "Praying mantis",
+   "qid": "Q268319",
+   "fame": 0.478,
+   "order": "Mantodea",
+   "description": "species of insect",
+   "hook": "is a green ambush predator that folds its front legs as if in prayer",
+   "known": 0.8,
+   "kind": "other"
+  },
+  {
+   "label": "Scarab beetle",
+   "qid": "Q186946",
+   "fame": 0.47,
+   "order": "Coleoptera",
+   "description": "family of beetles",
+   "hook": "is a dung-rolling insect that ancient Egyptians held sacred",
+   "known": 0.6,
+   "kind": "beetle"
+  },
+  {
+   "label": "Carpenter ant",
+   "qid": "Q157875",
+   "fame": 0.45,
+   "order": "Hymenoptera",
+   "description": "genus of insects",
+   "hook": "is a large black insect that tunnels through wood to build its nest",
+   "known": 0.4,
+   "kind": "wasp"
+  },
+  {
+   "label": "Mealworm",
+   "qid": "Q225965",
+   "fame": 0.45,
+   "order": "Coleoptera",
+   "description": "species of insect",
+   "hook": "is a beetle larva sold as feed for pet reptiles and birds",
+   "known": 0.2,
+   "kind": "beetle"
+  }
+ ]
+}

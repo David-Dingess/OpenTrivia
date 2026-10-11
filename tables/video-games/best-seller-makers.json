@@ -1,0 +1,351 @@
+{
+ "id": "table.video-games.best-seller-makers",
+ "kind": "table",
+ "title": "Best-selling video games and the studio that made them",
+ "genre": "games-sports",
+ "category": "video-games",
+ "topic": "best-sellers",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?devLabel WHERE { { SELECT ?item (SAMPLE(?d) AS ?dev) (COUNT(DISTINCT ?d) AS ?nDev) WHERE { ?item wdt:P31 wd:Q7889 ; wdt:P178 ?d ; wdt:P2664 ?n . FILTER(?n >= 5000000) FILTER NOT EXISTS { ?item wdt:P852 ?esrb . VALUES ?esrb { wd:Q14864331 wd:Q14864332 wd:Q110488287 wd:Q124356066 } } FILTER NOT EXISTS { ?item wdt:P908 wd:Q14915517 } } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nDev = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T01:18:15.581Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T01:18:15.581Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "developer",
+   "label": "Developer",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "game",
+  "many": "games",
+  "hookAsk": "Which game {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "developer": {
+    "role": "link",
+    "pick": "Which studio made {label}?",
+    "statement": "{label} was made by {value}.",
+    "match": "Match each game to the studio that made it.",
+    "odd": "Three of these games were made by {value}. Which one wasn't?",
+    "all": "Tap all {n} games made by {value}.",
+    "reverse": "Which of these games did {value} make?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Valheim",
+   "qid": "Q105100327",
+   "fame": 0.631,
+   "developer": "Iron Gate Studio",
+   "description": "2026 video game",
+   "hook": "has players survive in a Norse-inspired afterlife, building longhouses and slaying giant bosses with friends",
+   "known": 0.2,
+   "kind": "indie survival"
+  },
+  {
+   "label": "Black Myth: Wukong",
+   "qid": "Q98582386",
+   "fame": 0.581,
+   "developer": "Game Science",
+   "description": "2024 video game developed by Game Science",
+   "hook": "is an action RPG based on the classic Chinese tale of the Journey to the West, with a Monkey King hero",
+   "known": 0.4,
+   "kind": "aaa action rpg"
+  },
+  {
+   "label": "Among Us",
+   "qid": "Q96417649",
+   "fame": 0.58,
+   "developer": "InnerSloth",
+   "description": "2018 video game developed by InnerSloth",
+   "hook": "became a pandemic-era phenomenon as crewmates hunt for a hidden impostor on a spaceship",
+   "known": 0.8,
+   "kind": "indie social"
+  },
+  {
+   "label": "Hollow Knight",
+   "qid": "Q29300592",
+   "fame": 0.575,
+   "developer": "Team Cherry",
+   "description": "2017 video game",
+   "hook": "sends a tiny bug warrior through a ruined underground insect kingdom in a hand-drawn metroidvania",
+   "known": 0.2,
+   "kind": "indie metroidvania"
+  },
+  {
+   "label": "It Takes Two",
+   "qid": "Q105038239",
+   "fame": 0.559,
+   "developer": "Hazelight Studios",
+   "description": "2021 action-adventure video game developed by Hazelight Studios",
+   "hook": "forces two feuding parents, turned into dolls, to cooperate in a co-op-only adventure to fix their marriage",
+   "known": 0.2,
+   "kind": "co-op adventure"
+  },
+  {
+   "label": "Palworld",
+   "qid": "Q113989188",
+   "fame": 0.555,
+   "developer": "Pocketpair",
+   "description": "2026 video game developed by Pocket Pair",
+   "hook": "was nicknamed monster-collecting with guns, as captured creatures work on a farm",
+   "known": 0.4,
+   "kind": "indie survival"
+  },
+  {
+   "label": "Pokémon Legends: Z-A",
+   "qid": "Q124672125",
+   "fame": 0.554,
+   "developer": "Game Freak",
+   "description": "2025 video game developed by Game Freak",
+   "hook": "sets its creature-catching action in a redeveloped French-inspired metropolis, with real-time battles",
+   "known": 0.8,
+   "kind": "nintendo rpg"
+  },
+  {
+   "label": "Split Fiction",
+   "qid": "Q131433899",
+   "fame": 0.552,
+   "developer": "Hazelight Studios",
+   "description": "2025 video game developed by Hazelight Studios",
+   "hook": "is a co-op adventure where two writers are trapped in simulations of sci-fi and fantasy worlds",
+   "known": 0.05,
+   "kind": "co-op adventure"
+  },
+  {
+   "label": "Hollow Knight: Silksong",
+   "qid": "Q63294487",
+   "fame": 0.546,
+   "developer": "Team Cherry",
+   "description": "2025 Metroidvania action-adventure video game developed by Team Cherry",
+   "hook": "follows the long-awaited sequel starring a needle-wielding hunter named Hornet on a pilgrimage",
+   "known": 0.05,
+   "kind": "indie metroidvania"
+  },
+  {
+   "label": "Kirby and the Forgotten Land",
+   "qid": "Q108670544",
+   "fame": 0.536,
+   "developer": "HAL Laboratory",
+   "description": "2022 video game",
+   "hook": "lets a pink puffball explore a ruined modern world and swallow whole cars with a Mouthful Mode",
+   "known": 0.6,
+   "kind": "nintendo platformer"
+  },
+  {
+   "label": "Super Mario Odyssey",
+   "qid": "Q28234671",
+   "fame": 0.531,
+   "developer": "Nintendo",
+   "description": "2017 platform video game",
+   "hook": "lets a plumber throw his sentient hat to capture enemies while traveling the globe to stop a wedding",
+   "known": 0.8,
+   "kind": "nintendo platformer"
+  },
+  {
+   "label": "Balatro",
+   "qid": "Q124357469",
+   "fame": 0.52,
+   "developer": "LocalThunk",
+   "description": "2024 video game developed by LocalThunk",
+   "hook": "is a hit roguelike deckbuilder built around poker hands and wild joker cards",
+   "known": 0.2,
+   "kind": "indie roguelike"
+  },
+  {
+   "label": "Monster Hunter Wilds",
+   "qid": "Q123699158",
+   "fame": 0.52,
+   "developer": "Capcom",
+   "description": "2025 video game developed by Capcom",
+   "hook": "sends players across a vast desert land to take down enormous beasts with a wide range of weapons",
+   "known": 0.2,
+   "kind": "aaa action rpg"
+  },
+  {
+   "label": "Street Fighter 6",
+   "qid": "Q110999026",
+   "fame": 0.519,
+   "developer": "Capcom",
+   "description": "2023 fighting game developed by Capcom",
+   "hook": "is a fighting game with a World Tour story mode and Drive Gauge, featuring Ryu, Chun-Li and Luke",
+   "known": 0.4,
+   "kind": "aaa fighting"
+  },
+  {
+   "label": "Garry's Mod",
+   "qid": "Q837923",
+   "fame": 0.517,
+   "developer": "Facepunch Studios",
+   "description": "2006 sandbox physics game",
+   "hook": "began as a sandbox with physics tools and became famous for player-made chaos, props and roleplay servers",
+   "known": 0.2,
+   "kind": "indie sandbox"
+  },
+  {
+   "label": "Euro Truck Simulator 2",
+   "qid": "Q2632206",
+   "fame": 0.507,
+   "developer": "SCS Software",
+   "description": "2012 vehicle simulation video game made by SCS Software",
+   "hook": "is a calm, cult-favorite game about hauling cargo across European roads in a big rig",
+   "known": 0.05,
+   "kind": "indie simulation"
+  },
+  {
+   "label": "Pokémon Emerald",
+   "qid": "Q2045645",
+   "fame": 0.504,
+   "developer": "Game Freak",
+   "description": "2004 Japanese video game",
+   "hook": "returns to the Hoenn region in an expanded third-generation remake-like adventure with a Battle Frontier",
+   "known": 0.95,
+   "kind": "nintendo rpg"
+  },
+  {
+   "label": "Pokémon Legends: Arceus",
+   "qid": "Q105688771",
+   "fame": 0.492,
+   "developer": "Game Freak",
+   "description": "2022 role-playing video game",
+   "hook": "drops players into the ancient Hisui region, a prequel to Sinnoh, where they build the very first dex",
+   "known": 0.6,
+   "kind": "nintendo rpg"
+  },
+  {
+   "label": "Sea of Thieves",
+   "qid": "Q20113718",
+   "fame": 0.477,
+   "developer": "Rare Ltd.",
+   "description": "2018 video game developed by Rare",
+   "hook": "lets crews sail a pirate ship together, hunt for treasure and fight off skeleton ships and a giant kraken",
+   "known": 0.4,
+   "kind": "aaa multiplayer"
+  },
+  {
+   "label": "Sonic Frontiers",
+   "qid": "Q109502429",
+   "fame": 0.47,
+   "developer": "Sonic Team",
+   "description": "2022 platform video game developed by Sonic Team",
+   "hook": "takes the blue speedster into an open-world style adventure across mysterious islands with a Cyber Space",
+   "known": 0.4,
+   "kind": "aaa platformer"
+  },
+  {
+   "label": "Dave the Diver",
+   "qid": "Q114995908",
+   "fame": 0.468,
+   "developer": "Mintrocket",
+   "description": "2023 video game developed by Mintrocket",
+   "hook": "mixes deep-ocean fishing by day with running a sushi restaurant by night",
+   "known": 0.4,
+   "kind": "indie simulation"
+  },
+  {
+   "label": "Monster Hunter: World",
+   "qid": "Q30252256",
+   "fame": 0.468,
+   "developer": "Capcom",
+   "description": "2018 video game",
+   "hook": "brought a hunting series to a wider audience with seamless ecosystems like the Ancient Forest",
+   "known": 0.6,
+   "kind": "aaa action rpg"
+  },
+  {
+   "label": "Cities: Skylines",
+   "qid": "Q18149274",
+   "fame": 0.467,
+   "developer": "Colossal Order",
+   "description": "2015 city-building video game",
+   "hook": "lets players zone, build roads and manage traffic and services for a growing metropolis",
+   "known": 0.2,
+   "kind": "indie simulation"
+  },
+  {
+   "label": "Pokémon Platinum",
+   "qid": "Q1154227",
+   "fame": 0.465,
+   "developer": "Game Freak",
+   "description": "2008 video game",
+   "hook": "is the third entry in the Sinnoh generation, known for the Distortion World and a legendary ghost-dragon",
+   "known": 0.95,
+   "kind": "nintendo rpg"
+  },
+  {
+   "label": "Super Mario Party Jamboree",
+   "qid": "Q126723011",
+   "fame": 0.463,
+   "developer": "Nintendo",
+   "description": "2024 video game developed by Nintendo",
+   "hook": "is a board-style game with over a hundred minigames and a mode starring a flower named Wiggler",
+   "known": 0.6,
+   "kind": "nintendo party"
+  },
+  {
+   "label": "Civilization VI",
+   "qid": "Q24050047",
+   "fame": 0.46,
+   "developer": "Firaxis Games",
+   "description": "2016 turn-based strategy video game",
+   "hook": "is a turn-based strategy game where districts sprawl across the map as you steer an empire through the ages",
+   "known": 0.4,
+   "kind": "aaa strategy"
+  },
+  {
+   "label": "Super Smash Bros. Brawl",
+   "qid": "Q843131",
+   "fame": 0.46,
+   "developer": "Sora Ltd.",
+   "description": "2008 crossover fighting video game by Nintendo",
+   "hook": "is a crossover brawler with a story mode called The Subspace Emissary and a roster that added Snake and Sonic",
+   "known": 0.6,
+   "kind": "aaa fighting"
+  },
+  {
+   "label": "Yo-kai Watch 2",
+   "qid": "Q21129987",
+   "fame": 0.455,
+   "developer": "Level-5",
+   "description": "2014 video game",
+   "hook": "lets players befriend spooky spirits to fight with, and came out in two paired versions",
+   "known": 0.2,
+   "kind": "monster collector"
+  },
+  {
+   "label": "Monster Hunter Rise",
+   "qid": "Q99441852",
+   "fame": 0.451,
+   "developer": "Capcom",
+   "description": "2021 action/RPG video game developed by Capcom",
+   "hook": "lets hunters ride a dog-like companion and use wirebug moves against giant beasts",
+   "known": 0.2,
+   "kind": "aaa action rpg"
+  }
+ ]
+}

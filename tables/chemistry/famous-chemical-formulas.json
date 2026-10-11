@@ -1,0 +1,346 @@
+{
+ "id": "table.chemistry.famous-chemical-formulas",
+ "kind": "table",
+ "title": "Famous everyday chemicals: the formula",
+ "genre": "science-math-tech",
+ "category": "chemistry",
+ "topic": "everyday-chemistry",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?formula WHERE { VALUES ?item { wd:Q283 wd:Q1997 wd:Q4087 wd:Q37129 wd:Q153 wd:Q37525 wd:Q60235 wd:Q36933 wd:Q171877 wd:Q4118 wd:Q905750 wd:Q2025 wd:Q172275 wd:Q2270 wd:Q133145 wd:Q83320 wd:Q116269 wd:Q170591 wd:Q5282 wd:Q151313 wd:Q48318 wd:Q159683 wd:Q161210 wd:Q14982 wd:Q132501 wd:Q122043 wd:Q127900 wd:Q2409 wd:Q184782 wd:Q208451 wd:Q18216 wd:Q407418 wd:Q33495 wd:Q407520 wd:Q107184 wd:Q199678 } ?item wdt:P274 ?formula. OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T22:13:19.574Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T22:13:19.574Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "formula",
+   "label": "Chemical formula",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "chemical",
+  "many": "chemicals",
+  "columns": {
+   "formula": {
+    "role": "code",
+    "pick": "What is the chemical formula of {label}?",
+    "statement": "The chemical formula of {label} is {value}.",
+    "match": "Match each chemical to its formula."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "water",
+   "qid": "Q283",
+   "fame": 0.643,
+   "formula": "H₂O",
+   "description": "chemical compound whose molecules are formed by two hydrogen atoms and one oxygen atom",
+   "hook": "covers most of the Earth's surface and is essential to every known form of life",
+   "known": 0.95,
+   "kind": "household"
+  },
+  {
+   "label": "ethanol",
+   "qid": "Q153",
+   "fame": 0.604,
+   "formula": "C₂H₆O",
+   "description": "chemical compound",
+   "hook": "is the intoxicating ingredient in beer, wine and spirits, and is also blended into fuel",
+   "known": 0.8,
+   "kind": "alcohol"
+  },
+  {
+   "label": "caffeine",
+   "qid": "Q60235",
+   "fame": 0.603,
+   "formula": "C₈H₁₀N₄O₂",
+   "description": "chemical compound used as a stimulant",
+   "hook": "is the stimulant in coffee, tea and energy drinks that keeps people awake",
+   "known": 0.8,
+   "kind": "household"
+  },
+  {
+   "label": "hydrogen peroxide",
+   "qid": "Q171877",
+   "fame": 0.582,
+   "formula": "H₂O₂",
+   "description": "chemical compound",
+   "hook": "is a pale blue liquid used to bleach hair and to bubble over minor cuts",
+   "known": 0.6,
+   "kind": "household"
+  },
+  {
+   "label": "aspirin",
+   "qid": "Q18216",
+   "fame": 0.577,
+   "formula": "C₉H₈O₄",
+   "description": "medication used to treat pain and decrease the risk of heart disease",
+   "hook": "is a common over-the-counter pill taken for headaches, fever and inflammation",
+   "known": 0.8,
+   "kind": "household"
+  },
+  {
+   "label": "nitrous oxide",
+   "qid": "Q905750",
+   "fame": 0.576,
+   "formula": "N₂O",
+   "description": "chemical compound",
+   "hook": "is known as laughing gas and was long used by dentists as an anaesthetic",
+   "known": 0.2,
+   "kind": "gas"
+  },
+  {
+   "label": "ammonia",
+   "qid": "Q4087",
+   "fame": 0.573,
+   "formula": "NH₃",
+   "description": "chemical compound",
+   "hook": "is a gas with a sharp, choking smell found in many household cleaning products",
+   "known": 0.6,
+   "kind": "household"
+  },
+  {
+   "label": "glucose",
+   "qid": "Q37525",
+   "fame": 0.564,
+   "formula": "C₆H₁₂O₆",
+   "description": "simple sugar, or monosaccharide, with the chemical formula C6H12O6; also called dextrose, d-glucopyranose, cerelose, grape sugar, and corn sugar",
+   "hook": "is the simple sugar that cells burn for energy and that circulates in your blood",
+   "known": 0.6,
+   "kind": "household"
+  },
+  {
+   "label": "carbon dioxide",
+   "qid": "Q1997",
+   "fame": 0.558,
+   "formula": "CO₂",
+   "description": "chemical compound",
+   "hook": "is the gas people exhale and plants absorb, and it puts the fizz in soda",
+   "known": 0.95,
+   "kind": "gas"
+  },
+  {
+   "label": "hydrochloric acid",
+   "qid": "Q2409",
+   "fame": 0.557,
+   "formula": "HCl",
+   "description": "highly corrosive, strong mineral acid in aqueous solution",
+   "hook": "is found in the human stomach, where it helps digest food",
+   "known": 0.2,
+   "kind": "acid"
+  },
+  {
+   "label": "sulfuric acid",
+   "qid": "Q4118",
+   "fame": 0.556,
+   "formula": "H₂SO₄",
+   "description": "chemical compound",
+   "hook": "is the corrosive fluid inside a car battery and one of the most produced industrial chemicals",
+   "known": 0.4,
+   "kind": "acid"
+  },
+  {
+   "label": "urea",
+   "qid": "Q48318",
+   "fame": 0.549,
+   "formula": "CH₄N₂O",
+   "description": "the diamide of carbonic acid",
+   "hook": "is the main waste substance passed out of the body in pee, and was the first organic compound made in a lab",
+   "known": 0.05,
+   "kind": "industrial"
+  },
+  {
+   "label": "benzene",
+   "qid": "Q2270",
+   "fame": 0.544,
+   "formula": "C₆H₆",
+   "description": "hydrocarbon compound consisting of a 6-sided ring",
+   "hook": "is a sweet-smelling, ring-shaped liquid found in petrol and known to cause cancer",
+   "known": 0.2,
+   "kind": "industrial"
+  },
+  {
+   "label": "formaldehyde",
+   "qid": "Q161210",
+   "fame": 0.543,
+   "formula": "CH₂O",
+   "description": "chemical compound",
+   "hook": "is a pungent gas used to preserve biology specimens in jars",
+   "known": 0.4,
+   "kind": "industrial"
+  },
+  {
+   "label": "hydrogen sulfide",
+   "qid": "Q170591",
+   "fame": 0.543,
+   "formula": "H₂S",
+   "description": "chemical compound",
+   "hook": "is the gas that gives rotten eggs their awful smell",
+   "known": 0.2,
+   "kind": "gas"
+  },
+  {
+   "label": "methanol",
+   "qid": "Q14982",
+   "fame": 0.539,
+   "formula": "CH₄O",
+   "description": "chemical compound",
+   "hook": "is a toxic wood-derived alcohol used as antifreeze and solvent, and is never safe to drink",
+   "known": 0.2,
+   "kind": "alcohol"
+  },
+  {
+   "label": "chloroform",
+   "qid": "Q172275",
+   "fame": 0.538,
+   "formula": "CHCl₃",
+   "description": "chemical compound",
+   "hook": "is a sweet-smelling liquid that old movies show being used to knock people out on a cloth",
+   "known": 0.2,
+   "kind": "industrial"
+  },
+  {
+   "label": "glycerol",
+   "qid": "Q132501",
+   "fame": 0.531,
+   "formula": "C₃H₈O₃",
+   "description": "chemical compound",
+   "hook": "is a thick, sweet, syrupy liquid used in soaps, lotions and food",
+   "known": 0.4,
+   "kind": "alcohol"
+  },
+  {
+   "label": "citric acid",
+   "qid": "Q159683",
+   "fame": 0.526,
+   "formula": "C₆H₈O₇",
+   "description": "weak organic acid",
+   "hook": "is the sour taste in lemons and limes and is used to flavour sweets and drinks",
+   "known": 0.6,
+   "kind": "acid"
+  },
+  {
+   "label": "methane",
+   "qid": "Q37129",
+   "fame": 0.526,
+   "formula": "CH₄",
+   "description": "simplest organic molecule with one carbon atom and four hydrogen",
+   "hook": "is the main gas in natural gas and is also produced by cows",
+   "known": 0.6,
+   "kind": "gas"
+  },
+  {
+   "label": "vitamin C",
+   "qid": "Q199678",
+   "fame": 0.523,
+   "formula": "C₆H₈O₆",
+   "description": "water-soluble vitamin and antioxidant essential for collagen synthesis, immune function, and skin brightening",
+   "hook": "is the nutrient in oranges that prevents scurvy in sailors",
+   "known": 0.8,
+   "kind": "household"
+  },
+  {
+   "label": "carbon monoxide",
+   "qid": "Q2025",
+   "fame": 0.521,
+   "formula": "CO",
+   "description": "chemical compound",
+   "hook": "is an odourless, deadly gas from faulty heaters and car exhaust that home alarms warn about",
+   "known": 0.4,
+   "kind": "gas"
+  },
+  {
+   "label": "silicon dioxide",
+   "qid": "Q116269",
+   "fame": 0.519,
+   "formula": "SiO₂",
+   "description": "chemical compound",
+   "hook": "is the main ingredient of sand and quartz and is used to make glass",
+   "known": 0.2,
+   "kind": "industrial"
+  },
+  {
+   "label": "ozone",
+   "qid": "Q36933",
+   "fame": 0.505,
+   "formula": "O₃",
+   "description": "chemical compound",
+   "hook": "forms a layer high in the sky that shields life from the sun's ultraviolet rays",
+   "known": 0.2,
+   "kind": "gas"
+  },
+  {
+   "label": "nitric acid",
+   "qid": "Q83320",
+   "fame": 0.502,
+   "formula": "HNO₃",
+   "description": "strong, oxidising mineral acid",
+   "hook": "is a strong corrosive liquid once called aqua fortis and used to make fertilizers and explosives",
+   "known": 0.05,
+   "kind": "acid"
+  },
+  {
+   "label": "sulfur dioxide",
+   "qid": "Q5282",
+   "fame": 0.478,
+   "formula": "SO₂",
+   "description": "chemical compound",
+   "hook": "is a pungent gas released by volcanoes and burning coal that causes acid rain",
+   "known": 0.2,
+   "kind": "gas"
+  },
+  {
+   "label": "phosphoric acid",
+   "qid": "Q184782",
+   "fame": 0.468,
+   "formula": "H₃PO₄",
+   "description": "chemical compound",
+   "hook": "is added to cola drinks to give them a tangy bite",
+   "known": 0.2,
+   "kind": "acid"
+  },
+  {
+   "label": "calcium chloride",
+   "qid": "Q208451",
+   "fame": 0.465,
+   "formula": "CaCl₂",
+   "description": "chemical compound",
+   "hook": "is spread on icy roads in winter to melt the ice",
+   "known": 0.05,
+   "kind": "industrial"
+  },
+  {
+   "label": "ethylene",
+   "qid": "Q151313",
+   "fame": 0.456,
+   "formula": "C₂H₄",
+   "description": "chemical compound",
+   "hook": "is a gas that makes fruit ripen and is the raw material for the most common plastic",
+   "known": 0.2,
+   "kind": "gas"
+  }
+ ]
+}

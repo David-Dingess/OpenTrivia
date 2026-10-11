@@ -1,0 +1,359 @@
+{
+ "id": "table.sports.nhl-team-arenas",
+ "kind": "table",
+ "title": "NHL teams and their home arenas",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "hockey",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?venueLabel WHERE { ?item wdt:P118 wd:Q1215892 . ?item wdt:P115 ?venue . ?venue rdfs:label ?venueLabel . FILTER(LANG(?venueLabel)=\"en\") OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T02:30:10.740Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T02:30:10.740Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "arena",
+   "label": "Home arena",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "NHL team",
+  "many": "NHL teams",
+  "hookAsk": "Which NHL team {hook}?",
+  "hookStatement": "",
+  "columns": {
+   "arena": {
+    "role": "code",
+    "pick": "Which arena do the {label} call home?",
+    "statement": "The {label} play their home games at {value}.",
+    "reverse": "Which NHL team plays its home games at {value}?",
+    "match": "Match each NHL team to its home arena."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Montreal Canadiens",
+   "qid": "Q188143",
+   "fame": 0.567,
+   "arena": "Bell Centre",
+   "description": "National Hockey League team in Montreal, Quebec",
+   "hook": "is the most decorated club in the league, with more Stanley Cups than any other franchise",
+   "known": 0.95,
+   "kind": "original six"
+  },
+  {
+   "label": "Toronto Maple Leafs",
+   "qid": "Q203384",
+   "fame": 0.556,
+   "arena": "Scotiabank Arena",
+   "description": "National Hockey League franchise in Toronto, Ontario, Canada",
+   "hook": "is the blue-and-white club whose fans have waited longer than any other for a Stanley Cup",
+   "known": 0.95,
+   "kind": "original six"
+  },
+  {
+   "label": "Anaheim Ducks",
+   "qid": "Q192751",
+   "fame": 0.542,
+   "arena": "Honda Center",
+   "description": "National Hockey League franchise in Anaheim, California, U.S.",
+   "hook": "was founded by a major film studio and named after a Disney movie about a pee-wee hockey team",
+   "known": 0.6,
+   "kind": "1990s"
+  },
+  {
+   "label": "San Jose Sharks",
+   "qid": "Q206381",
+   "fame": 0.532,
+   "arena": "SAP Center",
+   "description": "hockey team of the National Hockey League",
+   "hook": "is the California club with a toothy ocean predator as its mascot and teal jerseys",
+   "known": 0.6,
+   "kind": "1990s"
+  },
+  {
+   "label": "Winnipeg Jets",
+   "qid": "Q472741",
+   "fame": 0.53,
+   "arena": "Canada Life Centre",
+   "description": "hockey team of the National Hockey League",
+   "hook": "is the Manitoba club that returned to the league after the original team left for the desert",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Carolina Hurricanes",
+   "qid": "Q201857",
+   "fame": 0.529,
+   "arena": "Lenovo Center",
+   "description": "hockey team of the National Hockey League",
+   "hook": "is the club known for postgame 'storm surge' celebrations and a siren that blares after home wins",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Edmonton Oilers",
+   "qid": "Q205973",
+   "fame": 0.529,
+   "arena": "Rogers Place",
+   "description": "National Hockey League team in Alberta",
+   "hook": "is the club that was home to Wayne Gretzky during its run of five Stanley Cups in the 1980s and 1990s",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "Seattle Kraken",
+   "qid": "Q59422166",
+   "fame": 0.527,
+   "arena": "Climate Pledge Arena",
+   "description": "ice hockey team in the National Hockey League",
+   "hook": "is the newest expansion club of the 2020s, with a sea-monster nickname and a deep-sea colour scheme",
+   "known": 0.2,
+   "kind": "recent"
+  },
+  {
+   "label": "Utah Mammoth",
+   "qid": "Q125520712",
+   "fame": 0.526,
+   "arena": "Delta Center",
+   "description": "National Hockey League team that began play in 2024",
+   "hook": "is a relocated franchise that took over a desert club's players and picks and now plays in the Rockies region",
+   "known": 0.05,
+   "kind": "recent"
+  },
+  {
+   "label": "Chicago Blackhawks",
+   "qid": "Q209636",
+   "fame": 0.525,
+   "arena": "United Center",
+   "description": "hockey team of the National Hockey League",
+   "hook": "is an Original Six club whose Native American head logo is among the most recognised in sports",
+   "known": 0.8,
+   "kind": "original six"
+  },
+  {
+   "label": "Detroit Red Wings",
+   "qid": "Q194116",
+   "fame": 0.525,
+   "arena": "Little Caesars Arena",
+   "description": "hockey team of the National Hockey League",
+   "hook": "is an Original Six club from the Motor City whose fans throw octopuses onto the ice",
+   "known": 0.8,
+   "kind": "original six"
+  },
+  {
+   "label": "Boston Bruins",
+   "qid": "Q194121",
+   "fame": 0.521,
+   "arena": "TD Garden",
+   "description": "National Hockey League team in Boston, Massachusetts",
+   "hook": "is an Original Six club in black and gold, long known as the oldest American team in the league",
+   "known": 0.8,
+   "kind": "original six"
+  },
+  {
+   "label": "New York Rangers",
+   "qid": "Q188984",
+   "fame": 0.52,
+   "arena": "Madison Square Garden",
+   "description": "hockey team of the National Hockey League",
+   "hook": "is an Original Six club that plays in the arena nicknamed the World's Most Famous Arena",
+   "known": 0.8,
+   "kind": "original six"
+  },
+  {
+   "label": "Colorado Avalanche",
+   "qid": "Q206297",
+   "fame": 0.517,
+   "arena": "Ball Arena",
+   "description": "National Hockey League team in Denver, Colorado",
+   "hook": "is the club that moved from Quebec and won the Stanley Cup in its very first season in its new city",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "Pittsburgh Penguins",
+   "qid": "Q193643",
+   "fame": 0.516,
+   "arena": "PPG Paints Arena",
+   "description": "National Hockey League franchise in Pittsburgh, Pennsylvania",
+   "hook": "is the black-and-gold club that built its fame around Mario Lemieux and Sidney Crosby",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "Vancouver Canucks",
+   "qid": "Q192890",
+   "fame": 0.512,
+   "arena": "Rogers Arena",
+   "description": "hockey team of the National Hockey League",
+   "hook": "is the West Coast club that has lost the Stanley Cup Final three times",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "New York Islanders",
+   "qid": "Q194369",
+   "fame": 0.511,
+   "arena": "UBS Arena",
+   "description": "National Hockey League franchise in Long Island, New York",
+   "hook": "is the club that won four straight Stanley Cups in the early 1980s",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "Florida Panthers",
+   "qid": "Q204623",
+   "fame": 0.508,
+   "arena": "Amerant Bank Arena",
+   "description": "National Hockey League team in Sunrise, Florida",
+   "hook": "is the Sunshine State club that won back-to-back Stanley Cups in recent seasons",
+   "known": 0.4,
+   "kind": "1990s"
+  },
+  {
+   "label": "Vegas Golden Knights",
+   "qid": "Q24725640",
+   "fame": 0.508,
+   "arena": "T-Mobile Arena",
+   "description": "National Hockey League team in Paradise, Nevada",
+   "hook": "is the expansion club that made the Stanley Cup Final in its very first season on the Strip",
+   "known": 0.6,
+   "kind": "recent"
+  },
+  {
+   "label": "Los Angeles Kings",
+   "qid": "Q203008",
+   "fame": 0.505,
+   "arena": "Crypto.com Arena",
+   "description": "hockey team of the National Hockey League",
+   "hook": "is the Hollywood-area club that acquired Wayne Gretzky in a blockbuster trade",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "New Jersey Devils",
+   "qid": "Q192081",
+   "fame": 0.503,
+   "arena": "Prudential Center",
+   "description": "National Hockey League team in Newark, New Jersey",
+   "hook": "is the club named for a legendary monster of the Pine Barrens, with three Cups in the Brodeur era",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Columbus Blue Jackets",
+   "qid": "Q207507",
+   "fame": 0.491,
+   "arena": "Nationwide Arena",
+   "description": "National Hockey League team in Columbus, Ohio",
+   "hook": "is the club named for soldiers of the American Civil War, and the first NHL team in its state's capital",
+   "known": 0.4,
+   "kind": "2000s"
+  },
+  {
+   "label": "Buffalo Sabres",
+   "qid": "Q131206",
+   "fame": 0.489,
+   "arena": "KeyBank Center",
+   "description": "National Hockey League franchise in Buffalo, New York",
+   "hook": "is the club with a crossed-swords logo that lost a Final on a controversial 'no goal' call",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Calgary Flames",
+   "qid": "Q194126",
+   "fame": 0.488,
+   "arena": "Scotiabank Saddledome",
+   "description": "hockey team of the National Hockey League",
+   "hook": "is the club known for the 'C of Red' crowd and a Stanley Cup win over Montreal on its rival's ice",
+   "known": 0.6,
+   "kind": "classic"
+  },
+  {
+   "label": "Ottawa Senators",
+   "qid": "Q203013",
+   "fame": 0.486,
+   "arena": "Canadian Tire Centre",
+   "description": "National Hockey League team in Ottawa, Ontario, Canada",
+   "hook": "is the national-capital club named after a Roman governing body, revived as a modern expansion team",
+   "known": 0.4,
+   "kind": "1990s"
+  },
+  {
+   "label": "Minnesota Wild",
+   "qid": "Q206357",
+   "fame": 0.477,
+   "arena": "Grand Casino Arena",
+   "description": "ice hockey team of the National Hockey League",
+   "hook": "is the club that returned hockey to the 'State of Hockey' after the North Stars left for Texas",
+   "known": 0.4,
+   "kind": "2000s"
+  },
+  {
+   "label": "Nashville Predators",
+   "qid": "Q207980",
+   "fame": 0.476,
+   "arena": "Bridgestone Arena",
+   "description": "hockey team of the National Hockey League",
+   "hook": "is the Music City club whose fans are known for throwing catfish onto the ice",
+   "known": 0.4,
+   "kind": "1990s"
+  },
+  {
+   "label": "Washington Capitals",
+   "qid": "Q204627",
+   "fame": 0.475,
+   "arena": "Capital One Arena",
+   "description": "hockey team of the National Hockey League",
+   "hook": "is the club led by Alex Ovechkin, who chased and broke Wayne Gretzky's career goals record",
+   "known": 0.8,
+   "kind": "classic"
+  },
+  {
+   "label": "Dallas Stars",
+   "qid": "Q208652",
+   "fame": 0.474,
+   "arena": "American Airlines Center",
+   "description": "ice hockey team of the National Hockey League",
+   "hook": "is the club that came from Minnesota and won a Stanley Cup with Mike Modano",
+   "known": 0.6,
+   "kind": "1990s"
+  },
+  {
+   "label": "St. Louis Blues",
+   "qid": "Q207735",
+   "fame": 0.474,
+   "arena": "Enterprise Center",
+   "description": "hockey team of the National Hockey League",
+   "hook": "is the club that won its first Stanley Cup after sitting in last place early in the season",
+   "known": 0.6,
+   "kind": "classic"
+  }
+ ]
+}

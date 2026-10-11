@@ -1,0 +1,206 @@
+{
+ "id": "table.oddities.unexplained-phenomena",
+ "kind": "table",
+ "title": "Unexplained phenomena",
+ "genre": "general",
+ "category": "oddities",
+ "topic": "mysteries",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { VALUES ?item { wd:Q192962 wd:Q330305 wd:Q1342583 wd:Q380176 wd:Q160569 wd:Q216893 wd:Q219566 wd:Q6862565 wd:Q4976216 wd:Q2419149 wd:Q496036 wd:Q1478559 wd:Q910763 wd:Q555716 wd:Q2062425 wd:Q1252960 wd:Q830569 wd:Q3295141 wd:Q1582992 wd:Q2578715 wd:Q7535626 wd:Q421 wd:Q790024 wd:Q649143 } OPTIONAL { ?item wdt:P17|wdt:P27 ?country . } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T06:10:08.332Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T06:10:08.332Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "kind",
+   "label": "Kind",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "unexplained phenomenon",
+  "many": "unexplained phenomena",
+  "hookAsk": "Which unexplained phenomenon {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is the mystery of {label} tied to?",
+    "statement": "The mystery of {label} is tied to {value}.",
+    "odd": "Three of these mysteries come from {value}. Which one doesn't?",
+    "all": "Tap all {n} mysteries that come from {value}.",
+    "reverse": "Which of these mysteries comes from {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Dancing Plague of 1518",
+   "qid": "Q3295141",
+   "fame": 0.594,
+   "country": "France",
+   "kind": "mass-hysteria",
+   "description": "16th century mass dancing mania in Strasbourg",
+   "hook": "had townspeople unable to stop moving in a frenzy for weeks, with no agreed cause",
+   "known": 0.6
+  },
+  {
+   "label": "Flatwoods monster",
+   "qid": "Q2419149",
+   "fame": 0.57,
+   "country": "United States",
+   "kind": "cryptid",
+   "description": "Folklore creature",
+   "hook": "is a tall, hooded humanoid said to have appeared on a rural hillside after a glowing object streaked by",
+   "known": 0.4
+  },
+  {
+   "label": "ball lightning",
+   "qid": "Q192962",
+   "fame": 0.564,
+   "country": null,
+   "kind": "light-phenomenon",
+   "description": "extremely rare unexplained atmospheric electrical phenomenon",
+   "hook": "is a glowing sphere reported during storms that science has never fully explained",
+   "known": 0.4
+  },
+  {
+   "label": "green children of Woolpit",
+   "qid": "Q2578715",
+   "fame": 0.56,
+   "country": "United Kingdom",
+   "kind": "legend",
+   "description": "medieval English legend",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "will o' the wisp",
+   "qid": "Q160569",
+   "fame": 0.559,
+   "country": null,
+   "kind": "light-phenomenon",
+   "description": "atmospheric ghost lights",
+   "hook": "is a flickering light that supposedly lures night travellers astray over bogs and marshes",
+   "known": 0.6
+  },
+  {
+   "label": "Skinwalker Ranch",
+   "qid": "Q7535626",
+   "fame": 0.548,
+   "country": "United States",
+   "kind": "haunted-place",
+   "description": "ranch in the Uintah Basin of Utah",
+   "hook": "is a Utah property reputed for UFO sightings and strange happenings, named for a Navajo legend",
+   "known": 0.4
+  },
+  {
+   "label": "extrasensory perception",
+   "qid": "Q790024",
+   "fame": 0.546,
+   "country": null,
+   "kind": "paranormal-claim",
+   "description": "reception of information via extra senses",
+   "hook": "is the claimed ability to know things, like others' thoughts, through the mind alone",
+   "known": 0.8
+  },
+  {
+   "label": "unidentified flying object",
+   "qid": "Q421",
+   "fame": 0.542,
+   "country": null,
+   "kind": "sky-sighting",
+   "description": "unusual apparent anomaly in the sky that is not readily identifiable",
+   "hook": "is anything strange in the sky that cannot be readily explained, often imagined as a saucer",
+   "known": 0.95
+  },
+  {
+   "label": "Philadelphia Experiment",
+   "qid": "Q496036",
+   "fame": 0.531,
+   "country": "United States",
+   "kind": "urban-legend",
+   "description": "urban legend about a supposed US Naval experiment in 1943",
+   "hook": "is a legend claiming the Navy made a warship vanish and reappear far away",
+   "known": 0.4
+  },
+  {
+   "label": "spontaneous human combustion",
+   "qid": "Q330305",
+   "fame": 0.527,
+   "country": null,
+   "kind": "paranormal-claim",
+   "description": "term encompassing reported cases of the combustion of a human body without an apparent external source of ignition",
+   "hook": "is the disputed idea that a living body can burst into flames with no outside spark",
+   "known": 0.4
+  },
+  {
+   "label": "near death experience",
+   "qid": "Q219566",
+   "fame": 0.499,
+   "country": null,
+   "kind": "paranormal-claim",
+   "description": "personal experiences associated with impending death",
+   "hook": "is a profound episode of seeing a bright light and floating out of the body when close to dying",
+   "known": 0.8
+  },
+  {
+   "label": "Hollow Earth",
+   "qid": "Q649143",
+   "fame": 0.493,
+   "country": null,
+   "kind": "theory",
+   "description": "historical concept proposing that the planet Earth is entirely hollow or contains a substantial interior space",
+   "hook": "is the discredited notion that the planet's interior is a vast empty space, even home to hidden worlds",
+   "known": 0.4
+  },
+  {
+   "label": "Mokele-mbembe",
+   "qid": "Q555716",
+   "fame": 0.484,
+   "country": null,
+   "kind": "cryptid",
+   "description": "water-dwelling entity that supposedly lives in the Congo River Basin",
+   "hook": null,
+   "known": 0.2
+  },
+  {
+   "label": "poltergeist",
+   "qid": "Q216893",
+   "fame": 0.47,
+   "country": null,
+   "kind": "ghost",
+   "description": "type of ghost or spirit that moves physical objects.",
+   "hook": "is a noisy spirit blamed for flinging furniture and rattling things around a house",
+   "known": 0.6
+  }
+ ]
+}

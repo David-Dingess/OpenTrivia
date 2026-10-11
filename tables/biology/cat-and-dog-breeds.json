@@ -1,0 +1,611 @@
+{
+ "id": "table.biology.cat-and-dog-breeds",
+ "kind": "table",
+ "title": "Cat & Dog Breeds: country of origin",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "cat-and-dog-breeds",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) WHERE { VALUES ?cls { wd:Q39367 wd:Q43577 } ?item wdt:P31 ?cls ; wdt:P495 ?c ; wikibase:sitelinks ?sl . FILTER(?sl >= 20) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T01:41:32.720Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T01:41:32.720Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "kind",
+   "label": "Kind",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "breed",
+  "many": "breeds",
+  "capitalise": true,
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country does {label} come from?",
+    "statement": "{label} comes from {value}.",
+    "match": "Match each breed to the country it comes from.",
+    "odd": "Three of these breeds come from {value}. Which one doesn't?",
+    "all": "Tap all {n} breeds from {value}.",
+    "reverse": "Which of these comes from {value}?"
+   },
+   "kind": {
+    "role": "link",
+    "statement": "{label} is a {value}.",
+    "odd": "Three of these are {value}s. Which one isn't?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "dachshund",
+   "qid": "Q29099",
+   "fame": 0.655,
+   "country": "Germany",
+   "kind": "dog",
+   "description": "German dog breed",
+   "hook": "has a long, low body originally bred to hunt badgers underground",
+   "known": 0.8
+  },
+  {
+   "label": "Maine coon",
+   "qid": "Q42659",
+   "fame": 0.641,
+   "country": "United States",
+   "kind": "cat",
+   "description": "breed of domestic cat",
+   "hook": "is one of the largest domesticated cat breeds, known for its tufted ears and bushy tail",
+   "known": 0.8
+  },
+  {
+   "label": "Chihuahua",
+   "qid": "Q653",
+   "fame": 0.601,
+   "country": "Mexico",
+   "kind": "dog",
+   "description": "Mexican dog breed",
+   "hook": "is the smallest breed of dog in the world",
+   "known": 0.8
+  },
+  {
+   "label": "Rottweiler",
+   "qid": "Q39093",
+   "fame": 0.59,
+   "country": "Germany",
+   "kind": "dog",
+   "description": "German dog breed",
+   "hook": "is a powerful, muscular guard breed often trained for police and service work",
+   "known": 0.8
+  },
+  {
+   "label": "Shih Tzu",
+   "qid": "Q39357",
+   "fame": 0.586,
+   "country": "China",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "is a small lapdog bred as a palace companion, known for its long flowing coat",
+   "known": 0.6
+  },
+  {
+   "label": "Ragdoll",
+   "qid": "Q42688",
+   "fame": 0.584,
+   "country": "United States",
+   "kind": "cat",
+   "description": "cat breed",
+   "hook": "is famous for going completely limp and relaxed when picked up",
+   "known": 0.4
+  },
+  {
+   "label": "Bengal cat",
+   "qid": "Q42583",
+   "fame": 0.581,
+   "country": "United States",
+   "kind": "cat",
+   "description": "cat breed",
+   "hook": "has a wild, spotted coat resembling a leopard's, from crossing a housecat with a wild Asian cat",
+   "known": 0.6
+  },
+  {
+   "label": "Bernese Mountain Dog",
+   "qid": "Q37608",
+   "fame": 0.577,
+   "country": "Switzerland",
+   "kind": "dog",
+   "description": "Swiss dog breed",
+   "hook": "is a large tri-colored farm breed bred to pull carts and herd cattle in the alps",
+   "known": 0.6
+  },
+  {
+   "label": "Shiba Inu",
+   "qid": "Q39315",
+   "fame": 0.573,
+   "country": "Japan",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "is a small, fox-faced breed with a curled tail that became a famous internet meme",
+   "known": 0.6
+  },
+  {
+   "label": "beagle",
+   "qid": "Q21102",
+   "fame": 0.561,
+   "country": "United Kingdom",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "is a small scent hound bred to track rabbits, prized for its keen nose",
+   "known": 0.8
+  },
+  {
+   "label": "Cavalier King Charles Spaniel",
+   "qid": "Q38072",
+   "fame": 0.558,
+   "country": "United Kingdom",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "was a favorite companion of a 17th-century monarch and remains a popular lapdog",
+   "known": 0.6
+  },
+  {
+   "label": "Great Dane",
+   "qid": "Q5414",
+   "fame": 0.558,
+   "country": "Germany",
+   "kind": "dog",
+   "description": "German dog breed",
+   "hook": "is one of the tallest dog breeds in the world, often called a gentle giant",
+   "known": 0.8
+  },
+  {
+   "label": "Dobermann",
+   "qid": "Q38358",
+   "fame": 0.555,
+   "country": "Germany",
+   "kind": "dog",
+   "description": "German dog breed",
+   "hook": "was originally bred by a tax collector as a loyal, muscular guard dog",
+   "known": 0.8
+  },
+  {
+   "label": "Staffordshire Bull Terrier",
+   "qid": "Q39285",
+   "fame": 0.553,
+   "country": "England",
+   "kind": "dog",
+   "description": "British breed of dog",
+   "hook": "is a muscular, affectionate breed once used in a banned blood sport, now a gentle family pet",
+   "known": 0.4
+  },
+  {
+   "label": "Borzoi",
+   "qid": "Q37866",
+   "fame": 0.552,
+   "country": "Russia",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "is a tall sighthound with a long silky coat, historically used to hunt wolves",
+   "known": 0.2
+  },
+  {
+   "label": "Vizsla",
+   "qid": "Q38819",
+   "fame": 0.546,
+   "country": "Hungary",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "is a golden-rust hunting breed bred to point and retrieve game birds",
+   "known": 0.2
+  },
+  {
+   "label": "Sphynx",
+   "qid": "Q42712",
+   "fame": 0.545,
+   "country": "Canada",
+   "kind": "cat",
+   "description": "hairless cat breed",
+   "hook": "is a wrinkled, hairless cat breed known for its warm, suede-like skin",
+   "known": 0.4
+  },
+  {
+   "label": "Persian cat",
+   "qid": "Q42610",
+   "fame": 0.544,
+   "country": "Iran",
+   "kind": "cat",
+   "description": "cat breed",
+   "hook": "has a long, luxurious coat and a flat face, and is one of the most popular show cats",
+   "known": 0.8
+  },
+  {
+   "label": "Chow Chow",
+   "qid": "Q29013",
+   "fame": 0.542,
+   "country": "China",
+   "kind": "dog",
+   "description": "Chinese dog breed",
+   "hook": "has a distinctive blue-black tongue and a thick, lion-like mane",
+   "known": 0.6
+  },
+  {
+   "label": "Xoloitzcuintle",
+   "qid": "Q38856",
+   "fame": 0.54,
+   "country": "Mexico",
+   "kind": "dog",
+   "description": "Mexican dog breed",
+   "hook": "is an ancient hairless breed once considered sacred by an early Mesoamerican civilization",
+   "known": 0.2
+  },
+  {
+   "label": "Bull Terrier",
+   "qid": "Q38322",
+   "fame": 0.534,
+   "country": "England",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "has an unmistakable egg-shaped head unlike any other breed's",
+   "known": 0.4
+  },
+  {
+   "label": "Bulldog",
+   "qid": "Q38383",
+   "fame": 0.531,
+   "country": "United Kingdom",
+   "kind": "dog",
+   "description": "British breed of dog",
+   "hook": "has a wrinkled face and stocky build, and serves as the mascot for many sports teams",
+   "known": 0.8
+  },
+  {
+   "label": "Basenji",
+   "qid": "Q37871",
+   "fame": 0.528,
+   "country": "Democratic Republic of the Congo",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "is nicknamed the barkless breed because it makes a yodel-like sound instead of barking",
+   "known": 0.2
+  },
+  {
+   "label": "Pyrenean Mountain Dog",
+   "qid": "Q37803",
+   "fame": 0.521,
+   "country": "Spain",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "is a massive white livestock guardian bred to protect flocks in a rugged highland range",
+   "known": 0.2
+  },
+  {
+   "label": "basset hound",
+   "qid": "Q37716",
+   "fame": 0.518,
+   "country": "France",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "has short legs, very long ears, and a keen nose for tracking scent",
+   "known": 0.8
+  },
+  {
+   "label": "bloodhound",
+   "qid": "Q21098",
+   "fame": 0.517,
+   "country": "Belgium",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "has the most accurate nose of any breed and is used by law enforcement to track scent trails",
+   "known": 0.6
+  },
+  {
+   "label": "Bombay",
+   "qid": "Q42566",
+   "fame": 0.517,
+   "country": "United States",
+   "kind": "cat",
+   "description": "Cat breed",
+   "hook": "was bred to resemble a miniature black panther, with a sleek jet-black coat",
+   "known": 0.2
+  },
+  {
+   "label": "greyhound",
+   "qid": "Q38571",
+   "fame": 0.517,
+   "country": "United Kingdom",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "is the fastest breed of its kind, capable of reaching speeds over 40 miles per hour",
+   "known": 0.6
+  },
+  {
+   "label": "Dalmatian",
+   "qid": "Q17504",
+   "fame": 0.512,
+   "country": "Croatia",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "has a white coat covered in dark spots and is a traditional mascot for firehouses",
+   "known": 0.8
+  },
+  {
+   "label": "Yorkshire Terrier",
+   "qid": "Q39330",
+   "fame": 0.512,
+   "country": "England",
+   "kind": "dog",
+   "description": "British breed dog belonging to terrier family.",
+   "hook": "is a tiny toy breed with a long silky coat, originally bred to catch rats in textile mills",
+   "known": 0.6
+  },
+  {
+   "label": "Pekingese",
+   "qid": "Q38959",
+   "fame": 0.511,
+   "country": "China",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "is a small imperial lapdog with a flat face and mane, once reserved for royal households",
+   "known": 0.4
+  },
+  {
+   "label": "Havanese",
+   "qid": "Q38449",
+   "fame": 0.505,
+   "country": "Cuba",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "is a small, silky-coated toy breed considered the only one native to a Caribbean island",
+   "known": 0.2
+  },
+  {
+   "label": "Weimaraner",
+   "qid": "Q38965",
+   "fame": 0.503,
+   "country": "Germany",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "has a sleek silver-grey coat that earned it the nickname the gray ghost",
+   "known": 0.4
+  },
+  {
+   "label": "Whippet",
+   "qid": "Q39122",
+   "fame": 0.503,
+   "country": "England",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "is a slender sighthound and one of the fastest-accelerating breeds relative to its size",
+   "known": 0.2
+  },
+  {
+   "label": "Leonberger",
+   "qid": "Q38487",
+   "fame": 0.495,
+   "country": "Germany",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "is a giant breed bred to resemble a lion, with a thick golden mane",
+   "known": 0.05
+  },
+  {
+   "label": "Miniature Schnauzer",
+   "qid": "Q38999",
+   "fame": 0.495,
+   "country": "Germany",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "has bushy eyebrows and a beard-like coat, and was bred to catch rats on farms",
+   "known": 0.4
+  },
+  {
+   "label": "Boston Terrier",
+   "qid": "Q37550",
+   "fame": 0.486,
+   "country": "United States",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "has a tuxedo-like black-and-white coat and is nicknamed the American gentleman",
+   "known": 0.6
+  },
+  {
+   "label": "West Highland White Terrier",
+   "qid": "Q17510",
+   "fame": 0.484,
+   "country": "Scotland",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "is a small, snowy-coated breed originally bred to hunt vermin on rugged estates",
+   "known": 0.4
+  },
+  {
+   "label": "Nova Scotia Duck Tolling Retriever",
+   "qid": "Q38824",
+   "fame": 0.482,
+   "country": "Canada",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "lures waterfowl within range by playing along the shore before its handler flushes them",
+   "known": 0.2
+  },
+  {
+   "label": "Shar Pei",
+   "qid": "Q38972",
+   "fame": 0.482,
+   "country": "China",
+   "kind": "dog",
+   "description": "Chinese dog breed",
+   "hook": "is known for its deeply wrinkled skin and a blue-black tongue shared with only one other breed",
+   "known": 0.6
+  },
+  {
+   "label": "Airedale Terrier",
+   "qid": "Q37617",
+   "fame": 0.478,
+   "country": "United Kingdom",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "is the largest in its broad family of ratting breeds, sometimes called their king",
+   "known": 0.2
+  },
+  {
+   "label": "Rough Collie",
+   "qid": "Q38650",
+   "fame": 0.47,
+   "country": "United Kingdom",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "is a long-haired herding breed made famous by a heroic television and film dog character",
+   "known": 0.6
+  },
+  {
+   "label": "Bullmastiff",
+   "qid": "Q38080",
+   "fame": 0.469,
+   "country": "United Kingdom",
+   "kind": "dog",
+   "description": "English dog breed",
+   "hook": "is a large, powerful guard breed originally developed to catch and hold poachers on estates",
+   "known": 0.2
+  },
+  {
+   "label": "Cairn Terrier",
+   "qid": "Q37888",
+   "fame": 0.469,
+   "country": "Scotland",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "is a small, shaggy breed best known for playing a beloved character in a classic Hollywood film",
+   "known": 0.4
+  },
+  {
+   "label": "Beauceron",
+   "qid": "Q37720",
+   "fame": 0.465,
+   "country": "France",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "is a large herding and guard breed distinguished by double dewclaws on its hind legs",
+   "known": 0.05
+  },
+  {
+   "label": "Miniature Pinscher",
+   "qid": "Q38990",
+   "fame": 0.46,
+   "country": "Germany",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "resembles a small version of a sleek guard breed and moves with a distinctive high-stepping gait",
+   "known": 0.2
+  },
+  {
+   "label": "Burmese",
+   "qid": "Q42573",
+   "fame": 0.459,
+   "country": "Myanmar",
+   "kind": "cat",
+   "description": "cat breed",
+   "hook": "has a glossy, compact body and traces back to a single cat brought west from southeast Asia",
+   "known": 0.2
+  },
+  {
+   "label": "Shetland Sheepdog",
+   "qid": "Q39058",
+   "fame": 0.459,
+   "country": "United Kingdom",
+   "kind": "dog",
+   "description": "Dog breed",
+   "hook": "resembles a miniature herding collie and originated on a remote group of northern islands",
+   "known": 0.4
+  },
+  {
+   "label": "Coton de Tulear",
+   "qid": "Q38295",
+   "fame": 0.458,
+   "country": "Madagascar",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "has a soft, cotton-like white coat and was once reserved as a companion for island nobility",
+   "known": 0.05
+  },
+  {
+   "label": "Devon Rex",
+   "qid": "Q42570",
+   "fame": 0.456,
+   "country": "England",
+   "kind": "cat",
+   "description": "breed of cat",
+   "hook": "has large ears and a curly coat, giving it an elfin, pixie-like face",
+   "known": 0.2
+  },
+  {
+   "label": "Border Terrier",
+   "qid": "Q37558",
+   "fame": 0.454,
+   "country": "United Kingdom",
+   "kind": "dog",
+   "description": "dog breed",
+   "hook": "has a distinctive otter-shaped head and was bred to chase foxes from their dens",
+   "known": 0.2
+  },
+  {
+   "label": "Chartreux",
+   "qid": "Q42588",
+   "fame": 0.453,
+   "country": "France",
+   "kind": "cat",
+   "description": "cat breed",
+   "hook": "has a plush blue-grey coat and a rounded face that gives it a permanent smiling expression",
+   "known": 0.2
+  },
+  {
+   "label": "Abruzzo-Maremma Sheepdog",
+   "qid": "Q21074",
+   "fame": 0.451,
+   "country": "Italy",
+   "kind": "dog",
+   "description": "Italian dog breed",
+   "hook": "is a large white livestock guardian breed that blends in with the flocks it protects",
+   "known": 0.05
+  },
+  {
+   "label": "Dogue de Bordeaux",
+   "qid": "Q37878",
+   "fame": 0.451,
+   "country": "France",
+   "kind": "dog",
+   "description": "French dog breed",
+   "hook": "has one of the largest heads of any breed and once starred alongside a Hollywood actor in a hit film",
+   "known": 0.2
+  }
+ ]
+}

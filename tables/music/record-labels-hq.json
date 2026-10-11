@@ -1,0 +1,417 @@
+{
+ "id": "table.music.record-labels-hq",
+ "kind": "table",
+ "title": "Record labels: where each is based",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "record-labels",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?hqLabel ?countryLabel WHERE { { SELECT ?item (SAMPLE(?h) AS ?hq) (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?h) AS ?nh) WHERE { ?item wdt:P31/wdt:P279* wd:Q18127 ; wdt:P159 ?h . ?h wdt:P17 ?c . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nh = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T08:39:53.846Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T08:39:53.846Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "hq",
+   "label": "Headquarters city",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "record label",
+  "many": "record labels",
+  "hookAsk": "Which record label {hook}?",
+  "hookStatement": "",
+  "columns": {
+   "hq": {
+    "role": "link",
+    "pick": "Which city is the record label {label} based in?",
+    "statement": "{label} is based in {value}.",
+    "match": "Match each record label to the city it is based in.",
+    "odd": "Three of these record labels are based in {value}. Which one isn't?",
+    "all": "Tap all {n} record labels based in {value}.",
+    "reverse": "Which of these record labels is based in {value}?"
+   },
+   "country": {
+    "role": "link",
+    "pick": "Which country is the record label {label} based in?",
+    "statement": "{label} is based in {value}.",
+    "match": "Match each record label to the country it is based in.",
+    "odd": "Three of these record labels are based in {value}. Which one isn't?",
+    "all": "Tap all {n} record labels based in {value}.",
+    "reverse": "Which of these record labels is based in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Death Row Records",
+   "qid": "Q847018",
+   "fame": 0.593,
+   "hq": "Beverly Hills",
+   "country": "United States",
+   "description": "American record label",
+   "hook": "was the hip-hop powerhouse behind multi-platinum West Coast albums by Dr. Dre, Snoop Dogg and 2Pac",
+   "known": 0.6,
+   "kind": "hip-hop label"
+  },
+  {
+   "label": "Motown",
+   "qid": "Q43327",
+   "fame": 0.578,
+   "hq": "Los Angeles",
+   "country": "United States",
+   "description": "American record label",
+   "hook": "was founded by Berry Gordy, its name a blend of the words motor and town",
+   "known": 0.95,
+   "kind": "major label"
+  },
+  {
+   "label": "Columbia Records",
+   "qid": "Q183387",
+   "fame": 0.565,
+   "hq": "New York City",
+   "country": "United States",
+   "description": "American record label owned by Sony",
+   "hook": "is the oldest surviving brand name in the recorded sound business",
+   "known": 0.8,
+   "kind": "major label"
+  },
+  {
+   "label": "Def Jam Recordings",
+   "qid": "Q654283",
+   "fame": 0.564,
+   "hq": "New York City",
+   "country": "United States",
+   "description": "American record label",
+   "hook": "is a hip-hop-focused label that also specializes in contemporary R&B and soul",
+   "known": 0.8,
+   "kind": "hip-hop label"
+  },
+  {
+   "label": "Hybe",
+   "qid": "Q16161254",
+   "fame": 0.562,
+   "hq": "Yongsan District",
+   "country": "South Korea",
+   "description": "South Korean multinational corporation",
+   "hook": "began life as Big Hit Entertainment before growing into a tech-driven lifestyle conglomerate",
+   "known": 0.4,
+   "kind": "k-pop label"
+  },
+  {
+   "label": "Geffen Records",
+   "qid": "Q212699",
+   "fame": 0.557,
+   "hq": "Santa Monica",
+   "country": "United States",
+   "description": "American record label",
+   "hook": "was founded by a mogul as a music arm of his film company, with backing from Warner Bros",
+   "known": 0.6,
+   "kind": "major label"
+  },
+  {
+   "label": "Interscope Records",
+   "qid": "Q231694",
+   "fame": 0.547,
+   "hq": "Santa Monica",
+   "country": "United States",
+   "description": "American record label based in California",
+   "hook": "is a major label owned by Universal Music Group, one of the world's biggest music companies",
+   "known": 0.6,
+   "kind": "major label"
+  },
+  {
+   "label": "JYP Entertainment",
+   "qid": "Q483238",
+   "fame": 0.539,
+   "hq": "Seoul",
+   "country": "South Korea",
+   "description": "South Korean entertainment company",
+   "hook": "is a record label and talent agency run by a famous singer-producer, among the largest of its kind",
+   "known": 0.4,
+   "kind": "k-pop label"
+  },
+  {
+   "label": "RCA Records",
+   "qid": "Q202585",
+   "fame": 0.532,
+   "hq": "New York City",
+   "country": "United States",
+   "description": "American record label",
+   "hook": "is a flagship Sony Music label, once the longtime rival of Columbia",
+   "known": 0.8,
+   "kind": "major label"
+  },
+  {
+   "label": "T-Series",
+   "qid": "Q7667850",
+   "fame": 0.531,
+   "hq": "Delhi",
+   "country": "India",
+   "description": "Indian music record label and film production company",
+   "hook": null,
+   "known": 0.2,
+   "kind": "music company"
+  },
+  {
+   "label": "Roc Nation",
+   "qid": "Q1194456",
+   "fame": 0.517,
+   "hq": "New York City",
+   "country": "United States",
+   "description": "American entertainment company",
+   "hook": "was founded by Jay-Z as the successor to his earlier label, and also works as a talent agency",
+   "known": 0.6,
+   "kind": "hip-hop label"
+  },
+  {
+   "label": "SM Entertainment",
+   "qid": "Q483938",
+   "fame": 0.511,
+   "hq": "Seoul",
+   "country": "South Korea",
+   "description": "South Korean entertainment company",
+   "hook": "was founded by Lee Soo-man and fostered many K-pop stars with huge global fanbases",
+   "known": 0.4,
+   "kind": "k-pop label"
+  },
+  {
+   "label": "Republic Records",
+   "qid": "Q4413456",
+   "fame": 0.508,
+   "hq": "New York City",
+   "country": "United States",
+   "description": "American record label, division of Universal Music Group (UMG)",
+   "hook": "was founded by brothers Avery and Monte Lipman before being bought by Universal Music Group",
+   "known": 0.6,
+   "kind": "major label"
+  },
+  {
+   "label": "OVO Sound",
+   "qid": "Q16070339",
+   "fame": 0.505,
+   "hq": "Toronto",
+   "country": "Canada",
+   "description": "Canadian record label",
+   "hook": "was founded by Drake, producer 40 and manager Oliver El-Khatib",
+   "known": 0.4,
+   "kind": "hip-hop label"
+  },
+  {
+   "label": "Aftermath Entertainment",
+   "qid": "Q389284",
+   "fame": 0.503,
+   "hq": "Santa Monica",
+   "country": "United States",
+   "description": "American record label",
+   "hook": "was founded by Dr. Dre and is distributed through Interscope",
+   "known": 0.6,
+   "kind": "hip-hop label"
+  },
+  {
+   "label": "Epic Records",
+   "qid": "Q216364",
+   "fame": 0.502,
+   "hq": "Los Angeles",
+   "country": "United States",
+   "description": "American record label",
+   "hook": "began as a jazz and classical label before expanding into pop, R&B, rock and hip-hop",
+   "known": 0.6,
+   "kind": "major label"
+  },
+  {
+   "label": "Sony Music",
+   "qid": "Q56760250",
+   "fame": 0.497,
+   "hq": "New York City",
+   "country": "United States",
+   "description": "American multinational music recording company",
+   "hook": "is the Japanese-owned recording division of a huge multinational conglomerate",
+   "known": 0.8,
+   "kind": "major label"
+  },
+  {
+   "label": "Island Records",
+   "qid": "Q190585",
+   "fame": 0.492,
+   "hq": "London",
+   "country": "United Kingdom",
+   "description": "British-Jamaican record label",
+   "hook": "was founded in Jamaica by Chris Blackwell and partners, and later sold to PolyGram",
+   "known": 0.6,
+   "kind": "major label"
+  },
+  {
+   "label": "Young Money Entertainment",
+   "qid": "Q1070152",
+   "fame": 0.486,
+   "hq": "New Orleans",
+   "country": "United States",
+   "description": "American record label",
+   "hook": "was founded by Lil Wayne as an imprint of a label billed as a billionaires collective",
+   "known": 0.4,
+   "kind": "hip-hop label"
+  },
+  {
+   "label": "Ruthless Records",
+   "qid": "Q575026",
+   "fame": 0.485,
+   "hq": "Los Angeles",
+   "country": "United States",
+   "description": "American record label founded by Eric \"Eazy-E\" Wright and Jerry Heller",
+   "hook": null,
+   "known": 0.2,
+   "kind": "hip-hop label"
+  },
+  {
+   "label": "Virgin Records",
+   "qid": "Q203059",
+   "fame": 0.483,
+   "hq": "Los Angeles",
+   "country": "United States",
+   "description": "British record label",
+   "hook": "was founded by Richard Branson and partners as an independent label before becoming a major",
+   "known": 0.6,
+   "kind": "major label"
+  },
+  {
+   "label": "Fueled by Ramen",
+   "qid": "Q1046066",
+   "fame": 0.482,
+   "hq": "New York City",
+   "country": "United States",
+   "description": "American record label",
+   "hook": null,
+   "known": 0.2,
+   "kind": "independent label"
+  },
+  {
+   "label": "Warner Records Inc.",
+   "qid": "Q67030918",
+   "fame": 0.475,
+   "hq": "Burbank",
+   "country": "United States",
+   "description": "American record company; subsidiary of Warner Music Group",
+   "hook": "began as the recorded-music arm of a major Hollywood film studio",
+   "known": 0.6,
+   "kind": "major label"
+  },
+  {
+   "label": "EMI",
+   "qid": "Q183412",
+   "fame": 0.474,
+   "hq": "London",
+   "country": "United Kingdom",
+   "description": "defunct British music recording and publishing company",
+   "hook": "was bought by Universal Music after being the fourth-largest company in the industry",
+   "known": 0.8,
+   "kind": "major label"
+  },
+  {
+   "label": "The Black Label",
+   "qid": "Q24866458",
+   "fame": 0.474,
+   "hq": "Seoul",
+   "country": "South Korea",
+   "description": "South Korean record label",
+   "hook": null,
+   "known": 0.2,
+   "kind": "k-pop label"
+  },
+  {
+   "label": "GOOD Music",
+   "qid": "Q1142456",
+   "fame": 0.473,
+   "hq": "New York City",
+   "country": "United States",
+   "description": "American record label",
+   "hook": "was founded by Kanye West and released the compilation album Cruel Summer",
+   "known": 0.4,
+   "kind": "hip-hop label"
+  },
+  {
+   "label": "Apple Records",
+   "qid": "Q213710",
+   "fame": 0.472,
+   "hq": "London",
+   "country": "United Kingdom",
+   "description": "UK international record label; imprint of Apple Corps Ltd.",
+   "hook": "was founded by the Beatles as a creative outlet, signing Mary Hopkin, James Taylor and Badfinger",
+   "known": 0.6,
+   "kind": "independent label"
+  },
+  {
+   "label": "Elektra",
+   "qid": "Q726251",
+   "fame": 0.464,
+   "hq": "New York City",
+   "country": "United States",
+   "description": "American record label",
+   "hook": "was founded by Jac Holzman and played a key role in developing folk and rock music",
+   "known": 0.6,
+   "kind": "major label"
+  },
+  {
+   "label": "Roc-A-Fella Records",
+   "qid": "Q1153032",
+   "fame": 0.462,
+   "hq": "New York City",
+   "country": "United States",
+   "description": "American hip hop record label",
+   "hook": "was the hip-hop label co-founded by Jay-Z and Damon Dash",
+   "known": 0.4,
+   "kind": "hip-hop label"
+  },
+  {
+   "label": "Epitaph Records",
+   "qid": "Q726153",
+   "fame": 0.455,
+   "hq": "Hollywood",
+   "country": "United States",
+   "description": "American independent record label",
+   "hook": null,
+   "known": 0.2,
+   "kind": "independent label"
+  },
+  {
+   "label": "Big Machine Records",
+   "qid": "Q2902300",
+   "fame": 0.45,
+   "hq": "Nashville",
+   "country": "United States",
+   "description": "American record label",
+   "hook": null,
+   "known": 0.2,
+   "kind": "independent label"
+  }
+ ]
+}

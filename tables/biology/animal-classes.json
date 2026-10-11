@@ -1,0 +1,2190 @@
+{
+ "id": "table.biology.animal-classes",
+ "kind": "table",
+ "title": "Famous animals and their class",
+ "genre": "science-math-tech",
+ "category": "biology",
+ "topic": "wildlife",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?classLabel WHERE { { SELECT ?item ?name (MIN(?cn) AS ?cmin) (MAX(?cn) AS ?cmax) WHERE { VALUES ?name { \"African bush elephant\"@en \"Asian elephant\"@en \"Lion\"@en \"Tiger\"@en \"Leopard\"@en \"Jaguar\"@en \"Cheetah\"@en \"Cougar\"@en \"Polar bear\"@en \"Brown bear\"@en \"Giant panda\"@en \"Gray wolf\"@en \"Red fox\"@en \"Coyote\"@en \"Giraffe\"@en \"Hippopotamus\"@en \"Rhinoceros\"@en \"Plains zebra\"@en \"Horse\"@en \"Domestic pig\"@en \"Cattle\"@en \"Sheep\"@en \"Goat\"@en \"Camel\"@en \"Llama\"@en \"Kangaroo\"@en \"Koala\"@en \"Platypus\"@en \"Echidna\"@en \"Gorilla\"@en \"Chimpanzee\"@en \"Orangutan\"@en \"Bonobo\"@en \"Baboon\"@en \"Lemur\"@en \"Sloth\"@en \"Armadillo\"@en \"Anteater\"@en \"Aardvark\"@en \"Bat\"@en \"Squirrel\"@en \"Beaver\"@en \"Capybara\"@en \"Hedgehog\"@en \"Raccoon\"@en \"Skunk\"@en \"Meerkat\"@en \"Hyena\"@en \"Moose\"@en \"Bison\"@en \"Reindeer\"@en \"White-tailed deer\"@en \"Walrus\"@en \"Humpback whale\"@en \"Narwhal\"@en \"Beluga whale\"@en \"Dolphin\"@en \"Sea otter\"@en \"Pangolin\"@en \"Tasmanian devil\"@en \"Wombat\"@en \"Rabbit\"@en \"Hamster\"@en \"Guinea pig\"@en \"Okapi\"@en \"Warthog\"@en \"Wild boar\"@en \"Tapir\"@en \"Red panda\"@en \"Snow leopard\"@en \"Cat\"@en \"Dog\"@en \"Mouse\"@en \"Rat\"@en \"Blue whale\"@en \"Orca\"@en \"Manatee\"@en \"Seal\"@en \"Otter\"@en \"Badger\"@en \"Weasel\"@en \"Ferret\"@en \"Donkey\"@en \"Gibbon\"@en \"Mandrill\"@en \"Bald eagle\"@en \"Peregrine falcon\"@en \"Snowy owl\"@en \"Emperor penguin\"@en \"Ostrich\"@en \"Emu\"@en \"Flamingo\"@en \"Albatross\"@en \"Atlantic puffin\"@en \"Mallard\"@en \"Mute swan\"@en \"Wild turkey\"@en \"Chicken\"@en \"Blue jay\"@en \"Northern cardinal\"@en \"American robin\"@en \"Hummingbird\"@en \"Macaw\"@en \"Toucan\"@en \"Pigeon\"@en \"Peafowl\"@en \"Kiwi (bird)\"@en \"Cassowary\"@en \"Pelican\"@en \"Common raven\"@en \"Parrot\"@en \"Woodpecker\"@en \"Dodo\"@en \"Kookaburra\"@en \"Greater roadrunner\"@en \"Condor\"@en \"Stork\"@en \"Heron\"@en \"Crane (bird)\"@en \"Goose\"@en \"Duck\"@en \"House sparrow\"@en \"Domestic canary\"@en \"Cockatoo\"@en \"Budgerigar\"@en \"Barn owl\"@en \"Great horned owl\"@en \"Penguin\"@en \"Eagle\"@en \"Owl\"@en \"Hawk\"@en \"Falcon\"@en \"Vulture\"@en \"Crow\"@en \"Magpie\"@en \"Starling\"@en \"Finch\"@en \"Swallow\"@en \"Cuckoo\"@en \"Hornbill\"@en \"Komodo dragon\"@en \"Green iguana\"@en \"Chameleon\"@en \"Gecko\"@en \"Crocodile\"@en \"Nile crocodile\"@en \"American alligator\"@en \"Gharial\"@en \"King cobra\"@en \"Rattlesnake\"@en \"Boa constrictor\"@en \"Green anaconda\"@en \"Black mamba\"@en \"Tortoise\"@en \"Galápagos tortoise\"@en \"Leatherback sea turtle\"@en \"Loggerhead sea turtle\"@en \"Gila monster\"@en \"Thorny devil\"@en \"Frilled lizard\"@en \"Basilisk\"@en \"Tuatara\"@en \"Bearded dragon\"@en \"Corn snake\"@en \"Monitor lizard\"@en \"Marine iguana\"@en \"Turtle\"@en \"Sea turtle\"@en \"Cobra\"@en \"Viper\"@en \"Copperhead\"@en \"Garter snake\"@en \"Lizard\"@en \"Snake\"@en \"Alligator snapping turtle\"@en \"American bullfrog\"@en \"Poison dart frog\"@en \"Cane toad\"@en \"Axolotl\"@en \"Tree frog\"@en \"Salamander\"@en \"Newt\"@en \"Fire salamander\"@en \"Hellbender\"@en \"Common frog\"@en \"Tomato frog\"@en \"Glass frog\"@en \"Surinam toad\"@en \"Caecilian\"@en \"Goliath frog\"@en \"Red-eyed tree frog\"@en \"Tiger salamander\"@en \"Toad\"@en \"Great white shark\"@en \"Whale shark\"@en \"Hammerhead shark\"@en \"Goldfish\"@en \"Clownfish\"@en \"Seahorse\"@en \"Swordfish\"@en \"Atlantic salmon\"@en \"Piranha\"@en \"Electric eel\"@en \"Pufferfish\"@en \"Anglerfish\"@en \"Koi\"@en \"Barracuda\"@en \"Manta ray\"@en \"Stingray\"@en \"Tuna\"@en \"Catfish\"@en \"Pike (fish)\"@en \"Trout\"@en \"Moray eel\"@en \"Ocean sunfish\"@en \"Lionfish\"@en \"Siamese fighting fish\"@en \"Guppy\"@en \"Shortfin mako shark\"@en \"Tiger shark\"@en \"Bull shark\"@en \"Basking shark\"@en \"Coelacanth\"@en \"Marlin\"@en \"Sailfish\"@en \"Cod\"@en \"Herring\"@en \"Sardine\"@en \"Anchovy\"@en \"Eel\"@en \"Carp\"@en \"Sturgeon\"@en \"Perch\"@en \"Bass\"@en \"Mackerel\"@en \"Halibut\"@en \"Flounder\"@en \"Tilapia\"@en \"Monarch butterfly\"@en \"Honey bee\"@en \"Ant\"@en \"Coccinellidae\"@en \"Dragonfly\"@en \"Mantis\"@en \"Grasshopper\"@en \"Cockroach\"@en \"Mosquito\"@en \"Housefly\"@en \"Firefly\"@en \"Stag beetle\"@en \"Termite\"@en \"Cricket (insect)\"@en \"Bumblebee\"@en \"Wasp\"@en \"Cicada\"@en \"Moth\"@en \"Hornet\"@en \"Stick insect\"@en \"Flea\"@en \"Louse\"@en \"Atlas moth\"@en \"Butterfly\"@en \"Beetle\"@en \"Fly\"@en \"Bee\"@en \"Locust\"@en \"Aphid\"@en \"Earwig\"@en \"Tarantula\"@en \"Black widow spider\"@en \"Scorpion\"@en \"Opiliones\"@en \"Tick\"@en \"Brown recluse spider\"@en \"Camel spider\"@en \"Huntsman spider\"@en \"Jumping spider\"@en \"Mite\"@en \"Whip scorpion\"@en \"Spider\"@en \"Wolf spider\"@en \"Redback spider\"@en \"Orb-weaver spider\"@en \"American lobster\"@en \"Hermit crab\"@en \"Coconut crab\"@en \"Blue crab\"@en \"Shrimp\"@en \"Krill\"@en \"Barnacle\"@en \"Woodlouse\"@en \"Crayfish\"@en \"Japanese spider crab\"@en \"Fiddler crab\"@en \"Mantis shrimp\"@en \"King crab\"@en \"Crab\"@en \"Dungeness crab\"@en \"Giant squid\"@en \"Common octopus\"@en \"Nautilus\"@en \"Cuttlefish\"@en \"Garden snail\"@en \"Banana slug\"@en \"Slug\"@en \"Oyster\"@en \"Clam\"@en \"Mussel\"@en \"Scallop\"@en \"Cone snail\"@en \"Giant clam\"@en \"Colossal squid\"@en \"Sea slug\"@en \"Squid\"@en \"Abalone\"@en \"Conch\"@en \"Cowrie\"@en \"Whelk\"@en } ?a schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?name . ?item wdt:P171+ ?f . ?f wdt:P105 wd:Q37517 . VALUES (?f ?cn) { (wd:Q7377 \"0Mammal\") (wd:Q5113 \"2Bird\") (wd:Q10811 \"1Reptile\") (wd:Q10908 \"0Amphibian\") (wd:Q1390 \"0Insect\") (wd:Q1358 \"0Arachnid\") (wd:Q182978 \"0Crustacean\") (wd:Q150628 \"0Crustacean\") (wd:Q128257 \"0Mollusc\") (wd:Q4867740 \"0Mollusc\") (wd:Q25368 \"0Mollusc\") (wd:Q188906 \"0Mollusc\") (wd:Q25371 \"0Fish\") (wd:Q127282 \"0Fish\") (wd:Q59166 \"0Fish\") (wd:Q343460 \"0Fish\") } } GROUP BY ?item ?name } hint:Prior hint:runFirst true . VALUES (?name ?itemLabel) { (\"African bush elephant\"@en \"African elephant\") (\"Asian elephant\"@en \"Asian elephant\") (\"Lion\"@en \"Lion\") (\"Tiger\"@en \"Tiger\") (\"Leopard\"@en \"Leopard\") (\"Jaguar\"@en \"Jaguar\") (\"Cheetah\"@en \"Cheetah\") (\"Cougar\"@en \"Cougar\") (\"Polar bear\"@en \"Polar bear\") (\"Brown bear\"@en \"Brown bear\") (\"Giant panda\"@en \"Giant panda\") (\"Gray wolf\"@en \"Wolf\") (\"Red fox\"@en \"Fox\") (\"Coyote\"@en \"Coyote\") (\"Giraffe\"@en \"Giraffe\") (\"Hippopotamus\"@en \"Hippopotamus\") (\"Rhinoceros\"@en \"Rhinoceros\") (\"Plains zebra\"@en \"Zebra\") (\"Horse\"@en \"Horse\") (\"Domestic pig\"@en \"Pig\") (\"Cattle\"@en \"Cow\") (\"Sheep\"@en \"Sheep\") (\"Goat\"@en \"Goat\") (\"Camel\"@en \"Camel\") (\"Llama\"@en \"Llama\") (\"Kangaroo\"@en \"Kangaroo\") (\"Koala\"@en \"Koala\") (\"Platypus\"@en \"Platypus\") (\"Echidna\"@en \"Echidna\") (\"Gorilla\"@en \"Gorilla\") (\"Chimpanzee\"@en \"Chimpanzee\") (\"Orangutan\"@en \"Orangutan\") (\"Bonobo\"@en \"Bonobo\") (\"Baboon\"@en \"Baboon\") (\"Lemur\"@en \"Lemur\") (\"Sloth\"@en \"Sloth\") (\"Armadillo\"@en \"Armadillo\") (\"Anteater\"@en \"Anteater\") (\"Aardvark\"@en \"Aardvark\") (\"Bat\"@en \"Bat\") (\"Squirrel\"@en \"Squirrel\") (\"Beaver\"@en \"Beaver\") (\"Capybara\"@en \"Capybara\") (\"Hedgehog\"@en \"Hedgehog\") (\"Raccoon\"@en \"Raccoon\") (\"Skunk\"@en \"Skunk\") (\"Meerkat\"@en \"Meerkat\") (\"Hyena\"@en \"Hyena\") (\"Moose\"@en \"Moose\") (\"Bison\"@en \"Bison\") (\"Reindeer\"@en \"Reindeer\") (\"White-tailed deer\"@en \"Deer\") (\"Walrus\"@en \"Walrus\") (\"Humpback whale\"@en \"Humpback whale\") (\"Narwhal\"@en \"Narwhal\") (\"Beluga whale\"@en \"Beluga whale\") (\"Dolphin\"@en \"Dolphin\") (\"Sea otter\"@en \"Sea otter\") (\"Pangolin\"@en \"Pangolin\") (\"Tasmanian devil\"@en \"Tasmanian devil\") (\"Wombat\"@en \"Wombat\") (\"Rabbit\"@en \"Rabbit\") (\"Hamster\"@en \"Hamster\") (\"Guinea pig\"@en \"Guinea pig\") (\"Okapi\"@en \"Okapi\") (\"Warthog\"@en \"Warthog\") (\"Wild boar\"@en \"Wild boar\") (\"Tapir\"@en \"Tapir\") (\"Red panda\"@en \"Red panda\") (\"Snow leopard\"@en \"Snow leopard\") (\"Cat\"@en \"Cat\") (\"Dog\"@en \"Dog\") (\"Mouse\"@en \"Mouse\") (\"Rat\"@en \"Rat\") (\"Blue whale\"@en \"Blue whale\") (\"Orca\"@en \"Orca\") (\"Manatee\"@en \"Manatee\") (\"Seal\"@en \"Seal\") (\"Otter\"@en \"Otter\") (\"Badger\"@en \"Badger\") (\"Weasel\"@en \"Weasel\") (\"Ferret\"@en \"Ferret\") (\"Donkey\"@en \"Donkey\") (\"Gibbon\"@en \"Gibbon\") (\"Mandrill\"@en \"Mandrill\") (\"Bald eagle\"@en \"Bald eagle\") (\"Peregrine falcon\"@en \"Peregrine falcon\") (\"Snowy owl\"@en \"Snowy owl\") (\"Emperor penguin\"@en \"Emperor penguin\") (\"Ostrich\"@en \"Ostrich\") (\"Emu\"@en \"Emu\") (\"Flamingo\"@en \"Flamingo\") (\"Albatross\"@en \"Albatross\") (\"Atlantic puffin\"@en \"Puffin\") (\"Mallard\"@en \"Mallard\") (\"Mute swan\"@en \"Swan\") (\"Wild turkey\"@en \"Turkey\") (\"Chicken\"@en \"Chicken\") (\"Blue jay\"@en \"Blue jay\") (\"Northern cardinal\"@en \"Cardinal\") (\"American robin\"@en \"Robin\") (\"Hummingbird\"@en \"Hummingbird\") (\"Macaw\"@en \"Macaw\") (\"Toucan\"@en \"Toucan\") (\"Pigeon\"@en \"Pigeon\") (\"Peafowl\"@en \"Peacock\") (\"Kiwi (bird)\"@en \"Kiwi\") (\"Cassowary\"@en \"Cassowary\") (\"Pelican\"@en \"Pelican\") (\"Common raven\"@en \"Raven\") (\"Parrot\"@en \"Parrot\") (\"Woodpecker\"@en \"Woodpecker\") (\"Dodo\"@en \"Dodo\") (\"Kookaburra\"@en \"Kookaburra\") (\"Greater roadrunner\"@en \"Roadrunner\") (\"Condor\"@en \"Condor\") (\"Stork\"@en \"Stork\") (\"Heron\"@en \"Heron\") (\"Crane (bird)\"@en \"Crane\") (\"Goose\"@en \"Goose\") (\"Duck\"@en \"Duck\") (\"House sparrow\"@en \"Sparrow\") (\"Domestic canary\"@en \"Canary\") (\"Cockatoo\"@en \"Cockatoo\") (\"Budgerigar\"@en \"Budgerigar\") (\"Barn owl\"@en \"Barn owl\") (\"Great horned owl\"@en \"Great horned owl\") (\"Penguin\"@en \"Penguin\") (\"Eagle\"@en \"Eagle\") (\"Owl\"@en \"Owl\") (\"Hawk\"@en \"Hawk\") (\"Falcon\"@en \"Falcon\") (\"Vulture\"@en \"Vulture\") (\"Crow\"@en \"Crow\") (\"Magpie\"@en \"Magpie\") (\"Starling\"@en \"Starling\") (\"Finch\"@en \"Finch\") (\"Swallow\"@en \"Swallow\") (\"Cuckoo\"@en \"Cuckoo\") (\"Hornbill\"@en \"Hornbill\") (\"Komodo dragon\"@en \"Komodo dragon\") (\"Green iguana\"@en \"Iguana\") (\"Chameleon\"@en \"Chameleon\") (\"Gecko\"@en \"Gecko\") (\"Crocodile\"@en \"Crocodile\") (\"Nile crocodile\"@en \"Nile crocodile\") (\"American alligator\"@en \"Alligator\") (\"Gharial\"@en \"Gharial\") (\"King cobra\"@en \"King cobra\") (\"Rattlesnake\"@en \"Rattlesnake\") (\"Boa constrictor\"@en \"Boa constrictor\") (\"Green anaconda\"@en \"Anaconda\") (\"Black mamba\"@en \"Black mamba\") (\"Tortoise\"@en \"Tortoise\") (\"Galápagos tortoise\"@en \"Galápagos tortoise\") (\"Leatherback sea turtle\"@en \"Leatherback sea turtle\") (\"Loggerhead sea turtle\"@en \"Loggerhead sea turtle\") (\"Gila monster\"@en \"Gila monster\") (\"Thorny devil\"@en \"Thorny devil\") (\"Frilled lizard\"@en \"Frilled lizard\") (\"Basilisk\"@en \"Basilisk\") (\"Tuatara\"@en \"Tuatara\") (\"Bearded dragon\"@en \"Bearded dragon\") (\"Corn snake\"@en \"Corn snake\") (\"Monitor lizard\"@en \"Monitor lizard\") (\"Marine iguana\"@en \"Marine iguana\") (\"Turtle\"@en \"Turtle\") (\"Sea turtle\"@en \"Sea turtle\") (\"Cobra\"@en \"Cobra\") (\"Viper\"@en \"Viper\") (\"Copperhead\"@en \"Copperhead\") (\"Garter snake\"@en \"Garter snake\") (\"Lizard\"@en \"Lizard\") (\"Snake\"@en \"Snake\") (\"Alligator snapping turtle\"@en \"Snapping turtle\") (\"American bullfrog\"@en \"Bullfrog\") (\"Poison dart frog\"@en \"Poison dart frog\") (\"Cane toad\"@en \"Cane toad\") (\"Axolotl\"@en \"Axolotl\") (\"Tree frog\"@en \"Tree frog\") (\"Salamander\"@en \"Salamander\") (\"Newt\"@en \"Newt\") (\"Fire salamander\"@en \"Fire salamander\") (\"Hellbender\"@en \"Hellbender\") (\"Common frog\"@en \"Frog\") (\"Tomato frog\"@en \"Tomato frog\") (\"Glass frog\"@en \"Glass frog\") (\"Surinam toad\"@en \"Surinam toad\") (\"Caecilian\"@en \"Caecilian\") (\"Goliath frog\"@en \"Goliath frog\") (\"Red-eyed tree frog\"@en \"Red-eyed tree frog\") (\"Tiger salamander\"@en \"Tiger salamander\") (\"Toad\"@en \"Toad\") (\"Great white shark\"@en \"Great white shark\") (\"Whale shark\"@en \"Whale shark\") (\"Hammerhead shark\"@en \"Hammerhead shark\") (\"Goldfish\"@en \"Goldfish\") (\"Clownfish\"@en \"Clownfish\") (\"Seahorse\"@en \"Seahorse\") (\"Swordfish\"@en \"Swordfish\") (\"Atlantic salmon\"@en \"Salmon\") (\"Piranha\"@en \"Piranha\") (\"Electric eel\"@en \"Electric eel\") (\"Pufferfish\"@en \"Pufferfish\") (\"Anglerfish\"@en \"Anglerfish\") (\"Koi\"@en \"Koi\") (\"Barracuda\"@en \"Barracuda\") (\"Manta ray\"@en \"Manta ray\") (\"Stingray\"@en \"Stingray\") (\"Tuna\"@en \"Tuna\") (\"Catfish\"@en \"Catfish\") (\"Pike (fish)\"@en \"Pike\") (\"Trout\"@en \"Trout\") (\"Moray eel\"@en \"Moray eel\") (\"Ocean sunfish\"@en \"Mola mola\") (\"Lionfish\"@en \"Lionfish\") (\"Siamese fighting fish\"@en \"Betta\") (\"Guppy\"@en \"Guppy\") (\"Shortfin mako shark\"@en \"Mako shark\") (\"Tiger shark\"@en \"Tiger shark\") (\"Bull shark\"@en \"Bull shark\") (\"Basking shark\"@en \"Basking shark\") (\"Coelacanth\"@en \"Coelacanth\") (\"Marlin\"@en \"Marlin\") (\"Sailfish\"@en \"Sailfish\") (\"Cod\"@en \"Cod\") (\"Herring\"@en \"Herring\") (\"Sardine\"@en \"Sardine\") (\"Anchovy\"@en \"Anchovy\") (\"Eel\"@en \"Eel\") (\"Carp\"@en \"Carp\") (\"Sturgeon\"@en \"Sturgeon\") (\"Perch\"@en \"Perch\") (\"Bass\"@en \"Bass\") (\"Mackerel\"@en \"Mackerel\") (\"Halibut\"@en \"Halibut\") (\"Flounder\"@en \"Flounder\") (\"Tilapia\"@en \"Tilapia\") (\"Monarch butterfly\"@en \"Monarch butterfly\") (\"Honey bee\"@en \"Honeybee\") (\"Ant\"@en \"Ant\") (\"Coccinellidae\"@en \"Ladybug\") (\"Dragonfly\"@en \"Dragonfly\") (\"Mantis\"@en \"Praying mantis\") (\"Grasshopper\"@en \"Grasshopper\") (\"Cockroach\"@en \"Cockroach\") (\"Mosquito\"@en \"Mosquito\") (\"Housefly\"@en \"Housefly\") (\"Firefly\"@en \"Firefly\") (\"Stag beetle\"@en \"Stag beetle\") (\"Termite\"@en \"Termite\") (\"Cricket (insect)\"@en \"Cricket\") (\"Bumblebee\"@en \"Bumblebee\") (\"Wasp\"@en \"Wasp\") (\"Cicada\"@en \"Cicada\") (\"Moth\"@en \"Moth\") (\"Hornet\"@en \"Hornet\") (\"Stick insect\"@en \"Stick insect\") (\"Flea\"@en \"Flea\") (\"Louse\"@en \"Louse\") (\"Atlas moth\"@en \"Atlas moth\") (\"Butterfly\"@en \"Butterfly\") (\"Beetle\"@en \"Beetle\") (\"Fly\"@en \"Fly\") (\"Bee\"@en \"Bee\") (\"Locust\"@en \"Locust\") (\"Aphid\"@en \"Aphid\") (\"Earwig\"@en \"Earwig\") (\"Tarantula\"@en \"Tarantula\") (\"Black widow spider\"@en \"Black widow\") (\"Scorpion\"@en \"Scorpion\") (\"Opiliones\"@en \"Daddy longlegs\") (\"Tick\"@en \"Tick\") (\"Brown recluse spider\"@en \"Brown recluse\") (\"Camel spider\"@en \"Camel spider\") (\"Huntsman spider\"@en \"Huntsman spider\") (\"Jumping spider\"@en \"Jumping spider\") (\"Mite\"@en \"Mite\") (\"Whip scorpion\"@en \"Whip scorpion\") (\"Spider\"@en \"Spider\") (\"Wolf spider\"@en \"Wolf spider\") (\"Redback spider\"@en \"Redback spider\") (\"Orb-weaver spider\"@en \"Orb-weaver\") (\"American lobster\"@en \"Lobster\") (\"Hermit crab\"@en \"Hermit crab\") (\"Coconut crab\"@en \"Coconut crab\") (\"Blue crab\"@en \"Blue crab\") (\"Shrimp\"@en \"Shrimp\") (\"Krill\"@en \"Krill\") (\"Barnacle\"@en \"Barnacle\") (\"Woodlouse\"@en \"Woodlouse\") (\"Crayfish\"@en \"Crayfish\") (\"Japanese spider crab\"@en \"Giant spider crab\") (\"Fiddler crab\"@en \"Fiddler crab\") (\"Mantis shrimp\"@en \"Mantis shrimp\") (\"King crab\"@en \"King crab\") (\"Crab\"@en \"Crab\") (\"Dungeness crab\"@en \"Dungeness crab\") (\"Giant squid\"@en \"Giant squid\") (\"Common octopus\"@en \"Octopus\") (\"Nautilus\"@en \"Nautilus\") (\"Cuttlefish\"@en \"Cuttlefish\") (\"Garden snail\"@en \"Snail\") (\"Banana slug\"@en \"Banana slug\") (\"Slug\"@en \"Slug\") (\"Oyster\"@en \"Oyster\") (\"Clam\"@en \"Clam\") (\"Mussel\"@en \"Mussel\") (\"Scallop\"@en \"Scallop\") (\"Cone snail\"@en \"Cone snail\") (\"Giant clam\"@en \"Giant clam\") (\"Colossal squid\"@en \"Colossal squid\") (\"Sea slug\"@en \"Sea slug\") (\"Squid\"@en \"Squid\") (\"Abalone\"@en \"Abalone\") (\"Conch\"@en \"Conch\") (\"Cowrie\"@en \"Cowrie\") (\"Whelk\"@en \"Whelk\") } FILTER(?cmin = ?cmax || (?cmin = \"1Reptile\" && ?cmax = \"2Bird\")) BIND(SUBSTR(?cmax, 2) AS ?classLabel) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 524",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T18:04:31.517Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T18:04:31.517Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "class",
+   "label": "Animal class",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "animal",
+  "many": "animals",
+  "capitalise": true,
+  "columns": {
+   "class": {
+    "role": "link",
+    "pick": "Which group of animals does {label} belong to?",
+    "statement": "{label} belongs to the animal group: {value}.",
+    "match": "Match each animal to its group.",
+    "odd": "Three of these animals belong to the group {value}. Which one doesn't?",
+    "all": "Tap all {n} animals in the group {value}.",
+    "reverse": "Which of these animals belongs to the group {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Axolotl",
+   "qid": "Q22718",
+   "fame": 0.695,
+   "class": "Amphibian",
+   "description": "species of salamander",
+   "hook": "stays in its larval form for life and can regrow lost limbs",
+   "known": 0.6,
+   "kind": "amphibian"
+  },
+  {
+   "label": "Giant panda",
+   "qid": "Q33602",
+   "fame": 0.681,
+   "class": "Mammal",
+   "description": "species of mammal",
+   "hook": "is a bamboo-munching black-and-white icon of conservation",
+   "known": 0.8,
+   "kind": "mammal"
+  },
+  {
+   "label": "Giant squid",
+   "qid": "Q13537131",
+   "fame": 0.675,
+   "class": "Mollusc",
+   "description": "species of decapod cephalopods",
+   "hook": "lurks in the deep sea and inspired the legend of the kraken",
+   "known": 0.6,
+   "kind": "mollusc"
+  },
+  {
+   "label": "Squirrel",
+   "qid": "Q9482",
+   "fame": 0.674,
+   "class": "Mammal",
+   "description": "family of rodents",
+   "hook": "buries nuts for winter and scampers up trees with a bushy tail",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Capybara",
+   "qid": "Q131538",
+   "fame": 0.673,
+   "class": "Mammal",
+   "description": "species of large semiaquatic rodent in the cavy family",
+   "hook": "is the world's largest rodent and is famously calm around other animals",
+   "known": 0.4,
+   "kind": "mammal"
+  },
+  {
+   "label": "Lion",
+   "qid": "Q140",
+   "fame": 0.673,
+   "class": "Mammal",
+   "description": "species of big cat",
+   "hook": "is called the king of the jungle and lives in groups led by a maned male",
+   "known": 0.95,
+   "kind": "mammal"
+  },
+  {
+   "label": "Orca",
+   "qid": "Q26843",
+   "fame": 0.671,
+   "class": "Mammal",
+   "description": "species in the oceanic dolphin family",
+   "hook": "is a black-and-white apex predator nicknamed the killer whale",
+   "known": 0.8,
+   "kind": "mammal"
+  },
+  {
+   "label": "Tiger",
+   "qid": "Q19939",
+   "fame": 0.667,
+   "class": "Mammal",
+   "description": "species of big cat",
+   "hook": "is the largest of the big cats, known for an orange coat with dark stripes",
+   "known": 0.95,
+   "kind": "mammal"
+  },
+  {
+   "label": "Orangutan",
+   "qid": "Q41050",
+   "fame": 0.66,
+   "class": "Mammal",
+   "description": "genus of ape found in rainforests on the Southeast Asian islands of Sumatra and Borneo",
+   "hook": "is a red-haired ape whose name means person of the forest",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Komodo dragon",
+   "qid": "Q4504",
+   "fame": 0.647,
+   "class": "Reptile",
+   "description": "species of reptile",
+   "hook": "is the heaviest living lizard and roams a few Indonesian islands",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "Cougar",
+   "qid": "Q35255",
+   "fame": 0.646,
+   "class": "Mammal",
+   "description": "species of mammal",
+   "hook": "is a big cat also called a mountain lion or puma",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Jaguar",
+   "qid": "Q35694",
+   "fame": 0.645,
+   "class": "Mammal",
+   "description": "species of big cat native to the Americas",
+   "hook": "is a powerful spotted big cat of the rainforests that lends its name to a British car maker",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Polar bear",
+   "qid": "Q33609",
+   "fame": 0.645,
+   "class": "Mammal",
+   "description": "species of bear native largely within the Arctic Circle",
+   "hook": "is a huge white Arctic predator that hunts seals on sea ice",
+   "known": 0.95,
+   "kind": "mammal"
+  },
+  {
+   "label": "Raccoon",
+   "qid": "Q121439",
+   "fame": 0.643,
+   "class": "Mammal",
+   "description": "species of mammal native to North America",
+   "hook": "wears a black bandit mask and is famous for raiding trash cans",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Coyote",
+   "qid": "Q44299",
+   "fame": 0.641,
+   "class": "Mammal",
+   "description": "species of canine",
+   "hook": "is a howling wild dog of North American plains and a classic trickster in folklore",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Moose",
+   "qid": "Q35517",
+   "fame": 0.64,
+   "class": "Mammal",
+   "description": "species of mammal",
+   "hook": "is the largest member of the deer family, with huge flat antlers",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Platypus",
+   "qid": "Q15343",
+   "fame": 0.639,
+   "class": "Mammal",
+   "description": "semi-aquatic egg-laying mammal endemic to Australia",
+   "hook": "is an egg-laying oddity with a bill like a duck's",
+   "known": 0.6,
+   "kind": "mammal"
+  },
+  {
+   "label": "Eel",
+   "qid": "Q128685",
+   "fame": 0.638,
+   "class": "Fish",
+   "description": "order of fishes",
+   "hook": "is a long, slippery, snake-shaped swimmer that migrates across oceans to breed",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Cheetah",
+   "qid": "Q23907",
+   "fame": 0.634,
+   "class": "Mammal",
+   "description": "species of mammal",
+   "hook": "is the fastest land animal, sprinting in short bursts",
+   "known": 0.8,
+   "kind": "mammal"
+  },
+  {
+   "label": "Chicken",
+   "qid": "Q780",
+   "fame": 0.63,
+   "class": "Bird",
+   "description": "domesticated bird (specifically a red junglefowl) kept by humans primarily as a food source",
+   "hook": "is the farmyard animal that lays most of the eggs we eat",
+   "known": 0.95,
+   "kind": "bird"
+  },
+  {
+   "label": "Dodo",
+   "qid": "Q43502",
+   "fame": 0.629,
+   "class": "Bird",
+   "description": "species of extinct bird native to Mauritius Island",
+   "hook": "is the famous flightless creature hunted to extinction, a symbol of being long gone",
+   "known": 0.6,
+   "kind": "bird"
+  },
+  {
+   "label": "Brown bear",
+   "qid": "Q36341",
+   "fame": 0.623,
+   "class": "Mammal",
+   "description": "species of mammal",
+   "hook": "includes the grizzly and the Kodiak, among the largest land predators",
+   "known": 0.95,
+   "kind": "mammal"
+  },
+  {
+   "label": "Praying mantis",
+   "qid": "Q131250",
+   "fame": 0.623,
+   "class": "Insect",
+   "description": "order of insects",
+   "hook": "waits motionless with folded forelegs before snatching prey, and females may eat their mates",
+   "known": 0.6,
+   "kind": "insect"
+  },
+  {
+   "label": "Leopard",
+   "qid": "Q34706",
+   "fame": 0.622,
+   "class": "Mammal",
+   "description": "species of big cat",
+   "hook": "is a stealthy spotted big cat that drags its kills up into trees",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Red panda",
+   "qid": "Q41960",
+   "fame": 0.62,
+   "class": "Mammal",
+   "description": "species of small mammal from the Ailuridae family, native to Eastern Himalayas and Southwest China",
+   "hook": "is a rusty-furred tree climber with a ringed bushy tail and a taste for bamboo",
+   "known": 0.8,
+   "kind": "mammal"
+  },
+  {
+   "label": "Hippopotamus",
+   "qid": "Q34505",
+   "fame": 0.618,
+   "class": "Mammal",
+   "description": "species of mammal (artiodactyl)",
+   "hook": "is a huge river-dwelling grazer that spends its days in water and is surprisingly dangerous",
+   "known": 0.8,
+   "kind": "mammal"
+  },
+  {
+   "label": "Cicada",
+   "qid": "Q1947892",
+   "fame": 0.617,
+   "class": "Insect",
+   "description": "superfamily of insects",
+   "hook": "makes a deafening summer buzz after spending years underground",
+   "known": 0.65,
+   "kind": "insect"
+  },
+  {
+   "label": "Gorilla",
+   "qid": "Q36611",
+   "fame": 0.616,
+   "class": "Mammal",
+   "description": "genus of large African apes",
+   "hook": "is the largest primate, with silverbacks leading family troops and chest-beating displays",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Great white shark",
+   "qid": "Q129026",
+   "fame": 0.612,
+   "class": "Fish",
+   "description": "species of large lamniform shark",
+   "hook": "is the huge ocean predator made famous by a blockbuster film with a scary theme tune",
+   "known": 0.95,
+   "kind": "fish"
+  },
+  {
+   "label": "Wolf spider",
+   "qid": "Q10627",
+   "fame": 0.612,
+   "class": "Arachnid",
+   "description": "family of spiders",
+   "hook": "is a hairy hunter that chases down prey instead of trapping it, and carries babies on its back",
+   "known": 0.95,
+   "kind": "arachnid"
+  },
+  {
+   "label": "Chimpanzee",
+   "qid": "Q4126704",
+   "fame": 0.611,
+   "class": "Mammal",
+   "description": "species of mammal; species of ape",
+   "hook": "is among our closest living relatives and uses sticks as tools to fish for termites",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Penguin",
+   "qid": "Q9147",
+   "fame": 0.611,
+   "class": "Bird",
+   "description": "family of birds in the order Sphenisciformes",
+   "hook": "is a tuxedo-clad swimmer that cannot fly and waddles across ice",
+   "known": 0.95,
+   "kind": "bird"
+  },
+  {
+   "label": "Bat",
+   "qid": "Q28425",
+   "fame": 0.609,
+   "class": "Mammal",
+   "description": "order of placental mammals (Placentalia)",
+   "hook": "sleeps upside down and navigates in the dark using echolocation",
+   "known": 0.6,
+   "kind": "mammal"
+  },
+  {
+   "label": "Tasmanian devil",
+   "qid": "Q134964",
+   "fame": 0.609,
+   "class": "Mammal",
+   "description": "species of carnivorous marsupial from Australia",
+   "hook": "is a screeching, ferocious-looking scavenger that inspired a whirling cartoon character",
+   "known": 0.6,
+   "kind": "mammal"
+  },
+  {
+   "label": "Peregrine falcon",
+   "qid": "Q30535",
+   "fame": 0.608,
+   "class": "Bird",
+   "description": "species of bird of prey",
+   "hook": "is the fastest animal on Earth, reaching enormous speeds in a hunting dive",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Snow leopard",
+   "qid": "Q30197",
+   "fame": 0.608,
+   "class": "Mammal",
+   "description": "large felid native to the mountains of Central and South Asia",
+   "hook": "is a rarely seen mountain big cat nicknamed the ghost of the mountains",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Whale shark",
+   "qid": "Q80378",
+   "fame": 0.608,
+   "class": "Fish",
+   "description": "species of fish",
+   "hook": "is a gentle, spotted giant of tropical seas that filters plankton and is the largest of its kind",
+   "known": 0.95,
+   "kind": "fish"
+  },
+  {
+   "label": "Narwhal",
+   "qid": "Q159426",
+   "fame": 0.606,
+   "class": "Mammal",
+   "description": "medium-sized toothed whale that lives year-round in the Arctic",
+   "hook": "has a long spiral tusk that earned it the nickname unicorn of the sea",
+   "known": 0.6,
+   "kind": "mammal"
+  },
+  {
+   "label": "Hyena",
+   "qid": "Q42046",
+   "fame": 0.604,
+   "class": "Mammal",
+   "description": "family of mammals in the order Carnivora",
+   "hook": "is a scavenger and hunter of the African savanna with a laugh-like call",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Bald eagle",
+   "qid": "Q127216",
+   "fame": 0.602,
+   "class": "Bird",
+   "description": "species of bird of prey found in North America",
+   "hook": "is the national emblem of the United States, with a white-feathered head",
+   "known": 0.95,
+   "kind": "bird"
+  },
+  {
+   "label": "Bonobo",
+   "qid": "Q19537",
+   "fame": 0.601,
+   "class": "Mammal",
+   "description": "one of two species in the genus Pan, along with the common chimpanzee",
+   "hook": "is a close human relative known for peaceful, female-led societies",
+   "known": 0.4,
+   "kind": "mammal"
+  },
+  {
+   "label": "Giraffe",
+   "qid": "Q862089",
+   "fame": 0.601,
+   "class": "Mammal",
+   "description": "genus of mammals",
+   "hook": "is the world's tallest animal, with a very long neck and a spotted coat",
+   "known": 0.95,
+   "kind": "mammal"
+  },
+  {
+   "label": "Hamster",
+   "qid": "Q6573",
+   "fame": 0.6,
+   "class": "Mammal",
+   "description": "subfamily of rodents (Cricetinae)",
+   "hook": "is a pocket-sized pet that stuffs its cheeks and runs on a wheel",
+   "known": 0.6,
+   "kind": "mammal"
+  },
+  {
+   "label": "Pangolin",
+   "qid": "Q2191516",
+   "fame": 0.599,
+   "class": "Mammal",
+   "description": "order of placental mammals",
+   "hook": "is covered in overlapping scales and curls into a ball to defend itself",
+   "known": 0.4,
+   "kind": "mammal"
+  },
+  {
+   "label": "Barnacle",
+   "qid": "Q220457",
+   "fame": 0.598,
+   "class": "Crustacean",
+   "description": "infraclass of crustaceans",
+   "hook": "cements itself to rocks and ship hulls and filters food from the water",
+   "known": 0.4,
+   "kind": "crustacean"
+  },
+  {
+   "label": "Guinea pig",
+   "qid": "Q79803",
+   "fame": 0.596,
+   "class": "Mammal",
+   "description": "domesticated rodent from South America",
+   "hook": "is a popular cuddly household pet known for squeaky wheeking calls",
+   "known": 0.6,
+   "kind": "mammal"
+  },
+  {
+   "label": "Orb-weaver",
+   "qid": "Q5883",
+   "fame": 0.595,
+   "class": "Arachnid",
+   "description": "family of araneomorph spiders",
+   "hook": "spins the classic round, spiral web often seen glistening in gardens",
+   "known": 0.5,
+   "kind": "arachnid"
+  },
+  {
+   "label": "Hummingbird",
+   "qid": "Q43624",
+   "fame": 0.594,
+   "class": "Bird",
+   "description": "family of birds",
+   "hook": "is a tiny, iridescent flyer that hovers and can even fly backward",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Spider",
+   "qid": "Q1357",
+   "fame": 0.594,
+   "class": "Arachnid",
+   "description": "order of arachnids",
+   "hook": "has eight legs and spins silk webs to trap its prey",
+   "known": 0.95,
+   "kind": "arachnid"
+  },
+  {
+   "label": "Brown recluse",
+   "qid": "Q284352",
+   "fame": 0.592,
+   "class": "Arachnid",
+   "description": "spider with venomous bite native to US",
+   "hook": "is a violin-marked venomous hider whose bite can cause a nasty skin wound",
+   "known": 0.5,
+   "kind": "arachnid"
+  },
+  {
+   "label": "King cobra",
+   "qid": "Q48186",
+   "fame": 0.592,
+   "class": "Reptile",
+   "description": "species of reptile",
+   "hook": "is the longest venomous snake in the world, famous for rearing up and flaring a hood",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "Koala",
+   "qid": "Q36101",
+   "fame": 0.591,
+   "class": "Mammal",
+   "description": "arboreal herbivorous marsupial native to Australia",
+   "hook": "is a sleepy eucalyptus eater often mistakenly called a bear",
+   "known": 0.6,
+   "kind": "mammal"
+  },
+  {
+   "label": "Wild boar",
+   "qid": "Q58697",
+   "fame": 0.591,
+   "class": "Mammal",
+   "description": "omnivore species of mammal",
+   "hook": "is the tusked ancestor of the farm pig and a favorite meal of a cartoon Gaul named Obelix",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Fox",
+   "qid": "Q8332",
+   "fame": 0.59,
+   "class": "Mammal",
+   "description": "species of mammal",
+   "hook": "is a cunning, bushy-tailed hunter famous in fables for its sly cleverness",
+   "known": 0.8,
+   "kind": "mammal"
+  },
+  {
+   "label": "Beaver",
+   "qid": "Q47542",
+   "fame": 0.589,
+   "class": "Mammal",
+   "description": "genus of mammals",
+   "hook": "gnaws down trees to build dams and lodges, with a flat paddle tail",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Echidna",
+   "qid": "Q21824",
+   "fame": 0.589,
+   "class": "Mammal",
+   "description": "family of monotreme mammals",
+   "hook": "is a spiny, egg-laying animal with a long snout that eats ants",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Goat",
+   "qid": "Q2934",
+   "fame": 0.588,
+   "class": "Mammal",
+   "description": "domesticated mammal raised for its meat and milk",
+   "hook": "is a horned farm animal that climbs steep slopes and gives milk and cheese",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Okapi",
+   "qid": "Q82037",
+   "fame": 0.588,
+   "class": "Mammal",
+   "description": "species of mammal",
+   "hook": "is a forest animal with zebra-like striped legs that is actually a relative of the giraffe",
+   "known": 0.4,
+   "kind": "mammal"
+  },
+  {
+   "label": "Monarch butterfly",
+   "qid": "Q212398",
+   "fame": 0.587,
+   "class": "Insect",
+   "description": "milkweed butterfly in the family Nymphalidae",
+   "hook": "is an orange-and-black migrant that flies thousands of miles to spend winter in Mexico",
+   "known": 0.65,
+   "kind": "insect"
+  },
+  {
+   "label": "Mosquito",
+   "qid": "Q7367",
+   "fame": 0.587,
+   "class": "Insect",
+   "description": "family of nematoceran flies",
+   "hook": "is a buzzing blood-sucking pest that spreads diseases like malaria",
+   "known": 0.65,
+   "kind": "insect"
+  },
+  {
+   "label": "Aardvark",
+   "qid": "Q46212",
+   "fame": 0.586,
+   "class": "Mammal",
+   "description": "species of mammal",
+   "hook": "slurps up ants and termites with a long sticky tongue after dark in Africa",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Colossal squid",
+   "qid": "Q378330",
+   "fame": 0.586,
+   "class": "Mollusc",
+   "description": "species of mollusc",
+   "hook": "lurks in frigid deep water near Antarctica and is thought to have the biggest eyes of any animal",
+   "known": 0.6,
+   "kind": "mollusc"
+  },
+  {
+   "label": "Donkey",
+   "qid": "Q19707",
+   "fame": 0.586,
+   "class": "Mammal",
+   "description": "subspecies of mammal (donkey as a domesticated subspecies); beast of burden, similar to a horse, but smaller",
+   "hook": "is a hardy beast of burden known for its loud bray and stubborn reputation",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Huntsman spider",
+   "qid": "Q11721",
+   "fame": 0.584,
+   "class": "Arachnid",
+   "description": "spider family",
+   "hook": "is a fast, long-legged hunter that startles people by hiding behind sun visors and walls in warm countries",
+   "known": 0.95,
+   "kind": "arachnid"
+  },
+  {
+   "label": "Cassowary",
+   "qid": "Q201231",
+   "fame": 0.581,
+   "class": "Bird",
+   "description": "genus of flightless birds including three species of cassowary. Native to the New Guinea forests, the Moluccas, and Northeastern Australia",
+   "hook": "is a flightless, dagger-clawed giant of New Guinea and Australia with a bony crest on its head",
+   "known": 0.4,
+   "kind": "bird"
+  },
+  {
+   "label": "Rhinoceros",
+   "qid": "Q34718",
+   "fame": 0.581,
+   "class": "Mammal",
+   "description": "family of mammals",
+   "hook": "is a thick-skinned giant with one or two horns on its snout, heavily poached",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Walrus",
+   "qid": "Q40994",
+   "fame": 0.581,
+   "class": "Mammal",
+   "description": "species of mammal",
+   "hook": "is a blubbery Arctic giant with long ivory tusks and bristly whiskers",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Camel",
+   "qid": "Q7375",
+   "fame": 0.579,
+   "class": "Mammal",
+   "description": "genus of mammals",
+   "hook": "stores fat in one or two humps and is nicknamed the ship of the desert",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Crocodile",
+   "qid": "Q43169",
+   "fame": 0.579,
+   "class": "Reptile",
+   "description": "family of reptiles",
+   "hook": "is a large armored river predator with a V-shaped snout and a famously toothy grin",
+   "known": 0.8,
+   "kind": "reptile"
+  },
+  {
+   "label": "Dragonfly",
+   "qid": "Q80066",
+   "fame": 0.578,
+   "class": "Insect",
+   "description": "suborder of insects with long strong bodies and two pairs of wings",
+   "hook": "hovers over ponds on two pairs of see-through wings and snatches prey in midair",
+   "known": 0.65,
+   "kind": "insect"
+  },
+  {
+   "label": "Hedgehog",
+   "qid": "Q6120",
+   "fame": 0.578,
+   "class": "Mammal",
+   "description": "subfamily of small spiny mammals",
+   "hook": "rolls into a spiky ball when frightened",
+   "known": 0.6,
+   "kind": "mammal"
+  },
+  {
+   "label": "Mola mola",
+   "qid": "Q192285",
+   "fame": 0.577,
+   "class": "Fish",
+   "description": "species of fish",
+   "hook": "is a huge disc-shaped ocean swimmer that basks at the surface and looks like a swimming head",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Basking shark",
+   "qid": "Q185260",
+   "fame": 0.574,
+   "class": "Fish",
+   "description": "species of shark",
+   "hook": "is a gentle giant that cruises with its huge mouth open to strain plankton from the sea",
+   "known": 0.95,
+   "kind": "fish"
+  },
+  {
+   "label": "Otter",
+   "qid": "Q200184",
+   "fame": 0.574,
+   "class": "Mammal",
+   "description": "subfamily of mammals",
+   "hook": "is a playful, sleek swimmer famed for sliding down muddy riverbanks",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Kiwi",
+   "qid": "Q43642",
+   "fame": 0.573,
+   "class": "Bird",
+   "description": "genus of birds",
+   "hook": "is a flightless, nocturnal, long-beaked national symbol of New Zealand",
+   "known": 0.4,
+   "kind": "bird"
+  },
+  {
+   "label": "Scorpion",
+   "qid": "Q19125",
+   "fame": 0.573,
+   "class": "Arachnid",
+   "description": "order of arachnids",
+   "hook": "carries a venomous stinger at the tip of a curled tail and has two pincers",
+   "known": 0.5,
+   "kind": "arachnid"
+  },
+  {
+   "label": "Owl",
+   "qid": "Q25222",
+   "fame": 0.572,
+   "class": "Bird",
+   "description": "order of birds",
+   "hook": "hunts at night, swivels its head far around and is a classic symbol of wisdom",
+   "known": 0.95,
+   "kind": "bird"
+  },
+  {
+   "label": "Sea otter",
+   "qid": "Q41407",
+   "fame": 0.572,
+   "class": "Mammal",
+   "description": "species of marine mammal",
+   "hook": "floats on its back and uses rocks as tools to crack open shellfish",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Tarantula",
+   "qid": "Q213383",
+   "fame": 0.572,
+   "class": "Arachnid",
+   "description": "family of spiders",
+   "hook": "is a large, hairy eight-legged creature kept as an exotic pet and flicks irritating hairs at enemies",
+   "known": 0.5,
+   "kind": "arachnid"
+  },
+  {
+   "label": "Hornet",
+   "qid": "Q334422",
+   "fame": 0.568,
+   "class": "Insect",
+   "description": "genus of insects",
+   "hook": "is a large, aggressive stinging wasp that builds papery nests",
+   "known": 0.65,
+   "kind": "insect"
+  },
+  {
+   "label": "Turtle",
+   "qid": "Q223044",
+   "fame": 0.568,
+   "class": "Reptile",
+   "description": "order of reptiles characterized by a shell",
+   "hook": "carries a bony shell on its back that it can retreat into",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "Daddy longlegs",
+   "qid": "Q19116",
+   "fame": 0.567,
+   "class": "Arachnid",
+   "description": "order of arachnids",
+   "hook": "has very thin, stilt-like limbs and is the subject of a popular myth about deadly venom",
+   "known": 0.5,
+   "kind": "arachnid"
+  },
+  {
+   "label": "Humpback whale",
+   "qid": "Q132905",
+   "fame": 0.567,
+   "class": "Mammal",
+   "description": "species of mammal",
+   "hook": "is famed for leaping out of the water and singing long, haunting songs",
+   "known": 0.95,
+   "kind": "mammal"
+  },
+  {
+   "label": "Monitor lizard",
+   "qid": "Q81228",
+   "fame": 0.567,
+   "class": "Reptile",
+   "description": "genus of reptiles",
+   "hook": "is a big, long-tailed hunter with a forked tongue found across Africa, Asia and Australia",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "Bison",
+   "qid": "Q18099",
+   "fame": 0.566,
+   "class": "Mammal",
+   "description": "genus of bovines",
+   "hook": "is a shaggy, humped grazer that once roamed the American plains in vast herds",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Emu",
+   "qid": "Q93208",
+   "fame": 0.565,
+   "class": "Bird",
+   "description": "species of bird",
+   "hook": "is a tall, flightless runner that appears on Australia's coat of arms",
+   "known": 0.6,
+   "kind": "bird"
+  },
+  {
+   "label": "Ferret",
+   "qid": "Q178973",
+   "fame": 0.565,
+   "class": "Mammal",
+   "description": "subspecies of mammal",
+   "hook": "is a slinky domesticated hunter kept as a pet that does a happy war dance",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Reindeer",
+   "qid": "Q39624",
+   "fame": 0.565,
+   "class": "Mammal",
+   "description": "species of deer",
+   "hook": "is a cold-weather herd animal said to pull Santa's sleigh",
+   "known": 0.8,
+   "kind": "mammal"
+  },
+  {
+   "label": "Sloth",
+   "qid": "Q2274076",
+   "fame": 0.565,
+   "class": "Mammal",
+   "description": "suborder of mammals",
+   "hook": "hangs upside down in rainforest trees and is famous for moving very slowly",
+   "known": 0.6,
+   "kind": "mammal"
+  },
+  {
+   "label": "Honeybee",
+   "qid": "Q102857",
+   "fame": 0.564,
+   "class": "Insect",
+   "description": "genus of insects",
+   "hook": "makes sweet golden food in waxy hives and does a waggle dance to give directions",
+   "known": 0.95,
+   "kind": "insect"
+  },
+  {
+   "label": "Earwig",
+   "qid": "Q13676",
+   "fame": 0.561,
+   "class": "Insect",
+   "description": "order of insects",
+   "hook": "has pincers on its rear and a myth says it crawls into sleepers' ears",
+   "known": 0.65,
+   "kind": "insect"
+  },
+  {
+   "label": "Manatee",
+   "qid": "Q42797",
+   "fame": 0.561,
+   "class": "Mammal",
+   "description": "genus of mammals",
+   "hook": "is a slow, gentle sea cow that grazes on seagrass in warm shallow waters",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Weasel",
+   "qid": "Q28521",
+   "fame": 0.561,
+   "class": "Mammal",
+   "description": "genus of mammals",
+   "hook": "is a long, slim, quick little hunter that pops in a nursery rhyme",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Wombat",
+   "qid": "Q23175",
+   "fame": 0.56,
+   "class": "Mammal",
+   "description": "family of mammals",
+   "hook": "is a stocky burrower from Australia famous for cube-shaped droppings",
+   "known": 0.6,
+   "kind": "mammal"
+  },
+  {
+   "label": "Ant",
+   "qid": "Q7386",
+   "fame": 0.559,
+   "class": "Insect",
+   "description": "family of insects",
+   "hook": "lives in huge colonies led by a queen and carries loads many times its own weight",
+   "known": 0.65,
+   "kind": "insect"
+  },
+  {
+   "label": "Meerkat",
+   "qid": "Q134015",
+   "fame": 0.559,
+   "class": "Mammal",
+   "description": "species of mongoose",
+   "hook": "stands upright as a sentry in desert burrow gangs and inspired Timon from The Lion King",
+   "known": 0.6,
+   "kind": "mammal"
+  },
+  {
+   "label": "Blue jay",
+   "qid": "Q199758",
+   "fame": 0.558,
+   "class": "Bird",
+   "description": "species of bird",
+   "hook": "is a noisy crested songbird of eastern North America and the mascot of Toronto's baseball team",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Bumblebee",
+   "qid": "Q25407",
+   "fame": 0.558,
+   "class": "Insect",
+   "description": "genus of insects",
+   "hook": "is a big, fuzzy, buzzing pollinator, once said to defy the laws of aerodynamics",
+   "known": 0.95,
+   "kind": "insect"
+  },
+  {
+   "label": "Parrot",
+   "qid": "Q31431",
+   "fame": 0.558,
+   "class": "Bird",
+   "description": "order of birds",
+   "hook": "has colorful plumage, a curved beak and a talent for mimicking human speech",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Albatross",
+   "qid": "Q55805",
+   "fame": 0.557,
+   "class": "Bird",
+   "description": "large seabirds allied to the procellariids, storm-petrels and diving-petrels in the order Procellariiformes",
+   "hook": "is a huge ocean wanderer with the longest wingspan of any flyer and a famous Coleridge poem",
+   "known": 0.6,
+   "kind": "bird"
+  },
+  {
+   "label": "Anglerfish",
+   "qid": "Q206948",
+   "fame": 0.557,
+   "class": "Fish",
+   "description": "order of fish belonging to the bony fishes (Osteichthyes)",
+   "hook": "lurks in the dark deep sea and dangles a glowing lure on its head to attract prey",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Salamander",
+   "qid": "Q53663",
+   "fame": 0.557,
+   "class": "Amphibian",
+   "description": "order of amphibians",
+   "hook": "is a moist-skinned, newt-like creature of folklore said to survive fire",
+   "known": 0.6,
+   "kind": "amphibian"
+  },
+  {
+   "label": "Beluga whale",
+   "qid": "Q132072",
+   "fame": 0.554,
+   "class": "Mammal",
+   "description": "species of whale",
+   "hook": "is a white, round-headed Arctic swimmer nicknamed the canary of the sea for its chirps",
+   "known": 0.95,
+   "kind": "mammal"
+  },
+  {
+   "label": "Bull shark",
+   "qid": "Q190469",
+   "fame": 0.554,
+   "class": "Fish",
+   "description": "species of fish",
+   "hook": "is an aggressive hunter that can swim far up freshwater rivers",
+   "known": 0.95,
+   "kind": "fish"
+  },
+  {
+   "label": "Catfish",
+   "qid": "Q59576",
+   "fame": 0.554,
+   "class": "Fish",
+   "description": "order of fishes",
+   "hook": "is a whiskered bottom-dweller with feelers around its mouth",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Seahorse",
+   "qid": "Q74363",
+   "fame": 0.554,
+   "class": "Fish",
+   "description": "genus of fishes",
+   "hook": "is a tiny upright swimmer in which the male carries the babies",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Tuatara",
+   "qid": "Q163283",
+   "fame": 0.554,
+   "class": "Reptile",
+   "description": "genus of reptiles",
+   "hook": "is a spiky-backed living fossil of New Zealand with a third eye on its head",
+   "known": 0.4,
+   "kind": "reptile"
+  },
+  {
+   "label": "Bee",
+   "qid": "Q7391",
+   "fame": 0.553,
+   "class": "Insect",
+   "description": "clade of hymenopteran insects",
+   "hook": "is a buzzing pollinator, essential to flowers and crops, that stings in defense",
+   "known": 0.95,
+   "kind": "insect"
+  },
+  {
+   "label": "Beetle",
+   "qid": "Q22671",
+   "fame": 0.553,
+   "class": "Insect",
+   "description": "order of insects whose wings serve as a protective shell",
+   "hook": "has hard wing cases and belongs to the most species-rich group of animals on Earth",
+   "known": 0.95,
+   "kind": "insect"
+  },
+  {
+   "label": "African elephant",
+   "qid": "Q36557",
+   "fame": 0.552,
+   "class": "Mammal",
+   "description": "species of mammal; largest land animal",
+   "hook": "is the biggest land animal, with a long trunk, large ears and ivory tusks",
+   "known": 0.95,
+   "kind": "mammal"
+  },
+  {
+   "label": "Moth",
+   "qid": "Q1725788",
+   "fame": 0.552,
+   "class": "Insect",
+   "description": "group of mostly-nocturnal insects in the order Lepidoptera",
+   "hook": "flutters around lights at night and its caterpillars spin silk cocoons",
+   "known": 0.65,
+   "kind": "insect"
+  },
+  {
+   "label": "Budgerigar",
+   "qid": "Q121221",
+   "fame": 0.551,
+   "class": "Bird",
+   "description": "species of bird",
+   "hook": "is a small, popular pet parakeet that can learn to talk",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Falcon",
+   "qid": "Q43489",
+   "fame": 0.551,
+   "class": "Bird",
+   "description": "genus of birds",
+   "hook": "is a swift, sharp-winged raptor trained by humans for hunting",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Lemur",
+   "qid": "Q1192405",
+   "fame": 0.551,
+   "class": "Mammal",
+   "description": "superfamily of mammals, informally known as lemurs",
+   "hook": "lives on Madagascar and is best known for a long, ringed tail",
+   "known": 0.6,
+   "kind": "mammal"
+  },
+  {
+   "label": "Black mamba",
+   "qid": "Q188690",
+   "fame": 0.55,
+   "class": "Reptile",
+   "description": "species of reptile",
+   "hook": "is a lightning-fast, highly venomous African snake",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "Gila monster",
+   "qid": "Q207058",
+   "fame": 0.548,
+   "class": "Reptile",
+   "description": "species of venomous lizard from the southwestern United States and northwestern Mexico",
+   "hook": "is a slow, venomous desert creature with beaded orange and black skin",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "Raven",
+   "qid": "Q25357",
+   "fame": 0.547,
+   "class": "Bird",
+   "description": "species of bird",
+   "hook": "is a large black corvid with a croaking call, famed from a Poe poem and the Tower of London",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Scallop",
+   "qid": "Q1311395",
+   "fame": 0.547,
+   "class": "Mollusc",
+   "description": "family of bivalves",
+   "hook": "has a fan-shaped, ridged shell and is a seafood favorite",
+   "known": 0.4,
+   "kind": "mollusc"
+  },
+  {
+   "label": "Sturgeon",
+   "qid": "Q181871",
+   "fame": 0.547,
+   "class": "Fish",
+   "description": "family of fishes",
+   "hook": "is an armored, prehistoric-looking giant whose eggs become caviar",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Deer",
+   "qid": "Q215887",
+   "fame": 0.546,
+   "class": "Mammal",
+   "description": "species of mammal",
+   "hook": "grows branching antlers and its young are called fawns",
+   "known": 0.8,
+   "kind": "mammal"
+  },
+  {
+   "label": "Ladybug",
+   "qid": "Q25327",
+   "fame": 0.546,
+   "class": "Insect",
+   "description": "family of beetles",
+   "hook": "is a red, black-spotted garden helper that devours aphids",
+   "known": 0.65,
+   "kind": "insect"
+  },
+  {
+   "label": "Llama",
+   "qid": "Q42569",
+   "fame": 0.545,
+   "class": "Mammal",
+   "description": "species of mammal",
+   "hook": "is a woolly Andean pack animal famous for spitting when annoyed",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Mantis shrimp",
+   "qid": "Q334855",
+   "fame": 0.544,
+   "class": "Crustacean",
+   "description": "order of crustaceans",
+   "hook": "throws a punch so fast it can crack aquarium glass and sees colors we cannot",
+   "known": 0.6,
+   "kind": "crustacean"
+  },
+  {
+   "label": "Nile crocodile",
+   "qid": "Q168745",
+   "fame": 0.544,
+   "class": "Reptile",
+   "description": "species of reptile",
+   "hook": "is Africa's largest river predator, ambushing wildebeest at crossings",
+   "known": 0.8,
+   "kind": "reptile"
+  },
+  {
+   "label": "Stingray",
+   "qid": "Q5328202",
+   "fame": 0.544,
+   "class": "Fish",
+   "description": "suborder of fishes",
+   "hook": "glides along the seabed and carries a venomous barb on its whip-like tail",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Tapir",
+   "qid": "Q3745367",
+   "fame": 0.544,
+   "class": "Mammal",
+   "description": "family of mammals",
+   "hook": "has a short flexible snout and looks like a pig crossed with an elephant",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Ostrich",
+   "qid": "Q2576337",
+   "fame": 0.543,
+   "class": "Bird",
+   "description": "genus of birds",
+   "hook": "is the tallest living flightless creature and can outrun most predators",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Lionfish",
+   "qid": "Q475711",
+   "fame": 0.542,
+   "class": "Fish",
+   "description": "genus of fish",
+   "hook": "is a striped reef dweller with showy venomous spines, invasive in the Atlantic",
+   "known": 0.95,
+   "kind": "fish"
+  },
+  {
+   "label": "Alligator",
+   "qid": "Q193327",
+   "fame": 0.541,
+   "class": "Reptile",
+   "description": "species of alligator",
+   "hook": "is a broad-snouted swamp predator famously found in Florida",
+   "known": 0.8,
+   "kind": "reptile"
+  },
+  {
+   "label": "Cuttlefish",
+   "qid": "Q135119",
+   "fame": 0.541,
+   "class": "Mollusc",
+   "description": "family of molluscs",
+   "hook": "changes color and skin texture in a flash to camouflage itself",
+   "known": 0.4,
+   "kind": "mollusc"
+  },
+  {
+   "label": "Sparrow",
+   "qid": "Q14683",
+   "fame": 0.54,
+   "class": "Bird",
+   "description": "species of bird",
+   "hook": "is a small, brown, chirpy city dweller found nearly worldwide",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Squid",
+   "qid": "Q81900",
+   "fame": 0.539,
+   "class": "Mollusc",
+   "description": "order of mollusks",
+   "hook": "jets through the sea and squirts ink to escape danger",
+   "known": 0.6,
+   "kind": "mollusc"
+  },
+  {
+   "label": "Flamingo",
+   "qid": "Q3901583",
+   "fame": 0.538,
+   "class": "Bird",
+   "description": "family of birds",
+   "hook": "stands on one leg and gets its pink color from what it eats",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Great horned owl",
+   "qid": "Q81515",
+   "fame": 0.538,
+   "class": "Bird",
+   "description": "species of bird",
+   "hook": "has tufted ear-like feathers and a deep hoot, hunting at night across North America",
+   "known": 0.95,
+   "kind": "bird"
+  },
+  {
+   "label": "Jumping spider",
+   "qid": "Q11687",
+   "fame": 0.536,
+   "class": "Arachnid",
+   "description": "family of spiders",
+   "hook": "hunts by leaping onto prey with sharp eyesight instead of catching it in a web",
+   "known": 0.95,
+   "kind": "arachnid"
+  },
+  {
+   "label": "Chameleon",
+   "qid": "Q37686",
+   "fame": 0.534,
+   "class": "Reptile",
+   "description": "family of reptiles",
+   "hook": "changes color, swivels its eyes independently and snags prey with a sticky tongue",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "Lizard",
+   "qid": "Q15879",
+   "fame": 0.534,
+   "class": "Reptile",
+   "description": "paraphyletic group of squamate reptiles, no longer recognised as a valid suborder",
+   "hook": "is a scaly, four-legged sunbather that can drop its tail to escape",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "Nautilus",
+   "qid": "Q223939",
+   "fame": 0.534,
+   "class": "Mollusc",
+   "description": "Family of marine molluscs",
+   "hook": "lives in a spiral, chambered shell and is often called a living fossil",
+   "known": 0.4,
+   "kind": "mollusc"
+  },
+  {
+   "label": "Roadrunner",
+   "qid": "Q634804",
+   "fame": 0.534,
+   "class": "Bird",
+   "description": "species of bird",
+   "hook": "sprints across the Southwest desert and is the cartoon target of a hungry coyote",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Mallard",
+   "qid": "Q25348",
+   "fame": 0.533,
+   "class": "Bird",
+   "description": "species of duck",
+   "hook": "is the green-headed duck of ponds and parks",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Anaconda",
+   "qid": "Q207347",
+   "fame": 0.532,
+   "class": "Reptile",
+   "description": "species of reptile",
+   "hook": "is a giant South American water snake that squeezes its prey",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "Emperor penguin",
+   "qid": "Q161829",
+   "fame": 0.532,
+   "class": "Bird",
+   "description": "large flightless seabird endemic to Antarctica",
+   "hook": "huddles through brutal Antarctic winters while males balance eggs on their feet",
+   "known": 0.95,
+   "kind": "bird"
+  },
+  {
+   "label": "Electric eel",
+   "qid": "Q18926800",
+   "fame": 0.531,
+   "class": "Fish",
+   "description": "genus of fishes",
+   "hook": "can stun prey and predators with hundreds of volts",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Tuna",
+   "qid": "Q6146274",
+   "fame": 0.531,
+   "class": "Fish",
+   "description": "tribe of fishes",
+   "hook": "is a speedy, torpedo-shaped ocean swimmer often sold in cans for sandwiches",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Cardinal",
+   "qid": "Q726389",
+   "fame": 0.529,
+   "class": "Bird",
+   "description": "species of bird",
+   "hook": "is a crested, brilliant red backyard visitor and state symbol of several states",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Coconut crab",
+   "qid": "Q206070",
+   "fame": 0.529,
+   "class": "Crustacean",
+   "description": "species of crustacean",
+   "hook": "is the biggest land-dwelling invertebrate, with claws strong enough to crack tough husks",
+   "known": 0.4,
+   "kind": "crustacean"
+  },
+  {
+   "label": "Gibbon",
+   "qid": "Q185939",
+   "fame": 0.529,
+   "class": "Mammal",
+   "description": "family of apes",
+   "hook": "swings through the treetops and sings loud duets, a small tailless ape",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Tortoise",
+   "qid": "Q46360",
+   "fame": 0.529,
+   "class": "Reptile",
+   "description": "family of turtles",
+   "hook": "is a slow, shelled land dweller that can live over a century and beat a hare in a fable",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "Barracuda",
+   "qid": "Q193921",
+   "fame": 0.528,
+   "class": "Fish",
+   "description": "genus of fishes, the Barracudas",
+   "hook": "is a long, toothy tropical hunter with a fearsome underbite",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Gecko",
+   "qid": "Q16546828",
+   "fame": 0.528,
+   "class": "Reptile",
+   "description": "lizard belonging to the infraorder Gekkota",
+   "hook": "can walk up glass walls thanks to sticky toe pads",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "Kookaburra",
+   "qid": "Q340041",
+   "fame": 0.528,
+   "class": "Bird",
+   "description": "genus of birds",
+   "hook": "is an Australian kingfisher whose call sounds like human laughter",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Gharial",
+   "qid": "Q17134",
+   "fame": 0.527,
+   "class": "Reptile",
+   "description": "species of crocodilian belonging to the gharial family (Gavialidae)",
+   "hook": "has an extremely narrow snout with a bulbous knob at the tip, native to South Asian rivers",
+   "known": 0.4,
+   "kind": "reptile"
+  },
+  {
+   "label": "Termite",
+   "qid": "Q546583",
+   "fame": 0.527,
+   "class": "Insect",
+   "description": "group of insects",
+   "hook": "builds towering mounds and chews through wooden houses",
+   "known": 0.65,
+   "kind": "insect"
+  },
+  {
+   "label": "Anteater",
+   "qid": "Q972452",
+   "fame": 0.526,
+   "class": "Mammal",
+   "description": "mammals known for eating ants and termites",
+   "hook": "slurps up thousands of ants with a long sticky tongue",
+   "known": 0.4,
+   "kind": "mammal"
+  },
+  {
+   "label": "Firefly",
+   "qid": "Q25420",
+   "fame": 0.526,
+   "class": "Insect",
+   "description": "family of beetles",
+   "hook": "glows on summer evenings to signal mates, also called a lightning bug",
+   "known": 0.65,
+   "kind": "insect"
+  },
+  {
+   "label": "Baboon",
+   "qid": "Q159429",
+   "fame": 0.525,
+   "class": "Mammal",
+   "description": "genus of mammals",
+   "hook": "is a dog-faced, ground-dwelling monkey that lives in troops across Africa",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Tick",
+   "qid": "Q10304508",
+   "fame": 0.525,
+   "class": "Arachnid",
+   "description": "order of arachnids",
+   "hook": "latches onto skin to feed on blood and can spread Lyme disease",
+   "known": 0.5,
+   "kind": "arachnid"
+  },
+  {
+   "label": "Garter snake",
+   "qid": "Q1149509",
+   "fame": 0.524,
+   "class": "Reptile",
+   "description": "genus of reptiles",
+   "hook": "is the harmless, striped species most often found in North American gardens",
+   "known": 0.95,
+   "kind": "reptile"
+  },
+  {
+   "label": "Cuckoo",
+   "qid": "Q26381",
+   "fame": 0.523,
+   "class": "Bird",
+   "description": "family of birds",
+   "hook": "sneaks its eggs into other nests and gives its call to a famous clock",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Asian elephant",
+   "qid": "Q133006",
+   "fame": 0.521,
+   "class": "Mammal",
+   "description": "species of mammal",
+   "hook": "has smaller ears than its African cousin and is often trained to work with people",
+   "known": 0.95,
+   "kind": "mammal"
+  },
+  {
+   "label": "Heron",
+   "qid": "Q18789",
+   "fame": 0.521,
+   "class": "Bird",
+   "description": "family of birds",
+   "hook": "stands motionless in the shallows on long legs, waiting to spear a meal",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Pelican",
+   "qid": "Q19413",
+   "fame": 0.521,
+   "class": "Bird",
+   "description": "genus of birds",
+   "hook": "scoops up meals in a huge throat pouch",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Fly",
+   "qid": "Q25312",
+   "fame": 0.52,
+   "class": "Insect",
+   "description": "order of insects",
+   "hook": "buzzes around picnics and has just a single pair of wings",
+   "known": 0.65,
+   "kind": "insect"
+  },
+  {
+   "label": "Hammerhead shark",
+   "qid": "Q208490",
+   "fame": 0.518,
+   "class": "Fish",
+   "description": "family of fishes",
+   "hook": "has a flattened, mallet-shaped head with eyes at the tips",
+   "known": 0.95,
+   "kind": "fish"
+  },
+  {
+   "label": "Betta",
+   "qid": "Q549",
+   "fame": 0.516,
+   "class": "Fish",
+   "description": "freshwater fish native to Thailand",
+   "hook": "is a flashy aquarium favorite whose males battle each other",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Oyster",
+   "qid": "Q107411",
+   "fame": 0.516,
+   "class": "Mollusc",
+   "description": "salt-water bivalve mollusc",
+   "hook": "is a shelled sea creature that sometimes makes pearls and is eaten raw on the half shell",
+   "known": 0.4,
+   "kind": "mollusc"
+  },
+  {
+   "label": "Swordfish",
+   "qid": "Q164327",
+   "fame": 0.516,
+   "class": "Fish",
+   "description": "fish species",
+   "hook": "is a speedy ocean hunter with a long flat bill like a blade",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Manta ray",
+   "qid": "Q1536199",
+   "fame": 0.515,
+   "class": "Fish",
+   "description": "genus of fishes",
+   "hook": "is a giant winged filter feeder that glides through the ocean with horn-like head fins",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Moray eel",
+   "qid": "Q35076",
+   "fame": 0.514,
+   "class": "Fish",
+   "description": "family of fishes",
+   "hook": "hides in reef crevices with a gaping mouth and a second set of jaws in its throat",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Redback spider",
+   "qid": "Q82544",
+   "fame": 0.514,
+   "class": "Arachnid",
+   "description": "species of arachnid",
+   "hook": "is a venomous Australian relative of the black widow",
+   "known": 0.95,
+   "kind": "arachnid"
+  },
+  {
+   "label": "Cone snail",
+   "qid": "Q140435",
+   "fame": 0.513,
+   "class": "Mollusc",
+   "description": "family of molluscs",
+   "hook": "fires a harpoon-like venomous tooth at prey, and its colorful shell is prized by collectors",
+   "known": 0.2,
+   "kind": "mollusc"
+  },
+  {
+   "label": "Poison dart frog",
+   "qid": "Q53750",
+   "fame": 0.513,
+   "class": "Amphibian",
+   "description": "family of amphibians",
+   "hook": "is a tiny jewel-colored rainforest dweller whose bright skin warns of toxicity",
+   "known": 0.6,
+   "kind": "amphibian"
+  },
+  {
+   "label": "Woodlouse",
+   "qid": "Q216191",
+   "fame": 0.513,
+   "class": "Crustacean",
+   "description": "suborder of isopods",
+   "hook": "is a gray garden critter that curls into a ball when disturbed and lives under rocks",
+   "known": 0.2,
+   "kind": "crustacean"
+  },
+  {
+   "label": "Woodpecker",
+   "qid": "Q25439",
+   "fame": 0.511,
+   "class": "Bird",
+   "description": "family of birds",
+   "hook": "hammers on tree trunks with its beak in search of grubs",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Mandrill",
+   "qid": "Q189868",
+   "fame": 0.51,
+   "class": "Mammal",
+   "description": "species of Old World monkey",
+   "hook": "has a vividly red and blue face and is the world's largest monkey",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Corn snake",
+   "qid": "Q754747",
+   "fame": 0.507,
+   "class": "Reptile",
+   "description": "species of reptile",
+   "hook": "is a calm, red-orange patterned constrictor often kept as a beginner's pet",
+   "known": 0.95,
+   "kind": "reptile"
+  },
+  {
+   "label": "Goldfish",
+   "qid": "Q123141",
+   "fame": 0.507,
+   "class": "Fish",
+   "description": "species of freshwater fish, common in aquariums",
+   "hook": "is the classic carnival-prize pet swimming in a bowl",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Toucan",
+   "qid": "Q1325045",
+   "fame": 0.505,
+   "class": "Bird",
+   "description": "family of birds",
+   "hook": "has an oversized colorful beak and lives in tropical rainforests",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Clownfish",
+   "qid": "Q472616",
+   "fame": 0.503,
+   "class": "Fish",
+   "description": "subfamily of fishes",
+   "hook": "lives among anemone tentacles and starred in an animated film about a lost son",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Flea",
+   "qid": "Q388162",
+   "fame": 0.503,
+   "class": "Insect",
+   "description": "order of insects",
+   "hook": "is a tiny blood-sucking jumper that bothers dogs and cats",
+   "known": 0.65,
+   "kind": "insect"
+  },
+  {
+   "label": "Giant spider crab",
+   "qid": "Q273655",
+   "fame": 0.503,
+   "class": "Crustacean",
+   "description": "species of crab",
+   "hook": "has the longest leg span of any arthropod and lives on the deep seafloor off Japan",
+   "known": 0.95,
+   "kind": "crustacean"
+  },
+  {
+   "label": "Aphid",
+   "qid": "Q183350",
+   "fame": 0.502,
+   "class": "Insect",
+   "description": "superfamily of insects",
+   "hook": "sucks sap from garden plants and is \"farmed\" by ants for its sweet honeydew",
+   "known": 0.65,
+   "kind": "insect"
+  },
+  {
+   "label": "Cockatoo",
+   "qid": "Q31448",
+   "fame": 0.501,
+   "class": "Bird",
+   "description": "family of parrots (Psittaciformes)",
+   "hook": "is a noisy crested parrot famous for its head plume and its talent for mimicking speech",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Hornbill",
+   "qid": "Q26773",
+   "fame": 0.499,
+   "class": "Bird",
+   "description": "family of birds in the order Bucerotiformes",
+   "hook": "has a huge curved beak topped with a casque and seals its mate inside a tree-hole nest",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Puffin",
+   "qid": "Q26685",
+   "fame": 0.499,
+   "class": "Bird",
+   "description": "species of seabird",
+   "hook": "has a bright triangular beak and nests in cliffside burrows along northern coasts",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Galápagos tortoise",
+   "qid": "Q20014035",
+   "fame": 0.497,
+   "class": "Reptile",
+   "description": "Chelonoidis species complex in the Galápagos Islands; species with many subspecies",
+   "hook": "is famed for its enormous size, slow pace and lifespans past a century, and for inspiring Darwin",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "Housefly",
+   "qid": "Q166111",
+   "fame": 0.496,
+   "class": "Insect",
+   "description": "species of insect in the class \"Muscidae\", sort of fly",
+   "hook": "buzzes around garbage and picnic food, spreading germs on its sticky feet",
+   "known": 0.65,
+   "kind": "insect"
+  },
+  {
+   "label": "Cane toad",
+   "qid": "Q321087",
+   "fame": 0.495,
+   "class": "Amphibian",
+   "description": "Species of amphibian",
+   "hook": "was brought to Australia to fight beetles and became a huge poisonous pest there",
+   "known": 0.6,
+   "kind": "amphibian"
+  },
+  {
+   "label": "Sea turtle",
+   "qid": "Q219329",
+   "fame": 0.495,
+   "class": "Reptile",
+   "description": "superfamily of shelled marine reptiles",
+   "hook": "swims the oceans for decades and returns to its birth beach to lay eggs",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "Crane",
+   "qid": "Q25365",
+   "fame": 0.493,
+   "class": "Bird",
+   "description": "family of birds",
+   "hook": "is a tall long-legged wader known for elaborate courtship dances and folded-paper versions",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Leatherback sea turtle",
+   "qid": "Q120043",
+   "fame": 0.492,
+   "class": "Reptile",
+   "description": "species of reptile",
+   "hook": "has a soft rubbery back instead of a hard shell and is the largest of its group",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "Starling",
+   "qid": "Q185237",
+   "fame": 0.492,
+   "class": "Bird",
+   "description": "family of birds",
+   "hook": "gathers in huge swirling flocks called murmurations and can mimic human sounds",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Anchovy",
+   "qid": "Q192662",
+   "fame": 0.489,
+   "class": "Fish",
+   "description": "family of fishes",
+   "hook": "is a tiny salty silver swimmer that divides pizza lovers and flavors Caesar dressing",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Boa constrictor",
+   "qid": "Q215388",
+   "fame": 0.489,
+   "class": "Reptile",
+   "description": "species of snake",
+   "hook": "kills by wrapping around its prey and squeezing rather than by using venom",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "Krill",
+   "qid": "Q29498",
+   "fame": 0.489,
+   "class": "Crustacean",
+   "description": "order of crustaceans",
+   "hook": "is a tiny shrimplike swimmer that is the main food of baleen whales",
+   "known": 0.4,
+   "kind": "crustacean"
+  },
+  {
+   "label": "Viper",
+   "qid": "Q163656",
+   "fame": 0.487,
+   "class": "Reptile",
+   "description": "family of venomous snakes",
+   "hook": "is a venomous snake with long folding fangs, a group that includes rattlers and adders",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "Hermit crab",
+   "qid": "Q273291",
+   "fame": 0.486,
+   "class": "Crustacean",
+   "description": "superfamily of crustaceans",
+   "hook": "carries a borrowed shell on its back and swaps to a bigger one as it grows",
+   "known": 0.4,
+   "kind": "crustacean"
+  },
+  {
+   "label": "Snapping turtle",
+   "qid": "Q457872",
+   "fame": 0.486,
+   "class": "Reptile",
+   "description": "heaviest freshwater turtle in the world",
+   "hook": "has a powerful hooked jaw and a famously bad temper, lurking in ponds and lakes",
+   "known": 0.6,
+   "kind": "reptile"
+  },
+  {
+   "label": "Snowy owl",
+   "qid": "Q170177",
+   "fame": 0.485,
+   "class": "Bird",
+   "description": "species of bird",
+   "hook": "is a white Arctic hunter that became famous as Harry Potter's pet Hedwig",
+   "known": 0.95,
+   "kind": "bird"
+  },
+  {
+   "label": "Turkey",
+   "qid": "Q26844",
+   "fame": 0.485,
+   "class": "Bird",
+   "description": "species of turkey native to North America",
+   "hook": "is the star of the American Thanksgiving dinner table and is known for its gobble",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Guppy",
+   "qid": "Q178202",
+   "fame": 0.484,
+   "class": "Fish",
+   "description": "species of fish, the guppy",
+   "hook": "is a colorful, tiny, live-bearing aquarium favorite for beginners",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Mako shark",
+   "qid": "Q192158",
+   "fame": 0.482,
+   "class": "Fish",
+   "description": "species of shark",
+   "hook": "is among the fastest swimmers in the ocean, famous for leaping high out of the water",
+   "known": 0.95,
+   "kind": "fish"
+  },
+  {
+   "label": "Swallow",
+   "qid": "Q39861",
+   "fame": 0.482,
+   "class": "Bird",
+   "description": "family of birds",
+   "hook": "is a fast, forked-tailed flyer whose yearly spring return is legendary at a California mission",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Swan",
+   "qid": "Q25402",
+   "fame": 0.474,
+   "class": "Bird",
+   "description": "species of swan",
+   "hook": "glides on lakes with a long curved neck and stars in a famous Tchaikovsky ballet",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Robin",
+   "qid": "Q460967",
+   "fame": 0.469,
+   "class": "Bird",
+   "description": "species of bird",
+   "hook": "is known for its orange-red breast and as a cheerful sign that spring has arrived",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Stork",
+   "qid": "Q28507",
+   "fame": 0.468,
+   "class": "Bird",
+   "description": "family of birds; type of bird with long neck, long legs and a big beak",
+   "hook": "is a long-legged wader of folklore said to deliver newborn babies",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Caecilian",
+   "qid": "Q4758",
+   "fame": 0.462,
+   "class": "Amphibian",
+   "description": "order of amphibians",
+   "hook": null,
+   "known": 0.2,
+   "kind": "amphibian"
+  },
+  {
+   "label": "Canary",
+   "qid": "Q253941",
+   "fame": 0.462,
+   "class": "Bird",
+   "description": "breed of domesticated bird",
+   "hook": "is a small yellow songster once carried down mines to warn miners of bad air",
+   "known": 0.65,
+   "kind": "bird"
+  },
+  {
+   "label": "Salmon",
+   "qid": "Q188879",
+   "fame": 0.461,
+   "class": "Fish",
+   "description": "species of fish",
+   "hook": "swims upstream to spawn where it was born and is prized for its pink flesh",
+   "known": 0.55,
+   "kind": "fish"
+  },
+  {
+   "label": "Zebra",
+   "qid": "Q245305",
+   "fame": 0.461,
+   "class": "Mammal",
+   "description": "species of mammal",
+   "hook": "is a striped, horselike grazer of the African plains whose pattern is unique to each animal",
+   "known": 0.95,
+   "kind": "mammal"
+  },
+  {
+   "label": "Warthog",
+   "qid": "Q3645260",
+   "fame": 0.46,
+   "class": "Mammal",
+   "description": "genus of wild pigs",
+   "hook": "is an African wild pig with curved tusks and facial bumps, and inspired Pumbaa in The Lion King",
+   "known": 0.7,
+   "kind": "mammal"
+  },
+  {
+   "label": "Bullfrog",
+   "qid": "Q159404",
+   "fame": 0.456,
+   "class": "Amphibian",
+   "description": "species of amphibian",
+   "hook": "is a huge pond dweller with a deep booming call heard at night",
+   "known": 0.6,
+   "kind": "amphibian"
+  },
+  {
+   "label": "Loggerhead sea turtle",
+   "qid": "Q192095",
+   "fame": 0.455,
+   "class": "Reptile",
+   "description": "species of turtle",
+   "hook": "has a very large head and powerful jaws for crushing shellfish",
+   "known": 0.6,
+   "kind": "reptile"
+  }
+ ]
+}

@@ -1,0 +1,207 @@
+{
+ "id": "table.oddities.mysteries-ancient",
+ "kind": "table",
+ "title": "Puzzling artifacts, ancient sites and lost ships",
+ "genre": "general",
+ "category": "oddities",
+ "topic": "mysteries",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { VALUES ?item { wd:Q59222 wd:Q182324 wd:Q14452 wd:Q812923 wd:Q1345100 wd:Q465338 wd:Q244937 wd:Q1136743 wd:Q15217844 wd:Q1694882 wd:Q643309 wd:Q129809 wd:Q254170 wd:Q209764 wd:Q380176 wd:Q992476 wd:Q130958 wd:Q214944 wd:Q2255395 wd:Q846967 wd:Q828336 wd:Q1128599 wd:Q608039 wd:Q1546315 wd:Q2734050 wd:Q1286554 wd:Q7504674 wd:Q1478559 wd:Q339503 wd:Q3000066 wd:Q39252 wd:Q28130030 } OPTIONAL { ?item wdt:P17 ?country . } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T16:16:53.260Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T16:16:53.260Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "kind",
+   "label": "Kind",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "mystery",
+  "many": "mysteries",
+  "capitalise": true,
+  "hookAsk": "Which mystery {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is home to {label}?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each mystery to its country.",
+    "odd": "Three of these mysteries are in {value}. Which one isn't?",
+    "all": "Tap all {n} mysteries in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Göbekli Tepe",
+   "qid": "Q214944",
+   "fame": 0.654,
+   "country": "Turkey",
+   "kind": "ancient-site",
+   "description": "neolithic archaeological site in Turkey",
+   "hook": "is often called the world's oldest temple, predating Stonehenge by thousands of years",
+   "known": 0.4
+  },
+  {
+   "label": "Easter Island",
+   "qid": "Q14452",
+   "fame": 0.651,
+   "country": "Chile",
+   "kind": "ancient-site",
+   "description": "Polynesian island and special territory of Chile",
+   "hook": "is famous for hundreds of giant carved stone heads called moai",
+   "known": 0.8
+  },
+  {
+   "label": "Antikythera mechanism",
+   "qid": "Q182324",
+   "fame": 0.633,
+   "country": null,
+   "kind": "artifact",
+   "description": "ancient analog computer designed to calculate astronomical positions",
+   "hook": "is a corroded bronze device from a shipwreck, often called the first computer",
+   "known": 0.2
+  },
+  {
+   "label": "Roanoke Colony",
+   "qid": "Q59222",
+   "fame": 0.629,
+   "country": "United States",
+   "kind": "vanished-colony",
+   "description": "former colony in present-day Dare County, North Carolina, US (1585–1590)",
+   "hook": "was an English settlement whose colonists vanished, leaving only \"Croatoan\" carved on a post",
+   "known": 0.4
+  },
+  {
+   "label": "The Great Sphinx",
+   "qid": "Q130958",
+   "fame": 0.555,
+   "country": "Egypt",
+   "kind": "ancient-site",
+   "description": "ancient Egyptian monumental sculpture",
+   "hook": "has a lion's body and a human head and guards a famous pyramid complex at Giza",
+   "known": 0.95
+  },
+  {
+   "label": "Flying Dutchman",
+   "qid": "Q39252",
+   "fame": 0.545,
+   "country": null,
+   "kind": "ghost-ship",
+   "description": "legendary ghost ship",
+   "hook": "is a spectral sailing vessel said to be doomed to roam the seas forever as an omen of bad luck",
+   "known": 0.6
+  },
+  {
+   "label": "Winchester Mystery House",
+   "qid": "Q608039",
+   "fame": 0.523,
+   "country": "United States",
+   "kind": "strange-building",
+   "description": "Mansion in San Jose, California.",
+   "hook": "was a sprawling mansion whose rifle-fortune heiress kept adding rooms to appease spirits",
+   "known": 0.2
+  },
+  {
+   "label": "Piri Reis map",
+   "qid": "Q1128599",
+   "fame": 0.515,
+   "country": null,
+   "kind": "artifact",
+   "description": "Piri Reis's nautical chart",
+   "hook": "is a chart drawn by an Ottoman admiral that some claim shows Antarctica",
+   "known": 0.2
+  },
+  {
+   "label": "Kryptos",
+   "qid": "Q1345100",
+   "fame": 0.501,
+   "country": "United States",
+   "kind": "cipher",
+   "description": "encrypted sculpture by American artist Jim Sanborn",
+   "hook": "is a sculpture at CIA headquarters carrying coded messages, one section still unsolved",
+   "known": 0.05
+  },
+  {
+   "label": "Nan Madol",
+   "qid": "Q846967",
+   "fame": 0.485,
+   "country": "Federated States of Micronesia",
+   "kind": "ancient-site",
+   "description": "ruined city of Federated States of Micronesesia",
+   "hook": "is a city of artificial stone islets built on a reef, nicknamed the Venice of the Pacific",
+   "known": 0.05
+  },
+  {
+   "label": "The Hum",
+   "qid": "Q992476",
+   "fame": 0.485,
+   "country": null,
+   "kind": "phenomenon",
+   "description": "acoustic phenomenon",
+   "hook": "is a low droning noise that some people in certain towns claim to hear constantly",
+   "known": 0.2
+  },
+  {
+   "label": "Newgrange",
+   "qid": "Q339503",
+   "fame": 0.477,
+   "country": "Ireland",
+   "kind": "ancient-site",
+   "description": "neolithic monument in County Meath, Ireland",
+   "hook": "is a passage tomb whose inner chamber is lit by the winter solstice sunrise",
+   "known": 0.4
+  },
+  {
+   "label": "Coral Castle",
+   "qid": "Q129809",
+   "fame": 0.472,
+   "country": "United States",
+   "kind": "strange-building",
+   "description": "visitor attraction in Leisure City, Florida, USA",
+   "hook": "was hand-built by one man from huge limestone blocks, rumored to be moved without machines",
+   "known": 0.2
+  },
+  {
+   "label": "Cottingley Fairies",
+   "qid": "Q1136743",
+   "fame": 0.471,
+   "country": "United Kingdom",
+   "kind": "hoax",
+   "description": "series of photographs",
+   "hook": "were photos of two girls with winged sprites, praised by Sherlock Holmes's creator",
+   "known": 0.2
+  }
+ ]
+}

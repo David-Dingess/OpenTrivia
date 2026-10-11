@@ -1,0 +1,372 @@
+{
+ "id": "list.sports.mlb-teams",
+ "title": "MLB teams",
+ "prompt": "Name an MLB team",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "baseball",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q13027888 ; wdt:P118 wd:Q1163715 . FILTER NOT EXISTS { ?item wdt:P576 [] } } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-09-30T13:26:25.241Z"
+ },
+ "rows": [
+  {
+   "label": "New York Yankees",
+   "qid": "Q213417",
+   "fame": 0.65,
+   "also": [
+    "Yankees",
+    "Highlanders",
+    "Bombers",
+    "Bronx Bombers",
+    "NYY",
+    "New York Highlanders",
+    "NY Yankees"
+   ]
+  },
+  {
+   "label": "Los Angeles Dodgers",
+   "qid": "Q334634",
+   "fame": 0.641,
+   "also": [
+    "Atlantics",
+    "Bums",
+    "Robins",
+    "Grays",
+    "LAD",
+    "Dodgers",
+    "Brooklyn Dodgers",
+    "Bridegrooms",
+    "Brooklyn Atlantics",
+    "Brooklyn Bridegrooms",
+    "Brooklyn Grays",
+    "Brooklyn Grooms"
+   ]
+  },
+  {
+   "label": "Los Angeles Angels",
+   "qid": "Q743309",
+   "fame": 0.631,
+   "also": [
+    "Angels",
+    "LAA",
+    "Anaheim Angels",
+    "California Angels",
+    "LA Angels",
+    "Los Angeles Angels of Anaheim"
+   ]
+  },
+  {
+   "label": "Athletics",
+   "qid": "Q504339",
+   "fame": 0.618,
+   "also": [
+    "The A's",
+    "Las Vegas Athletics",
+    "The White Elephants"
+   ]
+  },
+  {
+   "label": "Boston Red Sox",
+   "qid": "Q213959",
+   "fame": 0.616,
+   "also": [
+    "BoSox",
+    "Boston Americans",
+    "Red Sox",
+    "redsoxs",
+    "Sox"
+   ]
+  },
+  {
+   "label": "Cleveland Guardians",
+   "qid": "Q642553",
+   "fame": 0.614,
+   "also": [
+    "The Tribe",
+    "Indians",
+    "Blues",
+    "Cleveland Blues",
+    "Cleveland Indians",
+    "Guardians",
+    "Naps",
+    "Cleveland Broncos",
+    "Cleveland Naps",
+    "Cleveland Bluebirds",
+    "Cleveland Lakeshores"
+   ]
+  },
+  {
+   "label": "Milwaukee Brewers",
+   "qid": "Q848103",
+   "fame": 0.608,
+   "also": [
+    "Brewers",
+    "Pilots",
+    "Seattle Pilots",
+    "Brew Crew"
+   ]
+  },
+  {
+   "label": "New York Mets",
+   "qid": "Q692417",
+   "fame": 0.603,
+   "also": [
+    "Mets",
+    "NYM",
+    "Metropolitans"
+   ]
+  },
+  {
+   "label": "Toronto Blue Jays",
+   "qid": "Q650829",
+   "fame": 0.602,
+   "also": [
+    "Bluejays",
+    "Jays",
+    "TBJ",
+    "Toronto Jays"
+   ]
+  },
+  {
+   "label": "Chicago Cubs",
+   "qid": "Q246782",
+   "fame": 0.601,
+   "also": [
+    "Orphans",
+    "Colts",
+    "Remnants",
+    "Cubbies",
+    "Cubs",
+    "Chicago Colts",
+    "Chicago Orphans",
+    "Chicago White Stockings",
+    "Chicago Whites",
+    "North Siders"
+   ]
+  },
+  {
+   "label": "Chicago White Sox",
+   "qid": "Q335169",
+   "fame": 0.598,
+   "also": [
+    "CHW",
+    "White Sox",
+    "ChiSox",
+    "South Siders"
+   ]
+  },
+  {
+   "label": "Tampa Bay Rays",
+   "qid": "Q650865",
+   "fame": 0.591,
+   "also": [
+    "TBR",
+    "Rays",
+    "Devil Rays",
+    "Tampa Bay Devil Rays",
+    "Tampa Rays"
+   ]
+  },
+  {
+   "label": "Atlanta Braves",
+   "qid": "Q461595",
+   "fame": 0.59,
+   "also": [
+    "Bees",
+    "Doves",
+    "Boston Braves",
+    "Braves",
+    "Milwaukee Braves",
+    "Rustlers",
+    "Boston Beaneaters",
+    "Beaneaters",
+    "Boston Bees",
+    "Boston Doves",
+    "Boston Red Stockings",
+    "Boston Rustlers"
+   ]
+  },
+  {
+   "label": "San Francisco Giants",
+   "qid": "Q308966",
+   "fame": 0.58,
+   "also": [
+    "Giants",
+    "New York Gothams",
+    "SFG",
+    "New York Giants",
+    "Gothams",
+    "SF Giants"
+   ]
+  },
+  {
+   "label": "Philadelphia Phillies",
+   "qid": "Q650840",
+   "fame": 0.579,
+   "also": [
+    "Phils",
+    "Philadelphia Quakers",
+    "Phillies",
+    "Quakers"
+   ]
+  },
+  {
+   "label": "San Diego Padres",
+   "qid": "Q721134",
+   "fame": 0.575,
+   "also": [
+    "SDP",
+    "Padres"
+   ]
+  },
+  {
+   "label": "Seattle Mariners",
+   "qid": "Q466586",
+   "fame": 0.574,
+   "also": [
+    "Mariners"
+   ]
+  },
+  {
+   "label": "Texas Rangers",
+   "qid": "Q329816",
+   "fame": 0.57,
+   "also": [
+    "Senators",
+    "Rangers",
+    "Washington Senators"
+   ]
+  },
+  {
+   "label": "Detroit Tigers",
+   "qid": "Q650855",
+   "fame": 0.568,
+   "also": [
+    "Tigers"
+   ]
+  },
+  {
+   "label": "Baltimore Orioles",
+   "qid": "Q650816",
+   "fame": 0.565,
+   "also": [
+    "Birds",
+    "Orioles",
+    "The O's"
+   ]
+  },
+  {
+   "label": "Houston Astros",
+   "qid": "Q848117",
+   "fame": 0.565,
+   "also": [
+    "Astros",
+    "'Stros",
+    "Colt .45's",
+    "Houston Colt .45's"
+   ]
+  },
+  {
+   "label": "St. Louis Cardinals",
+   "qid": "Q504309",
+   "fame": 0.563,
+   "also": [
+    "Cardinals",
+    "Red Birds",
+    "Cards",
+    "Browns",
+    "Brown Stockings",
+    "Perfectos",
+    "Saint Louis Cardinals"
+   ]
+  },
+  {
+   "label": "Cincinnati Reds",
+   "qid": "Q826751",
+   "fame": 0.559,
+   "also": [
+    "Reds",
+    "Cincinnati Red Stockings",
+    "Redlegs",
+    "Red Stockings",
+    "Cincinnati Redlegs"
+   ]
+  },
+  {
+   "label": "Washington Nationals",
+   "qid": "Q825838",
+   "fame": 0.547,
+   "also": [
+    "Nationals",
+    "Nats",
+    "Nasty Nats"
+   ]
+  },
+  {
+   "label": "Miami Marlins",
+   "qid": "Q652879",
+   "fame": 0.544,
+   "also": [
+    "Marlins",
+    "Florida Marlins"
+   ]
+  },
+  {
+   "label": "Colorado Rockies",
+   "qid": "Q388858",
+   "fame": 0.543,
+   "also": [
+    "Rox",
+    "Rockies"
+   ]
+  },
+  {
+   "label": "Pittsburgh Pirates",
+   "qid": "Q653772",
+   "fame": 0.54,
+   "also": [
+    "Pirates",
+    "Pittsburg Pirates",
+    "Bucs",
+    "Alleghenys",
+    "Buccos",
+    "Pittsburgh Alleghenys"
+   ]
+  },
+  {
+   "label": "Arizona Diamondbacks",
+   "qid": "Q670376",
+   "fame": 0.537,
+   "also": [
+    "Diamondbacks",
+    "Arizona D-Backs",
+    "D-Backs"
+   ]
+  },
+  {
+   "label": "Minnesota Twins",
+   "qid": "Q604879",
+   "fame": 0.537,
+   "also": [
+    "Senators",
+    "Twins",
+    "Washington Senators",
+    "Twinkies"
+   ]
+  },
+  {
+   "label": "Kansas City Royals",
+   "qid": "Q744530",
+   "fame": 0.524,
+   "also": [
+    "Royals",
+    "KCR",
+    "KC Royals"
+   ]
+  }
+ ]
+}

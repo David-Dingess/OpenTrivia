@@ -1,0 +1,467 @@
+{
+ "id": "table.pop-culture.tv-theme-songs",
+ "kind": "table",
+ "title": "TV theme songs: who performed them",
+ "genre": "general",
+ "category": "pop-culture",
+ "topic": "tv",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?songLabel ?perfLabel WHERE { { SELECT ?item (SAMPLE(?sg) AS ?song) (SAMPLE(?pf) AS ?perf) WHERE { ?item wdt:P31/wdt:P279* wd:Q5398426; wdt:P942 ?sg. ?sg wdt:P175 ?pf. FILTER NOT EXISTS { ?sg wdt:P175 ?p2. FILTER(?p2 != ?pf) } FILTER NOT EXISTS { ?item wdt:P942 ?s2. FILTER(?s2 != ?sg) } } GROUP BY ?item } hint:Prior hint:runFirst true . ?item wikibase:sitelinks ?sitelinks. FILTER(?sitelinks > 15) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T06:25:34.527Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T06:25:34.527Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "song",
+   "label": "Theme song",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "performer",
+   "label": "Performed by",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "TV show",
+  "many": "TV shows",
+  "minFame": 0.55,
+  "columns": {
+   "performer": {
+    "role": "link",
+    "pick": "Who performed the theme song of the TV show {label}?",
+    "statement": "The theme song of {label} was performed by {value}.",
+    "match": "Match each TV show to the artist who performed its theme song.",
+    "reverse": "Which of these TV shows has a theme song performed by {value}?"
+   },
+   "song": {
+    "role": "code",
+    "pick": "What is the theme song of the TV show {label} called?",
+    "statement": "The theme song of {label} is called \"{value}\".",
+    "match": "Match each TV show to its theme song.",
+    "reverse": "Which TV show has the theme song \"{value}\"?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The Big Bang Theory",
+   "qid": "Q8539",
+   "fame": 0.732,
+   "song": "The History of Everything",
+   "performer": "Barenaked Ladies",
+   "description": "American television sitcom (2007–2019)",
+   "hook": "follows a group of nerdy physicists and their aspiring-actress neighbor in Pasadena",
+   "known": 0.8,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Better Call Saul",
+   "qid": "Q14925221",
+   "fame": 0.718,
+   "song": "Better Call Saul Main Title Theme",
+   "performer": "Little Barrie",
+   "description": "American crime drama television series (2015–2022)",
+   "hook": "is the prequel to Breaking Bad about a shady New Mexico lawyer",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "Twin Peaks",
+   "qid": "Q2085",
+   "fame": 0.716,
+   "song": "Falling",
+   "performer": "Julee Cruise",
+   "description": "American drama television series from 1990–1991",
+   "hook": "begins with a murdered homecoming queen and an FBI agent who adores coffee and cherry pie",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "Friends",
+   "qid": "Q79784",
+   "fame": 0.704,
+   "song": "I'll Be There for You",
+   "performer": "The Rembrandts",
+   "description": "American sitcom (1994–2004)",
+   "hook": "follows six pals in New York who hang out at a coffee shop called Central Perk",
+   "known": 0.95,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Peaky Blinders",
+   "qid": "Q14944179",
+   "fame": 0.703,
+   "song": "Red Right Hand",
+   "performer": "Nick Cave and the Bad Seeds",
+   "description": "British period drama television series (2013–2022)",
+   "hook": "follows a Birmingham gang family led by Tommy Shelby after the First World War",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "SpongeBob SquarePants",
+   "qid": "Q83279",
+   "fame": 0.681,
+   "song": "SpongeBob SquarePants Theme",
+   "performer": "Patrick Pinney",
+   "description": "American animated television series",
+   "hook": "follows a cheerful yellow sea sponge who lives in a pineapple under the sea",
+   "known": 0.8,
+   "kind": "cartoon"
+  },
+  {
+   "label": "The Golden Girls",
+   "qid": "Q912467",
+   "fame": 0.668,
+   "song": "Thank You for Being a Friend",
+   "performer": "Andrew Gold",
+   "description": "American sitcom",
+   "hook": "follows four older women sharing a Miami house and bonding over cheesecake",
+   "known": 0.8,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Neon Genesis Evangelion",
+   "qid": "Q662",
+   "fame": 0.655,
+   "song": "A Cruel Angel's Thesis",
+   "performer": "Yoko Takahashi",
+   "description": "Japanese anime television series",
+   "hook": null,
+   "known": 0.2,
+   "kind": "anime"
+  },
+  {
+   "label": "Cheers",
+   "qid": "Q732063",
+   "fame": 0.629,
+   "song": "Theme from the T.V. Show \"Cheers\"",
+   "performer": "Gary Portnoy",
+   "description": "American television sitcom (1982–1993)",
+   "hook": "is set in a Boston bar run by a former baseball pitcher",
+   "known": 0.8,
+   "kind": "sitcom"
+  },
+  {
+   "label": "King of the Hill",
+   "qid": "Q1135966",
+   "fame": 0.628,
+   "song": "Yahoos and Triangles",
+   "performer": "The Refreshments",
+   "description": "animated television series",
+   "hook": "follows a propane salesman and his family in small-town Texas",
+   "known": 0.6,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Top Gear",
+   "qid": "Q33162",
+   "fame": 0.627,
+   "song": "Jessica",
+   "performer": "The Allman Brothers Band",
+   "description": "British automotive television show, 2002-2022",
+   "hook": "has hosts who test supercars and race cheap cars around a famous test track",
+   "known": 0.6,
+   "kind": "documentary"
+  },
+  {
+   "label": "Miami Vice",
+   "qid": "Q559321",
+   "fame": 0.624,
+   "song": "The Original Miami Vice Theme",
+   "performer": "Jan Hammer",
+   "description": "1984–1989 American crime drama television series",
+   "hook": "follows two undercover detectives in pastel suits cruising a neon-lit coastal city",
+   "known": 0.8,
+   "kind": "drama"
+  },
+  {
+   "label": "Babylon Berlin",
+   "qid": "Q22998408",
+   "fame": 0.623,
+   "song": "Zu Asche, zu Staub",
+   "performer": "Severija Janušauskaitė",
+   "description": "German thriller TV series set in the Weimar Republic",
+   "hook": "follows a police inspector chasing conspiracies in a decadent interwar capital",
+   "known": 0.4,
+   "kind": "drama"
+  },
+  {
+   "label": "Cyberpunk: Edgerunners",
+   "qid": "Q96677963",
+   "fame": 0.623,
+   "song": "This Fire",
+   "performer": "Franz Ferdinand",
+   "description": "2022 anime web series",
+   "hook": "follows a street kid who joins a crew of mercenaries in Night City",
+   "known": 0.4,
+   "kind": "anime"
+  },
+  {
+   "label": "Bleach",
+   "qid": "Q5362638",
+   "fame": 0.61,
+   "song": "Alones",
+   "performer": "Aqua Timez",
+   "description": "Japanese anime television series",
+   "hook": "follows an orange-haired teenager who becomes a soul-reaping swordsman",
+   "known": 0.4,
+   "kind": "anime"
+  },
+  {
+   "label": "Veronica Mars",
+   "qid": "Q4529",
+   "fame": 0.604,
+   "song": "We Used to Be Friends",
+   "performer": "The Dandy Warhols",
+   "description": "American television series",
+   "hook": "follows a teenage private investigator solving cases in a sunny California town",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "Adventure Time",
+   "qid": "Q53093",
+   "fame": 0.602,
+   "song": "Adventure Time Theme Song",
+   "performer": "Pendleton Ward",
+   "description": "American animated television series",
+   "hook": "follows a boy and his shape-shifting dog in a candy-colored post-apocalyptic land",
+   "known": 0.6,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Puella Magi Madoka Magica",
+   "qid": "Q53353",
+   "fame": 0.602,
+   "song": "Magia",
+   "performer": "Kalafina",
+   "description": "Japanese anime television series",
+   "hook": null,
+   "known": 0.2,
+   "kind": "anime"
+  },
+  {
+   "label": "Dragon Ball Z",
+   "qid": "Q477916",
+   "fame": 0.6,
+   "song": "We Gotta Power",
+   "performer": "Hironobu Kageyama",
+   "description": "Japanese anime television series",
+   "hook": "follows spiky-haired alien warriors who transform into golden-haired fighters",
+   "known": 0.8,
+   "kind": "anime"
+  },
+  {
+   "label": "Jackass",
+   "qid": "Q465616",
+   "fame": 0.598,
+   "song": "Corona",
+   "performer": "Minutemen",
+   "description": "American reality comedy series",
+   "hook": "features a crew performing dangerous pranks and painful stunts",
+   "known": 0.6,
+   "kind": "reality"
+  },
+  {
+   "label": "The Flintstones",
+   "qid": "Q201358",
+   "fame": 0.597,
+   "song": "Meet the Flintstones",
+   "performer": "The B-52's",
+   "description": "American animated sitcom",
+   "hook": "is a Stone Age family comedy where cars are powered by the driver's feet",
+   "known": 0.8,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Mighty Morphin Power Rangers",
+   "qid": "Q513809",
+   "fame": 0.596,
+   "song": "Go Go Power Rangers",
+   "performer": "Ron Wasserman",
+   "description": "American superhero television series",
+   "hook": "follows teenagers who transform into colorful costumed heroes piloting giant robots",
+   "known": 0.8,
+   "kind": "action"
+  },
+  {
+   "label": "Dawson's Creek",
+   "qid": "Q461357",
+   "fame": 0.593,
+   "song": "Run Like Mad",
+   "performer": "Jann Arden",
+   "description": "1998 American teen drama television series",
+   "hook": "follows a group of teens growing up in a Massachusetts coastal town",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "Narcos",
+   "qid": "Q20642206",
+   "fame": 0.582,
+   "song": "Tuyo",
+   "performer": "Rodrigo Amarante",
+   "description": "American crime drama television series",
+   "hook": "tells the story of the hunt for Colombian drug lord Pablo Escobar",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "Psych",
+   "qid": "Q48758",
+   "fame": 0.581,
+   "song": "I Know You Know",
+   "performer": "The Friendly Indians",
+   "description": "American detective comedy-drama television series",
+   "hook": "follows a man who pretends to have supernatural crime-solving visions to help police",
+   "known": 0.6,
+   "kind": "drama"
+  },
+  {
+   "label": "The Beverly Hillbillies",
+   "qid": "Q941737",
+   "fame": 0.581,
+   "song": "The Ballad of Jed Clampett",
+   "performer": "Jerry Scoggins",
+   "description": "American sitcom (1962-1971)",
+   "hook": "follows a poor mountain family who strike oil and move to a mansion in a wealthy California city",
+   "known": 0.8,
+   "kind": "sitcom"
+  },
+  {
+   "label": "The Affair",
+   "qid": "Q17985420",
+   "fame": 0.574,
+   "song": "Container",
+   "performer": "Fiona Apple",
+   "description": "American television drama series (2014–2019)",
+   "hook": "retells a love triangle from each character's conflicting perspective",
+   "known": 0.4,
+   "kind": "drama"
+  },
+  {
+   "label": "Arthur",
+   "qid": "Q1056342",
+   "fame": 0.561,
+   "song": "Believe in Yourself",
+   "performer": "Ziggy Marley and the Melody Makers",
+   "description": "children's animated edutainment television series",
+   "hook": "follows an aardvark schoolboy and his classmates in a children's show",
+   "known": 0.8,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Drake & Josh",
+   "qid": "Q753647",
+   "fame": 0.555,
+   "song": "I Found a Way",
+   "performer": "Drake Bell",
+   "description": "American television series",
+   "hook": "follows two stepbrothers with opposite personalities living in San Diego",
+   "known": 0.6,
+   "kind": "sitcom"
+  },
+  {
+   "label": "CSI: Miami",
+   "qid": "Q189411",
+   "fame": 0.524,
+   "song": "Won't Get Fooled Again",
+   "performer": "The Who",
+   "description": "American police procedural television series (2002-2012)",
+   "hook": null,
+   "known": 0.8,
+   "kind": "procedural"
+  },
+  {
+   "label": "NCIS: New Orleans",
+   "qid": "Q16802335",
+   "fame": 0.502,
+   "song": "Boom Boom Boom",
+   "performer": "The Outhere Brothers",
+   "description": "US TV series",
+   "hook": null,
+   "known": 0.6,
+   "kind": "procedural"
+  },
+  {
+   "label": "DuckTales",
+   "qid": "Q214107",
+   "fame": 0.499,
+   "song": "DuckTales Theme",
+   "performer": "Jeff Pescetto",
+   "description": "1987–1990 American animated television series",
+   "hook": null,
+   "known": 0.8,
+   "kind": "cartoon"
+  },
+  {
+   "label": "Yu-Gi-Oh! Duel Monsters",
+   "qid": "Q1186025",
+   "fame": 0.499,
+   "song": "Shuffle",
+   "performer": "Masami Okui",
+   "description": "Japanese anime television series",
+   "hook": null,
+   "known": 0.4,
+   "kind": "anime"
+  },
+  {
+   "label": "CSI: NY",
+   "qid": "Q192259",
+   "fame": 0.496,
+   "song": "Baba O'Riley",
+   "performer": "The Who",
+   "description": "television series (2004-2013)",
+   "hook": null,
+   "known": 0.8,
+   "kind": "procedural"
+  },
+  {
+   "label": "El Chavo del 8",
+   "qid": "Q1323981",
+   "fame": 0.481,
+   "song": "The elephant never forgets",
+   "performer": "Jean-Jacques Perrey",
+   "description": "Mexican television sitcom",
+   "hook": null,
+   "known": 0.4,
+   "kind": "sitcom"
+  },
+  {
+   "label": "Digimon Adventure",
+   "qid": "Q689114",
+   "fame": 0.475,
+   "song": "Butter-Fly",
+   "performer": "Kōji Wada",
+   "description": "1999 Japanese anime television series",
+   "hook": null,
+   "known": 0.6,
+   "kind": "anime"
+  }
+ ]
+}

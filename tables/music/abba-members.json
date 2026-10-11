@@ -1,0 +1,102 @@
+{
+ "id": "list.music.abba-members",
+ "kind": "list",
+ "title": "Members of ABBA",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "bands",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { wd:Q18233 wdt:P527 ?item . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T04:54:28.294Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T04:54:28.294Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "member",
+  "many": "members",
+  "columns": {}
+ },
+ "impostors": [
+  {
+   "label": "Phil Collins",
+   "qid": "Q144622",
+   "why": "not a member: a member of Pink Floyd or Genesis, not ABBA"
+  },
+  {
+   "label": "Peter Gabriel",
+   "qid": "Q175195",
+   "why": "not a member: a member of Pink Floyd or Genesis, not ABBA"
+  },
+  {
+   "label": "Roger Waters",
+   "qid": "Q180861",
+   "why": "not a member: a member of Pink Floyd or Genesis, not ABBA"
+  },
+  {
+   "label": "Syd Barrett",
+   "qid": "Q173061",
+   "why": "not a member: a member of Pink Floyd or Genesis, not ABBA"
+  },
+  {
+   "label": "David Gilmour",
+   "qid": "Q178517",
+   "why": "not a member: a member of Pink Floyd or Genesis, not ABBA"
+  },
+  {
+   "label": "Richard Wright",
+   "qid": "Q190251",
+   "why": "not a member: a member of Pink Floyd or Genesis, not ABBA"
+  },
+  {
+   "label": "Nick Mason",
+   "qid": "Q192936",
+   "why": "not a member: a member of Pink Floyd or Genesis, not ABBA"
+  },
+  {
+   "label": "Mike Rutherford",
+   "qid": "Q321092",
+   "why": "not a member: a member of Pink Floyd or Genesis, not ABBA"
+  }
+ ],
+ "rows": [
+  {
+   "label": "Agnetha Fältskog",
+   "qid": "Q173144",
+   "fame": 0.638,
+   "description": "Swedish singer (born 1950)"
+  },
+  {
+   "label": "Anni-Frid Lyngstad",
+   "qid": "Q201908",
+   "fame": 0.634,
+   "description": "Swedish singer (born 1945)"
+  },
+  {
+   "label": "Björn Ulvaeus",
+   "qid": "Q179682",
+   "fame": 0.596,
+   "description": "Swedish musician; member of ABBA"
+  },
+  {
+   "label": "Benny Andersson",
+   "qid": "Q214582",
+   "fame": 0.59,
+   "description": "Swedish musician and composer"
+  }
+ ]
+}

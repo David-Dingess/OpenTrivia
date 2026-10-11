@@ -1,0 +1,193 @@
+{
+ "id": "table.art.famous-landmarks-architect",
+ "kind": "table",
+ "title": "Famous buildings and landmarks and their architect",
+ "genre": "arts-entertainment",
+ "category": "art",
+ "topic": "landmarks",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?creatorLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?creator) WHERE { VALUES ?item { wd:Q45178 wd:Q463179 wd:Q48435 wd:Q179199 wd:Q220728 wd:Q548679 wd:Q62939 wd:Q461371 wd:Q474326 wd:Q99236 wd:Q29257 wd:Q29247 wd:Q13397 wd:Q2027162 wd:Q859452 wd:Q940843 wd:Q1351061 wd:Q940746 wd:Q201720 wd:Q12495 wd:Q83063 wd:Q11274 } ?item wdt:P84 ?c . ?c wdt:P31 wd:Q5 . } GROUP BY ?item HAVING(COUNT(DISTINCT ?c) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T12:00:10.279Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T12:00:10.279Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "architect",
+   "label": "Architect",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "landmark",
+  "many": "landmarks",
+  "wildcard": "place",
+  "hookAsk": "Which landmark {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "theLabels": [
+   "Basilica and Expiatory Church of the Holy Family",
+   "Petronas Towers",
+   "Chrysler Building",
+   "Gateway Arch",
+   "Flatiron Building",
+   "Burj al-Arab",
+   "Millau Viaduct",
+   "Lotus Temple",
+   "Guggenheim Museum Bilbao"
+  ],
+  "columns": {
+   "architect": {
+    "role": "link",
+    "pick": "Who designed {label}?",
+    "statement": "{label} was designed by {value}.",
+    "match": "Match each landmark to its architect.",
+    "odd": "Three of these were designed by {value}. Which one wasn't?",
+    "all": "Tap all {n} landmarks designed by {value}.",
+    "reverse": "Which of these did {value} design?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Basilica and Expiatory Church of the Holy Family",
+   "qid": "Q48435",
+   "fame": 0.695,
+   "architect": "Antoni Gaudí",
+   "description": "basilica under construction since 1882 in Barcelona, Spain",
+   "hook": "remains unfinished after decades of construction and is famous for its tall, spire-covered facade",
+   "known": 0.8,
+   "kind": "church"
+  },
+  {
+   "label": "Petronas Towers",
+   "qid": "Q83063",
+   "fame": 0.626,
+   "architect": "César Pelli",
+   "description": "twin skyscrapers in Kuala Lumpur, Malaysia",
+   "hook": "was once the tallest building on Earth, known for its matching twin skyscrapers linked by a sky bridge",
+   "known": 0.4,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "Chrysler Building",
+   "qid": "Q11274",
+   "fame": 0.604,
+   "architect": "William Van Alen",
+   "description": "building in New York City",
+   "hook": "is topped with a stainless-steel crown of stacked arches that lights up the New York skyline at night",
+   "known": 0.6,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "Fallingwater",
+   "qid": "Q463179",
+   "fame": 0.544,
+   "architect": "Frank Lloyd Wright",
+   "description": "house designed by architect Frank Lloyd Wright in Pennsylvania",
+   "hook": "cantilevers dramatically above a rushing forest stream, blurring the line between house and nature",
+   "known": 0.8,
+   "kind": "house"
+  },
+  {
+   "label": "Gateway Arch",
+   "qid": "Q2027162",
+   "fame": 0.538,
+   "architect": "Eero Saarinen",
+   "description": "monument in St. Louis, Missouri",
+   "hook": "is a soaring, stainless-steel monument shaped like a giant curve towering over the Mississippi riverfront",
+   "known": 0.4,
+   "kind": "monument"
+  },
+  {
+   "label": "Flatiron Building",
+   "qid": "Q220728",
+   "fame": 0.519,
+   "architect": "Daniel Burnham",
+   "description": "skyscraper in New York City",
+   "hook": "has a narrow, triangular shape that tapers to a point where two streets meet in Manhattan",
+   "known": 0.4,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "Marina Bay Sands",
+   "qid": "Q548679",
+   "fame": 0.508,
+   "architect": "Moshe Safdie",
+   "description": "integrated resort in Singapore",
+   "hook": "supports a boat-shaped platform on its roof that holds an infinity pool overlooking the city skyline",
+   "known": 0.2,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "Burj al-Arab",
+   "qid": "Q62939",
+   "fame": 0.499,
+   "architect": "Tom Wright",
+   "description": "luxury hotel in Dubai, United Arab Emirates",
+   "hook": "is shaped like a giant sail rising from its own man-made island off the coast of Dubai",
+   "known": 0.2,
+   "kind": "skyscraper"
+  },
+  {
+   "label": "Millau Viaduct",
+   "qid": "Q99236",
+   "fame": 0.482,
+   "architect": "Norman Foster",
+   "description": "motorway bridge in France",
+   "hook": "carries traffic across a valley on masts so tall their tops sometimes disappear into the clouds",
+   "known": 0.6,
+   "kind": "bridge"
+  },
+  {
+   "label": "Lotus Temple",
+   "qid": "Q940843",
+   "fame": 0.476,
+   "architect": "Fariborz Sahba",
+   "description": "Bahá'í House of Worship in Delhi, India",
+   "hook": "is shaped like a giant flower with white petal-like panels that unfold around a central hall",
+   "known": 0.05,
+   "kind": "temple"
+  },
+  {
+   "label": "Guggenheim Museum Bilbao",
+   "qid": "Q179199",
+   "fame": 0.475,
+   "architect": "Frank Gehry",
+   "description": "Museum of modern and contemporary art in Bilbao, Spain",
+   "hook": "is covered in curving, shimmering titanium panels that reflect light like fish scales",
+   "known": 0.8,
+   "kind": "monument"
+  },
+  {
+   "label": "Casa Batlló",
+   "qid": "Q461371",
+   "fame": 0.471,
+   "architect": "Antoni Gaudí",
+   "description": "modernist building in Barcelona",
+   "hook": "has a wavy, bone-like facade and a roof said to resemble the scales of a dragon's back",
+   "known": 0.6,
+   "kind": "church"
+  }
+ ]
+}

@@ -1,0 +1,843 @@
+{
+ "id": "table.history.ancient-figures",
+ "kind": "table",
+ "title": "Famous ancient figures by civilization",
+ "genre": "society",
+ "category": "history",
+ "topic": "ancient-world",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?civLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?civ) (COUNT(DISTINCT ?c) AS ?nC) WHERE { VALUES ?c { wd:Q11772 wd:Q1747689 wd:Q11768 wd:Q17167 wd:Q41493 wd:Q11767 wd:Q1524522 wd:Q28573 } ?item wdt:P27 ?c ; wdt:P31 wd:Q5 ; wikibase:sitelinks ?sl . FILTER(?sl >= 40) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T21:59:02.389Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T21:59:02.389Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "civ",
+   "label": "Civilization",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "ancient figure",
+  "many": "ancient figures",
+  "wildcard": "person",
+  "itemSub": "{hook}",
+  "hookAsk": "Which ancient figure {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Julius Caesar",
+   "qid": "Q1048",
+   "fame": 0.74,
+   "civ": "Ancient Rome",
+   "description": "Roman general and dictator",
+   "hook": "crossed the Rubicon, seized power as dictator, and was stabbed by senators on the Ides of March",
+   "known": 0.8,
+   "kind": "general"
+  },
+  {
+   "label": "Augustus",
+   "qid": "Q1405",
+   "fame": 0.717,
+   "civ": "Ancient Rome",
+   "description": "first emperor of the Roman Empire and founder of the Julio-Claudian dynasty",
+   "hook": "became the first emperor after defeating his rivals and ended a long era of civil war",
+   "known": 0.8,
+   "kind": "ruler"
+  },
+  {
+   "label": "Marcus Aurelius",
+   "qid": "Q1430",
+   "fame": 0.708,
+   "civ": "Ancient Rome",
+   "description": "16th Roman Emperor from 161 to 180 and Stoic philosopher",
+   "hook": "ruled as a philosopher-emperor and wrote the Stoic journal known as the Meditations",
+   "known": 0.6,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Nero",
+   "qid": "Q1413",
+   "fame": 0.681,
+   "civ": "Ancient Rome",
+   "description": "fifth and last Roman Emperor of Julio-Claudian dynasty (54–68)",
+   "hook": "is infamous for fiddling while the city burned, and blamed a new religious sect for the fire",
+   "known": 0.8,
+   "kind": "ruler"
+  },
+  {
+   "label": "Caligula",
+   "qid": "Q1409",
+   "fame": 0.672,
+   "civ": "Ancient Rome",
+   "description": "third Roman emperor (37–41)",
+   "hook": "is remembered as a cruel, unstable emperor who reportedly wanted to make his horse a consul",
+   "known": 0.6,
+   "kind": "ruler"
+  },
+  {
+   "label": "Tutankhamun",
+   "qid": "Q12154",
+   "fame": 0.667,
+   "civ": "Ancient Egypt",
+   "description": "14th century BCE (18th dynasty) Egyptian pharaoh",
+   "hook": "was a boy king whose almost intact golden tomb was discovered in the Valley of the Kings",
+   "known": 0.6,
+   "kind": "ruler"
+  },
+  {
+   "label": "Constantine the Great",
+   "qid": "Q8413",
+   "fame": 0.66,
+   "civ": "Ancient Rome",
+   "description": "Roman emperor from 306 to 337 and first to convert to Christianity (272–337)",
+   "hook": "legalized Christianity in the empire and moved the capital to a new city on the Bosphorus",
+   "known": 0.6,
+   "kind": "ruler"
+  },
+  {
+   "label": "Seneca",
+   "qid": "Q2054",
+   "fame": 0.66,
+   "civ": "Ancient Rome",
+   "description": "Roman Stoic philosopher, statesman and dramatist (c. 4 BCE–65 CE)",
+   "hook": "was a Stoic philosopher and playwright who tutored a future emperor and was later forced to take his own life",
+   "known": 0.4,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Ramesses II",
+   "qid": "Q1523",
+   "fame": 0.644,
+   "civ": "Ancient Egypt",
+   "description": "Egyptian third pharaoh of the Nineteenth Dynasty",
+   "hook": "was a long-reigning, monument-building pharaoh who fought the Hittites at Kadesh and built Abu Simbel",
+   "known": 0.6,
+   "kind": "ruler"
+  },
+  {
+   "label": "Cicero",
+   "qid": "Q1541",
+   "fame": 0.643,
+   "civ": "Ancient Rome",
+   "description": "Roman statesman, lawyer, orator, and philosopher (106–43 BC)",
+   "hook": "was a famed orator and lawyer whose speeches against Catiline are still studied",
+   "known": 0.6,
+   "kind": "statesman"
+  },
+  {
+   "label": "Tiberius",
+   "qid": "Q1407",
+   "fame": 0.643,
+   "civ": "Ancient Rome",
+   "description": "second Roman Emperor from 14 to 37 AD",
+   "hook": "succeeded his stepfather as emperor and spent his later years in seclusion on the island of Capri",
+   "known": 0.4,
+   "kind": "ruler"
+  },
+  {
+   "label": "Mark Antony",
+   "qid": "Q51673",
+   "fame": 0.64,
+   "civ": "Ancient Rome",
+   "description": "Roman politician and general (83 BC – 30 BC)",
+   "hook": "was a general who allied with a famous queen of the Nile and lost at the naval battle of Actium",
+   "known": 0.4,
+   "kind": "general"
+  },
+  {
+   "label": "Marcus Vipsanius Agrippa",
+   "qid": "Q48174",
+   "fame": 0.629,
+   "civ": "Ancient Rome",
+   "description": "ancient Roman statesman and general",
+   "hook": "was the first emperor's loyal general who won at Actium and built the Pantheon",
+   "known": 0.2,
+   "kind": "general"
+  },
+  {
+   "label": "Commodus",
+   "qid": "Q1434",
+   "fame": 0.628,
+   "civ": "Ancient Rome",
+   "description": "17th Roman Emperor (180–192)",
+   "hook": "was a gladiator-obsessed emperor and the unworthy son of a philosopher, killed in his bath",
+   "known": 0.4,
+   "kind": "ruler"
+  },
+  {
+   "label": "Sulla",
+   "qid": "Q483783",
+   "fame": 0.624,
+   "civ": "Ancient Rome",
+   "description": "Roman dictator and general",
+   "hook": "was the first to march his army on the capital, then made himself dictator and posted death lists",
+   "known": 0.2,
+   "kind": "general"
+  },
+  {
+   "label": "Claudius",
+   "qid": "Q1411",
+   "fame": 0.622,
+   "civ": "Ancient Rome",
+   "description": "fourth Roman emperor (41–54)",
+   "hook": "was found hiding behind a curtain after an assassination, was made emperor, and invaded Britain",
+   "known": 0.4,
+   "kind": "ruler"
+  },
+  {
+   "label": "Hadrian",
+   "qid": "Q1427",
+   "fame": 0.616,
+   "civ": "Ancient Rome",
+   "description": "14th Roman Emperor (117–138)",
+   "hook": "ordered a great defensive wall across northern Britain and rebuilt the Pantheon",
+   "known": 0.4,
+   "kind": "ruler"
+  },
+  {
+   "label": "Pompey",
+   "qid": "Q125414",
+   "fame": 0.609,
+   "civ": "Ancient Rome",
+   "description": "Roman general and statesman (106–48 BC)",
+   "hook": "was a great general who shared power in a triumvirate before being defeated by his former son-in-law",
+   "known": 0.2,
+   "kind": "general"
+  },
+  {
+   "label": "Trajan",
+   "qid": "Q1425",
+   "fame": 0.607,
+   "civ": "Ancient Rome",
+   "description": "13th Roman Emperor (98–117)",
+   "hook": "expanded the empire to its greatest size and is honored with a tall victory column",
+   "known": 0.4,
+   "kind": "ruler"
+  },
+  {
+   "label": "Akhenaten",
+   "qid": "Q81794",
+   "fame": 0.599,
+   "civ": "Ancient Egypt",
+   "description": "Egyptian pharaoh in 18th Dynasty",
+   "hook": "tried to switch his country to worship of a single sun disc god and moved the capital",
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Gaius Marius",
+   "qid": "Q177975",
+   "fame": 0.598,
+   "civ": "Ancient Rome",
+   "description": "Roman general, statesman and military reformer (157-86 BC)",
+   "hook": "was a seven-time consul who reformed the army and fought a civil war against a rival dictator",
+   "known": 0.2,
+   "kind": "general"
+  },
+  {
+   "label": "Diocletian",
+   "qid": "Q43107",
+   "fame": 0.596,
+   "civ": "Ancient Rome",
+   "description": "Augustus of the Eastern Roman Empire (244-311)",
+   "hook": "split the empire's rule among four men in the Tetrarchy and retired to grow cabbages",
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Caracalla",
+   "qid": "Q1446",
+   "fame": 0.593,
+   "civ": "Ancient Rome",
+   "description": "Roman emperor from 198 to 217",
+   "hook": "is remembered for murdering his brother and granting citizenship to almost all free people in the empire",
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Nefertiti",
+   "qid": "Q40930",
+   "fame": 0.593,
+   "civ": "Ancient Egypt",
+   "description": "Egyptian queen and Great Royal Wife (chief consort) of Akhenaten, an Egyptian Pharaoh",
+   "hook": "was a queen whose painted limestone bust is one of the most famous portraits from antiquity",
+   "known": 0.4,
+   "kind": "consort"
+  },
+  {
+   "label": "Domitian",
+   "qid": "Q1423",
+   "fame": 0.591,
+   "civ": "Ancient Rome",
+   "description": "11th Roman Emperor (81–96)",
+   "hook": "was an emperor who finished the Colosseum's construction work but was assassinated after a paranoid reign",
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Virgil",
+   "qid": "Q1398",
+   "fame": 0.586,
+   "civ": "Ancient Rome",
+   "description": "Roman poet (1st century BC)",
+   "hook": "wrote the national epic following Aeneas, the Trojan refugee who founded a new homeland",
+   "known": 0.6,
+   "kind": "poet"
+  },
+  {
+   "label": "Pliny the Elder",
+   "qid": "Q82778",
+   "fame": 0.585,
+   "civ": "Ancient Rome",
+   "description": "Roman military commander and writer (AD23/24–79)",
+   "hook": "wrote a giant encyclopedia of the natural world and died studying the eruption of Vesuvius",
+   "known": 0.4,
+   "kind": "writer"
+  },
+  {
+   "label": "Ovid",
+   "qid": "Q7198",
+   "fame": 0.581,
+   "civ": "Ancient Rome",
+   "description": "Roman poet (43 BC – 17/18 AD)",
+   "hook": "wrote the Metamorphoses, a long poem of mythological transformations, and was exiled by the emperor",
+   "known": 0.4,
+   "kind": "poet"
+  },
+  {
+   "label": "Elagabalus",
+   "qid": "Q1762",
+   "fame": 0.576,
+   "civ": "Ancient Rome",
+   "description": "Roman Emperor (218-222)",
+   "hook": "was a teenage emperor who was a priest of a Syrian sun god and was killed by his own guard",
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Septimius Severus",
+   "qid": "Q1442",
+   "fame": 0.574,
+   "civ": "Ancient Rome",
+   "description": "Roman emperor from 193 to 211",
+   "hook": "was an African-born emperor who won a civil war and died campaigning in Britain",
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Titus",
+   "qid": "Q1421",
+   "fame": 0.574,
+   "civ": "Ancient Rome",
+   "description": "tenth Roman Emperor (79–81)",
+   "hook": "crushed the Jewish revolt in Jerusalem and opened the Colosseum, and ruled during the eruption of Vesuvius",
+   "known": 0.4,
+   "kind": "ruler"
+  },
+  {
+   "label": "Aurelian",
+   "qid": "Q46780",
+   "fame": 0.57,
+   "civ": "Ancient Rome",
+   "description": "Roman Emperor (C.E.214-275)",
+   "hook": "reunited the breakaway parts of the empire and built a great wall around the capital",
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Vespasian",
+   "qid": "Q1419",
+   "fame": 0.57,
+   "civ": "Ancient Rome",
+   "description": "ninth Roman Emperor and founder of the Flavian dynasty (69–79)",
+   "hook": "won the Year of the Four Emperors and began building the Colosseum",
+   "known": 0.4,
+   "kind": "ruler"
+  },
+  {
+   "label": "Marcus Licinius Crassus",
+   "qid": "Q175121",
+   "fame": 0.568,
+   "civ": "Ancient Rome",
+   "description": "member of the First Triumvirate",
+   "hook": "was the richest man in the city, teamed up with two rivals in a triumvirate, and died fighting the Parthians",
+   "known": 0.2,
+   "kind": "statesman"
+  },
+  {
+   "label": "Tacitus",
+   "qid": "Q2161",
+   "fame": 0.568,
+   "civ": "Ancient Rome",
+   "description": "Roman historian and senator (c. 56 – c. 120)",
+   "hook": "was a senator and historian who wrote the Annals and the Germania",
+   "known": 0.2,
+   "kind": "writer"
+  },
+  {
+   "label": "Marcus Junius Brutus",
+   "qid": "Q172248",
+   "fame": 0.566,
+   "civ": "Ancient Rome",
+   "description": "assassin of Julius Caesar",
+   "hook": "was the best-known conspirator who joined the plot to stab his friend and dictator, and later lost at Philippi",
+   "known": 0.2,
+   "kind": "statesman"
+  },
+  {
+   "label": "Nerva",
+   "qid": "Q1424",
+   "fame": 0.564,
+   "civ": "Ancient Rome",
+   "description": "12th Roman Emperor (96–98)",
+   "hook": "was an elderly senator who became emperor after a tyrant's assassination and ruled only briefly",
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Plutarch",
+   "qid": "Q41523",
+   "fame": 0.564,
+   "civ": "Ancient Rome",
+   "description": "Greek philosopher and historian (c. AD 46 – after AD 119)",
+   "hook": "wrote Parallel Lives, paired biographies of famous Greeks and their counterparts",
+   "known": 0.2,
+   "kind": "writer"
+  },
+  {
+   "label": "Ptolemy",
+   "qid": "Q34943",
+   "fame": 0.563,
+   "civ": "Ancient Rome",
+   "description": "2nd-century Roman mathematician, astronomer, geographer",
+   "hook": "wrote the Almagest and put the Earth at the center of the universe in a model used for centuries",
+   "known": 0.2,
+   "kind": "scholar"
+  },
+  {
+   "label": "Hatshepsut",
+   "qid": "Q129234",
+   "fame": 0.562,
+   "civ": "Ancient Egypt",
+   "description": "5th Pharaoh of the Eighteenth Dynasty of Egypt (c. 1479 BC - 1458 BC)",
+   "hook": "was a female pharaoh who ruled as king and built a grand terraced temple at Deir el-Bahari",
+   "known": 0.4,
+   "kind": "ruler"
+  },
+  {
+   "label": "Scipio Africanus",
+   "qid": "Q2253",
+   "fame": 0.562,
+   "civ": "Ancient Rome",
+   "description": "Roman general and politician (236/235–183 BC)",
+   "hook": "defeated Hannibal at the Battle of Zama and ended the Second Punic War",
+   "known": 0.2,
+   "kind": "general"
+  },
+  {
+   "label": "Josephus",
+   "qid": "Q134461",
+   "fame": 0.554,
+   "civ": "Ancient Rome",
+   "description": "Roman–Jewish historian and military leader (c. 37–c. 100)",
+   "hook": "was a Jewish rebel commander who switched sides and wrote a history of the Jewish War",
+   "known": 0.2,
+   "kind": "writer"
+  },
+  {
+   "label": "Epictetus",
+   "qid": "Q183144",
+   "fame": 0.55,
+   "civ": "Ancient Rome",
+   "description": "Greek Stoic philosopher (c. 50–c. 138)",
+   "hook": "was a Stoic philosopher who had been a slave and taught that we control only our own judgments",
+   "known": 0.2,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Theodosius I",
+   "qid": "Q46696",
+   "fame": 0.543,
+   "civ": "Ancient Rome",
+   "description": "Roman emperor from 379 to 395",
+   "hook": "was the last emperor to rule both halves of the empire and made Nicene Christianity the state faith",
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Antoninus Pius",
+   "qid": "Q1429",
+   "fame": 0.542,
+   "civ": "Ancient Rome",
+   "description": "15th Roman Emperor (138–161)",
+   "hook": "was a peaceful emperor who ruled during a golden age and adopted the philosopher who followed him",
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Livia",
+   "qid": "Q469701",
+   "fame": 0.529,
+   "civ": "Ancient Rome",
+   "description": "first Roman empress as consort to Augustus, as well as mother of emperor Tiberius",
+   "hook": "was the influential wife of the first emperor, rumored to have schemed to put her son on the throne",
+   "known": 0.2,
+   "kind": "consort"
+  },
+  {
+   "label": "Suetonius",
+   "qid": "Q10133",
+   "fame": 0.529,
+   "civ": "Ancient Rome",
+   "description": "late 1st/early 2nd-century Roman historian",
+   "hook": "wrote gossipy biographies called The Twelve Caesars",
+   "known": 0.2,
+   "kind": "writer"
+  },
+  {
+   "label": "Germanicus",
+   "qid": "Q191039",
+   "fame": 0.523,
+   "civ": "Ancient Rome",
+   "description": "nephew and adopted son of emperor Tiberius, heir apparent of the Roman Empire, and father of emperor Caligula",
+   "hook": "was a beloved general and popular heir whose early death, possibly by poison, shocked the empire",
+   "known": 0.2,
+   "kind": "general"
+  },
+  {
+   "label": "Martial",
+   "qid": "Q2098",
+   "fame": 0.522,
+   "civ": "Ancient Rome",
+   "description": "1st-century Latin poet from Hispania",
+   "hook": "was a poet famous for sharp, witty epigrams, and gave the name to short satirical verse",
+   "known": 0.05,
+   "kind": "poet"
+  },
+  {
+   "label": "Galba",
+   "qid": "Q1414",
+   "fame": 0.519,
+   "civ": "Ancient Rome",
+   "description": "sixth Roman Emperor (68–69)",
+   "hook": "took the throne after a tyrant's suicide and was murdered by the guard after only months",
+   "known": 0.05,
+   "kind": "ruler"
+  },
+  {
+   "label": "Vitellius",
+   "qid": "Q1417",
+   "fame": 0.515,
+   "civ": "Ancient Rome",
+   "description": "eighth Roman Emperor (69)",
+   "hook": "was a gluttonous emperor who held power for only months and was dragged through the streets to his death",
+   "known": 0.05,
+   "kind": "ruler"
+  },
+  {
+   "label": "Narmer",
+   "qid": "Q189582",
+   "fame": 0.514,
+   "civ": "Ancient Egypt",
+   "description": "ancient Egyptian pharaoh of the Early Dynastic Period",
+   "hook": "is often credited with uniting the two lands into one kingdom, and appears on a famous ceremonial palette",
+   "known": 0.05,
+   "kind": "ruler"
+  },
+  {
+   "label": "Agrippina the Younger",
+   "qid": "Q154732",
+   "fame": 0.513,
+   "civ": "Ancient Rome",
+   "description": "Roman empress and member of the Julio-Claudian dynasty (AD 15–59)",
+   "hook": "was the mother of a notorious emperor, and her son later had her killed",
+   "known": 0.2,
+   "kind": "consort"
+  },
+  {
+   "label": "Khufu",
+   "qid": "Q161904",
+   "fame": 0.511,
+   "civ": "Ancient Egypt",
+   "description": "Fourth Dynasty ancient Egyptian pharaoh",
+   "hook": "ordered the construction of the Great Pyramid of Giza, the largest ever built",
+   "known": 0.6,
+   "kind": "ruler"
+  },
+  {
+   "label": "Imhotep",
+   "qid": "Q131171",
+   "fame": 0.51,
+   "civ": "Ancient Egypt",
+   "description": "Egyptian architect, physician, astronomer, and god of medicine in ancient Egyptian mythology.",
+   "hook": "was a royal architect credited with designing the first step pyramid, later worshiped as a god of healing",
+   "known": 0.2,
+   "kind": "architect"
+  },
+  {
+   "label": "Cato the Younger",
+   "qid": "Q193506",
+   "fame": 0.508,
+   "civ": "Ancient Rome",
+   "description": "Roman statesman, general and writer (95–46 BC)",
+   "hook": "was a stubborn defender of the old republic who took his own life rather than submit to a dictator",
+   "known": 0.05,
+   "kind": "statesman"
+  },
+  {
+   "label": "Otho",
+   "qid": "Q1416",
+   "fame": 0.508,
+   "civ": "Ancient Rome",
+   "description": "seventh Roman Emperor (69)",
+   "hook": "was one of four emperors in a single turbulent year, and took his own life after a lost battle",
+   "known": 0.05,
+   "kind": "ruler"
+  },
+  {
+   "label": "Seti I",
+   "qid": "Q157918",
+   "fame": 0.508,
+   "civ": "Ancient Egypt",
+   "description": "second pharaoh of Ancient Egypt's 19th dynasty",
+   "hook": "built a magnificent tomb in the Valley of the Kings and a temple at Abydos, and fathered a famous builder-king",
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Horace",
+   "qid": "Q6197",
+   "fame": 0.504,
+   "civ": "Ancient Rome",
+   "description": "Roman lyric poet (65 BC – 8 BC)",
+   "hook": "wrote the Odes and coined the phrase carpe diem",
+   "known": 0.4,
+   "kind": "poet"
+  },
+  {
+   "label": "Thutmose III",
+   "qid": "Q157899",
+   "fame": 0.504,
+   "civ": "Ancient Egypt",
+   "description": "sixth Egyptian Pharaoh of the Eighteenth Dynasty",
+   "hook": "was a warrior-pharaoh who led many campaigns and is sometimes called the Napoleon of his land",
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Galen",
+   "qid": "Q8778",
+   "fame": 0.503,
+   "civ": "Ancient Rome",
+   "description": "2nd-century Greek physician, surgeon and philosopher",
+   "hook": "served as doctor to gladiators and emperors and shaped medical thinking for over a thousand years",
+   "known": 0.2,
+   "kind": "physician"
+  },
+  {
+   "label": "Messalina",
+   "qid": "Q229871",
+   "fame": 0.501,
+   "civ": "Ancient Rome",
+   "description": "Roman empress (c.AD 17/20–48); 3rd wife of Claudius",
+   "hook": "was the wife of Emperor Claudius, remembered for a scandalous reputation and a dramatic downfall",
+   "known": 0.2,
+   "kind": "consort"
+  },
+  {
+   "label": "Severus Alexander",
+   "qid": "Q1769",
+   "fame": 0.497,
+   "civ": "Ancient Rome",
+   "description": "Roman Emperor (208-235)",
+   "hook": "was a young emperor killed by his own mutinous troops, ending a dynasty",
+   "known": 0.05,
+   "kind": "ruler"
+  },
+  {
+   "label": "Lucius Verus",
+   "qid": "Q1433",
+   "fame": 0.488,
+   "civ": "Ancient Rome",
+   "description": "joint Roman Emperor with Marcus Aurelius (161–169)",
+   "hook": "shared the throne with the philosopher-emperor who wrote Meditations",
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Amenhotep III",
+   "qid": "Q42606",
+   "fame": 0.487,
+   "civ": "Ancient Egypt",
+   "description": "ninth Pharaoh of the Eighteenth dynasty of Egypt",
+   "hook": "was a wealthy pharaoh, father of the heretic king Akhenaten and grandfather of Tutankhamun",
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Philip the Arab",
+   "qid": "Q1817",
+   "fame": 0.485,
+   "civ": "Ancient Rome",
+   "description": "Roman Emperor (204-249)",
+   "hook": "was an emperor from the Syrian desert who hosted the thousandth birthday of the empire's capital",
+   "known": 0.05,
+   "kind": "ruler"
+  },
+  {
+   "label": "Lucius Tarquinius Superbus",
+   "qid": "Q193047",
+   "fame": 0.48,
+   "civ": "Ancient Rome",
+   "description": "king of Rome from 535 to 509 BC",
+   "hook": "was the last king, whose overthrow led to the founding of the Republic",
+   "known": 0.05,
+   "kind": "ruler"
+  },
+  {
+   "label": "Pliny the Younger",
+   "qid": "Q168707",
+   "fame": 0.48,
+   "civ": "Ancient Rome",
+   "description": "Roman lawyer, author and magistrate (61 – c.113)",
+   "hook": "wrote eyewitness letters describing the eruption of Vesuvius that buried Pompeii",
+   "known": 0.2,
+   "kind": "writer"
+  },
+  {
+   "label": "Titus Livius",
+   "qid": "Q2039",
+   "fame": 0.476,
+   "civ": "Ancient Rome",
+   "description": "Roman historian (59 BC – AD 17)",
+   "hook": "wrote a giant history of the city from its legendary founding onward",
+   "known": 0.2,
+   "kind": "writer"
+  },
+  {
+   "label": "Cato the Elder",
+   "qid": "Q180081",
+   "fame": 0.473,
+   "civ": "Ancient Rome",
+   "description": "Roman politician, soldier and writer (234–149 BC)",
+   "hook": "ended his speeches by demanding that Carthage must be destroyed",
+   "known": 0.05,
+   "kind": "statesman"
+  },
+  {
+   "label": "Constantius II",
+   "qid": "Q46418",
+   "fame": 0.472,
+   "civ": "Ancient Rome",
+   "description": "Roman emperor (317-361)",
+   "hook": "was a son of Constantine the Great who ruled after his father's death",
+   "known": 0.05,
+   "kind": "ruler"
+  },
+  {
+   "label": "Valentinian I",
+   "qid": "Q46720",
+   "fame": 0.468,
+   "civ": "Ancient Rome",
+   "description": "Roman emperor from 364 to 375",
+   "hook": "was a soldier-emperor who divided the empire with his brother Valens",
+   "known": 0.05,
+   "kind": "ruler"
+  },
+  {
+   "label": "Nefertari",
+   "qid": "Q210535",
+   "fame": 0.467,
+   "civ": "Ancient Egypt",
+   "description": "ancient Egyptian queen consort",
+   "hook": "was the beloved queen of Ramesses the Great, honored with a spectacular painted tomb",
+   "known": 0.2,
+   "kind": "consort"
+  },
+  {
+   "label": "Plotinus",
+   "qid": "Q134189",
+   "fame": 0.467,
+   "civ": "Ancient Rome",
+   "description": "Hellenistic Platonist philosopher and founder of Neoplatonism (c. 204/5–270)",
+   "hook": "taught that all reality flows from a single ultimate source he called the One",
+   "known": 0.05,
+   "kind": "philosopher"
+  },
+  {
+   "label": "Ramesses I",
+   "qid": "Q1526",
+   "fame": 0.467,
+   "civ": "Ancient Egypt",
+   "description": "founding pharaoh of Ancient Egypt's Nineteenth Dynasty",
+   "hook": "was an army officer who became pharaoh and founded a dynasty, but ruled for barely more than a year",
+   "known": 0.05,
+   "kind": "ruler"
+  },
+  {
+   "label": "Ramesses III",
+   "qid": "Q1528",
+   "fame": 0.466,
+   "civ": "Ancient Egypt",
+   "description": "Egyptian pharaoh of the 20th dynasty",
+   "hook": "won major battles against the mysterious Sea Peoples and is often called the last great New Kingdom pharaoh",
+   "known": 0.2,
+   "kind": "ruler"
+  },
+  {
+   "label": "Vitruvius",
+   "qid": "Q47163",
+   "fame": 0.464,
+   "civ": "Ancient Rome",
+   "description": "Roman architect and engineer",
+   "hook": "wrote the only complete architecture treatise to survive from antiquity",
+   "known": 0.05,
+   "kind": "architect"
+  },
+  {
+   "label": "Gallienus",
+   "qid": "Q104475",
+   "fame": 0.46,
+   "civ": "Ancient Rome",
+   "description": "Roman emperor (218-268)",
+   "hook": "reigned during the Crisis of the Third Century as the empire nearly fell apart",
+   "known": 0.05,
+   "kind": "ruler"
+  },
+  {
+   "label": "Catullus",
+   "qid": "Q163079",
+   "fame": 0.455,
+   "civ": "Ancient Rome",
+   "description": "lyric Latin poet of the Roman Republic",
+   "hook": "wrote passionate love poems to a woman he called Lesbia",
+   "known": 0.2,
+   "kind": "poet"
+  }
+ ]
+}

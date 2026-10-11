@@ -1,0 +1,349 @@
+{
+ "id": "table.tech.developer-companies",
+ "kind": "table",
+ "title": "Famous software and the company behind it",
+ "genre": "science-math-tech",
+ "category": "tech",
+ "topic": "coding",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?devLabel WHERE { { SELECT ?item (SAMPLE(?e) AS ?dev) (COUNT(DISTINCT ?e) AS ?n) WHERE { ?item wdt:P31/wdt:P279* ?cls ; wdt:P178 ?e ; wikibase:sitelinks ?sl . VALUES ?cls { wd:Q9143 wd:Q188860 wd:Q271680 wd:Q1330336 wd:Q8513 wd:Q9135 } FILTER(?sl >= 30) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?n = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T03:09:28.294Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T03:09:28.294Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "company",
+   "label": "Developed by",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "piece of software",
+  "many": "pieces of software",
+  "columns": {
+   "company": {
+    "role": "link",
+    "pick": "Which company developed {label}?",
+    "statement": "{label} was developed by {value}.",
+    "match": "Match each piece of software to the company that developed it.",
+    "odd": "Three of these were developed by {value}. Which one wasn't?",
+    "all": "Tap all {n} pieces of software developed by {value}.",
+    "reverse": "Which of these did {value} develop?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Android",
+   "qid": "Q94",
+   "fame": 0.667,
+   "company": "Google",
+   "description": "operating system created by Google for use on mobile devices",
+   "hook": "powers most of the world's smartphones and is symbolised by a little green robot",
+   "known": 0.8,
+   "kind": "mobile os"
+  },
+  {
+   "label": "macOS",
+   "qid": "Q14116",
+   "fame": 0.655,
+   "company": "Apple Inc.",
+   "description": "operating system for Apple computers",
+   "hook": "is the desktop system for a line of sleek laptops and desktops, with a dock along the screen edge",
+   "known": 0.8,
+   "kind": "desktop os"
+  },
+  {
+   "label": "Windows 11",
+   "qid": "Q107269746",
+   "fame": 0.624,
+   "company": "Microsoft",
+   "description": "personal computer operating system by Microsoft released in 2021",
+   "hook": "brought a centered taskbar and rounded corners to the desktop, with strict hardware requirements",
+   "known": 0.8,
+   "kind": "desktop os"
+  },
+  {
+   "label": "ChromeOS",
+   "qid": "Q79531",
+   "fame": 0.623,
+   "company": "Google",
+   "description": "Linux distribution developed by Google",
+   "hook": "is a lightweight system built around a web browser, common on low-cost school laptops",
+   "known": 0.6,
+   "kind": "browser-os"
+  },
+  {
+   "label": "iOS",
+   "qid": "Q48493",
+   "fame": 0.608,
+   "company": "Apple Inc.",
+   "description": "mobile operating system by Apple Inc.",
+   "hook": "runs the world's best-known smartphone line and debuted alongside it",
+   "known": 0.8,
+   "kind": "mobile os"
+  },
+  {
+   "label": "Steam",
+   "qid": "Q337535",
+   "fame": 0.605,
+   "company": "Valve Corporation",
+   "description": "video game store and digital distribution platform among other services",
+   "hook": "is the biggest storefront for PC games, famous for its huge seasonal sales",
+   "known": 0.8,
+   "kind": "app store"
+  },
+  {
+   "label": "Windows 10",
+   "qid": "Q18168774",
+   "fame": 0.576,
+   "company": "Microsoft",
+   "description": "personal computer operating system by Microsoft that was released in 2015",
+   "hook": "was the successor that brought back the Start menu after a tile-based predecessor",
+   "known": 0.8,
+   "kind": "desktop os"
+  },
+  {
+   "label": "App Store",
+   "qid": "Q368215",
+   "fame": 0.573,
+   "company": "Apple Inc.",
+   "description": "digital app distribution platform for iOS/iPadOS",
+   "hook": "is where iPhone owners download software, with the maker taking a famous cut of each sale",
+   "known": 0.9,
+   "kind": "app store"
+  },
+  {
+   "label": "Ubuntu",
+   "qid": "Q381",
+   "fame": 0.565,
+   "company": "Canonical Ltd.",
+   "description": "Linux distribution developed by Canonical",
+   "hook": "is a hugely popular Linux distribution whose name is a southern African word about humanity toward others",
+   "known": 0.5,
+   "kind": "desktop os"
+  },
+  {
+   "label": "Scratch",
+   "qid": "Q275131",
+   "fame": 0.557,
+   "company": "MIT Media Lab",
+   "description": "programming language learning environment",
+   "hook": "teaches kids to code by snapping together colorful blocks, with a cat as its mascot",
+   "known": 0.6,
+   "kind": "learning platform"
+  },
+  {
+   "label": "Unreal Engine",
+   "qid": "Q608276",
+   "fame": 0.557,
+   "company": "Epic Games",
+   "description": "video game engine series developed by Epic Games",
+   "hook": "powers many blockbuster titles and is known for its photorealistic graphics",
+   "known": 0.6,
+   "kind": "game engine"
+  },
+  {
+   "label": "MS-DOS",
+   "qid": "Q47604",
+   "fame": 0.543,
+   "company": "Microsoft",
+   "description": "Microsoft operating system",
+   "hook": "was the text-based command-line system that ran on early IBM-compatible PCs",
+   "known": 0.4,
+   "kind": "desktop os"
+  },
+  {
+   "label": "C#",
+   "qid": "Q2370",
+   "fame": 0.532,
+   "company": "Microsoft",
+   "description": "multi-paradigm (object-oriented) programming language",
+   "hook": "is an object-oriented language widely used for building games in Unity and business software",
+   "known": 0.4,
+   "kind": "programming language"
+  },
+  {
+   "label": "TypeScript",
+   "qid": "Q978185",
+   "fame": 0.524,
+   "company": "Microsoft",
+   "description": "programming language, superset of JavaScript that compiles to JavaScript",
+   "hook": "adds static typing on top of JavaScript and compiles down to it",
+   "known": 0.5,
+   "kind": "programming language"
+  },
+  {
+   "label": "React",
+   "qid": "Q19399674",
+   "fame": 0.521,
+   "company": "Meta Platforms",
+   "description": "JavaScript library for building user interfaces",
+   "hook": "is a JavaScript library built around reusable components for making web interfaces",
+   "known": 0.5,
+   "kind": "ui framework"
+  },
+  {
+   "label": "Windows NT",
+   "qid": "Q486487",
+   "fame": 0.506,
+   "company": "Microsoft",
+   "description": "Microsoft operating system family",
+   "hook": "is the business-grade operating system family that underpins its maker's modern desktop systems",
+   "known": 0.4,
+   "kind": "desktop os"
+  },
+  {
+   "label": "Windows 8",
+   "qid": "Q5046",
+   "fame": 0.504,
+   "company": "Microsoft",
+   "description": "personal computer operating system by Microsoft that was released in 2012",
+   "hook": "replaced the Start menu with a full-screen grid of tiles that many users disliked",
+   "known": 0.5,
+   "kind": "desktop os"
+  },
+  {
+   "label": "SteamOS",
+   "qid": "Q14944085",
+   "fame": 0.501,
+   "company": "Valve Corporation",
+   "description": "gaming Linux distribution",
+   "hook": "is the Linux-based system that powers a popular handheld gaming PC",
+   "known": 0.2,
+   "kind": "gaming os"
+  },
+  {
+   "label": "watchOS",
+   "qid": "Q18012472",
+   "fame": 0.497,
+   "company": "Apple Inc.",
+   "description": "mobile operating system for Apple Watches",
+   "hook": "runs on a popular wrist-worn wearable that tracks fitness",
+   "known": 0.6,
+   "kind": "mobile os"
+  },
+  {
+   "label": "HarmonyOS",
+   "qid": "Q63986220",
+   "fame": 0.491,
+   "company": "Huawei",
+   "description": "operating system developed by Huawei",
+   "hook": "is a Chinese-made smartphone system positioned as an alternative to the leading mobile platforms",
+   "known": 0.3,
+   "kind": "mobile os"
+  },
+  {
+   "label": "Windows 98",
+   "qid": "Q483132",
+   "fame": 0.487,
+   "company": "Microsoft",
+   "description": "personal computer operating system by Microsoft",
+   "hook": "was the popular late-nineties desktop system that built the web browser into the shell",
+   "known": 0.4,
+   "kind": "desktop os"
+  },
+  {
+   "label": "Windows 2000",
+   "qid": "Q483881",
+   "fame": 0.481,
+   "company": "Microsoft",
+   "description": "personal computer operating system by Microsoft",
+   "hook": "was a business-focused system built on the NT kernel and praised for its stability",
+   "known": 0.3,
+   "kind": "desktop os"
+  },
+  {
+   "label": "PowerShell",
+   "qid": "Q840410",
+   "fame": 0.467,
+   "company": "Microsoft",
+   "description": "cross-platform command-line interface and scripting language for system and network administration",
+   "hook": "is a command-line tool and scripting language for automating system administration tasks",
+   "known": 0.2,
+   "kind": "system tool"
+  },
+  {
+   "label": "Kali Linux",
+   "qid": "Q8364850",
+   "fame": 0.463,
+   "company": "OffSec",
+   "description": "Debian-derived Linux distribution",
+   "hook": "is a distribution packed with penetration-testing tools, favored by security professionals",
+   "known": 0.1,
+   "kind": "desktop os"
+  },
+  {
+   "label": "Classic Mac OS",
+   "qid": "Q13522376",
+   "fame": 0.46,
+   "company": "Apple Inc.",
+   "description": "Apple Macintosh’s original operating system (1984–2002)",
+   "hook": "was the original graphical system that greeted users with a smiling computer icon at startup",
+   "known": 0.4,
+   "kind": "desktop os"
+  },
+  {
+   "label": "Kotlin",
+   "qid": "Q3816639",
+   "fame": 0.459,
+   "company": "JetBrains",
+   "description": "general-purpose programming language derived from Java",
+   "hook": "is the modern language officially favored for building Android apps",
+   "known": 0.3,
+   "kind": "programming language"
+  },
+  {
+   "label": "iPadOS",
+   "qid": "Q64350339",
+   "fame": 0.458,
+   "company": "Apple Inc.",
+   "description": "mobile operating system of the iPad, developed by Apple Inc.",
+   "hook": "runs on a popular touchscreen tablet line",
+   "known": 0.6,
+   "kind": "mobile os"
+  },
+  {
+   "label": "Plan 9",
+   "qid": "Q725779",
+   "fame": 0.453,
+   "company": "Bell Labs",
+   "description": "distributed operating system designed by Bell Labs as an UNIX's intended successor",
+   "hook": "was a research operating system meant to succeed Unix, named after a notoriously bad sci-fi movie",
+   "known": 0.1,
+   "kind": "desktop os"
+  },
+  {
+   "label": "tvOS",
+   "qid": "Q20965967",
+   "fame": 0.452,
+   "company": "Apple Inc.",
+   "description": "operating system of the Apple TV",
+   "hook": "runs on a small streaming box that plugs into a television",
+   "known": 0.3,
+   "kind": "mobile os"
+  }
+ ]
+}

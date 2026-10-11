@@ -1,0 +1,179 @@
+{
+ "id": "table.chemistry.household-chemical-inventions",
+ "kind": "table",
+ "title": "Household chemistry: who invented it",
+ "genre": "science-math-tech",
+ "category": "chemistry",
+ "topic": "everyday-chemistry",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?makerLabel WHERE { { SELECT ?item (SAMPLE(?m) AS ?maker) WHERE { VALUES ?item { wd:Q186969 wd:Q162867 wd:Q960800 wd:Q146578 wd:Q193841 wd:Q423741 wd:Q427161 wd:Q898762 wd:Q185120 wd:Q172587 wd:Q4287 wd:Q844123 wd:Q181331 wd:Q12190 wd:Q143874 wd:Q259589 wd:Q902739 wd:Q188631 wd:Q182040 } { ?item wdt:P61 ?m } UNION { ?item wdt:P170 ?m } UNION { ?item wdt:P287 ?m } ?m wdt:P31 wd:Q5 . } GROUP BY ?item HAVING(COUNT(DISTINCT ?m) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . ?maker rdfs:label ?makerLabel . FILTER(LANG(?makerLabel) IN (\"en\",\"mul\")) ?item rdfs:label ?itemLabel . FILTER(LANG(?itemLabel) IN (\"en\",\"mul\")) } ORDER BY DESC(?sitelinks) LIMIT 82",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T01:10:08.728Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T01:10:08.728Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "inventor",
+   "label": "Inventor",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "invention",
+  "many": "inventions",
+  "capitalise": true,
+  "lowerInProse": true,
+  "columns": {
+   "inventor": {
+    "role": "code",
+    "pick": "Who invented {label}?",
+    "statement": "{label} was invented by {value}.",
+    "match": "Match each invention to its inventor.",
+    "reverse": "Which of these did {value} invent?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "ibuprofen",
+   "qid": "Q186969",
+   "fame": 0.594,
+   "inventor": "Stewart Adams",
+   "description": "chemical compound",
+   "hook": "is a common over-the-counter painkiller taken for headaches, fever and inflammation",
+   "known": 0.6,
+   "kind": "medicine"
+  },
+  {
+   "label": "penicillin",
+   "qid": "Q12190",
+   "fame": 0.586,
+   "inventor": "Alexander Fleming",
+   "description": "group of antibiotics derived from Penicillium fungi",
+   "hook": "was the first widely used antibiotic, discovered from a mould growing on a lab dish",
+   "known": 0.6,
+   "kind": "medicine"
+  },
+  {
+   "label": "stainless steel",
+   "qid": "Q172587",
+   "fame": 0.546,
+   "inventor": "Harry Brearley",
+   "description": "chromium-containing steel alloy resistant to corrosion",
+   "hook": "is the rust-resistant alloy of iron and chromium used for cutlery and kitchen sinks",
+   "known": 0.4,
+   "kind": "material"
+  },
+  {
+   "label": "nitroglycerin",
+   "qid": "Q162867",
+   "fame": 0.535,
+   "inventor": "Ascanio Sobrero",
+   "description": "chemical compound",
+   "hook": "is a highly unstable explosive oil that Alfred Nobel later tamed into dynamite",
+   "known": 0.2,
+   "kind": "explosive"
+  },
+  {
+   "label": "aspartame",
+   "qid": "Q182040",
+   "fame": 0.528,
+   "inventor": "James M. Schlatter",
+   "description": "chemical compound",
+   "hook": "is a low-calorie artificial sweetener found in many diet sodas",
+   "known": 0.4,
+   "kind": "sweetener"
+  },
+  {
+   "label": "vaseline",
+   "qid": "Q185120",
+   "fame": 0.517,
+   "inventor": "Robert Augustus Chesebrough",
+   "description": "trademark of petroleum jelly",
+   "hook": "is a brand of soft petroleum jelly used on dry skin and minor scrapes",
+   "known": 0.6,
+   "kind": "personal care"
+  },
+  {
+   "label": "WD-40",
+   "qid": "Q898762",
+   "fame": 0.504,
+   "inventor": "Norm Larsen",
+   "description": "lubricating oil and water displacement spray",
+   "hook": "is a blue-and-yellow spray can used to loosen squeaky hinges and stuck bolts",
+   "known": 0.4,
+   "kind": "lubricant"
+  },
+  {
+   "label": "margarine",
+   "qid": "Q4287",
+   "fame": 0.502,
+   "inventor": "Hippolyte Mège-Mouriès",
+   "description": "semi-solid oily spread often used as a butter substitute",
+   "hook": "is a spread made from vegetable oils, created as a cheaper alternative to butter",
+   "known": 0.4,
+   "kind": "food"
+  },
+  {
+   "label": "Bakelite",
+   "qid": "Q146578",
+   "fame": 0.501,
+   "inventor": "Leo Baekeland",
+   "description": "early plastic",
+   "hook": "is regarded as the first fully synthetic plastic, used in old telephones and radios",
+   "known": 0.2,
+   "kind": "material"
+  },
+  {
+   "label": "portland cement",
+   "qid": "Q844123",
+   "fame": 0.47,
+   "inventor": "Joseph Aspdin",
+   "description": "binder used as basic ingredient of concrete",
+   "hook": "is the fine grey powder mixed with sand and water to make most of the world's concrete",
+   "known": 0.2,
+   "kind": "material"
+  },
+  {
+   "label": "nitrocellulose",
+   "qid": "Q143874",
+   "fame": 0.46,
+   "inventor": "Christian Friedrich Schönbein",
+   "description": "highly flammable compound formed by nitrating cellulose through exposure to nitric acid or to another nitrating agent",
+   "hook": "is the flammable material also called guncotton, used in early film and smokeless powder",
+   "known": 0.05,
+   "kind": "explosive"
+  },
+  {
+   "label": "chlorofluorocarbon",
+   "qid": "Q960800",
+   "fame": 0.452,
+   "inventor": "Frédéric Swarts",
+   "description": "hydrocarbon derivative that contains only carbon, chlorine and fluorine",
+   "hook": "is the refrigerant and aerosol gas family blamed for damaging the ozone layer",
+   "known": 0.05,
+   "kind": "refrigerant"
+  }
+ ]
+}

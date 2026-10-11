@@ -1,0 +1,1559 @@
+{
+ "id": "table.film-and-tv.streaming-originals",
+ "kind": "table",
+ "title": "Streaming original series and the service that made them",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "streaming-shows",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?netLabel WHERE { { SELECT ?item (SAMPLE(?n) AS ?net) WHERE { VALUES ?n { wd:Q907311 wd:Q1630304 wd:Q54958752 wd:Q62446736 wd:Q4740856 wd:Q65359104 wd:Q27903045 } ?item wdt:P449 ?n . ?item wikibase:sitelinks ?sl . FILTER(?sl >= 10) ?item wdt:P31 wd:Q5398426 . } GROUP BY ?item HAVING(COUNT(DISTINCT ?n) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T14:20:27.721Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T14:20:27.721Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "service",
+   "label": "Streaming service",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "streaming series",
+  "many": "streaming series",
+  "columns": {
+   "service": {
+    "role": "link",
+    "pick": "Which streaming service made {label}?",
+    "statement": "{label} was made for {value}.",
+    "match": "Match each streaming series to the service that made it.",
+    "odd": "Three of these series are {value} originals. Which one isn't?",
+    "all": "Tap all {n} series that are {value} originals.",
+    "reverse": "Which of these series is a {value} original?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The Gentlemen",
+   "qid": "Q115860329",
+   "fame": 0.947,
+   "service": "Netflix",
+   "description": "2024 American British TV series",
+   "hook": "follows an heir who inherits a British aristocrat's estate hiding a huge cannabis empire",
+   "known": 0.3,
+   "kind": "crime drama"
+  },
+  {
+   "label": "Silo",
+   "qid": "Q108456738",
+   "fame": 0.894,
+   "service": "Apple TV",
+   "description": "science fiction television series",
+   "hook": "is set in a huge underground bunker where survivors are forbidden to go outside",
+   "known": 0.5,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Ted Lasso",
+   "qid": "Q96407897",
+   "fame": 0.884,
+   "service": "Apple TV",
+   "description": "American sports comedy-drama television series",
+   "hook": "follows an American football coach hired to manage an English soccer team",
+   "known": 0.7,
+   "kind": "sports comedy"
+  },
+  {
+   "label": "Slow Horses",
+   "qid": "Q104880809",
+   "fame": 0.873,
+   "service": "Apple TV",
+   "description": "British spy thriller television series",
+   "hook": "follows a team of disgraced MI5 agents banished to a dead-end office",
+   "known": 0.4,
+   "kind": "spy thriller"
+  },
+  {
+   "label": "Reacher",
+   "qid": "Q109901438",
+   "fame": 0.852,
+   "service": "Amazon Prime Video",
+   "description": "television series",
+   "hook": "follows a hulking former military cop who drifts from town to town solving crimes",
+   "known": 0.6,
+   "kind": "action"
+  },
+  {
+   "label": "Pluribus",
+   "qid": "Q122155720",
+   "fame": 0.785,
+   "service": "Apple TV",
+   "description": "2025 television series created by Vince Gilligan",
+   "hook": "follows a woman who seems immune when a mysterious signal makes everyone else blissfully unified",
+   "known": 0.2,
+   "kind": "sci-fi drama"
+  },
+  {
+   "label": "The Pitt",
+   "qid": "Q131431817",
+   "fame": 0.785,
+   "service": "HBO Max",
+   "description": "2025 medical drama TV series",
+   "hook": "unfolds a single fifteen-hour emergency room shift, hour by hour",
+   "known": 0.15,
+   "kind": "medical drama"
+  },
+  {
+   "label": "Star Trek: Strange New Worlds",
+   "qid": "Q94527193",
+   "fame": 0.773,
+   "service": "Paramount+",
+   "description": "2022 American television series",
+   "hook": "follows the crew of the Enterprise under Captain Pike before Kirk's time",
+   "known": 0.5,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Severance",
+   "qid": "Q101096725",
+   "fame": 0.75,
+   "service": "Apple TV",
+   "description": "American television series (2022–)",
+   "hook": "follows office workers whose memories are surgically split between work and home",
+   "known": 0.6,
+   "kind": "sci-fi thriller"
+  },
+  {
+   "label": "Outer Banks",
+   "qid": "Q89414035",
+   "fame": 0.746,
+   "service": "Netflix",
+   "description": "2020 American television series",
+   "hook": "follows teen treasure hunters from rival social classes searching for gold in North Carolina",
+   "known": 0.5,
+   "kind": "teen adventure"
+  },
+  {
+   "label": "The Grand Tour",
+   "qid": "Q21980653",
+   "fame": 0.739,
+   "service": "Amazon Prime Video",
+   "description": "British motoring television series",
+   "hook": "reunited three former Top Gear presenters for car adventures around the world",
+   "known": 0.6,
+   "kind": "factual"
+  },
+  {
+   "label": "Beef",
+   "qid": "Q112168983",
+   "fame": 0.733,
+   "service": "Netflix",
+   "description": "2023 American comedy-drama television miniseries",
+   "hook": "follows two strangers whose road-rage incident spirals into a bitter feud",
+   "known": 0.4,
+   "kind": "dark comedy"
+  },
+  {
+   "label": "The Diplomat",
+   "qid": "Q117425241",
+   "fame": 0.727,
+   "service": "Netflix",
+   "description": "American television series created by Debora Cahn",
+   "hook": "follows a career ambassador thrust into a high-stakes post in London",
+   "known": 0.4,
+   "kind": "political drama"
+  },
+  {
+   "label": "Stranger Things",
+   "qid": "Q19798734",
+   "fame": 0.724,
+   "service": "Netflix",
+   "description": "American science fiction horror television series",
+   "hook": "follows kids in an Indiana town battling monsters from an upside-down dimension",
+   "known": 0.8,
+   "kind": "sci-fi horror"
+  },
+  {
+   "label": "Hacks",
+   "qid": "Q106819328",
+   "fame": 0.723,
+   "service": "HBO Max",
+   "description": "American television series",
+   "hook": "pairs a veteran Las Vegas stand-up comedian with a young comedy writer",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "The Handmaid's Tale",
+   "qid": "Q25207350",
+   "fame": 0.712,
+   "service": "Hulu",
+   "description": "American web television series",
+   "hook": "depicts a dystopia where fertile women are forced into servitude in red cloaks",
+   "known": 0.6,
+   "kind": "dystopian drama"
+  },
+  {
+   "label": "For All Mankind",
+   "qid": "Q54958409",
+   "fame": 0.705,
+   "service": "Apple TV",
+   "description": "2019 American science fiction series",
+   "hook": "imagines an alternate history where the Soviets won the race to the Moon",
+   "known": 0.4,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Only Murders in the Building",
+   "qid": "Q104007235",
+   "fame": 0.691,
+   "service": "Hulu",
+   "description": "2020s American mystery comedy-drama TV series",
+   "hook": "follows three neighbors who start a true-crime podcast after a death at their Manhattan apartment block",
+   "known": 0.5,
+   "kind": "comedy mystery"
+  },
+  {
+   "label": "The Boys",
+   "qid": "Q48796994",
+   "fame": 0.686,
+   "service": "Amazon Prime Video",
+   "description": "American television series",
+   "hook": "shows corrupt, celebrity superheroes and vigilantes determined to expose them",
+   "known": 0.6,
+   "kind": "superhero"
+  },
+  {
+   "label": "Black Mirror",
+   "qid": "Q558112",
+   "fame": 0.684,
+   "service": "Netflix",
+   "description": "British television series",
+   "hook": "is an anthology of dark tales about the dangers of technology",
+   "known": 0.7,
+   "kind": "sci-fi anthology"
+  },
+  {
+   "label": "Foundation",
+   "qid": "Q56281007",
+   "fame": 0.684,
+   "service": "Apple TV",
+   "description": "2021 American television series",
+   "hook": "adapts Isaac Asimov's sci-fi saga about predicting and preserving civilization's future",
+   "known": 0.4,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Tulsa King",
+   "qid": "Q111967146",
+   "fame": 0.68,
+   "service": "Paramount+",
+   "description": "American crime drama television series",
+   "hook": "stars Sylvester Stallone as a mobster exiled from New York to start over in Oklahoma",
+   "known": 0.4,
+   "kind": "crime drama"
+  },
+  {
+   "label": "3 Body Problem",
+   "qid": "Q110652727",
+   "fame": 0.678,
+   "service": "Netflix",
+   "description": "2024 television series",
+   "hook": "adapts a Chinese sci-fi novel about scientists confronting an alien civilization",
+   "known": 0.4,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "The Crown",
+   "qid": "Q20707362",
+   "fame": 0.678,
+   "service": "Netflix",
+   "description": "British–American television drama series",
+   "hook": "dramatizes the reign of Queen Elizabeth II across decades",
+   "known": 0.7,
+   "kind": "historical drama"
+  },
+  {
+   "label": "Wednesday",
+   "qid": "Q105553568",
+   "fame": 0.677,
+   "service": "Netflix",
+   "description": "American horror comedy television series",
+   "hook": "follows a goth teen sleuth at a school for outcasts, spun off from the Addams Family",
+   "known": 0.6,
+   "kind": "dark comedy"
+  },
+  {
+   "label": "Bridgerton",
+   "qid": "Q85748936",
+   "fame": 0.675,
+   "service": "Netflix",
+   "description": "American television series",
+   "hook": "is a lavish Regency-era romance narrated by a gossip columnist, Lady Whistledown",
+   "known": 0.6,
+   "kind": "romance drama"
+  },
+  {
+   "label": "Daredevil: Born Again",
+   "qid": "Q113244844",
+   "fame": 0.673,
+   "service": "Disney+",
+   "description": "Marvel Studios television series",
+   "hook": "revives the blind lawyer vigilante of Hell's Kitchen",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "The Lincoln Lawyer",
+   "qid": "Q106536181",
+   "fame": 0.672,
+   "service": "Netflix",
+   "description": "American legal drama streaming television series",
+   "hook": "follows a defense attorney who works out of the back seat of a car",
+   "known": 0.4,
+   "kind": "legal drama"
+  },
+  {
+   "label": "The Lord of the Rings: The Rings of Power",
+   "qid": "Q59149852",
+   "fame": 0.672,
+   "service": "Amazon Prime Video",
+   "description": "2022 television series",
+   "hook": "is set thousands of years before Tolkien's hobbit tales, in the Second Age of Middle-earth",
+   "known": 0.5,
+   "kind": "fantasy"
+  },
+  {
+   "label": "Mindhunter",
+   "qid": "Q25340152",
+   "fame": 0.671,
+   "service": "Netflix",
+   "description": "2017–2019 American television series",
+   "hook": "follows FBI agents who interview imprisoned serial killers to understand them",
+   "known": 0.6,
+   "kind": "crime thriller"
+  },
+  {
+   "label": "The Mandalorian",
+   "qid": "Q56876444",
+   "fame": 0.67,
+   "service": "Disney+",
+   "description": "American space opera streaming television series from 2019",
+   "hook": "follows a helmeted bounty hunter who protects a small green child",
+   "known": 0.7,
+   "kind": "sci-fi action"
+  },
+  {
+   "label": "The Witcher",
+   "qid": "Q47500433",
+   "fame": 0.67,
+   "service": "Netflix",
+   "description": "2019 fantasy drama television series",
+   "hook": "follows a white-haired monster slayer played by Henry Cavill",
+   "known": 0.6,
+   "kind": "fantasy"
+  },
+  {
+   "label": "Andor",
+   "qid": "Q60462338",
+   "fame": 0.668,
+   "service": "Disney+",
+   "description": "2022–2025 Star Wars television series",
+   "hook": "tells of a rebel spy's rise before the events of Rogue One",
+   "known": 0.5,
+   "kind": "sci-fi thriller"
+  },
+  {
+   "label": "Dark",
+   "qid": "Q28443710",
+   "fame": 0.666,
+   "service": "Netflix",
+   "description": "2017 German science fiction TV series",
+   "hook": "twists through time travel in a small town after children go missing",
+   "known": 0.5,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Ozark",
+   "qid": "Q25205293",
+   "fame": 0.664,
+   "service": "Netflix",
+   "description": "American crime drama television series (2017–2022)",
+   "hook": "follows a financial planner laundering money for a Mexican cartel",
+   "known": 0.7,
+   "kind": "crime drama"
+  },
+  {
+   "label": "Fallout",
+   "qid": "Q113127312",
+   "fame": 0.663,
+   "service": "Amazon Prime Video",
+   "description": "American television series",
+   "hook": "adapts a post-apocalyptic game franchise of vaults and wasteland survivors",
+   "known": 0.4,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "The Expanse",
+   "qid": "Q18389644",
+   "fame": 0.663,
+   "service": "Amazon Prime Video",
+   "description": "American science fiction television series",
+   "hook": "follows a detective and a ship crew caught up in a solar-system-wide conflict",
+   "known": 0.4,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "It: Welcome to Derry",
+   "qid": "Q112845107",
+   "fame": 0.662,
+   "service": "HBO Max",
+   "description": "2025 American prequel television series to the films It and It Chapter Two",
+   "hook": "explores the shape-shifting clown's earlier terror in a Maine town",
+   "known": 0.3,
+   "kind": "horror"
+  },
+  {
+   "label": "Shōgun",
+   "qid": "Q56276181",
+   "fame": 0.66,
+   "service": "Hulu",
+   "description": "American television series (2024–)",
+   "hook": "dramatizes a shipwrecked English navigator caught in feudal Japanese power struggles",
+   "known": 0.5,
+   "kind": "historical drama"
+  },
+  {
+   "label": "The Man in the High Castle",
+   "qid": "Q18844750",
+   "fame": 0.659,
+   "service": "Amazon Prime Video",
+   "description": "American science fiction television series (2015–2019)",
+   "hook": "imagines Nazi Germany and Japan winning World War II",
+   "known": 0.5,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Loki",
+   "qid": "Q64349029",
+   "fame": 0.658,
+   "service": "Disney+",
+   "description": "American streaming television series",
+   "hook": "follows a trickster god escaping his fate through time and the multiverse",
+   "known": 0.5,
+   "kind": "superhero"
+  },
+  {
+   "label": "The Night Agent",
+   "qid": "Q116909156",
+   "fame": 0.653,
+   "service": "Netflix",
+   "description": "American action thriller television series",
+   "hook": "follows an FBI analyst manning a basement phone who gets pulled into a conspiracy",
+   "known": 0.5,
+   "kind": "thriller"
+  },
+  {
+   "label": "Midnight Mass",
+   "qid": "Q98915688",
+   "fame": 0.651,
+   "service": "Netflix",
+   "description": "2021 web television series",
+   "hook": "is a horror drama about a remote island community and a charismatic new priest",
+   "known": 0.4,
+   "kind": "horror"
+  },
+  {
+   "label": "The Morning Show",
+   "qid": "Q54958411",
+   "fame": 0.65,
+   "service": "Apple TV",
+   "description": "American drama television series",
+   "hook": "goes behind the scenes of a network breakfast news program rocked by scandal",
+   "known": 0.4,
+   "kind": "drama"
+  },
+  {
+   "label": "Why Women Kill",
+   "qid": "Q59697220",
+   "fame": 0.647,
+   "service": "Paramount+",
+   "description": "American dark comedy-drama web television series",
+   "hook": "follows three wives in different decades whose marriages end in murder",
+   "known": 0.3,
+   "kind": "dark comedy"
+  },
+  {
+   "label": "Agatha All Along",
+   "qid": "Q108837156",
+   "fame": 0.644,
+   "service": "Disney+",
+   "description": "2024 Marvel Studios television series",
+   "hook": "follows a witch and her coven traveling the mystical Witches' Road",
+   "known": 0.3,
+   "kind": "superhero"
+  },
+  {
+   "label": "Jack Ryan",
+   "qid": "Q27062250",
+   "fame": 0.643,
+   "service": "Amazon Prime Video",
+   "description": "American television series",
+   "hook": "follows a CIA analyst turned field operative from Tom Clancy's novels",
+   "known": 0.5,
+   "kind": "spy thriller"
+  },
+  {
+   "label": "Sex Education",
+   "qid": "Q55632932",
+   "fame": 0.642,
+   "service": "Netflix",
+   "description": "2019 British television series",
+   "hook": "follows a teen who sets up a secret advice clinic for classmates",
+   "known": 0.5,
+   "kind": "teen comedy"
+  },
+  {
+   "label": "The Punisher",
+   "qid": "Q27089570",
+   "fame": 0.642,
+   "service": "Netflix",
+   "description": "American superhero television series (2017-2019)",
+   "hook": "follows a vengeful ex-Marine vigilante with a skull emblem",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "Peacemaker",
+   "qid": "Q101089777",
+   "fame": 0.641,
+   "service": "HBO Max",
+   "description": "American television series",
+   "hook": "spins off from a James Gunn film with a helmeted anti-hero played by John Cena",
+   "known": 0.3,
+   "kind": "superhero action"
+  },
+  {
+   "label": "13 Reasons Why",
+   "qid": "Q18464203",
+   "fame": 0.634,
+   "service": "Netflix",
+   "description": "2017 American teen drama television series",
+   "hook": null,
+   "known": 0.5,
+   "kind": "teen drama"
+  },
+  {
+   "label": "Avatar: The Last Airbender",
+   "qid": "Q109608844",
+   "fame": 0.634,
+   "service": "Netflix",
+   "description": "2024 American television series",
+   "hook": "adapts an animated tale of a boy who can master all four elements",
+   "known": 0.4,
+   "kind": "fantasy"
+  },
+  {
+   "label": "WandaVision",
+   "qid": "Q65980217",
+   "fame": 0.634,
+   "service": "Disney+",
+   "description": "2021 television miniseries",
+   "hook": "mimics classic sitcoms across decades while hiding a mystery about a Marvel witch",
+   "known": 0.5,
+   "kind": "superhero"
+  },
+  {
+   "label": "Orange Is the New Black",
+   "qid": "Q7099650",
+   "fame": 0.631,
+   "service": "Netflix",
+   "description": "American comedy-drama series",
+   "hook": "is set in a women's federal prison and follows a Connecticut woman serving time",
+   "known": 0.6,
+   "kind": "comedy drama"
+  },
+  {
+   "label": "Resident Evil",
+   "qid": "Q98769084",
+   "fame": 0.631,
+   "service": "Netflix",
+   "description": "2022 horror-drama television series",
+   "hook": "adapts Capcom's zombie survival-horror video game franchise",
+   "known": 0.3,
+   "kind": "horror"
+  },
+  {
+   "label": "Wonder Man",
+   "qid": "Q114779504",
+   "fame": 0.627,
+   "service": "Disney+",
+   "description": "Marvel Studios television series",
+   "hook": "follows an aspiring actor with ionic powers who is auditioning for a superhero role",
+   "known": 0.2,
+   "kind": "superhero action"
+  },
+  {
+   "label": "Never Have I Ever",
+   "qid": "Q90138922",
+   "fame": 0.624,
+   "service": "Netflix",
+   "description": "coming of age comedy television series",
+   "hook": "follows an Indian-American teenager navigating high school, narrated by John McEnroe",
+   "known": 0.4,
+   "kind": "teen comedy"
+  },
+  {
+   "label": "Squid Game",
+   "qid": "Q106582931",
+   "fame": 0.624,
+   "service": "Netflix",
+   "description": "2021 South Korean television series",
+   "hook": "sends cash-strapped contestants into a tournament of childhood games with fatal stakes",
+   "known": 0.7,
+   "kind": "drama thriller"
+  },
+  {
+   "label": "You",
+   "qid": "Q39082126",
+   "fame": 0.623,
+   "service": "Netflix",
+   "description": "2018 American psychological thriller television series",
+   "hook": "follows an obsessive bookstore manager who stalks the women he fixates on",
+   "known": 0.5,
+   "kind": "thriller"
+  },
+  {
+   "label": "American Horror Stories",
+   "qid": "Q107187662",
+   "fame": 0.618,
+   "service": "Hulu",
+   "description": "American anthology television series, spin-off from American Horror Story",
+   "hook": "delivers self-contained scary episodes, spun off from Ryan Murphy's anthology",
+   "known": 0.3,
+   "kind": "horror anthology"
+  },
+  {
+   "label": "One Hundred Years of Solitude",
+   "qid": "Q124175370",
+   "fame": 0.618,
+   "service": "Netflix",
+   "description": "2024 Colombian television series",
+   "hook": "adapts a Nobel-winning novel about the Buendía family in the town of Macondo",
+   "known": 0.3,
+   "kind": "drama"
+  },
+  {
+   "label": "The Sandman",
+   "qid": "Q92590789",
+   "fame": 0.617,
+   "service": "Netflix",
+   "description": "2022 American fantasy drama television series",
+   "hook": "adapts Neil Gaiman's comics about the lord of dreams, freed after a long captivity",
+   "known": 0.5,
+   "kind": "fantasy"
+  },
+  {
+   "label": "One Piece",
+   "qid": "Q109526557",
+   "fame": 0.616,
+   "service": "Netflix",
+   "description": "2023 television series",
+   "hook": "adapts a manga about a rubber-bodied boy sailing to become King of the Pirates",
+   "known": 0.4,
+   "kind": "action adventure"
+  },
+  {
+   "label": "The Marvelous Mrs. Maisel",
+   "qid": "Q30634329",
+   "fame": 0.615,
+   "service": "Amazon Prime Video",
+   "description": "American television series",
+   "hook": "follows a New York housewife who discovers a talent for stand-up comedy after her marriage ends",
+   "known": 0.5,
+   "kind": "comedy"
+  },
+  {
+   "label": "Cobra Kai",
+   "qid": "Q48326845",
+   "fame": 0.612,
+   "service": "Netflix",
+   "description": "American television series",
+   "hook": "revives the karate rivalry from The Karate Kid decades later",
+   "known": 0.5,
+   "kind": "action"
+  },
+  {
+   "label": "Emily in Paris",
+   "qid": "Q64584978",
+   "fame": 0.612,
+   "service": "Netflix",
+   "description": "American comedy-drama television series",
+   "hook": "follows an American marketing executive sent to work at a French firm, mixing fashion and romance",
+   "known": 0.4,
+   "kind": "comedy drama"
+  },
+  {
+   "label": "The Watcher",
+   "qid": "Q110885430",
+   "fame": 0.611,
+   "service": "Netflix",
+   "description": "2022 TV series",
+   "hook": "follows a family terrorized by anonymous letters after buying a dream house",
+   "known": 0.3,
+   "kind": "horror"
+  },
+  {
+   "label": "Percy Jackson and the Olympians",
+   "qid": "Q96749211",
+   "fame": 0.61,
+   "service": "Disney+",
+   "description": "American television series",
+   "hook": "follows a teenager who learns he is the son of a Greek sea god",
+   "known": 0.4,
+   "kind": "fantasy adventure"
+  },
+  {
+   "label": "The Great",
+   "qid": "Q61782859",
+   "fame": 0.609,
+   "service": "Hulu",
+   "description": "2020 British-American comedy series on Hulu",
+   "hook": "satirizes a young bride who plots to seize the throne of Russia, as Catherine",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "Normal People",
+   "qid": "Q81672757",
+   "fame": 0.608,
+   "service": "Hulu",
+   "description": "Hulu and BBC Three television series",
+   "hook": "adapts Sally Rooney's novel about an on-off romance between two Irish schoolmates",
+   "known": 0.3,
+   "kind": "romance drama"
+  },
+  {
+   "label": "House of Cards",
+   "qid": "Q3330940",
+   "fame": 0.603,
+   "service": "Netflix",
+   "description": "2010s political drama TV series",
+   "hook": null,
+   "known": 0.6,
+   "kind": "political drama"
+  },
+  {
+   "label": "When Life Gives You Tangerines",
+   "qid": "Q117353211",
+   "fame": 0.602,
+   "service": "Netflix",
+   "description": "South Korean television series",
+   "hook": "follows a spirited woman from girlhood to old age on Jeju Island",
+   "known": 0.2,
+   "kind": "drama"
+  },
+  {
+   "label": "Star Trek: Discovery",
+   "qid": "Q21296543",
+   "fame": 0.597,
+   "service": "Paramount+",
+   "description": "2017 American science fiction television series",
+   "hook": "follows a Starfleet science officer, Michael Burnham, on a ship that later leaps to a distant future",
+   "known": 0.5,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Bosch",
+   "qid": "Q16844915",
+   "fame": 0.596,
+   "service": "Amazon Prime Video",
+   "description": "American drama television series (2014-2021)",
+   "hook": "follows a Los Angeles homicide detective from Michael Connelly's novels",
+   "known": 0.5,
+   "kind": "crime drama"
+  },
+  {
+   "label": "The Glory",
+   "qid": "Q113197148",
+   "fame": 0.588,
+   "service": "Netflix",
+   "description": "2022 South Korean television series",
+   "hook": "follows a woman who spends years plotting revenge on the classmates who bullied her",
+   "known": 0.3,
+   "kind": "thriller"
+  },
+  {
+   "label": "The Umbrella Academy",
+   "qid": "Q44535025",
+   "fame": 0.588,
+   "service": "Netflix",
+   "description": "American television series",
+   "hook": "follows estranged adopted siblings with superpowers who reunite to stop an apocalypse",
+   "known": 0.5,
+   "kind": "superhero drama"
+  },
+  {
+   "label": "Grace and Frankie",
+   "qid": "Q18150372",
+   "fame": 0.587,
+   "service": "Netflix",
+   "description": "American comedy-drama web television series",
+   "hook": "follows two rivals who become roommates after their husbands reveal they are in love",
+   "known": 0.5,
+   "kind": "comedy"
+  },
+  {
+   "label": "Chilling Adventures of Sabrina",
+   "qid": "Q50809037",
+   "fame": 0.586,
+   "service": "Netflix",
+   "description": "American supernatural television series (2018–2020)",
+   "hook": "follows a half-witch teen torn between mortal life and dark magic",
+   "known": 0.4,
+   "kind": "supernatural"
+  },
+  {
+   "label": "The Wheel of Time",
+   "qid": "Q60746841",
+   "fame": 0.586,
+   "service": "Amazon Prime Video",
+   "description": "2021 American fantasy television series",
+   "hook": "adapts Robert Jordan's fantasy saga about a channeler who may be the Dragon Reborn",
+   "known": 0.4,
+   "kind": "fantasy"
+  },
+  {
+   "label": "Ironheart",
+   "qid": "Q108124282",
+   "fame": 0.585,
+   "service": "Disney+",
+   "description": "2025 American superhero television series",
+   "hook": "follows a young genius who builds her own powered armor suit",
+   "known": 0.2,
+   "kind": "superhero"
+  },
+  {
+   "label": "The OA",
+   "qid": "Q19798744",
+   "fame": 0.583,
+   "service": "Netflix",
+   "description": "2016 American mystery drama television series",
+   "hook": "follows a formerly blind woman who resurfaces after years missing, with her sight restored",
+   "known": 0.3,
+   "kind": "mystery"
+  },
+  {
+   "label": "Virgin River",
+   "qid": "Q60745869",
+   "fame": 0.583,
+   "service": "Netflix",
+   "description": "American romance drama web television series",
+   "hook": "follows a nurse practitioner who starts over in a small California mountain town",
+   "known": 0.5,
+   "kind": "romance drama"
+  },
+  {
+   "label": "Narcos",
+   "qid": "Q20642206",
+   "fame": 0.582,
+   "service": "Netflix",
+   "description": "American crime drama television series",
+   "hook": null,
+   "known": 0.6,
+   "kind": "crime drama"
+  },
+  {
+   "label": "Ahsoka",
+   "qid": "Q104153367",
+   "fame": 0.581,
+   "service": "Disney+",
+   "description": "American television series",
+   "hook": "follows a former Jedi Padawan searching for the missing Grand Admiral Thrawn",
+   "known": 0.3,
+   "kind": "sci-fi action"
+  },
+  {
+   "label": "Alice in Borderland",
+   "qid": "Q103967305",
+   "fame": 0.581,
+   "service": "Netflix",
+   "description": "2020 Japanese television series",
+   "hook": null,
+   "known": 0.3,
+   "kind": "thriller"
+  },
+  {
+   "label": "Good Omens",
+   "qid": "Q43377320",
+   "fame": 0.577,
+   "service": "Amazon Prime Video",
+   "description": "2019 fantasy comedy TV series",
+   "hook": "follows an angel and a demon who team up to stop the apocalypse",
+   "known": 0.4,
+   "kind": "fantasy comedy"
+  },
+  {
+   "label": "All of Us Are Dead",
+   "qid": "Q96414952",
+   "fame": 0.576,
+   "service": "Netflix",
+   "description": "2022 South Korean television series",
+   "hook": null,
+   "known": 0.3,
+   "kind": "horror"
+  },
+  {
+   "label": "And Just Like That...",
+   "qid": "Q107272501",
+   "fame": 0.576,
+   "service": "HBO Max",
+   "description": "American comedy-drama television series",
+   "hook": "picks up the lives of a group of Manhattan friends decades after a beloved comedy series ended",
+   "known": 0.4,
+   "kind": "comedy drama"
+  },
+  {
+   "label": "Moon Knight",
+   "qid": "Q84712802",
+   "fame": 0.576,
+   "service": "Disney+",
+   "description": "2022 superhero television miniseries produced by Marvel Studios",
+   "hook": "follows a mercenary with multiple identities who serves an Egyptian god",
+   "known": 0.4,
+   "kind": "superhero"
+  },
+  {
+   "label": "Secret Invasion",
+   "qid": "Q108441863",
+   "fame": 0.575,
+   "service": "Disney+",
+   "description": "American superhero television miniseries",
+   "hook": "follows Nick Fury as shape-shifting Skrulls hide among humans",
+   "known": 0.3,
+   "kind": "superhero thriller"
+  },
+  {
+   "label": "Inventing Anna",
+   "qid": "Q82396632",
+   "fame": 0.574,
+   "service": "Netflix",
+   "description": "American miniseries",
+   "hook": "dramatizes a fake heiress who conned New York's elite",
+   "known": 0.4,
+   "kind": "drama"
+  },
+  {
+   "label": "11.22.63",
+   "qid": "Q21528692",
+   "fame": 0.571,
+   "service": "Hulu",
+   "description": "2016 American television series",
+   "hook": null,
+   "known": 0.3,
+   "kind": "thriller"
+  },
+  {
+   "label": "Extraordinary Attorney Woo",
+   "qid": "Q110118400",
+   "fame": 0.567,
+   "service": "Netflix",
+   "description": "2022 South Korean television series",
+   "hook": "follows an autistic lawyer with a genius mind and a love of whales",
+   "known": 0.3,
+   "kind": "legal drama"
+  },
+  {
+   "label": "Heartstopper",
+   "qid": "Q106623586",
+   "fame": 0.567,
+   "service": "Netflix",
+   "description": "2022 British teen television series",
+   "hook": "adapts Alice Oseman's graphic novels about two British schoolboys falling in love",
+   "known": 0.4,
+   "kind": "teen romance"
+  },
+  {
+   "label": "Star Trek: Picard",
+   "qid": "Q62573305",
+   "fame": 0.567,
+   "service": "Paramount+",
+   "description": "American web television series",
+   "hook": "follows a retired Starfleet admiral drawn back for one more mission",
+   "known": 0.4,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "The Falcon and the Winter Soldier",
+   "qid": "Q65979734",
+   "fame": 0.567,
+   "service": "Disney+",
+   "description": "American streaming television miniseries",
+   "hook": "follows two Avengers allies after Captain America passes on his shield",
+   "known": 0.4,
+   "kind": "superhero action"
+  },
+  {
+   "label": "Atypical",
+   "qid": "Q28443618",
+   "fame": 0.564,
+   "service": "Netflix",
+   "description": "American comedy-drama television series from 2017–2021",
+   "hook": "follows a teenager on the autism spectrum as he seeks romance and independence",
+   "known": 0.4,
+   "kind": "teen comedy"
+  },
+  {
+   "label": "The Good Fight",
+   "qid": "Q28052823",
+   "fame": 0.564,
+   "service": "Paramount+",
+   "description": "2017 American legal drama television series",
+   "hook": "spins off a CBS legal drama about Chicago lawyers led by Diane Lockhart",
+   "known": 0.3,
+   "kind": "legal drama"
+  },
+  {
+   "label": "Halo",
+   "qid": "Q55279915",
+   "fame": 0.561,
+   "service": "Paramount+",
+   "description": "American television series (2022-2024)",
+   "hook": "adapts a sci-fi video game about the armored super-soldier Master Chief",
+   "known": 0.3,
+   "kind": "sci-fi action"
+  },
+  {
+   "label": "Elite",
+   "qid": "Q53000974",
+   "fame": 0.559,
+   "service": "Netflix",
+   "description": "Spanish TV series",
+   "hook": "follows working-class scholarship students at a posh Spanish private school",
+   "known": 0.4,
+   "kind": "teen drama"
+  },
+  {
+   "label": "Gen V",
+   "qid": "Q112623392",
+   "fame": 0.558,
+   "service": "Amazon Prime Video",
+   "description": "American superhero television series",
+   "hook": null,
+   "known": 0.2,
+   "kind": "superhero action"
+  },
+  {
+   "label": "Lupin",
+   "qid": "Q104082429",
+   "fame": 0.557,
+   "service": "Netflix",
+   "description": "2021 French television series",
+   "hook": "follows a Parisian thief inspired by a gentleman burglar from classic novels",
+   "known": 0.4,
+   "kind": "heist thriller"
+  },
+  {
+   "label": "Star Wars: Skeleton Crew",
+   "qid": "Q113275091",
+   "fame": 0.557,
+   "service": "Disney+",
+   "description": "American streaming television series",
+   "hook": "follows a group of children lost far from home in the galaxy of Jedi and Sith",
+   "known": 0.2,
+   "kind": "sci-fi adventure"
+  },
+  {
+   "label": "Vikings: Valhalla",
+   "qid": "Q104145677",
+   "fame": 0.556,
+   "service": "Netflix",
+   "description": "Canada, Irish, American historical television series (2022-2024)",
+   "hook": "continues the saga of Norse raiders generations after Ragnar Lothbrok",
+   "known": 0.4,
+   "kind": "historical action"
+  },
+  {
+   "label": "She-Hulk: Attorney at Law",
+   "qid": "Q84712806",
+   "fame": 0.555,
+   "service": "Disney+",
+   "description": "2022 American superhero television series",
+   "hook": "follows a lawyer who gains gamma-powered strength after a transfusion from her cousin",
+   "known": 0.3,
+   "kind": "superhero comedy"
+  },
+  {
+   "label": "Dexter: Original Sin",
+   "qid": "Q126075054",
+   "fame": 0.55,
+   "service": "Paramount+",
+   "description": "prequel of TV series Dexter",
+   "hook": null,
+   "known": 0.2,
+   "kind": "crime thriller"
+  },
+  {
+   "label": "Jessica Jones",
+   "qid": "Q18605540",
+   "fame": 0.55,
+   "service": "Netflix",
+   "description": "2015 American television series",
+   "hook": "follows a hard-drinking private investigator with superhuman strength",
+   "known": 0.4,
+   "kind": "action thriller"
+  },
+  {
+   "label": "Ratched",
+   "qid": "Q47484650",
+   "fame": 0.55,
+   "service": "Netflix",
+   "description": "American drama web television series",
+   "hook": "imagines the backstory of the nurse from One Flew Over the Cuckoo's Nest",
+   "known": 0.3,
+   "kind": "drama"
+  },
+  {
+   "label": "Sense8",
+   "qid": "Q17080059",
+   "fame": 0.55,
+   "service": "Netflix",
+   "description": "American science fiction television series",
+   "hook": "follows eight strangers around the world who are mentally linked",
+   "known": 0.4,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Dead to Me",
+   "qid": "Q55609230",
+   "fame": 0.548,
+   "service": "Netflix",
+   "description": "American dark comedy television series",
+   "hook": "follows two grieving women who form an unlikely friendship built on a secret",
+   "known": 0.4,
+   "kind": "comedy drama"
+  },
+  {
+   "label": "Altered Carbon",
+   "qid": "Q22906308",
+   "fame": 0.547,
+   "service": "Netflix",
+   "description": "science-fiction television series",
+   "hook": "follows a soldier revived in a new body in a future where minds can be stored",
+   "known": 0.3,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "After Life",
+   "qid": "Q55603316",
+   "fame": 0.546,
+   "service": "Netflix",
+   "description": "British dark comedy web television series",
+   "hook": "follows a widower who lashes out at the world, starring Ricky Gervais",
+   "known": 0.3,
+   "kind": "dark comedy"
+  },
+  {
+   "label": "Kaos",
+   "qid": "Q55615670",
+   "fame": 0.546,
+   "service": "Netflix",
+   "description": "2024 British television series",
+   "hook": "reimagines Greek myths as a dark comedy with Jeff Goldblum as Zeus",
+   "known": 0.2,
+   "kind": "comedy drama"
+  },
+  {
+   "label": "See",
+   "qid": "Q55632795",
+   "fame": 0.545,
+   "service": "Apple TV",
+   "description": "2019 TV series",
+   "hook": "is set in a future where humanity has lost sight, starring Jason Momoa",
+   "known": 0.3,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Ms. Marvel",
+   "qid": "Q84712813",
+   "fame": 0.544,
+   "service": "Disney+",
+   "description": "2022 superhero television miniseries",
+   "hook": "follows a Pakistani-American teen from Jersey City who gains shape-changing powers",
+   "known": 0.3,
+   "kind": "superhero"
+  },
+  {
+   "label": "Santa Clarita Diet",
+   "qid": "Q23680123",
+   "fame": 0.542,
+   "service": "Netflix",
+   "description": "2017 American horror-comedy web television series",
+   "hook": null,
+   "known": 0.3,
+   "kind": "comedy horror"
+  },
+  {
+   "label": "A Series of Unfortunate Events",
+   "qid": "Q25340369",
+   "fame": 0.541,
+   "service": "Netflix",
+   "description": "2017–2019 American television series",
+   "hook": "adapts Lemony Snicket's tales of three orphans pursued by Count Olaf",
+   "known": 0.4,
+   "kind": "fantasy drama"
+  },
+  {
+   "label": "The Acolyte",
+   "qid": "Q104161310",
+   "fame": 0.541,
+   "service": "Disney+",
+   "description": "2024 American television series",
+   "hook": "is set in an era long before the Skywalkers, following a Jedi investigation",
+   "known": 0.2,
+   "kind": "sci-fi"
+  },
+  {
+   "label": "Raised by Wolves",
+   "qid": "Q60747802",
+   "fame": 0.54,
+   "service": "HBO Max",
+   "description": "American science fiction television series",
+   "hook": "follows android caretakers raising human children on a distant planet",
+   "known": 0.3,
+   "kind": "sci-fi drama"
+  },
+  {
+   "label": "Shadow and Bone",
+   "qid": "Q85800564",
+   "fame": 0.538,
+   "service": "Netflix",
+   "description": "2021 American fantasy television series",
+   "hook": "follows a mapmaker who learns she can summon sunlight in a land split by a wall of darkness",
+   "known": 0.3,
+   "kind": "fantasy"
+  },
+  {
+   "label": "The Act",
+   "qid": "Q55635017",
+   "fame": 0.538,
+   "service": "Hulu",
+   "description": "American web television series",
+   "hook": null,
+   "known": 0.2,
+   "kind": "drama"
+  },
+  {
+   "label": "Locke & Key",
+   "qid": "Q56274745",
+   "fame": 0.537,
+   "service": "Netflix",
+   "description": "2020 American supernatural horror drama television series",
+   "hook": "follows siblings who move into an ancestral mansion filled with magical, power-granting objects",
+   "known": 0.3,
+   "kind": "horror drama"
+  },
+  {
+   "label": "Kingdom",
+   "qid": "Q30947892",
+   "fame": 0.536,
+   "service": "Netflix",
+   "description": "2019 South Korean TV series",
+   "hook": "pits a crown prince against a zombie plague in a feudal Asian realm",
+   "known": 0.3,
+   "kind": "historical horror"
+  },
+  {
+   "label": "1899",
+   "qid": "Q98446867",
+   "fame": 0.535,
+   "service": "Netflix",
+   "description": "2022 German mystery science fiction television series",
+   "hook": "follows European migrants aboard a steamship who meet a mysterious second vessel adrift at sea",
+   "known": 0.2,
+   "kind": "mystery sci-fi"
+  },
+  {
+   "label": "Fuller House",
+   "qid": "Q20714712",
+   "fame": 0.532,
+   "service": "Netflix",
+   "description": "American television sitcom",
+   "hook": "revives a beloved family sitcom as a grown-up sister raises her sons with her sister and best friend",
+   "known": 0.4,
+   "kind": "sitcom"
+  },
+  {
+   "label": "High School Musical: The Musical: The Series",
+   "qid": "Q61816815",
+   "fame": 0.531,
+   "service": "Disney+",
+   "description": "2019 American mockumentary web television series",
+   "hook": "follows theater kids putting on a stage version of a hit TV movie at the campus where it was shot",
+   "known": 0.3,
+   "kind": "musical comedy"
+  },
+  {
+   "label": "Unbreakable Kimmy Schmidt",
+   "qid": "Q16889037",
+   "fame": 0.53,
+   "service": "Netflix",
+   "description": "American comedy streaming television series",
+   "hook": "follows a woman rescued from an apocalypse cult who starts a fresh life in New York City",
+   "known": 0.4,
+   "kind": "comedy"
+  },
+  {
+   "label": "The Book of Boba Fett",
+   "qid": "Q104396610",
+   "fame": 0.529,
+   "service": "Disney+",
+   "description": "American streaming television series from 2021–2022",
+   "hook": "follows a famous Star Wars bounty hunter who takes over a crime lord's throne on Tatooine",
+   "known": 0.2,
+   "kind": "sci-fi action"
+  },
+  {
+   "label": "The Defenders",
+   "qid": "Q22988401",
+   "fame": 0.527,
+   "service": "Netflix",
+   "description": "2017 American television series",
+   "hook": "unites four Marvel street-level heroes to fight a shadowy ninja organization in New York",
+   "known": 0.3,
+   "kind": "superhero"
+  },
+  {
+   "label": "Iron Fist",
+   "qid": "Q21148896",
+   "fame": 0.522,
+   "service": "Netflix",
+   "description": "American television series",
+   "hook": "follows a billionaire heir who returns from a mystical city with a glowing kung fu power",
+   "known": 0.3,
+   "kind": "superhero action"
+  },
+  {
+   "label": "Tiger King: Murder, Mayhem and Madness",
+   "qid": "Q88306935",
+   "fame": 0.522,
+   "service": "Netflix",
+   "description": "True crime documentary miniseries",
+   "hook": null,
+   "known": 0.5,
+   "kind": "documentary"
+  },
+  {
+   "label": "Our Flag Means Death",
+   "qid": "Q107324490",
+   "fame": 0.521,
+   "service": "HBO Max",
+   "description": "2022 American television series",
+   "hook": "puts a comedic spin on a gentleman turned pirate captain and his friendship with Blackbeard",
+   "known": 0.2,
+   "kind": "adventure comedy"
+  },
+  {
+   "label": "Carnival Row",
+   "qid": "Q46034734",
+   "fame": 0.513,
+   "service": "Amazon Prime Video",
+   "description": "American television series",
+   "hook": "follows a detective in a Victorian-style city where mythical creatures live as refugees",
+   "known": 0.2,
+   "kind": "fantasy drama"
+  },
+  {
+   "label": "How I Met Your Father",
+   "qid": "Q108619693",
+   "fame": 0.513,
+   "service": "Hulu",
+   "description": "American sitcom (2022-2023)",
+   "hook": "follows a woman recounting to her son the story that led her to his dad in a sitcom spin-off",
+   "known": 0.2,
+   "kind": "comedy"
+  },
+  {
+   "label": "Obi-Wan Kenobi",
+   "qid": "Q104154217",
+   "fame": 0.512,
+   "service": "Disney+",
+   "description": "American streaming television series from 2022",
+   "hook": "follows an exiled Jedi master protecting a young Luke Skywalker while rescuing a kidnapped young Leia",
+   "known": 0.3,
+   "kind": "sci-fi action"
+  },
+  {
+   "label": "Runaways",
+   "qid": "Q28746336",
+   "fame": 0.511,
+   "service": "Hulu",
+   "description": "American web television series",
+   "hook": "follows teenagers who discover their parents are secret supervillains",
+   "known": 0.3,
+   "kind": "superhero drama"
+  },
+  {
+   "label": "Lost in Space",
+   "qid": "Q25341232",
+   "fame": 0.51,
+   "service": "Netflix",
+   "description": "2018 American science fiction television series",
+   "hook": "follows a colonist family stranded on an alien planet after their ship veers off course",
+   "known": 0.4,
+   "kind": "sci-fi adventure"
+  },
+  {
+   "label": "Russian Doll",
+   "qid": "Q55632122",
+   "fame": 0.502,
+   "service": "Netflix",
+   "description": "2019 American comedy-drama television series",
+   "hook": "follows a woman stuck reliving the night of her birthday party, dying again and again",
+   "known": 0.3,
+   "kind": "comedy drama"
+  },
+  {
+   "label": "Berlin",
+   "qid": "Q109850709",
+   "fame": 0.499,
+   "service": "Netflix",
+   "description": "2023 Spanish television series",
+   "hook": "spins off a heist series with a charming thief planning a jewel robbery in Paris",
+   "known": 0.2,
+   "kind": "crime thriller"
+  },
+  {
+   "label": "Luke Cage",
+   "qid": "Q20646602",
+   "fame": 0.497,
+   "service": "Netflix",
+   "description": "American television series",
+   "hook": "follows a bulletproof man with unbreakable skin who cleans up Harlem",
+   "known": 0.3,
+   "kind": "superhero action"
+  },
+  {
+   "label": "All the Light We Cannot See",
+   "qid": "Q110602969",
+   "fame": 0.494,
+   "service": "Netflix",
+   "description": "2023 American television series",
+   "hook": "adapts a novel about a blind French girl and a German boy whose paths cross in World War II",
+   "known": 0.3,
+   "kind": "historical drama"
+  },
+  {
+   "label": "Travelers",
+   "qid": "Q24705137",
+   "fame": 0.493,
+   "service": "Netflix",
+   "description": "2016 science fiction TV series",
+   "hook": null,
+   "known": 0.2,
+   "kind": "sci-fi thriller"
+  },
+  {
+   "label": "Sweet Tooth",
+   "qid": "Q104762388",
+   "fame": 0.488,
+   "service": "Netflix",
+   "description": "2021 TV series",
+   "hook": "follows a deer-antlered boy hybrid who journeys across a post-plague world",
+   "known": 0.3,
+   "kind": "fantasy adventure"
+  },
+  {
+   "label": "The Rain",
+   "qid": "Q48855569",
+   "fame": 0.486,
+   "service": "Netflix",
+   "description": "Danish web television series",
+   "hook": null,
+   "known": 0.2,
+   "kind": "sci-fi thriller"
+  },
+  {
+   "label": "Space Force",
+   "qid": "Q60649578",
+   "fame": 0.485,
+   "service": "Netflix",
+   "description": "2020 American television series",
+   "hook": "mocks the birth of a new branch of the US armed forces with Steve Carell as its general",
+   "known": 0.3,
+   "kind": "comedy drama"
+  },
+  {
+   "label": "Fate: The Winx Saga",
+   "qid": "Q68210731",
+   "fame": 0.479,
+   "service": "Netflix",
+   "description": "2021 Live Action remake of Winx Club",
+   "hook": "reimagines a cartoon about fairies at a magical boarding school",
+   "known": 0.2,
+   "kind": "fantasy"
+  },
+  {
+   "label": "Pam & Tommy",
+   "qid": "Q106609866",
+   "fame": 0.479,
+   "service": "Hulu",
+   "description": "American biographical drama television miniseries",
+   "hook": null,
+   "known": 0.3,
+   "kind": "biographical drama"
+  },
+  {
+   "label": "Hollywood",
+   "qid": "Q85712059",
+   "fame": 0.476,
+   "service": "Netflix",
+   "description": "2020 American television series",
+   "hook": null,
+   "known": 0.2,
+   "kind": "drama"
+  },
+  {
+   "label": "Hometown Cha-Cha-Cha",
+   "qid": "Q106758556",
+   "fame": 0.476,
+   "service": "Netflix",
+   "description": "2021 South Korean television series",
+   "hook": null,
+   "known": 0.2,
+   "kind": "romance comedy"
+  },
+  {
+   "label": "Master of None",
+   "qid": "Q20856971",
+   "fame": 0.476,
+   "service": "Netflix",
+   "description": "American comedy television series",
+   "hook": "follows a New York actor navigating dating and family, co-created by Aziz Ansari",
+   "known": 0.3,
+   "kind": "comedy"
+  }
+ ]
+}

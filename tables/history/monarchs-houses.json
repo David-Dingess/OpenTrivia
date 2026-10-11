@@ -1,0 +1,1102 @@
+{
+ "id": "table.history.monarchs-houses",
+ "kind": "table",
+ "title": "Famous monarchs and their royal house",
+ "genre": "society",
+ "category": "history",
+ "topic": "rulers",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?hLabel WHERE { { SELECT ?item (SAMPLE(?h) AS ?h) (COUNT(DISTINCT ?h) AS ?n) WHERE { ?item wdt:P31 wd:Q5 ; wdt:P39 ?pos ; wdt:P53 ?h . ?pos wdt:P279* wd:Q116 . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?n = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 199",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T06:24:41.095Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T06:24:41.095Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "house",
+   "label": "Royal house",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "monarch",
+  "many": "monarchs",
+  "wildcard": "person",
+  "hookAsk": "Which monarch {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "house": {
+    "role": "link",
+    "pick": "Which royal house or dynasty did {label} belong to?",
+    "statement": "{label} belonged to the {value}.",
+    "match": "Match each monarch to their royal house.",
+    "odd": "Three of these monarchs belonged to the {value}. Which one didn't?",
+    "all": "Tap all {n} monarchs from {value}.",
+    "reverse": "Which of these monarchs belonged to the {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Elizabeth II",
+   "qid": "Q9682",
+   "fame": 0.837,
+   "house": "House of Windsor",
+   "description": "Queen of the United Kingdom from 1952 to 2022 (1926–2022)",
+   "hook": "reigned longer than any other British monarch and was famously fond of corgis",
+   "known": 0.95,
+   "kind": "british"
+  },
+  {
+   "label": "Harald V of Norway",
+   "qid": "Q57287",
+   "fame": 0.827,
+   "house": "House of Glücksburg",
+   "description": "King of Norway from 1991 to 2026 (1937–2026)",
+   "hook": "competed at several Olympic Games as a sailor before and during his time as a king",
+   "known": 0.4,
+   "kind": "scandinavian"
+  },
+  {
+   "label": "Victoria",
+   "qid": "Q9439",
+   "fame": 0.81,
+   "house": "House of Hanover",
+   "description": "Queen of the United Kingdom from 1837 to 1901 (1819-1901)",
+   "hook": "gave her name to an era and ruled an empire on which the sun never set",
+   "known": 0.95,
+   "kind": "british"
+  },
+  {
+   "label": "Henry VIII of England",
+   "qid": "Q38370",
+   "fame": 0.797,
+   "house": "House of Tudor",
+   "description": "King of England from 1509 to 1547 (1491–1547)",
+   "hook": "had six wives and broke with the Roman Catholic Church to get his way",
+   "known": 0.95,
+   "kind": "british"
+  },
+  {
+   "label": "Napoleon",
+   "qid": "Q517",
+   "fame": 0.787,
+   "house": "House of Bonaparte",
+   "description": "French military leader, French Emperor 1804–1814 and again in 1815 (1769–1821)",
+   "hook": "rose from a Corsican artillery officer to crown himself emperor before meeting defeat at Waterloo",
+   "known": 0.95,
+   "kind": "french"
+  },
+  {
+   "label": "George VI",
+   "qid": "Q280856",
+   "fame": 0.785,
+   "house": "House of Windsor",
+   "description": "King of the United Kingdom from 1936 to 1952",
+   "hook": "overcame a stammer to lead his nation through World War II, as shown in The King's Speech",
+   "known": 0.6,
+   "kind": "british"
+  },
+  {
+   "label": "Edward VIII",
+   "qid": "Q590227",
+   "fame": 0.776,
+   "house": "House of Windsor",
+   "description": "King of the United Kingdom in 1936",
+   "hook": "gave up the throne to marry an American divorcee",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Elizabeth I of England",
+   "qid": "Q7207",
+   "fame": 0.771,
+   "house": "House of Tudor",
+   "description": "Queen of England and Ireland from 1558 to 1603 (1533-1603)",
+   "hook": "was the Virgin Queen who saw off the Spanish Armada",
+   "known": 0.95,
+   "kind": "british"
+  },
+  {
+   "label": "Edward VII",
+   "qid": "Q20875",
+   "fame": 0.767,
+   "house": "House of Saxe-Coburg and Gotha",
+   "description": "King of the United Kingdom from 1901 to 1910",
+   "hook": "waited decades as heir to his mother Queen Victoria and was known for his love of society and racing",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Alexander the Great",
+   "qid": "Q8409",
+   "fame": 0.76,
+   "house": "Argead dynasty",
+   "description": "king of Macedonia and conqueror of Achaemenid Persia (356–323 BC)",
+   "hook": "conquered the Persian Empire and is said to have never lost a battle",
+   "known": 0.95,
+   "kind": "ancient"
+  },
+  {
+   "label": "George III of Great Britain",
+   "qid": "Q127318",
+   "fame": 0.741,
+   "house": "House of Hanover",
+   "description": "King of Great Britain and Ireland from 1760 to 1820 (1738–1820)",
+   "hook": "lost the American colonies and was said to suffer bouts of madness",
+   "known": 0.6,
+   "kind": "british"
+  },
+  {
+   "label": "Mary I",
+   "qid": "Q82674",
+   "fame": 0.74,
+   "house": "House of Tudor",
+   "description": "Queen of England and Ireland from 1553 to 1558 (1516-1558)",
+   "hook": "earned the nickname Bloody for burning Protestants and married a Spanish prince",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "William the Conqueror",
+   "qid": "Q37594",
+   "fame": 0.735,
+   "house": "House of Normandy",
+   "description": "King of England from 1066 to 1087, Duke of Normandy from 1035 to 1087 (1028–1087)",
+   "hook": "won the Battle of Hastings and ordered the Domesday survey",
+   "known": 0.8,
+   "kind": "british"
+  },
+  {
+   "label": "Mary, Queen of Scots",
+   "qid": "Q131412",
+   "fame": 0.731,
+   "house": "House of Stuart",
+   "description": "Queen of Scotland from 1542 to 1567 (1542–1587)",
+   "hook": "spent years imprisoned by her cousin Elizabeth I before her execution",
+   "known": 0.6,
+   "kind": "british"
+  },
+  {
+   "label": "Charles I of England",
+   "qid": "Q81506",
+   "fame": 0.714,
+   "house": "House of Stuart",
+   "description": "King of England, Scotland, and Ireland from 1625 to 1649 (1600-1649)",
+   "hook": "lost a civil war against Parliament and was executed in front of a crowd",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Henry VII of England",
+   "qid": "Q675493",
+   "fame": 0.709,
+   "house": "House of Tudor",
+   "description": "King of England from 1485 to 1509",
+   "hook": "won the Battle of Bosworth Field and founded a new royal dynasty",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Charlemagne",
+   "qid": "Q3044",
+   "fame": 0.703,
+   "house": "Carolingian dynasty",
+   "description": "king of Franks, regarded as the first Holy Roman Emperor (747–814) (742-814)",
+   "hook": "was crowned emperor by the Pope on Christmas Day in Rome",
+   "known": 0.95,
+   "kind": "medieval-european"
+  },
+  {
+   "label": "Edward VI of England",
+   "qid": "Q83229",
+   "fame": 0.7,
+   "house": "House of Tudor",
+   "description": "king of England and Ireland from 1547 to 1553",
+   "hook": "became a boy king at age nine and died in his teens",
+   "known": 0.2,
+   "kind": "british"
+  },
+  {
+   "label": "William IV",
+   "qid": "Q130822",
+   "fame": 0.7,
+   "house": "House of Hanover",
+   "description": "King of the United Kingdom and Hanover from 1830 to 1837",
+   "hook": "served in the navy and was nicknamed the Sailor King",
+   "known": 0.2,
+   "kind": "british"
+  },
+  {
+   "label": "George IV of the United Kingdom",
+   "qid": "Q130586",
+   "fame": 0.698,
+   "house": "House of Hanover",
+   "description": "King of the United Kingdom and Hanover from 1820 to 1830",
+   "hook": "was a lavish Regency prince who built the exotic Brighton Pavilion",
+   "known": 0.2,
+   "kind": "british"
+  },
+  {
+   "label": "Louis XVI of France",
+   "qid": "Q7732",
+   "fame": 0.687,
+   "house": "House of Bourbon",
+   "description": "King of France and Navarre from 1774 to 1791, then King of the French from 1791 to 1792 (1754-1793)",
+   "hook": "lost his head to the guillotine during the Revolution and was married to Marie Antoinette",
+   "known": 0.8,
+   "kind": "french"
+  },
+  {
+   "label": "Hirohito",
+   "qid": "Q34479",
+   "fame": 0.686,
+   "house": "Imperial House of Japan",
+   "description": "emperor of Japan from 1926 to 1989",
+   "hook": "reigned through World War II and announced his nation's surrender by radio",
+   "known": 0.6,
+   "kind": "asian-imperial"
+  },
+  {
+   "label": "Richard III of England",
+   "qid": "Q133028",
+   "fame": 0.686,
+   "house": "House of York",
+   "description": "king of England from 1483 to 1485",
+   "hook": "had his skeleton found under a parking lot centuries after dying at Bosworth",
+   "known": 0.2,
+   "kind": "british"
+  },
+  {
+   "label": "Puyi",
+   "qid": "Q185152",
+   "fame": 0.684,
+   "house": "Aisin Gioro",
+   "description": "Last Emperor of Qing dynasty and Manchukuo (1906–1967)",
+   "hook": "was crowned as a small child and became the last emperor of China",
+   "known": 0.2,
+   "kind": "asian-imperial"
+  },
+  {
+   "label": "Wilhelm II",
+   "qid": "Q2677",
+   "fame": 0.684,
+   "house": "House of Hohenzollern",
+   "description": "as King of Prussia last German Emperor from 1888 to 1918 (1859–1941)",
+   "hook": "was the German kaiser with a withered arm who led his country into World War I",
+   "known": 0.6,
+   "kind": "german"
+  },
+  {
+   "label": "Henry V of England",
+   "qid": "Q131581",
+   "fame": 0.681,
+   "house": "House of Lancaster",
+   "description": "King of England from 1413 to 1422",
+   "hook": "won a famous victory at Agincourt, immortalized by Shakespeare",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Carl XVI Gustaf of Sweden",
+   "qid": "Q45068",
+   "fame": 0.674,
+   "house": "House of Bernadotte",
+   "description": "King of Sweden since 1973",
+   "hook": "has reigned for decades and presents the Nobel Prizes each year",
+   "known": 0.2,
+   "kind": "scandinavian"
+  },
+  {
+   "label": "George I of Great Britain",
+   "qid": "Q130805",
+   "fame": 0.674,
+   "house": "House of Hanover",
+   "description": "King of Great Britain and Ireland from 1714 to 1727",
+   "hook": "was a German-born king who barely spoke the language of his new subjects",
+   "known": 0.2,
+   "kind": "british"
+  },
+  {
+   "label": "George II of Great Britain",
+   "qid": "Q131981",
+   "fame": 0.672,
+   "house": "House of Hanover",
+   "description": "King of Great Britain and Ireland from 1727 to 1760 (1683-1760)",
+   "hook": "was the last reigning monarch to personally lead troops in battle",
+   "known": 0.2,
+   "kind": "british"
+  },
+  {
+   "label": "Naruhito",
+   "qid": "Q217096",
+   "fame": 0.666,
+   "house": "Imperial House of Japan",
+   "description": "Emperor of Japan (born 1960)",
+   "hook": "sits on the Chrysanthemum Throne as the reigning emperor",
+   "known": 0.2,
+   "kind": "asian-imperial"
+  },
+  {
+   "label": "John, King of England",
+   "qid": "Q129308",
+   "fame": 0.665,
+   "house": "House of Plantagenet",
+   "description": "King of England from 1199 to 1216",
+   "hook": "sealed the Magna Carta at Runnymede and is the villain of Robin Hood tales",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Richard I of England",
+   "qid": "Q42305",
+   "fame": 0.664,
+   "house": "House of Plantagenet",
+   "description": "King of England from 1189 to 1199 (1157–1199)",
+   "hook": "was nicknamed the Lionheart and went off on a crusade",
+   "known": 0.6,
+   "kind": "british"
+  },
+  {
+   "label": "Alfred the Great",
+   "qid": "Q83476",
+   "fame": 0.66,
+   "house": "House of Wessex",
+   "description": "king of Wessex (r. 872–901)",
+   "hook": "is the legendary ruler said to have burned the cakes while hiding from Viking invaders",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Abdullah II of Jordan",
+   "qid": "Q57464",
+   "fame": 0.658,
+   "house": "Hashemites",
+   "description": "King of the Hashemite Kingdom of Jordan",
+   "hook": "is a modern king who once made a cameo appearance on Star Trek",
+   "known": 0.05,
+   "kind": "middle-eastern"
+  },
+  {
+   "label": "Edward I of England",
+   "qid": "Q57798",
+   "fame": 0.656,
+   "house": "House of Plantagenet",
+   "description": "King of England from 1272 to 1307",
+   "hook": "was nicknamed Longshanks and is the villain of the film Braveheart",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Felipe VI of Spain",
+   "qid": "Q191045",
+   "fame": 0.656,
+   "house": "Spanish House of Bourbon",
+   "description": "King of Spain since 2014",
+   "hook": "carried his country's flag at the Olympic opening ceremony in Barcelona",
+   "known": 0.2,
+   "kind": "spanish-iberian"
+  },
+  {
+   "label": "William III of England",
+   "qid": "Q129987",
+   "fame": 0.656,
+   "house": "House of Orange-Nassau",
+   "description": "King of England, Scotland, and Ireland from 1689 to 1702 (1650-1702)",
+   "hook": "took the throne from his father-in-law in the Glorious Revolution",
+   "known": 0.4,
+   "kind": "british"
+  },
+  {
+   "label": "Haile Selassie I",
+   "qid": "Q41178",
+   "fame": 0.655,
+   "house": "House of Solomon",
+   "description": "Emperor of Ethiopia from 1930 to 1974",
+   "hook": "is revered as a messiah by followers of the Rastafari movement",
+   "known": 0.2,
+   "kind": "african"
+  },
+  {
+   "label": "Edward III of England",
+   "qid": "Q129247",
+   "fame": 0.65,
+   "house": "House of Plantagenet",
+   "description": "King of England from 1327 to 1377",
+   "hook": "started the Hundred Years' War by claiming the French crown",
+   "known": 0.2,
+   "kind": "british"
+  },
+  {
+   "label": "Suleiman the Magnificent",
+   "qid": "Q8474",
+   "fame": 0.65,
+   "house": "Ottoman dynasty",
+   "description": "the tenth and greatest Sultan of Ottoman Empire (1520–1566)",
+   "hook": "earned the title Lawgiver while his empire reached its greatest power",
+   "known": 0.6,
+   "kind": "ottoman"
+  },
+  {
+   "label": "Charles II of Spain",
+   "qid": "Q36174",
+   "fame": 0.645,
+   "house": "Spanish House of Habsburg",
+   "description": "king of Spain, lived (1661-1700)",
+   "hook": "was nicknamed the Bewitched, plagued by ill health linked to generations of inbreeding",
+   "known": 0.2,
+   "kind": "spanish-iberian"
+  },
+  {
+   "label": "Akihito",
+   "qid": "Q37979",
+   "fame": 0.642,
+   "house": "Imperial House of Japan",
+   "description": "Emperor of Japan from 1989 to 2019",
+   "hook": "was the first emperor in two centuries to step down from the throne while alive",
+   "known": 0.4,
+   "kind": "asian-imperial"
+  },
+  {
+   "label": "Justinian I",
+   "qid": "Q41866",
+   "fame": 0.639,
+   "house": "Justinian dynasty",
+   "description": "Eastern Roman Emperor who ruled from 527 to 565 (482-565)",
+   "hook": "built the Hagia Sophia and had Roman law organized into a famous code",
+   "known": 0.6,
+   "kind": "byzantine-medieval"
+  },
+  {
+   "label": "Cyrus the Great",
+   "qid": "Q8423",
+   "fame": 0.638,
+   "house": "Achaemenid dynasty",
+   "description": "founder of the Achaemenid Empire (559–529 BC)",
+   "hook": "freed the exiled Jews from Babylon and built the first great Persian empire",
+   "known": 0.8,
+   "kind": "ancient"
+  },
+  {
+   "label": "Franz Joseph I of Austria",
+   "qid": "Q51056",
+   "fame": 0.634,
+   "house": "House of Habsburg-Lorraine",
+   "description": "Emperor of Austria and King of Hungary (1830-1916)",
+   "hook": "was the husband of the famous Empress Sisi",
+   "known": 0.4,
+   "kind": "german"
+  },
+  {
+   "label": "Henry I of England",
+   "qid": "Q101384",
+   "fame": 0.634,
+   "house": "House of Normandy",
+   "description": "King of England from 1100 to 1135 (1068–1135)",
+   "hook": "lost his only legitimate son in the White Ship disaster",
+   "known": 0.2,
+   "kind": "british"
+  },
+  {
+   "label": "Ivan the Terrible",
+   "qid": "Q7996",
+   "fame": 0.627,
+   "house": "Rurikids",
+   "description": "Tsar of all Russia from 1547 to 1584",
+   "hook": "was the first ruler crowned tsar and earned a fearsome nickname",
+   "known": 0.4,
+   "kind": "russian"
+  },
+  {
+   "label": "Kublai Khan",
+   "qid": "Q7523",
+   "fame": 0.627,
+   "house": "Borjigin",
+   "description": "founding emperor of the Yuan dynasty, grandson of Genghis Khan (1215–1294)",
+   "hook": "hosted the Venetian traveler Marco Polo at his court in China",
+   "known": 0.6,
+   "kind": "asian-imperial"
+  },
+  {
+   "label": "Juan Carlos I of Spain",
+   "qid": "Q19943",
+   "fame": 0.625,
+   "house": "Spanish House of Bourbon",
+   "description": "King of Spain from 1975 to 2014",
+   "hook": "helped steer his country back to democracy after a dictator's death",
+   "known": 0.4,
+   "kind": "spanish-iberian"
+  },
+  {
+   "label": "Frederick II of Prussia",
+   "qid": "Q33550",
+   "fame": 0.621,
+   "house": "House of Hohenzollern",
+   "description": "King of Prussia from 1740 to 1786 (1712-1786)",
+   "hook": "was a flute-playing king who was also a brilliant general",
+   "known": 0.6,
+   "kind": "german"
+  },
+  {
+   "label": "Xerxes I",
+   "qid": "Q129165",
+   "fame": 0.619,
+   "house": "Achaemenid dynasty",
+   "description": "fifth Achaemenid emperor (486–465 BC)",
+   "hook": "was the king who faced 300 Spartans at Thermopylae",
+   "known": 0.4,
+   "kind": "ancient"
+  },
+  {
+   "label": "Akbar",
+   "qid": "Q8597",
+   "fame": 0.618,
+   "house": "Mughal dynasty",
+   "description": "the third and greatest Mughal emperor from 1556 to 1605",
+   "hook": "was known for religious tolerance and built the fortified city of Fatehpur Sikri",
+   "known": 0.4,
+   "kind": "asian-imperial"
+  },
+  {
+   "label": "Philippe of Belgium",
+   "qid": "Q155004",
+   "fame": 0.615,
+   "house": "House of Saxe-Coburg and Gotha",
+   "description": "King of the Belgians since 2013",
+   "hook": "is the reigning monarch of a country famous for chocolate and waffles",
+   "known": 0.05,
+   "kind": "other-european"
+  },
+  {
+   "label": "Aurangzeb",
+   "qid": "Q485547",
+   "fame": 0.612,
+   "house": "Mughal dynasty",
+   "description": "the sixth Mughal Emperor from 1658 to 1707",
+   "hook": "stretched his empire to its greatest extent and imprisoned his own father",
+   "known": 0.2,
+   "kind": "asian-imperial"
+  },
+  {
+   "label": "Emperor Meiji",
+   "qid": "Q174231",
+   "fame": 0.611,
+   "house": "Imperial House of Japan",
+   "description": "Emperor of Japan from 1867 until 1912",
+   "hook": "oversaw a rapid modernization of his country that ended the samurai era",
+   "known": 0.6,
+   "kind": "asian-imperial"
+  },
+  {
+   "label": "Shah Jahan",
+   "qid": "Q83672",
+   "fame": 0.608,
+   "house": "Mughal dynasty",
+   "description": "the fifth Mughal Emperor from 1628 to 1658",
+   "hook": "built the Taj Mahal as a tomb for his beloved wife",
+   "known": 0.6,
+   "kind": "asian-imperial"
+  },
+  {
+   "label": "Babur",
+   "qid": "Q797848",
+   "fame": 0.605,
+   "house": "Mughal dynasty",
+   "description": "founder of the Mughal Empire (1526–1530)",
+   "hook": "swept down from Central Asia to conquer northern India, claiming descent from Timur",
+   "known": 0.4,
+   "kind": "asian-imperial"
+  },
+  {
+   "label": "Beatrix of the Netherlands",
+   "qid": "Q29574",
+   "fame": 0.605,
+   "house": "House of Orange-Nassau",
+   "description": "Queen of the Netherlands from 1980 to 2013 (born 1938)",
+   "hook": "stepped down so her son could become the first Dutch king in over a century",
+   "known": 0.2,
+   "kind": "scandinavian"
+  },
+  {
+   "label": "Ashoka",
+   "qid": "Q8589",
+   "fame": 0.604,
+   "house": "Maurya dynasty",
+   "description": "Mauryan emperor from 268 to 232 BCE",
+   "hook": "embraced Buddhism after the carnage of a great war and spread its teachings",
+   "known": 0.4,
+   "kind": "asian-imperial"
+  },
+  {
+   "label": "Louis-Philippe I",
+   "qid": "Q7771",
+   "fame": 0.601,
+   "house": "House of Orléans",
+   "description": "King of the French from 1830 to 1848 (1773-1850)",
+   "hook": "was called the Citizen King after coming to power in a July revolution",
+   "known": 0.2,
+   "kind": "french"
+  },
+  {
+   "label": "Isabella I of Castile",
+   "qid": "Q45859",
+   "fame": 0.597,
+   "house": "House of Trastámara",
+   "description": "queen of the Crown of Castile, from 1474 to 1504; first queen of a dynastically-united Spain, from 1479 to 1504 (1451–1504)",
+   "hook": "funded the voyages of an Italian explorer who sailed west in search of Asia",
+   "known": 0.4,
+   "kind": "spanish-iberian"
+  },
+  {
+   "label": "Mohammed VI of Morocco",
+   "qid": "Q57553",
+   "fame": 0.596,
+   "house": "'Alawi dynasty",
+   "description": "king of Morocco since 1999",
+   "hook": "is the reigning monarch of a North African kingdom that faces the Atlantic and the Mediterranean",
+   "known": 0.05,
+   "kind": "african"
+  },
+  {
+   "label": "Mswati III",
+   "qid": "Q57340",
+   "fame": 0.596,
+   "house": "House of Dlamini",
+   "description": "King of Eswatini",
+   "hook": "is one of the last absolute monarchs in Africa, ruling a small landlocked kingdom",
+   "known": 0.05,
+   "kind": "african"
+  },
+  {
+   "label": "Francis II, Holy Roman Emperor",
+   "qid": "Q130834",
+   "fame": 0.594,
+   "house": "House of Habsburg-Lorraine",
+   "description": "also known as Francis I, Emperor of Austria (1768-1835)",
+   "hook": "dissolved a thousand-year-old European empire after Napoleon's victories, yet kept an imperial crown",
+   "known": 0.2,
+   "kind": "german"
+  },
+  {
+   "label": "Charles X of France",
+   "qid": "Q7758",
+   "fame": 0.591,
+   "house": "House of Bourbon",
+   "description": "King of France and Navarre from 1824 to 1830 (1757–1836)",
+   "hook": "was the last of his line to rule his country, toppled by the July Revolution",
+   "known": 0.2,
+   "kind": "french"
+  },
+  {
+   "label": "Alfonso XIII",
+   "qid": "Q18363",
+   "fame": 0.589,
+   "house": "Spanish House of Bourbon",
+   "description": "King of Spain from 1886 to 1931 (1886–1941)",
+   "hook": "lost his throne when republicans won the elections, sending him into exile shortly before a civil war",
+   "known": 0.2,
+   "kind": "spanish-iberian"
+  },
+  {
+   "label": "Francis I of France",
+   "qid": "Q129857",
+   "fame": 0.583,
+   "house": "House of Valois",
+   "description": "King of France from 1515 to 1547 (1494-1547)",
+   "hook": "was a Renaissance patron who brought Leonardo da Vinci to his court, and rivaled Charles V",
+   "known": 0.4,
+   "kind": "french"
+  },
+  {
+   "label": "Albert II, Prince of Monaco",
+   "qid": "Q3910",
+   "fame": 0.579,
+   "house": "House of Grimaldi",
+   "description": "Prince of Monaco (born 1958)",
+   "hook": "is the reigning head of a tiny Mediterranean principality, and a former Olympic bobsledder",
+   "known": 0.05,
+   "kind": "other-european"
+  },
+  {
+   "label": "Hussein I of Jordan",
+   "qid": "Q146906",
+   "fame": 0.578,
+   "house": "Hashemites",
+   "description": "King of Jordan from 1952 to 1999",
+   "hook": "ruled a desert kingdom for over four decades and made peace with Israel",
+   "known": 0.4,
+   "kind": "middle-eastern"
+  },
+  {
+   "label": "Philip V of Spain",
+   "qid": "Q170467",
+   "fame": 0.576,
+   "house": "Spanish House of Bourbon",
+   "description": "King of Spain from 1700 to 1746 (1683–1746)",
+   "hook": "was the grandson of the Sun King and won a long war over who would inherit a European throne",
+   "known": 0.2,
+   "kind": "spanish-iberian"
+  },
+  {
+   "label": "Darius I",
+   "qid": "Q44387",
+   "fame": 0.573,
+   "house": "Achaemenid dynasty",
+   "description": "The fourth and greatest Achaemenid emperor (522–486 BC)",
+   "hook": "built the Royal Road and ruled a vast empire whose Greek invasion ended at Marathon",
+   "known": 0.6,
+   "kind": "ancient"
+  },
+  {
+   "label": "Chandragupta Maurya",
+   "qid": "Q188541",
+   "fame": 0.568,
+   "house": "Maurya dynasty",
+   "description": "founder of the Maurya Empire (350–295 BCE)",
+   "hook": "united much of the Indian subcontinent after defeating the Nanda kings and Alexander's successors",
+   "known": 0.4,
+   "kind": "asian-imperial"
+  },
+  {
+   "label": "Frederick Barbarossa",
+   "qid": "Q79789",
+   "fame": 0.561,
+   "house": "House of Hohenstaufen",
+   "description": "Holy Roman Emperor from 1155 to 1190",
+   "hook": "is the red-bearded emperor of legend said to sleep under a mountain, and who drowned on a crusade",
+   "known": 0.2,
+   "kind": "medieval-european"
+  },
+  {
+   "label": "Philip II of Macedon",
+   "qid": "Q130650",
+   "fame": 0.561,
+   "house": "Argead dynasty",
+   "description": "King of Macedon from 359 to 336 BC",
+   "hook": "was the father of a famous conqueror and was assassinated at his daughter's wedding",
+   "known": 0.4,
+   "kind": "ancient"
+  },
+  {
+   "label": "Wilhelm I",
+   "qid": "Q150652",
+   "fame": 0.557,
+   "house": "House of Hohenzollern",
+   "description": "19th-century German Emperor and King of Prussia (1797–1888)",
+   "hook": "was proclaimed the first emperor of a unified nation in the Hall of Mirrors at Versailles",
+   "known": 0.4,
+   "kind": "german"
+  },
+  {
+   "label": "Ferdinand II of Aragon",
+   "qid": "Q12860",
+   "fame": 0.556,
+   "house": "House of Trastámara",
+   "description": "King of Aragon, Sicily, Naples, and Valencia (1452-1516)",
+   "hook": "married a famous queen, and together they completed the Reconquista and sponsored Columbus",
+   "known": 0.4,
+   "kind": "spanish-iberian"
+  },
+  {
+   "label": "Selim I",
+   "qid": "Q494660",
+   "fame": 0.555,
+   "house": "Ottoman dynasty",
+   "description": "9th Sultan of the Ottoman Empire from 1512 to 1520",
+   "hook": "nicknamed \"the Grim\", conquered Egypt and Syria and took the title of caliph",
+   "known": 0.2,
+   "kind": "ottoman"
+  },
+  {
+   "label": "Joseph II, Holy Roman Emperor",
+   "qid": "Q76555",
+   "fame": 0.554,
+   "house": "House of Habsburg-Lorraine",
+   "description": "Holy Roman Emperor from 1765 to 1790, (1741-1790).",
+   "hook": "was an enlightened despot and reformer who is a character in a film about a young composer",
+   "known": 0.2,
+   "kind": "german"
+  },
+  {
+   "label": "Philip IV of Spain",
+   "qid": "Q691402",
+   "fame": 0.554,
+   "house": "Spanish House of Habsburg",
+   "description": "King of Spain and Portugal (1605-1665)",
+   "hook": "was the patron of the painter Velázquez and ruled during the Golden Age of the arts",
+   "known": 0.4,
+   "kind": "spanish-iberian"
+  },
+  {
+   "label": "Charles VI of France",
+   "qid": "Q160349",
+   "fame": 0.552,
+   "house": "House of Valois",
+   "description": "King of France from 1380 to 1422 (1368–1422)",
+   "hook": "is remembered as \"the Mad\" after believing his body was made of glass",
+   "known": 0.2,
+   "kind": "french"
+  },
+  {
+   "label": "Jigme Khesar Namgyel Wangchuck",
+   "qid": "Q57376",
+   "fame": 0.551,
+   "house": "House of Wangchuck",
+   "description": "fifth and reigning King of Bhutan",
+   "hook": "is the young monarch of a Himalayan kingdom famous for measuring Gross National Happiness",
+   "known": 0.05,
+   "kind": "asian-imperial"
+  },
+  {
+   "label": "Frederick II, Holy Roman Emperor",
+   "qid": "Q130221",
+   "fame": 0.55,
+   "house": "House of Hohenstaufen",
+   "description": "King of Sicily, Holy Roman Emperor (1194–1250, 1220–1250)",
+   "hook": "was nicknamed \"Stupor Mundi\" and was excommunicated before leading a crusade largely by negotiation",
+   "known": 0.2,
+   "kind": "medieval-european"
+  },
+  {
+   "label": "Leopold I of Belgium",
+   "qid": "Q12971",
+   "fame": 0.549,
+   "house": "House of Saxe-Coburg and Gotha",
+   "description": "German prince who became the first King of the Belgians (1790–1865)",
+   "hook": "was a German prince who became the first monarch of a newly independent nation",
+   "known": 0.2,
+   "kind": "other-european"
+  },
+  {
+   "label": "Louis IX of France",
+   "qid": "Q346",
+   "fame": 0.548,
+   "house": "Capetian dynasty",
+   "description": "King of France from 1226 to 1270 (1214–1270)",
+   "hook": "is the only monarch of his country to be made a saint, after leading two crusades",
+   "known": 0.6,
+   "kind": "french"
+  },
+  {
+   "label": "Clovis I",
+   "qid": "Q82339",
+   "fame": 0.539,
+   "house": "Merovingian dynasty",
+   "description": "first king of the Franks (c. 466-511)",
+   "hook": "united the Frankish tribes and converted to Catholic Christianity, founding a great medieval kingdom",
+   "known": 0.4,
+   "kind": "medieval-european"
+  },
+  {
+   "label": "Victor Emmanuel II of Italy",
+   "qid": "Q168691",
+   "fame": 0.536,
+   "house": "House of Savoy",
+   "description": "King of Sardinia (1849–1861) and King of Italy (1861–1878)",
+   "hook": "became the first king of a unified peninsula, with the help of Garibaldi and Cavour",
+   "known": 0.4,
+   "kind": "other-european"
+  },
+  {
+   "label": "Gustavus Adolphus of Sweden",
+   "qid": "Q52938",
+   "fame": 0.535,
+   "house": "House of Vasa",
+   "description": "Swedish king (regent 1611–1632) (1594–1632)",
+   "hook": "was the \"Lion of the North\" who led his army to victory in the Thirty Years' War and died at Lützen",
+   "known": 0.4,
+   "kind": "scandinavian"
+  },
+  {
+   "label": "Louis XII of France",
+   "qid": "Q58514",
+   "fame": 0.535,
+   "house": "House of Valois",
+   "description": "King of France from 1498 to 1515",
+   "hook": "was called the \"Father of the People\" and fought wars in the Italian peninsula",
+   "known": 0.2,
+   "kind": "french"
+  },
+  {
+   "label": "Pedro I of Brazil",
+   "qid": "Q939",
+   "fame": 0.535,
+   "house": "House of Braganza",
+   "description": "Emperor of Brazil from 1822 to 1831 and King of Portugal in 1826 (1798-1834)",
+   "hook": "declared independence from his own father's kingdom with the cry \"Independence or Death\"",
+   "known": 0.2,
+   "kind": "spanish-iberian"
+  },
+  {
+   "label": "Philip IV of France",
+   "qid": "Q130969",
+   "fame": 0.53,
+   "house": "Capetian dynasty",
+   "description": "King of France from 1285 to 1314 (1268–1314)",
+   "hook": "was called \"the Fair\", crushed the Knights Templar and moved the papacy to Avignon",
+   "known": 0.4,
+   "kind": "french"
+  },
+  {
+   "label": "Humayun",
+   "qid": "Q486188",
+   "fame": 0.529,
+   "house": "Mughal dynasty",
+   "description": "second Mughal emperor from 1530 to 1540 and 1555 to 1556",
+   "hook": "lost his throne to Sher Shah Suri but regained it, and left a famed tomb in Delhi",
+   "known": 0.2,
+   "kind": "asian-imperial"
+  },
+  {
+   "label": "Pepin the Short",
+   "qid": "Q81212",
+   "fame": 0.528,
+   "house": "Carolingian dynasty",
+   "description": "King of the Franks from 751 to 768",
+   "hook": "was the father of Charlemagne and became the first of a new royal line by deposing the last Merovingian",
+   "known": 0.2,
+   "kind": "medieval-european"
+  },
+  {
+   "label": "Pedro II of Brazil",
+   "qid": "Q156774",
+   "fame": 0.521,
+   "house": "House of Braganza",
+   "description": "2nd and final Emperor of Brazil (r. 1831–89)",
+   "hook": "was a scholarly ruler who loved science and was overthrown in a military coup, ending the monarchy",
+   "known": 0.2,
+   "kind": "spanish-iberian"
+  },
+  {
+   "label": "Christina of Sweden",
+   "qid": "Q52937",
+   "fame": 0.52,
+   "house": "House of Vasa",
+   "description": "Queen of Sweden, ruled from 1632 until abdication in 1654 (1626–1689)",
+   "hook": "abdicated, converted to Catholicism and moved to Rome, and was a patron of the philosopher Descartes",
+   "known": 0.2,
+   "kind": "scandinavian"
+  },
+  {
+   "label": "Charles IV",
+   "qid": "Q155669",
+   "fame": 0.519,
+   "house": "House of Luxembourg",
+   "description": "Holy Roman Emperor",
+   "hook": "issued the Golden Bull and founded the oldest university in central Europe, in Prague",
+   "known": 0.2,
+   "kind": "medieval-european"
+  },
+  {
+   "label": "Louis the Pious",
+   "qid": "Q43974",
+   "fame": 0.511,
+   "house": "Carolingian dynasty",
+   "description": "King of the Franks",
+   "hook": "was the only surviving legitimate son of Charlemagne, whose sons fought over his realm",
+   "known": 0.2,
+   "kind": "medieval-european"
+  },
+  {
+   "label": "Mu'awiya I",
+   "qid": "Q181154",
+   "fame": 0.511,
+   "house": "Umayyad dynasty",
+   "description": "founder and first caliph of the Umayyad Caliphate (r. 661–680)",
+   "hook": "founded the first hereditary line of Islamic rulers, with his capital at Damascus",
+   "known": 0.2,
+   "kind": "islamic"
+  },
+  {
+   "label": "Charles the Bald",
+   "qid": "Q71231",
+   "fame": 0.506,
+   "house": "Carolingian dynasty",
+   "description": "King of West Francia from 843 to 877 and Carolingian Emperor from 875 to 877",
+   "hook": "was a grandson of Charlemagne who received the western portion under the Treaty of Verdun",
+   "known": 0.2,
+   "kind": "medieval-european"
+  },
+  {
+   "label": "Heraclius",
+   "qid": "Q41852",
+   "fame": 0.504,
+   "house": "Heraclian dynasty",
+   "description": "Byzantine emperor from 610 to 641",
+   "hook": "defeated the Persians and recovered the True Cross, then lost Egypt and Syria to Arab armies",
+   "known": 0.4,
+   "kind": "byzantine-medieval"
+  },
+  {
+   "label": "Otto I the Great",
+   "qid": "Q43915",
+   "fame": 0.504,
+   "house": "Ottonian dynasty",
+   "description": "Holy Roman Emperor from 962 to 973",
+   "hook": "defeated the Magyars at Lechfeld and was crowned in Rome by the pope in 962",
+   "known": 0.2,
+   "kind": "medieval-european"
+  },
+  {
+   "label": "Hugh Capet of France",
+   "qid": "Q159575",
+   "fame": 0.501,
+   "house": "Capetian dynasty",
+   "description": "King of the Franks",
+   "hook": "was elected king after the last Carolingian died, founding a line that ruled for centuries",
+   "known": 0.2,
+   "kind": "french"
+  },
+  {
+   "label": "Louis XI of France",
+   "qid": "Q8058",
+   "fame": 0.498,
+   "house": "House of Valois",
+   "description": "king of France from 1461 to 1483 (1423–1483)",
+   "hook": "was nicknamed \"the Spider King\" for his scheming, and outmaneuvered the Duke of Burgundy",
+   "known": 0.2,
+   "kind": "french"
+  },
+  {
+   "label": "Vladimir the Great",
+   "qid": "Q14974",
+   "fame": 0.495,
+   "house": "Rurikids",
+   "description": "Grand Prince of Kiev",
+   "hook": "chose Orthodox Christianity for his people and had them baptized in the Dnieper",
+   "known": 0.2,
+   "kind": "russian"
+  },
+  {
+   "label": "Harun al-Rashid",
+   "qid": "Q131002",
+   "fame": 0.48,
+   "house": "Abbasids",
+   "description": "5th Abbasid caliph (r. 786–809)",
+   "hook": "is the caliph who ruled from Baghdad's golden age and appears in the tales of the Arabian Nights",
+   "known": 0.2,
+   "kind": "islamic"
+  }
+ ]
+}

@@ -1,0 +1,1258 @@
+{
+ "id": "table.music.famous-musicians-instruments",
+ "kind": "table",
+ "title": "Famous musicians and the instrument they play",
+ "genre": "arts-entertainment",
+ "category": "music",
+ "topic": "instruments",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?instLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?i) AS ?inst) (COUNT(DISTINCT ?i) AS ?nI) WHERE { { SELECT ?item ?sitelinks WHERE { ?item wdt:P31 wd:Q5 ; wdt:P106 wd:Q639669 ; wdt:P1303 [] ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks >= 50) } ORDER BY DESC(?sitelinks) LIMIT 1500 } ?item wdt:P1303 ?i . ?i wdt:P279+ wd:Q34379 . FILTER(?i != wd:Q17172850) } GROUP BY ?item ?sitelinks } hint:Prior hint:runFirst true . FILTER(?nI = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 524",
+  "attribution": null,
+  "fetchedAt": "2026-09-29T13:48:43.748Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-29T13:48:43.748Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "instrument",
+   "label": "Instrument",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "person",
+  "many": "people",
+  "wildcard": "person",
+  "exclude": [
+   {
+    "qid": "Q82110",
+    "why": "Allegations make him a poor fit for a kid-safe fun table"
+   },
+   {
+    "qid": "Q47878",
+    "why": "Violent-death and drug story, left out under when-in-doubt-remove"
+   }
+  ],
+  "hookAsk": "Which person {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "instrument": {
+    "role": "link",
+    "pick": "Which instrument does {label} play?",
+    "statement": "{label} plays {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Bruce Willis",
+   "qid": "Q2680",
+   "fame": 0.817,
+   "instrument": "harmonica",
+   "description": "American actor (born 1955)",
+   "hook": "starred as an action hero in Die Hard and also fronts a blues band",
+   "known": 0.4,
+   "kind": "actor-musician"
+  },
+  {
+   "label": "Clint Eastwood",
+   "qid": "Q43203",
+   "fame": 0.807,
+   "instrument": "piano",
+   "description": "American actor and film director (born 1930)",
+   "hook": "squinted through Dirty Harry and Westerns, then became an Oscar-winning director",
+   "known": 0.6,
+   "kind": "actor-musician"
+  },
+  {
+   "label": "Harry Styles",
+   "qid": "Q3626966",
+   "fame": 0.775,
+   "instrument": "guitar",
+   "description": "English singer, songwriter and actor",
+   "hook": "rose to fame in One Direction before a solo career of Watermelon Sugar and As It Was",
+   "known": 0.8,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Kurt Cobain",
+   "qid": "Q8446",
+   "fame": 0.768,
+   "instrument": "guitar",
+   "description": "American rock musician, singer and songwriter (1967–1994)",
+   "hook": "fronted Nirvana and wrote Smells Like Teen Spirit",
+   "known": 0.8,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Zara Larsson",
+   "qid": "Q4177928",
+   "fame": 0.766,
+   "instrument": "piano",
+   "description": "Swedish singer-songwriter (born 1997)",
+   "hook": "is a Swedish pop star behind the hits Lush Life and Never Forget You",
+   "known": 0.6,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Britney Spears",
+   "qid": "Q11975",
+   "fame": 0.743,
+   "instrument": "piano",
+   "description": "American singer, songwriter, actress and model (born 1981)",
+   "hook": "is the pop princess behind Baby One More Time and Toxic",
+   "known": 0.8,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Elton John",
+   "qid": "Q2808",
+   "fame": 0.743,
+   "instrument": "piano",
+   "description": "British singer, songwriter and musician (born 1947)",
+   "hook": "is a flamboyant star who wrote Rocket Man and Your Song and sang at Princess Diana's funeral",
+   "known": 0.8,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Chris Cornell",
+   "qid": "Q270935",
+   "fame": 0.738,
+   "instrument": "guitar",
+   "description": "American musician (1964–2017)",
+   "hook": "fronted Soundgarden and later Audioslave, known for a powerhouse voice",
+   "known": 0.7,
+   "kind": "musician"
+  },
+  {
+   "label": "River Phoenix",
+   "qid": "Q106514",
+   "fame": 0.724,
+   "instrument": "guitar",
+   "description": "American actor and musician (1970–2026",
+   "hook": "played a young Indiana Jones and starred in Stand by Me",
+   "known": 0.4,
+   "kind": "world musician"
+  },
+  {
+   "label": "Yoko Ono",
+   "qid": "Q117012",
+   "fame": 0.72,
+   "instrument": "piano",
+   "description": "Japanese artist and activist based in the United States (born 1933)",
+   "hook": "is an avant-garde artist who married a Beatle and starred in his famous bed-in for peace",
+   "known": 0.6,
+   "kind": "musician"
+  },
+  {
+   "label": "Matthew Broderick",
+   "qid": "Q28755",
+   "fame": 0.714,
+   "instrument": "ukulele",
+   "description": "American actor (born 1962)",
+   "hook": "starred as a teen skipping school in Ferris Bueller's Day Off and voiced adult Simba",
+   "known": 0.6,
+   "kind": "actor-musician"
+  },
+  {
+   "label": "Fred Rogers",
+   "qid": "Q1275768",
+   "fame": 0.711,
+   "instrument": "piano",
+   "description": "American television personality (1928–2003)",
+   "hook": "hosted a gentle children's TV show and asked, Won't you be my neighbor?",
+   "known": 0.6,
+   "kind": "musician"
+  },
+  {
+   "label": "Oscar Isaac",
+   "qid": "Q336788",
+   "fame": 0.71,
+   "instrument": "guitar",
+   "description": "Guatemalan-American actor",
+   "hook": "plays Poe Dameron in Star Wars and starred in Inside Llewyn Davis",
+   "known": 0.4,
+   "kind": "actor-musician"
+  },
+  {
+   "label": "Joe Jonas",
+   "qid": "Q191088",
+   "fame": 0.709,
+   "instrument": "guitar",
+   "description": "American singer, actor and musician",
+   "hook": "is one of three pop-rock brothers who sang Burnin' Up and fronts the band DNCE",
+   "known": 0.7,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Lindsay Lohan",
+   "qid": "Q44903",
+   "fame": 0.704,
+   "instrument": "guitar",
+   "description": "American actress and singer (born 1986)",
+   "hook": "starred in The Parent Trap and Mean Girls as a young actress",
+   "known": 0.6,
+   "kind": "rap artist"
+  },
+  {
+   "label": "Robert Plant",
+   "qid": "Q428223",
+   "fame": 0.701,
+   "instrument": "harmonica",
+   "description": "English musician and lead vocalist of Led Zeppelin",
+   "hook": "was the golden-maned wailing frontman of Led Zeppelin, singing Stairway to Heaven",
+   "known": 0.8,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Quincy Jones",
+   "qid": "Q193645",
+   "fame": 0.7,
+   "instrument": "trumpet",
+   "description": "American record producer and composer (1933–2024)",
+   "hook": "produced Michael Jackson's Thriller and co-organized We Are the World",
+   "known": 0.6,
+   "kind": "composer"
+  },
+  {
+   "label": "Lenny Kravitz",
+   "qid": "Q180224",
+   "fame": 0.695,
+   "instrument": "guitar",
+   "description": "American guitarist and singer (born 1964)",
+   "hook": "is a rock star known for Are You Gonna Go My Way and American Woman",
+   "known": 0.7,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Steve Martin",
+   "qid": "Q16473",
+   "fame": 0.694,
+   "instrument": "banjo",
+   "description": "American comedian, actor, musician and writer (born 1945)",
+   "hook": "is a wild-and-crazy comedian who starred in The Jerk and Father of the Bride",
+   "known": 0.7,
+   "kind": "musician"
+  },
+  {
+   "label": "Adam Levine",
+   "qid": "Q219631",
+   "fame": 0.691,
+   "instrument": "guitar",
+   "description": "American singer (born 1979)",
+   "hook": "fronts Maroon 5 and was a coach on The Voice",
+   "known": 0.7,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Jimmy Fallon",
+   "qid": "Q335680",
+   "fame": 0.691,
+   "instrument": "guitar",
+   "description": "American talk show host and comedian (born 1974)",
+   "hook": "hosts The Tonight Show and is known for lip-sync battles and comedy sketches",
+   "known": 0.7,
+   "kind": "actor-musician"
+  },
+  {
+   "label": "John Lithgow",
+   "qid": "Q311271",
+   "fame": 0.691,
+   "instrument": "banjo",
+   "description": "American actor (born 1945)",
+   "hook": "played the alien in 3rd Rock from the Sun and a villain in Dexter, and voiced Lord Farquaad",
+   "known": 0.6,
+   "kind": "actor-musician"
+  },
+  {
+   "label": "Shania Twain",
+   "qid": "Q131433",
+   "fame": 0.691,
+   "instrument": "guitar",
+   "description": "Canadian country music singer and songwriter (born 1965)",
+   "hook": "is the country-pop star behind Man! I Feel Like a Woman! and That Don't Impress Me Much",
+   "known": 0.7,
+   "kind": "country musician"
+  },
+  {
+   "label": "Ray Charles",
+   "qid": "Q544387",
+   "fame": 0.688,
+   "instrument": "piano",
+   "description": "American singer, pianist and songwriter (1930–2004)",
+   "hook": "was the blind soul legend who sang Georgia on My Mind and I Got a Woman",
+   "known": 0.8,
+   "kind": "soul musician"
+  },
+  {
+   "label": "Anggun",
+   "qid": "Q221310",
+   "fame": 0.686,
+   "instrument": "piano",
+   "description": "Indonesian-born French singer-songwriter and television personality",
+   "hook": "is an Indonesian-born pop singer who found fame in France and judged Asia's Got Talent",
+   "known": 0.6,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Vanessa Hudgens",
+   "qid": "Q123174",
+   "fame": 0.678,
+   "instrument": "guitar",
+   "description": "American actress and singer (born 1988)",
+   "hook": "starred in High School Musical as Gabriella",
+   "known": 0.4,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Troye Sivan",
+   "qid": "Q1362028",
+   "fame": 0.677,
+   "instrument": "piano",
+   "description": "Australian singer-songwriter and actor",
+   "hook": "is a pop singer who had the hit Youth and starred in Boy Erased",
+   "known": 0.7,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Dermot Mulroney",
+   "qid": "Q363386",
+   "fame": 0.671,
+   "instrument": "cello",
+   "description": "American actor",
+   "hook": "starred in My Best Friend's Wedding and Young Guns",
+   "known": 0.4,
+   "kind": "actor-musician"
+  },
+  {
+   "label": "Rita Ora",
+   "qid": "Q229760",
+   "fame": 0.671,
+   "instrument": "piano",
+   "description": "English-Albanian singer and actress",
+   "hook": "is a pop singer known for Hot Right Now and Anywhere, and hosted America's Next Top Model",
+   "known": 0.6,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Lauryn Hill",
+   "qid": "Q214226",
+   "fame": 0.668,
+   "instrument": "guitar",
+   "description": "American singer and rapper (born 1975)",
+   "hook": "fronted the Fugees and won five Grammys for The Miseducation album",
+   "known": 0.7,
+   "kind": "rap artist"
+  },
+  {
+   "label": "Morrissey",
+   "qid": "Q202246",
+   "fame": 0.667,
+   "instrument": "piano",
+   "description": "British singer and songwriter",
+   "hook": "was lead singer of The Smiths, known for a distinctive crooning voice",
+   "known": 0.8,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Roy Orbison",
+   "qid": "Q188426",
+   "fame": 0.666,
+   "instrument": "guitar",
+   "description": "American musician (1936 –1988)",
+   "hook": "sang Oh, Pretty Woman and Crying, always in dark sunglasses",
+   "known": 0.4,
+   "kind": "musician"
+  },
+  {
+   "label": "Post Malone",
+   "qid": "Q21621919",
+   "fame": 0.662,
+   "instrument": "guitar",
+   "description": "American singer and rapper (born 1995)",
+   "hook": "is a tattooed rapper-singer known for Rockstar and Circles",
+   "known": 0.4,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Lou Reed",
+   "qid": "Q189080",
+   "fame": 0.657,
+   "instrument": "guitar",
+   "description": "American rock musician (1942–2013)",
+   "hook": "led the Velvet Underground and later sang Walk on the Wild Side",
+   "known": 0.4,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Donna Summer",
+   "qid": "Q908933",
+   "fame": 0.648,
+   "instrument": "piano",
+   "description": "American singer (1948–2012)",
+   "hook": "was the disco queen who sang Hot Stuff and I Feel Love",
+   "known": 0.7,
+   "kind": "soul musician"
+  },
+  {
+   "label": "Stevie Ray Vaughan",
+   "qid": "Q202937",
+   "fame": 0.647,
+   "instrument": "guitar",
+   "description": "American blues guitarist (1954–1990)",
+   "hook": "was a Texas blues legend who played Pride and Joy and Texas Flood",
+   "known": 0.7,
+   "kind": "blues musician"
+  },
+  {
+   "label": "Enya",
+   "qid": "Q38257",
+   "fame": 0.646,
+   "instrument": "piano",
+   "description": "Irish singer (born 1961)",
+   "hook": "is the Irish singer behind the ethereal hit Orinoco Flow",
+   "known": 0.4,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Jennifer Hudson",
+   "qid": "Q192410",
+   "fame": 0.646,
+   "instrument": "piano",
+   "description": "American singer, actress, model and spokesperson",
+   "hook": "won an Oscar for Dreamgirls after being an American Idol contestant",
+   "known": 0.6,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Vanessa Paradis",
+   "qid": "Q51023",
+   "fame": 0.644,
+   "instrument": "guitar",
+   "description": "French singer, model and actress",
+   "hook": "is a French singer and actress known for Joe le taxi and a long relationship with Johnny Depp",
+   "known": 0.6,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Michael Cera",
+   "qid": "Q309555",
+   "fame": 0.642,
+   "instrument": "bass guitar",
+   "description": "Canadian actor",
+   "hook": "is an awkward-teen actor from Superbad, Juno and Arrested Development",
+   "known": 0.4,
+   "kind": "actor-musician"
+  },
+  {
+   "label": "Flea",
+   "qid": "Q202859",
+   "fame": 0.64,
+   "instrument": "bass guitar",
+   "description": "Australian musician",
+   "hook": "is the shirtless, wildly energetic bassist of the Red Hot Chili Peppers",
+   "known": 0.4,
+   "kind": "musician"
+  },
+  {
+   "label": "Joan Baez",
+   "qid": "Q131725",
+   "fame": 0.639,
+   "instrument": "guitar",
+   "description": "American contemporary folk musician (born 1941)",
+   "hook": "is a folk singer who performed at Woodstock and was linked with Bob Dylan",
+   "known": 0.8,
+   "kind": "folk musician"
+  },
+  {
+   "label": "David Hasselhoff",
+   "qid": "Q201927",
+   "fame": 0.638,
+   "instrument": "guitar",
+   "description": "American actor, singer, producer, and businessman (born 1952)",
+   "hook": "drove KITT in Knight Rider and ran on the beach in Baywatch",
+   "known": 0.6,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Art Garfunkel",
+   "qid": "Q4039",
+   "fame": 0.634,
+   "instrument": "guitar",
+   "description": "American singer (born 1941)",
+   "hook": "was the tall, curly-haired half of a folk duo that sang The Sound of Silence",
+   "known": 0.6,
+   "kind": "folk musician"
+  },
+  {
+   "label": "Frédéric Chopin",
+   "qid": "Q1268",
+   "fame": 0.633,
+   "instrument": "piano",
+   "description": "Polish composer and pianist (1810–1849)",
+   "hook": "was a Romantic composer famous for nocturnes, waltzes and polonaises",
+   "known": 0.8,
+   "kind": "composer"
+  },
+  {
+   "label": "Anni-Frid Lyngstad",
+   "qid": "Q201908",
+   "fame": 0.631,
+   "instrument": "piano",
+   "description": "Swedish singer (born 1945)",
+   "hook": "was one of the two women in ABBA, known as Frida",
+   "known": 0.4,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Faith Hill",
+   "qid": "Q464241",
+   "fame": 0.631,
+   "instrument": "guitar",
+   "description": "American country singer (born 1967)",
+   "hook": "is a country star married to Tim McGraw, known for Breathe and This Kiss",
+   "known": 0.6,
+   "kind": "country musician"
+  },
+  {
+   "label": "Joan Jett",
+   "qid": "Q231106",
+   "fame": 0.631,
+   "instrument": "guitar",
+   "description": "American rock musician",
+   "hook": "fronted the Blackhearts and sang I Love Rock 'n' Roll",
+   "known": 0.7,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Jeff Beck",
+   "qid": "Q192474",
+   "fame": 0.63,
+   "instrument": "guitar",
+   "description": "English guitarist (1944–2023)",
+   "hook": "was a British virtuoso who played with the Yardbirds and won many Grammys",
+   "known": 0.7,
+   "kind": "musician"
+  },
+  {
+   "label": "Little Richard",
+   "qid": "Q82222",
+   "fame": 0.628,
+   "instrument": "piano",
+   "description": "American musician (1932–2020)",
+   "hook": "was the flamboyant rock and roll pioneer who shouted Tutti Frutti and Long Tall Sally",
+   "known": 0.7,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Israel Kamakawiwoʻole",
+   "qid": "Q42180",
+   "fame": 0.627,
+   "instrument": "ukulele",
+   "description": "Hawaiian singer (1959–1997)",
+   "hook": "sang a gentle medley of Somewhere Over the Rainbow and What a Wonderful World",
+   "known": 0.6,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Jerry Lee Lewis",
+   "qid": "Q202729",
+   "fame": 0.627,
+   "instrument": "piano",
+   "description": "American rock 'n' roll musician (1935–2022)",
+   "hook": "was the wild rock and roll pioneer nicknamed The Killer who sang Great Balls of Fire",
+   "known": 0.6,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Nusrat Fateh Ali Khan",
+   "qid": "Q299073",
+   "fame": 0.626,
+   "instrument": "Indian harmonium",
+   "description": "Pakistani musician, primarily a singer of qawwali (1948-1997)",
+   "hook": "was a Pakistani singer of devotional qawwali, called the Shahenshah of Qawwali",
+   "known": 0.6,
+   "kind": "world musician"
+  },
+  {
+   "label": "Camila Cabello",
+   "qid": "Q18810940",
+   "fame": 0.625,
+   "instrument": "guitar",
+   "description": "Cuban-Mexican-American singer",
+   "hook": "left Fifth Harmony and had the solo hit Havana",
+   "known": 0.4,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Jason Derulo",
+   "qid": "Q243639",
+   "fame": 0.624,
+   "instrument": "piano",
+   "description": "American singer-songwriter",
+   "hook": "is a singer whose stage name is sung at the start of hits like Whatcha Say and Talk Dirty",
+   "known": 0.6,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Julio Iglesias",
+   "qid": "Q122003",
+   "fame": 0.622,
+   "instrument": "guitar",
+   "description": "Spanish singer and lawyer (born 1943)",
+   "hook": "is a Spanish crooner who has sold over 300 million records, singing To All the Girls I've Loved Before",
+   "known": 0.6,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Lemmy",
+   "qid": "Q309926",
+   "fame": 0.621,
+   "instrument": "bass guitar",
+   "description": "British rock musician (1945–2015)",
+   "hook": "fronted Motorhead, known for a gravelly voice and the song Ace of Spades",
+   "known": 0.6,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Nina Simone",
+   "qid": "Q174957",
+   "fame": 0.617,
+   "instrument": "piano",
+   "description": "American singer, songwriter and pianist and civil rights activist (1933–2003)",
+   "hook": "was the High Priestess of Soul who sang Feeling Good and I Put a Spell on You",
+   "known": 0.8,
+   "kind": "soul musician"
+  },
+  {
+   "label": "Charlotte Gainsbourg",
+   "qid": "Q276005",
+   "fame": 0.612,
+   "instrument": "piano",
+   "description": "French and British actress and singer (born 1971)",
+   "hook": "is an actress and singer, the daughter of a famous French singer and an English actress",
+   "known": 0.6,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Lars Ulrich",
+   "qid": "Q106193",
+   "fame": 0.611,
+   "instrument": "drum kit",
+   "description": "Danish musician (born 1963)",
+   "hook": "co-founded Metallica and pounds out its thunderous beats",
+   "known": 0.8,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Bob Geldof",
+   "qid": "Q216608",
+   "fame": 0.604,
+   "instrument": "guitar",
+   "description": "Irish singer-songwriter and political activist (born 1951)",
+   "hook": "fronted the Boomtown Rats and organized the Live Aid concerts",
+   "known": 0.6,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Ravi Shankar",
+   "qid": "Q103774",
+   "fame": 0.604,
+   "instrument": "sitar",
+   "description": "Indian sitar player (1920–2012)",
+   "hook": "is the Indian master who taught George Harrison and popularized Indian classical music in the West",
+   "known": 0.7,
+   "kind": "classical musician"
+  },
+  {
+   "label": "Rick Astley",
+   "qid": "Q219237",
+   "fame": 0.602,
+   "instrument": "guitar",
+   "description": "British singer",
+   "hook": "topped the charts with a song about never giving you up, spawning an internet prank",
+   "known": 0.4,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Michael Bublé",
+   "qid": "Q153694",
+   "fame": 0.601,
+   "instrument": "piano",
+   "description": "Canadian singer, songwriter and actor",
+   "hook": "is a crooner known for swing-style covers and a Christmas album that returns every December",
+   "known": 0.6,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Stuart Sutcliffe",
+   "qid": "Q204218",
+   "fame": 0.6,
+   "instrument": "bass guitar",
+   "description": "Scottish painter and musician better known as the original bass guitarist of the English rock band the Beatles (1940–1962)",
+   "hook": "was the original fourth Beatle who left the band to pursue painting",
+   "known": 0.6,
+   "kind": "rock musician"
+  },
+  {
+   "label": "John Legend",
+   "qid": "Q44857",
+   "fame": 0.598,
+   "instrument": "piano",
+   "description": "American singer-songwriter",
+   "hook": "won an Oscar for the song 'Glory' and sings 'All of Me'",
+   "known": 0.4,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Robert Johnson",
+   "qid": "Q192133",
+   "fame": 0.597,
+   "instrument": "guitar",
+   "description": "American blues singer and guitarist",
+   "hook": "is the blues legend said to have sold his soul at a crossroads",
+   "known": 0.7,
+   "kind": "blues musician"
+  },
+  {
+   "label": "Björn Ulvaeus",
+   "qid": "Q179682",
+   "fame": 0.595,
+   "instrument": "guitar",
+   "description": "Swedish musician; member of ABBA",
+   "hook": "co-wrote 'Dancing Queen' and was one of the male members of a Swedish pop supergroup",
+   "known": 0.8,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Suga",
+   "qid": "Q21075020",
+   "fame": 0.595,
+   "instrument": "piano",
+   "description": "South Korean rapper, singer, record producer and songwriter",
+   "hook": "is a rapper and producer in the K-pop group BTS",
+   "known": 0.6,
+   "kind": "rap artist"
+  },
+  {
+   "label": "Barry White",
+   "qid": "Q213647",
+   "fame": 0.592,
+   "instrument": "piano",
+   "description": "American soul singer (1944–2003)",
+   "hook": "is a deep-voiced soul singer famous for 'Can't Get Enough of Your Love, Babe'",
+   "known": 0.7,
+   "kind": "soul musician"
+  },
+  {
+   "label": "Robert Trujillo",
+   "qid": "Q213229",
+   "fame": 0.592,
+   "instrument": "bass guitar",
+   "description": "American bass guitarist",
+   "hook": "joined Metallica after playing with Ozzy Osbourne and Suicidal Tendencies",
+   "known": 0.8,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Toni Braxton",
+   "qid": "Q155412",
+   "fame": 0.591,
+   "instrument": "piano",
+   "description": "American singer (born 1967)",
+   "hook": "is a contralto R&B singer known for 'Un-Break My Heart'",
+   "known": 0.7,
+   "kind": "soul musician"
+  },
+  {
+   "label": "Laurie Anderson",
+   "qid": "Q235066",
+   "fame": 0.589,
+   "instrument": "violin",
+   "description": "American artist and musician (born 1947)",
+   "hook": "is an experimental artist whose 'O Superman' was an unlikely hit, and who was married to Lou Reed",
+   "known": 0.6,
+   "kind": "musician"
+  },
+  {
+   "label": "Marie Fredriksson",
+   "qid": "Q184841",
+   "fame": 0.586,
+   "instrument": "piano",
+   "description": "Swedish singer, songwriter, pianist, and lead vocalist of pop-rock duo Roxette (1958–2019)",
+   "hook": "was the lead voice of the Swedish duo behind 'It Must Have Been Love'",
+   "known": 0.6,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Melanie Martinez",
+   "qid": "Q16211162",
+   "fame": 0.585,
+   "instrument": "guitar",
+   "description": "American singer-songwriter (born 1995)",
+   "hook": "rose to fame on The Voice and wrote the album 'Cry Baby'",
+   "known": 0.4,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Asha Bhosle",
+   "qid": "Q38393",
+   "fame": 0.584,
+   "instrument": "guitar",
+   "description": "Indian playback singer (1933–2026)",
+   "hook": "is a playback singer who recorded thousands of songs for Bollywood films",
+   "known": 0.6,
+   "kind": "world musician"
+  },
+  {
+   "label": "Etta James",
+   "qid": "Q182725",
+   "fame": 0.579,
+   "instrument": "guitar",
+   "description": "American singer (1938–2012)",
+   "hook": "sang the timeless ballad 'At Last'",
+   "known": 0.7,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Charlie Watts",
+   "qid": "Q216051",
+   "fame": 0.575,
+   "instrument": "drum kit",
+   "description": "British drummer (1941–2021)",
+   "hook": "kept the beat for the Rolling Stones for decades",
+   "known": 0.4,
+   "kind": "musician"
+  },
+  {
+   "label": "Giorgio Moroder",
+   "qid": "Q312674",
+   "fame": 0.574,
+   "instrument": "synthesizer",
+   "description": "Italian record producer and composer (born 1940)",
+   "hook": "is the Italian producer who pioneered disco with Donna Summer and scored 'Top Gun'",
+   "known": 0.7,
+   "kind": "composer"
+  },
+  {
+   "label": "Ritchie Blackmore",
+   "qid": "Q192183",
+   "fame": 0.574,
+   "instrument": "guitar",
+   "description": "British guitarist",
+   "hook": "wrote the riff to 'Smoke on the Water' as a member of Deep Purple",
+   "known": 0.4,
+   "kind": "musician"
+  },
+  {
+   "label": "Ella Fitzgerald",
+   "qid": "Q1768",
+   "fame": 0.573,
+   "instrument": "piano",
+   "description": "American jazz singer (1917–1996)",
+   "hook": "was the First Lady of Song, known for scat singing and songbook albums",
+   "known": 0.8,
+   "kind": "jazz musician"
+  },
+  {
+   "label": "Pete Best",
+   "qid": "Q207335",
+   "fame": 0.572,
+   "instrument": "drum kit",
+   "description": "British musician, former member of the Beatles",
+   "hook": "was replaced in the Beatles just before they became global superstars",
+   "known": 0.6,
+   "kind": "musician"
+  },
+  {
+   "label": "Petula Clark",
+   "qid": "Q236212",
+   "fame": 0.569,
+   "instrument": "piano",
+   "description": "British singer and actress",
+   "hook": "topped charts in the 1960s with 'Downtown'",
+   "known": 0.4,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Duke Ellington",
+   "qid": "Q4030",
+   "fame": 0.568,
+   "instrument": "piano",
+   "description": "American jazz pianist and composer (1899–1974)",
+   "hook": "led a big band at the Cotton Club and wrote 'Take the A Train'-era jazz standards",
+   "known": 0.8,
+   "kind": "composer"
+  },
+  {
+   "label": "Steve Vai",
+   "qid": "Q193397",
+   "fame": 0.566,
+   "instrument": "guitar",
+   "description": "American guitarist",
+   "hook": "is a virtuoso rocker who played with Frank Zappa and David Lee Roth",
+   "known": 0.4,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Natalie Cole",
+   "qid": "Q231942",
+   "fame": 0.565,
+   "instrument": "piano",
+   "description": "American singer (1950–2015)",
+   "hook": "sang 'Unforgettable' in a famous duet with her late father, a jazz crooner",
+   "known": 0.6,
+   "kind": "jazz musician"
+  },
+  {
+   "label": "Cole Porter",
+   "qid": "Q215120",
+   "fame": 0.554,
+   "instrument": "piano",
+   "description": "American composer and songwriter (1891–1964)",
+   "hook": "wrote 'Night and Day' and 'Anything Goes' for Broadway",
+   "known": 0.6,
+   "kind": "composer"
+  },
+  {
+   "label": "Glenn Miller",
+   "qid": "Q103651",
+   "fame": 0.554,
+   "instrument": "trombone",
+   "description": "American band leader, arranger, and composer (1904–1944)",
+   "hook": "led a big band famous for 'In the Mood' and vanished on a wartime flight over the Channel",
+   "known": 0.6,
+   "kind": "composer"
+  },
+  {
+   "label": "Jordin Sparks",
+   "qid": "Q215300",
+   "fame": 0.55,
+   "instrument": "guitar",
+   "description": "American singer",
+   "hook": "won American Idol as a teenager and sang 'No Air'",
+   "known": 0.4,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Władysław Szpilman",
+   "qid": "Q157176",
+   "fame": 0.547,
+   "instrument": "piano",
+   "description": "(1911-2000) Polish pianist, composer, Holocaust survivor",
+   "hook": "survived the Warsaw Ghetto and inspired the film The Pianist",
+   "known": 0.6,
+   "kind": "composer"
+  },
+  {
+   "label": "Kim Wilde",
+   "qid": "Q1790",
+   "fame": 0.545,
+   "instrument": "piano",
+   "description": "English pop singer (born 1960)",
+   "hook": "sang the new-wave hit 'Kids in America'",
+   "known": 0.4,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Glynis Johns",
+   "qid": "Q272579",
+   "fame": 0.542,
+   "instrument": "piano",
+   "description": "British actress (1923–2024)",
+   "hook": "played the suffragette mother in Mary Poppins",
+   "known": 0.4,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Thelonious Monk",
+   "qid": "Q109612",
+   "fame": 0.542,
+   "instrument": "piano",
+   "description": "American jazz pianist and composer (1917–1982)",
+   "hook": "is a jazz pioneer known for quirky angular style and the standard 'Round Midnight'",
+   "known": 0.6,
+   "kind": "composer"
+  },
+  {
+   "label": "Suzanne Vega",
+   "qid": "Q236112",
+   "fame": 0.538,
+   "instrument": "guitar",
+   "description": "American singer-songwriter",
+   "hook": "sang 'Luka' and 'Tom's Diner'",
+   "known": 0.4,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Brad Delson",
+   "qid": "Q19199",
+   "fame": 0.533,
+   "instrument": "guitar",
+   "description": "American guitarist and rock musician",
+   "hook": "is a founding member of Linkin Park",
+   "known": 0.4,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Gustav Holst",
+   "qid": "Q200867",
+   "fame": 0.526,
+   "instrument": "trombone",
+   "description": "British composer (1874–1934)",
+   "hook": "composed the orchestral suite 'The Planets'",
+   "known": 0.4,
+   "kind": "composer"
+  },
+  {
+   "label": "Irving Berlin",
+   "qid": "Q128746",
+   "fame": 0.523,
+   "instrument": "piano",
+   "description": "American composer and lyricist (1888–1989)",
+   "hook": "wrote 'White Christmas' and 'God Bless America'",
+   "known": 0.4,
+   "kind": "composer"
+  },
+  {
+   "label": "Fats Domino",
+   "qid": "Q209586",
+   "fame": 0.514,
+   "instrument": "piano",
+   "description": "American pianist and singer (1928-2017)",
+   "hook": "was a rock and roll pioneer with 'Blueberry Hill' and a New Orleans boogie style",
+   "known": 0.6,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Richard Strauss",
+   "qid": "Q13894",
+   "fame": 0.513,
+   "instrument": "piano",
+   "description": "German composer and orchestra director (1864–1949)",
+   "hook": "composed \"Also sprach Zarathustra\", the fanfare used in Kubrick's space odyssey film",
+   "known": 0.6,
+   "kind": "composer"
+  },
+  {
+   "label": "Ramin Djawadi",
+   "qid": "Q57577",
+   "fame": 0.511,
+   "instrument": "piano",
+   "description": "German score composer (born 1974)",
+   "hook": "composed the theme music for Game of Thrones and Iron Man",
+   "known": 0.4,
+   "kind": "composer"
+  },
+  {
+   "label": "John Cage",
+   "qid": "Q180727",
+   "fame": 0.509,
+   "instrument": "piano",
+   "description": "American avant-garde composer (1912-1992)",
+   "hook": "composed a famous piece consisting of four minutes and thirty-three seconds of silence",
+   "known": 0.6,
+   "kind": "composer"
+  },
+  {
+   "label": "Joe Hisaishi",
+   "qid": "Q275900",
+   "fame": 0.499,
+   "instrument": "piano",
+   "description": "Japanese composer, conductor, pianist",
+   "hook": "composed the music for Studio Ghibli's films by Hayao Miyazaki",
+   "known": 0.6,
+   "kind": "composer"
+  },
+  {
+   "label": "Armin Mueller-Stahl",
+   "qid": "Q164117",
+   "fame": 0.497,
+   "instrument": "violin",
+   "description": "German actor (born 1930)",
+   "hook": "is a German-born actor known for Shine and Avalon and a violinist on the side",
+   "known": 0.6,
+   "kind": "actor-musician"
+  },
+  {
+   "label": "Ben E. King",
+   "qid": "Q356140",
+   "fame": 0.495,
+   "instrument": "piano",
+   "description": "American singer (1938–2015)",
+   "hook": "sang the classic 'Stand by Me'",
+   "known": 0.4,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Juanes",
+   "qid": "Q43189",
+   "fame": 0.487,
+   "instrument": "guitar",
+   "description": "Colombian musician (born 1972)",
+   "hook": "is a Colombian rocker known for 'La Camisa Negra'",
+   "known": 0.4,
+   "kind": "rock musician"
+  },
+  {
+   "label": "Daniel Barenboim",
+   "qid": "Q152768",
+   "fame": 0.483,
+   "instrument": "piano",
+   "description": "Israeli Argentine-born pianist and conductor (born 1942)",
+   "hook": "is a celebrated conductor who led the Chicago Symphony and the Berlin State Opera",
+   "known": 0.6,
+   "kind": "conductor"
+  },
+  {
+   "label": "Béla Bartók",
+   "qid": "Q83326",
+   "fame": 0.482,
+   "instrument": "piano",
+   "description": "Hungarian composer and pianist (1881–1945)",
+   "hook": "composed 'Concerto for Orchestra' and collected folk melodies across Eastern Europe",
+   "known": 0.6,
+   "kind": "composer"
+  },
+  {
+   "label": "Françoise Hardy",
+   "qid": "Q53939",
+   "fame": 0.479,
+   "instrument": "guitar",
+   "description": "French singer (1944–2024)",
+   "hook": "was a French pop icon and 1960s fashion muse known for 'Tous les garçons et les filles'",
+   "known": 0.6,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Ofra Haza",
+   "qid": "Q111087",
+   "fame": 0.478,
+   "instrument": "piano",
+   "description": "Israeli singer (1957–2000)",
+   "hook": "was an Israeli singer nicknamed the Madonna of the East, known for 'Im Nin'alu'",
+   "known": 0.6,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Katie Melua",
+   "qid": "Q156322",
+   "fame": 0.47,
+   "instrument": "guitar",
+   "description": "English-Georgian singer and songwriter",
+   "hook": "is a Georgian-born British singer known for 'Nine Million Bicycles'",
+   "known": 0.6,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Jacques Brel",
+   "qid": "Q1666",
+   "fame": 0.463,
+   "instrument": "guitar",
+   "description": "Belgian singer (1929–1978)",
+   "hook": "wrote 'Ne me quitte pas', a landmark of French chanson",
+   "known": 0.4,
+   "kind": "folk musician"
+  },
+  {
+   "label": "Alla Pugacheva",
+   "qid": "Q80510",
+   "fame": 0.462,
+   "instrument": "piano",
+   "description": "Soviet-Russian singer, composer, and actress",
+   "hook": "was the Russian pop diva known as the Prima Donna",
+   "known": 0.4,
+   "kind": "composer"
+  },
+  {
+   "label": "Maurice Chevalier",
+   "qid": "Q106001",
+   "fame": 0.459,
+   "instrument": "piano",
+   "description": "French singer, actor, and entertainer (1888–1972)",
+   "hook": "was a straw-hat wearing entertainer who sang 'Thank Heaven for Little Girls' in Gigi",
+   "known": 0.6,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Víctor Jara",
+   "qid": "Q125133",
+   "fame": 0.459,
+   "instrument": "guitar",
+   "description": "Chilean teacher, theatre director, poet, singer-songwriter, and political activist (1932-1973)",
+   "hook": "was a Chilean folk singer known for the song 'Te recuerdo Amanda'",
+   "known": 0.6,
+   "kind": "folk musician"
+  },
+  {
+   "label": "Modest Petrovich Mussorgsky",
+   "qid": "Q132682",
+   "fame": 0.457,
+   "instrument": "piano",
+   "description": "Russian composer (1839–1881)",
+   "hook": "composed 'Pictures at an Exhibition' and 'Night on Bald Mountain'",
+   "known": 0.4,
+   "kind": "composer"
+  },
+  {
+   "label": "Birdy",
+   "qid": "Q288525",
+   "fame": 0.456,
+   "instrument": "piano",
+   "description": "British singer",
+   "hook": "is a young singer whose cover of 'Skinny Love' launched her career",
+   "known": 0.7,
+   "kind": "pop singer"
+  },
+  {
+   "label": "Lena Meyer-Landrut",
+   "qid": "Q7013",
+   "fame": 0.452,
+   "instrument": "piano",
+   "description": "German singer (born 1991)",
+   "hook": "won Eurovision for her country with the song 'Satellite'",
+   "known": 0.4,
+   "kind": "country musician"
+  },
+  {
+   "label": "Emir Kusturica",
+   "qid": "Q94882",
+   "fame": 0.451,
+   "instrument": "bass guitar",
+   "description": "Serbian and French film director, screenwriter, writer, actor and musician",
+   "hook": "is a director who won the Palme d'Or twice and plays in a band called No Smoking Orchestra",
+   "known": 0.6,
+   "kind": "musician"
+  },
+  {
+   "label": "Bill Haley",
+   "qid": "Q202319",
+   "fame": 0.45,
+   "instrument": "guitar",
+   "description": "American rock and roll music pioneer (1925–1981)",
+   "hook": "led a band called the Comets and scored an early rock and roll smash about dancing around the clock",
+   "known": 0.4,
+   "kind": "rock musician"
+  }
+ ]
+}

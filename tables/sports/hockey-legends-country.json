@@ -1,0 +1,242 @@
+{
+ "id": "table.sports.hockey-legends-country",
+ "kind": "table",
+ "title": "Famous ice hockey players and the country they represent",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "hockey",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nCountry) WHERE { ?item wdt:P106 wd:Q11774891 ; wdt:P1532 ?c ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 10) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 500 } hint:Prior hint:runFirst true . FILTER(?nCountry = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T15:04:19.001Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T15:04:19.001Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "hockey player",
+  "many": "hockey players",
+  "wildcard": "person",
+  "hookAsk": "Which hockey player {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country does hockey player {label} represent?",
+    "statement": "{label} represents {value} in hockey.",
+    "match": "Match each hockey player to the country they represent.",
+    "odd": "Three of these hockey players represent {value}. Which one doesn't?",
+    "all": "Tap all {n} hockey players who represent {value}.",
+    "reverse": "Which of these hockey players represents {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Wayne Gretzky",
+   "qid": "Q209518",
+   "fame": 0.625,
+   "country": "Canada",
+   "description": "Canadian ice hockey player and coach (born 1961)",
+   "hook": "is nicknamed The Great One and holds the NHL records for career goals and points",
+   "known": 0.95,
+   "kind": "all-time great"
+  },
+  {
+   "label": "Alexander Ovechkin",
+   "qid": "Q311374",
+   "fame": 0.597,
+   "country": "Russia",
+   "description": "Russian ice hockey player",
+   "hook": "passed a legendary record to become the NHL's all-time leading goal scorer, playing for the Capitals",
+   "known": 0.8,
+   "kind": "modern superstar"
+  },
+  {
+   "label": "Sidney Crosby",
+   "qid": "Q311280",
+   "fame": 0.595,
+   "country": "Canada",
+   "description": "Canadian ice hockey player",
+   "hook": "captains the Pittsburgh Penguins and won three Stanley Cups plus Olympic gold medals",
+   "known": 0.8,
+   "kind": "modern superstar"
+  },
+  {
+   "label": "Connor Hellebuyck",
+   "qid": "Q16229026",
+   "fame": 0.588,
+   "country": "United States",
+   "description": "American ice hockey player",
+   "hook": "is a star goaltender for the Winnipeg Jets who has won the Vezina Trophy",
+   "known": 0.2,
+   "kind": "rising player"
+  },
+  {
+   "label": "Cale Makar",
+   "qid": "Q29342308",
+   "fame": 0.559,
+   "country": "Canada",
+   "description": "Canadian ice hockey player",
+   "hook": "is a star defenseman for the Colorado Avalanche who won the Norris Trophy and a Stanley Cup",
+   "known": 0.4,
+   "kind": "current star"
+  },
+  {
+   "label": "Connor McDavid",
+   "qid": "Q2806736",
+   "fame": 0.526,
+   "country": "Canada",
+   "description": "Canadian ice hockey player",
+   "hook": "is a blazing-fast Edmonton Oilers captain and multiple-time league scoring champion",
+   "known": 0.8,
+   "kind": "modern superstar"
+  },
+  {
+   "label": "Auston Matthews",
+   "qid": "Q20090644",
+   "fame": 0.517,
+   "country": "United States",
+   "description": "American ice hockey player",
+   "hook": "is a Toronto Maple Leafs star who scored over 60 goals in a single season",
+   "known": 0.6,
+   "kind": "current star"
+  },
+  {
+   "label": "Mario Lemieux",
+   "qid": "Q316249",
+   "fame": 0.513,
+   "country": "Canada",
+   "description": "Canadian ice hockey player and team owner",
+   "hook": "was a Pittsburgh Penguins superstar who beat cancer and later owned the team",
+   "known": 0.8,
+   "kind": "all-time great"
+  },
+  {
+   "label": "Gordie Howe",
+   "qid": "Q358519",
+   "fame": 0.508,
+   "country": "Canada",
+   "description": "Canadian ice hockey player (1928–2016)",
+   "hook": "was nicknamed Mr. Hockey and played professionally in five different decades",
+   "known": 0.95,
+   "kind": "all-time great"
+  },
+  {
+   "label": "Quinn Hughes",
+   "qid": "Q47492979",
+   "fame": 0.503,
+   "country": "United States",
+   "description": "American ice hockey player (born 1999)",
+   "hook": "is a Norris Trophy-winning defenseman who captains the Vancouver Canucks",
+   "known": 0.2,
+   "kind": "rising player"
+  },
+  {
+   "label": "Jack Hughes",
+   "qid": "Q55614777",
+   "fame": 0.489,
+   "country": "United States",
+   "description": "American ice hockey player (born 2001)",
+   "hook": "was the first overall pick in his draft and is a star centre for the New Jersey Devils",
+   "known": 0.2,
+   "kind": "rising player"
+  },
+  {
+   "label": "Bobby Orr",
+   "qid": "Q348017",
+   "fame": 0.486,
+   "country": "Canada",
+   "description": "Canadian ice hockey player",
+   "hook": "revolutionized the defenseman position and scored the famous Cup-winning goal while flying through the air",
+   "known": 0.8,
+   "kind": "all-time great"
+  },
+  {
+   "label": "Joe Thornton",
+   "qid": "Q434899",
+   "fame": 0.474,
+   "country": "Canada",
+   "description": "Canadian ice hockey centre (born 1979)",
+   "hook": "was a long-time San Jose Sharks centre known for his big beard and playmaking",
+   "known": 0.6,
+   "kind": "modern superstar"
+  },
+  {
+   "label": "Matthew Tkachuk",
+   "qid": "Q21064031",
+   "fame": 0.456,
+   "country": "United States",
+   "description": "American ice hockey player",
+   "hook": "is a gritty Florida Panthers forward who has won back-to-back Stanley Cups",
+   "known": 0.4,
+   "kind": "current star"
+  },
+  {
+   "label": "Evgeni Malkin",
+   "qid": "Q314433",
+   "fame": 0.455,
+   "country": "Russia",
+   "description": "Russian ice hockey player",
+   "hook": "is a longtime Pittsburgh Penguins centre who won the Conn Smythe Trophy and three Stanley Cups",
+   "known": 0.6,
+   "kind": "modern superstar"
+  },
+  {
+   "label": "Phil Kessel",
+   "qid": "Q723395",
+   "fame": 0.454,
+   "country": "United States",
+   "description": "American ice hockey player",
+   "hook": "won two Stanley Cups with Pittsburgh and famously played a huge streak of consecutive games",
+   "known": 0.4,
+   "kind": "current star"
+  },
+  {
+   "label": "P. K. Subban",
+   "qid": "Q27535",
+   "fame": 0.453,
+   "country": "Canada",
+   "description": "Canadian ice hockey player",
+   "hook": "is a flashy defenseman who won a Norris Trophy with the Montreal Canadiens",
+   "known": 0.6,
+   "kind": "current star"
+  },
+  {
+   "label": "Steve Yzerman",
+   "qid": "Q440395",
+   "fame": 0.452,
+   "country": "Canada",
+   "description": "Canadian ice hockey player (born 1965)",
+   "hook": "captained the Detroit Red Wings to three Stanley Cups and later became their general manager",
+   "known": 0.8,
+   "kind": "all-time great"
+  }
+ ]
+}

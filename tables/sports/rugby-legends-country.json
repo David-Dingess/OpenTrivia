@@ -1,0 +1,232 @@
+{
+ "id": "table.sports.rugby-legends-country",
+ "kind": "table",
+ "title": "Famous rugby players and the country they represent",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "rugby",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?cLabel) AS ?rawTeam) (COUNT(DISTINCT ?team) AS ?nTeam) WHERE { ?item wdt:P106 wd:Q14089670 ; wdt:P54 ?team ; wikibase:sitelinks ?sitelinks . ?team wdt:P31 wd:Q58840819 . ?team rdfs:label ?cLabel . FILTER(lang(?cLabel)=\"en\") FILTER(?sitelinks > 5) FILTER(!CONTAINS(?cLabel, \"amateur\") && !CONTAINS(?cLabel, \"schoolboy\") && !CONTAINS(?cLabel, \"President's XV\") && !CONTAINS(?cLabel, \"Club XV\") && !CONTAINS(?cLabel, \"Universities\") && !CONTAINS(?cLabel, \"lympic\") && !CONTAINS(?cLabel, \" at the \") && !CONTAINS(?cLabel, \"squad\") && !CONTAINS(?cLabel, \" B \") && !CONTAINS(?cLabel, \"U19\") && !CONTAINS(?cLabel, \"U20\") && !CONTAINS(?cLabel, \"U21\")) } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 1500 } hint:Prior hint:runFirst true . FILTER(?nTeam = 1) BIND(REPLACE(?rawTeam, \" (men.s |women.s )?national rugby union team$\", \"\") AS ?countryLabel) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 459",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T15:22:28.293Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T15:22:28.293Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "rugby player",
+  "many": "rugby players",
+  "wildcard": "person",
+  "hookAsk": "Which rugby player {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country does rugby player {label} represent?",
+    "statement": "{label} represents {value} in rugby.",
+    "match": "Match each rugby player to the country they represent.",
+    "odd": "Three of these rugby players represent {value}. Which one doesn't?",
+    "all": "Tap all {n} rugby players who represent {value}.",
+    "reverse": "Which of these rugby players represents {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Jonah Lomu",
+   "qid": "Q363717",
+   "fame": 0.567,
+   "country": "New Zealand",
+   "description": "New Zealand rugby union player (1975–2015)",
+   "hook": "was a devastating winger whose bulldozing runs made him rugby's first global superstar",
+   "known": 0.6,
+   "kind": "legend"
+  },
+  {
+   "label": "Eben Etzebeth",
+   "qid": "Q3046794",
+   "fame": 0.546,
+   "country": "South Africa",
+   "description": "South African rugby union footballer",
+   "hook": "is a towering lock who has won multiple World Cups with the Springboks",
+   "known": 0.2,
+   "kind": "professional"
+  },
+  {
+   "label": "Siya Kolisi",
+   "qid": "Q7533339",
+   "fame": 0.536,
+   "country": "South Africa",
+   "description": "South African rugby union footballer",
+   "hook": "became the first Black captain of the Springboks and lifted the World Cup trophy",
+   "known": 0.6,
+   "kind": "star"
+  },
+  {
+   "label": "Joe Marler",
+   "qid": "Q6211121",
+   "fame": 0.532,
+   "country": "England",
+   "description": "English rugby union footballer",
+   "hook": "is a Harlequins prop who co-hosts the podcast The Good, the Bad and the Rugby",
+   "known": 0.2,
+   "kind": "professional"
+  },
+  {
+   "label": "Ben Foden",
+   "qid": "Q971098",
+   "fame": 0.531,
+   "country": "England",
+   "description": "English rugby union footballer",
+   "hook": "is a full-back who married a singer from the pop group The Saturdays",
+   "known": 0.2,
+   "kind": "professional"
+  },
+  {
+   "label": "Ryan Jones",
+   "qid": "Q1386825",
+   "fame": 0.527,
+   "country": "Wales",
+   "description": "Welsh rugby union footballer",
+   "hook": "captained his side to a Grand Slam as a back-row forward",
+   "known": 0.2,
+   "kind": "professional"
+  },
+  {
+   "label": "Mike Tindall",
+   "qid": "Q1386944",
+   "fame": 0.507,
+   "country": "England",
+   "description": "English rugby union player",
+   "hook": "is a World Cup-winning centre who married the Queen's granddaughter",
+   "known": 0.4,
+   "kind": "notable"
+  },
+  {
+   "label": "Rassie Erasmus",
+   "qid": "Q2021513",
+   "fame": 0.502,
+   "country": "South Africa",
+   "description": "South African rugby union footballer and coach",
+   "hook": "is a former flanker turned coach who guided the Springboks to World Cup glory",
+   "known": 0.4,
+   "kind": "notable"
+  },
+  {
+   "label": "Lewis Moody",
+   "qid": "Q433551",
+   "fame": 0.498,
+   "country": "England",
+   "description": "English rugby union player",
+   "hook": "is a flanker nicknamed Mad Dog who helped win a World Cup",
+   "known": 0.2,
+   "kind": "professional"
+  },
+  {
+   "label": "Ardie Savea",
+   "qid": "Q4788055",
+   "fame": 0.497,
+   "country": "New Zealand",
+   "description": "New Zealand rugby union player",
+   "hook": "is an All Blacks number eight who was named World Rugby Player of the Year",
+   "known": 0.4,
+   "kind": "notable"
+  },
+  {
+   "label": "Beauden Barrett",
+   "qid": "Q4877438",
+   "fame": 0.482,
+   "country": "New Zealand",
+   "description": "New Zealand rugby union player",
+   "hook": "is an All Blacks fly-half who was named World Rugby Player of the Year twice in a row",
+   "known": 0.6,
+   "kind": "star"
+  },
+  {
+   "label": "Pieter-Steph du Toit",
+   "qid": "Q7192749",
+   "fame": 0.474,
+   "country": "South Africa",
+   "description": "South African rugby union footballer",
+   "hook": "is a tireless flanker named World Rugby Player of the Year in a World Cup-winning side",
+   "known": 0.2,
+   "kind": "professional"
+  },
+  {
+   "label": "Jonny Wilkinson",
+   "qid": "Q318920",
+   "fame": 0.472,
+   "country": "England",
+   "description": "English rugby union footballer",
+   "hook": "kicked a last-minute drop goal to win a World Cup final",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Dan Carter",
+   "qid": "Q726199",
+   "fame": 0.463,
+   "country": "New Zealand",
+   "description": "New Zealand rugby union player",
+   "hook": "is an All Blacks fly-half who won World Rugby Player of the Year three times",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Faf de Klerk",
+   "qid": "Q5484684",
+   "fame": 0.46,
+   "country": "South Africa",
+   "description": "South African rugby union footballer",
+   "hook": "is a feisty scrum-half with a famous blond mullet who has won World Cups",
+   "known": 0.2,
+   "kind": "professional"
+  },
+  {
+   "label": "Lawrence Dallaglio",
+   "qid": "Q1381928",
+   "fame": 0.459,
+   "country": "England",
+   "description": "English rugby union footballer",
+   "hook": "is a back-row forward who won a World Cup and captained his country",
+   "known": 0.8,
+   "kind": "legend"
+  },
+  {
+   "label": "Richie McCaw",
+   "qid": "Q726148",
+   "fame": 0.456,
+   "country": "New Zealand",
+   "description": "New Zealand international rugby union player",
+   "hook": "captained the All Blacks to back-to-back World Cup victories",
+   "known": 0.8,
+   "kind": "legend"
+  }
+ ]
+}

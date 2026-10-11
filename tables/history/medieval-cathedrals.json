@@ -1,0 +1,269 @@
+{
+ "id": "table.history.medieval-cathedrals",
+ "kind": "table",
+ "title": "Famous medieval cathedrals by country",
+ "genre": "society",
+ "category": "history",
+ "topic": "middle-ages",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?countryLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?country) (COUNT(DISTINCT ?c) AS ?nC) (MIN(?d) AS ?inc) WHERE { ?item wdt:P31/wdt:P279* wd:Q2977 ; wdt:P571 ?d ; wdt:P17 ?c ; wikibase:sitelinks ?sl . FILTER(?sl >= 8) } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nC = 1) FILTER(YEAR(?inc) >= 500 && YEAR(?inc) < 1520) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-28T16:17:08.844Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-28T16:17:08.844Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "medieval church",
+  "many": "medieval churches",
+  "wildcard": "place",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each medieval church to its country.",
+    "odd": "Three of these medieval churches are in {value}. Which one isn't?",
+    "all": "Tap all {n} medieval churches in {value}."
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Cologne Cathedral",
+   "qid": "Q4176",
+   "fame": 0.615,
+   "country": "Germany",
+   "description": "Roman-Catholic cathedral in Cologne, Germany",
+   "hook": "is a twin-spired Gothic giant that took centuries to finish and survived heavy bombing in World War II",
+   "known": 0.8,
+   "kind": "german"
+  },
+  {
+   "label": "Notre-Dame de Paris",
+   "qid": "Q2981",
+   "fame": 0.6,
+   "country": "France",
+   "description": "cathedral in Paris",
+   "hook": "is a Gothic landmark on an island in the Seine, famed for its gargoyles and a devastating fire",
+   "known": 0.95,
+   "kind": "french"
+  },
+  {
+   "label": "Westminster Abbey",
+   "qid": "Q5933",
+   "fame": 0.598,
+   "country": "United Kingdom",
+   "description": "Gothic abbey church in London, England, UK",
+   "hook": "is a Gothic church beside the Thames where monarchs are crowned and many are buried",
+   "known": 0.8,
+   "kind": "english"
+  },
+  {
+   "label": "Florence Cathedral",
+   "qid": "Q191739",
+   "fame": 0.56,
+   "country": "Italy",
+   "description": "13th-century cathedral in Florence, Italy",
+   "hook": "is topped by a huge red-tiled dome designed by Brunelleschi",
+   "known": 0.8,
+   "kind": "italian"
+  },
+  {
+   "label": "Milan Cathedral",
+   "qid": "Q18068",
+   "fame": 0.548,
+   "country": "Italy",
+   "description": "cathedral church of Milan, Italy",
+   "hook": "is a marble Gothic giant with a forest of spires and thousands of statues",
+   "known": 0.6,
+   "kind": "italian"
+  },
+  {
+   "label": "Mosque-Cathedral of Cordoba",
+   "qid": "Q33200",
+   "fame": 0.511,
+   "country": "Spain",
+   "description": "cathedral (former mosque) in Cordoba, Spain",
+   "hook": "is a former Islamic house of worship with a forest of red-and-white striped arches",
+   "known": 0.4,
+   "kind": "spanish"
+  },
+  {
+   "label": "Lincoln Cathedral",
+   "qid": "Q390169",
+   "fame": 0.505,
+   "country": "United Kingdom",
+   "description": "cathedral located in Lincoln in England",
+   "hook": "was once the tallest building in the world, thanks to a spire that later collapsed",
+   "known": 0.4,
+   "kind": "english"
+  },
+  {
+   "label": "Canterbury Cathedral",
+   "qid": "Q29265",
+   "fame": 0.501,
+   "country": "United Kingdom",
+   "description": "cathedral in Canterbury, Kent, England, founded in 597",
+   "hook": "is the seat of the head of the Church of England and the site of Thomas Becket's murder",
+   "known": 0.6,
+   "kind": "english"
+  },
+  {
+   "label": "Salisbury Cathedral",
+   "qid": "Q390150",
+   "fame": 0.482,
+   "country": "United Kingdom",
+   "description": "church of England cathedral in Salisbury, England, UK",
+   "hook": "has the tallest church spire in England and houses a famous original copy of the Magna Carta",
+   "known": 0.4,
+   "kind": "english"
+  },
+  {
+   "label": "York Minster",
+   "qid": "Q252575",
+   "fame": 0.479,
+   "country": "United Kingdom",
+   "description": "cathedral of York, North Yorkshire, England, UK",
+   "hook": "is one of the largest Gothic buildings in northern Europe, known for its huge medieval stained glass",
+   "known": 0.4,
+   "kind": "english"
+  },
+  {
+   "label": "St. Stephen's Cathedral",
+   "qid": "Q5943",
+   "fame": 0.478,
+   "country": "Austria",
+   "description": "church in Vienna, Austria",
+   "hook": "is a Gothic landmark with a colorful patterned tile roof and a towering south spire",
+   "known": 0.2,
+   "kind": "austrian"
+  },
+  {
+   "label": "St Mark's Basilica",
+   "qid": "Q172988",
+   "fame": 0.477,
+   "country": "Italy",
+   "description": "church in Venice, Italy",
+   "hook": "is a Byzantine-style church with golden mosaics and four bronze horses, beside the Doge's Palace",
+   "known": 0.6,
+   "kind": "italian"
+  },
+  {
+   "label": "Nidaros Cathedral",
+   "qid": "Q215023",
+   "fame": 0.476,
+   "country": "Norway",
+   "description": "cathedral in Trondheim, Norway",
+   "hook": "is the northernmost medieval church of its kind and the burial place of a Viking king turned saint",
+   "known": 0.2,
+   "kind": "norwegian"
+  },
+  {
+   "label": "Basilica of Saint-Denis",
+   "qid": "Q184407",
+   "fame": 0.474,
+   "country": "France",
+   "description": "basilica located in Seine-Saint-Denis, in France",
+   "hook": "is often called the birthplace of Gothic architecture and holds the tombs of French kings",
+   "known": 0.4,
+   "kind": "french"
+  },
+  {
+   "label": "Cathedral of Our Lady of Strasbourg",
+   "qid": "Q745460",
+   "fame": 0.473,
+   "country": "France",
+   "description": "cathedral located in Bas-Rhin, in France",
+   "hook": "has a single soaring spire and was the world's tallest building for over two centuries",
+   "known": 0.4,
+   "kind": "french"
+  },
+  {
+   "label": "Seville Cathedral",
+   "qid": "Q231606",
+   "fame": 0.464,
+   "country": "Spain",
+   "description": "Catholic Cathedral in Seville (Formerly a Mosque), Spain",
+   "hook": "is the largest Gothic church in the world and holds the tomb of Christopher Columbus",
+   "known": 0.4,
+   "kind": "spanish"
+  },
+  {
+   "label": "Notre-Dame de Chartres",
+   "qid": "Q180274",
+   "fame": 0.463,
+   "country": "France",
+   "description": "medieval Catholic cathedral in Chartres, France",
+   "hook": "is renowned for its medieval stained glass and a labyrinth set into the floor",
+   "known": 0.6,
+   "kind": "french"
+  },
+  {
+   "label": "Winchester Cathedral",
+   "qid": "Q476529",
+   "fame": 0.456,
+   "country": "United Kingdom",
+   "description": "cathedral in Winchester, Hampshire, England, UK",
+   "hook": "has one of the longest naves in Europe and is the resting place of novelist Jane Austen",
+   "known": 0.4,
+   "kind": "english"
+  },
+  {
+   "label": "Reims Cathedral",
+   "qid": "Q206823",
+   "fame": 0.455,
+   "country": "France",
+   "description": "Roman Catholic cathedral of Reims in France",
+   "hook": "is where nearly every French king was crowned, including after Joan of Arc's campaign",
+   "known": 0.4,
+   "kind": "french"
+  },
+  {
+   "label": "Bayeux Cathedral",
+   "qid": "Q1636244",
+   "fame": 0.451,
+   "country": "France",
+   "description": "cathedral located in Calvados, in France",
+   "hook": "is a Norman-Gothic landmark in the town famous for a long embroidered tapestry",
+   "known": 0.2,
+   "kind": "french"
+  },
+  {
+   "label": "Rouen Cathedral",
+   "qid": "Q476516",
+   "fame": 0.451,
+   "country": "France",
+   "description": "cathedral located in Seine-Maritime, in France",
+   "hook": "was painted many times at different hours of the day by Claude Monet",
+   "known": 0.2,
+   "kind": "french"
+  }
+ ]
+}

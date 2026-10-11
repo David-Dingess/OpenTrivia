@@ -1,0 +1,277 @@
+{
+ "id": "table.myth-and-legend.greek-roman-equivalents",
+ "kind": "table",
+ "title": "Greek gods and their Roman equivalent",
+ "genre": "society",
+ "category": "myth-and-legend",
+ "topic": "mythology",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?romanLabel WHERE { { SELECT ?item (SAMPLE(?r) AS ?roman) (COUNT(DISTINCT ?r) AS ?nRoman) WHERE { ?item wdt:P31 wd:Q22989102 . ?item wdt:P460 ?r . ?r wdt:P31 wd:Q11688446 . } GROUP BY ?item } hint:Prior hint:runFirst true . FILTER(?nRoman = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T13:07:43.664Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T13:07:43.664Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "roman_equivalent",
+   "label": "Roman equivalent",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "Greek deity",
+  "many": "Greek deities",
+  "columns": {
+   "roman_equivalent": {
+    "role": "code",
+    "pick": "What is the Roman equivalent of {label}?",
+    "statement": "The Roman equivalent of {label} is {value}.",
+    "match": "Match each Greek deity to its Roman equivalent.",
+    "reverse": "Which Greek deity is {value} the Roman equivalent of?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Athena",
+   "qid": "Q37122",
+   "fame": 0.672,
+   "roman_equivalent": "Minerva",
+   "description": "goddess of wisdom and war in ancient Greek religion and mythology",
+   "hook": "sprang fully grown from her father's forehead and became the wise patron of a great ancient city",
+   "known": 0.8,
+   "kind": "olympian"
+  },
+  {
+   "label": "Zeus",
+   "qid": "Q34201",
+   "fame": 0.668,
+   "roman_equivalent": "Jupiter",
+   "description": "Greek god of the sky and king of the gods",
+   "hook": "ruled from a mountain peak, hurling lightning bolts as the supreme king of the sky",
+   "known": 0.95,
+   "kind": "olympian"
+  },
+  {
+   "label": "Aphrodite",
+   "qid": "Q35500",
+   "fame": 0.657,
+   "roman_equivalent": "Venus",
+   "description": "Greek goddess of love, beauty, pleasure, and procreation",
+   "hook": "rose from sea foam as the embodiment of beauty and desire, sparking a legendary war",
+   "known": 0.8,
+   "kind": "olympian"
+  },
+  {
+   "label": "Artemis",
+   "qid": "Q39503",
+   "fame": 0.651,
+   "roman_equivalent": "Diana",
+   "description": "goddess of the hunt and the wild in ancient Greek religion and mythology",
+   "hook": "roamed the wilds with a silver bow, protecting animals and women in childbirth",
+   "known": 0.8,
+   "kind": "olympian"
+  },
+  {
+   "label": "Hecate",
+   "qid": "Q131575",
+   "fame": 0.629,
+   "roman_equivalent": "Trivia",
+   "description": "Greek goddess",
+   "hook": "carried twin torches and ruled over crossroads, witchcraft, and the night",
+   "known": 0.4,
+   "kind": "minor-god"
+  },
+  {
+   "label": "Poseidon",
+   "qid": "Q41127",
+   "fame": 0.624,
+   "roman_equivalent": "Neptune",
+   "description": "one of the twelve Olympians presiding over the sea, storms, earthquakes and horses",
+   "hook": "struck the ground with a trident to raise storms, earthquakes, and crashing waves",
+   "known": 0.8,
+   "kind": "olympian"
+  },
+  {
+   "label": "Hera",
+   "qid": "Q38012",
+   "fame": 0.609,
+   "roman_equivalent": "Juno",
+   "description": "Greek goddess, wife and sister of Zeus",
+   "hook": "presided over marriage and family from a golden throne, famously jealous of her husband's affairs",
+   "known": 0.8,
+   "kind": "olympian"
+  },
+  {
+   "label": "Hephaestus",
+   "qid": "Q44384",
+   "fame": 0.601,
+   "roman_equivalent": "Vulcan",
+   "description": "Greek god of blacksmiths",
+   "hook": "forged weapons and armor at a fiery underground smithy despite a lame leg",
+   "known": 0.6,
+   "kind": "olympian"
+  },
+  {
+   "label": "Ares",
+   "qid": "Q40901",
+   "fame": 0.598,
+   "roman_equivalent": "Mars",
+   "description": "Greek god of war and combat",
+   "hook": "charged into battle craving bloodshed and chaos more than glory",
+   "known": 0.8,
+   "kind": "olympian"
+  },
+  {
+   "label": "Demeter",
+   "qid": "Q40730",
+   "fame": 0.589,
+   "roman_equivalent": "Ceres",
+   "description": "Greek goddess of the harvest, grains, and agriculture",
+   "hook": "made crops grow and mourned each year when her daughter was taken to the underworld",
+   "known": 0.8,
+   "kind": "olympian"
+  },
+  {
+   "label": "Helios",
+   "qid": "Q134270",
+   "fame": 0.588,
+   "roman_equivalent": "Sol",
+   "description": "Greek god and personification of the Sun",
+   "hook": "drove a blazing chariot across the sky each day to bring daylight",
+   "known": 0.6,
+   "kind": "minor-god"
+  },
+  {
+   "label": "Eros",
+   "qid": "Q121973",
+   "fame": 0.555,
+   "roman_equivalent": "Cupid",
+   "description": "Greek god of love and sex",
+   "hook": "shot arrows that made mortals and gods fall helplessly in love",
+   "known": 0.6,
+   "kind": "minor-god"
+  },
+  {
+   "label": "Hestia",
+   "qid": "Q41419",
+   "fame": 0.553,
+   "roman_equivalent": "Vesta",
+   "description": "Greek goddess of the hearth and the home",
+   "hook": "tended the sacred hearth fire and never left home for any romance or quarrel",
+   "known": 0.6,
+   "kind": "olympian"
+  },
+  {
+   "label": "Pan",
+   "qid": "Q132582",
+   "fame": 0.553,
+   "roman_equivalent": "Faunus",
+   "description": "Greek god of the mountain wilds, shepherds, flocks, rustic music, fertility, spring, and theatrical criticism, with the hindquarters, legs, and horns of a goat",
+   "hook": "had the legs and horns of a goat and played haunting tunes on a reed pipe in the forest",
+   "known": 0.4,
+   "kind": "minor-god"
+  },
+  {
+   "label": "Nike",
+   "qid": "Q165023",
+   "fame": 0.546,
+   "roman_equivalent": "Victoria",
+   "description": "goddess of victory in Greek mythology",
+   "hook": "flew down with outstretched wings to crown the winners of contests and battles",
+   "known": 0.4,
+   "kind": "minor-god"
+  },
+  {
+   "label": "Asclepius",
+   "qid": "Q83223",
+   "fame": 0.535,
+   "roman_equivalent": "Aesculapius",
+   "description": "Greek god of medicine",
+   "hook": "carried a snake-wrapped staff and could heal the sick or even raise the dead",
+   "known": 0.4,
+   "kind": "minor-god"
+  },
+  {
+   "label": "Thanatos",
+   "qid": "Q199647",
+   "fame": 0.53,
+   "roman_equivalent": "Mors",
+   "description": "personification of death in Greek mythology",
+   "hook": "arrived gently to carry mortal souls away at the moment of death",
+   "known": 0.4,
+   "kind": "personification"
+  },
+  {
+   "label": "Eris",
+   "qid": "Q140001",
+   "fame": 0.529,
+   "roman_equivalent": "Discordia",
+   "description": "Greek goddess of discord",
+   "hook": "tossed a golden apple among goddesses just to watch them quarrel over who was fairest",
+   "known": 0.4,
+   "kind": "personification"
+  },
+  {
+   "label": "Eos",
+   "qid": "Q178417",
+   "fame": 0.508,
+   "roman_equivalent": "Aurora",
+   "description": "Greek goddess of the dawn",
+   "hook": "opened the gates of the sky each morning with rosy fingers to bring the dawn",
+   "known": 0.4,
+   "kind": "personification"
+  },
+  {
+   "label": "Amphitrite",
+   "qid": "Q180222",
+   "fame": 0.478,
+   "roman_equivalent": "Salacia",
+   "description": "Oceanid or Nereid of Greek mythology",
+   "hook": "ruled the deep sea at her husband's side, surrounded by dolphins and sea creatures",
+   "known": 0.2,
+   "kind": "minor-god"
+  },
+  {
+   "label": "Hypnos",
+   "qid": "Q189347",
+   "fame": 0.461,
+   "roman_equivalent": "Somnus",
+   "description": "personification of sleep in Greek mythology",
+   "hook": "lived in a cave of silence and put mortals and gods alike into deep sleep",
+   "known": 0.2,
+   "kind": "personification"
+  },
+  {
+   "label": "Hebe",
+   "qid": "Q131125",
+   "fame": 0.455,
+   "roman_equivalent": "Iuventas",
+   "description": "ancient Greek goddess of youth",
+   "hook": "poured nectar for the gods and embodied eternal youth at their feasts",
+   "known": 0.2,
+   "kind": "personification"
+  }
+ ]
+}

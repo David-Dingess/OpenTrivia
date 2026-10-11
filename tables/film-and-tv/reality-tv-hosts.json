@@ -1,0 +1,201 @@
+{
+ "id": "table.film-and-tv.reality-tv-hosts",
+ "kind": "table",
+ "title": "Reality TV shows and their host",
+ "genre": "arts-entertainment",
+ "category": "film-and-tv",
+ "topic": "reality-tv",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?hostLabel WHERE { { SELECT ?item (SAMPLE(?h) AS ?host) WHERE { ?item wikibase:sitelinks ?sl . FILTER(?sl >= 6) ?item wdt:P31/wdt:P279* wd:Q5398426 . ?item wdt:P136/wdt:P279* wd:Q182415 . ?item wdt:P371 ?h . ?h wdt:P31 wd:Q5 } GROUP BY ?item HAVING(COUNT(DISTINCT ?h) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-01T03:40:29.655Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-01T03:40:29.655Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "host",
+   "label": "Host",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "reality show",
+  "many": "reality shows",
+  "hookAsk": "Which reality show {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "host": {
+    "role": "link",
+    "pick": "Who hosts {label}?",
+    "statement": "{label} is hosted by {value}.",
+    "match": "Match each reality show to its host.",
+    "odd": "Three of these reality shows are hosted by {value}. Which one isn't?",
+    "all": "Tap all {n} reality shows hosted by {value}.",
+    "reverse": "Which of these reality shows does {value} host?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "The Voice",
+   "qid": "Q490743",
+   "fame": 0.666,
+   "host": "Carson Daly",
+   "description": "American singing competition television series",
+   "hook": "features celebrity coaches who pick singers while sitting in turning chairs",
+   "known": 0.8,
+   "kind": "game show"
+  },
+  {
+   "label": "Hell's Kitchen",
+   "qid": "Q1012139",
+   "fame": 0.629,
+   "host": "Gordon Ramsay",
+   "description": "American television series",
+   "hook": "pits aspiring chefs in red and blue teams against each other to run a restaurant service",
+   "known": 0.8,
+   "kind": "cooking show"
+  },
+  {
+   "label": "The Real Housewives of Atlanta",
+   "qid": "Q7759590",
+   "fame": 0.619,
+   "host": "Andy Cohen",
+   "description": "Georgia-based reality television series in the United States",
+   "hook": "follows a group of wealthy women and their drama-filled lives in a Southern city",
+   "known": 0.6,
+   "kind": "lifestyle show"
+  },
+  {
+   "label": "The Challenge",
+   "qid": "Q902421",
+   "fame": 0.611,
+   "host": "T. J. Lavin",
+   "description": "reality game show",
+   "hook": "sends alumni of other MTV reality shows into brutal contests for a cash prize",
+   "known": 0.6,
+   "kind": "game show"
+  },
+  {
+   "label": "Ramsay's Kitchen Nightmares USA",
+   "qid": "Q2531243",
+   "fame": 0.588,
+   "host": "Gordon Ramsay",
+   "description": "American reality television",
+   "hook": "sends a famously foul-mouthed celebrity chef to rescue failing restaurants",
+   "known": 0.8,
+   "kind": "cooking show"
+  },
+  {
+   "label": "The Amazing Race",
+   "qid": "Q60096",
+   "fame": 0.559,
+   "host": "Phil Keoghan",
+   "description": "American adventure reality game show",
+   "hook": "sends pairs of contestants around the globe solving clues and finishing tasks to reach pit stops",
+   "known": 0.8,
+   "kind": "game show"
+  },
+  {
+   "label": "Love Island",
+   "qid": "Q20058639",
+   "fame": 0.548,
+   "host": "Laura Whitmore",
+   "description": "British dating reality show",
+   "hook": "locks singles in a sunny villa where they must couple up or get dumped",
+   "known": 0.8,
+   "kind": "dating show"
+  },
+  {
+   "label": "What Would You Do?",
+   "qid": "Q7243489",
+   "fame": 0.497,
+   "host": "John Quiñones",
+   "description": "American hidden camera television series",
+   "hook": "secretly films staged scenes to see whether bystanders step in to help",
+   "known": 0.6,
+   "kind": "hidden camera"
+  },
+  {
+   "label": "The Bachelorette",
+   "qid": "Q3278334",
+   "fame": 0.493,
+   "host": "Jesse Palmer",
+   "description": "US television series",
+   "hook": "follows one single woman choosing from a pool of suitors, handing out roses each week",
+   "known": 0.8,
+   "kind": "dating show"
+  },
+  {
+   "label": "Hardcore Pawn",
+   "qid": "Q5655787",
+   "fame": 0.492,
+   "host": "Les Gold",
+   "description": "television series",
+   "hook": "follows customers haggling over items at a family-owned loan shop in Detroit",
+   "known": 0.4,
+   "kind": "lifestyle show"
+  },
+  {
+   "label": "Ghost Adventures",
+   "qid": "Q3243445",
+   "fame": 0.481,
+   "host": "Zak Bagans",
+   "description": "American paranormal docuseries",
+   "hook": "follows a crew investigating reputedly haunted locations overnight with night-vision cameras",
+   "known": 0.4,
+   "kind": "paranormal"
+  },
+  {
+   "label": "The Ultimate Fighter",
+   "qid": "Q2072393",
+   "fame": 0.462,
+   "host": "Dana White",
+   "description": "American reality series and MMA competition",
+   "hook": "has MMA hopefuls live together in a house and compete for a UFC contract",
+   "known": 0.4,
+   "kind": "sports"
+  },
+  {
+   "label": "Beast Games",
+   "qid": "Q129171166",
+   "fame": 0.455,
+   "host": "MrBeast",
+   "description": "2024 reality competition television series by MrBeast",
+   "hook": "pits a thousand contestants against each other in giant competitions for a record cash prize",
+   "known": 0.6,
+   "kind": "game show"
+  },
+  {
+   "label": "Property Brothers",
+   "qid": "Q112403",
+   "fame": 0.454,
+   "host": "Drew Scott",
+   "description": "Canadian television series",
+   "hook": "has twin siblings help buyers find and renovate run-down houses",
+   "known": 0.6,
+   "kind": "lifestyle show"
+  }
+ ]
+}

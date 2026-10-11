@@ -1,0 +1,969 @@
+{
+ "id": "list.history.supreme-court-justices",
+ "title": "US Supreme Court justices",
+ "prompt": "Name a US Supreme Court justice",
+ "genre": "society",
+ "category": "history",
+ "topic": "rulers",
+ "people": true,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q5 ; wdt:P39 ?pos . VALUES ?pos { wd:Q11144 wd:Q11147 } . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-10-02T18:11:57.310Z"
+ },
+ "rows": [
+  {
+   "label": "William Howard Taft",
+   "qid": "Q35648",
+   "fame": 0.657,
+   "also": [
+    "William H. Taft",
+    "William Taft",
+    "President Taft"
+   ]
+  },
+  {
+   "label": "Clarence Thomas",
+   "qid": "Q11142",
+   "fame": 0.634,
+   "also": []
+  },
+  {
+   "label": "Ruth Bader Ginsburg",
+   "qid": "Q11116",
+   "fame": 0.616,
+   "also": [
+    "notorious rbg",
+    "RBG",
+    "Joan Ruth Bader",
+    "Joan Ruth Bader Ginsburg",
+    "Joan Ruth Biggie",
+    "Joan Ruth Biggie Ginsburg",
+    "Ruth Bader",
+    "Ruth Joan Biggie Ginsburg"
+   ]
+  },
+  {
+   "label": "John Roberts",
+   "qid": "Q11153",
+   "fame": 0.608,
+   "also": [
+    "John G. Roberts",
+    "John G. Roberts Jr.",
+    "John Glover Roberts Jr.",
+    "John Roberts Jr.",
+    "Chief Justice John Roberts"
+   ]
+  },
+  {
+   "label": "Sonia Sotomayor",
+   "qid": "Q11107",
+   "fame": 0.605,
+   "also": [
+    "Justice Sotomayor",
+    "Sonia Maria Sotomayor"
+   ]
+  },
+  {
+   "label": "Ketanji Brown Jackson",
+   "qid": "Q6395324",
+   "fame": 0.589,
+   "also": [
+    "Ketanji Brown",
+    "Ketanji Onyika Brown",
+    "Ketanji Onyika Brown Jackson"
+   ]
+  },
+  {
+   "label": "Brett Kavanaugh",
+   "qid": "Q4962244",
+   "fame": 0.585,
+   "also": [
+    "Brett M. Kavanaugh",
+    "Brett Michael Kavanaugh",
+    "Justice Kavanaugh"
+   ]
+  },
+  {
+   "label": "Thurgood Marshall",
+   "qid": "Q312348",
+   "fame": 0.582,
+   "also": [
+    "Thoroughgood Marshall"
+   ]
+  },
+  {
+   "label": "Antonin Scalia",
+   "qid": "Q11156",
+   "fame": 0.563,
+   "also": [
+    "Nino",
+    "Antonin G. Scalia",
+    "Antonin Gregory Scalia",
+    "Justice Scalia",
+    "Scalia"
+   ]
+  },
+  {
+   "label": "Samuel Alito",
+   "qid": "Q11138",
+   "fame": 0.562,
+   "also": [
+    "Samuel A. Alito",
+    "Samuel A. Alito Jr."
+   ]
+  },
+  {
+   "label": "Amy Coney Barrett",
+   "qid": "Q29863844",
+   "fame": 0.559,
+   "also": [
+    "Amy Coney",
+    "Amy Vivian Coney",
+    "Amy Vivian Coney Barrett",
+    "ACB"
+   ]
+  },
+  {
+   "label": "Sandra Day O'Connor",
+   "qid": "Q11132",
+   "fame": 0.55,
+   "also": [
+    "Sandra D. O'Connor",
+    "Sandra Day",
+    "Sandra O'Connor"
+   ]
+  },
+  {
+   "label": "Earl Warren",
+   "qid": "Q311197",
+   "fame": 0.527,
+   "also": [
+    "Chief Justice Warren"
+   ]
+  },
+  {
+   "label": "Elena Kagan",
+   "qid": "Q11105",
+   "fame": 0.525,
+   "also": []
+  },
+  {
+   "label": "Neil Gorsuch",
+   "qid": "Q15488345",
+   "fame": 0.522,
+   "also": [
+    "Neil M. Gorsuch",
+    "Neil McGill Gorsuch"
+   ]
+  },
+  {
+   "label": "William Rehnquist",
+   "qid": "Q311562",
+   "fame": 0.521,
+   "also": [
+    "Chief Justice Rehnquist",
+    "Justice Rehnquist",
+    "William Hubbs Rehnquist"
+   ]
+  },
+  {
+   "label": "John Jay",
+   "qid": "Q310847",
+   "fame": 0.517,
+   "also": []
+  },
+  {
+   "label": "Robert H. Jackson",
+   "qid": "Q505450",
+   "fame": 0.509,
+   "also": [
+    "Robert Houghwout Jackson"
+   ]
+  },
+  {
+   "label": "John Marshall",
+   "qid": "Q310829",
+   "fame": 0.499,
+   "also": []
+  },
+  {
+   "label": "Stephen Breyer",
+   "qid": "Q11124",
+   "fame": 0.493,
+   "also": [
+    "Stephen Gerald Breyer"
+   ]
+  },
+  {
+   "label": "Anthony Kennedy",
+   "qid": "Q11171",
+   "fame": 0.491,
+   "also": [
+    "Anthony M. Kennedy",
+    "Anthony McLeod Kennedy",
+    "Justice Anthony Kennedy"
+   ]
+  },
+  {
+   "label": "William O. Douglas",
+   "qid": "Q1391996",
+   "fame": 0.482,
+   "also": [
+    "William Douglas",
+    "William Orville Douglas"
+   ]
+  },
+  {
+   "label": "Oliver Wendell Holmes",
+   "qid": "Q360574",
+   "fame": 0.474,
+   "also": [
+    "Oliver Wendell Holmes Jr.",
+    "Oliver Holmes",
+    "Oliver Holmes Jr.",
+    "Oliver W. Holmes Jr.",
+    "Oliver W. Holmes"
+   ]
+  },
+  {
+   "label": "David Souter",
+   "qid": "Q472547",
+   "fame": 0.468,
+   "also": [
+    "David Hackett Souter"
+   ]
+  },
+  {
+   "label": "Salmon P. Chase",
+   "qid": "Q433051",
+   "fame": 0.468,
+   "also": [
+    "Salmon Chase",
+    "Salmon Portland Chase"
+   ]
+  },
+  {
+   "label": "John Paul Stevens",
+   "qid": "Q11109",
+   "fame": 0.461,
+   "also": [
+    "John P. Stevens"
+   ]
+  },
+  {
+   "label": "Louis Brandeis",
+   "qid": "Q520840",
+   "fame": 0.46,
+   "also": [
+    "Louis Dembitz Brandeis",
+    "Louis David Brandeis"
+   ]
+  },
+  {
+   "label": "Byron White",
+   "qid": "Q958904",
+   "fame": 0.459,
+   "also": [
+    "Whizzer",
+    "Byron Raymond White"
+   ]
+  },
+  {
+   "label": "Charles Evans Hughes",
+   "qid": "Q313252",
+   "fame": 0.456,
+   "also": [
+    "Charles Evans Hughes Sr.",
+    "Chas. E. Hughes",
+    "Governor Hughes",
+    "Charles Hughes",
+    "Charles E. Hughes"
+   ]
+  },
+  {
+   "label": "Warren E. Burger",
+   "qid": "Q346685",
+   "fame": 0.456,
+   "also": [
+    "Chief Justice Burger",
+    "Warren Burger",
+    "Warren Earl Burger"
+   ]
+  },
+  {
+   "label": "Roger B. Taney",
+   "qid": "Q359470",
+   "fame": 0.446,
+   "also": [
+    "Roger Brooke Taney",
+    "Roger Taney"
+   ]
+  },
+  {
+   "label": "William Henry Moody",
+   "qid": "Q724503",
+   "fame": 0.445,
+   "also": [
+    "William H. Moody"
+   ]
+  },
+  {
+   "label": "Hugo Black",
+   "qid": "Q459752",
+   "fame": 0.441,
+   "also": [
+    "Hugo L. Black",
+    "Hugo Lafayette Black"
+   ]
+  },
+  {
+   "label": "Lewis F. Powell Jr.",
+   "qid": "Q252739",
+   "fame": 0.441,
+   "also": [
+    "Lewis Powell",
+    "Lewis F. Powell",
+    "Lewis Franklin Powell",
+    "Lewis Franklin Powell Jr.",
+    "Louis Powell"
+   ]
+  },
+  {
+   "label": "William J. Brennan",
+   "qid": "Q717401",
+   "fame": 0.424,
+   "also": [
+    "William J. Brennan Jr.",
+    "William Brennan",
+    "William Joseph Brennan Jr."
+   ]
+  },
+  {
+   "label": "James Wilson",
+   "qid": "Q365181",
+   "fame": 0.419,
+   "also": []
+  },
+  {
+   "label": "Benjamin N. Cardozo",
+   "qid": "Q817637",
+   "fame": 0.413,
+   "also": [
+    "Benjamin Nathan Cardozo",
+    "Benjamin Cardozo"
+   ]
+  },
+  {
+   "label": "Felix Frankfurter",
+   "qid": "Q1403472",
+   "fame": 0.408,
+   "also": []
+  },
+  {
+   "label": "Harry Blackmun",
+   "qid": "Q1323255",
+   "fame": 0.401,
+   "also": [
+    "Harry A. Blackmun",
+    "Harry Andrew Blackmun"
+   ]
+  },
+  {
+   "label": "John Rutledge",
+   "qid": "Q370781",
+   "fame": 0.398,
+   "also": [
+    "Dictator John"
+   ]
+  },
+  {
+   "label": "James F. Byrnes",
+   "qid": "Q432726",
+   "fame": 0.394,
+   "also": [
+    "James Byrnes",
+    "James Francis Byrnes"
+   ]
+  },
+  {
+   "label": "John Marshall Harlan",
+   "qid": "Q1700972",
+   "fame": 0.389,
+   "also": [
+    "John Marshall Harlan I",
+    "The Great Dissenter"
+   ]
+  },
+  {
+   "label": "Potter Stewart",
+   "qid": "Q1359993",
+   "fame": 0.385,
+   "also": []
+  },
+  {
+   "label": "Abe Fortas",
+   "qid": "Q318143",
+   "fame": 0.383,
+   "also": [
+    "Abraham Abe Fortas",
+    "Abraham Fortas"
+   ]
+  },
+  {
+   "label": "Fred M. Vinson",
+   "qid": "Q460151",
+   "fame": 0.376,
+   "also": [
+    "Fred Vinson",
+    "Frederick Moore Vinson"
+   ]
+  },
+  {
+   "label": "Harlan F. Stone",
+   "qid": "Q942386",
+   "fame": 0.374,
+   "also": [
+    "Harlan Fiske Stone",
+    "Harlan Stone"
+   ]
+  },
+  {
+   "label": "Bushrod Washington",
+   "qid": "Q166436",
+   "fame": 0.362,
+   "also": []
+  },
+  {
+   "label": "Arthur Goldberg",
+   "qid": "Q709513",
+   "fame": 0.358,
+   "also": [
+    "Arthur Joseph Goldberg",
+    "Arthur J. Goldberg"
+   ]
+  },
+  {
+   "label": "John Marshall Harlan II",
+   "qid": "Q957749",
+   "fame": 0.358,
+   "also": [
+    "John Marshall Harlan",
+    "John Harlan",
+    "John M. Harlan"
+   ]
+  },
+  {
+   "label": "William R. Day",
+   "qid": "Q707528",
+   "fame": 0.347,
+   "also": [
+    "William Rufus Day"
+   ]
+  },
+  {
+   "label": "Frank Murphy",
+   "qid": "Q887724",
+   "fame": 0.344,
+   "also": [
+    "William Francis Murphy"
+   ]
+  },
+  {
+   "label": "Joseph Story",
+   "qid": "Q1368374",
+   "fame": 0.343,
+   "also": []
+  },
+  {
+   "label": "Samuel Chase",
+   "qid": "Q285521",
+   "fame": 0.342,
+   "also": [
+    "Old Bacon Face"
+   ]
+  },
+  {
+   "label": "Edward Douglass White Jr.",
+   "qid": "Q706463",
+   "fame": 0.34,
+   "also": [
+    "Edward Douglass White",
+    "Edward D. White",
+    "Edward D. White Jr.",
+    "Edward D. White II",
+    "Edward Douglass White Junior",
+    "Edward Douglas White"
+   ]
+  },
+  {
+   "label": "Melville Fuller",
+   "qid": "Q943046",
+   "fame": 0.339,
+   "also": [
+    "Melville Weston Fuller",
+    "Melville W. Fuller"
+   ]
+  },
+  {
+   "label": "Oliver Ellsworth",
+   "qid": "Q515858",
+   "fame": 0.333,
+   "also": [
+    "Justice Ellsworth"
+   ]
+  },
+  {
+   "label": "Thomas Campbell Clark",
+   "qid": "Q724116",
+   "fame": 0.331,
+   "also": [
+    "Tom C. Clark",
+    "Thomas Clark",
+    "Tom Clark",
+    "Thomas C. Clark"
+   ]
+  },
+  {
+   "label": "Lucius Quintus Cincinnatus Lamar",
+   "qid": "Q1549250",
+   "fame": 0.31,
+   "also": [
+    "Lucius Q. C. Lamar",
+    "Lucius Quintus Cincinnatus Lamar II"
+   ]
+  },
+  {
+   "label": "Mahlon Pitney",
+   "qid": "Q186278",
+   "fame": 0.308,
+   "also": []
+  },
+  {
+   "label": "James Clark McReynolds",
+   "qid": "Q724204",
+   "fame": 0.299,
+   "also": [
+    "James C. McReynolds",
+    "James McReynolds"
+   ]
+  },
+  {
+   "label": "William Paterson",
+   "qid": "Q729054",
+   "fame": 0.296,
+   "also": []
+  },
+  {
+   "label": "Morrison Waite",
+   "qid": "Q1349419",
+   "fame": 0.29,
+   "also": [
+    "Morrison R. Waite",
+    "Morrison Remick Waite",
+    "Mott Waite"
+   ]
+  },
+  {
+   "label": "Stephen Johnson Field",
+   "qid": "Q1234235",
+   "fame": 0.28,
+   "also": [
+    "Stephen J. Field"
+   ]
+  },
+  {
+   "label": "John McLean",
+   "qid": "Q1371498",
+   "fame": 0.277,
+   "also": []
+  },
+  {
+   "label": "David Davis",
+   "qid": "Q374427",
+   "fame": 0.276,
+   "also": []
+  },
+  {
+   "label": "Owen Roberts",
+   "qid": "Q703968",
+   "fame": 0.273,
+   "also": [
+    "Owen J. Roberts",
+    "Owen Josephus Roberts"
+   ]
+  },
+  {
+   "label": "Sherman Minton",
+   "qid": "Q1849894",
+   "fame": 0.267,
+   "also": []
+  },
+  {
+   "label": "George Sutherland",
+   "qid": "Q1508314",
+   "fame": 0.262,
+   "also": [
+    "Alexander George Sutherland",
+    "Alexander George Sutherland Jr.",
+    "George Alexander Sutherland"
+   ]
+  },
+  {
+   "label": "Benjamin Robbins Curtis",
+   "qid": "Q202276",
+   "fame": 0.257,
+   "also": [
+    "Benjamin Curtis",
+    "Benjamin R. Curtis"
+   ]
+  },
+  {
+   "label": "Charles Evans Whittaker",
+   "qid": "Q1064300",
+   "fame": 0.256,
+   "also": [
+    "Charles E. Whittaker"
+   ]
+  },
+  {
+   "label": "Stanley Forman Reed",
+   "qid": "Q1771524",
+   "fame": 0.256,
+   "also": [
+    "Stanley Reed",
+    "Stanley F. Reed"
+   ]
+  },
+  {
+   "label": "John Archibald Campbell",
+   "qid": "Q1699162",
+   "fame": 0.255,
+   "also": [
+    "John Campbell",
+    "John A. Campbell"
+   ]
+  },
+  {
+   "label": "Willis Van Devanter",
+   "qid": "Q1404270",
+   "fame": 0.245,
+   "also": []
+  },
+  {
+   "label": "Levi Woodbury",
+   "qid": "Q579228",
+   "fame": 0.242,
+   "also": [
+    "Hon. Levi Woodbury"
+   ]
+  },
+  {
+   "label": "Henry Billings Brown",
+   "qid": "Q1606519",
+   "fame": 0.225,
+   "also": [
+    "Henry B. Brown"
+   ]
+  },
+  {
+   "label": "Horace Gray",
+   "qid": "Q1627868",
+   "fame": 0.22,
+   "also": []
+  },
+  {
+   "label": "William Cushing",
+   "qid": "Q2063381",
+   "fame": 0.22,
+   "also": []
+  },
+  {
+   "label": "Wiley Rutledge",
+   "qid": "Q1626713",
+   "fame": 0.217,
+   "also": [
+    "Wiley Blount Rutledge",
+    "Wiley B. Rutledge",
+    "Wiley Blount Rutledge Jr.",
+    "Wiley Rutledge Jr."
+   ]
+  },
+  {
+   "label": "Joseph McKenna",
+   "qid": "Q724941",
+   "fame": 0.208,
+   "also": []
+  },
+  {
+   "label": "John Blair Jr.",
+   "qid": "Q778866",
+   "fame": 0.207,
+   "also": []
+  },
+  {
+   "label": "Samuel Freeman Miller",
+   "qid": "Q2218270",
+   "fame": 0.204,
+   "also": [
+    "Samuel Miller",
+    "Samuel F. Miller"
+   ]
+  },
+  {
+   "label": "Pierce Butler",
+   "qid": "Q1395635",
+   "fame": 0.201,
+   "also": []
+  },
+  {
+   "label": "David Josiah Brewer",
+   "qid": "Q5235764",
+   "fame": 0.198,
+   "also": [
+    "David J. Brewer",
+    "David Brewer"
+   ]
+  },
+  {
+   "label": "Harold Hitz Burton",
+   "qid": "Q507177",
+   "fame": 0.196,
+   "also": [
+    "Harold H. Burton",
+    "Harold Burton"
+   ]
+  },
+  {
+   "label": "John Catron",
+   "qid": "Q1699569",
+   "fame": 0.193,
+   "also": []
+  },
+  {
+   "label": "Thomas Johnson",
+   "qid": "Q5889298",
+   "fame": 0.192,
+   "also": []
+  },
+  {
+   "label": "Robert Cooper Grier",
+   "qid": "Q1648806",
+   "fame": 0.191,
+   "also": [
+    "Robert C. Grier",
+    "Robert Grier"
+   ]
+  },
+  {
+   "label": "Joseph P. Bradley",
+   "qid": "Q1587475",
+   "fame": 0.19,
+   "also": [
+    "Joseph Bradley",
+    "Joseph Philo Bradley"
+   ]
+  },
+  {
+   "label": "Rufus W. Peckham",
+   "qid": "Q2174811",
+   "fame": 0.187,
+   "also": [
+    "Rufus Peckham",
+    "Rufus Wheeler Peckham"
+   ]
+  },
+  {
+   "label": "Samuel Nelson",
+   "qid": "Q1717971",
+   "fame": 0.187,
+   "also": []
+  },
+  {
+   "label": "Philip Pendleton Barbour",
+   "qid": "Q726427",
+   "fame": 0.184,
+   "also": [
+    "Philip P. Barbour",
+    "Philip Barbour"
+   ]
+  },
+  {
+   "label": "Henry Brockholst Livingston",
+   "qid": "Q1606548",
+   "fame": 0.181,
+   "also": []
+  },
+  {
+   "label": "Nathan Clifford",
+   "qid": "Q724329",
+   "fame": 0.175,
+   "also": []
+  },
+  {
+   "label": "Henry Baldwin",
+   "qid": "Q915480",
+   "fame": 0.173,
+   "also": []
+  },
+  {
+   "label": "Smith Thompson",
+   "qid": "Q1261880",
+   "fame": 0.172,
+   "also": []
+  },
+  {
+   "label": "Stanley Matthews",
+   "qid": "Q507075",
+   "fame": 0.172,
+   "also": [
+    "Thomas Stanley Matthews"
+   ]
+  },
+  {
+   "label": "Joseph Rucker Lamar",
+   "qid": "Q1707930",
+   "fame": 0.166,
+   "also": [
+    "Joseph R. Lamar"
+   ]
+  },
+  {
+   "label": "William Johnson",
+   "qid": "Q1427073",
+   "fame": 0.164,
+   "also": [
+    "William Johnson Jr."
+   ]
+  },
+  {
+   "label": "John McKinley",
+   "qid": "Q926834",
+   "fame": 0.163,
+   "also": []
+  },
+  {
+   "label": "Edward Terry Sanford",
+   "qid": "Q1293854",
+   "fame": 0.16,
+   "also": [
+    "Edward Sanford",
+    "Edward T. Sanford"
+   ]
+  },
+  {
+   "label": "John Hessin Clarke",
+   "qid": "Q1700452",
+   "fame": 0.16,
+   "also": [
+    "John Clarke",
+    "John H. Clarke"
+   ]
+  },
+  {
+   "label": "Gabriel Duvall",
+   "qid": "Q1489164",
+   "fame": 0.157,
+   "also": []
+  },
+  {
+   "label": "Thomas Todd",
+   "qid": "Q2427667",
+   "fame": 0.155,
+   "also": []
+  },
+  {
+   "label": "Samuel Blatchford",
+   "qid": "Q2218019",
+   "fame": 0.152,
+   "also": [
+    "Samuel M. Blatchford"
+   ]
+  },
+  {
+   "label": "George Shiras, Jr.",
+   "qid": "Q1508251",
+   "fame": 0.15,
+   "also": []
+  },
+  {
+   "label": "Alfred Moore",
+   "qid": "Q2622090",
+   "fame": 0.144,
+   "also": []
+  },
+  {
+   "label": "Noah Haynes Swayne",
+   "qid": "Q1521765",
+   "fame": 0.137,
+   "also": [
+    "Noah H. Swayne",
+    "Noah Swayne"
+   ]
+  },
+  {
+   "label": "Horace Harmon Lurton",
+   "qid": "Q1627872",
+   "fame": 0.129,
+   "also": [
+    "Horace H. Lurton",
+    "Horace Lurton"
+   ]
+  },
+  {
+   "label": "James Moore Wayne",
+   "qid": "Q1250079",
+   "fame": 0.129,
+   "also": [
+    "James M. Wayne",
+    "James Wayne"
+   ]
+  },
+  {
+   "label": "William Burnham Woods",
+   "qid": "Q2578164",
+   "fame": 0.126,
+   "also": [
+    "William Woods",
+    "William B. Woods"
+   ]
+  },
+  {
+   "label": "Howell Edmunds Jackson",
+   "qid": "Q654559",
+   "fame": 0.125,
+   "also": [
+    "Howell E. Jackson",
+    "Howell Jackson"
+   ]
+  },
+  {
+   "label": "Robert Trimble",
+   "qid": "Q1714230",
+   "fame": 0.125,
+   "also": []
+  },
+  {
+   "label": "Ward Hunt",
+   "qid": "Q2545208",
+   "fame": 0.123,
+   "also": []
+  },
+  {
+   "label": "Peter Vivian Daniel",
+   "qid": "Q1238208",
+   "fame": 0.12,
+   "also": [
+    "Peter V. Daniel",
+    "Peter Daniel"
+   ]
+  },
+  {
+   "label": "William Strong",
+   "qid": "Q2580679",
+   "fame": 0,
+   "also": []
+  }
+ ]
+}

@@ -1,0 +1,189 @@
+{
+ "id": "table.literature.memoirs-author",
+ "kind": "table",
+ "title": "Famous memoirs and their authors",
+ "genre": "arts-entertainment",
+ "category": "literature",
+ "topic": "memoirs",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?authorLabel WHERE { { SELECT ?item ?sitelinks (SAMPLE(?a) AS ?author) (COUNT(DISTINCT ?a) AS ?nA) WHERE { VALUES (?t ?an) { (\"Night\"@en \"Elie Wiesel\"@en) (\"I Know Why the Caged Bird Sings\"@en \"Maya Angelou\"@en) (\"The Glass Castle\"@en \"Jeannette Walls\"@en) (\"Educated\"@en \"Tara Westover\"@en) (\"Angela's Ashes\"@en \"Frank McCourt\"@en) (\"Born a Crime\"@en \"Trevor Noah\"@en) (\"Becoming\"@en \"Michelle Obama\"@en) (\"Dreams from My Father\"@en \"Barack Obama\"@en) (\"The Autobiography of Malcolm X\"@en \"Malcolm X\"@en) (\"Narrative of the Life of Frederick Douglass, an American Slave\"@en \"Frederick Douglass\"@en) (\"Long Walk to Freedom\"@en \"Nelson Mandela\"@en) (\"I Am Malala\"@en \"Malala Yousafzai\"@en) (\"Eat, Pray, Love\"@en \"Elizabeth Gilbert\"@en) (\"Wild\"@en \"Cheryl Strayed\"@en) (\"Into the Wild\"@en \"Jon Krakauer\"@en) (\"Into Thin Air\"@en \"Jon Krakauer\"@en) (\"Running with Scissors\"@en \"Augusten Burroughs\"@en) (\"A Million Little Pieces\"@en \"James Frey\"@en) (\"Girl, Interrupted\"@en \"Susanna Kaysen\"@en) (\"Prozac Nation\"@en \"Elizabeth Wurtzel\"@en) (\"Bossypants\"@en \"Tina Fey\"@en) (\"Yes Please\"@en \"Amy Poehler\"@en) (\"Born to Run\"@en \"Bruce Springsteen\"@en) (\"Just Kids\"@en \"Patti Smith\"@en) (\"Chronicles: Volume One\"@en \"Bob Dylan\"@en) (\"Life\"@en \"Keith Richards\"@en) (\"Open\"@en \"Andre Agassi\"@en) (\"Spare\"@en \"Prince Harry, Duke of Sussex\"@en) (\"The Diary of a Young Girl\"@en \"Anne Frank\"@en) (\"Out of Africa\"@en \"Karen Blixen\"@en) (\"Speak, Memory\"@en \"Vladimir Nabokov\"@en) (\"Down and Out in Paris and London\"@en \"George Orwell\"@en) (\"Homage to Catalonia\"@en \"George Orwell\"@en) (\"A Moveable Feast\"@en \"Ernest Hemingway\"@en) (\"Confessions of an English Opium-Eater\"@en \"Thomas De Quincey\"@en) (\"Roughing It\"@en \"Mark Twain\"@en) (\"The Story of My Life\"@en \"Helen Keller\"@en) (\"Seven Years in Tibet\"@en \"Heinrich Harrer\"@en) (\"The Year of Magical Thinking\"@en \"Joan Didion\"@en) (\"Tuesdays with Morrie\"@en \"Mitch Albom\"@en) (\"The Liars' Club\"@en \"Mary Karr\"@en) (\"Fun Home\"@en \"Alison Bechdel\"@en) (\"Persepolis\"@en \"Marjane Satrapi\"@en) (\"Maus\"@en \"Art Spiegelman\"@en) (\"Hunger of Memory\"@en \"Richard Rodriguez\"@en) (\"Woman Warrior\"@en \"Maxine Hong Kingston\"@en) (\"The Color of Water\"@en \"James McBride\"@en) (\"Wild Swans\"@en \"Jung Chang\"@en) (\"Shoe Dog\"@en \"Phil Knight\"@en) (\"Unbroken\"@en \"Laura Hillenbrand\"@en) (\"The Road to Wigan Pier\"@en \"George Orwell\"@en) (\"Surely You're Joking, Mr. Feynman!\"@en \"Richard Feynman\"@en) (\"My Life\"@en \"Bill Clinton\"@en) (\"A Promised Land\"@en \"Barack Obama\"@en) (\"Greenlights\"@en \"Matthew McConaughey\"@en) (\"Me\"@en \"Elton John\"@en) (\"Crying in H Mart\"@en \"Michelle Zauner\"@en) (\"Hillbilly Elegy\"@en \"J. D. Vance\"@en) (\"The Basketball Diaries\"@en \"Jim Carroll\"@en) (\"This Boy's Life\"@en \"Tobias Wolff\"@en) (\"Boy\"@en \"Roald Dahl\"@en) (\"Going Solo\"@en \"Roald Dahl\"@en) (\"Cider with Rosie\"@en \"Laurie Lee\"@en) (\"West with the Night\"@en \"Beryl Markham\"@en) (\"Black Boy\"@en \"Richard Wright\"@en) (\"Notes of a Native Son\"@en \"James Baldwin\"@en) (\"Lone Survivor\"@en \"Marcus Luttrell\"@en) (\"American Sniper\"@en \"Chris Kyle\"@en) (\"Kitchen Confidential\"@en \"Anthony Bourdain\"@en) (\"Blood, Bones & Butter\"@en \"Gabrielle Hamilton\"@en) (\"My Life in France\"@en \"Julia Child\"@en) (\"I Am Spock\"@en \"Leonard Nimoy\"@en) (\"Scar Tissue\"@en \"Anthony Kiedis\"@en) (\"The Dirt\"@en \"Mötley Crüe\"@en) (\"Hole in My Life\"@en \"Jack Gantos\"@en) (\"When Breath Becomes Air\"@en \"Paul Kalanithi\"@en) (\"The Bright Hour\"@en \"Nina Riggs\"@en) (\"The Story of a Soul\"@en \"Thérèse of Lisieux\"@en) (\"Confessions\"@en \"Jean-Jacques Rousseau\"@en) (\"Confessions\"@en \"Augustine of Hippo\"@en) (\"Ecce Homo\"@en \"Friedrich Nietzsche\"@en) (\"Soul on Ice\"@en \"Eldridge Cleaver\"@en) (\"Gorillas in the Mist\"@en \"Dian Fossey\"@en) (\"Kon-Tiki\"@en \"Thor Heyerdahl\"@en) (\"Endurance\"@en \"Alfred Lansing\"@en) (\"A Walk in the Woods\"@en \"Bill Bryson\"@en) (\"The Lost Continent\"@en \"Bill Bryson\"@en) (\"Notes from a Small Island\"@en \"Bill Bryson\"@en) (\"Wishful Drinking\"@en \"Carrie Fisher\"@en) (\"The Princess Diarist\"@en \"Carrie Fisher\"@en) (\"Is Everyone Hanging Out Without Me?\"@en \"Mindy Kaling\"@en) (\"Talking as Fast as I Can\"@en \"Lauren Graham\"@en) (\"Not That Kind of Girl\"@en \"Lena Dunham\"@en) (\"Scrappy Little Nobody\"@en \"Anna Kendrick\"@en) (\"Moab Is My Washpot\"@en \"Stephen Fry\"@en) (\"The Autobiography of Benjamin Franklin\"@en \"Benjamin Franklin\"@en) (\"Just Mercy\"@en \"Bryan Stevenson\"@en) (\"Hunger\"@en \"Roxane Gay\"@en) (\"Black Like Me\"@en \"John Howard Griffin\"@en) (\"Autobiography of a Yogi\"@en \"Paramahansa Yogananda\"@en) (\"The Story of My Experiments with Truth\"@en \"Mahatma Gandhi\"@en) (\"Man's Search for Meaning\"@en \"Viktor Frankl\"@en) (\"Me Talk Pretty One Day\"@en \"David Sedaris\"@en) (\"Naked\"@en \"David Sedaris\"@en) (\"A Heartbreaking Work of Staggering Genius\"@en \"Dave Eggers\"@en) (\"Know My Name\"@en \"Chanel Miller\"@en) (\"Lab Girl\"@en \"Hope Jahren\"@en) (\"Between the World and Me\"@en \"Ta-Nehisi Coates\"@en) (\"Survival in Auschwitz\"@en \"Primo Levi\"@en) (\"The Hiding Place\"@en \"Corrie ten Boom\"@en) (\"The Boy Who Harnessed the Wind\"@en \"William Kamkwamba\"@en) (\"A Long Way Gone\"@en \"Ishmael Beah\"@en) (\"First They Killed My Father\"@en \"Loung Ung\"@en) (\"Reading Lolita in Tehran\"@en \"Azar Nafisi\"@en) (\"Infidel\"@en \"Ayaan Hirsi Ali\"@en) (\"Cheaper by the Dozen\"@en \"Frank Bunker Gilbreth Jr.\"@en) (\"Farewell to Manzanar\"@en \"Jeanne Wakatsuki Houston\"@en) (\"All Creatures Great and Small\"@en \"James Herriot\"@en) (\"The Liars' Club\"@en \"Mary Karr\"@en) (\"Autobiography of Mark Twain\"@en \"Mark Twain\"@en) (\"The Education of Henry Adams\"@en \"Henry Adams\"@en) (\"Look Homeward, Angel\"@en \"Thomas Wolfe\"@en) (\"Self-Portrait\"@en \"Ruth Reichl\"@en) (\"Comfort Me with Apples\"@en \"Ruth Reichl\"@en) (\"Wave\"@en \"Sonali Deraniyagala\"@en) (\"Heart Berries\"@en \"Terese Marie Mailhot\"@en) (\"The Opposite of Loneliness\"@en \"Marina Keegan\"@en) (\"Brother, I'm Dying\"@en \"Edwidge Danticat\"@en) (\"The Immortal Life of Henrietta Lacks\"@en \"Rebecca Skloot\"@en) (\"Half Broke Horses\"@en \"Jeannette Walls\"@en) } ?item rdfs:label ?t ; wdt:P50 ?a ; wikibase:sitelinks ?sitelinks . ?a rdfs:label ?an ; wdt:P31 wd:Q5 . } GROUP BY ?item ?sitelinks } hint:Prior hint:runFirst true . FILTER(?nA = 1) OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T04:58:09.532Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T04:58:09.532Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "author",
+   "label": "Author",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "memoir",
+  "many": "memoirs",
+  "hookAsk": "Which memoir {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "author": {
+    "role": "code",
+    "pick": "Who wrote the memoir {label}?",
+    "statement": "{label} was written by {value}.",
+    "match": "Match each memoir to its author.",
+    "reverse": "Which of these did {value} write?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Man's Search for Meaning",
+   "qid": "Q426369",
+   "fame": 0.56,
+   "author": "Viktor Frankl",
+   "description": "1946 essay by Viktor Frankl",
+   "hook": "argues from a psychologist's time in concentration camps that finding purpose helps people endure suffering",
+   "known": 0.6,
+   "kind": "memoir"
+  },
+  {
+   "label": "Tuesdays with Morrie",
+   "qid": "Q1154340",
+   "fame": 0.541,
+   "author": "Mitch Albom",
+   "description": "book by Mitch Albom",
+   "hook": "recounts a journalist's weekly visits to his dying former college professor and the life lessons he shared",
+   "known": 0.6,
+   "kind": "memoir"
+  },
+  {
+   "label": "The Glass Castle",
+   "qid": "Q7736704",
+   "fame": 0.529,
+   "author": "Jeannette Walls",
+   "description": "2005 memoir by Jeannette Walls",
+   "hook": "recounts a nomadic, poor childhood with brilliant, dysfunctional parents who promised a dream home",
+   "known": 0.6,
+   "kind": "memoir"
+  },
+  {
+   "label": "Maus",
+   "qid": "Q59696",
+   "fame": 0.516,
+   "author": "Art Spiegelman",
+   "description": "1980 graphic novel by Art Spiegelman",
+   "hook": "tells a Holocaust survivor's story as a comic with animal characters, winning a Pulitzer",
+   "known": 0.4,
+   "kind": "graphic novel"
+  },
+  {
+   "label": "Educated",
+   "qid": "Q61064573",
+   "fame": 0.487,
+   "author": "Tara Westover",
+   "description": "memoir by Tara Westover",
+   "hook": "tells how a woman raised by survivalist parents with no schooling went on to earn a Cambridge doctorate",
+   "known": 0.6,
+   "kind": "memoir"
+  },
+  {
+   "label": "I Know Why the Caged Bird Sings",
+   "qid": "Q3163506",
+   "fame": 0.485,
+   "author": "Maya Angelou",
+   "description": "1969 autobiography about the early years of African-American writer and poet Maya Angelou",
+   "hook": "follows a Black girl raised in Arkansas through trauma and prejudice, in the first of seven volumes",
+   "known": 0.95,
+   "kind": "autobiography"
+  },
+  {
+   "label": "Autobiography of a Yogi",
+   "qid": "Q784092",
+   "fame": 0.481,
+   "author": "Paramahansa Yogananda",
+   "description": "autobiography of Paramahansa Yogananda",
+   "hook": null,
+   "known": 0.2,
+   "kind": "autobiography"
+  },
+  {
+   "label": "Angela's Ashes",
+   "qid": "Q892456",
+   "fame": 0.476,
+   "author": "Frank McCourt",
+   "description": "1996 memoir by Frank McCourt",
+   "hook": "recounts a poverty-stricken Irish childhood in Limerick and won a Pulitzer Prize for autobiography",
+   "known": 0.8,
+   "kind": "memoir"
+  },
+  {
+   "label": "The Year of Magical Thinking",
+   "qid": "Q993664",
+   "fame": 0.472,
+   "author": "Joan Didion",
+   "description": "2005 memoir by Joan Didion",
+   "hook": "chronicles a writer's grief after her husband suddenly died, and won the National Book Award",
+   "known": 0.4,
+   "kind": "memoir"
+  },
+  {
+   "label": "Night",
+   "qid": "Q592503",
+   "fame": 0.471,
+   "author": "Elie Wiesel",
+   "description": "1956 memoir in yiddish by Elie Wiesel translated  from the French version into English in 1960 and 1981 by Stella Rodway, published in 1982",
+   "hook": "recounts a teenage boy's loss of faith and survival alongside his father in Nazi death camps",
+   "known": 0.95,
+   "kind": "autobiography"
+  },
+  {
+   "label": "Persepolis",
+   "qid": "Q756604",
+   "fame": 0.471,
+   "author": "Marjane Satrapi",
+   "description": "2000–2003 French-language graphic novel series by Marjane Satrapi",
+   "hook": "tells in black-and-white comics a girl's coming of age during the Iranian Revolution and later life in Europe",
+   "known": 0.4,
+   "kind": "graphic novel"
+  },
+  {
+   "label": "Into Thin Air",
+   "qid": "Q851767",
+   "fame": 0.468,
+   "author": "Jon Krakauer",
+   "description": "1997 account of The Mt. Everest disaster",
+   "hook": "gives a first-hand account of the storm on the world's tallest mountain that killed eight climbers",
+   "known": 0.6,
+   "kind": "memoir"
+  },
+  {
+   "label": "When Breath Becomes Air",
+   "qid": "Q28402661",
+   "fame": 0.462,
+   "author": "Paul Kalanithi",
+   "description": "Autobiographical nonfiction book",
+   "hook": null,
+   "known": 0.2,
+   "kind": "memoir"
+  }
+ ]
+}

@@ -1,0 +1,188 @@
+{
+ "id": "table.religion.religious-buildings-city",
+ "kind": "table",
+ "title": "Famous religious buildings and their city",
+ "genre": "society",
+ "category": "religion",
+ "topic": "sacred-places",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?cityLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?city) (COUNT(DISTINCT ?c) AS ?nC) WHERE { VALUES ?item { wd:Q2981 wd:Q12512 wd:Q5933 wd:Q29265 wd:Q173882 wd:Q4176 wd:Q48435 wd:Q180274 wd:Q206823 wd:Q28785 wd:Q129846 wd:Q12506 wd:Q80541 wd:Q428858 wd:Q486080 wd:Q180422 wd:Q940843 wd:Q43473 wd:Q464535 wd:Q724970 wd:Q1059910 wd:Q460367 wd:Q270983 wd:Q714828 wd:Q615183 wd:Q191763 wd:Q287165 wd:Q125445 wd:Q232771 wd:Q735914 wd:Q4513 wd:Q134821 wd:Q194504 wd:Q390169 wd:Q252575 wd:Q390150 wd:Q746207 wd:Q476529 wd:Q579004 wd:Q184407 wd:Q205136 wd:Q231606 wd:Q5908 wd:Q22720 wd:Q5943 wd:Q668710 wd:Q82387 wd:Q194474 wd:Q404571 wd:Q215423 wd:Q215208 wd:Q7971367 wd:Q312342 wd:Q695604 wd:Q1255269 wd:Q33200 wd:Q643098 wd:Q1791841 wd:Q305419 wd:Q7709620 wd:Q2627029 wd:Q84090 wd:Q186282 wd:Q51177 wd:Q282554 wd:Q1754247 wd:Q10924 wd:Q207486 wd:Q18068 wd:Q221716 wd:Q587371 wd:Q261932 wd:Q12946982 wd:Q380384 wd:Q889902 wd:Q7586229 wd:Q9375937 wd:Q1143887 wd:Q184427 wd:Q189616 wd:Q522862 wd:Q134140 wd:Q10288 wd:Q1123019 wd:Q850042 wd:Q1236689 wd:Q209705 wd:Q1187606 wd:Q738015 wd:Q1355001 wd:Q638519 wd:Q573920 wd:Q330385 wd:Q207945 wd:Q185362 wd:Q660082 wd:Q220301 wd:Q540237 wd:Q1439379 wd:Q544113 wd:Q198409 wd:Q49642 wd:Q1547466 wd:Q1067803 wd:Q5949 wd:Q1453427 wd:Q157229 wd:Q154563 wd:Q2942242 wd:Q610961 wd:Q201720 wd:Q2886950 wd:Q284716 wd:Q810148 wd:Q1122206 wd:Q1051217 wd:Q289175 wd:Q2747222 wd:Q485727 wd:Q1045876 wd:Q496543 wd:Q233678 wd:Q330872 wd:Q500983 wd:Q41346 wd:Q1137533 wd:Q2480949 wd:Q683632 wd:Q184534 wd:Q178643 wd:Q183562 wd:Q29466 wd:Q754397 wd:Q1355822 wd:Q443107 wd:Q42798 wd:Q215023 wd:Q1268562 wd:Q1678260 wd:Q1424358 wd:Q242803 wd:Q916943 } ?item wdt:P131/wdt:P131?/wdt:P131? ?c . ?c wdt:P31 ?ct . VALUES ?ct { wd:Q515 wd:Q1549591 wd:Q484170 wd:Q532 wd:Q3957 } } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-30T01:08:51.819Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-30T01:08:51.819Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "city",
+   "label": "City",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "religious building",
+  "many": "religious buildings",
+  "wildcard": "place",
+  "columns": {
+   "city": {
+    "role": "link",
+    "pick": "Which city is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each religious building to its city.",
+    "reverse": "Which religious building is in {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Basilica and Expiatory Church of the Holy Family",
+   "qid": "Q48435",
+   "fame": 0.693,
+   "city": "Barcelona",
+   "description": "basilica under construction since 1882 in Barcelona, Spain",
+   "hook": "is a long-unfinished landmark designed by a famous architect known for nature-inspired forms",
+   "known": 0.8,
+   "kind": "church"
+  },
+  {
+   "label": "Jagannath Temple",
+   "qid": "Q1678260",
+   "fame": 0.541,
+   "city": "Puri",
+   "description": "Temple at Puri, Odisha",
+   "hook": "hosts a yearly festival where enormous wooden chariots are pulled through the streets by crowds",
+   "known": 0.4,
+   "kind": "temple"
+  },
+  {
+   "label": "St. Basil's Cathedral",
+   "qid": "Q129846",
+   "fame": 0.517,
+   "city": "Moscow",
+   "description": "church in Moscow",
+   "hook": "is crowned with swirling, brightly painted onion domes beside a famous red-bricked square",
+   "known": 0.95,
+   "kind": "cathedral"
+  },
+  {
+   "label": "Meenakshi Temple",
+   "qid": "Q1424358",
+   "fame": 0.51,
+   "city": "Madurai",
+   "description": "historic Hindu temple in Madurai, Tamil Nadu, India",
+   "hook": "is dedicated to a goddess and crowded with towering gateways covered in colorful sculpted figures",
+   "known": 0.2,
+   "kind": "temple"
+  },
+  {
+   "label": "Prophet's Mosque",
+   "qid": "Q486080",
+   "fame": 0.507,
+   "city": "Medina",
+   "description": "mosque in Medina, Saudi Arabia",
+   "hook": "was founded by the founder of Islam and shelters his tomb beneath a famous green dome",
+   "known": 0.6,
+   "kind": "mosque"
+  },
+  {
+   "label": "Prahadisvarar Temple",
+   "qid": "Q916943",
+   "fame": 0.49,
+   "city": "Thanjavur",
+   "description": "11th century Tamil Chola Dynasty Temple and UNESCO World Heritage Site",
+   "hook": "is a granite Chola-built shrine to Shiva crowned by a massive carved capstone",
+   "known": 0.2,
+   "kind": "temple"
+  },
+  {
+   "label": "Archbasilica of St. John Lateran",
+   "qid": "Q84090",
+   "fame": 0.489,
+   "city": "Rome",
+   "description": "cathedral in Rome, Italy",
+   "hook": "is the pope's official cathedral as a bishop, ranking above the Vatican's more famous basilica",
+   "known": 0.4,
+   "kind": "basilica"
+  },
+  {
+   "label": "Basilica di Santa Maria Maggiore",
+   "qid": "Q186282",
+   "fame": 0.476,
+   "city": "Rome",
+   "description": "largest Catholic Marian church in Rome",
+   "hook": "is the biggest Catholic church dedicated to the Virgin Mary",
+   "known": 0.4,
+   "kind": "basilica"
+  },
+  {
+   "label": "Fushimi Inari-taisha",
+   "qid": "Q714828",
+   "fame": 0.472,
+   "city": "Kyoto",
+   "description": "Shinto shrines in Kyoto, Japan",
+   "hook": "is famous for thousands of bright orange gates winding up a forested mountain",
+   "known": 0.6,
+   "kind": "shrine"
+  },
+  {
+   "label": "Temple of Heaven",
+   "qid": "Q125445",
+   "fame": 0.472,
+   "city": "Beijing",
+   "description": "imperial complex of religious buildings in Beijing, China",
+   "hook": "is where emperors performed rituals for good harvests, centred on a round blue-roofed hall",
+   "known": 0.6,
+   "kind": "temple"
+  },
+  {
+   "label": "Umayyad Mosque",
+   "qid": "Q183562",
+   "fame": 0.465,
+   "city": "Damascus",
+   "description": "mosque in Damascus, Syria",
+   "hook": "is one of the oldest and largest places of Islamic worship, said to shelter the head of John the Baptist",
+   "known": 0.4,
+   "kind": "mosque"
+  },
+  {
+   "label": "Pashupatinath Temple",
+   "qid": "Q380384",
+   "fame": 0.46,
+   "city": "Kathmandu",
+   "description": "Hindu temple in Kathmandu",
+   "hook": "is a major Hindu pilgrimage site to Shiva on the banks of the Bagmati River",
+   "known": 0.2,
+   "kind": "temple"
+  },
+  {
+   "label": "Somnath temple",
+   "qid": "Q1143887",
+   "fame": 0.456,
+   "city": "Veraval",
+   "description": "Shiva temple in Gujarat, India",
+   "hook": "is a Shiva shrine on the Arabian Sea coast, revered as the first of twelve sacred jyotirlinga sites",
+   "known": 0.2,
+   "kind": "temple"
+  }
+ ]
+}

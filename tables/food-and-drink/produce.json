@@ -1,0 +1,417 @@
+{
+ "id": "table.food-and-drink.produce",
+ "kind": "table",
+ "title": "Crops and the country that grows the most",
+ "genre": "daily-life",
+ "category": "food-and-drink",
+ "topic": "ingredients",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Hand-built, checked row by row against English Wikipedia",
+  "method": null,
+  "attribution": null,
+  "fetchedAt": "2026-09-27T02:09:36.034Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T03:01:29.000Z",
+  "volatile": true
+ },
+ "columns": [
+  {
+   "key": "top_producer",
+   "label": "Top producer",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "kind",
+   "label": "Kind",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "crop",
+  "many": "crops",
+  "lowerInProse": true,
+  "capitalise": true,
+  "hookAsk": "Which crop {hook}?",
+  "columns": {
+   "top_producer": {
+    "role": "link",
+    "pick": "Which country grows the most {label}?",
+    "statement": "{value} grows more {label} than any other country.",
+    "match": "Match each crop to the country that grows the most of it.",
+    "all": "Tap all {n} crops that {value} grows the most of."
+   }
+  },
+  "hookStatement": ""
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Apples",
+   "qid": "Q89",
+   "fame": 0.668,
+   "top_producer": "China",
+   "kind": "fruit",
+   "description": "edible fruit of the apple tree",
+   "hook": "is a crisp fruit that grows on trees and comes in red, green or yellow varieties",
+   "known": 0.95
+  },
+  {
+   "label": "Bananas",
+   "qid": "Q503",
+   "fame": 0.621,
+   "top_producer": "India",
+   "kind": "fruit",
+   "description": "elongated, edible fruit produced by several kinds of large herbaceous flowering plants in the genus Musa",
+   "hook": "is a curved yellow fruit that grows in bunches called hands on tall plants",
+   "known": 0.95
+  },
+  {
+   "label": "Corn",
+   "qid": "Q11575",
+   "fame": 0.61,
+   "top_producer": "United States",
+   "kind": "grain",
+   "description": "species of grass cultivated as a food crop",
+   "hook": "grows on tall stalks with kernels packed onto a cob wrapped in husks",
+   "known": 0.95
+  },
+  {
+   "label": "Avocados",
+   "qid": "Q37153",
+   "fame": 0.606,
+   "top_producer": "Mexico",
+   "kind": "fruit",
+   "description": "species of plant, use Q961769 for the fruit",
+   "hook": "is a pear-shaped fruit with buttery green flesh around one large pit, and browns fast once cut open",
+   "known": 0.95
+  },
+  {
+   "label": "Potatoes",
+   "qid": "Q10998",
+   "fame": 0.603,
+   "top_producer": "China",
+   "kind": "vegetable",
+   "description": "species of plant (for the food, use Q16587531)",
+   "hook": "is a starchy tuber that grows underground and gets mashed, fried or baked whole",
+   "known": 0.95
+  },
+  {
+   "label": "Tomatoes",
+   "qid": "Q23501",
+   "fame": 0.603,
+   "top_producer": "China",
+   "kind": "vegetable",
+   "description": "type of plant species with edible, often red, berry fruit",
+   "hook": "is a juicy red fruit often mistaken for a vegetable and used in sauces and salads",
+   "known": 0.95
+  },
+  {
+   "label": "Quinoa",
+   "qid": "Q139925",
+   "fame": 0.584,
+   "top_producer": "Peru",
+   "kind": "grain",
+   "description": "species of plant",
+   "hook": "is a tiny protein-rich seed cooked like a grain and popular in health-food bowls",
+   "known": 0.6
+  },
+  {
+   "label": "Peanuts",
+   "qid": "Q37383",
+   "fame": 0.575,
+   "top_producer": "China",
+   "kind": "nut",
+   "description": "legume cultivated for use of the underground seedpods as a grain crop, and also processed as peanut oil",
+   "hook": "grows underground in pods despite being called a nut, and gets pressed into a creamy spread",
+   "known": 0.95
+  },
+  {
+   "label": "Figs",
+   "qid": "Q36146",
+   "fame": 0.572,
+   "top_producer": "Turkey",
+   "kind": "fruit",
+   "description": "species of plant",
+   "hook": "is a soft, seed-filled fruit often dried and eaten with cheese or in preserves",
+   "known": 0.6
+  },
+  {
+   "label": "Sweet potatoes",
+   "qid": "Q37937",
+   "fame": 0.561,
+   "top_producer": "China",
+   "kind": "vegetable",
+   "description": "species of plant",
+   "hook": "is an orange-fleshed root vegetable often roasted or mashed for holiday meals",
+   "known": 0.8
+  },
+  {
+   "label": "Cloves",
+   "qid": "Q26736",
+   "fame": 0.559,
+   "top_producer": "Indonesia",
+   "kind": "spice",
+   "description": "species of plant",
+   "hook": "is a dried aromatic flower bud used whole or ground in warm spice blends",
+   "known": 0.6
+  },
+  {
+   "label": "Wheat",
+   "qid": "Q15645384",
+   "fame": 0.558,
+   "top_producer": "China",
+   "kind": "grain",
+   "description": "widely cultivated cereal grain",
+   "hook": "is a cereal grain milled into flour for bread, pasta and countless baked goods",
+   "known": 0.95
+  },
+  {
+   "label": "Black pepper",
+   "qid": "Q43084",
+   "fame": 0.557,
+   "top_producer": "Vietnam",
+   "kind": "spice",
+   "description": "species of plant",
+   "hook": "is a dried berry ground into the world's most common savory table seasoning",
+   "known": 0.95
+  },
+  {
+   "label": "Oranges",
+   "qid": "Q13191",
+   "fame": 0.556,
+   "top_producer": "Brazil",
+   "kind": "fruit",
+   "description": "citrus fruit of the orange tree",
+   "hook": "is a round citrus fruit prized for its juice and segmented, easy-peel flesh",
+   "known": 0.95
+  },
+  {
+   "label": "Barley",
+   "qid": "Q11577",
+   "fame": 0.555,
+   "top_producer": "Russia",
+   "kind": "grain",
+   "description": "species of plant",
+   "hook": "is a cereal grain malted for brewing beer and whisky or added to hearty soups",
+   "known": 0.6
+  },
+  {
+   "label": "Strawberries",
+   "qid": "Q13158",
+   "fame": 0.553,
+   "top_producer": "China",
+   "kind": "fruit",
+   "description": "hybrid species in the rose family",
+   "hook": "is a heart-shaped red berry covered in tiny seeds on its outer skin",
+   "known": 0.95
+  },
+  {
+   "label": "Kiwifruit",
+   "qid": "Q13194",
+   "fame": 0.553,
+   "top_producer": "China",
+   "kind": "fruit",
+   "description": "edible berry of several species of woody vines in the genus Actinidia, native to India",
+   "hook": "is a fuzzy brown-skinned fruit with bright green flesh and tiny black seeds inside",
+   "known": 0.95
+  },
+  {
+   "label": "Mangoes",
+   "qid": "Q169",
+   "fame": 0.55,
+   "top_producer": "India",
+   "kind": "fruit",
+   "description": "fruit of the mango tree",
+   "hook": "is a sweet tropical fruit with a large flat pit and juicy orange flesh",
+   "known": 0.95
+  },
+  {
+   "label": "Chickpeas",
+   "qid": "Q81375",
+   "fame": 0.55,
+   "top_producer": "India",
+   "kind": "bean",
+   "description": "species of legume plant",
+   "hook": "is a round legume ground into flour or blended into a creamy dip with tahini",
+   "known": 0.6
+  },
+  {
+   "label": "Chilli peppers",
+   "qid": "Q165199",
+   "fame": 0.543,
+   "top_producer": "China",
+   "kind": "vegetable",
+   "description": "fruit of plants from the genus Capsicum, members of the nightshade family, Solanaceae",
+   "hook": "is a spicy fruit ranging from mild to fiery, used fresh, dried or ground into hot sauce",
+   "known": 0.8
+  },
+  {
+   "label": "Tea",
+   "qid": "Q101815",
+   "fame": 0.533,
+   "top_producer": "China",
+   "kind": "crop",
+   "description": "species of plant",
+   "hook": "is a plant whose dried leaves are steeped in hot water to make a beloved hot beverage",
+   "known": 0.95
+  },
+  {
+   "label": "Almonds",
+   "qid": "Q15545507",
+   "fame": 0.531,
+   "top_producer": "United States",
+   "kind": "nut",
+   "description": "species of plant",
+   "hook": "is a tree nut often roasted as a snack or ground into a dairy-free milk",
+   "known": 0.95
+  },
+  {
+   "label": "Yams",
+   "qid": "Q8047551",
+   "fame": 0.529,
+   "top_producer": "Nigeria",
+   "kind": "vegetable",
+   "description": "edible tuber",
+   "hook": "is a rough-skinned starchy tuber often confused with a similar orange root vegetable",
+   "known": 0.4
+  },
+  {
+   "label": "Olives",
+   "qid": "Q1621080",
+   "fame": 0.527,
+   "top_producer": "Spain",
+   "kind": "fruit",
+   "description": "fruit of the olive tree",
+   "hook": "is a small stone fruit cured and eaten whole or pressed into a rich cooking oil",
+   "known": 0.95
+  },
+  {
+   "label": "Ginger",
+   "qid": "Q35625",
+   "fame": 0.527,
+   "top_producer": "India",
+   "kind": "spice",
+   "description": "plant species",
+   "hook": "is a knobby, spicy root used fresh, dried or pickled to add a warm bite to food",
+   "known": 0.8
+  },
+  {
+   "label": "Papayas",
+   "qid": "Q34887",
+   "fame": 0.52,
+   "top_producer": "India",
+   "kind": "fruit",
+   "description": "species of plant",
+   "hook": "is a soft tropical fruit with orange flesh and a hollow center full of round black seeds",
+   "known": 0.6
+  },
+  {
+   "label": "Garlic",
+   "qid": "Q23400",
+   "fame": 0.519,
+   "top_producer": "China",
+   "kind": "vegetable",
+   "description": "species of plant (for the food, use Q21546392)",
+   "hook": "is a pungent bulb split into small cloves and used crushed or minced to season savory cooking",
+   "known": 0.95
+  },
+  {
+   "label": "Sugarcane",
+   "qid": "Q36940",
+   "fame": 0.518,
+   "top_producer": "Brazil",
+   "kind": "crop",
+   "description": "several species of grass cultivated for sugar production",
+   "hook": "is a tall grass whose stalks are pressed and refined into common table sweetener",
+   "known": 0.95
+  },
+  {
+   "label": "Cherries",
+   "qid": "Q196",
+   "fame": 0.517,
+   "top_producer": "Turkey",
+   "kind": "fruit",
+   "description": "fruit of the cherry tree",
+   "hook": "is a small stone fruit that ranges from tart to sweet and stains fingers red",
+   "known": 0.95
+  },
+  {
+   "label": "Cocoa beans",
+   "qid": "Q208008",
+   "fame": 0.515,
+   "top_producer": "Ivory Coast",
+   "kind": "crop",
+   "description": "fatty seed of Theobroma cacao which is the basis of chocolate",
+   "hook": "is the seed roasted and ground to make chocolate, found inside a large tree pod",
+   "known": 0.95
+  },
+  {
+   "label": "Grapes",
+   "qid": "Q10978",
+   "fame": 0.512,
+   "top_producer": "China",
+   "kind": "fruit",
+   "description": "edible berry of a flowering plant in the family Vitaceae",
+   "hook": "is a small round fruit that grows in clusters on vines and gets pressed into wine",
+   "known": 0.95
+  },
+  {
+   "label": "Palm oil",
+   "qid": "Q231458",
+   "fame": 0.51,
+   "top_producer": "Indonesia",
+   "kind": "crop",
+   "description": "edible and biocombustible vegetable oil from fruit of oil palms",
+   "hook": "comes from the pressed fruit of a tropical tree and shows up in countless packaged snacks",
+   "known": 0.4
+  },
+  {
+   "label": "Hazelnuts",
+   "qid": "Q578307",
+   "fame": 0.505,
+   "top_producer": "Turkey",
+   "kind": "nut",
+   "description": "nut of the hazel tree",
+   "hook": "is a round tree nut often roasted and blended into a sweet chocolate spread",
+   "known": 0.6
+  },
+  {
+   "label": "Natural rubber",
+   "qid": "Q131877",
+   "fame": 0.493,
+   "top_producer": "Thailand",
+   "kind": "crop",
+   "description": "polymers of the organic compound isoprene, with minor impurities of other organic compounds; refined from latex harvested from rubber trees",
+   "hook": "is a stretchy material tapped as milky sap from a tropical tree's bark",
+   "known": 0.4
+  },
+  {
+   "label": "Coffee beans",
+   "qid": "Q153697",
+   "fame": 0.475,
+   "top_producer": "Brazil",
+   "kind": "crop",
+   "description": "seed of the coffee plant",
+   "hook": "is the roasted seed ground and brewed to make the world's favorite morning pick-me-up drink",
+   "known": 0.95
+  }
+ ]
+}

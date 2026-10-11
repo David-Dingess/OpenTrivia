@@ -1,0 +1,252 @@
+{
+ "id": "table.getting-around.metro-systems",
+ "kind": "table",
+ "title": "Metro systems and the city they serve",
+ "genre": "daily-life",
+ "category": "getting-around",
+ "topic": "trains",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?city ?nick ?countryLabel WHERE { VALUES (?item ?city ?nick) { (wd:Q20075 \"London\" \"the Tube\") (wd:Q5499 \"Moscow\" UNDEF) (wd:Q50716 \"Paris\" UNDEF) (wd:Q7733 \"New York City\" \"the Subway\") (wd:Q250225 \"Saint Petersburg\" UNDEF) (wd:Q483343 \"São Paulo\" UNDEF) (wd:Q190271 \"Prague\" UNDEF) (wd:Q215871 \"Kyiv\" UNDEF) (wd:Q235319 \"Beijing\" UNDEF) (wd:Q68646 \"Berlin\" UNDEF) (wd:Q271195 \"Delhi\" UNDEF) (wd:Q191987 \"Madrid\" UNDEF) (wd:Q462201 \"Shanghai\" UNDEF) (wd:Q498172 \"Istanbul\" UNDEF) (wd:Q237480 \"Rome\" UNDEF) (wd:Q207287 \"Helsinki\" UNDEF) (wd:Q336488 \"Athens\" UNDEF) (wd:Q40176 \"Singapore\" \"the MRT\") (wd:Q211044 \"Budapest\" UNDEF) (wd:Q506298 \"Brussels\" UNDEF) (wd:Q83787 \"Dubai\" UNDEF) (wd:Q272926 \"Stockholm\" \"the T-bana\") (wd:Q164054 \"Munich\" UNDEF) (wd:Q209400 \"Vienna\" UNDEF) (wd:Q237189 \"Barcelona\" UNDEF) (wd:Q14751 \"Hong Kong\" \"the MTR\") (wd:Q171221 \"Washington, D.C.\" UNDEF) (wd:Q506290 \"Glasgow\" \"the Clockwork Orange\") (wd:Q714823 \"Tehran\" UNDEF) (wd:Q212741 \"Copenhagen\" UNDEF) (wd:Q685381 \"Cairo\" UNDEF) (wd:Q746032 \"Lisbon\" UNDEF) (wd:Q16950 \"Seoul\" UNDEF) (wd:Q260870 \"Amsterdam\" UNDEF) (wd:Q497044 \"Buenos Aires\" \"the Subte\") (wd:Q735042 \"Mexico City\" UNDEF) (wd:Q962135 \"Tokyo\" UNDEF) (wd:Q820880 \"Chicago\" \"the L\") (wd:Q392377 \"Montreal\" UNDEF) (wd:Q20379 \"Toronto\" UNDEF) (wd:Q610120 \"San Francisco Bay Area\" \"BART\") (wd:Q876780 \"Vancouver\" UNDEF) (wd:Q1339558 \"Los Angeles\" UNDEF) (wd:Q806501 \"Bangkok\" UNDEF) (wd:Q6445 \"Hamburg\" UNDEF) (wd:Q735559 \"Milan\" UNDEF) (wd:Q913314 \"Santiago\" UNDEF) (wd:Q714810 \"Taipei\" UNDEF) (wd:Q646414 \"Mumbai\" UNDEF) (wd:Q303026 \"Osaka\" UNDEF) (wd:Q1133623 \"Rio de Janeiro\" UNDEF) (wd:Q1552 \"Lyon\" UNDEF) (wd:Q14774571 \"Sydney\" UNDEF) } OPTIONAL { ?item wdt:P17 ?country . FILTER NOT EXISTS { ?item wdt:P17 ?c2 . FILTER(?c2 != ?country) } } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-02T13:48:40.625Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-02T14:05:00.000Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "city",
+   "label": "City",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "nickname",
+   "label": "Nickname",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "metro system",
+  "many": "metro systems",
+  "wildcard": "place",
+  "minFame": 0.45,
+  "exclude": [
+   {
+    "qid": "Q5499",
+    "why": "Moscow Metro: Russia questions are political-adjacent"
+   }
+  ],
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is the {label} in?",
+    "statement": "The {label} is in {value}.",
+    "match": "Match each metro system to its country.",
+    "odd": "Three of these metro systems are in {value}. Which one isn't?",
+    "all": "Tap all {n} metro systems in {value}."
+   },
+   "city": {
+    "role": "code"
+   },
+   "nickname": {
+    "role": "code"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "London Underground",
+   "qid": "Q20075",
+   "fame": 0.586,
+   "city": "London",
+   "nickname": "the Tube",
+   "country": "United Kingdom",
+   "description": "public rapid transit system in London, UK",
+   "hook": "is the oldest metro system in the world, first opened in Victorian times",
+   "known": 0.95,
+   "kind": "iconic"
+  },
+  {
+   "label": "New York City Subway",
+   "qid": "Q7733",
+   "fame": 0.577,
+   "city": "New York City",
+   "nickname": null,
+   "country": "United States",
+   "description": "rapid transit system in New York City",
+   "hook": "runs around the clock every day and has more stations than any other system in the world",
+   "known": 0.95,
+   "kind": "iconic"
+  },
+  {
+   "label": "Delhi Metro",
+   "qid": "Q271195",
+   "fame": 0.526,
+   "city": "Delhi",
+   "nickname": null,
+   "country": "India",
+   "description": "rapid transit system in India serving Delhi and surrounding regions",
+   "hook": "is the biggest and busiest rail network of its kind in its nation, with elevated and underground stations",
+   "known": 0.6,
+   "kind": "major-asian"
+  },
+  {
+   "label": "Bay Area Rapid Transit",
+   "qid": "Q610120",
+   "fame": 0.518,
+   "city": "San Francisco Bay Area",
+   "nickname": "BART",
+   "country": "United States",
+   "description": "rapid transit system in the San Francisco Bay Area, California, United States",
+   "hook": "is the seventh-busiest subway-style network in its country and reaches an airport by automated guideway",
+   "known": 0.4,
+   "kind": "major-north-american"
+  },
+  {
+   "label": "Chicago \"L\"",
+   "qid": "Q820880",
+   "fame": 0.51,
+   "city": "Chicago",
+   "nickname": "the L",
+   "country": "United States",
+   "description": "rapid transit system in Chicago, Illinois, operated by the CTA",
+   "hook": "takes its one-letter name from the word elevated and ranks third in busyness among its country's systems",
+   "known": 0.4,
+   "kind": "major-north-american"
+  },
+  {
+   "label": "Mass Rapid Transit",
+   "qid": "Q40176",
+   "fame": 0.503,
+   "city": "Singapore",
+   "nickname": "the MRT",
+   "country": "Singapore",
+   "description": "Mass rapid transit system in Singapore",
+   "hook": "is the main rail backbone of an island city-state, which opened with just five stations",
+   "known": 0.4,
+   "kind": "major-asian"
+  },
+  {
+   "label": "Mumbai Metro",
+   "qid": "Q646414",
+   "fame": 0.501,
+   "city": "Mumbai",
+   "nickname": null,
+   "country": "India",
+   "description": "rapid transit system serving the city of Mumbai, Maharashtra, India",
+   "hook": "was designed to ease the strain on an overcrowded commuter rail network in a huge coastal city",
+   "known": 0.4,
+   "kind": "major-asian"
+  },
+  {
+   "label": "Washington Metro",
+   "qid": "Q171221",
+   "fame": 0.487,
+   "city": "Washington, D.C.",
+   "nickname": null,
+   "country": "United States",
+   "description": "Washington, D.C. rapid transit system",
+   "hook": "ranks second in busyness in its country and serves the capital plus parts of Maryland and Virginia",
+   "known": 0.6,
+   "kind": "major-north-american"
+  },
+  {
+   "label": "Moscow Metro",
+   "qid": "Q5499",
+   "fame": 0.486,
+   "city": "Moscow",
+   "nickname": null,
+   "country": "Russia",
+   "description": "rapid transit system in Moscow agglomeration",
+   "hook": "is the only system in the world with three circle lines and the longest in Europe",
+   "known": 0.6,
+   "kind": "european"
+  },
+  {
+   "label": "SkyTrain",
+   "qid": "Q876780",
+   "fame": 0.485,
+   "city": "Vancouver",
+   "nickname": null,
+   "country": "Canada",
+   "description": "automated rapid transit system in Metro Vancouver, Canada",
+   "hook": null,
+   "known": 0.2,
+   "kind": "major-north-american"
+  },
+  {
+   "label": "Los Angeles Metro Rail",
+   "qid": "Q1339558",
+   "fame": 0.473,
+   "city": "Los Angeles",
+   "nickname": null,
+   "country": "United States",
+   "description": "urban rail transit system serving Los Angeles County, California, United States",
+   "hook": null,
+   "known": 0.3,
+   "kind": "major-north-american"
+  },
+  {
+   "label": "Paris Métro",
+   "qid": "Q50716",
+   "fame": 0.465,
+   "city": "Paris",
+   "nickname": null,
+   "country": "France",
+   "description": "rapid transport system of Paris, France",
+   "hook": "is known for its Art Nouveau station entrances and its dense network packed into the capital",
+   "known": 0.95,
+   "kind": "iconic"
+  },
+  {
+   "label": "Toronto subway",
+   "qid": "Q20379",
+   "fame": 0.459,
+   "city": "Toronto",
+   "nickname": null,
+   "country": "Canada",
+   "description": "rapid transit system in Ontario, Canada",
+   "hook": null,
+   "known": 0.3,
+   "kind": "major-north-american"
+  },
+  {
+   "label": "Glasgow Subway",
+   "qid": "Q506290",
+   "fame": 0.451,
+   "city": "Glasgow",
+   "nickname": "the Clockwork Orange",
+   "country": "United Kingdom",
+   "description": "underground metro line in Glasgow, Scotland, UK",
+   "hook": null,
+   "known": 0.2,
+   "kind": "european"
+  }
+ ]
+}

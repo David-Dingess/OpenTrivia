@@ -1,0 +1,294 @@
+{
+ "id": "table.art.famous-sculptures",
+ "kind": "table",
+ "title": "Famous sculptures and their sculptor",
+ "genre": "arts-entertainment",
+ "category": "art",
+ "topic": "sculpture",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?creatorLabel WHERE { { SELECT ?item (SAMPLE(?c) AS ?creator) WHERE { ?item wikibase:sitelinks ?sl . FILTER(?sl > 8) ?item wdt:P31 wd:Q860861 . ?item wdt:P170 ?c . ?c wdt:P31 wd:Q5 . } GROUP BY ?item HAVING(COUNT(DISTINCT ?c) = 1) } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T10:16:56.066Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T10:16:56.066Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "sculptor",
+   "label": "Sculptor",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "sculpture",
+  "many": "sculptures",
+  "itemText": "{label} — {sculptor}",
+  "hookAsk": "Which sculpture {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "theLabels": [
+   "David",
+   "Pietà",
+   "Trevi Fountain",
+   "Manneken Pis",
+   "Fountain",
+   "Golden Rider",
+   "Jules Rimet Trophy",
+   "Madonna of Bruges",
+   "Veiled Christ",
+   "Bust of Queen Nefertiti",
+   "Moses",
+   "Comedian"
+  ],
+  "columns": {
+   "sculptor": {
+    "role": "link",
+    "pick": "Who sculpted {label}?",
+    "statement": "{label} was sculpted by {value}.",
+    "match": "Match each sculpture to the sculptor who made it.",
+    "reverse": "Which of these did {value} sculpt?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "David",
+   "qid": "Q179900",
+   "fame": 0.629,
+   "sculptor": "Michelangelo",
+   "description": "sculpture by Michelangelo",
+   "hook": "depicts a biblical shepherd about to face a giant, carved from a single block of marble",
+   "known": 0.95,
+   "kind": "figurative"
+  },
+  {
+   "label": "Pietà",
+   "qid": "Q235242",
+   "fame": 0.595,
+   "sculptor": "Michelangelo",
+   "description": "sculpture by Michelangelo",
+   "hook": "depicts a grieving mother cradling her son's body after his crucifixion",
+   "known": 0.95,
+   "kind": "figurative"
+  },
+  {
+   "label": "The Sphere",
+   "qid": "Q2164298",
+   "fame": 0.593,
+   "sculptor": "Fritz Koenig",
+   "description": "Sculpture in New York City",
+   "hook": "was heavily damaged when the towers behind it collapsed and now stands as a memorial nearby",
+   "known": 0.2,
+   "kind": "abstract"
+  },
+  {
+   "label": "Trevi Fountain",
+   "qid": "Q185382",
+   "fame": 0.563,
+   "sculptor": "Nicola Salvi",
+   "description": "Baroque fountain in Rome, Italy",
+   "hook": "is where visitors toss a coin over their shoulder to guarantee a return trip to the city",
+   "known": 0.8,
+   "kind": "figurative"
+  },
+  {
+   "label": "Cloud Gate",
+   "qid": "Q589099",
+   "fame": 0.54,
+   "sculptor": "Anish Kapoor",
+   "description": "public art sculpture in Chicago, Illinois, United States",
+   "hook": "reflects the city skyline in its mirror-like steel surface and is nicknamed for its bean-like shape",
+   "known": 0.6,
+   "kind": "abstract"
+  },
+  {
+   "label": "The Rape of Proserpina",
+   "qid": "Q2352789",
+   "fame": 0.526,
+   "sculptor": "Gian Lorenzo Bernini",
+   "description": "sculpture by Gian Lorenzo Bernini",
+   "hook": "shows the god of the underworld carrying off a young goddess to make her his queen",
+   "known": 0.4,
+   "kind": "figurative"
+  },
+  {
+   "label": "Comedian",
+   "qid": "Q77715187",
+   "fame": 0.525,
+   "sculptor": "Maurizio Cattelan",
+   "description": "Maurizio Cattelan artwork",
+   "hook": "is a piece of fruit duct-taped to a wall that someone later ate as a performance",
+   "known": 0.2,
+   "kind": "conceptual"
+  },
+  {
+   "label": "Manneken Pis",
+   "qid": "Q152072",
+   "fame": 0.516,
+   "sculptor": "Hiëronymus Duquesnoy the Elder",
+   "description": "bronze sculpture and fountain by Jérôme Duquesnoy the Elder in Brussels, Belgium",
+   "hook": "is a small bronze fountain figure of a boy relieving himself, often dressed up for local events",
+   "known": 0.4,
+   "kind": "figurative"
+  },
+  {
+   "label": "Fountain",
+   "qid": "Q1206847",
+   "fame": 0.506,
+   "sculptor": "Marcel Duchamp",
+   "description": "readymade sculpture attributed to Marcel Duchamp consisting of a porcelain urinal signed \"R. Mutt 1917\"",
+   "hook": "is a signed porcelain urinal that challenged what counts as a work of art",
+   "known": 0.4,
+   "kind": "conceptual"
+  },
+  {
+   "label": "Kryptos",
+   "qid": "Q1345100",
+   "fame": 0.5,
+   "sculptor": "Jim Sanborn",
+   "description": "encrypted sculpture by American artist Jim Sanborn",
+   "hook": "carries four encoded messages outside an intelligence agency's headquarters, one of them still unsolved",
+   "known": 0.05,
+   "kind": "abstract"
+  },
+  {
+   "label": "Golden Rider",
+   "qid": "Q558537",
+   "fame": 0.498,
+   "sculptor": "Jean-Joseph Vinache",
+   "description": "equestrian statue in Dresden",
+   "hook": "shows a gilded ruler on horseback overlooking a city street in Germany",
+   "known": 0.05,
+   "kind": "figurative"
+  },
+  {
+   "label": "Jules Rimet Trophy",
+   "qid": "Q11867844",
+   "fame": 0.498,
+   "sculptor": "Abel Lafleur",
+   "description": "original prize for winning the FIFA World Cup",
+   "hook": "was the original prize given to the winner of international football's biggest tournament, until it was stolen",
+   "known": 0.4,
+   "kind": "figurative"
+  },
+  {
+   "label": "The Veiled Virgin",
+   "qid": "Q7772129",
+   "fame": 0.487,
+   "sculptor": "Giovanni Strazza",
+   "description": "sculpture by Giovanni Strazza",
+   "hook": "shows a face beneath a carved veil so thin it looks almost see-through",
+   "known": 0.05,
+   "kind": "figurative"
+  },
+  {
+   "label": "Ecstasy of Saint Teresa",
+   "qid": "Q1333433",
+   "fame": 0.486,
+   "sculptor": "Gian Lorenzo Bernini",
+   "description": "sculpture by Gian Lorenzo Bernini",
+   "hook": "shows a nun in a swoon of religious rapture as an angel looks on beside her",
+   "known": 0.2,
+   "kind": "figurative"
+  },
+  {
+   "label": "The Kelpies",
+   "qid": "Q16988858",
+   "fame": 0.478,
+   "sculptor": "Andy Scott",
+   "description": "sculpture by Andy Scott",
+   "hook": "consists of two towering steel horse heads inspired by mythical water spirits",
+   "known": 0.05,
+   "kind": "figurative"
+  },
+  {
+   "label": "Charging Bull",
+   "qid": "Q860129",
+   "fame": 0.476,
+   "sculptor": "Arturo Di Modica",
+   "description": "bronze sculpture in New York",
+   "hook": "is a bronze animal near a financial district symbolizing an aggressive, optimistic market",
+   "known": 0.6,
+   "kind": "figurative"
+  },
+  {
+   "label": "The Endless Column",
+   "qid": "Q2628659",
+   "fame": 0.469,
+   "sculptor": "Constantin Brâncuși",
+   "description": "sculpture by Constantin Brâncuși",
+   "hook": "stacks rhomboid modules into a tall memorial honoring fallen soldiers",
+   "known": 0.2,
+   "kind": "abstract"
+  },
+  {
+   "label": "Homunculus Loxodontus",
+   "qid": "Q28698141",
+   "fame": 0.465,
+   "sculptor": "Margriet van Breevoort",
+   "description": "2016 sculpture by Margriet van Breevoort and an Internet meme",
+   "hook": "is a tiny sculpted creature resembling a miniature elephant that became a viral internet meme",
+   "known": 0.05,
+   "kind": "conceptual"
+  },
+  {
+   "label": "Madonna of Bruges",
+   "qid": "Q567833",
+   "fame": 0.465,
+   "sculptor": "Michelangelo",
+   "description": "sculpture by Michelangelo",
+   "hook": "was its sculptor's only finished work to leave Italy in his lifetime and now sits in a Belgian church",
+   "known": 0.2,
+   "kind": "figurative"
+  },
+  {
+   "label": "Veiled Christ",
+   "qid": "Q3697674",
+   "fame": 0.461,
+   "sculptor": "Giuseppe Sanmartino",
+   "description": "sculpture by Giuseppe Sanmartino",
+   "hook": "lies beneath a carved shroud so delicate it seems to reveal the body underneath, in a chapel in Naples",
+   "known": 0.05,
+   "kind": "figurative"
+  },
+  {
+   "label": "Bust of Queen Nefertiti",
+   "qid": "Q582172",
+   "fame": 0.453,
+   "sculptor": "Thutmose",
+   "description": "bust from the Amarna Period in the Neues Museum, Berlin",
+   "hook": "is missing one eye's inlay and has become an icon of ancient feminine beauty",
+   "known": 0.6,
+   "kind": "figurative"
+  },
+  {
+   "label": "Moses",
+   "qid": "Q1989744",
+   "fame": 0.451,
+   "sculptor": "Michelangelo",
+   "description": "sculpture by Michelangelo",
+   "hook": "has small horns on its head stemming from a famous mistranslation of a Hebrew word",
+   "known": 0.4,
+   "kind": "figurative"
+  }
+ ]
+}

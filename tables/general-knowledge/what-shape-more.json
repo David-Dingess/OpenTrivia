@@ -1,0 +1,237 @@
+{
+ "id": "table.general-knowledge.what-shape-more",
+ "kind": "table",
+ "title": "What shape? More famous things and their shape",
+ "genre": "general",
+ "category": "general-knowledge",
+ "topic": "what-shape",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?shapeLabel WHERE { VALUES (?item ?itemLabel ?shapeLabel) { (wd:Q38 \"Italy\" \"boot\") (wd:Q39231 \"Mount Fuji\" \"cone\") (wd:Q8081 \"Tornado\" \"funnel\") (wd:Q8092 \"Hurricane\" \"spiral\") (wd:Q254979 \"Cinnamon roll\" \"spiral\") (wd:Q2469 \"Andromeda Galaxy\" \"spiral\") (wd:Q13957 \"Whirlpool Galaxy\" \"spiral\") (wd:Q405 \"Moon\" \"sphere\") (wd:Q319 \"Jupiter\" \"sphere\") (wd:Q919777 \"Golf ball\" \"sphere\") (wd:Q246514 \"Tennis ball\" \"sphere\") (wd:Q635982 \"Bowling ball\" \"sphere\") (wd:Q262090 \"Soccer ball\" \"sphere\") (wd:Q1192656 \"Disco ball\" \"sphere\") (wd:Q1032349 \"Crystal ball\" \"sphere\") (wd:Q650736 \"Beach ball\" \"sphere\") (wd:Q43436 \"Pearl\" \"sphere\") (wd:Q500 \"Lemon\" \"oval\") (wd:Q503 \"Banana\" \"curve\") (wd:Q207832 \"Croissant\" \"crescent\") (wd:Q1118802 \"Slinky\" \"coil\") (wd:Q508918 \"Hockey puck\" \"disc\") (wd:Q2715770 \"American football\" \"prolate spheroid\") (wd:Q44541 \"Pancake\" \"circle\") (wd:Q131471 \"Dartboard\" \"circle\") (wd:Q29466 \"Kaaba\" \"cube\") (wd:Q99309 \"Pantheon\" \"dome\") (wd:Q17103699 \"Candy cane\" \"hook\") (wd:Q2893738 \"Hershey's Kisses\" \"cone\") (wd:Q776795 \"Doritos\" \"triangle\") (wd:Q175641 \"Tortilla chip\" \"triangle\") (wd:Q2425291 \"Cheerios\" \"ring\") (wd:Q3238376 \"Life Savers\" \"ring\") } OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 160",
+  "attribution": null,
+  "fetchedAt": "2026-10-04T10:22:01.430Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-10-04T10:22:01.430Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "shape",
+   "label": "Shape",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "thing",
+  "many": "things",
+  "capitalise": true,
+  "theLabels": [
+   "Moon",
+   "Andromeda Galaxy",
+   "Mount Fuji",
+   "Kaaba",
+   "Pantheon"
+  ],
+  "columns": {
+   "shape": {
+    "role": "link",
+    "pick": "What shape is {label}?",
+    "statement": "The shape of {label} is best described as {value}.",
+    "match": "Match each thing to its shape.",
+    "odd": "Three of these share this shape: {value}. Which one doesn't?",
+    "all": "Tap all {n} things with this shape: {value}.",
+    "reverse": "Which of these has this shape: {value}?"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Italy",
+   "qid": "Q38",
+   "fame": 0.741,
+   "shape": "boot",
+   "kind": "place",
+   "description": "country in southern Europe",
+   "hook": "is a peninsula nation of pasta, pizza, Rome and Venice, jutting into the Mediterranean",
+   "known": 0.95
+  },
+  {
+   "label": "Moon",
+   "qid": "Q405",
+   "fame": 0.708,
+   "shape": "sphere",
+   "kind": "space",
+   "description": "Earth's only natural satellite",
+   "hook": "orbits our world, drives the tides and was visited by Apollo astronauts",
+   "known": 0.95
+  },
+  {
+   "label": "Jupiter",
+   "qid": "Q319",
+   "fame": 0.682,
+   "shape": "sphere",
+   "kind": "space",
+   "description": "fifth planet in the Solar System and largest among all; gaseous giant mainly composed of hydrogen and helium",
+   "hook": "is the biggest planet in the Solar System, a gas giant with a famous Great Red Spot",
+   "known": 0.8
+  },
+  {
+   "label": "Kaaba",
+   "qid": "Q29466",
+   "fame": 0.661,
+   "shape": "cube",
+   "kind": "monument",
+   "description": "cubical shrine in Mecca, Saudi Arabia; direction of prayer for Muslims",
+   "hook": "is the stone building Muslims face when they pray, at the heart of the Great Mosque of Mecca",
+   "known": 0.6
+  },
+  {
+   "label": "Pantheon",
+   "qid": "Q99309",
+   "fame": 0.65,
+   "shape": "dome",
+   "kind": "monument",
+   "description": "ancient Roman temple in Rome, Italy",
+   "hook": "is an ancient Roman temple, now a church, famous for its huge concrete roof with an open oculus",
+   "known": 0.6
+  },
+  {
+   "label": "Andromeda Galaxy",
+   "qid": "Q2469",
+   "fame": 0.622,
+   "shape": "spiral",
+   "kind": "space",
+   "description": "barred spiral galaxy within the Local Group",
+   "hook": null,
+   "known": 0.3
+  },
+  {
+   "label": "Banana",
+   "qid": "Q503",
+   "fame": 0.621,
+   "shape": "curve",
+   "kind": "food",
+   "description": "elongated, edible fruit produced by several kinds of large herbaceous flowering plants in the genus Musa",
+   "hook": "is a long yellow fruit that grows in bunches and is peeled before eating",
+   "known": 0.95
+  },
+  {
+   "label": "Mount Fuji",
+   "qid": "Q39231",
+   "fame": 0.618,
+   "shape": "cone",
+   "kind": "nature",
+   "description": "volcano in Yamanashi and Shizuoka Prefectures, Japan",
+   "hook": "is the highest mountain in Japan, an active volcano famous for its snowcapped peak",
+   "known": 0.8
+  },
+  {
+   "label": "Tornado",
+   "qid": "Q8081",
+   "fame": 0.592,
+   "shape": "funnel",
+   "kind": "nature",
+   "description": "violently rotating column of air that is in contact with both the earth's surface and a cumulonimbus cloud in the air",
+   "hook": "is a violently rotating column of air from a storm cloud, feared across the American Midwest",
+   "known": 0.85
+  },
+  {
+   "label": "Lemon",
+   "qid": "Q500",
+   "fame": 0.586,
+   "shape": "oval",
+   "kind": "food",
+   "description": "nothospecies of plant",
+   "hook": "is a sour yellow citrus fruit used for juice, as in lemonade",
+   "known": 0.95
+  },
+  {
+   "label": "Hurricane",
+   "qid": "Q8092",
+   "fame": 0.568,
+   "shape": "spiral",
+   "kind": "nature",
+   "description": "rapidly rotating storm system that forms in the tropics",
+   "hook": "is a powerful tropical storm of the Atlantic with strong winds, heavy rain and an eye at its center",
+   "known": 0.85
+  },
+  {
+   "label": "Croissant",
+   "qid": "Q207832",
+   "fame": 0.543,
+   "shape": "crescent",
+   "kind": "food",
+   "description": "French pastry",
+   "hook": "is a buttery, flaky laminated-dough pastry, a classic French breakfast",
+   "known": 0.9
+  },
+  {
+   "label": "Pancake",
+   "qid": "Q44541",
+   "fame": 0.518,
+   "shape": "circle",
+   "kind": "food",
+   "description": "a brown thin, round cake made of eggs, milk and flour",
+   "hook": "is a flat griddled batter cake, stacked and served with syrup for breakfast",
+   "known": 0.95
+  },
+  {
+   "label": "Pearl",
+   "qid": "Q43436",
+   "fame": 0.506,
+   "shape": "sphere",
+   "kind": "nature",
+   "description": "hard object produced within the soft tissue of a living shelled mollusc",
+   "hook": "is a lustrous gem formed inside an oyster or other mollusk",
+   "known": 0.85
+  },
+  {
+   "label": "Doritos",
+   "qid": "Q776795",
+   "fame": 0.5,
+   "shape": "triangle",
+   "kind": "food",
+   "description": "American brand of flavored tortilla chips",
+   "hook": "is a crunchy corn chip brand from Frito-Lay, famous for nacho cheese flavor",
+   "known": 0.85
+  },
+  {
+   "label": "Cinnamon roll",
+   "qid": "Q254979",
+   "fame": 0.482,
+   "shape": "spiral",
+   "kind": "food",
+   "description": "sweet food pastry",
+   "hook": "is a rolled sweet yeast bun layered with sugar and a warm spice, often topped with icing",
+   "known": 0.85
+  },
+  {
+   "label": "Dartboard",
+   "qid": "Q131471",
+   "fame": 0.461,
+   "shape": "circle",
+   "kind": "game",
+   "description": "throwing game",
+   "hook": "is the target that players throw small pointed missiles at, with a bullseye at the center",
+   "known": 0.8
+  }
+ ]
+}

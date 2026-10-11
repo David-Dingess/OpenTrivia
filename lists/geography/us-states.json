@@ -1,0 +1,633 @@
+{
+ "id": "list.geography.us-states",
+ "title": "US states",
+ "prompt": "Name a US state",
+ "genre": "society",
+ "category": "geography",
+ "topic": "borders-and-maps",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q35657 . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-09-30T04:13:52.690Z"
+ },
+ "rows": [
+  {
+   "label": "California",
+   "qid": "Q99",
+   "fame": 0.74,
+   "also": [
+    "The Golden State",
+    "Golden State",
+    "State of California",
+    "Cal.",
+    "US-CA",
+    "Cali.",
+    "Calif."
+   ]
+  },
+  {
+   "label": "Hawaii",
+   "qid": "Q782",
+   "fame": 0.733,
+   "also": [
+    "Owyhee",
+    "Kaimana Hila",
+    "Hawaii State",
+    "State of Hawaii",
+    "The Aloha State",
+    "SOH",
+    "US-HI",
+    "Owhyhee"
+   ]
+  },
+  {
+   "label": "Texas",
+   "qid": "Q1439",
+   "fame": 0.706,
+   "also": [
+    "Lone Star State",
+    "State of Texas",
+    "Tex.",
+    "US-TX"
+   ]
+  },
+  {
+   "label": "Alaska",
+   "qid": "Q797",
+   "fame": 0.697,
+   "also": [
+    "The Last Frontier",
+    "Russian America",
+    "State of Alaska",
+    "US-AK"
+   ]
+  },
+  {
+   "label": "New Mexico",
+   "qid": "Q1522",
+   "fame": 0.689,
+   "also": [
+    "US-NM",
+    "Land of Enchantment",
+    "State of New Mexico"
+   ]
+  },
+  {
+   "label": "Massachusetts",
+   "qid": "Q771",
+   "fame": 0.685,
+   "also": [
+    "Mass.",
+    "Bay State",
+    "Commonwealth of Massachusetts",
+    "6th State",
+    "Commonwealth of MA",
+    "Massachusetts state",
+    "Masshole Commonwealth",
+    "State of Massachusetts",
+    "Taxachusetts",
+    "The Bay State",
+    "The Commonwealth of Massachusetts",
+    "US-MA"
+   ]
+  },
+  {
+   "label": "Pennsylvania",
+   "qid": "Q1400",
+   "fame": 0.684,
+   "also": [
+    "Commonwealth of Pennsylvania",
+    "Keystone State",
+    "Penna.",
+    "State of Pennsylvania",
+    "US-PA"
+   ]
+  },
+  {
+   "label": "New York",
+   "qid": "Q1384",
+   "fame": 0.68,
+   "also": [
+    "New York state",
+    "NY state",
+    "NYS",
+    "State of New York",
+    "US-NY",
+    "Empire State",
+    "The Empire State"
+   ]
+  },
+  {
+   "label": "Florida",
+   "qid": "Q812",
+   "fame": 0.673,
+   "also": [
+    "Sunshine State",
+    "The Sunshine State",
+    "Fla.",
+    "Peninsular State",
+    "State of Florida",
+    "The Gator State",
+    "US-FL"
+   ]
+  },
+  {
+   "label": "Washington",
+   "qid": "Q1223",
+   "fame": 0.664,
+   "also": [
+    "Evergreen State",
+    "State of Washington",
+    "US-WA",
+    "Washington State"
+   ]
+  },
+  {
+   "label": "New Jersey",
+   "qid": "Q1408",
+   "fame": 0.663,
+   "also": [
+    "Jersey",
+    "Garden State",
+    "Iersey",
+    "New Iersey",
+    "State of New Jersey",
+    "the Garden State",
+    "the State of New Jersey",
+    "US-NJ"
+   ]
+  },
+  {
+   "label": "Michigan",
+   "qid": "Q1166",
+   "fame": 0.655,
+   "also": [
+    "Wolverine State",
+    "Great Lakes State",
+    "Mich.",
+    "State of Michigan",
+    "US-MI"
+   ]
+  },
+  {
+   "label": "North Carolina",
+   "qid": "Q1454",
+   "fame": 0.655,
+   "also": [
+    "State of North Carolina",
+    "Tar Heel State",
+    "The Tar Heel State",
+    "US-NC"
+   ]
+  },
+  {
+   "label": "Ohio",
+   "qid": "Q1397",
+   "fame": 0.653,
+   "also": [
+    "Buckeye State",
+    "State of Ohio",
+    "US-OH"
+   ]
+  },
+  {
+   "label": "Georgia",
+   "qid": "Q1428",
+   "fame": 0.652,
+   "also": [
+    "State of Georgia",
+    "The Empire State of the South",
+    "The Goober State",
+    "The Peach State",
+    "US-GA"
+   ]
+  },
+  {
+   "label": "Minnesota",
+   "qid": "Q1527",
+   "fame": 0.651,
+   "also": [
+    "Minn.",
+    "North Star State",
+    "State of Minnesota",
+    "US-MN"
+   ]
+  },
+  {
+   "label": "Tennessee",
+   "qid": "Q1509",
+   "fame": 0.649,
+   "also": [
+    "State of Tennessee",
+    "Tenn.",
+    "The Volunteer State",
+    "US-TN",
+    "Volunteer State"
+   ]
+  },
+  {
+   "label": "Virginia",
+   "qid": "Q1370",
+   "fame": 0.648,
+   "also": [
+    "Old Dominion",
+    "Commonwealth of Virginia",
+    "State of Virginia",
+    "US-VA"
+   ]
+  },
+  {
+   "label": "Rhode Island",
+   "qid": "Q1387",
+   "fame": 0.645,
+   "also": [
+    "13th State",
+    "Little Rhody",
+    "Ocean State",
+    "Providence Plantations",
+    "Rhode Island and Providence Plantations",
+    "Rhode Island State",
+    "Road Island",
+    "State of Rhode Island",
+    "State of Rhode Island and Providence Plantations",
+    "The Ocean State",
+    "The State of Rhode Island and Providence Plantations",
+    "US-RI"
+   ]
+  },
+  {
+   "label": "Missouri",
+   "qid": "Q1581",
+   "fame": 0.643,
+   "also": [
+    "State of Missouri",
+    "The Show Me State",
+    "US-MO"
+   ]
+  },
+  {
+   "label": "Colorado",
+   "qid": "Q1261",
+   "fame": 0.642,
+   "also": [
+    "Centennial State",
+    "Colo.",
+    "State of Colorado",
+    "US-CO"
+   ]
+  },
+  {
+   "label": "Maryland",
+   "qid": "Q1391",
+   "fame": 0.642,
+   "also": [
+    "Old Line State",
+    "State of Maryland",
+    "US-MD"
+   ]
+  },
+  {
+   "label": "Connecticut",
+   "qid": "Q779",
+   "fame": 0.641,
+   "also": [
+    "Constitution State",
+    "The Constitution State",
+    "5th State",
+    "Conn.",
+    "Conneticut",
+    "State of Connecticut",
+    "The Nutmeg State",
+    "US-CT",
+    "Nutmeg State"
+   ]
+  },
+  {
+   "label": "Wyoming",
+   "qid": "Q1214",
+   "fame": 0.64,
+   "also": [
+    "Big Wyoming",
+    "State of Wyoming",
+    "The Cowboy State",
+    "The Equality State",
+    "US-WY",
+    "Wyo"
+   ]
+  },
+  {
+   "label": "Illinois",
+   "qid": "Q1204",
+   "fame": 0.638,
+   "also": [
+    "Prairie State",
+    "Land of Lincoln",
+    "Ill.",
+    "Ills.",
+    "Lincoln State",
+    "State of Illinois",
+    "The Land of Lincoln",
+    "The Prairie State",
+    "US-IL"
+   ]
+  },
+  {
+   "label": "Utah",
+   "qid": "Q829",
+   "fame": 0.637,
+   "also": [
+    "Beehive State",
+    "State of Utah",
+    "US-UT",
+    "Mormon State"
+   ]
+  },
+  {
+   "label": "Maine",
+   "qid": "Q724",
+   "fame": 0.636,
+   "also": [
+    "State of Maine",
+    "The Pine Tree State",
+    "US-ME"
+   ]
+  },
+  {
+   "label": "Arizona",
+   "qid": "Q816",
+   "fame": 0.634,
+   "also": [
+    "Ariz.",
+    "Grand Canyon State",
+    "State of Arizona",
+    "The Grand Canyon State",
+    "US-AZ"
+   ]
+  },
+  {
+   "label": "Wisconsin",
+   "qid": "Q1537",
+   "fame": 0.634,
+   "also": [
+    "Badger State",
+    "State of Wisconsin",
+    "US-WI",
+    "Wis."
+   ]
+  },
+  {
+   "label": "Louisiana",
+   "qid": "Q1588",
+   "fame": 0.633,
+   "also": [
+    "Pelican State",
+    "18th State",
+    "State of Louisiana",
+    "US-LA"
+   ]
+  },
+  {
+   "label": "Alabama",
+   "qid": "Q173",
+   "fame": 0.632,
+   "also": [
+    "Ala",
+    "Bama",
+    "Heart of Dixie",
+    "State of Alabama",
+    "The Yellowhammer State",
+    "US-AL",
+    "Yellowhammer State"
+   ]
+  },
+  {
+   "label": "Montana",
+   "qid": "Q1212",
+   "fame": 0.631,
+   "also": [
+    "Mont.",
+    "Big Sky Country",
+    "State of Montana",
+    "Treasure State",
+    "US-MT"
+   ]
+  },
+  {
+   "label": "Oregon",
+   "qid": "Q824",
+   "fame": 0.63,
+   "also": [
+    "Ore.",
+    "Oreg.",
+    "State of Oregon",
+    "The Beaver State",
+    "US-OR"
+   ]
+  },
+  {
+   "label": "Oklahoma",
+   "qid": "Q1649",
+   "fame": 0.627,
+   "also": [
+    "Oklahoma Territory",
+    "Okla.",
+    "Sooner State",
+    "State of Oklahoma",
+    "The Sooner State",
+    "Territory of Oklahoma",
+    "Ekelahema",
+    "Ogalahoma",
+    "Oklahumma",
+    "Uukaalaasuumaa",
+    "US-OK"
+   ]
+  },
+  {
+   "label": "New Hampshire",
+   "qid": "Q759",
+   "fame": 0.626,
+   "also": [
+    "Granite State",
+    "The Granite State",
+    "State of New Hampshire",
+    "US-NH"
+   ]
+  },
+  {
+   "label": "Kentucky",
+   "qid": "Q1603",
+   "fame": 0.624,
+   "also": [
+    "Bluegrass State",
+    "Commonwealth of Kentucky",
+    "US-KY"
+   ]
+  },
+  {
+   "label": "Mississippi",
+   "qid": "Q1494",
+   "fame": 0.623,
+   "also": [
+    "Magnolia State",
+    "Miss.",
+    "State of Mississippi",
+    "US-MS"
+   ]
+  },
+  {
+   "label": "Kansas",
+   "qid": "Q1558",
+   "fame": 0.62,
+   "also": [
+    "Kan.",
+    "Kans.",
+    "State of Kansas",
+    "Sunflower State",
+    "US-KS"
+   ]
+  },
+  {
+   "label": "Vermont",
+   "qid": "Q16551",
+   "fame": 0.62,
+   "also": [
+    "State of Vermont",
+    "The Green Mountain State",
+    "US-VT"
+   ]
+  },
+  {
+   "label": "West Virginia",
+   "qid": "Q1371",
+   "fame": 0.62,
+   "also": [
+    "Almost Heaven",
+    "State of West Virginia",
+    "The Mountain State",
+    "US-WV",
+    "W.Va."
+   ]
+  },
+  {
+   "label": "Arkansas",
+   "qid": "Q1612",
+   "fame": 0.617,
+   "also": [
+    "AR-kən-saw",
+    "Ark.",
+    "Arkansaw",
+    "Arkensaw",
+    "State of Arkansas",
+    "The Natural State",
+    "US-AR"
+   ]
+  },
+  {
+   "label": "Delaware",
+   "qid": "Q1393",
+   "fame": 0.615,
+   "also": [
+    "The Diamond State",
+    "Blue Hen State",
+    "State of Delaware",
+    "The First State",
+    "The Small Wonder",
+    "US-DE"
+   ]
+  },
+  {
+   "label": "Indiana",
+   "qid": "Q1415",
+   "fame": 0.615,
+   "also": [
+    "Hoosier State",
+    "Ind.",
+    "State of Indiana",
+    "US-IN"
+   ]
+  },
+  {
+   "label": "Iowa",
+   "qid": "Q1546",
+   "fame": 0.613,
+   "also": [
+    "Hawk-eye State",
+    "State of Iowa",
+    "The Land Between Two Rivers",
+    "US-IA"
+   ]
+  },
+  {
+   "label": "Nebraska",
+   "qid": "Q1553",
+   "fame": 0.611,
+   "also": [
+    "Cornhusker State",
+    "Neb.",
+    "Nebr.",
+    "State of Nebraska",
+    "US-NE"
+   ]
+  },
+  {
+   "label": "South Carolina",
+   "qid": "Q1456",
+   "fame": 0.609,
+   "also": [
+    "Palmetto State",
+    "State of South Carolina",
+    "US-SC"
+   ]
+  },
+  {
+   "label": "Nevada",
+   "qid": "Q1227",
+   "fame": 0.608,
+   "also": [
+    "Nev.",
+    "The Silver State",
+    "Silver State",
+    "State of Nevada",
+    "US-NV"
+   ]
+  },
+  {
+   "label": "Idaho",
+   "qid": "Q1221",
+   "fame": 0.601,
+   "also": [
+    "Gem State",
+    "Potato State",
+    "State of Idaho",
+    "US-ID"
+   ]
+  },
+  {
+   "label": "South Dakota",
+   "qid": "Q1211",
+   "fame": 0.579,
+   "also": [
+    "SoDak",
+    "State of South Dakota",
+    "The Coyote State",
+    "The Mount Rushmore State",
+    "US-SD"
+   ]
+  },
+  {
+   "label": "North Dakota",
+   "qid": "Q1207",
+   "fame": 0.577,
+   "also": [
+    "Flickertail State",
+    "NoDak",
+    "Peace Garden State",
+    "Roughrider State",
+    "State of North Dakota",
+    "US-ND"
+   ]
+  }
+ ]
+}

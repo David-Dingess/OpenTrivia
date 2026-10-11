@@ -1,0 +1,227 @@
+{
+ "id": "table.stage.magicians",
+ "kind": "table",
+ "title": "Famous magicians by birth year",
+ "genre": "arts-entertainment",
+ "category": "stage",
+ "topic": "magic",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?born WHERE { { SELECT ?item ?sitelinks (GROUP_CONCAT(CONCAT(STR(?bornT), \"|\", STR(?bornP)); separator=\";\") AS ?born) WHERE { ?item wdt:P106 wd:Q15855449 ; wikibase:sitelinks ?sitelinks . FILTER(?sitelinks > 4) ?item p:P569 ?bornSt . ?bornSt a wikibase:BestRank . ?bornSt psv:P569 [ wikibase:timeValue ?bornT ; wikibase:timePrecision ?bornP ] . } GROUP BY ?item ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 600 } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 264",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T17:07:40.385Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T17:07:40.385Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "born",
+   "label": "Born",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "magician",
+  "many": "magicians",
+  "wildcard": "person",
+  "hookAsk": "Which magician {hook}?",
+  "hookStatement": "{label} {hook}.",
+  "columns": {
+   "born": {
+    "role": "date",
+    "sort": "from the earliest born to the latest"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Harry Houdini",
+   "qid": "Q131545",
+   "fame": 0.656,
+   "born": 1874,
+   "description": "Hungarian-born American illusionist, escapologist, and stunt performer (1874–1926)",
+   "hook": "escaped handcuffs, chains and locked tanks in front of crowds, becoming history's most famous escape performer",
+   "known": 0.95,
+   "kind": "escape artist"
+  },
+  {
+   "label": "David Copperfield",
+   "qid": "Q139637",
+   "fame": 0.623,
+   "born": 1956,
+   "description": "American illusionist",
+   "hook": "made a jet airliner vanish on live television and became the best-selling solo stage performer of all time",
+   "known": 0.8,
+   "kind": "illusionist"
+  },
+  {
+   "label": "Carisa Hendrix",
+   "qid": "Q17227200",
+   "fame": 0.619,
+   "born": 1987,
+   "description": "Canadian stunt performer, magician, and character comedienne",
+   "hook": "breathes fire and blends dangerous stunts with comic character performances on stage",
+   "known": 0.2,
+   "kind": "stunt performer"
+  },
+  {
+   "label": "Harry Anderson",
+   "qid": "Q1395573",
+   "fame": 0.584,
+   "born": 1952,
+   "description": "American actor and magician (1952–2018)",
+   "hook": "played a wisecracking judge on a hit American television courtroom comedy",
+   "known": 0.2,
+   "kind": "illusionist"
+  },
+  {
+   "label": "Penn Jillette",
+   "qid": "Q4129653",
+   "fame": 0.563,
+   "born": 1955,
+   "description": "American magician and actor (born 1955)",
+   "hook": "is the tall, talkative half of a famous two-man stage duo who exposes how tricks are done",
+   "known": 0.6,
+   "kind": "illusionist"
+  },
+  {
+   "label": "Georges Méliès",
+   "qid": "Q152272",
+   "fame": 0.55,
+   "born": 1861,
+   "description": "French filmmaker and illusionist (1861–1938)",
+   "hook": "pioneered early trick photography and fantastical special effects in some of cinema's first films",
+   "known": 0.4,
+   "kind": "filmmaker"
+  },
+  {
+   "label": "Tommy Cooper",
+   "qid": "Q612027",
+   "fame": 0.547,
+   "born": 1921,
+   "description": "British prop comedian and magician (1921-1984)",
+   "hook": "wore a red fez and let his tricks go hilariously wrong on purpose for laughs",
+   "known": 0.4,
+   "kind": "illusionist"
+  },
+  {
+   "label": "Teller",
+   "qid": "Q2919575",
+   "fame": 0.546,
+   "born": 1948,
+   "description": "American magician",
+   "hook": "is the silent half of a famous two-man stage duo and never speaks during their act",
+   "known": 0.6,
+   "kind": "illusionist"
+  },
+  {
+   "label": "David Blaine",
+   "qid": "Q353983",
+   "fame": 0.534,
+   "born": 1973,
+   "description": "American illusionist and extreme performer",
+   "hook": "has been frozen in a block of ice and buried alive for days in extreme endurance stunts",
+   "known": 0.8,
+   "kind": "illusionist"
+  },
+  {
+   "label": "Criss Angel",
+   "qid": "Q131685",
+   "fame": 0.522,
+   "born": 1967,
+   "description": "American illusionist (born 1967)",
+   "hook": "starred in a reality television series showcasing elaborate street and stage illusions",
+   "known": 0.4,
+   "kind": "illusionist"
+  },
+  {
+   "label": "Uri Geller",
+   "qid": "Q44657",
+   "fame": 0.511,
+   "born": 1946,
+   "description": "Israeli illusionist",
+   "hook": "claims to bend spoons using only the power of his mind",
+   "known": 0.4,
+   "kind": "mentalist"
+  },
+  {
+   "label": "James Randi",
+   "qid": "Q294918",
+   "fame": 0.503,
+   "born": 1928,
+   "description": "Canadian-American stage magician and skeptical movement adherent",
+   "hook": "offered a large cash prize to anyone who could prove paranormal powers under fair test conditions",
+   "known": 0.2,
+   "kind": "illusionist"
+  },
+  {
+   "label": "Derren Brown",
+   "qid": "Q449048",
+   "fame": 0.496,
+   "born": 1971,
+   "description": "British illusionist and writer",
+   "hook": "predicted the national lottery numbers live on television using psychological technique",
+   "known": 0.6,
+   "kind": "illusionist"
+  },
+  {
+   "label": "Suhani Shah",
+   "qid": "Q107132102",
+   "fame": 0.469,
+   "born": 1990,
+   "description": "Indian mentalist (born 1990)",
+   "hook": "began performing solo stage shows as a child prodigy and became a well-known mentalist",
+   "known": 0.2,
+   "kind": "mentalist"
+  },
+  {
+   "label": "The Amazing Johnathan",
+   "qid": "Q7713317",
+   "fame": 0.461,
+   "born": 1958,
+   "description": "American stand-up comedian and magician",
+   "hook": "performed gruesome-looking fake stunts for shock and laughs as a comedy stage act",
+   "known": 0.2,
+   "kind": "illusionist"
+  },
+  {
+   "label": "Paul Daniels",
+   "qid": "Q5616664",
+   "fame": 0.452,
+   "born": 1938,
+   "description": "Magician and TV Personality (1938–2016)",
+   "hook": "hosted a long-running British television show that made stage magic mainstream in his country",
+   "known": 0.2,
+   "kind": "illusionist"
+  },
+  {
+   "label": "Stephen Mulhern",
+   "qid": "Q381543",
+   "fame": 0.451,
+   "born": 1977,
+   "description": "British entertainer",
+   "hook": "presents popular British television game shows while also performing close-up magic",
+   "known": 0.2,
+   "kind": "illusionist"
+  }
+ ]
+}

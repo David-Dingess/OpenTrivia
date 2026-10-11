@@ -1,0 +1,519 @@
+{
+ "id": "list.internet.search-engines",
+ "title": "Search engines",
+ "prompt": "Name a search engine",
+ "genre": "general",
+ "category": "internet",
+ "topic": "websites-and-apps",
+ "people": false,
+ "licence": "CC0-1.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks WHERE { { SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q4182287 . } } hint:Prior hint:runFirst true . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,mul\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "fetchedAt": "2026-09-30T13:15:49.927Z"
+ },
+ "rows": [
+  {
+   "label": "Google Search",
+   "qid": "Q9366",
+   "fame": 0.756,
+   "also": [
+    "Google",
+    "google.com",
+    "BackRub",
+    "Google homepage",
+    "Google search engine",
+    "Google Web Search",
+    "www.google.com"
+   ]
+  },
+  {
+   "label": "DuckDuckGo",
+   "qid": "Q12805",
+   "fame": 0.744,
+   "also": [
+    "DDG",
+    "duck.com",
+    "duckduckgo.com"
+   ]
+  },
+  {
+   "label": "Yandex",
+   "qid": "Q5281",
+   "fame": 0.722,
+   "also": [
+    "ya.ru",
+    "Yandex LLC",
+    "yandex.ru"
+   ]
+  },
+  {
+   "label": "AOL",
+   "qid": "Q27585",
+   "fame": 0.564,
+   "also": [
+    "Tegic",
+    "America Online",
+    "AOL RED",
+    "aol.com"
+   ]
+  },
+  {
+   "label": "Microsoft Bing",
+   "qid": "Q182496",
+   "fame": 0.56,
+   "also": [
+    "Bing Search",
+    "www.bing.com",
+    "bing.com",
+    "Live Search",
+    "MSN Search",
+    "Windows Live Search"
+   ]
+  },
+  {
+   "label": "Baidu",
+   "qid": "Q14772",
+   "fame": 0.534,
+   "also": [
+    "baidu.com",
+    "BIDU",
+    "Baidu Group"
+   ]
+  },
+  {
+   "label": "Brave Search",
+   "qid": "Q107355971",
+   "fame": 0.516,
+   "also": [
+    "search.brave.com"
+   ]
+  },
+  {
+   "label": "Yandex Search",
+   "qid": "Q6349938",
+   "fame": 0.513,
+   "also": []
+  },
+  {
+   "label": "Ecosia",
+   "qid": "Q1282139",
+   "fame": 0.51,
+   "also": [
+    "Ecosia search engine",
+    "ecosia.org",
+    "Ecosia GmbH"
+   ]
+  },
+  {
+   "label": "Startpage.com",
+   "qid": "Q2333295",
+   "fame": 0.48,
+   "also": [
+    "Startpage"
+   ]
+  },
+  {
+   "label": "SearXNG",
+   "qid": "Q107341994",
+   "fame": 0.469,
+   "also": []
+  },
+  {
+   "label": "Qwant",
+   "qid": "Q14657870",
+   "fame": 0.432,
+   "also": []
+  },
+  {
+   "label": "Kagi",
+   "qid": "Q123819301",
+   "fame": 0.382,
+   "also": []
+  },
+  {
+   "label": "Mojeek",
+   "qid": "Q60747299",
+   "fame": 0.367,
+   "also": [
+    "Mojeek search engine",
+    "mojeek.com"
+   ]
+  },
+  {
+   "label": "Yahoo! Search",
+   "qid": "Q2308171",
+   "fame": 0.359,
+   "also": []
+  },
+  {
+   "label": "Google Programmable Search Engine",
+   "qid": "Q2233943",
+   "fame": 0.358,
+   "also": [
+    "CSE",
+    "Google Co-op",
+    "Google Custom Search",
+    "Google Custom Search Engine"
+   ]
+  },
+  {
+   "label": "Searx",
+   "qid": "Q17639196",
+   "fame": 0.345,
+   "also": []
+  },
+  {
+   "label": "You.com",
+   "qid": "Q111598768",
+   "fame": 0.341,
+   "also": []
+  },
+  {
+   "label": "TinEye",
+   "qid": "Q2382535",
+   "fame": 0.316,
+   "also": [
+    "tineye.com"
+   ]
+  },
+  {
+   "label": "Presearch",
+   "qid": "Q134488211",
+   "fame": 0.31,
+   "also": []
+  },
+  {
+   "label": "Sogou",
+   "qid": "Q7554565",
+   "fame": 0.287,
+   "also": [
+    "Sogou search engine",
+    "Sogou.com"
+   ]
+  },
+  {
+   "label": "Petal Search",
+   "qid": "Q104399280",
+   "fame": 0.283,
+   "also": [
+    "gopetal"
+   ]
+  },
+  {
+   "label": "ChaCha",
+   "qid": "Q1058152",
+   "fame": 0.273,
+   "also": [
+    "chacha.com"
+   ]
+  },
+  {
+   "label": "Marginalia Search",
+   "qid": "Q138685230",
+   "fame": 0.258,
+   "also": [
+    "Marginalia"
+   ]
+  },
+  {
+   "label": "goo",
+   "qid": "Q249044",
+   "fame": 0.247,
+   "also": []
+  },
+  {
+   "label": "Rambler",
+   "qid": "Q1758666",
+   "fame": 0.232,
+   "also": [
+    "rambler.ru"
+   ]
+  },
+  {
+   "label": "BASE",
+   "qid": "Q448335",
+   "fame": 0.216,
+   "also": [
+    "base-search.net",
+    "Bielefeld Academic Search Engine",
+    "BASE-Bielefeld Academic Search Engine"
+   ]
+  },
+  {
+   "label": "Gigablast",
+   "qid": "Q3105449",
+   "fame": 0.208,
+   "also": [
+    "gigablast.com"
+   ]
+  },
+  {
+   "label": "Dragonfly",
+   "qid": "Q56812173",
+   "fame": 0.207,
+   "also": []
+  },
+  {
+   "label": "Neeva",
+   "qid": "Q115328909",
+   "fame": 0.202,
+   "also": []
+  },
+  {
+   "label": "World-Wide Web Worm",
+   "qid": "Q8035282",
+   "fame": 0.196,
+   "also": [
+    "WWWW"
+   ]
+  },
+  {
+   "label": "KidRex",
+   "qid": "Q13156605",
+   "fame": 0.188,
+   "also": [
+    "kidrex.org"
+   ]
+  },
+  {
+   "label": "Wikia Search",
+   "qid": "Q1075624",
+   "fame": 0.188,
+   "also": []
+  },
+  {
+   "label": "Octopart",
+   "qid": "Q18356159",
+   "fame": 0.176,
+   "also": []
+  },
+  {
+   "label": "Blackle",
+   "qid": "Q880870",
+   "fame": 0.169,
+   "also": [
+    "blackle.com"
+   ]
+  },
+  {
+   "label": "CORE",
+   "qid": "Q22661180",
+   "fame": 0.166,
+   "also": [
+    "core.ac.uk",
+    "COnnecting REpositories"
+   ]
+  },
+  {
+   "label": "The Graph",
+   "qid": "Q122212417",
+   "fame": 0.159,
+   "also": []
+  },
+  {
+   "label": "World Wide Web Wanderer",
+   "qid": "Q1584506",
+   "fame": 0.149,
+   "also": []
+  },
+  {
+   "label": "Am I In Porn?",
+   "qid": "Q105870655",
+   "fame": 0.141,
+   "also": []
+  },
+  {
+   "label": "W3Catalog",
+   "qid": "Q7946197",
+   "fame": 0.141,
+   "also": []
+  },
+  {
+   "label": "Google Dataset Search",
+   "qid": "Q56512593",
+   "fame": 0.14,
+   "also": [
+    "dataset search"
+   ]
+  },
+  {
+   "label": "search.ch",
+   "qid": "Q3953586",
+   "fame": 0.122,
+   "also": []
+  },
+  {
+   "label": "blekko",
+   "qid": "Q883722",
+   "fame": 0.12,
+   "also": [
+    "blekko.com"
+   ]
+  },
+  {
+   "label": "parsijoo",
+   "qid": "Q13578421",
+   "fame": 0.12,
+   "also": [
+    "parsijoo.ir"
+   ]
+  },
+  {
+   "label": "ChatGPT Search",
+   "qid": "Q127878612",
+   "fame": 0.119,
+   "also": [
+    "SearchGPT"
+   ]
+  },
+  {
+   "label": "Technorati",
+   "qid": "Q389701",
+   "fame": 0.118,
+   "also": [
+    "technorati.com"
+   ]
+  },
+  {
+   "label": "sputnik.ru",
+   "qid": "Q16944961",
+   "fame": 0.108,
+   "also": [
+    "Sputnik"
+   ]
+  },
+  {
+   "label": "Google Videos",
+   "qid": "Q48968585",
+   "fame": 0.104,
+   "also": []
+  },
+  {
+   "label": "Soso",
+   "qid": "Q3491353",
+   "fame": 0.083,
+   "also": [
+    "soso.com"
+   ]
+  },
+  {
+   "label": "Egerin",
+   "qid": "Q15542871",
+   "fame": 0.073,
+   "also": [
+    "egerin.com"
+   ]
+  },
+  {
+   "label": "Xapian",
+   "qid": "Q3570578",
+   "fame": 0.068,
+   "also": [
+    "xapian.org"
+   ]
+  },
+  {
+   "label": "Grub",
+   "qid": "Q3118154",
+   "fame": 0.038,
+   "also": [
+    "grub.org"
+   ]
+  },
+  {
+   "label": "Yooz",
+   "qid": "Q19815546",
+   "fame": 0.023,
+   "also": []
+  },
+  {
+   "label": "Bing News",
+   "qid": "Q2878637",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Ecocho",
+   "qid": "Q1448367",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Forestle",
+   "qid": "Q1136516",
+   "fame": 0,
+   "also": [
+    "forestle.org"
+   ]
+  },
+  {
+   "label": "genon.ru",
+   "qid": "Q2365399",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Krugle",
+   "qid": "Q1790102",
+   "fame": 0,
+   "also": [
+    "krugle.org"
+   ]
+  },
+  {
+   "label": "OAIster",
+   "qid": "Q2007376",
+   "fame": 0,
+   "also": [
+    "oaister.org",
+    "oaister.worldcat.org",
+    "OAlster"
+   ]
+  },
+  {
+   "label": "Panguso",
+   "qid": "Q2049449",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Search engine submission",
+   "qid": "Q7441657",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Sesam",
+   "qid": "Q2557092",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Simpli",
+   "qid": "Q17080915",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Wikiwix",
+   "qid": "Q950195",
+   "fame": 0,
+   "also": [
+    "wikiwix.com"
+   ]
+  },
+  {
+   "label": "Yahoo! Search BOSS",
+   "qid": "Q8046870",
+   "fame": 0,
+   "also": []
+  },
+  {
+   "label": "Zoombu",
+   "qid": "Q8074176",
+   "fame": 0,
+   "also": []
+  }
+ ]
+}

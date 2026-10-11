@@ -1,0 +1,203 @@
+{
+ "id": "table.art.longest-bridges",
+ "kind": "table",
+ "title": "Longest bridges",
+ "genre": "arts-entertainment",
+ "category": "art",
+ "topic": "landmarks",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?length ?countryLabel WHERE { { SELECT ?item (MAX(?l) AS ?length) (SAMPLE(?c) AS ?country) WHERE { ?item wdt:P31/wdt:P279* wd:Q12280 ; p:P2043/psn:P2043/wikibase:quantityAmount ?l . FILTER(?l >= 2000) OPTIONAL { ?item wdt:P17 ?c } } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 329",
+  "attribution": null,
+  "fetchedAt": "2026-09-27T00:57:30.940Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-27T00:57:30.940Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "length_km",
+   "label": "Length",
+   "unit": "km",
+   "type": "number",
+   "scale": "length-km"
+  },
+  {
+   "key": "country",
+   "label": "Country",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "hook",
+   "label": "Famous for (our words)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": true,
+  "one": "bridge",
+  "many": "bridges",
+  "hookAsk": "Which bridge {hook}?",
+  "hookStatement": "The {label} {hook}.",
+  "columns": {
+   "country": {
+    "role": "link",
+    "pick": "Which country is {label} in?",
+    "statement": "{label} is in {value}.",
+    "match": "Match each bridge to its country.",
+    "odd": "Three of these bridges are in {value}. Which one isn't?",
+    "all": "Tap all {n} bridges in {value}."
+   },
+   "length_km": {
+    "role": "measure",
+    "display": "km"
+   }
+  }
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "Golden Gate Bridge",
+   "qid": "Q44440",
+   "fame": 0.604,
+   "length_km": 2.7,
+   "country": "United States",
+   "description": "suspension bridge on the San Francisco Bay",
+   "hook": "is painted a famous shade of burnt orange and often disappears into fog",
+   "known": 0.95,
+   "kind": "suspension"
+  },
+  {
+   "label": "Lake Pontchartrain Causeway",
+   "qid": "Q1132510",
+   "fame": 0.575,
+   "length_km": 38.4,
+   "country": "United States",
+   "description": "set of two parallel bridges over Lake Pontchartrain in southern Louisiana, United States",
+   "hook": "is one of the longest continuous spans over open water in the world",
+   "known": 0.4,
+   "kind": "causeway"
+  },
+  {
+   "label": "Mackinac Bridge",
+   "qid": "Q12568",
+   "fame": 0.505,
+   "length_km": 8,
+   "country": "United States",
+   "description": "suspension bridge connecting Michigan's Lower and Upper Peninsulas",
+   "hook": "links two peninsulas and is nicknamed Big Mac by locals",
+   "known": 0.4,
+   "kind": "suspension"
+  },
+  {
+   "label": "Verrazzano-Narrows Bridge",
+   "qid": "Q125673",
+   "fame": 0.5,
+   "length_km": 4.2,
+   "country": "United States",
+   "description": "bridge in New York City",
+   "hook": "is the finish-line backdrop for the start of a famous annual marathon",
+   "known": 0.6,
+   "kind": "suspension"
+  },
+  {
+   "label": "Øresund Bridge",
+   "qid": "Q297871",
+   "fame": 0.496,
+   "length_km": 7.8,
+   "country": "Sweden",
+   "description": "road and railway bridge over Øresund",
+   "hook": "connects two Nordic countries, turning into an undersea tunnel partway across",
+   "known": 0.2,
+   "kind": "suspension"
+  },
+  {
+   "label": "Gordie Howe International Bridge",
+   "qid": "Q5266001",
+   "fame": 0.492,
+   "length_km": 2.5,
+   "country": "Canada",
+   "description": "crossing of the Detroit River",
+   "hook": "is named after a legendary hockey player and links two countries",
+   "known": 0.05,
+   "kind": "suspension"
+  },
+  {
+   "label": "Danyang–Kunshan Grand Bridge",
+   "qid": "Q595768",
+   "fame": 0.49,
+   "length_km": 164.8,
+   "country": "China",
+   "description": "world's longest bridge",
+   "hook": "is the longest one of its kind on the planet, stretching over open water and rice paddies",
+   "known": 0.05,
+   "kind": "long-span"
+  },
+  {
+   "label": "Huajiang Canyon Bridge",
+   "qid": "Q117857889",
+   "fame": 0.483,
+   "length_km": 2.9,
+   "country": "China",
+   "description": "highest highway suspension bridge in Guizhou Province, China and the world",
+   "hook": "soars higher above its valley floor than almost any other of its kind on Earth",
+   "known": 0.05,
+   "kind": "suspension"
+  },
+  {
+   "label": "Chesapeake Bay Bridge",
+   "qid": "Q1319988",
+   "fame": 0.477,
+   "length_km": 7,
+   "country": "United States",
+   "description": "major dual-span bridge in the U.S. state of Maryland, spanning the Chesapeake Bay",
+   "hook": "carries traffic across a broad estuary on a dual span",
+   "known": 0.4,
+   "kind": "suspension"
+  },
+  {
+   "label": "Confederation Bridge",
+   "qid": "Q865076",
+   "fame": 0.463,
+   "length_km": 12.9,
+   "country": "Canada",
+   "description": "fixed link connecting Canadian province of Prince Edward Island with the mainland, at New Brunswick",
+   "hook": "curves gracefully across an icy strait, linking an island province to the mainland",
+   "known": 0.2,
+   "kind": "causeway"
+  },
+  {
+   "label": "Sunshine Skyway Bridge",
+   "qid": "Q2302271",
+   "fame": 0.454,
+   "length_km": 6.7,
+   "country": "United States",
+   "description": "bridge crossing the mouth of Tampa Bay, Florida, United States",
+   "hook": "has a bright yellow cable-stayed span soaring over a bay's mouth",
+   "known": 0.2,
+   "kind": "cable-stayed"
+  },
+  {
+   "label": "Hong Kong–Zhuhai–Macau Bridge",
+   "qid": "Q1191515",
+   "fame": 0.451,
+   "length_km": 55,
+   "country": "China",
+   "description": "fixed link consisting of tunnel and multiple bridges",
+   "hook": "links three cities across a sea using both bridges and an undersea tunnel",
+   "known": 0.2,
+   "kind": "long-span"
+  }
+ ]
+}

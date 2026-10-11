@@ -1,0 +1,57 @@
+{
+ "id": "table.sports.tour-de-france-winners",
+ "kind": "table",
+ "title": "Tour de France editions: year and winner",
+ "genre": "games-sports",
+ "category": "sports",
+ "topic": "cycling",
+ "licence": "CC-BY-4.0",
+ "source": {
+  "name": "Wikidata (CC0)",
+  "method": "sparql:SELECT ?item ?itemLabel ?article ?sitelinks ?year ?winnerLabel WHERE { { SELECT ?item (MIN(?d) AS ?year) (SAMPLE(?w) AS ?winner) WHERE { ?item wdt:P31 wd:Q33881 ; (wdt:P580|wdt:P585) ?d . ?item p:P1346 ?st . ?st ps:P1346 ?w ; pq:P2501 wd:Q20882667 . FILTER(?w != wd:Q66666778) } GROUP BY ?item } hint:Prior hint:runFirst true . OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . } ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 173",
+  "attribution": null,
+  "fetchedAt": "2026-09-24T23:08:43.266Z"
+ },
+ "verification": {
+  "status": "verified",
+  "checkedAt": "2026-09-24T23:08:43.266Z",
+  "volatile": false
+ },
+ "columns": [
+  {
+   "key": "year",
+   "label": "Year",
+   "unit": null,
+   "type": "year"
+  },
+  {
+   "key": "winner",
+   "label": "Winner",
+   "unit": null,
+   "type": "text"
+  },
+  {
+   "key": "description",
+   "label": "Description (Wikidata, CC0)",
+   "unit": null,
+   "type": "text"
+  }
+ ],
+ "wording": {
+  "on": false,
+  "one": "item",
+  "many": "items",
+  "columns": {}
+ },
+ "impostors": [],
+ "rows": [
+  {
+   "label": "2026 Tour de France",
+   "qid": "Q126721429",
+   "fame": 0.516,
+   "year": 2026,
+   "winner": "Tadej Pogačar",
+   "description": "113th edition of Tour de France"
+  }
+ ]
+}
